@@ -1,12 +1,12 @@
 items: 
   - name: Introduction
-    href: index.yml
+    href: index.md
   - name: Microsoft Education
     href: microsoft-education.md
   - name: 1 . Prepare your tenant
     items:
       - name: Overview
-        href: prepare-tenant-overview.md
+        href: set-up-your-tenant.md
       - name: Set up your tenant
         href: set-up-your-tenant.md
       - name: Set up Microsoft Intune

@@ -1,6 +1,6 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: Microsoft Endpoint Manager support
+description: Microsoft Endpoint Manager support
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -17,8 +17,6 @@ appliesto:
 ---
 
 # Microsoft Endpoint Manager support
-
-
 
 
 ## Remote actions
@@ -39,4 +37,4 @@ The following list includes some everyday actions you can perform on school devi
 - [Wipe](/mem/intune/remote-actions/devices-wipe)
 - [Synchronize Device](/mem/intune/remote-actions/device-sync)
 
-:::image type="content" source="./image20.png" alt-text="Bulk device action page in Microsoft Endpoint Manager admin center" border="true":::
+## ADD PIC HERE Bulk device action page in Microsoft Endpoint Manager admin center

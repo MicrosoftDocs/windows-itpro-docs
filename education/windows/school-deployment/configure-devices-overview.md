@@ -29,7 +29,7 @@ By organizing students, classrooms, or learning curricula into groups, you can p
 - For all devices, block apps from using location services.
 - For AP Computer Science, assign students apps to edit code.
 - For 12th grade History, enable web browsing to access academic articles.
-- For all Photography students, enable the device’s camera.
+- For all Photography students, enable the device's camera.
 
 *Out of the box, Intune for Education comes with default groups that enable you to manage All devices and All users. There are also two additional groups if you use Microsoft SDS: All teachers and All students.  SDS also creates individual groups for students and teachers of specific schools, which fold under the All teachers and All students groups. Beyond the defaults, groups can be customized to suit various needs. For example, if you have both Windows and iOS devices in your school, you can create groups, such as All iPads and All Windows 10 PCs.* 
 
@@ -98,7 +98,7 @@ You can manage the settings of several devices from a single touch point. For mo
 
 ## Endpoint security
 
-Intune for Education helps protect devices and school data with tools like security baselines and Windows Update policies. Through the Endpoint security node, you can configure device security and manage security tasks for devices at risk. The node configures and deploys Microsoft Defender for Endpoint to help prevent security breaches and gain visibility into your school’s security posture. 
+Intune for Education helps protect devices and school data with tools like security baselines and Windows Update policies. Through the Endpoint security node, you can configure device security and manage security tasks for devices at risk. The node configures and deploys Microsoft Defender for Endpoint to help prevent security breaches and gain visibility into your school's security posture. 
 
 ### Create security policies
 

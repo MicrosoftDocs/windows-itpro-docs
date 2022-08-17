@@ -1,6 +1,6 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: How to contact Microsoft Support
+description: How to contact Microsoft Support
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -16,7 +16,7 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
-## How to contact Microsoft Support
+# How to contact Microsoft Support
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for cloud-based device management services. This support includes Microsoft Intune, Configuration Manager, Windows 365, and Microsoft Managed Desktop.
 

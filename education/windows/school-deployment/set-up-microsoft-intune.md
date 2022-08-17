@@ -165,4 +165,4 @@ ________________________________________________________
 With the Intune service configured, you can start enrolling and managing students' and teachers' devices.
 > [!div class="nextstepaction"]
 > [< Set up your tenant](set-up-your-tenant.md)
-> [Enroll devices >](enrollment-overview.md)
+> [Enroll devices >](enroll-overview.md)

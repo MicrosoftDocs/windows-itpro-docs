@@ -1,6 +1,6 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: Device inventory and reporting
+description: Device inventory and reporting
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -16,7 +16,7 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
-## Device inventory and reporting
+# Device inventory and reporting
 
 As an IT administrator, you can view current devices, applications, settings, and overall health in Microsoft Endpoint Manager. You can also download reports to review or share offline.
 
@@ -24,7 +24,7 @@ To access, view, and download reports:
 
 1. Go Microsoft Endpoint Manager, and then select **Reports**.
 
-:::image type="content" source="./image21.png" alt-text="Device inventory reports page in Intune for Education" border="true":::
+## ADD PIC Device inventory reports page in Intune for Education"
 
 2. Review the desired reports. For more information about common reports, see:
 
@@ -49,7 +49,7 @@ Windows Update for Business enables you to keep the Windows client devices in yo
 
 ### Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help networks prevent, detect, investigate, and respond to advanced threats. You can use Defender for Endpoint to help secure your entire school network. For more information, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender-endpoint/onboard-configure?view=o365-worldwide).
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help networks prevent, detect, investigate, and respond to advanced threats. You can use Defender for Endpoint to help secure your entire school network. For more information, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender-endpoint/onboard-configure).
 
 ### Microsoft Intelligent Security Graph
 
@@ -57,7 +57,7 @@ Microsoft Intelligent Security Graph (ISG) offers application control with a too
 
 ### Microsoft Endpoint Manager and DFCI support
 
-With DFCI profiles built into Intune for Education, Surface UEFI management extends the modern management stack to the UEFI hardware level. With DFCI profiles, you can dramatically simplify IT deployment and provisioning across the device’s lifecycle—all from the cloud. DFCI management requires the device to be enrolled with Windows Autopilot and be registered by a partner or OEM. For more information, see [Manage DFCI on Surface devices](/surface/surface-manage-dfci-guide).
+With DFCI profiles built into Intune for Education, Surface UEFI management extends the modern management stack to the UEFI hardware level. With DFCI profiles, you can dramatically simplify IT deployment and provisioning across the device'''s lifecycle—all from the cloud. DFCI management requires the device to be enrolled with Windows Autopilot and be registered by a partner or OEM. For more information, see [Manage DFCI on Surface devices](/surface/surface-manage-dfci-guide).
 
 ### Microsoft Defender SmartScreen
 

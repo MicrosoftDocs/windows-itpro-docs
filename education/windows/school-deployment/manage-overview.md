@@ -1,6 +1,6 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: Manage devices with Microsoft Intune
+description: Manage devices with Microsoft Intune
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -22,7 +22,7 @@ Microsoft Intune delivers streamlined remote management throughout the school ye
 
 ## Remote device management
 
-With Intune for Education, you can manage groups, applications, resources, and individual needs of multiple students. There are several ways to manage students’ devices, including organizing what groups they belong to; determining what apps they have access to; and configuring device settings, customizations, and restrictions. You can also monitor when users sign in and troubleshoot devices remotely.
+With Intune for Education, you can manage groups, applications, resources, and individual needs of multiple students. There are several ways to manage students' devices, including organizing what groups they belong to; determining what apps they have access to; and configuring device settings, customizations, and restrictions. You can also monitor when users sign in and troubleshoot devices remotely.
 
 ## Managing groups
 
@@ -33,7 +33,7 @@ By organizing students, classrooms, or learning curricula into groups, you can p
 - For all devices, block apps from using location services.
 - For AP Computer Science, assign students apps to edit code.
 - For 12th grade History, enable web browsing to access academic articles.
-- For all Photography students, enable the device’s camera.
+- For all Photography students, enable the device's camera.
 
 *Out of the box, Intune for Education comes with default groups that enable you to manage All devices and All users. There are also two additional groups if you use Microsoft SDS: All teachers and All students.  SDS also creates individual groups for students and teachers of specific schools, which fold under the All teachers and All students groups. Beyond the defaults, groups can be customized to suit various needs. For example, if you have both Windows and iOS devices in your school, you can create groups, such as All iPads and All Windows 10 PCs.* 
 
@@ -65,7 +65,7 @@ Managing devices from the cloud has dramatically simplified IT deployment and pr
 The following prerequisites are required to manage DFCI with Intune:
 
 - The device must be managed with Intune, as DFCI management is not supported with Set Up School PCs (provisioning package) enrollments. For more information, see [DFCI Management](/mem/autopilot/dfci-management). 
-- The device should be registered through Windows Autopilot in Intune. The device must be registered for Windows Autopilot by a [Microsoft CSP partner](https://partner.microsoft.com/membership/cloud-solution-provider) or registered directly by the OEM. **NOTE:** Devices manually registered for Autopilot (such as by importing a CSV file) are not allowed to use DFCI. By design, DFCI management requires external attestation of the device’s commercial acquisition through an OEM or a Microsoft CSP partner registration to Windows Autopilot.
+- The device should be registered through Windows Autopilot in Intune. The device must be registered for Windows Autopilot by a [Microsoft CSP partner](https://partner.microsoft.com/membership/cloud-solution-provider) or registered directly by the OEM. **NOTE:** Devices manually registered for Autopilot (such as by importing a CSV file) are not allowed to use DFCI. By design, DFCI management requires external attestation of the device's commercial acquisition through an OEM or a Microsoft CSP partner registration to Windows Autopilot.
 - The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process or as a firmware update that you install. Work with your device vendors to determine the [manufacturers that support DFCI](/mem/autopilot/dfci-management). 
 
 ### Manage DFCI profiles with Autopilot
@@ -89,7 +89,7 @@ Create a [DFCI profile](/surface/surface-manage-dfci-guide), and then assign it 
 1. For the profile type, select **Templates**, and then select **Device Firmware Configuration Interface**. 
 1. Enter a name and description for the profile. 
 
-![Profile creation page for devices in Microsoft Endpoint Manager admin center](./image24.png)
+## ADD PIC HERE Profile creation page for devices in Microsoft Endpoint Manager admin center
 
 6. In **Configuration settings**, review the available settings in the UEFI configuration.
 1. Select **Assignments**.
@@ -123,18 +123,18 @@ For more information, see [Configuring the DFCI environment and managing UEFI co
 
 ## Microsoft Surface Management Portal
 
-Located in the Microsoft Endpoint Manager admin center, the Microsoft Surface Management Portal enables you to self-serve, manage, and monitor your school’s Intune-managed Surface devices at scale. Get insights into device compliance, support activity, warranty coverage, and more. When Surface Laptop SE devices are enrolled in cloud management and users sign in for the first time, information automatically flows into the Surface Management Portal, giving you a single pane of glass for Surface-specific administration activities.
+Located in the Microsoft Endpoint Manager admin center, the Microsoft Surface Management Portal enables you to self-serve, manage, and monitor your school's Intune-managed Surface devices at scale. Get insights into device compliance, support activity, warranty coverage, and more. When Surface Laptop SE devices are enrolled in cloud management and users sign in for the first time, information automatically flows into the Surface Management Portal, giving you a single pane of glass for Surface-specific administration activities.
 
 To access and use the Surface Management Portal: 
 
 1. In the Microsoft Endpoint Manager admin center, select **All services** → **Surface Management Portal**.
 
-:::image type="content" source="./image26.png" alt-text="Surface Management Portal monitoring page in Microsoft Endpoint Manager admin center" border="true":::
+## ADD PIC HERE Surface Management Portal monitoring page in Microsoft Endpoint Manager admin center
 
 2. To display insights for all your Surface devices, select **Monitor**. This shows devices that are out of compliance or not registered, have critically low storage, require updates, or are currently inactive. 
 1. To see details on each insights category, select **View report**. This displays diagnostic information that you can customize and export. 
 
-To see the device’s warranty information, select **Device warranty and coverage**.
+To see the device's warranty information, select **Device warranty and coverage**.
 
 5. To see support requests and their status, select **Support requests**.
 

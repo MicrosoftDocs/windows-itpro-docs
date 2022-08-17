@@ -1,6 +1,6 @@
 ---
 title: Set up your tenant
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+description: How to create and prepare your tenant for an education environment 
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Education
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+description: Microsoft Education
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows

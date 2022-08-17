@@ -34,7 +34,7 @@ With Intune for Education, wiping can be performed remotely:
 1. Choose a device, and then select **Autopilot Reset**. 
 1. To confirm the reset, select **Autopilot Reset** again. A message appears when the reset is initiated. The device will reset the next time it connects to the Internet. 
 
-:::image type="content" source="./image17.png" alt-text="Using Autopilot Reset in Microsoft Endpoint Manager admin center" border="true":::
+## ADD PIC HERE Using Autopilot Reset in Microsoft Endpoint Manager admin center
 
 ### Factory reset (wipe)
 
@@ -47,11 +47,11 @@ To perform a factory reset:
 1. **NOTE:** We recommend keeping the enrollment state and associated user account. This option ensures that the Wipe action cannot be circumvented by turning off the device.
 1. Select **Yes** to reset the device to its factory defaults and delete the Intune object.
 
-:::image type="content" source="./image18.png" alt-text="Using factory reset in Microsoft Endpoint Manager admin center" border="true":::
+## ADD PIC HERE Using factory reset in Microsoft Endpoint Manager admin center
 
 ## Wiping and removing a device
 
-With this action, a device’s data is wiped, and the device is removed from the school deployment. This action should only be performed for devices that are no longer going to be used. To completely remove a device, you need to perform two actions: 
+With this action, a device's data is wiped, and the device is removed from the school deployment. This action should only be performed for devices that are no longer going to be used. To completely remove a device, you need to perform two actions: 
 
 1. Perform a [factory reset (wipe)](#) on the device.
 1. Complete one of the following actions, depending on Intune enrollment:
@@ -79,4 +79,4 @@ To delete devices that are enrolled in Intune:
 1. Select **Devices** → **Azure AD devices**. 
 1. Follow the steps outlined in [Delete devices from the Azure Active Directory portal](/mem/intune/remote-actions/devices-wipe).
 
-:::image type="content" source="./image19.png" alt-text="Device and account deletion page in Azure Active Directory admin center" border="true":::
+## ADD PIC HERE Device and account deletion page in Azure Active Directory admin center

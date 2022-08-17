@@ -25,7 +25,7 @@ For more information, see [Overview of Windows Autopilot][MEM-1].
 
 Windows Autopilot is especially useful in scenarios where devices are handed out to users without the need to build, maintain, and apply custom operating system images. These devices will be enrolled as school-owned devices. 
 
-A cloud-based provisioning technology, Windows Autopilot can be used to set up and preconfigure devices at the start of the school year. There’s no need to wipe devices or use custom OS images. The device must be preregistered, and the enrollment profile created and assigned in Intune for Education. When users sign in with their school account, they are automatically enrolled. 
+A cloud-based provisioning technology, Windows Autopilot can be used to set up and preconfigure devices at the start of the school year. There's no need to wipe devices or use custom OS images. The device must be preregistered, and the enrollment profile created and assigned in Intune for Education. When users sign in with their school account, they are automatically enrolled. 
 
 **NOTE:** A fix for the known TPM attestation issue can now be addressed by using the latest Bare Metal Recovery (BMR) with 5b CU. For more information, see [Support tip: Recovering from Windows Autopilot error code 0x81039023 on Windows 11 SE](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-recovering-from-windows-autopilot-error-code/ba-p/3283743). 
 
@@ -42,7 +42,7 @@ Before setting up Windows Autopilot, consider these prerequisites:
 
 ### Register devices to Windows Autopilot
 
-Before deployment, devices must be registered with the Windows Autopilot deployment service. Each device’s unique hardware identity (known as a *hardware hash*) is captured and uploaded to the Autopilot service, and the device is associated with an Azure tenant ID. There are three main ways to register devices to Autopilot:
+Before deployment, devices must be registered with the Windows Autopilot deployment service. Each device's unique hardware identity (known as a *hardware hash*) is captured and uploaded to the Autopilot service, and the device is associated with an Azure tenant ID. There are three main ways to register devices to Autopilot:
 
 - **Complete the OEM registration process.** When you purchase devices from an OEM, that company can automatically register them with Windows Autopilot. Before an OEM can register devices, your school must grant permission. The OEM begins this process with approval granted by an Azure AD global administrator from the school. For Microsoft Surface registration, collect the details shown in this [documentation table](/surface/surface-autopilot-registration-support) before submitting the request to Microsoft Support. You can make requests using the [Microsoft Devices Autopilot Support](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f) form.
 - **Manually register devices with Windows Autopilot.** To manually register a device, you must first capture its hardware hash. Once this process has been completed, the hardware hash can be uploaded to the Windows Autopilot service using [Microsoft Intune](/mem/autopilot/add-devices), [Partner Center](https://msdn.microsoft.com/partner-center/autopilot), [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa), or the [Microsoft Store](https://apps.microsoft.com/store/apps).
@@ -53,7 +53,7 @@ Before deployment, devices must be registered with the Windows Autopilot deploym
 
 ### Set up the devices
 
-It’s easy to set up Windows 11 SE devices with Windows Autopilot and Microsoft Endpoint Manager. First, you create a dynamic device group, and then you apply a Windows Autopilot deployment profile to each device in this group. Deployment profiles determine the deployment mode and customize the OOBE for your end users.
+It's easy to set up Windows 11 SE devices with Windows Autopilot and Microsoft Endpoint Manager. First, you create a dynamic device group, and then you apply a Windows Autopilot deployment profile to each device in this group. Deployment profiles determine the deployment mode and customize the OOBE for your end users.
 
 ### Create a dynamic device group
 
