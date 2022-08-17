@@ -17,7 +17,8 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These requirements can potentially change with newer versions of Windows client. The [Update Compliance configuration script](update-compliance-v2-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 

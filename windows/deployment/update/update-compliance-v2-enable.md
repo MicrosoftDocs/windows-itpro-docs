@@ -16,7 +16,7 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](#bkmk_admin-center).
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 After verifying the [prerequisites](update-compliance-v2-prerequisites.md) are met, you can start to set up Update Compliance. The two main steps for setting up the Update Compliance solution are:
@@ -72,7 +72,7 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 
 ### <a name="bkmk_admin-center"></a> Configure Update Compliance settings through the Microsoft 365 admin center
 
-Finish enabling Updates Compliance by configuring its settings through the Microsoft 365 admin center. Completing the Update Compliance configuration through the admin center removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by the earlier version of Updates Compliance.  
+Finish enabling Updates Compliance by configuring its settings through the Microsoft 365 admin center. Completing the Update Compliance configuration through the admin center removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by the earlier version of Updates Compliance. This step is needed even if you enabled earlier previews of Update Compliance.  
 
 <!--Using include for onboarding Update Compliance through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Update Compliance through the Microsoft 365 admin center](./includes/update-compliance-onboard-admin-center.md)]

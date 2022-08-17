@@ -17,7 +17,8 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Endpoint Manager](/mem/endpoint-manager-overview))***
 
 > [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 
 This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within Microsoft Endpoint Manager itself. Configuring devices for Update Compliance in Microsoft Endpoint Manager breaks down to the following steps:
