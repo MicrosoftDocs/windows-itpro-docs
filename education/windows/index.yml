@@ -1,79 +1,57 @@
 ### YamlMime:Landing
 
-title: Azure Active Directory Identity Governance documentation
-summary: Azure Active Directory (Azure AD) Identity Governance helps you to protect, monitor, and audit access to critical assets while ensuring employee productivity.
+title: Windows security # < 60 chars
+summary: Built with Zero Trust principles... BLURB TO UPDATE  # < 160 chars
 
-metadata: 
-  author: owinfreyatl
-  description: "Learn how to protect, monitor, and audit access to critical assets while ensuring employee productivity."
-  manager: karenhoran
-  ms.author: owinfreyatl
-  ms.collection: na
-  ms.date: 09/14/2019
-  ms.service: active-directory
-  ms.subservice: na
-  ms.topic: landing-page
-  services: active-directory
+metadata:
+  title: Windows security # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Windows security # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: landing-page # Required
+  ms.prod: windows
+  ms.collection:
+    - m365-security-compliance
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/20/2021
+  localization_priority: Priority
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-landingContent: 
-  # Card
-  - title: About Identity Governance
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: School Deployment
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure AD Identity Governance?
-            url: identity-governance-overview.md
-      - linkListType: video
-        links:
-          - text: Govern access to your resources
-            url: https://www.youtube.com/watch?v=bFfowdpApu4&list=PLQXpv_NQsPIBg3op2xONM9KgwlayFDue6
-  
-  # Card
-  - title: Govern the lifecycle of access to groups, apps, and sites
+        - text: Overview
+          url: overview.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: School Deployment2
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure AD entitlement management?
-            url: entitlement-management-overview.md
-      - linkListType: tutorial
-        links:
-          - text: Manage access to resources - Azure portal
-            url: entitlement-management-access-package-first.md
-          - text: Manage access to resources - Microsoft Graph
-            url: /graph/tutorial-access-package-api?toc=/azure/active-directory/governance/toc.json&bc=/azure/active-directory/governance/breadcrumb/toc.json
+        - text: Overview
+          url: overview.md
       - linkListType: concept
         links:
-          - text: Delegation and roles
-            url: entitlement-management-delegate.md
-  
-  # Card
-  - title: Recertify access to groups, apps, and privileged roles
+        - text: Trusted Platform Module
+          url: overview.md
+        - text: Windows Defender System Guard firmware protection
+          url: overview.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: School Deployment3
     linkLists:
       - linkListType: overview
         links:
-          - text: What are Azure AD access reviews?
-            url: access-reviews-overview.md
-      - linkListType: how-to-guide
+        - text: Overview
+          url: overview.md
+      - linkListType: concept
         links:
-          - text: Create an access review to ensure users do not retain excessive access
-            url: create-access-review.md
-          - text: Review access to group or apps
-            url: perform-access-review.md
-  
-  # Card
-  - title: Make users eligible for privileged roles
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Azure AD Privileged Identity Management?
-            url: ../privileged-identity-management/pim-configure.md
-  
-  # Card
-  - title: Ensure users see disclaimers
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Require users to agree to a terms of use when using an app
-            url: ../conditional-access/terms-of-use.md
+        - text: System security
+          url: overview.md
