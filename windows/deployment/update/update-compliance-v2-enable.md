@@ -16,13 +16,16 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](#bkmk_admin-center)  
+> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 After verifying the [prerequisites](update-compliance-v2-prerequisites.md) are met, you can start to set up Update Compliance. The two main steps for setting up the Update Compliance solution are:
 
 1. [Add Update Compliance](#bkmk_add) to your Azure subscription. This step has the following two phases:
    1. [Select or create a new Log Analytics workspace](#bkmk_workspace) for use with Update Compliance.
    1. [Add the Update Compliance solution](#bkmk_solution) to the Log Analytics workspace.
+   1. [Configure Update Compliance](#bkmk_admin-center) from the Microsoft 365 admin center.
+
 1. Configure the clients to send data to Update compliance. You can configure clients in the following three ways:
     - Use a [script](update-compliance-v2-configuration-script.md)
     - Use [Microsoft Endpoint Manager](update-compliance-v2-configuration-mem.md)
@@ -63,27 +66,19 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 
 > [!Note]
 > - You can only map one tenant to one Log Analytics workspace. Mapping one tenant to multiple workspaces isn't supported.
-> - If you change the Log Analytics workspace for Update Compliance, stale data will be displayed for about 24 hours until the new workspace is fully onboarded.
+> - If you change the Log Analytics workspace for Update Compliance, stale data will be displayed for about 24 hours until the new workspace is fully onboarded. You will also need to reconfigure the Update Compliance settings in the Microsoft 365 admin center.
 
-### <a name="bkmk_id"></a> Get the Commercial ID for the Update Compliance solution
+### <a name="bkmk_admin-center"></a> Configure Update Compliance settings through the Microsoft 365 admin center
 
-The **Commercial ID** directs your clients to the Update Compliance solution in your Log Analytics workspace. You'll need this ID when you configure clients to send data to Update Compliance.
+Complete enabling Updates Compliance by configuring its settings through the Microsoft 365 admin center. Completing the Update Compliance configuration through the admin center removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by the earlier version of Updates Compliance.  
 
-1. If needed, sign into the [Azure portal](https://portal.azure.com).
-1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
-1. Select **Log Analytics workspaces**.
-1. Select the Log Analytics workspace that you added the Update Compliance solution to.
-1. Select **Solutions** from the Log Analytics workspace, then select **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** to go to the summary page for the solution. 
-1. Select **Update Compliance Settings** from the **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** summary page.
-1. The **Commercial Id Key** is listed in the text box with an option to copy the ID. The **Commercial Id Key** is commonly referred to as the `CommercialID` or **Commercial ID** in Update Compliance.
-
-   > [!Warning]
-   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a Commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and can result in data loss.
+<!--Using include for onboarding Update Compliance through the Microsoft 365 admin center-->
+[!INCLUDE [Onboarding Update Compliance through the Microsoft 365 admin center](./includes/update-compliance-onboard-admin-center.md)]
 
 
 ## Next steps
 
-Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. Enroll devices into Update Compliance using any of the following methods:
+Once you've added Update Compliance to a workspace in your Azure subscription and configured the settings through the Microsoft 365 admin center, you'll need to configure any devices you want to monitor. Enroll devices into Update Compliance using any of the following methods:
 
 - [Configure clients with a script](update-compliance-v2-configuration-script.md)
 - [Configure clients manually](update-compliance-v2-configuration-manual.md)
