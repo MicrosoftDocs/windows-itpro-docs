@@ -42,7 +42,7 @@ The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is a
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
 VPN support is added to [Windows Autopilot](#windows-autopilot)<br>
 An in-place upgrade wizard is available in [Configuration Manager](#microsoft-endpoint-configuration-manager).<br>
-The Windows 10 deployment and update [landing page](index.yml) has been redesigned, with additional content added and more content coming soon.<br>
+The Windows 10 deployment and update [landing page](index.yml) has been redesigned, with more content added and more content coming soon.<br>
 
 ## The Modern Desktop Deployment Center
 
@@ -55,7 +55,7 @@ Microsoft 365 is a new offering from Microsoft that combines
 - Office 365
 - Enterprise Mobility and Security (EMS).
 
-See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, which now includes a link to download a nifty [M365 Enterprise poster](deploy-m365.md#m365-enterprise-poster).
+See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, which now includes a link to download a nifty [Microsoft 365 Enterprise poster](deploy-m365.md#microsoft-365-enterprise-poster).
 
 ## Windows 10 servicing and support
 
@@ -65,12 +65,12 @@ Windows PowerShell cmdlets for Delivery Optimization have been improved:
 
 - **Get-DeliveryOptimizationStatus** has added the  **-PeerInfo** option for a real-time peak behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent).
 - **Get-DeliveryOptimizationLogAnalysis** is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the **-ListConnections** option to for in-depth look at peer-to-peer connections.
-- **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
+- **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to help in troubleshooting.
 
-Additional improvements in [Delivery Optimization](./do/waas-delivery-optimization.md) include:
+Other improvements in [Delivery Optimization](./do/waas-delivery-optimization.md) include:
 - Enterprise network [throttling is enhanced](/windows-insider/archive/new-for-business#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
-- Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates and Intune content, with Microsoft Endpoint Manager content coming soon!
+- Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). These policies now support Microsoft 365 Apps for enterprise updates and Intune content, with Microsoft Endpoint Manager content coming soon!
 
 The following Delivery Optimization policies are removed in the Windows 10, version 2004 release:
 
@@ -85,17 +85,17 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 
 [Windows Update for Business](./update/waas-manage-updates-wufb.md) enhancements in this release include:
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
-- Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
+- Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we've created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
-- [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
+- [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows will automatically sign in as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period.
-- **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
-- **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again.
+- **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and run normally.
+- **Pause updates**: We've extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you'll need to update your device before pausing again.
 - **Improved update notifications**: When there's an update requiring you to restart your device, you'll see a colored dot on the Power button in the Start menu and on the Windows icon in your taskbar.
-- **Intelligent active hours**: To further enhance active hours, users will now have the option to let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
+- **Intelligent active hours**: To further enhance active hours, users now can let Windows Update intelligently adjust active hours based on their device-specific usage patterns. You must enable the intelligent active hours feature for the system to predict device-specific usage patterns.
 - **Improved update orchestration to improve system responsiveness**: This feature will improve system performance by intelligently coordinating Windows updates and Microsoft Store updates, so they occur when users are away from their devices to minimize disruptions.
 
-Microsoft previously announced that we are [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Microsoft 365 Apps for enterprise will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
+Microsoft previously announced that we're [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. These editions include all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Microsoft 365 Apps for enterprise will continue to be supported for 18 months (there's no change for these editions).  These support policies are summarized in the table below.
 
 ![Support lifecycle.](images/support-cycle.png)
 
@@ -115,14 +115,14 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 
 With the release of Windows 10, version 2004 you can configure [Windows Autopilot user-driven](/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
 
-If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages.  In previous versions, this was only supported with self-deploying profiles.
+If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages. In previous versions, these language settings were only supported with self-deploying profiles.
 
 The following Windows Autopilot features are available in Windows 10, version 1903 and later:
 
-- [Windows Autopilot for white glove deployment](/windows/deployment/windows-autopilot/white-glove) is new in Windows 10, version 1903. "White glove" deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
+- [Windows Autopilot for white glove deployment](/windows/deployment/windows-autopilot/white-glove) is new in Windows 10, version 1903. "White glove" deployment enables partners or IT staff to pre-provision devices so they're fully configured and business ready for your users.
 - The Intune [enrollment status page](/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
 - [Cortana voiceover](/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
-- Windows Autopilot is self-updating during OOBE. Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
+- Windows Autopilot is self-updating during OOBE. From Windows 10 onward, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
 - Windows Autopilot will set the [diagnostics data](/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE.
 
 ### Microsoft Endpoint Configuration Manager
@@ -137,11 +137,11 @@ With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to 
 
 ### SetupDiag
 
-[SetupDiag](upgrade/setupdiag.md) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues.
+[SetupDiag](upgrade/setupdiag.md) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When log files are being searched, SetupDiag uses a set of rules to match known issues.
 
 In Windows 10, version 2004, SetupDiag is now automatically installed.
 
-During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, Windows Setup now also installs SetupDiag.exe to this directory. If there is an issue with the upgrade, SetupDiag is automatically run to determine the cause of the failure. If the upgrade process proceeds normally, this directory is moved under %SystemDrive%\Windows.Old for cleanup.
+During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, Windows Setup now also installs SetupDiag.exe to this directory. If there's an issue with the upgrade, SetupDiag is automatically run to determine the cause of the failure. If the upgrade process proceeds normally, this directory is moved under %SystemDrive%\Windows.Old for cleanup.
 
 ### Upgrade Readiness
 
@@ -179,7 +179,7 @@ For more information, see [MBR2GPT.EXE](mbr-to-gpt.md).
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT version 8456 supports Windows 10, version 2004 and earlier operating systems, including Windows Server 2019. There is currently an issue that causes MDT to incorrectly detect that UEFI is present in Windows 10, version 2004.  This issue is currently under investigation.
+MDT version 8456 supports Windows 10, version 2004 and earlier operating systems, including Windows Server 2019. There's currently an issue that causes MDT to incorrectly detect that UEFI is present in Windows 10, version 2004.  This issue is currently under investigation.
 
 For the latest information about MDT, see the [MDT release notes](/mem/configmgr/mdt/release-notes).
 
