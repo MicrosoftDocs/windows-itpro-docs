@@ -1,6 +1,6 @@
 ---
 title: Microsoft Education
-description: Microsoft Education
+description: overview of Microsoft Education
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -24,12 +24,12 @@ Historically, school IT administrators and educators have struggled to find an e
 Microsoft 365 Education provides tools and services that enable simplified management of all devices through Microsoft Endpoint Manager (MEM). With MEM, IT administrators have the flexibility to support diverse scenarios, including both school-owned devices and bring-your-own devices.
 Microsoft Endpoint Manager services include:
 
-- [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
-- [Microsoft Intune for Education](/intune-education/what-is-intune-for-education)
-- Configuration Manager
-- Desktop Analytics
-- Windows Autopilot
-- [Surface Management Portal](/surface/surface-management-portal)
+- [Microsoft Intune][MEM-1]
+- [Microsoft Intune for Education][INT-1]
+- [Configuration Manager][MEM-2]
+- [Desktop Analytics][MEM-3]
+- [Windows Autopilot][MEM-4]
+- [Surface Management Portal][MEM-5]
 
 These services are part of the Microsoft 365 stack to help secure access, protect data, and manage risk.
 
@@ -54,3 +54,13 @@ In the remainder of this document, we'll discuss the key concepts and benefits o
 - **Initial setup:** setting up the Intune for Education environment for managing devices, including configuring settings, deploying applications, and defining updates cadence  
 - **Device enrollment:** Setting up Windows devices for deployment and enrolling them in Intune for Education
 - **Device reset:** Resetting managed devices with Intune for Education
+
+<!-- Reference links in article -->
+
+[MEM-1]: /mem/intune/fundamentals/what-is-intune
+[MEM-2]: /mem/configmgr/core/understand/introduction
+[MEM-3]: /mem/configmgr/desktop-analytics/overview
+[MEM-4]: /mem/autopilot/windows-autopilot
+[MEM-5]: /mem/autopilot/dfci-management
+
+[INT-1]: /intune-education/what-is-intune-for-education

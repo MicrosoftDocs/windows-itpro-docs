@@ -1,6 +1,6 @@
 ---
-title: Set up your tenant
-description: How to create and prepare your tenant for an education environment 
+title: Set up Azure Active Directory
+description: How to create and prepare your Azure AD tenant for an education environment 
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -14,16 +14,20 @@ ms.collection: education
 #appliesto:
 ---
 
-# Set up your tenant
+# Set up Azure Active Directory
 
 The Microsoft platform for education simplifies the management of Windows devices with Intune for Education and Microsoft 365 Education. The first, fundamental step, is to configure the identity infrastructure to manage user access and permissions for your school.
 
-Azure Active Directory (Azure AD), which is included with the Microsoft 365 Education subscription, provides authentication and authorization to any Microsoft cloud services. Identity objects are defined in Azure AD for human identities, like students and teachers, as well as non-human identities, like devices, services, and applications. Once users get Microsoft 365 licenses assigned, they will be able to consume services and access resources within the tenant. With Microsoft 365 Education, you can manage identities for your teachers and students, assign licenses to devices and users, and create groups for the classrooms.
+Azure Active Directory (Azure AD), which is included with the Microsoft 365 Education subscription, provides authentication and authorization to any Microsoft cloud services. Identity objects are defined in Azure AD for human identities, like students and teachers, as well as non-human identities, like devices, services, and applications. Once users get Microsoft 365 licenses assigned, they'll be able to consume services and access resources within the tenant. With Microsoft 365 Education, you can manage identities for your teachers and students, assign licenses to devices and users, and create groups for the classrooms.
 
-## Set up a Microsoft 365 Education tenant
+In this section you will:
+> [!div class="checklist"]
+> * Set up a Microsoft 365 Education tenant
+> * Add users, create groups, and assign licenses
+> * Configure school branding
+> * Enable bulk enrollment
 
-In this section, you'll create and configure a Microsoft 365 tenant and explore the Microsoft 365 admin center.
-### Create a Microsoft 365 tenant
+## Create a Microsoft 365 tenant
 
 If you don't already have a Microsoft 365 tenant, you'll need to create one.
 
@@ -158,9 +162,10 @@ ________________________________________________________
 > * Configure school branding
 > * Enable bulk enrollment
 
-With users and groups created, and licensed for Microsoft 365 Education, you're ready to set up and manage students' and teachers' devices. To set up devices, you need to first configure Microsoft Intune.
+With users and groups created, and licensed for Microsoft 365 Education, you can now configure Microsoft Intune.
+
 > [!div class="nextstepaction"]
-> [Set up Microsoft Intune >](set-up-microsoft-intune.md)
+> [Next section: Set up Microsoft Intune >](set-up-microsoft-intune.md)
 
 <!-- Reference links in article -->
 

@@ -113,6 +113,17 @@ Once the dynamic device group is created, it can be used for assigning Windows A
 
 For more information, see [Configure Autopilot profiles](/mem/autopilot/profiles).
 
+### Configure an Enrollment Status Page
+
+An Enrollment Status Page (ESP) is a greeting page displayed to users while enrolling or signing in for the first time to Windows devices. The ESP displays provisioning progress, showing applications and profiles installation status.
+
+To deploy the ESP to devices, you need to create an ESP profile in Microsoft Endpoint Manager.
+
+For more information, see [Set up the Enrollment Status Page][MEM-3].
+
+> [!CAUTION]
+> When targeting an ESP to **Windows 11 SE devices**, only approved apps should be included as part of the ESP configuration.
+
 ### Enrollment Status Page reference here
 ## branding reference here
 ### Autopilot end-user experience
@@ -135,3 +146,10 @@ ________________________________________________________
 > [!div class="nextstepaction"]
 > [< Enroll devices](enroll-overview.md)
 > [Manage devices >](manage-overview.md)
+
+
+
+<!-- Reference links in article -->
+
+
+[MEM-3]: /mem/intune/enrollment/windows-enrollment-status

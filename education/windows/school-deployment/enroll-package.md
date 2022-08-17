@@ -22,7 +22,7 @@ appliesto:
 Enrolling devices with provisioning packages is an efficient way to enroll large number of Windows devices in an education environment. Some of the benefits of provisioning packages are:
 
 - There are no particular hardware dependencies on the devices to complete the enrollment process
-- They work with different hardware configurations, across different makes and models
+- Devices do not need to be registered in advance
 - Enrollment is a simple task: just open a provisioning package and the process is automated
 
 You can create provisioning packages using either **Set Up School PCs** or **Windows Configuration Designer** applications, which are described in the following sections.
@@ -43,7 +43,6 @@ The Set Up School PCs app guides you through configuration choices for school-ow
 The devices will be joined to Azure Active Directory and automatically enrolled in Intune. Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
 
 For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][1].
-
 
 
 ### Enroll devices with the provisioning package

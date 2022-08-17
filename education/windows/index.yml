@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Windows security # < 60 chars
+title: Windows for Education # < 60 chars
 summary: Built with Zero Trust principles... BLURB TO UPDATE  # < 160 chars
 
 metadata:
@@ -30,7 +30,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: School Deployment2
+  - title: Set up School PCs
     linkLists:
       - linkListType: overview
         links:
@@ -45,13 +45,13 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: School Deployment3
+  - title: Configure devices
     linkLists:
-      - linkListType: overview
+      - linkListType: Take a test
         links:
         - text: Overview
           url: overview.md
-      - linkListType: concept
+      - linkListType: Change Windows editions
         links:
         - text: System security
           url: overview.md

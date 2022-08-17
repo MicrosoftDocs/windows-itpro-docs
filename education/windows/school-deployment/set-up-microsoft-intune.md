@@ -25,9 +25,9 @@ Microsoft Intune is one of the services provided by Microsoft Endpoint Manager. 
 
 :::image type="content" source="./images/intune-education-portal.png" alt-text="Intune for Education dashboard" border="true":::
 
-Intune for Education supports the entire device lifecycle, from the enrollment phase through retirement. IT administrators can start managing classroom devices with bulk enrollment options and a streamlined deployment. At the end of the school year, IT admins can reset or wipe devices, ensuring they're ready for the next year.
+**Intune for Education** supports the entire device lifecycle, from the enrollment phase through retirement. IT administrators can start managing classroom devices with bulk enrollment options and a streamlined deployment. At the end of the school year, IT admins can reset devices, ensuring they're ready for the next year.
 
-For more information, see [Intune for Education documentation](/intune-education/what-is-intune-for-education).
+For more information, see [Intune for Education documentation][INT-1].
 
 In this section, you'll configure the Intune service to enroll and configure devices in your school.
 
@@ -37,11 +37,11 @@ Before configuring settings with Intune for Education, consider the following pr
 
 - **Intune subscription.** Microsoft Intune is licensed in three ways:
   - As a standalone service
-  - As part of [Enterprise Mobility + Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)
-  - As part of a [Microsoft 365 Education subscription](https://www.microsoft.com/licensing/product-licensing/microsoft-365-education)
-- **Device platform.** Devices running a supported version of Windows 10, Windows 11, Windows 11 SE, iOS, and iPad OS
+  - As part of [Enterprise Mobility + Security][MSFT-1]
+  - As part of a [Microsoft 365 Education subscription][MSFT-2]
+- **Device platform.** Intune for Education can manage devices running a supported version of Windows 10, Windows 11, Windows 11 SE, iOS, and iPad OS
 
-For more information, see [Intune licensing](/mem/intune/fundamentals/licenses) and [this comparison sheet](https://edudownloads.azureedge.net/msdownloads/Microsoft-Modern-Work-Plan-Comparison-Education_11-2021.pdf), which includes a table detailing the Microsoft Modern Work Plan for Education.
+For more information, see [Intune licensing][MEM-1] and [this comparison sheet][MSFT-3], which includes a table detailing the *Microsoft Modern Work Plan for Education*.
 
 ## Configure the Intune service for education devices
 
@@ -64,18 +64,7 @@ To block personally owned Windows devices from enrolling:
 1. On the **Assignments** page, select **Add groups**, and then use the search box to find and choose groups to which you want to apply the restriction > **Next**
 1. On the **Review + create** page, select **Create** to save the restriction
 
-For more information, see [Create a device platform restriction](/mem/intune/enrollment/enrollment-restrictions-set).
-
-### Configure an Enrollment Status Page
-
-An Enrollment Status Page (ESP) is a greeting page displayed to users while enrolling or signing in for the first time to Windows devices. The ESP displays provisioning progress, showing applications and profiles installation status.
-
-To deploy the ESP to devices, you need to create an ESP profile in Microsoft Endpoint Manager.
-
-For more information, see [Set up the Enrollment Status Page](/mem/intune/enrollment/windows-enrollment-status).
-
-> [!CAUTION]
-> When targeting an ESP to **Windows 11 SE devices**, only approved apps should be included as part of the ESP configuration.
+For more information, see [Create a device platform restriction][MEM-2].
 
 ### Disable Windows Hello for Business
 
@@ -91,67 +80,7 @@ To disable Windows Hello for Business at the tenant level:
 
 :::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center" border="true":::
 
-For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
-
-## Configure device settings
-
-With Intune for Education, you can configure settings for users and devices in the school. Settings can be assigned to groups:
-
-- If you target settings to a **group of users**, those settings will apply, regardless of what managed devices the targeted users sign in to
-- If you target settings to a **group of devices**, those settings will apply regardless of who is using the devices
-
-There are two ways to manage settings in Intune for Education:
-
-- **Express Configuration.** Configure a selection of settings that are most used in school environments
-- **Group settings.** Configure all settings for any group of devices or users
-
-> [!NOTE]
-> Express Configuration is ideal when you are getting started. Settings are pre-configured to Microsoft-recommended values, but can be changed to fit your school's needs. It is recommended to use Express Configuration to initially set up your Windows devices.
-
-### Configure settings with Express Configuration
-
-With Express Configuration, you can get Intune for Education up and running in just a few steps. You can select a group of devices or users, select applications to distribute, and choose settings from the most commonly used in schools.
-
-For more information, see [Express Configuration in Intune for Education](/intune-education/express-configuration-intune-edu).
-
-> [!TIP]
-> To learn more, and practice step-by-step Express Configuration in Intune for Education, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/deploy-apps-and-policies" target="_blank"><b>this interactive demo</b></a>.
-
-### Configure group settings
-
-Groups are used to manage users and devices with similar management needs, allowing you to apply changes to many devices or users at once. To review the available group settings:
-
-1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
-1. Select **Groups** > Pick a group to manage
-1. Select **Windows device settings**
-1. Expand the different categories and review information about individual settings
-
-For more information, see [Set up Intune for Education](/microsoft-365/education/deploy/use-intune-for-education).
-
-## Configure applications
-
-Intune for Education supports the deployment of two types of Windows applications: web apps and desktop apps.
-
-:::image type="content" source="./images/intune-education-apps.png" alt-text="Intune for Education - Apps" border="true":::
-
-Applications can be deployed to groups:
-
-- If you target apps to a **group of users**, the apps will be installed on any managed devices that the users sign into
-- If you target apps to a **group of devices**, the apps will be installed on those devices and available to any user who signs in
-
-For more information:
-
-- [Install apps for all users](/microsoft-365/education/deploy/use-intune-for-education)
-- [Add desktop apps](/intune-education/add-desktop-apps-edu) 
-- [Add web apps](/intune-education/add-web-apps-edu)
-
-### Considerations for Windows 11 SE
-
-Windows 11 SE supports all web applications and a set of native applications.
-You can prepare and add an app to Microsoft Intune as a Win32 app from the [approved app list](/education/windows/windows-11-se-overview).
-
-> [!NOTE]
-> If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><b>Microsoft Education Support</b></a>.
+For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 
 ________________________________________________________
 ## Section review and next steps
@@ -163,6 +92,25 @@ ________________________________________________________
 > * Configure applications
 
 With the Intune service configured, you can start enrolling and managing students' and teachers' devices.
+
 > [!div class="nextstepaction"]
-> [< Set up your tenant](set-up-your-tenant.md)
-> [Enroll devices >](enroll-overview.md)
+> [< Previous section: Set up Azure AD](set-up-Azure-AD.md)
+> [Next section: Enroll devices >](enroll-overview.md)
+
+<!-- Reference links in article -->
+
+[MEM-1]: /mem/intune/fundamentals/licenses
+[MEM-2]: /mem/intune/enrollment/enrollment-restrictions-set
+[MEM-4]: /mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy
+
+[INT-1]: /intune-education/what-is-intune-for-education
+[INT-2]: /intune-education/express-configuration-intune-edu
+[INT-3]: /microsoft-365/education/deploy/use-intune-for-education
+[INT-4]: /intune-education/add-desktop-apps-edu
+[INT-5]: /intune-education/add-web-apps-edu
+
+[MSFT-1]: https://www.microsoft.com/microsoft-365/enterprise-mobility-security
+[MSFT-2]: https://www.microsoft.com/licensing/product-licensing/microsoft-365-education
+[MSFT-3]: https://edudownloads.azureedge.net/msdownloads/Microsoft-Modern-Work-Plan-Comparison-Education_11-2021.pdf
+
+[EDU-1]: /education/windows/windows-11-se-overview

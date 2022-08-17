@@ -6,8 +6,8 @@ items:
   - name: 1 . Prepare your tenant
     items:
       - name: Overview
-        href: set-up-your-tenant.md
-      - name: Set up your tenant
+        href: set-up-azure-ad.md
+      - name: Set up Azure Active Directory
         href: set-up-your-tenant.md
       - name: Set up Microsoft Intune
         href: set-up-microsoft-intune.md
