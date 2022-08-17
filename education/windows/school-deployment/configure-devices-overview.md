@@ -19,8 +19,17 @@ appliesto:
 
 # Configure devices with Microsoft Intune
 
+Before distributing devices to a school, you must ensure that the devices are configured with the correct policies, settings and applications.
+Microsoft Intune uses Azure AD groups to assign policies and applications to devices.
+With Microsoft Intune for Education, you can conveniently create groups and assign policies and applications to them.
 
-## Managing groups
+In this section you will:
+> [!div class="checklist"]
+> * Create groups
+> * Create and assign policies to groups
+> * Create and assign applications to groups
+
+## Create groups
 
 By organizing students, classrooms, or learning curricula into groups, you can provide students with the resources they need, as well as manage several student devices all at once.
 
@@ -109,3 +118,62 @@ To create security policies in Intune for Education:
 1. Select **Create policy**. For more information, see [Creating an endpoint security policy](/mem/intune/protect/endpoint-security-policy).
 
 ## [PICTURE HERE] Endpoint security overview page in Microsoft Endpoint Manager
+
+
+## Configure device settings
+
+With Intune for Education, you can configure settings for users and devices in the school. Settings can be assigned to groups:
+
+- If you target settings to a **group of users**, those settings will apply, regardless of what managed devices the targeted users sign in to
+- If you target settings to a **group of devices**, those settings will apply regardless of who is using the devices
+
+There are two ways to manage settings in Intune for Education:
+
+- **Express Configuration.** Configure a selection of settings that are most used in school environments
+- **Group settings.** Configure all settings for any group of devices or users
+
+> [!NOTE]
+> Express Configuration is ideal when you are getting started. Settings are pre-configured to Microsoft-recommended values, but can be changed to fit your school's needs. It is recommended to use Express Configuration to initially set up your Windows devices.
+
+### Configure settings with Express Configuration
+
+With Express Configuration, you can get Intune for Education up and running in just a few steps. You can select a group of devices or users, select applications to distribute, and choose settings from the most commonly used in schools.
+
+
+> [!TIP]
+> To learn more, and practice step-by-step Express Configuration in Intune for Education, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/deploy-apps-and-policies" target="_blank"><b>this interactive demo</b></a>.
+
+### Configure group settings
+
+Groups are used to manage users and devices with similar management needs, allowing you to apply changes to many devices or users at once. To review the available group settings:
+
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Groups** > Pick a group to manage
+1. Select **Windows device settings**
+1. Expand the different categories and review information about individual settings
+
+For more information, see [Set up Intune for Education][INT-3].
+
+## Configure applications
+
+Intune for Education supports the deployment of two types of Windows applications: web apps and desktop apps.
+
+:::image type="content" source="./images/intune-education-apps.png" alt-text="Intune for Education - Apps" border="true":::
+
+Applications can be deployed to groups:
+
+- If you target apps to a **group of users**, the apps will be installed on any managed devices that the users sign into
+- If you target apps to a **group of devices**, the apps will be installed on those devices and available to any user who signs in
+
+For more information:
+
+- [Add desktop apps][INT-4]
+- [Add web apps][INT-5]
+
+### Considerations for Windows 11 SE
+
+Windows 11 SE supports all web applications and a set of native applications.
+You can prepare and add an app to Microsoft Intune as a Win32 app from the [approved app list]EDU-1].
+
+> [!NOTE]
+> If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><b>Microsoft Education Support</b></a>.
