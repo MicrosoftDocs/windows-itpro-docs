@@ -16,7 +16,7 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](#bkmk_admin-center)  
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 After verifying the [prerequisites](update-compliance-v2-prerequisites.md) are met, you can start to set up Update Compliance. The two main steps for setting up the Update Compliance solution are:
@@ -31,6 +31,8 @@ After verifying the [prerequisites](update-compliance-v2-prerequisites.md) are m
     - Use [Microsoft Endpoint Manager](update-compliance-v2-configuration-mem.md)
     - Configure [manually](update-compliance-v2-configuration-manual.md)
 
+> [!IMPORTANT]
+> Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Update Compliance doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers.
 ## <a name="bkmk_add"></a> Add Update Compliance to your Azure subscription
 
 Before you configure clients to send data, you'll need to add the Update Compliance solution to your Azure subscription so the data can be received. First, you'll select or create a new Log Analytics workspace to use. Second, you'll add the Update Compliance solution to the workspace.
@@ -70,7 +72,7 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 
 ### <a name="bkmk_admin-center"></a> Configure Update Compliance settings through the Microsoft 365 admin center
 
-Complete enabling Updates Compliance by configuring its settings through the Microsoft 365 admin center. Completing the Update Compliance configuration through the admin center removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by the earlier version of Updates Compliance.  
+Finish enabling Updates Compliance by configuring its settings through the Microsoft 365 admin center. Completing the Update Compliance configuration through the admin center removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by the earlier version of Updates Compliance.  
 
 <!--Using include for onboarding Update Compliance through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Update Compliance through the Microsoft 365 admin center](./includes/update-compliance-onboard-admin-center.md)]

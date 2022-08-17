@@ -40,7 +40,7 @@ This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You 
 Open `RunConfig.bat` and configure the following (assuming a first-run, with `runMode=Pilot`):
 
 1. Define `logPath` to where you want the logs to be saved. Ensure that `runMode=Pilot`.
-2. Set `commercialIDValue` to your Commercial ID.
+2. Set `setCommercialID=true` and set the `commercialIDValue` to your [Commercial ID](update-compliance-get-started.md#get-your-commercialid).
 3. Run the script.
 4. Examine the logs for any issues. If there are no issues, then all devices with a similar configuration and network profile are ready for the script to be deployed with `runMode=Deployment`.
 5. If there are issues, gather the logs and provide them to Support.

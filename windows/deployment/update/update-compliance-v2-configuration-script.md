@@ -42,7 +42,7 @@ This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You 
 Open `RunConfig.bat` and configure the following (assuming a first-run, with `runMode=Pilot`):
 
 1. Define `logPath` to where you want the logs to be saved. Ensure that `runMode=Pilot`.
-1. Set `commercialIDValue` to your [Commercial ID](update-compliance-v2-enable.md#bkmk_id) for the Update Compliance solution.
+1. Don't modify the [Commercial ID](update-compliance-get-started.md#get-your-commercialid) values since they're used for the earlier version of Update Compliance. Leave `setCommercialID=false` and the `commercialIDValue=Unknown`.
 1. Run the script.
 1. Examine the logs for any issues. If there are no issues, then all devices with a similar configuration and network profile are ready for the script to be deployed with `runMode=Deployment`.
 1. If there are issues, gather the logs and provide them to Microsoft Support.
