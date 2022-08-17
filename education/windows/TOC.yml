@@ -1,8 +1,8 @@
 items:
 - name: Windows for Education
-  href: index.yaml
+  href: index.yml
 - name: Overview
-  href: index.md
+  href: overview.md
 - name: Tutorials
   items:
   - name: Deploy and manage Windows devices in a school
