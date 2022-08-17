@@ -14,21 +14,17 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
-# Manage devices with Microsoft Intune
+# Configure devices with Microsoft Intune
 
-Microsoft Intune delivers streamlined remote management throughout the school year, giving IT the ability to manage apps, control security and privacy remotely, and generate compliance reports.
-
-## Remote device management
-
-With Intune for Education, you can manage groups, applications, resources, and individual needs of multiple students. There are several ways to manage students’ devices, including organizing what groups they belong to; determining what apps they have access to; and configuring device settings, customizations, and restrictions. You can also monitor when users sign in and troubleshoot devices remotely.
 
 ## Managing groups
 
-By organizing students, classrooms, or learning curricula into groups, you can provide students with the resources they need, as well as manage several student devices all at once. 
+By organizing students, classrooms, or learning curricula into groups, you can provide students with the resources they need, as well as manage several student devices all at once.
 
-**NOTE:** Before you begin creating groups, it is a good idea to plan them out to determine what students may need from their devices. For example: 
+**NOTE:** Before you begin creating groups, it is a good idea to plan them out to determine what students may need from their devices. For example:
 
 - For all devices, block apps from using location services.
 - For AP Computer Science, assign students apps to edit code.
@@ -38,8 +34,6 @@ By organizing students, classrooms, or learning curricula into groups, you can p
 *Out of the box, Intune for Education comes with default groups that enable you to manage All devices and All users. There are also two additional groups if you use Microsoft SDS: All teachers and All students.  SDS also creates individual groups for students and teachers of specific schools, which fold under the All teachers and All students groups. Beyond the defaults, groups can be customized to suit various needs. For example, if you have both Windows and iOS devices in your school, you can create groups, such as All iPads and All Windows 10 PCs.* 
 
 Finally, two group types can be created: assigned groups and dynamic groups. Assigned groups are used when you want to manually add users or devices to a group. Dynamic groups reference rules that you create to assign students or devices to groups and then automate the assignment of devices to those groups.
-
-
 
 For more information, see:
 
@@ -57,9 +51,9 @@ Create update rings that specify how and when [feature and quality updates](/win
 
 1. In the Microsoft Endpoint Manager admin center, select **Devices** → **Windows** → **Update rings for Windows 10 and later** → **Create Profile**. 
 
-![Create Update rings page in Microsoft Endpoint Manager admin center](./image23.png)
+## [PICTURE HERE] Create Update rings page in Microsoft Endpoint Manager admin center
 
-2. Under **Basics**, specify a name and description (optional).
+1. Under **Basics**, specify a name and description (optional).
 1. Under **Update ring settings**, configure settings for your school needs. For more information, see [Windows Update settings](/mem/intune/protect/windows-update-settings) and [Creating and assigning update rings](/mem/intune/protect/windows-10-update-rings).
 
 **NOTE:** You can also create expedited quality updates for Windows 10 and later. This policy lets you expedite the installation of the most recent Windows security updates on Intune-managed devices. For more information, see [Create and assign an expedited quality update](/mem/intune/protect/windows-10-expedite-updates).
@@ -96,12 +90,22 @@ Intune for Education makes it easy to add desktop apps to your deployment. You c
 
 ### Manage device policies
 
-You can manage the settings of several devices from a single touchpoint. For more information, see: 
+You can manage the settings of several devices from a single touch point. For more information, see:
 
 - [Add Wi-Fi profiles](/intune-education/add-wi-fi-profile) 
 - [Add Take a Test profile](/intune-education/take-a-test-profiles) 
 - [View all Windows device settings ](/intune-education/all-edu-settings-windows)
 
-## Remote assistance
+## Endpoint security
 
-With devices managed by Intune for Education, you can remotely assist students and teachers with device issues. For more information, see [Remote assistance for managed devices - Intune for Education](/intune-education/remote-assist-mobile-devices).
+Intune for Education helps protect devices and school data with tools like security baselines and Windows Update policies. Through the Endpoint security node, you can configure device security and manage security tasks for devices at risk. The node configures and deploys Microsoft Defender for Endpoint to help prevent security breaches and gain visibility into your school’s security posture. 
+
+### Create security policies
+
+To create security policies in Intune for Education:
+
+1. In the [Microsoft Endpoint Manager admin center](https://intuneeducation.portal.azure.com/), select the **Endpoint security** node. 
+1. Under **Manage**, choose the policies you want to set from the included list. For more information, see [Antivirus](/mem/intune/protect/endpoint-security-antivirus-policy), [Disk encryption](/mem/intune/protect/endpoint-security-disk-encryption-policy), [Firewall](/mem/intune/protect/endpoint-security-firewall-policy), [Endpoint detection and response](/mem/intune/protect/endpoint-security-edr-policy), [Attack surface reduction](/mem/intune/protect/endpoint-security-asr-policy), and [Account protection](/mem/intune/protect/endpoint-security-account-protection-policy).
+1. Select **Create policy**. For more information, see [Creating an endpoint security policy](/mem/intune/protect/endpoint-security-policy).
+
+## [PICTURE HERE] Endpoint security overview page in Microsoft Endpoint Manager

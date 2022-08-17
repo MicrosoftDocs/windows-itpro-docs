@@ -16,23 +16,44 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
-# Advanced capabilities
+# Manage devices with Microsoft Intune
 
-This section of the cookbook provides information about the advanced capabilities in Intune for Education for device management, reporting, security, and support.
+Microsoft Intune delivers streamlined remote management throughout the school year, giving IT the ability to manage apps, control security and privacy remotely, and generate compliance reports.
 
-## Endpoint security
+## Remote device management
 
-Intune for Education helps protect devices and school data with tools like security baselines and Windows Update policies. Through the Endpoint security node, you can configure device security and manage security tasks for devices at risk. The node configures and deploys Microsoft Defender for Endpoint to help prevent security breaches and gain visibility into your school’s security posture. 
+With Intune for Education, you can manage groups, applications, resources, and individual needs of multiple students. There are several ways to manage students’ devices, including organizing what groups they belong to; determining what apps they have access to; and configuring device settings, customizations, and restrictions. You can also monitor when users sign in and troubleshoot devices remotely.
 
-### Create security policies
+## Managing groups
 
-To create security policies in Intune for Education:
+By organizing students, classrooms, or learning curricula into groups, you can provide students with the resources they need, as well as manage several student devices all at once. 
 
-1. In the [Microsoft Endpoint Manager admin center](https://intuneeducation.portal.azure.com/), select the **Endpoint security** node. 
-1. Under **Manage**, choose the policies you want to set from the included list. For more information, see [Antivirus](/mem/intune/protect/endpoint-security-antivirus-policy), [Disk encryption](/mem/intune/protect/endpoint-security-disk-encryption-policy), [Firewall](/mem/intune/protect/endpoint-security-firewall-policy), [Endpoint detection and response](/mem/intune/protect/endpoint-security-edr-policy), [Attack surface reduction](/mem/intune/protect/endpoint-security-asr-policy), and [Account protection](/mem/intune/protect/endpoint-security-account-protection-policy).
-1. Select **Create policy**. For more information, see [Creating an endpoint security policy](/mem/intune/protect/endpoint-security-policy).
+**NOTE:** Before you begin creating groups, it is a good idea to plan them out to determine what students may need from their devices. For example: 
 
-![Endpoint security overview page in Microsoft Endpoint Manager](./image22.png)
+- For all devices, block apps from using location services.
+- For AP Computer Science, assign students apps to edit code.
+- For 12th grade History, enable web browsing to access academic articles.
+- For all Photography students, enable the device’s camera.
+
+*Out of the box, Intune for Education comes with default groups that enable you to manage All devices and All users. There are also two additional groups if you use Microsoft SDS: All teachers and All students.  SDS also creates individual groups for students and teachers of specific schools, which fold under the All teachers and All students groups. Beyond the defaults, groups can be customized to suit various needs. For example, if you have both Windows and iOS devices in your school, you can create groups, such as All iPads and All Windows 10 PCs.* 
+
+Finally, two group types can be created: assigned groups and dynamic groups. Assigned groups are used when you want to manually add users or devices to a group. Dynamic groups reference rules that you create to assign students or devices to groups and then automate the assignment of devices to those groups.
+
+For more information, see:
+
+- [Create groups in Intune for Education](/intune-education/create-groups) 
+- [Edit a group name](/intune-education/edit-groups-intune-for-edu)
+- [Move a group up or down within your existing group list](/intune-education/edit-groups-intune-for-edu)
+- Delete a group to remove apps and settings from devices 
+- [Assign and delegate group admins](/intune-education/group-admin-delegate)
+- [Manually add or remove users and devices to an existing assigned group](/intune-education/edit-groups-intune-for-edu)
+- [Edit dynamic group rules to accommodate for new devices, locations, or school years](/intune-education/edit-groups-intune-for-edu)
+
+## Remote assistance
+
+With devices managed by Intune for Education, you can remotely assist students and teachers with device issues. For more information, see [Remote assistance for managed devices - Intune for Education](/intune-education/remote-assist-mobile-devices).
+
+
 
 
 ## Manage device firmware for Surface devices
@@ -87,7 +108,7 @@ For more information, see [How to create Autopilot Profile](/surface/surface-man
 
 #### Create an enrollment status profile
 
-To ensure devices apply the DFCI configuration during OOBE before users sign in, you must configure enrollment status. For more information, see [Set up an enrollment status page](/intune/enrollment/windows-enrollment-status), and then return to this document to continue with the steps below. 
+To ensure devices apply the DFCI configuration during OOBE before users sign in, you must configure enrollment status. For more information, see [Set up an enrollment status page](/intune/enrollment/windows-enrollment-status).
 
 #### Configure DFCI settings on Surface devices
 
@@ -96,10 +117,9 @@ You can configure DFCI policy settings by editing the DFCI profile from Microsof
 1. In the Microsoft Endpoint Manager admin center, select **Devices** → **Windows** → **Configuration profiles**.
 1. Select the **DFCI profile name** → **Properties** → **Settings**.
 
-:::image type="content" source="./image25.png" alt-text="Device Firmware Configuration Interface page in Microsoft Endpoint Manager admin center" border="true":::
+## [PICTURE HERE] Device Firmware Configuration Interface page in Microsoft Endpoint Manager admin center
 
 For more information, see [Configuring the DFCI environment and managing UEFI configuration settings for targeted Surface devices](/surface/surface-manage-dfci-guide). 
-
 
 ## Microsoft Surface Management Portal
 
@@ -118,6 +138,7 @@ To see the device’s warranty information, select **Device warranty and coverag
 
 5. To see support requests and their status, select **Support requests**.
 
+
 ## Autopilot motherboard replacement
 
 Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
@@ -130,27 +151,3 @@ Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be
 1. [Return the device](/mem/autopilot/autopilot-mbr).
 
 For more information, see [Autopilot motherboard replacement scenario guidance](/mem/autopilot/autopilot-mbr).
-
-**UP NEXT:** By this point in the cookbook, you have reviewed the basic steps for full device lifecycle management. In the next section, we'll look at some advanced Intune capabilities that can help support your device management needs today and into the future.
-
-## How to contact Microsoft Support
-
-Microsoft provides global technical, pre-sales, billing, and subscription support for cloud-based device management services. This support includes Microsoft Intune, Configuration Manager, Windows 365, and Microsoft Managed Desktop.
-
-Follow these steps to obtain support in Microsoft Endpoint Manager:
-
-- Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
-- Select **Troubleshooting + support** > **Help and support**
-    :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Endpoint Manager.":::
-- Select the required support scenario: Configuration Manager, Intune, Co-management, or Windows 365
-- Above **How can we help?**, select one of three icons to open different panes: *Find solutions*, *Contact support*, or *Service requests*
-- In the **Find solutions** pane, use the text box to specify a few details about your issue. The console may offer suggestions based on what you've entered. Depending on the presence of specific keywords, the console provides help like:
-  - Run diagnostics: start automated tests and investigations of your tenant from the console to reveal known issues. When you run a diagnostic, you may receive mitigation steps to help with resolution
-  - View insights: find links to documentation that provides context and background specific to the product area or actions you've described
-  - Recommended articles: browse suggested troubleshooting topics and other content related to your issue
-- If needed, use the *Contact support* pane to file an online support ticket
-  > [!IMPORTANT]
-  > When opening a case, be sure to include as many details as possible in the *Description* field. Such information includes: timestamp and date, device ID, device model, serial number, OS version, and any other details relevant to the issue.
-- To review your case history, select the **Service requests** pane. Active cases are at the top of the list, with closed issues also available for review
-
-For more information, see [Microsoft Endpoint Manager support page](/mem/get-support).

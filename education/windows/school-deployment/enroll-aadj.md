@@ -34,5 +34,5 @@ ________________________________________________________
 ## Section review and next steps
 
 > [!div class="nextstepaction"]
-> [< Enroll devices](enrollment-overview.md)
-> [Manage devices >](management-overview.md)
+> [< Enroll devices](enroll-overview.md)
+> [Manage devices >](manage-overview.md)

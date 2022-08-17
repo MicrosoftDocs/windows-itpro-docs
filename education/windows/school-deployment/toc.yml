@@ -4,31 +4,34 @@ items:
   - name: Microsoft Education
     href: microsoft-education.md
   - name: 1 . Prepare your tenant
-    items: 
+    items:
+      - name: Overview
+        href: prepare-tenant-overview.md
       - name: Set up your tenant
         href: set-up-your-tenant.md
       - name: Set up Microsoft Intune
         href: set-up-microsoft-intune.md
   - name: 2. Configure devices with Intune
-  - name: 3. Enroll devices in Intune
+    href: configure-devices-overview.md
+  - name: 3. Deploy devices
     items: 
       - name: Overview
-        href: enrollment-overview.md
+        href: enroll-overview.md
       - name: Enroll devices with Windows Autopilot
-        href: enrollment-autopilot.md
+        href: enroll-autopilot.md
       - name: Enroll devices with provisioning packages and SUSPCs
-        href: enrollment-package.md
+        href: enroll-package.md
       - name: Enroll devices manually
-        href: enrollment-aadj.md
+        href: enroll-aadj.md
   - name: 4. Manage devices with Intune
     items: 
       - name: Overview
-        href: management-overview.md
+        href: manage-overview.md
       - name: Remote actions
-        href: management-remote-actions.md
+        href: manage-remote-actions.md
       - name: Device inventory and reporting
-        href: management-inventory-reporting.md
-      - name: Advanced capabilities
-        href: advanced-capabilities.md
-  - name: 5. Reset and wipe devices
-    href: reset-wipe.md
+        href: manage-inventory-reporting.md
+      - name: Reset and wipe devices
+        href: reset-wipe.md
+  - name: 5. Troubleshoot and get help
+    href: troubleshoot-overview.md
