@@ -56,9 +56,7 @@ For more information, see [Run package - Install package on PC][EDU-1].
 
 > [!TIP]
 > To learn more and practice with Set up School PCs, try the <a href="https://www.microsoft.com/en-us/education/interactive-demos/enroll-devices-at-scale" target="_blank"><b>Set Up School PCs demo</b></a>, which provides detailed steps to create a provisioning package and deploy a device.
-
-
-# Windows Configuration Designer
+## Windows Configuration Designer
 
 
 Windows Configuration Designer is especially useful in scenarios where a school needs to provision packages for both bring-you-own devices and school-owned devices. Ideal for small-to-medium schools that manage up to a few hundred devices, Windows Configuration Designer lets you configure devices without imaging. For more information, see [Install Windows Configuration Designer][WIN-1], which provides details about the app, its provisioning process, and considerations for its use. 

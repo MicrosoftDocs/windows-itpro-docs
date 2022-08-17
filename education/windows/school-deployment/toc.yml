@@ -1,6 +1,6 @@
 items: 
   - name: Introduction
-    href: index.md
+    href: index.yml
   - name: Microsoft Education
     href: microsoft-education.md
   - name: 1 . Prepare your tenant

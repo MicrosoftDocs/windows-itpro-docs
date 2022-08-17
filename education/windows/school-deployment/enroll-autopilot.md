@@ -1,6 +1,6 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: Windows Autopilot
+description: Windows Autopilot
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -15,6 +15,8 @@ appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 ---
+
+# Title
 
 For more information, see [Overview of Windows Autopilot][MEM-1].
   > [!NOTE]
@@ -68,7 +70,7 @@ The steps for creating a dynamic device group are completed in Microsoft Endpoin
 1. **Owners**: Select users who own this group. Owners can also delete the group.
 1. **Dynamic device members**: Select **Add dynamic query** → **Add expression**.
 
-![New Group page in Microsoft Endpoint Manager admin center](./image6.png)
+## UPDATE PIC![New Group page in Microsoft Endpoint Manager admin center]
 
 ### Create rules using Autopilot device attributes
 
@@ -81,7 +83,7 @@ The following steps will create a dynamic device group that uses the query expre
 1. The Intune group tag field maps to the OrderID attribute on Azure AD devices. To create a group that includes all Autopilot devices with a specific group tag (the Azure AD device OrderID), enter **(device.devicePhysicalIds -any (\_ -eq "[OrderID]:179887111881"))**.
 1. To create a group that includes all your Autopilot devices with a specific Purchase Order ID, enter **(device.devicePhysicalIds -any (\_ -eq "[PurchaseOrderId]:76222342342"))**.
 
-![Dynamic membership rules page in Microsoft Endpoint Manager admin center](./image7.png)
+## UPDATE PIC![Dynamic membership rules page in Microsoft Endpoint Manager admin center]
 
 5. Save your expressions.
 1. Select **Create**. 
@@ -99,13 +101,13 @@ Once the dynamic device group is created, it can be used for assigning Windows A
 1. **Self-deploying:** Devices with this profile are not associated with the user enrolling the device. User credentials are not required to enroll the device. When a device has no user associated with it, user-based compliance policies do not apply. When using self-deploying mode, only compliance policies targeting the device will be applied.
 1. In the **Join to Azure AD** field, choose **Azure AD joined**.
 
-![Windows Autopilot profile creation page in Microsoft Endpoint Manager admin center](./image8.png)
+## UPDATE PIC![Windows Autopilot profile creation page in Microsoft Endpoint Manager admin center]
 
 9. On the **Assignments** page: 
 1. Choose **Select groups to include**, and then choose the groups you want to include in this profile.
 1. If a group is not showing in the group list, select **Add groups**, and then select the desired group. In this case, you will select the dynamic device group you created above in [Create a dynamic device group](#).
 
-![Group assignments page for Windows Autopilot deployment profiles](./image9.png)
+## UPDATE PIC![Group assignments page for Windows Autopilot deployment profiles]
 
 12. On the **Review + create** page, select **Create** to generate the profile.
 

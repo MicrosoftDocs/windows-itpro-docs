@@ -1,6 +1,6 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: Reset and wipe
+description: reset and wipe
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
