@@ -103,7 +103,7 @@ After Minecraft: Education Edition is added to your Microsoft Admin Center inven
 
 
 ## Learn more
-[Aout Intune Admin roles in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-premium/m365bp-intune-admin-roles-in-the-mac)
+[About Intune Admin roles in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-premium/m365bp-intune-admin-roles-in-the-mac)
 
 ## Related topics
 [Get Minecraft: Education Edition](get-minecraft-for-education.md)
