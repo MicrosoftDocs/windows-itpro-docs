@@ -129,7 +129,7 @@ Bool value
 <!--/SupportedSKUs-->
 
 <!--Policy-->
-<a href="" id="mixedreality-allowlaunchuriinsingleappkiosk"></a>**MixedReality/AllowLaunchUriInSingleAppKiosk**  
+<a href="" id="mixedreality-allowlaunchuriinsingleappkiosk"></a>**MixedReality/AllowLaunchUriInSingleAppKiosk**
 
 <!--SupportedSKUs-->
 
@@ -164,7 +164,7 @@ Bool value
 <!--/SupportedSKUs-->
 
 <!--Policy-->
-<a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**  
+<a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**
 
 <!--SupportedSKUs-->
 
