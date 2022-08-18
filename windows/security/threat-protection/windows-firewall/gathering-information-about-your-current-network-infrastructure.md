@@ -1,24 +1,26 @@
 ---
 title: Gathering Info about Your Network Infrastructure (Windows)
 description: Learn how to gather info about your network infrastructure so that you can effectively plan for Windows Defender Firewall with Advanced Security deployment.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Gathering Information about Your Current Network Infrastructure
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Perhaps the most important aspect of planning for Windows Defender Firewall with Advanced Security deployment is the network architecture, because IPsec is layered on the Internet Protocol itself. An incomplete or inaccurate understanding of the network can prevent any Windows Defender Firewall solution from being successful. Understanding subnet layout, IP addressing schemes, and traffic patterns are part of this effort, but accurately documenting the following components are important to completing the planning phase of this project:
 

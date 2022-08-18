@@ -2,12 +2,12 @@
 title: Policies in Policy CSP supported by Windows 10 IoT Core
 description: Learn about the policies in Policy CSP supported by Windows 10 IoT Core.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/16/2019
 ---

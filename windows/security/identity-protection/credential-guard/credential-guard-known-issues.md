@@ -3,23 +3,21 @@ title: Windows Defender Credential Guard - Known issues (Windows)
 description: Windows Defender Credential Guard - Known issues in Windows Enterprise
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: erikdau
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 01/26/2022
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
-
 # Windows Defender Credential Guard: Known issues
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
 
 Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. So applications that require such capabilities won't function when it's enabled. For more information, see [Application requirements](credential-guard-requirements.md#application-requirements).
 

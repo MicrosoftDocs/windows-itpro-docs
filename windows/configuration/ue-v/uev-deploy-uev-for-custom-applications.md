@@ -15,9 +15,9 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1607
 
-User Experience Virtualization (UE-V) uses XML files called ***settings location templates*** to monitor and synchronize application settings and Windows settings between user devices. By default, some settings location templates are included in UE-V. However, if you want to synchronize settings for desktop applications other than those included in the default templates, you can create your own custom settings location templates with the UE-V template generator.
+User Experience Virtualization (UE-V) uses XML files called ***settings location templates*** to monitor and synchronize application settings and Windows settings between user devices. By default, some settings location templates are included in UE-V. However, if you want to synchronize settings for desktop applications other than those settings included in the default templates, you can create your own custom settings location templates with the UE-V template generator.
 
-After you’ve reviewed [Prepare a UE-V Deployment](uev-prepare-for-deployment.md) and decided that you want to synchronize settings for custom applications (third-party, line-of-business, e.g.), you’ll need to deploy the features of UE-V described in this topic.
+After you’ve reviewed [Prepare a UE-V Deployment](uev-prepare-for-deployment.md) and decided that you want to synchronize settings for custom applications (for example, third-party, line-of-business), you’ll need to deploy the features of UE-V described in this topic.
 
 To start, here are the main steps required to synchronize settings for custom applications:
 
@@ -52,7 +52,7 @@ Before you start deploying the UE-V features that handle custom applications, re
 
 ### The UE-V template generator
 
-Use the UE-V template generator to monitor, discover, and capture the locations where Win32 applications store settings. The template generator does not create settings location templates for the following types of applications:
+Use the UE-V template generator to monitor, discover, and capture the locations where Win32 applications store settings. The template generator doesn't create settings location templates for the following types of applications:
 
 -   Virtualized applications
 
@@ -63,11 +63,11 @@ Use the UE-V template generator to monitor, discover, and capture the locations 
 -   Windows applications
 
 >**Note**
-UE-V settings location templates cannot be created from virtualized applications or Terminal Services applications. However, settings that are synchronized by using the templates can be applied to those applications. To create templates that support Virtual Desktop Infrastructure (VDI) and Terminal Services applications, open a version of the Windows Installer (.msi) package of the application by using the UE-V template generator. For more information about synchronizing settings for virtual applications, see [Using UE-V with virtual applications](uev-using-uev-with-application-virtualization-applications.md).
+UE-V settings location templates can't be created from virtualized applications or Terminal Services applications. However, settings that are synchronized by using the templates can be applied to those applications. To create templates that support Virtual Desktop Infrastructure (VDI) and Terminal Services applications, open a version of the Windows Installer (.msi) package of the application by using the UE-V template generator. For more information about synchronizing settings for virtual applications, see [Using UE-V with virtual applications](uev-using-uev-with-application-virtualization-applications.md).
 
-**Excluded Locations:** The discovery process excludes locations that commonly store application software files that do not synchronize settings well between user computers or computing environments. By default, these are excluded:
+**Excluded Locations:** The discovery process excludes locations that commonly store application software files that don't synchronize settings well between user computers or computing environments. By default, these files are excluded:
 
--   HKEY\_CURRENT\_USER registry keys and files to which the logged-on user cannot write values
+-   HKEY\_CURRENT\_USER registry keys and files to which the signed-in user can't write values
 
 -   HKEY\_CURRENT\_USER registry keys and files that are associated with the core functionality of the Windows operating system
 
@@ -83,7 +83,7 @@ If registry keys and files that are stored in excluded locations are required to
 
 ### Replace the default Microsoft templates
 
-A default group of settings location templates for common Microsoft applications and Windows settings is included with Windows 10, version 1607. If you customize these templates, or create settings location templates to synchronize settings for custom applications, the UE-V service can be configured to use a settings template catalog to store the templates. In this case, you will need to include the default templates with the custom templates in the settings template catalog.
+A default group of settings location templates for common Microsoft applications and Windows settings is included with Windows 10, version 1607. If you customize these templates, or create settings location templates to synchronize settings for custom applications, the UE-V service can be configured to use a settings template catalog to store the templates. In this case, you'll need to include the default templates with the custom templates in the settings template catalog.
 
 >**Important**
 After you enable the UE-V service, you’ll need to register the settings location templates using the `Register-UevTemplate` cmdlet in Windows PowerShell.
@@ -95,7 +95,7 @@ If there are customized templates in the settings template catalog that use the 
 
 You can replace the default templates by using the UE-V Windows PowerShell features. To replace the default Microsoft template with Windows PowerShell, unregister all of the default Microsoft templates, and then register the customized templates.
 
-Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages are not read by the UE-V service, but neither are they automatically deleted.
+Old settings packages remain in the settings storage location even if you deploy new settings location templates for an application. These packages aren't read by the UE-V service, but neither are they automatically deleted.
 
 ### Install the UEV template generator
 
@@ -209,7 +209,7 @@ Use the UE-V template generator to create settings location templates for line-o
 
 11.  Click **Close** to close the settings template wizard. Exit the UE-V template generator application.
 
-12.  After you have created the settings location template for an application, test the template. Deploy the template in a lab environment before you put it into production in the enterprise.
+12.  After you've created the settings location template for an application, test the template. Deploy the template in a lab environment before you put it into production in the enterprise.
 
 See [Application template schema reference for UE-V](uev-application-template-schema-reference.md) for details about the XML structure of the UE-V settings location template and for guidance about editing these files.
 

@@ -2,28 +2,30 @@
 title: Add Production Devices to the Membership Group for a Zone (Windows)
 description: Learn how to add production devices to the membership group for a zone and refresh the group policy on the devices in the membership group.
 ms.assetid: 7141de15-5840-4beb-aabe-21c1dd89eb23
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Add Production Devices to the Membership Group for a Zone
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 
 After you test the GPOs for your design on a small set of devices, you can deploy them to the production devices.

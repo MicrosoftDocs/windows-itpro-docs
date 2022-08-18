@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - SmartScreen
 description: Use the Policy CSP - SmartScreen setting to allow IT Admins to control whether users are allowed to install apps from places other than the Store.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - SmartScreen

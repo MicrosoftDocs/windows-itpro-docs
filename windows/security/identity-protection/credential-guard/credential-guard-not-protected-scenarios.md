@@ -3,22 +3,22 @@ title: Windows Defender Credential Guard protection limits & mitigations (Window
 description: Scenarios not protected by Windows Defender Credential Guard in Windows, and additional mitigations you can use.
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: erikdau
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Credential Guard protection limits and mitigations
-
-**Applies to**
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
 
 Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
 in the Deep Dive into Windows Defender Credential Guard video series.
@@ -123,13 +123,13 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
-#### Restricting user sign on
+#### Restricting user sign-on
 
 So we now have completed the following:
 
 -   Created a special certificate issuance policy to identify devices that meet the deployment criteria required for the user to be able to sign on
 -   Mapped that policy to a universal security group or claim
--   Provided a way for domain controllers to get the device authorization data during user sign on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
+-   Provided a way for domain controllers to get the device authorization data during user sign-on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
 
 Authentication policies have the following requirements:
 -   User accounts are in a Windows Server 2012 domain functional level or higher domain.

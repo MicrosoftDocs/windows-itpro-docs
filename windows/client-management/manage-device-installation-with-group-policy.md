@@ -2,11 +2,11 @@
 title: Manage Device Installation with Group Policy (Windows 10 and Windows 11)
 description: Find out how to manage Device Installation Restrictions with Group Policy.
 ms.prod: w10
-author: aczechowski
+author: vinaypamnani-msft
 ms.date: 09/14/2021
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ---
 

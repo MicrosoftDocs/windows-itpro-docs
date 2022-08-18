@@ -2,12 +2,12 @@
 title: CMPolicy CSP
 description: Learn how the CMPolicy configuration service provider (CSP) is used to define rules that the Connection Manager uses to identify correct connections.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
