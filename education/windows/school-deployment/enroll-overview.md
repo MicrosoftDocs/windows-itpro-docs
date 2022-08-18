@@ -19,28 +19,29 @@ appliesto:
 
 # Device enrollment overview
 
-There are three methods for setting up Windows devices and enrolling them in your education tenant:
+There are three main methods for joining Windows devices to Azure AD and getting them enrolled and managed by Intune:
 
-- **Automatic Intune enrollment via Azure AD join.** This experience happens when a user first turns on a new device and it enables the user to customize certain Windows functionalities before reaching the desktop. When using this approach, users going through this flow will automatically become local administrators on the devices, which isn't ideal for education devices
-- **Bulk enrollment with provisioning packages.** Provisioning packages are files that you can use to set up Windows devices. You can create provisioning packages using either **Set Up School PCs** or **Windows Configuration Designer** applications. One benefit of provisioning packages is that you can use them to set up Windows devices that aren't registered in Windows Autopilot. These files can be applied during or after the out-of-box experience
-- **Windows Autopilot** uses cloud services to set up and configure Windows devices with a zero-touch deployment approach. Windows Autopilot simplifies the Windows device lifecycle, from initial deployment to end of life, for OEMs, resellers, IT administrators and end users
+- **Automatic Intune enrollment via Azure AD join** happens when a user first turns on a device that is in out-of-box experience (OOBE), and selects the option to join Azure AD. In this scenario, the user can customize certain Windows functionalities before reaching the desktop, and becomes a local administrator of the device. This option isn't an ideal enrollment method for education devices
+- **Bulk enrollment with provisioning packages.** Provisioning packages are files that can be used to set up Windows devices, and can include information to connect to Wi-Fi networks and to join an Azure AD tenant. Provisioning packages can be created using either **Set Up School PCs** or **Windows Configuration Designer** applications. These files can be applied during or after the out-of-box experience
+- **Enrollment via Windows Autopilot.** Windows Autopilot is a collection of cloud services to configure the out-of-box experience, enabling light-touch or zero-touch deployment scenarios. Windows Autopilot simplifies the Windows device lifecycle, from initial deployment to end of life, for OEMs, resellers, IT administrators and end users
 
 ## Choose the enrollment method
 
-Windows Autopilot and the Set up School PCs app are usually the most efficient options for school environments. This [table][INT-1] describes the ideal scenarios for using either option, and it's recommended to review it when planning your enrollment and deployment strategies.
+Windows Autopilot and the Set up School PCs app are usually the most efficient options for school environments.
+This [table][INT-1] describes the ideal scenarios for using either option. It's recommended to review the table when planning your enrollment and deployment strategies.
 
 :::image type="content" source="./images/enroll.png" alt-text="The device lifecycle for Intune-managed devices - enrollment" border="false":::
 
 Select one of the following options to learn the next steps about the enrollment method you chose:
 
 > [!div class="nextstepaction"]
-> [Enroll devices via Azure AD join >](enroll-aadj.md)
+> [Next: Automatic Intune enrollment via Azure AD join >](enroll-aadj.md)
 
 > [!div class="nextstepaction"]
-> [Enroll devices with provisioning packages >](enroll-package.md)
+> [Next: Bulk enrollment with provisioning packages >](enroll-package.md)
 
 > [!div class="nextstepaction"]
-> [Enroll devices with Windows Autopilot >](enroll-autopilot.md)
+> [Next: Enroll devices with Windows Autopilot >](enroll-autopilot.md)
 
 <!-- Reference links in article -->
 

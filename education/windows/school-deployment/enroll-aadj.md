@@ -31,8 +31,9 @@ With this process, no advance preparation is needed:
 > [!IMPORTANT]
 > If you configured enrollment restrictions in Intune blocking personal Windows devices, this process will not complete. You will need to use a different enrollment method, or ensure that the devices are registered in Autopilot.
 ________________________________________________________
-## Section review and next steps
+## Next steps
+
+With the devices joined to Azure AD tenant and managed by Intune, you can use Intune to maintain them and report on their status.
 
 > [!div class="nextstepaction"]
-> [< Enroll devices](enroll-overview.md)
-> [Manage devices >](manage-overview.md)
+> [Next: Manage devices >](manage-overview.md)

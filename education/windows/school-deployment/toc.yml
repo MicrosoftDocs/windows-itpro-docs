@@ -21,12 +21,12 @@ items:
     items: 
       - name: Overview
         href: enroll-overview.md
+      - name: Enroll devices via Azure AD join
+        href: enroll-aadj.md
+      - name: Enroll devices with provisioning packages
+        href: enroll-package.md
       - name: Enroll devices with Windows Autopilot
         href: enroll-autopilot.md
-      - name: Enroll devices with provisioning packages and SUSPCs
-        href: enroll-package.md
-      - name: Enroll devices manually
-        href: enroll-aadj.md
   - name: 4. Manage devices
     items: 
       - name: Overview

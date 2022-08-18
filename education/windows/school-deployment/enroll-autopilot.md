@@ -133,11 +133,12 @@ When a Windows 11 SE device is turned on for the first time, the end-user experi
 1. Sign in on the school-branded welcome screen. Users need only their school account credentials. No local administrator permissions are required.
 
 ________________________________________________________
-## Section review and next steps
+## Next steps
+
+With the devices joined to Azure AD tenant and managed by Intune, you can use Intune to maintain them and report on their status.
 
 > [!div class="nextstepaction"]
-> [< Enroll devices](enroll-overview.md)
-> [Manage devices >](manage-overview.md)
+> [Next: Manage devices >](manage-overview.md)
 
 <!-- Reference links in article -->
 

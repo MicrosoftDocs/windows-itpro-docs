@@ -19,7 +19,7 @@ appliesto:
 
 # Enrollment with provisioning packages
 
-Enrolling devices with provisioning packages is an efficient way to enroll large number of Windows devices in an education environment. Some of the benefits of provisioning packages are:
+Enrolling devices with provisioning packages is an efficient way to deploy a large number of Windows devices. Some of the benefits of provisioning packages are:
 
 - There are no particular hardware dependencies on the devices to complete the enrollment process
 - Devices do not need to be registered in advance
@@ -63,11 +63,12 @@ Windows Configuration Designer is especially useful in scenarios where a school 
 For more information, see [Provisioning packages][WIN-2].
 
 ________________________________________________________
-## Section review and next steps
+## Next steps
+
+With the devices joined to Azure AD tenant and managed by Intune, you can use Intune to maintain them and report on their status.
 
 > [!div class="nextstepaction"]
-> [< Enroll devices](enroll-overview.md)
-> [Manage devices >](manage-overview.md)
+> [Next: Manage devices >](manage-overview.md)
 
 <!-- Reference links in article -->
 
