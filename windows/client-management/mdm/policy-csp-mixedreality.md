@@ -35,7 +35,7 @@ manager: dansimp
     <a href="#mixedreality-configuremovingplatform">MixedReality/ConfigureMovingPlatform</a>
   </dd>
   <dd>
-    <a href="#mixedreality-disablencispassivepolling">MixedReality/DisableNCSIPassivePolling</a>
+    <a href="#mixedreality-disablesisallownetworkconnectivitypassivepolling">MixedReality/DisallowNetworkConnectivityPassivePolling</a>
   </dd>
   <dd>
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
@@ -270,7 +270,7 @@ Supported value is Integer.
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-disablencispassivepolling"></a>**MixedReality/DisableNCSIPassivePolling**  
+<a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**  
 
 <!--SupportedSKUs-->
 
@@ -294,9 +294,9 @@ Supported value is Integer.
 <hr/>
 
 <!--Description-->
-Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. Which may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
 
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/DisableNCSIPassivePolling`
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
 
 - Bool value
 
