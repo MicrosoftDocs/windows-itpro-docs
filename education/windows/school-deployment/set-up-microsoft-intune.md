@@ -11,10 +11,7 @@ ms.author: paoloma
 #ms.reviewer: 
 manager: aaroncz
 ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+#appliesto:
 ---
 
 # Set up Microsoft Intune
@@ -86,16 +83,13 @@ To disable Windows Hello for Business at the tenant level:
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 
 ________________________________________________________
-## Section review and next steps
 
-> [!div class="checklist"]
-> * Review Intune's licensing prerequisites
-> * Configure the Intune service for education devices
+## Next steps
 
 With the Intune service configured, you can configure policies and applications in preparation to the deployment of students' and teachers' devices.
 
 > [!div class="nextstepaction"]
-> [Next: Configure devices >](configure-devices.md)
+> [Next: Configure devices >](configure-devices-overview.md)
 
 <!-- Reference links in article -->
 

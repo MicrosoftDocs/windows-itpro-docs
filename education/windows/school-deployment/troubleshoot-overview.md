@@ -1,6 +1,6 @@
 ---
 title: How to contact Microsoft Support
-description: How to contact Microsoft Support
+description: How to contact Microsoft Support for issues related to Intune and other Endpoint Manager services
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -11,9 +11,7 @@ ms.author: paoloma
 #ms.reviewer: 
 manager: aaroncz
 ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+#appliesto:
 ---
 
 # How to contact Microsoft Support
@@ -22,7 +20,7 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 Follow these steps to obtain support in Microsoft Endpoint Manager:
 
-- Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
+- Sign in to the <a href="https://endpoint.microsoft.com" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 - Select **Troubleshooting + support** > **Help and support**
     :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Endpoint Manager.":::
 - Select the required support scenario: Configuration Manager, Intune, Co-management, or Windows 365
@@ -36,4 +34,7 @@ Follow these steps to obtain support in Microsoft Endpoint Manager:
   > When opening a case, be sure to include as many details as possible in the *Description* field. Such information includes: timestamp and date, device ID, device model, serial number, OS version, and any other details relevant to the issue.
 - To review your case history, select the **Service requests** pane. Active cases are at the top of the list, with closed issues also available for review
 
-For more information, see [Microsoft Endpoint Manager support page](/mem/get-support).
+For more information, see [Microsoft Endpoint Manager support page][MEM-1]
+
+<!-- Reference links in article -->
+[MEM-1]: /mem/get-support

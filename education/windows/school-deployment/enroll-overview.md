@@ -44,4 +44,4 @@ Select one of the following options to learn the next steps about the enrollment
 
 <!-- Reference links in article -->
 
-[INT-1]: /intune-education/windows-11-se-overview#windows-autopilot
+[INT-1]: /intune-education/add-devices-windows#when-to-use-set-up-school-pcs-vs-windows-autopilot

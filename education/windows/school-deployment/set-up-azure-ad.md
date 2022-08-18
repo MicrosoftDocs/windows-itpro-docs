@@ -154,13 +154,7 @@ To allow provisioning packages to complete the Azure AD Join process:
 
 ________________________________________________________
 
-## Section review and next steps
-
-> [!div class="checklist"]
-> * Set up a Microsoft 365 Education tenant
-> * Add users, create groups, and assign licenses
-> * Configure school branding
-> * Enable bulk enrollment
+## Next steps
 
 With users and groups created, and licensed for Microsoft 365 Education, you can now configure Microsoft Intune.
 
