@@ -1,6 +1,6 @@
 ---
-title: Configure devices with Microsoft Intune
-description: Configure policies and applications in preparation to device deployment
+title: Configure and secure devices with Microsoft Intune
+description: Configure policies with Microsoft Intune in preparation to device deployment
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -18,7 +18,8 @@ appliesto:
 ---
 
 # Configure and secure devices with Microsoft Intune
-With Intune for Education, school IT administrators have access to diverse apps to help students unlock their learning potential. This section discusses tools and resources for adding apps to Intune for Education, assigning apps to groups, and managing device policies. 
+
+
 
 ## Configure device settings
 
@@ -89,16 +90,7 @@ To create security policies in Intune for Education:
 
 ### [PICTURE HERE] Endpoint security overview page in Microsoft Endpoint Manager
 
-
-
-
-## Section review and next steps
-
-> [!div class="checklist"]
-> * Prerequisites
-> * Configure the Intune service for education devices
-> * Configure device settings
-> * Configure applications
+## Next steps
 
 With the Intune service configured, you can configure policies and applications to deploy to your students' and teachers' devices.
 
