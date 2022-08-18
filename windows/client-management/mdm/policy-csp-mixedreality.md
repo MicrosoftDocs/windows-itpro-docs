@@ -123,7 +123,7 @@ This new feature is an opt-in policy that IT Admins can enable to help with the 
 
 MixedReality/AllowCaptivePortalBeforeSignIn
 
-The OMA-URI of new policy: ./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
 
 Bool value
 
@@ -155,7 +155,7 @@ This can be enabled to allow for other apps to be launched with in a single app 
 
 By default, launching applications via Launcher API (Launcher Class (Windows.System) - Windows UWP applications) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
-The OMA-URI of policy: ./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk
+The OMA-URI of policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
 
 Bool value
 
@@ -175,7 +175,7 @@ Bool value
 |HoloLens 2|Yes|
 
 <!--/Description-->
-This new AutoLogonUser policy controls whether a user will be automatically signed in. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly distribute HoloLens devices and enable their end users to speed up sign in.
+This new AutoLogonUser policy controls whether a user will be automatically signed in. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly distribute HoloLens devices and enable their end users to speed up sign-in.
 
 When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must sign in to the device at least once to enable autologon.
 
@@ -186,7 +186,7 @@ Supported value is String.
 
 - User with the same email address will have autologon enabled.
 
-On a device where this policy is configured, the user specified in the policy will need to sign in at least once. Subsequent reboots of the device after the first sign in will have the specified user automatically signed in. Only a single autologon user is supported. Once enabled, the automatically signed-in user won't be able to sign out manually. To sign in as a different user, the policy must first be disabled.
+On a device where this policy is configured, the user specified in the policy will need to sign in at least once. Subsequent reboots of the device after the first sign-in will have the specified user automatically signed in. Only a single autologon user is supported. Once enabled, the automatically signed-in user won't be able to sign out manually. To sign in as a different user, the policy must first be disabled.
 
 > [!NOTE]
 >
@@ -332,7 +332,7 @@ Supported value is Integer.
 <hr/>
 
 <!--Description-->
-Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. Which may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. That may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
 
 The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
 
