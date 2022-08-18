@@ -53,6 +53,7 @@ ms.date: 08/01/2022
 - [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
 - [MixedReality/AllowCaptivePortalBeforeSignIn](./policy-csp-mixedreality.md#mixedreality-allowcaptiveportalpeforesignin) <sup>Insider</sup>
+- [MixedReality/AllowLaunchUriInSingleAppKiosk](./policy-csp-mixedreality.md#mixedreality-allowlaunchuriinsingleappkiosk)<sup>10</sup>
 - [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>11</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
 - [MixedReality/ConfigureMovingPlatform](policy-csp-mixedreality.md#mixedreality-configuremovingplatform) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>

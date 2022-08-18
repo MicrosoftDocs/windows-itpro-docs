@@ -26,6 +26,9 @@ manager: aaroncz
     <a href="#mixedreality-allowcaptiveportalpeforesignin">MixedReality/AllowCaptivePortalBeforeSignIn</a>
   </dd>
   <dd>
+    <a href="#mixedreality-allowlaunchuriinsingleappkiosk">MixedReality/AllowLaunchUriInSingleAppKiosk</a>
+  </dd>
+  <dd>
     <a href="#mixedreality-autologonuser">MixedReality/AutoLogonUser</a>
   </dd>
   <dd>
@@ -118,6 +121,41 @@ This new feature is an opt-in policy that IT Admins can enable to help with the 
 MixedReality/AllowCaptivePortalBeforeSignIn
 
 The OMA-URI of new policy: ./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn
+
+Bool value
+
+<!--/Description-->
+
+<!--/SupportedSKUs-->
+
+<!--Policy-->
+<a href="" id="mixedreality-allowlaunchuriinsingleappkiosk"></a>**MixedReality/AllowLaunchUriInSingleAppKiosk**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--Description-->
+This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example, if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+
+By default, launching applications via Launcher API (Launcher Class (Windows.System) - Windows UWP applications) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+
+The OMA-URI of policy: ./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk
 
 Bool value
 
