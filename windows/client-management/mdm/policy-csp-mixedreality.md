@@ -139,9 +139,6 @@ Bool value
 |HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
-
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
