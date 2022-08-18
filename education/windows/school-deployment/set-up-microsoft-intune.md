@@ -29,7 +29,10 @@ Microsoft Intune is one of the services provided by Microsoft Endpoint Manager. 
 
 For more information, see [Intune for Education documentation][INT-1].
 
-In this section, you'll configure the Intune service to enroll and configure devices in your school.
+In this section you will:
+> [!div class="checklist"]
+> * Review Intune's licensing prerequisites
+> * Configure the Intune service for education devices
 
 ## Prerequisites
 
@@ -86,16 +89,13 @@ ________________________________________________________
 ## Section review and next steps
 
 > [!div class="checklist"]
-> * Prerequisites
+> * Review Intune's licensing prerequisites
 > * Configure the Intune service for education devices
-> * Configure device settings
-> * Configure applications
 
-With the Intune service configured, you can start enrolling and managing students' and teachers' devices.
+With the Intune service configured, you can configure policies and applications in preparation to the deployment of students' and teachers' devices.
 
 > [!div class="nextstepaction"]
-> [< Previous section: Set up Azure AD](set-up-Azure-AD.md)
-> [Next section: Enroll devices >](enroll-overview.md)
+> [Next: Configure devices >](configure-devices.md)
 
 <!-- Reference links in article -->
 
@@ -104,13 +104,7 @@ With the Intune service configured, you can start enrolling and managing student
 [MEM-4]: /mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy
 
 [INT-1]: /intune-education/what-is-intune-for-education
-[INT-2]: /intune-education/express-configuration-intune-edu
-[INT-3]: /microsoft-365/education/deploy/use-intune-for-education
-[INT-4]: /intune-education/add-desktop-apps-edu
-[INT-5]: /intune-education/add-web-apps-edu
 
 [MSFT-1]: https://www.microsoft.com/microsoft-365/enterprise-mobility-security
 [MSFT-2]: https://www.microsoft.com/licensing/product-licensing/microsoft-365-education
 [MSFT-3]: https://edudownloads.azureedge.net/msdownloads/Microsoft-Modern-Work-Plan-Comparison-Education_11-2021.pdf
-
-[EDU-1]: /education/windows/windows-11-se-overview

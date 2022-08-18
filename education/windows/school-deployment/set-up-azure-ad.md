@@ -165,7 +165,7 @@ ________________________________________________________
 With users and groups created, and licensed for Microsoft 365 Education, you can now configure Microsoft Intune.
 
 > [!div class="nextstepaction"]
-> [Next section: Set up Microsoft Intune >](set-up-microsoft-intune.md)
+> [Next: Set up Microsoft Intune >](set-up-microsoft-intune.md)
 
 <!-- Reference links in article -->
 

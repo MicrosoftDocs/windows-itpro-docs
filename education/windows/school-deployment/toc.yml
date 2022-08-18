@@ -12,7 +12,13 @@ items:
       - name: Set up Microsoft Intune
         href: set-up-microsoft-intune.md
   - name: 2. Configure devices with Intune
-    href: configure-devices-overview.md
+    items:
+      - name: Overview
+        href: configure-devices-overview.md
+      - name: Configure device settings
+        href: configure-device-settings.md
+      - name: Configure device applications
+        href: configure-device-apps.md        
   - name: 3. Deploy devices
     items: 
       - name: Overview

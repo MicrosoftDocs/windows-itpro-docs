@@ -22,8 +22,8 @@ appliesto:
 There are three methods for setting up Windows devices and enrolling them in your education tenant:
 
 - **Automatic Intune enrollment via Azure AD join.** This experience happens when a user first turns on a new device and it enables the user to customize certain Windows functionalities before reaching the desktop. When using this approach, users going through this flow will automatically become local administrators on the devices, which isn't ideal for education devices
-- **Bulk enrollment with provisioning packages.** Provisioning packages are files that you can use to set up Windows devices. You can create provisioning packages using either **Set Up School PCs** or **Windows Configuration Designer** applications. One benefit of provisioning packages is that you can use them to set up Windows devices that aren't registered in Windows Autopilot. These files can be applied during or after the out-of-box experience.
-- **Windows Autopilot** uses cloud services to set up and configure Windows devices with a zero-touch deployment approach. Windows Autopilot simplifies the Windows device lifecycle, from initial deployment to end of life, for OEMs, resellers, IT administrators and end users.
+- **Bulk enrollment with provisioning packages.** Provisioning packages are files that you can use to set up Windows devices. You can create provisioning packages using either **Set Up School PCs** or **Windows Configuration Designer** applications. One benefit of provisioning packages is that you can use them to set up Windows devices that aren't registered in Windows Autopilot. These files can be applied during or after the out-of-box experience
+- **Windows Autopilot** uses cloud services to set up and configure Windows devices with a zero-touch deployment approach. Windows Autopilot simplifies the Windows device lifecycle, from initial deployment to end of life, for OEMs, resellers, IT administrators and end users
 
 ## Choose the enrollment method
 

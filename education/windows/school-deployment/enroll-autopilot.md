@@ -16,44 +16,36 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
-# Title
-
-For more information, see [Overview of Windows Autopilot][MEM-1].
-  > [!NOTE]
-  > There are some limitations to Windows Autopilot in Windows 11 SE. For more information, see [**this article**][INT-1].
-## Windows Autopilot
+# Windows Autopilot
 
 Windows Autopilot is especially useful in scenarios where devices are handed out to users without the need to build, maintain, and apply custom operating system images. These devices will be enrolled as school-owned devices. 
 
-A cloud-based provisioning technology, Windows Autopilot can be used to set up and preconfigure devices at the start of the school year. There's no need to wipe devices or use custom OS images. The device must be preregistered, and the enrollment profile created and assigned in Intune for Education. When users sign in with their school account, they are automatically enrolled. 
+A cloud-based provisioning technology, Windows Autopilot can be used to set up and preconfigure devices at the start of the school year. There's no need to wipe devices or use custom OS images. The device must be preregistered, and the enrollment profile created and assigned in Intune for Education. When users sign in with their school account, they are automatically enrolled.
 
-**NOTE:** A fix for the known TPM attestation issue can now be addressed by using the latest Bare Metal Recovery (BMR) with 5b CU. For more information, see [Support tip: Recovering from Windows Autopilot error code 0x81039023 on Windows 11 SE](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-recovering-from-windows-autopilot-error-code/ba-p/3283743). 
-
-### Prerequisites
+## Prerequisites
 
 Before setting up Windows Autopilot, consider these prerequisites:
 
-- **Software requirements. Ensure your school and devices meet the** [**software, networking, licensing, and configuration requirements**](/windows/deployment/windows-autopilot/windows-autopilot-requirements)** for Windows Autopilot.**
-- **Devices ordered and registered.** Ensure your school IT administrator or Microsoft partner has ordered the devices from an original equipment manufacturer (OEM) and registered them for the Autopilot deployment service. We recommend that you connect with a partner through the [Microsoft Partner Center](https://partner.microsoft.com/) and work with them to register your devices.
-- **Intune for Education tenant. Ensure your tenant for Intune for Education is set up. We recommend configuring your tenant with** [**School Data Sync**](#)**, as this method automatically creates Student and Teacher groups for each school, as well as a combined Teacher and Student group. It also creates tenant-wide All Teachers and All Student groups.**
-- **Networking requirements.** Ensure students know to connect to the school network during OOBE setup. For more information on managing devices behind firewalls and proxy servers, see [Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints). 
+- **Software requirements. Ensure your school and devices meet the** [**software, networking, licensing, and configuration requirements**][WIN-1]** for Windows Autopilot.**
+- **Devices ordered and registered.** Ensure your school IT administrator or Microsoft partner has ordered the devices from an original equipment manufacturer (OEM) and registered them for the Autopilot deployment service. We recommend that you connect with a partner through the [Microsoft Partner Center][MSFT-1] and work with them to register your devices.
+- **Networking requirements.** Ensure students know to connect to the school network during OOBE setup. For more information on managing devices behind firewalls and proxy servers, see [Network endpoints for Microsoft Intune][MEM-1].
 
-**NOTE:** Where not explicitly specified, both HTTPS (443) and HTTP (80) must be accessible. If you are auto-enrolling your devices into Microsoft Intune or deploying Microsoft Office, follow the networking guidelines for [Microsoft Intune](/intune/network-bandwidth-use) and [Microsoft 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+**NOTE:** Where not explicitly specified, both HTTPS (443) and HTTP (80) must be accessible. If you are auto-enrolling your devices into Microsoft Intune or deploying Microsoft Office, follow the networking guidelines for [Microsoft Intune][INT-1] and [Microsoft 365][M365-1].
 
 ### Register devices to Windows Autopilot
 
 Before deployment, devices must be registered with the Windows Autopilot deployment service. Each device's unique hardware identity (known as a *hardware hash*) is captured and uploaded to the Autopilot service, and the device is associated with an Azure tenant ID. There are three main ways to register devices to Autopilot:
 
 - **Complete the OEM registration process.** When you purchase devices from an OEM, that company can automatically register them with Windows Autopilot. Before an OEM can register devices, your school must grant permission. The OEM begins this process with approval granted by an Azure AD global administrator from the school. For Microsoft Surface registration, collect the details shown in this [documentation table](/surface/surface-autopilot-registration-support) before submitting the request to Microsoft Support. You can make requests using the [Microsoft Devices Autopilot Support](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f) form.
-- **Manually register devices with Windows Autopilot.** To manually register a device, you must first capture its hardware hash. Once this process has been completed, the hardware hash can be uploaded to the Windows Autopilot service using [Microsoft Intune](/mem/autopilot/add-devices), [Partner Center](https://msdn.microsoft.com/partner-center/autopilot), [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa), or the [Microsoft Store](https://apps.microsoft.com/store/apps).
+- **Manually register devices with Windows Autopilot.** To manually register a device, you must first capture its hardware hash. Once this process has been completed, the hardware hash can be uploaded to the Windows Autopilot service using [Microsoft Intune](/mem/autopilot/add-devices), [Partner Center](https://msdn.microsoft.com/partner-center/autopilot) or [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).
 
-**NOTE:** Windows 11 SE devices do not support the use of Windows PowerShell or Microsoft Configuration Manager to capture hardware hashes. Hardware hashes can only be captured manually. We recommend working with an OEM, partner, or device reseller to register devices. For more information, see [Set up devices with Autopilot](/intune-education/windows-autopilot-setup). 
+**NOTE:** Windows 11 SE devices do not support the use of Windows PowerShell or Microsoft Configuration Manager to capture hardware hashes. Hardware hashes can only be captured manually. We recommend working with an OEM, partner, or device reseller to register devices. For more information, see [Set up devices with Autopilot][EDU-1].
 
-- **Allow a Cloud Solution Provider (CSP) to register devices.** Surface devices can be registered by device resellers (with active CSP partner status) as part of the ordering process. As with OEMs, CSP partners must be granted permission to register devices for a school. For more information, see this [Microsoft Partner Center clickable demo](https://cloudpartners.transform.microsoft.com/resources/autopilot-in-edu-setup-english).
+- **Allow a Cloud Solution Provider (CSP) to register devices.** Surface devices can be registered by device resellers (with active CSP partner status) as part of the ordering process. As with OEMs, CSP partners must be granted permission to register devices for a school. For more information, see this [Microsoft Partner Center clickable demo][MSFT-2].
 
 ### Set up the devices
 
-It's easy to set up Windows 11 SE devices with Windows Autopilot and Microsoft Endpoint Manager. First, you create a dynamic device group, and then you apply a Windows Autopilot deployment profile to each device in this group. Deployment profiles determine the deployment mode and customize the OOBE for your end users.
+First, you create a dynamic device group, and then you apply a Windows Autopilot deployment profile to each device in this group. Deployment profiles determine the deployment mode and customize the out-of-box experience of your devices.
 
 ### Create a dynamic device group
 
@@ -147,9 +139,19 @@ ________________________________________________________
 > [< Enroll devices](enroll-overview.md)
 > [Manage devices >](manage-overview.md)
 
-
-
 <!-- Reference links in article -->
 
-
+[MEM-1]: /mem/intune/fundamentals/intune-endpoints
 [MEM-3]: /mem/intune/enrollment/windows-enrollment-status
+
+[WIN-1]: /windows/deployment/windows-autopilot/windows-autopilot-requirements
+
+[MSFT-1]: https://partner.microsoft.com/
+[MSFT-2]: https://cloudpartners.transform.microsoft.com/resources/autopilot-in-edu-setup-english
+
+[INT-1]: /intune/network-bandwidth-use
+
+[M365-1]: https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2
+
+[EDU-1]: /intune-education/windows-autopilot-setup
+[EDU-2]: /intune-education/windows-11-se-overview#windows-autopilot

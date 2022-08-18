@@ -24,37 +24,9 @@ Microsoft Intune delivers streamlined remote management throughout the school ye
 
 With Intune for Education, you can manage groups, applications, resources, and individual needs of multiple students. There are several ways to manage students' devices, including organizing what groups they belong to; determining what apps they have access to; and configuring device settings, customizations, and restrictions. You can also monitor when users sign in and troubleshoot devices remotely.
 
-## Managing groups
-
-By organizing students, classrooms, or learning curricula into groups, you can provide students with the resources they need, as well as manage several student devices all at once. 
-
-**NOTE:** Before you begin creating groups, it is a good idea to plan them out to determine what students may need from their devices. For example: 
-
-- For all devices, block apps from using location services.
-- For AP Computer Science, assign students apps to edit code.
-- For 12th grade History, enable web browsing to access academic articles.
-- For all Photography students, enable the device's camera.
-
-*Out of the box, Intune for Education comes with default groups that enable you to manage All devices and All users. There are also two additional groups if you use Microsoft SDS: All teachers and All students.  SDS also creates individual groups for students and teachers of specific schools, which fold under the All teachers and All students groups. Beyond the defaults, groups can be customized to suit various needs. For example, if you have both Windows and iOS devices in your school, you can create groups, such as All iPads and All Windows 10 PCs.* 
-
-Finally, two group types can be created: assigned groups and dynamic groups. Assigned groups are used when you want to manually add users or devices to a group. Dynamic groups reference rules that you create to assign students or devices to groups and then automate the assignment of devices to those groups.
-
-For more information, see:
-
-- [Create groups in Intune for Education](/intune-education/create-groups) 
-- [Edit a group name](/intune-education/edit-groups-intune-for-edu)
-- [Move a group up or down within your existing group list](/intune-education/edit-groups-intune-for-edu)
-- Delete a group to remove apps and settings from devices 
-- [Assign and delegate group admins](/intune-education/group-admin-delegate)
-- [Manually add or remove users and devices to an existing assigned group](/intune-education/edit-groups-intune-for-edu)
-- [Edit dynamic group rules to accommodate for new devices, locations, or school years](/intune-education/edit-groups-intune-for-edu)
-
 ## Remote assistance
 
 With devices managed by Intune for Education, you can remotely assist students and teachers with device issues. For more information, see [Remote assistance for managed devices - Intune for Education](/intune-education/remote-assist-mobile-devices).
-
-
-
 
 ## Manage device firmware for Surface devices
 

@@ -72,5 +72,6 @@ ________________________________________________________
 <!-- Reference links in article -->
 
 [EDU-1]: /education/windows/use-set-up-school-pcs-app
+
 [WIN-1]: /windows/configuration/provisioning-packages/provisioning-install-icd
 [WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
