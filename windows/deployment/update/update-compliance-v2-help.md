@@ -17,7 +17,8 @@ ms.date: 08/10/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!IMPORTANT]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](#bkmk_admin-center).
+> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 There are several resources that you can use to find help with Update Compliance. Whether you're just getting started or an experienced administrator, use the following resources when you need help with Update Compliance:
 
