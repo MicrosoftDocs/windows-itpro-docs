@@ -23,18 +23,18 @@ Update Compliance is a cloud-based solution that provides information about the 
 
 - Monitor security, quality, and feature updates for Windows 11 and Windows 10 devices
 - Report on devices with update compliance issues
-- Review [Delivery Optimization](../do/waas-delivery-optimization.md) bandwidth savings across multiple content types
+- Analyze and display your data in multiple ways
 
 
-## Technical preview information for Update Compliance
+## Preview information for Update Compliance
 
-The new version of Update Compliance is in technical preview. Some of the benefits of this new version include:
+The new version of Update Compliance is in preview. Some of the benefits of this new version include:
 
 - Integration with [Windows Update for Business deployment service](deployment-service-overview.md) to enable per deployment reporting, monitoring, and troubleshooting.
 - Compatibility with [Feature updates](/mem/intune/protect/windows-10-feature-updates) and [Expedite Windows quality updates](/mem/intune/protect/windows-10-expedite-updates) policies in Intune.
 - A new **Alerts** data type to assist you with identifying devices that encounter issues during the update process. Error code information is provided to help troubleshoot update issues.
 
-Currently, the technical preview contains the following features:
+Currently, the preview contains the following features:
 
 - [Update Compliance workbook](update-compliance-v2-workbook.md)
 - Update Compliance status [charts in the Microsoft 365 admin](updates-status-admin-center.md)
