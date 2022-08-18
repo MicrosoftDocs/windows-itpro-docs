@@ -1,24 +1,26 @@
 ---
 title: Windows Defender Firewall with Advanced Security deployment overview (Windows)
 description: Use this guide to deploy Windows Defender Firewall with Advanced Security for your enterprise to help protect devices and data that they share across a network.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Firewall with Advanced Security deployment overview
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 You can use the Windows Defender Firewall with Advanced Security MMC snap-in with devices running at least Windows Vista or Windows Server 2008 to help protect the devices and the data that they share across a network.
 

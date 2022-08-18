@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Accounts
-description: Learn about the Accounts policy configuration service provider (CSP). This article describes account policies. 
-ms.author: dansimp
+description: Learn about the Accounts policy configuration service provider (CSP). This article describes account policies.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Accounts

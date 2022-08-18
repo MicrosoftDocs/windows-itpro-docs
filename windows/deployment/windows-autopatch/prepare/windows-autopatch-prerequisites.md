@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
 description:  This article details the prerequisites needed for Windows Autopatch
-ms.date: 06/30/2022
+ms.date: 08/04/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -41,7 +41,6 @@ Windows Autopatch is included with Window 10/11 Enterprise E3 or higher. The fol
 
 The following Windows OS 10 editions, 1809 builds and architecture are supported in Windows Autopatch:
 
-- x64 architecture
 - Windows 10 (1809+)/11 Pro
 - Windows 10 (1809+)/11 Enterprise
 - Windows 10 (1809+)/11 Pro for Workstations
@@ -51,8 +50,9 @@ The following Windows OS 10 editions, 1809 builds and architecture are supported
 Windows Autopatch fully supports co-management. The following co-management requirements apply:
 
 - Use a currently supported [Configuration Manager version](/mem/configmgr/core/servers/manage/updates#supported-versions).
-- Ensure ConfigMgr is connected to the internet and [cloud-attach with Intune](/mem/configmgr/cloud-attach/overview).
-- Ensure ConfigMgr is co-managed. For more information, see [Paths to co-management](/mem/configmgr/comanage/quickstart-paths).
-- Set the [Windows Update workload](/mem/configmgr/comanage/workloads#windows-update-policies) to Pilot Intune or Intune.
-- Set the [Device configuration workload](/mem/configmgr/comanage/workloads#device-configuration) to Pilot Intune or Intune.
-- Set the [Office Click-to-Run apps workload](/mem/configmgr/comanage/workloads#office-click-to-run-apps) to Pilot Intune or Intune.
+- ConfigMgr must be [cloud-attached with Intune (Co-management)](/mem/configmgr/cloud-attach/overview) and must have the following Co-management workloads enabled:
+	- Set the [Windows Update workload](/mem/configmgr/comanage/workloads#windows-update-policies) to Pilot Intune or Intune.
+	- Set the [Device configuration workload](/mem/configmgr/comanage/workloads#device-configuration) to Pilot Intune or Intune.
+	- Set the [Office Click-to-Run apps workload](/mem/configmgr/comanage/workloads#office-click-to-run-apps) to Pilot Intune or Intune.
+
+For more information, see [paths to co-management](/mem/configmgr/comanage/quickstart-paths).

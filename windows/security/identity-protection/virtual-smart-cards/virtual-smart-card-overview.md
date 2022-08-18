@@ -2,19 +2,19 @@
 title: Virtual Smart Card Overview (Windows 10)
 description: Learn more about the virtual smart card technology that was developed by Microsoft. Find links to additional topics about virtual smart cards.
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 10/13/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows Server 2016</b>
 ---
 
 # Virtual Smart Card Overview
-
-Applies To: Windows 10, Windows Server 2016
 
 This topic for IT professional provides an overview of the virtual smart card technology that was developed by Microsoft and includes [links to additional topics](#see-also) to help you evaluate, plan, provision, and administer virtual smart cards.
 

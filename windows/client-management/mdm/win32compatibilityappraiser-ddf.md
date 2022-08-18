@@ -1,14 +1,14 @@
 ---
 title: Win32CompatibilityAppraiser DDF file
 description: Learn about the XML file containing the device description framework for the Win32CompatibilityAppraiser configuration service provider.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/19/2018
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Win32CompatibilityAppraiser DDF file 

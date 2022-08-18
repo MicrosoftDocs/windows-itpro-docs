@@ -34,7 +34,7 @@ The UE-V Configuration Pack includes tools to:
      |Configuration|Setting|Description|
      |--- |--- |--- |
      |Max package size|Enable/disable Windows app sync|Wait for sync on application start|
-     |Setting import delay|Sync unlisted Windows apps|Wait for sync on logon|
+     |Setting import delay|Sync unlisted Windows apps|Wait for sync on sign in|
      |Settings import notification|IT contact URL|Wait for sync timeout|
      |Settings storage path|IT contact descriptive text|Settings template catalog path|
      |Sync enablement|Tray icon enabled|Start/Stop UE-V agent service|
@@ -87,7 +87,7 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
 
     -   **Unmanaged** to have the configuration item left at its current state
 
-    Do not remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you do not want Configuration Manager to alter current or default values.
+    Don't remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you don't want Configuration Manager to alter current or default values.
 
     <a href="" id="currentcomputeruserpolicy"></a>**CurrentComputerUserPolicy**  
     All UE-V user level settings. These entries override the machine settings for a user. The DesiredState attribute can be
@@ -98,7 +98,7 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
 
     -   **Unmanaged** to have the configuration item left at its current state
 
-    Do not remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you do not want Configuration Manager to alter current or default values.
+    Don't remove lines from this section. Instead, set the DesiredState to ‘Unmanaged’ if you don't want Configuration Manager to alter current or default values.
 
     <a href="" id="services"></a>**Services**  
     Entries in this section control service operation. The default configuration file contains a single entry for the UevAgentService. The DesiredState attribute can be set to **Running** or **Stopped**.
@@ -112,7 +112,7 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
 
     -   **Cleared** to have the entry removed from UE-V control
 
-    Additional lines can be added to this section based on the list of installed Windows apps that can be viewed using the PowerShell cmdlet GetAppxPackage.
+    More lines can be added to this section based on the list of installed Windows apps that can be viewed using the PowerShell cmdlet GetAppxPackage.
 
     <a href="" id="windows8appscurrentcomputeruserpolicy"></a>**Windows8AppsCurrentComputerUserPolicy**  
     Identical to the Windows8AppsComputerPolicy with settings that override machine settings for an individual user.
@@ -159,9 +159,9 @@ The result is a baseline CAB file that is ready for import into Configuration Ma
 
 ### <a href="" id="create2"></a>Create the First UE-V Template Baseline
 
-1.  Create a “master” set of UE-V templates in a stable folder location visible to the machine running your ConfigMgr Admin Console. As templates are added or updated, this folder is where they are pulled for distribution. The initial list of templates can be copied from a machine with UE-V installed. The default template location is C:\\Program Files\\Microsoft User Experience Virtualization\\Templates.
+1.  Create a “master” set of UE-V templates in a stable folder location visible to the machine running your ConfigMgr Admin Console. As templates are added or updated, this folder is where they're pulled for distribution. The initial list of templates can be copied from a machine with UE-V installed. The default template location is C:\\Program Files\\Microsoft User Experience Virtualization\\Templates.
 
-2.  Create a text.bat file where you can add the template generator command. This is optional, but will make regeneration simpler if you save the command parameters.
+2.  Create a text.bat file where you can add the template generator command. This step is optional, but will make regeneration simpler if you save the command parameters.
 
 3.  Add the command and parameters to the .bat file that will generate the baseline. The following example creates a baseline that distributes Notepad and Calculator:
 

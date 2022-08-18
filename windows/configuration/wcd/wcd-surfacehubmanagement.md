@@ -29,8 +29,8 @@ Use SurfaceHubManagement settings to set the administrator group that will manag
 
 ## GroupName
 
-Enter the group name for the administrators group in Active Directory.
+Enter the group name for the administrators' group in Active Directory.
 
 ## GroupSid
 
-Enter the SID or the administrators group in Active Directory.
+Enter the SID or the administrators' group in Active Directory.

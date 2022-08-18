@@ -1,24 +1,21 @@
 ---
 title: Windows 11 SE settings list
 description: Windows 11 SE automatically configures settings in the operating system. Learn more about the settings you can control and manage, and the settings you can't change.
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-ms.localizationpriority: medium
-ms.topic: article
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Windows 11 SE for Education settings list
-
-**Applies to**:
-
-- Windows 11 SE
-- Microsoft Intune for Education
 
 Windows 11 SE automatically configures settings and features in the operating system. These settings use the Configuration Service Provider (CSPs) provided by Microsoft. You can use an MDM provider to configure these settings.
 

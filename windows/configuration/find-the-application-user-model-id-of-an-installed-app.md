@@ -1,10 +1,10 @@
 ---
 title: Find the Application User Model ID of an installed app
 ms.reviewer: sybruckm
-manager: dougeby
-description: To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device. 
-author: aczechowski
-ms.author: aaroncz
+manager: aaroncz
+description: To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device.
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.prod: w10
@@ -97,7 +97,7 @@ function listAumids( $userAccount ) {
 }
 ```
 
-The following Windows PowerShell commands demonstrate how you can call the listAumids function after you have created it.
+The following Windows PowerShell commands demonstrate how you can call the listAumids function after you've created it.
 
 ```powershell
 # Get a list of AUMIDs for the current account:

@@ -67,6 +67,8 @@ The following video provides an overview of Windows Sandbox.
 
 4. Locate and select **Windows Sandbox** on the Start menu to run it for the first time.
 
+   > [!NOTE]
+   > Windows Sandbox does not adhere to the mouse settings of the host system, so if the host system is set to use a right-handed mouse, you should apply these settings in Windows Sandbox manually.  
 
 ## Usage 
 1. Copy an executable file (and any other files needed to run the application) from the host and paste them into the **Windows Sandbox** window.

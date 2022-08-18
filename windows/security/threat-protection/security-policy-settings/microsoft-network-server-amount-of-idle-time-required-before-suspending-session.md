@@ -41,7 +41,7 @@ The **Microsoft network server: Amount of idle time required before suspending s
 
 ### Best practices
 
--   It is advisable to set this policy to 15 minutes. There will be little impact because SMB sessions will be reestablished automatically if the client resumes activity.
+-   It's advisable to set this policy to 15 minutes. There will be little impact because SMB sessions will be reestablished automatically if the client resumes activity.
 
 ### Location
 
@@ -67,7 +67,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -83,7 +83,7 @@ The default behavior on a server mitigates this threat by design.
 
 ### Potential impact
 
-There is little impact because SMB sessions are reestablished automatically if the client computer resumes activity.
+There's little impact because SMB sessions are reestablished automatically if the client computer resumes activity.
 
 ## Related topics
 
