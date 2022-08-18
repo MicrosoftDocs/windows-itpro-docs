@@ -47,6 +47,9 @@ manager: aaroncz
     <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
   </dd>
   <dd>
+    <a href="#mixedreality-manualdowndirectiondisabled">MixedReality/ManualDownDirectionDisabled</a>
+  </dd>  
+  <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
   </dd>
   <dd>
@@ -426,6 +429,46 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-manualdowndirectiondisabled"></a>**MixedReality/ManualDownDirectionDisabled**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
+
+<!--/Description-->
+
+<!--SupportedValues-->
+
+Supported values:
+
+- **False (Default)** - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
+- **True** - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
+<!--/SupportedValues-->
 
 <!--Policy-->
 <a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**  
