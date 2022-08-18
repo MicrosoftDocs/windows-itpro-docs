@@ -2,22 +2,23 @@
 title: VPN and conditional access (Windows 10 and Windows 11)
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: pesmith
+manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 09/23/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # VPN and conditional access
 
->Applies to: Windows 10 and Windows 11
-
 The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.  
 
 >[!NOTE]
->Conditional Access is an Azure AD Premium feature. 
+>Conditional Access is an Azure AD Premium feature.
 
 Conditional Access Platform components used for Device Compliance include the following cloud-based services:
 

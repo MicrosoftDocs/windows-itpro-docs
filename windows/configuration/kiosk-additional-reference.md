@@ -2,10 +2,10 @@
 title: More kiosk methods and reference information (Windows 10/11)
 description: Find more information for configuring, validating, and troubleshooting kiosk configuration.
 ms.reviewer: sybruckm
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: lizlong
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: reference
 ---

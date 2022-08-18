@@ -3,22 +3,24 @@ title: Windows Defender Firewall with Advanced Security Administration with Wind
 description: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It's designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
 

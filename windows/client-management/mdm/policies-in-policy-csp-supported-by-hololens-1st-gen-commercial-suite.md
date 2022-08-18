@@ -2,12 +2,12 @@
 title: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
 description: Learn the policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/17/2019
 ---

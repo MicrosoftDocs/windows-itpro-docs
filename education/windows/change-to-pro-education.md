@@ -2,16 +2,19 @@
 title: Change to Windows 10 Education from Windows 10 Pro
 description: Learn how IT Pros can opt into changing to Windows 10 Pro Education from Windows 10 Pro.
 keywords: change, free change, Windows 10 Pro to Windows 10 Pro Education, Windows 10 Pro to Windows 10 Pro Education, education customers, Windows 10 Pro Education, Windows 10 Pro
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 05/21/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro

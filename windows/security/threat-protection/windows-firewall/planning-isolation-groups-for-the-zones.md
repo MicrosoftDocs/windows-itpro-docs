@@ -1,24 +1,26 @@
 ---
 title: Planning Isolation Groups for the Zones (Windows)
 description: Learn about planning isolation groups for the zones in Microsoft Firewall, including information on universal groups and GPOs.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Planning Isolation Groups for the Zones
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Isolation groups in Active Directory are how you implement the various domain and server isolation zones. A device is assigned to a zone by adding its device account to the group that represents that zone.
 

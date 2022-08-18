@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_LeakDiagnostic
 description: Learn about the Policy CSP - ADMX_LeakDiagnostic.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 09/17/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_LeakDiagnostic
