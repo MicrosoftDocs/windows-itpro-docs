@@ -13,9 +13,9 @@ items:
     items:
       - name: Overview
         href: configure-devices-overview.md
-      - name: Configure device settings
+      - name: Configure policies
         href: configure-device-settings.md
-      - name: Configure device applications
+      - name: Configure applications
         href: configure-device-apps.md        
   - name: 3. Deploy devices
     items: 

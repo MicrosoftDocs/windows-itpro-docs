@@ -38,7 +38,7 @@ Multiple apps can be added to Intune for Education. Devices running Windows 11 S
 
 Intune for Education makes it easy to assign desktop apps to your devices. After you have added your desktop apps to Intune, you can assign them using the same process as other applications.
 
-The addition of desktop applications to Intune should be carried out by repackaging the apps, and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune](/mem/intune/apps/apps-win32-add).
+The addition of desktop applications to Intune should be carried out by repackaging the apps, and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
 
 ### Web apps
 
@@ -75,6 +75,8 @@ With the applications configured, you can now deploy students' and teachers' dev
 <!-- Reference links in article -->
 
 [EDU-1]: /education/windows/windows-11-se-overview
+
+[MEM-1]: /mem/intune/apps/apps-win32-add
 
 [INT-1]: /intune-education/express-configuration-intune-edu
 [INT-2]: /intune-education/add-web-apps-edu
