@@ -184,7 +184,7 @@
               href: update/deploy-updates-intune.md
         - name: Monitor Windows client updates
           items:
-          - name: Monitor with Update Compliance (preview version)
+          - name: Monitor with Update Compliance (preview)
             items:
             - name: Update Compliance overview (preview)
             - href: update/update-compliance-v2-overview.md     
