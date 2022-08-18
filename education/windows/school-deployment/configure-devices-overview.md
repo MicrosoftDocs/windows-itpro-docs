@@ -57,7 +57,7 @@ For more information, see:
 With the groups created, you can configure policies and applications to deploy to your groups.
 
 > [!div class="nextstepaction"]
-> [Next: Configure device settings >](configure-device-settings.md)
+> [Next: Configure policies >](configure-device-settings.md)
 
 <!-- Reference links in article -->
 

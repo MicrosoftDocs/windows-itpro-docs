@@ -19,52 +19,61 @@ appliesto:
 
 # Configure applications with Microsoft Intune
 
-With Intune for Education, school IT administrators have access to diverse applications to help students unlock their learning potential. This section discusses tools and resources for adding apps to Intune for Education, and assigning them to groups.
+With Intune for Education, school IT administrators have access to diverse applications to help students unlock their learning potential. This section discusses tools and resources for adding apps to Intune for Education.
 
-Intune for Education supports the deployment of two types of Windows applications: web apps and desktop apps.
-
-:::image type="content" source="./images/intune-education-apps.png" alt-text="Intune for Education - Apps" border="true":::
-
-Applications can be deployed to groups:
+Applications can be assigned to groups:
 
 - If you target apps to a **group of users**, the apps will be installed on any managed devices that the users sign into
 - If you target apps to a **group of devices**, the apps will be installed on those devices and available to any user who signs in
 
 ## Add apps to Intune for Education
 
-Multiple apps can be added to Intune for Education. Devices running Windows 11 SE are preinstalled with Office apps. During [Express Configuration][INT-1], all Office desktop apps are available in a single app called Microsoft 365.
+Intune for Education supports the deployment of two types of Windows applications: **web apps** and **desktop apps**.
+
+:::image type="content" source="./images/intune-education-apps.png" alt-text="Intune for Education - Apps" border="true":::
 
 ### Desktop apps
-
-Intune for Education makes it easy to assign desktop apps to your devices. After you have added your desktop apps to Intune, you can assign them using the same process as other applications.
 
 The addition of desktop applications to Intune should be carried out by repackaging the apps, and defining the commands to silently install them. The process is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
 
 ### Web apps
 
-Using Intune for Education, you can add websites to your app inventory.
+To create web applications in Intune for Education:
 
-For more information:
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Apps**
+1. Select **New app** > **New web app**
+1. Provide a URL for the web app, a name and, optionally, an icon and description
+1. Select **Save**
 
-- [Add web apps][INT-2]
+For more information, see [Add web apps][INT-2].
 
 ## Assign apps to groups
 
-**With Intune for Education, you can make certain apps only available to select groups. For more information, see Assign apps to install them on school devices.**
+To assign applications to a group of users or devices:
+
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Groups** > Pick a group to manage
+1. Select **Apps**
+1. Select either **Web apps** or **Windows apps**
+1. Select the apps you want to assign to the group > Save
 
 ## Considerations for Windows 11 SE
 
-Windows 11 SE supports all web applications and a set of native applications.
-You can prepare and add an app to Microsoft Intune as a Win32 app from the [approved app list][EDU-1].
+Windows 11 SE supports all web applications and a *curated list* of desktop applications.
+You can prepare and add a desktop app to Microsoft Intune as a Win32 app from the [approved app list][EDU-1].
+
+The process to add Win32 applications to Intune is described in the article [Add, assign, and monitor a Win32 app in Microsoft Intune][MEM-1].
 
 > [!NOTE]
 > If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><b>Microsoft Education Support</b></a>.
 
-If you assign an app to a device running Windows 11 SE and receive the **0x87D300D9** error code with a **Failed** state:
+> [!CAUTION]
+> If you assign an app to a device running Windows 11 SE and receive the **0x87D300D9** error code with a **Failed** state:
+> - Be sure the app is on the [approved app list][EDU-1]
+> - If you submitted a request to add your own app and it was approved, check that the app meets package requirements
+> - If the app is not approved, it will not run on Windows 11 SE. In this case, you will have to verify if the app can run in a web browser, such as a web app or PWA
 
-- Be sure the app is on the [approved app list][EDU-1]
-- If you submitted a request to add your own app and it was approved, check that the app meets package requirements
-- If the app is not approved, it will not run on Windows 11 SE. In this case, you will have to verify if the app can run in a web browser, such as a web app or PWA
 ## Next steps
 
 With the applications configured, you can now deploy students' and teachers' devices.
