@@ -37,7 +37,7 @@ The new version of Update Compliance is in preview. Some of the benefits of this
 Currently, the preview contains the following features:
 
 - [Update Compliance workbook](update-compliance-v2-workbook.md)
-- Update Compliance status [charts in the Microsoft 365 admin](updates-status-admin-center.md)
+- Update Compliance status [charts in the Microsoft 365 admin](update-status-admin-center.md)
 - Access to the following new [Update Compliance tables](update-compliance-v2-schema.md):
     - UCClient
     - UCClientReadinessStatus
