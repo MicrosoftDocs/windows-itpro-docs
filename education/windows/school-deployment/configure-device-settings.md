@@ -19,8 +19,6 @@ appliesto:
 
 # Configure and secure devices with Microsoft Intune
 
-
-
 ## Configure device settings
 
 With Intune for Education, you can configure settings for users and devices in the school. Settings can be assigned to groups:
@@ -40,7 +38,6 @@ There are two ways to manage settings in Intune for Education:
 
 With Express Configuration, you can get Intune for Education up and running in just a few steps. You can select a group of devices or users, select applications to distribute, and choose settings from the most commonly used in schools.
 
-
 > [!TIP]
 > To learn more, and practice step-by-step Express Configuration in Intune for Education, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/deploy-apps-and-policies" target="_blank"><b>this interactive demo</b></a>.
 
@@ -53,32 +50,35 @@ Groups are used to manage users and devices with similar management needs, allow
 1. Select **Windows device settings**
 1. Expand the different categories and review information about individual settings
 
-For more information, see [Set up Intune for Education][INT-3].
+Settings that are commonly configured for student devices include:
 
-## Create Windows Update policies
+- Wallpaper and lock screen background. See: [Lock screen and desktop][INT-7]
+- Wi-Fi connections. See: [Add Wi-Fi profiles][INT-8]
+- Enablement of the integrated testing and assessment solution *Take a test*. See: [Add Take a Test profile][INT-9]
 
-Create update rings that specify how and when [feature and quality updates](/windows/deployment/update/get-started-updates-channels-tools) are applied to your Windows 10 and later devices. With Windows 11 SE, new features and quality updates include the content of all previous updates. If you have installed the latest update, you know your Windows devices are up to date.
+For more information, see [Windows device settings in Intune for Education][INT-3].
 
-1. In the Microsoft Endpoint Manager admin center, select **Devices** → **Windows** → **Update rings for Windows 10 and later** → **Create Profile**. 
+### Create Windows Update policies
 
-#### [PICTURE HERE] Create Update rings page in Microsoft Endpoint Manager admin center
+It is important to keep Windows devices up to date with the latest security updates. You can create Windows Update policies using Intune for Education.
 
-1. Under **Basics**, specify a name and description (optional).
-1. Under **Update ring settings**, configure settings for your school needs. For more information, see [Windows Update settings](/mem/intune/protect/windows-update-settings) and [Creating and assigning update rings](/mem/intune/protect/windows-10-update-rings).
+To create a Windows Update policy:
 
-**NOTE:** You can also create expedited quality updates for Windows 10 and later. This policy lets you expedite the installation of the most recent Windows security updates on Intune-managed devices. For more information, see [Create and assign an expedited quality update](/mem/intune/protect/windows-10-expedite-updates).
+1. Select **Groups** > Pick a group to manage
+1. Select **Windows device settings**
+1. Expand the category **Update and upgrade**
+1. Configure the required settings as needed
 
-### Manage device policies
+For more information, see [Updates and upgrade][INT-6].
 
-You can manage the settings of several devices from a single touch point. For more information, see:
-
-- [Add Wi-Fi profiles](/intune-education/add-wi-fi-profile) 
-- [Add Take a Test profile](/intune-education/take-a-test-profiles) 
-- [View all Windows device settings ](/intune-education/all-edu-settings-windows)
+> [!NOTE]
+> If you require a more complex Windows Update policy, you can create it from Microsoft Endpoint Manager. For more information:
+> - [**What is Windows Update for Business?**][WIN-1]
+> - [**Manage Windows software updates in Intune**][MEM-1]
 
 ## Endpoint security
 
-Intune for Education helps protect devices and school data with tools like security baselines and Windows Update policies. Through the Endpoint security node, you can configure device security and manage security tasks for devices at risk. The node configures and deploys Microsoft Defender for Endpoint to help prevent security breaches and gain visibility into your school's security posture. 
+ Through the Endpoint security node, you can configure device security and manage security tasks for devices at risk. The node configures and deploys Microsoft Defender for Endpoint to help prevent security breaches and gain visibility into your school's security posture. 
 
 ### Create security policies
 
@@ -102,6 +102,12 @@ With the Intune service configured, you can configure policies and applications 
 [EDU-1]: /education/windows/windows-11-se-overview
 
 [INT-2]: /intune-education/express-configuration-intune-edu
-[INT-3]: /microsoft-365/education/deploy/use-intune-for-education
-[INT-4]: /intune-education/add-desktop-apps-edu
-[INT-5]: /intune-education/add-web-apps-edu
+[INT-3]: /intune-education/all-edu-settings-windows
+[INT-6]: /intune-education/all-edu-settings-windows#updates-and-upgrade
+[INT-7]: /intune-education/all-edu-settings-windows#lock-screen-and-desktop
+[INT-8]: /intune-education/add-wi-fi-profile
+[INT-9]: /intune-education/take-a-test-profiles
+
+[WIN-1]: /windows/deployment/update/waas-manage-updates-wufb
+
+[MEM-1]: /mem/intune/protect/windows-update-for-business-configure
