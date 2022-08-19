@@ -23,6 +23,12 @@ manager: aaroncz
     <a href="#mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
   </dd>
   <dd>
+    <a href="#mixedreality-allowcaptiveportalpeforesignin">MixedReality/AllowCaptivePortalBeforeSignIn</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-allowlaunchuriinsingleappkiosk">MixedReality/AllowLaunchUriInSingleAppKiosk</a>
+  </dd>
+  <dd>
     <a href="#mixedreality-autologonuser">MixedReality/AutoLogonUser</a>
   </dd>
   <dd>
@@ -32,13 +38,25 @@ manager: aaroncz
     <a href="#mixedreality-configuremovingplatform">MixedReality/ConfigureMovingPlatform</a>
   </dd>
   <dd>
+    <a href="#mixedreality-disablesisallownetworkconnectivitypassivepolling">MixedReality/DisallowNetworkConnectivityPassivePolling</a>
+  </dd>
+  <dd>
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
     <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
   </dd>
   <dd>
+    <a href="#mixedreality-manualdowndirectiondisabled">MixedReality/ManualDownDirectionDisabled</a>
+  </dd>  
+  <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-skipcalibrationduringsetup">MixedReality/SkipCalibrationDuringSetup</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-skiptrainingduringsetup">MixedReality/SkipTrainingDuringSetup</a>
   </dd>
   <dd>
     <a href="#mixedreality-visitorautologon">MixedReality/VisitorAutoLogon</a>
@@ -79,7 +97,74 @@ Steps to use this policy correctly:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**  
+<a href="" id="mixedreality-allowcaptiveportalpeforesignin"></a>**MixedReality/AllowCaptivePortalBeforeSignIn**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--Description-->
+This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
+
+MixedReality/AllowCaptivePortalBeforeSignIn
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
+
+Bool value
+
+<!--/Description-->
+
+<!--/SupportedSKUs-->
+
+<!--Policy-->
+<a href="" id="mixedreality-allowlaunchuriinsingleappkiosk"></a>**MixedReality/AllowLaunchUriInSingleAppKiosk**
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--Description-->
+This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example, if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+
+By default, launching applications via Launcher API (Launcher Class (Windows.System) - Windows UWP applications) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
+
+The OMA-URI of policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowLaunchUriInSingleAppKiosk`
+
+Bool value
+
+<!--/Description-->
+
+<!--/SupportedSKUs-->
+
+<!--Policy-->
+<a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**
 
 <!--SupportedSKUs-->
 
@@ -90,7 +175,7 @@ Steps to use this policy correctly:
 |HoloLens 2|Yes|
 
 <!--/Description-->
-This new AutoLogonUser policy controls whether a user will be automatically signed in. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly distribute HoloLens devices and enable their end users to speed up sign in.
+This new AutoLogonUser policy controls whether a user will be automatically signed in. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly distribute HoloLens devices and enable their end users to speed up sign-in.
 
 When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must sign in to the device at least once to enable autologon.
 
@@ -101,7 +186,7 @@ Supported value is String.
 
 - User with the same email address will have autologon enabled.
 
-On a device where this policy is configured, the user specified in the policy will need to sign in at least once. Subsequent reboots of the device after the first sign in will have the specified user automatically signed in. Only a single autologon user is supported. Once enabled, the automatically signed-in user won't be able to sign out manually. To sign in as a different user, the policy must first be disabled.
+On a device where this policy is configured, the user specified in the policy will need to sign in at least once. Subsequent reboots of the device after the first sign-in will have the specified user automatically signed in. Only a single autologon user is supported. Once enabled, the automatically signed-in user won't be able to sign out manually. To sign in as a different user, the policy must first be disabled.
 
 > [!NOTE]
 >
@@ -204,7 +289,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy controls the behavior of moving platform feature on Hololens 2, that is, whether it's turned off / on, or it can be toggled by a user. It should only be used by customers who intend to use Hololens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it's turned off / on, or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
 
 <!--/Description-->
 
@@ -219,6 +304,42 @@ Supported value is Integer.
 - 2 Force on - Moving platform is enabled and can't be changed by user.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--Description-->
+Windows Network Connectivity Status Indicator may get false positive Internet capable signal from passive polling. That may result in unexpected Wi-Fi adapter reset when device connects to an intranet only access point. Enabling this policy would avoid unexpected network interruptions caused by false positive NCSI passive polling.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/DisallowNetworkConnectivityPassivePolling`
+
+- Bool value
+
+<!--/Description-->
+
 <!--/Policy-->
 <hr/>
 
@@ -310,6 +431,46 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="mixedreality-manualdowndirectiondisabled"></a>**MixedReality/ManualDownDirectionDisabled**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether the user can change down direction manually or not. If no down direction is set by the user, then an automatically calculated down direction is used by the system. This policy has no dependency on ConfigureMovingPlatform policy and they can be set independently.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ManualDownDirectionDisabled`
+
+<!--/Description-->
+
+<!--SupportedValues-->
+
+Supported values:
+
+- **False (Default)** - User can manually change down direction if they desire, otherwise down direction will be determined automatically based on the measured gravity vector.
+- **True** - User can’t manually change down direction and down direction will be always determined automatically based on the measured gravity vector.
+
+<!--/SupportedValues-->
+
+<!--Policy-->
 <a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**  
 
 <!--SupportedSKUs-->
@@ -349,6 +510,78 @@ The following list shows the supported values:
 - 1 - True
 
 <!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-skipcalibrationduringsetup"></a>**MixedReality/SkipCalibrationDuringSetup**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--Description-->
+Skips the calibration experience on HoloLens 2 devices when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to calibrate their device from the Settings app.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
+
+- Bool value
+
+<!--/Description-->
+
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-skiptrainingduringsetup"></a>**MixedReality/SkipTrainingDuringSetup**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--Description-->
+On HoloLens 2 devices, skips the training experience of interactions with the humming bird and start menu training when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to learn these movement controls from the Tips app.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
+
+- Bool value
+
+<!--/Description-->
+
 <!--/Policy-->
 <hr/>
 
