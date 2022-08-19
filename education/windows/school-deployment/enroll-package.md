@@ -38,7 +38,7 @@ The Set Up School PCs app guides you through configuration choices for school-ow
 :::image type="content" source="./images/supcs-win11se.png" alt-text="Configure device settings in Set Up School PCs app" border="false":::
 
 > [!IMPORTANT]
-> If you are creating a provisioning package for **Windows 11 SE** devices, ensure to select the correct **OS version** in the **Configure device settings** page.
+> If you are creating a provisioning package for **Windows 11 SE** devices, ensure to select the correct *OS version* in the *Configure device settings* page.
 
 Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
 
