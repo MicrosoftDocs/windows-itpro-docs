@@ -29,7 +29,7 @@ You can create provisioning packages using either **Set Up School PCs** or **Win
 
 ## Set up School PCs
 
-With a guided experience, Set up School PCs app helps an IT administrator to create a package containing the most common features and settings that students need, and enroll the devices in Intune. The package is saved on a USB stick, which can then be plugged into devices to complete the enrollment process.
+With a guided experience, Set up School PCs app helps an IT administrator to create a package containing the most common features and settings that students need, and enroll the devices in Intune. The package is saved on a USB stick, which can then be plugged into devices during OOBE to complete the enrollment process.
 
 ### Create a provisioning package
 
@@ -40,27 +40,27 @@ The Set Up School PCs app guides you through configuration choices for school-ow
 > [!IMPORTANT]
 > If you are creating a provisioning package for **Windows 11 SE** devices, ensure to select the correct **OS version** in the **Configure device settings** page.
 
-The devices will be joined to Azure Active Directory and automatically enrolled in Intune. Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
+Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
 
 For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][1].
 
-
 ### Enroll devices with the provisioning package
 
-To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and enroll automatically in Intune.
+To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and automatically enroll in Intune.
 
-:::image type="content" source="./images/wcd.png" alt-text="Set up device page in Windows Configuration Designer" border="false":::
+:::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package" border="false":::
 
 For more information, see [Run package - Install package on PC][EDU-1].
 
 > [!TIP]
-> To learn more and practice with Set up School PCs, try the <a href="https://www.microsoft.com/en-us/education/interactive-demos/enroll-devices-at-scale" target="_blank"><b>Set Up School PCs demo</b></a>, which provides detailed steps to create a provisioning package and deploy a device.
+> To learn more and practice with Set up School PCs, try the <a href="https://www.microsoft.com/en-us/education/interactive-demos/enroll-devices-at-scale" target="_blank"><u>Set Up School PCs demo</u></a>, which provides detailed steps to create a provisioning package and deploy a device.
 ## Windows Configuration Designer
 
+Windows Configuration Designer is especially useful in scenarios where a school needs to provision packages for both bring-you-own devices and school-owned devices. Differently from Set Up School PCs, Windows Configuration Designer doesn't offer a guided experience, and allows granular customizations, including the possibility to embed scripts in the package.
 
-Windows Configuration Designer is especially useful in scenarios where a school needs to provision packages for both bring-you-own devices and school-owned devices. Ideal for small-to-medium schools that manage up to a few hundred devices, Windows Configuration Designer lets you configure devices without imaging. For more information, see [Install Windows Configuration Designer][WIN-1], which provides details about the app, its provisioning process, and considerations for its use. 
+:::image type="content" source="./images/wcd.png" alt-text="Set up device page in Windows Configuration Designer" border="false":::
 
-For more information, see [Provisioning packages][WIN-2].
+For more information, see [Install Windows Configuration Designer][WIN-1], which provides details about the app, its provisioning process, and considerations for its use.
 
 ________________________________________________________
 ## Next steps
@@ -75,4 +75,3 @@ With the devices joined to Azure AD tenant and managed by Intune, you can use In
 [EDU-1]: /education/windows/use-set-up-school-pcs-app
 
 [WIN-1]: /windows/configuration/provisioning-packages/provisioning-install-icd
-[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package

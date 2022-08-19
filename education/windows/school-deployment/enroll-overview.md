@@ -27,7 +27,7 @@ There are three main methods for joining Windows devices to Azure AD and getting
 
 ## Choose the enrollment method
 
-Windows Autopilot and the Set up School PCs app are usually the most efficient options for school environments.
+**Windows Autopilot** and the **Set up School PCs** app are usually the most efficient options for school environments.
 This [table][INT-1] describes the ideal scenarios for using either option. It's recommended to review the table when planning your enrollment and deployment strategies.
 
 :::image type="content" source="./images/enroll.png" alt-text="The device lifecycle for Intune-managed devices - enrollment" border="false":::

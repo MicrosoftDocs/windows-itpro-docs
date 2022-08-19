@@ -14,6 +14,7 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Windows Autopilot
@@ -34,9 +35,12 @@ Before setting up Windows Autopilot, consider these prerequisites:
 
 ### Register devices to Windows Autopilot
 
-Before deployment, devices must be registered with the Windows Autopilot deployment service. Each device's unique hardware identity (known as a *hardware hash*) is captured and uploaded to the Autopilot service, and the device is associated with an Azure tenant ID. There are three main ways to register devices to Autopilot:
+Before deployment, devices must be registered in the Windows Autopilot service. Each device's unique hardware identity (known as a *hardware hash*) must be uploaded, so that the Autopilot service can recognize which tenant devices belong to and which OOBE experience they should present to the users. There are three main ways to register devices to Autopilot:
 
-- **Complete the OEM registration process.** When you purchase devices from an OEM, that company can automatically register them with Windows Autopilot. Before an OEM can register devices, your school must grant permission. The OEM begins this process with approval granted by an Azure AD global administrator from the school. For Microsoft Surface registration, collect the details shown in this [documentation table](/surface/surface-autopilot-registration-support) before submitting the request to Microsoft Support. You can make requests using the [Microsoft Devices Autopilot Support](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f) form.
+- **OEM registration process.** When you purchase devices from an OEM or Reseller, that company can automatically register devices to Windows Autopilot and associate them to your tenant. Before this registration can happen, a *Global Administrator* must grant the OEM/Reseller permissions to register devices. For more inrmation, see [Windows Autopilot customer consent][MEM-2].
+    > [!NOTE]
+    > For **Microsoft Surface registration**, collect the details shown in this [<u>documentation table</u>][SURF-1] and follow the instruction to submit the request form to Microsoft Support.
+
 - **Manually register devices with Windows Autopilot.** To manually register a device, you must first capture its hardware hash. Once this process has been completed, the hardware hash can be uploaded to the Windows Autopilot service using [Microsoft Intune](/mem/autopilot/add-devices), [Partner Center](https://msdn.microsoft.com/partner-center/autopilot) or [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).
 
 **NOTE:** Windows 11 SE devices do not support the use of Windows PowerShell or Microsoft Configuration Manager to capture hardware hashes. Hardware hashes can only be captured manually. We recommend working with an OEM, partner, or device reseller to register devices. For more information, see [Set up devices with Autopilot][EDU-1].
@@ -47,63 +51,35 @@ Before deployment, devices must be registered with the Windows Autopilot deploym
 
 First, you create a dynamic device group, and then you apply a Windows Autopilot deployment profile to each device in this group. Deployment profiles determine the deployment mode and customize the out-of-box experience of your devices.
 
-### Create a dynamic device group
+### Create a group for your Autopilot devices
 
-Dynamic groups reference rules that you create to assign devices to groups. The criteria for a rule are specified during initial group creation and can be edited afterward. A device group is required to assign a Windows Autopilot deployment profile. You can create a group with a dynamic membership rule using Autopilot device attributes. Autopilot devices that meet these rules are automatically added to the group.
+A device group is required to assign a Windows Autopilot deployment profile. You can create a group with a dynamic membership rule using Autopilot device attributes. Autopilot devices that meet these rules are automatically added to the group.
 
-The steps for creating a dynamic device group are completed in Microsoft Endpoint Manager:
+Here are the steps for creating a dynamic group for the devices that have an assigned Autopilot group tag:
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and then select **Groups** → **New Group**. 
-1. Configure the following properties:
-1. **Group type**: Select **Security**.
-1. **Group name/Group description**: Enter a valid name and description for your group.
-1. **Azure AD roles can be assigned to the group**: Select **Yes**. This allows Azure AD roles to be assigned to the group you are creating. Once set, the group is permanent and always allowed to be assigned Azure AD roles. For more information, see [Use Azure AD groups to manage role assignments](/azure/active-directory/roles/groups-concept).
-1. **Membership type**: Select **Dynamic Device**. This property allows you to choose how devices become members of this group. For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
-1. **Owners**: Select users who own this group. Owners can also delete the group.
-1. **Dynamic device members**: Select **Add dynamic query** → **Add expression**.
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Groups** > Pick a group to manage
+1. Select **Windows device settings**
+1. Expand the different categories and review information about individual settings
 
-## UPDATE PIC![New Group page in Microsoft Endpoint Manager admin center]
+:::image type="content" source="./images/intune-education-autopilot-group.png" alt-text="Intune for Education - creation of a dynamic group for Autopilot devices" border="false":::
 
-### Create rules using Autopilot device attributes
-
-Autopilot devices that meet the rules are automatically added to the group. Note that creating an expression using non-Autopilot attributes does not guarantee that devices included in the group are registered to Autopilot. 
-
-The following steps will create a dynamic device group that uses the query expression defined in the rule.
-
-1. Create expressions, as desired:
-1. To create a group that includes all your Autopilot devices, enter **(device.devicePhysicalIDs -any (\_ -contains "[ZTDID]"))**.
-1. The Intune group tag field maps to the OrderID attribute on Azure AD devices. To create a group that includes all Autopilot devices with a specific group tag (the Azure AD device OrderID), enter **(device.devicePhysicalIds -any (\_ -eq "[OrderID]:179887111881"))**.
-1. To create a group that includes all your Autopilot devices with a specific Purchase Order ID, enter **(device.devicePhysicalIds -any (\_ -eq "[PurchaseOrderId]:76222342342"))**.
-
-## UPDATE PIC![Dynamic membership rules page in Microsoft Endpoint Manager admin center]
-
-5. Save your expressions.
-1. Select **Create**. 
+More advanced dynamic membership rules can be created from Microsoft Endpoint Manager admin center. For more information, see []().
 
 ### Create an Autopilot deployment profile
 
-Once the dynamic device group is created, it can be used for assigning Windows Autopilot deployment profiles. These profiles are used to configure Autopilot devices.
+For Autopilot devices to offer a customized OOBE experience, you must create **deployment profiles** and assign them to a group containing the devices.
+A deployment profile is a set of settings that determine the behavior of the device during OOBE.
 
-1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** → **Windows** → **Windows enrollment** → **Deployment Profiles** → **Create Profile** → **Windows PC**.
-1. On the **Basics** page:
-1. Enter a **Name** and optional **Description**. 
-1. If you want all devices in the assigned groups to convert to Autopilot automatically, for **Convert all targeted devices to Autopilot**, select **Yes**.
-1. On the **Out-of-box experience** page, for **Deployment** mode, choose one option:
+
 1. **User-driven:** Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
-1. **Self-deploying:** Devices with this profile are not associated with the user enrolling the device. User credentials are not required to enroll the device. When a device has no user associated with it, user-based compliance policies do not apply. When using self-deploying mode, only compliance policies targeting the device will be applied.
-1. In the **Join to Azure AD** field, choose **Azure AD joined**.
+1. **Self-deploying:** Devices with this profile are not associated with the user enrolling the device. User credentials are not required to enroll the device.
 
-## UPDATE PIC![Windows Autopilot profile creation page in Microsoft Endpoint Manager admin center]
+To learn more about deployment profiles, see [Windows Autopilot deployment profiles](/mem/autopilot/profiles).
 
-9. On the **Assignments** page: 
-1. Choose **Select groups to include**, and then choose the groups you want to include in this profile.
-1. If a group is not showing in the group list, select **Add groups**, and then select the desired group. In this case, you will select the dynamic device group you created above in [Create a dynamic device group](#).
+To create an Autopilot deployment profile:
 
-## UPDATE PIC![Group assignments page for Windows Autopilot deployment profiles]
-
-12. On the **Review + create** page, select **Create** to generate the profile.
-
-For more information, see [Configure Autopilot profiles](/mem/autopilot/profiles).
+More advanced Autopilot deployment profiles can be created from Microsoft Endpoint Manager admin center. For more information, see []().
 
 ### Configure an Enrollment Status Page
 
@@ -111,12 +87,13 @@ An Enrollment Status Page (ESP) is a greeting page displayed to users while enro
 
 To deploy the ESP to devices, you need to create an ESP profile in Microsoft Endpoint Manager.
 
+:::image type="content" source="./images/win11-oobe-esp.png" alt-text="Windows OOBE - enrollment status page" border="false":::
+
 For more information, see [Set up the Enrollment Status Page][MEM-3].
 
 > [!CAUTION]
 > When targeting an ESP to **Windows 11 SE devices**, only approved apps should be included as part of the ESP configuration.
 
-### Enrollment Status Page reference here
 ## branding reference here
 ### Autopilot end-user experience
 
@@ -144,6 +121,7 @@ With the devices joined to Azure AD tenant and managed by Intune, you can use In
 
 [MEM-1]: /mem/intune/fundamentals/intune-endpoints
 [MEM-3]: /mem/intune/enrollment/windows-enrollment-status
+[MEM-2]: /mem/autopilot/registration-auth
 
 [WIN-1]: /windows/deployment/windows-autopilot/windows-autopilot-requirements
 
@@ -156,3 +134,5 @@ With the devices joined to Azure AD tenant and managed by Intune, you can use In
 
 [EDU-1]: /intune-education/windows-autopilot-setup
 [EDU-2]: /intune-education/windows-11-se-overview#windows-autopilot
+
+[SURF-1]: /surface/surface-autopilot-registration-support

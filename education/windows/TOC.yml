@@ -61,8 +61,6 @@ items:
           href: take-a-test-single-pc.md
         - name: Configure a Test on multiple PCs
           href: take-a-test-multiple-pcs.md
-        - name: Take a Test app technical reference
-          href: take-a-test-app-technical.md
     - name: Change Windows edition
       items: 
       - name: Windows 10 editions for education customers
@@ -89,11 +87,13 @@ items:
           href: chromebook-migration-guide.md
 - name: Reference
   items:
-    - name: Set up School PCs technical reference
+    - name: Set up School PCs
       items:
-      - name: Technical reference for the Set up School PCs app
+      - name: Set up School PCs app technical reference
         href: set-up-school-pcs-technical.md
       - name: Provisioning package settings
         href: set-up-school-pcs-provisioning-package.md
       - name: What's new in Set up School PCs
         href: set-up-school-pcs-whats-new.md
+    - name: Take a Test app technical reference
+      href: take-a-test-app-technical.md
