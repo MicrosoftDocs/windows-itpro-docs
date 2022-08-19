@@ -34,10 +34,10 @@ If you don't already have a Microsoft 365 tenant, you'll need to create one.
 For more information, see [Create your Office 365 tenant account][M365-1]
 
 > [!TIP]
-> To learn more, and practice how to configure the Microsoft 365 tenant for your school, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/set-up-Microsoft-365" target="_blank"><b>this interactive demo</b></a>.
+> To learn more, and practice how to configure the Microsoft 365 tenant for your school, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/set-up-Microsoft-365" target="_blank"><u>this interactive demo</u></a>.
 ### Explore the Microsoft 365 admin center
 
-The **Microsoft 365 admin center** is the hub for all administrative consoles for the Microsoft 365 cloud. To access the <a href="https://entra.microsoft.com" target="_blank"><b>Microsoft Entra admin center</b></a>, sign in with the same global administrator account when you [created the Microsoft 365 tenant](#create-a-microsoft-365-tenant).
+The **Microsoft 365 admin center** is the hub for all administrative consoles for the Microsoft 365 cloud. To access the <a href="https://entra.microsoft.com" target="_blank"><u>Microsoft Entra admin center</u></a>, sign in with the same global administrator account when you [created the Microsoft 365 tenant](#create-a-microsoft-365-tenant).
 
 From the Microsoft 365 admin center, you can access different administrative dashboards: Azure Active Directory, Microsoft Endpoint Manager, Intune for Education, and others:
 
@@ -53,7 +53,7 @@ For more information, see [Overview of the Microsoft 365 admin center][M365-2].
 With the Microsoft 365 tenant in place, it's time to add users, create groups, and assign licenses. All students and teachers need a user account before they can sign in and access the different Microsoft 365 services. There are multiple ways to do this, including using School Data Sync (SDS), synchronizing an on-premises Active Directory, manually, or a combination of the above.
 
 > [!NOTE]
-> Synchronizing your Student Information System (SIS) with School Data Sync is the preferred way to create students and teachers as users in a Microsoft 365 Education tenant. However, if you want to integrate an on-premises directory and synchronize accounts to the cloud, skip to [**Azure Active Directory sync**](#azure-active-directory-sync) below.
+> Synchronizing your Student Information System (SIS) with School Data Sync is the preferred way to create students and teachers as users in a Microsoft 365 Education tenant. However, if you want to integrate an on-premises directory and synchronize accounts to the cloud, skip to [<u>Azure Active Directory sync</u>](#azure-active-directory-sync) below.
 
 ### School Data Sync
 
@@ -62,10 +62,10 @@ School Data Sync (SDS) imports and synchronizes SIS data to create classes in Mi
 For more information, see [Overview of School Data Sync][SDS-1].
 
 > [!TIP]
-> To learn more and practice with School Data Sync, follow the <a href="https://interactiveguides-schooldatasync.azurewebsites.net/" target="_blank"><b>Microsoft School Data Sync demo</b></a>, which provides detailed steps to access, configure, and deploy School Data Sync in your Microsoft 365 Education tenant.
+> To learn more and practice with School Data Sync, follow the <a href="https://interactiveguides-schooldatasync.azurewebsites.net/" target="_blank"><u>Microsoft School Data Sync demo</u></a>, which provides detailed steps to access, configure, and deploy School Data Sync in your Microsoft 365 Education tenant.
 
 > [!NOTE]
-> You can perform a test deployment by cloning or downloading sample SDS CSV school data from the [O365-EDU-Tools GitHub site](https://github.com/OfficeDev/O365-EDU-Tools).
+> You can perform a test deployment by cloning or downloading sample SDS CSV school data from the [<u>O365-EDU-Tools GitHub site</u>](https://github.com/OfficeDev/O365-EDU-Tools).
 >
 > Remember that you should typically deploy test SDS data (users, groups, and so on) in a separate test tenant, not your school production environment.
 
@@ -98,11 +98,11 @@ For more information, see [Add multiple users in the Microsoft 365 admin center]
 
 Creating groups is important to simplify multiple tasks, like assigning licenses, delegating administration, deploy settings, applications or to distribute assignments to students. To create groups:
 
-- Sign in to the <a href="https://entra.microsoft.com" target="_blank"><b>Microsoft Entra admin center</b></a>
-- Select **Azure Active Directory** > **Groups** > **All groups** > **New group**
-- On the **New group** page, select **Group type** > **Security**
-- Provide a group name and add members, as needed
-- Select **Next**
+1. Sign in to the <a href="https://entra.microsoft.com" target="_blank"><b>Microsoft Entra admin center</b></a>
+1. Select **Azure Active Directory** > **Groups** > **All groups** > **New group**
+1. On the **New group** page, select **Group type** > **Security**
+1. Provide a group name and add members, as needed
+1. Select **Next**
 
 For more information, see [Create a group in the Microsoft 365 admin center][M365-5].
 

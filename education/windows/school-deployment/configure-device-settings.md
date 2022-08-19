@@ -74,8 +74,8 @@ For more information, see [Updates and upgrade][INT-6].
 
 > [!NOTE]
 > If you require a more complex Windows Update policy, you can create it in Microsoft Endpoint Manager. For more information:
-> - [**What is Windows Update for Business?**][WIN-1]
-> - [**Manage Windows software updates in Intune**][MEM-1]
+> - [<u>What is Windows Update for Business?</u>][WIN-1]
+> - [<u>Manage Windows software updates in Intune</u>][MEM-1]
 
 ## Endpoint security
 
@@ -96,12 +96,12 @@ For more information, see [Security][INT-4].
  
 > [!NOTE]
 > If you require more sophisticated security policies, you can create them in Microsoft Endpoint Manager. For more information:
-> - [Antivirus][MEM-2]
-> - [Disk encryption][MEM-3]
-> - [Firewall][MEM-4]
-> - [Endpoint detection and response][MEM-5]
-> - [Attack surface reduction][MEM-6]
-> - [Account protection][MEM-7]
+> - [<u>Antivirus</u>][MEM-2]
+> - [<u>Disk encryption</u>][MEM-3]
+> - [<u>Firewall</u>][MEM-4]
+> - [<u>Endpoint detection and response</u>][MEM-5]
+> - [<u>Attack surface reduction</u>][MEM-6]
+> - [<u>Account protection</u>][MEM-7]
 
 ## Next steps
 
