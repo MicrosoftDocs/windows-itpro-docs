@@ -62,9 +62,7 @@ The following are the Azure Active Directory settings:
 
 | Check | Description |
 | ----- | ----- |
-| Conditional access | Verifies that conditional access policies and multi-factor authentication aren't assigned to all users.<p><p>Your conditional access policies must not prevent our service accounts from accessing the service and must not require multi-factor authentication. For more information, see [Conditional access policies](../prepare/windows-autopatch-fix-issues.md#conditional-access-policies). |
-| Windows Autopatch cloud service accounts | Checks that no usernames conflict with ones that Windows Autopatch reserves for its own use. The cloud service accounts are:<ul><li>MsAdmin</li><li>MsAdminInt</li><li>MsTest</li></ul> For more information, see [Tenant access](../references/windows-autopatch-privacy.md#tenant-access). |
-| Security defaults | Checks whether your Azure Active Directory organization has security defaults enabled. |
+| Co-Management | Advisory only check if co-management is applicable, to ensure the proper workloads are in place for Windows Autopatch. Should co-management not apply to your tenant, this check can be safely disregarded and will not block deployment of devices. |
 | Licenses | Checks that you've obtained the necessary [licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
 
 ### Check results
