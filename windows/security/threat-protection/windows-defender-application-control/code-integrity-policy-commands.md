@@ -2,9 +2,9 @@
 title: CI Policy, Token, and Miscellaneous Commands
 description: Learn how to use Policy Commands, Token Commands, and Miscellaneous Commands.
 author: valemieux
-ms.author: jgeurten
+ms.author: jogeurte
 ms.service: security
-ms.reviewer: jgeurten
+ms.reviewer: jogeurte
 ms.topic: how-to
 ms.date: 08/07/2022
 ms.custom: template-how-to
