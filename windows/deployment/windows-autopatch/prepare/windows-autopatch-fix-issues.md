@@ -55,14 +55,14 @@ Your "Windows 10 update ring" policy in Intune must not target any Windows Autop
 
 You can access Azure Active Directory (AD) settings in the [Azure portal](https://portal.azure.com/).
 
-### Conditional access policies
+### Co-Management
 
-Conditional access policies must not prevent Windows Autopatch from connecting to your tenant.
+Co-management enables you to concurrently manage Windows 10 or later devices by using both Configuration Manager and Microsoft Intune.
 
 | Result | Meaning |
 | ----- | ----- |
-| Advisory | You have at least one conditional access policy that targets all users or at least one conditional access policy set as required for multi-factor authentication. These policies could prevent Windows Autopatch from managing the Windows Autopatch service.<p><p>During enrollment, we'll attempt to exclude Windows Autopatch service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. However, if we're unsuccessful, this can cause errors during your enrollment experience.<p><p>For best practice, [create an assignment that targets a specific Azure Active Directory (AD) group](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) that doesn't include Windows Autopatch service accounts.</p> |
-| Error | The Intune Administrator  role doesn't have sufficient permissions for this check. You'll also need to have these Azure Active Directory (AD) roles assigned to run this check:<br><ul><li>Security Reader</li><li>Security Administrator</li><li>Conditional Access Administrator</li><li>Global Reader</li><li>Devices Administrator</li></ul> |
+| Advisory | To successfully enroll devices that are Co-Managed with Windows Autopatch, it is necessary that the following Co-Managed workloads are switched to Intune.
+:<ul><li>Device Configuration</li><li>Windows Update policies</li><li>Office 365 Client Apps</li></ul><p>Should co-management not apply to your tenant, this check can be safely disregarded and will not block deployment of devices.</p> |
 
 ### Licenses
 
@@ -71,19 +71,3 @@ Windows Autopatch requires the following licenses:
 | Result | Meaning |
 | ----- | ----- |
 | Not ready | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium, and Microsoft Intune are required. For more information, see [more about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
-
-### Windows Autopatch cloud service accounts
-
-Certain account names could conflict with account names created  by Windows Autopatch.
-
-| Result | Meaning |
-| ----- | ----- |
-| Not ready | You have at least one account name that will conflict with account names created by Windows Autopatch. The cloud service accounts are:<ul><li>MsAdmin</li><li>MsAdminInt</li><li>MsTest</li></ul><p>You must either rename or remove conflicting accounts to move forward with enrolling to the Windows Autopatch service as we'll create these accounts as part of running our service. For more information, see [Tenant Access](../references/windows-autopatch-privacy.md#tenant-access).</p> |
-
-### Security defaults
-
-Security defaults in Azure Active Directory (AD) will prevent Windows Autopatch from managing your devices.
-
-| Result | Meaning |
-| ----- | ----- |
-| Not ready | You have Security defaults turned on. Turn off Security defaults and set up conditional access policies. For more information, see [Common conditional access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common). |
