@@ -1350,10 +1350,10 @@ Supported operation is Execute. Request ID is expected as a parameter.
 
 > [!NOTE]
 > Key rotation is supported only on these enrollment types:
->   - windowsAzureADJoin 
->   - windowsBulkAzureDomainJoin 
->   - windowsAzureADJoinUsingDeviceAuth 
->   - windowsCoManagement 
+>   - Windows 10 Azure AD Join.
+>   - Windows 10 bulk Azure AD Join. 
+>   - Windows 10 Azure AD Join using Device Auth.
+>   - Windows 10 Co-Management triggered by AutoPilot or Group Policy.
 
 > [!TIP]
 > Key rotation feature will only work when:
