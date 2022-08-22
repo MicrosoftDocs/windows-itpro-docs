@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/10/2022
+ms.date: 08/22/2022
 ms.reviewer: 
 manager: dansimp
 ms.custom: sasr
@@ -28,7 +28,10 @@ Application Guard uses both network isolation and application-specific settings.
 
 ## Network isolation settings
 
-These settings, located at `Computer Configuration\Administrative Templates\Network\Network Isolation`, help you define and manage your organization's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container. <br/>**Note:** For Windows 10, if you have KB5014666 installed, and for Windows 11, if you have KB5014668 installed, you are no longer required to configure network isolation policy to enable Application Guard for Edge.
+These settings, located at `Computer Configuration\Administrative Templates\Network\Network Isolation`, help you define and manage your organization's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
+
+> [!NOTE]
+> For Windows 10, if you have KB5014666 installed, and for Windows 11, if you have KB5014668 installed, you don't need to configure network isolation policy to enable Application Guard for Microsoft Edge.
 
 > [!NOTE]
 > You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. Proxy servers must be a neutral resource listed in the **Domains categorized as both work and personal** policy.
