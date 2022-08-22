@@ -29,7 +29,40 @@ This article is specifically targeted at configuring devices enrolled to [Micros
 
 ## Create a configuration profile
 
-Take the following steps to create a configuration profile that will set required policies for Update Compliance:
+Take the following steps to create a configuration profile that will set required policies for Update Compliance.
+
+**Note:** There are two profile types that can be used to create an Update Compliance configuration profile, these being the settings catalog, or custom (OMA-URL). Below each of these profile types are covered.
+
+### Settings Catalog
+
+1. Go to the Admin portal in Endpoint Manager and navigate to **Devices/Windows/Configuration profiles**.
+1. On the **Configuration profiles** view, select **Create a profile**.
+1. Select **Platform**="Windows 10 and later" and **Profile type**="Settings Catalog", and then press **Create**.
+1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
+1. On the **Configuration settings** page, you'll be adding multiple settings from the System category
+ 
+    1. Using the Settings Picker, select the System category, then add the following settings and values:
+        - **Setting**: Allow Commercial Data Pipeline
+        - **Value**: Enabled        
+        - **Setting**: Allow device name to be sent in Windows diagnostic data (*optional setting if you wish to view device names in the UC logs)
+        - **Value**: Allowed
+        - **Setting**: Allow Telemetry
+        - **Value**: Basic (*all that is required is basic, but it can be safely set to a higher value*)
+        - **Setting**: Allow Update Compliance Processing
+        - **Value**: Enabled
+    1. (*Recommended, but not required*) Add a setting for **disabling devices' Diagnostic Data opt-in settings interface**. If this isn't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Update Compliance:
+        - **Setting**: Configure Telemetry Opt In Settings Ux
+        - **Value**: Disable Telemetry opt-in Settings.
+        - **Setting**: Configure Telemetry Opt In Change Notification
+        - **Value**: Disable telemetry change notifications.
+    1. (*Optional*) Include the device name in the Update Compliance logs data. If this isn't enabled, you will not be able to filter by device name in logs:
+        - **Setting**: Allow device name to be sent in Windows diagnostic data
+        - **Value**: Enabled
+
+1. Proceed through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
+1. Review and select **Create**.
+
+## Custom OMA URI based profile
 
 1. Go to the Admin portal in Endpoint Manager and navigate to **Devices/Windows/Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create a profile**.
@@ -66,6 +99,12 @@ Take the following steps to create a configuration profile that will set require
         - **Name**: Allow commercial data pipeline
         - **Description**: Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline`
+        - **Data type**: Integer
+        - **Value**: 1
+    1. (*Optional*) Include the device name in the Update Compliance logs data. If this isn't enabled, you will not be able to filter by device name in logs:
+        - **Name**: Allow Device Name In DiagnosticData
+        - **Description**: This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data. If you disable or don't configure this policy setting, then device name won't be sent to Microsoft as part of Windows diagnostic data.
+        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowDeviceNameInDiagnosticData`
         - **Data type**: Integer
         - **Value**: 1
 
