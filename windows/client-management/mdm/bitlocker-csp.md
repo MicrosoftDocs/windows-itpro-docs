@@ -1349,12 +1349,11 @@ Value type is string.
 Supported operation is Execute. Request ID is expected as a parameter.
 
 > [!NOTE]
-> Key rotation is supported only on these enrollment types:
+> Key rotation is supported only on these enrollment types. For more information, see [deviceEnrollmentType enum](/graph/api/resources/intune-devices-deviceenrollmenttype).
 >   - windowsAzureADJoin.
 >   - windowsBulkAzureDomainJoin. 
 >   - windowsAzureADJoinUsingDeviceAuth.
 >   - windowsCoManagement.
->   For more information, see [Device Enrollment Type](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-deviceenrollmenttype?view=graph-rest-1.0).
 
 > [!TIP]
 > Key rotation feature will only work when:
