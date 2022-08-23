@@ -61,8 +61,7 @@ Co-management enables you to concurrently manage Windows 10 or later devices by 
 
 | Result | Meaning |
 | ----- | ----- |
-| Advisory | To successfully enroll devices that are Co-Managed with Windows Autopatch, it is necessary that the following Co-Managed workloads are switched to Intune.
-:<ul><li>Device Configuration</li><li>Windows Update policies</li><li>Office 365 Client Apps</li></ul><p>Should co-management not apply to your tenant, this check can be safely disregarded and will not block deployment of devices.</p> |
+| Advisory | To successfully enroll devices that are co-managed with Windows Autopatch, the following co-managed workloads should be switched to Intune:<br><ul><li>Device Configuration</li><li>Windows update policies</li><li>Office 365 client apps</li></ul><p>Should co-management not apply to your tenant, this check can be safely disregarded and will not block the deployment of devices.</p> |
 
 ### Licenses
 
