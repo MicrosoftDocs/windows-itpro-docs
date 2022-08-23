@@ -22,7 +22,7 @@ Windows Autopatch will create a service principal in your tenant allowing the se
 
 ## Azure Active Directory groups
 
-Windows Autopatch will create Azure Active Directory groups that are required to operate the service. The following groups are used for targeting Windows Autopatch configurations to devices and management of the service by our service accounts.
+Windows Autopatch will create Azure Active Directory groups that are required to operate the service. The following groups are used for targeting Windows Autopatch configurations to devices and management of the service by our [first party enterprise applications](#windows-autopatch-enterprise-applications).
 
 | Group name | Description |
 | ----- | ----- |
@@ -37,10 +37,6 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 | Modern Workplace Devices Dynamic - Windows 11 | Microsoft Managed Desktop Devices with Windows 11<p>Group Rule:<ul><li>`(device.devicePhysicalIds -any _ -startsWith \"[OrderID]:Microsoft365Managed_\")`</li><li>`(device.deviceOSVersion -startsWith \"10.0.22000\")`</li></ul><br>Exclusions:<ul><li>Modern Workplace - Telemetry Settings for Windows 10</li></ul> |
 | Modern Workplace Roles - Service Administrator | All users granted access to Modern Workplace Service Administrator Role |
 | Modern Workplace Roles - Service Reader | All users granted access to Modern Workplace Service Reader Role |
-| Modern Workplace Service - Intune Admin All | Group for Intune Admins<p>Assigned to: <ul><li>Modern Workplace Service Accounts</li></ul>|
-| Modern Workplace Service - Intune Reader All | Group for Intune readers<p>Assigned to: <ul><li>Modern Workplace Service Accounts</li></ul>|
-| Modern Workplace Service - Intune Reader MMD | Group for Intune readers of MMD devices and users<p>Assigned to:<ul><li>Modern Workplace Service Accounts</li></ul>| 
-| Modern Workplace Service Accounts | Group for Windows Autopatch service accounts |
 | Windows Autopatch Device Registration | Group for automatic device registration for Windows Autopatch |
 
 ## Windows Autopatch enterprise applications
@@ -55,19 +51,6 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 > [!NOTE]
 > Enterprise application authentication is only available on tenants enrolled after July 9th, 2022. For tenants enrolled before this date, Enterprise Application authentication will be made available for enrollment soon.
-
-## Windows Autopatch cloud service accounts  
-
-Windows Autopatch will create three cloud service accounts in your tenant. These accounts are used to run the service and all need to be excluded from any multi-factor authentication controls.
-
-> [!NOTE]
-> Effective Aug 15th, 2022, these accounts will no longer be added to newly enrolled tenants, and existing tenants will be provided an option to migrate to enterprise application-based authentication. These accounts will be removed with that transition.
-
-| Cloud service account name | Usage | Mitigating controls |
-| ----- | ----- | ------ |
-| MsAdmin@tenantDomain.onmicrosoft.com | <ul><li>This account is a limited-service account with administrator privileges. This account is used as an Intune and User administrator to define and configure the tenant for Microsoft Modern desktop devices.</li><li>This account doesn't have interactive sign-in permissions.  The account performs operations only through the service.</li></ul> | Audited sign-ins |
-| MsAdminInt@tenantDomain.onmicrosoft.com | <ul><li>This account is an Intune and User administrator account used to define and configure the tenant for Modern Workplace devices.</li><li>This account is used for interactive sign-in to the customers’ tenant.</li><li>The use of this account is extremely limited as most operations are exclusively through msadmin (non-interactive).</li> | <ul><li>Restricted to be accessed only from defined secure access workstations (SAWs) through the Modern Workplace - Secure Workstation conditional access policy.</li><li>Audited sign-ins</li></ul> |
-| MsTest@tenantDomain.onmicrosoft.com | This is a standard account used as a validation account for initial configuration and roll out of policy, application, and device compliance settings. | Audited sign-ins |
 
 ## Device configuration policies
 
@@ -144,15 +127,6 @@ Windows Autopatch will create three cloud service accounts in your tenant. These
 | Modern Workplace - Edge Update ADMX Deployment | Deploys ADMX update policy for Edge<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
 | Modern Workplace - Edge Update Channel Stable | Deploys updates via the Edge Stable Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
 | Modern Workplace - Edge Update Channel Beta | Deploys updates via the Edge Beta Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test </li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
-
-## Conditional access policies
-
-> [!NOTE]
-> Effective Aug 15, 2022, the following policy will no longer be added to newly enrolled tenants, and existing tenants will be provided an option to migrate to enterprise application-based authentication. This policy will be removed with that transition.
-
-| Conditional access policy | Description |
-| ----- | ----- |
-| Modern Workplace - Secure Workstation | This policy is targeted to only the Windows Autopatch cloud service accounts. The policy blocks access to the tenant unless the user is accessing the tenant from a Microsoft authorized location. |
 
 ## PowerShell scripts
 
