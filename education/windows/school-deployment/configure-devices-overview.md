@@ -51,6 +51,8 @@ For more information, see:
 - [Manually add or remove users and devices to an existing assigned group][EDU-2]]
 - [Edit dynamic group rules to accommodate for new devices, locations, or school years][EDU-3]
 
+________________________________________________________
+
 ## Next steps
 
 With the groups created, you can configure policies and applications to deploy to your groups.

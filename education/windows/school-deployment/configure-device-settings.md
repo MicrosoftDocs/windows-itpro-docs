@@ -35,12 +35,19 @@ There are two ways to manage settings in Intune for Education:
 > [!NOTE]
 > Express Configuration is ideal when you are getting started. Settings are pre-configured to Microsoft-recommended values, but can be changed to fit your school's needs. It is recommended to use Express Configuration to initially set up your Windows devices.
 
+In this section you will:
+> [!div class="checklist"]
+> * Configure settings with Express Configuration
+> * Configure group settings
+> * Create Windows Update policies
+> * Configure security policies
+
 ## Configure settings with Express Configuration
 
 With Express Configuration, you can get Intune for Education up and running in just a few steps. You can select a group of devices or users, select applications to distribute, and choose settings from the most commonly used in schools.
 
 > [!TIP]
-> To learn more, and practice step-by-step Express Configuration in Intune for Education, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/deploy-apps-and-policies" target="_blank"><b>this interactive demo</b></a>.
+> To learn more, and practice step-by-step Express Configuration in Intune for Education, try <a href="https://www.microsoft.com/en-us/education/interactive-demos/deploy-apps-and-policies" target="_blank"><u>this interactive demo</u></a>.
 
 ## Configure group settings
 
@@ -77,7 +84,7 @@ For more information, see [Updates and upgrade][INT-6].
 > - [<u>What is Windows Update for Business?</u>][WIN-1]
 > - [<u>Manage Windows software updates in Intune</u>][MEM-1]
 
-## Endpoint security
+## Configure security policies
 
 It is critical to ensure that the devices you manage are secured using the different security technologies available in Windows.
 Intune for Education provides different settings to secure devices.
@@ -102,6 +109,8 @@ For more information, see [Security][INT-4].
 > - [<u>Endpoint detection and response</u>][MEM-5]
 > - [<u>Attack surface reduction</u>][MEM-6]
 > - [<u>Account protection</u>][MEM-7]
+
+________________________________________________________
 
 ## Next steps
 

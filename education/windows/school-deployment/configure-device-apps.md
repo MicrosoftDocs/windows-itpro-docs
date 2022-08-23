@@ -26,6 +26,12 @@ Applications can be assigned to groups:
 - If you target apps to a **group of users**, the apps will be installed on any managed devices that the users sign into
 - If you target apps to a **group of devices**, the apps will be installed on those devices and available to any user who signs in
 
+In this section you will:
+> [!div class="checklist"]
+> * Add apps to Intune for Education
+> * Assign apps to groups
+> * Review some considerations for Windows 11 SE devices
+
 ## Add apps to Intune for Education
 
 Intune for Education supports the deployment of two types of Windows applications: **web apps** and **desktop apps**.
@@ -73,6 +79,8 @@ The process to add Win32 applications to Intune is described in the article [Add
 > - Be sure the app is on the [<u>approved app list</u>][EDU-1]
 > - If you submitted a request to add your own app and it was approved, check that the app meets package requirements
 > - If the app is not approved, it will not run on Windows 11 SE. In this case, you will have to verify if the app can run in a web browser, such as a web app or PWA
+
+________________________________________________________
 
 ## Next steps
 
