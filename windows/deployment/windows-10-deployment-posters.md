@@ -19,9 +19,9 @@ The following posters step through various options for deploying Windows 10 with
 
 ## Deploy Windows 10 with Autopilot
 
-The Windows Autopilot poster is two pages in portrait mode (11x17). Click the image to view a PDF in your browser. You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
+The Windows Autopilot poster is two pages in portrait mode (11x17). Click the image to view a PDF in your browser. You can also download this poster in [PDF](https://download.microsoft.com/download/8/4/b/84b5e640-8f66-4b43-81a9-1c3b9ea18eda/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
 
-[![Deploy Windows 10 with Autopilot.](./media/windows10-autopilot-flowchart.png)](./media/Windows10AutopilotFlowchart.pdf)
+[![Deploy Windows 10 with Autopilot.](./media/windows10-autopilot-flowchart.png)](https://download.microsoft.com/download/8/4/b/84b5e640-8f66-4b43-81a9-1c3b9ea18eda/Windows10AutopilotFlowchart.pdf)
 
 ## Deploy Windows 10 with Microsoft Endpoint Configuration Manager
 
