@@ -17,7 +17,8 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Endpoint Manager](/mem/endpoint-manager-overview))***
 
 > [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 
 This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within Microsoft Endpoint Manager itself. Configuring devices for Update Compliance in Microsoft Endpoint Manager breaks down to the following steps:
@@ -36,13 +37,7 @@ Take the following steps to create a configuration profile that will set require
 1. For **Template name**, select **Custom**, and then press **Create**.
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
 1. On the **Configuration settings** page, you'll be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md).
-    1. If you don't already have it, get your Commercial ID. For steps, see [Get your CommmercialID](update-compliance-v2-enable.md#bkmk_id).
-    1. Add a setting for **Commercial ID** with the following values:
-        - **Name**: Commercial ID
-        - **Description**: Sets the Commercial ID that corresponds to the Update Compliance Log Analytics workspace.
-        - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID`
-        - **Data type**: String
-        - **Value**: *Set this value to your Commercial ID*
+ 
     1. Add a setting configuring the **Windows Diagnostic Data level** for devices:
         - **Name**: Allow Telemetry
         - **Description**: Sets the maximum allowed diagnostic data to be sent to Microsoft, required for Update Compliance.
