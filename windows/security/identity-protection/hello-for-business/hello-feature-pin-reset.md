@@ -234,70 +234,34 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 
 **Applies to:**
 
-- Windows 10, version 1803 or later
-- Windows 11
-- Azure AD joined
-
-The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that are allowed to be navigated to during PIN reset flows on Azure AD-joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
-
-### Configuring Policy Using Intune
-
-1. Sign-in to [Endpoint Manager admin center](https://endpoint.microsoft.com/) using a Global administrator account.
-
-1. Click **Devices**. Click **Configuration profiles**. Click **Create profile**.
-
-1. For Platform select **Windows 10 and later** and for Profile type select **Templates**. In the list of templates that is loaded, select **Custom** and click Create.
-
-1. In the **Name** field type **Web Sign In Allowed URLs** and optionally provide a description for the configuration. Click Next.
-
-1. On the Configuration settings page, click **Add** to add a custom OMA-URI setting. Provide the following information for the custom settings:
-
-    - **Name:** Web Sign In Allowed URLs
-    - **Description:** (Optional) List of domains that are allowed during PIN reset flows.
-    - **OMA-URI:** ./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls
-    - **Data type:** String
-    - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be _signin.contoso.com;portal.contoso.com_ (without quotation marks)
-
-    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
-
-1. Click the **Save** button to save the custom configuration.
-
-1. On the Assignments page, use the Included groups and Excluded groups sections to define the groups of users or devices that should receive this policy. Once you have completed configuring groups click the Next button.
-
-1. On the Applicability rules page, click **Next**.
-
-1. Review the configuration that is shown on the Review + create page to make sure that it is accurate. Click create to save the profile and apply it to the configured groups.
-
-### Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices
+- Azure AD joined devices
 
 The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that can be reached during PIN reset flows on Azure AD-joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
 
+### Configure Web Sign-in Allowed URLs using Microsoft Intune
 
-#### Configure Web Sign-in Allowed URLs using Microsoft Intune
-
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Select **Devices** > **Configuration profiles** > **Create profile**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
+1. Select **Devices** > **Configuration profiles** > **Create profile**
 1. Enter the following properties:
-    - **Platform**: Select **Windows 10 and later**.
-    - **Profile type**: Select **Templates**.
-    - In the list of templates that is loaded, select **Custom** > **Create**.
+    - **Platform**: Select **Windows 10 and later**
+    - **Profile type**: Select **Templates**
+    - In the list of templates that is loaded, select **Custom** > **Create**
 1. In **Basics**, enter the following properties:
-    - **Name**: Enter a descriptive name for the profile.
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-1. Select **Next**.
+    - **Name**: Enter a descriptive name for the profile
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended
+1. Select **Next**
 1. In **Configuration settings**, select **Add** and enter the following settings:
     - Name: **Web Sign In Allowed URLs**
     - Description: **(Optional) List of domains that are allowed during PIN reset flows**
     - OMA-URI: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`
     - Data type: **String**
-    - Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com** (without quotation marks).
+    - Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**
     :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist-expanded.png":::
-1. Select **Save** > **Next**.
-1. In **Assignments**, select the security groups that will receive the policy.
-1. Select **Next**.
-1. In **Applicability Rules**, select **Next**.
-1. In **Review + create**, review your settings and select **Create**.
-
+1. Select **Save** > **Next**
+1. In **Assignments**, select the security groups that will receive the policy
+1. Select **Next**
+1. In **Applicability Rules**, select **Next**
+1. In **Review + create**, review your settings and select **Create**
 
 > [!NOTE]
 > For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, "We can't open that page right now." The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
