@@ -14,6 +14,8 @@ ms.collection: highpri
 
 # Advanced troubleshooting for stop or blue screen errors
 
+<p class="alert is-flex is-primary"><span class="has-padding-left-medium has-padding-top-extra-small"><a class="button is-primary" href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=31806236" target='_blank'><b>Try our Virtual Agent</b></a></span><span class="has-padding-small"> - It can help you quickly identify and fix common Windows boot issues</span>
+
 > [!NOTE]
 > If you're not a support agent or IT professional, you'll find more helpful information about stop error ("blue screen") messages in [Troubleshoot blue screen errors](https://support.microsoft.com/sbs/windows/troubleshoot-blue-screen-errors-5c62726c-6489-52da-a372-3f73142c14ad).
 
