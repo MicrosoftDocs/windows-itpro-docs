@@ -42,15 +42,7 @@ The Set Up School PCs app guides you through configuration choices for school-ow
 
 Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
 
-For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][1].
-
-### Enroll devices with the provisioning package
-
-To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and automatically enroll in Intune.
-
-:::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package" border="false":::
-
-For more information, see [Run package - Install package on PC][EDU-1].
+For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][EDU-1].
 
 > [!TIP]
 > To learn more and practice with Set up School PCs, try the <a href="https://www.microsoft.com/en-us/education/interactive-demos/enroll-devices-at-scale" target="_blank"><u>Set Up School PCs demo</u></a>, which provides detailed steps to create a provisioning package and deploy a device.
@@ -61,6 +53,12 @@ Windows Configuration Designer is especially useful in scenarios where a school 
 :::image type="content" source="./images/wcd.png" alt-text="Set up device page in Windows Configuration Designer" border="false":::
 
 For more information, see [Install Windows Configuration Designer][WIN-1], which provides details about the app, its provisioning process, and considerations for its use.
+
+## Enroll devices with the provisioning package
+
+To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and automatically enroll in Intune.
+
+:::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package" border="false":::
 
 ________________________________________________________
 ## Next steps
