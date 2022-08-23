@@ -43,8 +43,6 @@ The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager
 > [!IMPORTANT]
 > If you don't see the Tenant enrollment blade, this is because you don't meet the prerequisites or the proper licenses. For more information, see [Windows Autopatch prerequisites](windows-autopatch-prerequisites.md#more-about-licenses).
 
-A Global Administrator should be used to run this tool. Other roles, such as the Global Reader and Intune Administrator have insufficient permissions to complete the checks on Conditional Access Policies and Multi-factor Authentication. For more information about the extra permissions, see [Conditional access policies](../prepare/windows-autopatch-fix-issues.md#conditional-access-policies).
-
 The Readiness assessment tool checks the following settings:
 
 ### Microsoft Intune settings
