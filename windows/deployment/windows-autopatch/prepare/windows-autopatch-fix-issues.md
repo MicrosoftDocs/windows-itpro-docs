@@ -55,7 +55,7 @@ Your "Windows 10 update ring" policy in Intune must not target any Windows Autop
 
 You can access Azure Active Directory (AD) settings in the [Azure portal](https://portal.azure.com/).
 
-### Co-Management
+### Co-management
 
 Co-management enables you to concurrently manage Windows 10 or later devices by using both Configuration Manager and Microsoft Intune.
 
