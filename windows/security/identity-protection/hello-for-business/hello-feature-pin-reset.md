@@ -268,11 +268,6 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 
 1. Review the configuration that is shown on the Review + create page to make sure that it is accurate. Click create to save the profile and apply it to the configured groups.
 
-### Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices
-
-The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that can be reached during PIN reset flows on Azure AD-joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
-
-
 #### Configure Web Sign-in Allowed URLs using Microsoft Intune
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
