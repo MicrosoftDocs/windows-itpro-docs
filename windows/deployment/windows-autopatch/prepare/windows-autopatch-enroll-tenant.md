@@ -62,7 +62,7 @@ The following are the Azure Active Directory settings:
 
 | Check | Description |
 | ----- | ----- |
-| Co-Management | Advisory only check if co-management is applicable, to ensure the proper workloads are in place for Windows Autopatch. Should co-management not apply to your tenant, this check can be safely disregarded and will not block deployment of devices. |
+| Co-management | Advisory only checks if co-management is applicable to ensure that the proper workloads are in place for Windows Autopatch. Should co-management not apply to your tenant, this check can be safely disregarded and will not block the deployment of devices. |
 | Licenses | Checks that you've obtained the necessary [licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
 
 ### Check results
