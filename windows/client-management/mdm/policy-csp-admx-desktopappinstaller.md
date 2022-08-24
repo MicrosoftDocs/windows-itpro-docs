@@ -65,9 +65,9 @@ manager: aaroncz
 <!--Description-->
 This policy controls additional sources configured for [Windows Package Manager](/windows/package-manager/).
 
-If you do not configure this setting, no additional sources will be configured for Windows Package Manager.
+If you don't configure this setting, no additional sources will be configured for Windows Package Manager.
 
-If you enable this setting, additional sources will be added to Windows Package Manager and cannot be removed. The representation for each additional source can be obtained from installed sources using [*winget source export*](/windows/package-manager/winget/).
+If you enable this setting, additional sources will be added to Windows Package Manager, and can't be removed. The representation for each additional source can be obtained from installed sources using [*winget source export*](/windows/package-manager/winget/).
 
 If you disable this setting, no additional sources can be configured by the user for Windows Package Manager.
 
