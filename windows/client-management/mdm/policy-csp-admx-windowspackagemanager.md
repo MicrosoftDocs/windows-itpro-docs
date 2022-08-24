@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - ADMX_WindowsPackageManager
 description: Learn about the Policy CSP - ADMX_WindowsPackageManager.
-ms.author: aljupudi
+ms.author: v-aljupudi
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: aljupudi
+author: alekyaj
 ms.date: 08/24/2022
 ms.reviewer: 
 manager: aaroncz
