@@ -1,6 +1,6 @@
 ---
-title: Policy CSP - ADMX_WindowsPackageManager
-description: Learn about the Policy CSP - ADMX_WindowsPackageManager.
+title: Policy CSP - ADMX_DesktopAppInstaller
+description: Learn about the Policy CSP - ADMX_DesktopAppInstaller.
 ms.author: v-aljupudi
 ms.localizationpriority: medium
 ms.topic: article
@@ -12,7 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ---
 
-# Policy CSP - ADMX_WindowsPackageManager
+# Policy CSP - ADMX_DesktopAppInstaller
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -24,11 +24,11 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_WindowsPackageManager policies  
+## ADMX_DesktopAppInstaller policies  
 
 <dl>
   <dd>
-    <a href="#admx-windowspackagemanager-enableadditionalsources">ADMX_WindowsPackageManager/EnableAdditionalSources</a>
+    <a href="#admx-desktopappinstaller-enableadditionalsources">ADMX_DesktopAppInstaller/EnableAdditionalSources</a>
   </dd>
 </dl>
 
@@ -36,7 +36,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowspackagemanager-enableadditionalsources"></a>**ADMX_WindowsPackageManager/EnableAdditionalSources**  
+<a href="" id="admx-desktopappinstaller-enableadditionalsources"></a>**ADMX_DesktopAppInstaller/EnableAdditionalSources**  
 
 <!--SupportedSKUs-->
 
@@ -63,11 +63,11 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy controls additional sources approved for users to configure using [Windows Package Manager](/windows/package-manager/).
+This policy controls additional sources configured for [Windows Package Manager](/windows/package-manager/).
 
-If you don't configure this setting, users will be able to add or remove additional sources other than the ones that are configured by policy.
+If you do not configure this setting, no additional sources will be configured for Windows Package Manager.
 
-If you enable this setting, only the sources specified can be added or removed from Windows Package Manager. The representation for each allowed source can be obtained from installed sources using [*winget source export*](/windows/package-manager/winget/).
+If you enable this setting, additional sources will be added to Windows Package Manager and cannot be removed. The representation for each additional source can be obtained from installed sources using [*winget source export*](/windows/package-manager/winget/).
 
 If you disable this setting, no additional sources can be configured by the user for Windows Package Manager.
 
