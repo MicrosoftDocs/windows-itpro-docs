@@ -65,7 +65,7 @@ manager: aaroncz
 <!--Description-->
 This policy controls additional sources approved for users to configure using [Windows Package Manager](/windows/package-manager/).
 
-If you do not configure this setting, users will be able to add or remove additional sources other than those configured by policy.
+If you don't configure this setting, users will be able to add or remove additional sources other than the ones that are configured by policy.
 
 If you enable this setting, only the sources specified can be added or removed from Windows Package Manager. The representation for each allowed source can be obtained from installed sources using [*winget source export*](/windows/package-manager/winget/).
 
