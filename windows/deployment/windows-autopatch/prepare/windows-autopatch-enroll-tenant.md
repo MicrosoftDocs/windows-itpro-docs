@@ -14,7 +14,7 @@ msreviewer: hathind
 
 # Enroll your tenant
 
-Before you enroll in Windows Autopatch, there are settings and other parameters you must set ahead of time.
+Before you enroll in Windows Autopatch, there are settings, and other parameters you must set ahead of time.
 
 > [!IMPORTANT]
 > You must be a Global Administrator to enroll your tenant.
@@ -30,7 +30,7 @@ To start using the Windows Autopatch service, ensure you meet the [Windows Autop
 > [!IMPORTANT]
 > The online Readiness assessment tool helps you check your readiness to enroll in Windows Autopatch for the first time. Once you enroll, you'll no longer be able to access the  tool again.
 
-The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager](#microsoft-intune-settings) (specifically, Microsoft Intune) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager Co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
+The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager](#microsoft-intune-settings) (specifically, Microsoft Intune) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
 
 **To access and run the Readiness assessment tool:**
 
@@ -42,8 +42,6 @@ The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager
 
 > [!IMPORTANT]
 > If you don't see the Tenant enrollment blade, this is because you don't meet the prerequisites or the proper licenses. For more information, see [Windows Autopatch prerequisites](windows-autopatch-prerequisites.md#more-about-licenses).
-
-A Global Administrator should be used to run this tool. Other roles, such as the Global Reader and Intune Administrator have insufficient permissions to complete the checks on Conditional Access Policies and Multi-factor Authentication. For more information about the extra permissions, see [Conditional access policies](../prepare/windows-autopatch-fix-issues.md#conditional-access-policies).
 
 The Readiness assessment tool checks the following settings:
 
@@ -62,9 +60,7 @@ The following are the Azure Active Directory settings:
 
 | Check | Description |
 | ----- | ----- |
-| Conditional access | Verifies that conditional access policies and multi-factor authentication aren't assigned to all users.<p><p>Your conditional access policies must not prevent our service accounts from accessing the service and must not require multi-factor authentication. For more information, see [Conditional access policies](../prepare/windows-autopatch-fix-issues.md#conditional-access-policies). |
-| Windows Autopatch cloud service accounts | Checks that no usernames conflict with ones that Windows Autopatch reserves for its own use. The cloud service accounts are:<ul><li>MsAdmin</li><li>MsAdminInt</li><li>MsTest</li></ul> For more information, see [Tenant access](../references/windows-autopatch-privacy.md#tenant-access). |
-| Security defaults | Checks whether your Azure Active Directory organization has security defaults enabled. |
+| Co-management |  This advisory check only applies if co-management is applied to your tenant. This check ensures that the proper workloads are in place for Windows Autopatch. If co-management doesn't apply to your tenant, this check can be safely disregarded, and won't block device deployment. |
 | Licenses | Checks that you've obtained the necessary [licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
 
 ### Check results
