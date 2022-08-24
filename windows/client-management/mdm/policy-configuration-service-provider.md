@@ -5173,6 +5173,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_WindowsPackageManager policies 
+<dl>
+  <dd>
+    <a href="/policy-csp-admx-windowspackagemanager.md#admx-windowspackagemanager-enableadditionalsources" id="admx-windowspackagemanager-enableadditionalsources">ADMX_WindowsPackageManager/EnableAdditionalSources</a>
+  </dd>
+</dl>
+
 ### ADMX_WindowsRemoteManagement policies  
 
 <dl>

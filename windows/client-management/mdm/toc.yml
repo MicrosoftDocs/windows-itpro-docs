@@ -617,6 +617,8 @@ items:
                 href: policy-csp-admx-windowsmediadrm.md
               - name: ADMX_WindowsMediaPlayer
                 href: policy-csp-admx-windowsmediaplayer.md
+              - name: ADMX_WindowsPackageManager
+                href: policy-csp-admx-windowspackagemanager.md
               - name: ADMX_WindowsRemoteManagement
                 href: policy-csp-admx-windowsremotemanagement.md
               - name: ADMX_WindowsStore
