@@ -1,5 +1,5 @@
 ---
-title: Themes for Windows 11 SE
+title: Education themes for Windows 11 SE
 description: Description of education themes for Windows 11 SE and how to configure them via MDM
 ms.date: 09/15/2022
 ms.prod: windows
@@ -17,7 +17,7 @@ appliesto:
 
 # Configure education themes for Windows 11 SE
 
-**Windows 11 SE**, **version 22H2** introduces a capability to deploy education themes to your devices.
+Starting in **Windows 11 SE, version 22H2**, you can deploy education themes to your devices.
 
 :::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
 
