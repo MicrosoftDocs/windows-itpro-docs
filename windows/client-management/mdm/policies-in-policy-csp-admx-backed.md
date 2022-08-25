@@ -1559,6 +1559,7 @@ ms.date: 10/08/2020
 - [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 - [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+- [DesktopAppInstaller/EnableAdditionalSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources)
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdeviceids)
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdevicesetupclasses)
 - [DeviceInstallation/PreventDeviceMetadataFromNetwork](./policy-csp-deviceinstallation.md#deviceinstallationpreventdevicemetadatafromnetwork)
