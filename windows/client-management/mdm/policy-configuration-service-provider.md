@@ -3729,6 +3729,15 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-admx-start.md#admx-start-disablecontrolcenter" id="admx-start-disablecontrolcenter">ADMX_Start/DisableControlCenter</a>
+  </dd>
+  <dd>
+</dl>
+
+### ADMX_StartMenu policies  
+
+<dl>
+  <dd>
     <a href="./policy-csp-admx-startmenu.md#admx-startmenu-addsearchinternetlinkinstartmenu" id="admx-startmenu-addsearchinternetlinkinstartmenu">ADMX_StartMenu/AddSearchInternetLinkInStartMenu</a>
   </dd>
   <dd>
