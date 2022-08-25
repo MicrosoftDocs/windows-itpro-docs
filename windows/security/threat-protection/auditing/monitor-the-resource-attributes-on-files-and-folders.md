@@ -21,7 +21,7 @@ ms.technology: windows-sec
 # Monitor the resource attributes on files and folders
 
 
-This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you are using advanced security auditing options to monitor dynamic access control objects.
+This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you're using advanced security auditing options to monitor dynamic access control objects.
 
 If your organization has a carefully thought out authorization configuration for resources, changes to these resource attributes can create potential security risks. Examples include:
 

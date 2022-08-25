@@ -67,7 +67,7 @@ To defend against this, two techniques are used:
  - Paging protection to prevent inappropriate access to code and data
  - SMM hardware supervision and attestation
 
-Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that has not been assigned. 
+Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that hasn't been assigned. 
 
 A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it doesn't access any part of the address space that it isn't supposed to. 
 

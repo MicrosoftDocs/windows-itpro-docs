@@ -1,43 +1,36 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business Trust New Installation (Windows Hello for Business)
 description: Learn about new installations for Windows Hello for Business certificate trust and the various technologies hybrid certificate trust deployments rely on.
-keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust New Installation
 
-**Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Certificate trust
-
-
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technologies
 
-* [Active Directory](#active-directory)
-* [Public Key Infrastructure](#public-key-infrastructure)
-* [Azure Active Directory](#azure-active-directory)
-* [Multifactor Authentication Services](#multifactor-authentication-services)
-
+- [Active Directory](#active-directory)
+- [Public Key Infrastructure](#public-key-infrastructure)
+- [Azure Active Directory](#azure-active-directory)
+- [Multifactor Authentication Services](#multifactor-authentication-services)
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  This document expects you have Active Directory deployed using Windows Server 2008 R2 or later domain controllers.
 
 ## Active Directory ##   
+
 Production environments should follow Active Directory best practices regarding the number and placement of domain controllers to ensure adequate authentication throughout the organization.
   
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.

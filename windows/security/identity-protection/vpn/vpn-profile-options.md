@@ -1,25 +1,19 @@
 ---
 title: VPN profile options (Windows 10 and Windows 11)
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
-ms.assetid: E3F99DF9-863D-4E28-BAED-5C1B1B913523
-ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
-ms.author: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: pesmith
 ms.localizationpriority: medium
 ms.date: 05/17/2018
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # VPN profile options
-
-**Applies to**
-
--   Windows 10
--   Windows 11
 
 Most of the VPN settings in Windows 10 and Windows 11 can be configured in VPN profiles using Microsoft Intune or Microsoft Endpoint Configuration Manager. All VPN settings in Windows 10 and Windows 11 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](/windows/client-management/mdm/vpnv2-csp). 
 
@@ -50,7 +44,7 @@ The following table lists the VPN settings and whether the setting can be config
 > [!NOTE] 
 > VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections, the general proxy settings are used.
 
-The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This node is useful for deploying profiles with features that are not yet supported by MDMs. You can get more examples in the [ProfileXML XSD](/windows/client-management/mdm/vpnv2-profile-xsd) article.
+The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This node is useful for deploying profiles with features that aren't yet supported by MDMs. You can get more examples in the [ProfileXML XSD](/windows/client-management/mdm/vpnv2-profile-xsd) article.
 
 
 ## Sample Native VPN profile

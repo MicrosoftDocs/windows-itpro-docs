@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/application-management/manage-windows-mixed-reality.md",
+      "redirect_url": "/windows/mixed-reality/enthusiast-guide/manage-windows-mixed-reality",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/client-management/mdm/browserfavorite-csp.md",
       "redirect_url": "https://support.microsoft.com/windows/windows-phone-8-1-end-of-support-faq-7f1ef0aa-0aaf-0747-3724-5c44456778a3",
       "redirect_document_id": false  
@@ -2577,12 +2582,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/use-custom-ti",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
@@ -5167,7 +5172,7 @@
     },
     {
       "source_path": "windows/device-security/security-compliance-toolkit-10.md",
-      "redirect_url": "/windows/security/threat-protection/security-compliance-toolkit-10",
+      "redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10",
       "redirect_document_id": false
     },
     {
@@ -6507,8 +6512,8 @@
     },
     {
       "source_path": "windows/access-protection/access-control/dynamic-access-control.md",
-      "redirect_url": "/windows/security/identity-protection/access-control/dynamic-access-control",
-      "redirect_document_id": false
+      "redirect_url": "/windows-server/identity/solution-guides/dynamic-access-control-overview",
+      "redirect_document_id": true
     },
     {
       "source_path": "windows/access-protection/access-control/local-accounts.md",
@@ -13342,7 +13347,7 @@
     },
     {
       "source_path": "windows/keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
@@ -19289,13 +19294,11 @@
       "source_path": "windows/client-management/mdm/policy-csp-admx-windowsanytimeupgrade.md",
       "redirect_url": "/windows/client-management/mdm/policy-csp-admx-wordwheel",
       "redirect_document_id": true
-        
     }, 
     {
     "source_path": "windows/client-management/mdm/policy-csp-admx-windowsfileprotection.md",
     "redirect_url": "/windows/client-management/mdm/policy-csp-admx-mobilepcpresentationsettings",
     "redirect_document_id": true
-  
     }, 
     {
      "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
@@ -19331,6 +19334,311 @@
      "source_path": "windows/whats-new/windows-11-whats-new.md",
      "redirect_url": "/windows/whats-new/windows-11-overview",
      "redirect_document_id": false
-    }
+    },
+    { 
+     "source_path": "windows/deployment/update/waas-delivery-optimization.md",
+     "redirect_url": "/windows/deployment/do/waas-delivery-optimization",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/delivery-optimization-proxy.md",
+     "redirect_url": "/windows/deployment/do/delivery-optimization-proxy",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/delivery-optimization-workflow.md",
+     "redirect_url": "/windows/deployment/do/delivery-optimization-workflow",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/waas-delivery-optimization-reference.md",
+     "redirect_url": "/windows/deployment/do/waas-delivery-optimization-reference",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/waas-delivery-optimization-setup.md",
+     "redirect_url": "/windows/deployment/do/waas-delivery-optimization-setup",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/waas-optimize-windows-10.md",
+     "redirect_url": "/windows/deployment/do/waas-optimize-windows-10",
+     "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/coinminer-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/coinminer-malware",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/coordinated-malware-eradication.md",
+      "redirect_url": "/microsoft-365/security/intelligence/coordinated-malware-eradication",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/criteria.md",
+      "redirect_url": "/microsoft-365/security/intelligence/criteria",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/cybersecurity-industry-partners.md",
+      "redirect_url": "/microsoft-365/security/intelligence/cybersecurity-industry-partners",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/developer-faq.yml",
+      "redirect_url": "/microsoft-365/security/intelligence/developer-faq",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/developer-resources.md",
+      "redirect_url": "/microsoft-365/security/intelligence/developer-resources",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/exploits-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/exploits-malware",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/fileless-threats.md",
+      "redirect_url": "/microsoft-365/security/intelligence/fileless-threats",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/macro-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/macro-malware",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/malware-naming.md",
+      "redirect_url": "/microsoft-365/security/intelligence/malware-naming",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/phishing-trends.md",
+      "redirect_url": "/microsoft-365/security/intelligence/phishing-trends",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/phishing.md",
+      "redirect_url": "/microsoft-365/security/intelligence/phishing",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/portal-submission-troubleshooting.md",
+      "redirect_url": "/microsoft-365/security/intelligence/portal-submission-troubleshooting",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/prevent-malware-infection.md",
+      "redirect_url": "/microsoft-365/security/intelligence/prevent-malware-infection",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/rootkits-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware.md",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/safety-scanner-download.md",
+      "redirect_url": "/microsoft-365/security/intelligence/safety-scanner-download",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/submission-guide.md",
+      "redirect_url": "/microsoft-365/security/intelligence/submission-guide",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/supply-chain-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/supply-chain-malware",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/support-scams.md",
+      "redirect_url": "/microsoft-365/security/intelligence/support-scams",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/trojans-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/trojans-malware",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/understanding-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/understanding-malware",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/unwanted-software.md",
+      "redirect_url": "/microsoft-365/security/intelligence/unwanted-software",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/virus-information-alliance-criteria.md",
+      "redirect_url": "/microsoft-365/security/intelligence/virus-information-alliance-criteria",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/virus-initiative-criteria.md",
+      "redirect_url": "/microsoft-365/security/intelligence/virus-initiative-criteria",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/worms-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/worms-malware",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-bug-bounty-program.md",
+      "redirect_url": "/microsoft-365/security/intelligence/microsoft-bug-bounty-program",
+      "redirect_document_id": false  
+    },
+    { 
+     "source_path": "windows/deployment/update/waas-microsoft-connected-cache.md",
+     "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
+     "redirect_document_id": false
+    },
+    { 
+     "source_path": "education/itadmins.yml",
+     "redirect_url": "/education",
+     "redirect_document_id": false
+    },
+    { 
+     "source_path": "education/partners.yml",
+     "redirect_url": "/education",
+     "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/security-compliance-toolkit-10.md",
+      "redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-docs-pr/windows/client-management/mdm/remotering-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/remotering-ddf-file.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+    },
+    { 
+     "source_path": "education/developers.yml",
+     "redirect_url": "/education",
+     "redirect_document_id": false
+    },
+    { 
+      "source_path": "windows/client-management/mdm/enterpriseappmanagement-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     { 
+      "source_path": "windows/client-management/mdm/messaging-ddf.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     { 
+      "source_path": "windows/client-management/mdm/messaging-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     { 
+      "source_path": "windows/client-management/mdm/policymanager-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     }, 
+     { 
+      "source_path": "windows/client-management/mdm/proxy-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/client-management/img-boot-sequence.md",
+      "redirect_url": "/windows/client-management/advanced-troubleshooting-boot-problems#boot-sequence",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-11-image-using-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "education/windows/get-minecraft-device-promotion.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-group-policy.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-group-policy",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "smb/cloud-mode-business-setup.md",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/bg-p/Microsoft365BusinessBlog",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "smb/index.md",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/bg-p/Microsoft365BusinessBlog",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/whats-new/contribute-to-a-topic.md",
+      "redirect_url": "https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/CONTRIBUTING.md#editing-windows-it-professional-documentation",
+      "redirect_document_id": false
+     },
+	 {
+      "source_path": "windows/deployment/update/waas-delivery-optimization-faq.md",
+      "redirect_url": "/windows/deployment/do/waas-delivery-optimization-faq",
+      "redirect_document_id": false
+	 },
+     {
+      "source_path": "windows/security/identity-protection/access-control/security-identifiers.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-security-identifiers",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/security-principals.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-security-principals",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/active-directory-accounts.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-default-user-accounts",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/microsoft-accounts.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-microsoft-accounts",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/service-accounts.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-service-accounts",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/active-directory-security-groups.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-security-groups",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/special-identities.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-special-identities-groups",
+      "redirect_document_id": false
+     },
+     {
+     "source_path": "windows/security/identity-protection/access-control/dynamic-access-control.md",
+     "redirect_url": "/windows-server/identity/solution-guides/dynamic-access-control-overview",
+     "redirect_document_id": false
+     }
   ]
 }
