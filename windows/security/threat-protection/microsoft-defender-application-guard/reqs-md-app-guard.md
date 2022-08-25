@@ -31,6 +31,9 @@ The threat landscape is continually evolving. While hackers are busy developing 
 
 Your environment must have the following hardware to run Microsoft Defender Application Guard.
 
+> [!NOTE]
+> Application Guard is currently not supported on ARM64 platform. Support will be added soon
+
 | Hardware | Description |
 |--------|-----------|
 | 64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
