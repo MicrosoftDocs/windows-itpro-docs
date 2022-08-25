@@ -13,7 +13,7 @@ manager: aaroncz
 ms.collection: education
 #appliesto:
 ---
-## New expectations for education technology
+# New expectations for education technology
 
 Microsoft 365 solutions for Education empower education professionals to unlock creativity, promote teamwork, and provide a safe experience for everyone—all in a comprehensive and affordable cloud offering.
 
@@ -28,6 +28,6 @@ Microsoft addresses expectations for modern device management in school environm
 - **Simplify deployment and management.** End-to-end guidance and support from Microsoft and partners can help schools streamline both deployment and cloud migration. With Intune for Education and Surface SE devices, education professionals can deploy apps to users and apply device settings that create a great classroom experience in just a few simple steps.
 - **Cost-effective remote management.** Intune for Education enables a modern IT environment, complete with remote management, with pre-defined school settings. This helps to provide reduced and more predictable IT costs, along with better performance, availability, and security. Intune for Education also enables a predictable and stable *Software as a Service* (SaaS) model, which eliminates spending spikes from upgrading hardware and software.
 
-# The powerful simplicity of Microsoft education technology
+## The powerful simplicity of Microsoft education technology
 
 Our innovative approach to education technology is built on the idea of *powerful simplicity* and combines the unparalleled user experience and security features of Surface Laptop Student Edition (SE), Windows 11 SE, and Microsoft 365 Education. Students can unlock learning and develop new skills with Surface Laptop SE, which seamlessly runs Windows 11 SE—our cloud-first operating system—and Microsoft 365 Education. Surface Laptop SE comes preloaded with widely used application like Microsoft Teams, Word, PowerPoint, Excel, and OneNote, so students are ready to learn right from the start. Teachers will appreciate how easy it is to develop and deploy their lessons and enrichment experiences. IT administrators will save time and money with Microsoft Intune, a comprehensive modern device management solution.
