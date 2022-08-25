@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/application-management/manage-windows-mixed-reality.md",
+      "redirect_url": "/windows/mixed-reality/enthusiast-guide/manage-windows-mixed-reality",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/client-management/mdm/browserfavorite-csp.md",
       "redirect_url": "https://support.microsoft.com/windows/windows-phone-8-1-end-of-support-faq-7f1ef0aa-0aaf-0747-3724-5c44456778a3",
       "redirect_document_id": false  
