@@ -18,7 +18,10 @@ appliesto:
 
 # Device reset
 
-When a device is lost, stolen, or needs to be replaced, or when a user moves to another position, it is usually time to wipe or reset the device. There are several ways you can do this—including resetting the device, removing it from management, or wiping the personal and school data on it. In scenarios where a device needs to be exchanged or returned, additional steps are required to prepare the device and then send it for repair. With Intune, IT administrators can remotely execute all these actions for device reset. 
+When a device is lost, stolen, or needs to be replaced, or when a user moves to another position, it is usually time to wipe or reset the device. There are several ways you can do this—including resetting the device, removing it from management, or wiping the personal and school data on it. In scenarios where a device needs to be exchanged or returned, additional steps are required to prepare the device and then send it for repair. With Intune, IT administrators can remotely execute all these actions for device reset.
+
+
+:::image type="content" source="./images/retire.png" alt-text="The device lifecycle for Intune-managed devices - retire devices" border="false":::
 
 ## Resetting a device
 
@@ -80,3 +83,17 @@ To delete devices that are enrolled in Intune:
 1. Follow the steps outlined in [Delete devices from the Azure Active Directory portal](/mem/intune/remote-actions/devices-wipe).
 
 ## ADD PIC HERE Device and account deletion page in Azure Active Directory admin center
+
+
+## Autopilot motherboard replacement
+
+Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
+
+1. [Deregister the device](/mem/autopilot/autopilot-mbr) from Autopilot.
+1. [Replace the motherboard](/mem/autopilot/autopilot-mbr).
+1. [Capture a new device ID (4K HH)](/mem/autopilot/autopilot-mbr).
+1. [Reregister the device](/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
+1. [Reset the device](/mem/autopilot/autopilot-mbr).
+1. [Return the device](/mem/autopilot/autopilot-mbr).
+
+For more information, see [Autopilot motherboard replacement scenario guidance](/mem/autopilot/autopilot-mbr).

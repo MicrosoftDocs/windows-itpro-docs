@@ -14,6 +14,7 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Device inventory and reporting
@@ -37,28 +38,3 @@ Autopilot deployment
 
 3. If needed, use the search box to find specific devices, applications, and settings.
 1. To download a report, select **Download**. The report will download as a comma-separated value (CSV) file, which you can view and modify in a spreadsheet app like Microsoft Excel.
-
-
-### Windows and cloud security
-
-Security extends from hardened firmware to the operating system through cloud management. You can manage devices with just a few clicks; control mics, USB ports, and Bluetooth; disable webcams; lock the operating system when the laptop is closed; and control physical access using the integrated Kensington Nano Security Slot.
-
-### Windows Update for Business
-
-Windows Update for Business enables you to keep the Windows client devices in your school always up to date with the latest security defenses and Windows features. To do this, you directly connect these systems to the Windows Update service. For more information, see [Windows Update for Business](/windows/deployment/update/waas-configure-wufb). 
-
-### Microsoft Defender for Endpoint
-
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help networks prevent, detect, investigate, and respond to advanced threats. You can use Defender for Endpoint to help secure your entire school network. For more information, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](/microsoft-365/security/defender-endpoint/onboard-configure).
-
-### Microsoft Intelligent Security Graph
-
-Microsoft Intelligent Security Graph (ISG) offers application control with a tool that provides an option to automatically enable apps that ISG recognizes as having a known good reputation. Using ISG can help reduce the amount of time spent on complex application control processes. For more information, see [Microsoft ISG](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph).
-
-### Microsoft Endpoint Manager and DFCI support
-
-With DFCI profiles built into Intune for Education, Surface UEFI management extends the modern management stack to the UEFI hardware level. With DFCI profiles, you can dramatically simplify IT deployment and provisioning across the device'''s lifecycle—all from the cloud. DFCI management requires the device to be enrolled with Windows Autopilot and be registered by a partner or OEM. For more information, see [Manage DFCI on Surface devices](/surface/surface-manage-dfci-guide).
-
-### Microsoft Defender SmartScreen
-
-Microsoft Defender SmartScreen helps to protect students from phishing or malware websites and apps, and from downloading potentially malicious files. Microsoft Defender SmartScreen comes preinstalled on all Surface Laptop SE devices and adds another layer of protection against malicious activity. For more information, see [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).

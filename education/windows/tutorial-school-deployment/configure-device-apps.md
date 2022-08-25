@@ -75,7 +75,7 @@ The process to add Win32 applications to Intune is described in the article [Add
 > If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><u>Microsoft Education Support</u></a>.
 
 > [!CAUTION]
-> If you assign an app to a device running Windows 11 SE and receive the **0x87D300D9** error code with a **Failed** state:
+> If you assign an app to a device running **Windows 11 SE** and receive the **0x87D300D9** error code with a **Failed** state:
 > - Be sure the app is on the [<u>approved app list</u>][EDU-1]
 > - If you submitted a request to add your own app and it was approved, check that the app meets package requirements
 > - If the app is not approved, it will not run on Windows 11 SE. In this case, you will have to verify if the app can run in a web browser, such as a web app or PWA
