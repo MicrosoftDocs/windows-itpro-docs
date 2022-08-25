@@ -1,0 +1,74 @@
+---
+title: Themes for Windows 11 SE
+description: Description of education themes for Windows 11 SE and how to configure them via MDM
+ms.date: 09/15/2022
+ms.prod: windows
+ms.technology: windows
+ms.topic: how-to
+ms.localizationpriority: medium
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer:
+manager: aaroncz
+ms.collection: education
+appliesto:
+- ✅ <b>Windows 11 SE 22H2</b>
+---
+
+# Configure education themes for Windows 11 SE
+
+**Windows 11 SE**, **version 22H2** introduces a capability to deploy education themes.
+
+:::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
+
+Stickers are simple to use, and give students an easy way to express themselves by decorating their desktop, helping to make learning fun.
+
+## Benefits of Stickers
+
+When students feel like they can express themselves at school, they come ready to pay attention and learn, which benefits students, teachers, and the school community.  
+When students feel like their device is their own, they take better care of it, and it's more likely to last.
+
+## Enable Stickers
+
+Education themes are not enabled by default on Windows 11 SE. IT administrators can configure devices to download the education themes using Microsoft Intune.
+
+1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Select **Devices** > **Configuration profiles** > **Create profile**
+1. Enter the following properties:
+    - **Platform**: select **Windows 10 and later**
+    - **Profile type**: select **Templates**
+    - **Template name**: select **Custom**
+1. Select **Create**
+1. In **Basics**, enter the following properties:
+    - **Name**: enter a descriptive name for the profile
+    - **Description**: enter a description for the profile. This setting is optional, but recommended
+1. Select **Next**
+1. In **Configuration settings**, select **Add**
+1. In **Add Row**, enter the following properties:
+    - **Name**: enter **EnableEduThemes**
+    - OMA-URI: `./Vendor/MSFT/Policy/Config/Stickers/EnableEduThemes`
+    - Data type: **Integer**
+    - Value: **1**
+1. Select **Save**
+1. Select **Add**
+1. In **Add Row**, enter the following properties:
+    - **Name**: enter **IsEducationEnvironment**
+    - OMA-URI: `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`
+    - Data type: **Integer**
+    - Value: **1**
+1. Select **Save**
+1. Select **Next**
+1. In **Scope tags**, assign any applicable tags (optional)
+1. Select **Next**
+1. In **Assignments**, select the security groups that will receive the policy
+1. Select **Next**
+1. In **Applicability Rules**, select **Next**
+1. In **Review + create**, review your settings and select **Create**
+
+## How to use the education themes
+
+Once the education themes are enabled, the device will download them as soon as a user signs in to the device.
+
+To change the theme, select **Settings** > **Personalization** > **Themes** > **Select a theme**
+
+:::image type="content" source="./images/win-11-se-themes.png" alt-text="Windows 11 SE desktop contextual menu to open the sticker editor" border="true":::
