@@ -617,8 +617,6 @@ items:
                 href: policy-csp-admx-windowsmediadrm.md
               - name: ADMX_WindowsMediaPlayer
                 href: policy-csp-admx-windowsmediaplayer.md
-              - name: ADMX_DesktopAppInstaller
-                href: policy-csp-admx-desktopappinstaller.md
               - name: ADMX_WindowsRemoteManagement
                 href: policy-csp-admx-windowsremotemanagement.md
               - name: ADMX_WindowsStore
@@ -687,6 +685,8 @@ items:
                 href: policy-csp-deliveryoptimization.md
               - name: Desktop
                 href: policy-csp-desktop.md
+              - name: DesktopAppInstaller
+                href: policy-csp-desktopappinstaller.md
               - name: DeviceGuard
                 href: policy-csp-deviceguard.md
               - name: DeviceHealthMonitoring

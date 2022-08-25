@@ -692,13 +692,6 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_DesktopAppInstaller policies 
-<dl>
-  <dd>
-    <a href="/policy-csp-admx-desktopappinstaller.md#admx-desktopappinstaller-enableadditionalsources" id="admx-desktopappinstaller-enableadditionalsources">ADMX_DesktopAppInstaller/EnableAdditionalSources</a>
-  </dd>
-</dl>
-
 ### ADMX_DeviceCompat policies
 
 <dl>
@@ -6308,6 +6301,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders" id="desktop-preventuserredirectionofprofilefolders">Desktop/PreventUserRedirectionOfProfileFolders</a>
+  </dd>
+</dl>
+
+### DesktopAppInstaller policies 
+<dl>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources" id="desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
   </dd>
 </dl>
 

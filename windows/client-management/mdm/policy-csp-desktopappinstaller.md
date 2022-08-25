@@ -1,6 +1,6 @@
 ---
-title: Policy CSP - ADMX_DesktopAppInstaller
-description: Learn about the Policy CSP - ADMX_DesktopAppInstaller.
+title: Policy CSP - DesktopAppInstaller
+description: Learn about the Policy CSP - DesktopAppInstaller.
 ms.author: v-aljupudi
 ms.localizationpriority: medium
 ms.topic: article
@@ -12,7 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ---
 
-# Policy CSP - ADMX_DesktopAppInstaller
+# Policy CSP - DesktopAppInstaller
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -24,11 +24,11 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_DesktopAppInstaller policies  
+## DesktopAppInstaller policies  
 
 <dl>
   <dd>
-    <a href="#admx-desktopappinstaller-enableadditionalsources">ADMX_DesktopAppInstaller/EnableAdditionalSources</a>
+    <a href="#desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
   </dd>
 </dl>
 
@@ -36,7 +36,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktopappinstaller-enableadditionalsources"></a>**ADMX_DesktopAppInstaller/EnableAdditionalSources**  
+<a href="" id="desktopappinstaller-enableadditionalsources"></a>**DesktopAppInstaller/EnableAdditionalSources**  
 
 <!--SupportedSKUs-->
 
@@ -48,7 +48,6 @@ manager: aaroncz
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
 
 <!--/SupportedSKUs-->
 <hr/>
