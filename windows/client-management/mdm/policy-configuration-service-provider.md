@@ -9170,6 +9170,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-webthreatdefense.md#webthreatdefense-enableservice" id="webthreatdefense-enableservice">WebThreatDefense/EnableService</a>
+  </dd>
+</dl>
+
+### Wifi policies
+
+<dl>
+  <dd>
     <a href="./policy-csp-wifi.md#wifi-allowwifihotspotreporting" id="wifi-allowwifihotspotreporting">WiFi/AllowWiFiHotSpotReporting</a>
   </dd>
   <dd>

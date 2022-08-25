@@ -1897,6 +1897,7 @@ ms.date: 10/08/2020
 - [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 - [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
 - [WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork](./policy-csp-windowsconnectionmanager.md#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork)
+- [WebThreatDefense/EnableService](./policy-csp-webthreatdefense.md#webthreatdefense-enableservice)
 - [WindowsLogon/AllowAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon)
 - [WindowsLogon/ConfigAutomaticRestartSignOn](./policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)
 - [WindowsLogon/DisableLockScreenAppNotifications](./policy-csp-windowslogon.md#windowslogon-disablelockscreenappnotifications)
