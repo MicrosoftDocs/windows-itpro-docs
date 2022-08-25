@@ -45,18 +45,6 @@ ms.date: 07/21/2021
 
 When you want to add an unsigned app to a code integrity policy, you need to start with a code integrity policy created from a reference device. Then, create the catalog files for your unsigned app, sign the catalog files, and then merge the default policy that includes your signing certificate with existing code integrity policies.
 
-## In this section
-
-- [Add unsigned app to code integrity policy](#add-unsigned-app-to-code-integrity-policy)
-  - [In this section](#in-this-section)
-  - [Create a code integrity policy based on a reference device](#create-a-code-integrity-policy-based-on-a-reference-device)
-  - [Create catalog files for your unsigned app](#create-catalog-files-for-your-unsigned-app)
-    - [Requirements](#requirements)
-    - [Best practices](#best-practices)
-    - [To create catalog files for your unsigned app](#to-create-catalog-files-for-your-unsigned-app)
-  - [Catalog signing with Device Guard signing portal](#catalog-signing-with-device-guard-signing-portal)
-    - [To sign a catalog file with Device Guard signing portal](#to-sign-a-catalog-file-with-device-guard-signing-portal)
-
 ## Create a code integrity policy based on a reference device
 
 To add an unsigned app to a code integrity policy, your code integrity policy must be created from golden image machine. For more information, see [Create a Device Guard code integrity policy based on a reference device](/windows/device-security/device-guard/device-guard-deployment-guide).
