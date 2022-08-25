@@ -63,7 +63,7 @@ Before you get started, be sure to review these best practices and requirements:
 ### Best practices
 
 - **Naming convention** -- Using a naming convention makes it easier to find deployed catalog files. We'll use \*-Contoso.cat as the naming convention in this topic. For more information, see the section Inventorying catalog files by using Microsoft Endpoint Manager in the [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
-- **Where to deploy code integrity policy** -- The [code integrity policy that you created](#create-ci-policy) should be deployed to the system on which you are running Package Inspector. This will ensure that the code integrity policy binaries are trusted.
+- **Where to deploy code integrity policy** -- The [code integrity policy that you created](#create-a-code-integrity-policy-based-on-a-reference-device) should be deployed to the system on which you are running Package Inspector. This will ensure that the code integrity policy binaries are trusted.
 
 Copy the commands for each step into an elevated Windows PowerShell session. You'll use Package Inspector to find and trust all binaries in the app.
 
@@ -107,7 +107,7 @@ Catalog signing is a vital step to adding your unsigned apps to your code integr
 
 1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com).
 2. Click **Settings**, click **Store settings**, and then click **Device Guard**.
-3. Click **Upload** to upload your unsigned catalog files. These are the catalog files you created earlier in [Create catalog files for your unsigned app](#create-catalog-files).
+3. Click **Upload** to upload your unsigned catalog files. These are the catalog files you created earlier in [Create catalog files for your unsigned app](#create-catalog-files-for-your-unsigned-app).
 4. After the files are uploaded, click **Sign** to sign the catalog files.
 5. Click Download to download each item:
    - signed catalog file
