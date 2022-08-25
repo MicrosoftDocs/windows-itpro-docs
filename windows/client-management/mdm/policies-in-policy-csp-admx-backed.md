@@ -1031,7 +1031,6 @@ ms.date: 10/08/2020
 - [ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu](./policy-csp-admx-startmenu.md#admx-startmenu-clearrecentprogfornewuserinstartmenu)
 - [ADMX_StartMenu/ClearTilesOnExit](./policy-csp-admx-startmenu.md#admx-startmenu-cleartilesonexit)
 - [ADMX_StartMenu/DesktopAppsFirstInAppsView](./policy-csp-admx-startmenu.md#admx-startmenu-desktopappsfirstinappsview)
-- [DesktopAppInstaller/EnableAdditionalSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources)
 - [ADMX_StartMenu/DisableGlobalSearchOnAppsView](./policy-csp-admx-startmenu.md#admx-startmenu-disableglobalsearchonappsview)
 - [ADMX_StartMenu/ForceStartMenuLogOff](./policy-csp-admx-startmenu.md#admx-startmenu-forcestartmenulogoff)
 - [ADMX_StartMenu/GoToDesktopOnSignIn](./policy-csp-admx-startmenu.md#admx-startmenu-gotodesktoponsignin)
