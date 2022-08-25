@@ -17,20 +17,15 @@ appliesto:
 
 # Configure education themes for Windows 11 SE
 
-**Windows 11 SE**, **version 22H2** introduces a capability to deploy education themes.
+**Windows 11 SE**, **version 22H2** introduces a capability to deploy education themes to your devices.
 
 :::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
 
-Stickers are simple to use, and give students an easy way to express themselves by decorating their desktop, helping to make learning fun.
+Themes allow the end user to quickly configure the look and feel of the device, with preset wallpaper, accent color, and other settings.
 
-## Benefits of Stickers
+## Enable education themes
 
-When students feel like they can express themselves at school, they come ready to pay attention and learn, which benefits students, teachers, and the school community.  
-When students feel like their device is their own, they take better care of it, and it's more likely to last.
-
-## Enable Stickers
-
-Education themes are not enabled by default on Windows 11 SE. IT administrators can configure devices to download the education themes using Microsoft Intune.
+Education themes aren't enabled by default on Windows 11 SE. IT administrators can configure devices to download the education themes using Microsoft Intune.
 
 1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 1. Select **Devices** > **Configuration profiles** > **Create profile**
