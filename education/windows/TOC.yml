@@ -1,35 +1,13 @@
 items:
-- name: Windows for Education
+- name: Windows for Education Documentation
   href: index.yml
 - name: Overview
   href: overview.md
 - name: Tutorials
   expanded: true
   items:
-  - name: Modern deployment and management of Windows devices in a school
-    href: school-deployment/toc.yml
-  - name: Traditional deployment and management of Windows devices in a school
-    items: 
-      - name: Deploy Windows 10 in a school
-        href: deploy-windows-10-in-a-school.md
-      - name: Deploy Windows 10 in a school district
-        href: deploy-windows-10-in-a-school-district.md
-      - name: Deployment recommendations for school IT administrators
-        href: edu-deployment-recommendations.md
-      - name: Set up Windows devices for education
-        items: 
-          - name: Overview
-            href: set-up-windows-10.md
-          - name: Azure AD join for school PCs
-            href: set-up-school-pcs-azure-ad-join.md
-          - name: Active Directory join for school PCs
-            href: set-up-students-pcs-to-join-domain.md
-          - name: Provision student PCs with apps
-            href: set-up-students-pcs-with-apps.md
-      - name: Reset devices with Autopilot Reset
-        href: autopilot-reset.md
-      - name: Change history for Windows 10 for Education
-        href: change-history-edu.md
+  - name: Deploy and manage Windows devices in a school
+    href: tutorial-school-deployment/toc.yml
 - name: Concepts
   items: 
     - name: Windows 11 SE
@@ -85,6 +63,26 @@ items:
       items: 
         - name: Chromebook migration guide
           href: chromebook-migration-guide.md
+    - name: Deploy Windows 10 devices in a school
+      items: 
+      - name: Deploy Windows 10 in a school
+        href: deploy-windows-10-in-a-school.md
+      - name: Deploy Windows 10 in a school district
+        href: deploy-windows-10-in-a-school-district.md
+      - name: Deployment recommendations for school IT administrators
+        href: edu-deployment-recommendations.md
+      - name: Set up Windows devices for education
+        items: 
+          - name: Overview
+            href: set-up-windows-10.md
+          - name: Azure AD join for school PCs
+            href: set-up-school-pcs-azure-ad-join.md
+          - name: Active Directory join for school PCs
+            href: set-up-students-pcs-to-join-domain.md
+          - name: Provision student PCs with apps
+            href: set-up-students-pcs-with-apps.md
+    - name: Reset devices with Autopilot Reset
+      href: autopilot-reset.md
 - name: Reference
   items:
     - name: Set up School PCs
@@ -97,3 +95,5 @@ items:
         href: set-up-school-pcs-whats-new.md
     - name: Take a Test app technical reference
       href: take-a-test-app-technical.md
+    - name: Change history for Windows 10 for Education
+      href: change-history-edu.md
