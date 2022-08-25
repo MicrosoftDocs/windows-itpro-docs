@@ -14,24 +14,19 @@ ms.reviewer:
 manager: dansimp
 ms.technology: windows-sec
 adobe-target: true
+appliesto:
+- ✅ <b>Windows 11 22H2</b>
 ---
 
 # Enhanced Phishing Protection in Microsoft Defender SmartScreen  
 
-**Applies to:**
-
-- Windows 11
-
 Concerned about your users accidentally typing their sign-in passwords into a credential harvesting content? Enhanced Phishing Protection in Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.    
 
-Enhanced Phishing Protection works alongside Windows security protections and helps protect typed work or school passwords used to sign into Windows 11 in three ways:  
+Enhanced Phishing Protection works alongside Windows security protections and helps protect typed work or school passwords used to sign into Windows 11 in three ways: 
 
 - If users type     their work or school Microsoft account password on any browser into a site deemed malicious by Microsoft Defender SmartScreen, Enhanced Phishing Protection will alert them. It will also prompt them to change their password so attackers can’t gain access to their account.  
-
 - Reusing work or school passwords makes it easy for attackers who compromise a user’s password to gain access to their other accounts. Enhanced Phishing Protection can warn users if they reuse their work or school Microsoft account password on sites and apps and prompt them to change their password.  
-
 - Since it’s unsafe to store plaintext passwords in text editors, Enhanced Phishing Protection can warn users if they store their work or school password in Notepad, Winword, or any M365 Office app and recommends them to delete their password from the file. 
-  
 
 ## Benefits of Enhanced Phishing Protection in Microsoft Defender SmartScreen 
 
