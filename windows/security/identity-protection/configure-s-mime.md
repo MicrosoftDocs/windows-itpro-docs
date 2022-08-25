@@ -1,15 +1,17 @@
 ---
 title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them.
-ms.reviewer: 
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 
@@ -25,7 +27,7 @@ S/MIME stands for Secure/Multipurpose Internet Mail Extensions, and provides an 
 
 Users can send encrypted message to people in their organization and people outside their organization if they have their encryption certificates. However, users using Windows Mail app can only read encrypted messages if the message is received on their Exchange account and they have corresponding decryption keys.
 
-Encrypted messages can be read only by recipients who have a certificate. If you try to send an encrypted message to recipient(s) whose encryption certificate are not available, the app will prompt you to remove these recipients before sending the email.
+Encrypted messages can be read only by recipients who have a certificate. If you try to send an encrypted message to recipients whose encryption certificate is not available, the app will prompt you to remove these recipients before sending the email.
 
 ## About digital signatures
 
@@ -80,7 +82,7 @@ When you receive an encrypted message, the mail app will check whether there is 
 
 ## Install certificates from a received message
 
-When you receive a signed email, the app provide feature to install corresponding encryption certificate on your device if the certificate is available. This certificate can then be used to send encrypted email to this person.
+When you receive a signed email, the app provides a feature to install corresponding encryption certificate on your device if the certificate is available. This certificate can then be used to send encrypted email to this person.
 
 1.  Open a signed email.
 

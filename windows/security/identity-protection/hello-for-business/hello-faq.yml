@@ -8,20 +8,22 @@ metadata:
   ms.sitesec: library
   ms.pagetype: security, mobile
   audience: ITPro
-  author: GitPrakhar13
-  ms.author: prsriva
-  manager: dansimp
+  author: paolomatarazzo
+  ms.author: paoloma
+  manager: aaroncz
+  ms.reviewer: prsriva
   ms.collection:
     - M365-identity-device-management
     - highpri
   ms.topic: faq
   localizationpriority: medium
   ms.date: 02/21/2022
+  appliesto:
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
 summary: |
-  Applies to: Windows 10
-  
 
 sections:
   - name: Ignored

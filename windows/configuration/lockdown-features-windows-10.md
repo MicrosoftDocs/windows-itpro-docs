@@ -1,11 +1,11 @@
 ---
 title: Lockdown features from Windows Embedded 8.1 Industry (Windows 10)
-description: Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. 
+description: Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10.
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ---

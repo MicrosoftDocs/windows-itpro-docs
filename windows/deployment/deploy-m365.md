@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 
 This topic provides a brief overview of Microsoft 365 and describes how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://www.microsoft.com/microsoft-365/office-365), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). See the [M365 Enterprise poster](#m365-enterprise-poster) for an overview.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://www.microsoft.com/microsoft-365/office-365), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). See the [Microsoft 365 Enterprise poster](#microsoft-365-enterprise-poster) for an overview.
 
 For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
 
@@ -35,7 +35,7 @@ For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor
 **If you already have a Microsoft services subscription account and access to the Microsoft 365 Admin Center**
 
 From the [Microsoft 365 Admin Center](https://portal.office.com), go to Billing and then Purchase services.
-In the Enterprise Suites section of the service offerings, you will find Microsoft 365 E3 and Microsoft 365 E5 tiles.
+In the Enterprise Suites section of the service offerings, you'll find Microsoft 365 E3 and Microsoft 365 E5 tiles.
 There are "Start Free Trial" options available for your selection by hovering your mouse over the tiles.
 
 **If you do not already have a Microsoft services subscription**
@@ -45,11 +45,11 @@ You can check out the Microsoft 365 deployment advisor and other resources for f
 >[!NOTE]
 >If you have not run a setup guide before, you will see the **Prepare your environment** guide first. This is to make sure you have basics covered like domain verification and a method for adding users. At the end of the "Prepare your environment" guide, there will be a **Ready to continue** button that sends you to the original guide that was selected.
 
-1. [Explore Microsoft 365](https://www.microsoft.com/microsoft-365/business/).
+1. [Obtain a free Microsoft 365 trial](/microsoft-365/commerce/try-or-buy-microsoft-365).
 2. Check out the [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide).
 3. Also check out the [Windows Analytics deployment advisor](/mem/configmgr/desktop-analytics/overview). This advisor will walk you through deploying [Desktop Analytics](/mem/configmgr/desktop-analytics/overview). 
 
-That's all there is to it! 
+That's all there's to it! 
 
 Examples of these two deployment advisors are shown below.
 
@@ -62,9 +62,9 @@ Examples of these two deployment advisors are shown below.
 ## Windows Analytics deployment advisor example
 
 
-## M365 Enterprise poster
+## Microsoft 365 Enterprise poster
 
-[![M365 Enterprise poster.](images/m365e.png)](https://aka.ms/m365eposter)
+[![Microsoft 365 Enterprise poster.](images/m365e.png)](https://aka.ms/m365eposter)
 
 ## Related Topics
 
