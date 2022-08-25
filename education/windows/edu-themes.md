@@ -17,11 +17,12 @@ appliesto:
 
 # Configure education themes for Windows 11 SE
 
-Starting in **Windows 11 SE, version 22H2**, you can deploy education themes to your devices.
+Starting in **Windows 11 SE, version 22H2**, you can deploy education themes to your devices. The education themes are designed for students using devices in a school.
 
 :::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
 
 Themes allow the end user to quickly configure the look and feel of the device, with preset wallpaper, accent color, and other settings.
+Students can choose their own themes, making it feel the device is their own. When students feel more ownership over their device, they tend to take better care of it. This is great news for schools looking to give that same device to a new student the next year.
 
 ## Enable education themes
 
