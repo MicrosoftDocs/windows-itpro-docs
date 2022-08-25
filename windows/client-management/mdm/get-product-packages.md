@@ -1,14 +1,13 @@
 ---
 title: Get product packages
 description: The Get product packages operation retrieves the information about applications in the Microsoft Store for Business.
-ms.assetid: 039468BF-B9EE-4E1C-810C-9ACDD55C0835
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/18/2017
 ---
 

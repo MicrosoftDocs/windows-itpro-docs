@@ -2,26 +2,23 @@
 title: Get Minecraft Education Edition
 description: Learn how to get and distribute Minecraft Education Edition.
 keywords: school, Minecraft, education edition
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
 searchScope: 
   - Store
-ms.author: dansimp
-ms.date: 01/29/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
-ms.topic: conceptual
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Get Minecraft: Education Edition
-
-**Applies to:**
-
--   Windows 10  
-
 
 [Minecraft: Education Edition](https://education.minecraft.net/) is built for learning. Watch this video to learn more about Minecraft.
 
@@ -36,7 +33,7 @@ Teachers and IT administrators can now get early access to **Minecraft: Educatio
 - **Minecraft: Education Edition** requires Windows 10.
 - Trials or subscriptions of **Minecraft: Education Edition** are offered to education tenants that are managed by Azure Active Directory (Azure AD).
   - If your school doesn't have an Azure AD tenant, the [IT administrator can set one up](school-get-minecraft.md) as part of the process of getting **Minecraft: Education Edition**.
-  - Office 365 Education, which includes online versions of Office apps plus 1 TB online storage. [Sign up your school for Office 365 Education.](https://products.office.com/academic/office-365-education-plan)
+  - Office 365 Education, which includes online versions of Office apps plus 1 TB online storage. [Sign up your school for Office 365 Education.](https://www.microsoft.com/education/products/office)
   - If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](/windows/client-management/mdm/register-your-free-azure-active-directory-subscription)
 
 <!-- ![teacher.](images/teacher.png) --> 

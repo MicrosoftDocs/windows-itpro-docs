@@ -1,39 +1,33 @@
 ---
 title: Configure Hybrid Windows Hello for Business Settings (Windows Hello for Business)
 description: Learn how to configure Windows Hello for Business settings in hybrid certificate trust deployment.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business
 
-**Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Certificate trust
-
- 
 Your environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment.  
 
 The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
-* [Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
-* [Public Key Infrastructure](hello-hybrid-cert-whfb-settings-pki.md)
-* [Active Directory Federation Services](hello-hybrid-cert-whfb-settings-adfs.md)
-* [Group Policy](hello-hybrid-cert-whfb-settings-policy.md)
+
+- [Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
+- [Public Key Infrastructure](hello-hybrid-cert-whfb-settings-pki.md)
+- [Active Directory Federation Services](hello-hybrid-cert-whfb-settings-adfs.md)
+- [Group Policy](hello-hybrid-cert-whfb-settings-policy.md)
 
 For the most efficient deployment, configure these technologies in order beginning with the Active Directory configuration
 

@@ -2,14 +2,10 @@
 title: Windows 11 requirements
 description: Hardware requirements to deploy Windows 11
 manager: dougeby
-ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.localizationpriority: medium
-audience: itpro
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
@@ -30,7 +26,7 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 - Processor: 1 gigahertz (GHz) or faster with two or more cores on a [compatible 64-bit processor](https://aka.ms/CPUlist) or system on a chip (SoC).
 - RAM: 4 gigabytes (GB) or greater.
 - Storage: 64 GB\* or greater available storage is required to install Windows 11.
-  - Additional storage space might be required to download updates and enable specific features.
+  - Extra storage space might be required to download updates and enable specific features.
 - Graphics card: Compatible with DirectX 12 or later, with a WDDM 2.0 driver.
 - System firmware: UEFI, Secure Boot capable.
 - TPM: [Trusted Platform Module](/windows/security/information-protection/tpm/trusted-platform-module-overview) (TPM) version 2.0.
@@ -38,7 +34,7 @@ To install or upgrade to Windows 11, devices must meet the following minimum har
 - Internet connection: Internet connectivity is necessary to perform updates, and to download and use some features. 
   - Windows 11 Home edition requires an Internet connection and a Microsoft Account to complete device setup on first use.
 
-\* There might be additional requirements over time for updates, and to enable specific features within the operating system. For more information, see [Windows 11 specifications](https://www.microsoft.com/windows/windows-11-specifications). 
+\* There might be more requirements over time for updates, and to enable specific features within the operating system. For more information, see [Windows 11 specifications](https://www.microsoft.com/windows/windows-11-specifications). 
 
 Also see [Update on Windows 11 minimum system requirements](https://blogs.windows.com/windows-insider/2021/06/28/update-on-windows-11-minimum-system-requirements/).
 
@@ -46,7 +42,7 @@ For information about tools to evaluate readiness, see [Determine eligibility](w
 
 ## Operating system requirements
 
-For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 2004 or later.
+Eligible Windows 10 devices must be on version 2004 or later, and have installed the September 14, 2021 security update or later, to upgrade directly to Windows 11.
 
 > [!NOTE]
 > S mode is only supported on the Home edition of Windows 11.
@@ -55,7 +51,7 @@ For the best Windows 11 upgrade experience, eligible devices should be running W
 
 ## Feature-specific requirements
 
-Some features in Windows 11 have requirements beyond those listed above. See the following list of features and associated requirements.
+Some features in Windows 11 have requirements beyond those requirements listed above. See the following list of features and associated requirements.
 
 - **5G support**: requires 5G capable modem.
 - **Auto HDR**: requires an HDR monitor.
@@ -78,7 +74,7 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 - **Wi-Fi 6E**: requires new WLAN IHV hardware and driver and a Wi-Fi 6E capable AP/router.
 - **Windows Hello**: requires a camera configured for near infrared (IR) imaging or fingerprint reader for biometric authentication. Devices without biometric sensors can use Windows Hello with a PIN or portable Microsoft compatible security key. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103).
 - **Windows Projection**: requires a display adapter that supports Windows Display Driver Model (WDDM) 2.0 and a Wi-Fi adapter that supports Wi-Fi Direct.
-- **Xbox app**: requires an Xbox Live account, which is not available in all regions. Please go to the Xbox Live Countries and Regions page for the most up-to-date information on availability. Some features in the Xbox app will require an active [Xbox Game Pass](https://www.xbox.com/xbox-game-pass) subscription.
+- **Xbox app**: requires an Xbox Live account, which isn't available in all regions. Go to the Xbox Live Countries and Regions page for the most up-to-date information on availability. Some features in the Xbox app will require an active [Xbox Game Pass](https://www.xbox.com/xbox-game-pass) subscription.
 
 ## Virtual machine support
 
@@ -88,11 +84,11 @@ The following configuration requirements apply to VMs running Windows 11.
 -	Storage: 64 GB or greater
 -	Security: Secure Boot capable, virtual TPM enabled
 -	Memory:  4 GB or greater
--	Processor: 2 or more virtual processors
+-	Processor: Two or more virtual processors
 
 The VM host CPU must also meet Windows 11 [processor requirements](/windows-hardware/design/minimum/windows-processor-requirements).
 
-<b>\*</b> In-place upgrade of existing generation 1 VMs to Windows 11 is not possible.
+<b>\*</b> In-place upgrade of existing generation 1 VMs to Windows 11 isn't possible.
 
 > [!NOTE]
 > Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.

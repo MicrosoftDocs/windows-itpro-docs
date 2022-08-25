@@ -53,8 +53,6 @@
           href: teacher-get-minecraft.md
         - name: "For IT administrators: get Minecraft Education Edition"
           href: school-get-minecraft.md
-        - name: "Get Minecraft: Education Edition with Windows 10 device promotion"
-          href: get-minecraft-device-promotion.md
     - name: Test Windows 10 in S mode on existing Windows 10 education devices
       href: test-windows10s-for-edu.md
     - name: Enable Windows 10 in S mode on Surface Go devices
@@ -67,6 +65,8 @@
       href: s-mode-switch-to-edu.md
     - name: Change to Windows 10 Pro Education from Windows 10 Pro
       href: change-to-pro-education.md
+    - name: Upgrade Windows Home to Windows Education on student-owned devices
+      href: change-home-to-edu.md
     - name: Chromebook migration guide
       href: chromebook-migration-guide.md
     - name: Change history for Windows 10 for Education

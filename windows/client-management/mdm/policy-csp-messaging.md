@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - Messaging
-description: Enable, and disable, text message back up and restore as well as Messaging Everywhere by using the Policy CSP for messaging.
-ms.author: dansimp
+description: Enable, and disable, text message backup and restore as well as Messaging Everywhere by using the Policy CSP for messaging.
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Messaging
-
-
 
 <hr/>
 
@@ -27,7 +25,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -39,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -56,7 +54,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Enables text message back up and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
+Enables text message backup and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -70,7 +68,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - message sync is not allowed and cannot be changed by the user.
+-   0 - message sync isn't allowed and can't be changed by the user.
 -   1 - message sync is allowed. The user can change this setting.
 
 <!--/SupportedValues-->
@@ -80,3 +78,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

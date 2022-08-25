@@ -2,22 +2,18 @@
 title: VPN auto-triggered profile options (Windows 10 and Windows 11)
 description: Learn about the types of auto-trigger rules for VPNs in Windows, which start a VPN when it is needed to access a resource.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
+author: paolomatarazzo
 ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: paoloma
+ms.reviewer: pesmith
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # VPN auto-triggered profile options
-
-**Applies to**
--   Windows 10
--   Windows 11
 
 In Windows 10 and Windows 11, a number of features have been added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
 
@@ -35,8 +31,7 @@ VPN profiles in Windows 10 or Windows 11 can be configured to connect automatica
 
 The app identifier for a desktop app is a file path. The app identifier for a UWP app is a package family name.
 
-[Find a package family name (PFN) for per-app VPN configuration](/intune/deploy-use/find-a-pfn-for-per-app-vpn)
-
+[Find a package family name (PFN) for per-app VPN configuration](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 
 ## Name-based trigger
 
@@ -78,7 +73,7 @@ Should a management tool remove or add the same profile name back and set **Alwa
 
 ## Trusted network detection
 
-This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the DNS suffix on the physical interface and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
+This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffixes. The VPN stack will look at the network name of the physical interface connection profile and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
 
 Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 

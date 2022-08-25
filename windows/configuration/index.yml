@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Configure Windows client # < 60 chars
-summary: Find out how to apply custom configurations to Windows 10 and Windows 11 devices. Windows 10 provides a number of features and methods to help you configure or lock down specific parts of Windows client.  # < 160 chars
+summary: Find out how to apply custom configurations to Windows 10 and Windows 11 devices. Windows 10 provides many features and methods to help you configure or lock down specific parts of Windows client.  # < 160 chars
 
 metadata:
   title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -13,8 +13,9 @@ metadata:
   ms.collection:
     - windows-10
     - highpri
-  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
-  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
   ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     

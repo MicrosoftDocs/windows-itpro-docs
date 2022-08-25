@@ -2,25 +2,23 @@
 title: For teachers get Minecraft Education Edition
 description: Learn how teachers can get and distribute Minecraft.
 keywords: school, Minecraft, Education Edition, educators, teachers, acquire, distribute
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
 searchScope: 
   - Store
-ms.author: dansimp
-ms.date: 01/05/2018
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
-ms.topic: conceptual
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # For teachers - get Minecraft: Education Edition
-
-**Applies to:**
-
--   Windows 10 
 
 The following article describes how teachers can get and distribute Minecraft: Education Edition. 
 Minecraft: Education Edition is available for anyone to trial, and subscriptions can be purchased by qualified educational institutions directly in the Microsoft Store for Education, via volume licensing agreements and through partner resellers.
@@ -29,7 +27,7 @@ To get started, go to https://education.minecraft.net/ and select **GET STARTED*
 
 ## Try Minecraft: Education Edition for Free 
 
-Minecraft: Education Edition is available for anyone to try for free! The free trial is fully-functional but limited by the number of logins (25 for teachers and 10 for students) before a paid license will be required to continue playing.
+Minecraft: Education Edition is available for anyone to try for free! The free trial is fully functional but limited by the number of logins (25 for teachers and 10 for students) before a paid license will be required to continue playing.
 
 To learn more and get started, go to https://education.minecraft.net/ and select **GET STARTED**.
 
@@ -47,7 +45,7 @@ As a teacher, you may purchase subscription licenses for you and your students d
 
 You can purchase individual Minecraft: Education Edition subscriptions for you and other teachers and students directly in the Microsoft Store for Education.
 
-To purchase individual Minecraft: Education Edition subscriptions (i.e. direct purchase):
+To purchase individual Minecraft: Education Edition subscriptions (that is, direct purchase):
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your Office 365 account.
 2. Click on [Minecraft: Education Edition](https://educationstore.microsoft.com/en-us/store/details/minecraft-education-edition/9nblggh4r2r6) (or use Search the Store to find it)
@@ -109,14 +107,14 @@ Students will receive an email with a link that will install the app on their PC
 
       After installing the app, students can find Minecraft: Education Edition in Microsoft Store app under **My Library**.
 
-    ![Microsoft Store app showing access to My Library.](images/minecraft-private-store.png) 
+    ![Microsoft Store app directing the navigation to My Library.](images/minecraft-private-store.png) 
 
       When students click **My Library** they'll find apps assigned to them.
 
     ![My Library for example student.](images/minecraft-my-library.png)  
 
 ### Download for others
-Download for others allows teachers or IT admins to download a packages that they can install on student PCs. This will install Minecraft: Education Edition on the PC, and allows anyone with a Windows account to use the app on that PC. This option is best for students, and for shared computers. Choose this option when:
+Download for others allows teachers or IT admins to download packages that they can install on student PCs. This option will install Minecraft: Education Edition on the PC, and allows anyone with a Windows account to use the app on that PC. This option is best for students, and for shared computers. Choose this option when:
 - You have administrative permissions to install apps on the PC. 
 - You want to install this app on each of your student's Windows 10 (at least version 1511) PCs. 
 - Your students share Windows 10 computers, but sign in with their own Windows account. 
@@ -126,17 +124,17 @@ Download for others allows teachers or IT admins to download a packages that the
 - Windows 10 (at least version 1511) is required for PCs running Minecraft: Education Edition.
 
 #### Check for updates
-Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Microsoft Store apps. 
+Minecraft: Education Edition won't install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Microsoft Store apps. 
 
 **To check for app updates**
 1. Start Microsoft Store app on the PC (click **Start**, and type **Store**).
 2. Click the account button, and then click **Downloads and updates**.
 
-      ![Microsoft Store app showing access to My Library.](images/minecraft-private-store.png)
+      ![Microsoft Store app displaying the navigation to the My Library option.](images/minecraft-private-store.png)
       
 3. Click **Check for updates**, and install all available updates. 
 
-      ![Microsoft Store app showing access to My Library.](images/mc-check-for-updates.png)
+      ![Microsoft Store app directing the navigation to the My Library submenu item.](images/mc-check-for-updates.png)
       
 4. Restart the computer before installing Minecraft: Education Edition. 
    
@@ -145,9 +143,9 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
 
-    ![Microsoft Store app showing access to My Library.](images/mc-dnld-others-teacher.png)
+    ![Microsoft Store app depicting the navigation path to the My Library option.](images/mc-dnld-others-teacher.png)
  
-2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
+2. **Extract files**. Find the .zip file that you downloaded and extract the files. This downloaded location is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
 4. **Install app**. Use the USB drive to copy the Minecraft folder to each Windows 10 PC where you want to install Minecraft: Education Edition. Open Minecraft: Education Edition folder, right-click **InstallMinecraftEducationEdition.bat** and click **Run as administrator**. 
 5. **Quick check**. The install program checks the PC to make sure it can run Minecraft: Education Edition. If your PC passes this test, the app will automatically install.
@@ -163,10 +161,10 @@ If you ran **InstallMinecraftEducationEdition.bat** and Minecraft: Education Edi
 | App won't install. | AppLocker is configured and preventing app installs.  |      Contact IT Admin.  | 
 | App won't install. | Policy prevents users from installing apps on the PC. |  Contact IT Admin. | 
 | Script starts, but stops quickly. | Policy prevents scripts from running on the PC.  | Contact IT Admin. |
-| App isn't available for other users. | No restart after install. If you don't restart the PC, and just switch users the app will not be available.| Restart PC. </br> Run **InstallMinecraftEducationEdition.bat** again. </br> If a restart doesn't work, contact your IT Admin.  | 
+| App isn't available for other users. | No restart after install. If you don't restart the PC, and just switch users the app won't be available.| Restart PC. </br> Run **InstallMinecraftEducationEdition.bat** again. </br> If a restart doesn't work, contact your IT Admin.  | 
 
 
-If you are still having trouble installing the app, you can get more help on our [Support page](https://go.microsoft.com/fwlink/?LinkID=799757). 
+If you're still having trouble installing the app, you can get more help on our [Support page](https://go.microsoft.com/fwlink/?LinkID=799757). 
 
 ## Related topics
 

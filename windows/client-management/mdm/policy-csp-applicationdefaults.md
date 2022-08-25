@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ApplicationDefaults
 description: Learn about various Policy configuration service providers (CSP) - ApplicationDefaults, including SyncML, for Windows 10.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -42,6 +42,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -140,6 +141,7 @@ Here's the SyncMl example:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -159,7 +161,7 @@ Here's the SyncMl example:
 <!--Description-->
 This policy setting determines whether Windows supports web-to-app linking with app URI handlers.
 
-Enabling this policy setting enables web-to-app linking so that apps can be launched with a http(s) URI.
+Enabling this policy setting enables web-to-app linking so that apps can be launched with an http(s) URI.
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
