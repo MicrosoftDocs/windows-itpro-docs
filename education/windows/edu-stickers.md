@@ -46,14 +46,14 @@ Stickers aren't enabled by default on Windows 11 SE. IT administrators can allow
 1. Select **Next**
 1. In **Configuration settings**, select **Add**
 1. In **Add Row**, enter the following properties:
-    - **Name**: enter **EnableStickers**
+    - Name: enter **EnableStickers**
     - OMA-URI: `./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`
     - Data type: **Integer**
     - Value: **1**
 1. Select **Save**
 1. Select **Add**
 1. In **Add Row**, enter the following properties:
-    - **Name**: enter **IsEducationEnvironment**
+    - Name: enter **IsEducationEnvironment**
     - OMA-URI: `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`
     - Data type: **Integer**
     - Value: **1**
