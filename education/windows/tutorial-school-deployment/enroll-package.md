@@ -1,10 +1,10 @@
 ---
 title: Enrollment of Windows devices with provisioning packages
-description: options how to enroll Windows devices with provisioning packages, using Set 
+description: options how to enroll Windows devices with provisioning packages using SUSPCs and Windows Configuration Designer
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual
+ms.topic: tutorial
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
@@ -22,14 +22,14 @@ appliesto:
 Enrolling devices with provisioning packages is an efficient way to deploy a large number of Windows devices. Some of the benefits of provisioning packages are:
 
 - There are no particular hardware dependencies on the devices to complete the enrollment process
-- Devices do not need to be registered in advance
+- Devices don't need to be registered in advance
 - Enrollment is a simple task: just open a provisioning package and the process is automated
 
 You can create provisioning packages using either **Set Up School PCs** or **Windows Configuration Designer** applications, which are described in the following sections.
 
 ## Set up School PCs
 
-With a guided experience, Set up School PCs app helps an IT administrator to create a package containing the most common features and settings that students need, and enroll the devices in Intune. The package is saved on a USB stick, which can then be plugged into devices during OOBE to complete the enrollment process.
+With Set up School PCs, you can create a package containing the most common device configurations that students need, and enroll devices in Intune. The package is saved on a USB stick, which can then be plugged into devices during OOBE. Applications and settings will be automatically applied to the devices, including the Azure AD join and Intune enrollment process.
 
 ### Create a provisioning package
 
@@ -37,10 +37,10 @@ The Set Up School PCs app guides you through configuration choices for school-ow
 
 :::image type="content" source="./images/supcs-win11se.png" alt-text="Configure device settings in Set Up School PCs app" border="false":::
 
-> [!IMPORTANT]
+> [!CAUTION]
 > If you are creating a provisioning package for **Windows 11 SE** devices, ensure to select the correct *OS version* in the *Configure device settings* page.
 
-Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
+Set Up School PCs will configure many settings, allowing you to optimize devices for shared use and other scenarios.
 
 For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][EDU-1].
 

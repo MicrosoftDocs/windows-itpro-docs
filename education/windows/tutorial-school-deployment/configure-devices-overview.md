@@ -4,7 +4,7 @@ description: Configure policies and applications in preparation to device deploy
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
+ms.topic: tutorial
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
@@ -36,14 +36,17 @@ By organizing devices, students, classrooms, or learning curricula into groups, 
 By default, Intune for Education creates two default groups: *All devices* and *All users*.
 Two additional groups are pre-created if you use **Microsoft School Data Sync (SDS)**: *All teachers* and *All students*. SDS can also be configured to automatically create and maintain groups of students and teachers for each school.
 
-:::image type="content" source="./images/intune-education-groups.png" alt-text="Intune for Education - Groups blade" border="false":::
+:::image type="content" source="./images/intune-education-groups.png" alt-text="Intune for Education - Groups blade" border="true":::
 
-Beyond the defaults, groups can be customized to suit various needs. For example, if you have both Windows and iPad devices in your school, you can create groups, such as *All Windows devices* and *All iPad devices*, to assign policies and applications to.
+Beyond the defaults, groups can be customized to suit various needs. For example, if you have both *Windows 10* and *Windows 11 SE* devices in your school, you can create groups, such as *Windows 10 devices* and *Windows 11 SE devices*, to assign different policies and applications to.
 
 Two group types can be created:
 
 - **Assigned groups** are used when you want to manually add users or devices to a group
 - **Dynamic groups** reference rules that you create to assign students or devices to groups, which automate the membership's maintenance of those groups
+
+> [!TIP]
+> If you target applications and policies to a *device dynamic group*, they will be applied to the devices as soon as they are enrolled in Intune, before users signs in. This can be useful in bulk enrollment scenarios, where devices are enrolled without requiring users to sign in. Devices can be configured and prepared in advance, before distribution.
 
 For more information, see:
 

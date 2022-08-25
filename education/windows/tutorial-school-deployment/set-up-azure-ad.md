@@ -4,7 +4,7 @@ description: How to create and prepare your Azure AD tenant for an education env
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual
+ms.topic: tutorial
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma

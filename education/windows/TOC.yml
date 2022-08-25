@@ -17,8 +17,7 @@ items:
       - name: Settings and CSP list
         href: windows-11-se-settings-list.md
     - name: Windows in S Mode
-      items: 
-      - name: Overview
+      items:
       - name: Test Windows 10 in S mode on existing Windows 10 education devices
         href: test-windows10s-for-edu.md
       - name: Enable Windows 10 in S mode on Surface Go devices

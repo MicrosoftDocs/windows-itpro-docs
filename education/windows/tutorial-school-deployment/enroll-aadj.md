@@ -4,7 +4,7 @@ description: how to join Azure AD for OOBE and automatically get the device enro
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
+ms.topic: tutorial
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma

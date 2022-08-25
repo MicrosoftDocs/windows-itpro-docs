@@ -4,7 +4,7 @@ description: Manage devices with Microsoft Intune
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
+ms.topic: tutorial
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
@@ -14,11 +14,14 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Manage devices with Microsoft Intune
 
 Microsoft Intune delivers streamlined remote management throughout the school year, giving IT the ability to manage apps, control security and privacy remotely, and generate compliance reports.
+
+:::image type="content" source="./images/protect-manage.png" alt-text="The device lifecycle for Intune-managed devices - protect and manage devices" border="false":::
 
 ## Remote device management
 
@@ -109,17 +112,3 @@ To access and use the Surface Management Portal:
 To see the device's warranty information, select **Device warranty and coverage**.
 
 5. To see support requests and their status, select **Support requests**.
-
-
-## Autopilot motherboard replacement
-
-Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
-
-1. [Deregister the device](/mem/autopilot/autopilot-mbr) from Autopilot.
-1. [Replace the motherboard](/mem/autopilot/autopilot-mbr).
-1. [Capture a new device ID (4K HH)](/mem/autopilot/autopilot-mbr).
-1. [Reregister the device](/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
-1. [Reset the device](/mem/autopilot/autopilot-mbr).
-1. [Return the device](/mem/autopilot/autopilot-mbr).
-
-For more information, see [Autopilot motherboard replacement scenario guidance](/mem/autopilot/autopilot-mbr).

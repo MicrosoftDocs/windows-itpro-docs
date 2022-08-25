@@ -36,5 +36,18 @@ Follow these steps to obtain support in Microsoft Endpoint Manager:
 
 For more information, see [Microsoft Endpoint Manager support page][MEM-1]
 
+## Autopilot motherboard replacement
+
+Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
+
+1. [Deregister the device](/mem/autopilot/autopilot-mbr) from Autopilot.
+1. [Replace the motherboard](/mem/autopilot/autopilot-mbr).
+1. [Capture a new device ID (4K HH)](/mem/autopilot/autopilot-mbr).
+1. [Reregister the device](/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
+1. [Reset the device](/mem/autopilot/autopilot-mbr).
+1. [Return the device](/mem/autopilot/autopilot-mbr).
+
+For more information, see [Autopilot motherboard replacement scenario guidance](/mem/autopilot/autopilot-mbr).
+
 <!-- Reference links in article -->
 [MEM-1]: /mem/get-support

@@ -4,7 +4,7 @@ description: overview of Microsoft Education
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
+ms.topic: conceptual
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
