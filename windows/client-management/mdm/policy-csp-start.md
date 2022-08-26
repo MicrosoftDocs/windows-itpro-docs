@@ -57,6 +57,9 @@ manager: aaroncz
     <a href="#start-disablecontextmenus">Start/DisableContextMenus</a>
   </dd>
   <dd>
+    <a href="#start-disablecontrolcenter">Start/DisableControlCenter</a>
+  </dd>
+  <dd>
     <a href="#start-forcestartsize">Start/ForceStartSize</a>
   </dd>
   <dd>
@@ -665,6 +668,60 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
+
+<!--Policy-->
+<a href="" id="start-disablecontrolcenter"></a>**Start/DisableControlCenter**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting removes Control Center from the bottom right area on the taskbar. The control center area is located at the left of the clock in the taskbar and includes icons for current network and volume. 
+
+If this setting is enabled, Control Center isn't displayed in the control center area.
+
+>[!Note]
+> A reboot is required for this policy setting to take effect.
+
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Remove control center*
+-   GP name: *DisableControlCenter*
+-   GP path: *Start Menu and Taskbar*
+-   GP ADMX file name: *Taskbar.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- Integer 0 - Disabled/Not configured.
+- Integer 1 - Enabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
 
 <hr/>
 
