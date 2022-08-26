@@ -70,7 +70,7 @@ sections:
           Cloud PC displays the model as the license type you have provisioned. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
       - question: Can I run Autopatch on my Windows 365 Business Workloads?
         answer: |
-          No. Autopatch is only available on enterprise workloads. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
+          No. Autopatch is only available on enterprise workloads. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
   - name: Update Management
     questions: 
       - question: What systems does Windows Autopatch update?
