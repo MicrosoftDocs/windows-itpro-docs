@@ -1,104 +1,33 @@
 ---
-title: Windows 10 for Education (Windows 10)
-description: Learn how to use Windows 10 in schools.
-keywords: Windows 10, education
+title: Microsoft Education
+description: overview of Microsoft Education
+ms.date: 08/31/2022
 ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: edu
+ms.technology: windows
+ms.topic: conceptual
 ms.localizationpriority: medium
-ms.collection: education
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 08/10/2022
-ms.reviewer: 
+#ms.reviewer: 
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
+ms.collection: education
+#appliesto:
 ---
+# New expectations for education technology
 
-# Windows 10 for Education
+Microsoft 365 solutions for Education empower education professionals to unlock creativity, promote teamwork, and provide a safe experience for everyone—all in a comprehensive and affordable cloud offering.
 
-![Windows 10 Education and Windows 10 Pro Education.](images/windows-10-for-education-banner.png)
+Microsoft recognizes that the education landscape continues to change rapidly. To better enable students for success, it's essential for schools to stay up to date with technology and tools for teaching and learning.
+The Microsoft cloud management solution is flexible, affordable and scalable. Devices can be easily kept up to date, and students always have what they need, whether they're learning in person or remotely, synchronously or asynchronously.
+Microsoft also delivers exceptional standards of security and privacy to keep students safer as the hybrid learning model evolves.
 
-## ![Learn more about Windows.](images/education.png) Learn
+Microsoft addresses expectations for modern device management in school environments in four key ways:
 
-**[Windows 10 editions for education customers](windows-editions-for-education-customers.md)**
+- **Maximize learning time.** Schools expect lower boot times for an enhanced user experience for students and staff, all on a device optimized for the classroom. They also expect devices to always be up to date with policies that update silently and outside of class time. Intune for Education enables automatic updates to all school devices and software at optimal times you choose.
+- **Designed for learning environments.** Schools need identity-based management for secure app delivery and simple device management. They also need to ensure that the right apps are delivered at the right time. With Azure Active Directory (Azure AD) and Intune for Education, you can enable profile-based app delivery with the ability to manage device policies, settings, and applications. You can save time by pre-installing applications and configuring policies to control the device's behaviors, just enroll the devices in Intune and go!
+- **Simplify deployment and management.** End-to-end guidance and support from Microsoft and partners can help schools streamline both deployment and cloud migration. With Intune for Education and Surface SE devices, education professionals can deploy apps to users and apply device settings that create a great classroom experience in just a few simple steps.
+- **Cost-effective remote management.** Intune for Education enables a modern IT environment, complete with remote management, with pre-defined school settings. This helps to provide reduced and more predictable IT costs, along with better performance, availability, and security. Intune for Education also enables a predictable and stable *Software as a Service* (SaaS) model, which eliminates spending spikes from upgrading hardware and software.
 
-Windows 10, version 1607 introduces two editions designed for the unique needs of K-12 institutions: Windows 10 Pro Education and Windows 10 Education. These editions provide education-specific default settings for the evolving landscape in K-12 education IT environments.
+## The powerful simplicity of Microsoft education technology
 
-**[Compare each Windows edition](https://www.microsoft.com/WindowsForBusiness/Compare)**
-
-Find out more about the features and functionality we support in each edition of Windows.
-
-**[Get Windows 10 Education or Windows 10 Pro Education](https://www.microsoft.com/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools)**
-
-When you've made your decision, find out how to buy Windows for your school.
-
-## ![Plan for Windows 10 in your school.](images/clipboard.png) Plan
-
-**[Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)**
-
-Provides guidance on ways to customize the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school.
-
-**[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)**
-
-Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.
-
-**[Get Minecraft Education Edition](get-minecraft-for-education.md)**
-
-Minecraft Education Edition is built for learning. Learn how to get early access and add it to your Microsoft Store for Business for distribution.
-
-**[Take tests in Windows 10](take-tests-in-windows-10.md)**
-
-Take a Test is a new app that lets you create the right environment for taking tests. Learn how to use and get it set up.
-
-**[Chromebook migration guide](chromebook-migration-guide.md)**
-
-Find out how you can migrate a Chromebook-based learning environment to a Windows 10-based learning environment.
-
-## ![Deploy Windows 10 for Education.](images/PCicon.png) Deploy
-
-**[Set up Windows devices for education](set-up-windows-10.md)**
-
-Depending on your school's device management needs, you can use the Set up School PCs app or the Windows Configuration Designer tool to quickly set up student PCs.
-
-**[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)**
-
-Get step-by-step guidance to help you deploy Windows 10 in a school environment.
-
-**[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)**
-
-Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.
-
-**[Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md)**
-
-Test Windows 10 S on various Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us.
-
-## ![Switch to Windows 10 for Education.](images/windows.png) Switch
-
-**[Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)**
-
-If you have an education tenant and use Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education.
-
-## Windows 8.1
-
-Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
-
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645509(v=ws.11)" target="_blank">Windows 8.1 deployment planning</a></b><br />Explore key considerations and questions that should be answered when planning for Windows 8.1 deployment.</p>
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645528(v=ws.11)" target="_blank">Windows 8.1 deployment to PCs</a></b><br />Get an overview of Windows 8.1 deployment to PCs in an educational environment.</p>
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645510(v=ws.11)" target="_blank">BYOD</a></b><br />Explore Bring Your Own Device (BYOD) considerations, including device types, infrastructure, and deployment models.</p>
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645488(v=ws.11)" target="_blank">Deploying Windows RT 8.1</a></b><br />Get step-by-step instructions on how to configure and deploy Windows RT devices (like Surface and other tablets) in educational environments.</p>
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645483(v=ws.11)" target="_blank">Virtual Desktop Infrastructure</a></b><br />Learn how to address challenges related to BYOD scenarios using Virtual Desktop Infrastructure (VDI).</p>
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645532(v=ws.11)" target="_blank">Microsoft Store apps</a></b><br />Explore Microsoft Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
-<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645486(v=ws.11)" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
-
-## Related articles
-
-- [Microsoft Education documentation and resources](/education)
-- [Windows for business](https://www.microsoft.com/windows/business)
-- [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)
-
-<!--
-<p><b><a href="/education/" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
--->
+Our innovative approach to education technology is built on the idea of *powerful simplicity* and combines the unparalleled user experience and security features of Surface Laptop Student Edition (SE), Windows 11 SE, and Microsoft 365 Education. Students can unlock learning and develop new skills with Surface Laptop SE, which seamlessly runs Windows 11 SE—our cloud-first operating system—and Microsoft 365 Education. Surface Laptop SE comes preloaded with widely used application like Microsoft Teams, Word, PowerPoint, Excel, and OneNote, so students are ready to learn right from the start. Teachers will appreciate how easy it is to develop and deploy their lessons and enrichment experiences. IT administrators will save time and money with Microsoft Intune, a comprehensive modern device management solution.
