@@ -148,6 +148,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 1. Select **Create**. Now your newly provisioned Windows 365 Enterprise Cloud PCs will automatically be enrolled and managed by Windows Autopatch.
 
 For more information, see [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy).
+
 ### Contact support for device registration-related incidents
 
 Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
