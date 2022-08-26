@@ -9,7 +9,7 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/06/2022
+ms.date: 08/24/2022
 ---
 
 # Configuring Microsoft Endpoint Manager devices for Update Compliance (preview)
@@ -29,48 +29,79 @@ This article is specifically targeted at configuring devices enrolled to [Micros
 
 ## Create a configuration profile
 
-Take the following steps to create a configuration profile that will set required policies for Update Compliance:
+Create a configuration profile that will set the required policies for Update Compliance. There are two profile types that can be used to create a configuration profile for Update Compliance:
+- The [settings catalog](#settings-catalog)
+- [Template](#custom-oma-uri-based-profile) for a custom OMA URI based profile
 
-1. Go to the Admin portal in Endpoint Manager and navigate to **Devices/Windows/Configuration profiles**.
-1. On the **Configuration profiles** view, select **Create a profile**.
+### Settings catalog
+
+1. Go to the Admin portal in Endpoint Manager and navigate to **Devices** > **Windows** > **Configuration profiles**.
+1. On the **Configuration profiles** view, select **Create profile**.
+1. Select **Platform**="Windows 10 and later" and **Profile type**="Settings Catalog", and then select **Create**.
+1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
+1. On the **Configuration settings** page, you'll be adding multiple settings from the **System** category. Using the **Settings picker**, select the **System** category, then add the following settings and values:
+    1. Required settings for Update Compliance: 
+        - **Setting**: Allow Commercial Data Pipeline
+        - **Value**: Enabled
+        - **Setting**: Allow Telemetry
+        - **Value**: Basic (*Basic is the minimum value, but it can be safely set to a higher value*)
+        - **Setting**: Allow Update Compliance Processing
+        - **Value**: Enabled
+    1. (*Recommended, but not required*) Add settings for **disabling devices' Diagnostic Data opt-in settings interface**. If these aren't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Update Compliance:
+        - **Setting**: Configure Telemetry Opt In Change Notification
+        - **Value**: Disable telemetry change notifications
+        - **Setting**: Configure Telemetry Opt In Settings Ux
+        - **Value**: Disable Telemetry opt-in Settings
+    1. (*Recommended, but not required*) Allow device name to be sent in Windows Diagnostic Data. If this policy is disabled, the device name won't be sent and won't be visible in Update Compliance:
+        - **Setting**: Allow device name to be sent in Windows diagnostic data
+        - **Value**: Allowed
+
+1. Proceed through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
+1. Review the settings and then select **Create**.
+
+### Custom OMA URI based profile
+
+1. Go to the Admin portal in Endpoint Manager and navigate to **Devices** > **Windows** > **Configuration profiles**.
+1. On the **Configuration profiles** view, select **Create profile**.
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
-1. For **Template name**, select **Custom**, and then press **Create**.
+1. For **Template name**, select **Custom**, and then select **Create**.
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
 1. On the **Configuration settings** page, you'll be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md).
- 
+
+    1. Add a setting to **Allow commercial data pipeline**; this policy is required for Update Compliance:
+        - **Name**: Allow commercial data pipeline
+        - **Description**: Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device.
+        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline`
+        - **Data type**: Integer
+        - **Value**: 1 
     1. Add a setting configuring the **Windows Diagnostic Data level** for devices:
         - **Name**: Allow Telemetry
         - **Description**: Sets the maximum allowed diagnostic data to be sent to Microsoft, required for Update Compliance.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowTelemetry`
         - **Data type**: Integer
-        - **Value**: 1 (*all that is required is 1, but it can be safely set to a higher value*).
-    1. (*Recommended, but not required*) Add a setting for **disabling devices' Diagnostic Data opt-in settings interface**. If this isn't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Update Compliance:
-        - **Name**: Disable Telemetry opt-in interface
-        - **Description**: Disables the ability for end-users of devices can adjust diagnostic data to levels lower than defined by the Allow Telemetry setting.
-        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/ConfigureTelemetryOptInSettingsUx`
-        - **Data type**: Integer
-        - **Value**: 1
-    1. Add a setting to **Allow device name in diagnostic data**; otherwise, there will be no device name in Update Compliance:
-        - **Name**: Allow device name in Diagnostic Data
-        - **Description**: Allows device name in Diagnostic Data.
-        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowDeviceNameInDiagnosticData`
-        - **Data type**: Integer
-        - **Value**: 1
+        - **Value**: 1 (*1 is the minimum value meaning basic, but it can be safely set to a higher value*).
     1. Add a setting to **Allow Update Compliance processing**; this policy is required for Update Compliance:
         - **Name**: Allow Update Compliance Processing
         - **Description**: Opts device data into Update Compliance processing. Required to see data.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowUpdateComplianceProcessing`
         - **Data type**: Integer
         - **Value**: 16
-    1. Add a setting to **Allow commercial data pipeline**; this policy is required for Update Compliance:
-        - **Name**: Allow commercial data pipeline
-        - **Description**: Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device.
-        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline`
+    1. (*Recommended, but not required*) Add settings for **disabling devices' Diagnostic Data opt-in settings interface**. If these aren't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Update Compliance: 
+        - **Name**: Disable Telemetry opt-in interface
+        - **Description**: Disables the ability for end-users of devices can adjust diagnostic data to levels lower than defined by the Allow Telemetry setting.
+        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/ConfigureTelemetryOptInSettingsUx`
+        - **Data type**: Integer
+        - **Value**: 1
+    1. (*Recommended, but not required*) Add a setting to **Allow device name in diagnostic data**; otherwise, the device name won't be in Update Compliance:
+        - **Name**: Allow device name in Diagnostic Data
+        - **Description**: Allows device name in Diagnostic Data.
+        - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowDeviceNameInDiagnosticData`
         - **Data type**: Integer
         - **Value**: 1
 
+
 1. Proceed through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
-1. Review and select **Create**.
+1. Review the settings and then select **Create**.
 
 ## Deploy the configuration script
 
