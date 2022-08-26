@@ -1,8 +1,6 @@
 items:
 - name: Windows for Education Documentation
   href: index.yml
-- name: Overview
-  href: overview.md
 - name: Tutorials
   expanded: true
   items:
@@ -22,6 +20,8 @@ items:
         href: test-windows10s-for-edu.md
       - name: Enable Windows 10 in S mode on Surface Go devices
         href: enable-s-mode-on-surface-go-devices.md
+    - name: Windows 10 editions for education customers
+      href: windows-editions-for-education-customers.md
     - name: Shared PC mode for school devices
       href: set-up-school-pcs-shared-pc-mode.md
     - name: Windows 10 configuration recommendations for education customers
@@ -40,8 +40,6 @@ items:
           href: take-a-test-multiple-pcs.md
     - name: Change Windows edition
       items: 
-      - name: Windows 10 editions for education customers
-        href: windows-editions-for-education-customers.md
       - name: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
         href: s-mode-switch-to-edu.md
       - name: Change to Windows 10 Pro Education from Windows 10 Pro
