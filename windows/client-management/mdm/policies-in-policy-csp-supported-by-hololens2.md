@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 06/06/2022
+ms.date: 08/01/2022
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
@@ -52,12 +52,20 @@ ms.date: 06/06/2022
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
+- [MixedReality/AllowCaptivePortalBeforeSignIn](./policy-csp-mixedreality.md#mixedreality-allowcaptiveportalpeforesignin) <sup>Insider</sup>
+- [MixedReality/AllowLaunchUriInSingleAppKiosk](./policy-csp-mixedreality.md#mixedreality-allowlaunchuriinsingleappkiosk)<sup>10</sup>
 - [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>11</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
 - [MixedReality/ConfigureMovingPlatform](policy-csp-mixedreality.md#mixedreality-configuremovingplatform) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
+- [MixedReality/ConfigureNtpClient](./policy-csp-mixedreality.md#mixedreality-configurentpclient) <sup>Insider</sup>
+- [MixedReality/DisallowNetworkConnectivityPassivePolling](./policy-csp-mixedreality.md#mixedreality-disablesisallownetworkconnectivitypassivepolling) <sup>Insider</sup>
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
 - [MixedReality/HeadTrackingMode](policy-csp-mixedreality.md#mixedreality-headtrackingmode) <sup>9</sup>
+- [MixedReality/ManualDownDirectionDisabled](policy-csp-mixedreality.md#mixedreality-manualdowndirectiondisabled) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
 - [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
+- [MixedReality/NtpClientEnabled](./policy-csp-mixedreality.md#mixedreality-ntpclientenabled) <sup>Insider</sup>
+- [MixedReality/SkipCalibrationDuringSetup](./policy-csp-mixedreality.md#mixedreality-skipcalibrationduringsetup) <sup>Insider</sup>
+- [MixedReality/SkipTrainingDuringSetup](./policy-csp-mixedreality.md#mixedreality-skiptrainingduringsetup) <sup>Insider</sup>
 - [MixedReality/VisitorAutoLogon](policy-csp-mixedreality.md#mixedreality-visitorautologon) <sup>10</sup>
 - [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled) <sup>9</sup>
 - [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery) <sup>9</sup>
@@ -67,6 +75,7 @@ ms.date: 06/06/2022
 - [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery) <sup>9</sup>
 - [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin) <sup>9</sup>
 - [Privacy/AllowInputPersonalization](policy-csp-privacy.md#privacy-allowinputpersonalization)
+- [Privacy/DisablePrivacyExperience](./policy-csp-privacy.md#privacy-disableprivacyexperience) <sup>Insider</sup>
 - [Privacy/LetAppsAccessAccountInfo](policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 - [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
 - [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forcedenytheseapps)
@@ -96,6 +105,11 @@ ms.date: 06/06/2022
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
 - [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist) <sup>9</sup>
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
+- [Storage/AllowStorageSenseGlobal](policy-csp-storage.md#storage-allowstoragesenseglobal) <sup>Insider</sup>
+- [Storage/AllowStorageSenseTemporaryFilesCleanup](policy-csp-storage.md#storage-allowstoragesensetemporaryfilescleanup) <sup>Insider</sup>
+- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold) <sup>Insider</sup>
+- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold) <sup>Insider</sup>
+- [Storage/ConfigStorageSenseGlobalCadence](policy-csp-storage.md#storage-configstoragesenseglobalcadence) <sup>Insider</sup>
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
@@ -140,6 +154,7 @@ Footnotes:
 - 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes-2004#windows-holographic-version-20h2)
 - 10 - Available in [Windows Holographic, version 21H1](/hololens/hololens-release-notes#windows-holographic-version-21h1)
 - 11 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
+- Insider - Available in our current [HoloLens Insider builds](/hololens/hololens-insider).
 
 ## Related topics
 
