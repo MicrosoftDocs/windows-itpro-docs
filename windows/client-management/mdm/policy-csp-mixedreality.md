@@ -338,9 +338,20 @@ Supported value is Integer.
 <!--/Scope-->
 <!--Description-->
 
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+You may want to configure a different time server for your device fleet. IT admins can use thi policy to configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
+
 This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
 
+> [!NOTE]
+> This feature requires enabling[NtpClientEnabled](#mixedreality-ntpclientenabled) as well.
+
 - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
+
+> [!NOTE]
+> Reboot is required for these policies to take effect.
 
 <!--/Description-->
 
@@ -595,6 +606,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
 This policy setting specifies whether the Windows NTP Client is enabled.
 
 - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/NtpClientEnabled`
