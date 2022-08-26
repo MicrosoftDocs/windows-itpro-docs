@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_DWM
-description: Policy CSP - ADMX_DWM
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_DWM.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 08/31/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_DWM
@@ -58,8 +58,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -76,11 +77,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the default color for window frames when the user does not specify a color. 
+This policy setting controls the default color for window frames when the user doesn't specify a color. 
 
-If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user does not specify a color. 
+If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user doesn't specify a color. 
 
-If you disable or do not configure this policy setting, the default internal color is used, if the user does not specify a color. 
+If you disable or don't configure this policy setting, the default internal color is used, if the user doesn't specify a color. 
 
 > [!NOTE]
 > This policy setting can be used in conjunction with the "Prevent color changes of window frames" setting, to enforce a specific color for window frames that cannot be changed by users.
@@ -107,8 +108,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -125,11 +127,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the default color for window frames when the user does not specify a color. 
+This policy setting controls the default color for window frames when the user doesn't specify a color. 
 
-If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user does not specify a color. 
+If you enable this policy setting and specify a default color, this color is used in glass window frames, if the user doesn't specify a color. 
 
-If you disable or do not configure this policy setting, the default internal color is used, if the user does not specify a color. 
+If you disable or don't configure this policy setting, the default internal color is used, if the user doesn't specify a color. 
 
 > [!NOTE]
 > This policy setting can be used in conjunction with the "Prevent color changes of window frames" setting, to enforce a specific color for window frames that cannot be changed by users.
@@ -156,8 +158,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -178,9 +181,9 @@ This policy setting controls the appearance of window animations such as those f
 
 If you enable this policy setting, window animations are turned off. 
 
-If you disable or do not configure this policy setting, window animations are turned on. 
+If you disable or don't configure this policy setting, window animations are turned on. 
 
-Changing this policy setting requires a logoff for it to be applied.
+Changing this policy setting requires a sign out for it to be applied.
 
 <!--/Description-->
 
@@ -204,8 +207,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -226,9 +230,9 @@ This policy setting controls the appearance of window animations such as those f
 
 If you enable this policy setting, window animations are turned off. 
 
-If you disable or do not configure this policy setting, window animations are turned on. 
+If you disable or don't configure this policy setting, window animations are turned on. 
 
-Changing this policy setting requires a logoff for it to be applied.
+Changing this policy setting requires out a sign for it to be applied.
 
 <!--/Description-->
 
@@ -252,8 +256,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -274,7 +279,7 @@ This policy setting controls the ability to change the color of window frames.
 
 If you enable this policy setting, you prevent users from changing the default window frame color. 
 
-If you disable or do not configure this policy setting, you allow users to change the default window frame color. 
+If you disable or don't configure this policy setting, you allow users to change the default window frame color. 
 
 > [!NOTE]
 > This policy setting can be used in conjunction with the "Specify a default color for window frames" policy setting, to enforce a specific color for window frames that cannot be changed by users.
@@ -301,8 +306,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -323,7 +329,7 @@ This policy setting controls the ability to change the color of window frames.
 
 If you enable this policy setting, you prevent users from changing the default window frame color. 
 
-If you disable or do not configure this policy setting, you allow users to change the default window frame color. 
+If you disable or don't configure this policy setting, you allow users to change the default window frame color. 
 
 > [!NOTE] 
 > This policy setting can be used in conjunction with the "Specify a default color for window frames" policy setting, to enforce a specific color for window frames that cannot be changed by users.
@@ -343,3 +349,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

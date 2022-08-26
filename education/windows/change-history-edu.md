@@ -2,17 +2,19 @@
 title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
 keywords: Windows 10 education documentation, change history
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: dansimp
-ms.author: dansimp
-ms.date: 05/21/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
@@ -42,7 +44,7 @@ New or changed topic | Description
 | [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | Updated the list of device manufacturers. |
 | [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md) | Updated instances of the parameter enablePrint, or enablePrinting, to requirePrinting. |
 | [Set up Take a Test on a single PC](take-a-test-single-pc.md) | Updated instances of the parameter enablePrint, or enablePrinting, to requirePrinting. |
-| [Take a Test app technical reference](take-a-test-app-technical.md) | Added a note that the Alt+F4 key combination for enabling students to exit the test is disabled in Windows 10, version 1703 (Creators Update) and later. Also added additional info about the Ctrl+Alt+Del key combination. |
+| [Take a Test app technical reference](take-a-test-app-technical.md) | Added a note that the Alt+F4 key combination for enabling students to exit the test is disabled in Windows 10, version 1703 (Creators Update) and later. Also added more information about the Ctrl+Alt+Del key combination. |
 
 ## RELEASE: Windows 10, version 1709 (Fall Creators Update)
 
@@ -62,7 +64,7 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | New. Find out how you can test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us. |
+| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | New. Find out how you can test Windows 10 S on various Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us. |
 | [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated the instructions to reflect the new or updated functionality in the latest version of the app. |
 
 ## July 2017
@@ -85,16 +87,16 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
+| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt in to a free switch to Windows 10 Pro Education. |
 | [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated. Now includes network tips and updated step-by-step instructions that show the latest updates to the app such as Wi-Fi setup. |
 
 ## RELEASE: Windows 10, version 1703 (Creators Update)
 
 | New or changed topic | Description|
 | --- | --- |
-| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](/microsoft-365/education/deploy/) | New. Learn how you can you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
+| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](/microsoft-365/education/deploy/) | New. Learn how you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
 | [Microsoft Education documentation and resources](/education) | New. Find links to more content for IT admins, teachers, students, and education app developers. |
-| [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school. |
+| [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | Updated the screenshots and related instructions to reflect the current UI and experience.  |
 | [Set up Windows devices for education](set-up-windows-10.md) | Updated for Windows 10, version 1703. |
 | Set up School PCs app: </br> [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md) </br> [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated. Describes the school-specific settings and policies that Set up School PC configures. Also provides step-by-step instructions for using the latest version of the app to create a provisioning package that you can use to set up student PCs. |
@@ -135,7 +137,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | New or changed topic | Description|
 | --- | --- |
 | [Windows 10 editions for education customers](windows-editions-for-education-customers.md)  | New. Learn about the two editions in Windows 10, version 1607 that's designed for the needs of K-12 institutions. |
-|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)|New. Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, AD DS, and Microsoft Azure AD, use SCCM, Intune, and Group Policy to manage devices. |
+|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)|New. Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, AD DS, and Microsoft Azure AD, use Configuration Manager, Intune, and Group Policy to manage devices. |
 
 ## June 2016
 

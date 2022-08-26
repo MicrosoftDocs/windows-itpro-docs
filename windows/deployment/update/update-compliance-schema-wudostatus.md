@@ -1,15 +1,11 @@
 ---
 title: Update Compliance Schema - WUDOStatus
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: WUDOStatus schema
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.collection: M365-analytics
 ms.topic: article
 ---
@@ -21,12 +17,12 @@ ms.topic: article
 
 WUDOStatus records provide information, for a single device, on their bandwidth utilization for a specific content type in the event they use [Delivery Optimization](https://support.microsoft.com/help/4468254/windows-update-delivery-optimization-faq), and other information to create more detailed reports and splice on certain common characteristics.
 
-These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](./waas-delivery-optimization-reference.md).
+These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](../do/waas-delivery-optimization-reference.md).
 
 |Field |Type |Example |Description |
 |-|-|-|-|
 |**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md). |
-|**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user Managed Service Account (MSA) service is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
+|**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user managed service account is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
 |**City** |[string](/azure/kusto/query/scalar-data-types/string) | |Approximate city device was in while downloading content, based on IP Address. |
 |**Country** |[string](/azure/kusto/query/scalar-data-types/string) | |Approximate country device was in while downloading content, based on IP Address. |
 |**ISP** |[string](/azure/kusto/query/scalar-data-types/string) | |The Internet Service Provider estimation. |
@@ -36,10 +32,10 @@ These fields are briefly described in this article, to learn more about Delivery
 |**BytesFromGroupPeers** |[long](/azure/kusto/query/scalar-data-types/long) |`523132` |Total number of bytes downloaded from Group Peers. |
 |**BytesFromIntPeers** |[long](/azure/kusto/query/scalar-data-types/long) |`328350` |Total number of bytes downloaded from Internet Peers. |
 |**BytesFromPeers** |[long](/azure/kusto/query/scalar-data-types/long) |`43145` |Total number of bytes downloaded from peers. |
-|**ContentDownloadMode** |[int](/azure/kusto/query/scalar-data-types/int) |`0` |Device's Delivery Optimization [Download Mode](./waas-delivery-optimization-reference.md#download-mode) configuration for this content. |
+|**ContentDownloadMode** |[int](/azure/kusto/query/scalar-data-types/int) |`0` |Device's Delivery Optimization [Download Mode](../do/waas-delivery-optimization-reference.md#download-mode) configuration for this content. |
 |**ContentType** |[int](/azure/kusto/query/scalar-data-types/int) |`Quality Updates` |The type of content being downloaded. |
 |**DOStatusDescription** |[string](/azure/kusto/query/scalar-data-types/string) | |A short description of DO's status, if any. |
-|**DownloadMode** |[string](/azure/kusto/query/scalar-data-types/string) |`HTTP+LAN (1)` |Device's Delivery Optimization [Download Mode](./waas-delivery-optimization-reference.md#download-mode) configuration for this device. |
+|**DownloadMode** |[string](/azure/kusto/query/scalar-data-types/string) |`HTTP+LAN (1)` |Device's Delivery Optimization [Download Mode](../do/waas-delivery-optimization-reference.md#download-mode) configuration for this device. |
 |**DownloadModeSrc** |[string](/azure/kusto/query/scalar-data-types/string) |`Default` |The source of the DownloadMode configuration. |
 |**GroupID** |[string](/azure/kusto/query/scalar-data-types/string) | |The DO Group ID. |
 |**NoPeersCount** |[long](/azure/kusto/query/scalar-data-types/long) | |The number of peers this device interacted with. |

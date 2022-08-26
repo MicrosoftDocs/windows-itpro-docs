@@ -1,14 +1,13 @@
 ---
 title: ProfileXML XSD
 description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
-ms.assetid: 2F32E14B-F9B9-4760-AE94-E57F1D4DFDB3
-ms.reviewer:
-manager: dansimp
-ms.author: dansimp
+ms.reviewer: 
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/14/2020
 ---
 
@@ -442,3 +441,7 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
   </Route>
 </VPNProfile>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

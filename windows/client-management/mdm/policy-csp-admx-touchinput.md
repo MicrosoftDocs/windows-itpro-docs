@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_TouchInput
-description: Policy CSP - ADMX_TouchInput
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_TouchInput.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/23/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_TouchInput
@@ -52,8 +52,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -70,12 +71,16 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Turn off Tablet PC touch input Turns off touch input, which allows the user to interact with their computer using their finger.  
+This setting turns off Tablet PC touch input Turns off touch input, which allows the user to interact with their computer using their finger.  
 
-- If you enable this setting, the user will not be able to produce input with touch. They will not be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.  
-- If you disable this setting, the user can produce input with touch, by using gestures, the touch pointer, and other-touch specific features.  
+If you enable this setting, the user won't be able to produce input with touch. They won't be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.  
 
-If you do not configure this setting, touch input is on by default.  Note: Changes to this setting will not take effect until the user logs off.
+If you disable this setting, the user can produce input with touch, by using gestures, the touch pointer, and other-touch specific features.  
+
+If you don't configure this setting, touch input is on by default.  
+
+>[!NOTE]
+> Changes to this setting won't take effect until the user signs out.
 
 <!--/Description-->
 
@@ -96,8 +101,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -114,12 +120,16 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Turn off Tablet PC touch input Turns off touch input, which allows the user to interact with their computer using their finger.  
+This setting turns off Tablet PC touch input Turns off touch input, which allows the user to interact with their computer using their finger.  
 
-- If you enable this setting, the user will not be able to produce input with touch. They will not be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.  
-- If you disable this setting, the user can produce input with touch, by using gestures, the touch pointer, and other-touch specific features.  
+If you enable this setting, the user won't be able to produce input with touch. They won't be able to use touch input or touch gestures such as tap and double tap, the touch pointer, and other touch-specific features.  
 
-If you do not configure this setting, touch input is on by default.  Note: Changes to this setting will not take effect until the user logs off.
+If you disable this setting, the user can produce input with touch, by using gestures, the touch pointer, and other-touch specific features.  
+
+If you don't configure this setting, touch input is on by default.  
+
+>[!NOTE]
+>Changes to this setting won't take effect until the user signs out.
 
 <!--/Description-->
 
@@ -143,8 +153,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -161,14 +172,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Turn off Panning  Turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.  
+This setting turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.  
 
-- If you enable this setting, the user will not be able to pan windows by touch.  
+If you enable this setting, the user won't be able to pan windows by touch.  
 
-- If you disable this setting, the user can pan windows by touch. If you do not configure this setting, Touch Panning is on by default.  
+If you disable this setting, the user can pan windows by touch. If you don't configure this setting, Touch Panning is on by default.  
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 
 <!--/Description-->
 
@@ -190,8 +201,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -208,14 +220,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Turn off Panning  Turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.  
+This setting turns off touch panning, which allows users pan inside windows by touch. On a compatible PC with a touch digitizer, by default users are able to scroll or pan inside a scrolling area by dragging up or down directly on the scrolling content.  
 
-- If you enable this setting, the user will not be able to pan windows by touch.  
+If you enable this setting, the user won't be able to pan windows by touch.  
 
-- If you disable this setting, the user can pan windows by touch. If you do not configure this setting, Touch Panning is on by default.  
+If you disable this setting, the user can pan windows by touch. If you don't configure this setting, Touch Panning is on by default.  
 
 > [!NOTE]
-> Changes to this setting will not take effect until the user logs off.
+> Changes to this setting won't take effect until the user logs off.
 
 <!--/Description-->
 
@@ -233,3 +245,7 @@ ADMX Info:
 
 <!--/Policies-->
 
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

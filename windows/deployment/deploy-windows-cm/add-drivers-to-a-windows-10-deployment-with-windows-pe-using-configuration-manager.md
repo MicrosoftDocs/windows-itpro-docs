@@ -1,17 +1,12 @@
 ---
 title: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager
 description: Learn how to configure the Windows Preinstallation Environment (Windows PE) to include required network and storage drivers.
-ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deploy, task sequence
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.localizationpriority: medium
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -22,10 +17,10 @@ ms.custom: seo-marvel-apr2020
 
 - Windows 10
 
-In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines. Even though the Windows PE boot image and the Windows 10 operating system contain many out-of-the-box drivers, it is likely you will have to add new or updated drivers to support all your hardware. In this section, you import drivers for both Windows PE and the full Windows 10 operating system.
+In this topic, you'll learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines. Even though the Windows PE boot image and the Windows 10 operating system contain many out-of-the-box drivers, it's likely you'll have to add new or updated drivers to support all your hardware. In this section, you import drivers for both Windows PE and the full Windows 10 operating system.
 
-For the purposes of this guide, we will use one server computer: CM01.
-- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
+For the purposes of this guide, we'll use one server computer: CM01.
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide, CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
 
  An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
 
@@ -34,9 +29,9 @@ For the purposes of this guide, we will use one server computer: CM01.
 This section will show you how to import some network and storage drivers for Windows PE. 
 
 >[!NOTE]
->Windows PE usually has a fairly comprehensive set of drivers out of the box, assuming that you are using a recent version of the Windows ADK. This is different than the full Windows OS which will often require drivers. You shouldn't add drivers to Windows PE unless you have an issue or are missing functionality, and in these cases you should only add the driver that you need.  An example of a common driver that is added is the Intel I217 driver. Adding too many drivers can cause conflicts and lead to driver bloat in the Config Mgr database. This section shows you how to add drivers, but typically you can just skip this procedure.
+>Windows PE usually has a fairly comprehensive set of drivers out of the box, assuming that you are using a recent version of the Windows ADK. This is different than the full Windows OS which will often require drivers. You shouldn't add drivers to Windows PE unless you've an issue or are missing functionality, and in these cases you should only add the driver that you need.  An example of a common driver that is added is the Intel I217 driver. Adding too many drivers can cause conflicts and lead to driver bloat in the Config Mgr database. This section shows you how to add drivers, but typically you can just skip this procedure.
 
-This section assumes you have downloaded some drivers to the **D:\\Sources\\OSD\\DriverSources\\WinPE x64** folder on CM01.
+This section assumes you've downloaded some drivers to the **D:\\Sources\\OSD\\DriverSources\\WinPE x64** folder on CM01.
 
 ![Drivers.](../images/cm01-drivers.png)
 
@@ -61,9 +56,9 @@ On **CM01**:
 
 ## Add drivers for Windows 10
 
-This section illustrates how to add drivers for Windows 10 using the HP EliteBook 8560w as an example. For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
+This section illustrates how to add drivers for Windows 10 using the HP EliteBook 8560w as an example. Use the HP Image Assistant from the [HP Client Management Solutions site](https://hp.com/go/clientmanagement).
 
-For the purposes of this section, we assume that you have downloaded the Windows 10 drivers for the HP EliteBook 8560w model and copied them to the **D:\Sources$\OSD\DriverSources\Windows 10 x64\Hewlett-Packard\HP EliteBook 8560w** folder on CM01.
+For the purposes of this section, we assume that you've downloaded the Windows 10 drivers for the HP EliteBook 8560w model and copied them to the **D:\Sources$\OSD\DriverSources\Windows 10 x64\Hewlett-Packard\HP EliteBook 8560w** folder on CM01.
 
 ![Drivers in Windows.](../images/cm01-drivers-windows.png)
 
@@ -86,9 +81,9 @@ On **CM01**:
     * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w
 
     >[!NOTE]
-    >The package path does not yet exist, so you have to type it in. The wizard will create the new package using the path you specify.
+    >The package path does not yet exist, so you've to type it in. The wizard will create the new package using the path you specify.
 
-5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
+5.  On the **Select drivers to include in the boot image** page, don't select anything, and click **Next** twice. After the package has been created, click **Close**.
 
     >[!NOTE]
     >If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.

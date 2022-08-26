@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_RemoteAssistance
-description: Policy CSP - ADMX_RemoteAssistance
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_RemoteAssistance.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/14/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_RemoteAssistance
@@ -45,8 +45,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -63,13 +64,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting does not affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
+This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting doesn't affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
 
 If you enable this policy setting, only computers running this version (or later versions) of the operating system can connect to this computer.
 
 If you disable this policy setting, computers running this version and a previous version of the operating system can connect to this computer.
 
-If you do not configure this policy setting, users can configure the setting in System Properties in the Control Panel.
+If you don't configure this policy setting, users can configure this setting in System Properties in the Control Panel.
 
 <!--/Description-->
 
@@ -93,8 +94,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -133,7 +135,7 @@ If you enable this policy setting, bandwidth optimization occurs at the level sp
 
 If you disable this policy setting, application-based settings are used.
 
-If you do not configure this policy setting, application-based settings are used.
+If you don't configure this policy setting, application-based settings are used.
 
 <!--/Description-->
 
@@ -151,3 +153,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

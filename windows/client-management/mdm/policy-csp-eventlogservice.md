@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - EventLogService
-description: Learn how to use the Policy CSP - EventLogService settting to control Event Log behavior when the log file reaches its maximum size.
-ms.author: dansimp
+description: Learn how to use the Policy CSP - EventLogService setting to control Event Log behavior when the log file reaches its maximum size.
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - EventLogService
-
-
 
 <hr/>
 
@@ -36,7 +34,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -48,6 +45,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -65,13 +63,14 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls Event Log behavior when the log file reaches its maximum size.
+This policy setting controls Event Log behavior, when the log file reaches its maximum size.
 
-If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
 
-If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
-Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
+> [!NOTE]
+> Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
 
 <!--/Description-->
 
@@ -96,6 +95,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -115,9 +115,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
+If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
 
 <!--/Description-->
 
@@ -142,6 +142,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -161,9 +162,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
+If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
 
 <!--/Description-->
 
@@ -188,6 +189,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -207,9 +209,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
+If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
 
 <!--/Description-->
 
@@ -227,3 +229,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

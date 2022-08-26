@@ -1,17 +1,13 @@
 ---
 title: How to Register and Unregister a Publishing Server by Using the Management Console (Windows 10/11)
 description: How to Register and Unregister a Publishing Server by Using the Management Console
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ---
-
 
 # How to Register and Unregister a Publishing Server by Using the Management Console
 
@@ -43,6 +39,6 @@ Use the following procedure to register or unregister a publishing server.
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 [Operations for App-V](appv-operations.md)

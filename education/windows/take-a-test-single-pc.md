@@ -2,22 +2,21 @@
 title: Set up Take a Test on a single PC
 description: Learn how to set up and use the Take a Test app on a single PC.
 keywords: take a test, test taking, school, set up on single PC
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 11/08/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Set up Take a Test on a single PC
-**Applies to:**
-
--   Windows 10  
 
 To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow the guidance in this topic.
 
@@ -113,7 +112,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 
 3. To enable permissive mode, do not include `enforceLockdown` in the schema parameters.
 
-   See [Permissive mode](take-a-test-app-technical.md#permissive-mode) and [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blob/master/irp/doc/req/SecureBrowserAPIspecification.md) for more info.
+   For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
 
 
 ### Create a shortcut for the test link

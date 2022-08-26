@@ -4,8 +4,9 @@ description: A note in regard to important Microsoft 365 Defender guidance.
 ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
-author: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.prod: m365-security
 ms.topic: include
 ---
