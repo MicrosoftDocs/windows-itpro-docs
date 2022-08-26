@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/20/2021
+ms.date: 08/25/2022
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -30,6 +30,9 @@ The threat landscape is continually evolving. While hackers are busy developing 
 ## Hardware requirements
 
 Your environment must have the following hardware to run Microsoft Defender Application Guard.
+
+> [!NOTE]
+> Application Guard currently isn't supported on Windows 11 ARM64 devices.
 
 | Hardware | Description |
 |--------|-----------|
