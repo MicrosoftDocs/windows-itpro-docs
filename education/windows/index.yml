@@ -44,18 +44,32 @@ landingContent:
         links:
         - text: Deploy and manage Windows devices in a school
           url: tutorial-school-deployment/index.md
-  - title: Set up School PCs
+
+
+  - title: Deploy devices with Set up School PCs
     linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: overview.md
       - linkListType: concept
         links:
-        - text: Trusted Platform Module
-          url: overview.md
-        - text: Windows Defender System Guard firmware protection
-          url: overview.md
+        - text: What is Set up School PCs?
+          url: set-up-school-pcs-technical.md
+      - linkListType: how-to-guide
+        links:
+        - text: Use the Set up School PCs app
+          url: use-set-up-school-pcs-app.md
+      - linkListType: reference
+        links:
+        - text: Provisioning package settings
+          url: set-up-school-pcs-provisioning-package.md
+      - linkListType: whats-new
+        links:
+        - text: Provisioning package settings
+          url: set-up-school-pcs-whats-new.md
+      - linkListType: video
+        links:
+        - text: Provisioning package settings
+          url: https://www.youtube.com/watch?v=2ZLup_-PhkA
+
+
   - title: Configure devices
     linkLists:
       - linkListType: concept
