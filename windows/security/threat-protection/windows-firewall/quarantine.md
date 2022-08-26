@@ -1,16 +1,22 @@
 ---
 title: Quarantine behavior
 description: Quarantine behavior is explained in detail.
-ms.author: v-bshilpa
-author: Benny-54
-manager: dansimp
-ms.reviewer: 
+ms.author: paoloma
+author: paolomatarazzo
+manager: aaroncz
+ms.reviewer: jekrynit
 ms.prod: m365-security
 ms.localizationpriority: normal
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Quarantine behavior

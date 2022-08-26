@@ -2,22 +2,19 @@
 title: Windows Hello for Business Videos
 description: View several informative videos describing features and experiences in Windows Hello for Business in Windows 10 and Windows 11.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 07/26/2022
-ms.reviewer: paoloma
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 # Windows Hello for Business Videos
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
 ## Overview of Windows Hello for Business and Features
 
 Watch Pieter Wigleven explain Windows Hello for Business, Multi-factor Unlock, and Dynamic Lock

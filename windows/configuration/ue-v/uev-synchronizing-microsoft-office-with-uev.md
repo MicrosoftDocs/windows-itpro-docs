@@ -17,11 +17,13 @@ ms.topic: article
 
 Microsoft User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings. The combination of UE-V and App-V  support for Office enables the same experience on virtualized instances of Office from any UE-V-enabled device or virtualized desktop.
 
+To synchronize Office applications settings, you can download Office templates from the [User Experience Virtualization (UE-V) Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V). This resource provides Microsoft-authored UE-V settings location templates and community-developed settings location templates.
+
 ## Microsoft Office support in UE-V
 
 UE-V includes settings location templates for Microsoft Office 2016, 2013, and 2010. In previous versions of UE-V, settings location templates for Office 2013 and Office 2010 were distributed and registered when you installed the UE-V agent. Now that UE-V is a feature in Windows 10, version 1607, settings location templates are installed when you install or upgrade to the new operating system.  
 
-These templates help synchronize users' Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
+These templates help synchronize users’ Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience aren't included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
 
 ## Synchronized Office Settings
 
@@ -41,7 +43,6 @@ Review the following tables for details about Office support in UE-V:
 |Microsoft Access 2016<p>Microsoft Lync 2016<p>Microsoft Excel 2016<p>Microsoft OneNote 2016<p>Microsoft Outlook 2016<p>Microsoft PowerPoint 2016<p>Microsoft Project 2016<p>Microsoft Publisher 2016<p>Microsoft SharePoint Designer 2013 (not updated for 2016)<p>Microsoft Visio 2016<p>Microsoft Word 2016<p>Microsoft Office Upload Manager|Microsoft Access 2013<p>Microsoft Lync 2013<p>Microsoft Excel 2013<p>Microsoft InfoPath 2013<p>Microsoft OneNote 2013<p>Microsoft Outlook 2013<p>Microsoft PowerPoint 2013<p>Microsoft Project 2013<p>Microsoft Publisher 2013<p>Microsoft SharePoint Designer 2013<p>Microsoft Visio 2013<p>Microsoft Word 2013<p>Microsoft Office Upload Manager|Microsoft Access 2010<p>Microsoft Lync 2010<p>Microsoft Excel 2010<p>Microsoft InfoPath 2010<p>Microsoft OneNote 2010<p>Microsoft Outlook 2010<p>Microsoft PowerPoint 2010<p>Microsoft Project 2010<p>Microsoft Publisher 2010<p>Microsoft SharePoint Designer 2010<p>Microsoft Visio 2010<p>Microsoft Word 2010|
 
 ## Deploying Office templates
-
 
 You can deploy UE-V settings location template with the following methods:
 

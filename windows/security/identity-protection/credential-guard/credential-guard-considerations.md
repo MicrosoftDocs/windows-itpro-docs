@@ -3,22 +3,22 @@ title: Advice while using Windows Defender Credential Guard (Windows)
 description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard in Windows.
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: erikdau
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/31/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Considerations when using Windows Defender Credential Guard
-
-**Applies to**
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
 
 Passwords are still weak. We recommend that in addition to deploying Windows Defender Credential Guard, organizations move away from passwords to other authentication methods, such as physical smart cards, virtual smart cards, or Windows Hello for Business.
 
@@ -80,8 +80,8 @@ Domain user sign-in on a domain-joined device after clearing a TPM for as long a
 |Credential Type | Windows version | Behavior
 |---|---|---|
 | Certificate (smart card or Windows Hello for Business) | All | All data protected with user DPAPI is unusable and user DPAPI doesn't work at all. |
-| Password | Windows 10 v1709 or later | If the user signed-in with a certificate or password prior to clearing the TPM, then they can sign-in with password and user DPAPI is unaffected.
-| Password | Windows 10 v1703 | If the user signed-in with a password prior to clearing the TPM, then they can sign-in with that password and are unaffected.
+| Password | Windows 10 v1709 or later | If the user signed in with a certificate or password prior to clearing the TPM, then they can sign-in with password and user DPAPI is unaffected.
+| Password | Windows 10 v1703 | If the user signed in with a password prior to clearing the TPM, then they can sign-in with that password and are unaffected.
 | Password | Windows 10 v1607 or earlier | Existing user DPAPI protected data is unusable. User DPAPI is able to protect new data.
 
 Once the device has connectivity to the domain controllers, DPAPI recovers the user's key and data protected prior to clearing the TPM can be decrypted.
