@@ -33,6 +33,9 @@ manager: aaroncz
     <a href="#remotedesktopservices-donotallowpasswordsaving">RemoteDesktopServices/DoNotAllowPasswordSaving</a>
   </dd>
   <dd>
+  <dd>
+    <a href="#remotedesktopservices-donotallowwebauthnredirection">RemoteDesktopServices/DoNotAllowWebAuthnRedirection</a>
+  </dd>
     <a href="#remotedesktopservices-promptforpassworduponconnection">RemoteDesktopServices/PromptForPasswordUponConnection</a>
   </dd>
   <dd>
@@ -250,6 +253,56 @@ ADMX Info:
 -   GP Friendly name: *Do not allow passwords to be saved*
 -   GP name: *TS_CLIENT_DISABLE_PASSWORD_SAVING_2*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Connection Client*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="remotedesktopservices-donotallowwebauthnredirection"></a>**RemoteDesktopServices/DoNotAllowWebAuthnRedirection**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting lets you control the redirection of web authentication (WebAuthn) requests from a Remote Desktop session to the local device. This redirection enables users to authenticate to resources inside the Remote Desktop session using their local authenticator (e.g., Windows Hello for Business, security key, or other).
+
+By default, Remote Desktop allows redirection of WebAuthn requests.
+
+If you enable this policy setting, users can’t use their local authenticator inside the Remote Desktop session.
+
+If you disable or do not configure this policy setting, users can use local authenticators inside the Remote Desktop session.
+
+If you don't configure this policy setting, users can use local authenticators inside the Remote Desktop session.
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Do not allow WebAuthn redirection*
+-   GP name: *TS_WEBAUTHN*
+-   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection*
 -   GP ADMX file name: *terminalserver.admx*
 
 <!--/ADMXBacked-->
