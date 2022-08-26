@@ -38,6 +38,11 @@ landingContent:
           url: overview.md
         - text: Enable Stickers
           url: overview.md
+      - linkListType: video
+        links:
+        - text: Deploy Windows 11 SE using Set up School PCs
+          url: https://www.youtube.com/watch?v=Ql2fbiOop7c
+
   - title: Get started
     linkLists:
       - linkListType: tutorial
