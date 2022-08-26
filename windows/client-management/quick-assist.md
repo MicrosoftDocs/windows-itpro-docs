@@ -137,11 +137,11 @@ Before installing Quick Assist, you'll need to set up synchronization between In
 > [!NOTE]
 > Assigning the app to a device or group of devices instead of a user is important because it's the only way to install a store app in device context.
 
-Visit [Add Microsoft Store apps to Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/store-apps-windows) for more information.
+Visit [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-windows) for more information.
 
 ### Install Quick Assist Offline
 
-To install Quick Assist offline, you'll need to download your APPXBUNDLE and unecoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
+To install Quick Assist offline, you'll need to download your APPXBUNDLE and unecoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
 
 1. Start **Windows PowerShell** with Administrative privileges.
 1. In PowerShell, change the directory to the location you've saved the file to in step 1. (CD &#x3C;*location of package file*&#x3E;)
@@ -154,7 +154,7 @@ After running the command, you'll see Quick Assist 2.X is installed for the user
 
 The Microsoft Edge WebView2 is a development control that uses Microsoft Edge as the rendering engine to display web content in native apps. The new Quick Assist app is written using this control and is required. For Windows 11 users, this runtime control is built in. For Windows 10 users, the Quick Assist Store app will detect if WebView2 is present on launch and if necessary, it will be installed automatically. If an error message or prompt is shown indicating WebView2 isn't present, it will need to be installed separately.
 
-For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime](https://docs.microsoft.com/microsoft-edge/webview2/concepts/distribution)
+For more information on distributing and installing Microsoft Edge WebView2, visit [Distribute your app and the WebView2 Runtime](/microsoft-edge/webview2/concepts/distribution)
 
 ## Next steps
 
