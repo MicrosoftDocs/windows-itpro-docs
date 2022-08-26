@@ -497,7 +497,7 @@ You can reset the recovery password in two ways:
 > [!NOTE]
 > To manage a remote computer, you can specify the remote computer name rather than the local computer name.
 
-You can use the following sample script to create a VBScript file to reset the recovery passwords:
+You can use the following sample VBScript to reset the recovery passwords:
 
 ```vb
 ' Target drive letter
