@@ -31,6 +31,9 @@ manager: aaroncz
   <dd>
     <a href="#desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
   </dd>
+  <dd>
+    <a href="#desktopappinstaller-enableappinstaller">DesktopAppInstaller/EnableAppInstaller</a>
+  </dd>
 </dl>
 
 
@@ -77,6 +80,52 @@ If you disable this setting, no additional sources can be configured by the user
 ADMX Info:  
 -   GP Friendly name: *Enable Additional Windows Package Manager Sources*
 -   GP name: *EnableAdditionalSources*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enableappinstaller"></a>**DesktopAppInstaller/EnableAppInstaller**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy controls whether Windows Package Manager can be used by users. Users will still be able to execute the *winget* command. The default help will be displayed, and users will still be able to execute *winget -?* to display the help as well. Any other command will result in the user being informed the operation is disabled by Group Policy.
+
+- If you enable or do not configure this setting, users will be able to use the Windows Package Manager.
+- If you disable this setting, users will not be able to use the Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Controls whether the Windows Package Manager can be used by the users.*
+-   GP name: *EnableAppInstaller*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
