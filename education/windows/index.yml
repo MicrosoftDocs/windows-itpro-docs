@@ -49,7 +49,12 @@ landingContent:
         links:
         - text: Deploy and manage Windows devices in a school
           url: tutorial-school-deployment/index.md
-
+        - text: Prepare your tenant
+          url: tutorial-school-deployment/set-up-azure-ad.md
+        - text: Configure settings and applications with Microsoft Intune
+          url: tutorial-school-deployment/configure-devices-overview.md
+        - text: Manage devices with Microsoft Intune
+          url: tutorial-school-deployment/manage-overview.md
 
   - title: Deploy devices with Set up School PCs
     linkLists:
@@ -67,11 +72,11 @@ landingContent:
           url: set-up-school-pcs-provisioning-package.md
       - linkListType: whats-new
         links:
-        - text: Provisioning package settings
+        - text: What's new in Set up School PCs
           url: set-up-school-pcs-whats-new.md
       - linkListType: video
         links:
-        - text: Provisioning package settings
+        - text: Use the Set up School PCs App
           url: https://www.youtube.com/watch?v=2ZLup_-PhkA
 
 
@@ -79,9 +84,9 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-        - text: Take a test
-          url: overview.md
-      - linkListType: concept
-        links:
+        - text: Take tests and assessments
+          url: take-tests-in-windows-10.md
         - text: Change Windows editions
-          url: overview.md
+          url: change-home-to-edu.md
+        - text: "Deploy Minecraft: Education Edition"
+          url: get-minecraft-for-education.md
