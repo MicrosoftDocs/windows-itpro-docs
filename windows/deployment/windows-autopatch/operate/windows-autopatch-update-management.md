@@ -46,7 +46,7 @@ Each deployment ring has a different set of update deployment policies to contro
 Also, during the [device registration process](../deploy/windows-autopatch-device-registration-overview.md), Windows Autopatch assigns each device being registered to one of its deployment rings so that the service has the proper representation of the device diversity across the organization in each deployment ring. The deployment ring distribution is designed to release software update deployments to as few devices as possible to get the signals needed to make a quality evaluation of a given update deployment.
 
 > [!NOTE]
-> Windows Autopatch deployment rings only apply to Windows quality updates. Additionally, you can't create additional deployment rings or use your own for devices managed by the Windows Autopatch service.
+> You can't create additional deployment rings or use your own for devices managed by the Windows Autopatch service.
 
 ### Deployment ring calculation logic
 
