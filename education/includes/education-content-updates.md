@@ -2,6 +2,14 @@
 
 
 
+## Week of August 15, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/17/2022 | [For IT administrators get Minecraft Education Edition](/education/windows/school-get-minecraft) | modified |
+
+
 ## Week of August 08, 2022
 
 
