@@ -8519,6 +8519,8 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-start.md#start-disablecontrolcenter" id="start-disablecontrolcenter">Start/DisableControlCenter</a>
   </dd>
   <dd>
+    <a href="./policy-csp-start.md#start-disableeditingquicksettings" id="start-disableeditingquicksettings">Start/DisableEditingQuickSettings</a>
+  </dd>
   <dd>
     <a href="./policy-csp-start.md#start-forcestartsize" id="start-forcestartsize">Start/ForceStartSize</a>
   </dd>
@@ -8550,6 +8552,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-start.md#start-hiderecentlyaddedapps" id="start-hiderecentlyaddedapps">Start/HideRecentlyAddedApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-start.md#start-hiderecommendedsection" id="start-hiderecommendedsection">Start/HideRecommendedSection</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-start.md#start-hiderestart" id="start-hiderestart">Start/HideRestart</a>
   </dd>
   <dd>
@@ -8565,6 +8570,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-start.md#start-hideswitchaccount" id="start-hideswitchaccount">Start/HideSwitchAccount</a>
   </dd>
   <dd>
+    <a href="./policy-csp-start.md#start-hidetaskviewbutton" id="start-hidetaskviewbutton">Start/HideTaskViewButton</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-start.md#start-hideusertile" id="start-hideusertile">Start/HideUserTile</a>
   </dd>
   <dd>
@@ -8572,6 +8580,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-nopinningtotaskbar" id="start-nopinningtotaskbar">Start/NoPinningToTaskbar</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-start.md#start-simplifyquicksettings" id="start-simplifyquicksettings">Start/SimplifyQuickSettings</a>
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-startlayout" id="start-startlayout">Start/StartLayout</a>

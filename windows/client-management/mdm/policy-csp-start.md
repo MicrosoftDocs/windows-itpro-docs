@@ -60,6 +60,9 @@ manager: aaroncz
     <a href="#start-disablecontrolcenter">Start/DisableControlCenter</a>
   </dd>
   <dd>
+    <a href="#start-disableeditingquicksettings">Start/DisableEditingQuickSettings</a>
+  </dd>
+  <dd>
     <a href="#start-forcestartsize">Start/ForceStartSize</a>
   </dd>
   <dd>
@@ -90,6 +93,9 @@ manager: aaroncz
     <a href="#start-hiderecentlyaddedapps">Start/HideRecentlyAddedApps</a>
   </dd>
   <dd>
+    <a href="#start-hiderecommendedsection">Start/HideRecommendedSection</a>
+  </dd>
+  <dd>
     <a href="#start-hiderestart">Start/HideRestart</a>
   </dd>
   <dd>
@@ -105,6 +111,9 @@ manager: aaroncz
     <a href="#start-hideswitchaccount">Start/HideSwitchAccount</a>
   </dd>
   <dd>
+    <a href="#start-hidetaskviewbutton">Start/HideTaskViewButton</a>
+  </dd>
+  <dd>
     <a href="#start-hideusertile">Start/HideUserTile</a>
   </dd>
   <dd>
@@ -115,6 +124,9 @@ manager: aaroncz
   </dd>
   <dd>
     <a href="#start-showorhidemostusedapps">Start/ShowOrHideMostUsedApps</a>
+  </dd>
+  <dd>
+    <a href="#start-simplifyquicksettings">Start/SimplifyQuickSettings</a>
   </dd>
   <dd>
     <a href="#start-startlayout">Start/StartLayout</a>
@@ -668,6 +680,7 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
+<hr/>
 
 <!--Policy-->
 <a href="" id="start-disablecontrolcenter"></a>**Start/DisableControlCenter**  
@@ -722,6 +735,45 @@ The following are the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
+
+<!--Policy-->
+<a href="" id="start-disableeditingquicksettings"></a>**Start/DisableEditingQuickSettings**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will allow admins to indicate whether Quick Actions can be edited by the user.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0: Allow editing Quick Actions (default)
+- 1: Disable editing Quick Actions
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
@@ -1266,6 +1318,46 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
+<a href="" id="start-hiderecommendedsection"></a>**Start/HideRecommendedSection**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows you to hide the Start Menu's Recommended section when enabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0 (default): Do not hide the Start menu's Recommended section.
+- 1: Hide the Start menu's Recommended section.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
 <!--SupportedSKUs-->
@@ -1511,6 +1603,48 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
+<a href="" id="start-hidetaskviewbutton"></a>**Start/HideTaskViewButton**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows you to hide the Task View button from the Taskbar and its corresponding option in the Settings app.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0 (default): Do not hide the Taskbar's Task View button.
+- 1: Hide the Taskbar's Task View button.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
 <!--SupportedSKUs-->
@@ -1679,38 +1813,15 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-showorhidemostusedapps"></a>**Start/ShowOrHideMostUsedApps**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1739,6 +1850,47 @@ On clean install, the user setting defaults to "hide".
 
 <!--/SupportedValues-->
 
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="start-simplifyquicksettings"></a>**Start/SimplifyQuickSettings**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will allow admins to indicate whether the default or simplified Quick Actions layout should be loaded.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0: load regular Quick Actions layout.
+- 1: load simplified Quick Actions layout.
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
