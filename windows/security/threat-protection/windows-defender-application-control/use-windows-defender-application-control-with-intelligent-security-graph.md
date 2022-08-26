@@ -51,7 +51,7 @@ WDAC periodically requeries the reputation data on a file. Additionally, enterpr
 
 Setting up the ISG is easy using any management solution you wish. Configuring the ISG option involves these basic steps:
 
-- [Ensure that the **Enabled:Intelligent Security Graph authorization** option is set in the WDAC policy XML](#ensure-that-the-intelligent-security-graph-option-is-enabled-in-the-wdac-policy-xml)
+- [Ensure that the **Enabled:Intelligent Security Graph authorization** option is set in the WDAC policy XML](#ensure-that-the-isg-option-is-set-in-the-wdac-policy-xml)
 - [Enable the necessary services to allow WDAC to use the ISG correctly on the client](#enable-the-necessary-services-to-allow-wdac-to-use-the-isg-correctly-on-the-client)
 
 ### Ensure that the ISG option is set in the WDAC policy XML
