@@ -22,26 +22,6 @@ metadata:
   # Card (optional)
 
 landingContent: 
-  - title: Learn about Windows 11 SE
-    linkLists:
-      - linkListType: concept
-        links:
-        - text: What is Windows 11 SE?
-          url: windows-11-se-overview.md
-        - text: Windows 11 SE settings
-          url: windows-11-se-settings.md
-      - linkListType: whats-new
-        links:
-        - text: Configure federated login
-          url: overview.md
-        - text: Deploy education themes
-          url: overview.md
-        - text: Enable Stickers
-          url: overview.md
-      - linkListType: video
-        links:
-        - text: Deploy Windows 11 SE using Set up School PCs
-          url: https://www.youtube.com/watch?v=Ql2fbiOop7c
 
   - title: Get started
     linkLists:
@@ -79,6 +59,26 @@ landingContent:
         - text: Use the Set up School PCs App
           url: https://www.youtube.com/watch?v=2ZLup_-PhkA
 
+  - title: Learn about Windows 11 SE
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: What is Windows 11 SE?
+          url: windows-11-se-overview.md
+        - text: Windows 11 SE settings
+          url: windows-11-se-settings.md
+      - linkListType: whats-new
+        links:
+        - text: Configure federated login
+          url: overview.md
+        - text: Deploy education themes
+          url: overview.md
+        - text: Enable Stickers
+          url: overview.md
+      - linkListType: video
+        links:
+        - text: Deploy Windows 11 SE using Set up School PCs
+          url: https://www.youtube.com/watch?v=Ql2fbiOop7c
 
   - title: Configure devices
     linkLists:
