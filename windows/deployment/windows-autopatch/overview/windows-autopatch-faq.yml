@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.prod: w11
   ms.topic: faq
-  ms.date: 08/08/2022
+  ms.date: 08/26/2022
   audience: itpro
   ms.localizationpriority: medium
   manager: dougeby
@@ -67,7 +67,7 @@ sections:
           No, Windows 365 Enterprise Cloud PC's support all features of Windows Autopatch. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
       - question: Do my Cloud PCs appear any differently in the Windows Autopatch admin center?
         answer: |
-          Cloud PC displays the model as the license type you have provisioned. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
+          Cloud PC displays the model as the license type you have provisioned. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
       - question: Can I run Autopatch on my Windows 365 Business Workloads?
         answer: |
           No. Autopatch is only available on enterprise workloads. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
