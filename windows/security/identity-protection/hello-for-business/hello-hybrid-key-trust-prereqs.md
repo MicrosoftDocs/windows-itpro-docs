@@ -2,23 +2,20 @@
 title: Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
 ms.prod: m365-security
-author: mapalko
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- Hybrid deployment
-- Key trust
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 
@@ -35,7 +32,7 @@ The distributed systems on which these technologies were built involved several 
 
 Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.  
 
-A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, does not need a premium Azure Active Directory subscription.
+A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment does not need a premium Azure Active Directory subscription.
 
 You can deploy Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  
 If using the key trust deployment model, you MUST ensure that you have adequate (1 or more, depending on your authentication load) Windows Server 2016 or later Domain Controllers in each Active Directory site where users will be authenticating for Windows Hello for Business.  
@@ -90,7 +87,7 @@ The minimum required Enterprise certificate authority that can be used with Wind
 
 The two directories used in hybrid deployments must be synchronized.  You need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory.
   
-Organizations using older directory synchronization technology, such as DirSync or Azure AD sync need to upgrade to Azure AD Connect.
+Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect.
  
 ### Section Review
 

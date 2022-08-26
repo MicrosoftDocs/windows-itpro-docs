@@ -2,25 +2,23 @@
 title: Using Certificates for AADJ On-premises Single-sign On single sign-on
 description: If you want to use certificates for on-premises single-sign on for Azure Active Directory-joined devices, then follow these additional steps.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer:
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Azure AD-join</b>
+- ✅ <b>Hybrid Deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 
 # Using Certificates for AADJ On-premises Single-sign On
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Azure Active Directory-joined
-- Hybrid Deployment
-- Certificate trust
 
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
 
@@ -288,11 +286,13 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 
 7. On the **Security** tab, click **Add**.
 
-8. Type **NDES server** in the **Enter the object names to select** text box and click **OK**.
+8. Select **Object Types**, then, in the window that appears, choose **Computers** and click **OK**.
 
-9. Select **NDES server** from the **Group or users names** list. In the **Permissions for** section, select the **Allow** check box for the **Enroll** permission. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
+9. Type **NDES server** in the **Enter the object names to select** text box and click **OK**.
 
-10. Click on the **Apply** to save changes and close the console.
+10. Select **NDES server** from the **Group or users names** list. In the **Permissions for** section, select the **Allow** check box for the **Enroll** permission. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
+
+11. Click on the **Apply** to save changes and close the console.
 
 ### Create an Azure AD joined Windows Hello for Business authentication certificate template
 
@@ -334,7 +334,7 @@ The certificate authority may only issue certificates for certificate templates 
 > [!Important]
 > Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that certificate templates to that issuing certificate authority.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
+Sign in to the certificate authority or management workstations with an _enterprise admin_ -equivalent credential.
 
 1. Open the **Certificate Authority** management console.
 
@@ -849,7 +849,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
    ![Azure AD new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
 
-8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
+8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished, click **Select**.
 
 9. Click **Create**.
 

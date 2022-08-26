@@ -1,24 +1,26 @@
 ---
 title: Planning the GPOs (Windows)
 description: Learn about planning Group Policy Objects for your isolation zones in Windows Defender Firewall with Advanced Security, after you design the zone layout.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Planning the GPOs
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 When you plan the GPOs for your different isolation zones, you must complete the layout of the required zones and their mappings to the groups that link the devices to the zones.
 

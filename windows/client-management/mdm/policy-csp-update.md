@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Update
 description: The Policy CSP - Update allows the IT admin, when used with Update/ActiveHoursStart, to manage a range of active hours where update reboots aren't scheduled.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 06/15/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -3253,10 +3253,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
-
-Enables the IT admin to schedule the time of the update installation.
+Enables the IT admin to schedule the time of the update installation. Note that there is a window of approximately 30 minutes to allow for higher success rates of installation.
 
 The supported data type is an integer.
 
@@ -3527,8 +3524,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Driver from Windows Update. 
-- 1: Enabled, Detect, download, and deploy Driver from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Drivers from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Drivers from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3563,7 +3560,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+Configure this policy to specify whether to receive Windows Feature Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForQualityUpdates
@@ -3585,8 +3582,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Feature from Windows Update. 
-- 1: Enabled, Detect, download, and deploy Feature from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Feature Updates from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Feature Updates from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3621,7 +3618,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+Configure this policy to specify whether to receive Other Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeatureUpdates
@@ -3643,8 +3640,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Other from Windows Update.
-- 1: Enabled, Detect, download, and deploy Other from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Other updates from Windows Update.
+- 1: Enabled, Detect, download, and deploy Other updates from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3679,7 +3676,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+Configure this policy to specify whether to receive Windows Quality Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeatureUpdates
@@ -3701,8 +3698,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Quality from Windows Update. 
-- 1: Enabled, Detect, download, and deploy Quality from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Quality Updates from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Quality Updates from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->

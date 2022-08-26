@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Education
-description: Learn how to use the Policy CSP - Education setting to control the graphing functionality in the Windows Calculator app. 
-ms.author: dansimp
+description: Learn how to use the Policy CSP - Education setting to control the graphing functionality in the Windows Calculator app.
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Education

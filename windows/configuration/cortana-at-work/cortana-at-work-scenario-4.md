@@ -20,6 +20,6 @@ This scenario helps you find out if a time slot is free on your calendar.
 
 3. Type **Am I free at 3 PM tomorrow?**
 
-Cortana will respond with your availability for that time, as well as nearby meetings.
+Cortana will respond with your availability for that time, and nearby meetings.
 
 :::image type="content" source="../screenshot8.png" alt-text="Screenshot: Cortana showing free time on a calendar":::

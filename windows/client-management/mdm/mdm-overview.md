@@ -1,19 +1,18 @@
 ---
-title: Mobile device management
+title: Mobile Device Management overview
 description: Windows 10 and Windows 11 provide an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy.
-MS-HAID:
-- 'p\_phDeviceMgmt.provisioning\_and\_device\_management'
-- 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
-ms.topic: overview
-ms.prod: w10
+ms.date: 08/04/2022
 ms.technology: windows
-author: aczechowski
-ms.author: aaroncz
+ms.topic: article
+ms.prod: w10
+ms.localizationpriority: medium
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: aaroncz
 ms.collection: highpri
-ms.date: 06/03/2022
 ---
 
-# Mobile device management
+# Mobile Device Management overview
 
 Windows 10 and Windows 11 provide an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users' privacy on their personal devices. A built-in management component can communicate with the management server.
 
@@ -43,7 +42,6 @@ For more information about the MDM policies defined in the MDM security baseline
 - [MDM Security baseline for Windows 10, version 2004](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/2004-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 1909](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1909-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 1903](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1903-MDM-SecurityBaseLine-Document.zip)
-
 - [MDM Security baseline for Windows 10, version 1809](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].zip)
 
 For information about the MDM policies defined in the Intune security baseline, see [Windows security baseline settings for Intune](/mem/intune/protect/security-baseline-settings-mdm-all).

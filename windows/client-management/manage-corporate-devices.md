@@ -2,11 +2,11 @@
 title: Manage corporate devices
 description: You can use the same management tools to manage all device types running Windows 10 or Windows 11 desktops, laptops, tablets, and phones.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-keywords: ["MDM", "device management"]
+manager: aaroncz
+ms.author: vinpa
+keywords: [MDM, device management]
 ms.prod: w10
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/14/2021
 ms.topic: article

@@ -2,28 +2,30 @@
 title: Create an Outbound Port Rule (Windows)
 description: Learn to block outbound traffic on a port by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
 ms.assetid: 59062b91-756b-42ea-8f2a-832f05d77ddf
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Create an Outbound Port Rule
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 By default, Windows Defender Firewall allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic on a specified TCP or UDP port number, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule blocks any outbound network traffic that matches the specified TCP or UDP port numbers.
 

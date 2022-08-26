@@ -27,9 +27,14 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 
 You will find the Delivery Optimization settings in Group Policy under **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization**.
 
-Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows))
+Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows).
 
 **Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
+
+## Allow content endpoints
+
+When using a firewall, it is important that the content endpoints are allowed and associated ports are open. For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache content](delivery-optimization-endpoints.md).
+
 
 ## Recommended Delivery Optimization settings
 

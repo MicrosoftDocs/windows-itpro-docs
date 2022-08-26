@@ -16,7 +16,7 @@ manager: dansimp
 # What's new in Microsoft Store for Business and Education
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Microsoft Store for Business and Education regularly releases new and improved features.  
 
@@ -35,7 +35,7 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 
 <!---
-We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
+We've been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
 |  |  |
 |-----------------------|---------------------------------|
 | ![Private store performance icon.](images/perf-improvement-icon.png) |**Performance improvements in private store**<br /><br /> We've made it significantly faster for you to update the private store. Many changes to the private store are available immediately after you make them. <br /><br />[Get more info](./manage-private-store-settings.md#private-store-performance)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |

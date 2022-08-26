@@ -2,28 +2,30 @@
 title: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone (Windows)
 description: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone
 ms.assetid: ccc09d06-ef75-43b0-9c77-db06f2940955
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Checklist: Configuring Rules for Servers in a Standalone Isolated Server Zone
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 This checklist includes tasks for configuring connection security rules and IPsec settings in your GPOs for servers in a standalone isolated server zone that isn't part of an isolated domain. In addition to requiring authentication and optionally encryption, servers in a server isolation zone are accessible only by users or devices that are authenticated as members of a network access group (NAG). The GPOs described here apply only to the isolated servers, not to the client devices that connect to them. For the GPOs for the client devices, see [Checklist: Creating Rules for Clients of a Standalone Isolated Server Zone](checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md).
 

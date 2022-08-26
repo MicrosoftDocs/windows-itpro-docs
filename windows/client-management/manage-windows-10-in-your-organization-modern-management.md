@@ -4,10 +4,10 @@ description: This article offers strategies for deploying and managing Windows 1
 ms.prod: w10
 ms.localizationpriority: medium
 ms.date: 06/03/2022
-author: aczechowski
-ms.author: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.topic: overview
 ---
 

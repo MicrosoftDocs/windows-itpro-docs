@@ -1,5 +1,5 @@
 ---
-title: Deploying Microsoft Office 2010 by Using App-V (Windows 10/11)
+title: Deploying Microsoft Office 2010 by Using App-V
 description: Create Office 2010 packages for Microsoft Application Virtualization (App-V) using the App-V Sequencer or the App-V Package Accelerator.
 author: aczechowski
 ms.prod: w10
@@ -33,15 +33,6 @@ The following table shows the App-V versions, methods of Office package creation
 
 Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V. For more information, see [How to Sequence a New Application with App-V 5.0](/microsoft-desktop-optimization-pack/appv-v5/how-to-sequence-a-new-application-with-app-v-50-beta-gb18030).
 
-## Creating Office 2010 App-V packages using package accelerators
-
-Office 2010 App-V packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 10/11, Windows 8, and Windows 7. The following pages will show you which package accelerator is best for creating Office 2010 App-V packages on your version of Windows:
-
-* [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](https://gallery.technet.microsoft.com/App-V-50-Package-a29410db)
-* [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 7](https://gallery.technet.microsoft.com/App-V-50-Package-e7ef536b)
-
-For detailed instructions on how to create virtual application packages using App-V package accelerators, see [How to Create a Virtual Application Package Using an App-V Package Accelerator](appv-create-a-virtual-application-package-package-accelerator.md).
-
 ## Deploying the Microsoft Office package for App-V
 
 You can deploy Office 2010 packages by using any of the following App-V deployment methods:
@@ -73,7 +64,7 @@ The following table provides a full list of supported integration points for Off
 |Primary Interop Assemblies|Support managed add-ins||
 |Office Document Cache Handler|Allows Document Cache for Office applications||
 |Outlook Protocol Search handler|User can search in Outlook|Yes|
-|Active X Controls:<br>- Groove.SiteClient<br>- PortalConnect.PersonalSite<br>- SharePoint.openDocuments<br>-  SharePoint.ExportDatabase<br>- SharePoint.SpreadSheetLauncher<br>- SharePoint.StssyncHander<br>- SharePoint.DragUploadCtl<br>- SharePoint.DragDownloadCtl<br>- Sharpoint.OpenXMLDocuments<br> - Sharepoint.ClipboardCtl<br>- WinProj.Activator<br>- Name.NameCtrl<br>- STSUPld.CopyCtl<br>- CommunicatorMeetingJoinAx.JoinManager<br>- LISTNET.Listnet<br>- OneDrive Pro Browser Helper|Active X Control. <br><br>For more information about ActiveX controls, see the [ActiveX Control API Reference](<https://msdn.microsoft.com/library/office/ms440037(v=office.14).aspx>).||
+|Active X Controls:<br>- Groove.SiteClient<br>- PortalConnect.PersonalSite<br>- SharePoint.openDocuments<br>-  SharePoint.ExportDatabase<br>- SharePoint.SpreadSheetLauncher<br>- SharePoint.StssyncHander<br>- SharePoint.DragUploadCtl<br>- SharePoint.DragDownloadCtl<br>- Sharpoint.OpenXMLDocuments<br> - Sharepoint.ClipboardCtl<br>- WinProj.Activator<br>- Name.NameCtrl<br>- STSUPld.CopyCtl<br>- CommunicatorMeetingJoinAx.JoinManager<br>- LISTNET.Listnet<br>- OneDrive Pro Browser Helper|Active X Control. <br><br>For more information about ActiveX controls, see the [ActiveX Control API Reference](/previous-versions/office/developer/sharepoint-2010/ms440037(v=office.14)).||
 |OneDrive Pro Icon Overlays|Windows explorer shell icon overlays when users look at folders OneDrive Pro folders||
 
 ### Connection Groups

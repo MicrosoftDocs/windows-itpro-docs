@@ -16,7 +16,7 @@ metadata:
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 09/20/2021
   localization_priority: Priority
-    
+
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
@@ -156,7 +156,7 @@ landingContent:
           - text: Microsoft Security Development Lifecycle
             url: threat-protection/msft-security-dev-lifecycle.md
           - text: Microsoft Bug Bounty
-            url: /microsoft-365/security/intelligence/microsoft-bug-bounty-program.md
+            url: /microsoft-365/security/intelligence/microsoft-bug-bounty-program
           - text: Common Criteria Certifications
             url: threat-protection/windows-platform-common-criteria.md
           - text: Federal Information Processing Standard (FIPS) 140 Validation
