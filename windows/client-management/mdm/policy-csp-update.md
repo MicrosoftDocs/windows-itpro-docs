@@ -3524,8 +3524,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Driver from Windows Update. 
-- 1: Enabled, Detect, download, and deploy Driver from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Drivers from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Drivers from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3560,7 +3560,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+Configure this policy to specify whether to receive Windows Feature Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForQualityUpdates
@@ -3582,8 +3582,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Feature from Windows Update. 
-- 1: Enabled, Detect, download, and deploy Feature from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Feature Updates from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Feature Updates from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3618,7 +3618,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+Configure this policy to specify whether to receive Other Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeatureUpdates
@@ -3640,8 +3640,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Other from Windows Update.
-- 1: Enabled, Detect, download, and deploy Other from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Other updates from Windows Update.
+- 1: Enabled, Detect, download, and deploy Other updates from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3676,7 +3676,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+Configure this policy to specify whether to receive Windows Quality Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeatureUpdates
@@ -3698,8 +3698,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download, and deploy Quality from Windows Update. 
-- 1: Enabled, Detect, download, and deploy Quality from Windows Server Update Server (WSUS). 
+- 0: (Default) Detect, download, and deploy Quality Updates from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Quality Updates from Windows Server Update Server (WSUS). 
 
 <!--/SupportedValues-->
 <!--/Policy-->
