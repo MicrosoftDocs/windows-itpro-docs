@@ -9172,6 +9172,15 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-webthreatdefense.md#webthreatdefense-enableservice" id="webthreatdefense-enableservice">WebThreatDefense/EnableService</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-webthreatdefense.md#webthreatdefense-notifymalicious" id="webthreatdefense-notifymalicious">WebThreatDefense/NotifyMalicious</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-webthreatdefense.md#webthreatdefense-notifypasswordreuse" id="webthreatdefense-notifypasswordreuse">WebThreatDefense/NotifyPasswordReuse</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-webthreatdefense.md#webthreatdefense-notifyunsafeapp" id="webthreatdefense-notifyunsafeapp">WebThreatDefense/NotifyUnsafeApp</a>
+  </dd>
 </dl>
 
 ### Wifi policies
