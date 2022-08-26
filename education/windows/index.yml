@@ -17,9 +17,12 @@ metadata:
   ms.localizationpriority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
 
-landingContent:
- - title: Windows 11 SE
+landingContent: 
+  - title: Learn about Windows 11 SE
     linkLists:
       - linkListType: concept
         links:
@@ -35,21 +38,12 @@ landingContent:
           url: overview.md
         - text: Enable Stickers
           url: overview.md
-
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
   - title: Get started
     linkLists:
       - linkListType: tutorial
         links:
         - text: Deploy and manage Windows devices in a school
           url: tutorial-school-deployment/index.md
-
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
   - title: Set up School PCs
     linkLists:
       - linkListType: overview
@@ -62,9 +56,6 @@ landingContent:
           url: overview.md
         - text: Windows Defender System Guard firmware protection
           url: overview.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
   - title: Configure devices
     linkLists:
       - linkListType: concept
