@@ -9166,7 +9166,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### Wifi policies
+### WebThreatDefense policies
 
 <dl>
   <dd>
