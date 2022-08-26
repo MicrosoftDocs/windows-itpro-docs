@@ -66,11 +66,11 @@ manager: aaroncz
 <!--/Scope-->
 <!--Description-->
 
-This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users do not see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. When in audit mode Enhanced Phishing Protection captures unsafe password entry events and sends telemetry through Microsoft Defender.  
+This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users don't see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. When in audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends telemetry through Microsoft Defender.  
 
-If you enable this policy setting or don’t configure this setting, Enhanced Phishing Protection is enabled in audit mode and your users are unable to turn it off.
+If you enable this policy setting or don’t configure this setting, Enhanced Phishing Protection is enabled in audit mode, and your users are unable to turn it off.
 
-If you disable this policy setting, Enhanced Phishing Protection is off. When off, Enhanced Phishing Protection does not capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
+If you disable this policy setting, Enhanced Phishing Protection is off. When off, Enhanced Phishing Protection doesn't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -85,7 +85,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -	0: Turns off Enhanced Phishing Protection.
--	1: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends telemetry but does not show any notifications to your users.
+-	1: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends telemetry but doesn't show any notifications to your users.
 
 
 <!--/SupportedValues-->
@@ -123,9 +123,10 @@ The following list shows the supported values:
 
 This policy setting determines whether Enhanced Phishing Protection warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a login URL with an invalid certificate.
 
-If you enable this policy setting, Enhanced Phishing Protection warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.
+If you enable this policy setting, Enhanced Phishing Protection warns your users if they type their work or school password into one of the malicious scenarios described above, and encourages them to change their password.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection will not warn your users if they type their work or school password into one of the malicious scenarios described above.
+If you disable or don’t configure this policy setting, Enhanced Phishing Protection won't warn your users if they type their work or school password into one of the malicious scenarios described above.
+
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -169,7 +170,7 @@ This policy setting determines whether Enhanced Phishing Protection warns your u
 
 If you enable this policy setting, Enhanced Phishing Protection warns users if they reuse their work or school password and encourages them to change it.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection will not warn users if they reuse their work or school password.
+If you disable or don’t configure this policy setting, Enhanced Phishing Protection won't warn users if they reuse their work or school password.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -215,7 +216,7 @@ This policy setting determines whether Enhanced Phishing Protection warns your u
 
 If you enable this policy setting, Enhanced Phishing Protection warns your users if they store their password in text editor apps.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection will not warn users if they store their password in text editor apps. 
+If you disable or don’t configure this policy setting, Enhanced Phishing Protection won't warn users if they store their password in text editor apps. 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
