@@ -35,6 +35,8 @@ landingContent:
           url: tutorial-school-deployment/configure-devices-overview.md
         - text: Manage devices with Microsoft Intune
           url: tutorial-school-deployment/manage-overview.md
+        - text: Management functionalities for Surface devices
+          url: tutorial-school-deployment/manage-surface-devices.md     
 
   - title: Deploy devices with Set up School PCs
     linkLists:

@@ -33,6 +33,8 @@ items:
         href: manage-remote-actions.md
       - name: Device inventory and reporting
         href: manage-inventory-reporting.md
+      - name: Management functionalities for Surface devices
+        href: manage-surface-devices.md       
       - name: Reset and wipe devices
         href: reset-wipe.md
   - name: 5. Troubleshoot and get help
