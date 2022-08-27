@@ -13,9 +13,9 @@ metadata:
   ms.collection:
     - M365-security-compliance
     - highpri
-  author: dansimp
-  ms.author: dansimp
-  manager: dansimp
+  author: DHB_MSFT
+  ms.author: danbrown
+  manager: dougeby
   ms.date: 09/08/2021 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
@@ -47,7 +47,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
-      url: required-windows-11-diagnostic-events-and-fields.md
+      url: required-windows-11-22H2-diagnostic-events-fields.md
     # Card
     - title: Windows 10 required diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_build.svg

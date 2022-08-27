@@ -1,6 +1,6 @@
 ---
 description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
-title: Required Windows 11 diagnostic events and fields
+title: Required Windows 11, version 21H2 diagnostic events and fields
 ms.prod: m365-security
 localizationpriority: high
 author: DHB-MSFT
@@ -15,7 +15,7 @@ ms.technology: privacy
 ---
 
 
-# Required Windows 11 diagnostic events and fields
+# Required Windows 11, version 21H2 diagnostic events and fields
 
 > [!IMPORTANT]
 > Windows is moving to classifying the data collected from customer’s devices as either Required or Optional.
@@ -23,7 +23,7 @@ ms.technology: privacy
 
  **Applies to**
 
-- Windows 11
+- Windows 11, version 21H2
 
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
@@ -34,6 +34,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
+- [Required Windows 11, version 22H2 diagnostic events and fields](required-windows-11-22H2-diagnostic-events-fields.md)
 - [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
