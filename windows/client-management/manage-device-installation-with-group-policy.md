@@ -141,7 +141,7 @@ When you use device Classes to allow or prevent users from installing drivers, y
 
 For example, a multi-function device, such as an all-in-one scanner/fax/printer, has a GUID for a generic multi-function device, a GUID for the printer function, a GUID for the scanner function, and so on. The GUIDs for the individual functions are "child nodes" under the multi-function device GUID. To install a child node, Windows must also be able to install the parent node. You must allow installation of the device setup class of the parent GUID for the multi-function device in addition to any child GUIDs for the printer and scanner functions.
 
-For more information, see [Device Setup Classes](/windows-hardware/drivers/install/overview-of-device-setup-classes) .
+For more information, see [Device Setup Classes](/windows-hardware/drivers/install/overview-of-device-setup-classes).
 
 This guide doesn't depict any scenarios that use device setup classes. However, the basic principles demonstrated with device identification strings in this guide also apply to device setup classes. After you discover the device setup class for a specific device, you can then use it in a policy to either allow or prevent installation of drivers for that class of devices.
 
