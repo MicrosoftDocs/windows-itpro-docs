@@ -40,6 +40,9 @@ manager: aaroncz
   <dd>
     <a href="#desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
   </dd>
+  <dd>
+    <a href="#desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
+  </dd>
 </dl>
 
 
@@ -188,7 +191,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablelocalmanifestfiles"></a>**DesktopAppInstaller/EnableLocalManifestFiles**  
+<a href="" id="desktopappinstaller-enablemicrosoftstoresource"></a>**DesktopAppInstaller/EnableMicrosoftStoreSource**  
 
 <!--SupportedSKUs-->
 
@@ -215,18 +218,17 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy controls whether users can install packages with local manifest files. If a user has a manifest available via their local file system rather than a Windows Package Manager source, they may install packages using *winget install -m <path to manifest>*.
-
-- If you enable or do not configure this setting, users will be able to install packages with local manifests by using Windows Package Manager.
-
-- If you disable this setting, users will not be able to install packages with local manifests by using Windows Package Manager.
+This policy controls the Microsoft Store source included with the Windows Package Manager.
+If you do not configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
+- If you enable this setting, the Microsoft Store source for the Windows Package Manager will be available and cannot be removed.
+- If you disable this setting the Microsoft Store source for the Windows Package Manager will not be available.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Enable Windows Package Manager Local Manifest Files*
--   GP name: *EnableLocalManifestFiles*
+-   GP Friendly name: *Enable Windows Package Manager Microsoft Store Source*
+-   GP name: *EnableMicrosoftStoreSource*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
