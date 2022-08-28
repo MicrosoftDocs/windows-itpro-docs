@@ -33,7 +33,7 @@ With Stickers, students feel more attached to the device as they feel as if it's
 
 ## Enable Stickers
 
-Stickers aren't enabled by default on Windows 11 SE. IT administrators can allow students to personalize their devices without losing control over apps or device performance using Microsoft Intune.
+Stickers aren't enabled by default. IT administrators can allow students to personalize their devices without losing control over apps or device performance using Microsoft Intune.
 
 1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 1. Select **Devices** > **Configuration profiles** > **Create profile**

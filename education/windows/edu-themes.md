@@ -26,7 +26,7 @@ Students can choose their own themes, making it feel the device is their own. Wh
 
 ## Enable education themes
 
-Education themes aren't enabled by default on Windows 11 SE. IT administrators can configure devices to download the education themes using Microsoft Intune.
+Education themes aren't enabled by default. IT administrators can configure devices to download the education themes using Microsoft Intune.
 
 1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 1. Select **Devices** > **Configuration profiles** > **Create profile**
