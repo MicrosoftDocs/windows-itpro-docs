@@ -34,6 +34,12 @@ manager: aaroncz
   <dd>
     <a href="#desktopappinstaller-enableappinstaller">DesktopAppInstaller/EnableAppInstaller</a>
   </dd>
+  <dd>
+    <a href="#desktopappinstaller-enabledefaultsource">DesktopAppInstaller/EnableDefaultSource</a>
+  </dd>
+  <dd>
+    <a href="#desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
+  </dd>
 </dl>
 
 
@@ -124,8 +130,103 @@ This policy controls whether Windows Package Manager can be used by users. Users
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Controls whether the Windows Package Manager can be used by the users.*
+-   GP Friendly name: *Controls whether the Windows Package Manager can be used by the users*
 -   GP name: *EnableAppInstaller*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enabledefaultsource"></a>**DesktopAppInstaller/EnableDefaultSource**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls the default source included with the Windows Package Manager.
+If you do not configure this setting, the default source for the Windows Package Manager will be available and can be removed.
+- If you enable this setting, the default source for the Windows Package Manager will be available and cannot be removed.
+- If you disable this setting the default source for the Windows Package Manager will not be available.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager Default Source*
+-   GP name: *EnableDefaultSource*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablelocalmanifestfiles"></a>**DesktopAppInstaller/EnableLocalManifestFiles**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether users can install packages with local manifest files. If a user has a manifest available via their local file system rather than a Windows Package Manager source, they may install packages using *winget install -m <path to manifest>*.
+
+- If you enable or do not configure this setting, users will be able to install packages with local manifests by using Windows Package Manager.
+
+- If you disable this setting, users will not be able to install packages with local manifests by using Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager Local Manifest Files*
+-   GP name: *EnableLocalManifestFiles*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
