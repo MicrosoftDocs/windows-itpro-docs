@@ -18,11 +18,11 @@ The table below shows the applicability of Windows:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|Yes|
-|Windows SE|No|Yes|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
 |Business|No|No|
-|Enterprise|No|Yes|
-|Education|No|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Language Pack Management CSP allows a direct way to provision languages remotely in Windows. MDMs like Intune can use management commands remotely to devices to configure language-related settings for System and new users.
 
