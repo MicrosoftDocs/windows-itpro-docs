@@ -6309,6 +6309,33 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources" id="desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
   </dd>
+<dd>
+    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller"id="desktopappinstaller-enableappinstaller">DesktopAppInstaller/EnableAppInstaller</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enabledefaultsource"id="desktopappinstaller-enabledefaultsource">DesktopAppInstaller/EnableDefaultSource</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablelocalmanifestfiles"id="desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemicrosoftstoresource"id="desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemsappinstallerprotocol"id="desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablesettingscommand"id="desktopappinstaller-enablesettingscommand">DesktopAppInstaller/EnableSettingsCommand</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablewindowsallowedsources"id="desktopappinstaller-enablewindowsallowedsources">DesktopAppInstaller/EnableWindowsAllowedSources</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablewindowsexperimentalfeatures"id="desktopappinstaller-enablewindowsexperimentalfeatures">DesktopAppInstaller/EnableWindowsExperimentalFeatures</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-setwindowsautoupdateinterval"id="desktopappinstaller-setwindowsautoupdateinterval">DesktopAppInstaller/SetWindowsAutoUpdateInterval</a>
+  </dd>
 </dl>
 
 ### DeviceGuard policies
