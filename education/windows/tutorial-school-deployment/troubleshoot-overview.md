@@ -1,6 +1,6 @@
 ---
-title: How to contact Microsoft Support
-description: How to contact Microsoft Support for issues related to Intune and other Endpoint Manager services
+title: Troubleshoot Windows devices
+description: How to troubleshoot Windows devices from Intune and contact Microsoft Support for issues related to Intune and other Endpoint Manager services
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -11,10 +11,29 @@ ms.author: paoloma
 #ms.reviewer: 
 manager: aaroncz
 ms.collection: education
-#appliesto:
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
-# How to contact Microsoft Support
+# Troubleshoot Windows devices
+
+Microsoft Endpoint Manager provides many tools that can help you troubleshoot Windows devices.
+Here's a collection of resources to help you troubleshoot Windows devices managed by Intune:
+
+- [Troubleshooting device enrollment in Intune][MEM-2]
+- [Troubleshooting Windows Autopilot][MEM-9]
+- [Troubleshoot Windows Wi-Fi profiles][MEM-6]
+- [Troubleshooting policies and profiles in Microsoft Intune][MEM-5]
+- [Troubleshooting BitLocker with the Intune encryption report][MEM-4]
+- [Troubleshooting CSP custom settings][MEM-8]
+- [Troubleshooting Win32 app installations with Intune][MEM-7]
+- [Troubleshooting device actions in Intune][MEM-3]
+- [**Collect diagnostics**][MEM-10] is a remote action that lets you collect and download Windows device logs without interrupting the user
+  :::image type="content" source="./images/intune-diagnostics.png" alt-text="Intune for Education dashboard" border="true":::
+
+## How to contact Microsoft Support
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for cloud-based device management services. This support includes Microsoft Intune, Configuration Manager, Windows 365, and Microsoft Managed Desktop.
 
@@ -38,3 +57,12 @@ For more information, see [Microsoft Endpoint Manager support page][MEM-1]
 
 <!-- Reference links in article -->
 [MEM-1]: /mem/get-support
+[MEM-2]: /troubleshoot/mem/intune/troubleshoot-device-enrollment-in-intune
+[MEM-3]: /troubleshoot/mem/intune/troubleshoot-device-actions
+[MEM-4]: /troubleshoot/mem/intune/troubleshoot-bitlocker-admin-center
+[MEM-5]: /troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune
+[MEM-6]: /troubleshoot/mem/intune/troubleshoot-wi-fi-profiles#troubleshoot-windows-wi-fi-profiles
+[MEM-7]: /troubleshoot/mem/intune/troubleshoot-win32-app-install
+[MEM-8]: /troubleshoot/mem/intune/troubleshoot-csp-custom-settings
+[MEM-9]: /mem/autopilot/troubleshooting
+[MEM-10]: /mem/intune/remote-actions/collect-diagnostics

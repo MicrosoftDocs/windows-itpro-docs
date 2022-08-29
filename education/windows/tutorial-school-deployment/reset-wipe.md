@@ -1,6 +1,6 @@
 ---
-title: Reset and wipe
-description: reset and wipe
+title: Reset and wipe Windows devices
+description: Reset and wipe options for Windows devices using Intune for Education, including scenarios when to delete devices
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
@@ -14,9 +14,10 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
-# Device reset
+# Device reset options
 
 There are different scenarios that require a device to be reset, for example:
 
@@ -91,7 +92,7 @@ There are scenarios that require a device to be deleted from your tenant, for ex
 - The device has been replaced with a new device or has its motherboard replaced
 
 > [!IMPORTANT]
-> The following action should only be performed for devices that are no longer going to be used in your tenant.
+> The following actions should only be performed for devices that are no longer going to be used in your tenant.
 
  To completely remove a device, you need to perform the following actions:
 
