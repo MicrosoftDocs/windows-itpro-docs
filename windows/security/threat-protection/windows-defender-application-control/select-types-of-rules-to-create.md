@@ -10,11 +10,11 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: dansimp
-ms.reviewer: isbrahm
+author: jogeurte
+ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 06/28/2022
+ms.date: 08/29/2022
 ms.technology: windows-sec
 ---
 
@@ -120,6 +120,9 @@ As part of normal operations, they'll eventually install software updates, or pe
 
 Windows Defender Application Control has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these sets exist, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
 
+> [!NOTE]
+> For others to better understand the WDAC policies that have been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
+
 ## More information about filepath rules
 
 Filepath rules don't provide the same security guarantees that explicit signer rules do, since they're based on mutable access permissions. Filepath rules are best suited for environments where most users are running as standard rather than admin. Path rules are best suited to allow paths that you expect will remain admin-writeable only. You may want to avoid path rules for directories where standard users can modify ACLs on the folder.
@@ -139,7 +142,7 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 > [!NOTE]
-> For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
+> When authoring WDAC policies with Microsoft Endpoint Configuration Manager (MEMCM), you can instruct MEMCM to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, MEMCM performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the MEMCM policy is reapplied.
 
 > [!NOTE]
 > There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.
