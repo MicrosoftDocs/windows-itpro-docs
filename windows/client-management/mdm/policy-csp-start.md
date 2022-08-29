@@ -1339,6 +1339,7 @@ To validate on Desktop, do the following steps:
 
 > [!div class = "checklist"]
 > * Device
+> * User
 
 <hr/>
 
