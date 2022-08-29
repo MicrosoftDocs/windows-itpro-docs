@@ -50,10 +50,10 @@ sections:
           - For some devices, Windows 10 may be unable to install drivers that are required for operation. If your device drivers aren't automatically installed, visit the manufacturer's support website for your device to download and manually install the drivers. If Windows 10 drivers aren't available, the most up-to-date drivers for Windows 8.1 will often work in Windows 10.
           - For some devices, the manufacturer may provide more up-to-date drivers or drivers that enable more functionality than the drivers installed by Windows 10. Always follow the recommendations of the device manufacturer for optimal performance and stability.
           - Some computer manufacturers provide packs of drivers for easy implementation in management and deployment solutions like the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. These driver packs contain all of the drivers needed for each device and can greatly simplify the process of deploying Windows to a new make or model of computer. Driver packs for some common manufacturers include:
-              - [HP driver pack](http://www8.hp.com/us/en/ads/clientmanagement/drivers-pack.html)
-              - [Dell driver packs for enterprise client OS deployment](http://en.community.dell.com/techcenter/enterprise-client/w/wiki/2065.dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
-              - [Lenovo Configuration Manager and MDT package index](https://support.lenovo.com/us/en/documents/ht074984)
-              - [Panasonic Driver Pack for Enterprise](http://pc-dl.panasonic.co.jp/itn/drivers/driver_packages.html)
+              - [HP driver pack](https://www.hp.com/us-en/solutions/client-management-solutions/drivers-pack.html)
+              - [Dell driver packs for enterprise client OS deployment](https://www.dell.com/support/kbdoc/en-us/000124139/dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
+              - [Lenovo Configuration Manager and MDT package index](https://support.lenovo.com/us/en/solutions/ht074984)
+              - [Panasonic Driver Pack for Enterprise](https://pc-dl.panasonic.co.jp/itn/drivers/driver_packages.html)
           
       - question: |
           Where can I find out if an application or device is compatible with Windows 10?
@@ -125,7 +125,7 @@ sections:
         answer: |
           For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](/windows/whats-new/) and [What's new in Windows 10, version 1703](/windows/whats-new/whats-new-windows-10-version-1703) in the Docs library.
           
-          Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://blogs.technet.microsoft.com/windowsitpro/). Here you'll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10.
+          Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog). Here you'll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10.
           
           To find out which version of Windows 10 is right for your organization, you can also [compare Windows editions](https://www.microsoft.com/WindowsForBusiness/Compare).
           
@@ -152,4 +152,3 @@ sections:
           - If you're an IT professional or if you have a question about administering, managing, or deploying Windows 10 in your organization or business, visit the [Windows 10 IT Professional forums](https://social.technet.microsoft.com/forums/home?category=windows10itpro) on TechNet.
           - If you're an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](https://answers.microsoft.com/windows/forum).
           - If you're a developer or if you have a question about making apps for Windows 10, visit the [Windows Desktop Development forums](https://social.msdn.microsoft.com/forums/en-us/home?category=windowsdesktopdev).
-          - If you have a question about Internet Explorer, visit the [Internet Explorer forums](https://social.technet.microsoft.com/forums/ie/en-us/home).
