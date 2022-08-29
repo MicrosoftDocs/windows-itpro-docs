@@ -30,6 +30,9 @@ With this process, no advance preparation is needed:
 
 > [!IMPORTANT]
 > If you configured enrollment restrictions in Intune blocking personal Windows devices, this process will not complete. You will need to use a different enrollment method, or ensure that the devices are registered in Autopilot.
+
+:::image type="content" source="./images/win11-login-screen.png" alt-text="Windows 11 login screen" border="false":::
+
 ________________________________________________________
 ## Next steps
 

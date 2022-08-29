@@ -127,6 +127,8 @@ When a Windows device is turned on for the first time, the end-user experience w
 > [!NOTE]
 > Some of these steps may be skipped, depending on the Autopilot profile configuration and if the device is using a wired connection.
 
+:::image type="content" source="./images/win11-login-screen.png" alt-text="Windows 11 login screen" border="false":::
+
 ________________________________________________________
 ## Next steps
 

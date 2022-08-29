@@ -60,6 +60,8 @@ To provision Windows devices with provisioning packages, insert the USB stick co
 
 :::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package" border="false":::
 
+:::image type="content" source="./images/win11-login-screen.png" alt-text="Windows 11 login screen" border="false":::
+
 ________________________________________________________
 ## Next steps
 

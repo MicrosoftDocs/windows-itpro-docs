@@ -29,23 +29,23 @@ With Intune for Education, there are several ways to manage students' devices. G
 
 ### Remote actions
 
-Intune fo Education allows you to perform actions on devices without having to sign in to the devices. For example, you can send a message to a device, or send a command to a device to restart or to turn off.
+Intune fo Education allows you to perform actions on devices without having to sign in to the devices. For example, you can send a command to a device to restart or to turn off, or you can locate a device.
 
 :::image type="content" source="./images/remote-actions.png" alt-text="Remote actions available in Intune for Education when selecting a Windows device" border="true":::
 
 With bulk actions, remote actions can be performed on multiple devices at once.
 
-To learn more about remote actions in Intune for Education, see [Remote actions](/intune-education/edu-device-remote-actions).
+To learn more about remote actions in Intune for Education, see [Remote actions][EDU-1].
 
 ## Remote assistance
 
 With devices managed by Intune for Education, you can remotely assist students and teachers that are having issues with their devices.
 
-For more information, see [Remote assistance for managed devices - Intune for Education](/intune-education/remote-assist-mobile-devices).
+For more information, see [Remote assistance for managed devices - Intune for Education][EDU-2].
 
 ## Device inventory and reporting
 
-With Intune for Education, you can view and report on current devices, applications, settings, and overall health in Microsoft Endpoint Manager. You can also download reports to review or share offline.
+With Intune for Education, it's possible view and report on current devices, applications, settings, and overall health. You can also download reports to review or share offline.
 
 Here are the steps for generating reports in Intune for Education:
 
@@ -62,4 +62,10 @@ Here are the steps for generating reports in Intune for Education:
 1. To download a report, select **Download**. The report will download as a comma-separated value (CSV) file, which you can view and modify in a spreadsheet app like Microsoft Excel.
     :::image type="content" source="./images/inventory-reporting.png" alt-text="Reporting options available in Intune for Education when selecting the reports blade" border="true":::
 
-To learn more about reports in Intune for Education, see [Reports in Intune for Education](/intune-education/what-are-reports).
+To learn more about reports in Intune for Education, see [Reports in Intune for Education][EDU-3].
+
+<!-- Reference links in article -->
+
+[EDU-1]: /intune-education/edu-device-remote-actions
+[EDU-2]: /intune-education/remote-assist-mobile-devices
+[EDU-3]: /intune-education/what-are-reports

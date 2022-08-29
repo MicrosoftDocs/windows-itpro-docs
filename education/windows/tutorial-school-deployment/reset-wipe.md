@@ -18,82 +18,104 @@ appliesto:
 
 # Device reset
 
-When a device is lost, stolen, or needs to be replaced, or when a user moves to another position, it is usually time to wipe or reset the device. There are several ways you can do this—including resetting the device, removing it from management, or wiping the personal and school data on it. In scenarios where a device needs to be exchanged or returned, additional steps are required to prepare the device and then send it for repair. With Intune, IT administrators can remotely execute all these actions for device reset.
+There are different scenarios that require a device to be reset, for example:
 
+- The device isn't responding to commands
+- The device is lost or stolen
+- It's the end of the life of the device
+- It's the end of the school year and you want to prepare the device for a new school year
+- The device has hardware problems and you want to send it to the service center
 
-:::image type="content" source="./images/retire.png" alt-text="The device lifecycle for Intune-managed devices - retire devices" border="false":::
+:::image type="content" source="./images/retire.png" alt-text="The device lifecycle for Intune-managed devices - retirement" border="false":::
 
-## Resetting a device
+Intune for Education provides two device reset functionalities that enable IT administrators to remotely execute them:
 
-Two Reset Device actions can be used to reset and deregister student devices in preparation for next year: Autopilot Reset and factory reset. With Autopilot Reset, you return the device to a fully configured or known IT-approved state. With factory reset, you wipe all personal and school data and settings from the device, returning it to the default factory settings. 
+- **Factory reset** (also known as **wipe**) is used to wipe all data and settings from the device, returning it to the default factory settings
+- **Autopilot reset** is used to return the device to a fully configured or known IT-approved state
 
-### Autopilot Reset
+## Factory reset (wipe)
 
-This reset action is ideal when all data on a device needs to be wiped, but the device will remain enrolled in your school. You can use Autopilot Reset to remove personal files, apps, and settings; reset Windows 11 SE devices from the lock screen; and apply original Intune settings and management enrollment (Azure Active Directory and device management). 
+A factory reset, or a wipe, reverts a device to the original settings when it was purchased. All settings, applications and data installed on the device after purchase are removed. The device is also removed from Intune management.
 
-With Intune for Education, wiping can be performed remotely: 
+Once the wipe is completed, the device will be in out-of-box experience.
 
-1. In Intune for Education, choose **Groups** → **Choose a device group**.
-1. Choose a device, and then select **Autopilot Reset**. 
-1. To confirm the reset, select **Autopilot Reset** again. A message appears when the reset is initiated. The device will reset the next time it connects to the Internet. 
+Here are the steps to perform a factory reset from Intune for Education: 
 
-## ADD PIC HERE Using Autopilot Reset in Microsoft Endpoint Manager admin center
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Devices**
+1. Select the device you want to reset > **Factory reset**
+1. Select **Factory reset** to confirm the action
 
-### Factory reset (wipe)
+:::image type="content" source="./images/win11-wipe.png" alt-text="Three screenshots showing the device being wiped, ending up in OOBE" border="false":::
 
-A factory reset, or a wipe, reverts a device to the original settings when it was purchased. All apps and data installed on the device after purchase are removed. The device is also removed from Intune management, and all data and settings are wiped from the device.
+Consider using factory reset in the following example scenarios:
 
-To perform a factory reset: 
+- The device isn't working properly, and you want to reset it without reimaging it
+- It's the end of school year and you want to prepare the device for a new school year
+- You need to reassign the device to a different student, and you want to reset the device to its original settings
+- You're returning a device to the service center, and you want to remove all data and settings from the device
 
-1. In Microsoft Endpoint Manager, go to **Devices** → **Windows devices** to view all enrolled devices.
-1. Choose the device you want to reset, and on the next screen, select **Wipe**.
-1. **NOTE:** We recommend keeping the enrollment state and associated user account. This option ensures that the Wipe action cannot be circumvented by turning off the device.
-1. Select **Yes** to reset the device to its factory defaults and delete the Intune object.
+> [!TIP]
+> Consider that once the device is wiped, the new user will go through OOBE. This option may be ideal if the device is also registered in Autopilot to make the OOBE experience seamless, or if you plan to use a provisioning package to re-enroll the device.
 
-## ADD PIC HERE Using factory reset in Microsoft Endpoint Manager admin center
+## Autopilot Reset
 
-## Wiping and removing a device
+Autopilot Reset is ideal when all data on a device needs to be wiped, but the device remains enrolled in your tenant.
 
-With this action, a device's data is wiped, and the device is removed from the school deployment. This action should only be performed for devices that are no longer going to be used. To completely remove a device, you need to perform two actions: 
+Once the Autopilot reset action is completed, the device will ask to chose region and keyboard layout, then it will display the sign-in screen.
 
-1. Perform a [factory reset (wipe)](#) on the device.
-1. Complete one of the following actions, depending on Intune enrollment:
-1. If the device [is not enrolled](#) in Intune, delete it from Autopilot. 
-1. If the device [is enrolled](#) in Intune, delete it from Microsoft Endpoint Manager. (This removes device records from Intune, Azure AD, and Autopilot).  
+Here are the steps to perform an Autopilot reset from Intune for Education: 
 
-### Delete a device from Autopilot
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Devices**
+1. Select the device you want to reset > **Autopilot reset**
+1. Select **Autopilot reset** to confirm the action
 
-To delete Autopilot devices that are not enrolled in Intune:
+:::image type="content" source="./images/win11-autopilot-reset.png" alt-text="Three screenshots showing the device being wiped, ending up in the login screen" border="false":::
 
-1. In Windows Autopilot, go to **Devices** → **Windows** → **Windows enrollment**.
-1. Under Windows Autopilot Deployment Program, select **Devices**. 
-1. Choose the device you want to delete, and then select **Delete**. Note that device deletion can take a few minutes to complete.
+Consider using Autopilot reset in the following example scenarios:
 
-### Delete a device using Intune
+- The device isn't working properly, and you want to reset it without reimaging it
+- It's the end of school year and you want to prepare the device for a new school year
+- You need to reassign the device to a different student, and you want to reset the device to without requiring the student to go through OOBE
 
-To delete devices that are enrolled in Intune:
+> [!TIP]
+> Consider that the end user will **not** go through OOBE, and the association of the user to  the device in Intune doesn't change. For this reason, this option may be ideal for devices that have been enrolled in Intune as *shared devices* (for example, a device that was enrolled with a provisioning package or using Autopilot self-deploying mode).
 
-1. Delete the device from the [**All devices blade**](https://github.com/MicrosoftDocs/IntuneDocs/blob/main/intune/remote-actions/devices-wipe.md) in Microsoft Endpoint Manager: 
-1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Select **Devices** → **All devices**. 
-1. Choose the device you want to delete, and then select **Delete**.
-1. Delete the device from Azure Active Directory: 
-1. From the Azure portal, sign in to Azure Active Directory.
-1. Select **Devices** → **Azure AD devices**. 
-1. Follow the steps outlined in [Delete devices from the Azure Active Directory portal](/mem/intune/remote-actions/devices-wipe).
+## Wiping and deleting a device
 
-## ADD PIC HERE Device and account deletion page in Azure Active Directory admin center
+There are scenarios that require a device to be deleted from your tenant, for example:
 
+- The device is lost or stolen
+- It's the end of the life of the device
+- The device has been replaced with a new device or has its motherboard replaced
 
-## Autopilot motherboard replacement
+> [!IMPORTANT]
+> The following action should only be performed for devices that are no longer going to be used in your tenant.
 
-Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
+ To completely remove a device, you need to perform the following actions:
 
-1. [Deregister the device](/mem/autopilot/autopilot-mbr) from Autopilot.
-1. [Replace the motherboard](/mem/autopilot/autopilot-mbr).
-1. [Capture a new device ID (4K HH)](/mem/autopilot/autopilot-mbr).
-1. [Reregister the device](/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
-1. [Reset the device](/mem/autopilot/autopilot-mbr).
-1. [Return the device](/mem/autopilot/autopilot-mbr).
+1. If possible, perform a **factory reset (wipe)** of the device. If the device can't be wiped, delete the device from Intune using [these steps][MEM-1]
+1. If the device is registered in Autopilot, delete the Autopilot object using [these steps][MEM-2]
+1. Delete the device from Azure Active Directory using [these steps][MEM-3]
 
-For more information, see [Autopilot motherboard replacement scenario guidance](/mem/autopilot/autopilot-mbr).
+## Autopilot considerations for a motherboard replacement scenario
+
+Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, it's suggested the following process:
+
+1. Deregister the device from Autopilot
+1. Replace the motherboard
+1. Capture a new device ID (4K HH)
+1. Re-register the device with Autopilot
+    > [!IMPORTANT]
+    > For DFCI management, the device must be re-registered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
+1. Reset the device
+1. Return the device
+
+For more information, see [Autopilot motherboard replacement scenario guidance][MEM-4].
+
+<!-- Reference links in article -->
+[MEM-1]: mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
+[MEM-2]: mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
+[MEM-3]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-azure-active-directory-portal
+[MEM-4]: /mem/autopilot/autopilot-mbr

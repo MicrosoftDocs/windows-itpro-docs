@@ -21,9 +21,9 @@ Microsoft Surface devices offer many advanced management functionalities, includ
 
 ## Manage device firmware for Surface devices
 
-Surface devices use a Unified Extensible Firmware Interface (UEFI) setting that allows you to enable or disable built-in hardware components, protect UEFI settings from being changed, and adjust device boot configuration. With [Device Firmware Configuration Interface profiles built into Intune](/intune/configuration/device-firmware-configuration-interface-windows), Surface UEFI management extends the modern management capabilities to the hardware level. Windows can pass management commands from Intune to UEFI for Autopilot-deployed devices.
+Surface devices use a Unified Extensible Firmware Interface (UEFI) setting that allows you to enable or disable built-in hardware components, protect UEFI settings from being changed, and adjust device boot configuration. With [Device Firmware Configuration Interface profiles built into Intune][INT-1], Surface UEFI management extends the modern management capabilities to the hardware level. Windows can pass management commands from Intune to UEFI for Autopilot-deployed devices.
 
-DFCI supports zero-touch provisioning, eliminates BIOS passwords, and provides control of security settings for boot options, cameras and microphones, built-in peripherals, and more. For more information, see [Manage DFCI on Surface devices](/surface/surface-manage-dfci-guide) and [Manage DFCI with Windows Autopilot](/mem/autopilot/dfci-management), which includes a list of requirements to use DFCI.
+DFCI supports zero-touch provisioning, eliminates BIOS passwords, and provides control of security settings for boot options, cameras and microphones, built-in peripherals, and more. For more information, see [Manage DFCI on Surface devices][SURF-1] and [Manage DFCI with Windows Autopilot][MEM-1], which includes a list of requirements to use DFCI.
 
 :::image type="content" source="./images/dfci-profile.png" alt-text="Creation of a DFCI profile from Microsoft Endpoint Manager" lightbox="./images/dfci-profile-expanded.png" border="true":::
 
@@ -44,3 +44,11 @@ To access and use the Surface Management Portal:
     - This dashboard displays diagnostic information that you can customize and export
 1. To obtain the device's warranty information, select **Device warranty and coverage**
 1. To review a list of support requests and their status, select **Support requests**
+
+<!-- Reference links in article -->
+
+[INT-1]: /intune/configuration/device-firmware-configuration-interface-windows
+
+[MEM-1]: /mem/autopilot/dfci-management
+
+[SURF-1]: /surface/surface-manage-dfci-guide
