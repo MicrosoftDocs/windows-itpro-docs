@@ -126,8 +126,8 @@ ADMX Info:
 <!--Description-->
 This policy controls whether Windows Package Manager can be used by users. Users will still be able to execute the *winget* command. The default help will be displayed, and users will still be able to execute *winget -?* to display the help as well. Any other command will result in the user being informed the operation is disabled by Group Policy.
 
-- If you enable or do not configure this setting, users will be able to use the Windows Package Manager.
-- If you disable this setting, users will not be able to use the Windows Package Manager.
+- If you enable or don't configure this setting, users will be able to use the Windows Package Manager.
+- If you disable this setting, users won't be able to use the Windows Package Manager.
 
 <!--/Description-->
 
@@ -172,9 +172,9 @@ ADMX Info:
 <!--Description-->
 
 This policy controls the default source included with the Windows Package Manager.
-If you do not configure this setting, the default source for the Windows Package Manager will be available and can be removed.
-- If you enable this setting, the default source for the Windows Package Manager will be available and cannot be removed.
-- If you disable this setting the default source for the Windows Package Manager will not be available.
+If you do not configure this setting, the default source for the Windows Package Manager will be , and can be removed.
+- If you enable this setting, the default source for the Windows Package Manager will be, and can't be removed.
+- If you disable this setting the default source for the Windows Package Manager won't be available.
 
 <!--/Description-->
 
@@ -187,6 +187,54 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablelocalmanifestfiles"></a>**DesktopAppInstaller/EnableLocalManifestFiles**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether users can install packages with local manifest files.
+
+- If you enable or don't configure this setting, users will be able to install packages with local manifests using the Windows Package Manager.
+- If you disable this setting, users won't be able to install packages with local manifests using the Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager Local Manifest Files*
+-   GP name: *EnableLocalManifestFiles*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
 
 <hr/>
 
@@ -219,9 +267,9 @@ ADMX Info:
 <!--Description-->
 
 This policy controls the Microsoft Store source included with the Windows Package Manager.
-If you do not configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
-- If you enable this setting, the Microsoft Store source for the Windows Package Manager will be available and cannot be removed.
-- If you disable this setting the Microsoft Store source for the Windows Package Manager will not be available.
+If you don't configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
+- If you enable this setting, the Microsoft Store source for the Windows Package Manager will be , and can't be removed.
+- If you disable this setting the Microsoft Store source for the Windows Package Manager won't be available.
 
 <!--/Description-->
 
