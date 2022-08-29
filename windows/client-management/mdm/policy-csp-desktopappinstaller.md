@@ -43,6 +43,21 @@ manager: aaroncz
   <dd>
     <a href="#desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
   </dd>
+  <dd>
+    <a href="#desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
+  </dd>
+  <dd>
+    <a href="#desktopappinstaller-enablesettingscommand">DesktopAppInstaller/EnableSettingsCommand</a>
+  </dd>
+  <dd>
+    <a href="#desktopappinstaller-enablewindowsallowedsources">DesktopAppInstaller/EnableWindowsAllowedSources</a>
+  </dd>
+  <dd>
+    <a href="#desktopappinstaller-enablewindowsexperimentalfeatures">DesktopAppInstaller/EnableWindowsExperimentalFeatures</a>
+  </dd>
+  <dd>
+    <a href="#desktopappinstaller-setwindowsautoUpdateinterval">DesktopAppInstaller/SetWindowsAutoUpdateInterval</a>
+  </dd>
 </dl>
 
 
@@ -277,6 +292,244 @@ If you don't configure this setting, the Microsoft Store source for the Windows 
 ADMX Info:  
 -   GP Friendly name: *Enable Windows Package Manager Microsoft Store Source*
 -   GP name: *EnableMicrosoftStoreSource*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablemsappinstallerprotocol"></a>**DesktopAppInstaller/EnableMSAppInstallerProtocol**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether users can install packages from a website that is using the `ms-appinstaller` protocol. 
+
+- If you enable or do not configure this setting, users will be able to install packages from websites that use this protocol. 
+
+- If you disable this setting, users will not be able to install packages from websites that use this protocol.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable MS App Installer Protocol*
+-   GP name: *EnableMSAppInstallerProtocol*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablesettingscommand"></a>**DesktopAppInstaller/EnableSettingsCommand**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether users can change their settings. The settings are stored inside of a .json file on the user’s system. It may be possible for users to gain access to the file using elevated credentials. This won't override any policy settings that have been configured by this policy.
+
+- If you enable or do not configure this setting, users will be able to change settings for Windows Package Manager.
+- If you disable this setting, users will not be able to change settings for Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager Settings Command*
+-   GP name: *EnableSettingsCommand*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablewindowsallowedsources"></a>**DesktopAppInstaller/EnableWindowsAllowedSources**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls additional sources approved for users to configure using Windows Package Manager. If you don't configure this setting, users will be able to add or remove additional sources other than those configured by policy.
+
+- If you enable this setting, only the sources specified can be added or removed from Windows Package Manager. The representation for each allowed source can be obtained from installed sources using winget source export.
+- If you disable this setting, no additional sources can be configured by the user for Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager Settings Command*
+-   GP name: *EnableSettingsCommand*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablewindowsexperimentalfeatures"></a>**DesktopAppInstaller/EnableWindowsExperimentalFeatures**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether users can enable experimental features in Windows Package Manager. Experimental features are used during Windows Package Manager development cycle to provide previews for new behaviors. Some of these experimental features may be implemented prior to the Group Policy settings designed to control their behavior.
+
+- If you enable or do not configure this setting, users will be able to enable experimental features for Windows Package Manager.
+
+- If you disable this setting, users will not be able to enable experimental features for Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager Experimental Features*
+-   GP name: *EnableWindowsExperimentalFeatures*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-setwindowsautoupdateinterval"></a>**DesktopAppInstaller/SetWindowsAutoUpdateInterval**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls the auto-update interval for package-based sources. The default source for Windows Package Manager is configured such that an index of the packages is cached on the local machine. The index is downloaded when a user invokes a command, and the interval has passed (the index is not updated in the background). This setting has no impact on REST-based sources.
+
+- If you enable this setting, the number of minutes specified will be used by Windows Package Manager.
+
+- If you disable or do not configure this setting, the default interval or the value specified in settings will be used by Windows Package Manager.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Set Windows Package Manager Source Auto Update Interval In Minutes*
+-   GP name: *SetWindowsAutoUpdateInterval*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
