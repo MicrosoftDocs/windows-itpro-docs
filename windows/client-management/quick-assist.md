@@ -97,8 +97,8 @@ Either the support staff or a user can start a Quick Assist session.
 
     - Type *Quick Assist* in the search box and press ENTER.
     - Press **CTRL** + **Windows** + **Q**
-    - For Windows 10 users, from the Start menu, select **Windows Accessories**, and then choose **Quick Assist**.
-    - For Windows 11 users, from the Start menu, select **All Apps**, **Windows Tools**, and then choose **Quick Assist**.
+    - For **Windows 10** users, from the Start menu, select **Windows Accessories**, and then choose **Quick Assist**.
+    - For **Windows 11** users, from the Start menu, select **All Apps**, **Windows Tools**, and then choose **Quick Assist**.
 
 2. In the **Give assistance** section, the helper selects **Assist another person**. The helper might be asked to choose their account or sign in. Quick Assist generates a time-limited security code.
 
@@ -141,7 +141,7 @@ Visit [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps
 
 ### Install Quick Assist Offline
 
-To install Quick Assist offline, you'll need to download your APPXBUNDLE and unecoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
+To install Quick Assist offline, you'll need to download your APPXBUNDLE and unencoded XML file from [Microsoft Store for Business](https://businessstore.microsoft.com). Visit [Download an offline-licensed app](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) for more information.
 
 1. Start **Windows PowerShell** with Administrative privileges.
 1. In PowerShell, change the directory to the location you've saved the file to in step 1. (CD &#x3C;*location of package file*&#x3E;)
