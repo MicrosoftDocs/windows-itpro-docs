@@ -24,7 +24,7 @@ The table below shows the applicability of Windows:
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
-The Language Pack Management CSP allows a way to easily add languages and related language features and manage settings like System Preferred UI Language, System Locale, Input method (Keyboard), Locale, Speech Recognizer, User Preferred Language List. This CSP can be accessed using the new [LanguagePackManagement](https://docs.microsoft.com/en-us/powershell/module/languagepackmanagement/?view=windowsserver2022-ps) PowerShell module.
+The Language Pack Management CSP allows a way to easily add languages and related language features and manage settings like System Preferred UI Language, System Locale, Input method (Keyboard), Locale, Speech Recognizer, User Preferred Language List. This CSP can be accessed using the new [LanguagePackManagement](/powershell/module/languagepackmanagement) PowerShell module.
 
 1. Enumerate installed languages and features with GET command on the "InstalledLanguages" node. Below are the samples:
 
