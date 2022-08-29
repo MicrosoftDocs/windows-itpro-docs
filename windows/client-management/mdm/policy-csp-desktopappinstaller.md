@@ -56,7 +56,7 @@ manager: aaroncz
     <a href="#desktopappinstaller-enablewindowsexperimentalfeatures">DesktopAppInstaller/EnableWindowsExperimentalFeatures</a>
   </dd>
   <dd>
-    <a href="#desktopappinstaller-setwindowsautoUpdateinterval">DesktopAppInstaller/SetWindowsAutoUpdateInterval</a>
+    <a href="#desktopappinstaller-setwindowsautoupdateinterval">DesktopAppInstaller/SetWindowsAutoUpdateInterval</a>
   </dd>
 </dl>
 
