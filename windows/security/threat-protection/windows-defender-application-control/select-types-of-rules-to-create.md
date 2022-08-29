@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: jogeurte
+author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
