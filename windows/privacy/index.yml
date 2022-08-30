@@ -47,7 +47,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
-      url: required-windows-11-22H2-diagnostic-events-fields.md
+      url: required-diagnostic-events-fields-windows-11-22H2.md
     # Card
     - title: Windows 10 required diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_build.svg

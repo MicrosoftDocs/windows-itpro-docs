@@ -1,6 +1,6 @@
 ---
 description: Learn more about the Windows 11, version 22H2 diagnostic data gathered.
-title: Required Windows 11, version 22H2 diagnostic events and fields
+title: Required diagnostic events and fields for Windows 11, version 22H2
 keywords: privacy, telemetry
 ms.prod: w10
 localizationpriority: high
@@ -14,12 +14,11 @@ ms.date: 09/20/2022
 ---
 
 
-# Required Windows 11, version 22H2 diagnostic events and fields
+# Required diagnostic events and fields for Windows 11, version 22H2
 
  **Applies to**
 
 - Windows 11, version 22H2
-
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
 
@@ -29,7 +28,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Required Windows 11, version 21H2 diagnostic events and fields](required-windows-11-diagnostic-events-and-fields.md)
+- [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)
 - [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
