@@ -41,7 +41,7 @@ After these client-specific keys are created, clients can request attestations f
 
 The following diagram shows how CTAP and WebAuthn interact. The light blue dotted arrows represent interactions that depend on the specific implementation of the platform APIs.
 
-:::image type="content" source="images/webauthnapis/webauthnapis-fido2-overview.png" alt-text="The diagram shows how the WebAuthn API interacts with the relying parties and the CTAPI2 API.":::
+:::image type="content" source="images/webauthn-apis/webauthn-apis-fido2-overview.png" alt-text="The diagram shows how the WebAuthn API interacts with the relying parties and the CTAPI2 API.":::
 
 *Relationships of the components that participate in passwordless authentication*
 
@@ -92,7 +92,7 @@ The Microsoft FIDO2 implementation has been years in the making. Software and se
 
 Here's an approximate layout of where the Microsoft bits go:  
 
-:::image type="content" source="images/webauthnapis/webauthnapis-fido2-overview-msft-version.png" alt-text="The diagram shows how the WebAuthn API interacts with the Microsoft relying parties and the CTAPI2 API.":::
+:::image type="content" source="images/webauthn-apis/web-authnapis-fido2-overview-microsoft-version.png" alt-text="The diagram shows how the WebAuthn API interacts with the Microsoft relying parties and the CTAPI2 API.":::
 
 *Microsoft's implementation of WebAuthn and CATP2 APIs*
 
@@ -119,4 +119,4 @@ Here's an approximate layout of where the Microsoft bits go:
 The WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
 
 - [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/) (available on the W3C site). This document is known as the WebAuthn spec.
-- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). This is available at the [FIDO Alliance](http://fidoalliance.org/) site. (on which hardware and platform teams are working together to solve the problem of FIDO authentication).
+- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). This is available at the [FIDO Alliance](http://fidoalliance.org/) site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
