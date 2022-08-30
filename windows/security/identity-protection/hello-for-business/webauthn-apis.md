@@ -92,7 +92,7 @@ The Microsoft FIDO2 implementation has been years in the making. Software and se
 
 Here's an approximate layout of where the Microsoft bits go:  
 
-:::image type="content" source="images/webauthn-apis/web-authnapis-fido2-overview-microsoft-version.png" alt-text="The diagram shows how the WebAuthn API interacts with the Microsoft relying parties and the CTAPI2 API.":::
+:::image type="content" source="images/webauthn-apis/webauthn-apis-fido2-overview-microsoft-version.png" alt-text="The diagram shows how the WebAuthn API interacts with the Microsoft relying parties and the CTAPI2 API.":::
 
 *Microsoft's implementation of WebAuthn and CATP2 APIs*
 
