@@ -2201,7 +2201,6 @@ The following fields are available:
 
 - **callStack**  List of active subroutines running during error occurrence.
 - **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
-- **customAttributes**  List of custom attributes. See [customAttributes](#customattributes).
 - **customAttributes**  List of custom attributes.
 - **errorCode**  Error code.
 - **extendedData**  JSON blob representing additional, provider-level properties common to the component.
