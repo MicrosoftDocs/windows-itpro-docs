@@ -45,7 +45,7 @@ To create effective Windows Defender Application Control deny policies, it's cru
 5. If no rule exists for the file and it's not allowed based on ISG or MI, then the file is blocked implicitly.
 
 > [!NOTE]
-> If your Windows Defender Application Control policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud. For more details, see [How does the integration between WDAC and the Intelligent Security Graph work?](use-windows-defender-application-control-with-intelligent-security-graph.md#how-does-the-integration-between-wdac-and-the-intelligent-security-graph-work).
+> If your Windows Defender Application Control policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud. For more details, see [How does the integration between WDAC and the Intelligent Security Graph work?](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#how-does-wdac-work-with-the-isg).
 
 ## Interaction with Existing Policies
 
