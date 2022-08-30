@@ -45,8 +45,8 @@ manager: aaroncz
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|Yes|
-|Pro|No|Yes|
+|Home|No|No|
+|Pro|No|No|
 |Windows SE|No|Yes|
 |Business|No|Yes|
 |Enterprise|No|Yes|
@@ -100,8 +100,8 @@ The following list shows the supported values:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|Yes|
-|Pro|No|Yes|
+|Home|No|No|
+|Pro|No|No|
 |Windows SE|No|Yes|
 |Business|No|Yes|
 |Enterprise|No|Yes|
@@ -145,8 +145,8 @@ The following list shows the supported values:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|Yes|
-|Pro|No|Yes|
+|Home|No|No|
+|Pro|No|No|
 |Windows SE|No|Yes|
 |Business|No|Yes|
 |Enterprise|No|Yes|
@@ -191,8 +191,8 @@ The following list shows the supported values:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|Yes|
-|Pro|No|Yes|
+|Home|No|No|
+|Pro|No|No|
 |Windows SE|No|Yes|
 |Business|No|Yes|
 |Enterprise|No|Yes|
