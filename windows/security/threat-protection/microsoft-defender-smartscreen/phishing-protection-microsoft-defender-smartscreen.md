@@ -45,7 +45,7 @@ Enhanced Phishing Protection can be configured via Group Policy Objects (GPO) or
 
 Enhanced Phishing Protection can be configured using the following Administrative Templates policy settings:
 
-|Setting   |Description   |
+|Setting|Description|
 |---------|---------|
 |Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Service Enabled |This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users don't see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. In audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends telemetry through Microsoft Defender.<br><br> If you enable or don't configure this setting, Enhanced Phishing Protection is enabled in audit mode, preventing users to turn it off.<br><br> If you disable this policy setting, Enhanced Phishing Protection is off. When off, Enhanced Phishing Protection doesn't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.|
 |Administrative Templates\Windows Components\Windows Defender SmartScreen\Enhanced Phishing Protection\Notify Malicious|This policy setting determines whether Enhanced Phishing Protection warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a login URL with an invalid certificate.<br><br> If you enable this policy setting, Enhanced Phishing Protection warns your users if they type their work or school password into one of the malicious scenarios described above and encourages them to change their password. <br><br>If you disable or don't configure this policy setting, Enhanced Phishing Protection won't warn your users if they type their work or school password into one of the malicious scenarios described above.|
@@ -56,12 +56,12 @@ Enhanced Phishing Protection can be configured using the following Administrativ
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP](/windows/client-management/mdm/policy-csp-webthreatdefense).
 
-|Setting   |Details   |
-|---------|---------|
-|ServiceEnabled | <li>**OMA-URI full path:** ./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled <li> **Data Type:** Integer <li> **Allowed values:**<ul><li> **0**: Turns off Enhanced Phishing Protection. <li> **1**: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends telemetry but doesn't show any notifications to your users.|
-|NotifyMalicious |<li> **OMA-URI full path:** ./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyMalicious <li> **Data type:** Integer <li>**Allowed values:**<ul><li> **0**: Turns off Enhanced Phishing Protection notifications when users type their work or school password into one of the following malicious scenarios: a reported phishing site, a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a login URL with an invalid certificate. <li> **1**: Turns on Enhanced Phishing Protection notifications when users type their work or school password into one of the previously described malicious scenarios and encourages them to change their password. |
-|NotifyPasswordReuse  |<li> **OMA-URI full path:** ./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyPasswordReuse <li> **Data type:** Integer <li> **Allowed values:** <ul><li> **0**: Turns off Enhanced Phishing Protection notifications when users reuse their work or school password.  <li> **1**: Turns on Enhanced Phishing Protection notifications when users reuse their work or school password and encourages them to change their password.|
-|NotifyUnsafeApp  |<li> **OMA-URI full path:** ./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp <li> **Data type:** Integer <li> **Allowed values:** <ul><li> **0**: Turns off Enhanced Phishing Protection notifications when users type their work or school passwords in text editor apps like Notepad and Microsoft 365 Office Apps <li> **1**: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in Notepad and Microsoft 365 Office Apps.|
+| Setting                 | OMA-URI                                                                   | Data type |
+|-------------------------|---------------------------------------------------------------------------|-----------|
+| **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
+| **NotifyMalicious**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyMalicious`     | Integer   |
+| **NotifyPasswordReuse** | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyPasswordReuse` | Integer   |
+| **NotifyUnsafeApp**     | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/NotifyUnsafeApp`     | Integer   |
 
 ---
 
