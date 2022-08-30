@@ -709,9 +709,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting removes Control Center from the bottom right area on the taskbar. The control center area is located at the left of the clock in the taskbar and includes icons for current network and volume. 
+This policy setting disables the Control Center button from the bottom right area on the taskbar. The control center area is located at the left of the clock in the taskbar and includes icons for current network and volume. 
 
-If this setting is enabled, Control Center isn't displayed in the control center area.
+If this setting is enabled, Control Center area is displayed but the button to enable it will be disabled. 
 
 >[!Note]
 > A reboot is required for this policy setting to take effect.
