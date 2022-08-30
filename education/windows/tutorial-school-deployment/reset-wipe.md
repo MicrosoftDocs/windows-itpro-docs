@@ -116,7 +116,7 @@ Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be
 For more information, see [Autopilot motherboard replacement scenario guidance][MEM-4].
 
 <!-- Reference links in article -->
-[MEM-1]: mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
-[MEM-2]: mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
+[MEM-1]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
+[MEM-2]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal
 [MEM-3]: /mem/intune/remote-actions/devices-wipe#delete-devices-from-the-azure-active-directory-portal
 [MEM-4]: /mem/autopilot/autopilot-mbr

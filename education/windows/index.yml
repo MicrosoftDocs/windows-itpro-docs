@@ -47,14 +47,6 @@ landingContent:
           url: windows-11-se-overview.md
         - text: Windows 11 SE settings
           url: windows-11-se-settings-list.md
-      - linkListType: whats-new
-        links:
-        - text: Configure federated login
-          url: placeholder.md
-        - text: Deploy education themes
-          url: placeholder.md
-        - text: Enable Stickers
-          url: placeholder.md
       - linkListType: video
         links:
         - text: Deploy Windows 11 SE using Set up School PCs
@@ -75,10 +67,6 @@ landingContent:
         links:
         - text: Provisioning package settings
           url: set-up-school-pcs-provisioning-package.md
-      - linkListType: whats-new
-        links:
-        - text: What's new in Set up School PCs
-          url: set-up-school-pcs-whats-new.md
       - linkListType: video
         links:
         - text: Use the Set up School PCs App
