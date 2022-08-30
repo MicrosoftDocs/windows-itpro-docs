@@ -192,7 +192,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 - **Intelligent Security Graph (ISG)**
 
-  See [security considerations with the Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md#security-considerations-with-the-intelligent-security-graph)
+  See [security considerations with the Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md#security-considerations-with-the-isg-option)
 
   Possible mitigations:
 
