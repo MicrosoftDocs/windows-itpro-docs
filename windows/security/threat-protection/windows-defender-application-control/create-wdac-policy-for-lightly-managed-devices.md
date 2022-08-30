@@ -30,14 +30,14 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this topic. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later topics.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later articles.
 
 > [!NOTE]
 > Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As in the [previous topic](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As in the [previous article](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of WDAC. Recognizing where Lamna is starting from, with loose application usage policies and a culture of maximum app flexibility for users, Alice knows that she'll need to take an incremental approach to application control and use different policies for different workloads.
+**Alice Pena** is the IT team lead tasked with the rollout of WDAC. Recognizing that Lamna currently has loose application usage policies and a culture of maximum app flexibility for users, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
 
 For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
 
@@ -135,7 +135,7 @@ Alice follows these steps to complete this task:
     Set-RuleOption -FilePath $LamnaPolicy -Option 19 # Dynamic Code Security
     ```
 
-1. Add rules to allow windir and Program Files directories:
+1. Add rules to allow the Windows and Program Files directories:
 
     ```powershell
     $PathRules += New-CIPolicyRule -FilePathRule "%windir%\*"
@@ -164,7 +164,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 - **Users with administrative access**
 
-  By far the most impactful security trade-off, this trade-off allows the device user (or malware running with the user's privileges) to modify or remove altogether the WDAC policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer that would allow them to gain persistent app authorization for whatever apps or binaries they wish.
+  This is by far the most impactful security trade-off and allows the device user, or malware running with the user's privileges, to modify or remove the WDAC policy on the device. Additionally, administrators can configure any app to act as a managed installer, which would allow them to gain persistent app authorization for whatever apps or binaries they wish.
 
   Possible mitigations:
 
@@ -196,7 +196,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
   Possible mitigations:
 
-  - Implement policies requiring apps are managed by IT; audit existing app usage and deploy authorized apps using a software distribution solution such as Microsoft Endpoint Manager; move from ISG to managed installer or signature-based rules.
+  - Implement policies requiring that apps are managed by IT; audit existing app usage and deploy authorized apps using a software distribution solution such as Microsoft Endpoint Manager; move from ISG to managed installer or signature-based rules.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 
 - **Supplemental policies**
