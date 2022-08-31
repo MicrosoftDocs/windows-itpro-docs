@@ -64,7 +64,7 @@ When releasing a feature update, there are two policies that are configured by t
 | Ring | Target version (DSS) Policy | Feature update deferral | Feature update deadline | Feature update grace period |
 | ----- | ----- | ----- | ----- | ----- |
 | Test | 21H2 | 0 | 5 | 0 |
-| First | 21H2 | 0 | 5 | 0 |
+| First | 21H2 | 0 | 5 | 2 |
 | Fast | 21H2 | 0 | 5 | 2 |
 | Broad | 21H2 | 0 | 5 | 2 |
 
