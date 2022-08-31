@@ -41,7 +41,7 @@ The **Microsoft 365 admin center** is the hub for all administrative consoles fo
 
 From the Microsoft 365 admin center, you can access different administrative dashboards: Azure Active Directory, Microsoft Endpoint Manager, Intune for Education, and others:
 
-:::image type="content" source="./images/m365-admin-center.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" border="true":::
+:::image type="content" source="./images/m365-admin-center.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" lightbox="./images/m365-admin-center.png" border="true":::
 
 For more information, see [Overview of the Microsoft 365 admin center][M365-2].
 
