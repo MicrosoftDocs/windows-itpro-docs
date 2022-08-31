@@ -149,7 +149,7 @@ To allow provisioning packages to complete the Azure AD Join process:
     > [!NOTE]
     > If it is required that only specific users can join devices to Azure AD, select **Selected**. Ensure that the user account that will create provisioning packages is included in the list of users.
 1. Select Save
-    :::image type="content" alt-text="Configure device settings from Microsoft Entra admin center." source="images/entra-device-settings.png":::
+    :::image type="content" source="images/entra-device-settings.png" alt-text="Configure device settings from Microsoft Entra admin center." lightbox="images/entra-device-settings.png":::
 
 ________________________________________________________
 
