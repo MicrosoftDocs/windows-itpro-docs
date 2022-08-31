@@ -59,7 +59,7 @@ To block personally owned Windows devices from enrolling:
 1. Select **Create restriction**
 1. On the **Basics** page, provide a name for the restriction and, optionally, a description > **Next**
 1. On the **Platform settings** page, in the **Personally owned devices** field, select **Block** > **Next**
-    :::image type="content" source="./images/enrollment-restrictions.png" alt-text="Device enrollment restriction page in Microsoft Endpoint Manager admin center" border="true":::
+    :::image type="content" source="./images/enrollment-restrictions.png" alt-text="Device enrollment restriction page in Microsoft Endpoint Manager admin center" lightbox="./images/enrollment-restrictions.png" border="true":::
 1. Optionally, on the **Scope tags** page, add scope tags > **Next**
 1. On the **Assignments** page, select **Add groups**, and then use the search box to find and choose groups to which you want to apply the restriction > **Next**
 1. On the **Review + create** page, select **Create** to save the restriction
