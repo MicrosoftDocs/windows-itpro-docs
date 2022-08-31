@@ -130,7 +130,7 @@ To configure your school's branding:
 1. Sign in to the <a href="https://entra.microsoft.com" target="_blank"><b>Microsoft Entra admin center</b></a>
 1. Select **Azure Active Directory** > **Show More** > **User experiences** > **Company branding**
 1. You can specify brand settings like background image, logo, username hint and a sign-in page text
-    :::image type="content" alt-text="Configure Azure AD branding from Microsoft Entra admin center." source="images/entra-branding.png":::
+    :::image type="content" source="images/entra-branding.png" alt-text="Configure Azure AD branding from Microsoft Entra admin center." lightbox="images/entra-branding.png":::
 1. To adjust the school tenant's name displayed during OOBE, select **Azure Active Directory** > **Overview** > **Properties**
 1. In the **Name** field, enter the school district or organization's name > **Save**
     :::image type="content" alt-text="Configure Azure AD tenant name from Microsoft Entra admin center." source="images/entra-tenant-name.png":::
