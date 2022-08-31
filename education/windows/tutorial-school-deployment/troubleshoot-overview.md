@@ -31,7 +31,7 @@ Here's a collection of resources to help you troubleshoot Windows devices manage
 - [Troubleshooting Win32 app installations with Intune][MEM-7]
 - [Troubleshooting device actions in Intune][MEM-3]
 - [**Collect diagnostics**][MEM-10] is a remote action that lets you collect and download Windows device logs without interrupting the user
-  :::image type="content" source="./images/intune-diagnostics.png" alt-text="Intune for Education dashboard" border="true":::
+  :::image type="content" source="./images/intune-diagnostics.png" alt-text="Intune for Education dashboard" lightbox="./images/intune-diagnostics.png" border="true":::
 
 ## How to contact Microsoft Support
 
@@ -41,7 +41,7 @@ Follow these steps to obtain support in Microsoft Endpoint Manager:
 
 - Sign in to the <a href="https://endpoint.microsoft.com" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 - Select **Troubleshooting + support** > **Help and support**
-    :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Endpoint Manager.":::
+    :::image type="content" source="images/advanced-support.png" alt-text="Screenshot that shows how to obtain support from Microsoft Endpoint Manager." lightbox="images/advanced-support.png":::
 - Select the required support scenario: Configuration Manager, Intune, Co-management, or Windows 365
 - Above **How can we help?**, select one of three icons to open different panes: *Find solutions*, *Contact support*, or *Service requests*
 - In the **Find solutions** pane, use the text box to specify a few details about your issue. The console may offer suggestions based on what you've entered. Depending on the presence of specific keywords, the console provides help like:
