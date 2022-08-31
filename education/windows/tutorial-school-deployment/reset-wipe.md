@@ -47,7 +47,7 @@ Here are the steps to perform a factory reset from Intune for Education:
 1. Select the device you want to reset > **Factory reset**
 1. Select **Factory reset** to confirm the action
 
-:::image type="content" source="./images/win11-wipe.png" alt-text="Three screenshots showing the device being wiped, ending up in OOBE" border="false":::
+:::image type="content" source="./images/win11-wipe.png" alt-text="Three screenshots showing the device being wiped, ending up in OOBE" lightbox="./images/win11-wipe.png" border="false":::
 
 Consider using factory reset in the following example scenarios:
 
