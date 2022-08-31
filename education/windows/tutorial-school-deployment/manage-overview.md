@@ -31,7 +31,7 @@ With Intune for Education, there are several ways to manage students' devices. G
 
 Intune fo Education allows you to perform actions on devices without having to sign in to the devices. For example, you can send a command to a device to restart or to turn off, or you can locate a device.
 
-:::image type="content" source="./images/remote-actions.png" alt-text="Remote actions available in Intune for Education when selecting a Windows device" border="true":::
+:::image type="content" source="./images/remote-actions.png" alt-text="Remote actions available in Intune for Education when selecting a Windows device" lightbox="./images/remote-actions.png" border="true":::
 
 With bulk actions, remote actions can be performed on multiple devices at once.
 
