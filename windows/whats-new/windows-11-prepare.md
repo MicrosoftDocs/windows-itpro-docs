@@ -103,29 +103,31 @@ If you use Microsoft Endpoint Manager and have onboarded devices to Endpoint ana
 
 ## Prepare a pilot deployment
 
-A pilot deployment is a proof of concept that rolls out an upgrade to a select number of devices in production, before deploying it broadly across the organization.  
+A pilot deployment is a proof of concept that rolls out an upgrade to a select number of devices in production, before deploying it broadly across the organization.
 
-At a high level, the tasks involved are: 
+At a high level, the tasks involved are:
 
-1. Assign a group of users or devices to receive the upgrade. 
-2. Implement baseline updates. 
-3. Implement operational updates. 
-4. Validate the deployment process. 
-5. Deploy the upgrade to devices. 
-6. Test and support the pilot devices. 
-7. Determine broad deployment readiness based on the results of the pilot. 
+1. Assign a group of users or devices to receive the upgrade.
+2. Implement baseline updates.
+3. Implement operational updates.
+4. Validate the deployment process.
+5. Deploy the upgrade to devices.
+6. Test and support the pilot devices.
+7. Determine broad deployment readiness based on the results of the pilot.
 
 ## User readiness
 
-Don't overlook the importance of user readiness to deliver an effective, enterprise-wide deployment of Windows 11. Windows 11 has a familiar design, but your users will see several enhancements to the overall user interface. They'll also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows 11: 
-- Create a communications schedule to ensure that you provide the right message at the right time to the right groups of users, based on when they'll see the changes. 
-- Draft concise emails that inform users of what changes they can expect to see. Offer tips on how to use or customize their experience. Include information about support and help desk options. 
-- Update help desk manuals with screenshots of the new user interface, the out-of-box experience for new devices, and the upgrade experience for existing devices. 
+Don't overlook the importance of user readiness to deliver an effective, enterprise-wide deployment of Windows 11. Windows 11 has a familiar design, but your users will see several enhancements to the overall user interface. They'll also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows 11:
+
+- Create a communications schedule to ensure that you provide the right message at the right time to the right groups of users, based on when they'll see the changes.
+- Draft concise emails that inform users of what changes they can expect to see. Offer tips on how to use or customize their experience. Include information about support and help desk options.
+- Update help desk manuals with screenshots of the new user interface, the out-of-box experience for new devices, and the upgrade experience for existing devices.
 
 ## Learn more
 
-See the [Stay current with Windows 10 and Microsoft 365 Apps](/learn/paths/m365-stay-current/) learning path on Microsoft Learn. 
-- The learning path was created for Windows 10, but the basic principles and tasks outlined for the plan, prepare, and deploy phases also apply to your deployment of Windows 11.  
+See the [Stay current with Windows 10 and Microsoft 365 Apps](/learn/paths/m365-stay-current/) learning path.
+
+- The learning path was created for Windows 10, but the basic principles and tasks outlined for the plan, prepare, and deploy phases also apply to your deployment of Windows 11.
 
 ## See also
 

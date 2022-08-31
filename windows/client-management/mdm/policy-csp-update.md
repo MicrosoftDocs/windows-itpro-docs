@@ -138,6 +138,9 @@ ms.collection: highpri
   </dd>
   <dd>
     <a href="#update-managepreviewbuilds">Update/ManagePreviewBuilds</a>
+  </dd> 
+  <dd>
+    <a href="#update-NoUpdateNotificationDuringActiveHours">Update/NoUpdateNotificationDuringActiveHours</a>
   </dd>
   <dd>
     <a href="#update-pausedeferrals">Update/PauseDeferrals</a>
@@ -2381,6 +2384,55 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="update-NoUpdateNotificationDuringActiveHours"></a>**Update/NoUpdateNotificationDuringActiveHours**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy can be used in conjunction with Update/ActiveHoursStart and Update/ActiveHoursEnd policies to ensure that the end user sees no update notifications during active hours until deadline is reached.  Note - if no active hour period is configured then this will apply to the intelligent active hours window calculated on the device.
+
+Supported value type is a boolean.
+
+0 (Default) This configuration will provide the default behavior (notifications may display during active hours) 
+1: This setting will prevent notifications from displaying during active hours.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Display options for update notifications*
+- GP name: *NoUpdateNotificationDuringActiveHours*
+- GP element: *NoUpdateNotificationDuringActiveHours*
+- GP path: *Windows Components\WindowsUpdate\Manage end user experience*
+- GP ADMX file name: *WindowsUpdate.admx*
+<!--/ADMXMapped-->
+
+<!--/Policy-->
+<hr/>
+
 
 <!--Policy-->
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  

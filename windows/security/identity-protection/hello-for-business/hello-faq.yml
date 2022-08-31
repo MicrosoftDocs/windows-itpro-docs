@@ -84,7 +84,7 @@ sections:
 
       - question: Can I use an external Windows Hello compatible camera when my computer has a built-in Windows Hello compatible camera?
         answer: |
-          Yes. Starting with Windows 10, version 21H1 an external Windows Hello compatible camera can be used if a device already supports an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103). However, using external Hello cameras and accessories is restricted if ESS is enabled, please see [Windows Hello Enhanced Sign-in Security](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#pluggableperipheral-biometric-sensors).
+          Yes. Starting with Windows 10, version 21H1 an external Windows Hello compatible camera can be used if a device already supports an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103). However, using external Hello cameras and accessories is restricted if ESS is enabled, please see [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#pluggableperipheral-biometric-sensors).
 
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
@@ -155,7 +155,7 @@ sections:
 
       - question: Where is Windows Hello biometrics data stored?
         answer: |
-            When you enroll in Windows Hello, a representation of your face called an enrollment profile is created more information can be found on [Windows Hello face authentication](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn’t roam, never leaves the module, and is never sent to Microsoft cloud or external server.  For more details see [Windows Hello biometrics in the enterprise](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
+            When you enroll in Windows Hello, a representation of your face called an enrollment profile is created more information can be found on [Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn't roam, never leaves the module, and is never sent to Microsoft cloud or external server.  For more details see [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
       
       - question: What is the format used to store Windows Hello biometrics data on the device?
         answer: |
@@ -261,5 +261,4 @@ sections:
           
       - question: Does Windows Hello for Business work with Azure Active Directory Domain Services (Azure AD DS) clients?
         answer: | 
-          No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD isn't available for it via Azure AD Connect. Hence, Windows Hello for Business doesn't work with Azure AD.
-
+          No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD isn't available for it via Azure AD Connect. Hence, Windows Hello for Business doesn't work with Azure AD DS.

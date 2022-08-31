@@ -289,4 +289,4 @@ Always include alt text for accessibility, and always end it with a period.
 ## docs.ms extensions
 
 > [!div class="nextstepaction"]
-> [Next step action](/mem/configmgr)
+> [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/mem/configmgr)
