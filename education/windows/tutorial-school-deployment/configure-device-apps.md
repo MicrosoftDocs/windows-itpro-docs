@@ -36,7 +36,7 @@ In this section you will:
 
 Intune for Education supports the deployment of two types of Windows applications: **web apps** and **desktop apps**.
 
-:::image type="content" source="./images/intune-education-apps.png" alt-text="Intune for Education - Apps" border="true":::
+:::image type="content" source="./images/intune-education-apps.png" alt-text="Intune for Education - Apps" lightbox="./images/intune-education-apps.png" border="true":::
 
 ### Desktop apps
 
