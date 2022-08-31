@@ -17,6 +17,20 @@ ms.collection: education
 
 This guide introduces the tools and services available from Microsoft to deploy, configure and manage Windows devices in an education environment.
 
+## Audience and user requirements
+
+This tutorial is intended for education professionals responsible for deploying and managing Windows devices, including:  
+
+- School leaders
+- IT administrators
+- Teachers
+- Microsoft partners
+
+This content provides a comprehensive path for schools to deploy and manage new Windows devices with Microsoft Intune. It includes step-by-step information how to manage devices throughout their lifecycle, and specific guidance for **Windows 11 SE** and **Surface devices**.
+
+> [!NOTE]
+> Depending on your school setup scenario, you may not need to implement all steps.
+
 ## Device lifecycle management
 
 Historically, school IT administrators and educators have struggled to find an easy-to-use, flexible, and secure way to manage the lifecycle of the devices in their schools. In response, Microsoft has developed integrated suites of products for streamlined, cost-effective device lifecycle management.
@@ -45,19 +59,6 @@ From enrollment, through configuration and protection, to resetting, Intune for 
 - **Protect and manage:** in addition to its configuration capabilities, Intune for Education helps protect devices from unauthorized access or malicious attacks. For example, adding an extra layer of authentication with Windows Hello can make devices more secure. Policies are available that let you control settings for Windows Firewall, Endpoint Protection, and software updates
 - **Retire:** when it's time to repurpose a device, Intune for Education offers several options, including resetting the device, removing it from management, or wiping school data. In this document, we cover different device return and exchange scenarios
 
-## Audience and user requirements
-
-This tutorial is intended for education professionals responsible for deploying and managing Windows devices, including:  
-
-- School leaders
-- IT administrators
-- Teachers
-- Microsoft partners
-
-This content provides a comprehensive path for schools to deploy and manage new Windows devices with Microsoft Intune. It includes step-by-step information on the deployment, management, and resetting of Surface Laptop SE and Windows 11 SE operating system.
-
-> [!NOTE]
-> Depending on your school setup scenario, you may not need to implement all steps.
 ## Four pillars of modern device management
 
 In the remainder of this document, we'll discuss the key concepts and benefits of modern device management with Microsoft 365 solutions for education. The guidance is organized around the four main pillars of modern device management:
