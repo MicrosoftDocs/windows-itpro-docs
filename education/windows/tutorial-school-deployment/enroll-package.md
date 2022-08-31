@@ -58,7 +58,7 @@ For more information, see [Install Windows Configuration Designer][WIN-1], which
 
 To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and automatically enroll in Intune.
 
-:::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package" border="false":::
+:::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package." border="false":::
 
 :::image type="content" source="./images/win11-login-screen.png" alt-text="Windows 11 login screen" border="false":::
 
