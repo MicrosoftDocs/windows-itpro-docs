@@ -51,7 +51,7 @@ Two group types can be created:
 For more information, see:
 
 - [Create groups in Intune for Education][EDU-1]
-- [Manually add or remove users and devices to an existing assigned group][EDU-2]]
+- [Manually add or remove users and devices to an existing assigned group][EDU-2]
 - [Edit dynamic group rules to accommodate for new devices, locations, or school years][EDU-3]
 
 ________________________________________________________
