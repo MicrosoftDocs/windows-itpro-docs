@@ -20,6 +20,8 @@ Passwords can leave your customers vulnerable to data breaches and security atta
 
 Microsoft has long been a proponent of passwordless authentication, and introduced the W3C/Fast IDentity Online 2 (FIDO2) Win32 WebAuthn platform APIs in Windows 10 (version 1903).
 
+Starting in **Windows 11, version 22H2**, WebAuthn APIs support ECC algorithms.
+
 ## What does this mean?
 
 By using WebAuthn APIs, developer partners and the developer community can use [Windows Hello](./index.yml) or [FIDO2 Security Keys](./microsoft-compatible-security-key.md) to implement passwordless multi-factor authentication for their applications on Windows devices.
