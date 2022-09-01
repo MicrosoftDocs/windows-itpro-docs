@@ -17,7 +17,7 @@ appliesto:
 ---
 # Change history for Windows 10 for Education
 
-This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
+This topic lists new and updated topics in the [Windows 10 for Education](index.yml) documentation.
 
 ## May 2019
 
