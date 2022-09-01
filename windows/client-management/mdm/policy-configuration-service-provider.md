@@ -7896,6 +7896,42 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-printers.md#printers-approvedusbprintdevices" id="printers-approvedusbprintdevices">Printers/ApprovedUsbPrintDevices</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-approvedusbprintdevicesuser" id="printers-approvedusbprintdevicesuser">Printers/ApprovedUsbPrintDevicesUser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configurecopyfilespolicy" id="printers-configurecopyfilespolicy">Printers/ConfigureCopyFilesPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configuredrivervalidationlevel" id="printers-configuredrivervalidationlevel">Printers/ConfigureDriverValidationLevel</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configureipppagecountspolicy" id="printers-configureipppagecountspolicy">Printers/ConfigureIppPageCountsPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configureredirectionguard" id="printers-configureredirectionguard">Printers/ConfigureRedirectionGuard</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configurerpcconnectionpolicy" id="printers-configurerpcconnectionpolicy">Printers/ConfigureRpcConnectionPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configurerpclistenerpolicy" id="printers-configurerpclistenerpolicy">Printers/ConfigureRpcListenerPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-configurerpctcpport" id="printers-configurerpctcpport">Printers/ConfigureRpcTcpPort</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-enabledevicecontrol" id="printers-enabledevicecontrol">Printers/EnableDeviceControl</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-enabledevicecontroluser" id="printers-enabledevicecontroluser">Printers/EnableDeviceControlUser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-managedriverexclusionlist" id="printers-managedriverexclusionlist">Printers/ManageDriverExclusionList</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-printers.md#printers-pointandprintrestrictions" id="printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a>
   </dd>
   <dd>
@@ -7903,6 +7939,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-printers.md#printers-publishprinters" id="printers-publishprinters">Printers/PublishPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-printers.md#printers-restrictdriverinstallationtoadministrators" id="printers-restrictdriverinstallationtoadministrators">Printers/RestrictDriverInstallationToAdministrators</a>
   </dd>
 </dl>
 
