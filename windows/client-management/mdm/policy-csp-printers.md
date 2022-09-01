@@ -203,9 +203,9 @@ This new Group Policy entry will be used to manage the `Software\Policies\Micros
 
 The default value of the policy will be Unconfigured.
 
-If the policy object is either Unconfigured or Disabled, the code will default to `SyncCopyFilestoColorFolderOnly` as the value and process the CopyFiles entries as appropriate.
+If the policy object is either Unconfigured or Disabled, the code will default to *SyncCopyFilestoColorFolderOnly* as the value and process the CopyFiles entries as appropriate.
 
-If the policy object is Enabled, the code will read the `DWORD `value from the registry entry and act accordingly.
+If the policy object is Enabled, the code will read the *DWORD* value from the registry entry and act accordingly.
 
 The following are the supported values:
 
@@ -259,9 +259,9 @@ This new Group Policy entry will be used to manage the `Software\Policies\Micros
 
 The default value of the policy will be Unconfigured.
 
-If the policy object is either Unconfigured or Disabled, the code will default to `DriverValidationLevel_Legacy` as the value and process the print driver digital signatures as appropriate.
+If the policy object is either Unconfigured or Disabled, the code will default to *DriverValidationLevel_Legacy* as the value and process the print driver digital signatures as appropriate.
 
-If the policy object is Enabled, the code will read the `DWORD`value from the registry entry and act accordingly.
+If the policy object is Enabled, the code will read the *DWORD* value from the registry entry and act accordingly.
 
 The following are the supported values:
 
@@ -373,7 +373,7 @@ The default value of the policy will be Unconfigured.
 
 If the policy object is either Unconfigured or Disabled, the code will default to 1 (enabled) as the value and will prevent redirection primitives in the spooler from being used.
 
-If the policy object is Enabled, the code will read the DWORD value from the registry entry and act accordingly.
+If the policy object is Enabled, the code will read the *DWORD* value from the registry entry and act accordingly.
 
 The following are the supported values:
 
