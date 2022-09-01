@@ -9344,6 +9344,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation" id="#windowslogon-enablefirstlogonanimation">WindowsLogon/EnableFirstLogonAnimation</a>
   </dd>
   <dd>
+    <a href="./policy-csp-windowslogon.md#windowslogon-enablemprnotifications" id="#windowslogon-enablemprnotifications">WindowsLogon/EnableMPRNotifications</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-windowslogon.md#windowslogon-enumeratelocalusersondomainjoinedcomputers" id="windowslogon-enumeratelocalusersondomainjoinedcomputers">WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers</a>
   </dd>
   <dd>
