@@ -7911,7 +7911,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-printers.md#printers-configureipppagecountspolicy" id="printers-configureipppagecountspolicy">Printers/ConfigureIppPageCountsPolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-printers.md#printers-configureredirectionguard" id="printers-configureredirectionguard">Printers/ConfigureRedirectionGuard</a>
+    <a href="./policy-csp-printers.md#printers-configureredirectionguardpolicy" id="printers-configureredirectionguardpolicy">Printers/ConfigureRedirectionGuardPolicy</a>
   </dd>
   <dd>
     <a href="./policy-csp-printers.md#printers-configurerpcconnectionpolicy" id="printers-configurerpcconnectionpolicy">Printers/ConfigureRpcConnectionPolicy</a>

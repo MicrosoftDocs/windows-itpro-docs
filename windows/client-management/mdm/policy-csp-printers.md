@@ -37,7 +37,7 @@ manager: aaroncz
     <a href="#printers-configureipppagecountspolicy">Printers/ConfigureIppPageCountsPolicy</a>
   </dd>
   <dd>
-    <a href="#printers-configureredirectionguard">Printers/ConfigureRedirectionGuard</a>
+    <a href="#printers-configureredirectionguardpolicy">Printers/ConfigureRedirectionGuardPolicy</a>
   </dd>
   <dd>
     <a href="#printers-configurerpcconnectionpolicy">Printers/ConfigureRpcConnectionPolicy</a>
@@ -341,7 +341,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configureredirectionguard"></a>**Printers/ConfigureRedirectionGuard**  
+<a href="" id="printers-configureredirectionguardpolicy"></a>**Printers/ConfigureRedirectionGuardPolicy**  
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
