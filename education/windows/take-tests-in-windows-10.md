@@ -14,12 +14,12 @@ ms.date: 08/10/2022
 ms.reviewer: 
 manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 10 and above</b>
 ---
 
-# Take tests in Windows 10
+# Take tests in Windows 10+
 
-Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10 creates the right environment for taking a test:
+Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10+ creates the right environment for taking a test:
 
 - Take a Test shows just the test and nothing else.
 - Take a Test clears the clipboard.
