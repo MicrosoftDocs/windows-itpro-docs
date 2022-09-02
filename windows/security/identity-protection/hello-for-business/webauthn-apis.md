@@ -9,7 +9,7 @@ ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 09/15/2022
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
@@ -35,7 +35,7 @@ Developers should use the WebAuthn APIs to support FIDO2 authentication keys in 
 
 ## The big picture
 
-Client to Authenticator Protocol 2 (CTAP2) and WebAuthn define an abstraction layer that creates an ecosystem for strongly authenticated credentials. In this ecosystem, any interoperable client (such as a native app or browser) that runs on a given client device uses a standardized method to interact with any interoperable authenticator. Interoperable authenticators include authenticators that are built into the client device (platform authenticators) and authenticators that connect to the client device by using USB, BLE, or NFC connections (roaming authenticators).
+The Client to Authenticator Protocol 2 (CTAP2) and WebAuthn define an abstraction layer that creates an ecosystem for strongly authenticated credentials. In this ecosystem, any interoperable client (such as a native app or browser) that runs on a given client device uses a standardized method to interact with any interoperable authenticator. Interoperable authenticators include authenticators that are built into the client device (platform authenticators) and authenticators that connect to the client device by using USB, BLE, or NFC connections (roaming authenticators).
 
 The authentication process starts when the user makes a specific user gesture that indicates consent for the operation. At the request of the client, the authenticator securely creates strong cryptographic keys and stores them locally.
 
@@ -72,7 +72,7 @@ Many relying parties and clients can interact with many authenticators on a sing
 
 ## Interoperability
 
-Before there was WebAuthn and CTAP2, there was U2F and CTAP1. U2F is the FIDO Alliance universal second-factor specification. There are many authenticators that speak CTAP1 and manage U2F credentials. WebAuthn was designed to be interoperable with CTAP1 Authenticators. A relying party that uses WebAuthn can still use U2F credentials if the relying party doesn't require FIDO2-only functionality.
+Before WebAuthn and CTAP2, there were U2F and CTAP1. U2F is the FIDO Alliance universal second-factor specification. There are many authenticators that speak CTAP1 and manage U2F credentials. WebAuthn was designed to be interoperable with CTAP1 Authenticators. A relying party that uses WebAuthn can still use U2F credentials if the relying party doesn't require FIDO2-only functionality.
 
 FIDO2 authenticators have already implemented and WebAuthn relying parties might require the following optional features:
 
@@ -114,7 +114,7 @@ Here's an approximate layout of where the Microsoft bits go:
 
 - **Platform: Windows 10, Windows 11**. Windows 10 and Windows 11 host the Win32 Platform WebAuthn APIs.
 
-- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. That's because there's already a strong ecosystem of products that specialize in strong authentication, and every one of our customers (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
+- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. The reason is because there's already a strong ecosystem of products that specialize in strong authentication, and every customer (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
 
 ## Developer references
 
