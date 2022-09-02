@@ -112,7 +112,6 @@ These requirements include restricting printing to USB connected printers that m
 This policy will contain the comma-separated list of approved USB Vid&Pid combinations that the print spooler will allow to print when Device Control is enabled.
 The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
 
-Parent deliverable: 26209274 - Device Control: Printer
 <!--/Description-->
 
 <!--ADMXBacked-->
