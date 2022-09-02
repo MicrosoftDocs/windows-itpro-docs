@@ -276,7 +276,7 @@ Type: DWORD. Defaults to 4.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Manage processing of Queue-specific files*
+-   GP Friendly name: *Manage Print Driver signature validation*
 -   GP name: *ConfigureDriverValidationLevel*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -728,7 +728,7 @@ Value Data: Name of excluded file
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Manage processing of Queue-specific files*
+-   GP Friendly name: *Manage Print Driver exclusion list*
 -   GP name: *ManageDriverExclusionList*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
