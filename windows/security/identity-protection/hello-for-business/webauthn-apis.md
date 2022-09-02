@@ -18,9 +18,9 @@ appliesto:
 
 Passwords can leave your customers vulnerable to data breaches and security attacks by malicious users.
 
-Microsoft has long been a proponent of passwordless authentication, and introduced the W3C/Fast IDentity Online 2 (FIDO2) Win32 WebAuthn platform APIs in Windows 10 (version 1903).
+Microsoft has long been a proponent of passwordless authentication, and has introduced the W3C/Fast IDentity Online 2 (FIDO2) Win32 WebAuthn platform APIs in Windows 10 (version 1903).
 
-Starting in **Windows 11, version 22H2**, WebAuthn APIs support ECC algorithms.
+Starting from **Windows 11, version 22H2**, WebAuthn APIs support ECC algorithms.
 
 ## What does this mean?
 
@@ -31,7 +31,7 @@ Users of these apps or sites can use any browser that supports WebAuthn APIs for
 Developers should use the WebAuthn APIs to support FIDO2 authentication keys in a consistent way for users. Additionally, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) while avoiding the interaction and management overhead.
 
 > [!NOTE]  
-> When these APIs are in use, Windows 10 browsers or apps don't have direct access to the FIDO2 transports for FIDO-related messaging.
+> When these APIs are in use, Windows 10 browsers or applications don't have direct access to the FIDO2 transports for FIDO-related messaging.
 
 ## The big picture
 
@@ -41,7 +41,7 @@ The authentication process starts when the user makes a specific user gesture th
 
 After these client-specific keys are created, clients can request attestations for registration and authentication. The type of signature that the private key uses reflects the user gesture that was made.  
 
-The following diagram shows how CTAP and WebAuthn interact. The light blue dotted arrows represent interactions that depend on the specific implementation of the platform APIs.
+The following diagram shows how CTAP and WebAuthn interact. The light-blue-dotted arrows represent interactions that depend on the specific implementation of the platform APIs.
 
 :::image type="content" source="images/webauthn-apis/webauthn-apis-fido2-overview.png" alt-text="The diagram shows how the WebAuthn API interacts with the relying parties and the CTAPI2 API.":::
 
@@ -58,17 +58,17 @@ A combined WebAuthn/CTAP2 dance includes the following cast of characters:
   - As a relying party, a web application can't directly interact with the WebAuthn API. The relying party must broker the deal through the browser.  
   
   > [!NOTE]  
-  > The preceding diagram doesn't depict single sign-on authentication. Be careful not to confuse FIDO relying parties with federated relying parties.
+  > The preceding diagram doesn't depict Single Sign-On (SSO) authentication. Be careful not to confuse FIDO relying parties with federated relying parties.
 
-- **WebAuthn API**. The *WebAuthn API* enables clients to make requests to authenticators. The client can request that the authenticator create a key, provide an assertion about a key, report capabilities, manage a PIN, and so on.
+- **WebAuthn API**. The *WebAuthn API* enables clients to make requests to authenticators. The client can request the authenticator to create a key, provide an assertion about a key, report capabilities, manage a PIN, and so on.
 
-- **CTAP2 platform/host**. The *platform* (also called the host in the CTAP2 spec) is the part of the client device that negotiates with authenticators. The platform is responsible for securely reporting the origin of the request and for calling the CTAP2 Concise Binary Object Representation (CBOR) APIs. If the platform isn't CTAP2-aware, the clients themselves take on more of the burden. In this case, the components and interactions of the preceding diagram may differ.
+- **CTAP2 platform/host**. The *platform* (also called the host in the CTAP2 spec) is the part of the client device that negotiates with authenticators. The platform is responsible for securely reporting the origin of the request and for calling the CTAP2 Concise Binary Object Representation (CBOR) APIs. If the platform isn't CTAP2-aware, the clients themselves take on more of the burden. In this case, the components and interactions shown in the preceding diagram may differ.
 
 - **Platform authenticator**. A *platform authenticator* usually resides on a client device. Examples of platform authenticators include fingerprint recognition technology that uses a built-in laptop fingerprint reader and facial recognition technology that uses a built-in smartphone camera. Cross-platform transport protocols such as USB, NFC or BLE can't access platform authenticators.
 
 - **Roaming authenticator**. A *roaming authenticator* can connect to multiple client devices. Client devices must use a supported transport protocol to negotiate interactions. Examples of roaming authenticators include USB security keys, BLE-enabled smartphone applications, and NFC-enabled proximity cards. Roaming authenticators can support CTAP1, CTAP2, or both protocols.
 
-Many relying parties and clients can interact with many authenticators on a single client device. A user can install multiple browsers that support WebAuthn, and might simultaneously have access to a built-in fingerprint reader, a plugged-in security key, and a BLE-enabled mobile app.
+Many relying parties and clients can interact with many authenticators on a single client device. A user can install multiple browsers that support WebAuthn, and might simultaneously have access to a built-in fingerprint reader, a plugged-in security key, and a BLE-enabled mobile application.
 
 ## Interoperability
 
@@ -81,7 +81,7 @@ FIDO2 authenticators have already implemented and WebAuthn relying parties might
 - Location (the authenticator returns a location)
 - [Hash-based Message Authentication Code (HMAC)-secret](/dotnet/api/system.security.cryptography.hmac) (enables offline scenarios)
 
-The following options and might be useful in the future, but haven't been observed in the wild yet:
+The following options might be useful in the future, but haven't been observed in the wild yet:
 
 - Transactional approval
 - User verification index (servers can determine whether biometric data that's stored locally has changed over time)
@@ -107,18 +107,18 @@ Here's an approximate layout of where the Microsoft bits go:
   > [!IMPORTANT]  
   > Because Microsoft Account requires features and extensions that are unique to FIDO2 CTAP2 authenticators, it doesn't accept CTAP1 (U2F) credentials.
 
-- **WebAuthn client: Microsoft Edge**. Microsoft Edge can handle the user interface for the WebAuthn and CTAP2 features that this article describes. It also supports the AppID extension. Microsoft Edge can interact with both CTAP1 and CTAP2 authenticators. This means that it can create and use both U2F and FIDO2 credentials. However, Microsoft Edge doesn't speak the U2F protocol. Therefore, relying parties must use only the WebAuthn specification. Microsoft Edge on Android doesn't support WebAuthn.
+- **WebAuthn client: Microsoft Edge**. Microsoft Edge can handle the user interface for the WebAuthn and CTAP2 features that this article describes. It also supports the AppID extension. Microsoft Edge can interact with both CTAP1 and CTAP2 authenticators. This scope for interaction means that it can create and use both U2F and FIDO2 credentials. However, Microsoft Edge doesn't speak the U2F protocol. Therefore, relying parties must use only the WebAuthn specification. Microsoft Edge on Android doesn't support WebAuthn.
 
   > [!NOTE]  
   > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation](/microsoft-edge/dev-guide/windows-integration/web-authentication).
 
 - **Platform: Windows 10, Windows 11**. Windows 10 and Windows 11 host the Win32 Platform WebAuthn APIs.
 
-- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. That's because there's already a strong ecosystem of products that specialize in strong authentication, and every one of our customers (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. To see the ever-growing list of FIDO2 certified authenticators, see [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
+- **Roaming Authenticators**. You might notice that there's no *Microsoft* roaming authenticator. That's because there's already a strong ecosystem of products that specialize in strong authentication, and every one of our customers (whether corporations or individuals) has different requirements for security, ease of use, distribution, and account recovery. For more information on the ever-growing list of FIDO2-certified authenticators, see [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
 
 ## Developer references
 
 The WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
 
 - [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/) (available on the W3C site). This document is known as the WebAuthn spec.
-- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). This is available at the [FIDO Alliance](http://fidoalliance.org/) site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
+- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html). This document is available at the [FIDO Alliance](http://fidoalliance.org/) site, on which hardware and platform teams are working together to solve the problem of FIDO authentication.
