@@ -98,7 +98,7 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]**:** the port number used by the application.
 
@@ -124,7 +124,7 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you'll get value 0 in this field.
 
     To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find the specific substring with the required filter ID (**&lt;filterId&gt;**)**,** for example:
 
@@ -138,4 +138,4 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
 ## Security Monitoring Recommendations
 
--   There is no recommendation for this event in this document.
+-   There's no recommendation for this event in this document.

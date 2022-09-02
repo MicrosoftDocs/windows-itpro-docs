@@ -1,15 +1,15 @@
 ---
 title: Enable ADMX policies in MDM
 description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/01/2017
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Enable ADMX policies in MDM

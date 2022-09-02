@@ -14,9 +14,6 @@ msreviewer: hathind
 
 # Add and verify admin contacts
 
-> [!IMPORTANT]
-> The Admin contacts blade isn't available during public preview. However, we'll use the admin contacts provided by you during public preview onboarding.
-
 There are several ways that Windows Autopatch service communicates with customers. To streamline communication and ensure we're checking with the right people when you [submit a support request](../operate/windows-autopatch-support-request.md), you must provide a set of admin contacts when you onboard with Windows Autopatch.
 
 > [!IMPORTANT]
@@ -34,7 +31,7 @@ Your admin contacts will receive notifications about support request updates and
 | Area of focus | Description |
 | ----- | ----- |
 | Devices | <uL><li>Device registration</li><li>Device health</li></ul> |
-| Updates | <ul><li>Windows quality updates</li><li>Microsoft 365 Apps for enterprise</li><li>Microsoft Teams updates</li><li>Microsoft Edge</li></ul> |
+| Updates | <ul><li>Windows quality updates</li><li>Windows feature updates</li><li>Microsoft 365 Apps for enterprise updates</li><li>Microsoft Edge updates</li><li>Microsoft Teams updates</li></ul> |
 
 **To add admin contacts:**
 

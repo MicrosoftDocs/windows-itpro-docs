@@ -1,24 +1,21 @@
 ---
 title: What is Windows 11 SE
 description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-ms.localizationpriority: medium
-ms.topic: article
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Windows 11 SE for Education
-
-**Applies to**:
-
-- Windows 11 SE
-- Microsoft Intune for Education
 
 Windows 11 SE is a new edition of Windows that's designed for education. It runs on web-first devices that use essential education apps. Microsoft Office 365 is preinstalled (subscription sold separately).
 
@@ -56,11 +53,11 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |FortiClient	                        |7.0.1.0083	|Win32    |Fortinet|
 |Free NaturalReader	                    |16.1.2	    |Win32    |Natural Soft|
 |GoGuardian	                            |1.4.4	   |Win32     |GoGuardian|
-|Google Chrome	                        |100.0.4896.127|Win32	|Google|
+|Google Chrome	                        |102.0.5005.115|Win32	|Google|
 |Illuminate Lockdown Browser	        |2.0.5	    |Win32    |Illuminate Education|
 |Immunet	                            |7.5.0.20795 |Win32   |Immunet|
 |JAWS for Windows	                    |2022.2112.24 |Win32  |Freedom Scientific|
-|Kite Student Portal	                |8.0.1	    |Win32    |Dynamic Learning Maps|
+|Kite Student Portal	                |8.0.3.0	    |Win32    |Dynamic Learning Maps|
 |Kortext	                            |2.3.433.0  |Store	    |Kortext|
 |Kurzweil 3000 Assistive Learning	    |20.13.0000	|Win32    |Kurzweil Educational Systems|
 |LanSchool	                            |9.1.0.46	|Win32    |Stoneware|
@@ -75,15 +72,14 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |NonVisual Desktop Access	            |2021.3.1	|Win32    |NV Access|
 |NWEA Secure Testing Browser	        |5.4.300.0	 |Win32   |NWEA|
 |Pearson TestNav	                    |1.10.2.0	|Store    |Pearson|
-|Questar Secure Browser	                |4.8.3.376	|Win32    |Questar|
+|Questar Secure Browser	                |4.8.3.376	|Win32    |Questar, Inc|
 |ReadAndWriteForWindows	                |12.0.60.0	 |Win32   |Texthelp Ltd.|
 |Remote Desktop client (MSRDC)          |1.2.3213.0 |Win32 |Microsoft| 
 |Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
 |Respondus Lockdown Browser         	|2.0.8.05	 |Win32   |Respondus|
 |Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
 |Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
-|Secure Browser	                        |4.8.3.376	  |Win32  |Questar, Inc|
-|Senso.Cloud	                    |2021.11.15.0	|Win32|Senso.Cloud|
+|Senso.Cloud	                    |2021.11.15.0 |Win32|Senso.Cloud|
 |SuperNova Magnifier & Screen Reader	|21.02	     |Win32   |Dolphin Computer Access|
 |Zoom	                                |5.9.1 (2581)|Win32	|Zoom|
 |ZoomText Fusion	                    |2022.2109.10|Win32	|Freedom Scientific|

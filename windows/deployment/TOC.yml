@@ -65,11 +65,11 @@
               href: planning/features-lifecycle.md
             - name: Features we're no longer developing
               items:
-                - name: Windows 10 deprecated features
+                - name: Windows deprecated features
                   href: planning/windows-10-deprecated-features.md
             - name: Features we removed
               items:
-                - name: Windows 10 features removed
+                - name: Windows features removed
                   href: planning/windows-10-removed-features.md       
 
     - name: Prepare
@@ -185,8 +185,9 @@
         - name: Monitor Windows client updates
           items:
           - name: Monitor with Update Compliance (preview version)
-            href: update/update-compliance-v2-overview.md     
             items:
+            - name: Update Compliance overview
+              href: update/update-compliance-v2-overview.md     
             - name: Enable Update Compliance (preview)
               items: 
               - name: Update Compliance prerequisites
@@ -200,11 +201,15 @@
               - name: Configure clients with Microsoft Endpoint Manager
                 href: update/update-compliance-v2-configuration-mem.md 
             - name: Use Update Compliance (preview)
-              items: 
-              - name: Use Update Compliance 
-                href: update/update-compliance-v2-use.md                         
+              items:
+              - name: Update Compliance workbook
+                href: update/update-compliance-v2-workbook.md
               - name: Software updates in the Microsoft admin center (preview)
-                href: update/update-status-admin-center.md                               
+                href: update/update-status-admin-center.md                                
+              - name: Use Update Compliance data
+                href: update/update-compliance-v2-use.md                                
+              - name: Feedback, support, and troubleshooting 
+                href: update/update-compliance-v2-help.md                                               
             - name: Update Compliance schema reference (preview)
               items:
               - name: Update Compliance schema reference
@@ -258,7 +263,7 @@
                 href: update/update-compliance-schema-waasupdatestatus.md
               - name: WaaSInsiderStatus
                 href: update/update-compliance-schema-waasinsiderstatus.md
-              - name: WaaSDepoymentStatus
+              - name: WaaSDeploymentStatus
                 href: update/update-compliance-schema-waasdeploymentstatus.md
               - name: WUDOStatus
                 href: update/update-compliance-schema-wudostatus.md

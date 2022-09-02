@@ -2,23 +2,22 @@
 title: Deploy Windows 10 in a school district (Windows 10)
 description: Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD), use Microsoft Endpoint Configuration Manager, Intune, and Group Policy to manage devices.
 keywords: configure, tools, device, school district, deploy Windows 10
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Deploy Windows 10 in a school district
-
-**Applies to**
-
-- Windows 10
-
 
 This guide shows you how to deploy the Windows 10 operating system in a school district. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Endpoint Configuration Manager, Microsoft Intune, and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you'll perform after initial deployment and the automated tools and built-in features of the operating system.
 
@@ -1279,9 +1278,9 @@ You've now identified the tasks you need to perform monthly, at the end of an ac
 * [Try it out: Windows 10 in the classroom](../index.yml)
 * [Chromebook migration guide](./chromebook-migration-guide.md)
 * [Deploy Windows 10 in a school](./deploy-windows-10-in-a-school.md)
-* [Automate common Windows 10 deployment and configuration tasks for a school environment (video)](./index.md)
-* [Deploy a custom Windows 10 Start menu layout for a school (video)](./index.md)
-* [Manage Windows 10 updates and upgrades in a school environment (video)](./index.md)
-* [Reprovision devices at the end of the school year (video)](./index.md)
-* [Use MDT to deploy Windows 10 in a school (video)](./index.md)
-* [Use Microsoft Store for Business in a school environment (video)](./index.md)
+* [Automate common Windows 10 deployment and configuration tasks for a school environment (video)](./index.yml)
+* [Deploy a custom Windows 10 Start menu layout for a school (video)](./index.yml)
+* [Manage Windows 10 updates and upgrades in a school environment (video)](./index.yml)
+* [Reprovision devices at the end of the school year (video)](./index.yml)
+* [Use MDT to deploy Windows 10 in a school (video)](./index.yml)
+* [Use Microsoft Store for Business in a school environment (video)](./index.yml)

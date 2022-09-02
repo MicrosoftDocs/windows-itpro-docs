@@ -2,14 +2,17 @@
 title: Password-less strategy
 description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
-ms.reviewer:
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: conceptual
 localizationpriority: medium
 ms.date: 05/24/2022
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Password-less strategy
@@ -251,7 +254,7 @@ You can use Group Policy to deploy an administrative template policy setting to 
 
 :::image type="content" source="images/passwordless/gpmc-exclude-credential-providers.png" alt-text="The Group Policy Management Editor displaying the location of 'Logon' node and the policy setting 'Exclude credential providers'.":::
 
-The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `60b78e88-ead8-445c-9cfd-0b87f74ea6cd`.
+The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
 
 :::image type="content" source="images/passwordless/exclude-credential-providers-properties.png" alt-text="Properties of the policy setting 'Exclude credential providers'.":::
 

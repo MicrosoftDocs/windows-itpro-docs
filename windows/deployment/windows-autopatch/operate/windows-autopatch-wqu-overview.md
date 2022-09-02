@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates
 description:  This article explains how Windows quality updates are managed in Autopatch
-ms.date: 05/30/2022
+ms.date: 08/08/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -37,7 +37,7 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 
 Windows Autopatch deploys the [B release of Windows quality updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-quality-updates-primer/ba-p/2569385) that are released on the second Tuesday of each month.
 
-To release updates to devices in a gradual manner, Windows Autopatch deploys a set of mobile device management (MDM) policies to each update ring to control the rollout. There are three primary policies that are used to control Windows quality updates:
+To release updates to devices in a gradual manner, Windows Autopatch deploys a set of mobile device management (MDM) policies to each update deployment ring to control the rollout. There are three primary policies that are used to control Windows quality updates:
 
 | Policy | Description |
 | ----- | ----- |
@@ -48,7 +48,7 @@ To release updates to devices in a gradual manner, Windows Autopatch deploys a s
 > [!IMPORTANT]
 > Deploying deferral, deadline, or grace period policies which conflict with Autopatch's policies will cause a device to be considered ineligible for management, it will still receive policies from Windows Autopatch that are not in conflict, but may not function as designed.  These devices will be marked as ineligible in our device reporting and will not count towards our [service level objective](#service-level-objective).
 
-Windows Autopatch configures these policies differently across update rings to gradually release the update to devices in your estate. Devices in the Test ring receive changes first and devices in the Broad ring receive changes last. For more information, see [Update rings](../operate/windows-autopatch-update-management.md#update-rings).
+Windows Autopatch configures these policies differently across update rings to gradually release the update to devices in your estate. Devices in the Test ring receive changes first and devices in the Broad ring receive changes last. For more information, see [Windows Autopatch deployment rings](../operate/windows-autopatch-update-management.md#windows-autopatch-deployment-rings).
 
 :::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline":::
 
@@ -72,8 +72,11 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 
 If we pause the release, a policy will be deployed which prevents devices from updating while the issue is investigated. Once the issue is resolved, the release will be resumed.
 
-> [!NOTE]
-> Windows Autopatch doesn't allow you to request that a release be paused or resumed during public preview.
+You can pause or resume a Windows quality update from the Release management tab in Microsoft Endpoint Manager.
+
+## Rollback
+
+Windows Autopatch will rollback updates if we detect a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md).
 
 ## Incidents and outages
 

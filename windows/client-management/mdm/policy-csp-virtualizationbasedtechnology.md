@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - VirtualizationBasedTechnology
 description: Learn to use the Policy CSP - VirtualizationBasedTechnology setting to control the state of Hypervisor-protected Code Integrity (HVCI) on devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: alekyaj
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/25/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - VirtualizationBasedTechnology

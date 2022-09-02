@@ -67,7 +67,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-Restart is required for changes to this policy to become effective when they are saved locally or distributed through Group Policy.
+Restart is required for changes to this policy to become effective when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 

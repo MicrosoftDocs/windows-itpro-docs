@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_AddRemovePrograms
 description: Learn about the Policy CSP - ADMX_AddRemovePrograms.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 08/13/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_AddRemovePrograms

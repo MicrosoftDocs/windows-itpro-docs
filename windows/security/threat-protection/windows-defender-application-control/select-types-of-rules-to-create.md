@@ -10,11 +10,11 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: dansimp
-ms.reviewer: isbrahm
+author: jgeurten
+ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 06/28/2022
+ms.date: 08/29/2022
 ms.technology: windows-sec
 ---
 
@@ -88,13 +88,13 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 | Rule level | Description |
 |----------- | ----------- |
-| **Hash** | Specifies individual [Authenticode/PE image hash values](#more-information-about-hashes) for each discovered binary. This is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
+| **Hash** | Specifies individual [Authenticode/PE image hash values](#more-information-about-hashes) for each discovered binary. This level is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies the original filename for each binary. Although the hash values for an application are modified when updated, the file names are typically not. This level offers less specific security than the hash level, but it doesn't typically require a policy update when any binary is modified. |
-| **FilePath** | Beginning with Windows 10 version 1903, this level allows binaries to run from specific file path locations. More information about FilePath level rules can be found below. |
+| **FilePath** | Beginning with Windows 10 version 1903, this level allows binaries to run from specific file path locations. FilePath rules only apply to user mode binaries and can't be used to allow kernel mode drivers. More information about FilePath level rules can be found below. |
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
 | **Publisher** | This level combines the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. You can use this rule level to trust a certificate issued by a particular CA and issued to a specific company you trust (such as Intel, for device drivers). |
 | **FilePublisher** | This level combines the “FileName” attribute of the signed file, plus “Publisher” (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
-| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. Using this level, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than other certificate levels, so the Windows Defender Application Control policy must be updated whenever these certificates change. |
+| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than other certificate levels, so the Windows Defender Application Control policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root certificate because the scan doesn't validate anything beyond the certificates included in the provided signature (it doesn't go online or check local root stores). |
 | **RootCertificate** | Currently unsupported. |
 | **WHQL** | Trusts binaries if they've been validated and signed by WHQL. This level is primarily for kernel binaries. |
@@ -112,13 +112,16 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 For example, consider an IT professional in a department that runs many servers. They only want to run software signed by the companies that provide their hardware, operating system, antivirus, and other important software. They know that their servers also run an internally written application that is unsigned but is rarely updated. They want to allow this application to run.
 
-To create the Windows Defender Application Control policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](/powershell/module/configci/new-cipolicy) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They deploy the policy in auditing mode to determine the potential impact from enforcing the policy. Using the audit data, they update their WDAC policies to include any additional software they want to run. Then they enable the WDAC policy in enforced mode for their servers.
+To create the Windows Defender Application Control policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](/powershell/module/configci/new-cipolicy) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They deploy the policy in auditing mode to determine the potential impact from enforcing the policy. With the help of the audit data, they update their WDAC policies to include any other software they want to run. Then they enable the WDAC policy in enforced mode for their servers.
 
 As part of normal operations, they'll eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they won't need to update their WDAC policy. If the unsigned, internal application is updated, they must also update the WDAC policy to allow the new version.
 
 ## File rule precedence order
 
-Windows Defender Application Control has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exist, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
+Windows Defender Application Control has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these sets exist, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
+
+> [!NOTE]
+> For others to better understand the WDAC policies that have been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
 
 ## More information about filepath rules
 
@@ -132,30 +135,30 @@ WDAC's list of well-known admin SIDs are:
 
 S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523.
 
-When generating filepath rules using [New-CIPolicy](/powershell/module/configci/new-cipolicy), a unique, fully qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards, using the [-FilePathRules](/powershell/module/configci/new-cipolicyrule#parameters) switch.
+When filepath rules are being generated using [New-CIPolicy](/powershell/module/configci/new-cipolicy), a unique, fully qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards, using the [-FilePathRules](/powershell/module/configci/new-cipolicyrule#parameters) switch.
 
 Wildcards can be used at the beginning or end of a path rule; only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. `C:\*` would include `C:\foo\*` ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. `*\bar.exe` would allow `C:\bar.exe` and `C:\foo\bar.exe`). Wildcards in the middle of a path aren't supported (ex. `C:\*\foo.exe`). Without a wildcard, the rule will allow only a specific file (ex. `C:\foo\bar.exe`).
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 > [!NOTE]
-> For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
+> When authoring WDAC policies with Microsoft Endpoint Configuration Manager (MEMCM), you can instruct MEMCM to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, MEMCM performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the MEMCM policy is reapplied.
 
 > [!NOTE]
 > There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.
 
 ## More information about hashes
 
-WDAC uses the [Authenticode/PE image hash algorithm](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx) when calculating the hash of a file. Unlike the more popular, but less secure, [flat file hash](/powershell/module/microsoft.powershell.utility/get-filehash), the Authenticode hash calculation omits the file's checksum and the Certificate Table and the Attribute Certificate Table. Therefore, the Authenticode hash of a file does not change when the file is re-signed or timestamped, or the digital signature is removed from the file. By using the Authenticode hash, WDAC provides added security and less management overhead so customers do not need to revise the policy hash rules when the digital signature on the file is updated. 
+WDAC uses the [Authenticode/PE image hash algorithm](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx) when calculating the hash of a file. Unlike the more popular, but less secure, [flat file hash](/powershell/module/microsoft.powershell.utility/get-filehash), the Authenticode hash calculation omits the file's checksum and the Certificate Table and the Attribute Certificate Table. Therefore, the Authenticode hash of a file doesn't change when the file is re-signed or timestamped, or the digital signature is removed from the file. With the help of the Authenticode hash, WDAC provides added security and less management overhead so customers don't need to revise the policy hash rules when the digital signature on the file is updated. 
 
-The Authenticode/PE image hash can be calculated for digitally-signed and unsigned files. 
+The Authenticode/PE image hash can be calculated for digitally signed and unsigned files. 
 
 ### Why does scan create four hash rules per XML file?
 
 The PowerShell cmdlet will produce an Authenticode Sha1 Hash, Sha256 Hash, Sha1 Page Hash, Sha256 Page Hash.
-During validation CI will choose which hashes to calculate, depending on how the file is signed.  For example, if the file is page-hash signed the entire file wouldn't get paged in to do a full sha256 authenticode, and we would just match using the first page hash.
+During validation, CI will choose which hashes to calculate, depending on how the file is signed.  For example, if the file is page-hash signed the entire file wouldn't get paged in to do a full sha256 authenticode, and we would just match using the first page hash.
 
-In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
+In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
 
 ### Why does scan create eight hash rules for certain XML files?
 

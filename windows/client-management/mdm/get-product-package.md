@@ -2,12 +2,12 @@
 title: Get product package
 description: The Get product package operation retrieves the information about a specific application in the Microsoft Store for Business.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/18/2017
 ---
 

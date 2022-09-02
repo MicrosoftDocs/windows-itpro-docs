@@ -1,15 +1,15 @@
 ---
 title: BitLocker CSP
 description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/04/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -1347,6 +1347,13 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 Value type is string.
 
 Supported operation is Execute. Request ID is expected as a parameter.
+
+> [!NOTE]
+> Key rotation is supported only on these enrollment types. For more information, see [deviceEnrollmentType enum](/graph/api/resources/intune-devices-deviceenrollmenttype).
+>   - windowsAzureADJoin.
+>   - windowsBulkAzureDomainJoin. 
+>   - windowsAzureADJoinUsingDeviceAuth.
+>   - windowsCoManagement.
 
 > [!TIP]
 > Key rotation feature will only work when:

@@ -30,16 +30,16 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this topic. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later topics.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later articles.
 
 > [!NOTE]
 > Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As in the [previous topic](types-of-devices.md), we will use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As in the [previous article](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
-**Alice Pena** is the IT team lead tasked with the rollout of WDAC. Recognizing where Lamna is starting from, with loose application usage policies and a culture of maximum app flexibility for users, Alice knows that she will need to take an incremental approach to application control and use different policies for different workloads.
+**Alice Pena** is the IT team lead tasked with the rollout of WDAC. Recognizing that Lamna currently has loose application usage policies and a culture of maximum app flexibility for users, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
 
-For the majority of users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
+For most users and devices, Alice wants to create an initial policy that is as relaxed as possible in order to minimize user productivity impact, while still providing security value.
 
 ## Define the "circle-of-trust" for lightly managed devices
 
@@ -49,16 +49,16 @@ Alice identifies the following key factors to arrive at the "circle-of-trust" fo
 - All clients are managed by Microsoft Endpoint Manager either with Configuration Manager or with Intune.
 - Some, but not all, apps are deployed using Configuration Manager;
 - Most users are local administrators on their devices;
-- Some teams may need additional rules to authorize specific apps that don't apply generally to all other users.
+- Some teams may need more rules to authorize specific apps that don't apply generally to all other users.
 
 Based on the above, Alice defines the pseudo-rules for the policy:
 
 1. **“Windows works”** rules that authorize:
    - Windows
-   - WHQL (3rd party kernel drivers)
+   - WHQL (third-party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules which include signer and hash rules for Configuration Manager components to properly function.
+2. **"MEMCM works”** rules that include signer and hash rules for Configuration Manager components to properly function.
 3. **Allow Managed Installer** (Configuration Manager configured as a managed installer)
 4. **Allow Intelligent Security Graph (ISG)** (reputation-based authorization)
 5. **Admin-only path rules** for the following locations:
@@ -68,7 +68,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
 
 ## Create a custom base policy using an example WDAC base policy
 
-Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. She decides to use Configuration Manager to create the initial base policy and then customize it to meet Lamna's needs.
+Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. Alice decides to use Configuration Manager to create the initial base policy and then customize it to meet Lamna's needs.
 
 Alice follows these steps to complete this task:
 
@@ -112,7 +112,7 @@ Alice follows these steps to complete this task:
       Set-RuleOption -FilePath $LamnaPolicy -Option 19 # Dynamic Code Security
       ```
 
-6. Add rules to allow windir and Program Files directories:
+6. Add rules to allow the Windows and Program Files directories:
 
       ```powershell
       $PathRules += New-CIPolicyRule -FilePathRule "%windir%\*"
@@ -121,7 +121,7 @@ Alice follows these steps to complete this task:
       Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy -Rules $PathRules
       ```
 
-7. If appropriate, add additional signer or file rules to further customize the policy for your organization.
+7. If appropriate, add more signer or file rules to further customize the policy for your organization.
 
 8. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
@@ -133,7 +133,7 @@ Alice follows these steps to complete this task:
    ConvertFrom-CIPolicy $LamnaPolicy $WDACPolicyBin
    ```
 
-9. Upload your base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
+9. Upload your base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/), or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
 
 At this point, Alice now has an initial policy that is ready to deploy in audit mode to the managed clients within Lamna.
 
@@ -142,7 +142,7 @@ At this point, Alice now has an initial policy that is ready to deploy in audit 
 In order to minimize user productivity impact, Alice has defined a policy that makes several trade-offs between security and user app flexibility. Some of the trade-offs include:
 
 - **Users with administrative access**<br>
-    By far the most impactful security trade-off, this allows the device user (or malware running with the user's privileges) to modify or remove altogether the WDAC policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer that would allow them to gain persistent app authorization for whatever apps or binaries they wish.
+    This is by far the most impactful security trade-off and allows the device user, or malware running with the user's privileges, to modify or remove the WDAC policy on the device. Additionally, administrators can configure any app to act as a managed installer, which would allow them to gain persistent app authorization for whatever apps or binaries they wish.
 
     Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
@@ -161,10 +161,10 @@ In order to minimize user productivity impact, Alice has defined a policy that m
   - Create and deploy signed catalog files as part of the app deployment process in order to remove the requirement for managed installer.
   - Limit who can elevate to administrator on the device.
 - **Intelligent Security Graph (ISG)**<br>
-    See [security considerations with the Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md#security-considerations-with-the-intelligent-security-graph)
+    See [security considerations with the Intelligent Security Graph](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#security-considerations-with-the-isg-option)
 
     Possible mitigations:
-  - Implement policies requiring apps are managed by IT; audit existing app usage and deploy authorized apps using a software distribution solution such as Microsoft Endpoint Manager; move from ISG to managed installer or signature-based rules.
+  - Implement policies requiring that apps are managed by IT; audit existing app usage and deploy authorized apps using a software distribution solution such as Microsoft Endpoint Manager; move from ISG to managed installer or signature-based rules.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 - **Supplemental policies**<br>
     Supplemental policies are designed to relax the associated base policy. Additionally allowing unsigned policies allows any administrator process to expand the "circle-of-trust" defined by the base policy without restriction.
