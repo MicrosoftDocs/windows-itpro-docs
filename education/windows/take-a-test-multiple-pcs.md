@@ -14,7 +14,7 @@ ms.date: 08/10/2022
 ms.reviewer: 
 manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 10 and above</b>
 ---
 
 # Set up Take a Test on multiple PCs
