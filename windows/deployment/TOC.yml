@@ -263,7 +263,7 @@
                 href: update/update-compliance-schema-waasupdatestatus.md
               - name: WaaSInsiderStatus
                 href: update/update-compliance-schema-waasinsiderstatus.md
-              - name: WaaSDepoymentStatus
+              - name: WaaSDeploymentStatus
                 href: update/update-compliance-schema-waasdeploymentstatus.md
               - name: WUDOStatus
                 href: update/update-compliance-schema-wudostatus.md

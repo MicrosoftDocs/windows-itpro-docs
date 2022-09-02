@@ -63,7 +63,7 @@ For any other questions, contact [Microsoft Customer Service and Support](https:
 
 ## Related topics
 - [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)
-- [Windows deployment for education](./index.md)
+- [Windows deployment for education](./index.yml)
 - [Windows 10 upgrade paths](/windows/deployment/upgrade/windows-10-upgrade-paths)
 - [Volume Activation for Windows 10](/windows/deployment/volume-activation/volume-activation-windows-10)
 - [Plan for volume activation](/windows/deployment/volume-activation/plan-for-volume-activation-client)
