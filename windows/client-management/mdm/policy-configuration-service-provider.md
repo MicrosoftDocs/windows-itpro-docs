@@ -6325,16 +6325,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemsappinstallerprotocol"id="desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablesettingscommand"id="desktopappinstaller-enablesettingscommand">DesktopAppInstaller/EnableSettingsCommand</a>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablesettings"id="desktopappinstaller-enablesettings">DesktopAppInstaller/EnableSettings</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablewindowsallowedsources"id="desktopappinstaller-enablewindowsallowedsources">DesktopAppInstaller/EnableWindowsAllowedSources</a>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enableallowedsources"id="desktopappinstaller-enableallowedsources">DesktopAppInstaller/EnableAllowedSources</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablewindowsexperimentalfeatures"id="desktopappinstaller-enablewindowsexperimentalfeatures">DesktopAppInstaller/EnableWindowsExperimentalFeatures</a>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enableexperimentalfeatures"id="desktopappinstaller-enableexperimentalfeatures">DesktopAppInstaller/EnableExperimentalFeatures</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-setwindowsautoupdateinterval"id="desktopappinstaller-setwindowsautoupdateinterval">DesktopAppInstaller/SetWindowsAutoUpdateInterval</a>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-sourceautoupdateinterval"id="desktopappinstaller-sourceautoupdateinterval">DesktopAppInstaller/SourceAutoUpdateInterval</a>
   </dd>
 </dl>
 

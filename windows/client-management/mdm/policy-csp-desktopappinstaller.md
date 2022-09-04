@@ -47,16 +47,16 @@ manager: aaroncz
     <a href="#desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
   </dd>
   <dd>
-    <a href="#desktopappinstaller-enablesettingscommand">DesktopAppInstaller/EnableSettingsCommand</a>
+    <a href="#desktopappinstaller-enablesettings">DesktopAppInstaller/EnableSettings</a>
   </dd>
   <dd>
-    <a href="#desktopappinstaller-enablewindowsallowedsources">DesktopAppInstaller/EnableWindowsAllowedSources</a>
+    <a href="#desktopappinstaller-enableallowedsources">DesktopAppInstaller/EnableAllowedSources</a>
   </dd>
   <dd>
-    <a href="#desktopappinstaller-enablewindowsexperimentalfeatures">DesktopAppInstaller/EnableWindowsExperimentalFeatures</a>
+    <a href="#desktopappinstaller-enableexperimentalfeatures">DesktopAppInstaller/EnableExperimentalFeatures</a>
   </dd>
   <dd>
-    <a href="#desktopappinstaller-setwindowsautoupdateinterval">DesktopAppInstaller/SetWindowsAutoUpdateInterval</a>
+    <a href="#desktopappinstaller-sourceautoupdateinterval">DesktopAppInstaller/SourceAutoUpdateInterval</a>
   </dd>
 </dl>
 
@@ -349,7 +349,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablesettingscommand"></a>**DesktopAppInstaller/EnableSettingsCommand**  
+<a href="" id="desktopappinstaller-enablesettings"></a>**DesktopAppInstaller/EnableSettings**  
 
 <!--SupportedSKUs-->
 
@@ -386,7 +386,7 @@ This policy controls whether users can change their settings. The settings are s
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Enable Windows Package Manager Settings Command*
--   GP name: *EnableSettingsCommand*
+-   GP name: *EnableSettings*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
@@ -396,7 +396,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablewindowsallowedsources"></a>**DesktopAppInstaller/EnableWindowsAllowedSources**  
+<a href="" id="desktopappinstaller-enableallowedsources"></a>**DesktopAppInstaller/EnableAllowedSources**  
 
 <!--SupportedSKUs-->
 
@@ -433,7 +433,7 @@ This policy controls additional sources approved for users to configure using Wi
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Enable Windows Package Manager Settings Command*
--   GP name: *EnableSettingsCommand*
+-   GP name: *EnableAllowedSources*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
@@ -443,7 +443,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablewindowsexperimentalfeatures"></a>**DesktopAppInstaller/EnableWindowsExperimentalFeatures**  
+<a href="" id="desktopappinstaller-enableexperimentalfeatures"></a>**DesktopAppInstaller/EnableExperimentalFeatures**  
 
 <!--SupportedSKUs-->
 
@@ -481,7 +481,7 @@ This policy controls whether users can enable experimental features in Windows P
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Enable Windows Package Manager Experimental Features*
--   GP name: *EnableWindowsExperimentalFeatures*
+-   GP name: *EnableExperimentalFeatures*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
@@ -491,7 +491,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-setwindowsautoupdateinterval"></a>**DesktopAppInstaller/SetWindowsAutoUpdateInterval**  
+<a href="" id="desktopappinstaller-sourceautoupdateinterval"></a>**DesktopAppInstaller/SourceAutoUpdateInterval**  
 
 <!--SupportedSKUs-->
 
@@ -529,7 +529,7 @@ This policy controls the auto-update interval for package-based sources. The def
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Set Windows Package Manager Source Auto Update Interval In Minutes*
--   GP name: *SetWindowsAutoUpdateInterval*
+-   GP name: *SourceAutoUpdateInterval*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
 
