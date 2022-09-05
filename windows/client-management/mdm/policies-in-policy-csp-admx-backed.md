@@ -1562,6 +1562,7 @@ ms.date: 10/08/2020
 - [DesktopAppInstaller/EnableAdditionalSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources)
 - [DesktopAppInstaller/EnableAppInstaller](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller)
 - [DesktopAppInstaller/EnableLocalManifestFiles](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablelocalmanifestfiles)
+- [DesktopAppInstaller/EnableHashOverride](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablehashoverride)
 - [DesktopAppInstaller/EnableMicrosoftStoreSource](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemicrosoftstoresource)
 - [DesktopAppInstaller/EnableMSAppInstallerProtocol](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemsappinstallerprotocol)
 - [DesktopAppInstaller/EnableSettings](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablesettings)

@@ -6319,6 +6319,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablelocalmanifestfiles"id="desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
   </dd>
   <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablehashoverride"id="desktopappinstaller-enablehashoverride">DesktopAppInstaller/EnableHashOverride</a>
+  </dd>
+  <dd>
     <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemicrosoftstoresource"id="desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
   </dd>
   <dd>

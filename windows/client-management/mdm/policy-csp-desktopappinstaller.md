@@ -41,6 +41,9 @@ manager: aaroncz
     <a href="#desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
   </dd>
   <dd>
+    <a href="#desktopappinstaller-enablehashoverride">DesktopAppInstaller/EnableHashOverride</a>
+  </dd>
+  <dd>
     <a href="#desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
   </dd>
   <dd>
@@ -251,6 +254,52 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 
+
+<!--Policy-->
+<a href="" id="desktopappinstaller-enablehashoverride"></a>**DesktopAppInstaller/EnableHashOverride**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy controls whether Windows Package Manager can be configured to enable the ability to override `SHA256` security validation in settings. Windows Package Manager compares the installer after it has downloaded with the hash provided in the manifest.
+
+- If you enable or do not configure this setting, users will be able to enable the ability to override `SHA256` security validation in Windows Package Manager settings.
+
+- If you disable this setting, users will not be able to enable the ability to override SHA256 security validation in Windows Package Manager settings.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable Windows Package Manager*
+-   GP name: *EnableHashOverride*
+-   GP path: *Administrative Templates\Windows Components\App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
 
 <hr/>
 
