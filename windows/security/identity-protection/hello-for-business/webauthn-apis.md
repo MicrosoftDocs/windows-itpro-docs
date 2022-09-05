@@ -41,7 +41,7 @@ The authentication process starts when the user makes a specific user gesture th
 
 After these client-specific keys are created, clients can request attestations for registration and authentication. The type of signature that the private key uses reflects the user gesture that was made.  
 
-The following diagram shows how CTAP and WebAuthn interact. The light-blue-dotted arrows represent interactions that depend on the specific implementation of the platform APIs.
+The following diagram shows how CTAP and WebAuthn interact. The light blue dotted arrows represent interactions that depend on the specific implementation of the platform APIs.
 
 :::image type="content" source="images/webauthn-apis/webauthn-apis-fido2-overview.png" alt-text="The diagram shows how the WebAuthn API interacts with the relying parties and the CTAPI2 API.":::
 
@@ -74,7 +74,7 @@ Many relying parties and clients can interact with many authenticators on a sing
 
 Before WebAuthn and CTAP2, there were U2F and CTAP1. U2F is the FIDO Alliance universal second-factor specification. There are many authenticators that speak CTAP1 and manage U2F credentials. WebAuthn was designed to be interoperable with CTAP1 Authenticators. A relying party that uses WebAuthn can still use U2F credentials if the relying party doesn't require FIDO2-only functionality.
 
-FIDO2 authenticators have already implemented and WebAuthn relying parties might require the following optional features:
+FIDO2 authenticators have already been implemented and WebAuthn relying parties might require the following optional features:
 
 - Keys for multiple accounts (keys can be stored per relying party)
 - Client PIN
