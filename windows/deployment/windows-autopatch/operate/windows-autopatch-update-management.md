@@ -80,7 +80,10 @@ When the assignment is complete, the **Ring assigned by** column changes to **Ad
 
 > [!NOTE]
 > You can only move devices to other deployment rings when they're in an active state in the **Ready** tab.<p>If you don't see the **Ring assigned by column** change to **Pending** in Step 5, check to see whether the device exists in Microsoft Endpoint Manager-Intune or not by searching for it in its device blade. For more information, see [Device details in Intune](/mem/intune/remote-actions/device-inventory).
-
+  
+> [!WARNING]   
+> Moving devices between deployment rings through directly changing Azure AD group membership is not supported and may cause unintended configuration conflict within the Autopatch service. In order to avoid service interruption to devices, use the **Assign device to ring** action described above to move devices between deployment rings.
+  
 ## Automated deployment ring remediation functions
 
 Windows Autopatch monitors device membership in its deployment rings, except for the **Modern Workplace Devices-Windows Autopatch-Test** ring, to provide automated deployment ring remediation functions to mitigate the risk of not having its managed devices being part of one of its deployment rings. These automated functions help mitigate risk of potentially having devices in a vulnerable state, and exposed to security threats in case they're not receiving update deployments due to either:
