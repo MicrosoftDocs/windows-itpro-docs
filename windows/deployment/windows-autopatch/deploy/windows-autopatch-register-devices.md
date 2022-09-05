@@ -28,7 +28,13 @@ Windows Autopatch can take over software update management control of devices th
 
 ### About the use of an Azure AD group to register devices
 
-You must choose what devices to manage with Windows Autopatch by either adding them through direct membership or by nesting other Azure AD dynamic/assigned groups into the **Windows Autopatch Device Registration** Azure AD assigned group. Windows Autopatch automatically runs its discover devices function every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
+You must choose what devices to manage with Windows Autopatch by adding them into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can be added using the following methods:
+
+- Direct Membership 
+- Nesting other Azure AD dynamic/assigned groups
+- Bulk operations – Import members 
+
+Windows Autopatch automatically runs its discover devices function every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
 
 > [!NOTE]
 > Devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered. You can also use the **Discover devices** button in either the **Ready** or **Not ready** tab to register devices on demand.
