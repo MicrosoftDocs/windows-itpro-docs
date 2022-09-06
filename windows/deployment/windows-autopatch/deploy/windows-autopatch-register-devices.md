@@ -28,7 +28,7 @@ Windows Autopatch can take over software update management control of devices th
 
 ### About the use of an Azure AD group to register devices
 
-You must choose what devices to manage with Windows Autopatch by adding them into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can be added using the following methods:
+You must choose what devices to manage with Windows Autopatch by adding them to the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can be added using the following methods:
 
 - Direct Membership 
 - Nesting other Azure AD dynamic/assigned groups
