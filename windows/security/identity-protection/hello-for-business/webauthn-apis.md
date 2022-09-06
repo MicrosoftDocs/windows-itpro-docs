@@ -15,7 +15,7 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 # WebAuthn APIs for passwordless authentication on Windows
-
+<!--MAXADO-6021798-->
 Passwords can leave your customers vulnerable to data breaches and security attacks by malicious users.
 
 Microsoft has long been a proponent of passwordless authentication, and has introduced the W3C/Fast IDentity Online 2 (FIDO2) Win32 WebAuthn platform APIs in Windows 10 (version 1903).
