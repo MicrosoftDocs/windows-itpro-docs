@@ -53,13 +53,6 @@ Stickers aren't enabled by default. IT administrators can allow students to pers
     - Data type: **Integer**
     - Value: **1**
 1. Select **Save**
-1. Select **Add**
-1. In **Add Row**, enter the following properties:
-    - Name: enter **IsEducationEnvironment**
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`
-    - Data type: **Integer**
-    - Value: **1**
-1. Select **Save**
 1. Select **Next**
 1. In **Scope tags**, assign any applicable tags (optional)
 1. Select **Next**
