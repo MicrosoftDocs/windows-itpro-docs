@@ -40,6 +40,9 @@ During the [tenant enrollment process](../prepare/windows-autopatch-enroll-tenan
 
 Each deployment ring has a different set of update deployment policies to control the updates rollout.
 
+> [!WARNING]
+> Adding or importing devices into any of these groups directly is not supported and doing so might cause an unexpected impact on the Windows Autopatch service. To move devices between these groups, see [Moving devices in between deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings).
+
 > [!IMPORTANT]
 > Windows Autopatch device registration doesn't assign devices to its test deployment ring (**Modern Workplace Devices-Windows Autopatch-Test**). This is intended to prevent devices that are essential to a business from being affected or devices that are used by executives from receiving early software update deployments.
 
