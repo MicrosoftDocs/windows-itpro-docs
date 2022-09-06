@@ -1187,7 +1187,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
-      "redirect_url": "hhttps://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
+      "redirect_url": "/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
       "redirect_document_id": false
     },
     {
@@ -6817,7 +6817,7 @@
     },
     {
       "source_path": "windows/manage/waas-wufb-intune.md",
-      "redirect_url": "/windows/deployment/update/waas-wufb-intune.md",
+      "redirect_url": "/windows/deployment/update/waas-wufb-intune",
       "redirect_document_id": false
     },
     {
@@ -14402,12 +14402,12 @@
     },
     {
       "source_path": "windows/manage/sign-up-windows-store-for-business.md",
-      "redirect_url": "/microsoft-store/index.md",
+      "redirect_url": "/microsoft-store/index",
       "redirect_document_id": false
     },
     {
       "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-      "redirect_url": "/microsoft-store/index.md",
+      "redirect_url": "/microsoft-store/index",
       "redirect_document_id": false
     },
     {
@@ -19432,7 +19432,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/rootkits-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware",
       "redirect_document_id": false  
     },
     {
