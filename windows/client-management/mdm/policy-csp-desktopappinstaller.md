@@ -293,7 +293,7 @@ This policy controls whether Windows Package Manager can be configured to enable
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Enable Windows Package Manager*
+-   GP Friendly name: *Enable App Installer Hash Override*
 -   GP name: *EnableHashOverride*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
