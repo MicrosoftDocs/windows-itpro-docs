@@ -1,14 +1,14 @@
 ---
 title: EnterpriseAppVManagement CSP
-description: Examine the tree format for EnterpriseAppVManagement CSP to manage virtual applications in Windows 10 or Windows 11 PCs. (Enterprise and Education editions). 
-ms.author: dansimp
+description: Examine the tree format for EnterpriseAppVManagement CSP to manage virtual applications in Windows 10 or Windows 11 PCs. (Enterprise and Education editions).
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # EnterpriseAppVManagement CSP
@@ -19,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

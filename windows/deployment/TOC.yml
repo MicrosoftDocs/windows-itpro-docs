@@ -65,11 +65,11 @@
               href: planning/features-lifecycle.md
             - name: Features we're no longer developing
               items:
-                - name: Windows 10 deprecated features
+                - name: Windows deprecated features
                   href: planning/windows-10-deprecated-features.md
             - name: Features we removed
               items:
-                - name: Windows 10 features removed
+                - name: Windows features removed
                   href: planning/windows-10-removed-features.md       
 
     - name: Prepare
@@ -184,51 +184,91 @@
               href: update/deploy-updates-intune.md
         - name: Monitor Windows client updates
           items:
-            - name: Monitor Delivery Optimization
-              href: do/waas-delivery-optimization-setup.md#monitor-delivery-optimization
-            - name: Monitor Windows Updates
+          - name: Monitor with Update Compliance (preview version)
+            items:
+            - name: Update Compliance overview
+              href: update/update-compliance-v2-overview.md     
+            - name: Enable Update Compliance (preview)
+              items: 
+              - name: Update Compliance prerequisites
+                href: update/update-compliance-v2-prerequisites.md
+              - name: Enable the Update Compliance solution
+                href: update/update-compliance-v2-enable.md                                
+              - name: Configure clients with a script
+                href: update/update-compliance-v2-configuration-script.md
+              - name: Configure clients manually
+                href: update/update-compliance-v2-configuration-manual.md
+              - name: Configure clients with Microsoft Endpoint Manager
+                href: update/update-compliance-v2-configuration-mem.md 
+            - name: Use Update Compliance (preview)
               items:
-              - name: Monitor Windows Updates with Update Compliance
-                href: update/update-compliance-monitor.md
-              - name: Get started
-                items: 
-                  - name: Get started with Update Compliance
-                    href: update/update-compliance-get-started.md
-                  - name: Update Compliance configuration script
-                    href: update/update-compliance-configuration-script.md
-                  - name: Manually configuring devices for Update Compliance
-                    href: update/update-compliance-configuration-manual.md
-                  - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
-                    href: update/update-compliance-configuration-mem.md
-              - name: Update Compliance monitoring
-                items: 
-                  - name: Use Update Compliance
-                    href: update/update-compliance-using.md
-                  - name: Need attention report
-                    href: update/update-compliance-need-attention.md
-                  - name: Security update status report
-                    href: update/update-compliance-security-update-status.md
-                  - name: Feature update status report
-                    href: update/update-compliance-feature-update-status.md
-                  - name: Safeguard holds report
-                    href: update/update-compliance-safeguard-holds.md
-                  - name: Delivery Optimization in Update Compliance
-                    href: update/update-compliance-delivery-optimization.md
-                  - name: Data handling and privacy in Update Compliance
-                    href: update/update-compliance-privacy.md
-                  - name: Update Compliance schema reference
-                    href: update/update-compliance-schema.md
-                    items:
-                      - name: WaaSUpdateStatus
-                        href: update/update-compliance-schema-waasupdatestatus.md
-                      - name: WaaSInsiderStatus
-                        href: update/update-compliance-schema-waasinsiderstatus.md
-                      - name: WaaSDepoymentStatus
-                        href: update/update-compliance-schema-waasdeploymentstatus.md
-                      - name: WUDOStatus
-                        href: update/update-compliance-schema-wudostatus.md
-                      - name: WUDOAggregatedStatus
-                        href: update/update-compliance-schema-wudoaggregatedstatus.md
+              - name: Update Compliance workbook
+                href: update/update-compliance-v2-workbook.md
+              - name: Software updates in the Microsoft admin center (preview)
+                href: update/update-status-admin-center.md                                
+              - name: Use Update Compliance data
+                href: update/update-compliance-v2-use.md                                
+              - name: Feedback, support, and troubleshooting 
+                href: update/update-compliance-v2-help.md                                               
+            - name: Update Compliance schema reference (preview)
+              items:
+              - name: Update Compliance schema reference
+                href: update/update-compliance-v2-schema.md
+              - name: UCClient
+                href: update/update-compliance-v2-schema-ucclient.md
+              - name: UCClientReadinessStatus
+                href: update/update-compliance-v2-schema-ucclientreadinessstatus.md               
+              - name: UCClientUpdateStatus
+                href: update/update-compliance-v2-schema-ucclientupdatestatus.md
+              - name: UCDeviceAlert
+                href: update/update-compliance-v2-schema-ucdevicealert.md                                
+              - name: UCServiceUpdateStatus
+                href: update/update-compliance-v2-schema-ucserviceupdatestatus.md
+              - name: UCUpdateAlert
+                href: update/update-compliance-v2-schema-ucupdatealert.md                                                                         
+          - name: Monitor updates with Update Compliance
+            href: update/update-compliance-monitor.md
+            items:
+            - name: Get started
+              items: 
+              - name: Get started with Update Compliance
+                href: update/update-compliance-get-started.md
+              - name: Update Compliance configuration script
+                href: update/update-compliance-configuration-script.md
+              - name: Manually configuring devices for Update Compliance
+                href: update/update-compliance-configuration-manual.md
+              - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+                href: update/update-compliance-configuration-mem.md
+            - name: Update Compliance monitoring
+              items: 
+              - name: Use Update Compliance
+                href: update/update-compliance-using.md
+              - name: Need attention report
+                href: update/update-compliance-need-attention.md
+              - name: Security update status report
+                href: update/update-compliance-security-update-status.md
+              - name: Feature update status report
+                href: update/update-compliance-feature-update-status.md
+              - name: Safeguard holds report
+                href: update/update-compliance-safeguard-holds.md
+              - name: Delivery Optimization in Update Compliance
+                href: update/update-compliance-delivery-optimization.md
+              - name: Data handling and privacy in Update Compliance
+                href: update/update-compliance-privacy.md
+            - name: Schema reference
+              items:
+              - name: Update Compliance schema reference
+                href: update/update-compliance-schema.md
+              - name: WaaSUpdateStatus
+                href: update/update-compliance-schema-waasupdatestatus.md
+              - name: WaaSInsiderStatus
+                href: update/update-compliance-schema-waasinsiderstatus.md
+              - name: WaaSDeploymentStatus
+                href: update/update-compliance-schema-waasdeploymentstatus.md
+              - name: WUDOStatus
+                href: update/update-compliance-schema-wudostatus.md
+              - name: WUDOAggregatedStatus
+                href: update/update-compliance-schema-wudoaggregatedstatus.md
         - name: Troubleshooting
           items:
             - name: Resolve upgrade errors

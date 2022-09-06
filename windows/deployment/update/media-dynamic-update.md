@@ -2,8 +2,6 @@
 title: Update Windows installation media with Dynamic Update
 description: Learn how to deploy feature updates to your mission critical devices
 ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
 author: SteveDiAcetis
 ms.localizationpriority: medium
 ms.author: aaroncz

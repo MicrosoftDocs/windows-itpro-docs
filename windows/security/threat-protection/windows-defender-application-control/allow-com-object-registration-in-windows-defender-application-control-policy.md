@@ -35,7 +35,7 @@ The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-
 
 ### COM object configurability in WDAC policy
 
-Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
+Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allowlist for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where more COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
 
 > [!NOTE]
 > To add this functionality to other versions of Windows 10, you can install the following or later updates.
@@ -56,7 +56,7 @@ Get GUID of application to allow in one of the following ways:
 
 Three elements:
 
-- Provider: platform on which code is running (values are  Powershell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
+- Provider: platform on which code is running (values are  PowerShell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
 - Key: GUID for the program you wish to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
 - ValueName: needs to be set to "EnterpriseDefinedClsId"
 
@@ -152,7 +152,7 @@ To add this CLSID to the existing policy, follow these steps:
     PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
     ```
     
-    Once the command has been run, you will find that the following section is added to the policy XML.
+    Once the command has been run, you'll find that the following section is added to the policy XML.
     
     ```XML
     <Settings>
@@ -162,9 +162,9 @@ To add this CLSID to the existing policy, follow these steps:
         </Value>
       </Setting>
     ```
-### Default COM Object Allow List
+### Default COM Object allowlist
 
-The table below describes the list of COM objects that are inherently trusted in Windows Defender Application Control. Objects in this list do not need to be allowlisted in your WDAC policies. They can be denied by creating explicit deny rules in your WDAC policy.
+The table below describes the list of COM objects that are inherently trusted in Windows Defender Application Control. Objects in this list don't need to be allowlisted in your WDAC policies. They can be denied by creating explicit deny rules in your WDAC policy.
 
 | File Name | CLSID |
 |--------|-----------|

@@ -6,7 +6,6 @@ ms.technology: windows
 ms.localizationpriority: medium
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
 ms.topic: tutorial
@@ -124,10 +123,7 @@ The procedures in this guide are summarized in the following table. An estimate 
     Stop-Process -Name Explorer
     ```
 
-1. Download **Microsoft Endpoint Configuration Manager** on SRV1.
-
-    > [!NOTE]
-    > The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+1. Download [Microsoft Endpoint Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager) and extract the contents on SRV1.
 
 1. Open the file, enter **C:\configmgr** for **Unzip to folder**, and select **Unzip**. The `C:\configmgr` directory will be automatically created. Select **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 

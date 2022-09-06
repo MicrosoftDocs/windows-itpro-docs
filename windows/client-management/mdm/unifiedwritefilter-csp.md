@@ -1,14 +1,13 @@
 ---
 title: UnifiedWriteFilter CSP
 description: The UnifiedWriteFilter (UWF) configuration service provider allows you to remotely manage the UWF. Understand how it helps protect physical storage media.
-ms.assetid: F4716AC6-0AA5-4A67-AECE-E0F200BA95EB
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

@@ -1,14 +1,13 @@
 ---
 title: Firewall CSP
 description: The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 11/29/2021
+author: vinaypamnani-msft
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Firewall configuration service provider (CSP)
@@ -19,6 +18,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -97,6 +97,7 @@ Firewall
 ----------------Protocol
 ----------------LocalPortRanges
 ----------------RemotePortRanges
+----------------IcmpTypesAndCodes
 ----------------LocalAddressRanges
 ----------------RemoteAddressRanges
 ----------------Description
@@ -111,6 +112,13 @@ Firewall
 ----------------FriendlyName
 ----------------Status
 ----------------Name
+----------------RemoteAddressDynamicKeywords
+--------DynamicKeywords
+----------------Addresses
+-------------------------Id
+---------------------------------Keyword
+---------------------------------Addresses
+---------------------------------AutoResolve
 ```
 
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/Firewall**
@@ -244,7 +252,7 @@ Default value is true.
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="defaultoutboundaction"></a>**/DefaultOutboundAction**
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. DefaultOutboundAction will block all outbound traffic unless it's explicitly specified not to block.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. DefaultOutboundAction will allow all outbound traffic unless it's explicitly specified not to allow.
 
 - 0x00000000 - allow
 - 0x00000001 - block
@@ -340,11 +348,18 @@ Comma separated list of ranges, For example, 100-120,200,300-320.
 If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
+
+<a href="" id="icmptypesandcodes"></a>**FirewallRules/_FirewallRuleName_/IcmpTypesAndCodes**
+ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the “\*” character. For specific ICMP types and codes, use the “:” character to separate the type and code, for example, 3:4, 1:\*. The “\*” character can be used to represent any code. The “\*” character cannot be used to specify any type; examples such as “\*:4” or “\*:\*” are invalid.
+If not specified, the default is All. 
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
 <a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
 Comma-separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:
 
 - "*" indicates any local address. If present, the local address must be the only token included.
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv4 address.
 - A valid IPv6 address.
 - An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.
 - An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.
@@ -365,7 +380,8 @@ List of comma separated tokens specifying the remote addresses covered by the ru
 - &quot;Internet&quot;
 - &quot;Ply2Renders&quot;
 - &quot;LocalSubnet&quot; indicates any local address on the local subnet. This token isn't case-sensitive.
-- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv4 address.
 - A valid IPv6 address.
 - An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.
 - An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.
@@ -437,6 +453,44 @@ Value type is string. Supported operation is Get.
 <a href="" id="name"></a>**FirewallRules/_FirewallRuleName_/Name**
 Name of the rule.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="remoteaddressdynamickeywords"></a>**FirewallRules/_FirewallRuleName_/RemoteAddressDynamicKeywords**
+Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying the remote addresses covered by the rule. 
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+
+<a href="" id="dynamickeywords"></a>**MdmStore/DynamicKeywords**
+Interior node. 
+Supported operation is Get.
+
+<a href="" id="addresses"></a>**MdmStore/DynamicKeywords/Addresses**
+Interior node. 
+Supported operation is Get.
+
+<a href="" id="id"></a>**MdmStore/DynamicKeywords/Addresses/Id**
+A unique GUID string identifier for this dynamic keyword address.
+Value type is string. Supported operations are Add, Delete, and Get.
+
+<a href="" id="keyword"></a>**MdmStore/DynamicKeywords/Addresses/Id/Keyword**
+A String representing a keyword. If the AutoResolve value is true, this should be a Fully Qualified Domain Name (wildcards accepted, for example "contoso.com" or "*.contoso.com").
+Value type is string. Supported operations are Add, Delete, and Get.
+
+<a href="" id="addresses"></a>**MdmStore/DynamicKeywords/Addresses/Id/Addresses**
+Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value should not be set if AutoResolve is true.
+
+Valid tokens include:
+- A subnet specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv4 address.
+- A valid IPv6 address.
+- An IPv4 address range in the format of "start address-end address" with no spaces included.
+- An IPv6 address range in the format of "start address-end address" with no spaces included.
+Supported operations are Add, Delete, Replace, and Get.
+
+<a href="" id="autoresolve"></a>**MdmStore/DynamicKeywords/Addresses/Id/AutoResolve**
+Boolean value. If this flag is set to TRUE, then the 'keyword' field of this object is expected to be a Fully Qualified Domain Name, and the addresses will be automatically resolved. This flag should only be set if the Microsoft Defender Advanced Threat Protection Service is present. 
+Value type is string. Supported operations are Add, Delete, and Get.
+Value type is string. Supported operations are Add, Delete, and Get.
+
 
 ## Related topics
 

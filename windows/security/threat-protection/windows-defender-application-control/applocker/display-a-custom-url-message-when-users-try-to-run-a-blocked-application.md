@@ -31,7 +31,7 @@ ms.technology: windows-sec
 
 This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 
-Using Group Policy, AppLocker can be configured to display a message with a custom URL. You can use this URL to redirect users to a support site that contains info about why the user received the error and which apps are allowed. If you do not display a custom message when an apps is blocked, the default access denied message is displayed.
+With the help of Group Policy, AppLocker can be configured to display a message with a custom URL. You can use this URL to redirect users to a support site that contains info about why the user received the error and which apps are allowed. If you don't display a custom message when an app is blocked, the default access denied message is displayed.
 
 To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
 

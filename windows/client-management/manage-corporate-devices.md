@@ -1,16 +1,12 @@
 ---
 title: Manage corporate devices
 description: You can use the same management tools to manage all device types running Windows 10 or Windows 11 desktops, laptops, tablets, and phones.
-ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-keywords: ["MDM", "device management"]
+manager: aaroncz
+ms.author: vinpa
+keywords: [MDM, device management]
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: devices
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/14/2021
 ms.topic: article
@@ -49,11 +45,5 @@ You can use the same management tools to manage all device types running Windows
 
 [Windows 10 (and Windows 11) and Azure Active Directory: Embracing the Cloud](https://go.microsoft.com/fwlink/p/?LinkId=615768)
 
-Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager & Windows Intune](/learn/)
-
-
-
-
-
-
+Microsoft Virtual Academy course: [Configuration Manager & Windows Intune](/learn/)
  

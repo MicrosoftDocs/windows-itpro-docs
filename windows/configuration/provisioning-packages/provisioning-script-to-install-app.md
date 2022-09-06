@@ -2,14 +2,12 @@
 title: Use a script to install a desktop app in provisioning packages (Windows 10/11)
 description: With Windows 10/11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ---
 
 # Use a script to install a desktop app in provisioning packages

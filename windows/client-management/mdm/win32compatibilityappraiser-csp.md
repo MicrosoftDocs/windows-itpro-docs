@@ -1,14 +1,14 @@
 ---
 title: Win32CompatibilityAppraiser CSP
 description: Learn how the Win32CompatibilityAppraiser configuration service provider enables the IT admin to query the current status of the Appraiser and UTC telemetry health.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/19/2018
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Win32CompatibilityAppraiser CSP
@@ -19,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -160,7 +161,7 @@ Value type is bool.
 Supported operation is Get.
 
 <a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-msaserviceenabled"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/MsaServiceEnabled**  
-A boolean value representing whether the MSA service is enabled. This service must be enabled for UTC data to be indexed with Global Device IDs.
+A boolean value representing whether the Microsoft account service is enabled. This service must be enabled for UTC data to be indexed with Global Device IDs.
 
 Value type is bool. 
 

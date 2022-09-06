@@ -1,17 +1,14 @@
 ---
 title: Provision PCs with apps and certificates (Windows 10)
-description: Create a provisioning package to apply settings to a PC running Windows 10. 
-keywords: ["runtime provisioning", "provisioning package"]
+description: Create a provisioning package to apply settings to a PC running Windows 10.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ---
 
 # Provision PCs with apps and certificates for initial deployment (advanced provisioning)
@@ -176,13 +173,6 @@ For details about the settings you can customize in provisioning packages, see [
 
 
 **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)
-
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
- 
 
 ## Related topics
 

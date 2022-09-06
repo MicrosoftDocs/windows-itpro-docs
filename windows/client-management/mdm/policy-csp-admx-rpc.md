@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_RPC
-description: Policy CSP - ADMX_RPC
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_RPC.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/08/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_RPC
@@ -51,8 +51,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -79,7 +80,7 @@ If you don't configure this policy setting, it remains disabled.  It will only g
 
 If you enable this policy setting, the RPC runtime will generate extended error information.
 
-You must select an error response type in the drop-down box.
+You must select an error response type from the folowing options in the drop-down box:
 
 - "Off" disables all extended error information for all processes. RPC only generates an error code.
 - "On with Exceptions" enables extended error information, but lets you disable it for selected processes. To disable extended error information for a process while this policy setting is in effect, the command that starts the process must begin with one of the strings in the Extended Error Information Exception field.
@@ -93,7 +94,7 @@ You must select an error response type in the drop-down box.
 >
 > The default policy setting, "Off," is designed for systems where extended error information is considered to be sensitive, and it should not be made available remotely.
 >
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 
 <!--/Description-->
 
@@ -116,8 +117,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -145,11 +147,10 @@ If you don't configure this policy setting, it remains disabled and will generat
 If you enable this policy setting, then:
 
 - "Off" directs the RPC Runtime to generate RPC_S_SEC_PKG_ERROR if the client asks for delegation, but the created security context doesn't support delegation.
-
 - "On" directs the RPC Runtime to accept security contexts that don't support delegation even if delegation was asked for.
 
 > [!NOTE]
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 
 <!--/Description-->
 
@@ -174,8 +175,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -207,7 +209,7 @@ If you don't configure this policy setting, it will remain disabled.  The idle c
 If you enable this policy setting, and the IIS server running the RPC HTTP proxy is configured with a lower idle connection timeout, the timeout on the IIS server is used. Otherwise, the provided timeout value is used. The timeout is given in seconds.
 
 > [!NOTE]
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 
 <!--/Description-->
 
@@ -231,8 +233,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -255,22 +258,18 @@ If you disable this policy setting, the RPC runtime defaults to "Auto2" level.
 
 If you don't configure this policy setting, the RPC  defaults to "Auto2" level. 
 
-If you enable this policy setting, you can use the drop-down box to determine which systems maintain RPC state information.
+If you enable this policy setting, you can use the drop-down box to determine which systems maintain RPC state information from the following:
 
 - "None" indicates that the system doesn't maintain any RPC state information. Note: Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting isn't recommended for most installations.
-
 - "Auto1" directs RPC to maintain basic state information only if the computer has at least 64 MB of memory.
-
 - "Auto2" directs RPC to maintain basic state information only if the computer has at least 128 MB of memory and is running Windows 2000 Server, Windows 2000 Advanced Server, or Windows 2000 Datacenter Server. 
-
 - "Server" directs RPC to maintain basic state information on the computer, regardless of its capacity.
-
 - "Full" directs RPC to maintain complete RPC state information on the system, regardless of its capacity. Because this level can degrade performance, it's recommended for use only while you're investigating an RPC problem.
 
 > [!NOTE]
 > To retrieve the RPC state information from a system that maintains it, you must use a debugging tool.
 >
-> This policy setting will not be applied until the system is rebooted.
+> This policy setting won't be applied until the system is rebooted.
 
 <!--/Description-->
 
@@ -288,3 +287,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

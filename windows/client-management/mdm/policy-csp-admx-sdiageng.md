@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_sdiageng
-description: Policy CSP - ADMX_sdiageng
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_sdiageng.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/18/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_sdiageng
@@ -48,8 +48,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -68,7 +69,7 @@ manager: dansimp
 <!--Description-->
 This policy setting allows Internet-connected users to access and search troubleshooting content that is hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they are prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
 
-If you enable or do not configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that is hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
+If you enable or don't configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that is hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
 
 If you disable this policy setting, users can only access and search troubleshooting content that is available locally on their computers, even if they are connected to the Internet. They are prevented from connecting to the Microsoft servers that host the Windows Online Troubleshooting Service.
 
@@ -94,8 +95,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -114,11 +116,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows users to access and run the troubleshooting tools that are available in the Troubleshooting Control Panel and to run the troubleshooting wizard to troubleshoot problems on their computers.
 
-If you enable or do not configure this policy setting, users can access and run the troubleshooting tools from the Troubleshooting Control Panel.
+If you enable or don't configure this policy setting, users can access and run the troubleshooting tools from the Troubleshooting Control Panel.
 
 If this policy setting is disabled, the users cannot access or run the troubleshooting tools from the Control Panel.
 
->[!Note]
+>[!NOTE]
 >This setting also controls a user's ability to launch standalone troubleshooting packs such as those found in .diagcab files.
 
 <!--/Description-->
@@ -143,8 +145,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -165,7 +168,7 @@ This policy setting determines whether scripted diagnostics will execute diagnos
 
 If you enable this policy setting, the scripted diagnostics execution engine validates the signer of any diagnostic package and runs only those signed by trusted publishers.
 
-If you disable or do not configure this policy setting, the scripted diagnostics execution engine runs all digitally signed packages.
+If you disable or don't configure this policy setting, the scripted diagnostics execution engine runs all digitally signed packages.
 
 <!--/Description-->
 
@@ -183,4 +186,6 @@ ADMX Info:
 
 
 <!--/Policies-->
+## Related topics
 
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

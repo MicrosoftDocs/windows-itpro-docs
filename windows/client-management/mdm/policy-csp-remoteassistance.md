@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - RemoteAssistance
 description: Learn how the Policy CSP - RemoteAssistance setting allows you to specify a custom message to display.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - RemoteAssistance
@@ -52,6 +52,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -71,9 +72,9 @@ manager: dansimp
 <!--Description-->
 This policy setting lets you customize warning messages.
 
-The "Display warning message before sharing control" policy setting allows you to specify a custom message to display before users share control of their computers.
+The "Display warning message before sharing control" policy setting allows you to specify a custom message, to display before users share control of their computers.
 
-The "Display warning message before connecting" policy setting allows you to specify a custom message to display before users allow a connection to their computers.
+The "Display warning message before connecting" policy setting allows you to specify a custom message, to display before users allow a connection to their computers.
 
 If you enable this policy setting, the warning message you specify overrides the default message that is seen by the novice.
 
@@ -104,6 +105,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -152,6 +154,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -181,7 +184,7 @@ If you enable this policy setting, you have two ways to allow helpers to provide
 
 The "Maximum ticket time" policy setting sets a limit on the amount of time that a Remote Assistance invitation created by using email or file transfer can remain open.
 
-The "Select the method for sending email invitations" setting specifies which email standard to use to send Remote Assistance invitations. Depending on your email program, you can use either the Mailto standard (the invitation recipient connects through an Internet link) or the SMAPI (Simple MAPI) standard (the invitation is attached to your email message). This policy setting isn't available in Windows Vista since SMAPI is the only method supported.
+The "Select the method for sending email invitations" setting specifies which email standard to use, to send Remote Assistance invitations. Depending on your email program, you can use either the Mailto standard (the invitation recipient connects through an Internet link) or the SMAPI (Simple MAPI) standard (the invitation is attached to your email message). This policy setting isn't available in Windows Vista, since SMAPI is the only method supported.
 
 If you enable this policy setting, you should also enable appropriate firewall exceptions to allow Remote Assistance communications.
 
@@ -208,6 +211,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -246,23 +250,24 @@ If you enable this policy setting, you should also enable firewall exceptions to
 Windows Vista and later
 
 Enable the Remote Assistance exception for the domain profile. The exception must contain:
-Port 135:TCP
-%WINDIR%\System32\msra.exe
-%WINDIR%\System32\raserver.exe
+
+- Port 135:TCP
+- %WINDIR%\System32\msra.exe
+- %WINDIR%\System32\raserver.exe
 
 Windows XP with Service Pack 2 (SP2) and Windows XP Professional x64 Edition with Service Pack 1 (SP1)
 
-Port 135:TCP
-%WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
-%WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
-%WINDIR%\System32\Sessmgr.exe
+- Port 135:TCP
+- %WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
+- %WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
+- %WINDIR%\System32\Sessmgr.exe
 
 For computers running Windows Server 2003 with Service Pack 1 (SP1)
 
-Port 135:TCP
-%WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
-%WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
-Allow Remote Desktop Exception
+- Port 135:TCP
+- %WINDIR%\PCHealth\HelpCtr\Binaries\Helpsvc.exe
+- %WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
+- Allow Remote Desktop Exception
 
 <!--/Description-->
 
@@ -278,3 +283,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Connectivity
 description: Learn how to use the Policy CSP - Connectivity setting to allow the user to enable Bluetooth or restrict access.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
-manager: dansimp
+ms.reviewer: 
+manager: aaroncz
 ---
 
 # Policy CSP - Connectivity
@@ -84,6 +84,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -102,7 +103,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Allows the user to enable Bluetooth or restrict access.
+This policy allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
 >  This value isn't supported in Windows 10.
@@ -115,9 +116,9 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disallow Bluetooth. If the value is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth.
--   1 – Reserved. If the value is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
--   2 (default) – Allow Bluetooth. If the value is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
+-   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth.
+-   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
+-   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -133,6 +134,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -151,7 +153,8 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
+
+This policy allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -175,6 +178,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -237,6 +241,7 @@ To validate on devices, perform the following steps:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -258,7 +263,7 @@ To validate on devices, perform the following steps:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+This policy allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -281,6 +286,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -301,7 +307,10 @@ The following list shows the supported values:
 <!--Description-->
 This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue tasks, such as reading, email, and other tasks that require linking between Phone and PC.
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device isn't allowed to be linked to phones, will remove itself from the device list of any linked Phones, and can't participate in 'Continue on PC experiences'.
+If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. 
+
+If you disable this policy setting, the Windows device isn't allowed to be linked to phones, will remove itself from the device list of any linked Phones, and can't participate in 'Continue on PC experiences'.
+
 If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
@@ -321,7 +330,8 @@ This setting supports a range of values between 0 and 1.
 <!--Validation-->
 Validation:
 
-If the Connectivity/AllowPhonePCLinking policy is configured to value 0, the add a phone button in the Phones section in settings will be grayed out and clicking it won't launch the window for a user to enter their phone number.
+
+If the Connectivity/AllowPhonePCLinking policy is configured to value 0, add a phone button in the Phones section in settings will be grayed out and clicking it will not launch the window for a user to enter their phone number.
 
 Device that has previously opt-in to MMX will also stop showing on the device list.
 
@@ -339,6 +349,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|No|
 |Education|No|No|
@@ -387,6 +398,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -430,6 +442,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -448,7 +461,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Prevents the device from connecting to VPN when the device roams over cellular networks.
+This policy prevents the device from connecting to VPN when the device roams over cellular networks.
 
 Most restricted value is 0.
 
@@ -473,6 +486,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -527,6 +541,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -579,6 +594,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -631,6 +647,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -675,6 +692,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -721,6 +739,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -739,7 +758,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Determines whether a user can install and configure the Network Bridge.
+This policy determines whether a user can install and configure the Network Bridge.
 
 Important: This setting is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 

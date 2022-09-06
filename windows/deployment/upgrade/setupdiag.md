@@ -3,13 +3,8 @@ title: SetupDiag
 manager: dougeby
 ms.author: aaroncz
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
-keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
@@ -298,7 +293,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 39. WimApplyExtractFailure – 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
     - Matches a wim apply failure during wim extraction phases of setup.  Will output the extension, path and error code.
 40. UpdateAgentExpanderFailure – 66E496B3-7D19-47FA-B19B-4040B9FD17E2
-    - Matches DPX expander failures in the down-level phase of update from WU.  Will output the package name, function, expression and error code.
+    - Matches DPX expander failures in the down-level phase of update from Windows Update.  Will output the package name, function, expression and error code.
 41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
     - Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
 42. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC

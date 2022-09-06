@@ -1,14 +1,13 @@
 ---
 title: NAPDEF CSP
 description: Learn how the NAPDEF configuration service provider (CSP) is used to add, modify, or delete WAP network access points (NAPs).
-ms.assetid: 9bcc65dd-a72b-4f90-aba7-4066daa06988
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

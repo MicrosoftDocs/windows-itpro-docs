@@ -2,12 +2,10 @@
 title: Windows 10 support solutions
 description: Learn where to find information about troubleshooting Windows 10 issues, for example BitLocker issues and bugcheck errors.
 ms.reviewer: kaushika
-manager: dansimp
+manager: aaroncz
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.author: kaushika
-author: kaushika-msft
+ms.author: vinpa
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.topic: troubleshooting
 ---

@@ -1,20 +1,18 @@
 ---
 title: Disconnecting from the management infrastructure (unenrollment)
 description: Disconnecting is initiated either locally by the user using a phone or remotely by the IT admin using management server.
-MS-HAID:
-- 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
-- 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
-ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
+MS-HAID: 
+  - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
+  - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
-
 
 # Disconnecting from the management infrastructure (unenrollment)
 
@@ -125,7 +123,7 @@ When the server initiates disconnection, all undergoing sessions for the enrollm
 <a href="" id="work-access"></a>
 ## Unenrollment from Work Access settings page
 
-If the user is enrolled into MDM using an Azure Active Directory (AAD Join or by adding a Microsoft work account), the MDM account will show up under the Work Access page. However, the **Disconnect** button is greyed out and not accessible. Users can remove that MDM account by removing the AAD association to the device.
+If the user is enrolled into MDM using an Azure Active Directory (AAD Join or by adding a Microsoft work account), the MDM account will show up under the Work Access page. However, the **Disconnect** button is greyed out and not accessible. Users can remove that MDM account by removing the Azure AD association to the device.
 
 You can only use the Work Access page to unenroll under the following conditions:
 

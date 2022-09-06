@@ -1,16 +1,10 @@
 ---
 title: Windows 10 deployment scenarios and tools
 description: Learn about the tools you can use to deploy Windows 10 and related applications to your organization. Explore deployment scenarios.
-ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
-keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 ms.topic: article
 ms.collection: highpri
 ---
@@ -57,7 +51,7 @@ For more information on DISM, see [DISM technical reference](/windows-hardware/m
 
 ### User State Migration Tool (USMT)
 
-USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and System Center 2012 R2 Configuration Manager use USMT as part of the operating system deployment process.
+USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and Configuration Manager use USMT as part of the operating system deployment process.
 
 USMT includes several command-line tools, the most important of which are ScanState and LoadState:
 
@@ -179,7 +173,7 @@ TFTP changes are now easy to perform.
 
 MDT is a free deployment solution from Microsoft. It provides end-to-end guidance, best practices, and tools for planning, building, and deploying Windows operating systems. MDT builds on top of the core deployment tools in the Windows ADK by contributing guidance, reducing complexity, and adding critical features for an enterprise-ready deployment solution.
 
-MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to System Center 2012 R2 Configuration Manager.
+MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to Configuration Manager.
 
 **Note**  
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.

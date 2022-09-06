@@ -1,13 +1,13 @@
 ---
 title: Change history for MDM documentation
 description: This article lists new and updated articles for Mobile Device Management.
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/19/2020
 ---
@@ -60,7 +60,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |New or updated article | Description|
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
-|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with more details. Added policy timeline table. 
+|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with more details. Added policy timeline table.
 
 ## February 2020
 
@@ -162,7 +162,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |--- | ---|
 |[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
 |[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
-|[Mobile device management](index.md)|Updated information about MDM Security Baseline.|
+|[Mobile device management](index.yml)|Updated information about MDM Security Baseline.|
 
 ## December 2018
 
@@ -174,7 +174,6 @@ This article lists new and updated articles for the Mobile Device Management (MD
 
 |New or updated article | Description|
 |--- | ---|
-|[Mobile device management](index.md#mmat) | Added information about the MDM Migration Analysis Tool (MMAT).|
 |[Policy CSP - DeviceGuard](policy-csp-deviceguard.md) | Updated ConfigureSystemGuardLaunch policy and replaced EnableSystemGuard with it.|
 
 ## August 2018
@@ -227,7 +226,6 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)|Added the following node in Windows 10, version 1803:<li>Settings/AllowVirtualGPU<li>Settings/SaveFilesToHost|
 |[NetworkProxy CSP](networkproxy-csp.md)|Added the following node in Windows 10, version 1803:<li>ProxySettingsPerUser|
 |[Accounts CSP](accounts-csp.md)|Added a new CSP in Windows 10, version 1803.|
-|[MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat)|Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.|
 |[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)|Added the DDF download of Windows 10, version 1803 configuration service providers.|
 |[Policy CSP](policy-configuration-service-provider.md)|Added the following new policies for Windows 10, version 1803:<li>Bluetooth/AllowPromptedProximalConnections<li>KioskBrowser/EnableEndSessionButton<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers|
 

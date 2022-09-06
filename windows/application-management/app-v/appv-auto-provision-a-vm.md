@@ -33,7 +33,7 @@ Provisioning your new VM includes creating a VHD file, setting up a user account
 
 #### Create a VHD file
 
-For this process to work, you must have a base operating system available as a VHD image file, we recommend using the [Convert-WindowsImage.ps1](https://gallery.technet.microsoft.com/scriptcenter/Convert-WindowsImageps1-0fe23a8f) command-line tool.
+For this process to work, you must have a base operating system available as a VHD image file, we recommend using the [Convert-WindowsImage.ps1](https://www.powershellgallery.com/packages/Convert-WindowsImage/10.0) command-line tool.
 
 #### Create a VHD file with the Convert-WindowsImage command-line tool
 
@@ -122,6 +122,6 @@ After you sequence your packages, you can automatically clean up any unpublished
 ### Related articles
 
 - [Download the **Convert-WindowsImage** tool](https://www.powershellgallery.com/packages/Convert-WindowsImage/10.0)
-- [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+- [Download the Windows ADK](/windows-hardware/get-started/adk-install)
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)
 - [Learn about Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/Hyper-V-on-Windows-Server)

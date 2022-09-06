@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_ActiveXInstallService
 description: Learn about the Policy CSP - ADMX_ActiveXInstallService.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 11/09/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_ActiveXInstallService
@@ -45,6 +45,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 

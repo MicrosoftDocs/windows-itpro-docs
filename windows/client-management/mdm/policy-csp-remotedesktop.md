@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - RemoteDesktop
 description: Learn how the Policy CSP - RemoteDesktop setting allows you to specify a custom message to display.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - RemoteDesktop
@@ -41,6 +41,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -59,7 +60,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 
-This policy allows administrators to enable automatic subscription for the Microsoft Remote Desktop client. If you define this policy, the specified URL is used by the client to silently subscribe the logged on user and retrieve the remote resources assigned to them. To automatically subscribe to Azure Virtual Desktop in the Azure Public cloud, set the URL to `https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery`.
+This policy allows administrators to enable automatic subscription for the Microsoft Remote Desktop client. If you define this policy, the specified URL is used by the client to subscribe the logged on user and retrieve the remote resources assigned to them. To automatically subscribe to Azure Virtual Desktop in the Azure Public cloud, set the URL to `https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery`.
 
 <!--/Description-->
 
@@ -76,6 +77,7 @@ This policy allows administrators to enable automatic subscription for the Micro
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -93,7 +95,7 @@ This policy allows administrators to enable automatic subscription for the Micro
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using FSLogix user profiles from Azure AD-joined VMs.
+This policy allows the user to load the DPAPI cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using FSLogix user profiles from Azure AD-joined VMs.
 
 <!--/Description-->
 
@@ -111,3 +113,7 @@ The following list shows the supported values:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

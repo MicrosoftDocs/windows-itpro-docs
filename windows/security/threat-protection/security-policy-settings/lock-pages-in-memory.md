@@ -31,7 +31,7 @@ This policy setting determines which accounts can use a process to keep data in 
 
 Normally, an application running on Windows can negotiate for more physical memory, and in response to the request, the application begins to move the data from RAM (such as the data cache) to a disk. When the pageable memory is moved to a disk, more RAM is free for the operating system to use.
 
-Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This could lead to performance degradation.
+Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This limitation could lead to performance degradation.
 
 >**Note:**  By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
  
@@ -67,7 +67,7 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -92,7 +92,7 @@ Users with the **Lock pages in memory** user right could assign physical memory 
 
 ### Countermeasure
 
-Do not assign the **Lock pages in memory** user right to any accounts.
+Don't assign the **Lock pages in memory** user right to any accounts.
 
 ### Potential impact
 

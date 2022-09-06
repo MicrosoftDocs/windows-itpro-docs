@@ -1,14 +1,13 @@
 ---
 title: Policy CSP
 description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10 and Windows 11.
-ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 07/18/2019
 ms.collection: highpri
@@ -8360,9 +8359,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-search.md#search-disableremovabledriveindexing" id="search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-search.md#search-disablesearch" id="search-disablesearch">Search/DisableSearch</a>
   </dd>
   <dd>
     <a href="./policy-csp-search.md#search-donotusewebresults" id="search-donotusewebresults">Search/DoNotUseWebResults</a>

@@ -1,20 +1,15 @@
 ---
 title: Reset-security-key 
 description: Windows 10 and Windows 11 enables users to sign in to their device using a security key. How to reset a security key
-keywords: FIDO2, security key, CTAP, Microsoft-compatible security key
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 11/14/2018
-ms.reviewer: 
 ---
 # How to reset a Microsoft-compatible security key? 
 > [!Warning]

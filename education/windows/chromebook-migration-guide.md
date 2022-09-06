@@ -2,25 +2,23 @@
 title: Chromebook migration guide (Windows 10)
 description: In this guide, you'll learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment.
 ms.assetid: 7A1FA48A-C44A-4F59-B895-86D4D77F8BEA
-ms.reviewer: 
-manager: dansimp
 keywords: migrate, automate, device, Chromebook migration
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu, devices
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 10/13/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
+ms.reviewer: 
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Chromebook migration guide
-
-
-**Applies to**
-
--   Windows 10
 
 In this guide, you'll learn how to migrate a Google Chromebook-based learning environment to a Windows 10-based learning environment. You'll learn how to perform the necessary planning steps, including Windows device deployment, migration of user and device settings, app migration or replacement, and cloud storage migration. You'll then learn the best method to perform the migration by using automated deployment and migration tools.
 
@@ -485,7 +483,7 @@ Table 9. Management systems and deployment resources
 |--- |--- |
 |Windows provisioning packages| <li> [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package) <li>[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) <li> [Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)|
 |Group Policy|<li> [Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)) <li> [Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))"|
-|Configuration Manager| <li> [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
+|Configuration Manager| <li> [Site Administration for Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
 |Intune| <li> [Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262) <li> [System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)|
 |MDT| <li> [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)|
 

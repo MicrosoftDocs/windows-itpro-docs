@@ -1,14 +1,14 @@
 ---
 title: WindowsDefenderApplicationGuard CSP
 description: Configure the settings in Microsoft Defender Application Guard by using the WindowsDefenderApplicationGuard configuration service provider (CSP).
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 11/02/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # WindowsDefenderApplicationGuard CSP
@@ -19,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
