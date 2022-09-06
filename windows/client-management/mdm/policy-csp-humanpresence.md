@@ -47,7 +47,7 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
+|Pro|No|Yes|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -70,10 +70,10 @@ This feature dims the screen based on user attention. This is a power saving fea
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP Friendly name: *Facilitates smooth configuration of this feature for specific users based on corporate policies*
+-   GP Friendly name: *Force Instant Dim*
 -   GP name: *ForceInstantDim*
--   GP path: *Windows Components/HumanPresence*
--   GP ADMX file name: *HumanPresence.admx*
+-   GP path: *Windows Components/Human Presence*
+-   GP ADMX file name: *Sensors.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
