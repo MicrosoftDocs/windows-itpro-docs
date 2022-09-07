@@ -733,6 +733,8 @@ items:
                 href: policy-csp-licensing.md
               - name: LocalPoliciesSecurityOptions
                 href: policy-csp-localpoliciessecurityoptions.md
+              - name: LocalSecurityAuthority
+                href: policy-csp-lsa.md
               - name: LocalUsersAndGroups
                 href: policy-csp-localusersandgroups.md
               - name: LockDown
@@ -813,6 +815,8 @@ items:
                 href: policy-csp-userrights.md
               - name: VirtualizationBasedTechnology
                 href: policy-csp-virtualizationbasedtechnology.md
+              - name: WebThreatDefense
+                href: policy-csp-webthreatdefense.md
               - name: Wifi
                 href: policy-csp-wifi.md
               - name: WindowsAutoPilot
