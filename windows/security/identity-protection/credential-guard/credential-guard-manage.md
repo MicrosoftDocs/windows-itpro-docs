@@ -22,6 +22,21 @@ appliesto:
 - ✅ <b>Windows Server 2022</b>
 ---
 # Manage Windows Defender Credential Guard
+
+## Default Enablement
+
+Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators and end users still have ultimate control of whether the feature is enabled. Regardless of the default state, Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+
+### Requirements for automatic enablement
+
+Windows Defender Credential Guard will be enabled by default when a PC includes the following minimum requirements:
+
+|Component|Requirement|
+|---|---|
+|Operating System|Windows 11 Enterprise 22H2|
+|Virtualization-based Security (VBS) Enabled|VBS must be enabled to enable Windows Defender Credential Guard. Starting in Windows 11 Enterprise 22H2, VBS will be automatically enabled by default if the device meets the [minimum requirements to run VBS](/windows-hardware/design/device-experiences/oem-vbs).
+|Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
+
 ## Enable Windows Defender Credential Guard
 
 Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the [Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool](#enable-windows-defender-credential-guard-by-using-the-hvci-and-windows-defender-credential-guard-hardware-readiness-tool). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
