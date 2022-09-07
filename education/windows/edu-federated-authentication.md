@@ -56,7 +56,7 @@ To configure federated authentication using Microsoft Intune, use a [custom prof
     - **Description**: enter a description for the profile. This setting is optional, but recommended
 1. Select **Next**
 1. In **Configuration settings**, select **Add** and enter the following properties, repeating the process for each row and selecting **Save**:
-
+    [!div class="mx-tdCol2BreakAll"]
     |  | Name | OMA-URI | Data type | Value |
     |--|--|--|--|--|
     |  | `EnableWebSignInForPrimaryUser` | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` | Integer | 1 |
