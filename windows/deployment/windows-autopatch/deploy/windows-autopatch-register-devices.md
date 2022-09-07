@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 08/08/2022
+ms.date: 09/06/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
@@ -32,7 +32,7 @@ You must choose what devices to manage with Windows Autopatch by adding them to 
 
 - Direct membership 
 - Nesting other Azure AD dynamic/assigned groups
-- Bulk operations – Import members 
+- [Bulk add/import group members](https://docs.microsoft.com/azure/active-directory/enterprise-users/groups-bulk-import-members) 
 
 Windows Autopatch automatically runs its discover devices function every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
 
@@ -84,14 +84,26 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 
 For more information, see [Windows Autopatch Prerequisites](../prepare/windows-autopatch-prerequisites.md).
 
-## About the Ready and Not ready tabs
+## About the Ready, Not ready and Not registered tabs
 
-Windows Autopatch introduces a new user interface to help IT admins detect and troubleshoot device readiness statuses seamlessly with actionable in-UI device readiness reports for unregistered devices or unhealthy devices.
+Windows Autopatch has three tabs within its device blade. Each tab is designed to provide a different set of device readiness status so IT admin knows where to go to monitor, and troubleshoot potential device health issues.
 
-| Tab | Purpose |
-| ----- | ----- |
-| Ready | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service. |
-| Not ready | The purpose of the Not ready tab is to help you identify and remediate devices that don't meet the pre-requisite checks to register into the Windows Autopatch service. This tab only shows devices that didn't successfully register into Windows Autopatch. |
+| Device blade tab | Purpose | Expected device readiness status |
+| ----- | ----- | ----- |
+| Ready | The purpose of this tab is to show devices that were successfully registered with the Windows Autopatch service. | Active |
+| Not ready | The purpose of this tab is to help you identify and remediate devices that failed to pass one or more post-device registration readiness checks. Devices showing up in this tab were successfully registered with Windows Autopatch, however, are not ready to have one or more software update workloads managed by the service. | Readiness failed and/or Inactive |
+| Not registered | The purpose this tab is to help you identify and remediate devices that don't meet one or more pre-requisite checks to get registered with the Windows Autopatch service. | Pre-requisites failed |
+
+## Device readiness statuses
+
+See all possible device readiness statuses in Windows Autopatch:
+
+| Readiness status | Description | Device blade tab |
+| ----- | ----- | ----- |
+| Active | Devices with this status have successfully passed all pre-requisite checks and subsequently successfully registered with Windows Autopatch. Additionally, device with this status have successfully passed all post-device registration readiness checks. |  Ready |
+| Readiness failed | Devices with this status haven't passed one or more post-device registration readiness checks and subsequently are not ready to have one or more software update workloads managed by Windows Autopatch. | Not ready |
+| Inactive | Devices with this status haven't communicated with Microsoft Endpoint Manager-Intune in the last 28 days. | Not ready |
+| Pre-requisites failed | Devices with this status haven't passed one or more pre-requisite checks and haven't successfully registered with Windows Autopatch | Not registered |
 
 ## Built-in roles required for device registration
 
@@ -125,16 +137,16 @@ Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID
 1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Devices**.
-4. Select either the **Ready** or the **Not ready** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
+4. Select either the **Ready** or the **Not registered** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
 5. Add either devices through direct membership, or other Azure AD dynamic or assigned groups as nested groups in the **Windows Autopatch Device Registration** group.
 
 > [!NOTE]
-> The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both **Ready** and **Not ready** tabs.
+> The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both **Ready** and **Not registered** tabs.
 
 Once devices or other Azure AD groups (either dynamic or assigned) containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch's device discovery hourly function discovers these devices, and runs software-based prerequisite checks to try to register them with its service.
 
 > [!TIP]
-> You can also use the **Discover Devices** button in either the **Ready** or **Not ready** tab to discover devices from the **Windows Autopatch Device Registration** Azure AD group on demand.
+> You can also use the **Discover Devices** button in either one of the device blade tabs **Ready**, **Not registered** or **Not ready** to discover devices from the **Windows Autopatch Device Registration** Azure AD group on demand. On demand means you don't have to wait up to an hour so Windows Autopatch automatically tries to discover devices from the Azure AD group on your behalf.
 
 ### Windows Autopatch on Windows 365 Enterprise Workloads
 
