@@ -6602,6 +6602,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### FederatedAuthentication policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-federatedauthentication.md#federatedauthentication-enablewebsigninforprimaryuser" id="federatedauthentication-enablewebsigninforprimaryuser<">FederatedAuthentication/EnableWebSignInForPrimaryUser</a>
+  </dd>
+</dl>
+
 ### Feeds policies
 <dl>
   <dd>
