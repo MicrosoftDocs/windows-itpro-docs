@@ -57,14 +57,14 @@ To configure federated authentication using Microsoft Intune, use a [custom prof
 1. Select **Next**
 1. In **Configuration settings**, select **Add** and enter the following properties, repeating the process for each row and selecting **Save**:
 
-    | Name | OMA-URI | Data type | Value |
-    |-|-|-|-|
-    | `EnableWebSignInForPrimaryUser` | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` | Integer | 1|
-    | `ConfigureWebSignInAllowedUrls` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` | String | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com`|
-    | `IsEducationEnvironment` | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` | Integer | 1|
-    | `ConfigureWebCamAccessDomainNames` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` | String |This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com`|
+    |  | Name | OMA-URI | Data type | Value |
+    |--|--|--|--|--|
+    |  | `EnableWebSignInForPrimaryUser` | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` | Integer | 1 |
+    |  | `ConfigureWebSignInAllowedUrls` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` | String | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
+    |  | `IsEducationEnvironment` | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` | Integer | 1 |
+    |  | `ConfigureWebCamAccessDomainNames` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` | String | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
 
-   :::image type="content" source="images/edu-federated-authentication-settings.png" alt-text="Custom policy showing the settings to be configured to enable federated authentication" lightbox="edu-federated-authentication-settings.png" border="true":::
+   :::image type="content" source="images/edu-federated-authentication-settings.png" alt-text="Custom policy showing the settings to be configured to enable federated authentication" lightbox="images/edu-federated-authentication-settings.png" border="true":::
 1. Select **Review + Save**
 1. Select **Next**
 1. In **Scope tags**, assign any applicable tags (optional)
