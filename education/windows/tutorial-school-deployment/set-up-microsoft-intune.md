@@ -78,7 +78,7 @@ To disable Windows Hello for Business at the tenant level:
 1. Ensure that **Configure Windows Hello for Business** is set to **disabled**
 1. Select **Save**
 
-:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center" border="true":::
+:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center" border="true" lightbox="./images/whfb-disable.png":::
 
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 
