@@ -23,7 +23,7 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#humanpresence-forceinstantdim">HumanPresence/FForceInstantDim</a>
+    <a href="#humanpresence-forceinstantdim">HumanPresence/ForceInstantDim</a>
   </dd>
   <dd>
     <a href="#humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
