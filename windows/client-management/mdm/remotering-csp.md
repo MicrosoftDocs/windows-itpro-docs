@@ -1,14 +1,13 @@
 ---
 title: RemoteRing CSP
 description: The RemoteRing CSP can be used to remotely trigger a device to produce an audible ringing sound regardless of the volume that's set on the device.
-ms.assetid: 70015243-c07f-46cb-a0f9-4b4ad13a5609
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

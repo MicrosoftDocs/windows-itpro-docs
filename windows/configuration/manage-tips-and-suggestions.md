@@ -1,18 +1,14 @@
 ---
 title: Manage Windows 10 and Microsoft Store tips, fun facts, and suggestions (Windows 10)
-description: Windows 10 provides organizations with various options to manage user experiences to provide a consistent and predictable experience for employees. 
-keywords: ["device management"]
+description: Windows 10 provides organizations with various options to manage user experiences to provide a consistent and predictable experience for employees.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: devices
-author: greg-lindsay
-ms.author: greglin
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/20/2017
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions

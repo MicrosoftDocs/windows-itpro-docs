@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - CredentialsDelegation
 description: Learn how to use the Policy CSP - CredentialsDelegation setting so that remote host can allow delegation of non-exportable credentials.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - CredentialsDelegation
@@ -45,6 +45,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -63,13 +64,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Remote host allows delegation of non-exportable credentials
+Remote host allows delegation of non-exportable credentials.
 
-When using credential delegation, devices provide an exportable version of credentials to the remote host. This exposes users to the risk of credential theft from attackers on the remote host.
+When credential delegation is being used, devices provide an exportable version of credentials to the remote host. This version exposes users to the risk of credential theft from attackers on the remote host.
 
 If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode.
 
-If you disable or do not configure this policy setting, Restricted Administration and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
+If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.
 
 <!--/Description-->
 
@@ -89,3 +90,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

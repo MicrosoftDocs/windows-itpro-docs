@@ -2,18 +2,12 @@
 title: Configure VDA for Windows 10/11 Subscription Activation
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
-keywords: upgrade, update, task sequence, deploy
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -45,7 +39,7 @@ Deployment instructions are provided for the following scenarios:
 - The VM is running Windows 10, version 1803 or later (ex: Windows 11).
 - The VM is hosted in Azure or another Qualified Multitenant Hoster (QMTH).
 
-    When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10/11 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
+    When a user with VDA rights signs in to the VM using their Azure Active Directory credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10/11 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
 ### Scenario 2
 
@@ -101,7 +95,7 @@ For examples of activation issues, see [Troubleshoot the user experience](./depl
 >Azure Active Directory (Azure AD) provisioning packages have a 180 day limit on bulk token usage. You will need to update the provisioning package and re-inject it into the image after 180 days. Existing virtual machines that are Azure AD-joined and deployed will not need to be recreated.
 
 For Azure AD-joined VMs, follow the same instructions (above) as for [Active Directory-joined VMs](#active-directory-joined-vms) with the following exceptions:
-- In step 9, during setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it is not for Active Directory joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
+- In step 9, during setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it is not for Active Directory-joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
 - In step 11, during setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in and add the bulk token using your organization's credentials.
 - In step 15, sub-step 2, when entering the PackagePath, use the project name you entered in step 9 (ex: **Desktop Bulk Enrollment Token Pro GVLK.ppkg**)
 - When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described below in [Create custom RDP settings for Azure](#create-custom-rdp-settings-for-azure).

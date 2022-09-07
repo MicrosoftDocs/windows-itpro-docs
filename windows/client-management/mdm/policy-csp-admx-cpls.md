@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Cpls
-description: Policy CSP - ADMX_Cpls
-ms.author: dansimp
+description: Learn about the Policy CSP - ADMX_Cpls.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 08/26/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Cpls
@@ -43,8 +43,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -64,7 +65,7 @@ manager: dansimp
 This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
 
 > [!NOTE] 
-> The default account picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg. The default guest picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg. If the default pictures do not exist, an empty frame is displayed.
+> The default account picture is stored at `%PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg.` The default guest picture is stored at `%PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg.` If the default pictures do not exist, an empty frame is displayed.
 
 If you enable this policy setting, the default user account picture will display for all users on the system with no customization allowed.
 
@@ -84,6 +85,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

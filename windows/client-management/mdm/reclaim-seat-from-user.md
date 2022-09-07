@@ -1,14 +1,13 @@
 ---
 title: Reclaim seat from user
 description: The Reclaim seat from user operation returns reclaimed seats for a user in the Microsoft Store for Business.
-ms.assetid: E2C3C899-D0AD-469A-A319-31A420472A4C
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 05/05/2020
 ---
 
@@ -37,7 +36,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contain [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
+The response body contains [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
 
 |Error code|Description|Retry|Data field|Details|
 |--- |--- |--- |--- |--- |

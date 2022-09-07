@@ -1,19 +1,14 @@
 ---
 description: Learn more about the Windows 10, version 1703 diagnostic data gathered at the basic level.
 title: Windows 10, version 1703 basic diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
-audience: ITPro
 ms.reviewer:
 ms.technology: privacy
 ---
@@ -1314,9 +1309,9 @@ The following fields are available:
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise System Center Configuration Manager (SCCM) environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier.
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier.
 
 
 ### Census.Firmware
@@ -1584,9 +1579,9 @@ The following fields are available:
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
 - **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
-- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
+- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update (WU) updates to other devices on the same network.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
+- **WUPauseState**  Retrieves Windows Update setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -3140,7 +3135,7 @@ The following fields are available:
 - **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by Configuration Manager.
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
@@ -4281,7 +4276,7 @@ The following fields are available:
 - **DeviceModel**  What is the device model.
 - **DeviceOEM**  What OEM does this device belong to.
 - **DownloadPriority**  The priority of the download activity.
-- **DownloadScenarioId**  A unique ID for a given download used to tie together WU and DO events.
+- **DownloadScenarioId**  A unique ID for a given download used to tie together Windows Update and DO events.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **Edition**  Indicates the edition of Windows being used.
 - **EventInstanceID**  A globally unique identifier for event instance.
@@ -4412,7 +4407,7 @@ The following fields are available:
 - **DeviceIsMdmManaged**  This device is MDM managed.
 - **IsNetworkAvailable**  If the device network is not available.
 - **IsNetworkMetered**  If network is metered.
-- **IsSccmManaged**  This device is SCCM managed.
+- **IsSccmManaged**  This device is managed by Configuration Manager .
 - **NewlyInstalledOs**  OS is newly installed quiet period.
 - **PausedByPolicy**  Updates are paused by policy.
 - **RecoveredFromRS3**  Previously recovered from RS3.

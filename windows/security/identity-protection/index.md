@@ -2,25 +2,25 @@
 title: Identity and access management (Windows 10)
 description: Learn more about identity and access protection technologies in Windows.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 02/05/2018
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Identity and access management
 
-Learn more about identity and access management technologies in Windows 10.
+Learn more about identity and access management technologies in Windows 10 and Windows 11.
 
 | Section | Description |
 |-|-|
+| [Local Administrator Password Solution](/defender-for-identity/cas-isp-laps) | Local Administrator Password Solution (LAPS) provides management of local account passwords of domain-joined computers. Passwords are stored in Azure Active Directory (Azure AD) and protected by an access control list (ACL), so only eligible users can read them or request a reset. 
 | [Technical support policy for lost or forgotten passwords](password-support-policy.md)| Outlines the ways in which Microsoft can help you reset a lost or forgotten password, and provides links to instructions for doing so. |
 | [Access control](access-control/access-control.md) | Describes access control in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer. Key concepts that make up access control are permissions, ownership of objects, inheritance of permissions, user rights, and object auditing. |
 | [Configure S/MIME for Windows 10](configure-s-mime.md) | In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with. |
