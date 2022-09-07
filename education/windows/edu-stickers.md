@@ -1,5 +1,5 @@
 ---
-title: Stickers for Windows 11 SE
+title: Configure Stickers for Windows 11 SE
 description: Description of Stickers for Windows 11 SE and how to configure them via MDM
 ms.date: 09/15/2022
 ms.prod: windows
