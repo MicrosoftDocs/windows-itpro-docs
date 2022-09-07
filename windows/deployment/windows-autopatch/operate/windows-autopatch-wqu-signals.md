@@ -40,7 +40,7 @@ The update is released to the Test ring on the second Tuesday of the month. Thos
 
 ## Device reliability signals
 
-Windows Autopatch monitors devices for a set of core reliability metrics as a part of the service. 
+Windows Autopatch monitors devices for a set of core reliability metrics as a part of the service.
 
 The service then uses statistical models to assess if there are significant differences between the two Windows versions. To make a statistically significant assessment, Windows Autopatch requires that at least 500 devices have upgraded to the new version.
 
