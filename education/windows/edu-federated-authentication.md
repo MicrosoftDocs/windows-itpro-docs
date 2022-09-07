@@ -58,12 +58,12 @@ To configure federated authentication using Microsoft Intune, use a [custom prof
 1. In **Configuration settings**, select **Add** and enter the following properties, repeating the process for each row and selecting **Save**:
 
     [!div class="mx-tdCol2BreakAll"]
-    |  | Name | OMA-URI | Data type | Value |
-    |--|--|--|--|--|
-    |  | `EnableWebSignInForPrimaryUser` | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` | Integer | 1 |
-    |  | `ConfigureWebSignInAllowedUrls` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` | String | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
-    |  | `IsEducationEnvironment` | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` | Integer | 1 |
-    |  | `ConfigureWebCamAccessDomainNames` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` | String | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
+    | Name | OMA-URI | Data type | Value |
+    |--|--|--|--|
+    | `EnableWebSignInForPrimaryUser` | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` | Integer | 1 |
+    | `ConfigureWebSignInAllowedUrls` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` | String | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
+    | `IsEducationEnvironment` | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` | Integer | 1 |
+    | `ConfigureWebCamAccessDomainNames` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` | String | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
 
    :::image type="content" source="images/edu-federated-authentication-settings.png" alt-text="Custom policy showing the settings to be configured to enable federated authentication" lightbox="images/edu-federated-authentication-settings.png" border="true":::
 1. Select **Review + Save**
@@ -82,12 +82,14 @@ Once the devices are configured, a new sign-in experience becomes available.
 :::image type="content" source="./images/federated-auth.gif" alt-text="Windows 11 SE sign-in using federated authentication through Clever and QR code badge." border="true":::
 
 ## Known issues
+
 - Network and Accessibility menus aren't available in the web sign-in flow.  They can be accessed on the standard Windows sign-in page. While in the web sign-in flow, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> and the classic Windows sign-in UI will be shown, along with the buttons that launch those menus.  
 - This feature won't work without access to network, as the authentication is done via a third-party provider over the network. Always make sure that there's a valid network connection, before trying to launch the web sign-in flow.
 
 ## Troubleshooting
-- The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
-- The *Other User* button can be pressed, and standard username/password credentials can be used to log into the device.
+
+- The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen
+- Select the *Other User* button, and the standard username/password credentials are available to log into the device
 
 [MEM-1]: /mem/intune/configuration/custom-settings-configure
 
