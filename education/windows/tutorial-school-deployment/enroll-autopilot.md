@@ -92,7 +92,7 @@ While Intune for Education offers simple options for Autopilot configurations, m
 
 An Enrollment Status Page (ESP) is a greeting page displayed to users while enrolling or signing in for the first time to Windows devices. The ESP displays provisioning progress, showing applications and profiles installation status.
 
-:::image type="content" source="./images/win11-oobe-esp.gif" alt-text="Windows OOBE - enrollment status page animation" border="false":::
+:::image type="content" source="./images/win11-oobe-esp.gif" alt-text="Windows OOBE - enrollment status page animation." border="false":::
 
 > [!NOTE]
 > Some Windows Autopilot deployment profiles **require** the ESP to be configured.
