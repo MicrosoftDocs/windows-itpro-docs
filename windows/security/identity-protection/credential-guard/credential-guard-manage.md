@@ -29,7 +29,7 @@ Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defend
 
 ### Requirements for automatic enablement
 
-Windows Defender Credential Guard will be enabled by default when a PC includes the following minimum requirements:
+Windows Defender Credential Guard will be enabled by default when a PC meets the following minimum requirements:
 
 |Component|Requirement|
 |---|---|
