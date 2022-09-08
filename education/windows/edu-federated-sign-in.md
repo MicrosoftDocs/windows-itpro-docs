@@ -57,49 +57,47 @@ To configure federated sign-in using Microsoft Intune, use a [custom profile][ME
 1. Select **Next**
 1. In **Configuration settings**, select **Add** and enter the following properties:
 
-    |Name|EnableWebSignInForPrimaryUser|
-    | --- | --- |
-    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` |
-    | **Data type** | Integer |
-    | **Value**| 1 |
+    | Name          | EnableWebSignInForPrimaryUser                                                       |
+    |---------------|-------------------------------------------------------------------------------------|
+    | **OMA-URI**   | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` |
+    | **Data type** | Integer                                                                             |
+    | **Value**     | 1                                                                                   |
 
 1. Select **Save**
 1. Select **Add** and enter the following properties:
 
-    |Name|ConfigureWebSignInAllowedUrls|
-    | --- | --- |
-    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` |
-    | **Data type** | String |
-    | **Value**| Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
-
+    | Name          | ConfigureWebSignInAllowedUrls                                                                                  |
+    |---------------|----------------------------------------------------------------------------------------------------------------|
+    | **OMA-URI**   | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`                                     |
+    | **Data type** | String                                                                                                         |
+    | **Value**     | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
+    
 1. Select **Save**
 1. Select **Add** and enter the following properties:
 
-    |Name|IsEducationEnvironment|
-    | --- | --- |
-    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` |
-    | **Data type** | Integer |
-    | **Value**| 1 |
+    | Name          | IsEducationEnvironment                                         |
+    |---------------|----------------------------------------------------------------|
+    | **OMA-URI**   | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` |
+    | **Data type** | Integer                                                        |
+    | **Value**     | 1                                                              |
 
 1. Select **Save**
 1. Select **Add** and enter the following properties:
     
-    |||
-    | --- | --- |
-    | **Name** |ConfigureWebCamAccessDomainNames|
-    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` |
-    | **Data type** | String |
-    | **Value**| This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
+    | Name          | ConfigureWebCamAccessDomainNames                                                                                                                                                                                                                               |
+    |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | **OMA-URI**   | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`                                                                                                                                                                                  |
+    | **Data type** | String                                                                                                                                                                                                                                                         |
+    | **Value**     | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
 
 1. Select **Save**
 1. Select **Add** and enter the following properties:
-    
-    |||
-    | --- | --- |
-    | **Name** |EnableSharedPCMode|
-    | **OMA-URI** | `./Vendor/MSFT/SharedPC/EnableSharedPCMode` |
-    | **Data type** | Boolean |
-    | **Value** | False |
+        
+    | Name          | EnableSharedPCMode                          |
+    |---------------|---------------------------------------------|
+    | **OMA-URI**   | `./Vendor/MSFT/SharedPC/EnableSharedPCMode` |
+    | **Data type** | Boolean                                     |
+    | **Value**     | False                                       |
     
     :::image type="content" source="images/edu-federated-authentication-settings.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
 
