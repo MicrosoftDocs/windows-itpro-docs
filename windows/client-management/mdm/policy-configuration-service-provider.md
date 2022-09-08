@@ -6551,6 +6551,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-experience.md#experience-allowsyncmysettings" id="experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
   </dd>
   <dd>
+    <a href="./policy-csp-experience.md#experience-allowspotlightcollectionondesktop" id="experience-allowspotlightcollectionondesktop">Experience/AllowSpotlightCollectionOnDesktop</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-experience.md#experience-allowtailoredexperienceswithdiagnosticdata" id="experience-allowtailoredexperienceswithdiagnosticdata">Experience/AllowTailoredExperiencesWithDiagnosticData</a>
   </dd>
   <dd>
