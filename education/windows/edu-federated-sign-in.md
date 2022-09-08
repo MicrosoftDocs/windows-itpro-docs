@@ -55,25 +55,54 @@ To configure federated sign-in using Microsoft Intune, use a [custom profile][ME
     - **Name**: enter a descriptive name for the profile
     - **Description**: enter a description for the profile. This setting is optional, but recommended
 1. Select **Next**
-1. In **Configuration settings**, select **Add** and enter the following properties, repeating the process for each row and selecting **Save**:
+1. In **Configuration settings**, select **Add** and enter the following properties:
 
-    [!div class="mx-tdBreakAll"]
-    | Name | OMA-URI | Data type | Value |
-    |--|--|--|--|
-    | `EnableWebSignInForPrimaryUser` | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` | Integer | 1 |
-    | `ConfigureWebSignInAllowedUrls` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` | String | Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
-    | `IsEducationEnvironment` | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` | Integer | 1 |
-    | `ConfigureWebCamAccessDomainNames` | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` | String | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
-    | `EnableSharedPCMode` | `./Vendor/MSFT/SharedPC/EnableSharedPCMode` | Boolean | False |
+    |Name|EnableWebSignInForPrimaryUser|
+    | --- | --- |
+    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser` |
+    | **Data type** | Integer |
+    | **Value**| 1 |
 
-    [!div class="mx-tdBreakAll"]
-    |Name|Syntax|Mandatory for silent installation?|Description|
-    |-------------|----------|---------|---------|
-    |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
-    |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
-    |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
+1. Select **Save**
+1. Select **Add** and enter the following properties:
 
+    |Name|ConfigureWebSignInAllowedUrls|
+    | --- | --- |
+    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` |
+    | **Data type** | String |
+    | **Value**| Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com` |
+
+1. Select **Save**
+1. Select **Add** and enter the following properties:
+
+    |Name|IsEducationEnvironment|
+    | --- | --- |
+    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment` |
+    | **Data type** | Integer |
+    | **Value**| 1 |
+
+1. Select **Save**
+1. Select **Add** and enter the following properties:
+    
+    |||
+    | --- | --- |
+    | **Name** |ConfigureWebCamAccessDomainNames|
+    | **OMA-URI** | `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames` |
+    | **Data type** | String |
+    | **Value**| This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com` |
+
+1. Select **Save**
+1. Select **Add** and enter the following properties:
+    
+    |||
+    | --- | --- |
+    | **Name** |EnableSharedPCMode|
+    | **OMA-URI** | `./Vendor/MSFT/SharedPC/EnableSharedPCMode` |
+    | **Data type** | Boolean |
+    | **Value** | False |
+    
     :::image type="content" source="images/edu-federated-authentication-settings.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
+
 1. Select **Review + Save**
 1. Select **Next**
 1. In **Scope tags**, assign any applicable tags (optional)
@@ -82,7 +111,6 @@ To configure federated sign-in using Microsoft Intune, use a [custom profile][ME
 1. Select **Next**
 1. In **Applicability Rules**, select **Next**
 1. In **Review + create**, review your settings and select **Create**
-
 ## How to use federated sign-in
 
 Once the devices are configured, a new sign-in experience becomes available.
@@ -99,6 +127,7 @@ Once the devices are configured, a new sign-in experience becomes available.
 
 - The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen
 - Select the *Other User* button, and the standard username/password credentials are available to log into the device
+
 
 [MEM-1]: /mem/intune/configuration/custom-settings-configure
 
