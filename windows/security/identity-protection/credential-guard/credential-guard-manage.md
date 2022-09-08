@@ -25,7 +25,7 @@ appliesto:
 
 ## Default Enablement
 
-Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators and end users still have ultimate control of whether the feature is enabled. Regardless of the default state, Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
 
 ### Requirements for automatic enablement
 
