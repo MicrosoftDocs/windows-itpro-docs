@@ -39,6 +39,8 @@
                   href: mcc-isp-client-routing.md
                 - name: Cache Node Configuration
                   href: mcc-isp-cache-node-configuration.md
+                - name: Traffic Estimation
+                  href: mcc-traffic-estimation.md
             - name: How-to guides
               items:  
                 - name: Operator sign up and service onboarding
@@ -59,15 +61,13 @@
                   href: mcc-isp-uninstall.md
             - name: Resources
               items:
-                - name: MCC for ISP Community Forum
+                - name: Community Forum
                   href: link-to-come
                 - name: FAQs
                   href: mcc-isp-faq.md
-                - name: Common Issues
-                  href: mcc-isp-common-issues.md
                 - name: Enhancing VM performance
                   href: mcc-isp-vm-performance.md
-                - name: Support
+                - name: Support and troubleshooting
                   href: mcc-isp-support.md
 
 
