@@ -16,11 +16,13 @@ ms.reviewer:
 manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # For teachers - get Minecraft: Education Edition
 
-The following article describes how teachers can get and distribute Minecraft: Education Edition at their school. Minecraft: Education Edition is available for anyone to trial, and subscriptions can be purchased by qualified educational institutions directly in the [Microsoft Admin Center by IT Admins](https://docs.microsoft.com/education/windows/school-get-minecraft), via volume licensing agreements and through partner resellers. 
+The following article describes how teachers can get and distribute Minecraft: Education Edition at their school. Minecraft: Education Edition is available for anyone to trial, and subscriptions can be purchased by qualified educational institutions directly in the [Microsoft Admin Center by IT Admins](/education/windows/school-get-minecraft), via volume licensing agreements and through partner resellers. 
 
 
 ## Try Minecraft: Education Edition for Free 
