@@ -63,7 +63,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 

@@ -1,15 +1,15 @@
 ---
 title: BitLocker CSP
 description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/04/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -754,7 +754,7 @@ ADMX Info:
 
 This setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of required startup key information. This setting is applied when you turn on BitLocker.
 
-The "OSAllowDRA_Name" (Allow certificate-based data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, see the BitLocker Drive Encryption Deployment Guide on Microsoft Docs.
+The "OSAllowDRA_Name" (Allow certificate-based data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, see [BitLocker recovery guide](/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan).
 
 In "OSRecoveryPasswordUsageDropDown_Name" and "OSRecoveryKeyUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
@@ -843,7 +843,7 @@ ADMX Info:
 
 This setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This setting is applied when you turn on BitLocker.
 
-The "FDVAllowDRA_Name" (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, see the BitLocker Drive Encryption Deployment Guide on Microsoft Docs.
+The "FDVAllowDRA_Name" (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, see [BitLocker recovery guide](/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan).
 
 In "FDVRecoveryPasswordUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
@@ -1347,6 +1347,13 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 Value type is string.
 
 Supported operation is Execute. Request ID is expected as a parameter.
+
+> [!NOTE]
+> Key rotation is supported only on these enrollment types. For more information, see [deviceEnrollmentType enum](/graph/api/resources/intune-devices-deviceenrollmenttype).
+>   - windowsAzureADJoin.
+>   - windowsBulkAzureDomainJoin. 
+>   - windowsAzureADJoinUsingDeviceAuth.
+>   - windowsCoManagement.
 
 > [!TIP]
 > Key rotation feature will only work when:

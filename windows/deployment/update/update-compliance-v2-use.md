@@ -1,8 +1,8 @@
 ---
-title: Use the Update Compliance (preview) solution
+title: Use the Update Compliance (preview) data
 ms.reviewer: 
 manager: dougeby
-description: How to use the Update Compliance (preview) solution.
+description: How to use the Update Compliance (preview) data.
 ms.prod: w10
 author: mestew
 ms.author: mstewart

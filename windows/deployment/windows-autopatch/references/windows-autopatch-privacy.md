@@ -20,7 +20,7 @@ Windows Autopatch is a cloud service for enterprise customers designed to keep e
 
 Windows Autopatch provides its service to enterprise customers, and properly administers customers' enrolled devices by using data from various sources.
 
-The sources include Azure Active Directory (AD), Microsoft Intune, and Microsoft Windows 10/11. The sources provide a comprehensive view of the devices that Windows Autopatch manages. The service also uses these Microsoft services to enable Windows Autopatch to provide IT as a Service (ITaaS) capabilities:
+The sources include Azure Active Directory (Azure AD), Microsoft Intune, and Microsoft Windows 10/11. The sources provide a comprehensive view of the devices that Windows Autopatch manages. The service also uses these Microsoft services to enable Windows Autopatch to provide IT as a Service (ITaaS) capabilities:
 
 | Data source | Purpose |
 | ------ | ------ |
@@ -58,13 +58,23 @@ Windows Autopatch only processes and stores system-level data from Windows 10 op
 
 For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process personal data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
 
+## Tenant access
+
+Windows Autopatch creates and uses guest accounts leveraging just-in-time access functionality when signing into a customer tenant to manage the Windows Autopatch service. To provide additional locked down control, Windows Autopatch maintains a separate conditional access policy to restrict access to these accounts.
+
+| Account name | Usage | Mitigating controls |
+| ----- | ----- | -----|
+| MsAdmin@tenantDomain.onmicrosoft.com | <ul><li>This is a limited-service account with administrator privileges. This account is used as an Intune and User administrator to define and configure the tenant for Windows Autopatch devices.</li><li>This account doesn't have interactive login permissions. The account performs operations only through the service.</li></ul> | Audited sign-ins |
+| MsAdminInt@tenantDomain.onmicrosoft.com |<ul><li>This account is an Intune and User administrator account used to define and configure the tenant for Windows Autopatch devices.</li><li>This account is used for interactive login to the customer’s tenant.</li><li>The use of this account is extremely limited as most operations are exclusively through MsAdmin (non-interactive) account.</li></ul> | <ul><li>Restricted to be accessed only from defined secure access workstations (SAWs) through a conditional access policy</li><li>Audited sign-ins</li</ul> |
+| MsTest@tenantDomain.onmicrosoft.com | This is a standard account used as a validation account for initial configuration and roll out of policy, application, and device compliance settings. | Audited sign-ins |
+
 ## Microsoft Windows Update for Business
 
 Microsoft Windows Update for Business uses data from Windows diagnostics to analyze update status and failures. Windows Autopatch uses this data and uses it to mitigate, and resolve problems to ensure that all registered devices are up to date based on a predefined update cadence.
 
-## Microsft Azure Active Directory
+## Microsoft Azure Active Directory
 
-Identifying data used by Windows Autopatch is stored by Azure Active Directory (Azure AD) in a geographical location. The geographical location is based on the location provided by the organization upon subscribing to Microsoft online services, such as Microsoft Apps for Enterprise and Azure. For more information on where your Azure AD data is located, see [Azure Active Directory - Where is your data located?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+Identifying data used by Windows Autopatch is stored by Azure Active Directory (AD) in a geographical location. The geographical location is based on the location provided by the organization upon subscribing to Microsoft online services, such as Microsoft Apps for Enterprise and Azure. For more information on where your Azure AD data is located, see [Azure Active Directory - Where is your data located?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ## Microsoft Intune
 

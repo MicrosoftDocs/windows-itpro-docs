@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Help
 description: Learn about the Policy CSP - ADMX_Help.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/03/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Help

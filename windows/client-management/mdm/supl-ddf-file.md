@@ -2,12 +2,12 @@
 title: SUPL DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the SUPL configuration service provider.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/03/2020
 ---
 

@@ -2,22 +2,18 @@
 title: VPN authentication options (Windows 10 and Windows 11)
 description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
+author: paolomatarazzo
 ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: paoloma
+ms.reviewer: pesmith
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # VPN authentication options
-
-**Applies to**
--   Windows 10
--   Windows 11
 
 In addition to older and less-secure password-based authentication methods (which should be avoided), the built-in VPN solution uses Extensible Authentication Protocol (EAP) to provide secure authentication using both user name and password, and certificate-based methods. You can only configure EAP-based authentication if you select a built-in VPN type (IKEv2, L2TP, PPTP or Automatic).
 

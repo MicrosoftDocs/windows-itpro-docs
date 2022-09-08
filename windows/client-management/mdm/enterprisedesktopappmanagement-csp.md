@@ -3,12 +3,12 @@ title: EnterpriseDesktopAppManagement CSP
 description: Learn how the EnterpriseDesktopAppManagement CSP handles enterprise desktop application management tasks, such as installing or removing applications.
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/11/2017
 ---
 

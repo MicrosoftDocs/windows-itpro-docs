@@ -1,10 +1,10 @@
 ---
 title: Change history for MDM documentation
 description: This article lists new and updated articles for Mobile Device Management.
-author: aczechowski
-ms.author: aaroncz
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -60,7 +60,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |New or updated article | Description|
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added the bitmask table for the Status/DeviceEncryptionStatus node.|
-|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with more details. Added policy timeline table. 
+|[Policy CSP - RestrictedGroups](policy-csp-restrictedgroups.md)| Updated the topic with more details. Added policy timeline table.
 
 ## February 2020
 
@@ -162,7 +162,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |--- | ---|
 |[Policy CSP - Storage](policy-csp-storage.md)|Added the following new policies: AllowStorageSenseGlobal, ConfigStorageSenseGlobalCadence, AllowStorageSenseTemporaryFilesCleanup, ConfigStorageSenseRecycleBinCleanupThreshold, ConfigStorageSenseDownloadsCleanupThreshold, and ConfigStorageSenseCloudContentCleanupThreshold.|
 |[SharedPC CSP](sharedpc-csp.md)|Updated values and supported operations.|
-|[Mobile device management](index.md)|Updated information about MDM Security Baseline.|
+|[Mobile device management](index.yml)|Updated information about MDM Security Baseline.|
 
 ## December 2018
 

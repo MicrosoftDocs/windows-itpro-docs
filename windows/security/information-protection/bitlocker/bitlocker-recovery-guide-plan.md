@@ -1,17 +1,12 @@
 ---
 title: BitLocker recovery guide (Windows 10)
 description: This article for IT professionals describes how to recover BitLocker keys from AD DS.
-ms.assetid: d0f722e9-1773-40bf-8456-63ee7a95ea14
 ms.reviewer:
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection:
   - M365-security-compliance
   - highpri
@@ -502,7 +497,7 @@ You can reset the recovery password in two ways:
 > [!NOTE]
 > To manage a remote computer, you can specify the remote computer name rather than the local computer name.
 
-You can use the following sample script to create a VBScript file to reset the recovery passwords:
+You can use the following sample VBScript to reset the recovery passwords:
 
 ```vb
 ' Target drive letter

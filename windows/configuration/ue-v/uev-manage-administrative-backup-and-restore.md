@@ -15,7 +15,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1607
 
-As an administrator of User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore additional settings when a user adopts a new device.
+As an administrator of User Experience Virtualization (UE-V), you can restore application and Windows settings to their original state. You can also restore more settings when a user adopts a new device.
 
 ## Restore Settings in UE-V when a User Adopts a New Device
 
@@ -30,7 +30,7 @@ Set-UevTemplateProfile -ID <TemplateID> -Profile <backup>
 
 -   &lt;backup&gt; can either be Backup or Roaming
 
-When replacing a user’s device, UE-V automatically restores settings if the user’s domain, username, and device name all match. All synchronized and any backup data is restored on the device automatically.
+When a user’s device is being replaced, UE-V automatically restores settings if the user’s domain, username, and device name all match. All synchronized and any backup data is restored on the device automatically.
 
 You can also use the Windows PowerShell cmdlet, Restore-UevBackup, to restore settings from a different device. To clone the settings packages for the new device, use the following cmdlet in Windows PowerShell:
 
@@ -40,7 +40,7 @@ Restore-UevBackup -ComputerName <Computer name>
 
 where &lt;ComputerName&gt; is the computer name of the device.
 
-Templates such as the Office 2013 template that include many applications can either all be included in the roamed (default) or backed up profile. Individual apps in a template suite follow the group. Office 2013 in-box templates include both roaming and backup-only settings. Backup-only settings cannot be included in a roaming profile.
+Templates such as the Office 2013 template that include many applications can either all be included in the roamed (default) or backed up profile. Individual apps in a template suite follow the group. Office 2013 in-box templates include both roaming and backup-only settings. Backup-only settings can't be included in a roaming profile.
 
 As part of the Backup/Restore feature, UE-V added **last known good (LKG)** to the options for rolling back to settings. In this release, you can roll back to either the original settings or LKG settings. The LKG settings let users roll back to an intermediate and stable point ahead of the pre-UE-V state of the settings.
 
@@ -74,7 +74,7 @@ Templates designated BackupOnly include settings specific to that device that sh
 
 **Settings packages location within the Settings Storage Location template**
 
-Roaming Profile settings are stored on the settings storage location. Templates assigned to the Backup or the BackupOnly profile store their settings to the Settings Storage Location in a special Device name directory. Each device with templates in these profiles has its own device name. UE-V does not clean up these directories.
+Roaming Profile settings are stored on the settings storage location. Templates assigned to the Backup or the BackupOnly profile store their settings to the Settings Storage Location in a special Device name directory. Each device with templates in these profiles has its own device name. UE-V doesn't clean up these directories.
 
 **Backup trigger**
 
@@ -123,7 +123,7 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
     |`Invoke-WmiMethod -Namespace root\Microsoft\UEV -Class UserSettings -Name RestoreByTemplateId -ArgumentList <template_ID>`|Restores the user settings for an application or restores a group of Windows settings.|
 
 >[!NOTE]
->UE-V does not provide a settings rollback for Windows apps.
+>UE-V doesn't provide a settings rollback for Windows apps.
 
 ## Related topics
 

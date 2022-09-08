@@ -1,30 +1,23 @@
 ---
 title: Windows Hello errors during PIN creation (Windows)
 description: When you set up Windows Hello in Windows 10/11, you may get an error during the Create a work PIN step.
-ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: PIN, error, create a work PIN
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: troubleshooting
 ms.localizationpriority: medium
 ms.date: 05/05/2018
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Windows Hello errors during PIN creation
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 When you set up Windows Hello in Windows client, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
@@ -76,6 +69,8 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
+| 0xC00000BB | Your PIN or this option is temporarily unavailable.| The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Use a different login method.|
+
 
 
 ## Errors with unknown mitigation
