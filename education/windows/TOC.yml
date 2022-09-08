@@ -36,8 +36,8 @@ items:
           href: edu-themes.md
         - name: Configure Stickers
           href: edu-stickers.md
-        - name: Configure federated authentication
-          href: edu-federated-authentication.md
+        - name: Configure federated sign-in
+          href: edu-federated-sign-in.md
         - name: Configure Take a Test on a single PC
           href: take-a-test-single-pc.md
         - name: Configure a Test on multiple PCs
