@@ -66,7 +66,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 > [!NOTE]
 > The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with Cloud Trust or FIDO2 security keys.
 > 
-> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object (CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>).
+> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object (CN=AzureADKerberos,OU=Domain Controllers,\<domain-DN\>).
 
 ## Deployment Instructions
 
