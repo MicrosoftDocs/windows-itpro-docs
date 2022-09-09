@@ -86,7 +86,7 @@ If you create an issue for something not related to documentation, Microsoft wil
 - [Product questions (using Microsoft Q&A)](/answers/products/)
 - [Support requests](#open-a-microsoft-support-case) for Update Compliance
 
-To share feedback on the fundamental docs.microsoft.com platform, see [Docs feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
+To share feedback about the Microsoft Docs platform, see [Microsoft Docs feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
 
 ## Troubleshooting tips
 
