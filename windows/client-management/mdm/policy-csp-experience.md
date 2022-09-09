@@ -494,17 +494,17 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowspotlightcollectionondesktop"></a>**Experience/AllowSpotlightCollectionOnDesktop**  
+<a href="" id="experience-allowspotlightcollection"></a>**Experience/AllowSpotlightCollection**  
 
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -528,7 +528,7 @@ This policy allows spotlight collection on the device.
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0. When set to 0: Spotlight collection will not show as an option in Personalization Settings and therefore be unavailable on Desktop
+- When set to 0: Spotlight collection will not show as an option in Personalization Settings and therefore be unavailable on Desktop
 - When set to 1: Spotlight collection will show as an option in Personalization Settings and therefore be available on Desktop, allowing Desktop to refresh for daily images from Microsoft
 - Default value: 1
 
