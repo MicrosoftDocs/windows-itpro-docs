@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - NewsAndInterests
 description: Learn how Policy CSP - NewsandInterests contains a list of news and interests.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - NewsAndInterests
-
-
 
 <hr/>
 
@@ -26,8 +24,6 @@ manager: dansimp
     <a href="#newsandinterests-allownewsandinterests">NewsAndInterests/AllowNewsAndInterests</a>
   </dd>
 
-
-
 <hr/>
 
 <!--Policy-->
@@ -38,10 +34,11 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+|Pro|No|Yes|
+|Windows SE|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -65,7 +62,7 @@ This policy specifies whether to allow the entire widgets experience, including 
 
 The following are the supported values:
 
-- 1 - Default - Allowed
+- 1 - Default - Allowed.
 - 0 - Not allowed.
 
 <!--/SupportedValues-->
@@ -82,5 +79,8 @@ ADMX Info:
 
 <hr/>
 
-
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

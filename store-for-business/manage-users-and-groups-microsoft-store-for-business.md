@@ -23,7 +23,7 @@ ms.date: 07/21/2021
 -   Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Microsoft Store for Business and Education manages permissions with a set of roles. Currently, you can [assign these roles to individuals in your organization](roles-and-permissions-microsoft-store-for-business.md), but not to groups.
 
@@ -41,7 +41,7 @@ For more information on Azure AD, see [About Office 365 and Azure Active Directo
 ## Add user accounts to your Azure AD directory
 If you created a new Azure AD directory when you signed up for Store for Business, you'll have a directory set up with one user account - the global administrator. That global administrator can add user accounts to your Azure AD directory. However, adding user accounts to your Azure AD directory will not give those employees access to Store for Business. You'll need to assign Store for Business roles to your employees. For more information, see [Roles and permissions in the Store for Business.](roles-and-permissions-microsoft-store-for-business.md)
 
-You can use the [Office 365 admin dashboard](https://portal.office.com/adminportal) or [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=691086) to add user accounts to your Azure AD directory. If you'll be using Azure management portal, you'll need an active subscription to [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=708617).
+You can use the [Office 365 admin dashboard](https://portal.office.com/adminportal) or [Azure management portal](https://portal.azure.com/) to add user accounts to your Azure AD directory. If you'll be using Azure management portal, you'll need an active subscription to [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=708617).
 
 For more information, see:
 - [Add user accounts using Office 365 admin dashboard](/microsoft-365/admin/add-users)

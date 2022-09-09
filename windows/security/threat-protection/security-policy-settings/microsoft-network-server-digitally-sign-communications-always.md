@@ -34,7 +34,7 @@ Implementation of digital signatures in high-security networks helps prevent the
 
 Beginning with SMBv2 clients and servers, signing can be either required or not required. If this policy setting is enabled, SMBv2 clients will digitally sign all packets. Another policy setting determines whether signing is required for SMBv3 and SMBv2 server communications: [Microsoft network client: Digitally sign communications (always)](microsoft-network-client-digitally-sign-communications-always.md).
 
-There is a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2.
+There's a negotiation done between the SMB client and the SMB server to decide whether signing will effectively be used. The following table has the effective behavior for SMBv3 and SMBv2.
 
 
 |                           |  Server – Required  | Server – Not Required  |
@@ -46,7 +46,7 @@ There is a negotiation done between the SMB client and the SMB server to decide 
 <sup>1</sup> Default for domain controller SMB traffic</br>
 <sup>2</sup> Default for all other SMB traffic
 
-Performance of SMB signing is improved in SMBv2. For more details, see [Potential impact](#potential-impact). 
+Performance of SMB signing is improved in SMBv2. For more information, see [Potential impact](#potential-impact). 
 
 ### Possible values
 
@@ -80,7 +80,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -90,7 +90,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 Session hijacking uses tools that allow attackers who have access to the same network as the client device or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned Server Message Block (SMB) packets and then modify the traffic and forward it so that the server might perform objectionable actions. Alternatively, the attacker could pose as the server or client device after legitimate authentication and gain unauthorized access to data.
 
-SMB is the resource-sharing protocol that is supported by many Windows operating systems. It is the basis of many modern features like Storage Spaces Direct, Storage Replica, and SMB Direct, as well as many legacy protocols and tools. If either side fails the authentication process, data transmission does not take place.
+SMB is the resource-sharing protocol that is supported by many Windows operating systems. It's the basis of many modern features like Storage Spaces Direct, Storage Replica, and SMB Direct, as well as many legacy protocols and tools. If either side fails the authentication process, data transmission doesn't take place.
 
 ### Countermeasure
 
@@ -101,7 +101,7 @@ Enable **Microsoft network server: Digitally sign communications (always)**.
 
 ### Potential impact
 
-Storage speeds impact performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage of signing. If you are using a 1 Gb Ethernet network or slower storage speed with a modern CPU, there is limited degradation in performance. If you are using a faster network (such as 10 Gb), the performance impact of signing may be greater.
+Storage speeds impact performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage of signing. If you're using a 1-GB Ethernet network or slower storage speed with a modern CPU, there's limited degradation in performance. If you're using a faster network (such as 10 Gb), the performance impact of signing may be greater.
 
 ## Related topics
 

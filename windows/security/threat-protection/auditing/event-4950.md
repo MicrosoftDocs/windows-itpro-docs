@@ -77,7 +77,7 @@ This event doesn't generate when Windows Firewall setting was changed via Group 
 
 **New Setting:**
 
--   **Type** \[Type = UnicodeString\]: the name of the setting which was modified. You can use “**netsh advfirewall**” command to see or set Windows Firewall settings, for example, to see settings for current\\active Windows Firewall profile you need to execute “**netsh advfirewall show currentprofile**” command:
+-   **Type** \[Type = UnicodeString\]: the name of the setting that was modified. You can use “**netsh advfirewall**” command to see or set Windows Firewall settings, for example, to see settings for current\\active Windows Firewall profile you need to execute “**netsh advfirewall show currentprofile**” command:
 
 <img src="images/netsh-advfirewall-command.png" alt="Netsh advfirewall command illustration" width="951" height="422" />
 
@@ -89,5 +89,5 @@ For 4950(S): A Windows Firewall setting has changed.
 
 -   If you have a standard or baseline for Windows Firewall settings defined, monitor this event and check whether the settings reported by the event are still the same as were defined in your standard or baseline.
 
--   This event can be helpful in case you want to monitor all changes in Windows Firewall settings which were done locally.
+-   This event can be helpful in case you want to monitor all changes in Windows Firewall settings that were done locally.
 

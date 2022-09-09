@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_SharedFolders
-description: Policy CSP - ADMX_SharedFolders
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_SharedFolders.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/21/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_SharedFolders
@@ -44,8 +44,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -64,7 +65,7 @@ manager: dansimp
 <!--Description-->
 This policy setting determines whether the user can publish DFS roots in Active Directory Domain Services (AD DS).
 
-If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
+If you enable or don't configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
 
 If you disable this policy setting, users cannot publish DFS roots in AD DS and the "Publish in Active Directory" option is disabled. 
 
@@ -94,8 +95,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -114,9 +116,9 @@ ADMX Info:
 <!--Description-->
 This policy setting determines whether the user can publish shared folders in Active Directory Domain Services (AD DS).
 
-If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
+If you enable or don't configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
 
-If you disable this policy setting, users cannot publish shared folders in AD DS, and the "Publish in Active Directory" option is disabled. 
+If you disable this policy setting, users can't publish shared folders in AD DS, and the "Publish in Active Directory" option is disabled. 
 
 > [!NOTE]
 > The default is to allow shared folders to be published when this setting is not configured.
@@ -139,3 +141,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

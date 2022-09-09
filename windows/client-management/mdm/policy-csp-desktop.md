@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Desktop
 description: Learn how to use the Policy CSP - Desktop setting to prevent users from changing the path to their profile folders.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Desktop
@@ -44,6 +44,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -62,7 +63,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from changing the path to their profile folders.
+This policy setting prevents users from changing the path to their profile folders.
 
 By default, a user can change the location of their individual profile folders like Documents, Music etc. by typing a new path in the Locations tab of the folder's Properties dialog box.
 
@@ -86,3 +87,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - DeliveryOptimization
 description: Learn how to use the Policy CSP - DeliveryOptimization setting to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 06/09/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -20,8 +20,6 @@ manager: dansimp
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-
 
 <hr/>
 
@@ -133,6 +131,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -182,6 +181,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -204,7 +204,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
-Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This policy means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -236,6 +236,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -291,6 +292,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -310,7 +312,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy allows you to configure one or more Delivery Optimization in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
+This policy allows you to configure one or more Delivery Optimizations in Network Cache servers through a custom DHCP Option. One or more values can be added as either fully qualified domain names (FQDN) or IP addresses.  To add multiple values, separate each FQDN or IP address by commas.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -354,6 +356,7 @@ When DHCP Option ID Force (2) is set, the client will query DHCP Option ID 235 a
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -374,7 +377,7 @@ When DHCP Option ID Force (2) is set, the client will query DHCP Option ID 235 a
 <!--Description-->
 This policy allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
 
-After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 hour (3600).
+After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that couldn't be downloaded from peers. A download that is waiting for peer sources will appear to be stuck for the end user. The recommended value is 1 hour (3600).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -399,6 +402,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -455,6 +459,7 @@ Supported values: 0 - one month (in seconds)
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -509,6 +514,7 @@ Supported values: 0 - one month (in seconds)
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -529,9 +535,9 @@ Supported values: 0 - one month (in seconds)
 <!--Description-->
 This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer.
 
-After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
+After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that couldn't be downloaded from Peers.
 
-Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
+A download that is waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 minute (60).
 
@@ -550,7 +556,7 @@ The following list shows the supported values as number of seconds:
 
 -   0 to 86400 (1 day)
 -   0 - managed by the cloud service
--   Default is not configured.
+-   Default isn't configured.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -566,6 +572,7 @@ The following list shows the supported values as number of seconds:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -607,8 +614,8 @@ The following list shows the supported values:
 -   1 (default) – HTTP blended with peering behind the same NAT.
 -   2 – HTTP blended with peering across a private group. Peering occurs on devices in the same Active Directory Site (if it exists) or the same domain by default. When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.
 -   3 – HTTP blended with Internet peering.
--   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
--   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607. Note that this value is deprecated and will be removed in a future release.
+-   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and doesn't attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
+-   100 - Bypass mode. Don't use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607. This value is deprecated and will be removed in a future release.
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -623,6 +630,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -645,7 +653,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
-This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
+This policy specifies an arbitrary group ID that the device belongs to. Use this ID if you need to create a single group for Local Network Peering for branches that are on different domains or aren't on the same LAN. This approach is a best effort optimization and shouldn't be relied on for an authentication of identity.
 
 > [!NOTE]
 > You must use a GUID as the group ID.
@@ -673,6 +681,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -691,7 +700,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD.
+Set this policy to restrict peer selection to a specific source. Available options are: 1 = Active Directory Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = Azure Active Directory.
 
 When set, the Group ID will be assigned automatically from the selected source.
 
@@ -701,7 +710,7 @@ The options set in this policy only apply to Group (2) download mode. If Group (
 
 For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
-Starting with Windows 10, version 1903, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
+Starting with Windows 10, version 1903, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this task, set the value of DOGroupIdSource to 5.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -716,11 +725,11 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   1 - AD site
+-   1 - Active Directory site
 -   2 - Authenticated domain SID
 -   3 - DHCP user option
 -   4 - DNS suffix
--   5 - AAD
+-   5 - Azure Active Directory
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -736,6 +745,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -781,6 +791,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -802,9 +813,9 @@ ADMX Info:
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
-Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
+Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size hasn't exceeded. The value 0 is new in Windows 10, version 1607.
 
-The default value is 259200 seconds (3 days).
+The default value is 259200 seconds (three days).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -829,6 +840,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -901,6 +913,7 @@ This policy is deprecated. Use [DOMaxForegroundDownloadBandwidth](#deliveryoptim
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -947,7 +960,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy is deprecated because it only applies to uploads to Internet peers (only allowed when DownloadMode is set to 3) which is not used in commercial deployments. There is no alternate policy to use.
+This policy is deprecated because it only applies to uploads to Internet peers (only allowed when DownloadMode is set to 3) which isn't used in commercial deployments. There's no alternate policy to use.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -965,6 +978,7 @@ This policy is deprecated because it only applies to uploads to Internet peers (
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1014,6 +1028,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1062,6 +1077,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1114,6 +1130,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1163,6 +1180,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1212,6 +1230,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1261,6 +1280,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1312,6 +1332,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1332,7 +1353,7 @@ ADMX Info:
 <!--Description-->
 Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads.
 
-Note that downloads from LAN peers will not be throttled even when this policy is set.
+Downloads from LAN peers won't be throttled even when this policy is set.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1370,6 +1391,7 @@ This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryopt
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1390,12 +1412,12 @@ This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryopt
 <!--Description-->
 Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads.
 
-Note that downloads from LAN peers will not be throttled even when this policy is set.
+Downloads from LAN peers won't be throttled even when this policy is set.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP Friendly namee: *Maximum Foreground Download Bandwidth (percentage)*
+-   GP Friendly name: *Maximum Foreground Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxForegroundBandwidth*
 -   GP element: *PercentageMaxForegroundBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1415,6 +1437,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1467,6 +1490,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1499,7 +1523,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-This policy allows an IT Admin to define the following:
+This policy allows an IT Admin to define the following details:
 
 -  Business hours range (for example 06:00 to 18:00)
 -  % of throttle for background traffic during business hours
@@ -1519,6 +1543,7 @@ This policy allows an IT Admin to define the following:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1551,7 +1576,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-This policy allows an IT Admin to define the following:
+This policy allows an IT Admin to define the following details:
 
 -  Business hours range (for example 06:00 to 18:00)
 -  % of throttle for foreground traffic during business hours
@@ -1563,4 +1588,8 @@ This policy allows an IT Admin to define the following:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
 

@@ -3,7 +3,6 @@ author: dansimp
 ms.author: dansimp
 ms.date:  04/23/2020
 ms.reviewer: 
-audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include

@@ -13,7 +13,7 @@ metadata:
   title: Internet Explorer 11 - FAQ for IT Pros (Internet Explorer 11 for IT Pros)
   ms.sitesec: library
   ms.date: 10/16/2017
-    
+  ms.topic: faq
 title: Internet Explorer 11 - FAQ for IT Pros
 summary: |
   [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
@@ -83,7 +83,7 @@ sections:
       - question: |
           What test tools exist to test for potential application compatibility issues?
         answer: |
-          The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](https://go.microsoft.com/fwlink/p/?LinkId=313189). In addition, you can use the new [F12 Developer Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)) that are included with IE11, or the [modern.ie](https://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
+          The Compat Inspector tool supports Windows Internet Explorer 9 through IE11. For more information, see [Compat Inspector User Guide](https://testdrive-archive.azurewebsites.net/html5/compatinspector/help/post.htm). In addition, you can use the new [F12 Developer Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)) that are included with IE11, or the [modern.ie](https://go.microsoft.com/fwlink/p/?linkid=308902) website for Microsoft Edge.
           
       - question: |
           Why am I having problems launching my legacy apps with Internet Explorer 11?
