@@ -14,7 +14,7 @@ Within Azure portal, there are a number of metrics that are available to monitor
     - **Average out**: The average egress (in Gbps) of outbound traffic
 
 ### Viewing your metrics
-To view the metrics associated with your cache nodes, navigate to the **Overview** tab within Azure portal.
+To view the metrics associated with your cache nodes, navigate to the **Overview** >> **Monitoring** tab within Azure portal.
 
 [[ include screenshot of an example view]]
 
