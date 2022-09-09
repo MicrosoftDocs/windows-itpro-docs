@@ -6,6 +6,7 @@ manager: dougeby
 author: aczechowski
 ms.author: aaroncz
 ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: reference
 ---
