@@ -33,7 +33,7 @@ For a device to be eligible for Microsoft 365 Apps for enterprise updates, as a 
 
 All devices registered for Windows Autopatch will receive updates from the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). This practice provides your users with new features each month, and they'll receive just one update per month on a predictable release schedule. Updates are released on the second Tuesday of the month; these updates can include feature, security, and quality updates. These updates occur automatically and are pulled directly from the Office Content Delivery Network (CDN).
 
-Unlike Windows update, the Office CDN doesn't make the update available to all devices at once. Over the course of the release, the Office CDN gradually makes the update available to the whole population of devices. Windows Autopatch doesn't control the order in which updates are offered to devices across your estate. After the update has been downloaded, there's a three-day [update deadline](/deployoffice/configure-update-settings-microsoft-365-apps) that specifies how long the user has until the user must apply the update.  
+Unlike Windows update, the Office CDN doesn't make the update available to all devices at once. Over the course of the release, the Office CDN gradually makes the update available to the whole population of devices. Windows Autopatch doesn't control the order in which updates are offered to devices across your estate. After the update has been downloaded, there's a seven day [update deadline](/deployoffice/configure-update-settings-microsoft-365-apps) that specifies how long the user has until the user must apply the update.  
 
 ## Update rings
 
