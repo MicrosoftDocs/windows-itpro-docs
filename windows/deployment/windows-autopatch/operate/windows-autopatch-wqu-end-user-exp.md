@@ -36,7 +36,7 @@ Once the deferral period has passed, the device will download the update and not
 
 In the following example, the user schedules the restart and is notified 15 minutes prior to the scheduled restart time. The user can reschedule, if necessary, but isn't able to reschedule past the deadline.
 
-:::image type="content" source="../media/windows-quality-typical-update-experience.png" alt-text="Typical windows quality update experience":::
+:::image type="content" source="../media/windows-quality-typical-update-experience.png" alt-text="Typical windows quality update experience" lightbox="../media/windows-quality-typical-update-experience.png":::
 
 ### Quality update deadline forces an update
 
@@ -48,7 +48,7 @@ In the following example, the user:
 
 The deadline specified in the update policy is five days. Therefore, once this deadline is passed, the device will ignore the [active hours](#servicing-window) and force a restart to complete the update installation. The user will receive a 15-minute warning, after which, the device will install the update and restart.
 
-:::image type="content" source="../media/windows-quality-force-update.png" alt-text="Force Windows quality update":::
+:::image type="content" source="../media/windows-quality-force-update.png" alt-text="Force Windows quality update" lightbox="../media/windows-quality-force-update.png":::
 
 ### Quality update grace period
 
@@ -56,7 +56,7 @@ In the following example, the user is on holiday and the device is offline beyon
 
 Since the deadline has already passed, the device is granted a two-day grace period to install the update and restart. The user will be notified of a pending installation and given options to choose from. Once the two-day grace period has expired, the user is forced to restart with a 15-minute warning notification.  
 
-:::image type="content" source="../media/windows-quality-update-grace-period.png" alt-text="Windows quality update grace period":::
+:::image type="content" source="../media/windows-quality-update-grace-period.png" alt-text="Windows quality update grace period" lightbox="../media/windows-quality-update-grace-period.png":::
 
 ## Servicing window
 

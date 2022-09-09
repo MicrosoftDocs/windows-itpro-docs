@@ -46,7 +46,7 @@ The final release schedule is communicated prior to release and may vary a littl
 | Fast | Release start + 60 days |
 | Broad | Release start + 90 days |
 
-:::image type="content" source="../media/windows-feature-release-process-timeline.png" alt-text="Windows feature release timeline":::
+:::image type="content" source="../media/windows-feature-release-process-timeline.png" alt-text="Windows feature release timeline" lightbox="../media/windows-feature-release-process-timeline.png":::
 
 ## New devices to Windows Autopatch
 
