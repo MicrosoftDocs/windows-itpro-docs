@@ -25,9 +25,9 @@ The Windows Autopilot poster is two pages in portrait mode (11x17). Click the im
 
 ## Deploy Windows 10 with Microsoft Endpoint Configuration Manager
 
-The Configuration Manager poster is one page in landscape mode (17x11). Click the image to view a PDF in your browser. You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
+The Configuration Manager poster is one page in landscape mode (17x11). Click the image to view a PDF in your browser. You can also download this poster in [PDF](https://download.microsoft.com/download/e/2/a/e2a70587-d3cc-4f1a-ba49-cfd724a1736b/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.
 
-[![Deploy Windows 10 with Configuration Manager.](./media/windows10-deployment-config-manager.png)](./media/Windows10DeploymentConfigManager.pdf)
+[![Deploy Windows 10 with Configuration Manager.](./media/windows10-deployment-config-manager.png)](https://download.microsoft.com/download/e/2/a/e2a70587-d3cc-4f1a-ba49-cfd724a1736b/Windows10DeploymentConfigManager.pdf)
 
 ## See also
 
