@@ -53,7 +53,7 @@ manager: dansimp
     <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
   </dd>
   <dd>
-    <a href="#experience-allowspotlightcollectionondesktop">Experience/AllowSpotlightCollectionOnDesktop</a>
+    <a href="#experience-allowspotlightcollection">Experience/AllowSpotlightCollection</a>
   </dd>
   <dd>
     <a href="#experience-allowtailoredexperienceswithdiagnosticdata">Experience/AllowTailoredExperiencesWithDiagnosticData</a>
