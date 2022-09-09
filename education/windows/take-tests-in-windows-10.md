@@ -1,5 +1,5 @@
 ---
-title: Take tests in Windows 10
+title: Take tests in Windows
 description: Learn how to set up and use the Take a Test app.
 keywords: take a test, test taking, school, how to, use Take a Test
 ms.prod: windows
@@ -14,12 +14,14 @@ ms.date: 08/10/2022
 ms.reviewer: 
 manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10 and above</b>
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
-# Take tests in Windows 10+
+# Take tests in Windows
 
-Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10+ creates the right environment for taking a test:
+Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows creates the right environment for taking a test:
 
 - Take a Test shows just the test and nothing else.
 - Take a Test clears the clipboard.
@@ -46,7 +48,7 @@ There are several ways to configure devices for assessments, depending on your u
 
   - **For a single PC**
         
-      You can use the Windows 10 **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
+      You can use the Windows **Settings** application. For more info, see [Set up Take a Test on a single PC](take-a-test-single-pc.md).
 
   - **For multiple PCs**
     
@@ -55,7 +57,7 @@ There are several ways to configure devices for assessments, depending on your u
     - A provisioning package created in Windows Configuration Designer
     - Group Policy to deploy a scheduled task that runs a Powershell script
 
-      Beginning with Windows 10 Creators Update (version 1703), you can also configure Take a Test using these options:
+      You can also configure Take a Test using these options:
     - Set up School PCs app
     - Intune for Education
 
