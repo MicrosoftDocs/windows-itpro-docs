@@ -5173,6 +5173,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+
 ### ADMX_WindowsRemoteManagement policies  
 
 <dl>
@@ -6300,6 +6301,43 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders" id="desktop-preventuserredirectionofprofilefolders">Desktop/PreventUserRedirectionOfProfileFolders</a>
+  </dd>
+</dl>
+
+### DesktopAppInstaller policies 
+<dl>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources" id="desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
+  </dd>
+<dd>
+    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller"id="desktopappinstaller-enableappinstaller">DesktopAppInstaller/EnableAppInstaller</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enabledefaultsource"id="desktopappinstaller-enabledefaultsource">DesktopAppInstaller/EnableDefaultSource</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablelocalmanifestfiles"id="desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablehashoverride"id="desktopappinstaller-enablehashoverride">DesktopAppInstaller/EnableHashOverride</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemicrosoftstoresource"id="desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemsappinstallerprotocol"id="desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablesettings"id="desktopappinstaller-enablesettings">DesktopAppInstaller/EnableSettings</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enableallowedsources"id="desktopappinstaller-enableallowedsources">DesktopAppInstaller/EnableAllowedSources</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enableexperimentalfeatures"id="desktopappinstaller-enableexperimentalfeatures">DesktopAppInstaller/EnableExperimentalFeatures</a>
+  </dd>
+  <dd>
+    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-sourceautoupdateinterval"id="desktopappinstaller-sourceautoupdateinterval">DesktopAppInstaller/SourceAutoUpdateInterval</a>
   </dd>
 </dl>
 
