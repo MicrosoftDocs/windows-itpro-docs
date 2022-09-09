@@ -34,7 +34,7 @@ The possible values for this Group Policy setting are:
 -   A user-defined number of hours from 0 through 99,999
 -   Not defined
 
-If the value for this policy setting is too high, users might be able to access network resources outside of their logon hours, or users whose accounts have been disabled might be able to continue to access network services by using valid service tickets that were issued before their account was disabled. If the value is set to 0, ticket-granting tickets never expire.
+If the value for this policy setting is too high, users might be able to access network resources outside of their sign-in hours, or users whose accounts have been disabled might be able to continue to access network services by using valid service tickets that were issued before their account was disabled. If the value is set to 0, ticket-granting tickets never expire.
 
 ### Best practices
 
@@ -61,7 +61,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 This policy setting is configured on the domain controller.
 
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-If you configure the value for the **Maximum lifetime for user ticket** setting too high, users might be able to access network resources outside of their logon hours. Also, users whose accounts were disabled might continue to have access to network services with valid user tickets that were issued before their accounts were disabled. If you configure this value too low, ticket requests to the KDC may affect the performance of your KDC and present an opportunity for a DoS attack.
+If you configure the value for the **Maximum lifetime for user ticket** setting too high, users might be able to access network resources outside of their sign-in hours. Also, users whose accounts were disabled might continue to have access to network services with valid user tickets that were issued before their accounts were disabled. If you configure this value too low, ticket requests to the KDC may affect the performance of your KDC and present an opportunity for a DoS attack.
 
 ### Countermeasure
 
@@ -92,7 +92,7 @@ Configure the **Maximum lifetime for user ticket** setting with a value between 
 
 ### Potential impact
 
-Reducing this setting from the default value reduces the likelihood that the ticket-granting ticket will be used to access resources that the user does not have rights to. However, it requires more frequent requests to the KDC for ticket-granting tickets on behalf of users. Most KDCs can support a value of four hours without too much additional burden.
+Reducing this setting from the default value reduces the likelihood that the ticket-granting ticket will be used to access resources that the user doesn't have rights to. However, it requires more frequent requests to the KDC for ticket-granting tickets on behalf of users. Most KDCs can support a value of 4 hours without any extra burden.
 
 ## Related topics
 

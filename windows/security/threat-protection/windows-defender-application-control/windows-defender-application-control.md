@@ -36,25 +36,34 @@ In most organizations, information is the most valuable asset, and ensuring that
 
 Application control can help mitigate these types of security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). Application control policies can also block unsigned scripts and MSIs, and restrict Windows PowerShell to run in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes).
 
-Application control is a crucial line of defense for protecting enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from an application trust model where all applications are assumed trustworthy to one where applications must earn trust in order to run. Many organizations, like the Australian Signals Directorate, understand this and frequently cite application control as one of the most effective means for addressing the threat of executable file-based malware (.exe, .dll, etc.).
+Application control is a crucial line of defense for protecting enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from an application trust model where all applications are assumed trustworthy to one where applications must earn trust in order to run. Many organizations, like the Australian Signals Directorate, understand the significance of application control and frequently cite application control as one of the most effective means for addressing the threat of executable file-based malware (.exe, .dll, etc.).
 
 > [!NOTE]
 > Although application control can significantly harden your computers against malicious code, we recommend that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
 
 Windows 10 and Windows 11 include two technologies that can be used for application control depending on your organization's specific scenarios and requirements:
 
-- **Windows Defender Application Control**; and
+- **Windows Defender Application Control (WDAC)**; and
 - **AppLocker**
 
-## In this section
+## WDAC and Smart App Control
 
-| Article | Description |
-| --- | --- |
-| [WDAC and AppLocker Overview](wdac-and-applocker-overview.md) | This article describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
-| [WDAC and AppLocker Feature Availability](feature-availability.md) | This article lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
+Starting in Windows 11 version 22H2, [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) provides application control for consumers. Smart App Control is based on WDAC, allowing enterprise customers to create a policy that offers the same security and compatibility with the ability to customize it to run line-of-business (LOB) apps. To make it easier to implement this policy, an [example policy](example-wdac-base-policies.md) is provided. The example policy includes **Enabled:Conditional Windows Lockdown Policy** rule which isn't supported for WDAC enterprise policies. This rule must be removed before you use the example policy. To use this example policy as a starting point for creating your own policy, see [Create a custom base policy using an example WDAC base policy](create-wdac-policy-for-lightly-managed-devices.md#create-a-custom-base-policy-using-an-example-wdac-base-policy).
+
+Smart App Control is only available on clean installation of Windows 11 version 22H2 or later, and starts in evaluation mode. Smart App Control will automatically turn off for enterprise managed devices unless the user has turned it on first. To turn Smart App Control on or off across your organization's endpoints, you can set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy` to one of the values listed below. After you change the registry value, you must either restart the device or run [RefreshPolicy.exe](https://www.microsoft.com/download/details.aspx?id=102925) for the change to take effect.
+
+| Value | Description |
+|-------|-------------|
+| 0     | Off         |
+| 1     | Enforce     |
+| 2     | Evaluation  |
+
+> [!IMPORTANT]
+> Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
 ## Related articles
 
 - [WDAC design guide](windows-defender-application-control-design-guide.md)
 - [WDAC deployment guide](windows-defender-application-control-deployment-guide.md)
+- [WDAC operational guide](windows-defender-application-control-operational-guide.md)
 - [AppLocker overview](applocker/applocker-overview.md)

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Sharing
-description: Policy CSP - ADMX_Sharing
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_Sharing.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/21/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Sharing
@@ -41,8 +41,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -59,9 +60,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether users can share files within their profile. By default users are allowed to share files within their profile to other users on their network after an administrator opts in the computer.  An administrator can opt in the computer by using the sharing wizard to share a file within their profile.
+This policy setting specifies whether users can share files within their profile. By default, users are allowed to share files within their profile to other users on their network after an administrator opts in the computer.  An administrator can opt in the computer by using the sharing wizard to share a file within their profile.
 
-If you enable this policy setting, users cannot share files within their profile using the sharing wizard.  Also, the sharing wizard cannot create a share at %root%\users and can only be used to create SMB shares on folders.
+If you enable this policy setting, users can't share files within their profile using the sharing wizard.  Also, the sharing wizard can't create a share at %root%\users and can only be used to create SMB shares on folders.
 
 If you disable or don't configure this policy setting, users can share files out of their user profile after an administrator has opted in the computer.
 
@@ -82,3 +83,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

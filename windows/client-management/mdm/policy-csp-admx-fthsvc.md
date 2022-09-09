@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_FTHSVC
-description: Policy CSP - ADMX_FTHSVC
-ms.author: dansimp
+description: Learn about the Policy CSP - ADMX_FTHSVC.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 09/15/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_FTHSVC
@@ -42,8 +42,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -62,12 +63,14 @@ manager: dansimp
 <!--Description-->
 This policy setting permits or prohibits the Diagnostic Policy Service (DPS) from automatically resolving any heap corruption problems.  
 
-- If you enable this policy setting, the DPS detects, troubleshoots, and attempts to resolve automatically any heap corruption problems.  
+If you enable this policy setting, the DPS detects, troubleshoots, and attempts to resolve automatically any heap corruption problems.  
 
-- If you disable this policy setting, Windows cannot detect, troubleshoot, and attempt to resolve automatically any heap corruption problems that are handled by the DPS.  
-If you do not configure this policy setting, the DPS enables Fault Tolerant Heap for resolution by default.  
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.  
-This policy setting takes effect only when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. 
+If you disable this policy setting, Windows can't detect, troubleshoot, and attempt to resolve automatically any heap corruption problems that are handled by the DPS. 
+
+If you don't configure this policy setting, the DPS enables Fault Tolerant Heap for resolution by default.  
+
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.  
+This policy setting takes effect only when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed. 
 The DPS can be configured with the Services snap-in to the Microsoft Management Console.  
 No system restart or service restart is required for this policy setting to take effect: changes take effect immediately.
 
@@ -87,3 +90,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

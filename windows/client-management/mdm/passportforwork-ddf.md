@@ -1,14 +1,13 @@
 ---
 title: PassportForWork DDF
 description: View the OMA DM device description framework (DDF) for the PassportForWork configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.assetid: A2182898-1577-4675-BAE5-2A3A9C2AAC9B
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/29/2019
 ---
 

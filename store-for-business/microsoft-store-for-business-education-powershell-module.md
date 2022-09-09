@@ -20,7 +20,7 @@ manager: dansimp
 -   Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Microsoft Store for Business and Education PowerShell module (preview) is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=853459).
 
@@ -46,7 +46,7 @@ All of the **Microsoft Store for Business and Education** PowerShell cmdlets fol
 
 ## Install Microsoft Store for Business and Education PowerShell module
 > [!NOTE]
-> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=48729). The framework is included with Windows 10 by default).
+> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=54616). The framework is included with Windows 10 by default).
 
 To install **Microsoft Store for Business and Education PowerShell** with PowerShellGet, run this command:
 
@@ -129,7 +129,7 @@ Remove-MSStoreSeatAssignment -ProductId 9NBLGGH4R2R6 -SkuId 0016 -Username 'user
 ```
 
 ## Assign or reclaim a product with a .csv file
-You can also use the PowerShell module to perform bulk operations on items in **Product and Services**. You'll need a .CSV file with at least one column for “Principal Names” (for example, user@host.com). You can create such a CSV using the AzureAD PowerShell Module.
+You can also use the PowerShell module to perform bulk operations on items in **Product and Services**. You'll need a .CSV file with at least one column for "Principal Names" (for example, user@host.com). You can create such a CSV using the AzureAD PowerShell Module.
 
 **To assign or reclaim seats in bulk:**
 

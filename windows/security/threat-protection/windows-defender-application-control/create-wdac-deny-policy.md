@@ -14,7 +14,6 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 11/29/2021
 ms.technology: windows-sec
 ---
 
@@ -26,14 +25,14 @@ In this article we explain:
 
 1. File Rule Precedence Order
 2. Adding Allow Rules
-3. Singe Policy Considerations
+3. Single Policy Considerations
 4. Multiple Policy Considerations
 5. Best Practices
 6. Tutorial
 
 ## File Rule Precedence Order
 
-To create effective WDAC deny policies, it's crucial to understand how WDAC parses the policy. The WDAC engine evaluates files against the policy in the following order.
+To create effective Windows Defender Application Control deny policies, it's crucial to understand how WDAC parses the policy. The WDAC engine evaluates files against the policy in the following order.
 
 1. Explicit deny rules - if any explicit deny rule exists for a file, it will not run even if other rules are created to try to allow it. Deny rules can use any [rule level](select-types-of-rules-to-create.md#windows-defender-application-control-file-rule-levels). Use the most specific rule level practical when creating deny rules to avoid blocking more than you intend.
 
@@ -44,6 +43,9 @@ To create effective WDAC deny policies, it's crucial to understand how WDAC pars
 4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG.
 
 5. If no rule exists for the file and it's not allowed based on ISG or MI, then the file is blocked implicitly.
+
+> [!NOTE]
+> If your Windows Defender Application Control policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud. For more details, see [How does the integration between WDAC and the Intelligent Security Graph work?](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#how-does-wdac-work-with-the-isg).
 
 ## Interaction with Existing Policies
 
@@ -153,10 +155,10 @@ Merge-CIPolicy -PolicyPaths $DenyPolicy, $AllowAllPolicy -OutputFilePath $DenyPo
 
 Policies should be thoroughly evaluated and first rolled out in audit mode before strict enforcement. Policies can be deployed via multiple options:
 
-1. Mobile Device Management (MDM): [Deploy WDAC policies using Mobile Device Management (MDM) (Windows)](deploy-windows-defender-application-control-policies-using-intune.md)
+1. Mobile Device Management (MDM): [Deploy WDAC policies using Mobile Device Management (MDM)](deployment/deploy-windows-defender-application-control-policies-using-intune.md)
 
-2. Microsoft Endpoint Configuration Manager (MEMCM): [Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Endpoint Configuration Manager (MEMCM) (Windows)](deployment/deploy-wdac-policies-with-memcm.md)
+2. Configuration Manager: [Deploy Windows Defender Application Control (WDAC) policies by using Configuration Manager (Windows)](deployment/deploy-wdac-policies-with-memcm.md)
 
 3. Scripting [Deploy Windows Defender Application Control (WDAC) policies using script (Windows)](deployment/deploy-wdac-policies-with-script.md)
 
-4. Group Policy: [Deploy WDAC policies via Group Policy (Windows)](deploy-windows-defender-application-control-policies-using-group-policy.md)
+4. Group Policy: [Deploy WDAC policies via Group Policy (Windows)](deployment/deploy-windows-defender-application-control-policies-using-group-policy.md)

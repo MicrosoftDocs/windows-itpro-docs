@@ -2,23 +2,22 @@
 title: Take tests in Windows 10
 description: Learn how to set up and use the Take a Test app.
 keywords: take a test, test taking, school, how to, use Take a Test
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 10/16/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Take tests in Windows 10
-**Applies to:**
-
--   Windows 10   
-
 
 Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. The **Take a Test** app in Windows 10 creates the right environment for taking a test:
 
@@ -74,5 +73,5 @@ To exit the Take a Test app at any time, press Ctrl+Alt+Delete.
 
 
 ## Get more info
-- Teachers can use Microsoft Forms to create tests. See [Create tests using Microsoft Forms](https://support.microsoft.com/help/4000711/windows-10-create-tests-using-microsoft-forms) to find out how.
+- Teachers can use Microsoft Forms to create tests. See [Create tests using Microsoft Forms](https://support.microsoft.com/office/create-a-quiz-with-microsoft-forms-a082a018-24a1-48c1-b176-4b3616cdc83d) to find out how.
 - To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).

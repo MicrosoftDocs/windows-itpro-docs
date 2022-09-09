@@ -1,17 +1,12 @@
 ---
 title: How Windows uses the TPM
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it to enhance security.
-ms.assetid: 0f7e779c-bd25-42a8-b8c1-69dfb54d0c7f
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection:
   - M365-security-compliance
   - highpri
@@ -165,4 +160,4 @@ The TPM adds hardware-based security benefits to Windows. When installed on hard
 
 <br />
 
-Although some of the aforementioned features have additional hardware requirements (e.g., virtualization support), the TPM is a cornerstone of Windows security. Microsoft and other industry stakeholders continue to improve the global standards associated with TPM and find more and more applications that use it to provide tangible benefits to customers. Microsoft has included support for most TPM features in its version of Windows for the Internet of Things (IoT) called [Windows IoT Core](https://developer.microsoft.com/windows/iot/iotcore).  IoT devices that might be deployed in insecure physical locations and connected to cloud services like [Azure IoT Hub](https://azure.microsoft.com/documentation/services/iot-hub/) for management can use the TPM in innovative ways to address their emerging security requirements.
+Although some of the aforementioned features have additional hardware requirements (e.g., virtualization support), the TPM is a cornerstone of Windows security. Microsoft and other industry stakeholders continue to improve the global standards associated with TPM and find more and more applications that use it to provide tangible benefits to customers. Microsoft has included support for most TPM features in its version of Windows for the Internet of Things (IoT) called [Windows IoT Core](/windows/iot-core/windows-iot-core).  IoT devices that might be deployed in insecure physical locations and connected to cloud services like [Azure IoT Hub](https://azure.microsoft.com/documentation/services/iot-hub/) for management can use the TPM in innovative ways to address their emerging security requirements.

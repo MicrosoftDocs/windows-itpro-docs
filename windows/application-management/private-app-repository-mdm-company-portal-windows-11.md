@@ -1,15 +1,11 @@
 ---
 title: Use the Company Portal app for your private app repo on Windows 11 devices | Microsoft Docs
 description: Use the Company Portal app in Windows 11 devices to access the private app repository for your organization or company apps. Add apps to an MDM/MAM provider, and deploy the apps to Windows devices using policies. The Company Portal app replaces Microsoft Store for Business private store on Windows 11 devices.
-ms.assetid: 
-manager: dougeby
-ms.author: mandia
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
 ms.reviewer: amanh
 ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-author: MandiOhlinger
 ms.date: 09/15/2021
 ms.localizationpriority: medium
 ---
@@ -30,7 +26,7 @@ This article discusses the Company Portal app installation options, adding organ
 
 ## Before you begin
 
-The Company Portal app is included with Microsoft Endpoint Manager (MEM). Endpoint Manager is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It help manages your devices, and manage apps on your devices.
+The Company Portal app is included with Microsoft Endpoint Manager. Endpoint Manager is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It help manages your devices, and manage apps on your devices.
 
 If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
