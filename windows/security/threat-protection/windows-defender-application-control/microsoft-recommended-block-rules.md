@@ -75,9 +75,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - wslconfig.exe
 - wslhost.exe
 
-<sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+<sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that isn't being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -107,9 +107,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 Certain software applications may allow other code to run by design. Such applications should be blocked by your Windows Defender Application Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
-Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules can't be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
-For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
+For October 2017, we're announcing an update to system.management.automation.dll in which we're revoking older versions by hash values, instead of version rules.
 
 Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. Beginning with the March 2019 quality update, each version of Windows requires blocking a specific version of the following files:
 
@@ -162,7 +162,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535" />
-	<Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
@@ -877,7 +877,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_FSI" />
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU" />
           <FileRuleRef RuleID="ID_DENY_INFINSTALL" />
-		  <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
+          <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
           <FileRuleRef RuleID="ID_DENY_KD" />
           <FileRuleRef RuleID="ID_DENY_KILL" />
           <FileRuleRef RuleID="ID_DENY_LXSS" />
@@ -905,10 +905,10 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
           <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
-		  <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
-		  <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
-		  <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
-		  -->
+          <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
+          <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+          <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+          -->
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />

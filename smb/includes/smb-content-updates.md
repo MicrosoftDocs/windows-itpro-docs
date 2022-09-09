@@ -2,9 +2,10 @@
 
 
 
-## Week of December 13, 2021
+## Week of July 18, 2022
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 12/14/2021 | [Deploy and manage a full cloud IT solution for your business](/windows/smb/cloud-mode-business-setup) | modified |
+| 7/22/2022 | Deploy and manage a full cloud IT solution for your business | removed |
+| 7/22/2022 | Windows 10/11 for small to midsize businesses | removed |

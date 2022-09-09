@@ -10,7 +10,7 @@ ms.collection:
   - M365-analytics
   - highpri
 ms.topic: article
-ms.date: 05/07/2022
+ms.date: 06/20/2022
 ---
 
 # Microsoft admin center software updates (preview) page
@@ -30,12 +30,10 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 
 :::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
 
-## Prerequisites
+## Permissions
+<!--Using include Microsoft 365 admin center permissions-->
+[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-admin-center-permissions.md)]
 
-- [Update Compliance](update-compliance-v2-overview.md) needs to be enabled with clients sending data to the solution
-- An appropriate role assigned for the [Microsoft 365 admin center](https://admin.microsoft.com)
-   - To configure settings for the **Software Updates** page: [Global Admin role](/microsoft-365/admin/add-users/about-admin-roles)
-   - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
 
 ## Limitations
 
@@ -43,18 +41,9 @@ Update Compliance is a Windows service hosted in Azure that uses Windows diagnos
 
 ## Get started
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
-1. Expand **Health**, then select **Software Updates**. You may need to use the **Show all** option to display **Health** in the navigation menu.
-1. In the **Software Updates** page, select the **Windows** tab.
-1. When you select the **Windows** tab for the first time, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Verify or supply the following information about the settings for Update Compliance:
 
-    - The Azure subscription
-    - The Log Analytics workspace
-1. The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Update Compliance data**.
-1. After the initial setup is complete, the **Windows** tab will display your Update Compliance data in the charts.
-
-> [!Tip]
-> If you don't see an entry for **Software updates (preview)** in the menu, try going to this URL: [https://admin.microsoft.com/Adminportal/Home#/softwareupdates](https://admin.microsoft.com/Adminportal/Home#/softwareupdates).
+<!--Using include for onboarding Update Compliance through the Microsoft 365 admin center-->
+[!INCLUDE [Onboarding Update Compliance through the Microsoft 365 admin center](./includes/update-compliance-onboard-admin-center.md)]
 
 ## The Windows tab
 

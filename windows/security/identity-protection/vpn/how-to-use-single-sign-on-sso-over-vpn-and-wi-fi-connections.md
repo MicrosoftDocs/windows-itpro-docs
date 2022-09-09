@@ -2,14 +2,14 @@
 title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections (Windows 10 and Windows 11)
 description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
+author: paolomatarazzo
 ms.date: 03/22/2022
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: paoloma
+ms.reviewer: pesmith
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # How to use Single Sign-On (SSO) over VPN and Wi-Fi connections

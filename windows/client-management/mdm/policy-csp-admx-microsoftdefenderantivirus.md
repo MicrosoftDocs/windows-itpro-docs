@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_MicrosoftDefenderAntivirus
 description: Learn about Policy CSP - ADMX_MicrosoftDefenderAntivirus.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
-ms.date: 01/03/2022
+author: vinaypamnani-msft
+ms.date: 08/19/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_MicrosoftDefenderAntivirus
@@ -3757,7 +3757,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to define the number of days that must pass before spyware security intelligence is considered out of date. If security intelligence is determined to be out of date, this state may trigger several other actions, including falling back to an alternative update source or displaying a warning icon in the user interface. By default, this value is set to 14 days.
+This policy setting allows you to define the number of days that must pass before spyware security intelligence is considered out of date. If security intelligence is determined to be out of date, this state may trigger several other actions, including falling back to an alternative update source or displaying a warning icon in the user interface. By default, this value is set to 7 days.
 
 We don't recommend setting the value to less than 2 days to prevent machines from going out of date.
 

@@ -2,7 +2,7 @@
 
 Thank you for your interest in the Windows IT professional documentation! We appreciate your feedback, edits, and additions to our docs.
 This page covers the basic steps for editing our technical documentation.
-For a more up-to-date and complete contribution guide, see the main [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute/).
+For a more up-to-date and complete contribution guide, see the main [contributor guide overview](https://docs.microsoft.com/contribute/).
 
 ## Sign a CLA
 
@@ -19,16 +19,16 @@ We've tried to make editing an existing, public file as simple as possible.
 
 ### To edit a topic
 
-1. Go to the page on [docs.microsoft.com](https://docs.microsoft.com/) that you want to update.
+1. Browse to the [Microsoft Docs](https://docs.microsoft.com/) article that you want to update.
 
     > **Note**<br>
     > If you're a Microsoft employee or vendor, before you edit the article, append `review.` to the beginning of the URL. This action lets you use the private repository, **windows-docs-pr**. For more information, see the [internal contributor guide](https://review.docs.microsoft.com/help/get-started/edit-article-in-github?branch=main).
 
 1. Then select the **Pencil** icon.
 
-    ![Microsoft Docs Web, showing the Edit This Document link.](images/contribute-link.png)
+    ![Screenshot showing the Pencil icon to edit a published article.](images/contribute-link.png)
 
-    If the pencil icon isn't present, the content might not be open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to. This isn't always the case and you might be able to find the documentation by searching the [Microsoft Docs Organization on GitHub](https://github.com/MicrosoftDocs).
+    If the pencil icon isn't present, the content might not be open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to. This isn't always the case and you might be able to find the documentation by searching the [MicrosoftDocs organization on GitHub](https://github.com/MicrosoftDocs).
 
     > **TIP**<br>
     > View the page source in your browser, and look for the following metadata: `original_content_git_url`. This path always points to the source markdown file for the article.
@@ -37,7 +37,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
     ![GitHub Web, showing the Pencil icon.](images/pencil-icon.png)
 
-1. Using Markdown language, make your changes to the file. For info about how to edit content using Markdown, see the [Microsoft Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) and GitHub's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) documentation.
+1. Using Markdown language, make your changes to the file. For info about how to edit content using Markdown, see the [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) and GitHub's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) documentation.
 
 1. Make your suggested change, and then select **Preview changes** to make sure it looks correct.
 
@@ -82,4 +82,4 @@ In the new issue form, enter a brief title. In the body of the form, describe th
 
 - You can use your favorite text editor to edit Markdown files.  We recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft.
 - You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-- Microsoft Docs uses several custom Markdown extensions. To learn more, see the [Microsoft Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference).
+- Microsoft technical documentation uses several custom Markdown extensions. To learn more, see the [Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference).

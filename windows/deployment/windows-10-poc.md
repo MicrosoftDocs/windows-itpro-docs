@@ -180,11 +180,9 @@ Starting with Windows 8, the host computer's microprocessor must support second 
 
 When you have completed installation of Hyper-V on the host computer, begin configuration of Hyper-V by downloading VHD and ISO files to the Hyper-V host. These files will be used to create the VMs used in the lab.
 
-1. Create a directory on your Hyper-V host named **C:\VHD**. Download a single VHD file for **Windows Server** to the **C:\VHD** directory.
+1. Create a directory on your Hyper-V host named **C:\VHD**. Download a single VHD file for [Windows Server](https://www.microsoft.com/evalcenter/evaluate-windows-server-2022) to the **C:\VHD** directory.
 
     > [!NOTE]
-    > The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
-    >
     > The currently available downloads are Windows Server 2019 or Windows Server 2022. The rest of this article refers to "Windows Server 2012 R2" and similar variations.
 
     > [!IMPORTANT]
@@ -194,10 +192,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
 3. Copy the VHD to a second file also in the **C:\VHD** directory and name this VHD **2012R2-poc-2.vhd**.
 
-4. Download the **Windows 10 Enterprise** ISO file to the **C:\VHD** directory on your Hyper-V host.
-
-    > [!NOTE]
-    > The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+4. Download the [Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) ISO file to the **C:\VHD** directory on your Hyper-V host.
 
    You can select the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version.
 

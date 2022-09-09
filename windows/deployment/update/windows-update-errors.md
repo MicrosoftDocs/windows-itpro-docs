@@ -7,7 +7,6 @@ ms.author: aaroncz
 manager: dougeby
 ms.reviewer: kaushika
 ms.topic: troubleshooting
-ms.custom: seo-marvel-apr2020
 ms.collection: highpri
 ---
 
@@ -17,6 +16,8 @@ ms.collection: highpri
 
 -   Windows 10
 -   Windows 11
+
+<p class="alert is-flex is-primary"><span class="has-padding-left-medium has-padding-top-extra-small"><a class="button is-primary" href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=31806295" target='_blank'><b>Try our Virtual Agent</b></a></span><span class="has-padding-small"> - It can help you quickly identify and fix common Windows Update issues</span>
 
 The following table provides information about common errors you might run into with Windows Update, as well as steps to help you mitigate them.
 
@@ -42,7 +43,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| BG_E_VALIDATION_FAILED | NA | Ensure that there are no firewalls that filter downloads. Such filtering could lead to incorrect responses being received by the Windows Update client.<br><br>If the issue still persists, run the [Windows Update reset script](https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc).|
+| BG_E_VALIDATION_FAILED | NA | Ensure that there are no firewalls that filter downloads. Such filtering could lead to incorrect responses being received by the Windows Update client.|
 
 ## 0x80072EFD or 0x80072EFE or 0x80D02002
 
@@ -84,7 +85,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WU_E_CALL_CANCELLED | Operation was canceled. | The operation was canceled by the user or service. You might also receive this error when we're unable to filter the results. Run the [Decline Superseded PowerShell script](https://gallery.technet.microsoft.com/scriptcenter/Cleanup-WSUS-server-4424c9d6) to allow the filtering process to complete. |
+| WU_E_CALL_CANCELLED | Operation was canceled. | The operation was canceled by the user or service. You might also receive this error when we're unable to filter the results. |
 
 ## 0x8024000E
 
@@ -96,19 +97,19 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WU_E_SETUP_SKIP_UPDATE | An update to the Windows Update Agent was skipped due to a directive in the Wuident.cab file. | You might encounter this error when WSUS is not sending the self-update to the clients.<br><br>Review [KB920659](/troubleshoot/windows-server/deployment/wsus-selfupdate-not-send-automatic-updates) for instructions to resolve the issue. |
+| WU_E_SETUP_SKIP_UPDATE | An update to the Windows Update Agent was skipped due to a directive in the Wuident.cab file. | You might encounter this error when WSUS is not sending the self-update to the clients.<br><br>For more information to resolve the issue, review [KB920659](/troubleshoot/windows-server/deployment/wsus-selfupdate-not-send-automatic-updates). |
 
 ## 0x80244007
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WU_E_PT_SOAPCLIENT_SOAPFAULT | SOAP client failed because there was a SOAP fault for reasons of WU_E_PT_SOAP_\* error codes. | This issue occurs because Windows can't renew the cookies for Windows Update.  <br><br>Review [KB2883975](https://support.microsoft.com/help/2883975/0x80244007-error-when-windows-tries-to-scan-for-updates-on-a-wsus-serv) for instructions to resolve the issue. |
+| WU_E_PT_SOAPCLIENT_SOAPFAULT | SOAP client failed because there was a SOAP fault for reasons of `WU_E_PT_SOAP_*` error codes. | This issue occurs because Windows can't renew the cookies for Windows Update.  <br><br>For more information to resolve the issue, see [0x80244007 error when Windows tries to scan for updates on a WSUS server](https://support.microsoft.com/topic/0x80244007-error-when-windows-tries-to-scan-for-updates-on-a-wsus-server-6af342d9-9af6-f3bb-b6ad-2be56bf7826e). |
 
 ## 0x80070422
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| NA | This issue occurs when the Windows Update service stops working or isn't running. | Check if the Windows Update service is running.<br> |
+| NA | This issue occurs when the Windows Update service stops working or isn't running. | Check if the Windows Update service is running. |
 
 ## 0x800f0821
 
@@ -145,7 +146,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| E_ACCESSDENIED; General access denied error | File system or registry key permissions have been changed and the servicing stack doesn't have the required level of access. | This error generally means an access was denied.<br> Go to %Windir%\logs\CBS, open the last CBS.log and search for “, error” and match with the timestamp. After finding the error, scroll up and try to determine what caused the access denial. It could be access denied to a file, registry key. Determine what object needs the right permissions and change the permissions as needed. |
+| E_ACCESSDENIED; General access denied error | File system or registry key permissions have been changed and the servicing stack doesn't have the required level of access. | This error generally means an access was denied.<br> Go to %Windir%\logs\CBS, open the last CBS.log and search for ", error" and match with the timestamp. After finding the error, scroll up and try to determine what caused the access denial. It could be access denied to a file, registry key. Determine what object needs the right permissions and change the permissions as needed. |
 
 ## 0x80070570
 
@@ -158,14 +159,14 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| ERROR_PATH_NOT_FOUND; The system cannot find the path specified. | The servicing stack cannot access a specific path. | Indicates an invalid path to an executable. Go to %Windir%\logs\CBS, open the last CBS.log, and search for “, error” and match with the timestamp. |
+| ERROR_PATH_NOT_FOUND; The system cannot find the path specified. | The servicing stack cannot access a specific path. | Indicates an invalid path to an executable. Go to %Windir%\logs\CBS, open the last CBS.log, and search for `, error`. Then match the results with the timestamp. |
 
 
 ## 0x80070020
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| ERROR_SHARING_VIOLATION | Numerous causes. CBS log analysis required. | This error is usually caused by non-Microsoft filter drivers like antivirus. <br> 1. [Perform a clean boot and retry the installation](https://support.microsoft.com/help/929135/)  <br> 2. Download the sysinternal tool [Process Monitor](/sysinternals/downloads/procmon). <br> 3. Run Procmon.exe. It will start data capture automatically. <br> 4. Install the update package again <br> 5. With the Process Monitor main window in focus, press CTRL + E or select the magnifying glass to stop data capture. <br> 6. Select **File > Save > All Events > PML**, and choose a path to save the .PML file <br> 7. Go to %windir%\logs\cbs, open the last Cbs.log file, and search for the error. After finding the error line a bit above, you should have the file being accessed during the installation that is giving the sharing violation error <br> 8. In Process Monitor, filter for path and insert the file name (it should be something like “path” “contains” “filename from CBS”). <br> 9. Try to stop it or uninstall the process causing the error. |
+| ERROR_SHARING_VIOLATION | Numerous causes. CBS log analysis required. | This error is usually caused by non-Microsoft filter drivers like antivirus. <br> 1. [Perform a clean boot and retry the installation](https://support.microsoft.com/topic/how-to-perform-a-clean-boot-in-windows-da2f9573-6eec-00ad-2f8a-a97a1807f3dd)  <br> 2. Download the sysinternal tool [Process Monitor](/sysinternals/downloads/procmon). <br> 3. Run Procmon.exe. It will start data capture automatically. <br> 4. Install the update package again <br> 5. With the Process Monitor main window in focus, press CTRL + E or select the magnifying glass to stop data capture. <br> 6. Select **File > Save > All Events > PML**, and choose a path to save the .PML file <br> 7. Go to %windir%\logs\cbs, open the last Cbs.log file, and search for the error. After finding the error line a bit above, you should have the file being accessed during the installation that is giving the sharing violation error <br> 8. In Process Monitor, filter for path and insert the file name (it should be something like "path" "contains" "filename from CBS"). <br> 9. Try to stop it or uninstall the process causing the error. |
 
 ## 0x80073701
 
@@ -183,19 +184,19 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WININET_E_CONNECTION_ABORTED; The connection with the server was closed abnormally | BITS is unable to transfer the file successfully. | Encountered if BITS is broken or if the file being transferred can't be written to the destination folder on the client. This error is usually caused by connection errors while checking or downloading updates.<br> From a cmd prompt run: *BITSADMIN /LIST /ALLUSERS /VERBOSE* <br> Search for the 0x80072EFE error code. You should see a reference to an HTTP code with a specific file. Using a browser, try to download it manually, making sure you’re using your organization's proxy settings. If the download fails, check with your proxy manager to allow for the communication to be sucesfull. Also check with your network team for this specific URL access. |
+| WININET_E_CONNECTION_ABORTED; The connection with the server was closed abnormally | BITS is unable to transfer the file successfully. | Encountered if BITS is broken or if the file being transferred can't be written to the destination folder on the client. This error is usually caused by connection errors while checking or downloading updates.<br> From a cmd prompt run: *BITSADMIN /LIST /ALLUSERS /VERBOSE* <br> Search for the 0x80072EFE error code. You should see a reference to an HTTP code with a specific file. Using a browser, try to download it manually, making sure you're using your organization's proxy settings. If the download fails, check with your proxy manager to allow for the communication to be sucesfull. Also check with your network team for this specific URL access. |
 
 ## 0x80072F8F
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WININET_E_DECODING_FAILED; Content decoding has failed | TLS 1.2 is not configured correctly on the client. | This error generally means that the Windows Update Agent was unable to decode the received content. Install and configure TLS 1.2 by installing the update in [KB3140245](https://support.microsoft.com/help/3140245/). 
+| WININET_E_DECODING_FAILED; Content decoding has failed | TLS 1.2 is not configured correctly on the client. | This error generally means that the Windows Update Agent was unable to decode the received content. Install and configure TLS 1.2 by installing the update in [KB3140245](https://support.microsoft.com/topic/update-to-enable-tls-1-1-and-tls-1-2-as-default-secure-protocols-in-winhttp-in-windows-c4bd73d2-31d7-761e-0178-11268bb10392).
 
 ## 0x80072EE2
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WININET_E_TIMEOUT; The operation timed out | Unable to scan for updates due to a connectivity issue to Windows Update, Configuration Manager, or WSUS. | This error generally means that the Windows Update Agent was unable to connect to the update servers or your own source, such as WSUS, Configuration Manager, or Microsoft Endpoint Manager. <br> Check with your network team to ensure that the device can reach the update sources. For more info, see [Troubleshoot software update scan failures in Configuration Manager](/troubleshoot/mem/configmgr/troubleshoot-software-update-scan-failures). <br> If you’re using the public Microsoft update servers, check that your device can access the following Windows Update endpoints: <br> `http://windowsupdate.microsoft.com` <br> `https://*.windowsupdate.microsoft.com` <br> `https://update.microsoft.com` <br> `https://*.update.microsoft.com` <br> `https://windowsupdate.com` <br> `https://*.windowsupdate.com` <br> `https://download.windowsupdate.com` <br> `https://*.download.windowsupdate.com` <br> `https://download.microsoft.com` <br> `https://*.download.windowsupdate.com` <br> `https://wustat.windows.com` <br> `https://*.wustat.windows.com` <br> `https://ntservicepack.microsoft.com` |
+| WININET_E_TIMEOUT; The operation timed out | Unable to scan for updates due to a connectivity issue to Windows Update, Configuration Manager, or WSUS. | This error generally means that the Windows Update Agent was unable to connect to the update servers or your own source, such as WSUS, Configuration Manager, or Microsoft Endpoint Manager. <br> Check with your network team to ensure that the device can reach the update sources. For more info, see [Troubleshoot software update scan failures in Configuration Manager](/troubleshoot/mem/configmgr/troubleshoot-software-update-scan-failures). <br> If you're using the public Microsoft update servers, check that your device can access the following Windows Update endpoints: <br> `http://windowsupdate.microsoft.com` <br> `https://*.windowsupdate.microsoft.com` <br> `https://update.microsoft.com` <br> `https://*.update.microsoft.com` <br> `https://windowsupdate.com` <br> `https://*.windowsupdate.com` <br> `https://download.windowsupdate.com` <br> `https://*.download.windowsupdate.com` <br> `https://download.microsoft.com` <br> `https://*.download.windowsupdate.com` <br> `https://wustat.windows.com` <br> `https://*.wustat.windows.com` <br> `https://ntservicepack.microsoft.com` |
 
 ## 0x80240022
 
