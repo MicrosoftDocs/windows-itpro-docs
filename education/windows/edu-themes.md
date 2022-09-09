@@ -13,6 +13,7 @@ manager: aaroncz
 ms.collection: education
 appliesto:
 - ✅ <b>Windows 11 22H2</b>
+- ✅ <b>Windows 11 SE 22H2</b>
 ---
 
 # Configure education themes for Windows 11
