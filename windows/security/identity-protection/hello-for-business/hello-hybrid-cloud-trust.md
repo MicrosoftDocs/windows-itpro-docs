@@ -63,6 +63,11 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 - Using cloud trust for "Run as"
 - Signing in with cloud trust on a Hybrid Azure AD joined device without previously signing in with DC connectivity
 
+> [!NOTE]
+> The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with Cloud Trust or FIDO2 security keys.
+> 
+> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object (CN=AzureADKerberos,OU=Domain Controllers,\<domain-DN\>).
+
 ## Deployment Instructions
 
 Deploying Windows Hello for Business cloud trust consists of two steps:

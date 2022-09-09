@@ -50,7 +50,7 @@ To release updates to devices in a gradual manner, Windows Autopatch deploys a s
 
 Windows Autopatch configures these policies differently across update rings to gradually release the update to devices in your estate. Devices in the Test ring receive changes first and devices in the Broad ring receive changes last. For more information, see [Windows Autopatch deployment rings](../operate/windows-autopatch-update-management.md#windows-autopatch-deployment-rings).
 
-:::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline":::
+:::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline" lightbox="../media/release-process-timeline.png":::
 
 ## Expedited releases
 
