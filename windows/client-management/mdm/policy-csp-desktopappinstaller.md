@@ -191,7 +191,7 @@ ADMX Info:
 <!--Description-->
 
 This policy controls the default source included with the Windows Package Manager.
-If you do not configure this setting, the default source for the Windows Package Manager will be , and can be removed.
+If you do not configure this setting, the default source for the Windows Package Manager will be and can be removed.
 - If you enable this setting, the default source for the Windows Package Manager will be, and can't be removed.
 - If you disable this setting the default source for the Windows Package Manager won't be available.
 
