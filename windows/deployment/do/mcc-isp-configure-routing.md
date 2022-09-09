@@ -27,11 +27,9 @@ All configuration routing takes place within the Azure Portal. There are two mai
 > [!NOTE]
 > With the BGP configuration, you're essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN.
 
-a. Make sure there aren't any firewall rules blocking this connection.
-b. Verify that the BGP connection has been established and that you're advertising routes to the MCC.
-c. Wait five minutes to refresh the cache node page in the Azure portal to see the BGP routes.
+> [!NOTE]
+> Make sure there aren't any firewall rules blocking this connection.
 
-1. If there are errors:
-    - Inspect the installer logs, which are in the following path: `/etc/mccresourcecreation/`
-    - For more information, see [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
+To verify that BGP has been configured properly and that Microsoft Connected Cache services are receiving the route advertisements, wait about five minutes before refreshing cache node settings page and view the BGP routes received.
 
+If after five minutes, you don't see traffic, navigate to [Support and Troubleshooting](mcc-isp-support.md) for more information.
