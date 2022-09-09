@@ -38,7 +38,7 @@ Restricting access over named pipes such as COMNAP and LOCATOR helps prevent una
 
 ### Best practices
 
--   Set this policy to a null value; that is, enable the policy setting, but do not enter named pipes in the text box. This will disable null session access over named pipes, and applications that rely on this feature or on unauthenticated access to named pipes will no longer function.
+-   Set this policy to a null value; that is, enable the policy setting, but don't enter named pipes in the text box. This setting will disable null session access over named pipes, and applications that rely on this feature or on unauthenticated access to named pipes will no longer function.
 
 ### Location
 
@@ -63,7 +63,7 @@ This section describes different features and tools available to help you manage
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -90,11 +90,11 @@ You can restrict access over named pipes such as COMNAP and LOCATOR to help prev
  
 ### Countermeasure
 
-Configure the **Network access: Named Pipes that can be accessed anonymously** setting to a null value (enable the setting but do not specify named pipes in the text box).
+Configure the **Network access: Named Pipes that can be accessed anonymously** setting to a null value (enable the setting but don't specify named pipes in the text box).
 
 ### Potential impact
 
-This configuration disables null-session access over named pipes, and applications that rely on this feature or on unauthenticated access to named pipes no longer function. This may break trust between Windows Server 2003 domains in a mixed mode environment.
+This configuration disables null-session access over named pipes, and applications that rely on this feature or on unauthenticated access to named pipes no longer function. This result may break trust between Windows Server 2003 domains in a mixed mode environment.
 
 ## Related topics
 

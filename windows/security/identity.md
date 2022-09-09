@@ -4,9 +4,6 @@ description: Get an overview of identity security in Windows 11 and Windows 10
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.collection: M365-security-compliance
 ms.prod: m365-security

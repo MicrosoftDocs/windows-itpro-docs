@@ -19,7 +19,7 @@ ms.technology: windows-sec
 
 [BranchCache](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127252(v=ws.11)) events are outside the scope of this document.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other System Events](audit-other-system-events.md)
 
@@ -37,4 +37,4 @@ There is no example of this event in this document.
 
 ## Security Monitoring Recommendations
 
--   There is no recommendation for this event in this document.
+-   There's no recommendation for this event in this document.

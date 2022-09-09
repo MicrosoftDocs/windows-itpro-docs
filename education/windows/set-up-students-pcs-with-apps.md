@@ -1,31 +1,27 @@
 ---
 title: Provision student PCs with apps
 description: Learn how to use Configuration Designer to easily provision student devices to join Active Directory.
-keywords: shared cart, shared PC, school, provision PCs with apps, Windows Configuration Designer
-ms.prod: w10
-ms.pagetype: edu
-ms.mktglfcycl: plan
-ms.sitesec: library
+ms.prod: windows
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 10/13/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Provision student PCs with apps
-**Applies to:**
 
--   Windows 10  
-
-
-To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
+To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
-You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
-- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps). 
+You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices.
+
+- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
+
 - If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
 
 <!--
@@ -46,7 +42,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 
 ## Create a provisioning package to add apps after initial setup
 
-Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+Use the Windows Imaging and Configuration Designer (ICD) tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 1. Open Windows ICD (by default, %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -124,7 +120,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 10. Set a value for **Package Version**.
 
-    **Tip**  
+    **Tip**  
     You can make changes to existing packages and change the version number to update previously applied packages.
 
 11. Optional. In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
@@ -133,8 +129,8 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
 
-        **Important**  
-        We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
+        **Important**  
+        We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
 
 12. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
 Optionally, you can click **Browse** to change the default output location.
@@ -217,11 +213,6 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 ## Learn more
 
--  [Develop Universal Windows Education apps](/windows/uwp/apps-for-education/)
+-[Develop Universal Windows Education apps](/windows/uwp/apps-for-education/)
 
--   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
- 
+- [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)

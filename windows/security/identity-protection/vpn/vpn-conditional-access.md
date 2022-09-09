@@ -2,25 +2,23 @@
 title: VPN and conditional access (Windows 10 and Windows 11)
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: pesmith
+manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 09/23/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # VPN and conditional access
 
->Applies to: Windows 10 and Windows 11
-
 The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.  
 
 >[!NOTE]
->Conditional Access is an Azure AD Premium feature. 
+>Conditional Access is an Azure AD Premium feature.
 
 Conditional Access Platform components used for Device Compliance include the following cloud-based services:
 
@@ -35,7 +33,7 @@ See also [Always On VPN deployment for Windows Server and Windows 10](/windows-s
 
 - Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the Azure AD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules. If compliant, Azure AD sends back a short-lived certificate that is used to authenticate the VPN. Note that certificate authentication methods such as EAP-TLS can be used. When that certificate expires, the client will again check with Azure AD for health validation before a new certificate is issued.
 
-- [Microsoft Intune device compliance policies](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) - Cloud-based device compliance leverages Microsoft Intune Compliance Policies, which are capable of querying the device state and define compliance rules for the following, among other things.
+- [Microsoft Intune device compliance policies](/mem/intune/protect/device-compliance-get-started) - Cloud-based device compliance leverages Microsoft Intune Compliance Policies, which are capable of querying the device state and define compliance rules for the following, among other things.
 
     - Antivirus status
     - Auto-update status and update compliance

@@ -1,29 +1,22 @@
 ---
 title: Configure Hybrid Azure AD joined Windows Hello for Business - Group Policy
 description: Configuring Hybrid key trust Windows Hello for Business - Group Policy
-keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, key trust, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Group Policy
-
-**Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Key trust
-
 
 ## Policy Configuration
 
@@ -34,7 +27,7 @@ Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 C
 
 Domain controllers of Windows Hello for Business deployments need one Group Policy setting, which enables automatic certificate enrollment for the newly create domain controller authentication certificate. This policy setting ensures domain controllers (new and existing) automatically request and renew the correct domain controller certificate.  
 
-Hybrid Azure AD joined devices needs one Group Policy setting:
+Hybrid Azure AD-joined devices needs one Group Policy setting:
 * Enable Windows Hello for Business
 
 ### Configure Domain Controllers for Automatic Certificate Enrollment

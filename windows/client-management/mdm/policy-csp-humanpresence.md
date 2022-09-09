@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - HumanPresence
 description: Use the Policy CSP - HumanPresence setting allows wake on approach and lock on leave that can be managed from MDM.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - HumanPresence
-
-
 
 <hr/>
 
@@ -22,6 +20,9 @@ manager: dansimp
 ## HumanPresence policies  
 
 <dl>
+  <dd>
+    <a href="#humanpresence-forceinstantdim">HumanPresence/ForceInstantDim</a>
+  </dd>
   <dd>
     <a href="#humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
   </dd>
@@ -33,18 +34,17 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
-<a href="" id="humanpresence-forceinstantlock"></a>**HumanPresence/ForceInstantLock**  
+<a href="" id="humanpresence-forceinstantdim"></a>**HumanPresence/ForceInstantDim**  
 
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
+|Pro|No|Yes|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -62,7 +62,58 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies whether the device can lock when a human presence sensor detects a human.
+This feature dims the screen based on user attention. This is a power saving feature that prolongs battery charge.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Force Instant Dim*
+-   GP name: *ForceInstantDim*
+-   GP path: *Windows Components/Human Presence*
+-   GP ADMX file name: *Sensors.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 2 = ForcedOff
+- 1 = ForcedOn
+- 0 = DefaultToUserChoice
+- Defaults to 0.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="humanpresence-forceinstantlock"></a>**HumanPresence/ForceInstantLock**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy specifies, whether the device can lock when a human presence sensor detects a human.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -79,7 +130,7 @@ The following list shows the supported values:
 - 2 = ForcedOff
 - 1 = ForcedOn
 - 0 = DefaultToUserChoice
-- Defaults to 0.
+- Defaults to 0
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -94,6 +145,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -111,7 +163,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies whether the device can lock when a human presence sensor detects a human.
+This policy specifies, whether the device can lock when a human presence sensor detects a human.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -128,7 +180,7 @@ The following list shows the supported values:
 - 2 = ForcedOff
 - 1 = ForcedOn
 - 0 = DefaultToUserChoice
-- Defaults to 0.
+- Defaults to 0
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -143,6 +195,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -160,7 +213,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies at what distance the sensor wakes up when it sees a human in seconds.
+This policy specifies, at what distance the sensor wakes up when it sees a human in seconds.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -172,7 +225,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Integer value that specifies whether the device can lock when a human presence sensor detects a human.
+Integer value that specifies, whether the device can lock when a human presence sensor detects a human.
 
 The following list shows the supported values:
 
@@ -188,3 +241,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

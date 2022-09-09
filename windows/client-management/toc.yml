@@ -1,10 +1,10 @@
 items:
 - name: Windows client management
   href: index.yml
-  items: 
+  items:
     - name: Client management tools and settings
       items:
-        - name: Administrative Tools in Windows 10
+        - name: Windows Tools/Administrative Tools
           href: administrative-tools-in-windows-10.md
         - name: Use Quick Assist to help users
           href: quick-assist.md
@@ -29,30 +29,30 @@ items:
         - name: Windows libraries
           href: windows-libraries.md
     - name: Mobile device management (MDM)
-      items: 
-        - name: Mobile Device Management     
-          href: mdm/index.md
+      items:
+        - name: Mobile Device Management
+          href: mdm/index.yml
     - name: Configuration Service Provider (CSP)
-      items: 
-        - name: CSP reference     
+      items:
+        - name: CSP reference
           href: mdm/configuration-service-provider-reference.md
     - name: Troubleshoot Windows clients
-      items: 
-        - name: Windows 10 support solutions      
+      items:
+        - name: Windows 10 support solutions
           href: windows-10-support-solutions.md
         - name: Advanced troubleshooting for Windows networking
           href: troubleshoot-networking.md
-          items: 
+          items:
             - name: Advanced troubleshooting Wireless network connectivity
               href: advanced-troubleshooting-wireless-network-connectivity.md
             - name: Advanced troubleshooting 802.1X authentication
               href: advanced-troubleshooting-802-authentication.md
-              items: 
+              items:
                 - name: Data collection for troubleshooting 802.1X authentication
                   href: data-collection-for-802-authentication.md
             - name: Advanced troubleshooting for TCP/IP
               href: troubleshoot-tcpip.md
-              items: 
+              items:
                 - name: Collect data using Network Monitor
                   href: troubleshoot-tcpip-netmon.md
                 - name: "Part 1: TCP/IP performance overview"
@@ -60,7 +60,7 @@ items:
                 - name: "Part 2: TCP/IP performance underlying network issues"
                   href: /troubleshoot/windows-server/networking/troubleshooting-tcpip-performance-underlying-network
                 - name: "Part 3: TCP/IP performance known issues"
-                  href: /troubleshoot/windows-server/networking/tcpip-performance-known-issues                
+                  href: /troubleshoot/windows-server/networking/tcpip-performance-known-issues
                 - name: Troubleshoot TCP/IP connectivity
                   href: troubleshoot-tcpip-connectivity.md
                 - name: Troubleshoot port exhaustion
@@ -69,7 +69,7 @@ items:
                   href: troubleshoot-tcpip-rpc-errors.md
         - name: Advanced troubleshooting for Windows startup
           href: troubleshoot-windows-startup.md
-          items: 
+          items:
             - name: How to determine the appropriate page file size for 64-bit versions of Windows
               href: determine-appropriate-page-file-size.md
             - name: Generate a kernel or complete crash dump

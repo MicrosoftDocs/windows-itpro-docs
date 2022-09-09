@@ -1,14 +1,13 @@
 ---
 title: SurfaceHub DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the SurfaceHub configuration service provider. This CSP was added in Windows 10, version 1511.
-ms.assetid: D34DA1C2-09A2-4BA3-BE99-AC483C278436
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 

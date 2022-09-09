@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Cryptography
 description: Learn how to use the Policy CSP - Cryptography setting to allow or disallow the Federal Information Processing Standard (FIPS) policy.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Cryptography
@@ -42,6 +42,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -60,7 +61,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Allows or disallows the Federal Information Processing Standard (FIPS) policy.
+This policy setting allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -72,8 +73,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1– Allowed.
+0 (default) – Not allowed.
+1– Allowed.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -94,6 +95,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -112,7 +114,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
+This policy setting lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -134,3 +136,6 @@ Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

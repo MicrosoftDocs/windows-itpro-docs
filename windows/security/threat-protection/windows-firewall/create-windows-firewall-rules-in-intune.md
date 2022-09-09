@@ -1,36 +1,32 @@
 ---
 title: Create Windows Firewall rules in Intune (Windows)
 description: Learn how to use Intune to create rules in Windows Defender Firewall with Advanced Security. Start by creating a profile in Device Configuration in Intune.
-ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Create Windows Firewall rules in Intune
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 >[!IMPORTANT]
 >This information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-To get started, open Device Configuration in Intune, then create a new profile. 
-Choose Windows 10 or Windows 11 as the platform, and Endpoint Protection as the profile type. 
+To get started, Open the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and then go to **Devices** > **Windows** > **Configuration profiles** > **Create profile** > Choose **Windows 10 and later** as the platform, Choose **Templates**, then **Endpoint protection** as the profile type. 
 Select Windows Defender Firewall.
-![Windows Defender Firewall in Intune.](images/windows-firewall-intune.png)
+:::image type="content" source="images/windows-firewall-intune.png" alt-text="Example of a Windows Defender Firewall policy in Microsoft Endpoint Manager.":::
 
 >[!IMPORTANT]
 >A single Endpoint Protection profile may contain up to a maximum of 150 firewall rules. If a client device requires more than 150 rules, then multiple profiles must be assigned to it.
@@ -51,7 +47,7 @@ Package family names can be retrieved by running the Get-AppxPackage command fro
 [Learn more](https://aka.ms/intunefirewallPackageNameFromPowerShell) 
 
 Windows service short names are used in cases when a service, not an application, is sending or receiving traffic. 
-Default ia All. 
+Default is All. 
 
 [Learn more](/windows/client-management/mdm/firewall-csp#servicename)
 
@@ -73,9 +69,9 @@ Comma separated list of ranges. For example, *100-120,200,300-320*. Default is A
 [Learn more](/windows/client-management/mdm/firewall-csp#remoteportranges)
 
 ## Local addresses
-Comma separated list of local addresses covered by the rule. Valid tokens include:
-- \* indicates any local address. If present, this must be the only token included. 
-- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask default is  255.255.255.255. 
+Comma-separated list of local addresses covered by the rule. Valid tokens include:
+- \* indicates any local address. If present, this token must be the only one included. 
+- A subnet can be specified using either the subnet mask or network prefix notation. If a subnet mask or a network prefix isn't specified, the subnet mask default is 255.255.255.255. 
 - A valid IPv6 address. 
 - An IPv4 address range in the format of "start address-end address" with no spaces included. 
 - An IPv6 address range in the format of "start address-end address" with no spaces included. Default is Any address. 
@@ -84,7 +80,7 @@ Comma separated list of local addresses covered by the rule. Valid tokens includ
 
 ## Remote addresses
 List of comma separated tokens specifying the remote addresses covered by the rule. Tokens are case insensitive. Valid tokens include:
-- \* indicates any remote address. If present, this must be the only token included. 
+- \* indicates any remote address. If present, this token must be the only one included. 
 - Defaultgateway 
 - DHCP 
 - DNS 
@@ -109,7 +105,7 @@ Indicates whether edge traversal is enabled or disabled for this rule. The EdgeT
 [Learn more](/windows/client-management/mdm/firewall-csp#edgetraversal)
 
 ## Authorized users
-Specifies the list of authorized local users for this rule. A list of authorized users cannot be specified if the rule being authored is targeting a Windows service. Default is all users. 
+Specifies the list of authorized local users for this rule. A list of authorized users can't be specified if the rule being authored is targeting a Windows service. Default is all users. 
 
 [Learn more](/windows/client-management/mdm/firewall-csp#localuserauthorizedlist)
 

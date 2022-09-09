@@ -1,15 +1,11 @@
 ---
 title: Custom XML Examples (Windows 10)
 description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the My Videos folder.
-ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -17,7 +13,7 @@ ms.topic: article
 
 ## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
 
-The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
+The following is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
@@ -91,11 +87,11 @@ The following sample is a custom .xml file named CustomFile.xml that migrates My
 
   `<condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>`
 
-- **Sample filter**: Filters out the shortcuts in My Videos that do not resolve on the destination computer:
+- **Sample filter**: Filters out the shortcuts in My Videos that don't resolve on the destination computer:
 
   `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
 
-  This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+  This has no effect on files that aren't shortcuts. For example, if there's a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
 
 - **Sample pattern**: Migrates My Videos for all users:
 
@@ -130,7 +126,7 @@ The following sample is a custom .xml file named CustomFile.xml that migrates My
 
 The sample patterns describe the behavior in the following example .xml file.
 
-- **Sample pattern**: Migrates all instances of the file Usmttestfile.txt from all sub-directories under `%ProgramFiles%\USMTTestFolder`:
+- **Sample pattern**: Migrates all instances of the file Usmttestfile.txt from all subdirectories under `%ProgramFiles%\USMTTestFolder`:
 
   `<pattern type="File">%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]</pattern>`
 
