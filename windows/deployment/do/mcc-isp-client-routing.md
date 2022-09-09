@@ -1,4 +1,4 @@
-# Client Routing (CIDR, BGP)
+# Client Routing
 
 Before serving traffic to your customers, client routing configuration is needed. During the configuration of your cache node in Azure portal, you will be able to route your clients to your cache node.
 
@@ -8,9 +8,9 @@ Once client routing and other settings are configured, your cache node will be a
 
 At this time, only IPv4 addresses are supported. IPv6 addresses are not supported.
 
-### CIDR blocks
+### Manual routing
 
-CIDR blocks are comprised of IP prefixes (groups of IP addresses) that represent your customer base. You can manually upload a list of your CIDR blocks in Azure portal.
+You can manually upload a list of your CIDR blocks in Azure portal to enable manual routing of your customers to your cache node.
 
 ### BGP routing
 
