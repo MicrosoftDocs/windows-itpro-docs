@@ -1,0 +1,37 @@
+# Configure client routing for cache node
+
+All configuration routing takes place within the Azure Portal. There are two main methods to route clients to your cache node:
+
+- **Manual Routing**: Providing the CIDR blocks that represent the client IP address space, which should be routed to the MCC node.
+- **BGP Routing**: BGP neighborship sessions from the cache node to the router or route server will be initiated automatically based on the portal configuration.
+
+> [!NOTE]
+> Only IPv4 addresses are supported at this time. Entering IPv6 addresses will result in an error.
+
+## Manual Routing
+
+1. To configure client routing using manually entered CIDR blocks, navigate to **Settings** >> **Routing Information**. 
+1. Select **Manual prefix entry** as the Prefix Source.
+1. Paste in the CIDR blocks, with each IP range separated by a comma.
+1. Lastly, press Save to save your changes.
+
+## BGP Routing
+
+1. To configure client routing using BGP, navigate to **Settings** >> **Routing Information**.
+1. Select **BGP** as the Prefix source.
+1. Click on **Add neighbor** to add the ASN(s) and IP address(es) of your BGP neighbors.
+1. If you'd like to download your BGP routes, click on the **Download Routes** button.
+1. Lastly, press Save to save your changes.
+1. From your end, establish a neighborship from your router to MCC's host machine. Use the IP address of the host machine that's running the MCC container.
+
+> [!NOTE]
+> With the BGP configuration, you're essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN.
+
+a. Make sure there aren't any firewall rules blocking this connection.
+b. Verify that the BGP connection has been established and that you're advertising routes to the MCC.
+c. Wait five minutes to refresh the cache node page in the Azure portal to see the BGP routes.
+
+1. If there are errors:
+    - Inspect the installer logs, which are in the following path: `/etc/mccresourcecreation/`
+    - For more information, see [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
+
