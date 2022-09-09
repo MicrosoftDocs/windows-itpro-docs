@@ -139,6 +139,15 @@ If you disable or do not configure this policy setting, the PIN will be provisio
 
 Supported operations are Add, Get, Delete, and Replace.
 
+<a href="" id="tenantid-policies-usecloudtrustforonpremauth--only-for---device-vendor-msft-"></a>***TenantId*/Policies/UseCloudTrustForOnPremAuth** (only for ./Device/Vendor/MSFT)  
+Boolean value that enables Windows Hello for Business to use Azure AD Kerberos to authenticate to on-premises resources.
+
+If you enable this policy setting, Windows Hello for Business will use an Azure AD Kerberos ticket to authenticate to on-premises resources. The Azure AD Kerberos ticket is returned to the client after a successful authentication to Azure AD if Azure AD Kerberos is enabled for the tenant and domain.
+
+If you disable or do not configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
+
+Supported operations are Add, Get, Delete, and Replace.
+
 <a href="" id="tenantid-policies-pincomplexity"></a>***TenantId*/Policies/PINComplexity**  
 Node for defining PIN settings.
 
