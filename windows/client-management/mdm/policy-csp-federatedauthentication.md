@@ -65,8 +65,8 @@ This policy specifies whether Web Sign-in can be used for device sign-in in a si
 <!--SupportedValues-->
 Value type is integer:  
 - 0 - (default): Feature defaults as appropriate for edition and device capabilities.
-- 1 - Enabled: Web Sign-in Credential Provider will be enabled for device sign-in
-- 2 - Disabled: Web Sign-in Credential Provider will not be enabled for device sign-in
+- 1 - Enabled: Web Sign-in Credential Provider will be enabled for device sign-in.
+- 2 - Disabled: Web Sign-in Credential Provider won't be enabled for device sign-in.
 
 <!--/SupportedValues-->
 
