@@ -761,8 +761,6 @@ items:
               href: policy-csp-newsandinterests.md
             - name: Notifications
               href: policy-csp-notifications.md
-            - name: PersonalDataEncryption
-              href: policy-csp-personaldataencryption.md
             - name: Power
               href: policy-csp-power.md
             - name: Printers
