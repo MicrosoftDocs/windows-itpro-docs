@@ -53,8 +53,6 @@ landingContent:
           url: edu-themes.md
         - text: Configure Stickers
           url: edu-stickers.md
-        - text: Configure federated sign-in
-          url: edu-federated-sign-in.md
       - linkListType: video
         links:
         - text: Deploy Windows 11 SE using Set up School PCs
