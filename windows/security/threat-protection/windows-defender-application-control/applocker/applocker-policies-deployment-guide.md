@@ -32,7 +32,7 @@ ms.technology: windows-sec
 
 This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 
-This guide provides steps based on your design and planning investigation for deploying application control policies by using AppLocker. It is intended for security architects, security administrators, and system administrators. Through a sequential and iterative deployment process, you can create application control policies, test and adjust the policies, and implement a method for maintaining those policies as the needs in your organization change.
+This guide provides steps based on your design and planning investigation for deploying application control policies by using AppLocker. It's intended for security architects, security administrators, and system administrators. Through a sequential and iterative deployment process, you can create application control policies, test and adjust the policies, and implement a method for maintaining those policies as the needs in your organization change.
 
 This guide covers the use of Software Restriction Policies (SRP) in conjunction with AppLocker policies to control application usage. For a comparison of SRP and AppLocker, see [Using Software Restriction Policies and AppLocker policies](using-software-restriction-policies-and-applocker-policies.md) in this guide. To understand if AppLocker is the correct application control solution for you, see [Understand AppLocker policy design decisions](understand-applocker-policy-design-decisions.md).
 

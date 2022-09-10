@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Winsrv
 description: Policy CSP - ADMX_Winsrv
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 02/25/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Winsrv
@@ -43,8 +43,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -66,8 +67,8 @@ This policy setting specifies whether Windows will allow console applications an
 
 By default, such applications are automatically terminated if they attempt to cancel shutdown or block it indefinitely.
 
-- If you enable this setting, console applications or GUI applications without visible top-level windows that block or cancel shutdown will not be automatically terminated during shutdown.
-- If you disable or do not configure this setting, these applications will be automatically terminated during shutdown, helping to ensure that windows can shut down faster and more smoothly.
+- If you enable this setting, console applications or GUI applications without visible top-level windows that block or cancel shutdown won't be automatically terminated during shutdown.
+- If you disable or don't configure this setting, these applications will be automatically terminated during shutdown, helping to ensure that windows can shut down faster and more smoothly.
 
 > [!NOTE]
 > This policy setting applies to all sites in Trusted zones.

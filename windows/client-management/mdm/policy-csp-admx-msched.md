@@ -1,18 +1,19 @@
 ---
 title: Policy CSP - ADMX_msched
-description: Policy CSP - ADMX_msched
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_msched.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/08/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_msched
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -45,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -65,9 +67,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to configure Automatic Maintenance activation boundary. The maintenance activation boundary is the daily scheduled time at which Automatic Maintenance starts.
 
-If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
+If you enable this policy setting, this scheduled time will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 
-If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+If you disable or don't configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 
 <!--/Description-->
 
@@ -91,8 +93,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -115,7 +118,7 @@ The maintenance random delay is the amount of time up to which Automatic Mainten
 
 If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by up to this time.
 
-If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
+If you don't configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
 
 If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
 
@@ -133,8 +136,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-
-
-
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

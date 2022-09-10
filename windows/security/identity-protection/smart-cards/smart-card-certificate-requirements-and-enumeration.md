@@ -2,23 +2,23 @@
 title: Certificate Requirements and Enumeration (Windows)
 description: This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: ardenw
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Certificate Requirements and Enumeration
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 
@@ -187,7 +187,7 @@ The smart card certificate has specific format requirements when it is used with
 
 |            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, Windows Vista, Windows 10, and Windows 11**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   CRL distribution point location    |                                                                                               Not required                                                                                               |             The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=<http://server1.contoso.com/CertEnroll/caname.crl>             |
+|   CRL distribution point location    |                                                                                               Not required                                                                                               |             The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=`<https://server1.contoso.com/CertEnroll/caname.crl>`             |
 |              Key usage               |                                                                                            Digital signature                                                                                             |                                                                                                       Digital signature                                                                                                        |
 |          Basic constraints           |                                                                                               Not required                                                                                               |                                                                              \[Subject Type=End Entity, Path Length Constraint=None\] (Optional)                                                                               |
 |       Enhanced key usage (EKU)       | The smart card sign-in object identifier is not required.<br><br>**Note**&nbsp;&nbsp;If an EKU is present, it must contain the smart card sign-in EKU. Certificates with no EKU can be used for sign-in. |      -   Client Authentication (1.3.6.1.5.5.7.3.2)<br>The client authentication object identifier is required only if a certificate is used for SSL authentication.<br><br>- Smart Card Sign-in (1.3.6.1.4.1.311.20.2.2)       |

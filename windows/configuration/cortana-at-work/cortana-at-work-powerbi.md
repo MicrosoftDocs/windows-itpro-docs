@@ -2,14 +2,12 @@
 title: Set up and test Cortana for Power BI in your organization (Windows)
 description: How to integrate Cortana with Power BI to help your employees get answers directly from your key business data.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Set up and test Cortana for Power BI in your organization

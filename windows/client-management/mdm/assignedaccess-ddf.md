@@ -1,19 +1,17 @@
 ---
 title: AssignedAccess DDF
 description: Learn how the OMA DM device description framework (DDF) for the AssignedAccess configuration service provider.
-ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 02/22/2018
 ---
 
 # AssignedAccess DDF
-
 
 This topic shows the OMA DM device description framework (DDF) for the **AssignedAccess** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -22,7 +20,7 @@ You can download the DDF files from the links below:
 - [Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1607](https://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
-The XML below is for Windows 10, version 1803.
+The XML below is for Windows 10, version 1803 and later.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -50,7 +48,7 @@ The XML below is for Windows 10, version 1803.
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/2.0/MDM/AssignedAccess</MIME>
+                <MIME>com.microsoft/4.0/MDM/AssignedAccess</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -66,7 +64,7 @@ The XML below is for Windows 10, version 1803.
 
 Example: {"User":"domain\\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}.
 
-When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
+When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional, if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
 
 This node supports Add, Delete, Replace and Get methods. When there's no configuration, "Get" and "Delete" methods fail. When there's already a configuration for kiosk mode app, "Add" method fails. The data pattern for "Add" and "Replace" is the same.</Description>
                 <DFFormat>
@@ -119,7 +117,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
                 <AccessType>
                     <Get />
                 </AccessType>
-                <Description>This read only node contains kiosk health event xml</Description>
+                <Description>This read only node contains kiosk health event in xml.</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>
@@ -197,15 +195,4 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
 
 ## Related topics
 
-
 [AssignedAccess configuration service provider](assignedaccess-csp.md)
-
- 
-
- 
-
-
-
-
-
-

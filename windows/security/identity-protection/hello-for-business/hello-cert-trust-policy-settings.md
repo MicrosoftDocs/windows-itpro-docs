@@ -1,30 +1,24 @@
 ---
 title: Configure Windows Hello for Business Policy settings - certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business. Certificate-based deployments need three group policy settings.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployments</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Configure Windows Hello for Business Policy settings - Certificate Trust
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- On-premises deployment
-- Certificate trust
 
 You need at least a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
@@ -60,7 +54,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 3. Right-click **Group Policy object** and select **New**.
 4. Type *Enable Windows Hello for Business* in the name box and click **OK**.
 5. In the content pane, right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **User Configuration**.
+6. In the navigation pane, expand **Policies** under **User Configuration** (this is the only option for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**.
 9. Double-click **Use certificate for on-premises authentication**. Click **Enable** and click **OK**.  Close the **Group Policy Management Editor**.
@@ -70,7 +64,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 1. Start the **Group Policy Management Console** (gpmc.msc).
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
 3. Right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-4. In the navigation pane, expand **Policies** under **User Configuration**.
+4. In the navigation pane, expand **Policies** under **User Configuration** (this is the only option for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
 5. Expand **Windows Settings > Security Settings**, and click **Public Key Policies**.
 6. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
 7. Select **Enabled** from the **Configuration Model** list.

@@ -1,14 +1,11 @@
 ---
 title: Plan for Windows 10 deployment (Windows 10)
 description: Find resources for your Windows 10 deployment. Windows 10 provides new deployment capabilities and tools, and introduces new ways to keep the OS up to date. 
-ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
-keywords: deploy, upgrade, update, configure
 ms.prod: w10
-manager: laurawi
-ms.mktglfcycl: plan
-ms.sitesec: library
 ms.localizationpriority: medium
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 
