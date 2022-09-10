@@ -339,7 +339,7 @@ items:
           href: personaldataencryption-csp.md
           items: 
             - name: PersonalDataEncryption DDF file
-              href: personaldataencryption-ddf.md
+              href: personaldataencryption-ddf-file.md
         - name: Personalization CSP
           href: personalization-csp.md
           items: 
