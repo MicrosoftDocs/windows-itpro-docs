@@ -1,6 +1,6 @@
 items:
 - name: Mobile device management
-  href: index.md
+  href: index.yml
   items: 
     - name: What's new in MDM enrollment and management
       href: new-in-windows-mdm-enrollment-management.md
