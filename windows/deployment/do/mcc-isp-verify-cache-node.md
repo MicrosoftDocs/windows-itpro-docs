@@ -1,26 +1,14 @@
 # Verify cache node functionality
 
-### Verify client side
 
-Sign in to the Connected Cache server or use SSH. Run the following command from a terminal to see the running modules (containers):
+### Verify functionality on Azure portal
 
-```bash
-sudo iotedge list
-```
+Log into Azure portal and navigate to the Overview page. Select the **Monitoring** tab to verify the functionality of your server(s) by validating the number of healthy nodes shown. If you see any **Unhealthy nodes**, select the "Diagnose and Solve" link to troubleshoot and resolve the issue.
 
-If the cache server is running properly, you will see the containers **edgeAgent**, **edgeHub**, and **[Your Cache Node name]** listed, all with the status **running**.
+### Verify functionality on the server
 
-If it lists the **edgeAgent** and **edgeHub** containers, but doesn't include **MCC**, view the status of the IoT Edge security manager using the command:
+It can take a few minutes for the container to deploy after you've saved the configuration.
 
-```bash
-sudo journalctl -u iotedge -f
-```
-
-This command provides the current status of the starting and stopping of a container or the container pull and start.
-
-### Verify server side
-
-It can take a few minutes for the container to deploy.
 
 To validate a properly functioning MCC, run the following command in the terminal of the cache server or any device in the network. Replace `<CacheServerIP>` with the IP address of the cache server.
 
@@ -46,4 +34,6 @@ Similarly, enter the following URL into a web browser on any device on the netwo
 http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
-If the test fails, for more information, see the [common issues](#common-issues) section.
+
+If the test fails, for more information, see the [FAQs](#mcc-isp-faq) section.
+

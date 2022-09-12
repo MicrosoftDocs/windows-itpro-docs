@@ -29,10 +29,10 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 | Modern Workplace-All | All Modern Workplace users |
 | Modern Workplace - Windows 11 Pre-Release Test Devices | Device group for Windows 11 Pre-Release testing. |
 | Modern Workplace Devices-All | All Modern Workplace devices |
-| Modern Workplace Devices-Windows Autopatch-Test | Immediate ring for device rollout |
-| Modern Workplace Devices-Windows Autopatch-First | First production ring for early adopters |
-| Modern Workplace Devices-Windows Autopatch-Fast | Fast ring for quick rollout and adoption |
-| Modern Workplace Devices-Windows Autopatch-Broad | Final ring for broad rollout into an organization |
+| Modern Workplace Devices-Windows Autopatch-Test | Deployment ring for testing update deployments prior production rollout |
+| Modern Workplace Devices-Windows Autopatch-First | First production deployment ring for early adopters |
+| Modern Workplace Devices-Windows Autopatch-Fast | Fast deployment ring for quick rollout and adoption |
+| Modern Workplace Devices-Windows Autopatch-Broad | Final deployment ring for broad rollout into the organization |
 | Modern Workplace Devices Dynamic - Windows 10 | Microsoft Managed Desktop Devices with Windows 10<p>Group Rule:<ul><li>`(device.devicePhysicalIds -any _ -startsWith \"[OrderID]:Microsoft365Managed_\")`</li><li>`(device.deviceOSVersion -notStartsWith \"10.0.22000\")`</li></ul><br>Exclusions:<ul><li>Modern Workplace - Telemetry Settings for Windows 11</li></ul>  |
 | Modern Workplace Devices Dynamic - Windows 11 | Microsoft Managed Desktop Devices with Windows 11<p>Group Rule:<ul><li>`(device.devicePhysicalIds -any _ -startsWith \"[OrderID]:Microsoft365Managed_\")`</li><li>`(device.deviceOSVersion -startsWith \"10.0.22000\")`</li></ul><br>Exclusions:<ul><li>Modern Workplace - Telemetry Settings for Windows 10</li></ul> |
 | Modern Workplace Roles - Service Administrator | All users granted access to Modern Workplace Service Administrator Role |
@@ -132,4 +132,4 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 | Script | Description |
 | ----- | ----- |
-| Modern Workplace - Autopatch Client Setup | Installs necessary client components for the Windows Autopatch service |
+| Modern Workplace - Autopatch Client Setup v1.1 | Installs necessary client components for the Windows Autopatch service |
