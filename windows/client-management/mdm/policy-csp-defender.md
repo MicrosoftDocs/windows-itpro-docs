@@ -2100,17 +2100,17 @@ This policy setting allows you to define the security intelligence location for 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP Friendly name: *Define security intelligence location for VDI clients*
+-   GP Friendly name: *Specify the signature (Security intelligence) delivery optimization for Defender in Virtual Environments*
 -   GP name: *SecurityIntelligenceLocation*
 -   GP element: *SecurityIntelligenceLocation*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Security Intelligence Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
 - Empty string - no policy is set
-- Non-empty string - the policy is set and security intelligence is gathered from the location
+- Non-empty string - the policy is set and security intelligence is gathered from the location.
 
 <!--/SupportedValues-->
 <!--/Policy-->
