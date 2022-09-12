@@ -86,8 +86,8 @@
           href: merge-windows-defender-application-control-policies.md
         - name: Enforce WDAC policies
           href: enforce-windows-defender-application-control-policies.md
-        - name: Code Integrity Policy, Token, and Miscellaneous Commands
-          href: code-integrity-policy-commands.md
+        - name: Managing WDAC Policies with CI Tool
+          href: citool-commands.md
         - name: Use code signing to simplify application control for classic Windows applications
           href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
           items: 
