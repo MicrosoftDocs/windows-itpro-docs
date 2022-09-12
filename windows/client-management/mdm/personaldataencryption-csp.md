@@ -34,7 +34,6 @@ The public API allows the applications running as the user to encrypt data as so
 
 **Applicability**: The policy is only applicable on enterprise and education SKUs.
 
-
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
