@@ -1,29 +1,23 @@
 ---
 title: Having enough Domain Controllers for Windows Hello for Business deployments
 description: Guide for planning to have an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016 or later</b>
+- ✅ <b>Hybrid or On-Premises deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
-
-**Applies to**
-
-- Windows 10, version 1703 or later, or Windows 11
-- Windows Server, versions 2016 or later
-- Hybrid or On-Premises deployment
-- Key trust
 
 > [!NOTE]
 >There was an issue with key trust authentication on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
@@ -48,7 +42,7 @@ The Windows Server 2016 or later domain controller is handling 100 percent of al
 
 ![dc-chart3.](images/plan/dc-chart3.png)
 
-Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of WHFB clients remains the same.
+Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of Windows Hello for Business clients remains the same.
 
 ![dc-chart4.](images/plan/dc-chart4.png)
 
@@ -95,7 +89,7 @@ Using the same methods described above, monitor the Kerberos authentication afte
 
 ```"Every n Windows Hello for Business clients results in x percentage of key-trust authentication."```
 
-Where _n_ equals the number of clients you switched to Windows Hello for Business and _x_ equals the increased percentage of authentication from the upgraded domain controller. Armed with this information, you can apply the observations of upgrading domain controllers and increasing Windows Hello for Business client count to appropriately phase your deployment.
+Where *n* equals the number of clients you switched to Windows Hello for Business and _x_ equals the increased percentage of authentication from the upgraded domain controller. Armed with this information, you can apply the observations of upgrading domain controllers and increasing Windows Hello for Business client count to appropriately phase your deployment.
   
 Remember, increasing the number of clients changes the volume of authentication distributed across the Windows Server 2016 or newer domain controllers. If there is only one Windows Server 2016 or newer domain controller, there's no distribution and you are simply increasing the volume of authentication for which THAT domain controller is responsible.
 

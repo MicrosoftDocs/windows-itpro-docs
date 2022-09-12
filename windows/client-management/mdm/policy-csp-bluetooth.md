@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Bluetooth
 description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/12/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Bluetooth
@@ -55,6 +55,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -73,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether the device can send out Bluetooth advertisements.
+This policy specifies whether the device can send out Bluetooth advertisements.
 
 If this policy isn't set or is deleted, the default value of 1 (Allow) is used.
 
@@ -100,6 +101,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -118,7 +120,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether other Bluetooth-enabled devices can discover the device.
+This policy specifies whether other Bluetooth-enabled devices can discover the device.
 
 If this policy isn't set or is deleted, the default value of 1 (Allow) is used.
 
@@ -145,6 +147,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -163,7 +166,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
+This policy specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -186,6 +189,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -227,6 +231,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -265,6 +270,7 @@ If this policy isn't set or is deleted, the default local radio name is used.
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -301,6 +307,7 @@ The default value is an empty string. For more information, see [ServicesAllowed
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

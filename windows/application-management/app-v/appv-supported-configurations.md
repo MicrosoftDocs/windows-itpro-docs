@@ -2,9 +2,6 @@
 title: App-V Supported Configurations (Windows 10/11)
 description: Learn the requirements to install and run App-V supported configurations in your Windows 10/11 environment.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # App-V Supported Configurations
 
 **Applies to**:
@@ -24,7 +22,7 @@ ms.topic: article
 - Windows Server 2012
 - Windows Server 2008 R2 (Extended Security Update)
 
-This topic specifies the requirements to install and run App-V in your Windows client environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
+This article specifies the requirements to install and run App-V in your Windows client environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
 
 ## App-V Server system requirements
 
@@ -50,7 +48,7 @@ You can install the App-V Management server on a server running Windows Server 2
 ### Management server hardware requirements
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 1 GB RAM (64-bit).
+* 1-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Management server database requirements
@@ -59,7 +57,7 @@ The following table lists the SQL Server versions that the App-V Management data
 
 |SQL Server version|Service pack|System architecture|
 |---|---|---|
-|Microsoft SQL Server 2019||32-bit or 64-bit|
+|Microsoft SQL Server 2019|CU4|32-bit or 64-bit|
 |Microsoft SQL Server 2017||32-bit or 64-bit|
 |Microsoft SQL Server 2016|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2014||32-bit or 64-bit|
@@ -74,10 +72,10 @@ The App-V Publishing server can be installed on a server that runs Windows Serve
 
 ### Publishing server hardware requirements
 
-App-V adds no additional requirements beyond those of Windows Server.
+App-V adds requires nothing beyond the requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 2 GB RAM (64-bit).
+* 2-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server operating system requirements
@@ -86,10 +84,10 @@ You can install the App-V Reporting server on a server running Windows Server 20
 
 ### Reporting server hardware requirements
 
-App-V adds no additional requirements beyond those of Windows Server.
+App-V adds no other requirements beyond those requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 2 GB RAM (64-bit).
+* 2-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server database requirements
@@ -98,6 +96,7 @@ The following table lists the SQL Server versions that are supported for the App
 
 |SQL Server version|Service pack|System architecture|
 |---|---|---|
+|Microsoft SQL Server 2019|CU4|32-bit or 64-bit|
 |Microsoft SQL Server 2017||32-bit or 64-bit|
 |Microsoft SQL Server 2016|SP2|32-bit or 64-bit|
 |Microsoft SQL Server 2014||32-bit or 64-bit|
@@ -120,9 +119,9 @@ See the Windows or Windows Server documentation for the hardware requirements.
 
 ## Supported versions of Microsoft Endpoint Configuration Manager
 
-The App-V client works with Configuration Manager versions starting with Technical Preview for System Center Configuration Manager, version 1606.
+The App-V client works with Configuration Manager versions starting with Technical Preview for Configuration Manager, version 1606.
 
-## Related topics
+## Related articles
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
 * [App-V prerequisites](appv-prerequisites.md)

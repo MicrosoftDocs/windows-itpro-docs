@@ -1,24 +1,33 @@
 ---
 title: w7 APPLICATION CSP
 description: Learn that the APPLICATION configuration service provider (CSP) that has an APPID of w7 is used for bootstrapping a device with an OMA DM account.
-ms.assetid: 10f8aa16-5c89-455d-adcd-d7fb45d4e768
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
 # w7 APPLICATION CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The APPLICATION configuration service provider that has an APPID of w7 is used for bootstrapping a device with an OMA DM account. Although this configuration service provider is used to set up an OMA DM account, it's managed over OMA Client Provisioning.
 
-> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
-
+> [!Note]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
 The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
@@ -51,10 +60,9 @@ APPLICATION
 ---SSLCLIENTCERTSEARCHCRITERIA
 ```
 
-> **Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
+> [!Note]
+> All parameter names and characteristic types are case sensitive and must use all uppercase.
 Both APPSRV and CLIENT credentials must be provided in provisioning XML.
-
- 
 
 <a href="" id="appaddr"></a>**APPADDR**  
 This characteristic is used in the w7 APPLICATION characteristic to specify the DM server address.
@@ -99,10 +107,8 @@ Optional. The AAUTHTYPE parameter of the APPAUTH characteristic is used to get o
 
 Valid values:
 
--   BASIC - specifies that the SyncML DM 'syncml:auth-basic' authentication type.
-
--   DIGEST - specifies that the SyncML DM 'syncml:auth-md5' authentication type.
-
+-   BASIC - Specifies that the SyncML DM 'syncml:auth-basic' authentication type.
+-   DIGEST - Specifies that the SyncML DM 'syncml:auth-md5' authentication type.
 -   When AAUTHLEVEL is CLIENT, then AAUTHTYPE must be DIGEST. When AAUTHLEVEL is APPSRV, AAUTHTYPE can be BASIC or DIGEST.
 
 <a href="" id="appid"></a>**APPID**  
@@ -111,9 +117,9 @@ Required. The APPID parameter is used in the APPLICATION characteristic to diffe
 <a href="" id="backcompatretrydisabled"></a>**BACKCOMPATRETRYDISABLED**  
 Optional. The BACKCOMPATRETRYDISABLED parameter is used in the APPLICATION characteristic to specify whether to retry resending a package with an older protocol version (for example, 1.1) in the SyncHdr (not including the first time).
 
-> **Note**   This parameter doesn't contain a value. The existence of this parameter means backward compatibility retry is disabled. If the parameter is missing, it means backward compatibility retry is enabled.
+> [!Note]
+> This parameter doesn't contain a value. The existence of this parameter means backward compatibility retry is disabled. If the parameter is missing, it means backward compatibility retry is enabled.
 
- 
 
 <a href="" id="connretryfreq"></a>**CONNRETRYFREQ**  
 Optional. The CONNRETRYFREQ parameter is used in the APPLICATION characteristic to specify how many retries the DM client performs when there are Connection Manager-level or WinInet-level errors. This parameter takes a numeric value in string format. The default value is “3”. You can set this parameter.
@@ -124,17 +130,16 @@ Optional. The DEFAULTENCODING parameter is used in the APPLICATION characteristi
 The valid values are:
 
 -   application/vnd.syncml.dm+xml (Default)
-
 -   application/vnd.syncml.dm+wbxml
 
 <a href="" id="init"></a>**INIT**  
 Optional. The INIT parameter is used in the APPLICATION characteristic to indicate that the management server wants the client to initiate a management session immediately after settings approval. If the current w7 APPLICATION document will be put in ROM, the INIT parameter must not be present.
 
-> **Note**   This node is only for mobile operators and MDM servers that try to use this will fail. This node isn't supported in the enterprise MDM enrollment scenario.
+> [!Note]
+> This node is only for mobile operators and MDM servers that try to use this will fail. This node isn't supported in the enterprise MDM enrollment scenario.
 This parameter forces the device to attempt to connect with the OMA DM server. The connection attempt fails if the XML is set during the coldinit phase. A common cause of this failure is that immediately after coldinit is finished the radio isn't yet ready.
 
  
-
 <a href="" id="initialbackofftime"></a>**INITIALBACKOFFTIME**  
 Optional. The INITIALBACKOFFTIME parameter is used in the APPLICATION characteristic to specify the initial wait time in milliseconds when the DM client retries for the first time. The wait time grows exponentially. This parameter takes a numeric value in string format. The default value is “16000”. You can get or set this parameter.
 
@@ -152,7 +157,6 @@ Optional. The PROTOVER parameter is used in the APPLICATION characteristic to sp
 Possible values:
 
 -   1.1
-
 -   1.2
 
 <a href="" id="provider-id"></a>**PROVIDER-ID**  
@@ -168,7 +172,6 @@ Optional. The TO-NAPID parameter is used in the APPLICATION characteristic to sp
 Optional. The USEHWDEVID parameter is used in the APPLICATION characteristic to specify use of device hardware identification. It doesn't have a value.
 
 -   If the parameter isn't present, the default behavior is to use an application-specific GUID used rather than the hardware device ID.
-
 -   If the parameter is present, the hardware device ID will be provided at the **./DevInfo/DevID** node and in the Source LocURI for the DM package sent to the server. International Mobile Subscriber Identity (IMEI) is returned for a GSM device.
 
 <a href="" id="sslclientcertsearchcriteria"></a>**SSLCLIENTCERTSEARCHCRITERIA**  
@@ -179,12 +182,11 @@ The string is a concatenation of name/value pairs, each member of the pair delim
 The supported names are Subject and Stores; wildcard certificate search isn't supported.
 
 Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name isn't case sensitive.
-
-> **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
-
  
+Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following:
 
-Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following syntax:
+> [!Note]
+> `%EF%80%80` is the UTF8-encoded character U+F000.
 
 ```xml
 <parm name="SSLCLIENTCERTSEARCHCRITERIA" 
@@ -193,15 +195,4 @@ Subject specifies the certificate to search for. For example, to specify that yo
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

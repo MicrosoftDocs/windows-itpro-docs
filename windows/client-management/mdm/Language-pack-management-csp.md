@@ -2,18 +2,29 @@
 title: Language Pack Management CSP
 description: Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10.
 ms.reviewer: 
-manager: dansimp
-ms.author: v-nsatapathy
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 06/22/2021
 ---
 
 # Language Pack Management CSP
 
-The Language Pack Management CSP allows a direct way to provision languages remotely in Windows. MDMs like Intune can use management commands remotely to devices to configure language-related settings for System and new users.
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+The Language Pack Management CSP allows a way to easily add languages and related language features and manage settings like System Preferred UI Language, System Locale, Input method (Keyboard), Locale, Speech Recognizer, User Preferred Language List. This CSP can be accessed using the new [LanguagePackManagement](/powershell/module/languagepackmanagement) PowerShell module.
 
 1. Enumerate installed languages and features with GET command on the "InstalledLanguages" node. Below are the samples:
 
@@ -81,3 +92,7 @@ The Language Pack Management CSP allows a direct way to provision languages remo
 4. Get/Set System Preferred UI Language with GET or REPLACE command on the "SystemPreferredUILanguages" Node
 
    **./Device/Vendor/MSFT/LanguagePackManagement/LanguageSettings/SystemPreferredUILanguages**
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

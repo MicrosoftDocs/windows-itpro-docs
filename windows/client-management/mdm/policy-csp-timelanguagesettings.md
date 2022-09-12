@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - TimeLanguageSettings
 description: Learn to use the Policy CSP - TimeLanguageSettings setting to specify the time zone to be applied to the device.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/28/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - TimeLanguageSettings
-
-
 
 <hr/>
 
@@ -43,11 +41,13 @@ manager: dansimp
 <a href="" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks"></a>**TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -97,11 +97,13 @@ ADMX Info:
 <a href="" id="timelanguagesettings-configuretimezone"></a>**TimeLanguageSettings/ConfigureTimeZone**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -141,11 +143,13 @@ Specifies the time zone to be applied to the device. This policy name is the sta
 <a href="" id="timelanguagesettings-machineuilanguageoverwrite"></a>**TimeLanguageSettings/MachineUILanguageOverwrite**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -195,11 +199,13 @@ ADMX Info:
 <a href="" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall"></a>**TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -237,3 +243,6 @@ If you disable or don't configure this policy setting, there's no language featu
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

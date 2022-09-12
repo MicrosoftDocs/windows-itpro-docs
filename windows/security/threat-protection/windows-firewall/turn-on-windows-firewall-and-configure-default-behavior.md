@@ -1,29 +1,26 @@
 ---
 title: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior (Windows)
 description: Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior
-ms.assetid: 3c3fe832-ea81-4227-98d7-857a3129db74
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 To enable Windows Defender Firewall with Advanced Security and configure its default behavior, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console.
 

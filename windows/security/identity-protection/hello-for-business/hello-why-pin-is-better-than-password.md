@@ -1,30 +1,22 @@
 ---
 title: Why a PIN is better than an online password (Windows)
 description: Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) an online password .
-ms.assetid: A6FC0520-01E6-4E90-B53D-6C4C4E780212
-keywords: pin, security, password, hello
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/23/2017
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
-
 # Why a PIN is better than an online password
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
 On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might allow complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First we need to distinguish between two types of passwords: `local` passwords are validated against the machine's password store, whereas `online` passwords are validated against a server. This article mostly covers the benefits a PIN has over an online password, and also why it can be considered even better than a local password. 

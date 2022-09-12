@@ -3,7 +3,6 @@ title: Troubleshoot the Windows Update for Business deployment service
 description: Solutions to common problems with the service
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: manage
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

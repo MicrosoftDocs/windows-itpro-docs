@@ -2,8 +2,6 @@
 title: Set up and test custom voice commands in Cortana for your organization (Windows)
 description: How to create voice commands that use Cortana to perform voice-enabled actions in your line-of-business (LOB) Universal Windows Platform (UWP) apps.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -20,7 +18,7 @@ manager: dougeby
 Working with a developer, you can create voice commands that use Cortana to perform voice-enabled actions in your line-of-business (LOB) Universal Windows Platform (UWP) apps. These voice-enabled actions can reduce the time necessary to access your apps and to complete simple actions.
 
 ## High-level process
-Cortana uses a Voice Command Definition (VCD) file, aimed at an installed app, to define the actions that are to happen during certain vocal commands. A VCD file can be very simple to very complex, supporting anything from a single sound to a collection of more flexible, natural language sounds, all with the same intent.
+Cortana uses a Voice Command Definition (VCD) file, aimed at an installed app, to define the actions that are to happen during certain vocal commands. A VCD file can be simple to complex, supporting anything from a single sound to a collection of more flexible, natural language sounds, all with the same intent.
 
 To enable voice commands in Cortana
 
@@ -35,7 +33,7 @@ To enable voice commands in Cortana
 2.	**Install the VCD file on employees' devices**. You can use Microsoft Endpoint Manager or Microsoft Intune to deploy and install the VCD file on your employees' devices, the same way you deploy and install any other package in your organization.
 
 ## Test scenario: Use voice commands in a Microsoft Store app
-While these aren't line-of-business apps, we've worked to make sure to implement a VCD file, allowing you to test how the functionality works with Cortana in your organization.
+While these apps aren't line-of-business apps, we've worked to make sure to implement a VCD file, allowing you to test how the functionality works with Cortana in your organization.
 
 **To get a Microsoft Store app**
 1. Go to the Microsoft Store, scroll down to the **Collections** area, click **Show All**, and then click **Better with Cortana**.

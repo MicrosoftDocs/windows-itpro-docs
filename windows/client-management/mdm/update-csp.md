@@ -1,20 +1,31 @@
 ---
 title: Update CSP
 description: Learn how the Update configuration service provider (CSP) enables IT administrators to manage and control the rollout of new updates.
-ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 02/23/2018
 ---
 
 # Update CSP
 
-The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
+The Update configuration service provider enables the IT administrators to manage and control the rollout of new updates.
+
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 > [!NOTE]
 > The Update CSP functionality of 'ApprovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies.
@@ -62,7 +73,7 @@ The following example shows the Update configuration service provider in tree fo
 > [!NOTE]
 > When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
 
-<p>The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this presentation is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It&#39;s possible for multiple updates to share the same EULA. It's only necessary to approve the EULA once per EULA ID, not one per update.
+<p>The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
 
 <p>The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (that is, updates to the virus and spyware definitions on devices) and Security Updates (that is, product-specific updates for security-related vulnerability). The update approval list doesn't support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 

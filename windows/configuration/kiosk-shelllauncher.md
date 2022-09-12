@@ -1,15 +1,11 @@
 ---
 title: Use Shell Launcher to create a Windows 10/11 kiosk (Windows 10/11)
 description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
-ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: sybruckm
-manager: dougeby
-ms.author: aaroncz
-keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
+manager: aaroncz
+ms.author: lizlong
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri

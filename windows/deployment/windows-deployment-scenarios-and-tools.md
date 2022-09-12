@@ -1,28 +1,21 @@
 ---
 title: Windows 10 deployment scenarios and tools
 description: Learn about the tools you can use to deploy Windows 10 and related applications to your organization. Explore deployment scenarios.
-ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
-keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 ms.topic: article
 ms.collection: highpri
 ---
 
 # Windows 10 deployment scenarios and tools
 
+To successfully deploy the Windows 10 operating system and applications for your organization, understand the available tools to help with the process. In this article, you'll learn about the most commonly used tools for Windows 10 deployment.
 
-To successfully deploy the Windows 10 operating system and applications for your organization, it's essential that you know about the available tools to help with the process. In this topic, you'll learn about the most commonly used tools for Windows 10 deployment.
+Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). These tools aren't a complete solution on their own. Combine these tools with solutions like [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) to get a complete deployment solution.
 
-Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It's when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
-
-In this topic, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
+In this article, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
 ## Windows Assessment and Deployment Kit
 
@@ -43,7 +36,7 @@ DISM services online and offline images. For example, with DISM you can install 
 Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS /LimitAccess
 ```
 
-In Windows 10, you can use Windows PowerShell for many of the functions performed by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
+In Windows 10, you can use Windows PowerShell for many of the functions done by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
 
 ``` syntax
 Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
@@ -58,24 +51,19 @@ For more information on DISM, see [DISM technical reference](/windows-hardware/m
 
 ### User State Migration Tool (USMT)
 
-USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and System Center 2012 R2 Configuration Manager use USMT as part of the operating system deployment process.
-
-**Note**  
-Occasionally, we find that customers are wary of USMT because they believe it requires significant configuration, but, as you'll learn below, using USMT isn't difficult. If you use MDT and Lite Touch to deploy your machines, the USMT feature is automatically configured and extended so that it's easy to use. With MDT, you do nothing at all and USMT just works.
-
- 
+USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and Configuration Manager use USMT as part of the operating system deployment process.
 
 USMT includes several command-line tools, the most important of which are ScanState and LoadState:
 
--   **ScanState.exe.** This performs the user-state backup.
--   **LoadState.exe.** This performs the user-state restore.
--   **UsmtUtils.exe.** This supplements the functionality in ScanState.exe and LoadState.exe.
+-   **ScanState.exe.** This tool performs the user-state backup.
+-   **LoadState.exe.** This tool performs the user-state restore.
+-   **UsmtUtils.exe.** This tool supplements the functionality in ScanState.exe and LoadState.exe.
 
 In addition to these tools, there are also XML templates that manage which data is migrated. You can customize the templates, or create new ones, to manage the backup process at a high level of detail. USMT uses the following terms for its templates:
 
 -   **Migration templates.** The default templates in USMT.
 -   **Custom templates.** Custom templates that you create.
--   **Config template.** An optional template, called Config.xml, which you can use to exclude or include components in a migration without modifying the other standard XML templates.
+-   **Config template.** An optional template called Config.xml which you can use to exclude or include components in a migration without modifying the other standard XML templates.
 
 ![A sample USMT migration file that will exclude .MP3 files on all local drives and include the folder C:\\Data and all its files, including its subdirectories and their files..](images/mdt-11-fig06.png)
 
@@ -85,20 +73,20 @@ USMT supports capturing data and settings from Windows Vista and later, and rest
 
 By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows 10 deployments are MigUser.xml and MigApp.xml. These two default templates migrate the following data and settings:
 
--   Folders from each profile, including those from user profiles as well as shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
--   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
+-   Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
+-   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
 
-    **Note**  
-    The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use aren't migrated by default.
+    > [!NOTE]
+    > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
 
 -   Operating system component settings
 -   Application settings
 
-These are the settings migrated by the default MigUser.xml and MigApp.xml templates. For more information on what USMT migrates, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more information on the USMT overall, see the [USMT technical reference](./usmt/usmt-reference.md).
+These settings are migrated by the default MigUser.xml and MigApp.xml templates. For more information, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more general information on USMT, see [USMT technical reference](./usmt/usmt-reference.md).
 
 ### Windows Imaging and Configuration Designer
 
-Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This is particularly useful for setting up new devices, without the need for reimaging the device with a custom image.
+Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This tool is useful for setting up new devices, without the need for reimaging the device with a custom image.
 
 ![Windows Imaging and Configuration Designer.](images/windows-icd.png)
 
@@ -118,7 +106,7 @@ For more information, see [Windows System Image Manager Technical Reference]( ht
 
 ### Volume Activation Management Tool (VAMT)
 
-If you don't use KMS, you can still manage your MAKs centrally with the Volume Activation Management Tool (VAMT). With this tool, you can install and manage product keys throughout the organization. VAMT also can activate on behalf of clients without Internet access, acting as a MAK proxy.
+If you don’t use KMS, manage your MAKs centrally with the Volume Activation Management Tool (VAMT). Use this tool to install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without internet access, acting as a MAK proxy.
 
 ![The updated Volume Activation Management Tool.](images/mdt-11-fig08.png)
 
@@ -164,11 +152,11 @@ Windows Deployment Services (WDS) has been updated and improved in several ways 
 
 Windows Deployment Services using multicast to deploy three machines.
 
-In Windows Server 2012 R2, [Windows Deployment Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831764(v=ws.11)) can be configured for stand-alone mode or for Active Directory integration. In most scenarios, the Active Directory integration mode is the best option. WDS also has the capability to manage drivers; however, driver management through MDT and Configuration Manager is more suitable for deployment due to the flexibility offered by both solutions, so you'll use them instead. In WDS, it's possible to pre-stage devices in Active Directory, but here, too, Configuration Manager has that capability built in, and MDT has the ability to use a SQL Server database for pre-staging. In most scenarios, those solutions are better than the built-in pre-staging function as they allow greater control and management.
+In Windows Server 2012 R2, [Windows Deployment Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831764(v=ws.11)) can be configured for stand-alone mode or for Active Directory integration. The Active Directory integration mode is the best option, in most scenarios. WDS also has the capability to manage drivers; however, driver management through MDT and Configuration Manager is more suitable for deployment due to the flexibility offered by both solutions, so you'll use them instead. In WDS, it's possible to pre-stage devices in Active Directory, but here, too, Configuration Manager has that capability built in, and MDT has the ability to use a SQL Server database for pre-staging. In most scenarios, those solutions are better than the built-in pre-staging function as they allow greater control and management.
 
 ### Trivial File Transfer Protocol (TFTP) configuration
 
-In some cases, you need to modify TFTP Maximum Block Size settings for performance tuning reasons, especially when PXE traffic travels through routers and such. In the previous version of WDS, it was possible to change that, but the method of do so—editing the registry—wasn't user friendly. In Windows Server 2012, this has become much easier to do as it can be configured as a setting.
+In some cases, you need to modify TFTP Maximum Block Size settings for performance tuning reasons, especially when PXE traffic travels through routers and such. In the previous version of WDS, it was possible to change that, but the method of do so—editing the registry—wasn't user friendly. In Windows Server 2012, this modification in settings has become much easier to do as it can be configured as a setting.
 
 Also, there are a few new features related to TFTP performance:
 
@@ -185,7 +173,7 @@ TFTP changes are now easy to perform.
 
 MDT is a free deployment solution from Microsoft. It provides end-to-end guidance, best practices, and tools for planning, building, and deploying Windows operating systems. MDT builds on top of the core deployment tools in the Windows ADK by contributing guidance, reducing complexity, and adding critical features for an enterprise-ready deployment solution.
 
-MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to System Center 2012 R2 Configuration Manager.
+MDT has two main parts: the first is Lite Touch, which is a stand-alone deployment solution; the second is Zero Touch, which is an extension to Configuration Manager.
 
 **Note**  
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
@@ -210,7 +198,7 @@ The SCM console showing a baseline configuration for a fictional client's comput
 ## Microsoft Desktop Optimization Pack
 
 
-MDOP is a suite of technologies available to Software Assurance customers through an additional subscription.
+MDOP is a suite of technologies available to Software Assurance customers through another subscription.
 
 The following components are included in the MDOP suite:
 
@@ -280,16 +268,16 @@ UEFI Version 2.3.1B is the version required for Windows 8 and later logo complia
 
 In regard to UEFI, hardware is divided into four device classes:
 
--   **Class 0 devices.** This is the UEFI definition for a BIOS, or non-UEFI, device.
--   **Class 1 devices.** These devices behave like a standard BIOS machine, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS. These older devices are no longer manufactured.
--   **Class 2 devices.** These devices have the capability to behave as a BIOS- or a UEFI-based machine, and the boot process or the configuration in the firmware/BIOS determines the mode. Class 2 devices use a CSM to emulate BIOS. These are the most common type of devices currently available.
--   **Class 3 devices.** These are UEFI-only devices, which means you must run an operating system that supports only UEFI. Those operating systems include Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2. Windows 7 isn't supported on these class 3 devices. Class 3 devices don't have a CSM to emulate BIOS.
+-   **Class 0 devices.** The device of this class is the UEFI definition for a BIOS, or non-UEFI, device.
+-   **Class 1 devices.** The devices of this class behave like a standard BIOS machine, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS. These older devices are no longer manufactured.
+-   **Class 2 devices.** The devices of this class have the capability to behave as a BIOS- or a UEFI-based machine, and the boot process or the configuration in the firmware/BIOS determines the mode. Class 2 devices use a CSM to emulate BIOS. These are the most common type of devices currently available.
+-   **Class 3 devices.** The devices of this class are UEFI-only devices, which means you must run an operating system that supports only UEFI. Those operating systems include Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2. Windows 7 isn't supported on these class 3 devices. Class 3 devices don't have a CSM to emulate BIOS.
 
 ### Windows support for UEFI
 
 Microsoft started with support for EFI 1.10 on servers and then added support for UEFI on both clients and servers.
 
-With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 supports both. However, UEFI doesn't support cross-platform boot. This means that a computer that has UEFI x64 can run only a 64-bit operating system, and a computer that has UEFI x86 can run only a 32-bit operating system.
+With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 supports both. However, UEFI doesn't support cross-platform boot. This limitation means that a computer that has UEFI x64 can run only a 64-bit operating system, and a computer that has UEFI x86 can run only a 32-bit operating system.
 
 ### How UEFI is changing operating system deployment
 
@@ -302,7 +290,7 @@ There are many things that affect operating system deployment as soon as you run
 
 For more information on UEFI, see the [UEFI firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)) overview and related resources.
 
-## Related topics
+## Related articles
 
 [Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)<br>
 [Windows ADK for Windows 10 scenarios for IT pros](windows-adk-scenarios-for-it-pros.md)

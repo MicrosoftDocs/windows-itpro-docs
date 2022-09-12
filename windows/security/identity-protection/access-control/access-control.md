@@ -2,26 +2,22 @@
 title: Access Control Overview (Windows 10)
 description: Access Control Overview
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: sulahiri
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/18/2017
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows Server 2016</b>
 ---
 
 # Access Control Overview
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 This topic for the IT professional describes access control in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer. Key concepts that make up access control are permissions, ownership of objects, inheritance of permissions, user rights, and object auditing.
 
@@ -131,7 +127,7 @@ For more information about user rights, see [User Rights Assignment](/windows/de
 
 With administrator's rights, you can audit users' successful or failed access to objects. You can select which object access to audit by using the access control user interface, but first you must enable the audit policy by selecting **Audit object access** under **Local Policies** in **Local Security Settings**. You can then view these security-related events in the Security log in Event Viewer.
 
-For more information about auditing, see [Security Auditing Overview](/windows/security/threat-protection/auditing/security-auditing-overview).
+For more information about auditing, see [Security Auditing Overview](../../threat-protection/auditing/security-auditing-overview.md).
 
 ## See also
 

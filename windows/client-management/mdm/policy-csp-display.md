@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - Display
 description: Learn how to use the Policy CSP - Display setting to disable Per-Process System DPI for a semicolon-separated list of applications.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Display
-
-
 
 <hr/>
 
@@ -51,6 +49,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -94,6 +93,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -157,6 +157,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -200,6 +201,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -226,7 +228,7 @@ If you enable this policy setting, GDI DPI Scaling is turned off for all applica
 
 If you disable or don't configure this policy setting, GDI DPI Scaling might still be turned on for legacy applications.
 
-If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+If GDI DPI Scaling is configured to both turn-off and turn-on an application, the application will be turned off.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -258,6 +260,7 @@ To validate on Desktop, do the following tasks:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -284,7 +287,7 @@ If you enable this policy setting, GDI DPI Scaling is turned on for all legacy a
 
 If you disable or don't configure this policy setting, GDI DPI Scaling won't be enabled for an application except when an application is enabled by using ApplicationCompatibility database, ApplicationCompatibility UI System (Enhanced) setting, or an application manifest.
 
-If GDI DPI Scaling is configured to both turn off and turn on an application, the application will be turned off.
+If GDI DPI Scaling is configured to both turn-off and turn-on an application, the application will be turned off.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -299,8 +302,8 @@ ADMX Info:
 <!--Validation-->
 To validate on Desktop, do the following tasks:
 
-1.   Configure the setting for an app, which uses GDI.
-2.   Run the app and observe crisp text.
+1. Configure the setting for an app, which uses GDI.
+2. Run the app and observe crisp text.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -310,3 +313,6 @@ To validate on Desktop, do the following tasks:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

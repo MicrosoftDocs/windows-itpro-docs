@@ -2,8 +2,6 @@
 title: Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in Windows
 description: How to set up Cortana to give salespeople insights on important CRM activities, including sales leads, accounts, and opportunities.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -14,7 +12,7 @@ manager: dougeby
 
 # Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization
 
-Cortana integration is a Preview feature that's available for your test or dev environment, starting with the CRM Online 2016 Update. If you decide to use this Preview feature, you'll need to turn in on and accept the license terms. After that, your salespeople will get proactive insights from Cortana on important CRM activities, including sales leads, accounts, and opportunities; presenting the most relevant info at any given time. This can even include getting company-specific news that surfaces when the person is meeting with a representative from another company.
+Cortana integration is a Preview feature that's available for your test or dev environment, starting with the CRM Online 2016 Update. If you decide to use this Preview feature, you'll need to turn in on and accept the license terms. After that, your salespeople will get proactive insights from Cortana on important CRM activities, including sales leads, accounts, and opportunities; presenting the most relevant information at any given time. This information can even include getting company-specific news that surfaces when the person is meeting with a representative from another company.
 
 >[!NOTE]
 >For more info about Dynamics CRM integration, how to turn on Cortana, and how to provide feedback, see [Preview feature: Set up Cortana integration](https://go.microsoft.com/fwlink/p/?LinkId=746819).
@@ -22,7 +20,7 @@ Cortana integration is a Preview feature that's available for your test or dev e
 ![Cortana at work, showing the sales data pulled from Dynamics CRM.](../images/cortana-crm-screen.png)
 
 ## Turn on Cortana with Dynamics CRM in your organization
-You must be a CRM administrator to turn on and use Preview features. For more info about what Preview features are and how to use them, see [What are Preview features and how do I enable them](https://go.microsoft.com/fwlink/p/?LinkId=746817)?
+You must be a CRM administrator to turn on and use Preview features. For more info about what Preview features are and how to use them, see [What are Preview features and how do I enable them](/dynamics365/marketing/marketing-preview-features).
 
 **To turn on Cortana with Dynamics CRM**
 

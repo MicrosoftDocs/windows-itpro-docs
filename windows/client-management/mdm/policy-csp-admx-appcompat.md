@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_AppCompat
 description: Policy CSP - ADMX_AppCompat
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 08/20/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_AppCompat
@@ -76,8 +76,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -102,7 +103,7 @@ If the status is set to Enabled, the MS-DOS subsystem is prevented from running,
 
 If the status is set to Disabled, the MS-DOS subsystem runs for all users on this computer.
 
-If the status is set to Not Configured, the OS falls back on a local policy set by the registry DWORD value **HKLM\System\CurrentControlSet\Control\WOW\DisallowedPolicyDefault**. If that value is non-0, this prevents all 16-bit applications from running. If that value is 0, 16-bit applications are allowed to run. If that value is also not present, on Windows 10 and above, the OS will launch the 16-bit application support control panel to allow an elevated administrator to make the decision; on Windows 7 and down-level, the OS will allow 16-bit applications to run.
+If the status is set to Not Configured, the OS falls back on a local policy set by the registry DWORD value **HKLM\System\CurrentControlSet\Control\WOW\DisallowedPolicyDefault**. If that value is non-0, this setting prevents all 16-bit applications from running. If that value is 0, 16-bit applications are allowed to run. If that value is also not present, on Windows 10 and above, the OS will launch the 16-bit application support control panel to allow an elevated administrator to make the decision; on Windows 7 and down-level, the OS will allow 16-bit applications to run.
 
 > [!NOTE]
 > This setting appears only in Computer Configuration.
@@ -129,8 +130,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -176,8 +178,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -198,11 +201,11 @@ The policy setting controls the state of the Application Telemetry engine in the
 
 Application Telemetry is a mechanism that tracks anonymous usage of specific Windows system components by applications.
 
-Turning Application Telemetry off by selecting "enable" will stop the collection of usage data.
+Turning off Application Telemetry by selecting "enable" will stop the collection of usage data.
 
 If the customer Experience Improvement program is turned off, Application Telemetry will be turned off regardless of how this policy is set.
 
-Disabling telemetry will take effect on any newly launched applications. To ensure that telemetry collection has stopped for all applications, please reboot your machine.
+Disabling telemetry will take effect on any newly launched applications. To ensure that telemetry collection has stopped for all applications, reboot your machine.
 
 <!--/Description-->
 
@@ -227,8 +230,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -278,8 +282,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -300,11 +305,11 @@ This policy setting controls the state of the application compatibility engine i
 
 The engine is part of the loader and looks through a compatibility database every time an application is started on the system. If a match for the application is found it provides either run-time solutions or compatibility fixes, or displays an Application Help message if the application has a known problem.
 
-Turning off the application compatibility engine will boost system performance.  However, this will degrade the compatibility of many popular legacy applications, and won't block known incompatible applications from installing. For example, this may result in a blue screen if an old anti-virus application is installed.
+Turning off the application compatibility engine will boost system performance. However, this turn-off will degrade the compatibility of many popular legacy applications, and won't block known incompatible applications from installing. For example, this prevention of blocking may result in a blue screen if an old anti-virus application is installed.
 
 The Windows Resource Protection and User Account Control features of Windows use the application compatibility engine to provide mitigations for application problems. If the engine is turned off, these mitigations won't be applied to applications and their installers and these applications may fail to install or run properly.
 
-This option is useful to server administrators who require faster performance and are aware of the compatibility of the applications they're using.  It's particularly useful for a web server where applications may be launched several hundred times a second, and the performance of the loader is essential.
+This option is useful to server administrators who require faster performance and are aware of the compatibility of the applications they're using. It's useful for a web server where applications may be launched several hundred times a second, and the performance of the loader is essential.
 
 > [!NOTE]
 > Many system processes cache the value of this setting for performance reasons. If you make changes to this setting, reboot to ensure that your system accurately reflects those changes.
@@ -332,8 +337,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -375,8 +381,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -425,8 +432,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -474,8 +482,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 

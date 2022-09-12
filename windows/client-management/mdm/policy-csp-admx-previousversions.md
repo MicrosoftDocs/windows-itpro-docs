@@ -1,22 +1,19 @@
 ---
 title: Policy CSP - ADMX_PreviousVersions
 description: Policy CSP - ADMX_PreviousVersions
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/01/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_PreviousVersions
 
-<hr/>
-
-<!--Policies-->
 ## ADMX_PreviousVersions policies  
 
 > [!TIP]
@@ -25,6 +22,10 @@ manager: dansimp
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<hr/>
+
+<!--Policies-->
 
 <dl>
   <dd>
@@ -64,8 +65,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -84,13 +86,10 @@ manager: dansimp
 <!--Description-->
 This policy setting lets you suppress the Restore button in the previous versions property page when the user has selected a previous version of a local file.  
 
-- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a local file.  
-
-- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a local file. 
-
-- If the user clicks the Restore button, Windows attempts to restore the file from the local disk.  
-
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a local file.
+- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a local file.   
+- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a local file.  
+- If the user clicks the Restore button, Windows attempts to restore the file from the local disk.   
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a local file.
 
 <!--/Description-->
 
@@ -114,8 +113,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -134,13 +134,10 @@ ADMX Info:
 <!--Description-->
 This policy setting lets you suppress the Restore button in the previous versions property page when the user has selected a previous version of a local file.  
 
-- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a local file.  
-
-- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a local file. 
-
-- If the user clicks the Restore button, Windows attempts to restore the file from the local disk.  
-
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a local file.
+- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a local file.   
+- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a local file.  
+- If the user clicks the Restore button, Windows attempts to restore the file from the local disk.   
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a local file.
 
 <!--/Description-->
 
@@ -164,8 +161,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -184,13 +182,10 @@ ADMX Info:
 <!--Description-->
 This setting lets you suppress the Restore button in the previous versions property page when the user has selected a previous version of a file on a file share.  
 
-- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.  
-
-- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share. 
-
-- If the user clicks the Restore button, Windows attempts to restore the file from the file share.  
-
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a file on a file share.
+- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.   
+- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share.  
+- If the user clicks the Restore button, Windows attempts to restore the file from the file share.   
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a file on a file share.
 
 <!--/Description-->
 
@@ -214,8 +209,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -234,13 +230,10 @@ ADMX Info:
 <!--Description-->
 This setting lets you suppress the Restore button in the previous versions property page when the user has selected a previous version of a file on a file share.  
 
-- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.  
-
-- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share. 
-
-- If the user clicks the Restore button, Windows attempts to restore the file from the file share.  
-
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a file on a file share.
+- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.   
+- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share.  
+- If the user clicks the Restore button, Windows attempts to restore the file from the file share.   
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a file on a file share.
 
 <!--/Description-->
 
@@ -265,8 +258,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -285,11 +279,9 @@ ADMX Info:
 <!--Description-->
 This policy setting lets you hide entries in the list of previous versions of a file in which the previous version is located on backup media. Previous versions can come from the on-disk restore points or the backup media.  
 
-- If you enable this policy setting, users cannot see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.  
-
-- If you disable this policy setting, users can see previous versions corresponding to backup copies as well as previous versions corresponding to on-disk restore points. 
-
-If you do not configure this policy setting, it is disabled by default.
+- If you enable this policy setting, users can't see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.   
+- If you disable this policy setting, users can see previous versions corresponding to backup copies and previous versions corresponding to on-disk restore points.  
+- If you don't configure this policy setting, it's disabled by default.
 
 <!--/Description-->
 
@@ -313,8 +305,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -333,11 +326,9 @@ ADMX Info:
 <!--Description-->
 This policy setting lets you hide entries in the list of previous versions of a file in which the previous version is located on backup media. Previous versions can come from the on-disk restore points or the backup media.  
 
-- If you enable this policy setting, users cannot see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.  
-
-- If you disable this policy setting, users can see previous versions corresponding to backup copies as well as previous versions corresponding to on-disk restore points. 
-
-If you do not configure this policy setting, it is disabled by default.
+- If you enable this policy setting, users can't see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.   
+- If you disable this policy setting, users can see previous versions corresponding to backup copies and previous versions corresponding to on-disk restore points. 
+- If you don't configure this policy setting, it's disabled by default.
 
 <!--/Description-->
 
@@ -361,8 +352,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -381,13 +373,10 @@ ADMX Info:
 <!--Description-->
 This setting lets you suppress the Restore button in the previous versions property page when the user has selected a previous version of a file on a file share.  
 
-- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.  
-
-- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share. 
-
-- If the user clicks the Restore button, Windows attempts to restore the file from the file share.  
-
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a file on a file share.
+- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.
+- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share.  
+- If the user clicks the Restore button, Windows attempts to restore the file from the file share.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a file on a file share.
 
 <!--/Description-->
 
@@ -411,8 +400,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -431,13 +421,10 @@ ADMX Info:
 <!--Description-->
 This setting lets you suppress the Restore button in the previous versions property page when the user has selected a previous version of a file on a file share.  
 
-- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.  
-
-- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share. 
-
-- If the user clicks the Restore button, Windows attempts to restore the file from the file share.  
-
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a file on a file share.
+- If you enable this policy setting, the Restore button is disabled when the user selects a previous version corresponding to a file on a file share.   
+- If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share.  
+- If the user clicks the Restore button, Windows attempts to restore the file from the file share.   
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a file on a file share.
 
 <!--/Description-->
 
@@ -452,3 +439,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

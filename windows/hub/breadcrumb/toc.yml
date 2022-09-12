@@ -45,7 +45,7 @@ items:
                 topicHref: /windows/security/threat-protection/auditing/security-auditing-overview
               - name: Microsoft Defender Application Guard
                 tocHref: /windows/security/threat-protection/microsoft-defender-application-guard/
-                topicHref: /windows/security/threat-protection/microsoft-defender-application-guard/
+                topicHref: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
               - name: Security policy settings
                 tocHref: /windows/security/threat-protection/security-policy-settings/
                 topicHref: /windows/security/threat-protection/security-policy-settings/security-policy-settings
@@ -54,4 +54,4 @@ items:
                 topicHref: /windows/security/threat-protection/windows-defender-application-control/
               - name: Windows Defender Firewall
                 tocHref: /windows/security/threat-protection/windows-firewall/
-                topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security
+                topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security              

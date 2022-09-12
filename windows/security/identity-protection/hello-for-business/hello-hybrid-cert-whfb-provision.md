@@ -1,29 +1,22 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning (Windows Hello for Business)
 description: In this article, learn about provisioning for hybrid certificate trust deployments of Windows Hello for Business.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- Hybrid deployment
-- Certificate trust
 
 ## Provisioning
 
@@ -31,7 +24,7 @@ The Windows Hello for Business provisioning begins immediately after the user ha
 
 ![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result.](images/Event358.png)
 
-The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
+The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is Azure Active Directory-joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 
 Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
 
@@ -52,7 +45,7 @@ The provisioning flow has all the information it needs to complete the Windows H
 - A fresh, successful multi-factor authentication
 - A validated PIN that meets the PIN complexity requirements
 
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect synchronizes the user's key to the on-premises Active Directory.
+The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  Azure Active Directory Connect synchronizes the user's key to the on-premises Active Directory.
 
 > [!IMPORTANT]
 > The following is the enrollment behavior prior to Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
@@ -69,7 +62,7 @@ After a successful key registration, Windows creates a certificate request using
 The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
 
 > [!NOTE]
-> In order for AD FS to verify the key used in the certificate request, it needs to be able to access the https://enterpriseregistration.windows.net endpoint.
+> In order for AD FS to verify the key used in the certificate request, it needs to be able to access the ```https://enterpriseregistration.windows.net``` endpoint.
 
 The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user’s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Windows Action Center.
 

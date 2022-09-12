@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - BitLocker
 description: Use the Policy configuration service provider (CSP) - BitLocker to manage encryption of PCs and devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - BitLocker
@@ -42,6 +42,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -60,7 +61,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies the BitLocker Drive Encryption method and cipher strength.
+This policy specifies the BitLocker Drive Encryption method and cipher strength.
 
 > [!NOTE]
 > XTS-AES 128-bit and XTS-AES 256-bit values are supported only on Windows 10 for desktop.

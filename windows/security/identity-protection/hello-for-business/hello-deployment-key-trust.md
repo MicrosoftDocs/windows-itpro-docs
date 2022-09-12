@@ -1,29 +1,22 @@
 ---
 title: Windows Hello for Business Deployment Guide - On Premises Key Deployment
 description: A guide to on premises, key trust Windows Hello for Business deployment.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # On Premises Key Trust Deployment
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- On-premises deployment
-- Key trust
 
 Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.  
 

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - WirelessDisplay
 description: Use the Policy CSP - WirelessDisplay setting to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - WirelessDisplay
@@ -56,11 +56,13 @@ manager: dansimp
 <a href="" id="wirelessdisplay-allowmdnsadvertisement"></a>**WirelessDisplay/AllowMdnsAdvertisement**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -96,11 +98,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowmdnsdiscovery"></a>**WirelessDisplay/AllowMdnsDiscovery**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -124,7 +128,7 @@ This policy setting allows you to turn off discovering the display service adver
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Don't allow
+-   0 - Doesn't allow
 -   1 - Allow
 
 <!--/SupportedValues-->
@@ -136,11 +140,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowmovementdetectiononinfrastructure"></a>**WirelessDisplay/AllowMovementDetectionOnInfrastructure**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -160,9 +166,9 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting allows you to disable the infrastructure movement detection feature.
 
-If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you're projecting over infrastructure.
+- If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure.
 
-If you set it to 1, your PC will detect that you've moved and will automatically disconnect your infrastructure Wireless Display session.
+- If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
 
 The default value is 1.
 
@@ -171,7 +177,7 @@ The default value is 1.
 
 The following list shows the supported values:
 
-- 0 - Don't allow
+- 0 - Doesn't allow
 - 1 (Default) - Allow
 
 <!--/SupportedValues-->
@@ -183,11 +189,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -223,11 +231,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -263,11 +273,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -289,7 +301,7 @@ Allow or disallow turning off the projection to a PC.
 
 If you set it to 0 (zero), your PC isn't discoverable and you can't project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-Value type is integer.
+Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -315,11 +327,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -355,11 +369,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -395,11 +411,13 @@ The following list shows the supported values:
 <a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -421,7 +439,7 @@ Allow or disallow requirement for a PIN for pairing.
 
 If you turn on this policy, the pairing ceremony for new devices will always require a PIN. If you turn off this policy or don't configure it, a PIN isn't required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-Value type is integer.
+Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -444,3 +462,7 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+CSP Article:
+
+## Related topics
+[Policy configuration service provider](policy-configuration-service-provider.md)

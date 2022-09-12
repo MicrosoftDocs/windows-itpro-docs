@@ -1,19 +1,18 @@
 ---
 title: Policy CSP - Security
 description: Learn how the Policy CSP - Security setting can specify whether to allow the runtime configuration agent to install provisioning packages.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Security
-
 
 <hr/>
 
@@ -53,7 +52,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -65,6 +63,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -127,6 +126,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -167,6 +167,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|||
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -185,7 +186,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-Admin access is required. The prompt will appear on first admin logon after a reboot when the TPM is in a non-ready state that can be remediated with a TPM Clear. The prompt will have a description of what clearing the TPM does and that it requires a reboot. The user can dismiss it, but it will appear on next admin logon after restart.
+Admin access is required. The prompt will appear on first admin logon after a reboot, when the TPM is in a non-ready state that can be remediated with a TPM Clear. The prompt will have a description of what clearing the TPM does and that it requires a reboot. The user can dismiss it, but it will appear on next admin logon after restart.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -200,7 +201,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   0 (default) – Won't force recovery from a non-ready TPM state.
--   1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
+-   1 – Will prompt to clear the TPM, if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -216,6 +217,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -242,9 +244,9 @@ Configures the use of passwords for Windows features.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--  0 -Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features)
--  1- Allow passwords (Passwords continue to be allowed to be used for Windows features)
--  2- Default (Feature defaults as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords")
+-  0 -Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features).
+-  1- Allow passwords (Passwords continue to be allowed to be used for Windows features).
+-  2- Default (Feature defaults as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords").
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -260,6 +262,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -303,6 +306,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -324,9 +328,10 @@ The following list shows the supported values:
 This policy controls the Admin Authentication requirement in RecoveryEnvironment.
 
 Supported values:  
--  0 - Default: Keep using default(current) behavior
--  1 - RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment
--  2 - NoRequireAuthentication: Admin Authentication isn't required for components in RecoveryEnvironment
+
+-  0 - Default: Keep using default(current) behavior.
+-  1 - RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment.
+-  2 - NoRequireAuthentication: Admin Authentication isn't required for components in RecoveryEnvironment.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -374,6 +379,7 @@ If the MDM policy is set to "NoRequireAuthentication" (2)
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -392,7 +398,6 @@ If the MDM policy is set to "NoRequireAuthentication" (2)
 <!--/Scope-->
 <!--Description-->
 Allows enterprise to turn on internal storage encryption.
-
 
 Most restricted value is 1.
 
@@ -420,6 +425,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -460,6 +466,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -477,8 +484,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots.
-
+Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS), when a device boots or reboots.
 
 Setting this policy to 1 (Required):
 
@@ -488,7 +494,6 @@ Setting this policy to 1 (Required):
 > [!NOTE]
 > We recommend that this policy is set to Required after MDM enrollment.
  
-
 Most restricted value is 1.
 
 <!--/Description-->
@@ -504,3 +509,7 @@ The following list shows the supported values:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

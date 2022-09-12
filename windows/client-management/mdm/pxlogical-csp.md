@@ -1,19 +1,17 @@
 ---
 title: PXLOGICAL configuration service provider
 description: The PXLOGICAL configuration service provider is used to add, remove, or modify WAP logical and physical proxies by using WAP or the standard Windows techniques.
-ms.assetid: b5fc84d4-aa32-4edd-95f1-a6a9c0feb459
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
 # PXLOGICAL configuration service provider
-
 
 The PXLOGICAL configuration service provider is used to add, remove, or modify WAP logical and physical proxies by using WAP or the standard Windows techniques.
 
@@ -45,8 +43,8 @@ PXLOGICAL
 -------TO-NAPID
 ```
 
-
 The following example shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol isn't supported by this configuration service provider.
+
 
 ```console
 PXLOGICAL

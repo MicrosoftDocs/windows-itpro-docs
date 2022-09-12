@@ -27,7 +27,7 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](feature-availability.md).
 
 Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your WDAC policy but should be included.
 
@@ -59,7 +59,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 4. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to generate a new WDAC policy from logged audit events. This example uses a **FilePublisher** file rule level and a **Hash** fallback level. Warning messages are redirected to a text file **EventsPolicyWarnings.txt**.
 
    ```powershell
-   New-CIPolicy -FilePath $EventsPolicy -Audit -Level FilePublisher -Fallback Hash –UserPEs -MultiplePolicyFormat 3> $EventsPolicyWarnings
+   New-CIPolicy -FilePath $EventsPolicy -Audit -Level FilePublisher -Fallback SignedVersion,FilePublisher,Hash –UserPEs -MultiplePolicyFormat 3> $EventsPolicyWarnings
    ```
 
    > [!NOTE]

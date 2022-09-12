@@ -1,13 +1,8 @@
 ---
 title: Configure a PXE server to load Windows PE (Windows 10)
 description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network. 
-keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
@@ -39,7 +34,7 @@ All four of the roles specified above can be hosted on the same computer or each
 
 2. Right-click **Deployment and Imaging Tools Environment** and then click **Run as administrator**. The Deployment and Imaging Tools Environment shortcut opens a Command Prompt window and automatically sets environment variables to point to all the necessary tools.
 
-3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. The value of **&lt;architecture&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory does not already exist, it will be created.
+3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. The value of **&lt;architecture&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory doesn't already exist, it will be created.
 
     ```
     copype.cmd <architecture> <destination>
@@ -172,7 +167,7 @@ ramdisksdipath          \Boot\boot.sdi
 
 ## PXE boot process summary
 
-The following summarizes the PXE client boot process.
+The following process summarizes the PXE client boot.
 
 >The following assumes that you have configured DHCP option 67 (Bootfile Name) to "boot\PXEboot.n12" which enables direct boot to PXE with no user interaction. For more information about DHCP options for network boot, see [Managing Network Boot Programs](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732351(v=ws.10)).
 
@@ -182,7 +177,7 @@ The following summarizes the PXE client boot process.
 5.  Bootmgr.exe reads the BCD operating system entries and downloads boot\\boot.sdi and the Windows PE image (boot\\boot.wim). Optional files that can also be downloaded include true type fonts (boot\\Fonts\\wgl4\_boot.ttf) and the hibernation state file (\\hiberfil.sys) if these files are present.
 6.  Bootmgr.exe starts Windows PE by calling winload.exe within the Windows PE image.
 7.  Windows PE loads, a command prompt opens and wpeinit.exe is run to initialize Windows PE.
-8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. Using these tools together with a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
+8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. With the help of these tools accompanied by a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
 
 ## See Also 
 

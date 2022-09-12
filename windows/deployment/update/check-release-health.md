@@ -3,12 +3,9 @@ title: "How to check Windows release health"
 ms.author: v-nishmi
 author: DocsPreview
 manager: jren
-audience: Admin
 ms.topic: article
 ms.prod: w10
 localization_priority: Normal
-f1.keywords:
-- CSH
 ms.custom: 
 - Adm_O365
 - 'O365P_ServiceHealthModern'
@@ -24,9 +21,7 @@ search.appverid:
 - MOE150
 - BCS160
 - IWA160
-ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: "Check the release health status of Microsoft 365 services before you call support to see if there is an active service interruption."
-feedback_system: none
 ---
 
 # How to check Windows release health

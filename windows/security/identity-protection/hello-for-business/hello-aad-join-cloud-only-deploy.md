@@ -1,20 +1,18 @@
 ---
 title: Azure Active Directory join cloud only deployment
 description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device. 
-keywords: identity, Hello, Active Directory, cloud, 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 06/23/2021
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 # Azure Active Directory join cloud only deployment
 
@@ -91,9 +89,9 @@ If there's a conflicting Device policy and User policy, the User policy would ta
 
 ## Related reference documents for Azure AD join scenarios
 
-- [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD-joined devices](/azure/active-directory/devices/concept-azure-ad-join)
 - [Plan your Azure Active Directory device deployment](/azure/active-directory/devices/plan-device-deployment)
 - [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan)
-- [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin)
+- [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin)
 - [Manage device identities using the Azure portal](/azure/active-directory/devices/device-management-azure-portal)
 - [Azure AD Join Single Sign-on Deployment](hello-hybrid-aadj-sso.md)

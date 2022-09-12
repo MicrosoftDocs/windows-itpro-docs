@@ -1,28 +1,35 @@
 ---
 title: SecurityPolicy CSP
 description: The SecurityPolicy CSP is used to configure security policy settings for WAP push, OMA DM, Service Indication (SI), Service Loading (SL), and MMS.
-ms.assetid: 6014f8fe-f91b-49f3-a357-bdf625545bc9
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
 # SecurityPolicy CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The SecurityPolicy configuration service provider is used to configure security policy settings for WAP push, OMA Client Provisioning, OMA DM, Service Indication (SI), Service Loading (SL), and MMS.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_SECURITY\_POLICIES capabilities to be accessed from a network configuration application.
 
- 
-
-For the SecurityPolicy CSP, you can't use the Replace command unless the node already exists.
+For the SecurityPolicy CSP, you cannot use the Replace command unless the node already exists.
 
 The following example shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
 
@@ -112,7 +119,6 @@ The following security policies are supported.
 
 ## Remarks
 
-
 Security roles allow or restrict access to device resources. The security role is based on the message origin and how the message is signed. You can assign multiple roles to a message in the security policy XML document by combining the decimal values of the roles that you want to assign. For example, to assign both the SECROLE\_KNOWN\_PPG and SECROLE\_OPERATOR\_TPS roles, use the decimal value 384 (256+128).
 
 The following security roles are supported.
@@ -123,10 +129,7 @@ The following security roles are supported.
 |SECROLE_KNOWN_PPG|256|Known Push Proxy Gateway.<br>Messages assigned this role indicate that the device knows the address to the Push Proxy Gateway.|
 |SECROLE_ANY_PUSH_SOURCE|4096|Push Router.<br>Messages received by the push router will be assigned to this role.|
 
- 
-
 ## OMA Client Provisioning examples
-
 
 Setting a security policy:
 
@@ -149,7 +152,6 @@ Querying a security policy:
 ```
 
 ## OMA DM examples
-
 
 Setting a security policy:
 
@@ -195,7 +197,6 @@ Querying a security policy:
 
 ## Microsoft Custom Elements
 
-
 The following table shows the Microsoft custom elements that this Configuration Service Provider supports for OMA Client Provisioning.
 
 |Elements|Available|
@@ -203,9 +204,6 @@ The following table shows the Microsoft custom elements that this Configuration 
 |parm-query|Yes|
 |noparm|Yes. If this element is used, then the policy is set to 0 by default (corresponding to the most restrictive of policy values).|
 
- 
-
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

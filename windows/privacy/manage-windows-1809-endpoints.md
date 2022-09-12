@@ -1,15 +1,11 @@
 ---
 title: Connection endpoints for Windows 10, version 1809
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 1809.
-keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: high
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
@@ -163,6 +159,10 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 | searchui <br> backgroundtaskhost | HTTPS   | `www.bing.com/threshold/xls.aspx` |
 
 ## Certificates
+
+Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA) are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates where the server certificate issuer is unknown or is not trusted by the service. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.
+
+If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.
 
 The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It's possible to [turn off traffic to this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update), but that isn't recommended because when root certificates are updated over time, applications and websites may stop working because they didn't receive an updated root certificate the application uses.
 
