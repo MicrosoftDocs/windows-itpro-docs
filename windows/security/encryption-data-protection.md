@@ -6,7 +6,7 @@ author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 09/22/2022
 ms.prod: m365-security
 ms.technology: windows-sec
 ms.localizationpriority: medium
@@ -45,8 +45,17 @@ BitLocker provides encryption for the operating system, fixed data, and removabl
 
 Windows consistently improves data protection by improving existing options and providing new strategies.
 
+## Personal Data Encryption
+<!-- Max 5963468-->
+(*Applies to: Windows 11, version 22H2 and later*)
+
+Personal Data Encryption (PDE) is a new feature in Windows 11 22H2.
+
+
+
 
 ## See also
 
 - [Encrypted Hard Drive](information-protection/encrypted-hard-drive.md)
 - [BitLocker](information-protection/bitlocker/bitlocker-overview.md)
+- [Personal Data Encryption]
