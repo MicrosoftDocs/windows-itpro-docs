@@ -20,7 +20,7 @@ Windows Autopatch is a cloud service for enterprise customers designed to keep e
 
 Windows Autopatch provides its service to enterprise customers, and properly administers customers' enrolled devices by using data from various sources.
 
-The sources include Azure Active Directory (Azure AD), Microsoft Intune, and Microsoft Windows 10/11. The sources provide a comprehensive view of the devices that Windows Autopatch manages. The service also uses these Microsoft services to enable Windows Autopatch to provide IT as a Service (ITaaS) capabilities:
+The sources include Azure Active Directory (Azure AD), Microsoft Intune, and Microsoft Windows 10/11. The sources provide a comprehensive view of the devices that Windows Autopatch manages.
 
 | Data source | Purpose |
 | ------ | ------ |
