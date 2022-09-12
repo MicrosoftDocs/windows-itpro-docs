@@ -2,6 +2,17 @@
 
 
 
+## Week of September 05, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/8/2022 | [Education scenarios Microsoft Store for Education](/education/windows/education-scenarios-store-for-business) | modified |
+| 9/8/2022 | [Get Minecraft Education Edition](/education/windows/get-minecraft-for-education) | modified |
+| 9/8/2022 | [For teachers get Minecraft Education Edition](/education/windows/teacher-get-minecraft) | modified |
+| 9/9/2022 | [Take tests in Windows](/education/windows/take-tests-in-windows-10) | modified |
+
+
 ## Week of August 29, 2022
 
 
