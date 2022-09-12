@@ -1,32 +1,16 @@
 ---
 title: What does USMT migrate (Windows 10)
 description: Learn how User State Migration Tool (USMT) 10.0 is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language.
-ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 09/12/2017
 ms.topic: article
 ---
 
 # What does USMT migrate?
-
-## In this topic
-
--   [Default migration scripts](#bkmk-defaultmigscripts)
-
--   [User Data](#bkmk-3)
-
--   [Operating-system components](#bkmk-4)
-
--   [Supported applications](#bkmk-2)
-
--   [What USMT does not migrate](#no)
 
 ## <a href="" id="bkmk-defaultmigscripts"></a>Default migration scripts
 
@@ -106,7 +90,7 @@ The following components are migrated by default using the manifest files:
 
 -   Fonts
 
--   Group membership. USMT migrates users’ group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then clicking **Manage**. When running an offline migration, the use of a **&lt;ProfileControl&gt;** section in the Config.xml file is required.
+-   Group membership. USMT migrates users’ group settings. The groups to which a user belongs can be found by right-clicking **My Computer** on the Start menu and then selecting **Manage**. When running an offline migration, the use of a **&lt;ProfileControl&gt;** section in the Config.xml file is required.
 
 -   \*Windows Internet Explorer® settings
 
@@ -138,17 +122,17 @@ The following components are migrated by default using the manifest files:
 
 -   Windows Rights Management
 
-\* These settings are not available for an offline migration. For more information, see [Offline Migration Reference](offline-migration-reference.md).
+\* These settings aren't available for an offline migration. For more information, see [Offline Migration Reference](offline-migration-reference.md).
 
 > [!IMPORTANT]
 > This list may not be complete. There may be additional components that are migrated.
 
 > [!NOTE]
-> Some settings, such as fonts, are not applied by the LoadState tool until after the destination computer has been restarted. For this reason, restart the destination computer after you run the LoadState tool.
+> Some settings, such as fonts, aren't applied by the LoadState tool until after the destination computer has been restarted. For this reason, restart the destination computer after you run the LoadState tool.
 
 ## <a href="" id="bkmk-2"></a>Supported applications
 
-Although it is not required for all applications, it is good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that the migrated settings are not overwritten by the application installers.
+Even though it's not required for all applications, it's good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that migrated settings aren't overwritten by the application installers.
 
 > [!NOTE]
 > 
@@ -204,9 +188,9 @@ When you specify the MigApp.xml file, USMT migrates the settings for the followi
 |Yahoo Messenger|9|
 |Microsoft Zune™ Software|3|
 
-## <a href="" id="no"></a>What USMT does not migrate
+## <a href="" id="no"></a>What USMT doesn't migrate
 
-The following is a list of the settings that USMT does not migrate. If you are having a problem that is not listed here, see [Common Issues](usmt-common-issues.md).
+The following is a list of the settings that USMT doesn't migrate. If you are having a problem that isn't listed here, see [Common Issues](usmt-common-issues.md).
 
 ### Application settings
 
@@ -218,7 +202,7 @@ USMT does not migrate the following application settings:
 
 -   Microsoft Project settings, when migrating from Office 2003 to Office 2007 system.
 
--   ICQ Pro settings, if ICQ Pro is installed in a different location on the destination computer. To successfully migrate the settings of ICQ Pro, you must install ICQ Pro in the same location on the destination computer as it was on the source computer. Otherwise, after you run the LoadState tool, the application will not start. You may encounter problems when:
+-   ICQ Pro settings, if ICQ Pro is installed in a different location on the destination computer. To successfully migrate the settings of ICQ Pro, you must install ICQ Pro in the same location on the destination computer as it was on the source computer. Otherwise, after you run the LoadState tool, the application won't start. You may encounter problems when:
 
     -   You change the default installation location on 32-bit destination computers.
 
@@ -230,7 +214,7 @@ USMT does not migrate the following operating-system settings.
 
 -   Local printers, hardware-related settings, drivers, passwords, application binary files, synchronization files, DLL files, or other executable files.
 
--   Permissions for shared folders. After migration, you must manually re-share any folders that were shared on the source computer.
+-   Permissions for shared folders. After migration, you must manually reshare any folders that were shared on the source computer.
 
 -   Files and settings migrating between operating systems with different languages. The operating system of the source computer must match the language of the operating system on the destination computer.
 
@@ -240,13 +224,17 @@ USMT does not migrate the following operating-system settings.
 
 You should also note the following:
 
--   You should run USMT from an account with administrative credentials. Otherwise, some data will not migrate. When running the ScanState and LoadState tools you must run the tools in Administrator mode from an account with administrative credentials. If you do not run USMT in Administrator mode, only the user profile that is logged on will be included in the migration. In addition, you must run the ScanState tool on Windows XP from an account with administrative credentials. Otherwise, some operating-system settings will not migrate. To run in Administrator mode, click **Start**, click **All Programs**, click **Accessories**, right-click **Command Prompt**, and then click **Run as administrator**.
+-   You should run USMT from an account with administrative credentials. Otherwise, some data will not migrate. When running the ScanState and LoadState tools you must run the tools in Administrator mode from an account with administrative credentials. If you don't run USMT in Administrator mode, only the user profile that is logged on will be included in the migration. In addition, you must run the ScanState tool on Windows XP from an account with administrative credentials. Otherwise, some operating-system settings will not migrate. To run in Administrator mode, select **Start**, **All Programs**, **Accessories**, right-click **Command Prompt**, and then select **Run as administrator**.
 
 -   You can use the /**localonly** option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when you specify /**localonly**, see [ScanState Syntax](usmt-scanstate-syntax.md).
 
 ### Start menu layout
 
 Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
+
+### User profiles from Active Directory to Azure Active Directory
+
+USMT doesn't support migrating user profiles from Active Directory to Azure Active Directory.
 
 ## Related topics
 

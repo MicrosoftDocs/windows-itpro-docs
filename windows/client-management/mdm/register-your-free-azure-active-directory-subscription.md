@@ -1,14 +1,13 @@
 ---
 title: Register your free Azure Active Directory subscription
 description: Paid subscribers to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, have a free subscription to Azure AD.
-ms.assetid: 97DCD303-BB11-4AFF-84FE-B7F14CDF64F7
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -29,7 +28,7 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
 
     ![screen for registering azure-ad](images/azure-ad-add-tenant11.png)
 
-3.  On the **Admin center** page, under Admin Centers on the left, click **Azure Active Directory**. This will take you to the Azure Active Directory portal.
+3.  On the **Admin center** page, under Admin Centers on the left, click **Azure Active Directory**. You're taken to the Azure Active Directory portal.
 
     ![Azure-AD-updated.](https://user-images.githubusercontent.com/41186174/71594506-e4845300-2b40-11ea-9a08-c21c824e12a4.png)
 

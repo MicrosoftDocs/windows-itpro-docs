@@ -4,7 +4,6 @@ ms.reviewer:
 manager: dansimp
 description: Learn about the topics that are available to help you troubleshoot common problems related to Windows networking.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
@@ -28,7 +27,7 @@ The following topics are available to help you troubleshoot common problems rela
 
 [802.1X authenticated wired access overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831831(v=ws.11))<br>
 [802.1X authenticated wireless access overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994700(v%3dws.11))<br>
-[Wireless cccess deployment overview](/windows-server/networking/core-network-guide/cncg/wireless/b-wireless-access-deploy-overview)<br>
+[Wireless access deployment overview](/windows-server/networking/core-network-guide/cncg/wireless/b-wireless-access-deploy-overview)<br>
 [TCP/IP technical reference](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379473(v=ws.10))<br>
 [Network Monitor](/windows/desktop/netmon2/network-monitor)<br>
 [RPC and the network](/windows/desktop/rpc/rpc-and-the-network)<br>

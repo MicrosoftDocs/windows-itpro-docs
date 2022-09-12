@@ -5,7 +5,6 @@ search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2021
 ms.prod: m365-security
@@ -13,8 +12,7 @@ ms.technology: windows-sec
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
-ms.reviewer: jsuther
-f1.keywords: NOCSH  
+ms.reviewer: jsuther  
 ---
 
 # Secure Boot and Trusted Boot
@@ -27,7 +25,7 @@ Secure Boot and Trusted Boot help prevent malware and corrupted components from 
 
 The first step in protecting the operating system is to ensure that it boots securely after the initial hardware and firmware boot sequences have safely finished their early boot sequences. Secure Boot makes a safe and trusted path from the Unified Extensible Firmware Interface (UEFI) through the Windows kernel's Trusted Boot sequence. Malware attacks on the Windows boot sequence are blocked by the signature-enforcement handshakes throughout the boot sequence between the UEFI, bootloader, kernel, and application environments.
 
-As the PC begins the boot process, it will first verify that the firmware is digitally signed, reducing the risk of firmware rootkits. Secure Boot then checks all code that runs before the operating system and checks the OS bootloader’s digital signature to ensure that it is trusted by the Secure Boot policy and hasn’t been tampered with. 
+As the PC begins the boot process, it will first verify that the firmware is digitally signed, reducing the risk of firmware rootkits. Secure Boot then checks all code that runs before the operating system and checks the OS bootloader’s digital signature to ensure that it's trusted by the Secure Boot policy and hasn’t been tampered with. 
 
 ## Trusted Boot
 

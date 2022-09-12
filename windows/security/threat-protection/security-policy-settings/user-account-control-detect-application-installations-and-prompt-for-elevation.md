@@ -38,7 +38,7 @@ Some software might attempt to install itself after being given permission to ru
 
 -   **Disabled**
 
-    Application installation packages that require an elevation of privilege to install are not detected and the user is not prompted for administrative credentials.
+    Application installation packages that require an elevation of privilege to install aren't detected and the user isn't prompted for administrative credentials.
 
 ### Best practices
 
@@ -68,7 +68,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 

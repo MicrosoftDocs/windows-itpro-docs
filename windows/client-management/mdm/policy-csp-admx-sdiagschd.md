@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_sdiagschd
-description: Policy CSP - ADMX_sdiagschd
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_sdiagschd.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/17/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_sdiagschd
@@ -43,8 +43,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -63,14 +64,14 @@ manager: dansimp
 <!--Description-->
 This policy determines whether scheduled diagnostics will run to proactively detect and resolve system problems.  
 
-- If you enable this policy setting, you must choose an execution level. 
+If you enable this policy setting, you must choose an execution level from the following:
 
-If you choose detection and troubleshooting only, Windows will periodically detect and troubleshoot problems. The user will be notified of the problem for interactive resolution. 
-If you choose detection, troubleshooting and resolution, Windows will resolve some of these problems silently without requiring user input. 
+- If you choose detection and troubleshooting only, Windows will periodically detect and troubleshoot problems. The user will be notified of the problem for interactive resolution. 
+- If you choose detection, troubleshooting and resolution, Windows will resolve some of these problems silently without requiring user input. 
 
-- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve problems on a scheduled basis. 
+If you disable this policy setting, Windows won't be able to detect, troubleshoot or resolve problems on a scheduled basis. 
 
-If you do not configure this policy setting, local troubleshooting preferences will take precedence, as configured in the control panel. If no local troubleshooting preference is configured, scheduled diagnostics are enabled for detection, troubleshooting and resolution by default. No reboots or service restarts are required for this policy to take effect: changes take effect immediately. This policy setting will only take effect when the Task Scheduler service is in the running state. When the service is stopped or disabled, scheduled diagnostics will not be executed.  The Task Scheduler service can be configured with the Services snap-in to the Microsoft Management Console.
+If you don't configure this policy setting, local troubleshooting preferences will take precedence, as configured in the control panel. If no local troubleshooting preference is configured, scheduled diagnostics are enabled for detection, troubleshooting and resolution by default. No reboots or service restarts are required for this policy to take effect: changes take effect immediately. This policy setting will only take effect when the Task Scheduler service is in the running state. When the service is stopped or disabled, scheduled diagnostics won't be executed.  The Task Scheduler service can be configured with the Services snap-in to the Microsoft Management Console.
 
 <!--/Description-->
 
@@ -88,3 +89,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

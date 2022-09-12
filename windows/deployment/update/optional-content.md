@@ -2,13 +2,10 @@
 title: Migrating and acquiring optional Windows content
 description: Keep language resources and Features on Demand during operating system updates
 ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

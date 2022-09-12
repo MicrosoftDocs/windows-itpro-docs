@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Bluetooth
 description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/12/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Bluetooth
@@ -55,6 +55,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -73,9 +74,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether the device can send out Bluetooth advertisements.
+This policy specifies whether the device can send out Bluetooth advertisements.
 
-If this is not set or it is deleted, the default value of 1 (Allow) is used.
+If this policy isn't set or is deleted, the default value of 1 (Allow) is used.
 
 Most restricted value is 0.
 
@@ -83,7 +84,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral.
+-   0 – Not allowed. When set to 0, the device won't send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement isn't received by the peripheral.
 -   1 (default) – Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral.
 
 <!--/SupportedValues-->
@@ -100,6 +101,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -118,9 +120,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether other Bluetooth-enabled devices can discover the device.
+This policy specifies whether other Bluetooth-enabled devices can discover the device.
 
-If this is not set or it is deleted, the default value of 1 (Allow) is used.
+If this policy isn't set or is deleted, the default value of 1 (Allow) is used.
 
 Most restricted value is 0.
 
@@ -128,7 +130,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device.
+-   0 – Not allowed. When set to 0, other devices won't be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you can't see the name of the device.
 -   1 (default) – Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it.
 
 <!--/SupportedValues-->
@@ -145,6 +147,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -163,7 +166,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
+This policy specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -186,6 +189,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -227,6 +231,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -247,9 +252,9 @@ The following list shows the supported values:
 <!--Description-->
 Sets the local Bluetooth device name.
 
-If this is set, the value that it is set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified.
+If this name is set, the value that it's set to will be used as the Bluetooth device name. To verify the policy is set, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that the value that was specified.
 
-If this policy is not set or it is deleted, the default local radio name is used.
+If this policy isn't set or is deleted, the default local radio name is used.
 
 <!--/Description-->
 <!--/Policy-->
@@ -265,6 +270,7 @@ If this policy is not set or it is deleted, the default local radio name is used
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -301,6 +307,7 @@ The default value is an empty string. For more information, see [ServicesAllowed
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -327,7 +334,7 @@ The following list shows the supported values:
 - 0 (default) - All Bluetooth traffic is allowed.
 - N - A number from 1 through 16 representing the bytes that must be used in the encryption process. Currently, 16 is the largest allowed value for N and 16 bytes is the largest key size that Bluetooth supports. If you want to enforce Windows to always use Bluetooth encryption, ignoring the precise encryption key strength, use 1 as the value for N.
 
-For more information on allowed key sizes, refer to Bluetooth Core Specification v5.1.
+For more information on allowed key sizes, see Bluetooth Core Specification v5.1.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -346,7 +353,7 @@ For more information on allowed key sizes, refer to Bluetooth Core Specification
 
 ## ServicesAllowedList usage guide
 
-When the Bluetooth/ServicesAllowedList policy is provisioned, it will only allow pairing and connections of Windows PCs and phones to explicitly defined Bluetooth profiles and services. It is an allowed list, enabling admins to still allow custom Bluetooth profiles that are not defined by the Bluetooth Special Interests Group (SIG).
+When the Bluetooth/ServicesAllowedList policy is provisioned, it will only allow pairing and connections of Windows PCs and phones to explicitly defined Bluetooth profiles and services. It's an allowed list, enabling admins to still allow custom Bluetooth profiles that aren't defined by the Bluetooth Special Interests Group (SIG).
 
 - Disabling a service shall block incoming and outgoing connections for such services
 - Disabling a service shall not publish an SDP record containing the service being blocked
@@ -381,7 +388,7 @@ Hands Free Profile UUID = base UUID + 0x111E to the beginning = 0000**111E**-000
 |Headset Service Class|For older voice-enabled headsets|0x1108|
 |PnP Information|Used to identify devices occasionally|0x1200|
 
-This means that if you only want Bluetooth headsets, the UUIDs to include are:
+If you only want Bluetooth headsets, the UUIDs to include are:
 
 {0000111E-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}
 

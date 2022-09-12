@@ -49,7 +49,7 @@ The following tools can help you administer the application control policies cre
 
     You can edit an AppLocker policy by adding, changing, or removing rules by using the Group Policy Management Console (GPMC).
 
-    If you want additional features to manage AppLocker policies, such as version control, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack.
+    If you want more features to manage AppLocker policies, such as version control, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack.
 
 -   **Remote Server Administration Tools (RSAT)**
 

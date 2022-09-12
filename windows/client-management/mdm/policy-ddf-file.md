@@ -1,14 +1,13 @@
 ---
 title: Policy DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Policy configuration service provider.
-ms.assetid: D90791B5-A772-4AF8-B058-5D566865AF8D
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/28/2020
 ---

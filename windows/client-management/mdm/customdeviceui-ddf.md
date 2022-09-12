@@ -1,19 +1,17 @@
 ---
 title: CustomDeviceUI DDF
 description: Learn about the OMA DM device description framework (DDF) for the CustomDeviceUI configuration service provider.
-ms.assetid: E6D6B902-C57C-48A6-9654-CCBA3898455E
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # CustomDeviceUI DDF
-
 
 This topic shows the OMA DM device description framework (DDF) for the **CustomDeviceUI** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
