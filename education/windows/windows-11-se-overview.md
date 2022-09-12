@@ -43,7 +43,7 @@ The following table lists the different application types available in Windows o
 |Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and may require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they'll fail.|
 
 > [!IMPORTANT]
-> If there are specific Win32 or UWP applications that you want to allow, work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps).
+> If there are specific Win32 or UWP applications that you want to allow, work with Microsoft to get them enabled. For more information, see [Add your own applications](#add-your-own-applications).
 
 ## Applications included in Windows 11 SE
 
@@ -140,7 +140,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 
 ## Add your own applications
 
-If the applications you need aren't in the [available apps list](#available-apps), then you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Anyone from a school district can submit the request. In the form, sign in with your school account, such as `user@contoso.edu`. We'll update you using this email account.
+If the applications you need aren't in the [available applications list](#available-applications), then you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Anyone from a school district can submit the request. In the form, sign in with your school account, such as `user@contoso.edu`. We'll update you using this email account.
 
 Microsoft reviews every app request to make sure each app meets the following requirements:
 
@@ -169,9 +169,9 @@ For more information on Intune requirements for adding education apps, see [Conf
 
 When you deploy an app using Intune for Education, you may get a `0x87D300D9` error code with a `Failed` state in the [Intune for Education portal](https://intuneeducation.portal.azure.com). If you have an app that fails with this error, then:
 
-- Make sure the app is on the [available apps list](#available-apps). Or, make sure your app is [approved for Windows 11 SE](#add-your-own-apps)
-- If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-apps) and [Configure applications with Microsoft Intune][EDUWIN-1]
-- If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own apps](#add-your-own-apps). Or, use an app that runs in a web browser, such as a web app or PWA
+- Make sure the app is on the [available applications list](#available-applications). Or, make sure your app is [approved for Windows 11 SE](#add-your-own-applications)
+- If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-applications) and [Configure applications with Microsoft Intune][EDUWIN-1]
+- If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own apps](#add-your-own-applications). Or, use an app that runs in a web browser, such as a web app or PWA
 
 ## Related articles
 
