@@ -1,6 +1,6 @@
 ---
-title: CI Policy, Token, and Miscellaneous Commands
-description: Learn how to use Policy Commands, Token Commands, and Miscellaneous Commands.
+title: Managing CI Policies and Tokens with CiTool
+description: Learn how to use Policy Commands, Token Commands, and Miscellaneous Commands in CiTool
 author: valemieux
 ms.author: jogeurte
 ms.service: security
@@ -43,16 +43,13 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 
 ## Examples
 
->[!NOTE]
->The following examples assume you have extracted the policy file {BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip to C:\windows\system32
-
 1. Deploy a WDAC policy onto the system
 
 ```powershell
 PS C:\windows\system32> .\BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip -up
 
 C:\Windows\System32>.\CITool.exe -update-policy \windows\system32\BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip
-Usage: CiTool.exe COMMAND [Command-Options] [-json]
+Usage: CiTool COMMAND [Command-Options] [-json]
 Commands:
 ----------------------------- Policy Commands ---------------------------------
   --update-policy /Path/To/Policy/File
@@ -90,14 +87,14 @@ Commands:
      Format output as json and suppress input
 ```
 
-2. Refresh the WDAC policies in the \Windows\system32\CodeIntegrity\CiPolicies\Active folder
+2. Refresh the WDAC policies in the \Windows\System32\CodeIntegrity\CiPolicies\Active folder
 ```powershell
 PS C:\Users\[USER] cd \Windows\system32\CodeIntegrity\CiPolicies\Active
 PS C:\Windows\System32\CodeIntegrity\CiPolicies\Active>.\CITool --refresh
 Operation Successful
 ```
 
-3. Remove a specific WDAC policy by GUID
+3. Remove a specific WDAC policy by its policy ID
 ```powershell
 PS C:\Users\[USER] cd \windows\system32
 PS C:\Windows\System32>.\CITool.exe --remove-policy {BF61FE40-8929-4FDF-9EC2-F7A767717F0B}
