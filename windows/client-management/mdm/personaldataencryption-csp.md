@@ -30,7 +30,9 @@ The following shows the PersonalDataEncryption configuration service provider in
 
 The public API allows the applications running as the user to encrypt data as soon as this policy is enabled. However, prerequisites must be met for the PDE to be enabled.
 
-**Status/PersonalDataEncryptionStatus**: Reports the current status of Personal Data Encryption (PDE) for the user. If prerequisites of PDE aren't met, then the report will be 0. If all prerequisites are met for PDE, PDE won't be enabled, and the will be report 1.
+**Status/PersonalDataEncryptionStatus**: Reports the current status of Personal Data Encryption (PDE) for the user. If prerequisites of PDE aren't met, then the report will be 0.  If all prerequisites are met for PDE, then PDE will be enabled and this will report 1.
+
+**Applicability**: The policy is only applicable on enterprise and education SKUs.
 
 
 |Edition|Windows 10|Windows 11|
