@@ -33,17 +33,17 @@
       href: mcc-enterprise.md
     - name: MCC for ISPs
       items:
-      - name: MCC for ISP overview
+      - name: Overview
         href: mcc-isp-overview.md
       - name: Concepts
         items:
-        - name: Device Provisioning
+        - name: Device provisioning
           href: mcc-isp-device-provisioning.md
-        - name: Client Routing
+        - name: Client routing
           href: mcc-isp-client-routing.md
-        - name: Cache Node Configuration
+        - name: Cache node configuration
           href: mcc-isp-cache-node-configuration.md
-        - name: Traffic Estimation
+        - name: Traffic estimation
           href: mcc-traffic-estimation.md
       - name: How-to guides
         items:  
@@ -65,7 +65,7 @@
           href: mcc-isp-uninstall.md
       - name: Resources
         items:
-        - name: Community Forum
+        - name: Community forum
           href: link-to-come
         - name: FAQs
           href: mcc-isp-faq.md
