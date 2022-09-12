@@ -34,8 +34,11 @@ Windows Defender Credential Guard will be enabled by default when a PC meets the
 |Component|Requirement|
 |---|---|
 |Operating System|Windows 11 Enterprise 22H2|
-|Virtualization-based Security (VBS) Enabled|VBS must be enabled to enable Windows Defender Credential Guard. Starting in Windows 11 Enterprise 22H2, VBS will be automatically enabled by default if the device meets the [minimum requirements to run VBS](/windows-hardware/design/device-experiences/oem-vbs).
 |Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
+|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
+
+> [!NOTE]
+> If Windows Defender Credential Guard or VBS has previously been explicitly disabled, default enablement will not overwrite this setting.
 
 ## Enable Windows Defender Credential Guard
 
