@@ -25,7 +25,7 @@ For education customers seeking cost-effective devices, Microsoft Windows 11 SE 
 - IT admin can remotely manage Windows 11 SE devices using [Microsoft Intune for Education][INT-1]
 - It's built for low-cost devices
 
-:::image type="content" source="./images/windows-11-se.png" alt-text="Screenshot of Windows 11 SE showing Start menu and taskbar with default layout border="false":::
+:::image type="content" source="./images/windows-11-se.png" alt-text="Screenshot of Windows 11 SE showing Start menu and taskbar with default layout" border="false":::
 
 ## Get Windows 11 SE
 
