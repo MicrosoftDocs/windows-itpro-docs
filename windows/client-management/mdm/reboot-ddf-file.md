@@ -1,19 +1,17 @@
 ---
 title: Reboot DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the Reboot configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.assetid: ABBD850C-E744-462C-88E7-CA3F43D80DB1
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # Reboot DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **Reboot** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -147,8 +145,7 @@ The XML below is the current version for this CSP.
 
 ## Related topics
 
-
-[Reboot configuration service provider](reboot-csp.md)
+[Reboot CSP](reboot-csp.md)
 
  
 

@@ -36,14 +36,14 @@ In most organizations, information is the most valuable asset, and ensuring that
 
 Application control can help mitigate these types of security threats by restricting the applications that users are allowed to run and the code that runs in the System Core (kernel). Application control policies can also block unsigned scripts and MSIs, and restrict Windows PowerShell to run in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes).
 
-Application control is a crucial line of defense for protecting enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from an application trust model where all applications are assumed trustworthy to one where applications must earn trust in order to run. Many organizations, like the Australian Signals Directorate, understand this and frequently cite application control as one of the most effective means for addressing the threat of executable file-based malware (.exe, .dll, etc.).
+Application control is a crucial line of defense for protecting enterprises given today’s threat landscape, and it has an inherent advantage over traditional antivirus solutions. Specifically, application control moves away from an application trust model where all applications are assumed trustworthy to one where applications must earn trust in order to run. Many organizations, like the Australian Signals Directorate, understand the significance of application control and frequently cite application control as one of the most effective means for addressing the threat of executable file-based malware (.exe, .dll, etc.).
 
 > [!NOTE]
 > Although application control can significantly harden your computers against malicious code, we recommend that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
 
 Windows 10 and Windows 11 include two technologies that can be used for application control depending on your organization's specific scenarios and requirements:
 
-- **Windows Defender Application Control**; and
+- **Windows Defender Application Control (WDAC)**; and
 - **AppLocker**
 
 ## In this section

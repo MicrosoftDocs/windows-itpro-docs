@@ -1,19 +1,18 @@
 ---
 title: Policy CSP - Feeds
 description: Use the Policy CSP - Feeds setting policy specifies whether news and interests is allowed on the device.
-ms.author: v-nsatapathy
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/17/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Feeds
-
 
 <hr/>
 
@@ -26,7 +25,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -38,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -55,7 +54,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether news and interests is allowed on the device.
+This policy setting specifies, whether news and interests is allowed on the device.
 
 The values for this policy are 1 and 0. This policy defaults to 1.
 
@@ -77,3 +76,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

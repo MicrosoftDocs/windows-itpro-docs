@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - SystemServices
 description: Learn how to use the Policy CSP - SystemServices setting to determine whether the service's start type is Automatic(2), Manual(3), Disabled(4).
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - SystemServices
-
-
 
 <hr/>
 
@@ -49,11 +47,13 @@ manager: dansimp
 <a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -71,7 +71,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -88,11 +90,13 @@ GP Info:
 <a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -110,7 +114,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -127,11 +133,13 @@ GP Info:
 <a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -149,7 +157,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -166,11 +176,13 @@ GP Info:
 <a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -188,7 +200,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -205,11 +219,13 @@ GP Info:
 <a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -227,7 +243,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -244,11 +262,13 @@ GP Info:
 <a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -266,7 +286,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -281,3 +303,6 @@ GP Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management and security c
 
 This policy setting determines whether the elevation request prompts on the interactive user desktop or on the secure desktop.
 
-The secure desktop presents the logon UI and restricts functionality and access to the system until the logon requirements are satisfied.
+The secure desktop presents the sign-in UI and restricts functionality and access to the system until the sign-in requirements are satisfied.
 
 The secure desktop’s primary difference from the user desktop is that only trusted processes running as SYSTEM are allowed to run here (that is, nothing is running at the user’s privilege level). The path to get to the secure desktop from the user desktop must also be trusted through the entire chain.
 
@@ -71,7 +71,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -91,7 +91,7 @@ Enable the **User Account Control: Switch to the secure desktop when prompting f
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

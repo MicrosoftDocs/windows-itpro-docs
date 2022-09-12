@@ -1,18 +1,19 @@
 ---
 title: Policy CSP - ADMX_Power
-description: Policy CSP - ADMX_Power
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_Power.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/22/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Power
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -114,8 +115,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -136,9 +138,9 @@ This policy setting allows you to control the network connectivity state in stan
 
 If you enable this policy setting, network connectivity will be maintained in standby.
 
-If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+If you disable this policy setting, network connectivity in standby isn't guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-If you do not configure this policy setting, users control this setting.
+If you don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -162,8 +164,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -184,7 +187,7 @@ This policy setting allows you to turn on the ability for applications and servi
 
 If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -208,8 +211,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -234,7 +238,7 @@ If you enable this policy setting, select one of the following actions:
 - Hibernate
 - Shut down
 
-If you disable this policy or do not configure this policy setting, users control this setting.
+If you disable this policy or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -258,8 +262,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -280,7 +285,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+If you disable or don't configure this policy setting, applications, services, or drivers don't prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
 
 <!--/Description-->
 
@@ -304,8 +309,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -326,7 +332,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+If you disable or don't configure this policy setting, applications, services, or drivers don't prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
 
 <!--/Description-->
 
@@ -350,8 +356,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -372,7 +379,7 @@ This policy setting allows you to manage automatic sleep with open network files
 
 If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+If you disable or don't configure this policy setting, the computer doesn't automatically sleep when network files are open.
 
 <!--/Description-->
 
@@ -396,8 +403,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -418,7 +426,7 @@ This policy setting allows you to manage automatic sleep with open network files
 
 If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+If you disable or don't configure this policy setting, the computer doesn't automatically sleep when network files are open.
 
 <!--/Description-->
 
@@ -442,8 +450,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -460,11 +469,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the active power plan from a specified power plan’s GUID. The GUID for a custom power plan GUID can be retrieved by using powercfg, the power configuration command line tool.
+This policy setting specifies the active power plan from a specified power plan’s GUID. The GUID for a custom power plan GUID can be retrieved by using `powercfg`, the power configuration command line tool.
 
 If you enable this policy setting, you must specify a power plan, specified as a GUID using the following format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (For example, 103eea6e-9fcd-4544-a713-c282d8e50083), indicating the power plan to be active.
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+If you disable or don't configure this policy setting, users can see and change this setting.
 
 <!--/Description-->
 
@@ -488,8 +497,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -515,7 +525,7 @@ If you enable this policy setting, select one of the following actions:
 - Hibernate
 - Shut down
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -539,8 +549,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -566,7 +577,7 @@ If you enable this policy setting, select one of the following actions:
 - Hibernate
 - Shut down
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -590,8 +601,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -614,7 +626,7 @@ If you enable this policy setting, you must enter a numeric value (percentage) t
 
 To set the action that is triggered, see the "Critical Battery Notification Action" policy setting.
 
-If you disable this policy setting or do not configure it, users control this setting.
+If you disable this policy setting or don't configure it, users control this setting.
 
 <!--/Description-->
 
@@ -638,8 +650,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -664,7 +677,7 @@ To configure the low battery notification level, see the "Low Battery Notificati
 
 The notification will only be shown if the "Low Battery Notification Action" policy setting is configured to "No Action".
 
-If you disable or do not configure this policy setting, users can control this setting.
+If you disable or don't configure this policy setting, users can control this setting.
 
 <!--/Description-->
 
@@ -688,8 +701,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -712,7 +726,7 @@ If you enable this policy setting, you must enter a numeric value (percentage) t
 
 To set the action that is triggered, see the "Low Battery Notification Action" policy setting.
 
-If you disable this policy setting or do not configure it, users control this setting.
+If you disable this policy setting or don't configure it, users control this setting.
 
 <!--/Description-->
 
@@ -736,8 +750,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -758,9 +773,9 @@ This policy setting allows you to control the network connectivity state in stan
 
 If you enable this policy setting, network connectivity will be maintained in standby.
 
-If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+If you disable this policy setting, network connectivity in standby isn't guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-If you do not configure this policy setting, users control this setting.
+If you don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -784,8 +799,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -806,7 +822,7 @@ This policy setting allows you to turn on the ability for applications and servi
 
 If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -830,8 +846,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -856,7 +873,7 @@ If you enable this policy setting, select one of the following actions:
 - Hibernate
 - Shut down
 
-If you disable this policy or do not configure this policy setting, users control this setting.
+If you disable this policy or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -880,8 +897,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -902,7 +920,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+If you disable or don't configure this policy setting, users can see and change this setting.
 
 <!--/Description-->
 
@@ -926,8 +944,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -948,7 +967,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+If you disable or don't configure this policy setting, users can see and change this setting.
 
 <!--/Description-->
 
@@ -972,8 +991,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -992,7 +1012,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes.
 
-This setting does not affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces.
+This setting doesn't affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces.
 
 Applications such as UPS software may rely on Windows shutdown behavior.
 
@@ -1000,7 +1020,7 @@ This setting is only applicable when Windows shutdown is initiated by software p
 
 If you enable this policy setting, the computer system safely shuts down and remains in a powered state, ready for power to be safely removed.
 
-If you disable or do not configure this policy setting, the computer system safely shuts down to a fully powered-off state.
+If you disable or don't configure this policy setting, the computer system safely shuts down to a fully powered-off state.
 
 <!--/Description-->
 
@@ -1024,8 +1044,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1048,7 +1069,7 @@ If you enable this policy setting, desktop background slideshow is enabled.
 
 If you disable this policy setting, the desktop background slideshow is disabled.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -1072,8 +1093,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1096,7 +1118,7 @@ If you enable this policy setting, desktop background slideshow is enabled.
 
 If you disable this policy setting, the desktop background slideshow is disabled.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -1120,8 +1142,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1142,7 +1165,7 @@ This policy setting specifies the active power plan from a list of default Windo
 
 If you enable this policy setting, specify a power plan from the Active Power Plan list.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -1166,8 +1189,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1186,9 +1210,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure client computers to lock and prompt for a password when resuming from a hibernate or suspend state.
 
-If you enable this policy setting, the client computer is locked and prompted for a password when it is resumed from a suspend or hibernate state.
+If you enable this policy setting, the client computer is locked and prompted for a password when it's resumed from a suspend or hibernate state.
 
-If you disable or do not configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
+If you disable or don't configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
 
 <!--/Description-->
 
@@ -1212,8 +1236,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1234,7 +1259,7 @@ This policy setting allows you to turn off Power Throttling.
 
 If you enable this policy setting, Power Throttling will be turned off.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 
@@ -1258,8 +1283,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1280,7 +1306,7 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the reserve power notification.
 
-If you disable or do not configure this policy setting, users can see and change this setting.
+If you disable or don't configure this policy setting, users can see and change this setting.
 
 <!--/Description-->
 
@@ -1299,3 +1325,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

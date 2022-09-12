@@ -19,9 +19,9 @@ ms.technology: windows-sec
 
 This event should be generated when file was virtualized using [LUAFV](https://blogs.msdn.com/b/alexcarp/archive/2009/06/25/the-deal-with-luafv-sys.aspx).
 
-This event occurs very rarely during standard LUAFV file virtualization.
+This event occurs rarely during standard LUAFV file virtualization.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit File System](audit-file-system.md)
 
@@ -59,5 +59,5 @@ There is no example of this event in this document.
 
 ## Security Monitoring Recommendations
 
--   There is no recommendation for this event in this document.
+-   There's no recommendation for this event in this document.
 

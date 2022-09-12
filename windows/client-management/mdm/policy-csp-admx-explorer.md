@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Explorer
-description: Policy CSP - ADMX_Explorer
-ms.author: dansimp
+description: Learn about the Policy CSP - ADMX_Explorer.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/08/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Explorer
@@ -55,8 +55,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -73,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Sets the target of the More Information link that will be displayed when the user attempts to run a program that is blocked by policy.
+This policy setting sets the target of the More Information link that will be displayed when the user attempts to run a program that is blocked by policy.
 
 <!--/Description-->
 
@@ -96,8 +97,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -121,7 +123,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting co
 
 If you enable this policy setting, the menu bar will be displayed in File Explorer.
 
-If you disable or do not configure this policy setting, the menu bar will not be displayed in File Explorer.  
+If you disable or don't configure this policy setting, the menu bar won't be displayed in File Explorer.  
 
 > [!NOTE]
 > When the menu bar is not displayed, users can access the menu bar by pressing the 'ALT' key.
@@ -145,8 +147,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -163,9 +166,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer will not reinitialize default program associations and other settings to default values.
+This policy setting allows administrators who have configured roaming profile with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer won't reinitialize default program associations and other settings to default values.
 
-If you enable this policy setting on a machine that does not contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
+If you enable this policy setting on a machine that doesn't contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
 
 <!--/Description-->
 
@@ -188,8 +191,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -206,14 +210,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows administrators to prevent users from adding new items such as files or folders to the root of their Users Files folder in File Explorer.
+This policy setting allows administrators to prevent users from adding new items, such as files or folders to the root of their Users Files folder in File Explorer.
 
-If you enable this policy setting, users will no longer be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
+If you enable this policy setting, users will no longer be able to add new items, such as files or folders to the root of their Users Files folder in File Explorer.
 
-If you disable or do not configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
+If you disable or don't configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
 > [!NOTE]
-> Enabling this policy setting does not prevent the user from being able to add new items such as files and folders to their actual file system profile folder at %userprofile%.
+> Enabling this policy setting doesn't prevent the user from being able to add new items, such as files and folders to their actual file system profile folder at %userprofile%.
 
 <!--/Description-->
 
@@ -236,8 +240,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -254,7 +259,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy is similar to settings directly available to computer users.  Disabling animations can improve usability for users with some visual disabilities as well as improving performance and battery life in some scenarios.
+This policy is similar to settings directly available to computer users. 
+
+Disabling animations can improve usability for users with some visual disabilities, and also improve performance and battery life in some scenarios.
 
 <!--/Description-->
 
@@ -270,3 +277,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

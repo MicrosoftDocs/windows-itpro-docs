@@ -1,18 +1,11 @@
 ---
 title: Deploy Windows To Go in your organization (Windows 10)
 description: Learn how to deploy Windows To Go in your organization through a wizard in the user interface as well as programatically with Windows PowerShell.
-ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
 ms.reviewer: 
-manager: laurawi
-ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
-keywords: deployment, USB, device, BitLocker, workspace, security, data
+manager: dougeby
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobility
-audience: itpro
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -20,11 +13,12 @@ ms.custom: seo-marvel-apr2020
 # Deploy Windows To Go in your organization
 
 
+
 **Applies to**
 
 -   Windows 10
 
-This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you have reviewed the topics [Windows To Go: feature overview](planning/windows-to-go-overview.md) and [Prepare your organization for Windows To Go](planning/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
+This topic helps you to deploy Windows To Go in your organization. Before you begin deployment, make sure that you've reviewed the topics [Windows To Go: feature overview](planning/windows-to-go-overview.md) and [Prepare your organization for Windows To Go](planning/prepare-your-organization-for-windows-to-go.md) to ensure that you have the correct hardware and are prepared to complete the deployment. You can then use the steps in this topic to start your Windows To Go deployment.
 
 > [!IMPORTANT]
 > Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
@@ -33,28 +27,28 @@ This topic helps you to deploy Windows To Go in your organization. Before you be
 
 The following is a list of items that you should be aware of before you start the deployment process:
 
-* Only use recommended USB drives for Windows To Go. Use of other drives is not supported. Check the list at [Windows To Go: feature overview](planning/windows-to-go-overview.md) for the latest USB drives certified for use as Windows To Go drives.
+* Only use recommended USB drives for Windows To Go. Use of other drives isn't supported. Check the list at [Windows To Go: feature overview](planning/windows-to-go-overview.md) for the latest USB drives certified for use as Windows To Go drives.
 
 * After you provision a new workspace, always eject a Windows To Go drive using the **Safely Remove Hardware and Eject Media** control that can be found in the notification area or in Windows Explorer. Removing the drive from the USB port without ejecting it first can cause the drive to become corrupted.
 
 * When running a Windows To Go workspace, always shutdown the workspace before unplugging the drive.
 
-* System Center 2012 Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. You can download Configuration Manager for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkId=618746). For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj651035(v=technet.10)).
+* Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. You can download Configuration Manager for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkId=618746). For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj651035(v=technet.10)).
 
-* If you are planning on using a USB drive duplicator to duplicate Windows To Go drives, do not configure offline domain join or BitLocker on the drive.
+* If you're planning on using a USB drive duplicator to duplicate Windows To Go drives, don't configure offline domain join or BitLocker on the drive.
 
 ## Basic deployment steps
 
-Unless you are using a customized operating system image, your initial Windows To Go workspace will not be domain joined and will not contain applications. This is exactly like a new installation of Windows on a desktop or laptop computer. When planning your deployment, you should develop methods to join Windows to Go drives to the domain and install the standard applications that users in your organization require. These methods probably will be similar to the ones used for setting up desktop and laptop computers with domain privileges and applications. This section describes the instructions for creating the correct disk layout on the USB drive, applying the operating system image and the core Windows To Go specific configurations to the drive. The following steps are used in both small-scale and large-scale Windows To Go deployment scenarios.
+Unless you're using a customized operating system image, your initial Windows To Go workspace won't be domain joined and won't contain applications. This is exactly like a new installation of Windows on a desktop or laptop computer. When planning your deployment, you should develop methods to join Windows to Go drives to the domain and install the standard applications that users in your organization require. These methods probably will be similar to the ones used for setting up desktop and laptop computers with domain privileges and applications. This section describes the instructions for creating the correct disk layout on the USB drive, applying the operating system image and the core Windows To Go specific configurations to the drive. The following steps are used in both small-scale and large-scale Windows To Go deployment scenarios.
 
-Completing these steps will give you a generic Windows To Go drive that can be distributed to your users and then customized for their usage as needed. This drive is also appropriate for use with USB drive duplicators. Your specific deployment scenarios will involve more than just these basic steps but these additional deployment considerations are similar to traditional PC deployment and can be incorporated into your Windows To Go deployment plan. For additional information, see [Windows Deployment Options](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825230(v=win.10)).
+Completing these steps will give you a generic Windows To Go drive that can be distributed to your users and then customized for their usage as needed. This drive is also appropriate for use with USB drive duplicators. Your specific deployment scenarios will involve more than just these basic steps but these additional deployment considerations are similar to traditional PC deployment and can be incorporated into your Windows To Go deployment plan. For more information, see [Windows Deployment Options](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825230(v=win.10)).
 
 >[!WARNING]
 >If you plan to use the generic Windows To Go drive as the master drive in a USB duplicator, the drive should not be booted. If the drive has been booted inadvertently it should be reprovisioned prior to duplication.
 
 ### Create the Windows To Go workspace
 
-In this step we are creating the operating system image that will be used on the Windows To Go drives. You can use the Windows To Go Creator Wizard or you can [do this manually](/previous-versions/windows/it-pro/windows-8.1-and-8/jj721578(v=ws.11)) using a combination of Windows PowerShell and command-line tools.
+In this step we're creating the operating system image that will be used on the Windows To Go drives. You can use the Windows To Go Creator Wizard or you can [do this manually](/previous-versions/windows/it-pro/windows-8.1-and-8/jj721578(v=ws.11)) using a combination of Windows PowerShell and command-line tools.
 
 >[!WARNING]
 >The preferred method to create a single Windows To Go drive is to use the Windows To Go Creator Wizard included in Windows 10 Enterprise and Windows 10 Education.
@@ -76,7 +70,7 @@ In this step we are creating the operating system image that will be used on the
 
 6. On the **Choose a Windows image** page, click **Add Search Location** and then navigate to the .wim file location and click select folder. The wizard will display the installable images present in the folder; select the Windows 10 Enterprise or Windows 10 Education image you wish to use and then click **Next**.
 
-7.  (Optional) On the **Set a BitLocker password (optional)** page, you can select **Use BitLocker with my Windows To Go Workspace** to encrypt your Windows To Go drive. If you do not wish to encrypt the drive at this time, click **Skip**. If you decide you want to add BitLocker protection later, see [Enable BitLocker protection for your Windows To Go drive](/previous-versions/windows/it-pro/windows-8.1-and-8/jj721578(v=ws.11)) for instructions.
+7.  (Optional) On the **Set a BitLocker password (optional)** page, you can select **Use BitLocker with my Windows To Go Workspace** to encrypt your Windows To Go drive. If you don't wish to encrypt the drive at this time, click **Skip**. If you decide you want to add BitLocker protection later, see [Enable BitLocker protection for your Windows To Go drive](/previous-versions/windows/it-pro/windows-8.1-and-8/jj721578(v=ws.11)) for instructions.
 r
 
     >[!WARNING]
@@ -84,7 +78,7 @@ r
 
     If you choose to encrypt the Windows To Go drive now:
 
-    - Type a password that is at least eight characters long and conforms to your organizations password complexity policy. This password will be provided before the operating system is started so any characters you use must be able to be interpreted by the firmware. Some firmware does not support non-ASCII characters.
+    - Type a password that is at least eight characters long and conforms to your organizations password complexity policy. This password will be provided before the operating system is started so any characters you use must be able to be interpreted by the firmware. Some firmware doesn't support non-ASCII characters.
 
 
 ~~~
@@ -107,7 +101,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 1. Using Cortana, search for **powershell**, right-click **Windows PowerShell**, and then select **Run as administrator**.
 
-2. In the Windows PowerShell session type the following commands to partition a master boot record (MBR) disk for use with a FAT32 system partition and an NTFS-formatted operating system partition. This disk layout can support computers that use either UEFI or BIOS firmware:
+2. In the Windows PowerShell session type, the following commands to partition a master boot record (MBR) disk for use with a FAT32 system partition and an NTFS-formatted operating system partition. This disk layout can support computers that use either UEFI or BIOS firmware:
 
     ```
    # The following command will set $Disk to all USB drives with >20 GB of storage
@@ -973,9 +967,6 @@ write-output "" "Provisioning script complete."
 ```
 
 ## Considerations when using different USB keyboard layouts with Windows To Go
-
-
-Before provisioning your Windows To Go drive you need to consider if your workspace will boot on a computer with a non-English USB keyboard attached. As described in [KB article 927824](https://go.microsoft.com/fwlink/p/?LinkId=619176) there is a known issue where the plug and play ID causes the keyboard to be incorrectly identified as an English 101 key keyboard. To avoid this problem, you can modify the provisioning script to set the override keyboard parameters.
 
 In the PowerShell provisioning script, after the image has been applied, you can add the following commands that will correctly set the keyboard settings. The following example uses the Japanese keyboard layout:
 
