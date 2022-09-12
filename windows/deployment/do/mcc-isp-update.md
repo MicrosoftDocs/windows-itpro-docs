@@ -5,3 +5,4 @@ Microsoft will release updates for MCC periodically to improve performance, func
 To view which version your cache nodes are currently on, navigate to the **Cache nodes** tab to view the versions in the list view.
 
 To view update release notes, visit [Version History](mcc-version-history.md).
+
