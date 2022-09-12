@@ -32,7 +32,8 @@ The public API allows the applications running as the user to encrypt data as so
 
 **Status/PersonalDataEncryptionStatus**: Reports the current status of Personal Data Encryption (PDE) for the user. If prerequisites of PDE aren't met, then the report will be 0.  If all prerequisites are met for PDE, then PDE will be enabled and this will report 1.
 
-**Applicability**: The policy is only applicable on enterprise and education SKUs.
+> [!Note]
+> The policy is only applicable on Enterprise and Education SKUs.
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
