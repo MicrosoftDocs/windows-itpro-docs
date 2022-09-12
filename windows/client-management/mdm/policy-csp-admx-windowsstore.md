@@ -206,7 +206,7 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|Yes|Yes|
+|Pro|No|No|
 |Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
@@ -256,7 +256,7 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|Yes|Yes|
+|Pro|No|No|
 |Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
