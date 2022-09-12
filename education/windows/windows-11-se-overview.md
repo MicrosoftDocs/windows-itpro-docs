@@ -63,7 +63,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Kortext	                            |2.3.433.0  |Store	    |Kortext|
 |Kurzweil 3000 Assistive Learning	    |20.13.0000	|Win32    |Kurzweil Educational Systems|
 |LanSchool	                            |9.1.0.46	|Win32    |Stoneware|
-|Lightspeed Smart Agent                	|2.6.2	    |Win32    |Lightspeed Systems|
+|Lightspeed Smart Agent                	|1.9.1	    |Win32    |Lightspeed Systems|
 |MetaMoJi ClassRoom                     |3.12.4.0   |Store    |MetaMoJi Corporation|
 |Microsoft Connect	                    |10.0.22000.1 |Store  |Microsoft|
 |Mozilla Firefox	                    |99.0.1	     |Win32   |Mozilla|
