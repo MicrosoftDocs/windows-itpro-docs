@@ -69,7 +69,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
-| 0xC00000BB | Your PIN or this option is temporarily unavailable.| The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Use a different login method.|
+| 0xC00000BB | Your PIN or this option is temporarily unavailable.| The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Use a different login method.  Another common issue is caused by clients inability to verify the KDC certificate CRL|
 
 
 
@@ -100,6 +100,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F1  | ​There is no UPN in the token. |
 | ​0x801C044C  | There is no core window for the current thread. |
 | 0x801c004D  | DSREG_NO_DEFAULT_ACCOUNT: NGC provisioning is unable to find the default WAM account to use to request Azure Active Directory token for provisioning. Unable to enroll a device to use a PIN for login. |
+| 0xCAA30193  | HTTP 403 Request Forbidden: it means request left the device, however either Server, proxy or firewall generated this response. |
 
 ## Related topics
 
