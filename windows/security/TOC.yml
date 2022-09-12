@@ -149,6 +149,8 @@
                   href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
                 - name: Decode Measured Boot logs to track PCR changes
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
+     - name: Personal Data Encryption
+       href: information-protection/personal-data-encryption.md
      - name: Configure S/MIME for Windows
        href: identity-protection/configure-s-mime.md    
    - name: Network security
