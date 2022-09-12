@@ -1,29 +1,32 @@
 ---
 title: PersonalDataEncryption CSP
 description: Learn how the PersonalDataEncryption configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices.
-ms.author: dansimp
+ms.author: v-nsatapathy
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: nimishasatapathy
 ms.localizationpriority: medium
-ms.date: 02/04/2022
+ms.date: 09/12/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
 ---
+
 # PersonalDataEncryption CSP
 
 The PersonalDataEncryption configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices. This CSP is supported in Windows 11.
 
 The following shows the PersonalDataEncryption configuration service provider in tree format:
 
-```./User/Vendor/MSFT/PDE
+```
+./User/Vendor/MSFT/PDE
 -- EnablePersonalDataEncryption
 -- Status
 -------- PersonalDataEncryptionStatus
 
 ```
+
 **EnablePersonalDataEncryption**: 
 - 0 is default (disabled)
 - 1 (enabled) will make Personal Data Encryption (PDE) public API available to applications for the user: [UserDataProtectionManager Class](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). 
