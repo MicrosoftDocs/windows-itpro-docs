@@ -1,5 +1,5 @@
 ---
-title: Delete an AppLocker rule (Windows 10)
+title: Delete an AppLocker rule (Windows)
 description: This article for IT professionals describes the steps to delete an AppLocker rule.
 ms.assetid: 382b4be3-0df9-4308-89b2-dcf9df351eb5
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Delete an AppLocker rule
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This article for IT professionals describes the steps to delete an AppLocker rule. 
 
@@ -33,7 +38,7 @@ For info about testing an AppLocker policy to see what rules affect which files 
 You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer 
 AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
 
-These steps apply only for locally managed devices. If the device has AppLocker policies applied by using MDM or a GPO, the local policy will not override those settings.
+These steps apply only for locally managed devices. If the device has AppLocker policies applied by using MDM or a GPO, the local policy won't override those settings.
 
 ## To delete a rule in an AppLocker policy
 
@@ -50,20 +55,39 @@ When the following procedure is performed on the local device, the AppLocker pol
 ## To clear AppLocker policies on a single system or remote systems
 Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML file that contains the following contents:
 
-    <AppLockerPolicy Version="1">
-      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
-    </AppLockerPolicy>
+```xml
+<AppLockerPolicy Version="1">
+    <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="ManagedInstaller" EnforcementMode="NotConfigured" />
+</AppLockerPolicy>
+```
 
 To use the Set-AppLockerPolicy cmdlet, first import the AppLocker modules:
-    
-    PS C:\Users\Administrator> import-module AppLocker
 
-We will create a file (for example, clear.xml), place it in the same directory where we are executing our cmdlet, and add the preceding XML contents. Then run the following command:
-    
-    C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
+```powershell
+PS C:\Users\Administrator> import-module AppLocker
+```
 
-This will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.
+We'll create a file (for example, clear.xml), place it in the same directory where we're executing our cmdlet, and add the preceding XML contents. Then run the following command:
+
+```powershell
+C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
+```
+
+This command will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.
+
+The following PowerShell commands must also be run to stop the AppLocker services and the effects of the former AppLocker policy.
+
+```powershell
+appidtel.exe stop [-mionly]
+sc.exe config appid start=demand
+sc.exe config appidsvc start=demand
+sc.exe config applockerfltr start=demand
+sc stop applockerfltr
+sc stop appidsvc
+sc stop appid
+```

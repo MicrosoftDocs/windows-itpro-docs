@@ -1,24 +1,20 @@
 ---
 title: Virtual Smart Card Overview (Windows 10)
 description: Learn more about the virtual smart card technology that was developed by Microsoft. Find links to additional topics about virtual smart cards.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 10/13/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows Server 2016</b>
 ---
 
 # Virtual Smart Card Overview
-
-Applies To: Windows 10, Windows Server 2016
 
 This topic for IT professional provides an overview of the virtual smart card technology that was developed by Microsoft and includes [links to additional topics](#see-also) to help you evaluate, plan, provision, and administer virtual smart cards.
 
@@ -105,7 +101,7 @@ Starting with Windows 8.1, application developers can build into their apps the 
 
 Starting with Windows 8.1, Microsoft Store app developers are able to build apps that have the capability to prompt the user to reset or unblock and change a virtual smart card PIN. This places more responsibility on the user to maintain their virtual smart card but it can also provide a more consistent user experience and administration experience in your organization.
 
-For more information about developing Microsoft Store apps with these capabilities, see [Trusted Platform Module Virtual Smart Card Management Protocol](https://msdn.microsoft.com/library/hh880895.aspx).
+For more information about developing Microsoft Store apps with these capabilities, see [Trusted Platform Module Virtual Smart Card Management Protocol](/openspecs/windows_protocols/ms-tpmvsc/10bd67d7-4580-4e38-a6e9-ec3be00033b6).
 
 For more information about managing these capabilities in virtual smart cards, see [Understanding and Evaluating Virtual Smart Cards](virtual-smart-card-understanding-and-evaluating.md).
 

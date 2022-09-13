@@ -1,19 +1,17 @@
 ---
 title: DMAcc DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DMAcc configuration service provider (CSP).
-ms.assetid: 44dc99aa-2a85-498b-8f52-a81863765606
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # DMAcc DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **DMAcc** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

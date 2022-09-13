@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 2/19/2018
+ms.date: 07/21/2021
 ---
 
 # Manage settings for Microsoft Store for Business and Education
@@ -20,7 +20,9 @@ ms.date: 2/19/2018
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 You can add users and groups, as well as update some of the settings associated with the Azure Active Directory (AD) tenant.
 

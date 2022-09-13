@@ -1,30 +1,28 @@
 ---
-title: Create Inbound Rules to Support RPC (Windows 10)
+title: Create Inbound Rules to Support RPC (Windows)
 description: Learn how to allow RPC network traffic by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
-ms.assetid: 0b001c2c-12c1-4a30-bb99-0c034d7e6150
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Create Inbound Rules to Support RPC
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-To allow inbound remote procedure call (RPC) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically-assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically-assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
+To allow inbound remote procedure call (RPC) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
 
 **Administrative credentials**
 
@@ -81,7 +79,7 @@ In this topic:
 
 3.  On the **Program** page, click **This Program Path**, and then type the path to the executable file that hosts the network service. Click **Customize**.
 
-4.  In the **Customize Service Settings** dialog box, click **Apply to this service**, and then select the service that you want to allow. If the service does not appear in the list, then click **Apply to service with this service short name**, and then type the short name of the service in the text box.
+4.  In the **Customize Service Settings** dialog box, click **Apply to this service**, and then select the service that you want to allow. If the service doesn't appear in the list, then click **Apply to service with this service short name**, and then type the short name of the service in the text box.
 
 5.  Click **OK**, and then click **Next**.
 

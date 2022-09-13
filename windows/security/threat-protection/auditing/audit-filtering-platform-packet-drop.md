@@ -11,18 +11,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Filtering Platform Packet Drop
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-Audit Filtering Platform Packet Drop determines whether the operating system generates audit events when packets are dropped by the [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx).
+Audit Filtering Platform Packet Drop determines whether the operating system generates audit events when packets are dropped by the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page).
 
 Windows Filtering Platform (WFP) enables independent software vendors (ISVs) to filter and modify TCP/IP packets, monitor or authorize connections, filter Internet Protocol security (IPsec)-protected traffic, and filter remote procedure calls (RPCs).
 
@@ -41,4 +37,3 @@ A high rate of dropped packets *may* indicate that there have been attempts to g
 -   [5152](event-5152.md)(F): The Windows Filtering Platform blocked a packet.
 
 -   [5153](event-5153.md)(S): A more restrictive Windows Filtering Platform filter has blocked a packet.
-

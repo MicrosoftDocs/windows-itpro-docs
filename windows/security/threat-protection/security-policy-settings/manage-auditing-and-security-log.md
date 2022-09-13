@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Manage auditing and security log
@@ -27,8 +27,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-This policy setting determines which users can specify object access audit options for individual resources such as files, Active Directory objects, and registry keys. These objects specify their system access control lists (SACL). A user who is assigned this user right can also view and clear the 
-Security log in Event Viewer. For more info about the Object Access audit policy, see [Audit object access](../auditing/basic-audit-object-access.md).
+This policy setting determines which users can specify object access audit options for individual resources such as files, Active Directory objects, and registry keys. These objects specify their system access control lists (SACL). A user who is assigned this user right can also view and clear the Security log in Event Viewer. For more information about the Object Access audit policy, see [Audit object access](../auditing/basic-audit-object-access.md).
 
 Constant: SeSecurityPrivilege
 
@@ -40,7 +39,7 @@ Constant: SeSecurityPrivilege
 ### Best practices
 
 1.  Before removing this right from a group, investigate whether applications are dependent on this right.
-2.  Generally, assigning this user right to groups other than Administrators is not necessary.
+2.  Generally, assigning this user right to groups other than Administrators isn't necessary.
 
 ### Location
 
@@ -65,11 +64,11 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
-Audits for object access are not performed unless you enable them by using the Local Group Policy Editor, the Group Policy Management Console (GPMC), or the Auditpol command-line tool.
+Audits for object access aren't performed unless you enable them by using the Local Group Policy Editor, the Group Policy Management Console (GPMC), or the Auditpol command-line tool.
 
 For more information about the Object Access audit policy, see [Audit object access](../auditing/basic-audit-object-access.md).
 

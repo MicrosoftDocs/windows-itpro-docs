@@ -1,18 +1,12 @@
 ---
 title: Assign applications using roles in MDT (Windows 10)
 description: This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer.
-ms.assetid: d82902e4-de9c-4bc4-afe0-41d649b83ce7
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: settings, database, deploy
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -28,7 +22,7 @@ This topic will show you how to add applications to a role in the MDT database a
     2.  Applications / Lite Touch Applications:
     3.  Install - Adobe Reader XI - x86
 
-![figure 12](../images/mdt-09-fig12.png)
+![figure 12.](../images/mdt-09-fig12.png)
 
 Figure 12. The Standard PC role with the application added
 
@@ -39,7 +33,7 @@ After creating the role, you can associate it with one or more computer entries.
 2.  In the **Computers** node, double-click the **PC00075** entry, and add the following setting:
     -   Roles: Standard PC
 
-![figure 13](../images/mdt-09-fig13.png)
+![figure 13.](../images/mdt-09-fig13.png)
 
 Figure 13. The Standard PC role added to PC00075 (having ID 1 in the database).
 
@@ -120,7 +114,7 @@ When the database is populated, you can use the MDT simulation environment to si
 
     ```
 
-![figure 14](../images/mdt-09-fig14.png)
+![figure 14.](../images/mdt-09-fig14.png)
 
 Figure 14. ZTIGather.log displaying the application GUID belonging to the Adobe Reader XI application that would have been installed if you deployed this machine.
 

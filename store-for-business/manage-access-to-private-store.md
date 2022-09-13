@@ -11,7 +11,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 10/17/2017
+ms.date: 07/21/2021
 ---
 
 # Manage access to private store
@@ -20,7 +20,9 @@ ms.date: 10/17/2017
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 You can manage access to your private store in Microsoft Store for Business and Microsoft Store for Education.
 
@@ -34,21 +36,21 @@ Organizations can use either an MDM policy, or Group Policy to show only their p
 
 ## Show private store only using MDM policy
 
-Organizations using an MDM to manage apps can use a policy to show only the private store. When your MDM supports Microsoft Store for Business, the MDM can use the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). More specifically, the [ApplicationManagement/RequirePrivateStoreOnly](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#ApplicationManagement_RequirePrivateStoreOnly) policy. 
+Organizations using an MDM to manage apps can use a policy to show only the private store. When your MDM supports Microsoft Store for Business, the MDM can use the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). More specifically, the [ApplicationManagement/RequirePrivateStoreOnly](/windows/client-management/mdm/policy-configuration-service-provider#ApplicationManagement_RequirePrivateStoreOnly) policy. 
 
 **ApplicationManagement/RequirePrivateStoreOnly** policy is supported on the following Windows 10 editions:
+
 - Enterprise
 - Education
-- Mobile
-- Mobile Enterprise
 
-For more information on configuring an MDM provider, see [Configure an MDM provider](https://technet.microsoft.com/itpro/windows/manage/configure-mdm-provider-windows-store-for-business). 
+For more information on configuring an MDM provider, see [Configure an MDM provider](./configure-mdm-provider-microsoft-store-for-business.md). 
 
 ## Show private store only using Group Policy 
 
 If you're using Microsoft Store and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Microsoft Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store.  
 
 **Only display the private store within Microsoft Store app** group policy is supported on the following Windows 10 editions:
+
 - Enterprise
 - Education
 

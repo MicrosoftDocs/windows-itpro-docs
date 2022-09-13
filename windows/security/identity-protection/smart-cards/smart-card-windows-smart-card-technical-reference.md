@@ -1,24 +1,24 @@
 ---
-title: Smart Card Technical Reference (Windows 10)
+title: Smart Card Technical Reference (Windows)
 description: Learn about the Windows smart card infrastructure for physical smart cards, and how smart card-related components work in Windows.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: ardenw
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
-ms.reviewer: 
+ms.date: 09/24/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Smart Card Technical Reference
-
-Applies To: Windows 10, Windows Server 2016
 
 The Smart Card Technical Reference describes the Windows smart card infrastructure for physical smart cards and how smart card-related components work in Windows. This document also contains information about tools that information technology (IT) developers and administrators can use to troubleshoot, debug, and deploy smart card-based strong authentication in the enterprise.
 

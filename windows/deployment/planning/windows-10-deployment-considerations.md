@@ -1,17 +1,12 @@
 ---
 title: Windows 10 deployment considerations (Windows 10)
 description: There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications.
-ms.assetid: A8DD6B37-1E11-4CD6-B588-92C2404219FE
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deploy, upgrade, update, in-place
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.localizationpriority: medium
-ms.mktglfcycl: plan
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -36,46 +31,13 @@ Windows 10 also introduces two additional scenarios that organizations should c
 
     So how do you choose? At a high level:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Consider ...</th>
-<th align="left">For these scenarios</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">In-place upgrade</td>
-<td align="left"><ul>
-<li><p>When you want to keep all (or at least most) existing applications</p></li>
-<li><p>When you do not plan to significantly change the device configuration (for example, BIOS to UEFI) or operating system configuration (for example, x86 to x64, language changes, Administrators to non-Administrators, Active Directory domain consolidations)</p></li>
-<li><p>To migrate from Windows 10 to a later Windows 10 release</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Traditional wipe-and-load</td>
-<td align="left"><ul>
-<li><p>When you upgrade significant numbers of applications along with the new Windows OS</p></li>
-<li><p>When you make significant device or operating system configuration changes</p></li>
-<li><p>When you “start clean”. For example, scenarios where it is not necessary to preserve existing apps or data (for example, call centers) or when you move from unmanaged to well-managed PCs</p></li>
-<li><p>When you migrate from Windows Vista or other previous operating system versions</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left">Dynamic provisioning</td>
-<td align="left"><ul>
-<li><p>For new devices, especially in “choose your own device” scenarios when simple configuration (not reimaging) is all that is required</p></li>
-<li><p>When used in combination with a management tool (for example, an MDM service like Microsoft Intune) that enables self-service installation of user-specific or role-specific apps</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Consider ... | For these scenarios  |
+|---|---|
+| In-place upgrade  | - When you want to keep all (or at least most) existing applications<br/>- When you do not plan to significantly change the device configuration (for example, BIOS to UEFI) or operating system configuration (for example, x86 to x64, language changes, Administrators to non-Administrators, Active Directory domain consolidations)<br/>- To migrate from Windows 10 to a later Windows 10 release |
+| Traditional wipe-and-load | - When you upgrade significant numbers of applications along with the new Windows OS<br/>- When you make significant device or operating system configuration changes<br/>- When you “start clean”. For example, scenarios where it is not necessary to preserve existing apps or data (for example, call centers) or when you move from unmanaged to well-managed PCs<br/>- When you migrate from Windows Vista or other previous operating system versions |
+| Dynamic provisioning | - For new devices, especially in “choose your own device” scenarios when simple configuration (not reimaging) is all that is required. <br/>- When used in combination with a management tool (for example, an MDM service like Microsoft Intune) that enables self-service installation of user-specific or role-specific apps |
 
- 
+
 ## Migration from previous Windows versions
 
 For existing PCs running Windows 7 or Windows 8.1, in-place upgrade is the recommended method for Windows 10 deployment and should be used whenever possible. Although wipe-and-load (OS refresh) deployments are still fully supported (and necessary in some scenarios, as mentioned previously), in-place upgrade is simpler and faster, and enables a faster Windows 10 deployment overall.
@@ -92,9 +54,9 @@ For organizations that did not take advantage of the free upgrade offer and are 
 
 For new computers acquired with Windows 10 preinstalled, you can leverage dynamic provisioning scenarios to transform the device from its initial state into a fully-configured organization PC. There are two primary dynamic provisioning scenarios you can use:
 
--   **User-driven, from the cloud.** By joining a device into Azure Active Directory and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Azure Active Directory account and password (called their “work or school account” within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Azure Active Directory integration with MDM](https://go.microsoft.com/fwlink/p/?LinkId=625075).
+-   **User-driven, from the cloud.** By joining a device into Azure Active Directory and leveraging the automatic mobile device management (MDM) provisioning capabilities at the same time, an end user can initiate the provisioning process themselves just by entering the Azure Active Directory account and password (called their “work or school account” within Windows 10). The MDM service can then transform the device into a fully-configured organization PC. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
--   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkId=625076).
+-   **IT admin-driven, using new tools.** Using the new Windows Imaging and Configuration Designer (ICD) tool, IT administrators can create provisioning packages that can be applied to a computer to transform it into a fully-configured organization PC. For more information, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 
 In either of these scenarios, you can make a variety of configuration changes to the PC:
 
@@ -105,7 +67,7 @@ In either of these scenarios, you can make a variety of configuration changes to
 
 ## Stay up to date
 
-For computers already running Windows 10 on the Semi-Annual Channel, new upgrades will be deployed two times per year. You can deploy these upgrades by using a variety of methods:
+For computers using the [General Availability Channel](../update/waas-overview.md#general-availability-channel), you can deploy these upgrades by using a variety of methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
 -   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update). 
@@ -125,8 +87,3 @@ The upgrade process is also optimized to reduce the overall time and network ban
  
 
  
-
-
-
-
-

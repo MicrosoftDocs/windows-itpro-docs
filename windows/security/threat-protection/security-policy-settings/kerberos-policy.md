@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Kerberos Policy
@@ -25,7 +25,7 @@ ms.technology: mde
 
 Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 
-The Kerberos version 5 authentication protocol provides the default mechanism for authentication services and the authorization data necessary for a user to access a resource and perform a task on that resource. By reducing the lifetime of Kerberos tickets, you reduce the risk of a legitimate user's credentials being stolen and successfully used by an attacker. However, this also increases the authorization overhead. In most environments, these settings should not need to be changed.
+The Kerberos version 5 authentication protocol provides the default mechanism for authentication services and the authorization data necessary for a user to access a resource and perform a task on that resource. By reducing the lifetime of Kerberos tickets, you reduce the risk of a legitimate user's credentials being stolen and successfully used by an attacker. However, this ticket lifetime reduction also increases the authorization overhead. In most environments, these settings shouldn't need to be changed.
 
 These policy settings are located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Kerberos Policy**.
 

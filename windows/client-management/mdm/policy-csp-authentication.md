@@ -1,15 +1,14 @@
 ---
 title: Policy CSP - Authentication
-description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign in screen.
-ms.author: dansimp
+description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign-in screen.
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.reviewer: bobgil
+manager: aaroncz
 ---
 
 # Policy CSP - Authentication
@@ -38,6 +37,12 @@ manager: dansimp
     <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
   <dd>
+    <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
+  </dd>
+  <dd>
+    <a href="#authentication-configurewebcamaccessdomainnames">Authentication/ConfigureWebcamAccessDomainNames</a>
+  </dd>
+  <dd>
     <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
   </dd>
   <dd>
@@ -55,32 +60,16 @@ manager: dansimp
 <a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -95,7 +84,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the windows logon screen.
+Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the Windows logon screen.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -113,32 +102,16 @@ The following list shows the supported values:
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -153,7 +126,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+Allows an EAP cert-based authentication for a Single Sign on (SSO) to access internal resources.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -171,32 +144,16 @@ The following list shows the supported values:
 <a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -231,32 +188,16 @@ The following list shows the supported values:
 <a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -271,18 +212,18 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Preview release in Windows 10, version 1709. Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
+Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
 
 Value type is integer.
 
-Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password every time they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
+Here's an example scenario: At Contoso, there are many shared devices and kiosks that employees use throughout the day, for example, employees use as many as 20 different devices. To minimize the loss in productivity when employees have to sign in with username and password every time they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Do not allow. The FIDO device credential provider disabled. 
--   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
+-   0 - Don't allow. The FIDO device credential provider disabled.
+-   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign in to Windows.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -293,32 +234,16 @@ The following list shows the supported values:
 <a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -333,16 +258,16 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows secondary authentication devices to work with Windows.
+Allows secondary authentication devices to work with Windows.
 
 The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premises only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
-In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This will only affect users that have not already set up a secondary authentication device.
+In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This change will only affect users that have not already set up a secondary authentication device.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow companion device for secondary authentication*
+-   GP Friendly name: *Allow companion device for secondary authentication*
 -   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
 -   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
 -   GP ADMX file name: *DeviceCredential.admx*
@@ -360,35 +285,115 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="authentication-configurewebsigninallowedurls"></a>**Authentication/ConfigureWebSignInAllowedUrls**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Specifies the list of domains that are allowed to be navigated to in Azure Active Directory PIN reset and Web Sign-in Windows device scenarios where authentication is handled by AD FS or a third-party federated identity provider. Note this policy is required in federated environments as a mitigation to the vulnerability described in [CVE-2021-27092](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27092).
+
+**Example**: If your organization's PIN reset or Web Sign-in authentication flow is expected to navigate to two domains, accounts.contoso.com and signin.contoso.com, the policy value should be "accounts.contoso.com;signin.contoso.com".
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="authentication-configurewebcamaccessdomainnames"></a>**Authentication/ConfigureWebcamAccessDomainNames**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+Specifies the list of domain names that are allowed to access the webcam in Web Sign-in Windows device sign-in scenarios.
+
+Web Sign-in is only supported on Azure AD Joined PCs.
+
+**Example**: If your organization federates to "Contoso IDP" and your Web Sign-in portal at "signinportal.contoso.com" requires webcam access, the policy value should be "contoso.com".
+
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -404,7 +409,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is in preview mode only and therefore not meant or recommended for production purposes.
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
@@ -415,7 +420,7 @@ Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
 - 1 - Enabled. Auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts
-- 2 - Disabled. Do not auto connect new non-admin Azure AD accounts to pre-configured local accounts
+- 2 - Disabled. Don't auto connect new non-admin Azure AD accounts to pre-configured local accounts
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -435,32 +440,16 @@ Value type is integer. Supported values:
 <a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -476,9 +465,9 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is in preview mode only and therefore not meant or recommended for production purposes.
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
 
-"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
+"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
 > [!Note]
 > Web Sign-in is only supported on Azure AD Joined PCs.
@@ -486,8 +475,8 @@ Value type is integer. Supported values:
 Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Web Credential Provider will be enabled for Sign In
-- 2 - Disabled. Web Credential Provider will not be enabled for Sign In
+- 1 - Enabled. Web Credential Provider will be enabled for a sign in.
+- 2 - Disabled. Web Credential Provider won't be enabled for a sign in.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -507,32 +496,16 @@ Value type is integer. Supported values:
 <a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -549,7 +522,7 @@ Value type is integer. Supported values:
 <!--Description-->
 Specifies the preferred domain among available domains in the Azure AD tenant.
 
-Example: If your organization is using the "@contoso.com" tenant domain name, the policy value should be "contoso.com". For the user "abby@constoso.com", she would then be able to sign in using "abby" in the username field instead of "abby@contoso.com".
+Example: If your organization is using the "@contoso.com" tenant domain name, the policy value should be "contoso.com". For the user "abby@constoso.com", a sign in is done using "abby" in the username field instead of "abby@contoso.com".
 
 
 Value type is string.
@@ -567,16 +540,6 @@ Value type is string.
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

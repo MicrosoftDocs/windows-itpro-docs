@@ -1,23 +1,18 @@
 ---
-title: VPN routing decisions (Windows 10)
+title: VPN routing decisions (Windows 10 and Windows 10)
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
 ms.localizationpriority: medium
-ms.date: 07/27/2017
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+ms.date: 09/23/2021
+manager: aaroncz
+ms.author: paoloma
+ms.reviewer: pesmith
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
-
 # VPN routing decisions
-
-**Applies to**
--   Windows 10
--   Windows 10 Mobile
 
 Network routes are required for the stack to understand which interface to use for outbound traffic. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). This decision impacts the configuration and the capacity planning, as well as security expectations from the connection. 
 
@@ -25,7 +20,7 @@ Network routes are required for the stack to understand which interface to use f
 
 In a split tunnel configuration, routes can be specified to go over VPN and all other traffic will go over the physical interface. 
 
-Routes can be configured using the VPNv2/*ProfileName*/RouteList setting in the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
+Routes can be configured using the VPNv2/*ProfileName*/RouteList setting in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
  
 For each route item in the list, the following can be specified: 
 
@@ -49,15 +44,15 @@ For a UWP VPN plug-in, this property is directly controlled by the app. If the V
 
 ## Configure routing
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) for XML configuration. 
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp) for XML configuration. 
 
 When you configure a VPN profile in Microsoft Intune, you select a checkbox to enable split tunnel configuration.
 
-![split tunnel](images/vpn-split.png)
+![split tunnel.](images/vpn-split.png)
 
 Next, in **Corporate Boundaries**, you add the routes that should use the VPN connection.   
   
-![add route for split tunnel](images/vpn-split-route.png)
+![add route for split tunnel.](images/vpn-split-route.png)
 
 
 ## Related topics

@@ -1,25 +1,43 @@
 ---
 title: Accounts CSP
-description: The Accounts configuration service provider (CSP) is used by the enterprise to rename devices, as well as create local Windows accounts & joint them to a group.
-ms.author: dansimp
+description: The Accounts configuration service provider (CSP) is used by the enterprise to rename devices, and create local Windows accounts & join them to a group.
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: vinaypamnani-msft
 ms.date: 03/27/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
-# Accounts CSP 
+# Accounts CSP
 
+The table below shows the applicability of Windows:
 
-The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and join it to a local user group. This CSP was added in Windows 10, version 1803.
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
+The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and join it to a local user group. This CSP was added in Windows 10, version 1803, and later.
 
-The following diagram shows the Accounts configuration service provider in tree format.
+The following syntax shows the Accounts configuration service provider in tree format.
 
-![Accounts CSP diagram](images/provisioning-csp-accounts.png) 
+```console
+./Device/Vendor/MSFT
+Accounts
+----Domain
+--------ComputerName
+----Users
+--------UserName
+------------Password
+------------LocalUserGroup
+```
 
 <a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**  
 Root node.
@@ -28,7 +46,7 @@ Root node.
 Interior node for the account domain information.
 
 <a href="" id="domain-computername"></a>**Domain/ComputerName**  
-This node specifies the DNS hostname for a device. This setting can be managed remotely, but note that this not supported for devices hybrid joined to Azure Active Directory and an on-premises Active directory. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 15 characters.
+This node specifies the DNS hostname for a device. This setting can be managed remotely, but this remote management isn't supported for devices hybrid joined to Azure Active Directory and an on-premises Active directory. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 15 characters.
 
 Available naming macros:
 
@@ -46,15 +64,19 @@ Supported operation is Add.
 Interior node for the user account information.
 
 <a href="" id="users-username"></a>**Users/_UserName_**  
-This node specifies the username for a new local user account.  This setting can be managed remotely.
+This node specifies the username for a new local user account. This setting can be managed remotely.
 
 <a href="" id="users-username-password"></a>**Users/_UserName_/Password**  
-This node specifies the password for a new local user account.  This setting can be managed remotely. 
+This node specifies the password for a new local user account. This setting can be managed remotely.
 
 Supported operation is Add.
-GET operation is not supported.  This setting will report as failed when deployed from the Endpoint Manager.
+GET operation isn't supported.  This setting will report as failed when deployed from the Endpoint Manager.
 
 <a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**  
-This optional node specifies the local user group that a local user account should be joined to.  If the node is not set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.
+This optional node specifies the local user group that a local user account should be joined to.  If the node isn't set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.
 
 Supported operation is Add.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

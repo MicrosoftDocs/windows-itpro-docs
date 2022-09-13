@@ -1,18 +1,12 @@
 ---
 title: Use MDT database to stage Windows 10 deployment info (Windows 10)
 description: Learn how to use the MDT database to pre-stage information on your Windows 10 deployment in a Microsoft SQL Server 2012 SP1 Express database.
-ms.assetid: 8956ab54-90ba-45d3-a384-4fdec72c4d46
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.pagetype: mdt
-keywords: database, permissions, settings, configure, deploy
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -43,7 +37,7 @@ The MDT database is by default created and managed from the Deployment Workbench
 3.  On the **Database** page, select **Create a new database**; in the **Database** field, type **MDT** and click **Next**.
 4.  On the **SQL Share** page, in the **SQL Share** field, type **Logs$** and click **Next**. Click **Next** again and then click **Finish**.
 
-![figure 8](../images/mdt-09-fig08.png)
+![figure 8.](../images/mdt-09-fig08.png)
 
 Figure 8. The MDT database added to MDT01.
 
@@ -54,16 +48,17 @@ After creating the database, you need to assign permissions to it. In MDT, the a
 2.  In the **Connect to Server** dialog box, in the **Server name** list, select **MDT01\\SQLEXPRESS** and click **Connect**.
 3.  In the **Object Explorer** pane, expand the top-level **Security** node, right-click **Logins**, and select **New Login**.
 
-    ![figure 9](../images/mdt-09-fig09.png)
+    ![figure 9.](../images/mdt-09-fig09.png)
 
     Figure 9. The top-level Security node.
 
 4.  On the **Login - New** page, next to the **Login** name field, click **Search**, and search for **CONTOSO\\MDT\_BA**. Then in the left pane, select **User Mapping**. Select the **MDT** database, and assign the following roles:
     1.  db\_datareader
-    2.  public (default)
+    2.  db\_datawriter
+    3.  public (default)
 5.  Click **OK**, and close SQL Server Management Studio.
 
-![figure 10](../images/mdt-09-fig10.png)
+![figure 10.](../images/mdt-09-fig10.png)
 
 Figure 10. Creating the login and settings permissions to the MDT database.
 
@@ -76,7 +71,7 @@ To start using the database, you add a computer entry and assign a description a
     2.  MacAddress: &lt;PC00075 MAC Address in the 00:00:00:00:00:00 format&gt;
     3.  Details Tab / OSDComputerName: PC00075
 
-![figure 11](../images/mdt-09-fig11.png)
+![figure 11.](../images/mdt-09-fig11.png)
 
 Figure 11. Adding the PC00075 computer to the database.
 
