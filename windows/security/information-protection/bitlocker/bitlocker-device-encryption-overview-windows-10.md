@@ -19,8 +19,7 @@ ms.custom: bitlocker
 
 # Overview of BitLocker Device Encryption in Windows 10
 
-**Applies to**
--   Windows 10
+**Applies to:** Windows 10
 
 This topic explains how BitLocker Device Encryption can help protect data on devices running Windows 10. 
 For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md). 
