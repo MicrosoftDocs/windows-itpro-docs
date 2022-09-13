@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 11, version 22H2 for IT pros
-description: Learn more about what's new in Windows 10 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
+description: Learn more about what's new in Windows 11 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
 manager: dougeby
 ms.prod: w10
 ms.author: mstewart
@@ -74,7 +74,7 @@ To learn more about the status of the update rollout, known issues, and new info
 <!-- -->
 Smart App Control adds significant protection from malware, including new and emerging threats, by blocking apps that are malicious or untrusted. Smart App Control also helps to block potentially unwanted apps, which are apps that may cause your device to run slowly, display unexpected ads, offer extra software you didn't want, or do other things you don't expect.
 
-For more information, see [Smart App Control](../security/threat-protection/windows-defender-application-control/windows-defender-application-control.md#wdac-and-smart-app-control).
+For more information, see [Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control.md#wdac-and-smart-app-control).
 
 ## Pluton
 <!--6286417 -->
@@ -82,7 +82,7 @@ For more information, see [Smart App Control](../security/threat-protection/wind
 ## Malicious and vulnerable driver blocking
 <!--6286432-->
 
-For more information, see [recommended block rules](../security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules).
+For more information, see [recommended block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules).
 
 ## Security hardening and threat protection
 <!--6289245-->
