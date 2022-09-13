@@ -15,7 +15,7 @@ ms.collection: highpri
 
 # PersonalDataEncryption CSP
 
-The PersonalDataEncryption configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices. This CSP is supported in Windows 11.
+The PersonalDataEncryption configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices. This CSP was added in Windows 11, version 22H2.
 
 The following shows the PersonalDataEncryption configuration service provider in tree format:
 
@@ -33,7 +33,7 @@ The following shows the PersonalDataEncryption configuration service provider in
 
 The public API allows the applications running as the user to encrypt data as soon as this policy is enabled. However, prerequisites must be met for the PDE to be enabled.
 
-**Status/PersonalDataEncryptionStatus**: Reports the current status of Personal Data Encryption (PDE) for the user. If prerequisites of PDE aren't met, then the report will be 0.  If all prerequisites are met for PDE, then PDE will be enabled and this will report 1.
+**Status/PersonalDataEncryptionStatus**: Reports the current status of Personal Data Encryption (PDE) for the user. If prerequisites of PDE aren't met, then the status will be 0. If all prerequisites are met for PDE, then PDE will be enabled and status will be 1.
 
 > [!Note]
 > The policy is only applicable on Enterprise and Education SKUs.
