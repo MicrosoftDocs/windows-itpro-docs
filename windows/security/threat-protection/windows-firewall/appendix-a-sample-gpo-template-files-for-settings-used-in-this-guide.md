@@ -1,28 +1,31 @@
 ---
-title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows 10)
+title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows)
 description: Use sample template files import an XML file containing customized registry preferences into a Group Policy Object (GPO).
 ms.assetid: 75930afd-ab1b-4e53-915b-a28787814b38
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Appendix A: Sample GPO Template Files for Settings Used in this Guide
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 You can import an XML file containing customized registry preferences into a Group Policy Object (GPO) by using the Preferences feature of the Group Policy Management Console (GPMC).
 

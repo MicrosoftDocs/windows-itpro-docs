@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Take ownership of files or other objects
@@ -31,7 +31,7 @@ This policy setting determines which users can take ownership of any securable o
 
 Every object has an owner, whether the object resides in an NTFS volume or Active Directory database. The owner controls how permissions are set on the object and to whom permissions are granted.
 
-By default, the owner is the person who or the process which created the object. Owners can always change permissions to objects, even when they are denied all access to the object.
+By default, the owner is the person who or the process that created the object. Owners can always change permissions to objects, even when they're denied all access to the object.
 
 Constant: SeTakeOwnershipPrivilege
 
@@ -67,7 +67,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 

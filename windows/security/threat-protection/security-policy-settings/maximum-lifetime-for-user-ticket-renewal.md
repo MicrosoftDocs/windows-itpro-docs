@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Maximum lifetime for user ticket renewal
@@ -36,9 +36,9 @@ The possible values for this Group Policy setting are:
 
 ### Best practices
 
--   If the value for this policy setting is too high, users may be able to renew very old user ticket-granting tickets. If the value is 0, ticket-granting tickets never expire.
+-   If the value for this policy setting is too high, users may be able to renew old user ticket-granting tickets. If the value is 0, ticket-granting tickets never expire.
 
-    It is advisable to set **Maximum lifetime for user ticket renewal** to **7** days.
+    It's advisable to set **Maximum lifetime for user ticket renewal** to **7** days.
 
 ### Location
 
@@ -61,7 +61,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 This policy setting is configured on the domain controller.
 
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-If the value for the **Maximum lifetime for user ticket renewal** setting is too high, users might be able to renew very old user tickets.
+If the value for the **Maximum lifetime for user ticket renewal** setting is too high, users might be able to renew old user tickets.
 
 ### Countermeasure
 

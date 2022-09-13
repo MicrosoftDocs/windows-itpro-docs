@@ -1,19 +1,17 @@
 ---
 title: EnterpriseDesktopAppManagement XSD
 description: This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
-ms.assetid: 60980257-4F48-4A68-8E8E-1EF0A3F090E2
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
 # EnterpriseDesktopAppManagement XSD
-
 
 This topic contains the XSD schema file for the EnterpriseDesktopAppManagement configuration service provider’s DownloadInstall parameter.
 

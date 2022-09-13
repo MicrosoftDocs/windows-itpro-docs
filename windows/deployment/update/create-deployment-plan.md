@@ -2,20 +2,24 @@
 title: Create a deployment plan
 description: Devise the number of deployment rings you need and how you want to populate them
 ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.collection: m365initiative-coredeploy
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
 # Create a deployment plan
 
+**Applies to**
+
+-   Windows 10
+-   Windows 11
+
 A "service management" mindset means that the devices in your organization fall into a continuum, with the software update process being constantly planned, deployed, monitored, and optimized. And once you use this process for feature updates, quality updates become a lightweight procedure that is simple and fast to execute, ultimately increasing velocity.
 
-When you move to a service management model, you need effective ways of rolling out updates to representative groups of devices. We’ve found that a ring-based deployment works well for us at Microsoft and many other organizations across the globe. Deployment rings in Windows 10 are similar to the deployment groups most organizations constructed for previous major revision upgrades. They are simply a method to separate devices into a deployment timeline.
+When you move to a service management model, you need effective ways of rolling out updates to representative groups of devices. We’ve found that a ring-based deployment works well for us at Microsoft and many other organizations across the globe. Deployment rings in Windows client are similar to the deployment groups most organizations constructed for previous major revision upgrades. They are simply a method to separate devices into a deployment timeline.
 
 At the highest level, each “ring” comprises a group of users or devices that receive a particular update concurrently. For each ring, IT administrators set criteria to control deferral time or adoption (completion) that should be met before deployment to the next broader ring of devices or users can occur.
 
@@ -99,8 +103,7 @@ Once the devices in the Limited ring have had a sufficient stabilization period,
 In most businesses, the Broad ring includes the rest of your organization. Because of the work in the previous ring to vet stability and minimize disruption (with diagnostic data to support your decision) broad deployment can occur relatively quickly.
 
 > [!NOTE]
-> In some instances, you might hold back on mission critical devices (such as medical devices) until deployment in the Broad ring is complete. Get best practices and recommendations for deploying Windows 10 feature
-> updates to mission critical devices.
+> In some instances, you might hold back on mission-critical devices (such as medical devices) until deployment in the Broad ring is complete. Get best practices and recommendations for deploying Windows client feature updates to mission critical-devices.
 
 During the broad deployment phase, you should focus on the following activities:
 
@@ -113,10 +116,10 @@ During the broad deployment phase, you should focus on the following activities:
 Previously, we have provided methods for analyzing your deployments, but these have been standalone tools to assess, manage and execute deployments. In other words, you would generate an analysis, make a deployment strategy, and then move to your console for implementation, repeating these steps for each deployment. We have combined many of these tasks, and more, into a single interface with Desktop Analytics.
 
 
-[Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) is a cloud-based service and a key tool in [Microsoft Endpoint Manager](https://docs.microsoft.com/mem/configmgr/core/understand/microsoft-endpoint-manager-faq). Using artificial intelligence and machine learning, Desktop Analytics is a powerful tool to give you insights and intelligence to
+[Desktop Analytics](/mem/configmgr/desktop-analytics/overview) is a cloud-based service and a key tool in [Microsoft Endpoint Manager](/mem/configmgr/core/understand/microsoft-endpoint-manager-faq). Using artificial intelligence and machine learning, Desktop Analytics is a powerful tool to give you insights and intelligence to
 make informed decisions about the readiness of your Windows devices.
 
-In Windows 10 deployments, we have seen compatibility issues on < 0.5% of apps when using Desktop Analytics. Using Desktop Analytics with Microsoft Endpoint Manager can help you assess app compatibility with the latest
+In Windows client deployments, we have seen compatibility issues on < 0.5% of apps when using Desktop Analytics. Using Desktop Analytics with Microsoft Endpoint Manager can help you assess app compatibility with the latest
 feature update and create groups that represent the broadest number of hardware and software configurations on the smallest set of devices across your organization. In addition, Desktop Analytics can provide you with a device and software inventory and identify issues, giving you data that equate to actionable decisions.
 
 > [!IMPORTANT]
@@ -126,13 +129,12 @@ feature update and create groups that represent the broadest number of hardware 
 
 There are two ways to implement a ring deployment plan, depending on how you manage your devices:
 
-- If you are using Configuration Manager: Desktop Analytics provides end-to-end deployment plan integration so that you can also kick off phased deployments within a ring. Learn more about [deployment plans in Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/about-deployment-plans).
-- If you are using Microsoft Intune, see [Create deployment plans directly in Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide).
+- If you are using Configuration Manager: Desktop Analytics provides end-to-end deployment plan integration so that you can also kick off phased deployments within a ring. Learn more about [deployment plans in Desktop Analytics](/mem/configmgr/desktop-analytics/about-deployment-plans).
+- If you are using Microsoft Intune, see [Create deployment plans directly in Intune](/mem/intune/fundamentals/planning-guide).
 
 For more about Desktop Analytics, see these articles:
 
-- [How to set up Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/set-up)
-- [Tutorial: Deploy Windows 10 to Pilot](https://docs.microsoft.com/mem/configmgr/desktop-analytics/tutorial-windows10)
-- [Desktop Analytics documentation](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
-- [Intune deployment planning, design, and implementation guide](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
-
+- [How to set up Desktop Analytics](/mem/configmgr/desktop-analytics/set-up)
+- [Tutorial: Deploy Windows 10 to Pilot](/mem/configmgr/desktop-analytics/tutorial-windows10)
+- [Desktop Analytics documentation](/mem/configmgr/desktop-analytics/overview)
+- [Intune deployment planning, design, and implementation guide](/mem/intune/fundamentals/planning-guide)

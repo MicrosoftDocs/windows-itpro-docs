@@ -1,28 +1,31 @@
 ---
-title: Confirm That Certificates Are Deployed Correctly (Windows 10)
+title: Confirm That Certificates Are Deployed Correctly (Windows)
 description: Learn how to confirm that a Group Policy is being applied as expected and that the certificates are being properly installed on the workstations.
 ms.assetid: de0c8dfe-16b0-4d3b-8e8f-9282f6a65eee
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: securit
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Confirm That Certificates Are Deployed Correctly
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 After configuring your certificates and autoenrollment in Group Policy, you can confirm that the policy is being applied as expected, and that the certificates are being properly installed on the workstation devices.
 

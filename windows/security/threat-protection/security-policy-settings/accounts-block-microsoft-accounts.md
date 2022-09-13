@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Accounts: Block Microsoft accounts
@@ -27,27 +27,27 @@ Describes the best practices, location, values, management, and security conside
 
 ## Reference
 
-This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. For more details, see [Microsoft Accounts](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts).
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. For more information, see [Microsoft Accounts](../../identity-protection/access-control/microsoft-accounts.md).
 
 There are two options if this setting is enabled:
 
-- **Users can’t add Microsoft accounts** means that existing connected accounts can still sign in to the device (and appear on the Sign in screen). However, users cannot use the **Settings** app to add new connected accounts (or connect local accounts to Microsoft accounts).
+- **Users can’t add Microsoft accounts** means that existing connected accounts can still sign in to the device (and appear on the sign-in screen). However, users can't use the **Settings** app to add new connected accounts (or connect local accounts to Microsoft accounts).
 
-- **Users can’t add or log on with Microsoft accounts** means that users cannot add new connected accounts (or connect local accounts to Microsoft accounts) or use existing connected accounts through **Settings**.
+- **Users can’t add or log on with Microsoft accounts** means that users can't add new connected accounts (or connect local accounts to Microsoft accounts) or use existing connected accounts through **Settings**.
 
-If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
+If you disable or don't configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
 
 ### Possible values
 -   This policy is disabled
 -   Users can’t add Microsoft accounts
--   Users can’t add or log on with Microsoft accounts
+-   Users can’t add or sign in with Microsoft accounts
 
-By default, this setting is not defined on domain controllers and disabled on stand-alone servers.
+By default, this setting isn't defined on domain controllers and disabled on stand-alone servers.
 
 ### Best practices
 
--   By disabling or not configuring this policy setting on the client computer, users will be able to use their Microsoft account, local account, or domain account for their sign-in session to Windows. It also enables the user to connect a local or domain account to a Microsoft account. This provides a convenient option for your users.
--   If you need to limit the use of Microsoft accounts in your organization, click the **Users can’t add Microsoft accounts** setting option so that users will not be able to use the **Settings** app to add new connected accounts.
+-   If this policy setting is disabled or isn't configured on the client computer, users will be able to use their Microsoft account, local account, or domain account for their sign-in session to Windows. It also enables the user to connect a local or domain account to a Microsoft account. This ability to connect provides a convenient option for your users.
+-   If you need to limit the use of Microsoft accounts in your organization, click the **Users can’t add Microsoft accounts** setting option so that users won't be able to use the **Settings** app to add new connected accounts.
 
 ### Location
 
@@ -72,7 +72,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -80,11 +80,11 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Although Microsoft accounts are password-protected, they also have the potential of greater exposure outside of the enterprise. Additionally, if the owner of a Microsoft account is not easily distinguishable, auditing and forensics become more difficult.
+Although Microsoft accounts are password-protected, they also have the potential of greater exposure outside of the enterprise. Additionally, if the owner of a Microsoft account isn't easily distinguishable, auditing and forensics become more difficult.
 
 ### Countermeasure
 
-Require only domain accounts in your enterprise by limiting the use of Microsoft accounts. Click the **Users can’t add Microsoft accounts** setting option so that users will not be able to create new Microsoft accounts on a device, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account.
+Require only domain accounts in your enterprise by limiting the use of Microsoft accounts. Click the **Users can’t add Microsoft accounts** setting option so that users won't be able to create new Microsoft accounts on a device, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account.
 
 ### Potential impact
 
@@ -93,5 +93,4 @@ Establishing greater control over accounts in your organization can give you mor
 ## Related topics
 
 [Security Options](security-options.md)
- 
  

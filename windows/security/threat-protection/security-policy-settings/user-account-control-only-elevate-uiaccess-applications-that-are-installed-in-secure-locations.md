@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # User Account Control: Only elevate UIAccess applications that are installed in secure locations
@@ -59,7 +59,7 @@ If an application presents a UIAccess attribute when it requests privileges, the
 
 -   **Disabled**
 
-    An application can start with UIAccess integrity even if it does not reside in a secure location in the file system.
+    An application can start with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 
 ### Best practices
 
@@ -103,7 +103,7 @@ This section describes:
 
 ### Vulnerability
 
-UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as logon prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that transmit user interfaces to alternative forms. But it's not required by most applications. A process that's started with UIAccess rights has the following abilities:
+UIAccess integrity allows an application to bypass User Interface Privilege Isolation (UIPI) restrictions when an application is elevated in privilege from a standard user to an administrator. When this setting is enabled, an application that has the UIAccess flag set to true in its manifest can interchange information with applications that are running at a higher privilege level, such as sign-in prompts and privilege elevation prompts. This ability is required to support accessibility features such as screen readers that transmit user interfaces to alternative forms. But it's not required by most applications. A process that's started with UIAccess rights has the following abilities:
 
 -   Set the foreground window.
 -   Drive any application window by using the SendInput function.
@@ -117,7 +117,7 @@ Enable the **User Account Control: Only elevate UIAccess applications that are i
 
 ### Potential impact
 
-If the application that requests UIAccess meets the UIAccess setting requirements, computers that run at least the Windows Vista operating system start the application with the ability to bypass most UIPI restrictions. If the application does not meet the security restrictions, the application is started without UIAccess rights, and it can interact only with applications at the same or lower privilege level.
+If the application that requests UIAccess meets the UIAccess setting requirements, computers that run at least the Windows Vista operating system start the application with the ability to bypass most UIPI restrictions. If the application doesn't meet the security restrictions, the application is started without UIAccess rights, and it can interact only with applications at the same or lower privilege level.
 
 ## Related articles
 

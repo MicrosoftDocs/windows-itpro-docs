@@ -2,14 +2,13 @@
 title: Troubleshoot Start menu errors
 description: Learn how to troubleshoot common Start menu errors in Windows 10. For example, learn to troubleshoot errors related to deployment, crashes, and performance.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.author: dansimp
-author: dansimp
+ms.author: lizlong
+author: lizgt2000
 ms.localizationpriority: medium
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.topic: troubleshooting
+ms.collection: highpri
 ---
 
 # Troubleshoot Start menu errors
@@ -18,7 +17,7 @@ Start failures can be organized into these categories:
 
 - **Deployment/Install issues** - Easiest to identify but difficult to recover. This failure is consistent and usually permanent. Reset, restore from backup, or rollback to recover.
 - **Performance issues** - More common with older hardware, low-powered machines. Symptoms include: High CPU utilization, disk contention, memory resources. This makes Start very slow to respond. Behavior is intermittent depending on available resources.
-- **Crashes** - Also easy to identify. Crashes in Shell Experience Host or related can be found in System or Application event logs. This can be a code defect or related to missing or altered permissions to files or registry keys by a program or incorrect security tightening configurations. Determining permissions issues can be time consuming but a [SysInternals tool called Procmon](https://docs.microsoft.com/sysinternals/downloads/procmon) will show **Access Denied**. The other option is to get a dump of the process when it crashes and depending on comfort level, review the dump in the debugger, or have support review the data.
+- **Crashes** - Also easy to identify. Crashes in Shell Experience Host or related can be found in System or Application event logs. This can be a code defect or related to missing or altered permissions to files or registry keys by a program or incorrect security tightening configurations. Determining permissions issues can be time consuming but a [SysInternals tool called Procmon](/sysinternals/downloads/procmon) will show **Access Denied**. The other option is to get a dump of the process when it crashes and depending on comfort level, review the dump in the debugger, or have support review the data.
 - **Hangs** - in Shell Experience host or related. These are the hardest issues to identify as there are few events logged, but behavior is typically intermittent or recovers with a reboot. If a background application or service hangs, Start will not have resources to respond in time. Clean boot may help identify if the issue is related to additional software. Procmon is also useful in this scenario.
 - **Other issues** - Customization, domain policies, deployment issues.
 
@@ -42,7 +41,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
   - `get-AppXPackage -Name Microsoft.Windows.ShellExperienceHost`
   - `get-AppXPackage -Name Microsoft.Windows.Cortana`
 
-    ![Example of output from cmdlets](images/start-ts-1.png)
+     :::image type="content" alt-text="Example of output from cmdlets." source="images/start-ts-1.png" lightbox="images/start-ts-1.png":::
 
     Failure messages will appear if they aren't installed
 
@@ -188,7 +187,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 ### Symptom: Application tiles like Alarm, Calculator, and Edge are missing from Start menu and the Settings app fails to open on Windows 10, version 1709 when a local user profile is deleted
 
-![Screenshots that show download icons on app tiles and missing app tiles](images/start-ts-2.png)
+:::image type="content" alt-text="Screenshots that show download icons on app tiles and missing app tiles." source="images/start-ts-2.png" lightbox="images/start-ts-2.png":::
 
 **Cause**: This issue is known. The first-time sign-in experience is not detected and does not trigger the install of some apps.
 
@@ -236,11 +235,11 @@ Specifically, behaviors include
 - If a new roaming user is created, the first sign-in appears normal, but on subsequent sign-ins, tiles are missing.
 
 
-![Example of a working layout](images/start-ts-3.png)
+![Example of a working layout.](images/start-ts-3.png)
 
 *Working layout on first sign-in of a new roaming user profile*
 
-![Example of a failing layout](images/start-ts-4.png)
+![Example of a failing layout.](images/start-ts-4.png)
 
 *Failing layout on subsequent sign-ins*
 
@@ -256,15 +255,15 @@ Specifically, behaviors include
 
 Before the upgrade:
  
-  ![Example of Start screen with customizations applied](images/start-ts-5.jpg)
+  ![Example of Start screen with customizations applied.](images/start-ts-5.jpg)
 
 After the upgrade the user pinned tiles are missing:
 
-  ![Example of Start screen with previously pinned tiles missing](images/start-ts-6.png)
+  ![Example of Start screen with previously pinned tiles missing.](images/start-ts-6.png)
  
 Additionally, users may see blank tiles if sign-in was attempted without network connectivity.
 
-  ![Example of blank tiles](images/start-ts-7.png)
+  ![Example of blank tiles.](images/start-ts-7.png)
  
 
 **Resolution**: This issue was fixed in the [October 2017 update](https://support.microsoft.com/en-us/help/4041676).
@@ -279,7 +278,7 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 
 ### Symptom: Start Menu issues with Tile Data Layer corruption 
 
-**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).) 
+**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](/windows/deployment/planning/windows-10-removed-features).) 
 
 **Resolution** There are steps you can take to fix the icons, first is to confirm that is the issue that needs to be addressed.
 
@@ -292,9 +291,9 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 >[!Note]
 >Corruption recovery removes any manual pins from Start. Apps should still be visible, but you’ll need to re-pin any secondary tiles and/or pin app tiles to the main Start view. Aps that you have installed that are completely missing from “all apps” is unexpected, however. That implies the re-registration didn’t work.
 
-- Open a command prompt, and run the following command:
+Open a command prompt, and run the following command:
 
-```
+```console
 C:\Windows\System32\tdlrecover.exe -reregister -resetlayout -resetcache
 ```
 
@@ -325,16 +324,3 @@ If you have already encountered this issue, use one of the following two options
 5. Select **Edit**, and then select **Add** to add the group.
 
 6. Test Start and other Apps.
-
-
-
-
-
-
-
-
-
-
-
-
-

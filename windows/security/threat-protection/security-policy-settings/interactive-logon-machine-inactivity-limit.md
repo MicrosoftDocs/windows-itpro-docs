@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/18/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Interactive logon: Machine inactivity limit
@@ -67,7 +67,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-Restart is required for changes to this policy to become effective when they are saved locally or distributed through Group Policy.
+Restart is required for changes to this policy to become effective when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
