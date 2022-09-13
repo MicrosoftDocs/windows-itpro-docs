@@ -67,6 +67,11 @@ Added in Windows 10, version 1703. Boolean value that indicates whether keyboard
 
 Supported operations are Get and Replace.
 
+<a href="" id="Assessments"></a>**Assessments**  
+Added in Windows 11 SV2. Enables support for multiple assessments. When configured, users can select from a list of assessments. The node accepts an XML string that represents the list of available assessments. 
+
+Supported operations are Get and Replace. 
+
 ## Related topics
 
 [Set up Take a Test on multiple PCs](/education/windows/take-a-test-multiple-pcs)  
