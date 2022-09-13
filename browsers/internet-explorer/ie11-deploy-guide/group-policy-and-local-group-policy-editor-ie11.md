@@ -22,7 +22,7 @@ ms.date: 07/27/2017
 
 A Microsoft Management Console (MMC)-based tool that manages both computer and user-related configurations for an individual computer policy. This tool is included with Windows® 7 Service Pack 1 (SP1) and Windows 8.1.
 
-Here's a list of the policy settings you can use, based on the configuration type. For more info, see [Local Group Policy Editor](https://go.microsoft.com/fwlink/p/?LinkId=294912).
+Here's a list of the policy settings you can use, based on the configuration type. For more info, see [Local Group Policy Editor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725970(v=ws.11)).
 
 |Computer configuration |User configuration |
 |-----------------------|-------------------|
@@ -35,6 +35,3 @@ Here's a list of the policy settings you can use, based on the configuration typ
  
 
  
-
-
-

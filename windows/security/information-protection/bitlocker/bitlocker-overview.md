@@ -1,18 +1,14 @@
 ---
-title: BitLocker (Windows 10)
+title: BitLocker
 description: This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
-ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 01/26/2018
 ms.custom: bitlocker
@@ -21,7 +17,10 @@ ms.custom: bitlocker
 # BitLocker
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
 
@@ -49,7 +48,7 @@ BitLocker control panel, and they are appropriate to be used for automated deplo
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
+To find out what's new in BitLocker for Windows, such as support for the XTS-AES encryption algorithm, see the [BitLocker](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
  
 ## System requirements
 

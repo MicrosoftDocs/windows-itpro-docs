@@ -1,24 +1,24 @@
 ---
-title: Certificate Propagation Service (Windows 10)
+title: Certificate Propagation Service (Windows)
 description: This topic for the IT professional describes the certificate propagation service (CertPropSvc), which is used in smart card implementation.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: ardenw
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
-ms.reviewer: 
+ms.date: 08/24/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Certificate Propagation Service
-
-Applies To: Windows 10, Windows Server 2016
 
 This topic for the IT professional describes the certificate propagation service (CertPropSvc), which is used in smart card implementation.
 
@@ -38,7 +38,7 @@ The following figure shows the flow of the certificate propagation service. The 
 
 **Certificate propagation service**
 
-![Certificate propagation service](images/sc-image302.gif)
+![Certificate propagation service.](images/sc-image302.gif)
 
 1.  A signed-in user inserts a smart card.
 

@@ -1,31 +1,24 @@
 ---
-title: Configure Hybrid key trust Windows Hello for Business
+title: Configure Hybrid Azure AD joined key trust Windows Hello for Business
 description: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
-keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI, Windows Hello, key trust, key-trust
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/14/2021
-ms.reviewer: 
+ms.date: 04/30/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Key trust</b>
 ---
+# Configure Hybrid Azure AD joined Windows Hello for Business: Public Key Infrastructure
 
-# Configure Hybrid Windows Hello for Business: Public Key Infrastructure
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Hybrid Deployment
-- Key trust
-
-Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
+Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 
 All deployments use enterprise issued certificates for domain controllers as a root of trust.
 
@@ -37,7 +30,7 @@ This section has you configure certificate templates on your Windows Server 2012
 
 Clients need to trust domain controllers and the best way to do this is to ensure each domain controller has a Kerberos Authentication certificate.  Installing a certificate on the domain controller enables the Key Distribution Center (KDC) to prove its identity to other members of the domain.  This provides clients a root of trust external to the domain - namely the enterprise certificate authority.
 
-Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD joined devices. The steps below to update the domain controller certificate to include the **KDC Authentication** OID may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD joined devices to your environment in the future.
+Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices. The steps below to update the domain controller certificate to include the **KDC Authentication** OID may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD-joined devices to your environment in the future.
 
 By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template.  However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs.  To ensure domain controllers request the proper certificate with the best available cryptography, use the **Kerberos Authentication** certificate template a baseline to create an updated domain controller certificate template.
 
@@ -50,7 +43,8 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.
-    **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
+   > [!NOTE]
+   > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 8. Close the console.
@@ -82,6 +76,9 @@ The certificate template is configured to supersede all the certificate template
 
 > [!NOTE]
 > The domain controller's certificate must chain to a root in the NTAuth store. By default, the Active Directory Certificate Authority's root certificate is added to the NTAuth store. If you are using a third-party CA, this may not be done by default. If the domain controller certificate does not chain to a root in the NTAuth store, user authentication will fail.
+>To see all certificates in the NTAuth store, use the following command:
+>
+> `Certutil -viewstore -enterprise NTAuth`
 
 ### Publish Certificate Templates to a Certificate Authority
 
@@ -95,7 +92,7 @@ Sign-in to the certificate authority or management workstations with an _enterpr
 4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
 5. In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)** template you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
 6. If you published the **Domain Controller Authentication (Kerberos)** certificate template, then you should unpublish the certificate templates you included in the superseded templates list.
-    * To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.
+    - To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.
 7. Close the console.
 
 ### Unpublish Superseded Certificate Templates

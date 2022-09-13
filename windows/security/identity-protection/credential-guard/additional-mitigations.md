@@ -1,19 +1,15 @@
 ---
 title: Additional mitigations
 description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
-ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: erikdau
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
 ---
 
 # Additional mitigations
@@ -22,7 +18,7 @@ Windows Defender Credential Guard can provide mitigation against attacks on deri
 
 ## Restricting domain users to specific domain-joined devices
 
-Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on using devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
+Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on with devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
 ### Kerberos armoring
 
@@ -36,14 +32,14 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 
 ### Protecting domain-joined device secrets
 
-Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on to devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
 -   Devices' accounts are in Windows Server 2012 domain functional level or higher.
 -   All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
     -   KDC EKU present
     -   DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
--   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
+-   Windows devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
 #### Deploying domain-joined device certificates
@@ -80,7 +76,7 @@ CertReq -EnrollCredGuardCert MachineAuthentication
  
 #### How a certificate issuance policy can be used for access control
 
-Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/library/dd378897(v=ws.10).aspx) on TechNet.
+Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd378897(v=ws.10)) on TechNet.
 
 **To see the issuance policies available**
 
@@ -100,13 +96,13 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
-### Restricting user sign on
+### Restricting user sign-on
 
 So we now have completed the following:
 
 -   Created a special certificate issuance policy to identify devices that meet the deployment criteria required for the user to be able to sign on
 -   Mapped that policy to a universal security group or claim
--   Provided a way for domain controllers to get the device authorization data during user sign on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
+-   Provided a way for domain controllers to get the device authorization data during user sign-on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
 
 Authentication policies have the following requirements:
 -   User accounts are in a Windows Server 2012 domain functional level or higher domain.
@@ -133,7 +129,7 @@ Authentication policies have the following requirements:
 
 To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
 
-To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/library/dn486813(v=ws.11).aspx).
+To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn486813(v=ws.11)).
 
 ## Appendix: Scripts
 

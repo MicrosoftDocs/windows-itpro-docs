@@ -7,21 +7,17 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5063(S, F): A cryptographic provider operation was attempted.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-This event generates in BCryptUnregisterProvider() and BCryptRegisterProvider() functions. These are Cryptographic Next Generation (CNG) functions.
+This event generates in BCryptUnregisterProvider() and BCryptRegisterProvider() functions. These functions are Cryptographic Next Generation (CNG) functions.
 
 This event generates when cryptographic provider was registered or unregistered.
 
@@ -29,13 +25,11 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
--   <https://www.microsoft.com/download/details.aspx?id=1251>
-
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is used for Cryptographic Next Generation (CNG) troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other Policy Change Events](audit-other-policy-change-events.md)
 

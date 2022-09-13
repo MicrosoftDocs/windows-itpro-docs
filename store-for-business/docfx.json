@@ -31,6 +31,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
       "ms.author": "trudyha",
       "audience": "ITPro",
@@ -56,6 +57,9 @@
         "Kellylorenebaker",
         "jborsecnik",
         "tiburd",
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",        
         "garycentric"
       ]
     },

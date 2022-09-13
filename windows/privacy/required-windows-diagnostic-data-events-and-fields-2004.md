@@ -1,23 +1,21 @@
 ---
-description: Use this article to learn more about what required Windows 10 version 2004 and version 20H2 diagnostic data is gathered.
-title: Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+description: Learn more about the required Windows 10 diagnostic data gathered.
+title: Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
+ms.prod: m365-security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
-ms.collection: M365-security-compliance
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-audience: ITPro
-ms.date: 09/30/2020
+ms.date: 
+ms.technology: privacy
 ---
 
 
-# Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
+# Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
 
 
 > [!IMPORTANT]  
@@ -26,6 +24,8 @@ ms.date: 09/30/2020
 
  **Applies to**
 
+- Windows 10, version 21H2
+- Windows 10, version 21H1
 - Windows 10, version 20H2
 - Windows 10, version 2004
 
@@ -38,6 +38,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
+- [Required Windows 11 diagnostic events and fields](required-windows-11-diagnostic-events-and-fields.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
@@ -45,7 +46,6 @@ You can learn more about Windows functional and diagnostic data through these ar
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
-
 
 
 
@@ -57,210 +57,400 @@ This event lists the types of objects and how many of each exist on the client d
 
 The following fields are available:
 
-- **DatasourceApplicationFile_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceApplicationFile_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS1**  The total DataSourceDevicePnp objects targeting Windows 10 version 1607 on this device.
-- **DatasourceDevicePnp_RS2**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceDevicePnp_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS1**  The total DataSourceDriverPackage objects targeting Windows 10 version 1607 on this device.
-- **DatasourceDriverPackage_RS2**  The total DataSourceDriverPackage objects targeting Windows 10, version 1703 on this device.
-- **DatasourceDriverPackage_RS3**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceDriverPackage_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_20H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS1**  The total DataSourceMatchingInfoBlock objects targeting Windows 10 version 1607 on this device.
-- **DataSourceMatchingInfoBlock_RS2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS3**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS4**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_TH1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoBlock_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_19H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_20H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS1**  The total DataSourceMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
-- **DataSourceMatchingInfoPassive_RS2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS3**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_TH1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPassive_TH2**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_19H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_20H1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS1**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS2**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS3**  The total DataSourceMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_TH1**  The count of the number of this particular object type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_TH2**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_19H1**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_20H1**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS1**  The total DatasourceSystemBios objects targeting Windows 10 version 1607 present on this device.
-- **DatasourceSystemBios_RS2**  The total DatasourceSystemBios objects targeting Windows 10 version 1703 present on this device.
-- **DatasourceSystemBios_RS3**  The total DatasourceSystemBios objects targeting Windows 10 version 1709 present on this device.
-- **DatasourceSystemBios_RS4**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS5**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_TH1**  The count of the number of this particular object type present on this device.
-- **DatasourceSystemBios_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionApplicationFile_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS1**  The total DecisionDevicePnp objects targeting Windows 10 version 1607 on this device.
-- **DecisionDevicePnp_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionDevicePnp_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS1**  The total DecisionDriverPackage objects targeting Windows 10 version 1607 on this device.
-- **DecisionDriverPackage_RS2**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS3**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS4Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionDriverPackage_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_RS1**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1607 present on this device.
-- **DecisionMatchingInfoBlock_RS2**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1703 present on this device.
-- **DecisionMatchingInfoBlock_RS3**  The total DecisionMatchingInfoBlock objects targeting Windows 10 version 1709 present on this device.
-- **DecisionMatchingInfoBlock_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoBlock_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS1**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1607 on this device.
-- **DecisionMatchingInfoPassive_RS2**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1703 on this device.
-- **DecisionMatchingInfoPassive_RS3**  The total DecisionMatchingInfoPassive objects targeting Windows 10 version 1803 on this device.
-- **DecisionMatchingInfoPassive_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPassive_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_19H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS1**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1607 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS2**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1703 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS3**  The total DecisionMatchingInfoPostUpgrade objects targeting Windows 10 version 1709 on this device.
-- **DecisionMatchingInfoPostUpgrade_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMatchingInfoPostUpgrade_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_19H1Setup**  The total DecisionMediaCenter objects targeting the next release of Windows on this device.
-- **DecisionMediaCenter_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_RS1**  The total DecisionMediaCenter objects targeting Windows 10 version 1607 present on this device.
-- **DecisionMediaCenter_RS2**  The total DecisionMediaCenter objects targeting Windows 10 version 1703 present on this device.
-- **DecisionMediaCenter_RS3**  The total DecisionMediaCenter objects targeting Windows 10 version 1709 present on this device.
-- **DecisionMediaCenter_RS4**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_RS5**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionMediaCenter_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_19H1**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_19H1Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_20H1**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_20H1Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_RS1**  The total DecisionSystemBios objects targeting Windows 10 version 1607 on this device.
-- **DecisionSystemBios_RS2**  The total DecisionSystemBios objects targeting Windows 10 version 1703 on this device.
-- **DecisionSystemBios_RS3**  The total DecisionSystemBios objects targeting Windows 10 version 1709 on this device.
-- **DecisionSystemBios_RS4**  The total DecisionSystemBios objects targeting Windows 10 version, 1803 present on this device.
-- **DecisionSystemBios_RS4Setup**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_RS5**  The total DecisionSystemBios objects targeting the next release of Windows on this device.
-- **DecisionSystemBios_RS5Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_TH1**  The count of the number of this particular object type present on this device.
-- **DecisionSystemBios_TH2**  The count of the number of this particular object type present on this device.
-- **DecisionTest_20H1Setup**  The count of the number of this particular object type present on this device.
-- **InventoryApplicationFile**  The count of the number of this particular object type present on this device.
-- **InventoryLanguagePack**  The count of the number of this particular object type present on this device.
-- **InventoryMediaCenter**  The count of the number of this particular object type present on this device.
-- **InventorySystemBios**  The count of the number of this particular object type present on this device.
-- **InventoryTest**  The count of the number of this particular object type present on this device.
-- **InventoryUplevelDriverPackage**  The count of the number of this particular object type present on this device.
-- **PCFP**  The count of the number of this particular object type present on this device.
-- **SystemMemory**  The count of the number of this particular object type present on this device.
-- **SystemProcessorCompareExchange**  The count of the number of this particular object type present on this device.
-- **SystemProcessorLahfSahf**  The count of the number of this particular object type present on this device.
+- **DatasourceApplicationFile_19H1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_20H1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H2**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS2**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS3**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS4**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_RS5**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_TH1**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_TH2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_19H1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_20H1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS3**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS4**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS5**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_TH1**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_TH2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_19H1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_20H1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS3**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS4**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS5**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_TH1**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_TH2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_19H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_19H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_20H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS4**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_RS5**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_TH1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_TH2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_19H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_19H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_20H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS4**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_RS5**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_TH1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_TH2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_19H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_19H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_20H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS4**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS5**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_TH1**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_TH2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_19H1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_19H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_20H1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H2Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS3**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS4**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS4Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS5**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_RS5Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_TH1**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_TH2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_19H1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_20H1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS3**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS4**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_RS5**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_TH1**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_TH2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_19H1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_20H1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS3**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS4**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS5**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_TH1**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_TH2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_19H1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_20H1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS3**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS4**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS5**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_TH1**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_TH2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_19H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_20H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS4**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_RS5**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_TH1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_TH2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_19H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_20H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS4**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_RS5**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_TH1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_TH2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_19H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_20H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS4**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_RS5**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_TH1**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_TH2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_19H1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_20H1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS3**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS4**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_RS5**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_TH1**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_TH2**  The total number of objects of this type present on this device.
+- **DecisionSModeState_19H1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_20H1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H2**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS2**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS3**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS4**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS5**  The total number of objects of this type present on this device.
+- **DecisionSModeState_TH1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_19H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS4Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_RS5Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_21H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_19H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_20H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_TH2**  The total number of objects of this type present on this device.
+- **DecisionTest_19H1**  The total number of objects of this type present on this device.
+- **DecisionTest_20H1**  The total number of objects of this type present on this device.
+- **DecisionTest_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_21H1**  The total number of objects of this type present on this device.
+- **DecisionTest_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_21H2**  The total number of objects of this type present on this device.
+- **DecisionTest_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_RS1**  The total number of objects of this type present on this device.
+- **DecisionTest_RS2**  The total number of objects of this type present on this device.
+- **DecisionTest_RS3**  The total number of objects of this type present on this device.
+- **DecisionTest_RS4**  The total number of objects of this type present on this device.
+- **DecisionTest_RS5**  The total number of objects of this type present on this device.
+- **DecisionTest_TH1**  The total number of objects of this type present on this device.
+- **DecisionTest_TH2**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_19H1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_20H1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H2**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS2**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS3**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS4**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS5**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_TH1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_TH2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_19H1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_20H1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_20H1Setup**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS3**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS4**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS5**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_TH1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_TH2**  The total number of objects of this type present on this device.
+- **InventoryApplicationFile**  The total number of objects of this type present on this device.
+- **InventoryLanguagePack**  The total number of objects of this type present on this device.
+- **InventoryMediaCenter**  The total number of objects of this type present on this device.
+- **InventorySystemBios**  The total number of objects of this type present on this device.
+- **InventoryTest**  The total number of objects of this type present on this device.
+- **InventoryUplevelDriverPackage**  The total number of objects of this type present on this device.
+- **PCFP**  The total number of objects of this type present on this device.
+- **SystemMemory**  The total number of objects of this type present on this device.
+- **SystemProcessorCompareExchange**  The total number of objects of this type present on this device.
+- **SystemProcessorLahfSahf**  The total number of objects of this type present on this device.
 - **SystemProcessorNx**  The total number of objects of this type present on this device.
 - **SystemProcessorPrefetchW**  The total number of objects of this type present on this device.
 - **SystemProcessorSse2**  The total number of objects of this type present on this device.
-- **SystemTouch**  The count of the number of this particular object type present on this device.
+- **SystemTouch**  The total number of objects of this type present on this device.
 - **SystemWim**  The total number of objects of this type present on this device.
-- **SystemWindowsActivationStatus**  The count of the number of this particular object type present on this device.
+- **SystemWindowsActivationStatus**  The total number of objects of this type present on this device.
 - **SystemWlan**  The total number of objects of this type present on this device.
-- **Wmdrm_19H1**  The count of the number of this particular object type present on this device.
-- **Wmdrm_19H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
-- **Wmdrm_20H1**  The count of the number of this particular object type present on this device.
-- **Wmdrm_20H1Setup**  The total Wmdrm objects targeting the next release of Windows on this device.
-- **Wmdrm_RS1**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS2**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS3**  An ID for the system, calculated by hashing hardware identifiers.
-- **Wmdrm_RS4**  The total Wmdrm objects targeting Windows 10, version 1803 present on this device.
-- **Wmdrm_RS5**  The count of the number of this particular object type present on this device.
-- **Wmdrm_TH1**  The count of the number of this particular object type present on this device.
-- **Wmdrm_TH2**  The count of the number of this particular object type present on this device.
+- **Wmdrm_19H1**  The total number of objects of this type present on this device.
+- **Wmdrm_19H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_20H1**  The total number of objects of this type present on this device.
+- **Wmdrm_20H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_21H1**  The total number of objects of this type present on this device.
+- **Wmdrm_21H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_21H2**  The total number of objects of this type present on this device.
+- **Wmdrm_21H2Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_RS1**  The total number of objects of this type present on this device.
+- **Wmdrm_RS2**  The total number of objects of this type present on this device.
+- **Wmdrm_RS3**  The total number of objects of this type present on this device.
+- **Wmdrm_RS4**  The total number of objects of this type present on this device.
+- **Wmdrm_RS5**  The total number of objects of this type present on this device.
+- **Wmdrm_TH1**  The total number of objects of this type present on this device.
+- **Wmdrm_TH2**  The total number of objects of this type present on this device.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
@@ -450,6 +640,17 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeRemove
+
+This event indicates that the DataSourceMatchingInfoPostUpgrade object is no longer present. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoPostUpgradeStartSync
@@ -718,6 +919,17 @@ The following fields are available:
 - **SdbReinstallUpgrade**  The file is tagged as needing to be reinstalled after upgrade in the compatibility database (but is not blocking upgrade).
 
 
+### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeRemove
+
+This event indicates that the DecisionMatchingInfoPostUpgrade object is no longer present. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+
+
 ### Microsoft.Windows.Appraiser.General.DecisionMatchingInfoPostUpgradeStartSync
 
 This event indicates that a new set of DecisionMatchingInfoPostUpgradeAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
@@ -757,6 +969,30 @@ The following fields are available:
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
 
 
+### Microsoft.Windows.Appraiser.General.DecisionSModeStateAdd
+
+This event sends true/false compatibility decision data about the S mode state. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+- **Blocking**  Appraiser decision about eligibility to upgrade.
+- **LockdownMode**  S mode lockdown mode.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSModeStateStartSync
+
+The DecisionSModeStateStartSync event indicates that a new set of DecisionSModeStateAdd events will be sent. This event is used to make compatibility decisions about the S mode state. Microsoft uses this information to understand and address problems regarding the S mode state for computers receiving updates. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+
+
 ### Microsoft.Windows.Appraiser.General.DecisionSystemBiosAdd
 
 This event sends compatibility decision data about the BIOS to help keep Windows up to date.
@@ -780,6 +1016,183 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file that is generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemDiskSizeAdd
+
+This event indicates that this object type was added. This data refers to the Disk size in the device. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser decision during evaluation of hardware requirements during OS upgrade.
+- **TotalSize**  Total disk size in Mb.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemDiskSizeStartSync
+
+Start sync event for physical disk size data. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemMemoryAdd
+
+This event sends compatibility decision data about the system memory to help keep Windows up to date. Microsoft uses this information to understand and address problems regarding system memory for computers receiving updates.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Blocking information.
+- **MemoryRequirementViolated**  Memory information.
+- **ramKB**  Memory information in KB.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemMemoryStartSync
+
+The DecisionSystemMemoryStartSync event indicates that a new set of DecisionSystemMemoryAdd events will be sent. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuCoresAdd
+
+This data attribute refers to the number of Cores a CPU supports. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  The Appraisal decision about eligibility to upgrade.
+- **CpuCores**  Number of CPU Cores.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuCoresStartSync
+
+This event signals the start of telemetry collection for CPU cores in Appraiser. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuModelAdd
+
+This event sends true/false compatibility decision data about the CPU. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Armv81Support**  Arm v8.1 Atomics support.
+- **Blocking**  Appraiser decision about eligibility to upgrade.
+- **CpuFamily**  Cpu family.
+- **CpuModel**  Cpu model.
+- **CpuStepping**  Cpu stepping.
+- **CpuVendor**  Cpu vendor.
+- **PlatformId**  CPU platform identifier.
+- **SysReqOverride**  Appraiser decision about system requirements override.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuModelStartSync
+
+The DecisionSystemProcessorCpuModelStartSync event indicates that a new set of DecisionSystemProcessorCpuModelAdd events will be sent. This event is used to make compatibility decisions about the CPU. Microsoft uses this information to understand and address problems regarding the CPU for computers receiving updates. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuSpeedAdd
+
+This event sends compatibility decision data about the CPU, to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser OS eligibility decision.
+- **Mhz**  CPU speed in MHz.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionSystemProcessorCpuSpeedStartSync
+
+This event collects data for CPU speed in MHz. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionTpmVersionAdd
+
+This event collects data about the Trusted Platform Module (TPM) in the device. TPM technology is designed to provide hardware-based, security-related functions. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser upgradeability decision based on the device's TPM support.
+- **SysReqOverride**  Appraiser decision about system requirements override.
+- **TpmVersionInfo**  The version of Trusted Platform Module (TPM) technology in the device.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionTpmVersionStartSync
+
+The DecisionTpmVersionStartSync event indicates that a new set of DecisionTpmVersionAdd events will be sent. This event is used to make compatibility decisions about the TPM. Microsoft uses this information to understand and address problems regarding the TPM for computers receiving updates. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+
+
+### Microsoft.Windows.Appraiser.General.DecisionUefiSecureBootAdd
+
+This event collects information about data on support and state of UEFI Secure boot. UEFI is a verification mechanism for ensuring that code launched by firmware is trusted. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
+- **Blocking**  Appraiser upgradeability decision when checking for UEFI support.
+- **SecureBootCapable**  Is UEFI supported?
+- **SecureBootEnabled**  Is UEFI enabled?
+
+
+### Microsoft.Windows.Appraiser.General.DecisionUefiSecureBootStartSync
+
+Start sync event data for UEFI Secure boot. UEFI is a verification mechanism for ensuring that code launched by firmware is trusted. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser file generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.GatedRegChange
@@ -1473,9 +1886,9 @@ The following fields are available:
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
 ### Census.Firmware
@@ -1564,6 +1977,7 @@ This event sends data about the mobile and cellular network used by the device (
 
 The following fields are available:
 
+- **CellularModemHWInstanceId0**  HardwareInstanceId of the embedded Mobile broadband modem, as reported and used by PnP system to identify the WWAN modem device in Windows system. Empty string (null string) indicates that this property is unknown for telemetry.
 - **IMEI0**  Represents the International Mobile Station Equipment Identity. This number is usually unique and used by the mobile operator to distinguish different phone hardware. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user. The two fields represent phone with dual sim coverage.
 - **IMEI1**  Represents the International Mobile Station Equipment Identity. This number is usually unique and used by the mobile operator to distinguish different phone hardware. Microsoft does not have access to mobile operator billing data so collecting this data does not expose or identify the user. The two fields represent phone with dual sim coverage.
 - **MCC0**  Represents the Mobile Country Code (MCC). It used with the Mobile Network Code (MNC) to uniquely identify a mobile network operator. The two fields represent phone with dual sim coverage.
@@ -1575,9 +1989,12 @@ The following fields are available:
 - **MobileOperatorCommercialized**  Represents which reseller and geography the phone is commercialized for. This is the set of values on the phone for who and where it was intended to be used. For example, the commercialized mobile operator code AT&T in the US would be ATT-US.
 - **MobileOperatorNetwork0**  Represents the operator of the current mobile network that the device is used on. (AT&T, T-Mobile, Vodafone). The two fields represent phone with dual sim coverage.
 - **MobileOperatorNetwork1**  Represents the operator of the current mobile network that the device is used on. (AT&T, T-Mobile, Vodafone). The two fields represent phone with dual sim coverage.
+- **ModemOptionalCapabilityBitMap0**  A bit map of optional capabilities in modem, such as eSIM support.
 - **NetworkAdapterGUID**  The GUID of the primary network adapter.
 - **SPN0**  Retrieves the Service Provider Name (SPN). For example, these might be AT&T, Sprint, T-Mobile, or Verizon. The two fields represent phone with dual sim coverage.
 - **SPN1**  Retrieves the Service Provider Name (SPN). For example, these might be AT&T, Sprint, T-Mobile, or Verizon. The two fields represent phone with dual sim coverage.
+- **SupportedDataClassBitMap0**  A bit map of the supported data classes (i.g, 5g 4g...) that the modem is capable of.
+- **SupportedDataSubClassBitMap0**  A bit map of data subclasses that the modem is capable of.
 
 
 ### Census.OS
@@ -1602,7 +2019,7 @@ The following fields are available:
 - **LicenseStateReason**  Retrieves why (or how) a system is licensed or unlicensed.  The HRESULT may indicate an error code that indicates a key blocked error, or it may indicate that we are running an OS License granted by the MS store.
 - **OA3xOriginalProductKey**  Retrieves the License key stamped by the OEM to the machine.
 - **OSEdition**  Retrieves the version of the current OS.
-- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc.
+- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc
 - **OSOOBEDateTime**  Retrieves Out of Box Experience (OOBE) Date in Coordinated Universal Time (UTC).
 - **OSSKU**  Retrieves the Friendly Name of OS Edition.
 - **OSSubscriptionStatus**  Represents the existing status for enterprise subscription feature for PRO machines.
@@ -1683,6 +2100,7 @@ The following fields are available:
 - **ProcessorManufacturer**  Name of the processor manufacturer.
 - **ProcessorModel**  Name of the processor model.
 - **ProcessorPhysicalCores**  Number of physical cores in the processor.
+- **ProcessorPlatformSpecificField1**  Registry value HKLM\HARDWARE\DESCRIPTION\System\CentralProcessor\0, @Platform Specific Field 1. Platform Specific Field 1 of the Processor. Each vendor (e.g. Intel) defines the meaning differently. On Intel this is used to differentiate processors of the same generation, (e.g. Kaby Lake, KBL-G, KBL-H, KBL-R).
 - **ProcessorUpdateRevision**  The microcode revision.
 - **ProcessorUpdateStatus**  Enum value that represents the processor microcode load status
 - **SocketCount**  Count of CPU sockets.
@@ -1702,6 +2120,7 @@ The following fields are available:
 - **IsSawGuest**  Indicates whether the device is running as a Secure Admin Workstation Guest.
 - **IsSawHost**  Indicates whether the device is running as a Secure Admin Workstation Host.
 - **IsWdagFeatureEnabled**  Indicates whether Windows Defender Application Guard is enabled.
+- **NGCSecurityProperties**  String representation of NGC security information.
 - **RequiredSecurityProperties**  Describes the required security properties to enable virtualization-based security.
 - **SecureBootCapable**  Systems that support Secure Boot can have the feature turned off via BIOS. This field tells if the system is capable of running Secure Boot, regardless of the BIOS setting.
 - **ShadowStack**  The bit fields of SYSTEM_SHADOW_STACK_INFORMATION representing the state of the Intel CET (Control Enforcement Technology) hardware security feature.
@@ -1881,10 +2300,10 @@ The following fields are available:
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
 - **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
-- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
+- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update (WU) updates to other devices on the same network.
 - **WULCUVersion**  Version of the LCU Installed on the machine.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
+- **WUPauseState**  Retrieves Windows Update  setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -2074,6 +2493,8 @@ The following fields are available:
 - **inventoryId**  Device ID used for Compatibility testing
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
@@ -2251,6 +2672,76 @@ The following fields are available:
 - **wipeDuration**  The time taken to purge the system volume and format data volume.
 
 
+## Deployment events
+
+### Microsoft.Windows.Deployment.Imaging.AppExit
+
+This event is sent on imaging application exit. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **hr**  HResult returned from app exit.
+- **totalTimeInMs**  Total time taken in Ms.
+
+
+### Microsoft.Windows.Deployment.Imaging.AppInvoked
+
+This event is sent when the app for image creation is invoked. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **branch**  Corresponding branch for the image.
+- **isInDbg**  Whether the app is in debug mode or not.
+- **isWSK**  Whether the app is building images using WSK or not.
+
+
+### Microsoft.Windows.Deployment.Imaging.Failed
+
+This failure event is sent when imaging fails. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **cs**  Line that failed.
+- **ec**  Execution status.
+- **hr**  HResult returned.
+- **msg**  Message returned.
+- **stack**  Stack information.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingCompleted
+
+This event is sent when imaging is done. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **appExecTimeInMs**  Execution time in milliseconds.
+- **buildInfo**  Information of the build.
+- **compDbPrepTimeInMs**  Preparation time in milliseconds for the CompDBs.
+- **executeUpdateTimeInMs**  Update execution time in milliseconds.
+- **fileStageTimeInMs**  File staging time in milliseconds.
+- **hr**  HResult returned from imaging.
+- **imgSizeInMB**  Image size in MB.
+- **mutexWaitTimeInMs**  Mutex wait time in milliseconds.
+- **prepareUpdateTimeInMs**  Update preparation time in milliseconds.
+- **totalRunTimeInMs**  Total running time in milliseconds.
+- **updateOsTimeInMs**  Time in milliseconds spent in update OS.
+
+
+### Microsoft.Windows.Deployment.Imaging.ImagingStarted
+
+This event is sent when an imaging session starts. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **arch**  Architecture of the image.
+- **device**  Device type for which the image is built.
+- **imgFormat**  Format of the image.
+- **imgSkip**  Parameter for skipping certain image types when building.
+- **imgType**  The type of image being built.
+- **lang**  Language of the image being built.
+- **prod**  Image product type.
+
+
 ## Diagnostic data events
 
 ### TelClientSynthetic.AbnormalShutdown_0
@@ -2338,6 +2829,7 @@ The following fields are available:
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
+- **IsProcessorMode**  True if it is Processor Mode, false otherwise.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
 - **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
 
@@ -2356,6 +2848,7 @@ The following fields are available:
 - **CanCollectWindowsAnalyticsEvents**  True if we can collect Windows Analytics data, false otherwise.
 - **CanPerformDiagnosticEscalations**  True if we can perform diagnostic escalation collection, false otherwise.
 - **CanReportScenarios**  True if we can report scenario completions, false otherwise.
+- **IsProcessorMode**  True if it is Processor Mode, false otherwise.
 - **PreviousPermissions**  Bitmask of previous telemetry state.
 - **TransitionFromEverythingOff**  True if we are transitioning from all telemetry being disabled, false otherwise.
 
@@ -2366,13 +2859,13 @@ This event sends data about the connectivity status of the Connected User Experi
 
 The following fields are available:
 
-- **CensusExitCode**  Last exit code of the Census task.
-- **CensusStartTime**  Time of last Census run.
-- **CensusTaskEnabled**  True if Census is enabled, false otherwise.
-- **LastConnectivityLossTime**  Retrieves the last time the device lost free network.
-- **NetworkState**  The network state of the device.
+- **CensusExitCode**  Returns last execution codes from census client run.
+- **CensusStartTime**  Returns timestamp corresponding to last successful census run.
+- **CensusTaskEnabled**  Returns Boolean value for the census task (Enable/Disable) on client machine.
+- **LastConnectivityLossTime**  The FILETIME at which the last free network loss occurred.
+- **NetworkState**  Retrieves the network state: 0 = No network. 1 = Restricted network. 2 = Free network.
 - **NoNetworkTime**  Retrieves the time spent with no network (since the last time) in seconds.
-- **RestrictedNetworkTime**  Retrieves the time spent on a metered (cost restricted) network in seconds.
+- **RestrictedNetworkTime**  The total number of seconds with restricted network during this heartbeat period.
 
 
 ### TelClientSynthetic.HeartBeat_5
@@ -2535,6 +3028,7 @@ The following fields are available:
 - **DriverInfSectionName**  Name of the DDInstall section within the driver INF file.
 - **DriverPackageId**  The ID of the driver package that is staged to the driver store.
 - **DriverProvider**  The driver manufacturer or provider.
+- **DriverShimIds**  List of driver shim IDs.
 - **DriverUpdated**  Indicates whether the driver is replacing an old driver.
 - **DriverVersion**  The version of the driver file.
 - **EndTime**  The time the installation completed.
@@ -2598,9 +3092,11 @@ The following fields are available:
 
 - **DeviceInstanceId**  The unique identifier of the device in the system.
 - **FirstInstallDate**  The first time a driver was installed on this device.
+- **InstallFlags**  Flag indicating how driver setup was called.
 - **LastDriverDate**  Date of the driver that is being replaced.
 - **LastDriverInbox**  Indicates whether the previous driver was included with Windows.
 - **LastDriverInfName**  Name of the INF file (the setup information file) of the driver being replaced.
+- **LastDriverPackageId**  ID of the driver package installed on the device before the current install operation began. ID contains the name + architecture + hash.
 - **LastDriverVersion**  The version of the driver that is being replaced.
 - **LastFirmwareDate**  The date of the last firmware reported from the EFI System Resource Table (ESRT).
 - **LastFirmwareRevision**  The last firmware revision number reported from EFI System Resource Table (ESRT).
@@ -2799,7 +3295,7 @@ The following fields are available:
 
 ### Microsoft.Windows.HangReporting.AppHangEvent
 
-This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It does not contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on PC devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and will not produce AppHang events.
+This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It does not contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on client devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and will not produce AppHang events.
 
 The following fields are available:
 
@@ -2980,6 +3476,7 @@ The following fields are available:
 - **InventoryMiscellaneousOfficeVBA**  A count of office vba objects in cache
 - **InventoryMiscellaneousOfficeVBARuleViolations**  A count of office vba rule violations objects in cache
 - **InventoryMiscellaneousUUPInfo**  A count of uup info objects in cache
+- **InventoryVersion**  The version of the inventory binary generating the events.
 - **Metadata**  A count of metadata objects in cache.
 - **Orphan**  A count of orphan file objects in cache.
 - **Programs**  A count of program objects in cache.
@@ -3003,6 +3500,7 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 
 The following fields are available:
 
+- **AndroidPackageId**  A unique identifier for an Android app.
 - **HiddenArp**  Indicates whether a program hides itself from showing up in ARP.
 - **InstallDate**  The date the application was installed (a best guess based on folder creation date heuristics).
 - **InstallDateArpLastModified**  The date of the registry ARP key for a given application. Hints at install date but not always accurate. Passed as an array. Example: 4/11/2015  00:00:00
@@ -3010,6 +3508,7 @@ The following fields are available:
 - **InstallDateMsi**  The install date if the application was installed via Microsoft Installer (MSI). Passed as an array.
 - **InventoryVersion**  The version of the inventory file generating the events.
 - **Language**  The language code of the program.
+- **LattePackageId**  The ID of the Latte package.
 - **MsiInstallDate**  The install date recorded in the program's MSI package.
 - **MsiPackageCode**  A GUID that describes the MSI Package. Multiple 'Products' (apps) can make up an MsiPackage.
 - **MsiProductCode**  A GUID that describe the MSI Product.
@@ -3248,7 +3747,7 @@ The following fields are available:
 - **HWID**  The version of the driver loaded for the device.
 - **Inf**  The bus that enumerated the device.
 - **InstallDate**  The date of the most recent installation of the device on the machine.
-- **InstallState**  The device installation state.  One of these values: https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx
+- **InstallState** The device installation state. For a list of values, see: [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx).
 - **InventoryVersion**  List of hardware ids for the device.
 - **LowerClassFilters**  Lower filter class drivers IDs installed for the device
 - **LowerFilters**  Lower filter drivers IDs installed for the device
@@ -3284,6 +3783,29 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **InventoryVersion**  The version of the inventory file generating the events.
+
+
+### Microsoft.Windows.Inventory.Core.InventoryDeviceSensorAdd
+
+This event sends basic metadata about sensor devices on a machine. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
+- **Manufacturer**  Sensor manufacturer.
+
+
+### Microsoft.Windows.Inventory.Core.InventoryDeviceSensorStartSync
+
+This event indicates that a new set of InventoryDeviceSensor events will be sent. The data collected with this event is used to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceUsbHubClassAdd
@@ -3427,9 +3949,17 @@ The following fields are available:
 - **Manufacturer**  Name of the DRAM manufacturer.
 - **Model**  Model and submodel of the memory.
 - **Slot**  Slot the DRAM is plugged into the motherboard.
-- **Speed**  MHZ the memory is currently configured and used at.
-- **Type**  Reports DDR, etc. as an enumeration value per DMTF SMBIOS standard version 3.3.0, section 7.18.2.
-- **TypeDetails**  Reports Non-volatile, etc. as a bit flag enumeration per DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+- **Speed**  The configured memory slot speed in MHz.
+- **Type**  Reports DDR as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
+- **TypeDetails**  Reports Non-volatile as a bit flag enumeration as per the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoRemove
+
+This event indicates that this particular data object represented by the objectInstanceId is no longer present.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoStartSync
@@ -3471,6 +4001,7 @@ The following fields are available:
 - **ProductVersion**  The version associated with the Office add-in.
 - **ProgramId**  The unique program identifier of the Microsoft Office add-in.
 - **Provider**  Name of the provider for this add-in.
+- **Usage**  Data about usage for the add-in.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInRemove
@@ -3495,246 +4026,12 @@ The following fields are available:
 - **InventoryVersion**  The version of the inventory binary generating the events.
 
 
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousUexIndicatorStartSync
 
-This event provides data on the Office identifiers. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OAudienceData**  Sub-identifier for Microsoft Office release management, identifying the pilot group for a device
-- **OAudienceId**  Microsoft Office identifier for Microsoft Office release management, identifying the pilot group for a device
-- **OMID**  Identifier for the Office SQM Machine
-- **OPlatform**  Whether the installed Microsoft Office product is 32-bit or 64-bit
-- **OTenantId**  Unique GUID representing the Microsoft O365 Tenant
-- **OVersion**  Installed version of Microsoft Office. For example, 16.0.8602.1000
-- **OWowMID**  Legacy Microsoft Office telemetry identifier (SQM Machine ID) for WoW systems (32-bit Microsoft Office on 64-bit Windows)
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
+Diagnostic event to indicate a new sync is being generated for this object type. The data collected with this event is used to help keep Windows up to date.
 
 This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
-
-This event provides data on Office-related Internet Explorer features. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OIeFeatureAddon**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_ADDON_MANAGEMENT feature lets applications hosting the WebBrowser Control to respect add-on management selections made using the Add-on Manager feature of Internet Explorer. Add-ons disabled by the user or by administrative group policy will also be disabled in applications that enable this feature.
-- **OIeMachineLockdown**  Flag indicating which Microsoft Office products have this setting enabled. When the FEATURE_LOCALMACHINE_LOCKDOWN feature is enabled, Internet Explorer applies security restrictions on content loaded from the user's local machine, which helps prevent malicious behavior involving local files.
-- **OIeMimeHandling**  Flag indicating which Microsoft Office products have this setting enabled. When the FEATURE_MIME_HANDLING feature control is enabled, Internet Explorer handles MIME types more securely. Only applies to Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2)
-- **OIeMimeSniffing**  Flag indicating which Microsoft Office products have this setting enabled. Determines a file's type by examining its bit signature. Windows Internet Explorer uses this information to determine how to render the file. The FEATURE_MIME_SNIFFING feature, when enabled, allows to be set differently for each security zone by using the URLACTION_FEATURE_MIME_SNIFFING URL action flag
-- **OIeNoAxInstall**  Flag indicating which Microsoft Office products have this setting enabled. When a webpage attempts to load or install an ActiveX control that isn't already installed, the FEATURE_RESTRICT_ACTIVEXINSTALL feature blocks the request. When a webpage tries to load or install an ActiveX control that isn't already installed, the FEATURE_RESTRICT_ACTIVEXINSTALL feature blocks the request
-- **OIeNoDownload**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_RESTRICT_FILEDOWNLOAD feature blocks file download requests that navigate to a resource, that display a file download dialog box, or that are not initiated explicitly by a user action (for example, a mouse click or key press). Only applies to Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2)
-- **OIeObjectCaching**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_OBJECT_CACHING feature prevents webpages from accessing or instantiating ActiveX controls cached from different domains or security contexts
-- **OIePasswordDisable**  Flag indicating which Microsoft Office products have this setting enabled. After Windows Internet Explorer 6 for Windows XP Service Pack 2 (SP2), Internet Explorer no longer allows usernames and passwords to be specified in URLs that use the HTTP or HTTPS protocols. URLs using other protocols, such as FTP, still allow usernames and passwords
-- **OIeSafeBind**  Flag indicating which Microsoft Office products have this setting enabled.  The FEATURE_SAFE_BINDTOOBJECT feature performs additional safety checks when calling MonikerBindToObject to create and initialize Microsoft ActiveX controls. Specifically, prevent the control from being created if COMPAT_EVIL_DONT_LOAD is in the registry for the control
-- **OIeSecurityBand**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_SECURITYBAND feature controls the display of the Internet Explorer Information bar. When enabled, the Information bar appears when file download or code installation is restricted
-- **OIeUncSaveCheck**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_UNC_SAVEDFILECHECK feature enables the Mark of the Web (MOTW) for local files loaded from network locations that have been shared by using the Universal Naming Convention (UNC)
-- **OIeValidateUrl**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_VALIDATE_NAVIGATE_URL feature control prevents Windows Internet Explorer from navigating to a badly formed URL
-- **OIeWebOcPopup**  Flag indicating which Microsoft Office products have this setting enabled. The FEATURE_WEBOC_POPUPMANAGEMENT feature allows applications hosting the WebBrowser Control to receive the default Internet Explorer pop-up window management behavior
-- **OIeWinRestrict**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_WINDOW_RESTRICTIONS feature adds several restrictions to the size and behavior of popup windows
-- **OIeZoneElevate**  Flag indicating which Microsoft Office products have this setting enabled. When enabled, the FEATURE_ZONE_ELEVATION feature prevents pages in one zone from navigating to pages in a higher security zone unless the navigation is generated by the user
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsAdd
-
-This event provides insight data on the installed Office products. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OfficeApplication**  The name of the Office application.
-- **OfficeArchitecture**  The bitness of the Office application.
-- **OfficeVersion**  The version of the Office application.
-- **Value**  The insights collected about this entity.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsRemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeInsightsStartSync
-
-This diagnostic event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
-
-This event describes all installed Office products. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **OC2rApps**  A GUID the describes the Office Click-To-Run apps
-- **OC2rSkus**  Comma-delimited list (CSV) of Office Click-To-Run products installed on the device. For example, Office 2016 ProPlus
-- **OMsiApps**  Comma-delimited list (CSV) of Office MSI products installed on the device. For example, Microsoft Word
-- **OProductCodes**  A GUID that describes the Office MSI products
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsAdd
-
-This event describes various Office settings. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **BrowserFlags**  Browser flags for Office-related products.
-- **ExchangeProviderFlags**  Provider policies for Office Exchange.
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **SharedComputerLicensing**  Office shared computer licensing policies.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeSettingsStartSync
-
-This is a diagnostic event that indicates a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAAdd
-
-This event provides a summary rollup count of conditions encountered while performing a local scan of Office files, analyzing for known VBA programmability compatibility issues between legacy office version and ProPlus, and between 32 and 64-bit versions. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **Design**  Count of files with design issues found.
-- **Design_x64**  Count of files with 64 bit design issues found.
-- **DuplicateVBA**  Count of files with duplicate VBA code.
-- **HasVBA**  Count of files with VBA code.
-- **Inaccessible**  Count of files that were inaccessible for scanning.
-- **InventoryVersion**  The version of the inventory binary generating the events.
-- **Issues**  Count of files with issues detected.
-- **Issues_x64**  Count of files with 64-bit issues detected.
-- **IssuesNone**  Count of files with no issues detected.
-- **IssuesNone_x64**  Count of files with no 64-bit issues detected.
-- **Locked**  Count of files that were locked, preventing scanning.
-- **NoVBA**  Count of files with no VBA inside.
-- **Protected**  Count of files that were password protected, preventing scanning.
-- **RemLimited**  Count of files that require limited remediation changes.
-- **RemLimited_x64**  Count of files that require limited remediation changes for 64-bit issues.
-- **RemSignificant**  Count of files that require significant remediation changes.
-- **RemSignificant_x64**  Count of files that require significant remediation changes for 64-bit issues.
-- **Score**  Overall compatibility score calculated for scanned content.
-- **Score_x64**  Overall 64-bit compatibility score calculated for scanned content.
-- **Total**  Total number of files scanned.
-- **Validation**  Count of files that require additional manual validation.
-- **Validation_x64**  Count of files that require additional manual validation for 64-bit issues.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsAdd
-
-This event provides data on Microsoft Office VBA rule violations, including a rollup count per violation type, giving an indication of remediation requirements for an organization. The event identifier is a unique GUID, associated with the validation rule. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **Count**  Count of total Microsoft Office VBA rule violations
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsRemove
-
-This event indicates that the particular data object represented by the objectInstanceId is no longer present. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsStartSync
-
-This event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
-
-
-### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAStartSync
-
-This diagnostic event indicates that a new sync is being generated for this object type. The data collected with this event is used to keep Windows performing properly.
-
-This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
-
-The following fields are available:
-
-- **InventoryVersion**  The version of the inventory binary generating the events.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousUUPInfoAdd
@@ -3896,19 +4193,26 @@ The following fields are available:
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
+- **AppSessionGuid**  An identifier of a particular application session starting at process creation time and persisting until process end.
+- **brandCode**  Contains the 4 character brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **Channel**  An integer indicating the channel of the installation (Canary or Dev).
 - **client_id**  A unique identifier with which all other diagnostic client data is associated, taken from the UMA metrics provider. This ID is effectively unique per device, per OS user profile, per release channel (e.g. Canary/Dev/Beta/Stable). client_id is not durable, based on user preferences. client_id is initialized on the first application launch under each OS user profile. client_id is linkable, but not unique across devices or OS user profiles. client_id is reset whenever UMA data collection is disabled, or when the application is uninstalled.
 - **ConnectionType**  The first reported type of network connection currently connected. This can be one of Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth.
 - **container_client_id**  The client ID of the container, if in WDAG mode. This will be different from the UMA log client ID, which is the client ID of the host in WDAG mode.
+- **container_localId**  If the device is using Windows Defender Application Guard, this is the Software Quality Metrics (SQM) ID of the container.
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
+- **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event, where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
+- **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
 - **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
 - **PayloadLogType**  The log type for the event correlating with 0 for unknown, 1 for stability, 2 for on-going, 3 for independent, 4 for UKM, or 5 for instance level.
 - **pop_sample**  A value indicating how the device's data is being sampled.
+- **reactivationBrandCode**  Contains the 4 character reactivation brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **reconsentConfigs**  A comma separated list of all reconsent configurations the current installation has received. Each configuration follows a well-defined format: 2DigitMonth-2DigitYear-3LetterKeyword.
 - **session_id**  An identifier that is incremented each time the user launches the application, irrespective of any client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
 - **utc_flags**  Event Tracing for Windows (ETW) flags required for the event as part of the data collection process.
@@ -3923,19 +4227,26 @@ The following fields are available:
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
+- **AppSessionGuid**  An identifier of a particular application session starting at process creation time and persisting until process end.
+- **brandCode**  Contains the 4 character brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **Channel**  An integer indicating the channel of the installation (Canary or Dev).
 - **client_id**  A unique identifier with which all other diagnostic client data is associated, taken from the UMA metrics provider. This ID is effectively unique per device, per OS user profile, per release channel (e.g. Canary/Dev/Beta/Stable). client_id is not durable, based on user preferences. client_id is initialized on the first application launch under each OS user profile. client_id is linkable, but not unique across devices or OS user profiles. client_id is reset whenever UMA data collection is disabled, or when the application is uninstalled.
 - **ConnectionType**  The first reported type of network connection currently connected. This can be one of Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth.
 - **container_client_id**  The client ID of the container, if in WDAG mode. This will be different from the UMA log client ID, which is the client ID of the host in WDAG mode.
+- **container_localId**  If the device is using Windows Defender Application Guard, this is the Software Quality Metrics (SQM) ID of the container.
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
+- **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
+- **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
 - **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
 - **PayloadLogType**  The log type for the event correlating with 0 for unknown, 1 for stability, 2 for on-going, 3 for independent, 4 for UKM, or 5 for instance level.
 - **pop_sample**  A value indicating how the device's data is being sampled.
+- **reactivationBrandCode**  Contains the 4 character reactivation brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **session_id**  An identifier that is incremented each time the user launches the application, irrespective of any client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
 - **utc_flags**  Event Tracing for Windows (ETW) flags required for the event as part of the data collection process.
 
@@ -3950,19 +4261,26 @@ The following fields are available:
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
+- **AppSessionGuid**  An identifier of a particular application session starting at process creation time and persisting until process end.
+- **brandCode**  Contains the 4 character brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **Channel**  An integer indicating the channel of the installation (Canary or Dev).
 - **client_id**  A unique identifier with which all other diagnostic client data is associated, taken from the UMA metrics provider. This ID is effectively unique per device, per OS user profile, per release channel (e.g. Canary/Dev/Beta/Stable). client_id is not durable, based on user preferences. client_id is initialized on the first application launch under each OS user profile. client_id is linkable, but not unique across devices or OS user profiles. client_id is reset whenever UMA data collection is disabled, or when the application is uninstalled.
 - **ConnectionType**  The first reported type of network connection currently connected. This can be one of Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth.
 - **container_client_id**  The client ID of the container, if in WDAG mode. This will be different from the UMA log client ID, which is the client ID of the host in WDAG mode.
+- **container_localId**  If the device is using Windows Defender Application Guard, this is the Software Quality Metrics (SQM) ID of the container.
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
+- **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
+- **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
 - **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
 - **PayloadLogType**  The log type for the event correlating with 0 for unknown, 1 for stability, 2 for on-going, 3 for independent, 4 for UKM, or 5 for instance level.
 - **pop_sample**  A value indicating how the device's data is being sampled.
+- **reactivationBrandCode**  Contains the 4 character reactivation brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **reconsentConfigs**  A comma separated list of all reconsent configurations the current installation has received. Each configuration follows a well-defined format: 2DigitMonth-2DigitYear-3LetterKeyword.
 - **session_id**  An identifier that is incremented each time the user launches the application, irrespective of any client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
 - **utc_flags**  Event Tracing for Windows (ETW) flags required for the event as part of the data collection process.
@@ -3977,19 +4295,26 @@ The following fields are available:
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
+- **AppSessionGuid**  An identifier of a particular application session starting at process creation time and persisting until process end.
+- **brandCode**  Contains the 4 character brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **Channel**  An integer indicating the channel of the installation (Canary or Dev).
 - **client_id**  A unique identifier with which all other diagnostic client data is associated, taken from the UMA metrics provider. This ID is effectively unique per device, per OS user profile, per release channel (e.g. Canary/Dev/Beta/Stable). client_id is not durable, based on user preferences. client_id is initialized on the first application launch under each OS user profile. client_id is linkable, but not unique across devices or OS user profiles. client_id is reset whenever UMA data collection is disabled, or when the application is uninstalled.
 - **ConnectionType**  The first reported type of network connection currently connected. This can be one of Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth.
 - **container_client_id**  The client ID of the container, if in WDAG mode. This will be different from the UMA log client ID, which is the client ID of the host in WDAG mode.
+- **container_localId**  If the device is using Windows Defender Application Guard, this is the Software Quality Metrics (SQM) ID of the container.
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
+- **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
+- **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
 - **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
 - **PayloadLogType**  The log type for the event correlating with 0 for unknown, 1 for stability, 2 for on-going, 3 for independent, 4 for UKM, or 5 for instance level.
 - **pop_sample**  A value indicating how the device's data is being sampled.
+- **reactivationBrandCode**  Contains the 4 character reactivation brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **session_id**  An identifier that is incremented each time the user launches the application, irrespective of any client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
 - **utc_flags**  Event Tracing for Windows (ETW) flags required for the event as part of the data collection process.
 
@@ -4011,10 +4336,13 @@ The following fields are available:
 - **appConsentState**  Bit flags describing the diagnostic data disclosure and response flow where 1 indicates the affirmative and 0 indicates the negative or unspecified data. Bit 1 indicates consent was given, bit 2 indicates data originated from the download page, bit 18 indicates choice for sending data about how the browser is used, and bit 19 indicates choice for sending data about websites visited.
 - **appDayOfInstall**  The date-based counting equivalent of appInstallTimeDiffSec (the numeric calendar day that the app was installed on). This value is provided by the server in the response to the first request in the installation flow. The client MAY fuzz this value to the week granularity (e.g. send '0' for 0 through 6, '7' for 7 through 13, etc.). The first communication to the server should use a special value of '-1'. A value of '-2' indicates that this value is not known. Please see the wiki for additional information. Default: '-2'.
 - **appExperiments**  A key/value list of experiment identifiers. Experiment labels are used to track membership in different experimental groups, and may be set at install or update time. The experiments string is formatted as a semicolon-delimited concatenation of experiment label strings. An experiment label string is an experiment Name, followed by the '=' character, followed by an experimental label value. For example: 'crdiff=got_bsdiff;optimized=O3'. The client should not transmit the expiration date of any experiments it has, even if the server previously specified a specific expiration date. Default: ''.
+- **appInstallTime**  The product install time in seconds. '0' if unknown. Default: '-1'.
 - **appInstallTimeDiffSec**  The difference between the current time and the install date in seconds. '0' if unknown. Default: '-1'.
 - **appLang**  The language of the product install, in IETF BCP 47 representation. Default: ''.
+- **appLastLaunchTime**  The time when browser was last launched.
 - **appNextVersion**  The version of the app that the update flow to which this event belongs attempted to reach, regardless of the success or failure of the update operation. Please see the wiki for additional information. Default: '0.0.0.0'.
 - **appPingEventAppSize**  The total number of bytes of all downloaded packages. Default: '0'.
+- **appPingEventDoneBeforeOOBEComplete**  Indicates whether the install or update was completed before Windows Out of the Box Experience ends. 1 means event completed before OOBE finishes; 0 means event was not completed before OOBE finishes; -1 means the field does not apply.
 - **appPingEventDownloadMetricsCdnCCC**  ISO 2 character country code that matches to the country updated binaries are delivered from. E.g.: US.
 - **appPingEventDownloadMetricsCdnCID**  Numeric value used to internally track the origins of the updated binaries. For example, 2.
 - **appPingEventDownloadMetricsDownloadedBytes**  For events representing a download, the number of bytes expected to be downloaded. For events representing an entire update flow, the sum of all such expected bytes over the course of the update flow. Default: '0'.
@@ -4031,15 +4359,21 @@ The following fields are available:
 - **appPingEventExtraCode1**  Additional numeric information about the operation's result, encoded as a signed, base-10 integer. Default: '0'.
 - **appPingEventInstallTimeMs**  For events representing an install, the time elapsed between the start of the install and the end of the install, in milliseconds. For events representing an entire update flow, the sum of all such durations. Sent in events that have an event type of '2' and '3' only. Default: '0'.
 - **appPingEventNumBytesDownloaded**  The number of bytes downloaded for the specified application. Default: '0'.
+- **appPingEventPackageCacheResult**  Whether there is an existing package cached in the system to update or install. 1 means that there's a cache hit under the expected key, 2 means there's a cache hit under a different key, 0 means that there's a cache miss. -1 means the field does not apply.
 - **appPingEventSequenceId**  An id that uniquely identifies particular events within one requestId. Since a request can contain multiple ping events, this field is necessary to uniquely identify each possible event.
 - **appPingEventSourceUrlIndex**  For events representing a download, the position of the download URL in the list of URLs supplied by the server in a "urls" tag.
 - **appPingEventUpdateCheckTimeMs**  For events representing an entire update flow, the time elapsed between the start of the update check and the end of the update check, in milliseconds. Sent in events that have an event type of '2' and '3' only. Default: '0'.
+- **appReferralHash**  The hash of the referral code used to install the product. '0' if unknown. Default: '0'.
 - **appUpdateCheckIsUpdateDisabled**  The state of whether app updates are restricted by group policy. True if updates have been restricted by group policy or false if they have not.
 - **appUpdateCheckTargetVersionPrefix**  A component-wise prefix of a version number, or a complete version number suffixed with the $ character. The server should not return an update instruction to a version number that does not match the prefix or complete version number. The prefix is interpreted a dotted-tuple that specifies the exactly-matching elements; it is not a lexical prefix (for example, '1.2.3' must match '1.2.3.4' but must not match '1.2.34'). Default: ''.
 - **appUpdateCheckTtToken**  An opaque access token that can be used to identify the requesting client as a member of a trusted-tester group. If non-empty, the request should be sent over SSL or another secure protocol. Default: ''.
 - **appVersion**  The version of the product install. Please see the wiki for additional information. Default: '0.0.0.0'.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
 - **eventType**  A string indicating the type of the event. Please see the wiki for additional information.
+- **expDeviceId**  A non-unique resettable device ID to identify a device in experimentation.
+- **expEtag**  An identifier representing all service applied configurations and experiments when current update happens. Used for testing only.
+- **expETag**  An identifier representing all service applied configurations and experiments when current update happens. Used for testing only.
+- **hwDiskType**  Device’s hardware disk type.
 - **hwHasAvx**  '1' if the client's hardware supports the AVX instruction set. '0' if the client's hardware does not support the AVX instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSse**  '1' if the client's hardware supports the SSE instruction set. '0' if the client's hardware does not support the SSE instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSse2**  '1' if the client's hardware supports the SSE2 instruction set. '0' if the client's hardware does not support the SSE2 instruction set. '-1' if unknown. Default: '-1'.
@@ -4047,8 +4381,12 @@ The following fields are available:
 - **hwHasSse41**  '1' if the client's hardware supports the SSE4.1 instruction set. '0' if the client's hardware does not support the SSE4.1 instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSse42**  '1' if the client's hardware supports the SSE4.2 instruction set. '0' if the client's hardware does not support the SSE4.2 instruction set. '-1' if unknown. Default: '-1'.
 - **hwHasSsse3**  '1' if the client's hardware supports the SSSE3 instruction set. '0' if the client's hardware does not support the SSSE3 instruction set. '-1' if unknown. Default: '-1'.
+- **hwLogcicalCpus**  Number of logical CPUs of the device. Used for testing only.
+- **hwLogicalCpus**  Number of logical CPUs of the device.
 - **hwPhysmemory**  The physical memory available to the client, truncated down to the nearest gibibyte. '-1' if unknown. This value is intended to reflect the maximum theoretical storage capacity of the client, not including any hard drive or paging to a hard drive or peripheral. Default: '-1'.
 - **isMsftDomainJoined**  '1' if the client is a member of a Microsoft domain. '0' otherwise. Default: '0'.
+- **oemProductManufacturer**  The device manufacturer name.
+- **oemProductName**  The product name of the device defined by device manufacturer.
 - **osArch**  The architecture of the operating system (e.g. 'x86', 'x64', 'arm'). '' if unknown. Default: ''.
 - **osPlatform**  The operating system family that the within which the Omaha client is running (e.g. 'win', 'mac', 'linux', 'ios', 'android'). '' if unknown. The operating system Name should be transmitted in lowercase with minimal formatting. Default: ''.
 - **osServicePack**  The secondary version of the operating system. '' if unknown. Default: ''.
@@ -4074,22 +4412,29 @@ This config event sends basic device connectivity and configuration information 
 
 The following fields are available:
 
+- **app_env**  The environment from which the event was logged when testing; otherwise, the field is omitted or left blank.
 - **app_sample_rate**  A number representing how often the client sends telemetry, expressed as a percentage. Low values indicate that said client sends more events and high values indicate that said client sends fewer events.
 - **app_version**  The internal Edge build version string, taken from the UMA metrics field system_profile.app_version.
 - **appConsentState**  Bit flags describing consent for data collection on the machine or zero if the state was not retrieved. The following are true when the associated bit is set: consent was granted (0x1), consent was communicated at install (0x2), diagnostic data consent granted (0x20000), browsing data consent granted (0x40000).
+- **AppSessionGuid**  An identifier of a particular application session starting at process creation time and persisting until process end.
+- **brandCode**  Contains the 4 character brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **Channel**  An integer indicating the channel of the installation (Canary or Dev).
 - **client_id**  A unique identifier with which all other diagnostic client data is associated, taken from the UMA metrics provider. This ID is effectively unique per device, per OS user profile, per release channel (e.g. Canary/Dev/Beta/Stable). client_id is not durable, based on user preferences. client_id is initialized on the first application launch under each OS user profile. client_id is linkable, but not unique across devices or OS user profiles. client_id is reset whenever UMA data collection is disabled, or when the application is uninstalled.
 - **ConnectionType**  The first reported type of network connection currently connected. This can be one of Unknown, Ethernet, WiFi, 2G, 3G, 4G, None, or Bluetooth.
 - **container_client_id**  The client ID of the container, if in WDAG mode. This will be different from the UMA log client ID, which is the client ID of the host in WDAG mode.
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
+- **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
+- **installSourceName**  A string representation of the installation source.
 - **PayloadClass**  The base class used to serialize and deserialize the Protobuf binary payload.
 - **PayloadGUID**  A random identifier generated for each original monolithic Protobuf payload, before the payload is potentially broken up into manageably-sized chunks for transmission.
 - **PayloadLogType**  The log type for the event correlating with 0 for unknown, 1 for stability, 2 for on-going, 3 for independent, 4 for UKM, or 5 for instance level.
 - **pop_sample**  A value indicating how the device's data is being sampled.
+- **reactivationBrandCode**  Contains the 4 character reactivation brand code or distribution tag that has been assigned to a partner. Not every Windows install will have a brand code.
 - **reconsentConfigs**  A comma separated list of all reconsent configurations the current installation has received. Each configuration follows a well-defined format: 2DigitMonth-2DigitYear-3LetterKeyword.
 - **session_id**  An identifier that is incremented each time the user launches the application, irrespective of any client_id changes. session_id is seeded during the initial installation of the application. session_id is effectively unique per client_id value. Several other internal identifier values, such as window or tab IDs, are only meaningful within a particular session. The session_id value is forgotten when the application is uninstalled, but not during an upgrade.
 - **utc_flags**  Event Tracing for Windows (ETW) flags required for the event as part of the data collection process.
@@ -4324,6 +4669,17 @@ The following fields are available:
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
 
+## Settings events
+
+### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.ProtocolActivation
+
+This event tracks protocol launching for Setting's URIs. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **activationSource**  Where activation is initiated.
+- **uriString**  URI of the launching protocol.
+
 
 ## Privacy consent logging events
 
@@ -4353,37 +4709,6 @@ The following fields are available:
 - **userRegionCode**  The current user's region setting
 
 
-## Sediment events
-
-### Microsoft.Windows.Sediment.OSRSS.CheckingOneSettings
-
-This event indicates the parameters that the Operating System Remediation System Service (OSRSS) uses for a secure ping to Microsoft to help ensure Windows is up to date.
-
-The following fields are available:
-
-- **CustomVer**  The registry value for targeting.
-- **IsMetered**  TRUE if the machine is on a metered network.
-- **LastVer**  The version of the last successful run.
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-
-
-### Microsoft.Windows.Sediment.OSRSS.Error
-
-This event indicates an error occurred in the Operating System Remediation System Service (OSRSS). The information provided helps ensure future upgrade/update attempts are more successful. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **FailureType**  The type of error encountered.
-- **FileName**  The code file in which the error occurred.
-- **HResult**  The failure error code.
-- **LineNumber**  The line number in the code file at which the error occurred.
-- **ServiceVersionMajor**  The Major version information of the component.
-- **ServiceVersionMinor**  The Minor version information of the component.
-- **Time**  The system time at which the event occurred.
-
-
 ## Setup events
 
 ### Microsoft.Windows.Setup.WinSetupBoot.BootBlockStart
@@ -4408,6 +4733,29 @@ The following fields are available:
 - **Detail**  It indicates details about the phase/stage of the operation.
 - **Rollback**  It is blank as this event triggers in success scenario only.
 - **Status**  It indicates details about the status for getting the disk device object during boot.
+
+
+### Microsoft.Windows.Setup.WinSetupBoot.Success
+
+This event sends data indicating that the device has invoked the WinSetupBoot successfully. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **Action**  It indicates phase/stage of operation. As success event fires on exiting the operation, this value must be 'Exiting'.
+- **Duration(ms)**  Duration of filter setup instance operation in milliseconds.
+- **Rollback**  It is blank as this event triggers in success scenario only.
+
+
+### Microsoft.Windows.Setup.WinSetupBoot.Warning
+
+This event is used to indicate whether there were any warnings when we were trying to skip a reboot during feature upgrade. The data collected with this event helps keep Windows product and service up to date​.
+
+The following fields are available:
+
+- **Action**  Action indicates what operation was being performed by the filter driver (Ex: Waiting, Exiting).
+- **Detail**  Add detail to the operation listed above (Ex: Blocked thread timed out).
+- **Rollback**  Indicates whether a rollback was triggered (0 or 1).
+- **Status**  Indicates the status code for the operation (Ex: 0, 258 etc.).
 
 
 ### SetupPlatformTel.SetupPlatformTelActivityEvent
@@ -4460,6 +4808,12 @@ The following fields are available:
 - **ActivityMatchingId**  Contains a unique ID identifying a single CheckForUpdates session from initialization to completion.
 - **AllowCachedResults**  Indicates if the scan allowed using cached results.
 - **ApplicableUpdateInfo**  Metadata for the updates which were detected as applicable
+- **BiosFamily**  The family of the BIOS (Basic Input Output System).
+- **BiosName**  The name of the device BIOS.
+- **BiosReleaseDate**  The release date of the device BIOS.
+- **BiosSKUNumber**  The sku number of the device BIOS.
+- **BIOSVendor**  The vendor of the BIOS.
+- **BiosVersion**  The version of the BIOS.
 - **BranchReadinessLevel**  The servicing branch configured on the device.
 - **CachedEngineVersion**  For self-initiated healing, the version of the SIH engine that is cached on the device. If the SIH engine does not exist, the value is null.
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
@@ -4469,13 +4823,17 @@ The following fields are available:
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. No data is currently reported in this field. Expected value for this field is 0.
 - **Context**  Gives context on where the error has occurred. Example: AutoEnable, GetSLSData, AddService, Misc, or Unknown
+- **CurrentMobileOperator**  The mobile operator the device is currently connected to.
 - **DeferralPolicySources**  Sources for any update deferral policies defined (GPO = 0x10, MDM = 0x100, Flight = 0x1000, UX = 0x10000).
 - **DeferredUpdates**  Update IDs which are currently being deferred until a later time
+- **DeviceModel**  What is the device model.
 - **DriverError**  The error code hit during a driver scan. This is 0 if no error was encountered.
 - **DriverExclusionPolicy**  Indicates if the policy for not including drivers with Windows Update is enabled.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
+- **ExcludedUpdateClasses**  Update classifications being excluded via policy.
+- **ExcludedUpdates**  UpdateIds which are currently being excluded via policy.
 - **ExtendedMetadataCabUrl**  Hostname that is used to download an update.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FailedUpdateGuids**  The GUIDs for the updates that failed to be evaluated during the scan.
@@ -4483,12 +4841,15 @@ The following fields are available:
 - **FeatureUpdateDeferral**  The deferral period configured for feature OS updates on the device (in days).
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FeatureUpdatePausePeriod**  The pause duration configured for feature OS updates on the device (in days).
+- **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
+- **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
+- **HomeMobileOperator**  The mobile operator that the device was originally intended to work with.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
 - **IsWUfBFederatedScanDisabled**  Indicates if Windows Update for Business federated scan is disabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
@@ -4504,6 +4865,7 @@ The following fields are available:
 - **PauseFeatureUpdatesStartTime**  If feature OS updates are paused on the device, this is the date and time for the beginning of the pause time window.
 - **PauseQualityUpdatesEndTime**  If quality OS updates are paused on the device, this is the date and time for the end of the pause time window.
 - **PauseQualityUpdatesStartTime**  If quality OS updates are paused on the device, this is the date and time for the beginning of the pause time window.
+- **PhonePreviewEnabled**  Indicates whether a phone was getting preview build, prior to flighting (pre-release builds) being introduced.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
 - **QualityUpdateDeferral**  The deferral period configured for quality OS updates on the device (in days).
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -4514,9 +4876,13 @@ The following fields are available:
 - **ScanProps**  This is a 32-bit integer containing Boolean properties for a given Windows Update scan. The following bits are used; all remaining bits are reserved and set to zero. Bit 0 (0x1): IsInteractive - is set to 1 if the scan is requested by a user, or 0 if the scan is requested by Automatic Updates. Bit 1 (0x2): IsSeeker - is set to 1 if the Windows Update client's Seeker functionality is enabled. Seeker functionality is enabled on certain interactive scans, and results in the scans returning certain updates that are in the initial stages of release (not yet released for full adoption via Automatic Updates).
 - **ServiceGuid**  An ID which represents which service the software distribution client is checking for content (Windows Update, Microsoft Store, etc.).
 - **ServiceUrl**  The environment URL a device is configured to scan with
+- **ShippingMobileOperator**  The mobile operator that a device shipped on.
 - **StatusCode**  Indicates the result of a CheckForUpdates event (success, cancellation, failure code HResult).
 - **SyncType**  Describes the type of scan the event was
+- **SystemBIOSMajorRelease**  Major version of the BIOS.
+- **SystemBIOSMinorRelease**  Minor version of the BIOS.
 - **TargetMetadataVersion**  For self-initiated healing, this is the target version of the SIH engine to download (if needed). If not, the value is null.
+- **TargetProductVersion**  Indicates the Product version selected to move to or stay on.
 - **TargetReleaseVersion**  The value selected for the target release version policy.
 - **TotalNumMetadataSignatures**  The total number of metadata signatures checks done for new metadata that was synced down.
 - **WebServiceRetryMethods**  Web service method requests that needed to be retried to complete operation.
@@ -4555,37 +4921,57 @@ The following fields are available:
 
 - **ActiveDownloadTime**  Number of seconds the update was actively being downloaded.
 - **AppXBlockHashFailures**  Indicates the number of blocks that failed hash validation during download.
+- **AppXBlockHashValidationFailureCount**  A count of the number of blocks that have failed validation after being downloaded.
+- **AppXDownloadScope**  Indicates the scope of the download for application content.
 - **AppXScope**  Indicates the scope of the app download.
+- **BiosFamily**  The family of the BIOS (Basic Input Output System).
+- **BiosName**  The name of the device BIOS.
+- **BiosReleaseDate**  The release date of the device BIOS.
+- **BiosSKUNumber**  The sku number of the device BIOS.
+- **BIOSVendor**  The vendor of the BIOS.
+- **BiosVersion**  The version of the BIOS.
 - **BundleBytesDownloaded**  Number of bytes downloaded for the specific content bundle.
 - **BundleId**  Identifier associated with the specific content bundle; should not be all zeros if the bundleID was found.
 - **BundleRepeatFailCount**  Indicates whether this particular update bundle previously failed.
+- **BundleRepeatFailFlag**  Indicates whether this particular update bundle previously failed to download.
 - **BundleRevisionNumber**  Identifies the revision number of the content bundle.
 - **BytesDownloaded**  Number of bytes that were downloaded for an individual piece of content (not the entire bundle).
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client.
+- **CbsDownloadMethod**  Indicates whether the download was a full- or a partial-file download.
 - **CbsMethod**  The method used for downloading the update content related to the Component Based Servicing (CBS) technology.
 - **CDNCountryCode**  Two letter country abbreviation for the Content Distribution Network (CDN) location.
 - **CDNId**  ID which defines which CDN the software distribution client downloaded the content from.
 - **ClientVersion**  The version number of the software distribution client.
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior.
 - **ConnectTime**  Indicates the cumulative amount of time (in seconds) it took to establish the connection for all updates in an update bundle.
+- **CurrentMobileOperator**  The mobile operator the device is currently connected to.
+- **DeviceModel**  The model of the device.
 - **DownloadPriority**  Indicates whether a download happened at background, normal, or foreground priority.
 - **DownloadProps**  Information about the download operation properties in the form of a bitmask.
+- **DownloadScenarioId**  A unique ID for a given download, used to tie together Windows Update and Delivery Optimizer events.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started downloading content, or whether it was cancelled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
+- **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
 - **FlightId**  The specific ID of the flight (pre-release build) the device is getting.
+- **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
+- **HandlerType**  Indicates what kind of content is being downloaded (app, driver, windows patch, etc.).
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
+- **HomeMobileOperator**  The mobile operator that the device was originally intended to work with.
 - **HostName**  The hostname URL the content is downloading from.
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6.
+- **IsDependentSet**  Indicates whether a driver is a part of a larger System Hardware/Firmware Update
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **NetworkCost**  A flag indicating the cost of the network (congested, fixed, variable, over data limit, roaming, etc.) used for downloading the update content.
+- **NetworkCostBitMask**  Indicates what kind of network the device is connected to (roaming, metered, over data cap, etc.)
 - **NetworkRestrictionStatus**  More general version of NetworkCostBitMask, specifying whether Windows considered the current network to be "metered."
 - **PackageFullName**  The package name of the content.
+- **PhonePreviewEnabled**  Indicates whether a phone was opted-in to getting preview builds, prior to flighting (pre-release builds) being introduced.
 - **PostDnldTime**  Time taken (in seconds) to signal download completion after the last job has completed downloading payload.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -4593,14 +4979,24 @@ The following fields are available:
 - **RegulationResult**  The result code (HResult) of the last attempt to contact the regulation web service for download regulation of update content.
 - **RelatedCV**  The previous Correlation Vector that was used before swapping with a new one.
 - **RepeatFailCount**  Indicates whether this specific content has previously failed.
+- **RepeatFailFlag**  Indicates whether this specific content previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
 - **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
+- **Setup360Phase**  Identifies the active phase of the upgrade download if the current download is for an Operating System upgrade.
+- **ShippingMobileOperator**  The mobile operator linked to the device when the device shipped.
 - **SizeCalcTime**  Time taken (in seconds) to calculate the total download size of the payload.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
+- **SystemBIOSMajorRelease**  Major version of the BIOS.
+- **SystemBIOSMinorRelease**  Minor version of the BIOS.
+- **TargetGroupId**  For drivers targeted to a specific device model, this ID indicates the distribution group of devices receiving that driver.
+- **TargetingVersion**  For drivers targeted to a specific device model, this is the version number of the drivers being distributed to the device.
+- **ThrottlingServiceHResult**  Result code (success/failure) while contacting a web service to determine whether this device should download content yet.
+- **TimeToEstablishConnection**  Time (in milliseconds) it took to establish the connection prior to beginning downloaded.
 - **TotalExpectedBytes**  The total count of bytes that the download is expected to be.
 - **UpdateId**  An identifier associated with the specific piece of content.
 - **UpdateImportance**  Indicates whether a piece of content was marked as Important, Recommended, or Optional.
 - **UsedDO**  Whether the download used the delivery optimization service.
+- **UsedSystemVolume**  Indicates whether the content was downloaded to the device's main system storage drive, or an alternate storage drive.
 - **WUDeviceID**  The unique identifier of a specific device, used to identify how many devices are encountering success or a particular issue.
 
 
@@ -4692,7 +5088,7 @@ The following fields are available:
 - **IsSuccessFailurePostReboot**  Indicates whether the update succeeded and then failed after a restart.
 - **IsWUfBDualScanEnabled**  Indicates whether Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates whether Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether the OS update and a BSP update merged for installation.
 - **MsiAction**  The stage of MSI installation where it failed.
 - **MsiProductCode**  The unique identifier of the MSI installer.
@@ -4744,9 +5140,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -4809,9 +5205,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -4868,6 +5264,7 @@ The following fields are available:
 - **SignatureAlgorithm**  The hash algorithm for the metadata signature.
 - **SLSPrograms**  A test program to which a device may have opted in. Example: Insider Fast
 - **StatusCode**  Result code of the event (success, cancellation, failure code HResult).
+- **TimestampTokenCertThumbprint**  The thumbprint of the encoded timestamp token.
 - **TimestampTokenId**  The time this was created. It is encoded in a timestamp blob and will be zero if the token is malformed.
 - **UpdateId**  The update ID for a specific piece of content.
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
@@ -4886,6 +5283,182 @@ The following fields are available:
 - **healthLogSize**  4KB.
 - **productId**  Identifier for product model.
 
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData**  Battery Performance data.
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Size of the battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_BPM
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **BPMCurrentlyEngaged**  Instantaneous snapshot if BPM is engaged on device.
+- **BPMExitCriteria**  What is the BPM exit criteria - 20%SOC or 50%SOC?
+- **BPMHvtCountA**  Current HVT count for BPM counter A.
+- **BPMHvtCountB**  Current HVT count for BPM counter B.
+- **bpmOptOutLifetimeCount**  BPM OptOut Lifetime Count.
+- **BPMRsocBucketsHighTemp_Values**  Time in temperature range 46°C -60°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsLowTemp_Values**  Time in temperature range 0°C -20°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsMediumHighTemp_Values**  Time in temperature range 36°C -45°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMTotalEngagedMinutes**  Total time that BPM was engaged.
+- **BPMTotalEntryEvents**  Total number of times entering BPM.
+- **ComponentId**  Component ID.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  Log Class.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  Log MGR version.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **ProductId**  Product ID.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_CTT
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **BPMKioskModeStartDateInSeconds**  First time Battery Limit was turned on.
+- **BPMKioskModeTotalEngagedMinutes**  Total time Battery Limit was on (SOC value at 50%).
+- **ComponentId**  Component ID.
+- **CTTEqvTimeat35C**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 80% SOC.
+- **CTTEqvTimeat35CinBPM**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 55% SOC and when device is in BPM. Round up.
+- **CTTMinSOC1day**  Rolling 1 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC28day**  Rolling 28 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC3day**  Rolling 3 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC7day**  Rolling 7 day minimum SOC. Value set to 0 initially.
+- **CTTStartDateInSeconds**  Start date from when device was starting to be used.
+- **currentAuthenticationState**  Current Authentication State.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  Log Class.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  Log MGR version.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **newSnFruUpdateCount**  New Sn FRU Update Count.
+- **newSnUpdateCount**  New Sn Update Count.
+- **ProductId**  Product ID.
+- **ProtectionPolicy**  Battery limit engaged. True (0 False).
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+- **VoltageOptimization**  Current CTT reduction in mV.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GG
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **cbTimeCell_Values**  cb time for different cells.
+- **ComponentId**  Component ID.
+- **cycleCount**  Cycle Count.
+- **deltaVoltage**  Delta voltage.
+- **eocChargeVoltage_Values**  EOC Charge voltage values.
+- **fullChargeCapacity**  Full Charge Capacity.
+- **FwVersion**  FW version that created this log.
+- **lastCovEvent**  Last Cov event.
+- **lastCuvEvent**  Last Cuv event.
+- **LogClass**  LOG_CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG_MGR_VERSION.
+- **manufacturerName**  Manufacturer name.
+- **maxChargeCurrent**  Max charge current.
+- **maxDeltaCellVoltage**  Max delta cell voltage.
+- **maxDischargeCurrent**  Max discharge current.
+- **maxTempCell**  Max temp cell.
+- **maxVoltage_Values**  Max voltage values.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **minTempCell**  Min temp cell.
+- **minVoltage_Values**  Min voltage values.
+- **numberOfCovEvents**  Number of Cov events.
+- **numberOfCuvEvents**  Number of Cuv events.
+- **numberOfOCD1Events**  Number of OCD1 events.
+- **numberOfOCD2Events**  Number of OCD2 events.
+- **numberOfQmaxUpdates**  Number of Qmax updates.
+- **numberOfRaUpdates**  Number of Ra updates.
+- **numberOfShutdowns**  Number of shutdowns.
+- **pfStatus_Values**  pf status values.
+- **ProductId**  Product ID.
+- **qmax_Values**  Qmax values for different cells.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GGExt
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **avgCurrLastRun**  Average current last run.
+- **avgPowLastRun**  Average power last run.
+- **batteryMSPN**  BatteryMSPN
+- **batteryMSSN**  BatteryMSSN.
+- **cell0Ra3**  Cell0Ra3.
+- **cell1Ra3**  Cell1Ra3.
+- **cell2Ra3**  Cell2Ra3.
+- **cell3Ra3**  Cell3Ra3.
+- **ComponentId**  Component ID.
+- **currentAtEoc**  Current at Eoc.
+- **firstPFstatusA**  First PF status-A.
+- **firstPFstatusB**  First PF status-B.
+- **firstPFstatusC**  First PF status-C.
+- **firstPFstatusD**  First PF status-D.
+- **FwVersion**  FW version that created this log.
+- **lastQmaxUpdate**  Last Qmax update.
+- **lastRaDisable**  Last Ra disable.
+- **lastRaUpdate**  Last Ra update.
+- **lastValidChargeTerm**  Last valid charge term.
+- **LogClass**  LOG CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG MGR VERSION.
+- **maxAvgCurrLastRun**  Max average current last run.
+- **maxAvgPowLastRun**  Max average power last run.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **mfgInfoBlockB01**  MFG info Block B01.
+- **mfgInfoBlockB02**  MFG info Block B02.
+- **mfgInfoBlockB03**  MFG info Block B03.
+- **mfgInfoBlockB04**  MFG info Block B04.
+- **numOfRaDisable**  Number of Ra disable.
+- **numOfValidChargeTerm**  Number of valid charge term.
+- **ProductId**  Product ID.
+- **qmaxCycleCount**  Qmax cycle count.
+- **SeqNum**  Sequence Number.
+- **stateOfHealthEnergy**  State of health energy.
+- **stateOfHealthFcc**  State of health Fcc.
+- **stateOfHealthPercent**  State of health percent.
+- **TimeStamp**  UTC seconds when log was created.
+- **totalFwRuntime**  Total FW runtime.
+- **updateStatus**  Update status.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
+
+This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **HostResetCause**  Host reset cause.
+- **PchResetCause**  PCH reset cause.
+- **SamResetCause**  SAM reset cause.
 
 ## Update Assistant events
 
@@ -4917,6 +5490,7 @@ The following fields are available:
 
 - **CV**  Correlation vector.
 - **dayspendingrebootafterfu**  Number of days that have elapsed since the device reached ready to reboot for a Feature Update that is still actively pending reboot.
+- **ExecutionRequestId**  Identifier of the Execution Request that launched the QualityUpdateAssistant process.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this device.
 - **KBNumber**  KBNumber of the update being installed.
 - **PackageVersion**  Current package version of quality update assistant.
@@ -4932,6 +5506,7 @@ The following fields are available:
 
 - **activeProcesses**  Number of active processes.
 - **atleastOneMitigationSucceeded**  Bool flag indicating if at least one mitigation succeeded.
+- **callerId**  Identifier (GUID) of the caller requesting a system initiated troubleshooter.
 - **contactTSServiceAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to get Troubleshooter metadata from the Troubleshooting cloud service.
 - **countDownloadedPayload**  Count instances of payload downloaded.
 - **description**  Description of failure.
@@ -4973,6 +5548,7 @@ This event is raised when a targeted mitigation is rejected by the device based 
 
 The following fields are available:
 
+- **callerId**  It is a GUID to identify the component that is calling into Mitigation Client APIs. It can be: Task Scheduler,  Settings App, or GetHelp App.
 - **description**  String describing why a mitigation was rejected.
 - **mitigationId**  GUID identifier for a mitigation.
 - **mitigationVersion**  Version of the mitigation.
@@ -4987,11 +5563,14 @@ This event is raised after an executable delivered by Mitigation Service has suc
 The following fields are available:
 
 - **activeProcesses**  Number of active processes.
+- **callerId**  Identifier (GUID) of the caller requesting a system initiated troubleshooter.
 - **contactTSServiceAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to get Troubleshooter metadata from the Troubleshooting cloud service.
 - **devicePreference**  Recommended troubleshooting setting on the device.
 - **downloadBinaryAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download Troubleshooter Exe.
 - **downloadCabAttempts**  Number of attempts made by TroubleshootingSvc in a single Scanner session to download PrivilegedActions Cab.
 - **executionPreference**  Current Execution level Preference. This may not be same as devicePreference, for example, when executing Critical troubleshooters, the executionPreference is set to the Silent option.
+- **exitCode**  Exit code of the execution of the mitigation.
+- **exitCodeDefinition**  String describing the meaning of the exit code returned by the mitigation (i.e. ProblemNotFound).
 - **experimentFeatureId**  Experiment feature ID.
 - **experimentFeatureState**  Feature state for the experiment.
 - **mitigationId**  ID value of the mitigation.
@@ -5020,6 +5599,21 @@ The following fields are available:
 - **PackageVersion**  The package version label.
 
 
+### Microsoft.Windows.UpdateHealthTools.ExpediteDownloadStarted
+
+This event indicates that the download phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  A correlation vector.
+- **ExpeditePolicyId**  The policy Id of the expedite request.
+- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
+- **ExpediteUpdatesInProgress**  A list of update IDs in progress.
+- **ExpediteUsoLastError**  The last error returned by USO.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
+
+
 ### Microsoft.Windows.UpdateHealthTools.ExpediteInstallStarted
 
 This event indicates that the install phase of USO has started. The data collected with this event is used to help keep Windows secure and up to date.
@@ -5035,6 +5629,24 @@ The following fields are available:
 - **PackageVersion**  The package version label.
 
 
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterAlreadyExpectedUbr
+
+This event indicates that the device is already on the expected UBR. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpeditePolicyId**  The policy id of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteUpdaterCurrentUbr**  The ubr of the device.
+- **ExpediteUpdaterExpectedUbr**  The expected ubr of the device.
+- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
+- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
+
+
 ### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterFailedToUpdateToExpectedUbr
 
 This event indicates the expected UBR of the device. The data collected with this event is used to help keep Windows secure and up to date.
@@ -5046,6 +5658,22 @@ The following fields are available:
 - **ExpeditePolicyId**  The policy ID of the expedite request.
 - **ExpediteResult**  Boolean value for success or failure.
 - **ExpediteUpdaterOfferedUpdateId**  UpdateId of the LCU expected to be expedited.
+- **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version label.
+
+
+### Microsoft.Windows.UpdateHealthTools.ExpediteUpdaterRebootComplete
+
+This event indicates that the expedite update is completed with reboot. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **ExpeditePolicyId**  The policy id of the expedite request.
+- **ExpediteResult**  Boolean value for success or failure.
+- **ExpediteUpdaterCurrentUbr**  The ubr of the device.
+- **ExpediteUpdaterOfferedUpdateId**  Update Id of the LCU expected to be expedited.
 - **ExpediteUpdaterPolicyRestoreResult**  HRESULT of the policy restore.
 - **GlobalEventCounter**  Counts the number of events for this provider.
 - **PackageVersion**  The package version label.
@@ -5072,7 +5700,9 @@ This event sends results of the expedite USO scan. The data collected with this 
 
 The following fields are available:
 
+- **CartPolicySetOnDevice**  True if the cart policy is set for the device.
 - **CV**  Correlation vector.
+- **ExpediteCbsServicingInProgressStatus**  True if servicing is in progress in cbs for the device.
 - **ExpediteErrorBitMap**  Bit map value for any error code.
 - **ExpeditePolicyId**  The policy ID of the expedite request.
 - **ExpediteResult**  Boolean value for success or failure.
@@ -5096,8 +5726,10 @@ This event sends telemetry that USO scan has been started. The data collected wi
 
 The following fields are available:
 
+- **CartPolicySetOnDevice**  True if the cart policy is set for a given device.
 - **CV**  Correlation vector.
 - **ExpediteErrorBitMap**  Bit map value for any error code.
+- **ExpediteHoursOfUpTimeSincePolicy**  The number of hours the device has been active since it received a policy.
 - **ExpeditePolicyId**  The policy Id of the expedite request.
 - **ExpediteResult**  Boolean value for success or failure.
 - **ExpediteUpdaterCurrentUbr**  The UBR of the device.
@@ -5134,10 +5766,10 @@ The following fields are available:
 - **CV**  The correlation vector.
 - **GlobalEventCounter**  Counts the events at the global level for telemetry.
 - **PackageVersion**  The package version for currency tools.
-- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
+- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is Azure Active Directory-joined.
 - **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
-- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is AADJ.
+- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is Azure Active Directory-joined.
 - **UnifiedInstallerDeviceIsAdJoined**  Boolean indicating whether a device is AD joined.
 - **UnifiedInstallerDeviceIsAdJoinedHresult**  The result code for checking whether a device is AD joined.
 - **UnifiedInstallerDeviceIsEducationSku**  Boolean indicating whether a device is Education SKU.
@@ -5150,13 +5782,25 @@ The following fields are available:
 - **UnifiedInstallerDeviceIsMdmManagedHresult**  The result code from checking whether a device is MDM managed.
 - **UnifiedInstallerDeviceIsProSku**  Boolean indicating whether a device is Pro SKU.
 - **UnifiedInstallerDeviceIsProSkuHresult**  The result code from checking whether a device is Pro SKU.
-- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is SCCM managed.
-- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is SCCM managed.
-- **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is Wufb managed.
-- **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is Wufb managed.
+- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is managed by Configuration Manager.
+- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is managed by Configuration Manager.
+- **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is Windows Update for Business managed.
+- **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is Windows Update for Business managed.
 - **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.
 - **UnifiedInstallerPlatformType**  The enum indicating the type of platform detected.
 - **UnifiedInstUnifiedInstallerDeviceIsHomeSkuHresultllerDeviceIsHomeSku**  The result code from checking whether a device is Home SKU.
+
+
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsBlobNotificationRetrieved
+
+This event is sent when a blob notification is received. The data collected with this event is used to help keep Windows up to date and secure.
+
+The following fields are available:
+
+- **CV**  Correlation vector.
+- **GlobalEventCounter**  Counts the number of events for this provider.
+- **PackageVersion**  The package version of the label.
+- **UpdateHealthToolsBlobNotificationNotEmpty**  True if the blob notification is not empty.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsCachedNotificationRetrieved
@@ -5180,7 +5824,7 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
-- **UpdateHealthToolsDeviceSccmManaged**  Device is managed by SCCM.
+- **UpdateHealthToolsDeviceSccmManaged**  Device is managed by Configuration Manager.
 - **UpdateHealthToolsDeviceUbrChanged**  1 if the Ubr just changed, 0 otherwise.
 - **UpdateHealthToolsDeviceUri**  The URI to be used for push notifications on this device.
 
@@ -5252,22 +5896,23 @@ The following fields are available:
 - **PackageVersion**  The package version of the label.
 - **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
 - **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
-- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDeviceId**  The Azure Active Directory ID of the device used to create the device ID hash.
 - **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
 - **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
 - **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
 - **UpdateHealthToolsHashedTenantId**  The SHA256 hash of the device tenant id.
 
 
-### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoAADJoin
+### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
 
-This event indicates that the device is not AAD joined so service stops. The data collected with this event is used to help keep Windows secure and up to date.
+This event is sent when the device is not joined to Azure Active Directory. The data collected with this event is used to help keep Windows up to date and secure.
 
 The following fields are available:
 
 - **CV**  Correlation vector.
-- **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
-- **PackageVersion**  Current package version of UpdateHealthTools.
+- **GlobalEventCounter**  The global event counter for counting total events for the provider.
+- **PackageVersion**  The version for the current package.
+- **UpdateHealthToolsServiceBlockedByNoDSSJoinHr**  The result code returned when checking for Windows Update for Business cloud membership.
 
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceIsDSSJoin
@@ -5291,6 +5936,90 @@ The following fields are available:
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
 
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantCompatCheckResult
+
+This event provides the result of running the compatibility check for update assistant. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantCompatCheckResultOutput**  Output of compatibility check for update assistant.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantDeviceInformation
+
+This event provides basic information about the device where update assistant was run. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantAppFilePath**  Path to Update Assistant app.
+- **UpdateAssistantDeviceId**  Device Id of the Update Assistant Candidate Device.
+- **UpdateAssistantExeName**  Exe name running as Update Assistant.
+- **UpdateAssistantExternalId**  External Id of the Update Assistant Candidate Device.
+- **UpdateAssistantIsDeviceCloverTrail**  True/False is the device clovertrail.
+- **UpdateAssistantIsPushing**  True if the update is pushing to the device.
+- **UpdateAssistantMachineId**  Machine Id of the Update Assistant Candidate Device.
+- **UpdateAssistantOsVersion**  Update Assistant OS Version.
+- **UpdateAssistantPartnerId**  Partner Id for Assistant application.
+- **UpdateAssistantReportPath**  Path to report for Update Assistant.
+- **UpdateAssistantStartTime**  Start time for UpdateAssistant.
+- **UpdateAssistantTargetOSVersion**  Update Assistant Target OS Version.
+- **UpdateAssistantUiType**  The type of UI whether default or OOBE.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+- **UpdateAssistantVersionInfo**  Information about Update Assistant application.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantEULAProperty
+
+This event is set to true at the start of AcceptEULA. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantEULAPropertyGeoId**  Geo Id used to show EULA.
+- **UpdateAssistantEULAPropertyRegion**  Region used to show EULA.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateAcceptEULA**  True at the start of AcceptEULA.
+- **UpdateAssistantStateCheckingCompat**  True at the start of Checking Compat
+- **UpdateAssistantStateCheckingUpgrade**  True at the start of CheckingUpgrade.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePerformRestart**  True at the start of PerformRestart.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantStateShowingUpdate**  True at the start of Showing Update.
+- **UpdateAssistantStateWelcomeToNewOS**  True at the start of WelcomeToNewOS.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantUserActionDetails
+
+This event provides details about user action. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantUserActionExitingState**  Exiting state name user performed action on.
+- **UpdateAssistantUserActionHResult**  HRESULT of user action.
+- **UpdateAssistantUserActionState**  State name user performed action on.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 ## Update events
 
@@ -5313,7 +6042,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentCommit
 
-This event collects information regarding the commit phase of the new Unified Update Platform (UUP) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the commit phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5330,7 +6059,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentDownloadRequest
 
-This event sends data for the download request phase of updating Windows via the new Unified Update Platform (UUP) scenario. Applicable to PC and Mobile. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data for the download request phase of updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5338,6 +6067,7 @@ The following fields are available:
 - **ContainsSafeOSDUPackage**  Boolean indicating whether Safe DU packages are part of the payload.
 - **DeletedCorruptFiles**  Boolean indicating whether corrupt payload was deleted.
 - **DownloadComplete**  Indicates if the download is complete.
+- **DownloadedSizeBundle**  Cumulative size (in bytes) of the downloaded bundle content.
 - **DownloadedSizeCanonical**  Cumulative size (in bytes) of downloaded canonical content.
 - **DownloadedSizeDiff**  Cumulative size (in bytes) of downloaded diff content.
 - **DownloadedSizeExpress**  Cumulative size (in bytes) of downloaded express content.
@@ -5347,11 +6077,13 @@ The following fields are available:
 - **ExtensionName**  Indicates whether the payload is related to Operating System content or a plugin.
 - **FlightId**  Unique ID for each flight.
 - **InternalFailureResult**  Indicates a non-fatal error from a plugin.
+- **NumberOfHops**  Number of intermediate packages used to reach target version.
 - **ObjectId**  Unique value for each Update Agent mode (same concept as InstanceId for Setup360).
 - **PackageCategoriesSkipped**  Indicates package categories that were skipped, if applicable.
 - **PackageCountOptional**  Number of optional packages requested.
 - **PackageCountRequired**  Number of required packages requested.
 - **PackageCountTotal**  Total number of packages needed.
+- **PackageCountTotalBundle**  Total number of bundle packages.
 - **PackageCountTotalCanonical**  Total number of canonical packages.
 - **PackageCountTotalDiff**  Total number of diff packages.
 - **PackageCountTotalExpress**  Total number of express packages.
@@ -5372,7 +6104,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentExpand
 
-This event collects information regarding the expansion phase of the new Unified Update Platform (UUP) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the expansion phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5394,7 +6126,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentInitialize
 
-This event sends data for the initialize phase of updating Windows via the new Unified Update Platform (UUP) scenario, which is applicable to both PCs and Mobile. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data for the initialize phase of updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5426,6 +6158,24 @@ The following fields are available:
 - **Result**  The result for the current install phase.
 - **ScenarioId**  Indicates the update scenario.
 - **SessionId**  Unique value for each update attempt.
+- **UpdateId**  Unique ID for each update.
+- **UpdatePriority**  Indicates the priority that Update Agent is requested to run in for the install phase of an update.
+
+
+### Update360Telemetry.UpdateAgentMerge
+
+The UpdateAgentMerge event sends data on the merge phase when updating Windows. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **ErrorCode**  The error code returned for the current merge phase.
+- **FlightId**  Unique ID for each flight.
+- **MergeId**  The unique ID to join two update sessions being merged.
+- **ObjectId**  Unique value for each Update Agent mode.
+- **RelatedCV**  Related correlation vector value.
+- **Result**  Outcome of the merge phase of the update.
+- **ScenarioId**  Indicates the update scenario.
+- **SessionId**  Unique value for each attempt.
 - **UpdateId**  Unique ID for each update.
 
 
@@ -5477,7 +6227,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentModeStart
 
-This event sends data for the start of each mode during the process of updating Windows via the new Unified Update Platform (UUP) scenario. Applicable to both PCs and Mobile. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data for the start of each mode during the process of updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5493,7 +6243,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentOneSettings
 
-This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5511,7 +6261,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentPostRebootResult
 
-This event collects information for both Mobile and Desktop regarding the post reboot phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5548,7 +6298,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentSetupBoxLaunch
 
-The UpdateAgent_SetupBoxLaunch event sends data for the launching of the setup box when updating Windows via the new Unified Update Platform (UUP) scenario. This event is only applicable to PCs. The data collected with this event is used to help keep Windows secure and up to date.
+The UpdateAgent_SetupBoxLaunch event sends data for the launching of the setup box when updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5880,7 +6630,7 @@ The following fields are available:
 
 ### Setup360Telemetry.Setup360OneSettings
 
-This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5915,32 +6665,6 @@ The following fields are available:
 - **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
-
-
-## Windows Admin Center events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.GatewayStatus
-
-A periodic event that describes Windows Admin Center gateway app's version and other inventory and configuration parameters.
-
-The following fields are available:
-
-- **activeNodesByNodeId**  A count of how many active nodes are on this gateway, deduplicated by Node ID.
-- **activeNodesByUuid**  A count of how many active nodes are on this gateway, deduplicated by UUID.
-- **AvailableMemoryMByte**  A snapshot of the available physical memory on the OS.
-- **azureADAppRegistered**  If the gateway is registered with an Azure Active Directory.
-- **azureADAuthEnabled**  If the gateway has enabled authentication using Azure Active Directory.
-- **friendlyOsName**  A user-friendly name describing the OS version.
-- **gatewayCpuUtilizationPercent**  A snapshot of CPU usage on the OS.
-- **gatewayVersion**  The version string for this currently running Gateway application.
-- **gatewayWorkingSetMByte**  A snapshot of the working set size of the gateway process.
-- **installationType**  Identifies if the gateway was installed as a VM extension.
-- **installedDate**  The date on which this gateway was installed.
-- **logicalProcessorCount**  A snapshot of the how many logical processors the machine running this gateway has.
-- **otherProperties**  This is an empty string, but may be used for another purpose in the future.
-- **registeredNodesByNodeId**  A count of how many nodes are registered with this gateway, deduplicated by Node ID.
-- **registeredNodesByUuid**  A count of how many nodes are registered with this gateway, deduplicated by UUID.
-- **totalCpuUtilizationPercent**  A snapshot of the total CPU utilization of the machine running this gateway.
 
 
 ## Windows as a Service diagnostic events
@@ -6016,7 +6740,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Sense.Client.PerformanceScript.OnboardingScript
 
-This event is triggered whenever Microsoft Defender for Endpoint onboarding script is run. The data collected with this event is used to keep Windows performing properly.
+This event is triggered whenever WDATP onboarding script is run. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -6139,6 +6863,18 @@ The following fields are available:
 - **WUContentId**  The Windows Update content ID.
 
 
+### Microsoft.Windows.StoreAgent.Telemetry.BeginGetInstalledContentIds
+
+This event is sent when an inventory of the apps installed is started to determine whether updates for those apps are available. It's used to help keep Windows up-to-date and secure.
+
+
+
+### Microsoft.Windows.StoreAgent.Telemetry.BeginUpdateMetadataPrepare
+
+This event is sent when the Store Agent cache is refreshed with any available package updates. It's used to help keep Windows up-to-date and secure.
+
+
+
 ### Microsoft.Windows.StoreAgent.Telemetry.EndAcquireLicense
 
 This event is sent after the license is acquired when a product is being installed. It's used to help keep Windows up-to-date and secure.
@@ -6196,6 +6932,15 @@ The following fields are available:
 ### Microsoft.Windows.StoreAgent.Telemetry.EndFrameworkUpdate
 
 This event is sent when an app update requires an updated Framework package and the process starts to download it. It is used to help keep Windows up-to-date and secure.
+
+The following fields are available:
+
+- **HResult**  The result code of the last action performed before this operation.
+
+
+### Microsoft.Windows.StoreAgent.Telemetry.EndGetInstalledContentIds
+
+This event is sent after sending the inventory of the products installed to determine whether updates for those products are available.  It's used to help keep Windows up-to-date and secure.
 
 The following fields are available:
 
@@ -6292,6 +7037,15 @@ The following fields are available:
 - **SystemAttemptNumber**  The total number of system attempts.
 - **UserAttemptNumber**  The total number of system attempts.
 - **WUContentId**  The Windows Update content ID.
+
+
+### Microsoft.Windows.StoreAgent.Telemetry.EndUpdateMetadataPrepare
+
+This event is sent after a scan for available app updates to help keep Windows up-to-date and secure.
+
+The following fields are available:
+
+- **HResult**  The result code of the last action performed.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.FulfillmentComplete
@@ -6453,7 +7207,7 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **sacDevice**  This is the device info.
-- **wUfBConnected**  Result of WUfB connection check.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureNotApplicable
@@ -6468,13 +7222,35 @@ The following fields are available:
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
 - **sacDevice**  Represents the device info.
-- **wUfBConnected**  Result of WUfB connection check.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureStarted
 
 This event sends basic information indicating that Feature Rollback has started. The data collected with this event is used to help keep Windows secure and up to date.
 
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureSucceeded
+
+This event sends basic telemetry on the success of the rollback of feature updates. The data collected with this event is used to help keep Windows secure and up to date.
+
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityFailed
+
+This event sends basic telemetry on the failure of the rollback of the Quality/LCU builds. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **current**  Result of currency check.
+- **dismOperationSucceeded**  Dism uninstall operation status.
+- **hResult**  Failure Error code.
+- **oSVersion**  Build number of the device.
+- **paused**  Indicates whether the device is paused.
+- **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
+- **sacDevice**  Release Channel.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityNotApplicable
@@ -6488,8 +7264,20 @@ The following fields are available:
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
-- **sacDevice**  Device in the semi-annual channel.
-- **wUfBConnected**  Result of WUfB connection check.
+- **sacDevice**  Device in the General Availability Channel.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityStarted
+
+This event indicates that the Quality Rollback process has started. The data collected with this event is used to help keep Windows secure and up to date.
+
+
+
+### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualitySucceeded
+
+This event sends basic telemetry on the success of the rollback of the Quality/LCU builds. The data collected with this event is used to help keep Windows secure and up to date.
+
 
 
 ## Windows Update Delivery Optimization events
@@ -6548,6 +7336,7 @@ The following fields are available:
 - **cdnUrl**  Url of the source Content Distribution Network (CDN).
 - **congestionPrevention**  Indicates a download may have been suspended to prevent network congestion.
 - **dataSourcesTotal**  Bytes received per source type, accumulated for the whole session.
+- **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downlinkBps**  The maximum measured available download bandwidth (in bytes per second).
 - **downlinkUsageBps**  The download speed (in bytes per second).
 - **downloadMode**  The download mode used for this file download session.
@@ -6631,6 +7420,7 @@ The following fields are available:
 - **deviceProfile**  Identifies the usage or form factor (such as Desktop, Xbox, or VM).
 - **diceRoll**  Random number used for determining if a client will use peering.
 - **doClientVersion**  The version of the Delivery Optimization client.
+- **doErrorCode**  The Delivery Optimization error code that was returned.
 - **downloadMode**  The download mode used for this file download session (CdnOnly = 0, Lan = 1, Group = 2, Internet = 3, Simple = 99, Bypass = 100).
 - **downloadModeReason**  Reason for the download.
 - **downloadModeSrc**  Source of the DownloadMode setting (KvsProvider = 0, GeoProvider = 1, GeoVerProvider = 2, CpProvider = 3, DiscoveryProvider = 4, RegistryProvider = 5, GroupPolicyProvider = 6, MdmProvider = 7, SettingsProvider = 8, InvalidProviderType = 9).
@@ -6946,6 +7736,19 @@ The following fields are available:
 - **wuDeviceid**  Unique device ID used by Windows Update.
 
 
+### Microsoft.Windows.Update.Orchestrator.Detection
+
+This event sends launch data for a Windows Update scan to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **detectionBlockreason**  The reason detection did not complete.
+- **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
+- **interactive**  Indicates whether the session was user initiated.
+- **updateScenarioType**  Identifies the type of update session being performed.
+- **wuDeviceid**  The unique device ID used by Windows Update.
+
+
 ### Microsoft.Windows.Update.Orchestrator.DetectionActivity
 
 This event returns data about detected updates, as well as the types of update (optional or recommended). This data helps keep Windows up to date.
@@ -6956,6 +7759,7 @@ The following fields are available:
 - **applicableUpdateList**  The list of available updates.
 - **durationInSeconds**  The amount of time (in seconds) it took for the event to run.
 - **expeditedMode**  Indicates whether Expedited Mode is on.
+- **networkCostPolicy**  The network cost.
 - **scanTriggerSource**  Indicates whether the scan is Interactive or Background.
 - **scenario**  The result code of the event.
 - **scenarioReason**  The reason for the result code (scenario).
@@ -6996,6 +7800,23 @@ The following fields are available:
 - **updateId**  Update ID.
 - **updateScenarioType**  The update session type.
 - **wuDeviceid**  Unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.EscalationRiskLevels
+
+This event is sent during update scan, download, or install, and indicates that the device is at risk of being out-of-date. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **configVersion**  The escalation configuration version on the device.
+- **downloadElapsedTime**  Indicates how long since the download is required on device.
+- **downloadRiskLevel**  At-risk level of download phase.
+- **installElapsedTime**  Indicates how long since the install is required on device.
+- **installRiskLevel**  The at-risk level of install phase.
+- **isSediment**  Assessment of whether is device is at risk.
+- **scanElapsedTime**  Indicates how long since the scan is required on device.
+- **scanRiskLevel**  At-risk level of the scan phase.
+- **wuDeviceid**  Device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Orchestrator.FailedToAddTimeTriggerToScanTask
@@ -7086,6 +7907,12 @@ The following fields are available:
 
 This event sends basic data about the version of upgrade settings applied to the system to help keep Windows secure and up to date.
 
+The following fields are available:
+
+- **errorCode**  Hex code for the error message, to allow lookup of the specific error.
+- **settingsDownloadTime**  Timestamp of the last attempt to acquire settings.
+- **settingsETag**  Version identifier for the settings.
+- **wuDeviceid**  Unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Orchestrator.RestoreRebootTask
@@ -7114,6 +7941,19 @@ The following fields are available:
 - **scanTriggerSource**  Indicates what caused the scan.
 - **updateScenarioType**  The update session type.
 - **wuDeviceid**  Unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.SeekerUpdateAvailable
+
+This event defines when an optional update is available for the device to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **flightID**  The unique identifier of the Windows Insider build on this device.
+- **isFeatureUpdate**  Indicates whether the update is a Feature Update.
+- **revisionNumber**  The revision number of the update.
+- **updateId**  The GUID (Globally Unique Identifier) of the update.
+- **wuDeviceid**  The Windows Update device identifier.
 
 
 ### Microsoft.Windows.Update.Orchestrator.StickUpdate
@@ -7183,6 +8023,45 @@ The following fields are available:
 
 - **updateId**  Identifier associated with the specific piece of content.
 - **wuDeviceid**  Unique device ID controlled by the software distribution client.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdatePolicyCacheRefresh
+
+This event sends data on whether Update Management Policies were enabled on a device, to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **configuredPoliciescount**  Number of policies on the device.
+- **policiesNamevaluesource**  Policy name and source of policy (group policy, MDM or flight).
+- **policyCacherefreshtime**  Time when policy cache was refreshed.
+- **updateInstalluxsetting**  Indicates whether a user has set policies via a user experience option.
+- **wuDeviceid**  Unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdateRebootRequired
+
+This event sends data about whether an update required a reboot to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **flightID**  The specific ID of the Windows Insider build the device is getting.
+- **interactive**  Indicates whether the reboot initiation stage of the update process was entered as a result of user action.
+- **revisionNumber**  Update revision number.
+- **updateId**  Update ID.
+- **updateScenarioType**  The update session type.
+- **uxRebootstate**  Indicates the exact state of the user experience at the time the required reboot was initiated to ensure the correct update process and experience is provided to keep Windows up to date.
+- **wuDeviceid**  Unique device ID used by Windows Update.
+
+
+### Microsoft.Windows.Update.Orchestrator.UpdaterMalformedData
+
+This event is sent when a registered updater has missing or corrupted information, to help keep Windows up to date.
+
+The following fields are available:
+
+- **malformedRegValue**  The registry value that contains the malformed or missing entry.
+- **updaterId**  The ID of the updater.
+- **wuDeviceid**  Unique device ID used by Windows Update.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.EnhancedEngagedRebootUxState
@@ -7276,7 +8155,117 @@ The following fields are available:
 - **wuDeviceid**  Represents device ID.
 
 
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSEvaluateInteractionCampaign
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) finishes processing an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **ControlId**  String identifying the control (if any) that was selected by the user during presentation.
+- **hrInteractionHandler**  The error (if any) reported by the RUXIM Interaction Handler while processing the interaction campaign.
+- **hrScheduler**  The error (if any) encountered by RUXIM Interaction Campaign Scheduler itself while processing the interaction campaign.
+- **InteractionCampaignID**  The ID of the interaction campaign that was processed.
+- **ResultId**  The result of the evaluation/presentation.
+- **WasCompleted**  True if the interaction campaign is complete.
+- **WasPresented**  True if the Interaction Handler displayed the interaction campaign to the user.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSLaunch
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CommandLine**  The command line used to launch RUXIMICS.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHEvaluateAndPresent
+
+This event is generated when the RUXIM Interaction Handler finishes evaluating, and possibly presenting an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **hrLocal**  The error (if any) encountered by RUXIM Interaction Handler during evaluation and presentation.
+- **hrPresentation**  The error (if any) reported by RUXIM Presentation Handler during presentation.
+- **InteractionCampaignID**  GUID; the user interaction campaign processed by RUXIM Interaction Handler.
+- **ResultId**  The result generated by the evaluation and presentation.
+- **WasCompleted**  True if the user interaction campaign is complete.
+- **WasPresented**  True if the user interaction campaign is displayed to the user.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHExit
+
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **InteractionCampaignID**  GUID identifying the interaction campaign that RUXIMIH processed.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.IHLaunch
+
+This event is generated when the RUXIM Interaction Handler (RUXIMIH.EXE) is launched. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CommandLine**  The command line used to launch RUXIMIH.
+- **InteractionCampaignID**  GUID identifying the user interaction campaign that the Interaction Handler will process.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.SystemEvaluator.Evaluation
+
+This event is generated whenever the RUXIM Evaluator DLL performs an evaluation. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **HRESULT**  Error, if any, that occurred during evaluation. (Note that if errors encountered during individual checks do not affect the overall result of the evaluation, those errors will be reported in NodeEvaluationData, but this HRESULT will still be zero.)
+- **Id**  GUID passed in by the caller to identify the evaluation.
+- **NodeEvaluationData**  Structure showing the results of individual checks that occurred during the overall evaluation.
+- **Result**  Overall result generated by the evaluation.
+
+### wilActivity
+
+This event provides a Windows Internal Library context used for Product and Service diagnostics. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **callContext**  The function where the failure occurred.
+- **currentContextId**  The ID of the current call context where the failure occurred.
+- **currentContextMessage**  The message of the current call context where the failure occurred.
+- **currentContextName**  The name of the current call context where the failure occurred.
+- **failureCount**  The number of failures for this failure ID.
+- **failureId**  The ID of the failure that occurred.
+- **failureType**  The type of the failure that occurred.
+- **fileName**  The file name where the failure occurred.
+- **function**  The function where the failure occurred.
+- **hresult**  The HResult of the overall activity.
+- **lineNumber**  The line number where the failure occurred.
+- **message**  The message of the failure that occurred.
+- **module**  The module where the failure occurred.
+- **originatingContextId**  The ID of the originating call context that resulted in the failure.
+- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
+- **originatingContextName**  The name of the originating call context that resulted in the failure.
+- **threadId**  The ID of the thread on which the activity is executing.
+
+
 ## Windows Update mitigation events
+
+### Microsoft.Windows.Mitigations.AllowInPlaceUpgrade.ApplyTroubleshootingComplete
+
+This event provides summary information after attempting to enable In-Place Upgrade. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **applicable**  The operations that were needed to be attempted.
+- **failed**  Result of the individual operations that were attempted.
+- **hr**  Result of the overall operation to evaluate and enable In-Place Upgrade.
+
 
 ### Mitigation360Telemetry.MitigationCustom.CleanupSafeOsImages
 
@@ -7302,6 +8291,27 @@ The following fields are available:
 - **WuId**  Unique ID for the Windows Update client.
 
 
+### Mitigation360Telemetry.MitigationCustom.CryptcatsvcRebuild
+
+This event sends data specific to the CryptcatsvcRebuild mitigation used for OS Updates. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightId**  The unique identifier for each flight.
+- **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
+- **MitigationNeeded**  Information on whether the mitigation was needed.
+- **MitigationScenario**  The update scenario in which the mitigation was executed.
+- **RelatedCV**  Correlation vector value generated from the latest USO scan.
+- **Result**  HResult of this operation.
+- **ScenarioId**  ID indicating the mitigation scenario.
+- **ScenarioSupported**  Indicates whether the scenario was supported.
+- **ServiceDisabled**  Information on whether the service was disabled.
+- **SessionId**  Unique value for each update attempt.
+- **UpdateId**  Unique ID for each Update.
+- **WuId**  Unique ID for the Windows Update client.
+
+
 ### Mitigation360Telemetry.MitigationCustom.FixAppXReparsePoints
 
 This event sends data specific to the FixAppXReparsePoints mitigation used for OS updates. The data collected with this event is used to help keep Windows secure and up to date.
@@ -7323,29 +8333,6 @@ The following fields are available:
 - **UpdateId**  Unique ID for each Update.
 - **WuId**  Unique ID for the Windows Update client.
 
-### wilActivity
-
-This event provides a Windows Internal Library context used for Product and Service diagnostics. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **callContext**  The function where the failure occurred.
-- **currentContextId**  The ID of the current call context where the failure occurred.
-- **currentContextMessage**  The message of the current call context where the failure occurred.
-- **currentContextName**  The name of the current call context where the failure occurred.
-- **failureCount**  The number of failures for this failure ID.
-- **failureId**  The ID of the failure that occurred.
-- **failureType**  The type of the failure that occurred.
-- **fileName**  The file name where the failure occurred.
-- **function**  The function where the failure occurred.
-- **hresult**  The HResult of the overall activity.
-- **lineNumber**  The line number where the failure occurred.
-- **message**  The message of the failure that occurred.
-- **module**  The module where the failure occurred.
-- **originatingContextId**  The ID of the originating call context that resulted in the failure.
-- **originatingContextMessage**  The message of the originating call context that resulted in the failure.
-- **originatingContextName**  The name of the originating call context that resulted in the failure.
-- **threadId**  The ID of the thread on which the activity is executing.
 
 ## Windows Update Reserve Manager events
 
@@ -7372,6 +8359,7 @@ This event is sent when the Update Reserve Manager clears one of the reserves. T
 The following fields are available:
 
 - **FinalReserveUsedSpace**  The amount of used space for the reserve after it was cleared.
+- **Flags**  The context of clearing the reserves.
 - **InitialReserveUsedSpace**  The amount of used space for the reserve before it was cleared.
 - **ReserveId**  The ID of the reserve that needs to be cleared.
 
@@ -7519,6 +8507,38 @@ The following fields are available:
 ### Microsoft.Windows.Security.Winlogon.SetupCompleteLogon
 
 This event signals the completion of the setup process. It happens only once during the first logon.
+
+
+
+## XBOX events
+
+### Microsoft.Xbox.EraControl.EraVmTerminationReason
+
+This event is triggered on ERA VM termination.
+
+The following fields are available:
+
+- **pfn**  A package full name.
+- **reasonNumber**  A number associated with reason.
+
+
+### Microsoft.Xbox.XceBridge.CS.1.0.0.9.0.1.SFR.XvdStreamingStart
+
+This event indicates that the XVDD streaming engine encountered an error when attempting to start streaming.
+
+
+
+### Microsoft.Xbox.XceBridge.CS.1.0.0.9.0.2.SFR.XvdStreamingStart
+
+This event indicates that the XVDD streaming engine encountered an error when attempting to start streaming.
+
+
+
+### XboxUpdate.NewSystemBoot
+
+This event indicates a new first boot into the system OS.
+
+
 
 ## XDE events
 

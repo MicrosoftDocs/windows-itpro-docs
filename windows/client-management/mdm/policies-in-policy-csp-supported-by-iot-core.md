@@ -1,13 +1,13 @@
 ---
 title: Policies in Policy CSP supported by Windows 10 IoT Core
-description: Policies in Policy CSP supported by Windows 10 IoT Core
+description: Learn about the policies in Policy CSP supported by Windows 10 IoT Core.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/16/2019
 ---
@@ -16,8 +16,7 @@ ms.date: 09/16/2019
 
 > [!div class="op_single_selector"]
 >
-> - [IoT Enterprise](policy-csps-supported-by-iot-enterprise.md)
-> - [IoT Core](policy-csps-supported-by-iot-core.md)
+> - [IoT Core]()
 >
 
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)

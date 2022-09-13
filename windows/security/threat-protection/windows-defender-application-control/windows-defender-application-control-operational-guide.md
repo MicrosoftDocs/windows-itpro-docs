@@ -1,5 +1,5 @@
 ---
-title: Managing and troubleshooting Windows Defender Application Control policies (Windows 10)
+title: Managing and troubleshooting Windows Defender Application Control policies (Windows)
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/16/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control operational guide
@@ -23,13 +23,17 @@ ms.technology: mde
 **Applies to**
 
 - Windows 10
+- Windows 11
 - Windows Server 2016 and above
 
-After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+
+After enabling you understand how to design and deploy your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they aren't behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
 
 ## WDAC Events Overview
 
-WDAC generates and logs events when a policy is loaded as well as when a binary attempts to execute and is blocked. These events include information that identifies the policy and gives more details about the block. Generally, WDAC does not generate events when a binary is allowed; however, there is the option to enable events when Managed Installer and/or the Intelligent Security Graph (ISG) is configured.
+Windows Defender Application Control generates and logs events when a policy is loaded as well as when a binary attempts to execute and is blocked. These events include information that identifies the policy and gives more details about the block. Generally, WDAC doesn't generate events when a binary is allowed; however, there's the option to enable events when Managed Installer and/or the Intelligent Security Graph (ISG) is configured.
 
 WDAC events are generated under two locations:
 

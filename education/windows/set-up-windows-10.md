@@ -2,22 +2,22 @@
 title: Set up Windows devices for education
 description: Decide which option for setting up Windows 10 is right for you.
 keywords: school, Windows device setup, education device setup
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 07/27/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Set up Windows devices for education
-**Applies to:**
-
--   Windows 10 
 
 You have two tools to choose from to set up PCs for your classroom: 
 * Set up School PCs 
@@ -27,7 +27,7 @@ Choose the tool that is appropriate for how your students will sign in (Active D
 
 You can use the following diagram to compare the tools.
 
-![Which tool to use to set up Windows 10](images/suspc_wcd_featureslist.png)
+![Which tool to use to set up Windows 10.](images/suspc_wcd_featureslist.png)
 
 
 ## In this section
