@@ -1,28 +1,26 @@
 ---
-title: Modify GPO Filters (Windows 10)
+title: Modify GPO Filters (Windows)
 description: Learn how to modify GPO filters to apply to a different zone or version of windows in Windows Defender Firewall with Advanced Security.
-ms.assetid: 24ede9ca-a501-4025-9020-1129e2cdde80
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/08/2021
+ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Modify GPO Filters to Apply to a Different Zone or Version of Windows
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 You must reconfigure your copied GPO so that it contains the correct security group and WMI filters for its new role. If you are creating the GPO for the isolated domain, use the [Block members of a group from applying a GPO](#to-block-members-of-a-group-from-applying-a-gpo) procedure to prevent members of the boundary and encryption zones from incorrectly applying the GPOs for the main isolated domain.
 

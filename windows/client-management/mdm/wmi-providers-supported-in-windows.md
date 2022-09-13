@@ -1,17 +1,16 @@
 ---
 title: WMI providers supported in Windows 10
 description: Manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service with Windows Management Infrastructure (WMI).
-MS-HAID:
-- 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
-- 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
-ms.assetid: 7D533044-AAD7-4B8F-B71B-9D52C15A168A
+MS-HAID: 
+  - 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
+  - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -19,9 +18,8 @@ ms.date: 06/26/2017
 
 Windows Management Infrastructure (WMI) providers (and the classes they support) are used to manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service. The following subsections show the list WMI MDM classes that are supported in Windows 10.
 
-> **Note**  Applications installed using WMI classes are not removed when the MDM account is removed from device.
-
- 
+> [!NOTE]
+> Applications installed using WMI classes are not removed when the MDM account is removed from device. 
 
 The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here is an example query.
 
@@ -51,178 +49,61 @@ Result
 
 ## MDM Bridge WMI classes
 
-
-For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.microsoft.com/library/windows/hardware/dn905224).
+For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
 
 ## MDM WMI classes
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Class</th>
-<th>Test completed in Windows 10 for desktop</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610368" data-raw-source="[&lt;strong&gt;MDM_AppInstallJob&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610368)"><strong>MDM_AppInstallJob</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610369" data-raw-source="[&lt;strong&gt;MDM_Application&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610369)"><strong>MDM_Application</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610370" data-raw-source="[&lt;strong&gt;MDM_ApplicationFramework&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610370)"><strong>MDM_ApplicationFramework</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610382" data-raw-source="[&lt;strong&gt;MDM_ApplicationSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610382)"><strong>MDM_ApplicationSetting</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610383" data-raw-source="[&lt;strong&gt;MDM_BrowserSecurityZones&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610383)"><strong>MDM_BrowserSecurityZones</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610384" data-raw-source="[&lt;strong&gt;MDM_BrowserSettings&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610384)"><strong>MDM_BrowserSettings</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610385" data-raw-source="[&lt;strong&gt;MDM_Certificate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610385)"><strong>MDM_Certificate</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610386" data-raw-source="[&lt;strong&gt;MDM_CertificateEnrollment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610386)"><strong>MDM_CertificateEnrollment</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610387" data-raw-source="[&lt;strong&gt;MDM_Client&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610387)"><strong>MDM_Client</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610388" data-raw-source="[&lt;strong&gt;MDM_ConfigSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610388)"><strong>MDM_ConfigSetting</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610389" data-raw-source="[&lt;strong&gt;MDM_DeviceRegistrationInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610389)"><strong>MDM_DeviceRegistrationInfo</strong></a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610390" data-raw-source="[&lt;strong&gt;MDM_EASPolicy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610390)"><strong>MDM_EASPolicy</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610391" data-raw-source="[&lt;strong&gt;MDM_MgMtAuthority&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610391)"><strong>MDM_MgMtAuthority</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><strong>MDM_MsiApplication</strong></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><strong>MDM_MsiInstallJob</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610371" data-raw-source="[&lt;strong&gt;MDM_RemoteApplication&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610371)"><strong>MDM_RemoteApplication</strong></a></td>
-<td><p>Test not started.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610372" data-raw-source="[&lt;strong&gt;MDM_RemoteAppUseCookie&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610372)"><strong>MDM_RemoteAppUseCookie</strong></a></td>
-<td><p>Test not started.</p></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610392" data-raw-source="[&lt;strong&gt;MDM_Restrictions&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610392)"><strong>MDM_Restrictions</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610393" data-raw-source="[&lt;strong&gt;MDM_RestrictionsUser&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610393)"><strong>MDM_RestrictionsUser</strong></a></td>
-<td><p>Test not started.</p></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610394" data-raw-source="[&lt;strong&gt;MDM_SecurityStatus&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610394)"><strong>MDM_SecurityStatus</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610395" data-raw-source="[&lt;strong&gt;MDM_SideLoader&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610395)"><strong>MDM_SideLoader</strong></a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn920104" data-raw-source="[&lt;strong&gt;MDM_SecurityStatusUser&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn920104)"><strong>MDM_SecurityStatusUser</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn920105" data-raw-source="[&lt;strong&gt;MDM_Updates&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn920105)"><strong>MDM_Updates</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610396" data-raw-source="[&lt;strong&gt;MDM_VpnApplicationTrigger&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610396)"><strong>MDM_VpnApplicationTrigger</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><strong>MDM_VpnConnection</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610373" data-raw-source="[&lt;strong&gt;MDM_WebApplication&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610373)"><strong>MDM_WebApplication</strong></a></td>
-<td><p>Currently testing.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610397" data-raw-source="[&lt;strong&gt;MDM_WirelessProfile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610397)"><strong>MDM_WirelessProfile</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610398" data-raw-source="[&lt;strong&gt;MDM_WirelesssProfileXML&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610398)"><strong>MDM_WirelesssProfileXML</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610399" data-raw-source="[&lt;strong&gt;MDM_WNSChannel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610399)"><strong>MDM_WNSChannel</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn610400" data-raw-source="[&lt;strong&gt;MDM_WNSConfiguration&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn610400)"><strong>MDM_WNSConfiguration</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/jj676842" data-raw-source="[&lt;strong&gt;MSFT_NetFirewallProfile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/jj676842)"><strong>MSFT_NetFirewallProfile</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/jj206647" data-raw-source="[&lt;strong&gt;MSFT_VpnConnection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/jj206647)"><strong>MSFT_VpnConnection</strong></a></td>
-<td><img src="images/checkmark.png" alt="cross mark" /></td>
-</tr>
-<tr class="even">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/cc534596" data-raw-source="[&lt;strong&gt;SoftwareLicensingProduct&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/cc534596)"><strong>SoftwareLicensingProduct</strong></a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/cc534597" data-raw-source="[&lt;strong&gt;SoftwareLicensingService&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/cc534597)"><strong>SoftwareLicensingService</strong></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Class|Test completed in Windows 10 for desktop|
+|--- |--- |
+|[**MDM_AppInstallJob**](/previous-versions/windows/desktop/mdmappprov/mdm-appinstalljob)|Currently testing.|
+|[**MDM_Application**](/previous-versions/windows/desktop/mdmappprov/mdm-application)|Currently testing.|
+|[**MDM_ApplicationFramework**](/previous-versions/windows/desktop/mdmappprov/mdm-applicationframework)|Currently testing.|
+|[**MDM_ApplicationSetting**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-applicationsetting)|Currently testing.|
+|[**MDM_BrowserSecurityZones**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-browsersecurityzones)|Yes|
+|[**MDM_BrowserSettings**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-browsersettings)|Yes|
+|[**MDM_Certificate**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-certificate)|Yes|
+|[**MDM_CertificateEnrollment**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-certificateenrollment)|Yes|
+|[**MDM_Client**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-client)|Currently testing.|
+|[**MDM_ConfigSetting**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-configsetting)|Yes|
+|[**MDM_DeviceRegistrationInfo**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-deviceregistrationinfo)||
+|[**MDM_EASPolicy**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-easpolicy)|Yes|
+|[**MDM_MgMtAuthority**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-mgmtauthority)|Yes|
+|**MDM_MsiApplication**||
+|**MDM_MsiInstallJob**||
+|[**MDM_RemoteApplication**](/previous-versions/windows/desktop/mdmappprov/mdm-remoteapplication)|Test not started.|
+|[**MDM_RemoteAppUseCookie**](/previous-versions/windows/desktop/mdmappprov/mdm-remoteappusercookie)|Test not started.|
+|[**MDM_Restrictions**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-restrictions)|Yes|
+|[**MDM_RestrictionsUser**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-restrictionsuser)|Test not started.|
+|[**MDM_SecurityStatus**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-securitystatus)|Yes|
+|[**MDM_SideLoader**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-sideloader)||
+|[**MDM_SecurityStatusUser**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-securitystatususer)|Currently testing.|
+|[**MDM_Updates**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-updates)|Yes|
+|[**MDM_VpnApplicationTrigger**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-vpnapplicationtrigger)|Yes|
+|**MDM_VpnConnection**||
+|[**MDM_WebApplication**](/previous-versions/windows/desktop/mdmappprov/mdm-webapplication)|Currently testing.|
+|[**MDM_WirelessProfile**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wirelessprofile)|Yes|
+|[**MDM_WirelesssProfileXML**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wirelessprofilexml)|Yes|
+|[**MDM_WNSChannel**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wnschannel)|Yes|
+|[**MDM_WNSConfiguration**](/previous-versions/windows/desktop/mdmsettingsprov/mdm-wnsconfiguration)|Yes|
+|[**MSFT_NetFirewallProfile**](/previous-versions/windows/desktop/wfascimprov/msft-netfirewallprofile)|Yes|
+|[**MSFT_VpnConnection**](/previous-versions/windows/desktop/vpnclientpsprov/msft-vpnconnection)|Yes|
+|[**SoftwareLicensingProduct**](/previous-versions/windows/desktop/sppwmi/softwarelicensingproduct)||
+|[**SoftwareLicensingService**](/previous-versions/windows/desktop/sppwmi/softwarelicensingservice)||
 
 ### Parental control WMI classes
 
 | Class                                                                    | Test completed in Windows 10 for desktop |
 |--------------------------------------------------------------------------|------------------------------------------|
-| [**wpcappoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
-| [**wpcgameoverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
-| [**wpcgamessettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)     | ![cross mark](images/checkmark.png)      |
-| [**wpcrating**](https://msdn.microsoft.com/library/windows/hardware/ms711334)            | ![cross mark](images/checkmark.png)      |
-| [**wpcRatingsDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ms711334) |                                          |
-| [**wpcratingssystem**](https://msdn.microsoft.com/library/windows/hardware/ms711334)     | ![cross mark](images/checkmark.png)      |
-| [**wpcsystemsettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)    | ![cross mark](images/checkmark.png)      |
-| [**wpcurloverride**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
-| [**wpcusersettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)      | ![cross mark](images/checkmark.png)      |
-| [**wpcwebsettings**](https://msdn.microsoft.com/library/windows/hardware/ms711334)       | ![cross mark](images/checkmark.png)      |
+| [**wpcappoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | Yes     |
+| [**wpcgameoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | Yes     |
+| [**wpcgamessettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)     | Yes     |
+| [**wpcrating**](/windows/win32/parcon/parental-controls-wmi-provider-schema)            | Yes     |
+| [**wpcRatingsDescriptor**](/windows/win32/parcon/parental-controls-wmi-provider-schema) |                                          |
+| [**wpcratingssystem**](/windows/win32/parcon/parental-controls-wmi-provider-schema)     | Yes     |
+| [**wpcsystemsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)    | Yes     |
+| [**wpcurloverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | Yes     |
+| [**wpcusersettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | Yes     |
+| [**wpcwebsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | Yes     |
 
  
 
@@ -230,73 +111,73 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 
 | Class                                                                    | Test completed in Windows 10 for desktop |
 |--------------------------------------------------------------------------|------------------------------------------|
-[**Win32\_1394Controller**](https://msdn.microsoft.com/library/windows/hardware/aa394059) |
-[**Win32\_BaseBoard**](https://msdn.microsoft.com/library/windows/hardware/aa394072)      |
-[**Win32\_Battery**](https://msdn.microsoft.com/library/windows/hardware/aa394074)        | ![cross mark](images/checkmark.png)
-[**Win32\_BIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394077)           | ![cross mark](images/checkmark.png)
-[**Win32\_CDROMDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394081)     |
-[**Win32\_ComputerSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394102) | ![cross mark](images/checkmark.png)
-[**Win32\_ComputerSystemProduct**](https://msdn.microsoft.com/library/windows/hardware//aa394105) | ![cross mark](images/checkmark.png)
-[**Win32\_CurrentTime**](https://msdn.microsoft.com/library/windows/hardware/aa394114)    | ![cross mark](images/checkmark.png)
-[**Win32\_Desktop**](https://msdn.microsoft.com/library/windows/hardware/aa394121)        |
-[**Win32\_DesktopMonitor**](https://msdn.microsoft.com/library/windows/hardware/aa394122) |![cross mark](images/checkmark.png)
-[**Win32\_DiskDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394132)      | ![cross mark](images/checkmark.png)
-[**Win32\_DiskPartition**](https://msdn.microsoft.com/library/windows/hardware/aa394135)  |
-[**Win32\_DisplayConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394137) | ![cross mark](images/checkmark.png)
-[**Win32\_DMAChannel**](https://msdn.microsoft.com/library/windows/hardware/aa394139)     | 
-[**Win32\_DriverVXD**](https://msdn.microsoft.com/library/windows/hardware/aa394141)      |
-[**Win32\_EncryptableVolume**](https://msdn.microsoft.com/library/windows/hardware/aa376483) |
-[**Win32\_Environment**](https://msdn.microsoft.com/library/windows/hardware/aa394143)    |
-[**Win32\_IDEController**](https://msdn.microsoft.com/library/windows/hardware/aa394155)  |
-[**Win32\_InfraredDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394158) |
-[**Win32\_IRQResource**](https://msdn.microsoft.com/library/windows/hardware/aa394164)    |
-[**Win32\_Keyboard**](https://msdn.microsoft.com/library/windows/hardware/aa394166)       |
-[**Win32\_LoadOrderGroup**](https://msdn.microsoft.com/library/windows/hardware/aa394168) |
-[**Win32\_LocalTime**](https://msdn.microsoft.com/library/windows/hardware/aa394171)      | ![cross mark](images/checkmark.png)
-[**Win32\_LoggedOnUser**](https://msdn.microsoft.com/library/windows/hardware/aa394172)   |
-[**Win32\_LogicalDisk**](https://msdn.microsoft.com/library/windows/hardware/aa394173)    | ![cross mark](images/checkmark.png)
-[**Win32\_MotherboardDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394204) |
-[**Win32\_NetworkAdapter**](https://msdn.microsoft.com/library/windows/hardware/aa394216) | ![cross mark](images/checkmark.png)
-[**Win32\_NetworkAdapterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394217) |
-[**Win32\_NetworkClient**](https://msdn.microsoft.com/library/windows/hardware/aa394219)  |
-[**Win32\_NetworkLoginProfile**](https://msdn.microsoft.com/library/windows/hardware/aa394221) |
-[**Win32\_NetworkProtocol**](https://msdn.microsoft.com/library/windows/hardware/aa394223) |
-[**Win32\_NTEventlogFile**](https://msdn.microsoft.com/library/windows/hardware/aa394225)  |
-[**Win32\_OperatingSystem**](https://msdn.microsoft.com/library/windows/hardware/aa394239) | ![cross mark](images/checkmark.png)
-[**Win32\_OSRecoveryConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394242) |
-[**Win32\_PageFileSetting**](https://msdn.microsoft.com/library/windows/hardware/aa394245) |
-[**Win32\_ParallelPort**](https://msdn.microsoft.com/library/windows/hardware/aa394247) |
-[**Win32\_PCMCIAController**](https://msdn.microsoft.com/library/windows/hardware/aa394251) |
-[**Win32\_PhysicalMedia**](https://msdn.microsoft.com/library/windows/hardware/aa394346)                                   |  
-[**Win32\_PhysicalMemory**](https://msdn.microsoft.com/library/windows/hardware/aa394347)   | ![cross mark](images/checkmark.png)
-[**Win32\_PnPDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394352)        |  
-[**Win32\_PnPEntity**](https://msdn.microsoft.com/library/windows/hardware/aa394353)        |  
-[**Win32\_PointingDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394356)   |
-[**Win32\_PortableBattery**](https://msdn.microsoft.com/library/windows/hardware/aa394357)  |
-[**Win32\_PortResource**](https://msdn.microsoft.com/library/windows/hardware/aa394359)     |
-[**Win32\_POTSModem**](https://msdn.microsoft.com/library/windows/hardware/aa394360)        |
-[**Win32\_Printer**](https://msdn.microsoft.com/library/windows/hardware/aa394363)          |
-[**Win32\_PrinterConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394364) |
-[**Win32\_Processor**](https://msdn.microsoft.com/library/windows/hardware/aa394373)        | ![cross mark](images/checkmark.png)
-[**Win32\_QuickFixEngineering**](https://msdn.microsoft.com/library/windows/hardware/aa394391) | ![cross mark](images/checkmark.png)
-[**Win32\_Registry**](https://msdn.microsoft.com/library/windows/hardware/aa394394)         |
-[**Win32\_SCSIController**](https://msdn.microsoft.com/library/windows/hardware/aa394400)   |
-[**Win32\_SerialPort**](https://msdn.microsoft.com/library/windows/hardware/aa394413)       |
-[**Win32\_SerialPortConfiguration**](https://msdn.microsoft.com/library/windows/hardware/aa394414) |
-[**Win32\_ServerFeature**](https://msdn.microsoft.com/library/windows/hardware/cc280268)    |
-[**Win32\_Service**](https://msdn.microsoft.com/library/windows/hardware/aa394418)          | ![cross mark](images/checkmark.png)
-[**Win32\_Share**](https://msdn.microsoft.com/library/windows/hardware/aa394435)            | ![cross mark](images/checkmark.png)
-[**Win32\_SoundDevice**](https://msdn.microsoft.com/library/windows/hardware/aa394463)      |
-[**Win32\_SystemAccount**](https://msdn.microsoft.com/library/windows/hardware/aa394466)    |
-[**Win32\_SystemBIOS**](https://msdn.microsoft.com/library/windows/hardware/aa394467)       | ![cross mark](images/checkmark.png)
-[**Win32\_SystemDriver**](https://msdn.microsoft.com/library/windows/hardware/aa394472)     |
-[**Win32\_SystemEnclosure**](https://msdn.microsoft.com/library/windows/hardware/aa394474)  | ![cross mark](images/checkmark.png)
-[**Win32\_TapeDrive**](https://msdn.microsoft.com/library/windows/hardware/aa394491)        |
-[**Win32\_TimeZone**](https://msdn.microsoft.com/library/windows/hardware/aa394498)         | ![cross mark](images/checkmark.png)
-[**Win32\_UninterruptiblePowerSupply**](https://msdn.microsoft.com/library/windows/hardware/aa394503) |
-[**Win32\_USBController**](https://msdn.microsoft.com/library/windows/hardware/aa394504)    |
-[**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
-[**Win32\_VideoController**](https://docs.microsoft.com/windows/win32/cimwin32prov/win32-videocontroller) |
+[**Win32\_1394Controller**](/windows/win32/cimwin32prov/win32-1394controller) |
+[**Win32\_BaseBoard**](/windows/win32/cimwin32prov/win32-baseboard)      |
+[**Win32\_Battery**](/windows/win32/cimwin32prov/win32-battery)        | Yes
+[**Win32\_BIOS**](/windows/win32/cimwin32prov/win32-bios)           | Yes
+[**Win32\_CDROMDrive**](/windows/win32/cimwin32prov/win32-cdromdrive)     |
+[**Win32\_ComputerSystem**](/windows/win32/cimwin32prov/win32-computersystem) | Yes
+[**Win32\_ComputerSystemProduct**](/windows/win32/cimwin32prov/win32-computersystemproduct) | Yes
+[**Win32\_CurrentTime**](/previous-versions/windows/desktop/wmitimepprov/win32-currenttime)    | Yes
+[**Win32\_Desktop**](/windows/win32/cimwin32prov/win32-desktop)        |
+[**Win32\_DesktopMonitor**](/windows/win32/cimwin32prov/win32-desktopmonitor) |Yes
+[**Win32\_DiskDrive**](/windows/win32/cimwin32prov/win32-diskdrive)      | Yes
+[**Win32\_DiskPartition**](/windows/win32/cimwin32prov/win32-diskpartition)  |
+[**Win32\_DisplayConfiguration**](/previous-versions//aa394137(v=vs.85)) | Yes
+[**Win32\_DMAChannel**](/windows/win32/cimwin32prov/win32-dmachannel)     | 
+[**Win32\_DriverVXD**](/previous-versions//aa394141(v=vs.85))      |
+[**Win32\_EncryptableVolume**](/windows/win32/secprov/win32-encryptablevolume) |
+[**Win32\_Environment**](/windows/win32/cimwin32prov/win32-environment)    |
+[**Win32\_IDEController**](/windows/win32/cimwin32prov/win32-idecontroller)  |
+[**Win32\_InfraredDevice**](/windows/win32/cimwin32prov/win32-infrareddevice) |
+[**Win32\_IRQResource**](/windows/win32/cimwin32prov/win32-irqresource)    |
+[**Win32\_Keyboard**](/windows/win32/cimwin32prov/win32-keyboard)       |
+[**Win32\_LoadOrderGroup**](/windows/win32/cimwin32prov/win32-loadordergroup) |
+[**Win32\_LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime)      | Yes
+[**Win32\_LoggedOnUser**](/windows/win32/cimwin32prov/win32-loggedonuser)   |
+[**Win32\_LogicalDisk**](/windows/win32/cimwin32prov/win32-logicaldisk)    | Yes
+[**Win32\_MotherboardDevice**](/windows/win32/cimwin32prov/win32-motherboarddevice) |
+[**Win32\_NetworkAdapter**](/windows/win32/cimwin32prov/win32-networkadapter) | Yes
+[**Win32\_NetworkAdapterConfiguration**](/windows/win32/cimwin32prov/win32-networkadapterconfiguration) |
+[**Win32\_NetworkClient**](/windows/win32/cimwin32prov/win32-networkclient)  |
+[**Win32\_NetworkLoginProfile**](/windows/win32/cimwin32prov/win32-networkloginprofile) |
+[**Win32\_NetworkProtocol**](/windows/win32/cimwin32prov/win32-networkprotocol) |
+[**Win32\_NTEventlogFile**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))  |
+[**Win32\_OperatingSystem**](/windows/win32/cimwin32prov/win32-operatingsystem) | Yes
+[**Win32\_OSRecoveryConfiguration**](/windows/win32/cimwin32prov/win32-osrecoveryconfiguration) |
+[**Win32\_PageFileSetting**](/windows/win32/cimwin32prov/win32-pagefilesetting) |
+[**Win32\_ParallelPort**](/windows/win32/cimwin32prov/win32-parallelport) |
+[**Win32\_PCMCIAController**](/windows/win32/cimwin32prov/win32-pcmciacontroller) |
+[**Win32\_PhysicalMedia**](/previous-versions/windows/desktop/cimwin32a/win32-physicalmedia)                                   |  
+[**Win32\_PhysicalMemory**](/windows/win32/cimwin32prov/win32-physicalmemory)   | Yes
+[**Win32\_PnPDevice**](/windows/win32/cimwin32prov/win32-pnpdevice)        |  
+[**Win32\_PnPEntity**](/windows/win32/cimwin32prov/win32-pnpentity)        |  
+[**Win32\_PointingDevice**](/windows/win32/cimwin32prov/win32-pointingdevice)   |
+[**Win32\_PortableBattery**](/windows/win32/cimwin32prov/win32-portablebattery)  |
+[**Win32\_PortResource**](/windows/win32/cimwin32prov/win32-portresource)     |
+[**Win32\_POTSModem**](/windows/win32/cimwin32prov/win32-potsmodem)        |
+[**Win32\_Printer**](/windows/win32/cimwin32prov/win32-printer)          |
+[**Win32\_PrinterConfiguration**](/windows/win32/cimwin32prov/win32-printerconfiguration) |
+[**Win32\_Processor**](/windows/win32/cimwin32prov/win32-processor)        | Yes
+[**Win32\_QuickFixEngineering**](/windows/win32/cimwin32prov/win32-quickfixengineering) | Yes
+[**Win32\_Registry**](/windows/win32/cimwin32prov/win32-registry)         |
+[**Win32\_SCSIController**](/windows/win32/cimwin32prov/win32-scsicontroller)   |
+[**Win32\_SerialPort**](/windows/win32/cimwin32prov/win32-serialport)       |
+[**Win32\_SerialPortConfiguration**](/windows/win32/cimwin32prov/win32-serialportconfiguration) |
+[**Win32\_ServerFeature**](/windows/win32/wmisdk/win32-serverfeature)    |
+[**Win32\_Service**](/windows/win32/cimwin32prov/win32-service)          | Yes
+[**Win32\_Share**](/windows/win32/cimwin32prov/win32-share)            | Yes
+[**Win32\_SoundDevice**](/windows/win32/cimwin32prov/win32-sounddevice)      |
+[**Win32\_SystemAccount**](/windows/win32/cimwin32prov/win32-systemaccount)    |
+[**Win32\_SystemBIOS**](/windows/win32/cimwin32prov/win32-systembios)       | Yes
+[**Win32\_SystemDriver**](/windows/win32/cimwin32prov/win32-systemdriver)     |
+[**Win32\_SystemEnclosure**](/windows/win32/cimwin32prov/win32-systemenclosure)  | Yes
+[**Win32\_TapeDrive**](/windows/win32/cimwin32prov/win32-tapedrive)        |
+[**Win32\_TimeZone**](/windows/win32/cimwin32prov/win32-timezone)         | Yes
+[**Win32\_UninterruptiblePowerSupply**](/previous-versions//aa394503(v=vs.85)) |
+[**Win32\_USBController**](/windows/win32/cimwin32prov/win32-usbcontroller)    |
+[**Win32\_UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime)          | Yes
+[**Win32\_VideoController**](/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
  
 
@@ -305,4 +186,4 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
 ## Related Links
-[CIM Video Controller](https://docs.microsoft.com/windows/win32/cimwin32prov/cim-videocontroller)
+[CIM Video Controller](/windows/win32/cimwin32prov/cim-videocontroller)

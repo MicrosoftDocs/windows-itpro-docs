@@ -3,14 +3,10 @@ manager: dansimp
 ms.author: dansimp
 title: Override Process Mitigation Options (Windows 10)
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
-keywords: Process Mitigation Options, Mitigation Options, Group Policy Mitigation Options
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.pagetype: security
-ms.sitesec: library
 author: dulcemontemayor
 ms.localizationpriority: medium
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 
@@ -26,14 +22,14 @@ Windows 10 includes Group Policy-configurable “Process Mitigation Options” t
 > [!IMPORTANT]
 > We recommend trying these mitigations in a test lab before deploying to your organization, to determine if they interfere with your organization’s required apps.
 
-The Group Policy settings in this topic are related to three types of process mitigations. In Windows 10, all three types are on by default for 64-bit applications, but by using the Group Policy settings described in this topic, you can configure additional protections. The types of process mitigations are:
+The Group Policy settings in this topic are related to three types of process mitigations. In Windows 10, all three types are on by default for 64-bit applications, but by using the Group Policy settings described in this topic, you can configure more protections. The types of process mitigations are:
 
 - **Data Execution Prevention (DEP)** is a system-level memory protection feature that enables the operating system to mark one or more pages of memory as non-executable, preventing code from being run from that region of memory, to help prevent exploitation of buffer overruns. DEP helps prevent code from being run from data pages such as the default heap, stacks, and memory pools. For more information, see [Data Execution Prevention](overview-of-threat-mitigations-in-windows-10.md#data-execution-prevention).
 
-- **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they have been compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
+- **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they've been compiled with the latest improvements. For more information, see [Structured Exception Handling Overwrite Protection](overview-of-threat-mitigations-in-windows-10.md#structured-exception-handling-overwrite-protection).
 
 - **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time to mitigate against malware that’s designed to attack specific memory locations, where specific DLLs are expected to be loaded. For more information, see [Address Space Layout Randomization](overview-of-threat-mitigations-in-windows-10.md#address-space-layout-randomization). 
-    To find additional ASLR protections in the table below, look for `IMAGES` or `ASLR`.
+    To find more ASLR protections in the table below, look for `IMAGES` or `ASLR`.
 
 The following procedure describes how to use Group Policy to override individual **Process Mitigation Options** settings.
 
@@ -41,7 +37,7 @@ The following procedure describes how to use Group Policy to override individual
 
 1. Open your Group Policy editor and go to the **Administrative Templates\System\Mitigation Options\Process Mitigation Options** setting.
 
-    ![Group Policy editor: Process Mitigation Options with setting enabled and Show button active](images/gp-process-mitigation-options.png)
+    ![Group Policy editor: Process Mitigation Options with setting enabled and Show button active.](images/gp-process-mitigation-options.png)
 
 2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you’ll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
 
@@ -52,12 +48,12 @@ The following procedure describes how to use Group Policy to override individual
     
        **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
 
-     ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
+     ![Group Policy editor: Process Mitigation Options with Show Contents box and example text.](images/gp-process-mitigation-options-show.png)
 
 ## Setting the bit field
 Here’s a visual representation of the bit flag locations for the various Process Mitigation Options settings:
 
-![Visual representation of the bit flag locations for the Process Mitigation Options settings](images/gp-process-mitigation-options-bit-flag-image.png)
+![Visual representation of the bit flag locations for the Process Mitigation Options settings.](images/gp-process-mitigation-options-bit-flag-image.png)
 
 Where the bit flags are read from right to left and are defined as:
 

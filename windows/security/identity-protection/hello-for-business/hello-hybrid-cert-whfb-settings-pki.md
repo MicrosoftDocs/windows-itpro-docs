@@ -1,29 +1,23 @@
 ---
-title: Configuring Hybrid Windows Hello for Business - Public Key Infrastructure (PKI)
+title: Configuring Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure (PKI)
 description: Discussing the configuration of the Public Key Infrastructure (PKI) in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/14/2021
-ms.reviewer: 
+ms.date: 4/30/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 
-# Configure Hybrid Windows Hello for Business: Public Key Infrastructure
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Hybrid Deployment
-- Certificate Trust
+# Configure Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure
 
 Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly-issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows between them and the client computer.
 
@@ -37,7 +31,7 @@ This section has you configure certificate templates on your Windows Server 2012
 
 Clients need to trust domain controllers and the best way to do this is to ensure each domain controller has a Kerberos Authentication certificate.  Installing a certificate on the domain controller enables the Key Distribution Center (KDC) to prove its identity to other members of the domain.  This provides clients a root of trust external to the domain - namely the enterprise certificate authority.
 
-Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD joined devices. The steps below to *Create a Domain Controller Authentication (Kerberos) Certificate Template* and *Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template* to include the **KDC Authentication** OID in the domain controller certificate may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD joined devices to your environment in the future.
+Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices. The steps below to *Create a Domain Controller Authentication (Kerberos) Certificate Template* and *Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template* to include the **KDC Authentication** OID in the domain controller certificate may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD-joined devices to your environment in the future.
 
 By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template. However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs. To ensure domain controllers request the proper certificate with the best available cryptography, use the **Kerberos Authentication** certificate template as a baseline to create an updated domain controller certificate template.
 
@@ -164,7 +158,7 @@ Sign-in to a certificate authority or management workstation with *Domain Admin*
 
 ### Creating Windows Hello for Business authentication certificate template
 
-During Windows Hello for Business provisioning, a Windows 10 client requests an authentication certificate from the Active Directory Federation Service, which requests an authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template. You set the name of the certificate template when configuring it.
+During Windows Hello for Business provisioning, a Windows client requests an authentication certificate from the Active Directory Federation Service, which requests an authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template. You set the name of the certificate template when configuring it.
 
 Sign-in to a certificate authority or management workstation with _Domain Admin equivalent_ credentials.
 
@@ -193,7 +187,7 @@ Sign-in to a certificate authority or management workstation with _Domain Admin 
 
 10. On the **Request Handling** tab, select the **Renew with same key** check box.
 
-11. On the **Security** tab, click **Add**. Type **Window Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
+11. On the **Security** tab, click **Add**. Type **Windows Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
 
 12. Click the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section, select the **Allow** check box for the **Read**, **Enroll**, and **AutoEnroll** permissions. Excluding the **Windows Hello for Business Users** group, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
 

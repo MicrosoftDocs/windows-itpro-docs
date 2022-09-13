@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Enforce user logon restrictions
@@ -37,9 +37,9 @@ The possible values for this Group Policy setting are:
 
 ### Best practices
 
--   If this policy setting is disabled, users might be granted session tickets for services that they do not have the right to use.
+-   If this policy setting is disabled, users might be granted session tickets for services that they don't have the right to use.
 
-    We recommend to set **Enforce user logon restrictions** to Enabled.
+    We recommend setting **Enforce user logon restrictions** to Enabled.
 
 ### Location
 
@@ -62,7 +62,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 ### Group Policy
 
@@ -91,7 +91,7 @@ Enable the **Enforce user logon restrictions** setting.
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

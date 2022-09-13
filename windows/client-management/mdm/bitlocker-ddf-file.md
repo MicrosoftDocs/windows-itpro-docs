@@ -1,15 +1,15 @@
 ---
 title: BitLocker DDF file
 description: Learn about the OMA DM device description framework (DDF) for the BitLocker configuration service provider.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/30/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # BitLocker DDF file
@@ -646,7 +646,7 @@ The XML below is the current version for this CSP.
 
                          1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
                          0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, 
-                             the value 0 only takes affect on Azure Active Directory joined devices. 
+                             the value 0 only takes affect on Azure Active Directory-joined devices. 
                              Windows will attempt to silently enable BitLocker for value 0.
 
                          If you want to disable this policy use the following SyncML:
@@ -744,15 +744,15 @@ The XML below is the current version for this CSP.
               <Get />
               <Replace />
             </AccessType>
-            <Description> Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.
-                          When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when 
+            <Description> Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Azure Active Directory and Hybrid domain joined devices.
+                          When not configured, Rotation is turned on by default for Azure AD only and off on Hybrid. The Policy will be effective only when 
                           Active Directory back up for recovery password is configured to required.
                           For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
                           For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
                        
                           Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
-                                            1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value
-                                            2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices
+                                            1 - Numeric Recovery Passwords Rotation upon use ON for Azure Active Directory-joined devices. Default value
+                                            2 - Numeric Recovery Passwords Rotation upon use ON for both Azure AD and Hybrid devices
                          
                          If you want to disable this policy use the following SyncML:
  
@@ -783,7 +783,7 @@ The XML below is the current version for this CSP.
             </DFType>
             <MSFT:SupportedValues low="0" high="2">
               <MSFT:SupportedValue value="0" description="Numeric Recovery Passwords Key rotation OFF"/>
-              <MSFT:SupportedValue value="1" description="Default Value. Numeric Recovery Passwords Key Rotation ON for AAD joined devices."/>
+              <MSFT:SupportedValue value="1" description="Default Value. Numeric Recovery Passwords Key Rotation ON for AAD-joined devices."/>
               <MSFT:SupportedValue value="2" description="Numeric Recovery Passwords Key Rotation ON for both AAD and Hybrid devices"/>
             </MSFT:SupportedValues>
           </DFProperties>
@@ -937,3 +937,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[BitLocker configuration service provider](bitlocker-csp.md)

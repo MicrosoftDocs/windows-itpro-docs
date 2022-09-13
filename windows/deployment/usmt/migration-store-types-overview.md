@@ -1,15 +1,11 @@
 ---
 title: Migration Store Types Overview (Windows 10)
 description: Learn about the migration store types and how to determine which migration store type best suits your needs.
-ms.assetid: 3b6ce746-76c6-43ff-8cd5-02ed0ae0cf70
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -49,7 +45,7 @@ You use a command-line option,**/hardlink** , to create a hard-link migration st
 
 The following flowchart illustrates the procedural differences between a local migration store and a remote migration store. In this example, a hard-link migration store is used for the local store.
 
-![migration store comparison](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
+![migration store comparison.](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
 
 ## <a href="" id="bkmk-localvremote"></a>Local Store vs. Remote Store
 
