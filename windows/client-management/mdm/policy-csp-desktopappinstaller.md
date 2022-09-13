@@ -333,7 +333,7 @@ ADMX Info:
 
 This policy controls the Microsoft Store source included with the Windows Package Manager.
 If you don't configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
-- If you enable this setting, the Microsoft Store source for the Windows Package Manager will be , and can't be removed.
+- If you enable this setting, the Microsoft Store source for the Windows Package Manager will be available, and can't be removed.
 - If you disable this setting the Microsoft Store source for the Windows Package Manager won't be available.
 
 <!--/Description-->
