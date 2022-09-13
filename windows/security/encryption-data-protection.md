@@ -32,8 +32,8 @@ Encrypted hard drives provide:
 
 - Better performance: Encryption hardware, integrated into the drive controller, allows the drive to operate at full data rate with no performance degradation.
 - Strong security based in hardware: Encryption is always "on" and the keys for encryption never leave the hard drive. User authentication is performed by the drive before it will unlock, independently of the operating system.
-- Ease of use: Encryption is transparent to the user, and the user does not need to enable it. Encrypted hard drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
-- Lower cost of ownership: There is no need for new infrastructure to manage encryption keys, since BitLocker uses your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
+- Ease of use: Encryption is transparent to the user, and the user doesn't need to enable it. Encrypted hard drives are easily erased using on-board encryption key; there's no need to re-encrypt data on the drive.
+- Lower cost of ownership: There's no need for new infrastructure to manage encryption keys, since BitLocker uses your existing infrastructure to store recovery information. Your device operates more efficiently because processor cycles don't need to be used for the encryption process.
 
 Encrypted hard drives are a new class of hard drives that are self-encrypted at a hardware level and allow for full disk hardware encryption. 
 
@@ -46,10 +46,12 @@ BitLocker provides encryption for the operating system, fixed data, and removabl
 Windows consistently improves data protection by improving existing options and providing new strategies.
 
 ## Personal Data Encryption
-<!-- Max 5963468-->
+<!-- Max 5963468 OS 32516487 -->
 (*Applies to: Windows 11, version 22H2 and later*)
 
-Personal Data Encryption (PDE) is a new feature in Windows 11 22H2.
+Personal data encryption (PDE) is a security feature introduced in Windows 11, version 22H2 that provides encryption of individual user files in the known user folders of **Documents**, **Pictures**, and **Desktop**. PDE occurs in addition to other encryption methods such as BitLocker.
+
+PDE utilizes Windows Hello for Business (WHfB) to link data encryption keys with user credentials. Unlike BitLocker which unlocks data encryption keys at boot, PDE does not unlock data encryption keys until a user logs via WHfB.
 
 
 
@@ -58,4 +60,4 @@ Personal Data Encryption (PDE) is a new feature in Windows 11 22H2.
 
 - [Encrypted Hard Drive](information-protection/encrypted-hard-drive.md)
 - [BitLocker](information-protection/bitlocker/bitlocker-overview.md)
-- [Personal Data Encryption]
+- [Personal Data Encryption](information-protection/personal-data-encryption.md)
