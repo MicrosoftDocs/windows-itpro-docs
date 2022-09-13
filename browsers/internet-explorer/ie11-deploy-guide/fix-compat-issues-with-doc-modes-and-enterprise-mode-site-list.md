@@ -26,7 +26,7 @@ The Internet Explorer 11 Enterprise Mode site list lets you specify document mo
 Enterprises can have critical apps that are coded explicitly for a specific browser version and that might not be in their direct control, making it very difficult and expensive to update to modern standards or newer browser versions. Because you can decide which URLs should open using specific document modes, this update helps ensure better compatibility, faster upgrades, and reduced testing and fixing costs.
 
 ## How does this fix work?
-You can continue to use your legacy and orphaned web apps, by specifying a document mode in the centralized Enterprise Mode site list. Then, when IE11 goes to a site on your list, the browser loads the page in the specified document mode just as it would if it were specified through an X-UA-Compatible meta tag on the site. For more information about document modes and X-UA-compatible headers, see [Defining document compatibility](https://go.microsoft.com/fwlink/p/?LinkId=518412).
+You can continue to use your legacy and orphaned web apps, by specifying a document mode in the centralized Enterprise Mode site list. Then, when IE11 goes to a site on your list, the browser loads the page in the specified document mode just as it would if it were specified through an X-UA-Compatible meta tag on the site. For more information about document modes and X-UA-compatible headers, see [Defining document compatibility](/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)).
 
 **Important**<br>
 Enterprise Mode takes precedence over document modes, so sites that are already included in the Enterprise Mode site list won’t be affected by this update and will continue to load in Enterprise Mode, as usual.
@@ -45,10 +45,10 @@ To see if this fix might help you, run through this process one step at a time, 
 
 1.  Go to a site having compatibility problems, press **F12** to open the **F12 Developer Tools**, and go to the **Emulation** tool.
 
-    ![Emulation tool showing document mode selection](images/docmode-f12.png)
+    ![Emulation tool showing document mode selection.](images/docmode-f12.png)
 
 2.  Starting with the **11 (Default)** option, test your broken scenario.<br>
-If that doesn’t work, continue down to the next lowest document mode, stopping as soon as you find a document mode that fixes your problems. For more information about the Emulation tool, see [Emulate browsers, screen sizes, and GPS locations](https://go.microsoft.com/fwlink/p/?LinkId=518417).
+If that doesn’t work, continue down to the next lowest document mode, stopping as soon as you find a document mode that fixes your problems. For more information about the Emulation tool, see [Emulate browsers, screen sizes, and GPS locations](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)).
 
 3.  If none of the document modes fix your issue, change the **Browser Profile** to **Enterprise**, pick the mode you want to test with starting with **8** (IE8 Enterprise Mode), and then test your broken scenario.
 
@@ -62,7 +62,7 @@ There are two versions of the Enterprise Mode site list schema and the Enterpris
 
 1.  Open the Enterprise Mode Site List Manager, and click **Add**.
 
-    ![Enterprise Mode Site List Manager, showing the available modes](images/emie-listmgr.png)
+    ![Enterprise Mode Site List Manager, showing the available modes.](images/emie-listmgr.png)
 
 2.  Add the **URL** and pick the document mode from the **Launch in** box. This should be the same document mode you found fixed your problems while testing the site.<br>
 Similar to Enterprise Mode, you can specify a document mode for a particular web path—such as contoso.com/ERP—or at a domain level. In the above, the entire contoso.com domain loads in Enterprise Mode, while microsoft.com is forced to load into IE8 Document Mode and bing.com loads in IE11.
@@ -74,7 +74,7 @@ For more information about Enterprise Mode, see [What is Enterprise Mode?](what-
 ### Review your Enterprise Mode site list
 Take a look at your Enterprise Mode site list and make sure everything is the way you want it. The next step will be to turn the list on and start to use it in your company. The Enterprise Mode Site List Manager will look something like:
 
-![Enterprise Mode Site List Manager, showing the different modes](images/emie-sitelistmgr.png)
+![Enterprise Mode Site List Manager, showing the different modes.](images/emie-sitelistmgr.png)
 
 And the underlying XML code will look something like:
 
@@ -108,6 +108,3 @@ To help you move forward, you can now use the Enterprise Mode site list to speci
  
 
  
-
-
-

@@ -1,28 +1,22 @@
 ---
-title: Configure Hybrid Windows Hello for Business - Active Directory (AD)
+title: Configure Hybrid Azure AD joined Windows Hello for Business - Active Directory (AD)
 description: Discussing the configuration of Active Directory (AD) in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB, ad
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
-ms.reviewer: 
+ms.date: 4/30/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
-# Configure Windows Hello for Business: Active Directory
-
-**Applies to**
--   Windows 10, version 1703 or later
--   Hybrid deployment
--   Certificate trust
-
+# Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 

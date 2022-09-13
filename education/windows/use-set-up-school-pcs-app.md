@@ -2,18 +2,20 @@
 title: Use Set up School PCs app
 description: Learn how to use the Set up School PCs app and apply the provisioning package.
 keywords: shared cart, shared PC, school, Set up School PCs, overview, how to use
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 10/23/2018
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Use the Set up School PCs app  
 
 IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up Windows 10 PCs for students. The app configures PCs with the apps and features students need, and it removes the ones they don't need. During setup, if licensed in your tenant, the app enrolls each student PC into a mobile device management (MDM) provider, such as Intune for Education. You can then manage all the settings the app configures through the MDM.   
@@ -103,7 +105,7 @@ We strongly recommend that you avoid changing preset policies. Changes can slow 
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your PC and click **Get started**.   
     
-   ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)  
+   ![Launch the Set up School PCs app.](images/suspc_getstarted_050817.png)  
 
 ### Package name  
 Type a unique name to help distinguish your school's provisioning packages. The name appears:  

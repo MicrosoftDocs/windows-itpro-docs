@@ -1,13 +1,13 @@
 ---
 title: Policies in Policy CSP supported by Microsoft Surface Hub
-description: Policies in Policy CSP supported by Microsoft Surface Hub
+description: Learn about the policies in Policy CSP supported by Microsoft Surface Hub.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 07/22/2020
 ---
@@ -15,9 +15,9 @@ ms.date: 07/22/2020
 # Policies in Policy CSP supported by Microsoft Surface Hub
 
 
-- [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-- [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](./policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](./policy-csp-applicationmanagement.md#applicationmanagement-allowdeveloperunlock)
+- [Accounts/AllowMicrosoftAccountConnection](./policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
@@ -29,7 +29,6 @@ ms.date: 07/22/2020
 - [Defender/AllowFullScanOnMappedNetworkDrives](policy-csp-defender.md#defender-allowfullscanonmappednetworkdrives)
 - [Defender/AllowFullScanRemovableDriveScanning](policy-csp-defender.md#defender-allowfullscanremovabledrivescanning)
 - [Defender/AllowIOAVProtection](policy-csp-defender.md#defender-allowioavprotection)
-- [Defender/AllowIntrusionPreventionSystem](policy-csp-defender.md#defender-allowintrusionpreventionsystem)
 - [Defender/AllowOnAccessProtection](policy-csp-defender.md#defender-allowonaccessprotection)
 - [Defender/AllowRealtimeMonitoring](policy-csp-defender.md#defender-allowrealtimemonitoring)
 - [Defender/AllowScanningNetworkFiles](policy-csp-defender.md#defender-allowscanningnetworkfiles)
@@ -65,7 +64,10 @@ ms.date: 07/22/2020
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
-- [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups.md)
+- [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership)
+- [System/AllowLocation](policy-csp-system.md#system-allowlocation)
+- [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
+- [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)
@@ -77,11 +79,12 @@ ms.date: 07/22/2020
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208)
 - [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](policy-csp-textinput.md#textinput-excludejapaneseimeexceptjis0208andeudc)
 - [TextInput/ExcludeJapaneseIMEExceptShiftJIS](policy-csp-textinput.md#textinput-excludejapaneseimeexceptshiftjis)
+- [TimeLanguageSettings/ConfigureTimeZone](policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)
 - [Wifi/AllowInternetSharing](policy-csp-wifi.md#wifi-allowinternetsharing)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi)
-- [WiFi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
-- [WiFi/WLANScanMode](policy-csp-wifi.md#wifi-wlanscanmode)
+- [Wifi/AllowWiFiHotSpotReporting](policy-csp-wifi.md#wifi-allowwifihotspotreporting)
+- [Wifi/WLANScanMode](policy-csp-wifi.md#wifi-wlanscanmode)
 - [Wifi/AllowWiFiDirect](policy-csp-wifi.md#wifi-allowwifidirect)
 - [WirelessDisplay/AllowMdnsAdvertisement](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsadvertisement)
 - [WirelessDisplay/AllowMdnsDiscovery](policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery)

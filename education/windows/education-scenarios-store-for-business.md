@@ -2,24 +2,29 @@
 title: Education scenarios Microsoft Store for Education
 description: Learn how IT admins and teachers can use Microsoft Store for Education to acquire and manage apps in schools.
 keywords: school, Microsoft Store for Education, Microsoft education store
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
 searchScope: 
   - Store
-author: dansimp
-ms.author: dansimp
-ms.date: 03/30/2018
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Working with Microsoft Store for Education
 
 Learn about education scenarios for Microsoft Store for Education. IT admins and teachers can use Microsoft Store to find, acquire, distribute, and manage apps.
 
-Many of the [settings in Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/settings-reference-microsoft-store-for-business) also apply in Microsoft Store for Education. Several of the items in this topic are unique to Microsoft Store for Education.  
+Many of the [settings in Microsoft Store for Business](/microsoft-store/settings-reference-microsoft-store-for-business) also apply in Microsoft Store for Education. Several of the items in this topic are unique to Microsoft Store for Education.  
 
 ## Basic Purchaser role
 Applies to: IT admins
@@ -39,7 +44,7 @@ Admins can control whether or not teachers are automatically assigned the **Basi
 2. Click **Manage**, and then click **Settings**. 
 3. On **Shop**, select or clear **Make everyone a Basic Purchaser**.
 
-![manage settings to control Basic Purchaser role assignment](images/sfe-make-everyone-bp.png)
+![manage settings to control Basic Purchaser role assignment.](images/sfe-make-everyone-bp.png)
 
 > [!NOTE]
 > **Make everyone a Basic Purchaser** is on by default. 
@@ -52,7 +57,7 @@ When **Make everyone a Basic Purchaser** is turned off, admins can manually assi
 2. Click **Manage**, and then choose **Permissions**.
 3. On **Roles**, click **Assign roles**, type and select a name, choose the role you want to assign, and then click **Save**.
 
-    ![Permission page for Microsoft Store for Business](images/sfe-roles.png)
+    ![Permission page for Microsoft Store for Business.](images/sfe-roles.png)
 
 **Blocked Basic Purchasers**
 
@@ -91,22 +96,22 @@ Applies to: IT admins and teachers
 Find apps for your school using Microsoft Store for Business. Admins in an education setting can use the same processes as Admins in an enterprise setting to find and acquire apps.
  
 **To acquire apps**
-- For info on how to acquire apps, see [Acquire apps in Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/acquire-apps-windows-store-for-business#acquire-apps) 
+- For info on how to acquire apps, see [Acquire apps in Microsoft Store for Business](/microsoft-store/acquire-apps-windows-store-for-business#acquire-apps) 
 
 **To add a payment method - debit or credit card**
 
 If the app you purchase has a price, you’ll need to provide a payment method. 
 - During your purchase, click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
  
-For more information on payment options, see [payment options](https://docs.microsoft.com/microsoft-store/acquire-apps-windows-store-for-business#payment-options). 
+For more information on payment options, see [payment options](/microsoft-store/acquire-apps-windows-store-for-business#payment-options). 
 
-For more information on tax rates, see [tax information](https://docs.microsoft.com/microsoft-store/update-windows-store-for-business-account-settings#organization-tax-information). 
+For more information on tax rates, see [tax information](/microsoft-store/update-windows-store-for-business-account-settings#organization-tax-information). 
 
 ### Get started with Minecraft: Education Edition
 Teachers and IT administrators can now get trials or subscriptions to Minecraft: Education Edition and add it to Microsoft Store for Business for distribution.
-- [Get started with Minecraft: Education Edition](https://docs.microsoft.com/education/windows/get-minecraft-for-education)
-- [For IT admins – Minecraft: Education Edition](https://docs.microsoft.com/education/windows/school-get-minecraft)
-- [For teachers – Minecraft: Education Edition](https://docs.microsoft.com/education/windows/teacher-get-minecraft)
+- [Get started with Minecraft: Education Edition](./get-minecraft-for-education.md)
+- [For IT admins – Minecraft: Education Edition](./school-get-minecraft.md)
+- [For teachers – Minecraft: Education Edition](./teacher-get-minecraft.md)
 
 ## Manage apps and software
 Applies to: IT admins and teachers
@@ -130,17 +135,9 @@ Teachers can:
  
 ## Distribute apps
 
-Manage and distribute apps to students and others in your organization. Different options are available for admins and teachers. 
-
-Applies to: IT admins
-
 **To manage and distribute apps**
-- For info on how to distribute **Minecraft: Education Edition**, see [For IT admins – Minecraft: Education Edition](https://docs.microsoft.com/education/windows/school-get-minecraft#distribute-minecraft)
-- For info on how to manage and distribute other apps, see [App inventory management - Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/app-inventory-management-windows-store-for-business)
-
-Applies to: Teachers
-
-For info on how to distribute **Minecraft: Education Edition**, see [For teachers – Minecraft: Education Edition](https://docs.microsoft.com/education/windows/teacher-get-minecraft#distribute-minecraft). 
+- For info on how to distribute **Minecraft: Education Edition**, see [For IT admins – Minecraft: Education Edition](./school-get-minecraft.md#distribute-minecraft)
+- For info on how to manage and distribute other apps, see [App inventory management - Microsoft Store for Business](/microsoft-store/app-inventory-management-windows-store-for-business)
 
 **To assign an app to a student**
 
@@ -151,7 +148,7 @@ For info on how to distribute **Minecraft: Education Edition**, see [For teacher
 
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
-### Purchase additional licenses
+### Purchase more licenses
 Applies to: IT admins and teachers
 
 You can manage current app licenses, or purchase more licenses for apps in **Apps & software**. 
@@ -164,14 +161,14 @@ You'll have a summary of current license availability.
 
 **Minecraft: Education Edition subscriptions**
 
-Similarly, you can purchase additional subscriptions of **Minecraft: Education Edition** through Microsoft Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing additional app licenses. 
+Similarly, you can purchase more subscriptions of **Minecraft: Education Edition** through Microsoft Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing more app licenses. 
 
 ## Manage order history
 Applies to: IT admins and teachers
 
-You can manage your orders through Microsoft Store for Business. For info on order history and how to refund an order, see [Manage app orders in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/manage-orders-windows-store-for-business). 
+You can manage your orders through Microsoft Store for Business. For info on order history and how to refund an order, see [Manage app orders in Microsoft Store for Business](/microsoft-store/manage-orders-microsoft-store-for-business). 
 
 It can take up to 24 hours after a purchase, before a receipt is available on your **Order history page**. 
 
 > [!NOTE]
-> For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call. 
+> For **Minecraft: Education Edition**, you can request a refund through Microsoft Store for Business for two months from the purchase date. After two months, refunds require a support call.

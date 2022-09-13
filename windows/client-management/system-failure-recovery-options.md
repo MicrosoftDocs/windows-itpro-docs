@@ -2,12 +2,11 @@
 title: Configure system failure and recovery options in Windows
 description: Learn how to configure the actions that Windows takes when a system error occurs and what the recovery options are.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
-ms.date: 8/22/2019
+ms.date: 07/12/2022
 ms.reviewer: dcscontentpm
 manager: dansimp
 ---
@@ -18,7 +17,7 @@ This article describes how to configure the actions that Windows takes when a sy
 
 - Write an event to the System log.
 
-- Alert administrators (if you have set up administrative alerts).
+- Alert administrators (if you've set up administrative alerts).
 
 - Put system memory into a file that advanced users can use for debugging.
 
@@ -92,9 +91,9 @@ Select one of the following type of information that you want Windows to record 
 
 #### (none) 
 
-The option does not record any information in a memory dump file.
+The option doesn't record any information in a memory dump file.
 
-To specify that you do not want Windows to record information in a memory dump file, run the following command or modify the registry value:
+To specify that you don't want Windows to record information in a memory dump file, run the following command or modify the registry value:
 
 - ```cmd
   wmic recoveros set DebugInfoType = 0
@@ -123,7 +122,7 @@ To specify that you want to use a folder as your Small Dump Directory, run the f
 
 #### Kernel Memory Dump
 
-The option records only kernel memory. This option stores more information than a small memory dump file, but it takes less time to complete than a complete memory dump file. The file is stored in %SystemRoot%\Memory.dmp by default, and any previous kernel or complete memory dump files are overwritten if the **Overwrite any existing file** check box is selected. If you set this option, you must have a sufficiently large paging file on the boot volume. The required size depends on the amount of RAM in your computer However, the maximum amount of space that must be available for a kernel memory dump on a 32-bit system is 2 GB plus 16 MB. On a 64-bit system, the maximum amount of space that must be available for a kernel memory dump is the size of the RAM plus 128 MB. The following table provides guidelines for the size of the paging file:
+The option records only kernel memory. This option stores more information than a small memory dump file, but it takes less time to complete than a complete memory dump file. The file is stored in %SystemRoot%\Memory.dmp by default, and any previous kernel or complete memory dump files are overwritten if the **Overwrite any existing file** check box is selected. If you set this option, you must have a sufficiently large paging file on the boot volume. The required size depends on the amount of RAM in your computer. However, the maximum amount of space that must be available for a kernel memory dump on a 32-bit system is 2 GB plus 16 MB. On a 64-bit system, the maximum amount of space that must be available for a kernel memory dump is the size of the RAM plus 128 MB. The following table provides guidelines for the size of the paging file:
 
 |RAM size	|Paging file should be no smaller than|
 |-------|-----------------|
@@ -146,7 +145,7 @@ To specify that you want to use a file as your memory dump file, run the followi
 
 - Set the **DumpFile** Expandable String Value to \<filepath\>.
 
-To specify that you do not want to overwrite any previous kernel or complete memory dump files, run the following command or modify the registry value:
+To specify that you don't want to overwrite any previous kernel or complete memory dump files, run the following command or modify the registry value:
 
 - ```cmd
   wmic recoveros set OverwriteExistingDebugFile = 0
@@ -156,9 +155,9 @@ To specify that you do not want to overwrite any previous kernel or complete mem
 
 #### Complete Memory Dump
 
-The option records the contents of system memory when the computer stops unexpectedly. This option is not available on computers that have 2 or more GB of RAM. If you select this option, you must have a paging file on the boot volume that is sufficient to hold all the physical RAM plus 1 MB. The file is stored as specified in %SystemRoot%\Memory.dmp by default.
+The option records the contents of system memory when the computer stops unexpectedly. This option isn't available on computers that have 2 or more GB of RAM. If you select this option, you must have a paging file on the boot volume that is sufficient to hold all the physical RAM plus 1 MB. The file is stored as specified in %SystemRoot%\Memory.dmp by default.
 
-The extra megabyte is required for a complete memory dump file because Windows writes a header in addition to dumping the memory contents. The header contains a crash dump signature and specifies the values of some kernel variables. The header information does not require a full megabyte of space, but Windows sizes your paging file in increments of megabytes.
+The extra megabyte is required for a complete memory dump file because Windows writes a header in addition to dumping the memory contents. The header contains a crash dump signature and specifies the values of some kernel variables. The header information doesn't require a full megabyte of space, but Windows sizes your paging file in increments of megabytes.
 
 To specify that you want to use a complete memory dump file, run the following command or modify the registry value:
 
@@ -176,7 +175,64 @@ To specify that you want to use a file as your memory dump file, run the followi
 
 - Set the DumpFile Expandable String Value to \<filepath\>.
 
-To specify that you do not want to overwrite any previous kernel or complete memory dump files, run the following command or modify the registry value:
+To specify that you don't want to overwrite any previous kernel or complete memory dump files, run the following command or modify the registry value:
+
+- ```cmd
+  wmic recoveros set OverwriteExistingDebugFile = 0
+  ```
+
+- Set the **Overwrite** DWORD value to **0**.
+
+#### Automatic Memory Dump
+
+This is the default option. An Automatic Memory Dump contains the same information as a Kernel Memory Dump. The difference between the two is in the way that Windows sets the size of the system paging file. If the system paging file size is set to **System managed size**, and the kernel-mode crash dump is set to **Automatic Memory Dump**, then Windows can set the size of the paging file to less than the size of RAM. In this case, Windows sets the size of the paging file large enough to ensure that a kernel memory dump can be captured most of the time.
+
+If the computer crashes and the paging file is not large enough to capture a kernel memory dump, Windows increases the size of the paging file to at least the size of RAM. For more information, see [Automatic Memory Dump](/windows-hardware/drivers/debugger/automatic-memory-dump).
+
+To specify that you want to use an automatic memory dump file, run the following command or modify the registry value:
+
+- ```cmd
+  wmic recoveros set DebugInfoType = 7
+  ```
+
+- Set the **CrashDumpEnabled** DWORD value to **7**.
+
+To specify that you want to use a file as your memory dump file, run the following command or modify the registry value:
+
+- ```cmd
+  wmic recoveros set DebugFilePath = <filepath>
+  ```
+
+- Set the **DumpFile** Expandable String Value to \<filepath\>.
+
+To specify that you don't want to overwrite any previous kernel or complete memory dump files, run the following command or modify the registry value:
+
+- ```cmd
+  wmic recoveros set OverwriteExistingDebugFile = 0
+  ```
+
+- Set the **Overwrite** DWORD value to **0**.
+
+#### Active Memory Dump
+
+An Active Memory Dump is similar to a Complete Memory Dump, but it filters out pages that are not likely to be relevant to troubleshooting problems on the host machine. Because of this filtering, it is typically significantly smaller than a Complete Memory Dump.
+
+This dump file includes any memory allocated to user-mode applications. It also includes memory allocated to the Windows kernel and hardware abstraction layer, as well as memory allocated to kernel-mode drivers and other kernel-mode programs. The dump includes active pages mapped into the kernel or user space that are useful for debugging, as well as selected Pagefile-backed Transition, Standby, and Modified pages such as the memory allocated with VirtualAlloc or page-file-backed sections. Active dumps do not include pages on the free and zeroed lists, the file cache, guest VM pages, and various other types of memory that are not likely to be useful during debugging. For more information, see [Active Memory Dump](/windows-hardware/drivers/debugger/active-memory-dump).
+
+To specify that you want to use an active memory dump file, modify the registry value:
+
+- Set the **CrashDumpEnabled** DWORD value to **1**.
+- Set the **FilterPages** DWORD value to **1**.
+
+To specify that you want to use a file as your memory dump file, run the following command or modify the registry value:
+
+- ```cmd
+  wmic recoveros set DebugFilePath = <filepath>
+  ```
+
+- Set the DumpFile Expandable String Value to \<filepath\>.
+
+To specify that you don't want to overwrite any previous kernel or complete memory dump files, run the following command or modify the registry value:
 
 - ```cmd
   wmic recoveros set OverwriteExistingDebugFile = 0
@@ -192,14 +248,15 @@ To view system failure and recovery settings for your local computer, type **wmi
 >[!Note]
 >To successfully use these Wmic.exe command line examples, you must be logged on by using a user account that has administrative rights on the computer. If you are not logged on by using a user account that has administrative rights on the computer, use the **/user:user_name** and **/password:password** switches.
 
+
 ### Tips
 
-- To take advantage of the dump file feature, your paging file must be on the boot volume. If you have moved the paging file to another volume, you must move it back to the boot volume before you use this feature.
+- To take advantage of the dump file feature, your paging file must be on the boot volume. If you've moved the paging file to another volume, you must move it back to the boot volume before you use this feature.
 
 - If you set the Kernel Memory Dump or the Complete Memory Dump option, and you select the **Overwrite any existing file** check box, Windows always writes to the same file name. To save individual dump files, click to clear the **Overwrite any existing file** check box, and then change the file name after each Stop error.
 
-- You can save some memory if you click to clear the **Write an event to the system log** and **Send an administrative alert** check boxes. The memory that you save depends on the computer, but these features typically require about 60 to 70 KB.
+- You can save some memory if you click to clear the **Write an event to the system log** and **Send an administrative alert** check boxes. The memory that you save depends on the computer, but these features typically require about 60-70 KB.
 
 ## References
 
-[Varieties of Kernel-Mode Dump Files](https://docs.microsoft.com/windows-hardware/drivers/debugger/varieties-of-kernel-mode-dump-files)
+[Varieties of Kernel-Mode Dump Files](/windows-hardware/drivers/debugger/varieties-of-kernel-mode-dump-files)

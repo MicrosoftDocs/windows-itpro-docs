@@ -1,24 +1,18 @@
 ---
 title: Configure MDT deployment share rules (Windows 10)
 description: Learn how to configure the MDT rules engine to reach out to other resources for additional information instead of storing settings directly in the rules engine.
-ms.assetid: b5ce2360-33cc-4b14-b291-16f75797391b
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: rules, configuration, automate, deploy
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
 # Configure MDT deployment share rules
 
-In this topic, you will learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
+In this topic, you'll learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
 
 ## <a href="" id="sec01"></a>Assign settings
 
@@ -35,7 +29,7 @@ Before adding the more advanced components like scripts, databases, and web serv
 
 ### Set computer name by MAC Address
 
-If you have a small test environment, or simply want to assign settings to a very limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. If you have many machines, it makes sense to use the database instead.
+If you have a small test environment, or simply want to assign settings to a limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. If you have many machines, it makes sense to use the database instead.
 
 ``` 
 [Settings]
@@ -96,7 +90,7 @@ In the preceding sample, you still configure the rules to set the computer name 
 
 ### Add laptops to a different organizational unit (OU) in Active Directory
 
-In the rules, you find built-in properties that use a Windows Management Instrumentation (WMI) query to determine whether the machine you are deploying is a laptop, desktop, or server. In this sample, we assume you want to add laptops to different OUs in Active Directory. Note that ByLaptopType is not a reserved word; rather, it is the name of the section to read.
+In the rules, you find built-in properties that use a Windows Management Instrumentation (WMI) query to determine whether the machine you're deploying is a laptop, desktop, or server. In this sample, we assume you want to add laptops to different OUs in Active Directory. Note that ByLaptopType isn't a reserved word; rather, it's the name of the section to read.
 
 ``` 
 [Settings]

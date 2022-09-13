@@ -2,15 +2,12 @@
 title: Windows Update - Additional resources
 description: In this article, learn details about to troubleshooting WSUS and resetting Windows Update components manually.
 ms.prod: w10
-ms.mktglfcycl:
-audience: itpro
 ms.localizationpriority: medium
-ms.audience: itpro
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.topic: article
-ms.author: jaimeo
-author: jaimeo
+ms.author: aaroncz
+author: aczechowski
+ms.collection: highpri
 ---
 
 # Windows Update - additional resources
@@ -18,6 +15,7 @@ author: jaimeo
 **Applies to**:
 
 - Windows 10
+- Windows 11
 - Windows Server 2016
 - Windows Server 2019
 
@@ -29,19 +27,28 @@ The following resources provide additional information about using Windows Updat
 
 ## WSUS Troubleshooting
 
-[Troubleshooting issues with WSUS client agents](https://support.microsoft.com/help/10132/)
+[Troubleshooting issues with WSUS client agents](/troubleshoot/mem/configmgr/troubleshoot-issues-with-wsus-client-agents)
 
-[How to troubleshoot WSUS](https://support.microsoft.com/help/4025764/)
+[How to troubleshoot WSUS](/troubleshoot/mem/configmgr/troubleshoot-wsus-connection-failures)
 
-[Error 80244007 when WSUS client scans for updates](https://support.microsoft.com/help/4096317/)
+[Error 80244007 when WSUS client scans for updates](/troubleshoot/mem/configmgr/error-80244007-when-wsus-client-scans-updates)
 
-[Updates may not be installed with Fast Startup in Windows 10](https://support.microsoft.com/help/4011287/)
+[Updates may not be installed with Fast Startup in Windows 10](/troubleshoot/windows-client/deployment/updates-not-install-with-fast-startup)
 
 ## How do I reset Windows Update components?
 
-[Reset Windows Update Client settings script](https://gallery.technet.microsoft.com/scriptcenter/Reset-WindowsUpdateps1-e0c5eb78) will completely reset the Windows Update client settings. It has been tested on Windows 7, 8, 10, and Windows Server 2012 R2. It will configure the services and registry keys related to Windows Update for default settings. It will also clean up files related to Windows Update, in addition to BITS related data.
+- Try using the [Windows Update Troubleshooter](https://support.microsoft.com/windows/windows-update-troubleshooter-for-windows-10-19bc41ca-ad72-ae67-af3c-89ce169755dd), which will analyze the situation and reset any components that need it.
+- Try the steps in [Troubleshoot problems updating Windows 10](https://support.microsoft.com/windows/troubleshoot-problems-updating-windows-10-188c2b0f-10a7-d72f-65b8-32d177eb136c).
+- Try the steps in [Fix Windows Update](https://support.microsoft.com/sbs/windows/fix-windows-update-errors-18b693b5-7818-5825-8a7e-2a4a37d6d787) errors.
 
-[Reset Windows Update Agent script](https://gallery.technet.microsoft.com/scriptcenter/Reset-Windows-Update-Agent-d824badc) allows you to reset the Windows Update Agent, resolving issues with Windows Update.
+If all else fails, try resetting the Windows Update Agent by running these commands from an elevated command prompt:
+
+   ``` console
+   net stop wuauserv
+   rd /s /q %systemroot%\SoftwareDistribution
+   net start wuauserv
+   ```
+
 
 ## Reset Windows Update components manually
 
@@ -72,10 +79,14 @@ The following resources provide additional information about using Windows Updat
    Ren %Systemroot%\SoftwareDistribution\Download Download.bak
    Ren %Systemroot%\System32\catroot2 catroot2.bak
    ```
+
+      > [!IMPORTANT]
+      > The **reset** step below using sc.exe will **overwrite** your existing security ACLs on the BITS and Windows Update service and set them to default.  Skip this step unless the other steps to reset Windows Update components have not resolved the issue.
+
    2. Reset the **BITS service** and the **Windows Update service** to the default security descriptor. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
    ``` console
-   sc.exe sdset bits D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
-   sc.exe sdset wuauserv D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
+   sc.exe sdset bits D:(A;CI;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)
+   sc.exe sdset wuauserv D:(A;;CCLCSWRPLORC;;;AU)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)
    ```
 5. Type the following command at a command prompt, and then press ENTER:
    ``` console

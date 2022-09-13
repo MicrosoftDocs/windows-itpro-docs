@@ -1,16 +1,11 @@
 ---
 title: Using Outlook on the web with WIP (Windows 10)
 description: Options for using Outlook on the web with Windows Information Protection (WIP).
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and OWA configuration, OWA, Outlook Web access
-ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
@@ -21,7 +16,6 @@ ms.reviewer:
 **Applies to:**
 
 - Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
@@ -35,8 +29,3 @@ Because Outlook on the web can be used both personally and as part of your organ
 
 >[!NOTE]
 >These limitations don’t apply to Outlook 2016, the Mail for Windows 10 app, or the Calendar for Windows 10 app. These apps will work properly, marking an employee’s mailbox as corporate data, regardless of how you’ve configured outlook.office.com in your network settings. 
-
-
-
-
-

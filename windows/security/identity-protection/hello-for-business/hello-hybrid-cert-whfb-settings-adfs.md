@@ -1,28 +1,22 @@
 ---
-title:  Configuring Hybrid Windows Hello for Business - Active Directory Federation Services (ADFS)
+title:  Configuring Hybrid Azure AD joined Windows Hello for Business - Active Directory Federation Services (ADFS)
 description: Discussing the configuration of Active Directory Federation Services (ADFS) in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB, adfs
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/14/2021
-ms.reviewer: 
+ms.date: 4/30/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
-# Configure Windows Hello for Business: Active Directory Federation Services
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Hybrid deployment
-- Certificate trust
+# Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory Federation Services
 
 ## Federation Services
 
@@ -31,11 +25,11 @@ The Windows Server 2016 Active Directory Federation Server Certificate Registrat
 The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
 
 > [!NOTE]
-> In order for AD FS to verify user certificate requests for Windows Hello for Business, it needs to be able to access the https://enterpriseregistration.windows.net endpoint.
+> In order for AD FS to verify user certificate requests for Windows Hello for Business, it needs to be able to access the ```https://enterpriseregistration.windows.net``` endpoint.
 
 ### Configure the Registration Authority
 
-Sign-in the AD FS server with *Domain Admin* equivalent credentials. 
+Sign-in the AD FS server with *Domain Admin* equivalent credentials.
 
 1. Open a **Windows PowerShell** prompt.
 2. Enter the following command:
