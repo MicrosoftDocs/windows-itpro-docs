@@ -42,7 +42,7 @@ To start using App-V to deliver virtual applications to users, you’ll need to 
 
 For more information about these components, see [High Level Architecture for App-V](appv-high-level-architecture.md).
 
-If you're new to App-V, it's a good idea to read the documentation thoroughly. Before deploying App-V in a production environment, you can ensure installation goes smoothly by validating your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. To get started, see the [Microsoft Training Overview](https://www.microsoft.com/learning/default.aspx).
+If you're new to App-V, it's a good idea to read the documentation thoroughly. Before deploying App-V in a production environment, you can ensure installation goes smoothly by validating your deployment plan in a test network environment. You might also consider taking a class about relevant technologies. To get started, see the [Microsoft training Overview](https://www.microsoft.com/learning/default.aspx).
 
 ## Getting started with App-V
 
