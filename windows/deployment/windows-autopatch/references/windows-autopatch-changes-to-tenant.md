@@ -132,4 +132,4 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 | Script | Description |
 | ----- | ----- |
-| Modern Workplace - Autopatch Client Setup | Installs necessary client components for the Windows Autopatch service |
+| Modern Workplace - Autopatch Client Setup v1.1 | Installs necessary client components for the Windows Autopatch service |

@@ -15,6 +15,8 @@ ms.reviewer:
 manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Set up Take a Test on multiple PCs
@@ -271,7 +273,7 @@ This assessment URL uses our lockdown API:
 
 ## Related topics
 
-[Take tests in Windows 10](take-tests-in-windows-10.md)
+[Take tests in Windows](take-tests-in-windows-10.md)
 
 [Set up Take a Test on a single PC](take-a-test-single-pc.md)
 
