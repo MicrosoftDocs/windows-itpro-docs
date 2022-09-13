@@ -1,30 +1,27 @@
 ---
 title: Update Active Directory schema for cert-trust deployment (Windows Hello for Business)
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the certificate trust model.
-keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployments</b>
+- ✅ <b>Certificate trust</b>
 ---
-# Validate Active Directory prerequisites
+# Validate Active Directory prerequisites for cert-trust deployment
 
-**Applies to**
--   Windows 10, version 1703 or later
--   On-premises deployment
--   Certificate trust
+The key registration process for the on-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema. The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest. The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. 
 
-
-The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema.  The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. If you already have a Windows Server 2016 or later domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
+> [!NOTE]
+> If you already have a Windows Server 2016 or later domain controller in your forest, you can skip the "Updating the Schema" and "Create the KeyCredential Admins Security Global Group" steps that follow.
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 or later DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
@@ -34,7 +31,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ```Netdom query fsmo | findstr -i “schema”```
 
-![Netdom example output](images/hello-cmd-netdom.png)
+![Netdom example output.](images/hello-cmd-netdom.png)
 
 The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 

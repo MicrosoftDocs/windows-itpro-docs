@@ -1,26 +1,24 @@
 ---
-title: Windows Defender Credential Guard protection limits & mitigations (Windows 10)
-description: Scenarios not protected by Windows Defender Credential Guard in Windows 10, and additional mitigations you can use.
-ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+title: Windows Defender Credential Guard protection limits & mitigations (Windows)
+description: Scenarios not protected by Windows Defender Credential Guard in Windows, and additional mitigations you can use.
+ms.prod: m365-security
 ms.localizationpriority: medium
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: erikdau
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
-# Windows Defender Credential Guard protection limits
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
+# Windows Defender Credential Guard protection limits and mitigations
 
 Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
 in the Deep Dive into Windows Defender Credential Guard video series.
@@ -43,7 +41,7 @@ do not qualify as credentials because they cannot be presented to another comput
 
 ## Additional mitigations
 
-Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Windows Defender Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
+Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
 
 ### Restricting domain users to specific domain-joined devices
 
@@ -105,7 +103,7 @@ CertReq -EnrollCredGuardCert MachineAuthentication
  
 ##### How a certificate issuance policy can be used for access control
 
-Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/library/dd378897(v=ws.10).aspx) on TechNet.
+Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd378897(v=ws.10)) on TechNet.
 
 **To see the issuance policies available**
 
@@ -125,13 +123,13 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
-#### Restricting user sign on
+#### Restricting user sign-on
 
 So we now have completed the following:
 
 -   Created a special certificate issuance policy to identify devices that meet the deployment criteria required for the user to be able to sign on
 -   Mapped that policy to a universal security group or claim
--   Provided a way for domain controllers to get the device authorization data during user sign on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
+-   Provided a way for domain controllers to get the device authorization data during user sign-on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
 
 Authentication policies have the following requirements:
 -   User accounts are in a Windows Server 2012 domain functional level or higher domain.
@@ -158,7 +156,7 @@ Authentication policies have the following requirements:
 
 To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
 
-To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/library/dn486813(v=ws.11).aspx).
+To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn486813(v=ws.11)).
 
 
 

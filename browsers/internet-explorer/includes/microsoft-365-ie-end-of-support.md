@@ -1,13 +1,17 @@
 ---
-author: pamgreen-msft
-ms.author: pamgreen
-ms.date:  10/02/2018
+author: dansimp
+ms.author: dansimp
+ms.date:  
 ms.reviewer:
 audience: itpro
-manager: pamgreen
+manager: dansimp
 ms.prod: ie11
 ms.topic: include
 ---
 
 > [!IMPORTANT]
-> Microsoft 365 apps and services will not support Internet Explorer 11 starting August 17, 2021 (Microsoft Teams will not support Internet Explorer 11 earlier, starting November 30, 2020). [Learn more](https://aka.ms/AA97tsw). Please note that Internet Explorer 11 will remain a supported browser. Internet Explorer 11 is a component of the Windows operating system and [follows the Lifecycle Policy](https://docs.microsoft.com/lifecycle/faq/internet-explorer-microsoft-edge) for the product on which it is installed. 
+> The Internet Explorer 11 desktop application is [retired and out of support](https://aka.ms/IEJune15Blog) as of June 15, 2022 for certain versions of Windows 10.  
+>
+> You can still access older, legacy sites that require Internet Explorer with Internet Explorer mode in Microsoft Edge. [Learn how](https://aka.ms/IEmodewebsite). 
+> 
+> The Internet Explorer 11 desktop application will progressively redirect to the faster, more secure Microsoft Edge browser, and will ultimately be disabled via Windows Update. [Disable IE today](/deployedge/edge-ie-disable-ie11). 

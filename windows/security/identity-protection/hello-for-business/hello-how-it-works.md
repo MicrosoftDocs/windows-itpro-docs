@@ -1,27 +1,22 @@
 ---
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help your users authenticate to services.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 05/05/2018
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
-# How Windows Hello for Business works
+# How Windows Hello for Business works in Windows Devices
 
-**Applies to**
-
-- Windows 10
-
-Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Azure Active Directory joined, Hybrid Azure Active Directory joined, or Azure Active Directory registered devices. Windows Hello for Business also works for domain joined devices.
+Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Azure Active Directory-joined, Hybrid Azure Active Directory-joined, or Azure AD registered devices. Windows Hello for Business also works for domain joined devices.
 
 Watch this quick video where Pieter Wigleven gives a simple explanation of how Windows Hello for Business works and some of its supporting features.
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]
@@ -34,7 +29,7 @@ Windows Hello for Business is a distributed system that uses several components 
 
 Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device **registers** its identity with the identity provider. For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS). For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
 
-For more information read [how device registration works](hello-how-it-works-device-registration.md).
+For more information, read [how device registration works](/azure/active-directory/devices/device-registration-how-it-works).
 
 ### Provisioning
 
@@ -44,11 +39,11 @@ Watch Matthew Palko and Ravi Vennapusa explain how Windows Hello for Business pr
 
 > [!VIDEO https://www.youtube.com/embed/RImGsIjSJ1s]
 
-For more information read [how provisioning works](hello-how-it-works-provisioning.md).
+For more information, read [how provisioning works](hello-how-it-works-provisioning.md).
 
 ### Authentication
 
-With the device registered and provisioning complete, users can sign-in to Windows 10 using biometrics or a PIN. PIN is the most common gesture and is available on all computers unless restricted by policy requiring a TPM. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. Neither the PIN nor the private portion of the credential are ever sent to the identity provider, and the PIN is not stored on the device. It is user provided entropy when performing operations that use the private portion of the credential.
+With the device registered and provisioning complete, users can sign-in to Windows using biometrics or a PIN. PIN is the most common gesture and is available on all computers unless restricted by policy requiring a TPM. Regardless of the gesture used, authentication occurs using the private portion of the Windows Hello for Business credential. Neither the PIN nor the private portion of the credential are ever sent to the identity provider, and the PIN is not stored on the device. It is user provided entropy when performing operations that use the private portion of the credential.
 
 Watch Matthew Palko and Ravi Vennapusa explain how Windows Hello for Business authentication works.
 

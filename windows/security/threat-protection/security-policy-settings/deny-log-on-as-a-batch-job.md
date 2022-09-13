@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deny log on as a batch job
@@ -27,8 +27,7 @@ This article describes the recommended practices, location, values, policy manag
 
 ## Reference
 
-This policy setting determines which accounts are prevented from logging on by using a batch-queue tool to schedule and start jobs automatically in the future. The ability to log on by using a batch-queue tool is needed for any account that is used to start scheduled jobs by means of the Task 
-Scheduler.
+This policy setting determines which accounts are prevented from logging on by using a batch-queue tool to schedule and start jobs automatically in the future. The ability to sign in by using a batch-queue tool is needed for any account that is used to start scheduled jobs with the Task Scheduler.
 
 Constant: SeDenyBatchLogonRight
 

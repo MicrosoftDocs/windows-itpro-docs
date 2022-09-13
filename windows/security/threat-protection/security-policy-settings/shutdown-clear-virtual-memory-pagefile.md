@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/01/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Shutdown: Clear virtual memory pagefile 
@@ -27,9 +27,9 @@ Describes the best practices, location, values, policy management and security c
 
 ## Reference
 
-This policy setting determines whether the virtual memory paging file is cleared when the device is shut down. Virtual memory support uses a system paging file to swap pages of memory to disk when they are not used. On a running device, this paging file is opened exclusively by the operating system, and it is well protected. However, devices that are configured to allow other operating systems to start should verify that the system paging file is cleared as the device shuts down. This confirmation ensures that sensitive information from process memory that might be placed in the paging file is not available to an unauthorized user who manages to directly access the paging file after shutdown.
+This policy setting determines whether the virtual memory paging file is cleared when the device is shut down. Virtual memory support uses a system paging file to swap pages of memory to disk when they aren't used. On a running device, this paging file is opened exclusively by the operating system, and it's well protected. However, devices that are configured to allow other operating systems to start should verify that the system paging file is cleared as the device shuts down. This confirmation ensures that sensitive information from process memory that might be placed in the paging file isn't available to an unauthorized user who manages to directly access the paging file after shutdown.
 
-Important information that is kept in real memory might be written periodically to the paging file. This helps devices handle multitasking functions. A malicious user who has physical access to a server that has been shut down can view the contents of the paging file. The attacker can move the system volume into a different computer and then analyze the contents of the paging file. This is a time-consuming process, but it can expose data that is cached from RAM to the paging file. A malicious user who has physical access to the server can bypass this countermeasure by simply unplugging the server from its power source.
+Important information that is kept in real memory might be written periodically to the paging file. This periodical write-operation helps devices handle multitasking functions. A malicious user who has physical access to a server that has been shut down can view the contents of the paging file. The attacker can move the system volume into a different computer and then analyze the contents of the paging file. This process is a time-consuming one, but it can expose data that is cached from RAM to the paging file. A malicious user who has physical access to the server can bypass this countermeasure by unplugging the server from its power source.
 
 ### Possible values
 
@@ -42,7 +42,7 @@ Important information that is kept in real memory might be written periodically 
 
 ### Best practices
 
--   Set this policy to **Enabled**. This causes Windows to clear the paging file when the system is shut down. Depending on the size of the paging file, this process might take several minutes before the system completely shuts down. This delay in shutting down the server is especially noticeable on servers with large paging files. For a server with 2 gigabytes (GB) of RAM and a 2-GB paging file, this setting can add more than 30 minutes to the shutdown process. For some organizations, this downtime violates their internal service level agreements. Use caution when implementing this countermeasure in your environment.
+-   Set this policy to **Enabled**. This policy setting causes Windows to clear the paging file when the system is shut down. Depending on the size of the paging file, this process might take several minutes before the system completely shuts down. This delay in shutting down the server is especially noticeable on servers with large paging files. For a server with 2 gigabytes (GB) of RAM and a 2-GB paging file, this setting can add more than 30 minutes to the shutdown process. For some organizations, this downtime violates their internal service level agreements. Use caution when implementing this countermeasure in your environment.
 
 ### Location
 
@@ -67,7 +67,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -85,7 +85,7 @@ Enable the **Shutdown: Clear virtual memory page file** setting. This configurat
 
 ### Potential impact
 
-It takes longer to shut down and restart the device, especially on devices with large paging files. For a device with 2 gigabytes (GB) of RAM and a 2-GB paging file, this policy setting could increase the shutdown process by more than 30 minutes. For some organizations this downtime violates their internal service level agreements. Therefore, use caution before you implement this countermeasure in your environment.
+It takes longer to shut down and restart the device, especially on devices with large paging files. For a device with 2 gigabytes (GB) of RAM and a 2-GB paging file, this policy setting could increase the shutdown process by more than 30 minutes. For some organizations, this downtime violates their internal service level agreements. Therefore, use caution before you implement this countermeasure in your environment.
 
 ## Related topics
 

@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit logon events
 
-**Applies to**
--   Windows 10
 
 Determines whether to audit each instance of a user logging on to or logging off from a device.
 
@@ -47,7 +45,7 @@ You can configure this security setting by opening the appropriate policy under 
 | 4779          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
  
 
-When event 528 is logged, a logon type is also listed in the event log. The following table describes each logon type.
+When event 4624 (Legacy Windows Event ID 528) is logged, a logon type is also listed in the event log. The following table describes each logon type.
 
 | Logon type | Logon title | Description |
 | - | - | - |

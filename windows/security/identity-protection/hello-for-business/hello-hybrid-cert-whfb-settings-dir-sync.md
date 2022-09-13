@@ -1,29 +1,23 @@
 ---
-title: Configure Hybrid Windows Hello for Business Directory Synch
+title: Configure Hybrid Azure AD joined Windows Hello for Business Directory Synch
 description: Discussing Directory Synchronization in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
+ms.prod: m365-security
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 10/23/2017
-ms.reviewer: 
+ms.date: 4/30/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 
-# Configure Hybrid Windows Hello for Business: Directory Synchronization
-
-**Applies to**
--   Windows 10, version 1703 or later
--   Hybrid deployment
--   Key trust
-
+# Configure Hybrid Azure AD joined Windows Hello for Business- Directory Synchronization
 
 ## Directory Synchronization
 

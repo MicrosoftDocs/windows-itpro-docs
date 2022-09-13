@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Network access: Allow anonymous SID/Name translation
@@ -37,7 +37,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 -   Enabled
 
-    An anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects the SID-to-name translation as well as the name-to-SID translation.
+    An anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects the SID-to-name translation and the name-to-SID translation.
 
 -   Disabled
 
@@ -47,7 +47,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 ### Best practices
 
--   Set this policy to Disabled. This is the default value on member computers; therefore, it will have no impact on them. The default value for domain controllers is Enabled.
+-   Set this policy to Disabled, which is the default value on member computers; therefore, it will have no impact on them. The default value for domain controllers is Enabled.
 
 ### Location
 
@@ -79,7 +79,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 

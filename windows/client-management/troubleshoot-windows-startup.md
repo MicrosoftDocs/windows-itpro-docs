@@ -2,7 +2,6 @@
 title: Advanced troubleshooting for Windows start-up issues
 description: Learn advanced options for how to troubleshoot common Windows start-up issues, like system crashes and freezes.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
@@ -13,6 +12,8 @@ manager: dansimp
 ---
 
 # Advanced troubleshooting for Windows start-up issues
+
+<p class="alert is-flex is-primary"><span class="has-padding-left-medium has-padding-top-extra-small"><a class="button is-primary" href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=31806273" target='_blank'><b>Try our Virtual Agent</b></a></span><span class="has-padding-small"> - It can help you quickly identify and fix common Windows boot issues</span>
 
 In these topics, you will learn how to troubleshoot common problems that are related to Windows startup.
 
@@ -46,10 +47,10 @@ To understand the underlying cause of Windows startup problems, it's important t
 
 These articles will walk you through the resources you need to troubleshoot Windows startup issues:
 
-- [Advanced troubleshooting for Windows boot problems](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-boot-problems)
+- [Advanced troubleshooting for Windows boot problems](./advanced-troubleshooting-boot-problems.md)
 
-- [Advanced troubleshooting for Stop error or blue screen error](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
+- [Advanced troubleshooting for Stop error or blue screen error](./troubleshoot-stop-errors.md)
 
-- [Advanced troubleshooting for Windows-based computer freeze issues](https://docs.microsoft.com/windows/client-management/troubleshoot-windows-freeze)
+- [Advanced troubleshooting for Windows-based computer freeze issues](./troubleshoot-windows-freeze.md)
 
 - [Stop error occurs when you update the in-box Broadcom network adapter driver](troubleshoot-stop-error-on-broadcom-driver-update.md)

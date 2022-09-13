@@ -14,8 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 08/16/2021
+ms.technology: windows-sec
 ---
 
 # Account lockout duration
@@ -35,9 +35,9 @@ This policy setting is dependent on the **Account lockout threshold** policy set
 -   A user-defined number of minutes from 0 through 99,999
 -   Not defined
 
-If [Account lockout threshold](account-lockout-threshold.md) is configured, after the specified number of failed attempts, the account will be locked out. If th **Account lockout duration** is set to 0, the account will remain locked until an administrator unlocks it manually.
+If [Account lockout threshold](account-lockout-threshold.md) is configured, after the specified number of failed attempts, the account will be locked out. If the **Account lockout duration** is set to 0, the account will remain locked until an administrator unlocks it manually.
 
-It is advisable to set **Account lockout duration** to approximately 15 minutes. To specify that the account will never be locked out, set the **Account lockout threshold** value to 0. 
+It's advisable to set **Account lockout duration** to approximately 15 minutes. To specify that the account will never be locked out, set the **Account lockout threshold** value to 0. 
 
 ### Location
 
@@ -58,11 +58,11 @@ The following table lists the actual and effective default policy values. Defaul
  
 ## Security considerations
 
-More than a few unsuccessful password submissions during an attempt to log on to a computer might represent an attacker's attempts to determine an account password by trial and error. The Windows and Windows Server operating systems can track logon attempts, and you can configure the operating system to disable the account for a preset period of time after a specified number of failed attempts. Account lockout policy settings control the threshold for this response and what action to take after the threshold is reached.
+More than a few unsuccessful password submissions during an attempt to sign in to a computer might represent an attacker's attempts to determine an account password by trial and error. The Windows and Windows Server operating systems can track sign-in attempts, and you can configure the operating system to disable the account for a preset period of time after a specified number of failed attempts. Account lockout policy settings control the threshold for this response and what action to take after the threshold is reached.
 
 ### Vulnerability
 
-A denial-of-service (DoS) condition can be created if an attacker abuses the [Account lockout threshold](account-lockout-threshold.md) policy setting and repeatedly attempts to log on with a specific account. After you configure the Account lockout threshold policy setting, the account will be locked out after the specified number of failed attempts. If you configure the **Account lockout duration** policy setting to 0, the account remains locked until you unlock it manually.
+A denial-of-service (DoS) condition can be created if an attacker abuses the [Account lockout threshold](account-lockout-threshold.md) policy setting and repeatedly attempts to sign in with a specific account. After you configure the Account lockout threshold policy setting, the account will be locked out after the specified number of failed attempts. If you configure the **Account lockout duration** policy setting to 0, the account remains locked until you unlock it manually.
 
 ### Countermeasure
 
@@ -70,7 +70,7 @@ Configure the **Account lockout duration** policy setting to an appropriate valu
 
 ### Potential impact
 
-Configuring the **Account lockout duration** policy setting to 0 so that accounts cannot be automatically unlocked can increase the number of requests that your organization's Help Desk receives to unlock accounts that were locked by mistake.
+Configuring the **Account lockout duration** policy setting to 0 so that accounts can't be automatically unlocked can increase the number of requests that your organization's Help Desk receives to unlock accounts that were locked by mistake.
 
 ## Related topics
 
