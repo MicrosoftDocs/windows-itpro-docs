@@ -47,8 +47,6 @@ For more information, see [Personal Data Encryption](/windows/security/informati
 ## Windows update
 <!--6286244,6286260 -->
 
-## Apps
-<!--6286104, 6286113-->
 
 ## WebAuthn APIs support ECC
 <!--6021798-->
