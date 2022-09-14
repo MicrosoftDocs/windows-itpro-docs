@@ -49,7 +49,7 @@ sections:
   - name: Out-of-box experience (OOBE)
     questions:
       - question: My Windows 11 SE device is stuck in OOBE, how can I reset it?
-        answer: To access the Settings application during OOBE on a  Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the **accessibility icon** on the bottom-right corner of the screen.
+        answer: To access the Settings application during OOBE on a  Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the accessibility icon ![accessibility icon](images/accessibility.svg] on the bottom-right corner of the screen.
   - name: Resources
     questions:
       - question: Where can I find more information how to deploy Windows 11 SE in my school?
