@@ -73,6 +73,8 @@
           href: mcc-isp-vm-performance.md
         - name: Support and troubleshooting
           href: mcc-isp-support.md
+        - name: Version History
+          href: mcc-version-history.md
         - name: MCC for ISPs (Private Preview)
           href: mcc-isp.md
 - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
