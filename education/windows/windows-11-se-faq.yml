@@ -1,0 +1,65 @@
+### YamlMime:FAQ
+metadata:
+  title: Windows 11 SE Frequently Asked Questions (FAQ)
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows 11 SE.   
+  ms.prod: windows
+  ms.technology: windows
+  author: paolomatarazzo
+  ms.author: paoloma
+  manager: aaroncz
+  ms.reviewer: 
+  ms.collection: education
+  ms.topic: faq
+  localizationpriority: medium
+  ms.date: 09/14/2022
+  appliesto:
+  - ✅ <b>Windows 11 SE</b>
+
+title: Common questions about Windows 11 SE
+summary: Windows 11 SE combines the power and privacy of Windows 11 with educator feedback to create a simplified experience on devices built for education. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows 11 SE so you can get to what matters most.
+
+
+
+sections:
+  - name: General
+    questions:
+      - question: What is Windows 11 SE?
+        answer: |
+          Windows 11 SE is a new cloud-first operating system that offers the power and reliability of Windows 11 with a simplified design and tools specially designed for schools.
+          To learn more, go to the [][].
+      - question: Who uses Windows 11 SE?
+        answer: |
+          Windows 11 SE is designed for students in grades K-8 who use a laptop provided by their school.
+      - question: What are the major differences between Windows 11 and Windows 11 SE?
+        answer: |
+          Windows 11 SE was created based on feedback from educators who wanted a distraction-free experience for their students. Here are some of the differences that you'll find in Windows 11 SE:
+          - Experience a simplified user interface so you can stay focused on the important stuff
+          - Only IT admins can install apps. Users will not be able to access the Microsoft Store or download apps from the internet
+          - Use Snap Assist to maximize screen space on smaller screens with two-window snapping
+          - Store your Desktop, Documents, and Photos folders in the cloud using OneDrive, so your work is backed up and easy to find
+          - Express yourself and celebrate accomplishments with the *emoji and GIF panel* and *Stickers*
+  - name: Applications and settings
+    questions:
+      - question: Why is there no application store on Windows 11 SE? What apps will work on Windows 11 SE?
+        answer: |
+          The IT Admins at your school manage system settings (including application installation and the application store) to ensure all students have a safe, distraction-free experience. On your device you'll have pre-installed apps from Microsoft, from your IT admin, and from your device manufacturer. You can continue to use web apps on the Microsoft Edge browser, as web apps do not require installation.
+          To learn more, go to the [][].
+      - question: Why is there no application store on Windows 11 SE? What apps will work on Windows 11 SE?
+        answer: |
+          The IT Admins at your school manage system settings (including application installation and the application store) to ensure all students have a safe, distraction-free experience. On your device you'll have pre-installed apps from Microsoft, from your IT admin, and from your device manufacturer. You can continue to use web apps on the Microsoft Edge browser, as web apps do not require installation.
+          To learn more, go to the [][].
+  - name: Resources
+    questions:
+      - question: Where can I find more information how to deploy Windows 11 SE in my school?
+        answer: |
+          Here are some resources to get you started: [][].
+      - question: Where can I learn more about Windows Autopilot?
+        answer: |
+          - [][]
+      - question: Where can I learn more about managing Windows SE devices with Microsoft Intune?
+        answer: |
+          - [][]
+
+additionalContent: |
+  ## Additional Content
+  Here's some optional text that can be placed at the end of the document.

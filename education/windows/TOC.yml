@@ -14,6 +14,8 @@ items:
         href: windows-11-se-overview.md
       - name: Settings and CSP list
         href: windows-11-se-settings-list.md
+      - name: Frequently Asked Questions (FAQ)
+        href: windows-11-se-faq.md
     - name: Windows in S Mode
       items:
       - name: Test Windows 10 in S mode on existing Windows 10 education devices
