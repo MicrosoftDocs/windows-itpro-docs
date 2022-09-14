@@ -36,7 +36,7 @@ In Windows 10, version 1709, the AssignedAccess configuration service provider (
 > [!NOTE]
 >
 > - If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
-> - The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709, it is supported in Windows 10 Pro and Windows 10 S. Starting from Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
+> - The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709, it is supported in Windows 10 Pro and Windows 10 S. Starting from Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
 The following example shows the AssignedAccess configuration service provider in tree format
 
@@ -98,8 +98,7 @@ In Windows 10, version 1803 the Configuration node introduces single app kiosk p
 In Windows 10, version 1909, Microsoft Edge kiosk mode support was added. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like "shift+alt+a", where "shift" and "alt" are the modifiers and "a" is the key.
 
 In Windows 11, version 22H2, AssignedAccessConfiguration schema was updated to add StartPins and TaskbarLayout nodes to support pinning apps to the Start Menu and Taskbar respectively.
-
-- For more information about the configuration settings in the XML, see [TODO](/windows/configuration/<TODO>).
+- For more information about the configuration settings in the XML, see [TODO]().
 - For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd).
 - For an example, see [Example AssignedAccessConfiguration XML](#example-assignedaccessconfiguration-xml).
 
@@ -594,7 +593,7 @@ KioskModeApp Replace
   <summary>Example XML configuration for a multi-app kiosk for Windows 11.</summary>
 
 > [!NOTE]
-> This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see []().
+> This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see [TODO]().
 > - StartPins element is used to pin apps to the Start menu and uses the [pinnedList JSON](/windows/configuration/customize-start-menu-layout-windows-11#get-the-pinnedlist-json) format.
 > - TaskbarLayout element is used to pin apps to the taskbar and uses the [TaskbarLayoutModification XML](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar#author-a-taskbarlayoutmodificationxml-file) format.
 
@@ -803,7 +802,7 @@ KioskModeApp Replace
 </details>
 
 > [!NOTE]
-> To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature that's added in the 1809 release, use the below sample. Notice an alias `r1809` is given to the 201810 namespace for the 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+> To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature that was added in the 1809 release, use the below sample. Notice an alias `r1809` is given to the 201810 namespace for the 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 >
 > ```xml
 > <AssignedAccessConfiguration
@@ -899,7 +898,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 </SyncML>
 ```
 
-<details>
+</details>
 
 <br>
 <details>
@@ -975,7 +974,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 </SyncML>
 ```
 
-<details>
+</details>
 
 <br>
 <details>
@@ -1051,7 +1050,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 </SyncML>
 ```
 
-<details>
+</details>
 
 <br>
 <details>
@@ -1073,7 +1072,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 </SyncML>
 ```
 
-<details>
+</details>
 
 <br>
 <details>
@@ -1095,7 +1094,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 </SyncML>
 ```
 
-<details>
+</details>
 
 ## StatusConfiguration XSD
 
@@ -1246,9 +1245,12 @@ Status Get
 
 ## ShellLauncherConfiguration XSD
 
+> [!NOTE]
+> Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD.
+
 <br>
 <details>
-  <summary>Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD.</summary>
+  <summary>Shell Launcher V1 XSD</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1407,7 +1409,9 @@ Status Get
 
 </details>
 
-### Shell Launcher V2 XSD
+<br>
+<details>
+  <summary>Shell Launcher V2 XSD</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1432,6 +1436,8 @@ Status Get
 
 </xs:schema>
 ```
+
+</details>
 
 ## ShellLauncherConfiguration examples
 
