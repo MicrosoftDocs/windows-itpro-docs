@@ -74,10 +74,6 @@ If we pause the release, a policy will be deployed which prevents devices from u
 
 You can pause or resume a Windows quality update from the Release management tab in Microsoft Endpoint Manager.
 
-## Rollback
-
-Windows Autopatch will rollback updates if we detect a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md).
-
 ## Incidents and outages
 
 If devices in your tenant aren't meeting the [service level objective](../operate/windows-autopatch-wqu-overview.md#service-level-objective) for Windows quality updates, an incident will be raised, and the Windows Autopatch Service Engineering Team will work to bring the devices back into compliance.
