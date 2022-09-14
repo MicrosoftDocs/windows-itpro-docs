@@ -18,8 +18,6 @@ metadata:
 title: Common questions about Windows 11 SE
 summary: Windows 11 SE combines the power and privacy of Windows 11 with educator feedback to create a simplified experience on devices built for education. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows 11 SE so you can get to what matters most.
 
-
-
 sections:
   - name: General
     questions:
@@ -52,13 +50,11 @@ sections:
     questions:
       - question: My Windows 11 SE device is stuck in OOBE, how can I reset it?
         answer: To access the Settings application during OOBE on a  Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the **accessibility icon** on the bottom-right corner of the screen.
-        :::image type="icon" source="images/ic_fluent_accessibility_16_regular.svg" border="false":::
   - name: Resources
     questions:
       - question: Where can I find more information how to deploy Windows 11 SE in my school?
         answer: |
           Here are some resources to get you started: [][].
-          
       - question: Where can I learn more about Windows Autopilot?
         answer: |
           - [][]
