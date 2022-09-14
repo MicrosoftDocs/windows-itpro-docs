@@ -1,7 +1,7 @@
 ---
 title: AssignedAccess CSP
 description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -26,18 +26,17 @@ The table below shows the applicability of Windows:
 
 The AssignedAccess configuration service provider (CSP) is used to set the device to run in kiosk mode. Once the CSP has been executed, the next user login that is associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
-For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
+For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a single-app kiosk on Windows 10/11.](/windows/configuration/kiosk-single-app)
 
-In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
+In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) was expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Set up a multi-app kiosk on Windows 10 devices](/windows/configuration/lock-down-windows-10-to-specific-apps).
 
-> [!Warning]
+> [!WARNING]
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
 
-> [!Note]
-> If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
-
-> [!Note]
-> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709, it is supported in Windows 10 Pro and Windows 10 S. Starting from Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
+> [!NOTE]
+>
+> - If the application calls `KeyCredentialManager.IsSupportedAsync` when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select an appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
+> - The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709, it is supported in Windows 10 Pro and Windows 10 S. Starting from Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
 The following example shows the AssignedAccess configuration service provider in tree format
 
@@ -45,7 +44,7 @@ The following example shows the AssignedAccess configuration service provider in
 ./Vendor/MSFT
 AssignedAccess
 ----KioskModeApp
-----Configuration (Added in Windows 10, version 1709) 
+----Configuration (Added in Windows 10, version 1709)
 ----Status (Added in Windows 10, version 1803)
 ----ShellLauncher (Added in Windows 10, version 1803)
 ----StatusConfiguration (Added in Windows 10, version 1803)
@@ -55,63 +54,65 @@ AssignedAccess
 Root node for the CSP.
 
 <a href="" id="assignedaccess-kioskmodeapp"></a>**./Device/Vendor/MSFT/AssignedAccess/KioskModeApp**
-A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/find-the-application-user-model-id-of-an-installed-app).
+A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows/configuration/find-the-application-user-model-id-of-an-installed-app). For more information, see [Set up a single-app kiosk on Windows 10/11.](/windows/configuration/kiosk-single-app)
 
-For more information, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
-
-> [!Note]
-> In Windows 10, version 1803, the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
+> [!NOTE]
 >
-> Starting in Windows 10, version 1803, the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
+> - In Windows 10, version 1803, the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
+> - Starting in Windows 10, version 1803, the KioskModeApp node becomes No-Op if Configuration node is configured on the device. Add/Replace/Delete commands on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it's not effective.
+> - You can't set both KioskModeApp and ShellLauncher at the same time on the device.
 
-> [!Note]
-> You can't set both KioskModeApp and ShellLauncher at the same time on the device.
-
-Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
+Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
 
 Here's an example:
 
 ```json
-{"Account":"contoso\\kioskuser","AUMID":"Microsoft.Windows.Contoso_cw5n1h2txyewy!Microsoft.ContosoApp.ContosoApp"}
+{
+    "Account": "contoso\\kioskuser",
+    "AUMID": "Microsoft.Windows.Contoso_cw5n1h2txyewy!Microsoft.ContosoApp.ContosoApp"
+}
 ```
 
-> [!Tip]
+> [!TIP]
 > In this example the double \\\ is required because it's in JSON and JSON escapes \ into \\\\. If an MDM server uses JSON parser\composer, they should ask customers to type only one \\, which will be \\\ in the JSON. If user types \\\\, it'll become \\\\\\\ in JSON, which will cause erroneous results. For the same reason, domain\account used in Configuration xml does not need \\\ but only one \\, because xml does not (need to) escape \\.
 >
 > This applies to both domain\account, AzureAD\someone@contoso.onmicrosoft.com, i.e. as long as a \ used in JSON string.
 
 When the kiosk mode app is being configured, the account name will be used to find the target user. The account name includes domain name and user name.
 
-> [!Note]
-> The domain name can be optional, if the user name is unique across the system.
+> [!TIP]
+> The domain name can be optional, if the user name is unique across the system.
 
 For a local account, the domain name should be the device name. When Get is executed on this node, the domain name is always returned in the output.
 
 The supported operations are Add, Delete, Get and Replace. When there's no configuration, the Get and Delete methods fail. When there's already a configuration for kiosk mode app, the Add method fails. The data pattern for Add and Replace is the same.
 
 <a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
-Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For more information about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps). For more information on the schema, see [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
 
-Updated in Windows 10, version 1909. Added Microsoft Edge kiosk mode support. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like "shift+alt+a", where "shift" and "alt" are the modifiers and "a" is the key.
-
-> [!Note]
-> In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
->
-> Starting in Windows 10, version 1803 the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
-
-Enterprises can use this to easily configure and manage the curated lockdown experience.
+Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For more information about the configuration settings in the XML, see [Set up a multi-app kiosk on Windows 10 devices](/windows/configuration/lock-down-windows-10-to-specific-apps). For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd). Enterprises can use this to easily configure and manage the curated lockdown experience.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies back (for example, Start Layout).
+In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
+
+In Windows 10, version 1909, Microsoft Edge kiosk mode support was added. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like "shift+alt+a", where "shift" and "alt" are the modifiers and "a" is the key.
+
+In Windows 11, version 22H2, AssignedAccessConfiguration schema was updated to add StartPins and TaskbarLayout nodes to support pinning apps to the Start Menu and Taskbar respectively.
+
+- For more information about the configuration settings in the XML, see [TODO](/windows/configuration/<TODO>).
+- For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd).
+- For an example, see [Example AssignedAccessConfiguration XML](#example-assignedaccessconfiguration-xml).
+
+> [!NOTE]
+> Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it can't revert all the enforced policies back (for example, Start Layout).
 
 <a href="" id="assignedaccess-status"></a>**./Device/Vendor/MSFT/AssignedAccess/Status**
-Added in Windows 10, version 1803. This read only polling node allows MDM server to query the current KioskModeAppRuntimeStatus as long as the StatusConfiguration node is set to “On” or “OnWithAlerts”. If the StatusConfiguration is “Off”, a node not found error will be reported to the MDM server. Click [link](#status-example) to see an example SyncML. [Here](#assignedaccessalert-xsd) is the schema for the Status payload.
+Added in Windows 10, version 1803. This read only polling node allows MDM server to query the current KioskModeAppRuntimeStatus as long as the StatusConfiguration node is set to "On" or "OnWithAlerts". If the StatusConfiguration is "Off", a node not found error will be reported to the MDM server. Click [link](#status-example) to see an example SyncML. [Here](#assignedaccessalert-xsd) is the schema for the Status payload.
 
 In Windows 10, version 1803, Assigned Access runtime status only supports monitoring single app kiosk mode. Here are the possible statuses available for single app kiosk mode.
 
-|Status  |Description  |
-|---------|---------|---------|
+| Status | Description |
+|--|--|--|
 | KioskModeAppRunning | This status means the kiosk app is running normally. |
 | KioskModeAppNotFound | This state occurs when the kiosk app isn't deployed to the machine. |
 | KioskModeAppActivationFailure | This state occurs when the assigned access controller detects the process terminated unexpectedly after exceeding the max retry. |
@@ -119,11 +120,11 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 > [!NOTE]
 > Status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
 
-|Status code  | KioskModeAppRuntimeStatus |
-|---------|---------|
-| 1     | KioskModeAppRunning         |
-| 2     | KioskModeAppNotFound          |
-| 3     | KioskModeAppActivationFailure         |
+| Status code | KioskModeAppRuntimeStatus |
+|--|--|
+| 1 | KioskModeAppRunning |
+| 2 | KioskModeAppNotFound |
+| 3 | KioskModeAppActivationFailure |
 
 Additionally, the status payload includes a profileId that can be used by the MDM server to correlate as to which kiosk app caused the error.
 
@@ -156,7 +157,7 @@ Supported operation is Get.
 <a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**
 Added in Windows 10, version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
 
-> [!Note]
+> [!NOTE]
 > You can't set both ShellLauncher and KioskModeApp at the same time on the device.
 >
 > Configuring Shell Launcher using the ShellLauncher node automatically enables the Shell Launcher feature, if it is available within the SKU. I. Shell Launcher as a feature and the ShellLauncher node both require Windows Enterprise or Windows Education to function.
@@ -172,15 +173,14 @@ Optionally, the MDM server can opt in to the MDM alert so that an MDM alert will
 
 This MDM alert header is defined as follows:
 
--  MDMAlertMark: Critical
--  MDMAlertType: "com.microsoft.mdm.assignedaccess.status"
--  MDMAlertDataType: String
--  Source: "./Vendor/MSFT/AssignedAccess"
--  Target: N/A
+- MDMAlertMark: Critical
+- MDMAlertType: "com.microsoft.mdm.assignedaccess.status"
+- MDMAlertDataType: String
+- Source: "./Vendor/MSFT/AssignedAccess"
+- Target: N/A
 
-> [!Note]
+> [!NOTE]
 > MDM alert will only be sent for errors.
-
 
 ## KioskModeApp examples
 
@@ -266,7 +266,9 @@ KioskModeApp Replace
 
 ## AssignedAccessConfiguration XSD
 
-The schema below is for AssignedAccess Configuration up to Windows 10 20H2 release.
+<br>
+<details>
+  <summary>Schema for AssignedAccess Configuration.</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -278,6 +280,7 @@ The schema below is for AssignedAccess Configuration up to Windows 10 20H2 relea
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
     xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
@@ -306,8 +309,10 @@ The schema below is for AssignedAccess Configuration up to Windows 10 20H2 relea
             <xs:sequence minOccurs="1" maxOccurs="1">
                 <xs:element name="AllAppsList" type="allappslist_t" minOccurs="1" maxOccurs="1"/>
                 <xs:element ref="rs5:FileExplorerNamespaceRestrictions" minOccurs="0" maxOccurs="1"/>
-                <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="StartLayout" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="v5:StartPins" minOccurs="0" maxOccurs="1"/>
                 <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="v5:TaskbarLayout" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
             <xs:sequence minOccurs="1" maxOccurs="1">
                 <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1">
@@ -358,7 +363,7 @@ The schema below is for AssignedAccess Configuration up to Windows 10 20H2 relea
         <xs:attribute name="DesktopAppPath" type="xs:string"/>
         <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
     </xs:complexType>
-    
+
     <xs:attributeGroup name="autoLaunch_attributeGroup">
         <xs:attribute ref="rs5:AutoLaunch"/>
         <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
@@ -464,7 +469,41 @@ The schema below is for AssignedAccess Configuration up to Windows 10 20H2 relea
 </xs:schema>);
 ```
 
-Here's the schema for new features introduced in Windows 10 1809 release:
+</details>
+
+<br>
+<details>
+  <summary>Schema for features introduced in Windows 10, version 1909 which added support for Microsoft Edge kiosk mode and breakout key sequence customization.</summary>
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    vc:minVersion="1.1"
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2021/config"
+    >
+
+    <xs:attribute name="ClassicAppPath" type="xs:string"/>
+    <xs:attribute name="ClassicAppArguments" type="xs:string"/>
+
+    <xs:element name="BreakoutSequence" type="BreakoutSequence_t" />
+
+    <xs:complexType name="BreakoutSequence_t">
+        <xs:attribute name="Key" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Schema for new features introduced in Windows 10 1809 release.</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -510,7 +549,11 @@ Here's the schema for new features introduced in Windows 10 1809 release:
 </xs:schema>
 ```
 
-Schema for Windows 10 prerelease
+</details>
+
+<br>
+<details>
+  <summary>Schema for Windows 10 prerelease.</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -533,7 +576,7 @@ Schema for Windows 10 prerelease
     <xs:complexType name="globalProfile_t">
         <xs:attribute name="Id" type="guid_t" />
     </xs:complexType>
-  
+
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />
     <xs:element name="GlobalProfile" type="globalProfile_t" />
@@ -541,48 +584,113 @@ Schema for Windows 10 prerelease
 </xs:schema>
 ```
 
-The schema below is for features introduced in Windows 10, version 1909 which has added support for Microsoft Edge kiosk mode and breakout key sequence customization.
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<xs:schema
-    elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-    vc:minVersion="1.1"
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    xmlns:default="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    targetNamespace="http://schemas.microsoft.com/AssignedAccess/2021/config"
-    >
-
-    <xs:attribute name="ClassicAppPath" type="xs:string"/>
-    <xs:attribute name="ClassicAppArguments" type="xs:string"/>
-
-    <xs:element name="BreakoutSequence" type="BreakoutSequence_t" />
-
-    <xs:complexType name="BreakoutSequence_t">
-        <xs:attribute name="Key" type="xs:string" use="required"/>
-    </xs:complexType>
-
-</xs:schema>
-```
-
-To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature that's added in the 1809 release, use the below sample. Notice an alias r1809 is given to the 201810 namespace for the 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
-
-```xml
-<AssignedAccessConfiguration
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
->
-    <Profiles>
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
-            <AllAppsList>
-                <AllowedApps>
-                  <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" r1809:AutoLaunch="true" r1809:AutoLaunchArguments="1.txt"/>
-```
+</details>
 
 ## Example AssignedAccessConfiguration XML
 
-Example XML configuration for a multi-app kiosk:
+
+<br>
+<details>
+  <summary>Example XML configuration for a multi-app kiosk for Windows 11.</summary>
+
+> [!NOTE]
+> This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see []().
+> - StartPins element is used to pin apps to the Start menu and uses the [pinnedList JSON](/windows/configuration/customize-start-menu-layout-windows-11#get-the-pinnedlist-json) format.
+> - TaskbarLayout element is used to pin apps to the taskbar and uses the [TaskbarLayoutModification XML](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar#author-a-taskbarlayoutmodificationxml-file) format.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    <Profiles>
+        <Profile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!BCHost" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!ContentProcess" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!F12" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!PdfReader" />
+                    <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" />
+                    <App DesktopAppPath="%SystemRoot%\system32\control.exe" />
+                    <App DesktopAppPath="%SystemRoot%\system32\cmd.exe" />
+                    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+                    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App" />
+                    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\103.0.1264.62\identity_helper.exe" />
+                </AllowedApps>
+            </AllAppsList>
+            <v2:FileExplorerNamespaceRestrictions>
+                <v3:NoRestriction />
+            </v2:FileExplorerNamespaceRestrictions>
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+                    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1"
+                    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+                    <LayoutOptions StartTileGroupCellWidth="6" />
+                    <DefaultLayoutOverride>
+                        <StartLayoutCollection>
+                            <defaultlayout:StartLayout GroupCellWidth="6">
+                                <start:Group Name="Life at a glance">
+                                    <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                                    <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                                    <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AppData%\Microsoft\Windows\Start Menu\Programs\Accessories\notepad.lnk" />
+                                    <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%SystemRoot%\system32\cmd.exe" />
+                                    <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%SystemRoot%\system32\control.exe" />
+                                </start:Group>
+                            </defaultlayout:StartLayout>
+                        </StartLayoutCollection>
+                    </DefaultLayoutOverride>
+                </LayoutModificationTemplate>]]>
+            </StartLayout>
+            <v5:StartPins>
+                <![CDATA[{
+                    "pinnedList": [
+                        { "desktopAppId": "MSEdge" },
+                        { "desktopAppId": "Microsoft.Office.WINWORD.EXE.15" },
+                        { "packagedAppId": "Microsoft.WindowsStore_8wekyb3d8bbwe!App" },
+                        { "packagedAppId": "Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" },
+                        { "desktopAppLink": "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk" },
+                        { "desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk" }
+                    ]
+                }]]>
+            </v5:StartPins>
+            <Taskbar ShowTaskbar="true"/>
+            <v5:TaskbarLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+                    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+                    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+                    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout" Version="1">
+                    <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+                        <defaultlayout:TaskbarLayout>
+                            <taskbar:TaskbarPinList>
+                                <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+                                <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk" />
+                            </taskbar:TaskbarPinList>
+                        </defaultlayout:TaskbarLayout>
+                    </CustomTaskbarLayoutCollection>
+                </LayoutModificationTemplate>]]>
+            </v5:TaskbarLayout>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <Account>MultiAppKioskUser</Account>
+            <DefaultProfile Id="{5B328104-BD89-4863-AB27-4ED6EE355485}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
+```
+
+</details>
+
+<br>
+<details>
+  <summary>Example XML configuration for a multi-app kiosk for Windows 10.</summary>
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
@@ -634,7 +742,12 @@ Example XML configuration for a multi-app kiosk:
 </AssignedAccessConfiguration>
 ```
 
-Example XML configuration for a Microsoft Edge kiosk. This Microsoft Edge kiosk is configured to launch www.bing.com on startup in a public browsing mode.
+</details>
+
+<br>
+<details>
+  <summary>Example XML configuration for a Microsoft Edge kiosk. This Microsoft Edge kiosk is configured to launch www.bing.com on startup in a public browsing mode.</summary>
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -656,9 +769,15 @@ Example XML configuration for a Microsoft Edge kiosk. This Microsoft Edge kiosk 
 </AssignedAccessConfiguration>
 ```
 
-Example XML configuration for setting a breakout sequence to be Ctrl+A on a Microsoft Edge kiosk.
+</details>
+
+<br>
+<details>
+  <summary>Example XML configuration for setting a breakout sequence to be Ctrl+A on a Microsoft Edge kiosk.</summary>
+
 > [!NOTE]
 > **BreakoutSequence** can be applied to any kiosk type, not just an Edge kiosk.
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -681,15 +800,34 @@ Example XML configuration for setting a breakout sequence to be Ctrl+A on a Micr
 </AssignedAccessConfiguration>
 ```
 
+</details>
+
+> [!NOTE]
+> To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature that's added in the 1809 release, use the below sample. Notice an alias `r1809` is given to the 201810 namespace for the 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+>
+> ```xml
+> <AssignedAccessConfiguration
+>     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+>     xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+> >
+>     <Profiles>
+>         <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+>             <AllAppsList>
+>                 <AllowedApps>
+>                   <App DesktopAppPath="%SystemRoot%\system32\notepad.exe" r1809:AutoLaunch="true" r1809:AutoLaunchArguments="1.txt"/>
+> ```
+
 ## Configuration examples
 
 XML encoding (escaped) and CDATA of the XML in the Data node will both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
 
 Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you’ll have nested CDATA, so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
 
-Escape and CDATA are mechanisms used when handling xml in xml. Consider that it’s a transportation channel to send the configuration xml as payload from server to client. It’s transparent to both, the end user who configures the CSP and to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
+Escape and CDATA are mechanisms used when handling xml in xml. Consider that it's a transportation channel to send the configuration xml as payload from server to client. It's transparent to both, the end user who configures the CSP and to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
 
-This example shows escaped XML of the Data node.
+<br>
+<details>
+  <summary>This example shows escaped XML of the Data node.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -761,7 +899,11 @@ This example shows escaped XML of the Data node.
 </SyncML>
 ```
 
-This example shows escaped XML of the Data node.
+<details>
+
+<br>
+<details>
+  <summary>This example shows escaped XML of the Data node.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -833,7 +975,11 @@ This example shows escaped XML of the Data node.
 </SyncML>
 ```
 
-This example uses CData for the XML.
+<details>
+
+<br>
+<details>
+  <summary>This example uses CData for the XML.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -905,7 +1051,11 @@ This example uses CData for the XML.
 </SyncML>
 ```
 
-Example of Get command that returns the configuration in the device.
+<details>
+
+<br>
+<details>
+  <summary>Example of Get command that returns the configuration in the device.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -923,7 +1073,11 @@ Example of Get command that returns the configuration in the device.
 </SyncML>
 ```
 
-Example of the Delete command.
+<details>
+
+<br>
+<details>
+  <summary>Example of the Delete command.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -940,6 +1094,8 @@ Example of the Delete command.
    </SyncBody>
 </SyncML>
 ```
+
+<details>
 
 ## StatusConfiguration XSD
 
@@ -974,7 +1130,7 @@ Example of the Delete command.
 
 ## StatusConfiguration example
 
-StatusConfiguration Add OnWithAlerts
+StatusConfiguration Add
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1039,7 +1195,7 @@ StatusConfiguration Get
 </SyncML>
 ```
 
-StatusConfiguration Replace On
+StatusConfiguration Replace
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1090,7 +1246,9 @@ Status Get
 
 ## ShellLauncherConfiguration XSD
 
-Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD. 
+<br>
+<details>
+  <summary>Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD.</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1247,6 +1405,8 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 </xs:schema>
 ```
 
+</details>
+
 ### Shell Launcher V2 XSD
 
 ```xml
@@ -1275,7 +1435,9 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 
 ## ShellLauncherConfiguration examples
 
-ShellLauncherConfiguration Add
+<br>
+<details>
+  <summary>ShellLauncherConfiguration Add</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1345,11 +1507,15 @@ ShellLauncherConfiguration Add
 </SyncML>
 ```
 
-ShellLauncherConfiguration Add AutoLogon
+</details>
+
+<br>
+<details>
+  <summary>ShellLauncherConfiguration Add AutoLogon</summary>
 
 This function creates an autologon account on your behalf. It's a standard user with no password. The autologon account is managed by AssignedAccessCSP, so the account name isn't exposed.
 
-> [!Note]
+> [!NOTE]
 > The autologon function is designed to be used after OOBE with provisioning packages.
 
 ```xml
@@ -1399,7 +1565,11 @@ This function creates an autologon account on your behalf. It's a standard user 
 </SyncML>
 ```
 
-ShellLauncher V2 Add
+</details>
+
+<br>
+<details>
+  <summary>ShellLauncher V2 Add</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1420,12 +1590,12 @@ ShellLauncher V2 Add
         <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
 xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Profiles>
-                <DefaultProfile> 
-                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true"> 
-                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"--> 
-                        <DefaultAction Action="RestartShell"/> 
-                    </Shell> 
-                </DefaultProfile> 
+                <DefaultProfile>
+                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true">
+                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
+                        <DefaultAction Action="RestartShell"/>
+                    </Shell>
+                </DefaultProfile>
                 <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
                     <Shell Shell="%SystemRoot%\System32\notepad.exe" V2:AllAppsFullScreen="true">
                         <ReturnCodeActions>
@@ -1455,7 +1625,11 @@ xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 
 ```
 
-ShellLauncherConfiguration Get
+</details>
+
+<br>
+<details>
+  <summary>ShellLauncherConfiguration Get</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1473,7 +1647,13 @@ ShellLauncherConfiguration Get
 </SyncML>
 ```
 
+</details>
+
 ## AssignedAccessAlert XSD
+
+<br>
+<details>
+  <summary>Expand this section to see the schema XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1535,9 +1715,15 @@ ShellLauncherConfiguration Get
 </xs:schema>
 ```
 
+</details>
+
 ## Windows Holographic for Business edition example
 
 This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](/hololens/hololens-provisioning).
+
+<br>
+<details>
+  <summary>Expand this section to see the example XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1594,6 +1780,8 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
     </Configs>
 </AssignedAccessConfiguration>
 ```
+
+</details>
 
 ## Related topics
 
