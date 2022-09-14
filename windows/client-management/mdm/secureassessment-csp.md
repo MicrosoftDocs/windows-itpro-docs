@@ -32,6 +32,10 @@ The following example shows the SecureAssessment configuration service provider 
 SecureAssessment
 ----LaunchURI
 ----TesterAccount
+----AllowScreenMonitoring
+----RequirePrinting
+----AllowTextSuggestions
+----Assessments
 ```
 <a href="" id="--vendor-msft-secureassessment"></a>**./Vendor/MSFT/SecureAssessment**  
 The root node for the SecureAssessment configuration service provider.
