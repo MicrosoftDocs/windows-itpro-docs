@@ -1,8 +1,16 @@
 # Monitor cache node health and performance
 
-## Metrics 
+## Metrics
 Within Azure portal, there are a number of metrics that are available to monitor cache node health and performance.
 
+### Monitoring your metrics
+To view the metrics associated with your cache nodes, navigate to the Overview >> Monitoring tab within Azure portal.
+
+:::image type="content" source="images/mcc-isp-metrics.png" alt-text="Screenshot of the Azure portal displaying the metrics view in the Overview tab":::
+
+You can choose to monitor the health and performance of all cache nodes or one by one by using the dropdown menu. The Egress bits per second graph shows your inbound and outbound traffic of your cache nodes over time. You can change the time range (1 hour, 12 hours, 1 day, 7 days, 14 days, and 30 days) by selecting the time range of choice on the top bar.
+
+If you are unable to view metrics for your cache node, it may be that your cache node is unhealthy, inactive, or hasn't been fully configured.
 
 ### Available Metrics
 
