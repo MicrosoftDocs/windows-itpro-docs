@@ -548,7 +548,7 @@ Refer to "https://learn.microsoft.com/windows/desktop/Debug/system-error-codes" 
         "LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
             gle=0x00000057
         ]",
-        "\u000aRefer to \"https:\/\/learn.microsoft.com\/en-us\/windows\/desktop\/Debug\/system-error-codes\" for error information."
+        "\u000aRefer to \"https:\/\/learn.microsoft.com\/windows\/desktop\/Debug\/system-error-codes\" for error information."
     ],
     "FailureDetails":"Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel",
     "DeviceDriverInfo":null,
