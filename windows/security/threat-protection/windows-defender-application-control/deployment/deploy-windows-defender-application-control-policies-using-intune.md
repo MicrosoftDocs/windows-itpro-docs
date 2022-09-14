@@ -10,6 +10,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.date: 06/27/2022
+ms.topic: how-to
 ---
 
 # Deploy WDAC policies using Mobile Device Management (MDM)
