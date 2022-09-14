@@ -27,12 +27,26 @@ PDE utilizes Windows Hello for Business (WHfB) to link data encryption keys with
 | Encryption keys discarded | At user logoff | At reboot |
 | Files encrypted | User known folders of Documents, Pictures, and Desktop | Entire volume/drive |
 
-
-
-
-
-
 ## Prerequisites
+
+- **Required**
+  - Azure AD joined device
+  - Windows Hello for Business
+  - FIDO authentication not enabled
+  - Winlogon automatic restart sign-on feature not enabled
+  - Windows Information Protection (WIP) not enabled
+  - OneDrive for user data backup
+  - Windows Hello for Business PIN reset service
+  
+- **Recommended**
+  - BitLocker Drive Encryption enabled
+  - Kernel and user mode crash dumps disabled
+  - Hibernation disabled
+  - Windows Hello for Business PIN or Secure Biometrics
+
+> [!NOTE]
+> Only native Azure AD joined devices are supported. Hybrid Azure AD joined devices do not support PDE.
+
 
 ## How to enable
 
