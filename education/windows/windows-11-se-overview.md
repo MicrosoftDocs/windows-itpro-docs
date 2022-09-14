@@ -102,6 +102,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | eTests                                  | 4.0.25            | Win32    | CASAS                        |
 | FortiClient                             | 7.0.1.0083        | Win32    | Fortinet                     |
 | Free NaturalReader                      | 16.1.2            | Win32    | Natural Soft                 |
+| Ghotit                                  | 10.14.2.3         | Win32    | Ghotit Ltd                   |
 | GoGuardian                              | 1.4.4             | Win32    | GoGuardian                   |
 | Google Chrome                           | 102.0.5005.115    | Win32    | Google                       |
 | Illuminate Lockdown Browser             | 2.0.5             | Win32    | Illuminate Education         |
