@@ -94,7 +94,7 @@ Invoices are now a supported payment method for Minecraft: Education Edition. Th
 
 2. Select the Invoice option, and provide the info needed for an invoice. The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
 
-    ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/mcee-invoice-info.png)
+    ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/minecraft/mcee-invoice-info.png)
 
 For more info on invoices and how to pay by invoice, see [How to pay for your subscription](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?).  
 

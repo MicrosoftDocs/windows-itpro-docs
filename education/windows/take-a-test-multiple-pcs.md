@@ -40,7 +40,7 @@ If you set up Take a Test, the **Take a Test** button is added on the student PC
 
 **Figure 1** - Configure Take a Test in the Set up School PCs app
 
-![Configure Take a Test in the Set up School PCs app.](images/suspc_choosesettings_setuptakeatest.png)
+![Configure Take a Test in the Set up School PCs app.](images/takeatest/suspc_choosesettings_setuptakeatest.png)
 
 ### Set up a test account in Intune for Education
 You can set up a test-taking account in Intune for Education. To do this, follow these steps:
@@ -50,7 +50,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
     **Figure 2** - Add a test profile in Intune for Education
 
-    ![Add a test profile in Intune for Education.](images/i4e_takeatestprofile_addnewprofile.png)
+    ![Add a test profile in Intune for Education.](images/takeatest/i4e_takeatestprofile_addnewprofile.png)
 
 3. In the new profile page:
    1. Enter a name for the profile.
@@ -61,7 +61,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
       **Figure 3** - Add information about the test profile
 
-      ![Add information about the test profile.](images/i4e_takeatestprofile_newtestaccount.png)
+      ![Add information about the test profile.](images/takeatest/i4e_takeatestprofile_newtestaccount.png)
 
       After you save the test profile, you'll see a summary of the settings that you configured for Take a Test. Next, you'll need to assign the test profile to a group that will be using the test account.
     
@@ -69,13 +69,13 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
    **Figure 4** - Assign the test account to a group
 
-   ![Assign the test account to a group.](images/i4e_takeatestprofile_accountsummary.png)
+   ![Assign the test account to a group.](images/takeatest/i4e_takeatestprofile_accountsummary.png)
 
 5. In the **Groups** page, click **Change group assignments**.
 
     **Figure 5** - Change group assignments
 
-    ![Change group assignments.](images/i4e_takeatestprofile_groups_changegroupassignments.png)
+    ![Change group assignments.](images/takeatest/i4e_takeatestprofile_groups_changegroupassignments.png)
 
 6. In the **Change group assignments** page:
    1. Select a group from the right column and click **Add Members** to select the group and assign the test-taking account to that group. You can select more than one group. 
@@ -83,7 +83,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
       **Figure 6** - Select the group(s) that will use the test account
 
-      ![Select the groups that will use the test account.](images/i4e_takeatestprofile_groupassignment_selected.png)
+      ![Select the groups that will use the test account.](images/takeatest/i4e_takeatestprofile_groupassignment_selected.png)
 
 And that's it! When the students from the selected group sign in to the student PCs using the Take a Test user name that you selected, the PC will be locked down and Take a Test will open the assessment URL and students can start taking tests.
 
@@ -137,7 +137,7 @@ To set up a test account through Windows Configuration Designer, follow these st
 
       **Figure 7** - Add the account to use for test-taking
 
-      ![Add the account to use for test-taking.](images/wcd_settings_assignedaccess.png)
+      ![Add the account to use for test-taking.](images/wcd/wcd_settings_assignedaccess.png)
 
       The account can be in one of the following formats:
       - username
