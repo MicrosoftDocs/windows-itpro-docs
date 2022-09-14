@@ -26,7 +26,6 @@ Windows 11, version 22H2 is available through Windows Server Update Services (in
 
 To learn more about the status of the update rollout, known issues, and new information, see [Windows release health](/windows/release-health/).
 
-
 ## Windows accessibility
 <!--6294246 -->
 
@@ -42,7 +41,7 @@ For more information, see [Personal Data Encryption](/windows/security/informati
 ## Modern Windows Experiences
 <!--6286095-->
 
-## Kiosk 
+## Kiosk
 <!--6444738-->
 
 ## Windows update
@@ -59,6 +58,8 @@ For more information, see [WebAuthn APIs for passwordless authentication on Wind
 
 ## Enhanced Phishing Protection
 <!--6286059, 6063796-->
+
+
 **Enhanced Phishing Protection** in **Microsoft Defender SmartScreen** helps protect Microsoft school or work passwords against phishing and unsafe usage on websites and in applications. Enhanced Phishing Protection works alongside Windows security protections to help protect Windows 11 work or school sign-in passwords.
 
 [For more information, see [Enhanced Phishing Protection in Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen).
@@ -73,6 +74,7 @@ For more information, see [Configure Stickers for Windows 11 SE](/education/wind
 Starting in Windows 11, version 22H2, you can deploy education themes to your devices. The education themes are designed for students using devices in a school. Themes allow the end user to quickly configure the look and feel of the device, with preset wallpaper, accent color, and other settings. Students can choose their own themes, making it feel the device is their own.
 
 For more information, see [Configure education themes for Windows 11](/education/windows/edu-themes).
+
 ## Windows Hello
 <!-- 6286360-->
 
