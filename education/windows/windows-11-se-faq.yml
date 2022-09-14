@@ -69,9 +69,3 @@ sections:
 additionalContent: |
   ## Additional Content
   Here's some optional text that can be placed at the end of the document.
-
-
-[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
-
-[AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
-[AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
