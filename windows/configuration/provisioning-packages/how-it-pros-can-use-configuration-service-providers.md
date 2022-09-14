@@ -179,6 +179,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Update CSP](/windows/client-management/mdm/update-csp)
 -   [VPN CSP](/windows/client-management/mdm/vpn-csp)
 -   [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
--   [Wi-Fi CSP](/docs/)
+-   [Wi-Fi CSP](/windows/client-management/mdm/wifi-csp)
 -   [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp)
 -   [WindowsSecurityAuditing CSP](/windows/client-management/mdm/windowssecurityauditing-csp)
