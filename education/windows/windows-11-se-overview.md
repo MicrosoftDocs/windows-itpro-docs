@@ -174,7 +174,7 @@ When you deploy an app using Intune for Education, you may get a `0x87D300D9` er
 - If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-applications) and [Configure applications with Microsoft Intune][EDUWIN-1]
 - If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own apps](#add-your-own-applications). Or, use an app that runs in a web browser, such as a web app or PWA
 
-To access the Settings application during OOBE on a  Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the accessibility icon :::image type="icon" source="images/ic_fluent_accessibility_16_regular.svg" border="false"::: on the bottom-right corner of the screen.
+To access the Settings application during OOBE on a  Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the accessibility icon :::image type="icon" source="images/accessibility.svg" border="false"::: on the bottom-right corner of the screen.
 
 ## Related articles
 
