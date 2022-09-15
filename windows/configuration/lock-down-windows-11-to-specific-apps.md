@@ -13,7 +13,7 @@ ms.topic: how-to
 ms.collection: highpri
 ---
 
-# Set up a multi-app kiosk on Windows 11 devices
+# Multi-App Kiosk Mode on Windows 11 Setup Instructions
 
 **Applies to**
 
@@ -29,7 +29,6 @@ A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users a
 >[!TIP]
 >Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
-# Multi-App Kiosk Mode on Windows 11 Setup Instructions
 
 Currently, the only supported method to configure a multi-app kiosk in Windows 11 is through WMI Bridge (Intune and CSP/PPKG methods coming soon). You can follow the instructions for Windows 10, except for the differences for Windows 11 outlined below.  
 
