@@ -63,7 +63,7 @@ For information on customizing the Start menu layout using policy, see [Customiz
   - Group policy: `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove "Recently added" list from Start Menu`
   
 > [!NOTE]
-The following two policies are supported starting in Windows 11, version 22H2
+> The following two policies are supported starting in Windows 11, version 22H2
 
 - [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
   - Group policy:
