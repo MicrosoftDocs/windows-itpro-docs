@@ -60,7 +60,7 @@ Add-Type -AssemblyName System.Web
 $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration  
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"   xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
     <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
       <AllAppsList>
@@ -111,7 +111,6 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
         ]]>
       </win11:StartPins>
       <Taskbar ShowTaskbar="true"/>
-
     </Profile> 
   </Profiles>
   <Configs>
