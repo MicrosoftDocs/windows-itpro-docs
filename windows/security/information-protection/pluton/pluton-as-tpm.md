@@ -11,13 +11,15 @@ ms.collection:
   - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/15/2022
+appliesto:
+- ✔️ <b>Windows 11, version 22H2</b>
 ---
 
-# Microsoft Pluton as Trusted Platform Module (TPM 2.0)
+# Microsoft Pluton as Trusted Platform Module
 
 [Content here]
 
-## Enable Microsoft Pluton as a TPM
+## Enable Microsoft Pluton as TPM
 
 [Steps here]
 

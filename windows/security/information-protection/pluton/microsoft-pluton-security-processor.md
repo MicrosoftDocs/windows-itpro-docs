@@ -11,9 +11,11 @@ ms.collection:
   - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/15/2022
+appliesto:
+- ✔️ <b>Windows 11, version 22H2</b>
 ---
 
-# What is Microsoft Pluton security processor?
+# Microsoft Pluton security processor
 
 [Introduction here]
 
