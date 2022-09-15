@@ -166,55 +166,6 @@ When the app is ready, Microsoft will update you. Then, you add the app to the I
 
 For more information on Intune requirements for adding education apps, see [Configure applications with Microsoft Intune][EDUWIN-1].
 
-### 0x87D300D9 error with an app
-
-When you deploy an app using Intune for Education, you may get a `0x87D300D9` error code with a `Failed` state in the [Intune for Education portal](https://intuneeducation.portal.azure.com). If you have an app that fails with this error, then:
-
-- Make sure the app is on the [available applications list](#available-applications). Or, make sure your app is [approved for Windows 11 SE](#add-your-own-applications)
-- If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-applications) and [Configure applications with Microsoft Intune][EDUWIN-1]
-- If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own apps](#add-your-own-applications). Or, use an app that runs in a web browser, such as a web app or PWA
-
-## Enable federated sign-in on devices
-
-Before you can sign-in with a federated IdP, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
-
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
-
-To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
-
-| Setting |
-|--------|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Data type: **String** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that re llowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
-:::image type="content" source="images/edu-federated-authentication-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
-
-Assign the custom policy to the security groups that require federated sign-in.
-
-#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
-
-To configure federated sign-in using a provisioning package, use the following settings:
-
-| Setting |
-|--------|
-| <li> Path: **`FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Value: **Enabled**</li>|
-| <li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
-| <li> Path: **`Policies/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-| <li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during he sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-| <li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
-
-:::image type="content" source="images/edu-federated-authentication-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
-
-Apply the provisioning package to the devices that require federated sign-in.
-
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
-
-This setting is not available in Group Policy.
-
----
-
 ## Related articles
 
 - [Tutorial: deploy and manage Windows devices in a school][EDUWIN-2]
