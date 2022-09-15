@@ -27,9 +27,9 @@ Describes the best practices, location, values, policy management and security c
 
 ## Reference
 
-This policy setting determines what additional permissions are granted for anonymous connections to the device. If you enable this policy setting, anonymous users can enumerate the names of domain accounts and shared folders and perform certain other activities. This capability is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust.
+This policy setting determines what other permissions are granted for anonymous connections to the device. If you enable this policy setting, anonymous users can enumerate the names of domain accounts and shared folders and perform certain other activities. This capability is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust.
 
-By default, the token that is created for anonymous connections does not include the Everyone SID. Therefore, permissions that are assigned to the Everyone group do not apply to anonymous users.
+By default, the token that is created for anonymous connections doesn't include the Everyone SID. Therefore, permissions that are assigned to the Everyone group don't apply to anonymous users.
 
 ### Possible values
 
@@ -70,7 +70,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -86,7 +86,7 @@ Disable the **Network access: Let Everyone permissions apply to anonymous users*
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

@@ -1,14 +1,14 @@
 ---
 title: Enroll a Windows 10 device automatically using Group Policy
 description: Learn how to use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 04/30/2022
-ms.reviewer:
-manager: dansimp
+ms.reviewer: 
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -127,7 +127,7 @@ Requirements:
     > In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have installed Windows 10, version 1903 or later. The default behavior for older releases is to revert to **User Credential**.
     > **Device Credential** is only supported for Microsoft Intune enrollment in scenarios with Co-management or Azure Virtual Desktop because the Intune subscription is user centric.
 
-    When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called "Schedule created by enrollment client for automatically enrolling in MDM from AAD."
+    When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called "Schedule created by enrollment client for automatically enrolling in MDM from Azure Active Directory."
 
     To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
@@ -270,7 +270,7 @@ To collect Event Viewer logs:
     > This task isn't visible to standard users, run Scheduled Tasks with administrative credentials to find the task.
 
     This task runs every 5 minutes for the duration of one day. To confirm if the task succeeded, check the task scheduler event logs:
-    **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational**. Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from AAD is triggered by event ID 107.
+    **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational**. Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from Azure Active Directory is triggered by event ID 107.
 
     :::image type="content" alt-text="Event ID 107." source="images/auto-enrollment-event-id-107.png" lightbox="images/auto-enrollment-event-id-107.png":::
 

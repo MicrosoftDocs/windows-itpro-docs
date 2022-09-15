@@ -4,11 +4,11 @@ description: Learn how to use the Policy CSP - Browser settings so you can confi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.localizationpriority: medium
 ---
 
@@ -205,6 +205,7 @@ ms.localizationpriority: medium
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -259,6 +260,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -321,6 +323,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -373,6 +376,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -435,6 +439,7 @@ To verify AllowCookies is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -487,6 +492,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -548,6 +554,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -600,6 +607,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -652,6 +660,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -707,6 +716,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -767,6 +777,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -819,6 +830,7 @@ Most restricted value:  0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -875,6 +887,7 @@ Most restricted value:  0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -936,6 +949,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -997,6 +1011,7 @@ To verify AllowPopups is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1058,6 +1073,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1118,6 +1134,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1178,6 +1195,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1236,6 +1254,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1289,6 +1308,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1349,6 +1369,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1409,6 +1430,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1468,6 +1490,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1527,6 +1550,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1582,6 +1606,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1645,6 +1670,7 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1703,6 +1729,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1763,6 +1790,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1827,6 +1855,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1894,6 +1923,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1956,6 +1986,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2028,6 +2059,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2089,6 +2121,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2148,6 +2181,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2200,6 +2234,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2253,6 +2288,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2289,6 +2325,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2354,6 +2391,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2408,6 +2446,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2460,6 +2499,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2518,6 +2558,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2571,6 +2612,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2624,6 +2666,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2675,6 +2718,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2727,6 +2771,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2785,6 +2830,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2837,6 +2883,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2898,6 +2945,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2951,6 +2999,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3012,6 +3061,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3070,6 +3120,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3127,6 +3178,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3179,6 +3231,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3227,6 +3280,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3290,6 +3344,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3348,6 +3403,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|

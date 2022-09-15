@@ -16,8 +16,7 @@ ms.technology: windows-sec
 
 # 5065(S, F): A cryptographic context modification was attempted.
 
-
-This event generates in [BCryptConfigureContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptconfigurecontext)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptConfigureContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptconfigurecontext)() function. This function is a Cryptographic Next Generation (CNG) function.
 
 This event generates when configuration information was changed for existing CNG context.
 
@@ -27,9 +26,9 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is used for Cryptographic Next Generation (CNG) troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other Policy Change Events](audit-other-policy-change-events.md)
 

@@ -1,6 +1,8 @@
 # Uninstall your cache node
 
 There are two main steps required to uninstall your cache node:
+
+
 1. Remove your cache node from Azure portal
 1. Run the uninstall script to cleanly remove MCC from your server
 
@@ -26,5 +28,7 @@ To run the script, use the following commands:
 ```bash
 sudo chmod +x uninstallmcc.sh
 sudo ./uninstallmcc.sh
+
 ```
+
 

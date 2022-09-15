@@ -3,12 +3,12 @@ title: EnterpriseDesktopAppManagement CSP
 description: Learn how the EnterpriseDesktopAppManagement CSP handles enterprise desktop application management tasks, such as installing or removing applications.
 ms.assetid: 2BFF7491-BB01-41BA-9A22-AB209EE59FC5
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/11/2017
 ---
 
@@ -20,6 +20,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -375,7 +376,7 @@ For Intune standalone environment, the MSI package will determine the MSI execut
 |User|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
 |System|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
 
-The following table applies to SCCM hybrid environment.
+The following table applies to Configuration Manager hybrid environment:
 
 |Target|Per-user MSI|Per-machine MSI|Dual mode MSI|
 |--- |--- |--- |--- |

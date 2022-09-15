@@ -2,11 +2,7 @@
 title: Get started with Update Compliance
 manager: dougeby
 description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
-keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.localizationpriority: medium
@@ -23,11 +19,6 @@ ms.date: 05/03/2022
 
 - Windows 10
 - Windows 11
-
-> [!IMPORTANT]
-> **A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing"**. If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must configure devices with this additional policy. You can do this by rerunning the [Update Compliance Configuration Script](update-compliance-configuration-script.md) if you configure your devices through Group Policy, or refer to [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) for details on manually configuring the new policy for both Group Policy and MDM.
->
-> Devices must have this policy configured by January 31, 2022, to remain enrolled in Update Compliance. Devices without this policy configured, including Windows 10 releases prior to version 1809 which do not support this policy, will stop appearing in Update Compliance reports after this date.
 
 This topic introduces the high-level steps required to enroll to the Update Compliance solution and configure devices to send data to it. The following steps cover the enrollment and device configuration workflow.
 
@@ -49,7 +40,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 - **Diagnostic data requirements**: Update Compliance requires devices to send diagnostic data at *Required* level (previously *Basic*). Some queries in Update Compliance require devices to send diagnostic data at *Optional* level (previously *Full*) for Windows 11 devices or *Enhanced* level for Windows 10 devices. To learn more about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 - **Data transmission requirements**: Devices must be able to contact specific endpoints required to authenticate and send diagnostic data. These are enumerated in detail at [Configuring Devices for Update Compliance manually](update-compliance-configuration-manual.md).
 - **Showing device names in Update Compliance**: For Windows 10, version 1803 or later, device names will not appear in Update Compliance unless you individually opt-in devices by using policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
-- **Azure AD device join**: All devices enrolled in Update Compliance must meet all prerequisites for enabling Windows diagnostic data processor configuration, including the Azure AD join requirement. This prerequisite will be enforced for Update Compliance starting on October 15, 2022.
+- **Azure AD device join** or **hybrid Azure AD join**: All devices enrolled in Update Compliance must meet all prerequisites for enabling Windows diagnostic data processor configuration, including the Azure AD join requirement. This prerequisite will be enforced for Update Compliance starting on October 15, 2022.
 
 ## Add Update Compliance to your Azure subscription
 
@@ -101,19 +92,22 @@ Once the solution is in place, you can leverage one of the following Azure roles
 
 > [!NOTE]
 > It is not currently supported to programmatically enroll to Update Compliance via the [Azure CLI](/cli/azure) or otherwise. You must manually add Update Compliance to your Azure subscription.
-
+ 
 ### Get your CommercialID
 
-A CommercialID is a globally unique identifier assigned to a specific Log Analytics workspace. The CommercialID is copied to an MDM or Group Policy and is used to identify devices in your environment.
+A `CommercialID` is a globally unique identifier assigned to a specific Log Analytics workspace. The `CommercialID` is copied to an MDM or Group Policy and is used to identify devices in your environment. The `Commercial ID` directs your clients to the Update Compliance solution in your Log Analytics workspace. You'll need this ID when you configure clients to send data to Update Compliance.
 
-To find your CommercialID within Azure:
+1. If needed, sign into the [Azure portal](https://portal.azure.com).
+1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
+1. Select **Log Analytics workspaces**.
+1. Select the Log Analytics workspace that you added the Update Compliance solution to.
+1. Select **Solutions** from the Log Analytics workspace, then select **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** to go to the summary page for the solution. 
+1. Select **Update Compliance Settings** from the **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** summary page.
+1. The **Commercial Id Key** is listed in the text box with an option to copy the ID. The **Commercial Id Key** is commonly referred to as the `CommercialID` or **Commercial ID** in Update Compliance.
 
-1. Navigate to the **Solutions** tab for your workspace, and then select the **WaaSUpdateInsights** solution.
-2. From there, select the Update Compliance Settings page on the navbar.
-3. Your CommercialID is available in the settings page.
+   > [!Warning]
+   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a Commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and can result in data loss.
 
-> [!IMPORTANT]
-> Regenerate your CommercialID only if your original ID can no longer be used or if you want to completely reset your workspace. Regenerating your CommercialID cannot be undone and will result in you losing data for all devices that have the current CommercialID until the new CommercialID is deployed to devices.
 
 ## Enroll devices in Update Compliance
 

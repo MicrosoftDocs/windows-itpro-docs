@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Snmp
-description: Policy CSP - ADMX_Snmp
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_Snmp.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/24/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Snmp
@@ -48,8 +48,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -74,13 +75,13 @@ A valid community is a community recognized by the SNMP service, while a communi
 
 If you enable this policy setting, the SNMP agent only accepts requests from management systems within the communities it recognizes, and only SNMP Read operation is allowed for the community.
 
-If you disable or do not configure this policy setting, the SNMP service takes the Valid Communities configured on the local computer instead.
+If you disable or don't configure this policy setting, the SNMP service takes the Valid Communities configured on the local computer instead.
 
 Best practice: For security purposes, it is recommended to restrict the HKLM\SOFTWARE\Policies\SNMP\Parameters\ValidCommunities key to allow only the local admin group full control.
 
 > [!NOTE]
 > - It is good practice to use a cryptic community name.
-> - This policy setting has no effect if the SNMP agent is not installed on the client computer.
+> - This policy setting has no effect if the SNMP agent isn't installed on the client computer.
 
 Also, see the other two SNMP settings: "Specify permitted managers" and "Specify trap configuration".
 
@@ -106,8 +107,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -132,12 +134,12 @@ The manager is located on the host computer on the network. The manager's role i
 
 If you enable this policy setting, the SNMP agent only accepts requests from the list of permitted managers that you configure using this setting.
 
-If you disable or do not configure this policy setting, SNMP service takes the permitted managers configured on the local computer instead.
+If you disable or don't configure this policy setting, SNMP service takes the permitted managers configured on the local computer instead.
 
 Best practice: For security purposes, it is recommended to restrict the HKLM\SOFTWARE\Policies\SNMP\Parameters\PermittedManagers key to allow only the local admin group full control.
 
 > [!NOTE]
-> This policy setting has no effect if the SNMP agent is not installed on the client computer.
+> This policy setting has no effect if the SNMP agent isn't installed on the client computer.
 
 Also, see the other two SNMP policy settings: "Specify trap configuration" and "Specify Community Name".
 
@@ -163,8 +165,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -189,10 +192,10 @@ This policy setting allows you to configure the name of the hosts that receive t
 
 If you enable this policy setting, the SNMP service sends trap messages to the hosts within the "public" community.
 
-If you disable or do not configure this policy setting, the SNMP service takes the trap configuration configured on the local computer instead.
+If you disable or don't configure this policy setting, the SNMP service takes the trap configuration configured on the local computer instead.
 
 > [!NOTE]
-> This setting has no effect if the SNMP agent is not installed on the client computer.
+> This setting has no effect if the SNMP agent isn't installed on the client computer.
 
 Also, see the other two SNMP settings: "Specify permitted managers" and "Specify Community Name".
 
@@ -214,3 +217,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

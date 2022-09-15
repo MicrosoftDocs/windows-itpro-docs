@@ -1,19 +1,17 @@
 ---
 title: EnterpriseModernAppManagement XSD
 description: In this article, view the EnterpriseModernAppManagement XSD example so you can set application parameters.
-ms.assetid: D393D094-25E5-4E66-A60F-B59CC312BF57
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
 # EnterpriseModernAppManagement XSD
-
 
 Here is the XSD for the application parameters.
 

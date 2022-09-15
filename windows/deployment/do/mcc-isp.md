@@ -627,7 +627,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
 1. Download the ISO. You can use either Ubuntu Desktop or Ubuntu Server.
 
     - [Download Ubuntu Desktop](https://ubuntu.com/download/desktop)
-    - [Download Ubuntu Server](https://mirror.cs.jmu.edu/pub/ubuntu-iso/20.04.2/ubuntu-20.04.2-live-server-amd64.iso)
+    - [Download Ubuntu Server](https://ubuntu.com/download/server)
 
 1. Start the **New Virtual Machine Wizard** in Hyper-V.
 

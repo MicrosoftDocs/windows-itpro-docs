@@ -1,17 +1,16 @@
 ---
 title: Get Inventory
 description: The Get Inventory operation retrieves information from the Microsoft Store for Business to determine if new or updated applications are available.
-MS-HAID:
-- 'p\_phdevicemgmt.get\_seatblock'
-- 'p\_phDeviceMgmt.get\_inventory'
-ms.assetid: C5485722-FC49-4358-A097-74169B204E74
+MS-HAID: 
+  - 'p\_phdevicemgmt.get\_seatblock'
+  - 'p\_phDeviceMgmt.get\_inventory'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/18/2017
 ---
 

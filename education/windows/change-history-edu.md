@@ -2,20 +2,22 @@
 title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
 keywords: Windows 10 education documentation, change history
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: dansimp
-ms.author: dansimp
-ms.date: 05/21/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Change history for Windows 10 for Education
 
-This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
+This topic lists new and updated topics in the [Windows 10 for Education](index.yml) documentation.
 
 ## May 2019
 
@@ -135,7 +137,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | New or changed topic | Description|
 | --- | --- |
 | [Windows 10 editions for education customers](windows-editions-for-education-customers.md)  | New. Learn about the two editions in Windows 10, version 1607 that's designed for the needs of K-12 institutions. |
-|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)|New. Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, AD DS, and Microsoft Azure AD, use SCCM, Intune, and Group Policy to manage devices. |
+|[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)|New. Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, AD DS, and Microsoft Azure AD, use Configuration Manager, Intune, and Group Policy to manage devices. |
 
 ## June 2016
 

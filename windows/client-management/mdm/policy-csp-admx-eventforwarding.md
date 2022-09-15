@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_EventForwarding
-description: Policy CSP - ADMX_EventForwarding
-ms.author: dansimp
+description: Learn about the Policy CSP - ADMX_EventForwarding.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 08/17/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_EventForwarding
@@ -47,8 +47,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -97,8 +98,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -122,11 +124,11 @@ If you enable this policy setting, you can configure the Source Computer to cont
 Use the following syntax when using the HTTPS protocol:  
 
 ``` syntax
-
 Server=https://<FQDN of the collector>:5986/wsman/SubscriptionManager/WEC,Refresh=<Refresh interval in seconds>,IssuerCA=<Thumb print of the client authentication certificate>.
 ```
 
-When using the HTTP protocol, use port 5985.
+>[!Note]
+> When using the HTTP protocol, use port 5985.
 
 If you disable or don't configure this policy setting, the Event Collector computer won't be specified.
 
@@ -146,3 +148,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

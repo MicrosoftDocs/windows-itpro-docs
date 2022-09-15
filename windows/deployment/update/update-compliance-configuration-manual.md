@@ -3,11 +3,7 @@ title: Manually configuring devices for Update Compliance
 ms.reviewer: 
 manager: dougeby
 description: Manually configuring devices for Update Compliance
-keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.localizationpriority: medium
@@ -21,9 +17,6 @@ ms.topic: article
 
 - Windows 10
 - Windows 11
-
-> [!NOTE]
-> As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
 
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows client. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
@@ -49,14 +42,15 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
 | Policy | Data type | Value | Function |
 |--------------------------|-|-|------------------------------------------------------------|
 |**Provider/*ProviderID*/**[**CommercialID**](/windows/client-management/mdm/dmclient-csp#provider-providerid-commercialid) |String |[Your CommercialID](update-compliance-get-started.md#get-your-commercialid) |Identifies the device as belonging to your organization. |
-|**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |Integer | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. |
+|**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |Integer | 1 - Basic |Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date. For more information, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization). |
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) |Integer |1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
 |**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) |Integer | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 | **System/**[**AllowUpdateComplianceProcessing**](/windows/client-management/mdm/policy-csp-system#system-allowUpdateComplianceProcessing) |Integer | 16 - Allowed | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
-
+| **System/**[AllowCommercialDataPipeline](/windows/client-management/mdm/policy-csp-system#system-allowcommercialdatapipeline) | Integer | 1 - Enabled | Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device. |
+ 
 ### Group policies
 
-All Group policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
+All Group policies that need to be configured for Update Compliance are under **Computer Configuration>Policies>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
 
 | Policy | Value | Function |
 |---------------------------|-|-----------------------------------------------------------|
@@ -65,20 +59,15 @@ All Group policies that need to be configured for Update Compliance are under **
 |**Configure telemetry opt-in setting user interface** | 1 - Disable diagnostic data opt-in Settings |(in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. |
 |**Allow device name to be sent in Windows diagnostic data** | 1 - Enabled | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or Disabled, Device Name will not be sent and will not be visible in Update Compliance, showing `#` instead. |
 |**Allow Update Compliance processing** | 16 - Enabled | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
+| **Allow commercial data pipeline** | 1 - Enabled | Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device. |
+
 
 ## Required endpoints
 
 To enable data sharing between devices, your network, and Microsoft's Diagnostic Data Service, configure your proxy to allow devices to contact the below endpoints.
 
-| **Endpoint**  | **Function**  |
-|---------------------------------------------------------|-----------|
-| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803 and later. DeviceCensus.exe must run on a regular cadence and contact this endpoint in order to receive the majority of [WaaSUpdateStatus](update-compliance-schema-waasupdatestatus.md) information for Update Compliance. |
-| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier. |
-| `https://settings-win.data.microsoft.com` | Required for Windows Update functionality. |
-| `http://adl.windows.com` | Required for Windows Update functionality. |
-| `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER), used to provide more advanced error reporting if certain Feature Update deployment failures occur. |
-| `https://oca.telemetry.microsoft.com`  | Online Crash Analysis, used to provide device-specific recommendations and detailed errors in the event of certain crashes. |
-| `https://login.live.com` | This endpoint facilitates MSA access and is required to create the primary identifier we use for devices. Without this service, devices will not be visible in the solution. The Microsoft Account Sign-in Assistant service must also be running (wlidsvc). |
+<!--Using include for endpoint access requirements-->
+[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
 
 ## Required services
 

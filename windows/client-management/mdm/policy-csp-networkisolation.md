@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - NetworkIsolation
 description: Learn how Policy CSP - NetworkIsolation contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - NetworkIsolation
-
-
 
 <hr/>
 
@@ -48,7 +46,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -60,6 +57,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -102,6 +100,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -157,6 +156,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -174,7 +174,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <!--/Scope-->
 <!--Description-->
-Integer value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
+Integer value that tells the client to accept the configured list and not to use heuristics to attempt and find other subnets.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -198,6 +198,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -240,6 +241,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -257,11 +259,10 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This list is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected. These locations will be considered a safe destination for enterprise data to be shared to. This list is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
+This is a list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected. These locations will be considered a safe destination for enterprise data to be shared to. This list is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
 > [!NOTE]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
- 
 
 Here are the steps to create canonical domain names:
 
@@ -283,6 +284,7 @@ Here are the steps to create canonical domain names:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -325,6 +327,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -366,6 +369,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -400,3 +404,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

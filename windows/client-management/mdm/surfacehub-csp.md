@@ -1,14 +1,13 @@
 ---
 title: SurfaceHub CSP
 description: The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
-ms.assetid: 36FBBC32-AD6A-41F1-86BF-B384891AA693
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/28/2017
 ---
 
@@ -509,7 +508,7 @@ If this setting is true, the device account will be used for proxy authenticatio
 
 <a href="" id="properties-proxyservers"></a>**Properties/ProxyServers**
 
-Added in <a href="https://support.microsoft.com/help/4499162" data-raw-source="[KB4499162](https://support.microsoft.com/help/4499162)">KB4499162</a> for Windows 10, version 1703. Specifies FQDNs of proxy servers to provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This FQDN is a semi-colon separated list of server names, without any extra prefixes (for example, https://).
+Added in <a href="https://support.microsoft.com/help/4499162" data-raw-source="[KB4499162](https://support.microsoft.com/help/4499162)">KB4499162</a> for Windows 10, version 1703. Specifies hostnames of proxy servers to automatically provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names (FQDN), without any extra prefixes (for example, https://).
 
 - The data type is string. 
 - Supported operation is Get and Replace.
@@ -549,3 +548,7 @@ Primary key for authenticating with the workspace.
 
 - The data type is string. 
 - Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

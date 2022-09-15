@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - AttachmentManager
 description: Manage Windows marks file attachments with information about their zone of origin, such as restricted, internet, intranet, local.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - AttachmentManager
@@ -52,6 +52,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -70,6 +71,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
+
 This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This feature requires NTFS in order to function correctly, and will fail without notice on FAT32. If the zone information is not preserved, Windows can't make proper risk assessments.
 
 If you enable this policy setting, Windows doesn't mark file attachments with their zone information.
@@ -102,6 +104,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -152,6 +155,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

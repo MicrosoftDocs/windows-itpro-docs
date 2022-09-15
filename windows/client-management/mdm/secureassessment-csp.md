@@ -1,14 +1,13 @@
 ---
 title: SecureAssessment CSP
 description: Learn how the SecureAssessment configuration service provider (CSP) is used to provide configuration information for the secure assessment browser.
-ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -47,7 +47,7 @@ The supported operations are Add, Delete, Get, and Replace.
 The user name of the test taking account.
 
 - To specify a domain account, use domain\\user.
-- To specify an AAD account, use username@tenant.com.
+- To specify an Azure Active Directory account, use username@tenant.com.
 - To specify a local account, use the username.
 
 The supported operations are Add, Delete, Get, and Replace.

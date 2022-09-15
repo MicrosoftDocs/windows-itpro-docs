@@ -1,18 +1,19 @@
 ---
 title: Policy CSP - ADMX_PowerShellExecutionPolicy
-description: Policy CSP - ADMX_PowerShellExecutionPolicy
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_PowerShellExecutionPolicy.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 10/26/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_PowerShellExecutionPolicy
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -51,8 +52,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -72,7 +74,7 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to turn on logging for Windows PowerShell modules.
 
-If you enable this policy setting, pipeline execution events for members of the specified modules are recorded in the Windows PowerShell log in Event Viewer. Enabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to True.
+If you enable this policy setting, pipeline execution events for members of the specified modules are recorded in the Windows PowerShell login Event Viewer. Enabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to True.
 
 If you disable this policy setting, logging of execution events is disabled for all Windows PowerShell modules. Disabling this policy setting for a module is equivalent to setting the LogPipelineExecutionDetails property of the module to False.  If this policy setting isn't configured, the LogPipelineExecutionDetails property of a module or snap-in determines whether the execution events of a module or snap-in are logged. By default, the LogPipelineExecutionDetails property of all modules and snap-ins is set to False.
 
@@ -103,8 +105,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -126,7 +129,7 @@ This policy setting lets you configure the script execution policy, controlling 
 
 If you enable this policy setting, the scripts selected in the drop-down list are allowed to run.  The "Allow only signed scripts" policy setting allows scripts to execute only if they're signed by a trusted publisher.
 
-The "Allow local scripts and remote signed scripts" policy setting allows any local scripts to run; scripts that originate from the Internet must be signed by a trusted publisher.  The "Allow all scripts" policy setting allows all scripts to run.
+The "Allow local scripts and remote signed scripts" policy setting allows any local scripts to run. And, the scripts that originate from the Internet must be signed by a trusted publisher.  The "Allow all scripts" policy setting allows all scripts to run.
 
 If you disable this policy setting, no scripts are allowed to run.
 
@@ -155,8 +158,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -207,8 +211,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -252,3 +257,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

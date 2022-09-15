@@ -1,16 +1,11 @@
 ---
 title: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
 description: Learn how to use Configuration Manager and Microsoft Deployment Toolkit (MDT) to refresh a Windows 7 SP1 client with Windows 10.
-ms.assetid: 57c81667-1019-4711-b3de-15ae9c5387c7
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-keywords: upgrade, install, installation, computer refresh
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
@@ -22,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 
 - Windows 10
 
-This topic will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh is not the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation. Also see the MDT refesh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
+This topic will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh isn't the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation. Also see the MDT refresh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
 
 A computer refresh with Configuration Manager works the same as it does with MDT Lite Touch installation. Configuration Manager also uses the User State Migration Tool (USMT) from the Windows Assessment and Deployment Kit (Windows ADK) 10 in the background. A computer refresh with Configuration Manager has the following steps:
 
@@ -36,8 +31,8 @@ A computer refresh with Configuration Manager works the same as it does with MDT
 
 An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md). 
 
-For the purposes of this article, we will use one server computer (CM01) and one client computer (PC0003).
-- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
+For the purposes of this article, we'll use one server computer (CM01) and one client computer (PC0003).
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide, CM01 is a standalone primary site server.
 - PC0003 is a domain member client computer running Windows 7 SP1, or a later version of Windows, with the Configuration Manager client installed, that will be refreshed to Windows 10.
 
 >[!NOTE]
@@ -45,7 +40,7 @@ For the purposes of this article, we will use one server computer (CM01) and one
 
 All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
-All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
+All server and client computers referenced in this guide are on the same subnet. This interrelation isn't required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
 >[!IMPORTANT]
 >This article assumes that you have [configured Active Directory permissions](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md#configure-active-directory-permissions) in the specified OU for the **CM_JD** account, and the client's Active Directory computer account is in the **Contoso > Computers > Workstations** OU. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed.
@@ -81,7 +76,7 @@ On **CM01**:
 
   Use the default settings to complete the remaining wizard pages and click **Close**.
 
-2.  Review the Install Windows 10 Enterprise x64 collection. Do not continue until you see the PC0003 machine in the collection.
+2.  Review the Install Windows 10 Enterprise x64 collection. Don't continue until you see the PC0003 machine in the collection.
 
     >[!NOTE]
     >It may take a short while for the collection to refresh; you can view progress via the Colleval.log file. If you want to speed up the process, you can manually update membership on the Install Windows 10 Enterprise x64 collection by right-clicking the collection and selecting Update Membership.
@@ -99,7 +94,7 @@ Using the Configuration Manager console, in the Software Library workspace, expa
     - Make available to the following: Configuration Manager clients, media and PXE
 
     >[!NOTE]
-    >It is not necessary to make the deployment available to media and Pre-Boot Execution Environment (PXE) for a computer refresh, but you will use the same deployment for bare-metal deployments later on and you will need it at that point.
+    >It's not necessary to make the deployment available to media and Pre-Boot Execution Environment (PXE) for a computer refresh, but you will use the same deployment for bare-metal deployments later on and you will need it at that point.
 
 - Scheduling
     - &lt;default&gt;

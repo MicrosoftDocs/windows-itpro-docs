@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_DeviceSetup
-description: Policy CSP - ADMX_DeviceSetup
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_DeviceSetup.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 11/19/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_DeviceSetup
@@ -46,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -92,8 +93,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -114,7 +116,10 @@ This policy setting allows you to specify the order in which Windows searches so
 
 If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
 
-Searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows won't continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available. If the setting for searching only if needed is specified, then Windows will search for a driver only if a driver isn't locally available on the system.
+>[!Note]
+> Searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows won't continually search for updates. 
+
+This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available. If the setting for searching is enabled and only when needed is specified, then Windows will search for a driver only if a driver isn't locally available on the system.
 
 If you disable or don't configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
 
@@ -133,3 +138,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

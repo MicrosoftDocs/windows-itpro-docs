@@ -1,20 +1,18 @@
 ---
 title: Policy CSP - WindowsLogon
 description: Use the Policy CSP - WindowsLogon setting to control whether a device automatically signs in and locks the last interactive user after the system restarts.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - WindowsLogon
-
-
 
 <hr/>
 
@@ -52,18 +50,19 @@ manager: dansimp
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="windowslogon-allowautomaticrestartsignon"></a>**WindowsLogon/AllowAutomaticRestartSignOn**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -120,11 +119,13 @@ ADMX Info:
 <a href="" id="windowslogon-configautomaticrestartsignon"></a>**WindowsLogon/ConfigAutomaticRestartSignOn**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -181,11 +182,13 @@ ADMX Info:
 <a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -227,11 +230,13 @@ ADMX Info:
 <a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -298,11 +303,13 @@ ADMX Info:
 <a href="" id="windowslogon-enablefirstlogonanimation"></a>**WindowsLogon/EnableFirstLogonAnimation**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -359,11 +366,13 @@ Supported values:
 <a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -405,11 +414,13 @@ ADMX Info:
 <a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -457,3 +468,6 @@ To validate on Desktop, do the following steps:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

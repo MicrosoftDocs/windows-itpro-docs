@@ -2,16 +2,19 @@
 title: Change to Windows 10 Education from Windows 10 Pro
 description: Learn how IT Pros can opt into changing to Windows 10 Pro Education from Windows 10 Pro.
 keywords: change, free change, Windows 10 Pro to Windows 10 Pro Education, Windows 10 Pro to Windows 10 Pro Education, education customers, Windows 10 Pro Education, Windows 10 Pro
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 05/21/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro
@@ -28,7 +31,7 @@ To take advantage of this offering, make sure you meet the [requirements for cha
 ## Requirements for changing
 Before you change to Windows 10 Pro Education, make sure you meet these requirements:
 - Devices must be running Windows 10 Pro, version 1607 or higher.
-- Devices must be Azure Active Directory joined, or domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
+- Devices must be Azure Active Directory-joined, or domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices).
 
     If you haven't domain joined your devices already, [prepare for deployment of Windows 10 Pro Education licenses](#preparing-for-deployment-of-windows-10-pro-education-licenses).
 
@@ -47,7 +50,7 @@ For schools that want to standardize all their Windows 10 Pro devices to Windows
 
 In this scenario:
 
-- The IT admin of the tenant chooses to turn on the change for all Azure AD joined devices.
+- The IT admin of the tenant chooses to turn on the change for all Azure AD-joined devices.
 - Any device that joins the Azure AD will change automatically to Windows 10 Pro Education.
 - The IT admin has the option to automatically roll back to Windows 10 Pro, if desired. See [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
 
@@ -92,7 +95,7 @@ You can use Windows Configuration Designer to create a provisioning package that
 3. In the **Enter a product key** window, enter the MAK key for Windows 10 Pro Education and click **Next**.
 
 
-## Education customers with Azure AD joined devices
+## Education customers with Azure AD-joined devices
 
 Academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Education without using activation keys or reboots. When one of your users enters their Azure AD credentials associated with a Windows 10 Pro Education license, the operating system changes to Windows 10 Pro Education and all the appropriate Windows 10 Pro Education features are unlocked. Previously, only schools or organizations purchasing devices as part of the Shape the Future K-12 program or with a Microsoft Volume Licensing Agreement could deploy Windows 10 Pro Education to their users. Now, if you have an Azure AD for your organization, you can take advantage of the Windows 10 Pro Education features.
 
@@ -145,7 +148,7 @@ Enabling the automatic change also triggers an email message notifying all globa
 
 So what will users experience? How will they change their devices?
 
-### For existing Azure AD joined devices
+### For existing Azure AD-joined devices
 Existing Azure AD domain joined devices will be changed to Windows 10 Pro Education the next time the user logs in. That's it! No other steps are needed.
 
 ### For new devices that are not Azure AD joined
@@ -251,7 +254,7 @@ Devices must be running Windows 10 Pro, version 1607 or higher, or domain joined
     dsregcmd /status
     ```
 
-2.  Review the output under Device State. If the **AzureAdJoined** status is YES, the device is Azure Active Directory joined.
+2.  Review the output under Device State. If the **AzureAdJoined** status is YES, the device is Azure Active Directory-joined.
 
 **To determine the version of Windows 10**
 

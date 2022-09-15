@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_SettingSync
-description: Policy CSP - ADMX_SettingSync
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_SettingSync.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/01/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_SettingSync
@@ -66,8 +66,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -84,11 +85,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "AppSync" group from syncing to and from this PC. This option turns off and disables the "AppSync" group on the "sync your settings" page in PC settings.
+This policy setting prevents the "AppSync" group from syncing to and from this PC. This option turns off and disables the "AppSync" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "AppSync" group won't be synced.
 
-Use the option "Allow users to turn app syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn app syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
 
@@ -114,8 +115,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -132,11 +134,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "app settings" group from syncing to and from this PC. This option turns off and disables the "app settings" group on the "sync your settings" page in PC settings.
+This policy seting prevents the "app settings" group from syncing to and from this PC. This option turns off and disables the "app settings" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "app settings" group won't be synced.
 
-Use the option "Allow users to turn app settings syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn app settings syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "app settings" group is on by default and configurable by the user.
 
@@ -162,8 +164,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -180,11 +183,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "passwords" group from syncing to and from this PC. This option turns off and disables the "passwords" group on the "sync your settings" page in PC settings.
+This policy seting prevents the "passwords" group from syncing to and from this PC. This option turns off and disables the "passwords" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "passwords" group won't be synced.
 
-Use the option "Allow users to turn passwords syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn passwords syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "passwords" group is on by default and configurable by the user.
 
@@ -210,8 +213,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -228,11 +232,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "desktop personalization" group from syncing to and from this PC. This option turns off and disables the "desktop personalization" group on the "sync your settings" page in PC settings.
+This policy setting prevents the "desktop personalization" group from syncing to and from this PC. This option turns off and disables the "desktop personalization" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "desktop personalization" group won't be synced.
 
-Use the option "Allow users to turn desktop personalization syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn desktop personalization syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "desktop personalization" group is on by default and configurable by the user.
 
@@ -258,8 +262,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -276,11 +281,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "personalize" group from syncing to and from this PC. This option turns off and disables the "personalize" group on the "sync your settings" page in PC settings.
+This policy setting prevents the "personalize" group from syncing to and from this PC. This option turns off and disables the "personalize" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "personalize" group won't be synced.
 
-Use the option "Allow users to turn personalize syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn personalize syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "personalize" group is on by default and configurable by the user.
 
@@ -306,8 +311,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -324,11 +330,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent syncing to and from this PC. This option turns off and disables the "sync your settings" switch on the "sync your settings" page in PC Settings.
+This policy setting prevents syncing to and from this PC. This option turns off and disables the "sync your settings" switch on the "sync your settings" page in PC Settings.
 
 If you enable this policy setting, "sync your settings" will be turned off, and none of the "sync your setting" groups will be synced on this PC.
 
-Use the option "Allow users to turn syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, "sync your settings" is on by default and configurable by the user.
 
@@ -354,8 +360,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -372,7 +379,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "Start layout" group from syncing to and from this PC. This option turns off and disables the "Start layout" group on the "sync your settings" page in PC settings.
+This policy setting prevents the "Start layout" group from syncing to and from this PC. This option turns off and disables the "Start layout" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "Start layout" group won't be synced.
 
@@ -402,8 +409,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -420,7 +428,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent syncing to and from this PC when on metered Internet connections. This option turns off and disables "sync your settings on metered connections" switch on the "sync your settings" page in PC Settings.
+This policy setting prevents syncing to and from this PC when on metered Internet connections. This option turns off and disables "sync your settings on metered connections" switch on the "sync your settings" page in PC Settings.
 
 If you enable this policy setting, syncing on metered connections will be turned off, and no syncing will take place when this PC is on a metered connection.
 
@@ -448,8 +456,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -466,11 +475,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevent the "Other Windows settings" group from syncing to and from this PC.  This option turns off and disables the "Other Windows settings" group on the "sync your settings" page in PC settings.
+This policy setting prevents the "Other Windows settings" group from syncing to and from this PC.  This option turns off and disables the "Other Windows settings" group on the "sync your settings" page in PC settings.
 
 If you enable this policy setting, the "Other Windows settings" group won't be synced.
 
-Use the option "Allow users to turn other Windows settings syncing on" so that syncing it turned off by default but not disabled.
+Use the option "Allow users to turn other Windows settings syncing on" so that syncing it is turned off by default but not disabled.
 
 If you don't set or disable this setting, syncing of the "Other Windows settings" group is on by default and configurable by the user.
 
@@ -491,3 +500,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

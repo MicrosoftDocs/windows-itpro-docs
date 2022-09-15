@@ -1,14 +1,13 @@
 ---
 title: NodeCache CSP
 description: Use the NodeCache configuration service provider (CSP) to synchronize, monitor, and manage the client cache.
-ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_Help
-description: Policy CSP - ADMX_Help
-ms.author: dansimp
+description: Learn about the Policy CSP - ADMX_Help.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/03/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_Help
@@ -22,7 +22,7 @@ manager: dansimp
 
 <hr/>
 
-<!--Policies--
+<!--Policies-->
 ## ADMX_Help policies  
 
 <dl>
@@ -51,8 +51,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -82,7 +83,7 @@ If you disable or don't configure this policy setting, DEP is turned on for HTML
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Turn off Data Execution Prevention for HTML Help Executible*
+-   GP Friendly name: *Turn off Data Execution Prevention for HTML Help Executable*
 -   GP name: *DisableHHDEP*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
@@ -99,8 +100,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -159,8 +161,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -210,8 +213,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -256,3 +260,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

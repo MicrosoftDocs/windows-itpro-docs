@@ -2,10 +2,7 @@
 title: What is Delivery Optimization?
 manager: dougeby
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
@@ -41,9 +38,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 | Device type | Minimum Windows version
 |------------------|---------------|
-| Computers running Windows 10 | Win 10 1511 |
+| Computers running Windows 10 | Windows 10 1511 |
 | Computers running Server Core installations of Windows Server | Windows Server 2019 |
-| Windows IoT devices | Win 10 1803 |
+| Windows IoT devices | Windows 10 1803 |
 
 ### Types of download content supported by Delivery Optimization
 
@@ -51,19 +48,19 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 | Windows Client | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
 |------------------|---------------|----------------|----------|----------------|
-| Windows Update (feature updates quality updates, language packs, drivers) | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Windows 10 Store files | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Windows 10 Store for Business files | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Windows Defender definition updates | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Intune Win32 apps| Win 10 1709, Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| Microsoft 365 Apps and updates | Win 10 1709, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Edge Browser Updates | Win 10 1809, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Configuration Manager Express updates| Win 10 1709 + Configuration Manager version Win 10 1711, Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| Dynamic updates| Win 10 1903, Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| MDM Agent | Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
-| Xbox Game Pass (PC) | Win 10 1809, Win 11 | :heavy_check_mark: |  | :heavy_check_mark: |
-| Windows Package Manager| Win 10 1809, Win 11 | :heavy_check_mark: |  |  |
-| MSIX | Win 10 2004, Win 11 | :heavy_check_mark: |  |  |
+| Windows Update (feature updates quality updates, language packs, drivers) | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows 10 Store files | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows 10 Store for Business files | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows Defender definition updates | Windows 10 1511, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Intune Win32 apps| Windows 10 1709, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| Microsoft 365 Apps and updates | Windows 10 1709, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Edge Browser Updates | Windows 10 1809, Windows 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Configuration Manager Express updates| Windows 10 1709 + Configuration Manager version 1711, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| Dynamic updates| Windows 10 1903, Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| MDM Agent | Windows 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| Xbox Game Pass (PC) | Windows 10 1809, Windows 11 | :heavy_check_mark: |  | :heavy_check_mark: |
+| Windows Package Manager| Windows 10 1809, Windows 11 | :heavy_check_mark: |  |  |
+| MSIX | Windows 10 2004, Windows 11 | :heavy_check_mark: |  |  |
 
 #### Windows Server
 

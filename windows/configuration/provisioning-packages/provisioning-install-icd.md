@@ -1,15 +1,13 @@
 ---
 title: Install Windows Configuration Designer (Windows 10/11)
-description: Learn how to install and use Windows Configuration Designer so you can easily configure devices running Windows 10/11. 
+description: Learn how to install and use Windows Configuration Designer so you can easily configure devices running Windows 10/11.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -79,10 +77,6 @@ On devices running Windows client, you can install [the Windows Configuration De
 - **Recommended**: Before starting, copy all source files to the PC running Windows Configuration Designer. Don't use external sources, like network shares or removable drives. Using local files reduces the risk of interrupting the build process from a network issue, or from disconnecting the USB device.
 
 **Next step**: [How to create a provisioning package](provisioning-create-package.md)
-
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
 ## Related articles
 

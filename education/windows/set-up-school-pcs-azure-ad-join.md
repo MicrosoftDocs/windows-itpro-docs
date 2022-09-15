@@ -2,16 +2,19 @@
 title: Azure AD Join with Set up School PCs app
 description: Describes how Azure AD Join is configured in the Set up School PCs app.
 keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 01/11/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---  
 
 # Azure AD Join for school PCs  
@@ -59,7 +62,7 @@ The following table describes each setting within **Device Settings**.
 | Setting                                                    | Description                                                                                                                                                                                                                                                                                                            |
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Users may join devices to Azure AD                         | Choose the scope of people in your organization that are allowed to join devices to Azure AD. **All** allows all users and groups within your tenant to join devices. **Selected** prompts you to choose specific users or groups to allow. **None** allows no one in your tenant to join devices to Azure AD. |  
-| More local administrators on Azure AD joined devices | Only applicable to Azure AD Premium tenants. Grant extra local administrator rights on devices, to selected users. Global administrators and the device owner are granted local administrator rights by default.                                                                                                  |
+| More local administrators on Azure AD-joined devices | Only applicable to Azure AD Premium tenants. Grant extra local administrator rights on devices, to selected users. Global administrators and the device owner are granted local administrator rights by default.                                                                                                  |
 | Users may register their devices with Azure AD             | Allow all or none of your users to register their devices with Azure AD (Workplace Join). If you're enrolled in Microsoft Intune or Mobile Device Management for Office 365, your devices are required to be registered. In this case, **All** is automatically selected for you.                                     |
 | Require Multi-Factor Authentication to join devices                  | Recommended when adding devices to Azure AD. When set to **Yes**, users that are setting up devices must enter a second method of authentication.                                                                                                             |
 | Maximum number of devices per user                         | Set the maximum number of devices a user is allowed to have in Azure AD. If the maximum is exceeded, the user must remove one or more existing devices before more devices are added.                                                                                                                               |

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_DiskNVCache
-description: Policy CSP - ADMX_DiskNVCache
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_DiskNVCache.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 08/12/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_DiskNVCache
@@ -49,8 +49,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -71,7 +72,6 @@ This policy setting turns off the boot and resumes optimizations for the hybrid 
 
 If you enable this policy setting, the system doesn't use the non-volatile (NV) cache to optimize boot and resume.  
 
-If you disable this policy setting, the system uses the NV cache to achieve faster boot and resume. 
 The system determines the data that will be stored in the NV cache to optimize boot and resume. 
 
 The required data is stored in the NV cache during shutdown and hibernate, respectively. This storage in such a location might cause a slight increase in the time taken for shutdown and hibernate.  If you don't configure this policy setting, the default behavior is observed and the NV cache is used for boot and resume optimizations. 
@@ -97,8 +97,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -125,8 +126,6 @@ If you disable this policy setting, the system will manage the NV cache on the d
 
 This policy setting will take effect on next boot.  If you don't configure this policy setting, the default behavior is to turn on support for the NV cache.
 
-
-
 <!--/Description-->
 
 <!--ADMXBacked-->
@@ -148,8 +147,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -172,7 +172,10 @@ If you enable this policy setting, frequently written files such as the file sys
 
 If you disable this policy setting, the system will store frequently written data into the non-volatile (NV) cache. This storage allows the system to exclusively run out of the NV cache and power down the disk for longer periods to save power.
 
-This usage can cause increased wear of the NV cache.  If you don't configure this policy setting, the default behavior of the system is observed and frequently written files will be stored in the NV cache.  Note: This policy setting is applicable only if the NV cache feature is on.
+This can cause increased wear of the NV cache.  If you don't configure this policy setting, the default behavior of the system is observed and frequently written files will be stored in the NV cache.  
+
+>[!Note]
+> This policy setting is applicable only if the NV cache feature is on.
 
 
 <!--/Description-->
@@ -192,3 +195,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

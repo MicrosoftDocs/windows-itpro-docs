@@ -2,7 +2,6 @@
 title: Prepare servicing strategy for Windows client updates
 description: A strong Windows client deployment strategy begins with establishing a simple, repeatable process for testing and deploying each feature update. 
 ms.prod: w10
-ms.mktglfcycl: manage
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

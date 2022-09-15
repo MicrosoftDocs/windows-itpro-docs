@@ -1,29 +1,22 @@
 ---
 title: Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Trust Deployment (Windows Hello for Business)
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- Hybrid deployment
-- Certificate trust
 
 Your environment is federated and you're ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
 
@@ -43,8 +36,8 @@ Use this three-phased approach for configuring device registration.
 > Before proceeding, you should familiarize yourself with device registration concepts such as:
 >
 > - Azure AD registered devices
-> - Azure AD joined devices
-> - Hybrid Azure AD joined devices
+> - Azure AD-joined devices
+> - Hybrid Azure AD-joined devices
 >
 > You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](/azure/active-directory/device-management-introduction)
 
@@ -55,7 +48,7 @@ Use this three-phased approach for configuring device registration.
 
 To support hybrid Windows Hello for Business, configure hybrid Azure AD join.
 
-Follow the guidance on [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
+Follow the guidance on [How to configure hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
 
 If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps:
 
@@ -69,11 +62,11 @@ You can learn more about this scenario by reading [Review on-premises UPN suppor
 
 ## Configure Active Directory to support Azure device synchronization
 
-Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD joined devices. Begin with upgrading the Active Directory Schema 
+Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD-joined devices. Begin with upgrading the Active Directory Schema 
 
 ### Upgrading Active Directory to the Windows Server 2016 or later Schema 
 
-To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016 or later.
+To use Windows Hello for Business with Hybrid Azure AD-joined devices, you must first upgrade your Active Directory schema to Windows Server 2016 or later.
 
 > [!IMPORTANT]
 > If you already have a Windows Server 2016 or later domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 or later Schema** (this section).

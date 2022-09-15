@@ -1,14 +1,13 @@
 ---
 title: ClientCertificateInstall CSP
-description: Learn how the ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
-ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
+description: The ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/30/2021
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |---|---|---|
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -376,7 +376,7 @@ The date type format is Null, meaning this node doesn’t contain a value.
 The only supported operation is Execute.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**  
-Optional. Specify the Azure AD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Azure Active Directory Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
 
 Data type is string.
 

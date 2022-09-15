@@ -1,14 +1,13 @@
 ---
 title: Update DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Update configuration service provider (CSP).
-ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 02/23/2018
 ---
 

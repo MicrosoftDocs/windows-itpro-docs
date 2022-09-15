@@ -1,14 +1,13 @@
 ---
 title: AppLocker CSP
 description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
-ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 11/19/2019
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

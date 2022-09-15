@@ -2,29 +2,30 @@
 title: Set up Take a Test on a single PC
 description: Learn how to set up and use the Take a Test app on a single PC.
 keywords: take a test, test taking, school, set up on single PC
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 11/08/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
-
 # Set up Take a Test on a single PC
-**Applies to:**
-
--   Windows 10  
 
 To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow the guidance in this topic.
 
 ## Set up a dedicated test account
 To configure the assessment URL and a dedicated testing account on a single PC, follow these steps.
 
-1. Sign into the Windows 10 device with an administrator account.
+1. Sign into the Windows device with an administrator account.
 2. Open the **Settings** app and go to **Accounts > Access work or school**.
 3. Click **Set up an account for taking tests**.
 
@@ -128,7 +129,7 @@ Once the shortcut is created, you can copy it and distribute it to students.
 
 
 ## Related topics
-[Take tests in Windows 10](take-tests-in-windows-10.md)
+[Take tests in Windows](take-tests-in-windows-10.md)
 
 [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
 

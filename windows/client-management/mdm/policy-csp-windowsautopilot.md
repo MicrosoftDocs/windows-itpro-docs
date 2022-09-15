@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - WindowsAutoPilot
 description: Learn to use the Policy CSP - WindowsAutoPilot setting to enable or disable Autopilot Agility feature.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: alekyaj
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/25/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - WindowsAutoPilot
@@ -39,6 +39,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -72,3 +73,6 @@ This policy enables Windows Autopilot to be kept up-to-date during the out-of-bo
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+[Policy configuration service provider](policy-configuration-service-provider.md)

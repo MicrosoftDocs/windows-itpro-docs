@@ -192,19 +192,19 @@
       - name: Overview
         href: threat-protection/index.md
       - name: Microsoft Defender Antivirus
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+        href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
       - name: Attack surface reduction rules
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction
+        href: /microsoft-365/security/defender-endpoint/attack-surface-reduction
       - name: Tamper protection
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+        href: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
       - name: Network protection
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection
+        href: /microsoft-365/security/defender-endpoint/network-protection
       - name: Controlled folder access
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders
+        href: /microsoft-365/security/defender-endpoint/controlled-folders
       - name: Exploit protection
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
+        href: /microsoft-365/security/defender-endpoint/exploit-protection
       - name: Microsoft Defender for Endpoint
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
+        href: /microsoft-365/security/defender-endpoint
    - name: More Windows security
      items: 
       - name: Override Process Mitigation Options to help enforce app-related security policies
@@ -219,25 +219,25 @@
          - name: Create a WIP policy using Microsoft Intune
            href: information-protection/windows-information-protection/overview-create-wip-policy.md
            items: 
-            - name: Create a WIP policy with MDM using the Azure portal for Microsoft Intune
+            - name: Create a WIP policy in Microsoft Intune
               href: information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md
               items: 
-                - name: Deploy your WIP policy using the Azure portal for Microsoft Intune
+                - name: Deploy your WIP policy in Microsoft Intune
                   href: information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure.md
-                - name: Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune
+                - name: Associate and deploy a VPN policy for WIP in Microsoft Intune
                   href: information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md
             - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
-            - name: Determine the Enterprise Context of an app running in WIP
+            - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
          - name: Create a WIP policy using Microsoft Endpoint Configuration Manager
            href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
            items: 
-            - name: Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager
+            - name: Create and deploy a WIP policy in Configuration Manager
               href: information-protection/windows-information-protection/create-wip-policy-using-configmgr.md
             - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
-            - name: Determine the Enterprise Context of an app running in WIP
+            - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
          - name: Mandatory tasks and settings required to turn on WIP
            href: information-protection/windows-information-protection/mandatory-settings-for-wip.md
@@ -260,6 +260,8 @@
               href: information-protection/windows-information-protection/using-owa-with-wip.md
          - name: Fine-tune WIP Learning
            href: information-protection/windows-information-protection/wip-learning.md
+         - name: Disable WIP
+           href: information-protection/windows-information-protection/how-to-disable-wip.md
 - name: Application security
   items:
    - name: Overview
@@ -314,29 +316,15 @@
           href: identity-protection/credential-guard/credential-guard-known-issues.md
     - name: Protect Remote Desktop credentials with Remote Credential Guard
       href: identity-protection/remote-credential-guard.md
+    - name: Configuring LSA Protection
+      href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
     - name: Technical support policy for lost or forgotten passwords
       href: identity-protection/password-support-policy.md
     - name: Access Control Overview
       href: identity-protection/access-control/access-control.md
       items: 
-        - name: Dynamic Access Control Overview
-          href: identity-protection/access-control/dynamic-access-control.md
-        - name: Security identifiers
-          href: identity-protection/access-control/security-identifiers.md
-        - name: Security Principals
-          href: identity-protection/access-control/security-principals.md
         - name: Local Accounts
           href: identity-protection/access-control/local-accounts.md
-        - name: Active Directory Accounts
-          href: identity-protection/access-control/active-directory-accounts.md
-        - name: Microsoft Accounts
-          href: identity-protection/access-control/microsoft-accounts.md
-        - name: Service Accounts
-          href: identity-protection/access-control/service-accounts.md
-        - name: Active Directory Security Groups
-          href: identity-protection/access-control/active-directory-security-groups.md
-        - name: Special Identities
-          href: identity-protection/access-control/special-identities.md
         - name: User Account Control
           href: identity-protection/user-account-control/user-account-control-overview.md
           items: 
@@ -394,7 +382,7 @@
    - name: Overview
      href: cloud.md
    - name: Mobile device management
-     href: https://docs.microsoft.com/windows/client-management/mdm/
+     href: /windows/client-management/mdm/
    - name: Windows 365 Cloud PCs
      href: /windows-365/overview
    - name: Azure Virtual Desktop

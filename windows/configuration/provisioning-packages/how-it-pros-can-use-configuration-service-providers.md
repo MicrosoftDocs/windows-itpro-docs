@@ -1,14 +1,11 @@
 ---
 title: Configuration service providers for IT pros (Windows 10/11)
-description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices. 
-ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
+description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -153,7 +150,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [DMClient CSP](/windows/client-management/mdm/dmclient-csp)
 -   [Email2 CSP](/windows/client-management/mdm/email2-csp)
 -   [EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)
--   [EnterpriseAppManagement CSP](/windows/client-management/mdm/enterpriseappmanagement-csp)
 -   [EnterpriseAssignedAccess CSP](/windows/client-management/mdm/enterpriseassignedaccess-csp)
 -   [EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)
 -   [EnterpriseExt CSP](/windows/client-management/mdm/enterpriseext-csp)
@@ -164,12 +160,12 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Maps CSP](/windows/client-management/mdm/maps-csp)
 -   [NAP CSP](/windows/client-management/mdm/filesystem-csp)
 -   [NAPDEF CSP](/windows/client-management/mdm/napdef-csp)
--   [NodeCache CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723265)
+-   [NodeCache CSP](https://go.microsoft.com/fwlink/p/?LinkId=723265)
 -   [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 -   [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider)
--   [PolicyManager CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723418)
+-   [PolicyManager CSP](https://go.microsoft.com/fwlink/p/?LinkId=723418)
 -   [Provisioning CSP](/windows/client-management/mdm/provisioning-csp)
--   [Proxy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723372)
+-   [Proxy CSP](https://go.microsoft.com/fwlink/p/?LinkId=723372)
 -   [PXLOGICAL CSP](/windows/client-management/mdm/pxlogical-csp)
 -   [Registry CSP](/windows/client-management/mdm/registry-csp)
 -   [RemoteFind CSP](/windows/client-management/mdm/remotefind-csp)

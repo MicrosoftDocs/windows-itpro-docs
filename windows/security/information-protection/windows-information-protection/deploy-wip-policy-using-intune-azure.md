@@ -1,16 +1,11 @@
 ---
 title: Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune (Windows 10)
 description: After you’ve created your Windows Information Protection (WIP) policy, you'll need to deploy it to your organization's enrolled devices.
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, Intune
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/05/2019

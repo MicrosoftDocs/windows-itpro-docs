@@ -1,14 +1,13 @@
 ---
 title: AllJoynManagement DDF
 description: Learn the OMA DM device description framework (DDF) for the AllJoynManagement configuration service provider.
-ms.assetid: 540C2E60-A041-4749-A027-BBAF0BB046E4
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 

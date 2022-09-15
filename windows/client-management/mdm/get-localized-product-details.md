@@ -1,14 +1,13 @@
 ---
 title: Get localized product details
 description: The Get localized product details operation retrieves the localization information of a product from the Microsoft Store for Business.
-ms.assetid: EF6AFCA9-8699-46C9-A3BB-CD2750C07901
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/07/2020
 ---
 

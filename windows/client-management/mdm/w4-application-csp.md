@@ -1,14 +1,13 @@
 ---
 title: w4 APPLICATION CSP
 description: Use an APPLICATION configuration service provider (CSP) that has an APPID of w4 to configure Multimedia Messaging Service (MMS).
-ms.assetid: ef42b82a-1f04-49e4-8a48-bd4e439fc43a
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -52,7 +52,6 @@ Optional. Specifies a user–readable application identity. This parameter is al
 This parameter takes a string value. The possible values to configure the NAME parameter are:
 
 -   Character string containing the name.
-
 -   no value specified
 
 > [!NOTE]
@@ -74,9 +73,7 @@ Required. Specifies the network access point identification name (NAPID) defined
 Required. Specifies the address of the MMS application server, as a string. The possible values to configure the ADDR parameter are:
 
 -   A Uniform Resource Identifier (URI)
-
 -   An IPv4 address represented in decimal format with dots as delimiters
-
 -   A fully qualified Internet domain name
 
 <a href="" id="ms"></a>**MS**

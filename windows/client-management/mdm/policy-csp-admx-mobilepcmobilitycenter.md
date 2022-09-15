@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_MobilePCMobilityCenter
-description: Policy CSP - ADMX_MobilePCMobilityCenter
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_MobilePCMobilityCenter.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 09/20/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_MobilePCMobilityCenter
@@ -46,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -65,11 +66,11 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 This policy setting turns off Windows Mobility Center.  
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file does not launch it.  
 
+- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.  
 - If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.  
 
-If you do not configure this policy setting, Windows Mobility Center is on by default.
+If you don't configure this policy setting, Windows Mobility Center is on by default.
 
 <!--/Description-->
 
@@ -93,8 +94,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -111,12 +113,12 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting turns off Windows Mobility Center.  
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file does not launch it.  
+This policy setting turns off Windows Mobility Center. 
 
+- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.  
 - If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.  
 
-If you do not configure this policy setting, Windows Mobility Center is on by default.
+If you don't configure this policy setting, Windows Mobility Center is on by default.
 
 <!--/Description-->
 
@@ -133,3 +135,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

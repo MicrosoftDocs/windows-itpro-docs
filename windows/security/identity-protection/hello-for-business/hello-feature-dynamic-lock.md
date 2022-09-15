@@ -1,29 +1,26 @@
 ---
 title: Dynamic lock
 description: Learn how to set Dynamic lock on Windows 10 and Windows 11 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 09/09/2019
-ms.reviewer: 
+ms.date: 07/12/2022
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Dynamic lock
 
-**Requirements:**
-
-* Windows 10, version 1703 or later
-
 Dynamic lock enables you to configure Windows devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value. This makes it more difficult for someone to gain access to your device if you step away from your PC and forget to lock it.
+
+> [!IMPORTANT]
+> This feature only locks the computer if the Bluetooth signal falls and the system is idle. If the system isn't idle (for example, an intruder gets access _before_ the Bluetooth signal falls below the limit), the device won't lock. Therefore, the dynamic lock feature is an additional barrier. It doesn't replace the need for the user to lock the computer. It only reduces the probability of someone gaining access if the user forgets to lock it.
 
 You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.  The name of the policy is **Configure dynamic lock factors**.
 

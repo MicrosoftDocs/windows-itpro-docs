@@ -1,14 +1,13 @@
 ---
 title: CMPolicyEnterprise CSP
 description: Learn how the CMPolicyEnterprise CSP is used to define rules that the Connection Manager uses to identify the correct connection for a connection request.
-ms.assetid: A0BE3458-ABED-4F80-B467-F842157B94BF
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|No|
 |Education|No|No|

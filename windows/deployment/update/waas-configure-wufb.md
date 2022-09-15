@@ -3,11 +3,9 @@ title: Configure Windows Update for Business
 manager: dougeby
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.collection:
   - m365initiative-coredeploy
   - highpri
-audience: itpro
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -27,6 +25,9 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
+> [!NOTE]
+> Windows Server _doesn't_ get feature updates from Windows Update, so only the quality update policies apply. This behavior doesn't apply to [Azure Stack hyperconverged infrastructure (HCI)](/azure-stack/hci/).
+ 
 You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and later, including Windows 11. The MDM policies use the OMA-URI setting from the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).  
 
 > [!IMPORTANT]

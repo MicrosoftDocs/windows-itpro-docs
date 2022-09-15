@@ -1,17 +1,13 @@
 ---
 title: Connect to remote Azure Active Directory-joined PC (Windows)
 description: You can use Remote Desktop Connection to connect to an Azure AD-joined PC.
-keywords: ["MDM", "device management", "RDP", "AADJ"]
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: devices
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: vinpa
 ms.date: 01/18/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.topic: article
 ms.collection: highpri
 ---
@@ -66,7 +62,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
       - Adding users using policy
      
-         Starting in Windows 10, version 2004, you can add users to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
+         Starting in Windows 10, version 2004, you can add users to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
 
          > [!TIP]
          > When you connect to the remote PC, enter your account name in this format: AzureAD\yourloginid@domain.com.
@@ -86,6 +82,9 @@ The table below lists the supported configurations for remotely connecting to an
 
 > [!NOTE]
 > If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
+
+> [!NOTE]
+> When an Azure Active Directory group is added to the Remote Desktop Users group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through Remote Desktop Protocol (they can't sign in using Remote Desktop Connection). In this scenario, Network Level Authentication should be disabled to run the connection.
 
 ## Related topics
 

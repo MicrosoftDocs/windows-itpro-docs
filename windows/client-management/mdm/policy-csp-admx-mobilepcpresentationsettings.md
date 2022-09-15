@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_MobilePCPresentationSettings
-description: Policy CSP - ADMX_MobilePCPresentationSettings
-ms.author: dansimp
+description: Learn about Policy CSP - ADMX_MobilePCPresentationSettings.
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 09/20/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_MobilePCPresentationSettings
@@ -47,8 +47,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -67,9 +68,9 @@ manager: dansimp
 <!--Description-->
 This policy setting turns off Windows presentation settings.  
 
-- If you enable this policy setting, Windows presentation settings cannot be invoked.  
+If you enable this policy setting, Windows presentation settings can't be invoked.  
 
-- If you disable this policy setting, Windows presentation settings can be invoked. 
+If you disable this policy setting, Windows presentation settings can be invoked. 
 
 The presentation settings icon will be displayed in the notification area. This will give users a quick and easy way to configure their system settings before a presentation to block system notifications and screen blanking, adjust speaker volume, and apply a custom background image.  
 
@@ -100,8 +101,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -120,14 +122,15 @@ ADMX Info:
 <!--Description-->
 This policy setting turns off Windows presentation settings.  
 
-- If you enable this policy setting, Windows presentation settings cannot be invoked.  
+If you enable this policy setting, Windows presentation settings can't be invoked.  
 
-- If you disable this policy setting, Windows presentation settings can be invoked. 
+If you disable this policy setting, Windows presentation settings can be invoked. 
 
 The presentation settings icon will be displayed in the notification area. This will give users a quick and easy way to configure their system settings before a presentation to block system notifications and screen blanking, adjust speaker volume, and apply a custom background image.  
 
 > [!NOTE]
 > Users will be able to customize their system settings for presentations in Windows Mobility Center.  
+
 If you do not configure this policy setting, Windows presentation settings can be invoked.
 
 <!--/Description-->
@@ -145,3 +148,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
