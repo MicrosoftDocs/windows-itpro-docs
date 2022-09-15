@@ -116,8 +116,6 @@ You can configure a dedicated testing account through MDM or Configuration Manag
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/LaunchURI
     - **String value** = *assessment URL*
 
-      See [Assessment URLs](#assessment-urls) for more information.
-
 4. Create a policy that associates the assessment URL to the account using the following values:
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
