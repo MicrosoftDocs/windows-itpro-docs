@@ -11,7 +11,7 @@ ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to
 ---
-# Multi-app kiosk mode on Windows 11 setup instructions
+# Set up a multi-app kiosk on Windows 11 devices
 
 **Applies to**
 
