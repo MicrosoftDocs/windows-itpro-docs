@@ -23,24 +23,29 @@ ms.topic: article
 
 <br/>
 
-## Sign up process  
+## Resource creation and sign up process  
 
-> [!IMPORTANT]  
-> The information you provide is matched against the information present on Peering DB for authentication purposes. Please make sure your organization and ISP information is up to date on Peering DB.
 
 <br/>
 
-1. Search for 'Microsoft Connected Cache'
+1. Search for 'Microsoft Connected Cache' and go through the process of creating a resource by selecting the region and enter a name for your Cache resource name. 
 <pic>
 
-1. Click on Sign up in the page that opens up.
+<br/>
+
+> [!IMPORTANT] 
+After your resource has been created, we need some information to verify you network operator status and approve you to host a Microsoft Connected Cache nodes.  
+> Please ensure that your [Peering DB](https://www.peeringdb.com/) organization information is up to date as this information will be used for verification.
+ 
+<br/>
+
+2. Add your organization ASN below. The NOC contact email will be used to send verification information. Additionally, please include any ASN(s) for downstream network operators that you may transit traffic for.
 <pic>
 
-1. Provide your ASN, Transit provider status and Transit ASN(if applicable) and click submit.
+1. Once we verify the information entered, a verification code will be sent to the NOC email address provided on Peering DB. In the Azure portal operator verification blade enter the verification code sent to the NOC email address.  
+**TBD Note:** The verification code will expire in 24 hours. You will need to generate a new code if it expires.
 <pic>
 
-1. Once we verify the information entered, a verification code will be sent to the email address provided on Peering DB. Enter the verification code that is sent to the email address in the box and click Verify.
-Note: The verification code will expire in 24 hours. You will need to generate a new code if it expires.
-<pic>
-
-1. Once everything is verified you can then create your MCC resource.
+<br/>
+<br/>
+Once verified follow the instruction on [Provisioning and Deploying MCC] to create and install the cache node.

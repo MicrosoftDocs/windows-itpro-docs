@@ -1,7 +1,7 @@
 ---
-title: Configure Microsoft Connected Cache for ISP
+title: Create Microsoft Connected Cache for ISP
 manager: dougeby
-description: Configuring Microsoft Connected Cache for ISP
+description: Creating Microsoft Connected Cache for ISP on Azure portal
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 
 
-# Configuring Microsoft Connected Cache for ISP
+# Create Microsoft Connected Cache for ISP
 
 **Applies to**
 
@@ -23,4 +23,15 @@ ms.topic: article
 
 <br/>
 
+> [!IMPORTANT]  
+> Before you can create your Microsoft Connected Cache, you will need to complete the sign up process here.
+
+<br/>
+<br/>
+
 ## Create Cache Node
+<br/>
+
+
+
+
