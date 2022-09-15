@@ -201,82 +201,72 @@ To configure federated sign-in using Microsoft Intune, use a custom profile.
 
 To configure federated sign-in using a provisioning package, use the following settings:
 
-    | Runtime setting |
-    |--------|
-    | <ul type="circle"><li> Path: **`FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Value: **Enabled**</li>|
-    | <ul type="circle"><li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
-    | <ul type="circle"><li> Path: **`Policies/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-    | <ul type="circle"><li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-    | <ul type="circle"><li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
+| Runtime setting |
+|--------|
+| <ul type="circle"><li> Path: **`FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Value: **Enabled**</li>|
+| <ul type="circle"><li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
+| <ul type="circle"><li> Path: **`Policies/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+| <ul type="circle"><li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during he sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
+| <ul type="circle"><li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
 
-    :::image type="content" source="images/edu-federated-authentication-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
+:::image type="content" source="images/edu-federated-authentication-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
 
 #### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 To configure federated sign-in using a group policy object, use the following settings:
 
-    :::row:::
-      :::column span="1":::
-          OMA-URI:
-      :::column-end:::
-      :::column span="3":::
-          **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column span="1":::
-          Data type:
-          Value:
-      :::column-end:::
-      :::column span="3":::
-          **Integer**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column span="1":::
-          Value:
-      :::column-end:::
-      :::column span="3":::
-          **1**
-      :::column-end:::
-    :::row-end:::
-
-    :::row:::
-      :::column span="1":::
-          OMA-URI:
-      :::column-end:::
-      :::column span="3":::
-          **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column span="1":::
-          Data type:
-          Value:
-      :::column-end:::
-      :::column span="3":::
-          **Integer**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column span="1":::
-          Value:
-      :::column-end:::
-      :::column span="3":::
-          **1**
-      :::column-end:::
-    :::row-end:::
-
-    | Policy |
-    |--------|
-    | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-    | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Data type: **String** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
-    | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-    | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-    | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
+:::row:::
+  :::column span="1":::
+      OMA-URI:
+  :::column-end:::
+  :::column span="3":::
+      **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+      Data type:
+      Value:
+  :::column-end:::
+  :::column span="3":::
+      **Integer**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+      Value:
+  :::column-end:::
+  :::column span="3":::
+      **1**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+      OMA-URI:
+  :::column-end:::
+  :::column span="3":::
+      **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+      Data type:
+      Value:
+  :::column-end:::
+  :::column span="3":::
+      **Integer**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+      Value:
+  :::column-end:::
+  :::column span="3":::
+      **1**
+  :::column-end:::
+:::row-end:::
 
 ---
-
 
 ## Related articles
 
