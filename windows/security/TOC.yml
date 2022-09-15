@@ -9,7 +9,6 @@
     - name: Overview
       href: hardware.md
     - name: Microsoft Pluton secured processor
-      href: information-protection/pluton/microsoft-pluton-security-processor.md
       items:
         - name: Microsoft Pluton overview
           href: information-protection/pluton/microsoft-pluton-security-processor.md
