@@ -596,7 +596,7 @@ KioskModeApp Replace
 > This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
 >
 > - StartPins element is used to pin apps to the Start menu and uses the [pinnedList JSON](/windows/configuration/customize-start-menu-layout-windows-11#get-the-pinnedlist-json) format.
-> - TaskbarLayout element is used to pin apps to the taskbar and uses the [TaskbarLayoutModification XML](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar#author-a-taskbarlayoutmodificationxml-file) format.
+> - TaskbarLayout element is used to pin apps to the taskbar and uses the [TaskbarLayoutModification XML](/windows/configuration/customize-taskbar-windows-11#create-the-xml-file) format.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
