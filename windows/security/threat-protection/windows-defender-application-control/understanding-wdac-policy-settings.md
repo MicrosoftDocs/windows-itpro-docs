@@ -15,7 +15,7 @@ ms.reviewer: jgeurten
 ms.author: dansimp
 manager: dansimp
 ms.date: 10/11/2021
-ms.technology: mde
+ms.technology: m365-security
 ---
 
 # Understanding WDAC Policy Settings
