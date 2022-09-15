@@ -23,6 +23,7 @@ ms.topic: article
 
 <br/>
 
+<<<<<<< HEAD
 
 > [!IMPORTANT]  
 > Before you can provision and deploy your cache node, you will need to complete the sign up process [here](windows\deployment\do\mcc-isp-signup.md) and create a cache node [here](windows\deployment\do\mcc-isp-create.md).
@@ -85,3 +86,10 @@ Download this script to your server.
 <br/>
 
 8. If there were no errors, you have set up your cache node. To verify the server is set up correctly, follow the steps verification steps [here](windows\deployment\do\mcc-isp-verify-cache-node.md).
+=======
+## Provision Cache Node
+<br/>
+
+> [!IMPORTANT]  
+> Before you can create your MCC, you will need to complete the sign up process.
+>>>>>>> 8c04f22f34913ee3365dc8b9d705dbc240dd7f1c
