@@ -25,10 +25,12 @@ ms.topic: article
 ## Sign up Errors
 
 ### Could not verify account:  
-During sign up we verify the information you provide against what is present in Peering DB. Make sure the information you have provided on Peering DB is up to date and matches what you provide during sign up.
+During sign up we verify the information you provide against what is present in [Peering DB]. Make sure the information you have provided on Peering DB is up to date and matches what you provide during sign up.
+<br/>
+<br/>
 
-### Invalid verification code 
-During sign up, a verification code is sent to your NOC email address present in Peering DB. This code expires in 24 hours. You will need to request a new verification code and use that to complete sign up.  
+### Invalid verification code: 
+During sign up, a verification code is sent to your NOC email address present in Peering DB. **TBD** This code expires in 24 hours. You will need to request a new verification code and use that to complete sign up.  
 <br/>
 
 <br/>
@@ -42,9 +44,7 @@ If you previously had access to your cache nodes but it is now no longer accessi
 1. Create a new Azure Pay As You Go subscription  
 1. Recreate the cache nodes using the new subscription 
 
-#### Recommeded Documents:  
+#### Recommended Documents:  
 [Steps to obtain Azure subscription](https://aka.ms/MCC-Azure-Subscription)   
 [Pay-as-you-go-subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/)  
 [Azure free account FAQs](https://azure.microsoft.com/en-us/free/free-account-faq/) 
-		 
-To get free support, click [here](https://support.serviceshub.microsoft.com/supportforbusiness/create)
