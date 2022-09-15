@@ -36,6 +36,11 @@ sections:
           - Use Snap Assist to maximize screen space on smaller screens with two-window snapping
           - Store your Desktop, Documents, and Photos folders in the cloud using OneDrive, so your work is backed up and easy to find
           - Express yourself and celebrate accomplishments with the *emoji and GIF panel* and *Stickers*
+  - name: Deployment
+    questions:
+      - question: Can I load Win11SE on any hardware? 
+        answer: |
+          Windows 11 SE ...
   - name: Applications and settings
     questions:
       - question: Why is there no application store on Windows 11 SE? What apps will work on Windows 11 SE?
@@ -48,9 +53,9 @@ sections:
           To learn more, go to the [][].
   - name: Out-of-box experience (OOBE)
     questions:
-      - question: My Windows 11 SE device is stuck in OOBE, how can I reset it?
+      - question: My Windows 11 SE device is stuck in OOBE, how can I troubleshoot it?
         answer: |
-          To access the Settings application during OOBE on a  Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the accessibility icon :::image type="icon" source="images/accessibility.svg" border="false"::: on the bottom-right corner of the screen.
+          To access the Settings application during OOBE on a Windows 11 SE device, press <kbd>Shift</kbd>+<kbd>F10</kbd>, then select the accessibility icon :::image type="icon" source="images/icons/accessibility.svg"::: on the bottom-right corner of the screen.
   - name: Resources
     questions:
       - question: Where can I find more information how to deploy Windows 11 SE in my school?
