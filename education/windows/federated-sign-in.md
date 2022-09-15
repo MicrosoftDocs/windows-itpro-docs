@@ -78,7 +78,7 @@ Apply the provisioning package to the devices that require federated sign-in.
 
 This setting is not available in Group Policy.
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **Registry**](#tab/reg)
+#### [:::image type="icon" source="images/icons/registry.svg"::: **Registry**](#tab/reg)
 
 This setting cannot be configured via registry.
 
