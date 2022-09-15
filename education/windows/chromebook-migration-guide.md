@@ -138,7 +138,7 @@ Table 3. Settings in the Security node in the Google Admin Console
 |Set up single sign-on (SSO)|This section is used to configure SSO for Google web-based apps (such as Google Apps Gmail or Google Apps Calendar). While you don’t need to migrate any settings in this section, you probably will want to configure Azure Active Directory synchronization to replace Google-based SSO.|
 |Advanced settings|This section is used to configure administrative access to user data and to configure the Google Secure Data Connector (which allows Google Apps to access data on your local network). You don’t need to migrate any settings in this section.|
 
-**Identify locally-configured settings to migrate**
+**Identify locally configured settings to migrate**
 
 In addition to the settings configured in the Google Admin Console, users may have locally configured their devices based on their own personal preferences (as shown in Figure 2). Table 4 lists the Chromebook user and device settings that you can locally configure. Review the settings and determine which settings you'll migrate to Windows. Some of the settings listed in Table 4 can only be seen when you click the **Show advanced settings** link (as shown in Figure 2).
 
@@ -146,7 +146,7 @@ In addition to the settings configured in the Google Admin Console, users may ha
 
 Figure 2. Locally configured settings on Chromebook
 
-Table 4. Locally-configured settings
+Table 4. Locally configured settings
 
 | Section                | Settings                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
