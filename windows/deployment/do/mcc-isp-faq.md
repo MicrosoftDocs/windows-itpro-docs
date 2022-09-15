@@ -27,7 +27,7 @@ Yes. Microsoft Connected Cache is a free service.
 
 <br/>
 	
-**2. What will MCC do for me? How will it impact our customers?**  
+**2. What will Microsoft Connected Cache do for me? How will it impact our customers?**  
 As an ISP, your network can benefit from reduced load on your backbone and improve customer download experience for supported Microsoft static content. It will also help you save on CDN costs.  
 
 <br/>
