@@ -98,7 +98,8 @@ In Windows 10, version 1803 the Configuration node introduces single app kiosk p
 In Windows 10, version 1909, Microsoft Edge kiosk mode support was added. This allows Microsoft Edge to be the specified kiosk application. For details about configuring Microsoft Edge kiosk mode, see [Configure a Windows 10 kiosk that runs Microsoft Edge](/DeployEdge/microsoft-edge-configure-kiosk-mode). Windows 10, version 1909 also allows for configuration of the breakout sequence. The breakout sequence specifies the keyboard shortcut that returns a kiosk session to the lock screen. The breakout sequence is defined with the format modifiers + keys. An example breakout sequence would look something like "shift+alt+a", where "shift" and "alt" are the modifiers and "a" is the key.
 
 In Windows 11, version 22H2, AssignedAccessConfiguration schema was updated to add StartPins and TaskbarLayout nodes to support pinning apps to the Start Menu and Taskbar respectively.
-- For more information about the configuration settings in the XML, see [TODO]().
+
+- For more information about the configuration settings in the XML, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
 - For more information on the schema, see [AssignedAccessConfiguration XSD](#assignedaccessconfiguration-xsd).
 - For an example, see [Example AssignedAccessConfiguration XML](#example-assignedaccessconfiguration-xml).
 
@@ -587,13 +588,13 @@ KioskModeApp Replace
 
 ## Example AssignedAccessConfiguration XML
 
-
 <br>
 <details>
   <summary>Example XML configuration for a multi-app kiosk for Windows 11.</summary>
 
 > [!NOTE]
-> This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see [TODO]().
+> This example demonstrates the use of StartPins and TaskbarLayout elements. For more information, see [Set up a multi-app kiosk on Windows 11 devices](/windows/configuration/lock-down-windows-11-to-specific-apps).
+>
 > - StartPins element is used to pin apps to the Start menu and uses the [pinnedList JSON](/windows/configuration/customize-start-menu-layout-windows-11#get-the-pinnedlist-json) format.
 > - TaskbarLayout element is used to pin apps to the taskbar and uses the [TaskbarLayoutModification XML](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar#author-a-taskbarlayoutmodificationxml-file) format.
 
