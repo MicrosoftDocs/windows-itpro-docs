@@ -180,91 +180,38 @@ Before you can sign-in with a federated IdP, your devices must be configured wit
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure federated sign-in using Microsoft Intune, use a custom profile.
+To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
 
-1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank">Microsoft Endpoint Manager admin center</a> and [create a profile with custom settings][MEM-1]
-1. Specify a **Name**, **Description**, and use the values for each policy in the following table:
+| Setting |
+|--------|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Data type: **String** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that re llowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
+:::image type="content" source="images/edu-federated-authentication-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
 
-    | Policy |
-    |--------|
-    | <ul type="circle"><li> OMA-URI: **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-    | <ul type="circle"><li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Data type: **String** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
-    | <ul type="circle"><li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-    | <ul type="circle"><li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-    | <ul type="circle"><li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
-
-    :::image type="content" source="images/edu-federated-authentication-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
-
-1. Assign the custom policy to the security groups that will receive the settings
+Assign the custom policy to the security groups that require federated sign-in.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To configure federated sign-in using a provisioning package, use the following settings:
 
-| Runtime setting |
+| Setting |
 |--------|
-| <ul type="circle"><li> Path: **`FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Value: **Enabled**</li>|
-| <ul type="circle"><li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
-| <ul type="circle"><li> Path: **`Policies/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
-| <ul type="circle"><li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during he sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-| <ul type="circle"><li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
+| <li> Path: **`FederatedAuthentication/EnableWebSignInForPrimaryUser`** </li><li>Value: **Enabled**</li>|
+| <li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
+| <li> Path: **`Policies/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+| <li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during he sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
+| <li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
 
 :::image type="content" source="images/edu-federated-authentication-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
 
+Apply the provisioning package to the devices that require federated sign-in.
+
 #### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-To configure federated sign-in using a group policy object, use the following settings:
-
-:::row:::
-  :::column span="1":::
-      OMA-URI:
-  :::column-end:::
-  :::column span="3":::
-      **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-      Data type:
-      Value:
-  :::column-end:::
-  :::column span="3":::
-      **Integer**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-      Value:
-  :::column-end:::
-  :::column span="3":::
-      **1**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-      OMA-URI:
-  :::column-end:::
-  :::column span="3":::
-      **`./Vendor/MSFT/Policy/Config/FederatedAuthentication/EnableWebSignInForPrimaryUser`**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-      Data type:
-      Value:
-  :::column-end:::
-  :::column span="3":::
-      **Integer**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-      Value:
-  :::column-end:::
-  :::column span="3":::
-      **1**
-  :::column-end:::
-:::row-end:::
+This setting is not available in Group Policy.
 
 ---
 
