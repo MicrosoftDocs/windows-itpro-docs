@@ -268,7 +268,7 @@ KioskModeApp Replace
 
 <br>
 <details>
-  <summary>Schema for AssignedAccess Configuration.</summary>
+  <summary>Schema for AssignedAccessConfiguration.</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -903,83 +903,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 
 <br>
 <details>
-  <summary>This example shows escaped XML of the Data node.</summary>
-
-```xml
-<SyncML xmlns='SYNCML:SYNCML1.2'>
-    <SyncBody>
-        <Replace>
-            <CmdID>2</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/AssignedAccess/Configuration</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">chr</Format>
-                </Meta>
-                <Data>
-                    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
-&lt;AssignedAccessConfiguration xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;&gt;
-    &lt;Profiles&gt;
-        &lt;Profile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;&gt;
-            &lt;AllAppsList&gt;
-                &lt;AllowedApps&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App AppUserModelId=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                    &lt;App DesktopAppPath=&quot;%windir%\system32\mspaint.exe&quot; /&gt;
-                    &lt;App DesktopAppPath=&quot;C:\Windows\System32\notepad.exe&quot; /&gt;
-                &lt;/AllowedApps&gt;
-            &lt;/AllAppsList&gt;
-            &lt;StartLayout&gt;
-                &lt;![CDATA[&lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-                      &lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&gt;
-                      &lt;DefaultLayoutOverride&gt;
-                        &lt;StartLayoutCollection&gt;
-                          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&gt;
-                            &lt;start:Group Name=&quot;Group1&quot;&gt;
-                              &lt;start:Tile Size=&quot;4x4&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;2&quot; AppUserModelID=&quot;Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Photos_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-                              &lt;start:Tile Size=&quot;4x2&quot; Column=&quot;0&quot; Row=&quot;4&quot; AppUserModelID=&quot;Microsoft.WindowsCalculator_8wekyb3d8bbwe!App&quot; /&gt;
-                            &lt;/start:Group&gt;
-                            &lt;start:Group Name=&quot;Group2&quot;&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\mspaint.exe&quot; /&gt;
-                              &lt;start:DesktopApplicationTile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; DesktopApplicationID=&quot;{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\notepad.exe&quot; /&gt;
-                            &lt;/start:Group&gt;
-                          &lt;/defaultlayout:StartLayout&gt;
-                        &lt;/StartLayoutCollection&gt;
-                      &lt;/DefaultLayoutOverride&gt;
-                    &lt;/LayoutModificationTemplate&gt;
-                ]]&gt;
-            &lt;/StartLayout&gt;
-            &lt;Taskbar ShowTaskbar=&quot;true&quot;/&gt;
-        &lt;/Profile&gt;
-    &lt;/Profiles&gt;
-    &lt;Configs&gt;
-        &lt;Config&gt;
-            &lt;Account&gt;MultiAppKioskUser&lt;/Account&gt;
-            &lt;DefaultProfile Id=&quot;{9A2A490F-10F6-4764-974A-43B19E722C23}&quot;/&gt;
-        &lt;/Config&gt;
-    &lt;/Configs&gt;
-&lt;/AssignedAccessConfiguration&gt;
-
-                </Data>
-            </Item>
-        </Replace>
-        <Final />
-    </SyncBody>
-</SyncML>
-```
-
-</details>
-
-<br>
-<details>
-  <summary>This example uses CData for the XML.</summary>
+  <summary>This example shows CData for the XML.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1055,7 +979,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 
 <br>
 <details>
-  <summary>Example of Get command that returns the configuration in the device.</summary>
+  <summary>This example shows the Get command.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -1077,7 +1001,7 @@ Escape and CDATA are mechanisms used when handling xml in xml. Consider that it'
 
 <br>
 <details>
-  <summary>Example of the Delete command.</summary>
+  <summary>This example shows the Delete command.</summary>
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
