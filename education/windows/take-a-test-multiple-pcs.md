@@ -265,12 +265,6 @@ You can also distribute the test link by creating a shortcut. To create the shor
 
 Once the shortcut is created, you can copy it and distribute it to students.
 
-
-## Assessment URLs
-This assessment URL uses our lockdown API:
-- SBAC/AIR:  [https://mobile.tds.airast.org/launchpad/](https://mobile.tds.airast.org/launchpad/).
-
-
 ## Related topics
 
 [Take tests in Windows](take-tests-in-windows-10.md)
