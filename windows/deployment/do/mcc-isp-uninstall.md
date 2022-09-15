@@ -14,7 +14,6 @@ Within Azure portal, navigate to **Cache Nodes**, then select the cache node you
 ## Run the uninstall script to cleanly remove MCC from your server
 In the installer zip file, you'll find the file **uninstallmcc.sh**. This script uninstalls MCC and all the related components. Only run it if you're facing issues with MCC installation.
 
-
 The **uninstallmcc.sh** script removes the following components:
 
 - IoT Edge

@@ -28,8 +28,10 @@ ms.topic: article
 
 <br/>
 
-1. Search for 'Microsoft Connected Cache' and go through the process of creating a resource by selecting the region and enter a name for your Cache resource name. 
-<pic>
+1. Search for 'Microsoft Connected Cache' and go through the process of creating a resource by selecting the region and enter a name for your cache resource name.  
+
+:::image type="content" source="images/searchmcc.png" alt-text="searchmcc":::
+
 
 <br/>
 
@@ -39,13 +41,18 @@ After your resource has been created, we need some information to verify you net
  
 <br/>
 
-2. Add your organization ASN below. The NOC contact email will be used to send verification information. Additionally, please include any ASN(s) for downstream network operators that you may transit traffic for.
-<pic>
+2. Add your organization ASN below. The NOC contact email will be used to send verification information. Additionally, please include any ASN(s) for downstream network operators that you may transit traffic for.  
 
-1. Once we verify the information entered, a verification code will be sent to the NOC email address provided on Peering DB. In the Azure portal operator verification blade enter the verification code sent to the NOC email address.  
-**TBD Note:** The verification code will expire in 24 hours. You will need to generate a new code if it expires.
-<pic>
+:::image type="content" source="images/signup1.png" alt-text="sign up for mcc":::
+
+<br/>
+
+3.  Once we verify the information entered, a verification code will be sent to the NOC email address provided on Peering DB. In the Azure portal operator verification blade enter the verification code sent to the NOC email address.  
+**Note:** The verification code will expire in 24 hours. You will need to generate a new code if it expires.  
+
+:::image type="content" source="images/verification.png" alt-text="operatorverification":::
 
 <br/>
 <br/>
-Once verified follow the instruction on [Provisioning and Deploying MCC] to create and install the cache node.
+Once verified follow the instruction on [Create Microsoft Connected Cache for ISP](windows\deployment\do\mcc-isp-create.md) to create your cache node.
+
