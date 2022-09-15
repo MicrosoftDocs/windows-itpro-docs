@@ -1,19 +1,17 @@
 ---
 title: Set up a multi-app kiosk on Windows 11
 description: Learn how to configure a kiosk device running Windows 11 so that users can only run a few specific apps.
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-configure
 author: lizgt2000
 ms.author: lizlong
-ms.date: 09/21/2021
+ms.date: 09/20/2022
 manager: aaroncz
 ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to
-ms.collection: highpri
 ---
-
-# Multi-App Kiosk Mode on Windows 11 Setup Instructions
+# Multi-app kiosk mode on Windows 11 setup instructions
 
 **Applies to**
 
@@ -29,10 +27,9 @@ A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users a
 >[!TIP]
 >Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
+Currently, the only supported method to configure a multi-app kiosk in Windows 11 is through WMI Bridge. You can follow the [instructions for Windows 10](lock-down-windows-10-to-specific-apps.md), except for the differences for Windows 11 outlined below.  
 
-Currently, the only supported method to configure a multi-app kiosk in Windows 11 is through WMI Bridge (Intune and CSP/PPKG methods coming soon). You can follow the instructions for Windows 10, except for the differences for Windows 11 outlined below.  
-
-1. Use the guidance on the multi-app kiosk page to create your XML configuration. When configuring ONLY for Windows 11, you can ignore the Start Layout (<StartLayout>) section. If you'd like to use one configuration for both Windows 10 and 11 devices, include the Start Layout section as planned in the Windows 10 instructions.  
+1. Use the guidance on the [multi-app kiosk page](lock-down-windows-10-to-specific-apps.md) to create your XML configuration. When configuring ONLY for Windows 11, you can ignore the Start Layout ('<StartLayout>') section. If you'd like to use one configuration for both Windows 10 and 11 devices, include the Start Layout section as planned in the Windows 10 instructions.  
 
 2. Use the Start Pins instructions to generate your Windows 11 start menu layout JSON. If you opt to do this using the PowerShell command, make sure that the system you run the command on has the same file structure as the device on which you will apply the kiosk (the path to the allowed apps must be the same). At the end of this step, you should have a JSON pinnedList that looks something like the below.
 
@@ -41,7 +38,8 @@ Currently, the only supported method to configure a multi-app kiosk in Windows 1
     {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}, 
     {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"}, 
     {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"}, 
-    {"desktopAppLink":"%ALLUSERSPROFILE%\\Programs\\Accessories\\Paint.lnk"},     {"desktopAppLink":"%APPDATA%\\Programs\\Accessories\\Notepad.lnk"} 
+    {"desktopAppLink":"%ALLUSERSPROFILE%\\Programs\\Accessories\\Paint.lnk"},     
+    {"desktopAppLink":"%APPDATA%\\Programs\\Accessories\\Notepad.lnk"} 
  ] }  
 ```
 
@@ -61,11 +59,10 @@ Add-Type -AssemblyName System.Web
 $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration  
-  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"   xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config"
->
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"   xmlns:win11="http://schemas.microsoft.com/AssignedAccess/2022/config">
   <Profiles>
-    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       <AllAppsList>
-
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
+      <AllAppsList>
         <AllowedApps> 
           <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" /> 
           <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" /> 
@@ -77,27 +74,21 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
         </AllowedApps> 
       </AllAppsList> 
       <StartLayout> 
-        <![CDATA[<LayoutModificationTemplate 
-xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">                       <LayoutOptions StartTileGroupCellWidth="6" />
+        <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/tartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">                       
+                    <LayoutOptions StartTileGroupCellWidth="6" />
                       <DefaultLayoutOverride>
                         <StartLayoutCollection>
                           <defaultlayout:StartLayout GroupCellWidth="6">
                             <start:Group Name="Group1">
-                              <start:Tile Size="4x4" Column="0" Row="0"
-AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />                               <start:Tile Size="2x2" Column="4" Row="2"
-AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
+                              <start:Tile Size="4x4" Column="0" Row="0" AppUserModelID="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />                               
+                              <start:Tile Size="2x2" Column="4" Row="2" AppUserModelID="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" />
                               <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" />
                               <start:Tile Size="2x2" Column="4" Row="4" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
-                              <start:Tile Size="4x2" Column="0" Row="4"
-AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+                              <start:Tile Size="4x2" Column="0" Row="4" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
                             </start:Group>
                             <start:Group Name="Group2">
-                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0"
-DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start
-Menu\Programs\Accessories\Paint.lnk" />
-                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0"
-DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start
-Menu\Programs\Accessories\Notepad.lnk" />
+                              <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\StartMenu\Programs\Accessories\Paint.lnk" />
+                              <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\StartMenu\Programs\Accessories\Notepad.lnk" />
                             </start:Group>
                           </defaultlayout:StartLayout>
                         </StartLayoutCollection>
@@ -113,10 +104,8 @@ Menu\Programs\Accessories\Notepad.lnk" />
             {"packagedAppId":"Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic"},
             {"packagedAppId":"Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo"},
             {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
-            {"desktopAppLink":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start
-Menu\\Programs\\Accessories\\Paint.lnk"},
-            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start
-Menu\\Programs\\Accessories\\Notepad.lnk"}
+            {"desktopAppLink":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Paint.lnk"},
+            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Notepad.lnk"}
           ] }
         ]]>
       </win11:StartPins>
