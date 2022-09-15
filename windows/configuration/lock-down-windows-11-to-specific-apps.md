@@ -17,6 +17,7 @@ ms.topic: how-to
 
 - Windows 11 Pro, Enterprise, and Education
 
+> [!NOTE]
 > The use of multiple monitors isn't supported for multi-app kiosk mode.
 
 A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app.
@@ -51,7 +52,7 @@ Currently, the only supported method to configure a multi-app kiosk in Windows 1
 
 4. Once your XML is complete, follow the WMI Bridge instructions to create a script by replacing the XML in the sample code with the XML you generated in Steps 1-3. The final script should look similar to the sample code below.
 
-```xml
+```powershell
 $nameSpaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
