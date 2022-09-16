@@ -23,7 +23,7 @@ PDE is also accessibility friendly. For example, The BitLocker PIN entry screen 
 Unlike BitLocker which releases data encryption keys at boot, PDE does not release data encryption keys until a user logs in via Windows Hello for Business. Users will only be able to access their PDE encrypted files once they have signed into Windows using Windows Hello for Business. Users will not have access to their PDE encrypted files if they have signed into Windows via a password instead of Windows Hello for Business biometric or PIN. Users will also not have access to their PDE encrypted files if they are not signed in locally and are trying to access them through alternate methods such as network UNC paths or a Remote Desktop session. Files will also not be accessible to other users on the device even if they are signed in via Windows Hello for Business and have permissions to navigate to the PDE encrypted files.
 
 > [!NOTE]
-> PDE is currently only available to developers via [APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager.md). There is no user interface in Windows or administrative policies that can be pushed to devices to encrypt files via PDE.
+> PDE is currently only available to developers via [APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager.md). There is no user interface in Windows to encrypt files via PDE. There are also no policies that can be deployed to devices via MDM to encrypt files via PDE.
 
 ## Prerequisites
 
@@ -69,10 +69,10 @@ PDE offers two levels of protection. The level of protection is determined based
 
 To enable PDE on devices, push an MDM policy to the devices with the following parameters:
 
-    Name: **Personal Data Encryption**
-    OMA-URI: **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
-    Data type: **Integer**
-    Value: **1**
+> Name: **Personal Data Encryption**
+> OMA-URI: **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
+> Data type: **Integer**
+> Value: **1**
 
 There is also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-csp) available for MDM solutions that support it.
 
@@ -88,22 +88,22 @@ There is also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-
 5. Under **Profile type**, select **Templates**
 6. Under **Template name**, select **Custom**, and then select **Create**
 7. On the ****Basics** tab: 
-  1. Next to **Name**, enter **Personal Data Encryption**
-  2. Next to **Description**, enter a description 
+    1. Next to **Name**, enter **Personal Data Encryption**
+    2. Next to **Description**, enter a description 
 8. Select **Next**
 9. On the **Configuration settings** tab, select **Add**
 10. In the **Add Row** window:
-  1. Next to **Name**, enter **Personal Data Encryption**
-  2. Next to **Description**, enter a description
-  3. Next to **OMA-URI**, enter in **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
-  4. Next to **Data type**, select **Integer**
-  5. Next to **Value**, enter in **1**
+    1. Next to **Name**, enter **Personal Data Encryption**
+    2. Next to **Description**, enter a description
+    3. Next to **OMA-URI**, enter in **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
+    4. Next to **Data type**, select **Integer**
+    5. Next to **Value**, enter in **1**
 11. Select **Save**, and then select **Next**
 12. On the **Assignments** tab:
-  1. Under **Included groups**, select **Add groups**
-  2. Select the groups that the PDE policy should be deployed to
-  3. Select **Select**
-  4. Select **Next**
+    1. Under **Included groups**, select **Add groups**
+    2. Select the groups that the PDE policy should be deployed to
+    3. Select **Select**
+    4. Select **Next**
 13. On the **Applicability Rules** tab, configure as necessary and then select **Next**
 14. On the **Review + create** tab, review the configuration to make sure everything is configured correctly, and then select **Create**
 
