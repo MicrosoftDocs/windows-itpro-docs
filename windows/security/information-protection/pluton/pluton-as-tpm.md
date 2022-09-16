@@ -33,14 +33,14 @@ Pluton is integrated within the SoC subsystem, and provides a flexible, updateab
 
 ## Enable Microsoft Pluton as TPM
 
-Devices with Ryzen 7000 Series and Qualcomm Snapdragon® 8cx Gen 3 series are Pluton Capable, however enabling and providing an option to enable Pluton is at the OEM discretion. Pluton is currently supported on these devices.
+Devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the OEM discretion. Pluton is currently supported on these devices.
+
+TPM configuration can be changed from the Unified Extensible Firmware Interface (UEFI) Security options, where Pluton may be selected as TPM if the device is Pluton capable. UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
 
 > [!WARNING]
 > We recommend disabling BitLocker (if enabled), before changing the TPM configuration to prevent lockouts. After changing TPM configuration, re-enable BitLocker which will then bind the BitLocker keys with the Pluton TPM. Alternatively, save the BitLocker recovery key onto a USB drive.
 >
 > Windows Hello must be re-configured after switching the TPM. Setup alternate login methods before changing the TPM configuration to prevent any login issues.
-
-TPM configuration can be changed from the Unified Extensible Firmware Interface (UEFI) Security options, where Pluton may be selected as TPM if the device is Pluton capable. UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
 
 > [!TIP]
 > On most Lenovo devices, entering the UEFI options requires pressing Enter key at startup followed by pressing F1. In the UEFI Setup menu, select Security option, then on the Security page, select Security Chip option, to see the TPM configuration options. Under the drop-down list for Security Chip selection, select **MSFT Pluton** and click F10 to Save and Exit.
