@@ -281,10 +281,10 @@ This policy configures the folders that the user can enumerate and access in the
 The following list shows the supported values:
 
 - 0: All folders
-- 15:Desktop, Documents, Pictures, and Downloads
-- 31:Desktop, Documents, Pictures, Downloads, and Network
-- 47:This PC (local drive), [Desktop, Documents, Pictures], and Downloads
-- 63:This PC, [Desktop, Documents, Pictures], Downloads, and Network
+- 15: Desktop, Documents, Pictures, and Downloads
+- 31: Desktop, Documents, Pictures, Downloads, and Network
+- 47: This PC (local drive), [Desktop, Documents, Pictures], and Downloads
+- 63: This PC, [Desktop, Documents, Pictures], Downloads, and Network
 
 <!--/SupportedValues-->
 
@@ -336,7 +336,7 @@ This policy configures the folders that the user can enumerate and access in the
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: all storage locations
+- 0: All storage locations
 - 1: Removable Drives
 - 2: Sync roots
 - 3: Removable Drives, Sync roots, local drive
@@ -391,8 +391,8 @@ This policy changes whether files from Office.com will be shown in the Recents a
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: files from Office.com will display in the Home node
-- 1: no files from Office.com will be retrieved or displayed
+- 0: Files from Office.com will display in the Home node
+- 1: No files from Office.com will be retrieved or displayed
 
 <!--/SupportedValues-->
 
