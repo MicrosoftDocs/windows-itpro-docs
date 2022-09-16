@@ -33,10 +33,12 @@ Pluton is integrated within the SoC subsystem, and provides a flexible, updateab
 
 ## Enable Microsoft Pluton as TPM
 
-Devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is currently supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device. In UEFI Security options, Pluton can be selected as TPM if the device is Pluton capable. UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
+Devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device.
+
+UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
 
 > [!WARNING]
-> We recommend disabling BitLocker (if enabled), before changing the TPM configuration to prevent lockouts. After changing TPM configuration, re-enable BitLocker which will then bind the BitLocker keys with the Pluton TPM. Alternatively, save the BitLocker recovery key onto a USB drive.
+> If BitLocker is enabled, We recommend disabling BitLocker before changing the TPM configuration to prevent lockouts. After changing TPM configuration, re-enable BitLocker which will then bind the BitLocker keys with the Pluton TPM. Alternatively, save the BitLocker recovery key onto a USB drive.
 >
 > Windows Hello must be re-configured after switching the TPM. Setup alternate login methods before changing the TPM configuration to prevent any login issues.
 
