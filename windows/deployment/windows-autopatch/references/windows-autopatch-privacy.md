@@ -20,7 +20,7 @@ Windows Autopatch is a cloud service for enterprise customers designed to keep e
 
 Windows Autopatch provides its service to enterprise customers, and properly administers customers' enrolled devices by using data from various sources.
 
-The sources include Azure Active Directory (AD), Microsoft Intune, and Microsoft Windows 10/11. The sources provide a comprehensive view of the devices that Windows Autopatch manages. The service also uses these Microsoft services to enable Windows Autopatch to provide IT as a Service (ITaaS) capabilities:
+The sources include Azure Active Directory (Azure AD), Microsoft Intune, and Microsoft Windows 10/11. The sources provide a comprehensive view of the devices that Windows Autopatch manages.
 
 | Data source | Purpose |
 | ------ | ------ |
@@ -74,7 +74,7 @@ Microsoft Windows Update for Business uses data from Windows diagnostics to anal
 
 ## Microsoft Azure Active Directory
 
-Identifying data used by Windows Autopatch is stored by Azure Active Directory (Azure AD) in a geographical location. The geographical location is based on the location provided by the organization upon subscribing to Microsoft online services, such as Microsoft Apps for Enterprise and Azure. For more information on where your Azure AD data is located, see [Azure Active Directory - Where is your data located?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+Identifying data used by Windows Autopatch is stored by Azure Active Directory (AD) in a geographical location. The geographical location is based on the location provided by the organization upon subscribing to Microsoft online services, such as Microsoft Apps for Enterprise and Azure. For more information on where your Azure AD data is located, see [Azure Active Directory - Where is your data located?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ## Microsoft Intune
 

@@ -1,5 +1,5 @@
 ---
-title: Stickers for Windows 11 SE
+title: Configure Stickers for Windows 11 SE
 description: Description of Stickers for Windows 11 SE and how to configure them via MDM
 ms.date: 09/15/2022
 ms.prod: windows
@@ -50,13 +50,6 @@ Stickers aren't enabled by default. IT administrators can allow students to pers
 1. In **Add Row**, enter the following properties:
     - Name: enter **EnableStickers**
     - OMA-URI: `./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`
-    - Data type: **Integer**
-    - Value: **1**
-1. Select **Save**
-1. Select **Add**
-1. In **Add Row**, enter the following properties:
-    - Name: enter **IsEducationEnvironment**
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`
     - Data type: **Integer**
     - Value: **1**
 1. Select **Save**

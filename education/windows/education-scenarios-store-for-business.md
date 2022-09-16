@@ -16,6 +16,8 @@ ms.reviewer:
 manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Working with Microsoft Store for Education
@@ -133,17 +135,9 @@ Teachers can:
  
 ## Distribute apps
 
-Manage and distribute apps to students and others in your organization. Different options are available for admins and teachers. 
-
-Applies to: IT admins
-
 **To manage and distribute apps**
 - For info on how to distribute **Minecraft: Education Edition**, see [For IT admins – Minecraft: Education Edition](./school-get-minecraft.md#distribute-minecraft)
 - For info on how to manage and distribute other apps, see [App inventory management - Microsoft Store for Business](/microsoft-store/app-inventory-management-windows-store-for-business)
-
-Applies to: Teachers
-
-For info on how to distribute **Minecraft: Education Edition**, see [For teachers – Minecraft: Education Edition](./teacher-get-minecraft.md#distribute-minecraft). 
 
 **To assign an app to a student**
 
