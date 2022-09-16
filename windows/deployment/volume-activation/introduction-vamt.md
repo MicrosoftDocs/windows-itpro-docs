@@ -12,7 +12,7 @@ ms.topic: article
 
 # Introduction to VAMT
 
-The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office®, and select other Microsoft products volume and retail activation process. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in and can be installed on any computer that has one of the following Windows operating systems: Windows® 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, or Windows Server 2012.
+The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office®, and select other Microsoft products volume and retail activation process. VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in and can be installed on any computer that has one of the following Windows operating systems: Windows® 7 or above, Windows Server 2008 R2 or above.
 
 > [!NOTE]
 > VAMT can be installed on, and can manage, physical or virtual instances. VAMT cannot detect whether or not the remote products are virtual. As long as the products can respond to Windows Management Instrumentation (WMI) calls, they will be discovered and activated.
@@ -42,7 +42,7 @@ VAMT is commonly implemented in enterprise environments. The following screensho
 
 ![VAMT in the enterprise.](images/dep-win8-l-vamt-image001-enterprise.jpg)
 
-In the Core Network environment, all computers are within a common network managed by Active Directory® Domain Services (AD DS). The Secure Zone represents higher-security Core Network computers that have extra firewall protection.
+In the Core Network environment, all computers are within a common network managed by Active Directory® Domain Services (AD DS). The Secure Zone represents higher-security Core Network computers that have extra firewall protection.\
 The Isolated Lab environment is a workgroup that is physically separate from the Core Network, and its computers do not have Internet access. The network security policy states that no information that could identify a specific computer or user may be transferred out of the Isolated Lab.
 
 ## <a href="" id="bkmk-userinterface"></a>VAMT User Interface
