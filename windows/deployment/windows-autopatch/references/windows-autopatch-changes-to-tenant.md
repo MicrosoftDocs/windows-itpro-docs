@@ -14,6 +14,11 @@ msreviewer: hathind
 
 # Changes made at tenant enrollment
 
+The following configuration details are provided as information to help you understand the changes made to your tenant when enrolling into the Windows Autopatch service.
+
+> [!IMPORTANT]
+> The service manages and maintains the following configuration items. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service.  
+
 ## Service principal
 
 Windows Autopatch will create a service principal in your tenant allowing the service to establish an identity and restrict access to what resources the service has access to within the tenant. For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). The service principal created by Windows Autopatch is:  
