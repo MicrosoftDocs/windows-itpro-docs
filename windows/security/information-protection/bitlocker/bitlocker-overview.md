@@ -66,7 +66,7 @@ The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support th
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and Compatibility Support Module (CSM) modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the secure boot feature.
 
-> Installed Operating System on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
+> Installed Operating System on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](../../../deployment/mbr-to-gpt.md) before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
 
 The hard disk must be partitioned with at least two drives:
 
@@ -85,7 +85,7 @@ When installing the BitLocker optional component on a server, you will also need
 | Topic | Description |
 | - | - |
 | [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md) | This topic provides an overview of the ways in which BitLocker Device Encryption can help protect data on devices running Windows 10.  |
-| [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md) | This topic answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.| 
+| [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml) | This topic answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.| 
 | [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)| This topic explains the procedure you can use to plan your BitLocker deployment. |
 | [BitLocker basic deployment](bitlocker-basic-deployment.md) | This topic explains how BitLocker features can be used to protect your data through drive encryption. |
 | [BitLocker: How to deploy on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)| This topic explains how to deploy BitLocker on Windows Server.| 
