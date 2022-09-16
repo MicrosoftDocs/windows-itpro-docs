@@ -116,8 +116,6 @@ You can configure a dedicated testing account through MDM or Configuration Manag
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/LaunchURI
     - **String value** = *assessment URL*
 
-      See [Assessment URLs](#assessment-urls) for more information.
-
 4. Create a policy that associates the assessment URL to the account using the following values:
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
@@ -264,12 +262,6 @@ You can also distribute the test link by creating a shortcut. To create the shor
 4. Type a name for the shortcut and then click **Finish**.
 
 Once the shortcut is created, you can copy it and distribute it to students.
-
-
-## Assessment URLs
-This assessment URL uses our lockdown API:
-- SBAC/AIR:  [https://mobile.tds.airast.org/launchpad/](https://mobile.tds.airast.org/launchpad/).
-
 
 ## Related topics
 
