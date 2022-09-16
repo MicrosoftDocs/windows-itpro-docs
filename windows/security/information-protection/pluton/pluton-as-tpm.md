@@ -17,7 +17,7 @@ appliesto:
 
 # Microsoft Pluton as Trusted Platform Module
 
-Microsoft Pluton is designed to provide the functionality of the Trusted Platform Module (TPM) thereby establishing the silicon root of trust, adding resiliency against current TPM attacks targeting discrete buses. Microsoft Pluton supports the TPM 2.0 industry standard allowing customers to immediately benefit from the enhanced security in Windows features that rely on TPM including BitLocker, Windows Hello, and Windows Defender System Guard.
+Microsoft Pluton is designed to provide the functionality of the Trusted Platform Module (TPM) thereby establishing the silicon root of trust. Microsoft Pluton supports the TPM 2.0 industry standard allowing customers to immediately benefit from the enhanced security in Windows features that rely on TPM including BitLocker, Windows Hello, and Windows Defender System Guard.
 
 As with other TPMs, credentials, encryption keys, and other sensitive information cannot be easily extracted from Pluton even if an attacker has installed malware or has complete physical possession of the device. Storing sensitive data like encryption keys securely within the Pluton processor, which is isolated from the rest of the system, helps ensure that emerging attack techniques such as speculative execution cannot access key material.
 
@@ -33,9 +33,7 @@ Pluton is integrated within the SoC subsystem, and provides a flexible, updateab
 
 ## Enable Microsoft Pluton as TPM
 
-Devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the OEM discretion. Pluton is currently supported on these devices.
-
-TPM configuration can be changed from the Unified Extensible Firmware Interface (UEFI) Security options, where Pluton may be selected as TPM if the device is Pluton capable. UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
+Devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is currently supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device. In UEFI Security options, Pluton can be selected as TPM if the device is Pluton capable. UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
 
 > [!WARNING]
 > We recommend disabling BitLocker (if enabled), before changing the TPM configuration to prevent lockouts. After changing TPM configuration, re-enable BitLocker which will then bind the BitLocker keys with the Pluton TPM. Alternatively, save the BitLocker recovery key onto a USB drive.
