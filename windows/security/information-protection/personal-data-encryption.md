@@ -198,16 +198,23 @@ There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-c
 | Release of encryption keys | At user sign in via Windows Hello for Business | At boot |
 | Encryption keys discarded | At user sign out | At reboot |
 | Files encrypted | Individual specified files | Entire volume/drive |
-| Authentication to release encryption keys | No additional PIN required - Windows Hello for Business credentials used | When BitLocker with PIN is enabled, additional PIN is required in addition to Windows sign in credentials |
+| Authentication to access encrypted file | Windows Hello for Business | When BitLocker with PIN is enabled, BitLocker PIN plus Windows sign in |
 | Accessibility | Windows Hello for Business is accessibility friendly | BitLocker with PIN doesn't have accessibility features |
 
 ## Differences between PDE and EFS
 
 The main difference between encrypting files with PDE instead of EFS is the method they use to encrypt the file. PDE uses Windows Hello for Business to secure the encryption keys that encrypts the files. EFS uses certificates to secure and encrypt the files.
 
-To see if a file is encrypted with PDE or EFS, open the properties of the file. Under the **General** tab, select on the **Advanced...** button. In the **Advanced Attributes** windows, select on the **Details** button. For PDE encrypted files, under **Protection status:** there will be an item listed as **Personal Data Encryption is:** and it will have the attribute of **On**. For EFS encrypted files, under **Users who can access this file:**, there will be a **Certificate thumbprint** next to the users with access to the file. There will also be a section at the bottom labeled **Recovery certificates for this file as defined by recovery policy:**. You can also check the encryption type being used via the **cipher.exe /c** command line.
+To see if a file is encrypted with PDE or EFS
 
+1. Open the properties of the file.
+2. Under the **General** tab, select on the **Advanced...** button.
+3. In the **Advanced Attributes** windows, select on the **Details** button.
 
+For PDE encrypted files, under **Protection status:** there will be an item listed as **Personal Data Encryption is:** and it will have the attribute of **On**.
 
+For EFS encrypted files, under **Users who can access this file:**, there will be a **Certificate thumbprint** next to the users with access to the file. There will also be a section at the bottom labeled **Recovery certificates for this file as defined by recovery policy:**.
+
+Encryption information including what encryption method is being used can be obtained with the command line **cipher.exe /c** command.
 
 ## Next steps
