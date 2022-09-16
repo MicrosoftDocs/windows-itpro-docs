@@ -205,16 +205,34 @@ There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-c
 
 The main difference between encrypting files with PDE instead of EFS is the method they use to encrypt the file. PDE uses Windows Hello for Business to secure the encryption keys that encrypts the files. EFS uses certificates to secure and encrypt the files.
 
-To see if a file is encrypted with PDE or EFS
+To see if a file is encrypted with PDE or EFS:
 
-1. Open the properties of the file.
-2. Under the **General** tab, select on the **Advanced...** button.
-3. In the **Advanced Attributes** windows, select on the **Details** button.
+1. Open the properties of the file
+2. Under the **General** tab, select **Advanced...**
+3. In the **Advanced Attributes** windows, select **Details**
 
 For PDE encrypted files, under **Protection status:** there will be an item listed as **Personal Data Encryption is:** and it will have the attribute of **On**.
 
 For EFS encrypted files, under **Users who can access this file:**, there will be a **Certificate thumbprint** next to the users with access to the file. There will also be a section at the bottom labeled **Recovery certificates for this file as defined by recovery policy:**.
 
 Encryption information including what encryption method is being used can be obtained with the command line **cipher.exe /c** command.
+
+
+## Disabling PDE and decrypting files
+
+Currently there's no method to disable PDE via MDM policy. However, PDE can be disabled locally and files can be decrypted using **cipher.exe**. Additionally, in certain scenarios a user may be able to decrypt a file using the following steps:
+
+1. Open the properties of the file
+2. Under the **General** tab, select **Advanced...**
+3. Uncheck the option **Encrypt contents to secure data**
+4. Select **OK**, and then **OK** again
+
+> [!Important]
+> Once a user selects to decrypt a file, they will not be able to encrypt the file again.
+
+## Windows out of box applications that support PDE
+
+- Mail
+  - Supports encrypting both email bodies and attachments
 
 ## Next steps
