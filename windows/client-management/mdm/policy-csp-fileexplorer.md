@@ -46,7 +46,12 @@ manager: aaroncz
   <dd>
     <a href="#fileexplorer-setallowedstoragelocations">FileExplorer/SetAllowedStorageLocations</a>
   </dd>
+  <dd>
+    <a href="#fileexplorer-disablegraphrecentitems">FileExplorer/DisableGraphRecentItems</a>
+  </dd>
 </dl>
+
+
 
 <hr/>
 
@@ -342,6 +347,59 @@ The following list shows the supported values:
 ADMX Info:  
 -   GP Friendly name: *Configure which folders the user can enumerate and access to in File Explorer*
 -   GP name: *SetAllowedStorageLocations*
+-   GP path: *File Explorer*
+-   GP ADMX file name: *Explorer.admx*
+
+<!--/ADMXBacked-->
+
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="fileexplorer-disablegraphrecentitems"></a>**FileExplorer/DisableGraphRecentItems**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|Yes|
+|Pro|No|Yes|
+|Windows SE|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+
+<!--Description-->
+
+This policy changes whether files from Office.com will be shown in the Recents and Favorites sections on the Home node (previously known as Quick Access) in File Explorer.
+
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: files from Office.com will display in the Home node
+- 1: no files from Office.com will be retrieved or displayed
+
+<!--/SupportedValues-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Turn off files from Office.com in Quick access view*
+-   GP name: *DisableGraphRecentItems*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *Explorer.admx*
 
