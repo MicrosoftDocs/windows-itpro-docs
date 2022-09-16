@@ -67,7 +67,7 @@ PDE offers two levels of protection. The level of protection is determined based
 
 ## When will PDE encrypted files be inaccessible
 
-When a file is encrypted with PDE, its icon will show a lock on it. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access a PDE encrypted file, they'll be denied access to the file. Scenarios where a user will be denied access to a PDE encrypted file include:
+When a file is encrypted with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access a PDE encrypted file, they'll be denied access to the file. Scenarios where a user will be denied access to a PDE encrypted file include:
 
 - User has signed into Windows via a password instead of signing in with Windows Hello for Business biometric or PIN.
 - If specified via level 2 protection, when the device is locked.
@@ -217,7 +217,6 @@ For EFS encrypted files, under **Users who can access this file:**, there will b
 
 Encryption information including what encryption method is being used can be obtained with the command line **cipher.exe /c** command.
 
-
 ## Disabling PDE and decrypting files
 
 Currently there's no method to disable PDE via MDM policy. However, PDE can be disabled locally and files can be decrypted using **cipher.exe**. Additionally, in certain scenarios a user may be able to decrypt a file using the following steps:
@@ -232,7 +231,42 @@ Currently there's no method to disable PDE via MDM policy. However, PDE can be d
 
 ## Windows out of box applications that support PDE
 
+Certain Windows applications support PDE out of the box. If PDE is enabled on a device, these applications will utilize PDE.
+
 - Mail
   - Supports encrypting both email bodies and attachments
 
-## Next steps
+## FAQ
+
+**Can PDE encrypt entire volumes or drives?** <br>
+No. PDE only encrypts specified files
+
+**Is PDE replacement for BitLocker?** <br>
+No. It's still recommended to encrypt all volumes with BitLocker Drive Encryption for increased security.
+
+**Can an IT admin specify which files should be encrypted?** <br>
+Yes, but it can only be done using APIs.
+
+**Do I need to use OneDrive as my backup provider?** <br>
+PDE doesn't have a requirement for a backup provider including OneDrive. However, backups are strongly recommended in case the encryption keys used by PDE are lost. OneDrive is a recommended backup provider.
+
+**What is the relation between Windows Hello for Business and PDE?** <br>
+Windows Hello for Business unlocks PDE encryption keys during user sign on.
+
+**Can a file be encrypted with both PDE and EFS at the same time?** <br>
+No. PDE and EFS are mutually exclusive.
+
+**Can PDE encrypted files be accessed after signing on via a Remote Desktop connection (RDP)?** <br>
+No. Accessing PDE encrypted files over RDP isn't currently supported.
+
+**Can PDE encrypted files be access via a network share?** <br>
+No. PDE encrypted files can only be accessed after signing on locally with Windows Hello for Business credentials.
+
+**How can it be determined if a file is encrypted with PDE?** <br>
+Encrypted files will show a padlock on the file's icon. Additionally, **cipher.exe** can be used to show the encryption state of the file.
+
+**Can users manually encrypt and decrypt files with PDE.** <br>
+Currently users can decrypt files manually but they can't encrypt files manually.
+
+**If a user signs into Windows with a password instead of Windows Hello for Business, will they be able to access their PDE encrypted files?** <br>
+No. PDE encryption keys are protected Windows Hello for Business credentials and will only be unlocked when signing on with Windows Hello for Business PIN or biometrics.
