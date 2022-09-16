@@ -24,7 +24,7 @@ There are two main steps required to uninstall your cache node:
 
 ## Remove your cache node from Azure portal
 
-Within Azure portal, navigate to **Cache Nodes**, then select the cache node you wish to delete. Once selected, click **Delete** on the top bar to remove this cache node from your account. 
+Within Azure portal, navigate to **Cache Nodes**, then select the cache node you wish to delete. Once selected, select **Delete** on the top bar to remove this cache node from your account. 
 
 ## Run the uninstall script to cleanly remove MCC from your server
 In the installer zip file, you'll find the file **uninstallmcc.sh**. This script uninstalls MCC and all the related components. Only run it if you're facing issues with MCC installation.

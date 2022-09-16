@@ -15,17 +15,17 @@ ms.topic: article
 
 # Traffic estimation
 
-During the sign up process, Microsoft will provide you with a traffic estimation based on your ASN(s). We make estimations based on our predictions on historical data about Microsoft content download volume. We will use these estimations to recommend hardware or VM configurations. You can view these recommendations within the Azure portal.
+During the sign-up process, Microsoft will provide you with a traffic estimation based on your ASN(s). We make estimations based on our predictions on historical data about Microsoft content download volume. We'll use these estimations to recommend hardware or VM configurations. You can view these recommendations within the Azure portal.
 
-Note that we make these estimations based on the Microsoft content types that Microsoft Connected Cache serves. To learn more about the types of content that are supported, see [Delivery Optimization and Microsoft Connected Cache content endpoints](). 
+We make these estimations based on the Microsoft content types that Microsoft Connected Cache serves. To learn more about the types of content that are supported, see [Delivery Optimization and Microsoft Connected Cache content endpoints](). 
 
 ## Cache performance
 
-To make sure you are maximizing the performance of your cache node, please note the following:
+To make sure you're maximizing the performance of your cache node, note the following:
 
 ### OS requirements
 
-The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
+The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
 
 ### NIC requirements
 
@@ -43,11 +43,11 @@ RAID disk configurations are discouraged as cache performance will be impacted. 
 There are many hardware configurations that suit Microsoft Connected Cache. As an example, below is the hardware configuration of a customer who is able to egress 40 Gbps of traffic.
 
 **Dell PowerEdge R330**
-- 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz , total 32core
-- 48GB, Micron Technology 18ASF1G72PDZ-2G1A1, Speed: 2133 MT/s
-- 4 - Transcend SSD230s 1TB SATA Drives
+- 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40 GHz , total 32 core
+- 48 GB, Micron Technology 18ASF1G72PDZ-2G1A1, Speed: 2133 MT/s
+- 4 - Transcend SSD230s 1 TB SATA Drives
 - Intel Corporation Ethernet 10G 2P X520 Adapter (Link Aggregated)
 
 ### Virtual Machines
 
-If you are using a virtual machine as your server, please refer to [VM performance](mcc-isp-vm-performance.md) for tips on how to improve your VM performance.
+If you're using a virtual machine as your server, refer to [VM performance](mcc-isp-vm-performance.md) for tips on how to improve your VM performance.

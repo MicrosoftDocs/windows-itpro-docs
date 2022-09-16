@@ -29,7 +29,7 @@ To validate a properly functioning MCC, run the following command in the termina
 wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
-If successful, you will see a terminal output similar to the following:
+If successful, you'll see a terminal output similar to the following:
 
 ```bash
 HTTP request sent, awaiting response... 200 OK
@@ -39,7 +39,7 @@ Saving to: 'wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com'
 wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com   100%[========================]
 ```
 
-:::image type="content" source="images/imcc28.png" alt-text="Terminal output of successful test result with wget command to validate a MCC.":::
+:::image type="content" source="images/imcc28.png" alt-text="Terminal output of successful test result with wget command to validate a Microsoft Connected Cache node.":::
 
 Similarly, enter the following URL into a web browser on any device on the network:
 
