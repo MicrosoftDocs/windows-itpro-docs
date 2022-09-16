@@ -16,7 +16,7 @@ ms.topic: article
 # Device provisioning
 
 Once the user executes the provisioning script, resources are created behind the scenes resulting in the successful cache node installation. 
-The device provisioning script takes the input of different IDs outlined below to create an IoT Central and an IoT Edge device. even though Microsoft Connected Cache scenario is not related to IoT, IoT Central and IoT Edge are installed for management and communication operation purposes. 
+The device provisioning script takes the input of different IDs outlined below to create an IoT Central and an IoT Edge device. even though Microsoft Connected Cache scenario isn't related to IoT, IoT Central and IoT Edge are installed for management and communication operation purposes. 
 
 ### Components installed during provisioning
 

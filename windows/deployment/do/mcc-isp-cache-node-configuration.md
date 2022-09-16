@@ -15,7 +15,7 @@ ms.topic: article
 
 # Cache node configuration
 
-All cache node configuration will take place within Azure portal. This article outlines all of the settings that you will be able to configure. 
+All cache node configuration will take place within Azure portal. This article outlines all of the settings that you'll be able to configure. 
 
 ## Settings
 
@@ -37,7 +37,7 @@ All cache node configuration will take place within Azure portal. This article o
 
 | Field Name | Expected Value| Description |
 | -- | --- | --- |
-| **Manual touting - Address range/CIDR blocks** | IPv4 CIDR notation | The IP address range (CIDR blocks) that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24, 3.22.235.0/24, 4.23.236.0/24 |
+| **Manual routing - Address range/CIDR blocks** | IPv4 CIDR notation | The IP address range (CIDR blocks) that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24, 3.22.235.0/24, 4.23.236.0/24 |
 | **BGP - Neighbor ASN** | ASN | When configuring BGP, enter the ASN(s) of your neighbors that you want to establish. |
 | **BGP - Neighbor IP address** | IPv4 address | When configuring BGP, enter the IP address(es) of neighbors that you want to establish. |
 
