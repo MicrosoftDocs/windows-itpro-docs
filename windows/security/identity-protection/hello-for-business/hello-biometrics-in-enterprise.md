@@ -78,7 +78,7 @@ To allow facial recognition, you must have devices with integrated special infra
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
 
 > [!NOTE]
->Windows Hello face authentication does not currently support wearing a mask during enrollment or authentication. Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock you device. The product group is aware of this behavior and is investigating this topic further. Please remove a mask if you are wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, please consider unenrolling from face authentication and only using PIN or fingerprint.
+>Windows Hello face authentication does not currently support wearing a mask during enrollment or authentication. Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this topic further. Please remove a mask if you are wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, please consider unenrolling from face authentication and only using PIN or fingerprint.
 
 
 ## Related topics

@@ -108,7 +108,7 @@ If you don’t sign up for any of these enterprise services, Microsoft will act 
 
 ### Rollout plan for this change
 
-This change will roll out initially to Windows devices enrolled in the [Dev Channel](/windows-insider/flighting#dev-channel) of the Windows Insider program no earlier than July 2022. Once the rollout is initiated, devices in the Dev Channel that are joined to an Azure AD tenant with a billing address in the EU or EFTA will be automatically enabled for the processor configuration option.
+This change will rollout in phases, starting  with Windows devices enrolled in the [Dev Channel](/windows-insider/flighting#dev-channel) of the Windows Insider program. Starting in build 25169, devices in the Dev Channel that are joined to an Azure AD tenant with a billing address in the EU or EFTA will be automatically enabled for the processor configuration option.
 
 During this initial rollout, the following conditions apply to devices in the Dev Channel that are joined to an Azure AD tenant with a billing address outside of the EU or EFTA:
 

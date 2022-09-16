@@ -57,11 +57,13 @@ ms.date: 08/01/2022
 - [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>11</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
 - [MixedReality/ConfigureMovingPlatform](policy-csp-mixedreality.md#mixedreality-configuremovingplatform) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
+- [MixedReality/ConfigureNtpClient](./policy-csp-mixedreality.md#mixedreality-configurentpclient) <sup>Insider</sup>
 - [MixedReality/DisallowNetworkConnectivityPassivePolling](./policy-csp-mixedreality.md#mixedreality-disablesisallownetworkconnectivitypassivepolling) <sup>Insider</sup>
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
 - [MixedReality/HeadTrackingMode](policy-csp-mixedreality.md#mixedreality-headtrackingmode) <sup>9</sup>
 - [MixedReality/ManualDownDirectionDisabled](policy-csp-mixedreality.md#mixedreality-manualdowndirectiondisabled) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
 - [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
+- [MixedReality/NtpClientEnabled](./policy-csp-mixedreality.md#mixedreality-ntpclientenabled) <sup>Insider</sup>
 - [MixedReality/SkipCalibrationDuringSetup](./policy-csp-mixedreality.md#mixedreality-skipcalibrationduringsetup) <sup>Insider</sup>
 - [MixedReality/SkipTrainingDuringSetup](./policy-csp-mixedreality.md#mixedreality-skiptrainingduringsetup) <sup>Insider</sup>
 - [MixedReality/VisitorAutoLogon](policy-csp-mixedreality.md#mixedreality-visitorautologon) <sup>10</sup>
