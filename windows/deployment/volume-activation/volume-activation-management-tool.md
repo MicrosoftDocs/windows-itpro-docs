@@ -18,9 +18,8 @@ VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the W
 -   Windows&reg; 7 or above
 -   Windows Server 2008 R2 or above
 
-
-**Important**  
-VAMT is designed to manage volume activation for: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 (or later), Microsoft Office 2010 (or above). 
+> [!IMPORTANT]
+> VAMT is designed to manage volume activation for: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11, Windows Server 2008 (or later), Microsoft Office 2010 (or above). 
 
 VAMT is only available in an EN-US (x86) package.
 
