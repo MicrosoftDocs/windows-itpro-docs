@@ -16,18 +16,18 @@ ms.collection: highpri
 
 **Applies to**
 
-Windows 11
-Windows 10
-Windows 8.1
-Windows 8
-Windows Server 2012 R2
-Windows Server 2012
-Windows Server 2016
-Windows Server 2019
-Office 2021*
-Office 2019*
-Office 2016*
-Office 2013*
+- Windows 11
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2016
+- Windows Server 2019
+- Office 2021*
+- Office 2019*
+- Office 2016*
+- Office 2013*
 
 **Looking for retail activation?**
 
