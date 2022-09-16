@@ -29,7 +29,7 @@ Pluton is built on proven technology used in Xbox and Azure Sphere, and provides
 
 ## Microsoft Pluton security architecture overview
 
-![Graphic showing the Microsoft Pluton security processor](../../images/pluton/Chip-to-cloud-security.png)
+![Diagram showing the Microsoft Pluton security processor architecture](../images/pluton/pluton-security-architecture.png)
 
 Pluton Security subsystem consists of the following layers:
 
@@ -43,7 +43,7 @@ Pluton Security subsystem consists of the following layers:
 
 When the system boots, Pluton hardware initialization is performed by loading the Pluton firmware from the Serial Peripheral Interface (SPI) flash storage available on the motherboard. During Windows startup however, the latest version of the Pluton firmware is loaded in the operating system. If newer firmware is not available, Windows loads the firmware that was loaded during the hardware initialization. The diagram below illustrates this process:
 
-[Diagram Here]
+![Diagram showing the Microsoft Pluton Firmware load flow](../images/pluton/pluton-firmware-load.png)
 
 ## Related topics
 
