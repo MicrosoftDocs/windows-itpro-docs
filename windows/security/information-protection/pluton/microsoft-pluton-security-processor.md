@@ -19,11 +19,13 @@ appliesto:
 
 Microsoft Pluton security processor is a chip-to-cloud security technology built with [Zero Trust](/security/zero-trust/zero-trust-overview) principles at the core. Microsoft Pluton provides hardware-based root of trust, secure identity, secure boot, secure attestation, and cryptographic services. Pluton technology is a combination of a secure subsystem which is part of the System on Chip (SoC) and Microsoft authored software that runs on this integrated secure subsystem.
 
-Designed by Microsoft and built by silicon partners, Pluton is built into the CPU for security at the core to ensure code integrity and the latest protection with updates delivered by Microsoft through Windows Update. Pluton protects credentials, identities, personal data and encryption keys. Information is significantly harder to be removed even if an attacker has installed malware or has complete physical possession of the PC. Pluton is built on proven technology used in Xbox and Azure Sphere, and provides hardened integrated security capabilities to Windows 11 devices in collaboration with leading silicon partners.
+## What is Microsoft Pluton?
 
-For more information, see [Meet the Microsoft Pluton processor – The security chip designed for the future of Windows PCs](https://www.microsoft.com/security/blog/2020/11/17/meet-the-microsoft-pluton-processor-the-security-chip-designed-for-the-future-of-windows-pcs/).
+Designed by Microsoft and built by silicon partners, Pluton is built into the CPU for security at the core to ensure code integrity and the latest protection with updates delivered by Microsoft through Windows Update. Pluton protects credentials, identities, personal data and encryption keys. Information is significantly harder to be removed even if an attacker has installed malware or has complete physical possession of the PC.
 
 Microsoft Pluton is designed to provide the functionality of the Trusted Platform Module as well as deliver other security functionality beyond what is possible with the TPM 2.0 specification, and allows for additional Pluton firmware and OS features to be delivered over time via Windows Update. For more information, see [Microsoft Pluton as TPM](pluton-as-tpm.md).
+
+Pluton is built on proven technology used in Xbox and Azure Sphere, and provides hardened integrated security capabilities to Windows 11 devices in collaboration with leading silicon partners. For more information, see [Meet the Microsoft Pluton processor – The security chip designed for the future of Windows PCs](https://www.microsoft.com/security/blog/2020/11/17/meet-the-microsoft-pluton-processor-the-security-chip-designed-for-the-future-of-windows-pcs/).
 
 ## Microsoft Pluton security architecture overview
 
