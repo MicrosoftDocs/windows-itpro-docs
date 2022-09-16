@@ -362,10 +362,10 @@ ADMX Info:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|Yes|
+|Home|No|No|
 |Pro|No|Yes|
 |Windows SE|No|Yes|
-|Business|No|Yes|
+|Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
