@@ -22,7 +22,6 @@ search.appverid:
 - BCS160
 - IWA160
 description: "Check the release health status of Microsoft 365 services before you call support to see if there is an active service interruption."
-feedback_system: none
 ---
 
 # How to check Windows release health
