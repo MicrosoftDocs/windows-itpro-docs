@@ -25,6 +25,8 @@ appliesto:
 
 param([switch]$Capable, [switch]$Ready, [switch]$Enable, [switch]$Disable, $SIPolicyPath, [switch]$AutoReboot, [switch]$DG, [switch]$CG, [switch]$HVCI, [switch]$HLK, [switch]$Clear, [switch]$ResetVerifier)
 
+Set-StrictMode -Version Latest
+
 $path = "C:\DGLogs\"
 $LogFile = $path + "DeviceGuardCheckLog.txt"
 
