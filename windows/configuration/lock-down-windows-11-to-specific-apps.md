@@ -30,7 +30,7 @@ A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users a
 
 Currently, the only supported method to configure a multi-app kiosk in Windows 11 is through WMI Bridge. You can follow the [instructions for Windows 10](lock-down-windows-10-to-specific-apps.md), except for the differences for Windows 11 outlined below.  
 
-1. Use the guidance on the [multi-app kiosk page](lock-down-windows-10-to-specific-apps.md) to create your XML configuration. When configuring ONLY for Windows 11, you can ignore the Start Layout ('<StartLayout>') section. If you'd like to use one configuration for both Windows 10 and 11 devices, include the Start Layout section as planned in the Windows 10 instructions.  
+1. Use the guidance on the [multi-app kiosk page](lock-down-windows-10-to-specific-apps.md) to create your XML configuration. When configuring ONLY for Windows 11, you can ignore the Start Layout (`<StartLayout>`) section. If you'd like to use one configuration for both Windows 10 and 11 devices, include the Start Layout section as planned in the Windows 10 instructions.  
 
 2. Use the Start Pins instructions to generate your Windows 11 start menu layout JSON. If you opt to do this using the PowerShell command, make sure that the system you run the command on has the same file structure as the device on which you will apply the kiosk (the path to the allowed apps must be the same). At the end of this step, you should have a JSON pinnedList that looks something like the below.
 
