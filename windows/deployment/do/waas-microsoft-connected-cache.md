@@ -55,7 +55,7 @@ See the following diagram.
 
 For more information about MCC, see the following articles:
 - [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise.md)
-- [Microsoft Connected Cache for ISPs](mcc-isp.md)
+- [Microsoft Connected Cache for ISPs](mcc-isp-device-provisioning.md)
 
 ## Also see
 

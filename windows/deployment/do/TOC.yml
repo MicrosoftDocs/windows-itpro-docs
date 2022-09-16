@@ -27,14 +27,12 @@
       href: delivery-optimization-proxy.md
 - name: Microsoft Connected Cache
   items:
-    - name: MCC overview
+    - name: Microsoft Connected Cache overview
       href: waas-microsoft-connected-cache.md
     - name: MCC for Enterprise and Education
       href: mcc-enterprise.md
     - name: MCC for ISPs
       items:
-      - name: Overview
-        href: mcc-isp-overview.md
       - name: Concepts
         items:
         - name: Device provisioning
@@ -49,7 +47,7 @@
         items:  
         - name: Operator sign up and service onboarding
           href: mcc-isp-signup.md
-        - name: Create the MCC in Azure portal
+        - name: Create the cache node in Azure portal
           href: mcc-isp-create.md
         - name: Provision and deploy cache node to your server
           href: mcc-isp-provision-deploy.md

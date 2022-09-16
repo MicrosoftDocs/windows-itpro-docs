@@ -25,7 +25,7 @@ To make sure you're maximizing the performance of your cache node, note the foll
 
 ### OS requirements
 
-The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
+The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
 
 ### NIC requirements
 
