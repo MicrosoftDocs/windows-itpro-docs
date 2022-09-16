@@ -41,9 +41,6 @@ For more information, see [Personal Data Encryption](/windows/security/informati
 ## Modern Windows Experiences
 <!--6286095-->
 
-## Kiosk
-<!--6444738-->
-
 ## Windows update
 <!--6286244,6286260 -->
 
@@ -75,6 +72,7 @@ For more information, see [Configure education themes for Windows 11](/education
 
 ## Windows Hello
 <!-- 6286360-->
+
 
 ## Credential Guard
 <!--6289166-->
