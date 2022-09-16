@@ -1,3 +1,18 @@
+---
+title: Uninstall your cache node
+manager: dougeby
+description: How to uninstall a cache node
+keywords: updates, downloads, network, bandwidth
+ms.prod: w10
+ms.mktglfcycl: deploy
+audience: itpro
+author: amyzhou
+ms.localizationpriority: medium
+ms.author: amyzhou
+ms.collection: M365-modern-desktop
+ms.topic: article
+---
+
 # Uninstall your cache node
 
 There are two main steps required to uninstall your cache node:

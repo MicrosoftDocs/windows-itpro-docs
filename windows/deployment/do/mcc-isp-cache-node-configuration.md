@@ -1,3 +1,18 @@
+---
+title: Cache node configuration
+manager: dougeby
+description: Configuring a cache node on Azure portal
+keywords: updates, downloads, network, bandwidth
+ms.prod: w10
+ms.mktglfcycl: deploy
+audience: itpro
+author: amyzhou
+ms.localizationpriority: medium
+ms.author: amyzhou
+ms.collection: M365-modern-desktop
+ms.topic: article
+---
+
 # Cache node configuration
 
 All cache node configuration will take place within Azure portal. This article outlines all of the settings that you will be able to configure. 

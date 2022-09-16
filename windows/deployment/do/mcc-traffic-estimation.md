@@ -1,4 +1,19 @@
-# Traffic Estimation
+---
+title: Traffic estimation
+manager: dougeby
+description: Details on how traffic estimates are made and how to enhance cache node performance.
+keywords: updates, downloads, network, bandwidth
+ms.prod: w10
+ms.mktglfcycl: deploy
+audience: itpro
+author: amyzhou
+ms.localizationpriority: medium
+ms.author: amyzhou
+ms.collection: M365-modern-desktop
+ms.topic: article
+---
+
+# Traffic estimation
 
 During the sign up process, Microsoft will provide you with a traffic estimation based on your ASN(s). We make estimations based on our predictions on historical data about Microsoft content download volume. We will use these estimations to recommend hardware or VM configurations. You can view these recommendations within the Azure portal.
 

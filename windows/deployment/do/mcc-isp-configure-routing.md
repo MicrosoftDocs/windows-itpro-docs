@@ -1,3 +1,18 @@
+---
+title: Configure client routing for cache node
+manager: dougeby
+description: How to configure client routing for a cache node
+keywords: updates, downloads, network, bandwidth
+ms.prod: w10
+ms.mktglfcycl: deploy
+audience: itpro
+author: amyzhou
+ms.localizationpriority: medium
+ms.author: amyzhou
+ms.collection: M365-modern-desktop
+ms.topic: article
+---
+
 # Configure client routing for cache node
 
 All configuration routing takes place within the Azure Portal. There are two main methods to route clients to your cache node:
