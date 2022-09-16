@@ -65,7 +65,7 @@ PDE offers two levels of protection. The level of protection is determined based
 | Data is accessible when device is shut down | No | No |
 | Decryption keys discarded | After user signs out | After user locks device or signs out |
 
-## When will PDE encrypted files be inaccessible
+## PDE encrypted files accessibility
 
 When a file is encrypted with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access a PDE encrypted file, they'll be denied access to the file. Scenarios where a user will be denied access to a PDE encrypted file include:
 
