@@ -19,7 +19,7 @@ ms.custom: bitlocker
 **Applies to**
 -   Windows 10
 -   Windows 11
--   Windows Server 2016 and above 
+-   Windows Server 2016 and later 
 
 This topic explains how BitLocker Device Encryption can help protect data on devices running Windows. For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md). 
 
