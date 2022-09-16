@@ -82,6 +82,9 @@ This setting cannot be configured via Group Policy.
 
 This setting cannot be configured via registry.
 
+#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/reg)
+
+This setting cannot be configured via PowerShell.
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
 
 To configure federated sign-in using Configuration Service Providers, use the following settings:
