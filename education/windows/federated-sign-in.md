@@ -12,7 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE 22H2</b>
+- :::image type="icon" source="images/icons/windows-os.svg":::  <b>Windows 11 SE 22H2</b>
 ---
 
 <!-- MAXADO-6286399 -->
