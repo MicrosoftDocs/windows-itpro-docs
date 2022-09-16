@@ -102,14 +102,14 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
 **To force a recovery for the local computer:**
 
-1.  Click the **Start** button, type **cmd** in the **Start Search** box, right-click **cmd.exe**, and then click **Run as administrator**.
+1.  Select the **Start** button, type **cmd** in the **Start Search** box, and select and hold **cmd.exe**, and then select **Run as administrator**.
 2.  At the command prompt, type the following command and then press **ENTER**:
 
     `manage-bde -forcerecovery <BitLockerVolume>`
 
 **To force recovery for a remote computer:**
 
-1.  On the Start screen, type **cmd.exe**, and then click **Run as administrator**.
+1.  On the Start screen, type **cmd.exe**, and then select **Run as administrator**.
 
 2.  At the command prompt, type the following command and then press **ENTER**:
 
@@ -150,7 +150,7 @@ If the user does not have a recovery password in a printout or on a USB flash dr
 -   **Choose how BitLocker-protected operating system drives can be recovered**
 -   **Choose how BitLocker-protected fixed drives can be recovered**
 -   **Choose how BitLocker-protected removable drives can be recovered**
-In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Select the **Do not enable BitLocker until recovery information is stored in AD
+In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Check the **Do not enable BitLocker until recovery information is stored in AD
 DS** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
 
 > [!NOTE]
@@ -250,9 +250,9 @@ If a user has forgotten the PIN, you must reset the PIN while you are logged on 
 
 1.  Unlock the computer using the recovery password.
 2.  Reset the PIN:
-    1.  Right-click the drive and then click **Change PIN**
-    2.  In the BitLocker Drive Encryption dialog, click **Reset a forgotten PIN**. If you are not logged in with an administrator account, you must provide administrative credentials at this time.
-    3.  In the PIN reset dialog, provide and confirm the new PIN to be used and then click **Finish**.
+    1.  Select and hold the drive and then select **Change PIN**
+    2.  In the BitLocker Drive Encryption dialog, select **Reset a forgotten PIN**. If you are not logged in with an administrator account, you must provide administrative credentials at this time.
+    3.  In the PIN reset dialog, provide and confirm the new PIN to be used and then select **Finish**.
 3. You will use the new PIN the next time you unlock the drive.
 
 ### <a href="" id="bkmk-loststartup"></a>Lost startup key
@@ -263,7 +263,7 @@ If you have lost the USB flash drive that contains the startup key, then you mus
 
 1.  Log on as an administrator to the computer that has its startup key lost.
 2.  Open Manage BitLocker.
-3.  Click **Duplicate start up key**, insert the clean USB drive on which you are going to write the key, and then click **Save**.
+3.  Select **Duplicate start up key**, insert the clean USB drive on which you are going to write the key, and then select **Save**.
 
 ### <a href="" id="bkmk-changebootknown"></a>Changes to boot files
 
