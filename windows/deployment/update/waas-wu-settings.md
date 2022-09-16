@@ -269,10 +269,9 @@ $registryPath = "HKLM:\Software\Microsoft\WindowsUpdate\Orchestrator\Configurati
 $Name = "UsoDisableAADJAttribution"
 $value = "1" 
 
-if (!(Test-Path $registryPath)) {
-
-    New-Item -Path $registryPath -Force | Out-Null
-
+if (!(Test-Path $registryPath)) 
+{
+  New-Item -Path $registryPath -Force | Out-Null
 }
 
 New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
