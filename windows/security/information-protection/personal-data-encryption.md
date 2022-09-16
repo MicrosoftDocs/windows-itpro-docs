@@ -67,7 +67,9 @@ PDE offers two levels of protection. The level of protection is determined based
 
 ## PDE encrypted files accessibility
 
-When a file is encrypted with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access a PDE encrypted file, they'll be denied access to the file. Scenarios where a user will be denied access to a PDE encrypted file include:
+When a file is encrypted with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access a PDE encrypted file, they'll be denied access to the file.
+
+Scenarios where a user will be denied access to a PDE encrypted file include:
 
 - User has signed into Windows via a password instead of signing in with Windows Hello for Business biometric or PIN.
 - If specified via level 2 protection, when the device is locked.
@@ -219,7 +221,9 @@ Encryption information including what encryption method is being used can be obt
 
 ## Disabling PDE and decrypting files
 
-Currently there's no method to disable PDE via MDM policy. However, PDE can be disabled locally and files can be decrypted using **cipher.exe**. Additionally, in certain scenarios a user may be able to decrypt a file using the following steps:
+Currently there's no method to disable PDE via MDM policy. However, PDE can be disabled locally and files can be decrypted using **cipher.exe**.
+
+In certain scenarios a user may be able to manually decrypt a file using the following steps:
 
 1. Open the properties of the file
 2. Under the **General** tab, select **Advanced...**
@@ -227,7 +231,7 @@ Currently there's no method to disable PDE via MDM policy. However, PDE can be d
 4. Select **OK**, and then **OK** again
 
 > [!Important]
-> Once a user selects to decrypt a file, they will not be able to encrypt the file again.
+> Once a user selects to manually decrypt a file, they will not be able to manually encrypt the file again.
 
 ## Windows out of box applications that support PDE
 
