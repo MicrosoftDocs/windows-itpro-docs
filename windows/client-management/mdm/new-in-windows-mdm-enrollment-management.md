@@ -25,7 +25,6 @@ For details about Microsoft mobile device management protocols for Windows 10 an
 
 | New or updated article | Description |
 |--|--|
-| [AssignedAccess](assignedaccess-csp.md) | Added the following node:<br><li> |
 | [DeviceStatus](devicestatus-csp.md) | Added the following node:<br><li>MDMClientCertAttestation |
 | [eUUICs](euiccs-csp.md) | Added the following node:<br><li>IsDiscoveryServer |
 | [PersonalDataEncryption](personaldataencryption-csp.md) | New CSP |
