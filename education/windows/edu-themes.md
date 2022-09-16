@@ -43,7 +43,7 @@ Education themes aren't enabled by default. IT administrators can configure devi
 1. In **Configuration settings**, select **Add**
 1. In **Add Row**, enter the following properties:
     - Name: enter **EnableEduThemes**
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/Stickers/EnableEduThemes`
+    - OMA-URI: `./Vendor/MSFT/Policy/Config/Education/EnableEduThemes`
     - Data type: **Integer**
     - Value: **1**
 1. Select **Save**
