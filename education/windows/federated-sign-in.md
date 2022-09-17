@@ -74,17 +74,6 @@ To configure federated sign-in using a provisioning package, use the following s
 
 Apply the provisioning package to the devices that require federated sign-in.
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
-
-This setting cannot be configured via Group Policy.
-
-#### [:::image type="icon" source="images/icons/registry.svg"::: **Registry**](#tab/reg)
-
-This setting cannot be configured via registry.
-
-#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/reg)
-
-This setting cannot be configured via PowerShell.
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
 
 To configure federated sign-in using Configuration Service Providers, use the following settings:
@@ -96,6 +85,18 @@ To configure federated sign-in using Configuration Service Providers, use the fo
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that re llowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
+
+#### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+
+This setting cannot be configured via Group Policy.
+
+#### [:::image type="icon" source="images/icons/registry.svg"::: **Registry**](#tab/reg)
+
+This setting cannot be configured via registry.
+
+#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/ps)
+
+This setting cannot be configured via PowerShell.
 
 ---
 
