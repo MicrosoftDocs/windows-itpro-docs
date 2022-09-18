@@ -109,9 +109,9 @@ After an update is installed, Windows attempts automatic restart outside of acti
 
 Starting in Windows 10 version 1809, you can define which Windows Update notifications are displayed to the user. This policy doesn't control how and when updates are downloaded and installed. You can use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Display options for update notifications** with these values:
 
-**0** (default) - Use the default Windows Update notifications
-**1** - Turn off all notifications, excluding restart warnings
-**2** - Turn off all notifications, including restart warnings
+**0** (default) - Use the default Windows Update notifications </br>
+**1** - Turn off all notifications, excluding restart warnings </br>
+**2** - Turn off all notifications, including restart warnings </br>
 
 To configure this behavior through MDM, use [**Update/UpdateNotificationLevel**](/windows/client-management/mdm/policy-configuration-service-provider#update-updatenotificationlevel).
 

@@ -178,9 +178,9 @@ There are additional settings that affect the notifications.
 
 We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you have set. If you do have further needs that are not met by the default notification settings, you can use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Display options for update notifications** with these values:
 
-**0** (default) - Use the default Windows Update notifications
-**1** - Turn off all notifications, excluding restart warnings
-**2** - Turn off all notifications, including restart warnings
+**0** (default) - Use the default Windows Update notifications </br>
+**1** - Turn off all notifications, excluding restart warnings </br>
+**2** - Turn off all notifications, including restart warnings </br>
 
 Option **2** creates a poor experience for personal devices; it's only recommended for kiosk devices where automatic restarts have been disabled.
 
