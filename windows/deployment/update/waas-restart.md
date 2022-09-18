@@ -10,6 +10,7 @@ ms.topic: article
 ms.custom:
 - seo-marvel-apr2020
 ms.collection: highpri
+date: 09/22/2022
 ---
 
 # Manage device restarts after updates
@@ -18,11 +19,11 @@ ms.collection: highpri
 **Applies to**
 
 - Windows 10
-
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-You can use Group Policy settings, mobile device management (MDM), or Registry (not recommended) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
+You can use Group Policy settings, mobile device management (MDM), or Registry (not recommended) to configure when devices will restart after a Windows update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
 
@@ -100,7 +101,7 @@ To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRan
 
 ## Limit restart delays
 
-After an update is installed, Windows 10 attempts automatic restart outside of active hours. If the restart does not succeed after seven days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from seven days to any number of days between two and 14.
+After an update is installed, Windows attempts automatic restart outside of active hours. If the restart does not succeed after seven days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from seven days to any number of days between two and 14.
 
 ## Control restart notifications
 
@@ -198,10 +199,10 @@ There are three different registry combinations for controlling restart behavior
 
 ## Related articles
 
-- [Update Windows 10 in the enterprise](index.md)
+- [Update Windows in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
+- [Configure Delivery Optimization for Windows updates](../do/waas-delivery-optimization.md)
+- [Configure BranchCache for Windows updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
