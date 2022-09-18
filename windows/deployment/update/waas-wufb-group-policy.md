@@ -178,12 +178,14 @@ There are additional settings that affect the notifications.
 
 We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you have set. If you do have further needs that are not met by the default notification settings, you can use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Display options for update notifications** with these values:
 
-**0** (default) – Use the default Windows Update notifications
-**1** – Turn off all notifications, excluding restart warnings
-**2** – Turn off all notifications, including restart warnings
+**0** (default) - Use the default Windows Update notifications
+**1** - Turn off all notifications, excluding restart warnings
+**2** - Turn off all notifications, including restart warnings
 
-> [!NOTE]
-> Option **2** creates a poor experience for personal devices; it's only recommended for kiosk devices where automatic restarts have been disabled.
+Option **2** creates a poor experience for personal devices; it's only recommended for kiosk devices where automatic restarts have been disabled.
+
+> [!NOTE] 
+> Starting in Windows 11, version 22H2, **Apply only during active hours** was added as an additional option for **Display options for update notifications**. When **Apply only during active hours** is selected, the notifications will only be disabled during active hours when options `1` or `2` are used. To ensure that the device stays updated, a notification will still be shown during active hours if **Apply only during active hours** is selected, and once a deadline has been reached when [Specify deadlines for automatic updates and restarts](wufb-compliancedeadlines.md) is configured. <!--6286260-->
 
 Still more options are available in **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure auto-restart restart warning notifications schedule for updates**. This setting allows you to specify the period for auto-restart warning reminder notifications (from 2-24 hours; 4 hours is the default) before the update and to specify the period for auto-restart imminent warning notifications (15-60 minutes is the default). We recommend using the default notifications.
 
