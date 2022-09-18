@@ -105,11 +105,24 @@ After an update is installed, Windows attempts automatic restart outside of acti
 
 ## Control restart notifications
 
-In Windows 10, version 1703, we have added settings to control restart notifications for users.
+### Display options for update notifications
+
+Starting in Windows 10 version 1809, you can define which Windows Update notifications are displayed to the user. This policy doesn't control how and when updates are downloaded and installed. You can use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Display options for update notifications** with these values:
+
+**0** (default) - Use the default Windows Update notifications
+**1** - Turn off all notifications, excluding restart warnings
+**2** - Turn off all notifications, including restart warnings
+
+To configure this behavior through MDM, use [**Update/UpdateNotificationLevel**](/windows/client-management/mdm/policy-configuration-service-provider#update-updatenotificationlevel).
+
+Starting in Windows 11, version 22H2, **Apply only during active hours** was added as an additional option for **Display options for update notifications**. When **Apply only during active hours** is selected, the notifications will only be disabled during active hours when options `1` or `2` are used. To ensure that the device stays updated, a notification will still be shown during active hours if **Apply only during active hours** is selected and once a deadline has been reached when [Specify deadlines for automatic updates and restarts](wufb-compliancedeadlines.md) is configured.
+
+To configure this behavior through MDM, use [**Update/UpdateNotificationLevel**](/windows/client-management/mdm/policy-csp-update#update-NoUpdateNotificationDuringActiveHours).
+
 
 ### Auto-restart notifications
 
-Administrators can override the default behavior for the auto-restart required notification. By default, this notification will dismiss automatically.
+Administrators can override the default behavior for the auto-restart required notification. By default, this notification will dismiss automatically. This setting was added in Windows 10, version 1703.
 
 To configure this behavior through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select **Configure auto-restart required notification for updates**. When configured to **2 - User Action**, a user that gets this notification must manually dismiss it.
 
