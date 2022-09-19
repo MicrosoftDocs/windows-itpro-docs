@@ -13,7 +13,7 @@ ms.custom: template-how-to
 # Manage Windows Defender Application Control (WDAC) Policies with CI Tool
 
 CI Tool makes Windows Defender Application Control (WDAC) policy management easier for IT admins.  CI Tool can be used to manage Windows Defender Application Control policies and CI Tokens.
-This article will describe how to use CI Tool to update and manage policies.  CI Tool is now included in box as part of Windows and can be interacted with in the command line.
+This article will describe how to use CI Tool to update and manage policies.  CI Tool will be included in box as part of Windows in the January lifecycle update and will be able to be interacted with in the command line.
 
 ## Policy Commands
 
