@@ -27,7 +27,7 @@ The goal of the Windows Hello for Business cloud Kerberos trust is to bring the 
 Windows Hello for Business cloud Kerberos trust uses Azure Active Directory (AD) Kerberos to address pain points of the key trust deployment model:
 
 - Windows Hello for Business cloud Kerberos trust provides a simpler deployment experience because it doesn't require the deployment of public key infrastructure (PKI) or changes to existing PKI.
-- cloud Kerberos trust doesn't require syncing of public keys between Azure AD and on-premises domain controllers (DCs) for users to access on-premises resources and applications. This change means there isn't a delay between the user provisioning and being able to authenticate.
+- Cloud Kerberos trust doesn't require syncing of public keys between Azure AD and on-premises domain controllers (DCs) for users to access on-premises resources and applications. This change means there isn't a delay between the user provisioning and being able to authenticate.
 - Deploying Windows Hello for Business cloud Kerberos trust enables you to also deploy passwordless security keys with minimal extra setup.
 
 > [!NOTE]
