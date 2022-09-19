@@ -1,6 +1,6 @@
 ---
 title: Configure education themes for Windows 11
-description: Description of education themes for Windows 11 and how to configure them via MDM
+description: Description of education themes for Windows 11 and how to configure them via Intune and provisioning package.
 ms.date: 09/15/2022
 ms.prod: windows
 ms.technology: windows
@@ -27,33 +27,29 @@ Students can choose their own themes, making it feel the device is their own. Wh
 
 ## Enable education themes
 
-Education themes aren't enabled by default. IT administrators can configure devices to download the education themes using Microsoft Intune.
+Education themes aren't enabled by default. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
-1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
-1. Select **Devices** > **Configuration profiles** > **Create profile**
-1. Enter the following properties:
-    - **Platform**: select **Windows 10 and later**
-    - **Profile type**: select **Templates**
-    - **Template name**: select **Custom**
-1. Select **Create**
-1. In **Basics**, enter the following properties:
-    - **Name**: enter a descriptive name for the profile
-    - **Description**: enter a description for the profile. This setting is optional, but recommended
-1. Select **Next**
-1. In **Configuration settings**, select **Add**
-1. In **Add Row**, enter the following properties:
-    - Name: enter **EnableEduThemes**
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/Stickers/EnableEduThemes`
-    - Data type: **Integer**
-    - Value: **1**
-1. Select **Save**
-1. Select **Next**
-1. In **Scope tags**, assign any applicable tags (optional)
-1. Select **Next**
-1. In **Assignments**, select the security groups that will receive the policy
-1. Select **Next**
-1. In **Applicability Rules**, select **Next**
-1. In **Review + create**, review your settings and select **Create**
+#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+To enable education themes using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+
+| Setting |
+|--------|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/EnableEduThemes`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+
+Assign the policy to a security group that contains as members the devices or users that you want to enable education themes on.
+
+#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+To configure education themes using a provisioning package, use the following settings:
+
+| Setting |
+|--------|
+| <li> Path: **`Education/EnableEduThemes`** </li><li>Value: **True**</li>|
+
+Apply the provisioning package to the devices that you want to enable education themes on.
+
+---
 
 ## How to use the education themes
 
@@ -62,3 +58,7 @@ Once the education themes are enabled, the device will download them as soon as 
 To change the theme, select **Settings** > **Personalization** > **Themes** > **Select a theme**
 
 :::image type="content" source="./images/win-11-se-themes.png" alt-text="Windows 11 education themes selection" border="true":::
+
+-----------
+
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
