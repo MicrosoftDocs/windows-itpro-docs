@@ -45,9 +45,9 @@ ms.date: 09/22/2022
     - Destructive PIN resets will cause PDE encryption keys to be lost. The destructive PIN reset will make any file encrypted with PDE no longer accessible after a destructive PIN reset. Files encrypted with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
   - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
     - Provides additional security when authenticating with Windows Hello for Business via biometrics or PIN
-  - [Kernel and user mode crash dumps disabled](../../../client-management/mdm/policy-csp-memorydump.md)
+  - [Kernel and user mode crash dumps disabled](/windows/client-management/mdm/policy-csp-memorydump)
     - Crash dumps can potentially cause the PDE encryption keys to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, please see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
-  - [Hibernation disabled](../../../client-management/mdm/policy-csp-power#power-allowhibernate)
+  - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
     - Hibernation files can potentially cause the PDE encryption keys to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, please see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 ## PDE protection levels
@@ -83,7 +83,7 @@ To enable PDE on devices, push an MDM policy to the devices with the following p
 - Data type: **Integer**
 - Value: **1**
 
-There's also a [PDE CSP](../../../client-management/mdm/personaldataencryption-csp.md) available for MDM solutions that support it.
+There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-csp) available for MDM solutions that support it.
 
 > [!NOTE]
 > Enabling the PDE policy on devices only enables the PDE feature. It does not encrypt any files. To encrypt files, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) to create custom applications and scripts to specify which files to encrypt and at what level to encrypt the files. Additionally, files will not encrypt via the APIs until this policy has been enabled.
@@ -138,5 +138,5 @@ Certain Windows applications support PDE out of the box. If PDE is enabled on a 
   - Supports encrypting both email bodies and attachments
 
 ## See also
-- [Personal Data Encryption (PDE) FAQ](faq-pde.md)
+- [Personal Data Encryption (PDE) FAQ](faq-pde.yml)
 - [Configure Personal Data Encryption (PDE) polices in Intune](configure-pde-in-intune.md)

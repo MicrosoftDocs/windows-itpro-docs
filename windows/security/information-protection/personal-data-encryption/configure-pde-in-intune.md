@@ -73,29 +73,6 @@ ms.date: 09/22/2022
 
 ## Recommended prerequisites
 
-#### Disable hibernation
-
-1. Sign into the Intune
-2. Navigate to **Devices** > **Configuration Profiles**
-3. Select **Create profile**
-4. Under **Platform**, select **Windows 10 and later**
-5. Under **Profile type**, select **Settings catalog**, and then select **Create**
-6. On the ****Basics** tab:
-    1. Next to **Name**, enter **Disable Hibernation**
-    2. Next to **Description**, enter a description
-7. Select **Next**
-8. On the **Configuration settings** tab, select **Add settings**
-9. In the **Settings picker** windows, select **Power**
-10. When the settings appear in the lower pane, under **Setting name**, select **Allow Hibernate**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
-11. Change **Allow Hibernate** to **Block**, and then select **Next**
-12. On the **Scope tags** tab, configure if necessary and then select **Next**
-13. On the **Assignments** tab:
-    1. Under **Included groups**, select **Add groups**
-    2. Select the groups that the hibernation policy should be deployed to
-    3. Select **Select**
-    4. Select **Next**
-14. On the **Review + create** tab, review the configuration to make sure everything is configured correctly, and then select **Create**
-
 #### Disable crash dumps
 
 1. Sign into the Intune
@@ -119,6 +96,29 @@ ms.date: 09/22/2022
     4. Select **Next**
 14. On the **Review + create** tab, review the configuration to make sure everything is configured correctly, and then select **Create**
 
+#### Disable hibernation
+
+1. Sign into the Intune
+2. Navigate to **Devices** > **Configuration Profiles**
+3. Select **Create profile**
+4. Under **Platform**, select **Windows 10 and later**
+5. Under **Profile type**, select **Settings catalog**, and then select **Create**
+6. On the ****Basics** tab:
+    1. Next to **Name**, enter **Disable Hibernation**
+    2. Next to **Description**, enter a description
+7. Select **Next**
+8. On the **Configuration settings** tab, select **Add settings**
+9. In the **Settings picker** windows, select **Power**
+10. When the settings appear in the lower pane, under **Setting name**, select **Allow Hibernate**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
+11. Change **Allow Hibernate** to **Block**, and then select **Next**
+12. On the **Scope tags** tab, configure if necessary and then select **Next**
+13. On the **Assignments** tab:
+    1. Under **Included groups**, select **Add groups**
+    2. Select the groups that the hibernation policy should be deployed to
+    3. Select **Select**
+    4. Select **Next**
+14. On the **Review + create** tab, review the configuration to make sure everything is configured correctly, and then select **Create**
+
 ## See also
 - [Personal Data Encryption (PDE)](overview-pde.md)
-- [Personal Data Encryption (PDE) FAQ](faq-pde.md)
+- [Personal Data Encryption (PDE) FAQ](faq-pde.yml)
