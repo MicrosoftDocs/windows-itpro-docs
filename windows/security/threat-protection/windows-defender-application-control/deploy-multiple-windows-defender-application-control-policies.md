@@ -56,19 +56,19 @@ Prior to Windows 10 1903, Windows Defender Application Control only supported a 
 In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](/powershell/module/configci/new-cipolicy?preserve-view=true&view=win10-ps) results in 1) unique GUIDs being generated for the policy ID and 2) the policy type being specified as base. The below example describes the process of creating a new policy in the multiple policy format.
 
 ```powershell
-New-CIPolicy -MultiplePolicyFormat -ScanPath "<path>" -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
+New-CIPolicy -MultiplePolicyFormat -ScanPath "<path>" -UserPEs -FilePath ".\policy.xml" -Level FilePublisher -Fallback SignedVersion,Publisher,Hash
 ```
 
 Optionally, you can choose to make the new base policy allow for supplemental policies.
 
 ```powershell
-Set-RuleOption -FilePath <string> -Option 17
+Set-RuleOption -FilePath ".\policy.xml" -Option 17
 ```
 
 For signed base policies to allow for supplemental policies, make sure that supplemental signers are defined. Use the **Supplemental** switch in **Add-SignerRule** to provide supplemental signers.
 
 ```powershell
-Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-Update] [-Supplemental] [-Deny]  [<CommonParameters>]
+Add-SignerRule -FilePath ".\policy.xml" -CertificatePath <certificate_path_> [-Kernel] [-User] [-Update] [-Supplemental] [-Deny]
 ```
 
 ### Supplemental policy creation
@@ -79,11 +79,8 @@ In order to create a supplemental policy, begin by creating a new policy in the 
 - "BasePolicyToSupplementPath": path to base policy file that the supplemental policy applies to
 
 ```powershell
-Set-CIPolicyIdInfo [-FilePath] <string> [-PolicyName <string>] [-SupplementsBasePolicyID <guid>] [-BasePolicyToSupplementPath <string>] [-ResetPolicyID] [-PolicyId <string>]  [<CommonParameters>]
+Set-CIPolicyIdInfo -FilePath ".\supplemental_policy.xml" [-SupplementsBasePolicyID <BasePolicyGUID>] [-BasePolicyToSupplementPath <basepolicy_path_>] -PolicyId <policy_Id> -PolicyName <PolicyName>
 ```
-
-> [!NOTE]
-> **ResetPolicyId** reverts a supplemental policy to a base policy, and resets the policy GUIDs back to a random GUID.
 
 ### Merging policies
 
