@@ -31,7 +31,7 @@ ms.date: 09/22/2022
 ### **Not supported with PDE**
   - [FIDO/security key authentication](../../identity-protection/hello-for-business/microsoft-compatible-security-key.md)
   - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
-    -  For information on disabling ARSO via Intune, please see [Disable Winlogon automatic restart sign-on (ARSO)](configure-pde-in-intune.md#disable-winlogon-automatic-restart-sign-on-arso)).
+    -  For information on disabling ARSO via Intune, see [Disable Winlogon automatic restart sign-on (ARSO)](configure-pde-in-intune.md#disable-winlogon-automatic-restart-sign-on-arso)).
   - [Windows Information Protection (WIP)](../windows-information-protection/protect-enterprise-data-using-wip.md)
   - [Hybrid Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
   - Remote Desktop connections
@@ -46,9 +46,9 @@ ms.date: 09/22/2022
   - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
     - Provides additional security when authenticating with Windows Hello for Business via biometrics or PIN
   - [Kernel and user mode crash dumps disabled](/windows/client-management/mdm/policy-csp-memorydump)
-    - Crash dumps can potentially cause the PDE encryption keys to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, please see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
+    - Crash dumps can potentially cause the PDE encryption keys to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
   - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
-    - Hibernation files can potentially cause the PDE encryption keys to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, please see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+    - Hibernation files can potentially cause the PDE encryption keys to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 ## PDE protection levels
 
@@ -88,7 +88,7 @@ There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-c
 > [!NOTE]
 > Enabling the PDE policy on devices only enables the PDE feature. It does not encrypt any files. To encrypt files, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) to create custom applications and scripts to specify which files to encrypt and at what level to encrypt the files. Additionally, files will not encrypt via the APIs until this policy has been enabled.
 
-For information on enabling PDE via Intune, please see [Enable Personal Data Encryption (PDE)](configure-pde-in-intune.md#enable-personal-data-encryption-pde).
+For information on enabling PDE via Intune, see [Enable Personal Data Encryption (PDE)](configure-pde-in-intune.md#enable-personal-data-encryption-pde).
 
 ## Differences between PDE and BitLocker
 

@@ -15,7 +15,7 @@ ms.date: 09/22/2022
 
 <!-- Max 5963468 OS 32516487 -->
 
-# Configure Personal Data Encryption (PDE) polices in Intune
+# Configure Personal Data Encryption (PDE) policies in Intune
 
 ## Required prerequisites
 
