@@ -1,6 +1,6 @@
 ---
 title: Configure Stickers for Windows 11 SE
-description: Description of Stickers for Windows 11 SE and how to configure them via MDM
+description: Description of the Stickers feature and how to configure it via Intune and provisioning package.
 ms.date: 09/15/2022
 ms.prod: windows
 ms.technology: windows
@@ -33,33 +33,29 @@ With Stickers, students feel more attached to the device as they feel as if it's
 
 ## Enable Stickers
 
-Stickers aren't enabled by default. IT administrators can allow students to personalize their devices without losing control over apps or device performance using Microsoft Intune.
+Stickers aren't enabled by default. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
-1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
-1. Select **Devices** > **Configuration profiles** > **Create profile**
-1. Enter the following properties:
-    - **Platform**: select **Windows 10 and later**
-    - **Profile type**: select **Templates**
-    - **Template name**: select **Custom**
-1. Select **Create**
-1. In **Basics**, enter the following properties:
-    - **Name**: enter a descriptive name for the profile
-    - **Description**: enter a description for the profile. This setting is optional, but recommended
-1. Select **Next**
-1. In **Configuration settings**, select **Add**
-1. In **Add Row**, enter the following properties:
-    - Name: enter **EnableStickers**
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`
-    - Data type: **Integer**
-    - Value: **1**
-1. Select **Save**
-1. Select **Next**
-1. In **Scope tags**, assign any applicable tags (optional)
-1. Select **Next**
-1. In **Assignments**, select the security groups that will receive the policy
-1. Select **Next**
-1. In **Applicability Rules**, select **Next**
-1. In **Review + create**, review your settings and select **Create**
+#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+To enable Stickers using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+
+| Setting |
+|--------|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+
+Assign the policy to a security group that contains as members the devices or users that you want to enable Stickers on.
+
+#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+To configure Stickers using a provisioning package, use the following settings:
+
+| Setting |
+|--------|
+| <li> Path: **`Education/AllowStickers`** </li><li>Value: **True**</li>|
+
+Apply the provisioning package to the devices that you want to enable Stickers on.
+
+---
 
 ## How to use Stickers
 
@@ -75,3 +71,7 @@ Multiple stickers can be added from the picker by selecting them. The stickers c
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
+
+-----------
+
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
