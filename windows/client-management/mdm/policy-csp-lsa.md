@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - LocalSecurityAuthority
-description: Define the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+description: Use the LocalSecurityAuthority CSP to configure policies for the Windows Local Security Authority Subsystem Service (LSASS).
+ms.author: vinpa
+author: vinaypamnani-msft
+ms.reviewer: 
+manager: aaroncz
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 ms.localizationpriority: medium
 ms.date: 08/26/2022
-ms.reviewer: 
-manager: dansimp
 ---
 
 # Policy CSP - LocalSecurity Authority
@@ -67,7 +67,7 @@ manager: dansimp
 <!--Description-->
 This policy setting defines whether the Local Security Authority Subsystem Service (LSASS) will allow loading of custom security support providers (SSPs) and authentication providers (APs).
 
-If you enable this policy setting or do not configure it, LSASS will allow loading of custom SSPs and APs.
+If you enable this policy setting or don't configure it, LSASS will allow loading of custom SSPs and APs.
 
 If you disable this policy setting, LSASS will block custom SSPs and APs from loading.
 
@@ -113,11 +113,11 @@ ADMX Info:
 <!--Description-->
 This policy setting configures the Local Security Authority Subsystem Service (LSASS) to run as a protected process.
 
-If you disable (0) or do not configure this policy setting, LSASS will not run as a protected process.
+If you disable (0) or don't configure this policy setting, LSASS won't run as a protected process.
 
 If you enable this policy with UEFI lock (1), LSASS will run as a protected process and this setting will be stored in a UEFI variable.
 
-If you enable this policy without UEFI lock (2), LSASS will run as a protected process and this setting will not be stored in a UEFI variable.
+If you enable this policy without UEFI lock (2), LSASS will run as a protected process and this setting won't be stored in a UEFI variable.
 
 <!--/Description-->
 
