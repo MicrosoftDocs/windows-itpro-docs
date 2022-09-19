@@ -301,7 +301,7 @@ This policy setting controls the configuration of the SHA1 algorithm used by the
 * 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
 * 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-If you don't configure this policy, each SHA1 will assume the **Default** state.
+If you don't configure this policy, the SHA1 algorithm will assume the **Default** state.
 
 <!--/Description-->
 
@@ -352,7 +352,7 @@ This policy setting controls the configuration of the SHA256 algorithm used by t
 * 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
 * 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-If you don't configure this policy, each SHA256 will assume the **Default** state.
+If you don't configure this policy, the SHA256 algorithm will assume the **Default** state.
 
 <!--/Description-->
 
@@ -403,7 +403,7 @@ This policy setting controls the configuration of the SHA384 algorithm used by t
 * 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
 * 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-If you don't configure this policy, each SHA384 will assume the **Default** state.
+If you don't configure this policy, the SHA384 algorithm will assume the **Default** state.
 
 <!--/Description-->
 
@@ -454,7 +454,7 @@ This policy setting controls the configuration of the SHA512 algorithm used by t
 * 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
 * 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-If you don't configure this policy, each SHA512 will assume the **Default** state.
+If you don't configure this policy, the SHA512 algorithm will assume the **Default** state.
 
 <!--/Description-->
 
