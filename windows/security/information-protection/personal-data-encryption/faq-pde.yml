@@ -64,6 +64,9 @@ sections:
         answer: |
           No. PDE encryption keys are protected Windows Hello for Business credentials and will only be unlocked when signing on with Windows Hello for Business PIN or biometrics.
 
+      - question: What encryption method and strength does PDE use?: |
+          PDE uses AES-256 to encrypt files
+
 additionalContent: |
   ## See also
     - [Personal Data Encryption (PDE)](overview-pde.md)
