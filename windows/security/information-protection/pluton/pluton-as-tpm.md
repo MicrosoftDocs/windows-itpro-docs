@@ -27,9 +27,9 @@ To learn more about the TPM related scenarios that benefit from Pluton, see [TPM
 
 ## Microsoft Pluton as a security processor alongside discrete TPM
 
-Microsoft Pluton can be used as a TPM, or in conjunction with a TPM. Although Pluton builds security directly into the CPU, OEMs may choose to use discrete TPM for multiple reasons, most common being the requirement for TPM to pass industry certification criteria like [Common Criteria TPM Protection Profile](https://www.commoncriteriaportal.org/files/ppfiles/anssi-cc-pp-2020_01_pp.pdf). OEMs can configure devices to use a discrete TPM 2.0 while having Pluton available to the system as a security processor for use cases beyond the TPM.
+Microsoft Pluton can be used as a TPM, or in conjunction with a TPM. Although Pluton builds security directly into the CPU, device manufacturers may choose to use discrete TPM as the default TPM, while having Pluton available to the system as a security processor for use cases beyond the TPM.
 
-Pluton is integrated within the SoC subsystem, and provides a flexible, updateable platform for running firmware that implements end-to-end security functionality authored, maintained, and updated by Microsoft. We encourage users owning devices that are Pluton capable, to enable Microsoft Pluton as the default TPM.
+Pluton is integrated within the SoC subsystem, and provides a flexible, updatable platform for running firmware that implements end-to-end security functionality authored, maintained, and updated by Microsoft. We encourage users owning devices that are Pluton capable, to enable Microsoft Pluton as the default TPM.
 
 ## Enable Microsoft Pluton as TPM
 
