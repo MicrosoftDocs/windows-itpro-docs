@@ -154,7 +154,7 @@
        - name: Personal Data Encryption (PDE) overview
          href: information-protection/personal-data-encryption/overview-pde.md
        - name: Personal Data Encryption (PDE) (FAQ)
-         href: information-protection/personal-data-encryption/faq-pde.md
+         href: information-protection/personal-data-encryption/faq-pde.yml
        - name: Configure Personal Data Encryption (PDE) in Intune
          href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
      - name: Configure S/MIME for Windows

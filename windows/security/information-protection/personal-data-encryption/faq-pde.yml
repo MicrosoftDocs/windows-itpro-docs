@@ -38,7 +38,7 @@ sections:
         answer: |
           No. Accessing PDE encrypted files over RDP isn't currently supported.
 
-      - question: Can PDE encrypted files be access via a network share?
+      - question: Can a PDE encrypted files be access via a network share?
         answer: |
           No. PDE encrypted files can only be accessed after signing on locally to Windows with Windows Hello for Business credentials.
 
