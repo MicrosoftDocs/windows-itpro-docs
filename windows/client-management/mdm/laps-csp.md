@@ -16,6 +16,9 @@ manager: jsimmons
 
 The Local Administrator Password Solution (LAPS) configuration service provider (CSP) is used by the enterprise to manage back up of local administrator account passwords. This CSP was added in Windows 11 as of version 25145.
 
+> [!IMPORTANT]
+> Windows LAPS is currently only available in Windows Insider builds as of 25145 and later. Support for the Windows LAPS Azure AD scenario is currently limited to a small group of Windows Insiders.
+
 The following example shows the LAPS CSP in tree format.
 
 ```xml
