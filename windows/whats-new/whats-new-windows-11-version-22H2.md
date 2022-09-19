@@ -55,14 +55,16 @@ For more information, see [WebAuthn APIs for passwordless authentication on Wind
 <!--6286059, 6063796-->
 **Enhanced Phishing Protection** in **Microsoft Defender SmartScreen** helps protect Microsoft school or work passwords against phishing and unsafe usage on websites and in applications. Enhanced Phishing Protection works alongside Windows security protections to help protect Windows 11 work or school sign-in passwords.
 
-[For more information, see [Enhanced Phishing Protection in Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen).
+For more information, see [Enhanced Phishing Protection in Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen).
 
-## Education
-<!--6286248, 6286399-->
+## Stickers for Windows 11 SE, version 22H2
+<!--6286248-->
 Starting in Windows 11 SE, version 22H2, **Stickers** is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background change.
 
 For more information, see [Configure Stickers for Windows 11 SE](/education/windows/edu-stickers).
 
+## Education themes
+<!--6286248-->
 Starting in Windows 11, version 22H2, you can deploy education themes to your devices. The education themes are designed for students using devices in a school. Themes allow the end user to quickly configure the look and feel of the device, with preset wallpaper, accent color, and other settings. Students can choose their own themes, making it feel the device is their own.
 
 For more information, see [Configure education themes for Windows 11](/education/windows/edu-themes).
@@ -77,21 +79,11 @@ The following items were added for Windows Update notifications:
 - The organization name now appears in the Windows Update notifications when Windows clients are associated with an Azure AD tenant. 
 For more information, see [Display organization name in Windows Update notifications](/windows/deployment/update/waas-wu-settings#bkmk_display-name).
 
-## Windows Hello
-<!-- 6286360-->
-
-
 ## Credential Guard
 <!--6289166-->
 Compatible Windows 11 Enterprise version 22H2 devices will have **Windows Defender Credential Guard** turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state.
 
 For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
-
-## Local Administrator Password Solution (LAPS)
-<!--6399966-->
-
-## Manageability
-<!--6286218-->
 
 ## Smart App Control
 <!-- 6286281-->
@@ -107,7 +99,7 @@ The vulnerable driver blocklist is automatically enabled on devices for the foll
 
 For more information, see [recommended block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules#microsoft-vulnerable-driver-blocklist).
 
-## Pluton
+## Microsoft Pluton
 <!--6286417 -->
 Microsoft Pluton security processor is a chip-to-cloud security technology built with Zero Trust principles at the core. Microsoft Pluton provides hardware-based root of trust, secure identity, secure attestation, and cryptographic services. Pluton technology is a combination of a secure subsystem, which is part of the System on Chip (SoC) and Microsoft authored software that runs on this integrated secure subsystem. Microsoft Pluton can be enabled on devices with Pluton capable processors running Windows 11, version 22H2.
 
