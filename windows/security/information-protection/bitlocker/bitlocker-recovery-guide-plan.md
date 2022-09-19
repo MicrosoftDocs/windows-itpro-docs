@@ -282,6 +282,13 @@ This error might occur if you updated the firmware. As a best practice, you shou
 
 Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair will automatically start. When Startup Repair is launched automatically due to boot failures, it will only execute operating system and driver file repairs, provided that the boot logs or any available crash dump point to a specific corrupted file. In Windows 8.1 and later, devices that include firmware to support specific TPM measurements for PCR\[7\] the TPM can validate that Windows RE is a trusted operating environment and will unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example the TPM has been disabled, the drives will stay locked until the BitLocker recovery key is provided. If Startup Repair can't run automatically from the PC and instead Windows RE is manually started from a repair disk, then the BitLocker recovery key must be provided to unlock the BitLocker–protected drives.
 
+Windows Recovery Environment (WinRE) will also ask for your BitLocker recovery key when you initiate a “Remove everything” reset from WinRE on a PC that uses "TPM+PIN" or "Password for OS drive" protector. Additionally, if BitLocker recovery is triggered on a keyboardless device with TPM-only protection, the WinRE environment, not the boot manager, will ask for the BitLocker Recovery key.  Once you've entered the key you should be able to access Win RE troubleshooting tools or start Windows normally.
+
+The BitLocker recovery screen that is shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help people enter their BitLocker recovery key. Those tools may not be available if the BitLocker recovery key is requested by the Windows boot manager.
+
+To activate narrator during BitLocker Recovery in WinRE press Win + CTRL + ENTER
+To activate on-screen keyboard, tap on a text input control.
+
 
 ## BitLocker recovery screen
 
