@@ -15,7 +15,7 @@ ms.date: 09/22/2022
 
 <!-- Max 5963468 OS 32516487 -->
 
-## Personal Data Encryption (PDE) FAQ
+# Personal Data Encryption (PDE) FAQ
 
 **Can PDE encrypt entire volumes or drives?** <br>
 No. PDE only encrypts specified files.

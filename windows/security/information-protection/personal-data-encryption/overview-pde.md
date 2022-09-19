@@ -32,12 +32,12 @@ ms.date: 09/22/2022
   - [FIDO/security key authentication](../../identity-protection/hello-for-business/microsoft-compatible-security-key.md)
   - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
     -  For information on disabling ARSO via Intune, please see [Disable Winlogon automatic restart sign-on (ARSO)](configure-pde-in-intune.md#disable-winlogon-automatic-restart-sign-on-arso)).
-  - [Windows Information Protection (WIP)](windows-information-protection/protect-enterprise-data-using-wip.md)
+  - [Windows Information Protection (WIP)](../windows-information-protection/protect-enterprise-data-using-wip.md)
   - [Hybrid Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
   - Remote Desktop connections
 
 ### **Highly recommended**
-  - [BitLocker Drive Encryption](bitlocker/bitlocker-overview.md) enabled
+  - [BitLocker Drive Encryption](../bitlocker/bitlocker-overview.md) enabled
     - Although PDE will work without BitLocker, it's recommended to also enable BitLocker. PDE is meant to supplement BitLocker and not replace it.
   - Backup solution such as [OneDrive](/onedrive/onedrive)
     - In certain scenarios such as TPM resets or destructive PIN resets, the PDE encryption keys can be lost. In such scenarios, any file encrypted with PDE will no longer be accessible. The only way to recover such files would be from backup.
