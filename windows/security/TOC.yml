@@ -149,8 +149,14 @@
                   href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
                 - name: Decode Measured Boot logs to track PCR changes
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
-     - name: Personal Data Encryption
-       href: information-protection/personal-data-encryption.md
+     - name: Personal Data Encryption (PDE)
+       items:
+       - name: Personal Data Encryption (PDE) overview
+         href: information-protection/personal-data-encryption/overview-pde.md
+       - name: Personal Data Encryption (PDE) (FAQ)
+         href: information-protection/personal-data-encryption/faq-pde.md
+       - name: Configure Personal Data Encryption (PDE) in Intune
+         href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
      - name: Configure S/MIME for Windows
        href: identity-protection/configure-s-mime.md    
    - name: Network security

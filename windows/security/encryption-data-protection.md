@@ -2,17 +2,17 @@
 title: Encryption and data protection in Windows
 description: Get an overview encryption and data protection in Windows 11 and Windows 10
 search.appverid: MET150 
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
-ms.topic: conceptual
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
+ms.topic: overview
 ms.date: 09/22/2022
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
-ms.reviewer: deepakm, rafals  
+ms.reviewer: rafals  
 ---
 
 # Encryption and data protection in Windows client
@@ -45,23 +45,14 @@ BitLocker provides encryption for the operating system, fixed data, and removabl
 
 Windows consistently improves data protection by improving existing options and providing new strategies.
 
-## Personal Data Encryption
+## Personal Data Encryption (PDE)
 <!-- Max 5963468 OS 32516487 -->
 (*Applies to: Windows 11, version 22H2 and later*)
 
-Personal data encryption (PDE) is a security feature introduced in Windows 11, version 22H2 that provides encryption of individual files. PDE occurs in addition to other encryption methods such as BitLocker.
-
-PDE utilizes Windows Hello for Business to link data encryption keys with user credentials. This feature can minimizes the number of credentials the user has to remember to gain access to files. For example, when using BitLocker with PIN, a user would need to authenticate twice - once with the BitLocker PIN and a second time with Windows credentials. This requires users to remember two different credentials. With PDE, users only need to enter one set of credentials via Windows Hello for Business.
-
-PDE is also accessibility friendly. For example, The BitLocker PIN entry screen doesn't have accessibility options. PDE however uses Windows Hello for Business, which does have accessibility features.
-
-Unlike BitLocker that releases data encryption keys at boot, PDE doesn't release data encryption keys until a user logs in using Windows Hello for Business. Users will only be able to access their PDE encrypted files once they've signed into Windows using Windows Hello for Business. Additionally, PDE has the ability to also discard the encryption keys when the device is locked.
-
-> [!NOTE]
-> PDE is currently only available to developers via [APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager.md). There is no user interface in Windows to either enable PDE or encrypt files via PDE. Also, although there is an MDM policy that can enable PDE, there are no MDM policies that can be used to encrypt files via PDE.
+[!INCLUDE [Personal Data Encryption (PDE) description](information-protection/personal-data-encryption/includes/pde-description.md)]
 
 ## See also
 
 - [Encrypted Hard Drive](information-protection/encrypted-hard-drive.md)
 - [BitLocker](information-protection/bitlocker/bitlocker-overview.md)
-- [Personal Data Encryption](information-protection/personal-data-encryption.md)
+- [Personal Data Encryption (PDE)](information-protection/personal-data-encryption/overview-pde.md)
