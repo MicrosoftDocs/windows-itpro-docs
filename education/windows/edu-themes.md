@@ -58,3 +58,7 @@ Once the education themes are enabled, the device will download them as soon as 
 To change the theme, select **Settings** > **Personalization** > **Themes** > **Select a theme**
 
 :::image type="content" source="./images/win-11-se-themes.png" alt-text="Windows 11 education themes selection" border="true":::
+
+-----------
+
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10

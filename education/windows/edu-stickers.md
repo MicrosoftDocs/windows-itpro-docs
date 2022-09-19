@@ -71,3 +71,7 @@ Multiple stickers can be added from the picker by selecting them. The stickers c
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
+
+-----------
+
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
