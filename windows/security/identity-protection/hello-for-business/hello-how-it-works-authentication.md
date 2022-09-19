@@ -21,10 +21,10 @@ Windows Hello for Business authentication is passwordless, two-factor authentica
 Azure Active Directory-joined devices authenticate to Azure during sign-in and can optionally authenticate to Active Directory. Hybrid Azure Active Directory-joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.
 
 - [Azure AD join authentication to Azure Active Directory](#azure-ad-join-authentication-to-azure-active-directory)
-- [Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud Kerberos trust)](#azure-ad-join-authentication-to-active-directory-using-azure-ad-kerberos-cloud-trust-preview)
+- [Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud Kerberos trust)](#azure-ad-join-authentication-to-active-directory-using-azure-ad-kerberos-cloud-kerberos-trust)
 - [Azure AD join authentication to Active Directory using a key](#azure-ad-join-authentication-to-active-directory-using-a-key)
 - [Azure AD join authentication to Active Directory using a certificate](#azure-ad-join-authentication-to-active-directory-using-a-certificate)
-- [Hybrid Azure AD join authentication using Azure AD Kerberos (cloud Kerberos trust)](#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-trust-preview)
+- [Hybrid Azure AD join authentication using Azure AD Kerberos (cloud Kerberos trust)](#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-kerberos-trust)
 - [Hybrid Azure AD join authentication using a key](#hybrid-azure-ad-join-authentication-using-a-key)
 - [Hybrid Azure AD join authentication using a certificate](#hybrid-azure-ad-join-authentication-using-a-certificate)
 

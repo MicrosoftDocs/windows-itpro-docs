@@ -26,7 +26,7 @@ List of provisioning flows:
 
 - [Azure AD joined provisioning in a managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)
 - [Azure AD joined provisioning in a federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)
-- [Hybrid Azure AD joined provisioning in a cloud Kerberos trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-trust-deployment-in-a-managed-environment)
+- [Hybrid Azure AD joined provisioning in a cloud Kerberos trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-kerberos-trust-deployment-in-a-managed-environment)
 - [Hybrid Azure AD joined provisioning in a key trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
 - [Hybrid Azure AD joined provisioning in a synchronous certificate trust deployment in a federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
 - [Domain joined provisioning in an On-premises key trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
