@@ -128,7 +128,7 @@ This policy setting allows you to turn off discovering the display service adver
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Don't allow
+-   0 - Doesn't allow
 -   1 - Allow
 
 <!--/SupportedValues-->
@@ -166,9 +166,9 @@ The table below shows the applicability of Windows:
 <!--Description-->
 This policy setting allows you to disable the infrastructure movement detection feature.
 
-If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you're projecting over infrastructure.
+- If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure.
 
-If you set it to 1, your PC will detect that you've moved and will automatically disconnect your infrastructure Wireless Display session.
+- If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
 
 The default value is 1.
 
@@ -177,7 +177,7 @@ The default value is 1.
 
 The following list shows the supported values:
 
-- 0 - Don't allow
+- 0 - Doesn't allow
 - 1 (Default) - Allow
 
 <!--/SupportedValues-->
