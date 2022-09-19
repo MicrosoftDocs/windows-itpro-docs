@@ -796,7 +796,13 @@ function CheckOSArchitecture
 
 function CheckSecureBootState
 {
-    $_secureBoot = Confirm-SecureBootUEFI
+    try { 
+        $_secureBoot = Confirm-SecureBootUEFI
+    }
+    catch
+    {
+        $_secureBoot = $false
+    }
     Log $_secureBoot
     if($_secureBoot)
     {
