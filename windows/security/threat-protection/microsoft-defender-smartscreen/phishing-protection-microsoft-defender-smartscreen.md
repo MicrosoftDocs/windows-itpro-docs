@@ -15,7 +15,7 @@ manager: aaroncz
 ms.technology: windows-sec
 adobe-target: true
 appliesto:
-- ✅ <b>Windows 11 22H2</b>
+- ✅ <b>Windows 11, version 22H2</b>
 ---
 
 # Enhanced Phishing Protection in Microsoft Defender SmartScreen  
