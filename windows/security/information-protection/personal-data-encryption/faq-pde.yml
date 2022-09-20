@@ -38,17 +38,17 @@ sections:
 
       - question: What is the relation between Windows Hello for Business and PDE?
         answer: |
-          Windows Hello for Business unlocks PDE encryption keys during user sign on.
+          Windows Hello for Business unlocks PDE encryption keys during user sign-on.
 
       - question: Can a file be encrypted with both PDE and EFS at the same time?
         answer: |
           No. PDE and EFS are mutually exclusive.
 
-      - question: Can a PDE encrypted files be accessed after signing on via a Remote Desktop connection (RDP)?
+      - question: Can PDE encrypted files be accessed after signing on via a Remote Desktop connection (RDP)?
         answer: |
           No. Accessing PDE encrypted files over RDP isn't currently supported.
 
-      - question: Can a PDE encrypted files be access via a network share?
+      - question: Can PDE encrypted files be access via a network share?
         answer: |
           No. PDE encrypted files can only be accessed after signing on locally to Windows with Windows Hello for Business credentials.
 
