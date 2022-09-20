@@ -73,7 +73,7 @@ productDirectory:
           text: IT admin help
         - url: https://support.office.com/education
           text: Education help center
-        - url: /learn/educator-center/
+        - url: /training/educator-center/
           text: Teacher training packs
     # Card    
     - title: Check out our education journey

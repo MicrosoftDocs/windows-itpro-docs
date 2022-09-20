@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "windows/security/identity-protection/hello-for-business/WebAuthnAPIs.md",
+      "redirect_url": "/windows/security/windows/security/identity-protection/hello-for-business/webauthn-apis",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/application-management/manage-windows-mixed-reality.md",
+      "redirect_url": "/windows/mixed-reality/enthusiast-guide/manage-windows-mixed-reality",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/client-management/mdm/browserfavorite-csp.md",
       "redirect_url": "https://support.microsoft.com/windows/windows-phone-8-1-end-of-support-faq-7f1ef0aa-0aaf-0747-3724-5c44456778a3",
       "redirect_document_id": false  
@@ -19633,6 +19643,16 @@
      {
      "source_path": "windows/security/identity-protection/access-control/dynamic-access-control.md",
      "redirect_url": "/windows-server/identity/solution-guides/dynamic-access-control-overview",
+     "redirect_document_id": false
+     },
+     {
+     "source_path": "windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust.md",
+     "redirect_url": "/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust",
+     "redirect_document_id": false
+     },
+     {
+     "source_path": "windows/configuration/windows-10-accessibility-for-ITPros.md",
+     "redirect_url": "/windows/configuration/windows-accessibility-for-ITPros",
      "redirect_document_id": false
      }
   ]

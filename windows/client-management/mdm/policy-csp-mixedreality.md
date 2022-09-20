@@ -37,6 +37,9 @@ manager: aaroncz
   <dd>
     <a href="#mixedreality-configuremovingplatform">MixedReality/ConfigureMovingPlatform</a>
   </dd>
+    <dd>
+    <a href="#mixedreality-configurentpclient">MixedReality/ConfigureNtpClient</a>
+  </dd>
   <dd>
     <a href="#mixedreality-disablesisallownetworkconnectivitypassivepolling">MixedReality/DisallowNetworkConnectivityPassivePolling</a>
   </dd>
@@ -51,6 +54,9 @@ manager: aaroncz
   </dd>  
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-ntpclientenabled">MixedReality/NtpClientEnabled</a>
   </dd>
   <dd>
     <a href="#mixedreality-skipcalibrationduringsetup">MixedReality/SkipCalibrationDuringSetup</a>
@@ -308,6 +314,71 @@ Supported value is Integer.
 <hr/>
 
 <!--Policy-->
+<a href="" id="mixedreality-configurentpclient"></a>**MixedReality/ConfigureNtpClient**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+You may want to configure a different time server for your device fleet. IT admins can use thi policy to configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
+
+This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
+
+> [!NOTE]
+> This feature requires enabling[NtpClientEnabled](#mixedreality-ntpclientenabled) as well.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
+
+> [!NOTE]
+> Reboot is required for these policies to take effect.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+<!--/ADMXBacked-->
+
+<!--SupportedValues-->
+
+- Data Type: String
+- Value:
+
+```
+<enabled/><data id="W32TIME_NtpServer"
+value="time.windows.com,0x9"/><data id="W32TIME_Type"
+value="NTP"/><data id="W32TIME_CrossSiteSyncFlags"
+value="2"/><data id="W32TIME_ResolvePeerBackoffMinutes"
+value="15"/><data id="W32TIME_ResolvePeerBackoffMaxTimes"
+value="7"/><data id="W32TIME_SpecialPollInterval"
+value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
+value="0"/>
+```
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
 <a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**  
 
 <!--SupportedSKUs-->
@@ -510,6 +581,48 @@ The following list shows the supported values:
 - 1 - True
 
 <!--/SupportedValues-->
+
+<!--Policy-->
+<a href="" id="mixedreality-ntpclientenabled"></a>**MixedReality/NtpClientEnabled**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+This policy setting specifies whether the Windows NTP Client is enabled.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/NtpClientEnabled`
+<!--/Description-->
+
+<!--ADMXBacked-->
+<!--/ADMXBacked-->
+
+<!--SupportedValues-->
+- Data Type: String
+- Value `<enabled/>`
+
+<!--/SupportedValues-->
+
 <!--/Policy-->
 <hr/>
 

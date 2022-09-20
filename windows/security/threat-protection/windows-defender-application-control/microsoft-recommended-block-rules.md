@@ -1,35 +1,30 @@
 ---
-title: Microsoft recommended block rules (Windows)
+title: Microsoft recommended block rules
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
-ms.technology: windows-sec
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 09/29/2021
+ms.topic: reference
 ---
 
 # Microsoft recommended block rules
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control.
 
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including Windows Defender Application Control:
 
@@ -75,7 +70,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - wslconfig.exe
 - wslhost.exe
 
-<sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+<sup>1</sup> A vulnerability in bginfo.exe was fixed in version 4.22. If you use BGInfo, for security, make sure to download and run the latest version of [BGInfo](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
 <sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that isn't being used in a development context, we recommend that you block msbuild.exe.
 
@@ -87,37 +82,39 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |---|---|
 | `Alex Ionescu` | `@aionescu`|
 | `Brock Mammen`| |
-| `Casey Smith` | `@subTee` | 
+| `Casey Smith` | `@subTee` |
 | `James Forshaw` | `@tiraniddo` |
 | `Jimmy Bayne` | `@bohops` |
 | `Kim Oppalfens` | `@thewmiguy` |
 | `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
 | `Lee Christensen` | `@tifkin_` |
-| `Matt Graeber` | `@mattifestation` | 
-| `Matt Nelson` | `@enigma0x3` | 
+| `Matt Graeber` | `@mattifestation` |
+| `Matt Nelson` | `@enigma0x3` |
 | `Oddvar Moe` | `@Oddvarmoe` |
 | `Philip Tsukerman` | `@PhilipTsukerman` |
 | `Vladas Bulavas` | `Kaspersky Lab` |
 | `William Easton` | `@Strawgate` |
 
-<br />
-
-> [!Note]
-> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+> [!NOTE]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
 Certain software applications may allow other code to run by design. Such applications should be blocked by your Windows Defender Application Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
-Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules can't be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules can't be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
-For October 2017, we're announcing an update to system.management.automation.dll in which we're revoking older versions by hash values, instead of version rules.
+As of October 2017, system.management.automation.dll is updated to revoke earlier versions by hash values, instead of version rules.
 
-Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. Beginning with the March 2019 quality update, each version of Windows requires blocking a specific version of the following files:
+Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. As of March 2019, each version of Windows requires blocking a specific version of the following files:
 
 - msxml3.dll
 - msxml6.dll
 - jscript9.dll
 
 Select the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
+
+<br>
+<details>
+  <summary>Expand this section to see the WDAC policy XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -905,8 +902,8 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
           <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
-          <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
-          <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+          <FileRuleRef RuleID="ID_DENY_MSXML3" />
+          <FileRuleRef RuleID="ID_DENY_MSXML6" />
           <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
           -->
           <FileRuleRef RuleID="ID_DENY_D_1" />
@@ -1524,9 +1521,10 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <HvciOptions>0</HvciOptions>
 </SiPolicy>
 ```
-<br />
 
-> [!Note]
+</details>
+
+> [!NOTE]
 > To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
 
 ## More information
