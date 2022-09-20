@@ -141,16 +141,16 @@ To configure the cloud Kerberos trust policy, follow the steps below:
 1. For Profile Type, select **Templates** and select the **Custom** Template.
 1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust".
 1. In Configuration Settings, add a new configuration with the following settings:
-
-  | Setting |
-  |--------|
-  | <li>Name: **Windows Hello for Business cloud Kerberos trust** or another familiar name</li><li>Description (optional): *Enable Windows Hello for Business cloud Kerberos trust for sign-in and on-premises SSO*</li><li>OMA-URI: **`./Device/Vendor/MSFT/PassportForWork/`*<tenant ID>*`/Policies/UseCloudTrustForOnPremAuth`** </li><li>Data type: **Boolean** </li><li>Value: **True**</li>|
-
-  >[!IMPORTANT]
-  >*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) for instructions on looking up your tenant ID.
-
-  [![Intune custom-device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
-
+    
+    | Setting |
+    |--------|
+    | <li>Name: **Windows Hello for Business cloud Kerberos trust** or another familiar name</li><li>Description (optional): *Enable Windows Hello for Business cloud Kerberos trust for sign-in and on-premises SSO*</li><li>OMA-URI: **`./Device/Vendor/MSFT/PassportForWork/`*\<tenant ID>*`/Policies/UseCloudTrustForOnPremAuth`** </li><li>Data type: **Boolean** </li><li>Value: **True**</li>|
+    
+    >[!IMPORTANT]
+    >*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) for instructions on looking up your tenant ID.
+    
+    [![Intune custom-device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
+    
 1. Select Next to navigate to **Assignments**.
 1. Under Included groups, select **Add groups**.
 1. Select the user group you would like to use Windows Hello for Business cloud Kerberos trust. This group may be *WHFB cloud Kerberos trust users* or a group of your choosing.
@@ -160,7 +160,7 @@ To configure the cloud Kerberos trust policy, follow the steps below:
 > [!Important]
 > If the Use certificate for on-premises authentication policy is enabled, we will enforce certificate trust instead of cloud Kerberos trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud Kerberos trust have this policy not configured or disabled.
 
-#### [:::image type="icon" source="=../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 Hybrid Azure AD joined organizations can use Windows Hello for Business Group Policy to manage the feature. Group Policy can be configured to enable users to enroll and use Windows Hello for Business.
 
