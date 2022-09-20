@@ -94,7 +94,7 @@ For information on enabling PDE via Intune, see [Enable Personal Data Encryption
 
 | Item | PDE | BitLocker |
 |--|--|--|
-| Release of encryption keys | At user sign in via Windows Hello for Business | At boot |
+| Release of key | At user sign in via Windows Hello for Business | At boot |
 | Encryption keys discarded | At user sign out | At reboot |
 | Files encrypted | Individual specified files | Entire volume/drive |
 | Authentication to access encrypted file | Windows Hello for Business | When BitLocker with PIN is enabled, BitLocker PIN plus Windows sign in |
@@ -118,9 +118,7 @@ Encryption information including what encryption method is being used can be obt
 
 ## Disable PDE and decrypt files
 
-Currently there's no method to disable PDE via MDM policy. However, PDE can be disabled locally and files can be decrypted using `cipher.exe`.
-
-In certain scenarios a user may be able to manually decrypt a file using the following steps:
+Currently there's no method to disable PDE via MDM policy. However, in certain scenarios PDE encrypted files can be decrypted using `cipher.exe` using the following steps:
 
 1. Open the properties of the file
 2. Under the **General** tab, select **Advanced...**
