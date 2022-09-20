@@ -12,7 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE 22H2</b>
+- ✅ <b>Windows 11 SE, version 22H2</b>
 ---
 
 # Configure Stickers for Windows 11 SE
