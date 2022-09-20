@@ -87,7 +87,6 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Application                             | Supported version | App Type | Vendor                       |
 |-----------------------------------------|-------------------|----------|------------------------------|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
-| Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
 | Brave Browser                           | 1.34.80           | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
@@ -119,7 +118,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Mozilla Firefox                         | 99.0.1            | Win32    | Mozilla                      |
 | NAPLAN                                  | 2.5.0             | Win32    | NAP                          |
 | Netref Student                          | 22.2.0            | Win32    | NetRef                       |
-| NetSupport Manager                      | 12.01.0011        | Win32    | NetSupport                   |
+| NetSupport Manager                      | 12.01.0014        | Win32    | NetSupport                   |
 | NetSupport Notify                       | 5.10.1.215        | Win32    | NetSupport                   |
 | NetSupport School                       | 14.00.0011        | Win32    | NetSupport                   |
 | NextUp Talker                           | 1.0.49            | Win32    | NextUp Technologies          |
