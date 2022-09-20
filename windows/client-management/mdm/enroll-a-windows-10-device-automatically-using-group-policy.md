@@ -1,14 +1,14 @@
 ---
 title: Enroll a Windows 10 device automatically using Group Policy
 description: Learn how to use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 04/30/2022
-ms.reviewer:
-manager: dansimp
+ms.reviewer: 
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -219,7 +219,7 @@ Requirements:
 
 4. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
 
-5. Copy the PolicyDefinitions folder to `\\SYSVOL\contoso.com\policies\PolicyDefinitions`.
+5. Copy the PolicyDefinitions folder to `\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions`.
 
    If this folder doesn't exist, then you'll be switching to a [central policy store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for your entire domain.
 

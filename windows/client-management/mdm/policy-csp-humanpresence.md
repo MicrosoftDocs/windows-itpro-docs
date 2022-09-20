@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - HumanPresence
 description: Use the Policy CSP - HumanPresence setting allows wake on approach and lock on leave that can be managed from MDM.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - HumanPresence
@@ -21,6 +21,9 @@ manager: dansimp
 
 <dl>
   <dd>
+    <a href="#humanpresence-forceinstantdim">HumanPresence/ForceInstantDim</a>
+  </dd>
+  <dd>
     <a href="#humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
   </dd>
   <dd>
@@ -30,6 +33,56 @@ manager: dansimp
     <a href="#humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
   </dd>
 </dl>
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="humanpresence-forceinstantdim"></a>**HumanPresence/ForceInstantDim**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|Yes|
+|Business|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This feature dims the screen based on user attention. This is a power saving feature that prolongs battery charge.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Force Instant Dim*
+-   GP name: *ForceInstantDim*
+-   GP path: *Windows Components/Human Presence*
+-   GP ADMX file name: *Sensors.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 2 = ForcedOff
+- 1 = ForcedOn
+- 0 = DefaultToUserChoice
+- Defaults to 0.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 

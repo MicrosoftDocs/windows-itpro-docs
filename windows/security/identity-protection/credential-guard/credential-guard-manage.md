@@ -2,14 +2,11 @@
 title: Manage Windows Defender Credential Guard (Windows)
 description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: dansimp
-ms.author: v-tappelgate
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: zwhittington
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
@@ -17,16 +14,31 @@ ms.topic: article
 ms.custom: 
   - CI 120967
   - CSSTroubleshooting
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
-
 # Manage Windows Defender Credential Guard
 
-**Applies to**
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
+## Default Enablement
+
+Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+
+### Requirements for automatic enablement
+
+Windows Defender Credential Guard will be enabled by default when a PC meets the following minimum requirements:
+
+|Component|Requirement|
+|---|---|
+|Operating System|Windows 11 Enterprise 22H2|
+|Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
+|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
+
+> [!NOTE]
+> If Windows Defender Credential Guard or VBS has previously been explicitly disabled, default enablement will not overwrite this setting.
 
 ## Enable Windows Defender Credential Guard
 
@@ -53,19 +65,21 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 To enforce processing of the group policy, you can run `gpupdate /force`.
 
-### Enable Windows Defender Credential Guard by using Intune
+### Enable Windows Defender Credential Guard by using Microsoft Endpoint Manager
 
-1. From **Home**, select **Microsoft Intune**.
+1. From **Microsoft Endpoint Manager admin center**, select **Devices**.
 
-1. Select **Device configuration**.
+1. Select **Configuration Profiles**.
 
-1. Select **Profiles** > **Create Profile** > **Endpoint protection** > **Windows Defender Credential Guard**.
+1. Select  **Create Profile** > **Windows 10 and later** > **Settings catalog** > **Create**.
 
-   > [!NOTE]
-   > It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
+   1. Configuration settings: In the settings picker select **Device Guard** as category and add the needed settings.
+
+> [!NOTE]
+> Enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 > [!TIP]
-> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Endpoint Manager](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
 ### Enable Windows Defender Credential Guard by using the registry
 

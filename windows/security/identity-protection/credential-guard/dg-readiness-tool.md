@@ -2,33 +2,30 @@
 title: Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 description: Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool script
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: SteveSyfuhs
-ms.author: stsyfuhs
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: erikdau
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
-
-**Applies to:**
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
 
 ```powershell
 # Script to find out if a machine is Device Guard compliant.
 # The script requires a driver verifier present on the system.
 
 param([switch]$Capable, [switch]$Ready, [switch]$Enable, [switch]$Disable, $SIPolicyPath, [switch]$AutoReboot, [switch]$DG, [switch]$CG, [switch]$HVCI, [switch]$HLK, [switch]$Clear, [switch]$ResetVerifier)
+
+Set-StrictMode -Version Latest
 
 $path = "C:\DGLogs\"
 $LogFile = $path + "DeviceGuardCheckLog.txt"
@@ -801,7 +798,13 @@ function CheckOSArchitecture
 
 function CheckSecureBootState
 {
-    $_secureBoot = Confirm-SecureBootUEFI
+    try { 
+        $_secureBoot = Confirm-SecureBootUEFI
+    }
+    catch
+    {
+        $_secureBoot = $false
+    }
     Log $_secureBoot
     if($_secureBoot)
     {

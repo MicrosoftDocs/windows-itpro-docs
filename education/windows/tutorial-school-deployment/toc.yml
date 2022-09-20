@@ -1,0 +1,38 @@
+items: 
+  - name: Introduction
+    href: index.md
+  - name: 1. Prepare your tenant
+    items:
+      - name: Set up Azure Active Directory
+        href: set-up-azure-ad.md
+      - name: Set up Microsoft Intune
+        href: set-up-microsoft-intune.md
+  - name: 2. Configure settings and applications
+    items:
+      - name: Overview
+        href: configure-devices-overview.md
+      - name: Configure policies
+        href: configure-device-settings.md
+      - name: Configure applications
+        href: configure-device-apps.md        
+  - name: 3. Deploy devices
+    items: 
+      - name: Overview
+        href: enroll-overview.md
+      - name: Enroll devices via Azure AD join
+        href: enroll-aadj.md
+      - name: Enroll devices with provisioning packages
+        href: enroll-package.md
+      - name: Enroll devices with Windows Autopilot
+        href: enroll-autopilot.md
+  - name: 4. Manage devices
+    items: 
+      - name: Overview
+        href: manage-overview.md
+      - name: Management functionalities for Surface devices
+        href: manage-surface-devices.md       
+      - name: Reset and wipe devices
+        href: reset-wipe.md
+  - name: 5. Troubleshoot and get help
+    href: troubleshoot-overview.md
+    

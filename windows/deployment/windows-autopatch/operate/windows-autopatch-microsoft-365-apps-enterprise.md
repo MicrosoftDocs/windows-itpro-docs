@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Apps for enterprise
 description:  This article explains how Microsoft 365 Apps for enterprise updates are managed in Windows Autopatch
-ms.date: 05/30/2022
+ms.date: 08/08/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -33,7 +33,7 @@ For a device to be eligible for Microsoft 365 Apps for enterprise updates, as a 
 
 All devices registered for Windows Autopatch will receive updates from the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). This practice provides your users with new features each month, and they'll receive just one update per month on a predictable release schedule. Updates are released on the second Tuesday of the month; these updates can include feature, security, and quality updates. These updates occur automatically and are pulled directly from the Office Content Delivery Network (CDN).
 
-Unlike Windows update, the Office CDN doesn't make the update available to all devices at once. Over the course of the release, the Office CDN gradually makes the update available to the whole population of devices. Windows Autopatch doesn't control the order in which updates are offered to devices across your estate. After the update has been downloaded, there's a three-day [update deadline](/deployoffice/configure-update-settings-microsoft-365-apps) that specifies how long the user has until the user must apply the update.  
+Unlike Windows update, the Office CDN doesn't make the update available to all devices at once. Over the course of the release, the Office CDN gradually makes the update available to the whole population of devices. Windows Autopatch doesn't control the order in which updates are offered to devices across your estate. After the update has been downloaded, there's a seven day [update deadline](/deployoffice/configure-update-settings-microsoft-365-apps) that specifies how long the user has until the user must apply the update.  
 
 ## Update rings
 
@@ -82,29 +82,13 @@ Windows Autopatch will either:
 
 Since quality updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview), we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
 
-## Conflicting and unsupported policies
+## Compatibility with Servicing Profiles
 
-Deploying any of the following policies to a managed device will make that device ineligible for management since the device will prevent us from delivering the service as designed.
-
-### Update policies
-
-Window Autopatch deploys mobile device management (MDM) policies to configure Microsoft 365 Apps and requires a specific configuration. If any [Microsoft 365 Apps update settings](/deployoffice/configure-update-settings-microsoft-365-apps) are deployed which conflict with our policies, then the device won't be eligible for management.
-
-| Update setting | Value | Usage reason |
-| ----- | ----- | ----- |
-| Set updates to occur automatically | Enabled | Enable automatic updates |
-| Specify a location to look for updates | Blank | Don't use this setting since it overwrites the update branch |
-| Update branch | Monthly Enterprise | Supported branch for Windows Autopatch |
-| Specify the version of Microsoft 365 Apps to update to | Variable | Used to roll back to a previous version if an error occurs |
-| Set a deadline by when updates must be applied | 3 | Update deadline |
-| Hide update notifications from users | Turned off | Users should be notified when Microsoft 365 Apps are being updated |
-| Hide the option to turn on or off automatic Office updates | Turned on | Prevents users from disabling automatic updates |
-
-## Microsoft 365 Apps servicing profiles
+[Servicing profiles](/deployoffice/admincenter/servicing-profile) is a feature in the [Microsoft 365 Apps admin center](https://config.office.com/) that provides controlled update management of monthly Office updates, including controls for user and device targeting, scheduling, rollback, and reporting.
 
 A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
 
-However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [update type](windows-autopatch-update-management.md#update-types), see the Device eligibility section of each respective update type.
+However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [software update workload](windows-autopatch-update-management.md#software-update-workloads), see the Device eligibility section of each respective software update workload.
 
 ## Incidents and outages
 

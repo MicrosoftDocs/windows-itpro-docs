@@ -2,12 +2,12 @@
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 07/19/2019
 ---
 
@@ -147,6 +147,15 @@ Boolean value that enables Windows Hello for Business to use certificates to aut
 If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
 If you disable or don't configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
+
+Supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="tenantid-policies-usecloudtrustforonpremauth--only-for---device-vendor-msft-"></a>***TenantId*/Policies/UseCloudTrustForOnPremAuth** (only for ./Device/Vendor/MSFT)  
+Boolean value that enables Windows Hello for Business to use Azure AD Kerberos to authenticate to on-premises resources.
+
+If you enable this policy setting, Windows Hello for Business will use an Azure AD Kerberos ticket to authenticate to on-premises resources. The Azure AD Kerberos ticket is returned to the client after a successful authentication to Azure AD if Azure AD Kerberos is enabled for the tenant and domain.
+
+If you disable or do not configure this policy setting, Windows Hello for Business will use a key or certificate to authenticate to on-premises resources.
 
 Supported operations are Add, Get, Delete, and Replace.
 

@@ -21,8 +21,8 @@ Operating system images are typically the production image used for deployment t
 
 ## Infrastructure
 
-For the purposes of this guide, we will use one server computer: CM01.
-- CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
+For the purposes of this guide, we'll use one server computer: CM01.
+- CM01 is a domain member server and Configuration Manager software distribution point. In this guide, CM01 is a standalone primary site server.
 - CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
 
 An existing Configuration Manager infrastructure that is integrated with MDT is used for the following procedures. For more information about the setup for this article, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md).
@@ -46,7 +46,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 5.  On the **General** page, assign the name Windows 10 Enterprise x64 RTM, click **Next** twice, and then click **Close**.
 6.  Distribute the operating system image to the CM01 distribution point by right-clicking the **Windows 10 Enterprise x64 RTM** operating system image and then clicking **Distribute Content**.
 7.  In the Distribute Content Wizard, add the CM01 distribution point, click **Next** and click **Close**.
-8.  View the content status for the Windows 10 Enterprise x64 RTM package. Do not continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
+8.  View the content status for the Windows 10 Enterprise x64 RTM package. Don't continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
 
     ![figure 18.](../images/fig18-distwindows.png)
 

@@ -3,20 +3,20 @@ title: DMProcessConfigXMLFiltered function
 description: Learn how the DMProcessConfigXMLFiltered function configures phone settings by using OMA Client Provisioning XML.
 Search.Refinement.TopicID: 184
 ms.reviewer: 
-manager: dansimp
-topic_type:
-- apiref
-api_name:
-- DMProcessConfigXMLFiltered
-api_location:
-- dmprocessxmlfiltered.dll
-api_type:
-- DllExport
-ms.author: dansimp
+manager: aaroncz
+topic_type: 
+  - apiref
+api_name: 
+  - DMProcessConfigXMLFiltered
+api_location: 
+  - dmprocessxmlfiltered.dll
+api_type: 
+  - DllExport
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

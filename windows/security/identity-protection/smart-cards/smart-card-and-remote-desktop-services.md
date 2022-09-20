@@ -2,23 +2,22 @@
 title: Smart Card and Remote Desktop Services (Windows)
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: ardenw
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
-
 # Smart Card and Remote Desktop Services
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 
@@ -64,7 +63,7 @@ When smart card-enabled single sign-in (SSO) is used for Remote Desktop Services
 
 ### Remote Desktop Services and smart card sign-in
 
-Remote Desktop Services enable users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
+Remote Desktop Services enables users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
 
 In addition, Group Policy settings that are specific to Remote Desktop Services need to be enabled for smart card-based sign-in.
 

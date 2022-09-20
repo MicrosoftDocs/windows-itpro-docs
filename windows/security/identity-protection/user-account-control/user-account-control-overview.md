@@ -1,30 +1,26 @@
 ---
 title: User Account Control (Windows)
 description: User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop.
-ms.assetid: 43ac4926-076f-4df2-84af-471ee7d20c38
-ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: operate
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: sulahiri
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.date: 09/24/2011
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # User Account Control
-
-**Applies to**
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.
 

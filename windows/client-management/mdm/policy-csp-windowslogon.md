@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - WindowsLogon
 description: Use the Policy CSP - WindowsLogon setting to control whether a device automatically signs in and locks the last interactive user after the system restarts.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - WindowsLogon
@@ -34,6 +34,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#windowslogon-enablefirstlogonanimation">WindowsLogon/EnableFirstLogonAnimation</a>
+  </dd>
+  <dd>
+    <a href="#windowslogon-enablemprnotifications">WindowsLogon/EnableMPRNotifications</a>
   </dd>
   <dd>
     <a href="#windowslogon-enumeratelocalusersondomainjoinedcomputers">WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers</a>
@@ -358,6 +361,52 @@ Supported values:
 <!--Validation-->
 
 <!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="windowslogon-enablemprnotifications"></a>**WindowsLogon/EnableMPRNotifications**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows winlogon to send MPR notifications in the system if a credential manager is configured.
+
+If you disable (0), MPR notifications will not be sent by winlogon.
+
+If you enable (1) or do not configure this policy setting this policy, MPR notifications will be sent by winlogon.
+
+<!--/Description-->
+<!--SupportedValues-->
+Supported values:  
+
+-   0 - disabled
+-   1 (default)- enabled
+<!--/SupportedValues-->
+
 <!--/Policy-->
 
 <hr/>

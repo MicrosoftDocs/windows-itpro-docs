@@ -1,32 +1,25 @@
 ---
 title: Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
 description: Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support them.
-keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 01/14/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Azure Active Directory-join</b>
+- ✅ <b>Hybrid Deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Azure Active Directory-joined
-- Hybrid Deployment
-- Key trust model
-
 ## Prerequisites
 
 Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD-joined devices.  Unlike hybrid Azure AD-joined devices, Azure AD-joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure AD-joined devices.

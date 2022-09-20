@@ -39,14 +39,14 @@ Windows 10 Subscription Activation lets you deploy Windows 10 Enterprise in your
 
 ### Autopilot Reset	
 
-IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](/education/windows/autopilot-reset).
+IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom sign-in screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](/education/windows/autopilot-reset).
 
 
 ## Update
 
 ### Windows Update for Business
 
-Windows Update for Business now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
+Windows Update for Business now has more controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
 
 ### Windows Insider Program for Business
 
@@ -98,7 +98,7 @@ Window Defender Exploit Guard provides intrusion prevention capabilities to redu
 
 ### Windows Defender Device Guard
 
-Configurable code integrity is being rebranded as Windows Defender Application Control. This is to help distinguish it as a standalone feature to control execution of applications. For more information about Device Guard, see Windows [Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
+Configurable code integrity is being rebranded as Windows Defender Application Control. This rebranding is to help distinguish it as a standalone feature to control execution of applications. For more information about Device Guard, see Windows [Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ### Windows Information Protection
 
@@ -106,7 +106,7 @@ Windows Information Protection is now designed to work with Microsoft Office and
 
 ### Windows Hello
 
-New features in Windows Hello  enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when  you are not present. More details about this feature will be available soon. For general information, see [Windows Hello for Business](/windows/access-protection/hello-for-business/hello-identity-verification).
+New features in Windows Hello  enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when you aren't present. More details about this feature will be available soon. For general information, see [Windows Hello for Business](/windows/access-protection/hello-for-business/hello-identity-verification).
 
 ### BitLocker
 

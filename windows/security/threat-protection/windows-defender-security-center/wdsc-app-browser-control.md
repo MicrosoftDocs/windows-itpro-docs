@@ -28,11 +28,11 @@ The **App and browser control** section contains information and settings for Wi
 
 In Windows 10, version 1709 and later, the section also provides configuration options for Exploit protection. You can prevent users from modifying these specific options with Group Policy. IT administrators can get more information at [Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection).
 
-You can also choose to hide the section from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+You can also choose to hide the section from users of the machine. This option can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
 ## Prevent users from making changes to the Exploit protection area in the App & browser control section
 
-You can prevent users from modifying settings in the Exploit protection area. The settings will be either greyed out or not appear if you enable this setting. Users will still have access to other settings in the App & browser control section, such as those for Windows Defender SmartScreen, unless those options have been configured separately.
+You can prevent users from modifying settings in the Exploit protection area. The settings will be either greyed out or not appear if you enable this setting. Users will still have access to other settings in the App & browser control section, such as those settings for Windows Defender SmartScreen, unless those options have been configured separately.
 
 You can only prevent users from modifying Exploit protection settings by using Group Policy.
 
@@ -51,9 +51,9 @@ You can only prevent users from modifying Exploit protection settings by using G
 
 ## Hide the App & browser control section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of the Windows Security app, and its icon won't be shown on the navigation bar on the side of the app.
 
-This can only be done in Group Policy.
+This section can be hidden only by using Group Policy.
 
 > [!IMPORTANT]
 > You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.

@@ -1,3 +1,4 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
@@ -11,5 +12,8 @@
         topicHref: /education/get-started/index
       - name: Windows
         tocHref: /education/windows
+        topicHref: /education/windows/index
+      - name: Windows
+        tocHref: /windows/security/
         topicHref: /education/windows/index
         

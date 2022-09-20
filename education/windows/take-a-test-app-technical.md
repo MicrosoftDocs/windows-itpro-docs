@@ -2,24 +2,22 @@
 title: Take a Test app technical reference
 description: The policies and settings applied by the Take a Test app.
 keywords: take a test, test taking, school, policies
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 11/28/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Take a Test app technical reference 
-**Applies to:**
-
--   Windows 10 
-
-
 
 Take a Test is an app that locks down the PC and displays an online assessment web page.   
 

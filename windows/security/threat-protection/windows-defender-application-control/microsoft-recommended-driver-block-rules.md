@@ -1,6 +1,6 @@
 ---
 title: Microsoft recommended driver block rules (Windows)
-description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.  
+description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
 keywords:  security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -20,27 +20,48 @@ manager: dansimp
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're quickly patched and rolled out to the ecosystem. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
-
-- Hypervisor-protected code integrity (HVCI) enabled devices
-- Windows 10 in S mode (S mode) devices
-
-The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes: 
+Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes:
 
 - Known security vulnerabilities that can be exploited by attackers to elevate privileges in the Windows kernel
 - Malicious behaviors (malware) or certificates used to sign malware
-- Behaviors that are not malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
+- Behaviors that aren't malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article. 
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center
+](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
 
-Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+## Microsoft vulnerable driver blocklist
+
+<!-- MAXADO-6286432 -->
+
+Microsoft adds the vulnerable versions of the drivers to our vulnerable driver blocklist, which is automatically enabled on devices when any of the listed conditions are met:
+
+| Condition | Windows 10 or 11 | Windows 11 22H2 or later |
+|--|:--:|:--:|
+| Device has [Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) enabled | :heavy_check_mark: | :heavy_check_mark: |
+| Device is in [S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11) | :heavy_check_mark: | :heavy_check_mark: |
+| Device has [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled | :x: | :heavy_check_mark: |
+| Clean install of Windows | :x: | :heavy_check_mark: |
+
+> [!NOTE]
+> Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2), but the option to disable it is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can disable Microsoft vulnerable driver blocklist.
+
+## Blocking vulnerable drivers using WDAC
+
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+
+> [!IMPORTANT]
+> Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy prevents the existing driver from being loaded.
+
+<br>
+<details>
+  <summary>Expand this section to see the blocklist WDAC policy XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -63,7 +84,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   <!--File Rules-->
   <FileRules>
     <Allow ID="ID_ALLOW_ALL_1" FriendlyName="" FileName="*" />
-	<Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
+    <Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_AGENT64_SHA1" FriendlyName="Agent64\05f052_4045ae_694848_8cb62c_b1d962 Hash Sha1" Hash="94F7575A6BB378D0CF85B3DC65941C95415E7A80" />
     <Deny ID="ID_DENY_AGENT64_SHA256" FriendlyName="Agent64\05f052_4045ae_694848_8cb62c_b1d962 Hash Sha256" Hash="3BC0CEC99DCE687304DAD8F7A6DAF772E695CBD0169D346D03AE12500361A1E8" />
     <Deny ID="ID_DENY_AGENT64_SHA1_PAGE" FriendlyName="Agent64\05f052_4045ae_694848_8cb62c_b1d962 Hash Page Sha1" Hash="E083142033C9653977D319B3DF4D2DE369756138" />
@@ -164,7 +185,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_BANDAI_SHA256" FriendlyName="bandai.sys Hash Sha256" Hash="7FD788358585E0B863328475898BB4400ED8D478466D1B7F5CC0252671456CC8" />
     <Deny ID="ID_DENY_BANDAI_SHA1_PAGE" FriendlyName="bandai.sys Hash Page Sha1" Hash="EA360A9F23BB7CF67F08B88E6A185A699F0C5410" />
     <Deny ID="ID_DENY_BANDAI_SHA256_PAGE" FriendlyName="bandai.sys Hash Page Sha256" Hash="BB83738210650E09307CE869ACA9BFA251024D3C47B1006B94FCE2846313F56E" />
-	<Deny ID="ID_DENY_BS_RCIO64_SHA1" FriendlyName="BS_RCIO64 73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Sha1" Hash="4BFE9E5A5A25B7CDE6C81EBE31ED4ABEB5147FAF" />
+    <Deny ID="ID_DENY_BS_RCIO64_SHA1" FriendlyName="BS_RCIO64 73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Sha1" Hash="4BFE9E5A5A25B7CDE6C81EBE31ED4ABEB5147FAF" />
     <Deny ID="ID_DENY_BS_RCIO64_SHA256" FriendlyName="BS_RCIO64 73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Sha256" Hash="0381632CD236CD94FA9E64CCC958516AC50F9437F99092E231A607B1E6BE6CF8" />
     <Deny ID="ID_DENY_BS_RCIO64_SHA1_PAGE" FriendlyName="BS_RCIO64 5651466512138240\73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Page Sha1" Hash="C28B640BECA5E2834D2A373F139869CC309F6631" />
     <Deny ID="ID_DENY_BS_RCIO64_SHA256_PAGE" FriendlyName="BS_RCIO64 5651466512138240\73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Page Sha256" Hash="9378F7DFF94D9409D38FA1A125C52734D6BAEA90913FC3CEE2659FD36AB0DA29" />
@@ -314,9 +335,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_DIRECTIO_34" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="05E20D0274A4FCC5368F25C62174003A555917E7" />
     <Deny ID="ID_DENY_DIRECTIO_35" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="70344F2494D6B7EE4C5716E886D912447CFFE9695D2286814DC3CE0361727BBA" />
     <Deny ID="ID_DENY_DIRECTIO_36" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="706686F2A1EF4738A1856D01AB10EB730FC7B327" />
-    <Deny ID="ID_DENY_DIRECTIO_37" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="B74246C8CB77B0364B7CECE38BFF5F462EEC983C" />
+    <Deny ID="ID_DENY_DIRECTIO_37" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="B74246C8CB77B0364B7CECE38BFF5F462EEC983C" />
     <Deny ID="ID_DENY_DIRECTIO_38" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="B423CA58603513B5D3A9669736D5E13C353FD6F9" />
-    <Deny ID="ID_DENY_DIRECTIO_39" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="2FB5D7E6DB01C9090BBA92ABF580D38993E02CE9357E08FE1F224A9B18056E5A" />
+    <Deny ID="ID_DENY_DIRECTIO_39" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="2FB5D7E6DB01C9090BBA92ABF580D38993E02CE9357E08FE1F224A9B18056E5A" />
     <Deny ID="ID_DENY_DIRECTIO_3A" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="AE806CA05E141B71664D9C6F20CC2369EF26F996" />
     <Deny ID="ID_DENY_DIRECTIO_3B" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="D0559503988DAA407FCC11E59079560CB456BB84" />
     <Deny ID="ID_DENY_HW_22" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Sha1" Hash="924A088149D6EE89551E15D45E7BC847B9561196" />
@@ -714,71 +735,71 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_AMD_RYZEN" FriendlyName="amdryzenmaster.sys" FileName="AMDRyzenMasterDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.5.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_AMDPP" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.1.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_AMDPP_1" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="6.1.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_ASWARPOT" FriendlyName="Avast aswArpot FileAttribute" FileName="aswArPot.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.4.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_ATILLK" FriendlyName="atillk64 FileAttribute" FileName="atillk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_ATSZIO" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_ATSZIO_1" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_BS_DEF" FriendlyName="Bs_Def64 FileAttribute" FileName="Bs_Def64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_BS_DEF_64" FriendlyName="Bs_Def FileAttribute" FileName="Bs_Def.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_BS_HWMIO64" FriendlyName="" FileName="BS_HWMIO64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2200" />
-<FileAttrib ID="ID_FILEATTRIB_BS_I2CIO" FriendlyName="" FileName="BS_I2cIo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_BS_RCIO_1" FriendlyName="BS_RCIO.sys FileAttribute" FileName="BS_RCIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.0.1" />
-<FileAttrib ID="ID_FILEATTRIB_BSMI" FriendlyName="" FileName="BSMI.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.3" />
-<FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
-<FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
-<FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
-<FileAttrib ID="ID_FILEATTRIB_HW" FriendlyName="hw_sys\4880f40f2e557cff38100620b9aa1a3a753cb693af16cd3d95841583edcb57a8 FileAttribute" FileName="HW.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_HWRWDRV" FriendlyName="HwRwDrv FileAttribute" FileName="HwRwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_IOBITUNLOCKER" FriendlyName="IObitUnlocker FileAttribute" FileName="IObitUnlocker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.3.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_KEVP64_1" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_LHA" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_LHA_1" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-<FileAttrib ID="ID_FILEATTRIB_LV_DIAG" FriendlyName="LenovoDiagnosticsDriver FileAttribute" FileName="LenovoDiagnosticsDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_LV561V64" FriendlyName="LV561V64 LogiTech FileAttribute" FileName="Lv561av.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_MONITOR" FriendlyName="IOBit Monitor.sys FileAttribute" FileName="Monitor.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="15.0.0.2" />
-<FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_MYDRIVERS" FriendlyName="mydrivers.sys FileAttribute" FileName="mydrivers.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_NCHGBIOS2X64" FriendlyName="" FileName="NCHGBIOS2x64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.2.4.0" />
-<FileAttrib ID="ID_FILEATTRIB_NCPL_DRIVER_1" FriendlyName="" FileName="NCPL.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-<FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-<FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-<FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_NVFLASH" FriendlyName="Nvidia NVFlash FileAttribute" FileName="nvflash.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.9.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_PANIO_1" FriendlyName="PanIOx64\6b830ea0db6546a044c9900d3f335e7820c2a80e147b0751641899d1a5aa8f74 FileAttribute" FileName="PanIOx64.sys" MinimumFileVersion="1.0.0.1" />
-<FileAttrib ID="ID_FILEATTRIB_PANIO_2" FriendlyName="PanIO\f596e64f4c5d7c37a00493728d8756b243cfdc11e3372d6d6dfeffc13c9ab960 FileAttribute" FileName="PanIO.sys" MinimumFileVersion="1.0.0.1" />
-<FileAttrib ID="ID_FILEATTRIB_PANIOMON_1" FriendlyName="PanMonFltx64\06508aacb4ed0a1398a2b0da5fa2dbf7da435b56da76fd83c759a50a51c75caf FileAttribute" FileName="PanMonFltX64.sys" MinimumFileVersion="1.0.0.1" />
-<FileAttrib ID="ID_FILEATTRIB_PANIOMON_2" FriendlyName="PanMonFlt\7e0124fcc7c95fdc34408cf154cb41e654dade8b898c71ad587b2090b1da30d7 FileAttribute" FileName="PanMonFlt.sys" MinimumFileVersion="1.0.0.1" />
-<FileAttrib ID="ID_FILEATTRIB_PHYMEM" FriendlyName="Phymem FileAttribute" FileName="phymem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_PHYSMEM" FriendlyName="Physmem.sys FileAttribute" FileName="physmem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIO_DRIVER" FriendlyName="" FileName="rtkio.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIO_DRIVER_1" FriendlyName="" FileName="rtkio.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER" FriendlyName="" FileName="rtkio64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER_1" FriendlyName="" FileName="rtkio64.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER_1" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER_1" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER_1" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_SANDBOX_1" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_SANDBOX_2" FriendlyName="Agnitum SandBox FileAttribute" FileName="SandBox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-<FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_SEGWINDRVX64" FriendlyName="segwindrvx64.sys FileAttribute" FileName="segwindrvx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="100.0.7.2" />
-<FileAttrib ID="ID_FILEATTRIB_SUPERBMC" FriendlyName="Superbmc FileAttribute" FileName="superbmc.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.2.1.0" />
-<FileAttrib ID="ID_FILEATTRIB_TREND_MICRO" FriendlyName="TmComm.sys" FileName="TmComm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.0.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_VBOX_1" FriendlyName="VBoxDrv.sys FileAttribute" FileName="VBoxDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.0.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_VIRAGT" FriendlyName="viragt.sys 32-bit" FileName="viragt.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.80.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_VIRAGT64" FriendlyName="viragt64.sys" FileName="viragt64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.11" />
-<FileAttrib ID="ID_FILEATTRIB_VMDRV" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10011.16384" />
-<FileAttrib ID="ID_FILEATTRIB_VMDRV_1" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="10.0.10011.16384" />
-<FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
-<FileAttrib ID="ID_FILEATTRIB_WISEUNLO" FriendlyName="WiseUnlo FileAttribute" FileName="WiseUnlo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_AMDPP" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.1.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_AMDPP_1" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="6.1.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ASWARPOT" FriendlyName="Avast aswArpot FileAttribute" FileName="aswArPot.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.4.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ATILLK" FriendlyName="atillk64 FileAttribute" FileName="atillk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ATSZIO" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ATSZIO_1" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_DEF" FriendlyName="Bs_Def64 FileAttribute" FileName="Bs_Def64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_DEF_64" FriendlyName="Bs_Def FileAttribute" FileName="Bs_Def.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_HWMIO64" FriendlyName="" FileName="BS_HWMIO64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2200" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_I2CIO" FriendlyName="" FileName="BS_I2cIo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_BS_RCIO_1" FriendlyName="BS_RCIO.sys FileAttribute" FileName="BS_RCIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.0.1" />
+    <FileAttrib ID="ID_FILEATTRIB_BSMI" FriendlyName="" FileName="BSMI.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.3" />
+    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
+    <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
+    <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
+    <FileAttrib ID="ID_FILEATTRIB_HW" FriendlyName="hw_sys\4880f40f2e557cff38100620b9aa1a3a753cb693af16cd3d95841583edcb57a8 FileAttribute" FileName="HW.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_HWRWDRV" FriendlyName="HwRwDrv FileAttribute" FileName="HwRwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_IOBITUNLOCKER" FriendlyName="IObitUnlocker FileAttribute" FileName="IObitUnlocker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.3.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_KEVP64_1" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_LHA" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_LHA_1" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_LV_DIAG" FriendlyName="LenovoDiagnosticsDriver FileAttribute" FileName="LenovoDiagnosticsDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_LV561V64" FriendlyName="LV561V64 LogiTech FileAttribute" FileName="Lv561av.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_MONITOR" FriendlyName="IOBit Monitor.sys FileAttribute" FileName="Monitor.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="15.0.0.2" />
+    <FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_MYDRIVERS" FriendlyName="mydrivers.sys FileAttribute" FileName="mydrivers.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_NCHGBIOS2X64" FriendlyName="" FileName="NCHGBIOS2x64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.2.4.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NCPL_DRIVER_1" FriendlyName="" FileName="NCPL.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NVFLASH" FriendlyName="Nvidia NVFlash FileAttribute" FileName="nvflash.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.9.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_PANIO_1" FriendlyName="PanIOx64\6b830ea0db6546a044c9900d3f335e7820c2a80e147b0751641899d1a5aa8f74 FileAttribute" FileName="PanIOx64.sys" MinimumFileVersion="1.0.0.1" />
+    <FileAttrib ID="ID_FILEATTRIB_PANIO_2" FriendlyName="PanIO\f596e64f4c5d7c37a00493728d8756b243cfdc11e3372d6d6dfeffc13c9ab960 FileAttribute" FileName="PanIO.sys" MinimumFileVersion="1.0.0.1" />
+    <FileAttrib ID="ID_FILEATTRIB_PANIOMON_1" FriendlyName="PanMonFltx64\06508aacb4ed0a1398a2b0da5fa2dbf7da435b56da76fd83c759a50a51c75caf FileAttribute" FileName="PanMonFltX64.sys" MinimumFileVersion="1.0.0.1" />
+    <FileAttrib ID="ID_FILEATTRIB_PANIOMON_2" FriendlyName="PanMonFlt\7e0124fcc7c95fdc34408cf154cb41e654dade8b898c71ad587b2090b1da30d7 FileAttribute" FileName="PanMonFlt.sys" MinimumFileVersion="1.0.0.1" />
+    <FileAttrib ID="ID_FILEATTRIB_PHYMEM" FriendlyName="Phymem FileAttribute" FileName="phymem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_PHYSMEM" FriendlyName="Physmem.sys FileAttribute" FileName="physmem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIO_DRIVER" FriendlyName="" FileName="rtkio.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIO_DRIVER_1" FriendlyName="" FileName="rtkio.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER" FriendlyName="" FileName="rtkio64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER_1" FriendlyName="" FileName="rtkio64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER_1" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER_1" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER_1" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDBOX_1" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDBOX_2" FriendlyName="Agnitum SandBox FileAttribute" FileName="SandBox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_SEGWINDRVX64" FriendlyName="segwindrvx64.sys FileAttribute" FileName="segwindrvx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="100.0.7.2" />
+    <FileAttrib ID="ID_FILEATTRIB_SUPERBMC" FriendlyName="Superbmc FileAttribute" FileName="superbmc.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.2.1.0" />
+    <FileAttrib ID="ID_FILEATTRIB_TREND_MICRO" FriendlyName="TmComm.sys" FileName="TmComm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VBOX_1" FriendlyName="VBoxDrv.sys FileAttribute" FileName="VBoxDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VIRAGT" FriendlyName="viragt.sys 32-bit" FileName="viragt.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.80.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_VIRAGT64" FriendlyName="viragt64.sys" FileName="viragt64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.11" />
+    <FileAttrib ID="ID_FILEATTRIB_VMDRV" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10011.16384" />
+    <FileAttrib ID="ID_FILEATTRIB_VMDRV_1" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="10.0.10011.16384" />
+    <FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_WISEUNLO" FriendlyName="WiseUnlo FileAttribute" FileName="WiseUnlo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
   </FileRules>
   <!--Signers-->
   <Signers>
@@ -2142,8 +2163,11 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
 </SiPolicy>
 ```
-<br />
 
+</details>
+
+> [!NOTE]
+> The policy listed above contains **Allow All** rules. Microsoft recommends deploying this policy alongside an existing WDAC policy instead of merging it with the existing policy. If you must use a single policy, remove the **Allow All** rules before merging it with the existing policy. For more information, see [Create a WDAC Deny Policy](create-wdac-deny-policy.md#single-policy-considerations).
 
 ## More information
 

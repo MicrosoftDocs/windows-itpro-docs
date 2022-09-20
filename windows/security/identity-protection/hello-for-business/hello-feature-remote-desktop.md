@@ -1,20 +1,15 @@
 ---
 title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 02/24/2021
-ms.reviewer: 
 ---
 
 # Remote Desktop
@@ -23,10 +18,10 @@ ms.reviewer:
 
 - Windows 10
 - Windows 11
-- Cloud only, Hybrid, and On-premises only  Windows Hello for Business deployments
+- Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 
-Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This functionality is not supported for key trust deployments. This feature takes advantage of the redirected smart card capabilities of the remote desktop protocol. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md) to establish a remote desktop protocol connection.
+Windows Hello for Business supports using a certificate deployed to a Windows Hello for Business container as a supplied credential to establish a remote desktop connection to a server or another device. This feature takes advantage of the redirected smart card capabilities of the remote desktop protocol. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md) to establish a remote desktop protocol connection.
 
 Microsoft continues to investigate supporting using keys trust for supplied credentials in a future release.
 
@@ -34,7 +29,7 @@ Microsoft continues to investigate supporting using keys trust for supplied cred
 
 **Requirements**
 
-- Cloud only, Hybrid, and On-premises only Windows Hello for Business deployments
+- Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Biometric enrollments
 - Windows 10, version 1809 or later

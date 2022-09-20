@@ -2,23 +2,24 @@
 title: Set up Take a Test on multiple PCs
 description: Learn how to set up and use the Take a Test app on multiple PCs.
 keywords: take a test, test taking, school, set up on multiple PCs
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 11/08/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Set up Take a Test on multiple PCs
-**Applies to:**
-
--   Windows 10  
-
 
 Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. 
 
@@ -114,8 +115,6 @@ You can configure a dedicated testing account through MDM or Configuration Manag
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/LaunchURI
     - **String value** = *assessment URL*
-
-      See [Assessment URLs](#assessment-urls) for more information.
 
 4. Create a policy that associates the assessment URL to the account using the following values:
 
@@ -264,15 +263,9 @@ You can also distribute the test link by creating a shortcut. To create the shor
 
 Once the shortcut is created, you can copy it and distribute it to students.
 
-
-## Assessment URLs
-This assessment URL uses our lockdown API:
-- SBAC/AIR:  [https://mobile.tds.airast.org/launchpad/](https://mobile.tds.airast.org/launchpad/).
-
-
 ## Related topics
 
-[Take tests in Windows 10](take-tests-in-windows-10.md)
+[Take tests in Windows](take-tests-in-windows-10.md)
 
 [Set up Take a Test on a single PC](take-a-test-single-pc.md)
 

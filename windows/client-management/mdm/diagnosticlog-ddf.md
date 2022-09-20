@@ -2,12 +2,12 @@
 title: DiagnosticLog DDF
 description: Learn about the the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider (CSP).
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
@@ -2028,7 +2028,7 @@ The content below are the latest versions of the DDF files:
                     <Delete />
                     <Replace />
                   </AccessType>
-                  <Description>SDDL String controlling access to the channel. Default: https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype</Description>
+                  <Description>SDDL String controlling access to the channel. Default: https://learn.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>
@@ -2178,9 +2178,3 @@ The content below are the latest versions of the DDF files:
  
 
  
-
-
-
-
-
-

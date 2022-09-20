@@ -1,30 +1,23 @@
 ---
 title: Windows Hello biometrics in the enterprise (Windows)
 description: Windows Hello uses biometrics to authenticate users and guard against potential spoofing, through fingerprint matching and facial recognition.
-ms.assetid: d3f27d94-2226-4547-86c0-65c84d6df8Bc
-keywords: Windows Hello, enterprise biometrics
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 01/12/2021
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Windows Hello biometrics in the enterprise
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 Windows Hello is the biometric authentication feature that helps strengthen authentication and helps to guard against potential spoofing through fingerprint matching and facial recognition.
 
@@ -85,7 +78,7 @@ To allow facial recognition, you must have devices with integrated special infra
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
 
 > [!NOTE]
->Windows Hello face authentication does not currently support wearing a mask during enrollment or authentication. Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock you device. The product group is aware of this behavior and is investigating this topic further. Please remove a mask if you are wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, please consider unenrolling from face authentication and only using PIN or fingerprint.
+>Windows Hello face authentication does not currently support wearing a mask during enrollment or authentication. Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this topic further. Please remove a mask if you are wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, please consider unenrolling from face authentication and only using PIN or fingerprint.
 
 
 ## Related topics

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Kerberos
 description: Define the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Kerberos
@@ -31,6 +31,18 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#kerberos-pkinithashalgorithmconfiguration">Kerberos/PKInitHashAlgorithmConfiguration</a>
+  </dd>  
+  <dd>
+    <a href="#kerberos-pkinithashalgorithmsha1">Kerberos/PKInitHashAlgorithmSHA1</a>
+  </dd>
+  <dd>
+    <a href="#kerberos-pkinithashalgorithmsha256">Kerberos/PKInitHashAlgorithmSHA256</a>
+  </dd>
+  <dd>
+    <a href="#kerberos-pkinithashalgorithmsha384">Kerberos/PKInitHashAlgorithmSHA384</a>
+  </dd>
+  <dd>
+    <a href="#kerberos-pkinithashalgorithmsha512">Kerberos/PKInitHashAlgorithmSHA512</a>
   </dd>
   <dd>
     <a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a>
@@ -231,14 +243,12 @@ ADMX Info:
 
 This policy setting controls hash or checksum algorithms used by the Kerberos client when performing certificate authentication.
 
-If you enable this policy, you'll be able to configure one of four states for each algorithm:
-
-* **Default**: This state sets the algorithm to the recommended state.
-* **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
-* **Audited**: This state enables usage of the algorithm and reports an event (ID 205) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
-* **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+If you enable this policy, you'll be able to configure one of four states for each hash algorithm (SHA1, SHA256, SHA384, and SHA512) using their respective policies.
 
 If you disable or don't configure this policy, each algorithm will assume the **Default** state.
+
+* 0 - **Disabled**
+* 1 - **Enabled**
 
 More information about the hash and checksum algorithms supported by the Windows Kerberos client and their default states can be found https://go.microsoft.com/fwlink/?linkid=2169037.
 
@@ -246,7 +256,7 @@ More information about the hash and checksum algorithms supported by the Windows
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Introducing agility to PKINIT in Kerberos protocol*
+-   GP Friendly name: *Configure Hash algorithms for certificate logon*
 -   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -254,6 +264,209 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-pkinithashalgorithmsha1"></a>**Kerberos/PKInitHashAlgorithmSHA1**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting controls the configuration of the SHA1 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+* 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+* 1 - **Default**: This state sets the algorithm to the recommended state.
+* 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+* 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA1 algorithm will assume the **Default** state.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Configure Hash algorithms for certificate logon*
+-   GP name: *PKInitHashAlgorithmConfiguration*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-pkinithashalgorithmsha256"></a>**Kerberos/PKInitHashAlgorithmSHA256**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting controls the configuration of the SHA256 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+* 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+* 1 - **Default**: This state sets the algorithm to the recommended state.
+* 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+* 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA256 algorithm will assume the **Default** state.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Configure Hash algorithms for certificate logon*
+-   GP name: *PKInitHashAlgorithmConfiguration*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-pkinithashalgorithmsha384"></a>**Kerberos/PKInitHashAlgorithmSHA384**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting controls the configuration of the SHA384 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+* 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+* 1 - **Default**: This state sets the algorithm to the recommended state.
+* 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+* 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA384 algorithm will assume the **Default** state.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Configure Hash algorithms for certificate logon*
+-   GP name: *PKInitHashAlgorithmConfiguration*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-pkinithashalgorithmsha512"></a>**Kerberos/PKInitHashAlgorithmSHA512**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting controls the configuration of the SHA512 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+* 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+* 1 - **Default**: This state sets the algorithm to the recommended state.
+* 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+* 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA512 algorithm will assume the **Default** state.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Configure Hash algorithms for certificate logon*
+-   GP name: *PKInitHashAlgorithmConfiguration*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
 <hr/>
 
 <!--Policy-->

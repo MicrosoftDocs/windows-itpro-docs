@@ -2,22 +2,18 @@
 title: VPN auto-triggered profile options (Windows 10 and Windows 11)
 description: Learn about the types of auto-trigger rules for VPNs in Windows, which start a VPN when it is needed to access a resource.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
-author: dansimp
+author: paolomatarazzo
 ms.localizationpriority: medium
 ms.date: 09/23/2021
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: paoloma
+ms.reviewer: pesmith
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # VPN auto-triggered profile options
-
-**Applies to**
--   Windows 10
--   Windows 11
 
 In Windows 10 and Windows 11, a number of features have been added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
 
