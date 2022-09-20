@@ -40,7 +40,12 @@ manager: dansimp
 |Pro|No|No|
 |Business|No|No|
 |Enterprise|No|No|
-|Education|No|Yes|
+|Education|No|No|
+|Windows SE|Yes|No|
+
+> [!NOTE]
+> Only available on Windows SE edition when Education/IsEducationEnvironment policy is also set to "1".
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -70,14 +75,6 @@ Value type is integer:
 
 <!--/SupportedValues-->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Represents the enablement state of the Web Sign-in Credential Provider for device sign-in*
--   GP name: *EnableWebSignInForPrimaryUser*
--   GP path: *OS\Core\ENS\OS Security\Authentication Platform\Password-Less*
--   GP ADMX file name: *FederatedAuthentication.admx*
-
-<!--/ADMXBacked-->
 <!--/Policy-->
 
 <!--/Policies-->
