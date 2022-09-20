@@ -144,7 +144,7 @@ To configure the cloud Kerberos trust policy, follow the steps below:
     
     | Setting |
     |--------|
-    | <li>Name: **Windows Hello for Business cloud Kerberos trust** or another familiar name</li><li>Description (optional): *Enable Windows Hello for Business cloud Kerberos trust for sign-in and on-premises SSO*</li><li>OMA-URI: **`./Device/Vendor/MSFT/PassportForWork/`*\<tenant ID>*`/Policies/UseCloudTrustForOnPremAuth`** </li><li>Data type: **Boolean** </li><li>Value: **True**</li>|
+    | <ul><li>Name: **Windows Hello for Business cloud Kerberos trust** or another familiar name</li><li>Description (optional): *Enable Windows Hello for Business cloud Kerberos trust for sign-in and on-premises SSO*</li><li>OMA-URI: **`./Device/Vendor/MSFT/PassportForWork/`*\<tenant ID>*`/Policies/UseCloudTrustForOnPremAuth`** </li><li>Data type: **Boolean** </li><li>Value: **True**</li></ul>|
     
     >[!IMPORTANT]
     >*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) for instructions on looking up your tenant ID.
