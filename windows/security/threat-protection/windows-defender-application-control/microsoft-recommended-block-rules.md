@@ -6,7 +6,7 @@ ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jgeurten
 ms.author: vinpa
 manager: aaroncz
 ms.date: 09/29/2021
