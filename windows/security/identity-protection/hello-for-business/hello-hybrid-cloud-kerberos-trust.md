@@ -87,7 +87,7 @@ If you haven't deployed Azure AD Kerberos, follow the instructions in the [Enabl
 
 After setting up the Azure AD Kerberos Object, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 Windows Hello for Business can be enabled using device enrollment or device configuration policy. Device enrollment policy is only applied at device enrollment time. Any modifications to the configuration in Intune won't apply to already enrolled devices. Device configuration policy is applied after device enrollment. Changes to this policy type in Intune are applied to already enrolled devices.
 
@@ -160,7 +160,7 @@ To configure the cloud Kerberos trust policy, follow the steps below:
 > [!Important]
 > If the Use certificate for on-premises authentication policy is enabled, we will enforce certificate trust instead of cloud Kerberos trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud Kerberos trust have this policy not configured or disabled.
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+#### [:::image type="icon" source="../../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 Hybrid Azure AD joined organizations can use Windows Hello for Business Group Policy to manage the feature. Group Policy can be configured to enable users to enroll and use Windows Hello for Business.
 
