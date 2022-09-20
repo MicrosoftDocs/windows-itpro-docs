@@ -3,12 +3,12 @@ title: Manage additional Windows Update settings
 description: In this article, learn about additional settings to control the behavior of Windows Update.
 ms.prod: w10
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+date: 09/22/2022
 ---
 
 # Manage additional Windows Update settings
@@ -36,6 +36,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 | [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
 | [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
 | [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
+| |  [Windows Update notifications display organization name](#bkmk_display-name) </br></br> *Organization name is displayed by default. A registry value can disable this behavior. | Windows 11 devices that are Azure Active Directory joined or registered <!--6286260-->| 
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -230,7 +231,7 @@ To do this, follow these steps:
      > [!NOTE]
      > This setting affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
 
-To use Automatic Updates with a server that is running Software Update Services, see the Deploying Microsoft Windows Server Update Services 2.0 guidance.
+To use Automatic Updates with a server that is running Windows Software Update Services (WSUS), see the [Deploying Microsoft Windows Server Update Services](/windows-server/administration/windows-server-update-services/deploy/deploy-windows-server-update-services) guidance.
 
 When you configure Automatic Updates directly by using the policy registry keys, the policy overrides the preferences that are set by the local administrative user to configure the client. If an administrator removes the registry keys at a later date, the preferences that were set by the local administrative user are used again.
 
@@ -246,3 +247,32 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 *  WUStatusServer (REG_SZ)
 
    This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
+
+## <a name="bkmk_display-name"> </a> Display organization name in Windows Update notifications
+<!--6286260-->
+When Windows 11 clients are associated with an Azure AD tenant, the organization name appears in the Windows Update notifications. For instance, when you have a compliance deadline configured for Windows Update for Business, the user notification will display a message similar to **Contoso requires important updates to be installed**. The organization name will also display on the **Windows Update** page in the **Settings** for Windows 11.  
+  
+The organization name appears automatically for Windows 11 clients that are associated with Azure AD in any of the following ways:
+- [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) 
+- [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register)
+- [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+
+To disable displaying the organization name in Windows Update notifications, add or modify the following in the registry:
+
+   - **Registry key**: `HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations`
+  -   **DWORD value name**: UsoDisableAADJAttribution
+  - **Value data:** 1
+
+The following PowerShell script is provided as an example to you: 
+```powershell
+$registryPath = "HKLM:\Software\Microsoft\WindowsUpdate\Orchestrator\Configurations"
+$Name = "UsoDisableAADJAttribution"
+$value = "1" 
+
+if (!(Test-Path $registryPath)) 
+{
+  New-Item -Path $registryPath -Force | Out-Null
+}
+
+New-ItemProperty -Path $registryPath -Name $name -Value $value -PropertyType DWORD -Force | Out-Null
+```
