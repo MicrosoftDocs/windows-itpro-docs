@@ -52,7 +52,7 @@ ms.date: 09/22/2022
 
 ## PDE protection levels
 
-PDE uses AES-256 to encrypt files and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the PDE APIs.
+PDE uses AES-CBC with a 256-bit key to encrypt files and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the PDE APIs.
 
 | Item | Level 1 | Level 2 |
 |---|---|---|
