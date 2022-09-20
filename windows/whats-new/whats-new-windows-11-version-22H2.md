@@ -15,7 +15,7 @@ ms.custom: intro-overview
 
 **Applies to**: Windows 11, version 22H2
 <!--6681501-->
-Windows 11 22H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 21H2, the original Windows 11 release version. This article lists the new and updated features IT Pros should know.
+Windows 11, version 22H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 21H2, the original Windows 11 release version. This article lists the new and updated features IT Pros should know.
 
 Windows 11, version 22H2 follows the [Windows 11 servicing timeline](/lifecycle/faq/windows#windows-11):
 
@@ -81,7 +81,7 @@ For more information, see [WebAuthn APIs for passwordless authentication on Wind
 
 ## Stickers for Windows 11 SE, version 22H2
 <!--6286248-->
-Starting in Windows 11 SE, version 22H2, **Stickers** is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background change.
+Starting in Windows 11 SE, version 22H2, **Stickers** is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background changes.
 
 For more information, see [Configure Stickers for Windows 11 SE](/education/windows/edu-stickers).
 
@@ -98,7 +98,7 @@ The following items were added for Windows Update notifications:
 
 - You can now block user notifications for Windows Updates during active hours. This setting is especially useful for educational organizations that want to prevent Windows Update notifications from occurring during class time. For more information, see [Control restart notifications](/windows/deployment/update/waas-restart#control-restart-notifications).
 
-- The organization name now appears in the Windows Update notifications when Windows clients are associated with an Azure AD tenant. For more information, see [Display organization name in Windows Update notifications](/windows/deployment/update/waas-wu-settings#bkmk_display-name).
+- The organization name now appears in the Windows Update notifications when Windows clients are associated with an Azure Active Directory tenant. For more information, see [Display organization name in Windows Update notifications](/windows/deployment/update/waas-wu-settings#bkmk_display-name).
 
 ## Start menu layout
 <!--6286095-->
