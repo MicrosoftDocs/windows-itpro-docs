@@ -87,7 +87,7 @@ If you haven't deployed Azure AD Kerberos, follow the instructions in the [Enabl
 
 After setting up the Azure AD Kerberos Object, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-#### [:::image type="icon" source="../../../../images/icons/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 Windows Hello for Business can be enabled using device enrollment or device configuration policy. Device enrollment policy is only applied at device enrollment time. Any modifications to the configuration in Intune won't apply to already enrolled devices. Device configuration policy is applied after device enrollment. Changes to this policy type in Intune are applied to already enrolled devices.
 
@@ -97,15 +97,15 @@ The cloud Kerberos trust policy needs to be configured using a custom template a
 
 If you have an existing group you want to target with Windows Hello for Business cloud Kerberos trust policy, you can skip this step.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
-1. Browse to **Groups** and select **New group**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/)
+1. Browse to **Groups** and select **New group**
 1. Configure the following group settings:
-    1. Group type: "Security"
-    1. Group name: "WHFBCloudTrustUsers" or a group name of your choosing
-    1. Membership type: Assigned
-1. Select **Members** and add users that you want to target with Windows Hello for Business cloud Kerberos trust.
+    1. Group type: **Security**
+    1. Group name: *WHFB cloud Kerberos trust users* or a group name of your choosing
+    1. Membership type: **Assigned**
+1. Select **Members** and add users that you want to target with Windows Hello for Business cloud Kerberos trust
 
-You can also create a group through the Azure portal instead of using the Microsoft Endpoint Manager admin center.
+You can also create a group through the Azure portal instead of using the Microsoft Endpoint Manager admin center
 
 ### Enable Windows Hello for Business
 
@@ -125,7 +125,7 @@ You can also follow these steps to create a device configuration policy instead 
 
 1. Select Next to move to **Assignments**.
 1. Under Included groups, select **Add groups**.
-1. Select the user group you would like to use Windows Hello for Business cloud Kerberos trust. This group may be WHFBCloudTrustUsers or a group of your choosing.
+1. Select the user group you would like to use Windows Hello for Business cloud Kerberos trust. This group may be *WHFB cloud Kerberos trust users* or a group of your choosing.
 1. Select Next to move to the Applicability Rules.
 1. Select Next again to move to the **Review + create** tab and select the option to create the policy.
 
@@ -142,25 +142,25 @@ To configure the cloud Kerberos trust policy, follow the steps below:
 1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust".
 1. In Configuration Settings, add a new configuration with the following settings:
 
-| Setting |
-|--------|
-| <li>Name: **Windows Hello for Business cloud Kerberos trust** or another familiar name</li><li>Description (optional): *Enable Windows Hello for Business cloud Kerberos trust for sign-in and on-premises SSO*</li><li>OMA-URI: **`./Device/Vendor/MSFT/PassportForWork/`*<tenant ID>*`/Policies/UseCloudTrustForOnPremAuth`** </li><li>Data type: **Boolean** </li><li>Value: **True**</li>|
+  | Setting |
+  |--------|
+  | <li>Name: **Windows Hello for Business cloud Kerberos trust** or another familiar name</li><li>Description (optional): *Enable Windows Hello for Business cloud Kerberos trust for sign-in and on-premises SSO*</li><li>OMA-URI: **`./Device/Vendor/MSFT/PassportForWork/`*<tenant ID>*`/Policies/UseCloudTrustForOnPremAuth`** </li><li>Data type: **Boolean** </li><li>Value: **True**</li>|
 
->[!IMPORTANT]
->*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) for instructions on looking up your tenant ID.
+  >[!IMPORTANT]
+  >*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) for instructions on looking up your tenant ID.
 
-    [![Intune custom-device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
+  [![Intune custom-device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
 
 1. Select Next to navigate to **Assignments**.
 1. Under Included groups, select **Add groups**.
-1. Select the user group you would like to use Windows Hello for Business cloud Kerberos trust. This group may be WHFBCloudTrustUsers or a group of your choosing.
+1. Select the user group you would like to use Windows Hello for Business cloud Kerberos trust. This group may be *WHFB cloud Kerberos trust users* or a group of your choosing.
 1. Select Next to move to the Applicability Rules.
 1. Select Next again to move to the **Review + create** tab and select the option to create the policy.
 
 > [!Important]
 > If the Use certificate for on-premises authentication policy is enabled, we will enforce certificate trust instead of cloud Kerberos trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud Kerberos trust have this policy not configured or disabled.
 
-#### [:::image type="icon" source="../../../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+#### [:::image type="icon" source="=../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 Hybrid Azure AD joined organizations can use Windows Hello for Business Group Policy to manage the feature. Group Policy can be configured to enable users to enroll and use Windows Hello for Business.
 
