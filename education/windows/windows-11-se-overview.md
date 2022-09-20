@@ -87,6 +87,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Application                             | Supported version | App Type | Vendor                       |
 |-----------------------------------------|-------------------|----------|------------------------------|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
+| Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies |
 | Brave Browser                           | 1.34.80           | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
