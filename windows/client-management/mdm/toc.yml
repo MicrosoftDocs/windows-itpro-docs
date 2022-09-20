@@ -735,7 +735,6 @@ items:
                 href: policy-csp-licensing.md
               - name: LocalPoliciesSecurityOptions
                 href: policy-csp-localpoliciessecurityoptions.md
-              - name: LocalSecurityAuthority
               - name: LocalUsersAndGroups
                 href: policy-csp-localusersandgroups.md
               - name: LockDown
