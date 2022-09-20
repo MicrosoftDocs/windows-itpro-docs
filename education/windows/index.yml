@@ -73,7 +73,7 @@ landingContent:
         links:
         - text: Provisioning package settings
           url: set-up-school-pcs-provisioning-package.md
-      - linkListType: video
+      - linkListType: videos
         links:
         - text: Use the Set up School PCs App
           url: https://www.youtube.com/watch?v=2ZLup_-PhkA
