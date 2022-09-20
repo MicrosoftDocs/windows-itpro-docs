@@ -532,6 +532,18 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
+[Local Administrator Password Solution CSP](laps-csp.md)
+
+<!--StartSKU-->
+
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [MultiSIM CSP](multisim-csp.md)
 
 <!--StartSKU-->

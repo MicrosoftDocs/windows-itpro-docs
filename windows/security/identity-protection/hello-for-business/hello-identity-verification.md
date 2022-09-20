@@ -31,20 +31,20 @@ This article lists the infrastructure requirements for the different deployment 
 
 The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process.
 
-| Requirement | Cloud trust (Preview)<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate trust<br/>Mixed managed | Certificate trust<br/>Modern managed | 
+| Requirement | cloud Kerberos trust<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate Trust<br/>Mixed managed | Certificate Trust<br/>Modern managed | 
 | --- | --- | --- | --- | --- |
 | **Windows Version** | Windows 10, version 21H2 with KB5010415; Windows 11 with KB5010414; or later | Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).<br/>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later |
 | **Schema Version** | No specific Schema requirement | Windows Server 2016 or later Schema | Windows Server 2016 or later Schema | Windows Server 2016 or later Schema |
 | **Domain and Forest Functional Level** | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
 | **Domain Controller Version** | Windows Server 2016 or later | Windows Server 2016 or later | Windows Server 2008 R2 or later | Windows Server 2008 R2 or later  |
 | **Certificate Authority**| N/A | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
-| **AD FS Version** | N/A | N/A | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) (hybrid Azure AD joined clients),<br> and<br/>Windows Server 2012 or later Network Device Enrollment Service (Azure AD joined) | Windows Server 2012 or later Network Device Enrollment Service |
+| **AD FS Version** | N/A | N/A | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) (hybrid Azure AD joined clients managed by Group Policy),<br> and<br/>Windows Server 2012 or later Network Device Enrollment Service (hybrid Azure AD joined & Azure AD joined managed by MDM) | Windows Server 2012 or later Network Device Enrollment Service |
 | **MFA Requirement** | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter |
 | **Azure AD Connect** | N/A | Required | Required | Required |
 | **Azure AD License** | Azure AD Premium, optional | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional. Intune license required |
 
 > [!Important]
-> - Hybrid deployments support non-destructive PIN reset that works with certificate trust, key trust and cloud trust models.
+> - Hybrid deployments support non-destructive PIN reset that works with Certificate Trust, Key Trust and cloud Kerberos trust models.
 >
 >   **Requirements:**
 >   - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903

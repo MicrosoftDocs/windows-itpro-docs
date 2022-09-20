@@ -2,12 +2,14 @@
 title: Windows 11 overview for administrators
 description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
 ms.reviewer: 
-manager: dougeby
-author: aczechowski
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+author: mestew
+ms.author: mstewart
+ms.prod: windows-client
+ms.date: 09/20/2022
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: overview
 ms.collection: highpri
 ms.custom: intro-overview
 ---
@@ -99,6 +101,12 @@ For more information on the security features you can configure, manage, and enf
   Users can manage some snap features using the **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
   You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu).
+
+  Starting in Windows 11, version 22H2, you can also activate snap layouts by dragging a window to the top of the screen. The feature is available for both mouse and touch.<!-- MAX 6294246, OS 32513582 -->
+
+  :::image type="content" source="images/windows-11-whats-new/windows-11-22h2-snap-layouts.png" alt-text="In Windows 11, version 22H2, activate snap layouts by dragging a window to the top of the screen.":::
+
+  For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
 - **Start menu**: The Start menu includes some apps that are pinned by default. You can customize the Start menu layout by pinning (and unpinning) the apps you want. For example, you can pin commonly used apps in your organization, such as Outlook, Microsoft Teams, apps your organization creates, and more.
 

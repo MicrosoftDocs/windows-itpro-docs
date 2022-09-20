@@ -105,7 +105,7 @@ conceptualContent:
         - url: /windows/configuration/provisioning-packages/provisioning-packages
           itemType: how-to-guide
           text: Use Provisioning packages to configure new devices
-        - url: /windows/configuration/windows-10-accessibility-for-itpros
+        - url: /windows/configuration/windows-accessibility-for-itpros
           itemType: overview
           text: Accessibility information for IT Pros
         - url: /windows/configuration/customize-start-menu-layout-windows-11
