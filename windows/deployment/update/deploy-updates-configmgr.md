@@ -2,9 +2,9 @@
 title: Deploy Windows client updates with Configuration Manager
 description: Deploy Windows client updates with Configuration Manager
 ms.prod: w10
-author: aczechowski
+author: mestew
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: mstewart
 ms.reviewer: 
 manager: dougeby
 ms.topic: article

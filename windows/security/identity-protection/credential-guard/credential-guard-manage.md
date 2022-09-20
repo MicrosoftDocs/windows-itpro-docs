@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer: erikdau
+ms.reviewer: zwhittington
 manager: aaroncz
 ms.collection:
   - M365-identity-device-management
@@ -22,6 +22,24 @@ appliesto:
 - ✅ <b>Windows Server 2022</b>
 ---
 # Manage Windows Defender Credential Guard
+
+## Default Enablement
+
+Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+
+### Requirements for automatic enablement
+
+Windows Defender Credential Guard will be enabled by default when a PC meets the following minimum requirements:
+
+|Component|Requirement|
+|---|---|
+|Operating System|Windows 11 Enterprise 22H2|
+|Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
+|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
+
+> [!NOTE]
+> If Windows Defender Credential Guard or VBS has previously been explicitly disabled, default enablement will not overwrite this setting.
+
 ## Enable Windows Defender Credential Guard
 
 Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the [Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool](#enable-windows-defender-credential-guard-by-using-the-hvci-and-windows-defender-credential-guard-hardware-readiness-tool). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
