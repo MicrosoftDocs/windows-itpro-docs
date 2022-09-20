@@ -32,6 +32,8 @@ items:
   items:
     - name: Configure education features
       items:
+        - name: Configure federated sign-in
+          href: federated-sign-in.md
         - name: Configure education themes
           href: edu-themes.md
         - name: Configure Stickers
