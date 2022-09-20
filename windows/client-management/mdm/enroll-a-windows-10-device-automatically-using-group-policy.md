@@ -219,7 +219,7 @@ Requirements:
 
 4. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
 
-5. Copy the PolicyDefinitions folder to `\\SYSVOL\contoso.com\policies\PolicyDefinitions`.
+5. Copy the PolicyDefinitions folder to `\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions`.
 
    If this folder doesn't exist, then you'll be switching to a [central policy store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for your entire domain.
 
