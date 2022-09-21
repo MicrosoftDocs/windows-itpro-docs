@@ -308,7 +308,7 @@ Supported operations are Add, Get, Delete, and Replace.
 
 If this policy is enabled, Windows Hello authentication using peripheral biometric sensors will be blocked. Any non-authentication operational functionalities such as camera usage (for instance, video calls and the camera) will be unaffected.
 
-If you enable this policy then it can have following possible values:
+If you enable this policy it can have the following possible values:
 
 **0 - Enhanced Sign-in Security Disabled** (not recommended)
 
