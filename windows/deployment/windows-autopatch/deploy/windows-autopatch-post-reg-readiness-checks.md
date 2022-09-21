@@ -1,7 +1,7 @@
 ---
 title: Post-device registration readiness checks
 description:  This article details how post-device registration readiness checks are performed in Windows Autopatch
-ms.date: 09/15/2022
+ms.date: 09/16/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -12,7 +12,10 @@ manager: dougeby
 msreviewer: andredm7
 ---
 
-# Post-device registration readiness checks
+# Post-device registration readiness checks (public preview)
+
+> [!IMPORTANT]
+> This feature is in "public preview". It is being actively developed, and may not be complete. They're made available on a “Preview” basis. You can test and use these features in production environments and scenarios, and provide feedback.
 
 One of the most expensive aspects of the software update management process is to make sure devices are always healthy to receive and report software updates for each software update release cycle.  
 
@@ -57,7 +60,7 @@ A healthy or active device in Windows Autopatch is:
 - Actively sending data
 - Passes all post-device registration readiness checks
 
-The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin responsible for performing the readiness checks in devices and report back to the service. The **Microsoft Cloud Managed Desktop Extension** is a subcomponent of the overall Windows Autopatch service.
+The post-device registration readiness checks are powered by the **Microsoft Cloud Managed Desktop Extension**. It's installed right after devices are successfully registered with Windows Autopatch. The **Microsoft Cloud Managed Desktop Extension** has the Device Readiness Check Plugin. The Device Readiness Check Plugin is responsible for performing the readiness checks and reporting the results back to the service. The **Microsoft Cloud Managed Desktop Extension** is a subcomponent of the overall Windows Autopatch service.
 
 The following list of post-device registration readiness checks is performed in Windows Autopatch:
 
@@ -72,9 +75,9 @@ The following list of post-device registration readiness checks is performed in 
 | **Microsoft Edge network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Edge must be able to reach for software updates management. |
 | **Internet connectivity** | Checks to see if a device has internet connectivity to communicate with Microsoft cloud services. Windows Autopatch uses the PingReply class. Windows Autopatch tries to ping at least three different Microsoft’s public URLs two times each, to confirm that ping results aren't coming from the device’s cache. |
 
-## Daily operations in Windows Autopatch
+## Post-device registration readiness checks workflow
 
-See the following end-to-end IT admin operation workflow:
+See the following diagram for the post-device registration readiness checks workflow:
 
 :::image type="content" source="../media/windows-autopatch-post-device-registration-readiness-checks.png" alt-text="Post-device registration readiness checks" lightbox="../media/windows-autopatch-post-device-registration-readiness-checks.png":::
 

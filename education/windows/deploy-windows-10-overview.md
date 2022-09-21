@@ -19,9 +19,7 @@ appliesto:
 
 # Windows 10 for Education
 
-![Windows 10 Education and Windows 10 Pro Education.](images/windows-10-for-education-banner.png)
-
-## ![Learn more about Windows.](images/education.png) Learn
+## Learn
 
 **[Windows 10 editions for education customers](windows-editions-for-education-customers.md)**
 
@@ -35,7 +33,7 @@ Find out more about the features and functionality we support in each edition of
 
 When you've made your decision, find out how to buy Windows for your school.
 
-## ![Plan for Windows 10 in your school.](images/clipboard.png) Plan
+## Plan
 
 **[Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)**
 
@@ -57,7 +55,7 @@ Take a Test is a new app that lets you create the right environment for taking t
 
 Find out how you can migrate a Chromebook-based learning environment to a Windows 10-based learning environment.
 
-## ![Deploy Windows 10 for Education.](images/PCicon.png) Deploy
+## Deploy
 
 **[Set up Windows devices for education](set-up-windows-10.md)**
 
@@ -75,7 +73,7 @@ Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across 
 
 Test Windows 10 S on various Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us.
 
-## ![Switch to Windows 10 for Education.](images/windows.png) Switch
+## Switch
 
 **[Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md)**
 
