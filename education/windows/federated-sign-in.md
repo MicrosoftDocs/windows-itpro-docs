@@ -18,12 +18,14 @@ appliesto:
 <!-- MAXADO-6286399 -->
 # Configure federated sign-in for Windows 11 SE
 
-Starting in **Windows 11 SE, version 22H2**, you can enable your users to sign-in using a third-party identity provider (IdP). This feature is called **federated sign-in**. Federated sign-in is a great way to simplify the sign-in process for your users. Instead of having to remember a username and password, they can sign-in using their existing credentials from their IdP. For example, students and educators can use picture passwords or QR code badges to sign-in.
+Starting in **Windows 11 SE, version 22H2**, you can enable your users to sign-in using a third-party SAML 2.0 identity provider (IdP). This feature is called **federated sign-in**. Federated sign-in is a great way to simplify the sign-in process for your users. Instead of having to remember a username and password, they can sign-in using their existing credentials from the IdP. For example, students and educators can use picture passwords or QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
 Federated sign-in enables students to sign-in in less time, and with less friction.
 With fewer credentials to remember and a simplified sign-in process, students are more engaged and focused on learning.
+> [!IMPORTANT]
+> This feature is designed for 1:1 devices. For an optimal experience, you should not enable federated sign-in on shared devices.
 
 ## Prerequisites
 
@@ -36,6 +38,8 @@ To implement federated sign-in, the following prerequisites must be met:
 1. Enable federated sign-in on the Windows devices that the users will be using
     > [!IMPORTANT]
     > This feature is exclusively available for Windows 11 SE, version 22H2
+
+To use federated sign-in, the devices must have Internet access. This feature won't work without it, as the authentication is done over the Internet.
 
 ## Enable federated sign-in on devices
 
@@ -84,11 +88,10 @@ As the end users enter their username, they'll be redirected to the identity pro
 > [!IMPORTANT]
 > Once the policy is enabled, the first user to sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
 
-## Known issues
+## Important considerations
 
 - Network and Accessibility menus aren't available in the web sign-in flow.  They can be accessed on the standard Windows sign-in page. While in the web sign-in flow, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> and the classic Windows sign-in UI will be shown, along with the buttons that launch those menus.  
-- This feature won't work without access to network, as the authentication is done via a third-party provider over the network. Always make sure that there's a valid network connection, before trying to launch the web sign-in flow.
-- The federated sign-in flow isn't displayed if devices have *shared PC mode* enabled
+- Federated sign-in doesn't work if devices have the SharedPC feature *EnableSharedPCMode* enabled
 - It isn't supported to configure the *Azure AD preferred tenant name* feature with federated sign-in
 
 ## Troubleshooting
