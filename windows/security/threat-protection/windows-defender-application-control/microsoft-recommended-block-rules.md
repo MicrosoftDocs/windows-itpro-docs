@@ -17,14 +17,14 @@ ms.topic: reference
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control.
 
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including Windows Defender Application Control:
 
@@ -82,23 +82,21 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |---|---|
 | `Alex Ionescu` | `@aionescu`|
 | `Brock Mammen`| |
-| `Casey Smith` | `@subTee` | 
+| `Casey Smith` | `@subTee` |
 | `James Forshaw` | `@tiraniddo` |
 | `Jimmy Bayne` | `@bohops` |
 | `Kim Oppalfens` | `@thewmiguy` |
 | `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
 | `Lee Christensen` | `@tifkin_` |
-| `Matt Graeber` | `@mattifestation` | 
-| `Matt Nelson` | `@enigma0x3` | 
+| `Matt Graeber` | `@mattifestation` |
+| `Matt Nelson` | `@enigma0x3` |
 | `Oddvar Moe` | `@Oddvarmoe` |
 | `Philip Tsukerman` | `@PhilipTsukerman` |
 | `Vladas Bulavas` | `Kaspersky Lab` |
 | `William Easton` | `@Strawgate` |
 
-<br />
-
-> [!Note]
-> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+> [!NOTE]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
 Certain software applications may allow other code to run by design. Such applications should be blocked by your Windows Defender Application Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
@@ -113,6 +111,10 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 - jscript9.dll
 
 Select the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
+
+<br>
+<details>
+  <summary>Expand this section to see the WDAC policy XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -900,8 +902,8 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
           <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
-          <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
-          <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+          <FileRuleRef RuleID="ID_DENY_MSXML3" />
+          <FileRuleRef RuleID="ID_DENY_MSXML6" />
           <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
           -->
           <FileRuleRef RuleID="ID_DENY_D_1" />
@@ -1519,9 +1521,10 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <HvciOptions>0</HvciOptions>
 </SiPolicy>
 ```
-<br />
 
-> [!Note]
+</details>
+
+> [!NOTE]
 > To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
 
 ## More information
