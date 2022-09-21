@@ -83,7 +83,7 @@ Once the devices are configured, a new sign-in experience becomes available.
 
 As the end users enter their username, they'll be redirected to the identity provider sign-in page. Once users are authenticated by the IdP, they'll be be signed-in. In the following animation, you can see how the first sign-in process works:
 
-:::image type="content" source="./images/federated-sign-in-windows-se.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="true":::
+:::image type="content" source="./images/federated-sign-in-windows-se.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="false":::
 
 > [!IMPORTANT]
 > Once the policy is enabled, the first user to sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
@@ -91,8 +91,10 @@ As the end users enter their username, they'll be redirected to the identity pro
 ## Important considerations
 
 - Network and Accessibility menus aren't available in the web sign-in flow.  They can be accessed on the standard Windows sign-in page. While in the web sign-in flow, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> and the classic Windows sign-in UI will be shown, along with the buttons that launch those menus.  
-- Federated sign-in doesn't work if devices have the SharedPC feature *EnableSharedPCMode* enabled
-- It isn't supported to configure the *Azure AD preferred tenant name* feature with federated sign-in
+- Federated sign-in doesn't work on devices that have enabled the following features enabled:
+    - **EnableSharedPCMode**, which is part of the [SharedPC CSP][WIN-1]
+    - **PreferredAadTenantDomainName**, which is part of the [Authentication CSP][WIN-2]
+    - **Take a Test** (IN PROGESS VERIFICATION)
 
 ## Troubleshooting
 
@@ -100,6 +102,9 @@ As the end users enter their username, they'll be redirected to the identity pro
 - Select the *Other User* button, and the standard username/password credentials are available to log into the device
 
 -----------
+
+[WIN-1]: /windows/client-management/mdm/sharedpc-csp
+[WIN-2]: /windows/client-management/mdm/policy-csp-authentication
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 
