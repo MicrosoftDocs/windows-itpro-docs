@@ -39,7 +39,7 @@ To implement federated sign-in, the following prerequisites must be met:
 
 ## Enable federated sign-in on devices
 
-Before you can sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+To sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -51,7 +51,6 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Data type: **String** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that re llowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
 
 :::image type="content" source="images/federated-sign-in-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-intune.png" border="true":::
 
@@ -67,7 +66,6 @@ To configure federated sign-in using a provisioning package, use the following s
 | <li> Path: **`Policies/Authentication/ConfigureWebSignInAllowedUrls`** </li><li>Value: Semicolon separated list of domains, for example: **`samlidp.clever.com;clever.com;mobile-redirector.clever.com`**</li>|
 | <li> Path: **`Policies/Education/IsEducationEnvironment`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 | <li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during he sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
-| <li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
 
 :::image type="content" source="images/federated-sign-in-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-ppkg.png" border="true":::
 
@@ -79,7 +77,7 @@ Apply the provisioning package to the devices that require federated sign-in.
 
 Once the devices are configured, a new sign-in experience becomes available.
 
-As the end users enters their username, they will be redirected to the identity provider sign-in page. Once users are authenticated by the IdP, they will be be signed-in. In the following animation, you can see how the first sign-in process works:
+As the end users enter their username, they'll be redirected to the identity provider sign-in page. Once users are authenticated by the IdP, they'll be be signed-in. In the following animation, you can see how the first sign-in process works:
 
 :::image type="content" source="./images/federated-sign-in-windows-se.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="true":::
 
@@ -90,8 +88,8 @@ As the end users enters their username, they will be redirected to the identity 
 
 - Network and Accessibility menus aren't available in the web sign-in flow.  They can be accessed on the standard Windows sign-in page. While in the web sign-in flow, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> and the classic Windows sign-in UI will be shown, along with the buttons that launch those menus.  
 - This feature won't work without access to network, as the authentication is done via a third-party provider over the network. Always make sure that there's a valid network connection, before trying to launch the web sign-in flow.
-- The federated sign-in flow is not displayed if devices have *shared PC mode* enabled
-- It is not supported to configure the *Azure AD preferred tenant name* feature with federated sign-in
+- The federated sign-in flow isn't displayed if devices have *shared PC mode* enabled
+- It isn't supported to configure the *Azure AD preferred tenant name* feature with federated sign-in
 
 ## Troubleshooting
 
