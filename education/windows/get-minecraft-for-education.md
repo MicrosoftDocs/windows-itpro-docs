@@ -36,8 +36,4 @@ Teachers and IT administrators can now get access to **Minecraft: Education Edit
   - Office 365 Education, which includes online versions of Office apps plus 1 TB online storage. [Sign up your school for Office 365 Education.](https://www.microsoft.com/education/products/office)
   - If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](/windows/client-management/mdm/register-your-free-azure-active-directory-subscription)
 
-<!-- ![teacher.](images/teacher.png) --> 
-  
-<!-- ![IT administrator.](images/school.png) -->
-
 [Learn how IT administrators can get and distribute **Minecraft: Education Edition**](school-get-minecraft.md), and how to manage permissions for Minecraft.
