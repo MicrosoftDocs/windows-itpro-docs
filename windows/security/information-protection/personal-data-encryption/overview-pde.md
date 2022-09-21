@@ -40,15 +40,15 @@ ms.date: 09/22/2022
   - [BitLocker Drive Encryption](../bitlocker/bitlocker-overview.md) enabled
     - Although PDE will work without BitLocker, it's recommended to also enable BitLocker. PDE is meant to supplement BitLocker and not replace it.
   - Backup solution such as [OneDrive](/onedrive/onedrive)
-    - In certain scenarios such as TPM resets or destructive PIN resets, the decryption keys used by PDE can be lost. In such scenarios, any file encrypted with PDE will no longer be accessible. The only way to recover such files would be from backup.
+    - In certain scenarios such as TPM resets or destructive PIN resets, the keys used by PDE to decrypt files can be lost. In such scenarios, any file encrypted with PDE will no longer be accessible. The only way to recover such files would be from backup.
   - [Windows Hello for Business PIN reset service](../../identity-protection/hello-for-business/hello-feature-pin-reset.md)
-    - Destructive PIN resets will cause decryption keys used by PDE to be lost. The destructive PIN reset will make any file encrypted with PDE no longer accessible after a destructive PIN reset. Files encrypted with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
+    - Destructive PIN resets will cause keys used by PDE to decrypt files to be lost. The destructive PIN reset will make any file encrypted with PDE no longer accessible after a destructive PIN reset. Files encrypted with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
   - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
     - Provides additional security when authenticating with Windows Hello for Business via biometrics or PIN
   - [Kernel and user mode crash dumps disabled](/windows/client-management/mdm/policy-csp-memorydump)
-    - Crash dumps can potentially cause the decryption keys used by PDE to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
+    - Crash dumps can potentially cause the keys used by PDE decrypt files to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
   - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
-    - Hibernation files can potentially cause the decryption keys used by PDE to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+    - Hibernation files can potentially cause the keys used by PDE to decrypt files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 ## PDE protection levels
 
