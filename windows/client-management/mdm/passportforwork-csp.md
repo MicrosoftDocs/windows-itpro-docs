@@ -310,7 +310,7 @@ If this policy is enabled, Windows Hello authentication using peripheral biometr
 
 If you enable this policy then it can have following possible values:
 
-0 - Enhanced Sign-in Security Disabled (not recommended)
+**0 - Enhanced Sign-in Security Disabled** (not recommended)
 
 Enhanced sign-in security will be disabled on all systems, enabling the use of peripheral biometric authentication. If this policy value is set to 0 after users have enrolled in ESS biometrics, users will be prompted to reset their PIN. They will lose all their existing biometric enrollments. To use biometrics they will have to enroll again. 
 
