@@ -4,8 +4,8 @@ ms.reviewer:
 manager: aczechowski
 description: Downloading and using the Update Compliance Configuration Script
 ms.prod: w10
-author: mstewart
-ms.author: mestew
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article

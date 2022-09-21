@@ -4,8 +4,8 @@ ms.reviewer:
 manager: aczechowski
 description: Learn how the Feature Update Status report provides information about the status of feature updates across all devices.
 ms.prod: w10
-author: mstewart
-ms.author: mestew
+author: mestew
+ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
