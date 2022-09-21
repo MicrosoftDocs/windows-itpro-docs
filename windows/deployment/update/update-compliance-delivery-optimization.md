@@ -1,11 +1,11 @@
 ---
 title: Delivery Optimization in Update Compliance
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: Learn how the Update Compliance solution provides you with information about your Delivery Optimization configuration.
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article

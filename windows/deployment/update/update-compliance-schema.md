@@ -1,11 +1,11 @@
 ---
 title: Update Compliance Data Schema
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: an overview of Update Compliance data schema
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ---

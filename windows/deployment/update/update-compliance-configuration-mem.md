@@ -1,11 +1,11 @@
 ---
 title: Configuring Microsoft Endpoint Manager devices for Update Compliance
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: Configuring devices that are enrolled in Endpoint Manager for Update Compliance
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
