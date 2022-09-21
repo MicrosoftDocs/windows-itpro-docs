@@ -61,7 +61,7 @@ You can set the policy using one of these methods:
 
   - When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Autopilot Reset** among the list of settings for the student PC as shown in the following example:
 
-    ![Configure student PC settings in Set up School PCs.](images/suspc_configure_pc2.jpg)
+    ![Configure student PC settings in Set up School PCs.](images/suspcs/suspc_configure_pc2.jpg)
     
 ## Trigger Autopilot Reset
 Autopilot Reset is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 

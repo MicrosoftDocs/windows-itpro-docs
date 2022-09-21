@@ -40,6 +40,7 @@ eUICCs
 ------------ServerName
 ----------------DiscoveryState
 ----------------AutoEnable
+----------------IsDiscoveryServer
 --------Profiles
 ------------ICCID
 ----------------ServerName
@@ -111,6 +112,13 @@ Required. Indicates whether the discovered profile must be enabled automatically
 Supported operations are Add, Get, and Replace. 
 
 Value type is bool.
+
+<a href="" id="euicc-downloadservers-servername-isdiscoveryserver"></a>**_eUICC_/DownloadServers/_ServerName_/IsDiscoveryServer**  
+Optional. Indicates whether the server is a discovery server. This setting must be defined by the MDM when the ServerName subtree is created.
+
+Supported operations are Add, Get, and Replace. 
+
+Value type is bool. Default value is false.
 
 <a href="" id="euicc-profiles"></a>**_eUICC_/Profiles**  
 Interior node. Required. Represents all enterprise-owned profiles.

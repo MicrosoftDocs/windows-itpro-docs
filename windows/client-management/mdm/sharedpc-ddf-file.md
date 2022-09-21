@@ -1,7 +1,7 @@
 ---
 title: SharedPC DDF file
 description: Learn how the OMA DM device description framework (DDF) for the SharedPC configuration service provider (CSP).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -70,6 +70,32 @@ The XML below is the DDF for Windows 10, version 1703.
                 </DFType>
             </DFProperties>
         </Node>
+        <Node>
+              <NodeName>EnableSharedPCModeWithOneDriveSync</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>false</DefaultValue>
+                <Description>Setting this node to “1” triggers the action to configure a device to Shared PC mode with OneDrive sync turned on</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>Enable Shared PC mode with OneDrive sync</DFTitle>
+                <DFType>
+                  <MIME />
+                </DFType>
+              </DFProperties>
+            </Node>
         <Node>
             <NodeName>SetEduPolicies</NodeName>
             <DFProperties>

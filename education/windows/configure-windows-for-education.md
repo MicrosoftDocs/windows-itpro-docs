@@ -92,19 +92,13 @@ Use one of these methods to set this policy.
     - Data type:  Integer
     - Value:  0
 
-      ![Create an OMA URI for AllowCortana.](images/allowcortana_omauri.png)
-
 ### Group Policy
 Set **Computer Configuration > Administrative Templates > Windows Components > Search > AllowCortana** to **Disabled**.
-
-![Set AllowCortana to disabled through Group Policy.](images/allowcortana_gp.png)
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
 - [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) 
     - Under **Runtime settings**, click the **Policies** settings group, set **Experience > Cortana** to **No**.
-
-        ![Set AllowCortana to No in Windows Configuration Designer.](images/allowcortana_wcd.png)
 
 ## SetEduPolicies
 **SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It's a policy node in the [SharedPC configuration service provider](/windows/client-management/mdm/sharedpc-csp).
