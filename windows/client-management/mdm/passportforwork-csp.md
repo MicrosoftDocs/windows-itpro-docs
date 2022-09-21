@@ -318,7 +318,7 @@ Enhanced sign-in security will be disabled on all systems, enabling the use of p
 
 Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any biometric device that Enhanced Sign-in Security does not support, including that of peripheral devices, will be blocked and not available for Windows Hello.
 
-If you disable or do not configure this policy then Enhanced Sign-in Security is preferred on the device. The behavior will be same as enabling the policy and setting value to 1.
+If you disable or do not configure this policy, Enhanced Sign-in Security is preferred on the device. The behavior will be the same as enabling the policy and setting the value to 1.
 
 Supported operations are Add, Get, Delete, and Replace.
 
