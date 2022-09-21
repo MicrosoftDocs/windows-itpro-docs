@@ -314,7 +314,7 @@ If you enable this policy it can have the following possible values:
 
 Enhanced sign-in security will be disabled on all systems, enabling the use of peripheral biometric authentication. If this policy value is set to 0 after users have enrolled in ESS biometrics, users will be prompted to reset their PIN. They will lose all their existing biometric enrollments. To use biometrics they will have to enroll again. 
 
-1 - Enhanced Sign-in Security Enabled (default and recommended for highest security)
+**1 - Enhanced Sign-in Security Enabled** (default and recommended for highest security)
 
 Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any biometric device that Enhanced Sign-in Security does not support, including that of peripheral devices, will be blocked and not available for Windows Hello.
 
