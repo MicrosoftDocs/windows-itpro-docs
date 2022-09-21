@@ -92,7 +92,7 @@ The XML below is the current version for this CSP.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Provides the current status of the device health request.  For the complete list of status see https://docs.microsoft.com/en-us/windows/client-management/mdm/healthattestation-csp#device-healthattestation-csp-status-and-error-codes</Description>
+            <Description>Provides the current status of the device health request.  For the complete list of status see https://learn.microsoft.com/windows/client-management/mdm/healthattestation-csp#device-healthattestation-csp-status-and-error-codes</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -456,9 +456,3 @@ The XML below is the current version for this CSP.
  
 
  
-
-
-
-
-
-

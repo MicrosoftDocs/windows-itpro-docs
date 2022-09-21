@@ -247,6 +247,30 @@ The XML below if for Windows 10, version 1803.
                             </DFType>
                         </DFProperties>
                     </Node>
+                    <Node>
+                        <NodeName>IsDiscoveryServer</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DefaultValue>false</DefaultValue>
+                            <Description>Indicates whether the server is a discovery server. Optional, default value is false.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
                 </Node>
             </Node>
             <Node>
