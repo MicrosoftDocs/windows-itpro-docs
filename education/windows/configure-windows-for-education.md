@@ -139,7 +139,7 @@ For example:
 - [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) 
     - Under **Runtime settings**, click the **SharedPC** settings group, set **PolicyCustomization > SetEduPolicies** to **True**.
 
-        ![Set SetEduPolicies to True in Windows Configuration Designer.](images/setedupolicies_wcd.png)
+        ![Set SetEduPolicies to True in Windows Configuration Designer.](images/wcd/setedupolicies.png)
 
 ## Ad-free search with Bing
 Provide an ad-free experience that is a safer, more private search option for K–12 education institutions in the United States. 

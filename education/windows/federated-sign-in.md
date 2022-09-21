@@ -12,7 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE 22H2</b>
+- ✅ <b>Windows 11 SE, version 22H2</b>
 ---
 
 <!-- MAXADO-6286399 -->
@@ -22,8 +22,8 @@ Starting in **Windows 11 SE, version 22H2**, you can enable your users to sign-i
 
 ## Benefits of federated sign-in
 
-With federated sign-in, students can sign-in in less time, and with less friction.
-Fewer credentials to remember and a simplified sign-in process, enable students to be more engaged and focused on learning.
+Federated sign-in enables students to sign-in in less time, and with less friction.
+With fewer credentials to remember and a simplified sign-in process, students are more engaged and focused on learning.
 
 ## Prerequisites
 
@@ -35,12 +35,11 @@ To implement federated sign-in, the following prerequisites must be met:
 1. Licenses assigned to the Azure AD user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Azure AD, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Azure Active Directory][AZ-2]
 1. Enable federated sign-in on the Windows devices that the users will be using
     > [!IMPORTANT]
-    > This feature is exclusively available for Windows 11 SE, version 22H2.
-1. The Windows devices must have *shared PC mode* disabled
+    > This feature is exclusively available for Windows 11 SE, version 22H2
 
 ## Enable federated sign-in on devices
 
-Before you can sign-in with a federated IdP, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+Before you can sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -54,7 +53,7 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Data type: **String** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that re llowed to use the webcam during the sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableSharedPCMode`** </li><li>Data type: **Boolean** </li><li>Value: **False**</li>|
 
-:::image type="content" source="images/federated-authentication-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-authentication-settings-intune.png" border="true":::
+:::image type="content" source="images/federated-sign-in-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-intune.png" border="true":::
 
 Assign the policy to a security group that contains as members the devices that require federated sign-in.
 
@@ -70,7 +69,7 @@ To configure federated sign-in using a provisioning package, use the following s
 | <li> Path: **`Policies/Authentication/ConfigureWebCamAccessDomainNames`** </li><li>Value: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during he sign-in process, separated by a semicolon. For example: **`clever.com`**</li>|
 | <li> Path: **`SharedPC/EnableSharedPCMode`** </li><li>Value: **False**</li>|
 
-:::image type="content" source="images/federated-authentication-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/edu-federated-authentication-settings.png" border="true":::
+:::image type="content" source="images/federated-sign-in-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-ppkg.png" border="true":::
 
 Apply the provisioning package to the devices that require federated sign-in.
 
@@ -80,9 +79,9 @@ Apply the provisioning package to the devices that require federated sign-in.
 
 Once the devices are configured, a new sign-in experience becomes available.
 
-As the end users enters their username, they will be redirected to the IdP sign-in page. Once the user is authenticated, they will be redirected back to the device, and the user will be signed-in.
+As the end users enters their username, they will be redirected to the identity provider sign-in page. Once users are authenticated by the IdP, they will be be signed-in. In the following animation, you can see how the first sign-in process works:
 
-:::image type="content" source="./images/federated-sign-in.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="true":::
+:::image type="content" source="./images/federated-sign-in-windows-se.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge." border="true":::
 
 > [!IMPORTANT]
 > Once the policy is enabled, the first user to sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
