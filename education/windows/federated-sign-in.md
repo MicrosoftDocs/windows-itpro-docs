@@ -18,7 +18,7 @@ appliesto:
 <!-- MAXADO-6286399 -->
 # Configure federated sign-in for Windows 11 SE
 
-Starting in **Windows 11 SE, version 22H2**, you can enable your users to sign-in using a third-party SAML 2.0 identity provider (IdP). This feature is called **federated sign-in**. Federated sign-in is a great way to simplify the sign-in process for your users. Instead of having to remember a username and password, they can sign-in using their existing credentials from the IdP. For example, students and educators can use picture passwords or QR code badges to sign-in.
+Starting in **Windows 11 SE, version 22H2**, you can enable your users to sign-in using a SAML 2.0 identity provider (IdP). This feature is called **federated sign-in**. Federated sign-in is a great way to simplify the sign-in process for your users: instead of having to remember a username and password defined in Azure AD, they can sign-in using their existing credentials from the IdP. For example, students and educators can use picture passwords or QR code badges to sign-in.
 
 ## Benefits of federated sign-in
 
@@ -43,7 +43,7 @@ To use federated sign-in, the devices must have Internet access. This feature wo
 
 ## Enable federated sign-in on devices
 
-To sign-in with a federated identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -91,10 +91,10 @@ As the end users enter their username, they'll be redirected to the identity pro
 ## Important considerations
 
 - Network and Accessibility menus aren't available in the web sign-in flow.  They can be accessed on the standard Windows sign-in page. While in the web sign-in flow, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> and the classic Windows sign-in UI will be shown, along with the buttons that launch those menus.  
-- Federated sign-in doesn't work on devices that have enabled the following features enabled:
+- Federated sign-in doesn't work on devices that have the following features enabled:
     - **EnableSharedPCMode**, which is part of the [SharedPC CSP][WIN-1]
     - **PreferredAadTenantDomainName**, which is part of the [Authentication CSP][WIN-2]
-    - **Take a Test** (IN PROGESS VERIFICATION)
+    - **Take a Test**
 
 ## Troubleshooting
 
