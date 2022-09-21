@@ -306,7 +306,7 @@ Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="biometrics-enableESSwithSupportedPeripherals--only-for---device-vendor-msft-"></a>**Biometrics/EnableESSwithSupportedPeripherals** (only for ./Device/Vendor/MSFT)  
 
-If this policy is enabled, Windows Hello authentication using peripheral biometric sensors will be blocked. Any non-authentication operational functionalities such as camera usage (video calls, camera etc.) will be unaffected.
+If this policy is enabled, Windows Hello authentication using peripheral biometric sensors will be blocked. Any non-authentication operational functionalities such as camera usage (for instance, video calls and the camera) will be unaffected.
 
 If you enable this policy then it can have following possible values:
 
