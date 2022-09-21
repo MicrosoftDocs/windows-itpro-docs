@@ -19,6 +19,9 @@ The Local Administrator Password Solution (LAPS) configuration service provider 
 > [!IMPORTANT]
 > Windows LAPS is currently only available in Windows Insider builds as of 25145 and later. Support for the Windows LAPS Azure AD scenario is currently limited to a small group of Windows Insiders.
 
+> [!TIP]
+> This article covers the specific technical details of the LAPS CSP. Review the [Windows LAPS](/windows-server/identity/laps/laps) documentation for more details about the scenarios in which the LAPS CSP would be used.
+
 The following example shows the LAPS CSP in tree format.
 
 ```xml
@@ -231,7 +234,7 @@ Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 ### PasswordExpirationProtectionEnabled
 <!--Description-->
-Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.
+Use this setting to configure enforcement of maximum password age for the managed local administrator account.
 <!--/Description-->
 
 <!--SupportedSKUs-->
@@ -758,3 +761,5 @@ This example is configuring a hybrid device to back up its password to Active Di
 ## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
+
+[Windows LAPS](/windows-server/identity/laps/laps)
