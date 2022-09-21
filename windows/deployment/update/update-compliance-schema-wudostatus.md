@@ -1,11 +1,11 @@
 ---
 title: Update Compliance Schema - WUDOStatus
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: WUDOStatus schema
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ---
