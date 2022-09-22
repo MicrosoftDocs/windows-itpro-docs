@@ -2,7 +2,7 @@
 title: Local Administrator Password Solution CSP
 description: Learn how the Local Administrator Password Solution configuration service provider (CSP) is used by the enterprise to manage backup of local administrator account passwords.
 ms.author: jsimmons
-author: jsimmons
+author: jay98014
 ms.reviewer: vinpa
 manager: aaroncz
 ms.topic: reference
