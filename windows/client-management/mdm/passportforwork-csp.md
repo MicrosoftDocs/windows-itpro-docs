@@ -83,7 +83,8 @@ PassportForWork
 -------UseBiometrics
 -------Biometrics
 ----------UseBiometrics
-----------FacialFeatureUse
+----------FacialFeaturesUseEnhancedAntiSpoofing
+----------EnableESSwithSupportedPeripherals
 -------DeviceUnlock
 ----------GroupA
 ----------GroupB
@@ -286,8 +287,6 @@ Boolean value used to enable or disable the use of biometric gestures, such as f
 
 Default value is true, enabling the biometric gestures for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
 
-
-
 Supported operations are Add, Get, Delete, and Replace.
 
 *Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
@@ -304,6 +303,26 @@ Enhanced anti-spoofing for Windows Hello face authentication isn't required on u
 Supported operations are Add, Get, Delete, and Replace.
 
 *Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
+
+<a href="" id="biometrics-enableESSwithSupportedPeripherals--only-for---device-vendor-msft-"></a>**Biometrics/EnableESSwithSupportedPeripherals** (only for ./Device/Vendor/MSFT)  
+
+If this policy is enabled, Windows Hello authentication using peripheral biometric sensors will be blocked. Any non-authentication operational functionalities such as camera usage (for instance, video calls and the camera) will be unaffected.
+
+If you enable this policy it can have the following possible values:
+
+**0 - Enhanced Sign-in Security Disabled** (not recommended)
+
+Enhanced sign-in security will be disabled on all systems, enabling the use of peripheral biometric authentication. If this policy value is set to 0 after users have enrolled in ESS biometrics, users will be prompted to reset their PIN. They will lose all their existing biometric enrollments. To use biometrics they will have to enroll again. 
+
+**1 - Enhanced Sign-in Security Enabled** (default and recommended for highest security)
+
+Enhanced sign-in security will be enabled on systems with capable software and hardware, following the existing default behavior in Windows. Authentication operations of any biometric device that Enhanced Sign-in Security does not support, including that of peripheral devices, will be blocked and not available for Windows Hello.
+
+If you disable or do not configure this policy, Enhanced Sign-in Security is preferred on the device. The behavior will be the same as enabling the policy and setting the value to 1.
+
+Supported operations are Add, Get, Delete, and Replace.
+
+*Supported from Windows 11 version 22H2*
 
 <a href="" id="deviceunlock"></a>**DeviceUnlock** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1803. Interior node.
@@ -551,7 +570,7 @@ Here's an example for setting Windows Hello for Business and setting the PIN pol
                 <Data>true</Data>
               </Item>
             </Add>
-    <Add>
+            <Add>
               <CmdID>15</CmdID>
               <Item>
                 <Target>
@@ -564,6 +583,21 @@ Here's an example for setting Windows Hello for Business and setting the PIN pol
                   <Type>text/plain</Type>
                 </Meta>
                 <Data>true</Data>
+              </Item>
+            </Add>
+            <Add>
+              <CmdID>16</CmdID>
+              <Item>
+                <Target>
+                  <LocURI>
+                    ./Vendor/MSFT/PassportForWork/Biometrics/EnableESSwithSupportedPeripherals
+                  </LocURI>
+                </Target>
+                <Meta>
+                  <Format xmlns="syncml:metinf">int</Format>
+                  <Type>text/plain</Type>
+                </Meta>
+                <Data>0</Data>
               </Item>
             </Add>
             <Final/> 
