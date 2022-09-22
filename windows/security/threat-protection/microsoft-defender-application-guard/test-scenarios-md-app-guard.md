@@ -110,9 +110,8 @@ You have the option to change each of these settings to work with your enterpris
 
 **Applies to:**
 
-- Windows 10 Enterprise edition, version 1709 or higher
-- Windows 10 Professional edition, version 1803
-- Windows 11
+- Windows 10 Enterprise or Professional edition, version 1803 or higher
+- Windows 11 Enterprise or Professional edition
 
 #### Copy and paste options
 
@@ -171,17 +170,16 @@ You have the option to change each of these settings to work with your enterpris
     The previously added site should still appear in your **Favorites** list.
 
     > [!NOTE]
-    > If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10 and Windows 11.
+    > Starting with Windows 11 22H2, data persistance is disabled by default. If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10 and Windows 11.
     >
     > If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.
     > <!--- Inline HTML is used on the next several lines so that the ordinal numbers will be rendered correctly; Markdown would otherwise try to render them as letters (a, b, c...) because they would be treated as a nested list --->
-    > **To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data.
+    > **To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data. **Microsoft Edge version 90 or higher no longer RESET_PERSISTENCE_LAYER**
 
 **Applies to:**
 
-- Windows 10 Enterprise edition, version 1803
-- Windows 10 Professional edition, version 1803
-- Windows 11
+- Windows 10 Enterprise or Professional edition, version 1803
+- Windows 11 Enterprise or Professional edition, version 21H2. Data peristance is disabled by default in newer versions of Windows 11. 
 
 #### Download options
 
@@ -209,11 +207,6 @@ You have the option to change each of these settings to work with your enterpris
 
 4. Assess the visual experience and battery performance.
 
-**Applies to:**
-
-- Windows 10 Enterprise edition, version 1809
-- Windows 10 Professional edition, version 1809
-- Windows 11
 
 #### Camera and microphone options
 
