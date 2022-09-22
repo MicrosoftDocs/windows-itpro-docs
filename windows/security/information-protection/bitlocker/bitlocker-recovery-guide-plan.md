@@ -284,9 +284,9 @@ Windows Recovery Environment (RE) can be used to recover access to a drive prote
 
 Windows Recovery Environment (WinRE) will also ask for your BitLocker recovery key when you initiate a “Remove everything” reset from WinRE on a PC that uses "TPM+PIN" or "Password for OS drive" protector. Additionally, if BitLocker recovery is triggered on a keyboardless device with TPM-only protection, the WinRE environment, not the boot manager, will ask for the BitLocker Recovery key.  Once you've entered the key you should be able to access Win RE troubleshooting tools or start Windows normally.
 
-The BitLocker recovery screen that is shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help people enter their BitLocker recovery key. Those tools may not be available if the BitLocker recovery key is requested by the Windows boot manager.
+The BitLocker recovery screen that is shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help you enter your BitLocker recovery key. Those tools might not be available if the BitLocker recovery key is requested by the Windows boot manager.
 
-To activate narrator during BitLocker Recovery in WinRE press Win + CTRL + ENTER
+To activate narrator during BitLocker Recovery in WinRE, press Win + CTRL + ENTER
 To activate on-screen keyboard, tap on a text input control.
 
 
