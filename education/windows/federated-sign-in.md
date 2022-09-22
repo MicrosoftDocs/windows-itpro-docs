@@ -94,7 +94,8 @@ As the end users enter their username, they'll be redirected to the identity pro
 - Federated sign-in doesn't work on devices that have the following features enabled:
     - **EnableSharedPCMode**, which is part of the [SharedPC CSP][WIN-1]
     - **PreferredAadTenantDomainName**, which is part of the [Authentication CSP][WIN-2]
-    - **Take a Test**
+    - The security policy **Interactive logon: do not display last signed in**, which is part of the [Policy CSP][WIN-3]
+    - **Take a Test**, since it leverages the security policy above
 
 ## Troubleshooting
 
@@ -105,6 +106,7 @@ As the end users enter their username, they'll be redirected to the identity pro
 
 [WIN-1]: /windows/client-management/mdm/sharedpc-csp
 [WIN-2]: /windows/client-management/mdm/policy-csp-authentication
+[WIN-3]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 
