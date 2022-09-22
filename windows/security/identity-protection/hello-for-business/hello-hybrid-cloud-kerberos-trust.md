@@ -254,7 +254,7 @@ Windows Hello for Business cloud Kerberos trust looks for a writeable DC to exch
 
 Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller for some scenarios:
 - The first sign-in or unlock with Windows Hello for Business after provisioning
-- When attempting to access an on-premises resource on a Hybrid Azure AD joined
+- When attempting to access an on-premises resource from a Hybrid Azure AD joined device
 
 ### Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
 
