@@ -1530,14 +1530,6 @@ Select the correct version of each .dll for the Windows release you plan to supp
 > [!NOTE]
 > To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
 
-## Smart App Control Considerations
-Smart App Control enforces the Microsoft Recommended Block Rules above, with a few exceptions for compatibility considerations. The following are not blocked by Smart App Control: 
-
-- Infdefaultinstall.exe
-- Microsoft.Build.dll
-- Microsoft.Build.Framework.dll
-- Wslhost.dll
-
 ## More information
 
 - [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)
