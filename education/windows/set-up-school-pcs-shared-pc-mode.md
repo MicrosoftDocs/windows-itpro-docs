@@ -63,7 +63,7 @@ To create a compatible image, first create your custom Windows image with all so
 Teachers can then run the Set up School PCs package on the computer.  
 
 ## Optimize device for use by a single student
-Shared PC mode is enabled by default. This mode optimizes device settings for schools where PCs are shared by students.  The  Set up School PCs app also offers the option to configure settings for devices that aren't shared.
+Shared PC mode is enabled by default. This mode optimizes device settings for schools where PCs are shared by students. The  Set up School PCs app also offers the option to configure settings for devices that aren't shared.
   
 If you select this setting, the app modifies shared PC mode so that it's appropriate for a single device. To see how the settings differ, refer to the Shared PC mode policy table in the article [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)  
 1. In the app, go to the **Create package** > **Settings** step. 
