@@ -1,7 +1,7 @@
 ---
 title: Set up School PCs app technical reference overview
 description: Describes the purpose of the Set up School PCs app for Windows 10 devices.
-keywords: shared cart, shared PC, school, set up school pcs
+keywords: shared PC, school, set up school pcs
 ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
