@@ -19,7 +19,7 @@ Windows 11, version 22H2 is a feature update for Windows 11. It includes all fea
 
 Windows 11, version 22H2 follows the [Windows 11 servicing timeline](/lifecycle/faq/windows#windows-11):
 
-- **Windows 11 Professional**: Serviced for 24 months from the release date.
+- **Windows 11 Pro**: Serviced for 24 months from the release date.
 - **Windows 11 Enterprise**: Serviced for 36 months from the release date.
 
 Windows 11, version 22H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 11, version 22H2 update](https://aka.ms/W11/how-to-get-22H2). Review the [Windows 11, version 22H2 Windows IT Pro blog post](https://aka.ms/new-in-22H2) to discover information about available deployment resources such as the [Windows Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install).
@@ -43,7 +43,7 @@ For more information, see [Enhanced Phishing Protection in Microsoft Defender Sm
 <!-- 6286281-->
 **Smart App Control** adds significant protection from malware, including new and emerging threats, by blocking apps that are malicious or untrusted. **Smart App Control** also helps to block potentially unwanted apps, which are apps that may cause your device to run slowly, display unexpected ads, offer extra software you didn't want, or do other things you don't expect.
 
-For more information, see [Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control.md#wdac-and-smart-app-control).
+For more information, see [Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control#wdac-and-smart-app-control).
 
 ## Credential Guard
 <!--6289166-->

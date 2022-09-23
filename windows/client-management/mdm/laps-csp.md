@@ -2,14 +2,14 @@
 title: Local Administrator Password Solution CSP
 description: Learn how the Local Administrator Password Solution configuration service provider (CSP) is used by the enterprise to manage backup of local administrator account passwords.
 ms.author: jsimmons
-ms.topic: article
-ms.prod: w11
-ms.technology: windows
-author: jsimmons
+author: jay98014
+ms.reviewer: vinpa
+manager: aaroncz
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
 ms.localizationpriority: medium
-ms.date: 07/04/2022
-ms.reviewer: jsimmons
-manager: jsimmons
+ms.date: 09/20/2022
 ---
 
 # Local Administrator Password Solution CSP
@@ -18,6 +18,9 @@ The Local Administrator Password Solution (LAPS) configuration service provider 
 
 > [!IMPORTANT]
 > Windows LAPS is currently only available in Windows Insider builds as of 25145 and later. Support for the Windows LAPS Azure AD scenario is currently limited to a small group of Windows Insiders.
+
+> [!TIP]
+> This article covers the specific technical details of the LAPS CSP.  For more information about the scenarios in which the LAPS CSP would be used, see [Windows Local Administrator Password Solution](/windows-server/identity/laps/laps).
 
 The following example shows the LAPS CSP in tree format.
 
@@ -231,7 +234,7 @@ Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 ### PasswordExpirationProtectionEnabled
 <!--Description-->
-Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.
+Use this setting to configure enforcement of maximum password age for the managed local administrator account.
 <!--/Description-->
 
 <!--SupportedSKUs-->
@@ -758,3 +761,5 @@ This example is configuring a hybrid device to back up its password to Active Di
 ## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
+
+[Windows LAPS](/windows-server/identity/laps/laps)
