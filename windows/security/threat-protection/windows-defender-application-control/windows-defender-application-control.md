@@ -58,16 +58,17 @@ Smart App Control is only available on clean installation of Windows 11 version 
 | 1     | Enforce     |
 | 2     | Evaluation  |
 
+> [!IMPORTANT]
+> Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
+
 ### Smart App Control Enforced Blocks
+
 Smart App Control enforces the [Microsoft Recommended Driver Block rules](microsoft-recommended-driver-block-rules.md) and the [Microsoft Recommended Block Rules](microsoft-recommended-block-rules.md), with a few exceptions for compatibility considerations. The following are not blocked by Smart App Control: 
 
 - Infdefaultinstall.exe
 - Microsoft.Build.dll
 - Microsoft.Build.Framework.dll
 - Wslhost.dll
-
-> [!IMPORTANT]
-> Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
 ## Related articles
 
