@@ -290,7 +290,7 @@ The BitLocker recovery screen that's shown by Windows RE has the accessibility t
 To activate the narrator during BitLocker recovery in Windows RE, press **Windows** + **CTRL** + **Enter**.
 To activate the on-screen keyboard, tap on a text input control.
 
-(./images/bl-narrator.png)
+:::image type="content" source="images/bl-narrator.png" alt-text="A screenshot of the BitLocker recovery screen showing Narrator activated.":::
 
 ## BitLocker recovery screen
 
