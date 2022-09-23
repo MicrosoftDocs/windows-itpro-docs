@@ -60,7 +60,7 @@ The following table lists all the applications included in Windows 11 SE and the
 | File Explorer                | Win32    |                  | ✅                |
 | FlipGrid                     | PWA      |                  |                    |
 | Get Help                     | UWP      |                  |                    |
-| Groove Music                 | UWP      | ✅              |                    |
+| Media Player                 | UWP      | ✅              |                    |
 | Maps                         | UWP      |                  |                    |
 | Minecraft: Education Edition | UWP      |                  |                    |
 | Movies & TV                  | UWP      |                  |                    |
