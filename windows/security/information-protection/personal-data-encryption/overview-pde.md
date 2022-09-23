@@ -1,6 +1,6 @@
 ---
 title: Personal Data Encryption (PDE)
-description: Personal Data Encryption unlocks user encrypted files at user sign in instead of at boot.
+description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
 
 author: frankroj
 ms.author: frankroj
@@ -95,7 +95,7 @@ For information on enabling PDE via Intune, see [Enable Personal Data Encryption
 | Item | PDE | BitLocker |
 |--|--|--|
 | Release of key | At user sign-in via Windows Hello for Business | At boot |
-| Keys discarded | At user sign out | At reboot |
+| Keys discarded | At user sign-out | At reboot |
 | Files encrypted | Individual specified files | Entire volume/drive |
 | Authentication to access encrypted file | Windows Hello for Business | When BitLocker with PIN is enabled, BitLocker PIN plus Windows sign in |
 | Accessibility | Windows Hello for Business is accessibility friendly | BitLocker with PIN doesn't have accessibility features |
