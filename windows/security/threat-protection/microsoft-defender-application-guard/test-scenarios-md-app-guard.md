@@ -179,7 +179,7 @@ You have the option to change each of these settings to work with your enterpris
 **Applies to:**
 
 - Windows 10 Enterprise or Professional edition, version 1803
-- Windows 11 Enterprise or Professional edition, version 21H2. Data peristance is disabled by default in newer versions of Windows 11. 
+- Windows 11 Enterprise or Professional edition, version 21H2. Data persistence is disabled by default in newer versions of Windows 11. 
 
 #### Download options
 
