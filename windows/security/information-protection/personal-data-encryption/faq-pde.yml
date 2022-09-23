@@ -38,7 +38,7 @@ sections:
 
       - question: What is the relation between Windows Hello for Business and PDE?
         answer: |
-          During user sign on, Windows Hello for Business unlocks the keys that PDE uses to decrypt files.
+          During user sign-on, Windows Hello for Business unlocks the keys that PDE uses to decrypt files.
 
       - question: Can a file be encrypted with both PDE and EFS at the same time?
         answer: |

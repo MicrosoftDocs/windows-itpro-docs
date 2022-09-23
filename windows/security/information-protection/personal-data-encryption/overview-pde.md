@@ -94,7 +94,7 @@ For information on enabling PDE via Intune, see [Enable Personal Data Encryption
 
 | Item | PDE | BitLocker |
 |--|--|--|
-| Release of key | At user sign in via Windows Hello for Business | At boot |
+| Release of key | At user sign-in via Windows Hello for Business | At boot |
 | Keys discarded | At user sign out | At reboot |
 | Files encrypted | Individual specified files | Entire volume/drive |
 | Authentication to access encrypted file | Windows Hello for Business | When BitLocker with PIN is enabled, BitLocker PIN plus Windows sign in |
