@@ -401,6 +401,14 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_MHYPROT2_1A" FriendlyName="mhyprot2.sys\B8B94C2646B62F6AC08F16514B6EFAA9866AA3C581E4C0435A7AEAFE569B2418 Hash Sha256" Hash="8CED17D1EE92AE72749AFDFE40F5029223D97F0F977E718BD5AB1242D1FF7CB5" />
     <Deny ID="ID_DENY_MHYPROT2_1B" FriendlyName="mhyprot2.sys\B8B94C2646B62F6AC08F16514B6EFAA9866AA3C581E4C0435A7AEAFE569B2418 Hash Page Sha1" Hash="1C843C256936E700CEDE3DD444E1B6714EFF4E8B" />
     <Deny ID="ID_DENY_MHYPROT2_1C" FriendlyName="mhyprot2.sys\B8B94C2646B62F6AC08F16514B6EFAA9866AA3C581E4C0435A7AEAFE569B2418 Hash Page Sha256" Hash="84516365771430545C4D7D950B0F0699EC1573F316EF787983081F027E8A1FC5" />
+	<Deny ID="ID_DENY_MHYPROT2_21" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Sha1" Hash="C771EA59F075170E952C393CFD6FC784B265027C" />
+    <Deny ID="ID_DENY_MHYPROT2_22" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Sha256" Hash="39937D239220C1B779D7D55613DE2C0A48BD6E12E0214DA4C65992B96CF591DF" />
+    <Deny ID="ID_DENY_MHYPROT2_23" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Page Sha1" Hash="CB44C6F0EE51CB4C5836499BC61DD6C1FBDF8AA1" />
+    <Deny ID="ID_DENY_MHYPROT2_24" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Page Sha256" Hash="7ED26A593524A2A92FFCFB075A42BB4FA4775FFBF83AF98525244A4710886EAD" />
+    <Deny ID="ID_DENY_MHYPROT2_25" FriendlyName="mhyprot.sys\8eed6b4a1e6f7dd66807beeb6ff71f8b34cd8c7777f1e31d326cb87593e8f836 Hash Sha1" Hash="0918277FCDC64A9DC51C04324377B3468FA1269B" />
+    <Deny ID="ID_DENY_MHYPROT2_26" FriendlyName="mhyprot.sys\8eed6b4a1e6f7dd66807beeb6ff71f8b34cd8c7777f1e31d326cb87593e8f836 Hash Sha256" Hash="AA717E9AB4D614497DF19F602D289A6EDDCDBA8027C71BCC807780A219347D16" />
+    <Deny ID="ID_DENY_MHYPROT2_27" FriendlyName="mhyprot.sys\8eed6b4a1e6f7dd66807beeb6ff71f8b34cd8c7777f1e31d326cb87593e8f836 Hash Page Sha1" Hash="B09BCC042D60D2F4C0D08284818ED198CEDEDA04" />
+    <Deny ID="ID_DENY_MHYPROT2_28" FriendlyName="mhyprot.sys\8eed6b4a1e6f7dd66807beeb6ff71f8b34cd8c7777f1e31d326cb87593e8f836 Hash Page Sha256" Hash="FF5F6048A3D6F6738B60E911E3876FCBDC9A02EC9862F909345C8A50FD4CC0A7" />
     <Deny ID="ID_DENY_MHYPROT3_1" FriendlyName="mhyprot3.sys\24E70C87D58FA5771F02B9DDF0D8870CBA6B26E35C6455A2C77F482E2080D3E9 Hash Sha1" Hash="E19E10D97D7ECD4A4376196F7E3DFA2365872867" />
     <Deny ID="ID_DENY_MHYPROT3_2" FriendlyName="mhyprot3.sys\24E70C87D58FA5771F02B9DDF0D8870CBA6B26E35C6455A2C77F482E2080D3E9 Hash Sha256" Hash="5A021532F0AC453256526428CCF3518CDBA4C6373CC72F340BA208B6C41B3A9E" />
     <Deny ID="ID_DENY_MHYPROT3_3" FriendlyName="mhyprot3.sys\24E70C87D58FA5771F02B9DDF0D8870CBA6B26E35C6455A2C77F482E2080D3E9 Hash Page Sha1" Hash="25C88C4312C3120547FE62EBF5E56FF1174AAFBC" />
@@ -765,9 +773,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_MYDRIVERS" FriendlyName="mydrivers.sys FileAttribute" FileName="mydrivers.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_NCHGBIOS2X64" FriendlyName="" FileName="NCHGBIOS2x64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.2.4.0" />
-    <FileAttrib ID="ID_FILEATTRIB_NCPL_DRIVER_1" FriendlyName="" FileName="NCPL.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-    <FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-    <FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NCPL_DRIVER_1" FriendlyName="" FileName="NCPL.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
     <FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_NVFLASH" FriendlyName="Nvidia NVFlash FileAttribute" FileName="nvflash.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.9.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_PANIO_1" FriendlyName="PanIOx64\6b830ea0db6546a044c9900d3f335e7820c2a80e147b0751641899d1a5aa8f74 FileAttribute" FileName="PanIOx64.sys" MinimumFileVersion="1.0.0.1" />
@@ -1792,6 +1800,14 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_1A" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_1B" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_1C" />
+		  <FileRuleRef RuleID="ID_DENY_MHYPROT2_21" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_22" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_23" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_24" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_25" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_26" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_27" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_28" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT3_1" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT3_2" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT3_3" />
