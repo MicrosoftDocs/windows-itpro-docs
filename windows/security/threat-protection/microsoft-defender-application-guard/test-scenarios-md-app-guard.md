@@ -207,7 +207,6 @@ You have the option to change each of these settings to work with your enterpris
 
 4. Assess the visual experience and battery performance.
 
-
 #### Camera and microphone options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow camera and microphone access in Microsoft Defender Application Guard** setting.
