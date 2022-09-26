@@ -535,6 +535,12 @@ Most secure value is 0 if all policy values = 0; otherwise, Min policy value is 
 For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP Friendly name: *Interactive logon: Machine account lockout threshold*
+-   GP path: *Windows Settings\Security Settings\LocalPolicies\Security Options*
+
+<!--/RegistryMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
