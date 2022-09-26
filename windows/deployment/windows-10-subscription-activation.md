@@ -56,7 +56,7 @@ Organizations that have an enterprise agreement can also benefit from the servic
 
 ## Subscription activation for Education
 
-Subscription activation for Education works the same as the Enterprise edition, but in order to use subscription activation for Education, you must have a device running Windows Pro Education and an active subscription plan with an Enterprise license. For more information, see the [requirements](#windows-1011-education-requirements) section.
+Subscription activation for Education works the same as the Enterprise edition, but in order to use subscription activation for Education, you must have a device running Windows Pro Education and an active subscription plan with an Enterprise license. For more information, see the [requirements](#windows-education-requirements) section.
 
 ## Inherited activation
 
