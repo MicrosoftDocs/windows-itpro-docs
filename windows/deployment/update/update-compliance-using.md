@@ -1,11 +1,11 @@
 ---
 title: Using Update Compliance
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: Learn how to use Update Compliance to monitor your device's Windows updates.
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article

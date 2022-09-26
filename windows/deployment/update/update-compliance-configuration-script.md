@@ -1,7 +1,7 @@
 ---
 title: Update Compliance Configuration Script
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: Downloading and using the Update Compliance Configuration Script
 ms.prod: w10
 author: mestew
