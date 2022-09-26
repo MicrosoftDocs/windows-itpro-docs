@@ -1,12 +1,13 @@
 ---
-title: BitLocker recovery guide (Windows 10)
-description: This article for IT professionals describes how to recover BitLocker keys from AD DS.
-ms.reviewer:
-ms.prod: m365-security
+title: BitLocker recovery guide
+description: This article for IT professionals describes how to recover BitLocker keys from Active Directory Domain Services (AD DS).
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: frankroj
+ms.author: frankroj
+ms.reviewer: rafals
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri
@@ -21,11 +22,11 @@ ms.custom: bitlocker
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and above
+- Windows Server 2016 and later
 
 This topic describes how to recover BitLocker keys from AD DS.
 
-Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It is recommended to create a recovery model for BitLocker while you are planning your BitLocker deployment.
+Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It's recommended to create a recovery model for BitLocker while you are planning your BitLocker deployment.
 
 This article assumes that you understand how to set up AD DS to back up BitLocker recovery information automatically, and what types of recovery information are saved to AD DS.
 
@@ -44,7 +45,7 @@ BitLocker recovery is the process by which you can restore access to a BitLocker
 
 The following list provides examples of specific events that will cause BitLocker to enter recovery mode when attempting to start the operating system drive:
 
-- On PCs that use BitLocker Drive Encryption, or on devices such as tablets or phones that use [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md) only, when an attack is detected, the device will immediately reboot and enter into BitLocker recovery mode. To take advantage of this functionality, administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** in the Local Group Policy Editor. Or they can use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) (also configurable through [Microsoft Intune](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/microsoft-intune)), to limit the number of failed password attempts before the device goes into Device Lockout.
+- On PCs that use BitLocker Drive Encryption, or on devices such as tablets or phones that use [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md) only, when an attack is detected, the device will immediately reboot and enter into BitLocker recovery mode. To take advantage of this functionality, administrators can set the **Interactive logon: Machine account lockout threshold** Group Policy setting located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options** in the Local Group Policy Editor. Or they can use the **MaxFailedPasswordAttempts** policy of [Exchange ActiveSync](/Exchange/clients/exchange-activesync/exchange-activesync) (also configurable through [Microsoft Intune](/mem/intune)), to limit the number of failed password attempts before the device goes into Device Lockout.
 - On devices with TPM 1.2, changing the BIOS or firmware boot device order causes BitLocker recovery. However, devices with TPM 2.0 do not start BitLocker recovery in this case. TPM 2.0 does not consider a firmware change of boot device order as a security threat because the OS Boot Loader is not compromised.
 - Having the CD or DVD drive before the hard drive in the BIOS boot order and then inserting or removing a CD or DVD.
 - Failing to boot from a network drive before booting from the hard drive.
@@ -280,7 +281,16 @@ This error might occur if you updated the firmware. As a best practice, you shou
 
 ## Windows RE and its usage in BitLocker Device Encryption
 
-Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair will automatically start. When Startup Repair is launched automatically due to boot failures, it will only execute operating system and driver file repairs, provided that the boot logs or any available crash dump point to a specific corrupted file. In Windows 8.1 and later, devices that include firmware to support specific TPM measurements for PCR\[7\] the TPM can validate that Windows RE is a trusted operating environment and will unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example the TPM has been disabled, the drives will stay locked until the BitLocker recovery key is provided. If Startup Repair can't run automatically from the PC and instead Windows RE is manually started from a repair disk, then the BitLocker recovery key must be provided to unlock the BitLocker–protected drives.
+Windows Recovery Environment (Windows RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair will automatically start. When Startup Repair is launched automatically due to boot failures, it will only execute operating system and driver file repairs, provided that the boot logs or any available crash dump point to a specific corrupted file. In Windows 8.1 and later, devices that include firmware to support specific TPM measurements for PCR\[7\] the TPM can validate that Windows RE is a trusted operating environment and will unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example the TPM has been disabled, the drives will stay locked until the BitLocker recovery key is provided. If Startup Repair can't run automatically from the PC and instead Windows RE is manually started from a repair disk, then the BitLocker recovery key must be provided to unlock the BitLocker–protected drives.
+
+Windows RE will also ask for your BitLocker recovery key when you start a "Remove everything" reset from Windows RE on a device that uses the "TPM + PIN" or "Password for OS drive" protector. If you start BitLocker recovery on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, will ask for the BitLocker recovery key. After you enter the key, you can access Windows RE troubleshooting tools or start Windows normally.
+
+The BitLocker recovery screen that's shown by Windows RE has the accessibility tools like narrator and on-screen keyboard to help you enter your BitLocker recovery key. If the BitLocker recovery key is requested by the Windows boot manager, those tools might not be available.
+
+To activate the narrator during BitLocker recovery in Windows RE, press **Windows** + **CTRL** + **Enter**.
+To activate the on-screen keyboard, tap on a text input control.
+
+:::image type="content" source="images/bl-narrator.png" alt-text="A screenshot of the BitLocker recovery screen showing Narrator activated.":::
 
 ## BitLocker recovery screen
 
