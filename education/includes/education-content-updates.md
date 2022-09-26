@@ -2,6 +2,14 @@
 
 
 
+## Week of September 19, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/20/2022 | [Education scenarios Microsoft Store for Education](/education/windows/education-scenarios-store-for-business) | modified |
+
+
 ## Week of September 12, 2022
 
 
@@ -42,11 +50,3 @@
 | 8/31/2022 | [Set up Azure Active Directory](/education/windows/tutorial-school-deployment/set-up-azure-ad) | added |
 | 8/31/2022 | [Set up device management](/education/windows/tutorial-school-deployment/set-up-microsoft-intune) | added |
 | 8/31/2022 | [Troubleshoot Windows devices](/education/windows/tutorial-school-deployment/troubleshoot-overview) | added |
-
-
-## Week of August 15, 2022
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/17/2022 | [For IT administrators get Minecraft Education Edition](/education/windows/school-get-minecraft) | modified |
