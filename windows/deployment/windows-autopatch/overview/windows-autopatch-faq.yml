@@ -71,6 +71,9 @@ sections:
       - question: Can I run Autopatch on my Windows 365 Business Workloads?
         answer: |
           No. Autopatch is only available on enterprise workloads. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
+      - question: Can you change the policies and configurations created by Windows Autopatch?
+        answer: |
+          No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at tenant enrollment](/windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant).
   - name: Update Management
     questions: 
       - question: What systems does Windows Autopatch update?
