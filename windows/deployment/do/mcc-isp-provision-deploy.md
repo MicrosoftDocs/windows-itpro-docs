@@ -92,4 +92,9 @@ Note: 'Prefix count' and 'IP Space' will stop showing 0 when BGP is successfuly 
 <br/>
 <br/>
 
+<<<<<<< HEAD
 If there were no errors, you have set up your cache node. To verify the server is set up correctly, follow the steps verification steps [here](windows\deployment\do\mcc-isp-verify-cache-node.md).
+=======
+8. If there were no errors, you have set up your cache node. To verify the server is set up correctly, follow the steps verification steps [here](windows\deployment\do\mcc-isp-verify-cache-node.md).
+
+>>>>>>> c023d7d15cf06494a2799bdfb23d7674fa5fbb05

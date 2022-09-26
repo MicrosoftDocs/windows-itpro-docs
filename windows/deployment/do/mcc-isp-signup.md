@@ -32,6 +32,7 @@ ms.topic: article
 
 :::image type="content" source="images/searchmcc.png" alt-text="searchmcc":::
 
+
 <br/>
 
 > [!IMPORTANT] 
@@ -54,3 +55,4 @@ After your resource has been created, we need some information to verify you net
 <br/>
 <br/>
 Once verified follow the instruction on [Create Microsoft Connected Cache for ISP](windows\deployment\do\mcc-isp-create.md) to create your cache node.
+

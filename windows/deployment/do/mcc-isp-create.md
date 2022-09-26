@@ -24,6 +24,7 @@ ms.topic: article
 <br/>
 
 > [!IMPORTANT]  
+
 > Before you can create your Microsoft Connected Cache, you will need to complete the sign up process [here](windows\deployment\do\mcc-isp-signup.md).
 
 <br/>
@@ -49,7 +50,6 @@ ms.topic: article
 <br/>
 
 Once your cache node is created follow the instructions on [Provisioning and Deploying MCC](windows\deployment\do\mcc-isp-provision-deploy.md) to provision and deploy the cache node.
-
 
 
 
