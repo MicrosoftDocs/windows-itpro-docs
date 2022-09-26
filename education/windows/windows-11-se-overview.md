@@ -60,7 +60,7 @@ The following table lists all the applications included in Windows 11 SE and the
 | File Explorer                | Win32    |                  | ✅                |
 | FlipGrid                     | PWA      |                  |                    |
 | Get Help                     | UWP      |                  |                    |
-| Groove Music                 | UWP      | ✅              |                    |
+| Media Player                 | UWP      | ✅              |                    |
 | Maps                         | UWP      |                  |                    |
 | Minecraft: Education Edition | UWP      |                  |                    |
 | Movies & TV                  | UWP      |                  |                    |
@@ -87,7 +87,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Application                             | Supported version | App Type | Vendor                       |
 |-----------------------------------------|-------------------|----------|------------------------------|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
-| Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies |
+| Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
 | Brave Browser                           | 1.34.80           | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
@@ -112,7 +112,8 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Kite Student Portal                     | 8.0.3.0           | Win32    | Dynamic Learning Maps        |
 | Kortext                                 | 2.3.433.0         | Store    | Kortext                      |
 | Kurzweil 3000 Assistive Learning        | 20.13.0000        | Win32    | Kurzweil Educational Systems |
-| LanSchool                               | 9.1.0.46          | Win32    | Stoneware                    |
+| LanSchool Classic                       | 9.1.0.46          | Win32    | Stoneware, Inc.              |
+| LanSchool Air                           | 2.0.13312         | Win32    | Stoneware, Inc.              |
 | Lightspeed Smart Agent                  | 1.9.1             | Win32    | Lightspeed Systems           |
 | MetaMoJi ClassRoom                      | 3.12.4.0          | Store    | MetaMoJi Corporation         |
 | Microsoft Connect                       | 10.0.22000.1      | Store    | Microsoft                    |
