@@ -25,14 +25,15 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 The Security Compliance Toolkit consists of:
 
 -   Windows 11 security baseline
-
+    -   Windows 11, version 22H2
+    -   Windows 11, version 21H2
 -   Windows 10 security baselines
-    -   Windows 10 Version 21H2
-    -   Windows 10 Version 21H1
-    -   Windows 10 Version 20H2
-    -   Windows 10 Version 1809
-    -   Windows 10 Version 1607
-    -   Windows 10 Version 1507
+    -   Windows 10, version 21H2
+    -   Windows 10, version 21H1
+    -   Windows 10, version 20H2
+    -   Windows 10, version 1809
+    -   Windows 10, version 1607
+    -   Windows 10, version 1507
 
 -   Windows Server security baselines
     -   Windows Server 2022

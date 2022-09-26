@@ -43,7 +43,7 @@
     - name: Accessibility settings
       items:
          - name: Accessibility information for IT Pros
-           href: windows-10-accessibility-for-ITPros.md
+           href: windows-accessibility-for-ITPros.md
          - name: Configure access to Microsoft Store
            href: stop-employees-from-using-microsoft-store.md
          - name: Configure Windows Spotlight on the lock screen
