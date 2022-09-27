@@ -3,14 +3,14 @@ title: DCOM Machine Launch Restrictions in Security Descriptor Definition Langua
 description: Best practices and more for the security policy setting, DCOM Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax.
 ms.assetid: 4b95d45f-dd62-4c34-ba32-43954528dabe
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

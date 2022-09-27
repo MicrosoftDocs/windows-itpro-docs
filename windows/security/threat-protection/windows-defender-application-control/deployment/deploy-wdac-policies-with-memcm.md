@@ -7,7 +7,7 @@ ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
-manager: jsuther
+manager: aaroncz
 ms.date: 06/27/2022
 ms.topic: how-to
 ms.localizationpriority: medium

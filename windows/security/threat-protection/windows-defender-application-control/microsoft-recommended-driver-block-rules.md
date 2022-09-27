@@ -1,7 +1,7 @@
 ---
 title: Microsoft recommended driver block rules (Windows)
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
-keywords:  security, malware, kernel mode, driver
+keywords: security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -12,8 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ---
 
 # Microsoft recommended driver block rules

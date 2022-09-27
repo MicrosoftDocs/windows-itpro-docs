@@ -3,14 +3,14 @@ title: Network security Do not store LAN Manager hash value on next password cha
 description: Best practices, security considerations, and more for the security policy setting, Network security Do not store LAN Manager hash value on next password change.
 ms.assetid: 6452b268-e5ba-4889-9d38-db28f919af51
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

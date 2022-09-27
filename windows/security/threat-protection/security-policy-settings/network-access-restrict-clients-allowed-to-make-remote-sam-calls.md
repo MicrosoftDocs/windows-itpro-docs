@@ -5,10 +5,10 @@ ms.prod: m365-security
 ms.technology: windows-sec
 ms.localizationpriority: medium
 ms.date: 09/17/2018
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM

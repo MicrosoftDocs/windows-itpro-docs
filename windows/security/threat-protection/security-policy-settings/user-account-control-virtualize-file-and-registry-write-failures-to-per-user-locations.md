@@ -3,14 +3,14 @@ title: User Account Control Virtualize file and registry write failures to per-u
 description: Best practices, security considerations and more for the policy setting, User Account Control Virtualize file and registry write failures to per-user locations.
 ms.assetid: a7b47420-cc41-4b1c-b03e-f67a05221261
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
