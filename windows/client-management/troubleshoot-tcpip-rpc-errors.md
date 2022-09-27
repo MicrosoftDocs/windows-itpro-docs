@@ -120,17 +120,17 @@ Portqry.exe -n 169.254.0.2 -e 135
 ```
 Partial output below:
  
-> Querying target system called:
-> 169.254.0.2
-> Attempting to resolve IP address to a name...
-> IP address resolved to RPCServer.contoso.com
-> querying...
-> TCP port 135 (epmap service): LISTENING
-> Using ephemeral source port
-> Querying Endpoint Mapper Database...
-> Server's response:
-> UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d
-> ncacn_ip_tcp:169.254.0.10<strong>[49664]</strong>
+> Querying target system called:  
+> 169.254.0.2  
+> Attempting to resolve IP address to a name...  
+> IP address resolved to RPCServer.contoso.com  
+> querying...  
+> TCP port 135 (epmap service): LISTENING  
+> Using ephemeral source port  
+> Querying Endpoint Mapper Database...  
+> Server's response:  
+> UUID: d95afe70-a6d5-4259-822e-2c84da1ddb0d  
+> ncacn_ip_tcp:169.254.0.2<strong>[49664]</strong>
 
  
 The one in bold is the ephemeral port number that you made a connection to successfully. 
