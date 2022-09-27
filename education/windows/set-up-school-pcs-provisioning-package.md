@@ -1,7 +1,7 @@
 ---
 title: What's in Set up School PCs provisioning package
 description: Lists the provisioning package settings that are configured in the Set up School PCs app.
-keywords: shared cart, shared PC, school, set up school pcs
+keywords: shared PC, school, set up school pcs
 ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library

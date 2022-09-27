@@ -32,6 +32,8 @@
               href: deploy/windows-autopatch-device-registration-overview.md
             - name: Register your devices
               href: deploy/windows-autopatch-register-devices.md
+            - name: Post-device registration readiness checks
+              href: deploy/windows-autopatch-post-reg-readiness-checks.md
     - name: Operate
       href: operate/index.md
       items:
