@@ -100,7 +100,7 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
 
     ---
     
-- [HVEC Video Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEVCVideoExtension_8wekyb3d8bbwe) | Package name: Microsoft.HEVCVideoExtension
+- [HEVC Video Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEVCVideoExtension_8wekyb3d8bbwe) | Package name: Microsoft.HEVCVideoExtension
   - Supported versions:
 
     ---
