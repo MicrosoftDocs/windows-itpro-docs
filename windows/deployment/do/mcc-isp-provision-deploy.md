@@ -14,7 +14,7 @@ ms.topic: article
 ---
 
 
-# Provisioning and deploying Microsoft Connected Cache for ISP
+# Create, provision and deploy Microsoft Connected Cache for ISP
 
 **Applies to**
 
@@ -25,64 +25,76 @@ ms.topic: article
 
 
 > [!IMPORTANT]  
-> Before you can provision and deploy your cache node, you will need to complete the sign up process [here](windows\deployment\do\mcc-isp-signup.md) and create a cache node [here](windows\deployment\do\mcc-isp-create.md).
+> Before you can create your Microsoft Connected Cache, you will need to complete the sign up process [here](windows\deployment\do\mcc-isp-signup.md).
 
 <br/>
+<br/>
 
-## Provisioning cache node
 
-1. Click on the cache node you want to provision and deploy.  
+
+Create your cache node by navigating to 'Cache nodes' under Settings and click 'Create Cache Node'. Provide a name for your cache node and click 'Create' to create your cache node.  
+
 <br/> 
-:::image type="content" source="images/cachenodecreated.png" alt-text="cachenodecreated":::
-<br/>
+
 <br/>
 
-1. Enter the max allowable egress that your hardware can support.  
+### Provision your cache node:  
 <br/> 
-:::image type="content" source="images/cachenodeconfig.png" alt-text="cachenodeconfig":::
+
+1. Click on the cache node you want to provision and deploy.
+<br/> 
+
 <br/>
-<br/>
+:::image type="content" source="images/numberedprovmcc.png" alt-text="numberedprovmcc":::  
+
+<br/>  
+
+2. Enter the max allowable egress that your hardware can support.  
+
+<br/> 
 
 3. Under Cache storage, specify the location of the cache drives to store content along with the size of the cache drives in Gigabytes.  
-You can add upto nine cache drives.  
+Note: You can add upto nine cache drives.  
+
 <br/>
-:::image type="content" source="images/cachenodeconfig.png" alt-text="cachenodeconfig":::
+
+4. Under Routing information, select the routing source you would like to use. For more information see client routing [here](windows\deployment\do\mcc-isp-client-routing.md).
+<br/>  
+
+- If you choose Manual routing, enter Address range/CIDR blocks and the number of IP space.  
 <br/>
-<br/>
-4. Under Routing information, select the routing source you would like to use. For more information see client routing [here](windows\deployment\do\mcc-isp-client-routing.md).  
-<br/>
-    - If you choose Manual routing, enter Address range/CIDR blocks and the number of IP space.  
-<br/>
-:::image type="content" source="images/cachenodeconfig.png" alt-text="cachenodeconfig":::
-<br/>
-<br/>
-    - If you choose BGP routing, enter the ASN and IP addresses of the neighborship.  
-<br/>
-:::image type="content" source="images/bgp.png" alt-text="bgp":::
+- If you choose BGP routing, enter the ASN and IP addresses of the neighborship.  
+Note: 'Prefix count' and 'IP Space' will stop showing 0 when BGP is successfuly established.
+
 <br/>
 <br/>
+
+### Deploy your cache node:  
  
-5. Under Server provisioning, you will see a provisioning script for your cache node.  
-Download this script to your server.
-<br/>
-:::image type="content" source="images/cachenodeprovisioning.png" alt-text="cachenodeprovision":::
+:::image type="content" source="images/numbereddeploymcc.png" alt-text="numbereddeploymcc":::
 
-<br/>
+<br/>  
 
-6. Open a terminal window and run the following command to change the access permission to the Bash script.  
+5. Under Server provisioning, download the provisioning package to your server.  
+
+    Open a terminal window and run the following command to change the access permission to the Bash script.  
 <br/>
 
     ```bash
     sudo chmod +x installmcc.sh
     ```
+
+<br/>  
+
+6. Run the provisioning script that is shown for your cache node.  
+
+
 <br/>
 <br/>
 
-7. Run the provisioning script that is shown for your cache node.  
-<br/>
-:::image type="content" source="images/cachenodeprovisioning.png" alt-text="cachenodeprovision":::
-<br/>
-<br/>
-
+<<<<<<< HEAD
+If there were no errors, you have set up your cache node. To verify the server is set up correctly, follow the steps verification steps [here](windows\deployment\do\mcc-isp-verify-cache-node.md).
+=======
 8. If there were no errors, you have set up your cache node. To verify the server is set up correctly, follow the steps verification steps [here](windows\deployment\do\mcc-isp-verify-cache-node.md).
 
+>>>>>>> c023d7d15cf06494a2799bdfb23d7674fa5fbb05
