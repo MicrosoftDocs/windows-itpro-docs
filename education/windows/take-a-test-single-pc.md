@@ -23,114 +23,84 @@ appliesto:
 To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow the guidance in this topic.
 
 ## Set up a dedicated test account
-To configure the assessment URL and a dedicated testing account on a single PC, follow these steps.
+To configure the assessment URL and a dedicated testing account on a single PC, follow these steps:
 
-1. Sign into the Windows device with an administrator account.
-2. Open the **Settings** app and go to **Accounts > Access work or school**.
-3. Click **Set up an account for taking tests**.
-
-   **Figure 1** - Use the Settings app to set up a test-taking account
-
-   ![Use the Settings app to set up a test-taking account.](images/takeatest/tat_settingsapp_workorschoolaccess_setuptestaccount.png)
-
-4. In the **Set up an account for taking tests** window, choose an existing account to use as the dedicated testing account.
-
-   **Figure 2** - Choose the test-taking account
-
-   ![Choose the test-taking account.](images/takeatest/tat_settingsapp_setuptesttakingaccount_1703.png) 
+1. Sign into the Windows device with an administrator account
+1. Open the **Settings** app and select **Accounts > Access work or school**
+1. Select **Create a test-taking account**
+   :::image type="content" source="./images/takeatest/settings-accounts-set-up-take-a-test-account.png" alt-text="Use the Settings app to set up a test-taking account." border="true":::
+1. Under **Add an account for taking tests**, select **Add account** > Select a local account that will be used for testing
+   :::image type="content" source="./images/takeatest/settings-accounts-choose-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
 
     > [!NOTE]  
-    > If you don't have an account on the device, you can create a new account. To do this, go to **Settings > Accounts > Other people > Add someone else to this PC > I don’t have this person’s sign-in information > Add a user without a Microsoft account**.
+    > If you don't already have an account on the device, you can create a new account. To do this:
+    > - Open the **Settings** app and select **Accounts** > **Other Users**
+    > - Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
+    > - Provide a user name and password for the account.
+    > :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
 
-5. In the **Set up an account for taking tests**, enter the assessment URL in the field under **Enter the test's web address**. 
-6. Select the options you want to enable during the test.
-   - To enable printing, select **Require printing**. 
+1. Under **Enter the tests's web address**, enter the assessment URL
+1. Under **Test taking settings** select the options you want to enable during the test
+   - To enable printing, select **Require printing**
 
       > [!NOTE]  
-      > Make sure a printer is preconfigured on the Take a Test account if you're enabling this option.
+      > Make sure a printer is pre-configured on the Take a Test account if you're enabling this option.
 
-   - To enable teachers to monitor screens, select **Allow screen monitoring**.
-   - To allow text suggestions, select **Allow text suggestions**.
+   - To enable teachers to monitor screens, select **Allow screen monitoring**
+   - To allow text suggestions, select **Allow text suggestions**
 
-7. Click **Save**.
-8. To take the test, the student must sign in using the test-taking account that you created.
+1. To take the test, a student must sign in using the test-taking account selected in step 4
+   :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
-## Provide a link to the test
-Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, just embed a URL with a specific prefix and devices will be locked down when users follow the link. We recommend using this method for lower stakes assessments.
+## Create and distribute a link to the test
 
-**To provide a link to the test**
+Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, embed a URL with a specific prefix and devices will be locked down when users follow the link. This approach is recommended for lower stakes assessments.
+To create a link to the test, there are two options:
 
-1. Create the link to the test. 
+1. Create a link using a web UI
+1. Create a link using schema activation
 
-   There are different ways you can do this:
-   - Create a link using a web UI
+### Create a link using a web UI
 
-     For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this for option for teachers.
+For this option, copy the assessment URL and open the web application <a href="https://aka.ms/create-a-take-a-test-link" target="_blank"><u>Customize your assessment URL</u></a>, where you can:
 
-     To get started, go here: [Create a link using a web UI](https://aka.ms/create-a-take-a-test-link).
+1. Paste the link to the assessment URL
+1. Select the options you want to allow during the test
+1. Generate the link by selecting the button Create link
 
-   - Create a link using schema activation
-
-     You can accomplish the same thing as the first option (using a web UI), by manually embedding a URL with a specific prefix. You can select parameters depending on what you want to enable. 
-
-     For more info, see [Create a link using schema activation](#create-a-link-using-schema-activation).
-
-2. Distribute the link.
-
-   Once the links are created, you can distribute them through the web, email, OneNote, or any other method of your choosing. 
-
-   You can also create shortcuts to distribute the link. For more info, see [Create a shortcut for the test link](#create-a-shortcut-for-the-test-link).
-
-3. To take the test, have the students click on the link and provide user consent.
-
-   > [!NOTE] 
-   > If you enabled printing, the printer must be preconfigured for the account before the student takes the test.
-
+This is an ideal option for teachers.
 
 ### Create a link using schema activation
-One of the ways you can present content in a locked down manner is by embedding a URL with a specific prefix. Once users click the URL, devices will be locked down.
 
-**To enable schema activation for assessment URLs**
+For this option, you embed a URL with a specific prefix and specify parameters depending on what you want to allow during the test. Once users open the URL, devices will be locked down.
+The URL must be in the following format:
 
-1. Embed a link or create a desktop shortcut with:
+```
+ms-edu-secureassessment:<URL>#enforceLockdown
+```
 
-   ```
-   ms-edu-secureassessment:<URL>#enforceLockdown
-   ```
+To enable printing, screen capture, or both, use the above link and append one of these parameters:
 
-2. To enable printing, screen capture, or both, use the above link and append one of these parameters:
+- `&enableTextSuggestions` - Enables text suggestions
+- `&requirePrinting` - Enables printing
+- `&enableScreenCapture` - Enables screen capture
+- `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability.
 
-   - `&enableTextSuggestions` - Enables text suggestions
-   - `&requirePrinting` - Enables printing
-   - `&enableScreenCapture` - Enables screen capture
-   - `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability. 
+If these parameters are not included, the default behavior is to disable the capabilities.
 
-   If you exclude these parameters, the default behavior is disabled.
+For tests that utilizes the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that are not allowed to run during lockdown. Take a Test will lock down the device once the applications are closed.
 
-   For tests that utilizes the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that are not allowed to run during lockdown. The test web application may lock down the device once you have closed the apps.
+To enable permissive mode, do not include `enforceLockdown` in the schema parameters. For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
 
-    > [!NOTE] 
-    > The Windows 10, version 1607 legacy configuration, `ms-edu-secureassessment:<URL>!enforcelockdown` is still supported, but not in combination with the new parameters.
+### Distribute the link
 
-3. To enable permissive mode, do not include `enforceLockdown` in the schema parameters.
+Once the link is created, you can distribute it through the web, email, OneNote, or any other method of your choosing.
 
-   For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
+For example, you can create and copy the shortcut to the assessment URL to the students' desktop.
 
+To take the test, have the students click on the link and provide user consent.
 
-### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://aka.ms/create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
+> [!NOTE] 
+> If you enabled printing, the printer must be pre-configured for the account before the student takes the test.
 
-1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
-2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.
-3. Click **Next**.
-4. Type a name for the shortcut and then click **Finish**.
-
-Once the shortcut is created, you can copy it and distribute it to students.
-
-
-## Related topics
-[Take tests in Windows](take-tests-in-windows-10.md)
-
-[Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md)
-
-[Take a Test app technical reference](take-a-test-app-technical.md)
+:::image type="content" source="./images/takeatest/desktop-shortcuts.png" alt-text="Windows 11 SE desktop showing two shortcuts to assessment URLs." border="true":::
