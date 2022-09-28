@@ -101,6 +101,8 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
     ---
     
 - [HEVC Video Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEVCVideoExtension_8wekyb3d8bbwe) | Package name: Microsoft.HEVCVideoExtension
+> [!NOTE]
+> For devices running Windows 11, version 21H2, and any supported version of Windows 10, you need to acquire the [HEVC Video Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEVCVideoExtension_8wekyb3d8bbwe) from the Microsoft Store.
   - Supported versions:
 
     ---
