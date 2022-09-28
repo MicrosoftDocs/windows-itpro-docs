@@ -95,7 +95,7 @@ landingContent:
             url: /microsoftteams/faq-support-remote-workforce
 
   # Card (optional)
-  - title: Microsoft Learn
+  - title: Microsoft Learn training
     linkLists:
       - linkListType: learn
         links:

@@ -100,7 +100,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Duo from Cisco                          | 2.25.0            | Win32    | Cisco                        |
 | e-Speaking Voice and Speech recognition | 4.4.0.8           | Win32    | e-speaking                   |
 | eTests                                  | 4.0.25            | Win32    | CASAS                        |
-| FortiClient                             | 7.0.1.0083        | Win32    | Fortinet                     |
+| FortiClient                             | 7.2.0.4034+       | Win32    | Fortinet                     |
 | Free NaturalReader                      | 16.1.2            | Win32    | Natural Soft                 |
 | Ghotit Real Writer & Reader             | 10.14.2.3         | Win32    | Ghotit Ltd                   |
 | GoGuardian                              | 1.4.4             | Win32    | GoGuardian                   |
