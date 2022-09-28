@@ -18,23 +18,12 @@ appliesto:
 
 This article describes how to deploy Windows 10 or Windows 11 Enterprise E3 or E5 licenses with [subscription activation](windows-10-subscription-activation.md) or [Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
-> [!NOTE]
-> These activation features require a supported and licensed version of Windows 10 Pro or Windows 11 Pro.
->
-> - Subscription activation with an enterprise agreement (EA) or a Microsoft Products & Services Agreement (MPSA).
-> - Enterprise E3 in CSP.
-> - Automatic, non-KMS activation also requires a device with a firmware-embedded activation key.
-> - Subscription activation requires Enterprise _per user_ licensing. It doesn't work with _per device_ licensing.
+These activation features require a supported and licensed version of Windows 10 Pro or Windows 11 Pro:
 
-## Firmware-embedded activation key
-
-To determine if the computer has a firmware-embedded activation key, enter the following command at an elevated Windows PowerShell prompt:
-
-```PowerShell
-(Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
-```
-
-If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
+- Subscription activation with an enterprise agreement (EA) or a Microsoft Products & Services Agreement (MPSA).
+- Enterprise E3 in CSP.
+- Automatic, non-KMS activation also requires a device with a firmware-embedded activation key.
+- Subscription activation requires Enterprise _per user_ licensing. It doesn't work with _per device_ licensing.
 
 ## Enable subscription activation with an existing EA
 
@@ -71,7 +60,14 @@ If you need to update contact information and resend the activation email, use t
 
 1. Update the contact information, then select **Update Contact Details**. This action will trigger a new email.
 
-## Active Directory synchronization with Azure AD
+## Preparing for deployment: reviewing requirements
+
+- Devices must be running a supported version of Windows 10 Pro or Windows 11 Pro
+- Azure AD-joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible.
+
+For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this article.
+
+### Active Directory synchronization with Azure AD
 
 If you have an on-premises Active Directory Domain Services (AD DS) domain, you need to synchronize the identities in the on-premises AD DS domain with Azure AD. This synchronization is required for users to have a _single identity_ that they can use to access their on-premises apps and cloud services that use Azure AD. An example of a cloud service is Windows Enterprise E3 or E5.
 
@@ -85,13 +81,6 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 - [What is hybrid identity with Azure Active Directory?](/azure/active-directory/hybrid/whatis-hybrid-identity)
 - [Azure AD Connect and Azure AD Connect Health installation roadmap](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
-
-## Preparing for deployment: reviewing requirements
-
-- Devices must be running a supported version of Windows 10 Pro or Windows 11 Pro
-- Azure AD-joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible.
-
-For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this article.
 
 ## Assigning licenses to users
 
@@ -257,6 +246,16 @@ Devices must be running a supported version of Windows 10 Pro or Windows 11 Pro.
 Devices must also be joined to Azure AD, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure AD are also eligible.
 
 Use the following procedures to review whether a particular device meets these requirements.
+
+#### Firmware-embedded activation key
+
+To determine if the computer has a firmware-embedded activation key, enter the following command at an elevated Windows PowerShell prompt:
+
+```PowerShell
+(Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
+```
+
+If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
 
 #### Determine if a device is Azure AD-joined
 

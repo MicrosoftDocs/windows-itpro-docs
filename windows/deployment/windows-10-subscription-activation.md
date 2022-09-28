@@ -216,7 +216,7 @@ $(Get-WmiObject SoftwareLicensingService).OA3xOriginalProductKey | foreach{ if (
 
 If your organization has an Enterprise Agreement (EA) or Software Assurance (SA):
 
-- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD. Ideally, you assign the licenses to groups using the Azure AD Premium feature for group assignment. For more information, see [Enable subscription activation with an existing EA](./deploy-enterprise-licenses.md#enabling-subscription-activation-with-an-existing-ea).
+- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD. Ideally, you assign the licenses to groups using the Azure AD Premium feature for group assignment. For more information, see [Enable subscription activation with an existing EA](./deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
 
 - The license administrator can assign seats to Azure AD users with the same process that's used for Microsoft 365 Apps.
 
