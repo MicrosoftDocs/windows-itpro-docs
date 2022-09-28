@@ -37,7 +37,7 @@ To configure the assessment URL and a dedicated testing account on a single PC, 
     > - Open the **Settings** app and select **Accounts** > **Other Users**
     > - Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
     > - Provide a user name and password for the account.
-    > :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
+    > :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to create a test-taking account." border="true":::
 
 1. Under **Enter the tests's web address**, enter the assessment URL
 1. Under **Test taking settings** select the options you want to enable during the test
