@@ -1,6 +1,6 @@
 ---
-title: Set up Take a Test on a single PC
-description: Learn how to set up and use the Take a Test app on a single PC.
+title: Set up Take a Test on a single device
+description: Learn how to set up and use the Take a Test app on a single device
 keywords: take a test, test taking, school, set up on single PC
 ms.prod: windows
 ms.mktglfcycl: plan
@@ -18,7 +18,7 @@ appliesto:
 - ✅ <b>Windows 11</b>
 - ✅ <b>Windows 11 SE</b>
 ---
-# Set up Take a Test on a single PC
+# Set up Take a Test on a single device
 
 To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow the guidance in this topic.
 
@@ -26,19 +26,15 @@ To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow t
 To configure the assessment URL and a dedicated testing account on a single PC, follow these steps:
 
 1. Sign into the Windows device with an administrator account
-1. Open the **Settings** app and select **Accounts > Access work or school**
+1. Open the **Settings** app and select **Accounts** > **Other Users**
+1. Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
+1. Provide a user name and password for the account that will be used for testing
+   :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to create a test-taking account." border="true":::
+1. Select **Accounts > Access work or school**
 1. Select **Create a test-taking account**
    :::image type="content" source="./images/takeatest/settings-accounts-set-up-take-a-test-account.png" alt-text="Use the Settings app to set up a test-taking account." border="true":::
-1. Under **Add an account for taking tests**, select **Add account** > Select a local account that will be used for testing
+1. Under **Add an account for taking tests**, select **Add account** > Select the account created in step 4
    :::image type="content" source="./images/takeatest/settings-accounts-choose-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
-
-    > [!NOTE]  
-    > If you don't already have an account on the device, you can create a new account. To do this:
-    > - Open the **Settings** app and select **Accounts** > **Other Users**
-    > - Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
-    > - Provide a user name and password for the account.
-    > :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to create a test-taking account." border="true":::
-
 1. Under **Enter the tests's web address**, enter the assessment URL
 1. Under **Test taking settings** select the options you want to enable during the test
    - To enable printing, select **Require printing**
@@ -57,8 +53,8 @@ To configure the assessment URL and a dedicated testing account on a single PC, 
 Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, embed a URL with a specific prefix and devices will be locked down when users follow the link. This approach is recommended for lower stakes assessments.
 To create a link to the test, there are two options:
 
-1. Create a link using a web UI
-1. Create a link using schema activation
+- Create a link using a web UI
+- Create a link using schema activation
 
 ### Create a link using a web UI
 

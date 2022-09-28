@@ -1,7 +1,7 @@
 ---
-title: Set up Take a Test on multiple PCs
-description: Learn how to set up and use the Take a Test app on multiple PCs.
-keywords: take a test, test taking, school, set up on multiple PCs
+title: Configure Take a Test
+description: Learn how to configure and use the Take a Test app
+keywords: take a test, test taking, school
 ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: education
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 08/10/2022
+ms.date: 09/30/2022
 ms.reviewer: 
 manager: aaroncz
 appliesto:
@@ -19,30 +19,105 @@ appliesto:
 - ✅ <b>Windows 11 SE</b>
 ---
 
-# Set up Take a Test on multiple PCs
+# Configure Take a Test
 
-Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. 
+Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with this, Windows provides an application called **Take a Test**. The application is a secure browser that can be configured to only allow access to a specific URL or a list of URLs. The application also provides a number of other features to help with testing, such as preventing printing, preventing screen capture, and preventing text suggestions.
 
-Follow the guidance in this topic to set up Take a Test on multiple PCs.
+There are different ways to configure and use Take a Test.
+The simplest approach is to generate a *secure assessment URL* and share it with the students. Students can then use the URL access the assessment through Take a Test. This approach is recommended for lower stakes assessments, and it's described in [Create and distribute a secure assessment link](#create-and-distribute-a-secure-assessment-link).
+Another approach is to configure the devices to use a dedicated account for testing. This approach is recommended for higher stakes assessments. Depending if you need to configure a single device or multiple devices, the process is described in [[Configure Take a Test with a dedicated account on a single device](#configure-a-single-device-for-testing)](#configure-take-a-test-with-a-dedicated-account-on-a-single-device) or [Configure Take a Test  with a dedicated account on multiple devices](#configure-take-a-test-with-a-dedicated-account-on-multiple-devices)).
 
-## Set up a dedicated test account
-To configure a dedicated test account on multiple PCs, select any of the following methods:
-- [Provisioning package created through the Set up School PCs app](#set-up-a-test-account-in-the-set-up-school-pcs-app)
-- [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
-- [Mobile device management (MDM) or Microsoft Endpoint Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
-- [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
-- [Group Policy to deploy a scheduled task that runs a PowerShell script](#create-a-scheduled-task-in-group-policy) 
+## Create and distribute a secure assessment link
 
-### Set up a test account in the Set up School PCs app 
-If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
+Anything hosted on the web can be presented in a locked down manner using the **Take a Test** app, not just assessments. To lock down online content, embed a URL with a specific prefix and devices will be locked down when users follow the link. This approach is recommended for lower stakes assessment, such as a quick quiz in a class.
 
-If you set up Take a Test, the **Take a Test** button is added on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
+To create a secure assessment link to the test, there are two options:
 
-**Figure 1** - Configure Take a Test in the Set up School PCs app
+- Create a link using a web application
+- Create a link using schema activation
 
-![Configure Take a Test in the Set up School PCs app.](images/takeatest/suspc_choosesettings_setuptakeatest.png)
+### Create a link using a web application
 
-### Set up a test account in Intune for Education
+For this option, copy the assessment URL and open the web application <a href="https://aka.ms/create-a-take-a-test-link" target="_blank"><u>Customize your assessment URL</u></a>, where you can:
+
+1. Paste the link to the assessment URL
+1. Select the options you want to allow during the test
+1. Generate the link by selecting the button Create link
+
+This is an ideal option for teachers who want to create a link to a specific assessment and and share it with students using OneNote, for example.
+
+### Create a link using schema activation
+
+For this option, you embed a URL with a specific prefix and specify parameters depending on what you want to allow during the test.
+The URL must be in the following format:
+
+```
+ms-edu-secureassessment:<URL>#enforceLockdown
+```
+
+To enable printing, screen capture, or both, use the above link and append one of these parameters:
+
+- `&enableTextSuggestions` - Enables text suggestions
+- `&requirePrinting` - Enables printing
+- `&enableScreenCapture` - Enables screen capture
+- `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability.
+
+If these parameters are not included, the default behavior is to disable the capabilities.
+
+For tests that utilizes the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that are not allowed to run during lockdown. Take a Test will lock down the device once the applications are closed.
+
+To enable permissive mode, do not include `enforceLockdown` in the schema parameters. For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
+
+### Distribute the link
+
+Once the link is created, you can distribute it through the web, email, OneNote, or any other method of your choosing.
+
+For example, you can create and copy the shortcut to the assessment URL to the students' desktop.
+
+To take the test, have the students click on the link and provide user consent.
+
+> [!NOTE] 
+> If you enabled printing, the printer must be pre-configured for the account before the student takes the test.
+
+:::image type="content" source="./images/takeatest/desktop-shortcuts.png" alt-text="Windows 11 SE desktop showing two shortcuts to assessment URLs." border="true":::
+
+## Configure Take a Test with a dedicated account on a single device
+
+For higher stakes testing, such as mid-term exams, you can set up a device with a dedicated testing account.
+To configure Take a Test with a dedicated testing account on a single PC, follow these steps:
+
+1. Sign into the Windows device with an administrator account
+1. Open the **Settings** app and select **Accounts** > **Other Users**
+1. Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
+1. Provide a user name and password for the account that will be used for testing
+   :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to create a test-taking account." border="true":::
+1. Select **Accounts > Access work or school**
+1. Select **Create a test-taking account**
+   :::image type="content" source="./images/takeatest/settings-accounts-set-up-take-a-test-account.png" alt-text="Use the Settings app to set up a test-taking account." border="true":::
+1. Under **Add an account for taking tests**, select **Add account** > Select the account created in step 4
+   :::image type="content" source="./images/takeatest/settings-accounts-choose-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
+1. Under **Enter the tests's web address**, enter the assessment URL
+1. Under **Test taking settings** select the options you want to enable during the test
+   - To enable printing, select **Require printing**
+
+      > [!NOTE]  
+      > Make sure a printer is pre-configured on the Take a Test account if you're enabling this option.
+
+   - To enable teachers to monitor screens, select **Allow screen monitoring**
+   - To allow text suggestions, select **Allow text suggestions**
+
+1. To take the test, a student must sign in using the test-taking account selected in step 4
+   :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
+
+## Configure Take a Test  with a dedicated account on multiple devices
+
+For higher stakes testing, such as mid-term exams, you can set up devices with a dedicated testing account.
+Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+
+#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+To enable Stickers using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+
 You can set up a test-taking account in Intune for Education. To do this, follow these steps:
 
 1. In Intune for Education, select **Take a Test profiles** from the menu.
@@ -87,6 +162,53 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
 And that's it! When the students from the selected group sign in to the student PCs using the Take a Test user name that you selected, the PC will be locked down and Take a Test will open the assessment URL and students can start taking tests.
 
+Assign the policy to a security group that contains as members the devices or users that you want to enable Stickers on.
+
+#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+To Set up a test account in the Set up School PCs app 
+If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
+
+If you set up Take a Test, the **Take a Test** button is added on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
+
+**Figure 1** - Configure Take a Test in the Set up School PCs app
+
+![Configure Take a Test in the Set up School PCs app.](images/takeatest/suspc_choosesettings_setuptakeatest.png)
+
+### Set up a test account through Windows Configuration Designer
+To set up a test account through Windows Configuration Designer, follow these steps.
+
+1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
+   1. After you're done with the wizard, don't click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
+   2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
+   3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
+
+      **Figure 7** - Add the account to use for test-taking
+
+      ![Add the account to use for test-taking.](images/wcd/wcd_settings_assignedaccess.png)
+
+      The account can be in one of the following formats:
+      - username
+      - domain\username
+      - computer name\\username
+      - username@tenant.com
+
+   4. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
+      - In **LaunchURI**, enter the assessment URL.
+      - In **TesterAccount**, enter the test account you entered in step 3.
+
+3. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
+
+   - You'll see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
+   - Copy the provisioning package to a USB drive.
+
+4. Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
+
+Apply the provisioning package to the devices that you want to enable Stickers on.
+
+---
+
 ### Set up a test account in MDM or Configuration Manager
 You can configure a dedicated testing account through MDM or Configuration Manager by specifying a single account in the directory to be the test-taking account. Devices that have the test-taking policies can sign into the specified account to take the test.
 
@@ -124,149 +246,4 @@ You can configure a dedicated testing account through MDM or Configuration Manag
 5. Deploy the policies to the test-taking devices.
 6. To take the test, the student signs in to the test account.
 
-### Set up a test account through Windows Configuration Designer
-To set up a test account through Windows Configuration Designer, follow these steps.
-
-1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
-   1. After you're done with the wizard, don't click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
-   2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
-   3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
-
-      **Figure 7** - Add the account to use for test-taking
-
-      ![Add the account to use for test-taking.](images/wcd/wcd_settings_assignedaccess.png)
-
-      The account can be in one of the following formats:
-      - username
-      - domain\username
-      - computer name\\username
-      - username@tenant.com
-
-   4. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
-      - In **LaunchURI**, enter the assessment URL.
-      - In **TesterAccount**, enter the test account you entered in step 3.
-
-3. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
-
-   - You'll see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
-   - Copy the provisioning package to a USB drive.
-
-4. Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
-
-### Set up a tester account in Group Policy
-To set up a tester account using Group Policy, first create a PowerShell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
-
-#### Create a PowerShell script
-This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
-
-- Use your assessment URL for **$obj.LaunchURI**  
-- Use your tester account for **$obj.TesterAccount**
-- Use your tester account for **-UserName**
-
->[!NOTE]
->The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](./take-a-test-single-pc.md#set-up-a-dedicated-test-account).
-
-```powershell
-$obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
-$obj.LaunchURI='https://www.foo.com';
-$obj.TesterAccount='TestAccount';
-$obj.put()
-Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
-```
-
-#### Create a scheduled task in Group Policy
-1. Open the Group Policy Management Console.
-2. Right-click the Group Policy object (GPO) that should contain the new preference item, and then click **Edit**.
-3. In the console tree under **Computer Configuration** or **User Configuration**, go to **Preferences** > **Control Panel Settings**.
-4. Right-click **Scheduled Tasks**, point to **New**, and select **Scheduled Task**.
-5. In the **New Scheduled Task Properties** dialog box, click **Change User or Group**.
-6. In the **Select User or Group** dialog box, click **Advanced**.
-7. In the **Advanced** dialog box, click **Find Now**.
-8. Select **System** in the search results
-9. Go back to the **Properties** dialog box and select **Run with highest privileges** under **Security options**.
-10. Specify the operating system in the **Configure for** field.
-11. Navigate to the **Actions** tab.
-12. Create a new **Action**.
-13. Configure the action to **Start a program**.
-14. In the **Program/script** field, enter **powershell**.
-15. In the **Add arguments** field, enter **-file "\<path to powershell script>"**.
-16. Click **OK**.
-17. Navigate to the **Triggers** tab and create a new trigger.
-18. Specify the trigger to be **On a schedule**.
-19. Specify the trigger to be **One time**.
-20. Specify the time the trigger should start.
-21. Click **OK**.
-22. In the **Settings** tab, select **Run task as soon as possible after a scheduled start is missed**.
-23. Click **OK**.
-
-## Provide link to test
-Anything hosted on the web can be presented in a locked down manner, not just assessments. To lock down online content, just embed a URL with a specific prefix and devices will be locked down when users follow the link. We recommend using this method for lower stakes assessments.
-
-**To provide a link to the test**
-
-1. Create the link to the test using schema activation.
-   - Create a link using a web UI
-
-     For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this option for teachers.
-
-     To get started, navigate to: [Create a link using a web UI](https://aka.ms/create-a-take-a-test-link).
-
-   - Create a link using schema activation
-
-     You can accomplish the same thing as the first option (using a web UI), by manually embedding a URL with a specific prefix. You can select parameters depending on what you want to enable. 
-
-     For more info, see [Create a link using schema activation](#create-a-link-using-schema-activation).
-
-2. Distribute the link. 
-
-    Once the links are created, you can distribute them through the web, email, OneNote, or any other method of your choosing. You can also create shortcuts to distribute the link. For more info, see [Create a shortcut for the test link](#create-a-shortcut-for-the-test-link).
-
-3. To take the test, have the students click on the link and provide user consent.
-
-### Create a link using schema activation
-One of the ways you can present content in a locked down manner is by embedding a URL with a specific prefix. Once users click the URL, devices will be locked down.
-
-**To enable schema activation for assessment URLs**
-
-1. Embed a link or create a desktop shortcut with:
-
-   ```http
-   ms-edu-secureassessment:<URL>#enforceLockdown
-   ```
-
-2. To enable printing, screen capture, or both, use the above link and append one of these parameters:
-
-   - `&enableTextSuggestions` - Enables text suggestions
-   - `&requirePrinting` - Enables printing
-   - `&enableScreenCapture` - Enables screen capture
-   - `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability. 
-
-   If you exclude these parameters, the default behavior is disabled.
-
-   For tests that utilize the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that aren't allowed to run during lockdown. The test web application may lock down the device once you've closed the apps.
-
-    > [!NOTE] 
-    > The Windows 10, version 1607 legacy configuration, `ms-edu-secureassessment:<URL>!enforcelockdown` is still supported, but not in combination with the new parameters.
-
-3. To enable permissive mode, don't include `enforceLockdown` in the schema parameters.
-
-   For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
-
-### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To create the shortcut, create the link to the test by either using the [web UI](https://aka.ms/create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
-
-1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
-2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.
-3. Click **Next**.
-4. Type a name for the shortcut and then click **Finish**.
-
-Once the shortcut is created, you can copy it and distribute it to students.
-
-## Related topics
-
-[Take tests in Windows](take-tests-in-windows-10.md)
-
-[Set up Take a Test on a single PC](take-a-test-single-pc.md)
-
-[Take a Test app technical reference](take-a-test-app-technical.md)
+---
