@@ -106,11 +106,12 @@ A list of all status updates posted in the selected timeframe will be displayed,
 -   **Where do I find Windows release health?**   
     After logging into Microsoft 365 admin center, expand the left-hand menu using **…Show All**, select **Health** and you'll see **Windows release health**.
 
--   **Is the Windows release health content published to Microsoft 365 admin center the same as the content on Windows release health on Docs.microsoft.com?**   
-    No. While the content is similar, you may see more issues and technical details published to Windows release health on Microsoft 365 admin center to better support the IT admin. For example, you'll find details to help you diagnose issues in your environment, steps to mitigate issues, and root cause analysis.
+
+-   **Is the Windows release health content published to Microsoft 365 admin center the same as the content on Windows release health on Microsoft Learn?**   
+    No. While the content is similar, you may see more issues and more technical details published to Windows release health on Microsoft 365 admin center to better support the IT admin. For example, you’ll find details to help you diagnose issues in your environment, steps to mitigate issues, and root cause analysis.
 
 -   **How often will content be updated?**   
-    To ensure Windows customers have important information as soon as possible, all major known issues will be shared with Windows customers on both Docs.microsoft.com and the Microsoft 365 admin center. We may also update the details available for Windows release health in the Microsoft 365 admin center when we have more details on workarounds, root cause, or other information to help you plan for updates and handle issues in your environment.
+    In an effort to ensure Windows customers have important information as soon as possible, all major known issues will be shared with Windows customers on both Microsoft Learn and the Microsoft 365 admin center. We may also update the details available for Windows release health in the Microsoft 365 admin center when we have additional details on workarounds, root cause, or other information to help you plan for updates and handle issues in your environment.
 
 -   **Can I share this content publicly or with other Windows customers?**   
     Windows release health is provided to you as a licensed Windows customer and isn't to be shared publicly.
