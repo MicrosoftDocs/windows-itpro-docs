@@ -149,38 +149,18 @@ To configure a guest account for Take a Test using Intune for Education, follow 
 Another option to configure devices with Intune, is to use a custom policy. This option is applicable to all versions of Windows 10 and Windows 11, including Windows 11 SE.
 To configure a guest account for Take a Test using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
 
-| Category | Setting  | Value| Notes |
-|-|-|-|-|
-| Local Policies Security Options | Interactive Logon Do Not Display Last Signed In | Enabled ||
-| Shared PC | Account Model | Domain | |
-| Shared PC | Deletion Policy | Delete at disk space threshold and inactive threshold | This policy ensures that|
-| Shared PC | Disk Level Caching	50
-| Shared PC | Disk Level Deletion	25
-| Shared PC | Inactive Threshold	30
-| Shared PC | Kiosk Mode AUMID		Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App
-| Shared PC | Kiosk Mode User Tile Display Text	Take a Test
-| Shared PC | Maintenance Start Time	1200
-| Windows Logon | Hide Fast User Switching | Enabled | |
+| Setting |
+|--------|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn`** </li><li> Data type: **Integer** </li><li>Value: **1**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/WindowsLogon/HideFastUserSwitching`** </li><li> Data type: **Integer**</li><li>Value: **1**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/AccountModel`**</li><li>Data type: **Integer** </li><li> Value: **1**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeAUMID`**</li><li>Data type: **String** </li><li> Value: **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText`** </li><li>Data type: **String** </li><li> Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/SecureAssessment/LaunchURI`** </li><li>Data type: **String** </li><li> Value: **\<provide testing URL>**</li>|
 
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure Take a Test for.
-
-
-   - **Custom OMA-DM URI** = ./Vendor/MSFT/AssignedAccess/KioskModeApp
-   - **String value** = {"*Account*":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}
-     *Account* can be in one of the following formats:
-     - username (not recommended)
-     - domain\username
-     - computer name\\username (not recommended)
-     - username@tenant.com
-
-    - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/LaunchURI
-    - **String value** = *assessment URL*
-
-
-    - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
-    - **String value** = Enter the account that you specified in step 2, using the same account format.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -210,7 +190,7 @@ To configure Take a Test with a dedicated account using Windows Configuration De
 
 ### Apply the provisioning package
 
-Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
+Follow the steps in [Apply a provisioning package][WIN-1] to apply the package that you created.
 
 ---
 
@@ -230,3 +210,5 @@ The following animation shows the process of signing in to the test-taking accou
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 [MEM-2]: /mem/intune/configuration/settings-catalog
+
+[WIN-1]: /windows/configuration/provisioning-packages/provisioning-apply-package
