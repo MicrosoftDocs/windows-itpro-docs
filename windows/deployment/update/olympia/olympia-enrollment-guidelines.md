@@ -1,5 +1,5 @@
 ---
-title: Olympia Corp retirement
+title: Olympia Corp
 description: Learn about the retirement of Olympia Corp and how to back up your data prior to October 31, 2022.
 ms.author: lizlong
 ms.topic: article
@@ -11,7 +11,7 @@ manager: aaroncz
 ms.custom: seo-marvel-apr2020
 ---
 
-# Olympia Corp Retirement
+# Olympia Corp
 <!-- 6472736 -->
 **Applies to**
 
@@ -20,22 +20,21 @@ ms.custom: seo-marvel-apr2020
 
 ## Retirement of Olympia Corp
 
-Olympia Corp, a virtual corporation was set up to reflect the IT infrastructure of real world businesses.
-Olympia will be formally retired on October 31, 2022. We'll begin unassigning Olympia licenses and deleting the Olympia feedback path on Feedback Hub.
-Olympia Corp will no longer be a part of Windows Insider Lab for Enterprise.
+Olympia Corp, a virtual corporation was set up to reflect the IT infrastructure of real world businesses.</br>
+Olympia will be formally retired on October 31, 2022.</br>
+We'll begin unassigning Olympia licenses and deleting the Olympia feedback path on Feedback Hub. Olympia Corp will no longer be a part of Windows Insider Lab for Enterprise.
 
 > [!WARNING]
 > To prevent data loss, Olympia participants need to complete the following:
+> - If you're using the provided Olympia licenses, make a back up of any data as you'll lose data once we unassign the licenses.
+> - Please remove your device from Olympia before October 31, 2022.
 
-- If you're using the provided Olympia licenses, make a back up of any data as you'll lose data once we unassign the licenses.
+To remove the account from Azure Active Directory, follow the steps below:
 
-- Please remove your device from Olympia before October 31, 2022.
-- To remove account from AAD, follow steps mentioned below:
-
-1. Open the Settings app.
-1. Go to Accounts > Access work or school.
-1. Select the connected account that you want to remove > Disconnect.
-1. To confirm device removal, select Yes.
+  1. Open the **Settings** app.
+  1. Go to **Accounts** > **Access work or school**.
+  1. Select the connected account that you want to remove, then select **Disconnect**.
+  1. To confirm device removal, select **Yes**.
 
 - After removing your account from Olympia, login to your device using your local account.
 
