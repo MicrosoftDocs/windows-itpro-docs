@@ -36,9 +36,9 @@ To remove the account from Azure Active Directory, follow the steps below:
   1. Select the connected account that you want to remove, then select **Disconnect**.
   1. To confirm device removal, select **Yes**.
 
-- After removing your account from Olympia, login to your device using your local account.
+- After removing your account from Olympia, log in to your device using your local account.
 
-- If you are looking for another program to join, the program we recommend is the Windows Insider Program for Business. Follow the instructions below to register:
+- If you're looking for another program to join, the program we recommend is the Windows Insider Program for Business. Follow the instructions below to register:
 [Register for the Windows 10 Insider Program for Business](/windows-insider/business/register)
 <!-- https://learn.microsoft.com/en-us/windows-insider/business/register -->
 Thank you for your participation in Olympia and email Windows Insider Lab for Enterprise [olympia@microsoft.com](mailto:olympia@microsoft.com) with any questions.
