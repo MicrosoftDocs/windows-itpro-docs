@@ -95,13 +95,13 @@ landingContent:
             url: /microsoftteams/faq-support-remote-workforce
 
   # Card (optional)
-  - title: Microsoft Learn
+  - title: Microsoft Learn training
     linkLists:
       - linkListType: learn
         links:
           - text: Plan to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /learn/modules/windows-plan
+            url: /training/modules/windows-plan
           - text: Prepare to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /learn/modules/windows-prepare/
+            url: /training/modules/windows-prepare/
           - text: Deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /learn/modules/windows-deploy
+            url: /training/modules/windows-deploy

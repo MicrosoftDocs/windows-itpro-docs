@@ -52,8 +52,11 @@ Available naming macros:
 
 |Macro|Description|Example|Generated Name|
 |:---|:---|:---|:---|
-|%RAND:<# of digits>|Generates the specified number of random digits.|Test%RAND:6%|Test123456|
-|%SERIAL%|Generates the serial number derived from the device. If the serial number causes the new name to exceed the 15 character limit, the serial number will be truncated from the beginning of the sequence.|Test-Device-%SERIAL%|Test-Device-456|
+|`%RAND:#%`|Generates the specified number (`#`) of random digits.|`Test%RAND:6%`|`Test123456`|
+|`%SERIAL%`|Generates the serial number derived from the device. If the serial number causes the new name to exceed the 15 character limit, the serial number will be truncated from the beginning of the sequence.|`Test-Device-%SERIAL%`|`Test-Device-456`|
+
+> [!NOTE]
+> If you use these naming macros, a unique name isn't guaranteed. The generated name may still be duplicated. To reduce the likelihood of a duplicated device name, use `%RAND:#%` with a large number. With the understanding that the maximum device name is 15 characters.
 
 Supported operation is Add.
 

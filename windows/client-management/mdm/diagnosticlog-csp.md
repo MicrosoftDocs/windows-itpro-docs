@@ -565,7 +565,7 @@ The data type is string.
 
 Default string is as follows:
 
-`https://docs.microsoft.com/windows/'desktop/WES/eventmanifestschema-channeltype-complextype`
+`https://learn.microsoft.com/windows/'desktop/WES/eventmanifestschema-channeltype-complextype`
 
 Add **SDDL**
 
