@@ -22,14 +22,14 @@ appliesto:
 Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with this, Windows provides an application called **Take a Test**. The application is a secure browser that can be configured to only allow access to a specific URL or a list of URLs. The application also provides a number of other features to help with testing, such as preventing printing, preventing screen capture, and preventing text suggestions.
 
 There are different ways to configure and use Take a Test:
-- The simplest approach is to generate a *secure assessment URL* and share it with the students. Students can then use the URL access the assessment through Take a Test. This option is recommended for lower stakes assessments, and it's described in [Create and distribute a secure assessment link](#create-and-distribute-a-secure-assessment-link)
-- Another approach is to configure the devices to use a dedicated account for testing. This option is recommended for higher stakes assessments, as students must sign in using the test-taking account, and they cannot access any applications other than Take a Test. Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
-  - [Configure Take a Test with a dedicated account on a single device](#configure-take-a-test-with-a-dedicated-account-on-a-single-device)
-  - [Configure Take a Test  with a dedicated account on multiple devices](#configure-take-a-test-with-a-dedicated-account-on-multiple-devices)
+- The simplest approach is to generate a *secure assessment URL* and share it with the students. Students can then use the generated URL to access the assessment through Take a Test. This option is recommended for lower stakes assessments, and its configuration is described in the section: [Create and distribute a secure assessment link](#create-and-distribute-a-secure-assessment-link)
+- Another approach is to configure the devices to use a dedicated account for testing. This option is recommended for higher stakes assessments, as students must sign in using the test-taking account.Once signed in with a dedicated account, Windows will execute Take a Test in a lock-down mode, called **kiosk mode**, which prevents the execution of any applications other than Take a Test. Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
+- [Configure Take a Test in kiosk mode on a single device](#configure-take-a-test-in-kiosk-mode-on-a-single-device)
+- [Configure Take a Test in kiosk mode on multiple devices](#configure-take-a-test-in-kiosk-mode-on-multiple-devices)
 
 ## Create and distribute a secure assessment link
 
-Anything hosted on the web can be presented in a locked down manner using the **Take a Test** app, not just assessments. To lock down online content, embed a URL with a specific prefix and devices will be locked down when users follow the link. This approach is recommended for lower stakes assessment, such as a quick quiz in a class.
+Anything hosted on the web can be presented in a locked down manner using the **Take a Test** app, not just assessments. To lock down online content, embed a URL with a specific prefix and devices will be locked down when users open the link. This approach is recommended for lower stakes assessment, such as a quick quiz in a class.
 
 To create a secure assessment link to the test, there are two options:
 
@@ -81,12 +81,12 @@ To take the test, have the students open the link.
 
 :::image type="content" source="./images/takeatest/desktop-shortcuts.png" alt-text="Windows 11 SE desktop showing two shortcuts to assessment URLs." border="true":::
 
-If using `enforceLockdown`, to exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. Students will be prompted to type their password to get back to the desktop.
+If using `enforceLockdown`, to exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. Students will be prompted to type their password to get back to their desktop.
 
-## Configure Take a Test with a dedicated account on a single device
+## Configure Take a Test in kiosk mode on a single device
 
 For higher stakes testing, such as mid-term exams, you can set up a device with a dedicated testing account running the Take a Test app in kiosk mode.
-To configure Take a Test with a dedicated testing account on a single PC, follow these steps:
+To configure a device for this scenario, follow these steps:
 
 1. Sign into the Windows device with an administrator account
 1. Open the **Settings** app and select **Accounts** > **Other Users**
@@ -111,7 +111,7 @@ To configure Take a Test with a dedicated testing account on a single PC, follow
 1. To take the test, a student must sign in using the test-taking account selected in step 4
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
-## Configure Take a Test  with a dedicated account on multiple devices
+## Configure Take a Test in kiosk mode on multiple devices
 
 For higher stakes testing, such as mid-term exams, you can set up devices with a dedicated testing account running the Take a Test app in kiosk mode.
 
@@ -170,7 +170,7 @@ To configure a provisioning package for Take a Test, you can either use Set up S
 
 To configure Take a Test with a dedicated account using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
 
-:::image type="content" source="./images/takeatest/suspcs-take-a-test.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" lightbox="./images/takeatest/suspcs-take-a-test.png" border="true":::
+:::image type="content" source="./images/takeatest/suspcs-take-a-test.png" alt-text="Set up School PCs app - Take a test page" lightbox="./images/takeatest/suspcs-take-a-test.png" border="true":::
 
 ### Create a provisioning package using Windows Configuration Designer
 
@@ -186,7 +186,7 @@ To configure Take a Test with a dedicated account using Windows Configuration De
 | <li> Path: **`SharedPC/AccountManagement/KioskModeUserTileDisplayText`** </li><li>Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
 | <li> Path: **`TakeATest/LaunchURI/`** </li><li>Value: **\<provide testing URL>**</li>|
 
-:::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
+:::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="Windows Configuration Designer - configuration of policies to enable Take a Test to run in kiosk mode" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
 
 ### Apply the provisioning package
 
@@ -196,11 +196,11 @@ Follow the steps in [Apply a provisioning package][WIN-1] to apply the package t
 
 ## How to use Take a Test with a dedicated account
 
-When the policy or provisioning package is applied to the devices, students will be able to select the testing account from the sign-in screen. The device will be locked down and Take a Test will open the assessment URL.
+When the policy or provisioning package is applied to the devices, students will be able to select the testing account from the sign-in screen. Take a Test will be executed in kiosk mode, opening the assessment URL.
 
 ## How to exit Take a Test
 
-To exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. You will have the option to sign out of the test-taking account or return to the test. If you sign out, the device will be unlocked and you can use the device as normal.
+To exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. You will have the option to sign out of the test-taking account or return to the test. Once signed out, the device will be unlocked from kiosk mode and can be used as normal.
 
 The following animation shows the process of signing in to the test-taking account, taking a test, and exiting the test:
 
