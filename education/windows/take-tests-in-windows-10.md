@@ -70,8 +70,7 @@ There are several ways to configure devices for assessments, depending on your u
     You can enable this using a schema activation.
 
 
-## How to exit Take a Test
-To exit the Take a Test app at any time, press Ctrl+Alt+Delete.
+
 
 
 ## Get more info

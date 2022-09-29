@@ -1,18 +1,16 @@
 ---
 title: Configure Take a Test
-description: Learn how to configure and use the Take a Test app
-keywords: take a test, test taking, school
+description: Description of Take a Test app for Windows and how to configure it via Intune and provisioning package.
+ms.date: 09/30/2022
 ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
+ms.technology: windows
+ms.topic: how-to
 ms.localizationpriority: medium
-ms.collection: education
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 09/30/2022
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
+ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
@@ -76,16 +74,18 @@ Once the link is created, you can distribute it through the web, email, OneNote,
 
 For example, you can create and copy the shortcut to the assessment URL to the students' desktop.
 
-To take the test, have the students click on the link and provide user consent.
+To take the test, have the students open the link.
 
-> [!NOTE] 
+> [!NOTE]
 > If you enabled printing, the printer must be pre-configured for the account before the student takes the test.
 
 :::image type="content" source="./images/takeatest/desktop-shortcuts.png" alt-text="Windows 11 SE desktop showing two shortcuts to assessment URLs." border="true":::
 
+If using `enforceLockdown`, to exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. Students will be prompted to type their password to get back to the desktop.
+
 ## Configure Take a Test with a dedicated account on a single device
 
-For higher stakes testing, such as mid-term exams, you can set up a device with a dedicated testing account.
+For higher stakes testing, such as mid-term exams, you can set up a device with a dedicated testing account running the Take a Test app in kiosk mode.
 To configure Take a Test with a dedicated testing account on a single PC, follow these steps:
 
 1. Sign into the Windows device with an administrator account
@@ -113,12 +113,27 @@ To configure Take a Test with a dedicated testing account on a single PC, follow
 
 ## Configure Take a Test  with a dedicated account on multiple devices
 
-For higher stakes testing, such as mid-term exams, you can set up devices with a dedicated testing account.
-Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+For higher stakes testing, such as mid-term exams, you can set up devices with a dedicated testing account running the Take a Test app in kiosk mode.
+
+> [!TIP]
+> While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
+>
+> An additional benefit of using a guest account, is that your students don't have to type a password to access the test.
+
+Follow the instructions below to configure your devices with a guest account, using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To set up a dedicated account for Take a Test using Intune for Education, follow these steps:
+To configure a guest account for Take a Test, you can either use Intune for Education or a custom profile. While Intune for Education provides a simpler experience, a custom profile provides more flexibility and control over the configuration.
+
+> [!IMPORTANT]
+> Currently, the policy created in Intune for Education is applicable to Windows 10 and Windows 11 only. **It will not apply to Windows 11 SE devices.**
+>
+> If you want to configure Take a Test for Windows 11 SE devices, you must use a custom policy.
+
+### Configure Take a Test from Intune for Education
+
+To configure a guest account for Take a Test using Intune for Education, follow these steps:
 
 1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
 1. Select **Groups** > Pick a group to configure Take a Test for
@@ -127,104 +142,91 @@ To set up a dedicated account for Take a Test using Intune for Education, follow
 1. Specify a **Profile Name**, **Account Name**, **Assessment URL** and, optionally, **Description** and options allowed during the test
 1. Select **Create and assign profile**
 
-:::image type="content" source="./images/takeatest/intune-education-take-a-test-profile.png" alt-text="Intune for Education - creation of a Take a Test profile." border="true":::
+:::image type="content" source="./images/takeatest/intune-education-take-a-test-profile.png" alt-text="Intune for Education - creation of a Take a Test profile." lightbox="./images/takeatest/intune-education-take-a-test-profile.png" border="true":::
 
-> [!IMPORTANT]
-> Currently, this policy is applicable to Windows 10 and Windows 11 only. It will not apply to Windows 11 SE devices.
->
-> If you want to configure Take a Test for Windows 11 SE devices, you must use a custom profile, as described below.
+### Configure Take a Test with a custom policy
 
-Another option to configure devices using Intune, is by using a custom profile. This option is applicable to all versions of Windows 10 and Windows 11, including Windows 11 SE.
-To configure Take a Test using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+Another option to configure devices with Intune, is to use a custom policy. This option is applicable to all versions of Windows 10 and Windows 11, including Windows 11 SE.
+To configure a guest account for Take a Test using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
 
-| Setting |
-|--------|
-| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
+| Category | Setting  | Value| Notes |
+|-|-|-|-|
+| Local Policies Security Options | Interactive Logon Do Not Display Last Signed In | Enabled ||
+| Shared PC | Account Model | Domain | |
+| Shared PC | Deletion Policy | Delete at disk space threshold and inactive threshold | This policy ensures that|
+| Shared PC | Disk Level Caching	50
+| Shared PC | Disk Level Deletion	25
+| Shared PC | Inactive Threshold	30
+| Shared PC | Kiosk Mode AUMID		Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App
+| Shared PC | Kiosk Mode User Tile Display Text	Take a Test
+| Shared PC | Maintenance Start Time	1200
+| Windows Logon | Hide Fast User Switching | Enabled | |
+
+:::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure Take a Test for.
 
-When the policy is applied to the devices, students will be able to select the testing account from the sign-in screen. The device will be locked down and Take a Test will open the assessment URL.
-
-#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
-
-To Set up a test account in the Set up School PCs app 
-If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
-
-If you set up Take a Test, the **Take a Test** button is added on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
-
-**Figure 1** - Configure Take a Test in the Set up School PCs app
-
-![Configure Take a Test in the Set up School PCs app.](images/takeatest/suspc_choosesettings_setuptakeatest.png)
-
-### Set up a test account through Windows Configuration Designer
-To set up a test account through Windows Configuration Designer, follow these steps.
-
-1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
-   1. After you're done with the wizard, don't click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
-   2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
-   3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
-
-      **Figure 7** - Add the account to use for test-taking
-
-      ![Add the account to use for test-taking.](images/wcd/wcd_settings_assignedaccess.png)
-
-      The account can be in one of the following formats:
-      - username
-      - domain\username
-      - computer name\\username
-      - username@tenant.com
-
-   4. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
-      - In **LaunchURI**, enter the assessment URL.
-      - In **TesterAccount**, enter the test account you entered in step 3.
-
-3. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
-
-   - You'll see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
-   - Copy the provisioning package to a USB drive.
-
-4. Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
-
-Apply the provisioning package to the devices that you want to enable Stickers on.
-
-### Set up a test account in MDM or Configuration Manager
-You can configure a dedicated testing account through MDM or Configuration Manager by specifying a single account in the directory to be the test-taking account. Devices that have the test-taking policies can sign into the specified account to take the test.
-
-**Best practice**
-- Create a single account in the directory specifically for test taking 
-  - Active Directory example: Contoso\TestAccount
-  - Azure Active Directory example: testaccount@contoso.com
-
-- Deploy the policies to the group of test-taking devices
-
-**To enable this configuration**
-
-1. Launch your management console.
-2. Create a policy to set up single app kiosk mode using the following values:
 
    - **Custom OMA-DM URI** = ./Vendor/MSFT/AssignedAccess/KioskModeApp
    - **String value** = {"*Account*":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}
-
      *Account* can be in one of the following formats:
      - username (not recommended)
      - domain\username
      - computer name\\username (not recommended)
      - username@tenant.com
 
-3. Create a policy to configure the assessment URL using the following values:
-
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/LaunchURI
     - **String value** = *assessment URL*
 
-4. Create a policy that associates the assessment URL to the account using the following values:
 
     - **Custom OMA-DM URI** = ./Vendor/MSFT/SecureAssessment/TesterAccount
     - **String value** = Enter the account that you specified in step 2, using the same account format.
 
-5. Deploy the policies to the test-taking devices.
-6. To take the test, the student signs in to the test account.
+#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
+To configure a provisioning package for Take a Test, you can either use Set up School PCs or Windows Configuration Designer. While Set up School PCs provides a simple wizard to configure the provisioning package, Windows Configuration Designer provides more flexibility and control over the configuration.
+
+### Create a provisioning package using Set up School PCs
+
+To configure Take a Test with a dedicated account using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
+
+:::image type="content" source="./images/takeatest/suspcs-take-a-test.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" lightbox="./images/takeatest/suspcs-take-a-test.png" border="true":::
+
+### Create a provisioning package using Windows Configuration Designer
+
+To configure Take a Test with a dedicated account using Windows Configuration Designer (WCD), use the following settings:
+
+| Setting |
+|--------|
+| <li> Path: **`Policies/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn`** </li><li>Value: **Enabled**</li>|
+| <li> Path: **`Policies/WindowsLogon/HideFastUserSwitching`** </li><li>Value: **True**</li>|
+| <li> Path: **`SharedPC/AccountManagement/AccountModel`** </li><li>Value: **Domain-joined only**</li>|
+| <li> Path: **`SharedPC/AccountManagement/EnableAccountManager`** </li><li>Value: **True**</li>|
+| <li> Path: **`SharedPC/AccountManagement/KioskModeAUMID`** </li><li>Value: **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**</li>|
+| <li> Path: **`SharedPC/AccountManagement/KioskModeUserTileDisplayText`** </li><li>Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
+| <li> Path: **`TakeATest/LaunchURI/`** </li><li>Value: **\<provide testing URL>**</li>|
+
+:::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
+
+### Apply the provisioning package
+
+Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
 
 ---
 
+## How to use Take a Test with a dedicated account
+
+When the policy or provisioning package is applied to the devices, students will be able to select the testing account from the sign-in screen. The device will be locked down and Take a Test will open the assessment URL.
+
+## How to exit Take a Test
+
+To exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. You will have the option to sign out of the test-taking account or return to the test. If you sign out, the device will be unlocked and you can use the device as normal.
+
+The following animation shows the process of signing in to the test-taking account, taking a test, and exiting the test:
+
 :::image type="content" source="./images/takeatest/sign-in-sign-out.gif" alt-text="Signing in and signing out with a test account" border="true":::
+
+-----------
+
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+[MEM-2]: /mem/intune/configuration/settings-catalog

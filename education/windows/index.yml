@@ -83,9 +83,13 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-        - text: Take tests and assessments
+        - text: Take tests and assessments in Windows
           url: take-tests-in-windows-10.md
         - text: Change Windows editions
           url: change-home-to-edu.md
         - text: "Deploy Minecraft: Education Edition"
           url: get-minecraft-for-education.md
+      - linkListType: how-to-guide
+        links:
+        - text: Configure Take a Test
+          url: edu-take-a-test.md
