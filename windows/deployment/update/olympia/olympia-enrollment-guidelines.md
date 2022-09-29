@@ -4,7 +4,7 @@ description: Learn about the retirement of Olympia Corp and how to back up your 
 ms.author: lizlong
 ms.topic: article
 ms.prod: windows-client
-ms.technology: windows
+ms.technology: windows-client
 author: lizgt2000
 ms.reviewer: 
 manager: aaroncz
