@@ -36,10 +36,8 @@ items:
           href: edu-themes.md
         - name: Configure Stickers
           href: edu-stickers.md
-        - name: Configure Take a Test on a single PC
-          href: take-a-test-single-pc.md
-        - name: Configure a Test on multiple PCs
-          href: take-a-test-multiple-pcs.md
+        - name: Configure Take a Test
+          href: edu-take-a-test.md
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
     - name: Change Windows edition

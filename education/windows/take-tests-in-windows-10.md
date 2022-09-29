@@ -61,7 +61,7 @@ There are several ways to configure devices for assessments, depending on your u
     - Set up School PCs app
     - Intune for Education
 
-      For more info about these methods, see [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md).
+      For more info about these methods, see [Set up Take a Test](edu-take-a-test.md).
 
 2. **Create and distribute the assessment URL through the web, email, OneNote, or any other method** 
 
