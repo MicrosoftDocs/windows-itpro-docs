@@ -59,7 +59,7 @@ The deployment service exposes these capabilities through Microsoft [Graph REST 
 To work with the deployment service, devices must meet all these requirements:
 
 - Be running Windows 10, version 1709 or later (or Windows 11)
-- Be joined to Azure Active Directory (AD) or Hybrid AD
+- Be joined or registered to Azure Active Directory (AD) or Hybrid AD
 - Have one of the following Windows 10 or Windows 11 editions installed:
     - Pro
     - Enterprise
