@@ -23,9 +23,11 @@ appliesto:
 
 Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with this, Windows provides an application called **Take a Test**. The application is a secure browser that can be configured to only allow access to a specific URL or a list of URLs. The application also provides a number of other features to help with testing, such as preventing printing, preventing screen capture, and preventing text suggestions.
 
-There are different ways to configure and use Take a Test.
-The simplest approach is to generate a *secure assessment URL* and share it with the students. Students can then use the URL access the assessment through Take a Test. This approach is recommended for lower stakes assessments, and it's described in [Create and distribute a secure assessment link](#create-and-distribute-a-secure-assessment-link).
-Another approach is to configure the devices to use a dedicated account for testing. This approach is recommended for higher stakes assessments. Depending if you need to configure a single device or multiple devices, the process is described in [[Configure Take a Test with a dedicated account on a single device](#configure-a-single-device-for-testing)](#configure-take-a-test-with-a-dedicated-account-on-a-single-device) or [Configure Take a Test  with a dedicated account on multiple devices](#configure-take-a-test-with-a-dedicated-account-on-multiple-devices)).
+There are different ways to configure and use Take a Test:
+- The simplest approach is to generate a *secure assessment URL* and share it with the students. Students can then use the URL access the assessment through Take a Test. This option is recommended for lower stakes assessments, and it's described in [Create and distribute a secure assessment link](#create-and-distribute-a-secure-assessment-link)
+- Another approach is to configure the devices to use a dedicated account for testing. This option is recommended for higher stakes assessments, as students must sign in using the test-taking account, and they cannot access any applications other than Take a Test. Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
+  - [Configure Take a Test with a dedicated account on a single device](#configure-take-a-test-with-a-dedicated-account-on-a-single-device)
+  - [Configure Take a Test  with a dedicated account on multiple devices](#configure-take-a-test-with-a-dedicated-account-on-multiple-devices)
 
 ## Create and distribute a secure assessment link
 
@@ -116,53 +118,32 @@ Follow the instructions below to configure your devices using either Microsoft I
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To enable Stickers using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+To set up a dedicated account for Take a Test using Intune for Education, follow these steps:
 
-You can set up a test-taking account in Intune for Education. To do this, follow these steps:
+1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
+1. Select **Groups** > Pick a group to configure Take a Test for
+1. Select **Windows device settings**
+1. Expand the **Take a Test profiles** category and select **+ Assign new Take a Test profile**
+1. Specify a **Profile Name**, **Account Name**, **Assessment URL** and, optionally, **Description** and options allowed during the test
+1. Select **Create and assign profile**
 
-1. In Intune for Education, select **Take a Test profiles** from the menu.
-2. Click **+ Add Test Profile** to create an account.
+:::image type="content" source="./images/takeatest/intune-education-take-a-test-profile.png" alt-text="Intune for Education - creation of a Take a Test profile." border="true":::
 
-    **Figure 2** - Add a test profile in Intune for Education
+> [!IMPORTANT]
+> Currently, this policy is applicable to Windows 10 and Windows 11 only. It will not apply to Windows 11 SE devices.
+>
+> If you want to configure Take a Test for Windows 11 SE devices, you must use a custom profile, as described below.
 
-    ![Add a test profile in Intune for Education.](images/takeatest/i4e_takeatestprofile_addnewprofile.png)
+Another option to configure devices using Intune, is by using a custom profile. This option is applicable to all versions of Windows 10 and Windows 11, including Windows 11 SE.
+To configure Take a Test using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
 
-3. In the new profile page:
-   1. Enter a name for the profile.
-   2. Enter the assessment URL.
-   3. Toggle the switch to **Allow screen capture**.
-   4. Select a user account to use as the test-taking account.
-   5. Click **Save**.
+| Setting |
+|--------|
+| <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-      **Figure 3** - Add information about the test profile
+Assign the policy to a security group that contains as members the devices or users that you want to configure Take a Test for.
 
-      ![Add information about the test profile.](images/takeatest/i4e_takeatestprofile_newtestaccount.png)
-
-      After you save the test profile, you'll see a summary of the settings that you configured for Take a Test. Next, you'll need to assign the test profile to a group that will be using the test account.
-    
-4. In the test account page, click **Groups**.
-
-   **Figure 4** - Assign the test account to a group
-
-   ![Assign the test account to a group.](images/takeatest/i4e_takeatestprofile_accountsummary.png)
-
-5. In the **Groups** page, click **Change group assignments**.
-
-    **Figure 5** - Change group assignments
-
-    ![Change group assignments.](images/takeatest/i4e_takeatestprofile_groups_changegroupassignments.png)
-
-6. In the **Change group assignments** page:
-   1. Select a group from the right column and click **Add Members** to select the group and assign the test-taking account to that group. You can select more than one group. 
-   2. Click **OK** when you're done making your selection.
-
-      **Figure 6** - Select the group(s) that will use the test account
-
-      ![Select the groups that will use the test account.](images/takeatest/i4e_takeatestprofile_groupassignment_selected.png)
-
-And that's it! When the students from the selected group sign in to the student PCs using the Take a Test user name that you selected, the PC will be locked down and Take a Test will open the assessment URL and students can start taking tests.
-
-Assign the policy to a security group that contains as members the devices or users that you want to enable Stickers on.
+When the policy is applied to the devices, students will be able to select the testing account from the sign-in screen. The device will be locked down and Take a Test will open the assessment URL.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -207,8 +188,6 @@ To set up a test account through Windows Configuration Designer, follow these st
 
 Apply the provisioning package to the devices that you want to enable Stickers on.
 
----
-
 ### Set up a test account in MDM or Configuration Manager
 You can configure a dedicated testing account through MDM or Configuration Manager by specifying a single account in the directory to be the test-taking account. Devices that have the test-taking policies can sign into the specified account to take the test.
 
@@ -247,3 +226,5 @@ You can configure a dedicated testing account through MDM or Configuration Manag
 6. To take the test, the student signs in to the test account.
 
 ---
+
+:::image type="content" source="./images/takeatest/sign-in-sign-out.gif" alt-text="Signing in and signing out with a test account" border="true":::
