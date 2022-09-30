@@ -55,7 +55,7 @@ To configure a device to execute Take a Test in kiosk mode with a local account,
 
 ## Configure Take a Test in kiosk mode on multiple devices
 
-To configure devices to execute Take a Test in kiosk mode using a guest account, you can use Microsoft Intune or provisioning packages.
+To configure devices to execute Take a Test in kiosk mode using a guest account, you can use Microsoft Intune or a provisioning package.
 
 > [!TIP]
 > While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
