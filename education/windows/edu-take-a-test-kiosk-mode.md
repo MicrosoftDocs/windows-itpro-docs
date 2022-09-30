@@ -1,6 +1,6 @@
 ---
-title: Configure Take a Test
-description: Description of Take a Test app for Windows and how to configure it via Intune and provisioning package.
+title: Configure Take a Test in kiosk mode
+description: Description of how to configure Windows to execute the Take a Test app in kiosk mode, using Intune and provisioning packages.
 ms.date: 09/30/2022
 ms.prod: windows
 ms.technology: windows
@@ -19,69 +19,12 @@ appliesto:
 
 # Configure Take a Test in kiosk mode
 
-Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with this, Windows provides an application called **Take a Test**. The application is a secure browser that can be configured to only allow access to a specific URL or a list of URLs. The application also provides a number of other features to help with testing, such as preventing printing, preventing screen capture, and preventing text suggestions.
+Executing Take a Test in kiosk mode is the recommended option for high stakes assessments. In this mode, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. Students must sign in using a test-taking account.
 
-There are different ways to configure and use Take a Test:
-- The simplest approach is to generate a *secure assessment URL* and share it with the students. Students can then use the generated URL to access the assessment through Take a Test. This option is recommended for lower stakes assessments, and its configuration is described in the section: [Create and distribute a secure assessment link](#create-and-distribute-a-secure-assessment-link)
-- Another approach is to configure the devices to use a dedicated account for testing. This option is recommended for higher stakes assessments, as students must sign in using the test-taking account.Once signed in with a dedicated account, Windows will execute Take a Test in a lock-down mode, called **kiosk mode**, which prevents the execution of any applications other than Take a Test. Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
+Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
+s
 - [Configure Take a Test in kiosk mode on a single device](#configure-take-a-test-in-kiosk-mode-on-a-single-device)
 - [Configure Take a Test in kiosk mode on multiple devices](#configure-take-a-test-in-kiosk-mode-on-multiple-devices)
-
-## Create and distribute a secure assessment link
-
-Anything hosted on the web can be presented in a locked down manner using the **Take a Test** app, not just assessments. To lock down online content, embed a URL with a specific prefix and devices will be locked down when users open the link. This approach is recommended for lower stakes assessment, such as a quick quiz in a class.
-
-To create a secure assessment link to the test, there are two options:
-
-- Create a link using a web application
-- Create a link using schema activation
-
-### Create a link using a web application
-
-For this option, copy the assessment URL and open the web application <a href="https://aka.ms/create-a-take-a-test-link" target="_blank"><u>Customize your assessment URL</u></a>, where you can:
-
-1. Paste the link to the assessment URL
-1. Select the options you want to allow during the test
-1. Generate the link by selecting the button Create link
-
-This is an ideal option for teachers who want to create a link to a specific assessment and and share it with students using OneNote, for example.
-
-### Create a link using schema activation
-
-For this option, you embed a URL with a specific prefix and specify parameters depending on what you want to allow during the test.
-The URL must be in the following format:
-
-```
-ms-edu-secureassessment:<URL>#enforceLockdown
-```
-
-To enable printing, screen capture, or both, use the above link and append one of these parameters:
-
-- `&enableTextSuggestions` - Enables text suggestions
-- `&requirePrinting` - Enables printing
-- `&enableScreenCapture` - Enables screen capture
-- `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability.
-
-If these parameters are not included, the default behavior is to disable the capabilities.
-
-For tests that utilizes the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that are not allowed to run during lockdown. Take a Test will lock down the device once the applications are closed.
-
-To enable permissive mode, do not include `enforceLockdown` in the schema parameters. For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
-
-### Distribute the link
-
-Once the link is created, you can distribute it through the web, email, OneNote, or any other method of your choosing.
-
-For example, you can create and copy the shortcut to the assessment URL to the students' desktop.
-
-To take the test, have the students open the link.
-
-> [!NOTE]
-> If you enabled printing, the printer must be pre-configured for the account before the student takes the test.
-
-:::image type="content" source="./images/takeatest/desktop-shortcuts.png" alt-text="Windows 11 SE desktop showing two shortcuts to assessment URLs." border="true":::
-
-If using `enforceLockdown`, to exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. Students will be prompted to type their password to get back to their desktop.
 
 ## Configure Take a Test in kiosk mode on a single device
 
