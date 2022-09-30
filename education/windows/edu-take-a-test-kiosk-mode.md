@@ -28,7 +28,7 @@ Depending if you need to configure a single device or multiple devices, the proc
 
 ## Configure Take a Test in kiosk mode on a single device
 
-To configure a device to execute Take a Test in kiosk mode:
+To configure a device to execute Take a Test in kiosk mode with a local account, follow these steps:
 
 1. Sign into the Windows device with an administrator account
 1. Open the **Settings** app and select **Accounts** > **Other Users**
@@ -55,7 +55,7 @@ To configure a device to execute Take a Test in kiosk mode:
 
 ## Configure Take a Test in kiosk mode on multiple devices
 
-To configure a guest account to execute Take a Test in kiosk, you can use Intune or provisioning packages. Select the option that best suits your needs.
+To configure devices to execute Take a Test in kiosk mode using a guest account, you can use Intune or provisioning packages. Select the option that best suits your needs.
 
 > [!TIP]
 > While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
@@ -64,9 +64,9 @@ To configure a guest account to execute Take a Test in kiosk, you can use Intune
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure a guest account to execute Take a Test in kiosk mode, you can either use Intune for Education or a custom profile in Intune:
+To configure devices, you can either use Intune for Education or a custom profile in Intune:
 
-- Intune for Education provides a simpler experience to configure devices
+- Intune for Education provides a simpler experience
 - A custom profile provides more flexibility and controls over the configuration
 
 > [!IMPORTANT]
@@ -76,7 +76,7 @@ To configure a guest account to execute Take a Test in kiosk mode, you can eithe
 
 ### Configure Take a Test from Intune for Education
 
-To configure a guest account to execute Take a Test in kiosk mode using Intune for Education, follow these steps:
+To configure devices using Intune for Education, follow these steps:
 
 1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
 1. Select **Groups** > Pick a group to configure Take a Test for
@@ -89,7 +89,7 @@ To configure a guest account to execute Take a Test in kiosk mode using Intune f
 
 ### Configure Take a Test with a custom policy
 
-To configure a guest account to execute Take a Test in kiosk mode using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
+To configure devices using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
 
 | Setting |
 |--------|
@@ -106,20 +106,20 @@ Assign the policy to a security group that contains as members the devices or us
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure a guest account to execute Take a Test in kiosk mode using a provisioning package, you can either use Set up School PCs or Windows Configuration Designer:
+To create a provisioning package, you can either use Set up School PCs or Windows Configuration Designer:
 
-- Set up School PCs provides a guided experience to configure the provisioning package
+- Set up School PCs provides a simpler, guided experience
 - Windows Configuration Designer provides more flexibility and controls over the configuration
 
 ### Create a provisioning package using Set up School PCs
 
-To configure a guest account to execute Take a Test in kiosk mode using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
+To create a provisioning package using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
 
 :::image type="content" source="./images/takeatest/suspcs-take-a-test.png" alt-text="Set up School PCs app - Take a test page" lightbox="./images/takeatest/suspcs-take-a-test.png" border="true":::
 
 ### Create a provisioning package using Windows Configuration Designer
 
-To configure a guest account to execute Take a Test in kiosk mode using Windows Configuration Designer (WCD), use the following settings:
+To create a provisioning package using Windows Configuration Designer (WCD), use the following settings:
 
 | Setting |
 |--------|
@@ -139,7 +139,7 @@ Follow the steps in [Apply a provisioning package][WIN-1] to apply the package t
 
 ---
 
-## How to use Take a Test with a dedicated account
+## How to use Take a Test with a dedicated accounts
 
 Once the policy or provisioning package is applied to the devices, Windows will enable the testing account in the sign-in screen. If selected, Take a Test will be executed in kiosk mode using the guest account, opening the assessment URL.
 
