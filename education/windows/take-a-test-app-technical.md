@@ -99,12 +99,11 @@ To enable viewing events in the Event Viewer:
 
 1. Open the `Event Viewer`
 1. Navigate to `Applications and Services Logs > Microsoft > Windows > Management-SecureAssessment`
-1. Right-click `Operational` and select `Enable Log`
+1. Select `Operational` > `Enable Log`
 
 To save the event logs:
 
-1. Right-click `Operational`
-1. Click `Save All Events As…`
+1. Select `Operational` > `Save All Events As…`
 
 ## Learn more
 
