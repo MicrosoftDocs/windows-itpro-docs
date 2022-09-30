@@ -62,11 +62,11 @@ To configure devices to execute Take a Test in kiosk mode using a guest account,
 >
 > An additional benefit of using a guest account, is that your students don't have to type a password to access the test.
 
-Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure devices, you can either use Intune for Education or a custom profile in Intune:
+To configure devices, you can use Intune for Education or a custom profile in Microsoft Intune:
 
 - Intune for Education provides a simpler experience
 - A custom profile provides more flexibility and controls over the configuration
