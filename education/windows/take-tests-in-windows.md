@@ -49,9 +49,9 @@ To create a secure assessment link to the test, there are two options:
 
 For this option, copy the assessment URL and open the web application <a href="https://aka.ms/create-a-take-a-test-link" target="_blank"><u>Customize your assessment URL</u></a>, where you can:
 
-1. Paste the link to the assessment URL
-1. Select the options you want to allow during the test
-1. Generate the link by selecting the button Create link
+- Paste the link to the assessment URL
+- Select the options you want to allow during the test
+- Generate the link by selecting the button Create link
 
 This is an ideal option for teachers who want to create a link to a specific assessment and share it with students using OneNote, for example.
 
