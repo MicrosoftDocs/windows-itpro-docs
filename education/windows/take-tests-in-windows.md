@@ -93,4 +93,8 @@ To take the test, have the students open the link.
 > [!NOTE]
 > If using `enforceLockdown`, to exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. Students will be prompted to type their password to get back to their desktop.
 
-For more information about the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).
+## Additional information
+
+Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/office/.
+
+To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).

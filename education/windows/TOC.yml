@@ -27,17 +27,15 @@ items:
     - name: Windows 10 configuration recommendations for education customers
       href: configure-windows-for-education.md
     - name: Take tests and assessments in Windows
-      href: take-tests-in-windows-10.md
+      href: take-tests-in-windows.md
 - name: How-to-guides
   items:
-    - name: Configure education features
-      items:
-        - name: Configure education themes
-          href: edu-themes.md
-        - name: Configure Stickers
-          href: edu-stickers.md
-        - name: Configure Take a Test
-          href: edu-take-a-test.md
+    - name: Configure education themes
+      href: edu-themes.md
+    - name: Configure Stickers
+      href: edu-stickers.md
+    - name: Configure Take a Test in kiosk mode
+      href: edu-take-a-test-kiosk-mode.md
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
     - name: Change Windows edition
