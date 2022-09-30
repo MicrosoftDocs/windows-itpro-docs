@@ -13,8 +13,11 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Current Version
-### Version 1332
+# Version History
+Microsoft periodically releases software updates for your cache nodes to improve performance, caching efficiency, and other bug fixes. These updates will be performed automatically at low-traffic hours, requiring no 
+
+## Current Version
+#### Version 1332
 Released September 15, 2022
 
 Version notes:
