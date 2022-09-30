@@ -88,8 +88,9 @@ In addition to the steps outlined above, the binary policy file must also be cop
    $MountPoint = 'C:\EFIMount'
    $EFIDestinationFolder = "$MountPoint\EFI\Microsoft\Boot\CiPolicies\Active"
    $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
+   if (-Not (Test-Path $MountPoint)) { New-Item -Path $MountPoint -Type Directory -Force }
    mountvol $MountPoint $EFIPartition
-   mkdir $EFIDestinationFolder
+   if (-Not (Test-Path $EFIDestinationFolder)) { New-Item -Path $EFIDestinationFolder -Type Directory -Force }
     ```
 
 2. Copy the signed policy to the created folder:
