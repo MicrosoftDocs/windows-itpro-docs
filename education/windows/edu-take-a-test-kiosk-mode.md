@@ -135,8 +135,6 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 
 :::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="Windows Configuration Designer - configuration of policies to enable Take a Test to run in kiosk mode" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
 
-### Apply the provisioning package
-
 Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
 ---
