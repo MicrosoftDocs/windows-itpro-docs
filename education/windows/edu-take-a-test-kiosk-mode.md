@@ -139,7 +139,7 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
 
 ---
 
-## How to use Take a Test with a dedicated accounts
+## How to use Take a Test in kiosk mode
 
 Once the policy or provisioning package is applied to the devices, Windows will enable the testing account in the sign-in screen. If selected, Take a Test will be executed in kiosk mode using the guest account, opening the assessment URL.
 
