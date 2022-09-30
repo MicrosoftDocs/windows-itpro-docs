@@ -69,8 +69,8 @@ To ensure Take a Test activates correctly, make sure the following Group Policy 
 When Take a Test is running, the following functionality is available to students:
 
 - Assistive technology that is configured to run above the lock screen should run as expected
-- Narrator is available through <kbd>🪟</kbd>+<kbd>Enter</kbd>
-- Magnifier is available through <kbd>🪟</kbd>+<kbd>+</kbd>
+- Narrator is available through <kbd>Win</kbd>+<kbd>Enter</kbd>
+- Magnifier is available through <kbd>Win</kbd>+<kbd>+</kbd>
 - The student can press <kbd>Alt</kbd>+<kbd>Tab</kbd> when locked down. This key press results in the student being able to switch between the following elements:
     - Take a Test
     - Assistive technology that may be running
