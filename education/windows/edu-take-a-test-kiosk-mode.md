@@ -17,7 +17,7 @@ appliesto:
 - ✅ <b>Windows 11 SE</b>
 ---
 
-# Configure Take a Test
+# Configure Take a Test in kiosk mode
 
 Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with this, Windows provides an application called **Take a Test**. The application is a secure browser that can be configured to only allow access to a specific URL or a list of URLs. The application also provides a number of other features to help with testing, such as preventing printing, preventing screen capture, and preventing text suggestions.
 
