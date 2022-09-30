@@ -55,7 +55,7 @@ To configure a device to execute Take a Test in kiosk mode with a local account,
 
 ## Configure Take a Test in kiosk mode on multiple devices
 
-To configure devices to execute Take a Test in kiosk mode using a guest account, you can use Intune or provisioning packages. Select the option that best suits your needs.
+To configure devices to execute Take a Test in kiosk mode using a guest account, you can use Microsoft Intune or provisioning packages (PPKG). Select the option that best suits your needs.
 
 > [!TIP]
 > While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
@@ -102,7 +102,7 @@ To configure devices using Microsoft Intune, create a [custom policy][MEM-1] wit
 
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
-Assign the policy to a security group that contains as members the devices or users that you want to configure Take a Test for.
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -113,13 +113,13 @@ To create a provisioning package, you can either use Set up School PCs or Window
 
 ### Create a provisioning package using Set up School PCs
 
-To create a provisioning package using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
+Create a provisioning package using the Set up School PCs app, configuring the settings in the **Set up the Take a Test app** page.
 
 :::image type="content" source="./images/takeatest/suspcs-take-a-test.png" alt-text="Set up School PCs app - Take a test page" lightbox="./images/takeatest/suspcs-take-a-test.png" border="true":::
 
 ### Create a provisioning package using Windows Configuration Designer
 
-To create a provisioning package using Windows Configuration Designer (WCD), use the following settings:
+[Create a provisioning package][WIN-1] using Windows Configuration Designer with the following settings:
 
 | Setting |
 |--------|
@@ -135,7 +135,7 @@ To create a provisioning package using Windows Configuration Designer (WCD), use
 
 ### Apply the provisioning package
 
-Follow the steps in [Apply a provisioning package][WIN-1] to apply the package that you created.
+Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
 ---
 
@@ -156,4 +156,5 @@ The following animation shows the process of signing in to the test-taking accou
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 [MEM-2]: /mem/intune/configuration/settings-catalog
 
-[WIN-1]: /windows/configuration/provisioning-packages/provisioning-apply-package
+[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
+[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
