@@ -19,17 +19,16 @@ appliesto:
 
 # Configure Take a Test in kiosk mode
 
-Executing Take a Test in kiosk mode is the recommended option for high stakes assessments. In this mode, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. Students must sign in using a test-taking account.
+Executing Take a Test in kiosk mode is the recommended option for high stakes assessments, such as mid-term exams. In this mode, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. Students must sign in using a test-taking account.
 
 Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
-s
+
 - [Configure Take a Test in kiosk mode on a single device](#configure-take-a-test-in-kiosk-mode-on-a-single-device)
 - [Configure Take a Test in kiosk mode on multiple devices](#configure-take-a-test-in-kiosk-mode-on-multiple-devices)
 
 ## Configure Take a Test in kiosk mode on a single device
 
-For higher stakes testing, such as mid-term exams, you can set up a device with a dedicated testing account running the Take a Test app in kiosk mode.
-To configure a device for this scenario, follow these steps:
+To configure a device to execute Take a Test in kiosk mode:
 
 1. Sign into the Windows device with an administrator account
 1. Open the **Settings** app and select **Accounts** > **Other Users**
@@ -56,18 +55,19 @@ To configure a device for this scenario, follow these steps:
 
 ## Configure Take a Test in kiosk mode on multiple devices
 
-For higher stakes testing, such as mid-term exams, you can set up devices with a dedicated testing account running the Take a Test app in kiosk mode.
+To configure a guest account to execute Take a Test in kiosk, you can use Intune or provisioning packages. Select the option that best suits your needs.
 
 > [!TIP]
 > While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
 >
 > An additional benefit of using a guest account, is that your students don't have to type a password to access the test.
 
-Follow the instructions below to configure your devices with a guest account, using either Microsoft Intune or a provisioning package (PPKG).
-
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure a guest account for Take a Test, you can either use Intune for Education or a custom profile. While Intune for Education provides a simpler experience, a custom profile provides more flexibility and control over the configuration.
+To configure a guest account to execute Take a Test in kiosk mode, you can either use Intune for Education or a custom profile in Intune:
+
+- Intune for Education provides a simpler experience to configure devices
+- A custom profile provides more flexibility and controls over the configuration
 
 > [!IMPORTANT]
 > Currently, the policy created in Intune for Education is applicable to Windows 10 and Windows 11 only. **It will not apply to Windows 11 SE devices.**
@@ -76,7 +76,7 @@ To configure a guest account for Take a Test, you can either use Intune for Educ
 
 ### Configure Take a Test from Intune for Education
 
-To configure a guest account for Take a Test using Intune for Education, follow these steps:
+To configure a guest account to execute Take a Test in kiosk mode using Intune for Education, follow these steps:
 
 1. Sign in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank"><b>Intune for Education portal</b></a>
 1. Select **Groups** > Pick a group to configure Take a Test for
@@ -89,8 +89,7 @@ To configure a guest account for Take a Test using Intune for Education, follow 
 
 ### Configure Take a Test with a custom policy
 
-Another option to configure devices with Intune, is to use a custom policy. This option is applicable to all versions of Windows 10 and Windows 11, including Windows 11 SE.
-To configure a guest account for Take a Test using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
+To configure a guest account to execute Take a Test in kiosk mode using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
 
 | Setting |
 |--------|
@@ -107,17 +106,20 @@ Assign the policy to a security group that contains as members the devices or us
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure a provisioning package for Take a Test, you can either use Set up School PCs or Windows Configuration Designer. While Set up School PCs provides a simple wizard to configure the provisioning package, Windows Configuration Designer provides more flexibility and control over the configuration.
+To configure a guest account to execute Take a Test in kiosk mode using a provisioning package, you can either use Set up School PCs or Windows Configuration Designer:
+
+- Set up School PCs provides a guided experience to configure the provisioning package
+- Windows Configuration Designer provides more flexibility and controls over the configuration
 
 ### Create a provisioning package using Set up School PCs
 
-To configure Take a Test with a dedicated account using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
+To configure a guest account to execute Take a Test in kiosk mode using Set up School PCs, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app.
 
 :::image type="content" source="./images/takeatest/suspcs-take-a-test.png" alt-text="Set up School PCs app - Take a test page" lightbox="./images/takeatest/suspcs-take-a-test.png" border="true":::
 
 ### Create a provisioning package using Windows Configuration Designer
 
-To configure Take a Test with a dedicated account using Windows Configuration Designer (WCD), use the following settings:
+To configure a guest account to execute Take a Test in kiosk mode using Windows Configuration Designer (WCD), use the following settings:
 
 | Setting |
 |--------|
@@ -139,11 +141,11 @@ Follow the steps in [Apply a provisioning package][WIN-1] to apply the package t
 
 ## How to use Take a Test with a dedicated account
 
-When the policy or provisioning package is applied to the devices, students will be able to select the testing account from the sign-in screen. Take a Test will be executed in kiosk mode, opening the assessment URL.
+Once the policy or provisioning package is applied to the devices, Windows will enable the testing account in the sign-in screen. If selected, Take a Test will be executed in kiosk mode using the guest account, opening the assessment URL.
 
 ## How to exit Take a Test
 
-To exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. You will have the option to sign out of the test-taking account or return to the test. Once signed out, the device will be unlocked from kiosk mode and can be used as normal.
+To exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd>. You'll be prompted to sign out of the test-taking account, or return to the test. Once signed out, the device will be unlocked from kiosk mode and can be used as normal.
 
 The following animation shows the process of signing in to the test-taking account, taking a test, and exiting the test:
 

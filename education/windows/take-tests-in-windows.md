@@ -38,7 +38,7 @@ There are different ways to use Take a Test, depending on the use case:
 
 ## Create a secure assessment link
 
-Anything hosted on the web can be presented in a locked down manner using the **Take a Test** app, not just assessments. To lock down online content, a URL must be embedded with a specific prefix and devices will be locked down when users open the link.
+Anything hosted on the web can be presented in a locked down manner using the Take a Test app, not just assessments. To lock down online content, a URL must be embedded with a specific prefix and devices will be locked down when users open the link.
 
 To create a secure assessment link to the test, there are two options:
 
@@ -95,6 +95,6 @@ To take the test, have the students open the link.
 
 ## Additional information
 
-Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/office/.
+Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/office/).
 
 To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).
