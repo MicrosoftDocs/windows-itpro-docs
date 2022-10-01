@@ -146,28 +146,26 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
 
 Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
 
-  ```powershell
-  $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
-  $sharedPC.EnableSharedPCMode = $True
-  $sharedPC.SetEduPolicies = $True
-  $sharedPC.SetPowerPolicies = $True
-
 This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
 
 - Use your assessment URL for **$obj.LaunchURI**  
 - Use your tester account for **$obj.TesterAccount**
 - Use your tester account for **-UserName**
-```
 
 >[!NOTE]
->The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](./take-a-test-single-pc.md#set-up-a-dedicated-test-account).
+>The account that you specify for the tester account must already exist on the device.
 
 ```powershell
-$obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
-$obj.LaunchURI='https://www.foo.com';
-$obj.TesterAccount='TestAccount';
-$obj.put()
-Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
+$sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
+$secureAssessment = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SecureAssessment"
+
+$sharedPC.AccountModel = 1
+$sharedPC.KioskModeAUMID = "Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App"
+$sharedPC.KioskModeUserTileDisplayText = "Take a Test"
+$secureAssessment.LaunchURI='https://contoso.com/algebra-exam'
+
+Set-CimInstance -CimInstance $sharedPC
+Set-CimInstance -CimInstance $secureAssessment
 ```
 
 ---
