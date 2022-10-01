@@ -21,14 +21,26 @@ appliesto:
 
 Executing Take a Test in kiosk mode is the recommended option for high stakes assessments, such as mid-term exams. In this mode, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. Students must sign in using a test-taking account.
 
-Depending if you need to configure a single device or multiple devices, the process is described in the following sections:
+The configuration of Take a Test in kiosk mode can be done using:
 
-- [Configure Take a Test in kiosk mode on a single device](#configure-take-a-test-in-kiosk-mode-on-a-single-device)
-- [Configure Take a Test in kiosk mode on multiple devices](#configure-take-a-test-in-kiosk-mode-on-multiple-devices)
+- the Settings app
+- Microsoft Intune/MDM
+- a provisioning package (PPKG)
+- PowerShell
 
-## Configure Take a Test in kiosk mode on a single device
+When using the Settings app, you can configure Take a Test in kiosk mode using a local account only. This option is recommended for devices that are not managed.
+The other options allow you to configure Take a Test in kiosk mode using a local account, an account defined in the directory, or a guest account.
 
-To configure a device to execute Take a Test in kiosk mode with a local account, follow these steps:
+> [!TIP]
+> While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
+>
+> An additional benefit of using a guest account, is that your students don't have to type a password to access the test.
+
+Follow the instructions below to configure your devices, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="images/icons/windows-os.svg"::: **Settings app**](#tab/win)
+
+To create a local account, and configure Take a Test in kiosk mode using the Settings app:
 
 1. Sign into the Windows device with an administrator account
 1. Open the **Settings** app and select **Accounts** > **Other Users**
@@ -53,20 +65,12 @@ To configure a device to execute Take a Test in kiosk mode with a local account,
 1. To take the test, a student must sign in using the test-taking account selected in step 4
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
-## Configure Take a Test in kiosk mode on multiple devices
-
-To configure devices to execute Take a Test in kiosk mode using a guest account, you can use Microsoft Intune or a provisioning package.
-
-> [!TIP]
-> While you could create a single account in the directory to be the dedicated test-taking account, it is recommended to use a guest account. This way, you don't get into a scenario where the testing account is locked out due to bad password attempts or other factors.
->
-> An additional benefit of using a guest account, is that your students don't have to type a password to access the test.
-
-Follow the instructions below to configure your devices, selecting the option that best suits your needs.
+   > [!NOTE]  
+   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `computername\` or `.\`.
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure devices, you can use Intune for Education or a custom profile in Microsoft Intune:
+You can use Intune for Education or a custom profile in Microsoft Intune:
 
 - Intune for Education provides a simpler experience
 - A custom profile provides more flexibility and controls over the configuration
@@ -136,6 +140,35 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 :::image type="content" source="./images/takeatest/wcd-take-a-test.png" alt-text="Windows Configuration Designer - configuration of policies to enable Take a Test to run in kiosk mode" lightbox="./images/takeatest/wcd-take-a-test.png" border="true":::
 
 Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
+
+
+#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
+
+Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
+
+  ```powershell
+  $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
+  $sharedPC.EnableSharedPCMode = $True
+  $sharedPC.SetEduPolicies = $True
+  $sharedPC.SetPowerPolicies = $True
+
+This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
+
+- Use your assessment URL for **$obj.LaunchURI**  
+- Use your tester account for **$obj.TesterAccount**
+- Use your tester account for **-UserName**
+```
+
+>[!NOTE]
+>The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](./take-a-test-single-pc.md#set-up-a-dedicated-test-account).
+
+```powershell
+$obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
+$obj.LaunchURI='https://www.foo.com';
+$obj.TesterAccount='TestAccount';
+$obj.put()
+Set-AssignedAccess -AppUserModelId Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App -UserName TestAccount
+```
 
 ---
 
