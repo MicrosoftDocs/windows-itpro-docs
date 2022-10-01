@@ -7,12 +7,12 @@ author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
 ms.date: 8/28/2019
-ms.reviewer: 
+ms.reviewer:
 manager: willchen
 ms.collection: highpri
 ---
 
-# Generate a kernel or complete crash dump 
+# Generate a kernel or complete crash dump
 
 A system crash (also known as a “bug check” or a "Stop error") occurs when Windows can't run correctly. The dump file that is produced from this event is called a system crash dump.
 
@@ -39,7 +39,7 @@ To enable memory dump setting, follow these steps:
 5. Restart the computer.
 
 >[!Note]
->You can change the dump file path by edit the **Dump file** field. In other words, you can change the path from %SystemRoot%\Memory.dmp to point to a local drive that has enough disk space, such as E:\Memory.dmp. 
+>You can change the dump file path by edit the **Dump file** field. In other words, you can change the path from %SystemRoot%\Memory.dmp to point to a local drive that has enough disk space, such as E:\Memory.dmp.
 
 ### Tips to generate memory dumps
 
@@ -72,13 +72,13 @@ If you can sign in while the problem is occurring, you can use the Microsoft Sys
 
 On some computers, you can't use keyboard to generate a crash dump file. For example, Hewlett-Packard (HP) BladeSystem servers from the Hewlett-Packard Development Company are managed through a browser-based graphical user interface (GUI). A keyboard isn't attached to the HP BladeSystem server.
 
-In these cases, you must generate a complete crash dump file or a kernel crash dump file by using the Non-Maskable Interrupt (NMI) switch that causes an NMI on the system processor. 
+In these cases, you must generate a complete crash dump file or a kernel crash dump file by using the Non-Maskable Interrupt (NMI) switch that causes an NMI on the system processor.
 
 To implement this process, follow these steps:
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.
- 
+
 > [!NOTE]
 > This registry key isn't required for clients running Windows 8 and later, or servers running Windows Server 2012 and later. Setting this registry key on later versions of Windows has no effect.
 
@@ -98,14 +98,14 @@ To implement this process, follow these steps:
 
 7. Hardware vendors, such as HP, IBM, and Dell, may provide an Automatic System Recovery (ASR) feature. You should disable this feature during troubleshooting. For example, if the HP and Compaq ASR feature is enabled in the BIOS, disable this feature while you troubleshoot to generate a complete Memory.dmp file. For the exact steps, contact your hardware vendor.
 
-8. Enable the NMI switch in the BIOS or by using the Integrated Lights Out (iLO) Web interface. 
+8. Enable the NMI switch in the BIOS or by using the Integrated Lights Out (iLO) Web interface.
 
    >[!Note]
    >For the exact steps, see the BIOS reference manual or contact your hardware vendor.
 
 9. Test this method on the server by using the NMI switch to generate a dump file. You'll see a STOP 0x00000080 hardware malfunction.
 
-If you want to run NMI in Microsoft Azure using Serial Console, see [Use Serial Console for SysRq and NMI calls](/azure/virtual-machines/linux/serial-console-nmi-sysrq).
+If you want to run NMI in Microsoft Azure using Serial Console, see [Use Serial Console for SysRq and NMI calls](/troubleshoot/azure/virtual-machines/serial-console-nmi-sysrq).
 
 ### Use the keyboard
 
