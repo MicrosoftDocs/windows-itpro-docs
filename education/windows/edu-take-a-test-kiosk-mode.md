@@ -156,16 +156,50 @@ This sample PowerShell script configures the tester account and the assessment U
 >The account that you specify for the tester account must already exist on the device.
 
 ```powershell
-$sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
-$secureAssessment = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SecureAssessment"
+$namespaceName = "root\cimv2\mdm\dmmap"
+$ParentID="./Vendor/MSFT/Policy/Config"
 
-$sharedPC.AccountModel = 1
-$sharedPC.KioskModeAUMID = "Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App"
-$sharedPC.KioskModeUserTileDisplayText = "Take a Test"
-$secureAssessment.LaunchURI='https://contoso.com/algebra-exam'
+#Configure SharedPC
+$className = "MDM_SharedPC"
+$instance = "SharedPC"
+$cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
+if (-not ($cimObject)) {
+   $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
+}
+$cimObject.AccountModel = 1
+$cimObject.KioskModeAUMID = "Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App"
+$cimObject.KioskModeUserTileDisplayText = "Take a Test"
+Set-CimInstance -CimInstance $cimObject
 
-Set-CimInstance -CimInstance $sharedPC
-Set-CimInstance -CimInstance $secureAssessment
+#Configure SecureAssessment
+$className = "MDM_SecureAssessment"
+$instance = "SecureAssessment"
+$cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
+if (-not ($cimObject)) {
+   $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
+}
+$cimObject.LaunchURI= "https://contoso.com/algebra-exam"
+Set-CimInstance -CimInstance $cimObject
+
+#Configure interactive logon
+$className = "MDM_Policy_Config01_LocalPoliciesSecurityOptions02"
+$instance = "LocalPoliciesSecurityOptions"
+$cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
+if (-not ($cimObject)) {
+   $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
+}
+$cimObject.InteractiveLogon_DoNotDisplayLastSignedIn = 1
+Set-CimInstance -CimInstance $cimObject
+
+#Configure interactive logon
+$className = "MDM_Policy_Config01_WindowsLogon02"
+$instance = "WindowsLogon"
+$cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
+if (-not ($cimObject)) {
+   $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
+}
+$cimObject.HideFastUserSwitching = 1
+Set-CimInstance -CimInstance $cimObject
 ```
 
 ---
