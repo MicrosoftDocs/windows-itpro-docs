@@ -30,7 +30,15 @@
     - name: Microsoft Connected Cache overview
       href: waas-microsoft-connected-cache.md
     - name: MCC for Enterprise and Education
-      href: mcc-enterprise.md
+      items:
+      - name: Overview and requirements
+        href: mcc-enterprise-overview.md
+      - name: Deploy Microsoft Connected Cache
+        href: mcc-enterprise-deploy.md
+      - name: Update and uninstall cache node
+        href: mcc-enterprise-update-uninstall.md
+      - name: Appendix
+        href: mcc-enterprise-appendix.md
     - name: MCC for ISPs
       items:
       - name: How-to guides
@@ -45,8 +53,8 @@
           href: mcc-isp-update.md
       - name: Resources
         items:
-        - name: FAQs
-          href: mcc-isp-faq.md
+        - name: Frequently Asked Questions
+          href: mcc-isp-faq.yml
         - name: Enhancing VM performance
           href: mcc-isp-vm-performance.md
         - name: Support and troubleshooting
