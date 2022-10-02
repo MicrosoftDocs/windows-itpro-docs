@@ -166,7 +166,7 @@ if (-not ($cimObject)) {
 $cimObject.InteractiveLogon_DoNotDisplayLastSignedIn = 1
 Set-CimInstance -CimInstance $cimObject
 
-#Configure interactive logon
+#Configure Windows logon
 $className = "MDM_Policy_Config01_WindowsLogon02"
 $instance = "WindowsLogon"
 $cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
@@ -205,7 +205,7 @@ To create a local account, and configure Take a Test in kiosk mode using the Set
    :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
 
    > [!NOTE]  
-   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `computername\` or `.\`.
+   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `<computername>\` or `.\`.
 
 ---
 
