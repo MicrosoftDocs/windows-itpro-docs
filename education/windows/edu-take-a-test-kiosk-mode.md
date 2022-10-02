@@ -23,12 +23,12 @@ Executing Take a Test in kiosk mode is the recommended option for high stakes as
 
 The configuration of Take a Test in kiosk mode can be done using:
 
-- the Settings app
 - Microsoft Intune/MDM
 - a provisioning package (PPKG)
 - PowerShell
+- the Settings app
 
-When using the Settings app, you can configure Take a Test in kiosk mode using a local account only. This option is recommended for devices that are not managed.
+When using the Settings app, you can configure Take a Test in kiosk mode using a local account only. This option is recommended for devices that aren't managed.
 The other options allow you to configure Take a Test in kiosk mode using a local account, an account defined in the directory, or a guest account.
 
 > [!TIP]
@@ -37,36 +37,6 @@ The other options allow you to configure Take a Test in kiosk mode using a local
 > An additional benefit of using a guest account, is that your students don't have to type a password to access the test.
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
-
-#### [:::image type="icon" source="images/icons/windows-os.svg"::: **Settings app**](#tab/win)
-
-To create a local account, and configure Take a Test in kiosk mode using the Settings app:
-
-1. Sign into the Windows device with an administrator account
-1. Open the **Settings** app and select **Accounts** > **Other Users**
-1. Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
-1. Provide a user name and password for the account that will be used for testing
-   :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to create a test-taking account." border="true":::
-1. Select **Accounts > Access work or school**
-1. Select **Create a test-taking account**
-   :::image type="content" source="./images/takeatest/settings-accounts-set-up-take-a-test-account.png" alt-text="Use the Settings app to set up a test-taking account." border="true":::
-1. Under **Add an account for taking tests**, select **Add account** > Select the account created in step 4
-   :::image type="content" source="./images/takeatest/settings-accounts-choose-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
-1. Under **Enter the tests's web address**, enter the assessment URL
-1. Under **Test taking settings** select the options you want to enable during the test
-   - To enable printing, select **Require printing**
-
-      > [!NOTE]  
-      > Make sure a printer is pre-configured on the Take a Test account if you're enabling this option.
-
-   - To enable teachers to monitor screens, select **Allow screen monitoring**
-   - To allow text suggestions, select **Allow text suggestions**
-
-1. To take the test, a student must sign in using the test-taking account selected in step 4
-   :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
-
-   > [!NOTE]  
-   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `computername\` or `.\`.
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -142,21 +112,24 @@ Create a provisioning package using the Set up School PCs app, configuring the s
 
 Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
-
 #### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
+Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
-This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
+> [!IMPORTANT]
+> For all device settings, the WMI Bridge client must be executed under local system.
 
-- Use your assessment URL for **$obj.LaunchURI**  
-- Use your tester account for **$obj.TesterAccount**
-- Use your tester account for **-UserName**
+> [!TIP]
+> PowerShell scripts can be executed as scheduled tasks via Group Policy.
 
->[!NOTE]
->The account that you specify for the tester account must already exist on the device.
+Edit this sample PowerShell script to:
+
+- Customize the assessment URL with **$testURL**
+- Change the kiosk user tile name displayed in the sign-in screen with **$userTileName**
 
 ```powershell
+$testURL = "https://contoso.com/algebra-exam"
+$userTileName = "Take a Test"
 $namespaceName = "root\cimv2\mdm\dmmap"
 $ParentID="./Vendor/MSFT/Policy/Config"
 
@@ -170,7 +143,7 @@ if (-not ($cimObject)) {
 $cimObject.AccountModel = 1
 $cimObject.EnableAccountManager = $true
 $cimObject.KioskModeAUMID = "Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App"
-$cimObject.KioskModeUserTileDisplayText = "Take a Test"
+$cimObject.KioskModeUserTileDisplayText = $userTileName
 Set-CimInstance -CimInstance $cimObject
 
 #Configure SecureAssessment
@@ -180,7 +153,7 @@ $cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
 if (-not ($cimObject)) {
    $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
 }
-$cimObject.LaunchURI= "https://contoso.com/algebra-exam"
+$cimObject.LaunchURI= $testURL
 Set-CimInstance -CimInstance $cimObject
 
 #Configure interactive logon
@@ -204,11 +177,41 @@ $cimObject.HideFastUserSwitching = 1
 Set-CimInstance -CimInstance $cimObject
 ```
 
+#### [:::image type="icon" source="images/icons/windows-os.svg"::: **Settings app**](#tab/win)
+
+To create a local account, and configure Take a Test in kiosk mode using the Settings app:
+
+1. Sign into the Windows device with an administrator account
+1. Open the **Settings** app and select **Accounts** > **Other Users**
+1. Under **Other users**, select **Add account** > **I don't have this person's sign-in information** > **Add a user without a Microsoft account**
+1. Provide a user name and password for the account that will be used for testing
+   :::image type="content" source="./images/takeatest/settings-accounts-create-take-a-test-account.png" alt-text="Use the Settings app to create a test-taking account." border="true":::
+1. Select **Accounts > Access work or school**
+1. Select **Create a test-taking account**
+   :::image type="content" source="./images/takeatest/settings-accounts-set-up-take-a-test-account.png" alt-text="Use the Settings app to set up a test-taking account." border="true":::
+1. Under **Add an account for taking tests**, select **Add account** > Select the account created in step 4
+   :::image type="content" source="./images/takeatest/settings-accounts-choose-take-a-test-account.png" alt-text="Use the Settings app to choose the test-taking account." border="true":::
+1. Under **Enter the tests's web address**, enter the assessment URL
+1. Under **Test taking settings** select the options you want to enable during the test
+   - To enable printing, select **Require printing**
+
+      > [!NOTE]  
+      > Make sure a printer is pre-configured on the Take a Test account if you're enabling this option.
+
+   - To enable teachers to monitor screens, select **Allow screen monitoring**
+   - To allow text suggestions, select **Allow text suggestions**
+
+1. To take the test, a student must sign in using the test-taking account selected in step 4
+   :::image type="content" source="./images/takeatest/login-screen-take-a-test-single-pc.png" alt-text="Windows 11 SE login screen with the take a test account." border="true":::
+
+   > [!NOTE]  
+   > To sign-in with a local account on a device that is joined to Azure AD or Active Directory, you must prefix the username with either `computername\` or `.\`.
+
 ---
 
 ## How to use Take a Test in kiosk mode
 
-Once the policy or provisioning package is applied to the devices, Windows will enable the testing account in the sign-in screen. If selected, Take a Test will be executed in kiosk mode using the guest account, opening the assessment URL.
+Once the devices are configured, a new user tile will be available in the sign-in screen. If selected, Take a Test will be executed in kiosk mode using the guest account, opening the assessment URL.
 
 ## How to exit Take a Test
 
