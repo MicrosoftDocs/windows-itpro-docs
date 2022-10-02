@@ -102,6 +102,7 @@ To configure devices using Microsoft Intune, create a [custom policy][MEM-1] wit
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn`** </li><li> Data type: **Integer** </li><li>Value: **1**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/WindowsLogon/HideFastUserSwitching`** </li><li> Data type: **Integer**</li><li>Value: **1**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/AccountModel`**</li><li>Data type: **Integer** </li><li> Value: **1**</li>|
+| <li> OMA-URI: **`./Vendor/MSFT/SharedPC/EnableAccountManager`**</li><li>Data type: **Boolean** </li><li> Value: **True**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeAUMID`**</li><li>Data type: **String** </li><li> Value: **Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App**</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText`** </li><li>Data type: **String** </li><li> Value: **Take a Test** (or a string of your choice to display in the sing-in screen)</li>|
 | <li> OMA-URI: **`./Vendor/MSFT/SecureAssessment/LaunchURI`** </li><li>Data type: **String** </li><li> Value: **\<provide testing URL>**</li>|
@@ -167,6 +168,7 @@ if (-not ($cimObject)) {
    $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
 }
 $cimObject.AccountModel = 1
+$cimObject.EnableAccountManager = $true
 $cimObject.KioskModeAUMID = "Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App"
 $cimObject.KioskModeUserTileDisplayText = "Take a Test"
 Set-CimInstance -CimInstance $cimObject
