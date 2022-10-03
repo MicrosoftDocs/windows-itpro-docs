@@ -24,7 +24,7 @@ ms.custom: bitlocker
 - Windows 11
 - Windows Server 2016 and later
 
-This topic describes how to recover BitLocker keys from AD DS.
+This article describes how to recover BitLocker keys from AD DS.
 
 Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It's recommended to create a recovery model for BitLocker while you are planning your BitLocker deployment.
 
