@@ -12,7 +12,7 @@ items:
       items:
       - name: Overview
         href: windows-11-se-overview.md
-      - name: Settings and CSP list
+      - name: Settings list
         href: windows-11-se-settings-list.md
       - name: Frequently Asked Questions (FAQ)
         href: windows-11-se-faq.yml

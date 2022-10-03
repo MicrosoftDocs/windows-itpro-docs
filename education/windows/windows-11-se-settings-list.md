@@ -17,7 +17,7 @@ appliesto:
 
 # Windows 11 SE for Education settings list
 
-Windows 11 SE automatically configures settings and features in the operating system. These settings use the Configuration Service Provider (CSPs) provided by Microsoft. You can use an MDM provider to configure these settings.
+Windows 11 SE automatically configures certain settings and features in the operating system. You can use Microsoft Intune to customize these settings.
 
 This article lists the settings automatically configured. For more information on Windows 11 SE, see [Windows 11 SE for Education overview](windows-11-se-overview.md).
 
