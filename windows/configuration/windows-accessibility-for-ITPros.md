@@ -63,6 +63,8 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 ## Hearing
 
+- [Use live captions to better understand audio](https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df). Use Windows 11, version 22H2 or later to better understand any spoken audio with real time captions.
+
 - [View live transcription in a Teams meeting](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-dc1a8f23-2e20-4684-885e-2152e06a4a8b). During any Teams meeting, view a live transcription so you don't miss what's being said.
 
 - [Use Teams for sign language](https://www.microsoft.com/microsoft-teams/group-chat-software). Teams is available on various platforms and devices, so you don't have to worry about whether your co-workers, friends, and family can communicate with you.

@@ -33,7 +33,7 @@ Pluton is integrated within the SoC subsystem, and provides a flexible, updatabl
 
 ## Enable Microsoft Pluton as TPM
 
-Devices with Ryzen 7000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device.
+Devices with Ryzen 6000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device.
 
 UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
 
