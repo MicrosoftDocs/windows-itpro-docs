@@ -9,7 +9,7 @@ ms.reviewer: vinpa
 ms.author: jogeurte
 manager: aaroncz
 ms.date: 10/11/2021
-ms.technology: m365-security
+ms.technology: itpro-security
 ---
 
 # Understanding WDAC Policy Settings
