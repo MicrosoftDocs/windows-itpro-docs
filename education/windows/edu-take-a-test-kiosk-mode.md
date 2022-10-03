@@ -117,7 +117,7 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
 Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
 > [!IMPORTANT]
-> For all device settings, the WMI Bridge client must be executed under local system.
+> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
 
 > [!TIP]
 > PowerShell scripts can be executed as scheduled tasks via Group Policy.
