@@ -116,13 +116,18 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
 
 Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
-> [!IMPORTANT]
-> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
-
 > [!TIP]
 > PowerShell scripts can be executed as scheduled tasks via Group Policy.
 
-Edit this sample PowerShell script to:
+> [!IMPORTANT]
+> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
+>
+> To test a PowerShell script, you can:
+> 1. [Download the psexec tool](/sysinternals/downloads/psexec)
+> 1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
+> 1. Run the script in the PowerShell session
+
+Edit the following sample PowerShell script to:
 
 - Customize the assessment URL with **$testURL**
 - Change the kiosk user tile name displayed in the sign-in screen with **$userTileName**
