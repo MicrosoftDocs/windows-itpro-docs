@@ -25,7 +25,7 @@ ms.custom: bitlocker
 
 This topic for the IT professional explains how to plan BitLocker deployment.
 
-When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following topics help you collect information that you can use to frame your decision-making process about deploying and managing BitLocker systems.
+When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following sections will help you collect information. Use this information to help with your decision-making process about deploying and managing BitLocker systems.
 
 ## Audit your environment
 
