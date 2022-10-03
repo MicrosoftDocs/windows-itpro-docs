@@ -38,7 +38,7 @@ sections:
           - Express yourself and celebrate accomplishments with the *emoji and GIF panel* and *Stickers*
   - name: Deployment
     questions:
-      - question: Can I load Win11SE on any hardware? 
+      - question: Can I load Windows 11 SE on any hardware? 
         answer: |
           Windows 11 SE is only available on devices that are built for education. To learn more, see [Windows 11 SE Overview](/education/windows/windows-11-se-overview).
   - name: Applications and settings
@@ -46,15 +46,21 @@ sections:
       - question: How can I install applications on Windows 11 SE?
         answer: |
           You can use Microsoft Intune to install applications on Windows 11 SE.
-          For more information, see [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-app).
+          For more information, see [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps).
       - question: What apps will work on Windows 11 SE?
         answer: |
           Windows 11 SE supports all web applications and a curated list of desktop applications. You can prepare and add a desktop app to Microsoft Intune as a Win32 app from the [approved app list](/education/windows/windows-11-se-overview), then distribute it.
-          For more information, see [Considerations for Windows 11 SE](education/windows/tutorial-school-deployment/configure-device-apps#considerations-for-windows-11-se).
+          For more information, see [Considerations for Windows 11 SE](/education/windows/tutorial-school-deployment/configure-device-apps#considerations-for-windows-11-se).
       - question: Why there's no application store on Windows 11 SE?
         answer: |
           IT Admins can manage system settings (including application installation and the application store) to ensure all students have a safe, distraction-free experience. On Windows SE devices, you have pre-installed apps from Microsoft, from your IT admin, and from your device manufacturer. You can continue to use web apps on the Microsoft Edge browser, as web apps do not require installation.
           For more information, see [Configure applications with Microsoft Intune](education/windows/tutorial-school-deployment/configure-device-app).
+      - question: What does the error 0x87D300D9 mean in the Intune for Education portal?
+        answer: |
+          This error means that the app you are trying to install is not supported on Windows 11 SE. If you have an app that fails with this error, then:
+          - Make sure the app is on the [available applications list](/education/windows/windows-11-se-overview#available-applications). Or, make sure your app is [approved for Windows 11 SE](/education/windows/windows-11-se-overview#add-your-own-applications)
+          - If the app is approved, then it's possible the app is not packaged correctly. For more information, [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps)
+          - If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own applications](/education/windows/windows-11-se-overview#add-your-own-applications). Or, use an app that runs in a web browser, such as a web app or PWA
   - name: Out-of-box experience (OOBE)
     questions:
       - question: My Windows 11 SE device is stuck in OOBE, how can I troubleshoot it?
