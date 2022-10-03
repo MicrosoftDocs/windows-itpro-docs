@@ -253,7 +253,7 @@ If you have deployed WHFB using a **certificate trust** deployment model, and wa
 1. Provision Windows Hello for Business (Enroll PIN/Face/Fingerprint)
 
 > [!NOTE]
-> For hybrid Azure AD joined devices, sign in with new credentials while having line of sight to a DC
+> For hybrid Azure AD joined devices, sign in with new credentials while having line of sight to a DC.
 
 ## Troubleshooting
 
