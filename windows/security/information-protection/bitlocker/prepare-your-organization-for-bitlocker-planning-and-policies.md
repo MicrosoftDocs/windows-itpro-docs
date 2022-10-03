@@ -23,7 +23,7 @@ ms.custom: bitlocker
 - Windows 11
 - Windows Server 2016 and above
 
-This topic for the IT professional explains how can you plan your BitLocker deployment.
+This topic for the IT professional explains how to plan BitLocker deployment.
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following sections will help you collect information. Use this information to help with your decision-making process about deploying and managing BitLocker systems.
 
