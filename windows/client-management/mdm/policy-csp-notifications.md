@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Notifications
 description: Block applications from using the network to send tile, badge, toast, and raw notifications for Policy CSP - Notifications.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Notifications

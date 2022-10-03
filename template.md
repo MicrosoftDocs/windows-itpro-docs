@@ -28,7 +28,7 @@ When you create a new markdown file article, **Save as** this template to a new 
 
 ## Metadata
 
-The full metadata block is above the markdown between the `---` lines. For more information, see [Metadata attributes](https://review.docs.microsoft.com/en-us/help/contribute/metadata-attributes?branch=main) in the contributor guide. Some key notes:
+The full metadata block is above the markdown between the `---` lines. For more information, see [Metadata attributes](https://review.learn.microsoft.com/help/contribute/metadata-attributes?branch=main) in the contributor guide. Some key notes:
 
 - You _must_ have a space between the colon (`:`) and the value for a metadata element.
 
@@ -65,7 +65,7 @@ The full metadata block is above the markdown between the `---` lines. For more 
 
 All basic and Github-flavored markdown (GFM) is supported. For more information, see the following articles:
 
-- [Docs Markdown reference in the Contributor Guide](https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main)
+- [Docs Markdown reference in the Contributor Guide](https://review.learn.microsoft.com/help/contribute/markdown-reference?branch=main)
 - [Baseline markdown syntax](https://daringfireball.net/projects/markdown/syntax)
 - [Github-flavored markdown (GFM) documentation](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
@@ -79,7 +79,7 @@ Second-level headings (`##`, also known as H2) generate the on-page TOC that app
 
 Limit the length of second-level headings to avoid excessive line wraps.
 
-Make sure _all_ headings of any level have a unique name for the article. The build creates an anchor for all headings on the page using kebab formatting. For example, from the [Docs Markdown reference](https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main) article, the heading **Alerts (Note, Tip, Important, Caution, Warning)** becomes the anchor `#alerts-note-tip-important-caution-warning`. If there are duplicate headings, then the anchors don't behave properly. This behavior also applies when using include files, make sure the headings are unique across the main markdown file, and all include markdown files.
+Make sure _all_ headings of any level have a unique name for the article. The build creates an anchor for all headings on the page using kebab formatting. For example, from the [Docs Markdown reference](https://review.learn.microsoft.com/help/contribute/markdown-reference?branch=main) article, the heading **Alerts (Note, Tip, Important, Caution, Warning)** becomes the anchor `#alerts-note-tip-important-caution-warning`. If there are duplicate headings, then the anchors don't behave properly. This behavior also applies when using include files, make sure the headings are unique across the main markdown file, and all include markdown files.
 
 Don't skip levels. For example, don't have an H3 (`###`) without a parent H2 (`##`).
 
@@ -111,7 +111,7 @@ _Italics_ (a single asterisk (`*`) also works, but the underscore (`_`) helps di
 >
 > It supports headings in the current and other files too! (Just not the custom `bkmk` anchors that are sometimes used in this content.)
 
-For more information, see [Add links to articles](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
+For more information, see [Add links to articles](https://review.learn.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
 
 ### Article in the same repo
 
@@ -149,7 +149,7 @@ There's a broken link report that runs once a week in the build system, get the 
 
 Don't use URL shorteners like `go.microsoft.com/fwlink` or `aka.ms`. Include the full URL to the target.
 
-For more information, see [Add links to articles](https://review.docs.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
+For more information, see [Add links to articles](https://review.learn.microsoft.com/help/contribute/links-how-to?branch=main) in the contributor guide.
 
 ## Lists
 
@@ -289,4 +289,4 @@ Always include alt text for accessibility, and always end it with a period.
 ## docs.ms extensions
 
 > [!div class="nextstepaction"]
-> [Next step action](/mem/configmgr)
+> [Microsoft Endpoint Configuration Manager documentation](https://learn.microsoft.com/mem/configmgr)

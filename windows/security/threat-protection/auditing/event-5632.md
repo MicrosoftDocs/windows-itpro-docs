@@ -85,7 +85,7 @@ It typically generates when network adapter connects to new wireless network.
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account for which 802.1x authentication request was made.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following ones:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -125,16 +125,16 @@ You can see interface’s GUID using the following commands:
 
 -   **Reason Code** \[Type = UnicodeString\]**:** contains Reason Text (explanation of Reason Code) and Reason Code for wireless authentication results. See more information about reason codes for wireless authentication here: <https://msdn.microsoft.com/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/library/cc727747(v=ws.10).aspx>.
 
--   **Error Code** \[Type = HexInt32\]**:** there is no information about this field in this document.
+-   **Error Code** \[Type = HexInt32\]**:** there's no information about this field in this document.
 
--   **EAP Reason Code** \[Type = HexInt32\]**:** there is no information about this field in this document. See additional information here: <https://technet.microsoft.com/library/dd197570(v=ws.10).aspx>.
+-   **EAP Reason Code** \[Type = HexInt32\]**:** there's no information about this field in this document. See additional information here: <https://technet.microsoft.com/library/dd197570(v=ws.10).aspx>.
 
--   **EAP Root Cause String** \[Type = UnicodeString\]**:** there is no information about this field in this document.
+-   **EAP Root Cause String** \[Type = UnicodeString\]**:** there's no information about this field in this document.
 
--   **EAP Error Code** \[Type = HexInt32\]**:** there is no information about this field in this document.
+-   **EAP Error Code** \[Type = HexInt32\]**:** there's no information about this field in this document.
 
 ## Security Monitoring Recommendations
 
 For 5632(S, F): A request was made to authenticate to a wireless network.
 
--   There is no recommendation for this event in this document.
+-   There's no recommendation for this event in this document.

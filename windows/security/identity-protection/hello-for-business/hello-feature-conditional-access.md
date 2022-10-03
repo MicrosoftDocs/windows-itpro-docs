@@ -2,14 +2,14 @@
 title: Conditional Access
 description: Ensure that only approved users can access your devices, applications, and services from anywhere by enabling single sign-on with Azure Active Directory.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/09/2019
-ms.reviewer: 
 ---
 
 # Conditional access

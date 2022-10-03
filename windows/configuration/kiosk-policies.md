@@ -2,11 +2,11 @@
 title: Policies enforced on kiosk devices (Windows 10/11)
 description: Learn about the policies enforced on a device when you configure it as a kiosk.
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ---
 
@@ -20,14 +20,14 @@ ms.topic: article
 
 
 
-It is not recommended to set policies enforced in assigned access kiosk mode to different values using other channels, as the kiosk mode has been optimized to provide a locked-down experience.
+It isn't recommended to set policies enforced in assigned access kiosk mode to different values using other channels, as the kiosk mode has been optimized to provide a locked-down experience.
 
 When the assigned access kiosk configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device.
 
 
 ## Group Policy
 
-The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  This includes local users, domain users, and Azure Active Directory users.
+The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  These users include local users, domain users, and Azure Active Directory users.
 
 | Setting |	Value |
 | --- | --- |
@@ -65,7 +65,7 @@ Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 ## MDM policy
 
 
-Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
+Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (that is, system-wide impact).
 
 Setting	| 	Value	| System-wide
  --- | --- | ---

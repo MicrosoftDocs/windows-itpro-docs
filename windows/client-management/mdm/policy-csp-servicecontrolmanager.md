@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - ServiceControlManager
 description: Learn how the Policy CSP - ServiceControlManager setting enables process mitigation options on svchost.exe processes.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

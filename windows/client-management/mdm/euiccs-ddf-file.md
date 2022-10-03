@@ -2,12 +2,12 @@
 title: eUICCs DDF file
 description: Learn about the OMA DM device description framework (DDF) for the eUICCs configuration service provider (CSP).
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/02/2018
 ---
 
@@ -238,6 +238,30 @@ The XML below if for Windows 10, version 1803.
                             </DFFormat>
                             <Occurrence>
                                 <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>IsDiscoveryServer</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DefaultValue>false</DefaultValue>
+                            <Description>Indicates whether the server is a discovery server. Optional, default value is false.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
                             </Occurrence>
                             <Scope>
                                 <Dynamic />

@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Experience
 description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/02/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Experience
@@ -49,6 +49,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowspotlightcollection">Experience/AllowSpotlightCollection</a>
   </dd>
   <dd>
     <a href="#experience-allowtailoredexperienceswithdiagnosticdata">Experience/AllowTailoredExperiencesWithDiagnosticData</a>
@@ -495,6 +498,50 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="experience-allowspotlightcollection"></a>**Experience/AllowSpotlightCollection**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows spotlight collection on the device.
+
+- If you enable this policy, "Spotlight collection" will not be available as an option in Personalization settings.
+- If you disable or do not configure this policy, "Spotlight collection" will appear as an option in Personalization settings, allowing the user to select "Spotlight collection" as the Desktop provider and display daily images from Microsoft on the desktop.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- When set to 0: Spotlight collection will not show as an option in Personalization Settings and therefore be unavailable on Desktop
+- When set to 1: Spotlight collection will show as an option in Personalization Settings and therefore be available on Desktop, allowing Desktop to refresh for daily images from Microsoft
+- Default value: 1
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
 
 <!--SupportedSKUs-->
@@ -925,10 +972,10 @@ The following list shows the supported values:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|Yes|
+|Home|No|No|
 |Pro|No|Yes|
 |Windows SE|No|Yes|
-|Business|No|No|
+|Business|No|Yes|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 

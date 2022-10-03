@@ -2,12 +2,12 @@
 title: HealthAttestation DDF
 description: Learn about the OMA DM device description framework (DDF) for the HealthAttestation configuration service provider.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
@@ -92,7 +92,7 @@ The XML below is the current version for this CSP.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Provides the current status of the device health request.  For the complete list of status see https://docs.microsoft.com/en-us/windows/client-management/mdm/healthattestation-csp#device-healthattestation-csp-status-and-error-codes</Description>
+            <Description>Provides the current status of the device health request.  For the complete list of status see https://learn.microsoft.com/windows/client-management/mdm/healthattestation-csp#device-healthattestation-csp-status-and-error-codes</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -456,9 +456,3 @@ The XML below is the current version for this CSP.
  
 
  
-
-
-
-
-
-

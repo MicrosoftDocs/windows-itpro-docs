@@ -31,14 +31,14 @@ ms.technology: windows-sec
 
 This topic for the IT professional describes how to use AppLocker logs and tools to determine which applications are digitally signed.
 
-The Windows PowerShell cmdlet **Get-AppLockerFileInformation** can be used to determine which apps installed on your reference devices are digitally signed. Perform the following steps on each reference computer that you used to define the AppLocker policy. The device does not need to be joined to the domain.
+The Windows PowerShell cmdlet **Get-AppLockerFileInformation** can be used to determine which apps installed on your reference devices are digitally signed. Perform the following steps on each reference computer that you used to define the AppLocker policy. The device doesn't need to be joined to the domain.
 
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
 
 **To determine which apps are digitally signed on a reference device**
 1.  Run **Get-AppLockerFileInformation** with the appropriate parameters.
 
-    The **Get-AppLockerFileInformation** cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information. File information from an event log may not contain all of these fields. Files that are not signed do not have any publisher information.
+    The **Get-AppLockerFileInformation** cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information. File information from an event log may not contain all of these fields. Files that aren't signed don't have any publisher information.
 
 2.  Analyze the publisher's name and digital signature status from the output of the command.
 

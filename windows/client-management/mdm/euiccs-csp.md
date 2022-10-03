@@ -1,14 +1,14 @@
 ---
 title: eUICCs CSP
 description: Learn how the eUICCs CSP is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, reassign, remove) subscriptions to employees.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/02/2018
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # eUICCs CSP
@@ -40,6 +40,7 @@ eUICCs
 ------------ServerName
 ----------------DiscoveryState
 ----------------AutoEnable
+----------------IsDiscoveryServer
 --------Profiles
 ------------ICCID
 ----------------ServerName
@@ -111,6 +112,13 @@ Required. Indicates whether the discovered profile must be enabled automatically
 Supported operations are Add, Get, and Replace. 
 
 Value type is bool.
+
+<a href="" id="euicc-downloadservers-servername-isdiscoveryserver"></a>**_eUICC_/DownloadServers/_ServerName_/IsDiscoveryServer**  
+Optional. Indicates whether the server is a discovery server. This setting must be defined by the MDM when the ServerName subtree is created.
+
+Supported operations are Add, Get, and Replace. 
+
+Value type is bool. Default value is false.
 
 <a href="" id="euicc-profiles"></a>**_eUICC_/Profiles**  
 Interior node. Required. Represents all enterprise-owned profiles.

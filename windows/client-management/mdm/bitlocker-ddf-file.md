@@ -1,15 +1,15 @@
 ---
 title: BitLocker DDF file
 description: Learn about the OMA DM device description framework (DDF) for the BitLocker configuration service provider.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/30/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # BitLocker DDF file

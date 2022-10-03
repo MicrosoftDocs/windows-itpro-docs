@@ -2,12 +2,12 @@
 title: Configuration service provider reference
 description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/18/2020
 ms.collection: highpri
 ---
@@ -527,6 +527,18 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |Yes|Yes|No|Yes|Yes|
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+[Local Administrator Password Solution CSP](laps-csp.md)
+
+<!--StartSKU-->
+
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->

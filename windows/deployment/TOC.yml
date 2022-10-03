@@ -129,13 +129,13 @@
                   href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
             - name: Subscription Activation
               items:
-                - name: Windows 10/11 Subscription Activation
+                - name: Windows subscription activation
                   href: windows-10-subscription-activation.md
-                - name: Windows 10/11 Enterprise E3 in CSP
+                - name: Windows Enterprise E3 in CSP
                   href: windows-10-enterprise-e3-overview.md
-                - name: Configure VDA for Subscription Activation
+                - name: Configure VDA for subscription activation
                   href: vda-subscription-activation.md
-                - name: Deploy Windows 10/11 Enterprise licenses
+                - name: Deploy Windows Enterprise licenses
                   href: deploy-enterprise-licenses.md
         - name: Deploy Windows client updates
           items:
@@ -185,8 +185,9 @@
         - name: Monitor Windows client updates
           items:
           - name: Monitor with Update Compliance (preview version)
-            href: update/update-compliance-v2-overview.md     
             items:
+            - name: Update Compliance overview
+              href: update/update-compliance-v2-overview.md     
             - name: Enable Update Compliance (preview)
               items: 
               - name: Update Compliance prerequisites
@@ -200,11 +201,15 @@
               - name: Configure clients with Microsoft Endpoint Manager
                 href: update/update-compliance-v2-configuration-mem.md 
             - name: Use Update Compliance (preview)
-              items: 
-              - name: Use Update Compliance 
-                href: update/update-compliance-v2-use.md                         
+              items:
+              - name: Update Compliance workbook
+                href: update/update-compliance-v2-workbook.md
               - name: Software updates in the Microsoft admin center (preview)
-                href: update/update-status-admin-center.md                               
+                href: update/update-status-admin-center.md                                
+              - name: Use Update Compliance data
+                href: update/update-compliance-v2-use.md                                
+              - name: Feedback, support, and troubleshooting 
+                href: update/update-compliance-v2-help.md                                               
             - name: Update Compliance schema reference (preview)
               items:
               - name: Update Compliance schema reference
@@ -258,7 +263,7 @@
                 href: update/update-compliance-schema-waasupdatestatus.md
               - name: WaaSInsiderStatus
                 href: update/update-compliance-schema-waasinsiderstatus.md
-              - name: WaaSDepoymentStatus
+              - name: WaaSDeploymentStatus
                 href: update/update-compliance-schema-waasdeploymentstatus.md
               - name: WUDOStatus
                 href: update/update-compliance-schema-wudostatus.md

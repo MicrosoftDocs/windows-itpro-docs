@@ -1,14 +1,14 @@
 ---
 title: Policy CSP - InternetExplorer
 description: Use the Policy CSP - InternetExplorer setting to add a specific list of search providers to the user's default list of search providers.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - InternetExplorer
@@ -212,6 +212,12 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#internetexplorer-enableextendediemodehotkeys">InternetExplorer/EnableExtendedIEModeHotkeys</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-enableglobalwindowlistiniemode">InternetExplorer/EnableGlobalWindowListInIEMode</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-disableieappdeprecationnotification">InternetExplorer/HideInternetExplorer11RetirementNotification </a>
   </dd>
   <dd>
     <a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a>
@@ -611,6 +617,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols">InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-resetzoomfordialoginiemode">InternetExplorer/ResetZoomForDialogInIEMode</a>
   </dd>
   <dd>
     <a href="#internetexplorer-restrictactivexinstallinternetexplorerprocesses">InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses</a>
@@ -4418,6 +4427,115 @@ ADMX Info:
 -   GP Friendly name: *Enable extended hot keys in Internet Explorer mode*
 -   GP name: *EnableExtendedIEModeHotkeys*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-enableglobalwindowlistiniemode"></a>**InternetExplorer/EnableGlobalWindowListInIEMode**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting allows Internet Explorer mode to use the global window list that enables sharing state with other applications.
+The setting will take effect only when Internet Explorer 11 is disabled as a standalone browser.
+
+- If you enable this policy, Internet Explorer mode will use the global window list.
+
+- If you disable or don’t configure this policy, Internet Explorer mode will continue to maintain a separate window list.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disabled
+-   1 - Enabled
+
+<!--/SupportedValues-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Enable global window list in Internet Explorer mode*
+-   GP name: *EnableGlobalWindowListInIEMode*
+-   GP path: *Windows Components/Internet Explorer/Main*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-disableieappdeprecationnotification"></a>**InternetExplorer/HideInternetExplorer11RetirementNotification**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Windows SE|No|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to manage whether the notification bar reminder that Internet Explorer is being retired is displayed. By default, the Notification bar is displayed in Internet Explorer 11.
+
+- If you enable this policy setting, the notification bar will not be displayed in Internet Explorer 11.
+
+- If you disable, or do not configure, this policy setting, the notification bar will be displayed in Internet Explorer 11.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disabled
+-   1 - Enabled
+
+<!--/SupportedValues-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Hide Internet Explorer 11 retirement notification*
+-   GP name: *DisableIEAppDeprecationNotification*
+-   GP path: *Windows Components/Internet Explorer/Main*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->
@@ -11154,6 +11272,60 @@ ADMX Info:
 -   GP Friendly name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer*
 -   GP name: *VerMgmtDisableRunThisTime*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="internetexplorer-resetzoomfordialoginiemode"></a>**InternetExplorer/ResetZoomForDialogInIEMode**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.
+
+- If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.
+
+- If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disabled
+-   1 - Enabled
+
+<!--/SupportedValues-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Reset zoom to default for HTML dialogs in Internet Explorer mode*
+-   GP name: *ResetZoomForDialogInIEMode*
+-   GP path: *Windows Components/Internet Explorer/Main*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->

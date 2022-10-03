@@ -1,10 +1,10 @@
 ---
 title: Get started with Update Compliance
-manager: dougeby
+manager: aczechowski
 description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection:
   - M365-analytics
@@ -92,19 +92,22 @@ Once the solution is in place, you can leverage one of the following Azure roles
 
 > [!NOTE]
 > It is not currently supported to programmatically enroll to Update Compliance via the [Azure CLI](/cli/azure) or otherwise. You must manually add Update Compliance to your Azure subscription.
-
+ 
 ### Get your CommercialID
 
-A CommercialID is a globally unique identifier assigned to a specific Log Analytics workspace. The CommercialID is copied to an MDM or Group Policy and is used to identify devices in your environment.
+A `CommercialID` is a globally unique identifier assigned to a specific Log Analytics workspace. The `CommercialID` is copied to an MDM or Group Policy and is used to identify devices in your environment. The `Commercial ID` directs your clients to the Update Compliance solution in your Log Analytics workspace. You'll need this ID when you configure clients to send data to Update Compliance.
 
-To find your CommercialID within Azure:
+1. If needed, sign into the [Azure portal](https://portal.azure.com).
+1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
+1. Select **Log Analytics workspaces**.
+1. Select the Log Analytics workspace that you added the Update Compliance solution to.
+1. Select **Solutions** from the Log Analytics workspace, then select **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** to go to the summary page for the solution. 
+1. Select **Update Compliance Settings** from the **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** summary page.
+1. The **Commercial Id Key** is listed in the text box with an option to copy the ID. The **Commercial Id Key** is commonly referred to as the `CommercialID` or **Commercial ID** in Update Compliance.
 
-1. Navigate to the **Solutions** tab for your workspace, and then select the **WaaSUpdateInsights** solution.
-2. From there, select the Update Compliance Settings page on the navbar.
-3. Your CommercialID is available in the settings page.
+   > [!Warning]
+   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a Commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and can result in data loss.
 
-> [!IMPORTANT]
-> Regenerate your CommercialID only if your original ID can no longer be used or if you want to completely reset your workspace. Regenerating your CommercialID cannot be undone and will result in you losing data for all devices that have the current CommercialID until the new CommercialID is deployed to devices.
 
 ## Enroll devices in Update Compliance
 

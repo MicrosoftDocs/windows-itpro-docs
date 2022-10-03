@@ -2,11 +2,11 @@
 title: Manage Device Installation with Group Policy (Windows 10 and Windows 11)
 description: Find out how to manage Device Installation Restrictions with Group Policy.
 ms.prod: w10
-author: aczechowski
+author: vinaypamnani-msft
 ms.date: 09/14/2021
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ---
 
@@ -18,8 +18,8 @@ ms.topic: article
 - Windows 11
 - Windows Server 2022
 
-
 ## Summary
+
 By using Windows operating systems, administrators can determine what devices can be installed on computers they manage. This guide summarizes the device installation process and demonstrates several techniques for controlling device installation by using Group Policy.
 
 ## Introduction
@@ -60,7 +60,6 @@ It's more difficult for users to make unauthorized copies of company data if use
 
 You can ensure that users install only those devices that your technical support team is trained and equipped to support. This benefit reduces support costs and user confusion.
 
-
 ## Scenario Overview
 
 The scenarios presented in this guide illustrate how you can control device installation and usage on the computers that you manage. The scenarios use Group Policy on a local machine to simplify using the procedures in a lab environment. In an environment where you manage multiple client computers, you should apply these settings using Group Policy.. With Group Policy deployed by Active Directory, you can apply settings to all computers that are members of a domain or an organizational unit in a domain. For more information about how to use Group Policy to manage your client computers, see Group Policy at the Microsoft Web site.
@@ -89,7 +88,6 @@ This scenario, although similar to scenario #2, brings another layer of complexi
 ### Scenario #5: Prevent installation of all USB devices while allowing an installation of only an authorized USB thumb drive
 
 In this scenario, combining all previous four scenarios, you'll learn how to protect a machine from all unauthorized USB devices. The administrator wants to allow users to install only a small set of authorized USB devices while preventing any other USB device from being installed. In addition, this scenario includes an explanation of how to apply the ‘prevent’ functionality to existing USB devices that have already been installed on the machine, and the administrator likes to prevent any farther interaction with them (blocking them all together). This scenario builds on the policies and structure we introduced in the first four scenarios and therefore it's preferred to go over them first before attempting this scenario.
-
 
 ## Technology Review
 
@@ -126,14 +124,14 @@ Hardware IDs are the identifiers that provide the exact match between a device a
 
 Windows uses these identifiers to select a driver if the operating system can't find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are optional, and, when provided, they're generic, such as Disk. When a match is made using a compatible ID, you can typically use only the most basic functions of the device.
 
-When you install a device, such as a printer, a USB storage device, or a keyboard, Windows searches for driver packages that match the device you are attempting to install. During this search, Windows assigns a "rank" to each driver package it discovers with at least one match to a hardware or compatible ID. The rank indicates how well the driver matches the device. Lower rank numbers indicate better matches between the driver and the device. A rank of zero represents the best possible match. A match with the device ID to one in the driver package results in a lower (better) rank than a match to one of the other hardware IDs. Similarly, a match to a hardware ID results in a better rank than a match to any of the compatible IDs. After Windows ranks all of the driver packages, it installs the one with the lowest overall rank. For more information about the process of ranking and selecting driver packages, see How Setup Selects Drivers in the Microsoft Docs library.
+When you install a device, such as a printer, a USB storage device, or a keyboard, Windows searches for driver packages that match the device you are attempting to install. During this search, Windows assigns a "rank" to each driver package it discovers with at least one match to a hardware or compatible ID. The rank indicates how well the driver matches the device. Lower rank numbers indicate better matches between the driver and the device. A rank of zero represents the best possible match. A match with the device ID to one in the driver package results in a lower (better) rank than a match to one of the other hardware IDs. Similarly, a match to a hardware ID results in a better rank than a match to any of the compatible IDs. After Windows ranks all of the driver packages, it installs the one with the lowest overall rank. For more information about the process of ranking and selecting driver packages, see [How Windows selects a driver package for a device](/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device).
 
 > [!NOTE]
 > For more information about the driver installation process, see the "Technology review" section of the Step-by-Step Guide to Driver Signing and Staging.
 
 Some physical devices create one or more logical devices when they're installed. Each logical device might handle part of the functionality of the physical device. For example, a multi-function device, such as an all-in-one scanner/fax/printer, might have a different device identification string for each function.
 
-When you use Device Installation policies to allow or prevent the installation of a device that uses logical devices, you must allow or prevent all of the device identification strings for that device. For example, if a user attempts to install a multifunction device and you didn't allow or prevent all of the identification strings for both physical and logical devices, you could get unexpected results from the installation attempt. For more detailed information about hardware IDs, see Device Identification Strings in Microsoft Docs.
+When you use Device Installation policies to allow or prevent the installation of a device that uses logical devices, you must allow or prevent all of the device identification strings for that device. For example, if a user attempts to install a multifunction device and you didn't allow or prevent all of the identification strings for both physical and logical devices, you could get unexpected results from the installation attempt. For more detailed information about hardware IDs, see [Device identification strings](/windows-hardware/drivers/install/device-identification-strings).
 
 #### Device setup classes
 
@@ -143,7 +141,7 @@ When you use device Classes to allow or prevent users from installing drivers, y
 
 For example, a multi-function device, such as an all-in-one scanner/fax/printer, has a GUID for a generic multi-function device, a GUID for the printer function, a GUID for the scanner function, and so on. The GUIDs for the individual functions are "child nodes" under the multi-function device GUID. To install a child node, Windows must also be able to install the parent node. You must allow installation of the device setup class of the parent GUID for the multi-function device in addition to any child GUIDs for the printer and scanner functions.
 
-For more information, see [Device Setup Classes](/windows-hardware/drivers/install/overview-of-device-setup-classes) in Microsoft Docs.
+For more information, see [Device Setup Classes](/windows-hardware/drivers/install/overview-of-device-setup-classes).
 
 This guide doesn't depict any scenarios that use device setup classes. However, the basic principles demonstrated with device identification strings in this guide also apply to device setup classes. After you discover the device setup class for a specific device, you can then use it in a policy to either allow or prevent installation of drivers for that class of devices.
 
@@ -154,14 +152,13 @@ The following two links provide the complete list of Device Setup Classes. ‘Sy
 
 #### ‘Removable Device’ Device type
 
-Some devices could be classified as _Removable Device_. A device is considered _removable_ when the driver for the device to which it's connected indicates that the device is removable. For example, a USB device is reported to be removable by the drivers for the USB hub to which the device is connected. 
-
+Some devices could be classified as _Removable Device_. A device is considered _removable_ when the driver for the device to which it's connected indicates that the device is removable. For example, a USB device is reported to be removable by the drivers for the USB hub to which the device is connected.
 
 ### Group Policy Settings for Device Installation
 
 Group Policy is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences.
 
-Device Installation section in Group Policy is a set of policies that control which device could or couldn't be installed on a machine. Whether you want to apply the settings to a stand-alone computer or to many computers in an Active Directory domain, you use the Group Policy Object Editor to configure and apply the policy settings. For more information, see Group Policy Object Editor Technical Reference.
+Device Installation section in Group Policy is a set of policies that control which device could or couldn't be installed on a machine. Whether you want to apply the settings to a stand-alone computer or to many computers in an Active Directory domain, you use the Group Policy Object Editor to configure and apply the policy settings. For more information, see [Group Policy Object Editor](/previous-versions/windows/desktop/Policy/group-policy-object-editor).
 
 The following passages are brief descriptions of the Device Installation policies that are used in this guide.
 
@@ -210,11 +207,8 @@ This policy setting will change the evaluation order in which Allow and Prevent 
 > If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
 
 Some of these policies take precedence over other policies. The flowchart shown below illustrates how Windows processes them to determine whether a user can install a device or not, as shown in Figure below.
- 			
+
 ![Device Installation policies flow chart.](images/device-installation-flowchart.png)<br/>_Device Installation policies flow chart_
-
-
-
 
 ## Requirements for completing the scenarios
 
@@ -259,7 +253,7 @@ To find device identification strings using Device Manager
 3. Device Manager starts and displays a tree representing all of the devices detected on your computer. At the top of the tree is a node with your computers name next to it. Lower nodes represent the various categories of hardware into which your computers devices are grouped.
 
 4. Find the “Printers” section and find the target printer
- 
+
     ![Selecting the printer in Device Manager.](images/device-installation-dm-printer-by-device.png)<br/>_Selecting the printer in Device Manager_
 
 5. Double-click the printer and move to the ‘Details’ tab.
@@ -273,7 +267,7 @@ To find device identification strings using Device Manager
     ![Compatible ID.](images/device-installation-dm-printer-compatible-ids.png)<br/>_HWID and Compatible ID_
 
     > [!TIP]
-    > You can also determine your device identification strings by using the PnPUtil command-line utility. For more information, see [PnPUtil - Windows drivers](/windows-hardware/drivers/devtest/pnputil) in Microsoft Docs.
+    > You can also determine your device identification strings by using the PnPUtil command-line utility. For more information, see [PnPUtil - Windows drivers](/windows-hardware/drivers/devtest/pnputil).
 
 ### Getting device identifiers using PnPUtil
 
@@ -316,7 +310,7 @@ Setting up the environment for the scenario with the following steps:
 
 1. Open Group Policy Editor and navigate to the Device Installation Restriction section.
 
-2. Disable all previous Device Installation policies, except ‘Apply layered order of evaluation’—although the policy is disabled in default, this policy is recommended to be enabled in most practical applications. 
+2. Disable all previous Device Installation policies, except ‘Apply layered order of evaluation’—although the policy is disabled in default, this policy is recommended to be enabled in most practical applications.
 
 3. If there are any enabled policies, changing their status to ‘disabled’, would clear them from all parameters
 
@@ -333,7 +327,7 @@ Getting the right device identifier to prevent it from being installed:
     - [System-Defined Device Setup Classes Available to Vendors - Windows drivers](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
     - [System-Defined Device Setup Classes Reserved for System Use - Windows drivers](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)
 
-3. Our current scenario is focused on preventing all printers from being installed, as such here's the Class GUID for most of printers in the market: 
+3. Our current scenario is focused on preventing all printers from being installed, as such here's the Class GUID for most of printers in the market:
 
     > Printers\
     > Class = Printer\
@@ -347,7 +341,7 @@ Creating the policy to prevent all printers from being installed:
 
 1. Open Group Policy Object Editor—either click the Start button, type mmc gpedit.msc in the Start Search box, and then press ENTER; or type in the Windows search “Group Policy Editor” and open the UI.
 
-2. Navigate to the Device Installation Restriction page: 
+2. Navigate to the Device Installation Restriction page:
 
     > Computer Configuration > Administrative Templates > System > Device Installation > Device Installation Restrictions
 
@@ -625,12 +619,12 @@ These devices are internal devices on the machine that define the USB port conne
 
 > [!IMPORTANT]
 > Some device in the system have several layers of connectivity to define their installation on the system. USB thumb-drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic Device IDs that are commonly used in systems and could provide a good start to build an ‘Allow list’ in such cases. See below for the list:
-> 
-> 	PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (for Host Controllers)/
+>
+> PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (for Host Controllers)/
 > USB\ROOT_HUB30; USB\ROOT_HUB20 (for USB Root Hubs)/
 > USB\USB20_HUB (for Generic USB Hubs)/
-> 
-> Specifically for desktop machines, it's very important to list all the USB devices that your keyboards and mice are connected through in the above list. Failing to do so could block a user from accessing its machine through HID devices. 
+>
+> Specifically for desktop machines, it's very important to list all the USB devices that your keyboards and mice are connected through in the above list. Failing to do so could block a user from accessing its machine through HID devices.
 >
 > Different PC manufacturers sometimes have different ways to nest USB devices in the PnP tree, but in general this is how it's done.
 

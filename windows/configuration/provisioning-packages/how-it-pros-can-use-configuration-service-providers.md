@@ -1,11 +1,11 @@
 ---
 title: Configuration service providers for IT pros (Windows 10/11)
-description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices. 
+description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -160,12 +160,12 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Maps CSP](/windows/client-management/mdm/maps-csp)
 -   [NAP CSP](/windows/client-management/mdm/filesystem-csp)
 -   [NAPDEF CSP](/windows/client-management/mdm/napdef-csp)
--   [NodeCache CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723265)
+-   [NodeCache CSP](https://go.microsoft.com/fwlink/p/?LinkId=723265)
 -   [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 -   [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider)
--   [PolicyManager CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723418)
+-   [PolicyManager CSP](https://go.microsoft.com/fwlink/p/?LinkId=723418)
 -   [Provisioning CSP](/windows/client-management/mdm/provisioning-csp)
--   [Proxy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723372)
+-   [Proxy CSP](https://go.microsoft.com/fwlink/p/?LinkId=723372)
 -   [PXLOGICAL CSP](/windows/client-management/mdm/pxlogical-csp)
 -   [Registry CSP](/windows/client-management/mdm/registry-csp)
 -   [RemoteFind CSP](/windows/client-management/mdm/remotefind-csp)
@@ -179,6 +179,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Update CSP](/windows/client-management/mdm/update-csp)
 -   [VPN CSP](/windows/client-management/mdm/vpn-csp)
 -   [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
--   [Wi-Fi CSP](/documentation/)
+-   [Wi-Fi CSP](/windows/client-management/mdm/wifi-csp)
 -   [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp)
 -   [WindowsSecurityAuditing CSP](/windows/client-management/mdm/windowssecurityauditing-csp)

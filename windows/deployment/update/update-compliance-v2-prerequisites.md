@@ -16,8 +16,8 @@ ms.date: 06/30/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
-> - Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Update Compliance doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers.
 
 ## Update Compliance prerequisites
 
@@ -66,15 +66,9 @@ For more information about what's included in different diagnostic levels, see [
 > [!NOTE]
 > Enrolling into Update Compliance from the [Azure CLI](/cli/azure) or enrolling programmatically another way currently isn't supported. You must manually add Update Compliance to your Azure subscription.
 
-## Microsoft 365 admin center permissions (currently optional)
-
-When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also needed:
-
-- To configure settings and view the **Software Updates** page: 
-  - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
-  - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
-- To view the **Software Updates** page:
-  - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+## Microsoft 365 admin center permissions
+<!--Using include Microsoft 365 admin center permissions-->
+[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-admin-center-permissions.md)]
 
 ## Log Analytics prerequisites
 

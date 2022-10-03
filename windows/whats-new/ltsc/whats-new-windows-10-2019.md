@@ -71,7 +71,7 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 ### Endpoint detection and response
 
-Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal.
+Endpoint detection and response are improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal.
 
 Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint.  Other policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
 
@@ -362,11 +362,11 @@ For more information about Update Compliance, see [Monitor Windows Updates with 
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
 
 ### Privacy
 
-In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/privacy/diagnostic-data-viewer-overview) app.
+In the Feedback and Settings page under Privacy Settings, you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/privacy/diagnostic-data-viewer-overview) app.
 
 ## Configuration
 

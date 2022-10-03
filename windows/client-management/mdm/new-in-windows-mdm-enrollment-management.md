@@ -1,40 +1,105 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
-MS-HAID:
-- 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
-- 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
+MS-HAID: 
+  - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
+  - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 10/20/2020
+ms.date: 09/16/2022
 ---
 
 # What's new in mobile device enrollment and management
 
-This article provides information about what's new in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 and Windows 11 devices. This article also provides details about the breaking changes and known issues and frequently asked questions.
+This article provides information about what's new in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 and Windows 11 devices. This article also provides details about the breaking changes and known issues and frequently asked questions.
 
-For details about Microsoft mobile device management protocols for Windows 10 and Windows 11, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
+For details about Microsoft mobile device management protocols for Windows 10 and Windows 11, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
+## What's new in MDM for Windows 11, version 22H2
 
-## What’s new in MDM for Windows 11, version 21H2
+| New or updated article | Description |
+|--|--|
+| [DeviceStatus](devicestatus-csp.md) | Added the following node:<br><li>MDMClientCertAttestation |
+| [eUUICs](euiccs-csp.md) | Added the following node:<br><li>IsDiscoveryServer |
+| [PersonalDataEncryption](personaldataencryption-csp.md) | New CSP |
+| [Policy CSP](policy-configuration-service-provider.md) | Added the following nodes:<br><li>Accounts/RestrictToEnterpriseDeviceAuthenticationOnly<br><li>DesktopAppInstaller/EnableAdditionalSources<br><li>DesktopAppInstaller/EnableAllowedSources<br><li>DesktopAppInstaller/EnableAppInstaller<br><li>DesktopAppInstaller/EnableDefaultSource<br><li>DesktopAppInstaller/EnableExperimentalFeatures<br><li>DesktopAppInstaller/EnableHashOverride<br><li>DesktopAppInstaller/EnableLocalManifestFiles<br><li>DesktopAppInstaller/EnableMicrosoftStoreSource<br><li>DesktopAppInstaller/EnableMSAppInstallerProtocol<br><li>DesktopAppInstaller/EnableSettings<br><li>DesktopAppInstaller/SourceAutoUpdateInterval<br><li>Education/EnableEduThemes<br><li>Experience/AllowSpotlightCollectionOnDesktop<br><li>FileExplorer/DisableGraphRecentItems<br><li>HumanPresence/ForceInstantDim<br><li>InternetExplorer/EnableGlobalWindowListInIEMode<br><li>InternetExplorer/HideIEAppRetirementNotification<br><li>InternetExplorer/ResetZoomForDialogInIEMode<br><li>LocalSecurityAuthority/AllowCustomSSPsAPs<br><li>LocalSecurityAuthority/ConfigureLsaProtectedProcess<br><li>MixedReality/AllowCaptivePortalBeforeLogon<br><li>MixedReality/AllowLaunchUriInSingleAppKiosk<br><li>MixedReality/AutoLogonUser<br><li>MixedReality/ConfigureMovingPlatform<br><li>MixedReality/ConfigureNtpClient<br><li>MixedReality/ManualDownDirectionDisabled<br><li>MixedReality/NtpClientEnabled<br><li>MixedReality/SkipCalibrationDuringSetup<br><li>MixedReality/SkipTrainingDuringSetup<br><li>NetworkListManager/AllowedTlsAuthenticationEndpoints<br><li>NetworkListManager/ConfiguredTLSAuthenticationNetworkName<br><li>Printers/ConfigureCopyFilesPolicy<br><li>Printers/ConfigureDriverValidationLevel<br><li>Printers/ConfigureIppPageCountsPolicy<br><li>Printers/ConfigureRedirectionGuard<br><li>Printers/ConfigureRpcConnectionPolicy<br><li>Printers/ConfigureRpcListenerPolicy<br><li>Printers/ConfigureRpcTcpPort<br><li>Printers/ManageDriverExclusionList<br><li>Printers/RestrictDriverInstallationToAdministrators<br><li>RemoteDesktopServices/DoNotAllowWebAuthnRedirection<br><li>Search/AllowSearchHighlights<br><li>Search/DisableSearch<br><li>SharedPC/EnabledSharedPCModeWithOneDriveSync<br><li>Start/DisableControlCenter<br><li>Start/DisableEditingQuickSettings<br><li>Start/HideRecommendedSection<br><li>Start/HideTaskViewButton<br><li>Start/SimplifyQuickSettings<br><li>Stickers/EnableStickers<br><li>Textinput/allowimenetworkaccess<br><li>Update/NoUpdateNotificationDuringActiveHours<br><li>WebThreatDefense/EnableService<br><li>WebThreatDefense/NotifyMalicious<br><li>WebThreatDefense/NotifyPasswordReuse<br><li>WebThreatDefense/NotifyUnsafeApp<br><li>Windowslogon/EnableMPRNotifications |
+| [SecureAssessment](secureassessment-csp.md) | Added the following node:<br><li>Asssessments |
+| [WindowsAutopilot](windowsautopilot-csp.md) | Added the following node:<br><li>HardwareMismatchRemediationData |
+
+## What's new in MDM for Windows 11, version 21H2
+
+| New or updated article | Description |
+|--|--|
+| [Policy CSP](policy-configuration-service-provider.md) |  Added the following nodes:<br><li>Kerberos/PKInitHashAlgorithmConfiguration<br><li>Kerberos/PKInitHashAlgorithmSHA1<br><li>Kerberos/PKInitHashAlgorithmSHA256<br><li>Kerberos/PKInitHashAlgorithmSHA384<br><li>Kerberos/PKInitHashAlgorithmSHA512<br><li>NewsAndInterests/AllowNewsAndInterests<br><li>Experiences/ConfigureChatIcon<br><li>Start/ConfigureStartPins<br><li>Virtualizationbasedtechnology/HypervisorEnforcedCodeIntegrity<br><li>Virtualizationbasedtechnology/RequireUEFIMemoryAttributesTable |
+| [DMClient CSP](dmclient-csp.md) | Updated the description of the following nodes:<br><li>Provider/ProviderID/ConfigLock/Lock<br><li>Provider/ProviderID/ConfigLock/UnlockDuration<br><li>Provider/ProviderID/ConfigLock/SecuredCore |
+| [PrinterProvisioning](universalprint-csp.md) | New CSP |
+
+## What's new in MDM for Windows 10, version 20H2
 
 |New or updated article|Description|
 |-----|-----|
-| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 11, version 21H2:<br>- NewsAndInterests/AllowNewsAndInterests<br>- Experiences/ConfigureChatIcon<br>- Start/ConfigureStartPins<br>- Virtualizationbasedtechnology/HypervisorEnforcedCodeIntegrity<br>- Virtualizationbasedtechnology/RequireUEFIMemoryAttributesTable |
-| [DMClient CSP](dmclient-csp.md) | Updated the description of the following node:<br>- Provider/ProviderID/ConfigLock/Lock<br>- Provider/ProviderID/ConfigLock/UnlockDuration<br>- Provider/ProviderID/ConfigLock/SecuredCore |
+| [Policy CSP](policy-configuration-service-provider.md) |  Added the following nodes:<br><li>Experience/DisableCloudOptimizedContent<br><li>LocalUsersAndGroups/Configure<br><li>MixedReality/AADGroupMembershipCacheValidityInDays<br><li>MixedReality/BrightnessButtonDisabled<br><li>MixedReality/FallbackDiagnostics<br><li>MixedReality/MicrophoneDisabled<br><li>MixedReality/VolumeButtonDisabled<br><li>Multitasking/BrowserAltTabBlowout|
+| [SurfaceHub CSP](surfacehub-csp.md) | Added the following new node:<br><li>Properties/SleepMode |
+| [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Updated the description of the following node:<br><li>Settings/AllowWindowsDefenderApplicationGuard |
 
+## What's new in MDM for Windows 10, version 2004
+
+| New or updated article | Description |
+|-----|-----|
+| [Policy CSP](policy-configuration-service-provider.md) |  Added the following nodes:<br><li>ApplicationManagement/BlockNonAdminUserInstall<br><li>Bluetooth/SetMinimumEncryptionKeySize<br><li>DeliveryOptimization/DOCacheHostSource<br><li>DeliveryOptimization/DOMaxBackgroundDownloadBandwidth<br><li>DeliveryOptimization/DOMaxForegroundDownloadBandwidth<br><li>Education/AllowGraphingCalculator<br><li>TextInput/ConfigureJapaneseIMEVersion<br><li>TextInput/ConfigureSimplifiedChineseIMEVersion<br><li>TextInput/ConfigureTraditionalChineseIMEVersion<br><br>Updated the following policy in Windows 10, version 2004:<br><li>DeliveryOptimization/DOCacheHost<br><br>Deprecated the following policies in Windows 10, version 2004:<br><li>DeliveryOptimization/DOMaxDownloadBandwidth<br><li>DeliveryOptimization/DOMaxUploadBandwidth<br><li>DeliveryOptimization/DOPercentageMaxDownloadBandwidth |
+| [DevDetail CSP](devdetail-csp.md) | Added the following new node:<br><li>Ext/Microsoft/DNSComputerName |
+| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | Added the following node:<br><li>IsStub |
+| [SUPL CSP](supl-csp.md) | Added the following node:<br><li>FullVersion |
+
+## What's new in MDM for Windows 10, version 1909
+
+| New or updated article | Description |
+|-----|-----|
+| [BitLocker CSP](bitlocker-csp.md) | Added the following nodes:<br><li>ConfigureRecoveryPasswordRotation<br><li>RotateRecoveryPasswords<br><li>RotateRecoveryPasswordsStatus<br><li>RotateRecoveryPasswordsRequestID|
+
+## What's new in MDM for Windows 10, version 1903
+
+| New or updated article | Description |
+|-----|-----|
+|[Policy CSP](policy-configuration-service-provider.md) | Added the following nodes:<br><li>DeliveryOptimization/DODelayCacheServerFallbackBackground<br><li>DeliveryOptimization/DODelayCacheServerFallbackForeground<br><li>DeviceHealthMonitoring/AllowDeviceHealthMonitoring<br><li>DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope<br><li>DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination<br><li>DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs<br><li>DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs<br><li>Experience/ShowLockOnUserTile<br><li>InternetExplorer/AllowEnhancedSuggestionsInAddressBar<br><li>InternetExplorer/DisableActiveXVersionListAutoDownload<br><li>InternetExplorer/DisableCompatView<br><li>InternetExplorer/DisableFeedsBackgroundSync<br><li>InternetExplorer/DisableGeolocation<br><li>InternetExplorer/DisableWebAddressAutoComplete<br><li>InternetExplorer/NewTabDefaultPage<br><li>Power/EnergySaverBatteryThresholdOnBattery<br><li>Power/EnergySaverBatteryThresholdPluggedIn<br><li>Power/SelectLidCloseActionOnBatterybr><li>Power/SelectLidCloseActionPluggedIn<br><li>Power/SelectPowerButtonActionOnBattery<br><li>Power/SelectPowerButtonActionPluggedIn<br><li>Power/SelectSleepButtonActionOnBattery<br><li>Power/SelectSleepButtonActionPluggedIn<br><li>Power/TurnOffHybridSleepOnBattery<br><li>Power/TurnOffHybridSleepPluggedIn<br><li>Power/UnattendedSleepTimeoutOnBattery<br><li>Power/UnattendedSleepTimeoutPluggedIn<br><li>Privacy/LetAppsActivateWithVoice<br><li>Privacy/LetAppsActivateWithVoiceAboveLock<br><li>Search/AllowFindMyFiles<br><li>ServiceControlManager/SvchostProcessMitigation<br><li>System/AllowCommercialDataPipelinebr><li>System/TurnOffFileHistory<br><li>TimeLanguageSettings/ConfigureTimeZonebr><li>Troubleshooting/AllowRecommendations<br><li>Update/AutomaticMaintenanceWakeUp<br><li>Update/ConfigureDeadlineForFeatureUpdates<br><li>Update/ConfigureDeadlineForQualityUpdates<br><li>Update/ConfigureDeadlineGracePeriod<br><li>WindowsLogon/AllowAutomaticRestartSignOn<br><li>WindowsLogon/ConfigAutomaticRestartSignOn<br><li>WindowsLogon/EnableFirstLogonAnimation|
+| [Policy CSP - Audit](policy-csp-audit.md) | Added the new Audit policy CSP. |
+| [ApplicationControl CSP](applicationcontrol-csp.md) | Added the new CSP. |
+| [Defender CSP](defender-csp.md) | Added the following new nodes:<br><li>Health/TamperProtectionEnabled<br><li>Health/IsVirtualMachine<br><li>Configuration<br><li>Configuration/TamperProtection<br><li>Configuration/EnableFileHashComputation |
+| [DiagnosticLog CSP](diagnosticlog-csp.md) <br> [DiagnosticLog DDF](diagnosticlog-ddf.md) | Added version 1.4 of the CSP in Windows 10, version 1903. <br>Added the new 1.4 version of the DDF. <br>Added the following new nodes:<br><li>Policy<br><li>Policy/Channels<br><li>Policy/Channels/ChannelName<br><li>Policy/Channels/ChannelName/MaximumFileSize<br><li>Policy/Channels/ChannelName/SDDL<br><li>Policy/Channels/ChannelName/ActionWhenFull<br><li>Policy/Channels/ChannelName/Enabled<br><li>DiagnosticArchive<br><li>DiagnosticArchive/ArchiveDefinition<br><li>DiagnosticArchive/ArchiveResults |
+| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | Added the new CSP. |
+| [PassportForWork CSP](passportforwork-csp.md) | Added the following new nodes:<br><li>SecurityKey<br><li>SecurityKey/UseSecurityKeyForSignin |
+
+
+## What's new in MDM for Windows 10, version 1809
+
+| New or updated article | Description |
+|-----|-----|
+|[Policy CSP](policy-configuration-service-provider.md) |  Added the following nodes:<br><li>ApplicationManagement/LaunchAppAfterLogOn<br><li>ApplicationManagement/ScheduleForceRestartForUpdateFailures<br><li>Authentication/EnableFastFirstSignIn (Preview mode only<br><li>Authentication/EnableWebSignIn (Preview mode only<br><li>Authentication/PreferredAadTenantDomainName<br><li>Browser/AllowFullScreenMode<br><li>Browser/AllowPrelaunch<br><li>Browser/AllowPrinting<br><li>Browser/AllowSavingHistory<br><li>Browser/AllowSideloadingOfExtensions<br><li>Browser/AllowTabPreloading<br><li>Browser/AllowWebContentOnNewTabPage<br><li>Browser/ConfigureFavoritesBar<br><li>Browser/ConfigureHomeButton<br><li>Browser/ConfigureKioskMode<br><li>Browser/ConfigureKioskResetAfterIdleTimeout<br><li>Browser/ConfigureOpenMicrosoftEdgeWith<br><li>Browser/ConfigureTelemetryForMicrosoft365Analytics<br><li>Browser/PreventCertErrorOverrides<br><li>Browser/SetHomeButtonURL<br><li>Browser/SetNewTabPageURL<br><li>Browser/UnlockHomeButton<br><li>Defender/CheckForSignaturesBeforeRunningScan<br><li>Defender/DisableCatchupFullScan<br><li>Defender/DisableCatchupQuickScan<br><li>Defender/EnableLowCPUPriority<br><li>Defender/SignatureUpdateFallbackOrder<br><li>Defender/SignatureUpdateFileSharesSources<br><li>DeviceGuard/ConfigureSystemGuardLaunch<br><li>DeviceInstallation/AllowInstallationOfMatchingDeviceIDs<br><li>DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses<br><li>DeviceInstallation/PreventDeviceMetadataFromNetwork<br><li>DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings<br><li>DmaGuard/DeviceEnumerationPolicy<br><li>Experience/AllowClipboardHistory<br><li>Experience/DoNotSyncBrowserSettings<br><li>Experience/PreventUsersFromTurningOnBrowserSyncing<br><li>Kerberos/UPNNameHints<br><li>Privacy/AllowCrossDeviceClipboard<br><li>Privacy/DisablePrivacyExperience<br><li>Privacy/UploadUserActivities<br><li>Security/RecoveryEnvironmentAuthentication<br><li>System/AllowDeviceNameInDiagnosticData<br><li>System/ConfigureMicrosoft365UploadEndpoint<br><li>System/DisableDeviceDelete<br><li>System/DisableDiagnosticDataViewer<br><li>Storage/RemovableDiskDenyWriteAccess<br><li>TaskManager/AllowEndTask<br><li>Update/DisableWUfBSafeguards<br><li>Update/EngagedRestartDeadlineForFeatureUpdates<br><li>Update/EngagedRestartSnoozeScheduleForFeatureUpdates<br><li>Update/EngagedRestartTransitionScheduleForFeatureUpdates<br><li>Update/SetDisablePauseUXAccess<br><li>Update/SetDisableUXWUAccess<br><li>WindowsDefenderSecurityCenter/DisableClearTpmButton<br><li>WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning<br><li>WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl<br><li>WindowsLogon/DontDisplayNetworkSelectionUI |
+| [BitLocker CSP](bitlocker-csp.md) | Added a new node AllowStandardUserEncryption.<br><li>Added support for Windows 10 Pro. |
+| [Defender CSP](defender-csp.md) | Added a new node Health/ProductStatus. |
+| [DevDetail CSP](devdetail-csp.md) | Added a new node SMBIOSSerialNumber. |
+| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | Added NonRemovable setting under AppManagement node. |
+| [Office CSP](office-csp.md) | Added FinalStatus setting. |
+| [PassportForWork CSP](passportforwork-csp.md) | Added new settings. |
+| [RemoteWipe CSP](remotewipe-csp.md) | Added new settings. |
+| [SUPL CSP](supl-csp.md) | Added three new certificate nodes. |
+| [TenantLockdown CSP](tenantlockdown-csp.md) | Added new CSP. |
+| [Wifi CSP](wifi-csp.md) | Added a new node WifiCost. |
+| [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Added new settings. |
+| [WindowsLicensing CSP](windowslicensing-csp.md) | Added S mode settings and SyncML examples. |
+| [Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md) | New CSP. |
 
 ## Breaking changes and known issues
 
-### Get command inside an atomic command isn’t supported
+### Get command inside an atomic command isn't supported
 
-In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported. 
+In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported.
 
 ### Apps installed using WMI classes are not removed
 
@@ -42,11 +107,11 @@ Applications installed using WMI classes aren't removed when the MDM account is 
 
 ### Passing CDATA in SyncML does not work
 
-Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work in Windows 10 and Windows 11.
+Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work in Windows 10 and Windows 11.
 
 ### SSL settings in IIS server for SCEP must be set to "Ignore"
 
-The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10 and Windows 11. 
+The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10 and Windows 11. 
 
 ![ssl settings.](images/ssl-settings.png)
 
@@ -62,7 +127,7 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 ### Certificates causing issues with Wi-Fi and VPN
 
-In Windows 10 and Windows 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
+In Windows 10 and Windows 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
 
 ### Version information for Windows 11
 
@@ -251,7 +316,7 @@ After the MDM client automatically renews the WNS channel URI, the MDM client wi
 
 ### User provisioning failure in Azure Active Directory-joined Windows 10 and Windows 11 devices
 
-In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
+In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
 ### Requirements to note for VPN certificates also used for Kerberos Authentication
 
@@ -286,63 +351,6 @@ Entry | Description
 What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
 What data is handled by dmwappushsvc? | It's a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. This service doesn't send telemetry.|
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this service is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to disable the service. Disabling this service will cause your management to fail.|
-
-
-
-## What’s new in MDM for Windows 10, version 20H2
-
-|New or updated article|Description|
-|-----|-----|
-| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 20H2:<br>- [Experience/DisableCloudOptimizedContent](policy-csp-experience.md#experience-disablecloudoptimizedcontent)<br>- [LocalUsersAndGroups/Configure](policy-csp-localusersandgroups.md#localusersandgroups-configure)<br>- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)<br>- [MixedReality/BrightnessButtonDisabled](policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)<br>- [MixedReality/FallbackDiagnostics](policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)<br>- [MixedReality/MicrophoneDisabled](policy-csp-mixedreality.md#mixedreality-microphonedisabled)<br>- [MixedReality/VolumeButtonDisabled](policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)<br>- [Multitasking/BrowserAltTabBlowout](policy-csp-multitasking.md#multitasking-browseralttabblowout) |
-| [SurfaceHub CSP](surfacehub-csp.md) | Added the following new node:<br>- Properties/SleepMode |
-| [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Updated the description of the following node:<br>- Settings/AllowWindowsDefenderApplicationGuard |
-
-## What’s new in MDM for Windows 10, version 2004
-
-| New or updated article | Description |
-|-----|-----|
-| [Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 2004: <br>- [ApplicationManagement/BlockNonAdminUserInstall](policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall)<br>- [Bluetooth/SetMinimumEncryptionKeySize](policy-csp-bluetooth.md#bluetooth-setminimumencryptionkeysize)<br>- [DeliveryOptimization/DOCacheHostSource](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehostsource)<br>- [DeliveryOptimization/DOMaxBackgroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxbackgrounddownloadbandwidth)<br>- [DeliveryOptimization/DOMaxForegroundDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxforegrounddownloadbandwidth)<br>- [Education/AllowGraphingCalculator](policy-csp-education.md#education-allowgraphingcalculator)<br>- [TextInput/ConfigureJapaneseIMEVersion](policy-csp-textinput.md#textinput-configurejapaneseimeversion)<br>- [TextInput/ConfigureSimplifiedChineseIMEVersion](policy-csp-textinput.md#textinput-configuresimplifiedchineseimeversion)<br>- [TextInput/ConfigureTraditionalChineseIMEVersion](policy-csp-textinput.md#textinput-configuretraditionalchineseimeversion)<br><br>Updated the following policy in Windows 10, version 2004:<br>- [DeliveryOptimization/DOCacheHost](policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost)<br><br>Deprecated the following policies in Windows 10, version 2004:<br>- [DeliveryOptimization/DOMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxdownloadbandwidth)<br>- [DeliveryOptimization/DOMaxUploadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-domaxuploadbandwidth)<br>- [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth) |
-| [DevDetail CSP](devdetail-csp.md) | Added the following new node:<br>- Ext/Microsoft/DNSComputerName |
-| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | Added the following new node:<br>- IsStub |
-| [SUPL CSP](supl-csp.md) | Added the following new node:<br>- FullVersion |
-
-## What’s new in MDM for Windows 10, version 1909
-
-| New or updated article | Description |
-|-----|-----|
-| [BitLocker CSP](bitlocker-csp.md) | Added the following new nodes in Windows 10, version 1909:<br>- ConfigureRecoveryPasswordRotation<br>- RotateRecoveryPasswords<br>- RotateRecoveryPasswordsStatus<br>- RotateRecoveryPasswordsRequestID|
-
-## What’s new in MDM for Windows 10, version 1903
-
-| New or updated article | Description |
-|-----|-----|
-|[Policy CSP](policy-configuration-service-provider.md) | Added the following new policies in Windows 10, version 1903:<br>- [DeliveryOptimization/DODelayCacheServerFallbackBackground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackbackground)<br>- [DeliveryOptimization/DODelayCacheServerFallbackForeground](policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaycacheserverfallbackforeground)<br>- [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-allowdevicehealthmonitoring)<br>- [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringscope)<br>- [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](policy-csp-devicehealthmonitoring.md#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)<br>- [DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs](policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdeviceinstanceids)<br>- [DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs](policy-csp-deviceinstallation.md#deviceinstallationpreventinstallationofmatchingdeviceinstanceids)<br>- [Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)<br>- [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](policy-csp-internetexplorer.md#internetexplorer-allowenhancedsuggestionsinaddressbar)<br>- [InternetExplorer/DisableActiveXVersionListAutoDownload](policy-csp-internetexplorer.md#internetexplorer-disableactivexversionlistautodownload)<br>- [InternetExplorer/DisableCompatView](policy-csp-internetexplorer.md#internetexplorer-disablecompatview)<br>- [InternetExplorer/DisableFeedsBackgroundSync](policy-csp-internetexplorer.md#internetexplorer-disablefeedsbackgroundsync)<br>- [InternetExplorer/DisableGeolocation](policy-csp-internetexplorer.md#internetexplorer-disablegeolocation)<br>- [InternetExplorer/DisableWebAddressAutoComplete](policy-csp-internetexplorer.md#internetexplorer-disablewebaddressautocomplete)<br>- [InternetExplorer/NewTabDefaultPage](policy-csp-internetexplorer.md#internetexplorer-newtabdefaultpage)<br>- [Power/EnergySaverBatteryThresholdOnBattery](policy-csp-power.md#power-energysaverbatterythresholdonbattery)<br>- [Power/EnergySaverBatteryThresholdPluggedIn](policy-csp-power.md#power-energysaverbatterythresholdpluggedin)<br>- [Power/SelectLidCloseActionOnBattery](policy-csp-power.md#power-selectlidcloseactiononbattery)<br>- [Power/SelectLidCloseActionPluggedIn](policy-csp-power.md#power-selectlidcloseactionpluggedin)<br>- [Power/SelectPowerButtonActionOnBattery](policy-csp-power.md#power-selectpowerbuttonactiononbattery)<br>- [Power/SelectPowerButtonActionPluggedIn](policy-csp-power.md#power-selectpowerbuttonactionpluggedin)<br>- [Power/SelectSleepButtonActionOnBattery](policy-csp-power.md#power-selectsleepbuttonactiononbattery)<br>- [Power/SelectSleepButtonActionPluggedIn](policy-csp-power.md#power-selectsleepbuttonactionpluggedin)<br>- [Power/TurnOffHybridSleepOnBattery](policy-csp-power.md#power-turnoffhybridsleeponbattery)<br>- [Power/TurnOffHybridSleepPluggedIn](policy-csp-power.md#power-turnoffhybridsleeppluggedin)<br>- [Power/UnattendedSleepTimeoutOnBattery](policy-csp-power.md#power-unattendedsleeptimeoutonbattery)<br>- [Power/UnattendedSleepTimeoutPluggedIn](policy-csp-power.md#power-unattendedsleeptimeoutpluggedin)<br>- [Privacy/LetAppsActivateWithVoice](policy-csp-privacy.md#privacy-letappsactivatewithvoice)<br>- [Privacy/LetAppsActivateWithVoiceAboveLock](policy-csp-privacy.md#privacy-letappsactivatewithvoiceabovelock)<br>- [Search/AllowFindMyFiles](policy-csp-search.md#search-allowfindmyfiles)<br>- [ServiceControlManager/SvchostProcessMitigation](policy-csp-servicecontrolmanager.md#servicecontrolmanager-svchostprocessmitigation)<br>- [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)<br>- [System/TurnOffFileHistory](policy-csp-system.md#system-turnofffilehistory)<br>- [TimeLanguageSettings/ConfigureTimeZone](policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)<br>- [Troubleshooting/AllowRecommendations](policy-csp-troubleshooting.md#troubleshooting-allowrecommendations)<br>- [Update/AutomaticMaintenanceWakeUp](policy-csp-update.md#update-automaticmaintenancewakeup)<br>- [Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#update-configuredeadlineforfeatureupdates)<br>- [Update/ConfigureDeadlineForQualityUpdates](policy-csp-update.md#update-configuredeadlineforqualityupdates)<br>- [Update/ConfigureDeadlineGracePeriod](policy-csp-update.md#update-configuredeadlinegraceperiod)<br>- [WindowsLogon/AllowAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon)<br>- [WindowsLogon/ConfigAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)<br>- [WindowsLogon/EnableFirstLogonAnimation](policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)|
-| [Policy CSP - Audit](policy-csp-audit.md) | Added the new Audit policy CSP. |
-| [ApplicationControl CSP](applicationcontrol-csp.md) | Added the new CSP. |
-| [Defender CSP](defender-csp.md) | Added the following new nodes:<br>- Health/TamperProtectionEnabled<br>- Health/IsVirtualMachine<br>- Configuration<br>- Configuration/TamperProtection<br>- Configuration/EnableFileHashComputation |
-| [DiagnosticLog CSP](diagnosticlog-csp.md) <br> [DiagnosticLog DDF](diagnosticlog-ddf.md) | Added version 1.4 of the CSP in Windows 10, version 1903. <br>Added the new 1.4 version of the DDF. <br>Added the following new nodes:<br>- Policy<br>- Policy/Channels<br>- Policy/Channels/ChannelName<br>- Policy/Channels/ChannelName/MaximumFileSize<br>- Policy/Channels/ChannelName/SDDL<br>- Policy/Channels/ChannelName/ActionWhenFull<br>- Policy/Channels/ChannelName/Enabled<br>- DiagnosticArchive<br>- DiagnosticArchive/ArchiveDefinition<br>- DiagnosticArchive/ArchiveResults |
-| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | Added the new CSP. |
-| [PassportForWork CSP](passportforwork-csp.md) | Added the following new nodes:<br>- SecurityKey<br>- SecurityKey/UseSecurityKeyForSignin |
-
-
-## What’s new in MDM for Windows 10, version 1809
-
-| New or updated article | Description |
-|-----|-----|
-|[Policy CSP](policy-configuration-service-provider.md) | Added the following new policy settings in Windows 10, version 1809:<br>- ApplicationManagement/LaunchAppAfterLogOn<br>- ApplicationManagement/ScheduleForceRestartForUpdateFailures<br>- Authentication/EnableFastFirstSignIn (Preview mode only)<br>- Authentication/EnableWebSignIn (Preview mode only)<br>- Authentication/PreferredAadTenantDomainName<br>- Browser/AllowFullScreenMode<br>- Browser/AllowPrelaunch<br>- Browser/AllowPrinting<br>- Browser/AllowSavingHistory<br>- Browser/AllowSideloadingOfExtensions<br>- Browser/AllowTabPreloading<br>- Browser/AllowWebContentOnNewTabPage<br>- Browser/ConfigureFavoritesBar<br>- Browser/ConfigureHomeButton<br>- Browser/ConfigureKioskMode<br>- Browser/ConfigureKioskResetAfterIdleTimeout<br>- Browser/ConfigureOpenMicrosoftEdgeWith<br>- Browser/ConfigureTelemetryForMicrosoft365Analytics<br>- Browser/PreventCertErrorOverrides<br>- Browser/SetHomeButtonURL<br>- Browser/SetNewTabPageURL<br>- Browser/UnlockHomeButton<br>- Defender/CheckForSignaturesBeforeRunningScan<br>- Defender/DisableCatchupFullScan<br>- Defender/DisableCatchupQuickScan<br>- Defender/EnableLowCPUPriority<br>- Defender/SignatureUpdateFallbackOrder<br>- Defender/SignatureUpdateFileSharesSources<br>- DeviceGuard/ConfigureSystemGuardLaunch<br>- DeviceInstallation/AllowInstallationOfMatchingDeviceIDs<br>- DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses<br>- DeviceInstallation/PreventDeviceMetadataFromNetwork<br>- DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings<br>- DmaGuard/DeviceEnumerationPolicy<br>- Experience/AllowClipboardHistory<br>- Experience/DoNotSyncBrowserSettings<br>- Experience/PreventUsersFromTurningOnBrowserSyncing<br>- Kerberos/UPNNameHints<br>- Privacy/AllowCrossDeviceClipboard<br>- Privacy/DisablePrivacyExperience<br>- Privacy/UploadUserActivities<br>- Security/RecoveryEnvironmentAuthentication<br>- System/AllowDeviceNameInDiagnosticData<br>- System/ConfigureMicrosoft365UploadEndpoint<br>- System/DisableDeviceDelete<br>- System/DisableDiagnosticDataViewer<br>- Storage/RemovableDiskDenyWriteAccess<br>- TaskManager/AllowEndTask<br>- Update/DisableWUfBSafeguards<br>- Update/EngagedRestartDeadlineForFeatureUpdates<br>- Update/EngagedRestartSnoozeScheduleForFeatureUpdates<br>- Update/EngagedRestartTransitionScheduleForFeatureUpdates<br>- Update/SetDisablePauseUXAccess<br>- Update/SetDisableUXWUAccess<br>- WindowsDefenderSecurityCenter/DisableClearTpmButton<br>- WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning<br>- WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl<br>- WindowsLogon/DontDisplayNetworkSelectionUI |
-| [BitLocker CSP](bitlocker-csp.md) | Added a new node AllowStandardUserEncryption in Windows 10, version 1809. Added support for Windows 10 Pro. |
-| [Defender CSP](defender-csp.md) | Added a new node Health/ProductStatus in Windows 10, version 1809. |
-| [DevDetail CSP](devdetail-csp.md) | Added a new node SMBIOSSerialNumber in Windows 10, version 1809. |
-| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | Added NonRemovable setting under AppManagement node in Windows 10, version 1809. |
-| [Office CSP](office-csp.md) | Added FinalStatus setting in Windows 10, version 1809. |
-| [PassportForWork CSP](passportforwork-csp.md) | Added new settings in Windows 10, version 1809. |
-| [RemoteWipe CSP](remotewipe-csp.md) | Added new settings in Windows 10, version 1809. |
-| [SUPL CSP](supl-csp.md) | Added three new certificate nodes in Windows 10, version 1809. |
-| [TenantLockdown CSP](tenantlockdown-csp.md) | Added new CSP in Windows 10, version 1809. |
-| [Wifi CSP](wifi-csp.md) | Added a new node WifiCost in Windows 10, version 1809. |
-| [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Added new settings in Windows 10, version 1809. |
-| [WindowsLicensing CSP](windowslicensing-csp.md) | Added S mode settings and SyncML examples in Windows 10, version 1809. |
-| [Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md) | Added new configuration service provider in Windows 10, version 1809. |
 
 
 ## Change history for MDM documentation

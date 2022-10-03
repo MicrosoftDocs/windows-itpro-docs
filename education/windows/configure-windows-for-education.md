@@ -4,21 +4,19 @@ description: Provides guidance on ways to configure the OS diagnostic data, cons
 keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations, accessibility, assistive technology
 ms.mktglfcycl: plan
 ms.sitesec: library
-ms.prod: w10
+ms.prod: windows
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Windows 10 configuration recommendations for education customers
-**Applies to:**
-
--   Windows 10
-
 
 Privacy is important to us, we want to provide you with ways to customize the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, for usage with [education editions of Windows 10](windows-editions-for-education-customers.md) in education environments. These features work on all Windows 10 editions, but education editions of Windows 10 have the settings preconfigured. We recommend that all Windows 10 devices in an education setting be configured with **[SetEduPolicies](#setedupolicies)** enabled. For more information, see the following table. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
 
@@ -94,19 +92,13 @@ Use one of these methods to set this policy.
     - Data type:  Integer
     - Value:  0
 
-      ![Create an OMA URI for AllowCortana.](images/allowcortana_omauri.png)
-
 ### Group Policy
 Set **Computer Configuration > Administrative Templates > Windows Components > Search > AllowCortana** to **Disabled**.
-
-![Set AllowCortana to disabled through Group Policy.](images/allowcortana_gp.png)
 
 ### Provisioning tools
 - [Set up School PCs](use-set-up-school-pcs-app.md) always sets this policy in provisioning packages it creates.
 - [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-create-package) 
     - Under **Runtime settings**, click the **Policies** settings group, set **Experience > Cortana** to **No**.
-
-        ![Set AllowCortana to No in Windows Configuration Designer.](images/allowcortana_wcd.png)
 
 ## SetEduPolicies
 **SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It's a policy node in the [SharedPC configuration service provider](/windows/client-management/mdm/sharedpc-csp).

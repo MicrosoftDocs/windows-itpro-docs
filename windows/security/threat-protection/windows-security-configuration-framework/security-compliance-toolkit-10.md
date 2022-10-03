@@ -25,14 +25,15 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 The Security Compliance Toolkit consists of:
 
 -   Windows 11 security baseline
-
+    -   Windows 11, version 22H2
+    -   Windows 11, version 21H2
 -   Windows 10 security baselines
-    -   Windows 10 Version 21H2
-    -   Windows 10 Version 21H1
-    -   Windows 10 Version 20H2
-    -   Windows 10 Version 1809
-    -   Windows 10 Version 1607
-    -   Windows 10 Version 1507
+    -   Windows 10, version 21H2
+    -   Windows 10, version 21H1
+    -   Windows 10, version 20H2
+    -   Windows 10, version 1809
+    -   Windows 10, version 1607
+    -   Windows 10, version 1507
 
 -   Windows Server security baselines
     -   Windows Server 2022
@@ -54,7 +55,7 @@ The Security Compliance Toolkit consists of:
     -   GPO to Policy Rules
 
 
-You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).
+You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more information about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).
 
 ## What is the Policy Analyzer tool?
 
@@ -64,7 +65,7 @@ The Policy Analyzer is a utility for analyzing and comparing sets of Group Polic
 -   Compare GPOs against current local policy and local registry settings
 -   Export results to a Microsoft Excel spreadsheet
 
-Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
+Policy Analyzer lets you treat a set of GPOs as a single unit. This treatment makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
 
 More information on the Policy Analyzer tool can be found on the [Microsoft Security Guidance blog](/archive/blogs/secguide/new-tool-policy-analyzer) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
@@ -72,7 +73,7 @@ More information on the Policy Analyzer tool can be found on the [Microsoft Secu
 
 LGPO.exe is a command-line utility that is designed to help automate management of Local Group Policy. 
 Using local policy gives administrators a simple way to verify the effects of Group Policy settings, and is also useful for managing non-domain-joined systems. 
-LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files, security templates, Advanced Auditing backup files, as well as from formatted “LGPO text” files. 
+LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files, security templates, Advanced Auditing backup files, and from formatted “LGPO text” files. 
 It can export local policy to a GPO backup. 
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 

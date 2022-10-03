@@ -1,25 +1,23 @@
 ---
 title: Set up School PCs app technical reference overview
 description: Describes the purpose of the Set up School PCs app for Windows 10 devices.
-keywords: shared cart, shared PC, school, set up school pcs
-ms.prod: w10
+keywords: shared PC, school, set up school pcs
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 07/11/2018
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # What is Set up School PCs?
-
-
-**Applies to:**
-
--   Windows 10
 
 The **Set up School PCs** app helps you configure new Windows 10 PCs for school use. The
 app, which is available for Windows 10 version 1703 and later, configures and saves

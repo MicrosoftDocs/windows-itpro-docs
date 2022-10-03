@@ -2,12 +2,12 @@
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/08/2020
 ---
@@ -1559,6 +1559,16 @@ ms.date: 10/08/2020
 - [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 - [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+- [DesktopAppInstaller/EnableAdditionalSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources)
+- [DesktopAppInstaller/EnableAppInstaller](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller)
+- [DesktopAppInstaller/EnableLocalManifestFiles](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablelocalmanifestfiles)
+- [DesktopAppInstaller/EnableHashOverride](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablehashoverride)
+- [DesktopAppInstaller/EnableMicrosoftStoreSource](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemicrosoftstoresource)
+- [DesktopAppInstaller/EnableMSAppInstallerProtocol](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemsappinstallerprotocol)
+- [DesktopAppInstaller/EnableSettings](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablesettings)
+- [DesktopAppInstaller/EnableAllowedSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableallowedsources)
+- [DesktopAppInstaller/EnableExperimentalFeatures](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableexperimentalfeatures)
+- [DesktopAppInstaller/SourceAutoUpdateInterval](./policy-csp-desktopappinstaller.md#desktopappinstaller-sourceautoupdateinterval)
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdeviceids)
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdevicesetupclasses)
 - [DeviceInstallation/PreventDeviceMetadataFromNetwork](./policy-csp-deviceinstallation.md#deviceinstallationpreventdevicemetadatafromnetwork)

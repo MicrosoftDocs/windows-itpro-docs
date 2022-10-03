@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Defender
 description: Learn how to use the Policy CSP - Defender setting so you can allow or disallow scanning of archives.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -2105,17 +2105,17 @@ If you disable or don't configure this setting, security intelligence will be re
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP Friendly name: *Define security intelligence location for VDI clients*
+-   GP Friendly name: *Specify the signature (Security intelligence) delivery optimization for Defender in Virtual Environments*
 -   GP name: *SecurityIntelligenceLocation*
 -   GP element: *SecurityIntelligenceLocation*
--   GP path: *Windows Components/Microsoft Defender Antivirus/Security Intelligence Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
 - Empty string - no policy is set
-- Non-empty string - the policy is set and security intelligence is gathered from the location
+- Non-empty string - the policy is set and security intelligence is gathered from the location.
 
 <!--/SupportedValues-->
 <!--/Policy-->
