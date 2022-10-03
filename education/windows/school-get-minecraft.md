@@ -24,14 +24,11 @@ ms.topic: conceptual
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription, Minecraft: Education Edition will be added to the inventory in your Microsoft Admin Center which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Admin Center is only displayed to members of your organization with administrative roles.
 
 >[!Note]
->If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information, see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
+>If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you purchase Minecraft: Education Edition. For more information, see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
 
 ## Settings for Microsoft 365 A3 or Microsoft 365 A5 customers
 
-Schools that purchased these products have an extra option for making Minecraft: Education Edition available to their students:
-
-- Microsoft 365 A3 or Microsoft 365 A5
-- Minecraft: Education Edition
+Schools that purchased Microsoft 365 A3 or Microsoft 365 A5 have an extra option for making Minecraft: Education Edition available to their students:
 
 If your school has these products in your tenant, admins can choose to enable Minecraft: Education Edition for students using Microsoft 365 A3 or Microsoft 365 A5. From the left-hand menu in Microsoft Admin Center, select Users. From the Users list, select the users you want to add or remove for Minecraft: Education Edition access. Add the relevant A3 or A5 license if it hasn't been assigned already. 
 
@@ -94,7 +91,7 @@ Invoices are now a supported payment method for Minecraft: Education Edition. Th
 
 2. Select the Invoice option, and provide the info needed for an invoice. The **PO number** item allows you to add a tracking number or info that is meaningful to your organization.
 
-    ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/mcee-invoice-info.png)
+    ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/minecraft/mcee-invoice-info.png)
 
 For more info on invoices and how to pay by invoice, see [How to pay for your subscription](/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?).  
 

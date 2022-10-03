@@ -23,9 +23,9 @@ ms.technology: windows-sec
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
@@ -117,9 +117,6 @@ Alice follows these steps to complete this task:
 6. If appropriate, add more signer or file rules to further customize the policy for your organization.
 
 7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
-
-    > [!NOTE]
-    > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
 
    ```powershell
    [xml]$LamnaPolicyXML = Get-Content $LamnaPolicy

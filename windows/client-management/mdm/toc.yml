@@ -299,6 +299,11 @@ items:
             items:
               - name: HealthAttestation DDF
                 href: healthattestation-ddf.md
+          - name: Local Administrator Password Solution CSP
+            href: laps-csp.md
+            items:
+              - name: Local Administrator Password Solution DDF
+                href: laps-ddf-file.md
           - name: MultiSIM CSP
             href: multisim-csp.md
             items:
@@ -333,6 +338,11 @@ items:
             items:
               - name: PassportForWork DDF file
                 href: passportforwork-ddf.md
+          - name: PersonalDataEncryption CSP
+            href: personaldataencryption-csp.md
+            items:
+              - name: PersonalDataEncryption DDF file
+                href: personaldataencryption-ddf-file.md
           - name: Personalization CSP
             href: personalization-csp.md
             items:
@@ -685,6 +695,8 @@ items:
                 href: policy-csp-deliveryoptimization.md
               - name: Desktop
                 href: policy-csp-desktop.md
+              - name: DesktopAppInstaller
+                href: policy-csp-desktopappinstaller.md
               - name: DeviceGuard
                 href: policy-csp-deviceguard.md
               - name: DeviceHealthMonitoring
@@ -735,6 +747,8 @@ items:
                 href: policy-csp-licensing.md
               - name: LocalPoliciesSecurityOptions
                 href: policy-csp-localpoliciessecurityoptions.md
+              - name: LocalSecurityAuthority
+                href: policy-csp-lsa.md
               - name: LocalUsersAndGroups
                 href: policy-csp-localusersandgroups.md
               - name: LockDown
@@ -815,6 +829,8 @@ items:
                 href: policy-csp-userrights.md
               - name: VirtualizationBasedTechnology
                 href: policy-csp-virtualizationbasedtechnology.md
+              - name: WebThreatDefense
+                href: policy-csp-webthreatdefense.md
               - name: Wifi
                 href: policy-csp-wifi.md
               - name: WindowsAutoPilot
