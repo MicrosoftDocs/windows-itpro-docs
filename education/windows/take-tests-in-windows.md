@@ -19,13 +19,13 @@ appliesto:
 
 # Take tests and assessments in Windows
 
-Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with testing, Windows provides an application called **Take a Test**. The application is a secure browser that can be configured to only allow access a specific URL or a list of URLs. The application provides more features to help with testing, such as:
+Many schools use online testing for formative and summation assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. To help schools with testing, Windows provides an application called **Take a Test**. The application is a secure browser that provides different features to help with testing, and can be configured to only allow access a specific URL or a list of URLs. When using Take a Test, students can't:
 
-- prevention of printing, screen capture and text suggestions (unless enabled by the teacher or administrator)
-- clearing of the clipboard
-- c other applications
-- prevention to change system settings, such as display extension, notifications, updates
-- disablement of Cortana
+- print, use screen capture, or text suggestions (unless enabled by the teacher or administrator)
+- access other applications
+- change system settings, such as display extension, notifications, updates
+- access Cortana
+- access content copied to the clipboard
 
 ## How to use Take a Test
 
