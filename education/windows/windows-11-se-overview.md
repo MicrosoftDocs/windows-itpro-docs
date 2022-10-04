@@ -90,6 +90,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
 | Brave Browser                           | 1.34.80           | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
+| CA Secure Browser                       | 14.0.0            | Win32    | Cambium Development          |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
 | CKAuthenticator                         | 3.6               | Win32    | Content Keeper               |
 | Class Policy                            | 114.0.0           | Win32    | Class Policy                 |
@@ -100,7 +101,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Duo from Cisco                          | 2.25.0            | Win32    | Cisco                        |
 | e-Speaking Voice and Speech recognition | 4.4.0.8           | Win32    | e-speaking                   |
 | eTests                                  | 4.0.25            | Win32    | CASAS                        |
-| FortiClient                             | 7.0.1.0083        | Win32    | Fortinet                     |
+| FortiClient                             | 7.2.0.4034+       | Win32    | Fortinet                     |
 | Free NaturalReader                      | 16.1.2            | Win32    | Natural Soft                 |
 | Ghotit Real Writer & Reader             | 10.14.2.3         | Win32    | Ghotit Ltd                   |
 | GoGuardian                              | 1.4.4             | Win32    | GoGuardian                   |
@@ -133,7 +134,6 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Remote Help                             | 3.8.0.12          | Win32    | Microsoft                    |
 | Respondus Lockdown Browser              | 2.0.9.00          | Win32    | Respondus                    |
 | Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
-| Secure Browser                          | 14.0.0            | Win32    | Cambium Development          |
 | Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
 | SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
 | Zoom                                    | 5.9.1 (2581)      | Win32    | Zoom                         |

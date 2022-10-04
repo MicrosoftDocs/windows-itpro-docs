@@ -64,9 +64,9 @@ You can open support requests directly from the Azure portal. If  the **Help + S
 
 Select the **Feedback** link in the upper right of any article to go to the Feedback section at the bottom. Feedback is integrated with GitHub Issues. For more information about this integration with GitHub Issues, see the [docs platform blog post](/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-:::image type="content" source="media/docs-feedback.png" alt-text="Screenshot of the feedback section on a docs article.":::
+:::image type="content" source="media/docs-feedback.png" alt-text="Screenshot of the feedback section of a Microsoft Learn page.":::
 
-To share docs feedback about the current article, select **This page**. A [GitHub account](https://github.com/join) is a prerequisite for providing documentation feedback. Once you sign in, there's a one-time authorization for the MicrosoftDocs organization. It then opens the GitHub new issue form. Add a descriptive title and detailed feedback in the body, but don't modify the document details section. Then select **Submit new issue** to file a new issue for the target article in the [Windows-ITPro-docs GitHub repository](https://github.com/MicrosoftDocs/windows-itpro-docs/issues).
+To share feedback about the current article, select **This page**. A [GitHub account](https://github.com/join) is a prerequisite for providing documentation feedback. Once you sign in, there's a one-time authorization for the MicrosoftDocs organization. It then opens the GitHub new issue form. Add a descriptive title and detailed feedback in the body, but don't modify the document details section. Then select **Submit new issue** to file a new issue for the target article in the [Windows-ITPro-docs GitHub repository](https://github.com/MicrosoftDocs/windows-itpro-docs/issues).
 
 To see whether there's already feedback for this article, select **View all page feedback**. This action opens a GitHub issue query for this article. By default it displays both open and closed issues. Review any existing feedback before you submit a new issue. If you find a related issue, select the face icon to add a reaction, add a comment to the thread, or **Subscribe** to receive notifications.
 
@@ -86,7 +86,7 @@ If you create an issue for something not related to documentation, Microsoft wil
 - [Product questions (using Microsoft Q&A)](/answers/products/)
 - [Support requests](#open-a-microsoft-support-case) for Update Compliance
 
-To share feedback about the Microsoft Docs platform, see [Microsoft Docs feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
+To share feedback about the Microsoft Learn platform, see [Microsoft Learn feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
 
 ## Troubleshooting tips
 
