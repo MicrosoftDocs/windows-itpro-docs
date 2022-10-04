@@ -233,11 +233,13 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 
 ## Disable Windows Defender Credential Guard
 
-Windows Defender Credential Guard can be disabled via several methods explained below, depending on how the feature was enabled in the first place.
+Windows Defender Credential Guard can be disabled via several methods explained below, depending on how the feature was enabled. For devices which had Windows Defender Credential Guard automatically enabled in the 22H2 update and did not have it enabled prior to the update, it is sufficient to [disable via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy).
 
-If Windows Defender Credential Guard was enabled with UEFI Lock, the entire procedure described in [Disabling Windows Defender Credential Guard with UEFI Lock](#disabling-windows-defender-credential-guard-with-uefi-lock) must be followed. Note that the default enablement change in eligible 22H2 devices does **not** use a UEFI Lock.
+If Windows Defender Credential Guard was enabled with UEFI Lock, the procedure described in [Disabling Windows Defender Credential Guard with UEFI Lock](#disabling-windows-defender-credential-guard-with-uefi-lock) must be followed. Note that the default enablement change in eligible 22H2 devices does **not** use a UEFI Lock.
 
-If Windows Defender Credential Guard was enabled without UEFI Lock and was enabled via Group Policy, Windows Defender Credential Guard should be [disabled via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy). Otherwise, Windows Defender Credential Guard can be [disabled by changing registry keys](#disabling-windows-defender-credential-guard-using-registry-keys).
+If Windows Defender Credential Guard was enabled via Group Policy without UEFI Lock, Windows Defender Credential Guard should be [disabled via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy).
+
+Otherwise, Windows Defender Credential Guard can be [disabled by changing registry keys](#disabling-windows-defender-credential-guard-using-registry-keys).
 
 Windows Defender Credential Guard running in a virtual machine can be [disabled by the host](#disable-windows-defender-credential-guard-for-a-virtual-machine).
 
