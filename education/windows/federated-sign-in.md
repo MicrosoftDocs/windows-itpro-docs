@@ -33,7 +33,11 @@ To implement federated sign-in, the following prerequisites must be met:
 
 1. An Azure AD tenant, with one or multiple domains federated to a third-party IdP. For more information, see [Use a SAML 2.0 Identity Provider (IdP) for Single Sign On][AZ-1]
 1. Individual IdP accounts created: each user will require an account defined in the third-party IdP platform
-1. Individual Azure AD accounts created: each user will require a matching account defined in Azure AD. These accounts are commonly created through automation, with a provisioning process offered by the IdP
+1. Individual Azure AD accounts created: each user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
+    - [School Data Sync (SDS)](/schooldatasync)
+    - [Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis) for environment with on-premises AD DS
+    - PowerShell scripts that call the [Microsoft Graph API](/graph/api/user-post-users?view=graph-rest-1.0&tabs=powershell)
+    - provisioning tools offered by the IdP
 1. Licenses assigned to the Azure AD user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Azure AD, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Azure Active Directory][AZ-2]
 1. Enable federated sign-in on the Windows devices that the users will be using
     > [!IMPORTANT]
