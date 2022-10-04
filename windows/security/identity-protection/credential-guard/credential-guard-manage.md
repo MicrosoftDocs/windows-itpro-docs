@@ -270,8 +270,6 @@ If Windows Defender Credential Guard was enabled without UEFI Lock and without G
 
 1. Restart the machine.
 
-1. Accept the prompt to disable Windows Defender Credential Guard.
-
 ### Disabling Windows Defender Credential Guard with UEFI Lock
 
 If Windows Defender Credential Guard was enabled with UEFI Lock enabled, then the following procedure must be followed since the settings are persisted in EFI (firmware) variables. This scenario will require physical presence at the machine to press a function key to accept the change.
@@ -298,8 +296,6 @@ If Windows Defender Credential Guard was enabled with UEFI Lock enabled, then th
    ```
 
 1. Restart the PC. Before the OS boots, a prompt will appear notifying that UEFI was modified, and asking for confirmation. This prompt must be confirmed for the changes to persist. This step requires physical access to the machine.
-
-1. After the device finishes booting, accept the prompt to disable Windows Defender Credential Guard.
 
 ### Disable Windows Defender Credential Guard for a virtual machine
 
