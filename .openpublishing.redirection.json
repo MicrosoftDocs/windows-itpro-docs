@@ -19654,6 +19654,26 @@
      "source_path": "windows/configuration/windows-10-accessibility-for-ITPros.md",
      "redirect_url": "/windows/configuration/windows-accessibility-for-ITPros",
      "redirect_document_id": false
+     },
+     {
+       "source_path": "education/windows/take-a-test-multiple-pcs.md",
+       "redirect_url": "/education/windows/edu-take-a-test-kiosk-mode",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "education/windows/take-a-test-single-pc.md",
+       "redirect_url": "/education/windows/take-tests-in-windows",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "education/windows/take-tests-in-windows-10.md",
+       "redirect_url": "/education/windows/take-tests-in-windows",
+       "redirect_document_id": false
+     },
+     {
+       "source_path": "education/windows/change-history-edu.md",
+       "redirect_url": "/education/windows",
+       "redirect_document_id": false
      }
   ]
 }

@@ -31,23 +31,23 @@ Education themes aren't enabled by default. Follow the instructions below to con
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To enable education themes using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+To configure devices using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/EnableEduThemes`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-Assign the policy to a security group that contains as members the devices or users that you want to enable education themes on.
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-To configure education themes using a provisioning package, use the following settings:
+To configure devices using a provisioning package, [create a provisioning package][WIN-1] using Windows Configuration Designer (WCD), with the following settings:
 
 | Setting |
 |--------|
 | <li> Path: **`Education/EnableEduThemes`** </li><li>Value: **True**</li>|
 
-Apply the provisioning package to the devices that you want to enable education themes on.
+Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
 ---
 
@@ -62,3 +62,6 @@ To change the theme, select **Settings** > **Personalization** > **Themes** > **
 -----------
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
+
+[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
+[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
