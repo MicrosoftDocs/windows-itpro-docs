@@ -1,24 +1,28 @@
 ---
-title: Set up a shared or guest Windows device
-description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
-ms.date: 10/15/2022
-ms.prod: windows
-ms.technology: windows
-ms.topic: reference
+title: Set up a shared or guest PC with Windows 10/11
+description: Windows 10 and Windows has shared PC mode, which optimizes Windows client for shared use scenarios.
+ms.prod: w10
+author: lizgt2000
+ms.author: lizlong
+ms.topic: article
 ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
+ms.reviewer: sybruckm
 manager: aaroncz
-ms.collection: 
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.collection: highpri
 ---
 
-# Set up a shared or guest Windows device
+# Set up a shared or guest PC with Windows 10/11
 
-*Shared PC mode* is a Windows feature that optimizes Windows clients for shared use scenarios, such as touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
+
+**Applies to**
+
+- Windows 10
+- Windows 11
+
+Windows client has a *shared PC mode*, which optimizes Windows client for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows client Pro, Pro Education, Education, and Enterprise.
+
+> [!NOTE]
+> If you're interested in using Windows client for shared PCs in a school, see [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
 ## Shared PC mode concepts
 A Windows client PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. 
@@ -213,6 +217,137 @@ Provisioning packages can be applied to a device during initial setup (out-of-bo
         New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
         ``` 
 
-## Technical reference
+## Policies set by shared PC mode
 
-For a list of settings configured by the different options offered by Shared PC mode, see the [Shared PC technical reference](shared-pc-technical.md).
+Shared PC mode sets local group policies to configure the device. Some of these are configurable using the shared pc mode options.
+
+> [!IMPORTANT]
+> It is not recommended to set additional policies on PCs configured for **Shared PC Mode**. The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
+
+### Admin Templates > Control Panel > Personalization
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Prevent enabling lock screen slide show|Enabled|Always|
+|Prevent changing lock screen and logon image|Enabled|Always|
+
+### Admin Templates > System > Power Management > Button Settings
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Select the Power button action (plugged in)|Sleep|SetPowerPolicies=True|
+|Select the Power button action (on battery)|Sleep|SetPowerPolicies=True|
+|Select the Sleep button action (plugged in)|Sleep|SetPowerPolicies=True|
+|Select the lid switch action (plugged in)|Sleep|SetPowerPolicies=True|
+|Select the lid switch action (on battery)|Sleep|SetPowerPolicies=True|
+
+### Admin Templates > System > Power Management > Sleep Settings
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Require a password when a computer wakes (plugged in)|Enabled|SignInOnResume=True|
+|Require a password when a computer wakes (on battery)|Enabled|SignInOnResume=True|
+|Specify the system sleep timeout (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
+|Specify the system sleep timeout (on battery)|*SleepTimeout*|SetPowerPolicies=True|
+|Turn off hybrid sleep (plugged in)|Enabled|SetPowerPolicies=True|
+|Turn off hybrid sleep (on battery)|Enabled|SetPowerPolicies=True|
+|Specify the unattended sleep timeout (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
+|Specify the unattended sleep timeout (on battery)|*SleepTimeout*|SetPowerPolicies=True|
+|Allow standby states (S1-S3) when sleeping (plugged in)|Enabled|SetPowerPolicies=True|
+|Allow standby states (S1-S3) when sleeping (on battery)|Enabled |SetPowerPolicies=True|
+|Specify the system hibernate timeout (plugged in)|Enabled, 0|SetPowerPolicies=True|
+|Specify the system hibernate timeout (on battery)|Enabled, 0|SetPowerPolicies=True|
+
+### Admin Templates>System>Power Management>Video and Display Settings
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Turn off the display (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
+|Turn off the display (on battery|*SleepTimeout*|SetPowerPolicies=True|
+
+### Admin Templates>System>Power Management>Energy Saver Settings
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Energy Saver Battery Threshold (on battery)|70|SetPowerPolicies=True|
+
+### Admin Templates>System>Logon
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Show first sign-in animation|Disabled|Always|
+|Hide entry points for Fast User Switching|Enabled|Always|
+|Turn on convenience PIN sign-in|Disabled|Always|
+|Turn off picture password sign-in|Enabled|Always|
+|Turn off app notification on the lock screen|Enabled|Always|
+|Allow users to select when a password is required when resuming from connected standby|Disabled|SignInOnResume=True|
+|Block user from showing account details on sign-in|Enabled|Always|
+
+### Admin Templates>System>User Profiles
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Turn off the advertising ID|Enabled|SetEduPolicies=True|
+
+### Admin Templates>Windows Components
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Do not show Windows Tips |Enabled|SetEduPolicies=True|
+|Turn off Microsoft consumer experiences |Enabled|SetEduPolicies=True|
+|Microsoft Passport for Work|Disabled|Always|
+|Prevent the usage of OneDrive for file storage|Enabled|Always|
+
+### Admin Templates>Windows Components>Biometrics
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Allow the use of biometrics|Disabled|Always|
+|Allow users to log on using biometrics|Disabled|Always|
+|Allow domain users to log on using biometrics|Disabled|Always|
+
+### Admin Templates>Windows Components>Data Collection and Preview Builds
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Toggle user control over Insider builds|Disabled|Always| 
+|Disable pre-release features or settings|Disabled|Always|
+|Do not show feedback notifications|Enabled|Always|
+|Allow Telemetry|Basic, 0|SetEduPolicies=True|
+
+### Admin Templates>Windows Components>File Explorer
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Show lock in the user tile menu|Disabled|Always|
+
+### Admin Templates>Windows Components>Maintenance Scheduler
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Automatic Maintenance Activation Boundary|*MaintenanceStartTime*|Always|
+|Automatic Maintenance Random Delay|Enabled, 2 hours|Always|
+|Automatic Maintenance WakeUp Policy|Enabled|Always|
+
+### Admin Templates>Windows Components>Windows Hello for Business
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Use phone sign-in|Disabled|Always|
+|Use Windows Hello for Business|Disabled|Always|
+|Use biometrics|Disabled|Always|
+
+### Admin Templates>Windows Components>OneDrive
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Prevent the usage of OneDrive for file storage|Enabled|Always|
+
+### Windows Settings>Security Settings>Local Policies>Security Options
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Interactive logon: Do not display last user name|Enabled, Disabled when account model is only guest|Always|
+|Interactive logon: Sign-in last interactive user automatically after a system-initiated restart|Disabled |Always|
+|Shutdown: Allow system to be shut down without having to log on|Disabled|Always|
+|User Account Control: Behavior of the elevation prompt for standard users|Auto deny|Always|

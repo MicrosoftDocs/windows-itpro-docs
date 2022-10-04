@@ -31,7 +31,9 @@ With fewer credentials to remember and a simplified sign-in process, students ar
 
 To implement federated sign-in, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple domains federated to a third-party IdP. For more information, see [Use a SAML 2.0 Identity Provider (IdP) for Single Sign On][AZ-1]
+1. An Azure AD tenant, with one or multiple domains federated to a third-party SAML 2.0 IdP. For more information, see [Use a SAML 2.0 Identity Provider (IdP) for Single Sign On][AZ-1]
+    >[!NOTE]
+    >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, please contact your identity provider. If you would like to test your product for interoperability please refer to these [guidelines](https://www.microsoft.com/download/details.aspx?id=56843).
 1. Individual IdP accounts created: each user will require an account defined in the third-party IdP platform
 1. Individual Azure AD accounts created: each user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
     - [School Data Sync (SDS)](/schooldatasync)
