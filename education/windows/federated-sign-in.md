@@ -33,12 +33,12 @@ To implement federated sign-in, the following prerequisites must be met:
 
 1. An Azure AD tenant, with one or multiple domains federated to a third-party SAML 2.0 IdP. For more information, see [Use a SAML 2.0 Identity Provider (IdP) for Single Sign On][AZ-1]
     >[!NOTE]
-    >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, please contact your identity provider. If you would like to test your product for interoperability please refer to these [guidelines](https://www.microsoft.com/download/details.aspx?id=56843).
+    >If your organization uses a third-party federation solution, you can configure single sign-on to Azure Active Directory if the solution is compatible with Azure Active Directory. For questions regarding compatibility, please contact your identity provider. If you would like to test your product for interoperability please refer to these [guidelines][MSFT-1].
 1. Individual IdP accounts created: each user will require an account defined in the third-party IdP platform
 1. Individual Azure AD accounts created: each user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
-    - [School Data Sync (SDS)](/schooldatasync)
-    - [Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis) for environment with on-premises AD DS
-    - PowerShell scripts that call the [Microsoft Graph API](/graph/api/user-post-users?view=graph-rest-1.0&tabs=powershell)
+    - [School Data Sync (SDS)][SDS-1]
+    - [Azure AD Connect sync][AZ-3] for environment with on-premises AD DS
+    - PowerShell scripts that call the [Microsoft Graph API][GRAPH-1]
     - provisioning tools offered by the IdP
 1. Licenses assigned to the Azure AD user accounts. It's recommended to assign licenses to a dynamic group: when new users are provisioned in Azure AD, the licenses are automatically assigned. For more information, see [Assign licenses to users by group membership in Azure Active Directory][AZ-2]
 1. Enable federated sign-in on the Windows devices that the users will be using
@@ -109,10 +109,17 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 -----------
 
-[WIN-1]: /windows/client-management/mdm/sharedpc-csp
-[WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
+[AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
+[AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
+[AZ-3]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
+
+[GRAPH-1]: /graph/api/user-post-users?tabs=powershell
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 
-[AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
-[AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
+[MSFT-1]: https://www.microsoft.com/download/details.aspx?id=56843
+
+[SDS-1]: /schooldatasync
+
+[WIN-1]: /windows/client-management/mdm/sharedpc-csp
+[WIN-2]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin
