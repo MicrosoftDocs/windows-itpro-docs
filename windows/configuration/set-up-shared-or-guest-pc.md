@@ -1,42 +1,39 @@
 ---
-title: Set up a shared or guest PC with Windows 10/11
-description: Windows 10 and Windows has shared PC mode, which optimizes Windows client for shared use scenarios.
-ms.prod: w10
-author: lizgt2000
-ms.author: lizlong
-ms.topic: article
+title: Set up a shared or guest Windows device
+description: Description of how to configured Shared PC mode, which is a Windows feature that optimizes devices for shared use scenarios.
+ms.date: 10/15/2022
+ms.prod: windows
+ms.technology: windows
+ms.topic: reference
 ms.localizationpriority: medium
-ms.reviewer: sybruckm
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer:
 manager: aaroncz
-ms.collection: highpri
+ms.collection: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
-# Set up a shared or guest PC with Windows 10/11
+# Set up a shared or guest Windows device
 
+*Shared PC* is a Windows feature that optimizes Windows clients for shared use scenarios, such as touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
 
-**Applies to**
+## Shared PC mode
+A Windows device enabled for *Shared PC mode* is designed to be maintenance-free with high reliability. Devices configured in Shared PC mode allow sign in of one user at a time. When a device is locked, the signed in user can be signed out at the lock screen.
 
-- Windows 10
-- Windows 11
+## Account models
+Shared PC offers the possibility to enable a **Guest** option on the sign-in screen. The Guest option doesn't require any user credentials or authentication, and creates a new local account each time it's used.
+Windows also offers an **Assigned access** or **kiosk** mode. Shared PC can be configured to enable a the **Guest** option and execute a specific application in kiosk mode.
 
-Windows client has a *shared PC mode*, which optimizes Windows client for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows client Pro, Pro Education, Education, and Enterprise.
-
-> [!NOTE]
-> If you're interested in using Windows client for shared PCs in a school, see [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
-
-## Shared PC mode concepts
-A Windows client PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. 
-
-### Account models
-It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Guest** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used. Windows client has a **kiosk mode** account. Shared PC mode can be configured to enable a **Kiosk** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used to run a specified app in assigned access (kiosk) mode.
-
-### Account management
-When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion applies to Active Directory, Azure Active Directory, and local accounts that are created by the **Guest** and **Kiosk** options. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low. In Windows client, an inactive option is added which deletes accounts if they haven't signed in after a specified number of days.
+## Account management
+When the account management service is configured, user profiles are automatically deleted to free up disk space and resources. The deletion process applies to Active Directory, Azure Active Directory, and local accounts that are created by the **Guest** and **Kiosk** options. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low. In Windows client, an inactive option is added which deletes accounts if they haven't signed in after a specified number of days.
 
 ### Maintenance and sleep
 Shared PC mode is configured to take advantage of maintenance time periods which run while the PC is not in use. Therefore, sleep is strongly recommended so that the PC can wake up when it is not in use to perform maintenance, clean up accounts, and run Windows Update. The recommended settings can be set by choosing **SetPowerPolicies** in the list of shared PC options. Additionally, on devices without Advanced Configuration and Power Interface (ACPI) wake alarms, shared PC mode will always override real-time clock (RTC) wake alarms to be allowed to wake the PC from sleep (by default, RTC wake alarms are off). This ensures that the widest variety of hardware will take advantage of maintenance periods.
 
-While shared PC mode does not configure Windows Update itself, it is strongly recommended to configure Windows Update to automatically install updates and reboot (if necessary) during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates.  
+While shared PC mode does not configure Windows Update itself, it is recommended to configure Windows Update to automatically install updates and reboot during maintenance hours. This will help ensure the PC is always up to date and not interrupting users with updates.  
 
 Use one of the following methods to configure Windows Update:
 
@@ -46,14 +43,7 @@ Use one of the following methods to configure Windows Update:
 
 [Learn more about the AllowAutoUpdate settings](/windows/client-management/mdm/policy-configuration-service-provider#Update_AllowAutoUpdate)
 
-### App behavior
 
-Apps can take advantage of shared PC mode with the following three APIs:  
-
-- [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured for shared use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences.   
-- [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured to not allow the user to save to the local storage of the PC. Instead, only cloud save locations should be offered by the app or saved automatically by the app.  
-- [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) - This informs apps when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
- 
 
 ### Customization
 Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using MDM or a provisioning package as explained in [Configuring Shared PC mode for Windows](#configuring-shared-pc-mode-for-windows). The options are listed in the following table.
@@ -78,9 +68,17 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 | Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
 [Policies: Authentication](wcd/wcd-policies.md#authentication) (optional related setting) | Enables a quick first sign-in experience for a user by automatically connecting new non-admin Azure AD accounts to the pre-configured candidate local accounts.
 
-## Configuring Shared PC mode for Windows
+## Configure Shared PC mode
 
-You can configure Windows to be in shared PC mode in a couple different ways:
+The configuration of Shared PC can be done using:
+
+- Microsoft Intune/MDM
+- a provisioning package (PPKG)
+- PowerShell
+
+Follow the instructions below to configure your devices, selecting the option that best suits your needs.
+
+#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 - Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp). To set up a shared device policy for Windows client in Intune, complete the following steps:
 
@@ -111,9 +109,13 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
   11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
-- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows client that's already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
+#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-     ![Shared PC settings in ICD.](images/icd-adv-shared-pc.png)
+[Create a provisioning package][WIN-1] using Windows Configuration Designer with the following settings:
+
+
+Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
+#### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 - WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
 
@@ -138,216 +140,46 @@ You can configure Windows to be in shared PC mode in a couple different ways:
   Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
   ```
 
-### Create a provisioning package for shared use
-
-1. [Install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md)
-
-2. Open Windows Configuration Designer. 
-3. On the **Start page**, select **Advanced provisioning**.
-4. Enter a name and (optionally) a description for the project, and click **Next**.
-5. Select **All Windows desktop editions**, and click **Next**.
-6. Click **Finish**. Your project opens in Windows Configuration Designer.
-7. Go to **Runtime settings** > **SharedPC**. [Select the desired settings for shared PC mode.](#customization)
-8. On the **File** menu, select **Save.**
-9. On the **Export** menu, select **Provisioning package**.
-10. Change **Owner** to **IT Admin**, which will set the precedence of this provisioning package higher than provisioning packages applied to this device from other sources, and then select **Next.**
-11. Set a value for **Package Version**.
-    > [!TIP]
-    > You can make changes to existing packages and change the version number to update previously applied packages.
-  
-12. (*Optional*) In the **Provisioning package security** window, you can choose to encrypt the package and enable package signing.
-    - **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
-    - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
-    
-      > [!IMPORTANT]
-      > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently.
-        
-13. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
-    Optionally, you can click **Browse** to change the default output location.
-14. Click **Next**.
-15. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
-    If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
-16. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
-    If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
-    -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
-    -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
-17. Select the **output location** link to go to the location of the package. You can provide that .ppkg to others through any of the following methods:
-
-    -   Shared network folder
-
-    -   SharePoint site
-
-    -   Removable media (USB/SD) (select this option to apply to a PC during initial setup)
-    
-
-### Apply the provisioning package
-
-Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md).
-
-> [!NOTE]
-> If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
+---
 
 ## Guidance for accounts on shared PCs
 
-* We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
+- When a PC is set up in shared PC mode with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign-out.
 
-* When a PC is set up in shared PC mode with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign-out.
-* On a Windows PC joined to Azure Active Directory:
-    * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
-    * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
+- Local accounts that already exist on a PC won't be deleted when turning on shared PC mode. New local accounts that are created using **Settings > Accounts > Other people > Add someone else to this PC** after shared PC mode is turned on won't be deleted. However, any new guest accounts created by the **Guest** and **Kiosk** options on the sign-in screen (if enabled) will automatically be deleted at sign-out. To set a general policy on all local accounts, you can configure the following local Group Policy setting: **Computer Configuration** > **Administrative Templates** > **System** > **User Profiles**: **Delete User Profiles Older Than A Specified Number Of Days On System Restart**.
 
-* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. New local accounts that are created using **Settings > Accounts > Other people > Add someone else to this PC** after shared PC mode is turned on won't be deleted. However, any new guest accounts created by the **Guest** and **Kiosk** options on the sign-in screen (if enabled) will automatically be deleted at sign-out. To set a general policy on all local accounts, you can configure the following local Group Policy setting: **Computer Configuration** > **Administrative Templates** > **System** > **User Profiles**: **Delete User Profiles Older Than A Specified Number Of Days On System Restart**.
+- The account management service supports accounts that are exempt from deletion. An account can be marked exempt from deletion by adding the account SID to the registry key: `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\`.
+    - To add the account SID to the registry key using PowerShell:
 
-* If admin accounts are necessary on the PC
-    * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
-    * Create admin accounts before setting up shared PC mode, or 
-    * Create exempt accounts before signing out when turning shared pc mode on.
+    ```powershell
+    $adminName = "LocalAdmin"
+    $adminPass = 'Pa$$word123'
+    invoke-expression "net user /add $adminName $adminPass"
+    $user = New-Object System.Security.Principal.NTAccount($adminName) 
+    $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
+    $sid = $sid.Value;
+    New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
+    ```
 
-* The account management service supports accounts that are exempt from deletion.
-    * An account can be marked exempt from deletion by adding the account SID to the registry key: `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\`.
-    * To add the account SID to the registry key using PowerShell:
+## Shared PC APIs and app behavior
 
-        ```powershell
-        $adminName = "LocalAdmin"
-        $adminPass = 'Pa$$word123'
-        iex "net user /add $adminName $adminPass"
-        $user = New-Object System.Security.Principal.NTAccount($adminName) 
-        $sid = $user.Translate([System.Security.Principal.SecurityIdentifier]) 
-        $sid = $sid.Value;
-        New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
-        ``` 
+Applications can take advantage of Shared PC mode with the following three APIs:  
 
-## Policies set by shared PC mode
+- [**IsEnabled**][API-1] - This API informs applications when the device is configured for shared use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences.
+- [**ShouldAvoidLocalStorage**][API-2] - This API informs applications when the PC has been configured to not allow the user to save to the local storage of the PC. Instead, only cloud save locations should be offered by the app or saved automatically by the app.  
+- [**IsEducationEnvironment**][API-3] - This API informs applications when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
 
-Shared PC mode sets local group policies to configure the device. Some of these are configurable using the shared pc mode options.
+## Technical reference
 
-> [!IMPORTANT]
-> It is not recommended to set additional policies on PCs configured for **Shared PC Mode**. The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
+- For a list of settings configured by the different options offered by Shared PC mode, see the [Shared PC technical reference](shared-pc-technical.md).
+- For a list of settings exposed by the SharedPC configuration service provider, see [SharedPC CSP][WIN-3].
 
-### Admin Templates > Control Panel > Personalization
+-----------
 
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Prevent enabling lock screen slide show|Enabled|Always|
-|Prevent changing lock screen and logon image|Enabled|Always|
+[API-1]: /uwp/api/windows.system.profile.sharedmodesettings
+[API-2]: /uwp/api/windows.system.profile.sharedmodesettings
+[API-3]: /uwp/api/windows.system.profile.educationsettings
 
-### Admin Templates > System > Power Management > Button Settings
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Select the Power button action (plugged in)|Sleep|SetPowerPolicies=True|
-|Select the Power button action (on battery)|Sleep|SetPowerPolicies=True|
-|Select the Sleep button action (plugged in)|Sleep|SetPowerPolicies=True|
-|Select the lid switch action (plugged in)|Sleep|SetPowerPolicies=True|
-|Select the lid switch action (on battery)|Sleep|SetPowerPolicies=True|
-
-### Admin Templates > System > Power Management > Sleep Settings
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Require a password when a computer wakes (plugged in)|Enabled|SignInOnResume=True|
-|Require a password when a computer wakes (on battery)|Enabled|SignInOnResume=True|
-|Specify the system sleep timeout (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
-|Specify the system sleep timeout (on battery)|*SleepTimeout*|SetPowerPolicies=True|
-|Turn off hybrid sleep (plugged in)|Enabled|SetPowerPolicies=True|
-|Turn off hybrid sleep (on battery)|Enabled|SetPowerPolicies=True|
-|Specify the unattended sleep timeout (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
-|Specify the unattended sleep timeout (on battery)|*SleepTimeout*|SetPowerPolicies=True|
-|Allow standby states (S1-S3) when sleeping (plugged in)|Enabled|SetPowerPolicies=True|
-|Allow standby states (S1-S3) when sleeping (on battery)|Enabled |SetPowerPolicies=True|
-|Specify the system hibernate timeout (plugged in)|Enabled, 0|SetPowerPolicies=True|
-|Specify the system hibernate timeout (on battery)|Enabled, 0|SetPowerPolicies=True|
-
-### Admin Templates>System>Power Management>Video and Display Settings
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Turn off the display (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
-|Turn off the display (on battery|*SleepTimeout*|SetPowerPolicies=True|
-
-### Admin Templates>System>Power Management>Energy Saver Settings
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Energy Saver Battery Threshold (on battery)|70|SetPowerPolicies=True|
-
-### Admin Templates>System>Logon
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Show first sign-in animation|Disabled|Always|
-|Hide entry points for Fast User Switching|Enabled|Always|
-|Turn on convenience PIN sign-in|Disabled|Always|
-|Turn off picture password sign-in|Enabled|Always|
-|Turn off app notification on the lock screen|Enabled|Always|
-|Allow users to select when a password is required when resuming from connected standby|Disabled|SignInOnResume=True|
-|Block user from showing account details on sign-in|Enabled|Always|
-
-### Admin Templates>System>User Profiles
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Turn off the advertising ID|Enabled|SetEduPolicies=True|
-
-### Admin Templates>Windows Components
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Do not show Windows Tips |Enabled|SetEduPolicies=True|
-|Turn off Microsoft consumer experiences |Enabled|SetEduPolicies=True|
-|Microsoft Passport for Work|Disabled|Always|
-|Prevent the usage of OneDrive for file storage|Enabled|Always|
-
-### Admin Templates>Windows Components>Biometrics
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Allow the use of biometrics|Disabled|Always|
-|Allow users to log on using biometrics|Disabled|Always|
-|Allow domain users to log on using biometrics|Disabled|Always|
-
-### Admin Templates>Windows Components>Data Collection and Preview Builds
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Toggle user control over Insider builds|Disabled|Always| 
-|Disable pre-release features or settings|Disabled|Always|
-|Do not show feedback notifications|Enabled|Always|
-|Allow Telemetry|Basic, 0|SetEduPolicies=True|
-
-### Admin Templates>Windows Components>File Explorer
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Show lock in the user tile menu|Disabled|Always|
-
-### Admin Templates>Windows Components>Maintenance Scheduler
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Automatic Maintenance Activation Boundary|*MaintenanceStartTime*|Always|
-|Automatic Maintenance Random Delay|Enabled, 2 hours|Always|
-|Automatic Maintenance WakeUp Policy|Enabled|Always|
-
-### Admin Templates>Windows Components>Windows Hello for Business
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Use phone sign-in|Disabled|Always|
-|Use Windows Hello for Business|Disabled|Always|
-|Use biometrics|Disabled|Always|
-
-### Admin Templates>Windows Components>OneDrive
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Prevent the usage of OneDrive for file storage|Enabled|Always|
-
-### Windows Settings>Security Settings>Local Policies>Security Options
-
-|Policy Name| Value|When set?|
-|--- |--- |--- |
-|Interactive logon: Do not display last user name|Enabled, Disabled when account model is only guest|Always|
-|Interactive logon: Sign-in last interactive user automatically after a system-initiated restart|Disabled |Always|
-|Shutdown: Allow system to be shut down without having to log on|Disabled|Always|
-|User Account Control: Behavior of the elevation prompt for standard users|Auto deny|Always|
+[WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
+[WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
+[WIN-3]: /windows/client-management/mdm/sharedpc-csp
