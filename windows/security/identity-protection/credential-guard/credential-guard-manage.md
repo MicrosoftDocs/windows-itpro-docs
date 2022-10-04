@@ -257,7 +257,7 @@ If Windows Defender Credential Guard was enabled via Group Policy and without UE
 
 ### Disabling Windows Defender Credential Guard using Registry Keys
 
-If Windows Defender Credential Guard was enabled without UEFI Lock and without Group Policy, it is sufficient to edit the registry keys as described below to disable Windows Defender Credential Guard. If Windows Defender Credential Guard is still enabled in Group Policy or is protected by UEFI Lock, changes to these registry settings will revert back to their original values after a device reboot.
+If Windows Defender Credential Guard was enabled without UEFI Lock and without Group Policy, it is sufficient to edit the registry keys as described below to disable Windows Defender Credential Guard.
 
 1. Change the following registry settings to 0:
 
