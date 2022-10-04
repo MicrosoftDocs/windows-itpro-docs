@@ -62,7 +62,7 @@ Settings that are commonly configured for student devices include:
 
 - Wallpaper and lock screen background. See: [Lock screen and desktop][INT-7]
 - Wi-Fi connections. See: [Add Wi-Fi profiles][INT-8]
-- Enablement of the integrated testing and assessment solution *Take a test*. See: [Add Take a Test profile][INT-9]
+- Enablement of the integrated testing and assessment solution *Take a Test*. See: [Add Take a Test profile][INT-9]
 
 For more information, see [Windows device settings in Intune for Education][INT-3].
 
