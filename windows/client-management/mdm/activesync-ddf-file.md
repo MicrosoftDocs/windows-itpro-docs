@@ -1,7 +1,7 @@
 ---
 title: ActiveSync DDF file
 description: Learn about the OMA DM device description framework (DDF) for the ActiveSync configuration service provider.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

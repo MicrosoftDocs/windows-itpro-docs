@@ -1,7 +1,7 @@
 ---
 title: CellularSettings CSP
 description: Learn how the CellularSettings configuration service provider is used to configure cellular settings on a mobile device.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -37,7 +37,7 @@ CellularSettings
 ----DataRoam
 ```
 
-<a href="" id="dataroam"></a>**DataRoam**  
+<a href="" id="dataroam"></a>**DataRoam**
 <p> Optional. Integer. Specifies the default roaming value. Valid values are:</p>
 
 |Value|Setting|

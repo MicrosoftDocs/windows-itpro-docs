@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider reference
 description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -1056,10 +1056,10 @@ The following list shows the CSPs supported in HoloLens devices:
 | [WiFi CSP](wifi-csp.md)     | No | Yes       | Yes |
 | [WindowsLicensing CSP](windowslicensing-csp.md)   | Yes | Yes       | No |
 
- 
+
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
--   [Accounts CSP](accounts-csp.md) 
+-   [Accounts CSP](accounts-csp.md)
     > [!NOTE]
     > Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
@@ -1075,7 +1075,7 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [DMAcc CSP](dmacc-csp.md)
 -   [DMClient CSP](dmclient-csp.md)
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
--   [Firewall-CSP](firewall-csp.md) 
+-   [Firewall-CSP](firewall-csp.md)
 -   [HealthAttestation CSP](healthattestation-csp.md)
 -   [NetworkProxy CSP](networkproxy-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
@@ -1083,14 +1083,14 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [PassportForWork CSP](passportforwork-csp.md)
 -   [Policy CSP](policy-configuration-service-provider.md)
 -   [Reboot CSP](reboot-csp.md)
--   [RemoteWipe CSP](remotewipe-csp.md) 
+-   [RemoteWipe CSP](remotewipe-csp.md)
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [UEFI CSP](uefi-csp.md)
--   [Wifi-CSP](wifi-csp.md) 
+-   [Wifi-CSP](wifi-csp.md)
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
--   [Wirednetwork-CSP](wirednetwork-csp.md) 
+-   [Wirednetwork-CSP](wirednetwork-csp.md)
 
 
 ## <a href="" id="iotcoresupport"></a>CSPs supported in Windows 10 IoT Core

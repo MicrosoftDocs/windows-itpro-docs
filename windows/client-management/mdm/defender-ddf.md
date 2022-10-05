@@ -1,7 +1,7 @@
 ---
 title: Defender DDF file
 description: Learn how the OMA DM device description framework (DDF) for the Defender configuration service provider is used.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

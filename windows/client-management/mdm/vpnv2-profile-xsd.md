@@ -1,7 +1,7 @@
 ---
 title: ProfileXML XSD
 description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

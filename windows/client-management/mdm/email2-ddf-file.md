@@ -1,7 +1,7 @@
 ---
 title: EMAIL2 DDF file
 description: Learn how the OMA DM device description framework (DDF) for the EMAIL2 configuration service provider (CSP).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -814,7 +814,7 @@ The XML below is the current version for this CSP.
                   <Replace />
                   <Delete />
                 </AccessType>
-                <Description>Specify whether incoming server requires SSL connection. 
+                <Description>Specify whether incoming server requires SSL connection.
 1- Require SSL connection
 0- Doesn't require SSL connection (default)</Description>
                 <DFFormat>
@@ -840,7 +840,7 @@ The XML below is the current version for this CSP.
                   <Replace />
                   <Delete />
                 </AccessType>
-                <Description>Specify whether outgoing server requires SSL connection. 
+                <Description>Specify whether outgoing server requires SSL connection.
 1- Require SSL connection
 0- Doesn't require SSL connection (default)</Description>
                 <DFFormat>

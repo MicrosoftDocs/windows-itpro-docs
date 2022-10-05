@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 12/05/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -1512,7 +1512,7 @@ ServiceName</Description>
                     <Get />
                     <Replace />
                   </AccessType>
-                  <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value. 
+                  <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
 Valid tokens include:
 "*" indicates any local address. If present, this must be the only token included.
 

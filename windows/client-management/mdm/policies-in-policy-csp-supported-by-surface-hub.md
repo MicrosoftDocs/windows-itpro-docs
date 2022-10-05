@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Microsoft Surface Hub
 description: Learn about the policies in Policy CSP supported by Microsoft Surface Hub.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

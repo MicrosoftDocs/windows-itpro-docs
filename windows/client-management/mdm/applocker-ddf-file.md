@@ -1,7 +1,7 @@
 ---
 title: AppLocker DDF file
 description: Learn about the OMA DM device description framework (DDF) for the AppLocker DDF file configuration service provider.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: DMClient DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DMClient configuration service provider (CSP).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: CleanPC DDF
 description: Learn about the OMA DM device description framework (DDF) for the CleanPC configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -50,7 +50,7 @@ The XML below is the current version for this CSP.
         <Node>
             <NodeName>CleanPCWithoutRetainingUserData</NodeName>
             <DFProperties>
-                <AccessType>                    
+                <AccessType>
                     <Exec />
                 </AccessType>
                 <Description>CleanPC operation without any retention of User data.</Description>
@@ -62,7 +62,7 @@ The XML below is the current version for this CSP.
                 </Occurrence>
                 <Scope>
                     <Permanent />
-                </Scope>         
+                </Scope>
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>

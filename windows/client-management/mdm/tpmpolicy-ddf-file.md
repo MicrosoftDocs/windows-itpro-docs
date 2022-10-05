@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 12/05/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -18,7 +18,7 @@ This topic shows the OMA DM device description framework (DDF) for the **TPMPoli
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is the current version for this CSP. 
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -71,4 +71,4 @@ The XML below is the current version for this CSP.
         </Node>
     </Node>
 </MgmtTree>
-``` 
+```

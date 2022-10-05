@@ -1,7 +1,7 @@
 ---
 title: CustomDeviceUI DDF
 description: Learn about the OMA DM device description framework (DDF) for the CustomDeviceUI configuration service provider.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

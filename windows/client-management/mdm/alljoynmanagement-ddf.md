@@ -1,7 +1,7 @@
 ---
 title: AllJoynManagement DDF
 description: Learn the OMA DM device description framework (DDF) for the AllJoynManagement configuration service provider.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -93,7 +93,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                         <AccessType>
                             <Get />
                         </AccessType>
-                        <Description>The set of Ports that this AllJoyn Object uses to communicate configuration settings through.  
+                        <Description>The set of Ports that this AllJoyn Object uses to communicate configuration settings through.
 
 Typically, only one port is used for communication, but it is possible that additional ports may be specified.</Description>
                         <DFFormat>
@@ -186,7 +186,7 @@ For example an AllJoyn Bridge with the Microsoft specific AllJoyn Configuration 
                 <AccessType>
                     <Get />
                 </AccessType>
-                <Description>This is the Credential Store.  An Administrator can set credentials for each AllJoyn device that requires authentication at this node.  
+                <Description>This is the Credential Store.  An Administrator can set credentials for each AllJoyn device that requires authentication at this node.
 If a SYNCML request arrives in the CSP to replace or query a configuration item on an AllJoyn Object that requires authentication, then the CSP will use the Credentials stored here during the authentication phase.
 
 </Description>

@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 03/27/2020
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -39,13 +39,13 @@ Accounts
 ------------LocalUserGroup
 ```
 
-<a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**  
+<a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**
 Root node.
 
-<a href="" id="domain"></a>**Domain**  
+<a href="" id="domain"></a>**Domain**
 Interior node for the account domain information.
 
-<a href="" id="domain-computername"></a>**Domain/ComputerName**  
+<a href="" id="domain-computername"></a>**Domain/ComputerName**
 This node specifies the DNS hostname for a device. This setting can be managed remotely, but this remote management isn't supported for devices hybrid joined to Azure Active Directory and an on-premises Active directory. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 15 characters.
 
 Available naming macros:
@@ -63,19 +63,19 @@ Supported operation is Add.
 > [!Note]
 > For desktop PCs on Windows 10, version 2004 or later, use the **Ext/Microsoft/DNSComputerName** node in [DevDetail CSP](devdetail-csp.md).
 
-<a href="" id="users"></a>**Users**  
+<a href="" id="users"></a>**Users**
 Interior node for the user account information.
 
-<a href="" id="users-username"></a>**Users/_UserName_**  
+<a href="" id="users-username"></a>**Users/_UserName_**
 This node specifies the username for a new local user account. This setting can be managed remotely.
 
-<a href="" id="users-username-password"></a>**Users/_UserName_/Password**  
+<a href="" id="users-username-password"></a>**Users/_UserName_/Password**
 This node specifies the password for a new local user account. This setting can be managed remotely.
 
 Supported operation is Add.
 GET operation isn't supported.  This setting will report as failed when deployed from the Endpoint Manager.
 
-<a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**  
+<a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**
 This optional node specifies the local user group that a local user account should be joined to.  If the node isn't set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.
 
 Supported operation is Add.

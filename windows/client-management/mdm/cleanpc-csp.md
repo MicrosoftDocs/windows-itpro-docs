@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 06/26/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -35,16 +35,16 @@ CleanPC
 ----CleanPCRetainingUserData
 ```
 
-<a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**  
+<a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**
 <p>The root node for the CleanPC configuration service provider.</p>
 
-<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
+<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**
 <p>An integer specifying a CleanPC operation without any retention of user data.
 
 <p>The only supported operation is Execute.
 
-<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**  
-<p>An integer specifying a CleanPC operation with retention of user data. 
+<a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**
+<p>An integer specifying a CleanPC operation with retention of user data.
 
 <p>The only supported operation is Execute.
 

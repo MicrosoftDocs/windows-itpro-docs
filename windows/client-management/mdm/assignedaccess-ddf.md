@@ -1,7 +1,7 @@
 ---
 title: AssignedAccess DDF
 description: Learn how the OMA DM device description framework (DDF) for the AssignedAccess configuration service provider.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

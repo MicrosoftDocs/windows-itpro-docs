@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 04/17/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -42,7 +42,7 @@ The XML below is for Windows 10, version 1803 and later.
           </Scope>
           <DFType>
             <DDFName></DDFName>
-            <MIME>com.microsoft/1.0/MDM/Accounts</MIME> 
+            <MIME>com.microsoft/1.0/MDM/Accounts</MIME>
           </DFType>
         </DFProperties>
         <Node>

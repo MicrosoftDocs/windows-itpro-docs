@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -16,7 +16,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## MixedReality policies  
+## MixedReality policies
 
 <dl>
   <dd>
@@ -51,7 +51,7 @@ manager: aaroncz
   </dd>
   <dd>
     <a href="#mixedreality-manualdowndirectiondisabled">MixedReality/ManualDownDirectionDisabled</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
   </dd>
@@ -75,7 +75,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-aadgroupmembershipcachevalidityindays"></a>**MixedReality/AADGroupMembershipCacheValidityInDays**  
+<a href="" id="mixedreality-aadgroupmembershipcachevalidityindays"></a>**MixedReality/AADGroupMembershipCacheValidityInDays**
 
 <!--SupportedSKUs-->
 
@@ -103,7 +103,7 @@ Steps to use this policy correctly:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-allowcaptiveportalpeforesignin"></a>**MixedReality/AllowCaptivePortalBeforeSignIn**  
+<a href="" id="mixedreality-allowcaptiveportalpeforesignin"></a>**MixedReality/AllowCaptivePortalBeforeSignIn**
 
 <!--SupportedSKUs-->
 
@@ -229,7 +229,7 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-brightnessbuttondisabled"></a>**MixedReality/BrightnessButtonDisabled**  
+<a href="" id="mixedreality-brightnessbuttondisabled"></a>**MixedReality/BrightnessButtonDisabled**
 
 <!--SupportedSKUs-->
 
@@ -272,7 +272,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-configuremovingplatform"></a>**MixedReality/ConfigureMovingPlatform**  
+<a href="" id="mixedreality-configuremovingplatform"></a>**MixedReality/ConfigureMovingPlatform**
 
 <!--SupportedSKUs-->
 
@@ -314,7 +314,7 @@ Supported value is Integer.
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-configurentpclient"></a>**MixedReality/ConfigureNtpClient**  
+<a href="" id="mixedreality-configurentpclient"></a>**MixedReality/ConfigureNtpClient**
 
 <!--SupportedSKUs-->
 
@@ -379,7 +379,7 @@ value="0"/>
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**  
+<a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**
 
 <!--SupportedSKUs-->
 
@@ -415,7 +415,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Disa
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-fallbackdiagnostics"></a>**MixedReality/FallbackDiagnostics**  
+<a href="" id="mixedreality-fallbackdiagnostics"></a>**MixedReality/FallbackDiagnostics**
 
 <!--SupportedSKUs-->
 
@@ -459,7 +459,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-headtrackingmode"></a>**MixedReality/HeadTrackingMode**  
+<a href="" id="mixedreality-headtrackingmode"></a>**MixedReality/HeadTrackingMode**
 
 <!--SupportedSKUs-->
 
@@ -502,7 +502,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-manualdowndirectiondisabled"></a>**MixedReality/ManualDownDirectionDisabled**  
+<a href="" id="mixedreality-manualdowndirectiondisabled"></a>**MixedReality/ManualDownDirectionDisabled**
 
 <!--SupportedSKUs-->
 
@@ -542,7 +542,7 @@ Supported values:
 <!--/SupportedValues-->
 
 <!--Policy-->
-<a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**  
+<a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**
 
 <!--SupportedSKUs-->
 
@@ -583,7 +583,7 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 
 <!--Policy-->
-<a href="" id="mixedreality-ntpclientenabled"></a>**MixedReality/NtpClientEnabled**  
+<a href="" id="mixedreality-ntpclientenabled"></a>**MixedReality/NtpClientEnabled**
 
 <!--SupportedSKUs-->
 
@@ -627,7 +627,7 @@ This policy setting specifies whether the Windows NTP Client is enabled.
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-skipcalibrationduringsetup"></a>**MixedReality/SkipCalibrationDuringSetup**  
+<a href="" id="mixedreality-skipcalibrationduringsetup"></a>**MixedReality/SkipCalibrationDuringSetup**
 
 <!--SupportedSKUs-->
 
@@ -663,7 +663,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-skiptrainingduringsetup"></a>**MixedReality/SkipTrainingDuringSetup**  
+<a href="" id="mixedreality-skiptrainingduringsetup"></a>**MixedReality/SkipTrainingDuringSetup**
 
 <!--SupportedSKUs-->
 
@@ -699,7 +699,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-volumebuttondisabled"></a>**MixedReality/VolumeButtonDisabled**  
+<a href="" id="mixedreality-volumebuttondisabled"></a>**MixedReality/VolumeButtonDisabled**
 
 <!--SupportedSKUs-->
 
@@ -742,7 +742,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-visitorautologon"></a>**MixedReality/VisitorAutoLogon**  
+<a href="" id="mixedreality-visitorautologon"></a>**MixedReality/VisitorAutoLogon**
 
 <!--SupportedSKUs-->
 

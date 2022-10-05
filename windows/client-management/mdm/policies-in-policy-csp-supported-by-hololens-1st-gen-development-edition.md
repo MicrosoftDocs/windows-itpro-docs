@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by HoloLens (1st gen) Development Edition
 description: Learn about the policies in Policy CSP supported by HoloLens (1st gen) Development Edition.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
