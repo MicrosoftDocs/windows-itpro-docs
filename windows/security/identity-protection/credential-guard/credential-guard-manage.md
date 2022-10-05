@@ -233,7 +233,7 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 
 ## Disable Windows Defender Credential Guard
 
-Windows Defender Credential Guard can be disabled via several methods explained below, depending on how the feature was enabled. For devices which had Windows Defender Credential Guard automatically enabled in the 22H2 update and did not have it enabled prior to the update, it is sufficient to [disable via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy).
+Windows Defender Credential Guard can be disabled via several methods explained below, depending on how the feature was enabled. For devices that had Windows Defender Credential Guard automatically enabled in the 22H2 update and did not have it enabled prior to the update, it is sufficient to [disable via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy).
 
 If Windows Defender Credential Guard was enabled with UEFI Lock, the procedure described in [Disabling Windows Defender Credential Guard with UEFI Lock](#disabling-windows-defender-credential-guard-with-uefi-lock) must be followed. Note that the default enablement change in eligible 22H2 devices does **not** use a UEFI Lock.
 
@@ -323,8 +323,8 @@ Instructions are given below for how to disable Virtualization-Based Security (V
      > [!IMPORTANT]
      > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
 
-     > [!IMPORTANT]
-     > The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you turn off Virtualization-Based Security while Windows Defender Credential Guard is running, run the following bcdedit commands after turning off all virtualization-based security Group Policy and registry settings:
+1. If Windows Defender Credential Guard is running when disabling Virtualization-Based Security, run the following bcdedit commands after turning off all Virtualization-Based Security Group Policy and registry settings in steps 1 and 2 above:
+
      >
      > ```cmd
      > bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
