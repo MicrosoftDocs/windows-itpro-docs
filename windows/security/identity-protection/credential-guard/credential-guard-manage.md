@@ -43,9 +43,7 @@ Windows Defender Credential Guard will be enabled by default when a PC meets the
 > [!NOTE]
 > Devices running Windows 11 Pro 22H2 may have Virtualization-Based Security (VBS) and/or Windows Defender Credential Guard automaticaly enabled if they meet the other requirements for default enablement listed above and previously had an Enterprise license or previously ran Windows Defender Credential Guard. 
 > 
-> To confirm if your Pro device is in this state, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
-> 
-> In this scenario, if you wish to disable VBS and Windows Defender Credential Guard, follow the instructions for [disabling Virtualization-Based Security](#disabling-virtualization-based-security). If you wish to disable only Windows Defender Credential Guard without disabling Virtualization-Based Security, use the procedures explained in [Disable Windows Defender Credential Guard](#disable-windows-defender-credential-guard).
+> To confirm if your Pro device is in this state, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`. In this scenario, if you wish to disable VBS and Windows Defender Credential Guard, follow the instructions for [disabling Virtualization-Based Security](#disabling-virtualization-based-security). If you wish to disable only Windows Defender Credential Guard without disabling Virtualization-Based Security, use the procedures explained in [Disable Windows Defender Credential Guard](#disable-windows-defender-credential-guard).
 
 ## Enable Windows Defender Credential Guard
 
