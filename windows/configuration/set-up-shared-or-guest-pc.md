@@ -21,6 +21,7 @@ appliesto:
 *Shared PC* is a Windows feature that optimizes Windows clients for shared use scenarios, such as touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
 
 ## Shared PC mode
+
 A Windows device enabled for *Shared PC mode* is designed to be maintenance-free with high reliability. Devices configured in Shared PC mode allow sign in of one user at a time. When a device is locked, the signed in user can be signed out at the lock screen.
 
 ## Account models
@@ -161,25 +162,15 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
     New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
     ```
 
-## Shared PC APIs and app behavior
-
-Applications can take advantage of Shared PC mode with the following three APIs:  
-
-- [**IsEnabled**][API-1] - This API informs applications when the device is configured for shared use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences.
-- [**ShouldAvoidLocalStorage**][API-2] - This API informs applications when the PC has been configured to not allow the user to save to the local storage of the PC. Instead, only cloud save locations should be offered by the app or saved automatically by the app.  
-- [**IsEducationEnvironment**][API-3] - This API informs applications when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
-
 ## Technical reference
 
 - For a list of settings configured by the different options offered by Shared PC mode, see the [Shared PC technical reference](shared-pc-technical.md).
 - For a list of settings exposed by the SharedPC configuration service provider, see [SharedPC CSP][WIN-3].
+- For a list of settings exposed by Windows Configuration Designer, see [SharedPC CSP][WIN-4].
 
 -----------
-
-[API-1]: /uwp/api/windows.system.profile.sharedmodesettings
-[API-2]: /uwp/api/windows.system.profile.sharedmodesettings
-[API-3]: /uwp/api/windows.system.profile.educationsettings
 
 [WIN-1]: /windows/configuration/provisioning-packages/provisioning-create-package
 [WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
 [WIN-3]: /windows/client-management/mdm/sharedpc-csp
+[WIN-4]: /windows/configuration/wcd/wcd-sharedpc
