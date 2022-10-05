@@ -2169,12 +2169,6 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <Value>
         <String>10.0.25210.0</String>
       </Value>
-    </Setting>
-    <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
-      <Value>
-        <Boolean>true</Boolean>
-      </Value>
-    </Setting>
   </Settings>
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
 </SiPolicy>
