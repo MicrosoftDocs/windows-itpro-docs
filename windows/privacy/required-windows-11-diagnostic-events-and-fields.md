@@ -1890,7 +1890,7 @@ The following fields are available:
 - **appResult**  The AppResult for the CXH OOBE scenario, e.g. "success" or "fail". This is logged on scenario completion, i.e. with the stop event.
 - **experience**  A JSON blob containing properties pertinent for the CXH scenario launch, with PII removed. Examples: host, port, protocol, surface. Logged on the start event.
 - **source**  The scenario for which CXH was launched. Since this event is restricted to OOBE timeframe, this will be FRXINCLUSIVE or FRXOOBELITE. Logged with the start event.
-- **wilActivity**  Common data logged with all Wil activities. See [wilActivity](#wilactivity).
+- **wilActivity**  Common data logged with all Wil activities.
 
 
 ## Code Integrity events
@@ -1916,7 +1916,7 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 
 The following fields are available:
 
-- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure. See [wilActivity](#wilactivity).
+- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure. 
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
@@ -2160,6 +2160,19 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+## Common data fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 ## Component-based servicing events
 
@@ -2860,7 +2873,7 @@ The following fields are available:
 - **IsDeviceSetupComplete**  Windows Mixed Reality Portal app state of device setup completion.
 - **PackageVersion**  Windows Mixed Reality Portal app package version.
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
-- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID. See [wilActivity](#wilactivity).
+- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppLifecycleService_Resuming
@@ -6187,7 +6200,7 @@ The following fields are available:
 
 - **publisherIntent**  Publisher Intent id associated with the update.
 - **reason**  Reason for EULA acceptance.
-- **update**  Update for which EULA has been accepted. See [update](#update).
+- **update**  Update for which EULA has been accepted.
 
 
 ### Microsoft.Windows.Update.Orchestrator.Worker.OobeUpdateApproved
