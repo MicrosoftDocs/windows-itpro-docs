@@ -1,14 +1,13 @@
 ---
 description: Learn more about the Windows 10, version 1809 diagnostic data gathered at the basic level.
 title: Windows 10, version 1809 basic diagnostic events and fields (Windows 10)
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: privacy
 ---
 
 
@@ -27,7 +26,8 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 - [Required diagnostic events and fields for Windows 11, version 22H2](required-diagnostic-events-fields-windows-11-22H2.md)
-- [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)- [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)
+- [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
