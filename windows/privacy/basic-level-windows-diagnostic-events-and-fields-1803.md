@@ -4481,7 +4481,7 @@ The following fields are available:
 - **RemediationNoisyHammerUserLoggedInAdmin**  TRUE if there is the user currently logged in is an Admin.
 - **RemediationShellDeviceManaged**  TRUE if the device is WSUS managed or Windows Updated disabled.
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by Configuration Manager.
 - **RemediationShellDeviceZeroExhaust**  TRUE if the device has opted out of Windows Updates completely.
 - **RemediationTargetMachine**  Indicates whether the device is a target of the specified fix.
 - **RemediationTaskHealthAutochkProxy**  True/False based on the health of the AutochkProxy task.
@@ -4920,7 +4920,7 @@ Activity for deletion of a user account for devices set up for Shared PC mode as
 
 The following fields are available:
 
-- **accountType**  The type of account that was deleted. Example: AD, AAD, or Local
+- **accountType**  The type of account that was deleted. Example: AD, Azure Active Directory (Azure AD), or Local
 - **deleteState**  Whether the attempted deletion of the user account was successful.
 - **userSid**  The security identifier of the account.
 - **wilActivity**  Windows Error Reporting data collected when there is a failure in deleting a user account with the Transient Account Manager. See [wilActivity](#wilactivity).
@@ -5424,7 +5424,7 @@ The following fields are available:
 - **DeviceIsMdmManaged**  This device is MDM managed.
 - **IsNetworkAvailable**  If the device network is not available.
 - **IsNetworkMetered**  If network is metered.
-- **IsSccmManaged**  This device is SCCM managed.
+- **IsSccmManaged**  This device is managed by Configuration Manager.
 - **NewlyInstalledOs**  OS is newly installed quiet period.
 - **PausedByPolicy**  Updates are paused by policy.
 - **RecoveredFromRS3**  Previously recovered from RS3.
@@ -5711,7 +5711,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentOneSettings
 
-This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -6058,7 +6058,7 @@ This event sends data regarding OS Updates and Upgrades from Windows 7.X, Window
 The following fields are available:
 
 - **ClientId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
-- **FlightData**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightData**  In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **HostOSBuildNumber**  The build number of the previous operating system.
 - **HostOsSkuName**  The OS edition which is running the Setup360 instance (previous operating system).
 - **InstanceId**  Unique GUID that identifies each instance of setuphost.exe.
@@ -6195,7 +6195,7 @@ The following fields are available:
 
 ### Setup360Telemetry.Setup360OneSettings
 
-This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -6741,7 +6741,7 @@ The following fields are available:
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
-- **wUfBConnected**  Result of WUfB connection check.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureNotApplicable
@@ -6755,7 +6755,7 @@ The following fields are available:
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
-- **wUfBConnected**  Result of WUfB connection check.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackFeatureStarted
@@ -6796,7 +6796,7 @@ The following fields are available:
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
-- **wUfBConnected**  Result of WUfB connection check.
+- **wUfBConnected**  Result of Windows Update for Business connection check.
 
 
 ### Microsoft.Windows.UpdateCsp.ExecuteRollBackQualityStarted
@@ -8120,7 +8120,7 @@ This event sends data specific to the FixAppXReparsePoints mitigation used for O
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightId**  Unique identifier for each flight.
 - **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
 - **MitigationScenario**  The update scenario in which the mitigation was executed.
@@ -8142,7 +8142,7 @@ This event sends data specific to the FixupEditionId mitigation used for OS upda
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update scenario, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **EditionIdUpdated**  Determine whether EditionId was changed.
 - **FlightId**  Unique identifier for each flight.
 - **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
