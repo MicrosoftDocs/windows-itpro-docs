@@ -46,7 +46,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Configuration service provider reference
-            url: mdm/configuration-service-provider-reference.md
+            url: mdm/index.yml
           - text: DynamicManagement CSP
             url: mdm/dynamicmanagement-csp.md
           - text: BitLocker CSP
