@@ -1,15 +1,13 @@
 ---
 title: Changes to Windows diagnostic data collection
 description: This article provides information on changes to Windows diagnostic data collection Windows 10 and Windows 11.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/29/2021
-ms.technology: privacy
 ---
 
 # Changes to Windows diagnostic data collection

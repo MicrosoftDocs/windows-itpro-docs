@@ -1,17 +1,14 @@
 ---
 description: Learn more about the required Windows 10 diagnostic data gathered.
 title: Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection:
-  - M365-security-compliance
-  - highpri
+ms.collection: highpri
 ms.topic: article
-ms.date: 
-ms.technology: privacy
 ---
 
 

@@ -1,17 +1,14 @@
 ---
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection:
-  - M365-security-compliance
-  - highpri
+ms.collection: highpri
 ms.topic: article
-ms.date: 11/29/2021
-ms.technology: privacy
 ---
 
 # Configure Windows diagnostic data in your organization

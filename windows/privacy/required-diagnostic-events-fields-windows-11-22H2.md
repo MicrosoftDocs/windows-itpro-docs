@@ -2,15 +2,13 @@
 description: Learn more about the Windows 11, version 22H2 diagnostic data gathered.
 title: Required diagnostic events and fields for Windows 11, version 22H2
 keywords: privacy, telemetry
-ms.prod: w10
+ms.prod: windows-client
+ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection: M365-security-compliance
 ms.topic: article
-audience: ITPro
-ms.date: 09/20/2022
 ---
 
 
