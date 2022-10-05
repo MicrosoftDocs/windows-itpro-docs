@@ -328,7 +328,7 @@ Instructions are given below for how to disable Virtualization-Based Security (V
      > [!IMPORTANT]
      > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
 
-1. If Windows Defender Credential Guard is running when disabling Virtualization-Based Security, run the following bcdedit commands after turning off all Virtualization-Based Security Group Policy and registry settings in steps 1 and 2 above:
+1. If Windows Defender Credential Guard is running when disabling Virtualization-Based Security and either feature was enabled with UEFI Lock, the EFI (firmware) variables must be cleared using bcdedit. From an elevated command prompt, run the following bcdedit commands after turning off all Virtualization-Based Security Group Policy and registry settings as described in steps 1 and 2 above:
 
      >
      > ```cmd
