@@ -40,6 +40,7 @@ You can learn more about Windows functional and diagnostic data through these ar
 
 
 
+
 ## Appraiser events
 
 ### Microsoft.Windows.Appraiser.General.ChecksumTotalPictureCount
@@ -187,7 +188,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockRemove
@@ -210,7 +210,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosAdd
@@ -222,7 +221,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosStartSync
@@ -1108,6 +1106,12 @@ The following fields are available:
 - **Language**  String containing the incompatible language pack detected.
 
 
+### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
+
+This event fires when HVCI is already enabled so no need to continue auto-enablement.
+
+
+
 ## Common data extensions
 
 ### Common Data Extensions.app
@@ -1270,19 +1274,6 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-## Common data fields
-
-### Ms.Device.DeviceInventoryChange
-
-Describes the installation state for all hardware and software components available on a particular device.
-
-The following fields are available:
-
-- **action**  The change that was invoked on a device inventory object.
-- **inventoryId**  Device ID used for Compatibility testing
-- **objectInstanceId**  Object identity which is unique within the device scope.
-- **objectType**  Indicates the object type that the event applies to.
-- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 ## Component-based servicing events
 
@@ -1720,7 +1711,7 @@ The following fields are available:
 - **IsDeviceSetupComplete**  Windows Mixed Reality Portal app state of device setup completion.
 - **PackageVersion**  Windows Mixed Reality Portal app package version.
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
-- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
+- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID. See [wilActivity](#wilactivity).
 
 
 ### TraceLoggingOasisUsbHostApiProvider.DeviceInformation
@@ -2151,32 +2142,6 @@ The following fields are available:
 - **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt SHOULD have (with high probability) a unique request id. Default: ''.
 
 
-## OneSettings events
-
-### Microsoft.Windows.OneSettingsClient.Status
-
-This event indicates the config usage of status update. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
-
-The following fields are available:
-
-- **flightId**  Flight id.
-- **time**  Time.
-
-
-## OOBE events
-
-### Microsoft.Windows.Shell.Oobe.ZDP.ZdpTaskCancelled
-
-This event is the result of an attempt to cancel ZDP task.
-
-The following fields are available:
-
-- **cancelReason**  Enum for source/reason to cancel.
-- **resultCode**  HR result of the cancellation.
-
-
-## Other events
-
 ### Microsoft.Edge.Crashpad.HangEvent
 
 This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
@@ -2193,102 +2158,28 @@ The following fields are available:
 - **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
 
 
-### Microsoft.Gaming.Critical.Error
+## OneSettings events
 
-Common error event used by the Gaming Telemetry Library to provide centralized monitoring for critical errors logged by callers using the library.
+### Microsoft.Windows.OneSettingsClient.Status
 
-The following fields are available:
-
-- **callStack**  List of active subroutines running during error occurrence.
-- **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
-- **customAttributes**  List of custom attributes.
-- **errorCode**  Error code.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **featureName**  Friendly name meant to represent which feature this should be attributed to.
-- **identifier**  Error identifier.
-- **message**  Error message.
-- **properties**  List of properties attributed to the error.
-
-
-### Microsoft.Gaming.Critical.ProviderRegistered
-
-Indicates that a telemetry provider has been registered with the Gaming Telemetry Library.
+This event indicates the config usage of status update. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
 
 The following fields are available:
 
-- **providerNamespace**  The telemetry Namespace for the registered provider.
+- **flightId**  Flight id.
+- **time**  Time.
 
 
-### Microsoft.Gaming.OOBE.HDDBackup
+## OOBE events
 
-This event describes whether an External HDD back up has been found.
+### Microsoft.Windows.Shell.Oobe.ZDP.ZdpTaskCancelled
 
-The following fields are available:
-
-- **backupVersion**  version number of backup.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **hasConsoleSettings**  Indicates whether the console settings stored.
-- **hasUserSettings**  Indicates whether the user settings stored.
-- **hasWirelessProfile**  Indicates whether the wireless profile stored.
-- **hddBackupFound**  Indicates whether hdd backup is found.
-- **osVersion**  Operating system version.
-
-
-### Microsoft.Gaming.OOBE.OobeComplete
-
-This event is triggered when OOBE activation is complete.
+This event is the result of an attempt to cancel ZDP task
 
 The following fields are available:
 
-- **allowAutoUpdate**  Allows auto update.
-- **allowAutoUpdateApps**  Allows auto update for apps.
-- **appliedTransferToken**  Applied transfer token.
-- **connectionType**  Connection type.
-- **curSessionId**  Current session id.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **instantOn**  Instant on.
-- **moobeAcceptedState**  Moobe accepted state.
-- **phaseOneElapsedTimeMs**  Total elapsed time in milliseconds for phase 1.
-- **phaseOneVersion**  Version of phase 1.
-- **phaseTwoElapsedTimeMs**  Total elapsed time in milliseconds for phase 2.
-- **phaseTwoVersion**  Version of phase 2.
-- **systemUpdateRequired**  Indicates whether a system update required.
-- **totalElapsedTimeMs**  Total elapsed time in milliseconds of all phases.
-- **usedCloudBackup**  Indicates whether cloud backup is used.
-- **usedHDDBackup**  Indicates whether HDD backup is used.
-- **usedOffConsole**  Indicates whether off console is used.
-
-
-### Microsoft.Gaming.OOBE.SessionStarted
-
-This event is sent at the start of OOBE session.
-
-The following fields are available:
-
-- **customAttributes**  customAttributes.
-- **extendedData**  extendedData.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
-
-This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantStateDownloading**  True at the start Downloading.
-- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
-- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
-- **UpdateAssistantStateInstalling**  True at the start of Installing.
-- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-
-
-### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
-
-This event fires when HVCI is already enabled so no need to continue auto-enablement.
-
+- **cancelReason**  Enum for source/reason to cancel.
+- **resultCode**  HR result of the cancellation.
 
 
 ## Privacy consent logging events
@@ -2423,7 +2314,7 @@ The following fields are available:
 
 ### Microsoft.Surface.Battery.Prod.BatteryInfoEventV3
 
-This event includes the hardware level data about battery performance. The data collected with this event is used to keep Windows performing properly.
+Hardware level data about battery performance.
 
 The following fields are available:
 
@@ -2478,6 +2369,24 @@ The following fields are available:
 - **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
 - **Status**  The status returned to the PnP (Plug-and-Play) manager.
 - **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
+
+
+## Update Assistant events
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
 ## Update events
@@ -3397,7 +3306,9 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Ux.MusUpdateSettings.Derived.ClientAggregated.LaunchPageDuration
 
-This event is derived event results for the LaunchPageDuration scenario.
+Derived Event Results for LaunchPageDuration Scenario.
+
+This event includes fields from [Metric](#metric).
 
 
 
@@ -3454,6 +3365,3 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
-
-
-
