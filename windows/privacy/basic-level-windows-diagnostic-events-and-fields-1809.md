@@ -2592,7 +2592,7 @@ Fires when the compatibility check completes. Gives the results from the check.
 The following fields are available:
 
 - **IsRecommended**  Denotes whether all compatibility checks have passed and, if so, returns true. Otherwise returns false.
-- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-hvci-default-enablement.
+- **Issues**  If compatibility checks failed, provides bit indexed indicators of issues detected. Table located here: [Check results of HVCI default enablement](/windows-hardware/design/device-experiences/oem-hvci-enablement#check-results-of-hvci-default-enablement).
 
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HVCIActivity
@@ -4785,7 +4785,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4899,7 +4899,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.De~ice.DeviceInventoryChange](#msde~icedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -5116,7 +5116,7 @@ The following fields are available:
 
 This event represents the basic metadata about the OS indicators installed on the system. The data collected with this event helps ensure the device is up to date and keeps Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChangd](#msdevicedeviceinventorychangd).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -5159,7 +5159,7 @@ The following fields are available:
 - **FirmwareResetReasonPch**  Reason for system reset provided by firmware.
 - **FirmwareResetReasonPchAdditional**  Additional information on system reset reason provided by firmware if needed.
 - **FirmwareResetReasonSupplied**  Flag indicating that a reason for system reset was provided by firmware.
-- **IO**  Amount of data written to and read from the disk by the OS Loader during boot. See [IO](#io).
+- **IO**  Amount of data written to and read from the disk by the OS Loader during boot.
 - **LastBootSucceeded**  Flag indicating whether the last boot was successful.
 - **LastShutdownSucceeded**  Flag indicating whether the last shutdown was successful.
 - **MaxAbove4GbFreeRange**  This field describes the largest memory range available above 4Gb.
@@ -7959,7 +7959,7 @@ The following fields are available:
 
 - **DPRange**  Maximum mean value range.
 - **DPValue**  Randomized bit value (0 or 1) that can be reconstituted over a large population to estimate the mean.
-- **Value**  Standard UTC emitted DP value structure See [Value](#value).
+- **Value**  Standard UTC emitted DP value structure.
 
 
 ## Windows Store events
