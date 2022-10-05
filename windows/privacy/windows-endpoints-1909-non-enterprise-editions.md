@@ -1,6 +1,8 @@
 ---
 title: Windows 10, version 1909, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1909.
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown

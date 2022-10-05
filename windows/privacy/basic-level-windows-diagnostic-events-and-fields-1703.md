@@ -1444,7 +1444,7 @@ The following fields are available:
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
-- **SharedPCMode**  Returns Boolean for education devices used as shared cart
+- **SharedPCMode**  Returns Boolean for devices that have enabled the configuration EnableSharedPCMode.
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
 - **SLICVersion**  Returns OS type/version from SLIC table.
@@ -2482,7 +2482,7 @@ The following fields are available:
 - **Enumerator**  Identifies the bus that enumerated the device.
 - **HWID**  A list of hardware IDs for the device. See [HWID](#hwid).
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
-- **InstallState**  The device installation state. For a list of values, see: [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx)
+- **InstallState**  The device installation state. For a list of values, see: [Device Install State](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_install_state)
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
@@ -2547,7 +2547,7 @@ The following fields are available:
 - **DriverIsKernelMode**  Is it a kernel mode driver?
 - **DriverName**  The file name of the driver.
 - **DriverPackageStrongName**  The strong name of the driver package
-- **DriverSigned**  The strong name of the driver package
+- **DriverSigned**  Is the driver signed?
 - **DriverTimeStamp**  The low 32 bits of the time stamp of the driver file.
 - **DriverType**  A bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001. 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002. 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004. 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008. 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010. 6. define DRIVER_MAP_DRIVER_IS_WINQUAL 0x0040. 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020. 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080. 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100. 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000. 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000. 12. define DRIVER_MAP_DRIVER_TYPE_AMD64 0x40000. 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x100000. 14. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000. 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000. 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000.
 - **DriverVersion**  The version of the driver file.
@@ -4283,7 +4283,7 @@ The following fields are available:
 - **MsiProductCode**  The unique identifier of the MSI installer.
 - **PackageFullName**  The package name of the content being installed.
 - **PhonePreviewEnabled**  Indicates whether a phone was getting preview build, prior to flighting being introduced.
-- **PlatformRole**  The PowerPlatformRole as defined on MSDN.
+- **PlatformRole**  The PowerPlatformRole.
 - **ProcessName**  The process name of the caller who initiated API calls, in the event where CallerApplicationName was not provided.
 - **ProcessorArchitecture**  Processor architecture of the system (x86, AMD64, ARM).
 - **QualityUpdatePause**  Are quality OS updates paused on the device?

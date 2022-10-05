@@ -13,11 +13,6 @@ ms.topic: article
 
 # Windows 10, version 1909 and Windows 10, version 1903 required Windows diagnostic events and fields
 
-
-> [!IMPORTANT]  
-> Windows is moving to classifying the data collected from customer’s devices as either *Required* or *Optional*.
-
-
  **Applies to**
 
 - Windows 10, version 1909
@@ -32,7 +27,8 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Required Windows 11 diagnostic events and fields](required-windows-11-diagnostic-events-and-fields.md)
+- [Required diagnostic events and fields for Windows 11, version 22H2](required-diagnostic-events-fields-windows-11-22H2.md)
+- [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)
 - [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
@@ -2498,7 +2494,7 @@ The following fields are available:
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
-- **SharedPCMode**  Returns Boolean for education devices used as shared cart
+- **SharedPCMode**  Returns Boolean for devices that have enabled the configuration EnableSharedPCMode.
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
 - **SLICVersion**  Returns OS type/version from SLIC table.
@@ -4998,7 +4994,7 @@ The following fields are available:
 - **HWID**  The version of the driver loaded for the device.
 - **Inf**  The bus that enumerated the device.
 - **InstallDate**  The date of the most recent installation of the device on the machine.
-- **InstallState**  The device installation state. For a list of values, see [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx).
+- **InstallState**  The device installation state. For a list of values, see [Device Install State](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_install_state).
 - **InventoryVersion**  List of hardware ids for the device.
 - **LowerClassFilters**  Lower filter class drivers IDs installed for the device
 - **LowerFilters**  Lower filter drivers IDs installed for the device
@@ -5097,7 +5093,7 @@ The following fields are available:
 - **DriverIsKernelMode**  Is it a kernel mode driver?
 - **DriverName**  The file name of the driver.
 - **DriverPackageStrongName**  The strong name of the driver package
-- **DriverSigned**  The strong name of the driver package
+- **DriverSigned**  Is the driver signed?
 - **DriverTimeStamp**  The low 32 bits of the time stamp of the driver file.
 - **DriverType**  A bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001. 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002. 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004. 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008. 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010. 6. define DRIVER_MAP_DRIVER_IS_WINQUAL 0x0040. 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020. 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080. 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100. 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000. 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000. 12. define DRIVER_MAP_DRIVER_TYPE_AMD64 0x40000. 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x100000. 14. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000. 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000. 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000.
 - **DriverVersion**  The version of the driver file.

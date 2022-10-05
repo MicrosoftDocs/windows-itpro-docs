@@ -962,9 +962,9 @@ The following fields are available:
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
 ### Census.Memory
@@ -1035,7 +1035,7 @@ The following fields are available:
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
-- **SharedPCMode**  Returns Boolean for education devices used as shared cart
+- **SharedPCMode**  Returns Boolean for devices that have enabled the configuration EnableSharedPCMode.
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
 - **SLICVersion**  Returns OS type/version from SLIC table.
@@ -2187,7 +2187,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Shell.Oobe.ZDP.ZdpTaskCancelled
 
-This event is the result of an attempt to cancel ZDP task
+This event is the result of an attempt to cancel ZDP task.
 
 The following fields are available:
 
@@ -2327,7 +2327,7 @@ The following fields are available:
 
 ### Microsoft.Surface.Battery.Prod.BatteryInfoEventV3
 
-Hardware level data about battery performance.
+This event includes the hardware level data about battery performance. The data collected with this event is used to keep Windows performing properly.
 
 The following fields are available:
 
@@ -3319,7 +3319,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Update.Ux.MusUpdateSettings.Derived.ClientAggregated.LaunchPageDuration
 
-Derived Event Results for LaunchPageDuration Scenario.
+This event is derived event results for the LaunchPageDuration scenario.
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit

@@ -2306,7 +2306,7 @@ The following fields are available:
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
-- **SharedPCMode**  Returns Boolean for education devices used as shared cart
+- **SharedPCMode**  Returns Boolean for devices that have enabled the configuration EnableSharedPCMode.
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
 - **SLICVersion**  Returns OS type/version from SLIC table.
@@ -4821,7 +4821,7 @@ The following fields are available:
 - **HWID**  A list of hardware IDs for the device.
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
 - **InstallDate**  The date of the most recent installation of the device on the machine.
-- **InstallState**  The device installation state. For a list of values, see: [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx)
+- **InstallState**  The device installation state. For a list of values, see: [Device Install State](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_install_state)
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
@@ -4920,7 +4920,7 @@ The following fields are available:
 - **DriverIsKernelMode**  Is it a kernel mode driver?
 - **DriverName**  The file name of the driver.
 - **DriverPackageStrongName**  The strong name of the driver package
-- **DriverSigned**  The strong name of the driver package
+- **DriverSigned**  Is the driver signed?
 - **DriverTimeStamp**  The low 32 bits of the time stamp of the driver file.
 - **DriverType**  A bitfield of driver attributes: 1. define DRIVER_MAP_DRIVER_TYPE_PRINTER 0x0001. 2. define DRIVER_MAP_DRIVER_TYPE_KERNEL 0x0002. 3. define DRIVER_MAP_DRIVER_TYPE_USER 0x0004. 4. define DRIVER_MAP_DRIVER_IS_SIGNED 0x0008. 5. define DRIVER_MAP_DRIVER_IS_INBOX 0x0010. 6. define DRIVER_MAP_DRIVER_IS_WINQUAL 0x0040. 7. define DRIVER_MAP_DRIVER_IS_SELF_SIGNED 0x0020. 8. define DRIVER_MAP_DRIVER_IS_CI_SIGNED 0x0080. 9. define DRIVER_MAP_DRIVER_HAS_BOOT_SERVICE 0x0100. 10. define DRIVER_MAP_DRIVER_TYPE_I386 0x10000. 11. define DRIVER_MAP_DRIVER_TYPE_IA64 0x20000. 12. define DRIVER_MAP_DRIVER_TYPE_AMD64 0x40000. 13. define DRIVER_MAP_DRIVER_TYPE_ARM 0x100000. 14. define DRIVER_MAP_DRIVER_TYPE_THUMB 0x200000. 15. define DRIVER_MAP_DRIVER_TYPE_ARMNT 0x400000. 16. define DRIVER_MAP_DRIVER_IS_TIME_STAMPED 0x800000.
 - **DriverVersion**  The version of the driver file.
@@ -6169,7 +6169,7 @@ The following fields are available:
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
 - **RemediationShellDeviceProSku**  Indicates whether a Windows 10 Professional edition is detected.
 - **RemediationShellDeviceQualityUpdatesPaused**  Indicates whether Quality Updates are paused on the device.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by Configuration Manager.
 - **RemediationShellDeviceSedimentMutexInUse**  Indicates whether the Sediment Pack mutual exclusion object (mutex) is in use.
 - **RemediationShellDeviceSetupMutexInUse**  Indicates whether device setup is in progress.
 - **RemediationShellDeviceWuRegistryBlocked**  Indicates whether the Windows Update is blocked on the device via the registry.
@@ -9693,8 +9693,8 @@ The following fields are available:
 - **UnifiedInstallerDeviceIsMdmManagedHresult**  The result code from checking whether a device is MDM managed.
 - **UnifiedInstallerDeviceIsProSku**  Boolean indicating whether a device is Pro SKU.
 - **UnifiedInstallerDeviceIsProSkuHresult**  The result code from checking whether a device is Pro SKU.
-- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is SCCM managed.
-- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is SCCM managed.
+- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is managed by Configuration Manager.
+- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is managed by Configuration Manager.
 - **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is Wufb managed.
 - **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is Wufb managed.
 - **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.
