@@ -35,10 +35,13 @@ Windows Defender Credential Guard will be enabled by default when a PC meets the
 |---|---|
 |Operating System|Windows 11 Enterprise 22H2 or Windows 11 Education 22H2|
 |Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
-|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
+|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2 and Windows 11 Education 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
 
 > [!NOTE]
 > If Windows Defender Credential Guard or VBS has previously been explicitly disabled, default enablement will not overwrite this setting.
+
+> [!NOTE]
+> Devices that previously had an Enterprise license and are now running Windows 11 Pro 22H2 may have Virtualization-Based Security (VBS) and LsaIso.exe automaticaly enabled if they meet the other requirements for default enablement listed above. In this scenario, if you wish to disable VBS and LsaIso.exe, follow the instructions for [disabling Virtualization-Based Security](#disabling-virtualization-based-security).
 
 ## Enable Windows Defender Credential Guard
 
