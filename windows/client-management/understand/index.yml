@@ -66,14 +66,14 @@ landingContent:
       - linkListType: overview
         links:
           - text: Configuration service provider reference
-            url: configuration-service-provider-reference.md
+            url: ../understand/configuration-service-provider-reference.md
       - linkListType: reference
         links:
           - text: Policy CSP
-            url: policy-configuration-service-provider.md
+            url: ../understand/policy-configuration-service-provider.md
           - text: Policy CSP - Update
-            url: policy-csp-update.md
+            url: ../understand/policy-csp-update.md
           - text: DynamicManagement CSP
-            url: dynamicmanagement-csp.md
+            url: ../understand/dynamicmanagement-csp.md
           - text: BitLocker CSP
-            url: bitlocker-csp.md
+            url: ../understand/bitlocker-csp.md

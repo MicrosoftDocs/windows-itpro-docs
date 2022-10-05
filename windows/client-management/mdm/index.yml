@@ -24,41 +24,6 @@ metadata:
 landingContent:
   # Cards and links should be based on top customer tasks or top subjects
   # Start card title with a verb
-  # Card (optional)
-  - title: Device enrollment
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Mobile device enrollment
-            url: mobile-device-enrollment.md
-      - linkListType: concept
-        links:
-          - text: Enroll Windows devices
-            url: mdm-enrollment-of-windows-devices.md
-          - text: Automatic enrollment using Azure AD
-            url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
-          - text: Automatic enrollment using Group Policy
-            url: enroll-a-windows-10-device-automatically-using-group-policy.md
-          - text: Bulk enrollment
-            url: bulk-enrollment-using-windows-provisioning-tool.md
-
-  # Card (optional)
-  - title: Device management
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Enterprise settings, policies, and app management
-            url: windows-mdm-enterprise-settings.md
-      - linkListType: concept
-        links:
-          - text: Enterprise app management
-            url: enterprise-app-management.md
-          - text: Device updates management
-            url: device-update-management.md
-          - text: Secured-core PC configuration lock
-            url: config-lock.md
-          - text: Diagnose MDM failures
-            url: diagnose-mdm-failures-in-windows-10.md
 
   # Card (optional)
   - title: CSP reference
