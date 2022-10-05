@@ -34,7 +34,7 @@ There are different ways to use Take a Test, depending on the use case:
 - For lower stakes assessments, such a quick quiz in a class, a teacher can generate a *secure assessment URL* and share it with the students. Students can then open the URL to access the assessment through Take a Test. To learn more, see the next section: [Create a secure assessment link](#create-a-secure-assessment-link)
 - For higher stakes assessments, you can configure Windows devices to use a dedicated account for testing and execute Take a Test in a locked-down mode, called **kiosk mode**. Once signed in with the dedicated account, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. For more information, see [Configure Take a Test in kiosk mode](edu-take-a-test-kiosk-mode.md)
 
-![Set up and user flow for the Take a Test app.](images/takeatest/flow-chart.png)
+:::image type="content" source="./images/takeatest/flow-chart.png" alt-text="Set up and user flow for the Take a Test app." border="false":::
 
 ## Create a secure assessment link
 
