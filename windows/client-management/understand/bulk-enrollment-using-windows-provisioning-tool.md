@@ -1,10 +1,10 @@
 ---
 title: Bulk enrollment
 description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. In Windows 10 and Windows 11.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.bulk\_enrollment'
   - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -16,7 +16,7 @@ ms.date: 06/26/2017
 
 # Bulk enrollment
 
-Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. In Windows 10 and 11 desktop devices, you can use the [Provisioning CSP](provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join (Cloud Domain Join) enrollment scenario.
+Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to reimage the devices. In Windows 10 and 11 desktop devices, you can use the [Provisioning CSP](../mdm/provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join (Cloud Domain Join) enrollment scenario.
 
 ## Typical use cases
 
@@ -69,9 +69,9 @@ Using the WCD, create a provisioning package using the enrollment information re
    -   **EnrollmentServiceFullUrl** - Optional and in most cases, it should be left blank.
    -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
    -   **Secret** - Password
-   For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
+   For detailed descriptions of these settings, see [Provisioning CSP](../mdm/provisioning-csp.md).
    Here's the screenshot of the WCD at this point.
-   
+
     ![bulk enrollment screenshot.](images/bulk-enrollment.png)
 9. Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (for example, **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
 10. When you're done adding all the settings, on the **File** menu, click **Save**.
@@ -118,7 +118,7 @@ Using the WCD, create a provisioning package using the enrollment information re
       -   **EnrollmentServiceFullUrl** - Optional and in most cases, it should be left blank.
       -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
       -   **Secret** - the certificate thumbprint.
-      For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
+      For detailed descriptions of these settings, see [Provisioning CSP](../mdm/provisioning-csp.md).
 8. Configure the other settings, such as the Wi-Fi connection so that the device can join a network before joining MDM (for example, **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
 9. When you're done adding all the settings, on the **File** menu, click **Save**.
 10. Export and build the package (steps 10-13 in the procedure above).
