@@ -9503,7 +9503,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 - [ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
 
 > [!NOTE]
-> Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](../mdm/understanding-admx-backed-policies.md).
 
 ## Policies in Policy CSP supported by HoloLens devices
 - [Policies in Policy CSP supported by HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)

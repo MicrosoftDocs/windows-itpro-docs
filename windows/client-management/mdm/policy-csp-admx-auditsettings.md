@@ -8,23 +8,23 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 08/13/2020
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
 # Policy CSP - ADMX_AuditSettings.
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../mdm/understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../mdm/understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AuditSettings policies  
+## ADMX_AuditSettings policies
 
 <dl>
   <dd>
@@ -36,7 +36,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**  
+<a href="" id="admx-auditsettings-includecmdline"></a>**ADMX_AuditSettings/IncludeCmdLine**
 
 <!--SupportedSKUs-->
 
@@ -76,7 +76,7 @@ Default is Not configured.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Include command line in process creation events*
 -   GP name: *IncludeCmdLine*
 -   GP path: *System/Audit Process Creation*

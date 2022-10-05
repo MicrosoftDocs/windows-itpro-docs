@@ -8,24 +8,24 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
 # Policy CSP - CredentialsDelegation
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../mdm/understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../mdm/understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## CredentialsDelegation policies  
+## CredentialsDelegation policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials"></a>**CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials**  
+<a href="" id="credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials"></a>**CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials**
 
 <!--SupportedSKUs-->
 
@@ -76,7 +76,7 @@ If you disable or don't configure this policy setting, Restricted Administration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remote host allows delegation of non-exportable credentials*
 -   GP name: *AllowProtectedCreds*
 -   GP path: *System/Credentials Delegation*
