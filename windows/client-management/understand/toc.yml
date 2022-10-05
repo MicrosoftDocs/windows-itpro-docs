@@ -108,4 +108,4 @@ items:
           - name: DMProcessConfigXMLFiltered
             href: dmprocessconfigxmlfiltered.md
       - name: Configuration service provider reference
-        href: ../mdm/toc.yml
+        href: ../mdm/index.yml
