@@ -1275,6 +1275,21 @@ The following fields are available:
 - **xid**  A list of base10-encoded XBOX User IDs.
 
 
+## Common data fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+ 
+
 ## Component-based servicing events
 
 ### CbsServicingProvider.CbsCapabilitySessionFinalize
@@ -1711,7 +1726,7 @@ The following fields are available:
 - **IsDeviceSetupComplete**  Windows Mixed Reality Portal app state of device setup completion.
 - **PackageVersion**  Windows Mixed Reality Portal app package version.
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
-- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID. See [wilActivity](#wilactivity).
+- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
 
 ### TraceLoggingOasisUsbHostApiProvider.DeviceInformation
@@ -3307,9 +3322,6 @@ The following fields are available:
 ### Microsoft.Windows.Update.Ux.MusUpdateSettings.Derived.ClientAggregated.LaunchPageDuration
 
 Derived Event Results for LaunchPageDuration Scenario.
-
-This event includes fields from [Metric](#metric).
-
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
