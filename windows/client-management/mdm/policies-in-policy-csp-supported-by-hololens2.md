@@ -52,7 +52,7 @@ ms.date: 08/01/2022
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
-- [MixedReality/AllowCaptivePortalBeforeSignIn](./policy-csp-mixedreality.md#mixedreality-allowcaptiveportalpeforesignin) <sup>Insider</sup>
+- [MixedReality/AllowCaptivePortalBeforeLogon](./policy-csp-mixedreality.md#mixedreality-allowcaptiveportalpeforelogon) <sup>Insider</sup>
 - [MixedReality/AllowLaunchUriInSingleAppKiosk](./policy-csp-mixedreality.md#mixedreality-allowlaunchuriinsingleappkiosk)<sup>10</sup>
 - [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>11</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
