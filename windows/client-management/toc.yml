@@ -29,13 +29,7 @@ items:
         - name: Windows libraries
           href: windows-libraries.md
     - name: Mobile device management (MDM)
-      items:
-        - name: Mobile Device Management
-          href: understand/index.yml
-    - name: Configuration Service Provider (CSP)
-      items:
-        - name: CSP reference
-          href: mdm/index.yml
+      href: understand/toc.yml
     - name: Troubleshoot Windows clients
       items:
         - name: Windows 10 support solutions
