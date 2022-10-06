@@ -127,7 +127,7 @@ Example:
 
 ## Related topics
 
-[Set up Take a Test on multiple PCs](/education/windows/take-a-test-multiple-pcs)  
+[Set up Take a Test](/education/windows/take-a-test-multiple-pcs)  
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
