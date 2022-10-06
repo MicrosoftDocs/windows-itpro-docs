@@ -43,10 +43,13 @@ Shared PC also offers a **Kiosk** mode, which automatically executes a specific 
 
 ## Account management
 
-When account management is configured, user profiles are automatically deleted to free up disk space and resources. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out, based on disk space threshold, or based on inactivity threshold.
+When *Account management* is configured, user profiles are automatically deleted to free up disk space and resources. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out, based on disk space threshold, or based on inactivity threshold.
 
 > [!IMPORTANT]
-> Shared PC is designed to take advantage of maintenance time periods, which run while the device is not in use. Therefore, devices should be put to **sleep** instead of shut down. This way, a device can wake up to perform maintenance and, ideally, check for updates. While Shared PC does not configure the Windows Update client, it is recommended to configure Windows Update to automatically install updates and reboot during maintenance hours. This will help ensure the device is always up to date without interrupting users when the device is in use.
+> Shared PC is designed to take advantage of maintenance time periods, which run while the device is not in use. Therefore, devices should be put to **sleep** instead of shut down. This way, a device can wake up to perform maintenance and, ideally, check for updates.
+
+> [!TIP]
+> While Shared PC does not configure the Windows Update client, it is recommended to configure Windows Update to automatically install updates and reboot during maintenance hours. This will help ensure the device is always up to date without interrupting users when the device is in use.
 
 ## Power management
 
