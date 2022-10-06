@@ -14,11 +14,6 @@ ms.date: 09/16/2019
 
 # Policies in Policy CSP supported by Windows 10 IoT Core
 
-> [!div class="op_single_selector"]
->
-> - [IoT Core]()
->
-
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [CredentialProviders/AllowPINLogon](policy-csp-credentialproviders.md#credentialproviders-allowpinlogon)

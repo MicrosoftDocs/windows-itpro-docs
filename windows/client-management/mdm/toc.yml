@@ -1,18 +1,18 @@
 items:
-  - name: Configuration service reference
+  - name: Configuration service provider reference
     href: index.yml
     expanded: true
     items:
     - name: Device description framework (DDF)
       href: configuration-service-provider-ddf.md
-    - name: Supported scenarios
+    - name: Support scenarios
       href: configuration-service-provider-support.md
     - name: Policy CSP
       href: policy-configuration-service-provider.md
       items:
         - name: Policy CSP DDF file
           href: policy-ddf-file.md
-        - name: Policy CSP support
+        - name: Policy CSP support scenarios
           items:
           - name: ADMX policies in Policy CSP
             href: policies-in-policy-csp-admx-backed.md
@@ -24,8 +24,6 @@ items:
             href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
           - name: Policies in Policy CSP supported by HoloLens (1st gen) Development Edition
             href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
-          - name: Policies in Policy CSP supported by Windows 10 IoT Enterprise
-            href: ./configuration-service-provider-reference.md
           - name: Policies in Policy CSP supported by Windows 10 IoT Core
             href: policies-in-policy-csp-supported-by-iot-core.md
           - name: Policies in Policy CSP supported by Microsoft Surface Hub

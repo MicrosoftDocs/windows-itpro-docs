@@ -27,7 +27,7 @@ items:
             tocHref: /windows/client-management/
             topicHref: /windows/client-management/
             items:
-              - name: Mobile Device Management
+              - name: Mobile device management
                 tocHref: /windows/client-management/understand/
                 topicHref: /windows/client-management/understand/
                 items:

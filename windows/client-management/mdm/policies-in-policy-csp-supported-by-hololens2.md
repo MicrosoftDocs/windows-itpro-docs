@@ -14,13 +14,6 @@ ms.date: 08/01/2022
 
 # Policies in Policy CSP supported by HoloLens 2
 
-> [!div class="op_single_selector"]
->
-> - [HoloLens 2]()
-> - [HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)
-> - [HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
->
-
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
 - [ApplicationManagement/AllowAllTrustedApps](policy-csp-applicationmanagement.md#applicationmanagement-allowalltrustedapps)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)

@@ -26,18 +26,18 @@ landingContent:
   # Start card title with a verb
 
   # Card (optional)
-  - title: Configuration Service Provider
+  - title: Configuration service provider reference
     linkLists:
       - linkListType: reference
         links:
-          - text: Supported scenarios
+          - text: Support scenarios
             url: configuration-service-provider-support.md
           - text: Device description framework (DDF) files
             url: configuration-service-provider-ddf.md
-          - text: DynamicManagement CSP
-            url: dynamicmanagement-csp.md
           - text: BitLocker CSP
             url: bitlocker-csp.md
+          - text: DynamicManagement CSP
+            url: dynamicmanagement-csp.md
 
   # Card (optional)
   - title: Policy CSP
@@ -54,11 +54,15 @@ landingContent:
             url: policy-csp-update.md
 
   # Card (optional)
-  - title: Policy CSP support
+  - title: Policy CSP support scenarios
     linkLists:
       - linkListType: reference
         links:
-          - text: ADMX Policies
+          - text: ADMX policies
             url: policies-in-policy-csp-admx-backed.md
-          - text: Policies supported by Group Policy
+          - text: Policies supported by group policy
             url: policies-in-policy-csp-supported-by-group-policy.md
+          - text: Policies supported by HoloLens 2
+            url: policies-in-policy-csp-supported-by-hololens2.md
+          - text: Policies supported by Microsoft Surface Hub
+            url: policies-in-policy-csp-supported-by-surface-hub.md
