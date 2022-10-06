@@ -26,13 +26,13 @@ landingContent:
   # Start card title with a verb
 
   # Card (optional)
-  - title: CSP reference
+  - title: Configuration Service Provider
     linkLists:
       - linkListType: reference
         links:
-          - text: CSP supported scenarios
+          - text: Supported scenarios
             url: configuration-service-provider-support.md
-          - text: CSP DDF Files
+          - text: Device description framework (DDF) files
             url: configuration-service-provider-ddf.md
           - text: DynamicManagement CSP
             url: dynamicmanagement-csp.md
@@ -40,7 +40,7 @@ landingContent:
             url: bitlocker-csp.md
 
   # Card (optional)
-  - title: Policy CSP reference
+  - title: Policy CSP
     linkLists:
       - linkListType: reference
         links:
@@ -52,3 +52,13 @@ landingContent:
             url: policy-csp-start.md
           - text: Policy CSP - Update
             url: policy-csp-update.md
+
+  # Card (optional)
+  - title: Policy CSP support
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ADMX Policies
+            url: policies-in-policy-csp-admx-backed.md
+          - text: Policies supported by Group Policy
+            url: policies-in-policy-csp-supported-by-group-policy.md

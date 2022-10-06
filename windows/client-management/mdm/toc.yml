@@ -1,6 +1,7 @@
 items:
   - name: Configuration service reference
     href: index.yml
+    expanded: true
     items:
     - name: Device description framework (DDF)
       href: configuration-service-provider-ddf.md
