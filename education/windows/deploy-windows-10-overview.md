@@ -47,7 +47,7 @@ Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-base
 
 Minecraft Education Edition is built for learning. Learn how to get early access and add it to your Microsoft Store for Business for distribution.
 
-**[Take tests in Windows 10](take-tests-in-windows-10.md)**
+**[Take tests in Windows](take-tests-in-windows.md)**
 
 Take a Test is a new app that lets you create the right environment for taking tests. Learn how to use and get it set up.
 
