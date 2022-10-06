@@ -1,7 +1,8 @@
 items:
-  - name: CSP Overview
+  - name: Overview
     href: index.yml
   - name: Configuration service provider reference
+    expanded: true
     href: configuration-service-provider-reference.md
     items:
       - name: Policy CSP

@@ -67,7 +67,7 @@ For more information, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Educ
 > [!Note]
 > You can't set both KioskModeApp and ShellLauncher at the same time on the device.
 
-Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
+Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](../understand/enterprise-app-management.md).
 
 Here's an example:
 

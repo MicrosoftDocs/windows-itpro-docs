@@ -301,7 +301,7 @@ An example of Delete command is:
 
 ## PowerShell and WMI Bridge Usage Guidance
 
-The ApplicationControl CSP can also be managed locally from PowerShell or via Configuration Manager's task sequence scripting by using the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
+The ApplicationControl CSP can also be managed locally from PowerShell or via Configuration Manager's task sequence scripting by using the [WMI Bridge Provider](../understand/using-powershell-scripting-with-the-wmi-bridge-provider.md).
 
 ### Setup for using the WMI Bridge
 

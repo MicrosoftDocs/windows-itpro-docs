@@ -232,7 +232,7 @@ Supported operation is Get.
 <a href="" id="provider-providerid-aadresourceid"></a>**Provider/*ProviderID*/AADResourceID**
 Optional. This ResourceID is used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you're trying to access.
 
-For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
+For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](../understand/azure-active-directory-integration-with-mdm.md).
 
 <a href="" id="provider-providerid-enableomadmkeepalivemessage"></a>**Provider/*ProviderID*/EnableOmaDmKeepAliveMessage**
 Added in Windows 10, version 1511. A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow.
@@ -578,7 +578,7 @@ Supported operations are Get and Replace.
 
 <a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
 
-Optional. This node enables [Config Lock](config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
+Optional. This node enables [Config Lock](../understand/config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
 
 Default = Locked
 

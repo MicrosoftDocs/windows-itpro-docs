@@ -17,7 +17,7 @@ manager: aaroncz
 
 Here's how to configure Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](./policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy.
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](../mdm/policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](../mdm/policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy.
 
 Summary of steps to enable a policy:
 - Find the policy from the list ADMX policies.
@@ -35,7 +35,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 > [!NOTE]
 > See [Understanding ADMX policies in Policy CSP](../understand/understanding-admx-backed-policies.md).
 
-1.  Find the policy from the list [ADMX policies](./policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.
+1.  Find the policy from the list [ADMX policies](../mdm/policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.
     - GP Friendly name
     - GP name
     - GP ADMX file name
@@ -105,7 +105,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
    2. Find the variable names of the parameters in the ADMX file.
 
-      You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](policy-configuration-service-provider.md#appvirtualization-publishingallowserver2).
+      You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](../mdm/policy-configuration-service-provider.md#appvirtualization-publishingallowserver2).
 
       ![Publishing server 2 policy description.](images/admx-appv-policy-description.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Structure of OMA DM provisioning files
 description: Learn about the structure of OMA DM provisioning files, for example how each message is composed of a header, specified by the SyncHdr element, and a message body.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -81,7 +81,7 @@ This information is used to by the client device to properly manage the DM sessi
 The following example shows the header component of a DM message. In this case, OMA DM version 1.2 is used as an example only.
 
 > [!NOTE]
-> The `<LocURI>` node value for the `<Source>` element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](devinfo-csp.md).
+> The `<LocURI>` node value for the `<Source>` element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](../mdm/devinfo-csp.md).
 
  
 

@@ -1,10 +1,10 @@
 ---
 title: Certificate Renewal
 description: Learn how to find all the resources that you need to provide continuous access to client certificates.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.certificate\_renewal'
   - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -30,18 +30,18 @@ Windows supports automatic certificate renewal, also known as Renew On Behalf Of
 
 Auto certificate renewal is the only supported MDM client certificate renewal method for the device that's enrolled using WAB authentication. Meaning, the AuthPolicy is set to Federated. It also means if the server supports WAB authentication, then the MDM certificate enrollment server MUST also support client TLS to renew the MDM client certificate.
 
-For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP’s](certificatestore-csp.md) ROBOSupport node under CertificateStore/My/WSTEP/Renew URL.
+For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP’s](../mdm/certificatestore-csp.md) ROBOSupport node under CertificateStore/My/WSTEP/Renew URL.
 
 With automatic renewal, the PKCS\#7 message content isn’t b64 encoded separately. With manual certificate renewal, there's an additional b64 encoding for PKCS\#7 message content.
 
-During the automatic certificate renewal process, if the root certificate isn’t trusted by the device, the authentication will fail. Use one of device pre-installed root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](certificatestore-csp.md).
+During the automatic certificate renewal process, if the root certificate isn’t trusted by the device, the authentication will fail. Use one of device pre-installed root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](../mdm/certificatestore-csp.md).
 
 During the automatic certificate renew process, the device will deny HTTP redirect request from the server. It won't deny the request if the same redirect URL that the user accepted during the initial MDM enrollment process is used.
 
 The following example shows the details of an automatic renewal request.
 
 ```xml
-<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
    xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u=
    "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
    <s:Header>
@@ -62,7 +62,7 @@ The following example shows the details of an automatic renewal request.
          <o:UsernameToken u:Id="uuid-2a734df6-b227-4e60-82a8-ed53c574b718-5">
             <o:Username>user@contoso.com</o:Username>
             <o:Password o:Type=
-               "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">                
+               "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">
             </o:Password>
          </o:UsernameToken>
       </o:Security>
@@ -73,9 +73,9 @@ The following example shows the details of an automatic renewal request.
     http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
          </TokenType>
          <RequestType>http://docs.oasis-open.org/ws-sx/ws-trust/200512/Renew</RequestType>
-         <BinarySecurityToken 
-            ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#PKCS7" 
-            EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary" 
+         <BinarySecurityToken
+            ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#PKCS7"
+            EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
             xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
             BinarySecurityTokenInsertedHere
          </BinarySecurityToken>

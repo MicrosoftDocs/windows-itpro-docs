@@ -1,7 +1,7 @@
 ---
 title: Diagnose MDM failures in Windows 10
 description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -19,10 +19,10 @@ To help diagnose enrollment or device management issues in Windows 10 devices ma
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
 1. On your managed device, go to **Settings** > **Accounts** > **Access work or school**.
-1. Click your work or school account, then click **Info.**  
+1. Click your work or school account, then click **Info.**
    ![Access work or school page in Settings.](images/diagnose-mdm-failures15.png)
 
-1. At the bottom of the **Settings** page, click **Create report**.  
+1. At the bottom of the **Settings** page, click **Create report**.
    ![Access work or school page and then Create report.](images/diagnose-mdm-failures16.png)
 1. A window opens that shows the path to the log files. Click **Export**.
 
@@ -89,7 +89,7 @@ You can open the log files (.evtx files) in the Event Viewer on a Windows 10 PC 
 
 ## Collect logs remotely from Windows 10 PCs
 
-When the PC is already enrolled in MDM, you can remotely collect logs from the PC through the MDM channel if your MDM server supports this facility. The [DiagnosticLog CSP](diagnosticlog-csp.md) can be used to enable an event viewer channel by full name. Here are the Event Viewer names for the Admin and Debug channels:
+When the PC is already enrolled in MDM, you can remotely collect logs from the PC through the MDM channel if your MDM server supports this facility. The [DiagnosticLog CSP](../mdm/diagnosticlog-csp.md) can be used to enable an event viewer channel by full name. Here are the Event Viewer names for the Admin and Debug channels:
 
 - Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%2FAdmin
 - Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%2FDebug
@@ -137,7 +137,7 @@ Example: Export the Debug logs
 
 ## Collect logs remotely from Windows 10 Holographic
 
-For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
+For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](../mdm/diagnosticlog-csp.md).
 
 You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is 3DA494E4-0FE2-415C-B895-FB5265C5C83B. The following examples show how to enable the ETW provider:
 
@@ -231,7 +231,7 @@ Stop collector trace logging
 </SyncML>
 ```
 
-After the logs are collected on the device, you can retrieve the files through the MDM channel using the FileDownload portion of the DiagnosticLog CSP. For details, see [DiagnosticLog CSP](diagnosticlog-csp.md).
+After the logs are collected on the device, you can retrieve the files through the MDM channel using the FileDownload portion of the DiagnosticLog CSP. For details, see [DiagnosticLog CSP](../mdm/diagnosticlog-csp.md).
 
 ## View logs
 
@@ -263,7 +263,7 @@ For best results, ensure that the PC or VM on which you're viewing logs matches 
 
 ## Collect device state data
 
-Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](diagnosticlog-csp.md), version 1.3, which was added in Windows 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
+Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](../mdm/diagnosticlog-csp.md), version 1.3, which was added in Windows 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
 
 ```xml
 <?xml version="1.0"?>

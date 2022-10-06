@@ -7,12 +7,12 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 03/23/2020
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
 # Win32 and Desktop Bridge app ADMX policy Ingestion
-  
+
 ## In this section
 
 -   [Overview](#overview)
@@ -25,13 +25,13 @@ manager: aaroncz
 
 ## <a href="" id="overview"></a>Overview
 
-Starting in Windows 10, version 1703, you can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies. 
+Starting in Windows 10, version 1703, you can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
 
 NOTE: Starting from the following Windows 10 version Replace command is supported
-- Windows 10, version 1903 with KB4512941 and KB4517211 installed 
-- Windows 10, version 1809 with KB4512534 and KB installed 
-- Windows 10, version 1803 with KB4512509 and KB installed 
-- Windows 10, version 1709 with KB4516071 and KB installed 
+- Windows 10, version 1903 with KB4512941 and KB4517211 installed
+- Windows 10, version 1809 with KB4512534 and KB installed
+- Windows 10, version 1803 with KB4512509 and KB installed
+- Windows 10, version 1709 with KB4516071 and KB installed
 
 When the ADMX policies are ingested, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
 
@@ -53,7 +53,7 @@ When the ADMX policies are ingested, the registry keys to which each policy is w
 - software\microsoft\windows\windows search\preferences\
 - software\microsoft\exchange\
 - software\policies\microsoft\vba\security\
-- software\microsoft\onedrive 
+- software\microsoft\onedrive
 - software\Microsoft\Edge
 - Software\Microsoft\EdgeUpdate\
 
@@ -61,7 +61,7 @@ When the ADMX policies are ingested, the registry keys to which each policy is w
 > Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still ingest ADMX files and set ADMX policies regardless of whether the device is domain joined or non-domain joined.
 
 > [!NOTE]
-> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script). 
+> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script).
 
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
@@ -204,7 +204,7 @@ The following ADMX file example shows how to ingest a Win32 or Desktop Bridge ap
 **Request Syncml**
 
 The ADMX file is escaped and sent in SyncML format through the Policy CSP URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}/{SettingType}/{FileUid or AdmxFileName}`.
-When the ADMX file is imported, the policy states for each new policy are the same as those in a regular MDM policy: Enabled, Disabled, or Not Configured. 
+When the ADMX file is imported, the policy states for each new policy are the same as those in a regular MDM policy: Enabled, Disabled, or Not Configured.
 
 The following example shows an ADMX file in SyncML format:
 
@@ -365,7 +365,7 @@ The following example shows an ADMX file in SyncML format:
 <Status><CmdID>2</CmdID><MsgRef>1</MsgRef><CmdRef>102</CmdRef><Cmd>Add</Cmd><Data>200</Data></Status>
 ```
 
-### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy 
+### <a href="" id="uri-format-for-configuring-an-app-policy"></a>URI format for configuring an app policy
 
 The following example shows how to derive a Win32 or Desktop Bridge app policy name and policy area name:
 
@@ -394,7 +394,7 @@ The following example shows how to derive a Win32 or Desktop Bridge app policy n
     </policy>
 ```
 
-As documented in [Policy CSP](policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is: 
+As documented in [Policy CSP](../mdm/policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is:
 './{user or device}/Vendor/MSFT/Policy/Config/{AreaName}/{PolicyName}'.
 
 **User or device policy**

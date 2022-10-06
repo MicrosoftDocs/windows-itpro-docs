@@ -56,9 +56,8 @@ For information about the MDM policies defined in the Intune security baseline, 
 ## Learn about device management
 
 - [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
-- [Enterprise app management](enterprise-app-management.md)
+- [Enterprise app management](../understand/enterprise-app-management.md)
 - [Mobile device management (MDM) for device updates](device-update-management.md)
-- [Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices](enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md)
 - [OMA DM protocol support](oma-dm-protocol-support.md)
 - [Structure of OMA DM provisioning files](structure-of-oma-dm-provisioning-files.md)
 - [Server requirements for OMA DM](server-requirements-windows-mdm.md)
@@ -66,7 +65,7 @@ For information about the MDM policies defined in the Intune security baseline, 
 
 ## Learn about configuration service providers
 
-- [Configuration service provider reference](configuration-service-provider-reference.md)
 - [WMI providers supported in Windows 10](wmi-providers-supported-in-windows.md)
 - [Using PowerShell scripting with the WMI Bridge Provider](using-powershell-scripting-with-the-wmi-bridge-provider.md)
 - [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal)
+- [Configuration service provider reference](../mdm/configuration-service-provider-reference.md)

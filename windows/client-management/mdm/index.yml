@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Mobile Device Management # < 60 chars
+title: Configuration Service Provider # < 60 chars
 summary: Find out how to enroll Windows devices and manage company security policies and business applications. # < 160 chars
 
 metadata:
-  title: Mobile Device Management # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find out how to enroll Windows devices and manage company security policies and business applications. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   services: windows-10

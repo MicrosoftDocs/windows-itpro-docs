@@ -24,7 +24,7 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
+The EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps. For details about how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](../understand/enterprise-app-management.md).
 
 > [!Note]
 > Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
@@ -680,7 +680,7 @@ Supported operation is Execute.
 
 ## Examples
 
-For examples of how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](enterprise-app-management.md).
+For examples of how to use this CSP to for reporting apps inventory, installation and removal of apps for users, provisioning apps to devices, and managing app licenses, see [Enterprise app management](../understand/enterprise-app-management.md).
 
 Query the device for a specific app subcategory, such as nonStore apps.
 
