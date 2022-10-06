@@ -87,11 +87,13 @@ landingContent:
           url: take-tests-in-windows.md
         - text: Change Windows editions
           url: change-home-to-edu.md
-        - text: "Deploy Minecraft: Education Edition"
-          url: get-minecraft-for-education.md
+        - text: Considerations for shared and guest devices
+          url: /windows/configuration/shared-devices-concepts
       - linkListType: how-to-guide
         links:
         - text: Configure Take a Test in kiosk mode
           url: edu-take-a-test-kiosk-mode.md
-        - text: Configure Shared PC mode
-          url: ../../windows/configuration/shared-pc-technical.md
+        - text: Configure Shared PC
+          url: /windows/configuration/shared-pc-technical
+        - text: "Deploy Minecraft: Education Edition"
+          url: get-minecraft-for-education.md

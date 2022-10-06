@@ -22,8 +22,8 @@ items:
         href: enable-s-mode-on-surface-go-devices.md
     - name: Windows 10 editions for education customers
       href: windows-editions-for-education-customers.md
-    - name: Shared PC mode
-      href: ../../windows/configuration/shared-devices-concepts.md
+    - name: Considerations for shared and guest devices
+      href: /windows/configuration/shared-devices-concepts
     - name: Windows 10 configuration recommendations for education customers
       href: configure-windows-for-education.md
     - name: Take tests and assessments in Windows
@@ -36,8 +36,8 @@ items:
       href: edu-stickers.md
     - name: Configure Take a Test in kiosk mode
       href: edu-take-a-test-kiosk-mode.md
-    - name: Configure Shared PC mode
-      href: ../../windows/configuration/shared-pc-technical.md
+    - name: Configure Shared PC
+      href: /windows/configuration/shared-pc-technical
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
     - name: Change Windows edition
@@ -96,6 +96,6 @@ items:
         href: set-up-school-pcs-whats-new.md
     - name: Take a Test technical reference
       href: take-a-test-app-technical.md
-    - name: Shared PC mode technical reference
-      href: ../../windows/configuration/shared-pc-technical.md
+    - name: Shared PC technical reference
+      href: /windows/configuration/shared-pc-technical
       
