@@ -26,7 +26,7 @@ ms.date: 10/06/2022
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers. When vulnerabilities in drivers are found, we work with our partners to ensure they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes:
 
@@ -51,7 +51,7 @@ Customers who always want the most up-to-date driver blocklist can also use Wind
 
 ## Blocking vulnerable drivers using WDAC
 
-Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies) and review the audit block events.
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
 
 > [!IMPORTANT]
 > Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy prevents the existing driver from being loaded.
@@ -2186,7 +2186,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 </details>
 
 > [!NOTE]
-> The policy listed above contains **Allow All** rules. Microsoft recommends deploying this policy alongside an existing WDAC policy instead of merging it with the existing policy. If you must use a single policy, remove the **Allow All** rules before merging it with the existing policy. For more information, see [Create a WDAC Deny Policy](create-wdac-deny-policy#single-policy-considerations).
+> The policy listed above contains **Allow All** rules. Microsoft recommends deploying this policy alongside an existing WDAC policy instead of merging it with the existing policy. If you must use a single policy, remove the **Allow All** rules before merging it with the existing policy. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
 
 ## Steps to download and apply the vulnerable driver blocklist binary
 
@@ -2203,4 +2203,4 @@ If you prefer to apply the vulnerable driver blocklist exactly as shown above, f
 
 ## More information
 
-- [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies)
+- [Merge Windows Defender Application Control policies](/windows/security/threat-protection/windows-defender-application-control/merge-windows-defender-application-control-policies)
