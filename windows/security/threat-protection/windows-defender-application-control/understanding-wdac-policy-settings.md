@@ -1,21 +1,15 @@
 ---
 title: Understanding Windows Defender Application Control (WDAC) secure settings
 description: Learn about secure settings in Windows Defender Application Control.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
-audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
-ms.reviewer: jgeurten
-ms.author: dansimp
-manager: dansimp
+ms.reviewer: vinpa
+ms.author: jogeurte
+manager: aaroncz
 ms.date: 10/11/2021
-ms.technology: mde
+ms.technology: itpro-security
 ---
 
 # Understanding WDAC Policy Settings

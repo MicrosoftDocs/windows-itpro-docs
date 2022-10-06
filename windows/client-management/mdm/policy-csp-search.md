@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/12/2021
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Search policies  
+## Search policies
 
 <dl>
   <dd>
@@ -58,6 +58,9 @@ manager: aaroncz
     <a href="#search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
   </dd>
   <dd>
+    <a href="#search-disablesearch">Search/DisableSearch</a>
+  </dd>
+  <dd>
     <a href="#search-donotusewebresults">Search/DoNotUseWebResults</a>
   </dd>
   <dd>
@@ -72,7 +75,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowcloudsearch"></a>**Search/AllowCloudSearch**  
+<a href="" id="search-allowcloudsearch"></a>**Search/AllowCloudSearch**
 
 <!--SupportedSKUs-->
 
@@ -102,7 +105,7 @@ Allow Search and Cortana to search cloud sources like OneDrive and SharePoint. T
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Cloud Search*
 -   GP name: *AllowCloudSearch*
 -   GP element: *AllowCloudSearch_Dropdown*
@@ -122,7 +125,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
+<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**
 
 <!--SupportedSKUs-->
 
@@ -152,7 +155,7 @@ This policy allows the cortana opt-in page during windows setup out of the box e
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Cloud Search*
 -   GP name: *AllowCortanaInAAD*
 -   GP element: *AllowCloudSearch_Dropdown*
@@ -171,7 +174,7 @@ This value is a simple boolean value, default false, that can be set by MDM poli
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowfindmyfiles"></a>**Search/AllowFindMyFiles**  
+<a href="" id="search-allowfindmyfiles"></a>**Search/AllowFindMyFiles**
 
 <!--SupportedSKUs-->
 
@@ -201,7 +204,7 @@ Controls if the user can configure search to Find My Files mode, which searches 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Find My Files*
 -   GP name: *AllowFindMyFiles*
 -   GP path: *Computer Configuration/Administrative Templates/Windows Components/Search*
@@ -209,7 +212,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 - 1 (Default) - Find My Files feature can be toggled (still off by default), and the settings UI is present.
 - 0 - Find My Files feature is turned off completely, and the settings UI is disabled.
@@ -226,7 +229,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**  
+<a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**
 
 <!--SupportedSKUs-->
 
@@ -262,7 +265,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow indexing of encrypted files*
 -   GP name: *AllowIndexingEncryptedStoresOrItems*
 -   GP path: *Windows Components/Search*
@@ -281,7 +284,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**  
+<a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**
 
 <!--SupportedSKUs-->
 
@@ -313,7 +316,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow search and Cortana to use location*
 -   GP name: *AllowSearchToUseLocation*
 -   GP path: *Windows Components/Search*
@@ -332,7 +335,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**  
+<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**
 
 <!--SupportedSKUs-->
 
@@ -361,11 +364,11 @@ The following list shows the supported values:
 This policy controls whether search highlights are shown in the search box or in search home.
 
 - If you enable this policy setting, then this setting turns on search highlights in the search box or in the search home.
-- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home. 
+- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow search and highlights*
 -   GP name: *AllowSearchHighlights*
 -   GP path: *Windows Components/Search*
@@ -375,15 +378,13 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values in Windows 10:
 
-- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the taskbar search box and in search home.
-
-- Disabled – Disabling this setting turns off search highlights in the taskbar search box and in search home.
+- 1 (default) - Enabling or not configuring this setting turns on search highlights in the taskbar search box and in search home.
+- 0 - Disabling this setting turns off search highlights in the taskbar search box and in search home.
 
 The following list shows the supported values in Windows 11:
 
-- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
-
-- Disabled – Disabling this setting turns off search highlights in the start menu search box and in search home.
+- 1 (default) - Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
+- 0 - Disabling this setting turns off search highlights in the start menu search box and in search home.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -391,7 +392,7 @@ The following list shows the supported values in Windows 11:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
+<a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**
 
 <!--Description-->
 This policy has been deprecated.
@@ -402,7 +403,7 @@ This policy has been deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
+<a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**
 
 <!--SupportedSKUs-->
 
@@ -434,7 +435,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow use of diacritics*
 -   GP name: *AllowUsingDiacritics*
 -   GP path: *Windows Components/Search*
@@ -453,7 +454,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**  
+<a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**
 
 <!--SupportedSKUs-->
 
@@ -487,7 +488,7 @@ Allow Windows indexer. Supported value type is integer.
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**  
+<a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**
 
 <!--SupportedSKUs-->
 
@@ -519,7 +520,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always use automatic language detection when indexing content and properties*
 -   GP name: *AlwaysUseAutoLangDetection*
 -   GP path: *Windows Components/Search*
@@ -538,7 +539,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**  
+<a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**
 
 <!--SupportedSKUs-->
 
@@ -568,7 +569,7 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable indexer backoff*
 -   GP name: *DisableBackoff*
 -   GP path: *Windows Components/Search*
@@ -587,7 +588,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**  
+<a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**
 
 <!--SupportedSKUs-->
 
@@ -621,7 +622,7 @@ If you disable or don't configure this policy setting, locations on removable dr
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow locations on removable drives to be added to libraries*
 -   GP name: *DisableRemovableDriveIndexing*
 -   GP path: *Windows Components/Search*
@@ -640,7 +641,58 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
+<a href="" id="search-disablesearch"></a>**Search/DisableSearch**
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|Yes|
+|Windows SE|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting completely disables Search UI and all its entry points such as keyboard shortcuts and touch-pad gestures.
+
+It removes the Search button from the Taskbar and the corresponding option in the Settings. It also disables type-to-search in the Start menu and removes the Start menu's search box.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:
+
+-   GP Friendly name: *Fully disable Search UI*
+-   GP name: *DisableSearch*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Do not disable search.
+-   1 – Disable search.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**
 
 <!--SupportedSKUs-->
 
@@ -676,7 +728,7 @@ This policy setting allows you to control whether or not Search can perform quer
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't search the web or display web results in Search*
 -   GP name: *DoNotUseWebResults*
 -   GP path: *Windows Components/Search*
@@ -695,7 +747,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**  
+<a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**
 
 <!--SupportedSKUs-->
 
@@ -729,7 +781,7 @@ When this policy is disabled or not configured, Windows Desktop Search automatic
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Stop indexing in the event of limited hard drive space*
 -   GP name: *StopIndexingOnLimitedHardDriveSpace*
 -   GP path: *Windows Components/Search*
@@ -748,7 +800,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**  
+<a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**
 
 <!--SupportedSKUs-->
 
@@ -774,11 +826,11 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they're browsing network shares that are stored on this computer, they won't search them using the index. If disabled, client search requests will use this computer's index..
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they're browsing network shares that are stored on this computer, they won't search them using the index. If disabled, client search requests will use this computer's index.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent clients from querying the index remotely*
 -   GP name: *PreventRemoteQueries*
 -   GP path: *Windows Components/Search*

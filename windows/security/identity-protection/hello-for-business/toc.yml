@@ -21,6 +21,8 @@
       href: hello-how-it-works-provisioning.md
     - name: Authentication
       href: hello-how-it-works-authentication.md
+    - name: WebAuthn APIs
+      href: webauthn-apis.md
 - name: How-to Guides
   items:
   - name: Windows Hello for Business Deployment Overview
@@ -33,8 +35,8 @@
     href: hello-prepare-people-to-use.md
   - name: Deployment Guides
     items:
-    - name: Hybrid Cloud Trust Deployment
-      href: hello-hybrid-cloud-trust.md
+    - name: Hybrid Cloud Kerberos Trust Deployment
+      href: hello-hybrid-cloud-kerberos-trust.md
     - name: Hybrid Azure AD Joined Key Trust
       items: 
       - name: Hybrid Azure AD Joined Key Trust Deployment
