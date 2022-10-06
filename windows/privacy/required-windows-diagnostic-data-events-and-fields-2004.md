@@ -2471,8 +2471,7 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 
 The following fields are available:
 
-- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure. See [wilActivity](#wilactivity).
-
+- **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
 
@@ -2671,6 +2670,19 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+## Common data fields
+
+### Ms.Device.DeviceInventoryChange
+
+Describes the installation state for all hardware and software components available on a particular device.
+
+The following fields are available:
+
+- **action**  The change that was invoked on a device inventory object.
+- **inventoryId**  Device ID used for Compatibility testing
+- **objectInstanceId**  Object identity which is unique within the device scope.
+- **objectType**  Indicates the object type that the event applies to.
+- **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
 ## Component-based servicing events
 
@@ -8212,7 +8224,7 @@ This event measures overall health of UpdateOrchestrator. The data collected wit
 
 The following fields are available:
 
-- **wilActivity**  This struct provides a Windows Internal Library context used for Product and Service diagnostics. See [wilActivity](#wilactivity).
+- **wilActivity**  This struct provides a Windows Internal Library context used for Product and Service diagnostics.
 
 
 ### Microsoft.Windows.Update.Orchestrator.DeferRestart
@@ -8269,7 +8281,7 @@ The following fields are available:
 - **seekerUpdateIdList**  The list of “seeker” update identifiers.
 - **seekerUpdateList**  The list of “seeker” updates.
 - **services**  The list of services that were called during update.
-- **wilActivity**  The activity results. See [wilActivity](#wilactivity).
+- **wilActivity**  The activity results. 
 
 
 ### Microsoft.Windows.Update.Orchestrator.DisplayNeeded
@@ -8575,7 +8587,7 @@ The following fields are available:
 
 - **publisherIntent**  Publisher Intent id associated with the update.
 - **reason**  Reason for EULA acceptance.
-- **update**  Update for which EULA has been accepted. See [update](#update).
+- **update**  Update for which EULA has been accepted.
 
 
 ### Microsoft.Windows.Update.Ux.MusNotification.EnhancedEngagedRebootUxState
