@@ -1,10 +1,10 @@
 ---
 title: Enterprise settings, policies, and app management
 description: The DM client manages the interaction between a device and a server. Learn more about the client-server management workflow.
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
   - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -18,7 +18,7 @@ ms.date: 06/26/2017
 
 The actual management interaction between the device and server is done via the DM client. The DM client communicates with the enterprise management server via DM v1.2 SyncML syntax. The full description of the OMA DM protocol v1.2 can be found at the [OMA website](https://technical.openmobilealliance.org/).
 
-Windows currently supports one MDM server. The DM client that is configured via the enrollment process is granted access to enterprise related settings. Enterprise MDM settings are exposed via various configuration service providers to the DM client. For the list of available configuration service providers, see [Configuration service provider reference](configuration-service-provider-reference.md).
+Windows currently supports one MDM server. The DM client that is configured via the enrollment process is granted access to enterprise related settings. Enterprise MDM settings are exposed via various configuration service providers to the DM client. For the list of available configuration service providers, see [Configuration service provider reference](../mdm/configuration-service-provider-reference.md).
 
 The DM client is configured during the enrollment process to be invoked by the task scheduler to periodically poll the MDM server.
 

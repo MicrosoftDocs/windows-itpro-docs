@@ -1,10 +1,10 @@
 ---
 title: WMI providers supported in Windows 10
 description: Manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service with Windows Management Infrastructure (WMI).
-MS-HAID: 
+MS-HAID:
   - 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
   - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -19,7 +19,7 @@ ms.date: 06/26/2017
 Windows Management Infrastructure (WMI) providers (and the classes they support) are used to manage settings and applications on devices that subscribe to the Mobile Device Management (MDM) service. The following subsections show the list WMI MDM classes that are supported in Windows 10.
 
 > [!NOTE]
-> Applications installed using WMI classes are not removed when the MDM account is removed from device. 
+> Applications installed using WMI classes are not removed when the MDM account is removed from device.
 
 The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here is an example query.
 
@@ -105,7 +105,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 | [**wpcusersettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | Yes     |
 | [**wpcwebsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | Yes     |
 
- 
+
 
 ### Win32 WMI classes
 
@@ -124,7 +124,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 [**Win32\_DiskDrive**](/windows/win32/cimwin32prov/win32-diskdrive)      | Yes
 [**Win32\_DiskPartition**](/windows/win32/cimwin32prov/win32-diskpartition)  |
 [**Win32\_DisplayConfiguration**](/previous-versions//aa394137(v=vs.85)) | Yes
-[**Win32\_DMAChannel**](/windows/win32/cimwin32prov/win32-dmachannel)     | 
+[**Win32\_DMAChannel**](/windows/win32/cimwin32prov/win32-dmachannel)     |
 [**Win32\_DriverVXD**](/previous-versions//aa394141(v=vs.85))      |
 [**Win32\_EncryptableVolume**](/windows/win32/secprov/win32-encryptablevolume) |
 [**Win32\_Environment**](/windows/win32/cimwin32prov/win32-environment)    |
@@ -148,10 +148,10 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 [**Win32\_PageFileSetting**](/windows/win32/cimwin32prov/win32-pagefilesetting) |
 [**Win32\_ParallelPort**](/windows/win32/cimwin32prov/win32-parallelport) |
 [**Win32\_PCMCIAController**](/windows/win32/cimwin32prov/win32-pcmciacontroller) |
-[**Win32\_PhysicalMedia**](/previous-versions/windows/desktop/cimwin32a/win32-physicalmedia)                                   |  
+[**Win32\_PhysicalMedia**](/previous-versions/windows/desktop/cimwin32a/win32-physicalmedia)                                   |
 [**Win32\_PhysicalMemory**](/windows/win32/cimwin32prov/win32-physicalmemory)   | Yes
-[**Win32\_PnPDevice**](/windows/win32/cimwin32prov/win32-pnpdevice)        |  
-[**Win32\_PnPEntity**](/windows/win32/cimwin32prov/win32-pnpentity)        |  
+[**Win32\_PnPDevice**](/windows/win32/cimwin32prov/win32-pnpdevice)        |
+[**Win32\_PnPEntity**](/windows/win32/cimwin32prov/win32-pnpentity)        |
 [**Win32\_PointingDevice**](/windows/win32/cimwin32prov/win32-pointingdevice)   |
 [**Win32\_PortableBattery**](/windows/win32/cimwin32prov/win32-portablebattery)  |
 [**Win32\_PortResource**](/windows/win32/cimwin32prov/win32-portresource)     |
@@ -179,11 +179,11 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 [**Win32\_UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime)          | Yes
 [**Win32\_VideoController**](/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
- 
+
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](../mdm/configuration-service-provider-reference.md)
 
 ## Related Links
 [CIM Video Controller](/windows/win32/cimwin32prov/cim-videocontroller)

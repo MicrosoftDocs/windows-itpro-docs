@@ -1,7 +1,7 @@
 ---
 title: OMA DM protocol support
 description: See how the OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA DM v1.2) as the message payload.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -159,4 +159,4 @@ When using SyncML in OMA DM, there are standard response status codes that are r
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](../mdm/configuration-service-provider-reference.md)
