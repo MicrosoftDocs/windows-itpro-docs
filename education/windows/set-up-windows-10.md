@@ -40,7 +40,7 @@ You can use the following diagram to compare the tools.
 
 ## Related topics
 
-[Take tests in Windows 10](take-tests-in-windows-10.md)
+[Take tests in Windows](take-tests-in-windows.md)
 
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 
