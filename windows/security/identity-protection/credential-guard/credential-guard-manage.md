@@ -25,7 +25,7 @@ appliesto:
 
 ## Default Enablement
 
-Starting with Windows 11 Enterprise 22H2 and Windows 11 Education 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+Starting in **Windows 11 Enterprise, version 22H2** and **Windows 11 Education, version 22H2**, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
 
 ### Requirements for automatic enablement
 
@@ -33,7 +33,7 @@ Windows Defender Credential Guard will be enabled by default when a PC meets the
 
 |Component|Requirement|
 |---|---|
-|Operating System|Windows 11 Enterprise 22H2 or Windows 11 Education 22H2|
+|Operating System|**Windows 11 Enterprise, version 22H2** or **Windows 11 Education, version 22H2**|
 |Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
 |Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2 and Windows 11 Education 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
 
