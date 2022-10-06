@@ -30,7 +30,7 @@ You should now have one or more Windows Defender Application Control (WDAC) poli
 
 Before you deploy your WDAC policies, you must first convert the XML to its binary form. You can do this using the following PowerShell example. You must set the $WDACPolicyXMLFile variable to point to your WDAC policy XML file.
 
-    ```powershell
+   ```powershell
     ## Update the path to your WDAC policy XML
     $WDACPolicyXMLFile = $env:USERPROFILE"\Desktop\MyWDACPolicy.xml"
     [xml]$WDACPolicy = Get-Content -Path $WDACPolicyXMLFile
@@ -46,7 +46,7 @@ Before you deploy your WDAC policies, you must first convert the XML to its bina
     
     ## Binary file will be written to your desktop
     ConvertFrom-CIPolicy -XmlFilePath $WDACPolicyXMLFile -BinaryFilePath $env:USERPROFILE\Desktop\$PolicyBinary
-    ```
+   ```
 
 ## Plan your deployment
 
