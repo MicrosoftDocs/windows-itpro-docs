@@ -2196,7 +2196,10 @@ If you prefer to apply the vulnerable driver blocklist exactly as shown above, f
 2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
 3. Select either the audit only version or the enforced version and rename the file to SiPolicy.p7b
 4. Copy SiPolicy.p7b to %windir%\system32\CodeIntegrity
-5. Run the RefreshPolicy(*Arch*).exe you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
+5. Run the WDAC policy refresh tool you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
+
+> [!NOTE]
+> If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new WDAC policy without reboot.
 
 ## More information
 
