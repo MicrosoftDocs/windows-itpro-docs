@@ -1929,7 +1929,7 @@ The following fields are available:
 - **JackSubType**  A unique ID representing the KS node type of the endpoint.
 - **localEffectClsid**  The COM Class Identifier (CLSID) for the legacy local effect audio processing object.
 - **localEffectModule**  Module name for the legacy local effect audio processing object.
-- **MicArrayGeometry**  Describes the microphone array, including the microphone position, coordinates, type, and frequency range. See [MicArrayGeometry](#micarraygeometry).
+- **MicArrayGeometry**  Describes the microphone array, including the microphone position, coordinates, type, and frequency range.
 - **modeEffectClsid**  The COM Class Identifier (CLSID) for the mode effect audio processing object.
 - **modeEffectModule**  Module name for the mode effect audio processing object.
 - **persistentId**  A unique ID for this endpoint which is retained across migrations.
@@ -3601,7 +3601,7 @@ The following fields are available:
 - **IsDeviceSetupComplete**  Windows Mixed Reality Portal app state of device setup completion.
 - **PackageVersion**  Windows Mixed Reality Portal app package version.
 - **PreviousExecutionState**  Windows Mixed Reality Portal app prior execution state.
-- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID. See [wilActivity](#wilactivity).
+- **wilActivity**  Windows Mixed Reality Portal app wilActivity ID.
 
 
 ### Microsoft.Windows.Shell.HolographicFirstRun.AppLifecycleService_Resuming
