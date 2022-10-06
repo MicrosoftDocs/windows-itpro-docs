@@ -23,7 +23,7 @@ manager: aaroncz
     <a href="#mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
   </dd>
   <dd>
-    <a href="#mixedreality-allowcaptiveportalpeforesignin">MixedReality/AllowCaptivePortalBeforeSignIn</a>
+    <a href="#mixedreality-allowcaptiveportalpeforelogon">MixedReality/AllowCaptivePortalBeforeLogon</a>
   </dd>
   <dd>
     <a href="#mixedreality-allowlaunchuriinsingleappkiosk">MixedReality/AllowLaunchUriInSingleAppKiosk</a>
@@ -103,7 +103,7 @@ Steps to use this policy correctly:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-allowcaptiveportalpeforesignin"></a>**MixedReality/AllowCaptivePortalBeforeSignIn**  
+<a href="" id="mixedreality-allowcaptiveportalpeforelogon"></a>**MixedReality/AllowCaptivePortalBeforeLogon**  
 
 <!--SupportedSKUs-->
 
