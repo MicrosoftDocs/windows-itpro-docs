@@ -7,13 +7,13 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Changes to Windows diagnostic data collection
 
 **Applies to**
-- Windows 11
+- Windows 11, version 21H2 and later
 - Windows 10, version 1903 and later
 - Windows Server 2022
 

@@ -7,6 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
+ms.topic: conceptual
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server

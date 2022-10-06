@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.topic: article
+ms.topic: reference
 ---
 # Windows 10, version 21H1, connection endpoints for non-Enterprise editions
 

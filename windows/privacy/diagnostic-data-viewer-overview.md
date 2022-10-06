@@ -8,14 +8,15 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
 ms.collection: highpri
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Diagnostic Data Viewer Overview
 
 **Applies to**
 
--   Windows 10, version 1803 and later and Windows 11
+- Windows 11, version 21H2 and later  
+- Windows 10, version 1803 and later
 
 ## Introduction
 

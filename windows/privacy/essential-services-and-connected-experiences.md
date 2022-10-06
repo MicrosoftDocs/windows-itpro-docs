@@ -8,7 +8,7 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
 ms.collection: highpri
-
+ms.topic: reference
 ---
 
 # Essential services and connected experiences for Windows

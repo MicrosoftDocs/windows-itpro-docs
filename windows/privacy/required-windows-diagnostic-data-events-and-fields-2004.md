@@ -8,7 +8,7 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
 ms.collection: highpri
-ms.topic: article
+ms.topic: reference
 ---
 
 

@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.topic: article
+ms.topic: conceptual
 ---
 
 # Windows Privacy Compliance:<br />A Guide for IT and Compliance Professionals

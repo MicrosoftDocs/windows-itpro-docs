@@ -8,13 +8,15 @@ author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
 ms.collection: highpri
-ms.topic: article
+ms.topic: reference
 ---
 
 # Windows 10, version 1709 and later and Windows 11 optional diagnostic data
 
 Applies to:
-- Windows 11
+- Windows 11, version 22H2
+- Windows 11, version 21H2
+- Windows 10, version 22H2
 - Windows 10, version 21H2
 - Windows 10, version 21H1
 - Windows 10, version 20H2

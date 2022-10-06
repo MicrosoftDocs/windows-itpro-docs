@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.topic: article
+ms.topic: reference
 ---
 
 # Manage connection endpoints for Windows 11 Enterprise

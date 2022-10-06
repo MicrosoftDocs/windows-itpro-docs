@@ -7,14 +7,14 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview
 
 **Applies to**
 
--   Windows 11
+-   Windows 11, version 21H2 and later
 -   Windows 10, version 1803 and later
 -   Windows Server, version 1803
 -   Windows Server 2019
