@@ -27,12 +27,13 @@ items:
             tocHref: /windows/client-management/
             topicHref: /windows/client-management/
             items:
-              - name: CSP Reference
-                tocHref: /windows/client-management/mdm/
-                topicHref: /windows/client-management/mdm/
               - name: Mobile Device Management
                 tocHref: /windows/client-management/understand/
                 topicHref: /windows/client-management/understand/
+                items:
+                - name: CSP reference
+                  tocHref: /windows/client-management/mdm/
+                  topicHref: /windows/client-management/mdm/
           - name: Privacy
             tocHref: /windows/privacy/
             topicHref: /windows/privacy/
