@@ -39,7 +39,7 @@ Shared PC offers the possibility to enable a **Guest** option on the sign-in scr
 
 Shared PC also offers a **Kiosk** mode, which automatically executes a specific application when the kiosk account signs-in. This is useful in scenarios where the device is accessed for a specific purpose, such as test taking in a school.
 
-:::image type="content" source="./images/win11-sharedpc-kiosk.png" alt-text="Windows 11 sign-in screen with Guest and Kiosk options enabled." border="True":::
+:::image type="content" source="./images/win11se-sharedpc-kiosk.png" alt-text="Windows 11 sign-in screen with Guest and Kiosk options enabled." border="True":::
 
 ## Account management
 
