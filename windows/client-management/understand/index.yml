@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Mobile Device Management # < 60 chars
+title: Mobile device management # < 60 chars
 summary: Find out how to enroll Windows devices and manage company security policies and business applications. # < 160 chars
 
 metadata:
-  title: Mobile Device Management # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Mobile device management # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find out how to enroll Windows devices and manage company security policies and business applications. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   services: windows-10
@@ -37,7 +37,7 @@ landingContent:
             url: mdm-enrollment-of-windows-devices.md
           - text: Automatic enrollment using Azure AD
             url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
-          - text: Automatic enrollment using Group Policy
+          - text: Automatic enrollment using group policy
             url: enroll-a-windows-10-device-automatically-using-group-policy.md
           - text: Bulk enrollment
             url: bulk-enrollment-using-windows-provisioning-tool.md
@@ -66,7 +66,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Configuration service provider reference
-            url: ../mdm/configuration-service-provider-reference.md
+            url: ../mdm/index.yml
       - linkListType: reference
         links:
           - text: Policy CSP
