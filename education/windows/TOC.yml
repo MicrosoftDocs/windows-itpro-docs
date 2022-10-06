@@ -37,7 +37,7 @@ items:
     - name: Configure Take a Test in kiosk mode
       href: edu-take-a-test-kiosk-mode.md
     - name: Configure Shared PC
-      href: /windows/configuration/shared-pc-technical
+      href: /windows/configuration/shared-pc-technical?toc=%2Feducation%2Fwindows%2Ftoc.json&bc=%2Feducation%2Fbreadcrumb%2Ftoc.json
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
     - name: Change Windows edition
@@ -97,5 +97,6 @@ items:
     - name: Take a Test technical reference
       href: take-a-test-app-technical.md
     - name: Shared PC technical reference
-      href: /windows/configuration/shared-pc-technical
+      href: /windows/configuration/shared-pc-technical?toc=%2Feducation%2Fwindows%2Ftoc.json&bc=%2Feducation%2Fbreadcrumb%2Ftoc.json
+
       

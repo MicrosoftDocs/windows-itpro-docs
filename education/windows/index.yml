@@ -88,12 +88,12 @@ landingContent:
         - text: Change Windows editions
           url: change-home-to-edu.md
         - text: Considerations for shared and guest devices
-          url: /windows/configuration/shared-devices-concepts
+          url: /windows/configuration/shared-devices-concepts?toc=%2Feducation%2Fwindows%2Ftoc.json&bc=%2Feducation%2Fbreadcrumb%2Ftoc.json
       - linkListType: how-to-guide
         links:
         - text: Configure Take a Test in kiosk mode
           url: edu-take-a-test-kiosk-mode.md
         - text: Configure Shared PC
-          url: /windows/configuration/shared-pc-technical
+          url: /windows/configuration/shared-pc-technical?toc=%2Feducation%2Fwindows%2Ftoc.json&bc=%2Feducation%2Fbreadcrumb%2Ftoc.json
         - text: "Deploy Minecraft: Education Edition"
           url: get-minecraft-for-education.md
