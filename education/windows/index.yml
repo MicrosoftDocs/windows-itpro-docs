@@ -94,4 +94,4 @@ landingContent:
         - text: Configure Take a Test in kiosk mode
           url: edu-take-a-test-kiosk-mode.md
         - text: Configure Shared PC mode
-          url: ../../windows/configuration/shared-pc-mode-technical.md
+          url: ../../windows/configuration/shared-pc-technical.md
