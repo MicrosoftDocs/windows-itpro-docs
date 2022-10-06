@@ -75,6 +75,12 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Rule>
       <Option>Enabled:Audit Mode</Option>
     </Rule>
+    <Rule>
+      <Option>Disabled:Script Enforcement</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Update Policy No Reboot</Option>
+    </Rule>
   </Rules>
   <!--EKUS-->
   <EKUs />
