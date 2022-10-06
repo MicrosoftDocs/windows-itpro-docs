@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 ms.localizationpriority: medium
-ms.date: 10/19/2020
+ms.date: 11/06/2020
 ---
 
 # Change history for Mobile Device Management documentation
 
-This article lists new and updated articles for the Mobile Device Management (MDM) documentation. Updated articles are those articles that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues aren't listed.
+As of November 2020 This page will no longer be updated. This article lists new and updated articles for the Mobile Device Management (MDM) documentation. Updated articles are those articles that had content addition, removal, or corrections—minor fixes, such as correction of typos, style, or formatting issues aren't listed.
 
 ## November 2020
 
