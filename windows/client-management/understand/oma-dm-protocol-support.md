@@ -159,4 +159,4 @@ When using SyncML in OMA DM, there are standard response status codes that are r
 
 ## Related topics
 
-[Configuration service provider reference](../mdm/configuration-service-provider-reference.md)
+[Configuration service provider reference](../mdm/index.yml)

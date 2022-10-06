@@ -494,4 +494,4 @@ Value type is string. Supported operations are Add, Delete, and Get.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

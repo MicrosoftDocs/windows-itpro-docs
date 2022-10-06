@@ -444,4 +444,4 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -76,4 +76,4 @@ Example to configure: 2018-10-25T18:00:00
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

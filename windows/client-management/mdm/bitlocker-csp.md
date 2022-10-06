@@ -1650,4 +1650,4 @@ The following example is provided to show proper format and shouldn't be taken a
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -206,4 +206,4 @@ The following table shows the Microsoft custom elements that this Configuration 
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

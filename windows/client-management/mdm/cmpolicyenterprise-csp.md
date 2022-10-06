@@ -383,7 +383,7 @@ Adding a host-based mapping policy:
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
 
 

@@ -183,7 +183,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 
 ## Related topics
 
-[Configuration service provider reference](../mdm/configuration-service-provider-reference.md)
+[Configuration service provider reference](../mdm/index.yml)
 
 ## Related Links
 [CIM Video Controller](/windows/win32/cimwin32prov/cim-videocontroller)

@@ -129,7 +129,7 @@ Example:
 
 [Set up Take a Test](/education/windows/take-a-test-multiple-pcs)
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
 
 

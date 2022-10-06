@@ -86,4 +86,4 @@ The following example shows how to add a wired network profile:
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

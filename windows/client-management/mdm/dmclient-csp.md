@@ -845,4 +845,4 @@ The following SyncML shows how to remotely unenroll the device. This command sho
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -136,4 +136,4 @@ NetworkQoSPolicy
 Read more about the XML DDF structure to create this policy by following the links below:
 
 - [More Information about DDF and structure](networkqospolicy-ddf.md)
-- [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
+- [CSP DDF files download](configuration-service-provider-ddf.md)

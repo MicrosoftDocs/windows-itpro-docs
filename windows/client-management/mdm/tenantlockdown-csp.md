@@ -56,4 +56,4 @@ Example scenario:  Henry is the IT admin at Contoso. He deploys 1000 devices suc
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

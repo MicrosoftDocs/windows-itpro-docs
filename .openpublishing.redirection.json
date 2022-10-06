@@ -19691,6 +19691,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/configuration-service-provider-reference.md",
+      "redirect_url": "/windows/client-management/mdm/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/assign-seats.md",
       "redirect_url": "/windows/client-management/understand/assign-seats",
       "redirect_document_id": false

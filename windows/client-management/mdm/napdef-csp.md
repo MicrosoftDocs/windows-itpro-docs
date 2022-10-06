@@ -140,4 +140,4 @@ The following table shows the Microsoft custom elements that this configuration 
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

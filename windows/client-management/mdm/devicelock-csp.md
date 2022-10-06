@@ -312,4 +312,4 @@ The value applied to the device can be queried via the nodes under the **DeviceV
 
 [Policy CSP](policy-configuration-service-provider.md)
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -162,5 +162,5 @@ These features are available only for the device technique. In addition, the par
 ## Related topics
 
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 

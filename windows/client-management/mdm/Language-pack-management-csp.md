@@ -95,4 +95,4 @@ The Language Pack Management CSP allows a way to easily add languages and relate
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

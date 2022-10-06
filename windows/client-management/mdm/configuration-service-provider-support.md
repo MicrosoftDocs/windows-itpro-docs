@@ -1,6 +1,6 @@
 ---
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
+title: Configuration service provider support
+description: Learn more about configuration service provider (CSP) supported scenarios.
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
@@ -12,17 +12,12 @@ ms.date: 09/18/2020
 ms.collection: highpri
 ---
 
-# Configuration service provider reference
+# Configuration service provider support
 
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the device image as a `.provxml` file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For CSP DDF files, see [CSP DDF files download](#csp-ddf-files-download).
-
-
-Additional lists:
-- [List of CSPs supported in HoloLens devices](#hololens)
-- [List of CSPs supported in Microsoft Surface Hub](#surfacehubcspsupport)
-- [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
+- For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
+- For CSP DDF files, see [CSP DDF files download](configuration-service-provider-ddf.md).
 
 <!--StartCSPs-->
 <hr/>
@@ -1006,18 +1001,6 @@ Additional lists:
 
 <hr/>
 <!--EndCSPs-->
-
-## CSP DDF files download
-
-You can download the DDF files for various CSPs from the links below:
-- [Download all the DDF files for Windows 10, version 2004](https://download.microsoft.com/download/4/0/f/40f9ec45-3bea-442c-8afd-21edc1e057d8/Windows10_2004_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1903](https://download.microsoft.com/download/6/F/0/6F019079-6EB0-41B5-88E8-D1CE77DBA27B/Windows10_1903_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1809](https://download.microsoft.com/download/6/A/7/6A735141-5CFA-4C1B-94F4-B292407AF662/Windows10_1809_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1803](https://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1709](https://download.microsoft.com/download/9/7/C/97C6CF99-F75C-475E-AF18-845F8CECCFA4/Windows10_1709_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1607](https://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
-
 
 ## <a href="" id="hololens"></a>CSPs supported in HoloLens devices
 

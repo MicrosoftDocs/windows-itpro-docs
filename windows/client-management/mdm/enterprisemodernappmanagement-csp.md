@@ -720,4 +720,4 @@ Subsequent query for a specific app for its properties.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

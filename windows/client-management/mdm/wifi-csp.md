@@ -250,4 +250,4 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

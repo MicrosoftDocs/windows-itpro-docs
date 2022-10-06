@@ -352,4 +352,4 @@ If the connection to the mail server is initiated with deferred SSL, the mail se
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

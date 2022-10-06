@@ -68,4 +68,4 @@ For information about the MDM policies defined in the Intune security baseline, 
 - [WMI providers supported in Windows 10](wmi-providers-supported-in-windows.md)
 - [Using PowerShell scripting with the WMI Bridge Provider](using-powershell-scripting-with-the-wmi-bridge-provider.md)
 - [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal)
-- [Configuration service provider reference](../mdm/configuration-service-provider-reference.md)
+- [Configuration service provider reference](../mdm/index.yml)

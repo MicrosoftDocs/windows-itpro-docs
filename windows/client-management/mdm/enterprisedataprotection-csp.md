@@ -319,6 +319,6 @@ Supported operation is Get. Value type is integer.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
 

@@ -18,7 +18,7 @@ manager: aaroncz
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsDefenderApplicationGuard** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 This XML is for Windows 10, version 1809 and later.
 

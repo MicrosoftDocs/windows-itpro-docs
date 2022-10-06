@@ -126,5 +126,5 @@ Required. Specifies the network type of the destination network. This can be set
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
  

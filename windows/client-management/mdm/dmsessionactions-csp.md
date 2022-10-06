@@ -127,4 +127,4 @@ Supported operations are Add, Get, Replace, and Delete.
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

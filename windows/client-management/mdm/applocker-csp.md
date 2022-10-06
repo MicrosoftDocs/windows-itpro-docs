@@ -1467,4 +1467,4 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -714,4 +714,4 @@ Add a PFX certificate. The PFX certificate password is encrypted with a custom c
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

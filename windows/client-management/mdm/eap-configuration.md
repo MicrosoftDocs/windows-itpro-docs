@@ -286,4 +286,4 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

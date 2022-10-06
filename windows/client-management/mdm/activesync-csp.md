@@ -290,7 +290,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
 
 

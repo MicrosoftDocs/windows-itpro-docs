@@ -195,4 +195,4 @@ Subject specifies the certificate to search for. For example, to specify that yo
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

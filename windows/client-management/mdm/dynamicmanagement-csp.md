@@ -274,4 +274,4 @@ Get ContextStatus and SignalDefinition from a specific context:
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -178,4 +178,4 @@ Retrieve a specified number of security auditing logs starting from the specifie
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

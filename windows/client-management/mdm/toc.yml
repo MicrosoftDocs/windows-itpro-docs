@@ -1,21 +1,24 @@
 items:
-  - name: Configuration service provider reference
-    expanded: true
+  - name: CSP reference
     href: index.yml
+  - name: CSP DDF files
+    href: configuration-service-provider-ddf.md
+  - name: CSP support
+    href: configuration-service-provider-support.md
+  - name: CSP List
+    expanded: true
     items:
-      - name: CSP Reference
-        href: configuration-service-provider-reference.md
       - name: Policy CSP
         href: policy-configuration-service-provider.md
         items:
           - name: Policy CSP DDF file
             href: policy-ddf-file.md
-          - name: Policies in Policy CSP supported by Group Policy
-            href: policies-in-policy-csp-supported-by-group-policy.md
           - name: Policy CSP support
             items:
             - name: ADMX policies in Policy CSP
               href: policies-in-policy-csp-admx-backed.md
+            - name: Policies in Policy CSP supported by Group Policy
+              href: policies-in-policy-csp-supported-by-group-policy.md
             - name: Policies in Policy CSP supported by HoloLens 2
               href: policies-in-policy-csp-supported-by-hololens2.md
             - name: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite

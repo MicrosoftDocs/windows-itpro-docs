@@ -1597,4 +1597,4 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

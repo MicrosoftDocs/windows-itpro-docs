@@ -226,7 +226,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |[WindowsDefenderApplicationGuard CSP](../mdm/windowsdefenderapplicationguard-csp.md)|Added the following node in Windows 10, version 1803:<li>Settings/AllowVirtualGPU<li>Settings/SaveFilesToHost|
 |[NetworkProxy CSP](../mdm/networkproxy-csp.md)|Added the following node in Windows 10, version 1803:<li>ProxySettingsPerUser|
 |[Accounts CSP](../mdm/accounts-csp.md)|Added a new CSP in Windows 10, version 1803.|
-|[CSP DDF files download](../mdm/configuration-service-provider-reference.md#csp-ddf-files-download)|Added the DDF download of Windows 10, version 1803 configuration service providers.|
+|[CSP DDF files download](../mdm/configuration-service-provider-ddf.md)|Added the DDF download of Windows 10, version 1803 configuration service providers.|
 |[Policy CSP](../mdm/policy-configuration-service-provider.md)|Added the following new policies for Windows 10, version 1803:<li>Bluetooth/AllowPromptedProximalConnections<li>KioskBrowser/EnableEndSessionButton<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers|
 
 ## March 2018
@@ -269,7 +269,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 
 |New or updated article|Description|
 |--- |--- |
-|[Configuration service provider reference](../mdm/configuration-service-provider-reference.md)|Added new section [CSP DDF files download](../mdm/configuration-service-provider-reference.md#csp-ddf-files-download)|
+|[Configuration service provider reference](../mdm/index.yml)|Added new section [CSP DDF files download](../mdm/configuration-service-provider-ddf.md)|
 
 ## November 2017
 

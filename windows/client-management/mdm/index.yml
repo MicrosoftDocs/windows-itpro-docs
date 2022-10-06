@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Configuration Service Provider # < 60 chars
-summary: Find out how to enroll Windows devices and manage company security policies and business applications. # < 160 chars
+summary: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # < 160 chars
 
 metadata:
   title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out how to enroll Windows devices and manage company security policies and business applications. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   services: windows-10
   ms.prod: windows

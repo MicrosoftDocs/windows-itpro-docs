@@ -873,4 +873,4 @@ Supported operations are Get and Execute.
 
 ## See also
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

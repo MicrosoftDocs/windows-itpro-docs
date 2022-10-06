@@ -18,7 +18,7 @@ manager: aaroncz
 
 This topic shows the device description framework (DDF) for the **WindowsAutopilot** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 ```xml
 <NodeName>WindowsAutopilot</NodeName>

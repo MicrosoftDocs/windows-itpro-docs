@@ -227,4 +227,4 @@ Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUp
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
