@@ -32,6 +32,10 @@ The following example shows the SecureAssessment configuration service provider 
 SecureAssessment
 ----LaunchURI
 ----TesterAccount
+----AllowScreenMonitoring
+----RequirePrinting
+----AllowTextSuggestions
+----Assessments
 ```
 <a href="" id="--vendor-msft-secureassessment"></a>**./Vendor/MSFT/SecureAssessment**  
 The root node for the SecureAssessment configuration service provider.
@@ -67,9 +71,63 @@ Added in Windows 10, version 1703. Boolean value that indicates whether keyboard
 
 Supported operations are Get and Replace.
 
+<a href="" id="Assessments"></a>**Assessments**  
+Added in Windows 11, version 22H2. Enables support for multiple assessments. When configured, users can select from a list of assessments. The node accepts an XML string that represents the list of available assessments. 
+
+Supported operations are Add, Delete, Get and Replace.
+
+XML schema
+
+```xml
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AssessmentsRoot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Assessments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Assessment" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="TestName"/>
+                    <xs:element type="xs:string" name="TestUri"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+
+Example:
+```xml
+<?xml version="1.0" encoding="utf-16"?>
+<AssessmentsRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Assessments>
+        <Assessment>
+            <TestName>English exam</TestName>
+            <TestUri>https://contoso.com/english</TestUri>
+        </Assessment>
+        <Assessment>
+            <TestName>Math exam</TestName>
+            <TestUri>https://contoso.com/math</TestUri>
+        </Assessment>
+        <Assessment>
+            <TestName>Geography exam</TestName>
+            <TestUri>https://contoso.com/geography</TestUri>
+        </Assessment>
+    </Assessments>
+</AssessmentsRoot>
+```
+
 ## Related topics
 
-[Set up Take a Test on multiple PCs](/education/windows/take-a-test-multiple-pcs)  
+[Set up Take a Test](/education/windows/take-a-test-multiple-pcs)  
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

@@ -2,8 +2,8 @@
 title: Microsoft Defender SmartScreen overview
 description: Learn how Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
 ms.prod: m365-security
-author: mjcaparas
-ms.author: macapara
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: high
 ms.reviewer: 
 manager: dansimp

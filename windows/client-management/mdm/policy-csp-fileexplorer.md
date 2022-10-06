@@ -46,7 +46,12 @@ manager: aaroncz
   <dd>
     <a href="#fileexplorer-setallowedstoragelocations">FileExplorer/SetAllowedStorageLocations</a>
   </dd>
+  <dd>
+    <a href="#fileexplorer-disablegraphrecentitems">FileExplorer/DisableGraphRecentItems</a>
+  </dd>
 </dl>
+
+
 
 <hr/>
 
@@ -276,10 +281,10 @@ This policy configures the folders that the user can enumerate and access in the
 The following list shows the supported values:
 
 - 0: All folders
-- 15:Desktop, Documents, Pictures, and Downloads
-- 31:Desktop, Documents, Pictures, Downloads, and Network
-- 47:This PC (local drive), [Desktop, Documents, Pictures], and Downloads
-- 63:This PC, [Desktop, Documents, Pictures], Downloads, and Network
+- 15: Desktop, Documents, Pictures, and Downloads
+- 31: Desktop, Documents, Pictures, Downloads, and Network
+- 47: This PC (local drive), [Desktop, Documents, Pictures], and Downloads
+- 63: This PC, [Desktop, Documents, Pictures], Downloads, and Network
 
 <!--/SupportedValues-->
 
@@ -331,7 +336,7 @@ This policy configures the folders that the user can enumerate and access in the
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: all storage locations
+- 0: All storage locations
 - 1: Removable Drives
 - 2: Sync roots
 - 3: Removable Drives, Sync roots, local drive
@@ -342,6 +347,59 @@ The following list shows the supported values:
 ADMX Info:  
 -   GP Friendly name: *Configure which folders the user can enumerate and access to in File Explorer*
 -   GP name: *SetAllowedStorageLocations*
+-   GP path: *File Explorer*
+-   GP ADMX file name: *Explorer.admx*
+
+<!--/ADMXBacked-->
+
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="fileexplorer-disablegraphrecentitems"></a>**FileExplorer/DisableGraphRecentItems**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|Yes|
+|Windows SE|No|Yes|
+|Business|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+
+<!--Description-->
+
+This policy changes whether files from Office.com will be shown in the Recents and Favorites sections on the Home node (previously known as Quick Access) in File Explorer.
+
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: Files from Office.com will display in the Home node
+- 1: No files from Office.com will be retrieved or displayed
+
+<!--/SupportedValues-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Turn off files from Office.com in Quick access view*
+-   GP name: *DisableGraphRecentItems*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *Explorer.admx*
 
