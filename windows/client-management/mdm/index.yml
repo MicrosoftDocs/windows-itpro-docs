@@ -28,17 +28,27 @@ landingContent:
   # Card (optional)
   - title: CSP reference
     linkLists:
-      - linkListType: overview
-        links:
-          - text: Configuration service provider reference
-            url: configuration-service-provider-reference.md
       - linkListType: reference
         links:
-          - text: Policy CSP
-            url: policy-configuration-service-provider.md
-          - text: Policy CSP - Update
-            url: policy-csp-update.md
+          - text: CSP supported scenarios
+            url: configuration-service-provider-support.md
+          - text: CSP DDF Files
+            url: configuration-service-provider-ddf.md
           - text: DynamicManagement CSP
             url: dynamicmanagement-csp.md
           - text: BitLocker CSP
             url: bitlocker-csp.md
+
+  # Card (optional)
+  - title: Policy CSP reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Policy CSP
+            url: policy-configuration-service-provider.md
+          - text: Policy DDF file
+            url: policy-ddf-file.md
+          - text: Policy CSP - Start
+            url: policy-csp-start.md
+          - text: Policy CSP - Update
+            url: policy-csp-update.md

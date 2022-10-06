@@ -20,7 +20,6 @@ A configuration service provider (CSP) is an interface to read, set, modify, or 
 - For CSP DDF files, see [CSP DDF files download](configuration-service-provider-ddf.md).
 
 <!--StartCSPs-->
-<hr/>
 
 ## CSP support
 
