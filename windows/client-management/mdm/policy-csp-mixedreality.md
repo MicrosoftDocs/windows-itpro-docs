@@ -127,11 +127,14 @@ Steps to use this policy correctly:
 <!--Description-->
 This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
 
-MixedReality/AllowCaptivePortalBeforeSignIn
+MixedReality/AllowCaptivePortalBeforeLogon
 
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeLogon`
 
-Bool value
+Int value
+
+- 0: (Default) Off
+- 1: On
 
 <!--/Description-->
 
