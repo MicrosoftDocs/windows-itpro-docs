@@ -1448,7 +1448,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../understand/device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 Allows IT Admins to specify update delays for up to four weeks.
 
@@ -1527,7 +1527,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../understand/device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 Allows IT Admins to specify other upgrade delays for up to eight months.
 
@@ -2463,7 +2463,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../understand/device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
 
 Allows IT Admins to pause updates and upgrades for up to five weeks. Paused deferrals will be reset after five weeks.
 
@@ -2787,7 +2787,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../understand/device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](../device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 Allows the IT admin to set a device to General Availability Channel train.
 

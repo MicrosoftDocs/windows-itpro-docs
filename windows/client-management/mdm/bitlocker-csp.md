@@ -61,7 +61,7 @@ BitLocker
 ```
 
 > [!TIP]
-> Some of the policies here are ADMX-backed policies. For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](../understand/enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](../understand/understanding-admx-backed-policies.md).
+> Some of the policies here are ADMX-backed policies. For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](../enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
 
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**
 Defines the root node for the BitLocker configuration service provider.

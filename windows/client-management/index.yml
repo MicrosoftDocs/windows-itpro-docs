@@ -29,23 +29,40 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Mobile device management (MDM) overview
+            url: mdm-overview.md
+          - text: MDM for device updates
+            url: device-update-management.md
+          - text: Enterprise settings, policies, and app management
+            url: windows-mdm-enterprise-settings.md
           - text: Windows Tools/Administrative Tools
             url: administrative-tools-in-windows-10.md
           - text: Create mandatory user profiles
             url: mandatory-user-profile.md
-          - text: Mobile device management (MDM)
-            url: understand/index.yml
-          - text: MDM for device updates
-            url: understand/device-update-management.md
-          - text: Mobile device enrollment
-            url: understand/mobile-device-enrollment.md
 
-  # Card (optional)
-  - title: CSP reference documentation
+  - title: Device enrollment
     linkLists:
       - linkListType: overview
         links:
-          - text: Configuration service provider reference
+          - text: Mobile device enrollment
+            url: mobile-device-enrollment.md
+      - linkListType: concept
+        links:
+          - text: Enroll Windows devices
+            url: mdm-enrollment-of-windows-devices.md
+          - text: Automatic enrollment using Azure AD
+            url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
+          - text: Automatic enrollment using group policy
+            url: enroll-a-windows-10-device-automatically-using-group-policy.md
+          - text: Bulk enrollment
+            url: bulk-enrollment-using-windows-provisioning-tool.md
+
+  # Card (optional)
+  - title: Configuration service provider reference
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: CSP reference
             url: mdm/index.yml
           - text: DynamicManagement CSP
             url: mdm/dynamicmanagement-csp.md

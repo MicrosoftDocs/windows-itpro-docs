@@ -19677,17 +19677,17 @@
     },
     {
       "source_path": "windows/client-management/mdm/change-history-for-mdm-documentation.md",
-      "redirect_url": "/windows/client-management/understand/change-history-for-mdm-documentation",
+      "redirect_url": "/windows/client-management/change-history-for-mdm-documentation",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/add-an-azure-ad-tenant-and-azure-ad-subscription.md",
-      "redirect_url": "/windows/client-management/understand/add-an-azure-ad-tenant-and-azure-ad-subscription",
+      "redirect_url": "/windows/client-management/add-an-azure-ad-tenant-and-azure-ad-subscription",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/appv-deploy-and-config.md",
-      "redirect_url": "/windows/client-management/understand/appv-deploy-and-config",
+      "redirect_url": "/windows/client-management/appv-deploy-and-config",
       "redirect_document_id": false
     },
     {
@@ -19697,232 +19697,232 @@
     },
     {
       "source_path": "windows/client-management/mdm/assign-seats.md",
-      "redirect_url": "/windows/client-management/understand/assign-seats",
+      "redirect_url": "/windows/client-management/assign-seats",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/azure-active-directory-integration-with-mdm.md",
-      "redirect_url": "/windows/client-management/understand/azure-active-directory-integration-with-mdm",
+      "redirect_url": "/windows/client-management/azure-active-directory-integration-with-mdm",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md",
-      "redirect_url": "/windows/client-management/understand/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal",
+      "redirect_url": "/windows/client-management/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/bulk-assign-and-reclaim-seats-from-user.md",
-      "redirect_url": "/windows/client-management/understand/bulk-assign-and-reclaim-seats-from-user",
+      "redirect_url": "/windows/client-management/bulk-assign-and-reclaim-seats-from-user",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/bulk-enrollment-using-windows-provisioning-tool.md",
-      "redirect_url": "/windows/client-management/understand/bulk-enrollment-using-windows-provisioning-tool",
+      "redirect_url": "/windows/client-management/bulk-enrollment-using-windows-provisioning-tool",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/certificate-authentication-device-enrollment.md",
-      "redirect_url": "/windows/client-management/understand/certificate-authentication-device-enrollment",
+      "redirect_url": "/windows/client-management/certificate-authentication-device-enrollment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/certificate-renewal-windows-mdm.md",
-      "redirect_url": "/windows/client-management/understand/certificate-renewal-windows-mdm",
+      "redirect_url": "/windows/client-management/certificate-renewal-windows-mdm",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/config-lock.md",
-      "redirect_url": "/windows/client-management/understand/config-lock",
+      "redirect_url": "/windows/client-management/config-lock",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/data-structures-windows-store-for-business.md",
-      "redirect_url": "/windows/client-management/understand/data-structures-windows-store-for-business",
+      "redirect_url": "/windows/client-management/data-structures-windows-store-for-business",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/device-update-management.md",
-      "redirect_url": "/windows/client-management/understand/device-update-management",
+      "redirect_url": "/windows/client-management/device-update-management",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/diagnose-mdm-failures-in-windows-10.md",
-      "redirect_url": "/windows/client-management/understand/diagnose-mdm-failures-in-windows-10",
+      "redirect_url": "/windows/client-management/diagnose-mdm-failures-in-windows-10",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/disconnecting-from-mdm-unenrollment.md",
-      "redirect_url": "/windows/client-management/understand/disconnecting-from-mdm-unenrollment",
+      "redirect_url": "/windows/client-management/disconnecting-from-mdm-unenrollment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/dmprocessconfigxmlfiltered.md",
-      "redirect_url": "/windows/client-management/understand/dmprocessconfigxmlfiltered",
+      "redirect_url": "/windows/client-management/dmprocessconfigxmlfiltered",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/enable-admx-backed-policies-in-mdm.md",
-      "redirect_url": "/windows/client-management/understand/enable-admx-backed-policies-in-mdm",
+      "redirect_url": "/windows/client-management/enable-admx-backed-policies-in-mdm",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy.md",
-      "redirect_url": "/windows/client-management/understand/enroll-a-windows-10-device-automatically-using-group-policy",
+      "redirect_url": "/windows/client-management/enroll-a-windows-10-device-automatically-using-group-policy",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/enterprise-app-management.md",
-      "redirect_url": "/windows/client-management/understand/enterprise-app-management",
+      "redirect_url": "/windows/client-management/enterprise-app-management",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/esim-enterprise-management.md",
-      "redirect_url": "/windows/client-management/understand/esim-enterprise-management",
+      "redirect_url": "/windows/client-management/esim-enterprise-management",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/federated-authentication-device-enrollment.md",
-      "redirect_url": "/windows/client-management/understand/federated-authentication-device-enrollment",
+      "redirect_url": "/windows/client-management/federated-authentication-device-enrollment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-inventory.md",
-      "redirect_url": "/windows/client-management/understand/get-inventory",
+      "redirect_url": "/windows/client-management/get-inventory",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-localized-product-details.md",
-      "redirect_url": "/windows/client-management/understand/get-localized-product-details",
+      "redirect_url": "/windows/client-management/get-localized-product-details",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-offline-license.md",
-      "redirect_url": "/windows/client-management/understand/get-offline-license",
+      "redirect_url": "/windows/client-management/get-offline-license",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-product-details.md",
-      "redirect_url": "/windows/client-management/understand/get-product-details",
+      "redirect_url": "/windows/client-management/get-product-details",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-product-package.md",
-      "redirect_url": "/windows/client-management/understand/get-product-package",
+      "redirect_url": "/windows/client-management/get-product-package",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-product-packages.md",
-      "redirect_url": "/windows/client-management/understand/get-product-packages",
+      "redirect_url": "/windows/client-management/get-product-packages",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-seat.md",
-      "redirect_url": "/windows/client-management/understand/get-seat",
+      "redirect_url": "/windows/client-management/get-seat",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-seats-assigned-to-a-user.md",
-      "redirect_url": "/windows/client-management/understand/get-seats-assigned-to-a-user",
+      "redirect_url": "/windows/client-management/get-seats-assigned-to-a-user",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/get-seats.md",
-      "redirect_url": "/windows/client-management/understand/get-seats",
+      "redirect_url": "/windows/client-management/get-seats",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/implement-server-side-mobile-application-management.md",
-      "redirect_url": "/windows/client-management/understand/implement-server-side-mobile-application-management",
+      "redirect_url": "/windows/client-management/implement-server-side-mobile-application-management",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/management-tool-for-windows-store-for-business.md",
-      "redirect_url": "/windows/client-management/understand/management-tool-for-windows-store-for-business",
+      "redirect_url": "/windows/client-management/management-tool-for-windows-store-for-business",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/mdm-enrollment-of-windows-devices.md",
-      "redirect_url": "/windows/client-management/understand/mdm-enrollment-of-windows-devices",
+      "redirect_url": "/windows/client-management/mdm-enrollment-of-windows-devices",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/mdm-overview.md",
-      "redirect_url": "/windows/client-management/understand/mdm-overview",
+      "redirect_url": "/windows/client-management/mdm-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/mobile-device-enrollment.md",
-      "redirect_url": "/windows/client-management/understand/mobile-device-enrollment",
+      "redirect_url": "/windows/client-management/mobile-device-enrollment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/new-in-windows-mdm-enrollment-management.md",
-      "redirect_url": "/windows/client-management/understand/new-in-windows-mdm-enrollment-management",
+      "redirect_url": "/windows/client-management/new-in-windows-mdm-enrollment-management",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/oma-dm-protocol-support.md",
-      "redirect_url": "/windows/client-management/understand/oma-dm-protocol-support",
+      "redirect_url": "/windows/client-management/oma-dm-protocol-support",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/on-premise-authentication-device-enrollment.md",
-      "redirect_url": "/windows/client-management/understand/on-premise-authentication-device-enrollment",
+      "redirect_url": "/windows/client-management/on-premise-authentication-device-enrollment",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/push-notification-windows-mdm.md",
-      "redirect_url": "/windows/client-management/understand/push-notification-windows-mdm",
+      "redirect_url": "/windows/client-management/push-notification-windows-mdm",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/reclaim-seat-from-user.md",
-      "redirect_url": "/windows/client-management/understand/reclaim-seat-from-user",
+      "redirect_url": "/windows/client-management/reclaim-seat-from-user",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/register-your-free-azure-active-directory-subscription.md",
-      "redirect_url": "/windows/client-management/understand/register-your-free-azure-active-directory-subscription",
+      "redirect_url": "/windows/client-management/register-your-free-azure-active-directory-subscription",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/rest-api-reference-windows-store-for-business.md",
-      "redirect_url": "/windows/client-management/understand/rest-api-reference-windows-store-for-business",
+      "redirect_url": "/windows/client-management/rest-api-reference-windows-store-for-business",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/server-requirements-windows-mdm.md",
-      "redirect_url": "/windows/client-management/understand/server-requirements-windows-mdm",
+      "redirect_url": "/windows/client-management/server-requirements-windows-mdm",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/structure-of-oma-dm-provisioning-files.md",
-      "redirect_url": "/windows/client-management/understand/structure-of-oma-dm-provisioning-files",
+      "redirect_url": "/windows/client-management/structure-of-oma-dm-provisioning-files",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/understanding-admx-backed-policies.md",
-      "redirect_url": "/windows/client-management/understand/understanding-admx-backed-policies",
+      "redirect_url": "/windows/client-management/understanding-admx-backed-policies",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider.md",
-      "redirect_url": "/windows/client-management/understand/using-powershell-scripting-with-the-wmi-bridge-provider",
+      "redirect_url": "/windows/client-management/using-powershell-scripting-with-the-wmi-bridge-provider",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/win32-and-centennial-app-policy-configuration.md",
-      "redirect_url": "/windows/client-management/understand/win32-and-centennial-app-policy-configuration",
+      "redirect_url": "/windows/client-management/win32-and-centennial-app-policy-configuration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/windows-mdm-enterprise-settings.md",
-      "redirect_url": "/windows/client-management/understand/windows-mdm-enterprise-settings",
+      "redirect_url": "/windows/client-management/windows-mdm-enterprise-settings",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/wmi-providers-supported-in-windows.md",
-      "redirect_url": "/windows/client-management/understand/wmi-providers-supported-in-windows",
+      "redirect_url": "/windows/client-management/wmi-providers-supported-in-windows",
       "redirect_document_id": false
     }
   ]
