@@ -33,15 +33,10 @@ This [table][INT-1] describes the ideal scenarios for using either option. It's 
 :::image type="content" source="./images/enroll.png" alt-text="The device lifecycle for Intune-managed devices - enrollment" border="false":::
 
 Select one of the following options to learn the next steps about the enrollment method you chose:
-
-> [!div class="nextstepaction"]
-> [Next: Automatic Intune enrollment via Azure AD join >](enroll-aadj.md)
-
-> [!div class="nextstepaction"]
-> [Next: Bulk enrollment with provisioning packages >](enroll-package.md)
-
-> [!div class="nextstepaction"]
-> [Next: Enroll devices with Windows Autopilot >](enroll-autopilot.md)
+> [!div class="op_single_selector"]
+> - [Automatic Intune enrollment via Azure AD join](enroll-aadj.md)
+> - [Bulk enrollment with provisioning packages](enroll-package.md)
+> - [Enroll devices with Windows Autopilot ](enroll-autopilot.md)
 
 <!-- Reference links in article -->
 
