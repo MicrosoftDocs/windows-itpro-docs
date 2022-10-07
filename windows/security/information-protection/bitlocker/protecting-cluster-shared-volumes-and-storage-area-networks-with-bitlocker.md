@@ -18,7 +18,7 @@ ms.custom: bitlocker
 **Applies to**
 -   Windows Server 2016
 
-This topic describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
+This article describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
 
 BitLocker protects both physical disk resources and cluster shared volumes version 2.0 (CSV2.0). BitLocker on clustered volumes provides an extra layer of protection that can be used by administrators wishing to protect sensitive, highly available data. The administrators use this extra layer of protection to increase the security to resources. Only certain user accounts provided access to unlock the BitLocker volume.
 
