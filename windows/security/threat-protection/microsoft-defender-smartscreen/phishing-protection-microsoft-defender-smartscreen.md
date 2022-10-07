@@ -117,10 +117,10 @@ To better help you protect your organization, we recommend turning on and using 
 
 ## Related articles
 
-- [Microsoft Defender SmartScreen](microsoft-defender-smartscreen-overview)
+- [Microsoft Defender SmartScreen](microsoft-defender-smartscreen-overview.md)
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
-- [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings)
+- [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md)
 - [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference)
 
 ------------
