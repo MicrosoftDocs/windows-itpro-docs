@@ -30,7 +30,7 @@ items:
     - name: Configuration service providers (CSPs)
       expanded: true
       items:
-      - name: Policy CSP
+      - name: Policy
         href: policy-configuration-service-provider.md
         items:
           - name: Policy CSP DDF file
@@ -531,336 +531,336 @@ items:
             href: policy-csp-windowssandbox.md
           - name: WirelessDisplay
             href: policy-csp-wirelessdisplay.md
-      - name: AccountManagement CSP
+      - name: AccountManagement
         href: accountmanagement-csp.md
         items:
           - name: AccountManagement DDF file
             href: accountmanagement-ddf.md
-      - name: Accounts CSP
+      - name: Accounts
         href: accounts-csp.md
         items:
           - name: Accounts DDF file
             href: accounts-ddf-file.md
-      - name: ActiveSync CSP
+      - name: ActiveSync
         href: activesync-csp.md
         items:
           - name: ActiveSync DDF file
             href: activesync-ddf-file.md
-      - name: AllJoynManagement CSP
+      - name: AllJoynManagement
         href: alljoynmanagement-csp.md
         items:
           - name: AllJoynManagement DDF
             href: alljoynmanagement-ddf.md
-      - name: APPLICATION CSP
+      - name: APPLICATION
         href: application-csp.md
-      - name: ApplicationControl CSP
+      - name: ApplicationControl
         href: applicationcontrol-csp.md
         items:
           - name: ApplicationControl DDF file
             href: applicationcontrol-csp-ddf.md
-      - name: AppLocker CSP
+      - name: AppLocker
         href: applocker-csp.md
         items:
           - name: AppLocker DDF file
             href: applocker-ddf-file.md
           - name: AppLocker XSD
             href: applocker-xsd.md
-      - name: AssignedAccess CSP
+      - name: AssignedAccess
         href: assignedaccess-csp.md
         items:
           - name: AssignedAccess DDF file
             href: assignedaccess-ddf.md
-      - name: BitLocker CSP
+      - name: BitLocker
         href: bitlocker-csp.md
         items:
           - name: BitLocker DDF file
             href: bitlocker-ddf-file.md
-      - name: CellularSettings CSP
+      - name: CellularSettings
         href: cellularsettings-csp.md
-      - name: CertificateStore CSP
+      - name: CertificateStore
         href: certificatestore-csp.md
         items:
           - name: CertificateStore DDF file
             href: certificatestore-ddf-file.md
-      - name: CleanPC CSP
+      - name: CleanPC
         href: cleanpc-csp.md
         items:
           - name: CleanPC DDF
             href: cleanpc-ddf.md
-      - name: ClientCertificateInstall CSP
+      - name: ClientCertificateInstall
         href: clientcertificateinstall-csp.md
         items:
           - name: ClientCertificateInstall DDF file
             href: clientcertificateinstall-ddf-file.md
-      - name: CM_CellularEntries CSP
+      - name: CM_CellularEntries
         href: cm-cellularentries-csp.md
-      - name: CMPolicy CSP
+      - name: CMPolicy
         href: cmpolicy-csp.md
-      - name: CMPolicyEnterprise CSP
+      - name: CMPolicyEnterprise
         href: cmpolicyenterprise-csp.md
         items:
           - name: CMPolicyEnterprise DDF file
             href: cmpolicyenterprise-ddf-file.md
-      - name: CustomDeviceUI CSP
+      - name: CustomDeviceUI
         href: customdeviceui-csp.md
         items:
           - name: CustomDeviceUI DDF file
             href: customdeviceui-ddf.md
-      - name: Defender CSP
+      - name: Defender
         href: defender-csp.md
         items:
           - name: Defender DDF file
             href: defender-ddf.md
-      - name: DevDetail CSP
+      - name: DevDetail
         href: devdetail-csp.md
         items:
           - name: DevDetail DDF file
             href: devdetail-ddf-file.md
-      - name: DeveloperSetup CSP
+      - name: DeveloperSetup
         href: developersetup-csp.md
         items:
           - name: DeveloperSetup DDF
             href: developersetup-ddf.md
-      - name: DeviceLock CSP
+      - name: DeviceLock
         href: devicelock-csp.md
         items:
           - name: DeviceLock DDF file
             href: devicelock-ddf-file.md
-      - name: DeviceManageability CSP
+      - name: DeviceManageability
         href: devicemanageability-csp.md
         items:
           - name: DeviceManageability DDF
             href: devicemanageability-ddf.md
-      - name: DeviceStatus CSP
+      - name: DeviceStatus
         href: devicestatus-csp.md
         items:
           - name: DeviceStatus DDF
             href: devicestatus-ddf.md
-      - name: DevInfo CSP
+      - name: DevInfo
         href: devinfo-csp.md
         items:
           - name: DevInfo DDF file
             href: devinfo-ddf-file.md
-      - name: DiagnosticLog CSP
+      - name: DiagnosticLog
         href: diagnosticlog-csp.md
         items:
           - name: DiagnosticLog DDF file
             href: diagnosticlog-ddf.md
-      - name: DMAcc CSP
+      - name: DMAcc
         href: dmacc-csp.md
         items:
           - name: DMAcc DDF file
             href: dmacc-ddf-file.md
-      - name: DMClient CSP
+      - name: DMClient
         href: dmclient-csp.md
         items:
           - name: DMClient DDF file
             href: dmclient-ddf-file.md
-      - name: DMSessionActions CSP
+      - name: DMSessionActions
         href: dmsessionactions-csp.md
         items:
           - name: DMSessionActions DDF file
             href: dmsessionactions-ddf.md
-      - name: DynamicManagement CSP
+      - name: DynamicManagement
         href: dynamicmanagement-csp.md
         items:
           - name: DynamicManagement DDF file
             href: dynamicmanagement-ddf.md
-      - name: EMAIL2 CSP
+      - name: EMAIL2
         href: email2-csp.md
         items:
           - name: EMAIL2 DDF file
             href: email2-ddf-file.md
-      - name: EnrollmentStatusTracking CSP
+      - name: EnrollmentStatusTracking
         href: enrollmentstatustracking-csp.md
         items:
           - name: EnrollmentStatusTracking DDF file
             href: enrollmentstatustracking-csp-ddf.md
-      - name: EnterpriseAPN CSP
+      - name: EnterpriseAPN
         href: enterpriseapn-csp.md
         items:
           - name: EnterpriseAPN DDF
             href: enterpriseapn-ddf.md
-      - name: EnterpriseAppVManagement CSP
+      - name: EnterpriseAppVManagement
         href: enterpriseappvmanagement-csp.md
         items:
           - name: EnterpriseAppVManagement DDF file
             href: enterpriseappvmanagement-ddf.md
-      - name: EnterpriseDataProtection CSP
+      - name: EnterpriseDataProtection
         href: enterprisedataprotection-csp.md
         items:
           - name: EnterpriseDataProtection DDF file
             href: enterprisedataprotection-ddf-file.md
-      - name: EnterpriseDesktopAppManagement CSP
+      - name: EnterpriseDesktopAppManagement
         href: enterprisedesktopappmanagement-csp.md
         items:
           - name: EnterpriseDesktopAppManagement DDF
             href: enterprisedesktopappmanagement-ddf-file.md
           - name: EnterpriseDesktopAppManagement XSD
             href: enterprisedesktopappmanagement2-xsd.md
-      - name: EnterpriseModernAppManagement CSP
+      - name: EnterpriseModernAppManagement
         href: enterprisemodernappmanagement-csp.md
         items:
           - name: EnterpriseModernAppManagement DDF
             href: enterprisemodernappmanagement-ddf.md
           - name: EnterpriseModernAppManagement XSD
             href: enterprisemodernappmanagement-xsd.md
-      - name: eUICCs CSP
+      - name: eUICCs
         href: euiccs-csp.md
         items:
           - name: eUICCs DDF file
             href: euiccs-ddf-file.md
-      - name: Firewall CSP
+      - name: Firewall
         href: firewall-csp.md
         items:
           - name: Firewall DDF file
             href: firewall-ddf-file.md
-      - name: HealthAttestation CSP
+      - name: HealthAttestation
         href: healthattestation-csp.md
         items:
           - name: HealthAttestation DDF
             href: healthattestation-ddf.md
-      - name: Local Administrator Password Solution CSP
+      - name: Local Administrator Password Solution
         href: laps-csp.md
         items:
           - name: Local Administrator Password Solution DDF
             href: laps-ddf-file.md
-      - name: MultiSIM CSP
+      - name: MultiSIM
         href: multisim-csp.md
         items:
           - name: MultiSIM DDF file
             href: multisim-ddf.md
-      - name: NAP CSP
+      - name: NAP
         href: nap-csp.md
-      - name: NAPDEF CSP
+      - name: NAPDEF
         href: napdef-csp.md
-      - name: NetworkProxy CSP
+      - name: NetworkProxy
         href: networkproxy-csp.md
         items:
           - name: NetworkProxy DDF file
             href: networkproxy-ddf.md
-      - name: NetworkQoSPolicy CSP
+      - name: NetworkQoSPolicy
         href: networkqospolicy-csp.md
         items:
           - name: NetworkQoSPolicy DDF file
             href: networkqospolicy-ddf.md
-      - name: NodeCache CSP
+      - name: NodeCache
         href: nodecache-csp.md
         items:
           - name: NodeCache DDF file
             href: nodecache-ddf-file.md
-      - name: Office CSP
+      - name: Office
         href: office-csp.md
         items:
           - name: Office DDF
             href: office-ddf.md
-      - name: PassportForWork CSP
+      - name: PassportForWork
         href: passportforwork-csp.md
         items:
           - name: PassportForWork DDF file
             href: passportforwork-ddf.md
-      - name: PersonalDataEncryption CSP
+      - name: PersonalDataEncryption
         href: personaldataencryption-csp.md
         items:
           - name: PersonalDataEncryption DDF file
             href: personaldataencryption-ddf-file.md
-      - name: Personalization CSP
+      - name: Personalization
         href: personalization-csp.md
         items:
           - name: Personalization DDF file
             href: personalization-ddf.md
-      - name: Provisioning CSP
+      - name: Provisioning
         href: provisioning-csp.md
-      - name: PXLOGICAL CSP
+      - name: PXLOGICAL
         href: pxlogical-csp.md
-      - name: Reboot CSP
+      - name: Reboot
         href: reboot-csp.md
         items:
           - name: Reboot DDF file
             href: reboot-ddf-file.md
-      - name: RemoteFind CSP
+      - name: RemoteFind
         href: remotefind-csp.md
         items:
           - name: RemoteFind DDF file
             href: remotefind-ddf-file.md
-      - name: RemoteWipe CSP
+      - name: RemoteWipe
         href: remotewipe-csp.md
         items:
           - name: RemoteWipe DDF file
             href: remotewipe-ddf-file.md
-      - name: Reporting CSP
+      - name: Reporting
         href: reporting-csp.md
         items:
           - name: Reporting DDF file
             href: reporting-ddf-file.md
-      - name: RootCATrustedCertificates CSP
+      - name: RootCATrustedCertificates
         href: rootcacertificates-csp.md
         items:
           - name: RootCATrustedCertificates DDF file
             href: rootcacertificates-ddf-file.md
-      - name: SecureAssessment CSP
+      - name: SecureAssessment
         href: secureassessment-csp.md
         items:
           - name: SecureAssessment DDF file
             href: secureassessment-ddf-file.md
-      - name: SecurityPolicy CSP
+      - name: SecurityPolicy
         href: securitypolicy-csp.md
-      - name: SharedPC CSP
+      - name: SharedPC
         href: sharedpc-csp.md
         items:
           - name: SharedPC DDF file
             href: sharedpc-ddf-file.md
-      - name: Storage CSP
+      - name: Storage
         href: storage-csp.md
         items:
           - name: Storage DDF file
             href: storage-ddf-file.md
-      - name: SUPL CSP
+      - name: SUPL
         href: supl-csp.md
         items:
           - name: SUPL DDF file
             href: supl-ddf-file.md
-      - name: SurfaceHub CSP
+      - name: SurfaceHub
         href: surfacehub-csp.md
         items:
           - name: SurfaceHub DDF file
             href: surfacehub-ddf-file.md
-      - name: TenantLockdown CSP
+      - name: TenantLockdown
         href: tenantlockdown-csp.md
         items:
           - name: TenantLockdown DDF file
             href: tenantlockdown-ddf.md
-      - name: TPMPolicy CSP
+      - name: TPMPolicy
         href: tpmpolicy-csp.md
         items:
           - name: TPMPolicy DDF file
             href: tpmpolicy-ddf-file.md
-      - name: UEFI CSP
+      - name: UEFI
         href: uefi-csp.md
         items:
           - name: UEFI DDF file
             href: uefi-ddf.md
-      - name: UnifiedWriteFilter CSP
+      - name: UnifiedWriteFilter
         href: unifiedwritefilter-csp.md
         items:
           - name: UnifiedWriteFilter DDF file
             href: unifiedwritefilter-ddf.md
-      - name: UniversalPrint CSP
+      - name: UniversalPrint
         href: universalprint-csp.md
         items:
           - name: UniversalPrint DDF file
             href: universalprint-ddf-file.md
-      - name: Update CSP
+      - name: Update
         href: update-csp.md
         items:
           - name: Update DDF file
             href: update-ddf-file.md
-      - name: VPN CSP
+      - name: VPN
         href: vpn-csp.md
         items:
           - name: VPN DDF file
             href: vpn-ddf-file.md
-      - name: VPNv2 CSP
+      - name: VPNv2
         href: vpnv2-csp.md
         items:
           - name: VPNv2 DDF file
@@ -869,46 +869,46 @@ items:
             href: vpnv2-profile-xsd.md
           - name: EAP configuration
             href: eap-configuration.md
-      - name: w4 APPLICATION CSP
+      - name: w4 APPLICATION
         href: w4-application-csp.md
-      - name: w7 APPLICATION CSP
+      - name: w7 APPLICATION
         href: w7-application-csp.md
-      - name: WiFi CSP
+      - name: WiFi
         href: wifi-csp.md
         items:
           - name: WiFi DDF file
             href: wifi-ddf-file.md
-      - name: Win32AppInventory CSP
+      - name: Win32AppInventory
         href: win32appinventory-csp.md
         items:
           - name: Win32AppInventory DDF file
             href: win32appinventory-ddf-file.md
-      - name: Win32CompatibilityAppraiser CSP
+      - name: Win32CompatibilityAppraiser
         href: win32compatibilityappraiser-csp.md
         items:
           - name: Win32CompatibilityAppraiser DDF file
             href: win32compatibilityappraiser-ddf.md
-      - name: WindowsAdvancedThreatProtection CSP
+      - name: WindowsAdvancedThreatProtection
         href: windowsadvancedthreatprotection-csp.md
         items:
           - name: WindowsAdvancedThreatProtection DDF file
             href: windowsadvancedthreatprotection-ddf.md
-      - name: WindowsAutopilot CSP
+      - name: WindowsAutopilot
         href: windowsautopilot-csp.md
         items:
           - name: WindowsAutopilot DDF file
             href: windowsautopilot-ddf-file.md
-      - name: WindowsDefenderApplicationGuard CSP
+      - name: WindowsDefenderApplicationGuard
         href: windowsdefenderapplicationguard-csp.md
         items:
           - name: WindowsDefenderApplicationGuard DDF file
             href: windowsdefenderapplicationguard-ddf-file.md
-      - name: WindowsLicensing CSP
+      - name: WindowsLicensing
         href: windowslicensing-csp.md
         items:
           - name: WindowsLicensing DDF file
             href: windowslicensing-ddf-file.md
-      - name: WiredNetwork CSP
+      - name: WiredNetwork
         href: wirednetwork-csp.md
         items:
           - name: WiredNetwork DDF file
