@@ -24,8 +24,8 @@ The customizations offered by Shared PC are listed in the following table.
 
 | Area Name | Setting name and description|
 |---|---|
-|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local GPO. For a detailed list of settings enabled by Shared PC Mode, see [Technical Guide](configuration/shared-pc-technical.md#setedupolicy#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync)</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
-| Education policies | **SetEduPolicies**: when enabled, specific settings designed for Education devices are configured in the local GPO.<li>For a detailed list of settings enabled SetEduPolicies, see [Technical Guide](configuration/shared-pc-technical.md#setedupolicy)</li><li>This setting controls the API:[IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)|
+|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local GPO. For a detailed list of settings enabled by Shared PC Mode, see the [Shared PC technical reference](shared-pc-technical.md#setedupolicy#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync).</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
+| Education policies | **SetEduPolicies**: when enabled, specific settings designed for Education devices are configured in the local GPO.<li>For a detailed list of settings enabled SetEduPolicies, see [Shared PC technical reference](shared-pc-technical.md#setedupolicy)</li><li>This setting controls the API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)|
 | Account models | **AccountModel**: this option controls which types of users can sign-in to the device, and can enable the Guest and Kiosk account options. |
 | Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings control the behavior of account manager: <li> **DeletionPolicy**</li><li>**DiskLevelDeletion**</li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li>|
 | Power Management | **SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the local GPO. This policy ensures that devices wake during the maintenance period. For a detailed list of settings enabled SetPowerPolicies, see [Technical Guide]</li>|
@@ -50,7 +50,7 @@ Follow the instructions below to configure your devices, selecting the option th
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Shared PC`**:
 
-PICTURE HERE
+:::image type="content" source="./images/shared-pc-intune.png" alt-text="Shared PC policies in the Intune settings catalog." border="True":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
@@ -60,7 +60,7 @@ Shared PC can be configured using a provisioning package.
 
 For a list and description of CSP settings exposed in Windows Configuration Designer, see the [SharedPC WCD reference][WIN-4].
 
-PICTURE HERE
+:::image type="content" source="./images/shared-pc-wcd.png" alt-text="Shared PC policies in WCD." border="False":::
 
 [Create a provisioning package][WIN-1] using WCD and follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
 
@@ -80,32 +80,31 @@ Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider
 > 1. Run the script in the PowerShell session
 
 Edit the following sample PowerShell script to customize the settings that you want to configure:
-
-    ```powershell
-    $namespaceName = "root\cimv2\mdm\dmmap"
-    $parentID="./Vendor/MSFT/Policy/Config"
-    $className = "MDM_SharedPC"
-    $cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
-    if (-not ($cimObject)) {
-       $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
-    }
-    $cimObject.EnableSharedPCMode = $True
-    $cimObject.SetEduPolicies = $True
-    $cimObject.SetPowerPolicies = $True
-    $cimObject.MaintenanceStartTime = 0
-    $cimObject.SignInOnResume = $True
-    $cimObject.SleepTimeout = 0
-    $cimObject.EnableAccountManager = $True
-    $cimObject.AccountModel = 2
-    $cimObject.DeletionPolicy = 1
-    $cimObject.DiskLevelDeletion = 25
-    $cimObject.DiskLevelCaching = 50
-    $cimObject.RestrictLocalStorage = $False
-    $cimObject.KioskModeAUMID = ""
-    $cimObject.KioskModeUserTileDisplayText = ""
-    $cimObject.InactiveThreshold = 0
-    Set-CimInstance -CimInstance $cimObject
-    ```
+```powershell
+$namespaceName = "root\cimv2\mdm\dmmap"
+$parentID="./Vendor/MSFT/Policy/Config"
+$className = "MDM_SharedPC"
+$cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
+if (-not ($cimObject)) {
+   $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
+}
+$cimObject.EnableSharedPCMode = $True
+$cimObject.SetEduPolicies = $True
+$cimObject.SetPowerPolicies = $True
+$cimObject.MaintenanceStartTime = 0
+$cimObject.SignInOnResume = $True
+$cimObject.SleepTimeout = 0
+$cimObject.EnableAccountManager = $True
+$cimObject.AccountModel = 2
+$cimObject.DeletionPolicy = 1
+$cimObject.DiskLevelDeletion = 25
+$cimObject.DiskLevelCaching = 50
+$cimObject.RestrictLocalStorage = $False
+$cimObject.KioskModeAUMID = ""
+$cimObject.KioskModeUserTileDisplayText = ""
+$cimObject.InactiveThreshold = 0
+Set-CimInstance -CimInstance $cimObject
+```
 ---
 
 ## Guidance for accounts on shared PCs
