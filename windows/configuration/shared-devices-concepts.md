@@ -35,11 +35,11 @@ A Windows device enabled for *Shared PC mode* is designed to be maintenance-free
 
 Shared PC offers the possibility to enable a **Guest** option on the sign-in screen. The Guest option doesn't require any user credentials or authentication, and creates a new local account each time it's used with access to the desktop. A **Guest button** is shown on the logon screen that a user can select.
 
-:::image type="content" source="./images/win11-sharedpc-guest.png" alt-text="Windows 11 sign-in screen with Guest option enabled." border="True":::
+:::image type="content" source="./images/sharedpc-guest-win11.png" alt-text="Windows 11 sign-in screen with Guest option enabled." border="True":::
 
 Shared PC also offers a **Kiosk** mode, which automatically executes a specific application when the kiosk account signs-in. This is useful in scenarios where the device is accessed for a specific purpose, such as test taking in a school.
 
-:::image type="content" source="./images/win11se-sharedpc-kiosk.png" alt-text="Windows 11 sign-in screen with Guest and Kiosk options enabled." border="True":::
+:::image type="content" source="./images/sharedpc-kiosk-win11se.png" alt-text="Windows 11 sign-in screen with Guest and Kiosk options enabled." border="True":::
 
 ## Account management
 

@@ -14,27 +14,27 @@ ms.collection:
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Set up a shared or guest Windows device
 
-Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set either using Intune/MDM, a provisioning package, or via PowerShell scripting as explained in [Configure Shared PC mode](#configure-shared-pc-mode). The customizations offered by Shared PC are listed in the following table.
+Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set using Intune/MDM, a provisioning package, or via PowerShell scripting.
+The customizations offered by Shared PC are listed in the following table.
 
-| Area Name | Setting Name | Description|
-|---|---|---|
-|Shared PC mode | Either <li>**EnableSharedPCMode** or</li><li>**EnableSharedPCModeWithOneDriveSync**</li>|When enabled, **Shared PC mode** is turned on and different settings in the local GPO are configured. For a detailed list of settings enabled by Shared PC Mode, see [Technical Guide]</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
-| Education policies | **SetEduPolicies** | To configure specific settings designed for Education devices, you must enable **SetEduPolicies**.<li>For a detailed list of settings enabled SetEduPolicies, see [Technical Guide]</li><li>This setting controls the API:[IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)|
-| Power Management | **SetPowerPolicies** | When enabled, different power settings optimized for shared devices are configured in the local GPO, preventing users from making any changes. This policy ensures that devices wake during the maintenance period. For a detailed list of settings enabled SetPowerPolicies, see [Technical Guide]</li>**configures lid close and power button actions to sleep and disables hibernate**|
-| Account Model | **accountmodel** | This option controls how users can sign-in on the PC. <li>Specifying **Domain-joined and guest** option to add the **Guest** button to the sign-in screen</li><li>Specify **Domain-joined only** to only allow users to sign in with an Active Directory, Azure AD, or local account</li> |
-| Account Manager| DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/><br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/><br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign-off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not. <br/>- **Delete at disk space threshold and inactive threshold** will apply the same disk space checks as noted above, but also delete accounts if they have not signed in within the number of days specified by **InactiveThreshold**  |
-| Account Manager | **EnableAccountManager** | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done. |
-| Kiosk mode | KioskModeAUMID | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign-in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. Note that the app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82))   |  
-| Kiosk mode | KioskModeUserTileDisplayText | Sets the display text on the kiosk account if **KioskModeAUMID** has been set. |  
-| Account Manager | MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
-| Page file size | MaxPageFileSizeMB | Adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.  |  
-| Local storage | RestrictLocalStorage | Set as **True** to restrict the user from saving or viewing local storage when using File Explorer. This setting controls this API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)  | 
-| Security | SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
-| Power | SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
+| Area Name | Setting name and description|
+|---|---|
+|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local GPO. For a detailed list of settings enabled by Shared PC Mode, see [Technical Guide](configuration/shared-pc-technical.md#setedupolicy#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync)</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
+| Education policies | **SetEduPolicies**: when enabled, specific settings designed for Education devices are configured in the local GPO.<li>For a detailed list of settings enabled SetEduPolicies, see [Technical Guide](configuration/shared-pc-technical.md#setedupolicy)</li><li>This setting controls the API:[IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)|
+| Account models | **AccountModel**: this option controls which types of users can sign-in to the device, and can enable the Guest and Kiosk account options. |
+| Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings control the behavior of account manager: <li> **DeletionPolicy**</li><li>**DiskLevelDeletion**</li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li>|
+| Power Management | **SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the local GPO. This policy ensures that devices wake during the maintenance period. For a detailed list of settings enabled SetPowerPolicies, see [Technical Guide]</li>|
+| Kiosk mode | <li>**KioskModeAUMID**: configures an application (referred as Application User Model ID - AUMID) to automatically execute when the kiosk account is used to sign in. A new account will be created and will use assigned access to only run the app specified by the AUMID. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) </li><li>**KioskModeUserTileDisplayText**: sets the display text on the kiosk account if **KioskModeAUMID** has been set. |
+| Maintenace time | **MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value. |
+| Page file size | **MaxPageFileSizeMB**: adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs. |
+| Local storage | **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<li>This setting controls this API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)</li>| 
+| Security | **SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep. |
+| Sleep settings | **SleepTimeout**: specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.|
 
 ## Configure Shared PC mode
 
@@ -48,66 +48,64 @@ Follow the instructions below to configure your devices, selecting the option th
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp). To set up a shared device policy for Windows client in Intune, complete the following steps:
+To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Shared PC`**:
 
-  1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-  
-  2. Select **Devices** > **Windows** > **Configuration profiles** > **Create profile**.
-  
-  3. Enter the following properties:
+PICTURE HERE
 
-     - **Platform**: Select **Windows 10 and later**.
-     - **Profile**: Select **Templates** > **Shared multi-user device**.
-
-  4. Select **Create**.
-  
-  5. In **Basics**, enter the following properties:
-
-     - **Name**: Enter a descriptive name for the new profile.
-     - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-
-  6. Select **Next**.
-  
-  7. In **Configuration settings**, depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
-
-  8. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
-
-     > [!div class="mx-imgBorder"]
-     > ![Shared PC mode in the Configuration settings page.](images/shared_pc_3.png) 
-
-  11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
-[Create a provisioning package][WIN-1] using Windows Configuration Designer with the following settings:
+Shared PC can be configured using a provisioning package.
 
+For a list and description of CSP settings exposed in Windows Configuration Designer, see the [SharedPC WCD reference][WIN-4].
 
-Follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
+PICTURE HERE
+
+[Create a provisioning package][WIN-1] using WCD and follow the steps in [Apply a provisioning package][WIN-2] to apply the package that you created.
+
 #### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
+Configure your devices using PowerShell scripts via the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
 
-  ```powershell
-  $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
-  $sharedPC.EnableSharedPCMode = $True
-  $sharedPC.SetEduPolicies = $True
-  $sharedPC.SetPowerPolicies = $True
-  $sharedPC.MaintenanceStartTime = 0
-  $sharedPC.SignInOnResume = $True
-  $sharedPC.SleepTimeout = 0
-  $sharedPC.EnableAccountManager = $True
-  $sharedPC.AccountModel = 2
-  $sharedPC.DeletionPolicy = 1
-  $sharedPC.DiskLevelDeletion = 25
-  $sharedPC.DiskLevelCaching = 50
-  $sharedPC.RestrictLocalStorage = $False
-  $sharedPC.KioskModeAUMID = ""
-  $sharedPC.KioskModeUserTileDisplayText = ""
-  $sharedPC.InactiveThreshold = 0
-  Set-CimInstance -CimInstance $sharedPC
-  Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
-  ```
+> [!TIP]
+> PowerShell scripts can be executed as scheduled tasks via Group Policy.
 
+> [!IMPORTANT]
+> For all device settings, the WMI Bridge client must be executed as SYSTEM (LocalSystem) account.
+>
+> To test a PowerShell script, you can:
+> 1. [Download the psexec tool](/sysinternals/downloads/psexec)
+> 1. Open an elevated command prompt and run: `psexec.exe -i -s powershell.exe`
+> 1. Run the script in the PowerShell session
+
+Edit the following sample PowerShell script to customize the settings that you want to configure:
+
+    ```powershell
+    $namespaceName = "root\cimv2\mdm\dmmap"
+    $parentID="./Vendor/MSFT/Policy/Config"
+    $className = "MDM_SharedPC"
+    $cimObject = Get-CimInstance -Namespace $namespaceName -ClassName $className
+    if (-not ($cimObject)) {
+       $cimObject = New-CimInstance -Namespace $namespaceName -ClassName $className -Property @{ParentID=$ParentID;InstanceID=$instance}
+    }
+    $cimObject.EnableSharedPCMode = $True
+    $cimObject.SetEduPolicies = $True
+    $cimObject.SetPowerPolicies = $True
+    $cimObject.MaintenanceStartTime = 0
+    $cimObject.SignInOnResume = $True
+    $cimObject.SleepTimeout = 0
+    $cimObject.EnableAccountManager = $True
+    $cimObject.AccountModel = 2
+    $cimObject.DeletionPolicy = 1
+    $cimObject.DiskLevelDeletion = 25
+    $cimObject.DiskLevelCaching = 50
+    $cimObject.RestrictLocalStorage = $False
+    $cimObject.KioskModeAUMID = ""
+    $cimObject.KioskModeUserTileDisplayText = ""
+    $cimObject.InactiveThreshold = 0
+    Set-CimInstance -CimInstance $cimObject
+    ```
 ---
 
 ## Guidance for accounts on shared PCs
@@ -148,3 +146,5 @@ NodeValues contains what values are set for the features SharedPC manages
 [WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
 [WIN-3]: /windows/client-management/mdm/sharedpc-csp
 [WIN-4]: /windows/configuration/wcd/wcd-sharedpc
+
+[MEM-2]: /mem/intune/configuration/settings-catalog
