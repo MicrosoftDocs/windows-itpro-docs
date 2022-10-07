@@ -31,6 +31,8 @@ landingContent:
         links:
           - text: Mobile device management (MDM) overview
             url: mdm-overview.md
+      - linkListType: learn
+        links:
           - text: MDM for device updates
             url: device-update-management.md
           - text: Enterprise settings, policies, and app management
@@ -64,6 +66,16 @@ landingContent:
         links:
           - text: CSP reference
             url: mdm/index.yml
+      - linkListType: concept
+        links:
+          - text: Understanding ADMX policies
+            url: understanding-admx-backed-policies.md
+          - text: WMI Bridge Provider
+            url: using-powershell-scripting-with-the-wmi-bridge-provider.md
+          - text: OMA DM protocol support
+            url: oma-dm-protocol-support.md
+      - linkListType: reference
+        links:
           - text: DynamicManagement CSP
             url: mdm/dynamicmanagement-csp.md
           - text: BitLocker CSP

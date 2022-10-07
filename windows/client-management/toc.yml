@@ -3,6 +3,7 @@ items:
     href: index.yml
     items:
       - name: Mobile device management (MDM)
+        expanded: true
         items:
           - name: Overview
             items:
@@ -90,7 +91,7 @@ items:
           - name: MAM support for device management
             href: implement-server-side-mobile-application-management.md
           - name: Configuration service provider reference
-            href: ../mdm/index.yml
+            href: mdm/index.yml
       - name: Client management tools and settings
         items:
           - name: Windows Tools/Administrative Tools

@@ -46,7 +46,7 @@ As of November 2020 This page will no longer be updated. This article lists new 
 
 |New or updated article | Description|
 |--- | ---|
-|[Policy CSP - System](mdm/policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="../mdm/policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
+|[Policy CSP - System](mdm/policy-csp-system.md)|Added the following new policy settings:<br>  - System/AllowDesktopAnalyticsProcessing <br>- System/AllowMicrosoftManagedDesktopProcessing <br> - System/AllowUpdateComplianceProcessing<br> - System/AllowWUfBCloudProcessing <br> <br><br>Updated the following policy setting:<br>-  <a href="mdm/policy-csp-system.md#system-allowcommercialdatapipeline" id="system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a> <br>|
 
 ## June 2020
 

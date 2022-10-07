@@ -56,7 +56,7 @@ For information about the MDM policies defined in the Intune security baseline, 
 ## Learn about device management
 
 - [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md)
-- [Enterprise app management](../understand/enterprise-app-management.md)
+- [Enterprise app management](enterprise-app-management.md)
 - [Mobile device management (MDM) for device updates](device-update-management.md)
 - [OMA DM protocol support](oma-dm-protocol-support.md)
 - [Structure of OMA DM provisioning files](structure-of-oma-dm-provisioning-files.md)
