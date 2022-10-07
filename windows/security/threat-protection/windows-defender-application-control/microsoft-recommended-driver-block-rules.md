@@ -2198,6 +2198,14 @@ If you prefer to apply the vulnerable driver blocklist exactly as shown above, f
 4. Copy SiPolicy.p7b to %windir%\system32\CodeIntegrity
 5. Run the WDAC policy refresh tool you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
 
+To check that the policy was successfully applied on your computer:
+
+1. Open Event Viewer
+2. Browse to **Applications and Services Logs - Microsoft - Windows - CodeIntegrity - Operational**
+3. Select **Filter Current Log...**
+4. Replace "&lt;All Event IDs&gt;" with "3099" and select OK
+5. Look for a 3099 event where the PolicyNameBuffer and PolicyIdBuffer match the Name and Id PolicyInfo settings found at the bottom of the blocklist WDAC Policy XML in this article. NOTE: Your computer may have more than one 3099 event if other WDAC policies are also present.
+
 > [!NOTE]
 > If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new WDAC policy without reboot.
 
