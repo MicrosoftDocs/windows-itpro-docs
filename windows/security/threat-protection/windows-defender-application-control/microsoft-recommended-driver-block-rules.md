@@ -14,7 +14,7 @@ author: jgeurten
 ms.reviewer: aaroncz
 ms.author: dansimp
 manager: dansimp
-ms.date: 10/06/2022
+ms.date: 10/07/2022
 ---
 
 # Microsoft recommended driver block rules
