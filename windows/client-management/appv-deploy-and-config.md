@@ -21,7 +21,7 @@ manager: aaroncz
 
 ### EnterpriseAppVManagement CSP node structure
 
-[EnterpriseAppVManagement CSP reference](../mdm/enterpriseappvmanagement-csp.md)
+[EnterpriseAppVManagement CSP reference](mdm/enterpriseappvmanagement-csp.md)
 
 The following example shows the EnterpriseAppVManagement configuration service provider in tree format.
 
@@ -114,9 +114,9 @@ EnterpriseAppVManagement
 
 <p>A complete list of App-V policies can be found here:</p>
 
-[ADMX-backed policy reference](../mdm/policy-configuration-service-provider.md)
+[ADMX-backed policy reference](mdm/policy-configuration-service-provider.md)
 
-[EnterpriseAppVManagement CSP reference](../mdm/enterpriseappvmanagement-csp.md)
+[EnterpriseAppVManagement CSP reference](mdm/enterpriseappvmanagement-csp.md)
 
 ### SyncML examples
 
@@ -164,7 +164,7 @@ EnterpriseAppVManagement
 
 <p>Complete list of App-V policies can be found here:</p>
 
-[Policy CSP](../mdm/policy-configuration-service-provider.md)
+[Policy CSP](mdm/policy-configuration-service-provider.md)
 
 #### SyncML with package published for a device (global to all users for that device)
 

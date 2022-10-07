@@ -38,13 +38,6 @@ items:
                 href: on-premise-authentication-device-enrollment.md
               - name: Disconnecting a device from MDM (unenrollment)
                 href: disconnecting-from-mdm-unenrollment.md
-          - name: Understanding ADMX policies
-            href: understanding-admx-backed-policies.md
-            items:
-              - name: Enable ADMX policies in MDM
-                href: enable-admx-backed-policies-in-mdm.md
-              - name: Win32 and Desktop Bridge app policy configuration
-                href: win32-and-centennial-app-policy-configuration.md
           - name: Enterprise settings, policies, and app management
             href: windows-mdm-enterprise-settings.md
             items:
@@ -90,25 +83,12 @@ items:
                 href: config-lock.md
               - name: Certificate renewal
                 href: certificate-renewal-windows-mdm.md
-          - name: Using PowerShell scripting with the WMI Bridge Provider
-            href: using-powershell-scripting-with-the-wmi-bridge-provider.md
-          - name: WMI providers supported in Windows 10
-            href: wmi-providers-supported-in-windows.md
           - name: Diagnose MDM failures in Windows 10
             href: diagnose-mdm-failures-in-windows-10.md
           - name: Push notification support for device management
             href: push-notification-windows-mdm.md
           - name: MAM support for device management
             href: implement-server-side-mobile-application-management.md
-          - name: OMA DM protocol support
-            href: oma-dm-protocol-support.md
-            items:
-              - name: Structure of OMA DM provisioning files
-                href: structure-of-oma-dm-provisioning-files.md
-              - name: Server requirements for OMA DM
-                href: server-requirements-windows-mdm.md
-              - name: DMProcessConfigXMLFiltered
-                href: dmprocessconfigxmlfiltered.md
           - name: Configuration service provider reference
             href: ../mdm/index.yml
       - name: Client management tools and settings

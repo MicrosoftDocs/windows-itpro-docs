@@ -30,11 +30,11 @@ Windows supports automatic certificate renewal, also known as Renew On Behalf Of
 
 Auto certificate renewal is the only supported MDM client certificate renewal method for the device that's enrolled using WAB authentication. Meaning, the AuthPolicy is set to Federated. It also means if the server supports WAB authentication, then the MDM certificate enrollment server MUST also support client TLS to renew the MDM client certificate.
 
-For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP’s](../mdm/certificatestore-csp.md) ROBOSupport node under CertificateStore/My/WSTEP/Renew URL.
+For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP’s](mdm/certificatestore-csp.md) ROBOSupport node under CertificateStore/My/WSTEP/Renew URL.
 
 With automatic renewal, the PKCS\#7 message content isn’t b64 encoded separately. With manual certificate renewal, there's an additional b64 encoding for PKCS\#7 message content.
 
-During the automatic certificate renewal process, if the root certificate isn’t trusted by the device, the authentication will fail. Use one of device pre-installed root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](../mdm/certificatestore-csp.md).
+During the automatic certificate renewal process, if the root certificate isn’t trusted by the device, the authentication will fail. Use one of device pre-installed root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](mdm/certificatestore-csp.md).
 
 During the automatic certificate renew process, the device will deny HTTP redirect request from the server. It won't deny the request if the same redirect URL that the user accepted during the initial MDM enrollment process is used.
 

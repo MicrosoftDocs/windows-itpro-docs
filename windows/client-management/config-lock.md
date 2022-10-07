@@ -81,50 +81,50 @@ Config lock is designed to ensure that a secured-core PC isn't unintentionally m
 
 |**CSPs**     |
 |-----|
-|[BitLocker](../mdm/bitlocker-csp.md)      |
-|[PassportForWork](../mdm/passportforwork-csp.md)       |
-|[WindowsDefenderApplicationGuard](../mdm/windowsdefenderapplicationguard-csp.md)       |
-|[ApplicationControl](../mdm/applicationcontrol-csp.md)
+|[BitLocker](mdm/bitlocker-csp.md)      |
+|[PassportForWork](mdm/passportforwork-csp.md)       |
+|[WindowsDefenderApplicationGuard](mdm/windowsdefenderapplicationguard-csp.md)       |
+|[ApplicationControl](mdm/applicationcontrol-csp.md)
 
 |**MDM policies**     | **Supported by Group Policy** |
 |-----|-----|
-|[DataProtection/AllowDirectMemoryAccess](../mdm/policy-csp-dataprotection.md)      | No |
-|[DataProtection/LegacySelectiveWipeID](../mdm/policy-csp-dataprotection.md)      | No |
-|[DeviceGuard/ConfigureSystemGuardLaunch](../mdm/policy-csp-deviceguard.md)      | Yes |
-|[DeviceGuard/EnableVirtualizationBasedSecurity](../mdm/policy-csp-deviceguard.md)      | Yes |
-|[DeviceGuard/LsaCfgFlags](../mdm/policy-csp-deviceguard.md)      | Yes |
-|[DeviceGuard/RequirePlatformSecurityFeatures](../mdm/policy-csp-deviceguard.md)      | Yes |
-|[DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](../mdm/policy-csp-deviceinstallation.md)      | Yes |
-|[DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs](../mdm/policy-csp-deviceinstallation.md)      | Yes |
-|[DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](../mdm/policy-csp-deviceinstallation.md) | Yes |
-|[DeviceInstallation/PreventDeviceMetadataFromNetwork](../mdm/policy-csp-deviceinstallation.md) | Yes |
-|[DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](../mdm/policy-csp-deviceinstallation.md) | Yes |
-|[DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](../mdm/policy-csp-deviceinstallation.md) | Yes |
-|[DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs](../mdm/policy-csp-deviceinstallation.md) | Yes |
-|[DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](../mdm/policy-csp-deviceinstallation.md) | Yes |
-|[DmaGuard/DeviceEnumerationPolicy](../mdm/policy-csp-dmaguard.md) | Yes |
-|[WindowsDefenderSecurityCenter/CompanyName](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableAccountProtectionUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableAppBrowserUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableClearTpmButton](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableDeviceSecurityUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableEnhancedNotifications](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableFamilyUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableHealthUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableNetworkUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableNotifications](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning](../mdm/policy-csp-windowsdefendersecuritycenter.md)| Yes |
-|[WindowsDefenderSecurityCenter/DisableVirusUI](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/Email](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/EnableCustomizedToasts](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/EnableInAppCustomization](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/HideRansomwareDataRecovery](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/HideSecureBoot](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/HideTPMTroubleshooting](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/Phone](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[WindowsDefenderSecurityCenter/URL](../mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
-|[SmartScreen/EnableAppInstallControl](../mdm/policy-csp-smartscreen.md)| Yes |
-|[SmartScreen/EnableSmartScreenInShell](../mdm/policy-csp-smartscreen.md) | Yes |
-|[SmartScreen/PreventOverrideForFilesInShell](../mdm/policy-csp-smartscreen.md) | Yes |
+|[DataProtection/AllowDirectMemoryAccess](mdm/policy-csp-dataprotection.md)      | No |
+|[DataProtection/LegacySelectiveWipeID](mdm/policy-csp-dataprotection.md)      | No |
+|[DeviceGuard/ConfigureSystemGuardLaunch](mdm/policy-csp-deviceguard.md)      | Yes |
+|[DeviceGuard/EnableVirtualizationBasedSecurity](mdm/policy-csp-deviceguard.md)      | Yes |
+|[DeviceGuard/LsaCfgFlags](mdm/policy-csp-deviceguard.md)      | Yes |
+|[DeviceGuard/RequirePlatformSecurityFeatures](mdm/policy-csp-deviceguard.md)      | Yes |
+|[DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](mdm/policy-csp-deviceinstallation.md)      | Yes |
+|[DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs](mdm/policy-csp-deviceinstallation.md)      | Yes |
+|[DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](mdm/policy-csp-deviceinstallation.md) | Yes |
+|[DeviceInstallation/PreventDeviceMetadataFromNetwork](mdm/policy-csp-deviceinstallation.md) | Yes |
+|[DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](mdm/policy-csp-deviceinstallation.md) | Yes |
+|[DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](mdm/policy-csp-deviceinstallation.md) | Yes |
+|[DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs](mdm/policy-csp-deviceinstallation.md) | Yes |
+|[DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](mdm/policy-csp-deviceinstallation.md) | Yes |
+|[DmaGuard/DeviceEnumerationPolicy](mdm/policy-csp-dmaguard.md) | Yes |
+|[WindowsDefenderSecurityCenter/CompanyName](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableAccountProtectionUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableAppBrowserUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableClearTpmButton](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableDeviceSecurityUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableEnhancedNotifications](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableFamilyUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableHealthUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableNetworkUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableNotifications](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning](mdm/policy-csp-windowsdefendersecuritycenter.md)| Yes |
+|[WindowsDefenderSecurityCenter/DisableVirusUI](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/Email](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/EnableCustomizedToasts](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/EnableInAppCustomization](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/HideRansomwareDataRecovery](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/HideSecureBoot](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/HideTPMTroubleshooting](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/Phone](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[WindowsDefenderSecurityCenter/URL](mdm/policy-csp-windowsdefendersecuritycenter.md) | Yes |
+|[SmartScreen/EnableAppInstallControl](mdm/policy-csp-smartscreen.md)| Yes |
+|[SmartScreen/EnableSmartScreenInShell](mdm/policy-csp-smartscreen.md) | Yes |
+|[SmartScreen/PreventOverrideForFilesInShell](mdm/policy-csp-smartscreen.md) | Yes |

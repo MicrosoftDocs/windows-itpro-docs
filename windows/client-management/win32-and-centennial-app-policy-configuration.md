@@ -394,7 +394,7 @@ The following example shows how to derive a Win32 or Desktop Bridge app policy n
     </policy>
 ```
 
-As documented in [Policy CSP](../mdm/policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is:
+As documented in [Policy CSP](mdm/policy-configuration-service-provider.md), the URI format to configure a policy via Policy CSP is:
 './{user or device}/Vendor/MSFT/Policy/Config/{AreaName}/{PolicyName}'.
 
 **User or device policy**

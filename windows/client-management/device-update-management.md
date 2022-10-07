@@ -36,7 +36,7 @@ In Windows 10, the MDM protocol has been extended to better enable IT admins to
 
 The OMA DM APIs for specifying update approvals and getting compliance status refer to updates by using an Update ID. The Update ID is a GUID that identifies a particular update. The MDM will want to show IT-friendly information about the update, instead of a raw GUID, including the update’s title, description, KB, update type, like a security update or service pack. For more information, see [\[MS-WSUSSS\]: Windows Update Services: Server-Server Protocol](/openspecs/windows_protocols/ms-wsusss/f49f0c3e-a426-4b4b-b401-9aeb2892815c).
 
-For more information about the CSPs, see [Update CSP](../mdm/update-csp.md) and the update policy area of the [Policy CSP](../mdm/policy-configuration-service-provider.md).
+For more information about the CSPs, see [Update CSP](mdm/update-csp.md) and the update policy area of the [Policy CSP](mdm/policy-configuration-service-provider.md).
 
 The following diagram provides a conceptual overview of how this works:
 
@@ -130,11 +130,11 @@ The following list describes a suggested model for applying updates.
 2.  In the Test group, just let all updates flow.
 3.  In the All Group, set up Quality Update deferral for seven days. Then, Quality Updates will be auto approved after the seven days. Definition Updates are excluded from Quality Update deferrals, and will be auto approved when they're available. This schedule can be done by setting Update/DeferQualityUpdatesPeriodInDays to seven, and just letting updates flow after seven days or pushing Pause if any issues.
 
-Updates are configured using a combination of the [Update CSP](../mdm/update-csp.md), and the update portion of the [Policy CSP](../mdm/policy-configuration-service-provider.md).
+Updates are configured using a combination of the [Update CSP](mdm/update-csp.md), and the update portion of the [Policy CSP](mdm/policy-configuration-service-provider.md).
 
 ### Update policies
 
-The enterprise IT can configure auto-update policies via OMA DM using the [Policy CSP](../mdm/policy-configuration-service-provider.md) (this functionality isn't supported in Windows 10 Home). Here's the CSP diagram for the Update node in Policy CSP.
+The enterprise IT can configure auto-update policies via OMA DM using the [Policy CSP](mdm/policy-configuration-service-provider.md) (this functionality isn't supported in Windows 10 Home). Here's the CSP diagram for the Update node in Policy CSP.
 
 The following information shows the Update policies in a tree format.
 
@@ -680,7 +680,7 @@ Value type is string and the default value is an empty string. If the setting is
 
 ### Update management
 
-The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](../mdm/update-csp.md). The following information shows the Update CSP in tree format.
+The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](mdm/update-csp.md). The following information shows the Update CSP in tree format.
 
 ```console
 ./Vendor/MSFT
@@ -835,7 +835,7 @@ Supported operation is Get.
 
 ## <a href="" id="windows10version1607forupdatemanagement"></a> Windows 10, version 1607 for update management
 
-Here are the new policies added in Windows 10, version 1607 in [Policy CSP](../mdm/policy-configuration-service-provider.md). Use these policies for the Windows 10, version 1607 devices.
+Here are the new policies added in Windows 10, version 1607 in [Policy CSP](mdm/policy-configuration-service-provider.md). Use these policies for the Windows 10, version 1607 devices.
 
 -   Update/ActiveHoursEnd
 -   Update/ActiveHoursStart

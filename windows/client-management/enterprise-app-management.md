@@ -30,7 +30,7 @@ Windows 10 offers the ability for management servers to:
 
 ## Inventory your apps
 
-Windows 10 lets you inventory all apps deployed to a user, and inventory all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](../mdm/enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and doesn't include traditional Win32 apps installed via MSI or executables. When the apps are inventoried, they're separated based on the following app classifications:
+Windows 10 lets you inventory all apps deployed to a user, and inventory all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](mdm/enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and doesn't include traditional Win32 apps installed via MSI or executables. When the apps are inventoried, they're separated based on the following app classifications:
 
 -   Store - Apps that are from the Microsoft Store. Apps can be directly installed from the Store or delivered with the enterprise from the Store for Business
 -   nonStore - Apps that weren't acquired from the Microsoft Store.
@@ -164,7 +164,7 @@ Here are the nodes for each package full name:
 -   Users
 -   IsProvisioned
 
-For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](../mdm/enterprisemodernappmanagement-csp.md).
+For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
 
 ### App inventory
 
@@ -210,7 +210,7 @@ Here are the nodes for each license ID:
 -   LicenseUsage
 -   RequestedID
 
-For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](../mdm/enterprisemodernappmanagement-csp.md).
+For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md).
 
 > [!NOTE]
 > The LicenseID in the CSP is the content ID for the license.
@@ -253,7 +253,7 @@ To deploy apps that aren't from the Microsoft Store, you must configure the Appl
 
 The AllowAllTrustedApps policy enables the installation apps that are trusted by a certificate in the Trusted People on the device, or a root certificate in the Trusted Root of the device. The policy isn't configured by default, which means only apps from the Microsoft Store can be installed. If the management server implicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
-For more information about the AllowAllTrustedApps policy, see [Policy CSP](../mdm/policy-configuration-service-provider.md).
+For more information about the AllowAllTrustedApps policy, see [Policy CSP](mdm/policy-configuration-service-provider.md).
 
 Here are some examples.
 
@@ -291,7 +291,7 @@ AllowDeveloperUnlock policy enables the development mode on the device. The Allo
 
 Deployment of apps to Windows 10 for desktop editions requires that there's a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device.
 
-For more information about the AllowDeveloperUnlock policy, see [Policy CSP](../mdm/policy-configuration-service-provider.md).
+For more information about the AllowDeveloperUnlock policy, see [Policy CSP](mdm/policy-configuration-service-provider.md).
 
 Here's an example.
 
@@ -323,7 +323,7 @@ Here's an example.
 
 ## Install your apps
 
-You can install apps to a specific user or to all users of a device. Apps are installed directly from the Microsoft Store. Or, they're installed from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](../mdm/enterprisemodernappmanagement-csp.md) to install apps.
+You can install apps to a specific user or to all users of a device. Apps are installed directly from the Microsoft Store. Or, they're installed from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md) to install apps.
 
 ### Deploy apps to user from the Store
 
@@ -889,7 +889,7 @@ The Universal Windows app can share application data between the users of the de
 > [!NOTE]
 > This is only applicable to multi-user devices.
 
-The AllowSharedUserAppData policy in [Policy CSP](../mdm/policy-configuration-service-provider.md) enables or disables app packages to share data between app packages when there are multiple users. If you enable this policy, applications can share data between packages in their package family. Data can be shared through ShareLocal folder for that package family and local machine. This folder is available through the Windows.Storage API.
+The AllowSharedUserAppData policy in [Policy CSP](mdm/policy-configuration-service-provider.md) enables or disables app packages to share data between app packages when there are multiple users. If you enable this policy, applications can share data between packages in their package family. Data can be shared through ShareLocal folder for that package family and local machine. This folder is available through the Windows.Storage API.
 
 If you disable this policy, applications can't share user application data among multiple users. However, pre-written shared data will persist. The clean pre-written shared data, use DISM ((/Get-ProvisionedAppxPackage to detect if there's any shared data, and /Remove-SharedAppxData to remove it).
 

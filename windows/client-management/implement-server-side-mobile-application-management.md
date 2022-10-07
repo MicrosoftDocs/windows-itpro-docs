@@ -57,7 +57,7 @@ MAM enrollment is based on the MAM extension of [[MS-MDE2] protocol](/openspecs/
 
 Below are protocol changes for MAM enrollment: 
 - MDM discovery isn't supported.
-- APPAUTH node in [DMAcc CSP](../mdm/dmacc-csp.md) is optional.
+- APPAUTH node in [DMAcc CSP](mdm/dmacc-csp.md) is optional.
 - MAM enrollment variation of [MS-MDE2] protocol doesn't support the client authentication certificate, and therefore doesn't support the [MS-XCEP] protocol. Servers must use an Azure AD token for client authentication during policy syncs. Policy sync sessions must be performed over one-way SSL using server certificate authentication.
 
 Here's an example provisioning XML for MAM enrollment.
@@ -74,26 +74,26 @@ Here's an example provisioning XML for MAM enrollment.
 </wap-provisioningdoc>
 ```
 
-Since the [Poll](../mdm/dmclient-csp.md#provider-providerid-poll) node isn’t provided above, the device would default to once every 24 hours.
+Since the [Poll](mdm/dmclient-csp.md#provider-providerid-poll) node isn’t provided above, the device would default to once every 24 hours.
 
 ## Supported CSPs
 
 MAM on Windows supports the following configuration service providers (CSPs). All other CSPs will be blocked. Note the list may change later based on customer feedback:
 
-- [AppLocker CSP](../mdm/applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
-- [ClientCertificateInstall CSP](../mdm/clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.
-- [DeviceStatus CSP](../mdm/devicestatus-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
-- [DevInfo CSP](../mdm/devinfo-csp.md).
-- [DMAcc CSP](../mdm/dmacc-csp.md).
-- [DMClient CSP](../mdm/dmclient-csp.md) for polling schedules configuration and MDM discovery URL.
-- [EnterpriseDataProtection CSP](../mdm/enterprisedataprotection-csp.md) has Windows Information Protection policies.
-- [Health Attestation CSP](../mdm/healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
-- [PassportForWork CSP](../mdm/passportforwork-csp.md) for Windows Hello for Business PIN management.
-- [Policy CSP](../mdm/policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas.
-- [Reporting CSP](../mdm/reporting-csp.md) for retrieving Windows Information Protection logs.
-- [RootCaTrustedCertificates CSP](../mdm/rootcacertificates-csp.md).
-- [VPNv2 CSP](../mdm/vpnv2-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM.
-- [WiFi CSP](../mdm/wifi-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM.
+- [AppLocker CSP](mdm/applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
+- [ClientCertificateInstall CSP](mdm/clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.
+- [DeviceStatus CSP](mdm/devicestatus-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
+- [DevInfo CSP](mdm/devinfo-csp.md).
+- [DMAcc CSP](mdm/dmacc-csp.md).
+- [DMClient CSP](mdm/dmclient-csp.md) for polling schedules configuration and MDM discovery URL.
+- [EnterpriseDataProtection CSP](mdm/enterprisedataprotection-csp.md) has Windows Information Protection policies.
+- [Health Attestation CSP](mdm/healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
+- [PassportForWork CSP](mdm/passportforwork-csp.md) for Windows Hello for Business PIN management.
+- [Policy CSP](mdm/policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas.
+- [Reporting CSP](mdm/reporting-csp.md) for retrieving Windows Information Protection logs.
+- [RootCaTrustedCertificates CSP](mdm/rootcacertificates-csp.md).
+- [VPNv2 CSP](mdm/vpnv2-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM.
+- [WiFi CSP](mdm/wifi-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM.
 
 
 ## Device lock policies and EAS
