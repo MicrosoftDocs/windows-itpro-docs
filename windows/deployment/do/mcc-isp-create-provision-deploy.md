@@ -17,13 +17,13 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 This article outlines how to create, provision, and deploy your Microsoft Connected Cache nodes. The creation and provisioning of your cache node takes place in Azure portal. The deployment of your cache node will require downloading an installer script that will be run on your cache server.
 
 > [!IMPORTANT]
-> Before you can create your Microsoft Connected Cache, you will need to complete the sign up process [here](windows\deployment\do\mcc-isp-signup.md). You cannot proceed without signing up for our service.
+> Before you can create your Microsoft Connected Cache, you will need to complete the [sign up process](mcc-isp-signup.md). You cannot proceed without signing up for our service.
 
 ## Create cache node
 
@@ -39,7 +39,7 @@ This article outlines how to create, provision, and deploy your Microsoft Connec
 
 ## Provision cache node
 
-During the provisioning of your cache node, there are many fields for you to configure your cache node. To learn more about the definitions of each field, view [Configuration fields](#configuration-fields) at the bottom of this article.
+During the provisioning of your cache node, there are many fields for you to configure your cache node. To learn more about the definitions of each field, review the [Configuration fields](#general-configuration-fields) at the bottom of this article.
 
 ### Client routing
 
@@ -68,7 +68,7 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
 1. Under **Cache storage**, specify the location of the cache drives to store content along with the size of the cache drives in Gigabytes.  
 **Note:** Up to nine cache drives are supported.  
 
-1. Under **Routing information**, select the routing method you would like to use. For more information see [Client routing](#client-routing).
+1. Under **Routing information**, select the routing method you would like to use. For more information, see [Client routing](#client-routing).
 
 - If you choose **Manual routing**, enter your address range/CIDR blocks.  
 - If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship.  
@@ -82,7 +82,7 @@ Once the user executes the deployment script, resources are created behind the s
 
 #### IoT Central
 
-IoT Central is the main hub that handles all messaging and requests from IoT Edge devices. To learn more about the interaction between IoT Edge and IoT Central, view [IoT Central](https://docs.microsoft.com/en-us/azure/iot-central/core/concepts-iot-edge) documentation.
+IoT Central is the main hub that handles all messaging and requests from IoT Edge devices. To learn more about the interaction between IoT Edge and IoT Central, review the [IoT Central](/azure/iot-central/core/concepts-iot-edge) documentation.
 
 #### IoT Edge
 
@@ -101,7 +101,7 @@ There are five IDs that the device provisioning script takes as input in order t
 | -- | --- |
 | Customer ID | The Azure subscription ID that the cache node is created in. |
 | Cache node ID | The unique alphanumeric ID of the cache node being provisioned. |
-| Customer key | |
+| Customer Key | |
 | Cache node name | The name of the cache node. |
 | Tenant ID | The unique ID associated with the Azure account. |
 
@@ -115,7 +115,7 @@ There are five IDs that the device provisioning script takes as input in order t
     sudo chmod +x installmcc.sh
     ```
 
-1. Run the deployment script that is shown for your cache node in Azure portal by copying and pasting the script in your terminal. The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the steps verification steps [here](windows\deployment\do\mcc-isp-verify-cache-node.md).
+1. Run the deployment script that is shown for your cache node in Azure portal by copying and pasting the script in your terminal. The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
 
 ## General configuration fields
 
