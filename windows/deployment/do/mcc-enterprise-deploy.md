@@ -5,7 +5,7 @@ description: How to deploy Microsoft Connected Cache (MCC) for Enterprise and Ed
 ms.prod: w10
 author: amymzhou
 ms.localizationpriority: medium
-ms.author: amymzhou
+ms.author: amyzhou
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -21,13 +21,13 @@ ms.topic: article
 
 To deploy MCC to your server:
 
-1.  [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
-2.  [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
-3.  [Create an MCC Node](#create-an-mcc-node-in-azure)
-4.  [Edit Cache Node Information](#edit-cache-node-information)
-5.  [Install MCC on a physical server or VM](#install-mcc-on-windows)
-6.  [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
-7.  [Review common Issues](#common-issues) if needed.
+1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
+1. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
+1. [Create an MCC Node](#create-an-mcc-node-in-azure)
+1. [Edit Cache Node Information](#edit-cache-node-information)
+1. [Install MCC on a physical server or VM](#install-mcc-on-windows)
+1. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
+1. [Review common Issues](#common-issues) if needed.
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
@@ -38,13 +38,13 @@ As part of the MCC preview onboarding process an Azure subscription ID must be p
 > [!IMPORTANT]
 > [Take this survey](https://aka.ms/MSConnectedCacheSignup) and provide your Azure subscription ID and contact information to be added to the allowlist for this preview. You will not be able to proceed if you skip this step.
 
-For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
+For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](mcc-enterprise-appendix.md#steps-to-obtain-an-azure-subscription-id).
 
 ### Create the MCC resource in Azure
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
-Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you will be given a link to the Azure portal where you can create the resource described below. 
+Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below. 
 
 1.  On the Azure portal home page, choose **Create a resource**:  
     ![eMCC img02](images/emcc02.png)
@@ -63,7 +63,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
     -   Choose the subscription that you provided to Microsoft.
     -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US** for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
+    -   Choose **(US) West US** for the location of the resource. This choice won't impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
 
        > [!NOTE]
        > Your MCC resource will not be created properly if you do not select **(US) West US**
@@ -75,7 +75,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
       ![eMCC img05](images/emcc05.png)
 
-5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the
+5.  Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the
     resource creation.
 
     ![eMCC img06](images/emcc06.png)
@@ -91,22 +91,22 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 Creating an MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
-1.  After the successful resource creation click on the **Go to resource**.
-2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
+1.  After the successful resource creation, select  **Go to resource**.
+2.  Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
 
     ![eMCC img08](images/emcc08.png)
 
-3.  On the **Cache Nodes** blade, click on the **Create Cache Node** button.
+3.  On the **Cache Nodes** blade, select the **Create Cache Node** button.
 
     ![eMCC img09](images/emcc09.png)
 
-4.  Clicking the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
+4.  Selecting the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
 
 | **Field Name**      | **Expected Value**                         | **Description**                                                                                                                      |
 |---------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| **Cache Node Name** | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and cannot be changed later. |
+| **Cache Node Name** | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later. |
 
-5.  Enter the information for the **Cache Node** and click the **Create** button.
+5.  Enter the information for the **Cache Node** and select the **Create** button.
 
 ![eMCC img9.5](images/emcc09.5.png)
 
@@ -118,7 +118,7 @@ Once the MCC node has been created, the installer instructions will be exposed. 
 
 #### Edit cache node information
 
-Cache nodes can be deleted here by clicking the check box to the left of a **Cache Node Name** and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
+Cache nodes can be deleted here by selecting the check box to the left of a **Cache Node Name** and then selecting the delete toolbar item. Be aware that if a cache node is deleted, there's no way to recover the cache node or any of the information related to the cache node.
 
 ![eMCC img11](images/emcc11.png)
 
@@ -137,7 +137,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 #### Run the installer
 
-1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page which contains the necessary installation files.
+1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page, which contains the necessary installation files.
 
   ![eMCC img12](images/emcc12.png)
 
@@ -202,7 +202,7 @@ Files contained in the mccinstaller.zip file:
 
   ![eMCC img14](images/emcc14.png)
 
-4.  Re-run the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
+4.  Rerun the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
     ![eMCC img15](images/emcc15.png)
 
@@ -220,7 +220,7 @@ Files contained in the mccinstaller.zip file:
 
     ![eMCC img17](images/emcc17.png)
 
-8.  If this is your first MCC deployment, please select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
+8.  If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1.  You'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
 
@@ -229,9 +229,9 @@ Files contained in the mccinstaller.zip file:
 
 9.  Your MCC deployment is now complete.
 
-    1.  If you do not see any errors, please continue to the next section to validate your MCC deployment.
-    2.  After validating your MCC is properly functional, please review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
-    3.  If you had errors during your deployment, see the [Troubleshooting](#troubleshooting) section in this article.
+    1.  If you don't see any errors, continue to the next section to validate your MCC deployment.
+    2.  After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+    3.  If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
 ### Verify proper functioning MCC server
 
@@ -272,7 +272,7 @@ Similarly, enter this URL from a browser in the network:
 
 [http://YourCacheServerIP/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
 
-If the test fails, see the common issues section for more information.
+If the test fails, see the [common issues](#common-issues) section for more information.
 
 ### Intune (or other management software) configuration for MCC
 
@@ -323,4 +323,5 @@ Use this command to check the IoT Edge Journal
 sudo journalctl -u iotedge –f
 ```
 
-Please note: You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we have listed a few issues below that we hit during our internal validation.
+> [!NOTE]
+> You should consult the IoT Edge troubleshooting guide ([Common issues and resolutions for Azure IoT Edge](/azure/iot-edge/troubleshoot)) for any issues you may encounter configuring IoT Edge, but we've listed a few issues that we encountered during our internal validation.
