@@ -3,7 +3,7 @@ description: Learn more about the Windows 10, version 1703 diagnostic data gathe
 title: Windows 10, version 1703 basic diagnostic events and fields (Windows 10)
 ms.prod: windows-client
 ms.technology: itpro-privacy
-localizationpriority: high
+localizationpriority: medium
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby

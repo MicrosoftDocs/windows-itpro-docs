@@ -3,7 +3,7 @@ description: Learn more about the Windows 10, version 1903 diagnostic data gathe
 title: Windows 10, version 1909 and Windows 10, version 1903 required diagnostic events and fields (Windows 10)
 ms.prod: windows-client
 ms.technology: itpro-privacy
-localizationpriority: high
+localizationpriority: medium
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
