@@ -24,7 +24,7 @@ ms.topic: article
 > [!IMPORTANT]  
 > Before you can create your Microsoft Connected Cache, you will need to complete the [sign up process](mcc-isp-signup.md).
 
-# Create a cache node
+## Create a cache node
 
 1. Navigating to **Cache nodes** under **Settings**.
 1. Select **Create Cache Node**.
