@@ -113,7 +113,7 @@ By enabling SignInOnResume, the following settings in the local GPO are configur
 
 ## EnableAccountManager
 
-By enabling Enableaccountmanager, the following schedule task is turned on: `\Microsoft\Windows\SharedPC\Account Cleanup`
+By enabling Enableaccountmanager, the following schedule task is turned on: `\Microsoft\Windows\SharedPC\Account Cleanup`.
 
 ## Shared PC APIs and app behavior
 
