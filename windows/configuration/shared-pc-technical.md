@@ -51,7 +51,7 @@ When enabling Shared PC mode, the following settings in the local GPO are config
 | Windows Components/Data Collection and Preview Builds/Toggle user control over Insider builds | Disabled |
 | Windows Components/File Explorer/Show lock in the user tile menu | Disabled |
 | Windows Components/File History/Turn off File History | Enabled |
-| Windows Components/OneDrive/Prevent the usage of OneDrive for file storage |<li> **Enabled** if using EnableSharedPCMode</li><li>**Disabled** is using EnableSharedPCModeWithOneDriveSync</li> |
+| Windows Components/OneDrive/Prevent the usage of OneDrive for file storage |**Enabled** if using EnableSharedPCMode<br><br>**Disabled** is using EnableSharedPCModeWithOneDriveSync |
 | Windows Components/Windows Hello for Business/Use biometrics | Disabled |
 | Windows Components/Windows Hello for Business/Use Windows Hello for Business | Disabled |
 | Windows Components/Windows Logon Options/Sign-in and lock last interactive user automatically after a restart | Disabled |
