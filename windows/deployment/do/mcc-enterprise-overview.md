@@ -5,7 +5,7 @@ description: Overview and requirements of Microsoft Connected Cache (MCC) for En
 ms.prod: w10
 author: amymzhou
 ms.localizationpriority: medium
-ms.author: amymzhou
+ms.author: amyzhou
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

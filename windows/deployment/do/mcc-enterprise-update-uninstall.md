@@ -5,7 +5,7 @@ description: Details on updating or uninstalling Microsoft Connected Cache (MCC)
 ms.prod: w10
 author: amymzhou
 ms.localizationpriority: medium
-ms.author: amymzhou
+ms.author: amyzhou
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -14,7 +14,7 @@ ms.topic: article
 
 ## Update MCC
 
-Throughout the private preview phase, we will send you security and feature updates for MCC. Please follow these steps to perform the update.
+Throughout the preview phase, we'll send you security and feature updates for MCC. Follow these steps to perform the update.
 
 Run the following command with the **arguments** we provided in the email to update your MCC:
 
@@ -34,12 +34,12 @@ issues.
 This script will remove the following:
 
 1.  EFLOW + Linux VM
-2.  IoT Edge
-3.  Edge Agent
-4.  Edge Hub
-5.  MCC
-6.  Moby CLI
-7.  Moby Engine
+1.  IoT Edge
+1.  Edge Agent
+1.  Edge Hub
+1.  MCC
+1.  Moby CLI
+1.  Moby Engine
 
 To delete MCC, go to Control Panel \> Uninstall a program \> Select Azure IoT
 Edge LTS \> Uninstall

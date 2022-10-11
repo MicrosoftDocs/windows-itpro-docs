@@ -5,7 +5,7 @@ description: Appendix on Microsoft Connected Cache (MCC) for Enterprise and Educ
 ms.prod: w10
 author: amymzhou
 ms.localizationpriority: medium
-ms.author: amymzhou
+ms.author: amyzhou
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
