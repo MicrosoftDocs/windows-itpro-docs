@@ -11,8 +11,6 @@ manager: scotv
 ms.reviewer: 
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.collection:
-- scotvorg
 ms.date: 07/21/2021
 ---
 
