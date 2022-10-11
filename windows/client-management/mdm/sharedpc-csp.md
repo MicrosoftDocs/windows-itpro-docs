@@ -156,18 +156,18 @@ For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevel
 The supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="restrictlocalstorage"></a>**RestrictLocalStorage**
-Restricts the user from using local storage. This node is optional.
+Restricts the user from using local storage.
 
 The default value is Not Configured. Value type is bool. Supported operations are Add, Get, Replace, and Delete. Default in SharedPC provisioning package is False.
 
 <a href="" id="kioskmodeaumid"></a>**KioskModeAUMID**
-Specifies the AUMID of the app to use with assigned access. This node is optional.
+Specifies the AUMID of the app to use with assigned access.
 
 - Value type is string.
 - Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="kioskmodeusertiledisplaytext"></a>**KioskModeUserTileDisplayText**
-Specifies the display text for the account shown on the sign-in screen that launches the app specified by KioskModeAUMID. This node is optional.
+Specifies the display text for the account shown on the sign-in screen that launches the app specified by KioskModeAUMID.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
@@ -181,7 +181,7 @@ Accounts will start being deleted when they haven't been logged on during the sp
 The default in the SharedPC provisioning package is 30.
 
 <a href="" id="maxpagefilesizemb"></a>**MaxPageFileSizeMB**
-Maximum size of the paging file in MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM. This node is optional.
+Maximum size of the paging file in MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM.
 
 - Default value is Not Configured.
 - Value type is integer.

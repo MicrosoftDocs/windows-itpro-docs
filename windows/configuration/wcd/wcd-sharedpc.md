@@ -36,14 +36,18 @@ Use these settings to configure settings for accounts allowed on the shared PC.
 | KioskModeAUMID  | String  | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. The app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82))  |
 | KioskModeUserTileDisplayText  | String  | Sets the display text on the kiosk account if **KioskModeAUMID** has been set.  |
 
-
-## EnableSharedPCMode and EnableSharedPCModeWithOneDriveSync
+## EnableSharedPCMode
 
 Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
 
-## AccountManagement
+## EnableSharedPCModeWithOneDriveSync
 
-Use these settings to configure account management policies for Shared PC
+Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
+
+
+## PolicyCustomization
+
+Use these settings to configure additional Shared PC policies.
 
 | Setting | Value | Description |
 | --- | --- | --- |
