@@ -11,6 +11,8 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: high
+ms.collection:
+- scotvorg
 ms.date: 07/21/2021
 ---
 
