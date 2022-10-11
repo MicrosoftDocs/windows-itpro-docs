@@ -19,10 +19,10 @@ appliesto:
 
 # Shared PC technical reference
 
-This article details the settings configured on the devices by the different options in Shared PC.
+This article details the settings configured by the different options of Shared PC.
 
 > [!IMPORTANT]
-> The behavior of certain Shared PC options have changed over time. This article describes the current settings applied by the Shared PC options.
+> The behavior of some options have changed over time. This article describes the current settings applied by Shared PC.
 
 ## EnableSharedPCMode and EnableSharedPCModeWithOneDriveSync
 

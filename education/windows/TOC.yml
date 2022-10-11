@@ -25,7 +25,7 @@ items:
     - name: Windows 10 editions for education customers
       href: windows-editions-for-education-customers.md
     - name: Considerations for shared and guest devices
-      href: /windows/configuration/shared-devices-concepts
+      href: /windows/configuration/shared-devices-concepts?context=/education/context/context
     - name: Windows 10 configuration recommendations for education customers
       href: configure-windows-for-education.md
     - name: Take tests and assessments in Windows

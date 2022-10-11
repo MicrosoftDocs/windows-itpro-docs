@@ -19,7 +19,7 @@ appliesto:
 
 # Manage multi-user and guest Windows devices with Shared PC
 
-Windows allows multiple users to sign in and use the same device. This is useful in scenarios where multiple people need to use the same device, such as touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
+Windows allows multiple users to sign in and use the same device. This is useful in scenarios such as touchdown spaces in an enterprise, temporary customer use in retail or shared devices in a school.
 As more users access the same device, more resources on the devices are used. This can lead to performance issues and a degraded user experience.
 
 To optimize the experience, Windows provides options to manage multi-user and guest Windows devices.

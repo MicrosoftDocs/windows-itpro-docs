@@ -19,30 +19,27 @@ appliesto:
 
 # Set up a shared or guest Windows device
 
-Shared PC mode exposes a set of customizations to tailor the behavior to your requirements. These customizations are the options that you'll set using Intune/MDM, a provisioning package, or via PowerShell scripting.
-The customizations offered by Shared PC are listed in the following table.
+**Shared PC** offers options to facilitate the management and optimization of shared devices. The customizations offered by Shared PC are listed in the following table.
 
 | Area Name | Setting name and description|
 |---|---|
-|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local GPO. For a detailed list of settings enabled by Shared PC Mode, see the [Shared PC technical reference](shared-pc-technical.md#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync).</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
+|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local GPO.<li>For a detailed list of settings enabled by Shared PC Mode, see the [Shared PC technical reference](shared-pc-technical.md#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync)</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
 | Education policies | **SetEduPolicies**: when enabled, specific settings designed for Education devices are configured in the local GPO.<li>For a detailed list of settings enabled SetEduPolicies, see [Shared PC technical reference](shared-pc-technical.md#setedupolicy)</li><li>This setting controls the API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)|
-| Account models | **AccountModel**: this option controls which types of users can sign-in to the device, and can enable the Guest and Kiosk account options. |
-| Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings control the behavior of account manager: <li> **DeletionPolicy**</li><li>**DiskLevelDeletion**</li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li>|
-| Power Management | **SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the local GPO. This policy ensures that devices wake during the maintenance period. For a detailed list of settings enabled SetPowerPolicies, see [Technical Guide]</li>|
+| Account models | **AccountModel**: this option controls which types of users can sign-in to the device, and can be used to enable the Guest and Kiosk accounts. |
+| Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings allow to define the behavior of account manager: <li> **DeletionPolicy**</li><li>**DiskLevelDeletion**</li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li>|
+| Power Management | **SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the local GPO. This policy ensures that devices wake during the maintenance period.<li>For a detailed list of settings enabled SetPowerPolicies, see [Shared PC technical reference](shared-pc-technical.md#setpowerpolicies)</li><li>**SleepTimeout**: specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.</li><li>**SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep.</li>|
 | Kiosk mode | <li>**KioskModeAUMID**: configures an application (referred as Application User Model ID - AUMID) to automatically execute when the kiosk account is used to sign in. A new account will be created and will use assigned access to only run the app specified by the AUMID. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) </li><li>**KioskModeUserTileDisplayText**: sets the display text on the kiosk account if **KioskModeAUMID** has been set. |
-| Maintenace time | **MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value. |
+| Maintenace | **MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.<li>For a detailed list of settings enabled SetPowerPolicies, see [Shared PC technical reference](shared-pc-technical.md#MaintenanceStartTime)</li>|
 | Page file size | **MaxPageFileSizeMB**: adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs. |
-| Local storage | **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<li>This setting controls the API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)</li>| 
-| Security | **SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep. |
-| Sleep settings | **SleepTimeout**: specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.|
+| Local storage | **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<li>This setting controls the API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)</li>|
 
 ## Configure Shared PC mode
 
-The configuration of Shared PC can be done using:
+Shared PC can be configured using the following methods:
 
 - Microsoft Intune/MDM
-- a provisioning package (PPKG)
-- PowerShell
+- Provisioning package (PPKG)
+- PowerShell script
 
 Follow the instructions below to configure your devices, selecting the option that best suits your needs.
 
@@ -53,6 +50,28 @@ To configure devices using Microsoft Intune, [create a **Settings catalog** poli
 :::image type="content" source="./images/shared-pc-intune.png" alt-text="Shared PC policies in the Intune settings catalog." border="True":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
+
+Alternatively, you can configure devices using the [SharedPC CSP][WIN-3].
+
+|OMA-URI|
+|-|
+|`./Vendor/MSFT/SharedPC/EnableSharedPCMode`|
+|`./Vendor/MSFT/SharedPC/EnableSharedPCModeWithOneDriveSync`|
+|`./Vendor/MSFT/SharedPC/SetEduPolicies`|
+|`./Vendor/MSFT/SharedPC/SetPowerPolicies`|
+|`./Vendor/MSFT/SharedPC/MaintenanceStartTime`|
+|`./Vendor/MSFT/SharedPC/SignInOnResume`|
+|`./Vendor/MSFT/SharedPC/SleepTimeout`|
+|`./Vendor/MSFT/SharedPC/EnableAccountManager`|
+|`./Vendor/MSFT/SharedPC/AccountModel`|
+|`./Vendor/MSFT/SharedPC/DeletionPolicy`|
+|`./Vendor/MSFT/SharedPC/DiskLevelDeletion`|
+|`./Vendor/MSFT/SharedPC/DiskLevelCaching`|
+|`./Vendor/MSFT/SharedPC/RestrictLocalStorage`|
+|`./Vendor/MSFT/SharedPC/KioskModeAUMID`|
+|`./Vendor/MSFT/SharedPC/KioskModeUserTileDisplayText`|
+|`./Vendor/MSFT/SharedPC/InactiveThreshold`|
+|`./Vendor/MSFT/SharedPC/MaxPageFileSizeMB`|
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
