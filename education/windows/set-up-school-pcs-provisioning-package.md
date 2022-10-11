@@ -20,7 +20,7 @@ appliesto:
 # What's in my provisioning package?
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings.
 
-A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/client-management/mdm/shared-devices-concepts.md) article.
+A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc-technical) article.
 
 ## Shared PC Mode policies
 This table outlines the policies applied to devices in shared PC mode. If you select to optimize a device for use by a single student, you'll see differences in the following policies:

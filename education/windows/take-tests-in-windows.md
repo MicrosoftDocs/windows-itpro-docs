@@ -95,6 +95,6 @@ To take the test, have the students open the link.
 
 ## Additional information
 
-Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/office/).
+Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/en-us/office/create-a-quiz-with-microsoft-forms-a082a018-24a1-48c1-b176-4b3616cdc83d).
 
 To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).

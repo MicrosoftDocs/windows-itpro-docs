@@ -41,7 +41,7 @@ Follow the instructions below to configure your devices, selecting the option th
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Shared PC`**:
 
-:::image type="content" source="./images/shared-pc-intune.png" alt-text="Shared PC policies in the Intune settings catalog." lightbox="./images/shared-pc-intune.png" border="True":::
+:::image type="content" source="./images/shared-pc-intune.png" alt-text="Screenshot that shows the Shared PC policies in the Intune settings catalog." lightbox="./images/shared-pc-intune.png" border="True":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
@@ -51,7 +51,7 @@ Alternatively, you can configure devices using the [SharedPC CSP][WIN-3].
 
 To configure devices using a provisioning package, [create a provisioning package][WIN-1] using WCD, and use the settings listed under the category **`SharedPC`**:
 
-:::image type="content" source="./images/shared-pc-wcd.png" alt-text="Shared PC policies in WCD." lightbox="./images/shared-pc-wcd.png" border="False":::
+:::image type="content" source="./images/shared-pc-wcd.png" alt-text="Screenshot that shows the Shared PC policies in WCD." lightbox="./images/shared-pc-wcd.png" border="False":::
 
 For a list and description of CSP settings exposed in Windows Configuration Designer, see the [SharedPC WCD reference][WIN-4].
 
