@@ -22,7 +22,7 @@ The device provisioning script takes the input of different IDs outlined below t
 
 #### IoT Central
 
-IoT Central is the main hub that handles all messaging and requests from IoT Edge devices. To learn more about the interaction between IoT Edge and IoT Central, view [IoT Central](https://docs.microsoft.com/en-us/azure/iot-central/core/concepts-iot-edge) documentation.
+IoT Central is the main hub that handles all messaging and requests from IoT Edge devices. To learn more about the interaction between IoT Edge and IoT Central, review the [IoT Central](/azure/iot-central/core/concepts-iot-edge) documentation.
 
 #### IoT Edge
 
@@ -41,7 +41,7 @@ There are five IDs that the device provisioning script takes as input in order t
 | -- | --- |
 | Customer ID | The Azure subscription ID that the cache node is created in. |
 | Cache node ID | The unique alphanumeric ID of the cache node being provisioned. |
-| Customer key | |
+| Customer Key | |
 | Cache node name | The name of the cache node. |
 | Tenant ID | The unique ID associated with the Azure account. |
 
