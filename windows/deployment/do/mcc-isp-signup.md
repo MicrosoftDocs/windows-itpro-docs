@@ -73,7 +73,7 @@ RAID disk configurations are discouraged as cache performance will be impacted. 
 
 ### Hardware configuration example
 
-There are many hardware configurations that suit Microsoft Connected Cache. As an example, below is the hardware configuration of a customer who is able to egress about 35 Gbps of traffic.
+There are many hardware configurations that suit Microsoft Connected Cache. As an example, a customer has deployed the following hardware configuration and is able achieve a peak egress of about 35 Gbps:
 
 **Dell PowerEdge R330**
 
