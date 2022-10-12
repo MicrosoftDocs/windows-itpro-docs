@@ -23,9 +23,9 @@ appliesto:
 
 | Area Name | Setting name and description|
 |---|---|
-|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local group policy object (LGPO).<ul><li>For a detailed list of settings enabled by Shared PC Mode in the LGO, see the [Shared PC technical reference](shared-pc-technical.md#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync)</li><li>This setting controls the API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings)</li></ul>|
-| Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings define the behavior of *account manager*: <ul><li> **DeletionPolicy**</li><li>**DiskLevelDeletion** </li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li></ul>For more information, see the [Shared PC CSP documentation][WIN-3].<br><br>**AccountModel**: this option controls which types of users can sign-in to the device, and can be used to enable the Guest and Kiosk accounts. For more information, see the [Shared PC CSP documentation][WIN-3].<br><br>**KioskModeAUMID**: configures an application (referred as Application User Model ID - AUMID) to automatically execute when the kiosk account is used to sign in. A new account will be created and will use assigned access to only run the app specified by the AUMID. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).<br><br>**KioskModeUserTileDisplayText**: sets the display text on the kiosk account if **KioskModeAUMID** has been set.|
-| Advanced customizations | **SetEduPolicies**: when enabled, specific settings designed for education devices are configured in the LGPO.<ul><li>For a detailed list of settings enabled by SetEduPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setedupolicy)</li><li>This setting controls the API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings)</li></ul><br>**SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the LGPO.<ul><li>For a detailed list of settings enabled by SetPowerPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setpowerpolicies)</li></ul><br>**SleepTimeout**: specifies all timeouts for when the PC should sleep.<br><br>**SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep.<br><br>**MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update or Search indexing) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight.<ul><li>For a detailed list of settings enabled by MaintenanceStartTime, see [Shared PC technical reference](shared-pc-technical.md#maintenancestarttime)</li></ul><br>**MaxPageFileSizeMB**: adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.<br><br> **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<ul><li>This setting controls the API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)</li></ul>|
+|Shared PC mode | **EnableSharedPCMode** or **EnableSharedPCModeWithOneDriveSync**: when enabled, **Shared PC mode** is turned on and different settings are configured in the local group policy object (LGPO). For a detailed list of settings enabled by Shared PC Mode in the LGPO, see the [Shared PC technical reference](shared-pc-technical.md#enablesharedpcmode-and-enablesharedpcmodewithonedrivesync).<ul><li>This setting controls the API: [IsEnabled][UWP-1]</li></ul>|
+| Account management | **EnableAccountManager**: when enabled, automatic account management is turned on. The following settings define the behavior of *account manager*: <ul><li> **DeletionPolicy**</li><li>**DiskLevelDeletion** </li><li>**DiskLevelCaching**</li><li>**InactiveThreshold**</li></ul>For more information, see the [Shared PC CSP documentation][WIN-3].<br><br>**AccountModel**: this option controls which types of users can sign-in to the device, and can be used to enable the Guest and Kiosk accounts. For more information, see the [Shared PC CSP documentation][WIN-3].<br><br>**KioskModeAUMID**: configures an application (referred as Application User Model ID - AUMID) to automatically execute when the kiosk account is used to sign in. A new account will be created and will use assigned access to only run the app specified by the AUMID. [Find the Application User Model ID of an installed app][WIN-7].<br><br>**KioskModeUserTileDisplayText**: sets the display text on the kiosk account if **KioskModeAUMID** has been set.|
+| Advanced customizations | **SetEduPolicies**: when enabled, specific settings designed for education devices are configured in the LGPO. For a detailed list of settings enabled by SetEduPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setedupolicy).<ul><li>This setting controls the API: [IsEducationEnvironment][UWP-2]</li></ul><br>**SetPowerPolicies**: when enabled, different power settings optimized for shared devices are configured in the LGPO. For a detailed list of settings enabled by SetPowerPolicies in the LGPO, see [Shared PC technical reference](shared-pc-technical.md#setpowerpolicies).<br><br>**SleepTimeout**: specifies all timeouts for when the PC should sleep.<br><br>**SignInOnResume**: if enabled, specifies if the user is required to sign in with a password when the PC wakes from sleep.<br><br>**MaintenanceStartTime**: by default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update or Search indexing) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For a detailed list of settings enabled by MaintenanceStartTime, see [Shared PC technical reference](shared-pc-technical.md#maintenancestarttime).<br><br>**MaxPageFileSizeMB**: adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.<br><br> **RestrictLocalStorage**: when enabled, users are prevented from saving or viewing local storage while using File Explorer.<ul><li>This setting controls the API: [ShouldAvoidLocalStorage][UWP-3]</li></ul>|
 
 ## Configure Shared PC mode
 
@@ -45,7 +45,7 @@ To configure devices using Microsoft Intune, [create a **Settings catalog** poli
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
-Alternatively, you can configure devices using the [SharedPC CSP][WIN-3].
+Alternatively, you can configure devices using a [custom policy][MEM-1] with the [SharedPC CSP][WIN-3].
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -59,7 +59,7 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
 
 #### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
 
-To configure devices using a PowerShell script, you can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
+To configure devices using a PowerShell script, you can use the [MDM Bridge WMI Provider][WIN-6].
 
 > [!TIP]
 > PowerShell scripts can be executed as scheduled tasks via Group Policy.
@@ -99,7 +99,7 @@ $cimObject.InactiveThreshold = 0
 Set-CimInstance -CimInstance $cimObject
 ```
 
-For more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
+For more information, see [Using PowerShell scripting with the WMI Bridge Provider][WIN-5].
 
 ---
 
@@ -141,5 +141,13 @@ To troubleshoot Shared PC, you can use the following tools:
 [WIN-2]: /windows/configuration/provisioning-packages/provisioning-apply-package
 [WIN-3]: /windows/client-management/mdm/sharedpc-csp
 [WIN-4]: /windows/configuration/wcd/wcd-sharedpc
+[WIN-5]: /windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider
+[WIN-6]: /windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal
+[WIN-7]: /previous-versions/windows/embedded/dn449300(v=winembedded.82)
 
+[MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 [MEM-2]: /mem/intune/configuration/settings-catalog
+
+[UWP-1]: /uwp/api/windows.system.profile.sharedmodesettings
+[UWP-2]: /uwp/api/windows.system.profile.educationsettings
+[UWP-3]: /uwp/api/windows.system.profile.sharedmodesettings.shouldavoidlocalstorage
