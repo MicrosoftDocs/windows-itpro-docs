@@ -65,7 +65,7 @@ When enabling Shared PC mode, the following settings in the local GPO are config
 
 By enabling SetEDUPolicy, the following settings in the local GPO are configured:
 
-| LGPO setting | Status |
+| Policy setting | Status |
 |--|--|
 | System/User Profiles/Turn off the advertising ID | Enabled |
 | Windows Components/Cloud Content/Do not show Windows tips | Enabled |
