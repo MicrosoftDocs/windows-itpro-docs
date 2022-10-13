@@ -112,124 +112,126 @@ If there are errors, the form will provide guidance on how to correct the errors
 
 Once the MCC node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this article, in the [Install Connected Cache](#install-mcc-on-windows) section.
 
-![eMCC img10](images/emcc10.png)
+:::image type="content" source="./images/ent-mcc-connected-cache-installer-download.png" alt-text="Screenshot of the Connected Cache installer download button, installer instructions, and script.":::
 
 #### Edit cache node information
 
 Cache nodes can be deleted here by selecting the check box to the left of a **Cache Node Name** and then selecting the delete toolbar item. Be aware that if a cache node is deleted, there's no way to recover the cache node or any of the information related to the cache node.
 
-![eMCC img11](images/emcc11.png)
+:::image type="content" source="./images/ent-mcc-delete-cache-node.png" alt-text="Screenshot of deleting a cache node from the Cache Nodes page.":::
 
 ### Install MCC on Windows
 
 Installing MCC on your Windows device is a simple process. A PowerShell script performs the following tasks:
 
-  - Installs the Azure CLI
-  - Downloads, installs, and deploys EFLOW
-  - Enables Microsoft Update so EFLOW can stay up to date
-  - Creates a virtual machine
-  - Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC, and port 22 is used for SSH communications.
-  - Configures Connected Cache tuning settings.
-  - Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
-  - Deploys the MCC container to server.
+- Installs the Azure CLI
+- Downloads, installs, and deploys EFLOW
+- Enables Microsoft Update so EFLOW can stay up to date
+- Creates a virtual machine
+- Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC, and port 22 is used for SSH communications.
+- Configures Connected Cache tuning settings.
+- Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
+- Deploys the MCC container to server.
 
 #### Run the installer
 
-1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page, which contains the necessary installation files.
+1. Download and unzip `mccinstaller.zip` from the create cache node page or cache node configuration page, both of which contain the necessary installation files.
 
-  ![eMCC img12](images/emcc12.png)
+   :::image type="content" source="./images/ent-mcc-download-installer.png" alt-text="Screenshot of the download installer option on the Create Cache Node page.":::
 
-Files contained in the mccinstaller.zip file:
+   The following files are contained in the `mccinstaller.zip` file:
 
-  - **installmcc.ps1**: Main installer file.
-  - **installEflow.ps1**: Installs the necessary prerequisites such as the Linux VM, IoT Edge runtime, and Docker, and makes necessary host OS settings to optimize caching performance.
-  - **resourceDeploymentForConnectedCache.ps1**: Creates Azure cloud resources required to support MCC control plane.
-  - **mccdeployment.json**: Deployment manifest used by IoT Edge to deploy the MCC container and configure settings on the container, such as cache drive location sizes.
-  - **updatemcc.ps1**: The update script used to upgrade MCC to a particular version.
-  - **mccupdate.json**: Used as part of the update script
+   - **installmcc.ps1**: Main installer file.
+   - **installEflow.ps1**: Installs the necessary prerequisites such as the Linux VM, IoT Edge runtime, and Docker, and makes necessary host OS settings to optimize caching performance.
+   - **resourceDeploymentForConnectedCache.ps1**: Creates Azure cloud resources required to support MCC control plane.
+   - **mccdeployment.json**: Deployment manifest used by IoT Edge to deploy the MCC container and configure settings on the container, such as cache drive location sizes.
+   - **updatemcc.ps1**: The update script used to upgrade MCC to a particular version.
+   - **mccupdate.json**: Used as part of the update script
 
-1.  Open Windows PowerShell as administrator and navigate to the location of these files.
+1. Open Windows PowerShell as administrator then navigate to the location of these files.
 
-> [!NOTE]
-> Ensure that Hyper-V is enabled on your device.
-> Do not use PowerShell ISE, PowerShell 6.x, or PowerShell 7.x. Only Windows PowerShell version 5.x is supported.
+   > [!NOTE]
+   > Ensure that Hyper-V is enabled on your device.
+   > - **Windows 10:** [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+   > - **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)'
+   >
+   > Don't use PowerShell ISE, PowerShell 6.x, or PowerShell 7.x. Only Windows PowerShell version 5.x is supported.
 
-  **Windows 10:** [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+#### If you're installing MCC on a local virtual machine
 
-  **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
+1. Turn the virtual machine **off** while you enable nested virtualization and MAC spoofing.
+   1. Enable nested virtualization:
 
-#### If you're installing MCC on a local virtual machine:
+      ```powershell
+      Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
+      ```
 
-1. Enable Nested Virtualization
+   1. Enable MAC spoofing:
 
-  ```powershell
-  Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
-  ```
-1. Enable Mac Spoofing
-  ```powershell
-  Get-VMNetworkAdapter -VMName "VM name" | Set-VMNetworkAdapter -MacAddressSpoofing On
-  ```
-  **Virtual machine should be in the OFF state while enabling Nested Virtualization and Mac Spoofing**
+      ```powershell
+      Get-VMNetworkAdapter -VMName "VM name" | Set-VMNetworkAdapter -MacAddressSpoofing On
+      ```
 
-1. Set the execution policy
+1. Set the execution policy.
 
-  ```powershell
-  Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
-  ```
-  > [!NOTE]
-  >  After setting the execution policy, you'll see a warning asking if you wish to change the execution policy. Choose **[A] Yes to All**.
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+    ```
 
-1. Copy the command from the portal and run it in Windows PowerShell
+    > [!NOTE]
+    > After setting the execution policy, you'll see a warning asking if you wish to change the execution policy. Choose **[A] Yes to All**.
 
-    ![eMCC img13](images/emcc13.png)
+1. Copy the command from the Azure portal and run it in Windows PowerShell.
 
-  > [!NOTE]
-  > After running the command, and multiple times throughout the installation process, you'll receive the following notice. **Please select [R] Run once to proceed**.
-  > <br>
-  > <br>Security warning
-  > <br>Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning message. Do you want to run C:\\Users\\mccinstaller\\Eflow\\installmcc.ps1?
-  ><br>
-  > <br>[D] Do not run **[R] Run once** [S] Suspend [?] Help (default is "D"):
+    :::image type="content" source="./images/ent-mcc-installer-script.png" alt-text="Screenshot of the installer script for the connected cache node.":::
+
+    > [!NOTE]
+    > After running the command, and multiple times throughout the installation process, you'll receive the following notice. Select **[R] Run once** to proceed.
+    > </br>
+    > </br> Security warning
+    > </br> Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning message. Do you want to run C:\Users\mccinstaller\Eflow\installmcc.ps1?
+    > </br>
+    > </br> [D] Do not run **[R] Run once** [S] Suspend [?] Help (default is "D"):
 
 1. Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you're creating a new switch.
 
-  > [!NOTE]
-  > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
+    > [!NOTE]
+    > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
 
-  If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
+    If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
-  ![eMCC img14](images/emcc14.png)
+   :::image type="content" source="./images/ent-mcc-script-new-switch.png" alt-text="Screenshot of the installer script running in PowerShell when a new switch is created.":::
 
-1.  Rerun the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
+1. Rerun the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
-    ![eMCC img15](images/emcc15.png)
+     :::image type="content" source="./images/ent-mcc-script-existing-switch.png" alt-text="Screenshot of the installer script running in PowerShell when using an existing switch.":::
 
-1.  Decide whether you would like to use dynamic or static address for the Eflow VM
+1. Decide whether you would like to use dynamic or static address for the Eflow VM
 
-    ![eMCC img16](images/emcc16.png)
+    :::image type="content" source="./images/ent-mcc-script-dynamic-address.png" alt-text="Screenshot of the installer script running in PowerShell asking if you'd like to use a dynamic address.":::
 
-  > [!NOTE]
-  > Choosing a dynamic IP address might assign a different IP address when the MCC restarts.
-  > <br>A static IP address is recommended so you do not have to change this value in your management solution when MCC restarts.
+    > [!NOTE]
+    > Choosing a dynamic IP address might assign a different IP address when the MCC restarts. A static IP address is recommended so you don't have to change this value in your management solution when MCC restarts.
 
-1.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
+1. Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and how many cores you would like to allocate for the VM. For this example, we chose the default values for all prompts.
 
 1. Follow the Azure Device Login link and sign into the Azure portal.
 
-    ![eMCC img17](images/emcc17.png)
+     :::image type="content" source="./images/ent-mcc-script-device-code.png" alt-text="Screenshot of the installer script running in PowerShell displaying the code and URL to use for the Azure portal.":::
 
 1. If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
-    1. You'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
+    1. You'll be shown a list of existing IoT Hubs in your Azure Subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
-    ![eMCC img18](images/emcc18.png)
-    ![eMCC img19](images/emcc19.png)
+       :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use.":::
+       :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell.":::
+
 
 1. Your MCC deployment is now complete.
 
-    1.  If you don't see any errors, continue to the next section to validate your MCC deployment.
-    1.  After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
-    1.  If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
+    1. If you don't see any errors, continue to the next section to validate your MCC deployment.
+    1. After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+    1. If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
 ## Verify proper functioning MCC server
 
@@ -237,16 +239,16 @@ Files contained in the mccinstaller.zip file:
 
 Connect to the EFLOW VM and check if MCC is properly running:
 
-1. Open PowerShell as an Administrator
+1. Open PowerShell as an Administrator.
 2. Enter the following commands:
 
-```powershell
-Connect-EflowVm
-sudo -s
-iotedge list
-```
+   ```powershell
+   Connect-EflowVm
+   sudo -s
+   iotedge list
+   ```
 
-![eMCC img20](images/emcc20.png)
+   ![eMCC img20](images/emcc20.png)
 
 You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy
 
