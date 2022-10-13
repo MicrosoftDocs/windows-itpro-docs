@@ -7,18 +7,18 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 08/13/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
-# TenantLockdown DDF file 
+# TenantLockdown DDF file
 
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **TenantLockdown** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is for Windows 10, version 1809.
 

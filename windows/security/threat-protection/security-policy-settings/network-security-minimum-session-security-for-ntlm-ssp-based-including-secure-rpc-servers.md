@@ -3,14 +3,14 @@ title: Network security Minimum session security for NTLM SSP based (including s
 description: Best practices and security considerations for the policy setting, Network security Minimum session security for NTLM SSP based (including secure RPC) servers.
 ms.assetid: c6a60c1b-bc8d-4d02-9481-f847a411b4fc
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

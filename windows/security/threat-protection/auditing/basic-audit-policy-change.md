@@ -3,14 +3,14 @@ title: Audit policy change (Windows 10)
 description: Determines whether to audit every incident of a change to user rights assignment policies, audit policies, or trust policies.
 ms.assetid: 1025A648-6B22-4C85-9F47-FE0897F1FA31
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

@@ -3,14 +3,14 @@ title: Basic security audit policies (Windows 10)
 description: Learn about basic security audit policies that specify the categories of security-related events that you want to audit for the needs of your organization.
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

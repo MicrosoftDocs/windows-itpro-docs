@@ -3,14 +3,14 @@ title: Monitor resource attribute definitions (Windows 10)
 description: Learn how to monitor changes to resource attribute definitions when you're using advanced security auditing options to monitor dynamic access control objects.
 ms.assetid: aace34b0-123a-4b83-9e09-f269220e79de
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

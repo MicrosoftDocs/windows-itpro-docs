@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.date: 06/03/2022
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.topic: overview
 ---
@@ -133,4 +133,4 @@ There are various steps you can take to begin the process of modernizing device 
 
 - [What is Intune?](/mem/intune/fundamentals/what-is-intune)
 - [Windows 10 policy CSP](./mdm/policy-configuration-service-provider.md)
-- [Windows 10 configuration service providers](./mdm/configuration-service-provider-reference.md)
+- [Windows 10 configuration service providers](./mdm/index.yml)
