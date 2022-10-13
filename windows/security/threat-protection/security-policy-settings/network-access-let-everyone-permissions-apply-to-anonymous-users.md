@@ -3,14 +3,14 @@ title: Let Everyone permissions apply to anonymous users (Windows 10)
 description: Learn about best practices, security considerations and more for the security policy setting, Network access Let Everyone permissions apply to anonymous users.
 ms.assetid: cdbc5159-9173-497e-b46b-7325f4256353
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

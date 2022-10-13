@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 
 # Best practices for configuring Windows Defender Firewall

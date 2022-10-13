@@ -3,14 +3,14 @@ title: Network security Configure encryption types allowed for Kerberos
 description: Best practices, location, values and security considerations for the policy setting, Network security Configure encryption types allowed for Kerberos Win7 only.
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
