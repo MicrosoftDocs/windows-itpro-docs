@@ -67,7 +67,6 @@ The following table describes the Set up School PCs app features and lists each 
 ## Next steps  
 Learn more about setting up devices with the Set up School PCs app.  
 * [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [What's in my provisioning package](set-up-school-pcs-provisioning-package.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
