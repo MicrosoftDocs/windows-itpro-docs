@@ -104,7 +104,6 @@ The Skype and Messaging apps are part of a selection of apps that are, by defaul
 ## Next steps    
 Learn how to create provisioning packages and set up devices in the app.
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md)
 

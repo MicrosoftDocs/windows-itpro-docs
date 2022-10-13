@@ -3,14 +3,14 @@ title: Determine your application control objectives (Windows)
 description: Determine which applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
 ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

@@ -86,13 +86,7 @@ Automated Azure AD tokens expire after 180 days. The expiration date for each to
 ## Next steps    
 Learn more about setting up devices with the Set up School PCs app.  
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
-* [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-
