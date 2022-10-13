@@ -7,8 +7,8 @@ ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 05/24/2022
 ---

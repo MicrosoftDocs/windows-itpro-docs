@@ -2,9 +2,9 @@
 title: Windows Sandbox configuration
 description: Windows Sandbox configuration
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: aaroncz
 ms.collection: 
 ms.topic: article
 ms.localizationpriority: medium

@@ -3,7 +3,7 @@ title: Use the Device Guard Signing Portal in the Microsoft Store for Business  
 description: You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,7 +13,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-manager: dansimp
+manager: aaroncz
 ms.date: 02/19/2019
 ms.technology: windows-sec
 ---

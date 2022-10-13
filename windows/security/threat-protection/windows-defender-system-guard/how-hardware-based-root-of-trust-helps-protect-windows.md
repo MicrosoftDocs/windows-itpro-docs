@@ -3,15 +3,15 @@ title: How a Windows Defender System Guard helps protect Windows 10
 description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/01/2019
 ms.technology: windows-sec
 ---
