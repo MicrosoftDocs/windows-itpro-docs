@@ -29,8 +29,13 @@
     "globalMetadata": {
       "recommendations": true,
       "ms.topic": "article",
+      "ms.collection": "education",
+      "ms.prod": "windows",
       "ms.technology": "windows",
+      "author": "paolomatarazzo",
+      "ms.author": "paoloma",
       "manager": "aaroncz",
+      "ms.localizationpriority": "medium",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "GitHub",
@@ -42,6 +47,7 @@
           "folder_relative_path_in_docset": "./"
         }
       },
+      "titleSuffix": "Windows Education",
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -55,6 +61,14 @@
         "v-dihans",
         "garycentric"
       ]
+    },
+    "fileMetadata": {
+      "ms.topilocalizationpriority": {
+        "windows/tutorial-school-deployment/**/**.md": "medium"
+      },
+      "ms.topic": {
+        "windows/tutorial-school-deployment/**/**.md": "tutorial"
+      }
     },
     "externalReference": [],
     "template": "op.html",

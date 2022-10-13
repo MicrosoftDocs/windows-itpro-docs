@@ -1,18 +1,7 @@
 ---
 title: What's new in the Windows Set up School PCs app
 description: Find out about app updates and new features in Set up School PCs.
-keywords: shared PC, school, set up school pcs
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>

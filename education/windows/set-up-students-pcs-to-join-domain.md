@@ -1,17 +1,7 @@
 ---
 title: Set up student PCs to join domain
 description: Learn how to use Configuration Designer to provision student devices to join Active Directory.
-keywords: school, student PC setup, Windows Configuration Designer
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
 ---
