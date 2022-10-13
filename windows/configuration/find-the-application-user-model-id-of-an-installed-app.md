@@ -111,7 +111,8 @@ listAumids("allusers")
 ```
 
 ## Example
-The following code sample creates a function in Windows PowerShell that returns the AUMID of any application currently listed in the Start Menu
+
+The following code sample creates a function in Windows PowerShell that returns the AUMID of any application currently listed in the Start menu.
 
 ```powershell
 function Get-AppAUMID {
