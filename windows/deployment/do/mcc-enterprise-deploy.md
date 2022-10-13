@@ -248,9 +248,9 @@ Connect to the EFLOW VM and check if MCC is properly running:
    iotedge list
    ```
 
-   ![eMCC img20](images/emcc20.png)
+   :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell.":::
 
-You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy
+You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy.
 
 #### Verify server side
 
@@ -260,17 +260,15 @@ For a validation of properly functioning MCC, execute the following command in t
 wget [http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]
 ```
 
-A successful test result will look like this:
+A successful test result will display a status code of 200 along with additional information.
 
-![eMCC img21](images/emcc21.png)
+:::image type="content" source="./images/ent-mcc-verify-server-ssh.png" alt-text="Screenshot of a successful wget with an SSH client.":::
 
-OR
+ :::image type="content" source="./images/ent-mcc-verify-server-powershell.png" alt-text="Screenshot of a successful wget using PowerShell.":::
 
-![eMCC img22](images/emcc22.png)
+Similarly, enter the following URL from a browser in the network:
 
-Similarly, enter this URL from a browser in the network:
-
-[http://YourCacheServerIP/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+`http://<YourCacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com`
 
 If the test fails, see the [common issues](#common-issues) section for more information.
 
