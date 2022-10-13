@@ -121,18 +121,18 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
 Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you will be given a link to the Azure portal where you can create the resource described below. 
 
-1.  On the Azure portal home page, choose **Create a resource**:  
-    ![eMCC img02](images/emcc02.png)
+1.  In the Azure portal home page, choose **Create a resource**:  
+    :::image type="content" source="./images/ent-mcc-create-azure-resource.png" alt-text="Screenshot of the Azure portal with the create a resource option outlined in red.":::
 
 2.  Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
 > [!NOTE]
 > You'll not see Microsoft Connected Cache in the drop-down list. You need to type it and press enter to see the result.
 
-3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
+3.  Select **Microsoft Connected Cache Enterprise** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
-    ![eMCC img03](images/emcc03.png)
-    ![eMCC img04](images/emcc04.png)
+    :::image type="content" source="./images/ent-mcc-azure-search-result.png" alt-text="Screenshot of the Azure portal search results for Microsoft Connected Cache.":::
+    :::image type="content" source="./images/ent-mcc-azure-marketplace.png" alt-text="Screenshot of Microsoft Connected Cache within the Azure Marketplace.":::
 
 4.  Fill in the required fields to create the MCC resource.
 
@@ -148,12 +148,12 @@ Once you take the survey above and the MCC team adds your subscription ID to the
       > [!NOTE]
       > Your MCC resource must not contain the word **Microsoft** in it.
 
-      ![eMCC img05](images/emcc05.png)
+      :::image type="content" source="./images/ent-mcc-azure-create-connected-cache.png" alt-text="Screenshot of the Create a Connected Cache page within the Azure Marketplace.":::
 
 5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the
     resource creation.
 
-    ![eMCC img06](images/emcc06.png)
+    :::image type="content" source="./images/ent-mcc-azure-cache-created.png" alt-text="Screenshot of the completed cache deployment within the Azure.":::
 
 #### Error: Validation failed
 
@@ -406,20 +406,20 @@ If you're having issues with your MCC, we included a diagnostics script which wi
 
 To run this script:
 
-1.  Navigate to the following folder in the MCC installation files:
+1. Navigate to the following folder in the MCC installation files:
 
-    mccinstaller \> Eflow \> Diagnostics
+    mccinstaller > Eflow > Diagnostics
 
-2.  Run the following commands:
+1. Run the following commands:
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
-.\collectMccDiagnostics.ps1
-```
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+   .\collectMccDiagnostics.ps1
+   ```
 
-3.  The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file which you can share with us (should be “**\<currentpath\>**\\mccdiagnostics\\support_bundle_\$timestamp.tar.gz”)
+1. The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file which you can share with us. The location should be **\<currentpath\>**\mccdiagnostics\support_bundle_\$timestamp.tar.gz
 
-4.  [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
+1. [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
 
 ## Update MCC
 
@@ -502,42 +502,43 @@ There are multiple methods that can be used to apply a policy to PCs that should
 
 You can either set your MCC IP address or FQDN using:
 
-1.  Registry Key in 1709 and higher -  
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]<br>
+1.  Registry Key (version 1709 and later):  
+    `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization`
+</br>
     "DOCacheHost"=" "  
     
-  From an elevated command prompt:
+    From an elevated command prompt:
 
-  ```
-  reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
-  ```
+    ```
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
+    ```
 
-2.  MDM Path in 1809 or higher:
+1. MDM Path (version 1809 and later):
 
-  .Vendor/MSFT/Policy/Config/DeliveryOptimization/DOCacheHost
+    `.Vendor/MSFT/Policy/Config/DeliveryOptimization/DOCacheHost`
 
-3. In Windows release version 1809 and later, you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, set the Cache Server Hostname (Setting found under Computer Configuration, Administrative Templates, Windows Components, Delivery Optimization) to the IP address of your MCC. For example 10.137.187.38.
+1. In Windows (release version 1809 and later), you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization**. Set the **Cache Server Hostname** to the IP address of your MCC, such as `10.137.187.38`.
 
-    ![eMCC img26](images/emcc26.png)
+   :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting.":::
 
 **Verify Content using the DO Client**
 
 To verify that the Delivery Optimization client can download content using MCC, you can use the following steps:
 
-1. Download a game or application from the Microsoft Store.   
+1. Download a game or application from the Microsoft Store.
 
-    ![eMCC img27](images/emcc27.png)
+   :::image type="content" source="./images/ent-mcc-store-example-download.png" alt-text="Screenshot of the Microsoft Store with the game, Angry Birds 2, selected.":::
 
-2. Verify downloads came from MCC by one of two methods:
 
-    - Using PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see BytesFromCacheServer test  
+1. Verify downloads came from MCC by one of two methods:
 
-      ![eMCC img28](images/emcc28.png)
+    - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.
 
-    - Looking at the Delivery Optimization Activity Monitor
+      :::image type="content" source="./images/ent-mcc-get-deliveryoptimizationstatus.png" alt-text="Screenshot of the output of Get-DeliveryOptimization | FT from PowerShell.":::
 
-      ![eMCC img29](images/emcc29.png)
-
+    - Using the Delivery Optimization Activity Monitor
+    
+      :::image type="content" source="./images/ent-mcc-delivery-optimization-activity.png" alt-text="Screenshot of the Delivery Optimization Activity Monitor.":::
 ## Also see
 
 [Microsoft Connected Cache for ISPs](mcc-isp.md)<br>

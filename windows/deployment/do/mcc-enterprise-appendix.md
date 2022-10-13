@@ -111,7 +111,7 @@ To verify that the Delivery Optimization client can download content using MCC, 
 
 1. Verify downloads came from MCC by one of two methods:
 
-    - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.   
+    - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.
 
       :::image type="content" source="./images/ent-mcc-get-deliveryoptimizationstatus.png" alt-text="Screenshot of the output of Get-DeliveryOptimization | FT from PowerShell.":::
 
@@ -119,8 +119,7 @@ To verify that the Delivery Optimization client can download content using MCC, 
     
       :::image type="content" source="./images/ent-mcc-delivery-optimization-activity.png" alt-text="Screenshot of the Delivery Optimization Activity Monitor.":::
 
-
-### More information
+## More information
 
 [Microsoft Connected Cache for ISPs](mcc-isp.md)</br>
 [Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)

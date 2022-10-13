@@ -14,7 +14,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 ## Steps to deploy MCC
@@ -46,69 +46,67 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
 Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below. 
 
-1.  On the Azure portal home page, choose **Create a resource**:  
-    ![eMCC img02](images/emcc02.png)
+1. In the Azure portal home page, choose **Create a resource**:  
+    :::image type="content" source="./images/ent-mcc-create-azure-resource.png" alt-text="Screenshot of the Azure portal with the create a resource option outlined in red.":::
 
-2.  Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
+1. Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
-> [!NOTE]
-> You'll not see Microsoft Connected Cache in the drop-down list. You need to type it and press enter to see the result.
+   > [!NOTE]
+   > You won't see Microsoft Connected Cache in the drop-down list. You'll need to type the string and press enter to see the result.
 
-3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
+1. Select **Microsoft Connected Cache Enterprise** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
-    ![eMCC img03](images/emcc03.png)
-    ![eMCC img04](images/emcc04.png)
+    :::image type="content" source="./images/ent-mcc-azure-search-result.png" alt-text="Screenshot of the Azure portal search results for Microsoft Connected Cache.":::
+    :::image type="content" source="./images/ent-mcc-azure-marketplace.png" alt-text="Screenshot of Microsoft Connected Cache Enterprise within the Azure Marketplace.":::
 
-4.  Fill in the required fields to create the MCC resource.
+1. Fill in the required fields to create the MCC resource.
 
-    -   Choose the subscription that you provided to Microsoft.
-    -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US** for the location of the resource. This choice won't impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
+    - Choose the subscription that you provided to Microsoft.
+    - Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
+    - Choose **(US) West US** for the location of the resource. This choice won't impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
 
-       > [!NOTE]
+       > [!IMPORTANT]
        > Your MCC resource will not be created properly if you do not select **(US) West US**
 
-    -   Choose a name for the MCC resource.
+    - Choose a name for the MCC resource.
+      - Your MCC resource must not contain the word **Microsoft** in it.
 
-      > [!NOTE]
-      > Your MCC resource must not contain the word **Microsoft** in it.
+      :::image type="content" source="./images/ent-mcc-azure-create-connected-cache.png" alt-text="Screenshot of the Create a Connected Cache page within the Azure Marketplace.":::
 
-      ![eMCC img05](images/emcc05.png)
-
-5.  Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the
+1. Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the
     resource creation.
 
-    ![eMCC img06](images/emcc06.png)
+    :::image type="content" source="./images/ent-mcc-azure-cache-created.png" alt-text="Screenshot of the completed cache deployment within the Azure.":::
 
 #### Error: Validation failed
 
--   If you get a Validation failed error message on your portal, it's likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
--   To resolve this error, go to the previous step and choose **(US) West US**.
+- If you get a Validation failed error message on your portal, it's likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
+  - To resolve this error, go to the previous step and choose **(US) West US**.
 
-    ![eMCC img07](images/emcc07.png)
+    :::image type="content" source="./images/ent-mcc-create-cache-failed.png" alt-text="Screenshot of a failed cache deployment due to an incorrect location.":::
 
 ### Create an MCC node in Azure
 
 Creating an MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
-1.  After the successful resource creation, select  **Go to resource**.
-2.  Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
+1. After the successful resource creation, select  **Go to resource**.
+1. Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
 
-    ![eMCC img08](images/emcc08.png)
+    :::image type="content" source="./images/ent-mcc-cache-nodes.png" alt-text="Screenshot of the Cache Node Management section with the navigation link to the Cache Nodes page outlined in red.":::
 
-3.  On the **Cache Nodes** blade, select the **Create Cache Node** button.
+1. On the **Cache Nodes** blade, select the **Create Cache Node** button.
 
-    ![eMCC img09](images/emcc09.png)
+    :::image type="content" source="./images/ent-mcc-create-cache-node.png" alt-text="Screenshot of the Cache Nodes page with the Create Cache Node option outlined in red.":::
 
-4.  Selecting the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
+1. Selecting the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
 
-| **Field Name**      | **Expected Value**                         | **Description**                                                                                                                      |
-|---------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| **Cache Node Name** | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later. |
+   | **Field Name**| **Expected Value**|**Description** |
+   |---|---|---|
+   | **Cache Node Name** | Alphanumeric name that doesn't include any spaces. | The name of the cache node. You may choose names based on location such as `Seattle-1`. This name must be unique and can't be changed later. |
 
-5.  Enter the information for the **Cache Node** and select the **Create** button.
+1. Enter the information for the **Cache Node** and select the **Create** button.
 
-![eMCC img9.5](images/emcc09.5.png)
+   :::image type="content" source="./images/ent-mcc-create-cache-node-name.png" alt-text="Screenshot of the Cache Nodes page displaying the Cache Node Name text entry during the creation process.":::
 
 If there are errors, the form will provide guidance on how to correct the errors.
 
@@ -167,13 +165,13 @@ Files contained in the mccinstaller.zip file:
   ```powershell
   Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
   ```
-2. Enable Mac Spoofing
+1. Enable Mac Spoofing
   ```powershell
   Get-VMNetworkAdapter -VMName "VM name" | Set-VMNetworkAdapter -MacAddressSpoofing On
   ```
   **Virtual machine should be in the OFF state while enabling Nested Virtualization and Mac Spoofing**
 
-3.  Set the execution policy
+1. Set the execution policy
 
   ```powershell
   Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
@@ -181,7 +179,7 @@ Files contained in the mccinstaller.zip file:
   > [!NOTE]
   >  After setting the execution policy, you'll see a warning asking if you wish to change the execution policy. Choose **[A] Yes to All**.
 
-4.  Copy the command from the portal and run it in Windows PowerShell
+1. Copy the command from the portal and run it in Windows PowerShell
 
     ![eMCC img13](images/emcc13.png)
 
@@ -193,7 +191,7 @@ Files contained in the mccinstaller.zip file:
   ><br>
   > <br>[D] Do not run **[R] Run once** [S] Suspend [?] Help (default is "D"):
 
-3.  Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you're creating a new switch.
+1. Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you're creating a new switch.
 
   > [!NOTE]
   > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
@@ -202,11 +200,11 @@ Files contained in the mccinstaller.zip file:
 
   ![eMCC img14](images/emcc14.png)
 
-4.  Rerun the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
+1.  Rerun the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
     ![eMCC img15](images/emcc15.png)
 
-5.  Decide whether you would like to use dynamic or static address for the Eflow VM
+1.  Decide whether you would like to use dynamic or static address for the Eflow VM
 
     ![eMCC img16](images/emcc16.png)
 
@@ -214,33 +212,33 @@ Files contained in the mccinstaller.zip file:
   > Choosing a dynamic IP address might assign a different IP address when the MCC restarts.
   > <br>A static IP address is recommended so you do not have to change this value in your management solution when MCC restarts.
 
-6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
+1.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
 
-7.  Follow the Azure Device Login link and sign into the Azure portal.
+1. Follow the Azure Device Login link and sign into the Azure portal.
 
     ![eMCC img17](images/emcc17.png)
 
-8.  If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
+1. If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
-    1.  You'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
+    1. You'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
 
     ![eMCC img18](images/emcc18.png)
     ![eMCC img19](images/emcc19.png)
 
-9.  Your MCC deployment is now complete.
+1. Your MCC deployment is now complete.
 
     1.  If you don't see any errors, continue to the next section to validate your MCC deployment.
-    2.  After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
-    3.  If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
+    1.  After validating your MCC is properly functional, review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+    1.  If you had errors during your deployment, see the [Common Issues](#common-issues) section in this article.
 
-### Verify proper functioning MCC server
+## Verify proper functioning MCC server
 
 #### Verify Client Side
 
 Connect to the EFLOW VM and check if MCC is properly running:
 
-1.  Open PowerShell as an Administrator
-2.  Enter the following commands:
+1. Open PowerShell as an Administrator
+2. Enter the following commands:
 
 ```powershell
 Connect-EflowVm
@@ -280,17 +278,17 @@ For an Intune deployment, create a Configuration Profile and include the Cache H
 
 ![eMCC img23](images/emcc23.png)
 
-### Common Issues
+## Common Issues
 
 #### PowerShell issues
 
-If you're seeing errors similar to this: “The term ‘Get-Something’ isn't recognized as the name of a cmdlet, function, script file, or operable program.”
+If you're seeing errors similar to this: "The term 'Get-Something' isn't recognized as the name of a cmdlet, function, script file, or operable program."
 
-1.  Ensure you're running Windows PowerShell version 5.x.
+1. Ensure you're running Windows PowerShell version 5.x.
 
-2.  Run \$PSVersionTable and ensure you’re running version 5.x and *not version 6 or 7*.
+1. Run \$PSVersionTable and ensure you're running version 5.x and *not version 6 or 7*.
 
-3.  Ensure you have Hyper-V enabled:
+1. Ensure you have Hyper-V enabled:
 
     **Windows 10:** [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
@@ -302,12 +300,12 @@ Connect to the Connected Cache server and check the list of running IoT Edge mod
 
 ```bash
 Connect-EflowVm
-sudo iotedge list​
+sudo iotedge list
 ```
 
 ![eMCC img24](images/emcc24.png)
 
-If edgeAgent and edgeHub containers are listed, but not “MCC”, you may view the status of the IoT Edge security manager using the command:
+If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the status of the IoT Edge security manager using the command:
 
 ```bash
 sudo journalctl -u iotedge -f
@@ -320,7 +318,7 @@ For example, this command will provide the current status of the starting, stopp
 Use this command to check the IoT Edge Journal
 
 ```bash
-sudo journalctl -u iotedge –f
+sudo journalctl -u iotedge -f
 ```
 
 > [!NOTE]
