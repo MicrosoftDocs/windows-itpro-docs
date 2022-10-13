@@ -157,8 +157,8 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 #### Error: Validation failed
 
--   If you get a Validation failed error message on your portal, it's likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
--   To resolve this error, go to the previous step and choose **(US) West US**.
+- If you get a Validation failed error message on your portal, it's likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
+- To resolve this error, go to the previous step and choose **(US) West US**.
 
     ![eMCC img07](images/emcc07.png)
 
