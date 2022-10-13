@@ -18,20 +18,20 @@ If you're having issues with your MCC, we included a diagnostics script which wi
 
 To run this script:
 
-1.  Navigate to the following folder in the MCC installation files:
+1. Navigate to the following folder in the MCC installation files:
 
-    mccinstaller \> Eflow \> Diagnostics
+    mccinstaller > Eflow > Diagnostics
 
-2.  Run the following commands:
+1. Run the following commands:
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
-.\collectMccDiagnostics.ps1
-```
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+   .\collectMccDiagnostics.ps1
+   ```
 
-3.  The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file which you can share with us (should be “**\<currentpath\>**\\mccdiagnostics\\support_bundle_\$timestamp.tar.gz”)
+1.  The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file which you can share with us. The location should be **\<currentpath\>**\mccdiagnostics\support_bundle_\$timestamp.tar.gz
 
-4.  [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
+1. [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
 
 ## Steps to obtain an Azure Subscription ID
 
@@ -44,7 +44,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
 ## Troubleshooting
 
-If you’re not able to sign up for a Microsoft Azure subscription with the error: **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** See [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
+If you're not able to sign up for a Microsoft Azure subscription with the error: **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** See [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
 
 Also see [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
 
@@ -54,11 +54,11 @@ The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices.
 The runtime sits on the IoT Edge device, and performs management and
 communication operations. The runtime performs several functions:
 
--   Installs and update workloads (Docker containers) on the device.
--   Maintains Azure IoT Edge security standards on the device.
--   Ensures that IoT Edge modules (Docker containers) are always running.
--   Reports module (Docker containers) health to the cloud for remote monitoring.
--   Manages communication between an IoT Edge device and the cloud.
+- Installs and update workloads (Docker containers) on the device.
+- Maintains Azure IoT Edge security standards on the device.
+- Ensures that IoT Edge modules (Docker containers) are always running.
+- Reports module (Docker containers) health to the cloud for remote monitoring.
+- Manages communication between an IoT Edge device and the cloud.
 
 For more information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
@@ -80,43 +80,47 @@ There are multiple methods that can be used to apply a policy to PCs that should
 
 You can either set your MCC IP address or FQDN using:
 
-1.  Registry Key in 1709 and higher -  
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]<br>
+1.  Registry Key (version 1709 and later):  
+    `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization`
+</br>
     "DOCacheHost"=" "  
     
-  From an elevated command prompt:
+    From an elevated command prompt:
 
-  ```
-  reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
-  ```
+    ```
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
+    ```
 
-2.  MDM Path in 1809 or higher:
+1. MDM Path (version 1809 and later):
 
-  .Vendor/MSFT/Policy/Config/DeliveryOptimization/DOCacheHost
+    `.Vendor/MSFT/Policy/Config/DeliveryOptimization/DOCacheHost`
 
-3. In Windows release version 1809 and later, you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, set the Cache Server Hostname (Setting found under Computer Configuration, Administrative Templates, Windows Components, Delivery Optimization) to the IP address of your MCC. For example 10.137.187.38.
+1. In Windows (release version 1809 and later), you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization**. Set the **Cache Server Hostname** to the IP address of your MCC, such as `10.137.187.38`.
 
-    ![eMCC img26](images/emcc26.png)
+   :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting.":::
+
 
 **Verify Content using the DO Client**
 
 To verify that the Delivery Optimization client can download content using MCC, you can use the following steps:
 
-1. Download a game or application from the Microsoft Store.   
+1. Download a game or application from the Microsoft Store.
 
-    ![eMCC img27](images/emcc27.png)
+   :::image type="content" source="./images/ent-mcc-store-example-download.png" alt-text="Screenshot of the Microsoft Store with the game, Angry Birds 2, selected.":::
 
-2. Verify downloads came from MCC by one of two methods:
 
-    - Using PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see BytesFromCacheServer test  
+1. Verify downloads came from MCC by one of two methods:
 
-      ![eMCC img28](images/emcc28.png)
+    - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.   
 
-    - Looking at the Delivery Optimization Activity Monitor
+      :::image type="content" source="./images/ent-mcc-get-deliveryoptimizationstatus.png" alt-text="Screenshot of the output of Get-DeliveryOptimization | FT from PowerShell.":::
 
-      ![eMCC img29](images/emcc29.png)
+    - Using the Delivery Optimization Activity Monitor
+    
+      :::image type="content" source="./images/ent-mcc-delivery-optimization-activity.png" alt-text="Screenshot of the Delivery Optimization Activity Monitor.":::
 
-### Also see
 
-[Microsoft Connected Cache for ISPs](mcc-isp.md)<br>
+### More information
+
+[Microsoft Connected Cache for ISPs](mcc-isp.md)</br>
 [Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)
