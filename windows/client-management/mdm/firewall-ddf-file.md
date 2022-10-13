@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 12/05/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -16,7 +16,7 @@ manager: aaroncz
 
 This topic shows the OMA DM device description framework (DDF) for the **Firewall** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1512,7 +1512,7 @@ ServiceName</Description>
                     <Get />
                     <Replace />
                   </AccessType>
-                  <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value. 
+                  <Description>Consists of one or more comma-delimited tokens specifying the local addresses covered by the rule. "*" is the default value.
 Valid tokens include:
 "*" indicates any local address. If present, this must be the only token included.
 
