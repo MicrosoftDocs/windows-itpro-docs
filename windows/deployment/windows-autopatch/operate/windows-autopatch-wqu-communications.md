@@ -1,5 +1,5 @@
 ---
-title: Windows quality update communications
+title: Windows quality and feature update communications
 description:  This article explains Windows quality update communications
 ms.date: 05/30/2022
 ms.prod: w11
@@ -14,7 +14,7 @@ msreviewer: hathind
 
 # Windows quality update communications
 
-There are three categories of communication that are sent out during a Windows quality update:
+There are three categories of communication that are sent out during a Windows quality and feature update:
 
 - [Standard communications](#standard-communications)
 - [Communications during release](#communications-during-release)
