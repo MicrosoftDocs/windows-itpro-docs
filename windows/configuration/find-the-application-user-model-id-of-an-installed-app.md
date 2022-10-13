@@ -143,7 +143,7 @@ Get-AppAUMID -AppName OneDrive
 # Get the AUMID for Microsoft Word
 Get-AppAUMID -AppName Word
 
-# List all apps and their AUMID in the Start Menu
+# List all apps and their AUMID in the Start menu
 Get-AppAUMID
 ```
 
