@@ -19654,6 +19654,11 @@
      "source_path": "windows/configuration/windows-10-accessibility-for-ITPros.md",
      "redirect_url": "/windows/configuration/windows-accessibility-for-ITPros",
      "redirect_document_id": false
-     }
+     },
+     {
+      "source_path": "windows/deployment/do/mcc-enterprise.md",
+      "redirect_url": "/windows/deployment/do/mcc-enterprise-overview",
+      "redirect_document_id": false
+      }     
   ]
 }

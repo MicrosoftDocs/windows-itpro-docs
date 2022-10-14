@@ -23,7 +23,7 @@ _Applies to_
 ## Overview
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support. Instead, you'll be working directly with the product team to provide feedback on Microsoft Connected Cache. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently an early preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support. Instead, you'll be working directly with the product team to provide feedback on Microsoft Connected Cache. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within operator networks. MCC can be deployed to as many physical servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
 
@@ -735,6 +735,6 @@ For more information on Azure IoT Edge, see the [Azure IoT Edge documentation](/
 
 ## Related articles
 
-[Microsoft Connected Cache for enterprise and education](mcc-enterprise.md)
+[Microsoft Connected Cache for enterprise and education](mcc-enterprise-overview.md)
 
 [Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)

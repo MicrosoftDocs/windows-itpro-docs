@@ -14,7 +14,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 ## Overview
@@ -24,14 +24,14 @@ ms.topic: article
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many physical servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying a client policy using your management tool, such as [Intune](/mem/intune/).
 
-MCC is a hybrid (a mix of on-premises and cloud resources) SaaS solution built as an Azure IoT Edge module; it's a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it's a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
+MCC is a hybrid (a mix of on-premises and cloud resources) SaaS solution built as an Azure IoT Edge module; it's a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it's a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It's built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
 
 Even though your MCC scenario isn't related to IoT, Azure IoT Edge is used as a more generic Linux container, deployment, and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs the following important functions to manage MCC on your edge device: 
 
 1. Installs and updates MCC on your edge device. 
-2. Maintains Azure IoT Edge security standards on your edge device. 
-3. Ensures that MCC is always running. 
-4. Reports MCC health and usage to the cloud for remote monitoring.
+1. Maintains Azure IoT Edge security standards on your edge device. 
+1. Ensures that MCC is always running. 
+1. Reports MCC health and usage to the cloud for remote monitoring.
 
 To deploy a functional MCC to your device, you must obtain the necessary keys that will provision the Connected Cache instance to communicate with Delivery Optimization services and enable the device to cache and deliver content. See [figure 1](#fig1) below for a summary of the architecture of MCC, built using IoT Edge.
 
@@ -42,17 +42,17 @@ For more information about Azure IoT Edge, see [What is Azure IoT Edge](/azure/i
 The following steps describe how MCC is provisioned and used.
 
 1. The Azure Management Portal is used to create MCC nodes.
-2. The MCC container is deployed and provisioned to a server using the installer provided in the portal.
-3. Client policy is configured in your management solution to point to the IP address or FQDN of the cache server.
-4. Microsoft end-user devices make range requests for content from the MCC node.
-5. An MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers content to the client.
-6. Subsequent requests from end-user devices for content come from the cache.
+1. The MCC container is deployed and provisioned to a server using the installer provided in the portal.
+1. Client policy is configured in your management solution to point to the IP address or FQDN of the cache server.
+1. Microsoft end-user devices make range requests for content from the MCC node.
+1. An MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers content to the client.
+1. Subsequent requests from end-user devices for content come from the cache.
 
 If an MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
 <a id="fig1">
 
-![eMCC img01](images/emcc01.png)
+ :::image type="content" source="./images/ent-mcc-overview.png" alt-text="Diagram of the MCC process." lightbox="./images/ent-mcc-overview.png"::: 
 
 </a>Figure 1: **MCC processes**. Each number in the diagram corresponds to the steps described above.
 

@@ -31,9 +31,9 @@ MCC is a hybrid (mix of on-prem and cloud resources) SaaS solution built as an A
 Even though your MCC scenario is not related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage MCC on your edge device:
 
 1. Installs and updates MCC on your edge device.
-2. Maintains Azure IoT Edge security standards on your edge device.
-3. Ensures that MCC is always running.
-4. Reports MCC health and usage to the cloud for remote monitoring.
+1. Maintains Azure IoT Edge security standards on your edge device.
+1. Ensures that MCC is always running.
+1. Reports MCC health and usage to the cloud for remote monitoring.
   
 To deploy a functional MCC to your device, you must obtain the necessary keys to provision the Connected Cache instance that communicates with Delivery Optimization services, and enable the device to cache and deliver content. The architecture of MCC is described below.
   
@@ -42,20 +42,20 @@ For more details information on Azure IoT Edge, please see the Azure IoT Edge [d
 ## How MCC Works  
 
 1. The Azure Management Portal is used to create MCC nodes.
-2. The MCC container is deployed and provisioned to the server using the installer provided in the portal.
-3. Client policy is set in your management solution to point to the IP address or FQDN of the cache server.
-4. Microsoft end-user devices make range requests for content from the MCC node.
-5. The MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
-6. Subsequent requests from end-user devices for content will now come from cache.
-7. If the MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
+1. The MCC container is deployed and provisioned to the server using the installer provided in the portal.
+1. Client policy is set in your management solution to point to the IP address or FQDN of the cache server.
+1. Microsoft end-user devices make range requests for content from the MCC node.
+1. The MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
+1. Subsequent requests from end-user devices for content will now come from cache.
+1. If the MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
-See the following diagram.
+The following diagram displays and overview of how MCC functions:
 
 ![MCC Overview](images/waas-mcc-diag-overview.png#lightbox)
 
 For more information about MCC, see the following articles:
-- [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise.md)
-- [Microsoft Connected Cache for ISPs](mcc-isp-device-provisioning.md)
+- [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise-overview.md)
+- [Microsoft Connected Cache for ISPs](mcc-isp.md)
 
 ## Also see
 
