@@ -4,8 +4,8 @@ description: Securing the operating system includes system security, encryption,
 ms.reviewer: 
 ms.topic: article
 manager: aaroncz
-ms.author: paolomatarazzo
-author: paoloma
+ms.author: paoloma
+author: paolomatarazzo
 ms.collection: M365-security-compliance
 ms.prod: m365-security
 ms.technology: windows-sec
