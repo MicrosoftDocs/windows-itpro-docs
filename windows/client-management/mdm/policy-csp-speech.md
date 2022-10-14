@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Speech policies  
+## Speech policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
+<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**
 
 <!--SupportedSKUs-->
 
@@ -58,7 +58,7 @@ Specifies whether the device will receive updates to the speech recognition and 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Automatic Update of Speech Data*
 -   GP name: *AllowSpeechModelUpdate*
 -   GP path: *Windows Components/Speech*

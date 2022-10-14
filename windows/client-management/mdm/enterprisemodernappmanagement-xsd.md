@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement XSD
 description: In this article, view the EnterpriseModernAppManagement XSD example so you can set application parameters.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article

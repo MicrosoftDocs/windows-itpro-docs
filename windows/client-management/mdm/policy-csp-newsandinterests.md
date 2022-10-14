@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## NewsAndInterests policies  
+## NewsAndInterests policies
 
 <dl>
   <dd>
@@ -27,7 +27,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="newsandinterests-allownewsandinterests"></a>**NewsAndInterests/AllowNewsAndInterests**  
+<a href="" id="newsandinterests-allownewsandinterests"></a>**NewsAndInterests/AllowNewsAndInterests**
 
 <!--SupportedSKUs-->
 
@@ -55,7 +55,7 @@ manager: aaroncz
 
 <!--Description-->
 This policy specifies whether to allow the entire widgets experience, including the content on taskbar.
- 
+
 <!--/Description-->
 
 <!--SupportedValues-->
@@ -68,7 +68,7 @@ The following are the supported values:
 <!--/SupportedValues-->
 
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specifies whether to allow the entire widgets experience, including the content on taskbar*.
 -   GP name: *AllowNewsAndInterests*
 -   GP path: *Network/NewsandInterests*
