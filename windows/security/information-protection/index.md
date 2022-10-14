@@ -4,7 +4,7 @@ description: Learn more about how to protect sensitive data across your organiza
 ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/10/2018
