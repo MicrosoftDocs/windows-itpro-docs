@@ -5,7 +5,6 @@ keywords: notifications, alerts
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
