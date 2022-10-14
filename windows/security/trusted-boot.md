@@ -4,7 +4,7 @@ description: Trusted Boot prevents corrupted components from loading during the 
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
-manager: dansimp 
+manager: aaroncz 
 ms.topic: conceptual
 ms.date: 09/21/2021
 ms.prod: m365-security

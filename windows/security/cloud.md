@@ -4,7 +4,7 @@ description: Get an overview of cloud services supported in Windows 11 and Windo
 ms.reviewer: 
 author: denisebmsft
 ms.author: deniseb
-manager: dansimp 
+manager: aaroncz 
 ms.topic: conceptual
 ms.date: 09/20/2021
 ms.localizationpriority: medium

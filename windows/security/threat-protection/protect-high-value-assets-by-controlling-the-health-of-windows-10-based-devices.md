@@ -2,7 +2,7 @@
 title: Control the health of Windows 10-based devices (Windows 10)
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
 ms.prod: m365-security
 author: dulcemontemayor

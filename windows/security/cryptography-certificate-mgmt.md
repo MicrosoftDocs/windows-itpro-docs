@@ -4,7 +4,7 @@ description: Get an overview of cryptography and certificate management in Windo
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
-manager: dansimp 
+manager: aaroncz 
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.prod: m365-security

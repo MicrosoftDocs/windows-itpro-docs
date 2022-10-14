@@ -3,7 +3,7 @@ title: Zero Trust and Windows device health
 description: Describes the process of Windows device health attestation
 ms.reviewer: 
 ms.topic: article
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
 author: dansimp
 ms.collection: M365-security-compliance
