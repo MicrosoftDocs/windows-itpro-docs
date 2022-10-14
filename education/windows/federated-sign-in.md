@@ -48,10 +48,14 @@ To implement federated sign-in, the following prerequisites must be met:
 To use federated sign-in, the devices must have Internet access. This feature won't work without it, as the authentication is done over the Internet.
 
 ## Enable federated sign-in on devices
-
+<!-- 
 To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:-->
+
+To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies, which can be configured using Microsoft Intune.
 
 To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
 
@@ -66,7 +70,9 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 Assign the policy to a security group that contains as members the devices that require federated sign-in.
 
+<!--
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+
 
 To configure federated sign-in using a provisioning package, use the following settings:
 
@@ -82,6 +88,7 @@ To configure federated sign-in using a provisioning package, use the following s
 Apply the provisioning package to the devices that require federated sign-in.
 
 ---
+-->
 
 ## How to use federated sign-in
 
