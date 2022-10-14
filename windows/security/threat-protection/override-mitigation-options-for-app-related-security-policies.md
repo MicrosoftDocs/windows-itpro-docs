@@ -1,5 +1,5 @@
 ---
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
 title: Override Process Mitigation Options (Windows 10)
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
