@@ -1,12 +1,14 @@
 ---
 title: What's in Set up School PCs provisioning package
-description: Lists the provisioning package settings that are configured in the Set up School PCs app.
+description: List of the provisioning package settings that are configured in the Set up School PCs app.
 ms.date: 08/10/2022
+ms.topic: reference
 appliesto:
 - ✅ <b>Windows 10</b>
 ---  
 
 # What's in my provisioning package?
+
 The Set up School PCs app builds a specialized provisioning package with school-optimized settings.
 
 A key feature of the provisioning package is Shared PC mode. To view the technical framework of Shared PC mode, including the description of each setting, see the [Manage multi-user and guest Windows devices with Shared PC](/windows/configuration/shared-pc-technical) article.

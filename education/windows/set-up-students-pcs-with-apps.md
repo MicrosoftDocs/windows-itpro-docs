@@ -1,6 +1,7 @@
 ---
 title: Provision student PCs with apps
 description: Learn how to use Windows Configuration Designer to easily provision student devices to join Active Directory.
+ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
 - ✅ <b>Windows 10</b>

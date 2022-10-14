@@ -1,6 +1,6 @@
 ---
 title: Configure and secure devices with Microsoft Intune
-description: Configure policies with Microsoft Intune in preparation to device deployment
+description: Learn how to configure policies with Microsoft Intune in preparation for device deployment.
 ms.date: 08/31/2022
 ms.topic: tutorial
 appliesto:

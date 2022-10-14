@@ -1,6 +1,7 @@
 ---
 title: What's new in the Windows Set up School PCs app
 description: Find out about app updates and new features in Set up School PCs.
+ms.topic: whats-new
 ms.date: 08/10/2022
 appliesto:
 - ✅ <b>Windows 10</b>

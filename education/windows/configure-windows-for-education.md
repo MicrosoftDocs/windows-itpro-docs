@@ -1,9 +1,8 @@
 ---
 title: Windows 10 configuration recommendations for education customers
-description: Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school.
+description: Learn how to configure the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school.
 ms.topic: how-to
 ms.date: 08/10/2022
-#ms.reviewer: 
 appliesto:
 - ✅ <b>Windows 10</b>
 ---

@@ -1,7 +1,8 @@
 ---
 title: Reset devices with Autopilot Reset
-description: Gives an overview of Autopilot Reset and how you can enable and use it in your schools.
+description: Learn about Autopilot Reset and how to enable and use it.
 ms.date: 08/10/2022
+ms.topic: how-to
 appliesto:
 - ✅ <b>Windows 10</b>
 ---

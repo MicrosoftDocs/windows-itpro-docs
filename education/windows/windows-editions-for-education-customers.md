@@ -1,7 +1,7 @@
 ---
 title: Windows 10 editions for education customers
-description: Provides an overview of the two Windows 10 editions that are designed for the needs of K-12 institutions.
-keywords: Windows 10 Pro Education, Windows 10 Education, Windows 10 editions, education customers
+description: Learn about the two Windows 10 editions that are designed for the needs of education institutions.
+ms.topic: article
 ms.date: 08/10/2022
 appliesto:
 - ✅ <b>Windows 10</b>

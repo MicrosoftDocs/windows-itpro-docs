@@ -1,6 +1,7 @@
 ---
 title: Set up Windows devices for education
 description: Decide which option for setting up Windows 10 is right for you.
+ms.topic: article
 ms.date: 08/10/2022
 appliesto:
 - ✅ <b>Windows 10</b>
@@ -18,7 +19,6 @@ You can use the following diagram to compare the tools.
 
 ![Which tool to use to set up Windows 10.](images/suspcs/suspc_wcd_featureslist.png)
 
-
 ## In this section
 
 - [Use the Set up School PCs app](use-set-up-school-pcs-app.md)
@@ -26,12 +26,7 @@ You can use the following diagram to compare the tools.
 - [Set up student PCs to join domain](set-up-students-pcs-to-join-domain.md)
 - [Provision student PCs with apps](set-up-students-pcs-with-apps.md)
 
-
 ## Related topics
 
 [Take tests in Windows](take-tests-in-windows.md)
-
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
-
-
-

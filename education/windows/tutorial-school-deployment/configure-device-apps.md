@@ -1,6 +1,6 @@
 ---
 title: Configure applications with Microsoft Intune
-description: Configure applications with Microsoft Intune in preparation to device deployment.
+description: Learn how to configure applications with Microsoft Intune in preparation for device deployment.
 ms.date: 08/31/2022
 ms.topic: tutorial
 appliesto:

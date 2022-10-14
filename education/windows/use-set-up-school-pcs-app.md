@@ -1,6 +1,7 @@
 ---
 title: Use Set up School PCs app
 description: Learn how to use the Set up School PCs app and apply the provisioning package.
+ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
 - ✅ <b>Windows 10</b>
