@@ -2,7 +2,6 @@
 title: Payment methods for commercial customers
 description: Learn what payment methods are available in Store for Business and M365 admin center
 keywords: payment method, credit card, debit card, add credit card, update payment method
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

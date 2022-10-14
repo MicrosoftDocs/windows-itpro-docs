@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## TaskScheduler policies  
+## TaskScheduler policies
 
 <dl>
   <dd>
@@ -29,7 +29,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="taskscheduler-enablexboxgamesavetask"></a>**TaskScheduler/EnableXboxGameSaveTask**  
+<a href="" id="taskscheduler-enablexboxgamesavetask"></a>**TaskScheduler/EnableXboxGameSaveTask**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:

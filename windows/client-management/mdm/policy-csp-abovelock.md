@@ -8,7 +8,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## AboveLock policies  
+## AboveLock policies
 
 <dl>
   <dd>
@@ -33,7 +33,7 @@ manager: aaroncz
 
 
 <!--Policy-->
-<a href="" id="abovelock-allowcortanaabovelock"></a>**AboveLock/AllowCortanaAboveLock**  
+<a href="" id="abovelock-allowcortanaabovelock"></a>**AboveLock/AllowCortanaAboveLock**
 
 <!--SupportedSKUs-->
 
@@ -62,7 +62,7 @@ Added in Windows 10, version 1607. Specifies whether or not the user can intera
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Cortana above lock screen*
 -   GP name: *AllowCortanaAboveLock*
 -   GP path: *Windows Components/Search*
@@ -81,7 +81,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**  
+<a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**
 
 <!--SupportedSKUs-->
 

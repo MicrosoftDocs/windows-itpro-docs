@@ -1,16 +1,8 @@
 ---
 title: Configure and secure devices with Microsoft Intune
-description: Configure policies with Microsoft Intune in preparation to device deployment
+description: Learn how to configure policies with Microsoft Intune in preparation for device deployment.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
@@ -62,7 +54,7 @@ Settings that are commonly configured for student devices include:
 
 - Wallpaper and lock screen background. See: [Lock screen and desktop][INT-7]
 - Wi-Fi connections. See: [Add Wi-Fi profiles][INT-8]
-- Enablement of the integrated testing and assessment solution *Take a test*. See: [Add Take a Test profile][INT-9]
+- Enablement of the integrated testing and assessment solution *Take a Test*. See: [Add Take a Test profile][INT-9]
 
 For more information, see [Windows device settings in Intune for Education][INT-3].
 

@@ -4,7 +4,6 @@ description: You can configure a mobile device management (MDM) tool to synchron
 ms.assetid: 006F5FB1-E688-4769-BD9A-CFA6F5829016
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

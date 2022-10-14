@@ -16,7 +16,7 @@ appliesto:
 - ✅ <b>Hybrid deployment</b>
 - ✅ <b>Cloud Kerberos trust</b>
 ---
-# Hybrid Cloud Kerberos Trust Deployment (Preview)
+# Hybrid Cloud Kerberos Trust Deployment
 
 Windows Hello for Business replaces username and password Windows sign-in with strong authentication using an asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
 
@@ -230,6 +230,30 @@ After a successful MFA, the provisioning flow asks the user to create and valida
 ### Sign-in
 
 Once a user has set up a PIN with cloud Kerberos trust, it can be used immediately for sign-in. On a Hybrid Azure AD joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached logon can be used for subsequent unlocks without line of sight or network connectivity.
+
+## Migrate from key trust deployment model to cloud Kerberos trust
+
+If you deployed WHFB using the **key trust** deployment model, and want to migrate to the **cloud Kerberos trust** deployment model, follow these steps:
+
+1. [Set up Azure AD Kerberos in your hybrid environment](#deploy-azure-ad-kerberos)
+1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy)
+1. For hybrid Azure AD joined devices, sign out and sign in the device using Windows Hello for Business with line of sight to a domain controller (DC). Without line of sight to DC, even when the policy is set to "UseCloudTrustForOnPremAuth", the system will fall back to key trust if cloud Kerberos trust login fails
+
+## Migrate from certificate trust deployment model to cloud Kerberos trust
+
+> [!IMPORTANT]
+> There is no direct migration path from certificate trust deployment to cloud Kerberos trust deployment.
+
+If you have deployed WHFB using a **certificate trust** deployment model, and want to use **cloud Kerberos trust**, you will need to clean up the existing deployments and redeploy by following these steps:
+
+1. Disable the certificate trust policy
+1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy)
+1. Remove the certificate trust credential using the command `certutil -deletehellocontainer` from the user context
+1. Reboot or sign out and sign back in
+1. Provision Windows Hello for Business (Enroll PIN/Face/Fingerprint)
+
+> [!NOTE]
+> For hybrid Azure AD joined devices, sign in with new credentials while having line of sight to a DC.
 
 ## Troubleshooting
 
