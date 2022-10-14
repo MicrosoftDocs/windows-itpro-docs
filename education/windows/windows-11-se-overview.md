@@ -84,7 +84,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
 | CA Secure Browser                       | 14.0.0            | Win32    | Cambium Development          |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
-| CKAuthenticator                         | 3.6               | Win32    | Content Keeper               |
+| CKAuthenticator                         | 3.6+              | Win32    | Content Keeper               |
 | Class Policy                            | 114.0.0           | Win32    | Class Policy                 |
 | Classroom.cloud                         | 1.40.0004         | Win32    | NetSupport                   |
 | CoGat Secure Browser                    | 11.0.0.19         | Win32    | Riverside Insights           |
