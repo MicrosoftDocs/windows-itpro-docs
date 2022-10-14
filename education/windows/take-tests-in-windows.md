@@ -1,16 +1,8 @@
 ---
 title: Take tests and assessments in Windows
-description: Description of the built-in Take a Test app for Windows and how to use it.
+description: Learn about the built-in Take a Test app for Windows and how to use it.
 ms.date: 09/30/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: conceptual
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
-manager: aaroncz
-ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>

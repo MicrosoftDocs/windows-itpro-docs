@@ -1,16 +1,8 @@
 ---
-title: Introduction
-description: Introduction to deployment and management of Windows devices in education environments
+title: Introduction to the tutorial deploy and manage Windows devices in a school
+description: Introduction to deployment and management of Windows devices in education environments.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: conceptual
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
 ---
 
 # Tutorial: deploy and manage Windows devices in a school
