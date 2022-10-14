@@ -3,14 +3,14 @@ title: Network security Allow LocalSystem NULL session fallback (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Network security Allow LocalSystem NULL session fallback security policy setting.
 ms.assetid: 5b72edaa-bec7-4572-b6f0-648fc38f5395
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

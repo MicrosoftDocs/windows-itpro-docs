@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Handwriting policies  
+## Handwriting policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="handwriting-paneldefaultmodedocked"></a>**Handwriting/PanelDefaultModeDocked**  
+<a href="" id="handwriting-paneldefaultmodedocked"></a>**Handwriting/PanelDefaultModeDocked**
 
 <!--SupportedSKUs-->
 
@@ -64,7 +64,7 @@ The docked mode is especially useful in Kiosk mode, where you don't expect the e
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Handwriting Panel Default Mode Docked*
 -   GP name: *PanelDefaultModeDocked*
 -   GP path: *Windows Components/Handwriting*

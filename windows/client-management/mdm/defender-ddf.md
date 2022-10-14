@@ -1,7 +1,7 @@
 ---
 title: Defender DDF file
 description: Learn how the OMA DM device description framework (DDF) for the Defender configuration service provider is used.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -16,7 +16,7 @@ ms.date: 07/23/2021
 
 This article shows the OMA DM device description framework (DDF) for the Defender configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 

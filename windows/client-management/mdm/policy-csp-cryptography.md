@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Cryptography policies  
+## Cryptography policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
+<a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**
 
 <!--SupportedSKUs-->
 
@@ -65,7 +65,7 @@ This policy setting allows or disallows the Federal Information Processing Stand
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
@@ -87,7 +87,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
+<a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**
 
 <!--SupportedSKUs-->
 

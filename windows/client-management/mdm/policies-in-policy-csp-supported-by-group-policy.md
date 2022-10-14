@@ -1,7 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -13,12 +13,6 @@ ms.date: 07/18/2019
 ---
 
 # Policies in Policy CSP supported by Group Policy
-
-> [!div class="op_single_selector"]
-> 
-> - [Policies in Policy CSP supported by Group Policy]()
-> - [ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
->
 
 - [AboveLock/AllowCortanaAboveLock](./policy-csp-abovelock.md#abovelock-allowcortanaabovelock)
 - [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)

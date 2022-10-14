@@ -3,14 +3,14 @@ title: Run the Automatically Generate Rules wizard (Windows)
 description: This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 ms.assetid: 8cad1e14-d5b2-437c-8f88-70cffd7b3d8e
 ms.reviewer: 
-ms.author: macapara
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

@@ -3,14 +3,14 @@ title: Trust computer and user accounts for delegation (Windows 10)
 description: Learn about best practices, security considerations and more for the security policy setting, Enable computer and user accounts to be trusted for delegation.
 ms.assetid: 524062d4-1595-41f3-8ce1-9c85fd21497b
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
