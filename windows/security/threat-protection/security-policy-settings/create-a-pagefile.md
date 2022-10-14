@@ -3,14 +3,14 @@ title: Create a pagefile - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a pagefile security policy setting.
 ms.assetid: dc087897-459d-414b-abe0-cd86c8dccdea
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

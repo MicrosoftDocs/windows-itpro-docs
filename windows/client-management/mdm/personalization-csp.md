@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 06/28/2022
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -40,14 +40,14 @@ Personalization
 ----LockScreenImageUrl
 ----LockScreenImageStatus
 ```
-<a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**  
+<a href="" id="personalization"></a>**./Vendor/MSFT/Personalization**
 <p>Defines the root node for the Personalization configuration service provider.</p>
 
-<a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
+<a href="" id="desktopimageurl"></a>**DesktopImageUrl**
 <p>Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
 <p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
-<a href="" id="desktopimagestatus"></a>**DesktopImageStatus**  
+<a href="" id="desktopimagestatus"></a>**DesktopImageStatus**
 <p>Represents the status of the desktop image. Valid values:</p>
 <ul>
 <li>1 - Successfully downloaded or copied.</li>
@@ -63,12 +63,12 @@ Personalization
 > [!Note]
 > This setting is only used to query status. To set the image, use the DesktopImageUrl setting.
 
-<a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**  
+<a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**
 <p>Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
 <p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 
-<a href="" id="lockscreenimagestatus"></a>**LockScreenImageStatus**  
+<a href="" id="lockscreenimagestatus"></a>**LockScreenImageStatus**
 <p>Represents the status of the lock screen image. Valid values:</p>
 <ul>
 <li>1 - Successfully downloaded or copied.</li>
@@ -120,7 +120,7 @@ Personalization
         <Data>https://www.contoso.com/lockscreenimage.JPG</Data>
       </Item>
     </Replace>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```

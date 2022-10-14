@@ -7,11 +7,11 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 03/23/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
-# AccountManagement DDF file 
+# AccountManagement DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **AccountManagement** configuration service provider.
 

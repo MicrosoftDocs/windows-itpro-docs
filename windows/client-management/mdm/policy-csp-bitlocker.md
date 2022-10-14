@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -22,7 +22,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## BitLocker policies  
+## BitLocker policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
+<a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**
 
 <!--SupportedSKUs-->
 

@@ -3,14 +3,14 @@ title: Only elevate UIAccess app installed in secure location (Windows 10)
 description: Learn about best practices and more for the policy setting, User Account Control Only elevate UIAccess applications that are installed in secure locations.
 ms.assetid: 4333409e-a5be-4f2f-8808-618f53abd22c
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

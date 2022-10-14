@@ -3,14 +3,14 @@ title: System objects Require case insensitivity for non-Windows subsystems (Win
 description: Best practices, security considerations and more for the security policy setting, System objects Require case insensitivity for non-Windows subsystems.
 ms.assetid: 340d6769-8f33-4067-8470-1458978d1522
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
