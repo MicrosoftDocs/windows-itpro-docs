@@ -3,14 +3,14 @@ title: Microsoft network server Server SPN target name validation level (Windows
 description: Best practices, security considerations, and more for the security policy setting, Microsoft network server Server SPN target name validation level.
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

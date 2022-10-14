@@ -3,14 +3,14 @@ title: Network access Remotely accessible registry paths and subpaths (Windows 1
 description: Describes best practices, location, values, and security considerations for the policy setting, Network access Remotely accessible registry paths and subpaths.
 ms.assetid: 3fcbbf70-a002-4f85-8e86-8dabad21928e
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

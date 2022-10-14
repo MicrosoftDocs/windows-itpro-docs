@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/25/2021
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## WindowsAutoPilot policies  
+## WindowsAutoPilot policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsautopilot-enableagilitypostenrollment"></a>**WindowsAutoPilot/EnableAgilityPostEnrollment**  
+<a href="" id="windowsautopilot-enableagilitypostenrollment"></a>**WindowsAutoPilot/EnableAgilityPostEnrollment**
 
 <!--SupportedSKUs-->
 

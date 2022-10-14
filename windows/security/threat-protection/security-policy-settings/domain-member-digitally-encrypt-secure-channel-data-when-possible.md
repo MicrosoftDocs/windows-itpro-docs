@@ -3,14 +3,14 @@ title: Domain member Digitally encrypt secure channel data (when possible) (Wind
 description: Best practices, security considerations, and more for the security policy setting, Domain member Digitally encrypt secure channel data (when possible).
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

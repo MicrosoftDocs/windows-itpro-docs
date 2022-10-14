@@ -5,12 +5,12 @@ ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: mjcaparas
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/13/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: macapara
+manager: aaroncz
+ms.author: vinpa
 ms.technology: windows-sec
 ---
 

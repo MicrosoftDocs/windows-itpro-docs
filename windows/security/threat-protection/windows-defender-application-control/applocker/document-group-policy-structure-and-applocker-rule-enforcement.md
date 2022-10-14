@@ -3,13 +3,13 @@ title: Document Group Policy structure & AppLocker rule enforcement (Windows)
 description: This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
 ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

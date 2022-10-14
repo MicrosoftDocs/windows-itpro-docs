@@ -3,14 +3,14 @@ title: Using advanced security auditing options to monitor dynamic access contro
 description: Domain admins can set up advanced security audit options in Windows 10 to target specific users, or monitor potentially significant activity on multiple devices
 ms.assetid: 0d2c28ea-bdaf-47fd-bca2-a07dce5fed37
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
