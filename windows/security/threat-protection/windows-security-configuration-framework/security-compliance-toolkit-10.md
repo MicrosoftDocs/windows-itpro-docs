@@ -3,9 +3,9 @@ title: Microsoft Security Compliance Toolkit 1.0 Guide
 description: This article describes how to use Security Compliance Toolkit 1.0 in your organization
 ms.prod: m365-security
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: vinpa
+author: vinaypamnani-msft
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/14/2022

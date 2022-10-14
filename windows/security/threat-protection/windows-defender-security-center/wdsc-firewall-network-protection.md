@@ -7,11 +7,11 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date:
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.date: 
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.technology: windows-sec
 ---
 

@@ -8,9 +8,9 @@ ms.author: paoloma
 ms.date: 10/16/2017
 manager: aaroncz
 ms.topic: article
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b> 
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 # How Windows Hello for Business works in Windows devices
 

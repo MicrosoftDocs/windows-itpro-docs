@@ -5,14 +5,14 @@ keywords: virtualization, security, malware
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/20/2017
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.technology: windows-sec
 ---
 

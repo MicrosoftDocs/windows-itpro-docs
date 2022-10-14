@@ -3,14 +3,14 @@ title: User Rights Assignment (Windows 10)
 description: Provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in Windows.
 ms.assetid: 99340252-60be-4c79-b0a5-56fbe1a9b0c5
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

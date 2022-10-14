@@ -3,14 +3,14 @@ title: Access this computer from the network - security policy setting (Windows 
 description: Describes the best practices, location, values, policy management, and security considerations for the Access this computer from the network security policy setting.
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

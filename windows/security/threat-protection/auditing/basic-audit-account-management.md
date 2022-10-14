@@ -3,14 +3,14 @@ title: Audit account management (Windows 10)
 description: Determines whether to audit each event of account management on a device.
 ms.assetid: 369197E1-7E0E-45A4-89EA-16D91EF01689
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

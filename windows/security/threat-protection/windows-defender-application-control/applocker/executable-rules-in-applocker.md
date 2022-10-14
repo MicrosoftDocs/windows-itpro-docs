@@ -3,14 +3,14 @@ title: Executable rules in AppLocker (Windows)
 description: This topic describes the file formats and available default rules for the executable rule collection.
 ms.assetid: 65e62f90-6caa-48f8-836a-91f8ac9018ee
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
