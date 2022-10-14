@@ -2,8 +2,8 @@
 title: Cryptography and Certificate Management
 description: Get an overview of cryptography and certificate management in Windows
 search.appverid: MET150  
-author: denisebmsft
-ms.author: deniseb
+author: paolomatarazzo
+ms.author: paoloma
 manager: aaroncz 
 ms.topic: conceptual
 ms.date: 09/07/2021

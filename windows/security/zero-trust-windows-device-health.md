@@ -4,8 +4,8 @@ description: Describes the process of Windows device health attestation
 ms.reviewer: 
 ms.topic: article
 manager: aaroncz
-ms.author: dansimp
-author: dansimp
+ms.author: paoloma
+author: paolomatarazzo
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.prod: m365-security

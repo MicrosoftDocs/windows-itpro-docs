@@ -3,8 +3,8 @@ title: Windows hardware security
 description: Get an overview of hardware security in Windows 11 and Windows 10
 ms.reviewer: 
 manager: aaroncz
-ms.author: dansimp
-author: dansimp
+ms.author: vinpa
+author: vinaypamnani-msft
 ms.collection: M365-security-compliance
 ms.prod: m365-security
 ms.technology: windows-sec

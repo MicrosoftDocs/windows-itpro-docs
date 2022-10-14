@@ -4,8 +4,8 @@ description: Get an overview of security foundations, including the security dev
 ms.reviewer: 
 ms.topic: article
 manager: aaroncz
-ms.author: deniseb
-author: denisebmsft
+ms.author: paoloma
+author: paolomatarazzo
 ms.collection: M365-security-compliance
 ms.prod: m365-security
 ms.technology: windows-sec
