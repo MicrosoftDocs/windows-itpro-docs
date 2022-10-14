@@ -200,15 +200,15 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
     If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
-   :::image type="content" source="./images/ent-mcc-script-new-switch.png" alt-text="Screenshot of the installer script running in PowerShell when a new switch is created.":::
+   :::image type="content" source="./images/ent-mcc-script-new-switch.png" alt-text="Screenshot of the installer script running in PowerShell when a new switch is created." lightbox="./images/ent-mcc-script-new-switch.png":::
 
 1. Rerun the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
-     :::image type="content" source="./images/ent-mcc-script-existing-switch.png" alt-text="Screenshot of the installer script running in PowerShell when using an existing switch.":::
+     :::image type="content" source="./images/ent-mcc-script-existing-switch.png" alt-text="Screenshot of the installer script running in PowerShell when using an existing switch." lightbox="./images/ent-mcc-script-existing-switch.png":::
 
 1. Decide whether you would like to use dynamic or static address for the Eflow VM
 
-    :::image type="content" source="./images/ent-mcc-script-dynamic-address.png" alt-text="Screenshot of the installer script running in PowerShell asking if you'd like to use a dynamic address.":::
+    :::image type="content" source="./images/ent-mcc-script-dynamic-address.png" alt-text="Screenshot of the installer script running in PowerShell asking if you'd like to use a dynamic address." lightbox="./images/ent-mcc-script-dynamic-address.png":::
 
     > [!NOTE]
     > Choosing a dynamic IP address might assign a different IP address when the MCC restarts. A static IP address is recommended so you don't have to change this value in your management solution when MCC restarts.
@@ -217,14 +217,14 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 1. Follow the Azure Device Login link and sign into the Azure portal.
 
-     :::image type="content" source="./images/ent-mcc-script-device-code.png" alt-text="Screenshot of the installer script running in PowerShell displaying the code and URL to use for the Azure portal.":::
+     :::image type="content" source="./images/ent-mcc-script-device-code.png" alt-text="Screenshot of the installer script running in PowerShell displaying the code and URL to use for the Azure portal." lightbox="./images/ent-mcc-script-device-code.png":::
 
 1. If this is your first MCC deployment, select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1. You'll be shown a list of existing IoT Hubs in your Azure Subscription. Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter "1"**
 
-       :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use.":::
-       :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell.":::
+       :::image type="content" source="./images/ent-mcc-script-select-hub.png" alt-text="Screenshot of the installer script running in PowerShell prompting you to select which IoT Hub to use." lightbox="./images/ent-mcc-script-select-hub.png":::
+       :::image type="content" source="./images/ent-mcc-script-complete.png" alt-text="Screenshot of the installer script displaying the completion summary in PowerShell." lightbox="./images/ent-mcc-script-complete.png":::
 
 
 1. Your MCC deployment is now complete.
@@ -248,7 +248,7 @@ Connect to the EFLOW VM and check if MCC is properly running:
    iotedge list
    ```
 
-   :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell.":::
+   :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell." lightbox="./images/ent-mcc-connect-eflowvm.png":::
 
 You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy.
 
@@ -262,9 +262,9 @@ wget [http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.win
 
 A successful test result will display a status code of 200 along with additional information.
 
-:::image type="content" source="./images/ent-mcc-verify-server-ssh.png" alt-text="Screenshot of a successful wget with an SSH client.":::
+:::image type="content" source="./images/ent-mcc-verify-server-ssh.png" alt-text="Screenshot of a successful wget with an SSH client." lightbox="./images/ent-mcc-verify-server-ssh.png":::
 
- :::image type="content" source="./images/ent-mcc-verify-server-powershell.png" alt-text="Screenshot of a successful wget using PowerShell.":::
+ :::image type="content" source="./images/ent-mcc-verify-server-powershell.png" alt-text="Screenshot of a successful wget using PowerShell." lightbox="./images/ent-mcc-verify-server-powershell.png":::
 
 Similarly, enter the following URL from a browser in the network:
 
@@ -274,15 +274,15 @@ If the test fails, see the [common issues](#common-issues) section for more info
 
 ### Intune (or other management software) configuration for MCC
 
-For an Intune deployment, create a Configuration Profile and include the Cache Host eFlow IP Address or FQDN:
+For an [Intune](/mem/intune/) deployment, create a **Configuration Profile** and include the Cache Host eFlow IP Address or FQDN:
 
-![eMCC img23](images/emcc23.png)
+:::image type="content" source="./images/ent-mcc-intune-do.png" alt-text="Screenshot of Intune showing the Delivery Optimization cache server host names.":::
 
 ## Common Issues
 
 #### PowerShell issues
 
-If you're seeing errors similar to this: "The term 'Get-Something' isn't recognized as the name of a cmdlet, function, script file, or operable program."
+If you're seeing errors similar to this: `The term Get-<Something> isn't recognized as the name of a cmdlet, function, script file, or operable program.`
 
 1. Ensure you're running Windows PowerShell version 5.x.
 
@@ -303,7 +303,7 @@ Connect-EflowVm
 sudo iotedge list
 ```
 
-![eMCC img24](images/emcc24.png)
+:::image type="content" source="./images/ent-mcc-iotedge-list.png" alt-text="Screenshot of the iotedge list command." lightbox="./images/ent-mcc-iotedge-list.png":::
 
 If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the status of the IoT Edge security manager using the command:
 
@@ -311,9 +311,9 @@ If edgeAgent and edgeHub containers are listed, but not "MCC", you may view the 
 sudo journalctl -u iotedge -f
 ```
 
-For example, this command will provide the current status of the starting, stopping of a container, or the container pull and start as is shown in the sample below:  
+For example, this command will provide the current status of the starting, stopping of a container, or the container pull and start.  
 
-![eMCC img25](images/emcc25.png)
+:::image type="content" source="./images/ent-mcc-journalctl.png" alt-text="Screenshot of the output from journalctl -u iotedge -f." lightbox="./images/ent-mcc-journalctl.png":::
 
 Use this command to check the IoT Edge Journal
 
