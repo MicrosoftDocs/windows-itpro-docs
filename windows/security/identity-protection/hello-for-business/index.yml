@@ -65,6 +65,8 @@ landingContent:
             url: hello-identity-verification.md
       - linkListType: how-to-guide
         links:
+          - text: Hybrid Cloud Kerberos Trust Deployment
+            url: hello-hybrid-cloud-kerberos-trust.md
           - text: Hybrid Azure AD Joined Key Trust Deployment
             url: hello-hybrid-key-trust.md
           - text: Hybrid Azure AD Joined Certificate Trust Deployment
