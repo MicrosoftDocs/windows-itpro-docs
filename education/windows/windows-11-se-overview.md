@@ -1,16 +1,8 @@
 ---
 title: Windows 11 SE Overview
-description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn about Windows 11 SE, and the apps that are included with the operating system.
+ms.topic: article
 ms.date: 09/12/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 11 SE</b>
 ---
