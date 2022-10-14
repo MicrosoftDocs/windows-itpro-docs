@@ -3,14 +3,14 @@ title: AppLocker settings (Windows)
 description: This topic for the IT professional lists the settings used by AppLocker.
 ms.assetid: 9cb4aa19-77c0-4415-9968-bd07dab86839
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

@@ -3,14 +3,14 @@ title: Behavior of the elevation prompt for standard users (Windows 10)
 description: Learn about best practices, security considerations, and more for the policy setting, User Account Control Behavior of the elevation prompt for standard users.
 ms.assetid: 1eae7def-8f6c-43b6-9474-23911fdc01ba
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

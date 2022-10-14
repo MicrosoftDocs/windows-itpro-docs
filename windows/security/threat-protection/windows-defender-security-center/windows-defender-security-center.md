@@ -4,10 +4,10 @@ description: The Windows Security app brings together common Windows security fe
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.technology: windows-sec
 ---
 

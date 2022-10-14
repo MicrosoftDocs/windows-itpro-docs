@@ -1,7 +1,7 @@
 ---
 title: Update CSP
 description: Learn how the Update configuration service provider (CSP) enables IT administrators to manage and control the rollout of new updates.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -227,4 +227,4 @@ Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUp
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

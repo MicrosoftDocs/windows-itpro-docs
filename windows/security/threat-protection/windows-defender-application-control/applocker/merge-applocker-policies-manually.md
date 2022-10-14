@@ -3,14 +3,14 @@ title: Merge AppLocker policies manually (Windows)
 description: This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
 ms.assetid: 3605f293-e5f2-481d-8efd-775f9f23c30f
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

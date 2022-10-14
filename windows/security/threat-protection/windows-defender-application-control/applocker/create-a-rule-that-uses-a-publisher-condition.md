@@ -3,14 +3,14 @@ title: Create a rule that uses a publisher condition (Windows)
 description: This topic for IT professionals shows how to create an AppLocker rule with a publisher condition.
 ms.assetid: 345ad45f-2bc1-4c4c-946f-17804e29f55b
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
