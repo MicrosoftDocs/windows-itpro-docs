@@ -3,14 +3,14 @@ title: Administer security policy settings (Windows 10)
 description: This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 ms.assetid: 7617d885-9d28-437a-9371-171197407599
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

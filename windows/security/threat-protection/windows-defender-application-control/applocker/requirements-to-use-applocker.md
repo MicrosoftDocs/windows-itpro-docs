@@ -3,14 +3,14 @@ title: Requirements to use AppLocker (Windows)
 description: This topic for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 ms.assetid: dc380535-071e-4794-8f9d-e5d1858156f0
 ms.reviewer: 
-ms.author: macapara
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

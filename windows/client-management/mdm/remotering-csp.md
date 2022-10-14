@@ -1,7 +1,7 @@
 ---
 title: RemoteRing CSP
 description: The RemoteRing CSP can be used to remotely trigger a device to produce an audible ringing sound regardless of the volume that's set on the device.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -32,7 +32,7 @@ Root
 RemoteRing
 ----Ring
 ```
-<a href="" id="ring"></a>**Ring**  
+<a href="" id="ring"></a>**Ring**
 Required. The node accepts requests to ring the device.
 
 The supported operation is Exec.

@@ -3,14 +3,14 @@ title: Audit logon events (Windows 10)
 description: Determines whether to audit each instance of a user logging on to or logging off from a device.
 ms.assetid: 78B5AFCB-0BBD-4C38-9FE9-6B4571B94A35
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
