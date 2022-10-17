@@ -1,7 +1,6 @@
 ---
 title: Whats new in Microsoft Store for Business and Education
 description: Learn about newest features in Microsoft Store for Business and Microsoft Store for Education.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

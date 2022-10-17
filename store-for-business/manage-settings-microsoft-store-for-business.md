@@ -4,7 +4,6 @@ description: You can add users and groups, as well as update some of the setting
 ms.assetid: E3283D77-4DB2-40A9-9479-DDBC33D5A895
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

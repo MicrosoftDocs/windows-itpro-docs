@@ -4,7 +4,7 @@ description: Kernel DMA Protection protects PCs against drive-by Direct Memory A
 ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri

@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
 ms.technology: windows-sec
 ---
