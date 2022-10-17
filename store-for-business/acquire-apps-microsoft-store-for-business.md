@@ -1,7 +1,6 @@
 ---
 title: Acquire apps in Microsoft Store for Business (Windows 10)
 description: As an admin, you can acquire apps from the Microsoft Store for Business for your employees. Some apps are free, and some have a price. For info on app types that are supported, see Apps in the Microsoft Store for Business.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

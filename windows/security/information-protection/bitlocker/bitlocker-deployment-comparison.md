@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: lovina-saldanha
 ms.author: v-lsaldanha
-manager: dansimp
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/20/2021

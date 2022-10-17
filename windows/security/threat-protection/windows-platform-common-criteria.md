@@ -4,7 +4,7 @@ description: This topic details how Microsoft supports the Common Criteria certi
 ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
