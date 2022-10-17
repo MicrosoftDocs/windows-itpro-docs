@@ -4,7 +4,6 @@ description: The private store is a feature in Microsoft Store for Business and 
 ms.assetid: C4644035-845C-4C84-87F0-D87EA8F5BA19
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
