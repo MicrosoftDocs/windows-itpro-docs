@@ -29,7 +29,7 @@ sections:
       - question: What will Microsoft Connected Cache do for me? How will it impact our customers?
         answer: As an ISP, your network can benefit from reduced load on your backbone and improve customer download experience for supported Microsoft static content. It will also help you save on CDN costs.  
       - question: Is there a non-disclosure agreement to sign?
-        answer: No non-disclosure agreement is required.
+        answer: No, a non-disclosure agreement isn't required.
       - question: What are the prerequisites and hardware requirements?
         answer: | 
          - Azure subscription  
@@ -37,7 +37,7 @@ sections:
 
          We have one customer who is able to achieve 40-Gbps egress rate using the following hardware specification:  
           - Dell PowerEdge R330  
-          - 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40 GHz , total 32 core  
+          - 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40 GHz, total 32 core  
           - 48 GB, Micron Technology 18ASF1G72PDZ-2G1A1, Speed: 2133 MT/s  
           - 4 - Transcend SSD230s 1 TB SATA Drives  
           Intel Corporation Ethernet 10G 2P X520 Adapter (Link Aggregated)
@@ -46,7 +46,7 @@ sections:
       - question: Can we use hard drives instead of SSDs?
         answer: We highly recommend using SSDs as Microsoft Connected Cache is a read intensive application. We also recommend using multiple drives to improve performance.  
       - question: Will I need to manually enter the CIDR blocks? If I have multiple cache nodes, should I configure a subset of CIDR blocks to each cache node?
-        answer: You can choose route your traffic using manual CIDR blocks or BGP. If you have multiple Microsoft Connected Cache(s), you can allocate subsets of CIDR blocks to each cache node if you wish. However, since Microsoft Connected Cache has automatic load balancing, we recommend adding all of your traffic to all of your cache nodes.  
+        answer: You can choose to route your traffic using manual CIDR blocks or BGP. If you have multiple Microsoft Connected Cache(s), you can allocate subsets of CIDR blocks to each cache node if you wish. However, since Microsoft Connected Cache has automatic load balancing, we recommend adding all of your traffic to all of your cache nodes.  
       - question: Should I add any load balancing mechanism?
         answer: You don't need to add any load balancing. Our service will take care of routing traffic if you have multiple cache nodes serving the same CIDR blocks based on the reported health of the cache node.  
       - question: How many Microsoft Connected Cache instances will I need? How do we set up if we support multiple countries?
@@ -70,8 +70,11 @@ sections:
       - question: What CDNs will Microsoft Connected Cache pull content from?
         answer: | 
          Microsoft relies on a dynamic mix of 1st and 3rd party CDN providers to ensure enough capacity, redundancy, and performance for the delivery of Microsoft served content.  Though we don't provide lists of the CDN vendors we utilize as they can change without notice, our endpoints are public knowledge.  If someone were to perform a series of DNS lookups against our endpoints (tlu.dl.delivery.mp.microsoft.com for example), they would be able to determine which CDN or CDNs were in rotation at a given point in time:
+         
          $ dig +noall +answer tlu.dl.delivery.mp.microsoft.com | grep -P "IN\tA"
+
          c-0001.c-msedge.net.    20      IN      A       13.107.4.50
 
          $ whois 13.107.4.50|grep "Organization:"
+         
          Organization:   Microsoft Corporation (MSFT)

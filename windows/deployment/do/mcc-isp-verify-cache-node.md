@@ -15,11 +15,11 @@ ms.topic: article
 
 # Verify cache node functionality and monitor health and performance
 
-This article details how to verify that your cache node(s) are functioning properly and serving traffic. In addition, this article details 
+This article details how to verify that your cache node(s) are functioning properly and serving traffic. This article also details how to monitor your cache nodes. 
 
 ## Verify functionality on Azure portal
 
-Log into [Azure portal](https://www.portal.azure.com) and navigate to the **Overview** page. Select the **Monitoring** tab to verify the functionality of your server(s) by validating the number of healthy nodes shown. If you see any **Unhealthy nodes**, select the **Diagnose and Solve** link to troubleshoot and resolve the issue.
+Sign into the [Azure portal](https://www.portal.azure.com) and navigate to the **Overview** page. Select the **Monitoring** tab to verify the functionality of your server(s) by validating the number of healthy nodes shown. If you see any **Unhealthy nodes**, select the **Diagnose and Solve** link to troubleshoot and resolve the issue.
 
 ## Verify functionality on the server
 
@@ -31,7 +31,7 @@ To validate a properly functioning MCC, run the following command in the termina
 wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
-If successful, you'll see a terminal output similar to the following:
+If successful, you'll see a terminal output similar to the following output:
 
 ```bash
 HTTP request sent, awaiting response... 200 OK
@@ -41,7 +41,7 @@ Saving to: 'wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com'
 wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com   100%[========================]
 ```
 
-:::image type="content" source="images/imcc28.png" alt-text="Terminal output of successful test result with wget command to validate a Microsoft Connected Cache node.":::
+:::image type="content" source="images/mcc-isp-wget.png" alt-text="Terminal output of successful test result with wget command to validate a Microsoft Connected Cache node." lightbox="./images/mcc-isp-wget.png":::
 
 Similarly, enter the following URL into a web browser on any device on the network:
 
@@ -60,7 +60,7 @@ Within Azure portal, there are many charts and graphs that are available to moni
 Within Azure portal, you're able to build your custom charts and graphs using the following available metrics:
 
 | Metric name | Description |
-| -- |  ---- |  
+|---|---|  
 | **Cache Efficiency** |  Cache efficiency is defined as the total cache hit bytes divided by all bytes requested. The higher this value (0 - 100%), the more efficient the cache node is. |
 | **Healthy nodes** |  The number of cache nodes that are reporting as healthy|
 | **Unhealthy nodes**| The number of cache nodes that are reporting as unhealthy|

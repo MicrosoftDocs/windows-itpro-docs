@@ -36,7 +36,7 @@ You must complete both steps to ensure a clean uninstall of your cache node.
 
 ### Remove your cache node from Azure portal
 
-Within [Azure portal](https://www.portal.azure.com), navigate to **Cache Nodes**, then select the cache node you wish to delete. Once selected, select **Delete** on the top bar to remove this cache node from your account.
+Within the [Azure portal](https://www.portal.azure.com), navigate to **Cache Nodes**, then select the cache node you wish to delete. Once selected, select **Delete** on the top bar to remove this cache node from your account.
 
 ### Run the uninstall script to cleanly remove Microsoft Connected Cache from your server
 
