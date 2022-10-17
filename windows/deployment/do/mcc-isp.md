@@ -439,7 +439,7 @@ wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.wind
 
 The following screenshot shows a successful test result:
 
-:::image type="content" source="images/imcc28.png" alt-text="Terminal output of successful test result with wget command to validate a MCC.":::
+:::image type="content" source="images/mcc-isp-wget.png" alt-text="Terminal output of successful test result with wget command to validate a Microsoft Connected Cache." lightbox="./images/mcc-isp-wget.png":::
 
 Similarly, enter the following URL into a web browser on any device on the network:
 
