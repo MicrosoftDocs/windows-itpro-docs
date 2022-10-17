@@ -134,7 +134,7 @@ To check and repair system files:
 
 4. If you are prompted by UAC, click **Yes**.
 
-5. Type **sfc /scannow** and press ENTER. See the following example:
+5. Type **sfc /scannow** and press ENTER. See the following examples:
 
     ```console
     C:\>sfc /scannow
@@ -145,6 +145,20 @@ To check and repair system files:
     Verification 100% complete.
 
     Windows Resource Protection did not find any integrity violations.
+    ```
+
+    ```console
+    C:\>sfc /scannow
+
+    Beginning system scan.  This process will take some time.
+
+    Beginning verification phase of system scan.
+    Verification 100% complete.
+
+    Windows Resource Protection found corrupt files and successfully repaired them.
+    For online repairs, details are included in the CBS log file located at
+    windir\Logs\CBS\CBS.log. For example C:\Windows\Logs\CBS\CBS.log. For offline
+    repairs, details are included in the log file provided by the /OFFLOGFILE flag.
     ```
 6. If you are running Windows 8.1 or later, type **DISM.exe /Online /Cleanup-image /Restorehealth** and press ENTER (the DISM command options are not available for Windows 7). See the following example:
 
