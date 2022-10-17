@@ -94,7 +94,7 @@ If your organization uses proxy server authentication for internet access, make 
 
 #### Bypass (recommended)
 
-Configure your proxy servers to not require proxy authentication for traffic to the diagnostic data endpoints. This option is the most comprehensive solution. It works for all versions of Windows 10 and newer.  
+Configure your proxy servers to not require proxy authentication for traffic to the diagnostic data endpoints. This option is the most comprehensive solution. It works for all versions of Windows 10 and Windows 11.  
 
 #### User proxy authentication
 
