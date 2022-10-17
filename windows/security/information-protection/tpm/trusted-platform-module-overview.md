@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.localizationpriority: high
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri
