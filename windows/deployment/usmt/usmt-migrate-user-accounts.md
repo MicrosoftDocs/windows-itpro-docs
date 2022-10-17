@@ -72,7 +72,7 @@ Links to detailed explanations of commands are available in the Related Topics s
 
 3.  Specify the following:
 
-    `loadstate \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:migdocs.xml /i:migapp.xml`
+    `loadstate \\server\share\migration\mystore /mu:contoso\user2:fabrikam\user1 /i:migdocs.xml /i:migapp.xml`
 
 ## Related topics
 
