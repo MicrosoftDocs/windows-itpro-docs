@@ -4,7 +4,7 @@ description: This topic for the IT professional describes how to manage which Tr
 ms.author: dansimp
 ms.prod: m365-security
 author: dulcemontemayor
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri

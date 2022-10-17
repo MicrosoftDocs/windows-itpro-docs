@@ -1,7 +1,7 @@
 ---
 title: Microsoft recommended driver block rules (Windows)
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
-keywords:  security, malware, kernel mode, driver
+keywords: security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
-ms.reviewer: aaroncz
-ms.author: dansimp
-manager: dansimp
+ms.reviewer: isbrahm
+ms.author: vinpa
+manager: aaroncz
 ms.date: 10/07/2022
 ---
 
@@ -2171,11 +2171,6 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
         <String>10.0.25210.0</String>
-      </Value>
-    </Setting>
-    <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
-      <Value>
-        <Boolean>true</Boolean>
       </Value>
     </Setting>
   </Settings>

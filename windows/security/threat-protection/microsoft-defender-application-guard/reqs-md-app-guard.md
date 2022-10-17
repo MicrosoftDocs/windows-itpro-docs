@@ -1,5 +1,5 @@
 ---
-title: System requirements for Microsoft Defender Application Guard 
+title: System requirements for Microsoft Defender Application Guard
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.prod: windows-client
 ms.technology: itpro-security

@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri

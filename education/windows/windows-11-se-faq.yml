@@ -54,7 +54,7 @@ sections:
       - question: Why there's no application store on Windows 11 SE?
         answer: |
           IT Admins can manage system settings (including application installation and the application store) to ensure all students have a safe, distraction-free experience. On Windows SE devices, you have pre-installed apps from Microsoft, from your IT admin, and from your device manufacturer. You can continue to use web apps on the Microsoft Edge browser, as web apps do not require installation.
-          For more information, see [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-app).
+          For more information, see [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps).
       - question: What does the error 0x87D300D9 mean in the Intune for Education portal?
         answer: |
           This error means that the app you are trying to install is not supported on Windows 11 SE. If you have an app that fails with this error, then:

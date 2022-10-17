@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 02/27/2018
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
