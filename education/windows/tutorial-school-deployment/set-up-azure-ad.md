@@ -1,17 +1,8 @@
 ---
 title: Set up Azure Active Directory
-description: How to create and prepare your Azure AD tenant for an education environment 
+description: Learn how to create and prepare your Azure AD tenant for an education environment.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-#appliesto:
 ---
 
 # Set up Azure Active Directory

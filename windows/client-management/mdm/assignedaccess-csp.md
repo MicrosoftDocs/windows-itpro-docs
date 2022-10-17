@@ -1,7 +1,7 @@
 ---
 title: AssignedAccess CSP
 description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -45,7 +45,7 @@ The following example shows the AssignedAccess configuration service provider in
 ./Vendor/MSFT
 AssignedAccess
 ----KioskModeApp
-----Configuration (Added in Windows 10, version 1709) 
+----Configuration (Added in Windows 10, version 1709)
 ----Status (Added in Windows 10, version 1803)
 ----ShellLauncher (Added in Windows 10, version 1803)
 ----StatusConfiguration (Added in Windows 10, version 1803)
@@ -67,7 +67,7 @@ For more information, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Educ
 > [!Note]
 > You can't set both KioskModeApp and ShellLauncher at the same time on the device.
 
-Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
+Starting in Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](../enterprise-app-management.md).
 
 Here's an example:
 
@@ -358,7 +358,7 @@ The schema below is for AssignedAccess Configuration up to Windows 10 20H2 relea
         <xs:attribute name="DesktopAppPath" type="xs:string"/>
         <xs:attributeGroup ref="autoLaunch_attributeGroup"/>
     </xs:complexType>
-    
+
     <xs:attributeGroup name="autoLaunch_attributeGroup">
         <xs:attribute ref="rs5:AutoLaunch"/>
         <xs:attribute ref="rs5:AutoLaunchArguments" use="optional"/>
@@ -533,7 +533,7 @@ Schema for Windows 10 prerelease
     <xs:complexType name="globalProfile_t">
         <xs:attribute name="Id" type="guid_t" />
     </xs:complexType>
-  
+
     <xs:element name="AllowRemovableDrives"/>
     <xs:element name="NoRestriction" />
     <xs:element name="GlobalProfile" type="globalProfile_t" />
@@ -1090,7 +1090,7 @@ Status Get
 
 ## ShellLauncherConfiguration XSD
 
-Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD. 
+Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. The original V1 XSD has a reference to the V2 XSD.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1420,12 +1420,12 @@ ShellLauncher V2 Add
         <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"
 xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
             <Profiles>
-                <DefaultProfile> 
-                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true"> 
-                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"--> 
-                        <DefaultAction Action="RestartShell"/> 
-                    </Shell> 
-                </DefaultProfile> 
+                <DefaultProfile>
+                    <Shell Shell="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" V2:AppType="UWP" V2:AllAppsFullScreen="true">
+                        <!--DefaultAction is optional; if not defined, the pre-defined default action is "restart shell"-->
+                        <DefaultAction Action="RestartShell"/>
+                    </Shell>
+                </DefaultProfile>
                 <Profile Id="{814B6409-8C51-4EE2-95F8-DB39B70F5F68}">
                     <Shell Shell="%SystemRoot%\System32\notepad.exe" V2:AllAppsFullScreen="true">
                         <ReturnCodeActions>
@@ -1597,4 +1597,4 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -3,14 +3,14 @@ title: Network security Restrict NTLM Incoming NTLM traffic (Windows 10)
 description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Incoming NTLM traffic.
 ms.assetid: c0eff7d3-ed59-4004-908a-2205295fefb8
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

@@ -3,14 +3,14 @@ title: Edit AppLocker rules (Windows)
 description: This topic for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
 ms.assetid: 80016cda-b915-46a0-83c6-5e6b0b958e32
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

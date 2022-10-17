@@ -1,18 +1,8 @@
 ---
 title: Azure AD Join with Set up School PCs app
-description: Describes how Azure AD Join is configured in the Set up School PCs app.
-keywords: shared PC, school, set up school pcs
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how Azure AD Join is configured in the Set up School PCs app.
+ms.topic: article
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
 ---  

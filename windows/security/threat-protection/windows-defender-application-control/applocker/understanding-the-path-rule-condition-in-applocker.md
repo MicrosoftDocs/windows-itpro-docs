@@ -3,14 +3,14 @@ title: Understanding the path rule condition in AppLocker (Windows)
 description: This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it's applied.
 ms.assetid: 3fa54ded-4466-4f72-bea4-2612031cad43
 ms.reviewer: 
-ms.author: macapara
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

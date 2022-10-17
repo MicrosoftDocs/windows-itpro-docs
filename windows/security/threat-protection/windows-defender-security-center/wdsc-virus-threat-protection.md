@@ -8,10 +8,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.technology: windows-sec
 ---
 
