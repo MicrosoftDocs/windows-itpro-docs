@@ -4,7 +4,7 @@ description: This article describes how Windows security features help protect y
 ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri

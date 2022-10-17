@@ -4,7 +4,6 @@ description: Distribute apps to your employees from Microsoft Store for Business
 ms.assetid: E591497C-6DFA-49C1-8329-4670F2164E9E
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
