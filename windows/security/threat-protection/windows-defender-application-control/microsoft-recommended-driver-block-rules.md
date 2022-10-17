@@ -2183,6 +2183,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 > [!NOTE]
 > The policy listed above contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
 
+> [!NOTE]
+> To use the policy above with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
+
 ## Steps to download and apply the vulnerable driver blocklist binary
 
 If you prefer to apply the vulnerable driver blocklist exactly as shown above, follow these steps:
