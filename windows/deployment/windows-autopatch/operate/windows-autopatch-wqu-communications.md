@@ -22,7 +22,7 @@ There are three categories of communication that are sent out during a Windows q
 
 Communications are posted to Message center, Service health dashboard, and the Windows Autopatch messages section of the Microsoft Endpoint Manager admin center as appropriate for the type of communication.  
 
-:::image type="content" source="../media/update-communications.png" alt-text="Update communications timeline":::
+:::image type="content" source="../media/update-communications.png" alt-text="Update communications timeline" lightbox="../media/update-communications.png":::
 
 ## Standard communications
 
