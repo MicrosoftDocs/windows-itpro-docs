@@ -14,7 +14,7 @@ ms.topic: article
 
 ## Diagnostics Script
 
-If you're having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
+If you're having issues with your MCC, we included a diagnostics script. The script collects all your logs and zips them into a single file. You can then send us these logs via email for the MCC team to debug.
 
 To run this script:
 
@@ -29,18 +29,18 @@ To run this script:
    .\collectMccDiagnostics.ps1
    ```
 
-1.  The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file which you can share with us. The location should be **\<currentpath\>**\mccdiagnostics\support_bundle_\$timestamp.tar.gz
+1. The script stores all the debug files into a folder and then creates a tar file. After the script is finished running, it will output the path of the tar file, which you can share with us. The location should be **\<currentpath\>**\mccdiagnostics\support_bundle_\$timestamp.tar.gz
 
 1. [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
 
 ## Steps to obtain an Azure Subscription ID
 
 1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
-1. Click on **Subscriptions**. If you do not see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
-1. If you already have an Azure Subscription, skip to step 5. If you do not have an Azure Subscription, select **+ Add** on the top left. 
+1. Select **Subscriptions**. If you don't see **Subscriptions**, select the **More Services** arrow and search for **Subscriptions**. 
+1. If you already have an Azure Subscription, skip to step 5. If you don't have an Azure Subscription, select **+ Add** on the top left. 
 1. Select the **Pay-As-You-Go** subscription. You'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
-1. On the **Subscriptions** blade, you'll find details about your current subscription. Click on the subscription name. 
-1. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+1. On the **Subscriptions** page, you'll find details about your current subscription. Select the subscription name. 
+1. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Select the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
 
 ## Troubleshooting
 
@@ -60,7 +60,7 @@ communication operations. The runtime performs several functions:
 - Reports module (Docker containers) health to the cloud for remote monitoring.
 - Manages communication between an IoT Edge device and the cloud.
 
-For more information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
+For more information on Azure IoT Edge, see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
 ## EFLOW
 
@@ -97,7 +97,7 @@ You can either set your MCC IP address or FQDN using:
 
 1. In Windows (release version 1809 and later), you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization**. Set the **Cache Server Hostname** to the IP address of your MCC, such as `10.137.187.38`.
 
-   :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting.":::
+   :::image type="content" source="./images/ent-mcc-group-policy-hostname.png" alt-text="Screenshot of the Group Policy editor showing the Cache Server Hostname Group Policy setting." lightbox="./images/ent-mcc-group-policy-hostname.png":::
 
 
 **Verify Content using the DO Client**
@@ -113,7 +113,7 @@ To verify that the Delivery Optimization client can download content using MCC, 
 
     - Using the PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see *BytesFromCacheServer*.
 
-      :::image type="content" source="./images/ent-mcc-get-deliveryoptimizationstatus.png" alt-text="Screenshot of the output of Get-DeliveryOptimization | FT from PowerShell.":::
+      :::image type="content" source="./images/ent-mcc-get-deliveryoptimizationstatus.png" alt-text="Screenshot of the output of Get-DeliveryOptimization | FT from PowerShell." lightbox="./images/ent-mcc-get-deliveryoptimizationstatus.png":::
 
     - Using the Delivery Optimization Activity Monitor
     

@@ -47,7 +47,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you'll be given a link to the Azure portal where you can create the resource described below. 
 
 1. In the Azure portal home page, choose **Create a resource**:  
-    :::image type="content" source="./images/ent-mcc-create-azure-resource.png" alt-text="Screenshot of the Azure portal with the create a resource option outlined in red.":::
+    :::image type="content" source="./images/ent-mcc-create-azure-resource.png" alt-text="Screenshot of the Azure portal. The create a resource option is outlined in red.":::
 
 1. Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
@@ -87,7 +87,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 ### Create an MCC node in Azure
 
-Creating an MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
+Creating an MCC node is a multi-step process and the first step is to access the MCC early preview management portal.
 
 1. After the successful resource creation, select  **Go to resource**.
 1. Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
@@ -250,7 +250,7 @@ Connect to the EFLOW VM and check if MCC is properly running:
 
    :::image type="content" source="./images/ent-mcc-connect-eflowvm.png" alt-text="Screenshot of running connect-EflowVm, sudo -s, and iotedge list from PowerShell." lightbox="./images/ent-mcc-connect-eflowvm.png":::
 
-You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy.
+You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, try this command in a few minutes. The MCC container can take a few minutes to deploy.
 
 #### Verify server side
 
@@ -282,7 +282,7 @@ For an [Intune](/mem/intune/) deployment, create a **Configuration Profile** and
 
 #### PowerShell issues
 
-If you're seeing errors similar to this: `The term Get-<Something> isn't recognized as the name of a cmdlet, function, script file, or operable program.`
+If you're seeing errors similar to this error: `The term Get-<Something> isn't recognized as the name of a cmdlet, function, script file, or operable program.`
 
 1. Ensure you're running Windows PowerShell version 5.x.
 

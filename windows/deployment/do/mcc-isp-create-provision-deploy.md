@@ -31,11 +31,11 @@ This article outlines how to create, provision, and deploy your Microsoft Connec
 
 1. Navigate to **Settings** > **Cache nodes** and select **Create Cache Node**.
 
-    :::image type="content" source="images/createcachenode.png" alt-text="Screenshot of the create cache node page in the Azure portal":::
+    :::image type="content" source="images/mcc-isp-create-cache-node.png" alt-text="Screenshot of the cache node page in the Azure portal":::
 
 1. Provide a name for your cache node and select **Create** to create your cache node.
 
-    :::image type="content" source="images/cachenodename.png" alt-text="Screenshot of the create cache node page in the Azure portal, with the cache node name input field.":::
+    :::image type="content" source="images/mcc-isp-cache-node-name.png" alt-text="Screenshot of the create cache node page in the Azure portal, with the cache node name input field.":::
 
 ## Provision cache node
 
@@ -61,7 +61,7 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
 
 1. Navigate to **Settings** > **Cache nodes**. Select the cache node you wish to provision.
 
-    :::image type="content" source="images/numberedprovmcc.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node.":::  
+    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node.":::  
 
 1. Enter the max allowable egress that your hardware can support.  
 
@@ -98,14 +98,14 @@ IoT Edge performs several functions important to manage MCC on your edge device:
 There are five IDs that the device provisioning script takes as input in order to successfully provision and install your cache server. The provisioning script will automatically include these keys, with no input necessary from the user.
 
 | ID | Description |
-| -- | --- |
+|---|---|
 | Customer ID | The Azure subscription ID that the cache node is created in. |
 | Cache node ID | The unique alphanumeric ID of the cache node being provisioned. |
 | Customer Key | |
 | Cache node name | The name of the cache node. |
 | Tenant ID | The unique ID associated with the Azure account. |
 
-:::image type="content" source="images/numbereddeploymcc.png" alt-text="Screenshot of the server provisioning tab within cache node configuration in Azure portal.":::
+:::image type="content" source="images/mcc-isp-deploy-cache-node-numbered.png" alt-text="Screenshot of the server provisioning tab within cache node configuration in Azure portal.":::
 
 1. After completing cache node provisioning, navigate to the **Server provisioning** tab. Select **Download provisioning package** to download the installation package to your server.  
 
@@ -120,7 +120,7 @@ There are five IDs that the device provisioning script takes as input in order t
 ## General configuration fields
 
 | Field Name | Expected Value| Description |
-| -- | --- | --- |
+|---|---|---|
 | **Cache node name** | Alphanumeric string that contains no spaces  | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later. |
 | **Server IP address** | IPv4 address  | IP address of your MCC server. This address is used to route end-user devices in your network to the server for Microsoft content downloads. The IP address must be publicly accessible. |
 | **Max allowable egress (Mbps)** | Integer in Mbps | The maximum egress (Mbps) of your MCC based on the specifications of your hardware. For example, 10,000 Mbps.|
@@ -129,14 +129,14 @@ There are five IDs that the device provisioning script takes as input in order t
 ### Storage fields
 
 | Field Name | Expected Value| Description |
-| -- | --- | --- |
+|---|---|---|
 | **Cache drive** | File path string | Up to 9 drives can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: /dev/folder/ |
 | **Cache drive size in gigabytes** | Integer in GB | Set the size of each drive configured for the cache node. |
 
 ### Client routing fields
 
 | Field Name | Expected Value| Description |
-| -- | --- | --- |
+|---|---|---|
 | **Manual routing - Address range/CIDR blocks** | IPv4 CIDR notation | The IP address range (CIDR blocks) that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24, 3.22.235.0/24, 4.23.236.0/24 |
 | **BGP - Neighbor ASN** | ASN | When configuring BGP, enter the ASN(s) of your neighbors that you want to establish. |
 | **BGP - Neighbor IP address** | IPv4 address | When configuring BGP, enter the IP address(es) of neighbors that you want to establish. |
