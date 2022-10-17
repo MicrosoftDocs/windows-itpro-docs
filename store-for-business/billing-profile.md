@@ -2,7 +2,6 @@
 title: Understand billing profiles
 description: Learn how billing profiles support invoices
 keywords: billing profile, invoices, charges, managed charges
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
