@@ -53,8 +53,11 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
     1.  Clear key
     2.  Driver-based auto-unlock key
     3.  **ADAccountOrGroup** protector
+    
         a.  Service context protector
+        
         b.  User protector
+        
     4.  Registry-based auto-unlock key
 
 > [!NOTE]
