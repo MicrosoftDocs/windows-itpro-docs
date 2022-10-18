@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri
@@ -109,7 +109,7 @@ The following table shows the compatibility matrix for systems that have been Bi
 Table 1: Cross compatibility for Windows 11, Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
 
 |Encryption Type|Windows 11, Windows 10, and Windows 8.1|Windows 8|Windows 7|
-|--- |--- |--- |--- |
+|---|---|---|---|
 |Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
 |Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
 |Fully encrypted volume from Windows 7|Presents as fully encrypted|Presented as fully encrypted|N/A|

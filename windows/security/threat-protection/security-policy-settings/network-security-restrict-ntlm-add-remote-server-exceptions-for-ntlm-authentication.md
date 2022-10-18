@@ -3,14 +3,14 @@ title: Network security Restrict NTLM Add remote server exceptions for NTLM auth
 description: Best practices, security considerations, and more for the policy setting, Network security Restrict NTLM Add remote server exceptions for NTLM authentication.
 ms.assetid: 9b017399-0a54-4580-bfae-614c2beda3a1
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

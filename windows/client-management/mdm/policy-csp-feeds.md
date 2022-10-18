@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/17/2021
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Feeds policies  
+## Feeds policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="feeds-feedsenabled"></a>**Feeds/FeedsEnabled**  
+<a href="" id="feeds-feedsenabled"></a>**Feeds/FeedsEnabled**
 
 <!--SupportedSKUs-->
 
@@ -65,7 +65,7 @@ The values for this policy are 1 and 0. This policy defaults to 1.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable news and interests on the taskbar*
 -   GP name: *FeedsEnabled*
 -   GP path: *Windows Components\News and interests*

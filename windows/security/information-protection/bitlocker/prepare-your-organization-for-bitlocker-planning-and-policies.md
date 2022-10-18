@@ -1,12 +1,12 @@
 ---
 title: Prepare your organization for BitLocker Planning and policies (Windows 10)
-description: This topic for the IT professional explains how can you plan your BitLocker deployment.
+description: This article for the IT professional explains how can you plan your BitLocker deployment.
 ms.reviewer: 
 ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri
@@ -23,7 +23,7 @@ ms.custom: bitlocker
 - Windows 11
 - Windows Server 2016 and above
 
-This topic for the IT professional explains how can you plan your BitLocker deployment.
+This article for the IT professional explains how to plan BitLocker deployment.
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following sections will help you collect information. Use this information to help with your decision-making process about deploying and managing BitLocker systems.
 
@@ -75,7 +75,7 @@ On computers that don't have a TPM version 1.2 or higher, you can still use Bit
 
 **Will you support computers without TPM version 1.2 or higher?**
 
-Determine if you're support computers that don't have a TPM version 1.2 or higher. If you support BitLocker on this type of computer, a user must use a USB startup key to boot the system. This startup key requires extra support processes similar to multifactor authentication.
+Determine if you'll support computers that don't have a TPM version 1.2 or higher. If you support BitLocker on this type of computer, a user must use a USB startup key to boot the system. This startup key requires extra support processes similar to multifactor authentication.
 
 **What areas of your organization need a baseline level of data protection?**
 
@@ -148,7 +148,7 @@ The BitLocker Setup wizard provides administrators the ability to choose the Use
 
 Launching the BitLocker Setup wizard prompts for the authentication method to be used (password and smart card are available for data volumes). Once the method is chosen and the recovery key is saved, you're asked to choose the drive encryption type. Select Used Disk Space Only or Full drive encryption.
 
-With Used Disk Space Only, only the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new PCs and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
+With Used Disk Space Only, just the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new PCs and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
 
 With Full drive encryption, the entire drive is encrypted, whether data is stored on it or not. This option is useful for drives that have been repurposed, and may contain data remnants from their previous use.
 
@@ -183,7 +183,7 @@ But on computers running these supported systems with BitLocker enabled:
 
 - FIPS-compliant recovery password protectors can be created when Windows is in FIPS mode. These protectors use the FIPS 140 NIST SP800-132 algorithm.
 - Recovery passwords created in FIPS mode on Windows 8.1 can be distinguished from recovery passwords created on other systems.
-- Recovery unlock using the FIPS-compliant algorithm based recovery password protector work in all cases that currently work for recovery passwords.
+- Recovery unlock using the FIPS-compliant, algorithm-based recovery password protector works in all cases that currently work for recovery passwords.
 - When FIPS-compliant recovery passwords unlock volumes, the volume is unlocked to allow read/write access even while in FIPS mode.
 - FIPS-compliant recovery password protectors can be exported and stored in AD a while in FIPS mode.
 

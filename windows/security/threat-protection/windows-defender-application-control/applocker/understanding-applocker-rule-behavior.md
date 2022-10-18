@@ -3,14 +3,14 @@ title: Understanding AppLocker rule behavior (Windows)
 description: This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 ms.assetid: 3e2738a3-8041-4095-8a84-45c1894c97d0
 ms.reviewer: 
-ms.author: macapara
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

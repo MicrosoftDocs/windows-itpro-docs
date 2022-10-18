@@ -4,7 +4,6 @@ description: You can manage all apps that you've acquired on your Apps & Softwar
 ms.assetid: 44211937-801B-4B85-8810-9CA055CDB1B2
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

@@ -3,14 +3,14 @@ title: Configure an AppLocker policy for enforce rules (Windows)
 description: This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 ms.assetid: 5dbbb290-a5ae-4f88-82b3-21e95972e66c
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
