@@ -472,7 +472,7 @@ You can reset the recovery password in two ways:
     ```powershell
     Manage-bde –protectors –get C: -Type RecoveryPassword
     ```
-4.  Backup the new recovery password to AD DS.
+4.  Back up the new recovery password to AD DS.
 
     ```powershell
     Manage-bde –protectors –adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
