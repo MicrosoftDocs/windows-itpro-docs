@@ -183,7 +183,7 @@ But on computers running these supported systems with BitLocker enabled:
 
 - FIPS-compliant recovery password protectors can be created when Windows is in FIPS mode. These protectors use the FIPS 140 NIST SP800-132 algorithm.
 - Recovery passwords created in FIPS mode on Windows 8.1 can be distinguished from recovery passwords created on other systems.
-- Recovery unlock using the FIPS-compliant, algorithm-based recovery password protector works in all cases that currently work for recovery passwords.
+- Recovery unlock, using the FIPS-compliant, algorithm-based recovery password protector, works in all cases that currently work for recovery passwords.
 - When FIPS-compliant recovery passwords unlock volumes, the volume is unlocked to allow read/write access even while in FIPS mode.
 - FIPS-compliant recovery password protectors can be exported and stored in AD a while in FIPS mode.
 
