@@ -1,7 +1,7 @@
 ---
 title: Enhancing VM performance
 manager: dougeby
-description: How to enhance performance on a VM
+description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,18 +10,18 @@ author: amyzhou
 ms.localizationpriority: medium
 ms.author: amyzhou
 ms.collection: M365-modern-desktop
-ms.topic: article
+ms.topic: reference
 ---
 
-# Enhancing VM performance
+# Enhancing virtual machine performance
 
 In virtual environments, the cache server egress peaks at around 1.1 Gbps. If you want to maximize the egress in virtual environments, it's critical to change the following two settings:
 
-1. Enable **SR-IOV** in the following three locations:
+1. Enable **Single Root I/O Virtualization (SR-IOV)** in the following three locations:
 
-    - The BIOS of the MCC VM
-    - The MCC VM's network card properties
-    - The hypervisor for the MCC VM
+    - The BIOS of the MCC virtual machine
+    - The network card properties of the MCC virtual machine
+    - The hypervisor for the MCC virtual machine
 
     Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 

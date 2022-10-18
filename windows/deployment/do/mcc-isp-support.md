@@ -1,16 +1,15 @@
 ---
 title: Support and troubleshooting
 manager: dougeby
-description: Troubleshooting Issues for Microsoft Connected Cache for ISP
+description: Troubleshooting issues for Microsoft Connected Cache for ISP
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
-ms.mktglfcycl: deploy
 audience: itpro
 author: nidos
 ms.localizationpriority: medium
 ms.author: nidos
 ms.collection: M365-modern-desktop
-ms.topic: article
+ms.topic: reference
 ---
 
 # Support and troubleshooting
@@ -20,6 +19,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
+This article provides information on how to troubleshoot common issues with Microsoft Connected Cache for ISPs.
 ## Sign up errors
 
 ### Cannot verify account
@@ -28,7 +28,7 @@ During sign-up, we verify the information you provide against what is present in
 
 ### Invalid verification code
 
-During sign-up, a verification code is sent to your NOC email address present in [Peering DB](https://www.peeringdb.com/). This code expires in 24 hours. If expired, you'll need to request a new verification code to complete the sign-up.  
+During sign-up, a verification code is sent to your NOC email address present in [Peering DB](https://www.peeringdb.com/). This code expires in 24 hours. If it's expired, you'll need to request a new verification code to complete the sign-up.  
 
 ## Cache Node Errors  
 
