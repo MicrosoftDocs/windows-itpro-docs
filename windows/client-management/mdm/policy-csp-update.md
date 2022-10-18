@@ -206,16 +206,16 @@ ms.collection: highpri
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+    <a href="#update-setpolicydrivenupdatesourcefordriverupdates">Update/SetPolicyDrivenUpdateSourceForDriverUpdates</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+    <a href="#update-setpolicydrivenupdatesourceforfeatureupdates">Update/SetPolicyDrivenUpdateSourceForFeatureUpdates</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+    <a href="#update-setpolicydrivenupdatesourceforotherupdates">Update/SetPolicyDrivenUpdateSourceForOtherUpdates</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
+    <a href="#update-setpolicydrivenupdatesourceforqualityupdates">Update/SetPolicyDrivenUpdateSourceForQualityUpdates</a>
   </dd>
   <dd>
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
@@ -3527,7 +3527,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriverUpdates**
+<a href="" id="update-setpolicydrivenupdatesourcefordriverupdates"></a>**Update/SetPolicyDrivenUpdateSourceForDriverUpdates**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3585,7 +3585,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeatureUpdates**
+<a href="" id="update-setpolicydrivenupdatesourceforfeatureupdates"></a>**Update/SetPolicyDrivenUpdateSourceForFeatureUpdates**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3643,7 +3643,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOtherUpdates**
+<a href="" id="update-setpolicydrivenupdatesourceforotherupdates"></a>**Update/SetPolicyDrivenUpdateSourceForOtherUpdates**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3701,7 +3701,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQualityUpdates**
+<a href="" id="update-setpolicydrivenupdatesourceforqualityupdates"></a>**Update/SetPolicyDrivenUpdateSourceForQualityUpdates**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
