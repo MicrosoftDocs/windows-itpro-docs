@@ -36,7 +36,7 @@ Instead, the volume can be a cluster-shared volume. Windows Server 2012 expanded
 - It must turn on BitLocker - Only after this task is done, the volumes can be added into the storage pool
 - It must put the resource into maintenance mode before BitLocker operations are completed.
 
-Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points don't require the use of a drive letter. Volumes that lack drive letters don''t appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources isn't available in the Control Panel item.
+Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points don't require the use of a drive letter. Volumes that lack drive letters don't appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources isn't available in the Control Panel item.
 
 > [!NOTE]
 > Mount points can be used to support remote mount points on SMB-based network shares. This type of share is not supported for BitLocker encryption.
@@ -202,4 +202,3 @@ Some other considerations to take into account for BitLocker on clustered storag
 -   If conversion is paused with encryption in progress and a physical disk resource volume is offline from the cluster, the BitLocker driver automatically resumes conversion when the volume is online to the cluster.
 -   If conversion is paused with encryption in progress, while the CSV volume is in maintenance mode, the cluster thread (health check) automatically resumes conversion when moving the volume back from maintenance.
 -   If conversion is paused with encryption in progress, while the disk resource volume is in maintenance mode, the BitLocker driver automatically resumes conversion when the volume is moved back from maintenance mode.
-
