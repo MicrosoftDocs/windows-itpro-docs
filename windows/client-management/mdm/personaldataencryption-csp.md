@@ -31,7 +31,7 @@ The following shows the PersonalDataEncryption configuration service provider in
 - 0 is default (disabled)
 - 1 (enabled) will make Personal Data Encryption (PDE) public API available to applications for the user: [UserDataProtectionManager Class](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). 
 
-The public API allows the applications running as the user to encrypt data as soon as this policy is enabled. However, prerequisites must be met for the PDE to be enabled.
+The public API allows the applications running as the user to encrypt data as soon as this policy is enabled. However, prerequisites must be met for PDE to be enabled.
 
 **Status/PersonalDataEncryptionStatus**: Reports the current status of Personal Data Encryption (PDE) for the user. If prerequisites of PDE aren't met, then the status will be 0. If all prerequisites are met for PDE, then PDE will be enabled and status will be 1.
 
