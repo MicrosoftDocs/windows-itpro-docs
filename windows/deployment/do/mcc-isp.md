@@ -5,9 +5,9 @@ ms.prod: w10
 ms.technology: windows
 ms.localizationpriority: medium
 author: amymzhou
-ms.author: aaroncz
+ms.author: amyzhou
 ms.reviewer: carmenf
-manager: dougeby
+manager: aaroncz
 ms.collection: M365-modern-desktop
 ms.topic: how-to
 ms.date: 05/20/2022
@@ -585,20 +585,12 @@ sudo ./uninstallmcc.sh
 ```
 
 ## Appendix
-
+ 
 ### Steps to obtain an Azure subscription ID
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) and go to the **Azure services** section.
+<!--Using include file, get-azure-subscription.md, for shared content-->
+[!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
 
-2. Select **Subscriptions**. If you don't see **Subscriptions**, select the **More Services** arrow and search for **Subscriptions**.
-
-3. If you already have an Azure subscription, skip to step 5. If you don't have an Azure Subscription, select **+ Add** on the top left.
-
-4. Select the **Pay-As-You-Go** subscription. You'll be asked to enter credit card information, but you won't be charged for using the MCC service.
-
-5. On the **Subscriptions** section, you'll find details about your current subscription. Select the subscription name.
-
-6. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. To copy the value, select the **Copy to clipboard** icon next to your subscription ID.
 
 ### Performance of MCC in virtual environments
 

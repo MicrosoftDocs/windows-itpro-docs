@@ -1,6 +1,6 @@
 ---
 title: Support and troubleshooting
-manager: dougeby
+manager: aaroncz
 description: Troubleshooting issues for Microsoft Connected Cache for ISP
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
@@ -39,8 +39,13 @@ Did you previously had access to your cache nodes but it's now no longer accessi
 1. Create a new Azure Pay-As-You-Go subscription  
 1. Recreate the cache nodes using the new subscription
 
-### Recommended Documents
+## Steps to obtain an Azure subscription ID
 
-[Steps to obtain Azure subscription](https://aka.ms/MCC-Azure-Subscription)
-[Pay-as-you-go-subscription](https://azure.microsoft.com/offers/ms-azr-0003p/)
-[Azure free account FAQs](https://azure.microsoft.com/free/free-account-faq/)
+<!--Using include file, get-azure-subscription.md, for shared content-->
+[!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
+
+## Recommended resources
+
+- [Pay-as-you-go-subscription](https://azure.microsoft.com/offers/ms-azr-0003p/)
+- [Azure free account FAQs](https://azure.microsoft.com/free/free-account-faq/)
+

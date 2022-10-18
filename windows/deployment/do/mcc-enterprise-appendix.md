@@ -1,11 +1,11 @@
 ---
 title: Appendix
-manager: dougeby
+manager: aaroncz
 description: Appendix on Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: w10
 author: amymzhou
-ms.localizationpriority: medium
 ms.author: amyzhou
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -35,12 +35,8 @@ To run this script:
 
 ## Steps to obtain an Azure Subscription ID
 
-1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
-1. Select **Subscriptions**. If you don't see **Subscriptions**, select the **More Services** arrow and search for **Subscriptions**. 
-1. If you already have an Azure Subscription, skip to step 5. If you don't have an Azure Subscription, select **+ Add** on the top left. 
-1. Select the **Pay-As-You-Go** subscription. You'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
-1. On the **Subscriptions** page, you'll find details about your current subscription. Select the subscription name. 
-1. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Select the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+<!--Using include file, get-azure-subscription.md, do/mcc-isp.md for shared content-->
+[!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
 
 ## Troubleshooting
 

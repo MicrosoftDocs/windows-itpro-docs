@@ -1,6 +1,6 @@
 ---
 title: Version history
-manager: dougeby
+manager: aaroncz
 description: This page tracks the version history of Microsoft Connected Cache
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10

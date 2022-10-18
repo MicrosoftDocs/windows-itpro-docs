@@ -1,6 +1,6 @@
 ---
 title: Update or uninstall your cache node
-manager: dougeby
+manager: aaroncz
 description: How to update or uninstall your cache node
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10

@@ -1,6 +1,6 @@
 ---
 title: Cache node configuration
-manager: dougeby
+manager: aaroncz
 description: Configuring a cache node on Azure portal
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10

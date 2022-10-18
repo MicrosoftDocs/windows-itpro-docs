@@ -1,6 +1,6 @@
 ---
 title: Enhancing VM performance
-manager: dougeby
+manager: aaroncz
 description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
@@ -15,7 +15,11 @@ ms.topic: reference
 
 # Enhancing virtual machine performance
 
-In virtual environments, the cache server egress peaks at around 1.1 Gbps. If you want to maximize the egress in virtual environments, it's critical to change the following two settings:
+In virtual environments, the cache server egress peaks at around 1.1 Gbps. If you want to maximize the egress in virtual environments, it's critical to change two settings.
+
+## Virtual machine settings
+
+Change the following settings to maximize the egress in virtual environments:
 
 1. Enable **Single Root I/O Virtualization (SR-IOV)** in the following three locations:
 
@@ -25,4 +29,8 @@ In virtual environments, the cache server egress peaks at around 1.1 Gbps. If yo
 
     Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 
-2. Enable "high performance" in the BIOS instead of energy savings. Microsoft has found this setting to also nearly double egress in a Microsoft Hyper-V deployment.
+2. Enable high performance in the BIOS instead of energy savings. Microsoft has found this setting to also nearly double egress in a Microsoft Hyper-V deployment.
+
+## Next steps
+
+[Support and troubleshooting](mcc-isp-support.md)
