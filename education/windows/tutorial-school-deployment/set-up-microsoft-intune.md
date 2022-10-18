@@ -1,17 +1,8 @@
 ---
 title: Set up device management
-description: How to configure the Intune service and set up the environment for education.
+description: Learn how to configure the Intune service and set up the environment for education.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-#appliesto:
 ---
 
 # Set up Microsoft Intune
@@ -78,7 +69,7 @@ To disable Windows Hello for Business at the tenant level:
 1. Ensure that **Configure Windows Hello for Business** is set to **disabled**
 1. Select **Save**
 
-:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center" border="true":::
+:::image type="content" source="./images/whfb-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center." border="true" lightbox="./images/whfb-disable.png":::
 
 For more information how to enable Windows Hello for Business on specific devices, see [Create a Windows Hello for Business policy][MEM-4].
 

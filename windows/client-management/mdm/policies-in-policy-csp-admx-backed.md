@@ -1,7 +1,7 @@
 ---
 title: ADMX-backed policies in Policy CSP
 description: Learn about the ADMX-backed policies in Policy CSP.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -13,12 +13,6 @@ ms.date: 10/08/2020
 ---
 
 # ADMX-backed policies in Policy CSP
-
-> [!div class="op_single_selector"]
->
-> - [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
-> - [ADMX-backed policies in Policy CSP]()
->
 
 - [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
 - [ADMX_ActiveXInstallService/AxISURLZonePolicies](./policy-csp-admx-activexinstallservice.md#admx-activexinstallservice-axisurlzonepolicies)
@@ -1559,6 +1553,16 @@ ms.date: 10/08/2020
 - [DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 - [DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth](./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](./policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
+- [DesktopAppInstaller/EnableAdditionalSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources)
+- [DesktopAppInstaller/EnableAppInstaller](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller)
+- [DesktopAppInstaller/EnableLocalManifestFiles](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablelocalmanifestfiles)
+- [DesktopAppInstaller/EnableHashOverride](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablehashoverride)
+- [DesktopAppInstaller/EnableMicrosoftStoreSource](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemicrosoftstoresource)
+- [DesktopAppInstaller/EnableMSAppInstallerProtocol](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemsappinstallerprotocol)
+- [DesktopAppInstaller/EnableSettings](./policy-csp-desktopappinstaller.md#desktopappinstaller-enablesettings)
+- [DesktopAppInstaller/EnableAllowedSources](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableallowedsources)
+- [DesktopAppInstaller/EnableExperimentalFeatures](./policy-csp-desktopappinstaller.md#desktopappinstaller-enableexperimentalfeatures)
+- [DesktopAppInstaller/SourceAutoUpdateInterval](./policy-csp-desktopappinstaller.md#desktopappinstaller-sourceautoupdateinterval)
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdeviceids)
 - [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](./policy-csp-deviceinstallation.md#deviceinstallationallowinstallationofmatchingdevicesetupclasses)
 - [DeviceInstallation/PreventDeviceMetadataFromNetwork](./policy-csp-deviceinstallation.md#deviceinstallationpreventdevicemetadatafromnetwork)

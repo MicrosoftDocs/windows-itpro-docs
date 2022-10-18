@@ -1,7 +1,7 @@
 ---
 title: SharedPC DDF file
 description: Learn how the OMA DM device description framework (DDF) for the SharedPC configuration service provider (CSP).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -15,7 +15,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **SharedPC** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the DDF for Windows 10, version 1703.
 
@@ -71,6 +71,32 @@ The XML below is the DDF for Windows 10, version 1703.
             </DFProperties>
         </Node>
         <Node>
+              <NodeName>EnableSharedPCModeWithOneDriveSync</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>false</DefaultValue>
+                <Description>Setting this node to "1" triggers the action to configure a device to Shared PC mode with OneDrive sync turned on</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>Enable Shared PC mode with OneDrive sync</DFTitle>
+                <DFType>
+                  <MIME />
+                </DFType>
+              </DFProperties>
+            </Node>
+        <Node>
             <NodeName>SetEduPolicies</NodeName>
             <DFProperties>
                 <AccessType>
@@ -78,7 +104,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>false</DefaultValue>
-                <Description>Set a list of EDU policies. This node is independent of EnableSharedPCMode.</Description>
+                <Description>Set a list of EDU policies.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -102,7 +128,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>true</DefaultValue>
-                <Description>Specify that the power policies should be set when configuring SharedPC mode. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Specify that the power policies should be set when configuring SharedPC mode. This node is optional.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -126,7 +152,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>0</DefaultValue>
-                <Description>Daily start time of maintenance hour. Given in minutes from midnight. Default is 0 (12am). This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Daily start time of maintenance hour. Given in minutes from midnight. Default is 0 (12am). This node is optional.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -150,7 +176,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>true</DefaultValue>
-                <Description>Require signing in on waking up from sleep. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Require signing in on waking up from sleep. This node is optional.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -174,7 +200,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>300</DefaultValue>
-                <Description>The amount of time before the PC sleeps, given in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>The amount of time before the PC sleeps, given in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -318,7 +344,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>true</DefaultValue>
-                <Description>Restricts the user from using local storage. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Restricts the user from using local storage. This node is optional.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -341,7 +367,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Get />
                     <Replace />
                 </AccessType>
-                <Description>Specifies the AUMID of the app to use with assigned access. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Specifies the AUMID of the app to use with assigned access. This node is optional.</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>
@@ -364,7 +390,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Get />
                     <Replace />
                 </AccessType>
-                <Description>Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional.</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>
@@ -412,7 +438,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>1024</DefaultValue>
-                <Description>Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>

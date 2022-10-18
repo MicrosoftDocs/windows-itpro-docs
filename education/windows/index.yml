@@ -47,11 +47,17 @@ landingContent:
           url: windows-11-se-overview.md
         - text: Windows 11 SE settings
           url: windows-11-se-settings-list.md
+      - linkListType: whats-new
+        links:
+        - text: Configure education themes
+          url: edu-themes.md
+        - text: Configure Stickers
+          url: edu-stickers.md
       - linkListType: video
         links:
         - text: Deploy Windows 11 SE using Set up School PCs
           url: https://www.youtube.com/watch?v=Ql2fbiOop7c
-  
+
 
   - title: Deploy devices with Set up School PCs
     linkLists:
@@ -77,9 +83,17 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-        - text: Take tests and assessments
-          url: take-tests-in-windows-10.md
+        - text: Take tests and assessments in Windows
+          url: take-tests-in-windows.md
+        - text: Considerations for shared and guest devices
+          url: /windows/configuration/shared-devices-concepts?context=/education/context/context
         - text: Change Windows editions
           url: change-home-to-edu.md
+      - linkListType: how-to-guide
+        links:
+        - text: Configure Take a Test in kiosk mode
+          url: edu-take-a-test-kiosk-mode.md
+        - text: Configure Shared PC
+          url: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
         - text: "Deploy Minecraft: Education Edition"
           url: get-minecraft-for-education.md

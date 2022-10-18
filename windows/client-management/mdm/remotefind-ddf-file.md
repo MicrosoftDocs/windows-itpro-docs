@@ -1,7 +1,7 @@
 ---
 title: RemoteFind DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the RemoteFind configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -15,7 +15,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **RemoteFind** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 

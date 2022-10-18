@@ -1,17 +1,8 @@
 ---
 title: Set up Azure Active Directory
-description: How to create and prepare your Azure AD tenant for an education environment 
+description: Learn how to create and prepare your Azure AD tenant for an education environment.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
-#appliesto:
 ---
 
 # Set up Azure Active Directory
@@ -133,7 +124,7 @@ To configure your school's branding:
     :::image type="content" source="images/entra-branding.png" alt-text="Configure Azure AD branding from Microsoft Entra admin center." lightbox="images/entra-branding.png":::
 1. To adjust the school tenant's name displayed during OOBE, select **Azure Active Directory** > **Overview** > **Properties**
 1. In the **Name** field, enter the school district or organization's name > **Save**
-    :::image type="content" alt-text="Configure Azure AD tenant name from Microsoft Entra admin center." source="images/entra-tenant-name.png":::
+    :::image type="content" alt-text="Configure Azure AD tenant name from Microsoft Entra admin center." source="images/entra-tenant-name.png" lightbox="images/entra-tenant-name.png":::
 
 For more information, see [Add branding to your directory][AAD-5].
 

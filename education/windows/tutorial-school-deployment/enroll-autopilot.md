@@ -1,16 +1,8 @@
 ---
 title: Enrollment in Intune with Windows Autopilot
-description: how to join Azure AD and enroll in Intune using Windows Autopilot
+description: Learn how to join Azure AD and enroll in Intune using Windows Autopilot.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
@@ -92,7 +84,7 @@ While Intune for Education offers simple options for Autopilot configurations, m
 
 An Enrollment Status Page (ESP) is a greeting page displayed to users while enrolling or signing in for the first time to Windows devices. The ESP displays provisioning progress, showing applications and profiles installation status.
 
-:::image type="content" source="./images/win11-oobe-esp.png" alt-text="Windows OOBE - enrollment status page" border="false":::
+:::image type="content" source="./images/win11-oobe-esp.gif" alt-text="Windows OOBE - enrollment status page animation." border="false":::
 
 > [!NOTE]
 > Some Windows Autopilot deployment profiles **require** the ESP to be configured.

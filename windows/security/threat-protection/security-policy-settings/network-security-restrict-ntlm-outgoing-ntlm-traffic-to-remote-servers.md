@@ -3,14 +3,14 @@ title: Network security Restrict NTLM Outgoing traffic (Windows 10)
 description: Learn about best practices, security considerations and more for the policy setting, Network Security Restrict NTLM Outgoing NTLM traffic to remote servers.
 ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
@@ -94,7 +94,7 @@ There are no security audit event policies that can be configured to view event 
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 

@@ -12,8 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 10/30/2019
 ms.technology: windows-sec
 ---
@@ -49,7 +49,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
     - Create a new base policy using [New-CIPolicy](/powershell/module/configci/new-cipolicy?view=win10-ps&preserve-view=true)
 
         ```powershell
-        New-CIPolicy -MultiplePolicyFormat -ScanPath <path> -UserPEs -FilePath "<path>\SupplementalPolicy.xml" -Level Publisher -Fallback Hash
+        New-CIPolicy -MultiplePolicyFormat -ScanPath <path> -UserPEs -FilePath "<path>\SupplementalPolicy.xml" -Level FilePublisher -Fallback SignedVersion,Publisher,Hash
         ```
     - Change it to a supplemental policy using [Set-CIPolicyIdInfo](/powershell/module/configci/set-cipolicyidinfo?view=win10-ps&preserve-view=true)
 

@@ -3,14 +3,14 @@ title: Microsoft network server Disconnect clients when sign-in hours expire (Wi
 description: Best practices, location, values, and security considerations for the policy setting, Microsoft network server Disconnect clients when sign-in hours expire.
 ms.assetid: 48b5c424-9ba8-416d-be7d-ccaabb3f49af
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

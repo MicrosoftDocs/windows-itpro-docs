@@ -125,7 +125,7 @@ Don't overlook the importance of user readiness to deliver an effective, enterpr
 
 ## Learn more
 
-See the [Stay current with Windows 10 and Microsoft 365 Apps](/learn/paths/m365-stay-current/) learning path.
+See the [Stay current with Windows 10 and Microsoft 365 Apps](/training/paths/m365-stay-current/) learning path.
 
 - The learning path was created for Windows 10, but the basic principles and tasks outlined for the plan, prepare, and deploy phases also apply to your deployment of Windows 11.
 

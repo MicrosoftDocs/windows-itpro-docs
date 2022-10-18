@@ -12,8 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 08/29/2022
 ms.technology: windows-sec
 ---
@@ -22,9 +22,9 @@ ms.technology: windows-sec
 
 **Applies to:**
 
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
@@ -70,7 +70,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes).<br/> NOTE: This option is required to run HTA files, and is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows without the proper update may have unintended results. | No |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. | No |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) | Yes |
-| **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). | Yes |
+| **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft's Intelligent Security Graph (ISG). | Yes |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| No |
 | **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot.<br/> NOTE: This option is only supported on Windows 10, version 1709 and above.| No |
 | **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it.<br/> NOTE: This option is only supported on Windows 10, version 1903 and above. | No |
@@ -88,12 +88,12 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 | Rule level | Description |
 |----------- | ----------- |
-| **Hash** | Specifies individual [Authenticode/PE image hash values](#more-information-about-hashes) for each discovered binary. This level is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
+| **Hash** | Specifies individual [Authenticode/PE image hash values](#more-information-about-hashes) for each discovered binary. This level is the most specific level, and requires more effort to maintain the current product versions' hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies the original filename for each binary. Although the hash values for an application are modified when updated, the file names are typically not. This level offers less specific security than the hash level, but it doesn't typically require a policy update when any binary is modified. |
 | **FilePath** | Beginning with Windows 10 version 1903, this level allows binaries to run from specific file path locations. FilePath rules only apply to user mode binaries and can't be used to allow kernel mode drivers. More information about FilePath level rules can be found below. |
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
 | **Publisher** | This level combines the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. You can use this rule level to trust a certificate issued by a particular CA and issued to a specific company you trust (such as Intel, for device drivers). |
-| **FilePublisher** | This level combines the “FileName” attribute of the signed file, plus “Publisher” (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
+| **FilePublisher** | This level combines the "FileName" attribute of the signed file, plus "Publisher" (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
 | **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than other certificate levels, so the Windows Defender Application Control policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root certificate because the scan doesn't validate anything beyond the certificates included in the provided signature (it doesn't go online or check local root stores). |
 | **RootCertificate** | Currently unsupported. |
@@ -105,8 +105,16 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 > When you create Windows Defender Application Control policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
 > [!NOTE]
+>
 > - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
 > - The code uses CN for the CertSubject and CertIssuer fields in the policy. You can use the inbox certutil to look at the underlying format to ensure UTF-8 is not being used for the CN. For example, you can use printable string, IA5, or BMP.
+
+> [!NOTE]
+> When applicable, minimum and maximum version numbers in a file rule are referenced as MinimumFileVersion and MaximumFileVersion respectively in the policy XML.
+>
+> - Both MinimumFileVersion and MaximumFileVersion specified: For Allow rules, file with version **greater than or equal** to MinimumFileVersion and **less than or equal** to MaximumFileVersion are allowed. For Deny rules, file with version **greater than or equal** to MinimumFileVersion and **less than or equal** to MaximumFileVersion are denied.
+> - MinimumFileVersion specified without MaximumFileVersion: For Allow rules, file with version **greater than or equal** to the specified version are allowed to run. For Deny rules, file with version **less than or equal** to the specified version are blocked.
+> - MaximumFileVersion specified without MinimumFileVersion: For Allow rules, file with version **less than or equal** to the specified version are allowed to run. For Deny rules, file with version **greater than or equal** to the specified version are blocked.
 
 ## Example of file rule levels in use
 
@@ -149,20 +157,20 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 
 ## More information about hashes
 
-WDAC uses the [Authenticode/PE image hash algorithm](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx) when calculating the hash of a file. Unlike the more popular, but less secure, [flat file hash](/powershell/module/microsoft.powershell.utility/get-filehash), the Authenticode hash calculation omits the file's checksum and the Certificate Table and the Attribute Certificate Table. Therefore, the Authenticode hash of a file doesn't change when the file is re-signed or timestamped, or the digital signature is removed from the file. With the help of the Authenticode hash, WDAC provides added security and less management overhead so customers don't need to revise the policy hash rules when the digital signature on the file is updated. 
+WDAC uses the [Authenticode/PE image hash algorithm](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx) when calculating the hash of a file. Unlike the more popular, but less secure, [flat file hash](/powershell/module/microsoft.powershell.utility/get-filehash), the Authenticode hash calculation omits the file's checksum and the Certificate Table and the Attribute Certificate Table. Therefore, the Authenticode hash of a file doesn't change when the file is re-signed or timestamped, or the digital signature is removed from the file. With the help of the Authenticode hash, WDAC provides added security and less management overhead so customers don't need to revise the policy hash rules when the digital signature on the file is updated.
 
-The Authenticode/PE image hash can be calculated for digitally signed and unsigned files. 
+The Authenticode/PE image hash can be calculated for digitally signed and unsigned files.
 
 ### Why does scan create four hash rules per XML file?
 
 The PowerShell cmdlet will produce an Authenticode Sha1 Hash, Sha256 Hash, Sha1 Page Hash, Sha256 Page Hash.
 During validation, CI will choose which hashes to calculate, depending on how the file is signed.  For example, if the file is page-hash signed the entire file wouldn't get paged in to do a full sha256 authenticode, and we would just match using the first page hash.
 
-In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn’t result in a different hash than what was in the policy being used by CI.
+In the cmdlets, rather than try to predict which hash CI will use, we pre-calculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient, if the signing status of the file changes and necessary for deny rules to ensure that changing/stripping the signature doesn't result in a different hash than what was in the policy being used by CI.
 
 ### Why does scan create eight hash rules for certain XML files?
 
-Separate rules are created for UMCI and KMCI. In some cases, files that are purely user-mode or purely kernel-mode may still generate both sets, since CI can’t always precisely determine what is purely user vs. kernel mode, and errs on the side of caution.
+Separate rules are created for UMCI and KMCI. In some cases, files that are purely user-mode or purely kernel-mode may still generate both sets, since CI can't always precisely determine what is purely user vs. kernel mode, and errs on the side of caution.
 
 ## Windows Defender Application Control filename rules
 

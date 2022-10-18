@@ -12,8 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 05/03/2018
 ms.technology: windows-sec
 ---
@@ -59,7 +59,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 4. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to generate a new WDAC policy from logged audit events. This example uses a **FilePublisher** file rule level and a **Hash** fallback level. Warning messages are redirected to a text file **EventsPolicyWarnings.txt**.
 
    ```powershell
-   New-CIPolicy -FilePath $EventsPolicy -Audit -Level FilePublisher -Fallback Hash –UserPEs -MultiplePolicyFormat 3> $EventsPolicyWarnings
+   New-CIPolicy -FilePath $EventsPolicy -Audit -Level FilePublisher -Fallback SignedVersion,FilePublisher,Hash –UserPEs -MultiplePolicyFormat 3> $EventsPolicyWarnings
    ```
 
    > [!NOTE]

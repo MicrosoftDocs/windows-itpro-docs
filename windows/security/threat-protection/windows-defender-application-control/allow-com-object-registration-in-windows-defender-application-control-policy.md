@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: dansimp
+author: vinaypamnani-msft
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.technology: windows-sec
 ---
 

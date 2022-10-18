@@ -12,8 +12,8 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.technology: windows-sec
 ---
 
@@ -126,13 +126,13 @@ Deny rules and policies can be created using the PowerShell cmdlets or the [WDAC
 ### Software Publisher Based Deny Rule
 
 ```Powershell
-$DenyRules += New-CIPolicyRule -Level FilePublisher -DriverFilePath <binary_to_block> -Deny -Fallback FileName,Hash
+$DenyRules += New-CIPolicyRule -Level FilePublisher -DriverFilePath <binary_to_block> -Fallback SignedVersion,Publisher,Hash -Deny
 ```
 
 ### Software Attributes Based Deny Rule
 
 ```Powershell
-$DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Deny -Fallback Hash
+$DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Fallback Hash -Deny
 ```
 
 ### Hash Based Deny Rule

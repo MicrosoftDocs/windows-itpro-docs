@@ -8,7 +8,7 @@ ms.technology: windows
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Camera policies  
+## Camera policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**  
+<a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**
 
 <!--SupportedSKUs-->
 
@@ -63,7 +63,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Use of Camera*
 -   GP name: *L_AllowCamera*
 -   GP path: *Windows Components/Camera*

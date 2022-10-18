@@ -1,18 +1,8 @@
 ---
 title: Reset devices with Autopilot Reset
-description: Gives an overview of Autopilot Reset and how you can enable and use it in your schools.
-keywords: Autopilot Reset, Windows, education
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn about Autopilot Reset and how to enable and use it.
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
+ms.topic: how-to
 appliesto:
 - ✅ <b>Windows 10</b>
 ---
@@ -61,7 +51,7 @@ You can set the policy using one of these methods:
 
   - When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Autopilot Reset** among the list of settings for the student PC as shown in the following example:
 
-    ![Configure student PC settings in Set up School PCs.](images/suspc_configure_pc2.jpg)
+    ![Configure student PC settings in Set up School PCs.](images/suspcs/suspc_configure_pc2.jpg)
     
 ## Trigger Autopilot Reset
 Autopilot Reset is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 

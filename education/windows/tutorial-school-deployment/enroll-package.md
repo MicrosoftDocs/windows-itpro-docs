@@ -1,16 +1,8 @@
 ---
 title: Enrollment of Windows devices with provisioning packages
-description: options how to enroll Windows devices with provisioning packages using SUSPCs and Windows Configuration Designer
+description: Learn about how to enroll Windows devices with provisioning packages using SUSPCs and Windows Configuration Designer.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: tutorial
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
@@ -57,10 +49,9 @@ For more information, see [Install Windows Configuration Designer][WIN-1], which
 ## Enroll devices with the provisioning package
 
 To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and automatically enroll in Intune.
+All settings defined in the package and in Intune will be applied to the device, and the device will be ready to use.
 
-:::image type="content" source="./images/win11-oobe-ppkg.png" alt-text="Windows 11 OOBE - enrollment with provisioning package." border="false":::
-
-:::image type="content" source="./images/win11-login-screen.png" alt-text="Windows 11 login screen" border="false":::
+:::image type="content" source="./images/win11-oobe-ppkg.gif" alt-text="Windows 11 OOBE - enrollment with provisioning package animation." border="false":::
 
 ________________________________________________________
 ## Next steps

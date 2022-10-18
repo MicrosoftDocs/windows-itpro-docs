@@ -3,9 +3,9 @@ title: Get support for security baselines
 description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related topics.
 ms.prod: m365-security
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: vinpa
+author: vinaypamnani-msft
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/14/2022
@@ -54,7 +54,7 @@ No. SCM supported only SCAP 1.0, which wasn't updated as SCAP evolved. The new t
 
 | Name | Build | Baseline Release Date | Security Tools |
 | ---- | ----- | --------------------- | -------------- |
-| Windows 11 | [Windows 11](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-security-baseline/ba-p/2810772) <br> | October 2021<br>|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows 11 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520) <br> | September 2022<br>|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 | Windows 10 | [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [21H1](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-version-21h1/ba-p/2362353) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update)| December 2021<br>May 2021<br>December 2020<br>October 2018<br>October 2016 <br>January 2016 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final)| October 2013| [SCM 4.0](/previous-versions/tn-archive/cc936627(v=technet.10)) |
 

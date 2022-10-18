@@ -50,7 +50,7 @@ To release updates to devices in a gradual manner, Windows Autopatch deploys a s
 
 Windows Autopatch configures these policies differently across update rings to gradually release the update to devices in your estate. Devices in the Test ring receive changes first and devices in the Broad ring receive changes last. For more information, see [Windows Autopatch deployment rings](../operate/windows-autopatch-update-management.md#windows-autopatch-deployment-rings).
 
-:::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline":::
+:::image type="content" source="../media/release-process-timeline.png" alt-text="Release process timeline" lightbox="../media/release-process-timeline.png":::
 
 ## Expedited releases
 
@@ -73,10 +73,6 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 If we pause the release, a policy will be deployed which prevents devices from updating while the issue is investigated. Once the issue is resolved, the release will be resumed.
 
 You can pause or resume a Windows quality update from the Release management tab in Microsoft Endpoint Manager.
-
-## Rollback
-
-Windows Autopatch will rollback updates if we detect a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md).
 
 ## Incidents and outages
 
