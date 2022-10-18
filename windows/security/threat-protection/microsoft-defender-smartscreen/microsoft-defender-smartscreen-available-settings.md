@@ -5,12 +5,12 @@ ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/28/2020
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.technology: windows-sec
 ---
 # Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings

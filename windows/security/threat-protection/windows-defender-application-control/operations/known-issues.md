@@ -9,7 +9,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
-manager: dansimp
+manager: aaroncz
 ms.date: 07/01/2022
 ms.technology: windows-sec
 ms.topic: article

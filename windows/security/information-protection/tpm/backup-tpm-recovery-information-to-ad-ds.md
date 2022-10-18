@@ -5,7 +5,7 @@ ms.reviewer:
 ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2021

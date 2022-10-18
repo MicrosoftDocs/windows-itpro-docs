@@ -42,7 +42,7 @@ PrinterProvisioning
 --------ErrorCode
 ```
 
-<a href="" id="PrinterProvisioning"></a>**./Vendor/MSFT/PrinterProvisioning**  
+<a href="" id="PrinterProvisioning"></a>**./Vendor/MSFT/PrinterProvisioning**
 The root node for the Universal Print PrinterProvisioning configuration service provider.
 
 <a href="" id="upprinterinstalls"></a>**UPPrinterInstalls**

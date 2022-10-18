@@ -760,6 +760,6 @@ This example is configuring a hybrid device to back up its password to Active Di
 
 ## Related articles
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
 [Windows LAPS](/windows-server/identity/laps/laps)

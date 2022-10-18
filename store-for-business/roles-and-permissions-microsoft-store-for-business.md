@@ -4,7 +4,6 @@ description: The first person to sign in to Microsoft Store for Business or Micr
 keywords: roles, permissions
 ms.assetid: CB6281E1-37B1-4B8B-991D-BC5ED361F1EE
 ms.reviewer: 
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

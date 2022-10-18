@@ -2,7 +2,7 @@
 title: Encrypted Hard Drive (Windows)
 description: Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
 ms.prod: m365-security
 author: dulcemontemayor
