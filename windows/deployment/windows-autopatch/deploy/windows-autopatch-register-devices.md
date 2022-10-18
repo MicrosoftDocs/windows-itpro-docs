@@ -30,9 +30,9 @@ Windows Autopatch can take over software update management control of devices th
 
 You must choose what devices to manage with Windows Autopatch by adding them to the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can be added using the following methods:
 
-- Direct membership 
+- Direct membership
 - Nesting other Azure AD dynamic/assigned groups
-- [Bulk add/import group members](/azure/active-directory/enterprise-users/groups-bulk-import-members) 
+- [Bulk add/import group members](/azure/active-directory/enterprise-users/groups-bulk-import-members)
 
 Windows Autopatch automatically runs its discover devices function every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
 
@@ -77,7 +77,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
             - Windows updates policies
             - Device configuration
             - Office Click-to-run
-- Last Intune device check in completed within the last 28 days.
+- Last Intune device check-in completed within the last 28 days.
 - Devices must have Serial Number, Model and Manufacturer.
 	> [!NOTE]
 	> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
@@ -100,7 +100,7 @@ See all possible device readiness statuses in Windows Autopatch:
 
 | Readiness status | Description | Device blade tab |
 | ----- | ----- | ----- |
-| Active | Devices with this status successfully passed all prerequisite checks and subsequently successfully registered with Windows Autopatch. Additionally, devices with this status successfully passed all post-device registration readiness checks. |  Ready |
+| Active | Devices with this status successfully passed all prerequisite checks and then successfully registered with Windows Autopatch. Additionally, devices with this status successfully passed all post-device registration readiness checks. |  Ready |
 | Readiness failed | Devices with this status haven't passed one or more post-device registration readiness checks. These devices aren't ready to have one or more software update workloads managed by Windows Autopatch. | Not ready |
 | Inactive | Devices with this status haven't communicated with Microsoft Endpoint Manager-Intune in the last 28 days. | Not ready |
 | Pre-requisites failed | Devices with this status haven't passed one or more pre-requisite checks and haven't successfully registered with Windows Autopatch | Not registered |
@@ -161,17 +161,48 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 1. Provide a policy name and select **Join Type**. For more information, see [Device join types](/windows-365/enterprise/identity-authentication#device-join-types).  
 1. Select **Next**.
 1. Choose the desired image and select **Next**.
-1. Under the **Microsoft managed services** section, select **Windows Autopatch**. Then, select **Next**. If the *Windows Autopatch (preview) cannot manage your Cloud PCs until a Global Admin has finished setting it up.* message appears, you must [enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md) to continue.
+1. Under the **Microsoft managed services** section, select **Windows Autopatch**. Then, select **Next**. If the *Windows Autopatch (preview) can't manage your Cloud PCs until a Global Admin has finished setting it up.* message appears, you must [enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md) to continue.
 1. Assign your policy accordingly and select **Next**.
 1. Select **Create**. Now your newly provisioned Windows 365 Enterprise Cloud PCs will automatically be enrolled and managed by Windows Autopatch.
 
 For more information, see [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy).
 
+### Windows Autopatch on Azure Virtual Desktop workloads
+
+Windows Autopatch is available for your Azure Virtual Desktop workloads. Enterprise admins can provision their Azure Virtual Desktop workloads to be managed by Windows Autopatch using the existing [device registration process](#steps-to-register-devices).
+
+Windows Autopatch provides the same scope of service with virtual machines as it does with [physical devices](#steps-to-register-devices). However, Windows Autopatch defers any Azure Virtual Desktop specific support to [Azure support](#contact-support-for-device-registration-related-incidents), unless otherwise specified.
+
+#### Prerequisites
+
+Windows Autopatch for Azure Virtual Desktop follows the same [prerequisites](../prepare/windows-autopatch-prerequisites.md) as Windows Autopatch, and the [Azure Virtual Desktop prerequisites](/azure/virtual-desktop/prerequisites).
+
+The service supports:
+
+- Personal persistent virtual machines
+
+The following Azure Virtual Desktop features aren’t supported:
+
+- Multi-session hosts
+- Pooled non persistent virtual machines
+- Remote app streaming
+
+#### Deploy Autopatch on Azure Virtual Desktop
+
+Azure Virtual Desktop workloads can be registered into Windows Autopatch by using the same method as your [physical devices](#steps-to-register-devices). For more information, see [Register your devices](#steps-to-register-devices).
+
+For ease of deployment, we recommend nesting a dynamic device group in your Autopatch device registration group. The dynamic device group would target the **Name** prefix defined in your session host, but **exclude** any Multi-Session Session Hosts. For example:
+
+| Group name | Dynamic membership name |
+| ----- | ----- |
+| Windows Autopatch - Host Pool Session Hosts | <ul><li>`(device.displayName -contains "AP")`</li><li>`(device.deviceOSType -ne "Windows 10 Enterprise for Virtual Desktops")`</li></ul> |
+
 ### Contact support for device registration-related incidents
 
 Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
 
-- For Windows 365 support, see [Get support](/mem/get-support).  
+- For Windows 365 support, see [Get support](/mem/get-support).
+- For Azure Virtual Desktop support, see [Get support](/support/create-ticket/).
 - For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).  
 
 ## Device management lifecycle scenarios
