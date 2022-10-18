@@ -1,21 +1,19 @@
 ---
 title: Changes to Windows diagnostic data collection
 description: This article provides information on changes to Windows diagnostic data collection Windows 10 and Windows 11.
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 11/29/2021
-ms.technology: privacy
+ms.topic: conceptual
 ---
 
 # Changes to Windows diagnostic data collection
 
 **Applies to**
-- Windows 11
+- Windows 11, version 21H2 and later
 - Windows 10, version 1903 and later
 - Windows Server 2022
 
