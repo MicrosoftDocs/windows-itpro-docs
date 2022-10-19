@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
+manager: aaroncz
 ms.collection:
   - M365-security-compliance
   - highpri
@@ -17,13 +17,11 @@ ms.custom: bitlocker
 # Overview of BitLocker Device Encryption in Windows
 
 **Applies to**
-
 -   Windows 10
 -   Windows 11
--   Windows Server 2016 and above
+-   Windows Server 2016 and later 
 
-This article explains how BitLocker Device Encryption can help protect data on devices running Windows. 
-For a general overview and list of articles about BitLocker, see [BitLocker](bitlocker-overview.md). 
+This article explains how BitLocker Device Encryption can help protect data on devices running Windows. For a general overview and list of articles about BitLocker, see [BitLocker](bitlocker-overview.md). 
 
 When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and providing new strategies.
 

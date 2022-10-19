@@ -2,7 +2,7 @@
 title: Windows application security
 description: Get an overview of application security in Windows 10 and Windows 11
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
 author: dansimp
 ms.collection: M365-security-compliance
