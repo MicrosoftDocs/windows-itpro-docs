@@ -1,7 +1,7 @@
 ---
 title: Privacy
 description:  This article provides details about the data platform and privacy compliance for Autopatch
-ms.date: 05/30/2022
+ms.date: 10/19/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: reference
@@ -40,7 +40,7 @@ Processor duties of Windows Autopatch include ensuring appropriate confidentiali
 
 ## Windows Autopatch data storage and staff location
 
-Windows Autopatch stores its data in the Azure data centers in the United States.
+Windows Autopatch stores its data in the Azure data centers based on your data residency. For more information, see [Microsoft 365 data center locations](/microsoft-365/enterprise/o365-data-locations).
 
 Personal data obtained by Windows Autopatch and other services are required to keep the service operational. If a device is removed from Windows Autopatch, we keep personal data for a maximum of 30 days. For more information on data retention, see [Data retention, deletion, and destruction in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
