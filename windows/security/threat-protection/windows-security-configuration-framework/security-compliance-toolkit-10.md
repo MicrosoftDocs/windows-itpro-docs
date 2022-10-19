@@ -28,6 +28,7 @@ The Security Compliance Toolkit consists of:
     -   Windows 11, version 22H2
     -   Windows 11, version 21H2
 -   Windows 10 security baselines
+    -   Windows 10, version 22H2
     -   Windows 10, version 21H2
     -   Windows 10, version 21H1
     -   Windows 10, version 20H2

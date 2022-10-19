@@ -194,7 +194,7 @@ Requirements:
 
    - 21H1 --> [Administrative Templates (.admx) for Windows 10 May 2021 Update (21H1)](https://www.microsoft.com/download/details.aspx?id=103124)
 
-   - 21H2 --> [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)](https://www.microsoft.com/download/103667)
+   - 21H2 --> [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)-v2.0](https://www.microsoft.com/download/details.aspx?id=104042)
    
    
 2. Install the package on the Domain Controller.
@@ -215,7 +215,7 @@ Requirements:
 
    - 21H1 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2021 Update (21H1)**
 
-   - 21H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2021 Update (21H2)**
+   - 21H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2021 Update V2 (21H2)**
 
 4. Rename the extracted Policy Definitions folder to `PolicyDefinitions`.
 
@@ -305,7 +305,7 @@ To collect Event Viewer logs:
 
 
 ### Useful Links
-- [Windows 10 Administrative Templates for Windows 10 November 2021 Update 21H2](https://www.microsoft.com/download/103667)
+- [Windows 10 Administrative Templates for Windows 10 November 2021 Update (21H2)-v2.0](https://www.microsoft.com/download/details.aspx?id=104042)
 - [Windows 10 Administrative Templates for Windows 10 May 2021 Update 21H1](https://www.microsoft.com/download/details.aspx?id=103124)
 - [Windows 10 Administrative Templates for Windows 10 November 2019 Update 1909](https://www.microsoft.com/download/details.aspx?id=100591)
 - [Windows 10 Administrative Templates for Windows 10 May 2019 Update 1903](https://www.microsoft.com/download/details.aspx?id=58495)
