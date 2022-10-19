@@ -41,5 +41,5 @@ This is a normal condition. No further action is required.
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
-- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Windows Hello errors during PIN creation](/troubleshoot/windows-client/user-profiles-and-logon/windows-hello-errors-during-pin-creation-in-windows-10)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
