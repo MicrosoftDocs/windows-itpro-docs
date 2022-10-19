@@ -15,14 +15,14 @@ appliesto:
 - ✅ <b>Windows 11</b>
 - ✅ <b>Hybrid deployment</b>
 - ✅ <b>Key trust</b>
-- ✅ <b>Cloud kerberos trust</b>
+- ✅ <b>Cloud Kerberos trust</b>
 ---
 
-# Deploying Certificates to Key Trust/Cloud Kerberos Trust Users to Enable RDP
+# Deploy Certificates to Key Trust and Cloud Kerberos Trust Users to Enable RDP
 
 Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. For certificate trust deployments, creation of this certificate occurs at container creation time.
 
-This document discusses an approach for key trust/cloud kerberos trust deployments where authentication certificates can be deployed to an existing key trust user.
+This document discusses an approach for key trust and cloud Kerberos trust deployments where authentication certificates can be deployed to an existing WHFB user.
 
 Three approaches are documented here:
 
