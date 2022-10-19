@@ -78,7 +78,7 @@ Three approaches are documented here:
     1. Tick **Microsoft Software Key Storage Provider**
     1. Set the Request hash to **SHA256**
 
-1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them  .
+1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them.
 
 1. Click **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates.
 
@@ -88,7 +88,7 @@ Three approaches are documented here:
 
 1. Execute the following command:
 
-    certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt
+    `certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt`
 
     Replace \<TemplateName\> with the Template name you took note of earlier in step 7.
 
