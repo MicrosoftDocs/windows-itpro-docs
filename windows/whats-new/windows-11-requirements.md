@@ -82,7 +82,9 @@ The following configuration requirements apply to VMs running Windows 11.
 
 -	Generation: 2<b> \*</b>
 -	Storage: 64 GB or greater
--	Security: Secure Boot capable, virtual TPM enabled
+-	Security: 
+   - Azure: [Trusted launch](/azure/virtual-machines/trusted-launch) with vTPM and secure boot enabled
+   - Hyper-V: Secure boot capable, virtual TPM enabled
 -	Memory:  4 GB or greater
 -	Processor: Two or more virtual processors
 
@@ -91,7 +93,7 @@ The VM host CPU must also meet Windows 11 [processor requirements](/windows-hard
 <b>\*</b> In-place upgrade of existing generation 1 VMs to Windows 11 isn't possible.
 
 > [!NOTE]
-> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.
+> Procedures to configure required VM settings depend on the VM host type. For example, VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.
 
 ## Next steps
 
