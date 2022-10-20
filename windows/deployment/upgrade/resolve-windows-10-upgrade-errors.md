@@ -16,7 +16,7 @@ ms.collection: highpri
 -   Windows 10
 
 >[!IMPORTANT]
->This article contains technical instructions for IT administrators. If you are not an IT administrator, try some of the [quick fixes](/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes) described in this article then contact [Microsoft Support](https://support.microsoft.com/contactus/) starting with the Virtual Agent. To talk to a person about your issue, click **Get started** to interact with the Virtual Agent, then enter "Talk to a person" two times. The Virtual Agent can also help you to resolve many Windows upgrade issues. Also see: [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/help/10587/windows-10-get-help-with-upgrade-installation-errors) and [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md).
+>This article contains technical instructions for IT administrators. If you are not an IT administrator, try some of the [quick fixes](/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) described in this article then contact [Microsoft Support](https://support.microsoft.com/contactus/) starting with the Virtual Agent. To talk to a person about your issue, click **Get started** to interact with the Virtual Agent, then enter "Talk to a person" two times. The Virtual Agent can also help you to resolve many Windows upgrade issues. Also see: [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/help/10587/windows-10-get-help-with-upgrade-installation-errors) and [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md).
 
 This article contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. 
 
@@ -33,7 +33,7 @@ Level 400: Advanced <br>
 
 See the following topics in this article:
 
-- [Quick fixes](/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes): \Level 100\ Steps you can take to eliminate many Windows upgrade errors.<br>
+- [Quick fixes](/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json): \Level 100\ Steps you can take to eliminate many Windows upgrade errors.<br>
 - [SetupDiag](setupdiag.md): \Level 300\ SetupDiag is a new tool to help you isolate the root cause of an upgrade failure.
 - [Troubleshooting upgrade errors](/troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json): \Level 300\ General advice and techniques for troubleshooting Windows 10 upgrade errors, and an explanation of phases used during the upgrade process.<br>
 - [Windows Error Reporting](windows-error-reporting.md): \Level 300\ How to use Event Viewer to review details about a Windows 10 upgrade.

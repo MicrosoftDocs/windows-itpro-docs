@@ -22,7 +22,7 @@ Use the following information to get started with Windows Update:
 - Find [Windows Update log files](windows-update-logs.md)
 - Learn how to [troubleshoot Windows Update](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json)
 - Review [common Windows Update errors](/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) and check out the [error code reference](windows-update-error-reference.md)
-- Review [other resources](/troubleshoot/windows-client/deployment/additional-resources-for-windows-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) to help you use Windows Update
+- Review [other resources](/troubleshoot/windows-client/deployment/additional-resources-for-windows-update) to help you use Windows Update
 - Review [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) section of Microsoft Blogs.
 
 ## Unified Update Platform (UUP) architecture 
