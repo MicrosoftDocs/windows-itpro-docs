@@ -2,7 +2,6 @@
 title: Update your Billing account settings
 description: The billing account page in Microsoft Store for Business and Microsoft Store for Education, and M365 admin center shows information about your organization that you can update, including country or region, organization contact info, agreements with Microsoft and admin approvals.
 keywords: billing accounts, organization info
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

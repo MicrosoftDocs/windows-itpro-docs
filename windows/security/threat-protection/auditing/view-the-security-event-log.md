@@ -3,14 +3,14 @@ title: View the security event log (Windows 10)
 description: The security log records each event as defined by the audit policies you set on each object.
 ms.assetid: 20DD2ACD-241A-45C5-A92F-4BE0D9F198B9
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

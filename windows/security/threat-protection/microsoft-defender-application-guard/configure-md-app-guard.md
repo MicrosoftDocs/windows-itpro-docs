@@ -6,11 +6,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.date: 08/22/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.custom: sasr
 ms.technology: windows-sec
 ---

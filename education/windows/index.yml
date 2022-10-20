@@ -83,9 +83,17 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-        - text: Take tests and assessments
-          url: take-tests-in-windows-10.md
+        - text: Take tests and assessments in Windows
+          url: take-tests-in-windows.md
+        - text: Considerations for shared and guest devices
+          url: /windows/configuration/shared-devices-concepts?context=/education/context/context
         - text: Change Windows editions
           url: change-home-to-edu.md
+      - linkListType: how-to-guide
+        links:
+        - text: Configure Take a Test in kiosk mode
+          url: edu-take-a-test-kiosk-mode.md
+        - text: Configure Shared PC
+          url: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
         - text: "Deploy Minecraft: Education Edition"
           url: get-minecraft-for-education.md

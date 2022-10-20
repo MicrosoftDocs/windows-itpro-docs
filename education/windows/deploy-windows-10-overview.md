@@ -1,18 +1,8 @@
 ---
 title: Windows 10 for Education (Windows 10)
 description: Learn how to use Windows 10 in schools.
-keywords: Windows 10, education
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
 ---
@@ -47,7 +37,7 @@ Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-base
 
 Minecraft Education Edition is built for learning. Learn how to get early access and add it to your Microsoft Store for Business for distribution.
 
-**[Take tests in Windows 10](take-tests-in-windows-10.md)**
+**[Take tests in Windows](take-tests-in-windows.md)**
 
 Take a Test is a new app that lets you create the right environment for taking tests. Learn how to use and get it set up.
 

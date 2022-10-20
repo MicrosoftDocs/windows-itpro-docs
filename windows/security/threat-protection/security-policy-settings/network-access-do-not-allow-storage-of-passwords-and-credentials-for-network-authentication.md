@@ -3,14 +3,14 @@ title: Network access Do not allow storage of passwords and credentials for netw
 description: Learn about best practices and more for the security policy setting, Network access Do not allow storage of passwords and credentials for network authentication
 ms.assetid: b9b64360-36ea-40fa-b795-2d6558c46563
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
