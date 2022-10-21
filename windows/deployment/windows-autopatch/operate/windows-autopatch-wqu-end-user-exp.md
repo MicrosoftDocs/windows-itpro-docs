@@ -25,7 +25,7 @@ In this section we'll review what an end user would see in the following three s
 3. Quality update grace period
 
 > [!NOTE]
-> In the following examples, the informational messages "It's almost time to restart" / "Your organization requires your device to restart" do not automatically disappear after a period of time. They will remain on the screen until the user interacts with the message. 
+> The "It's almost time to restart" and "Your organization requires your device to restart" notifications won't disappear until the user interacts with the notification.
 
 ### Typical update experience
 
