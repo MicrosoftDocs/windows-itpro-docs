@@ -24,6 +24,9 @@ In this section we'll review what an end user would see in the following three s
 2. Quality update deadline forces an update
 3. Quality update grace period
 
+> [!NOTE]
+> In the following examples, the informational messages "It's almost time to restart" / "Your organization requires your device to restart" do not automatically disappear after a period of time. They will remain on the screen until the user interacts with the message. 
+
 ### Typical update experience
 
 The Windows 10 quality update is published and devices in the Broad ring have a deferral period of nine days. Devices will wait nine days before downloading the latest quality update.
