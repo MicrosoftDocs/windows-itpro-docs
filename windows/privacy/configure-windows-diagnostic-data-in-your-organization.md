@@ -1,17 +1,14 @@
 ---
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
-ms.prod: m365-security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection:
-  - M365-security-compliance
-  - highpri
-ms.topic: article
-ms.date: 11/29/2021
-ms.technology: privacy
+ms.collection: highpri
+ms.topic: conceptual
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -87,6 +84,53 @@ The following table lists the endpoints related to how you can manage the collec
 |Authentication | login.live.com <br></br> <br></br> IMPORTANT: This endpoint is used for device authentication. We do not recommend disabling this endpoint.|
 | [Online Crash Analysis](/windows/win32/dxtecharts/crash-dump-analysis) | oca.telemetry.microsoft.com <br></br> oca.microsoft.com <br></br> kmwatsonc.events.data.microsoft.com <br></br> *-kmwatsonc.events.data.microsoft.com |
 |Settings | settings-win.data.microsoft.com <br></br> <br></br> IMPORTANT: This endpoint is used to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft. We do not recommend disabling this endpoint. This endpoint does not upload Windows diagnostic data. |
+
+### Proxy server authentication
+
+If your organization uses proxy server authentication for internet access, make sure that it doesn't block the diagnostic data because of authentication. 
+
+#### Bypass (recommended)
+
+Configure your proxy servers to not require proxy authentication for traffic to the diagnostic data endpoints. This option is the most comprehensive solution. It works for all versions of Windows 10 and Windows 11.  
+
+#### User proxy authentication
+
+Configure devices to use the signed-in user's context for proxy authentication. This method requires the following configurations:
+
+- Devices have the current quality update for a supported version of Windows
+
+- Configure user-level proxy (WinINET proxy) in **Proxy settings** in the Network & Internet group of Windows Settings. You can also use the legacy Internet Options control panel.
+
+- Make sure that the users have proxy permission to reach the diagnostic data endpoints. This option requires that the devices have console users with proxy permissions, so you can't use this method with headless devices.
+
+> [!IMPORTANT]
+> The user proxy authentication approach is incompatible with the use of Microsoft Defender for Endpoint. This behavior is because this authentication relies on the **DisableEnterpriseAuthProxy** registry key set to `0`, while Microsoft Defender for Endpoint requires it to be set to `1`. For more information, see [Configure machine proxy and internet connectivity settings in Microsoft Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection).
+
+#### Device proxy authentication
+
+This approach supports the following scenarios:
+
+- Headless devices, where no user signs in, or users of the device don't have internet access
+
+- Authenticated proxies that don't use Windows Integrated Authentication
+
+- If you also use Microsoft Defender for Endpoint
+
+This approach is the most complex because it requires the following configurations:
+
+- Make sure devices can reach the proxy server through WinHTTP in local system context. Use one of the following options to configure this behavior:
+
+  - The command line `netsh winhttp set proxy`
+
+  - Web proxy autodiscovery (WPAD) protocol
+
+  - Transparent proxy
+
+  - Configure device-wide WinINET proxy using the following group policy setting: **Make proxy settings per-machine (rather than per-user)** (ProxySettingsPerUser = `1`)
+
+  - Routed connection, or that uses network address translation (NAT)
+
+- Configure proxy servers to allow the computer accounts in Active Directory to access the diagnostic data endpoints. This configuration requires proxy servers to support Windows Integrated Authentication.
 
 ### Data access
 

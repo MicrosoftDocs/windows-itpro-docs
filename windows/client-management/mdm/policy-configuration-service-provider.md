@@ -6643,6 +6643,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### FederatedAuthentication policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-federatedauthentication.md#federatedauthentication-enablewebsigninforprimaryuser" id="federatedauthentication-enablewebsigninforprimaryuser<">FederatedAuthentication/EnableWebSignInForPrimaryUser</a>
+  </dd>
+</dl>
+
 ### Feeds policies
 <dl>
   <dd>
@@ -9132,16 +9140,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriver" id="update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriverupdates" id="update-setpolicydrivenupdatesourcefordriverupdates">Update/SetPolicyDrivenUpdateSourceForDriverUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeature" id="update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeatureupdates" id="update-setpolicydrivenupdatesourceforfeatureupdates">Update/SetPolicyDrivenUpdateSourceForFeatureUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforother" id="update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforotherupdates" id="update-setpolicydrivenupdatesourceforotherupdates">Update/SetPolicyDrivenUpdateSourceForOtherUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforquality" id="update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforqualityupdates" id="update-setpolicydrivenupdatesourceforqualityupdates">Update/SetPolicyDrivenUpdateSourceForQualityUpdates</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
