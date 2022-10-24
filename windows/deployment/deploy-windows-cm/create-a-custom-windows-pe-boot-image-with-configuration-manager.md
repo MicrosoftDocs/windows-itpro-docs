@@ -4,11 +4,12 @@ description: Learn how to create custom Windows Preinstallation Environment (Win
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Create a custom Windows PE boot image with Configuration Manager
