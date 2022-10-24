@@ -100,7 +100,7 @@ The **Device status** group for quality updates contains the following items:
 
 - **OS build number**: Chart containing a count of devices by OS build that are getting security updates.
 - **Target version**: Chart containing how many devices by operating system version that are getting security updates.
-- **Device alerts**: Chart containing the count of active devices errors and warnings for quality updates.
+- **Device alerts**: Chart containing the count of active device errors and warnings for quality updates.
 - **Device compliance status**: Table containing a list of devices getting security updates and update installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
