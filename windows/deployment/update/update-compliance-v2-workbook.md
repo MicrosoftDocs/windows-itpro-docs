@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 08/10/2022
+ms.date: 10/24/2022
 ---
 
 # Update Compliance (preview) workbook
@@ -137,7 +137,7 @@ The **Update status** group for feature updates contains the following items:
 The **Device status** group for feature updates contains the following items:
 
 - **Windows 11 readiness status**: Chart containing how many devices that have a status of capable, not capable, or unknown for Windows 11 readiness.
-- **Device alerts**: Count of active alerts for feature updates in each alert classification.
+- **Device alerts**: Count of active device alerts for feature updates in each alert classification.
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
