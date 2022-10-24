@@ -49,6 +49,8 @@ landingContent:
           url: windows-11-se-settings-list.md
       - linkListType: whats-new
         links:
+        - text: Configure federated sign-in
+          url: federated-sign-in.md
         - text: Configure education themes
           url: edu-themes.md
         - text: Configure Stickers
