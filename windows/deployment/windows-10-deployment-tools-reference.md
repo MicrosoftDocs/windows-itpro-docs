@@ -5,7 +5,7 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 07/12/2017
 ms.topic: article
 ---

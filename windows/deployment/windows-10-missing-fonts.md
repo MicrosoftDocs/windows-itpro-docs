@@ -1,7 +1,7 @@
 ---
 title: How to install fonts missing after upgrading to Windows client
 description: Some of the fonts are missing from the system after you upgrade to Windows client.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz

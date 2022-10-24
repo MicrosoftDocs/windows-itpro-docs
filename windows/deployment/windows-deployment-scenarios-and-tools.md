@@ -4,7 +4,7 @@ description: Learn about the tools you can use to deploy Windows 10 and related 
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
 ms.collection: highpri
 ---
