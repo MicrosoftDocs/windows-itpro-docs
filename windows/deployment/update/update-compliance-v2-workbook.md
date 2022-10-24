@@ -82,7 +82,6 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 The **Update status** group for quality updates contains the following items:
 
 - **Update states for all security releases**: Chart containing the number of devices in a specific state, such as installing, for security updates.
-- **Update states for the latest security releases**: Chart containing the number of devices in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
 :::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts and table in the workbook's quality updates tab" lightbox="media/33771278-update-deployment-status-table.png":::
