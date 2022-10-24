@@ -4,10 +4,11 @@ description: Learn how to identify users you plan to migrate, as well as how to 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
 ms.localizationpriority: medium
+ms.technology: itpro-deploy
 ---
 
 # Identify Users
