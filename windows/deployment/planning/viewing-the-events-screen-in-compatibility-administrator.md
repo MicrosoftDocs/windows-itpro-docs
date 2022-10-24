@@ -4,9 +4,10 @@ description: You can use the Events screen to record and view activities in the 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Viewing the Events Screen in Compatibility Administrator

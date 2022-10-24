@@ -4,10 +4,11 @@ description: Though Windows To Go is no longer being developed, you can find inf
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Prepare your organization for Windows To Go
