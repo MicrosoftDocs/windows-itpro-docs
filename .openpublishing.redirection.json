@@ -19966,6 +19966,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/troubleshoot-event-id-41-restart.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/event-id-41-restart",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/troubleshoot-inaccessible-boot-device.md",
       "redirect_url": "/troubleshoot/windows-client/performance/stop-error-7b-or-inaccessible-boot-device-troubleshooting",
       "redirect_document_id": false
@@ -19973,6 +19978,11 @@
     {
       "source_path": "windows/client-management/troubleshoot-networking.md",
       "redirect_url": "/troubleshoot/windows-client/networking/networking-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-stop-error-on-broadcom-driver-update.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-broadcom-network-driver-update",
       "redirect_document_id": false
     },
     {
@@ -20012,7 +20022,7 @@
     },
     {
       "source_path": "windows/client-management/troubleshoot-windows-startup.md",
-      "redirect_url": "/troubleshoot/windows-client/performance/performance-overview",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-startup-issues-troubleshooting",
       "redirect_document_id": false
     },
     {
