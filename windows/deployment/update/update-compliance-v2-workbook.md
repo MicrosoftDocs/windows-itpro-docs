@@ -68,7 +68,7 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information:
 
 - **Latest security update**: Count of devices that have reported successful installation of the latest security update.
-- **Missing one security update**: Count of devices that have not installed the latest security update.
+- **Missing one security update**: Count of devices that haven't installed the latest security update.
 - **Missing multiple security updates**: Count of devices that are missing two or more security updates.
 - **Active alerts**: Count of active update and device alerts for quality updates.
 
@@ -110,7 +110,7 @@ The **Device status** group for quality updates contains the following items:
 The **Feature updates** tab displays generalized data at the top by using tiles. The feature update data becomes more specific as you navigate lower in this tab. The top of the **Feature updates** tab contains tiles with the following information:
 
 - **In service feature update**: Count of devices that are installed with a supported version of a Windows feature update.
-- **End of service feature update**: Count of devices that don't have a supported version of of a Windows feature update installed. For more information, see the [Windows lifecycle FAQ](/lifecycle/faq/windows).
+- **End of service feature update**: Count of devices that don't have a supported version of a Windows feature update installed. For more information, see the [Windows lifecycle FAQ](/lifecycle/faq/windows).
 - **Nearing EOS** Count of devices that are within 18 months of their end of service date.
 - **Active alerts**: Count of active update and device alerts for feature updates.
 
