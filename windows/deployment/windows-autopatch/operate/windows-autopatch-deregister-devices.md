@@ -1,9 +1,9 @@
 ---
 title: Deregister a device
-description:  This article explains how to deregister devices
+description: This article explains how to deregister devices
 ms.date: 06/15/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
