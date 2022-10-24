@@ -30,7 +30,7 @@ The Compatibility Administrator tool enables you to create an AppHelp text messa
 
 A blocking AppHelp message prevents the application from starting and displays a message to the user. You can define a specific URL where the user can download an updated driver or other fix to resolve the issue. When using a blocking AppHelp message, you must also define the file-matching information to identify the version of the application and enable the corrected version to continue.
 
-A non-blocking AppHelp message does not prevent the application from starting, but provides a message to the user including information such as security issues, updates to the application, or changes to the location of network resources.
+A non-blocking AppHelp message doesn't prevent the application from starting, but provides a message to the user that includes information such as security issues, updates to the application, or changes to the location of network resources.
 
 ## Searching for Existing Compatibility Fixes
 
@@ -51,17 +51,17 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 ## Creating a New AppHelp Message
 
 
-If you are unable to find a preloaded AppHelp message for your application, you can create a new one for use by your custom database.
+If you're unable to find a preloaded AppHelp message for your application, you can create a new one for use by your custom database.
 
 **To create a new AppHelp message**
 
-1.  In the left-side pane of Compatibility Administrator, below the **Custom Databases** heading, right-click the name of the database to which you will apply the AppHelp message, click **Create New**, and then click **AppHelp Message**.
+1.  In the left-side pane of Compatibility Administrator, below the **Custom Databases** heading, right-click the name of the database to which you'll apply the AppHelp message, click **Create New**, and then click **AppHelp Message**.
 
 2.  Type the name of the application to which this AppHelp message applies, type the name of the application vendor, browse to the location of the application file (.exe) on your computer, and then click **Next**.
 
     The wizard shows the known **Matching Information**, which is used for program identification.
 
-3.  Select any additional criteria to use to match your applications to the AppHelp message, and then click **Next**.
+3.  Select any other criteria to use to match your applications to the AppHelp message, and then click **Next**.
 
     By default, Compatibility Administrator selects the basic matching criteria for your application.
 
@@ -69,9 +69,9 @@ If you are unable to find a preloaded AppHelp message for your application, you 
 
 4.  Click one of the following options:
 
-    -   **Display a message and allow this program to run**. This is a non-blocking message, which means that you can alert the user that there might be a problem, but the application is not prevented from starting.
+    -   **Display a message and allow this program to run**. This message is non-blocking, which means that you can alert the user that there might be a problem, but the application isn't prevented from starting.
 
-    -   **Display a message and do not allow this program to run**. This is a blocking message, which means that the application will not start. Instead, this message points the user to a location that provides more information about fixing the issue.
+    -   **Display a message and do not allow this program to run**. This message is blocking, which means that the application won't start. Instead, this message points the user to a location that provides more information about fixing the issue.
 
 5.  Click **Next**.
 
