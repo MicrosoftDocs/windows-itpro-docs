@@ -236,7 +236,7 @@ For more information on WSUS, see the [Windows Server Update Services Overview](
 ## Unified Extensible Firmware Interface
 
 
-For many years BIOS has been the industry standard for booting a PC. BIOS has served us well, but it's time to replace it with something better. **UEFI** is the replacement for BIOS, so it's important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
+For many years, BIOS has been the industry standard for booting a PC. BIOS has served us well, but it's time to replace it with something better. **UEFI** is the replacement for BIOS, so it's important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
 
 ### Introduction to UEFI
 
