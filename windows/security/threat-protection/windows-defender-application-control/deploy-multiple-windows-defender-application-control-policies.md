@@ -3,7 +3,7 @@ title: Use multiple Windows Defender Application Control Policies (Windows)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
 ms.date: 07/19/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use multiple Windows Defender Application Control Policies
