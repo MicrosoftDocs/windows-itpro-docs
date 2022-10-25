@@ -4,7 +4,7 @@ description: Best practices and more for the security policy setting, User Accou
 ms.assetid: 46a3c3a2-1d2e-4a6f-b5e6-29f9592f535d
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode
