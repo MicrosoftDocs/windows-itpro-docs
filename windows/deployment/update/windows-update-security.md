@@ -39,9 +39,20 @@ Regardless of which method is used to download the content, the resulting files 
 
 ## Securing metadata connections
 
-When Windows Update scans for updates, it goes through a series of metadata exchanges between the device and Windows Update servers. This exchange is done using HTTPS (HTTP over TLS). These secured connections are certificate-pinned. Certificate pinning, ensures that not only is the TLS connection's server certificate validated (certificate trust, expiry, revocation, SAN entries, etc.) but the certificate's issuer is also validated as genuine Microsoft Windows Update. If the issuer is unexpected (not a valid Windows Update intermediate certificate), then the connection fails. This ensures that the device is connecting to legitimate Microsoft servers and prevents man-in-the-middle attacks.
+When Windows Update scans for updates, it goes through a series of metadata exchanges between the device and Windows Update servers. This exchange is done using HTTPS (HTTP over TLS). These secured connections are certificate-pinned, ensuring that:
+
+- The TLS connection's server certificate is validated (certificate trust, expiry, revocation, SAN entries, etc.)  
+- The certificate's issuer is validated as a genuine Microsoft Windows Update issuer
+
+The connection fails if the issuer is unexpected, or not a valid Windows Update intermediate certificate. Certificate pinning ensures that the device is connecting to legitimate Microsoft servers and prevents man-in-the-middle attacks.
 
 Since Windows Update TLS connections are certificate-pinned, it's important that TLS proxies pass these connections without interception. The full list of DNS names that require proxy/firewall exceptions can be found in the [Windows Update troubleshooting](/windows-client/deployment/windows-update-issues-troubleshooting?toc=%2Fwindows%2Fdeployment%2Ftoc.json&bc=%2Fwindows%2Fdeployment%2Fbreadcrumb%2Ftoc.json#device-cannot-access-update-files) article.
 
-
 Microsoft doesn't provide IP addresses or IP ranges for these exceptions because they may differ over time as changes are made for purposes such as traffic load balancing.
+
+## Expected Windows Update server usage
+
+The Windows Update service's servers are used solely by WU components. There's no expectation that end users will be interacting with these remote endpoints. Therefore, these service endpoints may not resolve as expected in a web browser. A user casually browsing to these endpoints may notice a lack of adherence to the latest web browser expectations such as publicly trusted PKI, certificate transparency logging, or TLS requirements. This behavior is expected and doesn't limit or otherwise impact the safety and security of the Windows Update system.
+
+Users attempting to browse to the service endpoints may see security warnings and even content access failures. Again, this behavior is expected as the service endpoints aren't designed for web browser access or casual user consumption.
+
