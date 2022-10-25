@@ -2,12 +2,12 @@
 title: BitLocker basic deployment
 description: This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
