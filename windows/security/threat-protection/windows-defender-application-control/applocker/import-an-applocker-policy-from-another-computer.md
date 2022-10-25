@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how to import an AppLocke
 ms.assetid: b48cb2b2-8ef8-4cc0-89bd-309d0b1832f6
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Import an AppLocker policy from another computer
