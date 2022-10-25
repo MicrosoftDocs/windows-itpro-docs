@@ -1,7 +1,7 @@
 ---
-title: Microsoft-compatible security key 
+title: Microsoft-compatible security key
 description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
