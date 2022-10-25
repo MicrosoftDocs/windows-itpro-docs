@@ -66,7 +66,7 @@ The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support th
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and Compatibility Support Module (CSM) modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the secure boot feature.
 
-> Installed Operating System on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](../../../deployment/mbr-to-gpt.md) before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
+> Installed Operating System on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
 
 The hard disk must be partitioned with at least two drives:
 
