@@ -4,7 +4,7 @@ description: This topic describes how AppLocker rules are enforced by using the 
 ms.assetid: 3e2738a3-8041-4095-8a84-45c1894c97d0
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Understanding AppLocker rule behavior
