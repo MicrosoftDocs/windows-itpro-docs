@@ -4,7 +4,7 @@ description: This topic for the IT professional lists software requirements to u
 ms.assetid: dc380535-071e-4794-8f9d-e5d1858156f0
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Requirements to use AppLocker
