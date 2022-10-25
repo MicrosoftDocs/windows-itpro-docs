@@ -5,10 +5,11 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Replace a Windows 7 computer with a Windows 10 computer
