@@ -5,10 +5,11 @@ ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Build a distributed environment for Windows 10 deployment
