@@ -2,15 +2,15 @@
 title: VPN profile options (Windows 10 and Windows 11)
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
 manager: aaroncz
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: pesmith
 ms.localizationpriority: medium
 ms.date: 05/17/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # VPN profile options
