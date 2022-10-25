@@ -3,7 +3,7 @@ title: Understand Windows Defender Application Control (WDAC) policy rules and f
 description: Learn how WDAC policy rules and file rules can control your Windows 10 and Windows 11 computers.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
 ms.date: 08/29/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules
