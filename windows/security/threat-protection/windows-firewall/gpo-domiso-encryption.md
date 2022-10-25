@@ -7,10 +7,10 @@ author: paolomatarazzo
 manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 09/08/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
