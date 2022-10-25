@@ -4,7 +4,7 @@ description: This topic lists AppLocker events and describes how to use Event Vi
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Using Event Viewer with AppLocker
