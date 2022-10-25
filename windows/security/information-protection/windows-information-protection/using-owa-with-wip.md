@@ -1,7 +1,7 @@
 ---
 title: Using Outlook on the web with WIP (Windows 10)
 description: Options for using Outlook on the web with Windows Information Protection (WIP).
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
