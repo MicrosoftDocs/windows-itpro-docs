@@ -3,7 +3,7 @@ title: Deploy catalog files to support Windows Defender Application Control (Win
 description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.reviewer: jgeurten
 ms.author: vinpa
 manager: aaroncz
 ms.date: 02/28/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Deploy catalog files to support Windows Defender Application Control
