@@ -1,8 +1,8 @@
 ---
 title: Deploying Windows Defender Application Control (WDAC) policies
 description: Learn how to plan and implement a WDAC deployment.
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 author: jgeurten
