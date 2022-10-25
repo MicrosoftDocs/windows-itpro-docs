@@ -25,7 +25,7 @@ ms.technology: itpro-security
 
 Provides information about basic audit policies that are available in Windows and links to information about each setting.
 
-The security audit policy settings under **Security Settings\\Local Policies\\Audit Policy** provide broad security audit capabilities for client devices and servers that cannot use advanced security audit policy settings.
+The security audit policy settings under **Security Settings\\Local Policies\\Audit Policy** provide broad security audit capabilities for client devices and servers that can't use advanced security audit policy settings.
 
 The basic audit policy settings under **Security Settings\\Local Policies\\Audit Policy** are:
 - [Audit account logon events](../auditing/basic-audit-account-logon-events.md)
