@@ -1,7 +1,7 @@
 ---
 title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows)
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -11,7 +11,7 @@ ms.date: 09/28/2020
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 # Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**

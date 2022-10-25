@@ -4,7 +4,7 @@ description: Best practices for the Network Security Allow PKU2U authentication 
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/03/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Allow PKU2U authentication requests to this computer to use online identities
