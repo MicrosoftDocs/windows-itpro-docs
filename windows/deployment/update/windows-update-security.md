@@ -42,11 +42,11 @@ Regardless of which method is used to download the content, the resulting files 
 When Windows Update scans for updates, it goes through a series of metadata exchanges between the device and Windows Update servers. This exchange is done using HTTPS (HTTP over TLS). These secured connections are certificate-pinned, ensuring that:
 
 - The TLS connection's server certificate is validated (certificate trust, expiry, revocation, SAN entries, etc.)  
-- The certificate's issuer is validated as a genuine Microsoft Windows Update issuer
+- The certificate's issuer is validated as genuine Microsoft Windows Update
 
 The connection fails if the issuer is unexpected, or not a valid Windows Update intermediate certificate. Certificate pinning ensures that the device is connecting to legitimate Microsoft servers and prevents man-in-the-middle attacks.
 
-Since Windows Update TLS connections are certificate-pinned, it's important that TLS proxies pass these connections without interception. The full list of DNS names that require proxy/firewall exceptions can be found in the [Windows Update troubleshooting](/windows-client/deployment/windows-update-issues-troubleshooting?toc=%2Fwindows%2Fdeployment%2Ftoc.json&bc=%2Fwindows%2Fdeployment%2Fbreadcrumb%2Ftoc.json#device-cannot-access-update-files) article.
+Since Windows Update TLS connections are certificate-pinned, it's important that TLS proxies pass these connections without interception. The full list of DNS names that require proxy/firewall exceptions can be found in the [Windows Update troubleshooting](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#device-cannot-access-update-files) article.
 
 Microsoft doesn't provide IP addresses or IP ranges for these exceptions because they may differ over time as changes are made for purposes such as traffic load balancing.
 
@@ -60,7 +60,16 @@ Users attempting to browse to the service endpoints may see security warnings an
 
 The process of downloading update binaries is secured at a layer above the transport. Even though content may be downloaded through standard HTTP (TCP port 80), the content goes through a rigorous security validation process.
 
-Downloads are load balanced through Content Delivery Networks (CDN), so using TLS would break their Microsoft chain-of-custody. The chain would break because a TLS connection to a caching CDN terminates at the CDN, not Microsoft, thus TLS certificates aren't Microsoft specific. This means that the WU client can't prove the trustworthiness of the CDN (Microsoft doesn't control CDN TLS certificates). Additionally, a TLS connection to a CDN doesn't prove content hasn't been manipulated within the CDN's caching network. Therefore, TLS doesn't offer any of the security promises to the end-to-end Windows Update workflow that it otherwise provides.
+Downloads are load balanced through Content Delivery Networks (CDN), so using TLS would break their Microsoft chain-of-custody. Because a TLS connection to a caching CDN terminates at the CDN, not Microsoft, TLS certificates aren't Microsoft specific. This means that the WU client can't prove the trustworthiness of the CDN as Microsoft doesn't control CDN TLS certificates. Additionally, a TLS connection to a CDN doesn't prove content hasn't been manipulated within the CDN's caching network. Therefore, TLS doesn't offer any of the security promises to the end-to-end Windows Update workflow that it otherwise provides.
 
-Regardless of how the content is delivered, once it has been downloaded, it's properly validated for trust, integrity, and intention using various techniques including digital signature validation and file hash checks, among others. This level of content validation provides even more layers of security than TLS alone.
+Regardless of how the content is delivered, once it has been downloaded, it's properly validated. Content is validated for trust, integrity, and intention using various techniques such as digital signature validation and file hash checks. This level of content validation provides even more layers of security than TLS alone.
 
+## Windows Server Update Services (WSUS)
+
+Enterprises using WSUS have a similar workflow. However, the client devices connect to their enterprise's WSUS server instead of over the internet to Microsoft's servers. It's up to the enterprise to decide whether to use HTTP or TLS (HTTPS) connections for the metadata exchange. Microsoft strongly advises using TLS connections and configuring client devices with appropriate TLS certificate pinning configurations for metadata exchange with WSUS. For more information about WSUS TLS certificate-pinning, see:
+
+- [Windows IT Pro Blog: Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547)
+- [Windows IT Pro Blog: Scan changes and certificates add security for Windows devices using WSUS for updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/scan-changes-and-certificates-add-security-for-windows-devices/ba-p/2053668)
+- [Configuration Manager: Configure a software update point to use TLS](/mem/configmgr/sum/get-started/software-update-point-ssl)
+
+When a WSUS server [updates its own update catalog](/windows-server/administration/windows-server-update-services/manage/setting-up-update-synchronizations), it connects to Microsoft's server sync services and scans for updates. The WSUS server synchronization process is similar to the [metadata exchange process](#securing-metadata-connections) for client devices connecting to Windows Update. The WSUS-to-Microsoft connection is over TLS and is verified by Microsoft certificate, similar to the WU client's TLS certificate-pinning.
