@@ -1,7 +1,7 @@
 ---
 title: Understand WFAS Deployment (Windows)
 description: Resources for helping you understand the Windows Defender Firewall with Advanced Security (WFAS) Design Process
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 09/08/2021
 ms.reviewer: jekrynit
 ms.author: paoloma
-ms.technology: windows-sec
+ms.technology: itpro-security
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
