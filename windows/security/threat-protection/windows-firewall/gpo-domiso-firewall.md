@@ -3,14 +3,14 @@ title: GPO\_DOMISO\_Firewall (Windows)
 description: Learn about the settings and rules in this example GPO, which is authored by using the Group Policy editing tools.
 ms.reviewer: jekrynit
 ms.author: paoloma
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
