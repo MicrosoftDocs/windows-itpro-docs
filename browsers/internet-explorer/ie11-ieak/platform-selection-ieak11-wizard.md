@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Platform Selection page in the IEAK 11 Customization Wizard to pick the specs for your employee devices that will get the install package.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
 ms.reviewer: 
 manager: dansimp
