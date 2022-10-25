@@ -4,10 +4,11 @@ description: Learn how to integrate Microsoft System Center 2012 R2 Orchestrator
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Use Orchestrator runbooks with MDT

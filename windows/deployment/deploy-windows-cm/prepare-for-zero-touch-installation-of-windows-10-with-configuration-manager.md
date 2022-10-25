@@ -4,10 +4,11 @@ description: Learn how to prepare a Zero Touch Installation of Windows 10 with C
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: how-to
+ms.technology: itpro-deploy
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
