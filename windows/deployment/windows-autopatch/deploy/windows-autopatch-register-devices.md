@@ -202,7 +202,7 @@ For ease of deployment, we recommend nesting a dynamic device group in your Auto
 Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
 
 - For Windows 365 support, see [Get support](/mem/get-support).
-- For Azure Virtual Desktop support, see [Get support](/support/create-ticket/).
+- For Azure Virtual Desktop support, see [Get support](https://azure.microsoft.com/support/create-ticket/).
 - For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).  
 
 ## Device management lifecycle scenarios
