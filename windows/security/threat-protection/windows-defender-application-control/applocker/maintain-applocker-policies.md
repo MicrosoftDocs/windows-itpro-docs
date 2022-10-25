@@ -4,7 +4,7 @@ description: Learn how to maintain rules within AppLocker policies. View common 
 ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Maintain AppLocker policies
