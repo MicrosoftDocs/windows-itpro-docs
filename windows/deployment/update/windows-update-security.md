@@ -70,6 +70,5 @@ Enterprises using WSUS have a similar workflow. However, the client devices conn
 
 - [Windows IT Pro Blog: Changes to improve security for Windows devices scanning WSUS](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/changes-to-improve-security-for-windows-devices-scanning-wsus/ba-p/1645547)
 - [Windows IT Pro Blog: Scan changes and certificates add security for Windows devices using WSUS for updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/scan-changes-and-certificates-add-security-for-windows-devices/ba-p/2053668)
-- [Configuration Manager: Configure a software update point to use TLS](/mem/configmgr/sum/get-started/software-update-point-ssl)
 
 When a WSUS server [updates its own update catalog](/windows-server/administration/windows-server-update-services/manage/setting-up-update-synchronizations), it connects to Microsoft's server sync services and scans for updates. The WSUS server synchronization process is similar to the [metadata exchange process](#securing-metadata-connections) for client devices connecting to Windows Update. The WSUS-to-Microsoft connection is over TLS and is verified by Microsoft certificate, similar to the WU client's TLS certificate-pinning.
