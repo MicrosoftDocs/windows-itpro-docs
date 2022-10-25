@@ -5,8 +5,8 @@ manager: aaroncz
 author: vinaypamnani-msft
 ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Audit Token Right Adjusted
