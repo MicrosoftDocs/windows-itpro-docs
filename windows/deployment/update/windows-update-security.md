@@ -11,9 +11,11 @@ ms.topic: article
 ms.date: 10/25/2022
 ---
 
-# Windows Update security overview
+# Windows Update security
 
-The Windows Update (WU) system ensures devices are updated securely. Its end-to-end protection prevents manipulation of protocol exchanges and ensures only approved content is installed. Some protected environments may need to update firewall and proxy rules to ensure that Windows updates can be properly accessed.
+The Windows Update (WU) system ensures devices are updated securely. Its end-to-end protection prevents manipulation of protocol exchanges and ensures only approved content is installed. Some protected environments may need to update firewall and proxy rules to ensure that Windows updates can be properly accessed. This article provides an overview of the security features of Windows Update.
+
+## Windows Update security overview
 
 The Windows Update system distributes a multitude of content. Some examples of this content include:
 
