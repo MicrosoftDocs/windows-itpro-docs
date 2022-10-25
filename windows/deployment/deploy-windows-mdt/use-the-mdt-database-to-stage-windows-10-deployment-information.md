@@ -4,10 +4,11 @@ description: Learn how to use the MDT database to pre-stage information on your 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Use the MDT database to stage Windows 10 deployment information

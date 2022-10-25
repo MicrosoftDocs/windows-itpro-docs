@@ -4,10 +4,11 @@ description: The simplest path to upgrade PCs that are currently running Windows
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Perform an in-place upgrade to Windows 10 with MDT
