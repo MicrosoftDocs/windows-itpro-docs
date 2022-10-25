@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: a4167bf4-27c3-4a9b-8ef0-04e3c6ec3aa4
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/16/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Account lockout duration

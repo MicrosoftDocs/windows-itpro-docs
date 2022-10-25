@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 08/10/2022
+ms.date: 10/24/2022
 ---
 
 # Update Compliance (preview) workbook
@@ -67,10 +67,13 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 
 The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information:
 
-- **Devices count**: Count of devices that have reported at least one security update is or was applicable and offered in the past 30 days, regardless of installation state of the update.
-- **Latest security update**: Count of devices that have installed the latest security update.
-- **Security update status**: Count of devices that haven't installed a security update released within the last 60 days.
-- **Total alerts**: Count of active alerts that are for quality updates.
+- **Latest security update**: Count of devices that have reported successful installation of the latest security update.
+- **Missing one security update**: Count of devices that haven't installed the latest security update.
+- **Missing multiple security updates**: Count of devices that are missing two or more security updates.
+- **Active alerts**: Count of active update and device alerts for quality updates.
+
+Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+
 
 Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end-users are impacted.
 
@@ -79,7 +82,6 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 The **Update status** group for quality updates contains the following items:
 
 - **Update states for all security releases**: Chart containing the number of devices in a specific state, such as installing, for security updates.
-- **Update states for the latest security releases**: Chart containing the number of devices in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
 :::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts and table in the workbook's quality updates tab" lightbox="media/33771278-update-deployment-status-table.png":::
@@ -98,6 +100,7 @@ The **Device status** group for quality updates contains the following items:
 
 - **OS build number**: Chart containing a count of devices by OS build that are getting security updates.
 - **Target version**: Chart containing how many devices by operating system version that are getting security updates.
+- **Device alerts**: Chart containing the count of active device errors and warnings for quality updates.
 - **Device compliance status**: Table containing a list of devices getting security updates and update installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
@@ -105,13 +108,12 @@ The **Device status** group for quality updates contains the following items:
 
 The **Feature updates** tab displays generalized data at the top by using tiles. The feature update data becomes more specific as you navigate lower in this tab. The top of the **Feature updates** tab contains tiles with the following information:
 
-- **Devices count**: Count of devices that have reported a feature update is or was applicable and offered in the past 30 days, regardless of installation state of the update.
-- **Feature update status**: Count of the devices that installed a feature update in the past 30 days.
-- **End Of Service**: Count of devices running an operating system version that no longer receives feature updates. For more information, see the [Windows lifecycle FAQ](/lifecycle/faq/windows).
+- **In service feature update**: Count of devices that are installed with a supported version of a Windows feature update.
+- **End of service feature update**: Count of devices that don't have a supported version of a Windows feature update installed. For more information, see the [Windows lifecycle FAQ](/lifecycle/faq/windows).
 - **Nearing EOS** Count of devices that are within 18 months of their end of service date.
-- **Total alerts**: Count of active alerts that are for feature updates.
+- **Active alerts**: Count of active update and device alerts for feature updates.
 
-Just like the [**Quality updates** tab](#quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles.
+Just like the [**Quality updates** tab](#quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles. Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ### <a name="bkmk_update-group-feature"></a> Update status group for feature updates
 
@@ -134,7 +136,7 @@ The **Update status** group for feature updates contains the following items:
 The **Device status** group for feature updates contains the following items:
 
 - **Windows 11 readiness status**: Chart containing how many devices that have a status of capable, not capable, or unknown for Windows 11 readiness.
-- **Device alerts**: Count of active alerts for feature updates in each alert classification.
+- **Device alerts**: Count of active device alerts for feature updates in each alert classification.
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
