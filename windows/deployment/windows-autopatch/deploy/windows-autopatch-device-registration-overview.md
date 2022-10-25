@@ -1,7 +1,7 @@
 ---
 title: Device registration overview
 description:  This article provides an overview on how to register devices in Autopatch
-ms.date: 09/07/2022
+ms.date: 10/5/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -22,7 +22,8 @@ The overall device registration process is:
 
 :::image type="content" source="../media/windows-autopatch-device-registration-overview.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-device-registration-overview.png":::
 
-1. IT admin identifies devices to be managed by Windows Autopatch and adds them into the **Windows Autopatch Device Registration** Azure Active Directory (AD) group.
+1. IT admin reviews [Windows Autopatch device registration pre-requisites](windows-autopatch-register-devices.md#prerequisites-for-device-registration) prior to register devices with Windows Autopatch.
+2. IT admin identifies devices to be managed by Windows Autopatch and adds them into the **Windows Autopatch Device Registration** Azure Active Directory (AD) group.
 1. Windows Autopatch then:
     1. Performs device readiness prior registration (prerequisite checks).
     1. Calculates the deployment ring distribution.
