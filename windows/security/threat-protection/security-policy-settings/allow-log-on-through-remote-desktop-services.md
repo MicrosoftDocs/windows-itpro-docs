@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Allow log on through Remote Desktop Services
