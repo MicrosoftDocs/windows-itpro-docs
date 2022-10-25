@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[CabSigning\] .INS file setting to customize the digital signature info for your apps.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 098707e9-d712-4297-ac68-7d910ca8f43b
 ms.reviewer: 
 audience: itpro

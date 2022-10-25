@@ -8,7 +8,7 @@ author: frankroj
 ms.author: frankroj
 ms.reviewer: rafals
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual

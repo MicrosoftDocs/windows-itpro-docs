@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the policy se
 ms.assetid: d465fc27-1cd2-498b-9cf6-7ad2276e5998
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Admin Approval Mode for the Built-in Administrator account
