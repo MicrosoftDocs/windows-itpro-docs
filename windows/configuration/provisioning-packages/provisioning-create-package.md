@@ -44,7 +44,7 @@ You can use Windows Configuration Designer to create a provisioning package (`.p
       Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop and kiosk devices, see [What you can configure using Configuration Designer wizards](provisioning-packages.md#configuration-designer-wizards).
       
       >[!NOTE]
-      >To target devices running versions earlier than Windows 10 2004, ComputerName customization must be defined from the setting path: Accounts/ComputerAccount/ComputerName, from the advanced editor. The default path from the simple editor uses a new CSP that isn't available on older systems.
+      >To target devices running versions earlier than Windows 10, version 2004, ComputerName customization must be defined from the setting path: `Accounts/ComputerAccount/ComputerName` from the advanced editor. The default path from the simple editor uses a new CSP that isn't available on older systems.
 
     - The **Advanced provisioning** option opens a new project with all the runtime settings available. (The rest of this procedure uses advanced provisioning.)
 
