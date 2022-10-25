@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: We’re sorry. We’ve removed all of the functionality included on the **Connection Manager** page of the Internet Explorer Customization Wizard 11.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 1edaa7db-cf6b-4f94-b65f-0feff3d4081a
 ms.reviewer: 
 audience: itpro
