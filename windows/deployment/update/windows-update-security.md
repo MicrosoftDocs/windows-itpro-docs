@@ -23,7 +23,7 @@ The Windows Update system distributes a multitude of content. Some examples of t
 - Antivirus definitions
 - Microsoft Store apps
 
-This system is initiated when a user interacts with the Windows Update settings page or when an application makes a call into the [WU client service API](/windows/win32/api/_wua/). These calls may be made at various times by different parts of Windows and Microsoft applications, such as [Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date), [Microsoft Defender](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus), and [Plug and Play (PnP)](/windows-hardware/drivers/kernel/introduction-to-plug-and-play).
+This system is initiated when a user interacts with the Windows Update settings page or when an application makes a call into the [WU client service API](/windows/win32/api/_wua/). These calls may be made at various times by Microsoft applications and different parts of Windows, such as [Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date), [Microsoft Defender](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus), and [Plug and Play (PnP)](/windows-hardware/drivers/kernel/introduction-to-plug-and-play).
 
 When such interactions occur, the Windows Update service running on the device will trigger a series of exchanges over the internet with Microsoft's Windows Update servers. The general workflow is:
 
@@ -55,4 +55,12 @@ Microsoft doesn't provide IP addresses or IP ranges for these exceptions because
 The Windows Update service's servers are used solely by WU components. There's no expectation that end users will be interacting with these remote endpoints. Therefore, these service endpoints may not resolve as expected in a web browser. A user casually browsing to these endpoints may notice a lack of adherence to the latest web browser expectations such as publicly trusted PKI, certificate transparency logging, or TLS requirements. This behavior is expected and doesn't limit or otherwise impact the safety and security of the Windows Update system.
 
 Users attempting to browse to the service endpoints may see security warnings and even content access failures. Again, this behavior is expected as the service endpoints aren't designed for web browser access or casual user consumption.
+
+## Securing content delivery
+
+The process of downloading update binaries is secured at a layer above the transport. Even though content may be downloaded through standard HTTP (TCP port 80), the content goes through a rigorous security validation process.
+
+Downloads are load balanced through Content Delivery Networks (CDN), so using TLS would break their Microsoft chain-of-custody. The chain would break because a TLS connection to a caching CDN terminates at the CDN, not Microsoft, thus TLS certificates aren't Microsoft specific. This means that the WU client can't prove the trustworthiness of the CDN (Microsoft doesn't control CDN TLS certificates). Additionally, a TLS connection to a CDN doesn't prove content hasn't been manipulated within the CDN's caching network. Therefore, TLS doesn't offer any of the security promises to the end-to-end Windows Update workflow that it otherwise provides.
+
+Regardless of how the content is delivered, once it has been downloaded, it's properly validated for trust, integrity, and intention using various techniques including digital signature validation and file hash checks, among others. This level of content validation provides even more layers of security than TLS alone.
 
