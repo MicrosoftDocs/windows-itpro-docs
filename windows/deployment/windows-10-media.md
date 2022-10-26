@@ -1,7 +1,7 @@
 ---
 title: Windows 10 volume license media
 description: Learn about volume license media in Windows 10, and channels such as the Volume License Service Center (VLSC).
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.reviewer: 

@@ -1,13 +1,13 @@
 ---
 title: Windows 10/11 Enterprise E3 in CSP
 description: Describes Windows 10/11 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10/11 Enterprise edition.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 09/28/2021
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection:
+ms.collection: 
   - M365-modern-desktop
   - highpri
 ms.topic: article
