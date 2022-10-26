@@ -2,7 +2,7 @@
 title: Windows subscription activation
 description: In this article, you'll learn how to dynamically enable Windows 10 and Windows 11 Enterprise or Education subscriptions.
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
