@@ -1,9 +1,9 @@
 ---
 title: Windows quality and feature update communications
-description:  This article explains Windows quality update communications
+description: This article explains Windows quality update communications
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

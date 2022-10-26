@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Custom Components page in the IEAK 11 Customization Wizard to add additional components for your employees to install with IE.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 38a2b90f-c324-4dc8-ad30-8cd3e3e901d7
 ms.reviewer: 
 audience: itpro

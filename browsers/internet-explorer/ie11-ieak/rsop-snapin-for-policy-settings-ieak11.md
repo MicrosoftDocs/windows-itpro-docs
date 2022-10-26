@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: manage
 description: Learn how to use the Resultant Set of Policy (RSoP) snap-in to view your policy settings.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 0f21b320-e879-4a06-8589-aae6fc264666
 ms.reviewer: 
 audience: itpro

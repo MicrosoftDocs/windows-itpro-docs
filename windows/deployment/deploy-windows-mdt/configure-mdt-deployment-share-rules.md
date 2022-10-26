@@ -4,10 +4,11 @@ description: Learn how to configure the MDT rules engine to reach out to other r
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Configure MDT deployment share rules

@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Use the \[CustomBranding\] .INS file setting to specify the location of your branding cabinet (.cab) file.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 9c74e239-65c5-4aa5-812f-e0ed80c5c2b0
 ms.reviewer: 
 audience: itpro

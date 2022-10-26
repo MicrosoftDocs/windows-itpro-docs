@@ -1,9 +1,9 @@
 ---
 title: Privacy
-description:  This article provides details about the data platform and privacy compliance for Autopatch
+description: This article provides details about the data platform and privacy compliance for Autopatch
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: reference
 ms.localizationpriority: medium
 author: tiaraquan

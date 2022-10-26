@@ -4,11 +4,12 @@ description: Find compatibility fixes for all Windows operating systems that hav
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
