@@ -4,9 +4,10 @@ description: Ensure that the data, content, and resources you work with in the W
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Security and data protection considerations for Windows To Go

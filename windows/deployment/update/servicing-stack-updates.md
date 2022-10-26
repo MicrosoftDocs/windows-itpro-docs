@@ -1,16 +1,17 @@
 ---
 title: Servicing stack updates
 description: In this article, learn how servicing stack updates improve the code that installs the other updates.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: high
 ms.author: aaroncz
 manager: dougeby
-ms.collection:
+ms.collection: 
   - M365-modern-desktop
   - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Servicing stack updates

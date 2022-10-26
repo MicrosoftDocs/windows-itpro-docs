@@ -3,11 +3,11 @@ title: Policy CSP - ControlPolicyConflict
 description: Use the Policy CSP - ControlPolicyConflict setting to control which policy is used whenever both the MDM policy and its equivalent Group Policy are set on the device.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

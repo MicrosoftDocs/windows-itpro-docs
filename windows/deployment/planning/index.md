@@ -1,12 +1,13 @@
 ---
 title: Plan for Windows 10 deployment (Windows 10)
-description: Find resources for your Windows 10 deployment. Windows 10 provides new deployment capabilities and tools, and introduces new ways to keep the OS up to date. 
-ms.prod: w10
+description: Find resources for your Windows 10 deployment. Windows 10 provides new deployment capabilities and tools, and introduces new ways to keep the OS up to date.
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Plan for Windows 10 deployment
