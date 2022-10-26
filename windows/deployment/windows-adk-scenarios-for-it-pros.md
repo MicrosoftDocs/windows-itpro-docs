@@ -4,7 +4,7 @@ description: The Windows Assessment and Deployment Kit (Windows ADK) contains to
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article

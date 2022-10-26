@@ -5,8 +5,8 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: medium
-ms.prod: w10
-ms.collection:
+ms.prod: windows-client
+ms.collection: 
   - M365-modern-desktop
   - highpri
 ms.topic: article
