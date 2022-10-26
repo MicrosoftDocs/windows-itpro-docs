@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn how to perform all of the workflow-related processes in the Enterprise Mode Site List Portal.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 title: Workflow-based processes for employees using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

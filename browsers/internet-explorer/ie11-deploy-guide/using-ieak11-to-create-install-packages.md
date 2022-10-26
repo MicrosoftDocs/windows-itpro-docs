@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use IEAK 11 while planning, customizing, and building the custom installation package.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: af93742f-f955-44ab-bfa2-7bf0c99045d3
 ms.reviewer: 
 audience: itpro
