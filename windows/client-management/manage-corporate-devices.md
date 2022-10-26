@@ -5,7 +5,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 keywords: [MDM, device management]
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/14/2021
