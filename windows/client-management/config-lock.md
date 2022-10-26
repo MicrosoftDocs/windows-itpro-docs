@@ -4,8 +4,8 @@ description: A secured-core PC (SCPC) feature that prevents configuration drift 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 05/24/2022
 ---
