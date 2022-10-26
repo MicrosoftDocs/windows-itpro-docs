@@ -1,12 +1,12 @@
 ---
 title: SUPL CSP
 description: Learn how the SUPL configuration service provider (CSP) is used to configure the location client.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/12/2019
 ---

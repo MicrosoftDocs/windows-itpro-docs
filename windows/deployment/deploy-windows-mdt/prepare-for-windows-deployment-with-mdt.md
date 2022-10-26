@@ -4,10 +4,11 @@ description: This topic will walk you through the steps necessary to create the 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Prepare for deployment with MDT

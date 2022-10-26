@@ -1,7 +1,7 @@
 ---
 title: Mandatory tasks and settings required to turn on Windows Information Protection (WIP) (Windows 10)
 description: Review all of the tasks required for Windows to turn on Windows Information Protection (WIP), formerly enterprise data protection (EDP), in your enterprise.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp

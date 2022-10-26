@@ -6,7 +6,7 @@ description: Internet Explorer Administration Kit (IEAK) helps corporations, Int
 author: dansimp
 ms.author: dansimp
 ms.manager: elizapo
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 
 ms.reviewer: 
 audience: itpro
