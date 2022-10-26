@@ -4,10 +4,11 @@ description: This topic will show you how to use MDT Lite Touch Installation (LT
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Refresh a Windows 7 computer with Windows 10

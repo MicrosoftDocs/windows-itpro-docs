@@ -1,7 +1,7 @@
 ---
 title: Set up and use Microsoft Defender SmartScreen on individual devices (Windows)
 description: Learn how employees can use Windows Security to set up Microsoft Defender SmartScreen. Microsoft Defender SmartScreen protects users from running malicious apps.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -11,7 +11,7 @@ ms.date: 10/13/2017
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Set up and use Microsoft Defender SmartScreen on individual devices

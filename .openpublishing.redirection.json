@@ -19929,11 +19929,151 @@
       "source_path": "windows/deployment/do/mcc-enterprise.md",
       "redirect_url": "/windows/deployment/do/mcc-enterprise-overview",
       "redirect_document_id": false
-      },     
-      {
-       "source_path": "education/windows/set-up-school-pcs-shared-pc-mode.md",
-       "redirect_url": "/windows/configuration/set-up-shared-or-guest-pc",
-       "redirect_document_id": false
-     }
+    },
+    {
+      "source_path": "windows/client-management/advanced-troubleshooting-802-authentication.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/802-1x-authentication-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/advanced-troubleshooting-boot-problems.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-boot-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/advanced-troubleshooting-wireless-network-connectivity.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/wireless-network-connectivity-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/data-collection-for-802-authentication.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/data-collection-for-troubleshooting-802-1x-authentication-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/determine-appropriate-page-file-size.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/generate-kernel-or-complete-crash-dump.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/generate-a-kernel-or-complete-crash-dump",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/introduction-page-file.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/introduction-to-the-page-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/system-failure-recovery-options.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/configure-system-failure-and-recovery-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-event-id-41-restart.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/event-id-41-restart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-inaccessible-boot-device.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-7b-or-inaccessible-boot-device-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-networking.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/networking-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-stop-error-on-broadcom-driver-update.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-broadcom-network-driver-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-stop-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/stop-error-or-blue-screen-error-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-connectivity.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/tcp-ip-connectivity-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-netmon.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/collect-data-using-network-monitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-port-exhaust.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/tcp-ip-port-exhaustion-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip-rpc-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/rpc-errors-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-tcpip.md",
+      "redirect_url": "/troubleshoot/windows-client/networking/networking-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-windows-freeze.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-based-computer-freeze-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/troubleshoot-windows-startup.md",
+      "redirect_url": "/troubleshoot/windows-client/performance/windows-startup-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/windows-10-support-solutions.md",
+      "redirect_url": "/troubleshoot/windows-client/welcome-windows-client",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-shared-pc-mode.md",
+      "redirect_url": "/windows/configuration/set-up-shared-or-guest-pc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-resources.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/additional-resources-for-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-troubleshooting.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/quick-fixes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/resolution-procedures.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/troubleshoot-upgrade-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-error-codes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    }
   ]
 }

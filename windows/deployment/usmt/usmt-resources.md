@@ -4,10 +4,11 @@ description: Learn about User State Migration Tool (USMT) online resources, incl
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # USMT Resources

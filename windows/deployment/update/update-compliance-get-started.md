@@ -1,16 +1,17 @@
 ---
 title: Get started with Update Compliance
 manager: aczechowski
-description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
-ms.prod: w10
+description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection:
+ms.collection: 
   - M365-analytics
   - highpri
 ms.topic: article
 ms.date: 05/03/2022
+ms.technology: itpro-updates
 ---
 
 # Get started with Update Compliance

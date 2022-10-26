@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[ISP_Security\] .INS file setting to add the root certificate for your custom Internet Explorer package.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 4eca2de5-7071-45a2-9c99-75115be00d06
 ms.reviewer: 
 audience: itpro

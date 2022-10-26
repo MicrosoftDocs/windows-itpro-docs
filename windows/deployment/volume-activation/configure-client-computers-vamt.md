@@ -5,9 +5,10 @@ ms.reviewer:
 manager: dougeby
 author: aczechowski
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/30/2020
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Configure Client Computers

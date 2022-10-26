@@ -1,7 +1,7 @@
 ---
 title: Limitations while using Windows Information Protection (WIP)
 description: This section includes info about the common problems you might encounter while using Windows Information Protection (WIP).
-ms.prod: m365-security
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby

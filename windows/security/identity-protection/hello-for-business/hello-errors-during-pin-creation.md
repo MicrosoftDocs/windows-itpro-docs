@@ -69,7 +69,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
-| 0xC00000BB | Your PIN or this option is temporarily unavailable.                | The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Another common cause can be the client can not verify the KDC certificate CRL. Use a different login method.|
+| 0xC00000BB | Your PIN or this option is temporarily unavailable.                | The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Another common cause can be the client cannot verify the KDC certificate CRL. Use a different login method.|
 
 ## Errors with unknown mitigation
 
@@ -108,5 +108,5 @@ For errors listed in this table, contact Microsoft Support for assistance.
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+- [Event ID 300 - Windows Hello successfully created](/troubleshoot/windows-client/user-profiles-and-logon/event-id-300-windows-hello-successfully-created-in-windows-10)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

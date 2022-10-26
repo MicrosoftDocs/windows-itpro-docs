@@ -4,7 +4,7 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: Learn about deploying Windows 10 with Microsoft 365 and how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
