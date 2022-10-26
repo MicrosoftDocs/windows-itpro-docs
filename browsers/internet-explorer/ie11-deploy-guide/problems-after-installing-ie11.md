@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Possible solutions to the problems you might encounter after installing IE11, such as crashing or seeming slow, getting into an unusable state, or problems with adaptive streaming and DRM playback.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: c4b75ad3-9c4a-4dd2-9fed-69f776f542e6
 ms.reviewer: 
 audience: itpro

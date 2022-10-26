@@ -5,7 +5,7 @@ ms.reviewer:
 manager: dougeby
 author: aczechowski
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
