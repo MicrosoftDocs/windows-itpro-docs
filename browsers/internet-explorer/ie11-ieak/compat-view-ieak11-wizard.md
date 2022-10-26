@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: We’re sorry. We’ve removed all of the functionality included on the **Compatibility View** page of the Internet Explorer Customization Wizard 11.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 51d8f80e-93a5-41e4-9478-b8321458bc30
 ms.reviewer: 
 audience: itpro

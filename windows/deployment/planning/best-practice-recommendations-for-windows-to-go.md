@@ -4,9 +4,10 @@ description: Learn about best practice recommendations for using Windows To Go, 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Best practice recommendations for Windows To Go
