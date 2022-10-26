@@ -2,12 +2,13 @@
 title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10/11)
 description: How to configure the client to receive package and connection groups updates from the publishing server.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 06/25/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # How to configure the client to receive package and connection groups updates from the publishing server

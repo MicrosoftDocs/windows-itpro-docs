@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Additional Settings page in IEAK 11 Customization Wizard for additional settings that relate to your employee’s desktop, operating system, and security.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
 ms.reviewer: 
 audience: itpro
