@@ -5,11 +5,12 @@ ms.assetid: 3c8a2d53-8f08-475f-923a-bca79ca8ac36
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager

@@ -4,10 +4,11 @@ description: This topic will show you how to add applications to a role in the M
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Assign applications using roles in MDT

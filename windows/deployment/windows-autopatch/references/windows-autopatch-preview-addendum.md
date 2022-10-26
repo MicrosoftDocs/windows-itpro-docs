@@ -1,9 +1,9 @@
 ---
 title: Windows Autopatch Preview Addendum
-description:  This article explains the Autopatch preview addendum
+description: This article explains the Autopatch preview addendum
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: reference
 ms.localizationpriority: medium
 author: tiaraquan

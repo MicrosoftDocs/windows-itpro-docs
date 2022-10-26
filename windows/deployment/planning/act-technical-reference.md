@@ -4,9 +4,10 @@ description: The Microsoft Application Compatibility Toolkit (ACT) helps you see
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Application Compatibility Toolkit (ACT) Technical Reference

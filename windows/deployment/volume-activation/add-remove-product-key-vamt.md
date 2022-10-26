@@ -4,10 +4,11 @@ description: Add a product key to the Volume Activation Management Tool (VAMT) d
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Add and Remove a Product Key

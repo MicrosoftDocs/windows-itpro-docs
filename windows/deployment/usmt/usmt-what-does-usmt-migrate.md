@@ -4,10 +4,11 @@ description: Learn how User State Migration Tool (USMT) 10.0 is designed so tha
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 09/12/2017
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # What does USMT migrate?

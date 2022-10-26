@@ -3,11 +3,12 @@ title: Windows 10 edition upgrade (Windows 10)
 description: With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 edition upgrade
