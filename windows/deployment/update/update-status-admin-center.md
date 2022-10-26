@@ -2,15 +2,16 @@
 title: Microsoft admin center software updates (preview) page
 manager: dougeby
 description: Microsoft admin center populates Update Compliance data into the software updates page.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection:
+ms.collection: 
   - M365-analytics
   - highpri
 ms.topic: article
 ms.date: 06/20/2022
+ms.technology: itpro-updates
 ---
 
 # Microsoft admin center software updates (preview) page

@@ -2,7 +2,7 @@
 title: How to disable Windows Information Protection (WIP)
 description: How to disable Windows Information Protection (WIP) in Microsoft Intune or Microsoft Endpoint Configuration Manager.
 ms.date: 07/21/2022
-ms.prod: m365-security
+ms.prod: windows-client
 ms.topic: how-to
 ms.localizationpriority: medium
 author: lizgt2000

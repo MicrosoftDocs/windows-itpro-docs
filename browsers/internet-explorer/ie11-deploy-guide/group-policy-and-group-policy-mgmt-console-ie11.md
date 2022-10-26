@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
 ms.reviewer: 
 audience: itpro

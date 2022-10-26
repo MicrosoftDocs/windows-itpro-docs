@@ -2,13 +2,14 @@
 title: Update Compliance overview
 ms.reviewer: 
 manager: dougeby
-description: Overview of Update Compliance to explain what it's used for and the cloud services it relies on. 
-ms.prod: w10
+description: Overview of Update Compliance to explain what it's used for and the cloud services it relies on.
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 08/09/2022
+ms.technology: itpro-updates
 ---
 
 # Update Compliance overview
