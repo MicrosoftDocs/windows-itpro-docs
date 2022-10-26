@@ -5,10 +5,11 @@ ms.assetid: d3e1280c-3d1b-4fad-8ac4-b65dc711f122
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Configure MDT settings

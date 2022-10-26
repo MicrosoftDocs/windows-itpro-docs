@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[HideCustom\] .INS file setting to decide whether to hide the GUID for each custom component.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: e673f7b1-c3aa-4072-92b0-20c6dc3d9277
 ms.reviewer: 
 audience: itpro

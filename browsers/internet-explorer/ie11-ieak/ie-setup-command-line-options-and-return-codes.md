@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Reference about the command-line options and return codes for Internet Explorer Setup.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 40c23024-cb5d-4902-ad1b-6e8a189a699f
 ms.reviewer: 
 audience: itpro

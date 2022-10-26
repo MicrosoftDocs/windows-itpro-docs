@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Automatic Version Synchronization page in the IEAK 11 Customization Wizard to download the IE11 Setup file each time you run the Wizard.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: bfc7685f-843b-49c3-8b9b-07e69705840c
 ms.reviewer: 
 audience: itpro

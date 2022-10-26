@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[Security Imports\] .INS file setting to decide whether to import security info to your custom package.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 19791c44-aaa7-4f37-9faa-85cbdf29f68e
 ms.reviewer: 
 audience: itpro
