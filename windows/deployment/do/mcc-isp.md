@@ -265,7 +265,7 @@ There are three states for IP address space. MCC configuration supports BGP and 
 
 To modify the configuration for existing MCC nodes in the portal, select the cache node name in the cache nodes list. This action opens the **Cache Node Configuration** page. You can edit the **Server IP Address** or **Address Range/CIDR Blocks** field. You can also enable or disable the cache node.
 
-:::image type="content" source="./images/mcc-isp-node-configuration" alt-text="Screenshot of the Cache Node Configuration page, highlighting editable fields.":::
+:::image type="content" source="./images/mcc-isp-node-configuration.png" alt-text="Screenshot of the Cache Node Configuration page, highlighting editable fields.":::
 
 To delete a cache node, select it in the cache nodes list, and then select **Delete** in the toolbar. If you delete a cache node, there's no way to recover it or any of the information related to the cache node.
 
@@ -333,7 +333,7 @@ Before you start, make sure that you have a data drive configured on your server
 
 1. Specify the location of the cache drives. For example, `/datadrive/`
 
-    :::image type="content" source="./images/mcc-isp-bash-datadrive.png" alt-text="Screenshot of the Bash script prompt to enter the location for cache drive." lightbox="./images/mcc-isp-bash-datadrive.png':::
+    :::image type="content" source="./images/mcc-isp-bash-datadrive.png" alt-text="Screenshot of the Bash script prompt to enter the location for cache drive." lightbox="./images/mcc-isp-bash-datadrive.png":::
 
     > [!IMPORTANT]
     > The script changes the permission and ownership on the cache drive to **everyone** with the command `chmod 777`.
@@ -393,7 +393,7 @@ Before you start, make sure that you have a data drive configured on your server
 
 1. To start routing using BGP, change the **Prefix Source** from **Manually Entered** to **Use BGP**.
 
-    :::image type="content" source="./images/imcc55.PNG" alt-text="Cache node configuration with the Prefix Source set to Use BGP.":::
+    :::image type="content" source="./images/mcc-isp-use-bgp.png" alt-text="Screenshot of the Cache Node Configuration page with the Prefix Source set to Use BGP.":::
 
 
 1. If there are no errors, go to the next section to verify the MCC server.
@@ -414,7 +414,7 @@ Sign in to the Connected Cache server or use SSH. Run the following command from
 sudo iotedge list
 ```
 
-:::image type="content" source="images/imcc26.png" alt-text="Terminal output of iotedge list command, showing the running containers.":::
+:::image type="content" source="./images/mcc-isp-running-containers.png" alt-text="Screenshot of the terminal output of iotedge list command, showing the running containers." lightbox="./images/mcc-isp-running-containers.png":::
 
 If it lists the **edgeAgent** and **edgeHub** containers, but doesn't include **MCC**, view the status of the IoT Edge security manager using the command:
 
@@ -424,7 +424,7 @@ sudo journalctl -u iotedge -f
 
 For example, this command provides the current status of the starting and stopping of a container, or the container pull and start:
 
-:::image type="content" source="images/imcc27.png" alt-text="Terminal output of journalctl command for iotedge.":::
+:::image type="content" source="./images/mcc-isp-edge-journalctl.png" alt-text="Terminal output of journalctl command for iotedge." lightbox="./images/mcc-isp-edge-journalctl.png":::
 
 ### Verify server side
 
@@ -438,7 +438,7 @@ wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.wind
 
 The following screenshot shows a successful test result:
 
-:::image type="content" source="images/mcc-isp-wget.png" alt-text="Terminal output of successful test result with wget command to validate a Microsoft Connected Cache." lightbox="./images/mcc-isp-wget.png":::
+:::image type="content" source="./images/mcc-isp-wget.png" alt-text="Screenshot of the terminal output of successful test result with wget command to validate a Microsoft Connected Cache." lightbox="./images/mcc-isp-wget.png":::
 
 Similarly, enter the following URL into a web browser on any device on the network:
 
@@ -483,7 +483,7 @@ To configure the device to work with your DNS, use the following steps:
     nmcli device show eno1 
     ```
 
-    :::image type="content" source="images/imcc30.png" alt-text="Sample output of nmcli command to show network adapter information.":::
+    :::image type="content" source="images/mcc-isp-nmcli.png" alt-text="Screenshot of a sample output of nmcli command to show network adapter information." lightbox="./images/mcc-isp-nmcli.png":::
 
 1. Open or create the Docker configuration file used to configure the DNS server.
 
@@ -609,7 +609,7 @@ In virtual environments, the cache server egress peaks at around 1.1 Gbps. If yo
 
 More users can be given access to manage Microsoft Connected Cache, even if they don't have an Azure account. Once you've created the first cache node in the portal, you can add other users as **Owners** of the Microsoft Connected Cache resource group and the Microsoft Connected Cache resource.
 
-For more information on how to add other users as an owner, see [Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal). Make sure to do this action for both the _MCC resource_ and _MCC resource group_.
+For more information on how to add other users as an owner, see [Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal). Make sure to do this action for both the *MCC resource* and *MCC resource group*.
 
 ### Setting up a VM on Windows Server
 
@@ -622,35 +622,35 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
 
 1. Start the **New Virtual Machine Wizard** in Hyper-V.
 
-    :::image type="content" source="images/imcc31.png" alt-text="Screenshot of the Before You Begin page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-begin.png" alt-text="Screenshot of the Before You Begin page of the Hyper-V New Virtual Machine Wizard.":::
 
 1. Specify a name and choose a location.
 
-    :::image type="content" source="images/imcc32.png" alt-text="The Specify Name and Location page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-name.png" alt-text="Screenshot of the Specify Name and Location page in the Hyper-V New Virtual Machine Wizard.":::
 
 1. Select **Generation 2**. You can't change this setting later.
 
-    :::image type="content" source="images/imcc33.png" alt-text="The Specify Generation page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-generation.png" alt-text="Screenshot of the Specify Generation page in the Hyper-V New Virtual Machine Wizard.":::
 
 1. Specify the startup memory.
 
-    :::image type="content" source="images/imcc34.png" alt-text="The Assign Memory page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-memory.png" alt-text="Screenshot of the Assign Memory page of the Hyper-V New Virtual Machine Wizard.":::
 
 1. Choose the network adapter connection.
 
-    :::image type="content" source="images/imcc35.png" alt-text="The Configure Networking page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-networking.png" alt-text="Screenshot of the Configure Networking page of the Hyper-V New Virtual Machine Wizard.":::
 
 1. Set the virtual hard disk parameters. You should specify enough space for the OS and the content that will be cached. For example, `1024` GB is 1 terabyte.
 
-    :::image type="content" source="images/imcc36.png" alt-text="The Connect Virtual Hard Disk page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-disk.png" alt-text="Screenshot of the Connect Virtual Hard Disk page of the Hyper-V New Virtual Machine Wizard.":::
 
 1. Select **Install an OS from a bootable image file** and browse to the ISO for Ubuntu 20.04 LTS that you previously downloaded.
 
-    :::image type="content" source="images/imcc37.png" alt-text="The Installation Options page of the Hyper-V New Virtual Machine Wizard.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-installation-options.png" alt-text="Screenshot of the Installation Options page of the Hyper-V New Virtual Machine Wizard.":::
 
 1. Review the settings and select **Finish** to create the Ubuntu VM.
 
-    :::image type="content" source="images/imcc38.png" alt-text="Completing the New Virtual Machine Wizard on Hyper-V.":::
+    :::image type="content" source="images/imcc38.png" alt-text="Screenshot of completing the New Virtual Machine Wizard on Hyper-V.":::
 
 1. Before you start the Ubuntu VM, disable **Secure Boot** and allocate multiple cores to the VM.
 
