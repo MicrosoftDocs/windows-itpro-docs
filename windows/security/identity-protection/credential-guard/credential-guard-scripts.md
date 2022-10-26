@@ -1,7 +1,7 @@
 ---
 title: Scripts for Certificate Issuance Policies in Windows Defender Credential Guard (Windows)
-description:  Obtain issuance policies from the certificate authority for Windows Defender Credential Guard on Windows.
-ms.prod: m365-security
+description: Obtain issuance policies from the certificate authority for Windows Defender Credential Guard on Windows.
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma

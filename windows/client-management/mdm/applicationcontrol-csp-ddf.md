@@ -3,8 +3,8 @@ title: ApplicationControl CSP DDF
 description: View the OMA DM device description framework (DDF) for the ApplicationControl configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/10/2019
 ---
