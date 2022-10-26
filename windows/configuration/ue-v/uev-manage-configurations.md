@@ -2,12 +2,13 @@
 title: Manage Configurations for UE-V
 description: Learn to manage the configuration of the User Experience Virtualization (UE-V) service and also learn to manage storage locations for UE-V resources.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Manage Configurations for UE-V
