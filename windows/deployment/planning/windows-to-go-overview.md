@@ -4,9 +4,10 @@ description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows To Go: feature overview

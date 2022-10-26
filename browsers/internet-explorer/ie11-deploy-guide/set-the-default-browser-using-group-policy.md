@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use the Group Policy setting, Set a default associations configuration file, to set the default browser for your company devices running Windows 10.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
 ms.reviewer: 
 audience: itpro

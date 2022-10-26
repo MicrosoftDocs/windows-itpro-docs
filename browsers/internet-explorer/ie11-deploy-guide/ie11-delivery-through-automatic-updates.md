@@ -6,7 +6,7 @@ description: A high-level overview of the delivery process and your options to c
 author: dansimp
 ms.author: dansimp
 ms.manager: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 
 ms.reviewer: 
 audience: itpro

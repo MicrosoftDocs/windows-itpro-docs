@@ -7,7 +7,7 @@ ms.reviewer:
 audience: itpro
 manager: dansimp
 ms.author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ---
 
 # Full-sized flowchart detailing how document modes are chosen in IE11
