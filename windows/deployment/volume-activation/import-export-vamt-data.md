@@ -4,8 +4,8 @@ description: Learn how to use the VAMT to import product-activation data from a 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-fundamentals
 author: aczechowski
 ms.date: 05/02/2022
 ms.topic: how-to
