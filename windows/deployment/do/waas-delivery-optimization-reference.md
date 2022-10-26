@@ -3,13 +3,14 @@ title: Delivery Optimization reference
 ms.reviewer: 
 manager: dougeby
 description: This article provides a summary of references and descriptions for all of the Delivery Optimization settings.
-ms.prod: w10
+ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.collection: M365-modern-desktop
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Delivery Optimization reference

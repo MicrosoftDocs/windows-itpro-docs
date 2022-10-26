@@ -3,12 +3,12 @@ title: Policy CSP - TaskScheduler
 description: Learn how to use the Policy CSP - TaskScheduler setting to determine whether the specific task is enabled (1) or disabled (0).
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

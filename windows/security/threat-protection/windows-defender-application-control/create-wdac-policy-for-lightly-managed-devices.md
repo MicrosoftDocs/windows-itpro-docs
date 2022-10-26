@@ -4,7 +4,7 @@ description: Windows Defender Application Control restricts which applications u
 keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,7 +16,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.date: 08/10/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a WDAC policy for lightly managed devices

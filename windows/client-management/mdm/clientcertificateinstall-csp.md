@@ -1,12 +1,12 @@
 ---
 title: ClientCertificateInstall CSP
 description: The ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/30/2021
 ---

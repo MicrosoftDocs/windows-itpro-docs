@@ -1,7 +1,7 @@
 ---
 title: Prepare for Windows 11
 description: Prepare your infrastructure and tools to deploy Windows 11, IT Pro content.
-ms.prod: w11
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby

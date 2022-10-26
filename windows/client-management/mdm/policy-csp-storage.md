@@ -3,12 +3,12 @@ title: Policy CSP - Storage
 description: Learn to use the Policy CSP - Storage settings to automatically clean some of the user’s files to free up disk space.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 03/25/2022
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

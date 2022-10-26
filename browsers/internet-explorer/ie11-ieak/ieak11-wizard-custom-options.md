@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Review the options available to help you customize your browser install packages for deployment to your employee's devices.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 4b804da3-c3ac-4b60-ab1c-99536ff6e31b
 ms.reviewer: 
 audience: itpro

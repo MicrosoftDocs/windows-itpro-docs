@@ -3,11 +3,12 @@ title: Policies (Windows 10)
 ms.reviewer: 
 manager: dougeby
 description: This section describes the Policies settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Policies (Windows Configuration Designer reference)
