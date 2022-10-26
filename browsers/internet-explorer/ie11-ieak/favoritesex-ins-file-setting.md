@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[FavoritesEx\] .INS file setting to specify your Favorites icon file, whether Favorites is available offline, and your Favorites URLs.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 55de376a-d442-478e-8978-3b064407b631
 ms.reviewer: 
 audience: itpro

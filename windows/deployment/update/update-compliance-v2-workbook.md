@@ -3,12 +3,13 @@ title: Use the workbook for Update Compliance (preview)
 ms.reviewer: 
 manager: dougeby
 description: How to use the Update Compliance (preview) workbook.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 10/24/2022
+ms.technology: itpro-updates
 ---
 
 # Update Compliance (preview) workbook
