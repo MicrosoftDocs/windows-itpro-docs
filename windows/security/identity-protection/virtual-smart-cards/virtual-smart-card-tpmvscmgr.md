@@ -1,7 +1,7 @@
 ---
 title: Tpmvscmgr (Windows 10)
 description: This topic for the IT professional describes the Tpmvscmgr command-line tool, through which an administrator can create and delete TPM virtual smart cards on a computer.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -9,9 +9,9 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows Server 2016</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows Server 2016</b>
 ---
 
 # Tpmvscmgr

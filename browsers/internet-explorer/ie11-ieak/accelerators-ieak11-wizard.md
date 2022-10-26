@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Accelerators page in the IEAK 11 Customization Wizard to add accelerators to employee devices.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 208305ad-1bcd-42f3-aca3-0ad1dda7048b
 ms.reviewer: 
 audience: itpro

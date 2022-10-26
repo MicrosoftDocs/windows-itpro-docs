@@ -3,12 +3,12 @@ title: Policy CSP - WebThreatDefense
 description: Learn about the Policy CSP - WebThreatDefense.
 ms.author: v-aljupudi
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: alekyaj
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

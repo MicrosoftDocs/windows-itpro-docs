@@ -4,10 +4,11 @@ description: Learn about deployment considerations for Windows To Go, such as th
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Deployment considerations for Windows To Go
