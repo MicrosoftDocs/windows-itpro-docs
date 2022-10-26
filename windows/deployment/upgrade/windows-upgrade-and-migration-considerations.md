@@ -4,9 +4,10 @@ description: Discover the Microsoft tools you can use to move files and settings
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows upgrade and migration considerations

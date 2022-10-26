@@ -1,9 +1,9 @@
 ---
 title: Unenroll your tenant
-description:  This article explains what unenrollment means for your organization and what actions you must take. 
+description: This article explains what unenrollment means for your organization and what actions you must take.
 ms.date: 07/27/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan

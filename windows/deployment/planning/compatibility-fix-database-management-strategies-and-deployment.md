@@ -4,11 +4,12 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: Learn how to deploy your compatibility fixes into an application-installation package or through a centralized compatibility-fix database.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ms.custom: seo-marvel-mar2020
+ms.technology: itpro-deploy
 ---
 
 # Compatibility Fix Database Management Strategies and Deployment
