@@ -61,7 +61,7 @@
           href: mcc-isp-support.md
         - name: Version history
           href: mcc-version-history.md
-        - name: MCC for ISPs (Private Preview)
+        - name: MCC for ISPs (Early Preview)
           href: mcc-isp.md
 - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
   href: delivery-optimization-endpoints.md 
