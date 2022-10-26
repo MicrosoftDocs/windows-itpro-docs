@@ -3,8 +3,8 @@ title: Policy CSP - FederatedAuthentication
 description: Use the Policy CSP - Represents the enablement state of the Web Sign-in Credential Provider for device sign-in.
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: nimishasatapathy
 ms.localizationpriority: medium
 ms.date: 09/07/2022

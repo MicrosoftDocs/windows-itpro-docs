@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[URL\] .INS file setting to decide whether to use an auto-configured proxy server.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 05b09dfa-cf11-408d-92c2-b4ae434a59a7
 ms.reviewer: 
 audience: itpro
