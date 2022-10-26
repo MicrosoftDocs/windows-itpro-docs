@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Browser User Interface page in the IEAK 11 Customization Wizard to change the toolbar buttons and the title bar.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: c4a18dcd-2e9c-4b5b-bcc5-9b9361a79f0d
 ms.reviewer: 
 audience: itpro

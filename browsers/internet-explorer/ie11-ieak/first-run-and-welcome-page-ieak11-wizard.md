@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the First Run Wizard and Welcome Page Options page in the IEAK 11 Customization Wizard to set what your employee’s see the first time they log on to IE, based on their operating system.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 85f856a6-b707-48a9-ba99-3a6e898276a9
 ms.reviewer: 
 audience: itpro

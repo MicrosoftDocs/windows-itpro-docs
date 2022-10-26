@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[Branding\] .INS file setting to set up your custom branding and setup info in your browser install package.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: cde600c6-29cf-4bd3-afd1-21563d2642df
 ms.reviewer: 
 audience: itpro

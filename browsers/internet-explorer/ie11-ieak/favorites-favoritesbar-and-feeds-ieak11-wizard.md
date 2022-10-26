@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Favorites, Favorites Bar, and Feeds page in IEAK 11 Customization Wizard to add links, web slices, and feeds to your custom browser package.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 84afa831-5642-4b8f-b7df-212a53ec8fc7
 ms.reviewer: 
 audience: itpro
