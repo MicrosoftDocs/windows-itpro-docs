@@ -7,23 +7,24 @@ author: DocsPreview
 manager: jren
 ms.reviewer: mstewart
 ms.topic: how-to
-ms.prod: w10
+ms.prod: windows-client
 localization_priority: medium
 ms.custom: 
-- Adm_O365
-- 'O365P_ServiceHealthModern'
-- 'O365M_ServiceHealthModern'
-- 'O365E_ViewStatusServices'
-- 'O365E_ServiceHealthModern'
-- 'seo-marvel-apr2020'
-ms.collection:
-- Ent_O365
-- M365-subscription-management
-search.appverid:
-- MET150
-- MOE150
-- BCS160
-- IWA160
+  - Adm_O365
+  - 'O365P_ServiceHealthModern'
+  - 'O365M_ServiceHealthModern'
+  - 'O365E_ViewStatusServices'
+  - 'O365E_ServiceHealthModern'
+  - 'seo-marvel-apr2020'
+ms.collection: 
+  - Ent_O365
+  - M365-subscription-management
+search.appverid: 
+  - MET150
+  - MOE150
+  - BCS160
+  - IWA160
+ms.technology: itpro-updates
 ---
 
 # How to check Windows release health
