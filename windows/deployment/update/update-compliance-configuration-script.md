@@ -3,13 +3,14 @@ title: Update Compliance Configuration Script
 ms.reviewer: 
 manager: aczechowski
 description: Downloading and using the Update Compliance Configuration Script
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 06/16/2022
+ms.technology: itpro-updates
 ---
 
 # Configuring devices through the Update Compliance Configuration Script

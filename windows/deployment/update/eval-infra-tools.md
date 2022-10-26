@@ -1,13 +1,14 @@
 ---
 title: Evaluate infrastructure and tools
 description: Steps to make sure your infrastructure is ready to deploy updates
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: m365initiative-coredeploy
+ms.technology: itpro-updates
 ---
 
 # Evaluate infrastructure and tools
