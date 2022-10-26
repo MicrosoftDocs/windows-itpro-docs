@@ -1,9 +1,9 @@
 ---
 title: Windows quality updates
-description:  This article explains how Windows quality updates are managed in Autopatch
+description: This article explains how Windows quality updates are managed in Autopatch
 ms.date: 08/08/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
