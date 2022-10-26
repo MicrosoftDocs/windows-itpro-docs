@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Proxy Settings page in the IEAK 11 Customization Wizard to pick the proxy servers used to connect to required services.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 1fa1eee3-e97d-41fa-a48c-4a6e0dc8b544
 ms.reviewer: 
 audience: itpro

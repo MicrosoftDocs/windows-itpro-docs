@@ -1,13 +1,14 @@
 ---
 title: Overview of Windows as a service
 description: Windows as a service is a way to build, deploy, and service Windows. Learn how Windows as a service works.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-updates
 ---
 
 # Overview of Windows as a service

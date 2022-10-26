@@ -1,7 +1,6 @@
 ---
 title: Personal Data Encryption (PDE)
 description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
-
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rafals
