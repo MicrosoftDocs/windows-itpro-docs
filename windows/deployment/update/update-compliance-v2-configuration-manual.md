@@ -3,13 +3,14 @@ title: Manually configuring devices for Update Compliance (preview)
 ms.reviewer: 
 manager: dougeby
 description: Manually configuring devices for Update Compliance (preview)
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 06/06/2022
+ms.technology: itpro-updates
 ---
 
 # Manually Configuring Devices for Update Compliance (preview)

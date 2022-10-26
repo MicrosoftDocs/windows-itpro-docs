@@ -4,7 +4,7 @@ description: Provides an overview and links to information about the User Rights
 ms.assetid: 99340252-60be-4c79-b0a5-56fbe1a9b0c5
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 12/16/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Rights Assignment

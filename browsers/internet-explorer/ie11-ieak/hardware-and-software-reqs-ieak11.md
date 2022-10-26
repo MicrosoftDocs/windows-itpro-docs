@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: List of supported hardware and software requirements for Internet Explorer 11 and the Internet Explorer Administration Kit 11.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: c50b86dc-7184-43d1-8daf-e750eb88dabb
 ms.reviewer: 
 audience: itpro

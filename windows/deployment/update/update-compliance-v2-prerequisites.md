@@ -3,12 +3,13 @@ title: Update Compliance prerequisites
 ms.reviewer: 
 manager: dougeby
 description: Prerequisites for Update Compliance
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 06/30/2022
+ms.technology: itpro-updates
 ---
 
 # Update Compliance prerequisites

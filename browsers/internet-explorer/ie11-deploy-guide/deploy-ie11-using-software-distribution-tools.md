@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Deploy Internet Explorer 11 using software distribution tools
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: fd027775-651a-41e1-8ec3-d32eca876d8a
 ms.reviewer: 
 audience: itpro

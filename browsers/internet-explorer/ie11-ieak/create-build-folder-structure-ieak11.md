@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: How to create your folder structure on the computer that you’ll use to build your custom browser package.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: e0d05a4c-099f-4f79-a069-4aa1c28a1080
 ms.reviewer: 
 audience: itpro

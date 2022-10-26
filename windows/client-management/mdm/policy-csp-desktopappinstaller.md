@@ -4,11 +4,11 @@ description: Learn about the Policy CSP - DesktopAppInstaller.
 ms.author: v-aljupudi
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: alekyaj
 ms.date: 08/24/2022
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

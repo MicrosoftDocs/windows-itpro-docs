@@ -1,9 +1,9 @@
 ---
 title: Microsoft 365 Apps for enterprise
-description:  This article explains how Microsoft 365 Apps for enterprise updates are managed in Windows Autopatch
+description: This article explains how Microsoft 365 Apps for enterprise updates are managed in Windows Autopatch
 ms.date: 08/08/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

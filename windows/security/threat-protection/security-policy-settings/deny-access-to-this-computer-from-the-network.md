@@ -4,7 +4,7 @@ description: Best practices, location, values, policy management, and security c
 ms.assetid: 935e9f89-951b-4163-b186-fc325682bb0b
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/19/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Deny access to this computer from the network
