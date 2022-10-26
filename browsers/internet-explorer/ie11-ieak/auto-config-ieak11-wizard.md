@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Automatic Configuration page in the IEAK 11 Customization Wizard to add URLs to auto-configure IE.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: de5b1dbf-6e4d-4f86-ae08-932f14e606b0
 ms.reviewer: 
 audience: itpro

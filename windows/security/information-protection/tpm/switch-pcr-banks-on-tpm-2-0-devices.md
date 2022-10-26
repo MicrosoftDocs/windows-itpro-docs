@@ -2,11 +2,11 @@
 title: Understanding PCR banks on TPM 2.0 devices (Windows)
 description: This topic for the IT professional provides background about what happens when you switch PCR banks on TPM 2.0 devices.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual

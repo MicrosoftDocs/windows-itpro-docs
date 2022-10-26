@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Use the \[BrowserToolbars\] .INS file setting to customize your Internet Explorer toolbar and buttons.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 83af0558-9df3-4c2e-9350-44f7788efa6d
 ms.reviewer: 
 audience: itpro
