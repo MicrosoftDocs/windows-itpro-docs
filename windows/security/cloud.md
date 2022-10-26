@@ -4,15 +4,15 @@ description: Get an overview of cloud services supported in Windows 11 and Windo
 ms.reviewer: 
 author: paolomatarazzo
 ms.author: paoloma
-manager: aaroncz 
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/20/2021
 ms.localizationpriority: medium
 ms.custom: 
-search.appverid: MET150 
+search.appverid: MET150
 ms.collection: M365-security-compliance
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Windows and cloud security

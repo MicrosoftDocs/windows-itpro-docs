@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to fix potential installation problems with Internet Explorer 11
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
 ms.reviewer: 
 audience: itpro

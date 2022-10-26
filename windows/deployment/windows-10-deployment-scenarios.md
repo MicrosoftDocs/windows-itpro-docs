@@ -4,7 +4,7 @@ description: Understand the different ways Windows 10 operating system can be de
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
