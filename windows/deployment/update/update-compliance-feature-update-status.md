@@ -3,12 +3,13 @@ title: Update Compliance - Feature Update Status report
 ms.reviewer: 
 manager: aczechowski
 description: Learn how the Feature Update Status report provides information about the status of feature updates across all devices.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Feature Update Status

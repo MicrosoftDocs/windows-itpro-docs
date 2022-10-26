@@ -3,12 +3,13 @@ title: Update Compliance Data Schema - UCClient
 ms.reviewer: 
 manager: dougeby
 description: UCClient schema
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: reference
 ms.date: 06/06/2022
+ms.technology: itpro-updates
 ---
 
 # UCClient

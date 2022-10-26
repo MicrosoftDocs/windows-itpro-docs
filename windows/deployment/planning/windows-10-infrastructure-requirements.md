@@ -4,10 +4,11 @@ description: Review the infrastructure requirements for deployment and managemen
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 infrastructure requirements

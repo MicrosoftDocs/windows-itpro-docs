@@ -4,10 +4,11 @@ description: You can disable and enable individual compatibility fixes in your c
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Enabling and Disabling Compatibility Fixes in Compatibility Administrator
