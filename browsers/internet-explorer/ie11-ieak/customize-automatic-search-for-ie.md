@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: manage
 description: Customize Automatic Search in Internet Explorer so that your employees can type a single word into the Address box to search for frequently used pages.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
 ms.reviewer: 
 audience: itpro

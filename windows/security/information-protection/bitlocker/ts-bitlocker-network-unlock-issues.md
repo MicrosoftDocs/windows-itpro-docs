@@ -1,8 +1,8 @@
 ---
 title: BitLocker network unlock known issues
 description: Describes several known issues that you may encounter while using network unlock, and provided guidance for addressing those issues.
-ms.technology: windows-sec
-ms.prod: m365-security
+ms.technology: itpro-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: v-tappelgate
 ms.author: v-tappelgate
