@@ -1,13 +1,14 @@
 ---
 title: Define update strategy
 description: Two examples of a calendar-based approach to consistent update installation
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.collection: m365initiative-coredeploy
+ms.technology: itpro-updates
 ---
 
 # Define update strategy with a calendar

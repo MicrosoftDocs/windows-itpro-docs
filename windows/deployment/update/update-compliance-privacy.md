@@ -3,11 +3,12 @@ title: Privacy in Update Compliance
 ms.reviewer: 
 manager: aczechowski
 description: an overview of the Feature Update Status report
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Privacy in Update Compliance

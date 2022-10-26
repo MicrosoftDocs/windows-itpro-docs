@@ -4,11 +4,11 @@ description: Learn about Policy CSP - ADMX_W32Time.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/28/2020
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
