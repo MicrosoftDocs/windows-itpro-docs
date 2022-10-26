@@ -4,7 +4,7 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article

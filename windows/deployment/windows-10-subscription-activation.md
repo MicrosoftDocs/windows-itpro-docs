@@ -7,16 +7,16 @@ ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection:
+ms.collection: 
   - M365-modern-desktop
   - highpri
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.topic: conceptual
 ms.date: 07/12/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Windows subscription activation

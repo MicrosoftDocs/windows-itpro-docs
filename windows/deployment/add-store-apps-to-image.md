@@ -1,7 +1,7 @@
 ---
 title: Add Microsoft Store for Business applications to a Windows 10 image
 description: This article describes the correct way to add Microsoft Store for Business applications to a Windows 10 image.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz

@@ -1,12 +1,12 @@
 ---
 title: AssignedAccess CSP
 description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 05/03/2022
 ---

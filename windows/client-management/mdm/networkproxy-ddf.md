@@ -3,11 +3,11 @@ title: NetworkProxy DDF file
 description: AppNetworkProxyLocker DDF file
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/05/2017
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
