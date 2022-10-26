@@ -4,7 +4,7 @@ description: Hardware requirements to deploy Windows 11
 manager: aaroncz
 author: mestew
 ms.author: mstewart
-ms.prod: w11
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.custom: seo-marvel-apr2020
