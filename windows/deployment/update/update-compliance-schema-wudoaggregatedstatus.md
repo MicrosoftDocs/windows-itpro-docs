@@ -3,11 +3,12 @@ title: Update Compliance Schema - WUDOAggregatedStatus
 ms.reviewer: 
 manager: aczechowski
 description: WUDOAggregatedStatus schema
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # WUDOAggregatedStatus
