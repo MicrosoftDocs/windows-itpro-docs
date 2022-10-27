@@ -8,7 +8,6 @@ ms.reviewer: ardenw
 manager: aaroncz
 ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021

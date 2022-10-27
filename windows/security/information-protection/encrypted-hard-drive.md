@@ -4,7 +4,7 @@ description: Encrypted Hard Drive uses the rapid encryption that is provided by 
 ms.reviewer: 
 manager: aaroncz
 ms.author: dansimp
-ms.prod: m365-security
+ms.prod: windows-client
 author: dulcemontemayor
 ms.date: 04/02/2019
 ---

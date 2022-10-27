@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: virtualization
 description: Virtualization and compatibility with Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: b0388c04-2584-4b6d-a7a8-4e0476773a80
 ms.reviewer: 
 audience: itpro

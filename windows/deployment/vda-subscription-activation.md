@@ -7,7 +7,7 @@ ms.author: aaroncz
 author: aczechowski
 ms.custom: seo-marvel-apr2020
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: M365-modern-desktop

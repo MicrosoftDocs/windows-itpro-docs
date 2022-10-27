@@ -3,12 +3,12 @@ title: Policy CSP - Update
 description: The Policy CSP - Update allows the IT admin, when used with Update/ActiveHoursStart, to manage a range of active hours where update reboots aren't scheduled.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 06/15/2022
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection: highpri
 ---

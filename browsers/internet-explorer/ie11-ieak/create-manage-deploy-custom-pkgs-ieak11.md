@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Review this list of tasks and references before you create and deploy your Internet Explorer 11 custom install packages.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: fe71c603-bf07-41e1-a477-ade5b28c9fb3
 ms.reviewer: 
 audience: itpro

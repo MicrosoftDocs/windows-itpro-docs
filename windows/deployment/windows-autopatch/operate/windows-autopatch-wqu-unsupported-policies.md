@@ -1,9 +1,9 @@
 ---
 title: Windows update policies
-description:  This article explains Windows update policies in Windows Autopatch
+description: This article explains Windows update policies in Windows Autopatch
 ms.date: 07/07/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

@@ -4,9 +4,10 @@ description: As the Windows operating system evolves to support new technology a
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Understanding and Using Compatibility Fixes

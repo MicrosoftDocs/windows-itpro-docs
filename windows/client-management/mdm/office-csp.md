@@ -3,11 +3,11 @@ title: Office CSP
 description: The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device. This CSP was added in Windows 10, version 1703.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/15/2018
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
