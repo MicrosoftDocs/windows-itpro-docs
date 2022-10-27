@@ -8,7 +8,6 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: 
   - M365-analytics
-  - highpri
 ms.topic: article
 ms.date: 06/20/2022
 ms.technology: itpro-updates

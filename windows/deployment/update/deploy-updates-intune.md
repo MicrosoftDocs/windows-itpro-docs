@@ -9,6 +9,8 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.collection: 
+  - highpri
 ---
 
 # Deploy Windows 10 updates with Intune

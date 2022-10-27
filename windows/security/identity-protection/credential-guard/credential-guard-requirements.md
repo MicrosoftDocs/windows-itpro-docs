@@ -9,7 +9,6 @@ ms.reviewer: zwhittington
 manager: aaroncz
 ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 ms.date: 12/27/2021
 appliesto: 

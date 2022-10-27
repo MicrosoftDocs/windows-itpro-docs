@@ -8,7 +8,6 @@ ms.prod: w10
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Prepare a device for kiosk configuration

@@ -10,7 +10,6 @@ ms.localizationpriority: medium
 ms.date: 09/12/2022
 ms.reviewer: 
 manager: dansimp
-ms.collection: highpri
 ---
 
 # PersonalDataEncryption CSP
