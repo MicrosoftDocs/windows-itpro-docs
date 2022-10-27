@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 ms.reviewer: 
 manager: aaroncz
 ms.topic: troubleshooting
-ms.collection: highpri
 ms.technology: itpro-configure
 ---
 

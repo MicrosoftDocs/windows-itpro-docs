@@ -8,7 +8,6 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ---
 
 # Configure a PXE server to load Windows PE

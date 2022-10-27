@@ -5,7 +5,6 @@ description: You can use Group Policy or your mobile device management (MDM) ser
 ms.prod: windows-client
 ms.collection: 
   - m365initiative-coredeploy
-  - highpri
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

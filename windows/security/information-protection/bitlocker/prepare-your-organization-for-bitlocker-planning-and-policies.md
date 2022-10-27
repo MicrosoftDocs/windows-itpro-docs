@@ -9,7 +9,6 @@ ms.author: dansimp
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
-  - highpri
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.custom: bitlocker

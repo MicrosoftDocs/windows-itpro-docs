@@ -9,7 +9,6 @@ ms.localizationpriority: medium
 ms.date: 08/30/2021
 ms.reviewer: 
 ms.topic: article
-ms.collection: highpri
 ms.technology: itpro-apps
 ---
 

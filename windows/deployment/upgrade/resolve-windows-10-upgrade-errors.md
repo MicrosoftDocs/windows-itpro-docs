@@ -7,7 +7,6 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
 ms.technology: itpro-deploy
 ---
 

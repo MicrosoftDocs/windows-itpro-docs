@@ -8,7 +8,6 @@ ms.author: aaroncz
 manager: dougeby
 ms.collection: 
   - M365-modern-desktop
-  - highpri
 ms.topic: article
 ms.technology: itpro-updates
 ---
