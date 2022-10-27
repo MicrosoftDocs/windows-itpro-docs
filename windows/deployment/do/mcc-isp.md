@@ -15,7 +15,7 @@ ms.date: 05/20/2022
 
 # Microsoft Connected Cache for Internet Service Providers (ISPs)
 
-_Applies to_
+*Applies to*
 
 - Windows 10
 - Windows 11
@@ -97,7 +97,7 @@ This recommended configuration can egress at a rate of 9 Gbps with a 10 Gbps NIC
 The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. The following recommended configuration can egress at a rate of 9 Gbps with a 10 Gbps NIC.
 
 | Component  | Minimum | Recommended |
-| -- | --- | --- |
+|---|---|---|
 | OS |  Ubuntu 20.04 LTS VM or physical server | Ubuntu 20.04 LTS VM or physical server (preferred) |
 | NIC | 10 Gbps| at least 10 Gbps |
 | Disk | SSD </br>1 drive </br>2 TB each  |SSD </br>2-4 drives </br>at least 2 TB each  |
@@ -204,7 +204,7 @@ If you get the error message "Could not create marketplace item" in the Azure po
     | Field name | Expected value | Description |
     |--|--|--|
     | **Cache Node Name** | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later. |
-    | **Server IP Address** | IPv4 Address | IP address of your MCC server. This address is used to route end-user devices in your network to the server for Microsoft content downloads. _The IP address must be publicly accessible._ |
+    | **Server IP Address** | IPv4 Address | IP address of your MCC server. This address is used to route end-user devices in your network to the server for Microsoft content downloads. *The IP address must be publicly accessible.* |
     | **Max Allowable Egress (Mbps)** | Integer in Mbps | The maximum egress (Mbps) of your MCC based on the specifications of your hardware. For example, `10,000` Mbps. |
     | **Address Range/CIDR Blocks** | IPv4 CIDR notation | The IP address range (CIDR blocks) that should be routed to the MCC server as a comma separated list. For example: `2.21.234.0/24, 3.22.235.0/24, 4.23.236.0/24` |
     | **Enable Cache Node** | Enable or Disable | **Enable** permits the cache node to receive content requests. </br>**Disable** prevents the cache node from receiving content requests. </br>Cache nodes are enabled by default. |
@@ -650,65 +650,65 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
 
 1. Review the settings and select **Finish** to create the Ubuntu VM.
 
-    :::image type="content" source="images/imcc38.png" alt-text="Screenshot of completing the New Virtual Machine Wizard on Hyper-V.":::
+    :::image type="content" source="./images/mcc-isp-hyper-v-summary.png" alt-text="Screenshot of completing the New Virtual Machine Wizard on Hyper-V.":::
 
 1. Before you start the Ubuntu VM, disable **Secure Boot** and allocate multiple cores to the VM.
 
     1. In Hyper-V Manager, open the **Settings** for the VM.
 
-        :::image type="content" source="images/imcc39.png" alt-text="Open Settings for a VM in Hyper-V Manager.":::
+        :::image type="content" source="./images/mcc-isp-hyper-v-vm-settings.png" alt-text="Screenshot of the settings for a VM in Hyper-V Manager.":::
 
     1. Select **Security**. Disable the option to **Enable Secure Boot**.
 
-        :::image type="content" source="images/imcc40.png" alt-text="Security page of VM settings in Hyper-V Manager.":::
+        :::image type="content" source="./images/mcc-isp-hyper-v-vm-security.png" alt-text="Screenshot of the security page from VM settings in Hyper-V Manager.":::
 
     1. Select **Processor**. Increase the number of virtual processors. This example shows `12`, but your configuration may vary.
 
-        :::image type="content" source="images/imcc41.png" alt-text="Processor page of VM settings in Hyper-V Manager.":::
+        :::image type="content" source="./images/mcc-isp-hyper-v-vm-processor.png" alt-text="Screenshot of the processor page from VM settings in Hyper-V Manager.":::
 
 1. Start the VM and select **Install Ubuntu**.
 
-    :::image type="content" source="images/imcc42.png" alt-text="GNU GRUB screen, select Install Ubuntu.":::
+    :::image type="content" source="./images/mcc-isp-gnu-grub.png" alt-text="Screenshot of the GNU GRUB screen, with Install Ubuntu selected.":::
 
 1. Choose your default language.
 
-    :::image type="content" source="images/imcc43.png" alt-text="Ubuntu install, Welcome page, select language.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-language.png" alt-text="Screenshot of the Ubuntu install's language selection page.":::
 
 1. Choose the options for installing updates and third party hardware. For example, download updates and install third party software drivers.
 
 1. Select **Erase disk and install Ubuntu**. If you had a previous version of Ubuntu installed, we recommend erasing and installing Ubuntu 16.04.
 
-    :::image type="content" source="images/imcc45.png" alt-text="Ubuntu install, Installation type page, Erase disk and install Ubuntu.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-erase-disk.png" alt-text="Screenshot of the Ubuntu install Installation type page with the Erase disk and install Ubuntu option selected.":::
 
     Review the warning about writing changes to disk, and select **Continue**.
 
-    :::image type="content" source="images/imcc46.png" alt-text="Ubuntu install, 'Write the changes to disks' warning.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-write-changes.png" alt-text="Screenshot of the Ubuntu install's 'Write the changes to disks' warning.":::
 
 1. Choose the time zone.
 
-    :::image type="content" source="images/imcc47.png" alt-text="Ubuntu install, 'Where are you page' to specify time zone.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-time-zone.png" alt-text="Screenshot of the Ubuntu install's 'Where are you page' to specify time zone.":::
 
 1. Choose the keyboard layout.
 
-    :::image type="content" source="images/imcc48.png" alt-text="Ubuntu install, Keyboard layout page.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-keyboard.png" alt-text="Screenshot of the Ubuntu install's Keyboard layout page.":::
 
 1. Specify your name, a name for the computer, a username, and a strong password. Select the option to **Require my password to log in**.
 
     > [!TIP]
     > Everything is case sensitive in Linux.
 
-    :::image type="content" source="images/imcc50.png" alt-text="Ubuntu install, 'Who are you' screen.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-who.png" alt-text="Screenshot of the Ubuntu install's, 'Who are you' screen.":::
 
 1. To complete the installation, select **Restart now**.
 
-    :::image type="content" source="images/imcc51.png" alt-text="Ubuntu install, installation complete, restart now.":::
+    :::image type="content" source="./images/mcc-isp-ubuntu-restart.png" alt-text="Screenshot of the Ubuntu install's installation complete, restart now screen.":::
 
 1. After the computer restarts, sign in with the username and password.
 
     > [!IMPORTANT]
     > If it shows that an upgrade is available, select **Don't upgrade**.
     >
-    > :::image type="content" source="images/imcc52.png" alt-text="Ubuntu install, Upgrade Available prompt, Don't Upgrade.":::
+    > :::image type="content" source="./images/mcc-isp-ubuntu-upgrade.png" alt-text="Screenshot of the Ubuntu install's Upgrade Available prompt with Don't Upgrade selected.":::
 
 Your Ubuntu VM is now ready to [Install MCC](#install-mcc).
 
