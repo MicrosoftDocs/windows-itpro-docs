@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WindowsExplorer
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/29/2020
 ms.reviewer: 
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - ADMX_WindowsExplorer
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
 
-## ADMX_WindowsExplorer policies  
+## ADMX_WindowsExplorer policies
 
 <dl>
   <dd>
@@ -247,7 +247,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-checksamesourceandtargetforfranddfs"></a>**ADMX_WindowsExplorer/CheckSameSourceAndTargetForFRAndDFS**  
+<a href="" id="admx-windowsexplorer-checksamesourceandtargetforfranddfs"></a>**ADMX_WindowsExplorer/CheckSameSourceAndTargetForFRAndDFS**
 
 <!--SupportedSKUs-->
 
@@ -286,7 +286,7 @@ If you disable or do not configure this policy setting, Folder Redirection does 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Verify old and new Folder Redirection targets point to the same share before redirecting*
 -   GP name: *CheckSameSourceAndTargetForFRAndDFS*
 -   GP path: *Windows Components\File Explorer*
@@ -298,7 +298,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-classicshell"></a>**ADMX_WindowsExplorer/ClassicShell**  
+<a href="" id="admx-windowsexplorer-classicshell"></a>**ADMX_WindowsExplorer/ClassicShell**
 
 <!--SupportedSKUs-->
 
@@ -336,7 +336,7 @@ If you disable or not configure this policy, the default File Explorer behavior 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Classic Shell*
 -   GP name: *ClassicShell*
 -   GP path: *Windows Components\File Explorer*
@@ -347,7 +347,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-confirmfiledelete"></a>**ADMX_WindowsExplorer/ConfirmFileDelete**  
+<a href="" id="admx-windowsexplorer-confirmfiledelete"></a>**ADMX_WindowsExplorer/ConfirmFileDelete**
 
 <!--SupportedSKUs-->
 
@@ -382,7 +382,7 @@ If you disable or do not configure this setting, the default behavior of not dis
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display confirmation dialog when deleting files*
 -   GP name: *ConfirmFileDelete*
 -   GP path: *Windows Components\File Explorer*
@@ -393,7 +393,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-defaultlibrarieslocation"></a>**ADMX_WindowsExplorer/DefaultLibrariesLocation**  
+<a href="" id="admx-windowsexplorer-defaultlibrarieslocation"></a>**ADMX_WindowsExplorer/DefaultLibrariesLocation**
 
 <!--SupportedSKUs-->
 
@@ -429,7 +429,7 @@ If you disable or do not configure this policy setting, no changes are made to t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Location where all default Library definition files for users/machines reside.*
 -   GP name: *DefaultLibrariesLocation*
 -   GP path: *Windows Components\File Explorer*
@@ -440,7 +440,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-disablebinddirectlytopropertysetstorage"></a>**ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage**  
+<a href="" id="admx-windowsexplorer-disablebinddirectlytopropertysetstorage"></a>**ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage**
 
 <!--SupportedSKUs-->
 
@@ -476,7 +476,7 @@ This disables access to user-defined properties, and properties stored in NTFS s
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable binding directly to IPropertySetStorage without intermediate layers.*
 -   GP name: *DisableBindDirectlyToPropertySetStorage*
 -   GP path: *Windows Components\File Explorer*
@@ -487,7 +487,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-disableindexedlibraryexperience"></a>**ADMX_WindowsExplorer/DisableIndexedLibraryExperience**  
+<a href="" id="admx-windowsexplorer-disableindexedlibraryexperience"></a>**ADMX_WindowsExplorer/DisableIndexedLibraryExperience**
 
 <!--SupportedSKUs-->
 
@@ -517,7 +517,7 @@ This policy setting allows you to turn off Windows Libraries features that need 
 
 If you enable this policy, some Windows Libraries features will be turned off to better handle included folders that have been redirected to non-indexed network locations.
 
-Setting this policy will:  
+Setting this policy will:
 
 - Disable all Arrangement views except for "By Folder"
 - Disable all Search filter suggestions other than "Date Modified" and "Size"
@@ -532,7 +532,7 @@ If you disable or do not configure this policy, all default Windows Libraries fe
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Libraries features that rely on indexed file data*
 -   GP name: *DisableIndexedLibraryExperience*
 -   GP path: *Windows Components\File Explorer*
@@ -544,7 +544,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-disableknownfolders"></a>**ADMX_WindowsExplorer/DisableKnownFolders**  
+<a href="" id="admx-windowsexplorer-disableknownfolders"></a>**ADMX_WindowsExplorer/DisableKnownFolders**
 
 <!--SupportedSKUs-->
 
@@ -583,7 +583,7 @@ You can specify a known folder using its known folder ID or using its canonical 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable Known Folders*
 -   GP name: *DisableKnownFolders*
 -   GP path: *Windows Components\File Explorer*
@@ -594,7 +594,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-disablesearchboxsuggestions"></a>**ADMX_WindowsExplorer/DisableSearchBoxSuggestions**  
+<a href="" id="admx-windowsexplorer-disablesearchboxsuggestions"></a>**ADMX_WindowsExplorer/DisableSearchBoxSuggestions**
 
 <!--SupportedSKUs-->
 
@@ -633,7 +633,7 @@ These suggestions are based on their past entries into the Search Box.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off display of recent search entries in the File Explorer search box*
 -   GP name: *DisableSearchBoxSuggestions*
 -   GP path: *Windows Components\File Explorer*
@@ -645,7 +645,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-enableshellshortcuticonremotepath"></a>**ADMX_WindowsExplorer/EnableShellShortcutIconRemotePath**  
+<a href="" id="admx-windowsexplorer-enableshellshortcuticonremotepath"></a>**ADMX_WindowsExplorer/EnableShellShortcutIconRemotePath**
 
 <!--SupportedSKUs-->
 
@@ -683,7 +683,7 @@ This policy setting determines whether remote paths can be used for file shortcu
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow the use of remote paths in file shortcut icons*
 -   GP name: *EnableShellShortcutIconRemotePath*
 -   GP path: *Windows Components\File Explorer*
@@ -695,7 +695,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-enablesmartscreen"></a>**ADMX_WindowsExplorer/EnableSmartScreen**  
+<a href="" id="admx-windowsexplorer-enablesmartscreen"></a>**ADMX_WindowsExplorer/EnableSmartScreen**
 
 <!--SupportedSKUs-->
 
@@ -721,14 +721,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that do not appear to be suspicious. 
+This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that do not appear to be suspicious.
 
 Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
 
-If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:  
+If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
 
 - Warn and prevent bypass
-- Warn  
+- Warn
 
 If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs will not present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app. If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen will not warn the user again for that app if the user tells SmartScreen to run the app.
 
@@ -740,7 +740,7 @@ If you do not configure this policy, SmartScreen will be enabled by default, but
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *EnableSmartScreen*
 -   GP path: *Windows Components\File Explorer*
@@ -751,7 +751,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-enforceshellextensionsecurity"></a>**ADMX_WindowsExplorer/EnforceShellExtensionSecurity**  
+<a href="" id="admx-windowsexplorer-enforceshellextensionsecurity"></a>**ADMX_WindowsExplorer/EnforceShellExtensionSecurity**
 
 <!--SupportedSKUs-->
 
@@ -789,7 +789,7 @@ For shell extensions to run on a per-user basis, there must be an entry at HKEY_
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only per user or approved shell extensions*
 -   GP name: *EnforceShellExtensionSecurity*
 -   GP path: *Windows Components\File Explorer*
@@ -800,7 +800,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-explorerribbonstartsminimized"></a>**ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized**  
+<a href="" id="admx-windowsexplorer-explorerribbonstartsminimized"></a>**ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized**
 
 <!--SupportedSKUs-->
 
@@ -837,7 +837,7 @@ If you disable or do not configure this policy setting, users can choose how the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Start File Explorer with ribbon minimized*
 -   GP name: *ExplorerRibbonStartsMinimized*
 -   GP path: *Windows Components\File Explorer*
@@ -848,7 +848,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-hidecontentviewmodesnippets"></a>**ADMX_WindowsExplorer/HideContentViewModeSnippets**  
+<a href="" id="admx-windowsexplorer-hidecontentviewmodesnippets"></a>**ADMX_WindowsExplorer/HideContentViewModeSnippets**
 
 <!--SupportedSKUs-->
 
@@ -883,7 +883,7 @@ This policy setting allows you to turn off the display of snippets in Content vi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the display of snippets in Content view mode*
 -   GP name: *HideContentViewModeSnippets*
 -   GP path: *Windows Components\File Explorer*
@@ -894,7 +894,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-internet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-internet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet**
 
 <!--SupportedSKUs-->
 
@@ -934,7 +934,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Internet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone*
@@ -945,7 +945,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-internetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-internetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown**
 
 <!--SupportedSKUs-->
 
@@ -985,7 +985,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_InternetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Internet Zone*
@@ -996,7 +996,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet**
 
 <!--SupportedSKUs-->
 
@@ -1037,7 +1037,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Intranet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Intranet Zone*
@@ -1048,7 +1048,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1089,7 +1089,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_IntranetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
@@ -1100,7 +1100,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachine"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachine"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine**
 
 <!--SupportedSKUs-->
 
@@ -1141,7 +1141,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_LocalMachine*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Local Machine Zone*
@@ -1152,7 +1152,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachinelockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachinelockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1193,7 +1193,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_LocalMachineLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Local Machine Zone*
@@ -1204,7 +1204,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-restricted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-restricted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted**
 
 <!--SupportedSKUs-->
 
@@ -1245,7 +1245,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Restricted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone*
@@ -1256,7 +1256,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-restrictedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-restrictedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1297,7 +1297,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_RestrictedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone*
@@ -1308,7 +1308,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-trusted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-trusted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted**
 
 <!--SupportedSKUs-->
 
@@ -1349,7 +1349,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Trusted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Trusted Sites Zone*
@@ -1360,7 +1360,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-trustedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-trustedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1401,7 +1401,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_TrustedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Trusted Sites Zone*
@@ -1412,7 +1412,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-internet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-internet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet**
 
 <!--SupportedSKUs-->
 
@@ -1451,7 +1451,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Internet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone*
@@ -1462,7 +1462,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-internetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-internetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1501,7 +1501,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_InternetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Internet Zone*
@@ -1512,7 +1512,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-intranet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-intranet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet**
 
 <!--SupportedSKUs-->
 
@@ -1551,7 +1551,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Intranet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Intranet Zone*
@@ -1562,7 +1562,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-intranetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-intranetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1601,7 +1601,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_IntranetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
@@ -1612,7 +1612,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachine"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachine"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine**
 
 <!--SupportedSKUs-->
 
@@ -1651,7 +1651,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_LocalMachine*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Local Machine Zone*
@@ -1662,7 +1662,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachinelockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachinelockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1701,7 +1701,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_LocalMachineLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Local Machine Zone*
@@ -1712,7 +1712,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-restricted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-restricted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted**
 
 <!--SupportedSKUs-->
 
@@ -1751,7 +1751,7 @@ If you do not configure this policy setting, users cannot perform OpenSearch que
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Restricted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone*
@@ -1763,7 +1763,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-restrictedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-restrictedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1802,7 +1802,7 @@ If you do not configure this policy setting, users cannot perform OpenSearch que
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_RestrictedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone*
@@ -1814,7 +1814,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-trusted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-trusted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted**
 
 <!--SupportedSKUs-->
 
@@ -1853,7 +1853,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Trusted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Trusted Sites Zone*
@@ -1864,7 +1864,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-trustedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown**  
+<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-trustedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown**
 
 <!--SupportedSKUs-->
 
@@ -1903,7 +1903,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_TrustedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Trusted Sites Zone*
@@ -1914,7 +1914,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-linkresolveignorelinkinfo"></a>**ADMX_WindowsExplorer/LinkResolveIgnoreLinkInfo**  
+<a href="" id="admx-windowsexplorer-linkresolveignorelinkinfo"></a>**ADMX_WindowsExplorer/LinkResolveIgnoreLinkInfo**
 
 <!--SupportedSKUs-->
 
@@ -1952,7 +1952,7 @@ If you disable or do not configure this policy setting, Windows searches for the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not track Shell shortcuts during roaming*
 -   GP name: *LinkResolveIgnoreLinkInfo*
 -   GP path: *Windows Components\File Explorer*
@@ -1963,7 +1963,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-maxrecentdocs"></a>**ADMX_WindowsExplorer/MaxRecentDocs**  
+<a href="" id="admx-windowsexplorer-maxrecentdocs"></a>**ADMX_WindowsExplorer/MaxRecentDocs**
 
 <!--SupportedSKUs-->
 
@@ -1999,7 +1999,7 @@ If you disable or do not configure this policy setting, by default, the system d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum number of recent documents*
 -   GP name: *MaxRecentDocs*
 -   GP path: *Windows Components\File Explorer*
@@ -2010,7 +2010,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nobackbutton"></a>**ADMX_WindowsExplorer/NoBackButton**  
+<a href="" id="admx-windowsexplorer-nobackbutton"></a>**ADMX_WindowsExplorer/NoBackButton**
 
 <!--SupportedSKUs-->
 
@@ -2046,7 +2046,7 @@ If you disable or do not configure this policy setting, the Back button is displ
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the common dialog back button*
 -   GP name: *NoBackButton*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
@@ -2057,7 +2057,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nocdburning"></a>**ADMX_WindowsExplorer/NoCDBurning**  
+<a href="" id="admx-windowsexplorer-nocdburning"></a>**ADMX_WindowsExplorer/NoCDBurning**
 
 <!--SupportedSKUs-->
 
@@ -2096,7 +2096,7 @@ If you disable or do not configure this policy setting, users are able to use th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove CD Burning features*
 -   GP name: *NoCDBurning*
 -   GP path: *Windows Components\File Explorer*
@@ -2107,7 +2107,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nocachethumbnailpictures"></a>**ADMX_WindowsExplorer/NoCacheThumbNailPictures**  
+<a href="" id="admx-windowsexplorer-nocachethumbnailpictures"></a>**ADMX_WindowsExplorer/NoCacheThumbNailPictures**
 
 <!--SupportedSKUs-->
 
@@ -2146,7 +2146,7 @@ If you disable or do not configure this policy setting, thumbnail views are cach
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off caching of thumbnail pictures*
 -   GP name: *NoCacheThumbNailPictures*
 -   GP path: *Windows Components\File Explorer*
@@ -2157,7 +2157,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nochangeanimation"></a>**ADMX_WindowsExplorer/NoChangeAnimation**  
+<a href="" id="admx-windowsexplorer-nochangeanimation"></a>**ADMX_WindowsExplorer/NoChangeAnimation**
 
 <!--SupportedSKUs-->
 
@@ -2195,7 +2195,7 @@ If you disable or do not configure this policy setting, users are allowed to tur
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove UI to change menu animation setting*
 -   GP name: *NoChangeAnimation*
 -   GP path: *Windows Components\File Explorer*
@@ -2206,7 +2206,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nochangekeyboardnavigationindicators"></a>**ADMX_WindowsExplorer/NoChangeKeyboardNavigationIndicators**  
+<a href="" id="admx-windowsexplorer-nochangekeyboardnavigationindicators"></a>**ADMX_WindowsExplorer/NoChangeKeyboardNavigationIndicators**
 
 <!--SupportedSKUs-->
 
@@ -2240,7 +2240,7 @@ Effects, such as transitory underlines, are designed to enhance the user's exper
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove UI to change keyboard navigation indicator setting*
 -   GP name: *NoChangeKeyboardNavigationIndicators*
 -   GP path: *Windows Components\File Explorer*
@@ -2251,7 +2251,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nodfstab"></a>**ADMX_WindowsExplorer/NoDFSTab**  
+<a href="" id="admx-windowsexplorer-nodfstab"></a>**ADMX_WindowsExplorer/NoDFSTab**
 
 <!--SupportedSKUs-->
 
@@ -2287,7 +2287,7 @@ If you disable or do not configure this policy setting, the DFS tab is available
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove DFS tab*
 -   GP name: *NoDFSTab*
 -   GP path: *Windows Components\File Explorer*
@@ -2298,7 +2298,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nodrives"></a>**ADMX_WindowsExplorer/NoDrives**  
+<a href="" id="admx-windowsexplorer-nodrives"></a>**ADMX_WindowsExplorer/NoDrives**
 
 <!--SupportedSKUs-->
 
@@ -2339,7 +2339,7 @@ If you disable or do not configure this policy setting, all drives are displayed
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide these specified drives in My Computer*
 -   GP name: *NoDrives*
 -   GP path: *Windows Components\File Explorer*
@@ -2350,7 +2350,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-noentirenetwork"></a>**ADMX_WindowsExplorer/NoEntireNetwork**  
+<a href="" id="admx-windowsexplorer-noentirenetwork"></a>**ADMX_WindowsExplorer/NoEntireNetwork**
 
 <!--SupportedSKUs-->
 
@@ -2391,7 +2391,7 @@ To remove computers in the user's workgroup or domain from lists of network reso
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *No Entire Network in Network Locations*
 -   GP name: *NoEntireNetwork*
 -   GP path: *Windows Components\File Explorer*
@@ -2402,7 +2402,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nofilemru"></a>**ADMX_WindowsExplorer/NoFileMRU**  
+<a href="" id="admx-windowsexplorer-nofilemru"></a>**ADMX_WindowsExplorer/NoFileMRU**
 
 <!--SupportedSKUs-->
 
@@ -2439,7 +2439,7 @@ To see an example of the standard Open dialog box, start WordPad and, on the **F
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the dropdown list of recent files*
 -   GP name: *NoFileMRU*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
@@ -2450,7 +2450,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nofilemenu"></a>**ADMX_WindowsExplorer/NoFileMenu**  
+<a href="" id="admx-windowsexplorer-nofilemenu"></a>**ADMX_WindowsExplorer/NoFileMenu**
 
 <!--SupportedSKUs-->
 
@@ -2484,7 +2484,7 @@ This setting does not prevent users from using other methods to perform tasks av
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove File menu from File Explorer*
 -   GP name: *NoFileMenu*
 -   GP path: *Windows Components\File Explorer*
@@ -2495,7 +2495,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nofolderoptions"></a>**ADMX_WindowsExplorer/NoFolderOptions**  
+<a href="" id="admx-windowsexplorer-nofolderoptions"></a>**ADMX_WindowsExplorer/NoFolderOptions**
 
 <!--SupportedSKUs-->
 
@@ -2533,7 +2533,7 @@ If you disable or do not configure this policy setting, users can open Folder Op
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon*
 -   GP name: *NoFolderOptions*
 -   GP path: *Windows Components\File Explorer*
@@ -2544,7 +2544,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nohardwaretab"></a>**ADMX_WindowsExplorer/NoHardwareTab**  
+<a href="" id="admx-windowsexplorer-nohardwaretab"></a>**ADMX_WindowsExplorer/NoHardwareTab**
 
 <!--SupportedSKUs-->
 
@@ -2576,7 +2576,7 @@ Removes the Hardware tab. This setting removes the Hardware tab from Mouse, Keyb
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Hardware tab*
 -   GP name: *NoHardwareTab*
 -   GP path: *Windows Components\File Explorer*
@@ -2587,7 +2587,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nomanagemycomputerverb"></a>**ADMX_WindowsExplorer/NoManageMyComputerVerb**  
+<a href="" id="admx-windowsexplorer-nomanagemycomputerverb"></a>**ADMX_WindowsExplorer/NoManageMyComputerVerb**
 
 <!--SupportedSKUs-->
 
@@ -2626,7 +2626,7 @@ This setting does not remove the Computer Management item from the Start menu (S
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hides the Manage item on the File Explorer context menu*
 -   GP name: *NoManageMyComputerVerb*
 -   GP path: *Windows Components\File Explorer*
@@ -2637,7 +2637,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nomycomputershareddocuments"></a>**ADMX_WindowsExplorer/NoMyComputerSharedDocuments**  
+<a href="" id="admx-windowsexplorer-nomycomputershareddocuments"></a>**ADMX_WindowsExplorer/NoMyComputerSharedDocuments**
 
 <!--SupportedSKUs-->
 
@@ -2672,7 +2672,7 @@ This policy setting allows you to remove the Shared Documents folder from My Com
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Shared Documents from My Computer*
 -   GP name: *NoMyComputerSharedDocuments*
 -   GP path: *Windows Components\File Explorer*
@@ -2683,7 +2683,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nonetconnectdisconnect"></a>**ADMX_WindowsExplorer/NoNetConnectDisconnect**  
+<a href="" id="admx-windowsexplorer-nonetconnectdisconnect"></a>**ADMX_WindowsExplorer/NoNetConnectDisconnect**
 
 <!--SupportedSKUs-->
 
@@ -2724,7 +2724,7 @@ This setting does not prevent users from connecting to another computer by typin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Map Network Drive" and "Disconnect Network Drive"*
 -   GP name: *NoNetConnectDisconnect*
 -   GP path: *Windows Components\File Explorer*
@@ -2735,7 +2735,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nonewappalert"></a>**ADMX_WindowsExplorer/NoNewAppAlert**  
+<a href="" id="admx-windowsexplorer-nonewappalert"></a>**ADMX_WindowsExplorer/NoNewAppAlert**
 
 <!--SupportedSKUs-->
 
@@ -2769,7 +2769,7 @@ If this MDM Policy is enabled, no notifications will be shown. If the MDM Policy
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not show the 'new application installed' notification*
 -   GP name: *NoNewAppAlert*
 -   GP path: *Windows Components\File Explorer*
@@ -2780,7 +2780,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-noplacesbar"></a>**ADMX_WindowsExplorer/NoPlacesBar**  
+<a href="" id="admx-windowsexplorer-noplacesbar"></a>**ADMX_WindowsExplorer/NoPlacesBar**
 
 <!--SupportedSKUs-->
 
@@ -2814,7 +2814,7 @@ To see an example of the standard Open dialog box, start WordPad and, on the **F
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the common dialog places bar*
 -   GP name: *NoPlacesBar*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
@@ -2825,7 +2825,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-norecyclefiles"></a>**ADMX_WindowsExplorer/NoRecycleFiles**  
+<a href="" id="admx-windowsexplorer-norecyclefiles"></a>**ADMX_WindowsExplorer/NoRecycleFiles**
 
 <!--SupportedSKUs-->
 
@@ -2861,7 +2861,7 @@ If you disable or do not configure this setting, files and folders deleted using
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not move deleted files to the Recycle Bin*
 -   GP name: *NoRecycleFiles*
 -   GP path: *Windows Components\File Explorer*
@@ -2872,7 +2872,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-norunasinstallprompt"></a>**ADMX_WindowsExplorer/NoRunAsInstallPrompt**  
+<a href="" id="admx-windowsexplorer-norunasinstallprompt"></a>**ADMX_WindowsExplorer/NoRunAsInstallPrompt**
 
 <!--SupportedSKUs-->
 
@@ -2912,7 +2912,7 @@ By default, users aren't prompted for alternate logon credentials when installin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not request alternate credentials*
 -   GP name: *NoRunAsInstallPrompt*
 -   GP path: *Windows Components\File Explorer*
@@ -2923,7 +2923,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nosearchinternettryharderbutton"></a>**ADMX_WindowsExplorer/NoSearchInternetTryHarderButton**  
+<a href="" id="admx-windowsexplorer-nosearchinternettryharderbutton"></a>**ADMX_WindowsExplorer/NoSearchInternetTryHarderButton**
 
 <!--SupportedSKUs-->
 
@@ -2959,7 +2959,7 @@ If you do not configure this policy (default), there will be an "Internet" link 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the Search the Internet "Search again" link*
 -   GP name: *NoSearchInternetTryHarderButton*
 -   GP path: *Windows Components\File Explorer*
@@ -2970,7 +2970,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nosecuritytab"></a>**ADMX_WindowsExplorer/NoSecurityTab**  
+<a href="" id="admx-windowsexplorer-nosecuritytab"></a>**ADMX_WindowsExplorer/NoSecurityTab**
 
 <!--SupportedSKUs-->
 
@@ -3006,7 +3006,7 @@ If you disable or do not configure this setting, users will be able to access th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Security tab*
 -   GP name: *NoSecurityTab*
 -   GP path: *Windows Components\File Explorer*
@@ -3017,7 +3017,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-noshellsearchbutton"></a>**ADMX_WindowsExplorer/NoShellSearchButton**  
+<a href="" id="admx-windowsexplorer-noshellsearchbutton"></a>**ADMX_WindowsExplorer/NoShellSearchButton**
 
 <!--SupportedSKUs-->
 
@@ -3053,7 +3053,7 @@ This policy setting does not affect the Search items on the File Explorer contex
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Search button from File Explorer*
 -   GP name: *NoShellSearchButton*
 -   GP path: *Windows Components\File Explorer*
@@ -3064,7 +3064,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nostrcmplogical"></a>**ADMX_WindowsExplorer/NoStrCmpLogical**  
+<a href="" id="admx-windowsexplorer-nostrcmplogical"></a>**ADMX_WindowsExplorer/NoStrCmpLogical**
 
 <!--SupportedSKUs-->
 
@@ -3101,7 +3101,7 @@ If you disable or do not configure this policy setting, File Explorer will sort 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off numerical sorting in File Explorer*
 -   GP name: *NoStrCmpLogical*
 -   GP path: *Windows Components\File Explorer*
@@ -3112,7 +3112,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-noviewcontextmenu"></a>**ADMX_WindowsExplorer/NoViewContextMenu**  
+<a href="" id="admx-windowsexplorer-noviewcontextmenu"></a>**ADMX_WindowsExplorer/NoViewContextMenu**
 
 <!--SupportedSKUs-->
 
@@ -3146,7 +3146,7 @@ If you enable this setting, menus do not appear when you right-click the desktop
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove File Explorer's default context menu*
 -   GP name: *NoViewContextMenu*
 -   GP path: *Windows Components\File Explorer*
@@ -3157,7 +3157,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-noviewondrive"></a>**ADMX_WindowsExplorer/NoViewOnDrive**  
+<a href="" id="admx-windowsexplorer-noviewondrive"></a>**ADMX_WindowsExplorer/NoViewOnDrive**
 
 <!--SupportedSKUs-->
 
@@ -3198,7 +3198,7 @@ To use this setting, select a drive or combination of drives from the drop-down 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent access to drives from My Computer*
 -   GP name: *NoViewOnDrive*
 -   GP path: *Windows Components\File Explorer*
@@ -3209,7 +3209,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-nowindowshotkeys"></a>**ADMX_WindowsExplorer/NoWindowsHotKeys**  
+<a href="" id="admx-windowsexplorer-nowindowshotkeys"></a>**ADMX_WindowsExplorer/NoWindowsHotKeys**
 
 <!--SupportedSKUs-->
 
@@ -3247,7 +3247,7 @@ If you disable or do not configure this setting, the Windows Key hotkeys are ava
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Key hotkeys*
 -   GP name: *NoWindowsHotKeys*
 -   GP path: *Windows Components\File Explorer*
@@ -3258,7 +3258,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-noworkgroupcontents"></a>**ADMX_WindowsExplorer/NoWorkgroupContents**  
+<a href="" id="admx-windowsexplorer-noworkgroupcontents"></a>**ADMX_WindowsExplorer/NoWorkgroupContents**
 
 <!--SupportedSKUs-->
 
@@ -3298,7 +3298,7 @@ To remove network computers from lists of network resources, use the "No Entire 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *No Computers Near Me in Network Locations*
 -   GP name: *NoWorkgroupContents*
 -   GP path: *Windows Components\File Explorer*
@@ -3309,7 +3309,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-placesbar"></a>**ADMX_WindowsExplorer/PlacesBar**  
+<a href="" id="admx-windowsexplorer-placesbar"></a>**ADMX_WindowsExplorer/PlacesBar**
 
 <!--SupportedSKUs-->
 
@@ -3356,7 +3356,7 @@ If you disable or do not configure this setting the default list of items will b
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Items displayed in Places Bar*
 -   GP name: *PlacesBar*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
@@ -3367,7 +3367,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-promptrunasinstallnetpath"></a>**ADMX_WindowsExplorer/PromptRunasInstallNetPath**  
+<a href="" id="admx-windowsexplorer-promptrunasinstallnetpath"></a>**ADMX_WindowsExplorer/PromptRunasInstallNetPath**
 
 <!--SupportedSKUs-->
 
@@ -3410,7 +3410,7 @@ If the dialog box does not appear, the installation proceeds with the current us
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Request credentials for network installations*
 -   GP name: *PromptRunasInstallNetPath*
 -   GP path: *Windows Components\File Explorer*
@@ -3421,7 +3421,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-recyclebinsize"></a>**ADMX_WindowsExplorer/RecycleBinSize**  
+<a href="" id="admx-windowsexplorer-recyclebinsize"></a>**ADMX_WindowsExplorer/RecycleBinSize**
 
 <!--SupportedSKUs-->
 
@@ -3460,7 +3460,7 @@ If you disable or do not configure this setting, users can change the total amou
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum allowed Recycle Bin size*
 -   GP name: *RecycleBinSize*
 -   GP path: *Windows Components\File Explorer*
@@ -3471,7 +3471,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-1"></a>**ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_1**  
+<a href="" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-1"></a>**ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_1**
 
 <!--SupportedSKUs-->
 
@@ -3509,7 +3509,7 @@ If you do not configure this policy setting the protocol is in the protected mod
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off shell protocol protected mode*
 -   GP name: *ShellProtocolProtectedModeTitle_1*
 -   GP path: *Windows Components\File Explorer*
@@ -3520,7 +3520,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-2"></a>**ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_2**  
+<a href="" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-2"></a>**ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_2**
 
 <!--SupportedSKUs-->
 
@@ -3558,7 +3558,7 @@ If you do not configure this policy setting the protocol is in the protected mod
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off shell protocol protected mode*
 -   GP name: *ShellProtocolProtectedModeTitle_2*
 -   GP path: *Windows Components\File Explorer*
@@ -3569,7 +3569,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-showhibernateoption"></a>**ADMX_WindowsExplorer/ShowHibernateOption**  
+<a href="" id="admx-windowsexplorer-showhibernateoption"></a>**ADMX_WindowsExplorer/ShowHibernateOption**
 
 <!--SupportedSKUs-->
 
@@ -3607,7 +3607,7 @@ If you do not configure this policy setting, users will be able to choose whethe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show hibernate in the power options menu*
 -   GP name: *ShowHibernateOption*
 -   GP path: *Windows Components\File Explorer*
@@ -3618,7 +3618,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-showsleepoption"></a>**ADMX_WindowsExplorer/ShowSleepOption**  
+<a href="" id="admx-windowsexplorer-showsleepoption"></a>**ADMX_WindowsExplorer/ShowSleepOption**
 
 <!--SupportedSKUs-->
 
@@ -3656,7 +3656,7 @@ If you do not configure this policy setting, users will be able to choose whethe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show sleep in the power options menu*
 -   GP name: *ShowSleepOption*
 -   GP path: *Windows Components\File Explorer*
@@ -3667,7 +3667,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-tryharderpinnedlibrary"></a>**ADMX_WindowsExplorer/TryHarderPinnedLibrary**  
+<a href="" id="admx-windowsexplorer-tryharderpinnedlibrary"></a>**ADMX_WindowsExplorer/TryHarderPinnedLibrary**
 
 <!--SupportedSKUs-->
 
@@ -3707,7 +3707,7 @@ If you disable or do not configure this policy setting, no Libraries or Search C
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Pin Libraries or Search Connectors to the "Search again" links and the Start menu*
 -   GP name: *TryHarderPinnedLibrary*
 -   GP path: *Windows Components\File Explorer*
@@ -3718,7 +3718,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsexplorer-tryharderpinnedopensearch"></a>**ADMX_WindowsExplorer/TryHarderPinnedOpenSearch**  
+<a href="" id="admx-windowsexplorer-tryharderpinnedopensearch"></a>**ADMX_WindowsExplorer/TryHarderPinnedOpenSearch**
 
 <!--SupportedSKUs-->
 

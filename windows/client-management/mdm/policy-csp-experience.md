@@ -3,8 +3,8 @@ title: Policy CSP - Experience
 description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/02/2020
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Experience policies  
+## Experience policies
 
 <dl>
   <dd>
@@ -103,7 +103,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**  
+<a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**
 
 <!--SupportedSKUs-->
 
@@ -137,7 +137,7 @@ Supported value type is integer. Supported values are:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Clipboard History*
 -   GP name: *AllowClipboardHistory*
 -   GP path: *System/OS Policies*
@@ -165,7 +165,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**  
+<a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**
 
 <!--SupportedSKUs-->
 
@@ -197,7 +197,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Cortana*
 -   GP name: *AllowCortana*
 -   GP path: *Windows Components/Search*
@@ -216,7 +216,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
+<a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**
 
 <!--SupportedSKUs-->
 
@@ -261,7 +261,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
+<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**
 
 <!--SupportedSKUs-->
 
@@ -295,7 +295,7 @@ When Find My Device is off, the device and its location aren't registered, and t
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn On/Off Find My Device*
 -   GP name: *FindMy_AllowFindMyDeviceConfig*
 -   GP path: *Windows Components/Find My Device*
@@ -314,7 +314,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
+<a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**
 
 <!--SupportedSKUs-->
 
@@ -373,7 +373,7 @@ This policy is deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
+<a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**
 
 <!--SupportedSKUs-->
 
@@ -411,7 +411,7 @@ Describe what values are supported in by this policy and meaning of each value i
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**  
+<a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**
 
 <!--Description-->
 This policy is deprecated.
@@ -420,7 +420,7 @@ This policy is deprecated.
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
+<a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**
 
 <!--SupportedSKUs-->
 
@@ -457,7 +457,7 @@ Describes what values are supported in by this policy and meaning of each value 
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**  
+<a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**
 
 <!--SupportedSKUs-->
 
@@ -498,7 +498,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowspotlightcollection"></a>**Experience/AllowSpotlightCollection**  
+<a href="" id="experience-allowspotlightcollection"></a>**Experience/AllowSpotlightCollection**
 
 <!--SupportedSKUs-->
 
@@ -542,7 +542,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
+<a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**
 
 <!--SupportedSKUs-->
 
@@ -580,7 +580,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not use diagnostic data for tailored experiences*
 -   GP name: *DisableTailoredExperiencesWithDiagnosticData*
 -   GP path: *Windows Components/Cloud Content*
@@ -599,7 +599,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
+<a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**
 
 <!--SupportedSKUs-->
 
@@ -632,7 +632,7 @@ Specifies whether to allow app and content suggestions from third-party software
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not suggest third-party content in Windows spotlight*
 -   GP name: *DisableThirdPartySuggestions*
 -   GP path: *Windows Components/Cloud Content*
@@ -651,7 +651,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
+<a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**
 
 <!--SupportedSKUs-->
 
@@ -686,7 +686,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Microsoft consumer experiences*
 -   GP name: *DisableWindowsConsumerFeatures*
 -   GP path: *Windows Components/Cloud Content*
@@ -705,7 +705,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
+<a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**
 
 <!--SupportedSKUs-->
 
@@ -740,7 +740,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off all Windows spotlight features*
 -   GP name: *DisableWindowsSpotlightFeatures*
 -   GP path: *Windows Components/Cloud Content*
@@ -759,7 +759,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
+<a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**
 
 <!--SupportedSKUs-->
 
@@ -792,7 +792,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Spotlight on Action Center*
 -   GP name: *DisableWindowsSpotlightOnActionCenter*
 -   GP path: *Windows Components/Cloud Content*
@@ -811,7 +811,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**  
+<a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**
 
 <!--SupportedSKUs-->
 
@@ -845,7 +845,7 @@ This policy allows IT admins to turn off Suggestions in Settings app. These sugg
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Spotlight on Settings*
 -   GP name: *DisableWindowsSpotlightOnSettings*
 -   GP path: *Windows Components/Cloud Content*
@@ -864,7 +864,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
+<a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**
 
 <!--SupportedSKUs-->
 
@@ -898,7 +898,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the Windows Welcome Experience*
 -   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
 -   GP path: *Windows Components/Cloud Content*
@@ -917,7 +917,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**  
+<a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**
 
 <!--SupportedSKUs-->
 
@@ -947,7 +947,7 @@ Enables or disables Windows Tips / soft landing.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not show Windows tips*
 -   GP name: *DisableSoftLanding*
 -   GP path: *Windows Components/Cloud Content*
@@ -966,7 +966,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-configurechaticonvisibilityonthetaskbar"></a>**Experience/ConfigureChatIcon**  
+<a href="" id="experience-configurechaticonvisibilityonthetaskbar"></a>**Experience/ConfigureChatIcon**
 
 <!--SupportedSKUs-->
 
@@ -1010,7 +1010,7 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0, if not
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
+<a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**
 
 <!--SupportedSKUs-->
 
@@ -1043,7 +1043,7 @@ Allows IT admins to specify, whether spotlight should be used on the user's lock
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Windows spotlight on lock screen*
 -   GP name: *ConfigureWindowsSpotlight*
 -   GP path: *Windows Components/Cloud Content*
@@ -1061,7 +1061,7 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
+<a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**
 
 <!--SupportedSKUs-->
 
@@ -1095,7 +1095,7 @@ If you disable or don't configure this policy setting, Windows experiences will 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off cloud optimized content*
 -   GP name: *DisableCloudOptimizedContent*
 -   GP path: *Windows Components/Cloud Content*
@@ -1114,7 +1114,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
+<a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**
 
 <!--SupportedSKUs-->
 
@@ -1148,7 +1148,7 @@ If you disable or don't configure this policy setting, users can control how oft
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not show feedback notifications*
 -   GP name: *DoNotShowFeedbackNotifications*
 -   GP path: *Data Collection and Preview Builds*
@@ -1167,7 +1167,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**  
+<a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**
 
 <!--SupportedSKUs-->
 
@@ -1200,7 +1200,7 @@ Related policy:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync browser settings*
 -   GP name: *DisableWebBrowserSettingSync*
 -   GP path: *Windows Components/Sync your settings*
@@ -1241,7 +1241,7 @@ _**Turn syncing off by default but don’t disable**_
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**  
+<a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**
 
 <!--SupportedSKUs-->
 
@@ -1275,7 +1275,7 @@ Related policy:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from turning on browser syncing*
 -   GP name: *PreventUsersFromTurningOnBrowserSyncing*
 -   GP path: *Windows Components/Sync your settings*
@@ -1319,7 +1319,7 @@ Validation procedure:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**  
+<a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**
 
 <!--SupportedSKUs-->
 
@@ -1356,7 +1356,7 @@ If you don't configure this policy setting, the lock option is shown in the User
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show lock in the user tile menu*
 -   GP name: *ShowLockOption*
 -   GP path: *File Explorer*
@@ -1364,7 +1364,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 - false - The lock option isn't displayed in the User Tile menu.
 - true (default) - The lock option is displayed in the User Tile menu.
 

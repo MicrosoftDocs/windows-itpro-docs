@@ -3,8 +3,8 @@ title: Policy CSP - WindowsDefenderSecurityCenter
 description: Learn how to use the Policy CSP - WindowsDefenderSecurityCenter setting to display the Account protection area in Windows Defender Security Center.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 
 <!--Policies-->
 
-## WindowsDefenderSecurityCenter policies  
+## WindowsDefenderSecurityCenter policies
 
 <dl>
   <dd>
@@ -92,7 +92,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**  
+<a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -121,13 +121,13 @@ The table below shows the applicability of Windows:
 <!--Description-->
 The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display the contact options.
 
-- Supported value type is string. 
+- Supported value type is string.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
 
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify contact company name*
 -   GP name: *EnterpriseCustomization_CompanyName*
 -   GP element: *Presentation_EnterpriseCustomization_CompanyName*
@@ -140,7 +140,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**  
+<a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -171,7 +171,7 @@ Use this policy setting to specify if to display the Account protection area in 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Account protection area*
 -   GP name: *AccountProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Account protection*
@@ -190,7 +190,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**  
+<a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -219,12 +219,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the App and browser protection area*
 -   GP name: *AppBrowserProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
@@ -243,7 +243,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**  
+<a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -283,7 +283,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable the Clear TPM button*
 -   GP name: *DeviceSecurity_DisableClearTpmButton*
 -   GP path: *Windows Components/Windows Security/Device security*
@@ -304,7 +304,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**  
+<a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -335,7 +335,7 @@ Use this policy setting if you want to disable the display of the Device securit
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Device security area*
 -   GP name: *DeviceSecurity_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
@@ -354,7 +354,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**  
+<a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -386,12 +386,12 @@ Use this policy if you want Windows Defender Security Center to only display not
 > [!NOTE]
 > If Suppress notification is enabled then users won't see critical or non-critical messages.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide non-critical notifications*
 -   GP name: *Notifications_DisableEnhancedNotifications*
 -   GP path: *Windows Components/Windows Defender Security Center/Notifications*
@@ -410,7 +410,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**  
+<a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -439,12 +439,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Family options area*
 -   GP name: *FamilyOptions_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Family options*
@@ -463,7 +463,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**  
+<a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -492,12 +492,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Device performance and health area*
 -   GP name: *DevicePerformanceHealth_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Device performance and health*
@@ -516,7 +516,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**  
+<a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -545,12 +545,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Firewall and network protection area*
 -   GP name: *FirewallNetworkProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Firewall and network protection*
@@ -569,7 +569,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**  
+<a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -598,12 +598,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or don't configure this setting, Windows Defender Security Center notifications will display on devices.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide all notifications*
 -   GP name: *Notifications_DisableNotifications*
 -   GP path: *Windows Components/Windows Defender Security Center/Notifications*
@@ -622,7 +622,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**  
+<a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -662,7 +662,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the TPM Firmware Update recommendation.*
 -   GP name: *DeviceSecurity_DisableTpmFirmwareUpdateWarning*
 -   GP path: *Windows Components/Windows Security/Device security*
@@ -683,7 +683,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**  
+<a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -712,12 +712,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Virus and threat protection area*
 -   GP name: *VirusThreatProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
@@ -736,7 +736,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**  
+<a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -765,12 +765,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or don't configure this setting, local users can make changes in the exploit protection settings area.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from modifying settings*
 -   GP name: *AppBrowserProtection_DisallowExploitProtectionOverride*
 -   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
@@ -789,7 +789,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**  
+<a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -818,12 +818,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 The email address that is displayed to users. The default mail application is used to initiate email actions. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
 
-- Supported value type is string. 
+- Supported value type is string.
 - Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify contact email address or Email ID*
 -   GP name: *EnterpriseCustomization_Email*
 -   GP element: *Presentation_EnterpriseCustomization_Email*
@@ -836,7 +836,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**  
+<a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -865,12 +865,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Enable this policy to display your company name and contact options in the notifications. If you disable or don't configure this setting, or don't provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
 
-- Supported value type is integer. 
+- Supported value type is integer.
 - Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure customized notifications*
 -   GP name: *EnterpriseCustomization_EnableCustomizedToasts*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -889,7 +889,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**  
+<a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -918,12 +918,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or don't configure this setting, or don't provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center won't display the contact card fly out notification.
 
-- Support value type is integer. 
+- Support value type is integer.
 - Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure customized contact information*
 -   GP name: *EnterpriseCustomization_EnableInAppCustomization*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -942,7 +942,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**  
+<a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -973,7 +973,7 @@ Use this policy setting to hide the Ransomware data recovery area in Windows Def
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Ransomware data recovery area*
 -   GP name: *VirusThreatProtection_HideRansomwareRecovery*
 -   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
@@ -992,7 +992,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**  
+<a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1023,7 +1023,7 @@ Use this policy to hide the Secure boot area in the Windows Defender Security Ce
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Secure boot area*
 -   GP name: *DeviceSecurity_HideSecureBoot*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
@@ -1042,7 +1042,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**  
+<a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1073,7 +1073,7 @@ Use this policy to hide the Security processor (TPM) troubleshooting area in the
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Security processor (TPM) troubleshooter page*
 -   GP name: *DeviceSecurity_HideTPMTroubleshooting*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
@@ -1092,7 +1092,7 @@ Valid values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**  
+<a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1134,7 +1134,7 @@ Supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Windows Security Systray*
 -   GP name: *Systray_HideSystray*
 -   GP path: *Windows Components/Windows Security/Systray*
@@ -1155,7 +1155,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**  
+<a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1184,12 +1184,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 The phone number or Skype ID that is displayed to users. Skype is used to initiate the call. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
 
-- Supported value type is string. 
+- Supported value type is string.
 - Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify contact phone number or Skype ID*
 -   GP name: *EnterpriseCustomization_Phone*
 -   GP element: *Presentation_EnterpriseCustomization_Phone*
@@ -1202,7 +1202,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**  
+<a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1231,12 +1231,12 @@ The table below shows the applicability of Windows:
 <!--Description-->
 The help portal URL that is displayed to users. The default browser is used to initiate this action. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device won't display contact options.
 
-- Supported value type is string. 
+- Supported value type is string.
 - Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify contact website*
 -   GP name: *EnterpriseCustomization_URL*
 -   GP element: *Presentation_EnterpriseCustomization_URL*

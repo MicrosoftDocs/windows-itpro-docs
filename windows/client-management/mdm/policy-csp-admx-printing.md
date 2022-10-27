@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Printing.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/15/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Printing
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Printing policies  
+## ADMX_Printing policies
 
 <dl>
   <dd>
@@ -112,7 +112,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-allowwebprinting"></a>**ADMX_Printing/AllowWebPrinting**  
+<a href="" id="admx-printing-allowwebprinting"></a>**ADMX_Printing/AllowWebPrinting**
 
 <!--SupportedSKUs-->
 
@@ -155,7 +155,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" setting in
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Activate Internet printing*
 -   GP name: *AllowWebPrinting*
 -   GP path: *Printers*
@@ -166,7 +166,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-applicationdriverisolation"></a>**ADMX_Printing/ApplicationDriverIsolation**  
+<a href="" id="admx-printing-applicationdriverisolation"></a>**ADMX_Printing/ApplicationDriverIsolation**
 
 <!--SupportedSKUs-->
 
@@ -209,7 +209,7 @@ If you disable this policy setting, then print drivers will be loaded within all
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Isolate print drivers from applications*
 -   GP name: *ApplicationDriverIsolation*
 -   GP path: *Printers*
@@ -220,7 +220,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-customizedsupporturl"></a>**ADMX_Printing/CustomizedSupportUrl**  
+<a href="" id="admx-printing-customizedsupporturl"></a>**ADMX_Printing/CustomizedSupportUrl**
 
 <!--SupportedSKUs-->
 
@@ -264,7 +264,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Custom support URL in the Printers folder's left pane*
 -   GP name: *CustomizedSupportUrl*
 -   GP path: *Printers*
@@ -275,7 +275,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-donotinstallcompatibledriverfromwindowsupdate"></a>**ADMX_Printing/DoNotInstallCompatibleDriverFromWindowsUpdate**  
+<a href="" id="admx-printing-donotinstallcompatibledriverfromwindowsupdate"></a>**ADMX_Printing/DoNotInstallCompatibleDriverFromWindowsUpdate**
 
 <!--SupportedSKUs-->
 
@@ -312,7 +312,7 @@ This policy setting isn't configured by default, and the behavior depends on the
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Extend Point and Print connection to search Windows Update*
 -   GP name: *DoNotInstallCompatibleDriverFromWindowsUpdate*
 -   GP path: *Printers*
@@ -323,7 +323,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-domainprinters"></a>**ADMX_Printing/DomainPrinters**  
+<a href="" id="admx-printing-domainprinters"></a>**ADMX_Printing/DomainPrinters**
 
 <!--SupportedSKUs-->
 
@@ -373,7 +373,7 @@ In Windows 8 and later, Bluetooth printers aren't shown so its limit doesn't app
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add Printer wizard - Network scan page (Managed network)*
 -   GP name: *DomainPrinters*
 -   GP path: *Printers*
@@ -384,7 +384,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-downlevelbrowse"></a>**ADMX_Printing/DownlevelBrowse**  
+<a href="" id="admx-printing-downlevelbrowse"></a>**ADMX_Printing/DownlevelBrowse**
 
 <!--SupportedSKUs-->
 
@@ -423,7 +423,7 @@ If you disable this setting, the network printer browse page is removed from wit
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Browse the network to find printers*
 -   GP name: *DownlevelBrowse*
 -   GP path: *Control Panel\Printers*
@@ -434,7 +434,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-emfdespooling"></a>**ADMX_Printing/EMFDespooling**  
+<a href="" id="admx-printing-emfdespooling"></a>**ADMX_Printing/EMFDespooling**
 
 <!--SupportedSKUs-->
 
@@ -481,7 +481,7 @@ If you don't enable this policy setting, the behavior is the same as disabling i
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always render print jobs on the server*
 -   GP name: *EMFDespooling*
 -   GP path: *Printers*
@@ -492,7 +492,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-forcesoftwarerasterization"></a>**ADMX_Printing/ForceSoftwareRasterization**  
+<a href="" id="admx-printing-forcesoftwarerasterization"></a>**ADMX_Printing/ForceSoftwareRasterization**
 
 <!--SupportedSKUs-->
 
@@ -526,7 +526,7 @@ This setting may improve the performance of the XPS Rasterization Service or the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always rasterize content to be printed using a software rasterizer*
 -   GP name: *ForceSoftwareRasterization*
 -   GP path: *Printers*
@@ -537,7 +537,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-intranetprintersurl"></a>**ADMX_Printing/IntranetPrintersUrl**  
+<a href="" id="admx-printing-intranetprintersurl"></a>**ADMX_Printing/IntranetPrintersUrl**
 
 <!--SupportedSKUs-->
 
@@ -577,7 +577,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" and "Activ
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Browse a common web site to find printers*
 -   GP name: *IntranetPrintersUrl*
 -   GP path: *Control Panel\Printers*
@@ -588,7 +588,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-kmprintersareblocked"></a>**ADMX_Printing/KMPrintersAreBlocked**  
+<a href="" id="admx-printing-kmprintersareblocked"></a>**ADMX_Printing/KMPrintersAreBlocked**
 
 <!--SupportedSKUs-->
 
@@ -628,7 +628,7 @@ If you enable this setting, installation of a printer using a kernel-mode driver
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow installation of printers using kernel-mode drivers*
 -   GP name: *KMPrintersAreBlocked*
 -   GP path: *Printers*
@@ -639,7 +639,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-legacydefaultprintermode"></a>**ADMX_Printing/LegacyDefaultPrinterMode**  
+<a href="" id="admx-printing-legacydefaultprintermode"></a>**ADMX_Printing/LegacyDefaultPrinterMode**
 
 <!--SupportedSKUs-->
 
@@ -671,13 +671,13 @@ If you enable this setting, Windows won't manage the default printer.
 
 If you disable this setting, Windows will manage the default printer.
 
-If you don't configure this setting, default printer management won't change. 
+If you don't configure this setting, default printer management won't change.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows default printer management*
 -   GP name: *LegacyDefaultPrinterMode*
 -   GP path: *Control Panel\Printers*
@@ -688,7 +688,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-mxdwuselegacyoutputformatmsxps"></a>**ADMX_Printing/MXDWUseLegacyOutputFormatMSXPS**  
+<a href="" id="admx-printing-mxdwuselegacyoutputformatmsxps"></a>**ADMX_Printing/MXDWUseLegacyOutputFormatMSXPS**
 
 <!--SupportedSKUs-->
 
@@ -724,7 +724,7 @@ If you disable or don't configure this policy setting, the default MXDW output f
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Change Microsoft XPS Document Writer (MXDW) default output format to the legacy Microsoft XPS format (*.xps)*
 -   GP name: *MXDWUseLegacyOutputFormatMSXPS*
 -   GP path: *Printers*
@@ -735,7 +735,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-nodeleteprinter"></a>**ADMX_Printing/NoDeletePrinter**  
+<a href="" id="admx-printing-nodeleteprinter"></a>**ADMX_Printing/NoDeletePrinter**
 
 <!--SupportedSKUs-->
 
@@ -773,7 +773,7 @@ If this policy is disabled, or not configured, users can delete printers using t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent deletion of printers*
 -   GP name: *NoDeletePrinter*
 -   GP path: *Control Panel\Printers*
@@ -784,7 +784,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-nondomainprinters"></a>**ADMX_Printing/NonDomainPrinters**  
+<a href="" id="admx-printing-nondomainprinters"></a>**ADMX_Printing/NonDomainPrinters**
 
 <!--SupportedSKUs-->
 
@@ -831,7 +831,7 @@ In Windows 8 and later, Bluetooth printers aren't shown so its limit doesn't app
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add Printer wizard - Network scan page (Unmanaged network)*
 -   GP name: *NonDomainPrinters*
 -   GP path: *Printers*
@@ -842,7 +842,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-packagepointandprintonly"></a>**ADMX_Printing/PackagePointAndPrintOnly**  
+<a href="" id="admx-printing-packagepointandprintonly"></a>**ADMX_Printing/PackagePointAndPrintOnly**
 
 <!--SupportedSKUs-->
 
@@ -878,7 +878,7 @@ If this setting is disabled, or not configured, users won't be restricted to pac
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Only use Package Point and print*
 -   GP name: *PackagePointAndPrintOnly*
 -   GP path: *Control Panel\Printers*
@@ -889,7 +889,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-packagepointandprintonly-win7"></a>**ADMX_Printing/PackagePointAndPrintOnly_Win7**  
+<a href="" id="admx-printing-packagepointandprintonly-win7"></a>**ADMX_Printing/PackagePointAndPrintOnly_Win7**
 
 <!--SupportedSKUs-->
 
@@ -925,7 +925,7 @@ If this setting is disabled, or not configured, users won't be restricted to pac
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Only use Package Point and print*
 -   GP name: *PackagePointAndPrintOnly_Win7*
 -   GP path: *Printers*
@@ -936,7 +936,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-packagepointandprintserverlist"></a>**ADMX_Printing/PackagePointAndPrintServerList**  
+<a href="" id="admx-printing-packagepointandprintserverlist"></a>**ADMX_Printing/PackagePointAndPrintServerList**
 
 <!--SupportedSKUs-->
 
@@ -976,7 +976,7 @@ If this setting is disabled, or not configured, package point and print won't be
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Package Point and print - Approved servers*
 -   GP name: *PackagePointAndPrintServerList*
 -   GP path: *Control Panel\Printers*
@@ -987,7 +987,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-packagepointandprintserverlist-win7"></a>**ADMX_Printing/PackagePointAndPrintServerList_Win7**  
+<a href="" id="admx-printing-packagepointandprintserverlist-win7"></a>**ADMX_Printing/PackagePointAndPrintServerList_Win7**
 
 <!--SupportedSKUs-->
 
@@ -1027,7 +1027,7 @@ If this setting is disabled, or not configured, package point and print won't be
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Package Point and print - Approved servers*
 -   GP name: *PackagePointAndPrintServerList_Win7*
 -   GP path: *Printers*
@@ -1038,7 +1038,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-physicallocation"></a>**ADMX_Printing/PhysicalLocation**  
+<a href="" id="admx-printing-physicallocation"></a>**ADMX_Printing/PhysicalLocation**
 
 <!--SupportedSKUs-->
 
@@ -1078,7 +1078,7 @@ If you disable this setting or don't configure it, and the user doesn't type a l
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Computer location*
 -   GP name: *PhysicalLocation*
 -   GP path: *Printers*
@@ -1089,7 +1089,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-physicallocationsupport"></a>**ADMX_Printing/PhysicalLocationSupport**  
+<a href="" id="admx-printing-physicallocationsupport"></a>**ADMX_Printing/PhysicalLocationSupport**
 
 <!--SupportedSKUs-->
 
@@ -1127,7 +1127,7 @@ If you disable this setting or don't configure it, Location Tracking is disabled
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Pre-populate printer search location text*
 -   GP name: *PhysicalLocationSupport*
 -   GP path: *Printers*
@@ -1138,7 +1138,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-printdriverisolationexecutionpolicy"></a>**ADMX_Printing/PrintDriverIsolationExecutionPolicy**  
+<a href="" id="admx-printing-printdriverisolationexecutionpolicy"></a>**ADMX_Printing/PrintDriverIsolationExecutionPolicy**
 
 <!--SupportedSKUs-->
 
@@ -1179,7 +1179,7 @@ If you disable this policy setting, the print spooler will execute print drivers
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Execute print drivers in isolated processes*
 -   GP name: *PrintDriverIsolationExecutionPolicy*
 -   GP path: *Printers*
@@ -1190,7 +1190,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-printdriverisolationoverridecompat"></a>**ADMX_Printing/PrintDriverIsolationOverrideCompat**  
+<a href="" id="admx-printing-printdriverisolationoverridecompat"></a>**ADMX_Printing/PrintDriverIsolationOverrideCompat**
 
 <!--SupportedSKUs-->
 
@@ -1231,7 +1231,7 @@ If you disable or don't configure this policy setting, the print spooler uses th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Override print driver execution compatibility setting reported by print driver*
 -   GP name: *PrintDriverIsolationOverrideCompat*
 -   GP path: *Printers*
@@ -1242,7 +1242,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-printerdirectorysearchscope"></a>**ADMX_Printing/PrinterDirectorySearchScope**  
+<a href="" id="admx-printing-printerdirectorysearchscope"></a>**ADMX_Printing/PrinterDirectorySearchScope**
 
 <!--SupportedSKUs-->
 
@@ -1280,7 +1280,7 @@ This setting only provides a starting point for Active Directory searches for pr
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Default Active Directory path when searching for printers*
 -   GP name: *PrinterDirectorySearchScope*
 -   GP path: *Control Panel\Printers*
@@ -1291,7 +1291,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-printerserverthread"></a>**ADMX_Printing/PrinterServerThread**  
+<a href="" id="admx-printing-printerserverthread"></a>**ADMX_Printing/PrinterServerThread**
 
 <!--SupportedSKUs-->
 
@@ -1334,7 +1334,7 @@ If you don't configure this setting, shared printers are announced to browse mai
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Printer browsing*
 -   GP name: *PrinterServerThread*
 -   GP path: *Printers*
@@ -1345,7 +1345,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-showjobtitleineventlogs"></a>**ADMX_Printing/ShowJobTitleInEventLogs**  
+<a href="" id="admx-printing-showjobtitleineventlogs"></a>**ADMX_Printing/ShowJobTitleInEventLogs**
 
 <!--SupportedSKUs-->
 
@@ -1384,7 +1384,7 @@ If you enable this policy setting, the print job name will be included in new lo
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow job name in event logs*
 -   GP name: *ShowJobTitleInEventLogs*
 -   GP path: *Printers*
@@ -1395,7 +1395,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing-v4driverdisallowprinterextension"></a>**ADMX_Printing/V4DriverDisallowPrinterExtension**  
+<a href="" id="admx-printing-v4driverdisallowprinterextension"></a>**ADMX_Printing/V4DriverDisallowPrinterExtension**
 
 <!--SupportedSKUs-->
 
@@ -1433,7 +1433,7 @@ If you disable this policy setting or don't configure it, then all printer exten
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow v4 printer drivers to show printer extensions*
 -   GP name: *V4DriverDisallowPrinterExtension*
 -   GP path: *Printers*

@@ -3,8 +3,8 @@ title: Policy CSP - Bluetooth
 description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/12/2020
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Bluetooth policies  
+## Bluetooth policies
 
 <dl>
   <dd>
@@ -47,7 +47,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-allowadvertising"></a>**Bluetooth/AllowAdvertising**  
+<a href="" id="bluetooth-allowadvertising"></a>**Bluetooth/AllowAdvertising**
 
 <!--SupportedSKUs-->
 
@@ -93,7 +93,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-allowdiscoverablemode"></a>**Bluetooth/AllowDiscoverableMode**  
+<a href="" id="bluetooth-allowdiscoverablemode"></a>**Bluetooth/AllowDiscoverableMode**
 
 <!--SupportedSKUs-->
 
@@ -139,7 +139,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-allowprepairing"></a>**Bluetooth/AllowPrepairing**  
+<a href="" id="bluetooth-allowprepairing"></a>**Bluetooth/AllowPrepairing**
 
 <!--SupportedSKUs-->
 
@@ -181,7 +181,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-allowpromptedproximalconnections"></a>**Bluetooth/AllowPromptedProximalConnections**  
+<a href="" id="bluetooth-allowpromptedproximalconnections"></a>**Bluetooth/AllowPromptedProximalConnections**
 
 <!--SupportedSKUs-->
 
@@ -212,7 +212,7 @@ This policy allows the IT admin to block users on these managed devices from usi
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 
 -   0 - Disallow. Block users on these managed devices from using Swift Pair and other proximity based scenarios
 -   1 - Allow (default). Allow users on these managed devices to use Swift Pair and other proximity based scenarios
@@ -223,7 +223,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-localdevicename"></a>**Bluetooth/LocalDeviceName**  
+<a href="" id="bluetooth-localdevicename"></a>**Bluetooth/LocalDeviceName**
 
 <!--SupportedSKUs-->
 
@@ -262,7 +262,7 @@ If this policy isn't set or is deleted, the default local radio name is used.
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-servicesallowedlist"></a>**Bluetooth/ServicesAllowedList**  
+<a href="" id="bluetooth-servicesallowedlist"></a>**Bluetooth/ServicesAllowedList**
 
 <!--SupportedSKUs-->
 
@@ -299,7 +299,7 @@ The default value is an empty string. For more information, see [ServicesAllowed
 <hr/>
 
 <!--Policy-->
-<a href="" id="bluetooth-setminimumencryptionkeysize"></a>**Bluetooth/SetMinimumEncryptionKeySize**  
+<a href="" id="bluetooth-setminimumencryptionkeysize"></a>**Bluetooth/SetMinimumEncryptionKeySize**
 
 <!--SupportedSKUs-->
 
@@ -330,7 +330,7 @@ There are multiple levels of encryption strength when pairing Bluetooth devices.
 
 <!--/Description-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 - 0 (default) - All Bluetooth traffic is allowed.
 - N - A number from 1 through 16 representing the bytes that must be used in the encryption process. Currently, 16 is the largest allowed value for N and 16 bytes is the largest key size that Bluetooth supports. If you want to enforce Windows to always use Bluetooth encryption, ignoring the precise encryption key strength, use 1 as the value for N.
 
@@ -361,7 +361,7 @@ When the Bluetooth/ServicesAllowedList policy is provisioned, it will only allow
 - Disabling a service shall log when a service is blocked for auditing purposes
 - Disabling a service shall take effect upon reload of the stack or system reboot
 
-To define which profiles and services are allowed, enter the semicolon delimited profile or service Universally Unique Identifiers (UUID). To get a profile UUID, refer to the [Service Discovery](https://www.bluetooth.com/specifications/assigned-numbers/service-discovery) page on the Bluetooth SIG website. 
+To define which profiles and services are allowed, enter the semicolon delimited profile or service Universally Unique Identifiers (UUID). To get a profile UUID, refer to the [Service Discovery](https://www.bluetooth.com/specifications/assigned-numbers/service-discovery) page on the Bluetooth SIG website.
 
 These UUIDs all use the same base UUID with the profile identifiers added to the beginning of the base UUID.
 
@@ -414,7 +414,7 @@ This means that if you only want Bluetooth headsets, the UUIDs are:
 |Profile  |Reasoning  |UUID  |
 |---------|---------|---------|
 |HFP (Hands Free Profile)     |For voice enabled headsets         |0x111E         |
-|A2DP Source (Advance Audio Distribution)|For streaming to Bluetooth speakers         |0x110B|         
+|A2DP Source (Advance Audio Distribution)|For streaming to Bluetooth speakers         |0x110B|
 |Generic Audio Service|Generic service used by Bluetooth|0x1203|
 |Headset Service Class|For older voice-enabled headsets|0x1108|
 |AV Remote Control Target Service|For controlling audio remotely|0x110C|
@@ -422,7 +422,7 @@ This means that if you only want Bluetooth headsets, the UUIDs are:
 |AV Remote Control Controller Service|For controlling audio remotely|0x110F|
 |PnP Information|Used to identify devices occasionally|0x1200|
 
-{0000111E-0000-1000-8000-00805F9B34FB};{0000110B-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{0000110C-0000-1000-8000-00805F9B34FB};{0000110E-0000-1000-8000-00805F9B34FB};{0000110F-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB}; 
+{0000111E-0000-1000-8000-00805F9B34FB};{0000110B-0000-1000-8000-00805F9B34FB};{00001203-0000-1000-8000-00805F9B34FB};{00001108-0000-1000-8000-00805F9B34FB};{0000110C-0000-1000-8000-00805F9B34FB};{0000110E-0000-1000-8000-00805F9B34FB};{0000110F-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB};
 
 **Classic Keyboards and Mice**
 
@@ -434,7 +434,7 @@ This means that if you only want Bluetooth headsets, the UUIDs are:
 {00001124-0000-1000-8000-00805F9B34FB};{00001200-0000-1000-8000-00805F9B34FB};
 
 
-**LE Keyboards and Mice**  
+**LE Keyboards and Mice**
 
 |Profile  |Reasoning  |UUID  |
 |---------|---------|---------|

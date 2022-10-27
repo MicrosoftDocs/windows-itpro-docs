@@ -3,17 +3,17 @@ title: Account protection in the Windows Security app
 description: Use the Account protection section to manage security for your account and sign in to Microsoft.
 keywords: account protection, wdav, smartscreen, antivirus, wdsc, exploit, protection, hide, Windows Defender SmartScreen, SmartScreen Filter, Windows SmartScreen
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date:
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.date: 
 ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.technology: itpro-security
 ---
 
 

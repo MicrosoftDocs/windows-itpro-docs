@@ -1,16 +1,16 @@
 ---
 title: Windows Sandbox architecture
 description: Windows Sandbox architecture
-ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+ms.prod: windows-client
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: aaroncz
 ms.collection: 
 ms.topic: article
 ms.localizationpriority: 
 ms.date: 
 ms.reviewer: 
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Windows Sandbox architecture

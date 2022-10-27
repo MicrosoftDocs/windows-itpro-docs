@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WPN
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/13/2020
 ms.reviewer: 
@@ -14,17 +14,17 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WPN
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WPN policies  
+## ADMX_WPN policies
 
 <dl>
   <dd>
@@ -51,7 +51,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wpn-nocallsduringquiethours"></a>**ADMX_WPN/NoCallsDuringQuietHours**  
+<a href="" id="admx-wpn-nocallsduringquiethours"></a>**ADMX_WPN/NoCallsDuringQuietHours**
 
 <!--SupportedSKUs-->
 
@@ -90,7 +90,7 @@ If you don't configure this policy setting, voice and video calls will be allowe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off calls during Quiet Hours*
 -   GP name: *NoCallsDuringQuietHours*
 -   GP path: *Start Menu and Taskbar\Notifications*
@@ -101,7 +101,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wpn-nolockscreentoastnotification"></a>**ADMX_WPN/NoLockScreenToastNotification**  
+<a href="" id="admx-wpn-nolockscreentoastnotification"></a>**ADMX_WPN/NoLockScreenToastNotification**
 
 <!--SupportedSKUs-->
 
@@ -140,7 +140,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off toast notifications on the lock screen*
 -   GP name: *NoLockScreenToastNotification*
 -   GP path: *Start Menu and Taskbar\Notifications*
@@ -151,7 +151,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wpn-noquiethours"></a>**ADMX_WPN/NoQuietHours**  
+<a href="" id="admx-wpn-noquiethours"></a>**ADMX_WPN/NoQuietHours**
 
 <!--SupportedSKUs-->
 
@@ -190,7 +190,7 @@ If you don't configure this policy setting, Quiet Hours are enabled by default b
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Quiet Hours*
 -   GP name: *NoQuietHours*
 -   GP path: *Start Menu and Taskbar\Notifications*
@@ -201,7 +201,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wpn-notoastnotification"></a>**ADMX_WPN/NoToastNotification**  
+<a href="" id="admx-wpn-notoastnotification"></a>**ADMX_WPN/NoToastNotification**
 
 <!--SupportedSKUs-->
 
@@ -244,7 +244,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off toast notifications*
 -   GP name: *NoToastNotification*
 -   GP path: *Start Menu and Taskbar\Notifications*
@@ -255,7 +255,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wpn-quiethoursdailybeginminute"></a>**ADMX_WPN/QuietHoursDailyBeginMinute**  
+<a href="" id="admx-wpn-quiethoursdailybeginminute"></a>**ADMX_WPN/QuietHoursDailyBeginMinute**
 
 <!--SupportedSKUs-->
 
@@ -294,7 +294,7 @@ If you don't configure this policy setting, a default value will be used, which 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set the time Quiet Hours begins each day*
 -   GP name: *QuietHoursDailyBeginMinute*
 -   GP path: *Start Menu and Taskbar\Notifications*
@@ -305,7 +305,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wpn-quiethoursdailyendminute"></a>**ADMX_WPN/QuietHoursDailyEndMinute**  
+<a href="" id="admx-wpn-quiethoursdailyendminute"></a>**ADMX_WPN/QuietHoursDailyEndMinute**
 
 <!--SupportedSKUs-->
 
@@ -344,7 +344,7 @@ If you don't configure this policy setting, a default value will be used, which 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set the time Quiet Hours ends each day*
 -   GP name: *QuietHoursDailyEndMinute*
 -   GP path: *Start Menu and Taskbar\Notifications*

@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WindowsMediaPlayer
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/09/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WindowsMediaPlayer
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WindowsMediaPlayer policies  
+## ADMX_WindowsMediaPlayer policies
 
 <dl>
   <dd>
@@ -95,7 +95,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-configurehttpproxysettings"></a>**ADMX_WindowsMediaPlayer/ConfigureHTTPProxySettings**  
+<a href="" id="admx-windowsmediaplayer-configurehttpproxysettings"></a>**ADMX_WindowsMediaPlayer/ConfigureHTTPProxySettings**
 
 <!--SupportedSKUs-->
 
@@ -143,7 +143,7 @@ If you don't configure this policy setting, users can configure the HTTP proxy s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure HTTP Proxy*
 -   GP name: *ConfigureHTTPProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
@@ -154,7 +154,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-configuremmsproxysettings"></a>**ADMX_WindowsMediaPlayer/ConfigureMMSProxySettings**  
+<a href="" id="admx-windowsmediaplayer-configuremmsproxysettings"></a>**ADMX_WindowsMediaPlayer/ConfigureMMSProxySettings**
 
 <!--SupportedSKUs-->
 
@@ -201,7 +201,7 @@ If you don't configure this policy setting, users can configure the MMS proxy se
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure MMS Proxy*
 -   GP name: *ConfigureMMSProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
@@ -212,7 +212,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-configurertspproxysettings"></a>**ADMX_WindowsMediaPlayer/ConfigureRTSPProxySettings**  
+<a href="" id="admx-windowsmediaplayer-configurertspproxysettings"></a>**ADMX_WindowsMediaPlayer/ConfigureRTSPProxySettings**
 
 <!--SupportedSKUs-->
 
@@ -257,7 +257,7 @@ If you don't configure this policy setting, users can configure the RTSP proxy s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure RTSP Proxy*
 -   GP name: *ConfigureRTSPProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
@@ -268,7 +268,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-disableautoupdate"></a>**ADMX_WindowsMediaPlayer/DisableAutoUpdate**  
+<a href="" id="admx-windowsmediaplayer-disableautoupdate"></a>**ADMX_WindowsMediaPlayer/DisableAutoUpdate**
 
 <!--SupportedSKUs-->
 
@@ -307,7 +307,7 @@ If you disable or don't configure this policy setting, the dialog boxes are disp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Automatic Updates*
 -   GP name: *DisableAutoUpdate*
 -   GP path: *Windows Components\Windows Media Player*
@@ -318,7 +318,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-disablenetworksettings"></a>**ADMX_WindowsMediaPlayer/DisableNetworkSettings**  
+<a href="" id="admx-windowsmediaplayer-disablenetworksettings"></a>**ADMX_WindowsMediaPlayer/DisableNetworkSettings**
 
 <!--SupportedSKUs-->
 
@@ -354,7 +354,7 @@ If you disable or don't configure this policy setting, the Network tab appears a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Network Tab*
 -   GP name: *DisableNetworkSettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
@@ -365,7 +365,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-disablesetupfirstuseconfiguration"></a>**ADMX_WindowsMediaPlayer/DisableSetupFirstUseConfiguration**  
+<a href="" id="admx-windowsmediaplayer-disablesetupfirstuseconfiguration"></a>**ADMX_WindowsMediaPlayer/DisableSetupFirstUseConfiguration**
 
 <!--SupportedSKUs-->
 
@@ -403,7 +403,7 @@ If you don't configure this policy setting, and the "Set and lock skin" policy s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do Not Show First Use Dialog Boxes*
 -   GP name: *DisableSetupFirstUseConfiguration*
 -   GP path: *Windows Components\Windows Media Player*
@@ -414,7 +414,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-donotshowanchor"></a>**ADMX_WindowsMediaPlayer/DoNotShowAnchor**  
+<a href="" id="admx-windowsmediaplayer-donotshowanchor"></a>**ADMX_WindowsMediaPlayer/DoNotShowAnchor**
 
 <!--SupportedSKUs-->
 
@@ -452,7 +452,7 @@ When this policy isn't configured and the Set and Lock Skin policy is enabled, s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do Not Show Anchor*
 -   GP name: *DoNotShowAnchor*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
@@ -463,7 +463,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-dontuseframeinterpolation"></a>**ADMX_WindowsMediaPlayer/DontUseFrameInterpolation**  
+<a href="" id="admx-windowsmediaplayer-dontuseframeinterpolation"></a>**ADMX_WindowsMediaPlayer/DontUseFrameInterpolation**
 
 <!--SupportedSKUs-->
 
@@ -503,7 +503,7 @@ Video smoothing is available only on the Windows XP Home Edition and Windows XP 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Video Smoothing*
 -   GP name: *DontUseFrameInterpolation*
 -   GP path: *Windows Components\Windows Media Player*
@@ -514,7 +514,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-enablescreensaver"></a>**ADMX_WindowsMediaPlayer/EnableScreenSaver**  
+<a href="" id="admx-windowsmediaplayer-enablescreensaver"></a>**ADMX_WindowsMediaPlayer/EnableScreenSaver**
 
 <!--SupportedSKUs-->
 
@@ -552,7 +552,7 @@ If you don't configure this policy setting, users can change the setting for the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Screen Saver*
 -   GP name: *EnableScreenSaver*
 -   GP path: *Windows Components\Windows Media Player\Playback*
@@ -563,7 +563,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-hideprivacytab"></a>**ADMX_WindowsMediaPlayer/HidePrivacyTab**  
+<a href="" id="admx-windowsmediaplayer-hideprivacytab"></a>**ADMX_WindowsMediaPlayer/HidePrivacyTab**
 
 <!--SupportedSKUs-->
 
@@ -601,7 +601,7 @@ If you disable or don't configure this policy setting, the Privacy tab isn't hid
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Automatic Updates*
 -   GP name: *HidePrivacyTab*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
@@ -612,7 +612,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-hidesecuritytab"></a>**ADMX_WindowsMediaPlayer/HideSecurityTab**  
+<a href="" id="admx-windowsmediaplayer-hidesecuritytab"></a>**ADMX_WindowsMediaPlayer/HideSecurityTab**
 
 <!--SupportedSKUs-->
 
@@ -648,7 +648,7 @@ If you disable or don't configure this policy setting, users can configure the s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Security Tab*
 -   GP name: *HideSecurityTab*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
@@ -659,7 +659,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-networkbuffering"></a>**ADMX_WindowsMediaPlayer/NetworkBuffering**  
+<a href="" id="admx-windowsmediaplayer-networkbuffering"></a>**ADMX_WindowsMediaPlayer/NetworkBuffering**
 
 <!--SupportedSKUs-->
 
@@ -700,7 +700,7 @@ If you disable or don't configure this policy setting, users can change the buff
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Network Buffering*
 -   GP name: *NetworkBuffering*
 -   GP path: *Windows Components\Windows Media Player\Networking*
@@ -711,7 +711,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-policycodecupdate"></a>**ADMX_WindowsMediaPlayer/PolicyCodecUpdate**  
+<a href="" id="admx-windowsmediaplayer-policycodecupdate"></a>**ADMX_WindowsMediaPlayer/PolicyCodecUpdate**
 
 <!--SupportedSKUs-->
 
@@ -749,7 +749,7 @@ If you don't configure this policy setting, users can change the setting for the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Codec Download*
 -   GP name: *PolicyCodecUpdate*
 -   GP path: *Windows Components\Windows Media Player\Playback*
@@ -760,7 +760,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-preventcddvdmetadataretrieval"></a>**ADMX_WindowsMediaPlayer/PreventCDDVDMetadataRetrieval**  
+<a href="" id="admx-windowsmediaplayer-preventcddvdmetadataretrieval"></a>**ADMX_WindowsMediaPlayer/PreventCDDVDMetadataRetrieval**
 
 <!--SupportedSKUs-->
 
@@ -796,7 +796,7 @@ If you disable or don't configure this policy setting, users can change the sett
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent CD and DVD Media Information Retrieval*
 -   GP name: *PreventCDDVDMetadataRetrieval*
 -   GP path: *Windows Components\Windows Media Player*
@@ -807,7 +807,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-preventlibrarysharing"></a>**ADMX_WindowsMediaPlayer/PreventLibrarySharing**  
+<a href="" id="admx-windowsmediaplayer-preventlibrarysharing"></a>**ADMX_WindowsMediaPlayer/PreventLibrarySharing**
 
 <!--SupportedSKUs-->
 
@@ -843,7 +843,7 @@ If you disable or don't configure this policy setting, anyone using Windows Medi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Media Sharing*
 -   GP name: *PreventLibrarySharing*
 -   GP path: *Windows Components\Windows Media Player*
@@ -854,7 +854,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-preventmusicfilemetadataretrieval"></a>**ADMX_WindowsMediaPlayer/PreventMusicFileMetadataRetrieval**  
+<a href="" id="admx-windowsmediaplayer-preventmusicfilemetadataretrieval"></a>**ADMX_WindowsMediaPlayer/PreventMusicFileMetadataRetrieval**
 
 <!--SupportedSKUs-->
 
@@ -890,7 +890,7 @@ If you disable or don't configure this policy setting, users can change the sett
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Music File Media Information Retrieval*
 -   GP name: *PreventMusicFileMetadataRetrieval*
 -   GP path: *Windows Components\Windows Media Player*
@@ -901,7 +901,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-preventquicklaunchshortcut"></a>**ADMX_WindowsMediaPlayer/PreventQuickLaunchShortcut**  
+<a href="" id="admx-windowsmediaplayer-preventquicklaunchshortcut"></a>**ADMX_WindowsMediaPlayer/PreventQuickLaunchShortcut**
 
 <!--SupportedSKUs-->
 
@@ -937,7 +937,7 @@ If you disable or don't configure this policy setting, the user can choose wheth
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Quick Launch Toolbar Shortcut Creation*
 -   GP name: *PreventQuickLaunchShortcut*
 -   GP path: *Windows Components\Windows Media Player*
@@ -948,7 +948,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-preventradiopresetsretrieval"></a>**ADMX_WindowsMediaPlayer/PreventRadioPresetsRetrieval**  
+<a href="" id="admx-windowsmediaplayer-preventradiopresetsretrieval"></a>**ADMX_WindowsMediaPlayer/PreventRadioPresetsRetrieval**
 
 <!--SupportedSKUs-->
 
@@ -983,7 +983,7 @@ If you disable or don't configure this policy setting, the Player automatically 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *PPrevent Radio Station Preset Retrieval*
 -   GP name: *PreventRadioPresetsRetrieval*
 -   GP path: *Windows Components\Windows Media Player*
@@ -994,7 +994,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-preventwmpdesktopshortcut"></a>**ADMX_WindowsMediaPlayer/PreventWMPDeskTopShortcut**  
+<a href="" id="admx-windowsmediaplayer-preventwmpdesktopshortcut"></a>**ADMX_WindowsMediaPlayer/PreventWMPDeskTopShortcut**
 
 <!--SupportedSKUs-->
 
@@ -1030,7 +1030,7 @@ If you disable or don't configure this policy setting, users can choose whether 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Desktop Shortcut Creation*
 -   GP name: *PreventWMPDeskTopShortcut*
 -   GP path: *Windows Components\Windows Media Player*
@@ -1041,7 +1041,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-skinlockdown"></a>**ADMX_WindowsMediaPlayer/SkinLockDown**  
+<a href="" id="admx-windowsmediaplayer-skinlockdown"></a>**ADMX_WindowsMediaPlayer/SkinLockDown**
 
 <!--SupportedSKUs-->
 
@@ -1081,7 +1081,7 @@ If you disable or don't configure this policy setting, users can display the Pla
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set and Lock Skin*
 -   GP name: *SkinLockDown*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
@@ -1092,7 +1092,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediaplayer-windowsstreamingmediaprotocols"></a>**ADMX_WindowsMediaPlayer/WindowsStreamingMediaProtocols**  
+<a href="" id="admx-windowsmediaplayer-windowsstreamingmediaprotocols"></a>**ADMX_WindowsMediaPlayer/WindowsStreamingMediaProtocols**
 
 <!--SupportedSKUs-->
 
@@ -1132,7 +1132,7 @@ If you disable this policy setting, the Protocols for MMS URLs and Multicast str
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Streaming Media Protocols*
 -   GP name: *WindowsStreamingMediaProtocols*
 -   GP path: *Windows Components\Windows Media Player\Networking*

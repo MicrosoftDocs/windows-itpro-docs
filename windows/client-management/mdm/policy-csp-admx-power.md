@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Power.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/22/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Power
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Power policies  
+## ADMX_Power policies
 
 <dl>
   <dd>
@@ -108,7 +108,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-acconnectivityinstandby-2"></a>**ADMX_Power/ACConnectivityInStandby_2**  
+<a href="" id="admx-power-acconnectivityinstandby-2"></a>**ADMX_Power/ACConnectivityInStandby_2**
 
 <!--SupportedSKUs-->
 
@@ -146,7 +146,7 @@ If you don't configure this policy setting, users control this setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow network connectivity during connected-standby (plugged in)*
 -   GP name: *ACConnectivityInStandby_2*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -157,7 +157,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-accriticalsleeptransitionsdisable-2"></a>**ADMX_Power/ACCriticalSleepTransitionsDisable_2**  
+<a href="" id="admx-power-accriticalsleeptransitionsdisable-2"></a>**ADMX_Power/ACCriticalSleepTransitionsDisable_2**
 
 <!--SupportedSKUs-->
 
@@ -193,7 +193,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on the ability for applications to prevent sleep transitions (plugged in)*
 -   GP name: *ACCriticalSleepTransitionsDisable_2*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -204,7 +204,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-acstartmenubuttonaction-2"></a>**ADMX_Power/ACStartMenuButtonAction_2**  
+<a href="" id="admx-power-acstartmenubuttonaction-2"></a>**ADMX_Power/ACStartMenuButtonAction_2**
 
 <!--SupportedSKUs-->
 
@@ -244,7 +244,7 @@ If you disable this policy or don't configure this policy setting, users control
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the Start menu Power button action (plugged in)*
 -   GP name: *ACStartMenuButtonAction_2*
 -   GP path: *System\Power Management\Button Settings*
@@ -255,7 +255,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-allowsystempowerrequestac"></a>**ADMX_Power/AllowSystemPowerRequestAC**  
+<a href="" id="admx-power-allowsystempowerrequestac"></a>**ADMX_Power/AllowSystemPowerRequestAC**
 
 <!--SupportedSKUs-->
 
@@ -291,7 +291,7 @@ If you disable or don't configure this policy setting, applications, services, o
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow applications to prevent automatic sleep (plugged in)*
 -   GP name: *AllowSystemPowerRequestAC*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -302,7 +302,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-allowsystempowerrequestdc"></a>**ADMX_Power/AllowSystemPowerRequestDC**  
+<a href="" id="admx-power-allowsystempowerrequestdc"></a>**ADMX_Power/AllowSystemPowerRequestDC**
 
 <!--SupportedSKUs-->
 
@@ -338,7 +338,7 @@ If you disable or don't configure this policy setting, applications, services, o
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow applications to prevent automatic sleep (on battery)*
 -   GP name: *AllowSystemPowerRequestDC*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -349,7 +349,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-allowsystemsleepwithremotefilesopenac"></a>**ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC**  
+<a href="" id="admx-power-allowsystemsleepwithremotefilesopenac"></a>**ADMX_Power/AllowSystemSleepWithRemoteFilesOpenAC**
 
 <!--SupportedSKUs-->
 
@@ -385,7 +385,7 @@ If you disable or don't configure this policy setting, the computer doesn't auto
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow automatic sleep with Open Network Files (plugged in)*
 -   GP name: *AllowSystemSleepWithRemoteFilesOpenAC*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -396,7 +396,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-allowsystemsleepwithremotefilesopendc"></a>**ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC**  
+<a href="" id="admx-power-allowsystemsleepwithremotefilesopendc"></a>**ADMX_Power/AllowSystemSleepWithRemoteFilesOpenDC**
 
 <!--SupportedSKUs-->
 
@@ -432,7 +432,7 @@ If you disable or don't configure this policy setting, the computer doesn't auto
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow automatic sleep with Open Network Files (on battery)*
 -   GP name: *AllowSystemSleepWithRemoteFilesOpenDC*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -443,7 +443,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-customactiveschemeoverride-2"></a>**ADMX_Power/CustomActiveSchemeOverride_2**  
+<a href="" id="admx-power-customactiveschemeoverride-2"></a>**ADMX_Power/CustomActiveSchemeOverride_2**
 
 <!--SupportedSKUs-->
 
@@ -479,7 +479,7 @@ If you disable or don't configure this policy setting, users can see and change 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify a custom active power plan*
 -   GP name: *CustomActiveSchemeOverride_2*
 -   GP path: *System\Power Management*
@@ -490,7 +490,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcbatterydischargeaction0-2"></a>**ADMX_Power/DCBatteryDischargeAction0_2**  
+<a href="" id="admx-power-dcbatterydischargeaction0-2"></a>**ADMX_Power/DCBatteryDischargeAction0_2**
 
 <!--SupportedSKUs-->
 
@@ -516,7 +516,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the action that Windows takes when battery capacity reaches the critical battery notification level.  
+This policy setting specifies the action that Windows takes when battery capacity reaches the critical battery notification level.
 
 If you enable this policy setting, select one of the following actions:
 
@@ -531,7 +531,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Critical battery notification action*
 -   GP name: *DCBatteryDischargeAction0_2*
 -   GP path: *System\Power Management\Notification Settings*
@@ -542,7 +542,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcbatterydischargeaction1-2"></a>**ADMX_Power/DCBatteryDischargeAction1_2**  
+<a href="" id="admx-power-dcbatterydischargeaction1-2"></a>**ADMX_Power/DCBatteryDischargeAction1_2**
 
 <!--SupportedSKUs-->
 
@@ -583,7 +583,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Low battery notification action*
 -   GP name: *DCBatteryDischargeAction1_2*
 -   GP path: *System\Power Management\Notification Settings*
@@ -594,7 +594,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcbatterydischargelevel0-2"></a>**ADMX_Power/DCBatteryDischargeLevel0_2**  
+<a href="" id="admx-power-dcbatterydischargelevel0-2"></a>**ADMX_Power/DCBatteryDischargeLevel0_2**
 
 <!--SupportedSKUs-->
 
@@ -632,7 +632,7 @@ If you disable this policy setting or don't configure it, users control this set
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Critical battery notification level*
 -   GP name: *DCBatteryDischargeLevel0_2*
 -   GP path: *System\Power Management\Notification Settings*
@@ -643,7 +643,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcbatterydischargelevel1uinotification-2"></a>**ADMX_Power/DCBatteryDischargeLevel1UINotification_2**  
+<a href="" id="admx-power-dcbatterydischargelevel1uinotification-2"></a>**ADMX_Power/DCBatteryDischargeLevel1UINotification_2**
 
 <!--SupportedSKUs-->
 
@@ -683,7 +683,7 @@ If you disable or don't configure this policy setting, users can control this se
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off low battery user notification*
 -   GP name: *DCBatteryDischargeLevel1UINotification_2*
 -   GP path: *System\Power Management\Notification Settings*
@@ -694,7 +694,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcbatterydischargelevel1-2"></a>**ADMX_Power/DCBatteryDischargeLevel1_2**  
+<a href="" id="admx-power-dcbatterydischargelevel1-2"></a>**ADMX_Power/DCBatteryDischargeLevel1_2**
 
 <!--SupportedSKUs-->
 
@@ -732,7 +732,7 @@ If you disable this policy setting or don't configure it, users control this set
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Low battery notification level*
 -   GP name: *DCBatteryDischargeLevel1_2*
 -   GP path: *System\Power Management\Notification Settings*
@@ -743,7 +743,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcconnectivityinstandby-2"></a>**ADMX_Power/DCConnectivityInStandby_2**  
+<a href="" id="admx-power-dcconnectivityinstandby-2"></a>**ADMX_Power/DCConnectivityInStandby_2**
 
 <!--SupportedSKUs-->
 
@@ -781,7 +781,7 @@ If you don't configure this policy setting, users control this setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow network connectivity during connected-standby (on battery)*
 -   GP name: *DCConnectivityInStandby_2*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -792,7 +792,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dccriticalsleeptransitionsdisable-2"></a>**ADMX_Power/DCCriticalSleepTransitionsDisable_2**  
+<a href="" id="admx-power-dccriticalsleeptransitionsdisable-2"></a>**ADMX_Power/DCCriticalSleepTransitionsDisable_2**
 
 <!--SupportedSKUs-->
 
@@ -828,7 +828,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on the ability for applications to prevent sleep transitions (on battery)*
 -   GP name: *DCCriticalSleepTransitionsDisable_2*
 -   GP path: *System\Power Management\Sleep Settings*
@@ -839,7 +839,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dcstartmenubuttonaction-2"></a>**ADMX_Power/DCStartMenuButtonAction_2**  
+<a href="" id="admx-power-dcstartmenubuttonaction-2"></a>**ADMX_Power/DCStartMenuButtonAction_2**
 
 <!--SupportedSKUs-->
 
@@ -879,7 +879,7 @@ If you disable this policy or don't configure this policy setting, users control
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the Start menu Power button action (on battery)*
 -   GP name: *DCStartMenuButtonAction_2*
 -   GP path: *System\Power Management\Button Settings*
@@ -890,7 +890,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-diskacpowerdowntimeout-2"></a>**ADMX_Power/DiskACPowerDownTimeOut_2**  
+<a href="" id="admx-power-diskacpowerdowntimeout-2"></a>**ADMX_Power/DiskACPowerDownTimeOut_2**
 
 <!--SupportedSKUs-->
 
@@ -926,7 +926,7 @@ If you disable or don't configure this policy setting, users can see and change 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn Off the hard disk (plugged in)*
 -   GP name: *DiskACPowerDownTimeOut_2*
 -   GP path: *System\Power Management\Hard Disk Settings*
@@ -937,7 +937,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-diskdcpowerdowntimeout-2"></a>**ADMX_Power/DiskDCPowerDownTimeOut_2**  
+<a href="" id="admx-power-diskdcpowerdowntimeout-2"></a>**ADMX_Power/DiskDCPowerDownTimeOut_2**
 
 <!--SupportedSKUs-->
 
@@ -973,7 +973,7 @@ If you disable or don't configure this policy setting, users can see and change 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn Off the hard disk (on battery)*
 -   GP name: *DiskDCPowerDownTimeOut_2*
 -   GP path: *System\Power Management\Hard Disk Settings*
@@ -984,7 +984,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-dont-poweroff-aftershutdown"></a>**ADMX_Power/Dont_PowerOff_AfterShutdown**  
+<a href="" id="admx-power-dont-poweroff-aftershutdown"></a>**ADMX_Power/Dont_PowerOff_AfterShutdown**
 
 <!--SupportedSKUs-->
 
@@ -1026,7 +1026,7 @@ If you disable or don't configure this policy setting, the computer system safel
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not turn off system power after a Windows system shutdown has occurred.*
 -   GP name: *Dont_PowerOff_AfterShutdown*
 -   GP path: *System*
@@ -1037,7 +1037,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-enabledesktopslideshowac"></a>**ADMX_Power/EnableDesktopSlideShowAC**  
+<a href="" id="admx-power-enabledesktopslideshowac"></a>**ADMX_Power/EnableDesktopSlideShowAC**
 
 <!--SupportedSKUs-->
 
@@ -1075,7 +1075,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on desktop background slideshow (plugged in)*
 -   GP name: *EnableDesktopSlideShowAC*
 -   GP path: *System\Power Management\Video and Display Settings*
@@ -1086,7 +1086,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-enabledesktopslideshowdc"></a>**ADMX_Power/EnableDesktopSlideShowDC**  
+<a href="" id="admx-power-enabledesktopslideshowdc"></a>**ADMX_Power/EnableDesktopSlideShowDC**
 
 <!--SupportedSKUs-->
 
@@ -1124,7 +1124,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on desktop background slideshow (on battery)*
 -   GP name: *EnableDesktopSlideShowDC*
 -   GP path: *System\Power Management\Video and Display Settings*
@@ -1135,7 +1135,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-inboxactiveschemeoverride-2"></a>**ADMX_Power/InboxActiveSchemeOverride_2**  
+<a href="" id="admx-power-inboxactiveschemeoverride-2"></a>**ADMX_Power/InboxActiveSchemeOverride_2**
 
 <!--SupportedSKUs-->
 
@@ -1171,7 +1171,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select an active power plan*
 -   GP name: *InboxActiveSchemeOverride_2*
 -   GP path: *System\Power Management*
@@ -1182,7 +1182,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-pw-promptpasswordonresume"></a>**ADMX_Power/PW_PromptPasswordOnResume**  
+<a href="" id="admx-power-pw-promptpasswordonresume"></a>**ADMX_Power/PW_PromptPasswordOnResume**
 
 <!--SupportedSKUs-->
 
@@ -1218,7 +1218,7 @@ If you disable or don't configure this policy setting, users control if their co
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prompt for password on resume from hibernate/suspend*
 -   GP name: *PW_PromptPasswordOnResume*
 -   GP path: *System\Power Management*
@@ -1229,7 +1229,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-powerthrottlingturnoff"></a>**ADMX_Power/PowerThrottlingTurnOff**  
+<a href="" id="admx-power-powerthrottlingturnoff"></a>**ADMX_Power/PowerThrottlingTurnOff**
 
 <!--SupportedSKUs-->
 
@@ -1265,7 +1265,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Power Throttling*
 -   GP name: *PowerThrottlingTurnOff*
 -   GP path: *System\Power Management\Power Throttling Settings*
@@ -1276,7 +1276,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-power-reservebatterynotificationlevel"></a>**ADMX_Power/ReserveBatteryNotificationLevel**  
+<a href="" id="admx-power-reservebatterynotificationlevel"></a>**ADMX_Power/ReserveBatteryNotificationLevel**
 
 <!--SupportedSKUs-->
 
@@ -1312,7 +1312,7 @@ If you disable or don't configure this policy setting, users can see and change 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reserve battery notification level*
 -   GP name: *ReserveBatteryNotificationLevel*
 -   GP path: *System\Power Management\Notification Settings*

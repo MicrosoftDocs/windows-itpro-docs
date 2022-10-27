@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - DesktopAppInstaller.
 ms.author: v-aljupudi
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: alekyaj
 ms.date: 08/24/2022
 ms.reviewer: 
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - DesktopAppInstaller
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## DesktopAppInstaller policies  
+## DesktopAppInstaller policies
 
 <dl>
   <dd>
@@ -67,7 +67,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enableadditionalsources"></a>**DesktopAppInstaller/EnableAdditionalSources**  
+<a href="" id="desktopappinstaller-enableadditionalsources"></a>**DesktopAppInstaller/EnableAdditionalSources**
 
 <!--SupportedSKUs-->
 
@@ -104,7 +104,7 @@ If you disable this setting, no additional sources can be configured by the user
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Additional Windows Package Manager Sources*
 -   GP name: *EnableAdditionalSources*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -117,7 +117,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enableappinstaller"></a>**DesktopAppInstaller/EnableAppInstaller**  
+<a href="" id="desktopappinstaller-enableappinstaller"></a>**DesktopAppInstaller/EnableAppInstaller**
 
 <!--SupportedSKUs-->
 
@@ -151,7 +151,7 @@ This policy controls whether Windows Package Manager can be used by users. Users
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Controls whether the Windows Package Manager can be used by the users*
 -   GP name: *EnableAppInstaller*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -163,7 +163,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enabledefaultsource"></a>**DesktopAppInstaller/EnableDefaultSource**  
+<a href="" id="desktopappinstaller-enabledefaultsource"></a>**DesktopAppInstaller/EnableDefaultSource**
 
 <!--SupportedSKUs-->
 
@@ -198,7 +198,7 @@ If you do not configure this setting, the default source for the Windows Package
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows Package Manager Default Source*
 -   GP name: *EnableDefaultSource*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -210,7 +210,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablelocalmanifestfiles"></a>**DesktopAppInstaller/EnableLocalManifestFiles**  
+<a href="" id="desktopappinstaller-enablelocalmanifestfiles"></a>**DesktopAppInstaller/EnableLocalManifestFiles**
 
 <!--SupportedSKUs-->
 
@@ -245,7 +245,7 @@ This policy controls whether users can install packages with local manifest file
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows Package Manager Local Manifest Files*
 -   GP name: *EnableLocalManifestFiles*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -256,7 +256,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablehashoverride"></a>**DesktopAppInstaller/EnableHashOverride**  
+<a href="" id="desktopappinstaller-enablehashoverride"></a>**DesktopAppInstaller/EnableHashOverride**
 
 <!--SupportedSKUs-->
 
@@ -292,7 +292,7 @@ This policy controls whether Windows Package Manager can be configured to enable
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable App Installer Hash Override*
 -   GP name: *EnableHashOverride*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -304,7 +304,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablemicrosoftstoresource"></a>**DesktopAppInstaller/EnableMicrosoftStoreSource**  
+<a href="" id="desktopappinstaller-enablemicrosoftstoresource"></a>**DesktopAppInstaller/EnableMicrosoftStoreSource**
 
 <!--SupportedSKUs-->
 
@@ -339,7 +339,7 @@ If you don't configure this setting, the Microsoft Store source for the Windows 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows Package Manager Microsoft Store Source*
 -   GP name: *EnableMicrosoftStoreSource*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -351,7 +351,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablemsappinstallerprotocol"></a>**DesktopAppInstaller/EnableMSAppInstallerProtocol**  
+<a href="" id="desktopappinstaller-enablemsappinstallerprotocol"></a>**DesktopAppInstaller/EnableMSAppInstallerProtocol**
 
 <!--SupportedSKUs-->
 
@@ -378,16 +378,16 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy controls whether users can install packages from a website that is using the `ms-appinstaller` protocol. 
+This policy controls whether users can install packages from a website that is using the `ms-appinstaller` protocol.
 
-- If you enable or do not configure this setting, users will be able to install packages from websites that use this protocol. 
+- If you enable or do not configure this setting, users will be able to install packages from websites that use this protocol.
 
 - If you disable this setting, users will not be able to install packages from websites that use this protocol.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable MS App Installer Protocol*
 -   GP name: *EnableMSAppInstallerProtocol*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -399,7 +399,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enablesettings"></a>**DesktopAppInstaller/EnableSettings**  
+<a href="" id="desktopappinstaller-enablesettings"></a>**DesktopAppInstaller/EnableSettings**
 
 <!--SupportedSKUs-->
 
@@ -434,7 +434,7 @@ This policy controls whether users can change their settings. The settings are s
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows Package Manager Settings Command*
 -   GP name: *EnableSettings*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -446,7 +446,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enableallowedsources"></a>**DesktopAppInstaller/EnableAllowedSources**  
+<a href="" id="desktopappinstaller-enableallowedsources"></a>**DesktopAppInstaller/EnableAllowedSources**
 
 <!--SupportedSKUs-->
 
@@ -481,7 +481,7 @@ This policy controls additional sources approved for users to configure using Wi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows Package Manager Settings Command*
 -   GP name: *EnableAllowedSources*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -493,7 +493,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-enableexperimentalfeatures"></a>**DesktopAppInstaller/EnableExperimentalFeatures**  
+<a href="" id="desktopappinstaller-enableexperimentalfeatures"></a>**DesktopAppInstaller/EnableExperimentalFeatures**
 
 <!--SupportedSKUs-->
 
@@ -529,7 +529,7 @@ This policy controls whether users can enable experimental features in Windows P
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows Package Manager Experimental Features*
 -   GP name: *EnableExperimentalFeatures*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*
@@ -541,7 +541,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="desktopappinstaller-sourceautoupdateinterval"></a>**DesktopAppInstaller/SourceAutoUpdateInterval**  
+<a href="" id="desktopappinstaller-sourceautoupdateinterval"></a>**DesktopAppInstaller/SourceAutoUpdateInterval**
 
 <!--SupportedSKUs-->
 
@@ -577,7 +577,7 @@ This policy controls the auto-update interval for package-based sources. The def
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Windows Package Manager Source Auto Update Interval In Minutes*
 -   GP name: *SourceAutoUpdateInterval*
 -   GP path: *Administrative Templates\Windows Components\App Package Deployment*

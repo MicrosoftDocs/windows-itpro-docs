@@ -3,20 +3,22 @@ title: Application Control for Windows
 description: Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
-author: denisebmsft
+ms.collection: 
+  - M365-security-compliance
+  - highpri
+author: vinaypamnani-msft
 ms.reviewer: isbrahm
-ms.author: deniseb
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 05/26/2020
 ms.custom: asr
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Application Control for Windows

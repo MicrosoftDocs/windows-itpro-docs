@@ -3,8 +3,8 @@ title: Policy CSP - LocalUsersAndGroups
 description: Policy CSP - LocalUsersAndGroups
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/14/2020
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## LocalUsersAndGroups policies  
+## LocalUsersAndGroups policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="localusersandgroups-configure"></a>**LocalUsersAndGroups/Configure**  
+<a href="" id="localusersandgroups-configure"></a>**LocalUsersAndGroups/Configure**
 
 <!--SupportedSKUs-->
 
@@ -59,14 +59,14 @@ This policy setting allows IT admins to add, remove, or replace members of local
 > [!NOTE]
 > The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
-> Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
+> Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results.
 
 Here is an example of the policy definition XML for group configuration:
 
 ```xml
 <GroupConfiguration>
     <accessgroup desc = "">
-        <group action = ""/> 
+        <group action = ""/>
             <add member = ""/>
             <remove member = ""/>
     </accessgroup>
@@ -75,22 +75,22 @@ Here is an example of the policy definition XML for group configuration:
 
 where:
 
-- `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to lookup the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing. 
-- `<group action>`: Specifies the action to take on the local group, which can be Update and Restrict, represented by U and R: 
+- `<accessgroup desc>`: Specifies the name or SID of the local group to configure. If you specify a SID, the [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API is used to translate the SID to a valid group name. If you specify a name, the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API is used to lookup the group and validate the name. If name/SID lookup fails, the group is skipped and the next group in the XML file is processed. If there are multiple errors, the last error is returned at the end of the policy processing.
+- `<group action>`: Specifies the action to take on the local group, which can be Update and Restrict, represented by U and R:
     - Update. This action must be used to keep the current group membership intact and add or remove members of the specific group.
     - Restrict. This action must be used to replace current membership with the newly specified groups. This action provides the same functionality as the [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting.
 - `<add member>`: Specifies the SID or name of the member to configure.
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
     > [!NOTE]
-    > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk". 
+    > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk".
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
-For more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
+For more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).
 
 See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
 > [!IMPORTANT]
-> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
+> - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute.
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
 > - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that, if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
@@ -104,7 +104,7 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 Example 1: Azure Active Directory focused.
 
-The following example updates the built-in administrators group with Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
+The following example updates the built-in administrators group with Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
 
 ```xml
 <GroupConfiguration>
@@ -137,13 +137,13 @@ Example 3: Update action for adding and removing group members on a hybrid joine
 The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
 ```xml
-<GroupConfiguration> 
-    <accessgroup desc = "Administrators"> 
-        <group action = "U" /> 
+<GroupConfiguration>
+    <accessgroup desc = "Administrators">
+        <group action = "U" />
         <add member = "Contoso\ITAdmins"/>
         <add member = "S-1-12-1-111111111-22222222222-3333333333-4444444444"/>
-        <remove member = "Guest"/> 
-    </accessgroup> 
+        <remove member = "Guest"/>
+    </accessgroup>
 </GroupConfiguration>
 ```
 
@@ -155,9 +155,9 @@ The following example shows how you can update a local group (**Administrators**
 <hr/>
 
 > [!NOTE]
-> 
+>
 > When Azure Active Directory group SID’s are added to local groups, Azure AD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
-> 
+>
 > - Administrators
 > - Users
 > - Guests
@@ -167,12 +167,12 @@ The following example shows how you can update a local group (**Administrators**
 
 ## FAQs
 
-This section provides answers to some common questions you might have about the LocalUsersAndGroups policy CSP. 
+This section provides answers to some common questions you might have about the LocalUsersAndGroups policy CSP.
 
 ### What happens if I accidentally remove the built-in Administrator SID from the Administrators group?
 
-Removing the built-in Administrator account from the built-in Administrators group is blocked at SAM/OS level for security reasons. Attempting to do so will result in failure with the following error: 
- 
+Removing the built-in Administrator account from the built-in Administrators group is blocked at SAM/OS level for security reasons. Attempting to do so will result in failure with the following error:
+
 | Error Code  | Symbolic Name | Error Description | Header |
 |----------|----------|----------|----------|
 |  0x55b (Hex)  <br>  1371 (Dec)  |ERROR_SPECIAL_ACCOUNT|Cannot perform this operation on built-in accounts.|  winerror.h  |
@@ -189,7 +189,7 @@ Yes, you can remove a member even if it isn't a member of the group. This will r
 
 ### How can I add a domain group as a member to a local group?
 
-To add a domain group as a member to a local group, specify the domain group in `<add member>` of the local group. Use fully qualified account names (for example, domain_name\group_name) instead of isolated names (for example, group_name) for the best results. See [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information. 
+To add a domain group as a member to a local group, specify the domain group in `<add member>` of the local group. Use fully qualified account names (for example, domain_name\group_name) instead of isolated names (for example, group_name) for the best results. See [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea#remarks) for more information.
 
 ### Can I apply more than one LocalUserAndGroups policy/XML to the same device?
 
@@ -197,7 +197,7 @@ No, this is not allowed. Attempting to do so will result in a conflict in Intune
 
 ### What happens if I specify a group name that doesn't exist?
 
-Invalid group names or SIDs will be skipped. Valid parts of the policy will apply, and error will be returned at the end of the processing. This behavior aligns with the on-prem AD GPP (Group Policy Preferences) LocalUsersAndGroups policy. Similarly, invalid member names will be skipped, and error will be returned at the end to notify that not all settings were applied successfully. 
+Invalid group names or SIDs will be skipped. Valid parts of the policy will apply, and error will be returned at the end of the processing. This behavior aligns with the on-prem AD GPP (Group Policy Preferences) LocalUsersAndGroups policy. Similarly, invalid member names will be skipped, and error will be returned at the end to notify that not all settings were applied successfully.
 
 ### What happens if I specify R and U in the same XML?
 
@@ -205,7 +205,7 @@ If you specify both R and U in the same XML, the R (Restrict) action takes prece
 
 ### How do I check the result of a policy that is applied on the client device?
 
-After a policy is applied on the client device, you can investigate the event log to review the result: 
+After a policy is applied on the client device, you can investigate the event log to review the result:
 
 1. Open Event Viewer (**eventvwr.exe**).
 2. Navigate to **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-
@@ -230,7 +230,7 @@ To troubleshoot Name/SID lookup APIs:
 
     ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x0 -Type dword -Force
-    
+
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
 

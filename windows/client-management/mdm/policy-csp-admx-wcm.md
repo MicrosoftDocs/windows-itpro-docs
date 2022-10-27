@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_WCM.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/22/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WCM
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WCM policies  
+## ADMX_WCM policies
 
 <dl>
   <dd>
@@ -41,7 +41,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wcm-wcm-disablepowermanagement"></a>**ADMX_WCM/WCM_DisablePowerManagement**  
+<a href="" id="admx-wcm-wcm-disablepowermanagement"></a>**ADMX_WCM/WCM_DisablePowerManagement**
 
 <!--SupportedSKUs-->
 
@@ -76,7 +76,7 @@ If this policy setting isn't configured or is disabled, power management is enab
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable power management in connected standby mode*
 -   GP name: *WCM_DisablePowerManagement*
 -   GP path: *Network\Windows Connection Manager*
@@ -87,7 +87,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wcm-wcm-enablesoftdisconnect"></a>**ADMX_WCM/WCM_EnableSoftDisconnect**  
+<a href="" id="admx-wcm-wcm-enablesoftdisconnect"></a>**ADMX_WCM/WCM_EnableSoftDisconnect**
 
 <!--SupportedSKUs-->
 
@@ -131,7 +131,7 @@ This policy setting depends on other group policy settings. For example, if 'Min
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows to soft-disconnect a computer from a network*
 -   GP name: *WCM_EnableSoftDisconnect*
 -   GP path: *Network\Windows Connection Manager*
@@ -142,7 +142,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-wcm-wcm-minimizeconnections"></a>**ADMX_WCM/WCM_MinimizeConnections**  
+<a href="" id="admx-wcm-wcm-minimizeconnections"></a>**ADMX_WCM/WCM_MinimizeConnections**
 
 <!--SupportedSKUs-->
 
@@ -171,7 +171,7 @@ ADMX Info:
 This policy setting determines if a computer can have multiple connections to the internet or to a Windows domain. If multiple connections are allowed, it then determines how network traffic will be routed.
 
 If this policy setting is set to 0, a computer can have simultaneous connections to the internet, to a Windows domain, or to both. Internet traffic can be routed over any connection - including a cellular connection and any metered network. This value of 0 was previously the "Disabled" state for this policy setting. This option was first available in Windows 8.
-    
+
 If this policy setting is set to 1, any new automatic internet connection is blocked when the computer has at least one active internet connection to a preferred type of network. Here's the order of preference (from most preferred to least preferred): Ethernet, WLAN, then cellular. Ethernet is always preferred when connected. Users can still manually connect to any network. This value of 1 was previously the "Enabled" state for this policy setting. This option was first available in Windows 8.
 
 If this policy setting is set to 2, the behavior is similar to 1. However, if a cellular data connection is available, it will always stay connected for services that require a cellular connection. When the user is connected to a WLAN or Ethernet connection, no internet traffic will be routed over the cellular connection. This option was first available in Windows 10 (Version 1703).
@@ -183,7 +183,7 @@ This policy setting is related to the "Enable Windows to soft-disconnect a compu
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Minimize the number of simultaneous connections to the Internet or a Windows Domain*
 -   GP name: *WCM_MinimizeConnections*
 -   GP path: *Network\Windows Connection Manager*

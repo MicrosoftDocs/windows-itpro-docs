@@ -3,16 +3,16 @@ title: Audit Network Policy Server (Windows 10)
 description: The policy setting, Audit Network Policy Server, determines if audit events are generated for RADIUS (IAS) and NAP activity on user access requests.
 ms.assetid: 43b2aea4-26df-46da-b761-2b30f51a80f7
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit Network Policy Server

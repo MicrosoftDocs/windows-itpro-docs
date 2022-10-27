@@ -8,7 +8,6 @@ ms.prod: w10
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Use Shell Launcher to create a Windows client kiosk

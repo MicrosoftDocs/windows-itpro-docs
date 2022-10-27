@@ -3,8 +3,8 @@ title: Policy CSP - RemoteShell
 description: Learn details about the Policy CSP - RemoteShell setting so that you can configure access to remote shells.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## RemoteShell policies  
+## RemoteShell policies
 
 <dl>
   <dd>
@@ -44,16 +44,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-allowremoteshellaccess"></a>**RemoteShell/AllowRemoteShellAccess**  
+<a href="" id="remoteshell-allowremoteshellaccess"></a>**RemoteShell/AllowRemoteShellAccess**
 
 <!--SupportedSKUs-->
 
@@ -88,7 +88,7 @@ If you set this policy to ‘disabled’, new remote shell connections are rejec
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Remote Shell Access*
 -   GP name: *AllowRemoteShellAccess*
 -   GP path: *Windows Components/Windows Remote Shell*
@@ -100,7 +100,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-maxconcurrentusers"></a>**RemoteShell/MaxConcurrentUsers**  
+<a href="" id="remoteshell-maxconcurrentusers"></a>**RemoteShell/MaxConcurrentUsers**
 
 <!--SupportedSKUs-->
 
@@ -137,7 +137,7 @@ If you disable or do not configure this policy setting, the default number is fi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *MaxConcurrentUsers*
 -   GP name: *MaxConcurrentUsers*
 -   GP path: *Windows Components/Windows Remote Shell*
@@ -149,7 +149,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-specifyidletimeout"></a>**RemoteShell/SpecifyIdleTimeout**  
+<a href="" id="remoteshell-specifyidletimeout"></a>**RemoteShell/SpecifyIdleTimeout**
 
 <!--SupportedSKUs-->
 
@@ -186,7 +186,7 @@ If you do not configure or disable this policy setting, the default value of 900
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify idle Timeout*
 -   GP name: *IdleTimeout*
 -   GP path: *Windows Components/Windows Remote Shell*
@@ -198,7 +198,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-specifymaxmemory"></a>**RemoteShell/SpecifyMaxMemory**  
+<a href="" id="remoteshell-specifymaxmemory"></a>**RemoteShell/SpecifyMaxMemory**
 
 <!--SupportedSKUs-->
 
@@ -235,7 +235,7 @@ If you disable or do not configure this policy setting, the value 150 is used by
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify maximum amount of memory in MB per Shell*
 -   GP name: *MaxMemoryPerShellMB*
 -   GP path: *Windows Components/Windows Remote Shell*
@@ -247,7 +247,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-specifymaxprocesses"></a>**RemoteShell/SpecifyMaxProcesses**  
+<a href="" id="remoteshell-specifymaxprocesses"></a>**RemoteShell/SpecifyMaxProcesses**
 
 <!--SupportedSKUs-->
 
@@ -282,7 +282,7 @@ If you disable or do not configure this policy setting, the limit is five proces
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify maximum number of processes per Shell*
 -   GP name: *MaxProcessesPerShell*
 -   GP path: *Windows Components/Windows Remote Shell*
@@ -294,7 +294,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-specifymaxremoteshells"></a>**RemoteShell/SpecifyMaxRemoteShells**  
+<a href="" id="remoteshell-specifymaxremoteshells"></a>**RemoteShell/SpecifyMaxRemoteShells**
 
 <!--SupportedSKUs-->
 
@@ -331,7 +331,7 @@ If you disable or do not configure this policy setting, by default the limit is 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify maximum number of remote shells per user*
 -   GP name: *MaxShellsPerUser*
 -   GP path: *Windows Components/Windows Remote Shell*
@@ -343,7 +343,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteshell-specifyshelltimeout"></a>**RemoteShell/SpecifyShellTimeout**  
+<a href="" id="remoteshell-specifyshelltimeout"></a>**RemoteShell/SpecifyShellTimeout**
 
 <!--SupportedSKUs-->
 
@@ -374,7 +374,7 @@ This policy setting is deprecated and has no effect when set to any state: Enabl
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify Shell Timeout*
 -   GP name: *ShellTimeOut*
 -   GP path: *Windows Components/Windows Remote Shell*

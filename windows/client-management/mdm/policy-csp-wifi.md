@@ -3,8 +3,8 @@ title: Policy CSP - Wifi
 description: Learn how the Policy CSP - Wifi setting allows or disallows the device to automatically connect to Wi-Fi hotspots.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Wifi policies  
+## Wifi policies
 
 <dl>
   <dd>
@@ -48,7 +48,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
+<a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**
 
 <hr/>
 
@@ -61,7 +61,7 @@ This policy has been deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
+<a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**
 
 <!--SupportedSKUs-->
 
@@ -93,7 +93,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
 -   GP name: *WiFiSense*
 -   GP path: *Network/WLAN Service/WLAN Settings*
@@ -112,7 +112,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
+<a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**
 
 <!--SupportedSKUs-->
 
@@ -144,7 +144,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
 -   GP name: *NC_ShowSharedAccessUI*
 -   GP path: *Network/Network Connections*
@@ -163,7 +163,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
+<a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**
 
 <!--SupportedSKUs-->
 
@@ -209,7 +209,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
+<a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**
 
 <!--SupportedSKUs-->
 
@@ -252,7 +252,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
+<a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**
 
 <!--SupportedSKUs-->
 
@@ -293,7 +293,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
+<a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**
 
 <!--SupportedSKUs-->
 

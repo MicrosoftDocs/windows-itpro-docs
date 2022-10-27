@@ -1,7 +1,7 @@
 ---
 title: Manage Windows 10 in your organization - transitioning to modern management
 description: This article offers strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 06/03/2022
 author: vinaypamnani-msft
@@ -133,4 +133,4 @@ There are various steps you can take to begin the process of modernizing device 
 
 - [What is Intune?](/mem/intune/fundamentals/what-is-intune)
 - [Windows 10 policy CSP](./mdm/policy-configuration-service-provider.md)
-- [Windows 10 configuration service providers](./mdm/configuration-service-provider-reference.md)
+- [Windows 10 configuration service providers](./mdm/index.yml)

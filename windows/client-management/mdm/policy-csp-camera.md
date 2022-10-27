@@ -3,8 +3,8 @@ title: Policy CSP - Camera
 description: Learn how to use the Policy CSP - Camera setting so that you can configure it to disable or enable the camera.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Camera policies  
+## Camera policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**  
+<a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**
 
 <!--SupportedSKUs-->
 
@@ -63,7 +63,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Use of Camera*
 -   GP name: *L_AllowCamera*
 -   GP path: *Windows Components/Camera*

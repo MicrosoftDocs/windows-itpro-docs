@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_OfflineFiles.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/21/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_OfflineFiles
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_OfflineFiles policies  
+## ADMX_OfflineFiles policies
 
 <dl>
   <dd>
@@ -171,7 +171,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-alwayspinsubfolders"></a>**ADMX_OfflineFiles/Pol_AlwaysPinSubFolders**  
+<a href="" id="admx-offlinefiles-pol-alwayspinsubfolders"></a>**ADMX_OfflineFiles/Pol_AlwaysPinSubFolders**
 
 <!--SupportedSKUs-->
 
@@ -209,7 +209,7 @@ If you disable this setting or don't configure it, the system asks users whether
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Subfolders always available offline*
 -   GP name: *Pol_AlwaysPinSubFolders*
 -   GP path: *Network\Offline Files*
@@ -220,7 +220,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-assignedofflinefiles-1"></a>**ADMX_OfflineFiles/Pol_AssignedOfflineFiles_1**  
+<a href="" id="admx-offlinefiles-pol-assignedofflinefiles-1"></a>**ADMX_OfflineFiles/Pol_AssignedOfflineFiles_1**
 
 <!--SupportedSKUs-->
 
@@ -261,7 +261,7 @@ If you don't configure this policy setting, no files or folders are made availab
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify administratively assigned Offline Files*
 -   GP name: *Pol_AssignedOfflineFiles_1*
 -   GP path: *Network\Offline Files*
@@ -272,7 +272,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-assignedofflinefiles-2"></a>**ADMX_OfflineFiles/Pol_AssignedOfflineFiles_2**  
+<a href="" id="admx-offlinefiles-pol-assignedofflinefiles-2"></a>**ADMX_OfflineFiles/Pol_AssignedOfflineFiles_2**
 
 <!--SupportedSKUs-->
 
@@ -313,7 +313,7 @@ If you don't configure this policy setting, no files or folders are made availab
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify administratively assigned Offline Files*
 -   GP name: *Pol_AssignedOfflineFiles_2*
 -   GP path: *Network\Offline Files*
@@ -324,7 +324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-backgroundsyncsettings"></a>**ADMX_OfflineFiles/Pol_BackgroundSyncSettings**  
+<a href="" id="admx-offlinefiles-pol-backgroundsyncsettings"></a>**ADMX_OfflineFiles/Pol_BackgroundSyncSettings**
 
 <!--SupportedSKUs-->
 
@@ -362,7 +362,7 @@ If you disable or don't configure this policy setting, Windows performs a backgr
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Background Sync*
 -   GP name: *Pol_BackgroundSyncSettings*
 -   GP path: *Network\Offline Files*
@@ -373,7 +373,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-cachesize"></a>**ADMX_OfflineFiles/Pol_CacheSize**  
+<a href="" id="admx-offlinefiles-pol-cachesize"></a>**ADMX_OfflineFiles/Pol_CacheSize**
 
 <!--SupportedSKUs-->
 
@@ -421,7 +421,7 @@ This setting replaces the Default Cache Size setting used by pre-Windows Vista s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit disk space used by Offline Files*
 -   GP name: *Pol_CacheSize*
 -   GP path: *Network\Offline Files*
@@ -432,7 +432,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-customgoofflineactions-1"></a>**ADMX_OfflineFiles/Pol_CustomGoOfflineActions_1**  
+<a href="" id="admx-offlinefiles-pol-customgoofflineactions-1"></a>**ADMX_OfflineFiles/Pol_CustomGoOfflineActions_1**
 
 <!--SupportedSKUs-->
 
@@ -482,7 +482,7 @@ Also, see the "Non-default server disconnect actions" setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Action on server disconnect*
 -   GP name: *Pol_CustomGoOfflineActions_1*
 -   GP path: *Network\Offline Files*
@@ -493,7 +493,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-customgoofflineactions-2"></a>**ADMX_OfflineFiles/Pol_CustomGoOfflineActions_2**  
+<a href="" id="admx-offlinefiles-pol-customgoofflineactions-2"></a>**ADMX_OfflineFiles/Pol_CustomGoOfflineActions_2**
 
 <!--SupportedSKUs-->
 
@@ -525,7 +525,7 @@ This setting also disables the "When a network connection is lost" option on the
 
 If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
 
-- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible. 
+- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
 - "Never go offline" indicates that network files aren't available while the server is inaccessible.
 
 If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
@@ -543,7 +543,7 @@ Also, see the "Non-default server disconnect actions" setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Action on server disconnect*
 -   GP name: *Pol_CustomGoOfflineActions_2*
 -   GP path: *Network\Offline Files*
@@ -554,7 +554,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-defcachesize"></a>**ADMX_OfflineFiles/Pol_DefCacheSize**  
+<a href="" id="admx-offlinefiles-pol-defcachesize"></a>**ADMX_OfflineFiles/Pol_DefCacheSize**
 
 <!--SupportedSKUs-->
 
@@ -601,7 +601,7 @@ If you don't configure this setting, disk space for automatically cached files i
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Default cache size*
 -   GP name: *Pol_DefCacheSize*
 -   GP path: *Network\Offline Files*
@@ -612,7 +612,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-enabled"></a>**ADMX_OfflineFiles/Pol_Enabled**  
+<a href="" id="admx-offlinefiles-pol-enabled"></a>**ADMX_OfflineFiles/Pol_Enabled**
 
 <!--SupportedSKUs-->
 
@@ -653,7 +653,7 @@ If you don't configure this policy setting, Offline Files is enabled on Windows 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow or Disallow use of the Offline Files feature*
 -   GP name: *Pol_Enabled*
 -   GP path: *Network\Offline Files*
@@ -664,7 +664,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-encryptofflinefiles"></a>**ADMX_OfflineFiles/Pol_EncryptOfflineFiles**  
+<a href="" id="admx-offlinefiles-pol-encryptofflinefiles"></a>**ADMX_OfflineFiles/Pol_EncryptOfflineFiles**
 
 <!--SupportedSKUs-->
 
@@ -708,7 +708,7 @@ This setting is applied at user sign-in. If this setting is changed after user s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Encrypt the Offline Files cache*
 -   GP name: *Pol_EncryptOfflineFiles*
 -   GP path: *Network\Offline Files*
@@ -719,7 +719,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-eventlogginglevel-1"></a>**ADMX_OfflineFiles/Pol_EventLoggingLevel_1**  
+<a href="" id="admx-offlinefiles-pol-eventlogginglevel-1"></a>**ADMX_OfflineFiles/Pol_EventLoggingLevel_1**
 
 <!--SupportedSKUs-->
 
@@ -766,7 +766,7 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event logging level*
 -   GP name: *Pol_EventLoggingLevel_1*
 -   GP path: *Network\Offline Files*
@@ -777,7 +777,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-eventlogginglevel-2"></a>**ADMX_OfflineFiles/Pol_EventLoggingLevel_2**  
+<a href="" id="admx-offlinefiles-pol-eventlogginglevel-2"></a>**ADMX_OfflineFiles/Pol_EventLoggingLevel_2**
 
 <!--SupportedSKUs-->
 
@@ -809,7 +809,7 @@ Offline Files records events in the Application login Event Viewer when it detec
 
 To use this setting, in the "Enter" box, select the number corresponding to the events you want the system to log. The levels are cumulative; that is, each level includes the events in all preceding levels.
 
-- "0" records an error when the offline storage cache is corrupted. 
+- "0" records an error when the offline storage cache is corrupted.
 - "1" also records an event when the server hosting the offline file is disconnected from the network.
 - "2" also records events when the local computer is connected and disconnected from the network.
 - "3" also records an event when the server hosting the offline file is reconnected to the network.
@@ -821,7 +821,7 @@ To use this setting, in the "Enter" box, select the number corresponding to the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event logging level*
 -   GP name: *Pol_EventLoggingLevel_2*
 -   GP path: *Network\Offline Files*
@@ -832,7 +832,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-exclusionlistsettings"></a>**ADMX_OfflineFiles/Pol_ExclusionListSettings**  
+<a href="" id="admx-offlinefiles-pol-exclusionlistsettings"></a>**ADMX_OfflineFiles/Pol_ExclusionListSettings**
 
 <!--SupportedSKUs-->
 
@@ -868,7 +868,7 @@ If you disable or don't configure this policy setting, a user can create a file 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable file screens*
 -   GP name: *Pol_ExclusionListSettings*
 -   GP path: *Network\Offline Files*
@@ -879,7 +879,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-extexclusionlist"></a>**ADMX_OfflineFiles/Pol_ExtExclusionList**  
+<a href="" id="admx-offlinefiles-pol-extexclusionlist"></a>**ADMX_OfflineFiles/Pol_ExtExclusionList**
 
 <!--SupportedSKUs-->
 
@@ -920,7 +920,7 @@ To use this setting, type the file name extension in the "Extensions" box. To ty
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Files not cached*
 -   GP name: *Pol_ExtExclusionList*
 -   GP path: *Network\Offline Files*
@@ -931,7 +931,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-goofflineaction-1"></a>**ADMX_OfflineFiles/Pol_GoOfflineAction_1**  
+<a href="" id="admx-offlinefiles-pol-goofflineaction-1"></a>**ADMX_OfflineFiles/Pol_GoOfflineAction_1**
 
 <!--SupportedSKUs-->
 
@@ -982,7 +982,7 @@ Also, see the "Non-default server disconnect actions" setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Action on server disconnect*
 -   GP name: *Pol_GoOfflineAction_1*
 -   GP path: *Network\Offline Files*
@@ -993,7 +993,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-goofflineaction-2"></a>**ADMX_OfflineFiles/Pol_GoOfflineAction_2**  
+<a href="" id="admx-offlinefiles-pol-goofflineaction-2"></a>**ADMX_OfflineFiles/Pol_GoOfflineAction_2**
 
 <!--SupportedSKUs-->
 
@@ -1044,7 +1044,7 @@ Also, see the "Non-default server disconnect actions" setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Action on server disconnect*
 -   GP name: *Pol_GoOfflineAction_2*
 -   GP path: *Network\Offline Files*
@@ -1055,7 +1055,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-nocacheviewer-1"></a>**ADMX_OfflineFiles/Pol_NoCacheViewer_1**  
+<a href="" id="admx-offlinefiles-pol-nocacheviewer-1"></a>**ADMX_OfflineFiles/Pol_NoCacheViewer_1**
 
 <!--SupportedSKUs-->
 
@@ -1096,7 +1096,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent use of Offline Files folder*
 -   GP name: *Pol_NoCacheViewer_1*
 -   GP path: *Network\Offline Files*
@@ -1107,7 +1107,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-nocacheviewer-2"></a>**ADMX_OfflineFiles/Pol_NoCacheViewer_2**  
+<a href="" id="admx-offlinefiles-pol-nocacheviewer-2"></a>**ADMX_OfflineFiles/Pol_NoCacheViewer_2**
 
 <!--SupportedSKUs-->
 
@@ -1148,7 +1148,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent use of Offline Files folder*
 -   GP name: *Pol_NoCacheViewer_2*
 -   GP path: *Network\Offline Files*
@@ -1159,7 +1159,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-noconfigcache-1"></a>**ADMX_OfflineFiles/Pol_NoConfigCache_1**  
+<a href="" id="admx-offlinefiles-pol-noconfigcache-1"></a>**ADMX_OfflineFiles/Pol_NoConfigCache_1**
 
 <!--SupportedSKUs-->
 
@@ -1200,7 +1200,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit user configuration of Offline Files*
 -   GP name: *Pol_NoConfigCache_1*
 -   GP path: *Network\Offline Files*
@@ -1211,7 +1211,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-noconfigcache-2"></a>**ADMX_OfflineFiles/Pol_NoConfigCache_2**  
+<a href="" id="admx-offlinefiles-pol-noconfigcache-2"></a>**ADMX_OfflineFiles/Pol_NoConfigCache_2**
 
 <!--SupportedSKUs-->
 
@@ -1252,7 +1252,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit user configuration of Offline Files*
 -   GP name: *Pol_NoConfigCache_2*
 -   GP path: *Network\Offline Files*
@@ -1263,7 +1263,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-nomakeavailableoffline-1"></a>**ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_1**  
+<a href="" id="admx-offlinefiles-pol-nomakeavailableoffline-1"></a>**ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_1**
 
 <!--SupportedSKUs-->
 
@@ -1303,7 +1303,7 @@ If you disable or don't configure this policy setting, users can manually specif
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Make Available Offline" command*
 -   GP name: *Pol_NoMakeAvailableOffline_1*
 -   GP path: *Network\Offline Files*
@@ -1314,7 +1314,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-nomakeavailableoffline-2"></a>**ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_2**  
+<a href="" id="admx-offlinefiles-pol-nomakeavailableoffline-2"></a>**ADMX_OfflineFiles/Pol_NoMakeAvailableOffline_2**
 
 <!--SupportedSKUs-->
 
@@ -1354,7 +1354,7 @@ If you disable or don't configure this policy setting, users can manually specif
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Make Available Offline" command*
 -   GP name: *Pol_NoMakeAvailableOffline_2*
 -   GP path: *Network\Offline Files*
@@ -1365,7 +1365,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-nopinfiles-1"></a>**ADMX_OfflineFiles/Pol_NoPinFiles_1**  
+<a href="" id="admx-offlinefiles-pol-nopinfiles-1"></a>**ADMX_OfflineFiles/Pol_NoPinFiles_1**
 
 <!--SupportedSKUs-->
 
@@ -1409,7 +1409,7 @@ If you don't configure this policy setting, the "Make Available Offline" command
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Make Available Offline" for these files and folders*
 -   GP name: *Pol_NoPinFiles_1*
 -   GP path: *Network\Offline Files*
@@ -1420,7 +1420,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-nopinfiles-2"></a>**ADMX_OfflineFiles/Pol_NoPinFiles_2**  
+<a href="" id="admx-offlinefiles-pol-nopinfiles-2"></a>**ADMX_OfflineFiles/Pol_NoPinFiles_2**
 
 <!--SupportedSKUs-->
 
@@ -1464,7 +1464,7 @@ If you don't configure this policy setting, the "Make Available Offline" command
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Make Available Offline" for these files and folders*
 -   GP name: *Pol_NoPinFiles_2*
 -   GP path: *Network\Offline Files*
@@ -1475,7 +1475,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-noreminders-1"></a>**ADMX_OfflineFiles/Pol_NoReminders_1**  
+<a href="" id="admx-offlinefiles-pol-noreminders-1"></a>**ADMX_OfflineFiles/Pol_NoReminders_1**
 
 <!--SupportedSKUs-->
 
@@ -1522,7 +1522,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off reminder balloons*
 -   GP name: *Pol_NoReminders_1*
 -   GP path: *Network\Offline Files*
@@ -1533,7 +1533,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-noreminders-2"></a>**ADMX_OfflineFiles/Pol_NoReminders_2**  
+<a href="" id="admx-offlinefiles-pol-noreminders-2"></a>**ADMX_OfflineFiles/Pol_NoReminders_2**
 
 <!--SupportedSKUs-->
 
@@ -1580,7 +1580,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off reminder balloons*
 -   GP name: *Pol_NoReminders_2*
 -   GP path: *Network\Offline Files*
@@ -1591,7 +1591,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-onlinecachingsettings"></a>**ADMX_OfflineFiles/Pol_OnlineCachingSettings**  
+<a href="" id="admx-offlinefiles-pol-onlinecachingsettings"></a>**ADMX_OfflineFiles/Pol_OnlineCachingSettings**
 
 <!--SupportedSKUs-->
 
@@ -1631,7 +1631,7 @@ If you disable or don't configure this policy setting, remote files won't be tra
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Transparent Caching*
 -   GP name: *Pol_OnlineCachingSettings*
 -   GP path: *Network\Offline Files*
@@ -1642,7 +1642,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-alwayspinsubfolders"></a>**ADMX_OfflineFiles/Pol_AlwaysPinSubFolders**  
+<a href="" id="admx-offlinefiles-pol-alwayspinsubfolders"></a>**ADMX_OfflineFiles/Pol_AlwaysPinSubFolders**
 
 <!--SupportedSKUs-->
 
@@ -1680,7 +1680,7 @@ If you disable this setting or don't configure it, the system asks users whether
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Subfolders always available offline*
 -   GP name: *Pol_AlwaysPinSubFolders*
 -   GP path: *Network\Offline Files*
@@ -1691,7 +1691,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-purgeatlogoff"></a>**ADMX_OfflineFiles/Pol_PurgeAtLogoff**  
+<a href="" id="admx-offlinefiles-pol-purgeatlogoff"></a>**ADMX_OfflineFiles/Pol_PurgeAtLogoff**
 
 <!--SupportedSKUs-->
 
@@ -1730,7 +1730,7 @@ If you disable this setting or don't configure it, automatically and manually ca
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *At logoff, delete local copy of user’s offline files*
 -   GP name: *Pol_PurgeAtLogoff*
 -   GP path: *Network\Offline Files*
@@ -1741,7 +1741,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-quickadimpin"></a>**ADMX_OfflineFiles/Pol_QuickAdimPin**  
+<a href="" id="admx-offlinefiles-pol-quickadimpin"></a>**ADMX_OfflineFiles/Pol_QuickAdimPin**
 
 <!--SupportedSKUs-->
 
@@ -1777,7 +1777,7 @@ If you disable this policy setting, all administratively assigned folders are sy
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on economical application of administratively assigned Offline Files*
 -   GP name: *Pol_QuickAdimPin*
 -   GP path: *Network\Offline Files*
@@ -1788,7 +1788,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-reminderfreq-1"></a>**ADMX_OfflineFiles/Pol_ReminderFreq_1**  
+<a href="" id="admx-offlinefiles-pol-reminderfreq-1"></a>**ADMX_OfflineFiles/Pol_ReminderFreq_1**
 
 <!--SupportedSKUs-->
 
@@ -1829,7 +1829,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reminder balloon frequency*
 -   GP name: *Pol_ReminderFreq_1*
 -   GP path: *Network\Offline Files*
@@ -1840,7 +1840,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-reminderfreq-2"></a>**ADMX_OfflineFiles/Pol_ReminderFreq_2**  
+<a href="" id="admx-offlinefiles-pol-reminderfreq-2"></a>**ADMX_OfflineFiles/Pol_ReminderFreq_2**
 
 <!--SupportedSKUs-->
 
@@ -1881,7 +1881,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reminder balloon frequency*
 -   GP name: *Pol_ReminderFreq_2*
 -   GP path: *Network\Offline Files*
@@ -1892,7 +1892,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-reminderinittimeout-1"></a>**ADMX_OfflineFiles/Pol_ReminderInitTimeout_1**  
+<a href="" id="admx-offlinefiles-pol-reminderinittimeout-1"></a>**ADMX_OfflineFiles/Pol_ReminderInitTimeout_1**
 
 <!--SupportedSKUs-->
 
@@ -1928,7 +1928,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initial reminder balloon lifetime*
 -   GP name: *Pol_ReminderInitTimeout_1*
 -   GP path: *Network\Offline Files*
@@ -1939,7 +1939,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-reminderinittimeout-2"></a>**ADMX_OfflineFiles/Pol_ReminderInitTimeout_2**  
+<a href="" id="admx-offlinefiles-pol-reminderinittimeout-2"></a>**ADMX_OfflineFiles/Pol_ReminderInitTimeout_2**
 
 <!--SupportedSKUs-->
 
@@ -1975,7 +1975,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initial reminder balloon lifetime*
 -   GP name: *Pol_ReminderInitTimeout_2*
 -   GP path: *Network\Offline Files*
@@ -1986,7 +1986,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-remindertimeout-1"></a>**ADMX_OfflineFiles/Pol_ReminderTimeout_1**  
+<a href="" id="admx-offlinefiles-pol-remindertimeout-1"></a>**ADMX_OfflineFiles/Pol_ReminderTimeout_1**
 
 <!--SupportedSKUs-->
 
@@ -2022,7 +2022,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reminder balloon lifetime*
 -   GP name: *Pol_ReminderTimeout_1*
 -   GP path: *Network\Offline Files*
@@ -2033,7 +2033,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-remindertimeout-2"></a>**ADMX_OfflineFiles/Pol_ReminderTimeout_2**  
+<a href="" id="admx-offlinefiles-pol-remindertimeout-2"></a>**ADMX_OfflineFiles/Pol_ReminderTimeout_2**
 
 <!--SupportedSKUs-->
 
@@ -2069,7 +2069,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reminder balloon lifetime*
 -   GP name: *Pol_ReminderTimeout_2*
 -   GP path: *Network\Offline Files*
@@ -2080,7 +2080,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-slowlinksettings"></a>**ADMX_OfflineFiles/Pol_SlowLinkSettings**  
+<a href="" id="admx-offlinefiles-pol-slowlinksettings"></a>**ADMX_OfflineFiles/Pol_SlowLinkSettings**
 
 <!--SupportedSKUs-->
 
@@ -2126,7 +2126,7 @@ If you disable this policy setting, computers won't use the slow-link mode.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure slow-link mode*
 -   GP name: *Pol_SlowLinkSettings*
 -   GP path: *Network\Offline Files*
@@ -2137,7 +2137,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-slowlinkspeed"></a>**ADMX_OfflineFiles/Pol_SlowLinkSpeed**  
+<a href="" id="admx-offlinefiles-pol-slowlinkspeed"></a>**ADMX_OfflineFiles/Pol_SlowLinkSpeed**
 
 <!--SupportedSKUs-->
 
@@ -2177,7 +2177,7 @@ If this setting is disabled or not configured, the default threshold value of 64
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Slow link speed*
 -   GP name: *Pol_SlowLinkSpeed*
 -   GP path: *Network\Offline Files*
@@ -2188,7 +2188,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-syncatlogoff-1"></a>**ADMX_OfflineFiles/Pol_SyncAtLogoff_1**  
+<a href="" id="admx-offlinefiles-pol-syncatlogoff-1"></a>**ADMX_OfflineFiles/Pol_SyncAtLogoff_1**
 
 <!--SupportedSKUs-->
 
@@ -2233,7 +2233,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Synchronize all offline files before logging off*
 -   GP name: *Pol_SyncAtLogoff_1*
 -   GP path: *Network\Offline Files*
@@ -2244,7 +2244,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-syncatlogoff-2"></a>**ADMX_OfflineFiles/Pol_SyncAtLogoff_2**  
+<a href="" id="admx-offlinefiles-pol-syncatlogoff-2"></a>**ADMX_OfflineFiles/Pol_SyncAtLogoff_2**
 
 <!--SupportedSKUs-->
 
@@ -2289,7 +2289,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Synchronize all offline files before logging off*
 -   GP name: *Pol_SyncAtLogoff_2*
 -   GP path: *Network\Offline Files*
@@ -2300,7 +2300,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-syncatlogon-1"></a>**ADMX_OfflineFiles/Pol_SyncAtLogon_1**  
+<a href="" id="admx-offlinefiles-pol-syncatlogon-1"></a>**ADMX_OfflineFiles/Pol_SyncAtLogon_1**
 
 <!--SupportedSKUs-->
 
@@ -2345,7 +2345,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Synchronize all offline files when logging on*
 -   GP name: *Pol_SyncAtLogon_1*
 -   GP path: *Network\Offline Files*
@@ -2358,7 +2358,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-syncatlogon-2"></a>**ADMX_OfflineFiles/Pol_SyncAtLogon_2**  
+<a href="" id="admx-offlinefiles-pol-syncatlogon-2"></a>**ADMX_OfflineFiles/Pol_SyncAtLogon_2**
 
 <!--SupportedSKUs-->
 
@@ -2403,7 +2403,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Synchronize all offline files when logging on*
 -   GP name: *Pol_SyncAtLogon_2*
 -   GP path: *Network\Offline Files*
@@ -2414,7 +2414,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-syncatsuspend-1"></a>**ADMX_OfflineFiles/Pol_SyncAtSuspend_1**  
+<a href="" id="admx-offlinefiles-pol-syncatsuspend-1"></a>**ADMX_OfflineFiles/Pol_SyncAtSuspend_1**
 
 <!--SupportedSKUs-->
 
@@ -2453,7 +2453,7 @@ If you disable or don't configure this setting, files aren't synchronized when t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Synchronize offline files before suspend*
 -   GP name: *Pol_SyncAtSuspend_1*
 -   GP path: *Network\Offline Files*
@@ -2464,7 +2464,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-syncatsuspend-2"></a>**ADMX_OfflineFiles/Pol_SyncAtSuspend_2**  
+<a href="" id="admx-offlinefiles-pol-syncatsuspend-2"></a>**ADMX_OfflineFiles/Pol_SyncAtSuspend_2**
 
 <!--SupportedSKUs-->
 
@@ -2503,7 +2503,7 @@ If you disable or don't configure this setting, files aren't synchronized when t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Synchronize offline files before suspend*
 -   GP name: *Pol_SyncAtSuspend_2*
 -   GP path: *Network\Offline Files*
@@ -2514,7 +2514,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-synconcostednetwork"></a>**ADMX_OfflineFiles/Pol_SyncOnCostedNetwork**  
+<a href="" id="admx-offlinefiles-pol-synconcostednetwork"></a>**ADMX_OfflineFiles/Pol_SyncOnCostedNetwork**
 
 <!--SupportedSKUs-->
 
@@ -2550,7 +2550,7 @@ If this setting is disabled or not configured, synchronization won't run in the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable file synchronization on costed networks*
 -   GP name: *Pol_SyncOnCostedNetwork*
 -   GP path: *Network\Offline Files*
@@ -2561,7 +2561,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-workofflinedisabled-1"></a>**ADMX_OfflineFiles/Pol_WorkOfflineDisabled_1**  
+<a href="" id="admx-offlinefiles-pol-workofflinedisabled-1"></a>**ADMX_OfflineFiles/Pol_WorkOfflineDisabled_1**
 
 <!--SupportedSKUs-->
 
@@ -2597,7 +2597,7 @@ If you disable or don't configure this policy setting, the "Work offline" comman
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Work offline" command*
 -   GP name: *Pol_WorkOfflineDisabled_1*
 -   GP path: *Network\Offline Files*
@@ -2608,7 +2608,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-offlinefiles-pol-workofflinedisabled-2"></a>**ADMX_OfflineFiles/Pol_WorkOfflineDisabled_2**  
+<a href="" id="admx-offlinefiles-pol-workofflinedisabled-2"></a>**ADMX_OfflineFiles/Pol_WorkOfflineDisabled_2**
 
 <!--SupportedSKUs-->
 
@@ -2644,7 +2644,7 @@ If you disable or don't configure this policy setting, the "Work offline" comman
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Work offline" command*
 -   GP name: *Pol_WorkOfflineDisabled_2*
 -   GP path: *Network\Offline Files*

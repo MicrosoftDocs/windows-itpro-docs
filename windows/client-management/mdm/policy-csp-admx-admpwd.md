@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_AdmPwd.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/09/2020
 ms.reviewer: 
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - ADMX_AdmPwd
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AdmPwd policies  
+## ADMX_AdmPwd policies
 
 <dl>
   <dd>
@@ -46,7 +46,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-admpwd-pol_admpwd_dontallowpwdexpirationbehindpolicy"></a>**ADMX_AdmPwd/POL_AdmPwd_DontAllowPwdExpirationBehindPolicy**  
+<a href="" id="admx-admpwd-pol_admpwd_dontallowpwdexpirationbehindpolicy"></a>**ADMX_AdmPwd/POL_AdmPwd_DontAllowPwdExpirationBehindPolicy**
 
 <!--SupportedSKUs-->
 
@@ -78,7 +78,7 @@ When you disable or don't configure this setting, password expiration time may b
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow password expiration time longer than required by policy*
 -   GP name: *POL_AdmPwd_DontAllowPwdExpirationBehindPolicy*
 -   GP path: *Windows Components\AdmPwd*
@@ -89,7 +89,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-admpwd-pol_admpwd_enabled"></a>**ADMX_AdmPwd/POL_AdmPwd_Enabled**  
+<a href="" id="admx-admpwd-pol_admpwd_enabled"></a>**ADMX_AdmPwd/POL_AdmPwd_Enabled**
 
 <!--SupportedSKUs-->
 
@@ -123,7 +123,7 @@ If you disable or not configure this setting, local administrator password is NO
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable local admin password management*
 -   GP name: *POL_AdmPwd_Enabled*
 -   GP path: *Windows Components\AdmPwd*
@@ -135,7 +135,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-admpwd-pol_admpwd_adminname"></a>**ADMX_AdmPwd/POL_AdmPwd_AdminName**  
+<a href="" id="admx-admpwd-pol_admpwd_adminname"></a>**ADMX_AdmPwd/POL_AdmPwd_AdminName**
 
 <!--SupportedSKUs-->
 
@@ -168,7 +168,7 @@ When you disable or don't configure this setting, password expiration time may b
 
 <!--ADMXBacked-->
 
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Name of administrator account to manage*
 -   GP name: *POL_AdmPwd_AdminName*
 -   GP path: *Windows Components\AdmPwd*
@@ -181,7 +181,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-admpwd-pol_admpwd"></a>**ADMX_AdmPwd/POL_AdmPwd**  
+<a href="" id="admx-admpwd-pol_admpwd"></a>**ADMX_AdmPwd/POL_AdmPwd**
 
 <!--SupportedSKUs-->
 
@@ -217,7 +217,7 @@ If you disable or not configure this setting, local administrator password is NO
 
 <!--ADMXBacked-->
 
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Password Settings*
 -   GP name: *POL_AdmPwd*
 -   GP path: *Windows Components\AdmPwd*

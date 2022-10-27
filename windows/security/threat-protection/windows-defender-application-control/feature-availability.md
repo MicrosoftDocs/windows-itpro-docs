@@ -1,14 +1,14 @@
 ---
-title:  Windows Defender Application Control feature availability
+title: Windows Defender Application Control feature availability
 description: Compare Windows Defender Application Control (WDAC) and AppLocker feature availability.
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
-manager: jsuther
+manager: aaroncz
 ms.date: 06/27/2022
 ms.custom: asr
 ms.topic: overview

@@ -4,8 +4,8 @@ description: Learn about the Accounts policy configuration service provider (CSP
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Accounts policies  
+## Accounts policies
 
 <dl>
   <dd>
@@ -43,7 +43,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="accounts-allowaddingnonmicrosoftaccountsmanually"></a>**Accounts/AllowAddingNonMicrosoftAccountsManually**  
+<a href="" id="accounts-allowaddingnonmicrosoftaccountsmanually"></a>**Accounts/AllowAddingNonMicrosoftAccountsManually**
 
 <!--SupportedSKUs-->
 
@@ -88,7 +88,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**  
+<a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**
 
 <!--SupportedSKUs-->
 
@@ -131,7 +131,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="accounts-allowmicrosoftaccountsigninassistant"></a>**Accounts/AllowMicrosoftAccountSignInAssistant**  
+<a href="" id="accounts-allowmicrosoftaccountsigninassistant"></a>**Accounts/AllowMicrosoftAccountSignInAssistant**
 
 <!--SupportedSKUs-->
 
@@ -163,7 +163,7 @@ Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "
 > If the Microsoft account service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 > [!NOTE]
-> If the Microsoft account service is disabled, the Subscription Activation feature will not work properly and your users will not be able to “step-up” from Windows 10 Pro to Windows 10 Enterprise, because the Microsoft account ticket for license authentication cannot be generated. The machine will remain on Windows 10 Pro and no error will be displayed in the Activation Settings app. 
+> If the Microsoft account service is disabled, the Subscription Activation feature will not work properly and your users will not be able to “step-up” from Windows 10 Pro to Windows 10 Enterprise, because the Microsoft account ticket for license authentication cannot be generated. The machine will remain on Windows 10 Pro and no error will be displayed in the Activation Settings app.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -178,7 +178,7 @@ The following list shows the supported values:
 
 
 <!--Policy-->
-<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
+<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**
 
 <!--SupportedSKUs-->
 
@@ -216,7 +216,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="accounts-restricttoenterprisedeviceauthenticationonly"></a>**Accounts/RestrictToEnterpriseDeviceAuthenticationOnly**  
+<a href="" id="accounts-restricttoenterprisedeviceauthenticationonly"></a>**Accounts/RestrictToEnterpriseDeviceAuthenticationOnly**
 
 <!--SupportedSKUs-->
 

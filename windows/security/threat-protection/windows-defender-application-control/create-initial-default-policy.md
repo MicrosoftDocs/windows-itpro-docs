@@ -3,7 +3,7 @@ title: Create a WDAC policy using a reference computer (Windows)
 description: To create a Windows Defender Application Control (WDAC) policy that allows all code installed on a reference computer within your organization, follow this guide.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 08/08/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a WDAC policy using a reference computer

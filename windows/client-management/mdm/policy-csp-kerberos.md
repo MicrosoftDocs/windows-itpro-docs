@@ -3,8 +3,8 @@ title: Policy CSP - Kerberos
 description: Define the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Kerberos policies  
+## Kerberos policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
   </dd>
   <dd>
     <a href="#kerberos-pkinithashalgorithmconfiguration">Kerberos/PKInitHashAlgorithmConfiguration</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#kerberos-pkinithashalgorithmsha1">Kerberos/PKInitHashAlgorithmSHA1</a>
   </dd>
@@ -59,16 +59,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-allowforestsearchorder"></a>**Kerberos/AllowForestSearchOrder**  
+<a href="" id="kerberos-allowforestsearchorder"></a>**Kerberos/AllowForestSearchOrder**
 
 <!--SupportedSKUs-->
 
@@ -103,7 +103,7 @@ If you disable or don't configure this policy setting, the Kerberos client doesn
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use forest search order*
 -   GP name: *ForestSearch*
 -   GP path: *System/Kerberos*
@@ -115,7 +115,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-cloudkerberosticketretrievalenabled"></a>**Kerberos/CloudKerberosTicketRetrievalEnabled**  
+<a href="" id="kerberos-cloudkerberosticketretrievalenabled"></a>**Kerberos/CloudKerberosTicketRetrievalEnabled**
 
 <!--SupportedSKUs-->
 
@@ -149,14 +149,14 @@ This policy allows retrieving the cloud Kerberos ticket during the sign in.
 <!--/Description-->
 
 <!--SupportedValues-->
-Valid values:  
+Valid values:
 0 (default) - Disabled
 1 - Enabled
 
 <!--/SupportedValues-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow retrieving the cloud Kerberos ticket during the logon*
 -   GP name: *CloudKerberosTicketRetrievalEnabled*
 -   GP path: *System/Kerberos*
@@ -168,7 +168,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**  
+<a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**
 
 <!--SupportedSKUs-->
 
@@ -194,7 +194,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring, using Kerberos authentication with domains that support these features. 
+This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring, using Kerberos authentication with domains that support these features.
 If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains that support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
 If you disable or don't configure this policy setting, the client devices won't request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device won't be able to retrieve claims for clients using Kerberos protocol transition.
@@ -202,7 +202,7 @@ If you disable or don't configure this policy setting, the client devices won't 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
 -   GP name: *EnableCbacAndArmor*
 -   GP path: *System/Kerberos*
@@ -214,7 +214,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-pkinithashalgorithmconfiguration"></a>**Kerberos/PKInitHashAlgorithmConfiguration**  
+<a href="" id="kerberos-pkinithashalgorithmconfiguration"></a>**Kerberos/PKInitHashAlgorithmConfiguration**
 
 <!--SupportedSKUs-->
 
@@ -255,7 +255,7 @@ More information about the hash and checksum algorithms supported by the Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Hash algorithms for certificate logon*
 -   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
@@ -267,7 +267,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-pkinithashalgorithmsha1"></a>**Kerberos/PKInitHashAlgorithmSHA1**  
+<a href="" id="kerberos-pkinithashalgorithmsha1"></a>**Kerberos/PKInitHashAlgorithmSHA1**
 
 <!--SupportedSKUs-->
 
@@ -306,7 +306,7 @@ If you don't configure this policy, the SHA1 algorithm will assume the **Default
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Hash algorithms for certificate logon*
 -   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
@@ -318,7 +318,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-pkinithashalgorithmsha256"></a>**Kerberos/PKInitHashAlgorithmSHA256**  
+<a href="" id="kerberos-pkinithashalgorithmsha256"></a>**Kerberos/PKInitHashAlgorithmSHA256**
 
 <!--SupportedSKUs-->
 
@@ -357,7 +357,7 @@ If you don't configure this policy, the SHA256 algorithm will assume the **Defau
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Hash algorithms for certificate logon*
 -   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
@@ -369,7 +369,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-pkinithashalgorithmsha384"></a>**Kerberos/PKInitHashAlgorithmSHA384**  
+<a href="" id="kerberos-pkinithashalgorithmsha384"></a>**Kerberos/PKInitHashAlgorithmSHA384**
 
 <!--SupportedSKUs-->
 
@@ -408,7 +408,7 @@ If you don't configure this policy, the SHA384 algorithm will assume the **Defau
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Hash algorithms for certificate logon*
 -   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
@@ -420,7 +420,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-pkinithashalgorithmsha512"></a>**Kerberos/PKInitHashAlgorithmSHA512**  
+<a href="" id="kerberos-pkinithashalgorithmsha512"></a>**Kerberos/PKInitHashAlgorithmSHA512**
 
 <!--SupportedSKUs-->
 
@@ -459,7 +459,7 @@ If you don't configure this policy, the SHA512 algorithm will assume the **Defau
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Hash algorithms for certificate logon*
 -   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
@@ -470,7 +470,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-requirekerberosarmoring"></a>**Kerberos/RequireKerberosArmoring**  
+<a href="" id="kerberos-requirekerberosarmoring"></a>**Kerberos/RequireKerberosArmoring**
 
 <!--SupportedSKUs-->
 
@@ -501,17 +501,17 @@ This policy setting controls whether a computer requires that Kerberos message e
 > [!WARNING]
 > When a domain doesn't support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
 
-If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers. 
+If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers.
 
 > [!NOTE]
-> The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring. 
+> The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring.
 
 If you disable or don't configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Fail authentication requests when Kerberos armoring is not available*
 -   GP name: *ClientRequireFast*
 -   GP path: *System/Kerberos*
@@ -523,7 +523,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-requirestrictkdcvalidation"></a>**Kerberos/RequireStrictKDCValidation**  
+<a href="" id="kerberos-requirestrictkdcvalidation"></a>**Kerberos/RequireStrictKDCValidation**
 
 <!--SupportedSKUs-->
 
@@ -549,7 +549,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the Kerberos client's behavior in validating the KDC certificate for smart card and system certificate logon.  
+This policy setting controls the Kerberos client's behavior in validating the KDC certificate for smart card and system certificate logon.
 
 If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer isn't joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
 
@@ -558,7 +558,7 @@ If you disable or don't configure this policy setting, the Kerberos client requi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Require strict KDC validation*
 -   GP name: *ValidateKDC*
 -   GP path: *System/Kerberos*
@@ -570,7 +570,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-setmaximumcontexttokensize"></a>**Kerberos/SetMaximumContextTokenSize**  
+<a href="" id="kerberos-setmaximumcontexttokensize"></a>**Kerberos/SetMaximumContextTokenSize**
 
 <!--SupportedSKUs-->
 
@@ -598,11 +598,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to set the value returned to applications that request the maximum size of the SSPI context token buffer size.
 
-The size of the context token buffer determines the maximum size of SSPI context tokens an application expects and allocates. Depending upon authentication request processing and group memberships, the buffer might be smaller than the actual size of the SSPI context token. 
+The size of the context token buffer determines the maximum size of SSPI context tokens an application expects and allocates. Depending upon authentication request processing and group memberships, the buffer might be smaller than the actual size of the SSPI context token.
 
 If you enable this policy setting, the Kerberos client or server uses the configured value, or the locally allowed maximum value, whichever is smaller.
 
-If you disable or don't configure this policy setting, the Kerberos client or server uses the locally configured value or the default value. 
+If you disable or don't configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
 
 > [!NOTE]
 > This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8, the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it's not advised to set this value more than 48,000 bytes.
@@ -610,7 +610,7 @@ If you disable or don't configure this policy setting, the Kerberos client or se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set maximum Kerberos SSPI context token buffer size*
 -   GP name: *MaxTokenSize*
 -   GP path: *System/Kerberos*
@@ -622,7 +622,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="kerberos-upnnamehints"></a>**Kerberos/UPNNameHints**  
+<a href="" id="kerberos-upnnamehints"></a>**Kerberos/UPNNameHints**
 
 <!--SupportedSKUs-->
 

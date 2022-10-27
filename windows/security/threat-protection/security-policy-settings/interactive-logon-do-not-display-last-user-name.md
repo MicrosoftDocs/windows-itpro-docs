@@ -1,20 +1,20 @@
 ---
 title: Interactive logon Don't display last signed-in (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Don't display last user name security policy setting.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.reviewer: 
-ms.author: dansimp
-ms.technology: windows-sec
+ms.author: vinpa
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Don't display last signed-in

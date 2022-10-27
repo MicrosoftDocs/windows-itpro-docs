@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_CtrlAltDel.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/26/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_CtrlAltDel
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_CtrlAltDel policies  
+## ADMX_CtrlAltDel policies
 
 <dl>
   <dd>
@@ -45,7 +45,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ctrlaltdel-disablechangepassword"></a>**ADMX_CtrlAltDel/DisableChangePassword**  
+<a href="" id="admx-ctrlaltdel-disablechangepassword"></a>**ADMX_CtrlAltDel/DisableChangePassword**
 
 <!--SupportedSKUs-->
 
@@ -81,7 +81,7 @@ However, users will still be able to change their password when prompted by the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Change Password*
 -   GP name: *DisableChangePassword*
 -   GP path: *System/Ctrl+Alt+Del Options*
@@ -93,7 +93,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ctrlaltdel-disablelockcomputer"></a>**ADMX_CtrlAltDel/DisableLockComputer**  
+<a href="" id="admx-ctrlaltdel-disablelockcomputer"></a>**ADMX_CtrlAltDel/DisableLockComputer**
 
 <!--SupportedSKUs-->
 
@@ -133,7 +133,7 @@ If you disable or don't configure this policy setting, users will be able to loc
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Lock Computer*
 -   GP name: *DisableLockWorkstation*
 -   GP path: *System/Ctrl+Alt+Del Options*
@@ -144,7 +144,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ctrlaltdel-disabletaskmgr"></a>**ADMX_CtrlAltDel/DisableTaskMgr**  
+<a href="" id="admx-ctrlaltdel-disabletaskmgr"></a>**ADMX_CtrlAltDel/DisableTaskMgr**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -180,7 +180,7 @@ If you disable or don't configure this policy setting, users can access Task Man
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Task Manager*
 -   GP name: *DisableTaskMgr*
 -   GP path: *System/Ctrl+Alt+Del Options*
@@ -191,7 +191,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ctrlaltdel-nologoff"></a>**ADMX_CtrlAltDel/NoLogoff**  
+<a href="" id="admx-ctrlaltdel-nologoff"></a>**ADMX_CtrlAltDel/NoLogoff**
 
 <!--SupportedSKUs-->
 
@@ -228,7 +228,7 @@ If you disable or don't configure this policy setting, users can see and select 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Logoff*
 -   GP name: *NoLogoff*
 -   GP path: *System/Ctrl+Alt+Del Options*

@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
@@ -15,7 +15,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **ClientCertificateInstall** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 
@@ -78,9 +78,9 @@ The XML below is the current version for this CSP.
                         <Get />
                         <Replace />
                     </AccessType>
-                    <Description>Required for PFX certificate installation. A unique ID to differentiate different certificate install requests. 
-Format is node. 
-Supported operations are Get, Add, Delete 
+                    <Description>Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
+Format is node.
+Supported operations are Get, Add, Delete
 Calling Delete on the this node, should delete the certificates and the keys that were installed by the corresponding PFX blob.
 </Description>
                     <DFFormat>
@@ -134,7 +134,7 @@ Calling Delete on the this node, should delete the certificates and the keys tha
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>Optional. 
+                        <Description>Optional.
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.
 Format is chr.
 Supported operations are Get, Add, Delete and Replace.
@@ -161,7 +161,7 @@ Supported operations are Get, Add, Delete and Replace.
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>Required. 
+                        <Description>Required.
 CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. Add on this node will trigger the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, fKeyExportable) are present before this is called. This will also set the Status node to the current Status of the operation.
 Format is Binary64.
 Supported operations are Get, Add, Replace.
@@ -194,7 +194,7 @@ CRYPT_DATA_BLOB on MSDN can be found at https://msdn.microsoft.com/library/windo
                         </AccessType>
                         <Description>
 Required if PFX is password protected.
-Password that protects the PFX blob. 
+Password that protects the PFX blob.
 Format is  chr. Supported operations are Add, Get.
 </Description>
                         <DFFormat>
@@ -221,7 +221,7 @@ Format is  chr. Supported operations are Add, Get.
                         </AccessType>
                         <DefaultValue>0</DefaultValue>
                         <Description>Optional. Used to specify if the PFX certificate password is encrypted with a certificate.
-If the value is 
+If the value is
 0 - Password is not encrypted
 1- Password is encrypted using the MDM certificate by the MDM server
 2 - Password is encrypted by a Custom Certificate by the MDM server. When this value is used here, also specify the custom store name in the PFXCertPasswordEncryptionStore node.
@@ -271,7 +271,7 @@ Supported operations are Add, Get.
                 <Node>
                     <NodeName>Thumbprint</NodeName>
                     <DFProperties>
-                        <AccessType>     
+                        <AccessType>
                             <Get />
                         </AccessType>
                         <Description>Returns the thumbprint of the PFX certificate installed. Format is string.Supported operations are Get.
@@ -321,8 +321,8 @@ Support operations are Get.
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>Optional. 
-When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored. 
+                        <Description>Optional.
+When a value of "2" is contained iin PFXCertPasswordEncryptionType, specify the store name where the certificate for decrypting the PFXCertPassword is stored.
 Datatype is string,
 Support operation are Add, Get and Replace.
 </Description>
@@ -370,8 +370,8 @@ Support operation are Add, Get and Replace.
                         <Get />
                         <Replace />
                     </AccessType>
-                    <Description>Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests. 
-Format is node. 
+                    <Description>Required for SCEP certificate installation. A unique ID to differentiate different certificate install requests.
+Format is node.
 Supported operations are Get, Add, Delete.
 Calling Delete on the this node, should delete the corresponding SCEP certificate</Description>
                     <DFFormat>
@@ -422,8 +422,8 @@ NOTE: Though the children nodes under Install support Replace commands, once the
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>Required for SCEP certificate enrollment. Specify the cert enrollment server. The server could specify multiple server URLs separated by semicolon. 
-Format is string. 
+                            <Description>Required for SCEP certificate enrollment. Specify the cert enrollment server. The server could specify multiple server URLs separated by semicolon.
+Format is string.
 Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
                                 <chr />
@@ -474,7 +474,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                             </AccessType>
                             <Description>Required. Specify extended key usages. Subjected to SCEP server configuration. The list of OIDs are separated by plus “+”. Sample format: OID1+OID2+OID3.
 
-Format is chr. 
+Format is chr.
 
 Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
@@ -502,7 +502,7 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                             </AccessType>
                             <Description>Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have second (0x20) or forth (0x80) or both bits set. If the value doesn’t have those bits set, configuration will fail.
 
-Format is int. 
+Format is int.
 
 Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
@@ -553,20 +553,20 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                                 <Replace />
                             </AccessType>
                             <DefaultValue>3</DefaultValue>
-                            <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN. 
+                            <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN.
 
-SCEP enrolled cert doesn’t support TPM PIN protection. Supported values: 
+SCEP enrolled cert doesn’t support TPM PIN protection. Supported values:
 
-1 – private key protected by TPM, 
+1 – private key protected by TPM,
 
-2 – private key protected by phone TPM if the device supports TPM. 
+2 – private key protected by phone TPM if the device supports TPM.
 
-3 (default) – private key saved in software KSP 
+3 (default) – private key saved in software KSP
 
 4 – private key protected by NGC. If this option is specified, container name should be specified, if not enrollment will fail.
 
 
-Format is int. 
+Format is int.
 
 Supported operations are Get, Add, Delete, Replace.
 
@@ -595,12 +595,12 @@ Supported operations are Get, Add, Delete, Replace.
                                 <Replace />
                             </AccessType>
                             <DefaultValue>5</DefaultValue>
-                            <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes. 
+                            <Description>Optional. When the SCEP server sends pending status, specify device retry waiting time in minutes.
 
 Default value is: 5
-The min value is 1. 
+The min value is 1.
 
-Format is int. 
+Format is int.
 
 Supported operations are Get, Add, Delete noreplace.</Description>
                             <DFFormat>
@@ -676,7 +676,7 @@ The min value is 0 which means no retry. Supported operations are Get, Add, Dele
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>Required for enrollment. Specify private key length (RSA). Format is int. 
+                            <Description>Required for enrollment. Specify private key length (RSA). Format is int.
 
 Valid value: 1024, 2048, 4096. For NGC, only 2048 is the supported keylength.
 
@@ -704,11 +704,11 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +. 
+                            <Description>Required for enrollment. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated via +.
 
 For NGC, only SHA256 is supported as the supported algorithm
 
-Format is chr. 
+Format is chr.
 Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
                                 <chr />
@@ -733,8 +733,8 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If not match, fail the authentication. 
-Format is chr. 
+                            <Description>Required. Specify root CA thumbprint. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates SCEP server, it checks CA cert from SCEP server whether match with this cert. If not match, fail the authentication.
+Format is chr.
 Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
                                 <chr />
@@ -759,9 +759,9 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>Optional. Specify subject alternative name. Multiple alternative names could be specified by this node. Each name is the combination of name format+actual name. Refer name type definition in MSDN. Each pair is separated by semicolon. E.g. multiple SAN are presented in the format of [nameformat1]+[actual name1];[name format 2]+[actual name2]. 
+                            <Description>Optional. Specify subject alternative name. Multiple alternative names could be specified by this node. Each name is the combination of name format+actual name. Refer name type definition in MSDN. Each pair is separated by semicolon. E.g. multiple SAN are presented in the format of [nameformat1]+[actual name1];[name format 2]+[actual name2].
 
-Format is chr. 
+Format is chr.
 
 Supported operations are Get, Add, Delete, Replace.</Description>
                             <DFFormat>
@@ -788,8 +788,8 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                                 <Replace />
                             </AccessType>
                             <DefaultValue>Days</DefaultValue>
-                            <Description>Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years. 
-Format is chr. 
+                            <Description>Optional. Specify the units for valid period. Valid values are: Days(Default), Months, Years.
+Format is chr.
 Supported operations are Get, Add, Delete, Replace.
 
 NOTE: The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPerio) the SCEP server as part of certificate enrollment request. It is the server’s decision on how to use this valid period to create the certificate.</Description>
@@ -817,9 +817,9 @@ NOTE: The device only sends the MDM server expected certificate validation perio
                                 <Replace />
                             </AccessType>
                             <DefaultValue>0</DefaultValue>
-                            <Description>Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note that the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days. 
+                            <Description>Optional. Specify desired number of units used in validity period. Subjected to SCEP server configuration. Default is 0. The units are defined in ValidPeriod node. Note that the valid period specified by MDM will overwrite the valid period specified in cert template. For example, if ValidPeriod is days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
-Format is int. 
+Format is int.
 
 Supported operations are Get, Add, Delete, Replace.
 
@@ -847,7 +847,7 @@ NOTE: The device only sends the MDM server expected certificate validation perio
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>Optional. 
+                            <Description>Optional.
 Specifies the NGC container name (if NGC KSP is chosen for above node). If this node is not specified when NGC KSP is chosen, enrollment will fail.
 
 Format is chr.
@@ -901,9 +901,9 @@ Supported operations are Get, Add, Delete and Replace.</Description>
                             <AccessType>
                                 <Exec />
                             </AccessType>
-                            <Description>Required. Trigger the device to start the cert enrollment. The device will not notify MDM server after cert enrollment is done. The MDM server could later query the device to find out whether new cert is added. 
+                            <Description>Required. Trigger the device to start the cert enrollment. The device will not notify MDM server after cert enrollment is done. The MDM server could later query the device to find out whether new cert is added.
 
-Format is null, e.g. this node doesn’t contain a value. 
+Format is null, e.g. this node doesn’t contain a value.
 
 Supported operation is Exec.</Description>
                             <DFFormat>
@@ -974,9 +974,9 @@ Supported operation is Exec.</Description>
                         </AccessType>
                         <Description>Required. Specify the latest status for the certificate due to enroll request.
 
-Format is chr. 
+Format is chr.
 
-Supported operation is Get. 
+Supported operation is Get.
 
 Valid values are:
 1 – finished successfully
@@ -1003,7 +1003,7 @@ Valid values are:
                         <AccessType>
                             <Get />
                         </AccessType>
-                        <Description>Optional. The integer value that indicates the HRESULT of the last enrollment error code. 
+                        <Description>Optional. The integer value that indicates the HRESULT of the last enrollment error code.
 Supported operation is Get.</Description>
                         <DFFormat>
                             <int />

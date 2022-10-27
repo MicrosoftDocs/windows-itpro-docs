@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_Cpls.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/26/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Cpls
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Cpls policies  
+## ADMX_Cpls policies
 
 <dl>
   <dd>
@@ -36,7 +36,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-cpls-usedefaulttile"></a>**ADMX_Cpls/UseDefaultTile**  
+<a href="" id="admx-cpls-usedefaulttile"></a>**ADMX_Cpls/UseDefaultTile**
 
 <!--SupportedSKUs-->
 
@@ -64,7 +64,7 @@ manager: aaroncz
 <!--Description-->
 This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
 
-> [!NOTE] 
+> [!NOTE]
 > The default account picture is stored at `%PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg.` The default guest picture is stored at `%PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg.` If the default pictures do not exist, an empty frame is displayed.
 
 If you enable this policy setting, the default user account picture will display for all users on the system with no customization allowed.
@@ -75,7 +75,7 @@ If you disable or do not configure this policy setting, users will be able to cu
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Apply the default account picture to all users*
 -   GP name: *UseDefaultTile*
 -   GP path: *Control Panel/User Accounts*

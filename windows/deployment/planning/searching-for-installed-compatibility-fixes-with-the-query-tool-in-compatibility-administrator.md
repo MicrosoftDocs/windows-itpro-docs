@@ -4,9 +4,10 @@ description: You can access the Query tool from within Compatibility Administrat
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator

@@ -2,7 +2,6 @@
 title: Billing and payments overview
 description: Find topics about billing and payment support in Microsoft Store for Business.
 keywords: billing, payment methods, invoices, credit card, debit card
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

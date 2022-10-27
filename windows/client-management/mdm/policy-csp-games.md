@@ -3,8 +3,8 @@ title: Policy CSP - Games
 description: Learn to use the Policy CSP - Games setting so that you can specify whether advanced gaming services can be used.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Games policies  
+## Games policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
+<a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**
 
 <!--SupportedSKUs-->
 
@@ -54,7 +54,7 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. 
+Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services.
 
 Supported value type is integer.
 

@@ -3,8 +3,8 @@ title: PersonalDataEncryption DDF file
 description: Learn about the OMA DM device description framework (DDF) for the PersonalDataEncryption configuration service provider.
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: nimishasatapathy
 ms.localizationpriority: medium
 ms.date: 09/10/2022
@@ -14,11 +14,11 @@ manager: dansimp
 
 # PersonalDataEncryption DDF file
 
-This topic shows the OMA DM device description framework (DDF) for the **PersonalDataEncryption** configuration service provider. 
+This topic shows the OMA DM device description framework (DDF) for the **PersonalDataEncryption** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
-The XML below is the current version for this CSP. 
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -26,7 +26,7 @@ The XML below is the current version for this CSP.
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
   [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
-  <VerDTD>1.2</VerDTD>  
+  <VerDTD>1.2</VerDTD>
   <Node>
     <NodeName>PDE</NodeName>
     <Path>./User/Vendor/MSFT</Path>
@@ -45,7 +45,7 @@ The XML below is the current version for this CSP.
       </Scope>
       <DFType>
         <DDFName />
-      </DFType>      
+      </DFType>
     </DFProperties>
     <Node>
       <NodeName>EnablePersonalDataEncryption</NodeName>

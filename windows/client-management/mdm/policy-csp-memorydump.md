@@ -3,8 +3,8 @@ title: Policy CSP - MemoryDump
 description: Use the Policy CSP
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## MemoryDump policies  
+## MemoryDump policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="memorydump-allowcrashdump"></a>**MemoryDump/AllowCrashDump**  
+<a href="" id="memorydump-allowcrashdump"></a>**MemoryDump/AllowCrashDump**
 
 <!--SupportedSKUs-->
 
@@ -72,7 +72,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="memorydump-allowlivedump"></a>**MemoryDump/AllowLiveDump**  
+<a href="" id="memorydump-allowlivedump"></a>**MemoryDump/AllowLiveDump**
 
 <!--SupportedSKUs-->
 

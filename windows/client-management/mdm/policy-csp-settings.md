@@ -3,8 +3,8 @@ title: Policy CSP - Settings
 description: Learn how to use the Policy CSP - Settings setting so that you can allow the user to change Auto Play settings.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Settings policies  
+## Settings policies
 
 <dl>
   <dd>
@@ -67,7 +67,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
+<a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**
 
 <!--SupportedSKUs-->
 
@@ -112,7 +112,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
+<a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**
 
 <!--SupportedSKUs-->
 
@@ -156,7 +156,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**  
+<a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**
 
 <!--SupportedSKUs-->
 
@@ -197,7 +197,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
+<a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**
 
 <!--SupportedSKUs-->
 <table>
@@ -259,7 +259,7 @@ Describes what values are supported in/by this policy and meaning of each value,
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
+<a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**
 
 <!--SupportedSKUs-->
 
@@ -301,7 +301,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**  
+<a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**
 
 <!--SupportedSKUs-->
 
@@ -333,7 +333,7 @@ If disabled, Settings won't contact Microsoft content services to retrieve tips 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Online Tips*
 -   GP name: *AllowOnlineTips*
 -   GP element: *CheckBox_AllowOnlineTips*
@@ -346,7 +346,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
+<a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**
 
 <!--SupportedSKUs-->
 
@@ -388,7 +388,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
+<a href="" id="settings-allowregion"></a>**Settings/AllowRegion**
 
 <!--SupportedSKUs-->
 
@@ -430,7 +430,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
+<a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**
 
 <!--SupportedSKUs-->
 
@@ -472,7 +472,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**  
+<a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**
 
 <!--SupportedSKUs-->
 
@@ -513,7 +513,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
+<a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**
 
 <!--SupportedSKUs-->
 
@@ -555,7 +555,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**  
+<a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**
 
 <!--SupportedSKUs-->
 
@@ -596,7 +596,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
+<a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**
 
 <!--SupportedSKUs-->
 
@@ -626,7 +626,7 @@ Allows IT Admins to configure the default setting for showing more calendars (be
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show additional calendar*
 -   GP name: *ConfigureTaskbarCalendar*
 -   GP path: *Start Menu and Taskbar*
@@ -647,7 +647,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
+<a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**
 
 <!--SupportedSKUs-->
 
@@ -712,7 +712,7 @@ The default value for this setting is an empty string, which is interpreted as s
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Settings Page Visibility*
 -   GP name: *SettingsPageVisibility*
 -   GP element: *SettingsPageVisibilityBox*

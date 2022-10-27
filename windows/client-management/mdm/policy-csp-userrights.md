@@ -3,8 +3,8 @@ title: Policy CSP - UserRights
 description: Learn how user rights are assigned for user accounts or groups, and how the name of the policy defines the user right in question.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/24/2021
@@ -50,7 +50,7 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
    ```xml
    <Data>*S-1-5-32-544</Data>
    ```
- 
+
 - Grant a user right to multiple groups (Administrators, Authenticated Users) via SID:
    ```xml
    <Data>*S-1-5-32-544&#xF000;*S-1-5-11</Data>
@@ -60,7 +60,7 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
    ```xml
    <Data>*S-1-5-32-544&#xF000;Authenticated Users</Data>
    ```
- 
+
 - Grant a user right to multiple groups (Authenticated Users, Administrators) via strings:
    ```xml
    <Data>Authenticated Users&#xF000;Administrators</Data>
@@ -70,7 +70,7 @@ Here are examples of data fields. The encoded 0xF000 is the standard delimiter/s
    ```xml
    <Data></Data>
    ```
-   
+
   If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
 
 > [!NOTE]
@@ -441,9 +441,9 @@ This user right determines which users and groups can change the time and date o
 
 > [!CAUTION]
 > Configuring user rights replaces existing users or groups previously assigned to those user rights. The system requires that Local Service account (SID S-1-5-19) always has the ChangeSystemTime right. Therefore, Local Service must always be specified in addition to any other accounts being configured in this policy.
-> 
+>
 > Not including the Local Service account will result in failure with the following error:
-> 
+>
 > | Error code  | Symbolic name | Error description | Header |
 > |----------|----------|----------|----------|
 > |  0x80070032 (Hex)|ERROR_NOT_SUPPORTED|The request isn't supported.|  winerror.h  |
@@ -965,7 +965,7 @@ Assigning this user right to a user allows programs running on behalf of that us
 > Assigning this user right can be a security risk. Assign this user right to trusted users only.
 
 > [!NOTE]
-> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist. 
+> By default, services that are started by the Service Control Manager have the built-in Service group added to their access tokens. Component Object Model (COM) servers that are started by the COM infrastructure and that are configured to run under a specific account also have the Service group added to their access tokens. As a result, these services get this user right when they are started. In addition, a user can also impersonate an access token if any of the following conditions exist.
 
 1. The access token that is being impersonated is for this user.
 1. The user, in this sign-in session, created the access token by signing in to the network with explicit credentials.

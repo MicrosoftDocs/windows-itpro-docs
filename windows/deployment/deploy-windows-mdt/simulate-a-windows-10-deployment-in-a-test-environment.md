@@ -4,10 +4,11 @@ description: This topic will walk you through the process of creating a simulate
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Simulate a Windows 10 deployment in a test environment

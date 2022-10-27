@@ -2,13 +2,15 @@
 title: The Windows Security app
 description: The Windows Security app brings together common Windows security features into one place.
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # The Windows Security app

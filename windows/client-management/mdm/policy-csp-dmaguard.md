@@ -3,8 +3,8 @@ title: Policy CSP - DmaGuard
 description: Learn how to use the Policy CSP - DmaGuard setting to provide more security against external DMA capable devices.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## DmaGuard policies  
+## DmaGuard policies
 
 <dl>
   <dd>
@@ -29,7 +29,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="dmaguard-deviceenumerationpolicy"></a>**DmaGuard/DeviceEnumerationPolicy**  
+<a href="" id="dmaguard-deviceenumerationpolicy"></a>**DmaGuard/DeviceEnumerationPolicy**
 
 <!--SupportedSKUs-->
 
@@ -56,7 +56,7 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy is intended to provide more security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices that are incompatible with [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), device memory isolation and sandboxing. 
+This policy is intended to provide more security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices that are incompatible with [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), device memory isolation and sandboxing.
 
 Device memory sandboxing allows the OS to use the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access by the peripheral. In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
 
@@ -75,7 +75,7 @@ The following are the supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enumeration policy for external devices incompatible with Kernel DMA Protection*
 -   GP name: *DmaGuardEnumerationPolicy*
 -   GP path: *System/Kernel DMA Protection*

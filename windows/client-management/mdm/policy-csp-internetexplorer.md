@@ -3,8 +3,8 @@ title: Policy CSP - InternetExplorer
 description: Use the Policy CSP - InternetExplorer setting to add a specific list of search providers to the user's default list of search providers.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: 
@@ -16,7 +16,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## InternetExplorer policies  
+## InternetExplorer policies
 
 <dl>
   <dd>
@@ -114,8 +114,8 @@ manager: aaroncz
   </dd>
 
 <dd>
-    <a 
-    href="#internetexplorer-configureedgeredirectchannel">InternetExplorer/ConfigureEdgeRedirectChannel</a> 
+    <a
+    href="#internetexplorer-configureedgeredirectchannel">InternetExplorer/ConfigureEdgeRedirectChannel</a>
   </dd>
   <dd>
     <a href="#internetexplorer-disableactivexversionlistautodownload">InternetExplorer/DisableActiveXVersionListAutoDownload</a>
@@ -373,7 +373,7 @@ manager: aaroncz
     <a href="#internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a>
   </dd>
  <dd>
-    <a href="#internetexplorer-keepintranetsitesininternetexplorer">InternetExplorer/KeepIntranetSitesInInternetExplorer</a> 
+    <a href="#internetexplorer-keepintranetsitesininternetexplorer">InternetExplorer/KeepIntranetSitesInInternetExplorer</a>
   </dd>
   <dd>
     <a href="#internetexplorer-localmachinezoneallowaccesstodatasources">InternetExplorer/LocalMachineZoneAllowAccessToDataSources</a>
@@ -810,16 +810,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-addsearchprovider"></a>**InternetExplorer/AddSearchProvider**  
+<a href="" id="internetexplorer-addsearchprovider"></a>**InternetExplorer/AddSearchProvider**
 
 <!--SupportedSKUs-->
 
@@ -848,7 +848,7 @@ manager: aaroncz
 <!--Description-->
 This policy setting allows you to add a specific list of search providers to the user's default list of search providers. Normally, search providers can be added from third-party toolbars or in Setup. The user can also add a search provider from the provider's website.
 
-If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). 
+If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]).
 
 > [!NOTE]
 > This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
@@ -858,7 +858,7 @@ If you disable or do not configure this policy setting, the user can configure t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add a specific list of search providers to the user's list of search providers*
 -   GP name: *AddSearchProvider*
 -   GP path: *Windows Components/Internet Explorer*
@@ -870,7 +870,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**  
+<a href="" id="internetexplorer-allowactivexfiltering"></a>**InternetExplorer/AllowActiveXFiltering**
 
 <!--SupportedSKUs-->
 
@@ -906,7 +906,7 @@ If you disable or do not configure this policy setting, ActiveX Filtering is not
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on ActiveX Filtering*
 -   GP name: *TurnOnActiveXFiltering*
 -   GP path: *Windows Components/Internet Explorer*
@@ -918,7 +918,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**  
+<a href="" id="internetexplorer-allowaddonlist"></a>**InternetExplorer/AllowAddOnList**
 
 <!--SupportedSKUs-->
 
@@ -960,7 +960,7 @@ If you disable this policy setting, the list is deleted. The 'Deny all add-ons u
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add-on List*
 -   GP name: *AddonManagement_AddOnList*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -972,7 +972,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowautocomplete"></a>**InternetExplorer/AllowAutoComplete**  
+<a href="" id="internetexplorer-allowautocomplete"></a>**InternetExplorer/AllowAutoComplete**
 
 <!--SupportedSKUs-->
 
@@ -1009,7 +1009,7 @@ If you do not configure this setting, the user has the freedom of turning on Aut
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on the auto-complete feature for user names and passwords on forms*
 -   GP name: *RestrictFormSuggestPW*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1021,7 +1021,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowcertificateaddressmismatchwarning"></a>**InternetExplorer/AllowCertificateAddressMismatchWarning**  
+<a href="" id="internetexplorer-allowcertificateaddressmismatchwarning"></a>**InternetExplorer/AllowCertificateAddressMismatchWarning**
 
 <!--SupportedSKUs-->
 
@@ -1057,7 +1057,7 @@ If you disable or do not configure this policy setting, the user can choose whet
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on certificate address mismatch warning*
 -   GP name: *IZ_PolicyWarnCertMismatch*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1069,7 +1069,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowdeletingbrowsinghistoryonexit"></a>**InternetExplorer/AllowDeletingBrowsingHistoryOnExit**  
+<a href="" id="internetexplorer-allowdeletingbrowsinghistoryonexit"></a>**InternetExplorer/AllowDeletingBrowsingHistoryOnExit**
 
 <!--SupportedSKUs-->
 
@@ -1109,7 +1109,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow deleting browsing history on exit*
 -   GP name: *DBHDisableDeleteOnExit*
 -   GP path: *Windows Components/Internet Explorer/Delete Browsing History*
@@ -1121,7 +1121,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**  
+<a href="" id="internetexplorer-allowenhancedprotectedmode"></a>**InternetExplorer/AllowEnhancedProtectedMode**
 
 <!--SupportedSKUs-->
 
@@ -1159,7 +1159,7 @@ If you do not configure this policy, users will be able to turn on or turn off E
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Enhanced Protected Mode*
 -   GP name: *Advanced_EnableEnhancedProtectedMode*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -1171,7 +1171,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenhancedsuggestionsinaddressbar"></a>**InternetExplorer/AllowEnhancedSuggestionsInAddressBar**  
+<a href="" id="internetexplorer-allowenhancedsuggestionsinaddressbar"></a>**InternetExplorer/AllowEnhancedSuggestionsInAddressBar**
 
 <!--SupportedSKUs-->
 
@@ -1209,7 +1209,7 @@ If you do not configure this policy setting, users can change the Suggestions se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Microsoft services to provide enhanced suggestions as the user types in the Address bar*
 -   GP name: *AllowServicePoweredQSA*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1232,7 +1232,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**  
+<a href="" id="internetexplorer-allowenterprisemodefromtoolsmenu"></a>**InternetExplorer/AllowEnterpriseModeFromToolsMenu**
 
 <!--SupportedSKUs-->
 
@@ -1268,7 +1268,7 @@ If you disable or don't configure this policy setting, the menu option won't app
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let users turn on and use Enterprise Mode from the Tools menu*
 -   GP name: *EnterpriseModeEnable*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1280,7 +1280,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**  
+<a href="" id="internetexplorer-allowenterprisemodesitelist"></a>**InternetExplorer/AllowEnterpriseModeSiteList**
 
 <!--SupportedSKUs-->
 
@@ -1316,7 +1316,7 @@ If you disable or don't configure this policy setting, Internet Explorer opens a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use the Enterprise Mode IE website list*
 -   GP name: *EnterpriseModeSiteList*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1328,7 +1328,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowfallbacktossl3"></a>**InternetExplorer/AllowFallbackToSSL3**  
+<a href="" id="internetexplorer-allowfallbacktossl3"></a>**InternetExplorer/AllowFallbackToSSL3**
 
 <!--SupportedSKUs-->
 
@@ -1365,7 +1365,7 @@ If you disable this policy, system defaults will be used.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow fallback to SSL 3.0 (Internet Explorer)*
 -   GP name: *Advanced_EnableSSL3Fallback*
 -   GP path: *Windows Components/Internet Explorer/Security Features*
@@ -1377,7 +1377,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**  
+<a href="" id="internetexplorer-allowinternetexplorer7policylist"></a>**InternetExplorer/AllowInternetExplorer7PolicyList**
 
 <!--SupportedSKUs-->
 
@@ -1413,7 +1413,7 @@ If you disable or do not configure this policy setting, the user can add and rem
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use Policy List of Internet Explorer 7 sites*
 -   GP name: *CompatView_UsePolicyList*
 -   GP path: *Windows Components/Internet Explorer/Compatibility View*
@@ -1425,7 +1425,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**  
+<a href="" id="internetexplorer-allowinternetexplorerstandardsmode"></a>**InternetExplorer/AllowInternetExplorerStandardsMode**
 
 <!--SupportedSKUs-->
 
@@ -1463,7 +1463,7 @@ If you do not configure this policy setting, Internet Explorer uses an Internet 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Internet Explorer Standards Mode for local intranet*
 -   GP name: *CompatView_IntranetSites*
 -   GP path: *Windows Components/Internet Explorer/Compatibility View*
@@ -1475,7 +1475,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**  
+<a href="" id="internetexplorer-allowinternetzonetemplate"></a>**InternetExplorer/AllowInternetZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1519,7 +1519,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Zone Template*
 -   GP name: *IZ_PolicyInternetZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1531,7 +1531,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**  
+<a href="" id="internetexplorer-allowintranetzonetemplate"></a>**InternetExplorer/AllowIntranetZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1575,7 +1575,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Intranet Zone Template*
 -   GP name: *IZ_PolicyIntranetZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1587,7 +1587,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlocalmachinezonetemplate"></a>**InternetExplorer/AllowLocalMachineZoneTemplate**  
+<a href="" id="internetexplorer-allowlocalmachinezonetemplate"></a>**InternetExplorer/AllowLocalMachineZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1631,7 +1631,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Local Machine Zone Template*
 -   GP name: *IZ_PolicyLocalMachineZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1643,7 +1643,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddowninternetzonetemplate"></a>**InternetExplorer/AllowLockedDownInternetZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddowninternetzonetemplate"></a>**InternetExplorer/AllowLockedDownInternetZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1687,7 +1687,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Locked-Down Internet Zone Template*
 -   GP name: *IZ_PolicyInternetZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1699,7 +1699,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddownintranetzonetemplate"></a>**InternetExplorer/AllowLockedDownIntranetZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1743,7 +1743,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Locked-Down Intranet Zone Template*
 -   GP name: *IZ_PolicyIntranetZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1755,7 +1755,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddownlocalmachinezonetemplate"></a>**InternetExplorer/AllowLockedDownLocalMachineZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddownlocalmachinezonetemplate"></a>**InternetExplorer/AllowLockedDownLocalMachineZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1799,7 +1799,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Locked-Down Local Machine Zone Template*
 -   GP name: *IZ_PolicyLocalMachineZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1811,7 +1811,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowlockeddownrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowlockeddownrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1855,7 +1855,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Locked-Down Restricted Sites Zone Template*
 -   GP name: *IZ_PolicyRestrictedSitesZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -1867,7 +1867,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**  
+<a href="" id="internetexplorer-allowonewordentry"></a>**InternetExplorer/AllowOneWordEntry**
 
 <!--SupportedSKUs-->
 
@@ -1903,7 +1903,7 @@ If you disable or do not configure this policy setting, Internet Explorer does n
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Go to an intranet site for a one-word entry in the Address bar*
 -   GP name: *UseIntranetSiteForOneWordEntry*
 -   GP path: *Windows Components/Internet Explorer/Internet Settings/Advanced settings/Browsing*
@@ -1915,7 +1915,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsavetargetasinIEmode"></a>**InternetExplorer/AllowSaveTargetAsInIEMode**  
+<a href="" id="internetexplorer-allowsavetargetasinIEmode"></a>**InternetExplorer/AllowSaveTargetAsInIEMode**
 
 <!--SupportedSKUs-->
 
@@ -1952,7 +1952,7 @@ For more information, see [https://go.microsoft.com/fwlink/?linkid=2102115](/dep
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow "Save Target As" in Internet Explorer mode*
 -   GP name: *AllowSaveTargetAsInIEMode*
 -   GP path: *Windows Components/Internet Explorer*
@@ -1974,7 +1974,7 @@ ADMX Info:
 ```
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**  
+<a href="" id="internetexplorer-allowsitetozoneassignmentlist"></a>**InternetExplorer/AllowSiteToZoneAssignmentList**
 
 <!--SupportedSKUs-->
 
@@ -2003,9 +2003,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage a list of sites that you want to associate with a particular security zone. These zone numbers have associated security settings that apply to all of the sites in the zone.
 
-Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: 
+Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are:
 1. Intranet zone
-1. Trusted Sites zone 
+1. Trusted Sites zone
 1. Internet zone
 1. Restricted Sites zone
 
@@ -2027,7 +2027,7 @@ The list is a set of pairs of strings. Each string is separated by F000. Each pa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Site to Zone Assignment List*
 -   GP name: *IZ_Zonemaps*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2054,7 +2054,7 @@ ADMX Info:
   </SyncBody>
 ```
 
-Value and index pairs in the SyncML example:  
+Value and index pairs in the SyncML example:
 - `https://adfs.contoso.org 1`
 - `https://microsoft.com 2`
 
@@ -2064,7 +2064,7 @@ Value and index pairs in the SyncML example:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsoftwarewhensignatureisinvalid"></a>**InternetExplorer/AllowSoftwareWhenSignatureIsInvalid**  
+<a href="" id="internetexplorer-allowsoftwarewhensignatureisinvalid"></a>**InternetExplorer/AllowSoftwareWhenSignatureIsInvalid**
 
 <!--SupportedSKUs-->
 
@@ -2102,7 +2102,7 @@ If you do not configure this policy, users can choose to run or install files wi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow software to run or install even if the signature is invalid*
 -   GP name: *Advanced_InvalidSignatureBlock*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -2114,7 +2114,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**  
+<a href="" id="internetexplorer-allowsuggestedsites"></a>**InternetExplorer/AllowSuggestedSites**
 
 <!--SupportedSKUs-->
 
@@ -2152,7 +2152,7 @@ If you do not configure this policy setting, the user can turn on and turn off t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Suggested Sites*
 -   GP name: *EnableSuggestedSites*
 -   GP path: *Windows Components/Internet Explorer*
@@ -2164,7 +2164,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowtrustedsiteszonetemplate"></a>**InternetExplorer/AllowTrustedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -2208,7 +2208,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Trusted Sites Zone Template*
 -   GP name: *IZ_PolicyTrustedSitesZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2220,7 +2220,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowslockeddowntrustedsiteszonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowslockeddowntrustedsiteszonetemplate"></a>**InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -2264,7 +2264,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Locked-Down Trusted Sites Zone Template*
 -   GP name: *IZ_PolicyTrustedSitesZoneLockdownTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2276,7 +2276,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-allowsrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowsRestrictedSitesZoneTemplate**  
+<a href="" id="internetexplorer-allowsrestrictedsiteszonetemplate"></a>**InternetExplorer/AllowsRestrictedSitesZoneTemplate**
 
 <!--SupportedSKUs-->
 
@@ -2320,7 +2320,7 @@ If you do not configure this template policy setting, no security level is confi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restricted Sites Zone Template*
 -   GP name: *IZ_PolicyRestrictedSitesZoneTemplate*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -2332,7 +2332,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-checkservercertificaterevocation"></a>**InternetExplorer/CheckServerCertificateRevocation**  
+<a href="" id="internetexplorer-checkservercertificaterevocation"></a>**InternetExplorer/CheckServerCertificateRevocation**
 
 <!--SupportedSKUs-->
 
@@ -2370,7 +2370,7 @@ If you do not configure this policy setting, Internet Explorer will not check se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Check for server certificate revocation*
 -   GP name: *Advanced_CertificateRevocation*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -2382,7 +2382,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-checksignaturesondownloadedprograms"></a>**InternetExplorer/CheckSignaturesOnDownloadedPrograms**  
+<a href="" id="internetexplorer-checksignaturesondownloadedprograms"></a>**InternetExplorer/CheckSignaturesOnDownloadedPrograms**
 
 <!--SupportedSKUs-->
 
@@ -2420,7 +2420,7 @@ If you do not configure this policy, Internet Explorer will not check the digita
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Check for signatures on downloaded programs*
 -   GP name: *Advanced_DownloadSignatures*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -2431,7 +2431,7 @@ ADMX Info:
 
 <hr/>
 
-<a href="" id="internetexplorer-configureedgeredirectchannel"></a>**InternetExplorer/ConfigureEdgeRedirectChannel**  
+<a href="" id="internetexplorer-configureedgeredirectchannel"></a>**InternetExplorer/ConfigureEdgeRedirectChannel**
 
 <!--SupportedSKUs-->
 
@@ -2487,7 +2487,7 @@ If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure which channel of Microsoft Edge to use for opening redirected sites*
 -   GP name: *NeedEdgeBrowser*
 -   GP path: *Windows Components/Internet Explorer*
@@ -2701,7 +2701,7 @@ ADMX Info:
     </policy>
 ```
 <!--Policy-->
-<a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**  
+<a href="" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses"></a>**InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -2741,7 +2741,7 @@ If you do not configure this policy setting, Internet Explorer requires consiste
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_5*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Consistent Mime Handling*
@@ -2753,7 +2753,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableactivexversionlistautodownload"></a>**InternetExplorer/DisableActiveXVersionListAutoDownload**  
+<a href="" id="internetexplorer-disableactivexversionlistautodownload"></a>**InternetExplorer/DisableActiveXVersionListAutoDownload**
 
 <!--SupportedSKUs-->
 
@@ -2789,7 +2789,7 @@ If you disable or do not configure this setting, IE continues to download update
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off automatic download of the ActiveX VersionList*
 -   GP name: *VersionListAutomaticDownloadDisable*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -2797,7 +2797,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Enabled
 -   1 - Disabled (Default)
 <!--/SupportedValues-->
@@ -2812,7 +2812,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**  
+<a href="" id="internetexplorer-disableadobeflash"></a>**InternetExplorer/DisableAdobeFlash**
 
 <!--SupportedSKUs-->
 
@@ -2850,7 +2850,7 @@ Note that Adobe Flash can still be disabled through the "Add-on List" and "Deny 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Adobe Flash in Internet Explorer and prevent applications from using Internet Explorer technology to instantiate Flash objects*
 -   GP name: *DisableFlashInIE*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -2862,7 +2862,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**  
+<a href="" id="internetexplorer-disablebypassofsmartscreenwarnings"></a>**InternetExplorer/DisableBypassOfSmartScreenWarnings**
 
 <!--SupportedSKUs-->
 
@@ -2898,7 +2898,7 @@ If you disable or do not configure this policy setting, the user can bypass Wind
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent bypassing SmartScreen Filter warnings*
 -   GP name: *DisableSafetyFilterOverride*
 -   GP path: *Windows Components/Internet Explorer*
@@ -2910,7 +2910,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**  
+<a href="" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles"></a>**InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles**
 
 <!--SupportedSKUs-->
 
@@ -2946,7 +2946,7 @@ If you disable or do not configure this policy setting, the user can bypass Wind
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet*
 -   GP name: *DisableSafetyFilterOverrideForAppRepUnknown*
 -   GP path: *Windows Components/Internet Explorer*
@@ -2958,7 +2958,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablecompatview"></a>**InternetExplorer/DisableCompatView**  
+<a href="" id="internetexplorer-disablecompatview"></a>**InternetExplorer/DisableCompatView**
 
 <!--SupportedSKUs-->
 
@@ -2994,7 +2994,7 @@ If you disable or do not configure this policy setting, the user can use the Com
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Compatibility View*
 -   GP name: *CompatView_DisableList*
 -   GP path: *Windows Components/Internet Explorer/Compatibility View*
@@ -3002,7 +3002,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Disabled (Default)
 -   1 - Enabled
 <!--/SupportedValues-->
@@ -3017,7 +3017,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableconfiguringhistory"></a>**InternetExplorer/DisableConfiguringHistory**  
+<a href="" id="internetexplorer-disableconfiguringhistory"></a>**InternetExplorer/DisableConfiguringHistory**
 
 <!--SupportedSKUs-->
 
@@ -3056,7 +3056,7 @@ If you disable or do not configure this policy setting, a user can set the numbe
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable "Configuring History"*
 -   GP name: *RestrictHistory*
 -   GP path: *Windows Components/Internet Explorer/Delete Browsing History*
@@ -3068,7 +3068,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablecrashdetection"></a>**InternetExplorer/DisableCrashDetection**  
+<a href="" id="internetexplorer-disablecrashdetection"></a>**InternetExplorer/DisableCrashDetection**
 
 <!--SupportedSKUs-->
 
@@ -3104,7 +3104,7 @@ If you disable or do not configure this policy setting, the crash detection feat
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Crash Detection*
 -   GP name: *AddonManagement_RestrictCrashDetection*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3116,7 +3116,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**  
+<a href="" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation"></a>**InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation**
 
 <!--SupportedSKUs-->
 
@@ -3154,7 +3154,7 @@ If you do not configure this policy setting, the user can choose to participate 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent participation in the Customer Experience Improvement Program*
 -   GP name: *SQM_DisableCEIP*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3166,7 +3166,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disabledeletinguservisitedwebsites"></a>**InternetExplorer/DisableDeletingUserVisitedWebsites**  
+<a href="" id="internetexplorer-disabledeletinguservisitedwebsites"></a>**InternetExplorer/DisableDeletingUserVisitedWebsites**
 
 <!--SupportedSKUs-->
 
@@ -3206,7 +3206,7 @@ If the "Prevent access to Delete Browsing History" policy setting is enabled, th
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent deleting websites that the user has visited*
 -   GP name: *DBHDisableDeleteHistory*
 -   GP path: *Windows Components/Internet Explorer/Delete Browsing History*
@@ -3218,7 +3218,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**  
+<a href="" id="internetexplorer-disableenclosuredownloading"></a>**InternetExplorer/DisableEnclosureDownloading**
 
 <!--SupportedSKUs-->
 
@@ -3254,7 +3254,7 @@ If you disable or do not configure this policy setting, the user can set the Fee
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent downloading of enclosures*
 -   GP name: *Disable_Downloading_of_Enclosures*
 -   GP path: *Windows Components/RSS Feeds*
@@ -3266,7 +3266,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**  
+<a href="" id="internetexplorer-disableencryptionsupport"></a>**InternetExplorer/DisableEncryptionSupport**
 
 <!--SupportedSKUs-->
 
@@ -3305,7 +3305,7 @@ If you disable or do not configure this policy setting, the user can select whic
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off encryption support*
 -   GP name: *Advanced_SetWinInetProtocols*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -3317,7 +3317,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablefeedsbackgroundsync"></a>**InternetExplorer/DisableFeedsBackgroundSync**  
+<a href="" id="internetexplorer-disablefeedsbackgroundsync"></a>**InternetExplorer/DisableFeedsBackgroundSync**
 
 <!--SupportedSKUs-->
 
@@ -3353,7 +3353,7 @@ If you disable or do not configure this policy setting, the user can synchronize
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off background synchronization for feeds and Web Slices*
 -   GP name: *Disable_Background_Syncing*
 -   GP path: *Windows Components/RSS Feeds*
@@ -3361,7 +3361,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Enabled (Default)
 -   1 - Disabled
 <!--/SupportedValues-->
@@ -3376,7 +3376,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**  
+<a href="" id="internetexplorer-disablefirstrunwizard"></a>**InternetExplorer/DisableFirstRunWizard**
 
 <!--SupportedSKUs-->
 
@@ -3416,7 +3416,7 @@ If you disable or do not configure this policy setting, Internet Explorer may ru
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent running First Run wizard*
 -   GP name: *NoFirstRunCustomise*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3428,7 +3428,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**  
+<a href="" id="internetexplorer-disableflipaheadfeature"></a>**InternetExplorer/DisableFlipAheadFeature**
 
 <!--SupportedSKUs-->
 
@@ -3468,7 +3468,7 @@ If you don't configure this setting, users can turn this behavior on or off, usi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the flip ahead with page prediction feature*
 -   GP name: *Advanced_DisableFlipAhead*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -3480,7 +3480,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablegeolocation"></a>**InternetExplorer/DisableGeolocation**  
+<a href="" id="internetexplorer-disablegeolocation"></a>**InternetExplorer/DisableGeolocation**
 
 <!--SupportedSKUs-->
 
@@ -3518,7 +3518,7 @@ If you do not configure this policy setting, browser geolocation support can be 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off browser geolocation*
 -   GP name: *GeolocationDisable*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3526,7 +3526,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - Disabled (Default)
 -   1 - Enabled
 <!--/SupportedValues-->
@@ -3541,7 +3541,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**  
+<a href="" id="internetexplorer-disablehomepagechange"></a>**InternetExplorer/DisableHomePageChange**
 
 <!--SupportedSKUs-->
 
@@ -3576,7 +3576,7 @@ If you disable or do not configure this policy setting, the Home page box is ena
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable changing home page settings*
 -   GP name: *RestrictHomePage*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3586,7 +3586,7 @@ ADMX Info:
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableinternetexplorerapp"></a>**InternetExplorer/DisableInternetExplorerApp**  
+<a href="" id="internetexplorer-disableinternetexplorerapp"></a>**InternetExplorer/DisableInternetExplorerApp**
 
 <!--SupportedSKUs-->
 
@@ -3629,7 +3629,7 @@ If you disable, or do not configure this policy, all sites are opened using the 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable Internet Explorer 11 as a standalone browser*
 -   GP name: *DisableInternetExplorerApp*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3659,7 +3659,7 @@ ADMX Info:
     </policy>
 ```
 <!--Policy-->
-<a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**  
+<a href="" id="internetexplorer-disableignoringcertificateerrors"></a>**InternetExplorer/DisableIgnoringCertificateErrors**
 
 <!--SupportedSKUs-->
 
@@ -3695,7 +3695,7 @@ If you disable or do not configure this policy setting, the user can choose to i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent ignoring certificate errors*
 -   GP name: *NoCertError*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel*
@@ -3707,7 +3707,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableinprivatebrowsing"></a>**InternetExplorer/DisableInPrivateBrowsing**  
+<a href="" id="internetexplorer-disableinprivatebrowsing"></a>**InternetExplorer/DisableInPrivateBrowsing**
 
 <!--SupportedSKUs-->
 
@@ -3747,7 +3747,7 @@ If you do not configure this policy setting, InPrivate Browsing can be turned on
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off InPrivate Browsing*
 -   GP name: *DisableInPrivateBrowsing*
 -   GP path: *Windows Components/Internet Explorer/Privacy*
@@ -3759,7 +3759,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableprocessesinenhancedprotectedmode"></a>**InternetExplorer/DisableProcessesInEnhancedProtectedMode**  
+<a href="" id="internetexplorer-disableprocessesinenhancedprotectedmode"></a>**InternetExplorer/DisableProcessesInEnhancedProtectedMode**
 
 <!--SupportedSKUs-->
 
@@ -3800,7 +3800,7 @@ If you don't configure this policy setting, users can turn this feature on or of
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows*
 -   GP name: *Advanced_EnableEnhancedProtectedMode64Bit*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -3812,7 +3812,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**  
+<a href="" id="internetexplorer-disableproxychange"></a>**InternetExplorer/DisableProxyChange**
 
 <!--SupportedSKUs-->
 
@@ -3848,7 +3848,7 @@ If you disable or do not configure this policy setting, the user can configure p
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing proxy settings*
 -   GP name: *RestrictProxy*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3860,7 +3860,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**  
+<a href="" id="internetexplorer-disablesearchproviderchange"></a>**InternetExplorer/DisableSearchProviderChange**
 
 <!--SupportedSKUs-->
 
@@ -3896,7 +3896,7 @@ If you disable or do not configure this policy setting, the user can change the 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing the default search provider*
 -   GP name: *NoSearchProvider*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3908,7 +3908,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**  
+<a href="" id="internetexplorer-disablesecondaryhomepagechange"></a>**InternetExplorer/DisableSecondaryHomePageChange**
 
 <!--SupportedSKUs-->
 
@@ -3947,7 +3947,7 @@ If you disable or do not configure this policy setting, the user can add seconda
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable changing secondary home page settings*
 -   GP name: *SecondaryHomePages*
 -   GP path: *Windows Components/Internet Explorer*
@@ -3959,7 +3959,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablesecuritysettingscheck"></a>**InternetExplorer/DisableSecuritySettingsCheck**  
+<a href="" id="internetexplorer-disablesecuritysettingscheck"></a>**InternetExplorer/DisableSecuritySettingsCheck**
 
 <!--SupportedSKUs-->
 
@@ -3995,7 +3995,7 @@ If you disable or do not configure this policy setting, the feature is turned on
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the Security Settings Check feature*
 -   GP name: *Disable_Security_Settings_Check*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4007,7 +4007,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**  
+<a href="" id="internetexplorer-disableupdatecheck"></a>**InternetExplorer/DisableUpdateCheck**
 
 <!--SupportedSKUs-->
 
@@ -4044,7 +4044,7 @@ This policy is intended to help the administrator maintain version control for I
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable Periodic Check for Internet Explorer software updates*
 -   GP name: *NoUpdateCheck*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4056,7 +4056,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disablewebaddressautocomplete"></a>**InternetExplorer/DisableWebAddressAutoComplete**  
+<a href="" id="internetexplorer-disablewebaddressautocomplete"></a>**InternetExplorer/DisableWebAddressAutoComplete**
 
 <!--SupportedSKUs-->
 
@@ -4094,7 +4094,7 @@ If you do not configure this policy setting, users can choose to turn the auto-c
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the auto-complete feature for web addresses*
 -   GP name: *RestrictWebAddressSuggest*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4102,7 +4102,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   yes - Disabled (Default)
 -   no  - Enabled
 <!--/SupportedValues-->
@@ -4117,7 +4117,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotallowactivexcontrolsinprotectedmode"></a>**InternetExplorer/DoNotAllowActiveXControlsInProtectedMode**  
+<a href="" id="internetexplorer-donotallowactivexcontrolsinprotectedmode"></a>**InternetExplorer/DoNotAllowActiveXControlsInProtectedMode**
 
 <!--SupportedSKUs-->
 
@@ -4157,7 +4157,7 @@ If you disable or do not configure this policy setting, Internet Explorer notifi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow ActiveX controls to run in Protected Mode when Enhanced Protected Mode is enabled*
 -   GP name: *Advanced_DisableEPMCompat*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Advanced Page*
@@ -4169,7 +4169,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**  
+<a href="" id="internetexplorer-donotallowuserstoaddsites"></a>**InternetExplorer/DoNotAllowUsersToAddSites**
 
 <!--SupportedSKUs-->
 
@@ -4211,7 +4211,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Zones: Do not allow users to add/delete sites*
 -   GP name: *Security_zones_map_edit*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4223,7 +4223,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**  
+<a href="" id="internetexplorer-donotallowuserstochangepolicies"></a>**InternetExplorer/DoNotAllowUsersToChangePolicies**
 
 <!--SupportedSKUs-->
 
@@ -4265,7 +4265,7 @@ Also, see the "Security zones: Use only machine settings" policy.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Zones: Do not allow users to change policies*
 -   GP name: *Security_options_edit*
 -   GP path: *Windows Components/Internet Explorer*
@@ -4277,7 +4277,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**  
+<a href="" id="internetexplorer-donotblockoutdatedactivexcontrols"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -4315,7 +4315,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off blocking of outdated ActiveX controls for Internet Explorer*
 -   GP name: *VerMgmtDisable*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -4327,7 +4327,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains**  
+<a href="" id="internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains"></a>**InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains**
 
 <!--SupportedSKUs-->
 
@@ -4369,7 +4369,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off blocking of outdated ActiveX controls for Internet Explorer on specific domains*
 -   GP name: *VerMgmtDomainAllowlist*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -4381,7 +4381,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-enableextendediemodehotkeys"></a>**InternetExplorer/EnableExtendedIEModeHotkeys**  
+<a href="" id="internetexplorer-enableextendediemodehotkeys"></a>**InternetExplorer/EnableExtendedIEModeHotkeys**
 
 <!--SupportedSKUs-->
 
@@ -4423,7 +4423,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable extended hot keys in Internet Explorer mode*
 -   GP name: *EnableExtendedIEModeHotkeys*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -4435,7 +4435,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-enableglobalwindowlistiniemode"></a>**InternetExplorer/EnableGlobalWindowListInIEMode**  
+<a href="" id="internetexplorer-enableglobalwindowlistiniemode"></a>**InternetExplorer/EnableGlobalWindowListInIEMode**
 
 <!--SupportedSKUs-->
 
@@ -4478,7 +4478,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable global window list in Internet Explorer mode*
 -   GP name: *EnableGlobalWindowListInIEMode*
 -   GP path: *Windows Components/Internet Explorer/Main*
@@ -4490,7 +4490,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-disableieappdeprecationnotification"></a>**InternetExplorer/HideInternetExplorer11RetirementNotification**  
+<a href="" id="internetexplorer-disableieappdeprecationnotification"></a>**InternetExplorer/HideInternetExplorer11RetirementNotification**
 
 <!--SupportedSKUs-->
 
@@ -4532,7 +4532,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Internet Explorer 11 retirement notification*
 -   GP name: *DisableIEAppDeprecationNotification*
 -   GP path: *Windows Components/Internet Explorer/Main*
@@ -4543,7 +4543,7 @@ ADMX Info:
 
 <hr/>
 <!--Policy-->
-<a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**  
+<a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**
 
 <!--SupportedSKUs-->
 
@@ -4581,7 +4581,7 @@ If you do not configure this policy setting, users choose whether to force local
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Intranet Sites: Include all local (intranet) sites not listed in other zones*
 -   GP name: *IZ_IncludeUnspecifiedLocalSites*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -4593,7 +4593,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**  
+<a href="" id="internetexplorer-includeallnetworkpaths"></a>**InternetExplorer/IncludeAllNetworkPaths**
 
 <!--SupportedSKUs-->
 
@@ -4631,7 +4631,7 @@ If you do not configure this policy setting, users choose whether network paths 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Intranet Sites: Include all network paths (UNCs)*
 -   GP name: *IZ_UNCAsIntranet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page*
@@ -4643,7 +4643,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-internetzoneallowaccesstodatasources"></a>**InternetExplorer/InternetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -4681,7 +4681,7 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4693,7 +4693,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -4731,7 +4731,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4743,7 +4743,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -4779,7 +4779,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4791,7 +4791,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowcopypasteviascript"></a>**InternetExplorer/InternetZoneAllowCopyPasteViaScript**  
+<a href="" id="internetexplorer-internetzoneallowcopypasteviascript"></a>**InternetExplorer/InternetZoneAllowCopyPasteViaScript**
 
 <!--SupportedSKUs-->
 
@@ -4831,7 +4831,7 @@ If you do not configure this policy setting, a script can perform a clipboard op
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow cut, copy or paste operations from the clipboard via script*
 -   GP name: *IZ_PolicyAllowPasteViaScript_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4843,7 +4843,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles**  
+<a href="" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles**
 
 <!--SupportedSKUs-->
 
@@ -4881,7 +4881,7 @@ If you do not configure this policy setting, users can drag files or copy and pa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow drag and drop or copy and paste files*
 -   GP name: *IZ_PolicyDropOrPasteFiles_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4893,7 +4893,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-internetzoneallowfontdownloads"></a>**InternetExplorer/InternetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -4931,7 +4931,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4943,7 +4943,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-internetzoneallowlessprivilegedsites"></a>**InternetExplorer/InternetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -4981,7 +4981,7 @@ If you do not configure this policy setting, Web sites from less privileged zone
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -4993,7 +4993,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowloadingofxamlfiles"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles**  
+<a href="" id="internetexplorer-internetzoneallowloadingofxamlfiles"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles**
 
 <!--SupportedSKUs-->
 
@@ -5031,7 +5031,7 @@ If you do not configure this policy setting, the user can decide whether to load
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow loading of XAML files*
 -   GP name: *IZ_Policy_XAML_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5043,7 +5043,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -5081,7 +5081,7 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5093,7 +5093,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
+<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -5129,7 +5129,7 @@ If you disable this policy setting, the user does not see the per-site ActiveX p
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only approved domains to use ActiveX controls without prompt*
 -   GP name: *IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5141,7 +5141,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
+<a href="" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**
 
 <!--SupportedSKUs-->
 
@@ -5177,7 +5177,7 @@ If you disable this policy setting, the TDC Active X control will run from all s
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only approved domains to use the TDC ActiveX control*
 -   GP name: *IZ_PolicyAllowTDCControl_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5189,7 +5189,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowscriptinitiatedwindows"></a>**InternetExplorer/InternetZoneAllowScriptInitiatedWindows**  
+<a href="" id="internetexplorer-internetzoneallowscriptinitiatedwindows"></a>**InternetExplorer/InternetZoneAllowScriptInitiatedWindows**
 
 <!--SupportedSKUs-->
 
@@ -5227,7 +5227,7 @@ If you do not configure this policy setting, the possible harmful actions contai
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow script-initiated windows without size or position constraints*
 -   GP name: *IZ_PolicyWindowsRestrictionsURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5239,7 +5239,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
+<a href="" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls**
 
 <!--SupportedSKUs-->
 
@@ -5277,7 +5277,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scripting of Internet Explorer WebBrowser controls*
 -   GP name: *IZ_Policy_WebBrowserControl_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5289,7 +5289,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-internetzoneallowscriptlets"></a>**InternetExplorer/InternetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -5327,7 +5327,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5339,7 +5339,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-internetzoneallowsmartscreenie"></a>**InternetExplorer/InternetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -5380,7 +5380,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5392,7 +5392,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowupdatestostatusbarviascript"></a>**InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript**  
+<a href="" id="internetexplorer-internetzoneallowupdatestostatusbarviascript"></a>**InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript**
 
 <!--SupportedSKUs-->
 
@@ -5428,7 +5428,7 @@ If you disable or do not configure this policy setting, script is not allowed to
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow updates to status bar via script*
 -   GP name: *IZ_Policy_ScriptStatusBar_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5440,7 +5440,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-internetzoneallowuserdatapersistence"></a>**InternetExplorer/InternetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -5478,7 +5478,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5490,7 +5490,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer**  
+<a href="" id="internetexplorer-internetzoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/InternetZoneAllowVBScriptToRunInInternetExplorer**
 
 <!--SupportedSKUs-->
 
@@ -5530,7 +5530,7 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow VBScript to run in Internet Explorer*
 -   GP name: *IZ_PolicyAllowVBScript_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5542,7 +5542,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -5580,7 +5580,7 @@ If you don't configure this policy setting, Internet Explorer always checks with
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5592,7 +5592,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**  
+<a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -5630,7 +5630,7 @@ If you do not configure this policy setting, users are queried whether to downlo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Download signed ActiveX controls*
 -   GP name: *IZ_PolicyDownloadSignedActiveX_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5642,7 +5642,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonedownloadunsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadUnsignedActiveXControls**  
+<a href="" id="internetexplorer-internetzonedownloadunsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadUnsignedActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -5680,7 +5680,7 @@ If you do not configure this policy setting, users cannot run unsigned controls.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Download unsigned ActiveX controls*
 -   GP name: *IZ_PolicyDownloadUnsignedActiveX_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5692,7 +5692,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenablecrosssitescriptingfilter"></a>**InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter**  
+<a href="" id="internetexplorer-internetzoneenablecrosssitescriptingfilter"></a>**InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter**
 
 <!--SupportedSKUs-->
 
@@ -5728,7 +5728,7 @@ If you disable this policy setting, the XSS Filter is turned off for sites in th
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Cross-Site Scripting Filter*
 -   GP name: *IZ_PolicyTurnOnXSSFilter_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5740,7 +5740,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
+<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**
 
 <!--SupportedSKUs-->
 
@@ -5780,7 +5780,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable dragging of content from different domains across windows*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5792,7 +5792,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
+<a href="" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**
 
 <!--SupportedSKUs-->
 
@@ -5832,7 +5832,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable dragging of content from different domains within a window*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5844,7 +5844,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenablemimesniffing"></a>**InternetExplorer/InternetZoneEnableMIMESniffing**  
+<a href="" id="internetexplorer-internetzoneenablemimesniffing"></a>**InternetExplorer/InternetZoneEnableMIMESniffing**
 
 <!--SupportedSKUs-->
 
@@ -5882,7 +5882,7 @@ If you do not configure this policy setting, the MIME Sniffing Safety Feature wi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable MIME Sniffing*
 -   GP name: *IZ_PolicyMimeSniffingURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5894,7 +5894,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneenableprotectedmode"></a>**InternetExplorer/InternetZoneEnableProtectedMode**  
+<a href="" id="internetexplorer-internetzoneenableprotectedmode"></a>**InternetExplorer/InternetZoneEnableProtectedMode**
 
 <!--SupportedSKUs-->
 
@@ -5932,7 +5932,7 @@ If you do not configure this policy setting, the user can turn on or turn off Pr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Protected Mode*
 -   GP name: *IZ_Policy_TurnOnProtectedMode_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5944,7 +5944,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer**  
+<a href="" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer**
 
 <!--SupportedSKUs-->
 
@@ -5982,7 +5982,7 @@ If you do not configure this policy setting, the user can choose whether path in
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Include local path when user is uploading files to a server*
 -   GP name: *IZ_Policy_LocalPathForUpload_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -5994,7 +5994,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -6034,7 +6034,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6046,7 +6046,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**  
+<a href="" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -6069,7 +6069,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonejavapermissions"></a>**InternetExplorer/InternetZoneJavaPermissions**  
+<a href="" id="internetexplorer-internetzonejavapermissions"></a>**InternetExplorer/InternetZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -6113,7 +6113,7 @@ If you do not configure this policy setting, the permission is set to High Safet
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6125,7 +6125,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**  
+<a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**
 
 <!--SupportedSKUs-->
 
@@ -6163,7 +6163,7 @@ If you do not configure this policy setting, users are queried to choose whether
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Launching applications and files in an IFRAME*
 -   GP name: *IZ_PolicyLaunchAppsAndFilesInIFRAME_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6175,7 +6175,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonelogonoptions"></a>**InternetExplorer/InternetZoneLogonOptions**  
+<a href="" id="internetexplorer-internetzonelogonoptions"></a>**InternetExplorer/InternetZoneLogonOptions**
 
 <!--SupportedSKUs-->
 
@@ -6221,7 +6221,7 @@ If you do not configure this policy setting, logon is set to Automatic logon onl
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Logon options*
 -   GP name: *IZ_PolicyLogon_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6233,7 +6233,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-internetzonenavigatewindowsandframes"></a>**InternetExplorer/InternetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -6271,7 +6271,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6283,7 +6283,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
+<a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**
 
 <!--SupportedSKUs-->
 
@@ -6321,7 +6321,7 @@ If you do not configure this policy setting, Internet Explorer will execute sign
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components signed with Authenticode*
 -   GP name: *IZ_PolicySignedFrameworkComponentsURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6333,7 +6333,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
+<a href="" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles**
 
 <!--SupportedSKUs-->
 
@@ -6371,7 +6371,7 @@ If you do not configure this policy setting, the user can configure how the comp
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show security warning for potentially unsafe files*
 -   GP name: *IZ_Policy_UnsafeFiles_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6383,7 +6383,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-internetzoneusepopupblocker"></a>**InternetExplorer/InternetZoneUsePopupBlocker**  
+<a href="" id="internetexplorer-internetzoneusepopupblocker"></a>**InternetExplorer/InternetZoneUsePopupBlocker**
 
 <!--SupportedSKUs-->
 
@@ -6421,7 +6421,7 @@ If you do not configure this policy setting, most unwanted pop-up windows are pr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use Pop-up Blocker*
 -   GP name: *IZ_PolicyBlockPopupWindows_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
@@ -6433,7 +6433,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-intranetzoneallowaccesstodatasources"></a>**InternetExplorer/IntranetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -6471,7 +6471,7 @@ If you do not configure this policy setting, users are queried to choose, whethe
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6483,7 +6483,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -6521,7 +6521,7 @@ If you do not configure this policy setting, users will receive a prompt when a 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6533,7 +6533,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -6569,7 +6569,7 @@ If you disable or do not configure this setting, users will receive a file downl
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6581,7 +6581,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-intranetzoneallowfontdownloads"></a>**InternetExplorer/IntranetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -6619,7 +6619,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6631,7 +6631,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-intranetzoneallowlessprivilegedsites"></a>**InternetExplorer/IntranetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -6669,7 +6669,7 @@ If you do not configure this policy setting, Web sites from less privileged zone
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6681,7 +6681,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-intranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/IntranetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -6719,7 +6719,7 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6731,7 +6731,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-intranetzoneallowscriptlets"></a>**InternetExplorer/IntranetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -6769,7 +6769,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6781,7 +6781,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-intranetzoneallowsmartscreenie"></a>**InternetExplorer/IntranetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -6822,7 +6822,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6834,7 +6834,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-intranetzoneallowuserdatapersistence"></a>**InternetExplorer/IntranetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -6872,7 +6872,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6884,7 +6884,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -6922,7 +6922,7 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6934,7 +6934,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -6974,7 +6974,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -6986,7 +6986,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzonejavapermissions"></a>**InternetExplorer/IntranetZoneJavaPermissions**  
+<a href="" id="internetexplorer-intranetzonejavapermissions"></a>**InternetExplorer/IntranetZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -7030,7 +7030,7 @@ If you do not configure this policy setting, the permission is set to Medium Saf
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -7042,7 +7042,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-intranetzonenavigatewindowsandframes"></a>**InternetExplorer/IntranetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -7080,7 +7080,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_3*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
@@ -7092,7 +7092,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-keepintranetsitesininternetexplorer"></a>**InternetExplorer/KeepIntranetSitesInInternetExplorer**  
+<a href="" id="internetexplorer-keepintranetsitesininternetexplorer"></a>**InternetExplorer/KeepIntranetSitesInInternetExplorer**
 
 <!--SupportedSKUs-->
 
@@ -7138,7 +7138,7 @@ For more information on how to use this policy together with other related polic
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Keep all Intranet Sites in Internet Explorer*
 -   GP name: *KeepIntranetSitesInInternetExplorer*
 -   GP path: *Windows Components/Internet Explorer*
@@ -7168,7 +7168,7 @@ ADMX Info:
     </policy>
 ```
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-localmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LocalMachineZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -7206,7 +7206,7 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7218,7 +7218,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -7256,7 +7256,7 @@ If you do not configure this policy setting, users will receive a prompt when a 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7268,7 +7268,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-localmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -7304,7 +7304,7 @@ If you disable or do not configure this setting, users will receive a file downl
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7316,7 +7316,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-localmachinezoneallowfontdownloads"></a>**InternetExplorer/LocalMachineZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -7354,7 +7354,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7366,7 +7366,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-localmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LocalMachineZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -7404,7 +7404,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7416,7 +7416,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-localmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LocalMachineZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -7454,7 +7454,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7466,7 +7466,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**  
+<a href="" id="internetexplorer-localmachinezoneallowscriptlets"></a>**InternetExplorer/LocalMachineZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -7504,7 +7504,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7516,7 +7516,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-localmachinezoneallowsmartscreenie"></a>**InternetExplorer/LocalMachineZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -7557,7 +7557,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7569,7 +7569,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-localmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LocalMachineZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -7607,7 +7607,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7619,7 +7619,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -7657,7 +7657,7 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7669,7 +7669,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -7709,7 +7709,7 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7721,7 +7721,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezonejavapermissions"></a>**InternetExplorer/LocalMachineZoneJavaPermissions**  
+<a href="" id="internetexplorer-localmachinezonejavapermissions"></a>**InternetExplorer/LocalMachineZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -7765,7 +7765,7 @@ If you do not configure this policy setting, the permission is set to Medium Saf
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7777,7 +7777,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-localmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -7815,7 +7815,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_9*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Local Machine Zone*
@@ -7827,7 +7827,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -7865,7 +7865,7 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -7877,7 +7877,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -7915,7 +7915,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -7927,7 +7927,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -7963,7 +7963,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -7975,7 +7975,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownInternetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -8013,7 +8013,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8025,7 +8025,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownInternetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -8063,7 +8063,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8075,7 +8075,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownInternetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -8113,7 +8113,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8125,7 +8125,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowscriptlets"></a>**InternetExplorer/LockedDownInternetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -8163,7 +8163,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8175,7 +8175,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -8216,7 +8216,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8228,7 +8228,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddowninternetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -8266,7 +8266,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8278,7 +8278,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -8318,7 +8318,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8330,7 +8330,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzonejavapermissions"></a>**InternetExplorer/LockedDownInternetZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddowninternetzonejavapermissions"></a>**InternetExplorer/LockedDownInternetZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -8374,7 +8374,7 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8386,7 +8386,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -8424,7 +8424,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_2*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Internet Zone*
@@ -8436,7 +8436,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetjavapermissions"></a>**InternetExplorer/LockedDownIntranetJavaPermissions**  
+<a href="" id="internetexplorer-lockeddownintranetjavapermissions"></a>**InternetExplorer/LockedDownIntranetJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -8480,7 +8480,7 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8492,7 +8492,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -8530,7 +8530,7 @@ If you do not configure this policy setting, users are queried to choose, whethe
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8542,7 +8542,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -8580,7 +8580,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8592,7 +8592,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -8628,7 +8628,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8640,7 +8640,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowfontdownloads"></a>**InternetExplorer/LockedDownIntranetZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -8678,7 +8678,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8690,7 +8690,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownIntranetZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -8728,7 +8728,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8740,7 +8740,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownIntranetZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -8778,7 +8778,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8790,7 +8790,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowscriptlets"></a>**InternetExplorer/LockedDownIntranetZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -8828,7 +8828,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8840,7 +8840,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowsmartscreenie"></a>**InternetExplorer/LockedDownIntranetZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -8881,7 +8881,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8893,7 +8893,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddownintranetzoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownIntranetZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -8931,7 +8931,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8943,7 +8943,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddownintranetzoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownIntranetZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -8983,7 +8983,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -8995,7 +8995,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddownintranetzonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownIntranetZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -9033,7 +9033,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_4*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Intranet Zone*
@@ -9045,7 +9045,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -9083,7 +9083,7 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9095,7 +9095,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -9133,7 +9133,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9145,7 +9145,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -9181,7 +9181,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9193,7 +9193,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowfontdownloads"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -9231,7 +9231,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9243,7 +9243,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -9281,7 +9281,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9293,7 +9293,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -9331,7 +9331,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9343,7 +9343,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowscriptlets"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -9381,7 +9381,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9393,7 +9393,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -9434,7 +9434,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9446,7 +9446,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -9484,7 +9484,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9496,7 +9496,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -9536,7 +9536,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9548,7 +9548,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezonejavapermissions"></a>**InternetExplorer/LockedDownLocalMachineZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezonejavapermissions"></a>**InternetExplorer/LockedDownLocalMachineZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -9592,7 +9592,7 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9604,7 +9604,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -9642,7 +9642,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_10*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Local Machine Zone*
@@ -9654,7 +9654,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -9692,7 +9692,7 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -9704,7 +9704,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -9742,7 +9742,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -9754,7 +9754,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -9790,7 +9790,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -9802,7 +9802,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -9840,7 +9840,7 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -9852,7 +9852,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -9890,7 +9890,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -9902,7 +9902,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -9940,7 +9940,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -9952,7 +9952,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -9990,7 +9990,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -10002,7 +10002,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -10043,7 +10043,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -10055,7 +10055,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -10093,7 +10093,7 @@ If you do not configure this policy setting, users cannot preserve information i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -10105,7 +10105,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -10145,7 +10145,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -10157,7 +10157,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -10201,7 +10201,7 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -10213,7 +10213,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -10251,7 +10251,7 @@ If you do not configure this policy setting, users cannot open other windows and
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_8*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Restricted Sites Zone*
@@ -10263,7 +10263,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -10301,7 +10301,7 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10313,7 +10313,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -10351,7 +10351,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10363,7 +10363,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -10399,7 +10399,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10411,7 +10411,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowfontdownloads"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -10449,7 +10449,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10461,7 +10461,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -10499,7 +10499,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10511,7 +10511,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -10549,7 +10549,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10561,7 +10561,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowscriptlets"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -10599,7 +10599,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10611,7 +10611,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -10652,7 +10652,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10664,7 +10664,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -10702,7 +10702,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10714,7 +10714,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -10754,7 +10754,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10766,7 +10766,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions"></a>**InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -10810,7 +10810,7 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10822,7 +10822,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -10860,7 +10860,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_6*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Locked-Down Trusted Sites Zone*
@@ -10872,7 +10872,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses"></a>**InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses**  
+<a href="" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses"></a>**InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -10910,7 +10910,7 @@ If you do not configure this policy setting, the MK Protocol is prevented for Fi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_3*
 -   GP path: *Windows Components/Internet Explorer/Security Features/MK Protocol Security Restriction*
@@ -10922,7 +10922,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses"></a>**InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses**  
+<a href="" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses"></a>**InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -10960,7 +10960,7 @@ If you do not configure this policy setting, MIME sniffing will never promote a 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_6*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Mime Sniffing Safety Feature*
@@ -10972,7 +10972,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-newtabdefaultpage"></a>**InternetExplorer/NewTabDefaultPage**  
+<a href="" id="internetexplorer-newtabdefaultpage"></a>**InternetExplorer/NewTabDefaultPage**
 
 <!--SupportedSKUs-->
 
@@ -11008,7 +11008,7 @@ If you disable or do not configure this policy setting, users can select their p
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify default behavior for a new tab*
 -   GP name: *NewTabAction*
 -   GP path: *Windows Components/Internet Explorer*
@@ -11017,7 +11017,7 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--SupportedValues-->
 
-Supported values:  
+Supported values:
 -   0 - NewTab_AboutBlank (about:blank)
 -   1 - NewTab_Homepage (Home page)
 -   2 - NewTab_AboutTabs (New tab page)
@@ -11034,7 +11034,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**  
+<a href="" id="internetexplorer-notificationbarinternetexplorerprocesses"></a>**InternetExplorer/NotificationBarInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -11072,7 +11072,7 @@ If you do not configure this policy setting, the Notification bar will be displa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_10*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Notification bar*
@@ -11084,7 +11084,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-preventmanagingsmartscreenfilter"></a>**InternetExplorer/PreventManagingSmartScreenFilter**  
+<a href="" id="internetexplorer-preventmanagingsmartscreenfilter"></a>**InternetExplorer/PreventManagingSmartScreenFilter**
 
 <!--SupportedSKUs-->
 
@@ -11120,7 +11120,7 @@ If you disable or do not configure this policy setting, the user is prompted to 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent managing SmartScreen Filter*
 -   GP name: *Disable_Managing_Safety_Filter_IE9*
 -   GP path: *Windows Components/Internet Explorer*
@@ -11132,7 +11132,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-preventperuserinstallationofactivexcontrols"></a>**InternetExplorer/PreventPerUserInstallationOfActiveXControls**  
+<a href="" id="internetexplorer-preventperuserinstallationofactivexcontrols"></a>**InternetExplorer/PreventPerUserInstallationOfActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -11168,7 +11168,7 @@ If you disable or do not configure this policy setting, ActiveX controls can be 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent per-user installation of ActiveX controls*
 -   GP name: *DisablePerUserActiveXInstall*
 -   GP path: *Windows Components/Internet Explorer*
@@ -11180,7 +11180,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses"></a>**InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses**  
+<a href="" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses"></a>**InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -11218,7 +11218,7 @@ If you do not configure this policy setting, any zone can be protected from zone
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_9*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Protection From Zone Elevation*
@@ -11230,7 +11230,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols"></a>**InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls**  
+<a href="" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols"></a>**InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -11268,7 +11268,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer*
 -   GP name: *VerMgmtDisableRunThisTime*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
@@ -11280,7 +11280,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-resetzoomfordialoginiemode"></a>**InternetExplorer/ResetZoomForDialogInIEMode**  
+<a href="" id="internetexplorer-resetzoomfordialoginiemode"></a>**InternetExplorer/ResetZoomForDialogInIEMode**
 
 <!--SupportedSKUs-->
 
@@ -11322,7 +11322,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reset zoom to default for HTML dialogs in Internet Explorer mode*
 -   GP name: *ResetZoomForDialogInIEMode*
 -   GP path: *Windows Components/Internet Explorer/Main*
@@ -11334,7 +11334,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses"></a>**InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses**  
+<a href="" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses"></a>**InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -11372,7 +11372,7 @@ If you do not configure this policy setting, the user's preference will be used 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_11*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Restrict ActiveX Install*
@@ -11384,7 +11384,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses"></a>**InternetExplorer/RestrictFileDownloadInternetExplorerProcesses**  
+<a href="" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses"></a>**InternetExplorer/RestrictFileDownloadInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -11422,7 +11422,7 @@ If you do not configure this policy setting, the user's preference determines wh
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_12*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Restrict File Download*
@@ -11434,7 +11434,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -11472,7 +11472,7 @@ If you do not configure this policy setting, users cannot load a page in the zon
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11484,7 +11484,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowactivescripting"></a>**InternetExplorer/RestrictedSitesZoneAllowActiveScripting**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowactivescripting"></a>**InternetExplorer/RestrictedSitesZoneAllowActiveScripting**
 
 <!--SupportedSKUs-->
 
@@ -11522,7 +11522,7 @@ If you do not configure this policy setting, script code on pages in the zone is
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow active scripting*
 -   GP name: *IZ_PolicyActiveScripting_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11534,7 +11534,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -11572,7 +11572,7 @@ If you do not configure this policy setting, ActiveX control installations will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11584,7 +11584,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -11620,7 +11620,7 @@ If you disable or do not configure this setting, file downloads that are not use
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11632,7 +11632,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors"></a>**InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors"></a>**InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors**
 
 <!--SupportedSKUs-->
 
@@ -11670,7 +11670,7 @@ If you do not configure this policy setting, binary and script behaviors are not
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow binary and script behaviors*
 -   GP name: *IZ_PolicyBinaryBehaviors_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11682,7 +11682,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript**
 
 <!--SupportedSKUs-->
 
@@ -11722,7 +11722,7 @@ If you do not configure this policy setting, a script cannot perform a clipboard
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow cut, copy or paste operations from the clipboard via script*
 -   GP name: *IZ_PolicyAllowPasteViaScript_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11734,7 +11734,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles"></a>**InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles**
 
 <!--SupportedSKUs-->
 
@@ -11772,7 +11772,7 @@ If you do not configure this policy setting, users are queried to choose whether
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow drag and drop or copy and paste files*
 -   GP name: *IZ_PolicyDropOrPasteFiles_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11784,7 +11784,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFileDownloads**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowfiledownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -11822,7 +11822,7 @@ If you do not configure this policy setting, files are prevented from being down
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow file downloads*
 -   GP name: *IZ_PolicyFileDownload_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11834,7 +11834,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloads"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -11872,7 +11872,7 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11884,7 +11884,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -11922,7 +11922,7 @@ If you do not configure this policy setting, the possibly harmful navigations ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11934,7 +11934,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles"></a>**InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles"></a>**InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles**
 
 <!--SupportedSKUs-->
 
@@ -11972,7 +11972,7 @@ If you do not configure this policy setting, the user can decide whether to load
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow loading of XAML files*
 -   GP name: *IZ_Policy_XAML_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -11984,7 +11984,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowmetarefresh"></a>**InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowmetarefresh"></a>**InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH**
 
 <!--SupportedSKUs-->
 
@@ -12022,7 +12022,7 @@ If you do not configure this policy setting, a user's browser that loads a page 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow META REFRESH*
 -   GP name: *IZ_PolicyAllowMETAREFRESH_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12034,7 +12034,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -12072,7 +12072,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12084,7 +12084,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -12120,7 +12120,7 @@ If you disable this policy setting, the user does not see the per-site ActiveX p
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only approved domains to use ActiveX controls without prompt*
 -   GP name: *IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12132,7 +12132,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol"></a>**InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl**
 
 <!--SupportedSKUs-->
 
@@ -12168,7 +12168,7 @@ If you disable this policy setting, the TDC Active X control will run from all s
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only approved domains to use the TDC ActiveX control*
 -   GP name: *IZ_PolicyAllowTDCControl_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12180,7 +12180,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows**
 
 <!--SupportedSKUs-->
 
@@ -12218,7 +12218,7 @@ If you do not configure this policy setting, the possible harmful actions contai
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow script-initiated windows without size or position constraints*
 -   GP name: *IZ_PolicyWindowsRestrictionsURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12230,7 +12230,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls**
 
 <!--SupportedSKUs-->
 
@@ -12268,7 +12268,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scripting of Internet Explorer WebBrowser controls*
 -   GP name: *IZ_Policy_WebBrowserControl_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12280,7 +12280,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowscriptlets"></a>**InternetExplorer/RestrictedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -12318,7 +12318,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12330,7 +12330,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowsmartscreenie"></a>**InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -12371,7 +12371,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12383,7 +12383,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript"></a>**InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript**
 
 <!--SupportedSKUs-->
 
@@ -12419,7 +12419,7 @@ If you disable or do not configure this policy setting, script is not allowed to
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow updates to status bar via script*
 -   GP name: *IZ_Policy_ScriptStatusBar_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12431,7 +12431,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -12469,7 +12469,7 @@ If you do not configure this policy setting, users cannot preserve information i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12481,7 +12481,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer**  
+<a href="" id="internetexplorer-restrictedsiteszoneallowvbscripttorunininternetexplorer"></a>**InternetExplorer/RestrictedSitesZoneAllowVBScriptToRunInInternetExplorer**
 
 <!--SupportedSKUs-->
 
@@ -12521,7 +12521,7 @@ If you do not configure or disable this policy setting, VBScript is prevented fr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow VBScript to run in Internet Explorer*
 -   GP name: *IZ_PolicyAllowVBScript_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12533,7 +12533,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -12571,7 +12571,7 @@ If you don't configure this policy setting, Internet Explorer always checks with
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12583,7 +12583,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -12621,7 +12621,7 @@ If you do not configure this policy setting, signed controls cannot be downloade
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Download signed ActiveX controls*
 -   GP name: *IZ_PolicyDownloadSignedActiveX_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12633,7 +12633,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -12671,7 +12671,7 @@ If you do not configure this policy setting, users cannot run unsigned controls.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Download unsigned ActiveX controls*
 -   GP name: *IZ_PolicyDownloadUnsignedActiveX_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12683,7 +12683,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter**  
+<a href="" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter**
 
 <!--SupportedSKUs-->
 
@@ -12719,7 +12719,7 @@ If you disable this policy setting, the XSS Filter is turned off for sites in th
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Cross-Site Scripting Filter*
 -   GP name: *IZ_PolicyTurnOnXSSFilter_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12731,7 +12731,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**  
+<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows**
 
 <!--SupportedSKUs-->
 
@@ -12771,7 +12771,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy or do no
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable dragging of content from different domains across windows*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12783,7 +12783,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**  
+<a href="" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows"></a>**InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows**
 
 <!--SupportedSKUs-->
 
@@ -12823,7 +12823,7 @@ In Internet Explorer 9 and earlier versions, if you disable this policy setting 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable dragging of content from different domains within a window*
 -   GP name: *IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12835,7 +12835,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneenablemimesniffing"></a>**InternetExplorer/RestrictedSitesZoneEnableMIMESniffing**  
+<a href="" id="internetexplorer-restrictedsiteszoneenablemimesniffing"></a>**InternetExplorer/RestrictedSitesZoneEnableMIMESniffing**
 
 <!--SupportedSKUs-->
 
@@ -12873,7 +12873,7 @@ If you do not configure this policy setting, the actions that may be harmful can
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable MIME Sniffing*
 -   GP name: *IZ_PolicyMimeSniffingURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12885,7 +12885,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer**  
+<a href="" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver"></a>**InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer**
 
 <!--SupportedSKUs-->
 
@@ -12923,7 +12923,7 @@ If you do not configure this policy setting, the user can choose whether path in
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Include local path when user is uploading files to a server*
 -   GP name: *IZ_Policy_LocalPathForUpload_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12935,7 +12935,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -12975,7 +12975,7 @@ If you do not configure this policy setting, ActiveX controls that cannot be mad
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -12987,7 +12987,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonejavapermissions"></a>**InternetExplorer/RestrictedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-restrictedsiteszonejavapermissions"></a>**InternetExplorer/RestrictedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -13031,7 +13031,7 @@ If you do not configure this policy setting, Java applets are disabled.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13043,7 +13043,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME**  
+<a href="" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME**
 
 <!--SupportedSKUs-->
 
@@ -13081,7 +13081,7 @@ If you do not configure this policy setting, users are prevented from running ap
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Launching applications and files in an IFRAME*
 -   GP name: *IZ_PolicyLaunchAppsAndFilesInIFRAME_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13093,7 +13093,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonelogonoptions"></a>**InternetExplorer/RestrictedSitesZoneLogonOptions**  
+<a href="" id="internetexplorer-restrictedsiteszonelogonoptions"></a>**InternetExplorer/RestrictedSitesZoneLogonOptions**
 
 <!--SupportedSKUs-->
 
@@ -13139,7 +13139,7 @@ If you do not configure this policy setting, logon is set to Prompt for username
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Logon options*
 -   GP name: *IZ_PolicyLogon_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13151,7 +13151,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -13189,7 +13189,7 @@ If you do not configure this policy setting, users cannot open other windows and
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13201,7 +13201,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**  
+<a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**
 
 <!--SupportedSKUs-->
 
@@ -13241,7 +13241,7 @@ If you do not configure this policy setting, controls and plug-ins are prevented
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run ActiveX controls and plugins*
 -   GP name: *IZ_PolicyRunActiveXControls_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13253,7 +13253,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
+<a href="" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**
 
 <!--SupportedSKUs-->
 
@@ -13291,7 +13291,7 @@ If you do not configure this policy setting, Internet Explorer will not execute 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components signed with Authenticode*
 -   GP name: *IZ_PolicySignedFrameworkComponentsURLaction_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13303,7 +13303,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting"></a>**InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting**  
+<a href="" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting"></a>**InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting**
 
 <!--SupportedSKUs-->
 
@@ -13343,7 +13343,7 @@ If you do not configure this policy setting, script interaction is prevented fro
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Script ActiveX controls marked safe for scripting*
 -   GP name: *IZ_PolicyScriptActiveXMarkedSafe_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13355,7 +13355,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets"></a>**InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets**  
+<a href="" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets"></a>**InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets**
 
 <!--SupportedSKUs-->
 
@@ -13395,7 +13395,7 @@ If you do not configure this policy setting, scripts are prevented from accessin
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scripting of Java applets*
 -   GP name: *IZ_PolicyScriptingOfJavaApplets_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13407,7 +13407,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles**  
+<a href="" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles"></a>**InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles**
 
 <!--SupportedSKUs-->
 
@@ -13445,7 +13445,7 @@ If you do not configure this policy setting, the user can configure how the comp
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show security warning for potentially unsafe files*
 -   GP name: *IZ_Policy_UnsafeFiles_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13457,7 +13457,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneturnonprotectedmode"></a>**InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode**  
+<a href="" id="internetexplorer-restrictedsiteszoneturnonprotectedmode"></a>**InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode**
 
 <!--SupportedSKUs-->
 
@@ -13495,7 +13495,7 @@ If you do not configure this policy setting, the user can turn on or turn off Pr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Protected Mode*
 -   GP name: *IZ_Policy_TurnOnProtectedMode_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13507,7 +13507,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-restrictedsiteszoneusepopupblocker"></a>**InternetExplorer/RestrictedSitesZoneUsePopupBlocker**  
+<a href="" id="internetexplorer-restrictedsiteszoneusepopupblocker"></a>**InternetExplorer/RestrictedSitesZoneUsePopupBlocker**
 
 <!--SupportedSKUs-->
 
@@ -13545,7 +13545,7 @@ If you do not configure this policy setting, most unwanted pop-up windows are pr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use Pop-up Blocker*
 -   GP name: *IZ_PolicyBlockPopupWindows_7*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
@@ -13557,7 +13557,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**  
+<a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**
 
 <!--SupportedSKUs-->
 
@@ -13595,7 +13595,7 @@ If you do not configure this policy setting, pop-up windows and other restrictio
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Processes*
 -   GP name: *IESF_PolicyExplorerProcesses_8*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Scripted Window Security Restrictions*
@@ -13607,7 +13607,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**  
+<a href="" id="internetexplorer-searchproviderlist"></a>**InternetExplorer/SearchProviderList**
 
 <!--SupportedSKUs-->
 
@@ -13636,7 +13636,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to restrict the search providers that appear in the Search box in Internet Explorer to those defined in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Normally, search providers can be added from third-party toolbars or in Setup, but the user can also add them from a search provider's website.
 
-If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers. 
+If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers.
 
 > [!NOTE]
 > This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
@@ -13646,7 +13646,7 @@ If you disable or do not configure this policy setting, the user can configure h
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict search providers to a specific list*
 -   GP name: *SpecificSearchProvider*
 -   GP path: *Windows Components/Internet Explorer*
@@ -13658,7 +13658,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-securityzonesuseonlymachinesettings"></a>**InternetExplorer/SecurityZonesUseOnlyMachineSettings**  
+<a href="" id="internetexplorer-securityzonesuseonlymachinesettings"></a>**InternetExplorer/SecurityZonesUseOnlyMachineSettings**
 
 <!--SupportedSKUs-->
 
@@ -13697,7 +13697,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Zones: Use only machine settings*
 -   GP name: *Security_HKLM_only*
 -   GP path: *Windows Components/Internet Explorer*
@@ -13709,7 +13709,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-sendsitesnotinenterprisesitelisttoedge"></a>**InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge**  
+<a href="" id="internetexplorer-sendsitesnotinenterprisesitelisttoedge"></a>**InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge**
 
 <!--SupportedSKUs-->
 
@@ -13740,7 +13740,7 @@ This setting lets you decide, whether to open all sites not included in the Ente
 
 If you enable this setting, it automatically opens all sites not included in the Enterprise Mode Site List in Microsoft Edge.
 
-If you disable, or not configure this setting, then it opens all sites based on the currently active browser. 
+If you disable, or not configure this setting, then it opens all sites based on the currently active browser.
 
 > [!NOTE]
 > If you have also enabled the [InternetExplorer/SendIntranetTraffictoInternetExplorer](#internetexplorer-policies) policy setting, then all intranet sites will continue to open in Internet Explorer 11.
@@ -13748,7 +13748,7 @@ If you disable, or not configure this setting, then it opens all sites based on 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Send all sites not included in the Enterprise Mode Site List to Microsoft Edge*
 -   GP name: *RestrictInternetExplorer*
 -   GP path: *Windows Components/Internet Explorer*
@@ -13780,7 +13780,7 @@ ADMX Info:
     </policy>
 ```
 <!--Policy-->
-<a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**  
+<a href="" id="internetexplorer-specifyuseofactivexinstallerservice"></a>**InternetExplorer/SpecifyUseOfActiveXInstallerService**
 
 <!--SupportedSKUs-->
 
@@ -13816,7 +13816,7 @@ If you disable or do not configure this policy setting, ActiveX controls, includ
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify use of ActiveX Installer Service for installation of ActiveX controls*
 -   GP name: *OnlyUseAXISForActiveXInstall*
 -   GP path: *Windows Components/Internet Explorer*
@@ -13828,7 +13828,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**  
+<a href="" id="internetexplorer-trustedsiteszoneallowaccesstodatasources"></a>**InternetExplorer/TrustedSitesZoneAllowAccessToDataSources**
 
 <!--SupportedSKUs-->
 
@@ -13866,7 +13866,7 @@ If you do not configure this policy setting, users can load a page in the zone t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Access data sources across domains*
 -   GP name: *IZ_PolicyAccessDataSourcesAcrossDomains_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -13878,7 +13878,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**  
+<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -13916,7 +13916,7 @@ If you do not configure this policy setting, users will receive a prompt when a 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for ActiveX controls*
 -   GP name: *IZ_PolicyNotificationBarActiveXURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -13928,7 +13928,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**  
+<a href="" id="internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads"></a>**InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads**
 
 <!--SupportedSKUs-->
 
@@ -13964,7 +13964,7 @@ If you disable or do not configure this setting, users will receive a file downl
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatic prompting for file downloads*
 -   GP name: *IZ_PolicyNotificationBarDownloadURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -13976,7 +13976,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**  
+<a href="" id="internetexplorer-trustedsiteszoneallowfontdownloads"></a>**InternetExplorer/TrustedSitesZoneAllowFontDownloads**
 
 <!--SupportedSKUs-->
 
@@ -14014,7 +14014,7 @@ If you do not configure this policy setting, HTML fonts can be downloaded automa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow font downloads*
 -   GP name: *IZ_PolicyFontDownload_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14026,7 +14026,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**  
+<a href="" id="internetexplorer-trustedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/TrustedSitesZoneAllowLessPrivilegedSites**
 
 <!--SupportedSKUs-->
 
@@ -14064,7 +14064,7 @@ If you do not configure this policy setting, a warning is issued to the user tha
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Web sites in less privileged Web content zones can navigate into this zone*
 -   GP name: *IZ_PolicyZoneElevationURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14076,7 +14076,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**  
+<a href="" id="internetexplorer-trustedsiteszoneallownetframeworkreliantcomponents"></a>**InternetExplorer/TrustedSitesZoneAllowNETFrameworkReliantComponents**
 
 <!--SupportedSKUs-->
 
@@ -14114,7 +14114,7 @@ If you do not configure this policy setting, Internet Explorer will execute unsi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run .NET Framework-reliant components not signed with Authenticode*
 -   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14126,7 +14126,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**  
+<a href="" id="internetexplorer-trustedsiteszoneallowscriptlets"></a>**InternetExplorer/TrustedSitesZoneAllowScriptlets**
 
 <!--SupportedSKUs-->
 
@@ -14164,7 +14164,7 @@ If you do not configure this policy setting, the user can enable or disable scri
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow scriptlets*
 -   GP name: *IZ_Policy_AllowScriptlets_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14176,7 +14176,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**  
+<a href="" id="internetexplorer-trustedsiteszoneallowsmartscreenie"></a>**InternetExplorer/TrustedSitesZoneAllowSmartScreenIE**
 
 <!--SupportedSKUs-->
 
@@ -14217,7 +14217,7 @@ If you do not configure this policy setting, the user can choose whether Windows
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on SmartScreen Filter scan*
 -   GP name: *IZ_Policy_Phishing_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14229,7 +14229,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**  
+<a href="" id="internetexplorer-trustedsiteszoneallowuserdatapersistence"></a>**InternetExplorer/TrustedSitesZoneAllowUserDataPersistence**
 
 <!--SupportedSKUs-->
 
@@ -14267,7 +14267,7 @@ If you do not configure this policy setting, users can preserve information in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Userdata persistence*
 -   GP name: *IZ_PolicyUserdataPersistence_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14279,7 +14279,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**  
+<a href="" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -14317,7 +14317,7 @@ If you don't configure this policy setting, Internet Explorer won't check with y
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't run antimalware programs against ActiveX controls*
 -   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14329,7 +14329,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**  
+<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**
 
 <!--SupportedSKUs-->
 
@@ -14369,7 +14369,7 @@ If you do not configure this policy setting, users are queried whether to allow 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initialize and script ActiveX controls not marked as safe*
 -   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14381,7 +14381,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszonejavapermissions"></a>**InternetExplorer/TrustedSitesZoneJavaPermissions**  
+<a href="" id="internetexplorer-trustedsiteszonejavapermissions"></a>**InternetExplorer/TrustedSitesZoneJavaPermissions**
 
 <!--SupportedSKUs-->
 
@@ -14425,7 +14425,7 @@ If you do not configure this policy setting, the permission is set to Low Safety
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Java permissions*
 -   GP name: *IZ_PolicyJavaPermissions_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
@@ -14437,7 +14437,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**  
+<a href="" id="internetexplorer-trustedsiteszonenavigatewindowsandframes"></a>**InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames**
 
 <!--SupportedSKUs-->
 
@@ -14475,7 +14475,7 @@ If you do not configure this policy setting, users can open windows and frames f
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Navigate windows and frames across different domains*
 -   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_5*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*

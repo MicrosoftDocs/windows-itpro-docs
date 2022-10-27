@@ -3,8 +3,8 @@ title: Policy CSP - WindowsInkWorkspace
 description: Learn to use the Policy CSP - WindowsInkWorkspace setting to specify whether to allow the user to access the ink workspace.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## WindowsInkWorkspace policies  
+## WindowsInkWorkspace policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**  
+<a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -62,7 +62,7 @@ Show recommended app suggestions in the ink workspace.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow suggested apps in Windows Ink Workspace*
 -   GP name: *AllowSuggestedAppsInWindowsInkWorkspace*
 -   GP path: *Windows Components/Windows Ink Workspace*
@@ -81,7 +81,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**  
+<a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -112,7 +112,7 @@ Specifies whether to allow the user to access the ink workspace.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Windows Ink Workspace*
 -   GP name: *AllowWindowsInkWorkspace*
 -   GP element: *AllowWindowsInkWorkspaceDropdown*

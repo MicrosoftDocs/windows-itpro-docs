@@ -3,8 +3,8 @@ title: Policy CSP - WindowsLogon
 description: Use the Policy CSP - WindowsLogon setting to control whether a device automatically signs in and locks the last interactive user after the system restarts.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## WindowsLogon policies  
+## WindowsLogon policies
 
 <dl>
   <dd>
@@ -47,16 +47,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-allowautomaticrestartsignon"></a>**WindowsLogon/AllowAutomaticRestartSignOn**  
+<a href="" id="windowslogon-allowautomaticrestartsignon"></a>**WindowsLogon/AllowAutomaticRestartSignOn**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -98,7 +98,7 @@ If you disable this policy setting, the device doesn't configure automatic sign 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Sign-in and lock last interactive user automatically after a restart*
 -   GP name: *AutomaticRestartSignOn*
 -   GP path: *Windows Components/Windows Logon Options*
@@ -119,7 +119,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-configautomaticrestartsignon"></a>**WindowsLogon/ConfigAutomaticRestartSignOn**  
+<a href="" id="windowslogon-configautomaticrestartsignon"></a>**WindowsLogon/ConfigAutomaticRestartSignOn**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -150,7 +150,7 @@ This policy setting controls the configuration under which an automatic restart,
 
 If you enable this policy setting, you can choose one of the following two options:
 
-- Enabled if BitLocker is on and not suspended: Specifies that automatic sign in and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.  
+- Enabled if BitLocker is on and not suspended: Specifies that automatic sign in and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 BitLocker is suspended during updates if:
     - The device doesn't have TPM 2.0 and PCR7
     - The device doesn't use a TPM-only protector
@@ -161,7 +161,7 @@ If you disable or don't configure this setting, automatic sign in defaults to th
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot*
 -   GP name: *ConfigAutomaticRestartSignOn*
 -   GP path: *Windows Components/Windows Logon Options*
@@ -182,7 +182,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**  
+<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -218,7 +218,7 @@ If you disable or don't configure this policy setting, users can choose which ap
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off app notifications on the lock screen*
 -   GP name: *DisableLockScreenAppNotifications*
 -   GP path: *System/Logon*
@@ -230,7 +230,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**  
+<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -291,7 +291,7 @@ Here's an example to enable this policy:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not display network selection UI*
 -   GP name: *DontDisplayNetworkSelectionUI*
 -   GP path: *System/Logon*
@@ -303,7 +303,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-enablefirstlogonanimation"></a>**WindowsLogon/EnableFirstLogonAnimation**  
+<a href="" id="windowslogon-enablefirstlogonanimation"></a>**WindowsLogon/EnableFirstLogonAnimation**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -343,7 +343,7 @@ If you don't configure this policy setting, the user who completes the initial W
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show first sign-in animation*
 -   GP name: *EnableFirstLogonAnimation*
 -   GP path: *System/Logon*
@@ -351,7 +351,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 -   0 - disabled
 -   1 - enabled
 <!--/SupportedValues-->
@@ -366,7 +366,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-enablemprnotifications"></a>**WindowsLogon/EnableMPRNotifications**  
+<a href="" id="windowslogon-enablemprnotifications"></a>**WindowsLogon/EnableMPRNotifications**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -401,7 +401,7 @@ If you enable (1) or do not configure this policy setting this policy, MPR notif
 
 <!--/Description-->
 <!--SupportedValues-->
-Supported values:  
+Supported values:
 
 -   0 - disabled
 -   1 (default)- enabled
@@ -412,7 +412,7 @@ Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**  
+<a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -439,7 +439,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows local users to be enumerated on domain-joined computers.  
+This policy setting allows local users to be enumerated on domain-joined computers.
 
 If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
 
@@ -448,7 +448,7 @@ If you disable or don't configure this policy setting, the Logon UI won't enumer
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enumerate local users on domain-joined computers*
 -   GP name: *EnumerateLocalUsers*
 -   GP path: *System/Logon*
@@ -460,7 +460,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
+<a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -491,7 +491,7 @@ This policy setting allows you to hide the Switch account button on the sign-in 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide entry points for Fast User Switching*
 -   GP name: *HideFastUserSwitching*
 -   GP path: *System/Logon*

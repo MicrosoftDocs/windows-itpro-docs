@@ -3,9 +3,9 @@ title: Use a Windows Defender Application Control policy to control specific plu
 description: WDAC policies can be used not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-manager: dansimp
-ms.author: dansimp
-ms.prod: m365-security
+manager: aaroncz
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.date: 02/10/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules 

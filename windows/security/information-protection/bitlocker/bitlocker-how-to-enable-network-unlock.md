@@ -2,14 +2,13 @@
 title: BitLocker - How to enable Network Unlock (Windows 10)
 description: This article for the IT professional describes how BitLocker Network Unlock works and how to configure it.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
-  - highpri
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker

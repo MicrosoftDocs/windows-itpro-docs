@@ -1,9 +1,9 @@
 ---
 title: Maintain the Windows Autopatch environment
-description:  This article details how to maintain the Windows Autopatch environment
+description: This article details how to maintain the Windows Autopatch environment
 ms.date: 07/11/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
@@ -31,3 +31,18 @@ After you've completed enrollment in Windows Autopatch, some management settings
 ## Windows Autopatch configurations
 
 Windows Autopatch deploys, manages and maintains all configurations related to the operation of the service, as described in [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md). Don't make any changes to any of the Windows Autopatch configurations.
+
+## Windows Autopatch tenant actions
+
+The **Tenant management** blade can be found by navigating to Tenant administration > Windows Autopatch > **Tenant management**.
+
+> [!IMPORTANT]
+> Starting October 12, 2022, Windows Autopatch will manage your tenant with our [first party enterprise applications](../references/windows-autopatch-changes-to-tenant.md#windows-autopatch-enterprise-applications). If your tenant is still using the [Windows Autopatch service accounts](../references/windows-autopatch-privacy.md#service-accounts), your Global admin must take action in the new Windows Autopatch Tenant management blade to approve the configuration change. To take action or see if you need to take action, visit the Tenant management blade in the Windows Autopatch portal.
+
+The type of banner that appears depends on the severity of the action. Currently, only critical actions are listed.
+
+### Tenant action severity types
+
+| Severity | Description |
+| ----- | ----- |
+| Critical | You must take action as soon as possible. If no action is taken, the Windows Autopatch service may be affected. |

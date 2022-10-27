@@ -3,8 +3,8 @@ title: Policy CSP - HumanPresence
 description: Use the Policy CSP - HumanPresence setting allows wake on approach and lock on leave that can be managed from MDM.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## HumanPresence policies  
+## HumanPresence policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="humanpresence-forceinstantdim"></a>**HumanPresence/ForceInstantDim**  
+<a href="" id="humanpresence-forceinstantdim"></a>**HumanPresence/ForceInstantDim**
 
 <!--SupportedSKUs-->
 
@@ -66,7 +66,7 @@ This feature dims the screen based on user attention. This is a power saving fea
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force Instant Dim*
 -   GP name: *ForceInstantDim*
 -   GP path: *Windows Components/Human Presence*
@@ -87,7 +87,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="humanpresence-forceinstantlock"></a>**HumanPresence/ForceInstantLock**  
+<a href="" id="humanpresence-forceinstantlock"></a>**HumanPresence/ForceInstantLock**
 
 <!--SupportedSKUs-->
 
@@ -117,7 +117,7 @@ This policy specifies, whether the device can lock when a human presence sensor 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Implements wake on approach and lock on leave that can be managed from MDM*
 -   GP name: *ForceInstantLock*
 -   GP path: *Windows Components/HumanPresence*
@@ -137,7 +137,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="humanpresence-forceinstantwake"></a>**HumanPresence/ForceInstantWake**  
+<a href="" id="humanpresence-forceinstantwake"></a>**HumanPresence/ForceInstantWake**
 
 <!--SupportedSKUs-->
 
@@ -167,7 +167,7 @@ This policy specifies, whether the device can lock when a human presence sensor 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Implements wake on approach and lock on leave that can be managed from MDM*
 -   GP name: *ForceInstantWake*
 -   GP path: *Windows Components/HumanPresence*
@@ -187,7 +187,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="humanpresence-forcelocktimeout"></a>**HumanPresence/ForceLockTimeout**  
+<a href="" id="humanpresence-forcelocktimeout"></a>**HumanPresence/ForceLockTimeout**
 
 <!--SupportedSKUs-->
 
@@ -217,7 +217,7 @@ This policy specifies, at what distance the sensor wakes up when it sees a human
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Implements wake on approach and lock on leave that can be managed from MDM*
 -   GP name: *ForceLockTimeout*
 -   GP path: *Windows Components/HumanPresence*
