@@ -7,7 +7,9 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: itpro-security

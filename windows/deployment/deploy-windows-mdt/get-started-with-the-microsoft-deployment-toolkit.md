@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
 ms.technology: itpro-deploy
+ms.collection: 
+  - highpri
 ---
 
 # Get started with MDT

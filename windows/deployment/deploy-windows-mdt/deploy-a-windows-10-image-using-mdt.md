@@ -9,6 +9,8 @@ ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
 ms.technology: itpro-deploy
+ms.collection: 
+  - highpri
 ---
 
 # Deploy a Windows 10 image using MDT

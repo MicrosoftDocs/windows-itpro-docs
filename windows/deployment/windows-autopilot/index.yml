@@ -10,7 +10,9 @@ metadata:
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: windows-10
+  ms.collection:
+    - windows-10
+    - highpri
   author: aczechowski
   ms.author: aaroncz
   manager: dougeby

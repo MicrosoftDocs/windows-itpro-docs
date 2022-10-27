@@ -8,6 +8,8 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: 
+  - highpri
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
