@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_UserProfiles.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/11/2020
 ms.reviewer: 
@@ -17,13 +17,13 @@ manager: aaroncz
 <hr/>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 <!--Policies-->
-## ADMX_UserProfiles policies  
+## ADMX_UserProfiles policies
 
 <dl>
   <dd>
@@ -56,7 +56,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-cleanupprofiles"></a>**ADMX_UserProfiles/CleanupProfiles**  
+<a href="" id="admx-userprofiles-cleanupprofiles"></a>**ADMX_UserProfiles/CleanupProfiles**
 
 <!--SupportedSKUs-->
 
@@ -87,14 +87,14 @@ This policy setting allows an administrator to automatically delete user profile
 > [!NOTE]
 > One day is interpreted as 24 hours after a specific user profile was accessed.
 
-If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that haven't been used within the specified number of days. 
+If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that haven't been used within the specified number of days.
 
 If you disable or don't configure this policy setting, User Profile Service won't automatically delete any profiles on the next system restart.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Delete user profiles older than a specified number of days on system restart*
 -   GP name: *CleanupProfiles*
 -   GP path: *System\User Profiles*
@@ -105,7 +105,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-dontforceunloadhive"></a>**ADMX_UserProfiles/DontForceUnloadHive**  
+<a href="" id="admx-userprofiles-dontforceunloadhive"></a>**ADMX_UserProfiles/DontForceUnloadHive**
 
 <!--SupportedSKUs-->
 
@@ -131,7 +131,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows forcefully unloads the user's registry at sign out, even if there are open handles to the per-user registry keys. 
+This policy setting controls whether Windows forcefully unloads the user's registry at sign out, even if there are open handles to the per-user registry keys.
 
 > [!NOTE]
 > This policy setting should only be used for cases where you may be running into application compatibility issues due to this specific Windows behavior. It is not recommended to enable this policy by default as it may prevent users from getting an updated version of their roaming user profile.
@@ -143,7 +143,7 @@ If you disable or don't configure this policy setting, Windows will always unloa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not forcefully unload the users registry at user logoff*
 -   GP name: *DontForceUnloadHive*
 -   GP path: *System\User Profiles*
@@ -154,7 +154,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-leaveappmgmtdata"></a>**ADMX_UserProfiles/LeaveAppMgmtData**  
+<a href="" id="admx-userprofiles-leaveappmgmtdata"></a>**ADMX_UserProfiles/LeaveAppMgmtData**
 
 <!--SupportedSKUs-->
 
@@ -194,7 +194,7 @@ If you disable or don't configure this policy setting, Windows will delete the e
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Leave Windows Installer and Group Policy Software Installation Data*
 -   GP name: *LeaveAppMgmtData*
 -   GP path: *System\User Profiles*
@@ -205,7 +205,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-limitsize"></a>**ADMX_UserProfiles/LimitSize**  
+<a href="" id="admx-userprofiles-limitsize"></a>**ADMX_UserProfiles/LimitSize**
 
 <!--SupportedSKUs-->
 
@@ -246,7 +246,7 @@ If you enable this policy setting, you can:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit profile size*
 -   GP name: *LimitSize*
 -   GP path: *System\User Profiles*
@@ -257,7 +257,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-profileerroraction"></a>**ADMX_UserProfiles/ProfileErrorAction**  
+<a href="" id="admx-userprofiles-profileerroraction"></a>**ADMX_UserProfiles/ProfileErrorAction**
 
 <!--SupportedSKUs-->
 
@@ -283,7 +283,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting will automatically sign out a user when Windows can't load their profile. 
+This policy setting will automatically sign out a user when Windows can't load their profile.
 
 If Windows can't access the user profile folder or the profile contains errors that prevent it from loading, Windows logs on the user with a temporary profile. This policy setting allows the administrator to disable this behavior, preventing Windows from logging on the user with a temporary profile.
 
@@ -296,7 +296,7 @@ Also, see the "Delete cached copies of roaming profiles" policy setting.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not log users on with temporary profiles*
 -   GP name: *ProfileErrorAction*
 -   GP path: *System\User Profiles*
@@ -307,7 +307,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-slowlinktimeout"></a>**ADMX_UserProfiles/SlowLinkTimeOut**  
+<a href="" id="admx-userprofiles-slowlinktimeout"></a>**ADMX_UserProfiles/SlowLinkTimeOut**
 
 <!--SupportedSKUs-->
 
@@ -333,7 +333,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting defines a slow connection for roaming user profiles and establishes thresholds for two tests of network speed. 
+This policy setting defines a slow connection for roaming user profiles and establishes thresholds for two tests of network speed.
 
 To determine the network performance characteristics, a connection is made to the file share storing the user's profile and 64 kilobytes of data is transferred. From that connection and data transfer, the network's latency and connection speed are determined.
 
@@ -346,7 +346,7 @@ If you disable or don't configure this policy setting, Windows considers the net
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control slow network connection timeout for user profiles*
 -   GP name: *SlowLinkTimeOut*
 -   GP path: *System\User Profiles*
@@ -357,7 +357,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-user-home"></a>**ADMX_UserProfiles/USER_HOME**  
+<a href="" id="admx-userprofiles-user-home"></a>**ADMX_UserProfiles/USER_HOME**
 
 <!--SupportedSKUs-->
 
@@ -401,7 +401,7 @@ If the "Set Remote Desktop Services User Home Directory" policy setting is enabl
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set user home folder*
 -   GP name: *USER_HOME*
 -   GP path: *System\User Profiles*
@@ -412,7 +412,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-userprofiles-userinfoaccessaction"></a>**ADMX_UserProfiles/UserInfoAccessAction**  
+<a href="" id="admx-userprofiles-userinfoaccessaction"></a>**ADMX_UserProfiles/UserInfoAccessAction**
 
 <!--SupportedSKUs-->
 
@@ -450,7 +450,7 @@ If you don't configure or disable this policy the user will have full control ov
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *User management of sharing user name, account picture, and domain information with apps (not desktop apps)*
 -   GP name: *UserInfoAccessAction*
 -   GP path: *System\User Profiles*

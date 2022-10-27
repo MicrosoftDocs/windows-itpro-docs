@@ -1,7 +1,7 @@
 ---
 title: Plan for Windows 11
 description: Windows 11 deployment planning, IT Pro content.
-ms.prod: w11
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -114,4 +114,4 @@ You might already be using App Assure and Test Base in your Windows 10 environme
 
 ## Also see
 
-[Plan to deploy updates for Windows 10 and Microsoft 365 Apps](/learn/modules/windows-plan/)
+[Plan to deploy updates for Windows 10 and Microsoft 365 Apps](/training/modules/windows-plan/)

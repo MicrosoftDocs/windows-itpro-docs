@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_PowerShellExecutionPolicy.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/26/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_PowerShellExecutionPolicy
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_PowerShellExecutionPolicy policies  
+## ADMX_PowerShellExecutionPolicy policies
 
 <dl>
   <dd>
@@ -45,7 +45,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-powershellexecutionpolicy-enablemodulelogging"></a>**ADMX_PowerShellExecutionPolicy/EnableModuleLogging**  
+<a href="" id="admx-powershellexecutionpolicy-enablemodulelogging"></a>**ADMX_PowerShellExecutionPolicy/EnableModuleLogging**
 
 <!--SupportedSKUs-->
 
@@ -87,7 +87,7 @@ To add modules and snap-ins to the policy setting list, click Show, and then typ
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Module Logging*
 -   GP name: *EnableModuleLogging*
 -   GP path: *Windows Components\Windows PowerShell*
@@ -98,7 +98,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-powershellexecutionpolicy-enablescripts"></a>**ADMX_PowerShellExecutionPolicy/EnableScripts**  
+<a href="" id="admx-powershellexecutionpolicy-enablescripts"></a>**ADMX_PowerShellExecutionPolicy/EnableScripts**
 
 <!--SupportedSKUs-->
 
@@ -140,7 +140,7 @@ If you disable this policy setting, no scripts are allowed to run.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Script Execution*
 -   GP name: *EnableScripts*
 -   GP path: *Windows Components\Windows PowerShell*
@@ -151,7 +151,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-powershellexecutionpolicy-enabletranscripting"></a>**ADMX_PowerShellExecutionPolicy/EnableTranscripting**  
+<a href="" id="admx-powershellexecutionpolicy-enabletranscripting"></a>**ADMX_PowerShellExecutionPolicy/EnableTranscripting**
 
 <!--SupportedSKUs-->
 
@@ -193,7 +193,7 @@ If you use the OutputDirectory setting to enable transcript logging to a shared 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on PowerShell Transcription*
 -   GP name: *EnableTranscripting*
 -   GP path: *Windows Components\Windows PowerShell*
@@ -204,7 +204,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-powershellexecutionpolicy-enableupdatehelpdefaultsourcepath"></a>**ADMX_PowerShellExecutionPolicy/EnableUpdateHelpDefaultSourcePath**  
+<a href="" id="admx-powershellexecutionpolicy-enableupdatehelpdefaultsourcepath"></a>**ADMX_PowerShellExecutionPolicy/EnableUpdateHelpDefaultSourcePath**
 
 <!--SupportedSKUs-->
 
@@ -244,7 +244,7 @@ If this policy setting is disabled or not configured, this policy setting doesn'
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set the default source path for Update-Help*
 -   GP name: *EnableUpdateHelpDefaultSourcePath*
 -   GP path: *Windows Components\Windows PowerShell*

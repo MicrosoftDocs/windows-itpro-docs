@@ -1,7 +1,7 @@
 ---
 title: eUICCs DDF file
 description: Learn about the OMA DM device description framework (DDF) for the eUICCs configuration service provider (CSP).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -15,7 +15,7 @@ ms.date: 03/02/2018
 
 This topic shows the OMA DM device description framework (DDF) for the **eUICCs** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below if for Windows 10, version 1803.
 
@@ -238,6 +238,30 @@ The XML below if for Windows 10, version 1803.
                             </DFFormat>
                             <Occurrence>
                                 <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>IsDiscoveryServer</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DefaultValue>false</DefaultValue>
+                            <Description>Indicates whether the server is a discovery server. Optional, default value is false.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
                             </Occurrence>
                             <Scope>
                                 <Dynamic />

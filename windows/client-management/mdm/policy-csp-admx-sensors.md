@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Sensors.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/22/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_Sensors
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Sensors policies  
+## ADMX_Sensors policies
 
 <dl>
   <dd>
@@ -47,7 +47,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sensors-disablelocationscripting-1"></a>**ADMX_Sensors/DisableLocationScripting_1**  
+<a href="" id="admx-sensors-disablelocationscripting-1"></a>**ADMX_Sensors/DisableLocationScripting_1**
 
 <!--SupportedSKUs-->
 
@@ -83,7 +83,7 @@ If you disable or don't configure this policy setting, all location scripts will
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off location scripting*
 -   GP name: *DisableLocationScripting_1*
 -   GP path: *Windows Components\Location and Sensors*
@@ -94,7 +94,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sensors-disablelocationscripting-2"></a>**ADMX_Sensors/DisableLocationScripting_2**  
+<a href="" id="admx-sensors-disablelocationscripting-2"></a>**ADMX_Sensors/DisableLocationScripting_2**
 
 <!--SupportedSKUs-->
 
@@ -130,7 +130,7 @@ If you disable or don't configure this policy setting, all location scripts will
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off location scripting*
 -   GP name: *DisableLocationScripting_2*
 -   GP path: *Windows Components\Location and Sensors*
@@ -141,7 +141,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sensors-disablelocation-1"></a>**ADMX_Sensors/DisableLocation_1**  
+<a href="" id="admx-sensors-disablelocation-1"></a>**ADMX_Sensors/DisableLocation_1**
 
 <!--SupportedSKUs-->
 
@@ -177,7 +177,7 @@ If you disable or don't configure this policy setting, all programs on this comp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off location*
 -   GP name: *DisableLocation_1*
 -   GP path: *Windows Components\Location and Sensors*
@@ -188,7 +188,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sensors-disablesensors-1"></a>**ADMX_Sensors/DisableSensors_1**  
+<a href="" id="admx-sensors-disablesensors-1"></a>**ADMX_Sensors/DisableSensors_1**
 
 <!--SupportedSKUs-->
 
@@ -224,7 +224,7 @@ If you disable or don't configure this policy setting, all programs on this comp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off sensors*
 -   GP name: *DisableSensors_1*
 -   GP path: *Windows Components\Location and Sensors*
@@ -235,7 +235,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sensors-disablesensors-2"></a>**ADMX_Sensors/DisableSensors_2**  
+<a href="" id="admx-sensors-disablesensors-2"></a>**ADMX_Sensors/DisableSensors_2**
 
 <!--SupportedSKUs-->
 
@@ -271,7 +271,7 @@ If you disable or don't configure this policy setting, all programs on this comp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off sensors*
 -   GP name: *DisableSensors_2*
 -   GP path: *Windows Components\Location and Sensors*

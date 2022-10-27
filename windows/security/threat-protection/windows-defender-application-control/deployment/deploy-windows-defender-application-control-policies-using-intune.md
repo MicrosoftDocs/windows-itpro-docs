@@ -1,21 +1,16 @@
 ---
 title: Deploy WDAC policies using Mobile Device Management (MDM) (Windows)
 description: You can use an MDM like Microsoft Intune to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
-audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 06/27/2022
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 10/06/2022
+ms.topic: how-to
 ---
 
 # Deploy WDAC policies using Mobile Device Management (MDM)
@@ -53,21 +48,19 @@ To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windo
 > [!NOTE]
 > Policies deployed through Intune custom OMA-URI are subject to a 350,000 byte limit. Customers should create Windows Defender Application Control policies that use signature-based rules, the Intelligent Security Graph, and managed installers where practical. Customers whose devices are running 1903+ builds of Windows are also encouraged to use [multiple policies](../deploy-multiple-windows-defender-application-control-policies.md) which allow more granular policy.
 
+You should now have one or more WDAC policies converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+
 ### Deploy custom WDAC policies on Windows 10 1903+
 
 Beginning with Windows 10 1903, custom OMA-URI policy deployment can use the [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp), which has support for multiple policies and rebootless policies.
 
 The steps to use Intune's custom OMA-URI functionality are:
 
-1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>`
+1. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
 
-2. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
-
-3. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
-
-4. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
-    - **OMA-URI**: ./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy
-    - **Data type**: Base64
+2. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
+    - **OMA-URI**: `./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy`
+    - **Data type**: Base64 (file)
     - **Certificate file**: upload your binary format policy file. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
 
     > [!div class="mx-imgBorder"]
@@ -86,13 +79,13 @@ Upon deletion, policies deployed through Intune via the ApplicationControl CSP a
 
 The steps to use Intune's Custom OMA-URI functionality to apply the [AppLocker CSP](/windows/client-management/mdm/applocker-csp) and deploy a custom WDAC policy to pre-1903 systems are:
 
-1. Convert the policy XML to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+1. Convert the policy XML to binary format using the [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 
 2. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
 
 3. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
-    - **OMA-URI**: ./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy)
-    - **Data type**: Base64
+    - **OMA-URI**: `./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy`
+    - **Data type**: Base64 (file)
     - **Certificate file**: upload your binary format policy file
 
    > [!NOTE]

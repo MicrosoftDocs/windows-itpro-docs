@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_PerformanceDiagnostics.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/16/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_PerformanceDiagnostics
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_PerformanceDiagnostics policies  
+## ADMX_PerformanceDiagnostics policies
 
 <dl>
   <dd>
@@ -45,7 +45,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-1"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_1**  
+<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-1"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_1**
 
 <!--SupportedSKUs-->
 
@@ -90,7 +90,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_1*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Boot Performance Diagnostics*
@@ -101,7 +101,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-2"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_2**  
+<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-2"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_2**
 
 <!--SupportedSKUs-->
 
@@ -145,7 +145,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_2*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows System Responsiveness Performance Diagnostics*
@@ -156,7 +156,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-3"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_3**  
+<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-3"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_3**
 
 <!--SupportedSKUs-->
 
@@ -200,7 +200,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_3*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Shutdown Performance Diagnostics*
@@ -211,7 +211,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-4"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_4**  
+<a href="" id="admx-performancediagnostics-wdiscenarioexecutionpolicy-4"></a>**ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_4**
 
 <!--SupportedSKUs-->
 
@@ -255,7 +255,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_4*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Standby/Resume Performance Diagnostics*

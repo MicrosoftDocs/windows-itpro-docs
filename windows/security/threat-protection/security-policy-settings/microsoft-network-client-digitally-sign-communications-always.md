@@ -3,16 +3,16 @@ title: Microsoft network client Digitally sign communications (always) (Windows 
 description: Best practices and security considerations for the  Microsoft network client Digitally sign communications (always) security policy setting.
 ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.prod: m365-security
+manager: aaroncz
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/28/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Microsoft network client: Digitally sign communications (always)

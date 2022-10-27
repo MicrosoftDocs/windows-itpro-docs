@@ -5,7 +5,7 @@ ms.reviewer:
 manager: dougeby
 author: aczechowski
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -33,7 +33,7 @@ The following is a list of items that you should be aware of before you start th
 
 * When running a Windows To Go workspace, always shutdown the workspace before unplugging the drive.
 
-* Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. You can download Configuration Manager for evaluation from the [Microsoft TechNet Evaluation Center](https://go.microsoft.com/fwlink/p/?LinkId=618746). For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj651035(v=technet.10)).
+* Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj651035(v=technet.10)).
 
 * If you're planning on using a USB drive duplicator to duplicate Windows To Go drives, don't configure offline domain join or BitLocker on the drive.
 

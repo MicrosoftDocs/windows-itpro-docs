@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows 10, version 1803
 description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
-ms.prod: w10
+ms.prod: windows-client
 ms.reviewer: 
 author: aczechowski
 manager: dougeby
@@ -155,7 +155,7 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
 
 ### Privacy
 

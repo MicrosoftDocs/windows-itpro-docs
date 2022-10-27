@@ -3,8 +3,8 @@ title: Policy CSP - Power
 description: Learn how the Policy CSP - Power setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 
 <!--Policies-->
 
-## Power policies  
+## Power policies
 
 <dl>
   <dd>
@@ -93,17 +93,17 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-allowhibernate"></a>**Power/AllowHibernate**  
+<a href="" id="power-allowhibernate"></a>**Power/AllowHibernate**
 
 <!--SupportedSKUs-->
 <table>
@@ -156,7 +156,7 @@ manager: aaroncz
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Decides if hibernate on the machine is allowed or not*
 -   GP name: *AllowHibernate*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -168,7 +168,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-allowstandbystateswhensleepingonbattery"></a>**Power/AllowStandbyStatesWhenSleepingOnBattery**  
+<a href="" id="power-allowstandbystateswhensleepingonbattery"></a>**Power/AllowStandbyStatesWhenSleepingOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -203,7 +203,7 @@ If you disable this policy setting, standby states (S1-S3) aren't allowed.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow standby states (S1-S3) when sleeping (on battery)*
 -   GP name: *AllowStandbyStatesDC_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -215,7 +215,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-allowstandbywhensleepingpluggedin"></a>**Power/AllowStandbyWhenSleepingPluggedIn**  
+<a href="" id="power-allowstandbywhensleepingpluggedin"></a>**Power/AllowStandbyWhenSleepingPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -250,7 +250,7 @@ If you disable this policy setting, standby states (S1-S3) aren't allowed.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow standby states (S1-S3) when sleeping (plugged in)*
 -   GP name: *AllowStandbyStatesAC_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -262,7 +262,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
+<a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -301,7 +301,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the display (on battery)*
 -   GP name: *VideoPowerDownTimeOutDC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
@@ -313,7 +313,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**  
+<a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -350,7 +350,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the display (plugged in)*
 -   GP name: *VideoPowerDownTimeOutAC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
@@ -362,7 +362,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-energysaverbatterythresholdonbattery"></a>**Power/EnergySaverBatteryThresholdOnBattery**  
+<a href="" id="power-energysaverbatterythresholdonbattery"></a>**Power/EnergySaverBatteryThresholdOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -397,7 +397,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Energy Saver Battery Threshold (on battery)*
 -   GP name: *EsBattThresholdDC*
 -   GP element: *EnterEsBattThreshold*
@@ -419,7 +419,7 @@ Supported values: 0-100. The default is 70.
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-energysaverbatterythresholdpluggedin"></a>**Power/EnergySaverBatteryThresholdPluggedIn**  
+<a href="" id="power-energysaverbatterythresholdpluggedin"></a>**Power/EnergySaverBatteryThresholdPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -453,7 +453,7 @@ If you disable or don't configure this policy setting, users control this settin
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Energy Saver Battery Threshold (plugged in)*
 -   GP name: *EsBattThresholdAC*
 -   GP element: *EnterEsBattThreshold*
@@ -475,7 +475,7 @@ Supported values: 0-100. The default is 70.
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
+<a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -512,7 +512,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the system hibernate timeout (on battery)*
 -   GP name: *DCHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -524,7 +524,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
+<a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -561,7 +561,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the system hibernate timeout (plugged in)*
 -   GP name: *ACHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -573,7 +573,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**  
+<a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -608,7 +608,7 @@ If you disable this policy setting, the user isn't prompted for a password when 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Require a password when a computer wakes (on battery)*
 -   GP name: *DCPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -620,7 +620,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-requirepasswordwhencomputerwakespluggedin"></a>**Power/RequirePasswordWhenComputerWakesPluggedIn**  
+<a href="" id="power-requirepasswordwhencomputerwakespluggedin"></a>**Power/RequirePasswordWhenComputerWakesPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -655,7 +655,7 @@ If you disable this policy setting, the user isn't prompted for a password when 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Require a password when a computer wakes (plugged in)*
 -   GP name: *ACPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -667,7 +667,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-selectlidcloseactiononbattery"></a>**Power/SelectLidCloseActionOnBattery**  
+<a href="" id="power-selectlidcloseactiononbattery"></a>**Power/SelectLidCloseActionOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -701,7 +701,7 @@ If you disable this policy setting or don't configure it, users can see and chan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the lid switch action (on battery)*
 -   GP name: *DCSystemLidAction_2*
 -   GP element: *SelectDCSystemLidAction*
@@ -711,7 +711,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-The following are the supported lid close switch actions (on battery):  
+The following are the supported lid close switch actions (on battery):
 -   0 - Take no action
 -   1 - Sleep
 -   2 - System hibernate sleep state
@@ -729,7 +729,7 @@ The following are the supported lid close switch actions (on battery):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-selectlidcloseactionpluggedin"></a>**Power/SelectLidCloseActionPluggedIn**  
+<a href="" id="power-selectlidcloseactionpluggedin"></a>**Power/SelectLidCloseActionPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -763,7 +763,7 @@ If you disable this policy setting or don't configure it, users can see and chan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the lid switch action (plugged in)*
 -   GP name: *ACSystemLidAction_2*
 -   GP element: *SelectACSystemLidAction*
@@ -773,7 +773,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-The following are the supported lid close switch actions (plugged in):  
+The following are the supported lid close switch actions (plugged in):
 -   0 - Take no action
 -   1 - Sleep
 -   2 - System hibernate sleep state
@@ -791,7 +791,7 @@ The following are the supported lid close switch actions (plugged in):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-selectpowerbuttonactiononbattery"></a>**Power/SelectPowerButtonActionOnBattery**  
+<a href="" id="power-selectpowerbuttonactiononbattery"></a>**Power/SelectPowerButtonActionOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -817,7 +817,7 @@ The following are the supported lid close switch actions (plugged in):
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the action that Windows takes when a user presses the Power button. 
+This policy setting specifies the action that Windows takes when a user presses the Power button.
 
 If you enable this policy setting, you must select the desired action.
 
@@ -825,7 +825,7 @@ If you disable this policy setting or don't configure it, users can see and chan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the Power button action (on battery)*
 -   GP name: *DCPowerButtonAction_2*
 -   GP element: *SelectDCPowerButtonAction*
@@ -835,7 +835,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-The following are the supported Power button actions (on battery):  
+The following are the supported Power button actions (on battery):
 -   0 - Take no action
 -   1 - Sleep
 -   2 - System hibernate sleep state
@@ -853,7 +853,7 @@ The following are the supported Power button actions (on battery):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-selectpowerbuttonactionpluggedin"></a>**Power/SelectPowerButtonActionPluggedIn**  
+<a href="" id="power-selectpowerbuttonactionpluggedin"></a>**Power/SelectPowerButtonActionPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -879,7 +879,7 @@ The following are the supported Power button actions (on battery):
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the action that Windows takes when a user presses the Power button. 
+This policy setting specifies the action that Windows takes when a user presses the Power button.
 
 If you enable this policy setting, you must select the desired action.
 
@@ -887,7 +887,7 @@ If you disable this policy setting or don't configure it, users can see and chan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the Power button action (plugged in)*
 -   GP name: *ACPowerButtonAction_2*
 -   GP element: *SelectACPowerButtonAction*
@@ -897,7 +897,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-The following are the supported Power button actions (plugged in):  
+The following are the supported Power button actions (plugged in):
 -   0 - Take no action
 -   1 - Sleep
 -   2 - System hibernate sleep state
@@ -915,7 +915,7 @@ The following are the supported Power button actions (plugged in):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-selectsleepbuttonactiononbattery"></a>**Power/SelectSleepButtonActionOnBattery**  
+<a href="" id="power-selectsleepbuttonactiononbattery"></a>**Power/SelectSleepButtonActionOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -949,7 +949,7 @@ If you disable this policy setting or don't configure it, users can see and chan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the Sleep button action (on battery)*
 -   GP name: *DCSleepButtonAction_2*
 -   GP element: *SelectDCSleepButtonAction*
@@ -959,7 +959,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-The following are the supported Sleep button actions (on battery):  
+The following are the supported Sleep button actions (on battery):
 -   0 - Take no action
 -   1 - Sleep
 -   2 - System hibernate sleep state
@@ -977,7 +977,7 @@ The following are the supported Sleep button actions (on battery):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-selectsleepbuttonactionpluggedin"></a>**Power/SelectSleepButtonActionPluggedIn**  
+<a href="" id="power-selectsleepbuttonactionpluggedin"></a>**Power/SelectSleepButtonActionPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -1011,7 +1011,7 @@ If you disable this policy setting or don't configure it, users can see and chan
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the Sleep button action (plugged in)*
 -   GP name: *ACSleepButtonAction_2*
 -   GP element: *SelectACSleepButtonAction*
@@ -1021,7 +1021,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-The following are the supported Sleep button actions (plugged in):  
+The following are the supported Sleep button actions (plugged in):
 -   0 - Take no action
 -   1 - Sleep
 -   2 - System hibernate sleep state
@@ -1039,7 +1039,7 @@ The following are the supported Sleep button actions (plugged in):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
+<a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -1076,7 +1076,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the system sleep timeout (on battery)*
 -   GP name: *DCStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1088,7 +1088,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
+<a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -1125,7 +1125,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the system sleep timeout (plugged in)*
 -   GP name: *ACStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1137,7 +1137,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-turnoffhybridsleeponbattery"></a>**Power/TurnOffHybridSleepOnBattery**  
+<a href="" id="power-turnoffhybridsleeponbattery"></a>**Power/TurnOffHybridSleepOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -1171,7 +1171,7 @@ If you set this policy setting to 1 or don't configure this policy setting, user
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off hybrid sleep (on battery)*
 -   GP name: *DCStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1196,7 +1196,7 @@ The following are the supported values for Hybrid sleep (on battery):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-turnoffhybridsleeppluggedin"></a>**Power/TurnOffHybridSleepPluggedIn**  
+<a href="" id="power-turnoffhybridsleeppluggedin"></a>**Power/TurnOffHybridSleepPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -1230,7 +1230,7 @@ If you set this policy setting to 1 or don't configure this policy setting, user
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off hybrid sleep (plugged in)*
 -   GP name: *ACStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1255,7 +1255,7 @@ The following are the supported values for Hybrid sleep (plugged in):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-unattendedsleeptimeoutonbattery"></a>**Power/UnattendedSleepTimeoutOnBattery**  
+<a href="" id="power-unattendedsleeptimeoutonbattery"></a>**Power/UnattendedSleepTimeoutOnBattery**
 
 <!--SupportedSKUs-->
 
@@ -1291,7 +1291,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the unattended sleep timeout (on battery)*
 -   GP name: *UnattendedSleepTimeOutDC*
 -   GP element: *EnterUnattendedSleepTimeOut*
@@ -1314,7 +1314,7 @@ Default value for unattended sleep timeout (on battery):
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-unattendedsleeptimeoutpluggedin"></a>**Power/UnattendedSleepTimeoutPluggedIn**  
+<a href="" id="power-unattendedsleeptimeoutpluggedin"></a>**Power/UnattendedSleepTimeoutPluggedIn**
 
 <!--SupportedSKUs-->
 
@@ -1350,7 +1350,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the unattended sleep timeout (plugged in)*
 -   GP name: *UnattendedSleepTimeOutAC*
 -   GP element: *EnterUnattendedSleepTimeOut*

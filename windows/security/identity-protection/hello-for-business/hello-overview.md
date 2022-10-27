@@ -1,19 +1,20 @@
 ---
 title: Windows Hello for Business Overview (Windows)
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.reviewer: prsriva
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - highpri
 ms.topic: conceptual
 localizationpriority: medium
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Holographic for Business</b>
 ---
 # Windows Hello for Business Overview
 
@@ -46,6 +47,7 @@ As an administrator in an enterprise or educational organization, you can create
 
 - **Facial recognition**. This type of biometric recognition uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major laptop manufacturers are incorporating it into their devices, as well.
 - **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is more reliable and less error-prone. Most existing fingerprint readers work with Windows 10 and Windows 11, whether they're external or integrated into laptops or USB keyboards.
+- **Iris Recognition**. This type of biometric recognition uses cameras to perform scan of your iris. HoloLens 2 is the first Microsoft device to introduce an Iris scanner. These iris scanners are the same across all HoloLens 2 devices.
 
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data. For more information about biometric authentication with Windows Hello for Business, see [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md).
 
@@ -94,9 +96,9 @@ For details, see [How Windows Hello for Business works](hello-how-it-works.md).
 
 ## Comparing key-based and certificate-based authentication
 
-Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello for Business. Enterprises that don't use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello. This functionality still uses certificates on the domain controllers as a root of trust. Starting with Windows 10 version 21H2, there's a feature called cloud trust for hybrid deployments, which uses Azure AD as the root of trust. Cloud trust uses key-based credentials for Windows Hello but doesn't require certificates on the domain controller.
+Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello for Business. Enterprises that don't use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello. This functionality still uses certificates on the domain controllers as a root of trust. Starting with Windows 10 version 21H2, there's a feature called cloud Kerberos trust for hybrid deployments, which uses Azure AD as the root of trust. cloud Kerberos trust uses key-based credentials for Windows Hello but doesn't require certificates on the domain controller.
 
-Windows Hello for Business with a key, including cloud trust, doesn't support supplied credentials for RDP. RDP doesn't support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business with a key credential can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+Windows Hello for Business with a key, including cloud Kerberos trust, doesn't support supplied credentials for RDP. RDP doesn't support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business with a key credential can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
 
 ## Learn more
 

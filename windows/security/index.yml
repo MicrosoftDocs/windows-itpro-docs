@@ -12,8 +12,8 @@ metadata:
     - m365-security-compliance
     - highpri
   ms.custom: intro-hub-or-landing
-  author: dansimp #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  author: paolomatarazzo
+  ms.author: paoloma
   ms.date: 09/20/2021
   localization_priority: Priority
 
@@ -133,13 +133,13 @@ landingContent:
       - linkListType: concept
         links:
         - text: Mobile device management
-          url: https://docs.microsoft.com/windows/client-management/mdm/
+          url: /windows/client-management/mdm/
         - text: Azure Active Directory
           url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
         - text: Your Microsoft Account
           url: identity-protection/access-control/microsoft-accounts.md
         - text: OneDrive
-          url: https://docs.microsoft.com/onedrive/onedrive
+          url: /onedrive/onedrive
         - text: Family safety
           url: threat-protection/windows-defender-security-center/wdsc-family-options.md
 # Cards and links should be based on top customer tasks or top subjects
@@ -170,4 +170,3 @@ landingContent:
         links:
         - text: Windows and Privacy Compliance
           url: /windows/privacy/windows-10-and-privacy-compliance
-

@@ -4,10 +4,12 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: 
+  - highpri
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
@@ -362,7 +364,7 @@ For more information about Update Compliance, see [Monitor Windows Updates with 
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
 
 ### Privacy
 

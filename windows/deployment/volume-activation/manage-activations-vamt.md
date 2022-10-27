@@ -4,10 +4,11 @@ description: Learn how to manage activations and how to activate a client comput
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Manage Activations

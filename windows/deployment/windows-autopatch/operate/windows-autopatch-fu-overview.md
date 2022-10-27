@@ -1,9 +1,9 @@
 ---
 title: Windows feature updates
-description:  This article explains how Windows feature updates are managed in Autopatch
+description: This article explains how Windows feature updates are managed in Autopatch
 ms.date: 07/11/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -46,7 +46,7 @@ The final release schedule is communicated prior to release and may vary a littl
 | Fast | Release start + 60 days |
 | Broad | Release start + 90 days |
 
-:::image type="content" source="../media/windows-feature-release-process-timeline.png" alt-text="Windows feature release timeline":::
+:::image type="content" source="../media/windows-feature-release-process-timeline.png" alt-text="Windows feature release timeline" lightbox="../media/windows-feature-release-process-timeline.png":::
 
 ## New devices to Windows Autopatch
 
@@ -64,7 +64,7 @@ When releasing a feature update, there are two policies that are configured by t
 | Ring | Target version (DSS) Policy | Feature update deferral | Feature update deadline | Feature update grace period |
 | ----- | ----- | ----- | ----- | ----- |
 | Test | 21H2 | 0 | 5 | 0 |
-| First | 21H2 | 0 | 5 | 0 |
+| First | 21H2 | 0 | 5 | 2 |
 | Fast | 21H2 | 0 | 5 | 2 |
 | Broad | 21H2 | 0 | 5 | 2 |
 

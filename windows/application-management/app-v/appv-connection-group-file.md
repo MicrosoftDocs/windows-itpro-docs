@@ -2,12 +2,13 @@
 title: About the connection group file (Windows 10/11)
 description: A summary of what the connection group file is and how to configure it.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 06/25/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # About the connection group file

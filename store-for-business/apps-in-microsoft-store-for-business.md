@@ -4,7 +4,6 @@ description: Microsoft Store for Business has thousands of apps from many differ
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
@@ -23,7 +22,7 @@ ms.date: 07/21/2021
 -   Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Microsoft Store for Business and Education has thousands of apps from many different categories.
 
@@ -55,14 +54,14 @@ Line-of-business (LOB) apps are also supported using Microsoft Store. Admins can
 
 Some apps offer you the option to make in-app purchases. In-app purchases are not currently supported for apps that are acquired through Microsoft Store and distributed to employees.
 
-If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization’s inventory.
+If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization's inventory.
 
 ## <a href="" id="licensing-model"></a>Licensing model: online and offline licenses
 
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
-Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
+Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user's Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 

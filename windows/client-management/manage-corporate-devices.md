@@ -5,7 +5,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 keywords: [MDM, device management]
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/14/2021
@@ -45,5 +45,5 @@ You can use the same management tools to manage all device types running Windows
 
 [Windows 10 (and Windows 11) and Azure Active Directory: Embracing the Cloud](https://go.microsoft.com/fwlink/p/?LinkId=615768)
 
-Microsoft Virtual Academy course: [Configuration Manager & Windows Intune](/learn/)
- 
+Microsoft Virtual Academy course: [Configuration Manager & Windows Intune](/training/)
+

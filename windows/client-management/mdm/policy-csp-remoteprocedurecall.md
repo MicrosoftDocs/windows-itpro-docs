@@ -3,8 +3,8 @@ title: Policy CSP - RemoteProcedureCall
 description: The Policy CSP - RemoteProcedureCall setting controls whether RPC clients authenticate when the call they're making contains authentication information.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## RemoteProcedureCall policies  
+## RemoteProcedureCall policies
 
 <dl>
   <dd>
@@ -29,16 +29,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteprocedurecall-rpcendpointmapperclientauthentication"></a>**RemoteProcedureCall/RPCEndpointMapperClientAuthentication**  
+<a href="" id="remoteprocedurecall-rpcendpointmapperclientauthentication"></a>**RemoteProcedureCall/RPCEndpointMapperClientAuthentication**
 
 <!--SupportedSKUs-->
 
@@ -64,7 +64,7 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether RPC clients authenticate with the Endpoint Mapper Service, when the call they're making contains authentication information.   The Endpoint Mapper Service on computers running Windows NT4 (all service packs) can't process authentication information supplied in this manner. 
+This policy setting controls whether RPC clients authenticate with the Endpoint Mapper Service, when the call they're making contains authentication information.   The Endpoint Mapper Service on computers running Windows NT4 (all service packs) can't process authentication information supplied in this manner.
 
 If you disable this policy setting, RPC clients won't authenticate to the Endpoint Mapper Service, but they'll be able to communicate with the Endpoint Mapper Service on Windows NT4 Server.
 
@@ -78,7 +78,7 @@ If you don't configure this policy setting, it remains disabled. RPC clients won
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable RPC Endpoint Mapper Client Authentication*
 -   GP name: *RpcEnableAuthEpResolution*
 -   GP path: *System/Remote Procedure Call*
@@ -90,7 +90,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteprocedurecall-restrictunauthenticatedrpcclients"></a>**RemoteProcedureCall/RestrictUnauthenticatedRPCClients**  
+<a href="" id="remoteprocedurecall-restrictunauthenticatedrpcclients"></a>**RemoteProcedureCall/RestrictUnauthenticatedRPCClients**
 
 <!--SupportedSKUs-->
 
@@ -120,7 +120,7 @@ This policy setting controls, how the RPC server runtime handles unauthenticated
 
 This policy setting impacts all RPC applications. In a domain environment, this policy setting should be used with caution as it can impact a wide range of functionality including group policy processing itself. Reverting a change to this policy setting can require manual intervention on each affected machine. This policy setting should never be applied to a domain controller.
 
-If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting. 
+If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting.
 
 If you don't configure this policy setting, it remains disabled. The RPC server runtime will behave as though it was enabled with the value of "Authenticated" used for Windows Client, and the value of "None" used for Server SKUs that support this policy setting.
 
@@ -138,7 +138,7 @@ If you enable this policy setting, it directs the RPC server runtime to restrict
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict Unauthenticated RPC clients*
 -   GP name: *RpcRestrictRemoteClients*
 -   GP path: *System/Remote Procedure Call*

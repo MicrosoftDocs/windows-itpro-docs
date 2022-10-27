@@ -5,21 +5,14 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 07/18/2019
 ---
 
 # Policies in Policy CSP supported by HoloLens (first gen) Development Edition
-
-> [!div class="op_single_selector"]
->
-> - [HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)
-> - [HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)
-> - [HoloLens (1st gen) Development Edition]()
->
 
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
 - [ApplicationManagement/AllowAppStoreAutoUpdate](policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)

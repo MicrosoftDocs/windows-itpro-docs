@@ -3,8 +3,8 @@ title: Policy CSP - Start
 description: Use the Policy CSP - Start setting to control the visibility of the Documents shortcut on the Start menu.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Start policies  
+## Start policies
 
 <dl>
   <dd>
@@ -57,6 +57,12 @@ manager: aaroncz
     <a href="#start-disablecontextmenus">Start/DisableContextMenus</a>
   </dd>
   <dd>
+    <a href="#start-disablecontrolcenter">Start/DisableControlCenter</a>
+  </dd>
+  <dd>
+    <a href="#start-disableeditingquicksettings">Start/DisableEditingQuickSettings</a>
+  </dd>
+  <dd>
     <a href="#start-forcestartsize">Start/ForceStartSize</a>
   </dd>
   <dd>
@@ -87,6 +93,9 @@ manager: aaroncz
     <a href="#start-hiderecentlyaddedapps">Start/HideRecentlyAddedApps</a>
   </dd>
   <dd>
+    <a href="#start-hiderecommendedsection">Start/HideRecommendedSection</a>
+  </dd>
+  <dd>
     <a href="#start-hiderestart">Start/HideRestart</a>
   </dd>
   <dd>
@@ -102,6 +111,9 @@ manager: aaroncz
     <a href="#start-hideswitchaccount">Start/HideSwitchAccount</a>
   </dd>
   <dd>
+    <a href="#start-hidetaskviewbutton">Start/HideTaskViewButton</a>
+  </dd>
+  <dd>
     <a href="#start-hideusertile">Start/HideUserTile</a>
   </dd>
   <dd>
@@ -114,6 +126,9 @@ manager: aaroncz
     <a href="#start-showorhidemostusedapps">Start/ShowOrHideMostUsedApps</a>
   </dd>
   <dd>
+    <a href="#start-simplifyquicksettings">Start/SimplifyQuickSettings</a>
+  </dd>
+  <dd>
     <a href="#start-startlayout">Start/StartLayout</a>
   </dd>
 </dl>
@@ -121,7 +136,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
+<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -164,7 +179,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
+<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -207,7 +222,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
+<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -250,7 +265,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
+<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -293,7 +308,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
+<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -336,7 +351,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
+<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -379,7 +394,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
+<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -422,7 +437,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
+<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -465,7 +480,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
+<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -508,7 +523,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
+<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -551,7 +566,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-configurestartpins"></a>**Start/ConfigureStartPins**  
+<a href="" id="start-configurestartpins"></a>**Start/ConfigureStartPins**
 
 <!--SupportedSKUs-->
 <table>
@@ -612,7 +627,7 @@ This string policy will take a JSON file (expected name LayoutModification.json)
 
 
 <!--Policy-->
-<a href="" id="start-disablecontextmenus"></a>**Start/DisableContextMenus**  
+<a href="" id="start-disablecontextmenus"></a>**Start/DisableContextMenus**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -644,7 +659,7 @@ Enabling this policy prevents context menus from being invoked in the Start Menu
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable context menus in the Start Menu*
 -   GP name: *DisableContextMenusInStart*
 -   GP path: *Start Menu and Taskbar*
@@ -665,11 +680,105 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="start-disablecontrolcenter"></a>**Start/DisableControlCenter**
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting disables the Control Center button from the bottom right area on the taskbar. The Control Center area is located at the left of the clock in the taskbar and includes icons for current network and volume.
+
+If this setting is enabled, Control Center area is displayed but the button to open the Control Center will be disabled.
+
+>[!Note]
+> A reboot is required for this policy setting to take effect.
+
+<!--/Description-->
+
+<!--ADMXMapped-->
+ADMX Info:
+-   GP Friendly name: *Remove control center*
+-   GP name: *DisableControlCenter*
+-   GP path: *Start Menu and Taskbar*
+-   GP ADMX file name: *Taskbar.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- Integer 0 - Disabled/Not configured.
+- Integer 1 - Enabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="start-disableeditingquicksettings"></a>**Start/DisableEditingQuickSettings**
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will allow admins to indicate whether Quick Actions can be edited by the user.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0: Allow editing Quick Actions (default)
+- 1: Disable editing Quick Actions
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
+<a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -716,7 +825,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideapplist"></a>**Start/HideAppList**  
+<a href="" id="start-hideapplist"></a>**Start/HideAppList**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -750,7 +859,7 @@ The table below shows the applicability of Windows:
 Allows IT Admins to configure Start by collapsing or removing the all apps list.
 
 > [!Note]
-> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
+> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
 To validate on Desktop, do the following steps:
 
@@ -774,7 +883,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
+<a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -823,7 +932,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
+<a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -880,7 +989,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
+<a href="" id="start-hidehibernate"></a>**Start/HideHibernate**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -932,7 +1041,7 @@ To validate on Laptop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidelock"></a>**Start/HideLock**  
+<a href="" id="start-hidelock"></a>**Start/HideLock**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -981,7 +1090,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**  
+<a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1014,7 +1123,7 @@ Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the People Bar from the taskbar*
 -   GP name: *HidePeopleBar*
 -   GP path: *Start Menu and Taskbar*
@@ -1033,7 +1142,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
+<a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1085,7 +1194,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
+<a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1144,7 +1253,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
+<a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1179,7 +1288,7 @@ Allows IT Admins to configure Start by hiding recently added apps.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove "Recently added" list from Start Menu*
 -   GP name: *HideRecentlyAddedApps*
 -   GP path: *Start Menu and Taskbar*
@@ -1209,7 +1318,48 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hiderestart"></a>**Start/HideRestart**  
+<a href="" id="start-hiderecommendedsection"></a>**Start/HideRecommendedSection**
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows you to hide the Start Menu's Recommended section when enabled.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0 (default): Do not hide the Start menu's Recommended section.
+- 1: Hide the Start menu's Recommended section.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="start-hiderestart"></a>**Start/HideRestart**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1258,7 +1408,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
+<a href="" id="start-hideshutdown"></a>**Start/HideShutDown**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1307,7 +1457,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
+<a href="" id="start-hidesignout"></a>**Start/HideSignOut**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1356,7 +1506,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hidesleep"></a>**Start/HideSleep**  
+<a href="" id="start-hidesleep"></a>**Start/HideSleep**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1405,7 +1555,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
+<a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1454,7 +1604,49 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
+<a href="" id="start-hidetaskviewbutton"></a>**Start/HideTaskViewButton**
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows you to hide the Task View button from the Taskbar and its corresponding option in the Settings app.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0 (default): Do not hide the Taskbar's Task View button.
+- 1: Hide the Taskbar's Task View button.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="start-hideusertile"></a>**Start/HideUserTile**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1507,7 +1699,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
+<a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1567,7 +1759,7 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
+<a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1619,41 +1811,18 @@ To validate on Desktop, do the following steps:
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-showorhidemostusedapps"></a>**Start/ShowOrHideMostUsedApps**  
+<a href="" id="start-showorhidemostusedapps"></a>**Start/ShowOrHideMostUsedApps**
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1687,7 +1856,48 @@ On clean install, the user setting defaults to "hide".
 <hr/>
 
 <!--Policy-->
-<a href="" id="start-startlayout"></a>**Start/StartLayout**  
+<a href="" id="start-simplifyquicksettings"></a>**Start/SimplifyQuickSettings**
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will allow admins to indicate whether the default or simplified Quick Actions layout should be loaded.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following are the supported values:
+
+- 0: load regular Quick Actions layout.
+- 1: load simplified Quick Actions layout.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="start-startlayout"></a>**Start/StartLayout**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1716,7 +1926,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)  
+> In addition to being able to set this node on a per user-basis, it can now also be set on a per-device basis. For more information, see [Policy scope](./policy-configuration-service-provider.md#policy-scope)
 
 Here's more SKU support information:
 
@@ -1732,7 +1942,7 @@ For more information on how to customize the Start layout, see [Customize and ex
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Start Layout*
 -   GP name: *LockedStartLayout*
 -   GP path: *Start Menu and Taskbar*

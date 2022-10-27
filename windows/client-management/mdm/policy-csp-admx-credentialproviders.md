@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_CredentialProviders.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/11/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_CredentialProviders
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_CredentialProviders policies  
+## ADMX_CredentialProviders policies
 
 <dl>
   <dd>
@@ -42,7 +42,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credentialproviders-allowdomaindelaylock"></a>**ADMX_CredentialProviders/AllowDomainDelayLock**  
+<a href="" id="admx-credentialproviders-allowdomaindelaylock"></a>**ADMX_CredentialProviders/AllowDomainDelayLock**
 
 <!--SupportedSKUs-->
 
@@ -83,7 +83,7 @@ If you don't configure this policy setting on a workgroup device, a user on a Co
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow users to select when a password is required when resuming from connected standby*
 -   GP name: *AllowDomainDelayLock*
 -   GP path: *System\Logon*
@@ -94,7 +94,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credentialproviders-defaultcredentialprovider"></a>**ADMX_CredentialProviders/DefaultCredentialProvider**  
+<a href="" id="admx-credentialproviders-defaultcredentialprovider"></a>**ADMX_CredentialProviders/DefaultCredentialProvider**
 
 <!--SupportedSKUs-->
 
@@ -132,7 +132,7 @@ If you disable or don't configure this policy setting, the system picks the defa
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Assign a default credential provider*
 -   GP name: *DefaultCredentialProvider*
 -   GP path: *System\Logon*
@@ -144,7 +144,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="admx-credentialproviders-excludedcredentialproviders"></a>**ADMX_CredentialProviders/ExcludedCredentialProviders**  
+<a href="" id="admx-credentialproviders-excludedcredentialproviders"></a>**ADMX_CredentialProviders/ExcludedCredentialProviders**
 
 <!--SupportedSKUs-->
 
@@ -170,7 +170,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows the administrator to exclude the specified credential providers from use during authentication.  
+This policy setting allows the administrator to exclude the specified credential providers from use during authentication.
 
 > [!NOTE]
 > Credential providers are used to process and validate user credentials during logon or when authentication is required. Windows Vista provides two default credential providers: Password and Smart Card. An administrator can install additional credential providers for different sets of credentials (for example, to support biometric authentication).
@@ -182,7 +182,7 @@ If you disable or do not configure this policy, all installed and otherwise enab
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Exclude credential providers*
 -   GP name: *ExcludedCredentialProviders*
 -   GP path: *System\Logon*

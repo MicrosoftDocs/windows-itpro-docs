@@ -4,7 +4,6 @@ description: Troubleshooting topics for Microsoft Store for Business.
 ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
@@ -22,7 +21,7 @@ ms.date: 07/21/2021
 -   Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 Troubleshooting topics for Microsoft Store for Business.
 

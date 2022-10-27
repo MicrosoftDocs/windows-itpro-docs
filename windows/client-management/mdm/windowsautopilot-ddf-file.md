@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: vinaypamnani-msft
 ms.date: 02/07/2022
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -16,9 +16,9 @@ manager: aaroncz
 > [!WARNING]
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic shows the device description framework (DDF) for the **WindowsAutopilot** configuration service provider. 
+This topic shows the device description framework (DDF) for the **WindowsAutopilot** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 ```xml
 <NodeName>WindowsAutopilot</NodeName>

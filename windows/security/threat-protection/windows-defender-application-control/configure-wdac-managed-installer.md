@@ -3,7 +3,7 @@ title: Managed installer and ISG technical reference and troubleshooting guide (
 description: Explains how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 08/14/2020
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Managed installer and ISG technical reference and troubleshooting guide
@@ -31,7 +31,7 @@ ms.technology: windows-sec
 
 ## Using fsutil to query SmartLocker EA
 
-Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This verification can be done by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This EA's presence can be used in conjunction with enabling the MI and ISG logging events.
+Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph (ISG) enabled can use fsutil to determine whether a file was allowed to run by one of these features. This verification can be done by querying the Extended Attributes (EAs) on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This EA's presence can be used in conjunction with enabling the MI and ISG logging events.
 
 **Example:**
 

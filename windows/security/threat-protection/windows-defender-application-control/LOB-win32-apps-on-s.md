@@ -3,7 +3,7 @@ title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows)
 description: Using Windows Defender Application Control (WDAC) supplemental policies, you can expand the S mode base policy on your Intune-managed devices.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 10/30/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Allow Line-of-Business Win32 Apps on Intune-Managed S Mode Devices
@@ -49,7 +49,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
     - Create a new base policy using [New-CIPolicy](/powershell/module/configci/new-cipolicy?view=win10-ps&preserve-view=true)
 
         ```powershell
-        New-CIPolicy -MultiplePolicyFormat -ScanPath <path> -UserPEs -FilePath "<path>\SupplementalPolicy.xml" -Level Publisher -Fallback Hash
+        New-CIPolicy -MultiplePolicyFormat -ScanPath <path> -UserPEs -FilePath "<path>\SupplementalPolicy.xml" -Level FilePublisher -Fallback SignedVersion,Publisher,Hash
         ```
     - Change it to a supplemental policy using [Set-CIPolicyIdInfo](/powershell/module/configci/set-cipolicyidinfo?view=win10-ps&preserve-view=true)
 

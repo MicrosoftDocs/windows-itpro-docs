@@ -3,8 +3,8 @@ title: Policy CSP - DeviceGuard
 description: Learn how to use the Policy CSP - DeviceGuard setting to allow the IT admin to configure the launch of System Guard.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## DeviceGuard policies  
+## DeviceGuard policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**  
+<a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**
 
 <!--SupportedSKUs-->
 
@@ -78,7 +78,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *SystemGuardDrop*
@@ -100,7 +100,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
+<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**
 
 <!--SupportedSKUs-->
 
@@ -131,7 +131,7 @@ Turns on virtualization based security(VBS) at the next reboot. Virtualization b
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP path: *System/Device Guard*
@@ -150,7 +150,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
+<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**
 
 <!--SupportedSKUs-->
 
@@ -181,7 +181,7 @@ This setting lets users turn on Credential Guard with virtualization-based secur
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *CredentialIsolationDrop*
@@ -202,7 +202,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
+<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**
 
 <!--SupportedSKUs-->
 
@@ -232,7 +232,7 @@ This setting specifies the platform security level at the next reboot. Value typ
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *RequirePlatformSecurityFeaturesDrop*

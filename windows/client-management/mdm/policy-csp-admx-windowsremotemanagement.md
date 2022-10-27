@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WindowsRemoteManagement
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/16/2020
 ms.reviewer: 
@@ -14,17 +14,17 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WindowsRemoteManagement
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WindowsRemoteManagement policies  
+## ADMX_WindowsRemoteManagement policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsremotemanagement-disallowkerberos-1"></a>**ADMX_WindowsRemoteManagement/DisallowKerberos_1**  
+<a href="" id="admx-windowsremotemanagement-disallowkerberos-1"></a>**ADMX_WindowsRemoteManagement/DisallowKerberos_1**
 
 <!--SupportedSKUs-->
 
@@ -68,7 +68,7 @@ manager: aaroncz
 <!--Description-->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Kerberos credentials over the network.
 
-If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.  
+If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.
 
 If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
 
@@ -76,7 +76,7 @@ If you disable or do not configure this policy setting, the WinRM service accept
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow Kerberos authentication*
 -   GP name: *DisallowKerberos_1*
 -   GP path: *Windows Components\Windows Remote Management (WinRM)\WinRM Service*
@@ -88,7 +88,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsremotemanagement-disallowkerberos-2"></a>**ADMX_WindowsRemoteManagement/DisallowKerberos_2**  
+<a href="" id="admx-windowsremotemanagement-disallowkerberos-2"></a>**ADMX_WindowsRemoteManagement/DisallowKerberos_2**
 
 <!--SupportedSKUs-->
 
@@ -125,7 +125,7 @@ If you disable or do not configure this policy setting, the WinRM client uses th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow Kerberos authentication*
 -   GP name: *DisallowKerberos_2*
 -   GP path: *Windows Components\Windows Remote Management (WinRM)\WinRM Client*

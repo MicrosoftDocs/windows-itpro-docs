@@ -2,13 +2,14 @@
 title: Log files and resolving upgrade errors
 manager: dougeby
 ms.author: aaroncz
-description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process. 
+description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process.
 ms.custom: seo-marvel-apr2020
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-deploy
 ---
 
 # Log files
@@ -63,17 +64,17 @@ See the following example:
 
 ## Analyze log files
 
-The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
+The following instructions are meant for IT professionals. Also see the [Upgrade error codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) section in this guide to familiarize yourself with [result codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) and [extend codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes).
 
 To analyze Windows Setup log files:
 
 1.  Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
 
-2.  Based on the [extend code](upgrade-error-codes.md#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+2.  Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
 
 3.  Open the log file in a text editor, such as notepad.
 
-4.  Using the [result code](upgrade-error-codes.md#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+4.  Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
 
 5.  To find the last occurrence of the result code:
 

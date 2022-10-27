@@ -1,15 +1,16 @@
 ---
 title: Delivery Optimization in Update Compliance
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: Learn how the Update Compliance solution provides you with information about your Delivery Optimization configuration.
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Delivery Optimization in Update Compliance
@@ -46,7 +47,7 @@ The table breaks down the number of bytes from each download source into specifi
 The download sources that could be included are:
 - LAN Bytes: Bytes downloaded from LAN Peers which are other devices on the same local network
 - Group Bytes: Bytes downloaded from Group Peers which are other devices that belong to the same Group (available when the "Group" download mode is used)
-- HTTP Bytes: Non-peer bytes. The HTTP download source can be Microsoft Servers, Windows Update Servers, a WSUS server or an Configuration Manager Distribution Point for Express Updates.
+- HTTP Bytes: Non-peer bytes. The HTTP download source can be Microsoft Servers, Windows Update Servers, a WSUS server or a Configuration Manager Distribution Point for Express Updates.
 
 <!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
 [!INCLUDE [Monitor Delivery Optimization](../do/includes/waas-delivery-optimization-monitor.md)]

@@ -3,8 +3,8 @@ title: Policy CSP - RemoteAssistance
 description: Learn how the Policy CSP - RemoteAssistance setting allows you to specify a custom message to display.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## RemoteAssistance policies  
+## RemoteAssistance policies
 
 <dl>
   <dd>
@@ -35,16 +35,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**  
+<a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**
 
 <!--SupportedSKUs-->
 
@@ -85,7 +85,7 @@ If you don't configure this policy setting, the user sees the default warning me
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Customize warning messages*
 -   GP name: *RA_Options*
 -   GP path: *System/Remote Assistance*
@@ -97,7 +97,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**  
+<a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**
 
 <!--SupportedSKUs-->
 
@@ -134,7 +134,7 @@ If you don't configure this setting, application-based settings are used.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on session logging*
 -   GP name: *RA_Logging*
 -   GP path: *System/Remote Assistance*
@@ -146,7 +146,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteassistance-solicitedremoteassistance"></a>**RemoteAssistance/SolicitedRemoteAssistance**  
+<a href="" id="remoteassistance-solicitedremoteassistance"></a>**RemoteAssistance/SolicitedRemoteAssistance**
 
 <!--SupportedSKUs-->
 
@@ -191,7 +191,7 @@ If you enable this policy setting, you should also enable appropriate firewall e
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Solicited Remote Assistance*
 -   GP name: *RA_Solicit*
 -   GP path: *System/Remote Assistance*
@@ -203,7 +203,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteassistance-unsolicitedremoteassistance"></a>**RemoteAssistance/UnsolicitedRemoteAssistance**  
+<a href="" id="remoteassistance-unsolicitedremoteassistance"></a>**RemoteAssistance/UnsolicitedRemoteAssistance**
 
 <!--SupportedSKUs-->
 
@@ -272,7 +272,7 @@ For computers running Windows Server 2003 with Service Pack 1 (SP1)
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Offer Remote Assistance*
 -   GP name: *RA_Unsolicit*
 -   GP path: *System/Remote Assistance*

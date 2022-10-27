@@ -1,7 +1,7 @@
 ---
 title: Create mandatory user profiles (Windows 10 and Windows 11)
 description: A mandatory user profile is a special type of pre-configured roaming user profile that administrators can use to specify settings for users.
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 ms.date: 09/14/2021

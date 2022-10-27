@@ -3,7 +3,7 @@ title: Create WDAC Deny Policy
 description: Explains how to create WDAC deny policies
 keywords: WDAC, policy
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,9 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
-ms.author: dansimp
-manager: dansimp
-ms.technology: windows-sec
+ms.author: vinpa
+manager: aaroncz
+ms.technology: itpro-security
 ---
 
 # Guidance on Creating WDAC Deny Policies
@@ -45,7 +45,7 @@ To create effective Windows Defender Application Control deny policies, it's cru
 5. If no rule exists for the file and it's not allowed based on ISG or MI, then the file is blocked implicitly.
 
 > [!NOTE]
-> If your Windows Defender Application Control policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud. For more details, see [How does the integration between WDAC and the Intelligent Security Graph work?](use-windows-defender-application-control-with-intelligent-security-graph.md#how-does-the-integration-between-wdac-and-the-intelligent-security-graph-work).
+> If your Windows Defender Application Control policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud. For more details, see [How does the integration between WDAC and the Intelligent Security Graph work?](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph#how-does-wdac-work-with-the-isg).
 
 ## Interaction with Existing Policies
 
@@ -126,13 +126,13 @@ Deny rules and policies can be created using the PowerShell cmdlets or the [WDAC
 ### Software Publisher Based Deny Rule
 
 ```Powershell
-$DenyRules += New-CIPolicyRule -Level FilePublisher -DriverFilePath <binary_to_block> -Deny -Fallback FileName,Hash
+$DenyRules += New-CIPolicyRule -Level FilePublisher -DriverFilePath <binary_to_block> -Fallback SignedVersion,Publisher,Hash -Deny
 ```
 
 ### Software Attributes Based Deny Rule
 
 ```Powershell
-$DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Deny -Fallback Hash
+$DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Fallback Hash -Deny
 ```
 
 ### Hash Based Deny Rule

@@ -3,8 +3,8 @@ title: Policy CSP - WirelessDisplay
 description: Use the Policy CSP - WirelessDisplay setting to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## WirelessDisplay policies  
+## WirelessDisplay policies
 
 <dl>
   <dd>
@@ -53,7 +53,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowmdnsadvertisement"></a>**WirelessDisplay/AllowMdnsAdvertisement**  
+<a href="" id="wirelessdisplay-allowmdnsadvertisement"></a>**WirelessDisplay/AllowMdnsAdvertisement**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -95,7 +95,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowmdnsdiscovery"></a>**WirelessDisplay/AllowMdnsDiscovery**  
+<a href="" id="wirelessdisplay-allowmdnsdiscovery"></a>**WirelessDisplay/AllowMdnsDiscovery**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -128,7 +128,7 @@ This policy setting allows you to turn off discovering the display service adver
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Don't allow
+-   0 - Doesn't allow
 -   1 - Allow
 
 <!--/SupportedValues-->
@@ -137,7 +137,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowmovementdetectiononinfrastructure"></a>**WirelessDisplay/AllowMovementDetectionOnInfrastructure**  
+<a href="" id="wirelessdisplay-allowmovementdetectiononinfrastructure"></a>**WirelessDisplay/AllowMovementDetectionOnInfrastructure**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -166,9 +166,9 @@ The table below shows the applicability of Windows:
 <!--Description-->
 This policy setting allows you to disable the infrastructure movement detection feature.
 
-If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you're projecting over infrastructure.
+- If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure.
 
-If you set it to 1, your PC will detect that you've moved and will automatically disconnect your infrastructure Wireless Display session.
+- If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
 
 The default value is 1.
 
@@ -177,7 +177,7 @@ The default value is 1.
 
 The following list shows the supported values:
 
-- 0 - Don't allow
+- 0 - Doesn't allow
 - 1 (Default) - Allow
 
 <!--/SupportedValues-->
@@ -186,7 +186,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
+<a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -228,7 +228,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
+<a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -270,7 +270,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
+<a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -305,7 +305,7 @@ Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't allow this PC to be projected to*
 -   GP name: *AllowProjectionToPC*
 -   GP path: *Windows Components/Connect*
@@ -324,7 +324,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
+<a href="" id="wirelessdisplay-allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -366,7 +366,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
+<a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -408,7 +408,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
+<a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -443,7 +443,7 @@ Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Require pin for pairing*
 -   GP name: *RequirePinForPairing*
 -   GP path: *Windows Components/Connect*

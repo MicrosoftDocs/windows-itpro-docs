@@ -3,8 +3,8 @@ title: Policy CSP - TextInput
 description: The Policy CSP - TextInput setting allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 03/03/2022
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## TextInput policies  
+## TextInput policies
 
 <dl>
   <dd>
@@ -110,7 +110,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**  
+<a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**
 
 <hr/>
 
@@ -132,7 +132,7 @@ Placeholder only. Do not use in production environment.
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**  
+<a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -179,7 +179,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
+<a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -225,7 +225,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
+<a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -272,7 +272,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
+<a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -319,7 +319,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
+<a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -366,7 +366,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
+<a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -413,7 +413,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
+<a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -460,7 +460,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**  
+<a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -490,7 +490,7 @@ The table below shows the applicability of Windows:
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled. 
+Specifies whether text prediction is enabled or disabled for the on-screen keyboard, touch keyboard, and handwriting recognition tool. When this policy is set to disabled, text prediction is disabled.
 
 Most restricted value is 0.
 
@@ -515,7 +515,7 @@ To validate that text prediction is disabled on Windows 10 for desktop, do the f
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
+<a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**
 
 <hr/>
 
@@ -528,7 +528,7 @@ This policy has been deprecated.
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
+<a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -564,7 +564,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Uninstallation of Language Features*
 -   GP name: *AllowLanguageFeaturesUninstall*
 -   GP path: *Windows Components/Text Input*
@@ -583,7 +583,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
+<a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -614,7 +614,7 @@ This policy setting controls the ability to send inking and typing data to Micro
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Improve inking and typing recognition*
 -   GP name: *AllowLinguisticDataCollection*
 -   GP path: *Windows Components/Text Input*
@@ -630,7 +630,7 @@ This setting supports a range of values between 0 and 1.
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-allowtextinputsuggestionupdate"></a>**TextInput/AllowTextInputSuggestionUpdate**  
+<a href="" id="textinput-allowtextinputsuggestionupdate"></a>**TextInput/AllowTextInputSuggestionUpdate**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -677,7 +677,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-configurejapaneseimeversion"></a>**TextInput/ConfigureJapaneseIMEVersion**  
+<a href="" id="textinput-configurejapaneseimeversion"></a>**TextInput/ConfigureJapaneseIMEVersion**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -705,7 +705,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> - The policy is only enforced in Windows 10 for desktop.  
+> - The policy is only enforced in Windows 10 for desktop.
 > - This policy requires reboot to take effect.
 
 Allows IT admins to configure Microsoft Japanese IME version in the desktop.
@@ -724,7 +724,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-configuresimplifiedchineseimeversion"></a>**TextInput/ConfigureSimplifiedChineseIMEVersion**  
+<a href="" id="textinput-configuresimplifiedchineseimeversion"></a>**TextInput/ConfigureSimplifiedChineseIMEVersion**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -752,7 +752,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> - This policy is enforced only in Windows 10 for desktop.  
+> - This policy is enforced only in Windows 10 for desktop.
 > - This policy requires reboot to take effect.
 
 Allows IT admins to configure Microsoft Simplified Chinese IME version in the desktop.
@@ -771,7 +771,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-configuretraditionalchineseimeversion"></a>**TextInput/ConfigureTraditionalChineseIMEVersion**  
+<a href="" id="textinput-configuretraditionalchineseimeversion"></a>**TextInput/ConfigureTraditionalChineseIMEVersion**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -799,7 +799,7 @@ The table below shows the applicability of Windows:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> - This policy is enforced only in Windows 10 for desktop.  
+> - This policy is enforced only in Windows 10 for desktop.
 > - This policy requires reboot to take effect.
 
 Allows IT admins to configure Microsoft Traditional Chinese IME version in the desktop.
@@ -818,7 +818,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**  
+<a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -845,10 +845,10 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
+This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode.
 
-The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. 
-But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. 
+The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up.
+But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard.
 When this policy is enabled, the touch keyboard automatically shows up when the device is in the desktop mode.
 
 This policy corresponds to "Show the touch keyboard when not in tablet mode and there's no keyboard attached" in the Settings app.
@@ -866,7 +866,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
+<a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -911,7 +911,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
+<a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -956,7 +956,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
+<a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1001,7 +1001,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-forcetouchkeyboarddockedstate"></a>**TextInput/ForceTouchKeyboardDockedState**  
+<a href="" id="textinput-forcetouchkeyboarddockedstate"></a>**TextInput/ForceTouchKeyboardDockedState**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1034,7 +1034,7 @@ Specifies the touch keyboard is always docked. When this policy is set to enable
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - (default) - The OS determines when it's most appropriate to be available. 
+-   0 - (default) - The OS determines when it's most appropriate to be available.
 -   1 - Touch keyboard is always docked.
 -   2 - Touch keyboard docking can be changed.
 
@@ -1044,7 +1044,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboarddictationbuttonavailability"></a>**TextInput/TouchKeyboardDictationButtonAvailability**  
+<a href="" id="textinput-touchkeyboarddictationbuttonavailability"></a>**TextInput/TouchKeyboardDictationButtonAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1087,7 +1087,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardemojibuttonavailability"></a>**TextInput/TouchKeyboardEmojiButtonAvailability**  
+<a href="" id="textinput-touchkeyboardemojibuttonavailability"></a>**TextInput/TouchKeyboardEmojiButtonAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1130,7 +1130,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardfullmodeavailability"></a>**TextInput/TouchKeyboardFullModeAvailability**  
+<a href="" id="textinput-touchkeyboardfullmodeavailability"></a>**TextInput/TouchKeyboardFullModeAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1173,7 +1173,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardhandwritingmodeavailability"></a>**TextInput/TouchKeyboardHandwritingModeAvailability**  
+<a href="" id="textinput-touchkeyboardhandwritingmodeavailability"></a>**TextInput/TouchKeyboardHandwritingModeAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1216,7 +1216,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardnarrowmodeavailability"></a>**TextInput/TouchKeyboardNarrowModeAvailability**  
+<a href="" id="textinput-touchkeyboardnarrowmodeavailability"></a>**TextInput/TouchKeyboardNarrowModeAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1259,7 +1259,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardsplitmodeavailability"></a>**TextInput/TouchKeyboardSplitModeAvailability**  
+<a href="" id="textinput-touchkeyboardsplitmodeavailability"></a>**TextInput/TouchKeyboardSplitModeAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -1302,7 +1302,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="textinput-touchkeyboardwidemodeavailability"></a>**TextInput/TouchKeyboardWideModeAvailability**  
+<a href="" id="textinput-touchkeyboardwidemodeavailability"></a>**TextInput/TouchKeyboardWideModeAvailability**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:

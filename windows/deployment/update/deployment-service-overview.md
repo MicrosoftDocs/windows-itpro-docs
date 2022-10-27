@@ -2,13 +2,14 @@
 title: Windows Update for Business deployment service
 description: Overview of deployment service to control approval, scheduling, and safeguarding of Windows updates
 ms.custom: seo-marvel-apr2020
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.reviewer:
+ms.reviewer: 
 manager: dougeby
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 
@@ -88,8 +89,8 @@ The Microsoft Graph SDK includes a PowerShell extension that you can use to scri
 ### Building your own application
 
 Microsoft Graph makes deployment service APIs available through. Get started with these learning paths:
-- Learning Path: [Microsoft Graph Fundamentals](/learn/paths/m365-msgraph-fundamentals/)
-- Learning Path: [Build apps with Microsoft Graph](/learn/paths/m365-msgraph-associate/)
+- Learning path: [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals/)
+- Learning path: [Build apps with Microsoft Graph](/training/paths/m365-msgraph-associate/)
 
 Once you are familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
 

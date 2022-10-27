@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -16,1267 +16,1267 @@ ms.date: 06/26/2017
 Here's the XSD for the AppLocker CSP.
 
 ```xml
-<?xml version="1.0"?>  
+<?xml version="1.0"?>
 
-<xs:schema attributeFormDefault="unqualified"  
+<xs:schema attributeFormDefault="unqualified"
 
-           elementFormDefault="qualified"  
+           elementFormDefault="qualified"
 
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
 
-           version="1.0">  
+           version="1.0">
 
-  
 
-  <!-- -->  
 
-  <!-- AppLockerPolicy-Type -->  
+  <!-- -->
 
-  <!-- -->  
+  <!-- AppLockerPolicy-Type -->
 
-  <xs:element name="AppLockerPolicy"  
+  <!-- -->
 
-              type="PolicyType">  
+  <xs:element name="AppLockerPolicy"
 
-    <xs:unique name="UniqueRuleCollectionTypeConstraint">  
+              type="PolicyType">
 
-      <xs:selector xpath="RuleCollection"/>  
+    <xs:unique name="UniqueRuleCollectionTypeConstraint">
 
-      <xs:field xpath="@Type"/>  
+      <xs:selector xpath="RuleCollection"/>
 
-    </xs:unique>  
+      <xs:field xpath="@Type"/>
 
-    <xs:unique name="UniqueRuleIdConstraint">  
+    </xs:unique>
 
-      <xs:selector xpath="RuleCollection/*"/>  
+    <xs:unique name="UniqueRuleIdConstraint">
 
-      <xs:field xpath="@Id"/>  
+      <xs:selector xpath="RuleCollection/*"/>
 
-    </xs:unique>  
+      <xs:field xpath="@Id"/>
 
-  </xs:element>  
+    </xs:unique>
 
-  
+  </xs:element>
 
-  <!-- -->  
 
-  <!-- Policy-Type -->  
 
-  <!-- -->  
+  <!-- -->
 
-  <xs:complexType name="PolicyType">  
+  <!-- Policy-Type -->
 
-    <xs:sequence>  
+  <!-- -->
 
-      <xs:element name="RuleCollection"  
+  <xs:complexType name="PolicyType">
 
-                  type="RuleCollectionType"  
+    <xs:sequence>
 
-                  minOccurs="0"  
+      <xs:element name="RuleCollection"
 
-                  maxOccurs="unbounded">  
+                  type="RuleCollectionType"
 
-      </xs:element>  
+                  minOccurs="0"
 
-      <xs:element name="PolicyExtensions"  
+                  maxOccurs="unbounded">
 
-                  type="PolicyExtensionsType"  
+      </xs:element>
 
-                  minOccurs="0"  
+      <xs:element name="PolicyExtensions"
 
-                  maxOccurs="1">  
+                  type="PolicyExtensionsType"
 
-      </xs:element>  
+                  minOccurs="0"
 
-    </xs:sequence>  
+                  maxOccurs="1">
 
-    <xs:attribute name="Version"  
+      </xs:element>
 
-                  type="PolicyVersionType"  
+    </xs:sequence>
 
-                  use="required"/>  
+    <xs:attribute name="Version"
 
-  </xs:complexType>  
+                  type="PolicyVersionType"
 
-  
+                  use="required"/>
 
-  <!-- -->  
+  </xs:complexType>
 
-  <!-- PolicyVersion-Type -->  
 
-  <!-- -->  
 
-  <xs:simpleType name="PolicyVersionType">  
+  <!-- -->
 
-    <xs:restriction base="xs:decimal">  
+  <!-- PolicyVersion-Type -->
 
-    </xs:restriction>  
+  <!-- -->
 
-  </xs:simpleType>  
+  <xs:simpleType name="PolicyVersionType">
 
-    
+    <xs:restriction base="xs:decimal">
 
-  <!-- -->  
+    </xs:restriction>
 
-  <!-- RuleCollection-Type -->  
+  </xs:simpleType>
 
-  <!-- -->  
 
-  <xs:complexType name="RuleCollectionType">  
 
-    <xs:sequence>  
+  <!-- -->
 
-      <xs:choice minOccurs="0"  
+  <!-- RuleCollection-Type -->
 
-                 maxOccurs="unbounded">  
+  <!-- -->
 
-        <xs:element name="FilePublisherRule"  
+  <xs:complexType name="RuleCollectionType">
 
-                    type="FilePublisherRuleType"  
+    <xs:sequence>
 
-                    minOccurs="0"  
+      <xs:choice minOccurs="0"
 
-                    maxOccurs="unbounded">  
+                 maxOccurs="unbounded">
 
-        </xs:element>  
+        <xs:element name="FilePublisherRule"
 
-        <xs:element name="FilePathRule"  
+                    type="FilePublisherRuleType"
 
-                    type="FilePathRuleType"  
+                    minOccurs="0"
 
-                    minOccurs="0"  
+                    maxOccurs="unbounded">
 
-                    maxOccurs="unbounded">  
+        </xs:element>
 
-        </xs:element>  
+        <xs:element name="FilePathRule"
 
-        <xs:element name="FileHashRule"  
+                    type="FilePathRuleType"
 
-                    type="FileHashRuleType"  
+                    minOccurs="0"
 
-                    minOccurs="0"  
+                    maxOccurs="unbounded">
 
-                    maxOccurs="unbounded">  
+        </xs:element>
 
-        </xs:element>  
+        <xs:element name="FileHashRule"
 
-      </xs:choice>  
+                    type="FileHashRuleType"
 
-      <xs:element name="RuleCollectionExtensions"  
+                    minOccurs="0"
 
-                  type="RuleCollectionExtensionsType"  
+                    maxOccurs="unbounded">
 
-                  minOccurs="0"  
+        </xs:element>
 
-                  maxOccurs="1">  
+      </xs:choice>
 
-      </xs:element>  
+      <xs:element name="RuleCollectionExtensions"
 
-    </xs:sequence>  
+                  type="RuleCollectionExtensionsType"
 
-    <xs:attribute name="Type"  
+                  minOccurs="0"
 
-                  type="xs:string"  
+                  maxOccurs="1">
 
-                  use="required"/>  
+      </xs:element>
 
-    <xs:attribute name="EnforcementMode"  
+    </xs:sequence>
 
-                  type="EnforcementModeType"  
+    <xs:attribute name="Type"
 
-                  use="optional"/>  
+                  type="xs:string"
 
-  </xs:complexType>  
+                  use="required"/>
 
-  
+    <xs:attribute name="EnforcementMode"
 
-  <!-- -->  
+                  type="EnforcementModeType"
 
-  <!-- PolicyExtensions-Type -->  
+                  use="optional"/>
 
-  <!-- -->  
+  </xs:complexType>
 
-  <xs:complexType name="PolicyExtensionsType">  
 
-    <xs:sequence>  
 
-      <xs:element name="ThresholdExtensions"  
+  <!-- -->
 
-                  type="ThresholdPolicyExtensionsType"  
+  <!-- PolicyExtensions-Type -->
 
-                  minOccurs="1"  
+  <!-- -->
 
-                  maxOccurs="1" />  
+  <xs:complexType name="PolicyExtensionsType">
 
-      <xs:any processContents="lax"  
+    <xs:sequence>
 
-              minOccurs="0"  
+      <xs:element name="ThresholdExtensions"
 
-              maxOccurs="unbounded" />  
+                  type="ThresholdPolicyExtensionsType"
 
-    </xs:sequence>  
+                  minOccurs="1"
 
-  </xs:complexType>  
+                  maxOccurs="1" />
 
-  
+      <xs:any processContents="lax"
 
-  <!-- -->  
+              minOccurs="0"
 
-  <!-- RuleCollectionExtensions-Type -->  
+              maxOccurs="unbounded" />
 
-  <!-- -->  
+    </xs:sequence>
 
-  <xs:complexType name="RuleCollectionExtensionsType">  
+  </xs:complexType>
 
-    <xs:sequence>  
 
-      <xs:element name="ThresholdExtensions"  
 
-                  type="ThresholdCollectionExtensionsType"  
+  <!-- -->
 
-                  minOccurs="1"  
+  <!-- RuleCollectionExtensions-Type -->
 
-                  maxOccurs="1">  
+  <!-- -->
 
-        <!-- -->  
+  <xs:complexType name="RuleCollectionExtensionsType">
 
-        <!-- Because of the way schema validation works, ThresholdExtensions  
+    <xs:sequence>
 
-             must be present if RuleCollectionExtensions is present. Otherwise  
+      <xs:element name="ThresholdExtensions"
 
-             it could be ambiguous whether a ThresholdExtensions element  
+                  type="ThresholdCollectionExtensionsType"
 
-             matched the explicit element, or the xs:any element. As new  
+                  minOccurs="1"
 
-             extensions are invented in subsequent releases, they can follow  
+                  maxOccurs="1">
 
-             the same model. -->  
+        <!-- -->
 
-        <!-- -->  
+        <!-- Because of the way schema validation works, ThresholdExtensions
 
-      </xs:element>  
+             must be present if RuleCollectionExtensions is present. Otherwise
 
-      <xs:any processContents="lax"  
+             it could be ambiguous whether a ThresholdExtensions element
 
-              minOccurs="0"  
+             matched the explicit element, or the xs:any element. As new
 
-              maxOccurs="unbounded" />  
+             extensions are invented in subsequent releases, they can follow
 
-    </xs:sequence>  
+             the same model. -->
 
-  </xs:complexType>  
+        <!-- -->
 
-  
+      </xs:element>
 
-  <!-- -->  
+      <xs:any processContents="lax"
 
-  <!-- EnforcementMode-Type -->  
+              minOccurs="0"
 
-  <!-- -->  
+              maxOccurs="unbounded" />
 
-  <xs:simpleType name="EnforcementModeType">  
+    </xs:sequence>
 
-    <xs:restriction base="xs:string">  
+  </xs:complexType>
 
-      <xs:enumeration value="NotConfigured"/>  
 
-      <xs:enumeration value="Enabled"/>  
 
-      <xs:enumeration value="AuditOnly"/>  
+  <!-- -->
 
-    </xs:restriction>  
+  <!-- EnforcementMode-Type -->
 
-  </xs:simpleType>  
+  <!-- -->
 
-    
+  <xs:simpleType name="EnforcementModeType">
 
-  <!-- -->  
+    <xs:restriction base="xs:string">
 
-  <!-- FilePublisherRule-Type -->  
+      <xs:enumeration value="NotConfigured"/>
 
-  <!-- -->  
+      <xs:enumeration value="Enabled"/>
 
-  <xs:complexType name="FilePublisherRuleType">  
+      <xs:enumeration value="AuditOnly"/>
 
-    <xs:all>  
+    </xs:restriction>
 
-      <xs:element name="Conditions"  
+  </xs:simpleType>
 
-                  type="FilePublisherRuleConditionsType"  
 
-                  minOccurs="1"  
 
-                  maxOccurs="1" />  
+  <!-- -->
 
-      <xs:element name="Exceptions"  
+  <!-- FilePublisherRule-Type -->
 
-                  type="FilePublisherRuleExceptionsType"  
+  <!-- -->
 
-                  minOccurs="0"  
+  <xs:complexType name="FilePublisherRuleType">
 
-                  maxOccurs="1" />  
+    <xs:all>
 
-    </xs:all>  
+      <xs:element name="Conditions"
 
-    <xs:attributeGroup ref="RuleAttributes"/>  
+                  type="FilePublisherRuleConditionsType"
 
-  </xs:complexType>  
+                  minOccurs="1"
 
-  
+                  maxOccurs="1" />
 
-  <!-- -->  
+      <xs:element name="Exceptions"
 
-  <!-- FilePathRule-Type -->  
+                  type="FilePublisherRuleExceptionsType"
 
-  <!-- -->  
+                  minOccurs="0"
 
-  <xs:complexType name="FilePathRuleType">  
+                  maxOccurs="1" />
 
-    <xs:all>  
+    </xs:all>
 
-      <xs:element name="Conditions"  
+    <xs:attributeGroup ref="RuleAttributes"/>
 
-                  type="FilePathRuleConditionsType"  
+  </xs:complexType>
 
-                  minOccurs="1"  
 
-                  maxOccurs="1" />  
 
-      <xs:element name="Exceptions"  
+  <!-- -->
 
-                  type="FilePathRuleExceptionsType"  
+  <!-- FilePathRule-Type -->
 
-                  minOccurs="0"  
+  <!-- -->
 
-                  maxOccurs="1" />  
+  <xs:complexType name="FilePathRuleType">
 
-    </xs:all>  
+    <xs:all>
 
-    <xs:attributeGroup ref="RuleAttributes"/>  
+      <xs:element name="Conditions"
 
-  </xs:complexType>  
+                  type="FilePathRuleConditionsType"
 
-  
+                  minOccurs="1"
 
-  <!-- -->  
+                  maxOccurs="1" />
 
-  <!-- FileHashRule-Type -->  
+      <xs:element name="Exceptions"
 
-  <!-- -->  
+                  type="FilePathRuleExceptionsType"
 
-  <xs:complexType name="FileHashRuleType">  
+                  minOccurs="0"
 
-    <xs:all>  
+                  maxOccurs="1" />
 
-      <xs:element name="Conditions"  
+    </xs:all>
 
-                  type="FileHashRuleConditionsType"  
+    <xs:attributeGroup ref="RuleAttributes"/>
 
-                  minOccurs="1"  
+  </xs:complexType>
 
-                  maxOccurs="1" />  
 
-    </xs:all>  
 
-    <xs:attributeGroup ref="RuleAttributes"/>  
+  <!-- -->
 
-  </xs:complexType>  
+  <!-- FileHashRule-Type -->
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <xs:complexType name="FileHashRuleType">
 
-  <!-- FilePublisherRuleConditions-Type -->  
+    <xs:all>
 
-  <!-- -->  
+      <xs:element name="Conditions"
 
-  <xs:complexType name="FilePublisherRuleConditionsType">  
+                  type="FileHashRuleConditionsType"
 
-    <xs:sequence>  
+                  minOccurs="1"
 
-      <xs:element name="FilePublisherCondition"  
+                  maxOccurs="1" />
 
-                  type="FilePublisherConditionType"  
+    </xs:all>
 
-                  minOccurs="1"  
+    <xs:attributeGroup ref="RuleAttributes"/>
 
-                  maxOccurs="1"/>  
+  </xs:complexType>
 
-    </xs:sequence>  
 
-  </xs:complexType>  
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <!-- FilePublisherRuleConditions-Type -->
 
-  <!-- FilePublisherRuleExceptions-Type -->  
+  <!-- -->
 
-  <!-- -->  
+  <xs:complexType name="FilePublisherRuleConditionsType">
 
-  <xs:complexType name="FilePublisherRuleExceptionsType">  
+    <xs:sequence>
 
-    <xs:sequence>  
+      <xs:element name="FilePublisherCondition"
 
-      <xs:choice minOccurs="0"  
+                  type="FilePublisherConditionType"
 
-                 maxOccurs="unbounded">  
+                  minOccurs="1"
 
-        <xs:element name="FilePublisherCondition"  
+                  maxOccurs="1"/>
 
-                    type="FilePublisherConditionType"  
+    </xs:sequence>
 
-                    minOccurs="0"  
+  </xs:complexType>
 
-                    maxOccurs="unbounded"/>  
 
-        <xs:element name="FilePathCondition"  
 
-                    type="FilePathConditionType"  
+  <!-- -->
 
-                    minOccurs="0"  
+  <!-- FilePublisherRuleExceptions-Type -->
 
-                    maxOccurs="unbounded"/>  
+  <!-- -->
 
-        <xs:element name="FileHashCondition"  
+  <xs:complexType name="FilePublisherRuleExceptionsType">
 
-                    type="FileHashConditionType"  
+    <xs:sequence>
 
-                    minOccurs="0"  
+      <xs:choice minOccurs="0"
 
-                    maxOccurs="unbounded"/>  
+                 maxOccurs="unbounded">
 
-      </xs:choice>  
+        <xs:element name="FilePublisherCondition"
 
-    </xs:sequence>  
+                    type="FilePublisherConditionType"
 
-  </xs:complexType>  
+                    minOccurs="0"
 
-  
+                    maxOccurs="unbounded"/>
 
-  <!-- -->  
+        <xs:element name="FilePathCondition"
 
-  <!-- FilePathRuleConditions-Type -->  
+                    type="FilePathConditionType"
 
-  <!-- -->  
+                    minOccurs="0"
 
-  <xs:complexType name="FilePathRuleConditionsType">  
+                    maxOccurs="unbounded"/>
 
-    <xs:sequence>  
+        <xs:element name="FileHashCondition"
 
-      <xs:element name="FilePathCondition"  
+                    type="FileHashConditionType"
 
-                  type="FilePathConditionType"  
+                    minOccurs="0"
 
-                  minOccurs="1"  
+                    maxOccurs="unbounded"/>
 
-                  maxOccurs="1"/>  
+      </xs:choice>
 
-    </xs:sequence>  
+    </xs:sequence>
 
-  </xs:complexType>  
+  </xs:complexType>
 
-  
 
-  <!-- -->  
 
-  <!-- FilePathRuleExceptions-Type -->  
+  <!-- -->
 
-  <!-- -->  
+  <!-- FilePathRuleConditions-Type -->
 
-  <xs:complexType name="FilePathRuleExceptionsType">  
+  <!-- -->
 
-    <xs:sequence>  
+  <xs:complexType name="FilePathRuleConditionsType">
 
-      <xs:choice minOccurs="0"  
+    <xs:sequence>
 
-                 maxOccurs="unbounded">  
+      <xs:element name="FilePathCondition"
 
-        <xs:element name="FilePathCondition"  
+                  type="FilePathConditionType"
 
-                    type="FilePathConditionType"  
+                  minOccurs="1"
 
-                    minOccurs="0"  
+                  maxOccurs="1"/>
 
-                    maxOccurs="unbounded"/>  
+    </xs:sequence>
 
-        <xs:element name="FilePublisherCondition"  
+  </xs:complexType>
 
-                    type="FilePublisherConditionType"  
 
-                    minOccurs="0"  
 
-                    maxOccurs="unbounded"/>  
+  <!-- -->
 
-        <xs:element name="FileHashCondition"  
+  <!-- FilePathRuleExceptions-Type -->
 
-                    type="FileHashConditionType"  
+  <!-- -->
 
-                    minOccurs="0"  
+  <xs:complexType name="FilePathRuleExceptionsType">
 
-                    maxOccurs="unbounded"/>  
+    <xs:sequence>
 
-      </xs:choice>  
+      <xs:choice minOccurs="0"
 
-    </xs:sequence>  
+                 maxOccurs="unbounded">
 
-  </xs:complexType>  
+        <xs:element name="FilePathCondition"
 
-  
+                    type="FilePathConditionType"
 
-  <!-- -->  
+                    minOccurs="0"
 
-  <!-- FileHashRuleConditions-Type -->  
+                    maxOccurs="unbounded"/>
 
-  <!-- -->  
+        <xs:element name="FilePublisherCondition"
 
-  <xs:complexType name="FileHashRuleConditionsType">  
+                    type="FilePublisherConditionType"
 
-    <xs:sequence>  
+                    minOccurs="0"
 
-      <xs:element name="FileHashCondition"  
+                    maxOccurs="unbounded"/>
 
-                  type="FileHashConditionType"  
+        <xs:element name="FileHashCondition"
 
-                  minOccurs="1"  
+                    type="FileHashConditionType"
 
-                  maxOccurs="1"/>  
+                    minOccurs="0"
 
-    </xs:sequence>  
+                    maxOccurs="unbounded"/>
 
-  </xs:complexType>  
+      </xs:choice>
 
-  
+    </xs:sequence>
 
-  <!-- -->  
+  </xs:complexType>
 
-  <!-- Rule-Attributes -->  
 
-  <!-- -->  
 
-  <xs:attributeGroup name="RuleAttributes">  
+  <!-- -->
 
-    <xs:attribute name="Id"  
+  <!-- FileHashRuleConditions-Type -->
 
-                  type="GuidType"  
+  <!-- -->
 
-                  use="required"/>  
+  <xs:complexType name="FileHashRuleConditionsType">
 
-    <xs:attribute name="Name"  
+    <xs:sequence>
 
-                  type="RuleNameType"  
+      <xs:element name="FileHashCondition"
 
-                  use="required"/>  
+                  type="FileHashConditionType"
 
-    <xs:attribute name="Description"  
+                  minOccurs="1"
 
-                  type="RuleDescriptionType"  
+                  maxOccurs="1"/>
 
-                  use="required"/>  
+    </xs:sequence>
 
-    <xs:attribute name="UserOrGroupSid"  
+  </xs:complexType>
 
-                  type="SidType"  
 
-                  use="required"/>  
 
-    <xs:attribute name="Action"  
+  <!-- -->
 
-                  type="RuleActionType"  
+  <!-- Rule-Attributes -->
 
-                  use="required"/>  
+  <!-- -->
 
-  </xs:attributeGroup>  
+  <xs:attributeGroup name="RuleAttributes">
 
-  
+    <xs:attribute name="Id"
 
-  <!-- -->  
+                  type="GuidType"
 
-  <!-- RuleName-Type -->  
+                  use="required"/>
 
-  <!-- -->  
+    <xs:attribute name="Name"
 
-  <xs:simpleType name="RuleNameType">  
+                  type="RuleNameType"
 
-    <xs:restriction base="xs:string">  
+                  use="required"/>
 
-      <xs:minLength value="1"/>  
+    <xs:attribute name="Description"
 
-      <xs:maxLength value="1024"/>  
+                  type="RuleDescriptionType"
 
-    </xs:restriction>  
+                  use="required"/>
 
-  </xs:simpleType>  
+    <xs:attribute name="UserOrGroupSid"
 
-  
+                  type="SidType"
 
-  <!-- -->  
+                  use="required"/>
 
-  <!-- RuleDescription-Type -->  
+    <xs:attribute name="Action"
 
-  <!-- -->  
+                  type="RuleActionType"
 
-  <xs:simpleType name="RuleDescriptionType">  
+                  use="required"/>
 
-    <xs:restriction base="xs:string">  
+  </xs:attributeGroup>
 
-      <xs:minLength value="0"/>  
 
-      <xs:maxLength value="1024"/>  
 
-    </xs:restriction>  
+  <!-- -->
 
-  </xs:simpleType>  
+  <!-- RuleName-Type -->
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <xs:simpleType name="RuleNameType">
 
-  <!-- RuleAction-Type -->  
+    <xs:restriction base="xs:string">
 
-  <!-- -->  
+      <xs:minLength value="1"/>
 
-  <xs:simpleType name="RuleActionType">  
+      <xs:maxLength value="1024"/>
 
-    <xs:restriction base="xs:string">  
+    </xs:restriction>
 
-      <xs:enumeration value="Allow"/>  
+  </xs:simpleType>
 
-      <xs:enumeration value="Deny"/>  
 
-    </xs:restriction>  
 
-  </xs:simpleType>  
+  <!-- -->
 
-  
+  <!-- RuleDescription-Type -->
 
-  <!-- -->  
+  <!-- -->
 
-  <!-- FilePublisherCondition-Type -->  
+  <xs:simpleType name="RuleDescriptionType">
 
-  <!-- -->  
+    <xs:restriction base="xs:string">
 
-  <xs:complexType name="FilePublisherConditionType">  
+      <xs:minLength value="0"/>
 
-    <xs:all>  
+      <xs:maxLength value="1024"/>
 
-      <xs:element name="BinaryVersionRange"  
+    </xs:restriction>
 
-                  type="FileVersionRangeType"  
+  </xs:simpleType>
 
-                  minOccurs="1"  
 
-                  maxOccurs="1" />  
 
-    </xs:all>  
+  <!-- -->
 
-    <xs:attribute name="PublisherName"  
+  <!-- RuleAction-Type -->
 
-                  type="PublisherNameType"  
+  <!-- -->
 
-                  use="required"/>  
+  <xs:simpleType name="RuleActionType">
 
-    <xs:attribute name="ProductName"  
+    <xs:restriction base="xs:string">
 
-                  type="ProductNameType"  
+      <xs:enumeration value="Allow"/>
 
-                  use="required"/>  
+      <xs:enumeration value="Deny"/>
 
-    <xs:attribute name="BinaryName"  
+    </xs:restriction>
 
-                  type="BinaryNameType"  
+  </xs:simpleType>
 
-                  use="required"/>  
 
-  </xs:complexType>  
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <!-- FilePublisherCondition-Type -->
 
-  <!-- PublisherName-Type -->  
+  <!-- -->
 
-  <!-- -->  
+  <xs:complexType name="FilePublisherConditionType">
 
-  <xs:simpleType name="PublisherNameType">  
+    <xs:all>
 
-    <xs:restriction base="xs:string">  
+      <xs:element name="BinaryVersionRange"
 
-      <xs:minLength value="1"/>  
+                  type="FileVersionRangeType"
 
-    </xs:restriction>  
+                  minOccurs="1"
 
-  </xs:simpleType>  
+                  maxOccurs="1" />
 
-  
+    </xs:all>
 
-  <!-- -->  
+    <xs:attribute name="PublisherName"
 
-  <!-- ProductName-Type -->  
+                  type="PublisherNameType"
 
-  <!-- -->  
+                  use="required"/>
 
-  <xs:simpleType name="ProductNameType">  
+    <xs:attribute name="ProductName"
 
-    <xs:restriction base="xs:string">  
+                  type="ProductNameType"
 
-    </xs:restriction>  
+                  use="required"/>
 
-  </xs:simpleType>  
+    <xs:attribute name="BinaryName"
 
-  
+                  type="BinaryNameType"
 
-  <!-- -->  
+                  use="required"/>
 
-  <!-- BinaryName-Type -->  
+  </xs:complexType>
 
-  <!-- -->  
 
-  <xs:simpleType name="BinaryNameType">  
 
-    <xs:restriction base="xs:string">  
+  <!-- -->
 
-    </xs:restriction>  
+  <!-- PublisherName-Type -->
 
-  </xs:simpleType>  
+  <!-- -->
 
-  
+  <xs:simpleType name="PublisherNameType">
 
-  <!-- -->  
+    <xs:restriction base="xs:string">
 
-  <!-- FileVersionRange-Type -->  
+      <xs:minLength value="1"/>
 
-  <!-- -->  
+    </xs:restriction>
 
-  <xs:complexType name="FileVersionRangeType">  
+  </xs:simpleType>
 
-    <xs:attribute name="LowSection"  
 
-                  type="FileVersionType"  
 
-                  use="required"/>  
+  <!-- -->
 
-    <xs:attribute name="HighSection"  
+  <!-- ProductName-Type -->
 
-                  type="FileVersionType"  
+  <!-- -->
 
-                  use="required"/>  
+  <xs:simpleType name="ProductNameType">
 
-  </xs:complexType>  
+    <xs:restriction base="xs:string">
 
-  
+    </xs:restriction>
 
-  <!-- -->  
+  </xs:simpleType>
 
-  <!-- FileVersion-Type -->  
 
-  <!-- -->  
 
-  <xs:simpleType name="FileVersionType">  
+  <!-- -->
 
-    <xs:union memberTypes="SpecificFileVersionType AnyFileVersionType"/>  
+  <!-- BinaryName-Type -->
 
-  </xs:simpleType>  
+  <!-- -->
 
-  
+  <xs:simpleType name="BinaryNameType">
 
-  <!-- -->  
+    <xs:restriction base="xs:string">
 
-  <!-- SpecificFileVersion-Type -->  
+    </xs:restriction>
 
-  <!-- -->  
+  </xs:simpleType>
 
-  <xs:simpleType name="SpecificFileVersionType">  
 
-    <xs:restriction base="xs:string">  
 
-      <xs:pattern value="([0-9]{1,5}.){3}[0-9]{1,5}"/>  
+  <!-- -->
 
-    </xs:restriction>  
+  <!-- FileVersionRange-Type -->
 
-  </xs:simpleType>  
+  <!-- -->
 
-  
+  <xs:complexType name="FileVersionRangeType">
 
-  <!-- -->  
+    <xs:attribute name="LowSection"
 
-  <!-- AnyFileVersion-Type -->  
+                  type="FileVersionType"
 
-  <!-- -->  
+                  use="required"/>
 
-  <xs:simpleType name="AnyFileVersionType">  
+    <xs:attribute name="HighSection"
 
-    <xs:restriction base="xs:string">  
+                  type="FileVersionType"
 
-      <xs:enumeration value="*"/>  
+                  use="required"/>
 
-    </xs:restriction>  
+  </xs:complexType>
 
-  </xs:simpleType>  
 
-    
 
-  <!-- -->  
+  <!-- -->
 
-  <!-- FilePathCondition-Type -->  
+  <!-- FileVersion-Type -->
 
-  <!-- -->  
+  <!-- -->
 
-  <xs:complexType name="FilePathConditionType">  
+  <xs:simpleType name="FileVersionType">
 
-    <xs:attribute name="Path"  
+    <xs:union memberTypes="SpecificFileVersionType AnyFileVersionType"/>
 
-                  type="FilePathType"  
+  </xs:simpleType>
 
-                  use="required"/>  
 
-  </xs:complexType>  
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <!-- SpecificFileVersion-Type -->
 
-  <!-- FilePath-Type -->  
+  <!-- -->
 
-  <!-- -->  
+  <xs:simpleType name="SpecificFileVersionType">
 
-  <xs:simpleType name="FilePathType">  
+    <xs:restriction base="xs:string">
 
-    <xs:restriction base="xs:string">  
+      <xs:pattern value="([0-9]{1,5}.){3}[0-9]{1,5}"/>
 
-      <xs:minLength value="1"/>  
+    </xs:restriction>
 
-      <xs:maxLength value="32767"/>  
+  </xs:simpleType>
 
-    </xs:restriction>  
 
-  </xs:simpleType>  
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <!-- AnyFileVersion-Type -->
 
-  <!-- FileHashCondition-Type -->  
+  <!-- -->
 
-  <!-- -->  
+  <xs:simpleType name="AnyFileVersionType">
 
-  <xs:complexType name="FileHashConditionType">  
+    <xs:restriction base="xs:string">
 
-    <xs:sequence>  
+      <xs:enumeration value="*"/>
 
-      <xs:element name="FileHash"  
+    </xs:restriction>
 
-                  type="FileHashType"  
+  </xs:simpleType>
 
-                  minOccurs="1"  
 
-                  maxOccurs="unbounded"/>  
 
-    </xs:sequence>  
+  <!-- -->
 
-  </xs:complexType>  
+  <!-- FilePathCondition-Type -->
 
-    
+  <!-- -->
 
-  <!-- -->  
+  <xs:complexType name="FilePathConditionType">
 
-  <!-- FileHash-Type -->  
+    <xs:attribute name="Path"
 
-  <!-- -->  
+                  type="FilePathType"
 
-  <xs:complexType name="FileHashType">  
+                  use="required"/>
 
-    <xs:attribute name="Type"  
+  </xs:complexType>
 
-                  type="HashType"  
 
-                  use="required"/>  
 
-    <xs:attribute name="Data"  
+  <!-- -->
 
-                  type="HashDataType"  
+  <!-- FilePath-Type -->
 
-                  use="required"/>  
+  <!-- -->
 
-    <xs:attribute name="SourceFileName"  
+  <xs:simpleType name="FilePathType">
 
-                  type="xs:string"  
+    <xs:restriction base="xs:string">
 
-                  use="optional"/>  
+      <xs:minLength value="1"/>
 
-    <xs:attribute name="SourceFileLength"  
+      <xs:maxLength value="32767"/>
 
-                  type="xs:integer"  
+    </xs:restriction>
 
-                  use="optional"/>  
+  </xs:simpleType>
 
-  </xs:complexType>  
 
-  
 
-  <!-- -->  
+  <!-- -->
 
-  <!-- Hash-Type -->  
+  <!-- FileHashCondition-Type -->
 
-  <!-- -->  
+  <!-- -->
 
-  <xs:simpleType name="HashType">  
+  <xs:complexType name="FileHashConditionType">
 
-    <xs:restriction base="xs:string">  
+    <xs:sequence>
 
-      <xs:enumeration value="SHA256"/>  
+      <xs:element name="FileHash"
 
-      <xs:enumeration value="SHA256Flat"/>  
+                  type="FileHashType"
 
-      <xs:enumeration value="SHA1"/>  
+                  minOccurs="1"
 
-    </xs:restriction>  
+                  maxOccurs="unbounded"/>
 
-  </xs:simpleType>  
+    </xs:sequence>
 
-  
+  </xs:complexType>
 
-  <!-- -->  
 
-  <!-- HashData-Type -->  
 
-  <!-- -->  
+  <!-- -->
 
-  <xs:simpleType name="HashDataType">  
+  <!-- FileHash-Type -->
 
-    <xs:union memberTypes="SHA256HashDataType SHA256FlatHashDataType SHA1HashDataType"/>  
+  <!-- -->
 
-  </xs:simpleType>  
+  <xs:complexType name="FileHashType">
 
-  
+    <xs:attribute name="Type"
 
-  <xs:simpleType name="SHA256HashDataType">  
+                  type="HashType"
 
-    <xs:restriction base="xs:string">  
+                  use="required"/>
 
-      <xs:pattern value="0x([0-9A-Fa-f]{64})"/>  
+    <xs:attribute name="Data"
 
-    </xs:restriction>  
+                  type="HashDataType"
 
-  </xs:simpleType>  
+                  use="required"/>
 
-  
+    <xs:attribute name="SourceFileName"
 
-  <xs:simpleType name="SHA256FlatHashDataType">  
+                  type="xs:string"
 
-    <xs:restriction base="xs:string">  
+                  use="optional"/>
 
-      <xs:pattern value="0x([0-9A-Fa-f]{64})"/>  
+    <xs:attribute name="SourceFileLength"
 
-    </xs:restriction>  
+                  type="xs:integer"
 
-  </xs:simpleType>  
+                  use="optional"/>
 
-  
+  </xs:complexType>
 
-  <xs:simpleType name="SHA1HashDataType">  
 
-    <xs:restriction base="xs:string">  
 
-      <xs:pattern value="0x([0-9A-Fa-f]{40})"/>  
+  <!-- -->
 
-    </xs:restriction>  
+  <!-- Hash-Type -->
 
-  </xs:simpleType>  
+  <!-- -->
 
-  
+  <xs:simpleType name="HashType">
 
-  <!-- -->  
+    <xs:restriction base="xs:string">
 
-  <!-- ServicesEnforcementMode-Type -->  
+      <xs:enumeration value="SHA256"/>
 
-  <!-- -->  
+      <xs:enumeration value="SHA256Flat"/>
 
-  <xs:simpleType name="ServicesEnforcementModeType">  
+      <xs:enumeration value="SHA1"/>
 
-    <xs:restriction base="xs:string">  
+    </xs:restriction>
 
-      <xs:enumeration value="NotConfigured"/>  
+  </xs:simpleType>
 
-      <xs:enumeration value="Enabled"/>  
 
-      <xs:enumeration value="ServicesOnly"/>  
 
-    </xs:restriction>  
+  <!-- -->
 
-  </xs:simpleType>  
+  <!-- HashData-Type -->
 
-  
+  <!-- -->
 
-  <!-- -->  
+  <xs:simpleType name="HashDataType">
 
-  <!-- Services-Type -->  
+    <xs:union memberTypes="SHA256HashDataType SHA256FlatHashDataType SHA1HashDataType"/>
 
-  <!-- -->  
+  </xs:simpleType>
 
-  <xs:complexType name="ServicesType">  
 
-    <xs:attribute name="EnforcementMode"  
 
-                  type="ServicesEnforcementModeType"  
+  <xs:simpleType name="SHA256HashDataType">
 
-                  use="required"/>  
+    <xs:restriction base="xs:string">
 
-  </xs:complexType>  
+      <xs:pattern value="0x([0-9A-Fa-f]{64})"/>
 
-  
+    </xs:restriction>
 
-  <!-- -->  
+  </xs:simpleType>
 
-  <!-- ThresholdCollectionExtensions-Type -->  
 
-  <!-- -->  
 
-  <xs:complexType name="ThresholdCollectionExtensionsType">  
+  <xs:simpleType name="SHA256FlatHashDataType">
 
-    <xs:sequence>  
+    <xs:restriction base="xs:string">
 
-      <xs:element name="Services"  
+      <xs:pattern value="0x([0-9A-Fa-f]{64})"/>
 
-                  type="ServicesType"  
+    </xs:restriction>
 
-                  minOccurs="0"  
+  </xs:simpleType>
 
-                  maxOccurs="1" />  
 
-    </xs:sequence>  
 
-  </xs:complexType>  
+  <xs:simpleType name="SHA1HashDataType">
 
-  
+    <xs:restriction base="xs:string">
 
-  <!-- -->  
+      <xs:pattern value="0x([0-9A-Fa-f]{40})"/>
 
-  <!-- ThresholdPolicyExtensions-Type -->  
+    </xs:restriction>
 
-  <!-- -->  
+  </xs:simpleType>
 
-  <xs:complexType name="ThresholdPolicyExtensionsType">  
 
-    <xs:sequence>  
 
-      <xs:element name="Plugins"  
+  <!-- -->
 
-                  type="PluginsType"  
+  <!-- ServicesEnforcementMode-Type -->
 
-                  minOccurs="0"  
+  <!-- -->
 
-                  maxOccurs="1" />  
+  <xs:simpleType name="ServicesEnforcementModeType">
 
-    </xs:sequence>  
+    <xs:restriction base="xs:string">
 
-  </xs:complexType>  
+      <xs:enumeration value="NotConfigured"/>
 
-  
+      <xs:enumeration value="Enabled"/>
 
-  <xs:complexType name="PluginsType">  
+      <xs:enumeration value="ServicesOnly"/>
 
-    <xs:sequence>  
+    </xs:restriction>
 
-      <xs:element name="Plugin"  
+  </xs:simpleType>
 
-                  type="PluginType"  
 
-                  minOccurs="0"  
 
-                  maxOccurs="unbounded" />  
+  <!-- -->
 
-    </xs:sequence>  
+  <!-- Services-Type -->
 
-  </xs:complexType>  
+  <!-- -->
 
-  
+  <xs:complexType name="ServicesType">
 
-  <xs:complexType name="PluginType">  
+    <xs:attribute name="EnforcementMode"
 
-    <xs:sequence>  
+                  type="ServicesEnforcementModeType"
 
-      <xs:element name="ExecutionCategories"  
+                  use="required"/>
 
-                  type="ExecutionCategoriesType"  
+  </xs:complexType>
 
-                  minOccurs="1"  
 
-                  maxOccurs="1" />  
 
-    </xs:sequence>  
+  <!-- -->
 
-    <xs:attribute name="Name" type="xs:string" />  
+  <!-- ThresholdCollectionExtensions-Type -->
 
-    <xs:attribute name="Id" type="GuidType" />  
+  <!-- -->
 
-   </xs:complexType>  
+  <xs:complexType name="ThresholdCollectionExtensionsType">
 
-  
+    <xs:sequence>
 
-  <xs:complexType name="ExecutionCategoriesType">  
+      <xs:element name="Services"
 
-    <xs:sequence>  
+                  type="ServicesType"
 
-      <xs:element name="ExecutionCategory"  
+                  minOccurs="0"
 
-                  type="ExecutionCategoryType"  
+                  maxOccurs="1" />
 
-                  minOccurs="1"  
+    </xs:sequence>
 
-                  maxOccurs="unbounded" />  
+  </xs:complexType>
 
-    </xs:sequence>  
 
-  </xs:complexType>  
 
-  
+  <!-- -->
 
-  <xs:complexType name="ExecutionCategoryType">  
+  <!-- ThresholdPolicyExtensions-Type -->
 
-    <xs:sequence>  
+  <!-- -->
 
-      <xs:element name="Policies"  
+  <xs:complexType name="ThresholdPolicyExtensionsType">
 
-                  type="PluginPoliciesType"  
+    <xs:sequence>
 
-                  minOccurs="0"  
+      <xs:element name="Plugins"
 
-                  maxOccurs="1" />  
+                  type="PluginsType"
 
-    </xs:sequence>  
+                  minOccurs="0"
 
-    <xs:attribute name="Id"  
+                  maxOccurs="1" />
 
-                  type="GuidType" />  
+    </xs:sequence>
 
-    <xs:attribute name="AppidTypes"  
+  </xs:complexType>
 
-                  type="AttributeListType"  
 
-                  use="optional" />  
 
-  </xs:complexType>  
+  <xs:complexType name="PluginsType">
 
-  
+    <xs:sequence>
 
-  <xs:simpleType name="AttributeListType">  
+      <xs:element name="Plugin"
 
-    <xs:list itemType="AttributeEnumType" />  
+                  type="PluginType"
 
-  </xs:simpleType>  
+                  minOccurs="0"
 
-  
+                  maxOccurs="unbounded" />
 
-  <xs:simpleType name="AttributeEnumType">  
+    </xs:sequence>
 
-    <xs:restriction base="xs:string">  
+  </xs:complexType>
 
-      <xs:enumeration value="Hash" />  
 
-      <xs:enumeration value="Path" />  
 
-      <xs:enumeration value="Publisher" />  
+  <xs:complexType name="PluginType">
 
-    </xs:restriction>  
+    <xs:sequence>
 
-  </xs:simpleType>  
+      <xs:element name="ExecutionCategories"
 
-  
+                  type="ExecutionCategoriesType"
 
-  <xs:complexType name="PluginPoliciesType">  
+                  minOccurs="1"
 
-    <xs:sequence>  
+                  maxOccurs="1" />
 
-      <xs:element name="Policy"  
+    </xs:sequence>
 
-                  type="PluginPolicyType"  
+    <xs:attribute name="Name" type="xs:string" />
 
-                  minOccurs="0"  
+    <xs:attribute name="Id" type="GuidType" />
 
-                  maxOccurs="unbounded" />  
+   </xs:complexType>
 
-    </xs:sequence>  
 
-  </xs:complexType>  
 
-  
+  <xs:complexType name="ExecutionCategoriesType">
 
-  <xs:complexType name="PluginPolicyType">  
+    <xs:sequence>
 
-    <xs:attribute name="Id"  
+      <xs:element name="ExecutionCategory"
 
-                  type="GuidType" />  
+                  type="ExecutionCategoryType"
 
-  </xs:complexType>  
+                  minOccurs="1"
 
-  
+                  maxOccurs="unbounded" />
 
-  <!-- -->  
+    </xs:sequence>
 
-  <!-- Generic Types... -->  
+  </xs:complexType>
 
-  <!-- -->  
 
-  
 
-  <!-- -->  
+  <xs:complexType name="ExecutionCategoryType">
 
-  <!-- Boolean-Type -->  
+    <xs:sequence>
 
-  <!-- -->  
+      <xs:element name="Policies"
 
-  <xs:simpleType name="BooleanType">  
+                  type="PluginPoliciesType"
 
-    <xs:restriction base="xs:string">  
+                  minOccurs="0"
 
-      <xs:enumeration value="True"/>  
+                  maxOccurs="1" />
 
-      <xs:enumeration value="False"/>  
+    </xs:sequence>
 
-    </xs:restriction>  
+    <xs:attribute name="Id"
 
-  </xs:simpleType>  
+                  type="GuidType" />
 
-  
+    <xs:attribute name="AppidTypes"
 
-  <!-- -->  
+                  type="AttributeListType"
 
-  <!-- Guid-Type -->  
+                  use="optional" />
 
-  <!-- -->  
+  </xs:complexType>
 
-  <xs:simpleType name="GuidType">  
 
-    <xs:restriction base="xs:string">  
 
-      <xs:pattern value="[0-9A-Fa-f]{8}-([0-9A-Fa-f]{4}-){3}[0-9A-Fa-f]{12}"/>  
+  <xs:simpleType name="AttributeListType">
 
-    </xs:restriction>  
+    <xs:list itemType="AttributeEnumType" />
 
-  </xs:simpleType>  
+  </xs:simpleType>
 
-  
 
-  <!-- -->  
 
-  <!-- Sid-Type -->  
+  <xs:simpleType name="AttributeEnumType">
 
-  <!-- -->  
+    <xs:restriction base="xs:string">
 
-  <xs:simpleType name="SidType">  
+      <xs:enumeration value="Hash" />
 
-    <xs:restriction base="xs:string">  
+      <xs:enumeration value="Path" />
 
-      <xs:minLength value="7"/>  
+      <xs:enumeration value="Publisher" />
 
-      <xs:pattern value="S-1(-[0-9a-fA-F]+)+"/>  
+    </xs:restriction>
 
-    </xs:restriction>  
+  </xs:simpleType>
 
-  </xs:simpleType>  
 
-  
+
+  <xs:complexType name="PluginPoliciesType">
+
+    <xs:sequence>
+
+      <xs:element name="Policy"
+
+                  type="PluginPolicyType"
+
+                  minOccurs="0"
+
+                  maxOccurs="unbounded" />
+
+    </xs:sequence>
+
+  </xs:complexType>
+
+
+
+  <xs:complexType name="PluginPolicyType">
+
+    <xs:attribute name="Id"
+
+                  type="GuidType" />
+
+  </xs:complexType>
+
+
+
+  <!-- -->
+
+  <!-- Generic Types... -->
+
+  <!-- -->
+
+
+
+  <!-- -->
+
+  <!-- Boolean-Type -->
+
+  <!-- -->
+
+  <xs:simpleType name="BooleanType">
+
+    <xs:restriction base="xs:string">
+
+      <xs:enumeration value="True"/>
+
+      <xs:enumeration value="False"/>
+
+    </xs:restriction>
+
+  </xs:simpleType>
+
+
+
+  <!-- -->
+
+  <!-- Guid-Type -->
+
+  <!-- -->
+
+  <xs:simpleType name="GuidType">
+
+    <xs:restriction base="xs:string">
+
+      <xs:pattern value="[0-9A-Fa-f]{8}-([0-9A-Fa-f]{4}-){3}[0-9A-Fa-f]{12}"/>
+
+    </xs:restriction>
+
+  </xs:simpleType>
+
+
+
+  <!-- -->
+
+  <!-- Sid-Type -->
+
+  <!-- -->
+
+  <xs:simpleType name="SidType">
+
+    <xs:restriction base="xs:string">
+
+      <xs:minLength value="7"/>
+
+      <xs:pattern value="S-1(-[0-9a-fA-F]+)+"/>
+
+    </xs:restriction>
+
+  </xs:simpleType>
+
+
 
 </xs:schema>
 ```

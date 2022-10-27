@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -32,7 +32,7 @@ Root
 RemoteRing
 ----Ring
 ```
-<a href="" id="ring"></a>**Ring**  
+<a href="" id="ring"></a>**Ring**
 Required. The node accepts requests to ring the device.
 
 The supported operation is Exec.

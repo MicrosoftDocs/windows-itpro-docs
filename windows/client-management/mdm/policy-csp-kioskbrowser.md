@@ -3,8 +3,8 @@ title: Policy CSP - KioskBrowser
 description: Use the Policy CSP - KioskBrowser setting to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -14,13 +14,13 @@ manager: aaroncz
 
 # Policy CSP - KioskBrowser
 
-These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Microsoft Store app, added in Windows 10 version 1803, that provides IT a way to customize the end user's browsing experience to fulfill kiosk, signage, and shared device scenarios. Application developers can also create their own kiosk browser and read these policies using [NamedPolicy.GetPolicyFromPath(String, String) Method](/uwp/api/windows.management.policies.namedpolicy.getpolicyfrompath#Windows_Management_Policies_NamedPolicy_GetPolicyFromPath_System_String_System_String_). 
+These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Microsoft Store app, added in Windows 10 version 1803, that provides IT a way to customize the end user's browsing experience to fulfill kiosk, signage, and shared device scenarios. Application developers can also create their own kiosk browser and read these policies using [NamedPolicy.GetPolicyFromPath(String, String) Method](/uwp/api/windows.management.policies.namedpolicy.getpolicyfrompath#Windows_Management_Policies_NamedPolicy_GetPolicyFromPath_System_String_System_String_).
 
 
 <hr/>
 
 <!--Policies-->
-## KioskBrowser policies  
+## KioskBrowser policies
 
 <dl>
   <dd>
@@ -50,7 +50,7 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-blockedurlexceptions"></a>**KioskBrowser/BlockedUrlExceptions**  
+<a href="" id="kioskbrowser-blockedurlexceptions"></a>**KioskBrowser/BlockedUrlExceptions**
 
 <!--SupportedSKUs-->
 
@@ -87,7 +87,7 @@ List of exceptions to the blocked website URLs (with wildcard support). This pol
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-blockedurls"></a>**KioskBrowser/BlockedUrls**  
+<a href="" id="kioskbrowser-blockedurls"></a>**KioskBrowser/BlockedUrls**
 
 <!--SupportedSKUs-->
 
@@ -124,7 +124,7 @@ List of blocked website URLs (with wildcard support). This policy is used to con
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-defaulturl"></a>**KioskBrowser/DefaultURL**  
+<a href="" id="kioskbrowser-defaulturl"></a>**KioskBrowser/DefaultURL**
 
 <!--SupportedSKUs-->
 
@@ -161,7 +161,7 @@ Configures the default URL kiosk browsers to navigate on launch and restart.
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-enableendsessionbutton"></a>**KioskBrowser/EnableEndSessionButton**  
+<a href="" id="kioskbrowser-enableendsessionbutton"></a>**KioskBrowser/EnableEndSessionButton**
 
 <!--SupportedSKUs-->
 
@@ -195,7 +195,7 @@ Shows the Kiosk Browser's end session button. When the policy is enabled, the Ki
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-enablehomebutton"></a>**KioskBrowser/EnableHomeButton**  
+<a href="" id="kioskbrowser-enablehomebutton"></a>**KioskBrowser/EnableHomeButton**
 
 <!--SupportedSKUs-->
 
@@ -232,7 +232,7 @@ Enable/disable kiosk browser's home button.
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-enablenavigationbuttons"></a>**KioskBrowser/EnableNavigationButtons**  
+<a href="" id="kioskbrowser-enablenavigationbuttons"></a>**KioskBrowser/EnableNavigationButtons**
 
 <!--SupportedSKUs-->
 
@@ -269,7 +269,7 @@ Enable/disable kiosk browser's navigation buttons (forward/back).
 <hr/>
 
 <!--Policy-->
-<a href="" id="kioskbrowser-restartonidletime"></a>**KioskBrowser/RestartOnIdleTime**  
+<a href="" id="kioskbrowser-restartonidletime"></a>**KioskBrowser/RestartOnIdleTime**
 
 <!--SupportedSKUs-->
 
@@ -295,7 +295,7 @@ Enable/disable kiosk browser's navigation buttons (forward/back).
 
 <!--/Scope-->
 <!--Description-->
-Amount of time in minutes, the session is idle until the kiosk browser restarts in a fresh state.  
+Amount of time in minutes, the session is idle until the kiosk browser restarts in a fresh state.
 
 The value is an int 1-1440 that specifies the number of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty, which means there's no idle timeout within the kiosk browser.
 

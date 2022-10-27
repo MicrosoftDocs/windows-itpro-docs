@@ -3,8 +3,8 @@ title: Policy CSP - RemoteDesktop
 description: Learn how the Policy CSP - RemoteDesktop setting allows you to specify a custom message to display.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## RemoteDesktop policies  
+## RemoteDesktop policies
 > [!Warning]
 > Some information relates to prerelease products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
@@ -33,7 +33,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotedesktop-autosubscription"></a>**RemoteDesktop/AutoSubscription**  
+<a href="" id="remotedesktop-autosubscription"></a>**RemoteDesktop/AutoSubscription**
 
 <!--SupportedSKUs-->
 
@@ -69,7 +69,7 @@ This policy allows administrators to enable automatic subscription for the Micro
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotedesktop-loadaadcredkeyfromprofile"></a>**RemoteDesktop/LoadAadCredKeyFromProfile**  
+<a href="" id="remotedesktop-loadaadcredkeyfromprofile"></a>**RemoteDesktop/LoadAadCredKeyFromProfile**
 
 <!--SupportedSKUs-->
 
@@ -102,8 +102,8 @@ This policy allows the user to load the DPAPI cred key from their user profile, 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Disabled. 
-- 1 - Enabled. 
+- 0 (default) - Disabled.
+- 1 - Enabled.
 
 <!--/SupportedValues-->
 

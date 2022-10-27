@@ -3,17 +3,17 @@ title: Customize Windows Security contact information
 description: Provide information to your employees on how to contact your IT department when a security issue occurs
 keywords: wdsc, security center, defender, notification, customize, contact, it department, help desk, call, help site
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.date: 
 ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.technology: itpro-security
 ---
 
 # Customize the Windows Security app for your organization

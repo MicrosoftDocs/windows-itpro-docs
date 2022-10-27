@@ -1,7 +1,7 @@
 ---
 title: Connect to remote Azure Active Directory-joined PC (Windows)
 description: You can use Remote Desktop Connection to connect to an Azure AD-joined PC.
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.author: vinpa
@@ -82,6 +82,9 @@ The table below lists the supported configurations for remotely connecting to an
 
 > [!NOTE]
 > If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
+
+> [!NOTE]
+> When an Azure Active Directory group is added to the Remote Desktop Users group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through Remote Desktop Protocol (they can't sign in using Remote Desktop Connection). In this scenario, Network Level Authentication should be disabled to run the connection.
 
 ## Related topics
 

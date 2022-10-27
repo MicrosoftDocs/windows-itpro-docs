@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WindowsStore
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/26/2020
 ms.reviewer: 
@@ -14,10 +14,10 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WindowsStore
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
@@ -26,7 +26,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_WindowsStore policies  
+## ADMX_WindowsStore policies
 
 <dl>
   <dd>
@@ -50,7 +50,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsstore-disableautodownloadwin8"></a>**ADMX_WindowsStore/DisableAutoDownloadWin8**  
+<a href="" id="admx-windowsstore-disableautodownloadwin8"></a>**ADMX_WindowsStore/DisableAutoDownloadWin8**
 
 <!--SupportedSKUs-->
 
@@ -86,7 +86,7 @@ If you don't configure this setting, the automatic download of app updates is de
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Automatic Download of updates on Win8 machines*
 -   GP name: *DisableAutoDownloadWin8*
 -   GP path: *Windows Components\Store*
@@ -99,7 +99,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsstore-disableosupgrade-1"></a>**ADMX_WindowsStore/DisableOSUpgrade_1**  
+<a href="" id="admx-windowsstore-disableosupgrade-1"></a>**ADMX_WindowsStore/DisableOSUpgrade_1**
 
 <!--SupportedSKUs-->
 
@@ -136,7 +136,7 @@ If you disable or do not configure this setting the Store application will offer
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the offer to update to the latest version of Windows*
 -   GP name: *DisableOSUpgrade_1*
 -   GP path: *Windows Components\Store*
@@ -149,7 +149,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsstore-disableosupgrade-2"></a>**ADMX_WindowsStore/DisableOSUpgrade_2**  
+<a href="" id="admx-windowsstore-disableosupgrade-2"></a>**ADMX_WindowsStore/DisableOSUpgrade_2**
 
 <!--SupportedSKUs-->
 
@@ -186,7 +186,7 @@ If you disable or do not configure this setting the Store application will offer
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the offer to update to the latest version of Windows*
 -   GP name: *DisableOSUpgrade_2*
 -   GP path: *Windows Components\Store*
@@ -199,7 +199,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsstore-removewindowsstore-1"></a>**ADMX_WindowsStore/RemoveWindowsStore_1**  
+<a href="" id="admx-windowsstore-removewindowsstore-1"></a>**ADMX_WindowsStore/RemoveWindowsStore_1**
 
 <!--SupportedSKUs-->
 
@@ -236,7 +236,7 @@ If you disable or don't configure this setting, access to the Store application 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the Store application*
 -   GP name: *RemoveWindowsStore_1*
 -   GP path: *Windows Components\Store*
@@ -249,7 +249,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsstore-removewindowsstore-2"></a>**ADMX_WindowsStore/RemoveWindowsStore_2**  
+<a href="" id="admx-windowsstore-removewindowsstore-2"></a>**ADMX_WindowsStore/RemoveWindowsStore_2**
 
 <!--SupportedSKUs-->
 
@@ -286,7 +286,7 @@ If you disable or don't configure this setting, access to the Store application 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the Store application*
 -   GP name: *RemoveWindowsStore_2*
 -   GP path: *Windows Components\Store*

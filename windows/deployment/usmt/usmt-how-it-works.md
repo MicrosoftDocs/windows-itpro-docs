@@ -4,9 +4,10 @@ description: Learn how USMT works and how it includes two tools that migrate set
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # How USMT Works

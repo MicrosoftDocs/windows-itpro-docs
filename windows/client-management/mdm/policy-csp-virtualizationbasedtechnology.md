@@ -3,8 +3,8 @@ title: Policy CSP - VirtualizationBasedTechnology
 description: Learn to use the Policy CSP - VirtualizationBasedTechnology setting to control the state of Hypervisor-protected Code Integrity (HVCI) on devices.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/25/2021
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity"></a>**VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity**  
+<a href="" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity"></a>**VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -82,7 +82,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="virtualizationbasedtechnology-requireuefimemoryattributestable"></a>**VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable**  
+<a href="" id="virtualizationbasedtechnology-requireuefimemoryattributestable"></a>**VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:

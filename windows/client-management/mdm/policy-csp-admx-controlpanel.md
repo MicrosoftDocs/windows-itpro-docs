@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_ControlPanel.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/05/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_ControlPanel
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_ControlPanel policies  
+## ADMX_ControlPanel policies
 
 <dl>
   <dd>
@@ -45,7 +45,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpanel-disallowcpls"></a>**ADMX_ControlPanel/DisallowCpls**  
+<a href="" id="admx-controlpanel-disallowcpls"></a>**ADMX_ControlPanel/DisallowCpls**
 
 <!--SupportedSKUs-->
 
@@ -83,7 +83,7 @@ To hide a Control Panel item, enable this policy setting and click Show to acces
 If both the "Hide specified Control Panel items" setting and the "Show only specified Control Panel items" setting are enabled, the "Show only specified Control Panel items" setting is ignored.
 
 > [!NOTE]
-> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.  
+> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.
 >
 >To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
 
@@ -91,7 +91,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide specified Control Panel items*
 -   GP name: *DisallowCpls*
 -   GP path: *Control Panel*
@@ -102,7 +102,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpanel-forceclassiccontrolpanel"></a>**ADMX_ControlPanel/ForceClassicControlPanel**  
+<a href="" id="admx-controlpanel-forceclassiccontrolpanel"></a>**ADMX_ControlPanel/ForceClassicControlPanel**
 
 <!--SupportedSKUs-->
 
@@ -128,7 +128,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the default Control Panel view, whether by category or icons. 
+This policy setting controls the default Control Panel view, whether by category or icons.
 
 If this policy setting is enabled, the Control Panel opens to the icon view.
 
@@ -143,7 +143,7 @@ If this policy setting isn't configured, the Control Panel opens to the view use
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always open All Control Panel Items when opening Control Panel*
 -   GP name: *ForceClassicControlPanel*
 -   GP path: *Control Panel*
@@ -154,7 +154,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpanel-nocontrolpanel"></a>**ADMX_ControlPanel/NoControlPanel**  
+<a href="" id="admx-controlpanel-nocontrolpanel"></a>**ADMX_ControlPanel/NoControlPanel**
 
 <!--SupportedSKUs-->
 
@@ -202,7 +202,7 @@ If users try to select a Control Panel item from the Properties item on a contex
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit access to Control Panel and PC settings*
 -   GP name: *NoControlPanel*
 -   GP path: *Control Panel*
@@ -213,7 +213,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpanel-restrictcpls"></a>**ADMX_ControlPanel/RestrictCpls**  
+<a href="" id="admx-controlpanel-restrictcpls"></a>**ADMX_ControlPanel/RestrictCpls**
 
 <!--SupportedSKUs-->
 
@@ -256,7 +256,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show only specified Control Panel items*
 -   GP name: *RestrictCpls*
 -   GP path: *Control Panel*

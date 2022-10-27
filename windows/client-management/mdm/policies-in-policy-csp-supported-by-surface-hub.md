@@ -5,15 +5,14 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 07/22/2020
 ---
 
 # Policies in Policy CSP supported by Microsoft Surface Hub
-
 
 - [ApplicationManagement/AllowAppStoreAutoUpdate](./policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)
 - [ApplicationManagement/AllowDeveloperUnlock](./policy-csp-applicationmanagement.md#applicationmanagement-allowdeveloperunlock)

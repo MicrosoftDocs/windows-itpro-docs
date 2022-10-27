@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_ControlPanelDisplay.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/05/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_ControlPanelDisplay
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_ControlPanelDisplay policies  
+## ADMX_ControlPanelDisplay policies
 
 <dl>
   <dd>
@@ -105,7 +105,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-display-disable"></a>**ADMX_ControlPanelDisplay/CPL_Display_Disable**  
+<a href="" id="admx-controlpaneldisplay-cpl-display-disable"></a>**ADMX_ControlPanelDisplay/CPL_Display_Disable**
 
 <!--SupportedSKUs-->
 
@@ -141,7 +141,7 @@ Also, see the "Prohibit access to the Control Panel" (User Configuration\Adminis
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable the Display Control Panel*
 -   GP name: *CPL_Display_Disable*
 -   GP path: *Control Panel\Display*
@@ -152,7 +152,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-display-hidesettings"></a>**ADMX_ControlPanelDisplay/CPL_Display_HideSettings**  
+<a href="" id="admx-controlpaneldisplay-cpl-display-hidesettings"></a>**ADMX_ControlPanelDisplay/CPL_Display_HideSettings**
 
 <!--SupportedSKUs-->
 
@@ -186,7 +186,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Settings tab*
 -   GP name: *CPL_Display_HideSettings*
 -   GP path: *Control Panel\Display*
@@ -197,7 +197,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-disablecolorschemechoice"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_DisableColorSchemeChoice**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-disablecolorschemechoice"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_DisableColorSchemeChoice**
 
 <!--SupportedSKUs-->
 
@@ -234,7 +234,7 @@ For Windows 7 and later, use the "Prevent changing color and appearance" setting
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing color scheme*
 -   GP name: *CPL_Personalization_DisableColorSchemeChoice*
 -   GP path: *Control Panel\Personalization*
@@ -245,7 +245,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-disablethemechange"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_DisableThemeChange**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-disablethemechange"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_DisableThemeChange**
 
 <!--SupportedSKUs-->
 
@@ -283,7 +283,7 @@ If you disable or don't configure this setting, there's no effect.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing theme*
 -   GP name: *CPL_Personalization_DisableThemeChange*
 -   GP path: *Control Panel\Personalization*
@@ -294,7 +294,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-disablevisualstyle"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_DisableVisualStyle**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-disablevisualstyle"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_DisableVisualStyle**
 
 <!--SupportedSKUs-->
 
@@ -329,7 +329,7 @@ When enabled on Windows XP and later systems, this setting prevents users and ap
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing visual style for windows and buttons*
 -   GP name: *CPL_Personalization_DisableVisualStyle*
 -   GP path: *Control Panel\Personalization*
@@ -340,7 +340,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-enablescreensaver"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_EnableScreenSaver**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-enablescreensaver"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_EnableScreenSaver**
 
 <!--SupportedSKUs-->
 
@@ -379,7 +379,7 @@ Also, see the "Prevent changing Screen Saver" setting.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable screen saver*
 -   GP name: *CPL_Personalization_EnableScreenSaver*
 -   GP path: *Control Panel\Personalization*
@@ -390,7 +390,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-forcedefaultlockscreen"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_ForceDefaultLockScreen**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-forcedefaultlockscreen"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_ForceDefaultLockScreen**
 
 <!--SupportedSKUs-->
 
@@ -431,7 +431,7 @@ This setting can be used in conjunction with the "Prevent changing lock screen a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force a specific default lock screen and logon image*
 -   GP name: *CPL_Personalization_ForceDefaultLockScreen*
 -   GP path: *Control Panel\Personalization*
@@ -442,7 +442,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-lockfontsize"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_LockFontSize**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-lockfontsize"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_LockFontSize**
 
 <!--SupportedSKUs-->
 
@@ -470,14 +470,14 @@ ADMX Info:
 <!--Description-->
 This setting prevents users from changing the size of the font in the windows and buttons displayed on their screens.
 
-If this setting is enabled, the "Font size" drop-down list on the Appearance tab in Display Properties is disabled. 
+If this setting is enabled, the "Font size" drop-down list on the Appearance tab in Display Properties is disabled.
 
 If you disable or don't configure this setting, a user may change the font size using the "Font size" drop-down list on the Appearance tab.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit selection of visual style font size*
 -   GP name: *CPL_Personalization_LockFontSize*
 -   GP path: *Control Panel\Personalization*
@@ -488,7 +488,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nochanginglockscreen"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingLockScreen**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nochanginglockscreen"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingLockScreen**
 
 <!--SupportedSKUs-->
 
@@ -523,7 +523,7 @@ If you enable this setting, the user won't be able to change their lock screen a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing lock screen and logon image*
 -   GP name: *CPL_Personalization_NoChangingLockScreen*
 -   GP path: *Control Panel\Personalization*
@@ -534,7 +534,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nochangingstartmenubackground"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingStartMenuBackground**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nochangingstartmenubackground"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoChangingStartMenuBackground**
 
 <!--SupportedSKUs-->
 
@@ -573,7 +573,7 @@ If the "Force a specific Start background" policy is also set on a supported ver
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing start menu background*
 -   GP name: *CPL_Personalization_NoChangingStartMenuBackground*
 -   GP path: *Control Panel\Personalization*
@@ -584,7 +584,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nocolorappearanceui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoColorAppearanceUI**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nocolorappearanceui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoColorAppearanceUI**
 
 <!--SupportedSKUs-->
 
@@ -621,7 +621,7 @@ For systems prior to Windows Vista, this setting hides the Appearance and Themes
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing color and appearance*
 -   GP name: *CPL_Personalization_NoColorAppearanceUI*
 -   GP path: *Control Panel\Personalization*
@@ -632,7 +632,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nodesktopbackgroundui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopBackgroundUI**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nodesktopbackgroundui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopBackgroundUI**
 
 <!--SupportedSKUs-->
 
@@ -674,7 +674,7 @@ Also, see the "Allow only bitmapped wallpaper" setting.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing desktop background*
 -   GP name: *CPL_Personalization_NoDesktopBackgroundUI*
 -   GP path: *Control Panel\Personalization*
@@ -685,7 +685,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nodesktopiconsui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopIconsUI**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nodesktopiconsui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoDesktopIconsUI**
 
 <!--SupportedSKUs-->
 
@@ -722,7 +722,7 @@ For systems prior to Windows Vista, this setting also hides the Desktop tab in t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing desktop icons*
 -   GP name: *CPL_Personalization_NoDesktopIconsUI*
 -   GP path: *Control Panel\Personalization*
@@ -733,7 +733,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nolockscreen"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoLockScreen**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nolockscreen"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoLockScreen**
 
 <!--SupportedSKUs-->
 
@@ -768,7 +768,7 @@ If you disable or don't configure this policy setting, users that aren't require
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not display the lock screen*
 -   GP name: *CPL_Personalization_NoLockScreen*
 -   GP path: *Control Panel\Personalization*
@@ -779,7 +779,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nomousepointersui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoMousePointersUI**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nomousepointersui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoMousePointersUI**
 
 <!--SupportedSKUs-->
 
@@ -814,7 +814,7 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing mouse pointers*
 -   GP name: *CPL_Personalization_NoMousePointersUI*
 -   GP path: *Control Panel\Personalization*
@@ -825,7 +825,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-noscreensaverui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoScreenSaverUI**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-noscreensaverui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoScreenSaverUI**
 
 <!--SupportedSKUs-->
 
@@ -858,7 +858,7 @@ This setting also prevents users from using Control Panel to add, configure, or 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing screen saver*
 -   GP name: *CPL_Personalization_NoScreenSaverUI*
 -   GP path: *Control Panel\Personalization*
@@ -869,7 +869,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-nosoundschemeui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoSoundSchemeUI**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-nosoundschemeui"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_NoSoundSchemeUI**
 
 <!--SupportedSKUs-->
 
@@ -904,7 +904,7 @@ If you enable this setting, none of the Sound Scheme settings can be changed by 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changing sounds*
 -   GP name: *CPL_Personalization_NoSoundSchemeUI*
 -   GP path: *Control Panel\Personalization*
@@ -915,7 +915,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-personalcolors"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_PersonalColors**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-personalcolors"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_PersonalColors**
 
 <!--SupportedSKUs-->
 
@@ -950,7 +950,7 @@ If this setting is enabled, the background and accent colors of Windows will be 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force a specific background and accent color*
 -   GP name: *CPL_Personalization_PersonalColors*
 -   GP path: *Control Panel\Personalization*
@@ -961,7 +961,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-screensaverissecure"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverIsSecure**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-screensaverissecure"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverIsSecure**
 
 <!--SupportedSKUs-->
 
@@ -1003,7 +1003,7 @@ To ensure that a computer will be password protected, enable the "Enable Screen 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Password protect the screen saver*
 -   GP name: *CPL_Personalization_ScreenSaverIsSecure*
 -   GP path: *Control Panel\Personalization*
@@ -1014,7 +1014,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-screensavertimeout"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverTimeOut**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-screensavertimeout"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_ScreenSaverTimeOut**
 
 <!--SupportedSKUs-->
 
@@ -1057,7 +1057,7 @@ When not configured, whatever wait time is set on the client through the Screen 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Screen saver timeout*
 -   GP name: *CPL_Personalization_ScreenSaverTimeOut*
 -   GP path: *Control Panel\Personalization*
@@ -1068,7 +1068,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-setscreensaver"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_SetScreenSaver**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-setscreensaver"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_SetScreenSaver**
 
 <!--SupportedSKUs-->
 
@@ -1110,7 +1110,7 @@ If the specified screen saver isn't installed on a computer to which this settin
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force specific screen saver*
 -   GP name: *CPL_Personalization_SetScreenSaver*
 -   GP path: *Control Panel\Personalization*
@@ -1121,7 +1121,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-settheme"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_SetTheme**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-settheme"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_SetTheme**
 
 <!--SupportedSKUs-->
 
@@ -1156,7 +1156,7 @@ If you disable or don't configure this setting, the default theme will be applie
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Load a specific theme*
 -   GP name: *CPL_Personalization_SetTheme*
 -   GP path: *Control Panel\Personalization*
@@ -1167,7 +1167,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-setvisualstyle"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_SetVisualStyle**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-setvisualstyle"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_SetVisualStyle**
 
 <!--SupportedSKUs-->
 
@@ -1211,7 +1211,7 @@ If you disable or don't configure this setting, the users can select the visual 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force a specific visual style file or force Windows Classic*
 -   GP name: *CPL_Personalization_SetVisualStyle*
 -   GP path: *Control Panel\Personalization*
@@ -1222,7 +1222,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-controlpaneldisplay-cpl-personalization-startbackground"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_StartBackground**  
+<a href="" id="admx-controlpaneldisplay-cpl-personalization-startbackground"></a>**ADMX_ControlPanelDisplay/CPL_Personalization_StartBackground**
 
 <!--SupportedSKUs-->
 
@@ -1257,7 +1257,7 @@ If this setting is set to a nonzero value, then Start uses the specified backgro
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force a specific Start background*
 -   GP name: *CPL_Personalization_StartBackground*
 -   GP path: *Control Panel\Personalization*

@@ -3,8 +3,8 @@ title: Policy CSP - DataUsage
 description: Learn how to use the Policy CSP - DataUsage setting to configure the cost of 4G connections on the local machine.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - DataUsage
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## DataUsage policies  
+## DataUsage policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**  
+<a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**
 
 <hr/>
 
@@ -52,7 +52,7 @@ This policy is deprecated in Windows 10, version 1809.
 <hr/>
 
 <!--Policy-->
-<a href="" id="datausage-setcost4g"></a>**DataUsage/SetCost4G**  
+<a href="" id="datausage-setcost4g"></a>**DataUsage/SetCost4G**
 
 <!--SupportedSKUs-->
 
@@ -79,12 +79,12 @@ This policy is deprecated in Windows 10, version 1809.
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures the cost of 4G connections on the local machine.      
+This policy setting configures the cost of 4G connections on the local machine.
 
 If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all 4G connections on the local machine:
 
-- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints. 
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit. 
+- Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
+- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.
 - Variable: This connection is costed on a per byte basis.
 
 If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
@@ -93,7 +93,7 @@ If this policy setting is disabled or is not configured, the cost of 4G connecti
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set 4G Cost*
 -   GP name: *SetCost4G*
 -   GP path: *Network/WWAN Service/WWAN Media Cost*

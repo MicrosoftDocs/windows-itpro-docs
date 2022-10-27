@@ -1,20 +1,12 @@
 ---
 title: Change to Windows 10 Education from Windows 10 Pro
 description: Learn how IT Pros can opt into changing to Windows 10 Pro Education from Windows 10 Pro.
-keywords: change, free change, Windows 10 Pro to Windows 10 Pro Education, Windows 10 Pro to Windows 10 Pro Education, education customers, Windows 10 Pro Education, Windows 10 Pro
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+ms.collection: 
+  - highpri
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro
@@ -81,7 +73,7 @@ You can use Windows Configuration Designer to create a provisioning package that
 
     **Figure 2** - Enter the license key 
 
-    ![Enter the license key to change to Windows 10 Pro Education.](images/wcd_productkey.png)
+    ![Enter the license key to change to Windows 10 Pro Education.](images/wcd/wcd_productkey.png)
 
 3. Complete the rest of the process for creating a provisioning package and then apply the package to the devices you want to change to Windows 10 Pro Education.
 
@@ -170,15 +162,7 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
 1. During initial device setup, on the **How would you like to set up?** page, select **Set up for an organization**, and then click **Next**.
 
-    **Figure 4** - Select how you'd like to set up the device
-
-    ![Select how you'd like to set up the device.](images/1_howtosetup.png)
-
 2. On the **Sign in with Microsoft** page, enter the username and password to use with Office 365 or other services from Microsoft, and then click **Next**.
-
-    **Figure 5** - Enter the account details
-
-    ![Enter the account details you use with Office 365 or other Microsoft services.](images/2_signinwithms.png)
 
 3. Go through the rest of Windows device setup. Once you're done, the device will be Azure AD joined to your school's subscription.
 
@@ -304,10 +288,6 @@ If you have on-premises Active Directory Domain Services (AD DS) domains, users 
 You need to synchronize these identities so that users will have a *single identity* that they can use to access their on-premises apps and cloud services that use Azure AD (such as Windows 10 Pro Education). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
 
 (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
-
-**Figure 13** - On-premises AD DS integrated with Azure AD
-
-![Illustration of Azure Active Directory Connect.](images/windows-ad-connect.png)
 
 For more information about integrating on-premises AD DS domains with Azure AD, see these resources:
 -   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)

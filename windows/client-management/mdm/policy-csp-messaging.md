@@ -3,8 +3,8 @@ title: Policy CSP - Messaging
 description: Enable, and disable, text message backup and restore as well as Messaging Everywhere by using the Policy CSP for messaging.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Messaging policies  
+## Messaging policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**  
+<a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**
 
 <!--SupportedSKUs-->
 
@@ -58,7 +58,7 @@ Enables text message backup and restore and Messaging Everywhere. This policy al
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Message Service Cloud Sync*
 -   GP name: *AllowMessageSync*
 -   GP path: *Windows Components/Messaging*

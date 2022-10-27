@@ -3,8 +3,8 @@ title: Policy CSP - AttachmentManager
 description: Manage Windows marks file attachments with information about their zone of origin, such as restricted, internet, intranet, local.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,10 +15,10 @@ manager: aaroncz
 # Policy CSP - AttachmentManager
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
@@ -26,7 +26,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## AttachmentManager policies  
+## AttachmentManager policies
 
 <dl>
   <dd>
@@ -44,7 +44,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="attachmentmanager-donotpreservezoneinformation"></a>**AttachmentManager/DoNotPreserveZoneInformation**  
+<a href="" id="attachmentmanager-donotpreservezoneinformation"></a>**AttachmentManager/DoNotPreserveZoneInformation**
 
 <!--SupportedSKUs-->
 
@@ -84,7 +84,7 @@ If you don't configure this policy setting, Windows marks file attachments with 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not preserve zone information in file attachments*
 -   GP name: *AM_MarkZoneOnSavedAtttachments*
 -   GP path: *Windows Components/Attachment Manager*
@@ -96,7 +96,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="attachmentmanager-hidezoneinfomechanism"></a>**AttachmentManager/HideZoneInfoMechanism**  
+<a href="" id="attachmentmanager-hidezoneinfomechanism"></a>**AttachmentManager/HideZoneInfoMechanism**
 
 <!--SupportedSKUs-->
 
@@ -135,7 +135,7 @@ If you don't configure this policy setting, Windows hides the check box and Unbl
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide mechanisms to remove zone information*
 -   GP name: *AM_RemoveZoneInfo*
 -   GP path: *Windows Components/Attachment Manager*
@@ -147,7 +147,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="attachmentmanager-notifyantivirusprograms"></a>**AttachmentManager/NotifyAntivirusPrograms**  
+<a href="" id="attachmentmanager-notifyantivirusprograms"></a>**AttachmentManager/NotifyAntivirusPrograms**
 
 <!--SupportedSKUs-->
 
@@ -186,7 +186,7 @@ If you don't configure this policy setting, Windows doesn't call the registered 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Notify antivirus programs when opening attachments*
 -   GP name: *AM_CallIOfficeAntiVirus*
 -   GP path: *Windows Components/Attachment Manager*

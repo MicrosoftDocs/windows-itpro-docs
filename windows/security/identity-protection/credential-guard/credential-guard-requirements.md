@@ -1,23 +1,22 @@
 ---
 title: Windows Defender Credential Guard Requirements (Windows)
 description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer: erikdau
+ms.reviewer: zwhittington
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 ms.date: 12/27/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Credential Guard: Requirements
@@ -58,8 +57,8 @@ For information about Windows Defender Remote Credential Guard hardware and soft
 When Windows Defender Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatibility with the reduced functionality.
 
 > [!WARNING]
-> Enabling Windows Defender Credential Guard on domain controllers is not supported.
-> The domain controller hosts authentication services which integrate with processes isolated when Windows Defender Credential Guard is enabled, causing crashes.
+> Enabling Windows Defender Credential Guard on domain controllers is not recommended at this time.
+> Windows Defender Credential Guard does not provide any added security to domain controllers, and can cause application compatibility issues on domain controllers.
 
 > [!NOTE]
 > Windows Defender Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Windows Defender Credential Guard is enabled are also in the Active Directory database (on domain controllers) and the SAM (for local accounts).
@@ -101,10 +100,7 @@ The following tables describe baseline protections, plus protections for improve
 |Hardware: **Trusted Platform Module (TPM)**|**Requirement**: </br> - TPM 1.2 or TPM 2.0, either discrete or firmware. [TPM recommendations](../../information-protection/tpm/tpm-recommendations.md)|A TPM provides protection for VBS encryption keys that are stored in the firmware. TPM helps protect against attacks involving a physically present user with BIOS access.|
 |Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot**|**Requirements**: </br> - See the following Windows Hardware Compatibility Program requirement: System.Fundamentals.Firmware.UEFISecureBoot|UEFI Secure Boot helps ensure that the device boots only authorized code, and can prevent boot kits and root kits from installing and persisting across reboots.|
 |Firmware: **Secure firmware update process**|**Requirements**: </br> - UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: System.Fundamentals.Firmware.UEFISecureBoot.|UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed.|
-|Software: Qualified **Windows operating system**|**Requirement**: </br> - At least Windows 10 Enterprise or Windows Server 2016.|Support for VBS and for management features that simplify configuration of Windows Defender Credential Guard.|
-
-> [!IMPORTANT]
-> Windows Server 2016 running as a domain controller does not support Windows Defender Credential Guard.
+|Software: Qualified **Windows operating system**|**Requirement**: </br> - At least Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016.|Support for VBS and for management features that simplify configuration of Windows Defender Credential Guard.|
 
 > [!IMPORTANT]
 > The following tables list additional qualifications for improved security. We strongly recommend meeting the additional qualifications to significantly strengthen the level of security that Windows Defender Credential Guard can provide.

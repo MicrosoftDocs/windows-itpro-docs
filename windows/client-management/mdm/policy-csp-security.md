@@ -3,8 +3,8 @@ title: Policy CSP - Security
 description: Learn how the Policy CSP - Security setting can specify whether to allow the runtime configuration agent to install provisioning packages.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Security policies  
+## Security policies
 
 <dl>
   <dd>
@@ -55,7 +55,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-allowaddprovisioningpackage"></a>**Security/AllowAddProvisioningPackage**  
+<a href="" id="security-allowaddprovisioningpackage"></a>**Security/AllowAddProvisioningPackage**
 
 <!--SupportedSKUs-->
 
@@ -96,11 +96,11 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
+<a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**
 
 <!--Description-->
 > [!NOTE]
-> 
+>
 > - This policy is deprecated in Windows 10, version 1607.
 
 Specifies whether to allow automatic [device encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
@@ -118,7 +118,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-allowremoveprovisioningpackage"></a>**Security/AllowRemoveProvisioningPackage**  
+<a href="" id="security-allowremoveprovisioningpackage"></a>**Security/AllowRemoveProvisioningPackage**
 
 <!--SupportedSKUs-->
 
@@ -159,7 +159,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-cleartpmifnotready"></a>**Security/ClearTPMIfNotReady**  
+<a href="" id="security-cleartpmifnotready"></a>**Security/ClearTPMIfNotReady**
 
 <!--SupportedSKUs-->
 
@@ -190,7 +190,7 @@ Admin access is required. The prompt will appear on first admin logon after a re
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the system to clear the TPM if it is not in a ready state.*
 -   GP name: *ClearTPMIfNotReady_Name*
 -   GP path: *System/Trusted Platform Module Services*
@@ -209,7 +209,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-configurewindowspasswords"></a>**Security/ConfigureWindowsPasswords**  
+<a href="" id="security-configurewindowspasswords"></a>**Security/ConfigureWindowsPasswords**
 
 <!--SupportedSKUs-->
 
@@ -254,7 +254,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**  
+<a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**
 
 <!--SupportedSKUs-->
 
@@ -298,7 +298,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-recoveryenvironmentauthentication"></a>**Security/RecoveryEnvironmentAuthentication**  
+<a href="" id="security-recoveryenvironmentauthentication"></a>**Security/RecoveryEnvironmentAuthentication**
 
 <!--SupportedSKUs-->
 
@@ -327,7 +327,7 @@ The following list shows the supported values:
 <!--Description-->
 This policy controls the Admin Authentication requirement in RecoveryEnvironment.
 
-Supported values:  
+Supported values:
 
 -  0 - Default: Keep using default(current) behavior.
 -  1 - RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment.
@@ -349,7 +349,7 @@ The process of starting Push Button Reset (PBR) in WinRE:
 1. Open a cmd as Administrator, run command "reagentc /boottore" and restart the OS to boot to WinRE.
 1. OS should boot to the blue screen of WinRE UI, go through TroubleShoot -> Reset this PC, it should show two options: "Keep my files" and "Remove everything".
 
-If the MDM policy is set to "Default" (0) or doesn't exist, the admin authentication flow should work as default behavior:  
+If the MDM policy is set to "Default" (0) or doesn't exist, the admin authentication flow should work as default behavior:
 
 1. Start PBR in WinRE, choose "Keep my files", it should pop up admin authentication.
 1. Click "<-" (right arrow) button and choose "Remove everything", it shouldn't pop up admin authentication and just go to PBR options.
@@ -371,7 +371,7 @@ If the MDM policy is set to "NoRequireAuthentication" (2)
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
+<a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**
 
 <!--SupportedSKUs-->
 
@@ -417,7 +417,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
+<a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**
 
 <!--SupportedSKUs-->
 
@@ -458,7 +458,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="security-requireretrievehealthcertificateonboot"></a>**Security/RequireRetrieveHealthCertificateOnBoot**  
+<a href="" id="security-requireretrievehealthcertificateonboot"></a>**Security/RequireRetrieveHealthCertificateOnBoot**
 
 <!--SupportedSKUs-->
 
@@ -493,7 +493,7 @@ Setting this policy to 1 (Required):
 
 > [!NOTE]
 > We recommend that this policy is set to Required after MDM enrollment.
- 
+
 Most restricted value is 1.
 
 <!--/Description-->

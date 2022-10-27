@@ -3,8 +3,8 @@ title: Policy CSP - Privacy
 description: Learn how the Policy CSP - Privacy setting allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Privacy policies  
+## Privacy policies
 
 <dl>
   <dd>
@@ -297,7 +297,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**  
+<a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**
 
 <!--SupportedSKUs-->
 
@@ -343,7 +343,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-allowcrossdeviceclipboard"></a>**Privacy/AllowCrossDeviceClipboard**  
+<a href="" id="privacy-allowcrossdeviceclipboard"></a>**Privacy/AllowCrossDeviceClipboard**
 
 <!--SupportedSKUs-->
 
@@ -375,7 +375,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Clipboard synchronization across devices*
 -   GP name: *AllowCrossDeviceClipboard*
 -   GP path: *System/OS Policies*
@@ -383,7 +383,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values: 
+The following list shows the supported values:
 
 0 – Not allowed.
 1 (default) – Allowed.
@@ -394,7 +394,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**  
+<a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**
 
 <!--SupportedSKUs-->
 
@@ -426,7 +426,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow input personalization*
 -   GP name: *AllowInputPersonalization*
 -   GP path: *Control Panel/Regional and Language Options*
@@ -445,7 +445,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**  
+<a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**
 
 <!--SupportedSKUs-->
 
@@ -477,7 +477,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the advertising ID*
 -   GP name: *DisableAdvertisingId*
 -   GP path: *System/User Profiles*
@@ -497,7 +497,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-disableprivacyexperience"></a>**Privacy/DisablePrivacyExperience**  
+<a href="" id="privacy-disableprivacyexperience"></a>**Privacy/DisablePrivacyExperience**
 
 <!--SupportedSKUs-->
 
@@ -526,16 +526,16 @@ The following list shows the supported values:
 <!--Description-->
 Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.
 
-Supported value type is integer.  
+Supported value type is integer.
 
 -  0 (default) - Allow the "choose privacy settings for your device" screen for a new user during their first logon or when an existing user logs in for the first time after an upgrade.
 -  1 - Do not allow the "choose privacy settings for your device" screen when a new user logs in or an existing user logs in for the first time after an upgrade.
 
-In some enterprise managed environments, the privacy settings may be set by policies. In these cases, you can use this policy if you do not want to show a screen that would prompt your users to change these privacy settings. 
+In some enterprise managed environments, the privacy settings may be set by policies. In these cases, you can use this policy if you do not want to show a screen that would prompt your users to change these privacy settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't launch privacy settings experience on user logon*
 -   GP name: *DisablePrivacyExperience*
 -   GP path: *Windows Components/OOBE*
@@ -556,7 +556,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-enableactivityfeed"></a>**Privacy/EnableActivityFeed**  
+<a href="" id="privacy-enableactivityfeed"></a>**Privacy/EnableActivityFeed**
 
 <!--SupportedSKUs-->
 
@@ -586,7 +586,7 @@ Allows IT Admins to allow Apps/OS to publish to the activity feed.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enables Activity Feed*
 -   GP name: *EnableActivityFeed*
 -   GP path: *System/OS Policies*
@@ -605,7 +605,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**  
+<a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**
 
 <!--SupportedSKUs-->
 
@@ -637,7 +637,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access account information*
 -   GP name: *LetAppsAccessAccountInfo*
 -   GP element: *LetAppsAccessAccountInfo_Enum*
@@ -658,7 +658,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo-forceallowtheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessaccountinfo-forceallowtheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -688,7 +688,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access account information*
 -   GP name: *LetAppsAccessAccountInfo*
 -   GP element: *LetAppsAccessAccountInfo_ForceAllowTheseApps_List*
@@ -701,7 +701,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo-forcedenytheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessaccountinfo-forcedenytheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -731,7 +731,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access account information*
 -   GP name: *LetAppsAccessAccountInfo*
 -   GP element: *LetAppsAccessAccountInfo_ForceDenyTheseApps_List*
@@ -744,7 +744,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps"></a>**Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps"></a>**Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -774,7 +774,7 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access account information*
 -   GP name: *LetAppsAccessAccountInfo*
 -   GP element: *LetAppsAccessAccountInfo_UserInControlOfTheseApps_List*
@@ -787,7 +787,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception**  
+<a href="" id="privacy-letappsaccessbackgroundspatialperception"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception**
 
 <!--SupportedSKUs-->
 
@@ -812,7 +812,7 @@ ADMX Info:
 <hr/>
 
 <!--/Scope-->
-<!--Description--> 
+<!--Description-->
 > [!NOTE]
 > Currently, this policy is supported only in HoloLens 2.
 
@@ -822,7 +822,7 @@ Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access background spatial perception*
 -   GP name: *LetAppsAccessBackgroundSpatialPerception*
 -   GP element: *LetAppsAccessBackgroundSpatialPerception_Enum*
@@ -843,7 +843,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -878,7 +878,7 @@ Supported value type is chr.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access background spatial perception*
 -   GP name: *LetAppsAccessBackgroundSpatialPerception*
 -   GP element: *LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List*
@@ -894,7 +894,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -929,7 +929,7 @@ Supported value type is chr.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access background spatial perception*
 -   GP name: *LetAppsAccessBackgroundSpatialPerception*
 -   GP element: *LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List*
@@ -945,7 +945,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -970,18 +970,18 @@ ADMX Info:
 <hr/>
 
 <!--/Scope-->
-<!--Description--> 
+<!--Description-->
 > [!NOTE]
 > Currently, this policy is supported only in HoloLens 2.
 
-List of semi-colon delimited Package Family Names of Windows Store Apps. 
+List of semi-colon delimited Package Family Names of Windows Store Apps.
 The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
 
 Supported value type is chr.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access background spatial perception*
 -   GP name: *LetAppsAccessBackgroundSpatialPerception*
 -   GP element: *LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List*
@@ -997,7 +997,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**  
+<a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**
 
 <!--SupportedSKUs-->
 
@@ -1029,7 +1029,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the calendar*
 -   GP name: *LetAppsAccessCalendar*
 -   GP element: *LetAppsAccessCalendar_Enum*
@@ -1050,7 +1050,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar-forceallowtheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesscalendar-forceallowtheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1080,7 +1080,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the calendar*
 -   GP name: *LetAppsAccessCalendar*
 -   GP element: *LetAppsAccessCalendar_ForceAllowTheseApps_List*
@@ -1093,7 +1093,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar-forcedenytheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesscalendar-forcedenytheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1123,7 +1123,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the calendar*
 -   GP name: *LetAppsAccessCalendar*
 -   GP element: *LetAppsAccessCalendar_ForceDenyTheseApps_List*
@@ -1136,7 +1136,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesscalendar-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1166,7 +1166,7 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the calendar*
 -   GP name: *LetAppsAccessCalendar*
 -   GP element: *LetAppsAccessCalendar_UserInControlOfTheseApps_List*
@@ -1179,7 +1179,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**  
+<a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**
 
 <!--SupportedSKUs-->
 
@@ -1211,7 +1211,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access call history*
 -   GP name: *LetAppsAccessCallHistory*
 -   GP element: *LetAppsAccessCallHistory_Enum*
@@ -1232,7 +1232,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory-forceallowtheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesscallhistory-forceallowtheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1262,7 +1262,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access call history*
 -   GP name: *LetAppsAccessCallHistory*
 -   GP element: *LetAppsAccessCallHistory_ForceAllowTheseApps_List*
@@ -1275,7 +1275,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory-forcedenytheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesscallhistory-forcedenytheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1305,7 +1305,7 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access call history*
 -   GP name: *LetAppsAccessCallHistory*
 -   GP element: *LetAppsAccessCallHistory_ForceDenyTheseApps_List*
@@ -1318,7 +1318,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesscallhistory-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1348,7 +1348,7 @@ List of semi-colon delimited Package Family Names of Windows apps. The user is a
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access call history*
 -   GP name: *LetAppsAccessCallHistory*
 -   GP element: *LetAppsAccessCallHistory_UserInControlOfTheseApps_List*
@@ -1361,7 +1361,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**  
+<a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**
 
 <!--SupportedSKUs-->
 
@@ -1393,7 +1393,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the camera*
 -   GP name: *LetAppsAccessCamera*
 -   GP element: *LetAppsAccessCamera_Enum*
@@ -1414,7 +1414,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscamera-forceallowtheseapps"></a>**Privacy/LetAppsAccessCamera_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesscamera-forceallowtheseapps"></a>**Privacy/LetAppsAccessCamera_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1444,7 +1444,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the camera*
 -   GP name: *LetAppsAccessCamera*
 -   GP element: *LetAppsAccessCamera_ForceAllowTheseApps_List*
@@ -1457,7 +1457,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscamera-forcedenytheseapps"></a>**Privacy/LetAppsAccessCamera_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesscamera-forcedenytheseapps"></a>**Privacy/LetAppsAccessCamera_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1487,7 +1487,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the camera*
 -   GP name: *LetAppsAccessCamera*
 -   GP element: *LetAppsAccessCamera_ForceDenyTheseApps_List*
@@ -1500,7 +1500,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscamera-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCamera_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesscamera-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCamera_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1530,7 +1530,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the camera*
 -   GP name: *LetAppsAccessCamera*
 -   GP element: *LetAppsAccessCamera_UserInControlOfTheseApps_List*
@@ -1543,7 +1543,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**  
+<a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**
 
 <!--SupportedSKUs-->
 
@@ -1575,7 +1575,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access contacts*
 -   GP name: *LetAppsAccessContacts*
 -   GP element: *LetAppsAccessContacts_Enum*
@@ -1596,7 +1596,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts-forceallowtheseapps"></a>**Privacy/LetAppsAccessContacts_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesscontacts-forceallowtheseapps"></a>**Privacy/LetAppsAccessContacts_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1626,7 +1626,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access contacts*
 -   GP name: *LetAppsAccessContacts*
 -   GP element: *LetAppsAccessContacts_ForceAllowTheseApps_List*
@@ -1639,7 +1639,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts-forcedenytheseapps"></a>**Privacy/LetAppsAccessContacts_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesscontacts-forcedenytheseapps"></a>**Privacy/LetAppsAccessContacts_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1669,7 +1669,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access contacts*
 -   GP name: *LetAppsAccessContacts*
 -   GP element: *LetAppsAccessContacts_ForceDenyTheseApps_List*
@@ -1682,7 +1682,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts-userincontroloftheseapps"></a>**Privacy/LetAppsAccessContacts_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesscontacts-userincontroloftheseapps"></a>**Privacy/LetAppsAccessContacts_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1712,7 +1712,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access contacts*
 -   GP name: *LetAppsAccessContacts*
 -   GP element: *LetAppsAccessContacts_UserInControlOfTheseApps_List*
@@ -1725,7 +1725,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**  
+<a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**
 
 <!--SupportedSKUs-->
 
@@ -1757,7 +1757,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access email*
 -   GP name: *LetAppsAccessEmail*
 -   GP element: *LetAppsAccessEmail_Enum*
@@ -1778,7 +1778,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessemail-forceallowtheseapps"></a>**Privacy/LetAppsAccessEmail_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessemail-forceallowtheseapps"></a>**Privacy/LetAppsAccessEmail_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1808,7 +1808,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access email*
 -   GP name: *LetAppsAccessEmail*
 -   GP element: *LetAppsAccessEmail_ForceAllowTheseApps_List*
@@ -1821,7 +1821,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessemail-forcedenytheseapps"></a>**Privacy/LetAppsAccessEmail_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessemail-forcedenytheseapps"></a>**Privacy/LetAppsAccessEmail_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1851,7 +1851,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access email*
 -   GP name: *LetAppsAccessEmail*
 -   GP element: *LetAppsAccessEmail_ForceDenyTheseApps_List*
@@ -1864,7 +1864,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessemail-userincontroloftheseapps"></a>**Privacy/LetAppsAccessEmail_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessemail-userincontroloftheseapps"></a>**Privacy/LetAppsAccessEmail_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1894,7 +1894,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access email*
 -   GP name: *LetAppsAccessEmail*
 -   GP element: *LetAppsAccessEmail_UserInControlOfTheseApps_List*
@@ -1907,7 +1907,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput"></a>**Privacy/LetAppsAccessGazeInput**  
+<a href="" id="privacy-letappsaccessgazeinput"></a>**Privacy/LetAppsAccessGazeInput**
 
 <!--SupportedSKUs-->
 
@@ -1941,7 +1941,7 @@ This policy setting specifies whether Windows apps can access the eye tracker.
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput-forceallowtheseapps"></a>**Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessgazeinput-forceallowtheseapps"></a>**Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -1975,7 +1975,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput-forcedenytheseapps"></a>**Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessgazeinput-forcedenytheseapps"></a>**Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2009,7 +2009,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput-userincontroloftheseapps"></a>**Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessgazeinput-userincontroloftheseapps"></a>**Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2043,7 +2043,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**  
+<a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**
 
 <!--SupportedSKUs-->
 
@@ -2075,7 +2075,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access location*
 -   GP name: *LetAppsAccessLocation*
 -   GP element: *LetAppsAccessLocation_Enum*
@@ -2096,7 +2096,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesslocation-forceallowtheseapps"></a>**Privacy/LetAppsAccessLocation_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesslocation-forceallowtheseapps"></a>**Privacy/LetAppsAccessLocation_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2126,7 +2126,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access location*
 -   GP name: *LetAppsAccessLocation*
 -   GP element: *LetAppsAccessLocation_ForceAllowTheseApps_List*
@@ -2139,7 +2139,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesslocation-forcedenytheseapps"></a>**Privacy/LetAppsAccessLocation_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesslocation-forcedenytheseapps"></a>**Privacy/LetAppsAccessLocation_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2169,7 +2169,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access location*
 -   GP name: *LetAppsAccessLocation*
 -   GP element: *LetAppsAccessLocation_ForceDenyTheseApps_List*
@@ -2182,7 +2182,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesslocation-userincontroloftheseapps"></a>**Privacy/LetAppsAccessLocation_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesslocation-userincontroloftheseapps"></a>**Privacy/LetAppsAccessLocation_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2212,7 +2212,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access location*
 -   GP name: *LetAppsAccessLocation*
 -   GP element: *LetAppsAccessLocation_UserInControlOfTheseApps_List*
@@ -2225,7 +2225,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**  
+<a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**
 
 <!--SupportedSKUs-->
 
@@ -2257,7 +2257,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access messaging*
 -   GP name: *LetAppsAccessMessaging*
 -   GP element: *LetAppsAccessMessaging_Enum*
@@ -2278,7 +2278,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging-forceallowtheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessmessaging-forceallowtheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2308,7 +2308,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access messaging*
 -   GP name: *LetAppsAccessMessaging*
 -   GP element: *LetAppsAccessMessaging_ForceAllowTheseApps_List*
@@ -2321,7 +2321,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging-forcedenytheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessmessaging-forcedenytheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2351,7 +2351,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access messaging*
 -   GP name: *LetAppsAccessMessaging*
 -   GP element: *LetAppsAccessMessaging_ForceDenyTheseApps_List*
@@ -2364,7 +2364,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessmessaging-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2394,7 +2394,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access messaging*
 -   GP name: *LetAppsAccessMessaging*
 -   GP element: *LetAppsAccessMessaging_UserInControlOfTheseApps_List*
@@ -2407,7 +2407,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**  
+<a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**
 
 <!--SupportedSKUs-->
 
@@ -2439,7 +2439,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the microphone*
 -   GP name: *LetAppsAccessMicrophone*
 -   GP element: *LetAppsAccessMicrophone_Enum*
@@ -2460,7 +2460,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone-forceallowtheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessmicrophone-forceallowtheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2490,7 +2490,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the microphone*
 -   GP name: *LetAppsAccessMicrophone*
 -   GP element: *LetAppsAccessMicrophone_ForceAllowTheseApps_List*
@@ -2503,7 +2503,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone-forcedenytheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessmicrophone-forcedenytheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2533,7 +2533,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the microphone*
 -   GP name: *LetAppsAccessMicrophone*
 -   GP element: *LetAppsAccessMicrophone_ForceDenyTheseApps_List*
@@ -2546,7 +2546,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessmicrophone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2576,7 +2576,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access the microphone*
 -   GP name: *LetAppsAccessMicrophone*
 -   GP element: *LetAppsAccessMicrophone_UserInControlOfTheseApps_List*
@@ -2589,7 +2589,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**  
+<a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**
 
 <!--SupportedSKUs-->
 
@@ -2621,7 +2621,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access motion*
 -   GP name: *LetAppsAccessMotion*
 -   GP element: *LetAppsAccessMotion_Enum*
@@ -2642,7 +2642,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmotion-forceallowtheseapps"></a>**Privacy/LetAppsAccessMotion_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessmotion-forceallowtheseapps"></a>**Privacy/LetAppsAccessMotion_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2672,7 +2672,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access motion*
 -   GP name: *LetAppsAccessMotion*
 -   GP element: *LetAppsAccessMotion_ForceAllowTheseApps_List*
@@ -2685,7 +2685,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmotion-forcedenytheseapps"></a>**Privacy/LetAppsAccessMotion_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessmotion-forcedenytheseapps"></a>**Privacy/LetAppsAccessMotion_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2715,7 +2715,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access motion*
 -   GP name: *LetAppsAccessMotion*
 -   GP element: *LetAppsAccessMotion_ForceDenyTheseApps_List*
@@ -2728,7 +2728,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessmotion-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMotion_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessmotion-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMotion_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2758,7 +2758,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access motion*
 -   GP name: *LetAppsAccessMotion*
 -   GP element: *LetAppsAccessMotion_UserInControlOfTheseApps_List*
@@ -2771,7 +2771,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**  
+<a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**
 
 <!--SupportedSKUs-->
 
@@ -2803,7 +2803,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access notifications*
 -   GP name: *LetAppsAccessNotifications*
 -   GP element: *LetAppsAccessNotifications_Enum*
@@ -2824,7 +2824,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications-forceallowtheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessnotifications-forceallowtheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2854,7 +2854,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access notifications*
 -   GP name: *LetAppsAccessNotifications*
 -   GP element: *LetAppsAccessNotifications_ForceAllowTheseApps_List*
@@ -2867,7 +2867,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications-forcedenytheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessnotifications-forcedenytheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2897,7 +2897,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access notifications*
 -   GP name: *LetAppsAccessNotifications*
 -   GP element: *LetAppsAccessNotifications_ForceDenyTheseApps_List*
@@ -2910,7 +2910,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications-userincontroloftheseapps"></a>**Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessnotifications-userincontroloftheseapps"></a>**Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -2940,7 +2940,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access notifications*
 -   GP name: *LetAppsAccessNotifications*
 -   GP element: *LetAppsAccessNotifications_UserInControlOfTheseApps_List*
@@ -2953,7 +2953,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**  
+<a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**
 
 <!--SupportedSKUs-->
 
@@ -2985,7 +2985,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps make phone calls*
 -   GP name: *LetAppsAccessPhone*
 -   GP element: *LetAppsAccessPhone_Enum*
@@ -3006,7 +3006,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessphone-forceallowtheseapps"></a>**Privacy/LetAppsAccessPhone_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessphone-forceallowtheseapps"></a>**Privacy/LetAppsAccessPhone_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3036,7 +3036,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps make phone calls*
 -   GP name: *LetAppsAccessPhone*
 -   GP element: *LetAppsAccessPhone_ForceAllowTheseApps_List*
@@ -3049,7 +3049,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessphone-forcedenytheseapps"></a>**Privacy/LetAppsAccessPhone_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessphone-forcedenytheseapps"></a>**Privacy/LetAppsAccessPhone_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3079,7 +3079,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps make phone calls*
 -   GP name: *LetAppsAccessPhone*
 -   GP element: *LetAppsAccessPhone_ForceDenyTheseApps_List*
@@ -3092,7 +3092,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessphone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessPhone_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessphone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessPhone_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3122,7 +3122,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps make phone calls*
 -   GP name: *LetAppsAccessPhone*
 -   GP element: *LetAppsAccessPhone_UserInControlOfTheseApps_List*
@@ -3135,7 +3135,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**  
+<a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**
 
 <!--SupportedSKUs-->
 
@@ -3167,7 +3167,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps control radios*
 -   GP name: *LetAppsAccessRadios*
 -   GP element: *LetAppsAccessRadios_Enum*
@@ -3188,7 +3188,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessradios-forceallowtheseapps"></a>**Privacy/LetAppsAccessRadios_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccessradios-forceallowtheseapps"></a>**Privacy/LetAppsAccessRadios_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3218,7 +3218,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps control radios*
 -   GP name: *LetAppsAccessRadios*
 -   GP element: *LetAppsAccessRadios_ForceAllowTheseApps_List*
@@ -3231,7 +3231,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessradios-forcedenytheseapps"></a>**Privacy/LetAppsAccessRadios_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccessradios-forcedenytheseapps"></a>**Privacy/LetAppsAccessRadios_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3261,7 +3261,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps control radios*
 -   GP name: *LetAppsAccessRadios*
 -   GP element: *LetAppsAccessRadios_ForceDenyTheseApps_List*
@@ -3274,7 +3274,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3304,7 +3304,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps control radios*
 -   GP name: *LetAppsAccessRadios*
 -   GP element: *LetAppsAccessRadios_UserInControlOfTheseApps_List*
@@ -3317,7 +3317,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**  
+<a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**
 
 <!--SupportedSKUs-->
 
@@ -3347,7 +3347,7 @@ Specifies whether Windows apps can access tasks.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access Tasks*
 -   GP name: *LetAppsAccessTasks*
 -   GP element: *LetAppsAccessTasks_Enum*
@@ -3360,7 +3360,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3390,7 +3390,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access Tasks*
 -   GP name: *LetAppsAccessTasks*
 -   GP element: *LetAppsAccessTasks_ForceAllowTheseApps_List*
@@ -3403,7 +3403,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3433,7 +3433,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access Tasks*
 -   GP name: *LetAppsAccessTasks*
 -   GP element: *LetAppsAccessTasks_ForceDenyTheseApps_List*
@@ -3446,7 +3446,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3476,7 +3476,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access Tasks*
 -   GP name: *LetAppsAccessTasks*
 -   GP element: *LetAppsAccessTasks_UserInControlOfTheseApps_List*
@@ -3489,7 +3489,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**  
+<a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**
 
 <!--SupportedSKUs-->
 
@@ -3521,7 +3521,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access trusted devices*
 -   GP name: *LetAppsAccessTrustedDevices*
 -   GP element: *LetAppsAccessTrustedDevices_Enum*
@@ -3542,7 +3542,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices-forceallowtheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsaccesstrusteddevices-forceallowtheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3572,7 +3572,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access trusted devices*
 -   GP name: *LetAppsAccessTrustedDevices*
 -   GP element: *LetAppsAccessTrustedDevices_ForceAllowTheseApps_List*
@@ -3585,7 +3585,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices-forcedenytheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsaccesstrusteddevices-forcedenytheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3615,7 +3615,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access trusted devices*
 -   GP name: *LetAppsAccessTrustedDevices*
 -   GP element: *LetAppsAccessTrustedDevices_ForceDenyTheseApps_List*
@@ -3628,7 +3628,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3658,7 +3658,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access trusted devices*
 -   GP name: *LetAppsAccessTrustedDevices*
 -   GP element: *LetAppsAccessTrustedDevices_UserInControlOfTheseApps_List*
@@ -3671,7 +3671,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsactivatewithvoice"></a>**Privacy/LetAppsActivateWithVoice**  
+<a href="" id="privacy-letappsactivatewithvoice"></a>**Privacy/LetAppsActivateWithVoice**
 
 <!--SupportedSKUs-->
 
@@ -3701,7 +3701,7 @@ Specifies if Windows apps can be activated by voice.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow voice activation*
 -   GP name: *LetAppsActivateWithVoice*
 -   GP element: *LetAppsActivateWithVoice_Enum*
@@ -3722,7 +3722,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsactivatewithvoiceabovelock"></a>**Privacy/LetAppsActivateWithVoiceAboveLock**  
+<a href="" id="privacy-letappsactivatewithvoiceabovelock"></a>**Privacy/LetAppsActivateWithVoiceAboveLock**
 
 <!--SupportedSKUs-->
 
@@ -3752,7 +3752,7 @@ Specifies if Windows apps can be activated by voice while the screen is locked.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow voice activation above locked screen*
 -   GP name: *LetAppsActivateWithVoiceAboveLock*
 -   GP element: *LetAppsActivateWithVoiceAboveLock_Enum*
@@ -3773,7 +3773,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
+<a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**
 
 <!--SupportedSKUs-->
 
@@ -3805,7 +3805,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
 -   GP name: *LetAppsGetDiagnosticInfo*
 -   GP element: *LetAppsGetDiagnosticInfo_Enum*
@@ -3826,7 +3826,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3856,7 +3856,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
 -   GP name: *LetAppsGetDiagnosticInfo*
 -   GP element: *LetAppsGetDiagnosticInfo_ForceAllowTheseApps_List*
@@ -3869,7 +3869,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3899,7 +3899,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
 -   GP name: *LetAppsGetDiagnosticInfo*
 -   GP element: *LetAppsGetDiagnosticInfo_ForceDenyTheseApps_List*
@@ -3912,7 +3912,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -3942,7 +3942,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
 -   GP name: *LetAppsGetDiagnosticInfo*
 -   GP element: *LetAppsGetDiagnosticInfo_UserInControlOfTheseApps_List*
@@ -3955,7 +3955,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
+<a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**
 
 <!--SupportedSKUs-->
 
@@ -3990,7 +3990,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps run in the background*
 -   GP name: *LetAppsRunInBackground*
 -   GP element: *LetAppsRunInBackground_Enum*
@@ -4011,7 +4011,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground_ForceAllowTheseApps**  
+<a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -4041,7 +4041,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps run in the background*
 -   GP name: *LetAppsRunInBackground*
 -   GP element: *LetAppsRunInBackground_ForceAllowTheseApps_List*
@@ -4054,7 +4054,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground_ForceDenyTheseApps**  
+<a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -4084,7 +4084,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps run in the background*
 -   GP name: *LetAppsRunInBackground*
 -   GP element: *LetAppsRunInBackground_ForceDenyTheseApps_List*
@@ -4097,7 +4097,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -4127,7 +4127,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps run in the background*
 -   GP name: *LetAppsRunInBackground*
 -   GP element: *LetAppsRunInBackground_UserInControlOfTheseApps_List*
@@ -4140,7 +4140,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
+<a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**
 
 <!--SupportedSKUs-->
 
@@ -4172,7 +4172,7 @@ Most restricted value is 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps communicate with unpaired devices*
 -   GP name: *LetAppsSyncWithDevices*
 -   GP element: *LetAppsSyncWithDevices_Enum*
@@ -4193,7 +4193,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices-forceallowtheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps**  
+<a href="" id="privacy-letappssyncwithdevices-forceallowtheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -4223,7 +4223,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps communicate with unpaired devices*
 -   GP name: *LetAppsSyncWithDevices*
 -   GP element: *LetAppsSyncWithDevices_ForceAllowTheseApps_List*
@@ -4236,7 +4236,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices-forcedenytheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps**  
+<a href="" id="privacy-letappssyncwithdevices-forcedenytheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -4266,7 +4266,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps communicate with unpaired devices*
 -   GP name: *LetAppsSyncWithDevices*
 -   GP element: *LetAppsSyncWithDevices_ForceDenyTheseApps_List*
@@ -4279,7 +4279,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices-userincontroloftheseapps"></a>**Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps**  
+<a href="" id="privacy-letappssyncwithdevices-userincontroloftheseapps"></a>**Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -4309,7 +4309,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps communicate with unpaired devices*
 -   GP name: *LetAppsSyncWithDevices*
 -   GP element: *LetAppsSyncWithDevices_UserInControlOfTheseApps_List*
@@ -4322,7 +4322,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-publishuseractivities"></a>**Privacy/PublishUserActivities**  
+<a href="" id="privacy-publishuseractivities"></a>**Privacy/PublishUserActivities**
 
 <!--SupportedSKUs-->
 
@@ -4352,7 +4352,7 @@ Allows IT Admins to enable publishing of user activities to the activity feed.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow publishing of User Activities*
 -   GP name: *PublishUserActivities*
 -   GP path: *System/OS Policies*
@@ -4371,7 +4371,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="privacy-uploaduseractivities"></a>**Privacy/UploadUserActivities**  
+<a href="" id="privacy-uploaduseractivities"></a>**Privacy/UploadUserActivities**
 
 <!--SupportedSKUs-->
 
@@ -4401,7 +4401,7 @@ Allows ActivityFeed to upload published 'User Activities'.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow upload of User Activities*
 -   GP name: *UploadUserActivities*
 -   GP path: *System/OS Policies*

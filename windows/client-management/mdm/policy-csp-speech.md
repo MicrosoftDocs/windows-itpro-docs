@@ -3,8 +3,8 @@ title: Policy CSP - Speech
 description: Learn how the Policy CSP - Speech setting specifies whether the device will receive updates to the speech recognition and speech synthesis models.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Speech policies  
+## Speech policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
+<a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**
 
 <!--SupportedSKUs-->
 
@@ -58,7 +58,7 @@ Specifies whether the device will receive updates to the speech recognition and 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Automatic Update of Speech Data*
 -   GP name: *AllowSpeechModelUpdate*
 -   GP path: *Windows Components/Speech*

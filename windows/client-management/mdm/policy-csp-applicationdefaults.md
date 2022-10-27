@@ -3,8 +3,8 @@ title: Policy CSP - ApplicationDefaults
 description: Learn about various Policy configuration service providers (CSP) - ApplicationDefaults, including SyncML, for Windows 10.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ApplicationDefaults policies  
+## ApplicationDefaults policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**  
+<a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**
 
 <!--SupportedSKUs-->
 
@@ -61,12 +61,12 @@ manager: aaroncz
 <!--/Scope-->
 <!--Description-->
 This policy allows an administrator to set default file type and protocol associations. When set, default associations are applied on sign in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml). Then, it needs to be base64 encoded before being added to SyncML.
- 
+
 If policy is enabled and the client machine is having Azure Active Directory, the associations assigned in SyncML are processed and default associations are applied.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set a default associations configuration file*
 -   GP name: *DefaultAssociationsConfiguration*
 -   GP element: *DefaultAssociationsConfiguration_TextBox*
@@ -93,7 +93,7 @@ Here's an example output from the dism default association export command:
   <Association Identifier=".pdf" ProgId="AppXd4nrz8ff68srnhf9t5a8sbjyar1cr723" ApplicationName="Microsoft Edge" />
   <Association Identifier="http" ProgId="AppXq0fevzme2pys62n3e0fbqa7peapykr8v" ApplicationName="Microsoft Edge" />
   <Association Identifier="https" ProgId="AppX90nv6nhay5n6a98fnetv7tpk64pp35es" ApplicationName="Microsoft Edge" />
-</DefaultAssociations
+</DefaultAssociations>
 ```
 
 Here's the base64 encoded result:
@@ -133,7 +133,7 @@ Here's the SyncMl example:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationdefaults-enableappurihandlers"></a>**ApplicationDefaults/EnableAppUriHandlers**  
+<a href="" id="applicationdefaults-enableappurihandlers"></a>**ApplicationDefaults/EnableAppUriHandlers**
 
 <!--SupportedSKUs-->
 
@@ -169,7 +169,7 @@ If you don't configure this policy setting, the default behavior depends on the 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure web-to-app linking with app URI handlers*
 -   GP name: *EnableAppUriHandlers*
 -   GP path: *System/Group Policy*

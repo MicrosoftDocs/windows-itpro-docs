@@ -4,8 +4,8 @@ description: Policy CSP - MixedReality
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.reviewer: 
 manager: aaroncz
@@ -16,14 +16,14 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## MixedReality policies  
+## MixedReality policies
 
 <dl>
   <dd>
     <a href="#mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
   </dd>
   <dd>
-    <a href="#mixedreality-allowcaptiveportalpeforesignin">MixedReality/AllowCaptivePortalBeforeSignIn</a>
+    <a href="#mixedreality-allowcaptiveportalpeforelogon">MixedReality/AllowCaptivePortalBeforeLogon</a>
   </dd>
   <dd>
     <a href="#mixedreality-allowlaunchuriinsingleappkiosk">MixedReality/AllowLaunchUriInSingleAppKiosk</a>
@@ -37,6 +37,9 @@ manager: aaroncz
   <dd>
     <a href="#mixedreality-configuremovingplatform">MixedReality/ConfigureMovingPlatform</a>
   </dd>
+    <dd>
+    <a href="#mixedreality-configurentpclient">MixedReality/ConfigureNtpClient</a>
+  </dd>
   <dd>
     <a href="#mixedreality-disablesisallownetworkconnectivitypassivepolling">MixedReality/DisallowNetworkConnectivityPassivePolling</a>
   </dd>
@@ -48,9 +51,12 @@ manager: aaroncz
   </dd>
   <dd>
     <a href="#mixedreality-manualdowndirectiondisabled">MixedReality/ManualDownDirectionDisabled</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-ntpclientenabled">MixedReality/NtpClientEnabled</a>
   </dd>
   <dd>
     <a href="#mixedreality-skipcalibrationduringsetup">MixedReality/SkipCalibrationDuringSetup</a>
@@ -69,7 +75,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-aadgroupmembershipcachevalidityindays"></a>**MixedReality/AADGroupMembershipCacheValidityInDays**  
+<a href="" id="mixedreality-aadgroupmembershipcachevalidityindays"></a>**MixedReality/AADGroupMembershipCacheValidityInDays**
 
 <!--SupportedSKUs-->
 
@@ -97,7 +103,7 @@ Steps to use this policy correctly:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-allowcaptiveportalpeforesignin"></a>**MixedReality/AllowCaptivePortalBeforeSignIn**  
+<a href="" id="mixedreality-allowcaptiveportalpeforelogon"></a>**MixedReality/AllowCaptivePortalBeforeLogon**
 
 <!--SupportedSKUs-->
 
@@ -121,11 +127,14 @@ Steps to use this policy correctly:
 <!--Description-->
 This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
 
-MixedReality/AllowCaptivePortalBeforeSignIn
+MixedReality/AllowCaptivePortalBeforeLogon
 
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn`
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeLogon`
 
-Bool value
+Int value
+
+- 0: (Default) Off
+- 1: On
 
 <!--/Description-->
 
@@ -223,7 +232,7 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-brightnessbuttondisabled"></a>**MixedReality/BrightnessButtonDisabled**  
+<a href="" id="mixedreality-brightnessbuttondisabled"></a>**MixedReality/BrightnessButtonDisabled**
 
 <!--SupportedSKUs-->
 
@@ -266,7 +275,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-configuremovingplatform"></a>**MixedReality/ConfigureMovingPlatform**  
+<a href="" id="mixedreality-configuremovingplatform"></a>**MixedReality/ConfigureMovingPlatform**
 
 <!--SupportedSKUs-->
 
@@ -308,7 +317,72 @@ Supported value is Integer.
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**  
+<a href="" id="mixedreality-configurentpclient"></a>**MixedReality/ConfigureNtpClient**
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+You may want to configure a different time server for your device fleet. IT admins can use thi policy to configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
+
+This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
+
+> [!NOTE]
+> This feature requires enabling[NtpClientEnabled](#mixedreality-ntpclientenabled) as well.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureNtpClient`
+
+> [!NOTE]
+> Reboot is required for these policies to take effect.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+<!--/ADMXBacked-->
+
+<!--SupportedValues-->
+
+- Data Type: String
+- Value:
+
+```
+<enabled/><data id="W32TIME_NtpServer"
+value="time.windows.com,0x9"/><data id="W32TIME_Type"
+value="NTP"/><data id="W32TIME_CrossSiteSyncFlags"
+value="2"/><data id="W32TIME_ResolvePeerBackoffMinutes"
+value="15"/><data id="W32TIME_ResolvePeerBackoffMaxTimes"
+value="7"/><data id="W32TIME_SpecialPollInterval"
+value="1024"/><data id="W32TIME_NtpClientEventLogFlags"
+value="0"/>
+```
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-disablesisallownetworkconnectivitypassivepolling"></a>**MixedReality/DisallowNetworkConnectivityPassivePolling**
 
 <!--SupportedSKUs-->
 
@@ -344,7 +418,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Disa
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-fallbackdiagnostics"></a>**MixedReality/FallbackDiagnostics**  
+<a href="" id="mixedreality-fallbackdiagnostics"></a>**MixedReality/FallbackDiagnostics**
 
 <!--SupportedSKUs-->
 
@@ -388,7 +462,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-headtrackingmode"></a>**MixedReality/HeadTrackingMode**  
+<a href="" id="mixedreality-headtrackingmode"></a>**MixedReality/HeadTrackingMode**
 
 <!--SupportedSKUs-->
 
@@ -431,7 +505,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-manualdowndirectiondisabled"></a>**MixedReality/ManualDownDirectionDisabled**  
+<a href="" id="mixedreality-manualdowndirectiondisabled"></a>**MixedReality/ManualDownDirectionDisabled**
 
 <!--SupportedSKUs-->
 
@@ -471,7 +545,7 @@ Supported values:
 <!--/SupportedValues-->
 
 <!--Policy-->
-<a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**  
+<a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**
 
 <!--SupportedSKUs-->
 
@@ -510,11 +584,53 @@ The following list shows the supported values:
 - 1 - True
 
 <!--/SupportedValues-->
+
+<!--Policy-->
+<a href="" id="mixedreality-ntpclientenabled"></a>**MixedReality/NtpClientEnabled**
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+This policy setting specifies whether the Windows NTP Client is enabled.
+
+- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/MixedReality/NtpClientEnabled`
+<!--/Description-->
+
+<!--ADMXBacked-->
+<!--/ADMXBacked-->
+
+<!--SupportedValues-->
+- Data Type: String
+- Value `<enabled/>`
+
+<!--/SupportedValues-->
+
 <!--/Policy-->
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-skipcalibrationduringsetup"></a>**MixedReality/SkipCalibrationDuringSetup**  
+<a href="" id="mixedreality-skipcalibrationduringsetup"></a>**MixedReality/SkipCalibrationDuringSetup**
 
 <!--SupportedSKUs-->
 
@@ -550,7 +666,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-skiptrainingduringsetup"></a>**MixedReality/SkipTrainingDuringSetup**  
+<a href="" id="mixedreality-skiptrainingduringsetup"></a>**MixedReality/SkipTrainingDuringSetup**
 
 <!--SupportedSKUs-->
 
@@ -586,7 +702,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-volumebuttondisabled"></a>**MixedReality/VolumeButtonDisabled**  
+<a href="" id="mixedreality-volumebuttondisabled"></a>**MixedReality/VolumeButtonDisabled**
 
 <!--SupportedSKUs-->
 
@@ -629,7 +745,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-visitorautologon"></a>**MixedReality/VisitorAutoLogon**  
+<a href="" id="mixedreality-visitorautologon"></a>**MixedReality/VisitorAutoLogon**
 
 <!--SupportedSKUs-->
 

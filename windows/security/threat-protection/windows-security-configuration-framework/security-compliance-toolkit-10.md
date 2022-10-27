@@ -1,16 +1,18 @@
 ---
 title: Microsoft Security Compliance Toolkit 1.0 Guide
 description: This article describes how to use Security Compliance Toolkit 1.0 in your organization
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
+ms.author: vinpa
+author: vinaypamnani-msft
+manager: aaroncz
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 02/14/2022
 ms.reviewer: rmunck
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Microsoft Security Compliance Toolkit 1.0 - How to use
@@ -25,14 +27,16 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 The Security Compliance Toolkit consists of:
 
 -   Windows 11 security baseline
-
+    -   Windows 11, version 22H2
+    -   Windows 11, version 21H2
 -   Windows 10 security baselines
-    -   Windows 10 Version 21H2
-    -   Windows 10 Version 21H1
-    -   Windows 10 Version 20H2
-    -   Windows 10 Version 1809
-    -   Windows 10 Version 1607
-    -   Windows 10 Version 1507
+    -   Windows 10, version 22H2
+    -   Windows 10, version 21H2
+    -   Windows 10, version 21H1
+    -   Windows 10, version 20H2
+    -   Windows 10, version 1809
+    -   Windows 10, version 1607
+    -   Windows 10, version 1507
 
 -   Windows Server security baselines
     -   Windows Server 2022

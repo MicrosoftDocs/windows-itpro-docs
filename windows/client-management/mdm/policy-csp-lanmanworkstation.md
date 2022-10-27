@@ -3,8 +3,8 @@ title: Policy CSP - LanmanWorkstation
 description: Use the Policy CSP - LanmanWorkstation setting to determine if the SMB client will allow insecure guest sign ins to an SMB server.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## LanmanWorkstation policies  
+## LanmanWorkstation policies
 
 <dl>
   <dd>
@@ -28,7 +28,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="lanmanworkstation-enableinsecureguestlogons"></a>**LanmanWorkstation/EnableInsecureGuestLogons**  
+<a href="" id="lanmanworkstation-enableinsecureguestlogons"></a>**LanmanWorkstation/EnableInsecureGuestLogons**
 
 <!--SupportedSKUs-->
 
@@ -64,7 +64,7 @@ Insecure guest sign in are used by file servers to allow unauthenticated access 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable insecure guest logons*
 -   GP name: *Pol_EnableInsecureGuestLogons*
 -   GP path: *Network/Lanman Workstation*

@@ -3,19 +3,19 @@ title: Use Software Restriction Policies and AppLocker policies (Windows)
 description: This topic for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment.
 ms.assetid: c3366be7-e632-4add-bd10-9df088f74c6d
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use Software Restriction Policies and AppLocker policies

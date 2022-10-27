@@ -1,7 +1,7 @@
 ---
 title: Event ID 300 - Windows Hello successfully created (Windows)
 description: This event is created when a Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD).
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,9 +10,9 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Event ID 300 - Windows Hello successfully created
@@ -41,5 +41,5 @@ This is a normal condition. No further action is required.
 - [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
 - [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
 - [Windows Hello and password changes](hello-and-password-changes.md)
-- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+- [Windows Hello errors during PIN creation](/troubleshoot/windows-client/user-profiles-and-logon/windows-hello-errors-during-pin-creation-in-windows-10)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)

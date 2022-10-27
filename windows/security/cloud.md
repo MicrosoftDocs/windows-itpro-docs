@@ -2,22 +2,22 @@
 title: Windows and cloud security
 description: Get an overview of cloud services supported in Windows 11 and Windows 10
 ms.reviewer: 
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/20/2021
 ms.localizationpriority: medium
 ms.custom: 
-search.appverid: MET150 
+search.appverid: MET150
 ms.collection: M365-security-compliance
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Windows and cloud security
 
-Today’s workforce has more freedom and mobility than ever before. With the growth of enterprise cloud adoption, increased personal app usage, and increased use of third-party apps, the risk of data exposure is at its highest. Enabling Zero-Trust protection, Windows 11 works with Microsoft cloud services. Windows and cloud services together help organizations strengthen their multi-cloud security infrastructure, protect hybrid cloud workloads, and safeguard sensitive information while controlling access and mitigating threats. 
+Today's workforce has more freedom and mobility than ever before. With the growth of enterprise cloud adoption, increased personal app usage, and increased use of third-party apps, the risk of data exposure is at its highest. Enabling Zero-Trust protection, Windows 11 works with Microsoft cloud services. Windows and cloud services together help organizations strengthen their multi-cloud security infrastructure, protect hybrid cloud workloads, and safeguard sensitive information while controlling access and mitigating threats.
 
 Windows 11 includes the cloud services that are listed in the following table:<br/><br/>
 

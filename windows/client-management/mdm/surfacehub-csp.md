@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/28/2017
 ---
@@ -73,7 +73,7 @@ SurfaceHub
 --------WorkspaceKey
 ```
 
-<a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**  
+<a href="" id="--vendor-msft-surfacehub"></a>**./Vendor/MSFT/SurfaceHub**
 The root node for the Surface Hub configuration service provider.
 
 <a href="" id="deviceaccount"></a>**DeviceAccount**
@@ -158,35 +158,35 @@ Domain of the device account when you're using Active Directory. To use a device
 
 Username of the device account when you're using Active Directory. To use a device account from Active Directory, you should specify both DomainName and UserName for the device account.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-userprincipalname"></a>**DeviceAccount/UserPrincipalName**
 
 User principal name (UPN) of the device account. To use a device account from Azure Active Directory or a hybrid deployment, you should specify the UPN of the device account.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-sipaddress"></a>**DeviceAccount/SipAddress**
 
 Session Initiation Protocol (SIP) address of the device account. Normally, the device will try to auto-discover the SIP. This field is only required if auto-discovery fails.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-password"></a>**DeviceAccount/Password**
 
 Password for the device account.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace. The operation Get is allowed, but it will always return a blank.
 
 <a href="" id="deviceaccount-validateandcommit"></a>**DeviceAccount/ValidateAndCommit**
 
 This method validates the data provided and then commits the changes.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Execute.
 
 <a href="" id="deviceaccount-email"></a>**DeviceAccount/Email**
@@ -204,28 +204,28 @@ Valid values:
 - 1 - disabled
 
 It performs the following:
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-exchangeserver"></a>**DeviceAccount/ExchangeServer**
 
 Exchange server of the device account. Normally, the device will try to auto-discover the Exchange server. This field is only required if auto-discovery fails.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-exchangemodernauthenabled"></a>**DeviceAccount/ExchangeModernAuthEnabled**
 
 Added in <a href="https://support.microsoft.com/help/4598291" data-raw-source="[KB4598291](https://support.microsoft.com/help/4598291)">KB4598291</a> for Windows 10, version 20H2. Specifies, whether Device Account calendar sync will attempt to use token-based Modern Authentication to connect to the Exchange Server. Default value is True.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-calendarsyncenabled"></a>**DeviceAccount/CalendarSyncEnabled**
 
 Specifies, whether calendar sync and other Exchange server services is enabled.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-errorcontext"></a>**DeviceAccount/ErrorContext**
@@ -252,14 +252,14 @@ Node for maintenance schedule.
 
 Specifies the start time for maintenance hours in minutes from midnight. For example, to set a 2:00 am start time, set this value to 120.
 
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="maintenancehourssimple-hours-duration"></a>**MaintenanceHoursSimple/Hours/Duration**
 
 Specifies the duration of maintenance window in minutes. For example, to set a 3-hour duration, set this value to 180.
 
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps"></a>**InBoxApps**
@@ -274,7 +274,7 @@ Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
 Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you're using Active Directory. For more information, see <a href="/SkypeForBusiness/set-up-skype-for-business-online" data-raw-source="[Set up Skype for Business Online](/SkypeForBusiness/set-up-skype-for-business-online)">Set up Skype for Business Online</a>.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome"></a>**InBoxApps/Welcome**
@@ -284,14 +284,14 @@ Node for the welcome screen.
 
 Automatically turn on the screen using motion sensors.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**
 
 Download location for image, to be used as the background during user sessions and on the welcome screen. To set this location, specify an https URL to a 32-bit PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, ensure they're valid and installed on the Hub. Otherwise, it may not be able to load the image.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-meetinginfooption"></a>**InBoxApps/Welcome/MeetingInfoOption**
@@ -304,7 +304,7 @@ Valid values:
 - 1 - Organizer, time, and subject. Subject is hidden in private meetings.
 
 It performs the following:
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-whiteboard"></a>**InBoxApps/Whiteboard**
@@ -315,21 +315,21 @@ Node for the Whiteboard app settings.
 
 Invitations to collaborate from the Whiteboard app aren't allowed.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-whiteboard-signindisabled"></a>**InBoxApps/Whiteboard/SigninDisabled**
 
 Sign-ins from the Whiteboard app aren't allowed.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-whiteboard-telemetrydisabled"></a>**InBoxApps/Whiteboard/TelemeteryDisabled**
 
 Telemetry collection from the Whiteboard app isn't allowed.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection"></a>**InBoxApps/WirelessProjection**
@@ -340,14 +340,14 @@ Node for the wireless projector app settings.
 
 Users must enter a PIN to wireless project to the device.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection-enabled"></a>**InBoxApps/WirelessProjection/Enabled**
 
 Enables wireless projection to the device.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-wirelessprojection-channel"></a>**InBoxApps/WirelessProjection/Channel**
@@ -362,7 +362,7 @@ Wireless channel to use for Miracast operation. The supported channels are defin
 
 The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly, the driver will either not boot or will broadcast on the wrong channel (which senders won&#39;t be looking for).
 
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-connect"></a>**InBoxApps/Connect**
@@ -375,7 +375,7 @@ Added in Windows 10, version 1703. Specifies, whether to automatically launch th
 
 If this setting is true, the Connect app will be automatically launched. If false, the user will need to launch the Connect app manually from the Hub’s settings.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties"></a>**Properties**
@@ -386,21 +386,21 @@ Node for the device properties.
 
 Friendly name of the device. Specifies the name that users see when they want wireless project to the device.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-defaultvolume"></a>**Properties/DefaultVolume**
 
 Added in Windows 10, version 1703. Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45.
 
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-defaultautomaticframing"></a>**Properties/DefaultAutomaticFraming**
 
 Added in <a href="https://support.microsoft.com/help/5010415" data-raw-source="[KB5010415](https://support.microsoft.com/help/5010415)">KB5010415</a> for Windows 10, version 20H2. Specifies whether the Surface Hub 2 Smart Camera feature to automatically zoom and keep users centered in the video is enabled. Default value is True.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-screentimeout"></a>**Properties/ScreenTimeout**
@@ -424,7 +424,7 @@ The following table shows the permitted values.
 |240|4 hours|
 
 It performs the following:
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-sessiontimeout"></a>**Properties/SessionTimeout**
@@ -448,7 +448,7 @@ The following table shows the permitted values.
 |240|4 hours|
 
 It performs the following:
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-sleeptimeout"></a>**Properties/SleepTimeout**
@@ -472,7 +472,7 @@ The following table shows the permitted values.
 |240|4 hours|
 
 It performs the following:
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-sleepmode"></a>**Properties/SleepMode**
@@ -485,7 +485,7 @@ Valid values:
 - 1 - Hibernate
 
 It performs the following:
-- The data type is integer. 
+- The data type is integer.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-allowsessionresume"></a>**Properties/AllowSessionResume**
@@ -494,7 +494,7 @@ Added in Windows 10, version 1703. Specifies whether to allow the ability to res
 
 If this setting is true, the &quot;Resume Session&quot; feature will be available on the welcome screen when the screen is idle. If false, once the screen idles, the session will be automatically cleaned up as if the “End Session&quot; feature was initiated.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-allowautoproxyauth"></a>**Properties/AllowAutoProxyAuth**
@@ -503,14 +503,14 @@ Added in Windows 10, version 1703. Specifies whether to use the device account f
 
 If this setting is true, the device account will be used for proxy authentication. If false, a separate account will be used.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-proxyservers"></a>**Properties/ProxyServers**
 
 Added in <a href="https://support.microsoft.com/help/4499162" data-raw-source="[KB4499162](https://support.microsoft.com/help/4499162)">KB4499162</a> for Windows 10, version 1703. Specifies hostnames of proxy servers to automatically provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names (FQDN), without any extra prefixes (for example, https://).
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-disablesigninsuggestions"></a>**Properties/DisableSigninSuggestions**
@@ -519,7 +519,7 @@ Added in Windows 10, version 1703. Specifies whether to disable auto-populating 
 
 If this setting is true, the sign-in dialog won't be populated. If false, the dialog will auto-populate.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="properties-donotshowmymeetingsandfiles"></a>**Properties/DoNotShowMyMeetingsAndFiles**
@@ -528,7 +528,7 @@ Added in Windows 10, version 1703. Specifies whether to disable the &quot;My mee
 
 If this setting is true, the “My meetings and files” feature won't be shown. When false, the “My meetings and files” feature will be shown.
 
-- The data type is boolean. 
+- The data type is boolean.
 - Supported operation is Get and Replace.
 
 <a href="" id="momagent"></a>**MOMAgent**
@@ -539,16 +539,16 @@ Node for the Microsoft Operations Management Suite.
 
 GUID identifying the Microsoft Operations Management Suite workspace ID to collect the data. Set this GUID to an empty string to disable the MOM agent.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace.
 
-<a href="" id="momagent-workspacekey"></a>**MOMAgent/WorkspaceKey** 
+<a href="" id="momagent-workspacekey"></a>**MOMAgent/WorkspaceKey**
 
 Primary key for authenticating with the workspace.
 
-- The data type is string. 
+- The data type is string.
 - Supported operation is Get and Replace. The Get operation is allowed, but it will always return an empty string.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

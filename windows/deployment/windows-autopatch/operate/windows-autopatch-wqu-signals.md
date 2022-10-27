@@ -1,9 +1,9 @@
 ---
 title: Windows quality update signals
-description:  This article explains the Windows quality update signals
+description: This article explains the Windows quality update signals
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -40,9 +40,9 @@ The update is released to the Test ring on the second Tuesday of the month. Thos
 
 ## Device reliability signals
 
-Windows Autopatch monitors devices for a set of core reliability metrics as a part of the service. 
+Windows Autopatch monitors devices for a set of core reliability metrics as a part of the service.
 
-The service then uses statistical models to assess if there are significant differences between the two Windows versions. To make a statistically significant assessment, Windows Autopatch requires that at least 500 devices have upgraded to the new version.
+The service then uses statistical models to assess if there are significant differences between the two Windows versions. To make a statistically significant assessment, Windows Autopatch requires that at least 500 devices in your tenant have upgraded to the new version.
 
 As more devices update, the confidence of the analysis increases and gives us a clearer picture of release quality. If we determine that the user experience is impaired, Autopatch will either post a customer advisory or pause the release, depending on the criticality of the update.
 
@@ -51,8 +51,8 @@ Autopatch monitors the following reliability signals:
 | Device reliability signal | Description |
 | ----- | ----- |
 | Blue screens | These events are highly disruptive to end users so are closely watched. |
-| Overall app reliability | Tracks the total number of app crashes and freezes on a device. A known issue with this measure is that if one app becomes 10% more reliable and another becomes 10% less reliable then it shows up as a flat line in the measure. |
-| Microsoft Office reliability | Tracks the number of Office crashes or freezes per application per device. |
+| Overall app reliability | Tracks the total number of app crashes and freezes on a device. A known limitation with this measure is that if one app becomes 10% more reliable and another becomes 10% less reliable then it shows up as a flat line in the measure. |
+| Microsoft Office reliability | Tracks the number of Office crashes and freezes per application per device. |
 | Microsoft Edge reliability | Tracks the number of Microsoft Edge crashes and freezes per device. |
 | Microsoft Teams reliability | Tracks the number of Microsoft Teams crashes and freezes per device. |
 

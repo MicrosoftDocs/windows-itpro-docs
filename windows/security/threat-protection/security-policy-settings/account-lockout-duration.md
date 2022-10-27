@@ -3,19 +3,21 @@ title: Account lockout duration (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Account lockout duration security policy setting.
 ms.assetid: a4167bf4-27c3-4a9b-8ef0-04e3c6ec3aa4
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 08/16/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Account lockout duration

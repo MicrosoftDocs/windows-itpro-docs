@@ -1,13 +1,14 @@
 ---
 title: Update Compliance Schema - WaaSUpdateStatus
 ms.reviewer: 
-manager: dougeby
+manager: aczechowski
 description: WaaSUpdateStatus schema
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # WaaSUpdateStatus

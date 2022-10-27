@@ -3,8 +3,8 @@ title: Policy CSP - Authentication
 description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign-in screen.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: bobgil
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Authentication policies  
+## Authentication policies
 
 <dl>
   <dd>
@@ -57,7 +57,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**  
+<a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**
 
 <!--SupportedSKUs-->
 
@@ -99,7 +99,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
+<a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**
 
 <!--SupportedSKUs-->
 
@@ -141,7 +141,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**  
+<a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**
 
 <!--SupportedSKUs-->
 
@@ -185,7 +185,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
+<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**
 
 <!--SupportedSKUs-->
 
@@ -231,7 +231,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**  
+<a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**
 
 <!--SupportedSKUs-->
 
@@ -266,7 +266,7 @@ In the next major release of Windows 10, the default for this policy for consume
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow companion device for secondary authentication*
 -   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
 -   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
@@ -285,7 +285,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-configurewebsigninallowedurls"></a>**Authentication/ConfigureWebSignInAllowedUrls**  
+<a href="" id="authentication-configurewebsigninallowedurls"></a>**Authentication/ConfigureWebSignInAllowedUrls**
 
 <!--SupportedSKUs-->
 
@@ -331,7 +331,7 @@ Specifies the list of domains that are allowed to be navigated to in Azure Activ
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-configurewebcamaccessdomainnames"></a>**Authentication/ConfigureWebcamAccessDomainNames**  
+<a href="" id="authentication-configurewebcamaccessdomainnames"></a>**Authentication/ConfigureWebcamAccessDomainNames**
 
 <!--SupportedSKUs-->
 
@@ -381,7 +381,7 @@ Web Sign-in is only supported on Azure AD Joined PCs.
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**  
+<a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**
 
 <!--SupportedSKUs-->
 
@@ -409,7 +409,7 @@ Web Sign-in is only supported on Azure AD Joined PCs.
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time.
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
@@ -437,7 +437,7 @@ Value type is integer. Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**  
+<a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**
 
 <!--SupportedSKUs-->
 
@@ -465,7 +465,7 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time.
 
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
@@ -493,7 +493,7 @@ Value type is integer. Supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**  
+<a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**
 
 <!--SupportedSKUs-->
 

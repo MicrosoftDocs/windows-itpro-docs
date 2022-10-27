@@ -4,10 +4,11 @@ description: Achieve network access by deploying the Volume Activation Managemen
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Scenario 1: Online Activation

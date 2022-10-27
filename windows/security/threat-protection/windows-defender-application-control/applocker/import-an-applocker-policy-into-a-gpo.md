@@ -3,19 +3,19 @@ title: Import an AppLocker policy into a GPO (Windows)
 description: This topic for IT professionals describes the steps to import an AppLocker policy into a Group Policy Object (GPO).
 ms.assetid: 0629ce44-f5e2-48a8-ba47-06544c73261f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Import an AppLocker policy into a GPO

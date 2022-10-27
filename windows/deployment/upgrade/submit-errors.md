@@ -4,10 +4,11 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: Download the Feedback Hub app, and then submit Windows 10 upgrade errors for diagnosis using feedback hub.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Submit Windows 10 upgrade errors using Feedback Hub

@@ -1,9 +1,9 @@
 ---
 title: Windows feature update end user experience
-description:  This article explains the Windows feature update end user experience
+description: This article explains the Windows feature update end user experience
 ms.date: 07/11/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -37,7 +37,7 @@ In this example, we'll be discussing a device in the First ring. The Autopatch s
 
 In the following example, the user schedules the restart and is notified 15 minutes prior to the scheduled restart time. The user can reschedule, if necessary, but isn't able to reschedule past the deadline.
 
-:::image type="content" source="../media/windows-feature-typical-update-experience.png" alt-text="Typical Windows feature update experience":::
+:::image type="content" source="../media/windows-feature-typical-update-experience.png" alt-text="Typical Windows feature update experience" lightbox="../media/windows-feature-typical-update-experience.png":::
 
 ### Feature update deadline forces an update
 
@@ -45,7 +45,7 @@ The following example builds on the scenario outlined in the typical user experi
 
 The deadline specified in the update policy is five days. Therefore, once this deadline is passed, the device will ignore the active hours and force a restart to complete the installation. The user will receive a 15-minute warning, after which, the device will install the update and restart.
 
-:::image type="content" source="../media/windows-feature-force-update.png" alt-text="Force Windows feature update":::
+:::image type="content" source="../media/windows-feature-force-update.png" alt-text="Force Windows feature update" lightbox="../media/windows-feature-force-update.png":::
 
 ### Feature update grace period
 
@@ -53,7 +53,7 @@ In the following example, the user is on holiday and the device is offline beyon
 
 Since the deadline has already passed, the device is granted a two-day grace period to install the update and restart. The user will be notified of a pending installation and given options to choose from. Once the two-day grace period has expired, the user is forced to restart with a 15-minute warning notification.
 
-:::image type="content" source="../media/windows-feature-update-grace-period.png" alt-text="Window feature update grace period":::
+:::image type="content" source="../media/windows-feature-update-grace-period.png" alt-text="Windows feature update grace period" lightbox="../media/windows-feature-update-grace-period.png":::
 
 ## Servicing window
 

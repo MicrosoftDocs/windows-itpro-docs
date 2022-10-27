@@ -3,8 +3,8 @@ title: Policy CSP - SystemServices
 description: Learn how to use the Policy CSP - SystemServices setting to determine whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## SystemServices policies  
+## SystemServices policies
 
 <dl>
   <dd>
@@ -44,7 +44,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
+<a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -71,13 +71,13 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 
 Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *HomeGroup Listener*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -87,7 +87,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
+<a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -114,13 +114,13 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 
 Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *HomeGroup Provider*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -130,7 +130,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
+<a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -157,13 +157,13 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 
 Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Xbox Accessory Management Service*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -173,7 +173,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
+<a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -200,13 +200,13 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 
 Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Xbox Live Auth Manager*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -216,7 +216,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
+<a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -243,13 +243,13 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 
 Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Xbox Live Game Save*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
@@ -259,7 +259,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
+<a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -286,13 +286,13 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4).
 
 Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Xbox Live Networking Service*
 -   GP path: *Windows Settings/Security Settings/System Services*
 

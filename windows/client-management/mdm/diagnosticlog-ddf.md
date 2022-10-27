@@ -1,7 +1,7 @@
 ---
 title: DiagnosticLog DDF
 description: Learn about the the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider (CSP).
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
@@ -15,7 +15,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The content below are the latest versions of the DDF files:
 
@@ -2028,7 +2028,7 @@ The content below are the latest versions of the DDF files:
                     <Delete />
                     <Replace />
                   </AccessType>
-                  <Description>SDDL String controlling access to the channel. Default: https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype</Description>
+                  <Description>SDDL String controlling access to the channel. Default: https://learn.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>
@@ -2178,9 +2178,3 @@ The content below are the latest versions of the DDF files:
  
 
  
-
-
-
-
-
-

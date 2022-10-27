@@ -2,12 +2,12 @@
 title: Demonstrate Autopilot deployment
 manager: dougeby
 description: Step-by-step instructions on how to set up a virtual machine with a Windows Autopilot deployment.
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-ms.collection:
+ms.collection: 
   - M365-modern-desktop
   - highpri
 ms.topic: tutorial
@@ -419,15 +419,9 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 > [!IMPORTANT]
 > If you've already registered your VM (or device) using Intune, then skip this step.
 
-Optional: see the following video for an overview of the process.
-
-&nbsp;
-
-> [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
-
 First, you need a Microsoft Store for Business account. You can use the same one you created above for Intune, or follow [these instructions](/microsoft-store/windows-store-for-business-overview) to create a new one.
 
-Next, to sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) with your test account,  select **Sign in** on the upper-right-corner of the main page.
+Next, to sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/store) with your test account,  select **Sign in** on the upper-right-corner of the main page.
 
 Select **Manage** from the top menu, then select the **Windows Autopilot Deployment Program** link under the **Devices** card. See the following example:
 
@@ -527,8 +521,6 @@ Select **OK**, and then select **Create**.
 ### Create a Windows Autopilot deployment profile using MSfB
 
 If you already created and assigned a profile via Intune with the steps immediately above, then skip this section.
-
-A [video](https://www.youtube.com/watch?v=IpLIZU_j7Z0) is available that covers the steps required to create and assign profiles in Microsoft Store for Business. These steps are also summarized below.
 
 First, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/manage/dashboard) using the Intune account you initially created for this lab.
 

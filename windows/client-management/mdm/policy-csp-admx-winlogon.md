@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WinLogon
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/09/2020
 ms.reviewer: 
@@ -14,17 +14,17 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WinLogon
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WinLogon policies  
+## ADMX_WinLogon policies
 
 <dl>
   <dd>
@@ -51,7 +51,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-winlogon-customshell"></a>**ADMX_WinLogon/CustomShell**  
+<a href="" id="admx-winlogon-customshell"></a>**ADMX_WinLogon/CustomShell**
 
 <!--SupportedSKUs-->
 
@@ -91,7 +91,7 @@ If you disable this setting or don't configure it, the setting is ignored and th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Custom User Interface*
 -   GP name: *CustomShell*
 -   GP path: *System*
@@ -102,7 +102,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-winlogon-displaylastlogoninfodescription"></a>**ADMX_WinLogon/DisplayLastLogonInfoDescription**  
+<a href="" id="admx-winlogon-displaylastlogoninfodescription"></a>**ADMX_WinLogon/DisplayLastLogonInfoDescription**
 
 <!--SupportedSKUs-->
 
@@ -141,7 +141,7 @@ If you disable or don't configure this setting, messages about the previous sign
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display information about previous logons during user logon*
 -   GP name: *DisplayLastLogonInfoDescription*
 -   GP path: *Windows Components\Windows Logon Options*
@@ -153,7 +153,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="admx-winlogon-logonhoursnotificationpolicydescription"></a>**ADMX_WinLogon/LogonHoursNotificationPolicyDescription**  
+<a href="" id="admx-winlogon-logonhoursnotificationpolicydescription"></a>**ADMX_WinLogon/LogonHoursNotificationPolicyDescription**
 
 <!--SupportedSKUs-->
 
@@ -193,7 +193,7 @@ If you disable or don't configure this setting, users receive warnings before th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove logon hours expiration warnings*
 -   GP name: *LogonHoursNotificationPolicyDescription*
 -   GP path: *Windows Components\Windows Logon Options*
@@ -204,7 +204,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-winlogon-logonhourspolicydescription"></a>**ADMX_WinLogon/LogonHoursPolicyDescription**  
+<a href="" id="admx-winlogon-logonhourspolicydescription"></a>**ADMX_WinLogon/LogonHoursPolicyDescription**
 
 <!--SupportedSKUs-->
 
@@ -246,7 +246,7 @@ If you disable or don't configure this setting, the system takes no action when 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set action to take when logon hours expire*
 -   GP name: *LogonHoursPolicyDescription*
 -   GP path: *Windows Components\Windows Logon Options*
@@ -257,7 +257,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-winlogon-reportcachedlogonpolicydescription"></a>**ADMX_WinLogon/ReportCachedLogonPolicyDescription**  
+<a href="" id="admx-winlogon-reportcachedlogonpolicydescription"></a>**ADMX_WinLogon/ReportCachedLogonPolicyDescription**
 
 <!--SupportedSKUs-->
 
@@ -295,7 +295,7 @@ If disabled or not configured, no pop up will be displayed to the user.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Report when logon server was not available during user logon*
 -   GP name: *ReportCachedLogonPolicyDescription*
 -   GP path: *Windows Components\Windows Logon Options*
@@ -306,7 +306,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-winlogon-softwaresasgeneration"></a>**ADMX_WinLogon/SoftwareSASGeneration**  
+<a href="" id="admx-winlogon-softwaresasgeneration"></a>**ADMX_WinLogon/SoftwareSASGeneration**
 
 <!--SupportedSKUs-->
 
@@ -335,7 +335,7 @@ ADMX Info:
 <!--Description-->
 This policy setting controls whether the software can simulate the Secure Attention Sequence (SAS).
 
-If you enable this policy setting, you have one of four options:  
+If you enable this policy setting, you have one of four options:
 
 - If you set this policy setting to "None," user mode software can't simulate the SAS.
 - If you set this policy setting to "Services," services can simulate the SAS.
@@ -348,7 +348,7 @@ If you disable or don't configure this setting, only Ease of Access applications
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable or enable software Secure Attention Sequence*
 -   GP name: *SoftwareSASGeneration*
 -   GP path: *Windows Components\Windows Logon Options*

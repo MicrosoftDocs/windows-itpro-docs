@@ -1,15 +1,15 @@
 ---
 title: Update Windows installation media with Dynamic Update
 description: Learn how to deploy feature updates to your mission critical devices
-ms.prod: w10
+ms.prod: windows-client
 author: SteveDiAcetis
 ms.localizationpriority: medium
 ms.author: aaroncz
 manager: dougeby
-ms.collection:
+ms.collection: 
   - M365-modern-desktop
-  - highpri
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -192,21 +192,28 @@ Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destinatio
 Write-Output "$(Get-TS): Mounting WinRE"
 Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
-# Add servicing stack update
+# Add servicing stack update (Step 1 from the table)
 
-# Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
-# This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+# Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+# The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
+# cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
+# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+# cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
+# cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
+# combined cumulative update can be installed. 
 
-# Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
-# There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
-# This error should be caught and ignored, as the last step will be to apply the cumulative update 
-# (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
+# This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
 
-Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Now, attempt the combined cumulative update.
+# There is a known issue where the servicing stack update is installed, but the cumulative update will fail. This error should 
+# be caught and ignored, as the last step will be to apply the Safe OS update and thus the image will be left with the correct 
+# packages installed.
 
 try
 {
-    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $LCU_PATH | Out-Null  
 }
 Catch
 {
@@ -220,6 +227,13 @@ Catch
         throw
     }
 }
+
+# The second approach for Step 1 is for Windows releases that have not adopted the combined cumulative update
+# but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+# update. This second approach is commented out below.
+
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
 
 #
 # Optional: Add the language to recovery environment
@@ -301,27 +315,34 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Write-Output "$(Get-TS): Mounting WinPE"
     Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
-    # Add SSU
+    # Add servicing stack update (Step 9 from the table)
 
-    # Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
-    # This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+    # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+    # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
+    # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
+    # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+    # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
+    # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
+    # combined cumulative update can be installed. 
 
-    # Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
+    # This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+    # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+    # Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+    # Now, attempt the combined cumulative update.
     # There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
     # This error should be caught and ignored, as the last step will be to apply the cumulative update 
     # (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
 
-    Write-Output "$(Get-TS): Adding package $SSU_PATH"
-    
     try
     {
-        Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null
+        Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $LCU_PATH | Out-Null  
     }
     Catch
     {
         $theError = $_
         Write-Output "$(Get-TS): $theError"
-        
+
         if ($theError.Exception -like "*0x8007007e*") {
             Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
         }
@@ -329,6 +350,13 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
             throw
         }
     }
+
+    # The second approach for Step 9 is for Windows releases that have not adopted the combined cumulative update
+    # but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+    # update. This second approach is commented out below.
+
+    # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+    # Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null 
 
     # Install lp.cab cab
     Write-Output "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
@@ -412,9 +440,29 @@ You can install Optional Components, along with the .NET feature, offline, but t
 # update Main OS
 #
 
-# Add servicing stack update
-Write-Output "$(Get-TS): Adding package $SSU_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
+# Add servicing stack update (Step 18 from the table)
+
+# Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+# The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that
+# includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these
+# cases, the servicing stack update is not published seperately; the combined cumulative update should be used for this step. However, in hopefully
+# rare cases, there may breaking change in the combined cumulative update format, that requires a standalone servicing stack update to be published, 
+# and installed first before the combined cumulative update can be installed. 
+
+# This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+# Now, attempt the combined cumulative update. Unlike WinRE and WinPE, we don't need to check for error 0x8007007e
+Write-Output "$(Get-TS): Adding package $LCU_PATH"
+Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH | Out-Null  
+
+# The second approach for Step 18 is for Windows releases that have not adopted the combined cumulative update
+# but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+# update. This second approach is commented out below.
+
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
 
 # Optional: Add language to main OS
 Write-Output "$(Get-TS): Adding package $OS_LP_PATH"

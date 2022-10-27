@@ -1,14 +1,14 @@
 ---
 title: Features and functionality removed in Windows client
 description: In this article, learn about the features and functionality that have been removed or replaced in Windows client.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # Features and functionality removed in Windows client

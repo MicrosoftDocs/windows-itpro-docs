@@ -3,8 +3,8 @@ title: Policy CSP - DataProtection
 description: Use the Policy CSP - DataProtection setting to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -19,7 +19,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## DataProtection policies  
+## DataProtection policies
 
 <dl>
   <dd>
@@ -34,7 +34,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**  
+<a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**
 
 <!--SupportedSKUs-->
 
@@ -61,7 +61,7 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. 
+This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.
 
 Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug PCI ports with no children devices until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) is enabled.
 
@@ -80,7 +80,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**  
+<a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**
 
 <!--SupportedSKUs-->
 
@@ -110,7 +110,7 @@ The following list shows the supported values:
 > [!IMPORTANT]
 > This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
 
- 
+
 Setting used by Windows 8.1 Selective Wipe.
 
 > [!NOTE]
