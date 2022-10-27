@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Manager.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
 ms.reviewer: 
 manager: dansimp
