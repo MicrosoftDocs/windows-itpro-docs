@@ -935,7 +935,7 @@ If DEPPolicy = 0 (Off), then take one of the following actions that align with y
 
 DEP policy evaluation is a non binary status when queried. It is then mapped to an On/Off state.
 
-|DEP Policy level |Description | Attestation Reported Level | Property Value |
+|DEP policy level |Description | Attestation reported level | Property value |
 |--------------|-----------|------------|-------------|
 |OptIn(Default Configuration) |Only Windows system components and services have DEP applied | 0 | 2 |
 |OptOut |DEP is enabled for all processes.Administrators can manually create a list of specific applications that do not have DEP applied. | 1 | 3 |
