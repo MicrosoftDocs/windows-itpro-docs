@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[Proxy\] .INS file setting to define whether to use a proxy server.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 30b03c2f-e3e5-48d2-9007-e3fd632f3c18
 ms.reviewer: 
 audience: itpro
