@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Learn about how to use a proxy auto-configuration (.pac) file to specify an automatic proxy URL.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 6c94708d-71bd-44bd-a445-7e6763b374ae
 ms.reviewer: 
 audience: itpro
