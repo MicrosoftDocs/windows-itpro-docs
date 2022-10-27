@@ -6,7 +6,7 @@ description: How to download and use the Internet Explorer 11 Blocker Toolkit t
 author: dansimp
 ms.author: dansimp
 ms.manager: elizapo
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: fafeaaee-171c-4450-99f7-5cc7f8d7ba91
 ms.reviewer: 
 audience: itpro

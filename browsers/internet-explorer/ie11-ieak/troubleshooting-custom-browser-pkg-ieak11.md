@@ -4,7 +4,7 @@ ms.mktglfcycl: support
 description: Info about some of the known issues using the Internet Exporer Customization Wizard and a custom Internet Explorer install package.
 author: dansimp
 ms.author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
 ms.reviewer: 
 audience: itpro

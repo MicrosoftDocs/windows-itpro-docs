@@ -5,7 +5,7 @@ description: A list of steps to follow before you start to create your custom br
 author: dansimp
 ms.author: dansimp
 ms.manager: elizapo
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 6ed182b0-46cb-4865-9563-70825be9a5e4
 ms.reviewer: 
 audience: itpro

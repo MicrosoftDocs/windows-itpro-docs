@@ -1,8 +1,8 @@
 ---
 title: Windows Hello biometrics in the enterprise (Windows)
 description: Windows Hello uses biometrics to authenticate users and guard against potential spoofing, through fingerprint matching and facial recognition.
-ms.prod: m365-security
-ms.collection:
+ms.prod: windows-client
+ms.collection: 
   - M365-identity-device-management
   - highpri
 ms.topic: article
@@ -12,10 +12,10 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Holographic for Business</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Holographic for Business</b>
 ---
 
 # Windows Hello biometrics in the enterprise

@@ -1,12 +1,12 @@
 ---
 title: AppLocker CSP
 description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/19/2019
 ---

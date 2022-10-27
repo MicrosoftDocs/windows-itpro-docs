@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Customization guidelines for your Internet Explorer toolbar button and Favorites List icons.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
 ms.reviewer: 
 audience: itpro

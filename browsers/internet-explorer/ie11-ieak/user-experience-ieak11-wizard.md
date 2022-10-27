@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the User Experience page in the IEAK 11 Customization Wizard to decide user interaction with the Setup process.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: d3378058-e4f0-4a11-a888-b550af994bfa
 ms.reviewer: 
 audience: itpro
