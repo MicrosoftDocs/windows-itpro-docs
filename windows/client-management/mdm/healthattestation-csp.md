@@ -937,7 +937,7 @@ DEP policy evaluation is a non binary status when queried. It is then mapped to 
 
 |DEP policy level |Description | Attestation reported level | Property value |
 |--------------|-----------|------------|-------------|
-|OptIn(Default Configuration) |Only Windows system components and services have DEP applied | 0 | 2 |
+|OptIn (default configuration) |Only Windows system components and services have DEP applied. | 0 | 2 |
 |OptOut |DEP is enabled for all processes.Administrators can manually create a list of specific applications that do not have DEP applied. | 1 | 3 |
 |AlwaysOn |DEP is enabled for all processess. | 3 | 1 |
 |AlwaysOff |DEP is not enabled for any process. | 2 | 0 |
