@@ -4,7 +4,6 @@ description: Windows Hello uses biometrics to authenticate users and guard again
 ms.prod: windows-client
 ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 01/12/2021

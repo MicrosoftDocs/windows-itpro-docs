@@ -8,7 +8,6 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
-ms.collection: highpri
 ms.technology: itpro-deploy
 ---
 

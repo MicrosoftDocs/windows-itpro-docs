@@ -6,7 +6,6 @@ ms.author: aaroncz
 author: aczechowski
 ms.prod: windows-client
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Windows 10 deployment scenarios and tools

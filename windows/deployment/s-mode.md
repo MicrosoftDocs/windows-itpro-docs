@@ -8,7 +8,6 @@ author: aczechowski
 ms.author: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ---
 
 # Windows 10 in S mode - What is it?
