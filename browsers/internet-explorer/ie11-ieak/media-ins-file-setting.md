@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use the \[Media\] .INS file setting to specify the types of media on which your custom install package is available.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: c57bae60-d520-49a9-a77d-da43f7ebe5b8
 ms.reviewer: 
 audience: itpro

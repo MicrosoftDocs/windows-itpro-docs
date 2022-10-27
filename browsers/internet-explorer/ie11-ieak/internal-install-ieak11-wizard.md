@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Internal Install page in the IEAK 11 Customization Wizard to customize Setup for the default browser and the latest browser updates.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 33d078e3-75b8-455b-9126-f0d272ed676f
 ms.reviewer: 
 audience: itpro
