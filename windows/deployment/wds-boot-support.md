@@ -8,7 +8,6 @@ ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ---
 
 # Windows Deployment Services (WDS) boot.wim support

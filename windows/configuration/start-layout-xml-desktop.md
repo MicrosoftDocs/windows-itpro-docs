@@ -9,7 +9,6 @@ ms.date: 10/02/2018
 ms.reviewer: 
 manager: aaroncz
 ms.localizationpriority: medium
-ms.collection: highpri
 ms.technology: itpro-configure
 ---
 
