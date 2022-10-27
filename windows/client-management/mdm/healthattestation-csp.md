@@ -265,7 +265,7 @@ calls between client and MAA and for each call the GUID is separated by semicolo
 
 ### MAA CSP Integration Steps
 
-1. Set up a MAA provider instance: MAA instance can be created following the steps at [Quickstart: Set up Azure Attestation by using the Azure portal](/azure/attestation/quickstart-portal).
+1. Set up an MAA provider instance: MAA instance can be created following the steps at [Quickstart: Set up Azure Attestation by using the Azure portal](/azure/attestation/quickstart-portal).
 
 2. Update the provider with an appropriate policy: The MAA instance should be updated with an appropriate policy. For more information, see [How to author an Azure Attestation policy](/azure/attestation/claim-rule-grammar).
 
