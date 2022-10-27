@@ -54,11 +54,11 @@ The data powering Update Compliance is refreshed every 24 hours, and refreshes w
 | UCDeviceAlert | Every event | 24-36 hours |
 | UCClientReadinessStatus | After Windows 11 readiness assessment |24-36 hours |
 
-## Using Log Analytics
+## Working with Azure Monitor Logs
 
-Update Compliance is built on the Log Analytics platform that is integrated into Operations Management Suite. All data in the workspace is the direct result of a query. Understanding the tools and features at your disposal, all integrated within Azure portal, can deeply enhance your experience and complement Update Compliance.
+Update Compliance is built on the Azure Monitor Logs platform. All Update Compliance-related data is collected in a Log Analytics workspace, where the data is available for querying. Understanding the Azure Monitor Logs tools and features at your disposal, all integrated within Azure portal, can deeply enhance your experience and complement Update Compliance.
 
-See below for a few articles related to Log Analytics:
-- Learn how to effectively execute custom Log Searches by referring to Microsoft Azure's excellent documentation on [querying data in Log Analytics](/azure/log-analytics/log-analytics-log-searches).
-- Review the documentation on [analyzing data for use in Log Analytics](/azure/log-analytics/log-analytics-dashboards) to develop your own custom data views in Operations Management Suite or [Power BI](https://powerbi.microsoft.com/).
-- [Gain an overview of alerts for Log Analytics](/azure/log-analytics/log-analytics-alerts) and learn how to use it to always stay informed about the most critical issues you care about.
+See the Azure Monitor Logs articles below to learn how to:
+- [Query log data effectively in Azure Monitor Logs](/azure/log-analytics/log-analytics-log-searches).
+- [Create and share dashboards of data in a Log Analytics workspace](/azure/log-analytics/log-analytics-dashboards).
+- [Set up alerts in Azure Monitor](/azure/log-analytics/log-analytics-alerts) to always stay informed about the critical issues you care about most.
