@@ -9,6 +9,8 @@ ms.author: vinpa
 ms.reviewer: 
 manager: aaroncz
 ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # The Windows Security app

@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Reference about the command-line options for the IExpress Wizard.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: aa16d738-1067-403c-88b3-bada12cf9752
 ms.reviewer: 
 audience: itpro

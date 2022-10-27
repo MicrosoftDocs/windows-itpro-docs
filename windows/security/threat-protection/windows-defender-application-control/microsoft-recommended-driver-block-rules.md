@@ -9,12 +9,14 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
-ms.date: 10/18/2022
+ms.date: 10/27/2022
 ---
 
 # Microsoft recommended driver block rules
@@ -43,10 +45,13 @@ Drivers can be submitted to Microsoft for security analysis at the [Microsoft Se
 
 <!-- MAXADO-6286432 -->
 
-With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by default for all devices, and can be turned on or off via the [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2) app. Except on Windows Server 2016, the vulnerable driver blocklist is also enforced when either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode is active. Users can opt in to HVCI using the Windows Security app, and HVCI is on by-default for most new Windows 11 devices.
+With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by default for all devices, and can be turned on or off via the [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2) app. Except on Windows Server 2016, the vulnerable driver blocklist is also enforced when either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode is active. Users can opt in to HVCI using the [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2) app, and HVCI is on by-default for most new Windows 11 devices.
 
 > [!NOTE]
-> The option to turn Microsoft's vulnerable driver blocklist on or off using the [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2) app is grayed out when HVCI, Smart App Control, or S mode is enabled. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can turn off the Microsoft vulnerable driver blocklist.
+>
+> - The Windows Security app is updated separately from the OS and ships out of box. The version with the vulnerable driver blocklist toggle is in the final validation ring and will ship to all customers very soon.
+>
+> - The option to turn Microsoft's vulnerable driver blocklist on or off using the Windows Security app is grayed out when HVCI, Smart App Control, or S mode is enabled. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can turn off the Microsoft vulnerable driver blocklist.
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 

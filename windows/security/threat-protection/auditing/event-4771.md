@@ -12,6 +12,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # 4771(F): Kerberos pre-authentication failed.

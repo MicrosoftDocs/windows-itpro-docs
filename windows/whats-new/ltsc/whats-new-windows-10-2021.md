@@ -8,6 +8,8 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
+ms.collection: 
+  - highpri
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2021
