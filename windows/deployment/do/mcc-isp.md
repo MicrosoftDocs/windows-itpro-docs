@@ -74,7 +74,7 @@ Your Azure subscription ID is first used to provision MCC services and enable ac
 The resources used for the preview, and in the future when this product is ready for production, will be free to you - like other caching solutions.
 
 > [!IMPORTANT]
-> To join the Microsoft Connected Cache private preview, provide your Azure subscription ID by filling out [this survey](https://aka.ms/MCCForISPSurvey).
+> To join the Microsoft Connected Cache early preview, provide your Azure subscription ID by filling out [this survey](https://aka.ms/MCCForISPSurvey).
 
 ### Hardware to host the MCC
 
@@ -534,7 +534,7 @@ To run the script:
 
 ## Updating your MCC
 
-Throughout the private preview phase, Microsoft will release security and feature updates for MCC. Follow these steps to update your MCC.
+Throughout the early preview phase, Microsoft will release security and feature updates for MCC. Follow these steps to update your MCC.
 
 Run the following commands, replacing the variables with the values provided in the email to update your MCC:
 

@@ -26,7 +26,7 @@ This article details the process of signing up for Microsoft Connected Cache for
 
 1. Navigate to the [Azure portal](https://www.portal.azure.com). In the top search bar, search for **Microsoft Connected Cache**.
 
-:::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace.":::
+   :::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace.":::
 
 1. Select **Create** to create a **Microsoft Connected Cache**. When prompted, enter a name for your cache resource.  
 

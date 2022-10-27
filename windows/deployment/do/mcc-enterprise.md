@@ -1,5 +1,5 @@
 ---
-title: Microsoft Connected Cache for Enterprise and Education (private preview)
+title: Microsoft Connected Cache for Enterprise and Education (early preview)
 manager: dougeby
 description: Details on Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
@@ -11,7 +11,7 @@ ms.topic: article
 ms.technology: itpro-updates
 ---
 
-# Microsoft Connected Cache for Enterprise and Education (private preview)
+# Microsoft Connected Cache for Enterprise and Education (early preview)
 
 **Applies to**
 
@@ -21,7 +21,7 @@ ms.technology: itpro-updates
 ## Overview
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase does not include formal support, and should not be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently a early preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase does not include formal support, and should not be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many physical servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying a client policy using your management tool, such as [Intune](/mem/intune/).
 
@@ -165,7 +165,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 ### Create an MCC node in Azure
 
-Creating an MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
+Creating an MCC node is a multi-step process and the first step is to access the MCC early preview management portal.
 
 1.  After the successful resource creation click on the **Go to resource**.
 2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
@@ -424,7 +424,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 
 ## Update MCC
 
-Throughout the private preview phase, we will send you security and feature updates for MCC. Please follow these steps to perform the update.
+Throughout the early preview phase, we will send you security and feature updates for MCC. Please follow these steps to perform the update.
 
 Run the following command with the **arguments** we provided in the email to update your MCC:
 

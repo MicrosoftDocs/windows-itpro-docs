@@ -70,9 +70,10 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
 
 1. Under **Routing information**, select the routing method you would like to use. For more information, see [Client routing](#client-routing).
 
-- If you choose **Manual routing**, enter your address range/CIDR blocks.  
-- If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship.  
-**Note:** **Prefix count** and **IP Space** will stop showing 0 when BGP is successfully established.
+    - If you choose **Manual routing**, enter your address range/CIDR blocks.  
+    - If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship.  
+    > [!NOTE]
+    > **Prefix count** and **IP Space** will stop displaying `0` when BGP is successfully established.
 
 ## Deploy cache node  
 
