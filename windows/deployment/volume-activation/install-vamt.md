@@ -8,7 +8,6 @@ author: aczechowski
 ms.localizationpriority: medium
 ms.date: 03/11/2019
 ms.topic: article
-ms.collection: highpri
 ms.technology: itpro-fundamentals
 ---
 

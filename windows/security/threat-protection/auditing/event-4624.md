@@ -12,6 +12,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # 4624(S): An account was successfully logged on.

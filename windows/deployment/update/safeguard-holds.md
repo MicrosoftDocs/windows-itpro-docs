@@ -8,6 +8,8 @@ ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.collection: 
+  - highpri
 ---
 
 # Safeguard holds

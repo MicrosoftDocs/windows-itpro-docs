@@ -8,6 +8,8 @@ ms.prod: windows-client
 author: aczechowski
 ms.topic: article
 ms.technology: itpro-deploy
+ms.collection: 
+  - highpri
 ---
 
 # Windows To Go: feature overview

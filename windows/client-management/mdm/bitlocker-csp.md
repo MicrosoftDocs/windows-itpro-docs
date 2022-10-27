@@ -10,7 +10,6 @@ ms.localizationpriority: medium
 ms.date: 02/04/2022
 ms.reviewer: 
 manager: aaroncz
-ms.collection: highpri
 ---
 
 # BitLocker CSP

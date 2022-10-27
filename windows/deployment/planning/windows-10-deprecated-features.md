@@ -10,7 +10,6 @@ ms.author: aaroncz
 manager: dougeby
 ms.reviewer: 
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Deprecated features for Windows client

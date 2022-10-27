@@ -5,7 +5,9 @@ ms.prod: m365-security
 manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
-ms.collection: M365-identity-device-management
+ms.collection: 
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 

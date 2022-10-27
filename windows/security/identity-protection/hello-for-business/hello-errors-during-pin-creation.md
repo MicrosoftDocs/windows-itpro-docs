@@ -8,7 +8,6 @@ manager: aaroncz
 ms.reviewer: prsriva
 ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: troubleshooting
 ms.localizationpriority: medium
 ms.date: 05/05/2018
