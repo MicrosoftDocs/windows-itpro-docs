@@ -1,7 +1,7 @@
 ---
 title: Encryption and data protection in Windows
 description: Get an overview encryption and data protection in Windows 11 and Windows 10
-search.appverid: MET150 
+search.appverid: MET150
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
@@ -12,7 +12,7 @@ ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
-ms.reviewer: rafals  
+ms.reviewer: rafals
 ---
 
 # Encryption and data protection in Windows client

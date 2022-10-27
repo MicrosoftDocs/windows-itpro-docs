@@ -4,10 +4,13 @@ description: This topic will show you how to take your reference image for Windo
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
+ms.collection: 
+  - highpri
 ---
 
 # Deploy a Windows 10 image using MDT

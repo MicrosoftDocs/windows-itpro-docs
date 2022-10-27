@@ -1,7 +1,7 @@
 ---
 title: How to install fonts missing after upgrading to Windows client
 description: Some of the fonts are missing from the system after you upgrade to Windows client.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
@@ -15,11 +15,11 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10 or Windows 11, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows client. If you install a fresh instance of Windows client, or upgrade an older version of Windows to Windows client, these optional features are not enabled by default. As a result, these fonts appear to be missing from the system.
+When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10 or Windows 11, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows client. If you install a fresh instance of Windows client, or upgrade an older version of Windows to Windows client, these optional features aren't enabled by default. As a result, these fonts appear to be missing from the system.
 
 If you have documents created using the missing fonts, these documents might display differently on Windows client.
 
-For example, if you have an English (or French, German, or Spanish) version of Windows 10 installed, you might notice that fonts such as the following are appear to be missing:
+For example, if you've an English (or French, German, or Spanish) version of Windows 10 installed, you might notice that fonts such as the following are appear to be missing:
 
 - Gautami
 - Meiryo
@@ -36,7 +36,7 @@ If you want to use these fonts, you can enable the optional feature to add them 
 
 ## Installing language-associated features via language settings:
 
-If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. Use the Settings app.
+If you want to use the fonts from the optional feature and you know that you'll want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. Use the Settings app.
 
 For example, here are the steps to install the fonts associated with the Hebrew language:
 
@@ -44,11 +44,11 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 2. In **Settings**, select **Time & language**, and then select **Region & language**.
 
-3. If Hebrew is not included in the list of languages, select the plus sign (**+**) to add a language.
+3. If Hebrew isn't included in the list of languages, select the plus sign (**+**) to add a language.
 
 4. Find **Hebrew**, and then select it to add it to your language list.
 
-Once you have added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This process should only take a few minutes.
+Once you've added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This process should only take a few minutes.
 
 > [!NOTE]
 > The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
@@ -72,7 +72,7 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 ## Fonts included in optional font features
 
-Here is a comprehensive list of the font families in each of the optional features. Some font families might include multiple fonts for different weights and styles.
+Here's a comprehensive list of the font families in each of the optional features. Some font families might include multiple fonts for different weights and styles.
 
 - Arabic Script Supplemental Fonts: Aldhabi, Andalus, Arabic Typesetting, Microsoft Uighur, Sakkal Majalla, Simplified Arabic, Traditional Arabic, Urdu Typesetting
 - Bangla Script Supplemental Fonts: Shonar Bangla, Vrinda

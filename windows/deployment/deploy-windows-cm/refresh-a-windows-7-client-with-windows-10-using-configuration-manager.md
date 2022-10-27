@@ -4,11 +4,12 @@ description: Learn how to use Configuration Manager and Microsoft Deployment Too
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
 ---
 
 # Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager

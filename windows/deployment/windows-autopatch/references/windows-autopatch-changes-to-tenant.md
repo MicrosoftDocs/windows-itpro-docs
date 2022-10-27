@@ -1,9 +1,9 @@
 ---
 title: Changes made at tenant enrollment
-description:  This reference article details the changes made to your tenant when enrolling into Windows Autopatch
+description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
 ms.date: 08/08/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: reference
 ms.localizationpriority: medium
 author: tiaraquan

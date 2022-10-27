@@ -4,11 +4,11 @@ description: In this topic, you'll learn how to deploy Windows 10 using Microsof
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-deploy
 ---
 
 # Deploy Windows 10 using PXE and Configuration Manager

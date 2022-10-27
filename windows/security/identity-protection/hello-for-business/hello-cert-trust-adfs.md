@@ -1,7 +1,7 @@
 ---
 title: Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business)
 description: Learn how to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
@@ -10,11 +10,11 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>On-premises deployments</b>
+  - ✅ <b>Certificate trust</b>
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services - Certificate Trust
 

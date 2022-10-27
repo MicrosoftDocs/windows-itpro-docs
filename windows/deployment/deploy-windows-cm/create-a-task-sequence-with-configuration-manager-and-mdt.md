@@ -4,10 +4,11 @@ description: Create a Configuration Manager task sequence with Microsoft Deploym
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Create a task sequence with Configuration Manager and MDT

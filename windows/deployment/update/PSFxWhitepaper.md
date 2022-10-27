@@ -1,7 +1,7 @@
 ---
 title: Windows Updates using forward and reverse differentials
 description: A technique to produce compact software updates optimized for any origin and destination revision pair
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -9,6 +9,7 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Windows Updates using forward and reverse differentials

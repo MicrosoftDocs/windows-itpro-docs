@@ -8,7 +8,6 @@ ms.reviewer: sulahiri
 manager: aaroncz
 ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
