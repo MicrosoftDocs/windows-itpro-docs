@@ -1,7 +1,7 @@
 ---
 title: Windows as a service
 ms.prod: windows-client
-ms.topic: landing-page
+ms.topic: article
 ms.manager: dougeby
 author: aczechowski
 ms.author: aaroncz

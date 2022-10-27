@@ -12,7 +12,9 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021
 ms.technology: itpro-security

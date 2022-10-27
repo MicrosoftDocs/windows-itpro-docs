@@ -9,7 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa
