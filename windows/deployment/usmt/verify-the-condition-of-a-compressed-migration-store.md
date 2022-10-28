@@ -4,10 +4,11 @@ description: Use these tips and tricks to verify the condition of a compressed m
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Verify the Condition of a Compressed Migration Store

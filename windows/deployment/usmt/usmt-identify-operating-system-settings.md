@@ -4,10 +4,11 @@ description: Identify which system settings you want to migrate, then use the Us
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Identify Operating System Settings

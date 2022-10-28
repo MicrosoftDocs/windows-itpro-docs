@@ -13,6 +13,8 @@ ms.reviewer:
 manager: aaroncz
 ms.custom: asr
 ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # Prepare to install Microsoft Defender Application Guard

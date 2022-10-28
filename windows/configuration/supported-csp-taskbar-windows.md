@@ -4,7 +4,7 @@ description: See a list of the Policy CSP - Start items that are supported on Wi
 manager: aaroncz
 ms.author: lizlong
 ms.reviewer: chataylo
-ms.prod: w11
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ---

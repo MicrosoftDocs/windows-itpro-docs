@@ -2,12 +2,14 @@
 title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
 description: Learn how to prepare a Zero Touch Installation of Windows 10 with Configuration Manager, by integrating Configuration Manager with Microsoft Deployment Toolkit.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: how-to
+ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
@@ -63,7 +65,7 @@ On **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell. The procedure below uses Windows PowerShell.
 
-To use Windows PowerShell, copy the following commands into a text file and save it as `C:\Setup\Scripts\ou.ps1` Ensure that you're viewing file extensions and that you save the file with the `.ps1` extension.
+To use Windows PowerShell, copy the following commands into a text file and save it as `C:\Setup\Scripts\ou.ps1`. Ensure that you're viewing file extensions and that you save the file with the `.ps1` extension.
 
 ```powershell
 $oulist = Import-csv -Path c:\oulist.txt
