@@ -18,9 +18,9 @@ ms.date: 10/27/2022
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Manager task sequence to completely automate the process.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Manager task sequence to completely automate the process.
 
 >[!IMPORTANT]
 >Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must be removed from a device before performing an in-place upgrade to Windows 10.
@@ -48,9 +48,9 @@ On **CM01**:
 3. If you have multiple image indexes in the installation media, select **Extract a specific image index from install.wim...** and choose the image index you want from the dropdown menu. In this example, we've chosen **Windows 10 Enterprise**.
 4. Next to **Architecture**, select **x64**, choose a language from the dropdown menu next to **Language**, and then select **Next**.
 5. Next to **Name**, enter **Windows 10 x64 RTM** and then complete the wizard by clicking **Next** and **Close**.
-6.  Distribute the OS upgrade package to the CM01 distribution point by right-clicking the **Windows 10 x64 RTM** OS upgrade package and then clicking **Distribute Content**.
+6.  Distribute the OS upgrade package to the CM01 distribution point by right-clicking the **Windows 10 x64 RTM** OS upgrade package and then clicking **Distribute Content**.
 7.  In the Distribute Content Wizard, add the CM01 distribution point, select **Next** and select **Close**.
-8.  View the content status for the Windows 10 x64 RTM upgrade package. Don't continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
+8.  View the content status for the Windows 10 x64 RTM upgrade package. Don't continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
 
 ## Create an in-place upgrade task sequence
 
@@ -75,13 +75,13 @@ The Configuration Manager upgrade task sequence
 
 ## Create a device collection
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0004 computer running Windows 7 SP1, with the Configuration Manager client installed.
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0004 computer running Windows 7 SP1, with the Configuration Manager client installed.
 
 On **CM01**:
 
 1.  When you're using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
     - General
-        - Name: Windows 10 x64 in-place upgrade
+        - Name: Windows 10 x64 in-place upgrade
         - Limited Collection: All Systems
     - Membership rules:
         - Direct rule
@@ -91,11 +91,11 @@ On **CM01**:
         - Select Resources
           - Select PC0004
 
-2.  Review the Windows 10 x64 in-place upgrade collection. Don't continue until you see PC0004 in the collection.
+2.  Review the Windows 10 x64 in-place upgrade collection. Don't continue until you see PC0004 in the collection.
 
-## Deploy the Windows 10 upgrade
+## Deploy the Windows 10 upgrade
 
-In this section, you create a deployment for the Windows 10 Enterprise x64 Update application.
+In this section, you create a deployment for the Windows 10 Enterprise x64 Update application.
 
 On **CM01**:
 
@@ -109,7 +109,7 @@ On **CM01**:
 7.  On the **Distribution Points** page, accept the default settings, and then select **Next**.
 8.  On the **Summary** page, select **Next**, and then select **Close**.
 
-## Start the Windows 10 upgrade
+## Start the Windows 10 upgrade
 
 Next, run the in-place upgrade task sequence on PC0004.
 
