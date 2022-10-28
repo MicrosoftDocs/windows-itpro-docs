@@ -13,6 +13,9 @@ ms.technology: itpro-configure
 
 # Troubleshoot Start menu errors
 
+> [!div class="nextstepaction"]
+> <a href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=31806233" target='_blank'>Try our Virtual Agent</a> - It can help you quickly identify and fix common Start menu issues.
+
 Start failures can be organized into these categories:
 
 - **Deployment/Install issues** - Easiest to identify but difficult to recover. This failure is consistent and usually permanent. Reset, restore from backup, or rollback to recover.
