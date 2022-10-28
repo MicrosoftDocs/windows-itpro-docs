@@ -2,18 +2,19 @@
 title: Configure MDT deployment share rules (Windows 10)
 description: Learn how to configure the MDT rules engine to reach out to other resources for additional information instead of storing settings directly in the rules engine.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Configure MDT deployment share rules
 
-In this topic, you'll learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
+In this article, you'll learn how to configure the MDT rules engine to reach out to other resources, including external scripts, databases, and web services, for additional information instead of storing settings directly in the rules engine. The rules engine in MDT is powerful: most of the settings used for operating system deployments are retrieved and assigned via the rules engine. In its simplest form, the rules engine is the CustomSettings.ini text file.
 
 ## <a href="" id="sec01"></a>Assign settings
 
@@ -30,7 +31,7 @@ Before adding the more advanced components like scripts, databases, and web serv
 
 ### Set computer name by MAC Address
 
-If you have a small test environment, or simply want to assign settings to a limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. If you have many machines, it makes sense to use the database instead.
+If you have a small test environment, or simply want to assign settings to a limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. When you have many machines, it makes sense to use the database instead.
 
 ``` 
 [Settings]
@@ -71,10 +72,10 @@ OSDComputerName=PC-%SerialNumber%
 ```
 
 In this sample, you configure the rules to set the computer name to a prefix (PC-) and then the serial number. If the serial number of the machine is CND0370RJ7, the preceding configuration sets the computer name to PC-CND0370RJ7.
-**Note**  
+**Note**  
 
 Be careful when using the serial number to assign computer names. A serial number can contain more than 15 characters, but the Windows setup limits a computer name to 15 characters.
- 
+ 
 ### Generate a limited computer name based on a serial number
 
 To avoid assigning a computer name longer than 15 characters, you can configure the rules in more detail by adding VBScript functions, as follows:
@@ -104,7 +105,7 @@ Subsection=Laptop-%IsLaptop%
 MachineObjectOU=OU=Laptops,OU=Contoso,DC=contoso,DC=com
 ```
 
-## Related topics
+## Related articles
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)
 
