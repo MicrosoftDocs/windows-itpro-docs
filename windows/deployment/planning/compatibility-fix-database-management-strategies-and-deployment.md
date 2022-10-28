@@ -1,19 +1,18 @@
 ---
 title: Compatibility Fix Database Management Strategies and Deployment (Windows 10)
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: Learn how to deploy your compatibility fixes into an application-installation package or through a centralized compatibility-fix database.
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/19/2017
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
 ms.custom: seo-marvel-mar2020
 ms.technology: itpro-deploy
 ---
 
 # Compatibility Fix Database Management Strategies and Deployment
-
 
 **Applies to**
 

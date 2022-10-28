@@ -3,12 +3,13 @@ title: Windows client features lifecycle
 description: Learn about the lifecycle of Windows 10 features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: frankroj
+manager: aaroncz
+ms.author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-fundamentals
+ms.date: 10/28/2022
 ---
 # Windows client features lifecycle
 

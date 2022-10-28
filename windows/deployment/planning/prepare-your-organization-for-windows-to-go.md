@@ -1,21 +1,22 @@
 ---
 title: Prepare your organization for Windows To Go (Windows 10)
-description: Though Windows To Go is no longer being developed, you can find info here about the “what”, “why”, and “when” of deployment.
+description: Though Windows To Go is no longer being developed, you can find info here about the "what", "why", and "when" of deployment.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Prepare your organization for Windows To Go
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 > [!IMPORTANT]
 > Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
@@ -24,7 +25,7 @@ The following information is provided to help you plan and design a new deployme
 
 ## What is Windows To Go?
 
-Windows To Go is a feature of Windows 10 Enterprise and Windows 10 Education that enables users to boot Windows from a USB-connected external drive. Windows To Go drives can use the same image that enterprises use for their desktops and laptops, and can be managed the same way. Offering a new mobility option, a Windows To Go workspace isn't intended to replace desktops or laptops, or supplant other mobility offerings.
+Windows To Go is a feature of Windows 10 Enterprise and Windows 10 Education that enables users to boot Windows from a USB-connected external drive. Windows To Go drives can use the same image that enterprises use for their desktops and laptops, and can be managed the same way. Offering a new mobility option, a Windows To Go workspace isn't intended to replace desktops or laptops, or supplant other mobility offerings.
 
 Enterprise customers utilizing Volume Activation Windows licensing will be able to deploy USB drives provisioned with Windows To Go workspace. These drives will be bootable on multiple compatible host computers. Compatible host computers are computers that are:
 
@@ -34,7 +35,7 @@ Enterprise customers utilizing Volume Activation Windows licensing will be able 
 -   Have compatible processor architectures (for example, x86 or AMD64) as the image used to create the Windows To Go workspace. ARM isn't a supported processor for Windows To Go.
 -   Have firmware architecture that is compatible with the architecture of the image used for the Windows To Go workspace
 
-Booting a Windows To Go workspace requires no specific software on the host computer. PCs certified for Windows 7 and later can host Windows To Go.
+Booting a Windows To Go workspace requires no specific software on the host computer. PCs certified for Windows 7 and later can host Windows To Go.
 
 The following topics will familiarize you with how you can use a Windows To Go workspace and give you an overview of some of the things you should consider in your design.
 
