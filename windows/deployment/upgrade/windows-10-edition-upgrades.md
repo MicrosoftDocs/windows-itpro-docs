@@ -1,14 +1,15 @@
 ---
 title: Windows 10 edition upgrade (Windows 10)
 description: With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Windows 10 edition upgrade
@@ -69,13 +70,13 @@ X = unsupported <BR>
 > <br>
 
 ## Upgrade using mobile device management (MDM)
-- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
+- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
 
 
 ## Upgrade using a provisioning package
 Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
-- To create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
+- To create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 For more info about Windows Configuration Designer, see these topics:
 - [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package)
@@ -83,7 +84,7 @@ For more info about Windows Configuration Designer, see these topics:
 
 
 ## Upgrade using a command-line tool
-You can run the changepk.exe command-line tool to upgrade devices to a supported edition of Windows 10:
+You can run the changepk.exe command-line tool to upgrade devices to a supported edition of Windows 10:
 
 `changepk.exe /ProductKey <enter your new product key here>`
 
@@ -106,7 +107,7 @@ If you are upgrading only a few devices, you may want to enter a product key for
 4.  Follow the on-screen instructions.
 
 ## Upgrade by purchasing a license from the Microsoft Store
-If you do not have a product key, you can upgrade your edition of Windows 10 through the Microsoft Store.
+If you do not have a product key, you can upgrade your edition of Windows 10 through the Microsoft Store.
 
 **To upgrade through the Microsoft Store**
 
@@ -117,7 +118,7 @@ If you do not have a product key, you can upgrade your edition of Windows 10 th
 3.  Follow the on-screen instructions.
 
     > [!NOTE]
-    > If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
+    > If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
 
 ## License expiration
 

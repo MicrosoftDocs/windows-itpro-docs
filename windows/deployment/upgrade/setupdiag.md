@@ -1,15 +1,16 @@
 ---
 title: SetupDiag
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
 ms.custom: seo-marvel-apr2020
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # SetupDiag
@@ -229,7 +230,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - This block indicates that the host OS is booted to Safe Mode, where upgrade is not supported.
 7. InsufficientSystemPartitionDiskSpaceHardblock - 3789FBF8-E177-437D-B1E3-D38B4C4269D1
     - This block is encountered when setup determines the system partition (where the boot loader files are stored) does not have enough space to be serviced with the newer boot files required during the upgrade process.
-8. CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
+8. CompatBlockedApplicationAutoUninstall - BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
     - This rule indicates there is an application that needs to be uninstalled before setup can continue.
 9. CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
     - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that has prevented setup from continuing.
@@ -281,21 +282,21 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes.
 33. FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
     - Gives last operation, failure phase and error information when a rollback occurs.
-34. AdvancedInstallerGenericFailure – 4019550D-4CAA-45B0-A222-349C48E86F71
+34. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71
     - A rule to match AdvancedInstaller read/write failures in a generic sense.  Will output the executable being called as well as the error code and exit code reported.
-35. OptionalComponentFailedToGetOCsFromPackage – D012E2A2-99D8-4A8C-BBB2-088B92083D78  (NOTE:  This rule replaces the OptionalComponentInstallFailure rule present in v1.10.
+35. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78  (NOTE:  This rule replaces the OptionalComponentInstallFailure rule present in v1.10.
     - This matches a specific Optional Component failure when attempting to enumerate components in a package.  Will output the package name and error code.
-36. OptionalComponentOpenPackageFailed – 22952520-EC89-4FBD-94E0-B67DF88347F6
+36. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6
     - Matches a specific Optional Component failure when attempting to open an OC package.  Will output the package name and error code.
-37. OptionalComponentInitCBSSessionFailed – 63340812-9252-45F3-A0F2-B2A4CA5E9317
+37. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317
     - Matches a specific failure where the advanced installer service or components aren’t operating or started on the system.  Will output the error code.
-38. UserProfileCreationFailureDuringFinalize – C6677BA6-2E53-4A88-B528-336D15ED1A64
+38. UserProfileCreationFailureDuringFinalize - C6677BA6-2E53-4A88-B528-336D15ED1A64
     - Matches a specific User Profile creation error during the finalize phase of setup.  Will output the failure code.
-39. WimApplyExtractFailure – 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
+39. WimApplyExtractFailure - 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
     - Matches a wim apply failure during wim extraction phases of setup.  Will output the extension, path and error code.
-40. UpdateAgentExpanderFailure – 66E496B3-7D19-47FA-B19B-4040B9FD17E2
+40. UpdateAgentExpanderFailure - 66E496B3-7D19-47FA-B19B-4040B9FD17E2
     - Matches DPX expander failures in the down-level phase of update from Windows Update.  Will output the package name, function, expression and error code.
-41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
+41. FindFatalPluginFailure - E48E3F1C-26F6-4AFB-859B-BF637DA49636
     - Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
 42. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
     - Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes.

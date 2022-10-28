@@ -1,13 +1,14 @@
 ---
 title: Resolve Windows 10 upgrade errors - Windows IT Pro
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Resolve Windows 10 upgrade errors : Technical information for IT Pros

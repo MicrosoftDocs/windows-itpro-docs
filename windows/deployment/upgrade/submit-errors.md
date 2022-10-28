@@ -1,20 +1,21 @@
 ---
 title: Submit Windows 10 upgrade errors using Feedback Hub
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: Download the Feedback Hub app, and then submit Windows 10 upgrade errors for diagnosis using feedback hub.
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Submit Windows 10 upgrade errors using Feedback Hub
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 >[!NOTE]
 >This is a 100 level topic (basic).<br>
@@ -32,7 +33,7 @@ The Feedback Hub requires Windows 10. If you are having problems upgrading from 
 
 ## Submit feedback
 
-To submit feedback about a failed Windows 10 upgrade, click the following link: [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md) 
+To submit feedback about a failed Windows 10 upgrade, click the following link: [Feedback Hub](feedback-hub://?referrer=resolveUpgradeErrorsPage&tabid=2&contextid=81&newFeedback=true&feedbackType=2&topic=submit-errors.md) 
 
 The Feedback Hub will open.
 
