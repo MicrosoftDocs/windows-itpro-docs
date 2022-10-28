@@ -2,14 +2,15 @@
 title: Add a Windows 10 operating system image using Configuration Manager
 description: Operating system images are typically the production image used for deployment throughout the organization.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Add a Windows 10 operating system image using Configuration Manager
@@ -18,7 +19,7 @@ ms.technology: itpro-deploy
 
 -   Windows 10
 
-Operating system images are typically the production image used for deployment throughout the organization. This topic shows you how to add a Windows 10 operating system image created with Microsoft Endpoint Configuration Manager, and how to distribute the image to a distribution point.
+Operating system images are typically the production image used for deployment throughout the organization. This article shows you how to add a Windows 10 operating system image created with Microsoft Endpoint Configuration Manager, and how to distribute the image to a distribution point.
 
 ## Infrastructure
 
@@ -43,10 +44,10 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
     The Windows 10 image being copied to the Sources folder structure.
 
 3.  Using the Configuration Manager Console, in the Software Library workspace, right-click **Operating System Images**, and select **Add Operating System Image**.
-4.  On the **Data Source** page, in the **Path:** text box, browse to \\\\CM01\\Sources$\\OSD\\OS\\Windows 10 Enterprise x64 RTM\\REFW10-X64-001.wim, select x64 next to Architecture and choose a language, then click **Next**.
-5.  On the **General** page, assign the name Windows 10 Enterprise x64 RTM, click **Next** twice, and then click **Close**.
+4.  On the **Data Source** page, in the **Path:** text box, browse to \\\\CM01\\Sources$\\OSD\\OS\\Windows 10 Enterprise x64 RTM\\REFW10-X64-001.wim, select x64 next to Architecture and choose a language, then select **Next**.
+5.  On the **General** page, assign the name Windows 10 Enterprise x64 RTM, select **Next** twice, and then select **Close**.
 6.  Distribute the operating system image to the CM01 distribution point by right-clicking the **Windows 10 Enterprise x64 RTM** operating system image and then clicking **Distribute Content**.
-7.  In the Distribute Content Wizard, add the CM01 distribution point, click **Next** and click **Close**.
+7.  In the Distribute Content Wizard, add the CM01 distribution point, select **Next** and select **Close**.
 8.  View the content status for the Windows 10 Enterprise x64 RTM package. Don't continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
 
     ![figure 18.](../images/fig18-distwindows.png)
@@ -55,7 +56,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 
 Next, see [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md). 
 
-## Related topics
+## Related articles
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
