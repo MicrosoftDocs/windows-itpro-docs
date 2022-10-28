@@ -2,11 +2,11 @@
 title: Create a task sequence with Configuration Manager (Windows 10)
 description: Create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
 ---
