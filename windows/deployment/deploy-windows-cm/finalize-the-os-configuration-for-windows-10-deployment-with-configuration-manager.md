@@ -17,9 +17,9 @@ ms.date: 10/27/2022
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
-This article walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enabling optional MDT monitoring for Configuration Manager, logs folder settings, rules configuration, content distribution, and deployment of the previously created task sequence.
+This article walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enabling optional MDT monitoring for Configuration Manager, logs folder settings, rules configuration, content distribution, and deployment of the previously created task sequence.
 
 For the purposes of this guide, we'll use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide, CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
