@@ -37,7 +37,7 @@ $event.Event.EventData.Data
 
 To use Event Viewer: 
 1. Open Event Viewer and navigate to **Windows Logs\Application**.
-2. Click **Find**, and then search for **winsetupdiag02**.
+2. Select **Find**, and then search for **winsetupdiag02**.
 3. Double-click the event that is highlighted.
 
 > [!NOTE]
@@ -58,12 +58,11 @@ Ten parameters are listed in the event:
 |P9: New OS build (Ex: 16299}   | 
 |P10: New OS branch (Ex: rs3_release}   | 
 
-
-The event will also contain links to log files that can be used to perform a detailed diagnosis of the error.  An example of this event from a successful upgrade is shown below.
+The event will also contain links to log files that can be used to perform a detailed diagnosis of the error. An example of this event from a successful upgrade is shown below.
 
 :::image type="content" alt-text="Windows Error Reporting." source="../images/event.png" lightbox="../images/event.png":::
 
-## Related topics
+## Related articles
 
 [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)  
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
