@@ -1,9 +1,9 @@
 ---
 title: Register your devices
-description:  This article details how to register devices in Autopatch
+description: This article details how to register devices in Autopatch
 ms.date: 09/07/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
@@ -72,12 +72,12 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 - Windows 10 (1809+)/11 Enterprise or Professional editions (only x64 architecture).
 - Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
 - Managed by Microsoft Endpoint Manager.
-    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) and/or [Configuration Manager Co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
-        - Must switch the following Microsoft Endpoint Manager-Configuration Manager [Co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune):
+    - [Already enrolled into Microsoft Intune](/mem/intune/user-help/enroll-windows-10-device) and/or [Configuration Manager co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
+        - Must switch the following Microsoft Endpoint Manager-Configuration Manager [co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune):
             - Windows updates policies
             - Device configuration
             - Office Click-to-run
-- Last Intune device check-in completed within the last 28 days.
+- Last Intune device check in completed within the last 28 days.
 - Devices must have Serial Number, Model and Manufacturer.
 	> [!NOTE]
 	> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
@@ -202,7 +202,7 @@ For ease of deployment, we recommend nesting a dynamic device group in your Auto
 Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
 
 - For Windows 365 support, see [Get support](/mem/get-support).
-- For Azure Virtual Desktop support, see [Get support](/support/create-ticket/).
+- For Azure Virtual Desktop support, see [Get support](https://azure.microsoft.com/support/create-ticket/).
 - For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).  
 
 ## Device management lifecycle scenarios

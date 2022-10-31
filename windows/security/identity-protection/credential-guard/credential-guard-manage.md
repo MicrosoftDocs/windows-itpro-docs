@@ -1,25 +1,25 @@
 ---
 title: Manage Windows Defender Credential Guard (Windows)
 description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: zwhittington
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.custom: 
   - CI 120967
   - CSSTroubleshooting
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 # Manage Windows Defender Credential Guard
 

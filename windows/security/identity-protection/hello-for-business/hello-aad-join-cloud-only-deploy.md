@@ -1,7 +1,7 @@
 ---
 title: Azure Active Directory join cloud only deployment
-description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device. 
-ms.prod: m365-security
+description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device.
+ms.prod: windows-client
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
@@ -10,9 +10,9 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 # Azure Active Directory join cloud only deployment
 

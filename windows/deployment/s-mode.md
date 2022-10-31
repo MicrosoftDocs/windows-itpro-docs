@@ -2,13 +2,12 @@
 title: Windows 10 Pro in S mode
 description: Overview of Windows 10 Pro/Enterprise in S mode. What is S mode for Enterprise customers?
 ms.localizationpriority: high
-ms.prod: w10
+ms.prod: windows-client
 manager: dougeby
 author: aczechowski
 ms.author: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ---
 
 # Windows 10 in S mode - What is it?

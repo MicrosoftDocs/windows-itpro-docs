@@ -2,12 +2,13 @@
 title: How to Add or Upgrade Packages by Using the Management Console (Windows 10/11)
 description: Add or upgrade packages on the Microsoft Application Virtualization (App-V) server by using the Management Console.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 06/08/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to add or upgrade packages by using the Management Console
 

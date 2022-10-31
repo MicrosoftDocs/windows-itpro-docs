@@ -89,11 +89,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot Windows 10 clients
-            url: windows-10-support-solutions.md
+          - text: Troubleshoot Windows clients
+            url: /troubleshoot/windows-client/welcome-windows-client
           - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows start-up
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-windows-startup.md
+            url: /troubleshoot/windows-client/networking/networking-overview
+          - text: Advanced troubleshooting for Windows start-up and performance
+            url: /troubleshoot/windows-client/performance/performance-overview
+          - text: Advanced troubleshooting for user profiles and logon
+            url: /troubleshoot/windows-client/user-profiles-and-logon/userprofiles-and-logon-overview

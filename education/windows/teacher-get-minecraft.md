@@ -3,10 +3,12 @@ title: For teachers get Minecraft Education Edition
 description: Learn how teachers can obtain and distribute Minecraft.
 ms.topic: how-to
 ms.date: 08/10/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows 11 SE</b>
+ms.collection: 
+  - highpri
 ---
 
 # For teachers - get Minecraft: Education Edition

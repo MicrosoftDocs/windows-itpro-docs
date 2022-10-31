@@ -6,14 +6,14 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 search.appverid: met150
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 03/01/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10

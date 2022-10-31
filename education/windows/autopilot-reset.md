@@ -3,8 +3,10 @@ title: Reset devices with Autopilot Reset
 description: Learn about Autopilot Reset and how to enable and use it.
 ms.date: 08/10/2022
 ms.topic: how-to
-appliesto:
-- ✅ <b>Windows 10</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+ms.collection: 
+  - highpri
 ---
 
 # Reset devices with Autopilot Reset 

@@ -1,7 +1,7 @@
 ---
 title: Add or hide optional apps and features on Windows devices | Microsoft Docs
 description: Learn how to add Windows 10 and Windows 11 optional features using the Apps & features page in the Settings app. Also see the group policy objects (GPO) and MDM policies that show or hide Apps and Windows Features in the Settings app. Use Windows PowerShell to show or hide specific features in Windows Features.
-ms.prod: w10
+ms.prod: windows-client
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.date: 08/30/2021
 ms.reviewer: 
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-apps
 ---
 
 # Add or hide features on the Windows client OS

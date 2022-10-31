@@ -3,12 +3,13 @@ title: Update Compliance (preview) feedback, support, and troubleshooting
 ms.reviewer: 
 manager: dougeby
 description: Update Compliance (preview) support information.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 08/10/2022
+ms.technology: itpro-updates
 ---
 
 # Update Compliance (preview) feedback, support, and troubleshooting

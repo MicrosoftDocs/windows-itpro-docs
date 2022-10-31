@@ -1,18 +1,20 @@
 ---
 title: Enable virtualization-based protection of code integrity
 description: This article explains the steps to opt in to using HVCI on Windows devices.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 12/16/2021
 ms.reviewer: 
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Enable virtualization-based protection of code integrity

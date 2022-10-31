@@ -4,7 +4,7 @@ description: This topic for the IT professional describes the process dependenci
 ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # AppLocker processes and interactions

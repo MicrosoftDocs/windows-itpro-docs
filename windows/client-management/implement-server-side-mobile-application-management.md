@@ -3,11 +3,11 @@ title: Support for mobile application management on Windows
 description: Learn about implementing the Windows version of mobile application management (MAM), which is a lightweight solution for managing company data access and security on personal devices.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/03/2022
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

@@ -1,13 +1,14 @@
 ---
 title: PowerShell cmdlets for provisioning Windows 10/11 (Windows 10/11)
 description: Learn more about the Windows PowerShell cmdlets that you can use with Provisioning packages on Windows10/11 client desktop devices.
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
 manager: aaroncz
+ms.technology: itpro-configure
 ---
 
 # PowerShell cmdlets for provisioning Windows client (reference)

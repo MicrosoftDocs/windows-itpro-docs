@@ -4,7 +4,7 @@ description: Best practices, location, values and security considerations for th
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,12 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Configure encryption types allowed for Kerberos

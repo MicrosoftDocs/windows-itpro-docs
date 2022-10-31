@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/11/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Access this computer from the network - security policy setting

@@ -1,20 +1,19 @@
 ---
 title: Access Control Overview (Windows 10)
 description: Access Control Overview
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: sulahiri
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/18/2017
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows Server 2016</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows Server 2016</b>
 ---
 
 # Access Control Overview

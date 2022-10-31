@@ -10,9 +10,9 @@ manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 09/20/2022
 ms.topic: reference
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Accessibility information for IT professionals

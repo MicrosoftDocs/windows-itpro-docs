@@ -1,7 +1,7 @@
 ---
 title: Configure BranchCache for Windows client updates
 description: In this article, learn how to use BranchCache to optimize network bandwidth during update deployment.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -9,6 +9,7 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Configure BranchCache for Windows client updates
