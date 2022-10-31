@@ -9,7 +9,6 @@ author: aczechowski
 ms.date: 09/16/2022
 ms.topic: overview
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ---
 
 # Volume Activation Management Tool (VAMT) technical reference

@@ -7,7 +7,6 @@ author: aczechowski
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Windows 10 deployment scenarios

@@ -8,7 +8,6 @@ manager: aaroncz
 ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
 ms.technology: itpro-apps
 ---
 

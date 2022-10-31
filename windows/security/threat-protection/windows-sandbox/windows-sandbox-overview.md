@@ -6,6 +6,7 @@ author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.collection: 
+  - highpri
 ms.topic: article
 ms.localizationpriority: 
 ms.date: 

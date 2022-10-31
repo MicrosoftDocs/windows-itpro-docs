@@ -7,7 +7,6 @@ ms.localizationpriority: high
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
-ms.collection: highpri
 ms.technology: itpro-updates
 ---
 

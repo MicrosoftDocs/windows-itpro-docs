@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 ms.prod: windows-client
 ms.collection: 
   - M365-modern-desktop
-  - highpri
 ms.topic: article
 ---
 
