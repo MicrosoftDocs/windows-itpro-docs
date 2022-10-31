@@ -7472,6 +7472,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-kerberos.md#kerberos-kerberosclientsupportsclaimscompoundarmor" id="kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a>
   </dd>
   <dd>
+      <a href="./policy-csp-kerberos.md#kerberos-cloudkerberosticketretrievalenabled" id="kerberos-cloudkerberosticketretrievalenabled">Kerberos/CloudKerberosTicketRetrievalEnabled</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-kerberos.md#kerberos-requirekerberosarmoring" id="kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a>
   </dd>
   <dd>
