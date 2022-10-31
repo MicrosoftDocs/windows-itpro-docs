@@ -16,7 +16,7 @@ ms.date: 10/27/2022
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 In this article, you'll learn how to create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard. Creating task sequences in Configuration Manager requires many more steps than creating task sequences for MDT Lite Touch installation. Luckily, the MDT wizard helps you through the process and also guides you through creating the needed packages.
 

@@ -286,7 +286,7 @@ Next, see [Create a custom Windows PE boot image with Configuration Manager](cre
 
 ## Components of Configuration Manager operating system deployment
 
-Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are more components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which isn't used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
+Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are more components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which isn't used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
 
 -   **State migration point (SMP).** The state migration point is used to store user state migration data during computer replace scenarios.
 -   **Distribution point (DP).** The distribution point is used to store all packages in Configuration Manager, including the operating system deployment-related packages.
