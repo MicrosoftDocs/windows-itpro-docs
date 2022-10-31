@@ -50,7 +50,7 @@ There are URLs from several Microsoft products that must be in the allowed list 
 
 ### Delivery Optimization
 
-Delivery Optimization is a peer-to-peer distribution technology available in Windows 11 and Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
+Delivery Optimization is a peer-to-peer distribution technology available in Windows 10 and Windows 11 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. Delivery Optimization can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
 
 Windows Autopatch supports and recommends the configuration and validation of Delivery Optimization along with your adoption of the service. 
-[What is Delivery Optimization?](https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization)
+[What is Delivery Optimization?](/windows/deployment/do/waas-delivery-optimization)
