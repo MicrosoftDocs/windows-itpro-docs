@@ -4,7 +4,7 @@ manager: dougeby
 ms.author: aaroncz
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 ms.localizationpriority: medium
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020

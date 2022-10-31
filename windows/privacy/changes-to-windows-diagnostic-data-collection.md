@@ -118,7 +118,7 @@ It's recommended Insiders on these devices pause flighting if these changes aren
 
 For Windows devices in the Dev Channel that aren't joined to an Azure AD tenant, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
 
-For other Windows devices (not in the Dev Channel), additional details on supported versions of Windows 11 and Windows 10 will be announced at a later date. These changes will roll out no earlier than the last quarter of calendar year 2022.  
+For other Windows devices (not in the Dev Channel), the change will rollout with the January 2023 release preview cumulative update for Windows 10 versions 20H2, 21H2 and 22H2, and Windows 11 versions 21H2 and 22H2.
 
 To prepare for this change, ensure that you meet the [prerequisites](configure-windows-diagnostic-data-in-your-organization.md#prerequisites) for Windows diagnostic data processor configuration, join your devices to Azure AD (can be a hybrid Azure AD join), and keep your devices secure and up to date with quality updates. If you're outside of the EU or EFTA, sign up for any of the enterprise services.
 

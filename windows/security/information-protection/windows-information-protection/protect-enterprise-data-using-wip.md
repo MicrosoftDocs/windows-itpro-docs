@@ -1,13 +1,13 @@
 ---
 title: Protect your enterprise data using Windows Information Protection
 description: Learn how to prevent accidental enterprise data leaks through apps and services, such as email, social media, and the public cloud.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.reviewer: rafals
-ms.collection:
+ms.collection: 
   - M365-security-compliance
 ms.topic: overview
 ms.date: 07/15/2022

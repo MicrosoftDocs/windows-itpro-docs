@@ -8,7 +8,9 @@ metadata:
   description: Learn about how to plan, deploy and manage Windows devices in an education environment with Microsoft Intune
   ms.topic: landing-page
   ms.prod: windows
-  ms.collection: education
+  ms.collection:
+  - education
+  - highpri
   author: paolomatarazzo
   ms.author: paoloma
   ms.date: 08/10/2022
@@ -49,6 +51,8 @@ landingContent:
           url: windows-11-se-settings-list.md
       - linkListType: whats-new
         links:
+        - text: Configure federated sign-in
+          url: federated-sign-in.md
         - text: Configure education themes
           url: edu-themes.md
         - text: Configure Stickers

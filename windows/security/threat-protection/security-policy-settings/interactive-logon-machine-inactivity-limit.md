@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, management, and sec
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,12 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 09/18/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Machine inactivity limit

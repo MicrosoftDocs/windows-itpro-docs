@@ -1,9 +1,9 @@
 ---
 title: Windows feature update end user experience
-description:  This article explains the Windows feature update end user experience
+description: This article explains the Windows feature update end user experience
 ms.date: 07/11/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -25,7 +25,7 @@ In this section we'll review what an end user would see in the following three s
 3. Feature update grace period
 
 > [!NOTE]
-> Windows Autopatch doesn't yet support feature updates without notifying end users.
+> Windows Autopatch doesn't yet support feature updates without notifying end users.<p>The "It's almost time to restart" and "Your organization requires your device to restart" notifications won't disappear until the user interacts with the notification.</p>
 
 ### Typical update experience
 

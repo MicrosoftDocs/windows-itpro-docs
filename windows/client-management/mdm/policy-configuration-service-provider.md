@@ -1,12 +1,12 @@
 ---
 title: Policy CSP
 description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10 and Windows 11.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 07/18/2019
@@ -6640,6 +6640,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
+  </dd>
+</dl>
+
+### FederatedAuthentication policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-federatedauthentication.md#federatedauthentication-enablewebsigninforprimaryuser" id="federatedauthentication-enablewebsigninforprimaryuser<">FederatedAuthentication/EnableWebSignInForPrimaryUser</a>
   </dd>
 </dl>
 

@@ -4,10 +4,11 @@ description: Learn how to use the Volume Activation Management Tool (VAMT) Activ
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Activate by Proxy an Active Directory Forest

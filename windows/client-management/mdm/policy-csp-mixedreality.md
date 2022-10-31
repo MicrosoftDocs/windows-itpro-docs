@@ -4,10 +4,10 @@ description: Policy CSP - MixedReality
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

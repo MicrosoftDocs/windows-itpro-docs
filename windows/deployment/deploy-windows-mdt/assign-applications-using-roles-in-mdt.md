@@ -1,18 +1,20 @@
 ---
 title: Assign applications using roles in MDT (Windows 10)
-description: This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer.
+description: This article will show you how to add applications to a role in the MDT database and then assign that role to a computer.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Assign applications using roles in MDT
 
-This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer. For the purposes of this topic, the application we are adding is Adobe Reader XI. In addition to using computer-specific entries in the database, you can use roles in MDT to group settings together.
+This article will show you how to add applications to a role in the MDT database and then assign that role to a computer. For the purposes of this article, the application we're adding is Adobe Reader XI. In addition to using computer-specific entries in the database, you can use roles in MDT to group settings together.
 
 ## <a href="" id="sec01"></a>Create and assign a role entry in the database
 
@@ -39,9 +41,9 @@ Figure 13. The Standard PC role added to PC00075 (having ID 1 in the database).
 
 ## <a href="" id="sec03"></a>Verify database access in the MDT simulation environment
 
-When the database is populated, you can use the MDT simulation environment to simulate a deployment. The applications are not installed, but you can see which applications would be installed if you did a full deployment of the computer.
+When the database is populated, you can use the MDT simulation environment to simulate a deployment. The applications aren't installed, but you can see which applications would be installed if you did a full deployment of the computer.
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
-2.  Modify the C:\\MDT\\CustomSettings.ini file to look like the following:
+2.  Modify the C:\\MDT\\CustomSettings.ini file to look like below:
 
     ``` 
     [Settings]
@@ -118,7 +120,7 @@ When the database is populated, you can use the MDT simulation environment to si
 
 Figure 14. ZTIGather.log displaying the application GUID belonging to the Adobe Reader XI application that would have been installed if you deployed this machine.
 
-## Related topics
+## Related articles
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)
 <BR>[Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
@@ -127,5 +129,3 @@ Figure 14. ZTIGather.log displaying the application GUID belonging to the Adobe 
 <BR>[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
 <BR>[Use web services in MDT](use-web-services-in-mdt.md)
 <BR>[Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
- 
- 

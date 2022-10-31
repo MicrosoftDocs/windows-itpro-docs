@@ -3,12 +3,12 @@ title: Policy CSP - System
 description: Learn policy settings that determine whether users can access the Insider build controls in the advanced options for Windows Update.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 08/26/2021
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
