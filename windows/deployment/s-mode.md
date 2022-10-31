@@ -3,11 +3,12 @@ title: Windows 10 Pro in S mode
 description: Overview of Windows 10 Pro/Enterprise in S mode. What is S mode for Enterprise customers?
 ms.localizationpriority: high
 ms.prod: windows-client
-manager: dougeby
-author: aczechowski
-ms.author: aaroncz
+manager: aaroncz
+author: frankroj
+ms.author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.date: 10/31/2022
 ---
 
 # Windows 10 in S mode - What is it?
@@ -20,15 +21,15 @@ S mode is an evolution of the S SKU introduced with Windows 10 April 2018 Update
 
 **Microsoft-verified security**
 
-With Windows 10 in S mode, you’ll find your favorite applications, such as Office, Evernote, and Spotify in the Microsoft Store where they’re Microsoft-verified for security. You can also feel secure when you’re online. Microsoft Edge, your default browser, gives you protection against phishing and socially engineered malware.
+With Windows 10 in S mode, you'll find your favorite applications, such as Office, Evernote, and Spotify in the Microsoft Store where they're Microsoft-verified for security. You can also feel secure when you're online. Microsoft Edge, your default browser, gives you protection against phishing and socially engineered malware.
 
 **Performance that lasts**
 
-Start-ups are quick, and S mode is built to keep them that way. With Microsoft Edge as your browser, your online experience is fast and secure. Plus, you’ll enjoy a smooth, responsive experience, whether you’re streaming HD video, opening apps, or being productive on the go.
+Start-ups are quick, and S mode is built to keep them that way. With Microsoft Edge as your browser, your online experience is fast and secure. Plus, you'll enjoy a smooth, responsive experience, whether you're streaming HD video, opening apps, or being productive on the go.
 
 **Choice and flexibility**
 
-Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don’t find exactly what you want, you can easily [switch out of S mode](./windows-10-pro-in-s-mode.md) to Windows 10 Home, Pro, or Enterprise editions at any time and search the web for more choices, as shown below.
+Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don't find exactly what you want, you can easily [switch out of S mode](./windows-10-pro-in-s-mode.md) to Windows 10 Home, Pro, or Enterprise editions at any time and search the web for more choices, as shown below.
 
 ![Switching out of S mode flow chart.](images/s-mode-flow-chart.png)
 

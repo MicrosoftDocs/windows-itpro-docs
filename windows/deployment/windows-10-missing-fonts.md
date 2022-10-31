@@ -3,16 +3,17 @@ title: How to install fonts missing after upgrading to Windows client
 description: Some of the fonts are missing from the system after you upgrade to Windows client.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.topic: article
+ms.date: 10/31/2022
 ---
 # How to install fonts that are missing after upgrading to Windows client
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10 or Windows 11, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows client. If you install a fresh instance of Windows client, or upgrade an older version of Windows to Windows client, these optional features aren't enabled by default. As a result, these fonts appear to be missing from the system.
@@ -70,7 +71,7 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 > [!NOTE]
 > The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
-## Fonts included in optional font features
+## Fonts included in optional font features
 
 Here's a comprehensive list of the font families in each of the optional features. Some font families might include multiple fonts for different weights and styles.
 

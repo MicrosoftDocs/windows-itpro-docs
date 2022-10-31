@@ -3,11 +3,12 @@ title: Windows Deployment Services (WDS) boot.wim support
 description: This article provides details on the support capabilities of WDS for end to end operating system deployment.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.date: 10/31/2022
 ---
 
 # Windows Deployment Services (WDS) boot.wim support

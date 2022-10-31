@@ -2,14 +2,14 @@
 title: Configure a test lab to deploy Windows 10
 description: Learn about concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-author: aczechowski
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: tutorial
-ms.date: 05/12/2022
+ms.date: 10/31/2022
 ---
 
 # Step by step guide: Configure a test lab to deploy Windows 10

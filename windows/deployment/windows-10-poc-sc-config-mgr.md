@@ -5,10 +5,11 @@ ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-author: aczechowski
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
 ms.topic: tutorial
+ms.date: 10/31/2022
 ---
 
 # Deploy Windows 10 in a test lab using Configuration Manager

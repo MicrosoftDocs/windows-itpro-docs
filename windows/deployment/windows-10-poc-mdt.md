@@ -3,11 +3,11 @@ title: Step by step - Deploy Windows 10 in a test lab using MDT
 description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.date: 10/11/2017
+ms.date: 10/31/2022
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-author: aczechowski
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
 ms.topic: how-to
 ---
 
@@ -424,7 +424,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 2. Next, switch to the Hyper-V host and open an elevated Windows PowerShell prompt. Create a generation 2 VM on the Hyper-V host that will load its OS using PXE. To create this VM, type the following commands at an elevated Windows PowerShell prompt:
 
     ```powershell
-    New-VM –Name "PC2" –NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    New-VM -Name "PC2" -NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 720MB -MaximumBytes 2048MB -Buffer 20
     ```
 
@@ -589,7 +589,7 @@ At a high level, the computer replace process consists of:<BR>
 1. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
 
     ```powershell
-    New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    New-VM -Name "PC3" -NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
     ```
 

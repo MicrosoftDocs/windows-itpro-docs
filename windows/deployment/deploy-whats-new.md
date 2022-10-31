@@ -1,14 +1,15 @@
 ---
 title: What's new in Windows client deployment
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 ms.localizationpriority: medium
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.date: 10/31/2022
 ---
 
 # What's new in Windows client deployment
@@ -133,7 +134,7 @@ An in-place upgrade wizard is available in Configuration Manager. For more infor
 
 Windows 10 Education support has been added to Windows 10 Subscription Activation.
 
-With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions – Windows 10 Education. For more information, see [Windows 10 Subscription Activation](./windows-10-subscription-activation.md).
+With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions - Windows 10 Education. For more information, see [Windows 10 Subscription Activation](./windows-10-subscription-activation.md).
 
 ### SetupDiag
 

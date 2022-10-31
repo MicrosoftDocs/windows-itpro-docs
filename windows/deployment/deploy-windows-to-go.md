@@ -2,12 +2,13 @@
 title: Deploy Windows To Go in your organization (Windows 10)
 description: Learn how to deploy Windows To Go in your organization through a wizard in the user interface as well as programatically with Windows PowerShell.
 ms.reviewer: 
-manager: dougeby
-author: aczechowski
-ms.author: aaroncz
+manager: aaroncz
+author: frankroj
+ms.author: frankroj
 ms.prod: windows-client
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.date: 10/31/2022
 ---
 
 # Deploy Windows To Go in your organization
@@ -110,22 +111,22 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
    #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with 'New-Partition…) Validate that this is the correct disk that you want to completely erase.
    #
-   # To skip the confirmation prompt, append –confirm:$False
-    Clear-Disk –InputObject $Disk[0] -RemoveData
+   # To skip the confirmation prompt, append -confirm:$False
+    Clear-Disk -InputObject $Disk[0] -RemoveData
 
    # This command initializes a new MBR disk
-    Initialize-Disk –InputObject $Disk[0] -PartitionStyle MBR
+    Initialize-Disk -InputObject $Disk[0] -PartitionStyle MBR
 
    # This command creates a 350 MB system partition
-    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive
+    $SystemPartition = New-Partition -InputObject $Disk[0] -Size (350MB) -IsActive
 
    # This formats the volume with a FAT32 Filesystem
-   # To skip the confirmation dialog, append –Confirm:$False
+   # To skip the confirmation dialog, append -Confirm:$False
     Format-Volume -NewFileSystemLabel "UFD-System" -FileSystem FAT32 `
     -Partition $SystemPartition
 
    # This command creates the Windows volume using the maximum space available on the drive. The Windows To Go drive should not be used for other file storage.
-    $OSPartition = New-Partition –InputObject $Disk[0] -UseMaximumSize
+    $OSPartition = New-Partition -InputObject $Disk[0] -UseMaximumSize
     Format-Volume -NewFileSystemLabel "UFD-Windows" -FileSystem NTFS `
     -Partition $OSPartition
 
@@ -316,22 +317,22 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
    #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with 'New-Partition…) Validate that this is the correct disk that you want to completely erase.
    #
-   # To skip the confirmation prompt, append –confirm:$False
-    Clear-Disk –InputObject $Disk[0] -RemoveData
+   # To skip the confirmation prompt, append -confirm:$False
+    Clear-Disk -InputObject $Disk[0] -RemoveData
 
    # This command initializes a new MBR disk
-    Initialize-Disk –InputObject $Disk[0] -PartitionStyle MBR
+    Initialize-Disk -InputObject $Disk[0] -PartitionStyle MBR
 
    # This command creates a 350 MB system partition
-    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive
+    $SystemPartition = New-Partition -InputObject $Disk[0] -Size (350MB) -IsActive
 
    # This formats the volume with a FAT32 Filesystem
-   # To skip the confirmation dialog, append –Confirm:$False
+   # To skip the confirmation dialog, append -Confirm:$False
     Format-Volume -NewFileSystemLabel "UFD-System" -FileSystem FAT32 `
     -Partition $SystemPartition
 
    # This command creates the Windows volume using the maximum space available on the drive. The Windows To Go drive should not be used for other file storage.
-    $OSPartition = New-Partition –InputObject $Disk[0] -UseMaximumSize
+    $OSPartition = New-Partition -InputObject $Disk[0] -UseMaximumSize
     Format-Volume -NewFileSystemLabel "UFD-Windows" -FileSystem NTFS `
     -Partition $OSPartition
 
@@ -464,22 +465,22 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    #Clear the disk. This will delete any data on the disk. (and will fail if the disk is not yet initialized. If that happens, simply continue with 'New-Partition…) Validate that this is the correct disk that you want to completely erase.
    #
-   # To skip the confirmation prompt, append –confirm:$False
-    Clear-Disk –InputObject $Disk[0] -RemoveData
+   # To skip the confirmation prompt, append -confirm:$False
+    Clear-Disk -InputObject $Disk[0] -RemoveData
 
    # This command initializes a new MBR disk
-    Initialize-Disk –InputObject $Disk[0] -PartitionStyle MBR
+    Initialize-Disk -InputObject $Disk[0] -PartitionStyle MBR
 
    # This command creates a 350 MB system partition
-    $SystemPartition = New-Partition –InputObject $Disk[0] -Size (350MB) -IsActive
+    $SystemPartition = New-Partition -InputObject $Disk[0] -Size (350MB) -IsActive
 
    # This formats the volume with a FAT32 Filesystem
-   # To skip the confirmation dialog, append –Confirm:$False
+   # To skip the confirmation dialog, append -Confirm:$False
     Format-Volume -NewFileSystemLabel "UFD-System" -FileSystem FAT32 `
     -Partition $SystemPartition
 
    # This command creates the Windows volume using the maximum space available on the drive. The Windows To Go drive should not be used for other file storage.
-    $OSPartition = New-Partition –InputObject $Disk[0] -UseMaximumSize
+    $OSPartition = New-Partition -InputObject $Disk[0] -UseMaximumSize
     Format-Volume -NewFileSystemLabel "UFD-Windows" -FileSystem NTFS `
     -Partition $OSPartition
 
@@ -521,12 +522,12 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    ``` 
    # Create a variable to store the password
-   $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force
+   $spwd = ConvertTo-SecureString -String <password> -AsplainText -Force
    Enable-BitLocker W: -PasswordProtector $spwd
    ```
 
    >[!WARNING]
-   >To have BitLocker only encrypt used space on the disk append the parameter `–UsedSpaceOnly` to the `Enable-BitLocker` cmdlet. As data is added to the drive BitLocker will encrypt additional space. Using this parameter will speed up the preparation process as a smaller percentage of the disk will require encryption. If you are in a time critical situation where you cannot wait for encryption to complete you can also safely remove the Windows To Go drive during the encryption process. The next time the drive is inserted in a computer it will request the BitLocker password. Once the password is supplied, the encryption process will continue. If you do this, make sure your users know that BitLocker encryption is still in process and that they will be able to use the workspace while the encryption completes in the background.
+   >To have BitLocker only encrypt used space on the disk append the parameter `-UsedSpaceOnly` to the `Enable-BitLocker` cmdlet. As data is added to the drive BitLocker will encrypt additional space. Using this parameter will speed up the preparation process as a smaller percentage of the disk will require encryption. If you are in a time critical situation where you cannot wait for encryption to complete you can also safely remove the Windows To Go drive during the encryption process. The next time the drive is inserted in a computer it will request the BitLocker password. Once the password is supplied, the encryption process will continue. If you do this, make sure your users know that BitLocker encryption is still in process and that they will be able to use the workspace while the encryption completes in the background.
 
 8. Copy the numerical recovery password and save it to a file in a safe location. The recovery password will be required if the password is lost or forgotten.
 
@@ -837,7 +838,7 @@ if ($Disks -eq $null)
 #We want to make sure that all non-boot connected USB drives are online, writeable and cleaned.
 #This command will erase all data from all USB drives larger than 20Gb connected to your machine
 #To automate this step you can add: -confirm:$False
-Clear-Disk –InputObject $Disks -RemoveData -erroraction SilentlyContinue
+Clear-Disk -InputObject $Disks -RemoveData -erroraction SilentlyContinue
 
 # Currently the provisioning script needs drive letters (for dism and bcdboot.exe) and the script is more
 # reliable when the main process determines all of the free drives and provides them to the sub-processes.
@@ -863,15 +864,15 @@ foreach ($disk in $Disks)
             $policyFilePath = $args[6]
 
 #For compatibility between UEFI and legacy BIOS we use MBR for the disk.
-            Initialize-Disk –InputObject $Disk -PartitionStyle MBR
+            Initialize-Disk -InputObject $Disk -PartitionStyle MBR
 
 #A short sleep between creating a new partition and formatting helps ensure the partition
 #is ready before formatting.
-            $SystemPartition = New-Partition –InputObject $Disk -Size (350MB) -IsActive
+            $SystemPartition = New-Partition -InputObject $Disk -Size (350MB) -IsActive
             Sleep 1
             Format-Volume -Partition $SystemPartition -FileSystem FAT32 -NewFileSystemLabel "UFD-System" -confirm:$False | Out-Null
 
-            $OSPartition = New-Partition –InputObject $Disk -UseMaximumSize
+            $OSPartition = New-Partition -InputObject $Disk -UseMaximumSize
             Sleep 1
             Format-Volume -NewFileSystemLabel "UFD-Windows" -FileSystem NTFS -Partition $OSPartition -confirm:$False | Out-Null
 

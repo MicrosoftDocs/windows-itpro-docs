@@ -1,14 +1,15 @@
 ---
 title: Switch to Windows 10 Pro/Enterprise from S mode
 description: Overview of Windows 10 Pro/Enterprise in S mode. S mode switch options are also outlined in this document. Switching out of S mode is optional.
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.collection: 
   - M365-modern-desktop
 ms.topic: article
+ms.date: 10/31/2022
 ---
 
 # Switch to Windows 10 Pro or Enterprise from S mode
@@ -41,7 +42,7 @@ A number of other transformations are possible depending on which version and ed
 
 Use the following information to switch to Windows 10 Pro through the Microsoft Store.
 > [!IMPORTANT]
-> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to rollback this kind of switch is through a [bare-metal recovery (BMR)](/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
+> While it's free to switch to Windows 10 Pro, it's not reversible. The only way to rollback this kind of switch is through a [bare-metal recovery (BMR)](/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
 ## Switch one device through the Microsoft Store
 Use the following information to switch to Windows 10 Pro through the Microsoft Store or by navigating to **Settings** and then **Activation** on the device.

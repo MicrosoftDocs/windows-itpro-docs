@@ -1,16 +1,17 @@
 ---
 title: Windows 10 deployment scenarios and tools
 description: Learn about the tools you can use to deploy Windows 10 and related applications to your organization. Explore deployment scenarios.
-manager: dougeby
-ms.author: aaroncz
-author: aczechowski
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
 ms.prod: windows-client
 ms.topic: article
+ms.date: 10/31/2022
 ---
 
 # Windows 10 deployment scenarios and tools
 
-To successfully deploy the Windows 10 operating system and applications for your organization, understand the available tools to help with the process. In this article, you'll learn about the most commonly used tools for Windows 10 deployment.
+To successfully deploy the Windows 10 operating system and applications for your organization, understand the available tools to help with the process. In this article, you'll learn about the most commonly used tools for Windows 10 deployment.
 
 Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). These tools aren't a complete solution on their own. Combine these tools with solutions like [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) to get a complete deployment solution.
 
@@ -105,7 +106,7 @@ For more information, see [Windows System Image Manager Technical Reference]( ht
 
 ### Volume Activation Management Tool (VAMT)
 
-If you don’t use KMS, manage your MAKs centrally with the Volume Activation Management Tool (VAMT). Use this tool to install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without internet access, acting as a MAK proxy.
+If you don't use KMS, manage your MAKs centrally with the Volume Activation Management Tool (VAMT). Use this tool to install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without internet access, acting as a MAK proxy.
 
 ![The updated Volume Activation Management Tool.](images/mdt-11-fig08.png)
 
