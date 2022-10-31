@@ -47,3 +47,10 @@ There are URLs from several Microsoft products that must be in the allowed list 
 | Microsoft Edge | [Allowlist for Microsoft Edge Endpoints](/deployedge/microsoft-edge-security-endpoints) |
 | Microsoft Teams | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) |
 | Windows Update for Business (WUfB) | [Windows Update for Business firewall and proxy requirements](https://support.microsoft.com/help/3084568/can-t-download-updates-from-windows-update-from-behind-a-firewall-or-p)
+
+### Delivery Optimization
+
+Delivery Optimization is a peer-to-peer distribution technology available in Windows 11 and Windows 10 that allows devices to share content, such as updates, that the devices have downloaded from Microsoft over the internet. This can help reduce network bandwidth because a device can get portions of the update from another device on its local network instead of having to download the update completely from Microsoft.
+
+Windows Autopatch supports and recommends the configuration and validation of Delivery Optimization along with your adoption of the service. 
+[What is Delivery Optimization?](https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization)
