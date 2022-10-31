@@ -5,13 +5,13 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: highpri
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Deploy Windows Enterprise licenses

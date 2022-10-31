@@ -5,8 +5,8 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: tutorial
 ms.date: 05/12/2022

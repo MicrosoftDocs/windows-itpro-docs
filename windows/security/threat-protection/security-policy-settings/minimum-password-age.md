@@ -5,14 +5,14 @@ ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 11/13/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Minimum password age

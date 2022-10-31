@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Hello for Business Policy settings - key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,11 +10,11 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>On-premises deployment</b>
+  - ✅ <b>Key trust</b>
 ---
 # Configure Windows Hello for Business Policy settings - Key Trust
 

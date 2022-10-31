@@ -1,16 +1,18 @@
 ---
 title: Security baselines guide
 description: Learn how to use security baselines in your organization.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 01/26/2022
 ms.reviewer: jmunck
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Security baselines

@@ -94,6 +94,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 | `Oddvar Moe` | `@Oddvarmoe` |
 | `Philip Tsukerman` | `@PhilipTsukerman` |
 | `Vladas Bulavas` | `Kaspersky Lab` |
+| `Will Dormann` | `@wdormann` |
 | `William Easton` | `@Strawgate` |
 
 > [!NOTE]

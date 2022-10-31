@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, management, and sec
 ms.assetid: 94c76f45-057c-4d80-8d01-033cf28ef2f7
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/10/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Accounts: Block Microsoft accounts

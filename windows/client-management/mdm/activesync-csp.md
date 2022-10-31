@@ -1,12 +1,12 @@
 ---
 title: ActiveSync CSP
 description: Learn how the ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---

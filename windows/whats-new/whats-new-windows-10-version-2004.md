@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows 10, version 2004
 description: New and updated features in Windows 10, version 2004 (also known as the Windows 10 May 2020 Update).
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby

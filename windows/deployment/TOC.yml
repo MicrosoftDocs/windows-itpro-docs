@@ -299,6 +299,8 @@
                   href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
                   href: ./update/how-windows-update-works.md
+                - name: Windows Update security
+                  href: ./update/windows-update-security.md                  
                 - name: Common Windows Update errors
                   href: /troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
                 - name: Windows Update error code reference

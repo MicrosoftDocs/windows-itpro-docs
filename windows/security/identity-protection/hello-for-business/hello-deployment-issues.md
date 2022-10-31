@@ -2,7 +2,7 @@
 title: Windows Hello for Business Deployment Known Issues
 description: A Troubleshooting Guide for Known Windows Hello for Business Deployment Issues
 params: siblings_only
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
