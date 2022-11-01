@@ -137,7 +137,7 @@ Before you can remotely reset PINs, you must register two applications in your A
 
 Before you can remotely reset PINs, your devices must be configured to enable PIN Recovery. Follow the instructions below to configure your devices using either Microsoft Intune, Group Policy Objects (GPO), or Configuration Service Providers (CSP).
 
-#### [✅ **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using Microsoft Intune.
 
@@ -166,7 +166,7 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 > 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
 > 1. Select **Endpoint security** > **Account protection** > **Create Policy**.
 
-#### [✅ **GPO**](#tab/gpo)
+#### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using a Group Policy Object (GPO).
 
@@ -175,7 +175,7 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 1. Enable the **Use PIN Recovery** policy setting located under **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**.
 1. Close the Group Policy Management Editor to save the Group Policy object.
 
-#### [✅ **CSP**](#tab/csp)
+#### [:::image type="icon" source="../../images/icons/windows-os.svg"::: **CSP**](#tab/CSP)
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using the [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp).
 
