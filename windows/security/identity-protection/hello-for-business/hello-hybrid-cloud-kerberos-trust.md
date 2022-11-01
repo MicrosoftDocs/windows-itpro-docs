@@ -54,7 +54,7 @@ For more details how Azure AD Kerberos enables access to on-premises resources, 
 For more information how Azure AD Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-kerberos-trust).
 
 > [!IMPORTANT]
-> When implementing the *hybrid cloud Kerberos trust* deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1]
+> When implementing the *hybrid cloud Kerberos trust* deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
 
 ## Prerequisites
 
@@ -78,7 +78,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 > [!NOTE]
 > The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
 >
-> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object `CN=AzureADKerberos,OU=Domain Controllers,\<domain-DN\>`.
+> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
 
 ## Deployment steps
 
@@ -174,9 +174,6 @@ You can configure Windows devices to enable *Windows Hello for Business cloud Ke
 1. Select **Use cloud Kerberos trust for on-premises authentication** > **Enable** > **OK**
 1. *Optional, but recommended*: select **Use a hardware security device** > **Enable** > **OK**
 
-> [!IMPORTANT]
-> If the Use certificate for on-premises authentication policy is enabled, we will enforce certificate trust instead of cloud Kerberos trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud Kerberos trust have this policy not configured or disabled.
-
 ---
 
 > [!IMPORTANT]
@@ -186,7 +183,8 @@ You can configure Windows devices to enable *Windows Hello for Business cloud Ke
 
 The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed. Windows Hello for Business *cloud Kerberos trust* adds a prerequisite check for Hybrid Azure AD-joined devices when cloud Kerberos trust is enabled by policy.
 
-You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs\Microsoft\Windows**. This information is also available using the [**dsregcmd /status**][AZ-4] command from a console.  
+You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs** > **Microsoft** > **Windows**.\
+This information is also available using the [`dsregcmd /status`] command from a console. For more information, see [dsregcmd][AZ-4].
 
   ![Cloud Kerberos trust prerequisite check in the user device registration log](./images/cloud-trust-prereq-check.png)
 
