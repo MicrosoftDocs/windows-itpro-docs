@@ -33,10 +33,9 @@ Save your files to your favorite cloud, like OneDrive or Dropbox, and access the
 
 ![Switching out of S mode flow chart.](images/s-mode-flow-chart.png)
 
-
 ## Deployment
 
-Windows 10 in S mode is built for [modern management](/windows/client-management/manage-windows-10-in-your-organization-modern-management) which means using [Windows Autopilot](/mem/autopilot/windows-autopilot). Windows Autopilot lets you deploy the device directly to a user without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through mobile device management to customize the device to the user and the desired environment. Devices are shipped in S mode; you can either keep them in S mode or use Windows Autopilot to switch the device out of S mode during the first run process or later using mobile device management, if desired.
+Windows 10 in S mode is built for [modern management](/windows/client-management/manage-windows-10-in-your-organization-modern-management), which means using [Windows Autopilot](/mem/autopilot/windows-autopilot). Windows Autopilot lets you deploy the device directly to a user without IT having to touch the physical device. Instead of manually deploying a custom image, Windows Autopilot will start with a generic PC that can only be used to join the company domain; policies are then deployed automatically through mobile device management to customize the device to the user and the desired environment. Devices are shipped in S mode; you can either keep them in S mode or use Windows Autopilot to switch the device out of S mode during the first run process or later using mobile device management, if desired.
 
 ## Keep line of business apps functioning with Desktop Bridge
 
@@ -44,8 +43,7 @@ Worried about your line of business apps not working in S mode? [Desktop Bridge]
 
 ## Repackage Win32 apps into the MSIX format
 
-The [MSIX Packaging Tool](/windows/application-management/msix-app-packaging-tool), available from the Microsoft Store, enables you to repackage existing Win32 applications to the MSIX format. You can run your desktop installers through this tool interactively and obtain an MSIX package that you can install on your device and upload to the Microsoft Store. This is another way to get your apps ready to run on Windows 10 in S mode.
-
+The [MSIX Packaging Tool](/windows/application-management/msix-app-packaging-tool), available from the Microsoft Store, enables you to repackage existing Win32 applications to the MSIX format. You can run your desktop installers through the MSIX Packaging Tool interactively and obtain an MSIX package that you can install on your device and upload to the Microsoft Store. The MSIX Packaging Tool is another way to get your apps ready to run on Windows 10 in S mode.
 
 ## Related links
 

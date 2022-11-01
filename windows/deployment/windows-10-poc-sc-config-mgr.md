@@ -751,7 +751,7 @@ If you've already completed steps in [Deploy Windows 10 in a test lab using Micr
 
 3. On the Deployment Settings page, use the following settings:
     - Purpose: **Available**
-    - Make available to the following: **Only media and PXE**
+    - Make available to the following clients: **Only media and PXE**
     - Select **Next**.
 4. Select **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
 
@@ -961,7 +961,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 5. Use the following settings in the Deploy Software wizard:
     - General > Collection: Select Browse and select **Install Windows 10 Enterprise x64**
     - Deployment Settings > Purpose: **Available**
-    - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**
+    - Deployment Settings > Make available to the following clients: **Configuration Manager clients, media and PXE**
     - Scheduling > select **Next**
     - User Experience > select **Next**
     - Alerts > select **Next**
@@ -1021,7 +1021,7 @@ In the Configuration Manager console, in the **Software Library** workspace, und
 
 - General > Collection: **USMT Backup (Replace)**
 - Deployment Settings > Purpose: **Available**
-- Deployment Settings > Make available to the following: **Only Configuration Manager Clients**
+- Deployment Settings > Make available to the following clients: **Only Configuration Manager Clients**
 - Scheduling: Select **Next**
 - User Experience: Select **Next**
 - Alerts: Select **Next**

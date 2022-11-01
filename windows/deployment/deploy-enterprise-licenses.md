@@ -228,7 +228,7 @@ Figure 11 illustrates a device on which the Windows 10 Pro is activated, but the
 
 Figure 11: Windows 10 Enterprise subscription lapsed or removed in Settings.
 
-It displays the following error: "Windows 10 Enterprise subscription is not valid."
+It displays the following error: "Windows 10 Enterprise subscription isn't valid."
 
 #### Device that's not activated and without an Enterprise subscription
 
@@ -288,7 +288,7 @@ If a device isn't able to connect to Windows Update, it can lose activation stat
 
 - Make sure that the device doesn't have the following registry value: `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations = 1 (REG_DWORD)`. If this registry value exists, it must be set to `0`.
 
-- Make sure that the following group policy setting is **disabled**: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not connect to any Windows Update Internet locations.
+- Make sure that the following group policy setting is **disabled**: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Don't connect to any Windows Update Internet locations.
 
 ## Virtual Desktop Access (VDA)
 

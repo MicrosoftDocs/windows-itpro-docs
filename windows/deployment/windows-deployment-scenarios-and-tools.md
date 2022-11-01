@@ -19,7 +19,6 @@ In this article, you also learn about different types of reference images that y
 
 ## Windows Assessment and Deployment Kit
 
-
 Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more information, see [Windows ADK for Windows 10](/windows-hardware/get-started/adk-install) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
 ![The Windows 10 ADK feature selection page.](images/win-10-adk-select.png)
@@ -74,7 +73,53 @@ USMT supports capturing data and settings from Windows Vista and later, and rest
 By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows 10 deployments are MigUser.xml and MigApp.xml. These two default templates migrate the following data and settings:
 
 -   Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
--   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
+- Specific file types.
+    <details>
+        <summary>USMT templates migrate the following file types:</summary>
+
+     - `.accdb`
+     - `.ch3`
+     - `.csv`
+     - `.dif`
+     - `.doc*`
+     - `.dot*`
+     - `.dqy`
+     - `.iqy`
+     - `.mcw`
+     - `.mdb*`
+     - `.mpp`
+     - `.one*`
+     - `.oqy`
+     - `.or6`
+     - `.pot*`
+     - `.ppa`
+     - `.pps*`
+     - `.ppt*`
+     - `.pre`
+     - `.pst`
+     - `.pub`
+     - `.qdf`
+     - `.qel`
+     - `.qph`
+     - `.qsd`
+     - `.rqy`
+     - `.rtf`
+     - `.scd`
+     - `.sh3`
+     - `.slk`
+     - `.txt`
+     - `.vl*`
+     - `.vsd`
+     - `.wk*`
+     - `.wpd`
+     - `.wps`
+     - `.wq1`
+     - `.wri`
+     - `.xl*`
+     - `.xla`
+     - `.xlb`
+     - `.xls*`
+    </details>
 
     > [!NOTE]
     > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
@@ -134,7 +179,6 @@ For more information on Windows PE, see [Windows PE (WinPE)](/windows-hardware/m
 
 ## <a href="" id="sec07"></a>Windows Recovery Environment
 
-
 Windows Recovery Environment (Windows RE) is a diagnostics and recovery toolset included in Windows Vista and later operating systems. The latest version of Windows RE is based on Windows PE. You can also extend Windows RE and add your own tools if needed. If a Windows installation fails to start and Windows RE is installed, you'll see an automatic failover into Windows RE.
 
 ![A Windows 10 client booted into Windows RE, showing Advanced options.](images/mdt-11-fig10.png)
@@ -144,7 +188,6 @@ A Windows 10 client booted into Windows RE, showing Advanced options.
 For more information on Windows RE, see [Windows Recovery Environment](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
 
 ## Windows Deployment Services
-
 
 Windows Deployment Services (WDS) has been updated and improved in several ways starting with Windows 8. Remember that the two main functions you'll use are the PXE boot support and multicast. Most of the changes are related to management and increased performance. In Windows Server 2012 R2, WDS also can be used for the Network Unlock feature in BitLocker.
 
@@ -178,8 +221,6 @@ MDT has two main parts: the first is Lite Touch, which is a stand-alone deployme
 **Note**  
 Lite Touch and Zero Touch are marketing names for the two solutions that MDT supports, and the naming has nothing to do with automation. You can fully automate the stand-alone MDT solution (Lite Touch), and you can configure the solution integration with Configuration Manager to prompt for information.
 
- 
-
 ![The Deployment Workbench in, showing a task sequence.](images/mdt-11-fig13.png)
 
 The Deployment Workbench in, showing a task sequence.
@@ -188,7 +229,6 @@ For more information on MDT, see the [Microsoft Deployment Toolkit](/mem/configm
 
 ## Microsoft Security Compliance Manager 2013
 
-
 [Microsoft SCM](https://www.microsoft.com/download/details.aspx?id=53353) is a free utility used to create baseline security settings for the Windows client and server environment. The baselines can be exported and then deployed via Group Policy, local policies, MDT, or Configuration Manager. The current version of Security Compliance Manager includes baselines for Windows 8.1 and several earlier versions of Windows, Windows Server, and Internet Explorer.
 
 ![The SCM console showing a baseline configuration for a fictional client's computer security compliance.](images/mdt-11-fig14.png)
@@ -196,7 +236,6 @@ For more information on MDT, see the [Microsoft Deployment Toolkit](/mem/configm
 The SCM console showing a baseline configuration for a fictional client's computer security compliance.
 
 ## Microsoft Desktop Optimization Pack
-
 
 MDOP is a suite of technologies available to Software Assurance customers through another subscription.
 
@@ -208,7 +247,7 @@ The following components are included in the MDOP suite:
 
 -   **Microsoft Advanced Group Policy Management (AGPM).** AGPM enables advanced management of Group Policy objects by providing change control, offline editing, and role-based delegation.
 -   **Microsoft Diagnostics and Recovery Toolset (DaRT).** DaRT provides additional tools that extend Windows RE to help you troubleshoot and repair your machines.
--   **Microsoft BitLocker Administration and Monitoring (MBAM).** MBAM is an administrator interface used to manage BitLocker drive encryption. It allows you to configure your enterprise with the correct BitLocker encryption policy options, as well as monitor compliance with these policies.
+-   **Microsoft BitLocker Administration and Monitoring (MBAM).** MBAM is an administrator interface used to manage BitLocker drive encryption. It allows you to configure your enterprise with the correct BitLocker encryption policy options, and monitor compliance with these policies.
 
 For more information on the benefits of an MDOP subscription, see [Microsoft Desktop Optimization Pack](/microsoft-desktop-optimization-pack/).
 
@@ -223,7 +262,6 @@ The User Experience selection screen in IEAK 11.
 To download IEAK 11, see the [Internet Explorer Administration Kit (IEAK) Information and Downloads](/internet-explorer/ie11-ieak/ieak-information-and-downloads) page.
 
 ## Windows Server Update Services
-
 
 WSUS is a server role in Windows Server 2012 R2 that enables you to maintain a local repository of Microsoft updates and then distribute them to machines on your network. WSUS offers approval control and reporting of update status in your environment.
 

@@ -18,7 +18,7 @@ ms.date: 10/31/2022
 
 -   Windows 10
 
-This topic describes the correct way to add Microsoft Store for Business applications to a Windows 10 image. This will enable you to deploy Windows 10 with pre-installed Microsoft Store for Business apps.
+This article describes the correct way to add Microsoft Store for Business applications to a Windows 10 image. Adding Microsoft Store for Business applications to a Windows 10 image will enable you to deploy Windows 10 with pre-installed Microsoft Store for Business apps.
 
 >[!IMPORTANT]
 >In order for Microsoft Store for Business applications to persist after image deployment, these applications need to be pinned to Start prior to image deployment.
@@ -67,10 +67,9 @@ Now, on the machine where your image file is accessible:
 >[!NOTE]
 >Paths and file names are examples. Use your paths and file names where appropriate.
 >
->For more information on Start customization see [Windows 10 Start Layout Customization](/archive/blogs/deploymentguys/windows-10-start-layout-customization)
+>For more information on Start customization, see [Windows 10 Start Layout Customization](/archive/blogs/deploymentguys/windows-10-start-layout-customization)
 
-
-## Related topics
+## Related articles
 * [Customize and export Start layout](/windows/configuration/customize-and-export-start-layout)
 * [Export-StartLayout](/powershell/module/startlayout/export-startlayout)
 * [Import-StartLayout](/powershell/module/startlayout/import-startlayout)

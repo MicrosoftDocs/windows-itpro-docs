@@ -18,9 +18,9 @@ ms.date: 10/31/2022
 - Windows 10
 - Windows 11
 
-## In this topic
+## In this article
 
-This topic provides an overview of new solutions and online content related to deploying Windows client in your organization.
+This article provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
 
@@ -134,7 +134,7 @@ An in-place upgrade wizard is available in Configuration Manager. For more infor
 
 Windows 10 Education support has been added to Windows 10 Subscription Activation.
 
-With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions - Windows 10 Education. For more information, see [Windows 10 Subscription Activation](./windows-10-subscription-activation.md).
+With Windows 10, version 1903, you can step up from Windows 10 Pro Education to the enterprise-grade edition for educational institutions - Windows 10 Education. For more information, see [Windows 10 Subscription Activation](./windows-10-subscription-activation.md).
 
 ### SetupDiag
 
@@ -152,11 +152,10 @@ Upgrade Readiness helps you ensure that applications and drivers are ready for a
 
 The development of Upgrade Readiness has been heavily influenced by input from the community; the development of new features is ongoing. To begin using Upgrade Readiness, add it to an existing Operation Management Suite (OMS) workspace or sign up for a new OMS workspace with the Upgrade Readiness solution enabled.
 
-For more information about Upgrade Readiness, see the following topics:
+For more information about Upgrade Readiness, see the following articles:
 
 - [Windows Analytics blog](https://aka.ms/blog/WindowsAnalytics/)
 - [Manage Windows upgrades with Upgrade Readiness](/mem/configmgr/desktop-analytics/overview)
-
 
 ### Update Compliance
 
@@ -208,9 +207,9 @@ For more information, see the following guides:
 
 ## Troubleshooting guidance
 
-[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) was published in October of 2016 and will continue to be updated with new fixes. The topic provides a detailed explanation of the Windows 10 upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
+[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) was published in October of 2016 and will continue to be updated with new fixes. The article provides a detailed explanation of the Windows 10 upgrade process and instructions on how to locate, interpret, and resolve specific errors that can be encountered during the upgrade process.
 
-## Related topics
+## Related articles
 
 [Overview of Windows as a service](update/waas-overview.md)<br>
 [Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md)<br>

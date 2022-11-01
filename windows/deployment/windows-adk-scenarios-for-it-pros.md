@@ -12,7 +12,6 @@ ms.topic: article
 
 # Windows ADK for Windows 10 scenarios for IT Pros
 
-
 The [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. For an overview of what's new in the Windows ADK for Windows 10, see [What's new in kits and tools](/windows-hardware/get-started/what-s-new-in-kits-and-tools).
 
 In previous releases of Windows, the Windows ADK docs were published on both TechNet and the MSDN Hardware Dev Center. Starting with the Windows 10 release, Windows ADK documentation is available on the MSDN Hardware Dev Center. For the Windows 10 ADK reference content, see [Desktop manufacturing](/windows-hardware/manufacture/desktop/).
@@ -41,7 +40,7 @@ Here are some things you can do with Sysprep:
 -   [Customize the default user profile](/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
 -   [Use answer files](/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep)
 
-[Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro) is a small operating system used to boot a computer that does not have an operating system. You can boot to Windows PE and then install a new operating system, recover data, or repair an existing operating system.
+[Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro) is a small operating system used to boot a computer that doesn't have an operating system. You can boot to Windows PE and then install a new operating system, recover data, or repair an existing operating system.
 
 Here are ways you can create a WinPE image:
 
@@ -81,7 +80,3 @@ There are also a few tools included in the Windows ADK that are specific to IT P
 
 -   [Volume Activation Management Tool (VAMT) Technical Reference](volume-activation/volume-activation-management-tool.md)
 -   [User State Migration Tool (USMT) Technical Reference](usmt/usmt-technical-reference.md)
-
- 
-
- 

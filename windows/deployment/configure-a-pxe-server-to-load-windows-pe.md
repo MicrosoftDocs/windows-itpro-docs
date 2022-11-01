@@ -1,6 +1,6 @@
 ---
 title: Configure a PXE server to load Windows PE (Windows 10)
-description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
+description: This article describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
@@ -30,9 +30,9 @@ All four of the roles specified above can be hosted on the same computer or each
 
 ## Step 1: Copy Windows PE source files
 
-1. On the deployment computer, click **Start**, and type **deployment**.
+1. On the deployment computer, select **Start**, and type **deployment**.
 
-2. Right-click **Deployment and Imaging Tools Environment** and then click **Run as administrator**. The Deployment and Imaging Tools Environment shortcut opens a Command Prompt window and automatically sets environment variables to point to all the necessary tools.
+2. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**. The Deployment and Imaging Tools Environment shortcut opens a Command Prompt window and automatically sets environment variables to point to all the necessary tools.
 
 3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. The value of **&lt;architecture&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory doesn't already exist, it will be created.
 
@@ -180,7 +180,6 @@ The following process summarizes the PXE client boot.
 8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. With the help of these tools accompanied by a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
 
 ## See Also 
-
 
 ### Concepts
 

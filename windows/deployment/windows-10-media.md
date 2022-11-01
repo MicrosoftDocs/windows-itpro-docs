@@ -13,12 +13,11 @@ ms.topic: article
 
 # Windows 10 volume license media
 
-
 **Applies to**
 
 -   Windows 10
 
-With each release of Windows 10, volume license media is made available on the [Volume Licensing Service Center](https://www.microsoft.com/vlsc) (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. This topic provides a description of volume license media, and describes some of the changes that have been implemented with the current release of Windows 10.
+With each release of Windows 10, volume license media is made available on the [Volume Licensing Service Center](https://www.microsoft.com/vlsc) (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. This article provides a description of volume license media, and describes some of the changes that have been implemented with the current release of Windows 10.
 
 ## Windows 10 media
 
@@ -41,16 +40,10 @@ Instead of having separate media and packages for Windows 10 Pro (volume licensi
 
 Features on demand is a method for adding features to your Windows 10 image that aren't included in the base operating system image.
 
-
-## Related topics
+## Related articles
 
 [Microsoft Volume Licensing Service Center (VLSC) User Guide](https://www.microsoft.com/download/details.aspx?id=10585)
 <br>[Volume Activation for Windows 10](./volume-activation/volume-activation-windows-10.md)
 <br>[Plan for volume activation](./volume-activation/plan-for-volume-activation-client.md)
 <br>[VLSC downloads FAQ](https://www.microsoft.com/Licensing/servicecenter/Help/FAQDetails.aspx?id=150)
 <br>[Download and burn an ISO file on the volume licensing site (VLSC)](/troubleshoot/windows-client/deployment/iso-file-on-vlsc)
-
-
- 
-
- 
