@@ -18,8 +18,6 @@ ms.date: 10/31/2022
 - Windows 10
 - Windows 11
 
-## In this article
-
 This article provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
