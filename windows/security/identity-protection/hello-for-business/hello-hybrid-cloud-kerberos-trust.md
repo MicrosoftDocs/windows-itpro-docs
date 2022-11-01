@@ -78,7 +78,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 > [!NOTE]
 > The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
 >
-> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object (CN=AzureADKerberos,OU=Domain Controllers,\<domain-DN\>).
+> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object `CN=AzureADKerberos,OU=Domain Controllers,\<domain-DN\>`.
 
 ## Deployment steps
 
@@ -282,8 +282,8 @@ No, only the number necessary to handle the load from all cloud Kerberos trust d
 [SERV-1]: /windows-server/administration/performance-tuning/role/active-directory-server/capacity-planning-for-active-directory-domain-services
 [TS-1]: /troubleshoot/windows-client/group-policy/create-and-manage-central-store
 
-[MEM-1]: /mem/intune/protect/identity-protection-windows-settings)
+[MEM-1]: /mem/intune/protect/identity-protection-windows-settings
 [WIN-1]: /windows/client-management/mdm/passportforwork-csp
 [WIN-2]: /windows/security/identity-protection/remote-credential-guard
-[SUP-1]: <https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e>
-[SUP-2]: <https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f>
+[SUP-1]: https://support.microsoft.com/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e
+[SUP-2]: https://support.microsoft.com/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f
