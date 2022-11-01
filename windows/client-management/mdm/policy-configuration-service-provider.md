@@ -19,6 +19,34 @@ ms.topic: article
 
 <!-- Policy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The Policy configuration service provider enables the enterprise to configure policies on Windows 10 and Windows 11. Use this configuration service provider to configure any company policies.
+
+The Policy configuration service provider has the following sub-categories:
+
+- Policy/Config/**AreaName** - Handles the policy configuration request from the server.
+- Policy/Result/**AreaName** - Provides a read-only path to policies enforced on the device.
+
+<a href="" id="policy-scope"></a>
+
+> [!IMPORTANT]
+> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user.
+>
+> The allowed scope of a specific policy is represented below its table of supported Windows editions. To configure a policy under a specific scope (user vs. device), please use the following paths:
+>
+> User scope:
+>
+> - **./User/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> - **./User/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+>
+> Device scope:
+>
+> - **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> - **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+>
+> For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent to the paths provided above:
+>
+> - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> - **./Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 <!-- Policy-Editable-End -->
 
 <!-- Policy-Tree-Begin -->
@@ -149,6 +177,14 @@ Specifies the name/value pair used in the policy.  See the individual Area DDFs 
 
 <!-- Device-Config-{AreaName}-{PolicyName}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The following list shows some tips to help you when configuring policies:
+
+- Separate substring values by Unicode `0xF000` in the XML file.
+    > [!NOTE]
+    > A query from a different caller could provide a different value as each caller could have different values for a named policy.
+- In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
+- Supported operations are Add, Get, Delete, and Replace.
+- Value type is string.
 <!-- Device-Config-{AreaName}-{PolicyName}-Editable-End -->
 
 <!-- Device-Config-{AreaName}-{PolicyName}-DFProperties-Begin -->
@@ -226,6 +262,10 @@ Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported 
 
 <!-- Device-ConfigOperations-ADMXInstall-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+ For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](../win32-and-centennial-app-policy-configuration.md).
+
+> [!NOTE]
+> The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)).
 <!-- Device-ConfigOperations-ADMXInstall-Editable-End -->
 
 <!-- Device-ConfigOperations-ADMXInstall-DFProperties-Begin -->
@@ -689,6 +729,14 @@ The area group that can be configured by a single technology for a single provid
 
 <!-- User-Config-{AreaName}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The following list shows some tips to help you when configuring policies:
+
+- Separate substring values by Unicode `0xF000` in the XML file.
+    > [!NOTE]
+    > A query from a different caller could provide a different value as each caller could have different values for a named policy.
+- In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
+- Supported operations are Add, Get, Delete, and Replace.
+- Value type is string.
 <!-- User-Config-{AreaName}-Editable-End -->
 
 <!-- User-Config-{AreaName}-DFProperties-Begin -->
@@ -862,7 +910,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 
 <!-- User-Result-{AreaName}-{PolicyName}-End -->
 
-## Policy CSPs
+## Policy Areas
 
 - [AboveLock](policy-csp-abovelock.md)
 - [Accounts](policy-csp-accounts.md)

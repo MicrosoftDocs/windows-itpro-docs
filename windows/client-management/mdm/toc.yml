@@ -252,6 +252,8 @@ items:
           href: policy-csp-admx-removablestorage.md
         - name: ADMX_RPC
           href: policy-csp-admx-rpc.md
+        - name: ADMX_sam
+          href: policy-csp-admx-sam.md
         - name: ADMX_Scripts
           href: policy-csp-admx-scripts.md
         - name: ADMX_sdiageng
@@ -364,6 +366,8 @@ items:
           href: policy-csp-camera.md
         - name: Cellular
           href: policy-csp-cellular.md
+        - name: CloudPC
+          href: policy-csp-cloudpc.md
         - name: Connectivity
           href: policy-csp-connectivity.md
         - name: ControlPolicyConflict
@@ -500,6 +504,8 @@ items:
           href: policy-csp-speech.md
         - name: Start
           href: policy-csp-start.md
+        - name: Stickers
+          href: policy-csp-stickers.md
         - name: Storage
           href: policy-csp-storage.md
         - name: System
@@ -510,6 +516,8 @@ items:
           href: policy-csp-taskmanager.md
         - name: TaskScheduler
           href: policy-csp-taskscheduler.md
+        - name: TenantDefinedTelemetry
+          href: policy-csp-tenantdefinedtelemetry.md
         - name: TenantRestrictions
           href: policy-csp-tenantrestrictions.md
         - name: TextInput
