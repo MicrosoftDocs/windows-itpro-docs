@@ -210,6 +210,8 @@ items:
           href: policy-csp-admx-msi.md
         - name: ADMX_MsiFileRecovery
           href: policy-csp-admx-msifilerecovery.md
+        - name: ADMX_MSS-legacy
+          href: policy-csp-admx-mss-legacy.md
         - name: ADMX_nca
           href: policy-csp-admx-nca.md
         - name: ADMX_NCSI
@@ -240,6 +242,8 @@ items:
           href: policy-csp-admx-printing2.md
         - name: ADMX_Programs
           href: policy-csp-admx-programs.md
+        - name: ADMX_QOS
+          href: policy-csp-admx-qos.md
         - name: ADMX_Reliability
           href: policy-csp-admx-reliability.md
         - name: ADMX_RemoteAssistance
@@ -278,6 +282,8 @@ items:
           href: policy-csp-admx-startmenu.md
         - name: ADMX_SystemRestore
           href: policy-csp-admx-systemrestore.md
+        - name: ADMX_TabletPCInputPanel
+          href: policy-csp-admx-tabletpcinputpanel.md
         - name: ADMX_TabletShell
           href: policy-csp-admx-tabletshell.md
         - name: ADMX_Taskbar
@@ -488,6 +494,8 @@ items:
           href: policy-csp-servicecontrolmanager.md
         - name: Settings
           href: policy-csp-settings.md
+        - name: SettingsSync
+          href: policy-csp-settingssync.md
         - name: Speech
           href: policy-csp-speech.md
         - name: Start
@@ -502,6 +510,8 @@ items:
           href: policy-csp-taskmanager.md
         - name: TaskScheduler
           href: policy-csp-taskscheduler.md
+        - name: TenantRestrictions
+          href: policy-csp-tenantrestrictions.md
         - name: TextInput
           href: policy-csp-textinput.md
         - name: TimeLanguageSettings

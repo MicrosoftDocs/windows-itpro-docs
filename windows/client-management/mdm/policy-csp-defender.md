@@ -898,7 +898,7 @@ You can configure ASR rules in the Configure Attack Surface Reduction rules GP s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- AttackSurfaceReductionOnlyExclusions-DFProperties-End -->
@@ -988,7 +988,7 @@ You can exclude folders or files in the ""Exclude files and paths from Attack Su
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AttackSurfaceReductionRules-DFProperties-End -->
 
@@ -1305,7 +1305,7 @@ Default system folders are automatically guarded, but you can add folders in the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ControlledFolderAccessAllowedApplications-DFProperties-End -->
@@ -1377,7 +1377,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ControlledFolderAccessProtectedFolders-DFProperties-End -->
@@ -1874,7 +1874,7 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedExtensions-DFProperties-End -->
@@ -1928,7 +1928,7 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedPaths-DFProperties-End -->
@@ -1982,7 +1982,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- ExcludedProcesses-DFProperties-End -->
@@ -2461,7 +2461,7 @@ If you disable or do not configure this setting, security intelligence will be r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SecurityIntelligenceLocation-DFProperties-End -->
 
@@ -2519,7 +2519,7 @@ If you disable or do not configure this setting, security intelligence update so
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- SignatureUpdateFallbackOrder-DFProperties-End -->
@@ -2576,7 +2576,7 @@ If you disable or do not configure this setting, the list will remain empty by d
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `|`) |
 <!-- SignatureUpdateFileSharesSources-DFProperties-End -->
@@ -2759,7 +2759,7 @@ Allows an administrator to specify any valid threat severity levels and the corr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr |
+| Format | chr (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ThreatSeverityDefaultAction-DFProperties-End -->
 

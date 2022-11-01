@@ -497,7 +497,7 @@ Supported operation is Get.
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-A Quick scan is overdue when a scheduled Quick scan didn't complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
+A Quick scan is overdue when a scheduled Quick scan didn't complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#disablecatchupquickscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -506,7 +506,7 @@ Supported operation is Get.
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-A Full scan is overdue when a scheduled Full scan didn't complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
+A Full scan is overdue when a scheduled Full scan didn't complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#disablecatchupfullscan) are disabled (default).
 
 The data type is a Boolean.
 
