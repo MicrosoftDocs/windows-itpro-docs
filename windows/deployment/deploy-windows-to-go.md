@@ -24,13 +24,13 @@ This article helps you to deploy Windows To Go in your organization. Before you 
 
 ## Deployment tips
 
-The below list are items that you should be aware of before you start the deployment process:
+The below list is items that you should be aware of before you start the deployment process:
 
 * Only use recommended USB drives for Windows To Go. Use of other drives isn't supported. Check the list at [Windows To Go: feature overview](planning/windows-to-go-overview.md) for the latest USB drives certified for use as Windows To Go drives.
 
 * After you provision a new workspace, always eject a Windows To Go drive using the **Safely Remove Hardware and Eject Media** control that can be found in the notification area or in Windows Explorer. Removing the drive from the USB port without ejecting it first can cause the drive to become corrupted.
 
-* When running a Windows To Go workspace, always shutdown the workspace before unplugging the drive.
+* When running a Windows To Go workspace, always shut down the workspace before unplugging the drive.
 
 * Configuration Manager SP1 and later includes support for user self-provisioning of Windows To Go drives. For more information on this deployment option, see [How to Provision Windows To Go in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj651035(v=technet.10)).
 
