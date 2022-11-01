@@ -155,11 +155,11 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 cloud Kerberos trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP][WIN-1]. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune][MEM-1] and [PassportForWork CSP][WIN-1]. For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources).
 
 #### Update administrative templates
 
-You may need to update your Group Policy definitions to be able to configure the cloud Kerberos trust policy. You can copy the ADMX and ADML files from a **Windows 10 21H2** or **Windows 11** device that supports cloud Kerberos trust to their respective language folder on your Group Policy management server. Windows Hello for Business settings are in the *Passport.admx* and *Passport.adml* files.
+You may need to update your Group Policy definitions to be able to configure the cloud Kerberos trust policy. You can copy the ADMX and ADML files from a Windows client that supports cloud Kerberos trust to their respective language folder on your Group Policy management server. Windows Hello for Business settings are in the *Passport.admx* and *Passport.adml* files.
 
 You can also create a Group Policy Central Store and copy them their respective language folder. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows][TS-1].
 
@@ -184,7 +184,7 @@ You can configure Windows devices to enable *Windows Hello for Business cloud Ke
 The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed. Windows Hello for Business *cloud Kerberos trust* adds a prerequisite check for Hybrid Azure AD-joined devices when cloud Kerberos trust is enabled by policy.
 
 You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs** > **Microsoft** > **Windows**.\
-This information is also available using the [`dsregcmd /status`] command from a console. For more information, see [dsregcmd][AZ-4].
+This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
   ![Cloud Kerberos trust prerequisite check in the user device registration log](./images/cloud-trust-prereq-check.png)
 
@@ -218,7 +218,7 @@ If you deployed Windows Hello for Business using the *key trust* deployment mode
 > [!NOTE]
 > For hybrid Azure AD joined devices, users must perform the first sign in with new credentials while having line of sight to a DC.
 >
-> Without line of sight to a DC, even when the policy is set to "UseCloudTrustForOnPremAuth", the system will fall back to key trust if cloud Kerberos trust login fails.
+> Without line of sight to a DC, even when the client is configured to use *cloud Kerberos trust*, the system will fall back to *key trust* if *cloud Kerberos trust* login fails.
 
 ## Migrate from certificate trust deployment model to cloud Kerberos trust
 
