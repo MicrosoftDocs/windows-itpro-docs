@@ -1,7 +1,7 @@
 ---
 title: Changes made at tenant enrollment
 description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
-ms.date: 08/08/2022
+ms.date: 11/02/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -17,9 +17,22 @@ msreviewer: hathind
 The following configuration details are provided as information to help you understand the changes made to your tenant when enrolling into the Windows Autopatch service.
 
 > [!IMPORTANT]
-> The service manages and maintains the following configuration items. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service.  
+> The service manages and maintains the following configuration items. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service.
 
-## Service principal
+## Windows Autopatch enterprise applications
+
+Enterprise applications are applications (software) that a business uses to do its work.
+
+Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
+
+| Enterprise application name | Usage | Permissions |
+| ----- | ------ | ----- |
+| Modern Workplace Management | This enterprise application is a limited first party enterprise application with elevated privileges. This application is used to manage the service, publish baseline configuration updates, and maintain overall service health. | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.Read.Write.All</li></ul> |
+
+> [!NOTE]
+> Enterprise application authentication is only available on tenants enrolled after July 9th, 2022. For tenants enrolled before this date, Enterprise Application authentication will be made available for enrollment soon.
+
+### Service principal
 
 Windows Autopatch will create a service principal in your tenant allowing the service to establish an identity and restrict access to what resources the service has access to within the tenant. For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). The service principal created by Windows Autopatch is:  
 
@@ -41,19 +54,6 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 | Modern Workplace Roles - Service Administrator | All users granted access to Modern Workplace Service Administrator Role |
 | Modern Workplace Roles - Service Reader | All users granted access to Modern Workplace Service Reader Role |
 | Windows Autopatch Device Registration | Group for automatic device registration for Windows Autopatch |
-
-## Windows Autopatch enterprise applications
-
-Enterprise applications are applications (software) that a business uses to do its work.
-
-Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
-
-| Enterprise application name | Usage | Permissions |
-| ----- | ------ | ----- |
-| Modern Workplace Management | This enterprise application is a limited first party enterprise application with elevated privileges. This application is used to manage the service, publish baseline configuration updates, and maintain overall service health. | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.Read.Write.All</li></ul> |
-
-> [!NOTE]
-> Enterprise application authentication is only available on tenants enrolled after July 9th, 2022. For tenants enrolled before this date, Enterprise Application authentication will be made available for enrollment soon.
 
 ## Device configuration policies
 
