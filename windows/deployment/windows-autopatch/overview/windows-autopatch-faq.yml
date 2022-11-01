@@ -111,6 +111,9 @@ sections:
       - question: What support is available for customers who need help with onboarding to Windows Autopatch?
         answer: |
           The FastTrack Center is the primary mode of support for customers who need assistance from Microsoft to meet the pre-requisites (such as Intune and Azure or Hybrid AD) for onboarding to Windows Autopatch. For more information, see [Microsoft FastTrack for Windows Autopatch](../operate/windows-autopatch-support-request.md#microsoft-fasttrack). When you've onboarded with Windows Autopatch, you can [submit a support request](../operate/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team.
+      - question: Does Windows Autopatch Support Dual Scan for Windows Update?
+        answer: |
+          Dual Scan for Windows has been deprecated and replaced with the [scan source policy](/windows/deployment/update/wufb-wsus). Windows Autopatch supports the scan source policy if the Feature updates, and Windows quality updates workloads are configured for Windows update. If Feature and Windows updates are configured for WSUS, it could cause disruptions to the service and your release schedules.
   - name: Other
     questions:
       - question: Are there Autopatch specific APIs or PowerShell scripts available?
