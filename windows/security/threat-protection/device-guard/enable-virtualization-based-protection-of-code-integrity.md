@@ -52,7 +52,7 @@ HVCI is labeled **Memory integrity** in the Windows Security app and it can be a
 
 ### Enable HVCI using Intune
 
-Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
+Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure the settings on Windows by using [Settings Catalog](https://learn.microsoft.com/en-us/mem/intune/configuration/settings-catalog).
 
 ### Enable HVCI using Group Policy
 
