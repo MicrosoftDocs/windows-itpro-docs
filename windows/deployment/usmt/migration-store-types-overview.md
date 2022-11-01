@@ -15,7 +15,7 @@ ms.technology: itpro-deploy
 
 When planning your migration, you should determine which migration store type best meets your needs. As part of these considerations, determine how much space is required to run the User State Migration Tool (USMT) 10.0 components on your source and destination computers. You should also determine the space needed to create and host the migration store, whether you're using a local share, network share, or storage device.
 
-## In this article
+## In this topic
 
 [Migration Store Types](#bkmk-types)
 
@@ -46,7 +46,6 @@ The following flowchart illustrates the procedural differences between a local m
 ![migration store comparison.](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
 
 ## <a href="" id="bkmk-localvremote"></a>Local Store vs. Remote Store
-
 
 If you have enough space and you're migrating the user state back to the same computer, storing data on a local device is normally the best option to reduce server storage costs and network performance issues. You can store the data locally either on a different partition or on a removable device such as a USB flash drive (UFD). Also, depending on the imaging technology that you're using, you might be able to store the data on the partition that is being re-imaged, if the data will be protected from deletion during the process. To increase performance, store the data on high-speed drives that use a high-speed network connection. It's also good practice to ensure that the migration is the only task the server is performing.
 

@@ -27,7 +27,7 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user s
 
 -   **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
 
-## In This topic
+## In this topic
 
 -   [What Will Migrate Offline?](#bkmk-whatwillmigrate)
 

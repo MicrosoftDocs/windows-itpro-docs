@@ -18,7 +18,7 @@ You use the User State Migration Tool (USMT) 10.0 when hardware and/or operatin
 
 One common scenario when only the operating system, and not the hardware, is being upgraded is referred to as *PC refresh*. A second common scenario is known as *PC replacement*, where one piece of hardware is being replaced, typically by newer hardware and a newer operating system.
 
-## In this topic
+**In this article:**
 
 
 [PC Refresh](#bkmk-pcrefresh)

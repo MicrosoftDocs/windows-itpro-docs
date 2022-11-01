@@ -16,7 +16,7 @@ ms.technology: itpro-deploy
 
 The following sections discuss common issues that you might see when you run the User State Migration Tool (USMT) 10.0 tools. USMT produces log files that describe in further detail any errors that occurred during the migration process. These logs can be used to troubleshoot migration failures.
 
-## In This Topic
+## In this topic
 
 
 [User Account Problems](#user)

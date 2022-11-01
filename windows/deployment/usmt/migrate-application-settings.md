@@ -19,7 +19,7 @@ This article defines how to author a custom migration .xml file that migrates th
 
 This article doesn't contain information about how to migrate applications that store settings in an application-specific store, only the applications that store the information in files or in the registry. It also doesn't contain information about how to migrate the data that users create using the application. For example, if the application creates .doc files using a specific template, this article doesn't discuss how to migrate the .doc files and templates themselves.
 
-## <a href="" id="createxmlmigappsettings"></a>In this article
+## In this topic
 
 -   [Before You Begin](#bkmk-beforebegin)
 
