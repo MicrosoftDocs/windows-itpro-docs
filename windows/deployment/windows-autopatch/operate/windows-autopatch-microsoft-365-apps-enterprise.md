@@ -23,7 +23,7 @@ Windows Autopatch aims to keep at least 90% of eligible devices on a [supported 
 
 ## Device eligibility
 
-For a device to be eligible for Microsoft 365 Apps for enterprise updates, as a part of Windows Autopatch, they must meet the following criteria:  
+For a device to be eligible for Microsoft 365 Apps for enterprise updates (both 32-bit and 64-bit versions), as a part of Windows Autopatch, they must meet the following criteria:  
 
 - There are no policy conflicts between Microsoft Autopatch policies and customer policies.
 - The device must have checked into the Intune service in the last five days.
