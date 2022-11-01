@@ -2,13 +2,14 @@
 title: Identify Users (Windows 10)
 description: Learn how to identify users you plan to migrate, as well as how to migrate local accounts and domain accounts.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.localizationpriority: medium
 ms.technology: itpro-deploy
+ms.date: 11/01/2022
 ---
 
 # Identify Users

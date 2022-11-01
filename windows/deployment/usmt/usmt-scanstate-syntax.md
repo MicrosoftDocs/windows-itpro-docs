@@ -2,11 +2,11 @@
 title: ScanState Syntax (Windows 10)
 description: The ScanState command is used with the User State Migration Tool (USMT) 10.0 to scan the source computer, collect the files and settings, and create a store.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/19/2017
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---

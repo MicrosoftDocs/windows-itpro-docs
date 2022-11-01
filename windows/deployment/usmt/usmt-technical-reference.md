@@ -2,11 +2,11 @@
 title: User State Migration Tool (USMT) Technical Reference (Windows 10)
 description: The User State Migration Tool (USMT) provides a highly customizable user-profile migration experience for IT professionals.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/19/2017
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
