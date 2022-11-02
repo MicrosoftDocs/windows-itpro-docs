@@ -17,11 +17,11 @@ The disk space requirements for a migration are dependent on the size of the mig
 
 ## In this topic
 
-- [Hard Disk Space Requirements](#hard-disk-space-requirements): Describes the disk space requirements for the migration store and other considerations on the source and destination computers.
+- [Hard disk space requirements](#hard-disk-space-requirements): Describes the disk space requirements for the migration store and other considerations on the source and destination computers.
 
-- [Calculate Disk Space Requirements Using the ScanState Tool](#calculate-disk-space-requirements-using-the-scanstate-tool): Describes how to use the ScanState tool to determine how large the migration store will be on a particular computer.
+- [Calculate disk space requirements using the ScanState tool](#calculate-disk-space-requirements-using-the-scanstate-tool): Describes how to use the ScanState tool to determine how large the migration store will be on a particular computer.
 
-- [Estimating Migration Store Size](#estimating-migration-store-size): Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
+- [Estimating migration store size](#estimating-migration-store-size): Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
 
 ## Hard disk space requirements
 
@@ -75,7 +75,7 @@ To run the ScanState tool on the source computer with USMT installed:
 
     Although a migration store isn't created by running this command, the *&lt;StorePath&gt;* is still a required parameter.
 
-The ScanState tool also allows you to estimate disk space requirements based on a customized migration. For example, you might not want to migrate the My Documents folder to the destination computer. You can specify this condition in a configuration file when you run the ScanState tool. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md).
+The ScanState tool also allows you to estimate disk space requirements based on a customized migration. For example, you might not want to migrate the My Documents folder to the destination computer. You can specify this condition in a configuration file when you run the ScanState tool. For more information, see [Customize USMT XML files](usmt-customize-xml-files.md).
 
 > [!NOTE]
 > To preserve the functionality of existing applications or scripts that require the previous behavior of USMT, the `/p` option is still available in USMT without having to specify the path to a file. See [Monitoring Options](usmt-scanstate-syntax.md#monitoring-options) for more information.

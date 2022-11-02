@@ -29,7 +29,7 @@ The ScanState command is used with the User State Migration Tool (USMT) 10.0 to 
 
 [User Options](#bkmk-useroptions)
 
-[Encrypted File Options](#bkmk-efs)
+[Encrypted file options](#encrypted-file-options)
 
 [Incompatible Command-Line Options](#bkmk-iclo)
 
@@ -184,7 +184,7 @@ The /**uel** option takes precedence over the /**ue** option. If a user has logg
 |Include only the domain users from Contoso, except Contoso\User1.|This behavior cannot be completed using a single command. Instead, to migrate this set of users, you will need to specify the following commands: <ul><li>On the **ScanState** command line, type: `/ue:*\* /ui:contoso\*`</li><li>On the **LoadState** command line, type: `/ue:contoso\user1`</li></ul>|
 |Include only local (non-domain) users.|`/ue:*\* /ui:%computername%\*`|
 
-## <a href="" id="bkmk-efs"></a>Encrypted File Options
+## Encrypted file options
 
 You can use the following options to migrate encrypted files. In all cases, by default, USMT fails if an encrypted file is found unless you specify an /**efs** option. To migrate encrypted files, you must change the default behavior.
 

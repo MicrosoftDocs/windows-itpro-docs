@@ -19,10 +19,10 @@ One of the main considerations for planning your migration is to determine which
 
 | Link | Description |
 |--- |--- |
-|[Migration Store Types Overview](migration-store-types-overview.md)|Choose the migration store type that works best for your needs and migration scenario.|
-|[Estimate Migration Store Size](usmt-estimate-migration-store-size.md)|Estimate the amount of disk space needed for computers in your organization based on information about your organization's infrastructure.|
-|[Hard-Link Migration Store](usmt-hard-link-migration-store.md)|Learn about hard-link migration stores and the scenarios in which they're used.|
-|[Migration Store Encryption](usmt-migration-store-encryption.md)|Learn about the using migration store encryption to protect user data integrity during a migration.|
+|[Migration store types overview](migration-store-types-overview.md)|Choose the migration store type that works best for your needs and migration scenario.|
+|[Estimate migration store size](usmt-estimate-migration-store-size.md)|Estimate the amount of disk space needed for computers in your organization based on information about your organization's infrastructure.|
+|[Hard-link migration store](usmt-hard-link-migration-store.md)|Learn about hard-link migration stores and the scenarios in which they're used.|
+|[Migration store encryption](usmt-migration-store-encryption.md)|Learn about the using migration store encryption to protect user data integrity during a migration.|
 
 ## Related articles
 

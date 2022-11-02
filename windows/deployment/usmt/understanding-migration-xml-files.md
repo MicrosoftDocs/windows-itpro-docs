@@ -77,47 +77,47 @@ The default `MigDocs.xml` file migrates the following data:
 
 - Standard shared folders:
 
-  - CSIDL\_COMMON\_DESKTOPDIRECTORY
+  - CSIDL_COMMON_DESKTOPDIRECTORY
 
-  - CSIDL\_COMMON\_FAVORITES
+  - CSIDL_COMMON_FAVORITES
 
-  - CSIDL\_COMMON\_DOCUMENTS
+  - CSIDL_COMMON_DOCUMENTS
 
-  - CSIDL\_COMMON\_MUSIC
+  - CSIDL_COMMON_MUSIC
 
-  - CSIDL\_COMMON\_PICTURES
+  - CSIDL_COMMON_PICTURES
 
-  - CSIDL\_COMMON\_VIDEO
+  - CSIDL_COMMON_VIDEO
 
-  - FOLDERID\_PublicDownloads
+  - FOLDERID_PublicDownloads
 
 - Standard user-profile folders for each user:
 
-  - CSIDL\_MYDOCUMENTS
+  - CSIDL_MYDOCUMENTS
 
-  - CSIDL\_MYPICTURES
+  - CSIDL_MYPICTURES
 
-  - FOLDERID\_OriginalImages
+  - FOLDERID_OriginalImages
 
-  - CSIDL\_MYMUSIC
+  - CSIDL_MYMUSIC
 
-  - CSIDL\_MYVIDEO
+  - CSIDL_MYVIDEO
 
-  - CSIDL\_FAVORITES
+  - CSIDL_FAVORITES
 
-  - CSIDL\_DESKTOP
+  - CSIDL_DESKTOP
 
-  - CSIDL\_QUICKLAUNCH
+  - CSIDL_QUICKLAUNCH
 
-  - FOLDERID\_Contacts
+  - FOLDERID_Contacts
 
-  - FOLDERID\_Libraries
+  - FOLDERID_Libraries
 
-  - FOLDERID\_Downloads
+  - FOLDERID_Downloads
 
-  - FOLDERID\_SavedGames
+  - FOLDERID_SavedGames
 
-  - FOLDERID\_RecordedTV
+  - FOLDERID_RecordedTV
 
 The default `MigDocs.xml` file won't migrate the following data:
 
@@ -139,21 +139,21 @@ The default `MigUser.xml` file migrates the following data:
 
 - All files from the standard user-profile folders, which are described as:
 
-  - CSIDL\_MYVIDEO
+  - CSIDL_MYVIDEO
 
-  - CSIDL\_MYMUSIC
+  - CSIDL_MYMUSIC
 
-  - CSIDL\_DESKTOP
+  - CSIDL_DESKTOP
 
-  - CSIDL\_STARTMENU
+  - CSIDL_STARTMENU
 
-  - CSIDL\_PERSONAL
+  - CSIDL_PERSONAL
 
-  - CSIDL\_MYPICTURES
+  - CSIDL_MYPICTURES
 
-  - CSIDL\_FAVORITES
+  - CSIDL_FAVORITES
 
-  - CSIDL\_QUICK LAUNCH
+  - CSIDL_QUICK LAUNCH
 
 - Files with the following extensions:
 
@@ -295,49 +295,49 @@ The migration XML files contain two &lt;component&gt; elements with different **
 
 The system context includes rules for data outside of the User Profiles directory. For example, when called in a system context in the `MigDocs.xml` file, the `GenerateDocPatterns` function creates patterns for all common shell folders, files in the root directory of hard drives, and folders located at the root of hard drives. The following folders are included:
 
-- CSIDL\_COMMON\_DESKTOPDIRECTORY
+- CSIDL_COMMON_DESKTOPDIRECTORY
 
-- CSIDL\_COMMON\_FAVORITES
+- CSIDL_COMMON_FAVORITES
 
-- CSIDL\_COMMON\_DOCUMENTS
+- CSIDL_COMMON_DOCUMENTS
 
-- CSIDL\_COMMON\_MUSIC
+- CSIDL_COMMON_MUSIC
 
-- CSIDL\_COMMON\_PICTURES
+- CSIDL_COMMON_PICTURES
 
-- CSIDL\_COMMON\_VIDEO
+- CSIDL_COMMON_VIDEO
 
-- FOLDERID\_PublicDownloads
+- FOLDERID_PublicDownloads
 
 #### User context
 
 The user context includes rules for data in the User Profiles directory. When called in a user context in the `MigDocs.xml` file, the `GenerateDocPatterns` function creates patterns for all user shell folders, files located at the root of the profile, and folders located at the root of the profile. The following folders are included:
 
-- CSIDL\_MYDOCUMENTS
+- CSIDL_MYDOCUMENTS
 
-- CSIDL\_MYPICTURES
+- CSIDL_MYPICTURES
 
-- FOLDERID\_OriginalImages
+- FOLDERID_OriginalImages
 
-- CSIDL\_MYMUSIC
+- CSIDL_MYMUSIC
 
-- CSIDL\_MYVIDEO
+- CSIDL_MYVIDEO
 
-- CSIDL\_FAVORITES
+- CSIDL_FAVORITES
 
-- CSIDL\_DESKTOP
+- CSIDL_DESKTOP
 
-- CSIDL\_QUICKLAUNCH
+- CSIDL_QUICKLAUNCH
 
-- FOLDERID\_Contacts
+- FOLDERID_Contacts
 
-- FOLDERID\_Libraries
+- FOLDERID_Libraries
 
-- FOLDERID\_Downloads
+- FOLDERID_Downloads
 
-- FOLDERID\_SavedGames
+- FOLDERID_SavedGames
 
-- FOLDERID\_RecordedTV
+- FOLDERID_RecordedTV
 
 > [!NOTE]
 > Rules contained in a component that is assigned the user context will be run for each user profile on the computer. Files that are scanned multiple times by the `MigDocs.xml` files will only be copied to the migration store once; however, a large number of rules in the user context can slow down the migration. Use the system context when it is applicable.

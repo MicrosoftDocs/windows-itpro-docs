@@ -13,7 +13,7 @@ ms.technology: itpro-deploy
 
 # Determine what to migrate
 
-By default, User State Migration Tool (USMT) 10.0 migrates the items listed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md), depending on the migration .xml files you specify. These default settings are often enough for a basic migration.
+By default, User State Migration Tool (USMT) 10.0 migrates the items listed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md), depending on the migration .xml files you specify. These default settings are often enough for a basic migration.
 
 However, when considering what settings to migrate, you should also consider what settings you would like the user to be able to configure, if any, and what settings you would like to standardize. Many organizations use their migration as an opportunity to create and begin enforcing a better-managed environment. Some of the settings that users can configure on unmanaged computers prior to the migration can be locked on the new, managed computers. For example, standard wallpaper, Internet Explorer security settings, and desktop configuration are some of the items you can choose to standardize.
 
@@ -31,10 +31,10 @@ Using an SOE can vastly simplify the migration and reduce overall deployment cha
 
 | Link | Description |
 |--- |--- |
-|[Identify Users](usmt-identify-users.md)|Use command-line options to specify which users to migrate and how they should be migrated.|
-|[Identify Applications Settings](usmt-identify-application-settings.md)|Determine which applications you want to migrate and prepare a list of application settings to be migrated.|
-|[Identify Operating System Settings](usmt-identify-operating-system-settings.md)|Use migration to create a new standard environment on each of the destination computers.|
-|[Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md)|Determine and locate the standard, company-specified, and non-standard locations of the file types, files, folders, and settings that you want to migrate.|
+|[Identify users](usmt-identify-users.md)|Use command-line options to specify which users to migrate and how they should be migrated.|
+|[Identify applications settings](usmt-identify-application-settings.md)|Determine which applications you want to migrate and prepare a list of application settings to be migrated.|
+|[Identify operating system settings](usmt-identify-operating-system-settings.md)|Use migration to create a new standard environment on each of the destination computers.|
+|[Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md)|Determine and locate the standard, company-specified, and non-standard locations of the file types, files, folders, and settings that you want to migrate.|
 
 ## Related articles
 

@@ -61,11 +61,11 @@ This section describes the migration .xml files that are included with USMT. Eac
 - **The MigUser.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate user folders, files, and file types. You can modify the `MigUser.xml` file. This file doesn't contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line using the ScanState and the LoadState user options.
 
 > [!NOTE]
-> Don't use the `MigUser.xml` and `MigDocs.xml` files together. For more information, see the [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md) and [USMT Best Practices](usmt-best-practices.md) articles.
+> Don't use the `MigUser.xml` and `MigDocs.xml` files together. For more information, see the [Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md) and [USMT best practices](usmt-best-practices.md) articles.
 
 ## Custom .xml files
 
-You can create custom .xml files to customize the migration for your unique needs. For example, you may want to create a custom file to migrate a line-of-business application or to modify the default migration behavior. If you want `ScanState.exe` and `LoadState.exe` to use this file, specify it with both commands. For more information, see the [Custom XML Examples](usmt-custom-xml-examples.md) article.
+You can create custom .xml files to customize the migration for your unique needs. For example, you may want to create a custom file to migrate a line-of-business application or to modify the default migration behavior. If you want `ScanState.exe` and `LoadState.exe` to use this file, specify it with both commands. For more information, see the [Custom XML examples](usmt-custom-xml-examples.md) article.
 
 ## The Config.xml file
 
@@ -75,7 +75,7 @@ If you want to include all of the default components, you don't need to create t
 
 When you run the `ScanState.exe` command with the `/genconfig` option, `ScanState.exe` reads the other .xml files that you specify using the `/i` option to create a custom list of components that can be migrated from the computer. This file will contain only operating system components, applications, and the user document sections that are in both of the .xml files and that are installed on the computer when you run the `ScanState.exe` command with the `/genconfig` option. Therefore, you should create this file on a source computer that contains all of the components, applications, and settings that will be present on the destination computers. Creating the file on the source computer will ensure that this file contains every component that can be migrated. The components are organized into sections: &lt;Applications&gt;, &lt;WindowsComponents&gt;, and &lt;Documents&gt;. To choose not to migrate a component, change its entry to `migrate="no"`.
 
-After you create this file, you need to specify it only with the `ScanState.exe` command using the `/Config` option for it to affect the migration. However, if you want to exclude additional data that you migrated to the store, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. For example, if you collected the My Documents folder in the store, but you decide that you don't want to migrate the My Documents folder to a destination computer, you can modify the `Config.xml` file to indicate `migrate="no"` before you run the `LoadState.exe` command, and the file won't be migrated. For more information about the precedence that takes place when excluding data, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md) article.
+After you create this file, you need to specify it only with the `ScanState.exe` command using the `/Config` option for it to affect the migration. However, if you want to exclude additional data that you migrated to the store, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. For example, if you collected the My Documents folder in the store, but you decide that you don't want to migrate the My Documents folder to a destination computer, you can modify the `Config.xml` file to indicate `migrate="no"` before you run the `LoadState.exe` command, and the file won't be migrated. For more information about the precedence that takes place when excluding data, see the [Exclude files and settings](usmt-exclude-files-and-settings.md) article.
 
 In addition, note the following functionality with the `Config.xml` file:
 
@@ -104,11 +104,11 @@ In addition, note the following functionality with the `Config.xml` file:
 
 ## Additional information
 
-- For more information about how to change the files and settings that are migrated, see the [User State Migration Tool (USMT) How-to topics](usmt-how-to.md).
+- For more information about how to change the files and settings that are migrated, see the [User State Migration Tool (USMT) how-to topics](usmt-how-to.md).
 
-- For more information about each .xml element, see the [XML Elements Library](usmt-xml-elements-library.md) article.
+- For more information about each .xml element, see the [XML elements library](usmt-xml-elements-library.md) article.
 
-- For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.yml) article.
+- For answers to common questions, see ".xml files" in the [Frequently asked questions](usmt-faq.yml) article.
 
 ## Related articles
 
