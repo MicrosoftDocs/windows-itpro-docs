@@ -26,7 +26,7 @@ ms.technology: itpro-updates
 - [Quality updates](#quality-updates-tab)
 - [Feature updates](#feature-updates-tab)
 
-:::image type="content" source="media/33771278-update-compliance-workbook-summary.png" alt-text="Screenshot of the summary tab in the Update Compliance workbook with the three tabbed sections outlined in red." lightbox="media/33771278-update-compliance-workbook-summary.png":::
+:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Update Compliance workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
 ## Open the Update Compliance workbook
 
