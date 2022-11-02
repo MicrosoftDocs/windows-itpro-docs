@@ -62,14 +62,14 @@ See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, whic
 
 Windows PowerShell cmdlets for Delivery Optimization have been improved:
 
-- **Get-DeliveryOptimizationStatus** has added the  **-PeerInfo** option for a real-time peak behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent).
+- **Get-DeliveryOptimizationStatus** has added the  **-PeerInfo** option for a real-time peek behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent).
 - **Get-DeliveryOptimizationLogAnalysis** is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the **-ListConnections** option to for in-depth look at peer-to-peer connections.
 - **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to help in troubleshooting.
 
 Other improvements in [Delivery Optimization](./do/waas-delivery-optimization.md) include:
 - Enterprise network [throttling is enhanced](/windows-insider/archive/new-for-business#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
-- Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). These policies now support Microsoft 365 Apps for enterprise updates and Intune content, with Microsoft Endpoint Manager content coming soon!
+- Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). These policies now support Microsoft 365 Apps for enterprise updates and Intune content.
 
 The following Delivery Optimization policies are removed in the Windows 10, version 2004 release:
 
