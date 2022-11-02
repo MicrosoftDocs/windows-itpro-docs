@@ -15,51 +15,51 @@ ms.technology: itpro-deploy
 
 Offline migration enables the ScanState tool to run inside a different Windows&reg; operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
 
--   **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
+- **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
 
--   **Windows.old.** The ScanState tool can now gather files and settings from the Windows.old directory that is created during Windows installation on a partition that contains a previous installation of Windows. For example, the ScanState tool can run in Windows 10, gathering files from a previous Windows 7or Windows 8 installation contained in the Windows.old directory.
+- **Windows.old.** The ScanState tool can now gather files and settings from the Windows.old directory that is created during Windows installation on a partition that contains a previous installation of Windows. For example, the ScanState tool can run in Windows 10, gathering files from a previous Windows 7or Windows 8 installation contained in the Windows.old directory.
 
 When you use User State Migration Tool (USMT) 10.0 to gather and restore user state, offline migration reduces the cost of deployment by:
 
--   **Reducing complexity.** In computer-refresh scenarios, migrations from the Windows.old directory reduce complexity by eliminating the need for the ScanState tool to be run before the operating system is deployed. Also, migrations from the Windows.old directory enable ScanState and LoadState to be run successively.
+- **Reducing complexity.** In computer-refresh scenarios, migrations from the Windows.old directory reduce complexity by eliminating the need for the ScanState tool to be run before the operating system is deployed. Also, migrations from the Windows.old directory enable ScanState and LoadState to be run successively.
 
--   **Improving performance.** When USMT runs in an offline Windows Preinstallation Environment (WinPE) environment, it has better access to the hardware resources. Running USMT in WinPE may increase performance on older machines with limited hardware resources and numerous installed software applications.
+- **Improving performance.** When USMT runs in an offline Windows Preinstallation Environment (WinPE) environment, it has better access to the hardware resources. Running USMT in WinPE may increase performance on older machines with limited hardware resources and numerous installed software applications.
 
--   **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
+- **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
 
 ## In this topic
 
--   [What Will Migrate Offline?](#bkmk-whatwillmigrate)
+- [What Will Migrate Offline?](#bkmk-whatwillmigrate)
 
--   [What Offline Environments are Supported?](#bkmk-offlineenvironments)
+- [What Offline Environments are Supported?](#bkmk-offlineenvironments)
 
--   [User-Group Membership and Profile Control](#bkmk-usergroupmembership)
+- [User-Group Membership and Profile Control](#bkmk-usergroupmembership)
 
--   [Command-Line Options](#bkmk-commandlineoptions)
+- [Command-Line Options](#bkmk-commandlineoptions)
 
--   [Environment Variables](#bkmk-environmentvariables)
+- [Environment Variables](#bkmk-environmentvariables)
 
--   [Offline.xml Elements](#bkmk-offlinexml)
+- [Offline.xml Elements](#bkmk-offlinexml)
 
-## <a href="" id="bkmk-whatwillmigrate"></a>What Will Migrate Offline?
+## <a href="" id="bkmk-whatwillmigrate"></a> What Will Migrate Offline?
 
 The following user data and settings migrate offline, similar to an online migration:
 
--   Data and registry keys specified in MigXML
+- Data and registry keys specified in MigXML
 
--   User accounts
+- User accounts
 
--   Application settings
+- Application settings
 
--   Limited set of operating-system settings
+- Limited set of operating-system settings
 
--   EFS files
+- EFS files
 
--   Internet Explorer&reg; Favorites
+- Internet Explorer&reg; Favorites
 
 For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
-## <a href="" id="bkmk-offlineenvironments"></a>What Offline Environments are Supported?
+## <a href="" id="bkmk-offlineenvironments"></a> What Offline Environments are Supported?
 
 The following table defines the supported combination of online and offline operating systems in USMT.
 
@@ -68,10 +68,10 @@ The following table defines the supported combination of online and offline oper
 |WinPE 5.0 or greater, with the MSXML library|Windows 7, Windows 8, Windows 10|
 |Windows 7, Windows 8, Windows 10|Windows.old directory|
 
-> [!Note]
+> [!NOTE]
 > It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](/previous-versions/windows/it-pro/windows-7/ee424315(v=ws.10)).
 
-## <a href="" id="bkmk-usergroupmembership"></a>User-Group Membership and Profile Control
+## <a href="" id="bkmk-usergroupmembership"></a> User-Group Membership and Profile Control
 
 User-group membership isn't preserved during offline migrations. You must configure a **&lt;ProfileControl&gt;** section in the `Config.xml` file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
 
@@ -93,7 +93,7 @@ User-group membership isn't preserved during offline migrations. You must config
 
 For information about the format of a `Config.xml` file, see [Config.xml File](usmt-configxml-file.md).
 
-## <a href="" id="bkmk-commandlineoptions"></a>Command-Line Options
+## <a href="" id="bkmk-commandlineoptions"></a> Command-Line Options
 
 An offline migration can either be enabled by using a configuration file on the command line, or by using one of the following command line options:
 
@@ -105,7 +105,7 @@ An offline migration can either be enabled by using a configuration file on the 
 
 You can use only one of the `/offline`, `/offlineWinDir`, or `/OfflineWinOld` command-line options at a time. USMT doesn't support using more than one together.
 
-## <a href="" id="bkmk-environmentvariables"></a>Environment Variables
+## <a href="" id="bkmk-environmentvariables"></a> Environment Variables
 
 The following system environment variables are necessary in the scenarios outlined below.
 

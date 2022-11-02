@@ -27,7 +27,7 @@ ms.technology: itpro-deploy
 
 [Additional Information](#bkmk-addlinfo)
 
-## <a href="" id="bkmk-overview"></a>Overview
+## <a href="" id="bkmk-overview"></a> Overview
 
 If you want the ScanState and LoadState tools to use any of the migration .xml files, specify these files at the command line using the `/i` option. Because the ScanState and LoadState tools need the .xml files to control the migration, specify the same set of .xml files for both the `ScanState.exe` and `LoadState.exe` commands. However, you don't have to specify the `Config.xml` file with the `/config` option, unless you want to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store but not to the destination computer. To achieve this scenario, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. Then the `LoadState.exe` command will migrate only the files and settings that you want to migrate.
 
@@ -47,27 +47,27 @@ To modify the migration, do one or more of the following.
 
 For more information about excluding data, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md) article.
 
-## <a href="" id="bkmk-migxml"></a>Migration .xml Files
+## <a href="" id="bkmk-migxml"></a> Migration .xml Files
 
 This section describes the migration .xml files that are included with USMT. Each file contains migration rules that control which components are migrated and where they're migrated to on the destination computer.
 
-> [!Note]
+> [!NOTE]
 > You can use the asterisk (\*) wildcard character in each of these files. However, you cannot use a question mark (?) as a wildcard character.
 
--   **The MigApp.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate application settings.
+- **The MigApp.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate application settings.
 
--   **The MigDocs.xml file.** Specify this file with both the ScanState and LoadState tools to migrate all user folders and files that are found by the **MigXmlHelper.GenerateDocPatterns** helper function. This helper function finds user data that resides on the root of any drive and in the Users directory. However, it doesn't find and migrate any application data, program files, or any files in the Windows directory. You can modify the `MigDocs.xml` file.
+- **The MigDocs.xml file.** Specify this file with both the ScanState and LoadState tools to migrate all user folders and files that are found by the **MigXmlHelper.GenerateDocPatterns** helper function. This helper function finds user data that resides on the root of any drive and in the Users directory. However, it doesn't find and migrate any application data, program files, or any files in the Windows directory. You can modify the `MigDocs.xml` file.
 
--   **The MigUser.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate user folders, files, and file types. You can modify the `MigUser.xml` file. This file doesn't contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line using the ScanState and the LoadState user options.
+- **The MigUser.xml file.** Specify this file with both the `ScanState.exe` and `LoadState.exe` commands to migrate user folders, files, and file types. You can modify the `MigUser.xml` file. This file doesn't contain rules that migrate specific user accounts. The only way to specify which user accounts to migrate is on the command line using the ScanState and the LoadState user options.
 
-> [!Note]
+> [!NOTE]
 > Don't use the `MigUser.xml` and `MigDocs.xml` files together. For more information, see the [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md) and [USMT Best Practices](usmt-best-practices.md) articles.
 
-## <a href="" id="bkmk-customxmlfiles"></a>Custom .xml Files
+## <a href="" id="bkmk-customxmlfiles"></a> Custom .xml Files
 
 You can create custom .xml files to customize the migration for your unique needs. For example, you may want to create a custom file to migrate a line-of-business application or to modify the default migration behavior. If you want `ScanState.exe` and `LoadState.exe` to use this file, specify it with both commands. For more information, see the [Custom XML Examples](usmt-custom-xml-examples.md) article.
 
-## <a href="" id="bkmk-configxml"></a>The Config.xml File
+## <a href="" id="bkmk-configxml"></a> The Config.xml File
 
 The `Config.xml` file is an optional file that you create using the `/genconfig` option with the `ScanState.exe` command. You should create and modify this file if you want to exclude certain components from the migration. In addition, you must create and modify this file if you want to exclude any of the operating system settings from being migrated. The `Config.xml` file format is different from the migration .xml files because it doesn't contain any migration rules. It contains only a list of the operating system components, applications, and the user documents that can be migrated. For an example, see the [Config.xml File](usmt-configxml-file.md) article. For this reason, excluding components using this file is easier than modifying the migration .xml files because you don't need to be familiar with the migration rules and syntax. However, you can't use wildcard characters in a `Config.xml` file.
 
@@ -79,37 +79,36 @@ After you create this file, you need to specify it only with the `ScanState.exe`
 
 In addition, note the following functionality with the `Config.xml` file:
 
--   If a parent component is removed from the migration in the `Config.xml` file by specifying `migrate="no"`, all of its child components will automatically be removed from the migration, even if the child component is set to `migrate="yes"`.
+- If a parent component is removed from the migration in the `Config.xml` file by specifying `migrate="no"`, all of its child components will automatically be removed from the migration, even if the child component is set to `migrate="yes"`.
 
--   If you mistakenly have two lines of code for the same component where one line specifies `migrate="no"` and the other line specifies `migrate="yes"`, the component will be migrated.
+- If you mistakenly have two lines of code for the same component where one line specifies `migrate="no"` and the other line specifies `migrate="yes"`, the component will be migrated.
 
--   In USMT, there are several migration policies that can be configured in the `Config.xml` file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. For more information, see the [Config.xml File](usmt-configxml-file.md) article.
+- In USMT, there are several migration policies that can be configured in the `Config.xml` file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. For more information, see the [Config.xml File](usmt-configxml-file.md) article.
 
-> [!Note]
+> [!NOTE]
 > To exclude a component from the `Config.xml` file, set the **migrate** value to **"no"**. Deleting the XML tag for the component from the `Config.xml` file will not exclude the component from your migration.
 
-### <a href="" id="bkmk-examples"></a>Examples
+### <a href="" id="bkmk-examples"></a> Examples
 
--   The following command creates a `Config.xml` file in the current directory, but it doesn't create a store:
+- The following command creates a `Config.xml` file in the current directory, but it doesn't create a store:
 
     `scanstate /i:migapp.xml /i:migdocs.xml /genconfig:config.xml /v:5`
 
--   The following command creates an encrypted store using the `Config.xml` file and the default migration .xml files:
+- The following command creates an encrypted store using the `Config.xml` file and the default migration .xml files:
 
     `scanstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /o /config:config.xml /v:5 /encrypt /key:"mykey"`
 
--   The following command decrypts the store and migrates the files and settings:
+- The following command decrypts the store and migrates the files and settings:
 
     `loadstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /v:5 /decrypt /key:"mykey"`
 
-## <a href="" id="bkmk-addlinfo"></a>Additional Information
+## <a href="" id="bkmk-addlinfo"></a> Additional Information
 
+- For more information about how to change the files and settings that are migrated, see the [User State Migration Tool (USMT) How-to topics](usmt-how-to.md).
 
--   For more information about how to change the files and settings that are migrated, see the [User State Migration Tool (USMT) How-to topics](usmt-how-to.md).
+- For more information about each .xml element, see the [XML Elements Library](usmt-xml-elements-library.md) article.
 
--   For more information about each .xml element, see the [XML Elements Library](usmt-xml-elements-library.md) article.
-
--   For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.yml) article.
+- For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.yml) article.
 
 ## Related articles
 

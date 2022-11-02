@@ -37,13 +37,13 @@ One common scenario is when the operating system is upgraded on existing hardwar
 
 [Scenario Three: Managed network migration](#bkmk-threepcreplace)
 
-## <a href="" id="bkmk-pcrefresh"></a>PC-Refresh
+## <a href="" id="bkmk-pcrefresh"></a> PC-Refresh
 
 The following diagram shows a PC-refresh migration, also known as a computer refresh migration. First, the administrator migrates the user state from a source computer to an intermediate store. After installing the operating system, the administrator migrates the user state back to the source computer.
 
 ![usmt pc refresh scenario.](images/dep-win8-l-usmt-pcrefresh.jpg)
 
-### <a href="" id="bkmk-onepcrefresh"></a>Scenario One: PC-refresh offline using Windows PE and a hard-link migration store
+### <a href="" id="bkmk-onepcrefresh"></a> Scenario One: PC-refresh offline using Windows PE and a hard-link migration store
 
 A company has received funds to update the operating system on all of its computers in the accounting department to Windows 10. Each employee will keep the same computer, but the operating system on each computer will be updated. In this scenario, the update is being handled offline, without a network connection. An administrator uses Windows Preinstallation Environment (WinPE) and a hard-link migration store to save each user state to their respective computer.
 
@@ -53,7 +53,7 @@ A company has received funds to update the operating system on all of its comput
 
 3. The administrator runs the LoadState command-line tool on each computer. LoadState restores each user state back to each computer.
 
-### <a href="" id="bkmk-twopcrefresh"></a>Scenario Two: PC-refresh using a compressed migration store
+### <a href="" id="bkmk-twopcrefresh"></a> Scenario Two: PC-refresh using a compressed migration store
 
 A company has received funds to update the operating system on all of its computers to Windows 10. Each employee will keep the same computer, but the operating system on each computer will be updated. In this scenario, an administrator uses a compressed migration store to save the user states to a server.
 
@@ -63,7 +63,7 @@ A company has received funds to update the operating system on all of its comput
 
 3. The administrator runs the LoadState command-line tool on each source computer, and LoadState restores each user state back to the computer.
 
-### <a href="" id="bkmk-threepcrefresh"></a>Scenario Three: PC-refresh using a hard-link migration store
+### <a href="" id="bkmk-threepcrefresh"></a> Scenario Three: PC-refresh using a hard-link migration store
 
 A company has received funds to update the operating system on all of its computers to Windows 10. Each employee will keep the same computer, but the operating system on each computer will be updated. In this scenario, an administrator uses a hard-link migration store to save each user state to their respective computer.
 
@@ -73,7 +73,7 @@ A company has received funds to update the operating system on all of its comput
 
 3. The administrator runs the LoadState command-line tool on each computer. LoadState restores each user state back on each computer.
 
-### <a href="" id="bkmk-fourpcrefresh"></a>Scenario Four: PC-refresh using Windows.old folder and a hard-link migration store
+### <a href="" id="bkmk-fourpcrefresh"></a> Scenario Four: PC-refresh using Windows.old folder and a hard-link migration store
 
 A company has decided to update the operating system on all of its computers to Windows 10. Each employee will keep the same computer, but the operating system on each computer will be updated. In this scenario, an administrator uses Windows.old and a hard-link migration store to save each user state to their respective computer.
 
@@ -83,14 +83,13 @@ A company has decided to update the operating system on all of its computers to 
 
 3. The administrator runs the ScanState and LoadState command-line tools successively on each computer while specifying the `/hardlink /nocompress` command-line options.
 
-## <a href="" id="bkmk-pcreplace"></a>PC-Replacement
-
+## <a href="" id="bkmk-pcreplace"></a> PC-Replacement
 
 The following diagram shows a PC-replacement migration. First, the administrator migrates the user state from the source computer to an intermediate store. After installing the operating system on the destination computer, the administrator migrates the user state from the store to the destination computer.
 
 ![usmt pc replace scenario.](images/dep-win8-l-usmt-pcreplace.jpg)
 
-### <a href="" id="bkmk-onepcreplace"></a>Scenario One: Offline migration using WinPE and an external migration store
+### <a href="" id="bkmk-onepcreplace"></a> Scenario One: Offline migration using WinPE and an external migration store
 
 A company is allocating 20 new computers to users in the accounting department. The users each have a source computer with their files and settings. In this scenario, migration is being handled offline, without a network connection.
 
@@ -100,7 +99,7 @@ A company is allocating 20 new computers to users in the accounting department. 
 
 3. On each of the new computers, the administrator runs the LoadState tool, restoring each user state from the migration store to one of the new computers.
 
-### <a href="" id="bkmk-twopcreplace"></a>Scenario Two: Manual network migration
+### <a href="" id="bkmk-twopcreplace"></a> Scenario Two: Manual network migration
 
 A company receives 50 new laptops for their managers and needs to reallocate 50 older laptops to new employees. In this scenario, an administrator runs the ScanState tool from the cmd prompt on each computer to collect the user states and save them to a server in a compressed migration store.
 
@@ -112,7 +111,7 @@ A company receives 50 new laptops for their managers and needs to reallocate 50 
 
 4. On the old computers, the administrator installs the company's SOE, which includes Windows 10, Microsoft Office, and other company applications. The old computers are now ready for the new employees to use.
 
-### <a href="" id="bkmk-threepcreplace"></a>Scenario Three: Managed network migration
+### <a href="" id="bkmk-threepcreplace"></a> Scenario Three: Managed network migration
 
 A company is allocating 20 new computers to users in the accounting department. The users each have a source computer that contains their files and settings. An administrator uses a management technology such as a sign-in script or a batch file to run ScanState on each source computer to collect the user states and save them to a server in a compressed migration store.
 

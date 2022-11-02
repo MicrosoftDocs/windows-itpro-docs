@@ -13,7 +13,7 @@ ms.date: 11/01/2022
 
 # Custom XML Examples
 
-## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
+## <a href="" id="example"></a> Example 1: Migrating an Unsupported Application
 
 The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
 
@@ -85,9 +85,10 @@ The following template is a template for the sections that you need to migrate y
   </component>
 </migration>
 ```
+
 </details>
 
-## <a href="" id="example2"></a>Example 2: Migrating the My Videos Folder
+## <a href="" id="example2"></a> Example 2: Migrating the My Videos Folder
 
 The following sample is a custom .xml file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
 
@@ -132,9 +133,10 @@ The following sample is a custom .xml file named `CustomFile.xml` that migrates 
     </component>
 </migration>
 ```
+
 </details>
 
-## <a href="" id="example3"></a>Example 3: Migrating Files and Registry Keys
+## <a href="" id="example3"></a> Example 3: Migrating Files and Registry Keys
 
 The sample patterns describe the behavior in the following example .xml file.
 
@@ -189,9 +191,10 @@ The sample patterns describe the behavior in the following example .xml file.
  </component>
 </migration>
 ```
+
 </details>
 
-## <a href="" id="example4"></a>Example 4: Migrating Specific Folders from Various Locations
+## <a href="" id="example4"></a> Example 4: Migrating Specific Folders from Various Locations
 
 The behavior for this custom .xml file is described within the `<displayName>` tags in the code.
 
@@ -268,6 +271,7 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 </component>
 </migration>
 ```
+
 </details>
 
 ## Related articles

@@ -13,8 +13,6 @@ ms.technology: itpro-deploy
 
 # Config.xml File
 
-## Config.xml File
-
 The `Config.xml` file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the `/genconfig` option with the ScanState tool. If you want to include all of the default components, and don't want to change the default store-creation or profile-migration behavior, you don't need to create a `Config.xml` file.
 
 However, if you're satisfied with the default migration behavior defined in the `MigApp.xml`, `MigUser.xml` and `MigDocs.xml` files, but you want to exclude certain components, you can create and modify a `Config.xml` file and leave the other .xml files unchanged. For example, you must create and modify the `Config.xml` file if you want to exclude any of the operating-system settings that are migrated. It's necessary to create and modify this file if you want to change any of the default store-creation or profile-migration behavior.
@@ -23,7 +21,7 @@ The `Config.xml` file has a different format than the other migration .xml files
 
 For more information about using the `Config.xml` file with other migration files, such as the `MigDocs.xml` and `MigApps.xml` files, see [Understanding Migration XML Files](understanding-migration-xml-files.md).
 
-> [!Note]
+> [!NOTE]
 > To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file will not exclude the component from your migration.
 
 ## In this topic
@@ -64,21 +62,21 @@ In USMT there are new migration policies that can be configured in the `Config.x
 
 [Sample Config.xml File](#bkmk-sampleconfigxjmlfile)
 
-## <a href="" id="bkmk-policies"></a>&lt;Policies&gt;
+## <a href="" id="bkmk-policies"></a> &lt;Policies&gt;
 
 The **&lt;Policies&gt;** element contains elements that describe the policies that USMT follows while creating a migration store. Valid children of the **&lt;Policies&gt;** element are **&lt;ErrorControl&gt;** and **&lt;HardLinkStoreControl&gt;**. The **&lt;Policies&gt;** element is a child of **&lt;Configuration&gt;**.
 
 Syntax: `<Policies>` `</Policies>`
 
-## <a href="" id="bkmk-errorcontrol"></a>&lt;ErrorControl&gt;
+## <a href="" id="bkmk-errorcontrol"></a> &lt;ErrorControl&gt;
 
 The **&lt;ErrorControl&gt;** element is an optional element you can configure in the `Config.xml` file. The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: The **&lt;Policies&gt;** element
+- **Parent elements**: The **&lt;Policies&gt;** element
 
--   **Child elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** element
+- **Child elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** element
 
 Syntax: `<ErrorControl>` `</ErrorControl>`
 
@@ -101,15 +99,15 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 > [!IMPORTANT]
 > The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
-### <a href="" id="bkmk-fatal"></a>&lt;fatal&gt;
+### <a href="" id="bkmk-fatal"></a> &lt;fatal&gt;
 
 The **&lt;fatal&gt;** element isn't required.
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: **&lt;fileError&gt;** and **&lt;registryError&gt;**
+- **Parent elements**: **&lt;fileError&gt;** and **&lt;registryError&gt;**
 
--   **Child elements**: None.
+- **Child elements**: None.
 
 Syntax: `<fatal errorCode="any">` *&lt;pattern&gt;* `</fatal>`
 
@@ -119,29 +117,29 @@ Syntax: `<fatal errorCode="any">` *&lt;pattern&gt;* `</fatal>`
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
-## <a href="" id="bkmk-fileerror"></a>&lt;fileError&gt;
+## <a href="" id="bkmk-fileerror"></a> &lt;fileError&gt;
 
 The **&lt;fileError&gt;** element isn't required.
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: **&lt;ErrorControl&gt;**
+- **Parent elements**: **&lt;ErrorControl&gt;**
 
--   **Child elements**: **&lt;nonFatal&gt;** and **&lt;fatal&gt;**
+- **Child elements**: **&lt;nonFatal&gt;** and **&lt;fatal&gt;**
 
 Syntax: `<fileError>` `</fileError>`
 
 You use the **&lt;fileError&gt;** element to represent the behavior associated with file errors.
 
-## <a href="" id="bkmk-nonfatal"></a>&lt;nonFatal&gt;
+## <a href="" id="bkmk-nonfatal"></a> &lt;nonFatal&gt;
 
 The **&lt;nonFatal&gt;** element isn't required.
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** elements.
+- **Parent elements**: The **&lt;fileError&gt;** and **&lt;registryError&gt;** elements.
 
--   **Child elements**: None.
+- **Child elements**: None.
 
 Syntax: `<nonfatal errorCode="any">` *&lt;pattern&gt;* `</nonFatal>`
 
@@ -151,15 +149,15 @@ Syntax: `<nonfatal errorCode="any">` *&lt;pattern&gt;* `</nonFatal>`
 
 You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-## <a href="" id="bkmk-registryerror"></a>&lt;registryError&gt;
+## <a href="" id="bkmk-registryerror"></a> &lt;registryError&gt;
 
-The <strong>&lt;registryError&gt;</strong> element isn't required.
+The **&lt;registryError&gt;** element isn't required.
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: **&lt;ErrorControl&gt;**
+- **Parent elements**: **&lt;ErrorControl&gt;**
 
--   **Child elements**: **&lt;nonfatal&gt;** and **&lt;fatal&gt;**
+- **Child elements**: **&lt;nonfatal&gt;** and **&lt;fatal&gt;**
 
 Syntax: `<registryError>` `</registryError>`
 
@@ -169,17 +167,17 @@ Syntax: `<registryError>` `</registryError>`
 
 You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-## <a href="" id="bkmk-hardlinkstorecontrol"></a>&lt;HardLinkStoreControl&gt;
+## <a href="" id="bkmk-hardlinkstorecontrol"></a> &lt;HardLinkStoreControl&gt;
 
 The **&lt;HardLinkStoreControl&gt;** element contains elements that describe how to handle files during the creation of a hard-link migration store. Its only valid child is **&lt;fileLocked&gt;**.
 
 Syntax: `<HardLinkStoreControl>` `</HardLinkStoreControl>`
 
--   **Number of occurrences**: Once for each component
+- **Number of occurrences**: Once for each component
 
--   **Parent elements**: **&lt;Policies&gt;**
+- **Parent elements**: **&lt;Policies&gt;**
 
--   **Child elements**: **&lt;fileLocked&gt;**
+- **Child elements**: **&lt;fileLocked&gt;**
 
 Syntax: `<HardLinkStoreControl>` `</HardLinkStoreControl>`
 
@@ -202,43 +200,43 @@ The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links
 </Policy>
 ```
 
-## <a href="" id="bkmk-filelock"></a>&lt;fileLocked&gt;
+## <a href="" id="bkmk-filelock"></a> &lt;fileLocked&gt;
 
 The **&lt;fileLocked&gt;** element contains elements that describe how to handle files that are locked for editing. The rules defined by the **&lt;fileLocked&gt;** element are processed in the order in which they appear in the XML file.
 
 Syntax: `<fileLocked>` `</fileLocked>`
 
-## <a href="" id="bkmk-createhardlink"></a>&lt;createHardLink&gt;
+## <a href="" id="bkmk-createhardlink"></a> &lt;createHardLink&gt;
 
 The **&lt;createHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.
 
 Syntax: `<createHardLink>` *&lt;pattern&gt;* `</createHardLink>`
 
-## <a href="" id="bkmk-errorhardlink"></a>&lt;errorHardLink&gt;
+## <a href="" id="bkmk-errorhardlink"></a> &lt;errorHardLink&gt;
 
 The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created if the file is locked for editing by another application. USMT will attempt to copy files under these paths into the migration store. However, if that isn't possible, **Error\_Locked** is thrown. This error is a standard Windows application programming interface (API) error that can be captured by the **&lt;ErrorControl&gt;** section to either cause USMT to skip the file or abort the migration.
 
 Syntax: `<errorHardLink>` *&lt;pattern&gt;* `</errorHardLink>`
 
-## <a href="" id="bkmk-profilecontrol"></a>&lt;ProfileControl&gt;
+## <a href="" id="bkmk-profilecontrol"></a> &lt;ProfileControl&gt;
 
 This element is used to contain other elements that establish rules for migrating profiles, users, and policies around local group membership during the migration. **&lt;ProfileMigration&gt;** is a child of **&lt;Configuration&gt;**.
 
 Syntax: &lt;`ProfileControl>` `</ProfileControl>`
 
-## <a href="" id="bkmk-localgroups"></a>&lt;localGroups&gt;
+## <a href="" id="bkmk-localgroups"></a> &lt;localGroups&gt;
 
 This element is used to contain other elements that establish rules for how to migrate local groups. **&lt;localGroups&gt;** is a child of **&lt;ProfileControl&gt;**.
 
 Syntax: `<localGroups>` `</localGroups>`
 
-## <a href="" id="bkmk-mappings"></a>&lt;mappings&gt;
+## <a href="" id="bkmk-mappings"></a> &lt;mappings&gt;
 
 This element is used to contain other elements that establish mappings between groups.
 
 Syntax: `<mappings>` `</mappings>`
 
-## <a href="" id="bkmk-changegrou"></a>&lt;changeGroup&gt;
+## <a href="" id="bkmk-changegrou"></a> &lt;changeGroup&gt;
 
 This element describes the source and destination groups for a local group membership change during the migration. It's a child of **&lt;localGroups&gt;**. The following parameters are defined:
 
@@ -252,19 +250,19 @@ The valid and required children of **&lt;changeGroup&gt;** are **&lt;include&gt;
 
 Syntax: `<changeGroup From="Group1" To= "Group2">` `</changeGroup>`
 
-## <a href="" id="bkmk-include"></a>&lt;include&gt;
+## <a href="" id="bkmk-include"></a> &lt;include&gt;
 
 This element specifies that its required child, *&lt;pattern&gt;*, should be included in the migration.
 
 Syntax: `<include>` `</include>`
 
-## <a href="" id="bkmk-exclude"></a>&lt;exclude&gt;
+## <a href="" id="bkmk-exclude"></a> &lt;exclude&gt;
 
 This element specifies that its required child, *&lt;pattern&gt;*, should be excluded from the migration.
 
 Syntax: `<exclude>` `</exclude>`
 
-## <a href="" id="bkmk-sampleconfigxjmlfile"></a>Sample Config.xml File
+## <a href="" id="bkmk-sampleconfigxjmlfile"></a> Sample Config.xml File
 
 Refer to the following sample `Config.xml` file for more details about items you can choose to exclude from a migration.
 <br>

@@ -29,7 +29,7 @@ The following sections discuss common issues that you might see when you run the
 
 [Hard Link Migration Problems](#bkmk-hardlink)
 
-[USMT doesn't migrate the Start layout](#usmt-does-not-migrate-the-start-layout)
+[USMT doesn't migrate the Start layout](#usmt-doesnt-migrate-the-start-layout)
 
 ## General Guidelines for Identifying Migration Problems
 
@@ -39,7 +39,7 @@ When you encounter a problem or error message during migration, you can use the 
 
   In most cases, the ScanState and LoadState logs indicate why a USMT migration is failing. We recommend that you use the `/v:5` option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
 
-  > [!Note]
+  > [!NOTE]
   > Running the ScanState and LoadState tools with the `/v:5` option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
 
 - Use the `/Verify` option with the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md).
@@ -54,18 +54,18 @@ When you encounter a problem or error message during migration, you can use the 
 
 - Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
 
-  > [!Note]
+  > [!NOTE]
   > USMT will fail if it can't migrate a file or setting unless you specify the `/c` option. When you specify the `/c` option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that didn't migrate.
 
-## <a href="" id="user"></a>User Account Problems
+## <a href="" id="user"></a> User Account Problems
 
 The following sections describe common user account problems. Expand the section to see recommended solutions.
 
-### I'm having problems creating local accounts on the destination computer.
+### I'm having problems creating local accounts on the destination computer
 
 **Resolution:** For more information about creating accounts and migrating local accounts, see [Migrate User Accounts](usmt-migrate-user-accounts.md).
 
-### Not all of the user accounts were migrated to the destination computer.
+### Not all of the user accounts were migrated to the destination computer
 
 **Causes/Resolutions** There are two possible causes for this problem:
 
@@ -76,40 +76,40 @@ When running the ScanState and LoadState tools on Windows 7, Windows 8, or Windo
 2. Right-click **Command Prompt**.
 
 3. Select **Run as administrator**.
-   
+
 4. Specify the `LoadState.exe` or `ScanState.exe` command.
 
 If you don't run USMT in Administrator mode, only the user profile that is logged on will be included in the migration.
 
 Any user accounts on the computer that haven't been used won't be migrated. For example, if you add User1 to the computer, but User1 never logs on, then USMT won't migrate the User1 account.
 
-### User accounts that I excluded were migrated to the destination computer.
+### User accounts that I excluded were migrated to the destination computer
 
 **Cause:** The command that you specified might have had conflicting `ui` and `/ue` options. If a user is specified with the `/ui` option and with either the `/ue` or `/uel` options at the same time, the user will be included in the migration. For example, if you specify `/ui:domain1\* /ue:domain1\user1`, then User1 will be migrated because the `/ui` option takes precedence.
 
 **Resolution:** For more information about how to use the `/ui` and `/ue` options together, see the examples in the [ScanState Syntax](usmt-scanstate-syntax.md) article.
 
-### I'm using the /uel option, but many accounts are still being included in the migration.
+### I'm using the /uel option, but many accounts are still being included in the migration
 
 **Cause:** The `/uel` option depends on the last modified date of the users' NTUser.dat file. There are scenarios in which this last modified date might not match the users' last sign-in date.
 
 **Resolution:** This is a limitation of the `/uel` option. You might need to exclude these users manually with the `/ue` option.
 
-### The LoadState tool reports an error as return code 71 and fails to restore a user profile during a migration test.
+### The LoadState tool reports an error as return code 71 and fails to restore a user profile during a migration test
 
 **Cause:** During a migration test, if you run the ScanState tool on your test computer and then delete user profiles in order to test the LoadState tool on the same computer, you may have a conflicting key present in the registry. Using the **net use** command to remove a user profile will delete folders and files associated with that profile, but won't remove the registry key.
 
 **Resolution:** To delete a user profile, use the **User Accounts** item in Control Panel. To correct an incomplete deletion of a user profile:
 
-1.  Open the registry editor by typing `regedit` at an elevated command prompt.
+1. Open the registry editor by typing `regedit` at an elevated command prompt.
 
-2.  Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList`.
+2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList`.
 
     Each user profile is stored in a System Identifier key under `ProfileList`.
 
-3.  Delete the key for the user profile you're trying to remove.
+3. Delete the key for the user profile you're trying to remove.
 
-### Files that weren't encrypted before the migration are now encrypted with the account used to run the LoadState tool.
+### Files that weren't encrypted before the migration are now encrypted with the account used to run the LoadState tool
 
 **Cause:** The ScanState tool was run using the `/EFS:copyraw` option to migrate encrypted files and Encrypting File System (EFS) certificates. The encryption attribute was set on a folder that was migrated, but the attribute was removed from file contents of that folder prior to migration.
 
@@ -117,7 +117,7 @@ Any user accounts on the computer that haven't been used won't be migrated. For 
 
 To remove encryption from files that have already been migrated incorrectly, you must sign into the computer with the account that you used to run the LoadState tool and then remove the encryption from the affected files.
 
-### The LoadState tool reports an error as return code 71 and a Windows Error 2202 in the log file.
+### The LoadState tool reports an error as return code 71 and a Windows Error 2202 in the log file
 
 **Cause:** The computer name was changed during an offline migration of a local user profile.
 
@@ -128,7 +128,7 @@ loadstate.exe /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore
 /progress:prog.log /l:load.log /mu:fareast\user1:farwest\user1
 ```
 
-## <a href="" id="command"></a>Command-line Problems
+## <a href="" id="command"></a> Command-line Problems
 
 The following sections describe common command-line problems. Expand the section to see recommended solutions.
 
@@ -144,8 +144,7 @@ The following sections describe common command-line problems. Expand the section
 
 **Resolution:** To fix this issue in this scenario, specify the `/l:scan.log` or `/l:load.log` option.
 
-## <a href="" id="xml"></a>XML File Problems
-
+## <a href="" id="xml"></a> XML File Problems
 
 The following sections describe common XML file problems. Expand the section to see recommended solutions.
 
@@ -157,27 +156,27 @@ The following sections describe common XML file problems. Expand the section to 
 
 `scanstate.exe /genconfig:config.xml /i:migdocs.xml /i:migapp.xml /v:5 /l:scanstate.log`
 
-### I'm having problems with a custom .xml file that I authored, and I can't verify that the syntax is correct.
+### I'm having problems with a custom .xml file that I authored, and I can't verify that the syntax is correct
 
 **Resolution:** You can load the XML schema file `MigXML.xsd` into your XML authoring tool. `MigXML.xsd` is included with USMT. For examples, see the [Visual Studio Development Center](https://go.microsoft.com/fwlink/p/?LinkId=74513). Then, load your .xml file in the authoring tool to see if there's a syntax error. For more information about using the XML elements, see [USMT XML Reference](usmt-xml-reference.md).
 
-### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a>I'm using a MigXML helper function, but the migration isn't working the way I expected it to.  How do I troubleshoot this issue?
+### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a> I'm using a MigXML helper function, but the migration isn't working the way I expected it to.  How do I troubleshoot this issue?
 
 **Cause:** Typically, this issue is caused by incorrect syntax used in a helper function. You receive a Success return code, but the files you wanted to migrate didn't get collected or applied, or weren't collected or applied in the way you expected.
 
 **Resolution:** You should search the ScanState or LoadState log for either the component name that contains the MigXML helper function, or the MigXML helper function title, so that you can locate the related warning in the log file.
 
-## <a href="" id="migration"></a>Migration Problems
+## <a href="" id="migration"></a> Migration Problems
 
 The following sections describe common migration problems. Expand the section to see recommended solutions.
 
-### Files that I specified to exclude are still being migrated.
+### Files that I specified to exclude are still being migrated
 
 **Cause:** There might be another rule that is including the files. If there's a more specific rule or a conflicting rule, the files will be included in the migration.
 
 **Resolution:** For more information, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md) and the Diagnostic Log section in [Log Files](usmt-log-files.md).
 
-### I specified rules to move a folder to a specific location on the destination computer, but it hasn't migrated correctly.
+### I specified rules to move a folder to a specific location on the destination computer, but it hasn't migrated correctly
 
 **Cause:** There might be an error in the XML syntax.
 
@@ -193,7 +192,7 @@ The following sections describe common migration problems. Expand the section to
 
 [Custom XML Examples](usmt-custom-xml-examples.md)
 
-### After LoadState completes, the new desktop background doesn't appear on the destination computer.
+### After LoadState completes, the new desktop background doesn't appear on the destination computer
 
 There are three typical causes for this issue.
 
@@ -211,7 +210,7 @@ There are three typical causes for this issue.
 **Resolution:** Run the ScanState and LoadState tools from within an account with administrative credentials.
  --->
 
-### <a href="" id="i-included-migapp-xml-in-the-migration--but-some-pst-files-aren-t-migrating-"></a>I included MigApp.xml in the migration, but some PST files aren't migrating.
+### <a href="" id="i-included-migapp-xml-in-the-migration--but-some-pst-files-aren-t-migrating-"></a> I included MigApp.xml in the migration, but some PST files aren't migrating
 
 **Cause:** The `MigApp.xml` file migrates only the PST files that are linked to Outlook profiles.
 
@@ -227,35 +226,37 @@ There are three typical causes for this issue.
 
 1. With the user signed in, back up the Start layout using the following Windows PowerShell command. You can specify a different path if desired:
 
-    ```
+    ```powershell
     Export-StartLayout -Path "C:\Layout\user1.xml"
     ```
+
 2. Migrate the user's profile with USMT.
+
 3. Before the user signs in on the new device, import the Start layout using the following Windows PowerShell command:
 
-    ```
+    ```powershell
     Import-StartLayout -LayoutPath "C:\Layout\user1.xml" -MountPath %systemdrive%
     ```
 
 This workaround changes the Default user's Start layout. The workaround doesn't scale to a mass migrations or multiuser devices, but it can potentially unblock some scenarios. If other users will sign on to the device, you should delete layoutmodification.xml from the Default user profile. Otherwise, all users who sign on to that device will use the imported Start layout.
 
-## <a href="" id="bkmk-offline"></a>Offline Migration Problems
+## <a href="" id="bkmk-offline"></a> Offline Migration Problems
 
 The following sections describe common offline migration problems. Expand the section to see recommended solutions.
 
-### Some of my system settings don't migrate in an offline migration.
+### Some of my system settings don't migrate in an offline migration
 
 **Cause:** Some system settings, such as desktop backgrounds and network printers, aren't supported in an offline migration. For more information, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
 **Resolution:** In an offline migration, these system settings must be restored manually.
 
-### The ScanState tool fails with return code 26.
+### The ScanState tool fails with return code 26
 
 **Cause:** A common cause of return code 26 is that a temp profile is active on the source computer. This profile maps to c:\\users\\temp. The ScanState log shows a MigStartupOfflineCaught exception that includes the message "User profile duplicate SID error".
 
 **Resolution:** You can reboot the computer to get rid of the temp profile or you can set MIG\_FAIL\_ON\_PROFILE\_ERROR=0 to skip the error and exclude the temp profile.
 
-### Include and Exclude rules for migrating user profiles don't work the same offline as they do online.
+### Include and Exclude rules for migrating user profiles don't work the same offline as they do online
 
 **Cause:** When offline, the DNS server can't be queried to resolve the user name and SID mapping.
 
@@ -269,7 +270,7 @@ The wild card (\*) at the end of the SID will migrate the *SID*\_Classes key as 
 
 You can also use patterns for SIDs that identify generic users or groups. For example, you can use the `/ue:*-500` option to exclude the local administrator accounts. For more information about Windows SIDs, see [this Microsoft Web site](/troubleshoot/windows-server/identity/security-identifiers-in-windows).
 
-### My script to wipe the disk fails after running the ScanState tool on a 64-bit system.
+### My script to wipe the disk fails after running the ScanState tool on a 64-bit system
 
 **Cause:** The HKLM registry hive isn't unloaded after the ScanState tool has finished running.
 
@@ -279,17 +280,17 @@ You can also use patterns for SIDs that identify generic users or groups. For ex
 reg.exe unload hklm\$dest$software
 ```
 
-## <a href="" id="bkmk-hardlink"></a>Hard-Link Migration Problems
+## <a href="" id="bkmk-hardlink"></a> Hard-Link Migration Problems
 
 The following sections describe common hard-link migration problems. Expand the section to see recommended solutions.
 
-### EFS files aren't restored to the new partition.
+### EFS files aren't restored to the new partition
 
 **Cause:** EFS files can't be moved to a new partition with a hard link. The `/efs:hardlink` command-line option is only applicable to files migrated on the same partition.
 
 **Resolution:** Use the `/efs:copyraw` command-line option to copy EFS files during the migration instead of creating hard links, or manually copy the EFS files from the hard-link store.
 
-### The ScanState tool can't delete a previous hard-link migration store.
+### The ScanState tool can't delete a previous hard-link migration store
 
 **Cause:** The migration store contains hard links to locked files.
 

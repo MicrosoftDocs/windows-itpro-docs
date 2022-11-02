@@ -21,29 +21,29 @@ This article doesn't contain information about how to migrate applications that 
 
 ## In this topic
 
--   [Before You Begin](#bkmk-beforebegin)
+- [Before You Begin](#bkmk-beforebegin)
 
--   [Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer](#bkmk-step1).
+- [Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer](#bkmk-step1).
 
--   [Step 2: Identify settings to collect and determine where each setting is stored on the computer](#bkmk-step2).
+- [Step 2: Identify settings to collect and determine where each setting is stored on the computer](#bkmk-step2).
 
--   [Step 3: Identify how to apply the gathered settings](#bkmk-step3).
+- [Step 3: Identify how to apply the gathered settings](#bkmk-step3).
 
--   [Step 4: Create the migration XML component for the application](#bkmk-step4).
+- [Step 4: Create the migration XML component for the application](#bkmk-step4).
 
--   [Step 5: Test the application settings migration](#bkmk-step5).
+- [Step 5: Test the application settings migration](#bkmk-step5).
 
-## <a href="" id="bkmk-beforebegin"></a>Before You Begin
+## <a href="" id="bkmk-beforebegin"></a> Before You Begin
 
 You should identify a test computer that contains the operating system of your source computers, and the application whose settings you want to migrate. For example, if you're planning on migrating from Windows 7 to Windows 10, install Windows 7 on your test computer and then install the application.
 
-## <a href="" id="bkmk-step1"></a>Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer.
+## <a href="" id="bkmk-step1"></a> Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer
 
 Before USMT migrates the settings, you need it to check whether the application is installed on the source computer, and that it's the correct version. If the application isn't installed on the source computer, you probably don't want USMT to spend time searching for the application's settings. More importantly, if USMT collects settings for an application that isn't installed, it may migrate settings that will cause the destination computer to function incorrectly. You should also investigate whether there's more than one version of the application because the new version may not store the settings in the same place.  Mismatched application versions may lead to unexpected results on the destination computer.
 
 There are many ways to detect if an application is installed. The best practice is to check for an application uninstall key in the registry, and then search the computer for the executable file that installed the application. It's important that you check for both of these items, because sometimes different versions of the same application share the same uninstall key. So even if the key is there, it may not correspond to the version of the application that you want.
 
-### Check the registry for an application uninstall key.
+### Check the registry for an application uninstall key
 
 When many applications are installed (especially those installed using the Microsoft® Windows® Installer technology), an application uninstall key is created under:
 
@@ -61,47 +61,45 @@ Usually, you can find this key by searching under
 
 for the name of the application, the name of the application executable file, or for the name of the company that makes the application. You can use the Registry Editor, `Regedit.exe` located in the `%SystemRoot%`, to search the registry.
 
-### Check the file system for the application executable file.
+### Check the file system for the application executable file
 
 You should also check the application binaries for the executable that installed the application. To check for application binaries, you'll first need to determine where the application is installed and what the name of the executable is. Most applications store the installation location of the application binaries in the registry. You should search the registry for the name of the application, the name of the application executable, or for the name of the company that makes the application, until you find the registry value that contains the installation path. Once you've determined the path to the application executable, you can use the `DoesFileVersionMatch` helper function to check for the correct version of the application executable. For an example of how to use the `DoesFileVersionMatch` helper function, see the Windows Live™ Messenger section of the `MigApp.xml` file.
 
-## <a href="" id="bkmk-step2"></a>Step 2: Identify settings to collect and determine where each setting is stored on the computer.
+## <a href="" id="bkmk-step2"></a> Step 2: Identify settings to collect and determine where each setting is stored on the computer
 
 Next, you should go through the user interface and make a list of all of the available settings. You can reduce the list if there are settings that you don't want to migrate. To determine where each setting is stored, you'll need to change each setting and monitor the activity on the registry and the file system. You don't need to migrate the binary files and registry settings that are made when the application is installed because you'll need to reinstall the application onto the destination computer. You only need to migrate those settings that are customizable.
 
-### <a href="" id="bkmkdetermine"></a>
+### How to determine where each setting is stored
 
-**How To Determine Where Each Setting is Stored**
+1. Download a file and registry monitoring tool, such as the Regmon and Filemon tools, from the [Windows Sysinternals Web site](/sysinternals/).
 
-1.  Download a file and registry monitoring tool, such as the Regmon and Filemon tools, from the [Windows Sysinternals Web site](/sysinternals/).
+2. Shut down as many applications as possible to limit the registry and file system activity on the computer.
 
-2.  Shut down as many applications as possible to limit the registry and file system activity on the computer.
+3. Filter the output of the tools so it only displays changes being made by the application.
 
-3.  Filter the output of the tools so it only displays changes being made by the application.
-
-     > [!Note]
+     > [!NOTE]
      > Most applications store their settings under the user profile. That is, the settings stored in the file system are under the `%UserProfile%` directory, and the settings stored in the registry are under the `HKEY_CURRENT_USER` hive. For these applications you can filter the output of the file and registry monitoring tools to show activity only under these locations. This will considerably reduce the amount of output that you will need to examine.
 
-4.  Start the monitoring tool(s), change a setting, and look for registry and file system writes that occurred when you changed the setting. Make sure the changes you make actually take effect. For example, if you're changing a setting in Microsoft Word by selecting a check box in the **Options** dialog box, the change typically won't take effect until you close the dialog box by clicking **OK**.
+4. Start the monitoring tool(s), change a setting, and look for registry and file system writes that occurred when you changed the setting. Make sure the changes you make actually take effect. For example, if you're changing a setting in Microsoft Word by selecting a check box in the **Options** dialog box, the change typically won't take effect until you close the dialog box by clicking **OK**.
 
-5.  When the setting is changed, note the changes to the file system and registry. There may be more than one file or registry values for each setting. You should identify the minimal set of file and registry changes that are required to change this setting. This set of files and registry keys is what you will need to migrate in order to migrate the setting.
+5. When the setting is changed, note the changes to the file system and registry. There may be more than one file or registry values for each setting. You should identify the minimal set of file and registry changes that are required to change this setting. This set of files and registry keys is what you will need to migrate in order to migrate the setting.
 
-     > [!Note]
+     > [!NOTE]
      > Changing an application setting invariably leads to writing to registry keys. If possible, filter the output of the file and registry monitor tool to display only writes to files and registry keys/values.
 
-## <a href="" id="bkmk-step3"></a>Step 3: Identify how to apply the gathered settings.
+## <a href="" id="bkmk-step3"></a> Step 3: Identify how to apply the gathered settings
 
 If the version of the application on the source computer is the same as the one on the destination computer, then you don't have to modify the collected files and registry keys. By default, USMT migrates the files and registry keys from the source location to the corresponding location on the destination computer. For example, if a file was collected from the `C:\Documents and Settings\User1\My Documents` folder and the profile directory on the destination computer is located at `D:\Users\User1`, then USMT will automatically migrate the file to `D:\Users\User1\My Documents`. However, you may need to modify the location of some settings in the following three cases:
 
-### Case 1: The version of the application on the destination computer is newer than the one on the source computer.
+### Case 1: The version of the application on the destination computer is newer than the one on the source computer
 
 In this case, the newer version of the application may be able to read the settings from the source computer without modification. That is, the data collected from an older version of the application is sometimes compatible with the newer version of the application. However, you may need to modify the setting location if either of the following conditions is true:
 
--   **The newer version of the application has the ability to import settings from an older version.** This mapping usually happens the first time a user runs the newer version after the settings have been migrated. Some applications import settings automatically after settings are migrated. However, other applications will only do import settings if the application was upgraded from the older version. When the application is upgraded, a set of files and/or registry keys is installed that indicates the older version of the application was previously installed. If you perform a clean installation of the newer version (which is the case in most migrations), the computer doesn't contain this set of files and registry keys so the mapping doesn't occur. In order to trick the newer version of the application into initiating this import process, your migration script may need to create these files and/or registry keys on the destination computer.
+- **The newer version of the application has the ability to import settings from an older version.** This mapping usually happens the first time a user runs the newer version after the settings have been migrated. Some applications import settings automatically after settings are migrated. However, other applications will only do import settings if the application was upgraded from the older version. When the application is upgraded, a set of files and/or registry keys is installed that indicates the older version of the application was previously installed. If you perform a clean installation of the newer version (which is the case in most migrations), the computer doesn't contain this set of files and registry keys so the mapping doesn't occur. In order to trick the newer version of the application into initiating this import process, your migration script may need to create these files and/or registry keys on the destination computer.
 
-    To identify which files and/or registry keys/values need to be created to cause the import, you should upgrade the older version of the application to the newer one and monitor the changes made to the file system and registry by using the same process described in [How To determine where each setting is stored](#bkmkdetermine). Once you know the set of files that the computer needs, you can use the **&lt;addObjects&gt;** element to add them to the destination computer.
+    To identify which files and/or registry keys/values need to be created to cause the import, you should upgrade the older version of the application to the newer one and monitor the changes made to the file system and registry by using the same process described in [How to determine where each setting is stored](#how-to-determine-where-each-setting-is-stored). Once you know the set of files that the computer needs, you can use the **&lt;addObjects&gt;** element to add them to the destination computer.
 
--   [The newer version of the application can't read settings from the source computer and it's also unable to import the settings into the new format.](#bkmkdetermine) In this case, you'll need to create a mapping for each setting from the old locations to the new locations. To create the mapping, determine where the newer version stores each setting using the process described in [How To determine where each setting is stored](#bkmkdetermine). After you've created the mapping, apply the settings to the new location on the destination computer using the **&lt;locationModify&gt;** element, and the `RelativeMove` and `ExactMove` helper functions.
+- **The newer version of the application can't read settings from the source computer and it's also unable to import the settings into the new format.** In this case, you'll need to create a mapping for each setting from the old locations to the new locations. To create the mapping, determine where the newer version stores each setting using the process described in [How to determine where each setting is stored](#how-to-determine-where-each-setting-is-stored). After you've created the mapping, apply the settings to the new location on the destination computer using the **&lt;locationModify&gt;** element, and the `RelativeMove` and `ExactMove` helper functions.
 
 ### Case 2: The destination computer already contains settings for the application.
 
@@ -115,29 +113,29 @@ We recommend that you migrate the settings after you install the application, bu
 
 After you have completed steps 1 through 3, you'll need to create a custom migration .xml file that migrates the application based on the information that you now have. You can use the `MigApp.xml` file as a model because it contains examples of many of the concepts discussed in this article. You can also see [Custom XML Examples](usmt-custom-xml-examples.md) for another sample .xml file.
 
- > [!Note]
+ > [!NOTE]
  > We recommend that you create a separate .xml file instead of adding your script to the `MigApp.xml` file. This is because the `MigApp.xml` file is a very large file and it will be difficult to read and edit. In addition, if you reinstall USMT for some reason, the `MigApp.xml` file will be overwritten by the default version of the file and you will lose your customized version.
 
-> [!Important]
+> [!IMPORTANT]
 > Some applications store information in the user profile that should not be migrated (for example, application installation paths, the computer name, and so on). You should make sure to exclude these files and registry keys from the migration.
 
 Your script should do the following actions:
 
-1.  Check whether the application and correct version is installed by:
+1. Check whether the application and correct version is installed by:
 
-    -   Searching for the installation uninstall key under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall` using the `DoesObjectExist` helper function.
+    - Searching for the installation uninstall key under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall` using the `DoesObjectExist` helper function.
 
-    -   Checking for the correct version of the application executable file using the `DoesFileVersionMatch` helper function.
+    - Checking for the correct version of the application executable file using the `DoesFileVersionMatch` helper function.
 
-2.  If the correct version of the application is installed, then ensure that each setting is migrated to the appropriate location on the destination computer.
+2. If the correct version of the application is installed, then ensure that each setting is migrated to the appropriate location on the destination computer.
 
-    -   If the versions of the applications are the same on both the source and destination computers, migrate each setting using the **&lt;include&gt;** and **&lt;exclude&gt;** elements.
+    - If the versions of the applications are the same on both the source and destination computers, migrate each setting using the **&lt;include&gt;** and **&lt;exclude&gt;** elements.
 
-    -   If the version of the application on the destination computer is newer than the one on the source computer, and the application can't import the settings, your script should either:
+    - If the version of the application on the destination computer is newer than the one on the source computer, and the application can't import the settings, your script should either:
         1. Add the set of files that trigger the import using the **&lt;addObjects&gt;** element
         2. Create a mapping that applies the old settings to the correct location on the destination computer using the **&lt;locationModify&gt;** element, and the `RelativeMove` and `ExactMove` helper functions.
 
-    -   If you must install the application before migrating the settings, delete any settings that are already on the destination computer using the **&lt;destinationCleanup&gt;** element.
+    - If you must install the application before migrating the settings, delete any settings that are already on the destination computer using the **&lt;destinationCleanup&gt;** element.
 
 For information about the .xml elements and helper functions, see [XML Elements Library](usmt-xml-elements-library.md).
 
