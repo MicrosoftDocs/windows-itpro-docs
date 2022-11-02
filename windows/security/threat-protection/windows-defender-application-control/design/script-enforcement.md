@@ -64,7 +64,7 @@ If any WDAC policy is active that enables script enforcement, even if that polic
 
 ### COM objects
 
-WDAC additionally enforces a restricted allowlist for COM objects that can be expanded or further restricted by your WDAC policy. For more information on how to allow or deny COM objects, see [Allow COM object registration](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy).
+WDAC additionally enforces a restricted allowlist for COM objects that can be expanded or further restricted by your WDAC policy. COM object enforcement **isn't** affected by option **11 Disabled:Script Enforcement**. For more information on how to allow or deny COM objects, see [Allow COM object registration](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy).
 
 ## Scripts that aren't directly controlled by WDAC
 
