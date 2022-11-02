@@ -15,7 +15,12 @@ ms.date: 11/01/2022
 
 ## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
 
-The following is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
+The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
+
+**Template**
+<br>
+<details>
+  <summary>Expand to show Example 1 application template:</summary>
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
@@ -80,26 +85,30 @@ The following is a template for the sections that you need to migrate your appli
   </component>
 </migration>
 ```
+</details>
 
 ## <a href="" id="example2"></a>Example 2: Migrating the My Videos Folder
 
-The following sample is a custom .xml file named CustomFile.xml that migrates My Videos for all users, if the folder exists on the source computer.
+The following sample is a custom .xml file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
 
-- **Sample condition**: Verifies that My Videos exists on the source computer:
+- **Sample condition**: Verifies that **My Videos** exists on the source computer:
 
   `<condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>`
 
-- **Sample filter**: Filters out the shortcuts in My Videos that don't resolve on the destination computer:
+- **Sample filter**: Filters out the shortcuts in **My Videos** that don't resolve on the destination computer:
 
   `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
 
-  This has no effect on files that aren't shortcuts. For example, if there's a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in **My Videos** on the source computer that points to `C:\Folder1`, that shortcut will be migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
 
-- **Sample pattern**: Migrates My Videos for all users:
+- **Sample pattern**: Migrates **My Videos** for all users:
 
   `<pattern type="File">%CSIDL_MYVIDEO%* [*]</pattern>`
 
 **XML file**
+<br>
+<details>
+  <summary>Expand to show Example 2 XML file:</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,12 +132,13 @@ The following sample is a custom .xml file named CustomFile.xml that migrates My
     </component>
 </migration>
 ```
+</details>
 
 ## <a href="" id="example3"></a>Example 3: Migrating Files and Registry Keys
 
 The sample patterns describe the behavior in the following example .xml file.
 
-- **Sample pattern**: Migrates all instances of the file Usmttestfile.txt from all subdirectories under `%ProgramFiles%\USMTTestFolder`:
+- **Sample pattern**: Migrates all instances of the file `Usmttestfile.txt` from all subdirectories under `%ProgramFiles%\USMTTestFolder`:
 
   `<pattern type="File">%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]</pattern>`
 
@@ -145,6 +155,9 @@ The sample patterns describe the behavior in the following example .xml file.
   `<pattern type="Registry">HKLM\Software\USMTTESTKEY* []</pattern>`
 
 **XML file**
+<br>
+<details>
+  <summary>Expand to show Example 3 XML file:</summary>
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
@@ -176,11 +189,16 @@ The sample patterns describe the behavior in the following example .xml file.
  </component>
 </migration>
 ```
+</details>
 
 ## <a href="" id="example4"></a>Example 4: Migrating Specific Folders from Various Locations
 
-
 The behavior for this custom .xml file is described within the `<displayName>` tags in the code.
+
+**XML file**
+<br>
+<details>
+  <summary>Expand to show Example 4 XML file:</summary>
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -250,8 +268,9 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 </component>
 </migration>
 ```
+</details>
 
-## Related topics
+## Related articles
 
 [USMT XML Reference](usmt-xml-reference.md)
 
