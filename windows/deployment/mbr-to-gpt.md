@@ -46,8 +46,8 @@ Offline conversion of system disks with earlier versions of Windows installed, s
 Before any change to the disk is made, MBR2GPT validates the layout and geometry of the selected disk to ensure that:
 - The disk is currently using MBR
 - There's enough space not occupied by partitions to store the primary and secondary GPTs:
-  - 16KB + 2 sectors at the front of the disk
-  - 16KB + 1 sector at the end of the disk
+  - 16 KB + 2 sectors at the front of the disk
+  - 16 KB + 1 sector at the end of the disk
 - There are at most three primary partitions in the MBR partition table
 - One of the partitions is set as active and is the system partition
 - The disk doesn't have any extended/logical partition
@@ -69,7 +69,7 @@ If any of these checks fails, the conversion won't proceed, and an error will be
 |/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
 |/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
 |/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
-|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexadecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
+|/map:\<source\>=\<destination\>| Specifies other partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexadecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
 |/allowFullOS| By default, MBR2GPT.exe is blocked unless it's run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment. <br>**Note**: Since the existing MBR system partition is in use while running the full Windows environment, it can't be reused. In this case, a new ESP is created by shrinking the OS partition.|
 
 ## Examples
@@ -237,11 +237,11 @@ For Windows to remain bootable after the conversion, an EFI system partition (ES
 
 1. The existing MBR system partition is reused if it meets these requirements:
    1. It isn't also the OS or Windows Recovery Environment partition.
-   1. It is at least 100MB (or 260MB for 4K sector size disks) in size.
-   1. It's less than or equal to 1GB in size. This is a safety precaution to ensure it isn't a data partition.
+   1. It is at least 100 MB (or 260 MB for 4K sector size disks) in size.
+   1. It's less than or equal to 1 GB in size. This size is a safety precaution to ensure it isn't a data partition.
    1. The conversion isn't being performed from the full OS. In this case, the existing MBR system partition is in use and can't be repurposed.
 
-2. If the existing MBR system partition can't be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100MB (or 260MB for 4K sector size disks) and is formatted FAT32.
+2. If the existing MBR system partition can't be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100 MB (or 260 MB for 4K sector size disks) and is formatted FAT32.
 
 If the existing MBR system partition isn't reused for the ESP, it's no longer used by the boot process after the conversion. Other partitions aren't modified.
 
@@ -408,7 +408,7 @@ When you start a Windows 10, version 1903-based computer in the Windows Preinsta
 
 **Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there's no output from the tool.
 
-**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Endpoint Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
+**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
 
 #### Cause
 
@@ -416,7 +416,7 @@ This issue occurs because in Windows 10, version 1903 and later versions, MBR2GP
 
 #### Workaround
 
-To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. To do this, follow these steps:
+To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. Use follow these steps:
 
 1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
 
