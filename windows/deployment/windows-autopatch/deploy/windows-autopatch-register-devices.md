@@ -134,7 +134,7 @@ Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID
 
 **To register devices with Windows Autopatch:**
 
-1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com/).
+1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Devices**.
 4. Select either the **Ready** or the **Not registered** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
