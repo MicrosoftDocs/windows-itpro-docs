@@ -96,7 +96,7 @@ To gain a deeper understanding of the Delivery Optimization client-service commu
 
 ## Set up Delivery Optimization for Windows
 
-[Learn more](waas-delivery-optimization-setup.md) about the Delivery Optimization settings to ensure proper set up in your environment.
+[Learn more](waas-delivery-optimization-setup.md) about the Delivery Optimization settings to ensure proper setup in your environment.
 
 ## Delivery Optimization reference
 
