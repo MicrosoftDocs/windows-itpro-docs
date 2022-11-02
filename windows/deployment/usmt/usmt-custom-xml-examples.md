@@ -13,7 +13,7 @@ ms.date: 11/01/2022
 
 # Custom XML Examples
 
-## <a href="" id="example"></a> Example 1: Migrating an Unsupported Application
+## Example 1: Migrating an unsupported application
 
 The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
 
@@ -88,7 +88,7 @@ The following template is a template for the sections that you need to migrate y
 
 </details>
 
-## <a href="" id="example2"></a> Example 2: Migrating the My Videos Folder
+## Example 2: Migrating the My Videos folder
 
 The following sample is a custom .xml file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
 
@@ -136,7 +136,7 @@ The following sample is a custom .xml file named `CustomFile.xml` that migrates 
 
 </details>
 
-## <a href="" id="example3"></a> Example 3: Migrating Files and Registry Keys
+## Example 3: Migrating files and registry keys
 
 The sample patterns describe the behavior in the following example .xml file.
 
@@ -194,7 +194,7 @@ The sample patterns describe the behavior in the following example .xml file.
 
 </details>
 
-## <a href="" id="example4"></a> Example 4: Migrating Specific Folders from Various Locations
+## Example 4: Migrating specific folders from various locations
 
 The behavior for this custom .xml file is described within the `<displayName>` tags in the code.
 

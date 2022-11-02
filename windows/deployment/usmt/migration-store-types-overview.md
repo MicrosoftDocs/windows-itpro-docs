@@ -17,13 +17,13 @@ When planning your migration, you should determine which migration store type be
 
 ## In this topic
 
-[Migration Store Types](#bkmk-types)
+[Migration Store Types](#migration-store-types)
 
-[Local Store vs. Remote Store](#bkmk-localvremote)
+[Local Store vs. Remote Store](#local-store-vs-remote-store)
 
-[The /localonly Command-Line Option](#bkmk-localonly)
+[The /localonly Command-Line Option](#the-localonly-command-line-option)
 
-## <a href="" id="bkmk-types"></a> Migration Store Types
+## Migration store types
 
 This section describes the three migration store types available in USMT.
 
@@ -45,7 +45,7 @@ The following flowchart illustrates the procedural differences between a local m
 
 ![migration store comparison.](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
 
-## <a href="" id="bkmk-localvremote"></a> Local Store vs. Remote Store
+## Local store vs. remote store
 
 If you have enough space and you're migrating the user state back to the same computer, storing data on a local device is normally the best option to reduce server storage costs and network performance issues. You can store the data locally either on a different partition or on a removable device such as a USB flash drive (UFD). Also, depending on the imaging technology that you're using, you might be able to store the data on the partition that is being re-imaged, if the data will be protected from deletion during the process. To increase performance, store the data on high-speed drives that use a high-speed network connection. It's also good practice to ensure that the migration is the only task the server is performing.
 
@@ -54,7 +54,7 @@ If there isn't enough local disk space, or if you're moving the user state to an
 > [!IMPORTANT]
 > If possible, have users store their data within their `%UserProfile%\My Documents` and `%UserProfile%\Application Data` folders. This will reduce the chance of USMT missing critical user data that is located in a directory that USMT is not configured to check.
 
-### <a href="" id="bkmk-localonly"></a> The /localonly Command-Line Option
+### The /localonly command-line option
 
 You should use this option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when you specify `/LocalOnly`, see [ScanState Syntax](usmt-scanstate-syntax.md).
 

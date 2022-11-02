@@ -21,23 +21,23 @@ This article doesn't contain information about how to migrate applications that 
 
 ## In this topic
 
-- [Before You Begin](#bkmk-beforebegin)
+- [Before You Begin](#before-you-begin)
 
-- [Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer](#bkmk-step1).
+- [Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer](#step-1-verify-that-the-application-is-installed-on-the-source-computer-and-that-its-the-same-version-as-the-version-to-be-installed-on-the-destination-computer).
 
-- [Step 2: Identify settings to collect and determine where each setting is stored on the computer](#bkmk-step2).
+- [Step 2: Identify settings to collect and determine where each setting is stored on the computer](#step-2-identify-settings-to-collect-and-determine-where-each-setting-is-stored-on-the-computer).
 
-- [Step 3: Identify how to apply the gathered settings](#bkmk-step3).
+- [Step 3: Identify how to apply the gathered settings](#step-3-identify-how-to-apply-the-gathered-settings).
 
-- [Step 4: Create the migration XML component for the application](#bkmk-step4).
+- [Step 4: Create the migration XML component for the application](#step-4-create-the-migration-xml-component-for-the-application).
 
-- [Step 5: Test the application settings migration](#bkmk-step5).
+- [Step 5: Test the application settings migration](#step-5-test-the-application-settings-migration).
 
-## <a href="" id="bkmk-beforebegin"></a> Before You Begin
+## Before you begin
 
 You should identify a test computer that contains the operating system of your source computers, and the application whose settings you want to migrate. For example, if you're planning on migrating from Windows 7 to Windows 10, install Windows 7 on your test computer and then install the application.
 
-## <a href="" id="bkmk-step1"></a> Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer
+## Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer
 
 Before USMT migrates the settings, you need it to check whether the application is installed on the source computer, and that it's the correct version. If the application isn't installed on the source computer, you probably don't want USMT to spend time searching for the application's settings. More importantly, if USMT collects settings for an application that isn't installed, it may migrate settings that will cause the destination computer to function incorrectly. You should also investigate whether there's more than one version of the application because the new version may not store the settings in the same place.  Mismatched application versions may lead to unexpected results on the destination computer.
 
@@ -65,7 +65,7 @@ for the name of the application, the name of the application executable file, or
 
 You should also check the application binaries for the executable that installed the application. To check for application binaries, you'll first need to determine where the application is installed and what the name of the executable is. Most applications store the installation location of the application binaries in the registry. You should search the registry for the name of the application, the name of the application executable, or for the name of the company that makes the application, until you find the registry value that contains the installation path. Once you've determined the path to the application executable, you can use the `DoesFileVersionMatch` helper function to check for the correct version of the application executable. For an example of how to use the `DoesFileVersionMatch` helper function, see the Windows Live™ Messenger section of the `MigApp.xml` file.
 
-## <a href="" id="bkmk-step2"></a> Step 2: Identify settings to collect and determine where each setting is stored on the computer
+## Step 2: Identify settings to collect and determine where each setting is stored on the computer
 
 Next, you should go through the user interface and make a list of all of the available settings. You can reduce the list if there are settings that you don't want to migrate. To determine where each setting is stored, you'll need to change each setting and monitor the activity on the registry and the file system. You don't need to migrate the binary files and registry settings that are made when the application is installed because you'll need to reinstall the application onto the destination computer. You only need to migrate those settings that are customizable.
 
@@ -87,7 +87,7 @@ Next, you should go through the user interface and make a list of all of the ava
      > [!NOTE]
      > Changing an application setting invariably leads to writing to registry keys. If possible, filter the output of the file and registry monitor tool to display only writes to files and registry keys/values.
 
-## <a href="" id="bkmk-step3"></a> Step 3: Identify how to apply the gathered settings
+## Step 3: Identify how to apply the gathered settings
 
 If the version of the application on the source computer is the same as the one on the destination computer, then you don't have to modify the collected files and registry keys. By default, USMT migrates the files and registry keys from the source location to the corresponding location on the destination computer. For example, if a file was collected from the `C:\Documents and Settings\User1\My Documents` folder and the profile directory on the destination computer is located at `D:\Users\User1`, then USMT will automatically migrate the file to `D:\Users\User1\My Documents`. However, you may need to modify the location of some settings in the following three cases:
 
@@ -101,15 +101,15 @@ In this case, the newer version of the application may be able to read the setti
 
 - **The newer version of the application can't read settings from the source computer and it's also unable to import the settings into the new format.** In this case, you'll need to create a mapping for each setting from the old locations to the new locations. To create the mapping, determine where the newer version stores each setting using the process described in [How to determine where each setting is stored](#how-to-determine-where-each-setting-is-stored). After you've created the mapping, apply the settings to the new location on the destination computer using the **&lt;locationModify&gt;** element, and the `RelativeMove` and `ExactMove` helper functions.
 
-### Case 2: The destination computer already contains settings for the application.
+### Case 2: The destination computer already contains settings for the application
 
 We recommend that you migrate the settings after you install the application, but before the user runs the application for the first time. We recommend this process because this process ensures that there are no settings on the destination computer when you migrate the settings. If you must install the application before the migration, you should delete any existing settings using the **&lt;destinationCleanup&gt;** element. If for any reason you want to preserve the settings that are on the destination computer, you can use the **&lt;merge&gt;** element and `DestinationPriority` helper function.
 
-### Case 3: The application overwrites settings when it's installed.
+### Case 3: The application overwrites settings when it's installed
 
 We recommend that you migrate the settings after you install the application, but before the user runs the application for the first time. We recommend this process because this process ensures that there are no settings on the destination computer when you migrate the settings. Also, when some applications are installed, they overwrite any existing settings that are on the computer. In this scenario, if you migrated the data before you installed the application, your customized settings would be overwritten. This scenario is common for applications that store settings in locations that are outside of the user profile (typically these settings are settings that apply to all users). These universal settings are sometimes overwritten when an application is installed, and they're replaced by default values. To avoid this problem, you must install these applications before migrating the files and settings to the destination computer. By default with USMT, data from the source computer overwrites data that already exists in the same location on the destination computer.
 
-## <a href="" id="bkmk-step4"></a>Step 4: Create the migration XML component for the application
+## Step 4: Create the migration XML component for the application
 
 After you have completed steps 1 through 3, you'll need to create a custom migration .xml file that migrates the application based on the information that you now have. You can use the `MigApp.xml` file as a model because it contains examples of many of the concepts discussed in this article. You can also see [Custom XML Examples](usmt-custom-xml-examples.md) for another sample .xml file.
 
@@ -139,7 +139,7 @@ Your script should do the following actions:
 
 For information about the .xml elements and helper functions, see [XML Elements Library](usmt-xml-elements-library.md).
 
-## <a href="" id="bkmk-step5"></a>Step 5: Test the application settings migration
+## Step 5: Test the application settings migration
 
 On a test computer, install the operating system that will be installed on the destination computers. For example, if you're planning on migrating from Windows 7 to Windows 10, install Windows 10 and the application. Next, run LoadState on the test computer and verify that all settings migrate. Make corrections if necessary and repeat the process until all the necessary settings are migrated correctly.
 

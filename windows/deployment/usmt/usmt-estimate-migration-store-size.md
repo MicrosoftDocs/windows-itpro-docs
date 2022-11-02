@@ -21,7 +21,7 @@ The disk space requirements for a migration are dependent on the size of the mig
 
 - [Calculate Disk Space Requirements Using the ScanState Tool](#calculate-disk-space-requirements-using-the-scanstate-tool): Describes how to use the ScanState tool to determine how large the migration store will be on a particular computer.
 
-- [Estimate Migration Store Size](#estimate-migration-store-size): Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
+- [Estimating Migration Store Size](#estimating-migration-store-size): Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
 
 ## Hard disk space requirements
 
@@ -96,7 +96,7 @@ The space requirements report provides two elements, &lt;**storeSize**&gt; and &
 
 Additionally, USMT performs a compliance check for a required minimum of 250 MB of available disk space and won't create a store if the compliance check fails.
 
-## Estimate migration store size
+## Estimating migration store size
 
 Determine how much space you'll need to store the migrated data. You should base your calculations on the volume of e-mail, personal documents, and system settings for each user. The best way to estimate the required space is to survey several computers to arrive at an average for the size of the store that you'll need.
 

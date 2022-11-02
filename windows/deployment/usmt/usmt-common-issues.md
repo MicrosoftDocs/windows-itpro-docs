@@ -17,17 +17,17 @@ The following sections discuss common issues that you might see when you run the
 
 ## In this topic
 
-[User Account Problems](#user)
+[User account problems](#user-account-problems)
 
-[Command-line Problems](#command)
+[Command-line problems](#command-line-problems)
 
-[XML File Problems](#xml)
+[XML file problems](#xml-file-problems)
 
-[Migration Problems](#migration)
+[Migration problems](#migration-problems)
 
-[Offline Migration Problems](#bkmk-offline)
+[Offline migration problems](#offline-migration-problems)
 
-[Hard Link Migration Problems](#bkmk-hardlink)
+[Hard link migration problems](#hard-link-migration-problems)
 
 [USMT doesn't migrate the Start layout](#usmt-doesnt-migrate-the-start-layout)
 
@@ -57,7 +57,7 @@ When you encounter a problem or error message during migration, you can use the 
   > [!NOTE]
   > USMT will fail if it can't migrate a file or setting unless you specify the `/c` option. When you specify the `/c` option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that didn't migrate.
 
-## <a href="" id="user"></a> User Account Problems
+## User account problems
 
 The following sections describe common user account problems. Expand the section to see recommended solutions.
 
@@ -128,7 +128,7 @@ loadstate.exe /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore
 /progress:prog.log /l:load.log /mu:fareast\user1:farwest\user1
 ```
 
-## <a href="" id="command"></a> Command-line Problems
+## Command-line problems
 
 The following sections describe common command-line problems. Expand the section to see recommended solutions.
 
@@ -144,7 +144,7 @@ The following sections describe common command-line problems. Expand the section
 
 **Resolution:** To fix this issue in this scenario, specify the `/l:scan.log` or `/l:load.log` option.
 
-## <a href="" id="xml"></a> XML File Problems
+## XML file problems
 
 The following sections describe common XML file problems. Expand the section to see recommended solutions.
 
@@ -160,13 +160,13 @@ The following sections describe common XML file problems. Expand the section to 
 
 **Resolution:** You can load the XML schema file `MigXML.xsd` into your XML authoring tool. `MigXML.xsd` is included with USMT. For examples, see the [Visual Studio Development Center](https://go.microsoft.com/fwlink/p/?LinkId=74513). Then, load your .xml file in the authoring tool to see if there's a syntax error. For more information about using the XML elements, see [USMT XML Reference](usmt-xml-reference.md).
 
-### <a href="" id="i-am-using-a-migxml-helper-function--but-the-migration-isn-t-working-the-way-i-expected-it-to---how-do-i-troubleshoot-this-issue-"></a> I'm using a MigXML helper function, but the migration isn't working the way I expected it to.  How do I troubleshoot this issue?
+### I'm using a MigXML helper function, but the migration isn't working the way I expected it to.  How do I troubleshoot this issue?
 
 **Cause:** Typically, this issue is caused by incorrect syntax used in a helper function. You receive a Success return code, but the files you wanted to migrate didn't get collected or applied, or weren't collected or applied in the way you expected.
 
 **Resolution:** You should search the ScanState or LoadState log for either the component name that contains the MigXML helper function, or the MigXML helper function title, so that you can locate the related warning in the log file.
 
-## <a href="" id="migration"></a> Migration Problems
+## Migration problems
 
 The following sections describe common migration problems. Expand the section to see recommended solutions.
 
@@ -210,7 +210,7 @@ There are three typical causes for this issue.
 **Resolution:** Run the ScanState and LoadState tools from within an account with administrative credentials.
  --->
 
-### <a href="" id="i-included-migapp-xml-in-the-migration--but-some-pst-files-aren-t-migrating-"></a> I included MigApp.xml in the migration, but some PST files aren't migrating
+### I included MigApp.xml in the migration, but some PST files aren't migrating
 
 **Cause:** The `MigApp.xml` file migrates only the PST files that are linked to Outlook profiles.
 
@@ -240,7 +240,7 @@ There are three typical causes for this issue.
 
 This workaround changes the Default user's Start layout. The workaround doesn't scale to a mass migrations or multiuser devices, but it can potentially unblock some scenarios. If other users will sign on to the device, you should delete layoutmodification.xml from the Default user profile. Otherwise, all users who sign on to that device will use the imported Start layout.
 
-## <a href="" id="bkmk-offline"></a> Offline Migration Problems
+## Offline migration problems
 
 The following sections describe common offline migration problems. Expand the section to see recommended solutions.
 
@@ -280,7 +280,7 @@ You can also use patterns for SIDs that identify generic users or groups. For ex
 reg.exe unload hklm\$dest$software
 ```
 
-## <a href="" id="bkmk-hardlink"></a> Hard-Link Migration Problems
+## Hard-Link Migration Problems
 
 The following sections describe common hard-link migration problems. Expand the section to see recommended solutions.
 
