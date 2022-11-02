@@ -18,40 +18,39 @@ appliesto:
 ---
 # Hybrid cloud Kerberos trust deployment
 
-Windows Hello for Business replaces password Windows sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
+Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
 
 ## Introduction to cloud Kerberos trust
 
-The goal of **Windows Hello for Business cloud Kerberos trust** is to bring the simplified deployment experience of [*passwordless security key sign in*][AZ-1] to Windows Hello for Business.\
-This deployment model can be used for new or existing Windows Hello for Business deployments.
+The goal of **Windows Hello for Business cloud Kerberos trust** is to bring the simplified deployment experience of [*passwordless security key sign-in*][AZ-1] to Windows Hello for Business, and it can be used for new or existing Windows Hello for Business deployments.
 
-*Windows Hello for Business cloud Kerberos trust* leverages **Azure AD Kerberos**, which enables a simpler deployment when compared to the *key trust model*:
+*Windows Hello for Business cloud Kerberos trust* uses **Azure AD Kerberos**, which enables a simpler deployment when compared to the *key trust model*:
 
 - No need to deploy a public key infrastructure (PKI) or to change an existing PKI
 - No need to synchronize public keys between Azure AD and Active Directory for users to access on-premises resources. This means that there isn't delay between the user's WHFB provisioning and being able to authenticate to Active Directory
-- [Passwordless security key sign in][AZ-1] can be deployed with minimal extra setup
+- [Passwordless security key sign-in][AZ-1] can be deployed with minimal extra setup
 
 > [!NOTE]
 > Windows Hello for Business cloud Kerberos trust is the recommended deployment model when compared to the *key trust model*. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
 
 ## Azure AD Kerberos and cloud Kerberos trust authentication
 
-*Key trust* and *certificate trust* use certificate authentication based Kerberos for requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.\
-Single sign-on (SSO) to on-premises resources from *Azure AD-joined devices* requires to publish a certificate revocation list (CRL) to a public endpoint.
+*Key trust* and *certificate trust* use certificate authentication-based Kerberos for requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.\
+For *Azure AD joined devices* to have single sign-on (SSO) to on-premises resources protected by Active Directory, they must trust and validate the DC certificates. For this to happen, a certificate revocation list (CRL) must be published to an endpoint accessible by the Azure AD joined devices.
 
-*Cloud Kerberos trust* uses *Azure AD Kerberos*, which doesn't require any of the above PKI to get the user a TGT.
+*Cloud Kerberos trust* uses *Azure AD Kerberos*, which doesn't require any of the above PKI to request TGTs.
 
-With *Azure AD Kerberos*, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for logon or to access traditional AD-based resources. Kerberos service tickets and authorization continue to be controlled the on-premises Domain Controllers.
+With *Azure AD Kerberos*, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for logon or to access traditional AD-based resources. Kerberos service tickets and authorization continue to be controlled by the on-premises Domain Controllers.
 
 When *Azure AD Kerberos* is enabled in an Active Directory domain, an *Azure AD Kerberos server object* is created in the domain. This object:
 
 - Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
 - Is only used by Azure AD to generate TGTs for the Active Directory domain. The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object
 
-:::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object represnenting the Azure AD Kerberos server ":::
+:::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Azure AD Kerberos server ":::
 
-For more details how Azure AD Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][AZ-1].\
-For more information how Azure AD Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-kerberos-trust).
+For more information about how Azure AD Kerberos enables access to on-premises resources, see [enabling passwordless security key sign-in to on-premises resources][AZ-1].\
+For more information about how Azure AD Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-kerberos-trust).
 
 > [!IMPORTANT]
 > When implementing the *hybrid cloud Kerberos trust* deployment model, you *must* ensure that you have an adequate number of *read-write domain controllers* in each Active Directory site where users will be authenticating with Windows Hello for Business. For more information, see [Capacity planning for Active Directory][SERV-1].
@@ -91,7 +90,7 @@ Deploying *Windows Hello for Business cloud Kerberos trust* consists of two step
 
 If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Azure AD Kerberos in your hybrid environment. You don't need to redeploy or change your existing Azure AD Kerberos deployment to support Windows Hello for Business and you can skip this section.
 
-If you haven't deployed Azure AD Kerberos, follow the instructions in the [Enable passwordless security key sign-in to on-premises resources by using Azure AD][AZ-2] documentation. This page includes information on how to install and use the Azure AD Kerberos Powershell module. Use the module to create an Azure AD Kerberos Server object for the domains where you want to use Windows Hello for Business cloud Kerberos trust.
+If you haven't deployed Azure AD Kerberos, follow the instructions in the [Enable passwordless security key sign-in to on-premises resources by using Azure AD][AZ-2] documentation. This page includes information on how to install and use the Azure AD Kerberos PowerShell module. Use the module to create an Azure AD Kerberos Server object for the domains where you want to use Windows Hello for Business cloud Kerberos trust.
 
 ### Configure Windows Hello for Business policy
 
@@ -105,7 +104,7 @@ The cloud Kerberos trust policy needs to be configured using a custom template a
 
 ### Enable Windows Hello for Business
 
-If you already enabled Windows Hello for Business for a target set of users or devices, you can skip below to configuring the cloud Kerberos trust policy. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello) to create a Windows Hello for Business device enrollment policy.
+If you already enabled Windows Hello for Business, you can skip to **configure the cloud Kerberos trust policy**. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello) to create a Windows Hello for Business device enrollment policy.
 
 You can also follow these steps to create a device configuration policy instead of using the device enrollment policy:
 
@@ -188,10 +187,10 @@ This information is also available using the `dsregcmd /status` command from a c
 
   ![Cloud Kerberos trust prerequisite check in the user device registration log](./images/cloud-trust-prereq-check.png)
 
-The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Azure AD Kerberos is set up for the user's domain and tenant. If Azure AD Kerberos is set up, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust is not being enforced by policy or if the device is Azure AD joined.
+The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Azure AD Kerberos is set up for the user's domain and tenant. If Azure AD Kerberos is set up, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust isn't being enforced by policy or if the device is Azure AD joined.
 
 > [!NOTE]
-> This prerequisite check isn't done for provisioning on Azure AD-joined devices. If Azure AD Kerberos isn't provisioned, a user on an Azure AD joined device will still be able to sign in.
+> The cloud Kerberos trust prerequisite check isn't done on Azure AD-joined devices. If Azure AD Kerberos isn't provisioned, a user on an Azure AD joined device will still be able to sign in, but won't have SSO to on-premises resources secured by Active Directory.
 
 ### PIN Setup
 
@@ -205,11 +204,11 @@ This is the process that occurs after a user signs in, to enroll in Windows Hell
 
 ### Sign-in
 
-Once a user has set up a PIN with *cloud Kerberos trust*, it can be used **immediately** for sign-in. On a Hybrid Azure AD joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached logon can be used for subsequent unlocks without line of sight or network connectivity.
+Once a user has set up a PIN with *cloud Kerberos trust*, it can be used **immediately** for sign-in. On a Hybrid Azure AD joined device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached sign-in can be used for subsequent unlocks without line of sight or network connectivity.
 
 ## Migrate from key trust deployment model to cloud Kerberos trust
 
-If you deployed Windows Hello for Business using the *key trust* deployment model, and want to migrate to the *cloud Kerberos trust* deployment model, follow these steps:
+If you deployed Windows Hello for Business using the *key trust model*, and want to migrate to the *cloud Kerberos trust model*, follow these steps:
 
 1. [Set up Azure AD Kerberos in your hybrid environment](#deploy-azure-ad-kerberos)
 1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy)
@@ -225,7 +224,7 @@ If you deployed Windows Hello for Business using the *key trust* deployment mode
 > [!IMPORTANT]
 > There is no *direct* migration path from *certificate trust* deployment to *cloud Kerberos trust* deployment. The Windows Hello container must be deleted before you can migrate to cloud Kerberos trust.
 
-If you have deployed Windows Hello for Business using a *certificate trust* deployment model, and want to use *cloud Kerberos trust*, you must redeploy Windows Hello for Business by following these steps:
+If you deployed Windows Hello for Business using the *certificate trust model*, and want to use the *cloud Kerberos trust model*, you must redeploy Windows Hello for Business by following these steps:
 
 1. Disable the certificate trust policy
 1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy)
@@ -251,20 +250,20 @@ If you encounter issues or want to share feedback about Windows Hello for Busine
 
 This feature doesn't work in a pure on-premises AD domain services environment.
 
-### Does Windows Hello for Business cloud Kerberos trust work in a Windows login with RODC present in the hybrid environment?
+### Does Windows Hello for Business cloud Kerberos trust work in a Windows sign-in with RODC present in the hybrid environment?
 
 Windows Hello for Business cloud Kerberos trust looks for a writeable DC to exchange the partial TGT. As long as you have at least one writeable DC per site, login with cloud Kerberos trust will work.
 
 ### Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
 
-Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller for some scenarios:
+Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:
 
-- The first sign-in or unlock with Windows Hello for Business after provisioning
-- When attempting to access an on-premises resource from a Hybrid Azure AD joined device
+- a user signs-in for the first time or unlocks with Windows Hello for Business after provisioning. 
+- attempting to access on-premises resources secured by Active Directory. 
 
 ### Can I use RDP/VDI with Windows Hello for Business cloud Kerberos trust?
 
-Windows Hello for Business cloud Kerberos trust cannot be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [remote credential guard][WIN-2] or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
+Windows Hello for Business cloud Kerberos trust can't be used as a supplied credential with RDP/VDI. Similar to key trust, cloud Kerberos trust can be used for RDP with [remote credential guard][WIN-2] or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
 
 ### Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud Kerberos trust?
 
