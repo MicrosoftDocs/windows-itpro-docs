@@ -50,7 +50,7 @@ Any PowerShell script that isn't allowed by WDAC policy will still run, but only
 
 PowerShell **dot-sourcing** isn't recommended. Instead, scripts should use PowerShell modules to provide common functionality. If a script file that is allowed by WDAC does try to run dot-sourced script files, those script files must also be allowed by the policy.
 
-WDAC will put **Interactive PowerShell** into Constrained Language Mode if any WDAC UMCI policy is enforced and *any* active WDAC policy enables script enforcement, even if that policy is in audit mode. To run interactive PowerShell with Full Language rights, you must disable script enforcement for *all* policies.
+WDAC will put **interactive PowerShell** into Constrained Language Mode if any WDAC UMCI policy is enforced and *any* active WDAC policy enables script enforcement, even if that policy is in audit mode. To run interactive PowerShell with Full Language rights, you must disable script enforcement for *all* policies.
 
 For more information on PowerShell language modes, see [About Language Modes](/powershell/module/microsoft.powershell.core/about/about_language_modes).
 
