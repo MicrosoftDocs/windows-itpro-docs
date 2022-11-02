@@ -19,7 +19,7 @@ ms.technology: itpro-updates
 > [!Important]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-In this article, you'll learn how to use Update Compliance to monitor Windows updates for your devices. To configure your environment for use with Update Compliance, see [Enable Update Compliance](update-compliance-v2-enable.md).
+In this article, you'll learn how to use Update Compliance to monitor Windows updates for your devices. To configure your environment for use with Update Compliance, see [Enable Update Compliance](wufb-reports-enable.md).
 
 ## Display Update Compliance data
 
@@ -30,14 +30,14 @@ In this article, you'll learn how to use Update Compliance to monitor Windows up
 1. Select **Logs** under the **General** group in your workspace.
 1. If the **Always show Queries** option is enabled in Log Analytics, close the query window to access the schema.
 1. Under **Schemas and filter**, select **Group by: Solution** and then expand the **Update Compliance** schema. If the **Group by: Category** is selected, the **Update Compliance** schema is listed under the **Other** category.
-1. Use the [Update Compliance schema](update-compliance-v2-schema.md) for [custom Kusto (KQL) queries](/azure/data-explorer/kusto/query/), to build [custom workbooks](/azure/azure-monitor/visualize/workbooks-overview), or to build your own solution to display the Update Compliance data. For example, you might query the data to review information for different types of alerts in the past 7 days and how many times each alert occurred.
+1. Use the [Update Compliance schema](wufb-reports-schema.md) for [custom Kusto (KQL) queries](/azure/data-explorer/kusto/query/), to build [custom workbooks](/azure/azure-monitor/visualize/workbooks-overview), or to build your own solution to display the Update Compliance data. For example, you might query the data to review information for different types of alerts in the past 7 days and how many times each alert occurred.
 
 ```kusto
 UCUpdateAlert
 | summarize count=count() by AlertClassification, AlertSubtype, ErrorCode, Description
 ```
 
-:::image type="content" source="media/update-compliance-v2-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/update-compliance-v2-query-table.png":::
+:::image type="content" source="media/wufb-reports-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/wufb-reports-query-table.png":::
 
 ## Update Compliance data latency
 

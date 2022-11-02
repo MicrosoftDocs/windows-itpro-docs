@@ -8,8 +8,8 @@ ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/update-compliance-v2-enable.md and the update/update-status-admin-center.md articles. Headings may be driven by article context.  -->
-[Enabling Update Compliance](../update-compliance-v2-enable.md) requires access to the [Microsoft admin center software updates (preview) page](../update-status-admin-center.md) as does displaying Update Compliance data in the admin center. The following permissions are needed for access to the [Microsoft 365 admin center](https://admin.microsoft.com):
+<!--This file is shared by updates/wufb-reports-enable.md and the update/update-status-admin-center.md articles. Headings may be driven by article context.  -->
+[Enabling Update Compliance](../wufb-reports-enable.md) requires access to the [Microsoft admin center software updates (preview) page](../update-status-admin-center.md) as does displaying Update Compliance data in the admin center. The following permissions are needed for access to the [Microsoft 365 admin center](https://admin.microsoft.com):
 
 
 - To enable Update Compliance, edit Update Compliance configuration settings, and view the **Windows** tab in the **Software Updates** page: 

@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/update-compliance-v2-configuration-script.md and the update/update-compliance-configuration-script.md articles. Headings are driven by article context.  -->
+<!--This file is shared by updates/wufb-reports-configuration-script.md and the update/update-compliance-configuration-script.md articles. Headings are driven by article context.  -->
 |Error  |Description  |
 |---------|---------|
 | 1    | General unexpected error|

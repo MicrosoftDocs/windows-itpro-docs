@@ -17,7 +17,7 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 Update Compliance is a cloud-based solution that provides information about the compliance of your Azure Active Directory-joined devices with Windows updates. Update Compliance is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Update Compliance helps you:
@@ -37,9 +37,9 @@ The new version of Update Compliance is in preview. Some of the benefits of this
 
 Currently, the preview contains the following features:
 
-- [Update Compliance workbook](update-compliance-v2-workbook.md)
+- [Update Compliance workbook](wufb-reports-workbook.md)
 - Update Compliance status [charts in the Microsoft 365 admin](update-status-admin-center.md)
-- Access to the following new [Update Compliance tables](update-compliance-v2-schema.md):
+- Access to the following new [Update Compliance tables](wufb-reports-schema.md):
     - UCClient
     - UCClientReadinessStatus
     - UCClientUpdateStatus
@@ -50,7 +50,7 @@ Currently, the preview contains the following features:
 
 Currently, these new tables are available to all Updates Compliance users. They will be displayed along with the original Updates Compliance tables.
 
-:::image type="content" source="media/update-compliance-v2-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/update-compliance-v2-query-table.png":::
+:::image type="content" source="media/wufb-reports-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/wufb-reports-query-table.png":::
 
 ## Limitations
 
@@ -82,4 +82,4 @@ Since the data from your clients is stored in a Log Analytics workspace, you can
 
 ## Next steps
 
-- Review the [Update Compliance prerequisites](update-compliance-v2-prerequisites.md)
+- Review the [Update Compliance prerequisites](wufb-reports-prerequisites.md)

@@ -17,7 +17,7 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the CommercialID is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 ## Update Compliance prerequisites
@@ -62,14 +62,14 @@ For more information about what's included in different diagnostic levels, see [
 ### Data transmission requirements
 
 <!--Using include for endpoint access requirements-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-endpoints.md)]
 
 > [!NOTE]
 > Enrolling into Update Compliance from the [Azure CLI](/cli/azure) or enrolling programmatically another way currently isn't supported. You must manually add Update Compliance to your Azure subscription.
 
 ## Microsoft 365 admin center permissions
 <!--Using include Microsoft 365 admin center permissions-->
-[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-admin-center-permissions.md)]
+[!INCLUDE [Update Compliance script error codes](./includes/wufb-reports-admin-center-permissions.md)]
 
 ## Log Analytics prerequisites
 
@@ -115,4 +115,4 @@ Update Compliance can use a Log Analytics workspace in the following regions:
 
 ## Next steps
 
-- [Enable the Update Compliance solution](update-compliance-v2-enable.md) in the Azure portal
+- [Enable the Update Compliance solution](wufb-reports-enable.md) in the Azure portal

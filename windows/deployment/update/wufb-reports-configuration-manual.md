@@ -18,10 +18,10 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-There are a number of requirements to consider when manually configuring devices for Update Compliance. These requirements can potentially change with newer versions of Windows client. The [Update Compliance configuration script](update-compliance-v2-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
+There are a number of requirements to consider when manually configuring devices for Update Compliance. These requirements can potentially change with newer versions of Windows client. The [Update Compliance configuration script](wufb-reports-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
 The requirements are separated into different categories:
 
@@ -67,12 +67,12 @@ All Group policies that need to be configured for Update Compliance are under **
 To enable data sharing between devices, your network, and Microsoft's Diagnostic Data Service, configure your proxy to allow devices to contact the below endpoints.
 
 <!--Using include for endpoint access requirements-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-endpoints.md)]
 
 ## Required services
 
-Many Windows and Microsoft services are required to ensure that not only the device can function, but Update Compliance can see device data. It's recommended that you allow all default services from the out-of-box experience to remain running. The [Update Compliance Configuration Script](update-compliance-v2-configuration-script.md) checks whether the majority of these services are running or are allowed to run automatically.
+Many Windows and Microsoft services are required to ensure that not only the device can function, but Update Compliance can see device data. It's recommended that you allow all default services from the out-of-box experience to remain running. The [Update Compliance Configuration Script](wufb-reports-configuration-script.md) checks whether the majority of these services are running or are allowed to run automatically.
 
 ## Next steps
 
-[Use Update Compliance](update-compliance-v2-use.md)
+[Use Update Compliance](wufb-reports-use.md)

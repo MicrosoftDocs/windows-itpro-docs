@@ -17,10 +17,10 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!IMPORTANT]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center). 
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center). 
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-[Update Compliance](update-compliance-v2-overview.md) presents information commonly needed by updates administrators in an easy to use format. Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
+[Update Compliance](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy to use format. Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
 
 - [Summary](#summary-tab)
 - [Quality updates](#quality-updates-tab)
@@ -36,7 +36,7 @@ To access the Update Compliance workbook:
    - You can also type **Monitor** in the search bar. As you begin typing, the list filters based on your input.
 
 1. When the gallery opens, select the **Update Compliance** workbook. If needed, you can filter workbooks by name in the gallery.
-1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Update Compliance](update-compliance-v2-enable.md).
+1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Update Compliance](wufb-reports-enable.md).
 
 ## Summary tab
 
@@ -148,5 +148,5 @@ Since the Update Compliance workbook is an [Azure Workbook template](/azure/azur
 
 ## Next steps
 
-- Explore the [Update Compliance (preview) schema](update-compliance-v2-schema.md)
-- Review [Feedback, support, and troubleshooting](update-compliance-v2-help.md) information for Update Compliance
+- Explore the [Update Compliance (preview) schema](wufb-reports-schema.md)
+- Review [Feedback, support, and troubleshooting](wufb-reports-help.md) information for Update Compliance

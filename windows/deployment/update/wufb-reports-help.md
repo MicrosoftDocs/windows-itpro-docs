@@ -18,7 +18,7 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!IMPORTANT]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 There are several resources that you can use to find help with Update Compliance. Whether you're just getting started or an experienced administrator, use the following resources when you need help with Update Compliance:
@@ -96,16 +96,16 @@ Use the troubleshooting tips below to resolve commonly encountered problems when
 ### Verify client configuration
 
 <!--Using include for verifying device configuration-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-verify-device-configuration.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-verify-device-configuration.md)]
 
 ### Ensuring devices are configured correctly to send data
 
-The first step in troubleshooting Update Compliance is ensuring that devices are configured. Review [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md) for the settings. We recommend using the [Update Compliance configuration script](update-compliance-v2-configuration-script.md) for troubleshooting and configuring devices.
+The first step in troubleshooting Update Compliance is ensuring that devices are configured. Review [Manually configuring devices for Update Compliance](wufb-reports-configuration-manual.md) for the settings. We recommend using the [Update Compliance configuration script](wufb-reports-configuration-script.md) for troubleshooting and configuring devices.
 
 ### Devices have been correctly configured but aren't showing up in Update Compliance
 
-It takes some time for data to appear in Update Compliance for the first time or if you moved to a new Log Analytics workspace. To learn more about data latencies for Update Compliance, review [Update  Compliance data latency](update-compliance-v2-use.md#update-compliance-data-latency).
+It takes some time for data to appear in Update Compliance for the first time or if you moved to a new Log Analytics workspace. To learn more about data latencies for Update Compliance, review [Update  Compliance data latency](wufb-reports-use.md#update-compliance-data-latency).
 
 ### Devices are appearing, but without a device name
 
-Device Name is  an opt-in via policy starting in Windows 10 version 1803. Review the required policies for enabling device name in the [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md) article.
+Device Name is  an opt-in via policy starting in Windows 10 version 1803. Review the required policies for enabling device name in the [Manually configuring devices for Update Compliance](wufb-reports-configuration-manual.md) article.

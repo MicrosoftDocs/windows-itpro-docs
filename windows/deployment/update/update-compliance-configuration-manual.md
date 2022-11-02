@@ -68,7 +68,7 @@ All Group policies that need to be configured for Update Compliance are under **
 To enable data sharing between devices, your network, and Microsoft's Diagnostic Data Service, configure your proxy to allow devices to contact the below endpoints.
 
 <!--Using include for endpoint access requirements-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-endpoints.md)]
 
 ## Required services
 

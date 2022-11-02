@@ -18,14 +18,14 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center).
+> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](update-compliance-v2-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured.
+The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](wufb-reports-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured.
 
 ## About the script
 
-The configuration script configures registry keys directly. Be aware that registry keys can potentially be overwritten by policy settings like Group Policy or MDM. *Reconfiguring devices with the script doesn't reconfigure previously set policies, both in the case of Group Policy and MDM*. If there are conflicts between your Group Policy or MDM configurations and the required configurations listed in [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md), device data might not appear in Update Compliance correctly. 
+The configuration script configures registry keys directly. Be aware that registry keys can potentially be overwritten by policy settings like Group Policy or MDM. *Reconfiguring devices with the script doesn't reconfigure previously set policies, both in the case of Group Policy and MDM*. If there are conflicts between your Group Policy or MDM configurations and the required configurations listed in [Manually configuring devices for Update Compliance](wufb-reports-configuration-manual.md), device data might not appear in Update Compliance correctly. 
 
 You can download the script from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
 
@@ -52,14 +52,14 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 ## Verify device configuration
 
 <!--Using include for verifying device configuration-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-verify-device-configuration.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-verify-device-configuration.md)]
 
 ## Script errors
 
 <!--Using include for script errors-->
-[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-script-error-codes.md)]
+[!INCLUDE [Update Compliance script error codes](./includes/wufb-reports-script-error-codes.md)]
 
 
 ## Next steps
 
-[Use Update Compliance](update-compliance-v2-use.md)
+[Use Update Compliance](wufb-reports-use.md)
