@@ -184,15 +184,15 @@
               href: update/deploy-updates-intune.md
     - name: Monitor
       items:
-      - name: Monitor with Update Compliance (preview version)
+      - name: Windows Update for Business reports
         items:
-        - name: Update Compliance overview
+        - name: Windows Update for Business reports overview
           href: update/update-compliance-v2-overview.md     
-        - name: Enable Update Compliance (preview)
+        - name: Enable Windows Update for Business reports
           items: 
-          - name: Update Compliance prerequisites
+          - name: Windows Update for Business reports prerequisites
             href: update/update-compliance-v2-prerequisites.md
-          - name: Enable the Update Compliance solution
+          - name: Enable Windows Update for Business reports
             href: update/update-compliance-v2-enable.md                                
           - name: Configure clients with a script
             href: update/update-compliance-v2-configuration-script.md
@@ -200,19 +200,19 @@
             href: update/update-compliance-v2-configuration-manual.md
           - name: Configure clients with Microsoft Endpoint Manager
             href: update/update-compliance-v2-configuration-mem.md 
-        - name: Use Update Compliance (preview)
+        - name: Use Windows Update for Business reports
           items:
-          - name: Update Compliance workbook
+          - name: Windows Update for Business reports workbook
             href: update/update-compliance-v2-workbook.md
-          - name: Software updates in the Microsoft admin center (preview)
+          - name: Software updates in the Microsoft admin center
             href: update/update-status-admin-center.md                                
-          - name: Use Update Compliance data
+          - name: Use Windows Update for Business reports data
             href: update/update-compliance-v2-use.md                                
           - name: Feedback, support, and troubleshooting 
             href: update/update-compliance-v2-help.md                                               
-        - name: Update Compliance schema reference (preview)
+        - name: Windows Update for Business reports schema reference
           items:
-          - name: Update Compliance schema reference
+          - name: Windows Update for Business reports schema reference
             href: update/update-compliance-v2-schema.md
           - name: UCClient
             href: update/update-compliance-v2-schema-ucclient.md
