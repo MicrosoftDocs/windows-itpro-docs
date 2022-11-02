@@ -1,6 +1,6 @@
 ---
 title: ADMX_TabletPCInputPanel Policy CSP
-description: Learn more about the ADMX_TabletPCInputPanel CSP Policy
+description: Learn more about the ADMX_TabletPCInputPanel Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

@@ -1,6 +1,6 @@
 ---
 title: ADMX_MSS-legacy Policy CSP
-description: Learn more about the ADMX_MSS-legacy CSP Policy
+description: Learn more about the ADMX_MSS-legacy Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

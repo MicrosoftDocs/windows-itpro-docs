@@ -1,6 +1,6 @@
 ---
 title: TenantRestrictions Policy CSP
-description: Learn more about the TenantRestrictions CSP Policy
+description: Learn more about the TenantRestrictions Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

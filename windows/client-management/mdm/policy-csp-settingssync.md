@@ -1,6 +1,6 @@
 ---
 title: SettingsSync Policy CSP
-description: Learn more about the SettingsSync CSP Policy
+description: Learn more about the SettingsSync Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

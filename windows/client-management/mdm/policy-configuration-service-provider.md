@@ -1,6 +1,6 @@
 ---
 title: Policy CSP
-description: Learn more about the Policy CSP Policy
+description: Learn more about the Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

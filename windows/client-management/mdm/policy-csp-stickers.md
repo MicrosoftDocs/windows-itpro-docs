@@ -1,6 +1,6 @@
 ---
 title: Stickers Policy CSP
-description: Learn more about the Stickers CSP Policy
+description: Learn more about the Stickers Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

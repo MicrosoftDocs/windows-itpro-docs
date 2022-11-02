@@ -1,6 +1,6 @@
 ---
 title: ADMX_sam Policy CSP
-description: Learn more about the ADMX_sam CSP Policy
+description: Learn more about the ADMX_sam Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

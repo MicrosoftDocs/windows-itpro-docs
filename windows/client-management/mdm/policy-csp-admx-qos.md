@@ -1,6 +1,6 @@
 ---
 title: ADMX_QOS Policy CSP
-description: Learn more about the ADMX_QOS CSP Policy
+description: Learn more about the ADMX_QOS Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

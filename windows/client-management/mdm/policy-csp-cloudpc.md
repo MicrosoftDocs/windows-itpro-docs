@@ -1,6 +1,6 @@
 ---
 title: CloudPC Policy CSP
-description: Learn more about the CloudPC CSP Policy
+description: Learn more about the CloudPC Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

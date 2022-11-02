@@ -1,6 +1,6 @@
 ---
 title: MSSLegacy Policy CSP
-description: Learn more about the MSSLegacy CSP Policy
+description: Learn more about the MSSLegacy Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

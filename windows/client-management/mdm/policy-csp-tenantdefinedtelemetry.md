@@ -1,6 +1,6 @@
 ---
 title: TenantDefinedTelemetry Policy CSP
-description: Learn more about the TenantDefinedTelemetry CSP Policy
+description: Learn more about the TenantDefinedTelemetry Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa

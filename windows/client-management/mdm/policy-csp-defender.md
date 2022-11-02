@@ -1,6 +1,6 @@
 ---
 title: Defender Policy CSP
-description: Learn more about the Defender CSP Policy
+description: Learn more about the Defender Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
