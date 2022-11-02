@@ -16,7 +16,7 @@ ms.technology: itpro-configure
 **Applies to**
 -   Windows 10, version 1607
 
-Before you deploy User Experience Virtualization (UE-V), review this topic for important information about the type of deployment you're planning and for preparations you can make beforehand so that your deployment is successful. If you leave this page, be sure to come back and read through the planning information in this topic.
+Before you deploy User Experience Virtualization (UE-V), review this article for important information about the type of deployment you're planning and for preparations you can make beforehand so that your deployment is successful. If you leave this page, be sure to come back and read through the planning information in this article.
 
 ## Plan your UE-V deployment
 
@@ -50,11 +50,11 @@ The workflow diagram below illustrates a typical UE-V deployment and the decisio
 
 ### Planning a UE-V deployment 
 
-Review the following topics to determine which UE-V components you'll be deploying.
+Review the following articles to determine which UE-V components you'll be deploying.
 
 -   [Decide whether to synchronize settings for custom applications](#decide-whether-to-synchronize-settings-for-custom-applications)
 
-    If you want to synchronize settings for custom applications, you'll need to install the UE-V template generator. Use the generator to create custom settings location templates, which involves the following tasks:
+    If you want to synchronize settings for custom applications, you'll need to install the UE-V template generator. Use the generator to create custom settings location templates, which involve the following tasks:
 
     -   Review the [settings that are synchronized automatically in a UE-V deployment](#settings-automatically-synchronized-in-a-ue-v-deployment).
 
@@ -68,7 +68,7 @@ Review the following topics to determine which UE-V components you'll be deployi
 
 In a UE-V deployment, many settings are automatically synchronized. You can also customize UE-V to synchronize settings for other applications, such as line-of-business and third-party apps.
 
-Deciding if you want UE-V to synchronize settings for custom applications is an essential part of planning your UE-V deployment. The topics in this section will help you make that decision.
+Deciding if you want UE-V to synchronize settings for custom applications is an essential part of planning your UE-V deployment. The articles in this section will help you make that decision.
 
 ### Settings automatically synchronized in a UE-V deployment
 
@@ -153,11 +153,11 @@ As an administrator, when you consider which desktop applications to include in 
 
 In general, you can synchronize settings that meet the following criteria:
 
--   Settings that are stored in user-accessible locations. For example, do not synchronize settings that are stored in System32 or outside the HKEY\_CURRENT\_USER (HKCU) section of the registry.
+-   Settings that are stored in user-accessible locations. For example, don't synchronize settings that are stored in System32 or outside the HKEY\_CURRENT\_USER (HKCU) section of the registry.
 
--   Settings that are not specific to the particular device. For example, exclude network shortcuts or hardware configurations.
+-   Settings that aren't specific to the particular device. For example, exclude network shortcuts or hardware configurations.
 
--   Settings that can be synchronized between computers without risk of corrupted data. For example, do not use settings that are stored in a database file.
+-   Settings that can be synchronized between computers without risk of corrupted data. For example, don't use settings that are stored in a database file.
 
 ### Checklist for evaluating custom applications
 
@@ -200,7 +200,7 @@ Many enterprise applications, including Microsoft Outlook, Lync, and Skype for B
 
 UE-V can synchronize enterprise credentials, but doesn't roam credentials intended only for use on the local device.
 
-Credentials are synchronous settings, meaning that they're applied to users' profiles the first time they log on to their devices after UE-V synchronizes.
+Credentials are synchronous settings, meaning that they're applied to users' profiles the first time they sign in to their devices after UE-V synchronizes.
 
 Credentials synchronization is managed by its own settings location template, which is disabled by default. You can enable or disable this template through the same methods used for other templates. The template identifier for this feature is RoamingCredentialSettings.
 
@@ -233,7 +233,7 @@ Copy
 
 3.  If this policy is enabled, you can enable credentials synchronization by checking the **Roaming Credentials** check box, or disable credentials synchronization by unchecking it.
 
-4.  Click **OK**.
+4.  Select **OK**.
 
 ### Credential locations synchronized by UE-V
 
@@ -275,7 +275,7 @@ UE-V downloads new user settings information from a settings storage location an
 
 -   Each time an application is started that has a registered UE-V template
 
--   When a user logs on to a device
+-   When a user signs in to a device
 
 -   When a user unlocks a device
 
@@ -305,7 +305,7 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   Format the storage volume with an NTFS file system.
 
--   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
+-   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) isn't supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
 
     - [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles)
     
@@ -360,7 +360,7 @@ The UE-V service synchronizes user settings for devices that aren't always conne
 
 Enable this configuration using one of these methods:
 
-- After you enable the UE-V service, use the Settings Management feature in Microsoft Endpoint Manager or the UE-V ADMX templates (installed with Windows 10, version 1607) to push the SyncMethod = None configuration.
+- After you enable the UE-V service, use the Settings Management feature in Microsoft Configuration Manager or the UE-V ADMX templates (installed with Windows 10, version 1607) to push the SyncMethod = None configuration.
 
 - Use Windows PowerShell or Windows Management Instrumentation (WMI) to set the SyncMethod = None configuration.
 

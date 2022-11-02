@@ -73,13 +73,13 @@ This node specifies the username for a new local user account. This setting can 
 This node specifies the password for a new local user account. This setting can be managed remotely.
 
 Supported operation is Add.
-GET operation isn't supported.  This setting will report as failed when deployed from the Endpoint Manager.
+GET operation isn't supported.  This setting will report as failed when deployed from Intune.
 
 <a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**
 This optional node specifies the local user group that a local user account should be joined to.  If the node isn't set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.
 
 Supported operation is Add.
 
-## Related topics
+## Related articles
 
 [Configuration service provider reference](index.yml)
