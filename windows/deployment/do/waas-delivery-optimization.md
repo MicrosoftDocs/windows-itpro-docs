@@ -24,7 +24,7 @@ ms.technology: itpro-updates
 
 > **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center](https://www.microsoft.com/download/details.aspx?id=102158).
 
-Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization is a cloud-managed solution that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Manager (when installation of Express Updates is enabled).  
+Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization is a cloud-managed solution that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Configuration Manager (when installation of Express Updates is enabled).  
 
 Access to the Delivery Optimization cloud services and the Internet, are both requirements for using the peer-to-peer functionality of Delivery Optimization.
 
@@ -96,7 +96,7 @@ To gain a deeper understanding of the Delivery Optimization client-service commu
 
 ## Set up Delivery Optimization for Windows
 
-[Learn more](waas-delivery-optimization-setup.md) about the Delivery Optimization settings to ensure proper set up in your environment.
+[Learn more](waas-delivery-optimization-setup.md) about the Delivery Optimization settings to ensure proper setup in your environment.
 
 ## Delivery Optimization reference
 

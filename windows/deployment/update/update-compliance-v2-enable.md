@@ -29,7 +29,7 @@ After verifying the [prerequisites](update-compliance-v2-prerequisites.md) are m
 
 1. Configure the clients to send data to Update compliance. You can configure clients in the following three ways:
     - Use a [script](update-compliance-v2-configuration-script.md)
-    - Use [Microsoft Endpoint Manager](update-compliance-v2-configuration-mem.md)
+    - Use [Microsoft Intune](update-compliance-v2-configuration-mem.md)
     - Configure [manually](update-compliance-v2-configuration-manual.md)
 
 > [!IMPORTANT]
@@ -85,4 +85,4 @@ Once you've added Update Compliance to a workspace in your Azure subscription an
 
 - [Configure clients with a script](update-compliance-v2-configuration-script.md)
 - [Configure clients manually](update-compliance-v2-configuration-manual.md)
-- [Configure clients with Microsoft Endpoint Manager](update-compliance-v2-configuration-mem.md)
+- [Configure clients with Microsoft Intune](update-compliance-v2-configuration-mem.md)
