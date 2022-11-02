@@ -44,13 +44,13 @@ WDAC shares the *AppLocker - MSI and Script* event log for all script enforcemen
 
 All PowerShell scripts (.ps1), modules (.psm1), and manifests (.psd1) must be allowed by WDAC policy in order to run with Full Language rights.
 
-Any **dependent modules** that are loaded by an allowed module must also be allowed by WDAC policy, and module functions must be exported explicitly by name. Modules that are exported by default (no export name list) or have wildcards (\*) in their name will fail to load.
+Any **dependent modules** that are loaded by an allowed module must also be allowed by WDAC policy, and module functions must be exported explicitly by name when WDAC is enforced. Modules that do not specify any exported functions (no export name list) will still load but no module functions will be accessible. Modules that use wildcards (\*) in their name will fail to load.
 
 Any PowerShell script that isn't allowed by WDAC policy will still run, but only in Constrained Language Mode.
 
 PowerShell **dot-sourcing** isn't recommended. Instead, scripts should use PowerShell modules to provide common functionality. If a script file that is allowed by WDAC does try to run dot-sourced script files, those script files must also be allowed by the policy.
 
-**Interactive PowerShell** will run in Constrained Language Mode if any WDAC UMCI policy is enforced and *any* active WDAC policy enables script enforcement, even if that policy is in audit mode. To run interactive PowerShell with Full Language rights, you must disable script enforcement for *all* policies.
+WDAC will put **Interactive PowerShell** into Constrained Language Mode if any WDAC UMCI policy is enforced and *any* active WDAC policy enables script enforcement, even if that policy is in audit mode. To run interactive PowerShell with Full Language rights, you must disable script enforcement for *all* policies.
 
 For more information on PowerShell language modes, see [About Language Modes](/powershell/module/microsoft.powershell.core/about/about_language_modes).
 
