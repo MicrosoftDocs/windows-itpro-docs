@@ -36,12 +36,12 @@ This deployment model can be used for new or existing Windows Hello for Business
 
 ## Azure AD Kerberos and cloud Kerberos trust authentication
 
-*Key trust* and *certificate trust* use certificate authentication based Kerberos for requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.\
-Single sign-on (SSO) to on-premises resources from *Azure AD-joined devices* requires to publish a certificate revocation list (CRL) to a public endpoint.
+*Key trust* and *certificate trust* use certificate authentication-based Kerberos for requesting kerberos ticket-granting-tickets (TGTs) for on-premises authentication. This type of authentication requires a PKI for DC certificates, and requires end-user certificates for certificate trust.\
+For *Azure AD joined devices* to have single sign-on (SSO) to on-premises resources protected by Active Directory, they must trust and validate the DC certificates. For this to happen, a certificate revocation list (CRL) must be published to an endpoint accessible by the Azure AD joined devices.
 
 *Cloud Kerberos trust* uses *Azure AD Kerberos*, which doesn't require any of the above PKI to get the user a TGT.
 
-With *Azure AD Kerberos*, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for logon or to access traditional AD-based resources. Kerberos service tickets and authorization continue to be controlled the on-premises Domain Controllers.
+With *Azure AD Kerberos*, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for logon or to access traditional AD-based resources. Kerberos service tickets and authorization continue to be controlled by the on-premises Domain Controllers.
 
 When *Azure AD Kerberos* is enabled in an Active Directory domain, an *Azure AD Kerberos server object* is created in the domain. This object:
 
@@ -191,7 +191,7 @@ This information is also available using the `dsregcmd /status` command from a c
 The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Azure AD Kerberos is set up for the user's domain and tenant. If Azure AD Kerberos is set up, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust is not being enforced by policy or if the device is Azure AD joined.
 
 > [!NOTE]
-> This prerequisite check isn't done for provisioning on Azure AD-joined devices. If Azure AD Kerberos isn't provisioned, a user on an Azure AD joined device will still be able to sign in.
+> This prerequisite check isn't done for provisioning on Azure AD-joined devices. If Azure AD Kerberos isn't provisioned, a user on an Azure AD joined device will still be able to sign in, but won't have SSO to on-premises resources secured by Active Directory.
 
 ### PIN Setup
 
