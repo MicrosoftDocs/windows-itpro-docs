@@ -29,17 +29,17 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user st
 
 ## In this topic
 
-- [What Will Migrate Offline?](#what-will-migrate-offline)
+- [What will migrate offline?](#what-will-migrate-offline)
 
-- [What Offline Environments are Supported?](#what-offline-environments-are-supported)
+- [What offline environments are supported?](#what-offline-environments-are-supported)
 
-- [User-Group Membership and Profile Control](#user-group-membership-and-profile-control)
+- [User-group membership and profile control](#user-group-membership-and-profile-control)
 
-- [Command-Line Options](#command-line-options)
+- [Command-line options](#command-line-options)
 
-- [Environment Variables](#environment-variables)
+- [Environment variables](#environment-variables)
 
-- [Offline.xml Elements](#offlinexml-elements)
+- [Offline.xml elements](#offlinexml-elements)
 
 ## What will migrate offline?
 
@@ -173,4 +173,4 @@ The following XML example illustrates some of the elements discussed earlier in 
 
 ## Related articles
 
-[Plan Your Migration](usmt-plan-your-migration.md)
+[Plan your migration](usmt-plan-your-migration.md)

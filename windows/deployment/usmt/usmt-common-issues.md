@@ -42,9 +42,9 @@ When you encounter a problem or error message during migration, you can use the 
   > [!NOTE]
   > Running the ScanState and LoadState tools with the `/v:5` option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
 
-- Use the `/Verify` option with the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the Condition of a Compressed Migration Store](verify-the-condition-of-a-compressed-migration-store.md).
+- Use the `/Verify` option with the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md).
 
-- Use the `/Extract` option with the UsmtUtils tool to extract files from a compressed migration store. For more information, see [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md).
+- Use the `/Extract` option with the UsmtUtils tool to extract files from a compressed migration store. For more information, see [Extract files from a compressed USMT migration store](usmt-extract-files-from-a-compressed-migration-store.md).
 
 - Create a progress log using the `/Progress` option to monitor your migration.
 
@@ -63,7 +63,7 @@ The following sections describe common user account problems. Expand the section
 
 ### I'm having problems creating local accounts on the destination computer
 
-**Resolution:** For more information about creating accounts and migrating local accounts, see [Migrate User Accounts](usmt-migrate-user-accounts.md).
+**Resolution:** For more information about creating accounts and migrating local accounts, see [Migrate user accounts](usmt-migrate-user-accounts.md).
 
 ### Not all of the user accounts were migrated to the destination computer
 
@@ -182,15 +182,15 @@ The following sections describe common migration problems. Expand the section to
 
 **Resolution:** You can use the USMT XML schema (`MigXML.xsd`) to write and validate migration .xml files. Also see the XML examples in the following articles:
 
-[Conflicts and Precedence](usmt-conflicts-and-precedence.md)
+[Conflicts and precedence](usmt-conflicts-and-precedence.md)
 
-[Exclude Files and Settings](usmt-exclude-files-and-settings.md)
+[Exclude files and settings](usmt-exclude-files-and-settings.md)
 
-[Reroute Files and Settings](usmt-reroute-files-and-settings.md)
+[Reroute files and settings](usmt-reroute-files-and-settings.md)
 
-[Include Files and Settings](usmt-include-files-and-settings.md)
+[Include files and settings](usmt-include-files-and-settings.md)
 
-[Custom XML Examples](usmt-custom-xml-examples.md)
+[Custom XML examples](usmt-custom-xml-examples.md)
 
 ### After LoadState completes, the new desktop background doesn't appear on the destination computer
 
@@ -246,7 +246,7 @@ The following sections describe common offline migration problems. Expand the se
 
 ### Some of my system settings don't migrate in an offline migration
 
-**Cause:** Some system settings, such as desktop backgrounds and network printers, aren't supported in an offline migration. For more information, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
+**Cause:** Some system settings, such as desktop backgrounds and network printers, aren't supported in an offline migration. For more information, see [What does USMT migrate?](usmt-what-does-usmt-migrate.md)
 
 **Resolution:** In an offline migration, these system settings must be restored manually.
 
@@ -268,7 +268,7 @@ Scanstate.exe /ui:S1-5-21-124525095-708259637-1543119021*
 
 The wild card (\*) at the end of the SID will migrate the *SID*\_Classes key as well.
 
-You can also use patterns for SIDs that identify generic users or groups. For example, you can use the `/ue:*-500` option to exclude the local administrator accounts. For more information about Windows SIDs, see [this Microsoft Web site](/troubleshoot/windows-server/identity/security-identifiers-in-windows).
+You can also use patterns for SIDs that identify generic users or groups. For example, you can use the `/ue:*-500` option to exclude the local administrator accounts. For more information about Windows SIDs, see [Security identifiers](/windows-server/identity/ad-ds/manage/understand-security-identifiers).
 
 ### My script to wipe the disk fails after running the ScanState tool on a 64-bit system
 
@@ -304,10 +304,10 @@ You should also reboot the machine.
 
 ## Related articles
 
-[User State Migration Tool (USMT) Troubleshooting](usmt-troubleshooting.md)
+[User State Migration Tool (USMT) troubleshooting](usmt-troubleshooting.md)
 
-[Frequently Asked Questions](usmt-faq.yml)
+[Frequently asked questions](usmt-faq.yml)
 
-[Return Codes](usmt-return-codes.md)
+[Return codes](usmt-return-codes.md)
 
-[UsmtUtils Syntax](usmt-utilities.md)
+[UsmtUtils syntax](usmt-utilities.md)

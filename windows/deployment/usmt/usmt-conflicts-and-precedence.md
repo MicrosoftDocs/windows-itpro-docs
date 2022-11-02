@@ -11,7 +11,7 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# Conflicts and Precedence
+# Conflicts and precedence
 
 When you include, exclude, and reroute files and settings, it's important to know how User State Migration Tool (USMT) 10.0 deals with conflicts and precedence. When working with USMT, the following are the most important conflicts and precedence guidelines to keep in mind.
 
@@ -260,4 +260,4 @@ During LoadState, all the files will be restored, overwriting the existing files
 
 ## Related articles
 
-[USMT XML Reference](usmt-xml-reference.md)
+[USMT XML reference](usmt-xml-reference.md)

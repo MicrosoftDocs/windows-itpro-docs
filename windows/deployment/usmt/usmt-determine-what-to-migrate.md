@@ -11,7 +11,7 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# Determine What to Migrate
+# Determine what to migrate
 
 By default, User State Migration Tool (USMT) 10.0 migrates the items listed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md), depending on the migration .xml files you specify. These default settings are often enough for a basic migration.
 
@@ -27,7 +27,7 @@ To reduce complexity and increase standardization, your organization should cons
 
 Using an SOE can vastly simplify the migration and reduce overall deployment challenges.
 
-## In This Section
+## In this section
 
 | Link | Description |
 |--- |--- |
@@ -38,4 +38,4 @@ Using an SOE can vastly simplify the migration and reduce overall deployment cha
 
 ## Related articles
 
-[What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
+[What does USMT migrate?](usmt-what-does-usmt-migrate.md)

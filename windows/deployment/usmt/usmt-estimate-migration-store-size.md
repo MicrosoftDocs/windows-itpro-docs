@@ -115,4 +115,4 @@ When trying to determine how much disk space you'll need, consider the following
 
 ## Related articles
 
-[Common Migration Scenarios](usmt-common-migration-scenarios.md)
+[Common migration scenarios](usmt-common-migration-scenarios.md)

@@ -12,11 +12,11 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# USMT Best Practices
+# USMT best practices
 
 This article discusses general and security-related best practices when using User State Migration Tool (USMT) 10.0.
 
-## General Best Practices
+## General best practices
 
 - **Install applications before running the LoadState tool**
 
@@ -24,7 +24,7 @@ This article discusses general and security-related best practices when using Us
 
 - **Don't use MigUser.xml and MigDocs.xml together**
 
-    If you use both .xml files, some migrated files may be duplicated if conflicting instructions are given about target locations. You can use the `/genmigxml` command-line option to determine which files will be included in your migration, and to determine if any modifications are necessary. For more information, see [Identify File Types, Files, and Folders](usmt-identify-file-types-files-and-folders.md).
+    If you use both .xml files, some migrated files may be duplicated if conflicting instructions are given about target locations. You can use the `/genmigxml` command-line option to determine which files will be included in your migration, and to determine if any modifications are necessary. For more information, see [Identify file types, files, and folders](usmt-identify-file-types-files-and-folders.md).
 
 - **Use MigDocs.xml for a better migration experience**
 
@@ -50,7 +50,7 @@ This article discusses general and security-related best practices when using Us
 
     If you decide to perform the migration while users are using the network, it's best to migrate user accounts in groups. To minimize the impact on network performance, determine the size of the groups based on the size of each user account. Migrating in phases also allows you to make sure each phase is successful before starting the next phase. Using this method, you can make any necessary modifications to your plan between groups.
 
-## Security Best Practices
+## Security best practices
 
 As the authorized administrator, it is your responsibility to protect the privacy of the users and maintain security during and after the migration. In particular, you must consider the following issues:
 
@@ -132,6 +132,6 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 ## Related articles
 
-[Migration Store Encryption](usmt-migration-store-encryption.md)
+[Migration store encryption](usmt-migration-store-encryption.md)
 
-[Plan Your Migration](usmt-plan-your-migration.md)
+[Plan your migration](usmt-plan-your-migration.md)

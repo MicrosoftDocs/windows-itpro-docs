@@ -276,6 +276,6 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 
 ## Related articles
 
-[USMT XML Reference](usmt-xml-reference.md)
+[USMT XML reference](usmt-xml-reference.md)
 
-[Customize USMT XML Files](usmt-customize-xml-files.md)
+[Customize USMT XML files](usmt-customize-xml-files.md)

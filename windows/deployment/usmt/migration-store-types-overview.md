@@ -17,11 +17,11 @@ When planning your migration, you should determine which migration store type be
 
 ## In this topic
 
-[Migration Store Types](#migration-store-types)
+[Migration store types](#migration-store-types)
 
-[Local Store vs. Remote Store](#local-store-vs-remote-store)
+[Local store vs. remote store](#local-store-vs-remote-store)
 
-[The /localonly Command-Line Option](#the-localonly-command-line-option)
+[The /localonly command-line option](#the-localonly-command-line-option)
 
 ## Migration store types
 
@@ -60,4 +60,4 @@ You should use this option to exclude the data from removable drives and network
 
 ## Related articles
 
-[Plan Your Migration](usmt-plan-your-migration.md)
+[Plan your migration](usmt-plan-your-migration.md)

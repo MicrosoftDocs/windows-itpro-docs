@@ -11,9 +11,9 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# Customize USMT XML Files
+# Customize USMT XML files
 
-## In This Topic
+## In this topic
 
 [Overview](#overview)
 
@@ -102,7 +102,7 @@ In addition, note the following functionality with the `Config.xml` file:
 
     `loadstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /v:5 /decrypt /key:"mykey"`
 
-## Additional Information
+## Additional information
 
 - For more information about how to change the files and settings that are migrated, see the [User State Migration Tool (USMT) How-to topics](usmt-how-to.md).
 
@@ -112,6 +112,6 @@ In addition, note the following functionality with the `Config.xml` file:
 
 ## Related articles
 
-[User State Migration Tool (USMT) Command-line Syntax](usmt-command-line-syntax.md)
+[User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md)
 
-[USMT Resources](usmt-resources.md)
+[USMT resources](usmt-resources.md)

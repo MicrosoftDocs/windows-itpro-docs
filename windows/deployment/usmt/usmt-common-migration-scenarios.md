@@ -123,8 +123,8 @@ A company is allocating 20 new computers to users in the accounting department. 
 
 ## Related articles
 
-[Plan Your Migration](usmt-plan-your-migration.md)
+[Plan your migration](usmt-plan-your-migration.md)
 
-[Choose a Migration Store Type](usmt-choose-migration-store-type.md)
+[Choose a migration store type](usmt-choose-migration-store-type.md)
 
-[Offline Migration Reference](offline-migration-reference.md)
+[Offline migration reference](offline-migration-reference.md)

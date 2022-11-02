@@ -11,11 +11,11 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# Choose a Migration Store Type
+# Choose a migration store type
 
 One of the main considerations for planning your migration is to determine which migration store type best meets your needs. As part of these considerations, determine how much space is required to run the User State Migration Tool (USMT) 10.0 components on your source and destination computers, and how much space is needed to create and host the migration store, whether you're using a local share, network share, or storage device. The final consideration is ensuring that user date integrity is maintained by encrypting the migration store.
 
-## In This Section
+## In this section
 
 | Link | Description |
 |--- |--- |
@@ -26,6 +26,6 @@ One of the main considerations for planning your migration is to determine which
 
 ## Related articles
 
-[Plan Your Migration](usmt-plan-your-migration.md)
+[Plan your migration](usmt-plan-your-migration.md)
 
-[User State Migration Tool (USMT) How-to topics](usmt-how-to.md)
+[User State Migration Tool (USMT) how-to topics](usmt-how-to.md)

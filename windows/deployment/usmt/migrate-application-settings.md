@@ -21,7 +21,7 @@ This article doesn't contain information about how to migrate applications that 
 
 ## In this topic
 
-- [Before You Begin](#before-you-begin)
+- [Before you begin](#before-you-begin)
 
 - [Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer](#step-1-verify-that-the-application-is-installed-on-the-source-computer-and-that-its-the-same-version-as-the-version-to-be-installed-on-the-destination-computer).
 
@@ -147,10 +147,10 @@ To speed up the time it takes to collect and migrate the data, you can migrate o
 
 ## Related articles
 
-[USMT XML Reference](usmt-xml-reference.md)
+[USMT XML reference](usmt-xml-reference.md)
 
-[Conflicts and Precedence](usmt-conflicts-and-precedence.md)
+[Conflicts and precedence](usmt-conflicts-and-precedence.md)
 
-[XML Elements Library](usmt-xml-elements-library.md)
+[XML elements library](usmt-xml-elements-library.md)
 
-[Log Files](usmt-log-files.md)
+[Log files](usmt-log-files.md)

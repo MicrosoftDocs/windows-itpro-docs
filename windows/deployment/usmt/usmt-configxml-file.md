@@ -487,4 +487,4 @@ Refer to the following sample `Config.xml` file for more details about items you
 
 ## Related articles
 
-[USMT XML Reference](usmt-xml-reference.md)
+[USMT XML reference](usmt-xml-reference.md)

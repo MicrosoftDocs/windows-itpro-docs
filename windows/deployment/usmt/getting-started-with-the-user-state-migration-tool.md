@@ -17,7 +17,7 @@ This article outlines the general process that you should follow to migrate file
 
 ## In this topic
 
-- [Step 1: Plan Your Migration](#step-1-plan-your-migration)
+- [Step 1: Plan your migration](#step-1-plan-your-migration)
 
 - [Step 2: Collect files and settings from the source computer](#step-2-collect-files-and-settings-from-the-source-computer)
 
