@@ -141,9 +141,9 @@ The **Device status** group for feature updates contains the following items:
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
-  ### Delivery Optimization
+### Delivery Optimization (Preview)
 
-The **Delivery Optimization (Preview)** tab provides a summarized view of bandwidth efficiencies.  With this new, revised report Microsoft Connected Cache has been included. 
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies.  With this new, revised report Microsoft Connected Cache has been included. 
 
 At the top of the report, tiles demonstrate the total bandwidth savings percentage (from LAN or Group peers and Microsoft Connected Cache out of the total consumed bandwidth), device counts, percentages between peer-to-peer and Microsoft Connected Cache (MCC) of bytes delivered, and the breakdown of total download GBs.
 
