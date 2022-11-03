@@ -70,7 +70,7 @@ To analyze Windows Setup log files:
 
 1. Determine the Windows Setup error code. This code should be returned by Windows Setup if it isn't successful with the upgrade process.
 
-2. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+2. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a log file to investigate.
 
 3. Open the log file in a text editor, such as notepad.
 
