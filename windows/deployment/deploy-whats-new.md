@@ -40,7 +40,7 @@ The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is a
 [SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later, and Windows 11.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
 VPN support is added to [Windows Autopilot](#windows-autopilot)<br>
-An in-place upgrade wizard is available in [Configuration Manager](#microsoft-endpoint-configuration-manager).<br>
+An in-place upgrade wizard is available in [Configuration Manager](#microsoft-configuration-manager).<br>
 The Windows 10 deployment and update [landing page](index.yml) has been redesigned, with more content added and more content coming soon.<br>
 
 ## The Modern Desktop Deployment Center
@@ -124,7 +124,7 @@ The following Windows Autopilot features are available in Windows 10, version 19
 - Windows Autopilot is self-updating during OOBE. From Windows 10 onward, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
 - Windows Autopilot will set the [diagnostics data](/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE.
 
-### Microsoft Endpoint Configuration Manager
+### Microsoft Configuration Manager
 
 An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuration Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
@@ -201,7 +201,7 @@ For more information, see the following guides:
 
 - [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 - [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-- [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
+- [Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ## Troubleshooting guidance
 

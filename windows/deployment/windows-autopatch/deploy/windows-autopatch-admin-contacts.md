@@ -35,7 +35,7 @@ Your admin contacts will receive notifications about support request updates and
 
 **To add admin contacts:**
 
-1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Under **Tenant administration** in the **Windows Autopatch** section, select **Admin contacts**.
 1. Select **+Add**.
 1. Enter the contact details including name, email, phone number and preferred language. For a support ticket, the ticket's primary contact's preferred language will determine the language used for email communications.

@@ -25,7 +25,7 @@ This guide contains instructions to configure a proof of concept (PoC) environme
 
 This lab guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
 
-- [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
+- [Step by step: Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
 
 The proof of concept (PoC) deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that aren't familiar with these tools, and you want to set up a PoC environment. Don't use the instructions in this guide in a production setting. They aren't meant to replace the instructions found in production deployment guidance.
@@ -80,7 +80,7 @@ Hardware requirements are displayed below:
 |**OS**|Windows 8.1/10 or Windows Server 2012/2012 R2/2016|Windows 8.1 or a later|
 |**Edition**|Enterprise, Professional, or Education|Any|
 |**Architecture**|64-bit|Any <br/><br/> Retaining applications and settings requires that architecture (32-bit or 64-bit) is the same before and after the upgrade.|
-|**RAM**|8-GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16-GB RAM to test Windows 10 deployment with Microsoft Endpoint Configuration Manager.|Any|
+|**RAM**|8-GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16-GB RAM to test Windows 10 deployment with Microsoft Configuration Manager.|Any|
 |**Disk**|200-GB available hard disk space, any format.|Any size, MBR formatted.|
 |**CPU**|SLAT-Capable CPU|Any|
 |**Network**|Internet connection|Any|
