@@ -127,11 +127,11 @@ A company receives 50 new laptops for their managers and needs to reallocate 50
 
 A company is allocating 20 new computers to users in the accounting department. The users each have a source computer that contains their files and settings. An administrator uses a management technology such as a logon script or a batch file to run ScanState on each source computer to collect the user states and save them to a server in a compressed migration store.
 
-1.  On each source computer, the administrator runs the ScanState tool using Microsoft Endpoint Configuration Manager, Microsoft Deployment Toolkit (MDT), a logon script, a batch file, or a non-Microsoft management technology. ScanState collects the user state from each source computer and then saves it to a server.
+1.  On each source computer, the administrator runs the ScanState tool using Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), a logon script, a batch file, or a non-Microsoft management technology. ScanState collects the user state from each source computer and then saves it to a server.
 
 2.  On each new computer, the administrator installs the company's SOE, which includes Windows 10 and other company applications.
 
-3.  On each of the new computers, the administrator runs the LoadState tool using Microsoft Endpoint Configuration Manager, a logon script, a batch file, or a non-Microsoft management technology. LoadState migrates each user state from the migration store to one of the new computers.
+3.  On each of the new computers, the administrator runs the LoadState tool using Microsoft Configuration Manager, a logon script, a batch file, or a non-Microsoft management technology. LoadState migrates each user state from the migration store to one of the new computers.
 
 ## Related topics
 

@@ -148,7 +148,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 ## Learn more
 
-- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
+- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related articles
 

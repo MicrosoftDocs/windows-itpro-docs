@@ -265,9 +265,9 @@ For more information, see the [Windows Application List](uev-managing-settings-l
 
 If you're deploying UE-V to synchronize settings for custom applications, you’ll use the UE-V template generator to create custom settings location templates for those desktop applications. After you create and test a custom settings location template in a test environment, you can deploy the settings location templates to user devices.
 
-Custom settings location templates must be deployed with an existing deployment infrastructure, such as an enterprise software distribution method, including Microsoft Endpoint Configuration Manager, with preferences, or by configuring a UE-V settings template catalog. Templates that are deployed with Configuration Manager or Group Policy must be registered using UE-V WMI or Windows PowerShell.
+Custom settings location templates must be deployed with an existing deployment infrastructure, such as an enterprise software distribution method, including Microsoft Configuration Manager, with preferences, or by configuring a UE-V settings template catalog. Templates that are deployed with Configuration Manager or Group Policy must be registered using UE-V WMI or Windows PowerShell.
 
-For more information about custom settings location templates, see [Deploy UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). For more information about using UE-V with Configuration Manager, see [Configuring UE-V with Microsoft Endpoint Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md).
+For more information about custom settings location templates, see [Deploy UE-V with custom applications](uev-deploy-uev-for-custom-applications.md). For more information about using UE-V with Configuration Manager, see [Configuring UE-V with Microsoft Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md).
 
 ### Prevent unintentional user settings configuration
 
