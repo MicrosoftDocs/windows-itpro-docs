@@ -11,7 +11,7 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# XML Elements Library
+# XML elements library
 
 This topic describes the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT). It is assumed that you understand the basics of XML.
 
@@ -1753,7 +1753,7 @@ This is an internal USMT element. Do not use this element.
 
 This is an internal USMT element. Do not use this element.
 
-## <a href="" id="pattern"></a>&lt;pattern&gt;
+## &lt;pattern&gt;
 
 
 You can use this element to specify multiple objects. You can specify multiple &lt;pattern&gt; elements for each &lt;objectSet&gt; element and they will be combined. If you are specifying files, you may want to use GenerateDrivePatterns with &lt;script&gt; instead. GenerateDrivePatterns is basically the same as a &lt;pattern&gt; rule, without the drive letter specification. For example, the following two lines of code are similar:

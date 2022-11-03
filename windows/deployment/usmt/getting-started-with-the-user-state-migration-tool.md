@@ -15,14 +15,6 @@ ms.date: 11/01/2022
 
 This article outlines the general process that you should follow to migrate files and settings.
 
-## In this topic
-
-- [Step 1: Plan your migration](#step-1-plan-your-migration)
-
-- [Step 2: Collect files and settings from the source computer](#step-2-collect-files-and-settings-from-the-source-computer)
-
-- [Step 3: Prepare the destination computer and restore files and settings](#step-3-prepare-the-destination-computer-and-restore-files-and-settings)
-
 ## Step 1: Plan your migration
 
 1. [Plan Your Migration](usmt-plan-your-migration.md). Depending on whether your migration scenario is refreshing or replacing computers, you can choose an online migration or an offline migration using Windows Preinstallation Environment (WinPE) or the files in the Windows.old directory. For more information, see [Common Migration Scenarios](usmt-common-migration-scenarios.md).

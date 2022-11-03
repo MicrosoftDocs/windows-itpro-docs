@@ -27,32 +27,6 @@ When you include, exclude, and reroute files and settings, it's important to kno
 
 - **You can use the &lt;unconditionalExclude&gt; element to globally exclude data.** This element excludes objects, regardless of any other **&lt;include&gt;** rules that are in the .xml files. For example, you can use the **&lt;unconditionalExclude&gt;** element to exclude all MP3 files on the computer or to exclude all files from `C:\UserData`.
 
-## In this topic
-
-[General](#general)
-
-- [What is the relationship between rules that are located within different components?](#what-is-the-relationship-between-rules-that-are-located-within-different-components)
-
-- [How does precedence work with the Config.xml file?](#how-does-precedence-work-with-the-configxml-file)
-
-- [How does USMT process each component in an .xml file with multiple components?](#how-does-usmt-process-each-component-in-an-xml-file-with-multiple-components)
-
-- [How are rules processed?](#how-are-rules-processed)
-
-- [How does USMT combine all of the .xml files that I specify on the command line?](#how-does-usmt-combine-all-of-the-xml-files-that-i-specify-on-the-command-line)
-
-[The &lt;include&gt; and &lt;exclude&gt; rules](#the-include-and-exclude-rules)
-
-- [What happens when there are conflicting &lt;include&gt; and &lt;exclude&gt; rules?](#what-happens-when-there-are-conflicting-include-and-exclude-rules)
-
-- [&lt;include&gt; and &lt;exclude&gt; rules precedence examples](#include-and-exclude-rules-precedence-examples)
-
-[File collisions](#file-collisions)
-
-- [What is the default behavior when there are file collisions?](#what-is-the-default-behavior-when-there-are-file-collisions)
-
-- [How does the &lt;merge&gt; rule work when there are file collisions?](#how-does-the-merge-rule-work-when-there-are-file-collisions)
-
 ## General
 
 ### What is the relationship between rules that are located within different components?

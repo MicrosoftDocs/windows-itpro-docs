@@ -15,14 +15,6 @@ ms.technology: itpro-deploy
 
 When planning your migration, you should determine which migration store type best meets your needs. As part of these considerations, determine how much space is required to run the User State Migration Tool (USMT) 10.0 components on your source and destination computers. You should also determine the space needed to create and host the migration store, whether you're using a local share, network share, or storage device.
 
-## In this topic
-
-[Migration store types](#migration-store-types)
-
-[Local store vs. remote store](#local-store-vs-remote-store)
-
-[The /localonly command-line option](#the-localonly-command-line-option)
-
 ## Migration store types
 
 This section describes the three migration store types available in USMT.

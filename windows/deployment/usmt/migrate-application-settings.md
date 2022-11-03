@@ -19,20 +19,6 @@ This article defines how to author a custom migration .xml file that migrates th
 
 This article doesn't contain information about how to migrate applications that store settings in an application-specific store, only the applications that store the information in files or in the registry. It also doesn't contain information about how to migrate the data that users create using the application. For example, if the application creates .doc files using a specific template, this article doesn't discuss how to migrate the .doc files and templates themselves.
 
-## In this topic
-
-- [Before you begin](#before-you-begin)
-
-- [Step 1: Verify that the application is installed on the source computer, and that it's the same version as the version to be installed on the destination computer](#step-1-verify-that-the-application-is-installed-on-the-source-computer-and-that-its-the-same-version-as-the-version-to-be-installed-on-the-destination-computer).
-
-- [Step 2: Identify settings to collect and determine where each setting is stored on the computer](#step-2-identify-settings-to-collect-and-determine-where-each-setting-is-stored-on-the-computer).
-
-- [Step 3: Identify how to apply the gathered settings](#step-3-identify-how-to-apply-the-gathered-settings).
-
-- [Step 4: Create the migration XML component for the application](#step-4-create-the-migration-xml-component-for-the-application).
-
-- [Step 5: Test the application settings migration](#step-5-test-the-application-settings-migration).
-
 ## Before you begin
 
 You should identify a test computer that contains the operating system of your source computers, and the application whose settings you want to migrate. For example, if you're planning on migrating from Windows 7 to Windows 10, install Windows 7 on your test computer and then install the application.

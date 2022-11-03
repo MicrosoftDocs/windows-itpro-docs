@@ -15,7 +15,7 @@ ms.technology: itpro-deploy
 
 The User State Migration Tool (USMT) 10.0 migrates user files and settings during large deployments of Windows. To improve and simplify the migration process, USMT captures desktop, network, and application settings in addition to a user's files. USMT then migrates these items to a new Windows installation.
 
-## In This Section
+## In this Section
 
 | Link | Description |
 |--- |--- |

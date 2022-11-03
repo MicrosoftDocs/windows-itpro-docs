@@ -15,28 +15,6 @@ ms.technology: itpro-deploy
 
 A **hard-link migration store** enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed. This functionality is what makes **hard-link migration store** best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs, and enables entirely new migration scenarios.
 
-## In this topic
-
-[When to use a hard-link migration](#when-to-use-a-hard-link-migration)
-
-[Understanding a hard-link migration](#understanding-a-hard-link-migration)
-
-[Hard-Link migration store details](#hard-link-migration-store-details)
-
-[Hard disk space](#hard-disk-space)
-
-[Hard-Link store size estimation](#hard-link-store-size-estimation)
-
-[Migration store path on multiple volumes](#migration-store-path-on-multiple-volumes)
-
-[Location modifications](#location-modifications)
-
-[Migrating Encrypting File System (EFS) certificates and files](#migrating-encrypting-file-system-efs-certificates-and-files)
-
-[Migrating locked files with the hard-link migration store](#migrating-locked-files-with-the-hard-link-migration-store)
-
-[XML elements in the Config.xml file](#xml-elements-in-the-configxml-file)
-
 ## When to use a hard-link migration
 
 You can use a hard-link migration store when your planned migration meets both of the following criteria:

@@ -11,36 +11,20 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# Common Issues
+# Common issues
 
 The following sections discuss common issues that you might see when you run the User State Migration Tool (USMT) 10.0 tools. USMT produces log files that describe in further detail any errors that occurred during the migration process. These logs can be used to troubleshoot migration failures.
 
-## In this topic
-
-[User account problems](#user-account-problems)
-
-[Command-line problems](#command-line-problems)
-
-[XML file problems](#xml-file-problems)
-
-[Migration problems](#migration-problems)
-
-[Offline migration problems](#offline-migration-problems)
-
-[Hard link migration problems](#hard-link-migration-problems)
-
-[USMT doesn't migrate the Start layout](#usmt-doesnt-migrate-the-start-layout)
-
-## General Guidelines for Identifying Migration Problems
+## General guidelines for identifying migration problems
 
 When you encounter a problem or error message during migration, you can use the following general guidelines to help determine the source of the problem:
 
-- Examine the ScanState, LoadState, and UsmtUtils logs to obtain the exact USMT error messages and Windows® application programming interface (API) error messages. For more information about USMT return codes and error messages, see [Return Codes](usmt-return-codes.md). For more information about Windows API error messages, type **nethelpmsg** on the command line.
+- Examine the **ScanState**, **LoadState**, and UsmtUtils logs to obtain the exact USMT error messages and Windows® application programming interface (API) error messages. For more information about USMT return codes and error messages, see [Return codes](usmt-return-codes.md). For more information about Windows API error messages, type **nethelpmsg** on the command line.
 
-  In most cases, the ScanState and LoadState logs indicate why a USMT migration is failing. We recommend that you use the `/v:5` option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
+  In most cases, the **ScanState** and **LoadState** logs indicate why a USMT migration is failing. We recommend that you use the `/v:5` option when testing your migration. This verbosity level can be adjusted in a production migration; however, reducing the verbosity level might make it more difficult to diagnose failures that are encountered during production migrations. You can use a verbosity level higher than 5 if you want the log files output to go to a debugger.
 
   > [!NOTE]
-  > Running the ScanState and LoadState tools with the `/v:5` option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
+  > Running the **ScanState** and **LoadState** tools with the `/v:5` option creates a detailed log file. Although this option makes the log file large, the extra detail can help you determine where migration errors occurred.
 
 - Use the `/Verify` option with the UsmtUtils tool to determine whether any files in a compressed migration store are corrupted. For more information, see [Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md).
 
@@ -50,9 +34,9 @@ When you encounter a problem or error message during migration, you can use the 
 
 - For the source and destination computers, obtain operating system information, and versions of applications such as Internet Explorer and any other relevant programs. Then verify the exact steps that are needed to reproduce the problem. This information might help you to understand what is wrong and to reproduce the issue in your testing environment.
 
-- Sign out after you run the LoadState tool. Some settings such as fonts, desktop backgrounds, and screen-saver settings won't take effect until the next time the end user logs on.
+- Sign out after you run the **LoadState** tool. Some settings such as fonts, desktop backgrounds, and screen-saver settings won't take effect until the next time the end user logs on.
 
-- Close all applications before running ScanState or LoadState tools. If some applications are running during the ScanState or LoadState process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
+- Close all applications before running **ScanState** or **LoadState** tools. If some applications are running during the **ScanState** or **LoadState** process, USMT might not migrate some data. For example, if Microsoft Outlook® is open, USMT might not migrate PST files.
 
   > [!NOTE]
   > USMT will fail if it can't migrate a file or setting unless you specify the `/c` option. When you specify the `/c` option, USMT ignores errors. However, it logs an error when it encounters a file that is in use that didn't migrate.
@@ -69,7 +53,7 @@ The following sections describe common user account problems. Expand the section
 
 **Causes/Resolutions** There are two possible causes for this problem:
 
-When running the ScanState and LoadState tools on Windows 7, Windows 8, or Windows 10, you must run them in Administrator mode from an account with administrative credentials to ensure that all specified users are migrated. To run in Administrator mode:
+When running the **ScanState** and LoadState tools on Windows 7, Windows 8, or Windows 10, you must run them in Administrator mode from an account with administrative credentials to ensure that all specified users are migrated. To run in Administrator mode:
 
 1. Select **Start** > **All Programs** > **Accessories**.
 
@@ -97,7 +81,7 @@ Any user accounts on the computer that haven't been used won't be migrated. For 
 
 ### The LoadState tool reports an error as return code 71 and fails to restore a user profile during a migration test
 
-**Cause:** During a migration test, if you run the ScanState tool on your test computer and then delete user profiles in order to test the LoadState tool on the same computer, you may have a conflicting key present in the registry. Using the **net use** command to remove a user profile will delete folders and files associated with that profile, but won't remove the registry key.
+**Cause:** During a migration test, if you run the **ScanState** tool on your test computer and then delete user profiles in order to test the **LoadState** tool on the same computer, you may have a conflicting key present in the registry. Using the **net use** command to remove a user profile will delete folders and files associated with that profile, but won't remove the registry key.
 
 **Resolution:** To delete a user profile, use the **User Accounts** item in Control Panel. To correct an incomplete deletion of a user profile:
 
@@ -111,17 +95,17 @@ Any user accounts on the computer that haven't been used won't be migrated. For 
 
 ### Files that weren't encrypted before the migration are now encrypted with the account used to run the LoadState tool
 
-**Cause:** The ScanState tool was run using the `/EFS:copyraw` option to migrate encrypted files and Encrypting File System (EFS) certificates. The encryption attribute was set on a folder that was migrated, but the attribute was removed from file contents of that folder prior to migration.
+**Cause:** The **ScanState** tool was run using the `/EFS:copyraw` option to migrate encrypted files and Encrypting File System (EFS) certificates. The encryption attribute was set on a folder that was migrated, but the attribute was removed from file contents of that folder prior to migration.
 
-**Resolution:** Before using the ScanState tool for a migration that includes encrypted files and EFS certificates, you can run the Cipher tool at the command prompt to review and change encryption settings on files and folders. You must remove the encryption attribute from folders that contain unencrypted files or encrypt the contents of all files within an encrypted folder.
+**Resolution:** Before using the **ScanState** tool for a migration that includes encrypted files and EFS certificates, you can run the Cipher tool at the command prompt to review and change encryption settings on files and folders. You must remove the encryption attribute from folders that contain unencrypted files or encrypt the contents of all files within an encrypted folder.
 
-To remove encryption from files that have already been migrated incorrectly, you must sign into the computer with the account that you used to run the LoadState tool and then remove the encryption from the affected files.
+To remove encryption from files that have already been migrated incorrectly, you must sign into the computer with the account that you used to run the **LoadState** tool and then remove the encryption from the affected files.
 
 ### The LoadState tool reports an error as return code 71 and a Windows Error 2202 in the log file
 
 **Cause:** The computer name was changed during an offline migration of a local user profile.
 
-**Resolution:** You can use the `/mu` option when you run the LoadState tool to specify a new name for the user. For example,
+**Resolution:** You can use the `/mu` option when you run the **LoadState** tool to specify a new name for the user. For example,
 
 ``` syntax
 loadstate.exe /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore 
@@ -134,13 +118,13 @@ The following sections describe common command-line problems. Expand the section
 
 ### I received the following error message: "Usage Error: You can't specify a file path with any of the command-line options that exceeds 256 characters."
 
-**Cause:** You might receive this error message in some cases even if you don't specify a long store or file path, because the path length is calculated based on the absolute path. For example, if you run the `scanstate.exe /o store` command from `C:\Program Files\USMT40`, then each character in "`C:\Program Files\USMT40`" will be added to the length of "store" to get the length of the path.
+**Cause:** You might receive this error message in some cases even if you don't specify a long store or file path, because the path length is calculated based on the absolute path. For example, if you run the ` **ScanState**.exe /o store` command from `C:\Program Files\USMT40`, then each character in "`C:\Program Files\USMT40`" will be added to the length of "store" to get the length of the path.
 
 **Resolution:** Ensure that the total path length doesn't exceed 256 characters. The total path length includes the store path plus the current directory.
 
 ### I received the following error message: "USMT was unable to create the log file(s). Ensure that you have write access to the log directory."
 
-**Cause:** If you're running the ScanState or LoadState tools from a shared network resource, you'll receive this error message if you don't specify `/l`.
+**Cause:** If you're running the **ScanState** or **LoadState** tools from a shared network resource, you'll receive this error message if you don't specify `/l`.
 
 **Resolution:** To fix this issue in this scenario, specify the `/l:scan.log` or `/l:load.log` option.
 
@@ -164,7 +148,7 @@ The following sections describe common XML file problems. Expand the section to 
 
 **Cause:** Typically, this issue is caused by incorrect syntax used in a helper function. You receive a Success return code, but the files you wanted to migrate didn't get collected or applied, or weren't collected or applied in the way you expected.
 
-**Resolution:** You should search the ScanState or LoadState log for either the component name that contains the MigXML helper function, or the MigXML helper function title, so that you can locate the related warning in the log file.
+**Resolution:** You should search the **ScanState** or **LoadState** log for either the component name that contains the MigXML helper function, or the MigXML helper function title, so that you can locate the related warning in the log file.
 
 ## Migration problems
 
@@ -196,7 +180,7 @@ The following sections describe common migration problems. Expand the section to
 
 There are three typical causes for this issue.
 
-**Cause**: Some settings such as fonts, desktop backgrounds, and screen-saver settings aren't applied by LoadState until after the destination computer has been restarted.
+**Cause**: Some settings such as fonts, desktop backgrounds, and screen-saver settings aren't applied by **LoadState** until after the destination computer has been restarted.
 
 **Resolution:** To fix this issue, sign out, and then log back on to see the migrated desktop background.
 
@@ -205,9 +189,9 @@ There are three typical causes for this issue.
 
 **Resolution:** Ensure that the desktop background images that you want to migrate aren't in the \\WINDOWS\\Web\\Wallpaper folder on the source computer.
 
-**Cause \#3:** If ScanState wasn't run on Windows XP from an account with administrative credentials, some operating system settings won't migrate. For example, desktop background settings, screen-saver selections, modem options, media-player settings, and Remote Access Service (RAS) connection phone book (.pbk) files and settings won't migrate.
+**Cause \#3:** If **ScanState** wasn't run on Windows XP from an account with administrative credentials, some operating system settings won't migrate. For example, desktop background settings, screen-saver selections, modem options, media-player settings, and Remote Access Service (RAS) connection phone book (.pbk) files and settings won't migrate.
 
-**Resolution:** Run the ScanState and LoadState tools from within an account with administrative credentials.
+**Resolution:** Run the **ScanState** and **LoadState** tools from within an account with administrative credentials.
  --->
 
 ### I included MigApp.xml in the migration, but some PST files aren't migrating
@@ -252,15 +236,15 @@ The following sections describe common offline migration problems. Expand the se
 
 ### The ScanState tool fails with return code 26
 
-**Cause:** A common cause of return code 26 is that a temp profile is active on the source computer. This profile maps to c:\\users\\temp. The ScanState log shows a MigStartupOfflineCaught exception that includes the message "User profile duplicate SID error".
+**Cause:** A common cause of return code 26 is that a temp profile is active on the source computer. This profile maps to c:\\users\\temp. The **ScanState** log shows a **MigStartupOfflineCaught** exception that includes the message **User profile duplicate SID error**.
 
-**Resolution:** You can reboot the computer to get rid of the temp profile or you can set MIG\_FAIL\_ON\_PROFILE\_ERROR=0 to skip the error and exclude the temp profile.
+**Resolution:** You can reboot the computer to get rid of the temp profile or you can set **MIG_FAIL_ON_PROFILE_ERROR=0** to skip the error and exclude the temp profile.
 
 ### Include and Exclude rules for migrating user profiles don't work the same offline as they do online
 
 **Cause:** When offline, the DNS server can't be queried to resolve the user name and SID mapping.
 
-**Resolution:** Use a Security Identifier (SID) to include a user when running the ScanState tool. For example:
+**Resolution:** Use a Security Identifier (SID) to include a user when running the **ScanState** tool. For example:
 
 ``` syntax
 Scanstate.exe /ui:S1-5-21-124525095-708259637-1543119021*
@@ -272,9 +256,9 @@ You can also use patterns for SIDs that identify generic users or groups. For ex
 
 ### My script to wipe the disk fails after running the ScanState tool on a 64-bit system
 
-**Cause:** The HKLM registry hive isn't unloaded after the ScanState tool has finished running.
+**Cause:** The HKLM registry hive isn't unloaded after the **ScanState** tool has finished running.
 
-**Resolution:** Reboot the computer or unload the registry hive at the command prompt after the ScanState tool has finished running. For example, at a command prompt, type:
+**Resolution:** Reboot the computer or unload the registry hive at the command prompt after the **ScanState** tool has finished running. For example, at a command prompt, type:
 
 ``` syntax
 reg.exe unload hklm\$dest$software

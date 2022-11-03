@@ -24,73 +24,17 @@ For more information about using the `Config.xml` file with other migration file
 > [!NOTE]
 > To exclude a component from the `Config.xml` file, set the **migrate** value to **no**. Deleting the XML tag for the component from the `Config.xml` file will not exclude the component from your migration.
 
-## In this topic
+## Migration Policies
 
 In USMT there are new migration policies that can be configured in the `Config.xml` file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the `Config.xml` file only.
 
-[&lt;Policies&gt;](#policies)
-
-[&lt;ErrorControl&gt;](#errorcontrol)
-
-<!-- 
-
-[&lt;ProfileControl&gt;](#profilecontrol)
-
-[&lt;HardLinkStoreControl&gt;](#hardlinkstorecontrol)
-
-[&lt;Components&gt;](#components)
-
-[&lt;Component&gt;](#component)
-
-[&lt;Applications&gt;](#applications)
-
-[&lt;Application&gt;](#application)
-
-[&lt;UserDocuments&gt;](#userdocuments)
-
-[&lt;UserDocument&gt;](#userdocument)
-
-[&lt;ErrorControl&gt;](#bkmk-errorcontrol)
-
--->
-
-[&lt;fatal&gt;](#fatal)
-
-[&lt;fileError&gt;](#fileerror)
-
-[&lt;nonfatal&gt;](#nonfatal)
-
-[&lt;registryError&gt;](#registryerror)
-
-[&lt;HardLinkStoreControl&gt;](#hardlinkstorecontrol)
-
-[&lt;fileLocked&gt;](#filelocked)
-
-[&lt;createHardLink&gt;](#createhardlink)
-
-[&lt;errorHardLink&gt;](#errorhardlink)
-
-[&lt;ProfileControl&gt;](#profilecontrol)
-
-[&lt;localGroups&gt;](#localgroups)
-
-[&lt;mappings&gt;](#mappings)
-
-[&lt;changeGroup&gt;](#changegroup)
-
-[&lt;include&gt;](#include)
-
-[&lt;exclude&gt;](#exclude)
-
-[Sample Config.xml File](#sample-configxml-file)
-
-## &lt;Policies&gt;
+### &lt;Policies&gt;
 
 The **&lt;Policies&gt;** element contains elements that describe the policies that USMT follows while creating a migration store. Valid children of the **&lt;Policies&gt;** element are **&lt;ErrorControl&gt;** and **&lt;HardLinkStoreControl&gt;**. The **&lt;Policies&gt;** element is a child of **&lt;Configuration&gt;**.
 
 Syntax: `<Policies>` `</Policies>`
 
-## &lt;ErrorControl&gt;
+### &lt;ErrorControl&gt;
 
 The **&lt;ErrorControl&gt;** element is an optional element you can configure in the `Config.xml` file. The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
@@ -139,7 +83,7 @@ Syntax: `<fatal errorCode="any">` *&lt;pattern&gt;* `</fatal>`
 
 You use the **&lt;fatal&gt;** element to specify that errors matching a specific pattern should cause USMT to halt the migration.
 
-## &lt;fileError&gt;
+### &lt;fileError&gt;
 
 The **&lt;fileError&gt;** element isn't required.
 
@@ -153,7 +97,7 @@ Syntax: `<fileError>` `</fileError>`
 
 You use the **&lt;fileError&gt;** element to represent the behavior associated with file errors.
 
-## &lt;nonFatal&gt;
+### &lt;nonFatal&gt;
 
 The **&lt;nonFatal&gt;** element isn't required.
 
@@ -171,7 +115,7 @@ Syntax: `<nonfatal errorCode="any">` *&lt;pattern&gt;* `</nonFatal>`
 
 You use the **&lt;nonFatal&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-## &lt;registryError&gt;
+### &lt;registryError&gt;
 
 The **&lt;registryError&gt;** element isn't required.
 
@@ -189,7 +133,7 @@ Syntax: `<registryError>` `</registryError>`
 
 You use the **&lt;registryError&gt;** element to specify that errors matching a specific pattern shouldn't cause USMT to halt the migration.
 
-## &lt;HardLinkStoreControl&gt;
+### &lt;HardLinkStoreControl&gt;
 
 The **&lt;HardLinkStoreControl&gt;** element contains elements that describe how to handle files during the creation of a hard-link migration store. Its only valid child is **&lt;fileLocked&gt;**.
 
@@ -222,43 +166,43 @@ The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links
 </Policy>
 ```
 
-## &lt;fileLocked&gt;
+### &lt;fileLocked&gt;
 
 The **&lt;fileLocked&gt;** element contains elements that describe how to handle files that are locked for editing. The rules defined by the **&lt;fileLocked&gt;** element are processed in the order in which they appear in the XML file.
 
 Syntax: `<fileLocked>` `</fileLocked>`
 
-## &lt;createHardLink&gt;
+### &lt;createHardLink&gt;
 
 The **&lt;createHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.
 
 Syntax: `<createHardLink>` *&lt;pattern&gt;* `</createHardLink>`
 
-## &lt;errorHardLink&gt;
+### &lt;errorHardLink&gt;
 
 The **&lt;errorHardLink&gt;** element defines a standard MigXML pattern that describes file paths where hard links shouldn't be created if the file is locked for editing by another application. USMT will attempt to copy files under these paths into the migration store. However, if that isn't possible, **Error\_Locked** is thrown. This error is a standard Windows application programming interface (API) error that can be captured by the **&lt;ErrorControl&gt;** section to either cause USMT to skip the file or abort the migration.
 
 Syntax: `<errorHardLink>` *&lt;pattern&gt;* `</errorHardLink>`
 
-## &lt;ProfileControl&gt;
+### &lt;ProfileControl&gt;
 
 This element is used to contain other elements that establish rules for migrating profiles, users, and policies around local group membership during the migration. **&lt;ProfileMigration&gt;** is a child of **&lt;Configuration&gt;**.
 
 Syntax: &lt;`ProfileControl>` `</ProfileControl>`
 
-## &lt;localGroups&gt;
+### &lt;localGroups&gt;
 
 This element is used to contain other elements that establish rules for how to migrate local groups. **&lt;localGroups&gt;** is a child of **&lt;ProfileControl&gt;**.
 
 Syntax: `<localGroups>` `</localGroups>`
 
-## &lt;mappings&gt;
+### &lt;mappings&gt;
 
 This element is used to contain other elements that establish mappings between groups.
 
 Syntax: `<mappings>` `</mappings>`
 
-## &lt;changeGroup&gt;
+### &lt;changeGroup&gt;
 
 This element describes the source and destination groups for a local group membership change during the migration. It's a child of **&lt;localGroups&gt;**. The following parameters are defined:
 
@@ -272,13 +216,13 @@ The valid and required children of **&lt;changeGroup&gt;** are **&lt;include&gt;
 
 Syntax: `<changeGroup From="Group1" To= "Group2">` `</changeGroup>`
 
-## &lt;include&gt;
+### &lt;include&gt;
 
 This element specifies that its required child, *&lt;pattern&gt;*, should be included in the migration.
 
 Syntax: `<include>` `</include>`
 
-## &lt;exclude&gt;
+### &lt;exclude&gt;
 
 This element specifies that its required child, *&lt;pattern&gt;*, should be excluded from the migration.
 

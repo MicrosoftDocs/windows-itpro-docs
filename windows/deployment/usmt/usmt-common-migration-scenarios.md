@@ -17,26 +17,6 @@ You use the User State Migration Tool (USMT) 10.0 when hardware and/or operating
 
 One common scenario is when the operating system is upgraded on existing hardware without the hardware being replaced. This scenario is referred to as *PC-refresh*. A second common scenario is known as *PC replacement*, where one piece of hardware is being replaced, typically by newer hardware and a newer operating system.
 
-**In this article:**
-
-[PC-refresh](#pc-refresh)
-
-[Scenario One: PC-refresh offline using Windows PE and a hard-link migration store](#scenario-one-pc-refresh-offline-using-windows-pe-and-a-hard-link-migration-store)
-
-[Scenario Two: PC-refresh using a compressed migration store](#scenario-two-pc-refresh-using-a-compressed-migration-store)
-
-[Scenario Three: PC-refresh using a hard-link migration store](#scenario-three-pc-refresh-using-a-hard-link-migration-store)
-
-[Scenario Four: PC-refresh using Windows.old folder and a hard-link migration store](#scenario-four-pc-refresh-using-windowsold-folder-and-a-hard-link-migration-store)
-
-[PC-replacement](#pc-replacement)
-
-[Scenario One: Offline migration using Windows PE and an external migration store](#scenario-one-offline-migration-using-windows-pe-and-an-external-migration-store)
-
-[Scenario Two: Manual network migration](#scenario-two-manual-network-migration)
-
-[Scenario Three: Managed network migration](#scenario-three-managed-network-migration)
-
 ## PC-refresh
 
 The following diagram shows a PC-refresh migration, also known as a computer refresh migration. First, the administrator migrates the user state from a source computer to an intermediate store. After installing the operating system, the administrator migrates the user state back to the source computer.

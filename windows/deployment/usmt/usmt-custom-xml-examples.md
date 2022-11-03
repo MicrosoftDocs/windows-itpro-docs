@@ -20,7 +20,7 @@ The following template is a template for the sections that you need to migrate y
 **Template**
 <br>
 <details>
-  <summary>Expand to show Example 1 application template:</summary>
+  <summary>Expand to show <b>Example 1</b> application template:</summary>
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
@@ -109,7 +109,7 @@ The following sample is a custom .xml file named `CustomFile.xml` that migrates 
 **XML file**
 <br>
 <details>
-  <summary>Expand to show Example 2 XML file:</summary>
+  <summary>Expand to show <b>Example 2</b> XML file:</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -159,7 +159,7 @@ The sample patterns describe the behavior in the following example .xml file.
 **XML file**
 <br>
 <details>
-  <summary>Expand to show Example 3 XML file:</summary>
+  <summary>Expand to show <b>Example 3</b> XML file:</summary>
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
@@ -201,7 +201,7 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 **XML file**
 <br>
 <details>
-  <summary>Expand to show Example 4 XML file:</summary>
+  <summary>Expand to show <b>Example 4</b> XML file:</summary>
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">

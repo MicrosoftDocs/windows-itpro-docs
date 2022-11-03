@@ -23,19 +23,7 @@ Options used with the `/extract` option can specify:
 
 - Include and exclude patterns for selective data extraction.
 
-In addition, you can specify the file patterns that you want to extract by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. Note that this is different from the include and exclude rules used in the ScanState and LoadState tools.
-
-## In this topic
-
-- [To run the USMTUtils tool with the /extract option](#to-run-the-usmtutils-tool-with-the-extract-option)
-
-- [To extract all files from a compressed migration store](#to-extract-all-files-from-a-compressed-migration-store)
-
-- [To extract specific file types from an encrypted compressed migration store](#to-extract-specific-file-types-from-an-encrypted-compressed-migration-store)
-
-- [To extract all but one, or more, file types from an encrypted compressed migration store](#to-extract-all-but-one-or-more-file-types-from-an-encrypted-compressed-migration-store)
-
-- [To extract file types using the include pattern and the exclude pattern](#to-extract-file-types-using-the-include-pattern-and-the-exclude-pattern)
+In addition, you can specify the file patterns that you want to extract by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. Note that this is different from the include and exclude rules used in the **ScanState** and **LoadState** tools.
 
 ### To run the USMTUtils tool with the /extract option
 

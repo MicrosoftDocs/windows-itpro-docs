@@ -15,12 +15,6 @@ ms.technology: itpro-deploy
 
 This topic describes the XML helper functions.
 
-## In this topic
-
-[General XML guidelines](#general-xml-guidelines)
-
-[Helper functions](#helper-functions)
-
 ## General XML guidelines
 
 Before you modify the .xml files, become familiar with the following guidelines:

@@ -13,20 +13,6 @@ ms.technology: itpro-deploy
 
 # Customize USMT XML files
 
-## In this topic
-
-[Overview](#overview)
-
-[Migration .xml files](#migration-xml-files)
-
-[Custom .xml files](#custom-xml-files)
-
-[The Config.xml file](#the-configxml-file)
-
-[Examples](#examples)
-
-[Additional Information](#additional-information)
-
 ## Overview
 
 If you want the ScanState and LoadState tools to use any of the migration .xml files, specify these files at the command line using the `/i` option. Because the ScanState and LoadState tools need the .xml files to control the migration, specify the same set of .xml files for both the `ScanState.exe` and `LoadState.exe` commands. However, you don't have to specify the `Config.xml` file with the `/config` option, unless you want to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store but not to the destination computer. To achieve this scenario, modify the `Config.xml` file and specify the updated file with the `LoadState.exe` command. Then the `LoadState.exe` command will migrate only the files and settings that you want to migrate.

@@ -27,20 +27,6 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user st
 
 - **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
 
-## In this topic
-
-- [What will migrate offline?](#what-will-migrate-offline)
-
-- [What offline environments are supported?](#what-offline-environments-are-supported)
-
-- [User-group membership and profile control](#user-group-membership-and-profile-control)
-
-- [Command-line options](#command-line-options)
-
-- [Environment variables](#environment-variables)
-
-- [Offline.xml elements](#offlinexml-elements)
-
 ## What will migrate offline?
 
 The following user data and settings migrate offline, similar to an online migration:

@@ -25,7 +25,7 @@ The ScanState command is used with the User State Migration Tool (USMT) 10.0 to 
 
 [Migration Rule Options](#bkmk-migrationruleoptions)
 
-[Monitoring Options](#bkmk-monitoringoptions)
+[Monitoring Options](#monitoring-options)
 
 [User Options](#bkmk-useroptions)
 
@@ -126,7 +126,7 @@ USMT provides the following options to specify what files you want to migrate.
 | **/targetwindows7** | Optimizes Scanstate.exe when using USMT 10.0 to migrate a user state to Windows 7 instead of Windows 10. You should use this command-line option in the following scenarios: <ul><li>**To create a Config.xml file by using the /genconfig option.** Using the **/targetwindows7** option optimizes the Config.xml file so that it only contains components that relate to Windows 7.</li><li>**To create a migration store.** Using the **/targetwindows7** option ensures that the ScanState tool gathers the correct set of operating system settings. Without the **/targetwindows7** command-line option, some settings can be lost during the migration.</li></ul> |
 | **/localonly** | Migrates only files that are stored on the local computer, regardless of the rules in the .xml files that you specify on the command line. You should use this option when you want to exclude the data from removable drives on the source computer, such as USB flash drives (UFDs), some external hard drives, and so on, and when there are network drives mapped on the source computer. If the **/localonly** option is not specified, then the **ScanState** command will copy files from these removable or network drives into the store.<br/><br/>Anything that is not considered a fixed drive by the OS will be excluded by **/localonly**. In some cases large external hard drives are considered fixed drives. These drives can be explicitly excluded from migration by using a custom.xml file. For more information about how to exclude all files on a specific drive, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md).<br/><br/>The **/localonly** command-line option includes or excludes data in the migration as identified in the following:<ul><li>**Removable drives such as a USB flash drive** - Excluded</li><li>**Network drives** - Excluded</li><li>**Fixed drives** - Included</li></ul>|
 
-## <a href="" id="bkmk-monitoringoptions"></a>Monitoring Options
+## Monitoring options
 
 USMT provides several options that you can use to analyze problems that occur during migration.
 

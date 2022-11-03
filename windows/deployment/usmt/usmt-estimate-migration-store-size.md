@@ -15,14 +15,6 @@ ms.technology: itpro-deploy
 
 The disk space requirements for a migration are dependent on the size of the migration store and the type of migration. You can estimate the amount of disk space needed for computers in your organization based on information about your organization's infrastructure. You can also calculate the disk space requirements using the ScanState tool.
 
-## In this topic
-
-- [Hard disk space requirements](#hard-disk-space-requirements): Describes the disk space requirements for the migration store and other considerations on the source and destination computers.
-
-- [Calculate disk space requirements using the ScanState tool](#calculate-disk-space-requirements-using-the-scanstate-tool): Describes how to use the ScanState tool to determine how large the migration store will be on a particular computer.
-
-- [Estimating migration store size](#estimating-migration-store-size): Describes how to estimate the average size of migration stores for the computers in your organization, based on your infrastructure.
-
 ## Hard disk space requirements
 
 - **Store**: For non-hard-link migrations, you should ensure that there's enough available disk space at the location where you'll save your store to contain the data being migrated. You can save your store to another partition, an external storage device such as a USB flash drive or a server. For more information, see [Choose a Migration Store Type](usmt-choose-migration-store-type.md).

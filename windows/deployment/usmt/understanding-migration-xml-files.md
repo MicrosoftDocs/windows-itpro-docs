@@ -17,32 +17,6 @@ You can modify the behavior of a basic User State Migration Tool (USMT) 10.0 mig
 
 This article provides an overview of the default and custom migration XML files and includes guidelines for creating and editing a customized version of the `MigDocs.xml` file. The `MigDocs.xml` file uses the new `GenerateDocPatterns` function available in USMT to automatically find user documents on a source computer.
 
-## In this topic
-
-[Overview of the Config.xml file](#overview-of-the-configxml-file)
-
-[Overview of the MigApp.xml file](#overview-of-the-migappxml-file)
-
-[Overview of the MigDocs.xml file](#overview-of-the-migdocsxml-file)
-
-[Overview of the MigUser.xml file](#overview-of-the-miguserxml-file)
-
-[Using multiple XML files](#using-multiple-xml-files)
-
-[XML rules for migrating user files](#xml-rules-for-migrating-user-files)
-
-[The GenerateDocPatterns function](#the-generatedocpatterns-function)
-
-[Understanding the system and user context](#understanding-the-system-and-user-context)
-
-[Sample migration rules for customized versions of XML files](#sample-migration-rules-for-customized-versions-of-xml-files)
-
-[Exclude rules usage examples](#exclude-rules-usage-examples)
-
-[Include rules usage examples](#include-rules-usage-examples)
-
-[Next Steps](#next-steps)
-
 ## Overview of the Config.xml file
 
 The `Config.xml` file is the configuration file created by the `/genconfig` option of the ScanState tool; it can be used to modify which operating-system components are migrated by USMT. The `Config.xml` file can be used with other XML files, such as in the following example:

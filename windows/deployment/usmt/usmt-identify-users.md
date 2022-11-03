@@ -16,15 +16,6 @@ ms.date: 11/01/2022
 
 It's important to carefully consider how you plan to migrate users. By default, all users are migrated by User State Migration Tool (USMT) 5.0. You must specify which users to include by using the command line. You can't specify users in the .xml files. For instructions on how to migrate users, see [Migrate user accounts](usmt-migrate-user-accounts.md).
 
-## In this topic
-
-- [Identify users](#identify-users)
-  - [In this topic](#in-this-topic)
-  - [Migrating local accounts](#migrating-local-accounts)
-  - [Migrating domain accounts](#migrating-domain-accounts)
-  - [Command-line options](#command-line-options)
-  - [Related articles](#related-articles)
-
 ## Migrating local accounts
 
 Before migrating local accounts, be aware of the following items:
