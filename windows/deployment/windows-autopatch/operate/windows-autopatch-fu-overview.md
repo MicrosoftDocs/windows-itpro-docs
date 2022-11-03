@@ -73,7 +73,7 @@ When releasing a feature update, there are two policies that are configured by t
 
 During a release, the service modifies the Modern Workplace DSS policy to change the target version for a specific ring in Intune. That change is deployed to devices and updates the devices prior to the update deadline.  
 
-To understand how devices will react to the change in the Modern Workplace DSS policy, it's important to understand how deferral, deadline, and grace periods effect devices.
+To understand how devices will react to the change in the Modern Workplace DSS policy, it's important to understand how deferral, deadline, and grace periods affect devices.
 
 | Policy | Description |
 | ----- | ----- |
@@ -93,7 +93,7 @@ To allow customers to test Windows 11 in their environment, there's a separate D
 
 ## Pausing and resuming a release
 
-You can pause or resume a Windows feature update from the Release management tab in Microsoft Endpoint Manager.
+You can pause or resume a Windows feature update from the Release management tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ## Rollback
 

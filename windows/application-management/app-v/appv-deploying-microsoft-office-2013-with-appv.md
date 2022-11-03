@@ -245,7 +245,7 @@ Use the following information to publish an Office package.
 
 Deploy the App-V package for Office 2013 by using the same methods you use for any other package:
 
-* Microsoft Endpoint Configuration Manager
+* Microsoft Configuration Manager
 * App-V Server
 * Stand-alone through Windows PowerShell commands
 
@@ -283,7 +283,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 #### To enable plug-ins for Office App-V packages
 
-1. Add a Connection Group through App-V Server, Microsoft Endpoint Configuration Manager, or a Windows PowerShell cmdlet.
+1. Add a Connection Group through App-V Server, Microsoft Configuration Manager, or a Windows PowerShell cmdlet.
 2. Sequence your plug-ins using the App-V Sequencer. Ensure that Office 2013 is installed on the computer being used to sequence the plug-in. It's a good idea to use Microsoft 365 Apps for enterprise (non-virtual) on the sequencing computer when you sequence Office 2013 plug-ins.
 3. Create an App-V package that includes the desired plug-ins.
 4. Add a Connection Group through App-V Server, Configuration Manager, or a Windows PowerShell cmdlet.
