@@ -2,20 +2,21 @@
 title: Create a task sequence with Configuration Manager (Windows 10)
 description: Create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Create a task sequence with Configuration Manager and MDT
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 In this article, you'll learn how to create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard. Creating task sequences in Configuration Manager requires many more steps than creating task sequences for MDT Lite Touch installation. Luckily, the MDT wizard helps you through the process and also guides you through creating the needed packages.
 
@@ -31,11 +32,11 @@ This section walks you through the process of creating a Configuration Manager t
 On **CM01**:
 
 1.  Using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and select **Create MDT Task Sequence**.
-2.  On the **Choose Template** page, select the **Client Task Sequence** template and click **Next**.
-3.  On the **General** page, assign the following settings and then click **Next**:
+2.  On the **Choose Template** page, select the **Client Task Sequence** template and select **Next**.
+3.  On the **General** page, assign the following settings and then select **Next**:
     * Task sequence name: Windows 10 Enterprise x64 RTM
     * Task sequence comments: Production image with Office 365 Pro Plus x64
-4.  On the **Details** page, assign the following settings and then click **Next**:
+4.  On the **Details** page, assign the following settings and then select **Next**:
     * Join a Domain
     * Domain: contoso.com
         * Account: contoso\\CM\_JD
@@ -45,18 +46,18 @@ On **CM01**:
         * Organization name: Contoso
         * Product key: &lt;blank&gt;
 
-5.  On the **Capture Settings** page, accept the default settings, and click **Next**.
-6.  On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then click **Next**.
-7.  On the **MDT Package** page, select **Create a new Microsoft Deployment Toolkit Files package**, and in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\MDT\\MDT**. Then click **Next**.
-8.  On the **MDT Details** page, assign the name **MDT** and click **Next**.
-9.  On the **OS Image** page, browse and select the **Windows 10 Enterprise x64 RTM** package. Then click **Next**.
-10. On the **Deployment Method** page, accept the default settings (Zero Touch installation) and click **Next**.
-11. On the **Client Package** page, browse and select the **Microsoft Corporation Configuration Manager Client Package** and click **Next**.
-12. On the **USMT Package** page, browse and select the **Microsoft Corporation User State Migration Tool for Windows** package and click **Next**.
-13. On the **Settings Package** page, select the **Create a new settings package** option, and in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\Settings\\Windows 10 x64 Settings** and click **Next**.
-14. On the **Settings Details** page, assign the name **Windows 10 x64 Settings** and click **Next**.
-15. On the **Sysprep Package** page, click **Next** twice.
-16. On the **Confirmation** page, click **Finish**.
+5.  On the **Capture Settings** page, accept the default settings, and select **Next**.
+6.  On the **Boot Image** page, browse and select the **Zero Touch WinPE x64** boot image package. Then select **Next**.
+7.  On the **MDT Package** page, select **Create a new Microsoft Deployment Toolkit Files package**, and in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\MDT\\MDT**. Then select **Next**.
+8.  On the **MDT Details** page, assign the name **MDT** and select **Next**.
+9.  On the **OS Image** page, browse and select the **Windows 10 Enterprise x64 RTM** package. Then select **Next**.
+10. On the **Deployment Method** page, accept the default settings (Zero Touch installation) and select **Next**.
+11. On the **Client Package** page, browse and select the **Microsoft Corporation Configuration Manager Client Package** and select **Next**.
+12. On the **USMT Package** page, browse and select the **Microsoft Corporation User State Migration Tool for Windows** package and select **Next**.
+13. On the **Settings Package** page, select the **Create a new settings package** option, and in the **Package source folder to be created (UNC Path):** text box, type **\\\\CM01\\Sources$\\OSD\\Settings\\Windows 10 x64 Settings** and select **Next**.
+14. On the **Settings Details** page, assign the name **Windows 10 x64 Settings** and select **Next**.
+15. On the **Sysprep Package** page, select **Next** twice.
+16. On the **Confirmation** page, select **Finish**.
 
 ## Edit the task sequence
 
@@ -64,7 +65,7 @@ After you create the task sequence, we recommend that you configure the task seq
 
 On **CM01**:
 
-1.  Using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click the **Windows 10 Enterprise x64 RTM** task sequence, and click **Edit**.
+1.  Using the Configuration Manager Console, in the Software Library workspace, expand **Operating Systems**, select **Task Sequences**, right-click the **Windows 10 Enterprise x64 RTM** task sequence, and select **Edit**.
 2.  In the **Install** group (about halfway down), select the **Set Variable for Drive Letter** action and configure the following:
     * OSDPreserveDriveLetter: True
     
@@ -110,7 +111,7 @@ On **CM01**:
       * Task Sequence Variable
       * USMTLOCAL not equals True
 
-11. Click **OK**.
+11. Select **OK**.
 
 ## Organize your packages (optional)
 
@@ -121,13 +122,13 @@ To create a folder for packages:
 On **CM01**:
 
 1.  Using the Configuration Manager Console, in the Software Library workspace, expand **Application Management**, and then select **Packages**.
-2.  Right-click **Packages**, point to **Folder**, click **Create Folder** and create the OSD folder. This process will create the Root \ OSD folder structure.
+2.  Right-click **Packages**, point to **Folder**, select **Create Folder** and create the OSD folder. This process will create the Root \ OSD folder structure.
 3.  Select the **MDT**, **User State Migration Tool for Windows**, and **Windows 10 x64 Settings** packages, right-click and select **Move**.
-4.  In the **Move Selected Items** dialog box, select the **OSD** folder, and click **OK**.
+4.  In the **Move Selected Items** dialog box, select the **OSD** folder, and select **OK**.
 
 Next, see [Finalize the operating system configuration for Windows 10 deployment with Configuration Manager](finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md).
 
-## Related topics
+## Related articles
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](../deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>

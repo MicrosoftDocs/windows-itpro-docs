@@ -9,6 +9,8 @@ author: vinaypamnani-msft
 ms.author: vinpa
 ms.reviewer: 
 manager: aaroncz
+ms.collection: 
+  - highpri
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM

@@ -10,7 +10,6 @@ ms.author: v-tappelgate
 manager: kaushika
 ms.collection: 
   - Windows Security Technologies\BitLocker
-  - highpri
 ms.topic: troubleshooting
 ms.date: 10/18/2019
 ms.custom: bitlocker

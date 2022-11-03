@@ -13,6 +13,8 @@ metadata:
   ms.author: tiaraquan #Required; microsoft alias of author; optional team alias.
   ms.date: 05/30/2022 #Required; mm/dd/yyyy format.
   ms.custom: intro-hub-or-landing
+  ms.collection:
+  - highpri
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

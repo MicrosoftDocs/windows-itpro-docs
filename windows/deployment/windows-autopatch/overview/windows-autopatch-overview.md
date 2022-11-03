@@ -10,6 +10,8 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 msreviewer: hathind
+ms.collection: 
+  - highpri
 ---
 
 # What is Windows Autopatch?

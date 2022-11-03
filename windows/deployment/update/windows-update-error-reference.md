@@ -9,7 +9,6 @@ ms.localizationpriority: medium
 ms.date: 09/18/2018
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ms.technology: itpro-updates
 ---
 

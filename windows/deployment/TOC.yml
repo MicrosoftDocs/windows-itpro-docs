@@ -198,7 +198,7 @@
                 href: update/update-compliance-v2-configuration-script.md
               - name: Configure clients manually
                 href: update/update-compliance-v2-configuration-manual.md
-              - name: Configure clients with Microsoft Endpoint Manager
+              - name: Configure clients with Microsoft Intune
                 href: update/update-compliance-v2-configuration-mem.md 
             - name: Use Update Compliance (preview)
               items:
@@ -237,7 +237,7 @@
                 href: update/update-compliance-configuration-script.md
               - name: Manually configuring devices for Update Compliance
                 href: update/update-compliance-configuration-manual.md
-              - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+              - name: Configuring devices for Update Compliance in Microsoft Intune
                 href: update/update-compliance-configuration-mem.md
             - name: Update Compliance monitoring
               items: 
@@ -299,6 +299,8 @@
                   href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
                   href: ./update/how-windows-update-works.md
+                - name: Windows Update security
+                  href: ./update/windows-update-security.md                  
                 - name: Common Windows Update errors
                   href: /troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
                 - name: Windows Update error code reference
@@ -434,7 +436,7 @@
         
                 - name: User State Migration Tool (USMT) technical reference
                   items:
-                    - name: USMT overview topics
+                    - name: USMT overview articles
                       items:
                         - name: USMT overview
                           href: usmt/usmt-overview.md
@@ -442,7 +444,7 @@
                           href: usmt/getting-started-with-the-user-state-migration-tool.md
                         - name: Windows upgrade and migration considerations
                           href: upgrade/windows-upgrade-and-migration-considerations.md
-                    - name: USMT How-to topics
+                    - name: USMT How-to articles
                       items:
                         - name: Exclude Files and Settings
                           href: usmt/usmt-exclude-files-and-settings.md

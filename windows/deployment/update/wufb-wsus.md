@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 ms.author: arcarley
 ms.collection: 
   - m365initiative-coredeploy
-  - highpri
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates

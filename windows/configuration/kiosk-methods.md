@@ -8,7 +8,6 @@ ms.prod: w10
 ms.localizationpriority: medium
 author: lizgt2000
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions

@@ -273,7 +273,7 @@ By using [Group Policy Objects](/previous-versions/cc498727(v=msdn.10)), Windows
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Intune and the [Enterprise Mobility Suite](/enterprise-mobility-security).
 
 Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, and provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Endpoint Configuration Manager](/configmgr).
 
