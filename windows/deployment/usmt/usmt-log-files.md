@@ -11,7 +11,7 @@ ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# Log files
+# USMT log files
 
 You can use User State Migration Tool (USMT) 10.0 logs to monitor your migration and to troubleshoot errors and failed migrations. This article describes the available command-line options to enable USMT logs, and new XML elements that configure which types of errors are fatal and should halt the migration, which types are non-fatal and should be skipped so that the migration can continue.
 

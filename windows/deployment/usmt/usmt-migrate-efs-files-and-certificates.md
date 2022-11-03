@@ -13,7 +13,7 @@ ms.technology: itpro-deploy
 
 # Migrate EFS files and certificates
 
-This article describes how to migrate Encrypting File System (EFS) certificates. For more information about the `/efs` option, see [Encrypted file options](#encrypted-file-options) in [ScanState syntax](usmt-scanstate-syntax.md).
+This article describes how to migrate Encrypting File System (EFS) certificates. For more information about the `/efs` option, see [Encrypted file options](usmt-scanstate-syntax.md#encrypted-file-options) in [ScanState syntax](usmt-scanstate-syntax.md).
 
 ## To migrate EFS files and certificates
 

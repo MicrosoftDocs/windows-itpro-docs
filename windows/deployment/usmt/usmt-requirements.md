@@ -34,7 +34,7 @@ The following table lists the operating systems supported in USMT.
 ## Unsupported scenarios
 
 - USMT doesn't support any of the Windows Server® operating systems.
-- USMT for Windows 10 shouldn't be used for migrating between previous versions of Windows. USMT for Windows 10 is only meant to migrate to Windows 10 or between Windows 10 versions. For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](/previous-versions/windows/server/dd560801(v=ws.10)).
+- USMT for Windows 10 shouldn't be used for migrating between previous versions of Windows. USMT for Windows 10 is only meant to migrate to Windows 10 or between Windows 10 versions. For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User's Guide](/previous-versions/windows/server/dd560801(v=ws.10)).
 
 ## Windows PE
 
@@ -55,10 +55,11 @@ To open an elevated command prompt:
 
 > [!IMPORTANT]
 > You must run USMT using an account with full administrative permissions, including the following privileges:
+>
 > - SeBackupPrivilege (Back up files and directories)
 > - SeDebugPrivilege (Debug programs)
 > - SeRestorePrivilege (Restore files and directories)
->- SeSecurityPrivilege (Manage auditing and security log)
+> - SeSecurityPrivilege (Manage auditing and security log)
 > - SeTakeOwnership Privilege (Take ownership of files or other objects)
 
 ## Config.xml
