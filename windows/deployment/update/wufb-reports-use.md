@@ -53,6 +53,8 @@ The data powering Update Compliance is refreshed every 24 hours, and refreshes w
 | UCUpdateAlert | Every event | 24-36 hours |
 | UCDeviceAlert | Every event | 24-36 hours |
 | UCClientReadinessStatus | After Windows 11 readiness assessment |24-36 hours |
+| UCDOStatus | Download Events | 24-36 hours |
+| UCDOAggregatedStatus | Download Events | 24-36 hours |
 
 ## Working with Azure Monitor Logs
 
