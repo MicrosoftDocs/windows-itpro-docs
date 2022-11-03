@@ -16,8 +16,8 @@ ms.localizationpriority: medium
 
     - The Azure subscription
     - The Log Analytics workspace
-1. The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Update Compliance data**.
+1. The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Windows Update for Business reports data**.
 1. After the initial setup is complete, the **Windows** tab will display your Windows Update for Business reports data in the charts.
 
 > [!Tip]
-> If you don't see an entry for **Software updates (preview)** in the menu, try going to this URL: [https://admin.microsoft.com/Adminportal/Home#/softwareupdates](https://admin.microsoft.com/Adminportal/Home#/softwareupdates).
+> If you don't see an entry for **Software updates** in the menu, try going to this URL: [https://admin.microsoft.com/Adminportal/Home#/softwareupdates](https://admin.microsoft.com/Adminportal/Home#/softwareupdates).

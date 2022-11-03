@@ -26,7 +26,6 @@ Before you begin the process of adding Windows Update for Business reports to yo
 ### Azure and Azure Active Directory
 
 - An Azure subscription with [Azure Active Directory](/azure/active-directory/)
-- You must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the Windows Update for Business reports solution.
 - Devices must be Azure Active Directory-joined and meet the below OS, diagnostic, and endpoint access requirements.
   - Devices can be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 - Devices that are [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) only (Workplace joined) aren't supported with Windows Update for Business reports.
