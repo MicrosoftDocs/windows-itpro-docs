@@ -34,7 +34,7 @@ Communications are posted to Message center, Service health dashboard, and the W
 
 ## Communications during release
 
-The most common type of communication during a release is a customer advisory. Customer advisories are posted to both Message center and the Messages blade of the Microsoft Endpoint Manager portal shortly after Autopatch becomes aware of the new information.
+The most common type of communication during a release is a customer advisory. Customer advisories are posted to both Message center and the Messages blade of the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) shortly after Autopatch becomes aware of the new information.
 
 There are some circumstances where Autopatch will need to change the release schedule based on new information.
 

@@ -24,7 +24,7 @@ ms.topic: how-to
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
+You can use a Mobile Device Management (MDM) solution, like Microsoft Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
 
 ## Use Intune's built-in policies
 

@@ -16,7 +16,7 @@ ms.date: 10/31/2022
 
 -   Windows 10
 
-To successfully deploy the Windows 10 operating system in your organization, it's important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
+To successfully deploy the Windows 10 operating system in your organization, it's important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Key tasks include choosing among these scenarios and understanding the capabilities and limitations of each.
 
 ## Deployment categories
 
@@ -60,7 +60,7 @@ The following tables summarize various Windows 10 deployment scenarios. The scen
 
 ## Modern deployment methods
 
-Modern deployment methods embrace both traditional on-premises and cloud services to deliver a simple, streamlined, cost effective deployment experience.
+Modern deployment methods embrace both traditional on-premises and cloud services to deliver a simple, streamlined, and cost effective deployment experience.
 
 ### Windows Autopilot
 
@@ -70,15 +70,18 @@ For more information about Windows Autopilot, see [Overview of Windows Autopilot
 
 ### In-place upgrade
 
-For existing computers running Windows 7, Windows 8, or Windows 8.1, the recommended path for organizations deploying Windows 10 uses the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. An in-place upgrade requires the least IT effort, because there's no need for any complex deployment infrastructure.
+For existing computers running Windows 7, Windows 8, or Windows 8.1, the recommended path for organizations deploying Windows 10 uses the Windows installation program (Setup.exe) is to perform an in-place upgrade. An in-place upgrade:
 
-Although consumer PCs will be upgraded using Windows Update, organizations want more control over the process. Control is accomplished by using tools like Microsoft Endpoint Manager or the Microsoft Deployment Toolkit to completely automate the upgrade process through simple task sequences.
+- Automatically preserves all data, settings, applications, and drivers from the existing operating system version
+- Requires the least IT effort, because there's no need for any complex deployment infrastructure
+
+Although consumer PCs will be upgraded using Windows Update, organizations want more control over the process. Control is accomplished by using tools like Microsoft Configuration Manager or the Microsoft Deployment Toolkit to completely automate the upgrade process through simple task sequences.
 
 The in-place upgrade process is designed to be reliable, with the ability to automatically roll back to the previous operating system if any issues are encountered during the deployment process, without any IT staff involvement. Rolling back manually can also be done by using the automatically created recovery information (stored in the Windows.old folder), in case any issues are encountered after the upgrade is finished. The upgrade process is also typically faster than traditional deployments, because applications don't need to be reinstalled as part of the process.
 
-Because existing applications are preserved through the process, the upgrade process uses the standard Windows installation media image (Install.wim); custom images aren't needed and can't be used because the upgrade process is unable to deal with conflicts between apps in the old and new operating system. (For example, Contoso Timecard 1.0 in Windows 7 and Contoso Timecard 3.0 in the Windows 10 image.)
+Existing applications are preserved through the process. So, the upgrade process uses the standard Windows installation media image (Install.wim). Custom images aren't needed and can't be used because the upgrade process is unable to deal with conflicts between apps in the old and new operating system. (For example, Contoso Timecard 1.0 in Windows 7 and Contoso Timecard 3.0 in the Windows 10 image.)
 
-Scenarios that support in-place upgrade with some additional procedures include changing from BIOS to UEFI boot mode and upgrade of devices that use non-Microsoft disk encryption software.
+Scenarios that support in-place upgrade with some other procedures include changing from BIOS to UEFI boot mode and upgrade of devices that use non-Microsoft disk encryption software.
 
 - **Legacy BIOS to UEFI booting**: To perform an in-place upgrade on a UEFI-capable system that currently boots using legacy BIOS, first perform the in-place upgrade to Windows 10, maintaining the legacy BIOS boot mode. Windows 10 doesn't require UEFI, so it will work fine to upgrade a system using legacy BIOS emulation. After the upgrade, if you wish to enable Windows 10 features that require UEFI (such as Secure Boot), you can convert the system disk to a format that supports UEFI boot using the [MBR2GPT](./mbr-to-gpt.md) tool. Note: [UEFI specification](http://www.uefi.org/specifications) requires GPT disk layout. After the disk has been converted, you must also configure the firmware to boot in UEFI mode.
 
@@ -92,9 +95,9 @@ There are some situations where you can't use in-place upgrade; in these situati
 
 -   Windows To Go and Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
 
--   Updating existing images. While it might be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image, doing so isn't supported. Preparing an upgraded OS via `Sysprep.exe` before capturing an image isn't supported and won't work. When `Sysprep.exe` detects the upgraded OS, it will fail.
+-   Updating existing images. It can be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image. But, it's not supported. Preparing an upgraded OS via `Sysprep.exe` before capturing an image isn't supported and won't work. When `Sysprep.exe` detects the upgraded OS, it will fail.
 
--   Dual-boot and multi-boot systems. The upgrade process is designed for devices running a single OS; if using dual-boot or multi-boot systems with multiple operating systems (not using virtual machines for the second and subsequent operating systems), additional care should be taken.
+-   Dual-boot and multi-boot systems. The upgrade process is designed for devices running a single OS. If you use dual-boot or multi-boot systems with multiple operating systems (not using virtual machines for the second and subsequent operating systems), then extra care should be taken.
 
 ## Dynamic provisioning
 
@@ -106,17 +109,17 @@ The goal of dynamic provisioning is to take a new PC out of the box, turn it on,
 
 Windows 10 Subscription Activation is a modern deployment method that enables you to change the SKU from Pro to Enterprise with no keys and no reboots. For more information about Subscription Activation, see [Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation).
 
-### Azure Active Directory (AAD) join with automatic mobile device management (MDM) enrollment
+### Azure Active Directory (Azure AD) join with automatic mobile device management (MDM) enrollment
 
-In this scenario, the organization member just needs to provide their work or school user ID and password; the device can then be automatically joined to Azure Active Directory and enrolled in a mobile device management (MDM) solution with no additional user interaction. Once done, the MDM solution can finish configuring the device as needed. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
+In this scenario, the organization member just needs to provide their work or school user ID and password. The device can then be automatically joined to Azure Active Directory and enrolled in a mobile device management (MDM) solution with no other user interaction. Once done, the MDM solution can finish configuring the device as needed. For more information, see [Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm).
 
 ### Provisioning package configuration
 
-Using the [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a machine. These packages can then be deployed to new PCs through various means, typically by IT professionals. For more information, see [Configure devices without MDM](/windows/configuration/configure-devices-without-mdm).
+When you use the [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd), IT administrators can create a self-contained package that contains all of the configuration, settings, and apps that need to be applied to a machine. These packages can then be deployed to new PCs through various means, typically by IT professionals. For more information, see [Configure devices without MDM](/windows/configuration/configure-devices-without-mdm).
 
-These scenarios can be used to enable "choose your own device" (CYOD) programs where the organization's users can pick their own PC and not be restricted to a small list of approved or certified models (programs that are difficult to implement using traditional deployment scenarios).
+These scenarios can be used to enable "choose your own device" (CYOD) programs. With these programs, organization users can pick their own PC and aren't restricted to a small list of approved or certified models (programs that are difficult to implement using traditional deployment scenarios).
 
-While the initial Windows 10 release includes various provisioning settings and deployment mechanisms, provisioning settings and deployment mechanisms will continue to be enhanced and extended based on feedback from organizations. As with all Windows features, organizations can submit suggestions for additional features through the Windows Feedback app or through their Microsoft Support contacts.
+While the initial Windows 10 release includes various provisioning settings and deployment mechanisms, provisioning settings and deployment mechanisms will continue to be enhanced and extended based on feedback from organizations. As with all Windows features, organizations can submit suggestions for more features through the Windows Feedback app or through their Microsoft Support contacts.
 
 ## Traditional deployment: 
 
@@ -144,7 +147,7 @@ The deployment process for the new machine scenario is as follows:
 
 4.  Install other applications (as part of the task sequence).
 
-After taking these steps, the computer is ready for use.
+After you follow these steps, the computer is ready for use.
 
 ### Computer refresh
 
@@ -164,7 +167,7 @@ The deployment process for the wipe-and-load scenario is as follows:
 
 6.  Restore the user state.
 
-After taking these steps, the machine is ready for use.
+After you follow these steps, the machine is ready for use.
 
 ### Computer replace
 
