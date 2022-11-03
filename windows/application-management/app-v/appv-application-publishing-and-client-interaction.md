@@ -231,7 +231,7 @@ The App-V Client can be configured to change the default behavior of streaming. 
 |PackageSourceRoot|The root override where packages should be streamed from|
 |SharedContentStoreMode|Enables the use of Shared Content Store for VDI scenarios|
 
-These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors in streaming packages that is important to understand:
+These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors in streaming packages that are important to understand:
 
 - Background Streaming
 - Optimized Streaming
