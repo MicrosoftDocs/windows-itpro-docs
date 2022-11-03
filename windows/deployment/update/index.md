@@ -37,7 +37,7 @@ Windows as a service provides a new way to think about building, deploying, and 
 | [Optimize update delivery](../do/waas-optimize-windows-10-updates.md) | Explains the benefits of using Delivery Optimization or BranchCache for update distribution.  |
 | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md) | Explains how to use Windows Update for Business to manage when devices receive updates directly from Windows Update. Includes walkthroughs for configuring Windows Update for Business using Group Policy and Microsoft Intune.  |
 | [Deploy Windows client updates using Windows Server Update Services (WSUS)](waas-manage-updates-wsus.md) | Explains how to use WSUS to manage Windows client updates. |
-| [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) | Explains how to use Configuration Manager to manage Windows client updates.  |
+| [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) | Explains how to use Configuration Manager to manage Windows client updates.  |
 | [Manage device restarts after updates](waas-restart.md) | Explains how to manage update related device restarts. |
 | [Manage more Windows Update settings](waas-wu-settings.md) | Provides details about settings available to control and configure Windows Update |
 | [Windows Insider Program for Business](/windows-insider/business/register) | Explains how the Windows Insider Program for Business works and how to become an insider. |

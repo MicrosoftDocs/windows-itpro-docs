@@ -56,7 +56,7 @@ Our recommendations follow a streamlined and efficient approach to baseline defi
 You can use security baselines to:
 
 - Ensure that user and device configuration settings are compliant with the baseline.
-- Set configuration settings. For example, you can use group policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline.
+- Set configuration settings. For example, you can use group policy, Microsoft Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline.
 
 ## Where can I get the security baselines?
 

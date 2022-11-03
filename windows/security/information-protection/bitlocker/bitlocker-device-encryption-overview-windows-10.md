@@ -129,13 +129,13 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
 * Enables security officers to quickly determine the compliance state of individual computers or even of the enterprise itself.
-* Provides centralized reporting and hardware management with Microsoft Endpoint Configuration Manager.
+* Provides centralized reporting and hardware management with Microsoft Configuration Manager.
 * Reduces the workload on the help desk to assist end users with BitLocker recovery requests.
 * Enables end users to recover encrypted devices independently by using the Self-Service Portal.
 * Enables security officers to easily audit access to recovery key information.
 * Empowers Windows Enterprise users to continue working anywhere with the assurance that their corporate data is protected.
 * Enforces the BitLocker encryption policy options that you set for your enterprise.
-* Integrates with existing management tools, such as Microsoft Endpoint Configuration Manager.
+* Integrates with existing management tools, such as Microsoft Configuration Manager.
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 11 and Windows 10.
 
