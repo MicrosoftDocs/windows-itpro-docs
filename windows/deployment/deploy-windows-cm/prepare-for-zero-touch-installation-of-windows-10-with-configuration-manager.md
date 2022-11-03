@@ -18,7 +18,7 @@ ms.date: 10/27/2022
 
 - Windows 10
 
-This article walks you through the Zero Touch Installation (ZTI) process of Windows 10 OS deployment using Microsoft Endpoint Configuration Manager [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT).
+This article walks you through the Zero Touch Installation (ZTI) process of Windows 10 OS deployment using Microsoft Configuration Manager [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT).
 
 ## Prerequisites
 
