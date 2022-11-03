@@ -1,6 +1,6 @@
 ---
 title: Steps to deploy Windows 10 with Configuration Manager
-description: Learn how to deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager.
+description: Learn how to deploy Windows 10 in a test lab using Microsoft Configuration Manager.
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.localizationpriority: medium
@@ -38,14 +38,14 @@ Multiple features and services are installed on SRV1 in this guide. This configu
 
 ## In this guide
 
-This guide provides end-to-end instructions to install and configure Microsoft Endpoint Configuration Manager, and use it to deploy a Windows 10 image. Depending on the speed of your Hyper-V host, the procedures in this guide will require 6-10 hours to complete.
+This guide provides end-to-end instructions to install and configure Microsoft Configuration Manager, and use it to deploy a Windows 10 image. Depending on the speed of your Hyper-V host, the procedures in this guide will require 6-10 hours to complete.
 
 The procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
 |Procedure|Description|Time|
 |--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
-|[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
+|[Install Microsoft Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
 |[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)|Prerequisite procedures to support Zero Touch installation.|60 minutes|
 |[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)|Use the MDT wizard to create the boot image in Configuration Manager.|20 minutes|
@@ -59,7 +59,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 ## Install prerequisites
 
-1. Before installing Microsoft Endpoint Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1:
+1. Before installing Microsoft Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
     Install-WindowsFeature Web-Windows-Auth,Web-ISAPI-Ext,Web-Metabase,Web-WMI,BITS,RDC,NET-Framework-Features,Web-Asp-Net,Web-Asp-Net45,NET-HTTP-Activation,NET-Non-HTTP-Activ
@@ -114,7 +114,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 2004. Installation might require several minutes to acquire all components.
 
-## Install Microsoft Endpoint Configuration Manager
+## Install Microsoft Configuration Manager
 
 1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
 
@@ -124,7 +124,7 @@ The procedures in this guide are summarized in the following table. An estimate 
     Stop-Process -Name Explorer
     ```
 
-1. Download [Microsoft Endpoint Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager) and extract the contents on SRV1.
+1. Download [Microsoft Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager) and extract the contents on SRV1.
 
 1. Open the file, enter **C:\configmgr** for **Unzip to folder**, and select **Unzip**. The `C:\configmgr` directory will be automatically created. Select **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
@@ -243,7 +243,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 ## Prepare for Zero Touch installation
 
-This section contains several procedures to support Zero Touch installation with Microsoft Endpoint Configuration Manager.
+This section contains several procedures to support Zero Touch installation with Microsoft Configuration Manager.
 
 ### Create a folder structure
 

@@ -117,7 +117,7 @@ Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK)
 
 See the Windows or Windows Server documentation for the hardware requirements.
 
-## Supported versions of Microsoft Endpoint Configuration Manager
+## Supported versions of Microsoft Configuration Manager
 
 The App-V client works with Configuration Manager versions starting with Technical Preview for Configuration Manager, version 1606.
 

@@ -152,7 +152,7 @@ To sign the existing catalog file, copy each of the following commands into an e
 
 5. Copy the catalog file to C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}.
 
-   For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as Microsoft Endpoint Configuration Manager, which also simplifies the management of catalog versions.
+   For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as Microsoft Configuration Manager, which also simplifies the management of catalog versions.
 
 ## Add a catalog signing certificate to a Windows Defender Application Control policy
 
@@ -230,7 +230,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy.
 
-## Deploy catalog files with Microsoft Endpoint Configuration Manager
+## Deploy catalog files with Microsoft Configuration Manager
 
 As an alternative to Group Policy, you can use Configuration Manager to deploy catalog files to the managed computers in your environment. This approach can simplify the deployment and management of multiple catalog files and provide reporting around which catalog each client or collection has deployed. In addition to the deployment of these files, Configuration Manager can also be used to inventory the currently deployed catalog files for reporting and compliance purposes. Complete the following steps to create a new deployment package for catalog files:
 
@@ -305,7 +305,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
 Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy,.
 
-## Inventory catalog files with Microsoft Endpoint Configuration Manager
+## Inventory catalog files with Microsoft Configuration Manager
 
 When catalog files have been deployed to the computers within your environment, whether by using Group Policy or Configuration Manager, you can inventory them with the software inventory feature of Configuration Manager. The following process walks you through the enablement of software inventory to discover catalog files on your managed systems through the creation and deployment of a new client settings policy.
 

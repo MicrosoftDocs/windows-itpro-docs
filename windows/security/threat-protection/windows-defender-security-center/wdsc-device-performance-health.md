@@ -25,7 +25,7 @@ ms.technology: itpro-security
 - Windows 11
 
 
-The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they're seeing, such as the [configure the Load and unload device drivers security policy setting](/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using Microsoft Endpoint Configuration Manager](/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
+The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they're seeing, such as the [configure the Load and unload device drivers security policy setting](/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using Microsoft Configuration Manager](/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
 
 The [Windows 10 IT pro troubleshooting topic](/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](/windows/windows-10/) can also be helpful for resolving issues.
 

@@ -31,7 +31,7 @@ CSPs are behind many of the management tasks and policies for Windows client, bo
 
 :::image type="content" source="../images/policytocsp.png" alt-text="How intune maps to CSP":::
 
-CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Endpoint Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
+CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
 
 ### Synchronization Markup Language (SyncML)
 
