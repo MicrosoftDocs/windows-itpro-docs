@@ -11,14 +11,14 @@ ms.reviewer:
 manager: aaroncz
 ---
 
-# Azure AD and Microsoft Intune: Automatic MDM enrollment in the new admin center
+# Azure AD and Microsoft Intune: Automatic MDM enrollment in the Endpoint Manager admin center
 
 Microsoft Intune can be accessed directly using its own admin center. For more information, go to:
 
 - [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager admin center](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)
 - Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-If you're use the Azure portal, you can access Intune using the following steps:
+If you use the Azure portal, then you can access Intune using the following steps:
 
 1. Go to your Azure AD Blade.
 2. Select **Mobility (MDM and MAM)**, and find the Microsoft Intune app.

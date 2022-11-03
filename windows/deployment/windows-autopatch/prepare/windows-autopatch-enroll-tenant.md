@@ -19,7 +19,7 @@ Before you enroll in Windows Autopatch, there are settings, and other parameters
 > [!IMPORTANT]
 > You must be a Global Administrator to enroll your tenant.
 
-The Readiness assessment tool, in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
+The Readiness assessment tool, accessed in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
 
 ## Step 1: Review all prerequisites
 
