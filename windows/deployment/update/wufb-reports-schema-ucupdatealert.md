@@ -1,5 +1,5 @@
 ---
-title: Update Compliance Data Schema - UCUpdateAlert
+title: Windows Update for Business reports Data Schema - UCUpdateAlert
 ms.reviewer: 
 manager: dougeby
 description: UCUpdateAlert schema
@@ -15,9 +15,6 @@ ms.technology: itpro-updates
 # UCUpdateAlert
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
-
-> [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 Alert for both client and service updates. Contains information that needs attention, relative to one device (client), one update, and one deployment (if relevant). Certain fields may be blank depending on the UpdateAlert's AlertType field; for example, ServiceUpdateAlert won't necessarily contain client-side statuses.
 

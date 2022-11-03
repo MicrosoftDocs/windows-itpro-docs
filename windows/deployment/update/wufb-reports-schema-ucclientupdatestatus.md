@@ -1,5 +1,5 @@
 ---
-title: Update Compliance Data Schema - UCClientUpdateStatus
+title: Windows Update for Business reports Data Schema - UCClientUpdateStatus
 ms.reviewer: 
 manager: dougeby
 description: UCClientUpdateStatus schema
@@ -15,9 +15,6 @@ ms.technology: itpro-updates
 # UCClientUpdateStatus
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
-
-> [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
 

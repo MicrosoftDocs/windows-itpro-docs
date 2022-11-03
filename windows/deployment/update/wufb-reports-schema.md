@@ -1,8 +1,8 @@
 ---
-title: Update Compliance (preview) data schema
+title: Windows Update for Business reports data schema
 ms.reviewer: 
 manager: dougeby
-description: An overview of Update Compliance (preview) data schema
+description: An overview of Windows Update for Business reports data schema
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
@@ -12,19 +12,18 @@ ms.date: 06/06/2022
 ms.technology: itpro-updates
 ---
 
-# Update Compliance version 2 schema 
+# Windows Update for Business reports schema 
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 
-When the visualizations provided in the default experience don't fulfill your reporting needs, or if you need to troubleshoot issues with devices, it's valuable to understand the schema for Update Compliance and have a high-level understanding of the capabilities of [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language) to power additional dashboards, integration with external data analysis tools, automated alerting, and more.
+When the visualizations provided in the default experience don't fulfill your reporting needs, or if you need to troubleshoot issues with devices, it's valuable to understand the schema for Windows Update for Business reports and have a high-level understanding of the capabilities of [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language) to power additional dashboards, integration with external data analysis tools, automated alerting, and more.
 
 ## Schema
 
-The table below summarizes the different tables that are part of the Update Compliance solution. To learn how to navigate Azure Monitor Logs to find this data, see [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries).
+The table below summarizes the different tables that are part of the Windows Update for Business reports solution. To learn how to navigate Azure Monitor Logs to find this data, see [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries).
 
 > [!NOTE]
 > Data is collected daily. The TimeGenerated field shows the time data was collected. It's added by Log Analytics when data is collected. Device data from the past 28 days is collected, even if no new data has been generated since the last time. LastScan is a clearer indicator of data freshness (that is, the last time the values were updated), while TimeGenerated indicates the freshness of data within Log Analytics.

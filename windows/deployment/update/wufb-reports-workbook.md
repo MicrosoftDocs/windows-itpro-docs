@@ -1,8 +1,8 @@
 ---
-title: Use the workbook for Update Compliance (preview)
+title: Use the workbook for Windows Update for Business reports
 ms.reviewer: 
 manager: dougeby
-description: How to use the Update Compliance (preview) workbook.
+description: How to use the Windows Update for Business reports workbook.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
@@ -12,45 +12,44 @@ ms.date: 10/24/2022
 ms.technology: itpro-updates
 ---
 
-# Update Compliance (preview) workbook
+# Windows Update for Business reports workbook
 <!-- MAX6325272, OS33771278 -->
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!IMPORTANT]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center). 
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](wufb-reports-enable.md#bkmk_admin-center). 
 
-[Update Compliance](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy to use format. Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
+[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy to use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
 
 - [Summary](#summary-tab)
 - [Quality updates](#quality-updates-tab)
 - [Feature updates](#feature-updates-tab)
 
-:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Update Compliance workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
+:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
-## Open the Update Compliance workbook
+## Open the Windows Update for Business reports workbook
 
-To access the Update Compliance workbook:
+To access the Windows Update for Business reports workbook:
 
 1. In the [Azure portal](https://portal.azure.com), select **Monitor** > **Workbooks** from the menu bar.
    - You can also type **Monitor** in the search bar. As you begin typing, the list filters based on your input.
 
-1. When the gallery opens, select the **Update Compliance** workbook. If needed, you can filter workbooks by name in the gallery.
-1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Update Compliance](wufb-reports-enable.md).
+1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
+1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Windows Update for Business reports](wufb-reports-enable.md).
 
 ## Summary tab
 
-The **Summary** tab gives you a brief high-level overview of the devices that you've enrolled into Update Compliance.  The **Summary** tab contains tiles above the **Overall security update status** chart.
+The **Summary** tab gives you a brief high-level overview of the devices that you've enrolled into Windows Update for Business reports.  The **Summary** tab contains tiles above the **Overall security update status** chart.
 
 ### Summary tab tiles
 
 Each of these tiles contains an option to **View details**. When **View details** is selected for a tile, a flyout appears with additional information.
 
-:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Update Compliance workbook":::
+:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Windows Update for Business reports workbook":::
 
 | Tile name | Description | View details description |
 |---|---|------|
-| **Enrolled devices** | Total number of devices that are enrolled into Update Compliance | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
+| **Enrolled devices** | Total number of devices that are enrolled into Windows Update for Business reports | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
 |**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the count of **Devices** to display a table of the devices. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
 |  **Windows 11 eligibility** | Percentage of devices that are capable of running Windows 11 | Displays the following items: </br> - **Windows 11 Readiness Status** chart </br> - **Readiness Reason(s) Breakdown** chart that displays  Windows 11 requirements that aren't met. </br> - A table for **Readiness reason**. Select a reason to display a list of devices that don't meet a specific requirement for Windows 11. |
 
@@ -155,10 +154,10 @@ The report is divided into easily navigable tabs:
 
 ## Customize the workbook
 
-Since the Update Compliance workbook is an [Azure Workbook template](/azure/azure-monitor/visualize/workbooks-templates), it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
+Since the Windows Update for Business reports workbook is an [Azure Workbook template](/azure/azure-monitor/visualize/workbooks-templates), it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
 
 
 ## Next steps
 
-- Explore the [Update Compliance (preview) schema](wufb-reports-schema.md)
-- Review [Feedback, support, and troubleshooting](wufb-reports-help.md) information for Update Compliance
+- Explore the [Windows Update for Business reports schema](wufb-reports-schema.md)
+- Review [Feedback, support, and troubleshooting](wufb-reports-help.md) information for Windows Update for Business reports

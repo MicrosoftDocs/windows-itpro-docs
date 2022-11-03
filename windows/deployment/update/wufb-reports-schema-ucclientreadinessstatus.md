@@ -1,5 +1,5 @@
 ---
-title: Update Compliance Data Schema - UCClientReadinessStatus
+title: Windows Update for Business reports Data Schema - UCClientReadinessStatus
 ms.reviewer: 
 manager: dougeby
 description: UCClientReadinessStatus schema
@@ -15,9 +15,6 @@ ms.technology: itpro-updates
 # UCClientReadinessStatus
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 10)***
-
-> [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 UCClientReadinessStatus is an individual device's record about its readiness for updating to Windows 11. If the device isn't capable of running Windows 11, the record includes which Windows 11 [hardware requirements](/windows/whats-new/windows-11-requirements#hardware-requirements) the device doesn't meet.
 

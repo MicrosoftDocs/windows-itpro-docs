@@ -1,5 +1,5 @@
 ---
-title: Update Compliance Data Schema - UCClient
+title: Windows Update for Business reports Data Schema - UCClient
 ms.reviewer: 
 manager: dougeby
 description: UCClient schema
@@ -15,9 +15,6 @@ ms.technology: itpro-updates
 # UCClient
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
-
-> [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 UCClient acts as an individual device's record. It contains data such as the currently installed build, the device's name, the OS edition, and active hours (quantitative).
 

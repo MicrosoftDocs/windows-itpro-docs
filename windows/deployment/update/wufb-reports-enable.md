@@ -17,8 +17,7 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](#bkmk_admin-center).
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+> As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](#bkmk_admin-center).
 
 After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. The two main steps for setting up  Windows Update for Business reports are:
 
