@@ -44,16 +44,16 @@ Windows Update for Business comprises three elements:
 - Deployment service APIs to approve and schedule specific updates – available through the Microsoft Graph and associated SDKs (including PowerShell)
 - Update Compliance to monitor update deployment – available through the Azure Marketplace
 
-Unlike existing client policy, the deployment service does not interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
+Unlike existing client policy, the deployment service doesn't interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
 
 :::image type="content" source="media/wufbds-interaction-small.png" alt-text="Process described in following text.":::
 
 Using the deployment service typically follows a common pattern:
-1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Endpoint Manager.
+1. IT Pro uses a management tool to select devices and approve content to be deployed. This tool could be PowerShell, a Microsoft Graph app or a more complete management solution such as Microsoft Intune.
 2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
 3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
 
-The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Endpoint Manager.
+The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Intune.
 
 ## Prerequisites
 
@@ -78,9 +78,9 @@ Additionally, your organization must have one of the following subscriptions:
 
 To use the deployment service, you use a management tool built on the platform, script common actions using PowerShell, or build your own application.
 
-### Using Microsoft Endpoint Manager
+### Using Microsoft Intune
 
-Microsoft Endpoint Manager integrates with the deployment service to provide Windows client update management capabilities. For more information, see [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates).
+Intune integrates with the deployment service to provide Windows client update management capabilities. For more information, see [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates).
 
 ### Scripting common actions using PowerShell
 
@@ -92,7 +92,7 @@ Microsoft Graph makes deployment service APIs available through. Get started wit
 - Learning path: [Microsoft Graph Fundamentals](/training/paths/m365-msgraph-fundamentals/)
 - Learning path: [Build apps with Microsoft Graph](/training/paths/m365-msgraph-associate/)
 
-Once you are familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
+Once you're familiar with Microsoft Graph development, see [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview) for more.
 
 ## Deployment protections
 
@@ -107,9 +107,9 @@ The deployment service allows any update to be deployed over a period of days or
 3. Start deploying to earlier waves to build coverage of device attributes present in the population.
 4. Continue deploying at a uniform rate until all waves are complete and all devices are updated.
 
-This built-in piloting capability complements your existing ring structure and provides another support for reducing and managing risk during an update. Unlike tools such as Desktop Analytics, this capability is intended to operate within each ring. The deployment service does not provide a workflow for creating rings themselves.
+This built-in piloting capability complements your existing ring structure and provides another support for reducing and managing risk during an update. Unlike tools such as Desktop Analytics, this capability is intended to operate within each ring. The deployment service doesn't provide a workflow for creating rings themselves.
 
-You should continue to use deployment rings as part of the servicing strategy for your organization, but use gradual rollouts to add scheduling convenience and additional protections within each ring.
+You should continue to use deployment rings as part of the servicing strategy for your organization, but use gradual rollouts to add scheduling convenience and other protections within each ring.
 
 ### Safeguard holds against likely and known issues
 
@@ -139,9 +139,9 @@ To enroll devices in Windows Update for Business cloud processing, set the **All
 | GPO for Windows 10, version 1809 or later: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow WUfB Cloud Processing** | `\Policies\Microsoft\Windows\DataCollection\AllowWUfBCloudProcessing` |
 | MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | `\Microsoft\PolicyManager\current\device\System\AllowWUfBCloudProcessing` |
 
-Following is an example of setting the policy using Microsoft Endpoint Manager:
+Following is an example of setting the policy using Intune:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Sign in to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
@@ -175,7 +175,7 @@ Follow these suggestions for the best results with the service.
 
 ### General
 
-Avoid using different channels to manage the same resources. If you use Microsoft Endpoint Manager along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.
+Avoid using different channels to manage the same resources. If you use Microsoft Intune along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.
 
 
 ## Next steps

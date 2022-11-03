@@ -82,7 +82,7 @@ You should now have one or more WDAC policies converted into binary form. If not
 
 ## Deploying signed policies
 
-If you are using [signed WDAC policies](/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering), the policies must be deployed into your device's EFI partition in addition to the steps outlined above. Unsigned WDAC policies do not need to be present in the EFI partition. Deploying your policy via [Microsoft Endpoint Manager](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
+If you are using [signed WDAC policies](/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering), the policies must be deployed into your device's EFI partition in addition to the steps outlined above. Unsigned WDAC policies do not need to be present in the EFI partition. Deploying your policy via [Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
 
 1. Mount the EFI volume and make the directory, if it doesn't exist, in an elevated PowerShell prompt: 
 
