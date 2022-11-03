@@ -51,7 +51,7 @@ In Windows 7, preparing the TPM for use offered a couple of challenges:
 * You can turn on the TPM in the BIOS, which requires someone to either go into the BIOS settings to turn it on or to install a driver to turn it on from within Windows.
 * When you enable the TPM, it may require one or more restarts.
 
-Basically, it was a big hassle. If IT staff were provisioning new PCs, they could handle all of this, but if you wanted to add BitLocker to devices that were already in users’ hands, those users would have struggled with the technical challenges and would either call IT for support or simply leave BitLocker disabled.
+Basically, it was a hassle. If IT staff were provisioning new PCs, they could handle all of this, but if you wanted to add BitLocker to devices that were already in users’ hands, those users would have struggled with the technical challenges and would either call IT for support or leave BitLocker disabled.
 
 Microsoft includes instrumentation in Windows 11 and Windows 10 that enable the operating system to fully manage the TPM. There's no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
 
@@ -72,7 +72,7 @@ Unlike a standard BitLocker implementation, BitLocker device encryption is enabl
 * When a clean installation of Windows 11 or Windows 10 is completed and the out-of-box experience is finished, the computer is prepared for first use. As part of this preparation, BitLocker Device Encryption is initialized on the operating system drive and fixed data drives on the computer with a clear key (this is the equivalent of standard BitLocker suspended state). In this state, the drive is shown with a warning icon in Windows Explorer.  The yellow warning icon is removed after the TPM protector is created and the recovery key is backed up, as explained in the following bullet points.
 * If the device isn't domain joined, a Microsoft account that has been granted administrative privileges on the device is required. When the administrator uses a Microsoft account to sign in, the clear key is removed, a recovery key is uploaded to the online Microsoft account, and a TPM protector is created. Should a device require the recovery key, the user will be guided to use an alternate device and navigate to a recovery key access URL to retrieve the recovery key by using his or her Microsoft account credentials.
 * If the user uses a domain account to sign in, the clear key isn't removed until the user joins the device to a domain and the recovery key is successfully backed up to Active Directory Domain Services (AD DS). You must enable the **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Operating System Drives** Group Policy setting, and select the **Do not enable BitLocker until recovery information is stored in AD DS for operating system drives** option. With this configuration, the recovery password is created automatically when the computer joins the domain, and then the recovery key is backed up to AD DS, the TPM protector is created, and the clear key is removed.
-* Similar to signing in with a domain account, the clear key is removed when the user logs on to an Azure AD account on the device. As described in the bullet point above, the recovery password is created automatically when the user authenticates to Azure AD. Then, the recovery key is backed up to Azure AD, the TPM protector is created, and the clear key is removed.
+* Similar to signing in with a domain account, the clear key is removed when the user signs in to an Azure AD account on the device. As described in the bullet point above, the recovery password is created automatically when the user authenticates to Azure AD. Then, the recovery key is backed up to Azure AD, the TPM protector is created, and the clear key is removed.
 
 Microsoft recommends that BitLocker Device Encryption be enabled on any systems that support it, but the automatic BitLocker Device Encryption process can be prevented by changing the following registry setting:
 - **Subkey**: HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\BitLocker
@@ -87,7 +87,7 @@ Administrators can manage domain-joined devices that have BitLocker device encry
 ## Used Disk Space Only encryption
 
 BitLocker in earlier Windows versions could take a long time to encrypt a drive, because it encrypted every byte on the volume (including parts that didn't have data). That is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. In that case, traces of the confidential data could remain on portions of the drive marked as unused.
-But why encrypt a new drive when you can simply encrypt the data as it is being written? To reduce encryption time, BitLocker in Windows 11 and Windows 10 let users choose to encrypt just their data. Depending on the amount of data on the drive, this option can reduce encryption time by more than 99 percent.
+But why encrypt a new drive when you can encrypt the data as it is being written? To reduce encryption time, BitLocker in Windows 11 and Windows 10 let users choose to encrypt just their data. Depending on the amount of data on the drive, this option can reduce encryption time by more than 99 percent.
 Exercise caution when encrypting only used space on an existing volume on which confidential data may have already been stored in an unencrypted state, however, because those sectors can be recovered through disk-recovery tools until they're overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it's written to the disk.
 
 ## Encrypted hard drive support
@@ -129,13 +129,13 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
 * Enables security officers to quickly determine the compliance state of individual computers or even of the enterprise itself.
-* Provides centralized reporting and hardware management with Microsoft Endpoint Configuration Manager.
+* Provides centralized reporting and hardware management with Microsoft Configuration Manager.
 * Reduces the workload on the help desk to assist end users with BitLocker recovery requests.
 * Enables end users to recover encrypted devices independently by using the Self-Service Portal.
 * Enables security officers to easily audit access to recovery key information.
 * Empowers Windows Enterprise users to continue working anywhere with the assurance that their corporate data is protected.
 * Enforces the BitLocker encryption policy options that you set for your enterprise.
-* Integrates with existing management tools, such as Microsoft Endpoint Configuration Manager.
+* Integrates with existing management tools, such as Microsoft Configuration Manager.
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 11 and Windows 10.
 
@@ -144,4 +144,4 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 
 Going forward, the functionality of MBAM will be incorporated into Configuration Manager. For more information, see [Features in Configuration Manager technical preview version 1909](/mem/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker).
 
-Enterprises not using Configuration Manager can use the built-in features of Azure AD and Microsoft Intune in Microsoft Endpoint Manager for administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
+Enterprises not using Configuration Manager can use the built-in features of Azure AD and Microsoft Intune for administration and monitoring. For more information, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).

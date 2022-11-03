@@ -108,13 +108,13 @@ If you already enabled Windows Hello for Business, you can skip to **configure t
 
 You can also follow these steps to create a device configuration policy instead of using the device enrollment policy:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/)
-1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**
-1. For Platform, select **Windows 10 and later**
-1. For Profile Type, select **Templates** and select the **Identity Protection** Template
-1. Name the profile with a familiar name. For example, "Windows Hello for Business"
-1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**
-1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
+1. For Platform, select **Windows 10 and later**.
+1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
+1. Name the profile with a familiar name. For example, "Windows Hello for Business".
+1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
+1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
 
     [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
 
@@ -126,10 +126,10 @@ Windows Hello for Business settings are also available in the settings catalog. 
 
 To configure the *cloud Kerberos trust* policy, follow the steps below:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/)
-1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**
-1. For Profile Type, select **Templates** and select the **Custom** Template
-1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust"
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
+1. For Profile Type, select **Templates** and select the **Custom** Template.
+1. Name the profile with a familiar name. For example, "Windows Hello for Business cloud Kerberos trust".
 1. In Configuration Settings, add a new configuration with the following settings:
 
     | Setting |

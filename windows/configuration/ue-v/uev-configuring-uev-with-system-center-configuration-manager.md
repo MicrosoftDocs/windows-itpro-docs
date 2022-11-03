@@ -1,6 +1,6 @@
 ---
-title: Configuring UE-V with Microsoft Endpoint Configuration Manager
-description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Endpoint Configuration Manager.
+title: Configuring UE-V with Microsoft Configuration Manager
+description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Configuration Manager.
 author: aczechowski
 ms.prod: windows-client
 ms.date: 04/19/2017
