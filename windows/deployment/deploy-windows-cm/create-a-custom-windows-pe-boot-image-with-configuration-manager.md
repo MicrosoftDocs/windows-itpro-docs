@@ -1,6 +1,6 @@
 ---
 title: Create a custom Windows PE boot image with Configuration Manager (Windows 10)
-description: Learn how to create custom Windows Preinstallation Environment (Windows PE) boot images in Microsoft Endpoint Configuration Manager.
+description: Learn how to create custom Windows Preinstallation Environment (Windows PE) boot images in Microsoft Configuration Manager.
 ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
@@ -19,7 +19,7 @@ ms.date: 10/27/2022
 
 - Windows 10
 
-In Microsoft Endpoint Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This article shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
+In Microsoft Configuration Manager, you can create custom Windows Preinstallation Environment (Windows PE) boot images that include extra components and features. This article shows you how to create a custom Windows PE 5.0 boot image with the Microsoft Deployment Toolkit (MDT) wizard. You can also add the Microsoft Diagnostics and Recovery Toolset (DaRT) 10 to the boot image as part of the boot image creation process.
 - The boot image that is created is based on the version of ADK that is installed.
 
 For the purposes of this guide, we'll use one server computer: CM01.

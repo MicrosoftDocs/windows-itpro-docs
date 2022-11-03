@@ -56,7 +56,7 @@ The applications that you want to use from the Windows To Go workspace should be
 
 ## <a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go
 
-Enterprises install Windows on a large group of computers either by using configuration management software (such as Microsoft Endpoint Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
+Enterprises install Windows on a large group of computers either by using configuration management software (such as Microsoft Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
 
 These same tools can be used to provision Windows To Go drive, just as you would if you were planning for provisioning a new class of mobile PCs. You can use the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) to review deployment tools available.
 

@@ -38,7 +38,7 @@ Sequencing Office 2010 is one of the main methods for creating an Office 2010 pa
 
 You can deploy Office 2010 packages by using any of the following App-V deployment methods:
 
-* Microsoft Endpoint Configuration Manager
+* Microsoft Configuration Manager
 * App-V server
 * Stand-alone through Windows PowerShell commands
 

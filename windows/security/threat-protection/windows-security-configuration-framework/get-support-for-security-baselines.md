@@ -1,6 +1,6 @@
 ---
 title: Get support for security baselines
-description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related topics.
+description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related articles.
 ms.prod: windows-client
 ms.localizationpriority: medium
 ms.author: vinpa
@@ -32,13 +32,13 @@ Any version of Windows baseline before Windows 10 1703 can still be downloaded u
 
 **What file formats are supported by the new SCT?**
 
-The toolkit supports formats created by the Windows GPO backup feature (.pol, .inf, and .csv). Policy Analyzer saves its data in XML files with a .PolicyRules file extension. LGPO also supports its own LGPO text file format as a text-based analog for the binary registry.pol file format. For more information, see the LGPO documentation. Keep in mind that SCMs' .cab files are no longer supported.
+The toolkit supports formats created by the Windows GPO backup feature (.pol, .inf, and .csv). Policy Analyzer saves its data in XML files with a `.PolicyRules` file extension. LGPO also supports its own LGPO text file format as a text-based analog for the binary registry.pol file format. For more information, see the LGPO documentation. Keep in mind that SCMs' .cab files are no longer supported.
 
 **Does SCT support Desired State Configuration (DSC) file format?**
 
 No. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration.
 
-**Does SCT support the creation of Microsoft Endpoint Manager DCM packs?**
+**Does SCT support the creation of Microsoft Configuration Manager DCM packs?**
 
 No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 

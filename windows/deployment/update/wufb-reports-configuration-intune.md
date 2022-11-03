@@ -15,14 +15,14 @@ ms.technology: itpro-updates
 
 # Configuring Microsoft Intune devices for Windows Update for Business reports
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Intune](/mem/intune)***
+***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)***
 
 > [!Important]
 > - As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 
-This article is specifically targeted at configuring devices enrolled to [Microsoft Intune](/mem/intune) for Windows Update for Business reports, within Microsoft Intune itself. Configuring devices for Windows Update for Business reports in Microsoft Intune breaks down to the following steps:
+This article is specifically targeted at configuring devices enrolled to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for Windows Update for Business reports, within Microsoft Intune itself. Configuring devices for Windows Update for Business reports in Microsoft Intune breaks down to the following steps:
 
 1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll. The configuration profile contains settings for all the Mobile Device Management (MDM) policies that must be configured.
 1. Wait for data to populate. The length of this process depends on the computer being on, connected to the internet, and correctly configured. Some data types take longer to appear than others. For more information, see [Use Windows Update for Business reports](wufb-reports-use.md).
@@ -38,7 +38,7 @@ Create a configuration profile that will set the required policies for Windows U
 
 ### Settings catalog
 
-1. Go to the [Endpoint Manager admin center](https://endpoint.microsoft.com) and navigate to **Devices** > **Windows** > **Configuration profiles**.
+1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Settings Catalog", and then select **Create**.
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
@@ -50,11 +50,7 @@ Create a configuration profile that will set the required policies for Windows U
         - **Value**: Basic (*Basic is the minimum value, but it can be safely set to a higher value*)
         - **Setting**: Allow Update Compliance Processing
         - **Value**: Enabled
-    1. (*Recommended, but not required*) Add settings for **disabling devices' Diagnostic Data opt-in settings interface**. If these aren't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports:
         - **Setting**: Configure Telemetry Opt In Change Notification
-        - **Value**: Disable telemetry change notifications
-        - **Setting**: Configure Telemetry Opt In Settings Ux
-        - **Value**: Disable Telemetry opt-in Settings
     1. (*Recommended, but not required*) Allow device name to be sent in Windows Diagnostic Data. If this policy is disabled, the device name won't be sent and won't be visible in Windows Update for Business reports:
         - **Setting**: Allow device name to be sent in Windows diagnostic data
         - **Value**: Allowed
@@ -64,7 +60,7 @@ Create a configuration profile that will set the required policies for Windows U
 
 ### Custom OMA URI based profile
 
-1. Go to the [Endpoint Manager admin center](https://endpoint.microsoft.com) and navigate to **Devices** > **Windows** > **Configuration profiles**.
+1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
 1. For **Template name**, select **Custom**, and then select **Create**.

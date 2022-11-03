@@ -198,7 +198,7 @@
             href: update/wufb-reports-configuration-script.md
           - name: Configure clients manually
             href: update/wufb-reports-configuration-manual.md
-          - name: Configure clients with Microsoft Endpoint Manager
+          - name: Configure clients with Microsoft Intune
             href: update/wufb-reports-configuration-intune.md 
         - name: Use Windows Update for Business reports
           items:
@@ -237,7 +237,7 @@
             href: update/update-compliance-configuration-script.md
           - name: Manually configuring devices for Update Compliance
             href: update/update-compliance-configuration-manual.md
-          - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+          - name: Configuring devices for Update Compliance in Microsoft Intune
             href: update/update-compliance-configuration-mem.md
         - name: Update Compliance monitoring
           items: 
@@ -436,7 +436,7 @@
         
                 - name: User State Migration Tool (USMT) technical reference
                   items:
-                    - name: USMT overview topics
+                    - name: USMT overview articles
                       items:
                         - name: USMT overview
                           href: usmt/usmt-overview.md
@@ -444,7 +444,7 @@
                           href: usmt/getting-started-with-the-user-state-migration-tool.md
                         - name: Windows upgrade and migration considerations
                           href: upgrade/windows-upgrade-and-migration-considerations.md
-                    - name: USMT How-to topics
+                    - name: USMT How-to articles
                       items:
                         - name: Exclude Files and Settings
                           href: usmt/usmt-exclude-files-and-settings.md

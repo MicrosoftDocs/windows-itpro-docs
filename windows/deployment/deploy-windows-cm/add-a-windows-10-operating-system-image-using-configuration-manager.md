@@ -19,7 +19,7 @@ ms.date: 10/27/2022
 
 -   Windows 10
 
-Operating system images are typically the production image used for deployment throughout the organization. This article shows you how to add a Windows 10 operating system image created with Microsoft Endpoint Configuration Manager, and how to distribute the image to a distribution point.
+Operating system images are typically the production image used for deployment throughout the organization. This article shows you how to add a Windows 10 operating system image created with Microsoft Configuration Manager, and how to distribute the image to a distribution point.
 
 ## Infrastructure
 
