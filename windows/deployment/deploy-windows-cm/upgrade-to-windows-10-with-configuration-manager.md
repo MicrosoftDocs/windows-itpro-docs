@@ -1,6 +1,6 @@
 ---
 title: Perform in-place upgrade to Windows 10 via Configuration Manager
-description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Endpoint Manager task sequence.
+description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Configuration Manager task sequence.
 ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
@@ -20,7 +20,7 @@ ms.date: 10/27/2022
 
 -   Windows 10
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Manager task sequence to completely automate the process.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Configuration Manager task sequence to completely automate the process.
 
 >[!IMPORTANT]
 >Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must be removed from a device before performing an in-place upgrade to Windows 10.
@@ -35,7 +35,7 @@ For the purposes of this article, we'll use one server computer (CM01) and one c
 
 All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
-All server and client computers referenced in this guide are on the same subnet. This interrelation isn't required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
+All server and client computers referenced in this guide are on the same subnet. This interrelation isn't required. But each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the `contoso.com` domain. Internet connectivity is also required to download OS and application updates.
 
 ## Add an OS upgrade package
 
@@ -63,7 +63,7 @@ On **CM01**:
    * Task sequence name: Upgrade Task Sequence
    * Description: In-place upgrade
    * Upgrade package: Windows 10 x64 RTM
-   * Include software updates: Do not install any software updates
+   * Include software updates: Don't install any software updates
    * Install applications: OSD \ Adobe Acrobat Reader DC
 
 4. Complete the wizard, and select **Close**.
