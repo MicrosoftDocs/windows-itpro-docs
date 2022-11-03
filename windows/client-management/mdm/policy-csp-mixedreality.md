@@ -113,8 +113,7 @@ Steps to use this policy correctly:
 |HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
@@ -341,9 +340,6 @@ Supported value is Integer.
 <!--/Scope-->
 <!--Description-->
 
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
-
 You may want to configure a different time server for your device fleet. IT admins can use thi policy to configure certain aspects of NTP client with following policies. In the Settings app, the Time/Language page will show the time server after a time sync has occurred. E.g. `time.windows.com` or another if another value is configured via MDM policy.
 
 This policy setting specifies a set of parameters for controlling the Windows NTP Client. Refer to [Policy CSP - ADMX_W32Time - Windows Client Management](/windows/client-management/mdm/policy-csp-admx-w32time#admx-w32time-policy-configure-ntpclient) for supported configuration parameters.
@@ -393,9 +389,6 @@ value="0"/>
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
-
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
@@ -609,8 +602,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
 
 This policy setting specifies whether the Windows NTP Client is enabled.
 
@@ -641,9 +632,6 @@ This policy setting specifies whether the Windows NTP Client is enabled.
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
-
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
@@ -678,8 +666,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 
 <!--/SupportedSKUs-->
 
-> [!NOTE]
-> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
 
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
