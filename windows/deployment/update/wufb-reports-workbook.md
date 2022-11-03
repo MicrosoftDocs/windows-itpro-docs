@@ -140,17 +140,22 @@ The **Device status** group for feature updates contains the following items:
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
-### Delivery Optimization (Preview)
+## Delivery Optimization (preview tab)
 
-The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies.  With this new, revised report Microsoft Connected Cache has been included. 
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes Microsoft Connected Cache (MCC) information.
 
-At the top of the report, tiles demonstrate the total bandwidth savings percentage (from LAN or Group peers and Microsoft Connected Cache out of the total consumed bandwidth), device counts, percentages between peer-to-peer and Microsoft Connected Cache (MCC) of bytes delivered, and the breakdown of total download GBs.
+At the top of the report, tiles display the following information:
 
-The report is divided into easily navigable tabs:
+- Total bandwidth savings percentage
+- The percentage of the saved bandwidth broken down by peer-to-peer and MCC
+- Device counts showing percentages of bytes delivered between peer-to-peer and MCC
+- The breakdown of total downloaded GBs.
 
-* **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
-* **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by 'ContentType', 'AzureADTenantId', and 'GroupID'.
-* **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provied filters include: GroupID, City, Country, and ISP.
+The Delivery Optimization tab is further divided into the following groups:
+
+- **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
+- **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
+- **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
 
 ## Customize the workbook
 

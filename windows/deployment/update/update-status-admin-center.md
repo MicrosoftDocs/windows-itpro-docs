@@ -44,7 +44,7 @@ Windows Update for Business reports is a Windows service hosted in Azure that us
 
 ## The Windows tab
 
-The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Windows Update for Business reports](wufb-reports-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. The Windows Update for Business reports data that populates these charts refreshes every 24 hours. For more information, see [Windows Update for Business reports data latency](wufb-reports-use.md#update-compliance-data-latency).
+The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Windows Update for Business reports](wufb-reports-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. The Windows Update for Business reports data that populates these charts refreshes every 24 hours. For more information, see [Windows Update for Business reports data latency](wufb-reports-use.md#data-latency).
 
 ### Windows update status chart
 

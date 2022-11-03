@@ -36,7 +36,7 @@ UCUpdateAlert
 
 :::image type="content" source="media/wufb-reports-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Windows Update for Business reports data in Log Analytics." lightbox="media/wufb-reports-query-table.png":::
 
-## Windows Update for Business reports data latency
+## Data latency
 
 Windows Update for Business reports uses Windows client diagnostic data as its data source. After you add Windows Update for Business reports and appropriately configure your devices, it could take 48-72 hours before they first appear.
 

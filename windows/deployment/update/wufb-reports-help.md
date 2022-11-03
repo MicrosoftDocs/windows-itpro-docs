@@ -103,7 +103,7 @@ The first step in troubleshooting Windows Update for Business reports is ensurin
 
 ### Devices have been correctly configured but aren't showing up in Windows Update for Business reports
 
-It takes some time for data to appear in Windows Update for Business reports for the first time or if you moved to a new Log Analytics workspace. To learn more about data latencies for Windows Update for Business reports, review [Windows Update for Business reports data latency](wufb-reports-use.md#update-compliance-data-latency).
+It takes some time for data to appear in Windows Update for Business reports for the first time or if you moved to a new Log Analytics workspace. To learn more about data latencies for Windows Update for Business reports, review [Windows Update for Business reports data latency](wufb-reports-use.md#data-latency).
 
 ### Devices are appearing, but without a device name
 
