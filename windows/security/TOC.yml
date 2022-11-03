@@ -244,7 +244,7 @@
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
             - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
-         - name: Create a WIP policy using Microsoft Endpoint Configuration Manager
+         - name: Create a WIP policy using Microsoft Configuration Manager
            href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
            items:
             - name: Create and deploy a WIP policy in Configuration Manager

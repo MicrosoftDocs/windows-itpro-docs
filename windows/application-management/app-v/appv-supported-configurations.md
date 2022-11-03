@@ -72,7 +72,7 @@ The App-V Publishing server can be installed on a server that runs Windows Serve
 
 ### Publishing server hardware requirements
 
-App-V adds requires nothing beyond the requirements of Windows Server.
+App-V adds require nothing beyond the requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
 * 2-GB RAM (64-bit).
@@ -117,7 +117,7 @@ Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK)
 
 See the Windows or Windows Server documentation for the hardware requirements.
 
-## Supported versions of Microsoft Endpoint Configuration Manager
+## Supported versions of Microsoft Configuration Manager
 
 The App-V client works with Configuration Manager versions starting with Technical Preview for Configuration Manager, version 1606.
 
