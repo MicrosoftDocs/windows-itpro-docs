@@ -45,7 +45,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 |Procedure|Description|Time|
 |--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
-|[Install Microsoft Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Configuration Manager, configure prerequisites, and install the package.|45 minutes|
+|[Install Microsoft Configuration Manager](#install-microsoft-configuration-manager)|Download Microsoft Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
 |[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)|Prerequisite procedures to support Zero Touch installation.|60 minutes|
 |[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)|Use the MDT wizard to create the boot image in Configuration Manager.|20 minutes|

@@ -40,7 +40,7 @@ The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is a
 [SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later, and Windows 11.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
 VPN support is added to [Windows Autopilot](#windows-autopilot)<br>
-An in-place upgrade wizard is available in [Configuration Manager](#microsoft-endpoint-configuration-manager).<br>
+An in-place upgrade wizard is available in [Configuration Manager](#microsoft-configuration-manager).<br>
 The Windows 10 deployment and update [landing page](index.yml) has been redesigned, with more content added and more content coming soon.<br>
 
 ## The Modern Desktop Deployment Center
