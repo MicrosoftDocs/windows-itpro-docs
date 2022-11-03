@@ -364,7 +364,7 @@ This section includes the following articles:
 
 Install the Network Device Enrollment Service role on a computer other than the issuing certificate authority.
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
+Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credential.
 
 1. Open **Server Manager** on the NDES server.
 
@@ -486,7 +486,7 @@ This task configures the NDES role and the certificate templates the NDES server
 
 #### Configure the NDES Role
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
+Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credential.
 
 > [!NOTE]
 > If you closed Server Manger from the last set of tasks, start Server Manager and click the action flag that shows a yellow exclamation point.
