@@ -14,7 +14,7 @@ Devices must be able to contact the following endpoints in order to authenticate
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803 and later. DeviceCensus.exe must run on a regular cadence and contact this endpoint in order to receive most information for Update Compliance. |
+| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803 and later. DeviceCensus.exe must run on a regular cadence and contact this endpoint in order to receive most information for Windows Update for Business reports. |
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier. |
 | `https://settings-win.data.microsoft.com` | Required for Windows Update functionality. |
 | `https://adl.windows.com` | Required for Windows Update functionality. |

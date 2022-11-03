@@ -58,5 +58,5 @@ ms.localizationpriority: medium
 | 97 | Failed to update value for EnableAllowCommercialDataPipeline |
 | 98 | Unexpected exception in EnableAllowCommercialDataPipeline |
 | 99    | Device isn't Windows 10.|
-| 100 | Device must be AADJ or hybrid AADJ to use Update Compliance |
+| 100 | Device must be AADJ or hybrid AADJ to use Windows Update for Business reports or Update Compliance |
 | 101 | Check AADJ failed with unexpected exception |
