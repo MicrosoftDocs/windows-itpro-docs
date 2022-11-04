@@ -34,7 +34,7 @@ The following table lists the operating systems supported in USMT.
 ## Unsupported scenarios
 
 - USMT doesn't support any of the Windows Server® operating systems.
-- USMT for Windows 10 shouldn't be used for migrating between previous versions of Windows. USMT for Windows 10 is only meant to migrate to Windows 10 or between Windows 10 versions. For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User's Guide](/previous-versions/windows/server/dd560801(v=ws.10)).
+- USMT for Windows 10 shouldn't be used for migrating between previous versions of Windows. USMT for Windows 10 is only meant to migrate to Windows 10 or between Windows 10 versions. For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) Overview](/previous-versions/windows/hh825227(v=win.10).
 
 ## Windows PE
 
@@ -48,7 +48,7 @@ The following table lists the operating systems supported in USMT.
 To open an elevated command prompt:
 
 1. Select **Start**.
-2. Enter **cmd** in the search function.
+2. Enter `cmd` in the search function.
 3. Depending on the OS you're using, **cmd** or **Command Prompt** is displayed.
 4. Right-click **cmd** or **Command Prompt**, and then select **Run as administrator**.
 5. If the current user isn't already an administrator, you'll be prompted to enter administrator credentials.
@@ -70,11 +70,11 @@ USMT will fail if it can't migrate a file or setting, unless you specify the `/c
 
 ## LoadState
 
-### Install applications before running the LoadState command.
+### Install applications before running the LoadState command
 
 Install all applications on the destination computer before restoring the user state. Installing applications before running the `LoadState.exe` command ensures that migrated settings are preserved.
 
-## Hard-Disk requirements
+## Hard-disk requirements
 
 Ensure that there's enough available space in the migration-store location and on the source and destination computers. For more information, see [Estimate Migration Store Size](usmt-estimate-migration-store-size.md).
 
