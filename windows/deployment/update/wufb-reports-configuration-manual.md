@@ -13,7 +13,7 @@ ms.date: 06/06/2022
 ms.technology: itpro-updates
 ---
 
-# Manually configuring devices for Windows Update for Business reports
+# Manually configuring devices for Windows Update for Business reports (preview)
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
