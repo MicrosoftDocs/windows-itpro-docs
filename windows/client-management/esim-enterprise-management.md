@@ -6,6 +6,7 @@ author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.author: vinpa
 ms.topic: conceptual
+ms.technology: itpro-manage
 ---
 
 # How Mobile Device Management Providers support eSIM Management on Windows
