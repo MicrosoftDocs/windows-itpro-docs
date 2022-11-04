@@ -2,12 +2,13 @@
 title: Operations for App-V (Windows 10/11)
 description: Learn about the various types of App-V administration and operating tasks that are typically performed by an administrator.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Operations for App-V
