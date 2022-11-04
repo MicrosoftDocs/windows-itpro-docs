@@ -3,8 +3,8 @@ title: UniversalPrint DDF file
 description: UniversalPrint DDF file
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/02/2022
 ms.reviewer: jimwu

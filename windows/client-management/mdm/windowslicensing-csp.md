@@ -1,12 +1,12 @@
 ---
 title: WindowsLicensing CSP
 description: Learn how the WindowsLicensing configuration service provider (CSP) is designed for licensing related management scenarios.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/15/2018
 ---

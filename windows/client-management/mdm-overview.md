@@ -2,9 +2,9 @@
 title: Mobile Device Management overview
 description: Windows 10 and Windows 11 provide an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy.
 ms.date: 08/04/2022
-ms.technology: windows
+ms.technology: itpro-manage
 ms.topic: article
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa

@@ -1,12 +1,12 @@
 ---
 title: WiFi CSP
 description: The WiFi configuration service provider (CSP) provides the functionality to add or delete Wi-Fi networks on a Windows device.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/18/2019
 ---

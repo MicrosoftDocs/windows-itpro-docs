@@ -4,11 +4,12 @@ description: Learn how Windows 10 includes new policies for management, like Gro
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/15/2021
 ms.topic: reference
+ms.technology: itpro-manage
 ---
 
 # New policies for Windows 10
