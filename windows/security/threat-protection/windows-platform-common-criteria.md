@@ -19,7 +19,13 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 ## Certified products
 
-The product releases below are currently certified against the cited *Protection Profile*, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/).  The *Security Target* describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation.  The Administrative Guide provides guidance on configuring the product to match the evaluated configuration.  The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions.
+The product releases below are currently certified against the cited *Protection Profile*, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/):
+
+- The *Security Target* describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation
+- The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration
+- The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions
+
+For more details, expand each product section.
 
 <br>
 
@@ -145,7 +151,14 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 
 ## Archived certified products
 
-The product releases below were certified against the cited Protection Profile and are now archived, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/index.cfm?archived=1).  The Security Target describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation.  The Administrative Guide provides guidance on configuring the product to match the evaluated configuration.  The Validation Report documents the results of the evaluation by the validation team, with the Assurance Activity Report, where available, providing details on the evaluator's actions.
+The product releases below were certified against the cited *Protection Profile* and are now archived, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/index.cfm?archived=1):
+
+- The *Security Target* describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the *Protection Profile* used as part of the evaluation
+- The *Administrative Guide* provides guidance on configuring the product to match the evaluated configuration
+- The *Certification Report or Validation Report* documents the results of the evaluation by the validation team, with the *Assurance Activity Report* providing details on the evaluator's actions
+
+For more details, expand each product section.
+
 
 <br>
 <details>
