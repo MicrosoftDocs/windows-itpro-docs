@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: networking
 description: Auto configuration and auto proxy problems with Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 ms.reviewer: 
 audience: itpro
