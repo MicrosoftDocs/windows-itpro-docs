@@ -1,12 +1,12 @@
 ---
 title: Defender CSP
 description: Learn how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/22/2022
