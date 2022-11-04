@@ -3,11 +3,11 @@ title: DynamicManagement CSP
 description: Learn how the Dynamic Management configuration service provider (CSP) enables configuration of policies that change how the device is managed.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection: highpri
 ---
