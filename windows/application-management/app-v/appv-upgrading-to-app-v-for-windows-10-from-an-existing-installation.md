@@ -2,11 +2,12 @@
 title: Upgrading to App-V for Windows 10/11 from an existing installation (Windows 10/11)
 description: Learn about upgrading to Application Virtualization (App-V) for Windows 10/11 from an existing installation.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
+ms.technology: itpro-apps
 ---
 
 # Upgrading to App-V for Windows client from an existing installation

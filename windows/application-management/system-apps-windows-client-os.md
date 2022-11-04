@@ -5,9 +5,10 @@ author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 description: Use the Windows PowerShell Get-AppxPackage command to get a list off the system apps installed in Windows OS. See a list of some common system apps installed a Windows Enterprise client computer or device, including Windows 10/11.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # System apps installed with the Windows client OS

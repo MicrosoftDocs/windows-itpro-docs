@@ -2,11 +2,12 @@
 title: Technical Reference for App-V (Windows 10/11)
 description: Learn strategy and context for many performance optimization practices in this technical reference for Application Virtualization (App-V).
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
+ms.technology: itpro-apps
 ---
 
 # Technical Reference for App-V
