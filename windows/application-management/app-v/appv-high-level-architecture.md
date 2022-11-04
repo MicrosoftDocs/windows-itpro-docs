@@ -2,12 +2,13 @@
 title: High-level architecture for App-V (Windows 10/11)
 description: Use the information in this article to simplify your Microsoft Application Virtualization (App-V) deployment.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # High-level architecture for App-V
