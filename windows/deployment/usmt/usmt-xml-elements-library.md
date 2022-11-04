@@ -23,7 +23,7 @@ The following table describes the XML elements and helper functions you can use 
 
 | Elements A-K | Elements L-Z | Helper functions |
 |-----|----|-----|
-| [&lt;addObjects&gt;](#addobjects) <br/>[&lt;attributes&gt;](#attribute) <br/>[&lt;bytes&gt;](#bytes) <br/>[&lt;commandLine&gt;](#commandline) <br/>[&lt;component&gt;](#component) <br/>[&lt;condition&gt;](#condition) <br/>[&lt;conditions&gt;](#conditions) <br/>[&lt;content&gt;](#content) <br/>[&lt;contentModify&gt;](#contentmodify) <br/>[&lt;description&gt;](#description) <br/>[&lt;destinationCleanup&gt;](#destinationcleanup) <br/>[&lt;detect&gt;](#detect) <br/>[&lt;detects&gt;](#detects) <br/>[&lt;detection&gt;](#detection) <br/>[&lt;displayName&gt;](#displayname) <br/>[&lt;environment&gt;](#bkmk-environment) <br/>[&lt;exclude&gt;](#exclude) <br/>[&lt;excludeAttributes&gt;](#excludeattributes) <br/>[&lt;extensions&gt;](#extensions) <br/>[&lt;extension&gt;](#extension) <br/>[&lt;externalProcess&gt;](#externalprocess) <br/>[&lt;icon&gt;](#icon) <br/>[&lt;include&gt;](#include) <br/>[&lt;includeAttribute&gt;](#includeattributes) | [&lt;library&gt;](#library) <br/>[&lt;location&gt;](#location) <br/>[&lt;locationModify&gt;](#locationmodify) <br/>[&lt;_locDefinition&gt;](#locdefinition) <br/>[&lt;manufacturer&gt;](#manufacturer) <br/>[&lt;merge&gt;](#merge) <br/>[&lt;migration&gt;](#migration) <br/>[&lt;namedElements&gt;](#namedelements) <br/>[&lt;object&gt;](#object) <br/>[&lt;objectSet&gt;](#objectset) <br/>[&lt;path&gt;](#path) <br/>[&lt;paths&gt;](#paths) <br/>[&lt;pattern&gt;](#pattern) <br/>[&lt;processing&gt;](#processing) <br/>[&lt;plugin&gt;](#plugin) <br/>[&lt;role&gt;](#role) <br/>[&lt;rules&gt;](#rules) <br/>[&lt;script&gt;](#script) <br/>[&lt;text&gt;](#text) <br/>[&lt;unconditionalExclude&gt;](#unconditionalexclude) <br/>[&lt;variable&gt;](#variable) <br/>[&lt;version&gt;](#version) <br/>[&lt;windowsObjects&gt;](#windowsobjects) | [&lt;condition&gt; functions](#conditionfunctions) <br/>[&lt;content&gt; functions](#contentfunctions) <br/>[&lt;contentModify&gt; functions](#contentmodifyfunctions) <br/>[&lt;include&gt; and &lt;exclude&gt; filter functions](#persistfilterfunctions) <br/>[&lt;locationModify&gt; functions](#locationmodifyfunctions) <br/>[&lt;merge&gt; functions](#mergefunctions) <br/>[&lt;script&gt; functions](#scriptfunctions) <br/>[Internal USMT functions](#internalusmtfunctions) |
+| [&lt;addObjects&gt;](#addobjects) <br/>[&lt;attributes&gt;](#attributes) <br/>[&lt;bytes&gt;](#bytes) <br/>[&lt;commandLine&gt;](#commandline) <br/>[&lt;component&gt;](#component) <br/>[&lt;condition&gt;](#condition) <br/>[&lt;conditions&gt;](#conditions) <br/>[&lt;content&gt;](#content) <br/>[&lt;contentModify&gt;](#contentmodify) <br/>[&lt;description&gt;](#description) <br/>[&lt;destinationCleanup&gt;](#destinationcleanup) <br/>[&lt;detect&gt;](#detect) <br/>[&lt;detects&gt;](#detects) <br/>[&lt;detection&gt;](#detection) <br/>[&lt;displayName&gt;](#displayname) <br/>[&lt;environment&gt;](#environment) <br/>[&lt;exclude&gt;](#exclude) <br/>[&lt;excludeAttributes&gt;](#excludeattributes) <br/>[&lt;extensions&gt;](#extensions) <br/>[&lt;extension&gt;](#extension) <br/>[&lt;externalProcess&gt;](#externalprocess) <br/>[&lt;icon&gt;](#icon) <br/>[&lt;include&gt;](#include) <br/>[&lt;includeAttribute&gt;](#includeattributes) | [&lt;library&gt;](#library) <br/>[&lt;location&gt;](#location) <br/>[&lt;locationModify&gt;](#locationmodify) <br/>[&lt;_locDefinition&gt;](#_locdefinition) <br/>[&lt;manufacturer&gt;](#manufacturer) <br/>[&lt;merge&gt;](#merge) <br/>[&lt;migration&gt;](#migration) <br/>[&lt;namedElements&gt;](#namedelements) <br/>[&lt;object&gt;](#object) <br/>[&lt;objectSet&gt;](#objectset) <br/>[&lt;path&gt;](#path) <br/>[&lt;paths&gt;](#paths) <br/>[&lt;pattern&gt;](#pattern) <br/>[&lt;processing&gt;](#processing) <br/>[&lt;plugin&gt;](#plugin) <br/>[&lt;role&gt;](#role) <br/>[&lt;rules&gt;](#rules) <br/>[&lt;script&gt;](#script) <br/>[&lt;text&gt;](#text) <br/>[&lt;unconditionalExclude&gt;](#unconditionalexclude) <br/>[&lt;variable&gt;](#variable) <br/>[&lt;version&gt;](#version) <br/>[&lt;windowsObjects&gt;](#windowsobjects) | [&lt;condition&gt; functions](#condition-functions) <br/>[&lt;content&gt; functions](#content-functions) <br/>[&lt;contentModify&gt; functions](#contentmodify-functions) <br/>[&lt;include&gt; and &lt;exclude&gt; filter functions](#include-and-exclude-filter-functions) <br/>[&lt;locationModify&gt; functions](#locationmodify-functions) <br/>[&lt;merge&gt; functions](#merge-functions) <br/>[&lt;script&gt; functions](#script-functions) <br/>[Internal USMT functions](#internal-usmt-functions) |
 
 ## &lt;addObjects&gt;
 
@@ -33,7 +33,7 @@ The &lt;addObjects&gt; element emulates the existence of one or more objects on 
 
 - **Parent elements:** [&lt;rules&gt;](#rules)
 
-- **Required child elements:** [&lt;object&gt;](#object) In addition, you must specify [&lt;location&gt;](#location) and [&lt;attribute&gt;](#attribute) as child elements of this &lt;object&gt; element.
+- **Required child elements:** [&lt;object&gt;](#object) In addition, you must specify [&lt;location&gt;](#location) and [&lt;attribute&gt;](#attributes) as child elements of this &lt;object&gt; element.
 
 - **Optional child elements:** [&lt;conditions&gt;](#conditions), &lt;condition&gt;, [&lt;script&gt;](#script)
 
@@ -155,7 +155,7 @@ A component can be nested inside another component; that is, the &lt;component&g
 
 - **Required child elements:** [&lt;role&gt;](#role), [&lt;displayName&gt;](#displayname)
 
-- **Optional child elements:** [&lt;manufacturer&gt;](#manufacturer), [&lt;version&gt;](#version), [&lt;description&gt;](#description), [&lt;paths&gt;](#paths), [&lt;icon&gt;](#icon), [&lt;environment&gt;](#bkmk-environment), [&lt;extensions&gt;](#extensions)
+- **Optional child elements:** [&lt;manufacturer&gt;](#manufacturer), [&lt;version&gt;](#version), [&lt;description&gt;](#description), [&lt;paths&gt;](#paths), [&lt;icon&gt;](#icon), [&lt;environment&gt;](#environment), [&lt;extensions&gt;](#extensions)
 
 Syntax:
 
@@ -186,7 +186,7 @@ The &lt;condition&gt; element has a Boolean result. You can use this element to 
 
 - **Child elements:** none
 
-- **Helper functions:** You can use the following [&lt;condition&gt; functions](#conditionfunctions) with this element: DoesOSMatch, IsNative64Bit(), IsOSLaterThan, IsOSEarlierThan, DoesObjectExist, DoesFileVersionMatch, IsFileVersionAbove, IsFileVersionBelow, IsSystemContext, DoesStringContentEqual, DoesStringContentContain, IsSameObject, IsSameContent, and IsSameStringContent.
+- **Helper functions:** You can use the following [&lt;condition&gt; functions](#condition-functions) with this element: DoesOSMatch, IsNative64Bit(), IsOSLaterThan, IsOSEarlierThan, DoesObjectExist, DoesFileVersionMatch, IsFileVersionAbove, IsFileVersionBelow, IsSystemContext, DoesStringContentEqual, DoesStringContentContain, IsSameObject, IsSameContent, and IsSameStringContent.
 
 Syntax:
 
@@ -295,7 +295,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
    |Setting|Required?|Value|
    |--- |--- |--- |
    |*ObjectType*|Yes|Defines the object type. Can be File or Registry.|
-   |*EncodedLocationPattern*|Yes|The [location pattern](#locations). Environment variables are allowed.|
+   |*EncodedLocationPattern*|Yes|The [location pattern](#specifying-locations). Environment variables are allowed.|
 
   For an example of this element, see the MigApp.xml file.
 
@@ -307,7 +307,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    |*EncodedFileLocation*|Yes|The [location pattern](#locations) for the file that will be checked. Environment variables are allowed.|
+    |*EncodedFileLocation*|Yes|The [location pattern](#specifying-locations) for the file that will be checked. Environment variables are allowed.|
     |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
     |*VersionValue*|Yes|A string pattern. For example, "Microsoft*".|
 
@@ -325,7 +325,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    |*EncodedFileLocation*|Yes|The [location pattern](#locations) for the file that will be checked. Environment variables are allowed.|
+    |*EncodedFileLocation*|Yes|The [location pattern](#specifying-locations) for the file that will be checked. Environment variables are allowed.|
     |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
     |*VersionValue*|Yes|The value to compare to. You cannot specify a pattern.|
 
@@ -335,7 +335,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    |*EncodedFileLocation*|Yes|The [location pattern](#locations) for the file that will be checked. Environment variables are allowed.|
+    |*EncodedFileLocation*|Yes|The [location pattern](#specifying-locations) for the file that will be checked. Environment variables are allowed.|
     |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
     |*VersionValue*|Yes|The value to compare to. You cannot specify a pattern.|
 
@@ -354,7 +354,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectType*|Yes|Defines the type of object. Can be File or Registry.|
-    |*EncodedLocationPattern*|Yes|The [encoded location](#locations) for the object that will be examined. You can specify environment variables.|
+    |*EncodedLocationPattern*|Yes|The [encoded location](#specifying-locations) for the object that will be examined. You can specify environment variables.|
     |StringContent|Yes|The string that will be checked against.|
 
   For example:
@@ -372,7 +372,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectType*|Yes|Defines the type of object. Can be File or Registry.|
-    |*EncodedLocationPattern*|Yes|The [encoded location](#locations) for the object that will be examined. You can specify environment variables.|
+    |*EncodedLocationPattern*|Yes|The [encoded location](#specifying-locations) for the object that will be examined. You can specify environment variables.|
     |*StrToFind*|Yes|A string that will be searched inside the content of the given object.|
 
 - **IsSameObject**
@@ -384,8 +384,8 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectType*|Yes|Defines the type of object. Can be File or Registry.|
-    |*EncodedLocation1*|Yes|The [encoded location](#locations) for the first object. You can specify environment variables.|
-    |*EncodedLocation2*|Yes|The [encoded location](#locations) for the second object. You can specify environment variables.|
+    |*EncodedLocation1*|Yes|The [encoded location](#specifying-locations) for the first object. You can specify environment variables.|
+    |*EncodedLocation2*|Yes|The [encoded location](#specifying-locations) for the second object. You can specify environment variables.|
 
   For example:
 
@@ -405,9 +405,9 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectType1*|Yes|Defines the type of the first object. Can be File or Registry.|
-    |*EncodedLocation1*|Yes|The [encoded location](#locations) for the first object. You can specify environment variables.|
+    |*EncodedLocation1*|Yes|The [encoded location](#specifying-locations) for the first object. You can specify environment variables.|
     |*ObjectType2*|Yes|Defines the type of the second object. Can be File or Registry.|
-    |*EncodedLocation2*|Yes|The [encoded location](#locations) for the second object. You can specify environment variables.|
+    |*EncodedLocation2*|Yes|The [encoded location](#specifying-locations) for the second object. You can specify environment variables.|
 
 - **IsSameStringContent**
 
@@ -418,9 +418,9 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectType1*|Yes|Defines the type of the first object. Can be File or Registry.|
-    |*EncodedLocation1*|Yes|The [encoded location](#locations) for the first object. You can specify environment variables.|
+    |*EncodedLocation1*|Yes|The [encoded location](#specifying-locations) for the first object. You can specify environment variables.|
     |*ObjectType2*|Yes|Defines the type of the second object. Can be File or Registry.|
-    |*EncodedLocation2*|Yes|The [encoded location](#locations) for the second object. You can specify environment variables.|
+    |*EncodedLocation2*|Yes|The [encoded location](#specifying-locations) for the second object. You can specify environment variables.|
 
 ## &lt;conditions&gt;
 
@@ -428,7 +428,7 @@ The &lt;conditions&gt; element returns a Boolean result that is used to specify 
 
 - **Number of occurrences:** Unlimited inside another &lt;conditions&gt; element. Limited to one occurrence in [&lt;detection&gt;](#detection), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
 
-- **Parent elements:** [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), [&lt;environment&gt;](#bkmk-environment), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
+- **Parent elements:** [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), [&lt;environment&gt;](#environment), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
 
 - **Child elements:** [&lt;conditions&gt;](#conditions), [&lt;condition&gt;](#condition)
 
@@ -466,7 +466,7 @@ You can use the &lt;content&gt; element to specify a list of object patterns to 
 
 - **Child elements:** [&lt;objectSet&gt;](#objectset)
 
-- **Helper functions:** You can use the following [&lt;content&gt; functions](#contentfunctions) with this element: ExtractSingleFile, ExtractMultipleFiles, and ExtractDirectory.
+- **Helper functions:** You can use the following [&lt;content&gt; functions](#content-functions) with this element: ExtractSingleFile, ExtractMultipleFiles, and ExtractDirectory.
 
 Syntax:
 
@@ -553,7 +553,7 @@ The &lt;contentModify&gt; element modifies the content of an object before it is
 
 - **Required child elements:** [&lt;objectSet&gt;](#objectset)
 
-- **Helper functions**: You can use the following [&lt;contentModify&gt; functions](#contentmodifyfunctions) with this element: ConvertToDWORD, ConvertToString, ConvertToBinary, KeepExisting, OffsetValue, SetValueByTable, MergeMultiSzContent, and MergeDelimitedContent.
+- **Helper functions**: You can use the following [&lt;contentModify&gt; functions](#contentmodify-functions) with this element: ConvertToDWORD, ConvertToString, ConvertToBinary, KeepExisting, OffsetValue, SetValueByTable, MergeMultiSzContent, and MergeDelimitedContent.
 
 Syntax:
 
@@ -905,7 +905,7 @@ In this scenario, you want to generate the location of objects at run time depen
 </environment>
 ```
 
-Then you can use an include rule as follows. You can use any of the [&lt;script&gt; functions](#scriptfunctions) to perform similar tasks.
+Then you can use an include rule as follows. You can use any of the [&lt;script&gt; functions](#script-functions) to perform similar tasks.
 
 ```xml
 <include>
@@ -981,7 +981,7 @@ The &lt;exclude&gt; element determines what objects will not be migrated, unless
 
 - **Child elements:** [&lt;objectSet&gt;](#objectset)
 
-- **Helper functions:** You can use the following [&lt;exclude&gt; filter functions](#persistfilterfunctions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, NeverRestore, and SameRegContent.
+- **Helper functions:** You can use the following [&lt;exclude&gt; filter functions](#include-and-exclude-filter-functions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, NeverRestore, and SameRegContent.
 
 Syntax:
 
@@ -1172,7 +1172,7 @@ The &lt;include&gt; element determines what to migrate, unless there is a more s
 
 - **Required child element:** [&lt;objectSet&gt;](#objectset)
 
-- **Helper functions:** You can use the following [&lt;include&gt; filter functions](#persistfilterfunctions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, and NeverRestore.
+- **Helper functions:** You can use the following [&lt;include&gt; filter functions](#include-and-exclude-filter-functions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, and NeverRestore.
 
 Syntax:
 
@@ -1341,7 +1341,7 @@ You can use the &lt;locationModify&gt; element to change the location and name o
 
 - **Required child element:** [&lt;objectSet&gt;](#objectset)
 
-- **Helper functions:** You can use the following [&lt;locationModify&gt; functions](#locationmodifyfunctions) with this element: ExactMove, RelativeMove, and Move.
+- **Helper functions:** You can use the following [&lt;locationModify&gt; functions](#locationmodify-functions) with this element: ExactMove, RelativeMove, and Move.
 
 Syntax:
 
@@ -1376,7 +1376,7 @@ The following functions change the location of objects as they are migrated when
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    |*ObjectEncodedLocation*|Yes|The destination [location](#locations) for all of the source objects.|
+    |*ObjectEncodedLocation*|Yes|The destination [location](#specifying-locations) for all of the source objects.|
 
   For example:
 
@@ -1460,7 +1460,7 @@ For an example of this element, see [Conflicts and Precedence](usmt-conflicts-an
 
 - **Required child element:** [&lt;objectSet&gt;](#objectset)
 
-- **Helper functions:** You can use the following [&lt;merge&gt; functions](#mergefunctions) with this element: SourcePriority, DestinationPriority, FindFilePlaceByPattern, LeafPattern, NewestVersion, HigherValue(), and LowerValue().
+- **Helper functions:** You can use the following [&lt;merge&gt; functions](#merge-functions) with this element: SourcePriority, DestinationPriority, FindFilePlaceByPattern, LeafPattern, NewestVersion, HigherValue(), and LowerValue().
 
 Syntax:
 
@@ -1626,7 +1626,7 @@ Syntax:
 
 - **Parent elements:** [&lt;migration&gt;](#migration)
 
-- **Child elements:** [&lt;environment&gt;](#bkmk-environment), [&lt;rules&gt;](#rules), [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), &lt;detects&gt;, &lt;detect&gt;
+- **Child elements:** [&lt;environment&gt;](#environment), [&lt;rules&gt;](#rules), [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), &lt;detects&gt;, &lt;detect&gt;
 
 For an example of this element, see the MigApp.xml file.
 
@@ -1638,7 +1638,7 @@ The &lt;object&gt; element represents a file or registry key.
 
 - **Parent elements:** [&lt;addObjects&gt;](#addobjects)
 
-- **Required child elements:** [&lt;location&gt;](#location), [&lt;attributes&gt;](#attribute)
+- **Required child elements:** [&lt;location&gt;](#location), [&lt;attributes&gt;](#attributes)
 
 - **Optional child elements:** [&lt;bytes&gt;](#bytes)
 
@@ -1816,7 +1816,7 @@ The &lt;role&gt; element is required in a custom .xml file. By specifying the &l
 
 - **Required child elements:** [&lt;rules&gt;](#rules)
 
-- **Optional child elements:** [&lt;environment&gt;](#bkmk-environment), [&lt;detection&gt;](#detection), [&lt;component&gt;](#component), [&lt;role&gt;](#role), &lt;detects&gt;, &lt;plugin&gt;,
+- **Optional child elements:** [&lt;environment&gt;](#environment), [&lt;detection&gt;](#detection), [&lt;component&gt;](#component), [&lt;role&gt;](#role), &lt;detects&gt;, &lt;plugin&gt;,
 
 Syntax:
 
@@ -1928,25 +1928,25 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 
 - General Syntax: `<script>ScriptWithArguments</script>`
 
-- You can use [GetStringContent](#scriptfunctions) when &lt;script&gt; is within &lt;variable&gt;.
+- You can use [GetStringContent](#script-functions) when &lt;script&gt; is within &lt;variable&gt;.
 
     Syntax: `<script>MigXmlHelper.GetStringContent("ObjectType","EncodedLocationPattern", "ExpandContent")</script>`
 
     Example: `<script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
 
-- You can use [GenerateUserPatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
+- You can use [GenerateUserPatterns](#script-functions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
     Syntax: `<script>MigXmlHelper.GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")</script>`
 
     Example: `<script>MigXmlHelper.GenerateUserPatterns ("File","%USERPROFILE%\* [*.doc]", "FALSE")</script>`
 
-- You can use [GenerateDrivePatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
+- You can use [GenerateDrivePatterns](#script-functions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
     Syntax: `<script>MigXmlHelper.GenerateDrivePatterns("PatternSegment","DriveType")</script>`
 
     Example: `<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>`
 
-- You can use the [Simple executing scripts](#scriptfunctions) with &lt;script&gt; elements that are within &lt;processing&gt; elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
+- You can use the [Simple executing scripts](#script-functions) with &lt;script&gt; elements that are within &lt;processing&gt; elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
 
     Syntax: `<script>MigXmlHelper.ExecutingScript</script>`
 
@@ -2006,7 +2006,7 @@ These functions return either a string or a pattern.
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    | *PatternSegment* | Yes | The suffix of an encoded pattern. It will be concatenated with a drive specification, such as &quot;c:&quot;, to form a complete [encoded file pattern](#locations). For example, &quot;* [*.doc]&quot;. *PatternSegment* cannot be an environment variable. |
+    | *PatternSegment* | Yes | The suffix of an encoded pattern. It will be concatenated with a drive specification, such as &quot;c:&quot;, to form a complete [encoded file pattern](#specifying-locations). For example, &quot;* [*.doc]&quot;. *PatternSegment* cannot be an environment variable. |
     | *DriveType* | Yes | The drive type for which the patterns are to be generated. You can specify one of: <ul><li>Fixed</li><li>CDROM</li><li>Removable</li><li>Remote</li></ul> |
 
   See the last component in the MigUser.xml file for an example of this element.
@@ -2026,7 +2026,7 @@ These functions return either a string or a pattern.
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectType*|Yes|Defines the object type. Can be File or Registry.|
-    |*EncodedLocationPattern*|Yes|The [location pattern](#locations). Environment variables are allowed.|
+    |*EncodedLocationPattern*|Yes|The [location pattern](#specifying-locations). Environment variables are allowed.|
     |*ProcessCurrentUser*|Yes|Can be TRUE or FALSE. Indicates if the patterns should be generated for the current user.|
 
 **Example:**
@@ -2216,7 +2216,7 @@ The &lt;variable&gt; element is required in an &lt;environment&gt; element. For 
 
 - **Number of occurrences:** Unlimited
 
-- **Parent elements:** [&lt;environment&gt;](#bkmk-environment)
+- **Parent elements:** [&lt;environment&gt;](#environment)
 
 - **Required child elements:** either [&lt;text&gt;](#text), or [&lt;script&gt;](#script), or [&lt;objectSet&gt;](#objectset)
 
