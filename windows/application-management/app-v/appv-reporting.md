@@ -2,12 +2,13 @@
 title: About App-V Reporting (Windows 10/11)
 description: Learn how the App-V reporting feature collects information about computers running the App-V client and virtual application package usage.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # About App-V reporting
@@ -94,7 +95,7 @@ Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send
 
 ## App-V Client reporting
 
-To use App-V reporting,, you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About client configuration settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
+To use App-V reporting, you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About client configuration settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
 
 ### Configuring App-V client reporting using Windows PowerShell
 

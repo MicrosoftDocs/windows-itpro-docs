@@ -1,12 +1,13 @@
 ---
 title: How to keep apps removed from Windows 10 from returning during an update
 description: How to keep provisioned apps that were removed from your machine from returning during an update.
-ms.prod: w10
+ms.prod: windows-client
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.date: 05/25/2018
 ms.reviewer: 
+ms.technology: itpro-apps
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
