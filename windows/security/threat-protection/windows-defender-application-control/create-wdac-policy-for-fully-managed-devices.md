@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 11/20/2019
+ms.date: 11/04/2022
 ms.technology: itpro-security
 ---
 
@@ -60,7 +60,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - WHQL (third-party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules that include signer and hash rules for Configuration Manager components to properly function.
+2. **"ConfigMgr works”** rules that include signer and hash rules for Configuration Manager components to properly function.
 3. **Allow Managed Installer** (Configuration Manager and *LamnaITInstaller.exe* configured as a managed installer)
 
 The critical differences between this set of pseudo-rules and those pseudo-rules defined for Lamna's [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md#define-the-circle-of-trust-for-lightly-managed-devices) are:
@@ -85,13 +85,13 @@ Alice follows these steps to complete this task:
       $PolicyPath=$env:userprofile+"\Desktop\"
       $PolicyName= "Lamna_FullyManagedClients_Audit"
       $LamnaPolicy=$PolicyPath+$PolicyName+".xml"
-      $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
+      $ConfigMgrPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
       ```
 
 3. Copy the policy created by Configuration Manager to the desktop:
 
       ```powershell
-      cp $MEMCMPolicy $LamnaPolicy
+      cp $ConfigMgrPolicy $LamnaPolicy
       ```
 
 4. Give the new policy a unique ID, descriptive name, and initial version number:
