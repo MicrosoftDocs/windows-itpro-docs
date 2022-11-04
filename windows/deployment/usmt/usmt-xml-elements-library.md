@@ -15,21 +15,9 @@ ms.technology: itpro-deploy
 
 This topic describes the XML elements and helper functions that you can employ to author migration .xml files to use with User State Migration Tool (USMT). It is assumed that you understand the basics of XML.
 
-## In this topic
+In addition to XML elements and helper functions, this article describes how to specify encoded locations and locations patterns, functions that are for internal USMT use only, and the version tags that you can use with helper functions.
 
-In addition to XML elements and helper functions, this topic describes how to specify encoded locations and locations patterns, functions that are for internal USMT use only, and the version tags that you can use with helper functions.
-
--   [Elements and helper functions](#elements)
-
--   [Appendix](#appendix)
-
-    -   [Specifying locations](#locations)
-
-    -   [Internal USMT functions](#internalusmtfunctions)
-
-    -   [Valid version tags](#allowed)
-
-## <a href="" id="elements"></a>Elements and Helper Functions
+## Elements and helper functions
 
 The following table describes the XML elements and helper functions you can use with USMT.
 
@@ -37,17 +25,17 @@ The following table describes the XML elements and helper functions you can use 
 |-----|----|-----|
 | [&lt;addObjects&gt;](#addobjects) <br/>[&lt;attributes&gt;](#attribute) <br/>[&lt;bytes&gt;](#bytes) <br/>[&lt;commandLine&gt;](#commandline) <br/>[&lt;component&gt;](#component) <br/>[&lt;condition&gt;](#condition) <br/>[&lt;conditions&gt;](#conditions) <br/>[&lt;content&gt;](#content) <br/>[&lt;contentModify&gt;](#contentmodify) <br/>[&lt;description&gt;](#description) <br/>[&lt;destinationCleanup&gt;](#destinationcleanup) <br/>[&lt;detect&gt;](#detect) <br/>[&lt;detects&gt;](#detects) <br/>[&lt;detection&gt;](#detection) <br/>[&lt;displayName&gt;](#displayname) <br/>[&lt;environment&gt;](#bkmk-environment) <br/>[&lt;exclude&gt;](#exclude) <br/>[&lt;excludeAttributes&gt;](#excludeattributes) <br/>[&lt;extensions&gt;](#extensions) <br/>[&lt;extension&gt;](#extension) <br/>[&lt;externalProcess&gt;](#externalprocess) <br/>[&lt;icon&gt;](#icon) <br/>[&lt;include&gt;](#include) <br/>[&lt;includeAttribute&gt;](#includeattributes) | [&lt;library&gt;](#library) <br/>[&lt;location&gt;](#location) <br/>[&lt;locationModify&gt;](#locationmodify) <br/>[&lt;_locDefinition&gt;](#locdefinition) <br/>[&lt;manufacturer&gt;](#manufacturer) <br/>[&lt;merge&gt;](#merge) <br/>[&lt;migration&gt;](#migration) <br/>[&lt;namedElements&gt;](#namedelements) <br/>[&lt;object&gt;](#object) <br/>[&lt;objectSet&gt;](#objectset) <br/>[&lt;path&gt;](#path) <br/>[&lt;paths&gt;](#paths) <br/>[&lt;pattern&gt;](#pattern) <br/>[&lt;processing&gt;](#processing) <br/>[&lt;plugin&gt;](#plugin) <br/>[&lt;role&gt;](#role) <br/>[&lt;rules&gt;](#rules) <br/>[&lt;script&gt;](#script) <br/>[&lt;text&gt;](#text) <br/>[&lt;unconditionalExclude&gt;](#unconditionalexclude) <br/>[&lt;variable&gt;](#variable) <br/>[&lt;version&gt;](#version) <br/>[&lt;windowsObjects&gt;](#windowsobjects) | [&lt;condition&gt; functions](#conditionfunctions) <br/>[&lt;content&gt; functions](#contentfunctions) <br/>[&lt;contentModify&gt; functions](#contentmodifyfunctions) <br/>[&lt;include&gt; and &lt;exclude&gt; filter functions](#persistfilterfunctions) <br/>[&lt;locationModify&gt; functions](#locationmodifyfunctions) <br/>[&lt;merge&gt; functions](#mergefunctions) <br/>[&lt;script&gt; functions](#scriptfunctions) <br/>[Internal USMT functions](#internalusmtfunctions) |
 
-## <a href="" id="addobjects"></a>&lt;addObjects&gt;
+## &lt;addObjects&gt;
 
 The &lt;addObjects&gt; element emulates the existence of one or more objects on the source computer. The child &lt;object&gt; elements provide the details of the emulated objects. If the content is a &lt;script&gt; element, the result of the invocation will be an array of objects.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child elements:** [&lt;object&gt;](#object) In addition, you must specify [&lt;location&gt;](#location) and [&lt;attribute&gt;](#attribute) as child elements of this &lt;object&gt; element.
+- **Required child elements:** [&lt;object&gt;](#object) In addition, you must specify [&lt;location&gt;](#location) and [&lt;attribute&gt;](#attribute) as child elements of this &lt;object&gt; element.
 
--   **Optional child elements:**[&lt;conditions&gt;](#conditions), &lt;condition&gt;, [&lt;script&gt;](#script)
+- **Optional child elements:** [&lt;conditions&gt;](#conditions), &lt;condition&gt;, [&lt;script&gt;](#script)
 
 Syntax:
 
@@ -73,15 +61,15 @@ The following example is from the MigApp.xml file:
 </addObjects>
 ```
 
-## <a href="" id="attribute"></a>&lt;attributes&gt;
+## &lt;attributes&gt;
 
 The &lt;attributes&gt; element defines the attributes for a registry key or file.
 
--   **Number of occurrences:** once for each &lt;object&gt;
+- **Number of occurrences:** once for each &lt;object&gt;
 
--   **Parent elements:**[&lt;object&gt;](#object)
+- **Parent elements:** [&lt;object&gt;](#object)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -103,15 +91,15 @@ The following example is from the MigApp.xml file:
 </object> 
 ```
 
-## <a href="" id="bytes"></a>&lt;bytes&gt;
+## &lt;bytes&gt;
 
 You must specify the &lt;bytes&gt; element only for files because, if &lt;location&gt; corresponds to a registry key or a directory, then &lt;bytes&gt; will be ignored.
 
--   **Number of occurrences:** zero or one
+- **Number of occurrences:** zero or one
 
--   **Parent elements:**[&lt;object&gt;](#object)
+- **Parent elements:** [&lt;object&gt;](#object)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -135,16 +123,15 @@ The following example is from the MigApp.xml file:
 </object> 
 ```
 
-## <a href="" id="commandline"></a>&lt;commandLine&gt;
-
+## &lt;commandLine&gt;
 
 You might want to use the &lt;commandLine&gt; element if you want to start or stop a service or application before or after you run the ScanState and LoadState tools.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;externalProcess&gt;](#externalprocess)
+- **Parent elements:** [&lt;externalProcess&gt;](#externalprocess)
 
--   **Child elements:** none****
+- **Child elements:** none****
 
 Syntax:
 
@@ -156,19 +143,19 @@ Syntax:
 |--- |--- |--- |
 |*CommandLineString*|Yes|A valid command line.|
 
-## <a href="" id="component"></a>&lt;component&gt;
+## &lt;component&gt;
 
 The &lt;component&gt; element is required in a custom .xml file. This element defines the most basic construct of a migration .xml file. For example, in the MigApp.xml file, "Microsoft&reg; Office 2003" is a component that contains another component, "Microsoft Office Access&reg; 2003". You can use the child elements to define the component.
 
 A component can be nested inside another component; that is, the &lt;component&gt; element can be a child of the &lt;role&gt; element within the &lt;component&gt; element in two cases: 1) when the parent &lt;component&gt; element is a container or 2) if the child &lt;component&gt; element has the same role as the parent &lt;component&gt; element.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;migration&gt;](#migration), [&lt;role&gt;](#role)
+- **Parent elements:** [&lt;migration&gt;](#migration), [&lt;role&gt;](#role)
 
--   **Required child elements:**[&lt;role&gt;](#role), [&lt;displayName&gt;](#displayname)
+- **Required child elements:** [&lt;role&gt;](#role), [&lt;displayName&gt;](#displayname)
 
--   **Optional child elements:**[&lt;manufacturer&gt;](#manufacturer), [&lt;version&gt;](#version), [&lt;description&gt;](#description), [&lt;paths&gt;](#paths), [&lt;icon&gt;](#icon), [&lt;environment&gt;](#bkmk-environment), [&lt;extensions&gt;](#extensions)
+- **Optional child elements:** [&lt;manufacturer&gt;](#manufacturer), [&lt;version&gt;](#version), [&lt;description&gt;](#description), [&lt;paths&gt;](#paths), [&lt;icon&gt;](#icon), [&lt;environment&gt;](#bkmk-environment), [&lt;extensions&gt;](#extensions)
 
 Syntax:
 
@@ -187,19 +174,19 @@ hidden="Yes|No">
 
 For an example, see any of the default migration .xml files.
 
-## <a href="" id="condition"></a>&lt;condition&gt;
+## &lt;condition&gt;
 
 Although the &lt;condition&gt; element under the &lt;detect&gt;, &lt;objectSet&gt;, and &lt;addObjects&gt; elements is supported, we recommend that you do not use it. This element might be deprecated in future versions of USMT, requiring you to rewrite your scripts. We recommend that, if you need to use a condition within the &lt;objectSet&gt; and &lt;addObjects&gt; elements, you use the more powerful [&lt;conditions&gt;](#conditions) element, which allows you to formulate complex Boolean statements.
 
 The &lt;condition&gt; element has a Boolean result. You can use this element to specify the conditions in which the parent element will be evaluated. If any of the present conditions return FALSE, the parent element will not be evaluated.
 
--   **Number of occurrences:** unlimited.
+- **Number of occurrences:** unlimited.
 
--   **Parent elements:**[&lt;conditions&gt;](#conditions), &lt;detect&gt;, &lt;objectSet&gt;, &lt;addObjects&gt;
+- **Parent elements:** [&lt;conditions&gt;](#conditions), &lt;detect&gt;, &lt;objectSet&gt;, &lt;addObjects&gt;
 
--   **Child elements:** none
+- **Child elements:** none
 
--   **Helper functions:** You can use the following [&lt;condition&gt; functions](#conditionfunctions) with this element: DoesOSMatch, IsNative64Bit(), IsOSLaterThan, IsOSEarlierThan, DoesObjectExist, DoesFileVersionMatch, IsFileVersionAbove, IsFileVersionBelow, IsSystemContext, DoesStringContentEqual, DoesStringContentContain, IsSameObject, IsSameContent, and IsSameStringContent.
+- **Helper functions:** You can use the following [&lt;condition&gt; functions](#conditionfunctions) with this element: DoesOSMatch, IsNative64Bit(), IsOSLaterThan, IsOSEarlierThan, DoesObjectExist, DoesFileVersionMatch, IsFileVersionAbove, IsFileVersionBelow, IsSystemContext, DoesStringContentEqual, DoesStringContentContain, IsSameObject, IsSameContent, and IsSameStringContent.
 
 Syntax:
 
@@ -238,17 +225,17 @@ However, in the code sample below, the &lt;condition&gt; elements, A and B, are 
 </detection>
 ```
 
-### <a href="" id="conditionfunctions"></a>&lt;condition&gt; functions
+### &lt;condition&gt; functions
 
 The &lt;condition&gt; functions return a Boolean value. You can use these elements in &lt;addObjects&gt; conditions.
 
--   [Operating system version functions](#operatingsystemfunctions)
+- [Operating system version functions](#operating-system-version-functions)
 
--   [Object content functions](#objectcontentfunctions)
+- [Object content functions](#object-content-functions)
 
-### <a href="" id="operatingsystemfunctions"></a>Operating system version functions
+### Operating system version functions
 
--   **DoesOSMatch**
+- **DoesOSMatch**
 
     All matches are case insensitive.
 
@@ -265,11 +252,11 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
   <condition>MigXmlHelper.DoesOSMatch("NT","\*")</condition>
   ```
 
--   **IsNative64Bit**
+- **IsNative64Bit**
 
     The IsNative64Bit function returns TRUE if the migration process is running as a native 64-bit process; that is, a process running on a 64-bit system without Windows on Windows (WOW). Otherwise, it returns FALSE.
 
--   **IsOSLaterThan**
+- **IsOSLaterThan**
 
     All comparisons are case insensitive.
 
@@ -286,7 +273,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
   <condition negation="Yes">MigXmlHelper.IsOSLaterThan("NT","6.0")</condition>
   ```
 
--   **IsOSEarlierThan**
+- **IsOSEarlierThan**
 
     All comparisons are case insensitive.
 
@@ -297,8 +284,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |*OSType*|Yes|Can be **9x** or **NT**. If *OSType* does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and *OSType* is "9x" the result will be FALSE.|
     |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version but no pattern is allowed. For example, `5.0`. <br/><br/>The IsOSEarlierThan function returns TRUE if the current operating system is earlier than *OSVersion*.|
 
-
-### <a href="" id="objectcontentfunctions"></a>Object content functions
+### Object content functions
 
 - **DoesObjectExist**
 
@@ -436,15 +422,15 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |*ObjectType2*|Yes|Defines the type of the second object. Can be File or Registry.|
     |*EncodedLocation2*|Yes|The [encoded location](#locations) for the second object. You can specify environment variables.|
 
-## <a href="" id="conditions"></a>&lt;conditions&gt;
+## &lt;conditions&gt;
 
 The &lt;conditions&gt; element returns a Boolean result that is used to specify the conditions in which the parent element is evaluated. USMT evaluates the child elements, and then joins their results using the operators AND or OR according to the **operation** parameter.
 
--   **Number of occurrences:** Unlimited inside another &lt;conditions&gt; element. Limited to one occurrence in [&lt;detection&gt;](#detection), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
+- **Number of occurrences:** Unlimited inside another &lt;conditions&gt; element. Limited to one occurrence in [&lt;detection&gt;](#detection), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
 
--   **Parent elements:**[&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), [&lt;environment&gt;](#bkmk-environment), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
+- **Parent elements:** [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), [&lt;environment&gt;](#bkmk-environment), [&lt;rules&gt;](#rules), [&lt;addObjects&gt;](#addobjects), and [&lt;objectSet&gt;](#objectset)
 
--   **Child elements:**[&lt;conditions&gt;](#conditions), [&lt;condition&gt;](#condition)
+- **Child elements:** [&lt;conditions&gt;](#conditions), [&lt;condition&gt;](#condition)
 
 Syntax:
 
@@ -470,17 +456,17 @@ The following example is from the MigApp.xml file:
 </environment>
 ```
 
-## <a href="" id="content"></a>&lt;content&gt;
+## &lt;content&gt;
 
 You can use the &lt;content&gt; element to specify a list of object patterns to obtain an object set from the source computer. Each &lt;objectSet&gt; within a &lt;content&gt; element is evaluated. For each resulting object pattern list, the objects that match it are enumerated and their content is filtered by the filter parameter. The resulting string array is the output for the &lt;content&gt; element. The filter script returns an array of locations. The parent &lt;objectSet&gt; element can contain multiple child &lt;content&gt; elements.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;objectSet&gt;](#objectset)
+- **Parent elements:** [&lt;objectSet&gt;](#objectset)
 
--   **Child elements:**[&lt;objectSet&gt;](#objectset)
+- **Child elements:** [&lt;objectSet&gt;](#objectset)
 
--   **Helper functions:** You can use the following [&lt;content&gt; functions](#contentfunctions) with this element: ExtractSingleFile, ExtractMultipleFiles, and ExtractDirectory.
+- **Helper functions:** You can use the following [&lt;content&gt; functions](#contentfunctions) with this element: ExtractSingleFile, ExtractMultipleFiles, and ExtractDirectory.
 
 Syntax:
 
@@ -493,11 +479,11 @@ Syntax:
 |--- |--- |--- |
 |filter|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br/>The script is called for each object that is enumerated by the object sets in the &lt;include&gt; rule. The filter script returns a Boolean value. If the return value is TRUE, the object will be migrated. If it is FALSE, it will not be migrated.|
 
-### <a href="" id="contentfunctions"></a>&lt;content&gt; functions
+### &lt;content&gt; functions
 
 The following functions generate patterns out of the content of an object. These functions are called for every object that the parent &lt;ObjectSet&gt; element is enumerating.
 
--   **ExtractSingleFile**
+- **ExtractSingleFile**
 
     If the registry value is a MULTI-SZ, only the first segment is processed. The returned pattern is the encoded location for a file that must exist on the system. If the specification is correct in the registry value, but the file does not exist, this function returns NULL.
 
@@ -520,7 +506,7 @@ The following functions generate patterns out of the content of an object. These
   <content filter="MigXmlHelper.ExtractSingleFile(NULL,'%CSIDL_COMMON_FONTS%')">
   ```
 
--   **ExtractMultipleFiles**
+- **ExtractMultipleFiles**
 
     The ExtractMultipleFiles function returns multiple patterns, one for each file that is found in the content of the given registry value. If the registry value is a MULTI-SZ, the MULTI-SZ separator is considered a separator by default. therefore, for MULTI-SZ, the &lt;Separators&gt; argument must be NULL.
 
@@ -533,7 +519,7 @@ The following functions generate patterns out of the content of an object. These
     |*Separators*|Yes|A list of possible separators that might follow the file specification in this registry value name. For example, if the content is "C:\Windows\Notepad.exe,-2", the separator is a comma. This parameter must be NULL when processing MULTI-SZ registry values.|
     |*PathHints*|Yes|A list of extra paths, separated by colons (;), where the function will look for a file matching the current content. For example, if the content is "Notepad.exe" and the path is the %Path% environment variable, the function will find Notepad.exe in %windir% and returns "c:\Windows [Notepad.exe]". You can specify NULL.|
 
--   **ExtractDirectory**
+- **ExtractDirectory**
 
     The ExtractDirectory function returns a pattern that is the encoded location for a directory that must exist on the source computer. If the specification is correct in the registry value, but the directory does not exist, this function returns NULL. If it is processing a registry value that is a MULTI-SZ, only the first segment will be processed.
 
@@ -557,17 +543,17 @@ The following functions generate patterns out of the content of an object. These
   </objectSet>
   ```
 
-## <a href="" id="contentmodify"></a>&lt;contentModify&gt;
+## &lt;contentModify&gt;
 
 The &lt;contentModify&gt; element modifies the content of an object before it is written to the destination computer. For each &lt;contentModify&gt; element there can be multiple &lt;objectSet&gt; elements. This element returns the new content of the object that is being processed.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child elements:**[&lt;objectSet&gt;](#objectset)
+- **Required child elements:** [&lt;objectSet&gt;](#objectset)
 
--   **Helper functions**: You can use the following [&lt;contentModify&gt; functions](#contentmodifyfunctions) with this element: ConvertToDWORD, ConvertToString, ConvertToBinary, KeepExisting, OffsetValue, SetValueByTable, MergeMultiSzContent, and MergeDelimitedContent.
+- **Helper functions**: You can use the following [&lt;contentModify&gt; functions](#contentmodifyfunctions) with this element: ConvertToDWORD, ConvertToString, ConvertToBinary, KeepExisting, OffsetValue, SetValueByTable, MergeMultiSzContent, and MergeDelimitedContent.
 
 Syntax:
 
@@ -580,11 +566,11 @@ Syntax:
 |--- |--- |--- |
 |script|Yes|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2").` <br/><br/>The script will be called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is TRUE, the object will be migrated. If it is FALSE, it will not be migrated.|
 
-### <a href="" id="contentmodifyfunctions"></a>&lt;contentModify&gt; functions
+### &lt;contentModify&gt; functions
 
 The following functions change the content of objects as they are migrated. These functions are called for every object that the parent &lt;ObjectSet&gt; element is enumerating.
 
--   **ConvertToDWORD**
+- **ConvertToDWORD**
 
     The ConvertToDWORD function converts the content of registry values that are enumerated by the parent &lt;ObjectSet&gt; element to a DWORD. For example, ConvertToDWORD will convert the string "1" to the DWORD 0x00000001. If the conversion fails, then the value of DefaultValueOnError will be applied.
 
@@ -594,7 +580,7 @@ The following functions change the content of objects as they are migrated. Thes
     |--- |--- |--- |
     |*DefaultValueOnError*|No|The value that will be written into the value name if the conversion fails. You can specify NULL, and 0 will be written if the conversion fails.|
 
--   **ConvertToString**
+- **ConvertToString**
 
     The ConvertToString function converts the content of registry values that match the parent &lt;ObjectSet&gt; element to a string. For example, it will convert the DWORD 0x00000001 to the string "1". If the conversion fails, then the value of DefaultValueOnError will be applied.
 
@@ -614,13 +600,13 @@ The following functions change the content of objects as they are migrated. Thes
   </contentModify>
   ```
 
--   **ConvertToBinary**
+- **ConvertToBinary**
 
     The ConvertToBinary function converts the content of registry values that match the parent &lt;ObjectSet&gt; element to a binary type.
 
     Syntax: `ConvertToBinary ()`
 
--   **OffsetValue**
+- **OffsetValue**
 
     The OffsetValue function adds or subtracts *Value* from the value of the migrated object, and then writes the result back into the registry value on the destination computer. For example, if the migrated object is a DWORD with a value of 14, and the *Value* is "-2", the registry value will be 12 on the destination computer.
 
@@ -630,7 +616,7 @@ The following functions change the content of objects as they are migrated. Thes
     |--- |--- |--- |
     |*Value*|Yes|The string representation of a numeric value. It can be positive or negative. For example, `OffsetValue(2)`.|
 
--   **SetValueByTable**
+- **SetValueByTable**
 
     The SetValueByTable function matches the value from the source computer to the source table. If the value is there, the equivalent value in the destination table will be applied. If the value is not there, or if the destination table has no equivalent value, the *DefaultValueOnError* will be applied.
 
@@ -642,7 +628,7 @@ The following functions change the content of objects as they are migrated. Thes
     |*DestinationTable*|No|A list of translated values separated by commas.|
     |*DefaultValueOnError*|No|The value that will be applied to the destination computer if either 1) the value for the source computer does not match *SourceTable*, or 2) *DestinationTable* has no equivalent value. <br/><br/>If DefaultValueOnError is NULL, the value will not be changed on the destination computer.|
 
--   **KeepExisting**
+- **KeepExisting**
 
     You can use the KeepExisting function when there are conflicts on the destination computer. This function will keep (not overwrite) the specified attributes for the object that is on the destination computer.
 
@@ -652,7 +638,7 @@ The following functions change the content of objects as they are migrated. Thes
     |--- |--- |--- |
     | *OptionString* | Yes | *OptionString* can be **Security**, **TimeFields**, or **FileAttrib**:*Letter*. You can specify one of each type of *OptionStrings*. Do not specify multiple *OptionStrings* with the same value. If you do, the right-most option of that type will be kept. For example, do not specify **(&quot;FileAttrib:H&quot;, &quot;FileAttrib:R&quot;)** because only Read-only will be evaluated. Instead specify **(&quot;FileAttrib:HR&quot;)** and both Hidden and Read-only attributes will be kept on the destination computer. <ul><li>**Security**. Keeps the destination object's security descriptor if it exists.</li><li>**TimeFields**. Keeps the destination object's time stamps. This parameter is for files only.</li><li>**FileAttrib:** *Letter*. Keeps the destination object's attribute value, either On or OFF, for the specified set of file attributes. This parameter is for files only. The following are case-insensitive, but USMT will ignore any values that are invalid, repeated, or if there is a space after &quot;FileAttrib:&quot;. You can specify any combination of the following attributes: <ul><li>**A** = Archive</li><li>**C** = Compressed</li><li>**E** = Encrypted</li><li>**H** = Hidden</li><li>**I** = Not Content Indexed</li><li>**O** = Offline</li><li>**R** = Read-Only</li><li>**S** = System</li><li>**T** = Temporary</li></ul></li></ul> |
 
--   **MergeMultiSzContent**
+- **MergeMultiSzContent**
 
     The MergeMultiSzContent function merges the MULTI-SZ content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. `Instruction` and `String` either remove or add content to the resulting MULTI-SZ. Duplicate elements will be removed.
 
@@ -663,7 +649,7 @@ The following functions change the content of objects as they are migrated. Thes
     | *Instruction* | Yes | Can be one of the following: <ul><li>**Add**. Adds the corresponding String to the resulting MULTI-SZ if it is not already there.</li><li>**Remove**. Removes the corresponding String from the resulting MULTI-SZ.</li></ul> |
     | *String* | Yes | The string to be added or removed. |
 
--   **MergeDelimitedContent**
+- **MergeDelimitedContent**
 
     The MergeDelimitedContent function merges the content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. The content is considered a list of elements separated by one of the characters in the Delimiters parameter. Duplicate elements will be removed.
 
@@ -675,15 +661,15 @@ The following functions change the content of objects as they are migrated. Thes
     | *Instruction* | Yes | Can one of the following: <ul><li>**Add.** Adds *String* to the resulting MULTI-SZ if it is not already there.</li><li>**Remove.** Removes *String* from the resulting MULTI-SZ.</li></ul> |
     | *String* | Yes | The string to be added or removed. |
 
-## <a href="" id="description"></a>&lt;description&gt;
+## &lt;description&gt;
 
 The &lt;description&gt; element defines a description for the component but does not affect the migration.
 
--   **Number of occurrences:** zero or one
+- **Number of occurrences:** zero or one
 
--   **Parent elements:**[&lt;component&gt;](#component)
+- **Parent elements:** [&lt;component&gt;](#component)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -701,22 +687,20 @@ The following code sample shows how the &lt;description&gt; element defines the 
 <description>My custom component<description>
 ```
 
-## <a href="" id="destinationcleanup"></a>&lt;destinationCleanup&gt;
+## &lt;destinationCleanup&gt;
 
 The &lt;destinationCleanup&gt; element deletes objects, such as files and registry keys, from the destination computer before applying the objects from the source computer. This element is evaluated only when the LoadState tool is run on the destination computer. That is, this element is ignored by the ScanState tool.
 
 > [!IMPORTANT]
 > Use this option with extreme caution because it will delete objects from the destination computer.
 
-
-
 For each &lt;destinationCleanup&gt; element there can be multiple &lt;objectSet&gt; elements. A common use for this element is if there is a missing registry key on the source computer and you want to ensure that a component is migrated. In this case, you can delete all of the component's registry keys before migrating the source registry keys. This will ensure that if there is a missing key on the source computer, it will also be missing on the destination computer.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Child elements:**[&lt;objectSet&gt;](#objectset) (Note that the destination computer will delete all child elements.)
+- **Child elements:** [&lt;objectSet&gt;](#objectset) (Note that the destination computer will delete all child elements.)
 
 Syntax:
 
@@ -740,7 +724,7 @@ For example:
 </destinationCleanup>
 ```
 
-## <a href="" id="detect"></a>&lt;detect&gt;
+## &lt;detect&gt;
 
 Although the &lt;detect&gt; element is still supported, we do not recommend using it because it may be deprecated in future versions of USMT. In that case, you would have to rewrite your scripts. Instead, we recommend that you use the [&lt;detection&gt;](#detection)**element.**
 
@@ -748,13 +732,13 @@ You use the &lt;detect&gt; element to determine if the component is present on a
 
 For each &lt;detect&gt; element there can be multiple child &lt;condition&gt; or &lt;objectSet&gt; elements, which will be logically joined by an OR operator. If at least one &lt;condition&gt; or &lt;objectSet&gt; element evaluates to TRUE, then the &lt;detect&gt; element evaluates to TRUE.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:** &lt;detects&gt;, [&lt;namedElements&gt;](#namedelements)
+- **Parent elements:** &lt;detects&gt;, [&lt;namedElements&gt;](#namedelements)
 
--   **Required child elements:**[&lt;condition&gt;](#condition)
+- **Required child elements:** [&lt;condition&gt;](#condition)
 
--   **Optional child elements:**[&lt;objectSet&gt;](#objectset)
+- **Optional child elements:** [&lt;objectSet&gt;](#objectset)
 
 Syntax:
 
@@ -770,7 +754,7 @@ Syntax:
 
 For examples, see the examples for [&lt;detection&gt;](#detection).
 
-## <a href="" id="detects"></a>&lt;detects&gt;
+## &lt;detects&gt;
 
 Although the &lt;detects&gt; element is still supported, we recommend that you do not use it because it may be deprecated in future versions of USMT, which would require you to rewrite your scripts. Instead, we recommend that you use the [&lt;detection&gt;](#detection) element if the parent element is &lt;role&gt; or &lt;namedElements&gt;, and we recommend that you use the &lt;conditions&gt; element if the parent element is &lt;rules&gt;. Using &lt;detection&gt; allows you to more clearly formulate complex Boolean statements.
 
@@ -783,11 +767,11 @@ Syntax:
 </detects>
 ```
 
--   **Number of occurrences:** Unlimited.
+- **Number of occurrences:** Unlimited.
 
--   **Parent elements:**[&lt;role&gt;](#role), [&lt;rules&gt;](#rules), [&lt;namedElements&gt;](#namedelements)
+- **Parent elements:** [&lt;role&gt;](#role), [&lt;rules&gt;](#rules), [&lt;namedElements&gt;](#namedelements)
 
--   **Required child elements:** &lt;detect&gt;
+- **Required child elements:** &lt;detect&gt;
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -807,8 +791,7 @@ The following example is from the MigApp.xml file.
 </detects>
 ```
 
-## <a href="" id="detection"></a>&lt;detection&gt;
-
+## &lt;detection&gt;
 
 The &lt;detection&gt; element is a container for one &lt;conditions&gt; element. The result of the child &lt;condition&gt; elements, located underneath the &lt;conditions&gt; element, determines the result of this element. For example, if all of the child &lt;conditions&gt; elements within the &lt;detection&gt; element resolve to TRUE, then the &lt;detection&gt; element resolves to TRUE. If any of the child &lt;conditions&gt; elements resolve to FALSE, then the &lt;detection&gt; element resolves to FALSE.
 
@@ -816,11 +799,11 @@ In addition, the results from each &lt;detection&gt; section within the &lt;role
 
 Use the &lt;detection&gt; element under the &lt;namedElements&gt; element if you do not want to write it within a component. Then include a matching &lt;detection&gt; section under the &lt;role&gt; element to control whether the component is migrated. If there is not a &lt;detection&gt; section for a component, then USMT will assume that the component is present.
 
--   **Number of occurrences:** Unlimited.
+- **Number of occurrences:** Unlimited.
 
--   **Parent elements:**[&lt;role&gt;](#role), [&lt;namedElements&gt;](#namedelements)
+- **Parent elements:** [&lt;role&gt;](#role), [&lt;namedElements&gt;](#namedelements)
 
--   **Child elements:**[&lt;conditions&gt;](#conditions)
+- **Child elements:** [&lt;conditions&gt;](#conditions)
 
 Syntax:
 
@@ -857,16 +840,15 @@ and
    </detection>
 ```
 
-## <a href="" id="displayname"></a>&lt;displayName&gt;
-
+## &lt;displayName&gt;
 
 The &lt;displayName&gt; element is a required field within each &lt;component&gt; element.
 
--   **Number of occurrences:** once for each component
+- **Number of occurrences:** once for each component
 
--   **Parent elements:**[&lt;component&gt;](#component)
+- **Parent elements:** [&lt;component&gt;](#component)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -885,17 +867,17 @@ For example:
 <displayName>Command Prompt settings</displayName>
 ```
 
-## <a href="" id="bkmk-environment"></a>&lt;environment&gt;
+## &lt;environment&gt;
 
-The &lt;environment&gt; element is a container for &lt;variable&gt; elements in which you can define variables to use in your .xml file. All environment variables defined this way will be private. That is, they will be available only for their child components and the component in which they were defined. For two example scenarios, see [Examples](#envex).
+The &lt;environment&gt; element is a container for &lt;variable&gt; elements in which you can define variables to use in your .xml file. All environment variables defined this way will be private. That is, they will be available only for their child components and the component in which they were defined. For two example scenarios, see [Examples](#examples).
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;role&gt;](#role), [&lt;component&gt;](#component), [&lt;namedElements&gt;](#namedelements)
+- **Parent elements:** [&lt;role&gt;](#role), [&lt;component&gt;](#component), [&lt;namedElements&gt;](#namedelements)
 
--   **Required child elements:**[&lt;variable&gt;](#variable)
+- **Required child elements:** [&lt;variable&gt;](#variable)
 
--   **Optional child elements:**[conditions](#conditions)
+- **Optional child elements:** [conditions](#conditions)
 
 Syntax:
 
@@ -909,7 +891,7 @@ Syntax:
 | name | Yes, when &lt;environment&gt; is a child of &lt;namedElements&gt; <br/>No, when &lt;environment&gt; is a child of &lt;role&gt; or &lt;component&gt; | When declared as a child of the &lt;role&gt; or &lt;component&gt; elements, if *ID* is declared, USMT ignores the content of the &lt;environment&gt; element and the content of the &lt;environment&gt; element with the same name declared in the &lt;namedElements&gt; element is processed. |
 | context | No <br/>(default = UserAndSystem) | Defines the scope of this parameter: whether to process this component in the context of the specific user, across the entire operating system, or both. <br/>The largest possible scope is set by the &lt;component&gt; element. For example, if a &lt;component&gt; element has a context of User and a &lt;rules&gt; element had a context of UserAndSystem, then the &lt;rules&gt; element would act as though it had a context of User. If the &lt;rules&gt; element had a context of System, it would act as though &lt;rules&gt; were not there. <ul><li>**User.** Evaluates the variables for each user.</li><li>**System.** Evaluates the variables only once for the system.</li><li>**UserAndSystem.** Evaluates the variables for the entire operating system and each user.</li></ul> |
 
-## <a href="" id="envex"></a>
+## Examples
 
 ### Example scenario 1
 
@@ -989,18 +971,17 @@ Then, you can specify the variable in an &lt;include&gt; rule as follows:
 </include>
 ```
 
-## <a href="" id="exclude"></a>&lt;exclude&gt;
-
+## &lt;exclude&gt;
 
 The &lt;exclude&gt; element determines what objects will not be migrated, unless there is a more specific &lt;include&gt; element that migrates an object. If there is an &lt;include&gt; and &lt;exclude&gt; element for the same object, the object will be included. For each &lt;exclude&gt; element there can be multiple child &lt;objectSet&gt; elements.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Child elements:**[&lt;objectSet&gt;](#objectset)
+- **Child elements:** [&lt;objectSet&gt;](#objectset)
 
--   **Helper functions:** You can use the following [&lt;exclude&gt; filter functions](#persistfilterfunctions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, NeverRestore, and SameRegContent.
+- **Helper functions:** You can use the following [&lt;exclude&gt; filter functions](#persistfilterfunctions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, NeverRestore, and SameRegContent.
 
 Syntax:
 
@@ -1012,7 +993,6 @@ Syntax:
 |Setting|Required?|Value|
 |--- |--- |--- |
 |filter|No <br/>(default = No)|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br/><br/>The script will be called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is TRUE, the object will be migrated. If it is FALSE, it will not be migrated.|
-
 
 For example, from the MigUser.xml file:
 
@@ -1026,16 +1006,15 @@ For example, from the MigUser.xml file:
 </exclude>
 ```
 
-## <a href="" id="excludeattributes"></a>&lt;excludeAttributes&gt;
-
+## &lt;excludeAttributes&gt;
 
 You can use the &lt;excludeAttributes&gt; element to determine which parameters associated with an object will not be migrated. If there are conflicts between the &lt;includeAttributes&gt; and &lt;excludeAttributes&gt; elements, the most specific pattern determines the patterns that will not be migrated. If an object does not have an &lt;includeAttributes&gt; or &lt;excludeAttributes&gt; element, then all of its parameters will be migrated.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Child elements:**[&lt;objectSet&gt;](#objectset)
+- **Child elements:** [&lt;objectSet&gt;](#objectset)
 
 Syntax:
 
@@ -1099,16 +1078,15 @@ Example:
 </migration>
 ```
 
-## <a href="" id="extensions"></a>&lt;extensions&gt;
-
+## &lt;extensions&gt;
 
 The &lt;extensions&gt; element is a container for one or more &lt;extension&gt; elements.
 
--   **Number of occurrences:** zero or one
+- **Number of occurrences:** zero or one
 
--   **Parent elements:**[&lt;component&gt;](#component)
+- **Parent elements:** [&lt;component&gt;](#component)
 
--   **Required child elements:**[&lt;extension&gt;](#extension)
+- **Required child elements:** [&lt;extension&gt;](#extension)
 
 Syntax:
 
@@ -1117,16 +1095,15 @@ Syntax:
 </extensions>
 ```
 
-## <a href="" id="extension"></a>&lt;extension&gt;
-
+## &lt;extension&gt;
 
 You can use the &lt;extension&gt; element to specify documents of a specific extension.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;extensions&gt;](#extensions)
+- **Parent elements:** [&lt;extensions&gt;](#extensions)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -1158,16 +1135,15 @@ is the same as specifying the following code below the &lt;rules&gt; element:
 
 For another example of how to use the &lt;extension&gt; element, see the example for [&lt;excludeAttributes&gt;](#excludeattributes).
 
-## <a href="" id="externalprocess"></a>&lt;externalProcess&gt;
-
+## &lt;externalProcess&gt;
 
 You can use the &lt;externalProcess&gt; element to run a command line during the migration process. For example, you may want to run a command after the LoadState process completes.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child elements:**[&lt;commandLine&gt;](#commandline)
+- **Required child elements:** [&lt;commandLine&gt;](#commandline)
 
 Syntax:
 
@@ -1182,21 +1158,21 @@ Syntax:
 
 For an example of how to use the &lt;externalProcess&gt; element, see the example for [&lt;excludeAttributes&gt;](#excludeattributes).
 
-## <a href="" id="icon"></a>&lt;icon&gt;
+## &lt;icon&gt;
 
 This is an internal USMT element. Do not use this element.
 
-## <a href="" id="include"></a>&lt;include&gt;
+## &lt;include&gt;
 
 The &lt;include&gt; element determines what to migrate, unless there is a more specific [&lt;exclude&gt;](#exclude) rule. You can specify a script to be more specific to extend the definition of what you want to collect. For each &lt;include&gt; element there can be multiple &lt;objectSet&gt; elements.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child element:**[&lt;objectSet&gt;](#objectset)
+- **Required child element:** [&lt;objectSet&gt;](#objectset)
 
--   **Helper functions:** You can use the following [&lt;include&gt; filter functions](#persistfilterfunctions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, and NeverRestore.
+- **Helper functions:** You can use the following [&lt;include&gt; filter functions](#persistfilterfunctions) with this element: CompareStringContent, IgnoreIrrelevantLinks, AnswerNo, and NeverRestore.
 
 Syntax:
 
@@ -1239,17 +1215,17 @@ The following example is from the MigUser.xml file:
     </component>
 ```
 
-### <a href="" id="persistfilterfunctions"></a>&lt;include&gt; and &lt;exclude&gt; filter functions
+### &lt;include&gt; and &lt;exclude&gt; filter functions
 
 The following functions return a Boolean value. You can use them to migrate certain objects based on when certain conditions are met.
 
--   **AnswerNo**
+- **AnswerNo**
 
     This filter always returns FALSE.
 
     Syntax: `AnswerNo ()`
 
--   **CompareStringContent**
+- **CompareStringContent**
 
     Syntax: `CompareStringContent("StringContent","CompareType")`
 
@@ -1258,7 +1234,7 @@ The following functions return a Boolean value. You can use them to migrate cert
     | *StringContent* | Yes | The string to check against. |
     | *CompareType* | Yes | A string. Use one of the following values: <ul><li>**Equal** (case insensitive). The function returns TRUE if the string representation of the current object that is processed by the migration engine is identical to `StringContent`.</li><li>**NULL** **or any other value**. The function returns TRUE if the string representation of the current object that is processed by the migration engine does not match `StringContent`.</li></ul> |
 
--   **IgnoreIrrelevantLinks**
+- **IgnoreIrrelevantLinks**
 
     This filter screens out the .lnk files that point to an object that is not valid on the destination computer. Note that the screening takes place on the destination computer, so all .lnk files will be saved to the store during ScanState. Then they will be screened out when you run the LoadState tool.
 
@@ -1274,7 +1250,7 @@ The following functions return a Boolean value. You can use them to migrate cert
     </include>
     ```
 
--   **NeverRestore**
+- **NeverRestore**
 
     You can use this function to collect the specified objects from the source computer but then not migrate the objects to the destination computer. When run with the ScanState tool, this function evaluates to TRUE. When run with the LoadState tool, this function evaluates to FALSE. You may want to use this function when you want to check an object's value on the destination computer but do not intend to migrate the object to the destination.
 
@@ -1290,16 +1266,15 @@ The following functions return a Boolean value. You can use them to migrate cert
     </include>
     ```
 
-## <a href="" id="includeattributes"></a>&lt;includeAttributes&gt;
-
+## &lt;includeAttributes&gt;
 
 You can use the &lt;includeAttributes&gt; element to determine whether certain parameters associated with an object will be migrated along with the object itself. If there are conflicts between the &lt;includeAttributes&gt; and &lt;excludeAttributes&gt; elements, the most specific pattern will determine which parameters will be migrated. If an object does not have an &lt;includeAttributes&gt; or &lt;excludeAttributes&gt; element, then all of its parameters will be migrated.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Child elements:**[&lt;objectSet&gt;](#objectset)
+- **Child elements:** [&lt;objectSet&gt;](#objectset)
 
 Syntax:
 
@@ -1314,19 +1289,19 @@ Syntax:
 
 For an example of how to use the &lt;includeAttributes&gt; element, see the example for [&lt;excludeAttributes&gt;](#excludeattributes).
 
-## <a href="" id="library"></a>&lt;library&gt;
+## &lt;library&gt;
 
 This is an internal USMT element. Do not use this element.
 
-## <a href="" id="location"></a>&lt;location&gt;
+## &lt;location&gt;
 
 The &lt;location&gt; element defines the location of the &lt;object&gt; element.
 
--   **Number of occurrences:** once for each &lt;object&gt;
+- **Number of occurrences:** once for each &lt;object&gt;
 
--   **Parent elements:**[&lt;object&gt;](#object)
+- **Parent elements:** [&lt;object&gt;](#object)
 
--   **Child elements:**[&lt;script&gt;](#script)
+- **Child elements:** [&lt;script&gt;](#script)
 
 Syntax:
 
@@ -1356,17 +1331,17 @@ The following example is from the MigApp.xml file:
 </addObjects>
 ```
 
-## <a href="" id="locationmodify"></a>&lt;locationModify&gt;
+## &lt;locationModify&gt;
 
 You can use the &lt;locationModify&gt; element to change the location and name of an object before it is migrated to the destination computer. The &lt;locationModify&gt; element is processed only when the LoadState tool is run on the destination computer. In other words, this element is ignored by the ScanState tool. The &lt;locationModify&gt; element will create the appropriate folder on the destination computer if it does not already exist.
 
 **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child element:**[&lt;objectSet&gt;](#objectset)
+- **Required child element:** [&lt;objectSet&gt;](#objectset)
 
--   **Helper functions:** You can use the following [&lt;locationModify&gt; functions](#locationmodifyfunctions) with this element: ExactMove, RelativeMove, and Move.
+- **Helper functions:** You can use the following [&lt;locationModify&gt; functions](#locationmodifyfunctions) with this element: ExactMove, RelativeMove, and Move.
 
 Syntax:
 
@@ -1389,7 +1364,7 @@ The following example is from the MigApp.xml file:
 </locationModify>
 ```
 
-### <a href="" id="locationmodifyfunctions"></a>&lt;locationModify&gt; functions
+### &lt;locationModify&gt; functions
 
 The following functions change the location of objects as they are migrated when using the &lt;locationModify&gt; element. These functions are called for every object that the parent &lt;ObjectSet&gt; element is enumerating. The &lt;locationModify&gt; element will create the appropriate folder on the destination computer if it does not already exist.
 
@@ -1413,7 +1388,7 @@ The following functions change the location of objects as they are migrated when
   </locationModify>
   ```
 
--   **Move**
+- **Move**
 
     The Move function moves objects to a different location on the destination computer. In addition, this function creates subdirectories that were above the longest CSIDL in the source object name.
 
@@ -1423,7 +1398,7 @@ The following functions change the location of objects as they are migrated when
     |--- |--- |--- |
     |*DestinationRoot*|Yes|The location where the source objects will be moved. If needed, this function will create any subdirectories that were above the longest CSIDL in the source object name.|
 
--   **RelativeMove**
+- **RelativeMove**
 
     You can use the RelativeMove function to collect and move data. Note that you can use environment variables in source and destination roots, but they may be defined differently on the source and destination computers.
 
@@ -1449,21 +1424,19 @@ For example:
 </locationModify>
 ```
 
-## <a href="" id="locdefinition"></a>&lt;\_locDefinition&gt;
-
+## &lt;\_locDefinition&gt;
 
 This is an internal USMT element. Do not use this element.
 
-## <a href="" id="manufacturer"></a>&lt;manufacturer&gt;
-
+## &lt;manufacturer&gt;
 
 The &lt;manufacturer&gt; element defines the manufacturer for the component, but does not affect the migration.
 
--   **Number of occurrences:** zero or one
+- **Number of occurrences:** zero or one
 
--   **Parent elements:**[&lt;component&gt;](#component)
+- **Parent elements:** [&lt;component&gt;](#component)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -1475,19 +1448,19 @@ Syntax:
 |--- |--- |--- |
 |*Name*|Yes|The name of the manufacturer for the component.|
 
-## <a href="" id="merge"></a>&lt;merge&gt;
+## &lt;merge&gt;
 
 The &lt;merge&gt; element determines what will happen when a collision occurs. A collision is when an object that is migrated is already present on the destination computer. If you do not specify this element, the default behavior for the registry is for the source object to overwrite the destination object. The default behavior for files is for the source file to be renamed to "OriginalFileName(1).OriginalExtension". This element specifies only what should be done when a collision occurs. It does not include objects. Therefore, for your objects to migrate, you must specify &lt;include&gt; rules along with the &lt;merge&gt; element. When an object is processed and a collision is detected, USMT will select the most specific merge rule and apply it to resolve the conflict. For example, if you have a &lt;merge&gt; rule C:\\\* \[\*\] set to &lt;sourcePriority&gt; and a &lt;merge&gt; rule C:\\subfolder\\\* \[\*\] set to &lt;destinationPriority&gt;, then USMT would use the &lt;destinationPriority&gt; rule because it is the more specific.
 
 For an example of this element, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child element:**[&lt;objectSet&gt;](#objectset)
+- **Required child element:** [&lt;objectSet&gt;](#objectset)
 
--   **Helper functions:** You can use the following [&lt;merge&gt; functions](#mergefunctions) with this element: SourcePriority, DestinationPriority, FindFilePlaceByPattern, LeafPattern, NewestVersion, HigherValue(), and LowerValue().
+- **Helper functions:** You can use the following [&lt;merge&gt; functions](#mergefunctions) with this element: SourcePriority, DestinationPriority, FindFilePlaceByPattern, LeafPattern, NewestVersion, HigherValue(), and LowerValue().
 
 Syntax:
 
@@ -1517,11 +1490,11 @@ The following example is from the MigUser.xml file:
 </rules>
 ```
 
-### <a href="" id="mergefunctions"></a>&lt;merge&gt; functions
+### &lt;merge&gt; functions
 
 These functions control how collisions are resolved.
 
--   **DestinationPriority**
+- **DestinationPriority**
 
     Specifies to keep the object that is on the destination computer and not migrate the object from the source computer.
 
@@ -1537,7 +1510,7 @@ These functions control how collisions are resolved.
     </merge>
     ```
 
--   **FindFilePlaceByPattern**
+- **FindFilePlaceByPattern**
 
     The FindFilePlaceByPattern function saves files with an incrementing counter when a collision occurs. It is a string that contains one of each constructs: &lt;F&gt;, &lt;E&gt;, &lt;N&gt; in any order.
 
@@ -1547,7 +1520,7 @@ These functions control how collisions are resolved.
     |--- |--- |--- |
     | *FilePattern* | Yes | <ul><li>**&lt;F&gt;** will be replaced by the original file name.</li><li>**&lt;N&gt;** will be replaced by an incrementing counter until there is no collision with the objects on the destination computer.</li><li>**&lt;E&gt;** will be replaced by the original file name extension.</li></ul> <br/>For example, `<F> (<N>).<E>` will change the source file MyDocument.doc into MyDocument (1).doc on the destination computer. |
 
--   **NewestVersion**
+- **NewestVersion**
 
     The NewestVersion function will resolve conflicts on the destination computer based on the version of the file.
 
@@ -1557,15 +1530,15 @@ These functions control how collisions are resolved.
     |--- |--- |--- |
     |*VersionTag*|Yes|The version field that will be checked. This can be "FileVersion" or "ProductVersion". The file with the highest *VersionTag* version determines which conflicts will be resolved based on the file's version. For example, if Myfile.txt contains FileVersion 1 and the same file on the destination computer contains FileVersion 2, the file on destination will remain.|
 
--   **HigherValue()**
+- **HigherValue()**
 
     You can use this function for merging registry values. The registry values will be evaluated as numeric values, and the one with the higher value will determine which registry values will be merged.
 
--   **LowerValue()**
+- **LowerValue()**
 
     You can use this function for merging registry values. The registry values will be evaluated as numeric values and the one with the lower value will determine which registry values will be merged.
 
--   **SourcePriority**
+- **SourcePriority**
 
     Specifies to migrate the object from the source computer, and to delete the object that is on the destination computer.
 
@@ -1581,17 +1554,17 @@ These functions control how collisions are resolved.
     </merge>
     ```
 
-## <a href="" id="migration"></a>&lt;migration&gt;
+## &lt;migration&gt;
 
 The &lt;migration&gt; element is the single root element of a migration .xml file and is required. Each .xml file must have a unique migration urlid. The urlid of each file that you specify on the command line must be unique. This is because USMT uses the urlid to define the components within the file. For example, you must specify the following at the beginning of each file: &lt;CustomFileName&gt; is the name of the file; for example, "CustomApp".
 
--   **Number of occurrences:** one
+- **Number of occurrences:** one
 
--   **Parent elements:** none
+- **Parent elements:** none
 
--   **Required child elements:**[&lt;component&gt;](#component)
+- **Required child elements:** [&lt;component&gt;](#component)
 
--   **Optional child elements:**[&lt;library&gt;](#library), [&lt;namedElements&gt;](#namedelements)
+- **Optional child elements:** [&lt;library&gt;](#library), [&lt;namedElements&gt;](#namedelements)
 
 Syntax:
 
@@ -1638,7 +1611,7 @@ This filter helper function can be used to filter the migration of files based o
 </component>
 ```
 
-## <a href="" id="namedelements"></a>&lt;namedElements&gt;
+## &lt;namedElements&gt;
 
 You can use the **&lt;namedElements&gt;** element to define named elements. You can use these elements in any component throughout your .xml file. For an example of how to use this element, see the MigApp.xml file.
 
@@ -1649,25 +1622,25 @@ Syntax:
 </namedElements>
 ```
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;migration&gt;](#migration)
+- **Parent elements:** [&lt;migration&gt;](#migration)
 
--   **Child elements:**[&lt;environment&gt;](#bkmk-environment), [&lt;rules&gt;](#rules), [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), &lt;detects&gt;, &lt;detect&gt;
+- **Child elements:** [&lt;environment&gt;](#bkmk-environment), [&lt;rules&gt;](#rules), [&lt;conditions&gt;](#conditions), [&lt;detection&gt;](#detection), &lt;detects&gt;, &lt;detect&gt;
 
 For an example of this element, see the MigApp.xml file.
 
-## <a href="" id="object"></a>&lt;object&gt;
+## &lt;object&gt;
 
 The &lt;object&gt; element represents a file or registry key.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;addObjects&gt;](#addobjects)
+- **Parent elements:** [&lt;addObjects&gt;](#addobjects)
 
--   **Required child elements:**[&lt;location&gt;](#location), [&lt;attributes&gt;](#attribute)
+- **Required child elements:** [&lt;location&gt;](#location), [&lt;attributes&gt;](#attribute)
 
--   **Optional child elements:**[&lt;bytes&gt;](#bytes)
+- **Optional child elements:** [&lt;bytes&gt;](#bytes)
 
 Syntax:
 
@@ -1693,18 +1666,17 @@ The following example is from the MigApp.xml file:
 </addObjects>
 ```
 
-## <a href="" id="objectset"></a>&lt;objectSet&gt;
-
+## &lt;objectSet&gt;
 
 The &lt;objectSet&gt; element contains a list of object patterns ; for example, file paths, registry locations, and so on. Any child &lt;conditions&gt; elements will be evaluated first. If all child &lt;conditions&gt; elements return FALSE, the &lt;objectSet&gt; element will evaluate to an empty set. For each parent element, there can be only multiple &lt;objectSet&gt; elements.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;variable&gt;](#variable), [&lt;content&gt;](#content), [&lt;include&gt;](#include), [&lt;exclude&gt;](#exclude), [&lt;merge&gt;](#merge), [&lt;contentModify&gt;](#contentmodify), [&lt;locationModify&gt;](#locationmodify), [&lt;destinationCleanup&gt;](#destinationcleanup), [&lt;includeAttributes&gt;](#includeattributes), [&lt;excludeAttributes&gt;](#excludeattributes), [&lt;unconditionalExclude&gt;](#unconditionalexclude), &lt;detect&gt;
+- **Parent elements:** [&lt;variable&gt;](#variable), [&lt;content&gt;](#content), [&lt;include&gt;](#include), [&lt;exclude&gt;](#exclude), [&lt;merge&gt;](#merge), [&lt;contentModify&gt;](#contentmodify), [&lt;locationModify&gt;](#locationmodify), [&lt;destinationCleanup&gt;](#destinationcleanup), [&lt;includeAttributes&gt;](#includeattributes), [&lt;excludeAttributes&gt;](#excludeattributes), [&lt;unconditionalExclude&gt;](#unconditionalexclude), &lt;detect&gt;
 
--   **Required child elements:** either [&lt;script&gt;](#script) or [&lt;pattern&gt;](#pattern)
+- **Required child elements:** either [&lt;script&gt;](#script) or [&lt;pattern&gt;](#pattern)
 
--   **Optional child elements:**[&lt;content&gt;](#content), [conditions](#conditions), &lt;condition&gt;
+- **Optional child elements:** [&lt;content&gt;](#content), [conditions](#conditions), &lt;condition&gt;
 
 Syntax:
 
@@ -1743,18 +1715,15 @@ The following example is from the MigUser.xml file:
 </component>
 ```
 
-## <a href="" id="path"></a>&lt;path&gt;
-
+## &lt;path&gt;
 
 This is an internal USMT element. Do not use this element.
 
-## <a href="" id="paths"></a>&lt;paths&gt;
-
+## &lt;paths&gt;
 
 This is an internal USMT element. Do not use this element.
 
 ## &lt;pattern&gt;
-
 
 You can use this element to specify multiple objects. You can specify multiple &lt;pattern&gt; elements for each &lt;objectSet&gt; element and they will be combined. If you are specifying files, you may want to use GenerateDrivePatterns with &lt;script&gt; instead. GenerateDrivePatterns is basically the same as a &lt;pattern&gt; rule, without the drive letter specification. For example, the following two lines of code are similar:
 
@@ -1763,11 +1732,11 @@ You can use this element to specify multiple objects. You can specify multiple &
 <script>MigXmlHelper.GenerateDrivePatterns("\Folder\* [Sample.doc]","Fixed"</script>
 ```
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;objectSet&gt;](#objectset)
+- **Parent elements:** [&lt;objectSet&gt;](#objectset)
 
--   **Child elements:** none but *Path* \[*object*\] must be valid.
+- **Child elements:** none but *Path* \[*object*\] must be valid.
 
 Syntax:
 
@@ -1782,45 +1751,45 @@ Syntax:
 
 For example:
 
--   To migrate a single registry key:
+- To migrate a single registry key:
 
     ```xml
     <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
     ```
 
--   To migrate the EngineeringDrafts folder and any subfolders from the C: drive:
+- To migrate the EngineeringDrafts folder and any subfolders from the C: drive:
 
     ```xml
     <pattern type="File">C:\EngineeringDrafts\* [*]</pattern>
     ```
 
--   To migrate only the EngineeringDrafts folder, excluding any subfolders, from the C: drive:
+- To migrate only the EngineeringDrafts folder, excluding any subfolders, from the C: drive:
 
     [Reroute Files and Settings](usmt-reroute-files-and-settings.md)
 
--   To migrate the Sample.doc file from C:\\EngineeringDrafts:
+- To migrate the Sample.doc file from C:\\EngineeringDrafts:
 
     ```xml
     <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
     ```
 
--   To migrate the Sample.doc file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
+- To migrate the Sample.doc file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
 
     ```xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
--   For more examples of how to use this element, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md), [Reroute Files and Settings](usmt-reroute-files-and-settings.md), [Include Files and Settings](usmt-include-files-and-settings.md), and [Custom XML Examples](usmt-custom-xml-examples.md).
+- For more examples of how to use this element, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md), [Reroute Files and Settings](usmt-reroute-files-and-settings.md), [Include Files and Settings](usmt-include-files-and-settings.md), and [Custom XML Examples](usmt-custom-xml-examples.md).
 
-## <a href="" id="processing"></a>&lt;processing&gt;
+## &lt;processing&gt;
 
 You can use this element to run a script during a specific point within the migration process. Return values are not expected from the scripts that you specify, and if there are return values, they will be ignored.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Required child element:**[&lt;script&gt;](#script)
+- **Required child element:** [&lt;script&gt;](#script)
 
 Syntax:
 
@@ -1833,21 +1802,21 @@ Syntax:
 |--- |--- |--- |
 | when | Yes | Indicates when the script should be run. This value can be one of the following: <ul><li>**pre-scan** means before the scanning process begins.</li><li>**scan-success** means after the scanning process has finished successfully.</li><li>**post-scan** means after the scanning process has finished, whether it was successful or not.</li><li>**pre-apply** means before the apply process begins.</li><li>**apply-success** means after the apply process has finished successfully.</li><li>**post-apply** means after the apply process has finished, whether it was successful or not.</li></ul> |
 
-## <a href="" id="plugin"></a>&lt;plugin&gt;
+## &lt;plugin&gt;
 
 This is an internal USMT element. Do not use this element.
 
-## <a href="" id="role"></a>&lt;role&gt;
+## &lt;role&gt;
 
 The &lt;role&gt; element is required in a custom .xml file. By specifying the &lt;role&gt; element, you can create a concrete component. The component will be defined by the parameters specified at the &lt;component&gt; level, and with the role that you specify here.
 
--   **Number of occurrences:** Each &lt;component&gt; can have one, two or three child &lt;role&gt; elements.
+- **Number of occurrences:** Each &lt;component&gt; can have one, two or three child &lt;role&gt; elements.
 
--   **Parent elements:**[&lt;component&gt;](#component), [&lt;role&gt;](#role)
+- **Parent elements:** [&lt;component&gt;](#component), [&lt;role&gt;](#role)
 
--   **Required child elements:**[&lt;rules&gt;](#rules)
+- **Required child elements:** [&lt;rules&gt;](#rules)
 
--   **Optional child elements:**[&lt;environment&gt;](#bkmk-environment), [&lt;detection&gt;](#detection), [&lt;component&gt;](#component), [&lt;role&gt;](#role), &lt;detects&gt;, &lt;plugin&gt;,
+- **Optional child elements:** [&lt;environment&gt;](#bkmk-environment), [&lt;detection&gt;](#detection), [&lt;component&gt;](#component), [&lt;role&gt;](#role), &lt;detects&gt;, &lt;plugin&gt;,
 
 Syntax:
 
@@ -1891,18 +1860,17 @@ The following example is from the MigUser.xml file. For more examples, see the M
 </component>
 ```
 
-## <a href="" id="rules"></a>&lt;rules&gt;
-
+## &lt;rules&gt;
 
 The &lt;rules&gt; element is required in a custom .xml file. This element contains rules that will run during the migration if the parent &lt;component&gt; element is selected, unless the child &lt;conditions&gt; element, if present, evaluates to FALSE. For each &lt;rules&gt; element there can be multiple child &lt;rules&gt; elements.
 
--   **Number of occurrences:** unlimited
+- **Number of occurrences:** unlimited
 
--   **Parent elements:**[&lt;role&gt;](#role), [&lt;rules&gt;](#rules), [&lt;namedElements&gt;](#namedelements)
+- **Parent elements:** [&lt;role&gt;](#role), [&lt;rules&gt;](#rules), [&lt;namedElements&gt;](#namedelements)
 
--   **Required child elements:**[&lt;include&gt;](#include)
+- **Required child elements:** [&lt;include&gt;](#include)
 
--   **Optional child elements:**[&lt;rules&gt;](#rules), [&lt;exclude&gt;](#exclude), [&lt;unconditionalExclude&gt;](#unconditionalexclude),[&lt;merge&gt;](#merge), [&lt;contentModify&gt;](#contentmodify), [&lt;locationModify&gt;](#locationmodify), [&lt;destinationCleanup&gt;](#destinationcleanup), [&lt;addObjects&gt;](#addobjects), [&lt;externalProcess&gt;](#externalprocess), [&lt;processing&gt;](#processing), [&lt;includeAttributes&gt;](#includeattributes), [&lt;excludeAttributes&gt;](#excludeattributes), [conditions](#conditions), &lt;detects&gt;
+- **Optional child elements:** [&lt;rules&gt;](#rules), [&lt;exclude&gt;](#exclude), [&lt;unconditionalExclude&gt;](#unconditionalexclude),[&lt;merge&gt;](#merge), [&lt;contentModify&gt;](#contentmodify), [&lt;locationModify&gt;](#locationmodify), [&lt;destinationCleanup&gt;](#destinationcleanup), [&lt;addObjects&gt;](#addobjects), [&lt;externalProcess&gt;](#externalprocess), [&lt;processing&gt;](#processing), [&lt;includeAttributes&gt;](#includeattributes), [&lt;excludeAttributes&gt;](#excludeattributes), [conditions](#conditions), &lt;detects&gt;
 
 Syntax:
 
@@ -1946,40 +1914,39 @@ The following example is from the MigUser.xml file:
 </component>
 ```
 
-## <a href="" id="script"></a>&lt;script&gt;
-
+## &lt;script&gt;
 
 The return value that is required by &lt;script&gt; depends on the parent element.
 
 **Number of occurrences:** Once for [&lt;variable&gt;](#variable), unlimited for [&lt;objectSet&gt;](#objectset) and [&lt;processing&gt;](#processing)
 
-**Parent elements:**[&lt;objectSet&gt;](#objectset), [&lt;variable&gt;](#variable), [&lt;processing&gt;](#processing)
+**Parent elements:** [&lt;objectSet&gt;](#objectset), [&lt;variable&gt;](#variable), [&lt;processing&gt;](#processing)
 
 **Child elements:** none
 
 **Syntax and helper functions:**
 
--   General Syntax: `<script>ScriptWithArguments</script>`
+- General Syntax: `<script>ScriptWithArguments</script>`
 
--   You can use [GetStringContent](#scriptfunctions) when &lt;script&gt; is within &lt;variable&gt;.
+- You can use [GetStringContent](#scriptfunctions) when &lt;script&gt; is within &lt;variable&gt;.
 
     Syntax: `<script>MigXmlHelper.GetStringContent("ObjectType","EncodedLocationPattern", "ExpandContent")</script>`
 
     Example: `<script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
 
--   You can use [GenerateUserPatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
+- You can use [GenerateUserPatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
     Syntax: `<script>MigXmlHelper.GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")</script>`
 
     Example: `<script>MigXmlHelper.GenerateUserPatterns ("File","%USERPROFILE%\* [*.doc]", "FALSE")</script>`
 
--   You can use [GenerateDrivePatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
+- You can use [GenerateDrivePatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
     Syntax: `<script>MigXmlHelper.GenerateDrivePatterns("PatternSegment","DriveType")</script>`
 
     Example: `<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>`
 
--   You can use the [Simple executing scripts](#scriptfunctions) with &lt;script&gt; elements that are within &lt;processing&gt; elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
+- You can use the [Simple executing scripts](#scriptfunctions) with &lt;script&gt; elements that are within &lt;processing&gt; elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
 
     Syntax: `<script>MigXmlHelper.ExecutingScript</script>`
 
@@ -1999,19 +1966,19 @@ To migrate the Sample.doc file from any drive on the source computer, use &lt;sc
 
 For more examples of how to use this element, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md), [Reroute Files and Settings](usmt-reroute-files-and-settings.md), and [Custom XML Examples](usmt-custom-xml-examples.md).
 
-### <a href="" id="scriptfunctions"></a>&lt;script&gt; functions
+### &lt;script&gt; functions
 
 You can use the following functions with the &lt;script&gt; element
 
--   [String and pattern generating functions](#stringgeneratingfunctions)
+- [String and pattern generating functions](#stringgeneratingfunctions)
 
--   [Simple executing scripts](#simple)
+- [Simple executing scripts](#simple)
 
-### <a href="" id="stringgeneratingfunctions"></a>String and pattern generating functions
+### String and pattern generating functions
 
 These functions return either a string or a pattern.
 
--   **GetStringContent**
+- **GetStringContent**
 
     You can use GetStringContent with &lt;script&gt; elements that are within &lt;variable&gt; elements. If possible, this function returns the string representation of the given object. Otherwise, it returns NULL. For file objects this function always returns NULL.
 
@@ -2048,11 +2015,11 @@ These functions return either a string or a pattern.
 
   The function will iterate through all users that are being migrated, excluding the currently processed user if &lt;ProcessCurrentUser&gt; is FALSE, and will expand the specified pattern in the context of each user. For example, if users A, B and C have profiles in C:\\Documents and Settings), by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function will generate the following three patterns:
 
-  -   "C:\\Documents and Settings\\A\\\* \[\*.doc\]"
+  - "C:\\Documents and Settings\\A\\\* \[\*.doc\]"
 
-  -   "C:\\Documents and Settings\\B\\\* \[\*.doc\]"
+  - "C:\\Documents and Settings\\B\\\* \[\*.doc\]"
 
-  -   "C:\\Documents and Settings\\C\\\* \[\*.doc\]"
+  - "C:\\Documents and Settings\\C\\\* \[\*.doc\]"
 
   Syntax: `GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")`
 
@@ -2126,11 +2093,11 @@ This helper function invokes the document finder to scan the system for all file
   </component>
 ```
 
-### <a href="" id="simple"></a>Simple executing scripts
+### Simple executing scripts
 
 The following scripts have no return value. You can use the following errors with &lt;script&gt; elements that are within &lt;processing&gt; elements
 
--   **AskForLogoff()**. Prompts the user to log off at the end of the migration. For example:
+- **AskForLogoff()**. Prompts the user to log off at the end of the migration. For example:
 
   ```xml
   <processing when="apply-success">
@@ -2138,9 +2105,9 @@ The following scripts have no return value. You can use the following errors wit
   </processing>
   ```
 
--   **ConvertToShortFileName(RegistryEncodedLocation)**. If *RegistryEncodedLocation* is the full path of an existing file, this function will convert the file to its short file name and then it will update the registry value.
+- **ConvertToShortFileName(RegistryEncodedLocation)**. If *RegistryEncodedLocation* is the full path of an existing file, this function will convert the file to its short file name and then it will update the registry value.
 
--   **KillExplorer()**. Stops Explorer.exe for the current user context. This allows access to certain keys and files that are kept open when Explorer.exe is running. For example:
+- **KillExplorer()**. Stops Explorer.exe for the current user context. This allows access to certain keys and files that are kept open when Explorer.exe is running. For example:
 
   ```xml
   <processing when="pre-apply">
@@ -2148,7 +2115,7 @@ The following scripts have no return value. You can use the following errors wit
   </processing>
   ```
 
--   **RegisterFonts(FileEncodedLocation)**. Registers the given font or all of the fonts in the given directory. For example:
+- **RegisterFonts(FileEncodedLocation)**. Registers the given font or all of the fonts in the given directory. For example:
 
  ```xml
   <processing when="apply-success">
@@ -2156,9 +2123,9 @@ The following scripts have no return value. You can use the following errors wit
   </processing>
   ```
 
--   **RemoveEmptyDirectories (DirectoryEncodedPattern).** Deletes any empty directories that match *DirectoryEncodedPattern* on the destination computer.
+- **RemoveEmptyDirectories (DirectoryEncodedPattern).** Deletes any empty directories that match *DirectoryEncodedPattern* on the destination computer.
 
--   **RestartExplorer().** Restarts Explorer.exe at the end of the migration. For example:
+- **RestartExplorer().** Restarts Explorer.exe at the end of the migration. For example:
 
   ```xml
   <processing when="post-apply">
@@ -2166,22 +2133,21 @@ The following scripts have no return value. You can use the following errors wit
   </processing>
   ```
 
--   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](/windows/win32/api/winsvc/nf-winsvc-startservicea).
+- **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](/windows/win32/api/winsvc/nf-winsvc-startservicea).
 
--   **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service.
+- **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service.
 
--   **SyncSCM(ServiceShortName).** Reads the Start type value from the registry (HKLM\\System\\CurrentControlSet\\Services\\ServiceShortName \[Start\]) after it is changed by the migration engine, and then synchronizes Service Control Manager (SCM) with the new value.
+- **SyncSCM(ServiceShortName).** Reads the Start type value from the registry (HKLM\\System\\CurrentControlSet\\Services\\ServiceShortName \[Start\]) after it is changed by the migration engine, and then synchronizes Service Control Manager (SCM) with the new value.
 
-## <a href="" id="text"></a>&lt;text&gt;
-
+## &lt;text&gt;
 
 You can use the &lt;text&gt; element to set a value for any environment variables that are inside one of the migration .xml files.
 
--   **Number of occurrences:** Once in each [&lt;variable&gt;](#variable) element.
+- **Number of occurrences:** Once in each [&lt;variable&gt;](#variable) element.
 
--   **Parent elements:**[&lt;variable&gt;](#variable)
+- **Parent elements:** [&lt;variable&gt;](#variable)
 
--   **Child elements:** None.
+- **Child elements:** None.
 
 Syntax:
 
@@ -2201,18 +2167,17 @@ For example:
 </variable>
 ```
 
-## <a href="" id="unconditionalexclude"></a>&lt;unconditionalExclude&gt;
-
+## &lt;unconditionalExclude&gt;
 
 The &lt;unconditionalExclude&gt; element excludes the specified files and registry values from the migration, regardless of the other include rules in any of the migration .xml files or in the Config.xml file. The objects declared here will not be migrated because this element takes precedence over all other rules. For example, even if there are explicit &lt;include&gt; rules to include .mp3 files, if you specify to exclude them with this option, then they will not be migrated.
 
 Use this element if you want to exclude all .mp3 files from the source computer. Or, if you are backing up C:\\UserData using another method, you can exclude the entire folder from the migration. Use this element with caution, however, because if an application needs a file that you exclude, the application may not function properly on the destination computer.
 
--   **Number of occurrences:** Unlimited.
+- **Number of occurrences:** Unlimited.
 
--   **Parent elements:**[&lt;rules&gt;](#rules)
+- **Parent elements:** [&lt;rules&gt;](#rules)
 
--   **Child elements:**[&lt;objectSet&gt;](#objectset)
+- **Child elements:** [&lt;objectSet&gt;](#objectset)
 
 Syntax:
 
@@ -2239,8 +2204,7 @@ The following .xml file excludes all .mp3 files from migration. For additional e
 </migration>
 ```
 
-## <a href="" id="variable"></a>&lt;variable&gt;
-
+## &lt;variable&gt;
 
 The &lt;variable&gt; element is required in an &lt;environment&gt; element. For each &lt;variable&gt; element there must be one &lt;objectSet&gt;, &lt;script&gt;, or &lt;text&gt; element. The content of the &lt;variable&gt; element assigns a text value to the environment variable. This element has the following three options:
 
@@ -2250,11 +2214,11 @@ The &lt;variable&gt; element is required in an &lt;environment&gt; element. For 
 
 3.  If the &lt;variable&gt; element contains an &lt;objectSet&gt; element and the evaluation of the &lt;objectSet&gt; element produces at least one object pattern, then the value of the first object to match the resulting object pattern will be the value of the variable element.
 
--   **Number of occurrences:** Unlimited
+- **Number of occurrences:** Unlimited
 
--   **Parent elements:**[&lt;environment&gt;](#bkmk-environment)
+- **Parent elements:** [&lt;environment&gt;](#bkmk-environment)
 
--   **Required child elements:** either [&lt;text&gt;](#text), or [&lt;script&gt;](#script), or [&lt;objectSet&gt;](#objectset)
+- **Required child elements:** either [&lt;text&gt;](#text), or [&lt;script&gt;](#script), or [&lt;objectSet&gt;](#objectset)
 
 Syntax:
 
@@ -2281,16 +2245,15 @@ The following example is from the MigApp.xml file:
 </environment>
 ```
 
-## <a href="" id="version"></a>&lt;version&gt;
-
+## &lt;version&gt;
 
 The &lt;version&gt; element defines the version for the component, but does not affect the migration.
 
--   **Number of occurrences:** zero or one
+- **Number of occurrences:** zero or one
 
--   **Parent elements:**[&lt;component&gt;](#component)
+- **Parent elements:** [&lt;component&gt;](#component)
 
--   **Child elements:** none
+- **Child elements:** none
 
 Syntax:
 
@@ -2308,80 +2271,80 @@ For example:
 <version>4.*</version>
 ```
 
-## <a href="" id="windowsobjects"></a>&lt;windowsObjects&gt;
+## &lt;windowsObjects&gt;
 
 The &lt;windowsObjects&gt; element is for USMT internal use only. Do not use this element.
 
 ## Appendix
 
-### <a href="" id="locations"></a>Specifying locations
+### Specifying locations
 
--   **Specifying encoded locations**. The encoded location used in all of the helper functions is an unambiguous string representation for the name of an object. It is composed of the node part, optionally followed by the leaf enclosed in square brackets. This makes a clear distinction between nodes and leaves.
+- **Specifying encoded locations**. The encoded location used in all of the helper functions is an unambiguous string representation for the name of an object. It is composed of the node part, optionally followed by the leaf enclosed in square brackets. This makes a clear distinction between nodes and leaves.
 
     For example, specify the file C:\\Windows\\Notepad.exe like this: `c:\Windows[Notepad.exe]`. Similarly, specify the directory C:\\Windows\\System32 like this: `c:\Windows\System32`. (Notice the absence of the \[\] construct.)
 
     Representing the registry is very similar. The default value of a registry key is represented as an empty \[\] construct. For example, the default value for the HKLM\\SOFTWARE\\MyKey registry key will be `HKLM\SOFTWARE\MyKey[]`.
 
--   **Specifying location patterns**. You specify a location pattern in a way that is similar to how you specify an actual location. The exception is that both the node and leaf part accept patterns. However, a pattern from the node does not extend to the leaf.
+- **Specifying location patterns**. You specify a location pattern in a way that is similar to how you specify an actual location. The exception is that both the node and leaf part accept patterns. However, a pattern from the node does not extend to the leaf.
 
     For example, the pattern `c:\Windows\*` will match the Windows directory and all subdirectories. But it will not match any of the files in those directories. To match the files as well, you must specify `c:\Windows\*[*]`.
 
-### <a href="" id="internalusmtfunctions"></a>Internal USMT functions
+### Internal USMT functions
 
 The following functions are for internal USMT use only. Do not use them in an .xml file.
 
--   AntiAlias
+- AntiAlias
 
--   ConvertScreenSaver
+- ConvertScreenSaver
 
--   ConvertShowIEOnDesktop
+- ConvertShowIEOnDesktop
 
--   ConvertToOfficeLangID
+- ConvertToOfficeLangID
 
--   MigrateActiveDesktop
+- MigrateActiveDesktop
 
--   MigrateAppearanceUPM
+- MigrateAppearanceUPM
 
--   MigrateDisplayCS
+- MigrateDisplayCS
 
--   MigrateDisplaySS
+- MigrateDisplaySS
 
--   MigrateIEAutoSearch
+- MigrateIEAutoSearch
 
--   MigrateMouseUPM
+- MigrateMouseUPM
 
--   MigrateSoundSysTray
+- MigrateSoundSysTray
 
--   MigrateTaskBarSS
+- MigrateTaskBarSS
 
--   SetPstPathInMapiStruc
+- SetPstPathInMapiStruc
 
-### <a href="" id="allowed"></a>Valid version tags
+### Valid version tags
 
 You can use the following version tags with various helper functions:
 
--   "CompanyName"
+- "CompanyName"
 
--   "FileDescription"
+- "FileDescription"
 
--   "FileVersion"
+- "FileVersion"
 
--   "InternalName"
+- "InternalName"
 
--   "LegalCopyright"
+- "LegalCopyright"
 
--   "OriginalFilename"
+- "OriginalFilename"
 
--   "ProductName"
+- "ProductName"
 
--   "ProductVersion"
+- "ProductVersion"
 
 The following version tags contain values that can be compared:
 
--   "FileVersion"
+- "FileVersion"
 
--   "ProductVersion"
+- "ProductVersion"
 
-## Related topics
+## Related articles
 
-[USMT XML Reference](usmt-xml-reference.md)
+[USMT XML reference](usmt-xml-reference.md)
