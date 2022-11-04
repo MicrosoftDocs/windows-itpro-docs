@@ -8,6 +8,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
+ms.technology: itpro-manage
 ---
 
 # Manage Device Installation with Group Policy
@@ -214,7 +215,7 @@ Some of these policies take precedence over other policies. The flowchart shown 
 
 ### General
 
-To complete each of the scenarios, ensure your have:
+To complete each of the scenarios, ensure you have:
 
 - A client computer running Windows.
 
