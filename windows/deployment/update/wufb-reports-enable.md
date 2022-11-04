@@ -24,7 +24,7 @@ After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you 
 1. [Add Windows Update for Business reports](#bkmk_add) to your Azure subscription. This step has the following phases:
    1. [Select or create a new Log Analytics workspace](#bkmk_workspace) for use with Windows Update for Business reports.
    1. Enroll into Windows Update for Business reports using one of the following methods:
-      - Enroll through the [workbook](#bkmk_enroll) (preferred method)
+      - Enroll through the [Azure Workbook](#bkmk_enroll) (preferred method)
       - Enroll from the [Microsoft 365 admin center](#bkmk_admin-center).
 
 1. Configure the clients to send data to Windows Update for Business reports. You can configure clients in the following three ways:
@@ -52,23 +52,29 @@ Windows Update for Business reports uses an [Azure Log Analytics workspaces](/az
 
 > [!Note]
 > - You can only map one tenant to one Log Analytics workspace. Mapping one tenant to multiple workspaces isn't supported.
-> - If you change the Log Analytics workspace for Windows Update for Business reports, stale data will be displayed for about 24 hours until the new workspace is fully onboarded. You will also need to reconfigure the Windows Update for Business reports settings.
+> - If you change the Log Analytics workspace for Windows Update for Business reports, stale data will be displayed for about 24 hours until the new workspace is fully onboarded. You will also need to reconfigure the Windows Update for Business reports settings to enroll again.
 
 ### <a name="bkmk_enroll"></a> Enroll into Windows Update for Business reports
 
-Enroll into Windows Update for Business reports by configuring its settings through either the Azure Monitor workbook or from the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by Updates Compliance, the predecessor of Windows Update for Business reports. This step is needed even if you enabled previews of Update Compliance.  
+Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by Updates Compliance, the predecessor of Windows Update for Business reports. This step is needed even if you enabled previews of Update Compliance.  
 
 Use one of the following methods to enroll into Windows Update for Business reports:
-#### <a name="bkmk_enroll-workbook"></a> Enroll through the Azure Monitor workbook (preferred method)
 
+#### <a name="bkmk_enroll-workbook"></a> Enroll through the Azure Workbook (recommended method)
+
+1. In the [Azure portal](https://portal.azure.com), select **Monitor** > **Workbooks** from the menu bar.
+   - You can also type **Monitor** in the search bar. As you begin typing, the list filters based on your input.
+
+1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
+1. Select the **Get started** button when prompted by the workbook to open the **Windows Update for Business reports enrollment** flyout.
+1. In the flyout, specify which **Subscription** and **Azure Log Analytics Workspace** you want to use for Windows Update for Business reports.
+   - If you need to create a new Log Analytics workspace, select **Create new workspace** and follow the prompts to [create a new workspace](#bkmk_workspace).
+1. Select **Save settings** to save the settings and enroll into Windows Update for Business reports.
+1. The initial setup can take up to 24 hours. During this time, the workbook will display that it's **Waiting for Windows Update for Business reports data**.
 
 #### <a name="bkmk_admin-center"></a> Enroll through the Microsoft 365 admin center
-
-Finish enabling Updates Compliance by configuring its settings through the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by the earlier version of Updates Compliance. This step is needed even if you enabled previews of Update Compliance.  
-
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]
-
 
 ## Next steps
 

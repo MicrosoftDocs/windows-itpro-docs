@@ -19,11 +19,12 @@ ms.technology: itpro-updates
 > [!IMPORTANT]
 > As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](wufb-reports-enable.md#bkmk_admin-center). 
 
-[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy to use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
+[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy to use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into four tab sections:
 
 - [Summary](#summary-tab)
 - [Quality updates](#quality-updates-tab)
 - [Feature updates](#feature-updates-tab)
+- [Delivery Optimization](#bkmk_do)
 
 :::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
@@ -131,7 +132,7 @@ The **Update status** group for feature updates contains the following items:
 |**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  |
 | **Total Devices** | Count of devices for each targeted operating system version that have been offered the update, or are installing, have installed, or canceled the feature update.| Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
 
-### <a name="bkmk_device-group-feature"></a>Device status group for feature updates
+### <a name="bkmk_device-group-feature"></a> Device status group for feature updates
 
 The **Device status** group for feature updates contains the following items:
 
@@ -140,7 +141,7 @@ The **Device status** group for feature updates contains the following items:
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
-## Delivery Optimization (preview tab)
+## <a name="bkmk_do"></a> Delivery Optimization (preview tab)
 
 The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes Microsoft Connected Cache (MCC) information.
 
@@ -160,7 +161,6 @@ The Delivery Optimization tab is further divided into the following groups:
 ## Customize the workbook
 
 Since the Windows Update for Business reports workbook is an [Azure Workbook template](/azure/azure-monitor/visualize/workbooks-templates), it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
-
 
 ## Next steps
 
