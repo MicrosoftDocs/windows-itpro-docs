@@ -45,32 +45,40 @@ You can obtain more information about any listed **Windows** system error codes 
 
 The following information lists each return code by numeric value, along with the associated error messages and suggested troubleshooting actions.
 
-### **0: USMT_SUCCESS**
+### 0: USMT_SUCCESS
+
+- **Category**: Success or User Cancel
 
 | Error message | Troubleshooting, mitigation, workarounds |
   | --- |  --- |
   | **Successful run** | NA |
 
-### **1: USMT_DISPLAY_HELP**
+### 1: USMT_DISPLAY_HELP
+
+- **Category**: Success or User Cancel
 
 | Error message | Troubleshooting, mitigation, workarounds |
 | --- |  --- |
 | **Command line help requested** | NA |
 
-### **2: USMT_STATUS_CANCELED**
+### 2: USMT_STATUS_CANCELED
+
+- **Category**: Success or User Cancel
 
 | Error message | Troubleshooting, mitigation, workarounds |
 | --- |  --- |
 | **Gather was aborted because of an EFS file** | NA |
 | **User chose to cancel (such as pressing CTRL+C)** | NA |
 
-### **3: USMT_WOULD_HAVE_FAILED**
+### 3: USMT_WOULD_HAVE_FAILED
+
+- **Category**:
 
 | Error message | Troubleshooting, mitigation, workarounds |
 | --- |  --- |
 | **At least one error was skipped as a result of /c.** | Review ScanState, LoadState, or UsmtUtils log for details about command-line errors. |
 
-### **11: USMT_INVALID_PARAMETERS**
+### 11: USMT_INVALID_PARAMETERS
 
 - **Category**: Invalid Command Lines
 
@@ -116,7 +124,7 @@ The following information lists each return code by numeric value, along with th
 | **Volume shadow copy feature is not supported with a hardlink store** | Review ScanState log or LoadState log for details about command-line errors. |
 | **Wait delay argument must be an integer** | Review ScanState log or LoadState log for details about command-line errors. |
 
-### **12: USMT_ERROR_OPTION_PARAM_TOO_LARGE**
+### 12: USMT_ERROR_OPTION_PARAM_TOO_LARGE
 
 - **Category**: Invalid Command Lines
 
@@ -125,7 +133,7 @@ The following information lists each return code by numeric value, along with th
 | **Command line arguments cannot exceed 256 characters** | Review ScanState log or LoadState log for details about command-line errors. |
 | **Specified settings store path exceeds the maximum allowed length of 256 characters** | Review ScanState log or LoadState log for details about command-line errors. |
 
-### **13: USMT_INIT_LOGFILE_FAILED**
+### 13: USMT_INIT_LOGFILE_FAILED
 
 - **Category**: Invalid Command Lines
 
@@ -133,7 +141,7 @@ The following information lists each return code by numeric value, along with th
 | --- |  --- |
 | **Log path argument is invalid for /l** | When /l is specified in the ScanState command line, USMT validates the path. Verify that the drive and other information, for example file system characters, are correct. |
 
-### **14: USMT_ERROR_USE_LAC**
+### 14: USMT_ERROR_USE_LAC
 
 - **Category**: Invalid Command Lines
 
@@ -141,7 +149,7 @@ The following information lists each return code by numeric value, along with th
 | --- |  --- |
 | **Unable to create a local account because /lac was not specified** | When creating local accounts, the command-line options /lac and /lae should be used. |
 
-### **26: USMT_INIT_ERROR**
+### 26: USMT_INIT_ERROR
 
 - **Category**: Setup and Initialization
 
@@ -151,22 +159,22 @@ The following information lists each return code by numeric value, along with th
 | **Software malfunction or unknown exception** | Check all loaded .xml files for errors, common error when using /I to load the Config.xml file. |
 | **Unable to find a valid Windows directory to proceed with requested offline operation; Check if offline input file is present and has valid entries** | Verify that the offline input file is present and that it has valid entries. USMT could not find valid offline operating system. Verify your offline directory mapping. |
 
-### **27: USMT_INVALID_STORE_LOCATION**
+### 27: USMT_INVALID_STORE_LOCATION
 
 - **Category**: Setup and Initialization
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **A store path can't be used because an existing store exists; specify /o to overwrite** | Specify /o to overwrite an existing intermediate or migration store. |
-  | **A store path is missing or has incomplete data** | Make sure that the store path is accessible and that the proper permission levels are set. |
-  | **An error occurred during store creation** | Make sure that the store path is accessible and that the proper permission levels are set. Specify /o to overwrite an existing intermediate or migration store. |
-  | **An inappropriate device such as a floppy disk was specified for the store** | Make sure that the store path is accessible and that the proper permission levels are set. |
-  | **Invalid store path; check the store parameter and/or file system permissions** | Invalid store path; check the store parameter and/or file system permissions. |
-  | **The file layout and/or file content is not recognized as a valid store** | Make sure that the store path is accessible and that the proper permission levels are set. Specify /o to overwrite an existing intermediate or migration store. |
-  | **The store path holds a store incompatible with the current USMT version** | Make sure that the store path is accessible and that the proper permission levels are set. |
-  | **The store save location is read-only or does not support a requested storage option** | Make sure that the store path is accessible and that the proper permission levels are set. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **A store path can't be used because an existing store exists; specify /o to overwrite** | Specify /o to overwrite an existing intermediate or migration store. |
+| **A store path is missing or has incomplete data** | Make sure that the store path is accessible and that the proper permission levels are set. |
+| **An error occurred during store creation** | Make sure that the store path is accessible and that the proper permission levels are set. Specify /o to overwrite an existing intermediate or migration store. |
+| **An inappropriate device such as a floppy disk was specified for the store** | Make sure that the store path is accessible and that the proper permission levels are set. |
+| **Invalid store path; check the store parameter and/or file system permissions** | Invalid store path; check the store parameter and/or file system permissions. |
+| **The file layout and/or file content is not recognized as a valid store** | Make sure that the store path is accessible and that the proper permission levels are set. Specify /o to overwrite an existing intermediate or migration store. |
+| **The store path holds a store incompatible with the current USMT version** | Make sure that the store path is accessible and that the proper permission levels are set. |
+| **The store save location is read-only or does not support a requested storage option** | Make sure that the store path is accessible and that the proper permission levels are set. |
 
-### **28: USMT_UNABLE_GET_SCRIPTFILES**
+### 28: USMT_UNABLE_GET_SCRIPTFILES
 
 - **Category**: Setup and Initialization
 
@@ -175,7 +183,7 @@ The following information lists each return code by numeric value, along with th
 | **Script file is invalid for /i** | Check all specified migration .xml files for errors. This is a common error when using /i to load the Config.xml file. |
 | **Unable to find a script file specified by /i** | Verify the location of your script files, and ensure that the command-line options are correct. |
 
-### **29: USMT_FAILED_MIGSTARTUP**
+### 29: USMT_FAILED_MIGSTARTUP
 
 - **Category**: Setup and Initialization
 
@@ -187,7 +195,7 @@ The following information lists each return code by numeric value, along with th
 | **Migration failed because of an XML error; look in the log for specific details** | Check the ScanState log file for migration .xml file errors. |
 | **Unable to automatically map the drive letters to match the online drive letter layout; Use /offline to provide a mapping table** | Check the ScanState log file for migration .xml file errors. |
 
-### **31: USMT_UNABLE_FINDMIGUNITS**
+### 31: USMT_UNABLE_FINDMIGUNITS
 
 - **Category**: Setup and Initialization
 
@@ -196,7 +204,7 @@ The following information lists each return code by numeric value, along with th
 | **An error occurred during the discover phase; the log should have more specific information** | Check the ScanState log file for migration .xml file errors. |
 
 
-### **32: USMT_FAILED_SETMIGRATIONTYPE**
+### 32: USMT_FAILED_SETMIGRATIONTYPE
 
 - **Category**: Setup and Initialization
 
@@ -205,7 +213,7 @@ The following information lists each return code by numeric value, along with th
 | **An error occurred processing the migration system** | Check the ScanState log file for migration .xml file errors, or use online Help by typing /? on the command line. |
 
 
-### **33: USMT_UNABLE_READKEY**
+### 33: USMT_UNABLE_READKEY
 
 - **Category**: Setup and Initialization
 
@@ -214,104 +222,119 @@ The following information lists each return code by numeric value, along with th
 | **Error accessing the file specified by the /keyfile parameter** | Check the ScanState log file for migration .xml file errors, or use online Help by typing /? on the command line. |
 | **The encryption key must have at least one character** | Check the ScanState log file for migration .xml file errors, or use online Help by typing /? on the command line. |
 
-### **34: USMT_ERROR_INSUFFICIENT_RIGHTS**
+### 34: USMT_ERROR_INSUFFICIENT_RIGHTS
 
 - **Category**: Setup and Initialization
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **Directory removal requires elevated privileges** | Log on as Administrator, and run with elevated privileges. |
-  | **No rights to create user profiles; log in as Administrator; run with elevated privileges** | Log on as Administrator, and run with elevated privileges. |
-  | **No rights to read or delete user profiles; log in as Administrator, run with elevated privileges** | Log on as Administrator, and run with elevated privileges. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **Directory removal requires elevated privileges** | Log on as Administrator, and run with elevated privileges. |
+| **No rights to create user profiles; log in as Administrator; run with elevated privileges** | Log on as Administrator, and run with elevated privileges. |
+| **No rights to read or delete user profiles; log in as Administrator, run with elevated privileges** | Log on as Administrator, and run with elevated privileges. |
 
-### **35: USMT_UNABLE_DELETE_STORE**
-
-- **Category**: Setup and Initialization
-
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **A reboot is required to remove the store** | Reboot to delete any files that could not be deleted when the command was executed. |
-  | **A store path can't be used because it contains data that could not be overwritten** | A migration store could not be deleted. If you are using a hardlink migration store you might have a locked file in it. You should manually delete the store, or use **USMTUtils /rd** command to delete the store. |
-  | **There was an error removing the store** | Review ScanState log or LoadState log for details about command-line errors. |
-
-### **36: USMT_ERROR_UNSUPPORTED_PLATFORM**
+### 35: USMT_UNABLE_DELETE_STORE
 
 - **Category**: Setup and Initialization
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **Compliance check failure; please check the logs for details** | Investigate whether there is an active temporary profile on the system. |
-  | **Use of /offline is not supported during apply** | The **/offline** command was not used while running in the Windows Preinstallation Environment (WinPE). |
-  | **Use /offline to run gather on this platform** | The **/offline** command was not used while running in WinPE. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **A reboot is required to remove the store** | Reboot to delete any files that could not be deleted when the command was executed. |
+| **A store path can't be used because it contains data that could not be overwritten** | A migration store could not be deleted. If you are using a hardlink migration store you might have a locked file in it. You should manually delete the store, or use **USMTUtils /rd** command to delete the store. |
+| **There was an error removing the store** | Review ScanState log or LoadState log for details about command-line errors. |
 
-### **37: USMT_ERROR_NO_INVALID_KEY**
-  - **Error message**: The store holds encrypted data but the correct encryption key was not provided
-  - **Troubleshooting, mitigation, workarounds**: Verify that you have included the correct encryption /key or /keyfile.
-  - **Category**: Setup and Initialization
-
-### **38: USMT_ERROR_CORRUPTED_NOTENCRYPTED_STORE**
-  - **Error message**: An error occurred during store access
-  - **Troubleshooting, mitigation, workarounds**: Review ScanState log or LoadState log for details about command-line errors. Make sure that the store path is accessible and that the proper permission levels are set.
-  - **Category**: Setup and Initialization
-
-### **39: USMT_UNABLE_TO_READ_CONFIG_FILE**
+### 36: USMT_ERROR_UNSUPPORTED_PLATFORM
 
 - **Category**: Setup and Initialization
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **Error reading Config.xml** | Review ScanState log or LoadState log for details about command-line errors in the Config.xml file. |
-  | **File argument is invalid for /config** | Check the command line you used to load the Config.xml file. You can use online Help by typing /? on the command line. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **Compliance check failure; please check the logs for details** | Investigate whether there is an active temporary profile on the system. |
+| **Use of /offline is not supported during apply** | The **/offline** command was not used while running in the Windows Preinstallation Environment (WinPE). |
+| **Use /offline to run gather on this platform** | The **/offline** command was not used while running in WinPE. |
 
-### **40: USMT_ERROR_UNABLE_CREATE_PROGRESS_LOG**
-
-- **Category**: Setup and Initialization
-
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **Error writing to the progress log** | The Progress log could not be created. Verify that the location is valid and that you have write access. |
-  | **Progress log argument is invalid for /progress** | The Progress log could not be created. Verify that the location is valid and that you have write access. |
-
-### **41: USMT_PREFLIGHT_FILE_CREATION_FAILED**
+### 37: USMT_ERROR_NO_INVALID_KEY
 
 - **Category**: Setup and Initialization
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **Can't overwrite existing file** | The Progress log could not be created. Verify that the location is valid and that you have write access. |
-  | **Invalid space estimate path. Check the parameters and/or file system permissions** | Review ScanState log or LoadState log for details about command-line errors. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **The store holds encrypted data but the correct encryption key was not provided** | Verify that you have included the correct encryption /key or /keyfile. |
 
-### **42: USMT_ERROR_CORRUPTED_STORE**
-  - **Error message**: The store contains one or more corrupted files
-  - **Troubleshooting, mitigation, workarounds**: Review UsmtUtils log for details about the corrupted files. For information on how to extract the files that are not corrupted, see [Extract Files from a Compressed USMT Migration Store](usmt-extract-files-from-a-compressed-migration-store.md).
+- **Category**: Setup and Initialization
 
-### **61: USMT_MIGRATION_STOPPED_NONFATAL**
-  - **Error message**: Processing stopped due to an I/O error
-  - **Troubleshooting, mitigation, workarounds**: USMT exited but can continue with the /c command-line option, with the optional configurable &lt;ErrorControl&gt; section or by using the /vsc command-line option.
-  - **Category**: Non-fatal Errors
+### 38: USMT_ERROR_CORRUPTED_NOTENCRYPTED_STORE
 
-### **71: USMT_INIT_OPERATING_ENVIRONMENT_FAILED**
+- **Category**: Setup and Initialization
+
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **An error occurred during store access** | Review ScanState log or LoadState log for details about command-line errors. Make sure that the store path is accessible and that the proper permission levels are set. |
+
+### 39: USMT_UNABLE_TO_READ_CONFIG_FILE
+
+- **Category**: Setup and Initialization
+
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **Error reading Config.xml** | Review ScanState log or LoadState log for details about command-line errors in the Config.xml file. |
+| **File argument is invalid for /config** | Check the command line you used to load the Config.xml file. You can use online Help by typing /? on the command line. |
+
+### 40: USMT_ERROR_UNABLE_CREATE_PROGRESS_LOG
+
+- **Category**: Setup and Initialization
+
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **Error writing to the progress log** | The Progress log could not be created. Verify that the location is valid and that you have write access. |
+| **Progress log argument is invalid for /progress** | The Progress log could not be created. Verify that the location is valid and that you have write access. |
+
+### 41: USMT_PREFLIGHT_FILE_CREATION_FAILED
+
+- **Category**: Setup and Initialization
+
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **Can't overwrite existing file** | The Progress log could not be created. Verify that the location is valid and that you have write access. |
+| **Invalid space estimate path. Check the parameters and/or file system permissions** | Review ScanState log or LoadState log for details about command-line errors. |
+
+### 42: USMT_ERROR_CORRUPTED_STORE
+
+- **Category**:
+
+| Error message | The store contains one or more corrupted files |
+| --- |  --- |
+| **The store holds encrypted data but the correct encryption key was not provided** | Review UsmtUtils log for details about the corrupted files. For information on how to extract the files that are not corrupted, see [Extract files from a compressed USMT migration store](usmt-extract-files-from-a-compressed-migration-store.md). |
+
+### 61: USMT_MIGRATION_STOPPED_NONFATAL
+
+- **Category**: Non-fatal Errors
+
+| Error message | The store contains one or more corrupted files |
+| --- |  --- |
+| **Processing stopped due to an I/O error** | USMT exited but can continue with the `/c` command-line option, with the optional configurable **&lt;ErrorControl&gt;** section or by using the `/vsc` command-line option. |
+
+### 71: USMT_INIT_OPERATING_ENVIRONMENT_FAILED
 
 - **Category**: Fatal Errors
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **A Windows Win32 API error occurred** | Data transfer has begun, and there was an error during the creation of migration store or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **An error occurred when attempting to initialize the diagnostic mechanisms such as the log** | Data transfer has begun, and there was an error during the creation of migration store or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **Failed to record diagnostic information** | Data transfer has begun, and there was an error during the creation of migration store or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **Unable to start. Make sure you are running USMT with elevated privileges** | Exit USMT and log in again with elevated privileges. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **A Windows Win32 API error occurred** | Data transfer has begun, and there was an error during the creation of migration store or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **An error occurred when attempting to initialize the diagnostic mechanisms such as the log** | Data transfer has begun, and there was an error during the creation of migration store or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **Failed to record diagnostic information** | Data transfer has begun, and there was an error during the creation of migration store or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **Unable to start. Make sure you are running USMT with elevated privileges** | Exit USMT and log in again with elevated privileges. |
 
-### **72: USMT_UNABLE_DOMIGRATION**
+### 72: USMT_UNABLE_DOMIGRATION
 
 - **Category**: Fatal Errors
 
-  | Error message | Troubleshooting, mitigation, workarounds |
-  | --- |  --- |
-  | **An error occurred closing the store** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **An error occurred in the apply process** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **An error occurred in the gather process** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **Out of disk space while writing the store** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
-  | **Out of temporary disk space on the local system** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
+| Error message | Troubleshooting, mitigation, workarounds |
+| --- |  --- |
+| **An error occurred closing the store** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **An error occurred in the apply process** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **An error occurred in the gather process** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **Out of disk space while writing the store** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
+| **Out of temporary disk space on the local system** | Data transfer has begun, and there was an error during migration-store creation or during the apply phase. Review the ScanState log or LoadState log for details. |
 
 ## Related topics
 
