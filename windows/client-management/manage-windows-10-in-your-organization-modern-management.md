@@ -9,6 +9,7 @@ ms.author: vinpa
 ms.reviewer: 
 manager: aaroncz
 ms.topic: overview
+ms.technology: itpro-manage
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management
