@@ -114,7 +114,7 @@ If a per-user service can't be disabled using the security template, you can dis
 
    ![Startup Type is Disabled.](media/gpp-svc-disabled.png)   
    
-9. To add the other services that can't be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
+9. To add the other services that can't be managed with Group Policy templates, edit the policy and repeat steps 5-8.  
 
 ### Managing Template Services with reg.exe
 
