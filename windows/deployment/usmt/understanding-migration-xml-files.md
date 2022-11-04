@@ -131,7 +131,10 @@ The default `MigUser.xml` file migrates the following data:
 
 - Files with the following extensions:
 
-    `.qdf`, `.qsd`, `.qel`, `.qph`, `.doc*`, `.dot*`, `.rtf`, `.mcw`, `.wps`, `.scd`, `.wri`, `.wpd`, `.xl*`, `.csv`, `.iqy`, `.dqy`, `.oqy`, `.rqy`, `.wk*`, `.wq1`, `.slk`, `.dif`, `.ppt*`, `.pps*`, `.pot*`, `.sh3`, `.ch3`, `.pre`, `.ppa`, `.txt`, `.pst`, `.one*`, `.vl*`, `.vsd`, `.mpp`, `.or6`, `.accdb`, `.mdb`, `.pub`
+   `.accdb`, `.ch3`, `.csv`, `.dif`, `.doc*`, `.dot*`, `.dqy`, `.iqy`, `.mcw`, `.mdb*`, `.mpp`, `.one*`, `.oqy`, `.or6`, `.pot*`, `.ppa`, `.pps*`, `.ppt*`, `.pre`, `.pst`, `.pub`, `.qdf`, `.qel`, `.qph`, `.qsd`, `.rqy`, `.rtf`, `.scd`, `.sh3`, `.slk`, `.txt`, `.vl*`, `.vsd`, `.wk*`, `.wpd`, `.wps`, `.wq1`, `.wri`, `.xl*`, `.xla`, `.xlb`, `.xls*`
+
+  > [!NOTE]
+  > The asterisk (`*`) stands for zero or more characters.
 
 The default `MigUser.xml` file doesn't migrate the following data:
 
