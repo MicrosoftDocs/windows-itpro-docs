@@ -41,7 +41,7 @@ The Readiness assessment tool checks the settings in [Microsoft Intune](#microso
 2. In the left pane, select Tenant administration and then navigate to Windows Autopatch > **Tenant enrollment**.
 
 > [!IMPORTANT]
-> If you don't see the Tenant enrollment blade, this is because you don't meet the prerequisites or the proper licenses. For more information, see [Windows Autopatch prerequisites](windows-autopatch-prerequisites.md#more-about-licenses).
+> All Intune customers can see the Windows Autopatch Tenant enrollment blade. However, if you don't meet the prerequisites or have the proper licensing, you won't be able to enroll into the Windows Autopatch service. For more information, see [Windows Autopatch prerequisites](windows-autopatch-prerequisites.md#more-about-licenses).
 
 The Readiness assessment tool checks the following settings:
 

@@ -4,7 +4,7 @@ description: Delete a single site from your global Enterprise Mode site list.
 ms.pagetype: appcompat
 ms.mktglfcycl: deploy
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
 ms.reviewer: 
 manager: dansimp

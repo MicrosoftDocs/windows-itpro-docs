@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Group Policy suggestions for compatibility with Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
 ms.reviewer: 
 audience: itpro

@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: networking
 description: Auto proxy configuration settings for Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 5120aaf9-8ead-438a-8472-3cdd924b7d9e
 ms.reviewer: 
 audience: itpro

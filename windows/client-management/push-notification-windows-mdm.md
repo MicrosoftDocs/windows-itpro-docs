@@ -1,15 +1,15 @@
 ---
 title: Push notification support for device management
 description: The DMClient CSP supports the ability to configure push-initiated device management sessions.
-MS-HAID:
+MS-HAID: 
   - 'p\_phdevicemgmt.push\_notification\_support\_for\_device\_management'
   - 'p\_phDeviceMgmt.push\_notification\_windows\_mdm'
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/22/2017
 ---

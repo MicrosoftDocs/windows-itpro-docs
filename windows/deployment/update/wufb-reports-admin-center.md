@@ -1,7 +1,7 @@
 ---
-title: Microsoft admin center software updates (preview) page
+title: Microsoft 365 admin center software updates page
 manager: dougeby
-description: Microsoft admin center populates Update Compliance data into the software updates page.
+description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
@@ -13,12 +13,9 @@ ms.date: 06/20/2022
 ms.technology: itpro-updates
 ---
 
-# Microsoft admin center software updates (preview) page
+# Microsoft 365 admin center software updates page
 <!--37063317, 30141258, 37063041, ID2616577, ID2582518 -->
-***(Applies to: Windows 11 & Windows 10 using [Update Compliance](update-compliance-v2-overview.md) and the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview))***
-
-> [!Important]
-> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+***(Applies to: Windows 11 & Windows 10 using [Windows Update for Business reports](wufb-reports-overview.md) and the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview))***
 
 The **Software updates** page in the [Microsoft 365 admin center](https://admin.microsoft.com) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. [Quality updates](quality-updates.md) that contain security fixes are typically released on the second Tuesday of each month. Ensuring these updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices.
 
@@ -28,26 +25,28 @@ The **Software updates** page has following tabs to assist you in monitoring upd
    - For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients. This article contains information about the **Windows** tab.
 
-:::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
+  :::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
 
 ## Permissions
-<!--Using include Microsoft 365 admin center permissions-->
-[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-admin-center-permissions.md)]
 
+<!--Using include Microsoft 365 admin center permissions-->
+[!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
+
+> [!NOTE]
+> These permissions for the Microsoft 365 admin center apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
 
 ## Limitations
 
-Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers since it doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home).
+Windows Update for Business reports is a Windows service hosted in Azure that uses Windows diagnostic data. Windows Update for Business reports is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers since it doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home).
 
 ## Get started
 
-
-<!--Using include for onboarding Update Compliance through the Microsoft 365 admin center-->
-[!INCLUDE [Onboarding Update Compliance through the Microsoft 365 admin center](./includes/update-compliance-onboard-admin-center.md)]
+<!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
+[!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]
 
 ## The Windows tab
 
-The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Update Compliance](update-compliance-v2-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. The Update Compliance data that populates these charts refreshes every 24 hours. For more information, see [Update Compliance data latency](update-compliance-v2-use.md#update-compliance-data-latency).
+The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Windows Update for Business reports](wufb-reports-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. The Windows Update for Business reports data that populates these charts refreshes every 24 hours. For more information, see [Windows Update for Business reports data latency](wufb-reports-use.md#data-latency).
 
 ### Windows update status chart
 
@@ -69,4 +68,4 @@ The **End of service** chart list the number of devices running an operating sys
 
 ## Next steps
 
-Use [Update Compliance](update-compliance-v2-overview.md) to display additional data about the status of Windows updates.
+Use [Windows Update for Business reports](wufb-reports-overview.md) to display additional data about the status of Windows updates.

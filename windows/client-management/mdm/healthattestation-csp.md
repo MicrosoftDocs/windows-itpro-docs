@@ -1,14 +1,14 @@
 ---
 title: Device HealthAttestation CSP
 description: Learn how the DHA-CSP enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date:
+ms.date: 
 ---
 
 # Device HealthAttestation CSP

@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using your network
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
 ms.reviewer: 
 audience: itpro
