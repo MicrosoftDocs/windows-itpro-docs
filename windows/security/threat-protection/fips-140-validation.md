@@ -66,7 +66,7 @@ The following tables identify the cryptographic modules used in an operating sys
 
 ### Modules used by Windows clients
 
-Expand each operating system section for more details.
+For more details, expand each operating system section.
 
 <br>
 <details>
@@ -87,7 +87,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 10, version 1803</b></summary>
 
@@ -105,7 +104,6 @@ Validated Editions: Home, Pro, Enterprise, Education
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 10, version 1709</b></summary>
 
@@ -124,7 +122,6 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 10, version 1703</b></summary>
 
@@ -150,7 +147,6 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 10, version 1607</b></summary>
 
@@ -175,7 +171,6 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 10, version 1511</b></summary>
 
@@ -204,7 +199,6 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 10, version 1507</b></summary>
 
@@ -234,7 +228,6 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 8.1</b></summary>
 
@@ -254,7 +247,6 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 8</b></summary>
 
@@ -276,7 +268,6 @@ Validated Editions: RT, Home, Pro, Enterprise, Phone
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 7</b></summary>
 
@@ -295,7 +286,6 @@ Validated Editions: Windows 7, Windows 7 SP1
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Vista SP1</b></summary>
 
@@ -313,7 +303,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Vista</b></summary>
 
@@ -329,7 +318,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows XP SP3</b></summary>
 
@@ -341,7 +329,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows XP SP2</b></summary>
 
@@ -353,7 +340,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows XP SP1</b></summary>
 
@@ -363,7 +349,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows XP</b></summary>
 
@@ -373,7 +358,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 2000 SP3</b></summary>
 
@@ -384,7 +368,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 2000 SP2</b></summary>
 
@@ -395,7 +378,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 2000 SP1</b></summary>
 
@@ -405,7 +387,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 2000</b></summary>
 
@@ -415,7 +396,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows 95 and Windows 98</b></summary>
 
@@ -425,7 +405,6 @@ Validated Editions: Ultimate Edition
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows NT 4.0</b></summary>
 
@@ -437,7 +416,7 @@ Validated Editions: Ultimate Edition
 
 ### Modules used by Windows Server
 
-Expand each operating system section for more details.
+For more details, expand each operating system section.
 
 <br>
 <details>
@@ -458,7 +437,6 @@ Validated Editions: Standard, Datacenter
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server, version 1803</b></summary>
 
@@ -476,7 +454,6 @@ Validated Editions: Standard, Datacenter
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server, version 1709</b></summary>
 
@@ -495,7 +472,6 @@ Validated Editions: Standard, Datacenter
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2016</b></summary>
 
@@ -514,7 +490,6 @@ Validated Editions: Standard, Datacenter, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2012 R2</b></summary>
 
@@ -538,7 +513,6 @@ Validated Editions: Server, Storage Server,
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2012</b></summary>
 
@@ -557,7 +531,6 @@ Validated Editions: Server, Storage Server
 |Enhanced Cryptographic Provider (RSAENH.DLL)|[6.2.9200][sp-1894]|[1894](https://csrc.nist.gov/groups/stm/cmvp/documents/140-1/1401val2013.htm#1894)|FIPS approved algorithms: AES (Cert. [#2196][aes-2196]); HMAC (Cert. [#1346][hmac-1346]); RSA (Cert. [#1132][rsa-1132]); SHS (Cert. [#1902][shs-1902]); Triple-DES (Cert. [#1386][tdes-1386])<p>Other algorithms: AES (Cert. [#2196][aes-2196], key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength); DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Triple-DES (Cert. [#1386][tdes-1386], key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)|
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2008 R2</b></summary>
 
@@ -574,7 +547,6 @@ Validated Editions: Server, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2008</b></summary>
 
@@ -590,7 +562,6 @@ Validated Editions: Server, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2003 SP2</b></summary>
 
@@ -602,7 +573,6 @@ Validated Editions: Server, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2003 SP1</b></summary>
 
@@ -614,7 +584,6 @@ Validated Editions: Server, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows Server 2003</b></summary>
 
@@ -628,6 +597,9 @@ Validated Editions: Server, Storage Server
 
 ## Other Products
 
+For more details, expand each product section.
+
+<br>
 <details>
 <summary><b>Windows Embedded Compact 7 and Windows Embedded Compact 8</b></summary>
 
@@ -638,7 +610,6 @@ Validated Editions: Server, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Windows CE 6.0 and Windows Embedded Compact 7</b></summary>
 
@@ -648,7 +619,6 @@ Validated Editions: Server, Storage Server
 
 </details>
 
-<br>
 <details>
 <summary><b>Outlook Cryptographic Provider</b></summary>
 
@@ -661,7 +631,7 @@ Validated Editions: Server, Storage Server
 ## Cryprtographic algorithms
 
 The following tables are organized by cryptographic algorithms with their modes, states, and key sizes. For each algorithm implementation (operating system / platform), there is a link to the Cryptographic Algorithm Validation Program (CAVP) issued certificate.\
-Expand each section for more details.
+For more details, expand each algorithm section.
 
 <br>
 <details>
@@ -721,7 +691,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Deterministic Random Bit Generator (DRBG)</b></summary>
 
@@ -750,7 +719,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Digital Signature Algorithm (DSA)</b></summary>
 
@@ -784,7 +752,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Elliptic Curve Digital Signature Algorithm (ECDSA)</b></summary>
 
@@ -818,7 +785,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Keyed-Hash Message Authentication Code (HMAC)</b></summary>
 
@@ -867,7 +833,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Key Agreement Scheme (KAS)</b></summary>
 
@@ -892,7 +857,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>SP 800-108 Key-Based Key Derivation Functions (KBKDF)</b></summary>
 
@@ -914,7 +878,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Random Number Generator (RNG)</b></summary>
 
@@ -928,7 +891,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>RSA</b></summary>
 
@@ -996,7 +958,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Secure Hash Standard (SHS)</b></summary>
 
@@ -1028,11 +989,10 @@ Expand each section for more details.
 |<li>**SHA-1** (BYTE-only)<li>**SHA-256** (BYTE-only)<li>**SHA-384** (BYTE-only)<li>**SHA-512** (BYTE-only)|Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) [#613][shs-613]<p>Windows Server 2003 SP1 Enhanced Cryptographic Provider (RSAENH) [#364][shs-364]|
 |<li>**SHA-1** (BYTE-only)|Windows Server 2003 SP2 Enhanced DSS and Diffie-Hellman Cryptographic Provider [#611][shs-611]<p>Windows Server 2003 SP2 Kernel Mode Cryptographic Module (fips.sys) [#610][shs-610]<p>Windows Server 2003 SP1 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) [#385][shs-385]<p>Windows Server 2003 SP1 Kernel Mode Cryptographic Module (fips.sys) [#371][shs-371]<p>Windows Server 2003 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) [#181][shs-181]<p>Windows Server 2003 Kernel Mode Cryptographic Module (fips.sys) [#177][shs-177]<p>Windows Server 2003 Enhanced Cryptographic Provider (RSAENH) [#176][shs-176]|
 |<li>**SHA-1** (BYTE-only)<li>**SHA-256** (BYTE-only)<li>**SHA-384** (BYTE-only)<li>**SHA-512** (BYTE-only)|Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) [#589][shs-589]<p>Windows CE and Windows Mobile 6 and Windows Mobile 6.5 Enhanced Cryptographic Provider (RSAENH) [#578][shs-578]<p>Windows CE 5.00 and Windows CE 5.01 Enhanced<p>Cryptographic Provider (RSAENH) [#305][shs-305]|
-|<li>**SHA-1** (BYTE-only)|Windows XP Microsoft Enhanced Cryptographic Provider [#83][shs-83]<p>Crypto Driver for Windows 2000 (fips.sys) [#35](http:/csrc.nist.gov/groups/stm/cavp/documents/shs/shaval.html#35)<p>Windows 2000 Microsoft Outlook Cryptographic Provider (EXCHCSP.DLL) SR-1A (3821) [#32][shs-32]<p>Windows 2000 RSAENH.DLL [#24][shs-24]<p>Windows 2000 RSABASE.DLL [#23][shs-23]<p>Windows NT 4 SP6 RSAENH.DLL [#21][shs-21]<p>Windows NT 4 SP6 RSABASE.DLL [#20][shs-20]|
+|<li>**SHA-1** (BYTE-only)|Windows XP Microsoft Enhanced Cryptographic Provider [#83][shs-83]<p>Crypto Driver for Windows 2000 (fips.sys) [#35][shs-35]<p>Windows 2000 Microsoft Outlook Cryptographic Provider (EXCHCSP.DLL) SR-1A (3821) [#32][shs-32]<p>Windows 2000 RSAENH.DLL [#24][shs-24]<p>Windows 2000 RSABASE.DLL [#23][shs-23]<p>Windows NT 4 SP6 RSAENH.DLL [#21][shs-21]<p>Windows NT 4 SP6 RSABASE.DLL [#20][shs-20]|
 
 </details>
 
-<br>
 <details>
 <summary><b>Triple DES</b></summary>
 
@@ -1060,7 +1020,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>SP 800-132 Password-Based Key Derivation Function (PBKDF)</b></summary>
 
@@ -1071,7 +1030,6 @@ Expand each section for more details.
 
 </details>
 
-<br>
 <details>
 <summary><b>Component Validation List</b></summary>
 
