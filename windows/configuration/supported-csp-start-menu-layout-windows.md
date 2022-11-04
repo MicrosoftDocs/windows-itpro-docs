@@ -7,6 +7,7 @@ ms.reviewer: ericpapa
 ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
+ms.technology: itpro-configure
 ---
 
 # Supported configuration service provider (CSP) policies for Windows 11 Start menu

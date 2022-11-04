@@ -7,6 +7,7 @@ ms.date: 03/08/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
+ms.technology: itpro-configure
 ---
 
 # Get Started with UE-V
