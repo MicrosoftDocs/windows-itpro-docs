@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Instructions about how to create and configure shortcut preference extensions to file system objects, URLs, and shell objects.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
 ms.reviewer: 
 audience: itpro
