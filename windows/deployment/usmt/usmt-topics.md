@@ -17,8 +17,8 @@ The User State Migration Tool (USMT) 10.0 provides a highly customizable user-pr
 
 ## In this section
 
-|Article |Description|
-|------|-----------|
+| Link | Description |
+|------ |----------- |
 |[User State Migration Tool (USMT) overview](usmt-overview.md)|Describes the benefits and limitations of using USMT.|
 |[Getting started with the User State Migration Tool (USMT)](getting-started-with-the-user-state-migration-tool.md)|Describes the general process to follow to migrate files and settings, and provides links to more information.|
 |[Windows upgrade and migration considerations](../upgrade/windows-upgrade-and-migration-considerations.md)|Discusses the Microsoft® tools you can use to move files and settings between installations and special considerations for performing an upgrade or migration.|

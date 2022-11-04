@@ -129,7 +129,11 @@ For information about the .xml elements and helper functions, see [XML Elements 
 
 On a test computer, install the operating system that will be installed on the destination computers. For example, if you're planning on migrating from Windows 7 to Windows 10, install Windows 10 and the application. Next, run LoadState on the test computer and verify that all settings migrate. Make corrections if necessary and repeat the process until all the necessary settings are migrated correctly.
 
-To speed up the time it takes to collect and migrate the data, you can migrate only one user at a time, and you can exclude all other components from the migration except the application that you're testing. To specify only User1 in the migration, type: `/ue:*\* /ui:user1`. For more information, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md) and User options in the [ScanState Syntax](usmt-scanstate-syntax.md) article. To troubleshoot a problem, check the progress log, and the ScanState and LoadState logs, which contain warnings and errors that may point to problems with the migration.
+To speed up the time it takes to collect and migrate the data, you can migrate only one user at a time, and you can exclude all other components from the migration except the application that you're testing. To specify only **User1** in the migration, enter:
+
+`/ue:*\* /ui:user1`
+
+For more information, see the [Exclude files and settings](usmt-exclude-files-and-settings.md) article and the [User options](usmt-scanstate-syntax.md#user-options) section in the [ScanState syntax](usmt-scanstate-syntax.md) article. To troubleshoot a problem, check the progress log, and the ScanState and LoadState logs, which contain warnings and errors that may point to problems with the migration.
 
 ## Related articles
 

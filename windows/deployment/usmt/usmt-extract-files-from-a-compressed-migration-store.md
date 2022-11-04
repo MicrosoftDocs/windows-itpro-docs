@@ -55,7 +55,7 @@ Where the placeholders have the following values:
 
 ### To extract all files from a compressed migration store
 
-To extract everything from a compressed migration store to a file on the C:\\ drive, type:
+To extract everything from a compressed migration store to a file on the `C:\` drive, enter:
 
 ``` syntax
 usmtutils.exe /extract D:\MyMigrationStore\USMT\store.mig C:\ExtractedStore
@@ -63,7 +63,7 @@ usmtutils.exe /extract D:\MyMigrationStore\USMT\store.mig C:\ExtractedStore
 
 ### To extract specific file types from an encrypted compressed migration store
 
-To extract specific files, such as .txt and .pdf files, from an encrypted compressed migration store, type:
+To extract specific files, such as `.txt` and `.pdf` files, from an encrypted compressed migration store, enter:
 
 ``` syntax
 usmtutils.exe /extract D:\MyMigrationStore\USMT\store.mig /i:"*.txt,*.pdf" C:\ExtractedStore /decrypt /keyfile:D:\encryptionKey.txt
@@ -73,7 +73,7 @@ In this example, the file is encrypted and the encryption key is located in a te
 
 ### To extract all but one, or more, file types from an encrypted compressed migration store
 
-To extract all files except for one file type, such as .exe files, from an encrypted compressed migration store, type:
+To extract all files except for one file type, such as `.exe` files, from an encrypted compressed migration store, enter:
 
 ``` syntax
 usmtutils.exe /extract D:\MyMigrationStore\USMT\store.mig /e:*.exe C:\ExtractedStore /decrypt:AES_128 /key:password /l:C:\usmtutilslog.txt

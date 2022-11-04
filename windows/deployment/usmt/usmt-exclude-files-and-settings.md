@@ -13,13 +13,13 @@ ms.technology: itpro-deploy
 
 # Exclude files and settings
 
-When you specify the migration .xml files, `MigApp.xml`, `Migdocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) 10.0 migrates the settings and components listed, as discussed in [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md) You can create a custom .xml file to further specify what to include or exclude in the migration. In addition you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration .xml files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the User options on the command line in the ScanState tool. For more information, see [ScanState syntax](usmt-scanstate-syntax.md).
+When you specify the migration .xml files, `MigApp.xml`, `Migdocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) 10.0 migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) You can create a custom .xml file to further specify what to include or exclude in the migration. In addition you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration .xml files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
 
-## In this topic
+Methods to customize the migration and include and exclude files and settings include:
 
 - [Create a custom .xml file](#create-a-custom-xml-file). You can use the following elements to specify what to exclude:
 
-  - include and exclude: You can use the **&lt;include&gt;** and **&lt;exclude&gt;** elements to exclude objects with conditions. For example, you can migrate all files located in the C:\\ drive, except any .mp3 files. It's important to remember that [Conflicts and Precedence](usmt-conflicts-and-precedence.md) apply to these elements.
+  - [Include and exclude](#include-and-exclude): You can use the **&lt;include&gt;** and **&lt;exclude&gt;** elements to exclude objects with conditions. For example, you can migrate all files located in the `C:\` drive, except any `.mp3` files. It's important to remember that [Conflicts and precedence](usmt-conflicts-and-precedence.md) apply to these elements.
 
   - [unconditionalExclude](#example-1-how-to-migrate-all-files-from-c-except-mp3-files): You can use the **&lt;unconditionalExclude&gt;** element to globally exclude data. This element takes precedence over all other include and exclude rules in the .xml files. Therefore, this element excludes objects regardless of any other **&lt;include&gt;** rules that are in the .xml files. For example, you can exclude all .mp3 files on the computer, or you can exclude all files from C:\\UserData.
 
@@ -46,7 +46,7 @@ The migration .xml files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contai
 
 - [Example 5: How to exclude a file from any location](#example-5-how-to-exclude-a-file-from-any-location)
 
-### Example 1: How to migrate all files from C:\\ except .mp3 files
+### Example 1: How to migrate all files from `C:\` except `.mp3` files
 
 The following .xml file migrates all files located on the C: drive, except any .mp3 files.
 
@@ -169,7 +169,7 @@ To exclude a Sample.doc file from any drive on the computer, use the **&lt;scrip
 
 Here are some examples of how to use XML to exclude files, folders, and registry keys. For more info, see [USMT XML Reference](usmt-xml-reference.md)
 
-##### Example 1: How to exclude all .mp3 files
+##### Example 1: How to exclude all `.mp3` files
 
 The following .xml file excludes all `.mp3` files from the migration:
 

@@ -192,14 +192,14 @@ To generate the XML migration rules file for a source computer:
 
 3. Select an account with administrator privileges, supply a password, and then select **OK**.
 
-4. At the command prompt, type:
+4. At the command prompt, enter:
 
     ```console
     cd /d <USMTpath>
     scanstate.exe /genmigxml: <filepath.xml>
     ```
 
-    Where *&lt;USMTpath&gt;* is the location on your source computer where you've saved the USMT files and tools, and *&lt;filepath.xml&gt;* is the full path to a file where you can save the report. For example, type:
+    Where *&lt;USMTpath&gt;* is the location on your source computer where you've saved the USMT files and tools, and *&lt;filepath.xml&gt;* is the full path to a file where you can save the report. For example, enter:
 
     ```console
     cd /d c:\USMT

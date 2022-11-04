@@ -308,7 +308,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*EncodedFileLocation*|Yes|The [location pattern](#specifying-locations) for the file that will be checked. Environment variables are allowed.|
-    |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
+    |*VersionTag*|Yes|The [version tag](#valid-version-tags) value that will be checked.|
     |*VersionValue*|Yes|A string pattern. For example, "Microsoft*".|
 
   For example:
@@ -326,7 +326,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*EncodedFileLocation*|Yes|The [location pattern](#specifying-locations) for the file that will be checked. Environment variables are allowed.|
-    |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
+    |*VersionTag*|Yes|The [version tag](#valid-version-tags) value that will be checked.|
     |*VersionValue*|Yes|The value to compare to. You cannot specify a pattern.|
 
 - **IsFileVersionBelow**
@@ -336,7 +336,7 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*EncodedFileLocation*|Yes|The [location pattern](#specifying-locations) for the file that will be checked. Environment variables are allowed.|
-    |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
+    |*VersionTag*|Yes|The [version tag](#valid-version-tags) value that will be checked.|
     |*VersionValue*|Yes|The value to compare to. You cannot specify a pattern.|
 
 - **IsSystemContext**
@@ -931,7 +931,7 @@ Second, you can also filter registry values that contain data that you need. The
 </environment>
 ```
 
-### Example scenario 2:
+### Example scenario 2
 
 In this scenario, you want to migrate five files named File1.txt, File2.txt, and so on, from %SYSTEMDRIVE%\\data\\userdata\\dir1\\dir2\\. To do this you must have the following &lt;include&gt; rule in an .xml file:
 
@@ -1450,9 +1450,9 @@ Syntax:
 
 ## &lt;merge&gt;
 
-The &lt;merge&gt; element determines what will happen when a collision occurs. A collision is when an object that is migrated is already present on the destination computer. If you do not specify this element, the default behavior for the registry is for the source object to overwrite the destination object. The default behavior for files is for the source file to be renamed to "OriginalFileName(1).OriginalExtension". This element specifies only what should be done when a collision occurs. It does not include objects. Therefore, for your objects to migrate, you must specify &lt;include&gt; rules along with the &lt;merge&gt; element. When an object is processed and a collision is detected, USMT will select the most specific merge rule and apply it to resolve the conflict. For example, if you have a &lt;merge&gt; rule C:\\\* \[\*\] set to &lt;sourcePriority&gt; and a &lt;merge&gt; rule C:\\subfolder\\\* \[\*\] set to &lt;destinationPriority&gt;, then USMT would use the &lt;destinationPriority&gt; rule because it is the more specific.
+The &lt;merge&gt; element determines what will happen when a collision occurs. A collision is when an object that is migrated is already present on the destination computer. If you do not specify this element, the default behavior for the registry is for the source object to overwrite the destination object. The default behavior for files is for the source file to be renamed to "OriginalFileName(1).OriginalExtension". This element specifies only what should be done when a collision occurs. It does not include objects. Therefore, for your objects to migrate, you must specify &lt;include&gt; rules along with the &lt;merge&gt; element. When an object is processed and a collision is detected, USMT will select the most specific merge rule and apply it to resolve the conflict. For example, if you have a &lt;merge&gt; rule `C:\* [*]` set to &lt;sourcePriority&gt; and a &lt;merge&gt; rule `C:\subfolder\* [*]` set to &lt;destinationPriority&gt;, then USMT would use the &lt;destinationPriority&gt; rule because it is the more specific.
 
-For an example of this element, see [Conflicts and Precedence](usmt-conflicts-and-precedence.md).
+For an example of this element, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
 
 - **Number of occurrences:** Unlimited
 
@@ -1747,7 +1747,7 @@ Syntax:
 |Setting|Required?|Value|
 |--- |--- |--- |
 | type | Yes | *typeID* can be Registry, File, or Ini. If *typeId* is Ini, then you cannot have a space between *Path* and *object*. For example, the following is correct when type=&quot;Ini&quot;: <br/>**&lt;pattern type=&quot;Ini&quot;&gt;%WinAmp5InstPath%\Winamp.ini&#124;WinAmp[keeponscreen]&lt;/pattern&gt;** |
-| *Path* [*object*] | Yes | A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated. <ul><li>*Path* can contain the asterisk (*) wildcard character or can be an [Recognized Environment Variables](usmt-recognized-environment-variables.md). You cannot use the question mark as a wildcard character.You can use HKCU and HKLM to refer to HKEY_CURRENT_USER and HKEY_LOCAL_MACHINE respectively.</li><li>*Object* can contain the asterisk () wildcard character. However, you cannot use the question mark as a wildcard character. For example: <br/> **`C:\Folder\ [*]`** enumerates all files in C:&lt;em&gt;Path* but no subfolders of C:\Folder. <br/> **`C:\Folder* [*]`** enumerates all files and subfolders of C:\Folder. <br/> **`C:\Folder\ [*.mp3]`** enumerates all .mp3 files in C:\Folder. <br/> **`C:\Folder\ [Sample.doc]`** enumerates only the Sample.doc file located in C:\Folder. <div class="alert">**Note**<br/>If you are migrating a file that has a square bracket character ([ or ]) in the file name, you must insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
+| *Path* [*object*] | Yes | A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated. <ul><li>*Path* can contain the asterisk (`*`) wildcard character or can be an [Recognized Environment Variables](usmt-recognized-environment-variables.md). You cannot use the question mark as a wildcard character.You can use HKCU and HKLM to refer to HKEY_CURRENT_USER and HKEY_LOCAL_MACHINE respectively.</li><li>*Object* can contain the asterisk () wildcard character. However, you cannot use the question mark as a wildcard character. For example: <br/> **`C:\Folder\ [*]`** enumerates all files in C:&lt;em&gt;Path* but no subfolders of C:\Folder. <br/> **`C:\Folder* [*]`** enumerates all files and subfolders of C:\Folder. <br/> **`C:\Folder\ [*.mp3]`** enumerates all .mp3 files in C:\Folder. <br/> **`C:\Folder\ [Sample.doc]`** enumerates only the Sample.doc file located in C:\Folder. <div class="alert">**Note**<br/>If you are migrating a file that has a square bracket character ([ or ]) in the file name, you must insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
 
 For example:
 
@@ -1970,9 +1970,9 @@ For more examples of how to use this element, see [Exclude Files and Settings](u
 
 You can use the following functions with the &lt;script&gt; element
 
-- [String and pattern generating functions](#stringgeneratingfunctions)
+- [String and pattern generating functions](#string-and-pattern-generating-functions)
 
-- [Simple executing scripts](#simple)
+- [Simple executing scripts](#simple-executing-scripts)
 
 ### String and pattern generating functions
 
@@ -2208,11 +2208,11 @@ The following .xml file excludes all .mp3 files from migration. For additional e
 
 The &lt;variable&gt; element is required in an &lt;environment&gt; element. For each &lt;variable&gt; element there must be one &lt;objectSet&gt;, &lt;script&gt;, or &lt;text&gt; element. The content of the &lt;variable&gt; element assigns a text value to the environment variable. This element has the following three options:
 
-1.  If the &lt;variable&gt; element contains a &lt;text&gt; element, then the value of the variable element will be the value of the &lt;text&gt; element.
+1. If the &lt;variable&gt; element contains a &lt;text&gt; element, then the value of the variable element will be the value of the &lt;text&gt; element.
 
-2.  If the &lt;variable&gt; element contains a &lt;script&gt; element and the invocation of the script produces a non-null string, then the value of the &lt;variable&gt; element will be the result of the script invocation.
+2. If the &lt;variable&gt; element contains a &lt;script&gt; element and the invocation of the script produces a non-null string, then the value of the &lt;variable&gt; element will be the result of the script invocation.
 
-3.  If the &lt;variable&gt; element contains an &lt;objectSet&gt; element and the evaluation of the &lt;objectSet&gt; element produces at least one object pattern, then the value of the first object to match the resulting object pattern will be the value of the variable element.
+3. If the &lt;variable&gt; element contains an &lt;objectSet&gt; element and the evaluation of the &lt;objectSet&gt; element produces at least one object pattern, then the value of the first object to match the resulting object pattern will be the value of the variable element.
 
 - **Number of occurrences:** Unlimited
 

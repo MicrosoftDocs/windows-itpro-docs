@@ -32,7 +32,7 @@ when running the `ScanState.exe` command to migrate the encrypted files. Then, w
 
 Before using the **ScanState** tool for a migration that includes encrypted files and EFS certificates, you must ensure that all files in an encrypted folder are encrypted as well or remove the encryption attribute from folders that contain unencrypted files. If the encryption attribute has been removed from a file but not from the parent folder, the file will be encrypted during the migration using the credentials of the account used to run the **LoadState** tool.
 
-You can run the [Cipher.exe](/windows-server/administration/windows-commands/cipher) tool at a Windows command prompt to review and change encryption settings on files and folders. For example, to remove encryption from a folder, at a command prompt type:
+You can run the [Cipher.exe](/windows-server/administration/windows-commands/cipher) tool at a Windows command prompt to review and change encryption settings on files and folders. For example, to remove encryption from a folder, at a command prompt enter:
 
 ``` syntax
 Cipher.exe /D /S:<PATH>

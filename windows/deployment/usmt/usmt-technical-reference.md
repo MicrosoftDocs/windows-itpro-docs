@@ -42,8 +42,8 @@ USMT tools can be used on several versions of Windows operating systems, for mor
 
 ## In this section
 
-|Article |Description|
-|------|-----------|
+| Link | Description |
+|------ |----------- |
 |[User State Migration Tool (USMT) overview topics](usmt-topics.md)|Describes what's new in USMT, how to get started with USMT, and the benefits and limitations of using USMT.|
 |[User State Migration Tool (USMT) how-to topics](usmt-how-to.md)|Includes step-by-step instructions for using USMT and how-to topics for conducting tasks in USMT.|
 |[User State Migration Tool (USMT) troubleshooting](usmt-troubleshooting.md)|Provides answers to frequently asked questions and common issues in USMT and a reference for return codes used in USMT.|

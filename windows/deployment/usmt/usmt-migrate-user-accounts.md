@@ -29,13 +29,17 @@ Links to detailed explanations of commands are available in the [Related article
 
 4. Enter one of the following `loadstate.exe` command lines in a command prompt window:
 
-   - If you're migrating domain accounts, Enter:
+   - If you're migrating domain accounts, enter:
 
-        `loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml`
+        ``` syntax
+        loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml
+        ```
 
-   - If you're migrating local accounts along with domain accounts, Enter:
+   - If you're migrating local accounts along with domain accounts, enter:
 
-        `loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml /lac /lae`
+        ``` syntax
+        loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml /lac /lae
+        ```
 
         > [!NOTE]
         > You do not have to specify the `/lae` option, which enables the account that was created with the `/lac` option. Instead, you can create a disabled local account by specifying only the `/lac` option, and then a local administrator needs to enable the account on the destination computer.

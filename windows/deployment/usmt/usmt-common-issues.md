@@ -258,7 +258,7 @@ You can also use patterns for SIDs that identify generic users or groups. For ex
 
 **Cause:** The HKLM registry hive isn't unloaded after the **ScanState** tool has finished running.
 
-**Resolution:** Reboot the computer or unload the registry hive at the command prompt after the **ScanState** tool has finished running. For example, at a command prompt, type:
+**Resolution:** Reboot the computer or unload the registry hive at the command prompt after the **ScanState** tool has finished running. For example, at a command prompt, enter:
 
 ``` syntax
 reg.exe unload hklm\$dest$software
@@ -278,7 +278,7 @@ The following sections describe common hard-link migration problems. Expand the 
 
 **Cause:** The migration store contains hard links to locked files.
 
-**Resolution:** Use the UsmtUtils tool to delete the store or change the store name. For example, at a command prompt, type:
+**Resolution:** Use the UsmtUtils tool to delete the store or change the store name. For example, at a command prompt, enter:
 
 ``` syntax
 USMTutils.exe /rd <storedir>
