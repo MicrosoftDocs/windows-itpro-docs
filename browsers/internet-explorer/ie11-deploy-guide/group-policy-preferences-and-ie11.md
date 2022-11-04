@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Info about Group Policy preferences versus Group Policy settings
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
 ms.reviewer: 
 audience: itpro

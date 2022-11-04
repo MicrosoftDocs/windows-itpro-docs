@@ -5,7 +5,7 @@ ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
 ms.reviewer: 
 audience: itpro
 manager: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library

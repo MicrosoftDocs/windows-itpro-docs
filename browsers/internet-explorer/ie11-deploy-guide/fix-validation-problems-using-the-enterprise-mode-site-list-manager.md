@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: When you add multiple sites to your Enterprise Mode site list entries, they’re validated by the Enterprise Mode Site List Manager before they’re entered into your global list.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
 ms.reviewer: 
 audience: itpro

@@ -8,6 +8,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
+ms.technology: itpro-manage
 ---
 
 # Manage the Settings app with Group Policy

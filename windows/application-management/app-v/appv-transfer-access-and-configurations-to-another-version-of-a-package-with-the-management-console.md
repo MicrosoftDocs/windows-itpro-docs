@@ -2,11 +2,12 @@
 title: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console (Windows 10/11)
 description: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
+ms.technology: itpro-apps
 ---
 
 # How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
