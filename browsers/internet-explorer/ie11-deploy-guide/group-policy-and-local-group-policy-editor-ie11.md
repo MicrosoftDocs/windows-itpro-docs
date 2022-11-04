@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Group Policy, the Local Group Policy Editor, and Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
 ms.reviewer: 
 audience: itpro

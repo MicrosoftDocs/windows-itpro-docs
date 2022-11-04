@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Turn on local user control and logging for Enterprise Mode.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 6622ecce-24b1-497e-894a-e1fd5a8a66d1
 ms.reviewer: 
 audience: itpro
