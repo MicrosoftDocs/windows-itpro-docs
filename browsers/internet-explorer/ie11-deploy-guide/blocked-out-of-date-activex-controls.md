@@ -7,7 +7,7 @@ audience: itpro
 manager: dansimp
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: windows-client
+ms.prod: ie11
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security

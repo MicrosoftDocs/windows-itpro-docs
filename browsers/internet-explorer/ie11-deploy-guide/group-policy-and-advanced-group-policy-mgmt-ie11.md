@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
 ms.reviewer: 
 audience: itpro
