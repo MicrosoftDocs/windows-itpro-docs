@@ -2,12 +2,13 @@
 title: Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: Learn how to manually sequence a new app by using the App-V Sequencer that's included with the Windows ADK.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)
