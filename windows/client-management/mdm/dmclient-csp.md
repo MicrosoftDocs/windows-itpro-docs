@@ -484,7 +484,7 @@ Support operation is Exec.
 <a href="" id="provider-providerid-linkedenrollment-enrollstatus"></a>**Provider/*ProviderID*/LinkedEnrollment/EnrollStatus**
 
 This node can be used to check both enroll and unenroll statuses.
-This will return the enroll action status and is defined as a enum class LinkedEnrollmentStatus. The values are aas follows:
+This will return the enroll action status and is defined as an enum class LinkedEnrollmentStatus. The values are as follows:
 
 - Undefined = 0
 - EnrollmentNotStarted = 1
@@ -502,7 +502,7 @@ This specifies the Hresult to report the enrollment/unenroll results.
 
 <a href="" id="provider-providerid-recovery-allowrecovery"></a>**Provider/*ProviderID*/Recovery/AllowRecovery**
 
-This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate.
+This node determines whether or not the client will automatically initiate an MDM Recovery operation when it detects issues with the MDM certificate.
 
 Supported operations are Get, Add, Replace and Delete.
 
@@ -540,7 +540,10 @@ Optional. This node specifies maximum number of concurrent user sync sessions in
 
 The default value is dynamically decided by the client based on CPU usage.
 
-The values are : 0= none, 1= sequential, anything else=  parallel.
+The values are as follows: 
+0 = none 
+1 = sequential
+anything else = parallel
 
 Supported operations are Get, Add, Replace and Delete.
 
@@ -552,7 +555,10 @@ Optional. This node specifies maximum number of concurrent user sync sessions at
 
 The default value is dynamically decided by the client based on CPU usage.
 
-The values are : 0= none, 1= sequential, anything else= parallel.
+The values are as follows: 
+0 = none
+1 = sequential
+anything else = parallel.
 
 Supported operations are Get, Add, Replace and Delete.
 
