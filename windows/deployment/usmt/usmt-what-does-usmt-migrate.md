@@ -150,9 +150,7 @@ The following components are migrated by default using the manifest files:
 Even though it's not required for all applications, it's good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that migrated settings aren't overwritten by the application installers.
 
 > [!NOTE]
-
 > - The versions of installed applications must match on the source and destination computers. USMT does not support migrating the settings of an earlier version of an application to a later version, except for Microsoft Office.
-
 > - USMT migrates only the settings that have been used or modified by the user. If there is an application setting on the source computer that was not touched by the user, the setting may not migrate.
 
 When you specify the `MigApp.xml` file, USMT migrates the settings for the following applications:
