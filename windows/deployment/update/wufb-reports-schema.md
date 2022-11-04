@@ -17,7 +17,7 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings through the Microsoft 365 admin center](wufb-reports-enable.md#bkmk_admin-center).
+> As of August 17, 2022, the `CommercialID` is no longer required. For more information, see [Enable Windows Update for Business reports](wufb-reports-enable.md).
 
 When the visualizations provided in the default experience don't fulfill your reporting needs, or if you need to troubleshoot issues with devices, it's valuable to understand the schema for Windows Update for Business reports and have a high-level understanding of the capabilities of [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language) to power additional dashboards, integration with external data analysis tools, automated alerting, and more.
 

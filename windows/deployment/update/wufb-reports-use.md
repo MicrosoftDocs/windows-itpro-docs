@@ -23,7 +23,7 @@ In this article, you'll learn how to use Windows Update for Business reports to 
 1. Sign into the [Azure portal](https://portal.azure.com). 
 1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
 1. Select **Log Analytics workspaces**.
-1. Select the workspace that you use for Updates Compliance.
+1. Select the workspace that you use for Windows Update for Business reports.
 1. Select **Logs** under the **General** group in your workspace.
 1. If the **Always show Queries** option is enabled in Log Analytics, close the query window to access the schema.
 1. Under **Schemas and filter**, select **Group by: Solution** and then expand the **Log Management** schema. If the **Group by: Category** is selected, the schema is listed under the **Other** category.

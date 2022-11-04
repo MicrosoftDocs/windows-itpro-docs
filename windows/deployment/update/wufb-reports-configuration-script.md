@@ -18,7 +18,7 @@ ms.technology: itpro-updates
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](wufb-reports-enable.md#bkmk_admin-center).
+> As of August 17, 2022, the `CommercialID` is no longer required. For more information, see [Enable Windows Update for Business reports](wufb-reports-enable.md).
 
 The Windows Update for Business reports configuration script is the recommended method of configuring devices to send data to Microsoft for use with Windows Update for Business reports. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configure devices for Windows Update for Business reports](wufb-reports-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured.
 
