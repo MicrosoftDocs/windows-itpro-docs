@@ -692,7 +692,7 @@ For more details, expand each algorithm section.
 </details>
 
 <details>
-<summary><b>Component Validation List</b></summary>
+<summary><b>Component</b></summary>
 
 |**Publication / Component Validated / Description**|**Implementation and Certificate #**|
 |--- |--- |
@@ -1030,6 +1030,16 @@ For more details, expand each algorithm section.
 </details>
 
 <details>
+<summary><b>SP 800-132 Password-Based Key Derivation Function (PBKDF)</b></summary>
+
+| Modes / States / Key Sizes | Algorithm Implementation and Certificate # |
+| --- | --- |
+| PBKDF (vendor affirmed) |  Kernel Mode Cryptographic Primitives Library (cng.sys) Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2937][certificate-2937]<br/>(Software Version: 10.0.14393)<br/><br/>Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2936][certificate-2936]<br/>(Software Version: 10.0.14393)<br/><br/>Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2935][certificate-2935]<br/>(Software Version: 10.0.14393) |
+| PBKDF (vendor affirmed) | Kernel Mode Cryptographic Primitives Library (cng.sys) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2936][certificate-2936]<br/>(Software Version: 10.0.14393)<br/><br/>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG), vendor-affirmed |
+
+</details>
+
+<details>
 <summary><b>Triple DES</b></summary>
 
 |**Modes / States / Key Sizes**|**Algorithm Implementation and Certificate #**|
@@ -1053,16 +1063,6 @@ For more details, expand each algorithm section.
 |**TECB**(e/d; KO 1, 2);**TCBC**(e/d; KO 1, 2);**TCFB8**(e/d; KO 1, 2)|Windows Vista Symmetric Algorithm Implementation [#549][tdes-549]|
 |**Triple DES MAC**|Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 [#1386][tdes-1386], vendor-affirmedWindows 7 and SP1 and Windows Server 2008 R2 and SP1 [#846][tdes-846], vendor-affirmed|
 |**TECB**(e/d; KO 1, 2);**TCBC**(e/d; KO 1, 2)|Windows Embedded Compact 7 Enhanced Cryptographic Provider (RSAENH) [#1308][tdes-1308]Windows Embedded Compact 7 Cryptographic Primitives Library (bcrypt.dll) [#1307][tdes-1307]<p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) [#691][tdes-691]<p>Windows XP Professional SP3 Kernel Mode Cryptographic Module (fips.sys) [#677][tdes-677]<p>Windows XP Professional SP3 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) [#676][tdes-676]<p>Windows XP Professional SP3 Enhanced Cryptographic Provider (RSAENH) [#675][tdes-675]<p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) [#544][tdes-544]<p>Windows Server 2003 SP2 Enhanced DSS and Diffie-Hellman Cryptographic Provider [#543][tdes-543]<p>Windows Server 2003 SP2 Kernel Mode Cryptographic Module (fips.sys) [#542][tdes-542]Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) [#526][tdes-526]<p>Windows CE and Windows Mobile 6 and Windows Mobile 6.1 and Windows Mobile 6.5 Enhanced Cryptographic Provider (RSAENH) [#517][tdes-517]<p>Windows Server 2003 SP1 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) [#381][tdes-381]<p>Windows Server 2003 SP1 Kernel Mode Cryptographic Module (fips.sys) [#370][tdes-370]<p>Windows Server 2003 SP1 Enhanced Cryptographic Provider (RSAENH) [#365][tdes-365]Windows CE 5.00 and Windows CE 5.01 Enhanced Cryptographic Provider (RSAENH) [#315][tdes-315]<p>Windows Server 2003 Kernel Mode Cryptographic Module (fips.sys) [#201][tdes-201]<p>Windows Server 2003 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) [#199][tdes-199]<p>Windows Server 2003 Enhanced Cryptographic Provider (RSAENH) [#192][tdes-192]Windows XP Microsoft Enhanced Cryptographic Provider [#81][tdes-81]<p>Windows 2000 Microsoft Outlook Cryptographic Provider (EXCHCSP.DLL) SR-1A (3821) [#18][tdes-18]Crypto Driver for Windows 2000 (fips.sys) [#16][tdes-16]|
-
-</details>
-
-<details>
-<summary><b>SP 800-132 Password-Based Key Derivation Function (PBKDF)</b></summary>
-
-| Modes / States / Key Sizes | Algorithm Implementation and Certificate # |
-| --- | --- |
-| PBKDF (vendor affirmed) |  Kernel Mode Cryptographic Primitives Library (cng.sys) Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2937][certificate-2937]<br/>(Software Version: 10.0.14393)<br/><br/>Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2936][certificate-2936]<br/>(Software Version: 10.0.14393)<br/><br/>Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2935][certificate-2935]<br/>(Software Version: 10.0.14393) |
-| PBKDF (vendor affirmed) | Kernel Mode Cryptographic Primitives Library (cng.sys) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 [#2936][certificate-2936]<br/>(Software Version: 10.0.14393)<br/><br/>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG), vendor-affirmed |
 
 </details>
 
