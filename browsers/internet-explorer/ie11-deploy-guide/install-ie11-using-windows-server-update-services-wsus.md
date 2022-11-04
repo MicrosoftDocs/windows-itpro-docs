@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using Windows Server Update Services (WSUS)'
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 6cbd6797-c670-4236-8423-e0919478f2ce
 ms.reviewer: 
 audience: itpro

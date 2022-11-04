@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the Bulk add from file area of the Enterprise Mode Site List Manager.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 20aF07c4-051a-451f-9c46-5a052d9Ae27c
 ms.reviewer: 
 manager: dansimp

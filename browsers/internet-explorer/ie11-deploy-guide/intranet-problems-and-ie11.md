@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to fix intranet search problems with Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 3ee71d93-d9d2-48e1-899e-07932c73faa6
 ms.reviewer: 
 audience: itpro

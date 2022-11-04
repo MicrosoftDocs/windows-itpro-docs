@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Create packages for multiple operating systems or languages
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
 ms.reviewer: 
 audience: itpro

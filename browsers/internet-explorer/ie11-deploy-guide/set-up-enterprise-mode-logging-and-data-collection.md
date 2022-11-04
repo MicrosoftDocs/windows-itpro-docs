@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Set up and turn on Enterprise Mode logging and data collection in your organization.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
 ms.reviewer: 
 audience: itpro

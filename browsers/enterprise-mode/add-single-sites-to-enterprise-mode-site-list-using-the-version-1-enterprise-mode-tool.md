@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Enterprise Mode is a compatibility mode that runs on Internet Explorer 11, letting websites render using a modified browser configuration that's designed to emulate either Windows Internet Explorer 7 or Windows Internet Explorer 8, avoiding the common compatibility problems associated with web apps written and tested on older versions of Internet Explorer.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 042e44e8-568d-4717-8fd3-69dd198bbf26
 ms.reviewer: 
 manager: dansimp
