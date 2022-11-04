@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 11/03/2022
+ms.date: 11/04/2022
 ms.technology: itpro-security
 ---
 
@@ -100,10 +100,10 @@ To remove WDAC policies using script, your script must delete the policy file(s)
 - &lt;EFI System Partition&gt;\\Microsoft\\Boot\\CiPolicies\Active\\*\{PolicyId GUID\}*.cip
 - &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\CiPolicies\Active\\*\{PolicyId GUID\}*.cip
 
-For **single policy format WDAC policies**, in addition to the two locations above, also look for a file called SIPolicy.p7b that may be found in the following locations:
+For **single policy format WDAC policies**, in addition to the two locations above, also look for a file called SiPolicy.p7b that may be found in the following locations:
 
-- &lt;EFI System Partition&gt;\\Microsoft\\Boot\\SIPolicy.p7b
-- &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\SIPolicy.p7b
+- &lt;EFI System Partition&gt;\\Microsoft\\Boot\\SiPolicy.p7b
+- &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\SiPolicy.p7b
 
 Then restart the computer.
 
@@ -130,7 +130,7 @@ Then restart the computer.
     mountvol $MountPoint $EFIPartition
 
     # Check if the PolicyId to be removed is the system reserved GUID for single policy format.
-    # If so, the policy may exist as both sipolicy.p7b in the policy path root as well as
+    # If so, the policy may exist as both SiPolicy.p7b in the policy path root as well as
     # {GUID}.cip in the CiPolicies\Active subdirectory
     if ($PolicyId -eq $SinglePolicyFormatPolicyId) {$NumFilesToDelete = 4} else {$NumFilesToDelete = 2}
     
@@ -155,10 +155,13 @@ Then restart the computer.
     }
 
     # Dismount the EFI partition
-   mountvol.exe $MountPoint /D
+   mountvol $MountPoint /D
 ```
 
 </Details>
+
+> [!NOTE]
+> You must run the script as administrator to remove WDAC policies on your computer.
 
 ## Remove WDAC policies causing boot stop failures
 
