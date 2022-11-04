@@ -13,6 +13,7 @@ ms.custom:
 audience: ITPro
 ms.localizationpriority: medium
 manager: kaushika
+ms.technology: itpro-manage
 ---
 
 # Change in default removal policy for external storage media in Windows 10, version 1809

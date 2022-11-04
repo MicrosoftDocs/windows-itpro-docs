@@ -2,12 +2,13 @@
 title: App-V Supported Configurations (Windows 10/11)
 description: Learn the requirements to install and run App-V supported configurations in your Windows 10/11 environment.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # App-V Supported Configurations

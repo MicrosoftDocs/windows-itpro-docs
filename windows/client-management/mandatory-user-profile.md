@@ -9,6 +9,7 @@ ms.reviewer:
 manager: aaroncz
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-manage
 ---
 
 # Create mandatory user profiles
@@ -79,7 +80,7 @@ First, you create a default user profile with the customizations that you want, 
    >
    > Use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true) and [Remove-AppxPackage -AllUsers](/powershell/module/appx/remove-appxpackage?view=win10-ps&preserve-view=true) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
 
-1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the set up, and then sign in to the computer using an account that has local administrator privileges.
+1. The sysprep process reboots the PC and starts at the first-run experience screen. Complete the setup, and then sign in to the computer using an account that has local administrator privileges.
 
 1. Right-click Start, go to **Control Panel** (view by large or small icons) > **System** > **Advanced system settings**, and click **Settings** in the **User Profiles** section.
 
