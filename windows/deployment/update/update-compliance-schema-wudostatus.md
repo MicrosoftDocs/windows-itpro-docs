@@ -13,6 +13,9 @@ ms.technology: itpro-updates
 
 # WUDOStatus
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 > [!NOTE]
 > Currently all location-based fields are not working properly. This is a known issue.
 

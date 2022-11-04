@@ -16,9 +16,6 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-> [!Important]
-> As of August 17, 2022, the `CommercialID` is no longer required. For more information, see [Enable Windows Update for Business reports](wufb-reports-enable.md).
-
 Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
 
 - Monitor security, quality, and feature updates for Windows 11 and Windows 10 devices

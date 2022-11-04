@@ -13,6 +13,9 @@ ms.technology: itpro-updates
 
 # WaaSUpdateStatus
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 WaaSUpdateStatus records contain device-centric data and acts as the device record for Update Compliance. Each record provided in daily snapshots maps to a single device in a single tenant. This table has data such as the current device's installed version of Windows, whether it is on the latest available updates, and whether the device needs attention.
 
 |Field |Type |Example |Description |

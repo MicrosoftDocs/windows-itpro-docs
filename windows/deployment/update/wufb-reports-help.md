@@ -17,9 +17,6 @@ ms.technology: itpro-updates
 <!-- MAX6325272, OS33771278 -->
 ***(Applies to: Windows 11 & Windows 10)***
 
-> [!Important]
-> As of August 17, 2022, the `CommercialID` is no longer required. For more information, see [Enable Windows Update for Business reports](wufb-reports-enable.md).
-
 There are several resources that you can use to find help with Windows Update for Business reports. Whether you're just getting started or an experienced administrator, use the following resources when you need help with Windows Update for Business reports:
 
 - Send [product feedback about Windows Update for Business reports](#send-product-feedback)

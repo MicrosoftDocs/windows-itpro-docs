@@ -16,9 +16,6 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-> [!Important]
-> As of August 17, 2022, the `CommercialID` is no longer required.
-
 After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. The two main steps for setting up  Windows Update for Business reports are:
 
 1. [Add Windows Update for Business reports](#bkmk_add) to your Azure subscription. This step has the following phases:
@@ -61,7 +58,7 @@ Enroll into Windows Update for Business reports by configuring its settings thro
 
 Use one of the following methods to enroll into Windows Update for Business reports:
 
-### <a name="bkmk_enroll-workbook"></a> Enroll through the Azure Workbook (recommended method)
+##### <a name="bkmk_enroll-workbook"></a> Enroll through the Azure Workbook (recommended method)
 
 1. In the [Azure portal](https://portal.azure.com), select **Monitor** > **Workbooks** from the menu bar.
    - You can also type **Monitor** in the search bar. As you begin typing, the list filters based on your input.
@@ -73,7 +70,7 @@ Use one of the following methods to enroll into Windows Update for Business repo
 1. Select **Save settings** to save the settings and enroll into Windows Update for Business reports.
 1. The initial setup can take up to 24 hours. During this time, the workbook will display that it's **Waiting for Windows Update for Business reports data**.
 
-### <a name="bkmk_admin-center"></a> Enroll through the Microsoft 365 admin center
+##### <a name="bkmk_admin-center"></a> Enroll through the Microsoft 365 admin center
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]
 

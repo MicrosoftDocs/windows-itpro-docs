@@ -16,10 +16,6 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-> [!Important]
-> As of August 17, 2022, the `CommercialID` is no longer required. For more information, see [Enable Windows Update for Business reports](wufb-reports-enable.md).
-
-
 Before you begin the process of adding Windows Update for Business reports to your Azure subscription, ensure you meet the prerequisites.
 
 ## Azure and Azure Active Directory
