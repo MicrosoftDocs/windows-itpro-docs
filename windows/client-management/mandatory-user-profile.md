@@ -9,6 +9,7 @@ ms.reviewer:
 manager: aaroncz
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-manage
 ---
 
 # Create mandatory user profiles

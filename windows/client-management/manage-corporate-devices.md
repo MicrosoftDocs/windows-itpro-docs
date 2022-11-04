@@ -10,6 +10,7 @@ author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/14/2021
 ms.topic: article
+ms.technology: itpro-manage
 ---
 
 # Manage corporate devices
