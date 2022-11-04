@@ -109,7 +109,7 @@ Value type is integer.
 Supported operation is Get.
 
 <a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-rebootpending"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/RebootPending**
-A boolean value representing whether a reboot is pending on this computer. A newly-installed version of the Compatibility Appraiser may require a reboot before useful data is able to be sent.
+A boolean value representing whether a reboot is pending on this computer. A newly installed version of the Compatibility Appraiser may require a reboot before useful data is able to be sent.
 
 Value type is bool.
 
