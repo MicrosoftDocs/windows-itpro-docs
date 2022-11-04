@@ -1,5 +1,5 @@
 ---
-title: Microsoft admin center software updates page
+title: Microsoft 365 admin center software updates page
 manager: dougeby
 description: Microsoft admin center populates Windows Update for Business reports data into the software updates page.
 ms.prod: windows-client
@@ -13,7 +13,7 @@ ms.date: 06/20/2022
 ms.technology: itpro-updates
 ---
 
-# Microsoft admin center software updates page
+# Microsoft 365 admin center software updates page
 <!--37063317, 30141258, 37063041, ID2616577, ID2582518 -->
 ***(Applies to: Windows 11 & Windows 10 using [Windows Update for Business reports](wufb-reports-overview.md) and the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview))***
 
@@ -25,19 +25,21 @@ The **Software updates** page has following tabs to assist you in monitoring upd
    - For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients. This article contains information about the **Windows** tab.
 
-:::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
+  :::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
 
 ## Permissions
-<!--Using include Microsoft 365 admin center permissions-->
-[!INCLUDE [Windows Update for Business reports script error codes](./includes/wufb-reports-admin-center-permissions.md)]
 
+<!--Using include Microsoft 365 admin center permissions-->
+[!INCLUDE [Windows Update for Business reports permissions](./includes/wufb-reports-admin-center-permissions.md)]
+
+> [!NOTE]
+> These permissions for the Microsoft 365 admin center apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
 
 ## Limitations
 
 Windows Update for Business reports is a Windows service hosted in Azure that uses Windows diagnostic data. Windows Update for Business reports is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers since it doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home).
 
 ## Get started
-
 
 <!--Using include for onboarding Windows Update for Business reports through the Microsoft 365 admin center-->
 [!INCLUDE [Onboarding Windows Update for Business reports through the Microsoft 365 admin center](./includes/wufb-reports-onboard-admin-center.md)]

@@ -8,15 +8,14 @@ ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/wufb-reports-enable.md and the update/update-status-admin-center.md articles. Headings may be driven by article context.  -->
-[Enabling Windows Update for Business reports](../wufb-reports-enable.md) requires access to the [Microsoft admin center software updates page](../update-status-admin-center.md) as does displaying Windows Update for Business reports data in the admin center. The following permissions are needed for access to the [Microsoft 365 admin center](https://admin.microsoft.com):
+<!--This file is shared by updates/wufb-reports-enable.md and the update/wufb-reports-admin-center.md articles. Headings may be driven by article context.  -->
 
+To enroll into Windows Update for Business reports, edit configuration settings, display and edit the workbook, and view the **Windows** tab in the **Software Updates** page from the [Microsoft 365 admin center](https://admin.microsoft.com) use one of the following roles:
 
-- To enable Windows Update for Business reports, edit Windows Update for Business reports configuration settings, and view the **Windows** tab in the **Software Updates** page: 
-  - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
-  - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
-- To view the **Windows** tab in the **Software Updates** page:
+- [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
+- [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
+- [Windows Update deployment administrator](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator)
+   - This role allows enrollment through the [workbook](../wufb-reports-enable.md#bkmk_enroll-workbook) but not the Microsoft 365 admin center
+
+To display the workbook and view the **Windows** tab in the **Software Updates** page [Microsoft 365 admin center](https://admin.microsoft.com) use the following role:
   - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
-
-> [!NOTE]
-> These permissions for the Microsoft 365 admin center apply specifically to the **Windows** tab of the **Software Updates** page. For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).

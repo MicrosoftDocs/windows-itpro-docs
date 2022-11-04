@@ -19,7 +19,7 @@ ms.technology: itpro-updates
 > [!Important]
 > As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](wufb-reports-enable.md#bkmk_admin-center).
 
-Windows Update for Business reports is a cloud-based solution that provides information about the compliance of your Azure Active Directory-joined devices with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
+Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
 
 - Monitor security, quality, and feature updates for Windows 11 and Windows 10 devices
 - Report on devices with update compliance issues
@@ -37,7 +37,7 @@ Some of the benefits of Windows Update for Business reports are:
 Currently, Windows Update for Business reports contains the following features:
 
 - [Windows Update for Business reports workbook](wufb-reports-workbook.md)
-- Compliance status [charts in the Microsoft 365 admin](update-status-admin-center.md)
+- Compliance status [charts in the Microsoft 365 admin](wufb-reports-admin-center.md)
 - Access to the following [Windows Update for Business reports tables](wufb-reports-schema.md):
     - UCClient
     - UCClientReadinessStatus
@@ -47,7 +47,7 @@ Currently, Windows Update for Business reports contains the following features:
     - UCUpdateAlert
 - Client data collection to populate the Windows Update for Business reports tables
 
-Currently, these new tables are available to all Updates Compliance users. They will be displayed along with the original Updates Compliance tables.
+Currently, these new tables are available to all Updates Compliance users. They'll be displayed along with the original Updates Compliance tables.
 
 :::image type="content" source="media/wufb-reports-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Windows Update for Business reports data in Log Analytics." lightbox="media/wufb-reports-query-table.png":::
 

@@ -204,8 +204,8 @@
           items:
           - name: Windows Update for Business reports workbook
             href: update/wufb-reports-workbook.md
-          - name: Software updates in the Microsoft admin center
-            href: update/update-status-admin-center.md                                
+          - name: Software updates in the Microsoft 365 admin center
+            href: update/wufb-reports-admin-center.md                                
           - name: Use Windows Update for Business reports data
             href: update/wufb-reports-use.md                                
           - name: Feedback, support, and troubleshooting 

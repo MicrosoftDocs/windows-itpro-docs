@@ -32,7 +32,7 @@ There are several resources that you can use to find help with Windows Update fo
 
 ## Send product feedback
 
-Use the product feedback option to offer suggestions for new features and functionality, or for suggesting changes to the current Windows Update for Business reports features. You can share feedback directly to the Windows Update for Business reports product group. To provide product feedback:
+Use the product feedback option to offer suggestions for new features and functionality, or to suggest changes to the current Windows Update for Business reports features. You can share feedback directly to the Windows Update for Business reports product group. To provide product feedback:
 
 1. In the upper right corner of the Azure portal, select the feedback icon.
 1. Select either the smile or the frown to rate your satisfaction with your experience.
@@ -48,8 +48,8 @@ You can open support requests directly from the Azure portal. If  the **Help + S
 1. Open the **Help + Support** page from the following locations: 
   - In the [Send product feedback](#send-product-feedback) flyout, select the **contact support** link.
   - From the Azure portal, select **New support request** under the **Support + Troubleshooting** heading.
-1. Select **Create a support request** which opens the new support request page. 
-1. On the **Problem description** tab, provide information about the issue. The below items in ***bold italics*** should be used to help ensure an Windows Update for Business reports engineer receives your support request: 
+1. Select **Create a support request**, which opens the new support request page. 
+1. On the **Problem description** tab, provide information about the issue. The following items in ***bold italics*** should be used to help ensure a Windows Update for Business reports engineer receives your support request: 
    - **Summary** - Brief description of the issue
    - **Issue type** - ***Technical***
    - **Subscription** - Select the subscription used for Windows Update for Business reports
@@ -90,7 +90,7 @@ To share feedback about the Microsoft Learn platform, see [Microsoft Learn feedb
 
 ## Troubleshooting tips
 
-Use the troubleshooting tips below to resolve commonly encountered problems when using Windows Update for Business reports:
+Use the following troubleshooting tips to resolve the most common problems when using Windows Update for Business reports:
 
 ### Verify client configuration
 
@@ -103,8 +103,8 @@ The first step in troubleshooting Windows Update for Business reports is ensurin
 
 ### Devices have been correctly configured but aren't showing up in Windows Update for Business reports
 
-It takes some time for data to appear in Windows Update for Business reports for the first time or if you moved to a new Log Analytics workspace. To learn more about data latencies for Windows Update for Business reports, review [Windows Update for Business reports data latency](wufb-reports-use.md#data-latency).
+It takes some time for data to appear in Windows Update for Business reports for the first time, or if you moved to a new Log Analytics workspace. To learn more about data latencies for Windows Update for Business reports, review [Windows Update for Business reports data latency](wufb-reports-use.md#data-latency).
 
 ### Devices are appearing, but without a device name
 
-Device Name is  an opt-in via policy starting in Windows 10 version 1803. Review the required policies for enabling device name in the [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md) article.
+Device Name is  an opt-in via policy. Review the required policies for enabling device name in the [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md) article.

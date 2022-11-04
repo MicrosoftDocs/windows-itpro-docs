@@ -21,7 +21,7 @@ ms.technology: itpro-updates
 > As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](wufb-reports-enable.md#bkmk_admin-center).
 
 
-This article is specifically targeted at configuring devices enrolled to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for Windows Update for Business reports, within Microsoft Intune itself. Configuring devices for Windows Update for Business reports in Microsoft Intune breaks down to the following steps:
+This article is targeted at configuring devices enrolled to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for Windows Update for Business reports, within Microsoft Intune itself. Configuring devices for Windows Update for Business reports in Microsoft Intune breaks down to the following steps:
 
 1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll. The configuration profile contains settings for all the Mobile Device Management (MDM) policies that must be configured.
 1. Wait for data to populate. The length of this process depends on the computer being on, connected to the internet, and correctly configured. Some data types take longer to appear than others. For more information, see [Use Windows Update for Business reports](wufb-reports-use.md).
@@ -33,7 +33,7 @@ This article is specifically targeted at configuring devices enrolled to [Micros
 
 Create a configuration profile that will set the required policies for Windows Update for Business reports. There are two profile types that can be used to create a configuration profile for Windows Update for Business reports:
 - The [settings catalog](#settings-catalog)
-- [Template](#custom-oma-uri-based-profile) for a custom OMA URI based profile
+- [Template](#custom-oma-uri-based-profile) for a custom OMA URI-based profile
 
 ### Settings catalog
 
@@ -54,10 +54,10 @@ Create a configuration profile that will set the required policies for Windows U
         - **Setting**: Allow device name to be sent in Windows diagnostic data
         - **Value**: Allowed
 
-1. Proceed through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
+1. Continue through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
 1. Review the settings and then select **Create**.
 
-### Custom OMA URI based profile
+### Custom OMA URI-based profile
 
 1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Windows** > **Configuration profiles**.
 1. On the **Configuration profiles** view, select **Create profile**.
@@ -86,7 +86,7 @@ Create a configuration profile that will set the required policies for Windows U
         - **Value**: 16
     1. (*Recommended, but not required*) Add settings for **disabling devices' Diagnostic Data opt-in settings interface**. If these aren't disabled, users of each device can potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports: 
         - **Name**: Disable Telemetry opt-in interface
-        - **Description**: Disables the ability for end-users of devices can adjust diagnostic data to levels lower than defined by the Allow Telemetry setting.
+        - **Description**: Disables the ability for end users of devices can adjust diagnostic data to levels lower than defined by the Allow Telemetry setting.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/ConfigureTelemetryOptInSettingsUx`
         - **Data type**: Integer
         - **Value**: 1
@@ -98,14 +98,14 @@ Create a configuration profile that will set the required policies for Windows U
         - **Value**: 1
 
 
-1. Proceed through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
+1. Continue through the next set of tabs **Scope tags**, **Assignments**, and **Applicability Rules** to assign the configuration profile to devices you wish to enroll.
 1. Review the settings and then select **Create**.
 
 ## Deploy the configuration script
 
 The [Windows Update for Business reports Configuration Script](wufb-reports-configuration-script.md) is a useful tool for properly enrolling devices in Windows Update for Business reports, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 
-When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in pilot mode to a set of devices that you do have access to, or have a way to access the resultant log output the script provides, with as similar of a configuration profile as other devices which will be enrolled to Windows Update for Business reports, and analyzing the logs for any potential issues. Following this, you can deploy the configuration script in deployment mode as a Win32 app to all Windows Update for Business reports devices.
+When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in pilot mode to a subset of devices that you can access. After following this guidance, you can deploy the configuration script in deployment mode as a Win32 app to all Windows Update for Business reports devices.
 
 ## Next steps
 

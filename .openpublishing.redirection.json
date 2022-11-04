@@ -20144,7 +20144,12 @@
       "source_path": "windows/deployment/update/update-compliance-v2-use.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-use",
       "redirect_document_id": false
-    },	
+    },
+    {
+      "source_path": "windows/deployment/update/update-status-admin-center.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-admin-center",
+      "redirect_document_id": false
+    },	    	
     {
       "source_path": "windows/deployment/update/update-compliance-v2-workbook.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-workbook",

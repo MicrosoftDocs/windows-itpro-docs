@@ -2,7 +2,7 @@
 title: Use the Windows Update for Business reports data
 ms.reviewer: 
 manager: dougeby
-description: How to use the Windows Update for Business reports data.
+description: How to use the Windows Update for Business reports data for custom solutions using tools like Azure Monitor Logs.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
@@ -40,7 +40,7 @@ UCUpdateAlert
 
 Windows Update for Business reports uses Windows client diagnostic data as its data source. After you add Windows Update for Business reports and appropriately configure your devices, it could take 48-72 hours before they first appear.
 
-The data powering Windows Update for Business reports is refreshed every 24 hours, and refreshes with the latest data from all of your organization's devices that have been seen in the past 28 days. The entire set of data is refreshed in each daily snapshot, which means that the same data can be ingested again even if no new data actually arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data. Device connectivity to the internet and generally how active the device is influences how long it will take before it appears in Windows Update for Business reports.
+The data powering Windows Update for Business reports is refreshed every 24 hours, and refreshes with the latest data from all of your organization's devices that have been seen in the past 28 days. The entire set of data is refreshed in each daily snapshot, which means that the same data can be ingested again even if no new data arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data. Device connectivity to the internet and generally how active the device is influences how long it will take before it appears in Windows Update for Business reports.
 
 | Data Type | Data upload rate from device | Data Latency |
 |--|--|--|
@@ -57,7 +57,7 @@ The data powering Windows Update for Business reports is refreshed every 24 hour
 
 Windows Update for Business reports is built on the Azure Monitor Logs platform. All Windows Update for Business reports-related data is collected in a Log Analytics workspace, where the data is available for querying. Understanding the Azure Monitor Logs tools and features at your disposal, all integrated within Azure portal, can deeply enhance your experience and complement Windows Update for Business reports.
 
-See the Azure Monitor Logs articles below to learn how to:
+See the following Azure Monitor Logs articles to learn how to:
 - [Query log data effectively in Azure Monitor Logs](/azure/log-analytics/log-analytics-log-searches).
 - [Create and share dashboards of data in a Log Analytics workspace](/azure/log-analytics/log-analytics-dashboards).
 - [Set up alerts in Azure Monitor](/azure/log-analytics/log-analytics-alerts) to always stay informed about the critical issues you care about most.

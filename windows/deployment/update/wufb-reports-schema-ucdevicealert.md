@@ -20,7 +20,7 @@ These alerts are activated as a result of an issue that is device-specific. It i
 
 |Field |Type |Example |Description |
 |---|---|---|---|
-| **AlertClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Error` | Whether this alert is an Error, a Warning, or Informational. |
+| **AlertClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Error` | Whether this alert is an Error, a Warning, or Informational |
 | **AlertId** | [string](/azure/kusto/query/scalar-data-types/string) | `9e107d9d372bb6826bd81d3542a419d6` | The unique identifier of this alert |
 | **AlertRank** | [int](/azure/kusto/query/scalar-data-types/int) | `1000` | Integer ranking of alert for prioritization during troubleshooting |
 | **AlertStatus** | [string](/azure/kusto/query/scalar-data-types/string) | `Active` | Whether this alert is Active, Resolved, or Deleted |

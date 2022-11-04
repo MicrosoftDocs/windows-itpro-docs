@@ -19,7 +19,7 @@ ms.technology: itpro-updates
 > [!IMPORTANT]
 > As of August 17, 2022, a new step needs to be taken to ensure access to Windows Update for Business reports and the `CommercialID` is no longer required. For more information, see [Configure Windows Update for Business reports settings](wufb-reports-enable.md#bkmk_admin-center). 
 
-[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy to use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into four tab sections:
+[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy-to-use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into four tab sections:
 
 - [Summary](#summary-tab)
 - [Quality updates](#quality-updates-tab)
@@ -76,7 +76,7 @@ The **Quality updates** tab displays generalized data at the top by using tiles.
 Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 
-Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end-users are impacted.
+Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end users are impacted.
 
 ### <a name="bkmk_update-group-quality"></a> Update status group for quality updates
 

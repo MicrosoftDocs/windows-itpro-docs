@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/wufb-reports-enable.md and the update/update-status-admin-center.md articles. Headings are driven by article context.  -->
+<!--This file is shared by updates/wufb-reports-enable.md and the update/wufb-reports-admin-center.md articles. Headings are driven by article context.  -->
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
 1. Expand **Health**, then select **Software Updates**. You may need to use the **Show all** option to display **Health** in the navigation menu.
 1. In the **Software Updates** page, select the **Windows** tab.
