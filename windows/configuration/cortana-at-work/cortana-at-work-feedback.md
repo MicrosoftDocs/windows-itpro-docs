@@ -1,6 +1,6 @@
 ---
 title: Send feedback about Cortana at work back to Microsoft
-description: Learn how to send feedback to Microsoft about Cortana at work so you can provide more information to help diagnose reported issues..
+description: Learn how to send feedback to Microsoft about Cortana at work so you can provide more information to help diagnose reported issues.
 ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
