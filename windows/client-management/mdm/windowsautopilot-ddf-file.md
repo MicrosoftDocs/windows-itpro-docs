@@ -1,6 +1,6 @@
 ---
 title: WindowsAutopilot DDF file
-description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, for the WindowsAutopilot DDF file configuration service provider (CSP) .
+description: Learn how, without the ability to mark a device as remediation required, the device will remain in a broken state for the WindowsAutopilot DDF file configuration service provider (CSP).
 ms.author: vinpa
 ms.topic: article
 ms.prod: windows-client
