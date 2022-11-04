@@ -411,7 +411,7 @@ Supported operations include Get, Add, Replace, and Delete.
 Used to indicate the namespace to which the policy applies. When a Name query is issued, the DNS client compares the name in the query to all of the namespaces under DomainNameInformationList to find a match. This parameter can be one of the following types:
 
 - FQDN - Fully qualified domain name
-- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend.**.** to the DNS suffix.
+- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend .**.** to the DNS suffix.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
