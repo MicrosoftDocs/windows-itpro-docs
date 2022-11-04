@@ -41,7 +41,7 @@ In Windows 10, version 1607, the Windows Update Agent uses Delivery Optimization
 
 ## Configure servers for BranchCache
 
-You can use WSUS and Configuration Manager with BranchCache in Distributed Cache mode. BranchCache in Distributed Cache mode is easy to configure for both WSUS and Microsoft Endpoint Configuration Manager. 
+You can use WSUS and Configuration Manager with BranchCache in Distributed Cache mode. BranchCache in Distributed Cache mode is easy to configure for both WSUS and Microsoft Configuration Manager. 
 
 For a step-by-step guide to configuring BranchCache on Windows Server devices, see the [BranchCache Deployment Guide (Windows Server 2012)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj572990(v=ws.11)) or [BranchCache Deployment Guide (Windows Server 2016)](/windows-server/networking/branchcache/deploy/branchcache-deployment-guide).
 

@@ -220,7 +220,7 @@ After you create a settings location template with the UE-V template generator, 
 
 You can deploy settings location templates using of these methods:
 
--   An electronic software distribution (ESD) system such as Microsoft Endpoint Configuration Manager
+-   An electronic software distribution (ESD) system such as Microsoft Configuration Manager
 
 -   Group Policy preferences
 
