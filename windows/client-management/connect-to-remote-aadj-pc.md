@@ -10,6 +10,7 @@ ms.reviewer:
 manager: aaroncz
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-manage
 ---
 
 # Connect to remote Azure Active Directory-joined PC
