@@ -1,12 +1,13 @@
 ---
 title: Per-user services in Windows 10 and Windows Server
 description: Learn about per-user services, how to change the template service Startup Type, and manage per-user services through Group Policy and security templates.
-ms.prod: w10
+ms.prod: windows-client
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.date: 09/14/2017
 ms.reviewer: 
+ms.technology: itpro-apps
 ---
 
 # Per-user services in Windows 10 and Windows Server 
