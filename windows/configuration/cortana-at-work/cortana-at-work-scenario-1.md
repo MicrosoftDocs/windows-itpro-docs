@@ -1,12 +1,13 @@
 ---
 title: Sign into Azure AD, enable the wake word, and try a voice query
 description: A test scenario walking you through signing in and managing the notebook.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Test scenario 1 – Sign into Azure AD, enable the wake word, and try a voice query
