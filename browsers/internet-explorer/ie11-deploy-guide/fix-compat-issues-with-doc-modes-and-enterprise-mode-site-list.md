@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 ms.reviewer: 
 audience: itpro

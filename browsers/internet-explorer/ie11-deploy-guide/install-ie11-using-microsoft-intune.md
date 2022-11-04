@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to add and deploy the Internet Explorer 11 update using Microsoft Intune.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: b2dfc08c-78af-4c22-8867-7be3b92b1616
 ms.reviewer: 
 manager: dansimp
