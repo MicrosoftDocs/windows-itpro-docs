@@ -4,10 +4,11 @@ description: Export Start layout to LayoutModification.json with pinned apps, an
 manager: aaroncz
 ms.author: lizlong
 ms.reviewer: ericpapa
-ms.prod: w11
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.collection: highpri
+ms.technology: itpro-configure
 ---
 
 # Customize the Start menu layout on Windows 11
