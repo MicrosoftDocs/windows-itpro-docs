@@ -114,7 +114,7 @@ Then restart the computer.
 
 ```powershell
     # Set PolicyId GUID to the PolicyId from your WDAC policy XML
-    $PolicyId = "{A244370E-44C9-4C06-B551-F6016E563076}"
+    $PolicyId = "{PolicyId GUID}"
 
     # Initialize variables
     $SinglePolicyFormatPolicyId = "{A244370E-44C9-4C06-B551-F6016E563076}"
