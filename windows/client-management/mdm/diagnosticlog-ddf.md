@@ -1,6 +1,6 @@
 ---
 title: DiagnosticLog DDF
-description: Learn about the the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider (CSP).
+description: Learn about the OMA DM device description framework (DDF) for the DiagnosticLog configuration service provider (CSP).
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
