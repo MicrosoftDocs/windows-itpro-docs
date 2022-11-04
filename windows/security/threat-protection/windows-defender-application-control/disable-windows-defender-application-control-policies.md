@@ -166,7 +166,7 @@ A WDAC policy that blocks boot critical drivers can cause a boot stop failure (B
 
 To remove a policy that is causing boot stop failures:
 
-1. If the policy is a **signed** WDAC policy, turn off Secure Boot from your [UEFI BIOS menu](/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode?view=windows-11). For help with locating where to turn off Secure Boot within your BIOS menu, consult with your original equipment manufacturer (OEM).
+1. If the policy is a **signed** WDAC policy, turn off Secure Boot from your [UEFI BIOS menu](/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode). For help with locating where to turn off Secure Boot within your BIOS menu, consult with your original equipment manufacturer (OEM).
 2. Access the Advanced Boot Options menu on your computer and choose the option to **Disable Driver Signature Enforcement**. For instructions on accessing the Advanced Boot Options menu during startup, consult with your OEM. This option will suspend all code integrity checks, including WDAC, for a single boot session.
 3. Start Windows normally and sign in. Then, [remove WDAC policies using script](#remove-wdac-policies-using-script).
 4. If you turned off Secure Boot in step 1 above and your drive is protected by BitLocker, [suspend BitLocker protection](/troubleshoot/windows-client/windows-security/suspend-bitlocker-protection-non-microsoft-updates) then turn on Secure Boot from your UEFI BIOS menu.
