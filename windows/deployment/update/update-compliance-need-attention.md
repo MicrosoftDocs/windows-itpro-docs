@@ -17,6 +17,9 @@ ms.technology: itpro-updates
 - Windows 10
 - Windows 11
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 ![Needs attention section.](images/UC_workspace_needs_attention.png)
 
 The **Needs attention!** section provides a breakdown of all Windows client device and update issues detected by Update Compliance. The summary tile for this section counts the number of devices that have issues, while the blades within break down the issues encountered. Finally, a [list of queries](#list-of-queries) blade in this section contains queries that provide values but do not fit within any other main section. 

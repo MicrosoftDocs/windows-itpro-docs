@@ -20069,6 +20069,91 @@
       "source_path": "windows/deployment/upgrade/upgrade-error-codes.md",
       "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-manual.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-manual",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-mem.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-script.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-enable.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-enable",
+      "redirect_document_id": false
+    },	
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-help.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-overview.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },		
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-prerequisites.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-prerequisites",
+      "redirect_document_id": false
+    },	
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclient.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclient",
+      "redirect_document_id": false
+    },	
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientreadinessstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientreadinessstatus",
+      "redirect_document_id": false
+    },		
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientupdatestatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucdevicealert.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucdevicealert",
+      "redirect_document_id": false
+    },		
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucserviceupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucserviceupdatestatus",
+      "redirect_document_id": false
+    },		
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucupdatealert.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucupdatealert",
+      "redirect_document_id": false
+    },	
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-use.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-status-admin-center.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-admin-center",
+      "redirect_document_id": false
+    },	    	
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-workbook.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-workbook",
+      "redirect_document_id": false
+    }    
   ]
 }
