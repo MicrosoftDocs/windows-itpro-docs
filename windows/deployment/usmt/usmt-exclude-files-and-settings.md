@@ -1,6 +1,6 @@
 ---
 title: Exclude Files and Settings (Windows 10)
-description: In this article, learn how to exclude files and settings when creating a custom .xml file and a config.xml file.
+description: In this article, learn how to exclude files and settings when creating a custom .xml file and a Config.xml file.
 ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
@@ -13,7 +13,7 @@ ms.technology: itpro-deploy
 
 # Exclude files and settings
 
-When you specify the migration .xml files, `MigApp.xml`, `Migdocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) 10.0 migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) You can create a custom .xml file to further specify what to include or exclude in the migration. In addition you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration .xml files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
+When you specify the migration .xml files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, the User State Migration Tool (USMT) 10.0 migrates the settings and components listed, as discussed in [What does USMT migrate?](usmt-what-does-usmt-migrate.md) You can create a custom .xml file to further specify what to include or exclude in the migration. In addition you can create a `Config.xml` file to exclude an entire component from a migration. You can't, however, exclude users by using the migration .xml files or the `Config.xml` file. The only way to specify which users to include and exclude is by using the user options on the command line in the ScanState tool. For more information, see the [User options](usmt-scanstate-syntax.md#user-options) section of the [ScanState syntax](usmt-scanstate-syntax.md) article.
 
 Methods to customize the migration and include and exclude files and settings include:
 

@@ -21,7 +21,7 @@ This article provides an overview of the default and custom migration XML files 
 
 The `Config.xml` file is the configuration file created by the `/genconfig` option of the ScanState tool; it can be used to modify which operating-system components are migrated by USMT. The `Config.xml` file can be used with other XML files, such as in the following example:
 
-`scanstate.exe /i:migapps.xml /i:migdocs.xml /genconfig:c:\myFolder\Config.xml`
+`ScanState.exe /i:migapps.xml /i:MigDocs.xml /genconfig:c:\myFolder\Config.xml`
 
 When used this way, the `Config.xml` file tightly controls aspects of the migration, including user profiles, data, and settings, without modifying or creating other XML files. For more information about the `Config.xml` file, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).
 
@@ -157,7 +157,7 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 
 |XML migration file|Modifies the following components:|
 |--- |--- |
-|Config.xml file|Operating-system components such as desktop wallpaper and background theme.<br/> You can also overload config.xml to include some application and document settings by generating the config.xml file with the other default XML files. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).|
+|Config.xml file|Operating-system components such as desktop wallpaper and background theme.<br/> You can also overload `Config.xml` to include some application and document settings by generating the `Config.xml` file with the other default XML files. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).|
 |MigApps.xml file|Applications settings.|
 |MigUser.xml or `MigDocs.xml` files|User files and profile settings.|
 |Custom XML files|Application settings, user profile settings, or user files, beyond the rules contained in the other XML files.|
@@ -165,7 +165,7 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 For example, you can use all of the XML migration file types for a single migration, as in the following example:
 
 ```console
-Scanstate.exe <store> /config:c:\myFolder\config.xml /i:migapps.xml /i:migdocs.xml /i:customrules.xml
+ScanState.exe <store> /config:c:\myFolder\Config.xml /i:migapps.xml /i:MigDocs.xml /i:customrules.xml
 ```
 
 ### XML rules for migrating user files
@@ -196,14 +196,14 @@ To generate the XML migration rules file for a source computer:
 
     ```console
     cd /d <USMTpath>
-    scanstate.exe /genmigxml: <filepath.xml>
+    ScanState.exe /genmigxml: <filepath.xml>
     ```
 
     Where *&lt;USMTpath&gt;* is the location on your source computer where you've saved the USMT files and tools, and *&lt;filepath.xml&gt;* is the full path to a file where you can save the report. For example, enter:
 
     ```console
     cd /d c:\USMT
-    scanstate.exe /genmigxml:"C:\Documents and Settings\USMT Tester\Desktop\genMig.xml"
+    ScanState.exe /genmigxml:"C:\Documents and Settings\USMT Tester\Desktop\genMig.xml"
     ```
 
 ### The GenerateDocPatterns function

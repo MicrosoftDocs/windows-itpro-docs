@@ -13,7 +13,7 @@ ms.technology: itpro-deploy
 
 # Migrate User Accounts
 
-By default, all users are migrated. The only way to specify which users to include and exclude is on the command line by using the User options. You can't specify users in the migration XML files or by using the Config.xml file.
+By default, all users are migrated. The only way to specify which users to include and exclude is on the command line by using the User options. You can't specify users in the migration XML files or by using the `Config.xml` file.
 
 ## To migrate all user accounts and user settings
 
@@ -21,24 +21,24 @@ Links to detailed explanations of commands are available in the [Related article
 
 1. Sign into the source computer as an administrator.
 
-2. Enter the following `scanstate.exe` command line in a command prompt window:
+2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    `scanstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml /o`
+    `ScanState.exe \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /o`
 
 3. Sign into the destination computer as an administrator.
 
-4. Enter one of the following `loadstate.exe` command lines in a command prompt window:
+4. Enter one of the following `LoadState.exe ` command lines in a command prompt window:
 
    - If you're migrating domain accounts, enter:
 
         ``` syntax
-        loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml
+        LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml
         ```
 
    - If you're migrating local accounts along with domain accounts, enter:
 
         ``` syntax
-        loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml /lac /lae
+        LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /lac /lae
         ```
 
         > [!NOTE]
@@ -50,15 +50,15 @@ Links to detailed explanations of commands are available in the [Related article
 
 1. Sign into the source computer as an administrator.
 
-2. Enter the following `scanstate.exe` command line in a command prompt window:
+2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    `scanstate.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:fabrikam\user2 /i:migdocs.xml /i:migapp.xml /o`
+    `ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml /o`
 
 3. Sign into the destination computer as an administrator.
 
-4. Enter the following `loadstate.exe` command line in a command prompt window:
+4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
-    `loadstate.exe \\server\share\migration\mystore /i:migdocs.xml /i:migapp.xml`
+    `LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml`
 
 ## To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain
 
@@ -66,15 +66,15 @@ Links to detailed explanations of commands are available in the [Related article
 
 1. Sign into the source computer as an administrator.
 
-2. Enter the following `scanstate.exe` command line in a command prompt window:
+2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    `scanstate.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:contoso\user2 /i:migdocs.xml /i:migapp.xml /o`
+    `ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:contoso\user2 /i:MigDocs.xml /i:MigApp.xml /o`
 
 3. Sign into the destination computer as an administrator.
 
-4. Enter the following `loadstate.exe` command line in a command prompt window:
+4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
-    `loadstate.exe \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:migdocs.xml /i:migapp.xml`
+    `LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml`
 
 ## Related articles
 

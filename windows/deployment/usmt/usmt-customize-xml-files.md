@@ -78,15 +78,15 @@ In addition, note the following functionality with the `Config.xml` file:
 
 - The following command creates a `Config.xml` file in the current directory, but it doesn't create a store:
 
-    `scanstate /i:migapp.xml /i:migdocs.xml /genconfig:config.xml /v:5`
+    `ScanState.exe /i:MigApp.xml /i:MigDocs.xml /genconfig:Config.xml /v:5`
 
 - The following command creates an encrypted store using the `Config.xml` file and the default migration .xml files:
 
-    `scanstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /o /config:config.xml /v:5 /encrypt /key:"mykey"`
+    `ScanState.exe \\server\share\migration\mystore /i:MigApp.xml /i:MigDocs.xml /o /config:Config.xml /v:5 /encrypt /key:"mykey"`
 
 - The following command decrypts the store and migrates the files and settings:
 
-    `loadstate \\server\share\migration\mystore /i:migapp.xml /i:migdocs.xml /v:5 /decrypt /key:"mykey"`
+    `LoadState.exe \\server\share\migration\mystore /i:MigApp.xml /i:MigDocs.xml /v:5 /decrypt /key:"mykey"`
 
 ## Additional information
 

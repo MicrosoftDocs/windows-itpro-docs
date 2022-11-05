@@ -13,7 +13,7 @@ ms.technology: itpro-deploy
 
 # Offline Migration Reference
 
-Offline migration enables the ScanState tool to run inside a different Windows&reg; operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
+Offline migration enables the ScanState tool to run inside a different Windows operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
 
 - **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
 
@@ -41,7 +41,7 @@ The following user data and settings migrate offline, similar to an online migra
 
 - EFS files
 
-- Internet Explorer&reg; Favorites
+- Internet Explorer Favorites
 
 For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
@@ -85,7 +85,7 @@ An offline migration can either be enabled by using a configuration file on the 
 
 |Component|Option|Description|
 |--- |--- |--- |
-|ScanState.exe|**/offline:***&lt;path to offline.xml&gt;*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
+|ScanState.exe|**/offline:***&lt;path to Offline.xml&gt;*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
 |ScanState.exe|**/offlineWinDir:***&lt;Windows directory&gt;*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
 |ScanState.exe|**/OfflineWinOld:***&lt;Windows.old directory&gt;*|This command-line option enables the offline migration mode and starts the migration from the location specified. It's only intended to be used in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
 
@@ -98,11 +98,11 @@ The following system environment variables are necessary in the scenarios outlin
 |Variable|Value|Scenario|
 |--- |--- |--- |
 |USMT_WORKING_DIR|Full path to a working directory|Required when USMT binaries are located on read-only media, which doesn't support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following command: <br/><pre class="syntax"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre>|
-|MIG_OFFLINE_PLATFORM_ARCH|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `Scanstate.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command: <br/><pre class="syntax"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre>|
+|MIG_OFFLINE_PLATFORM_ARCH|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command: <br/><pre class="syntax"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre>|
 
 ## Offline.xml elements
 
-Use an `offline.xml` file when running the ScanState tool on a computer that has multiple Windows directories. The `offline.xml` file specifies which directories to scan for windows files. An `offline.xml` file can be used with the `/offline` option as an alternative to specifying a single Windows directory path with the `/offlineDir` option.
+Use an `Offline.xml` file when running the ScanState tool on a computer that has multiple Windows directories. The `Offline.xml` file specifies which directories to scan for windows files. An `Offline.xml` file can be used with the `/offline` option as an alternative to specifying a single Windows directory path with the `/offlineDir` option.
 
 ### &lt;offline&gt;
 

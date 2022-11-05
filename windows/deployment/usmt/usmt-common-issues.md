@@ -108,8 +108,8 @@ To remove encryption from files that have already been migrated incorrectly, you
 **Resolution:** You can use the `/mu` option when you run the **LoadState** tool to specify a new name for the user. For example,
 
 ``` syntax
-loadstate.exe /i:migapp.xml /i:migdocs.xml \\server\share\migration\mystore 
-/progress:prog.log /l:load.log /mu:fareast\user1:farwest\user1
+LoadState.exe  /i:MigApp.xml /i:MigDocs.xml \\server\share\migration\mystore 
+/progress:Progress.log /l:LoadState.log /mu:fareast\user1:farwest\user1
 ```
 
 ## Command-line problems
@@ -126,19 +126,19 @@ The following sections describe common command-line problems. Expand the section
 
 **Cause:** If you're running the **ScanState** or **LoadState** tools from a shared network resource, you'll receive this error message if you don't specify `/l`.
 
-**Resolution:** To fix this issue in this scenario, specify the `/l:scan.log` or `/l:load.log` option.
+**Resolution:** To fix this issue in this scenario, specify the `/l:ScanState.log` or `/l:LoadState.log` option.
 
 ## XML file problems
 
 The following sections describe common XML file problems. Expand the section to see recommended solutions.
 
-### I used the /genconfig option to create a Config.xml file, but I see only a few applications and components that are in MigApp.xml. Why does Config.xml not contain all of the same applications?
+### I used the `/genconfig` option to create a `Config.xml` file, but I see only a few applications and components that are in `MigApp.xml`. Why does `Config.xml` not contain all of the same applications?
 
 **Cause:** `Config.xml` will contain only operating system components, applications, and the user document sections that are in both of the .xml files and are installed on the computer when you run the `/genconfig` option. Otherwise, these applications and components won't appear in the `Config.xml` file.
 
 **Resolution:** Install all of the desired applications on the computer before running the `/genconfig` option. Then run `ScanState.exe` with all of the .xml files. For example, run the following command:
 
-`scanstate.exe /genconfig:config.xml /i:migdocs.xml /i:migapp.xml /v:5 /l:scanstate.log`
+`ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:5 /l:ScanState.log`
 
 ### I'm having problems with a custom .xml file that I authored, and I can't verify that the syntax is correct
 
@@ -194,7 +194,7 @@ There are three typical causes for this issue.
 **Resolution:** Run the **ScanState** and **LoadState** tools from within an account with administrative credentials.
  --->
 
-### I included MigApp.xml in the migration, but some PST files aren't migrating
+### I included `MigApp.xml` in the migration, but some `PST` files aren't migrating
 
 **Cause:** The `MigApp.xml` file migrates only the PST files that are linked to Outlook profiles.
 
@@ -247,7 +247,7 @@ The following sections describe common offline migration problems. Expand the se
 **Resolution:** Use a Security Identifier (SID) to include a user when running the **ScanState** tool. For example:
 
 ``` syntax
-Scanstate.exe /ui:S1-5-21-124525095-708259637-1543119021*
+ScanState.exe /ui:S1-5-21-124525095-708259637-1543119021*
 ```
 
 The wild card (\*) at the end of the SID will migrate the *SID*\_Classes key as well.
@@ -281,7 +281,7 @@ The following sections describe common hard-link migration problems. Expand the 
 **Resolution:** Use the UsmtUtils tool to delete the store or change the store name. For example, at a command prompt, enter:
 
 ``` syntax
-USMTutils.exe /rd <storedir>
+UsmtUtils.exe /rd <storedir>
 ```
 
 You should also reboot the machine.

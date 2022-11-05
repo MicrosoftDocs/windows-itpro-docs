@@ -31,7 +31,7 @@ The following table describes each command-line option related to logs, and it p
 
 |Command line Option|File Name|Description|
 |--- |--- |--- |
-|**/l**"*[Path]FileName*|`Scanstate.log` or `LoadState.log`|Specifies the path and file name of the **ScanState** log or **LoadState** log.|
+|**/l**"*[Path]FileName*|`ScanState.exe.log` or `LoadState.log`|Specifies the path and file name of the **ScanState** log or **LoadState** log.|
 |**/progress**:*[Path]FileName*|Specifies the path and file name of the Progress log.|Provides information about the status of the migration, by percentage complete.|
 |**/v**:*[VerbosityLevel]*|Not applicable|See [Monitoring options](usmt-scanstate-syntax.md#monitoring-options) in [ScanState syntax](usmt-scanstate-syntax.md).|
 |**/listfiles**:*[Path]FileName*|Specifies the path and file name of the Listfiles log.|Provides a list of the files that were migrated.|

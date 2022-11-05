@@ -34,7 +34,7 @@ This article outlines the general process that you should follow to migrate file
 
 6. Create a [Config.xml File](usmt-configxml-file.md) if you want to exclude any components from the migration. To create this file, use the [ScanState Syntax](usmt-scanstate-syntax.md) option together with the other .xml files when you use the `ScanState.exe` command. For example, the following command creates a `Config.xml` file by using the `MigDocs.xml` and `MigApp.xml` files:
 
-    `scanstate.exe /genconfig:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:scanstate.log`
+    `ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log`
 
 7. Review the migration state of the components listed in the `Config.xml` file, and specify `migrate=no` for any components that you don't want to migrate.
 
@@ -42,19 +42,19 @@ This article outlines the general process that you should follow to migrate file
 
 1. Back up the source computer.
 
-2. Close all applications. If some applications are running when you run the `Scanstate.exe` command, USMT might not migrate all of the specified data. For example, if Microsoft&reg; Office Outlook&reg; is open, USMT might not migrate PST files.
+2. Close all applications. If some applications are running when you run the `ScanState.exe` command, USMT might not migrate all of the specified data. For example, if Microsoft Office Outlook is open, USMT might not migrate PST files.
 
      > [!NOTE]
      > USMT will fail if it cannot migrate a file or setting unless you specify the `/C` option. When you specify the `/C` option, USMT will ignore the errors, and log an error every time that it encounters a file that is being used that USMT did not migrate. You can use the `<ErrorControl>` section in the `Config.xml` file to specify which errors should be ignored, and which should cause the migration to fail.
 
-3. Run the `Scanstate.exe` command on the source computer to collect files and settings. You should specify all of the .xml files that you want the `Scanstate.exe` command to use. For example,
+3. Run the `ScanState.exe` command on the source computer to collect files and settings. You should specify all of the .xml files that you want the `ScanState.exe` command to use. For example,
 
-    `scanstate.exe \\server\migration\mystore /config:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:scan.log`
+    `ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log`
 
      > [!NOTE]
-     > If the source computer is running Windows 7, or Windows 8, you must run the `Scanstate.exe` command in **Administrator** mode. To run in **Administrator** mode, right-click **Command Prompt**, and then select **Run As Administrator**. For more information about the how the `Scanstate.exe` command processes and stores the data, see [How USMT Works](usmt-how-it-works.md).
+     > If the source computer is running Windows 7, or Windows 8, you must run the `ScanState.exe` command in **Administrator** mode. To run in **Administrator** mode, right-click **Command Prompt**, and then select **Run As Administrator**. For more information about the how the `ScanState.exe` command processes and stores the data, see [How USMT Works](usmt-how-it-works.md).
 
-4. Run the `USMTUtils.exe` command with the `/Verify` option to ensure that the store you created isn't corrupted.
+4. Run the `UsmtUtils.exe` command with the `/Verify` option to ensure that the store you created isn't corrupted.
 
 ## Step 3: Prepare the destination computer and restore files and settings
 
@@ -63,20 +63,20 @@ This article outlines the general process that you should follow to migrate file
 2. Install all applications that were on the source computer. Although it isn't always required, we recommend installing all applications on the destination computer before you restore the user state. This makes sure that migrated settings are preserved.
 
      > [!NOTE]
-     > The application version that is installed on the destination computer should be the same version as the one on the source computer. USMT does not support migrating the settings for an older version of an application to a newer version. The exception to this is Microsoft&reg; Office, which USMT can migrate from an older version to a newer version.
+     > The application version that is installed on the destination computer should be the same version as the one on the source computer. USMT does not support migrating the settings for an older version of an application to a newer version. The exception to this is Microsoft Office, which USMT can migrate from an older version to a newer version.
 
-3. Close all applications. If some applications are running when you run the `Loadstate.exe` command, USMT might not migrate all of the specified data. For example, if Microsoft Office Outlook is open, USMT might not migrate PST files.
+3. Close all applications. If some applications are running when you run the `LoadState.exe ` command, USMT might not migrate all of the specified data. For example, if Microsoft Office Outlook is open, USMT might not migrate PST files.
 
      > [!NOTE]
      > Use `/C` to continue your migration if errors are encountered, and use the `<ErrorControl>` section in the `Config.xml` file to specify which errors should be ignored, and which errors should cause the migration to fail.
 
-4. Run the `Loadstate.exe` command on the destination computer. Specify the same set of .xml files that you specified when you used the `Scanstate.exe` command. However, you don't have to specify the `Config.xml` file, unless you want to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store, but not to the destination computer. To do this, modify the `Config.xml` file and specify the updated file by using the `Loadstate.exe` command. Then, the `Loadstate.exe` command will migrate only the files and settings that you want to migrate. For more information about how the `Loadstate.exe` command processes and migrates data, see [How USMT Works](usmt-how-it-works.md).
+4. Run the `LoadState.exe ` command on the destination computer. Specify the same set of .xml files that you specified when you used the `ScanState.exe` command. However, you don't have to specify the `Config.xml` file, unless you want to exclude some of the files and settings that you migrated to the store. For example, you might want to migrate the My Documents folder to the store, but not to the destination computer. To do this, modify the `Config.xml` file and specify the updated file by using the `LoadState.exe ` command. Then, the `LoadState.exe ` command will migrate only the files and settings that you want to migrate. For more information about how the `LoadState.exe ` command processes and migrates data, see [How USMT Works](usmt-how-it-works.md).
 
     For example, the following command migrates the files and settings:
 
-    `loadstate.exe \\server\migration\mystore /config:config.xml /i:migdocs.xml /i:migapp.xml /v:13 /l:load.log`
+    `LoadState.exe  \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:LoadState.log`
 
      > [!NOTE]
-     > Run the `Loadstate.exe` command in administrator mode. To do this, right-click **Command Prompt**, and then click **Run As Administrator**.
+     > Run the `LoadState.exe ` command in administrator mode. To do this, right-click **Command Prompt**, and then click **Run As Administrator**.
 
-5. Sign out after you run the `Loadstate.exe` command. Some settings (for example, fonts, wallpaper, and screen saver settings) won't take effect until the next time that the user logs on.
+5. Sign out after you run the `LoadState.exe ` command. Some settings (for example, fonts, wallpaper, and screen saver settings) won't take effect until the next time that the user logs on.

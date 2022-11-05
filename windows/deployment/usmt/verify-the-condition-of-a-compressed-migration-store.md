@@ -37,7 +37,7 @@ The following sections demonstrate how to run the `UsmtUtils.exe` command with t
 
 To verify the condition of a compressed migration store, use the following UsmtUtils syntax:
 
-> usmtutils.exe /verify\[:&lt;*reportType*&gt;\] &lt;*filePath*&gt; \[/l:&lt;*logfile*&gt;\] \[/decrypt \[:&lt;*AlgID*&gt;\] {/key:&lt;*keystring*&gt; | /keyfile:&lt;*filename*&gt;}\]
+> UsmtUtils.exe /verify\[:&lt;*reportType*&gt;\] &lt;*filePath*&gt; \[/l:&lt;*logfile*&gt;\] \[/decrypt \[:&lt;*AlgID*&gt;\] {/key:&lt;*keystring*&gt; | /keyfile:&lt;*filename*&gt;}\]
 
 Where the placeholders have the following values:
 
@@ -60,7 +60,7 @@ Where the placeholders have the following values:
 To verify whether the migration store is intact or whether it contains corrupted files or a corrupted catalog, enter:
 
 ``` syntax
-usmtutils.exe /verify D:\MyMigrationStore\store.mig
+UsmtUtils.exe /verify D:\MyMigrationStore\store.mig
 ```
 
 Because no report type is specified, **UsmtUtils** displays the default summary report.
@@ -70,7 +70,7 @@ Because no report type is specified, **UsmtUtils** displays the default summary 
 To verify whether the catalog file is corrupted or intact, enter:
 
 ``` syntax
-usmtutils.exe /verify:catalog D:\MyMigrationStore\store.mig
+UsmtUtils.exe /verify:catalog D:\MyMigrationStore\store.mig
 ```
 
 ## To verify the status of all files
@@ -78,7 +78,7 @@ usmtutils.exe /verify:catalog D:\MyMigrationStore\store.mig
 To verify whether there are any corrupted files in the compressed migration store, and to specify the name and location of the log file, enter:
 
 ``` syntax
-usmtutils.exe /verify:all D:\MyMigrationStore\store.mig /decrypt /l:D:\UsmtUtilsLog.txt`
+UsmtUtils.exe /verify:all D:\MyMigrationStore\store.mig /decrypt /l:D:\UsmtUtilsLog.txt`
 ```
 
 In addition to verifying the status of all files, this example decrypts the files. Because no encryption algorithm is specified, **UsmtUtils** uses the default 3DES cryptographic algorithm.
@@ -88,7 +88,7 @@ In addition to verifying the status of all files, this example decrypts the file
 In this example, the log file will only list the files that became corrupted during the **ScanState** process. This list will include the catalog file if it's also corrupted.
 
 ``` syntax
-usmtutils.exe /verify:failureonly D:\MyMigrationStore\USMT\store.mig /decrypt:AES_192 /keyfile:D:\encryptionKey.txt
+UsmtUtils.exe /verify:failureonly D:\MyMigrationStore\USMT\store.mig /decrypt:AES_192 /keyfile:D:\encryptionKey.txt
 ```
 
 This example also decrypts the files by specifying the cryptographic algorithm and the location of the file that contains the encryption key.
