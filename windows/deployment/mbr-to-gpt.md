@@ -10,6 +10,7 @@ ms.localizationpriority: high
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.technology: itpro-deploy
 ---
 
 # MBR2GPT.EXE

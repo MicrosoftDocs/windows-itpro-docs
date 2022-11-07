@@ -9,6 +9,7 @@ ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.date: 10/25/2022
+ms.technology: itpro-updates
 ---
 
 # Windows Update security
