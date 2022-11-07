@@ -9,6 +9,7 @@ author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-fundamentals
+ms.date: 11/07/2022
 ---
 
 # Monitor activation
