@@ -68,8 +68,6 @@
       href: kiosk-single-app.md
     - name: Set up a multi-app kiosk
       href: lock-down-windows-10-to-specific-apps.md
-    - name: Set up a shared or guest PC
-      href: set-up-shared-or-guest-pc.md
     - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
@@ -92,7 +90,15 @@
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
-       
+
+- name: Configure multi-user and guest devices 
+  items:
+    - name: Shared devices concepts
+      href: shared-devices-concepts.md
+    - name: Configure shared devices with Shared PC
+      href: set-up-shared-or-guest-pc.md
+    - name: Shared PC technical reference
+      href: shared-pc-technical.md
 
 - name: Use provisioning packages
   items:
@@ -321,7 +327,7 @@
                   href: ue-v/uev-manage-configurations.md
                 - name: Configuring UE-V with Group Policy Objects
                   href: ue-v/uev-configuring-uev-with-group-policy-objects.md
-                - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
+                - name: Configuring UE-V with Microsoft Configuration Manager
                   href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
                 - name: Administering UE-V with Windows PowerShell and WMI
                   href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md

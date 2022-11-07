@@ -3,8 +3,8 @@ title: Policy CSP - Display
 description: Learn how to use the Policy CSP - Display setting to disable Per-Process System DPI for a semicolon-separated list of applications.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Display policies  
+## Display policies
 
 <dl>
   <dd>
@@ -41,7 +41,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="display-disableperprocessdpiforapps"></a>**Display/DisablePerProcessDpiForApps**  
+<a href="" id="display-disableperprocessdpiforapps"></a>**Display/DisablePerProcessDpiForApps**
 
 <!--SupportedSKUs-->
 
@@ -72,7 +72,7 @@ This policy allows you to disable Per-Process System DPI for a semicolon-separat
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayDisablePerProcessSystemDpiSettings*
@@ -85,7 +85,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="display-enableperprocessdpi"></a>**Display/EnablePerProcessDpi**  
+<a href="" id="display-enableperprocessdpi"></a>**Display/EnablePerProcessDpi**
 
 <!--SupportedSKUs-->
 
@@ -113,15 +113,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until you sign out and back in to Windows. 
+Per Process System DPI is an application compatibility feature for desktop applications that don't render properly after a display-scale factor (DPI) change. When the display scale factor of the primary display changes (which can happen when you connect or disconnect a display that has a different display scale factor (DPI), connect remotely from a device with a different display scale factor, or manually change the display scale factor), many desktop applications can display blurry. Desktop applications that haven't been updated to display properly in this scenario will be blurry until you sign out and back in to Windows.
 
-When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to sign out and back in to Windows. 
+When you enable this policy some blurry applications will be crisp after they're restarted, without requiring the user to sign out and back in to Windows.
 
 Be aware of the following points:
 
-Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display (or any other display having the same scale factor as that of the primary display). Some desktop applications can still be blurry on secondary displays that have different display scale factors. 
+Per Process System DPI will only improve the rendering of desktop applications that are positioned on the primary display (or any other display having the same scale factor as that of the primary display). Some desktop applications can still be blurry on secondary displays that have different display scale factors.
 
-Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays. 
+Per Process System DPI won't work for all applications as some older desktop applications will always be blurry on high DPI displays.
 
 In some cases, you may see some unexpected behavior in some desktop applications that have Per-Process System DPI applied. If that happens, Per Process System DPI should be disabled.
 
@@ -129,7 +129,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayGlobalPerProcessSystemDpiSettings*
@@ -149,7 +149,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="display-enableperprocessdpiforapps"></a>**Display/EnablePerProcessDpiForApps**  
+<a href="" id="display-enableperprocessdpiforapps"></a>**Display/EnablePerProcessDpiForApps**
 
 <!--SupportedSKUs-->
 
@@ -180,7 +180,7 @@ This policy allows you to enable Per-Process System DPI for a semicolon-separate
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayEnablePerProcessSystemDpiSettings*
@@ -193,7 +193,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**  
+<a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**
 
 <!--SupportedSKUs-->
 
@@ -232,7 +232,7 @@ If GDI DPI Scaling is configured to both turn-off and turn-on an application, th
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off GdiDPIScaling for applications*
 -   GP name: *DisplayTurnOffGdiDPIScaling*
 -   GP element: *DisplayTurnOffGdiDPIScalingPrompt*
@@ -252,7 +252,7 @@ To validate on Desktop, do the following tasks:
 <hr/>
 
 <!--Policy-->
-<a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
+<a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**
 
 <!--SupportedSKUs-->
 
@@ -291,7 +291,7 @@ If GDI DPI Scaling is configured to both turn-off and turn-on an application, th
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on GdiDPIScaling for applications*
 -   GP name: *DisplayTurnOnGdiDPIScaling*
 -   GP element: *DisplayTurnOnGdiDPIScalingPrompt*

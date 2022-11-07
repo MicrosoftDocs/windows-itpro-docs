@@ -1,19 +1,20 @@
 ---
 title: Features and functionality removed in Windows client
 description: In this article, learn about the features and functionality that have been removed or replaced in Windows client.
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.technology: itpro-fundamentals
+ms.date: 10/28/2022
 ---
 
 # Features and functionality removed in Windows client
 
-_Applies to:_
+**Applies to**
 
 - Windows 10
 - Windows 11
@@ -52,7 +53,7 @@ The following features and functionalities have been removed from the installed 
 |Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help). If you would like to create 3D word art, you can still do that in Paint 3D and view your art in VR or HoloLens with the Mixed Reality Viewer.| 1809 |
 |limpet.exe|We're releasing the limpet.exe tool, used to access TPM for Azure connectivity, as open source.| 1809 |
 |Phone Companion|When you update to Windows 10, version 1809, the Phone Companion app will be removed from your PC. Use the **Phone** page in the Settings app to sync your mobile phone with your PC. It includes all the Phone Companion features.| 1809 |
-|Future updates through [Windows Embedded Developer Update](/previous-versions/windows/embedded/ff770079(v=winembedded.60)) for Windows Embedded Standard 7-SP1 (WES7-SP1) and Windows Embedded Standard 8 (WES8)|We’re no longer publishing new updates to the WEDU server. Instead, you may secure any new updates from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). [Learn how](https://techcommunity.microsoft.com/t5/Windows-Embedded/Change-to-the-Windows-Embedded-Developer-Update/ba-p/285704) to get updates from the catalog.| 1809 |
+|Future updates through [Windows Embedded Developer Update](/previous-versions/windows/embedded/ff770079(v=winembedded.60)) for Windows Embedded Standard 7-SP1 (WES7-SP1) and Windows Embedded Standard 8 (WES8)|We're no longer publishing new updates to the WEDU server. Instead, you may secure any new updates from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). [Learn how](https://techcommunity.microsoft.com/t5/Windows-Embedded/Change-to-the-Windows-Embedded-Developer-Update/ba-p/285704) to get updates from the catalog.| 1809 |
 |Groove Music Pass|[We ended the Groove streaming music service and music track sales through the Microsoft Store in 2017](https://support.microsoft.com/help/4046109/groove-music-and-spotify-faq). The Groove app is being updated to reflect this change. You can still use Groove Music to play the music on your PC. You can use Spotify or other music services to stream music on Windows 10, or to buy music to own.| 1803 |
 |People - Suggestions will no longer include unsaved contacts for non-Microsoft accounts|Manually save the contact details for people you send mail to or get mail from.| 1803 |
 |Language control in the Control Panel|    Use the Settings app to change your language settings.| 1803 |

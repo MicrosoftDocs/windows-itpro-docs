@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_NCSI.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/14/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_NCSI
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_NCSI policies  
+## ADMX_NCSI policies
 
 <dl>
   <dd>
@@ -54,7 +54,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpdnsprobecontent"></a>**ADMX_NCSI/NCSI_CorpDnsProbeContent**  
+<a href="" id="admx-ncsi-ncsi-corpdnsprobecontent"></a>**ADMX_NCSI/NCSI_CorpDnsProbeContent**
 
 <!--SupportedSKUs-->
 
@@ -85,7 +85,7 @@ This policy setting enables you to specify the expected address of the host name
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify corporate DNS probe host address*
 -   GP name: *NCSI_CorpDnsProbeContent*
 -   GP path: *Network\Network Connectivity Status Indicator*
@@ -96,7 +96,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpdnsprobehost"></a>**ADMX_NCSI/NCSI_CorpDnsProbeHost**  
+<a href="" id="admx-ncsi-ncsi-corpdnsprobehost"></a>**ADMX_NCSI/NCSI_CorpDnsProbeHost**
 
 <!--SupportedSKUs-->
 
@@ -128,7 +128,7 @@ This policy setting enables you to specify the host name of a computer known to 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify corporate DNS probe host name*
 -   GP name: *NCSI_CorpDnsProbeHost*
 -   GP path: *Network\Network Connectivity Status Indicator*
@@ -139,7 +139,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpsiteprefixes"></a>**ADMX_NCSI/NCSI_CorpSitePrefixes**  
+<a href="" id="admx-ncsi-ncsi-corpsiteprefixes"></a>**ADMX_NCSI/NCSI_CorpSitePrefixes**
 
 <!--SupportedSKUs-->
 
@@ -171,7 +171,7 @@ This policy setting enables you to specify the list of IPv6 corporate site prefi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify corporate site prefix list*
 -   GP name: *NCSI_CorpSitePrefixes*
 -   GP path: *Network\Network Connectivity Status Indicator*
@@ -182,7 +182,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpwebprobeurl"></a>**ADMX_NCSI/NCSI_CorpWebProbeUrl**  
+<a href="" id="admx-ncsi-ncsi-corpwebprobeurl"></a>**ADMX_NCSI/NCSI_CorpWebProbeUrl**
 
 <!--SupportedSKUs-->
 
@@ -214,7 +214,7 @@ This policy setting enables you to specify the URL of the corporate website, aga
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify corporate Website probe URL*
 -   GP name: *NCSI_CorpWebProbeUrl*
 -   GP path: *Network\Network Connectivity Status Indicator*
@@ -228,7 +228,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-domainlocationdeterminationurl"></a>**ADMX_NCSI/NCSI_DomainLocationDeterminationUrl**  
+<a href="" id="admx-ncsi-ncsi-domainlocationdeterminationurl"></a>**ADMX_NCSI/NCSI_DomainLocationDeterminationUrl**
 
 <!--SupportedSKUs-->
 
@@ -260,7 +260,7 @@ This policy setting enables you to specify the HTTPS URL of the corporate websit
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify domain location determination URL*
 -   GP name: *NCSI_DomainLocationDeterminationUrl*
 -   GP path: *Network\Network Connectivity Status Indicator*
@@ -271,7 +271,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-globaldns"></a>**ADMX_NCSI/NCSI_GlobalDns**  
+<a href="" id="admx-ncsi-ncsi-globaldns"></a>**ADMX_NCSI/NCSI_GlobalDns**
 
 <!--SupportedSKUs-->
 
@@ -303,7 +303,7 @@ This policy setting enables you to specify DNS binding behavior. NCSI by default
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify global DNS*
 -   GP name: *NCSI_GlobalDns*
 -   GP path: *Network\Network Connectivity Status Indicator*
@@ -314,7 +314,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-ncsi-ncsi-passivepolling"></a>**ADMX_NCSI/NCSI_PassivePolling**  
+<a href="" id="admx-ncsi-ncsi-passivepolling"></a>**ADMX_NCSI/NCSI_PassivePolling**
 
 <!--SupportedSKUs-->
 
@@ -346,7 +346,7 @@ This Policy setting enables you to specify passive polling behavior. NCSI polls 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify passive polling*
 -   GP name: *NCSI_PassivePolling*
 -   GP path: *Network\Network Connectivity Status Indicator*

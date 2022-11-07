@@ -4,13 +4,14 @@ description: Find out the current known issues with the Volume Activation Manage
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 12/17/2019
 ms.topic: article
 ms.custom: 
-- CI 111496
-- CSSTroubleshooting
+  - CI 111496
+  - CSSTroubleshooting
+ms.technology: itpro-fundamentals
 ---
 
 # VAMT known issues

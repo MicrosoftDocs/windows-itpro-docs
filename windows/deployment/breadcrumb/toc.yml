@@ -1,0 +1,12 @@
+items:
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /troubleshoot/windows-client/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /troubleshoot/windows-client/deployment/
+      topicHref: /windows/deployment/

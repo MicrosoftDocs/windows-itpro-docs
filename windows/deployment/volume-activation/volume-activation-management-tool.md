@@ -4,12 +4,11 @@ description: The Volume Activation Management Tool (VAMT) enables network admini
 manager: dougeby
 ms.author: aaroncz
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 author: aczechowski
 ms.date: 09/16/2022
 ms.topic: overview
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
 ---
 
 # Volume Activation Management Tool (VAMT) technical reference

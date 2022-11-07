@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WindowsMediaDRM
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/13/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_WindowsMediaDRM
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_WindowsMediaDRM policies  
+## ADMX_WindowsMediaDRM policies
 
 <dl>
   <dd>
@@ -35,7 +35,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-windowsmediadrm-disableonline"></a>**ADMX_WindowsMediaDRM/DisableOnline**  
+<a href="" id="admx-windowsmediadrm-disableonline"></a>**ADMX_WindowsMediaDRM/DisableOnline**
 
 <!--SupportedSKUs-->
 
@@ -73,7 +73,7 @@ When this policy is either disabled or not configured, Windows Media DRM functio
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Windows Media DRM Internet Access*
 -   GP name: *DisableOnline*
 -   GP path: *Windows Components\Windows Media Digital Rights Management*

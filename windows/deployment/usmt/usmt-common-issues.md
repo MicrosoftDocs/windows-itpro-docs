@@ -4,10 +4,11 @@ description: Learn about common issues that you might see when you run the User 
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 09/19/2017
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Common Issues

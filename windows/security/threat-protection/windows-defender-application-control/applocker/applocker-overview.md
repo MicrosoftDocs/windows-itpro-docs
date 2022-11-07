@@ -3,19 +3,21 @@ title: AppLocker (Windows)
 description: This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies.
 ms.assetid: 94b57864-2112-43b6-96fb-2863c985dc9a
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 10/16/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # AppLocker

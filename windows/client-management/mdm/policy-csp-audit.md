@@ -3,8 +3,8 @@ title: Policy CSP - Audit
 description: Learn how the Policy CSP - Audit setting causes an audit event to be generated when an account can't sign in to a computer because the account is locked out.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,7 +15,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policies-->
-## Audit policies  
+## Audit policies
 
 <dl>
   <dd>
@@ -201,7 +201,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditaccountlockout"></a>**Audit/AccountLogonLogoff_AuditAccountLockout**  
+<a href="" id="audit-accountlogonlogoff-auditaccountlockout"></a>**Audit/AccountLogonLogoff_AuditAccountLockout**
 
 <!--SupportedSKUs-->
 
@@ -238,15 +238,15 @@ Volume: Low.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Account Lockout*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
-- 1 (default)—Success 
+- 1 (default)—Success
 - 2—Failure
 - 3—Success+Failure
 
@@ -262,7 +262,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditgroupmembership"></a>**Audit/AccountLogonLogoff_AuditGroupMembership**  
+<a href="" id="audit-accountlogonlogoff-auditgroupmembership"></a>**Audit/AccountLogonLogoff_AuditGroupMembership**
 
 <!--SupportedSKUs-->
 
@@ -297,13 +297,13 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Group Membership*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -321,7 +321,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditipsecextendedmode"></a>**Audit/AccountLogonLogoff_AuditIPsecExtendedMode**  
+<a href="" id="audit-accountlogonlogoff-auditipsecextendedmode"></a>**Audit/AccountLogonLogoff_AuditIPsecExtendedMode**
 
 <!--SupportedSKUs-->
 
@@ -357,13 +357,13 @@ Volume: High.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit IPsec Extended Mode*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -381,7 +381,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditipsecmainmode"></a>**Audit/AccountLogonLogoff_AuditIPsecMainMode**  
+<a href="" id="audit-accountlogonlogoff-auditipsecmainmode"></a>**Audit/AccountLogonLogoff_AuditIPsecMainMode**
 
 <!--SupportedSKUs-->
 
@@ -416,13 +416,13 @@ If you don't configure this policy setting, no audit event is generated during a
 Volume: High.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit IPsec Main Mode*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -440,7 +440,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditipsecquickmode"></a>**Audit/AccountLogonLogoff_AuditIPsecQuickMode**  
+<a href="" id="audit-accountlogonlogoff-auditipsecquickmode"></a>**Audit/AccountLogonLogoff_AuditIPsecQuickMode**
 
 <!--SupportedSKUs-->
 
@@ -474,13 +474,13 @@ If you configure this policy setting, an audit event is generated during an IPse
 Volume: High.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit IPsec Quick Mode*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -498,7 +498,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditlogoff"></a>**Audit/AccountLogonLogoff_AuditLogoff**  
+<a href="" id="audit-accountlogonlogoff-auditlogoff"></a>**Audit/AccountLogonLogoff_AuditLogoff**
 
 <!--SupportedSKUs-->
 
@@ -533,13 +533,13 @@ If you don't configure this policy setting, no audit event is generated when a s
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Logoff*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -557,7 +557,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditlogon"></a>**Audit/AccountLogonLogoff_AuditLogon**  
+<a href="" id="audit-accountlogonlogoff-auditlogon"></a>**Audit/AccountLogonLogoff_AuditLogon**
 
 <!--SupportedSKUs-->
 
@@ -585,8 +585,8 @@ The following are the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting allows you to audit events generated by user account sign-in attempts on the computer.
-Events in this subcategory are related to the creation of sign in sessions and occur on the computer that was accessed. For an interactive sign in, the security audit event is generated on the computer that the user account signed in to. For a network sign in, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. 
-The following events are included:  
+Events in this subcategory are related to the creation of sign in sessions and occur on the computer that was accessed. For an interactive sign in, the security audit event is generated on the computer that the user account signed in to. For a network sign in, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
+The following events are included:
 - Successful sign in attempts.
 - Failed sign in attempts.
 - Sign-in attempts using explicit credentials. This event is generated when a process attempts to sign in an account by explicitly specifying that account’s credentials. This process most commonly occurs in batch sign-in configurations, such as scheduled tasks or when using the RUNAS command.
@@ -596,13 +596,13 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Logon*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -620,7 +620,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditnetworkpolicyserver"></a>**Audit/AccountLogonLogoff_AuditNetworkPolicyServer**  
+<a href="" id="audit-accountlogonlogoff-auditnetworkpolicyserver"></a>**Audit/AccountLogonLogoff_AuditNetworkPolicyServer**
 
 <!--SupportedSKUs-->
 
@@ -655,13 +655,13 @@ Volume: Medium or High on NPS and IAS server. No volume on other computers.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Network Policy Server*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1—Success
 - 2—Failure
@@ -679,7 +679,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditotherlogonlogoffevents"></a>**Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents**  
+<a href="" id="audit-accountlogonlogoff-auditotherlogonlogoffevents"></a>**Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents**
 
 <!--SupportedSKUs-->
 
@@ -706,7 +706,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit other logon/logoff-related events that aren't covered in the “Logon/Logoff” policy setting, such as the following:  
+This policy setting allows you to audit other logon/logoff-related events that aren't covered in the “Logon/Logoff” policy setting, such as the following:
 - Terminal Services session disconnections.
 - New Terminal Services sessions.
 - Locking and unlocking a workstation.
@@ -719,13 +719,13 @@ This policy setting allows you to audit other logon/logoff-related events that a
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other Logon Logoff Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following values are the supported values:  
+The following values are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -743,7 +743,7 @@ The following values are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditspeciallogon"></a>**Audit/AccountLogonLogoff_AuditSpecialLogon**  
+<a href="" id="audit-accountlogonlogoff-auditspeciallogon"></a>**Audit/AccountLogonLogoff_AuditSpecialLogon**
 
 <!--SupportedSKUs-->
 
@@ -770,20 +770,20 @@ The following values are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by special sign ins, such as:  
+This policy setting allows you to audit events generated by special sign ins, such as:
 - The use of a special sign in, which is a sign in that has administrator-equivalent privileges and can be used to elevate a process to a higher level.
 - A sign in by a member of a Special Group. Special Groups enable you to audit events generated when a member of a certain group has logged on to your network. You can configure a list of group security identifiers (SIDs) in the registry. If any of those SIDs are added to a token during sign in and the subcategory is enabled, an event is logged. For more information about this feature, see [Audit Special Logon](/windows/security/threat-protection/auditing/audit-special-logon).
 
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Special Logon*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -801,7 +801,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogonlogoff-audituserdeviceclaims"></a>**Audit/AccountLogonLogoff_AuditUserDeviceClaims**  
+<a href="" id="audit-accountlogonlogoff-audituserdeviceclaims"></a>**Audit/AccountLogonLogoff_AuditUserDeviceClaims**
 
 <!--SupportedSKUs-->
 
@@ -838,13 +838,13 @@ Volume: Low on a client computer. Medium on a domain controller or a network ser
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit User Device Claims*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -862,7 +862,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogon-auditcredentialvalidation"></a>**Audit/AccountLogon_AuditCredentialValidation**  
+<a href="" id="audit-accountlogon-auditcredentialvalidation"></a>**Audit/AccountLogon_AuditCredentialValidation**
 
 <!--SupportedSKUs-->
 
@@ -897,13 +897,13 @@ Volume: High on domain controllers.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Credential Validation*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
 
 <!--/DbMapped-->
 ]<!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -921,7 +921,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogon-auditkerberosauthenticationservice"></a>**Audit/AccountLogon_AuditKerberosAuthenticationService**  
+<a href="" id="audit-accountlogon-auditkerberosauthenticationservice"></a>**Audit/AccountLogon_AuditKerberosAuthenticationService**
 
 <!--SupportedSKUs-->
 
@@ -957,13 +957,13 @@ Volume: High on Kerberos Key Distribution Center servers.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Kerberos Authentication Service*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -981,7 +981,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogon-auditkerberosserviceticketoperations"></a>**Audit/AccountLogon_AuditKerberosServiceTicketOperations**  
+<a href="" id="audit-accountlogon-auditkerberosserviceticketoperations"></a>**Audit/AccountLogon_AuditKerberosServiceTicketOperations**
 
 <!--SupportedSKUs-->
 
@@ -1016,13 +1016,13 @@ If you don't configure this policy setting, no audit event is generated after a 
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Kerberos Service Ticket Operations*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1040,7 +1040,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountlogon-auditotheraccountlogonevents"></a>**Audit/AccountLogon_AuditOtherAccountLogonEvents**  
+<a href="" id="audit-accountlogon-auditotheraccountlogonevents"></a>**Audit/AccountLogon_AuditOtherAccountLogonEvents**
 
 <!--SupportedSKUs-->
 
@@ -1073,13 +1073,13 @@ Currently, there are no events in this subcategory.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other Account Logon Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1097,7 +1097,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountmanagement-auditapplicationgroupmanagement"></a>**Audit/AccountManagement_AuditApplicationGroupManagement**  
+<a href="" id="audit-accountmanagement-auditapplicationgroupmanagement"></a>**Audit/AccountManagement_AuditApplicationGroupManagement**
 
 <!--SupportedSKUs-->
 
@@ -1124,7 +1124,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes to application groups as follows:  
+This policy setting allows you to audit events generated by changes to application groups as follows:
 - Application group is created, changed, or deleted.
 - Member is added or removed from an application group.
 
@@ -1134,13 +1134,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Application Group Management*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1158,7 +1158,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountmanagement-auditcomputeraccountmanagement"></a>**Audit/AccountManagement_AuditComputerAccountManagement**  
+<a href="" id="audit-accountmanagement-auditcomputeraccountmanagement"></a>**Audit/AccountManagement_AuditComputerAccountManagement**
 
 <!--SupportedSKUs-->
 
@@ -1193,13 +1193,13 @@ If you don't configure this policy setting, no audit event is generated when a c
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Computer Account Management*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1217,7 +1217,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountmanagement-auditdistributiongroupmanagement"></a>**Audit/AccountManagement_AuditDistributionGroupManagement**  
+<a href="" id="audit-accountmanagement-auditdistributiongroupmanagement"></a>**Audit/AccountManagement_AuditDistributionGroupManagement**
 
 <!--SupportedSKUs-->
 
@@ -1244,7 +1244,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes to distribution groups as follows:  
+This policy setting allows you to audit events generated by changes to distribution groups as follows:
 - Distribution group is created, changed, or deleted.
 - Member is added or removed from a distribution group.
 - Distribution group type is changed.
@@ -1258,13 +1258,13 @@ If you don't configure this policy setting, no audit event is generated when a d
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Distribution Group Management*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1282,7 +1282,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountmanagement-auditotheraccountmanagementevents"></a>**Audit/AccountManagement_AuditOtherAccountManagementEvents**  
+<a href="" id="audit-accountmanagement-auditotheraccountmanagementevents"></a>**Audit/AccountManagement_AuditOtherAccountManagementEvents**
 
 <!--SupportedSKUs-->
 
@@ -1309,7 +1309,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by other user account changes that aren't covered in this category, such as:  
+This policy setting allows you to audit events generated by other user account changes that aren't covered in this category, such as:
 - The password hash of a user account was accessed. This change happens during an Active Directory Management Tool password migration.
 - The Password Policy Checking API was called. Calls to this function can be part of an attack when a malicious application tests the policy to reduce the number of attempts during a password dictionary attack.
 - Changes to the Default Domain Group Policy under the following Group Policy paths:
@@ -1322,13 +1322,13 @@ Computer Configuration\Windows Settings\Security Settings\Account Policies\Accou
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other Account Management Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1346,7 +1346,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountmanagement-auditsecuritygroupmanagement"></a>**Audit/AccountManagement_AuditSecurityGroupManagement**  
+<a href="" id="audit-accountmanagement-auditsecuritygroupmanagement"></a>**Audit/AccountManagement_AuditSecurityGroupManagement**
 
 <!--SupportedSKUs-->
 
@@ -1373,7 +1373,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes to security groups, such as:  
+This policy setting allows you to audit events generated by changes to security groups, such as:
 - Security group is created, changed, or deleted.
 - Member is added or removed from a security group.
 - Group type is changed.
@@ -1384,13 +1384,13 @@ If you don't configure this policy setting, no audit event is generated when a s
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Security Group Management*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -1408,7 +1408,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-accountmanagement-audituseraccountmanagement"></a>**Audit/AccountManagement_AuditUserAccountManagement**  
+<a href="" id="audit-accountmanagement-audituseraccountmanagement"></a>**Audit/AccountManagement_AuditUserAccountManagement**
 
 <!--SupportedSKUs-->
 
@@ -1435,8 +1435,8 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit changes to user accounts. 
-The events included are as follows:  
+This policy setting allows you to audit changes to user accounts.
+The events included are as follows:
 - A user account is created, changed, deleted; renamed, disabled, enabled, locked out, or unlocked.
 - A user account’s password is set or changed.
 - A security identifier (SID) is added to the SID History of a user account.
@@ -1444,19 +1444,19 @@ The events included are as follows:
 - Permissions on administrative user accounts are changed.
 - Credential Manager credentials are backed up or restored.
 
-If you configure this policy setting, an audit event is generated when an attempt to change a user account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts. 
+If you configure this policy setting, an audit event is generated when an attempt to change a user account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 If you don't configure this policy setting, no audit event is generated when a user account changes.
 
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit User Account Management*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -1474,7 +1474,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-dsaccess-auditdetaileddirectoryservicereplication"></a>**Audit/DSAccess_AuditDetailedDirectoryServiceReplication**  
+<a href="" id="audit-dsaccess-auditdetaileddirectoryservicereplication"></a>**Audit/DSAccess_AuditDetailedDirectoryServiceReplication**
 
 <!--SupportedSKUs-->
 
@@ -1507,13 +1507,13 @@ Volume: High.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Detailed Directory Service Replication*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1531,7 +1531,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-dsaccess-auditdirectoryserviceaccess"></a>**Audit/DSAccess_AuditDirectoryServiceAccess**  
+<a href="" id="audit-dsaccess-auditdirectoryserviceaccess"></a>**Audit/DSAccess_AuditDirectoryServiceAccess**
 
 <!--SupportedSKUs-->
 
@@ -1558,7 +1558,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated when an Active Directory Domain Services (AD DS) object is accessed. 
+This policy setting allows you to audit events generated when an Active Directory Domain Services (AD DS) object is accessed.
 
 Only AD DS objects with a matching system access control list (SACL) are logged.
 
@@ -1567,13 +1567,13 @@ Events in this subcategory are similar to the Directory Service Access events av
 Volume: High on domain controllers. None on client computers.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Directory Service Access*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1591,7 +1591,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-dsaccess-auditdirectoryservicechanges"></a>**Audit/DSAccess_AuditDirectoryServiceChanges**  
+<a href="" id="audit-dsaccess-auditdirectoryservicechanges"></a>**Audit/DSAccess_AuditDirectoryServiceChanges**
 
 <!--SupportedSKUs-->
 
@@ -1633,13 +1633,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: High on domain controllers only.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Directory Service Changes*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1657,7 +1657,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-dsaccess-auditdirectoryservicereplication"></a>**Audit/DSAccess_AuditDirectoryServiceReplication**  
+<a href="" id="audit-dsaccess-auditdirectoryservicereplication"></a>**Audit/DSAccess_AuditDirectoryServiceReplication**
 
 <!--SupportedSKUs-->
 
@@ -1695,13 +1695,13 @@ If you don't configure this policy setting, no audit event is generated during A
 Volume: Medium on domain controllers. None on client computers.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Directory Service Replication*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1719,7 +1719,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-detailedtracking-auditdpapiactivity"></a>**Audit/DetailedTracking_AuditDPAPIActivity**  
+<a href="" id="audit-detailedtracking-auditdpapiactivity"></a>**Audit/DetailedTracking_AuditDPAPIActivity**
 
 <!--SupportedSKUs-->
 
@@ -1754,13 +1754,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit DPAPI Activity*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1777,7 +1777,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-detailedtracking-auditpnpactivity"></a>**Audit/DetailedTracking_AuditPNPActivity**  
+<a href="" id="audit-detailedtracking-auditpnpactivity"></a>**Audit/DetailedTracking_AuditPNPActivity**
 
 <!--SupportedSKUs-->
 
@@ -1812,13 +1812,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit PNP Activity*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1835,7 +1835,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-detailedtracking-auditprocesscreation"></a>**Audit/DetailedTracking_AuditProcessCreation**  
+<a href="" id="audit-detailedtracking-auditprocesscreation"></a>**Audit/DetailedTracking_AuditProcessCreation**
 
 <!--SupportedSKUs-->
 
@@ -1870,13 +1870,13 @@ If you don't configure this policy setting, no audit event is generated when a p
 Volume: Depends on how the computer is used.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Process Creation*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -1893,7 +1893,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-detailedtracking-auditprocesstermination"></a>**Audit/DetailedTracking_AuditProcessTermination**  
+<a href="" id="audit-detailedtracking-auditprocesstermination"></a>**Audit/DetailedTracking_AuditProcessTermination**
 
 <!--SupportedSKUs-->
 
@@ -1920,7 +1920,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated when a process ends. 
+This policy setting allows you to audit events generated when a process ends.
 
 If you configure this policy setting, an audit event is generated when a process ends. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 If you don't configure this policy setting, no audit event is generated when a process ends.
@@ -1928,13 +1928,13 @@ If you don't configure this policy setting, no audit event is generated when a p
 Volume: Depends on how the computer is used.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Process Termination*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1—Success
 - 2—Failure
@@ -1951,7 +1951,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-detailedtracking-auditrpcevents"></a>**Audit/DetailedTracking_AuditRPCEvents**  
+<a href="" id="audit-detailedtracking-auditrpcevents"></a>**Audit/DetailedTracking_AuditRPCEvents**
 
 <!--SupportedSKUs-->
 
@@ -1986,13 +1986,13 @@ If you don't configure this policy setting, no audit event is generated when a r
 Volume: High on RPC servers.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit RPC Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2009,7 +2009,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-detailedtracking-audittokenrightadjusted"></a>**Audit/DetailedTracking_AuditTokenRightAdjusted**  
+<a href="" id="audit-detailedtracking-audittokenrightadjusted"></a>**Audit/DetailedTracking_AuditTokenRightAdjusted**
 
 <!--SupportedSKUs-->
 
@@ -2041,13 +2041,13 @@ This policy setting allows you to audit events generated by adjusting the privil
 Volume: High.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Token Right Adjusted*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2065,7 +2065,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditapplicationgenerated"></a>**Audit/ObjectAccess_AuditApplicationGenerated**  
+<a href="" id="audit-objectaccess-auditapplicationgenerated"></a>**Audit/ObjectAccess_AuditApplicationGenerated**
 
 <!--SupportedSKUs-->
 
@@ -2093,7 +2093,7 @@ The following are the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting allows you to audit applications that generate events using the Windows Auditing application programming interfaces (APIs). Applications designed to use the Windows Auditing API use this subcategory to log auditing events related to their function.
-Events in this subcategory include:  
+Events in this subcategory include:
 - Creation of an application client context.
 - Deletion of an application client context.
 - Initialization of an application client context.
@@ -2102,13 +2102,13 @@ Events in this subcategory include:
 Volume: Depends on the applications that are generating them.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Application Generated*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2125,7 +2125,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditcentralaccesspolicystaging"></a>**Audit/ObjectAccess_AuditCentralAccessPolicyStaging**  
+<a href="" id="audit-objectaccess-auditcentralaccesspolicystaging"></a>**Audit/ObjectAccess_AuditCentralAccessPolicyStaging**
 
 <!--SupportedSKUs-->
 
@@ -2154,9 +2154,9 @@ The following are the supported values:
 <!--Description-->
 This policy setting allows you to audit access requests where the permission granted or denied by a proposed policy differs from the current central access policy on an object.
 
-If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that of the permission granted by the proposed policy. The resulting audit event will be generated as follows:  
+If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that of the permission granted by the proposed policy. The resulting audit event will be generated as follows:
 1. Success audits, when configured, records access attempts when the current central access policy grants access but the proposed policy denies access.
-2. Failure audits when configured records access attempts when:  
+2. Failure audits when configured records access attempts when:
    - The current central access policy doesn't grant access but the proposed policy grants access.
    - A principal requests the maximum access rights they're allowed and the access rights granted by the current central access policy are different than the access rights granted by the proposed policy.
 
@@ -2164,13 +2164,13 @@ Volume: Potentially high on a file server when the proposed policy differs signi
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Central Access Policy Staging*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2188,7 +2188,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditcertificationservices"></a>**Audit/ObjectAccess_AuditCertificationServices**  
+<a href="" id="audit-objectaccess-auditcertificationservices"></a>**Audit/ObjectAccess_AuditCertificationServices**
 
 <!--SupportedSKUs-->
 
@@ -2216,7 +2216,7 @@ The following are the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting allows you to audit Active Directory Certificate Services (AD CS) operations.
-AD CS operations include:  
+AD CS operations include:
 
 - AD CS startup/shutdown/backup/restore.
 - Changes to the certificate revocation list (CRL).
@@ -2238,13 +2238,13 @@ AD CS operations include:
 Volume: Medium or Low on computers running Active Directory Certificate Services.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Certification Services*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2261,7 +2261,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditdetailedfileshare"></a>**Audit/ObjectAccess_AuditDetailedFileShare**  
+<a href="" id="audit-objectaccess-auditdetailedfileshare"></a>**Audit/ObjectAccess_AuditDetailedFileShare**
 
 <!--SupportedSKUs-->
 
@@ -2298,13 +2298,13 @@ If you configure this policy setting, an audit event is generated when an attemp
 Volume: High on a file server or domain controller because of SYSVOL network access required by Group Policy.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Detailed File Share*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2321,7 +2321,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditfileshare"></a>**Audit/ObjectAccess_AuditFileShare**  
+<a href="" id="audit-objectaccess-auditfileshare"></a>**Audit/ObjectAccess_AuditFileShare**
 
 <!--SupportedSKUs-->
 
@@ -2358,13 +2358,13 @@ If you configure this policy setting, an audit event is generated when an attemp
 Volume: High on a file server or domain controller because of SYSVOL network access required by Group Policy.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit File Share*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2381,7 +2381,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditfilesystem"></a>**Audit/ObjectAccess_AuditFileSystem**  
+<a href="" id="audit-objectaccess-auditfilesystem"></a>**Audit/ObjectAccess_AuditFileSystem**
 
 <!--SupportedSKUs-->
 
@@ -2419,13 +2419,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: Depends on how the file system SACLs are configured.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit File System*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2442,7 +2442,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditfilteringplatformconnection"></a>**Audit/ObjectAccess_AuditFilteringPlatformConnection**  
+<a href="" id="audit-objectaccess-auditfilteringplatformconnection"></a>**Audit/ObjectAccess_AuditFilteringPlatformConnection**
 
 <!--SupportedSKUs-->
 
@@ -2469,8 +2469,8 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit connections that are allowed or blocked by the Windows Filtering Platform (WFP). 
-The following events are included:  
+This policy setting allows you to audit connections that are allowed or blocked by the Windows Filtering Platform (WFP).
+The following events are included:
 - The Windows Firewall Service blocks an application from accepting incoming connections on the network.
 - The WFP allows a connection.
 - The WFP blocks a connection.
@@ -2488,13 +2488,13 @@ If you don't configure this policy setting, no audit event is generated when con
 Volume: High.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Filtering Platform Connection*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2511,7 +2511,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditfilteringplatformpacketdrop"></a>**Audit/ObjectAccess_AuditFilteringPlatformPacketDrop**  
+<a href="" id="audit-objectaccess-auditfilteringplatformpacketdrop"></a>**Audit/ObjectAccess_AuditFilteringPlatformPacketDrop**
 
 <!--SupportedSKUs-->
 
@@ -2544,13 +2544,13 @@ Volume: High.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Filtering Platform Packet Drop*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2567,7 +2567,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-audithandlemanipulation"></a>**Audit/ObjectAccess_AuditHandleManipulation**  
+<a href="" id="audit-objectaccess-audithandlemanipulation"></a>**Audit/ObjectAccess_AuditHandleManipulation**
 
 <!--SupportedSKUs-->
 
@@ -2605,13 +2605,13 @@ If you don't configure this policy setting, no audit event is generated when a h
 Volume: Depends on how SACLs are configured.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Handle Manipulation*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2628,7 +2628,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditkernelobject"></a>**Audit/ObjectAccess_AuditKernelObject**  
+<a href="" id="audit-objectaccess-auditkernelobject"></a>**Audit/ObjectAccess_AuditKernelObject**
 
 <!--SupportedSKUs-->
 
@@ -2655,7 +2655,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit attempts to access the kernel, which includes mutexes and semaphores. 
+This policy setting allows you to audit attempts to access the kernel, which includes mutexes and semaphores.
 Only kernel objects with a matching System Access Control List (SACL) generate security audit events.
 
 > [!Note]
@@ -2664,13 +2664,13 @@ Only kernel objects with a matching System Access Control List (SACL) generate s
 Volume: High if auditing access of global system objects is enabled.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Kernel Object*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2687,7 +2687,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditotherobjectaccessevents"></a>**Audit/ObjectAccess_AuditOtherObjectAccessEvents**  
+<a href="" id="audit-objectaccess-auditotherobjectaccessevents"></a>**Audit/ObjectAccess_AuditOtherObjectAccessEvents**
 
 <!--SupportedSKUs-->
 
@@ -2714,15 +2714,15 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by the management of task scheduler jobs or COM+ objects. 
-For scheduler jobs, the following are audited:  
+This policy setting allows you to audit events generated by the management of task scheduler jobs or COM+ objects.
+For scheduler jobs, the following are audited:
 - Job created.
 - Job deleted.
 - Job enabled.
 - Job disabled.
 - Job updated.
 
-For COM+ objects, the following are audited:  
+For COM+ objects, the following are audited:
 - Catalog object added.
 - Catalog object updated.
 - Catalog object deleted.
@@ -2730,13 +2730,13 @@ For COM+ objects, the following are audited:
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other Object Access Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2753,7 +2753,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditregistry"></a>**Audit/ObjectAccess_AuditRegistry**  
+<a href="" id="audit-objectaccess-auditregistry"></a>**Audit/ObjectAccess_AuditRegistry**
 
 <!--SupportedSKUs-->
 
@@ -2791,13 +2791,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: Depends on how registry SACLs are configured.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Registry*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2814,7 +2814,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditremovablestorage"></a>**Audit/ObjectAccess_AuditRemovableStorage**  
+<a href="" id="audit-objectaccess-auditremovablestorage"></a>**Audit/ObjectAccess_AuditRemovableStorage**
 
 <!--SupportedSKUs-->
 
@@ -2849,13 +2849,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Removable Storage*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2872,7 +2872,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-objectaccess-auditsam"></a>**Audit/ObjectAccess_AuditSAM**  
+<a href="" id="audit-objectaccess-auditsam"></a>**Audit/ObjectAccess_AuditSAM**
 
 <!--SupportedSKUs-->
 
@@ -2900,7 +2900,7 @@ The following are the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting allows you to audit events generated by attempts to access to Security Accounts Manager (SAM) objects.
-SAM objects include:  
+SAM objects include:
 - SAM_ALIAS -- A local group.
 - SAM_GROUP -- A group that isn't a local group.
 - SAM_USER – A user account.
@@ -2917,13 +2917,13 @@ Volume: High on domain controllers. For more information about reducing the numb
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit SAM*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -2940,7 +2940,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-policychange-auditauthenticationpolicychange"></a>**Audit/PolicyChange_AuditAuthenticationPolicyChange**  
+<a href="" id="audit-policychange-auditauthenticationpolicychange"></a>**Audit/PolicyChange_AuditAuthenticationPolicyChange**
 
 <!--SupportedSKUs-->
 
@@ -2967,12 +2967,12 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes to the authentication policy, such as:  
+This policy setting allows you to audit events generated by changes to the authentication policy, such as:
 - Creation of forest and domain trusts.
 - Modification of forest and domain trusts.
 - Removal of forest and domain trusts.
 - Changes to Kerberos policy under Computer Configuration\Windows Settings\Security Settings\Account Policies\Kerberos Policy.
-- Granting of any of the following user rights to a user or group:  
+- Granting of any of the following user rights to a user or group:
     - Access This Computer From the Network.
     - Allow Logon Locally.
     - Allow Logon Through Terminal Services.
@@ -2989,13 +2989,13 @@ If you don't configure this policy setting, no audit event is generated when the
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Authentication Policy Change*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -3013,7 +3013,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-policychange-auditauthorizationpolicychange"></a>**Audit/PolicyChange_AuditAuthorizationPolicyChange**  
+<a href="" id="audit-policychange-auditauthorizationpolicychange"></a>**Audit/PolicyChange_AuditAuthorizationPolicyChange**
 
 <!--SupportedSKUs-->
 
@@ -3040,7 +3040,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes to the authorization policy, such as:  
+This policy setting allows you to audit events generated by changes to the authorization policy, such as:
 - Assignment of user rights (privileges), such as SeCreateTokenPrivilege, that aren't audited through the “Authentication Policy Change” subcategory.
 - Removal of user rights (privileges), such as SeCreateTokenPrivilege, that aren't audited through the “Authentication Policy Change” subcategory.
 - Changes in the Encrypted File System (EFS) policy.
@@ -3053,13 +3053,13 @@ If you don't configure this policy setting, no audit event is generated when the
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Authorization Policy Change*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3077,7 +3077,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-policychange-auditfilteringplatformpolicychange"></a>**Audit/PolicyChange_AuditFilteringPlatformPolicyChange**  
+<a href="" id="audit-policychange-auditfilteringplatformpolicychange"></a>**Audit/PolicyChange_AuditFilteringPlatformPolicyChange**
 
 <!--SupportedSKUs-->
 
@@ -3104,7 +3104,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes to the Windows Filtering Platform (WFP), such as: 
+This policy setting allows you to audit events generated by changes to the Windows Filtering Platform (WFP), such as:
 - IPsec services status.
 - Changes to IPsec policy settings.
 - Changes to Windows Firewall policy settings.
@@ -3116,13 +3116,13 @@ If you don't configure this policy setting, no audit event is generated when a c
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Filtering Platform Policy Change*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3140,7 +3140,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-policychange-auditmpssvcrulelevelpolicychange"></a>**Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange**  
+<a href="" id="audit-policychange-auditmpssvcrulelevelpolicychange"></a>**Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange**
 
 <!--SupportedSKUs-->
 
@@ -3167,8 +3167,8 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes in policy rules used by the Microsoft Protection Service (MPSSVC). This service is used by Windows Firewall. 
-Events include:  
+This policy setting allows you to audit events generated by changes in policy rules used by the Microsoft Protection Service (MPSSVC). This service is used by Windows Firewall.
+Events include:
 - Reporting of active policies when Windows Firewall service starts.
 - Changes to Windows Firewall rules.
 - Changes to Windows Firewall exception list.
@@ -3182,13 +3182,13 @@ If you don't configure this policy setting, no audit event is generated by chang
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit MPSSVC Rule Level Policy Change*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3206,7 +3206,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-policychange-auditotherpolicychangeevents"></a>**Audit/PolicyChange_AuditOtherPolicyChangeEvents**  
+<a href="" id="audit-policychange-auditotherpolicychangeevents"></a>**Audit/PolicyChange_AuditOtherPolicyChangeEvents**
 
 <!--SupportedSKUs-->
 
@@ -3233,7 +3233,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by other security policy changes that aren't audited in the policy change category, such as:  
+This policy setting allows you to audit events generated by other security policy changes that aren't audited in the policy change category, such as:
 - Trusted Platform Module (TPM) configuration changes.
 - Kernel-mode cryptographic self tests.
 - Cryptographic provider operations.
@@ -3244,13 +3244,13 @@ This policy setting allows you to audit events generated by other security polic
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other Policy Change Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3268,7 +3268,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-policychange-auditpolicychange"></a>**Audit/PolicyChange_AuditPolicyChange**  
+<a href="" id="audit-policychange-auditpolicychange"></a>**Audit/PolicyChange_AuditPolicyChange**
 
 <!--SupportedSKUs-->
 
@@ -3295,7 +3295,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit changes in the security audit policy settings, such as:  
+This policy setting allows you to audit changes in the security audit policy settings, such as:
 - Settings permissions and audit settings on the Audit Policy object.
 - Changes to the system audit policy.
 - Registration of security event sources.
@@ -3311,13 +3311,13 @@ This policy setting allows you to audit changes in the security audit policy set
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Policy Change*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -3335,7 +3335,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-privilegeuse-auditnonsensitiveprivilegeuse"></a>**Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse**  
+<a href="" id="audit-privilegeuse-auditnonsensitiveprivilegeuse"></a>**Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse**
 
 <!--SupportedSKUs-->
 
@@ -3363,7 +3363,7 @@ The following are the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting allows you to audit events generated by the use of non-sensitive privileges (user rights).
-The following privileges are non-sensitive:  
+The following privileges are non-sensitive:
 - Access Credential Manager as a trusted caller.
 - Access this computer from the network.
 - Add workstations to domain.
@@ -3401,13 +3401,13 @@ If you don't configure this policy setting, no audit event is generated when a n
 Volume: Very High.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Non Sensitive Privilege Use*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Privilege Use*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3424,7 +3424,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-privilegeuse-auditotherprivilegeuseevents"></a>**Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents**  
+<a href="" id="audit-privilegeuse-auditotherprivilegeuseevents"></a>**Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents**
 
 <!--SupportedSKUs-->
 
@@ -3455,13 +3455,13 @@ Not used.
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other Privilege Use Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Privilege Use*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3478,7 +3478,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-privilegeuse-auditsensitiveprivilegeuse"></a>**Audit/PrivilegeUse_AuditSensitivePrivilegeUse**  
+<a href="" id="audit-privilegeuse-auditsensitiveprivilegeuse"></a>**Audit/PrivilegeUse_AuditSensitivePrivilegeUse**
 
 <!--SupportedSKUs-->
 
@@ -3505,9 +3505,9 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated when sensitive privileges (user rights) are used, such as:  
+This policy setting allows you to audit events generated when sensitive privileges (user rights) are used, such as:
 - A privileged service is called.
-- One of the following privileges is called:  
+- One of the following privileges is called:
     - Act as part of the operating system.
     - Back up files and directories.
     - Create a token object.
@@ -3528,13 +3528,13 @@ If you don't configure this policy setting, no audit event is generated when sen
 Volume: High.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Sensitive Privilege Use*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Privilege Use*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3551,7 +3551,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-system-auditipsecdriver"></a>**Audit/System_AuditIPsecDriver**  
+<a href="" id="audit-system-auditipsecdriver"></a>**Audit/System_AuditIPsecDriver**
 
 <!--SupportedSKUs-->
 
@@ -3578,7 +3578,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by the IPsec filter driver, such as:  
+This policy setting allows you to audit events generated by the IPsec filter driver, such as:
 - Startup and shutdown of the IPsec services.
 - Network packets dropped due to integrity check failure.
 - Network packets dropped due to replay check failure.
@@ -3592,13 +3592,13 @@ If you don't configure this policy setting, no audit event is generated on an IP
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit IPsec Driver*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3616,7 +3616,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-system-auditothersystemevents"></a>**Audit/System_AuditOtherSystemEvents**  
+<a href="" id="audit-system-auditothersystemevents"></a>**Audit/System_AuditOtherSystemEvents**
 
 <!--SupportedSKUs-->
 
@@ -3643,7 +3643,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit any of the following events:  
+This policy setting allows you to audit any of the following events:
 - Startup and shutdown of the Windows Firewall service and driver.
 - Security policy processing by the Windows Firewall Service.
 - Cryptography key file and migration operations.
@@ -3651,13 +3651,13 @@ This policy setting allows you to audit any of the following events:
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Other System Events*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1—Success
 - 2—Failure
@@ -3675,7 +3675,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-system-auditsecuritystatechange"></a>**Audit/System_AuditSecurityStateChange**  
+<a href="" id="audit-system-auditsecuritystatechange"></a>**Audit/System_AuditSecurityStateChange**
 
 <!--SupportedSKUs-->
 
@@ -3702,7 +3702,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events generated by changes in the security state of the computer, such as the following events:  
+This policy setting allows you to audit events generated by changes in the security state of the computer, such as the following events:
 - Startup and shutdown of the computer.
 - Change of system time.
 - Recovering the system from CrashOnAuditFail, which is logged after a system restarts when the security event log is full and the CrashOnAuditFail registry entry is configured.
@@ -3710,13 +3710,13 @@ This policy setting allows you to audit events generated by changes in the secur
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Security State Change*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1 (default)—Success
 - 2—Failure
@@ -3734,7 +3734,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-system-auditsecuritysystemextension"></a>**Audit/System_AuditSecuritySystemExtension**  
+<a href="" id="audit-system-auditsecuritysystemextension"></a>**Audit/System_AuditSecuritySystemExtension**
 
 <!--SupportedSKUs-->
 
@@ -3761,7 +3761,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events related to security system extensions or services, such as the following:  
+This policy setting allows you to audit events related to security system extensions or services, such as the following:
 - A security system extension, such as an authentication, notification, or security package is loaded and is registered with the Local Security Authority (LSA). It's used to authenticate sign-in attempts, submit sign-in requests, and any account or password changes. Examples of security system extensions are Kerberos and NTLM.
 - A service is installed and registered with the Service Control Manager. The audit log contains information about the service name, binary, type, start type, and service account.
 
@@ -3771,13 +3771,13 @@ If you don't configure this policy setting, no audit event is generated when an 
 Volume: Low. Security system extension events are generated more often on a domain controller than on client computers or member servers.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit Security System Extension*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0 (default)—Off/None
 - 1—Success
 - 2—Failure
@@ -3795,7 +3795,7 @@ The following are the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="audit-system-auditsystemintegrity"></a>**Audit/System_AuditSystemIntegrity**  
+<a href="" id="audit-system-auditsystemintegrity"></a>**Audit/System_AuditSystemIntegrity**
 
 <!--SupportedSKUs-->
 
@@ -3822,7 +3822,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to audit events that violate the integrity of the security subsystem, such as:  
+This policy setting allows you to audit events that violate the integrity of the security subsystem, such as:
 - Events that couldn't be written to the event log because of a problem with the auditing system.
 - A process that uses a local procedure call (LPC) port that isn't valid in an attempt to impersonate a client by replying, reading, or writing to or from a client address space.
 - The detection of a Remote Procedure Call (RPC) that compromises system integrity.
@@ -3832,13 +3832,13 @@ This policy setting allows you to audit events that violate the integrity of the
 Volume: Low.
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Audit System Integrity*
 -   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
 
 <!--/DbMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 0—Off/None
 - 1—Success
 - 2—Failure

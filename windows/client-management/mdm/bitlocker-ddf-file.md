@@ -3,8 +3,8 @@ title: BitLocker DDF file
 description: Learn about the OMA DM device description framework (DDF) for the BitLocker configuration service provider.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/30/2019
@@ -14,11 +14,11 @@ manager: aaroncz
 
 # BitLocker DDF file
 
-This topic shows the OMA DM device description framework (DDF) for the **BitLocker** configuration service provider. 
+This topic shows the OMA DM device description framework (DDF) for the **BitLocker** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
-The XML below is the current version for this CSP. 
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -642,11 +642,11 @@ The XML below is the current version for this CSP.
                          require reinstallation of Windows.
                          Note: This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
                          The format is integer.
-                         The expected values for this policy are: 
+                         The expected values for this policy are:
 
                          1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
-                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, 
-                             the value 0 only takes affect on Azure Active Directory-joined devices. 
+                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update,
+                             the value 0 only takes affect on Azure Active Directory-joined devices.
                              Windows will attempt to silently enable BitLocker for value 0.
 
                          If you want to disable this policy use the following SyncML:
@@ -695,7 +695,7 @@ The XML below is the current version for this CSP.
                          If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
                          is the current logged on user in the system.
 
-                         The expected values for this policy are: 
+                         The expected values for this policy are:
 
                          1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
                          0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
@@ -745,17 +745,17 @@ The XML below is the current version for this CSP.
               <Replace />
             </AccessType>
             <Description> Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Azure Active Directory and Hybrid domain joined devices.
-                          When not configured, Rotation is turned on by default for Azure AD only and off on Hybrid. The Policy will be effective only when 
+                          When not configured, Rotation is turned on by default for Azure AD only and off on Hybrid. The Policy will be effective only when
                           Active Directory back up for recovery password is configured to required.
                           For OS drive: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives"
                           For Fixed drives: Turn on "Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives"
-                       
+
                           Supported Values: 0 - Numeric Recovery Passwords rotation OFF.
                                             1 - Numeric Recovery Passwords Rotation upon use ON for Azure Active Directory-joined devices. Default value
                                             2 - Numeric Recovery Passwords Rotation upon use ON for both Azure AD and Hybrid devices
-                         
+
                          If you want to disable this policy use the following SyncML:
- 
+
                          <Replace>
                          <CmdID>112</CmdID>
                            <Item>
@@ -797,20 +797,20 @@ The XML below is the current version for this CSP.
             </AccessType>
             <Description> Allows admin to push one-time rotation of all numeric recovery passwords for OS and Fixed Data drives on an Azure Active Directory or hybrid-joined device.
                           This policy is Execute type and rotates all numeric passwords when issued from MDM tools.
-                          
+
 The policy only comes into effect when Active Directory backup for a recovery password is configured to "required."
                               * For OS drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for operating system drives."
                               *For fixed drives, enable "Do not enable BitLocker until recovery information is stored to Active Directory Domain Services for fixed data drives."
-                       
-                          Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes: 
-                              
-* status\RotateRecoveryPasswordsStatus 
-                              * status\RotateRecoveryPasswordsRequestID
-                          
 
-                          
+                          Client returns status DM_S_ACCEPTED_FOR_PROCESSING to indicate the rotation has started. Server can query status with the following status nodes:
+
+* status\RotateRecoveryPasswordsStatus
+                              * status\RotateRecoveryPasswordsRequestID
+
+
+
 Supported Values: String form of request ID. Example format of request ID is GUID. Server can choose the format as needed according to the management tools.\
-                         
+
                          <Exec>
                          <CmdID>113</CmdID>
                            <Item>
@@ -888,10 +888,10 @@ Supported Values: String form of request ID. Example format of request ID is GUI
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description> This Node reports the status of RotateRecoveryPasswords request. 
+                <Description> This Node reports the status of RotateRecoveryPasswords request.
                               Status code can be one of the following:
-                              NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure 
- 
+                              NotStarted(2), Pending (1), Pass (0), Other error codes in case of failure
+
                 </Description>
                 <DFFormat>
                   <int />
@@ -914,10 +914,10 @@ Supported Values: String form of request ID. Example format of request ID is GUI
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description> This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+                <Description> This Node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
                               This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus
-                              To ensure the status is correctly matched to the request ID.                        
-                  
+                              To ensure the status is correctly matched to the request ID.
+
                 </Description>
                 <DFFormat>
                   <chr />

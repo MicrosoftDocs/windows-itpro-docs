@@ -30,17 +30,17 @@ ms.date: 08/26/2022
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="localsecurityauthority-allowcustomsspsaps"></a>**LocalSecurityAuthority/AllowCustomSSPsAPs**  
+<a href="" id="localsecurityauthority-allowcustomsspsaps"></a>**LocalSecurityAuthority/AllowCustomSSPsAPs**
 
 <!--SupportedSKUs-->
 
@@ -74,7 +74,7 @@ If you disable this policy setting, LSASS will block custom SSPs and APs from lo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Custom SSPs and APs to be loaded into LSASS*
 -   GP name: *AllowCustomSSPsAPs*
 -   GP path: *System/Local Security Authority*
@@ -86,7 +86,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="localsecurityauthority-configurelsaprotectedprocess"></a>**Kerberos/ConfigureLsaProtectedProcess**  
+<a href="" id="localsecurityauthority-configurelsaprotectedprocess"></a>**Kerberos/ConfigureLsaProtectedProcess**
 
 <!--SupportedSKUs-->
 
@@ -122,7 +122,7 @@ If you enable this policy without UEFI lock (2), LSASS will run as a protected p
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure LSASS to run as a protected process*
 -   GP name: *ConfigureLsaProtectedProcess*
 -   GP path: *System/Local Security Authority*

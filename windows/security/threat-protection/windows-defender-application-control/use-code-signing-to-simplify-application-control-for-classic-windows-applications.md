@@ -3,7 +3,7 @@ title: Use code signing to simplify application control for classic Windows appl
 description: With embedded signing, your WDAC policies typically don't have to be updated when an app is updated. To set up this embedded signing, you can choose from various methods.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 05/03/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use code signing to simplify application control for classic Windows applications

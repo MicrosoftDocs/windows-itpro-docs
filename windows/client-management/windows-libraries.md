@@ -2,10 +2,10 @@
 ms.reviewer: 
 manager: aaroncz
 title: Windows Libraries
-ms.prod: windows-server-threshold
+ms.prod: windows-client
 ms.author: vinpa
 ms.manager: dongill
-ms.technology: storage
+ms.technology: itpro-manage
 ms.topic: article
 author: vinaypamnani-msft
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.

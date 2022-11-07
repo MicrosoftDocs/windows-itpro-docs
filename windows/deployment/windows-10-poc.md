@@ -2,14 +2,14 @@
 title: Configure a test lab to deploy Windows 10
 description: Learn about concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-author: aczechowski
-ms.prod: w10
-ms.technology: windows
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: tutorial
-ms.date: 05/12/2022
+ms.date: 10/31/2022
 ---
 
 # Step by step guide: Configure a test lab to deploy Windows 10
@@ -25,7 +25,7 @@ This guide contains instructions to configure a proof of concept (PoC) environme
 
 This lab guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, see the following Windows 10 PoC deployment guides:
 
-- [Step by step: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
+- [Step by step: Deploy Windows 10 in a test lab using Microsoft Configuration Manager](windows-10-poc-sc-config-mgr.md)
 - [Step by step: Deploy Windows 10 in a test lab using MDT](windows-10-poc-mdt.md)
 
 The proof of concept (PoC) deployment guides are intended to provide a demonstration of Windows 10 deployment tools and processes for IT professionals that aren't familiar with these tools, and you want to set up a PoC environment. Don't use the instructions in this guide in a production setting. They aren't meant to replace the instructions found in production deployment guidance.
@@ -80,7 +80,7 @@ Hardware requirements are displayed below:
 |**OS**|Windows 8.1/10 or Windows Server 2012/2012 R2/2016|Windows 8.1 or a later|
 |**Edition**|Enterprise, Professional, or Education|Any|
 |**Architecture**|64-bit|Any <br/><br/> Retaining applications and settings requires that architecture (32-bit or 64-bit) is the same before and after the upgrade.|
-|**RAM**|8-GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16-GB RAM to test Windows 10 deployment with Microsoft Endpoint Configuration Manager.|Any|
+|**RAM**|8-GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16-GB RAM to test Windows 10 deployment with Microsoft Configuration Manager.|Any|
 |**Disk**|200-GB available hard disk space, any format.|Any size, MBR formatted.|
 |**CPU**|SLAT-Capable CPU|Any|
 |**Network**|Internet connection|Any|
@@ -841,7 +841,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
 25. Accept the default settings, read license terms and accept them, provide a strong administrator password, and select **Finish**. When you're prompted about finding PCs, devices, and content on the network, select **Yes**.
 
-26. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. This will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
+26. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. Enhanced session mode will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
 
 27. Open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
 
@@ -913,7 +913,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
     ping www.microsoft.com
     ```
 
-    If you see "Ping request could not find host `www.microsoft.com`" on PC1 and DC1, but not on SRV1, then you'll need to configure a server-level DNS forwarder on SRV1. To do this action, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
+    If you see "Ping request couldn't find host `www.microsoft.com`" on PC1 and DC1, but not on SRV1, then you'll need to configure a server-level DNS forwarder on SRV1. To do this action, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
 
     > [!NOTE]
     > This command also assumes that "Ethernet 2" is the external-facing network adapter on SRV1. If the external adapter has a different name, replace "Ethernet 2" in the command below with that name:
@@ -1018,7 +1018,7 @@ Use the following procedures to verify that the PoC environment is configured pr
 
     **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.
 
-    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it can't be resolved, "could not find host" will be displayed. If the target is found and also responds to ICMP, you'll see "Reply from" and the IP address of the target.
+    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it can't be resolved, "couldn't find host" will be displayed. If the target is found and also responds to ICMP, you'll see "Reply from" and the IP address of the target.
 
     **tracert** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 

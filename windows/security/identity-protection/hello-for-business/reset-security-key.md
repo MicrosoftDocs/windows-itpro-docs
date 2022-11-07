@@ -1,7 +1,7 @@
 ---
-title: Reset-security-key 
+title: Reset-security-key
 description: Windows 10 and Windows 11 enables users to sign in to their device using a security key. How to reset a security key
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz

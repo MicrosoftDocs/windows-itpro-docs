@@ -1,19 +1,22 @@
 ---
 title: Microsoft recommended driver block rules (Windows)
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
-keywords:  security, malware, kernel mode, driver
+keywords: security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 author: jgeurten
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.reviewer: jsuther
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/01/2022
 ---
 
 # Microsoft recommended driver block rules
@@ -25,39 +28,41 @@ manager: dansimp
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes:
+Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers. When vulnerabilities in drivers are found, we work with our partners to ensure they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes:
 
 - Known security vulnerabilities that can be exploited by attackers to elevate privileges in the Windows kernel
 - Malicious behaviors (malware) or certificates used to sign malware
 - Behaviors that aren't malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center
-](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
+
+> [!NOTE]
+> Blocking drivers can cause devices or software to malfunction, and in rare cases, lead to blue screen. The vulnerable driver blocklist is not guaranteed to block every driver found to have vulnerabilities. Microsoft attempts to balance the security risks from vulnerable drivers with the potential impact on compatibility and reliability to produce the blocklist. As always, Microsoft recommends using an explicit allow list approach to security wherever possible.
 
 ## Microsoft vulnerable driver blocklist
 
 <!-- MAXADO-6286432 -->
 
-Microsoft adds the vulnerable versions of the drivers to our vulnerable driver blocklist, which is automatically enabled on devices when any of the listed conditions are met:
-
-| Condition | Windows 10 or 11 | Windows 11 22H2 or later |
-|--|:--:|:--:|
-| Device has [Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) enabled | :heavy_check_mark: | :heavy_check_mark: |
-| Device is in [S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11) | :heavy_check_mark: | :heavy_check_mark: |
-| Device has [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled | :x: | :heavy_check_mark: |
-| Clean install of Windows | :x: | :heavy_check_mark: |
+With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by default for all devices, and can be turned on or off via the [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2) app. Except on Windows Server 2016, the vulnerable driver blocklist is also enforced when either memory integrity (also known as hypervisor-protected code integrity or HVCI), Smart App Control, or S mode is active. Users can opt in to HVCI using the [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2) app, and HVCI is on by-default for most new Windows 11 devices.
 
 > [!NOTE]
-> Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2), but the option to disable it is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can disable Microsoft vulnerable driver blocklist.
+>
+> - The Windows Security app is updated separately from the OS and ships out of box. The version with the vulnerable driver blocklist toggle is in the final validation ring and will ship to all customers very soon. Initially, you will be able to view the configuration state only and the toggle will appear grayed out. The ability to turn the toggle on or off will come with a future Windows update.
+>
+> - For Windows Insiders, the option to turn Microsoft's vulnerable driver blocklist on or off using the Windows Security app is grayed out when HVCI, Smart App Control, or S mode is enabled. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can turn off the Microsoft vulnerable driver blocklist.
+
+The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
+
+Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
 
 ## Blocking vulnerable drivers using WDAC
 
-Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
 
 > [!IMPORTANT]
-> Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy prevents the existing driver from being loaded.
+> Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from loading, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy will prevent the existing driver from loading.
 
 <br>
 <details>
@@ -77,6 +82,12 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Rule>
     <Rule>
       <Option>Enabled:Audit Mode</Option>
+    </Rule>
+    <Rule>
+      <Option>Disabled:Script Enforcement</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Update Policy No Reboot</Option>
     </Rule>
   </Rules>
   <!--EKUS-->
@@ -401,7 +412,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_MHYPROT2_1A" FriendlyName="mhyprot2.sys\B8B94C2646B62F6AC08F16514B6EFAA9866AA3C581E4C0435A7AEAFE569B2418 Hash Sha256" Hash="8CED17D1EE92AE72749AFDFE40F5029223D97F0F977E718BD5AB1242D1FF7CB5" />
     <Deny ID="ID_DENY_MHYPROT2_1B" FriendlyName="mhyprot2.sys\B8B94C2646B62F6AC08F16514B6EFAA9866AA3C581E4C0435A7AEAFE569B2418 Hash Page Sha1" Hash="1C843C256936E700CEDE3DD444E1B6714EFF4E8B" />
     <Deny ID="ID_DENY_MHYPROT2_1C" FriendlyName="mhyprot2.sys\B8B94C2646B62F6AC08F16514B6EFAA9866AA3C581E4C0435A7AEAFE569B2418 Hash Page Sha256" Hash="84516365771430545C4D7D950B0F0699EC1573F316EF787983081F027E8A1FC5" />
-	<Deny ID="ID_DENY_MHYPROT2_21" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Sha1" Hash="C771EA59F075170E952C393CFD6FC784B265027C" />
+    <Deny ID="ID_DENY_MHYPROT2_21" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Sha1" Hash="C771EA59F075170E952C393CFD6FC784B265027C" />
     <Deny ID="ID_DENY_MHYPROT2_22" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Sha256" Hash="39937D239220C1B779D7D55613DE2C0A48BD6E12E0214DA4C65992B96CF591DF" />
     <Deny ID="ID_DENY_MHYPROT2_23" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Page Sha1" Hash="CB44C6F0EE51CB4C5836499BC61DD6C1FBDF8AA1" />
     <Deny ID="ID_DENY_MHYPROT2_24" FriendlyName="mhyprot.sys\69e3fda487a5ec2ec0f67b7d79a5a836ff0036497b2d1aec514c67d2efa789b2 Hash Page Sha256" Hash="7ED26A593524A2A92FFCFB075A42BB4FA4775FFBF83AF98525244A4710886EAD" />
@@ -766,7 +777,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <FileAttrib ID="ID_FILEATTRIB_KEVP64_1" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LHA" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_LHA_1" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.11.0" />
     <FileAttrib ID="ID_FILEATTRIB_LV_DIAG" FriendlyName="LenovoDiagnosticsDriver FileAttribute" FileName="LenovoDiagnosticsDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_LV561V64" FriendlyName="LV561V64 LogiTech FileAttribute" FileName="Lv561av.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_MONITOR" FriendlyName="IOBit Monitor.sys FileAttribute" FileName="Monitor.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="15.0.0.2" />
@@ -1800,7 +1811,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_1A" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_1B" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_1C" />
-		  <FileRuleRef RuleID="ID_DENY_MHYPROT2_21" />
+          <FileRuleRef RuleID="ID_DENY_MHYPROT2_21" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_22" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_23" />
           <FileRuleRef RuleID="ID_DENY_MHYPROT2_24" />
@@ -2170,11 +2181,6 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
         <String>10.0.25210.0</String>
       </Value>
     </Setting>
-    <Setting Provider="PolicyInfo" Key="NoRevalidationUponRefresh" ValueName="NoRevalidationUponRefreshValue">
-      <Value>
-        <Boolean>true</Boolean>
-      </Value>
-    </Setting>
   </Settings>
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
 </SiPolicy>
@@ -2183,8 +2189,32 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 </details>
 
 > [!NOTE]
-> The policy listed above contains **Allow All** rules. Microsoft recommends deploying this policy alongside an existing WDAC policy instead of merging it with the existing policy. If you must use a single policy, remove the **Allow All** rules before merging it with the existing policy. For more information, see [Create a WDAC Deny Policy](create-wdac-deny-policy.md#single-policy-considerations).
+> The policy listed above contains **Allow All** rules. If your version of Windows supports WDAC multiple policies, we recommend deploying this policy alongside any existing WDAC policies. If you do plan to merge this policy with another policy, you may need to remove the **Allow All** rules before merging it if the other policy applies an explicit allow list. For more information, see [Create a WDAC Deny Policy](/windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy#single-policy-considerations).
+
+> [!NOTE]
+> To use the policy above with Windows Server 2016, you must convert the policy XML on a device running a newer operating system.
+
+## Steps to download and apply the vulnerable driver blocklist binary
+
+If you prefer to apply the vulnerable driver blocklist exactly as shown above, follow these steps:
+
+1. Download the [WDAC policy refresh tool](https://aka.ms/refreshpolicy)
+2. Download and extract the [vulnerable driver blocklist binaries](https://aka.ms/VulnerableDriverBlockList)
+3. Select either the audit only version or the enforced version and rename the file to SiPolicy.p7b
+4. Copy SiPolicy.p7b to %windir%\system32\CodeIntegrity
+5. Run the WDAC policy refresh tool you downloaded in Step 1 above to activate and refresh all WDAC policies on your computer
+
+To check that the policy was successfully applied on your computer:
+
+1. Open Event Viewer
+2. Browse to **Applications and Services Logs - Microsoft - Windows - CodeIntegrity - Operational**
+3. Select **Filter Current Log...**
+4. Replace "&lt;All Event IDs&gt;" with "3099" and select OK.
+5. Look for a 3099 event where the PolicyNameBuffer and PolicyIdBuffer match the Name and Id PolicyInfo settings found at the bottom of the blocklist WDAC Policy XML in this article. NOTE: Your computer may have more than one 3099 event if other WDAC policies are also present.
+
+> [!NOTE]
+> If any vulnerable drivers are already running that would be blocked by the policy, you must reboot your computer for those drivers to be blocked. Running processes aren't shutdown when activating a new WDAC policy without reboot.
 
 ## More information
 
-- [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)
+- [Merge Windows Defender Application Control policies](/windows/security/threat-protection/windows-defender-application-control/merge-windows-defender-application-control-policies)

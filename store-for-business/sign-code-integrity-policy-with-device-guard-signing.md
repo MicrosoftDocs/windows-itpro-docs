@@ -4,7 +4,6 @@ description: Signing code integrity policies prevents policies from being tamper
 ms.assetid: 63B56B8B-2A40-44B5-B100-DC50C43D20A9
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, security

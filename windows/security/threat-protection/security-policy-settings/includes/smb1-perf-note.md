@@ -3,7 +3,7 @@ author: dansimp
 ms.author: dansimp
 ms.date: 1/4/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.topic: include
 ms.prod: m365-security
 ---

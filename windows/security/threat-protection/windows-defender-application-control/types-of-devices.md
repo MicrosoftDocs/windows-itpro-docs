@@ -3,7 +3,7 @@ title: Policy creation for common WDAC usage scenarios (Windows)
 description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 03/01/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices
@@ -42,11 +42,11 @@ Typically, deployment of Windows Defender Application Control (WDAC) happens bes
 
 ## An introduction to Lamna Healthcare Company
 
-In the next set of topics, we'll explore each of the above scenarios using a fictional organization called Lamna Healthcare Company.
+In the next set of articles, we'll explore each of the above scenarios using a fictional organization called Lamna Healthcare Company.
 
 Lamna Healthcare Company (Lamna) is a large healthcare provider operating in the United States. Lamna employs thousands of people, from doctors and nurses to accountants, in-house lawyers, and IT technicians. Their device use cases are varied and include single-user workstations for their professional staff, shared kiosks used by doctors and nurses to access patient records, dedicated medical devices such as MRI scanners, and many others. Additionally, Lamna has a relaxed, bring-your-own-device policy for many of their professional staff.
 
-Lamna uses [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) in hybrid mode with both Configuration Manager and Intune. Although they use Microsoft Endpoint Manager to deploy many applications, Lamna has always had relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) for better endpoint detection and response.
+Lamna uses [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) in hybrid mode with both Configuration Manager and Intune. Although they use Microsoft Intune to deploy many applications, Lamna has always had relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) for better endpoint detection and response.
 
 Recently, Lamna experienced a ransomware event that required an expensive recovery process and may have included data exfiltration by the unknown attacker. Part of the attack included installing and running malicious binaries that evaded detection by Lamna's antivirus solution but would have been blocked by an application control policy. In response, Lamna's executive board has authorized many new security IT responses, including tightening policies for application use and introducing application control.
 

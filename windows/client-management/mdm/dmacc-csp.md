@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -71,76 +71,76 @@ DMAcc
 ----------------DisableOnRoaming
 ----------------SSLCLIENTCERTSEARCHCRITERIA
 ```
-<a href="" id="dmacc"></a>**DMAcc**  
+<a href="" id="dmacc"></a>**DMAcc**
 Required. Defines the root node of all OMA DM server accounts that use the OMA DM version 1.2 protocol.
 
-<a href="" id="accountuid"></a>***AccountUID***  
+<a href="" id="accountuid"></a>***AccountUID***
 Optional. Defines the unique identifier for an OMA DM server account that uses the OMA DM version 1.2 protocol.
 
 For a [w7 APPLICATION configuration service provider](w7-application-csp.md) bootstrapped account, this element is assigned a unique name by the OMA DM Client. The unique name is the hexadecimal representation of the 256-bit SHA-2 hash of the provider ID. The OMA DM server can change this node name in subsequent OMA DM sessions.
 
-<a href="" id="accountuid-appid"></a>***AccountUID*/AppID**  
+<a href="" id="accountuid-appid"></a>***AccountUID*/AppID**
 Required. Specifies the application identifier for the OMA DM account.
 
 This value must be set to "w7".
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="accountuid-serverid"></a>***AccountUID*/ServerID**  
+<a href="" id="accountuid-serverid"></a>***AccountUID*/ServerID**
 Required. Specifies the OMA DM server's unique identifier for the current OMA DM account. This value is case-sensitive.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="accountuid-name"></a>***AccountUID*/Name**  
+<a href="" id="accountuid-name"></a>***AccountUID*/Name**
 Optional. Specifies the display name of the application.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="accountuid-prefconref"></a>***AccountUID*/PrefConRef**  
+<a href="" id="accountuid-prefconref"></a>***AccountUID*/PrefConRef**
 Optional. Specifies the preferred connectivity for the OMA DM account.
 
 This element contains either a URI to a NAP management object or a connection GUID used by Connection Manager. If this element is missing, the device uses the default connection that is provided by Connection Manager.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="accountuid-appaddr"></a>***AccountUID*/AppAddr**  
+<a href="" id="accountuid-appaddr"></a>***AccountUID*/AppAddr**
 Interior node for DM server address.
 
 Required.
 
-<a href="" id="appaddr-objectname"></a>**AppAddr/**<strong>*ObjectName*</strong>  
+<a href="" id="appaddr-objectname"></a>**AppAddr/**<strong>*ObjectName*</strong>
 Required. Defines the OMA DM server address. Only one server address can be configured.
 
 When the [w7 APPLICATION configuration service provider](w7-application-csp.md) is being mapped to the DMAcc Configuration Service Provider, the name of this element is "1". This DM address is the first one encountered in the w7 APPLICATION configuration service provider; other DM accounts are ignored.
 
-<a href="" id="objectname-addr"></a>***ObjectName*/Addr**  
+<a href="" id="objectname-addr"></a>***ObjectName*/Addr**
 Required. Specifies the address of the OMA DM account. The type of address stored is specified by the AddrType element.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="objectname-addrtype"></a>***ObjectName*/AddrType**  
+<a href="" id="objectname-addrtype"></a>***ObjectName*/AddrType**
 Required. Specifies the format and interpretation of the Addr node value. The default is "URI".
 
 The default value of "URI" specifies that the OMA DM account address in **Addr** is a URI address. A value of "IPv4" specifies that the OMA DM account address in **Addr** is an IP address.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="objectname-port"></a>***ObjectName*/Port**  
+<a href="" id="objectname-port"></a>***ObjectName*/Port**
 Interior node for port information.
 
 Optional.
 
-<a href="" id="port-objectname"></a>**Port/**<strong>*ObjectName*</strong>  
+<a href="" id="port-objectname"></a>**Port/**<strong>*ObjectName*</strong>
 Required. Only one port number can be configured.
 
 When the [w7 APPLICATION configuration service provider](w7-application-csp.md) is being mapped to the DMAcc Configuration Service Provider, the name of this element is "1".
 
-<a href="" id="objectname-portnbr"></a>***ObjectName*/PortNbr**  
+<a href="" id="objectname-portnbr"></a>***ObjectName*/PortNbr**
 Required. Specifies the port number of the OMA MD account address. This number must be a decimal number that fits within the range of a 16-bit unsigned integer.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="accountuid-aauthpref"></a>***AccountUID*/AAuthPref**  
+<a href="" id="accountuid-aauthpref"></a>***AccountUID*/AAuthPref**
 Optional. Specifies the application authentication preference.
 
 A value of "BASIC" specifies that the client attempts BASIC authentication. A value of "DIGEST' specifies that the client attempts MD5 authentication.
@@ -149,98 +149,98 @@ If this value is empty, the client attempts to use the authentication mechanism 
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="accountuid-appauth"></a>***AccountUID*/AppAuth**  
+<a href="" id="accountuid-appauth"></a>***AccountUID*/AppAuth**
 Optional. Defines authentication settings.
 
-<a href="" id="appauth-objectname"></a>**AppAuth/**<strong>*ObjectName*</strong>  
+<a href="" id="appauth-objectname"></a>**AppAuth/**<strong>*ObjectName*</strong>
 Required. Defines one set of authentication settings.
 
 When the [w7 APPLICATION configuration service provider](w7-application-csp.md) is being mapped to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
 
-<a href="" id="objectname-aauthlevel"></a>***ObjectName*/AAuthlevel**  
+<a href="" id="objectname-aauthlevel"></a>***ObjectName*/AAuthlevel**
 Required. Specifies the application authentication level.
 
 A value of "CLCRED" indicates that the credentials client will authenticate itself to the OMA DM server at the OMA DM protocol level. A value of "SRVCRED" indicates that the credentials server will authenticate itself to the OMA DM Client at the OMA DM protocol level.
 
 Value type is string. Supported operations are Add and Replace.
 
-<a href="" id="objectname-aauthtype"></a>***ObjectName*/AAuthType**  
+<a href="" id="objectname-aauthtype"></a>***ObjectName*/AAuthType**
 Required. Specifies the authentication type.
 
 If the AAuthlevel is "CLCRED", the supported values are "BASIC" and "DIGEST". If the AAuthlevel is "SRVCRED", the supported value is "DIGEST".
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="objectname-aauthname"></a>***ObjectName*/AAuthName**  
+<a href="" id="objectname-aauthname"></a>***ObjectName*/AAuthName**
 Optional. Specifies the authentication name.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="objectname-aauthsecret"></a>***ObjectName*/AAuthSecret**  
+<a href="" id="objectname-aauthsecret"></a>***ObjectName*/AAuthSecret**
 Optional. Specifies the password or secret used for authentication.
 
 Value type is string. Supported operations are Add and Replace.
 
-<a href="" id="objectname-aauthdata"></a>***ObjectName*/AAuthData**  
+<a href="" id="objectname-aauthdata"></a>***ObjectName*/AAuthData**
 Optional. Specifies the next nonce used for authentication.
 
 "Nonce" refers to a number used once. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in repeat attacks.
 
 Value type is binary. Supported operations are Add and Replace.
 
-<a href="" id="accountuid-ext"></a>***AccountUID*/Ext**  
+<a href="" id="accountuid-ext"></a>***AccountUID*/Ext**
 Required. Defines a set of extended parameters.
 
 This element holds vendor-specific information about the OMA DM account and is created automatically when the OMA DM account is created.
 
-<a href="" id="ext-microsoft"></a>**Ext/Microsoft**  
+<a href="" id="ext-microsoft"></a>**Ext/Microsoft**
 Required. Defines a set of Microsoft-specific extended parameters.
 
 This element is created automatically when the OMA DM account is created.
 
-<a href="" id="microsoft-backcompatretrydisabled"></a>**Microsoft/BackCompatRetryDisabled**  
+<a href="" id="microsoft-backcompatretrydisabled"></a>**Microsoft/BackCompatRetryDisabled**
 Optional. Specifies whether to retry resending a package with an older protocol version (for example, 1.1) in the SyncHdr on subsequent attempts (not including the first time). The default is "FALSE".
 
 The default value of "FALSE" indicates that backward-compatible retries are enabled. A value of "TRUE" indicates that backward-compatible retries are disabled.
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-connretryfreq"></a>**Microsoft/ConnRetryFreq**  
+<a href="" id="microsoft-connretryfreq"></a>**Microsoft/ConnRetryFreq**
 Optional. Specifies the number of retries the DM client performs when there are Connection Manager level or wininet level errors.
 
 The default value is 3.
 
 Value type is integer. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-defaultencoding"></a>**Microsoft/DefaultEncoding**  
+<a href="" id="microsoft-defaultencoding"></a>**Microsoft/DefaultEncoding**
 Optional. Specifies whether the OMA DM client will use WBXML or XML for the DM package when communicating with the server. The default is "application/vnd.syncml.dm+xml".
 
 The default value of "application/vnd.syncml.dm+xml" specifies that XML is used. A value of "application/vnd.syncml.dm+wbxml" specifies that WBXML is used.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-initialbackofftime"></a>**Microsoft/InitialBackOffTime**  
+<a href="" id="microsoft-initialbackofftime"></a>**Microsoft/InitialBackOffTime**
 Optional. Specifies the initial wait time in milliseconds when the OMA DM client retries for the first time. The wait time grows exponentially.
 
 The default value is 16000.
 
 Value type is integer. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-maxbackofftime"></a>**Microsoft/MaxBackOffTime**  
+<a href="" id="microsoft-maxbackofftime"></a>**Microsoft/MaxBackOffTime**
 Optional. This node specifies the maximum number of milliseconds to wait before attempting a connection retry.
 
 The default value is 86400000.
 
 Value type is integer. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-protover"></a>**Microsoft/ProtoVer**  
+<a href="" id="microsoft-protover"></a>**Microsoft/ProtoVer**
 Optional. Specifies the OMA DM Protocol version that the server supports. There's no default value.
 
 Valid values are "1.1" and "1.2". The protocol version set by this element will match the protocol version that the DM client reports to the server in SyncHdr in package 1. If this element isn't specified when adding a DM server account, the latest DM protocol version that the client supports is used. Windows 10 clients support version 1.2.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-role"></a>**Microsoft/Role**  
+<a href="" id="microsoft-role"></a>**Microsoft/Role**
 Required. Specifies the role mask that the OMA DM session runs with when it communicates with the server.
 
 If this parameter isn't present, the DM session is given the role mask of the OMA DM session that the server created. The following list shows the valid security role masks and their values.
@@ -254,7 +254,7 @@ The acceptable access roles for this node can't be more than the roles assigned 
 
 Value type is integer. Supported operations are Get and Replace.
 
-<a href="" id="microsoft-usehwdevid"></a>**Microsoft/UseHWDevID**  
+<a href="" id="microsoft-usehwdevid"></a>**Microsoft/UseHWDevID**
 Optional. Specifies whether to use the hardware ID for the ./DevInfo/DevID element in the DM account to identify the device. The default is "FALSE".
 
 The default value of "FALSE" specifies that an application-specific GUID is returned for the ./DevInfo/DevID rather than the hardware device ID.
@@ -267,7 +267,7 @@ A value is "TRUE" specifies that the hardware device ID will be provided for the
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
-<a href="" id="microsoft-usenonceresync"></a>**Microsoft/UseNonceResync**  
+<a href="" id="microsoft-usenonceresync"></a>**Microsoft/UseNonceResync**
 Optional. Specifies whether the OMA DM client should use the nonce resynchronization procedure if the server trigger notification fails authentication. The default is "FALSE".
 
 If the authentication fails because the server nonce doesn't match the server nonce that is stored on the device, then the device can use the backup nonce as the server nonce. For this procedure to be successful, if the device didn't authenticate with the preconfigured nonce value, the server must then use the backup nonce when sending the signed server notification message.
@@ -276,17 +276,17 @@ The default value of "FALSE" specifies that the client doesn't try to authentica
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
-<a href="" id="crlcheck"></a>**CRLCheck**  
+<a href="" id="crlcheck"></a>**CRLCheck**
 Optional. Allows connection to the DM server to check the Certificate Revocation List (CRL). Set to true to enable SSL revocation.
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
-<a href="" id="disableonroaming"></a>**DisableOnRoaming**  
+<a href="" id="disableonroaming"></a>**DisableOnRoaming**
 Optional. Determines whether the OMA DM client should be launched when roaming.
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
-<a href="" id="sslclientcertsearchcriteria"></a>**SSLCLIENTCERTSEARCHCRITERIA**  
+<a href="" id="sslclientcertsearchcriteria"></a>**SSLCLIENTCERTSEARCHCRITERIA**
 Optional. The SSLCLIENTCERTSEARCHCRITERIA parameter is used to specify the client certificate search criteria. This parameter supports search by subject attribute and certificate stores. If any other criteria are provided, it's ignored.
 
 The string is a concatenation of name/value pairs, each member of the pair delimited by the "&" character. The name and values are delimited by the "=" character. If there are multiple values, each value is delimited by the Unicode character "U+F000". If the name or value contains characters not in the UNRESERVED set (as specified in RFC2396), then those characters are URI-escaped per the RFC.
@@ -301,17 +301,17 @@ Stores specifies which certificate stores the DM client will search to find the 
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following schema:
 
 ```xml
-<parm name="SSLCLIENTCERTSEARCHCRITERIA" 
+<parm name="SSLCLIENTCERTSEARCHCRITERIA"
    value="Subject=CN%3DTester,O%3DMicrosoft&amp;Stores=My%5CUser" />
 ```
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
-<a href="" id="initiatesession"></a>**InitiateSession**  
+<a href="" id="initiatesession"></a>**InitiateSession**
 Optional. When this node is added, a session is started with the MDM server.
 
 Supported operations are Add, and Replace.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

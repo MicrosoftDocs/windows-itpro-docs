@@ -4,9 +4,10 @@ description: Use custom XML examples to learn how to migrate an unsupported appl
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Custom XML Examples

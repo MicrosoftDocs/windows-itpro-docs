@@ -3,8 +3,8 @@ title: Firewall CSP
 description: The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.reviewer: 
 manager: aaroncz
@@ -26,12 +26,12 @@ The table below shows the applicability of Windows:
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
- 
+
 Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
 
 For detailed information on some of the fields below, see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](/openspecs/windows_protocols/ms-winerrata/6521c5c4-1f76-4003-9ade-5cccfc27c8ac).
 
-The following example shows the Firewall configuration service provider in tree format. 
+The following example shows the Firewall configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 Firewall
@@ -130,7 +130,7 @@ Supported operation is Get.
 
 <a href="" id="global"></a>**MdmStore/Global**
 Interior node.
-Supported operations are Get. 
+Supported operations are Get.
 
 <a href="" id="policyversionsupported"></a>**MdmStore/Global/PolicyVersionSupported**
 Integer value that contains the maximum policy version that the server host can accept. The version number is two octets in size. The lowest-order octet is the minor version; the second-to-lowest octet is the major version. This value isn't merged and is always a fixed value for a particular firewall and advanced security components software build.
@@ -144,7 +144,7 @@ Value type in integer. Supported operation is Get.
 Boolean value. If false, the firewall performs stateful File Transfer Protocol (FTP) filtering to allow secondary connections. True means stateful FTP is disabled. The merge law for this option is to let "true" values win.
 Default value is false.
 
-Data type is bool. Supported operations are Add, Get, Replace, and Delete. 
+Data type is bool. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="saidletime"></a>**MdmStore/Global/SaIdleTime**
 This value configures the security association idle time, in seconds. Security associations are deleted after network traffic isn't seen for this specified period of time. The value is integer and MUST be in the range of 300 to 3,600 inclusive. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
@@ -351,7 +351,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="icmptypesandcodes"></a>**FirewallRules/_FirewallRuleName_/IcmpTypesAndCodes**
 ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the “\*” character. For specific ICMP types and codes, use the “:” character to separate the type and code, for example, 3:4, 1:\*. The “\*” character can be used to represent any code. The “\*” character cannot be used to specify any type; examples such as “\*:4” or “\*:\*” are invalid.
-If not specified, the default is All. 
+If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
@@ -455,16 +455,16 @@ Name of the rule.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="remoteaddressdynamickeywords"></a>**FirewallRules/_FirewallRuleName_/RemoteAddressDynamicKeywords**
-Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying the remote addresses covered by the rule. 
+Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying the remote addresses covered by the rule.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 
 <a href="" id="dynamickeywords"></a>**MdmStore/DynamicKeywords**
-Interior node. 
+Interior node.
 Supported operation is Get.
 
 <a href="" id="addresses"></a>**MdmStore/DynamicKeywords/Addresses**
-Interior node. 
+Interior node.
 Supported operation is Get.
 
 <a href="" id="id"></a>**MdmStore/DynamicKeywords/Addresses/Id**
@@ -487,11 +487,11 @@ Valid tokens include:
 Supported operations are Add, Delete, Replace, and Get.
 
 <a href="" id="autoresolve"></a>**MdmStore/DynamicKeywords/Addresses/Id/AutoResolve**
-Boolean value. If this flag is set to TRUE, then the 'keyword' field of this object is expected to be a Fully Qualified Domain Name, and the addresses will be automatically resolved. This flag should only be set if the Microsoft Defender Advanced Threat Protection Service is present. 
+Boolean value. If this flag is set to TRUE, then the 'keyword' field of this object is expected to be a Fully Qualified Domain Name, and the addresses will be automatically resolved. This flag should only be set if the Microsoft Defender Advanced Threat Protection Service is present.
 Value type is string. Supported operations are Add, Delete, and Get.
 Value type is string. Supported operations are Add, Delete, and Get.
 
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

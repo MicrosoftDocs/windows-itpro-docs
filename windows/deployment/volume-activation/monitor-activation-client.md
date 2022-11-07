@@ -4,10 +4,11 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: Understand the most common methods to monitor the success of the activation process for a computer running Windows.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Monitor activation

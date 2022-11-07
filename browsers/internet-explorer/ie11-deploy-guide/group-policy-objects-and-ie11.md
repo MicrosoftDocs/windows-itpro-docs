@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview of the available Group Policy management tools
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: e33bbfeb-6b80-4e71-8bba-1d0369a87312
 ms.reviewer: 
 audience: itpro

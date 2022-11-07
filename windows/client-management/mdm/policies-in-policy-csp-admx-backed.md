@@ -5,20 +5,14 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/08/2020
 ---
 
 # ADMX-backed policies in Policy CSP
-
-> [!div class="op_single_selector"]
->
-> - [Policies in Policy CSP supported by Group Policy](./policies-in-policy-csp-supported-by-group-policy.md)
-> - [ADMX-backed policies in Policy CSP]()
->
 
 - [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
 - [ADMX_ActiveXInstallService/AxISURLZonePolicies](./policy-csp-admx-activexinstallservice.md#admx-activexinstallservice-axisurlzonepolicies)

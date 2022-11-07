@@ -3,14 +3,14 @@ title: Shut down the system - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Shut down the system security policy setting.
 ms.assetid: c8e8f890-153a-401e-a957-ba6a130304bf
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

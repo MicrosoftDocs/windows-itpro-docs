@@ -3,7 +3,7 @@ title: Windows Defender Application Control Wizard Base Policy Creation
 description: Creating new base application control policies with the Microsoft Windows Defender Application (WDAC) Wizard.
 keywords: allow listing, block listing, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,11 +12,11 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Creating a new Base Policy with the Wizard
@@ -67,7 +67,7 @@ A description of each policy rule, beginning with the left-most column, is provi
 | **Disable Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 isn't supported and may have unintended results. |
 |**[Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by the Microsoft Intelligent Security Graph (ISG). |
-| **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
+| **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
 | **Require WHQL** | By default, legacy drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Henceforth, every new Windows–compatible driver must be WHQL certified. |
 | **Update Policy without Rebooting** | Use this option to allow future Windows Defender Application Control policy updates to apply without requiring a system reboot. |
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |

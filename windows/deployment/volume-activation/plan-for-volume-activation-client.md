@@ -4,10 +4,11 @@ description: Product activation is the process of validating software with the m
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Plan for volume activation

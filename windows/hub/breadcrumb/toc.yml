@@ -27,7 +27,7 @@ items:
             tocHref: /windows/client-management/
             topicHref: /windows/client-management/
             items:
-              - name: Mobile Device Management
+              - name: CSP reference
                 tocHref: /windows/client-management/mdm/
                 topicHref: /windows/client-management/mdm/
           - name: Privacy
@@ -54,4 +54,4 @@ items:
                 topicHref: /windows/security/threat-protection/windows-defender-application-control/
               - name: Windows Defender Firewall
                 tocHref: /windows/security/threat-protection/windows-firewall/
-                topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security              
+                topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security

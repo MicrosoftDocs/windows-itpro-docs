@@ -3,17 +3,17 @@ title: How a Windows Defender System Guard helps protect Windows 10
 description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 search.appverid: met150
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/01/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10
@@ -82,7 +82,7 @@ As Windows 10 boots, a series of integrity measurements are taken by Windows Def
 
 ![Boot time integrity.](images/windows-defender-system-guard-boot-time-integrity.png)
 
-After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Endpoint Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
+After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
 ## System requirements for System Guard
 

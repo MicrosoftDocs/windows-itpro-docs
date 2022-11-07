@@ -2,7 +2,7 @@
 title: Best practices for configuring Windows Defender Firewall
 description: Learn about best practices for configuring Windows Defender Firewall
 keywords: firewall, best practices, security, network security, network, rules, filters,
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,15 +11,17 @@ author: paolomatarazzo
 ms.localizationpriority: medium
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+ms.technology: itpro-security
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 
 # Best practices for configuring Windows Defender Firewall

@@ -2,15 +2,18 @@
 title: Windows To Go feature overview (Windows 10)
 description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that lets you create a workspace that can be booted from a USB-connected drive.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
-author: aczechowski
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.collection: 
+  - highpri
+ms.date: 10/28/2022
 ---
 
 # Windows To Go: feature overview
-
 
 **Applies to**
 
@@ -21,12 +24,15 @@ ms.topic: article
 
 Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 
-PCs that meet the Windows 7 or later [certification requirements](/previous-versions/windows/hardware/cert-program/) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
+PCs that meet the Windows 7 or later [certification requirements](/previous-versions/windows/hardware/cert-program/) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
 
-- [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
-- [Roaming with Windows To Go](#bkmk-wtgroam)
-- [Prepare for Windows To Go](#wtg-prep-intro)
-- [Hardware considerations for Windows To Go](#wtg-hardware)
+- [Windows To Go: feature overview](#windows-to-go-feature-overview)
+  - [<a href="" id="bkmk-wtgdif"></a>Differences between Windows To Go and a typical installation of Windows](#differences-between-windows-to-go-and-a-typical-installation-of-windows)
+  - [<a href="" id="bkmk-wtgroam"></a>Roaming with Windows To Go](#roaming-with-windows-to-go)
+  - [<a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go](#prepare-for-windows-to-go)
+  - [<a href="" id="wtg-hardware"></a>Hardware considerations for Windows To Go](#hardware-considerations-for-windows-to-go)
+  - [Additional resources](#additional-resources)
+  - [Related topics](#related-topics)
 
 > [!NOTE]
 > Windows To Go is not supported on Windows RT.
@@ -35,12 +41,12 @@ PCs that meet the Windows 7 or later [certification requirements](/previous-vers
 
 Windows To Go workspace operates just like any other installation of Windows with a few exceptions. These exceptions are:
 
-- **Internal disks are offline.** To ensure data isn’t accidentally disclosed, internal hard disks on the host computer are offline by default when booted into a Windows To Go workspace. Similarly if a Windows To Go drive is inserted into a running system, the Windows To Go drive will not be listed in Windows Explorer.
+- **Internal disks are offline.** To ensure data isn't accidentally disclosed, internal hard disks on the host computer are offline by default when booted into a Windows To Go workspace. Similarly if a Windows To Go drive is inserted into a running system, the Windows To Go drive will not be listed in Windows Explorer.
 - **Trusted Platform Module (TPM) is not used.** When using BitLocker Drive Encryption a pre-operating system boot password will be used for security rather than the TPM since the TPM is tied to a specific computer and Windows To Go drives will move between computers.
 - **Hibernate is disabled by default.** To ensure that the Windows To Go workspace is able to move between computers easily, hibernation is disabled by default. Hibernation can be re-enabled by using Group Policy settings.
 - **Windows Recovery Environment is not available.** In the rare case that you need to recover your Windows To Go drive, you should re-image it with a fresh image of Windows.
-- **Refreshing or resetting a Windows To Go workspace is not supported.** Resetting to the manufacturer’s standard for the computer doesn’t apply when running a Windows To Go workspace, so the feature was disabled.
-- **Upgrading a Windows To Go workspace is not supported.** Older Windows 8 or Windows 8.1 Windows To Go workspaces cannot be upgraded to Windows 10 workspaces, nor can Windows 10 Windows To Go workspaces be upgraded to future versions of Windows 10. For new versions, the workspace needs to be re-imaged with a fresh image of Windows.
+- **Refreshing or resetting a Windows To Go workspace is not supported.** Resetting to the manufacturer's standard for the computer doesn't apply when running a Windows To Go workspace, so the feature was disabled.
+- **Upgrading a Windows To Go workspace is not supported.** Older Windows 8 or Windows 8.1 Windows To Go workspaces cannot be upgraded to Windows 10 workspaces, nor can Windows 10 Windows To Go workspaces be upgraded to future versions of Windows 10. For new versions, the workspace needs to be re-imaged with a fresh image of Windows.
 
 ## <a href="" id="bkmk-wtgroam"></a>Roaming with Windows To Go
 
@@ -50,7 +56,7 @@ The applications that you want to use from the Windows To Go workspace should be
 
 ## <a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go
 
-Enterprises install Windows on a large group of computers either by using configuration management software (such as Microsoft Endpoint Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
+Enterprises install Windows on a large group of computers either by using configuration management software (such as Microsoft Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
 
 These same tools can be used to provision Windows To Go drive, just as you would if you were planning for provisioning a new class of mobile PCs. You can use the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) to review deployment tools available.
 
@@ -117,7 +123,7 @@ As of the date of publication, the following are the USB drives currently certif
 
 -   Western Digital My Passport Enterprise ([http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722))
 
-    We recommend that you run the WD Compass utility to prepare the Western Digital My Passport Enterprise drive for provisioning with Windows To Go.  For more information about the WD Compass utility please refer to [http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722)
+    We recommend that you run the WD Compass utility to prepare the Western Digital My Passport Enterprise drive for provisioning with Windows To Go.  For more information about the WD Compass utility please refer to [http://www.wd.com/wtg](https://go.microsoft.com/fwlink/p/?LinkId=618722)
 
 **For host computers**
 

@@ -2,12 +2,13 @@
 title: Determine application readiness
 manager: dougeby
 description: How to test your apps to know which need attention prior to deploying an update
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: m365initiative-coredeploy
 ms.author: aaroncz
 author: aczechowski
+ms.technology: itpro-updates
 ---
 
 # Determine application readiness

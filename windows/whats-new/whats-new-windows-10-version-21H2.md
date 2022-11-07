@@ -2,7 +2,7 @@
 title: What's new in Windows 10, version 21H2 for IT pros
 description: Learn more about what's new in Windows 10 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
 manager: dougeby
-ms.prod: w10
+ms.prod: windows-client
 ms.author: aaroncz
 author: aczechowski
 ms.localizationpriority: medium
@@ -51,7 +51,7 @@ For more information, and what GPU compute support means for you, see the [GPU a
 
 The [KB5005101  September 1, 2021 update](https://support.microsoft.com/topic/september-1-2021-kb5005101-os-builds-19041-1202-19042-1202-and-19043-1202-preview-82a50f27-a56f-4212-96ce-1554e8058dc1) includes about 1400 CSPs that were made available to MDM providers.
 
-These CSPs are built in to Windows 10, version 21H2. These settings are available in Endpoint Manager in the [Settings Catalog](/mem/intune/configuration/settings-catalog). [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) also includes these GPOs in its analysis.
+These CSPs are built in to Windows 10, version 21H2. These settings are available in Microsoft Intune in the [Settings Catalog](/mem/intune/configuration/settings-catalog). [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) also includes these GPOs in its analysis.
 
 For more information on the CSPs, see the [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference).
 

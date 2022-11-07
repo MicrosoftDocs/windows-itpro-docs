@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_MSI.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/16/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_MSI
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_MSI policies  
+## ADMX_MSI policies
 
 <dl>
   <dd>
@@ -103,7 +103,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-allowlockdownbrowse"></a>**ADMX_MSI/AllowLockdownBrowse**  
+<a href="" id="admx-msi-allowlockdownbrowse"></a>**ADMX_MSI/AllowLockdownBrowse**
 
 <!--SupportedSKUs-->
 
@@ -143,7 +143,7 @@ If you disable or don't configure this policy setting, by default, only system a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow users to browse for source while elevated*
 -   GP name: *AllowLockdownBrowse*
 -   GP path: *Windows Components\Windows Installer*
@@ -155,7 +155,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-allowlockdownmedia"></a>**ADMX_MSI/AllowLockdownMedia**  
+<a href="" id="admx-msi-allowlockdownmedia"></a>**ADMX_MSI/AllowLockdownMedia**
 
 <!--SupportedSKUs-->
 
@@ -195,7 +195,7 @@ Also, see the "Prevent removable media source for any install" policy setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow users to use media source while elevated*
 -   GP name: *AllowLockdownMedia*
 -   GP path: *Windows Components\Windows Installer*
@@ -207,7 +207,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-allowlockdownpatch"></a>**ADMX_MSI/AllowLockdownPatch**  
+<a href="" id="admx-msi-allowlockdownpatch"></a>**ADMX_MSI/AllowLockdownPatch**
 
 <!--SupportedSKUs-->
 
@@ -244,7 +244,7 @@ This policy setting doesn't affect installations that run in the user's security
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow users to patch elevated products*
 -   GP name: *AllowLockdownPatch*
 -   GP path: *Windows Components\Windows Installer*
@@ -256,7 +256,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disableautomaticapplicationshutdown"></a>**ADMX_MSI/DisableAutomaticApplicationShutdown**  
+<a href="" id="admx-msi-disableautomaticapplicationshutdown"></a>**ADMX_MSI/DisableAutomaticApplicationShutdown**
 
 <!--SupportedSKUs-->
 
@@ -298,7 +298,7 @@ If you disable or don't configure this policy setting, Windows Installer will us
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GGP Friendly name: *Prohibit use of Restart Manager*
 -   GP name: *DisableAutomaticApplicationShutdown*
 -   GP path: *Windows Components\Windows Installer*
@@ -310,7 +310,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablebrowse"></a>**ADMX_MSI/DisableBrowse**  
+<a href="" id="admx-msi-disablebrowse"></a>**ADMX_MSI/DisableBrowse**
 
 <!--SupportedSKUs-->
 
@@ -352,7 +352,7 @@ Also, see the "Enable user to browse for source while elevated" policy setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove browse dialog box for new source*
 -   GP name: *DisableBrowse*
 -   GP path: *Windows Components\Windows Installer*
@@ -364,7 +364,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disableflyweightpatching"></a>**ADMX_MSI/DisableFlyweightPatching**  
+<a href="" id="admx-msi-disableflyweightpatching"></a>**ADMX_MSI/DisableFlyweightPatching**
 
 <!--SupportedSKUs-->
 
@@ -400,7 +400,7 @@ If you disable or don't configure this policy setting, it enables faster applica
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit flyweight patching*
 -   GP name: *DisableFlyweightPatching*
 -   GP path: *Windows Components\Windows Installer*
@@ -412,7 +412,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disableloggingfrompackage"></a>**ADMX_MSI/DisableLoggingFromPackage**  
+<a href="" id="admx-msi-disableloggingfrompackage"></a>**ADMX_MSI/DisableLoggingFromPackage**
 
 <!--SupportedSKUs-->
 
@@ -452,7 +452,7 @@ If you disable or don't configure this policy setting, Windows Installer will au
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off logging via package settings*
 -   GP name: *DisableLoggingFromPackage*
 -   GP path: *Windows Components\Windows Installer*
@@ -464,7 +464,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablemsi"></a>**ADMX_MSI/DisableMSI**  
+<a href="" id="admx-msi-disablemsi"></a>**ADMX_MSI/DisableMSI**
 
 <!--SupportedSKUs-->
 
@@ -494,7 +494,7 @@ This policy setting restricts the use of Windows Installer.
 
 If you enable this policy setting, you can prevent users from installing software on their systems or permit users to install only those programs offered by a system administrator. You can use the options in the Disable Windows Installer box to establish an installation setting.
 
-- The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software. 
+- The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software.
 
 - The "For non-managed applications only" option permits users to install only those programs that a system administrator assigns (offers on the desktop) or publishes (adds them to Add or Remove Programs). This option's induced behavior is the default behavior of Windows Installer on Windows Server 2003 family when the policy isn't configured.
 
@@ -506,7 +506,7 @@ This policy setting affects Windows Installer only. It doesn't prevent users fro
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Installer*
 -   GP name: *DisableMSI*
 -   GP path: *Windows Components\Windows Installer*
@@ -518,7 +518,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablemedia"></a>**ADMX_MSI/DisableMedia**  
+<a href="" id="admx-msi-disablemedia"></a>**ADMX_MSI/DisableMedia**
 
 <!--SupportedSKUs-->
 
@@ -558,7 +558,7 @@ Also, see the "Enable user to use media source while elevated" and "Hide the 'Ad
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent removable media source for any installation*
 -   GP name: *DisableMedia*
 -   GP path: *Windows Components\Windows Installer*
@@ -570,7 +570,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablepatch"></a>**ADMX_MSI/DisablePatch**  
+<a href="" id="admx-msi-disablepatch"></a>**ADMX_MSI/DisablePatch**
 
 <!--SupportedSKUs-->
 
@@ -611,7 +611,7 @@ Also, see the "Enable user to patch elevated products" policy setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from using Windows Installer to install updates and upgrades*
 -   GP name: *DisablePatch*
 -   GP path: *Windows Components\Windows Installer*
@@ -623,7 +623,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablerollback-1"></a>**ADMX_MSI/DisableRollback_1**  
+<a href="" id="admx-msi-disablerollback-1"></a>**ADMX_MSI/DisableRollback_1**
 
 <!--SupportedSKUs-->
 
@@ -660,7 +660,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit rollback*
 -   GP name: *DisableRollback_1*
 -   GP path: *Windows Components\Windows Installer*
@@ -672,7 +672,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablerollback-2"></a>**ADMX_MSI/DisableRollback_2**  
+<a href="" id="admx-msi-disablerollback-2"></a>**ADMX_MSI/DisableRollback_2**
 
 <!--SupportedSKUs-->
 
@@ -710,7 +710,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit rollback*
 -   GP name: *DisableRollback_2*
 -   GP path: *Windows Components\Windows Installer*
@@ -722,7 +722,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-disablesharedcomponent"></a>**ADMX_MSI/DisableSharedComponent**  
+<a href="" id="admx-msi-disablesharedcomponent"></a>**ADMX_MSI/DisableSharedComponent**
 
 <!--SupportedSKUs-->
 
@@ -758,7 +758,7 @@ If you disable or don't configure this policy setting, by default, the shared co
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off shared components*
 -   GP name: *DisableSharedComponent*
 -   GP path: *Windows Components\Windows Installer*
@@ -770,7 +770,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-msilogging"></a>**ADMX_MSI/MSILogging**  
+<a href="" id="admx-msi-msilogging"></a>**ADMX_MSI/MSILogging**
 
 <!--SupportedSKUs-->
 
@@ -808,7 +808,7 @@ If you disable or don't configure this policy setting, Windows Installer logs th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the types of events Windows Installer records in its transaction log*
 -   GP name: *MSILogging*
 -   GP path: *Windows Components\Windows Installer*
@@ -821,7 +821,7 @@ ADMX Info:
 
 <!--Policy-->
 
-<a href="" id="admx-msi-msi-disableluapatching"></a>**ADMX_MSI/MSI_DisableLUAPatching**  
+<a href="" id="admx-msi-msi-disableluapatching"></a>**ADMX_MSI/MSI_DisableLUAPatching**
 
 <!--SupportedSKUs-->
 
@@ -859,7 +859,7 @@ If you disable or don't configure this policy setting, users without administrat
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit non-administrators from applying vendor signed updates*
 -   GP name: *MSI_DisableLUAPatching*
 -   GP path: *Windows Components\Windows Installer*
@@ -872,7 +872,7 @@ ADMX Info:
 
 <!--Policy-->
 
-<a href="" id="admx-msi-msi-disablepatchuninstall"></a>**ADMX_MSI/MSI_DisablePatchUninstall**  
+<a href="" id="admx-msi-msi-disablepatchuninstall"></a>**ADMX_MSI/MSI_DisablePatchUninstall**
 
 <!--SupportedSKUs-->
 
@@ -910,7 +910,7 @@ If you disable or don't configure this policy setting, a user can remove an upda
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit removal of updates*
 -   GP name: *MSI_DisablePatchUninstall*
 -   GP path: *Windows Components\Windows Installer*
@@ -923,7 +923,7 @@ ADMX Info:
 
 <!--Policy-->
 
-<a href="" id="admx-msi-msi-disablesrcheckpoints"></a>**ADMX_MSI/MSI_DisableSRCheckPoints**  
+<a href="" id="admx-msi-msi-disablesrcheckpoints"></a>**ADMX_MSI/MSI_DisableSRCheckPoints**
 
 <!--SupportedSKUs-->
 
@@ -959,7 +959,7 @@ If you disable or don't configure this policy setting, by default, the Windows I
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off creation of System Restore checkpoints*
 -   GP name: *MSI_DisableSRCheckPoints*
 -   GP path: *Windows Components\Windows Installer*
@@ -972,7 +972,7 @@ ADMX Info:
 
 <!--Policy-->
 
-<a href="" id="admx-msi-msi-disableuserinstalls"></a>**ADMX_MSI/MSI_DisableUserInstalls**  
+<a href="" id="admx-msi-msi-disableuserinstalls"></a>**ADMX_MSI/MSI_DisableUserInstalls**
 
 <!--SupportedSKUs-->
 
@@ -1008,7 +1008,7 @@ If you enable this policy setting and "Hide User Installs" is selected, the inst
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit User Installs*
 -   GP name: *MSI_DisableUserInstalls*
 -   GP path: *Windows Components\Windows Installer*
@@ -1021,7 +1021,7 @@ ADMX Info:
 
 <!--Policy-->
 
-<a href="" id="admx-msi-msi-enforceupgradecomponentrules"></a>**ADMX_MSI/MSI_EnforceUpgradeComponentRules**  
+<a href="" id="admx-msi-msi-enforceupgradecomponentrules"></a>**ADMX_MSI/MSI_EnforceUpgradeComponentRules**
 
 <!--SupportedSKUs-->
 
@@ -1063,7 +1063,7 @@ If you disable or don't configure this policy setting, the Windows Installer wil
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enforce upgrade component rules*
 -   GP name: *MSI_EnforceUpgradeComponentRules*
 -   GP path: *Windows Components\Windows Installer*
@@ -1075,7 +1075,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-msi-maxpatchcachesize"></a>**ADMX_MSI/MSI_MaxPatchCacheSize**  
+<a href="" id="admx-msi-msi-maxpatchcachesize"></a>**ADMX_MSI/MSI_MaxPatchCacheSize**
 
 <!--SupportedSKUs-->
 
@@ -1117,7 +1117,7 @@ If you disable or don't configure this policy setting, the Windows Installer wil
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control maximum size of baseline file cache*
 -   GP name: *MSI_MaxPatchCacheSize*
 -   GP path: *Windows Components\Windows Installer*
@@ -1129,7 +1129,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-msidisableembeddedui"></a>**ADMX_MSI/MsiDisableEmbeddedUI**  
+<a href="" id="admx-msi-msidisableembeddedui"></a>**ADMX_MSI/MsiDisableEmbeddedUI**
 
 <!--SupportedSKUs-->
 
@@ -1165,7 +1165,7 @@ If you disable or don't configure this policy setting, embedded UI is allowed to
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent embedded UI*
 -   GP name: *MsiDisableEmbeddedUI*
 -   GP path: *Windows Components\Windows Installer*
@@ -1177,7 +1177,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-safeforscripting"></a>**ADMX_MSI/SafeForScripting**  
+<a href="" id="admx-msi-safeforscripting"></a>**ADMX_MSI/SafeForScripting**
 
 <!--SupportedSKUs-->
 
@@ -1215,7 +1215,7 @@ This policy setting is designed for enterprises that use Web-based tools to dist
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent Internet Explorer security prompt for Windows Installer scripts*
 -   GP name: *SafeForScripting*
 -   GP path: *Windows Components\Windows Installer*
@@ -1227,7 +1227,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-searchorder"></a>**ADMX_MSI/SearchOrder**  
+<a href="" id="admx-msi-searchorder"></a>**ADMX_MSI/SearchOrder**
 
 <!--SupportedSKUs-->
 
@@ -1269,7 +1269,7 @@ To exclude a file source, omit or delete the letter representing that source typ
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the order in which Windows Installer searches for installation files*
 -   GP name: *SearchOrder*
 -   GP path: *Windows Components\Windows Installer*
@@ -1281,7 +1281,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msi-transformssecure"></a>**ADMX_MSI/TransformsSecure**  
+<a href="" id="admx-msi-transformssecure"></a>**ADMX_MSI/TransformsSecure**
 
 <!--SupportedSKUs-->
 
@@ -1323,7 +1323,7 @@ If you disable this policy setting, Windows Installer stores transform files in 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Save copies of transform files in a secure location on workstation*
 -   GP name: *TransformsSecure*
 -   GP path: *Windows Components\Windows Installer*

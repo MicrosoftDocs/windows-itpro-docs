@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_MobilePCMobilityCenter.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/20/2021
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_MobilePCMobilityCenter
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_MobilePCMobilityCenter policies  
+## ADMX_MobilePCMobilityCenter policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mobilepcmobilitycenter-mobilitycenterenable_1"></a>**ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1**  
+<a href="" id="admx-mobilepcmobilitycenter-mobilitycenterenable_1"></a>**ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1**
 
 <!--SupportedSKUs-->
 
@@ -65,10 +65,10 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting turns off Windows Mobility Center.  
+This policy setting turns off Windows Mobility Center.
 
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.  
-- If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.  
+- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.
+- If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
 
 If you don't configure this policy setting, Windows Mobility Center is on by default.
 
@@ -76,7 +76,7 @@ If you don't configure this policy setting, Windows Mobility Center is on by def
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Mobility Center*
 -   GP name: *MobilityCenterEnable_1*
 -   GP path: *Windows Components\Windows Mobility Center*
@@ -87,7 +87,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mobilepcmobilitycenter-mobilitycenterenable_2"></a>**ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2**  
+<a href="" id="admx-mobilepcmobilitycenter-mobilitycenterenable_2"></a>**ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2**
 
 <!--SupportedSKUs-->
 
@@ -113,10 +113,10 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting turns off Windows Mobility Center. 
+This policy setting turns off Windows Mobility Center.
 
-- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.  
-- If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.  
+- If you enable this policy setting, the user is unable to invoke Windows Mobility Center. The Windows Mobility Center UI is removed from all shell entry points and the .exe file doesn't launch it.
+- If you disable this policy setting, the user is able to invoke Windows Mobility Center and the .exe file launches it.
 
 If you don't configure this policy setting, Windows Mobility Center is on by default.
 
@@ -124,7 +124,7 @@ If you don't configure this policy setting, Windows Mobility Center is on by def
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Mobility Center*
 -   GP name: *MobilityCenterEnable_2*
 -   GP path: *Windows Components\Windows Mobility Center*

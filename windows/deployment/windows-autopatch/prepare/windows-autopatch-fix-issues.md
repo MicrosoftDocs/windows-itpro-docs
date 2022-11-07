@@ -1,9 +1,9 @@
 ---
 title: Fix issues found by the Readiness assessment tool
-description:  This article details how to fix issues found by the Readiness assessment tool
+description: This article details how to fix issues found by the Readiness assessment tool
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
@@ -32,7 +32,7 @@ For each check, the tool will report one of four possible results:
 
 ## Microsoft Intune settings
 
-You can access Intune settings at the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+You can access Intune settings at the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ### Unlicensed admins
 

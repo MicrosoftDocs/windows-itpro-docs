@@ -3,14 +3,14 @@ title: Shutdown Clear virtual memory pagefile (Windows 10)
 description: Describes the best practices, location, values, policy management and security considerations for the Shutdown Clear virtual memory pagefile security policy setting.
 ms.assetid: 31400078-6c56-4891-a6df-6dfb403c4bc9
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

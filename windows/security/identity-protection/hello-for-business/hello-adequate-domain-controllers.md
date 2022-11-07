@@ -1,7 +1,7 @@
 ---
 title: Having enough Domain Controllers for Windows Hello for Business deployments
 description: Guide for planning to have an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
-ms.prod: m365-security
+ms.prod: windows-client
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
@@ -10,12 +10,12 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016 or later</b>
-- ✅ <b>Hybrid or On-Premises deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016 or later</b>
+  - ✅ <b>Hybrid or On-Premises deployment</b>
+  - ✅ <b>Key trust</b>
 ---
 # Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
 

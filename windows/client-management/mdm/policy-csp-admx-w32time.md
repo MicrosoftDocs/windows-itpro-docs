@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_W32Time.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/28/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_W32Time
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_W32Time policies  
+## ADMX_W32Time policies
 
 <dl>
   <dd>
@@ -44,7 +44,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-w32time-policy-config"></a>**ADMX_W32Time/W32TIME_POLICY_CONFIG**  
+<a href="" id="admx-w32time-policy-config"></a>**ADMX_W32Time/W32TIME_POLICY_CONFIG**
 
 <!--SupportedSKUs-->
 
@@ -156,7 +156,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Global Configuration Settings*
 -   GP name: *W32TIME_POLICY_CONFIG*
 -   GP path: *System\Windows Time Service*
@@ -167,7 +167,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-w32time-policy-configure-ntpclient"></a>**ADMX_W32Time/W32TIME_POLICY_CONFIGURE_NTPCLIENT**  
+<a href="" id="admx-w32time-policy-configure-ntpclient"></a>**ADMX_W32Time/W32TIME_POLICY_CONFIGURE_NTPCLIENT**
 
 <!--SupportedSKUs-->
 
@@ -200,7 +200,7 @@ If you enable this policy setting, you can specify the following parameters for 
 If you disable or don't configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
 
 **NtpServer**
-The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of ""dnsName,flags"" where ""flags"" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings.  The default value is ""time.windows.com,0x09"". 
+The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of ""dnsName,flags"" where ""flags"" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings.  The default value is ""time.windows.com,0x09"".
 
 **Type**
 This value controls the authentication that W32time uses. The default value is NT5DS.
@@ -224,7 +224,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Windows NTP Client*
 -   GP name: *W32TIME_POLICY_CONFIGURE_NTPCLIENT*
 -   GP path: *System\Windows Time Service\Time Providers*
@@ -235,7 +235,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-w32time-policy-enable-ntpclient"></a>**ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPCLIENT**  
+<a href="" id="admx-w32time-policy-enable-ntpclient"></a>**ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPCLIENT**
 
 <!--SupportedSKUs-->
 
@@ -273,7 +273,7 @@ If you disable or don't configure this policy setting, the local computer clock 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows NTP Client*
 -   GP name: *W32TIME_POLICY_ENABLE_NTPCLIENT*
 -   GP path: *System\Windows Time Service\Time Providers*
@@ -284,7 +284,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-w32time-policy-enable-ntpserver"></a>**ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPSERVER**  
+<a href="" id="admx-w32time-policy-enable-ntpserver"></a>**ADMX_W32Time/W32TIME_POLICY_ENABLE_NTPSERVER**
 
 <!--SupportedSKUs-->
 
@@ -319,7 +319,7 @@ If you disable or don't configure this policy setting, your computer can't servi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Windows NTP Server*
 -   GP name: *W32TIME_POLICY_ENABLE_NTPSERVER*
 -   GP path: *System\Windows Time Service\Time Providers*

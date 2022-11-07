@@ -5,9 +5,10 @@ ms.reviewer:
 manager: dougeby
 author: aczechowski
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/30/2020
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Configure Client Computers
@@ -85,7 +86,7 @@ There are several options for organizations to configure the WMI firewall except
 
 - **Image.** Add the configurations to the master Windows image deployed to all clients.
 - **Group Policy.** If the clients are part of a domain, then all clients can be configured using Group Policy. The Group Policy setting for the WMI firewall exception is found in GPMC.MSC at: **Computer Configuration\\Windows Settings\\Security Settings\\Windows Firewall with Advanced Security\\Windows Firewall with Advanced Security\\Inbound Rules**.
-- **Script.** Execute a script using Microsoft Endpoint Configuration Manager or a third-party remote script execution facility.
+- **Script.** Execute a script using Microsoft Configuration Manager or a third-party remote script execution facility.
 - **Manual.** Configure the WMI firewall exception individually on each client.
 
 The above configurations will open an additional port through the Windows Firewall on target computers and should be performed on computers that are protected by a network firewall. In order to allow VAMT to query the up-to-date licensing status, the WMI exception must be maintained. We recommend administrators consult their network security policies and make clear decisions when creating the WMI exception.

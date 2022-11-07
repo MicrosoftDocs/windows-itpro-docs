@@ -1,13 +1,14 @@
 ---
 title: Cortana at work testing scenarios
 description: Suggested testing scenarios that you can use to test Cortana in your organization.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 06/28/2021
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Cortana at work testing scenarios

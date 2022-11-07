@@ -4,10 +4,11 @@ description: Learn how to modify the behavior of a basic User State Migration To
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Understanding Migration XML Files

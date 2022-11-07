@@ -3,14 +3,14 @@ title: Profile system performance (Windows 10)
 description: Best practices, location, values, policy management, and security considerations for the security policy setting, Profile system performance.
 ms.assetid: ffabc3c5-9206-4105-94ea-84f597a54b2e
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

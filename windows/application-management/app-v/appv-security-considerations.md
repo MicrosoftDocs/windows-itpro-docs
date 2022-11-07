@@ -2,12 +2,13 @@
 title: App-V Security Considerations (Windows 10/11)
 description: Learn about accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # App-V security considerations

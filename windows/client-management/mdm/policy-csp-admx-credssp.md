@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_CredSsp.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/12/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_CredSsp
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_CredSsp policies  
+## ADMX_CredSsp policies
 
 <dl>
   <dd>
@@ -66,7 +66,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowdefcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowDefCredentialsWhenNTLMOnly**  
+<a href="" id="admx-credssp-allowdefcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowDefCredentialsWhenNTLMOnly**
 
 <!--SupportedSKUs-->
 
@@ -113,7 +113,7 @@ If you disable or don't configure (by default) this policy setting, delegation o
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow delegating default credentials with NTLM-only server authentication*
 -   GP name: *AllowDefCredentialsWhenNTLMOnly*
 -   GP path: *System\Credentials Delegation*
@@ -124,7 +124,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowdefaultcredentials"></a>**ADMX_CredSsp/AllowDefaultCredentials**  
+<a href="" id="admx-credssp-allowdefaultcredentials"></a>**ADMX_CredSsp/AllowDefaultCredentials**
 
 <!--SupportedSKUs-->
 
@@ -175,7 +175,7 @@ https://go.microsoft.com/fwlink/?LinkId=301508
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow delegating default credentials*
 -   GP name: *AllowDefaultCredentials*
 -   GP path: *System\Credentials Delegation*
@@ -186,7 +186,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowencryptionoracle"></a>**ADMX_CredSsp/AllowEncryptionOracle**  
+<a href="" id="admx-credssp-allowencryptionoracle"></a>**ADMX_CredSsp/AllowEncryptionOracle**
 
 <!--SupportedSKUs-->
 
@@ -218,7 +218,7 @@ Some versions of the CredSSP protocol are vulnerable to an encryption oracle att
 
 If you enable this policy setting, CredSSP version support will be selected based on the following options:
 
-- Force Updated Clients: Client applications that use CredSSP won't be able to fall back to the insecure versions and services using CredSSP won't accept unpatched clients. 
+- Force Updated Clients: Client applications that use CredSSP won't be able to fall back to the insecure versions and services using CredSSP won't accept unpatched clients.
 
     > [!NOTE]
     > This setting should not be deployed until all remote hosts support the newest version.
@@ -232,7 +232,7 @@ For more information about the vulnerability and servicing requirements for prot
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -  GP Friendly name: *Encryption Oracle Remediation*
 -   GP name: *AllowEncryptionOracle*
 -   GP path: *System\Credentials Delegation*
@@ -243,7 +243,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowfreshcredentials"></a>**ADMX_CredSsp/AllowFreshCredentials**  
+<a href="" id="admx-credssp-allowfreshcredentials"></a>**ADMX_CredSsp/AllowFreshCredentials**
 
 <!--SupportedSKUs-->
 
@@ -291,7 +291,7 @@ If you disable this policy setting, delegation of fresh credentials isn't permit
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow delegating fresh credentials*
 -   GP name: *AllowFreshCredentials*
 -   GP path: *System\Credentials Delegation*
@@ -302,7 +302,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowfreshcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowFreshCredentialsWhenNTLMOnly**  
+<a href="" id="admx-credssp-allowfreshcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowFreshCredentialsWhenNTLMOnly**
 
 <!--SupportedSKUs-->
 
@@ -350,7 +350,7 @@ If you disable this policy setting, delegation of fresh credentials isn't permit
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow delegating fresh credentials with NTLM-only server authentication*
 -   GP name: *AllowFreshCredentialsWhenNTLMOnly*
 -   GP path: *System\Credentials Delegation*
@@ -361,7 +361,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowsavedcredentials"></a>**ADMX_CredSsp/AllowSavedCredentials**  
+<a href="" id="admx-credssp-allowsavedcredentials"></a>**ADMX_CredSsp/AllowSavedCredentials**
 
 <!--SupportedSKUs-->
 
@@ -409,7 +409,7 @@ If you disable this policy setting, delegation of saved credentials isn't permit
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow delegating saved credentials*
 -   GP name: *AllowSavedCredentials*
 -   GP path: *System\Credentials Delegation*
@@ -420,7 +420,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-allowsavedcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowSavedCredentialsWhenNTLMOnly**  
+<a href="" id="admx-credssp-allowsavedcredentialswhenntlmonly"></a>**ADMX_CredSsp/AllowSavedCredentialsWhenNTLMOnly**
 
 <!--SupportedSKUs-->
 
@@ -468,7 +468,7 @@ If you disable this policy setting, delegation of saved credentials isn't permit
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow delegating saved credentials with NTLM-only server authentication*
 -   GP name: *AllowSavedCredentialsWhenNTLMOnly*
 -   GP path: *System\Credentials Delegation*
@@ -479,7 +479,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-denydefaultcredentials"></a>**ADMX_CredSsp/DenyDefaultCredentials**  
+<a href="" id="admx-credssp-denydefaultcredentials"></a>**ADMX_CredSsp/DenyDefaultCredentials**
 
 <!--SupportedSKUs-->
 
@@ -525,7 +525,7 @@ This policy setting can be used in combination with the "Allow delegating defaul
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Deny delegating default credentials*
 -   GP name: *DenyDefaultCredentials*
 -   GP path: *System\Credentials Delegation*
@@ -536,7 +536,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-denyfreshcredentials"></a>**ADMX_CredSsp/DenyFreshCredentials**  
+<a href="" id="admx-credssp-denyfreshcredentials"></a>**ADMX_CredSsp/DenyFreshCredentials**
 
 <!--SupportedSKUs-->
 
@@ -582,7 +582,7 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Deny delegating fresh credentials*
 -   GP name: *DenyFreshCredentials*
 -   GP path: *System\Credentials Delegation*
@@ -593,7 +593,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-denysavedcredentials"></a>**ADMX_CredSsp/DenySavedCredentials**  
+<a href="" id="admx-credssp-denysavedcredentials"></a>**ADMX_CredSsp/DenySavedCredentials**
 
 <!--SupportedSKUs-->
 
@@ -639,7 +639,7 @@ This policy setting can be used in combination with the "Allow delegating saved 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Deny delegating saved credentials*
 -   GP name: *DenySavedCredentials*
 -   GP path: *System\Credentials Delegation*
@@ -650,7 +650,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credssp-restrictedremoteadministration"></a>**ADMX_CredSsp/RestrictedRemoteAdministration**  
+<a href="" id="admx-credssp-restrictedremoteadministration"></a>**ADMX_CredSsp/RestrictedRemoteAdministration**
 
 <!--SupportedSKUs-->
 
@@ -697,7 +697,7 @@ If you disable or don't configure this policy setting, Restricted Admin and Remo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict delegation of credentials to remote servers*
 -   GP name: *RestrictedRemoteAdministration*
 -   GP path: *System\Credentials Delegation*

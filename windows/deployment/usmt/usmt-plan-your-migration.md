@@ -4,10 +4,11 @@ description: Learn how to your plan your migration carefully so your migration c
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Plan Your Migration

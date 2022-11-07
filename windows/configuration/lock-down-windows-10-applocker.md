@@ -3,12 +3,13 @@ title: Use AppLocker to create a Windows 10 kiosk that runs multiple apps (Windo
 description: Learn how to use AppLocker to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
 ms.reviewer: sybruckm
 manager: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.date: 07/30/2018
 ms.author: lizlong
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Use AppLocker to create a Windows 10 kiosk that runs multiple apps

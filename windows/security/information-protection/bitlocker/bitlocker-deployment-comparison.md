@@ -1,11 +1,11 @@
 ---
 title: BitLocker deployment comparison (Windows 10)
 description: This article shows the BitLocker deployment comparison chart.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: lovina-saldanha
 ms.author: v-lsaldanha
-manager: dansimp
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/20/2021
@@ -24,7 +24,7 @@ This article depicts the BitLocker deployment comparison chart.
 
 ## BitLocker deployment comparison chart
 
-| Requirements |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM) |
+| Requirements |Microsoft Intune  |Microsoft Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM) |
 |---------|---------|---------|---------|
 |Minimum client operating system version     |Windows 11 and Windows 10    | Windows 11, Windows 10, and Windows 8.1  | Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 10 IoT, and Windows 11      |
 |Supported Windows SKUs     |    Enterprise, Pro, Education     |    Enterprise, Pro, Education     |     Enterprise    |

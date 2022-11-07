@@ -1,9 +1,9 @@
 ---
 title: Windows quality update signals
-description:  This article explains the Windows quality update signals
+description: This article explains the Windows quality update signals
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan

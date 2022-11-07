@@ -29,24 +29,53 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Mobile device management (MDM) overview
+            url: mdm-overview.md
+      - linkListType: concept
+        links:
+          - text: MDM for device updates
+            url: device-update-management.md
+          - text: Enterprise settings, policies, and app management
+            url: windows-mdm-enterprise-settings.md
           - text: Windows Tools/Administrative Tools
             url: administrative-tools-in-windows-10.md
           - text: Create mandatory user profiles
             url: mandatory-user-profile.md
-          - text: Mobile device management (MDM)
-            url: mdm/index.yml
-          - text: MDM for device updates
-            url: mdm/device-update-management.md
-          - text: Mobile device enrollment
-            url: mdm/mobile-device-enrollment.md
 
-  # Card (optional)
-  - title: CSP reference documentation
+  - title: Device enrollment
     linkLists:
       - linkListType: overview
         links:
-          - text: Configuration service provider reference
-            url: mdm/configuration-service-provider-reference.md
+          - text: Mobile device enrollment
+            url: mobile-device-enrollment.md
+      - linkListType: concept
+        links:
+          - text: Enroll Windows devices
+            url: mdm-enrollment-of-windows-devices.md
+          - text: Automatic enrollment using Azure AD
+            url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
+          - text: Automatic enrollment using group policy
+            url: enroll-a-windows-10-device-automatically-using-group-policy.md
+          - text: Bulk enrollment
+            url: bulk-enrollment-using-windows-provisioning-tool.md
+
+  # Card (optional)
+  - title: Configuration service provider reference
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: CSP reference
+            url: mdm/index.yml
+      - linkListType: concept
+        links:
+          - text: Understanding ADMX policies
+            url: understanding-admx-backed-policies.md
+          - text: WMI Bridge Provider
+            url: using-powershell-scripting-with-the-wmi-bridge-provider.md
+          - text: OMA DM protocol support
+            url: oma-dm-protocol-support.md
+      - linkListType: reference
+        links:
           - text: DynamicManagement CSP
             url: mdm/dynamicmanagement-csp.md
           - text: BitLocker CSP
@@ -60,11 +89,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot Windows 10 clients
-            url: windows-10-support-solutions.md
+          - text: Troubleshoot Windows clients
+            url: /troubleshoot/windows-client/welcome-windows-client
           - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows start-up
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-windows-startup.md
+            url: /troubleshoot/windows-client/networking/networking-overview
+          - text: Advanced troubleshooting for Windows start-up and performance
+            url: /troubleshoot/windows-client/performance/performance-overview
+          - text: Advanced troubleshooting for user profiles and logon
+            url: /troubleshoot/windows-client/user-profiles-and-logon/userprofiles-and-logon-overview

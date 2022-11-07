@@ -1,11 +1,11 @@
 ---
 title: Secure the Windows boot process
 description: This article describes how Windows security features help protect your PC from malware, including rootkits and other applications.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual

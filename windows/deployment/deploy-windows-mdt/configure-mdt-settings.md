@@ -3,22 +3,24 @@ title: Configure MDT settings (Windows 10)
 description: One of the most powerful features in Microsoft Deployment Toolkit (MDT) is its extension capabilities; there's virtually no limitation to what you can do in terms of customization.
 ms.assetid: d3e1280c-3d1b-4fad-8ac4-b65dc711f122
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Configure MDT settings
 
-One of the most powerful features in Microsoft Deployment Toolkit (MDT) is its extension capabilities; there's virtually no limitation to what you can do in terms of customization. In this topic, you learn about configuring customizations for your environment.
-For the purposes of this topic, we'll use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 Standard server, and PC0001 is a Windows 10 Enterprise x64 client used for the MDT simulation environment. OR01 has Microsoft System Center 2012 R2 Orchestrator installed. MDT01, OR01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more information on the setup for this topic, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
+One of the most powerful features in Microsoft Deployment Toolkit (MDT) is its extension capabilities; there's virtually no limitation to what you can do in terms of customization. In this article, you learn about configuring customizations for your environment.
+For the purposes of this article, we'll use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 Standard server, and PC0001 is a Windows 10 Enterprise x64 client used for the MDT simulation environment. OR01 has Microsoft System Center 2012 R2 Orchestrator installed. MDT01, OR01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more information on the setup for this article, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
 
 ![figure 1.](../images/mdt-09-fig01.png)
 
-The computers used in this topic.
+The computers used in this article.
 
 ## In this section
 
@@ -31,7 +33,7 @@ The computers used in this topic.
 -   [Use web services in MDT](use-web-services-in-mdt.md)
 -   [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
 
-## Related topics
+## Related articles
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>

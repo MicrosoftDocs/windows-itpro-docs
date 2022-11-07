@@ -1,11 +1,11 @@
 ---
 title: Kernel DMA Protection (Windows)
 description: Kernel DMA Protection protects PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt™ 3 ports.
-ms.prod: m365-security
+ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual

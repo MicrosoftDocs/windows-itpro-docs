@@ -2,12 +2,13 @@
 title: Application Virtualization (App-V) (Windows 10/11)
 description: See various articles that can help you administer Application Virtualization (App-V) and its components.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 
 # Application Virtualization (App-V) for Windows client overview

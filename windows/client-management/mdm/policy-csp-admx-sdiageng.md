@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_sdiageng.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/18/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_sdiageng
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_sdiageng policies  
+## ADMX_sdiageng policies
 
 <dl>
   <dd>
@@ -41,7 +41,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sdiageng-betterwhenconnected"></a>**ADMX_sdiageng/BetterWhenConnected**  
+<a href="" id="admx-sdiageng-betterwhenconnected"></a>**ADMX_sdiageng/BetterWhenConnected**
 
 <!--SupportedSKUs-->
 
@@ -77,7 +77,7 @@ If you disable this policy setting, users can only access and search troubleshoo
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Troubleshooting: Allow users to access online troubleshooting content on Microsoft servers from the Troubleshooting Control Panel (via the Windows Online Troubleshooting Service - WOTS)*
 -   GP name: *BetterWhenConnected*
 -   GP path: *System\Troubleshooting and Diagnostics\Scripted Diagnostics*
@@ -88,7 +88,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sdiageng-scripteddiagnosticsexecutionpolicy"></a>**ADMX_sdiageng/ScriptedDiagnosticsExecutionPolicy**  
+<a href="" id="admx-sdiageng-scripteddiagnosticsexecutionpolicy"></a>**ADMX_sdiageng/ScriptedDiagnosticsExecutionPolicy**
 
 <!--SupportedSKUs-->
 
@@ -127,7 +127,7 @@ If this policy setting is disabled, the users cannot access or run the troublesh
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Troubleshooting: Allow users to access and run Troubleshooting Wizards*
 -   GP name: *ScriptedDiagnosticsExecutionPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Scripted Diagnostics*
@@ -138,7 +138,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-sdiageng-scripteddiagnosticssecuritypolicy"></a>**ADMX_sdiageng/ScriptedDiagnosticsSecurityPolicy**  
+<a href="" id="admx-sdiageng-scripteddiagnosticssecuritypolicy"></a>**ADMX_sdiageng/ScriptedDiagnosticsSecurityPolicy**
 
 <!--SupportedSKUs-->
 
@@ -174,7 +174,7 @@ If you disable or don't configure this policy setting, the scripted diagnostics 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Security Policy for Scripted Diagnostics*
 -   GP name: *ScriptedDiagnosticsSecurityPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Scripted Diagnostics*

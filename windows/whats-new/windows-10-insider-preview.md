@@ -1,7 +1,7 @@
 ---
 title: Documentation for Windows 10 Insider Preview (Windows 10)
 description: Preliminary documentation for some Windows 10 features in Insider Preview.
-ms.prod: w10
+ms.prod: windows-client
 author: dansimp
 ms.date: 04/14/2017
 ms.reviewer: 

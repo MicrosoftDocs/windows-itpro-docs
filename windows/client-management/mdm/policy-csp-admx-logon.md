@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Logon.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/21/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Logon
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Logon policies  
+## ADMX_Logon policies
 
 <dl>
   <dd>
@@ -78,7 +78,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-blockuserfromshowingaccountdetailsonsignin"></a>**ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin**  
+<a href="" id="admx-logon-blockuserfromshowingaccountdetailsonsignin"></a>**ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin**
 
 <!--SupportedSKUs-->
 
@@ -113,7 +113,7 @@ If you disable or don't configure this policy setting, the user may choose to sh
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Block user from showing account details on sign-in*
 -   GP name: *BlockUserFromShowingAccountDetailsOnSignin*
 -   GP path: *System\Logon*
@@ -124,7 +124,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-disableacrylicbackgroundonlogon"></a>**ADMX_Logon/DisableAcrylicBackgroundOnLogon**  
+<a href="" id="admx-logon-disableacrylicbackgroundonlogon"></a>**ADMX_Logon/DisableAcrylicBackgroundOnLogon**
 
 <!--SupportedSKUs-->
 
@@ -160,7 +160,7 @@ If you disable or don't configure this policy, the logon background image adopts
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show clear logon background*
 -   GP name: *DisableAcrylicBackgroundOnLogon*
 -   GP path: *System\Logon*
@@ -171,7 +171,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunlegacy-1"></a>**ADMX_Logon/DisableExplorerRunLegacy_1**  
+<a href="" id="admx-logon-disableexplorerrunlegacy-1"></a>**ADMX_Logon/DisableExplorerRunLegacy_1**
 
 <!--SupportedSKUs-->
 
@@ -210,7 +210,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not process the legacy run list*
 -   GP name: *DisableExplorerRunLegacy_1*
 -   GP path: *System\Logon*
@@ -221,7 +221,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunlegacy-2"></a>**ADMX_Logon/DisableExplorerRunLegacy_2**  
+<a href="" id="admx-logon-disableexplorerrunlegacy-2"></a>**ADMX_Logon/DisableExplorerRunLegacy_2**
 
 <!--SupportedSKUs-->
 
@@ -260,7 +260,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not process the legacy run list*
 -   GP name: *DisableExplorerRunLegacy_2*
 -   GP path: *System\Logon*
@@ -271,7 +271,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunoncelegacy-1"></a>**ADMX_Logon/DisableExplorerRunOnceLegacy_1**  
+<a href="" id="admx-logon-disableexplorerrunoncelegacy-1"></a>**ADMX_Logon/DisableExplorerRunOnceLegacy_1**
 
 <!--SupportedSKUs-->
 
@@ -314,7 +314,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not process the run once list*
 -   GP name: *DisableExplorerRunOnceLegacy_1*
 -   GP path: *System\Logon*
@@ -325,7 +325,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-disableexplorerrunoncelegacy-2"></a>**ADMX_Logon/DisableExplorerRunOnceLegacy_2**  
+<a href="" id="admx-logon-disableexplorerrunoncelegacy-2"></a>**ADMX_Logon/DisableExplorerRunOnceLegacy_2**
 
 <!--SupportedSKUs-->
 
@@ -368,7 +368,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not process the run once list*
 -   GP name: *DisableExplorerRunOnceLegacy_2*
 -   GP path: *System\Logon*
@@ -379,7 +379,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-disablestatusmessages"></a>**ADMX_Logon/DisableStatusMessages**  
+<a href="" id="admx-logon-disablestatusmessages"></a>**ADMX_Logon/DisableStatusMessages**
 
 <!--SupportedSKUs-->
 
@@ -415,7 +415,7 @@ If you disable or don't configure this policy setting, the system displays the m
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Boot / Shutdown / Logon / Logoff status messages*
 -   GP name: *DisableStatusMessages*
 -   GP path: *System*
@@ -426,7 +426,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-dontenumerateconnectedusers"></a>**ADMX_Logon/DontEnumerateConnectedUsers**  
+<a href="" id="admx-logon-dontenumerateconnectedusers"></a>**ADMX_Logon/DontEnumerateConnectedUsers**
 
 <!--SupportedSKUs-->
 
@@ -462,7 +462,7 @@ If you disable or don't configure this policy setting, connected users will be e
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not enumerate connected users on domain-joined computers*
 -   GP name: *DontEnumerateConnectedUsers*
 -   GP path: *System\Logon*
@@ -473,7 +473,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-nowelcometips-1"></a>**ADMX_Logon/NoWelcomeTips_1**  
+<a href="" id="admx-logon-nowelcometips-1"></a>**ADMX_Logon/NoWelcomeTips_1**
 
 <!--SupportedSKUs-->
 
@@ -519,7 +519,7 @@ This setting applies only to Windows. It doesn't affect the "Configure Your Serv
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not display the Getting Started welcome screen at logon*
 -   GP name: *NoWelcomeTips_1*
 -   GP path: *System*
@@ -531,7 +531,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-nowelcometips-2"></a>**ADMX_Logon/NoWelcomeTips_2**  
+<a href="" id="admx-logon-nowelcometips-2"></a>**ADMX_Logon/NoWelcomeTips_2**
 
 <!--SupportedSKUs-->
 
@@ -575,7 +575,7 @@ If you disable or don't configure this policy, the welcome screen is displayed e
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not display the Getting Started welcome screen at logon*
 -   GP name: *NoWelcomeTips_2*
 -   GP path: *System\Logon*
@@ -586,7 +586,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-run-1"></a>**ADMX_Logon/Run_1**  
+<a href="" id="admx-logon-run-1"></a>**ADMX_Logon/Run_1**
 
 <!--SupportedSKUs-->
 
@@ -629,7 +629,7 @@ Also, see the "Do not process the legacy run list" and the "don't process the ru
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run these programs at user logon*
 -   GP name: *Run_1*
 -   GP path: *System\Logon*
@@ -640,7 +640,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-run-2"></a>**ADMX_Logon/Run_2**  
+<a href="" id="admx-logon-run-2"></a>**ADMX_Logon/Run_2**
 
 <!--SupportedSKUs-->
 
@@ -684,7 +684,7 @@ Also, see the "Do not process the legacy run list" and the "don't process the ru
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run these programs at user logon*
 -   GP name: *Run_2*
 -   GP path: *System\Logon*
@@ -695,7 +695,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-syncforegroundpolicy"></a>**ADMX_Logon/SyncForegroundPolicy**  
+<a href="" id="admx-logon-syncforegroundpolicy"></a>**ADMX_Logon/SyncForegroundPolicy**
 
 <!--SupportedSKUs-->
 
@@ -742,14 +742,14 @@ If you disable or don't configure this policy setting and users sign in to a cli
 
 > [!NOTE]
 >
-> - If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one sign in, enable this policy setting to ensure that Windows waits for the network to be available before applying policy. 
+> - If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one sign in, enable this policy setting to ensure that Windows waits for the network to be available before applying policy.
 > - If Folder Redirection policy will apply during the next sign in, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always wait for the network at computer startup and logon*
 -   GP name: *SyncForegroundPolicy*
 -   GP path: *System\Logon*
@@ -760,7 +760,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-useoembackground"></a>**ADMX_Logon/UseOEMBackground**  
+<a href="" id="admx-logon-useoembackground"></a>**ADMX_Logon/UseOEMBackground**
 
 <!--SupportedSKUs-->
 
@@ -796,7 +796,7 @@ If you disable or don't configure this policy setting, Windows uses the default 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always use custom logon background*
 -   GP name: *UseOEMBackground*
 -   GP path: *System\Logon*
@@ -807,7 +807,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-logon-verbosestatus"></a>**ADMX_Logon/VerboseStatus**  
+<a href="" id="admx-logon-verbosestatus"></a>**ADMX_Logon/VerboseStatus**
 
 <!--SupportedSKUs-->
 
@@ -848,7 +848,7 @@ If you disable or don't configure this policy setting, only the default status m
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display highly detailed status messages*
 -   GP name: *VerboseStatus*
 -   GP path: *System*

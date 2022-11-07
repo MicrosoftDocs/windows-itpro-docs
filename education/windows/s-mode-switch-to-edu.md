@@ -1,18 +1,8 @@
 ---
 title: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
-description: Switching out of Windows 10 Pro in S mode to Windows 10 Pro Education in S mode. The S mode switch documentation describes the requirements and process for Switching to Windows 10 Pro Education in S mode.
-keywords: Windows 10 S switch, S mode Switch, switch in S mode, Switch S mode, Windows 10 Pro Education in S mode, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
-ms.mktglfcycl: deploy
-ms.localizationpriority: medium
-ms.prod: windows
-ms.sitesec: library
-ms.pagetype: edu
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how to switch out of Windows 10 Pro in S mode to Windows 10 Pro Education.
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
 ---

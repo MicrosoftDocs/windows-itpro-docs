@@ -3,8 +3,8 @@ title: Policy CSP - Cellular
 description: Learn how to use the Policy CSP - Cellular setting so you can specify whether Windows apps can access cellular data.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - Cellular
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## Cellular policies  
+## Cellular policies
 
 <dl>
   <dd>
@@ -49,7 +49,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata"></a>**Cellular/LetAppsAccessCellularData**  
+<a href="" id="cellular-letappsaccesscellulardata"></a>**Cellular/LetAppsAccessCellularData**
 
 <!--SupportedSKUs-->
 
@@ -93,7 +93,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_Enum*
@@ -114,7 +114,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata-forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**  
+<a href="" id="cellular-letappsaccesscellulardata-forceallowtheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceAllowTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -145,7 +145,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceAllowTheseApps_List*
@@ -158,7 +158,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata-forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**  
+<a href="" id="cellular-letappsaccesscellulardata-forcedenytheseapps"></a>**Cellular/LetAppsAccessCellularData_ForceDenyTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -189,7 +189,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceDenyTheseApps_List*
@@ -202,7 +202,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-letappsaccesscellulardata-userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**  
+<a href="" id="cellular-letappsaccesscellulardata-userincontroloftheseapps"></a>**Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps**
 
 <!--SupportedSKUs-->
 
@@ -233,7 +233,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_UserInControlOfTheseApps_List*
@@ -246,7 +246,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="cellular-showappcellularaccessui"></a>**Cellular/ShowAppCellularAccessUI**  
+<a href="" id="cellular-showappcellularaccessui"></a>**Cellular/ShowAppCellularAccessUI**
 
 <!--SupportedSKUs-->
 
@@ -282,7 +282,7 @@ If this policy setting is disabled or isn't configured, the link to the per-appl
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Per-App Cellular Access UI Visibility*
 -   GP name: *ShowAppCellularAccessUI*
 -   GP path: *Network/WWAN Service/WWAN UI Settings*

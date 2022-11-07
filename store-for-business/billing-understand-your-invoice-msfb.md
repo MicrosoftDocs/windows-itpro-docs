@@ -1,7 +1,6 @@
 ---
 title: Understand your Microsoft Customer Agreement invoice
 description: Learn how to read and understand your MCA bill
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

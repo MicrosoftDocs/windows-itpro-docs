@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_MicrosoftDefenderAntivirus.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/19/2022
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_MicrosoftDefenderAntivirus
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_MicrosoftDefenderAntivirus policies  
+## ADMX_MicrosoftDefenderAntivirus policies
 
 <dl>
   <dd>
@@ -311,7 +311,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-allowfastservicestartup"></a>**ADMX_MicrosoftDefenderAntivirus/AllowFastServiceStartup**  
+<a href="" id="admx-microsoftdefenderantivirus-allowfastservicestartup"></a>**ADMX_MicrosoftDefenderAntivirus/AllowFastServiceStartup**
 
 <!--SupportedSKUs-->
 
@@ -347,7 +347,7 @@ If you disable this setting, the antimalware service will load as a low priority
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow antimalware service to startup with normal priority*
 -   GP name: *AllowFastServiceStartup*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -358,7 +358,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-disableantispywaredefender"></a>**ADMX_MicrosoftDefenderAntivirus/DisableAntiSpywareDefender**  
+<a href="" id="admx-microsoftdefenderantivirus-disableantispywaredefender"></a>**ADMX_MicrosoftDefenderAntivirus/DisableAntiSpywareDefender**
 
 <!--SupportedSKUs-->
 
@@ -398,7 +398,7 @@ Enabling or disabling this policy may lead to unexpected or unsupported behavior
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Microsoft Defender Antivirus*
 -   GP name: *DisableAntiSpywareDefender*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -409,7 +409,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-disableautoexclusions"></a>**ADMX_MicrosoftDefenderAntivirus/DisableAutoExclusions**  
+<a href="" id="admx-microsoftdefenderantivirus-disableautoexclusions"></a>**ADMX_MicrosoftDefenderAntivirus/DisableAutoExclusions**
 
 <!--SupportedSKUs-->
 
@@ -445,7 +445,7 @@ If you enable this policy setting, Microsoft Defender Antivirus won't exclude pr
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Auto Exclusions*
 -   GP name: *DisableAutoExclusions*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
@@ -456,7 +456,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-disableblockatfirstseen"></a>**ADMX_MicrosoftDefenderAntivirus/DisableBlockAtFirstSeen**  
+<a href="" id="admx-microsoftdefenderantivirus-disableblockatfirstseen"></a>**ADMX_MicrosoftDefenderAntivirus/DisableBlockAtFirstSeen**
 
 <!--SupportedSKUs-->
 
@@ -486,7 +486,7 @@ This feature ensures the device checks in real time with the Microsoft Active Pr
 
 If you enable this feature, the Block at First Sight setting is turned on.
 If you disable this feature, the Block at First Sight setting is turned off.
-    
+
 This feature requires these Policy settings to be set as follows:
 
 - MAPS -> The “Join Microsoft MAPS” must be enabled or the “Block at First Sight” feature won't function.
@@ -497,7 +497,7 @@ This feature requires these Policy settings to be set as follows:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the 'Block at First Sight' feature*
 -   GP name: *DisableBlockAtFirstSeen*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\MAPS*
@@ -508,7 +508,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-disablelocaladminmerge"></a>**ADMX_MicrosoftDefenderAntivirus/DisableLocalAdminMerge**  
+<a href="" id="admx-microsoftdefenderantivirus-disablelocaladminmerge"></a>**ADMX_MicrosoftDefenderAntivirus/DisableLocalAdminMerge**
 
 <!--SupportedSKUs-->
 
@@ -544,7 +544,7 @@ If you disable this setting, only items defined by Policy will be used in the re
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local administrator merge behavior for lists*
 -   GP name: *DisableLocalAdminMerge*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -555,7 +555,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-disablerealtimemonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/DisableRealtimeMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-disablerealtimemonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/DisableRealtimeMonitoring**
 
 <!--SupportedSKUs-->
 
@@ -593,7 +593,7 @@ If you disable or don't configure this policy setting, Microsoft Defender Antivi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off real-time protection*
 -   GP name: *DisableRealtimeMonitoring*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -604,7 +604,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-disableroutinelytakingaction"></a>**ADMX_MicrosoftDefenderAntivirus/DisableRoutinelyTakingAction**  
+<a href="" id="admx-microsoftdefenderantivirus-disableroutinelytakingaction"></a>**ADMX_MicrosoftDefenderAntivirus/DisableRoutinelyTakingAction**
 
 <!--SupportedSKUs-->
 
@@ -640,7 +640,7 @@ If you disable or don't configure this policy setting, Microsoft Defender Antivi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off routine remediation*
 -   GP name: *DisableRoutinelyTakingAction*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -651,7 +651,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exclusions-extensions"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Extensions**  
+<a href="" id="admx-microsoftdefenderantivirus-exclusions-extensions"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Extensions**
 
 <!--SupportedSKUs-->
 
@@ -683,7 +683,7 @@ This policy setting allows you to specify a list of file types that should be ex
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Extension Exclusions*
 -   GP name: *Exclusions_Extensions*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
@@ -694,7 +694,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exclusions-paths"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Paths**  
+<a href="" id="admx-microsoftdefenderantivirus-exclusions-paths"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Paths**
 
 <!--SupportedSKUs-->
 
@@ -728,7 +728,7 @@ As an example, a path might be defined as: "c:\Windows" to exclude all files in 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Path Exclusions*
 -   GP name: *Exclusions_Paths*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
@@ -739,7 +739,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exclusions-processes"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Processes**  
+<a href="" id="admx-microsoftdefenderantivirus-exclusions-processes"></a>**ADMX_MicrosoftDefenderAntivirus/Exclusions_Processes**
 
 <!--SupportedSKUs-->
 
@@ -771,7 +771,7 @@ This policy setting allows you to disable scheduled and real-time scanning for a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Process Exclusions*
 -   GP name: *Exclusions_Processes*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Exclusions*
@@ -782,7 +782,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exploitguard-asr-asronlyexclusions"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_ASROnlyExclusions**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-asr-asronlyexclusions"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_ASROnlyExclusions**
 
 <!--SupportedSKUs-->
 
@@ -829,7 +829,7 @@ You can configure ASR rules in the "Configure Attack Surface Reduction rules" GP
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Exclude files and paths from Attack Surface Reduction Rules*
 -   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction*
@@ -840,7 +840,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exploitguard-asr-rules"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_Rules**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-asr-rules"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ASR_Rules**
 
 <!--SupportedSKUs-->
 
@@ -885,7 +885,7 @@ The following status IDs are permitted under the value column:
 - 1 (Block)
 - 0 (Off)
 - 2 (Audit)
-    
+
 Example:
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            0
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx            1
@@ -903,7 +903,7 @@ You can exclude folders or files in the "Exclude files and paths from Attack Sur
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Attack Surface Reduction rules*
 -   GP name: *ExploitGuard_ASR_Rules*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction*
@@ -914,7 +914,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-allowedapplications"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_AllowedApplications**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-allowedapplications"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_AllowedApplications**
 
 <!--SupportedSKUs-->
 
@@ -946,7 +946,7 @@ These applications are allowed to modify or delete files in controlled folder ac
 
 Microsoft Defender Antivirus automatically determines which applications should be trusted. You can configure this setting to add other applications.
 
-Enabled: 
+Enabled:
 Specify other allowed applications in the Options section.
 
 Disabled:
@@ -963,7 +963,7 @@ Default system folders are automatically guarded, but you can add folders in the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure allowed applications*
 -   GP name: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access*
@@ -974,7 +974,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-protectedfolders"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_ProtectedFolders**  
+<a href="" id="admx-microsoftdefenderantivirus-exploitguard-controlledfolderaccess-protectedfolders"></a>**ADMX_MicrosoftDefenderAntivirus/ExploitGuard_ControlledFolderAccess_ProtectedFolders**
 
 <!--SupportedSKUs-->
 
@@ -1004,7 +1004,7 @@ Specify additional folders that should be guarded by the Controlled folder acces
 
 Files in these folders can't be modified or deleted by untrusted applications.
 
-Default system folders are automatically protected. You can configure this setting to add more folders. 
+Default system folders are automatically protected. You can configure this setting to add more folders.
 The list of default system folders that are protected is shown in Windows Security.
 
 Enabled:
@@ -1024,7 +1024,7 @@ Microsoft Defender Antivirus automatically determines which applications can be 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure protected folders*
 -   GP name: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access*
@@ -1035,7 +1035,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-mpengine-enablefilehashcomputation"></a>**ADMX_MicrosoftDefenderAntivirus/MpEngine_EnableFileHashComputation**  
+<a href="" id="admx-microsoftdefenderantivirus-mpengine-enablefilehashcomputation"></a>**ADMX_MicrosoftDefenderAntivirus/MpEngine_EnableFileHashComputation**
 
 <!--SupportedSKUs-->
 
@@ -1076,7 +1076,7 @@ Same as Disabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable file hash computation feature*
 -   GP name: *MpEngine_EnableFileHashComputation*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\MpEngine*
@@ -1087,7 +1087,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-nis-consumers-ips-disablesignatureretirement"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_DisableSignatureRetirement**  
+<a href="" id="admx-microsoftdefenderantivirus-nis-consumers-ips-disablesignatureretirement"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_DisableSignatureRetirement**
 
 <!--SupportedSKUs-->
 
@@ -1123,7 +1123,7 @@ If you disable this setting, definition retirement will be disabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on definition retirement*
 -   GP name: *Nis_Consumers_IPS_DisableSignatureRetirement*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Network Inspection System*
@@ -1134,7 +1134,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-nis-consumers-ips-sku-differentiation-signature-set-guid"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid**  
+<a href="" id="admx-microsoftdefenderantivirus-nis-consumers-ips-sku-differentiation-signature-set-guid"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid**
 
 <!--SupportedSKUs-->
 
@@ -1166,7 +1166,7 @@ This policy setting defines more definition sets to enable for network traffic i
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify additional definition sets for network traffic inspection*
 -   GP name: *Nis_Consumers_IPS_sku_differentiation_Signature_Set_Guid*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Network Inspection System*
@@ -1177,7 +1177,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-nis-disableprotocolrecognition"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_DisableProtocolRecognition**  
+<a href="" id="admx-microsoftdefenderantivirus-nis-disableprotocolrecognition"></a>**ADMX_MicrosoftDefenderAntivirus/Nis_DisableProtocolRecognition**
 
 <!--SupportedSKUs-->
 
@@ -1213,7 +1213,7 @@ If you disable this setting, protocol recognition will be disabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on protocol recognition*
 -   GP name: *Nis_DisableProtocolRecognition*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Network Inspection System*
@@ -1224,7 +1224,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-proxybypass"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyBypass**  
+<a href="" id="admx-microsoftdefenderantivirus-proxybypass"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyBypass**
 
 <!--SupportedSKUs-->
 
@@ -1260,7 +1260,7 @@ If you disable or don't configure this setting, the proxy server won't be bypass
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define addresses to bypass proxy server*
 -   GP name: *ProxyBypass*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -1271,7 +1271,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-proxypacurl"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyPacUrl**  
+<a href="" id="admx-microsoftdefenderantivirus-proxypacurl"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyPacUrl**
 
 <!--SupportedSKUs-->
 
@@ -1313,7 +1313,7 @@ If you disable or don't configure this setting, the proxy will skip over this fa
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define proxy auto-config (.pac) for connecting to the network*
 -   GP name: *ProxyPacUrl*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -1324,7 +1324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-proxyserver"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyServer**  
+<a href="" id="admx-microsoftdefenderantivirus-proxyserver"></a>**ADMX_MicrosoftDefenderAntivirus/ProxyServer**
 
 <!--SupportedSKUs-->
 
@@ -1366,7 +1366,7 @@ If you disable or don't configure this setting, the proxy will skip over this fa
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define proxy server for connecting to the network*
 -   GP name: *ProxyServer*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -1377,7 +1377,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-quarantine-localsettingoverridepurgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Quarantine_LocalSettingOverridePurgeItemsAfterDelay**  
+<a href="" id="admx-microsoftdefenderantivirus-quarantine-localsettingoverridepurgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Quarantine_LocalSettingOverridePurgeItemsAfterDelay**
 
 <!--SupportedSKUs-->
 
@@ -1413,7 +1413,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for the removal of items from Quarantine folder*
 -   GP name: *Quarantine_LocalSettingOverridePurgeItemsAfterDelay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Quarantine*
@@ -1424,7 +1424,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-quarantine-purgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Quarantine_PurgeItemsAfterDelay**  
+<a href="" id="admx-microsoftdefenderantivirus-quarantine-purgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Quarantine_PurgeItemsAfterDelay**
 
 <!--SupportedSKUs-->
 
@@ -1460,7 +1460,7 @@ If you disable or don't configure this setting, items will be kept in the quaran
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure removal of items from Quarantine folder*
 -   GP name: *Quarantine_PurgeItemsAfterDelay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Quarantine*
@@ -1471,7 +1471,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-randomizescheduletasktimes"></a>**ADMX_MicrosoftDefenderAntivirus/RandomizeScheduleTaskTimes**  
+<a href="" id="admx-microsoftdefenderantivirus-randomizescheduletasktimes"></a>**ADMX_MicrosoftDefenderAntivirus/RandomizeScheduleTaskTimes**
 
 <!--SupportedSKUs-->
 
@@ -1507,7 +1507,7 @@ If you disable this setting, scheduled tasks will begin at the specified start t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Randomize scheduled task times*
 -   GP name: *RandomizeScheduleTaskTimes*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -1518,7 +1518,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablebehaviormonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableBehaviorMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablebehaviormonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableBehaviorMonitoring**
 
 <!--SupportedSKUs-->
 
@@ -1554,7 +1554,7 @@ If you disable this setting, behavior monitoring will be disabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on behavior monitoring*
 -   GP name: *RealtimeProtection_DisableBehaviorMonitoring*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1565,7 +1565,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disableioavprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableIOAVProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disableioavprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableIOAVProtection**
 
 <!--SupportedSKUs-->
 
@@ -1601,7 +1601,7 @@ If you disable this setting, scanning for all downloaded files and attachments w
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scan all downloaded files and attachments*
 -   GP name: *RealtimeProtection_DisableIOAVProtection*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1612,7 +1612,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disableonaccessprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableOnAccessProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disableonaccessprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableOnAccessProtection**
 
 <!--SupportedSKUs-->
 
@@ -1648,7 +1648,7 @@ If you disable this setting, monitoring for file and program activity will be di
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Monitor file and program activity on your computer*
 -   GP name: *RealtimeProtection_DisableOnAccessProtection*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1659,7 +1659,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablerawwritenotification"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableRawWriteNotification**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablerawwritenotification"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableRawWriteNotification**
 
 <!--SupportedSKUs-->
 
@@ -1695,7 +1695,7 @@ If you disable this setting, raw write notifications be disabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on raw volume write notifications*
 -   GP name: *RealtimeProtection_DisableRawWriteNotification*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1706,7 +1706,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablescanonrealtimeenable"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableScanOnRealtimeEnable**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-disablescanonrealtimeenable"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_DisableScanOnRealtimeEnable**
 
 <!--SupportedSKUs-->
 
@@ -1742,7 +1742,7 @@ If you disable this setting, a process scan won't be initiated when real-time pr
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on process scanning whenever real-time protection is enabled*
 -   GP name: *RealtimeProtection_DisableScanOnRealtimeEnable*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1753,7 +1753,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-ioavmaxsize"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_IOAVMaxSize**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-ioavmaxsize"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_IOAVMaxSize**
 
 <!--SupportedSKUs-->
 
@@ -1789,7 +1789,7 @@ If you disable or don't configure this setting, a default size will be applied.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define the maximum size of downloaded files and attachments to be scanned*
 -   GP name: *RealtimeProtection_IOAVMaxSize*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1800,7 +1800,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablebehaviormonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablebehaviormonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring**
 
 <!--SupportedSKUs-->
 
@@ -1836,7 +1836,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for turn on behavior monitoring*
 -   GP name: *RealtimeProtection_LocalSettingOverrideDisableBehaviorMonitoring*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1847,7 +1847,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableioavprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableioavprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableIOAVProtection**
 
 <!--SupportedSKUs-->
 
@@ -1883,7 +1883,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for scanning all downloaded files and attachments*
 -   GP name: *RealtimeProtection_LocalSettingOverrideDisableIOAVProtection*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1894,7 +1894,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableonaccessprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisableonaccessprotection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection**
 
 <!--SupportedSKUs-->
 
@@ -1930,7 +1930,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for monitoring file and program activity on your computer*
 -   GP name: *RealtimeProtection_LocalSettingOverrideDisableOnAccessProtection*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1941,7 +1941,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablerealtimemonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverridedisablerealtimemonitoring"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring**
 
 <!--SupportedSKUs-->
 
@@ -1977,7 +1977,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override to turn on real-time protection*
 -   GP name: *RealtimeProtection_LocalSettingOverrideDisableRealtimeMonitoring*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -1988,7 +1988,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverriderealtimescandirection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection**  
+<a href="" id="admx-microsoftdefenderantivirus-realtimeprotection-localsettingoverriderealtimescandirection"></a>**ADMX_MicrosoftDefenderAntivirus/RealtimeProtection_LocalSettingOverrideRealtimeScanDirection**
 
 <!--SupportedSKUs-->
 
@@ -2024,7 +2024,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for monitoring for incoming and outgoing file activity*
 -   GP name: *RealtimeProtection_LocalSettingOverrideRealtimeScanDirection*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Real-time Protection*
@@ -2035,7 +2035,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-remediation-localsettingoverridescan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_LocalSettingOverrideScan_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-remediation-localsettingoverridescan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_LocalSettingOverrideScan_ScheduleTime**
 
 <!--SupportedSKUs-->
 
@@ -2071,7 +2071,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for the time of day to run a scheduled full scan to complete remediation*
 -   GP name: *Remediation_LocalSettingOverrideScan_ScheduleTime*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Remediation*
@@ -2082,7 +2082,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-remediation-scan-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-remediation-scan-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleDay**
 
 <!--SupportedSKUs-->
 
@@ -2113,7 +2113,7 @@ This policy setting allows you to specify the day of the week on which to perfor
 This setting can be configured with the following ordinal number values:
 
 - (0x0) Every Day
-- (0x1) Sunday 
+- (0x1) Sunday
 - (0x2) Monday
 - (0x3) Tuesday
 - (0x4) Wednesday
@@ -2130,7 +2130,7 @@ If you disable or don't configure this setting, a scheduled full scan to complet
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the day of the week to run a scheduled full scan to complete remediation*
 -   GP name: *Remediation_Scan_ScheduleDay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Remediation*
@@ -2141,7 +2141,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-remediation-scan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-remediation-scan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Remediation_Scan_ScheduleTime**
 
 <!--SupportedSKUs-->
 
@@ -2177,7 +2177,7 @@ If you disable or don't configure this setting, a scheduled full scan to complet
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the time of day to run a scheduled full scan to complete remediation*
 -   GP name: *Remediation_Scan_ScheduleTime*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Remediation*
@@ -2188,7 +2188,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-additionalactiontimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_AdditionalActionTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-additionalactiontimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_AdditionalActionTimeout**
 
 <!--SupportedSKUs-->
 
@@ -2220,7 +2220,7 @@ This policy setting configures the time in minutes before a detection in the "ad
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure time out for detections requiring additional action*
 -   GP name: *Reporting_AdditionalActionTimeout*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2231,7 +2231,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_CriticalFailureTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-criticalfailuretimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_CriticalFailureTimeout**
 
 <!--SupportedSKUs-->
 
@@ -2263,7 +2263,7 @@ This policy setting configures the time in minutes before a detection in the “
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure time out for detections in critically failed state*
 -   GP name: *Reporting_CriticalFailureTimeout*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2274,7 +2274,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-disableenhancednotifications"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_DisableEnhancedNotifications**
 
 <!--SupportedSKUs-->
 
@@ -2310,7 +2310,7 @@ If you enable this setting, Microsoft Defender Antivirus enhanced notifications 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off enhanced notifications*
 -   GP name: *Reporting_DisableEnhancedNotifications*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2319,7 +2319,7 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 
-<a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports** 
+<a href="" id="admx-microsoftdefenderantivirus-reporting-disablegenericreports"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_Disablegenericreports**
 <hr/>
 
 <!--SupportedSKUs-->
@@ -2356,7 +2356,7 @@ If you disable this setting, Watson events won't be sent.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Watson events*
 -   GP name: *Reporting_Disablegenericreports*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2367,7 +2367,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-noncriticaltimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_NonCriticalTimeout**
 
 <!--SupportedSKUs-->
 
@@ -2399,7 +2399,7 @@ This policy setting configures the time in minutes before a detection in the "no
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure time out for detections in non-critical failed state*
 -   GP name: *Reporting_NonCriticalTimeout*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2407,7 +2407,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout** 
+<a href="" id="admx-microsoftdefenderantivirus-reporting-recentlycleanedtimeout"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_RecentlyCleanedTimeout**
 <hr/>
 
 <!--SupportedSKUs-->
@@ -2440,7 +2440,7 @@ This policy setting configures the time in minutes before a detection in the "co
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure time out for detections in recently remediated state*
 -   GP name: *Reporting_RecentlyCleanedTimeout*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2451,7 +2451,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-wpptracingcomponents"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingComponents**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-wpptracingcomponents"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingComponents**
 
 <!--SupportedSKUs-->
 
@@ -2483,7 +2483,7 @@ This policy configures Windows software trace preprocessor (WPP Software Tracing
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Windows software trace preprocessor components*
 -   GP name: *Reporting_WppTracingComponents*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2494,7 +2494,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-reporting-wpptracinglevel"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingLevel**  
+<a href="" id="admx-microsoftdefenderantivirus-reporting-wpptracinglevel"></a>**ADMX_MicrosoftDefenderAntivirus/Reporting_WppTracingLevel**
 
 <!--SupportedSKUs-->
 
@@ -2520,7 +2520,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows you to configure tracing levels for Windows software trace preprocessor (WPP Software Tracing). 
+This policy allows you to configure tracing levels for Windows software trace preprocessor (WPP Software Tracing).
 
 Tracing levels are defined as:
 
@@ -2533,7 +2533,7 @@ Tracing levels are defined as:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure WPP tracing level*
 -   GP name: *Reporting_WppTracingLevel*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Reporting*
@@ -2544,7 +2544,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-allowpause"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_AllowPause**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-allowpause"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_AllowPause**
 
 <!--SupportedSKUs-->
 
@@ -2580,7 +2580,7 @@ If you disable this setting, users won't be able to pause scans.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow users to pause scan*
 -   GP name: *Scan_AllowPause*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2591,7 +2591,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-archivemaxdepth"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxDepth**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-archivemaxdepth"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxDepth**
 
 <!--SupportedSKUs-->
 
@@ -2627,7 +2627,7 @@ If you disable or don't configure this setting, archive files will be scanned to
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the maximum depth to scan archive files*
 -   GP name: *Scan_ArchiveMaxDepth*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2638,7 +2638,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-archivemaxsize"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxSize**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-archivemaxsize"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ArchiveMaxSize**
 
 <!--SupportedSKUs-->
 
@@ -2674,7 +2674,7 @@ If you disable or don't configure this setting, archive files will be scanned ac
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the maximum size of archive files to be scanned*
 -   GP name: *Scan_ArchiveMaxSize*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2686,7 +2686,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablearchivescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableArchiveScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablearchivescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableArchiveScanning**
 
 <!--SupportedSKUs-->
 
@@ -2722,7 +2722,7 @@ If you disable this setting, archive files won't be scanned.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scan archive files*
 -   GP name: *Scan_DisableArchiveScanning*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2733,7 +2733,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disableemailscanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableEmailScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disableemailscanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableEmailScanning**
 
 <!--SupportedSKUs-->
 
@@ -2769,7 +2769,7 @@ If you disable or don't configure this setting, e-mail scanning will be disabled
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on e-mail scanning*
 -   GP name: *Scan_DisableEmailScanning*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2780,7 +2780,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disableheuristics"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableHeuristics**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disableheuristics"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableHeuristics**
 
 <!--SupportedSKUs-->
 
@@ -2816,7 +2816,7 @@ If you disable this setting, heuristics will be disabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on heuristics*
 -   GP name: *Scan_DisableHeuristics*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2827,7 +2827,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablepackedexescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisablePackedExeScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablepackedexescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisablePackedExeScanning**
 
 <!--SupportedSKUs-->
 
@@ -2863,7 +2863,7 @@ If you disable this setting, packed executables won't be scanned.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scan packed executables*
 -   GP name: *Scan_DisablePackedExeScanning*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2874,7 +2874,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disableremovabledrivescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableRemovableDriveScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disableremovabledrivescanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableRemovableDriveScanning**
 
 <!--SupportedSKUs-->
 
@@ -2910,7 +2910,7 @@ If you disable or don't configure this setting, removable drives won't be scanne
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scan removable drives*
 -   GP name: *Scan_DisableRemovableDriveScanning*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2921,7 +2921,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablereparsepointscanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableReparsePointScanning**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablereparsepointscanning"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableReparsePointScanning**
 
 <!--SupportedSKUs-->
 
@@ -2947,7 +2947,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure reparse point scanning. If you allow reparse points to be scanned, there's a possible risk of recursion. However, the engine supports following reparse points to a maximum depth so at worst scanning could be slowed. Reparse point scanning is disabled by default and this setting is the recommended state for this functionality. 
+This policy setting allows you to configure reparse point scanning. If you allow reparse points to be scanned, there's a possible risk of recursion. However, the engine supports following reparse points to a maximum depth so at worst scanning could be slowed. Reparse point scanning is disabled by default and this setting is the recommended state for this functionality.
 
 If you enable this setting, reparse point scanning will be enabled.
 
@@ -2957,7 +2957,7 @@ If you disable or don't configure this setting, reparse point scanning will be d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on reparse point scanning*
 -   GP name: *Scan_DisableReparsePointScanning*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -2968,7 +2968,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablerestorepoint"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableRestorePoint**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablerestorepoint"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableRestorePoint**
 
 <!--SupportedSKUs-->
 
@@ -2994,7 +2994,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to create a system restore point on the computer on a daily basis prior to cleaning. 
+This policy setting allows you to create a system restore point on the computer on a daily basis prior to cleaning.
 
 If you enable this setting, a system restore point will be created.
 
@@ -3004,7 +3004,7 @@ If you disable or don't configure this setting, a system restore point won't be 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Create a system restore point*
 -   GP name: *Scan_DisableRestorePoint*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3050,7 +3050,7 @@ If you disable or don't configure this setting, mapped network drives won't be s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run full scan on mapped network drives*
 -   GP name: *Scan_DisableScanningMappedNetworkDrivesForFullScan*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3061,7 +3061,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningnetworkfiles"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningNetworkFiles**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-disablescanningnetworkfiles"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_DisableScanningNetworkFiles**
 
 <!--SupportedSKUs-->
 
@@ -3097,7 +3097,7 @@ If you disable or don't configure this setting, network files won't be scanned.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scan network files*
 -   GP name: *Scan_DisableScanningNetworkFiles*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3108,7 +3108,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideavgcpuloadfactor"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideAvgCPULoadFactor**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideavgcpuloadfactor"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideAvgCPULoadFactor**
 
 <!--SupportedSKUs-->
 
@@ -3144,7 +3144,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for maximum percentage of CPU utilization*
 -   GP name: *Scan_LocalSettingOverrideAvgCPULoadFactor*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3155,7 +3155,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescanparameters"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScanParameters**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescanparameters"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScanParameters**
 
 <!--SupportedSKUs-->
 
@@ -3191,7 +3191,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for the scan type to use for a scheduled scan*
 -   GP name: *Scan_LocalSettingOverrideScanParameters*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3202,7 +3202,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleDay**
 
 <!--SupportedSKUs-->
 
@@ -3238,7 +3238,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for schedule scan day*
 -   GP name: *Scan_LocalSettingOverrideScheduleDay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3249,7 +3249,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideschedulequickscantime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleQuickScantime**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverrideschedulequickscantime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleQuickScantime**
 
 <!--SupportedSKUs-->
 
@@ -3285,7 +3285,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for scheduled quick scan time*
 -   GP name: *Scan_LocalSettingOverrideScheduleQuickScantime*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3296,7 +3296,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-localsettingoverridescheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LocalSettingOverrideScheduleTime**
 
 <!--SupportedSKUs-->
 
@@ -3332,7 +3332,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for scheduled scan time*
 -   GP name: *Scan_LocalSettingOverrideScheduleTime*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3343,7 +3343,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-lowcpupriority"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LowCpuPriority**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-lowcpupriority"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_LowCpuPriority**
 
 <!--SupportedSKUs-->
 
@@ -3373,13 +3373,13 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans. 
+If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure low CPU priority for scheduled scans*
 -   GP name: *Scan_LowCpuPriority*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3390,7 +3390,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-missedscheduledscancountbeforecatchup"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_MissedScheduledScanCountBeforeCatchup**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-missedscheduledscancountbeforecatchup"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_MissedScheduledScanCountBeforeCatchup**
 
 <!--SupportedSKUs-->
 
@@ -3426,7 +3426,7 @@ If you disable or don't configure this setting, a catch-up scan will occur after
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define the number of days after which a catch-up scan is forced*
 -   GP name: *Scan_MissedScheduledScanCountBeforeCatchup*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3437,7 +3437,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-purgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_PurgeItemsAfterDelay**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-purgeitemsafterdelay"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_PurgeItemsAfterDelay**
 
 <!--SupportedSKUs-->
 
@@ -3473,7 +3473,7 @@ If you disable or don't configure this setting, items will be kept in the scan h
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on removal of items from scan history folder*
 -   GP name: *Scan_PurgeItemsAfterDelay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3484,7 +3484,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-quickscaninterval"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_QuickScanInterval**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-quickscaninterval"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_QuickScanInterval**
 
 <!--SupportedSKUs-->
 
@@ -3520,7 +3520,7 @@ If you disable or don't configure this setting, a quick scan will run at a defau
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the interval to run quick scans per day*
 -   GP name: *Scan_QuickScanInterval*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3531,7 +3531,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-scanonlyifidle"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScanOnlyIfIdle**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-scanonlyifidle"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScanOnlyIfIdle**
 
 <!--SupportedSKUs-->
 
@@ -3567,7 +3567,7 @@ If you disable this setting, scheduled scans will run at the scheduled time.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Start the scheduled scan only when computer is on but not in use*
 -   GP name: *Scan_ScanOnlyIfIdle*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3578,7 +3578,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleDay**
 
 <!--SupportedSKUs-->
 
@@ -3609,7 +3609,7 @@ This policy setting allows you to specify the day of the week on which to perfor
 This setting can be configured with the following ordinal number values:
 
 - (0x0) Every Day
-- (0x1) Sunday 
+- (0x1) Sunday
 - (0x2) Monday
 - (0x3) Tuesday
 - (0x4) Wednesday
@@ -3626,7 +3626,7 @@ If you disable or don't configure this setting, a scheduled scan will run at a d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the day of the week to run a scheduled scan*
 -   GP name: *Scan_ScheduleDay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3637,7 +3637,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-scan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-scan-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/Scan_ScheduleTime**
 
 <!--SupportedSKUs-->
 
@@ -3673,7 +3673,7 @@ If you disable or don't configure this setting, a scheduled scan will run at a d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the time of day to run a scheduled scan*
 -   GP name: *Scan_ScheduleTime*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Scan*
@@ -3684,7 +3684,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-servicekeepalive"></a>**ADMX_MicrosoftDefenderAntivirus/ServiceKeepAlive**  
+<a href="" id="admx-microsoftdefenderantivirus-servicekeepalive"></a>**ADMX_MicrosoftDefenderAntivirus/ServiceKeepAlive**
 
 <!--SupportedSKUs-->
 
@@ -3720,7 +3720,7 @@ If you disable or don't configure this setting, the antimalware service will be 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow antimalware service to remain running always*
 -   GP name: *ServiceKeepAlive*
 -   GP path: *Windows Components\Microsoft Defender Antivirus*
@@ -3731,7 +3731,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-assignaturedue"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ASSignatureDue**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-assignaturedue"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ASSignatureDue**
 
 <!--SupportedSKUs-->
 
@@ -3769,7 +3769,7 @@ If you disable or don't configure this setting, spyware security intelligence wi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define the number of days before spyware security intelligence is considered out of date*
 -   GP name: *SignatureUpdate_ASSignatureDue*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -3780,7 +3780,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-avsignaturedue"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_AVSignatureDue**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-avsignaturedue"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_AVSignatureDue**
 
 <!--SupportedSKUs-->
 
@@ -3816,7 +3816,7 @@ If you disable or don't configure this setting, virus security intelligence will
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define the number of days before virus security intelligence is considered out of date*
 -   GP name: *SignatureUpdate_AVSignatureDue*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -3827,7 +3827,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-definitionupdatefilesharessources"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DefinitionUpdateFileSharesSources**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-definitionupdatefilesharessources"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DefinitionUpdateFileSharesSources**
 
 <!--SupportedSKUs-->
 
@@ -3863,7 +3863,7 @@ If you disable or don't configure this setting, the list will remain empty by de
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define file shares for downloading security intelligence updates*
 -   GP name: *SignatureUpdate_DefinitionUpdateFileSharesSources*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -3874,7 +3874,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disablescanonupdate"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScanOnUpdate**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disablescanonupdate"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScanOnUpdate**
 
 <!--SupportedSKUs-->
 
@@ -3910,7 +3910,7 @@ If you disable this setting, a scan won't start following a security intelligenc
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on scan after security intelligence update*
 -   GP name: *SignatureUpdate_DisableScanOnUpdate*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -3921,7 +3921,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disablescheduledsignatureupdateonbattery"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScheduledSignatureUpdateonBattery**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disablescheduledsignatureupdateonbattery"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableScheduledSignatureUpdateonBattery**
 
 <!--SupportedSKUs-->
 
@@ -3957,7 +3957,7 @@ If you disable this setting, security intelligence updates will be turned off wh
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow security intelligence updates when running on battery power*
 -   GP name: *SignatureUpdate_DisableScheduledSignatureUpdateonBattery*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -3968,7 +3968,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disableupdateonstartupwithoutengine"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableUpdateOnStartupWithoutEngine**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-disableupdateonstartupwithoutengine"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_DisableUpdateOnStartupWithoutEngine**
 
 <!--SupportedSKUs-->
 
@@ -4004,7 +4004,7 @@ If you disable this setting, security intelligence updates won't be initiated on
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Initiate security intelligence update on startup*
 -   GP name: *SignatureUpdate_DisableUpdateOnStartupWithoutEngine*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4015,7 +4015,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-fallbackorder"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_FallbackOrder**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-fallbackorder"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_FallbackOrder**
 
 <!--SupportedSKUs-->
 
@@ -4053,7 +4053,7 @@ If you disable or don't configure this setting, security intelligence update sou
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define the order of sources for downloading security intelligence updates*
 -   GP name: *SignatureUpdate_FallbackOrder*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4064,7 +4064,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-forceupdatefrommu"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ForceUpdateFromMU**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-forceupdatefrommu"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ForceUpdateFromMU**
 
 <!--SupportedSKUs-->
 
@@ -4100,7 +4100,7 @@ If you disable or don't configure this setting, security intelligence updates wi
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow security intelligence updates from Microsoft Update*
 -   GP name: *SignatureUpdate_ForceUpdateFromMU*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4111,7 +4111,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-realtimesignaturedelivery"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_RealtimeSignatureDelivery**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-realtimesignaturedelivery"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_RealtimeSignatureDelivery**
 
 <!--SupportedSKUs-->
 
@@ -4147,7 +4147,7 @@ If you disable this setting, real-time security intelligence updates will be dis
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow real-time security intelligence updates based on reports to Microsoft MAPS*
 -   GP name: *SignatureUpdate_RealtimeSignatureDelivery*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4158,7 +4158,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleDay**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-scheduleday"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleDay**
 
 <!--SupportedSKUs-->
 
@@ -4189,7 +4189,7 @@ This policy setting allows you to specify the day of the week on which to check 
 This setting can be configured with the following ordinal number values:
 
 - (0x0) Every Day (default)
-- (0x1) Sunday 
+- (0x1) Sunday
 - (0x2) Monday
 - (0x3) Tuesday
 - (0x4) Wednesday
@@ -4206,7 +4206,7 @@ If you disable or don't configure this setting, the check for security intellige
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the day of the week to check for security intelligence updates*
 -   GP name: *SignatureUpdate_ScheduleDay*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4217,7 +4217,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleTime**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-scheduletime"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_ScheduleTime**
 
 <!--SupportedSKUs-->
 
@@ -4253,7 +4253,7 @@ If you disable or don't configure this setting,  the check for security intellig
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the time to check for security intelligence updates*
 -   GP name: *SignatureUpdate_ScheduleTime*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4264,7 +4264,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-sharedsignatureslocation"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SharedSignaturesLocation**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-sharedsignatureslocation"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SharedSignaturesLocation**
 
 <!--SupportedSKUs-->
 
@@ -4290,7 +4290,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to define the security intelligence location for VDI-configured computers. 
+This policy setting allows you to define the security intelligence location for VDI-configured computers.
 
 If you disable or don't configure this setting, security intelligence will be referred from the default local source.
 
@@ -4298,7 +4298,7 @@ If you disable or don't configure this setting, security intelligence will be re
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define security intelligence location for VDI clients.*
 -   GP name: *SignatureUpdate_SharedSignaturesLocation*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4306,7 +4306,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signaturedisablenotification"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureDisableNotification**
 
 <hr/>
 <!--Policy-->
@@ -4345,7 +4345,7 @@ If you disable this setting, the antimalware service won't receive notifications
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow notifications to disable security intelligence based reports to Microsoft MAPS*
 -   GP name: *SignatureUpdate_SignatureDisableNotification*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4356,7 +4356,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signatureupdatecatchupinterval"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureUpdateCatchupInterval**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-signatureupdatecatchupinterval"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_SignatureUpdateCatchupInterval**
 
 <!--SupportedSKUs-->
 
@@ -4392,7 +4392,7 @@ If you disable or don't configure this setting, a catch-up security intelligence
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define the number of days after which a catch-up security intelligence update is required*
 -   GP name: *SignatureUpdate_SignatureUpdateCatchupInterval*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4403,7 +4403,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-updateonstartup"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_UpdateOnStartup**  
+<a href="" id="admx-microsoftdefenderantivirus-signatureupdate-updateonstartup"></a>**ADMX_MicrosoftDefenderAntivirus/SignatureUpdate_UpdateOnStartup**
 
 <!--SupportedSKUs-->
 
@@ -4439,7 +4439,7 @@ If you disable this setting or don't configure this setting, a check for new sec
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Check for the latest virus and spyware security intelligence on startup*
 -   GP name: *SignatureUpdate_UpdateOnStartup*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Security Intelligence Updates*
@@ -4450,7 +4450,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-spynetreporting"></a>**ADMX_MicrosoftDefenderAntivirus/SpynetReporting**  
+<a href="" id="admx-microsoftdefenderantivirus-spynetreporting"></a>**ADMX_MicrosoftDefenderAntivirus/SpynetReporting**
 
 <!--SupportedSKUs-->
 
@@ -4493,14 +4493,14 @@ Advanced membership, in addition to basic information, will send more informatio
 If you enable this setting, you'll join Microsoft MAPS with the membership specified.
 
 If you disable or don't configure this setting, you won't join Microsoft MAPS.
-  
+
 In Windows 10, Basic membership is no longer available, so setting the value to 1 or 2 enrolls the device into Advanced membership.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Join Microsoft MAPS*
 -   GP name: *SpynetReporting*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\MAPS*
@@ -4511,7 +4511,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-spynet-localsettingoverridespynetreporting"></a>**ADMX_MicrosoftDefenderAntivirus/Spynet_LocalSettingOverrideSpynetReporting**  
+<a href="" id="admx-microsoftdefenderantivirus-spynet-localsettingoverridespynetreporting"></a>**ADMX_MicrosoftDefenderAntivirus/Spynet_LocalSettingOverrideSpynetReporting**
 
 <!--SupportedSKUs-->
 
@@ -4547,7 +4547,7 @@ If you disable or don't configure this setting, Policy will take priority over t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure local setting override for reporting to Microsoft MAPS*
 -   GP name: *Spynet_LocalSettingOverrideSpynetReporting*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\MAPS*
@@ -4559,7 +4559,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-threats-threatiddefaultaction"></a>**ADMX_MicrosoftDefenderAntivirus/Threats_ThreatIdDefaultAction**  
+<a href="" id="admx-microsoftdefenderantivirus-threats-threatiddefaultaction"></a>**ADMX_MicrosoftDefenderAntivirus/Threats_ThreatIdDefaultAction**
 
 <!--SupportedSKUs-->
 
@@ -4597,7 +4597,7 @@ Valid remediation action values are:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify threats upon which default action should not be taken when detected*
 -   GP name: *Threats_ThreatIdDefaultAction*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Threats*
@@ -4608,7 +4608,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-customdefaultactiontoaststring"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_CustomDefaultActionToastString**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-customdefaultactiontoaststring"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_CustomDefaultActionToastString**
 
 <!--SupportedSKUs-->
 
@@ -4644,7 +4644,7 @@ If you disable or don't configure this setting, there will be no extra text disp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display additional text to clients when they need to perform an action*
 -   GP name: *UX_Configuration_CustomDefaultActionToastString*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Client Interface*
@@ -4655,7 +4655,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-notification-suppress"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_Notification_Suppress**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-notification-suppress"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_Notification_Suppress**
 
 <!--SupportedSKUs-->
 
@@ -4691,7 +4691,7 @@ If you enable this setting, Microsoft Defender Antivirus notifications won't dis
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Suppress all notifications*
 -   GP name: *UX_Configuration_Notification_Suppress*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Client Interface*
@@ -4702,7 +4702,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-suppressrebootnotification"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_SuppressRebootNotification**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-suppressrebootnotification"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_SuppressRebootNotification**
 
 <!--SupportedSKUs-->
 
@@ -4736,7 +4736,7 @@ If you enable this setting, AM UI won't show reboot notifications.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Suppresses reboot notifications*
 -   GP name: *UX_Configuration_SuppressRebootNotification*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Client Interface*
@@ -4747,7 +4747,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-uilockdown"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_UILockdown**  
+<a href="" id="admx-microsoftdefenderantivirus-ux-configuration-uilockdown"></a>**ADMX_MicrosoftDefenderAntivirus/UX_Configuration_UILockdown**
 
 <!--SupportedSKUs-->
 
@@ -4781,7 +4781,7 @@ If you enable this setting, AM UI won't be available to users.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable headless UI mode*
 -   GP name: *UX_Configuration_UILockdown*
 -   GP path: *Windows Components\Microsoft Defender Antivirus\Client Interface*

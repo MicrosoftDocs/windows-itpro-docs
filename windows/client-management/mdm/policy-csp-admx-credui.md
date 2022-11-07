@@ -4,8 +4,8 @@ description: Learn about  the Policy CSP - ADMX_CredUI.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/09/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_CredUI
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_CredUI policies  
+## ADMX_CredUI policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credui-enablesecurecredentialprompting"></a>**ADMX_CredUI/EnableSecureCredentialPrompting**  
+<a href="" id="admx-credui-enablesecurecredentialprompting"></a>**ADMX_CredUI/EnableSecureCredentialPrompting**
 
 <!--SupportedSKUs-->
 
@@ -77,7 +77,7 @@ If you disable or don't configure this policy setting, users will enter Windows 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Require trusted path for credential entry*
 -   GP name: *EnableSecureCredentialPrompting*
 -   GP path: *Windows Components\Credential User Interface*
@@ -88,7 +88,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credui-nolocalpasswordresetquestions"></a>**ADMX_CredUI/NoLocalPasswordResetQuestions**  
+<a href="" id="admx-credui-nolocalpasswordresetquestions"></a>**ADMX_CredUI/NoLocalPasswordResetQuestions**
 
 <!--SupportedSKUs-->
 
@@ -120,7 +120,7 @@ Available in the latest Windows 10 Insider Preview Build. If you turn on this po
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent the use of security questions for local accounts*
 -   GP name: *NoLocalPasswordResetQuestions*
 -   GP path: *Windows Components\Credential User Interface*

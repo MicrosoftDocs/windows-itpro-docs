@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Credential Guard protection limits (Windows)
 description: Some ways to store credentials are not protected by Windows Defender Credential Guard in Windows. Learn more with this guide.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
@@ -10,12 +10,12 @@ manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 # Windows Defender Credential Guard protection limits
 

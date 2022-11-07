@@ -3,8 +3,8 @@ title: Policy CSP - CredentialProviders
 description: Learn how to use the policy CSP for credential provider so you can control whether a domain user can sign in using a convenience PIN.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - CredentialProviders
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## CredentialProviders policies  
+## CredentialProviders policies
 
 <dl>
   <dd>
@@ -43,7 +43,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="credentialproviders-allowpinlogon"></a>**CredentialProviders/AllowPINLogon**  
+<a href="" id="credentialproviders-allowpinlogon"></a>**CredentialProviders/AllowPINLogon**
 
 <!--SupportedSKUs-->
 
@@ -85,7 +85,7 @@ To configure Windows Hello for Business, use the Administrative Template policie
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on convenience PIN sign-in*
 -   GP name: *AllowDomainPINLogon*
 -   GP path: *System/Logon*
@@ -97,7 +97,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="credentialproviders-blockpicturepassword"></a>**CredentialProviders/BlockPicturePassword**  
+<a href="" id="credentialproviders-blockpicturepassword"></a>**CredentialProviders/BlockPicturePassword**
 
 <!--SupportedSKUs-->
 
@@ -126,7 +126,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to control whether a domain user can sign in using a picture password.
 
-If you enable this policy setting, a domain user can't set up or sign in with a picture password. 
+If you enable this policy setting, a domain user can't set up or sign in with a picture password.
 
 If you disable or don't configure this policy setting, a domain user can set up and use a picture password.
 
@@ -137,7 +137,7 @@ If you disable or don't configure this policy setting, a domain user can set up 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off picture password sign-in*
 -   GP name: *BlockDomainPicturePassword*
 -   GP path: *System/Logon*
@@ -149,7 +149,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="credentialproviders-disableautomaticredeploymentcredentials"></a>**CredentialProviders/DisableAutomaticReDeploymentCredentials**  
+<a href="" id="credentialproviders-disableautomaticredeploymentcredentials"></a>**CredentialProviders/DisableAutomaticReDeploymentCredentials**
 
 <!--SupportedSKUs-->
 

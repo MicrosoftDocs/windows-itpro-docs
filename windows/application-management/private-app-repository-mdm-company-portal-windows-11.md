@@ -5,9 +5,10 @@ author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.reviewer: amanh
-ms.prod: w11
+ms.prod: windows-client
 ms.date: 09/15/2021
 ms.localizationpriority: medium
+ms.technology: itpro-apps
 ---
 
 # Private app repository in Windows 11
@@ -26,11 +27,11 @@ This article discusses the Company Portal app installation options, adding organ
 
 ## Before you begin
 
-The Company Portal app is included with Microsoft Endpoint Manager. Endpoint Manager is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It help manages your devices, and manage apps on your devices.
+The Company Portal app is included with Microsoft Intune. Intune is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It helps manage your devices, your identities, and app data on your devices.
 
 If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-- [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+- [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
 - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
 - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
@@ -45,7 +46,7 @@ To use the Company Portal app:
 
 To install the Company Portal app, you have some options:
 
-- **Use Microsoft Endpoint Manager**: Endpoint Manager includes Microsoft Intune (cloud) and Configuration Manager (on-premises). With both services, you can add Microsoft Store apps, like the Company Portal app. Once added, you create an app policy that deploys and installs the Company Portal app to your devices.
+- **Use Microsoft Intune**: Microsoft Intune is a family or products that include Microsoft Intune (cloud) and Configuration Manager (on-premises). With both services, you can add Microsoft Store apps, like the Company Portal app. Once added, you create an app policy that deploys and installs the Company Portal app to your devices.
 
   - This option is preferred, and is the most scalable, especially if you have many devices. When you create the app policy, the policy can be deployed to many users and many devices simultaneously. Admins can also use reporting to make sure the app is installed on organization-managed devices.
 
@@ -55,7 +56,7 @@ To install the Company Portal app, you have some options:
 
   For more information, see:
   
-  - [What is Microsoft Endpoint Manager](/mem/endpoint-manager-overview)
+  - [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
   - [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-windows)
   - [What is co-management?](/mem/configmgr/comanage/overview)
   - [Use the Company Portal app on co-managed devices](/mem/configmgr/comanage/company-portal)
@@ -73,7 +74,7 @@ To install the Company Portal app, you have some options:
 
 - **Use the Microsoft Store**: The Company Portal app is available in the Microsoft Store, and can be downloaded by your users. Users open the Microsoft Store app on their device, search for **Company Portal**, and install it. When it's installed, users might be prompted to sign in with their organization account (`user@contoso.com`). When the app opens, they see a list of approved organization apps that can be installed.
 
-  - This option requires users to install the Company Portal app themselves. If you have many users, the recommended approach is to deploy the Company Portal app using Endpoint Manager or using Windows Autopilot.
+  - This option requires users to install the Company Portal app themselves. If you have many users, the recommended approach is to deploy the Company Portal app using Intune or using Windows Autopilot.
 
   - When the Company Portal app is installed from the Microsoft Store app, by default, it's automatically updated. Users can also open the Microsoft Store, go to the **Library**, and check for updates. Within the Company Portal app, they can use the update feature to get app fixes and feature updates on the organization apps you added.
 
@@ -101,4 +102,4 @@ If you use a third party or partner MDM provider, be sure to configure the setti
 
 ## Windows Package Manager
 
-If your organization creates its own apps, your app developers can use [Windows Package Manager](/windows/package-manager/) to deploy apps. For more information on Endpoint Manager and Windows Package Manager, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423).
+If your organization creates its own apps, your app developers can use [Windows Package Manager](/windows/package-manager/) to deploy apps. For more information on Intune and Windows Package Manager, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423).

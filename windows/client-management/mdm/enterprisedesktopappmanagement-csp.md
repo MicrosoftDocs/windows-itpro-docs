@@ -6,8 +6,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/11/2017
 ---
@@ -76,7 +76,7 @@ Installation date of the application. Value type is string. Supported operation 
 <a href="" id="msi-productid-downloadinstall"></a>**MSI/*ProductID*/DownloadInstall**
 Executes the download and installation of the application. Value type is string. Supported operations are Execute and Get.
 
-In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken. `<TimeOut>` 0 will set the timeout to infinite. 
+In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken. `<TimeOut>` 0 will set the timeout to infinite.
 
 Here's an example:
 
@@ -178,7 +178,7 @@ The following table describes the fields in the previous sample:
 | CmdID  | Input value used to reference the request. Responses will include this value that can be used to match request and response.                                                                                       |
 | LocURI | Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.                                                          |
 
- 
+
 
 **SyncML to perform MSI operations for application status reporting**
 
@@ -418,4 +418,4 @@ Here's a list of references:
 ```
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

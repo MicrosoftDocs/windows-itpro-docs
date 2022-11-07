@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_MMCSnapins.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/13/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_MMCSnapins
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_MMCSnapins policies  
+## ADMX_MMCSnapins policies
 
 <dl>
   <dd>
@@ -344,7 +344,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-admcomputers-1"></a>**ADMX_MMCSnapins/MMC_ADMComputers_1**  
+<a href="" id="admx-mmcsnapins-mmc-admcomputers-1"></a>**ADMX_MMCSnapins/MMC_ADMComputers_1**
 
 <!--SupportedSKUs-->
 
@@ -370,17 +370,17 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted. It can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted. It can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited. It can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited. It can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -388,7 +388,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Administrative Templates (Computers)*
 -   GP name: *MMC_ADMComputers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -399,7 +399,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-admcomputers-2"></a>**ADMX_MMCSnapins/MMC_ADMComputers_2**  
+<a href="" id="admx-mmcsnapins-mmc-admcomputers-2"></a>**ADMX_MMCSnapins/MMC_ADMComputers_2**
 
 <!--SupportedSKUs-->
 
@@ -425,17 +425,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted. It can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted. It can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited. It can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited. It can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -443,7 +443,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Administrative Templates (Computers)*
 -   GP name: *MMC_ADMComputers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -455,7 +455,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-admusers-1"></a>**ADMX_MMCSnapins/MMC_ADMUsers_1**  
+<a href="" id="admx-mmcsnapins-mmc-admusers-1"></a>**ADMX_MMCSnapins/MMC_ADMUsers_1**
 
 <!--SupportedSKUs-->
 
@@ -481,17 +481,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -499,7 +499,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Administrative Templates (Users)*
 -   GP name: *MMC_ADMUsers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -511,7 +511,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-admusers-2"></a>**ADMX_MMCSnapins/MMC_ADMUsers_2**  
+<a href="" id="admx-mmcsnapins-mmc-admusers-2"></a>**ADMX_MMCSnapins/MMC_ADMUsers_2**
 
 <!--SupportedSKUs-->
 
@@ -537,17 +537,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -555,7 +555,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -  GP Friendly name: *Administrative Templates (Users)*
 -   GP name: *MMC_ADMUsers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -567,7 +567,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-adsi"></a>**ADMX_MMCSnapins/MMC_ADSI**  
+<a href="" id="admx-mmcsnapins-mmc-adsi"></a>**ADMX_MMCSnapins/MMC_ADSI**
 
 <!--SupportedSKUs-->
 
@@ -593,17 +593,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -611,7 +611,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *ADSI Edit*
 -   GP name: *MMC_ADSI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -623,7 +623,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-activedirdomtrusts"></a>**ADMX_MMCSnapins/MMC_ActiveDirDomTrusts**  
+<a href="" id="admx-mmcsnapins-mmc-activedirdomtrusts"></a>**ADMX_MMCSnapins/MMC_ActiveDirDomTrusts**
 
 <!--SupportedSKUs-->
 
@@ -649,17 +649,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
 If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -667,7 +667,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Active Directory Domains and Trusts*
 -   GP name: *MMC_ActiveDirDomTrusts*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -679,7 +679,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-activedirsitesservices"></a>**ADMX_MMCSnapins/MMC_ActiveDirSitesServices**  
+<a href="" id="admx-mmcsnapins-mmc-activedirsitesservices"></a>**ADMX_MMCSnapins/MMC_ActiveDirSitesServices**
 
 <!--SupportedSKUs-->
 
@@ -705,17 +705,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -723,7 +723,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Active Directory Sites and Services*
 -   GP name: *MMC_ActiveDirSitesServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -735,7 +735,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-activediruserscomp"></a>**ADMX_MMCSnapins/MMC_ActiveDirUsersComp**  
+<a href="" id="admx-mmcsnapins-mmc-activediruserscomp"></a>**ADMX_MMCSnapins/MMC_ActiveDirUsersComp**
 
 <!--SupportedSKUs-->
 
@@ -761,17 +761,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted. It can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted. It can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -779,7 +779,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Active Directory Users and Computers*
 -   GP name: *MMC_ActiveDirUsersComp*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -791,7 +791,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-appletalkrouting"></a>**ADMX_MMCSnapins/MMC_AppleTalkRouting**  
+<a href="" id="admx-mmcsnapins-mmc-appletalkrouting"></a>**ADMX_MMCSnapins/MMC_AppleTalkRouting**
 
 <!--SupportedSKUs-->
 
@@ -817,17 +817,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -835,7 +835,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *AppleTalk Routing*
 -   GP name: *MMC_AppleTalkRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -847,7 +847,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-authman"></a>**ADMX_MMCSnapins/MMC_AuthMan**  
+<a href="" id="admx-mmcsnapins-mmc-authman"></a>**ADMX_MMCSnapins/MMC_AuthMan**
 
 <!--SupportedSKUs-->
 
@@ -873,17 +873,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -891,7 +891,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Authorization Manager*
 -   GP name: *MMC_AuthMan*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -903,7 +903,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-certauth"></a>**ADMX_MMCSnapins/MMC_CertAuth**  
+<a href="" id="admx-mmcsnapins-mmc-certauth"></a>**ADMX_MMCSnapins/MMC_CertAuth**
 
 <!--SupportedSKUs-->
 
@@ -929,17 +929,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 
@@ -947,7 +947,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Certification Authority*
 -   GP name: *MMC_CertAuth*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -959,7 +959,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-certauthpolset"></a>**ADMX_MMCSnapins/MMC_CertAuthPolSet**  
+<a href="" id="admx-mmcsnapins-mmc-certauthpolset"></a>**ADMX_MMCSnapins/MMC_CertAuthPolSet**
 
 <!--SupportedSKUs-->
 
@@ -985,24 +985,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Certification Authority Policy Settings*
 -   GP name: *MMC_CertAuthPolSet*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1014,7 +1014,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-certs"></a>**ADMX_MMCSnapins/MMC_Certs**  
+<a href="" id="admx-mmcsnapins-mmc-certs"></a>**ADMX_MMCSnapins/MMC_Certs**
 
 <!--SupportedSKUs-->
 
@@ -1040,24 +1040,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Certificates*
 -   GP name: *MMC_Certs*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1069,7 +1069,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-certstemplate"></a>**ADMX_MMCSnapins/MMC_CertsTemplate**  
+<a href="" id="admx-mmcsnapins-mmc-certstemplate"></a>**ADMX_MMCSnapins/MMC_CertsTemplate**
 
 <!--SupportedSKUs-->
 
@@ -1095,24 +1095,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Certificate Templates*
 -   GP name: *MMC_CertsTemplate*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1124,7 +1124,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-componentservices"></a>**ADMX_MMCSnapins/MMC_ComponentServices**  
+<a href="" id="admx-mmcsnapins-mmc-componentservices"></a>**ADMX_MMCSnapins/MMC_ComponentServices**
 
 <!--SupportedSKUs-->
 
@@ -1150,24 +1150,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Component Services*
 -   GP name: *MMC_ComponentServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1179,7 +1179,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-computermanagement"></a>**ADMX_MMCSnapins/MMC_ComputerManagement**  
+<a href="" id="admx-mmcsnapins-mmc-computermanagement"></a>**ADMX_MMCSnapins/MMC_ComputerManagement**
 
 <!--SupportedSKUs-->
 
@@ -1205,24 +1205,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Computer Management*
 -   GP name: *MMC_ComputerManagement*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1234,7 +1234,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-connectionsharingnat"></a>**ADMX_MMCSnapins/MMC_ConnectionSharingNAT**  
+<a href="" id="admx-mmcsnapins-mmc-connectionsharingnat"></a>**ADMX_MMCSnapins/MMC_ConnectionSharingNAT**
 
 <!--SupportedSKUs-->
 
@@ -1260,24 +1260,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Connection Sharing (NAT)*
 -   GP name: *MMC_ConnectionSharingNAT*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1289,7 +1289,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-dcomcfg"></a>**ADMX_MMCSnapins/MMC_DCOMCFG**  
+<a href="" id="admx-mmcsnapins-mmc-dcomcfg"></a>**ADMX_MMCSnapins/MMC_DCOMCFG**
 
 <!--SupportedSKUs-->
 
@@ -1315,24 +1315,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *DCOM Configuration Extension*
 -   GP name: *MMC_DCOMCFG*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1344,7 +1344,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-dfs"></a>**ADMX_MMCSnapins/MMC_DFS**  
+<a href="" id="admx-mmcsnapins-mmc-dfs"></a>**ADMX_MMCSnapins/MMC_DFS**
 
 <!--SupportedSKUs-->
 
@@ -1370,24 +1370,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Distributed File System*
 -   GP name: *MMC_DFS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1399,7 +1399,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-dhcprelaymgmt"></a>**ADMX_MMCSnapins/MMC_DHCPRelayMgmt**  
+<a href="" id="admx-mmcsnapins-mmc-dhcprelaymgmt"></a>**ADMX_MMCSnapins/MMC_DHCPRelayMgmt**
 
 <!--SupportedSKUs-->
 
@@ -1425,24 +1425,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *DHCP Relay Management*
 -   GP name: *MMC_DHCPRelayMgmt*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1454,7 +1454,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-devicemanager-1"></a>**ADMX_MMCSnapins/MMC_DeviceManager_1**  
+<a href="" id="admx-mmcsnapins-mmc-devicemanager-1"></a>**ADMX_MMCSnapins/MMC_DeviceManager_1**
 
 <!--SupportedSKUs-->
 
@@ -1480,24 +1480,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Device Manager*
 -   GP name: *MMC_DeviceManager_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1509,7 +1509,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-devicemanager-2"></a>**ADMX_MMCSnapins/MMC_DeviceManager_2**  
+<a href="" id="admx-mmcsnapins-mmc-devicemanager-2"></a>**ADMX_MMCSnapins/MMC_DeviceManager_2**
 
 <!--SupportedSKUs-->
 
@@ -1535,24 +1535,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Device Manager*
 -   GP name: *MMC_DeviceManager_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1564,7 +1564,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-diskdefrag"></a>**ADMX_MMCSnapins/MMC_DiskDefrag**  
+<a href="" id="admx-mmcsnapins-mmc-diskdefrag"></a>**ADMX_MMCSnapins/MMC_DiskDefrag**
 
 <!--SupportedSKUs-->
 
@@ -1590,24 +1590,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disk Defragmenter*
 -   GP name: *MMC_DiskDefrag*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1619,7 +1619,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-diskmgmt"></a>**ADMX_MMCSnapins/MMC_DiskMgmt**  
+<a href="" id="admx-mmcsnapins-mmc-diskmgmt"></a>**ADMX_MMCSnapins/MMC_DiskMgmt**
 
 <!--SupportedSKUs-->
 
@@ -1645,24 +1645,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disk Management*
 -   GP name: *MMC_DiskMgmt*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1674,7 +1674,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-enterprisepki"></a>**ADMX_MMCSnapins/MMC_EnterprisePKI**  
+<a href="" id="admx-mmcsnapins-mmc-enterprisepki"></a>**ADMX_MMCSnapins/MMC_EnterprisePKI**
 
 <!--SupportedSKUs-->
 
@@ -1700,24 +1700,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enterprise PKI*
 -   GP name: *MMC_EnterprisePKI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1729,7 +1729,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-eventviewer-1"></a>**ADMX_MMCSnapins/MMC_EventViewer_1**  
+<a href="" id="admx-mmcsnapins-mmc-eventviewer-1"></a>**ADMX_MMCSnapins/MMC_EventViewer_1**
 
 <!--SupportedSKUs-->
 
@@ -1755,24 +1755,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event Viewer*
 -   GP name: *MMC_EventViewer_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1784,7 +1784,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-eventviewer-2"></a>**ADMX_MMCSnapins/MMC_EventViewer_2**  
+<a href="" id="admx-mmcsnapins-mmc-eventviewer-2"></a>**ADMX_MMCSnapins/MMC_EventViewer_2**
 
 <!--SupportedSKUs-->
 
@@ -1810,24 +1810,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event Viewer (Windows Vista)*
 -   GP name: *MMC_EventViewer_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -1839,7 +1839,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-eventviewer-3"></a>**ADMX_MMCSnapins/MMC_EventViewer_3**  
+<a href="" id="admx-mmcsnapins-mmc-eventviewer-3"></a>**ADMX_MMCSnapins/MMC_EventViewer_3**
 
 <!--SupportedSKUs-->
 
@@ -1865,24 +1865,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event Viewer*
 -   GP name: *MMC_EventViewer_3*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1894,7 +1894,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-eventviewer-4"></a>**ADMX_MMCSnapins/MMC_EventViewer_4**  
+<a href="" id="admx-mmcsnapins-mmc-eventviewer-4"></a>**ADMX_MMCSnapins/MMC_EventViewer_4**
 
 <!--SupportedSKUs-->
 
@@ -1920,24 +1920,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event Viewer (Windows Vista)*
 -   GP name: *MMC_EventViewer_4*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -1950,7 +1950,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-eventviewer-2"></a>**ADMX_MMCSnapins/MMC_EventViewer_2**  
+<a href="" id="admx-mmcsnapins-mmc-eventviewer-2"></a>**ADMX_MMCSnapins/MMC_EventViewer_2**
 
 <!--SupportedSKUs-->
 
@@ -1976,24 +1976,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Event Viewer (Windows Vista)*
 -   GP name: *MMC_EventViewer_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2005,7 +2005,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-faxservice"></a>**ADMX_MMCSnapins/MMC_FAXService**  
+<a href="" id="admx-mmcsnapins-mmc-faxservice"></a>**ADMX_MMCSnapins/MMC_FAXService**
 
 <!--SupportedSKUs-->
 
@@ -2031,24 +2031,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *FAX Service*
 -   GP name: *MMC_FAXService*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2060,7 +2060,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-failoverclusters"></a>**ADMX_MMCSnapins/MMC_FailoverClusters**  
+<a href="" id="admx-mmcsnapins-mmc-failoverclusters"></a>**ADMX_MMCSnapins/MMC_FailoverClusters**
 
 <!--SupportedSKUs-->
 
@@ -2086,24 +2086,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Failover Clusters Manager*
 -   GP name: *MMC_FailoverClusters*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2115,7 +2115,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-folderredirection-1"></a>**ADMX_MMCSnapins/MMC_FolderRedirection_1**  
+<a href="" id="admx-mmcsnapins-mmc-folderredirection-1"></a>**ADMX_MMCSnapins/MMC_FolderRedirection_1**
 
 <!--SupportedSKUs-->
 
@@ -2141,24 +2141,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Folder Redirection*
 -   GP name: *MMC_FolderRedirection_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -2170,7 +2170,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-folderredirection-2"></a>**ADMX_MMCSnapins/MMC_FolderRedirection_2**  
+<a href="" id="admx-mmcsnapins-mmc-folderredirection-2"></a>**ADMX_MMCSnapins/MMC_FolderRedirection_2**
 
 <!--SupportedSKUs-->
 
@@ -2196,24 +2196,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Folder Redirection*
 -   GP name: *MMC_FolderRedirection_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -2225,7 +2225,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-frontpageext"></a>**ADMX_MMCSnapins/MMC_FrontPageExt**  
+<a href="" id="admx-mmcsnapins-mmc-frontpageext"></a>**ADMX_MMCSnapins/MMC_FrontPageExt**
 
 <!--SupportedSKUs-->
 
@@ -2251,24 +2251,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *FrontPage Server Extensions*
 -   GP name: *MMC_FrontPageExt*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2280,7 +2280,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-grouppolicymanagementsnapin"></a>**ADMX_MMCSnapins/MMC_GroupPolicyManagementSnapIn**  
+<a href="" id="admx-mmcsnapins-mmc-grouppolicymanagementsnapin"></a>**ADMX_MMCSnapins/MMC_GroupPolicyManagementSnapIn**
 
 <!--SupportedSKUs-->
 
@@ -2306,24 +2306,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Group Policy Management*
 -   GP name: *MMC_GroupPolicyManagementSnapIn*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
@@ -2335,7 +2335,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-grouppolicysnapin"></a>**ADMX_MMCSnapins/MMC_GroupPolicySnapIn**  
+<a href="" id="admx-mmcsnapins-mmc-grouppolicysnapin"></a>**ADMX_MMCSnapins/MMC_GroupPolicySnapIn**
 
 <!--SupportedSKUs-->
 
@@ -2361,24 +2361,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Group Policy Object Editor*
 -   GP name: *MMC_GroupPolicySnapIn*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
@@ -2390,7 +2390,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-grouppolicytab"></a>**ADMX_MMCSnapins/MMC_GroupPolicyTab**  
+<a href="" id="admx-mmcsnapins-mmc-grouppolicytab"></a>**ADMX_MMCSnapins/MMC_GroupPolicyTab**
 
 <!--SupportedSKUs-->
 
@@ -2435,7 +2435,7 @@ When the Group Policy tab is inaccessible, it doesn't appear in the site, domain
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Group Policy tab for Active Directory Tools*
 -   GP name: *MMC_GroupPolicyTab*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
@@ -2447,7 +2447,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-hra"></a>**ADMX_MMCSnapins/MMC_HRA**  
+<a href="" id="admx-mmcsnapins-mmc-hra"></a>**ADMX_MMCSnapins/MMC_HRA**
 
 <!--SupportedSKUs-->
 
@@ -2473,24 +2473,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Health Registration Authority (HRA)*
 -   GP name: *MMC_HRA*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2502,7 +2502,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ias"></a>**ADMX_MMCSnapins/MMC_IAS**  
+<a href="" id="admx-mmcsnapins-mmc-ias"></a>**ADMX_MMCSnapins/MMC_IAS**
 
 <!--SupportedSKUs-->
 
@@ -2528,24 +2528,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Authentication Service (IAS)*
 -   GP name: *MMC_IAS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2557,7 +2557,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-iaslogging"></a>**ADMX_MMCSnapins/MMC_IASLogging**  
+<a href="" id="admx-mmcsnapins-mmc-iaslogging"></a>**ADMX_MMCSnapins/MMC_IASLogging**
 
 <!--SupportedSKUs-->
 
@@ -2583,24 +2583,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IAS Logging*
 -   GP name: *MMC_IASLogging*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -2612,7 +2612,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-iemaintenance-1"></a>**ADMX_MMCSnapins/MMC_IEMaintenance_1**  
+<a href="" id="admx-mmcsnapins-mmc-iemaintenance-1"></a>**ADMX_MMCSnapins/MMC_IEMaintenance_1**
 
 <!--SupportedSKUs-->
 
@@ -2638,24 +2638,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Maintenance*
 -   GP name: *MMC_IEMaintenance_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -2667,7 +2667,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-iemaintenance-2"></a>**ADMX_MMCSnapins/MMC_IEMaintenance_2**  
+<a href="" id="admx-mmcsnapins-mmc-iemaintenance-2"></a>**ADMX_MMCSnapins/MMC_IEMaintenance_2**
 
 <!--SupportedSKUs-->
 
@@ -2693,24 +2693,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Explorer Maintenance*
 -   GP name: *MMC_IEMaintenance_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -2722,7 +2722,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-igmprouting"></a>**ADMX_MMCSnapins/MMC_IGMPRouting**  
+<a href="" id="admx-mmcsnapins-mmc-igmprouting"></a>**ADMX_MMCSnapins/MMC_IGMPRouting**
 
 <!--SupportedSKUs-->
 
@@ -2748,24 +2748,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IGMP Routing*
 -   GP name: *MMC_IGMPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -2777,7 +2777,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-iis"></a>**ADMX_MMCSnapins/MMC_IIS**  
+<a href="" id="admx-mmcsnapins-mmc-iis"></a>**ADMX_MMCSnapins/MMC_IIS**
 
 <!--SupportedSKUs-->
 
@@ -2803,24 +2803,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Internet Information Services*
 -   GP name: *MMC_IIS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -2832,7 +2832,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-iprouting"></a>**ADMX_MMCSnapins/MMC_IPRouting**  
+<a href="" id="admx-mmcsnapins-mmc-iprouting"></a>**ADMX_MMCSnapins/MMC_IPRouting**
 
 <!--SupportedSKUs-->
 
@@ -2858,24 +2858,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IP Routing*
 -   GP name: *MMC_IPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -2887,7 +2887,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ipsecmanage-gp"></a>**ADMX_MMCSnapins/MMC_IPSecManage_GP**  
+<a href="" id="admx-mmcsnapins-mmc-ipsecmanage-gp"></a>**ADMX_MMCSnapins/MMC_IPSecManage_GP**
 
 <!--SupportedSKUs-->
 
@@ -2913,24 +2913,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IP Security Policy Management*
 -   GP name: *MMC_IPSecManage_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -2942,7 +2942,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ipxriprouting"></a>**ADMX_MMCSnapins/MMC_IPXRIPRouting**  
+<a href="" id="admx-mmcsnapins-mmc-ipxriprouting"></a>**ADMX_MMCSnapins/MMC_IPXRIPRouting**
 
 <!--SupportedSKUs-->
 
@@ -2968,24 +2968,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IPX RIP Routing*
 -   GP name: *MMC_IPXRIPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -2997,7 +2997,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ipxrouting"></a>**ADMX_MMCSnapins/MMC_IPXRouting**  
+<a href="" id="admx-mmcsnapins-mmc-ipxrouting"></a>**ADMX_MMCSnapins/MMC_IPXRouting**
 
 <!--SupportedSKUs-->
 
@@ -3023,24 +3023,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IPX Routing*
 -   GP name: *MMC_IPXRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3052,7 +3052,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ipxsaprouting"></a>**ADMX_MMCSnapins/MMC_IPXSAPRouting**  
+<a href="" id="admx-mmcsnapins-mmc-ipxsaprouting"></a>**ADMX_MMCSnapins/MMC_IPXSAPRouting**
 
 <!--SupportedSKUs-->
 
@@ -3078,24 +3078,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IPX SAP Routing*
 -   GP name: *MMC_IPXSAPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3107,7 +3107,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-indexingservice"></a>**ADMX_MMCSnapins/MMC_IndexingService**  
+<a href="" id="admx-mmcsnapins-mmc-indexingservice"></a>**ADMX_MMCSnapins/MMC_IndexingService**
 
 <!--SupportedSKUs-->
 
@@ -3133,24 +3133,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Indexing Service*
 -   GP name: *MMC_IndexingService*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3162,7 +3162,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ipsecmanage"></a>**ADMX_MMCSnapins/MMC_IpSecManage**  
+<a href="" id="admx-mmcsnapins-mmc-ipsecmanage"></a>**ADMX_MMCSnapins/MMC_IpSecManage**
 
 <!--SupportedSKUs-->
 
@@ -3188,24 +3188,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IP Security Policy Management*
 -   GP name: *MMC_IpSecManage*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3217,7 +3217,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ipsecmonitor"></a>**ADMX_MMCSnapins/MMC_IpSecMonitor**  
+<a href="" id="admx-mmcsnapins-mmc-ipsecmonitor"></a>**ADMX_MMCSnapins/MMC_IpSecMonitor**
 
 <!--SupportedSKUs-->
 
@@ -3243,24 +3243,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IP Security Monitor*
 -   GP name: *MMC_IpSecMonitor*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3272,7 +3272,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-localusersgroups"></a>**ADMX_MMCSnapins/MMC_LocalUsersGroups**  
+<a href="" id="admx-mmcsnapins-mmc-localusersgroups"></a>**ADMX_MMCSnapins/MMC_LocalUsersGroups**
 
 <!--SupportedSKUs-->
 
@@ -3298,24 +3298,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Local Users and Groups*
 -   GP name: *MMC_LocalUsersGroups*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3327,7 +3327,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-logicalmappeddrives"></a>**ADMX_MMCSnapins/MMC_LogicalMappedDrives**  
+<a href="" id="admx-mmcsnapins-mmc-logicalmappeddrives"></a>**ADMX_MMCSnapins/MMC_LogicalMappedDrives**
 
 <!--SupportedSKUs-->
 
@@ -3353,24 +3353,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Logical and Mapped Drives*
 -   GP name: *MMC_LogicalMappedDrives*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3382,7 +3382,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-npsui"></a>**ADMX_MMCSnapins/MMC_NPSUI**  
+<a href="" id="admx-mmcsnapins-mmc-npsui"></a>**ADMX_MMCSnapins/MMC_NPSUI**
 
 <!--SupportedSKUs-->
 
@@ -3408,24 +3408,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Network Policy Server (NPS)*
 -   GP name: *MMC_NPSUI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3437,7 +3437,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-napsnap"></a>**ADMX_MMCSnapins/MMC_NapSnap**  
+<a href="" id="admx-mmcsnapins-mmc-napsnap"></a>**ADMX_MMCSnapins/MMC_NapSnap**
 
 <!--SupportedSKUs-->
 
@@ -3463,24 +3463,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *NAP Client Configuration*
 -   GP name: *MMC_NapSnap*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3492,7 +3492,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-napsnap-gp"></a>**ADMX_MMCSnapins/MMC_NapSnap_GP**  
+<a href="" id="admx-mmcsnapins-mmc-napsnap-gp"></a>**ADMX_MMCSnapins/MMC_NapSnap_GP**
 
 <!--SupportedSKUs-->
 
@@ -3518,24 +3518,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *NAP Client Configuration*
 -   GP name: *MMC_NapSnap_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -3547,7 +3547,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-net-framework"></a>**ADMX_MMCSnapins/MMC_Net_Framework**  
+<a href="" id="admx-mmcsnapins-mmc-net-framework"></a>**ADMX_MMCSnapins/MMC_Net_Framework**
 
 <!--SupportedSKUs-->
 
@@ -3573,24 +3573,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *.Net Framework Configuration*
 -   GP name: *MMC_Net_Framework*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3602,7 +3602,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ocsp"></a>**ADMX_MMCSnapins/MMC_OCSP**  
+<a href="" id="admx-mmcsnapins-mmc-ocsp"></a>**ADMX_MMCSnapins/MMC_OCSP**
 
 <!--SupportedSKUs-->
 
@@ -3628,24 +3628,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Online Responder*
 -   GP name: *MMC_OCSP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3657,7 +3657,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ospfrouting"></a>**ADMX_MMCSnapins/MMC_OSPFRouting**  
+<a href="" id="admx-mmcsnapins-mmc-ospfrouting"></a>**ADMX_MMCSnapins/MMC_OSPFRouting**
 
 <!--SupportedSKUs-->
 
@@ -3683,24 +3683,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *OSPF Routing*
 -   GP name: *MMC_OSPFRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3712,7 +3712,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-perflogsalerts"></a>**ADMX_MMCSnapins/MMC_PerfLogsAlerts**  
+<a href="" id="admx-mmcsnapins-mmc-perflogsalerts"></a>**ADMX_MMCSnapins/MMC_PerfLogsAlerts**
 
 <!--SupportedSKUs-->
 
@@ -3738,24 +3738,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Performance Logs and Alerts*
 -   GP name: *MMC_PerfLogsAlerts*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3767,7 +3767,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-publickey"></a>**ADMX_MMCSnapins/MMC_PublicKey**  
+<a href="" id="admx-mmcsnapins-mmc-publickey"></a>**ADMX_MMCSnapins/MMC_PublicKey**
 
 <!--SupportedSKUs-->
 
@@ -3793,24 +3793,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Public Key Policies*
 -   GP name: *MMC_PublicKey*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3822,7 +3822,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-qosadmission"></a>**ADMX_MMCSnapins/MMC_QoSAdmission**  
+<a href="" id="admx-mmcsnapins-mmc-qosadmission"></a>**ADMX_MMCSnapins/MMC_QoSAdmission**
 
 <!--SupportedSKUs-->
 
@@ -3848,24 +3848,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *QoS Admission Control*
 -   GP name: *MMC_QoSAdmission*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -3877,7 +3877,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ras-dialinuser"></a>**ADMX_MMCSnapins/MMC_RAS_DialinUser**  
+<a href="" id="admx-mmcsnapins-mmc-ras-dialinuser"></a>**ADMX_MMCSnapins/MMC_RAS_DialinUser**
 
 <!--SupportedSKUs-->
 
@@ -3903,24 +3903,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *RAS Dialin - User Node*
 -   GP name: *MMC_RAS_DialinUser*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3932,7 +3932,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-riprouting"></a>**ADMX_MMCSnapins/MMC_RIPRouting**  
+<a href="" id="admx-mmcsnapins-mmc-riprouting"></a>**ADMX_MMCSnapins/MMC_RIPRouting**
 
 <!--SupportedSKUs-->
 
@@ -3958,24 +3958,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *RIP Routing*
 -   GP name: *MMC_RIPRouting*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -3987,7 +3987,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-ris"></a>**ADMX_MMCSnapins/MMC_RIS**  
+<a href="" id="admx-mmcsnapins-mmc-ris"></a>**ADMX_MMCSnapins/MMC_RIS**
 
 <!--SupportedSKUs-->
 
@@ -4013,24 +4013,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remote Installation Services*
 -   GP name: *MMC_RIS*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -4042,7 +4042,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-rra"></a>**ADMX_MMCSnapins/MMC_RRA**  
+<a href="" id="admx-mmcsnapins-mmc-rra"></a>**ADMX_MMCSnapins/MMC_RRA**
 
 <!--SupportedSKUs-->
 
@@ -4068,24 +4068,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Routing and Remote Access*
 -   GP name: *MMC_RRA*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -4097,7 +4097,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-rsm"></a>**ADMX_MMCSnapins/MMC_RSM**  
+<a href="" id="admx-mmcsnapins-mmc-rsm"></a>**ADMX_MMCSnapins/MMC_RSM**
 
 <!--SupportedSKUs-->
 
@@ -4123,24 +4123,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Removable Storage Management*
 -   GP name: *MMC_RSM*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -4152,7 +4152,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-remstore"></a>**ADMX_MMCSnapins/MMC_RemStore**  
+<a href="" id="admx-mmcsnapins-mmc-remstore"></a>**ADMX_MMCSnapins/MMC_RemStore**
 
 <!--SupportedSKUs-->
 
@@ -4178,24 +4178,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Removable Storage*
 -   GP name: *MMC_RemStore*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -4207,7 +4207,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-remoteaccess"></a>**ADMX_MMCSnapins/MMC_RemoteAccess**  
+<a href="" id="admx-mmcsnapins-mmc-remoteaccess"></a>**ADMX_MMCSnapins/MMC_RemoteAccess**
 
 <!--SupportedSKUs-->
 
@@ -4233,24 +4233,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remote Access*
 -   GP name: *MMC_RemoteAccess*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -4262,7 +4262,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-remotedesktop"></a>**ADMX_MMCSnapins/MMC_RemoteDesktop**  
+<a href="" id="admx-mmcsnapins-mmc-remotedesktop"></a>**ADMX_MMCSnapins/MMC_RemoteDesktop**
 
 <!--SupportedSKUs-->
 
@@ -4288,24 +4288,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remote Desktops*
 -   GP name: *MMC_RemoteDesktop*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -4317,7 +4317,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-resultantsetofpolicysnapin"></a>**ADMX_MMCSnapins/MMC_ResultantSetOfPolicySnapIn**  
+<a href="" id="admx-mmcsnapins-mmc-resultantsetofpolicysnapin"></a>**ADMX_MMCSnapins/MMC_ResultantSetOfPolicySnapIn**
 
 <!--SupportedSKUs-->
 
@@ -4343,24 +4343,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Resultant Set of Policy snap-in*
 -   GP name: *MMC_ResultantSetOfPolicySnapIn*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy*
@@ -4372,7 +4372,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-routing"></a>**ADMX_MMCSnapins/MMC_Routing**  
+<a href="" id="admx-mmcsnapins-mmc-routing"></a>**ADMX_MMCSnapins/MMC_Routing**
 
 <!--SupportedSKUs-->
 
@@ -4398,24 +4398,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Routing*
 -   GP name: *MMC_Routing*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -4427,7 +4427,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-sca"></a>**ADMX_MMCSnapins/MMC_SCA**  
+<a href="" id="admx-mmcsnapins-mmc-sca"></a>**ADMX_MMCSnapins/MMC_SCA**
 
 <!--SupportedSKUs-->
 
@@ -4453,24 +4453,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Configuration and Analysis*
 -   GP name: *MMC_SCA*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -4482,7 +4482,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-smtpprotocol"></a>**ADMX_MMCSnapins/MMC_SMTPProtocol**  
+<a href="" id="admx-mmcsnapins-mmc-smtpprotocol"></a>**ADMX_MMCSnapins/MMC_SMTPProtocol**
 
 <!--SupportedSKUs-->
 
@@ -4508,24 +4508,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *SMTP Protocol*
 -   GP name: *MMC_SMTPProtocol*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -4537,7 +4537,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-snmp"></a>**ADMX_MMCSnapins/MMC_SNMP**  
+<a href="" id="admx-mmcsnapins-mmc-snmp"></a>**ADMX_MMCSnapins/MMC_SNMP**
 
 <!--SupportedSKUs-->
 
@@ -4563,24 +4563,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *SNMP*
 -   GP name: *MMC_SNMP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -4592,7 +4592,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-scriptsmachine-1"></a>**ADMX_MMCSnapins/MMC_ScriptsMachine_1**  
+<a href="" id="admx-mmcsnapins-mmc-scriptsmachine-1"></a>**ADMX_MMCSnapins/MMC_ScriptsMachine_1**
 
 <!--SupportedSKUs-->
 
@@ -4618,24 +4618,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scripts (Startup/Shutdown)*
 -   GP name: *MMC_ScriptsMachine_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -4647,7 +4647,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-scriptsmachine-2"></a>**ADMX_MMCSnapins/MMC_ScriptsMachine_2**  
+<a href="" id="admx-mmcsnapins-mmc-scriptsmachine-2"></a>**ADMX_MMCSnapins/MMC_ScriptsMachine_2**
 
 <!--SupportedSKUs-->
 
@@ -4673,24 +4673,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scripts (Startup/Shutdown)*
 -   GP name: *MMC_ScriptsMachine_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -4702,7 +4702,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-scriptsuser-1"></a>**ADMX_MMCSnapins/MMC_ScriptsUser_1**  
+<a href="" id="admx-mmcsnapins-mmc-scriptsuser-1"></a>**ADMX_MMCSnapins/MMC_ScriptsUser_1**
 
 <!--SupportedSKUs-->
 
@@ -4728,24 +4728,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scripts (Logon/Logoff)*
 -   GP name: *MMC_ScriptsUser_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -4757,7 +4757,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-scriptsuser-2"></a>**ADMX_MMCSnapins/MMC_ScriptsUser_2**  
+<a href="" id="admx-mmcsnapins-mmc-scriptsuser-2"></a>**ADMX_MMCSnapins/MMC_ScriptsUser_2**
 
 <!--SupportedSKUs-->
 
@@ -4783,24 +4783,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Scripts (Logon/Logoff)*
 -   GP name: *MMC_ScriptsUser_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -4812,7 +4812,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-securitysettings-1"></a>**ADMX_MMCSnapins/MMC_SecuritySettings_1**  
+<a href="" id="admx-mmcsnapins-mmc-securitysettings-1"></a>**ADMX_MMCSnapins/MMC_SecuritySettings_1**
 
 <!--SupportedSKUs-->
 
@@ -4838,24 +4838,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Settings*
 -   GP name: *MMC_SecuritySettings_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -4867,7 +4867,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-securitysettings-2"></a>**ADMX_MMCSnapins/MMC_SecuritySettings_2**  
+<a href="" id="admx-mmcsnapins-mmc-securitysettings-2"></a>**ADMX_MMCSnapins/MMC_SecuritySettings_2**
 
 <!--SupportedSKUs-->
 
@@ -4893,24 +4893,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Settings*
 -   GP name: *MMC_SecuritySettings_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -4922,7 +4922,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-securitytemplates"></a>**ADMX_MMCSnapins/MMC_SecurityTemplates**  
+<a href="" id="admx-mmcsnapins-mmc-securitytemplates"></a>**ADMX_MMCSnapins/MMC_SecurityTemplates**
 
 <!--SupportedSKUs-->
 
@@ -4948,24 +4948,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Security Templates*
 -   GP name: *MMC_SecurityTemplates*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -4977,7 +4977,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-sendconsolemessage"></a>**ADMX_MMCSnapins/MMC_SendConsoleMessage**  
+<a href="" id="admx-mmcsnapins-mmc-sendconsolemessage"></a>**ADMX_MMCSnapins/MMC_SendConsoleMessage**
 
 <!--SupportedSKUs-->
 
@@ -5003,24 +5003,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Send Console Message*
 -   GP name: *MMC_SendConsoleMessage*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -5032,7 +5032,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-servermanager"></a>**ADMX_MMCSnapins/MMC_ServerManager**  
+<a href="" id="admx-mmcsnapins-mmc-servermanager"></a>**ADMX_MMCSnapins/MMC_ServerManager**
 
 <!--SupportedSKUs-->
 
@@ -5058,24 +5058,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Server Manager*
 -   GP name: *MMC_ServerManager*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5087,7 +5087,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-servicedependencies"></a>**ADMX_MMCSnapins/MMC_ServiceDependencies**  
+<a href="" id="admx-mmcsnapins-mmc-servicedependencies"></a>**ADMX_MMCSnapins/MMC_ServiceDependencies**
 
 <!--SupportedSKUs-->
 
@@ -5113,24 +5113,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Service Dependencies*
 -   GP name: *MMC_ServiceDependencies*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -5142,7 +5142,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-services"></a>**ADMX_MMCSnapins/MMC_Services**  
+<a href="" id="admx-mmcsnapins-mmc-services"></a>**ADMX_MMCSnapins/MMC_Services**
 
 <!--SupportedSKUs-->
 
@@ -5168,24 +5168,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Services*
 -   GP name: *MMC_Services*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5197,7 +5197,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-sharedfolders"></a>**ADMX_MMCSnapins/MMC_SharedFolders**  
+<a href="" id="admx-mmcsnapins-mmc-sharedfolders"></a>**ADMX_MMCSnapins/MMC_SharedFolders**
 
 <!--SupportedSKUs-->
 
@@ -5223,24 +5223,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Shared Folders*
 -   GP name: *MMC_SharedFolders*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5252,7 +5252,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-sharedfolders-ext"></a>**ADMX_MMCSnapins/MMC_SharedFolders_Ext**  
+<a href="" id="admx-mmcsnapins-mmc-sharedfolders-ext"></a>**ADMX_MMCSnapins/MMC_SharedFolders_Ext**
 
 <!--SupportedSKUs-->
 
@@ -5278,24 +5278,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Shared Folders Ext*
 -   GP name: *MMC_SharedFolders_Ext*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -5307,7 +5307,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-softwareinstalationcomputers-1"></a>**ADMX_MMCSnapins/MMC_SoftwareInstalationComputers_1**  
+<a href="" id="admx-mmcsnapins-mmc-softwareinstalationcomputers-1"></a>**ADMX_MMCSnapins/MMC_SoftwareInstalationComputers_1**
 
 <!--SupportedSKUs-->
 
@@ -5333,24 +5333,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Software Installation (Computers)*
 -   GP name: *MMC_SoftwareInstalationComputers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -5362,7 +5362,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-softwareinstalationcomputers-2"></a>**ADMX_MMCSnapins/MMC_SoftwareInstalationComputers_2**  
+<a href="" id="admx-mmcsnapins-mmc-softwareinstalationcomputers-2"></a>**ADMX_MMCSnapins/MMC_SoftwareInstalationComputers_2**
 
 <!--SupportedSKUs-->
 
@@ -5388,24 +5388,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Software Installation (Computers)*
 -   GP name: *MMC_SoftwareInstalationComputers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -5417,7 +5417,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-softwareinstallationusers-1"></a>**ADMX_MMCSnapins/MMC_SoftwareInstallationUsers_1**  
+<a href="" id="admx-mmcsnapins-mmc-softwareinstallationusers-1"></a>**ADMX_MMCSnapins/MMC_SoftwareInstallationUsers_1**
 
 <!--SupportedSKUs-->
 
@@ -5443,24 +5443,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Software Installation (Users)*
 -   GP name: *MMC_SoftwareInstallationUsers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -5472,7 +5472,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-softwareinstallationusers-2"></a>**ADMX_MMCSnapins/MMC_SoftwareInstallationUsers_2**  
+<a href="" id="admx-mmcsnapins-mmc-softwareinstallationusers-2"></a>**ADMX_MMCSnapins/MMC_SoftwareInstallationUsers_2**
 
 <!--SupportedSKUs-->
 
@@ -5498,24 +5498,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Software Installation (Users)*
 -   GP name: *MMC_SoftwareInstallationUsers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
@@ -5527,7 +5527,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-sysinfo"></a>**ADMX_MMCSnapins/MMC_SysInfo**  
+<a href="" id="admx-mmcsnapins-mmc-sysinfo"></a>**ADMX_MMCSnapins/MMC_SysInfo**
 
 <!--SupportedSKUs-->
 
@@ -5553,24 +5553,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *System Information*
 -   GP name: *MMC_SysInfo*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5582,7 +5582,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-sysprop"></a>**ADMX_MMCSnapins/MMC_SysProp**  
+<a href="" id="admx-mmcsnapins-mmc-sysprop"></a>**ADMX_MMCSnapins/MMC_SysProp**
 
 <!--SupportedSKUs-->
 
@@ -5608,24 +5608,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *System Properties*
 -   GP name: *MMC_SysProp*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -5637,7 +5637,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-tpmmanagement"></a>**ADMX_MMCSnapins/MMC_TPMManagement**  
+<a href="" id="admx-mmcsnapins-mmc-tpmmanagement"></a>**ADMX_MMCSnapins/MMC_TPMManagement**
 
 <!--SupportedSKUs-->
 
@@ -5663,24 +5663,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *TPM Management*
 -   GP name: *MMC_TPMManagement*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5692,7 +5692,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-telephony"></a>**ADMX_MMCSnapins/MMC_Telephony**  
+<a href="" id="admx-mmcsnapins-mmc-telephony"></a>**ADMX_MMCSnapins/MMC_Telephony**
 
 <!--SupportedSKUs-->
 
@@ -5718,24 +5718,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Telephony*
 -   GP name: *MMC_Telephony*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5747,7 +5747,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-terminalservices"></a>**ADMX_MMCSnapins/MMC_TerminalServices**  
+<a href="" id="admx-mmcsnapins-mmc-terminalservices"></a>**ADMX_MMCSnapins/MMC_TerminalServices**
 
 <!--SupportedSKUs-->
 
@@ -5773,24 +5773,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remote Desktop Services Configuration*
 -   GP name: *MMC_TerminalServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5802,7 +5802,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-wmi"></a>**ADMX_MMCSnapins/MMC_WMI**  
+<a href="" id="admx-mmcsnapins-mmc-wmi"></a>**ADMX_MMCSnapins/MMC_WMI**
 
 <!--SupportedSKUs-->
 
@@ -5828,24 +5828,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *WMI Control*
 -   GP name: *MMC_WMI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5857,7 +5857,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-windowsfirewall"></a>**ADMX_MMCSnapins/MMC_WindowsFirewall**  
+<a href="" id="admx-mmcsnapins-mmc-windowsfirewall"></a>**ADMX_MMCSnapins/MMC_WindowsFirewall**
 
 <!--SupportedSKUs-->
 
@@ -5883,24 +5883,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Windows Firewall with Advanced Security*
 -   GP name: *MMC_WindowsFirewall*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -5912,7 +5912,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-windowsfirewall-gp"></a>**ADMX_MMCSnapins/MMC_WindowsFirewall_GP**  
+<a href="" id="admx-mmcsnapins-mmc-windowsfirewall-gp"></a>**ADMX_MMCSnapins/MMC_WindowsFirewall_GP**
 
 <!--SupportedSKUs-->
 
@@ -5938,24 +5938,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Windows Firewall with Advanced Security*
 -   GP name: *MMC_WindowsFirewall_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -5967,7 +5967,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-wirednetworkpolicy"></a>**ADMX_MMCSnapins/MMC_WiredNetworkPolicy**  
+<a href="" id="admx-mmcsnapins-mmc-wirednetworkpolicy"></a>**ADMX_MMCSnapins/MMC_WiredNetworkPolicy**
 
 <!--SupportedSKUs-->
 
@@ -5993,24 +5993,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Wired Network (IEEE 802.3) Policies*
 -   GP name: *MMC_WiredNetworkPolicy*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
@@ -6022,7 +6022,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-wirelessmon"></a>**ADMX_MMCSnapins/MMC_WirelessMon**  
+<a href="" id="admx-mmcsnapins-mmc-wirelessmon"></a>**ADMX_MMCSnapins/MMC_WirelessMon**
 
 <!--SupportedSKUs-->
 
@@ -6048,24 +6048,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Wireless Monitor*
 -   GP name: *MMC_WirelessMon*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -6077,7 +6077,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmcsnapins-mmc-wirelessnetworkpolicy"></a>**ADMX_MMCSnapins/MMC_WirelessNetworkPolicy**  
+<a href="" id="admx-mmcsnapins-mmc-wirelessnetworkpolicy"></a>**ADMX_MMCSnapins/MMC_WirelessNetworkPolicy**
 
 <!--SupportedSKUs-->
 
@@ -6103,24 +6103,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits or prohibits the use of this snap-in. 
+This policy setting permits or prohibits the use of this snap-in.
 
-If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console. 
+If you enable this policy setting, the snap-in is permitted and can be added into the Microsoft Management Console or run from the command line as a standalone console.
 
-If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in. 
+If you disable this policy setting, the snap-in is prohibited and can't be added into the Microsoft Management Console or run from the command line as a standalone console. An error message is displayed stating that policy is prohibiting the use of this snap-in.
 
-If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited. 
+If this policy setting isn't configured, the setting of the "Restrict users to the explicitly permitted list of snap-ins" setting determines whether this snap-in is permitted or prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is enabled, users can't use any snap-in except those explicitly permitted. To explicitly permit use of this snap-in, enable this policy setting. If this policy setting isn't configured or disabled, this snap-in is prohibited.
 
-- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted. 
+- If the policy setting "Restrict users to the explicitly permitted list of snap-ins" is disabled or not configured, users can use any snap-in except those explicitly prohibited. To explicitly prohibit use of this snap-in, disable this policy setting. If this policy setting isn't configured or enabled, the snap-in is permitted.
 
 When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window in MMC. Also, when a user opens a console file that includes a prohibited snap-in, the console file opens, but the prohibited snap-in doesn't appear.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Wireless Network (IEEE 802.11) Policies*
 -   GP name: *MMC_WirelessNetworkPolicy*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*

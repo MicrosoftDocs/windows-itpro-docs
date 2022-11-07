@@ -4,8 +4,8 @@ description: Learn about various Policy configuration service provider (CSP) - A
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - ActiveXControls
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## ActiveXControls policies  
+## ActiveXControls policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**  
+<a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**
 
 <!--SupportedSKUs-->
 
@@ -62,11 +62,11 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
+This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved ActiveX Install sites specified by host URL.
 
-If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
+If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL.
 
-If you disable or don't configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
+If you disable or don't configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.
 
 > [!Note]
 > Wild card characters can't be used when specifying the host URLs.
@@ -74,7 +74,7 @@ If you disable or don't configure this policy setting, ActiveX controls prompt t
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Approved Installation Sites for ActiveX Controls*
 -   GP name: *ApprovedActiveXInstallSites*
 -   GP path: *Windows Components/ActiveX Installer Service*

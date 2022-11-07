@@ -23,7 +23,7 @@ productDirectory:
     # Card    
     - title: Phase 1 - Cloud deployment
       imageSrc: ./images/EDU-Deploy.svg
-      summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your active directry and SIS, and license users.
+      summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your Active Directory and SIS, and license users.
       url: /microsoft-365/education/deploy/create-your-office-365-tenant
     # Card
     - title: Phase 2 - Device management

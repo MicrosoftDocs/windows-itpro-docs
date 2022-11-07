@@ -1,18 +1,8 @@
 ---
 title: Enable S mode on Surface Go devices for Education
-description: Steps that an education customer can perform to enable S mode on Surface Go devices
-keywords: Surface Go for Education, S mode
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: edu
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how to enable S mode on Surface Go devices.
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
+ms.topic: how-to
 appliesto:
 - ✅ <b>Windows 10</b>
 ---

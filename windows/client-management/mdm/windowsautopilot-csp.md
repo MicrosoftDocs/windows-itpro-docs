@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 05/09/2022
 ---
@@ -31,7 +31,7 @@ The WindowsAutopilot CSP exposes Windows Autopilot related device information. T
 
 **./Vendor/MSFT/WindowsAutopilot**
 
-Root node for the WindowsAutopilot configuration service provider. 
+Root node for the WindowsAutopilot configuration service provider.
 Supported operation is Get.
 
 **HardwareMismatchRemediationData**
@@ -42,4 +42,4 @@ Supported operation is Get.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

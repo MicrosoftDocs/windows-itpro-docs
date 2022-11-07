@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_AppXRuntime.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/10/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_AppXRuntime
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AppXRuntime policies  
+## ADMX_AppXRuntime policies
 
 <dl>
   <dd>
@@ -45,7 +45,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeapplicationcontenturirules"></a>**ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules**  
+<a href="" id="admx-appxruntime-appxruntimeapplicationcontenturirules"></a>**ADMX_AppXRuntime/AppxRuntimeApplicationContentUriRules**
 
 <!--SupportedSKUs-->
 
@@ -81,7 +81,7 @@ If you disable or don't set this policy setting, Windows Store apps will only us
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on dynamic Content URI Rules for Windows store apps*
 -   GP name: *AppxRuntimeApplicationContentUriRules*
 -   GP path: *Windows Components\App runtime*
@@ -92,7 +92,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeblockfileelevation"></a>**ADMX_AppXRuntime/AppxRuntimeBlockFileElevation**  
+<a href="" id="admx-appxruntime-appxruntimeblockfileelevation"></a>**ADMX_AppXRuntime/AppxRuntimeBlockFileElevation**
 
 <!--SupportedSKUs-->
 
@@ -128,7 +128,7 @@ If you disable or don't configure this policy setting, Windows Store apps can op
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Block launching desktop apps associated with a file.*
 -   GP name: *AppxRuntimeBlockFileElevation*
 -   GP path: *Windows Components\App runtime*
@@ -139,7 +139,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeblockhostedappaccesswinrt"></a>**ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT**  
+<a href="" id="admx-appxruntime-appxruntimeblockhostedappaccesswinrt"></a>**ADMX_AppXRuntime/AppxRuntimeBlockHostedAppAccessWinRT**
 
 <!--SupportedSKUs-->
 
@@ -177,7 +177,7 @@ If you disable or don't configure this policy setting, all Universal Windows app
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Block launching Universal Windows apps with Windows Runtime API access from hosted content.*
 -   GP name: *AppxRuntimeBlockHostedAppAccessWinRT*
 -   GP path: *Windows Components\App runtime*
@@ -188,7 +188,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appxruntime-appxruntimeblockprotocolelevation"></a>**ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation**  
+<a href="" id="admx-appxruntime-appxruntimeblockprotocolelevation"></a>**ADMX_AppXRuntime/AppxRuntimeBlockProtocolElevation**
 
 <!--SupportedSKUs-->
 
@@ -215,7 +215,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there's a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.  
+This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there's a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.
 
 If you enable this policy setting, Windows Store apps can't open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
 
@@ -227,7 +227,7 @@ If you disable or don't configure this policy setting, Windows Store apps can op
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Block launching desktop apps associated with a URI scheme*
 -   GP name: *AppxRuntimeBlockProtocolElevation*
 -   GP path: *Windows Components\App runtime*

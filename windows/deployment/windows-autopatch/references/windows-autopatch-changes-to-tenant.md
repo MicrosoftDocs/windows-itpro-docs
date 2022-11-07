@@ -1,9 +1,9 @@
 ---
 title: Changes made at tenant enrollment
-description:  This reference article details the changes made to your tenant when enrolling into Windows Autopatch
-ms.date: 08/08/2022
-ms.prod: w11
-ms.technology: windows
+description: This reference article details the changes made to your tenant when enrolling into Windows Autopatch
+ms.date: 11/02/2022
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: reference
 ms.localizationpriority: medium
 author: tiaraquan
@@ -17,9 +17,22 @@ msreviewer: hathind
 The following configuration details are provided as information to help you understand the changes made to your tenant when enrolling into the Windows Autopatch service.
 
 > [!IMPORTANT]
-> The service manages and maintains the following configuration items. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service.  
+> The service manages and maintains the following configuration items. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service.
 
-## Service principal
+## Windows Autopatch enterprise applications
+
+Enterprise applications are applications (software) that a business uses to do its work.
+
+Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
+
+| Enterprise application name | Usage | Permissions |
+| ----- | ------ | ----- |
+| Modern Workplace Management | This enterprise application is a limited first party enterprise application with elevated privileges. This application is used to manage the service, publish baseline configuration updates, and maintain overall service health. | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.Read.Write.All</li></ul> |
+
+> [!NOTE]
+> Enterprise application authentication is only available on tenants enrolled after July 9th, 2022. For tenants enrolled before this date, Enterprise Application authentication will be made available for enrollment soon.
+
+### Service principal
 
 Windows Autopatch will create a service principal in your tenant allowing the service to establish an identity and restrict access to what resources the service has access to within the tenant. For more information, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object). The service principal created by Windows Autopatch is:  
 
@@ -38,40 +51,21 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 | Modern Workplace Devices-Windows Autopatch-First | First production deployment ring for early adopters |
 | Modern Workplace Devices-Windows Autopatch-Fast | Fast deployment ring for quick rollout and adoption |
 | Modern Workplace Devices-Windows Autopatch-Broad | Final deployment ring for broad rollout into the organization |
-| Modern Workplace Devices Dynamic - Windows 10 | Microsoft Managed Desktop Devices with Windows 10<p>Group Rule:<ul><li>`(device.devicePhysicalIds -any _ -startsWith \"[OrderID]:Microsoft365Managed_\")`</li><li>`(device.deviceOSVersion -notStartsWith \"10.0.22000\")`</li></ul><br>Exclusions:<ul><li>Modern Workplace - Telemetry Settings for Windows 11</li></ul>  |
-| Modern Workplace Devices Dynamic - Windows 11 | Microsoft Managed Desktop Devices with Windows 11<p>Group Rule:<ul><li>`(device.devicePhysicalIds -any _ -startsWith \"[OrderID]:Microsoft365Managed_\")`</li><li>`(device.deviceOSVersion -startsWith \"10.0.22000\")`</li></ul><br>Exclusions:<ul><li>Modern Workplace - Telemetry Settings for Windows 10</li></ul> |
 | Modern Workplace Roles - Service Administrator | All users granted access to Modern Workplace Service Administrator Role |
 | Modern Workplace Roles - Service Reader | All users granted access to Modern Workplace Service Reader Role |
 | Windows Autopatch Device Registration | Group for automatic device registration for Windows Autopatch |
 
-## Windows Autopatch enterprise applications
-
-Enterprise applications are applications (software) that a business uses to do its work.
-
-Windows Autopatch creates an enterprise application in your tenant. This enterprise application is a first party application used to run the Windows Autopatch service.
-
-| Enterprise application name | Usage | Permissions |
-| ----- | ------ | ----- |
-| Modern Workplace Management | This enterprise application is a limited first party enterprise application with elevated privileges. This account is used to manage the service, publish baseline configuration updates, and maintain overall service health. | <ul><li>DeviceManagementApps.ReadWrite.All</li><li>DeviceManagementConfiguration.ReadWrite.All</li><li>DeviceManagementManagedDevices.PriviligedOperation.All</li><li>DeviceManagementManagedDevices.ReadWrite.All</li><li>DeviceManagementRBAC.ReadWrite.All</li><li>DeviceManagementServiceConfig.ReadWrite.All</li><li>Directory.Read.All</li><li>Group.Create</li><li>Policy.Read.All</li><li>WindowsUpdates.Read.Write.All</li></ul> |
-
-> [!NOTE]
-> Enterprise application authentication is only available on tenants enrolled after July 9th, 2022. For tenants enrolled before this date, Enterprise Application authentication will be made available for enrollment soon.
-
 ## Device configuration policies
 
-- Modern Workplace - Set MDM to Win Over GPO
-- Modern Workplace - Telemetry Settings for Windows 10
-- Modern Workplace - Telemetry Settings for Windows 11
-- Modern Workplace-Window Update Detection Frequency
-- Modern Workplace - Data Collection
+- Windows Autopatch - Set MDM to Win Over GPO
+- Windows Autopatch - Data Collection
+- Windows Autopatch-Window Update Detection Frequency
 
-| Policy name | Policy description | OMA | Value |
+| Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
-| Modern Workplace - Set MDM to Win Over GPO | Sets mobile device management (MDM) to win over GPO<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
-| Modern Workplace - Telemetry Settings for Windows 10 | Telemetry settings for Windows 10<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|[./Device/Vendor/MSFT/Policy/Config/System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) | 2 |
-| Modern Workplace - Telemetry Settings for Windows 11 | Telemetry settings for Windows 11<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ul><li>[./Device/Vendor/MSFT/Policy/Config/System/AllowTelemetry ](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)</li><li>[./Device/Vendor/MSFT/Policy/Config/System/LimitEnhancedDiagnosticDataWindowsAnalytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics)</li><li>[./Device/Vendor/MSFT/Policy/Config/System/LimitDumpCollection](/windows/client-management/mdm/policy-csp-system#system-limitdumpcollection)</li><li>[./Device/Vendor/MSFT/Policy/Config/System/LimitDiagnosticLogCollection](/windows/client-management/mdm/policy-csp-system#system-limitdiagnosticlogcollection)</li></ul>|<ul><li>3</li><li>1</li><li>1</li><li>1</li> |
-| Modern Workplace - Windows Update Detection Frequency | Sets Windows update detection frequency<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| [./Vendor/MSFT/Policy/Config/Update/DetectionFrequency](/windows/client-management/mdm/policy-csp-update#update-detectionfrequency)| 4 |
-| Modern Workplace - Data Collection | Allows diagnostic data from this device to be processed by Microsoft Managed Desktop.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul> | | |
+| Windows Autopatch - Set MDM to Win Over GPO | Sets mobile device management (MDM) to win over GPO<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
+| Windows Autopatch - Data Collection | Allows diagnostic data from this device to be processed by Microsoft Managed Desktop and Telemetry settings for Windows devices. <p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ul><li>[./Device/Vendor/MSFT/Policy/Config/System/AllowTelemetry ](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)</li><li>[./Device/Vendor/MSFT/Policy/Config/System/LimitEnhancedDiagnosticDataWindowsAnalytics](/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics)</li><li>[./Device/Vendor/MSFT/Policy/Config/System/LimitDumpCollection](/windows/client-management/mdm/policy-csp-system#system-limitdumpcollection)</li><li>[./Device/Vendor/MSFT/Policy/Config/System/LimitDiagnosticLogCollection](/windows/client-management/mdm/policy-csp-system#system-limitdiagnosticlogcollection)</li></ul>|<ul><li>Full</li><li>1</li><li>1</li><li>1</li> |
+| Windows Autopatch - Windows Update Detection Frequency | Sets Windows update detection frequency<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| [./Vendor/MSFT/Policy/Config/Update/DetectionFrequency](/windows/client-management/mdm/policy-csp-update#update-detectionfrequency)| 4 |
 
 ## Update rings for Windows 10 and later
 
@@ -105,33 +99,29 @@ Windows Autopatch creates an enterprise application in your tenant. This enterpr
 
 ## Microsoft Office update policies
 
-- Modern Workplace - Office ADMX Deployment
-- Modern Workplace - Office Configuration v5
-- Modern Workplace - Office Update Configuration [Test]
-- Modern Workplace - Office Update Configuration [First]
-- Modern Workplace - Office Update Configuration [Fast]
-- Modern Workplace - Office Update Configuration [Broad]
+- Windows Autopatch - Office Configuration v5
+- Windows Autopatch - Office Update Configuration [Test]
+- Windows Autopatch - Office Update Configuration [First]
+- Windows Autopatch - Office Update Configuration [Fast]
+- Windows Autopatch - Office Update Configuration [Broad]
 
-| Policy name | Policy description | OMA | Value |
+| Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
-| Modern Workplace - Office ADMX Deployment | ADMX file for Office<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul> | | |
-| Modern Workplace - Office Configuration v5 | Sets Office Update Channel to the Monthly Enterprise servicing branch.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
-| Modern Workplace - Office Update Configuration [Test] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li></ul> |<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>|<li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 0</li>|
-| Modern Workplace - Office Update Configuration [First] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li></ul> |<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul> | <li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 0</li>|
-| Modern Workplace - Office Update Configuration [Fast] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul>|<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>| <li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 3</li>|
-| Modern Workplace - Office Update Configuration [Broad] | Sets the Office update deadline<br>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li>|<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>|<li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 7</li> |
+| Windows Autopatch - Office Configuration v5 | Sets Office Update Channel to the Monthly Enterprise servicing branch.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
+| Windows Autopatch - Office Update Configuration [Test] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li></ul> |<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>|<li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 0</li>|
+| Windows Autopatch - Office Update Configuration [First] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li></ul> |<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul> | <li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 0</li>|
+| Windows Autopatch - Office Update Configuration [Fast] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul>|<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>| <li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 3</li>|
+| Windows Autopatch - Office Update Configuration [Broad] | Sets the Office update deadline<br>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li>|<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>|<li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 7</li> |
 
 ## Microsoft Edge update policies
 
-- Modern Workplace - Edge Update ADMX Deployment
-- Modern Workplace - Edge Update Channel Stable
-- Modern Workplace - Edge Update Channel Beta
+- Windows Autopatch - Edge Update Channel Stable
+- Windows Autopatch - Edge Update Channel Beta
 
-| Policy name | Policy description | OMA | Value |
+| Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
-| Modern Workplace - Edge Update ADMX Deployment | Deploys ADMX update policy for Edge<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
-| Modern Workplace - Edge Update Channel Stable | Deploys updates via the Edge Stable Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
-| Modern Workplace - Edge Update Channel Beta | Deploys updates via the Edge Beta Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test </li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
+| Windows Autopatch - Edge Update Channel Stable | Deploys updates via the Edge Stable Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
+| Windows Autopatch - Edge Update Channel Beta | Deploys updates via the Edge Beta Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test </li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
 
 ## PowerShell scripts
 

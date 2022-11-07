@@ -1,31 +1,31 @@
 ---
 title: Manage Windows Defender Credential Guard (Windows)
 description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: zwhittington
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.custom: 
   - CI 120967
   - CSSTroubleshooting
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 # Manage Windows Defender Credential Guard
 
 ## Default Enablement
 
-Starting with Windows 11 Enterprise 22H2, compatible systems have Windows Defender Credential Guard turned on by default. This changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+Starting in **Windows 11 Enterprise, version 22H2** and **Windows 11 Education, version 22H2**, compatible systems have Windows Defender Credential Guard turned on by default. This feature changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
 
 ### Requirements for automatic enablement
 
@@ -33,21 +33,29 @@ Windows Defender Credential Guard will be enabled by default when a PC meets the
 
 |Component|Requirement|
 |---|---|
-|Operating System|Windows 11 Enterprise 22H2|
-|Existing Windows Defender Credential Guard Requirements|Only devices which meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
-|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
+|Operating System|**Windows 11 Enterprise, version 22H2** or **Windows 11 Education, version 22H2**|
+|Existing Windows Defender Credential Guard Requirements|Only devices that meet the [existing hardware and software requirements](credential-guard-requirements.md#hardware-and-software-requirements) to run Windows Defender Credential Guard will have it enabled by default.|
+|Virtualization-based Security (VBS) Requirements|VBS must be enabled in order to run Windows Defender Credential Guard. Starting with Windows 11 Enterprise 22H2 and Windows 11 Education 22H2, devices that meet the requirements to run Windows Defender Credential Guard as well as the [minimum requirements to enable VBS](/windows-hardware/design/device-experiences/oem-vbs) will have both Windows Defender Credential Guard and VBS enabled by default.
 
 > [!NOTE]
 > If Windows Defender Credential Guard or VBS has previously been explicitly disabled, default enablement will not overwrite this setting.
+
+> [!NOTE]
+> Devices running Windows 11 Pro 22H2 may have Virtualization-Based Security (VBS) and/or Windows Defender Credential Guard automaticaly enabled if they meet the other requirements for default enablement listed above and have previously run Windows Defender Credential Guard (for example if Windows Defender Credential Guard was running on an Enterprise device that later downgraded to Pro).
+> 
+> To determine whether the Pro device is in this state, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`. In this scenario, if you wish to disable VBS and Windows Defender Credential Guard, follow the instructions for [disabling Virtualization-Based Security](#disabling-virtualization-based-security). If you wish to disable only Windows Defender Credential Guard without disabling Virtualization-Based Security, use the procedures for [disabling Windows Defender Credential Guard](#disable-windows-defender-credential-guard).
 
 ## Enable Windows Defender Credential Guard
 
 Windows Defender Credential Guard can be enabled either by using [Group Policy](#enable-windows-defender-credential-guard-by-using-group-policy), the [registry](#enable-windows-defender-credential-guard-by-using-the-registry), or the [Hypervisor-Protected Code Integrity (HVCI) and Windows Defender Credential Guard hardware readiness tool](#enable-windows-defender-credential-guard-by-using-the-hvci-and-windows-defender-credential-guard-hardware-readiness-tool). Windows Defender Credential Guard can also protect secrets in a Hyper-V virtual machine, just as it would on a physical machine.
 The same set of procedures used to enable Windows Defender Credential Guard on physical machines applies also to virtual machines.
 
+> [!NOTE]
+> Credential Guard and Device Guard are not supported when using Azure Gen 1 VMs. These options are available with Gen 2 VMs only.
+
 ### Enable Windows Defender Credential Guard by using Group Policy
 
-You can use Group Policy to enable Windows Defender Credential Guard. This will add and enable the virtualization-based security features for you if needed.
+You can use Group Policy to enable Windows Defender Credential Guard. When enabled, it will add and enable the virtualization-based security features for you if needed.
 
 1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
 
@@ -65,32 +73,32 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 To enforce processing of the group policy, you can run `gpupdate /force`.
 
-### Enable Windows Defender Credential Guard by using Microsoft Endpoint Manager
+### Enable Windows Defender Credential Guard by using Microsoft Intune
 
-1. From **Microsoft Endpoint Manager admin center**, select **Devices**.
+1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices**.
 
 1. Select **Configuration Profiles**.
 
 1. Select  **Create Profile** > **Windows 10 and later** > **Settings catalog** > **Create**.
 
-   1. Configuration settings: In the settings picker select **Device Guard** as category and add the needed settings.
+   1. Configuration settings: In the settings picker, select **Device Guard** as category and add the needed settings.
 
 > [!NOTE]
 > Enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 > [!TIP]
-> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Endpoint Manager](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
 ### Enable Windows Defender Credential Guard by using the registry
 
-If you don't use Group Policy, you can enable Windows Defender Credential Guard by using the registry. Windows Defender Credential Guard uses virtualization-based security features which have to be enabled first on some operating systems.
+If you don't use Group Policy, you can enable Windows Defender Credential Guard by using the registry. Windows Defender Credential Guard uses virtualization-based security features that have to be enabled first on some operating systems.
 
 #### Add the virtualization-based security features
 
-Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security is not necessary and this step can be skipped.
+Starting with Windows 10, version 1607 and Windows Server 2016, enabling Windows features to use virtualization-based security isn't necessary and this step can be skipped.
 
-If you are using Windows 10, version 1507 (RTM) or Windows 10, version 1511, Windows features have to be enabled to use virtualization-based security.
-You can do this by using either the Control Panel or the Deployment Image Servicing and Management tool (DISM).
+If you're using Windows 10, version 1507 (RTM) or Windows 10, version 1511, Windows features have to be enabled to use virtualization-based security.
+To enable, use the Control Panel or the Deployment Image Servicing and Management tool (DISM).
 
 > [!NOTE]
 > If you enable Windows Defender Credential Guard by using Group Policy, the steps to enable Windows features through Control Panel or DISM are not required. Group Policy will install Windows features for you.
@@ -193,9 +201,9 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 > [!NOTE]
 > For client machines that are running Windows 10 1703, LsaIso.exe is running whenever virtualization-based security is enabled for other features.
 
-- We recommend enabling Windows Defender Credential Guard before a device is joined to a domain. If Windows Defender Credential Guard is enabled after domain join, the user and device secrets may already be compromised. In other words, enabling Credential Guard will not help to secure a device or identity that has already been compromised, which is why we recommend turning on Credential Guard as early as possible.
+- We recommend enabling Windows Defender Credential Guard before a device is joined to a domain. If Windows Defender Credential Guard is enabled after domain join, the user and device secrets may already be compromised. In other words, enabling Credential Guard won't help to secure a device or identity that has already been compromised. So, we recommend turning on Credential Guard as early as possible.
 
-- You should perform regular reviews of the PCs that have Windows Defender Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
+- You should perform regular reviews of the PCs that have Windows Defender Credential Guard enabled. You can use security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
 
   - **Event ID 13** Windows Defender Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
 
@@ -205,13 +213,13 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 
     - The second variable: **0** means that it's configured to run in protect mode. **1** means that it's configured to run in test mode. This variable should always be **0**.
 
-  - **Event ID 15** Windows Defender Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Windows Defender Credential Guard.
+  - **Event ID 15** Windows Defender Credential Guard (LsaIso.exe) is configured but the secure kernel isn't running; continuing without Windows Defender Credential Guard.
 
   - **Event ID 16** Windows Defender Credential Guard (LsaIso.exe) failed to launch: \[error code\]
 
   - **Event ID 17** Error reading Windows Defender Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]  
 
-- You can also verify that TPM is being used for key protection by checking **Event ID 51** in *Applications and Services logs > Microsoft > Windows > Kernel-Boot* event log. The full event text will read like this: `VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.` If you are running with a TPM, the TPM PCR mask value will be something other than 0.
+- You can also verify that TPM is being used for key protection by checking **Event ID 51** in *Applications and Services logs > Microsoft > Windows > Kernel-Boot* event log. The full event text will read like this: `VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.` If you're running with a TPM, the TPM PCR mask value will be something other than 0.
 
 - You can use Windows PowerShell to determine whether credential guard is running on a client computer. On the computer in question, open an elevated PowerShell window and run the following command:
 
@@ -230,24 +238,54 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
 
 ## Disable Windows Defender Credential Guard
 
-To disable Windows Defender Credential Guard, you can use the following set of procedures or the [HVCI and Windows Defender Credential Guard hardware readiness tool](#disable-windows-defender-credential-guard-by-using-the-hvci-and-windows-defender-credential-guard-hardware-readiness-tool). If Credential Guard was enabled with UEFI Lock then you must use the following procedure as the settings are persisted in EFI (firmware) variables and it will require physical presence at the machine to press a function key to accept the change. If Credential Guard was enabled without UEFI Lock then you can turn it off by using Group Policy.
+Windows Defender Credential Guard can be disabled via several methods explained below, depending on how the feature was enabled. For devices that had Windows Defender Credential Guard automatically enabled in the 22H2 update and didn't have it enabled prior to the update, it's sufficient to [disable via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy).
 
-1. If you used Group Policy, disable the Group Policy setting that you used to enable Windows Defender Credential Guard (**Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn on Virtualization Based Security**).
+If Windows Defender Credential Guard was enabled with UEFI Lock, the procedure described in [Disabling Windows Defender Credential Guard with UEFI Lock](#disabling-windows-defender-credential-guard-with-uefi-lock) must be followed. The default enablement change in eligible 22H2 devices does **not** use a UEFI Lock.
 
-1. Delete the following registry settings:
+If Windows Defender Credential Guard was enabled via Group Policy without UEFI Lock, Windows Defender Credential Guard should be [disabled via Group Policy](#disabling-windows-defender-credential-guard-using-group-policy).
+
+Otherwise, Windows Defender Credential Guard can be [disabled by changing registry keys](#disabling-windows-defender-credential-guard-using-registry-keys).
+
+Windows Defender Credential Guard running in a virtual machine can be [disabled by the host](#disable-windows-defender-credential-guard-for-a-virtual-machine).
+
+For information on disabling Virtualization-Based Security (VBS), see [Disabling Virtualization-Based Security](#disabling-virtualization-based-security).
+
+### Disabling Windows Defender Credential Guard using Group Policy
+
+If Windows Defender Credential Guard was enabled via Group Policy and without UEFI Lock, disabling the same Group Policy setting will disable Windows Defender Credential Guard.
+
+1. Disable the Group Policy setting that governs Windows Defender Credential Guard. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn on Virtualization Based Security**. In the "Credential Guard Configuration" section, set the dropdown value to "Disabled":
+
+   :::image type="content" source="images/credguard-gp-disabled.png" alt-text="Windows Defender Credential Guard Group Policy set to Disabled.":::
+
+1. Restart the machine.
+
+### Disabling Windows Defender Credential Guard using Registry Keys
+
+If Windows Defender Credential Guard was enabled without UEFI Lock and without Group Policy, it's sufficient to edit the registry keys as described below to disable Windows Defender Credential Guard.
+
+1. Change the following registry settings to 0:
 
    - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LsaCfgFlags`
 
    - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\LsaCfgFlags`
 
-1. If you also wish to disable virtualization-based security delete the following registry settings:
+     > [!NOTE]
+     > Deleting these registry settings may not disable Windows Defender Credential Guard. They must be set to a value of 0.
 
-   - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\EnableVirtualizationBasedSecurity`
+1. Restart the machine.
 
-   - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\RequirePlatformSecurityFeatures`
+### Disabling Windows Defender Credential Guard with UEFI Lock
 
-     > [!IMPORTANT]
-     > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
+If Windows Defender Credential Guard was enabled with UEFI Lock enabled, then the following procedure must be followed since the settings are persisted in EFI (firmware) variables. This scenario will require physical presence at the machine to press a function key to accept the change.
+
+1. If Group Policy was used to enable Windows Defender Credential Guard, disable the relevant Group Policy setting. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn on Virtualization Based Security**. In the "Credential Guard Configuration" section, set the dropdown value to "Disabled".
+
+1. Change the following registry settings to 0:
+
+   - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LsaCfgFlags`
+
+   - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\LsaCfgFlags`
 
 1. Delete the Windows Defender Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
 
@@ -262,37 +300,7 @@ To disable Windows Defender Credential Guard, you can use the following set of p
    mountvol X: /d
    ```
 
-1. Restart the PC.
-
-1. Accept the prompt to disable Windows Defender Credential Guard.
-
-1. Alternatively, you can disable the virtualization-based security features to turn off Windows Defender Credential Guard.
-
-    > [!NOTE]
-    > The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Windows Defender Credential Guard and virtualization-based security, run the following bcdedit commands after turning off all virtualization-based security Group Policy and registry settings:
-    >
-    > ```cmd
-    > bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
-    > bcdedit /set vsmlaunchtype off
-    > ```
-
-For more info on virtualization-based security and HVCI, see [Enable virtualization-based protection of code integrity](../../threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md).
-
-> [!NOTE]
-> Credential Guard and Device Guard are not supported when using Azure Gen 1 VMs. These options are available with Gen 2 VMs only.
-
-### Disable Windows Defender Credential Guard by using the HVCI and Windows Defender Credential Guard hardware readiness tool
-
-You can also disable Windows Defender Credential Guard by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
-
-```powershell
-DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
-```
-
-> [!IMPORTANT]  
-> When running the HVCI and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
->
-> This is a known issue.
+1. Restart the PC. Before the OS boots, a prompt will appear notifying that UEFI was modified, and asking for confirmation. This prompt must be confirmed for the changes to persist. This step requires physical access to the machine.
 
 ### Disable Windows Defender Credential Guard for a virtual machine
 
@@ -301,3 +309,31 @@ From the host, you can disable Windows Defender Credential Guard for a virtual m
 ```powershell
 Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ```
+
+## Disabling Virtualization-Based Security
+
+Instructions are given below for how to disable Virtualization-Based Security (VBS) entirely, rather than just Windows Defender Credential Guard. Disabling Virtualization-Based Security will automatically disable Windows Defender Credential Guard and other features that rely on VBS.
+
+> [!IMPORANT]
+> Other security features in addition to Windows Defender Credential Guard rely on Virtualization-Based Security in order to run. Disabling Virtualization-Based Security may have unintended side effects.
+
+1. If Group Policy was used to enable Virtualization-Based Security, set the Group Policy setting that was used to enable it (**Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn on Virtualization Based Security**) to "Disabled".
+
+1. Delete the following registry settings:
+
+   - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\EnableVirtualizationBasedSecurity`
+
+   - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\RequirePlatformSecurityFeatures`
+
+     > [!IMPORTANT]
+     > If you manually remove these registry settings, make sure to delete them all. If you don't remove them all, the device might go into BitLocker recovery.
+
+1. If Windows Defender Credential Guard is running when disabling Virtualization-Based Security and either feature was enabled with UEFI Lock, the EFI (firmware) variables must be cleared using bcdedit. From an elevated command prompt, run the following bcdedit commands after turning off all Virtualization-Based Security Group Policy and registry settings as described in steps 1 and 2 above:
+
+     >
+     > ```cmd
+     > bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
+     > bcdedit /set vsmlaunchtype off
+     > ```
+
+1. Restart the PC.

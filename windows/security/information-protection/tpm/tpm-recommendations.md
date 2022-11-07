@@ -2,12 +2,12 @@
 title: TPM recommendations (Windows)
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual

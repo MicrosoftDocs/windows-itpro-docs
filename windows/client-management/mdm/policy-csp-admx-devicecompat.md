@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_DeviceCompat.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/09/2021
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_DeviceCompat
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_DeviceCompat policies  
+## ADMX_DeviceCompat policies
 
 <dl>
   <dd>
@@ -38,7 +38,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-devicecompat-deviceflags"></a>**ADMX_DeviceCompat/DeviceFlags**  
+<a href="" id="admx-devicecompat-deviceflags"></a>**ADMX_DeviceCompat/DeviceFlags**
 
 <!--SupportedSKUs-->
 
@@ -69,7 +69,7 @@ Changes behavior of Microsoft bus drivers to work with specific devices.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Device compatibility settings*
 -   GP name: *DeviceFlags*
 -   GP path: *Windows Components\Device and Driver Compatibility*
@@ -80,7 +80,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-devicecompat-drivershims"></a>**ADMX_DeviceCompat/DriverShims**  
+<a href="" id="admx-devicecompat-drivershims"></a>**ADMX_DeviceCompat/DriverShims**
 
 <!--SupportedSKUs-->
 
@@ -111,7 +111,7 @@ Changes behavior of third-party drivers to work around incompatibilities introdu
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Driver compatibility settings*
 -   GP name: *DriverShims*
 -   GP path: *Windows Components\Device and Driver Compatibility*

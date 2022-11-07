@@ -3,8 +3,8 @@ title: Policy CSP - Troubleshooting
 description: The Policy CSP - Troubleshooting setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,7 +15,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policies-->
-## Troubleshooting policies  
+## Troubleshooting policies
 
 <dl>
   <dd>
@@ -27,7 +27,7 @@ ms.date: 09/27/2019
 <hr/>
 
 <!--Policy-->
-<a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**  
+<a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -58,7 +58,7 @@ This policy setting allows IT admins to configure, how to apply recommended trou
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
 -   GP name: *TroubleshootingAllowRecommendations*
 -   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
@@ -68,7 +68,7 @@ ADMX Info:
 <!--SupportedValues-->
 This setting is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
 
-Supported values:  
+Supported values:
 -   0 (default) - Turn off this feature.
 -   1 - Turn off this feature but still apply critical troubleshooting.
 -   2 - Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.
