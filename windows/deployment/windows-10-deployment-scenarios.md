@@ -8,6 +8,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 deployment scenarios
