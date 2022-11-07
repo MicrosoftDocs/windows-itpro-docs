@@ -360,7 +360,7 @@ If you don't know the file name or location of the file, but you do know the fil
 </unconditionalExclude>
 ```
 
-#### Example 3 : Use a UserandSystem context component to run rules in both contexts
+#### Example 3: Use a UserandSystem context component to run rules in both contexts
 
 If you want the **&lt;UnconditionalExclude&gt;** element to apply to both the system and user context, you can create a third component using the **UserandSystem** context. Rules in this component will be run in both contexts.
 
