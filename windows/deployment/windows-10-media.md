@@ -9,6 +9,7 @@ manager: aaroncz
 ms.author: frankroj
 author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 volume license media
