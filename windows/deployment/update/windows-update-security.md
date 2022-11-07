@@ -3,7 +3,7 @@ title: Windows Update security
 ms.reviewer: 
 manager: aaroncz
 description: Overview of the security for Windows Update.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
