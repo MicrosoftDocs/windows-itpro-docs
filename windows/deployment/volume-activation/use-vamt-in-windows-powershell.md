@@ -2,11 +2,11 @@
 title: Use VAMT in Windows PowerShell (Windows 10)
 description: Learn how to use Volume Activation Management Tool (VAMT) PowerShell cmdlets to perform the same functions as the Vamt.exe command-line tool.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/25/2017
+author: frankroj
+ms.date: 11/07/2022
 ms.topic: article
 ms.technology: itpro-fundamentals
 ---
@@ -22,18 +22,18 @@ The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to p
 - In addition to PowerShell, you must import the VAMT PowerShell module. The module is included in the VAMT 3.0 folder after you install the Windows Assessment and Deployment Kit (Windows ADK).
 
 **To prepare the VAMT PowerShell environment**
-- To open PowerShell with administrative credentials, click **Start** and type “PowerShell” to locate the program. Right-click **Windows PowerShell**, and then click **Run as administrator**. To open PowerShell in Windows 7, click **Start**, click **All Programs**, click **Accessories**, click **Windows PowerShell**, right-click **Windows PowerShell**, and then click **Run as administrator**.
+- To open PowerShell with administrative credentials, click **Start** and type "PowerShell" to locate the program. Right-click **Windows PowerShell**, and then click **Run as administrator**. To open PowerShell in Windows 7, click **Start**, click **All Programs**, click **Accessories**, click **Windows PowerShell**, right-click **Windows PowerShell**, and then click **Run as administrator**.
 
-  **Important**  
-  If you are using a computer that has an 64-bit processor, select **Windows PowerShell (x86)**. VAMT PowerShell cmdlets are supported for the x86 architecture only. You must use an x86 version of Windows PowerShell to import the VAMT module, which are available in these directories:
-  -   The x86 version of PowerShell is available in C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe
-  -   The x86 version of the PowerShell ISE is available in C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell\_ise.exe
+  > [!IMPORTANT]  
+  > If you are using a computer that has an 64-bit processor, select **Windows PowerShell (x86)**. VAMT PowerShell cmdlets are supported for the x86 architecture only. You must use an x86 version of Windows PowerShell to import the VAMT module, which are available in these directories:
+  - The x86 version of PowerShell is available in C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe
+  - The x86 version of the PowerShell ISE is available in C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell\_ise.exe
 - For all supported operating systems you can use the VAMT PowerShell module included with the Windows ADK. By default, the module is installed with the Windows ADK in the VAMT folder. Change directories to the directory where VAMT is located.
 
   For example, if the Windows ADK is installed in the default location of `C:\Program Files(x86)\Windows Kits\10`, type:
     
   ``` powershell
-  cd “C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0”
+  cd "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0"
   ```
 - Import the VAMT PowerShell module. To import the module, type the following at a command prompt:
   ``` powershell

@@ -2,11 +2,11 @@
 title: Manage Product Keys (Windows 10)
 description: In this article, learn how to add and remove a product key from the Volume Activation Management Tool (VAMT).
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/25/2017
+author: frankroj
+ms.date: 11/07/2022
 ms.topic: article
 ms.technology: itpro-fundamentals
 ---

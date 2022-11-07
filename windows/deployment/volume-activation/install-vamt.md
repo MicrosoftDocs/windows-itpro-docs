@@ -1,12 +1,12 @@
 ---
 title: Install VAMT (Windows 10)
 description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.localizationpriority: medium
-ms.date: 03/11/2019
+ms.date: 11/07/2022
 ms.topic: article
 ms.technology: itpro-fundamentals
 ---
@@ -17,10 +17,10 @@ This topic describes how to install the Volume Activation Management Tool (VAMT)
 
 ## Install VAMT
 
-You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 
 >[!IMPORTANT]
->VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products’ license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you do not have administrator privileges, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator. 
+>VAMT requires local administrator privileges on all managed computers in order to deposit confirmation IDs (CIDs), get the client products' license status, and install product keys. If VAMT is being used to manage products and product keys on the local host computer and you do not have administrator privileges, start VAMT with elevated privileges. For best results when using Active Directory-based activation, we recommend running VAMT while logged on as a domain administrator. 
 
 >[!NOTE]
 >The VAMT Microsoft Management Console snap-in ships as an x86 package. 
@@ -78,9 +78,9 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 To uninstall VAMT using the **Programs and Features** Control Panel:
 
-1.  Open **Control Panel** and select **Programs and Features**.
+1. Open **Control Panel** and select **Programs and Features**.
 
-2.  Select **Assessment and Deployment Kit** from the list of installed programs and click **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
+2. Select **Assessment and Deployment Kit** from the list of installed programs and click **Change**. Follow the instructions in the Windows ADK installer to remove VAMT.
 
 
  

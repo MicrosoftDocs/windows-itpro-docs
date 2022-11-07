@@ -2,12 +2,12 @@
 title: Introduction to VAMT (Windows 10)
 description: VAMT enables administrators to automate and centrally manage the Windows, Microsoft Office, and select other Microsoft products volume and retail activation process.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
-author: aczechowski
-ms.date: 09/16/2022
+author: frankroj
+ms.date: 11/07/2022
 ms.topic: overview
 ---
 
