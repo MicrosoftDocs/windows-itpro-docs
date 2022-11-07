@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_FolderRedirection.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/02/2020
 ms.reviewer: 
@@ -17,13 +17,13 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_FolderRedirection policies  
+## ADMX_FolderRedirection policies
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <dl>
@@ -54,7 +54,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-disablefradminpin"></a>**ADMX_FolderRedirection/DisableFRAdminPin**  
+<a href="" id="admx-folderredirection-disablefradminpin"></a>**ADMX_FolderRedirection/DisableFRAdminPin**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -81,12 +81,12 @@ manager: aaroncz
 <!--Description-->
 This policy setting allows you to control whether all redirected shell folders, such as Contacts, Documents, Desktop, Favorites, Music, Pictures, Videos, Start Menu, and AppData\Roaming, are available offline by default.
 
-If you enable this policy setting, users must manually select the files they wish to make available offline.  
+If you enable this policy setting, users must manually select the files they wish to make available offline.
 
-If you disable or don't configure this policy setting, redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.  
+If you disable or don't configure this policy setting, redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
 
 > [!NOTE]
-> This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.  
+> This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
 >
 > Don't enable this policy setting if users will need access to their redirected files if the network or server holding the redirected files becomes unavailable.
 >
@@ -95,7 +95,7 @@ If you disable or don't configure this policy setting, redirected shell folders 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not automatically make all redirected folders available offline*
 -   GP name: *DisableFRAdminPin*
 -   GP path: *System/Folder Redirection*
@@ -106,7 +106,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-disablefradminpinbyfolder"></a>**ADMX_FolderRedirection/DisableFRAdminPinByFolder**  
+<a href="" id="admx-folderredirection-disablefradminpinbyfolder"></a>**ADMX_FolderRedirection/DisableFRAdminPinByFolder**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -145,7 +145,7 @@ If you disable or don't configure this policy setting, all redirected shell fold
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not automatically make specific redirected folders available offline*
 -   GP name: *DisableFRAdminPinByFolder*
 -   GP path: *System/Folder Redirection*
@@ -156,7 +156,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-folderredirectionenablecacherename"></a>**ADMX_FolderRedirection/FolderRedirectionEnableCacheRename**  
+<a href="" id="admx-folderredirection-folderredirectionenablecacherename"></a>**ADMX_FolderRedirection/FolderRedirectionEnableCacheRename**
 
 <!--SupportedSKUs-->
 
@@ -191,7 +191,7 @@ If you disable or don't configure this policy setting, when the path to a redire
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable optimized move of contents in Offline Files cache on Folder Redirection server path change*
 -   GP name: *FolderRedirectionEnableCacheRename*
 -   GP path: *System/Folder Redirection*
@@ -202,7 +202,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-localizexprelativepaths-1"></a>**ADMX_FolderRedirection/LocalizeXPRelativePaths_1**  
+<a href="" id="admx-folderredirection-localizexprelativepaths-1"></a>**ADMX_FolderRedirection/LocalizeXPRelativePaths_1**
 
 <!--SupportedSKUs-->
 
@@ -240,7 +240,7 @@ If you disable or not configure this policy setting, Windows Vista, Windows 7, W
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use localized subfolder names when redirecting Start Menu and My Documents*
 -   GP name: *LocalizeXPRelativePaths_1*
 -   GP path: *System/Folder Redirection*
@@ -251,7 +251,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-localizexprelativepaths-2"></a>**ADMX_FolderRedirection/LocalizeXPRelativePaths_2**  
+<a href="" id="admx-folderredirection-localizexprelativepaths-2"></a>**ADMX_FolderRedirection/LocalizeXPRelativePaths_2**
 
 <!--SupportedSKUs-->
 
@@ -289,7 +289,7 @@ If you disable or not configure this policy setting, Windows Vista, Windows 7, W
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use localized subfolder names when redirecting Start Menu and My Documents*
 -   GP name: *LocalizeXPRelativePaths_2*
 -   GP path: *System/Folder Redirection*
@@ -300,7 +300,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-primarycomputer-fr-1"></a>**ADMX_FolderRedirection/PrimaryComputer_FR_1**  
+<a href="" id="admx-folderredirection-primarycomputer-fr-1"></a>**ADMX_FolderRedirection/PrimaryComputer_FR_1**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -339,7 +339,7 @@ If you disable or don't configure this policy setting and the user has redirecte
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Redirect folders on primary computers only*
 -   GP name: *PrimaryComputer_FR_1*
 -   GP path: *System/Folder Redirection*
@@ -350,7 +350,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-folderredirection-primarycomputer-fr-2"></a>**ADMX_FolderRedirection/PrimaryComputer_FR_2**  
+<a href="" id="admx-folderredirection-primarycomputer-fr-2"></a>**ADMX_FolderRedirection/PrimaryComputer_FR_2**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -390,7 +390,7 @@ If you disable or don't configure this policy setting and the user has redirecte
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Redirect folders on primary computers only*
 -   GP name: *PrimaryComputer_FR_2*
 -   GP path: *System/Folder Redirection*

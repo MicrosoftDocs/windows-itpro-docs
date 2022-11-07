@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_PeerToPeerCaching.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/16/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_PeerToPeerCaching
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_PeerToPeerCaching policies  
+## ADMX_PeerToPeerCaching policies
 
 <dl>
   <dd>
@@ -59,7 +59,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-enablewindowsbranchcache"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache**  
+<a href="" id="admx-peertopeercaching-enablewindowsbranchcache"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache**
 
 <!--SupportedSKUs-->
 
@@ -85,7 +85,7 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether BranchCache is enabled on client computers to which this policy is applied. In addition to this policy setting, you must specify whether the client computers are hosted cache mode or distributed cache mode clients. To do so, configure one of the following policy settings: 
+This policy setting specifies whether BranchCache is enabled on client computers to which this policy is applied. In addition to this policy setting, you must specify whether the client computers are hosted cache mode or distributed cache mode clients. To do so, configure one of the following policy settings:
 
 - Set BranchCache Distributed Cache mode
 - Set BranchCache Hosted Cache mode
@@ -104,7 +104,7 @@ For policy configuration, select one of the following options:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on BranchCache*
 -   GP name: *EnableWindowsBranchCache*
 -   GP path: *Network\BranchCache*
@@ -115,7 +115,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-distributed"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_Distributed**  
+<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-distributed"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_Distributed**
 
 <!--SupportedSKUs-->
 
@@ -158,7 +158,7 @@ For policy configuration, select one of the following options:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set BranchCache Distributed Cache mode*
 -   GP name: *EnableWindowsBranchCache_Distributed*
 -   GP path: *Network\BranchCache*
@@ -169,7 +169,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-hosted"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_Hosted**  
+<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-hosted"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_Hosted**
 
 <!--SupportedSKUs-->
 
@@ -207,7 +207,7 @@ For policy configuration, select one of the following options:
 
 In circumstances where this setting is enabled, you can also select and configure the following option:
 
-- Type the name of the hosted cache server. Specifies the computer name of the hosted cache server. Because the hosted cache server name is also specified in the certificate enrolled to the hosted cache server, the name that you enter here must match the name of the hosted cache server that is specified in the server certificate. 
+- Type the name of the hosted cache server. Specifies the computer name of the hosted cache server. Because the hosted cache server name is also specified in the certificate enrolled to the hosted cache server, the name that you enter here must match the name of the hosted cache server that is specified in the server certificate.
 
 Hosted cache clients must trust the server certificate that is issued to the hosted cache server. Ensure that the issuing CA certificate is installed in the Trusted Root Certification Authorities certificate store on all hosted cache client computers.
 
@@ -218,7 +218,7 @@ Hosted cache clients must trust the server certificate that is issued to the hos
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set BranchCache Hosted Cache mode*
 -   GP name: *EnableWindowsBranchCache_Hosted*
 -   GP path: *Network\BranchCache*
@@ -229,7 +229,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-hostedcachediscovery"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_HostedCacheDiscovery**  
+<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-hostedcachediscovery"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_HostedCacheDiscovery**
 
 <!--SupportedSKUs-->
 
@@ -267,7 +267,7 @@ If the policy setting "Set BranchCache Distributed Cache Mode" is applied in add
 
 If the policy setting "Set BranchCache Hosted Cache Mode" is applied, the client computer doesn't perform automatically hosted cache discovery. This restriction is also true in cases where the policy setting "Configure Hosted Cache Servers" is applied.
 
-This policy setting can only be applied to client computers that are running at least Windows 8. This policy has no effect on computers that are running Windows 7 or Windows Vista.  
+This policy setting can only be applied to client computers that are running at least Windows 8. This policy has no effect on computers that are running Windows 7 or Windows Vista.
 
 If you disable, or don't configure this setting, a client won't attempt to discover hosted cache servers by service connection point.
 
@@ -281,7 +281,7 @@ For policy configuration, select one of the following options:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Automatic Hosted Cache Discovery by Service Connection Point*
 -   GP name: *EnableWindowsBranchCache_HostedCacheDiscovery*
 -   GP path: *Network\BranchCache*
@@ -292,7 +292,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-hostedmultipleservers"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_HostedMultipleServers**  
+<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-hostedmultipleservers"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_HostedMultipleServers**
 
 <!--SupportedSKUs-->
 
@@ -340,7 +340,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Hosted Cache Servers*
 -   GP name: *EnableWindowsBranchCache_HostedMultipleServers*
 -   GP path: *Network\BranchCache*
@@ -351,7 +351,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-smb"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_SMB**  
+<a href="" id="admx-peertopeercaching-enablewindowsbranchcache-smb"></a>**ADMX_PeerToPeerCaching/EnableWindowsBranchCache_SMB**
 
 <!--SupportedSKUs-->
 
@@ -393,7 +393,7 @@ In circumstances where this policy setting is enabled, you can also select and c
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure BranchCache for network files*
 -   GP name: *EnableWindowsBranchCache_SMB*
 -   GP path: *Network\BranchCache*
@@ -404,7 +404,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-setcachepercent"></a>**ADMX_PeerToPeerCaching/SetCachePercent**  
+<a href="" id="admx-peertopeercaching-setcachepercent"></a>**ADMX_PeerToPeerCaching/SetCachePercent**
 
 <!--SupportedSKUs-->
 
@@ -453,7 +453,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set percentage of disk space used for client computer cache*
 -   GP name: *SetCachePercent*
 -   GP path: *Network\BranchCache*
@@ -464,7 +464,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-setdatacacheentrymaxage"></a>**ADMX_PeerToPeerCaching/SetDataCacheEntryMaxAge**  
+<a href="" id="admx-peertopeercaching-setdatacacheentrymaxage"></a>**ADMX_PeerToPeerCaching/SetDataCacheEntryMaxAge**
 
 <!--SupportedSKUs-->
 
@@ -510,7 +510,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set age for segments in the data cache*
 -   GP name: *SetDataCacheEntryMaxAge*
 -   GP path: *Network\BranchCache*
@@ -521,7 +521,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-peertopeercaching-setdowngrading"></a>**ADMX_PeerToPeerCaching/SetDowngrading**  
+<a href="" id="admx-peertopeercaching-setdowngrading"></a>**ADMX_PeerToPeerCaching/SetDowngrading**
 
 <!--SupportedSKUs-->
 
@@ -570,7 +570,7 @@ Select from the following versions
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Client BranchCache Version Support*
 -   GP name: *SetDowngrading*
 -   GP path: *Network\BranchCache*

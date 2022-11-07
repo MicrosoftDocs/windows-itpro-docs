@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Thumbnails.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/25/2020
 ms.reviewer: 
@@ -17,19 +17,19 @@ manager: aaroncz
 <hr/>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--Policies-->
-## ADMX_Thumbnails policies  
+## ADMX_Thumbnails policies
 
 <dl>
   <dd>
     <a href="#admx-thumbnails-disablethumbnails">ADMX_Thumbnails/DisableThumbnails</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="#admx-thumbnails-disablethumbnailsonnetworkfolders">ADMX_Thumbnails/DisableThumbnailsOnNetworkFolders</a>
   </dd>
@@ -41,7 +41,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-thumbnails-disablethumbnails"></a>**ADMX_Thumbnails/DisableThumbnails**  
+<a href="" id="admx-thumbnails-disablethumbnails"></a>**ADMX_Thumbnails/DisableThumbnails**
 
 <!--SupportedSKUs-->
 
@@ -69,7 +69,7 @@ manager: aaroncz
 <!--Description-->
 This policy setting allows you to configure how File Explorer displays thumbnail images or icons on the local computer.
 
-File Explorer displays thumbnail images by default. 
+File Explorer displays thumbnail images by default.
 
 If you enable this policy setting, File Explorer displays only icons and never displays thumbnail images.
 
@@ -78,7 +78,7 @@ If you disable or do not configure this policy setting, File Explorer displays o
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the display of thumbnails and only display icons.*
 -   GP name: *DisableThumbnails*
 -   GP path: *Windows Components\File Explorer*
@@ -89,7 +89,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-thumbnails-disablethumbnailsonnetworkfolders"></a>**ADMX_Thumbnails/DisableThumbnailsOnNetworkFolders**  
+<a href="" id="admx-thumbnails-disablethumbnailsonnetworkfolders"></a>**ADMX_Thumbnails/DisableThumbnailsOnNetworkFolders**
 
 <!--SupportedSKUs-->
 
@@ -126,7 +126,7 @@ If you disable or do not configure this policy setting, File Explorer displays o
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the display of thumbnails and only display icons on network folders*
 -   GP name: *DisableThumbnailsOnNetworkFolders*
 -   GP path: *Windows Components\File Explorer*
@@ -137,7 +137,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-thumbnails-disablethumbsdbonnetworkfolders"></a>**ADMX_Thumbnails/DisableThumbsDBOnNetworkFolders**  
+<a href="" id="admx-thumbnails-disablethumbsdbonnetworkfolders"></a>**ADMX_Thumbnails/DisableThumbsDBOnNetworkFolders**
 
 <!--SupportedSKUs-->
 
@@ -172,9 +172,9 @@ If you enable this policy setting, File Explorer does not create, read from, or 
 If you disable or do not configure this policy setting, File Explorer creates, reads from, and writes to thumbs.db files.
 
 <!--/Description-->
-> 
+>
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off the caching of thumbnails in hidden thumbs.db files*
 -   GP name: *DisableThumbsDBOnNetworkFolders*
 -   GP path: *Windows Components\File Explorer*

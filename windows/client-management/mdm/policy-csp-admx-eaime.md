@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_EAIME.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/19/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_EAIME
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_EAIME policies  
+## ADMX_EAIME policies
 
 <dl>
   <dd>
@@ -69,7 +69,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-donotincludenonpublishingstandardglyphinthecandidatelist"></a>**ADMX_EAIME/L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList**  
+<a href="" id="admx-eaime-l-donotincludenonpublishingstandardglyphinthecandidatelist"></a>**ADMX_EAIME/L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList**
 
 <!--SupportedSKUs-->
 
@@ -110,7 +110,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not include Non-Publishing Standard Glyph in the candidate list*
 -   GP name: *L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList*
 -   GP path: *Windows Components\IME*
@@ -121,7 +121,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-restrictcharactercoderangeofconversion"></a>**ADMX_EAIME/L_RestrictCharacterCodeRangeOfConversion**  
+<a href="" id="admx-eaime-l-restrictcharactercoderangeofconversion"></a>**ADMX_EAIME/L_RestrictCharacterCodeRangeOfConversion**
 
 <!--SupportedSKUs-->
 
@@ -174,7 +174,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict character code range of conversion*
 -   GP name: *L_RestrictCharacterCodeRangeOfConversion*
 -   GP path: *Windows Components\IME*
@@ -185,7 +185,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoffcustomdictionary"></a>**ADMX_EAIME/L_TurnOffCustomDictionary**  
+<a href="" id="admx-eaime-l-turnoffcustomdictionary"></a>**ADMX_EAIME/L_TurnOffCustomDictionary**
 
 <!--SupportedSKUs-->
 
@@ -228,7 +228,7 @@ This policy setting is applied to Japanese Microsoft IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off custom dictionary*
 -   GP name: *L_TurnOffCustomDictionary*
 -   GP path: *Windows Components\IME*
@@ -239,7 +239,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoffhistorybasedpredictiveinput"></a>**ADMX_EAIME/L_TurnOffHistorybasedPredictiveInput**  
+<a href="" id="admx-eaime-l-turnoffhistorybasedpredictiveinput"></a>**ADMX_EAIME/L_TurnOffHistorybasedPredictiveInput**
 
 <!--SupportedSKUs-->
 
@@ -279,7 +279,7 @@ This policy setting applies to Japanese Microsoft IME only.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off history-based predictive input*
 -   GP name: *L_TurnOffHistorybasedPredictiveInput*
 -   GP path: *Windows Components\IME*
@@ -290,7 +290,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoffinternetsearchintegration"></a>**ADMX_EAIME/L_TurnOffInternetSearchIntegration**  
+<a href="" id="admx-eaime-l-turnoffinternetsearchintegration"></a>**ADMX_EAIME/L_TurnOffInternetSearchIntegration**
 
 <!--SupportedSKUs-->
 
@@ -333,7 +333,7 @@ This policy setting applies to Japanese Microsoft IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Internet search integration*
 -   GP name: *L_TurnOffInternetSearchIntegration*
 -   GP path: *Windows Components\IME*
@@ -344,7 +344,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoffopenextendeddictionary"></a>**ADMX_EAIME/L_TurnOffOpenExtendedDictionary**  
+<a href="" id="admx-eaime-l-turnoffopenextendeddictionary"></a>**ADMX_EAIME/L_TurnOffOpenExtendedDictionary**
 
 <!--SupportedSKUs-->
 
@@ -384,7 +384,7 @@ This policy setting is applied to Japanese Microsoft IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Open Extended Dictionary*
 -   GP name: *L_TurnOffOpenExtendedDictionary*
 -   GP path: *Windows Components\IME*
@@ -395,7 +395,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoffsavingautotuningdatatofile"></a>**ADMX_EAIME/L_TurnOffSavingAutoTuningDataToFile**  
+<a href="" id="admx-eaime-l-turnoffsavingautotuningdatatofile"></a>**ADMX_EAIME/L_TurnOffSavingAutoTuningDataToFile**
 
 <!--SupportedSKUs-->
 
@@ -433,7 +433,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off saving auto-tuning data to file*
 -   GP name: *L_TurnOffSavingAutoTuningDataToFile*
 -   GP path: *Windows Components\IME*
@@ -444,7 +444,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoncloudcandidate"></a>**ADMX_EAIME/L_TurnOnCloudCandidate**  
+<a href="" id="admx-eaime-l-turnoncloudcandidate"></a>**ADMX_EAIME/L_TurnOnCloudCandidate**
 
 <!--SupportedSKUs-->
 
@@ -484,7 +484,7 @@ This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on cloud candidate*
 -   GP name: *L_TurnOnCloudCandidate*
 -   GP path: *Windows Components\IME*
@@ -495,7 +495,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnoncloudcandidatechs"></a>**ADMX_EAIME/L_TurnOnCloudCandidateCHS**  
+<a href="" id="admx-eaime-l-turnoncloudcandidatechs"></a>**ADMX_EAIME/L_TurnOnCloudCandidateCHS**
 
 <!--SupportedSKUs-->
 
@@ -535,7 +535,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on cloud candidate for CHS*
 -   GP name: *L_TurnOnCloudCandidateCHS*
 -   GP path: *Windows Components\IME*
@@ -546,7 +546,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnonlexiconupdate"></a>**ADMX_EAIME/L_TurnOnLexiconUpdate**  
+<a href="" id="admx-eaime-l-turnonlexiconupdate"></a>**ADMX_EAIME/L_TurnOnLexiconUpdate**
 
 <!--SupportedSKUs-->
 
@@ -586,7 +586,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on lexicon update*
 -   GP name: *L_TurnOnLexiconUpdate*
 -   GP path: *Windows Components\IME*
@@ -597,7 +597,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnonlivestickers"></a>**ADMX_EAIME/L_TurnOnLiveStickers**  
+<a href="" id="admx-eaime-l-turnonlivestickers"></a>**ADMX_EAIME/L_TurnOnLiveStickers**
 
 <!--SupportedSKUs-->
 
@@ -637,7 +637,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Live Sticker*
 -   GP name: *L_TurnOnLiveStickers*
 -   GP path: *Windows Components\IME*
@@ -648,7 +648,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eaime-l-turnonmisconversionloggingformisconversionreport"></a>**ADMX_EAIME/L_TurnOnMisconversionLoggingForMisconversionReport**  
+<a href="" id="admx-eaime-l-turnonmisconversionloggingformisconversionreport"></a>**ADMX_EAIME/L_TurnOnMisconversionLoggingForMisconversionReport**
 
 <!--SupportedSKUs-->
 
@@ -686,7 +686,7 @@ This policy setting applies to Japanese Microsoft IME and Traditional Chinese IM
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on misconversion logging for misconversion report*
 -   GP name: *L_TurnOnMisconversionLoggingForMisconversionReport*
 -   GP path: *Windows Components\IME*

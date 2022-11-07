@@ -5,8 +5,8 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article

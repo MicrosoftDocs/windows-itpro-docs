@@ -4,11 +4,12 @@ description: After you have configured Key Management Service (KMS) or Active Di
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Activate clients running Windows 10

@@ -4,11 +4,12 @@ description: Learn to use the Volume Activation Management Tool (VAMT) to instal
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Install a KMS Client Key

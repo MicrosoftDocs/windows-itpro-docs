@@ -4,9 +4,10 @@ description: Plan, collect, and prepare your source computer for migration using
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Getting Started with the User State Migration Tool (USMT)

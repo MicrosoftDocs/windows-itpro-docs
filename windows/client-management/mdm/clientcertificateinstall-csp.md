@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/30/2021
 ---
@@ -77,18 +77,18 @@ ClientCertificateInstall
 ------------RespondentServerUrl
 ```
 
-<a href="" id="device-or-user"></a>**Device or User**  
+<a href="" id="device-or-user"></a>**Device or User**
 For device certificates, use <strong>./Device/Vendor/MSFT</strong> path and for user certificates use <strong>./User/Vendor/MSFT</strong> path.
 
-<a href="" id="clientcertificateinstall"></a>**ClientCertificateInstall**  
+<a href="" id="clientcertificateinstall"></a>**ClientCertificateInstall**
 The root node for the ClientCertificateInstaller configuration service provider.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall"></a>**ClientCertificateInstall/PFXCertInstall**  
+<a href="" id="clientcertificateinstall-pfxcertinstall"></a>**ClientCertificateInstall/PFXCertInstall**
 Required for PFX certificate installation. The parent node grouping the PFX certificate related settings.
 
 Supported operation is Get.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid"></a>**ClientCertificateInstall/PFXCertInstall/**<strong>*UniqueID*</strong>  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid"></a>**ClientCertificateInstall/PFXCertInstall/**<strong>*UniqueID*</strong>
 Required for PFX certificate installation. A unique ID to differentiate different certificate install requests.
 
 The data type format is node.
@@ -97,12 +97,12 @@ Supported operations are Get, Add, and Replace.
 
 Calling Delete on this node should delete the certificates and the keys that were installed by the corresponding PFX blob.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-keylocation"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/KeyLocation**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-keylocation"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/KeyLocation**
 Required for PFX certificate installation. Indicates the KeyStorage provider to target the private key installation to.
 
 Supported operations are Get, Add, and Replace.
 
-The data type is an integer corresponding to one of the following values:  
+The data type is an integer corresponding to one of the following values:
 
 | Value | Description                                                                                                   |
 |-------|---------------------------------------------------------------------------------------------------------------|
@@ -111,14 +111,14 @@ The data type is an integer corresponding to one of the following values:
 | 3     | Install to software.                                                                                          |
 | 4     | Install to Windows Hello for Business (formerly known as Microsoft Passport for Work) whose name is specified. |
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-containername"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/ContainerName**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-containername"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/ContainerName**
 Optional. Specifies the Windows Hello for Business (formerly known as Microsoft Passport for Work) container name (if Windows Hello for Business storage provider (KSP) is chosen for the KeyLocation). If this node isn't specified when Windows Hello for Business KSP is chosen, enrollment will fail.
 
 Date type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertBlob**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertBlob**
 CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This Add operation requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before the Add operation is called. This trigger for addition also sets the Status node to the current Status of the operation.
 
 The data type format is binary.
@@ -131,14 +131,14 @@ If Add is called on this node for a new PFX, the certificate will be added. When
 
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in [CRYPT\_INTEGER\_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)).
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**
 Password that protects the PFX blob. This is required if the PFX is password protected.
 
 Data Type is a string.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptiontype"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionType**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptiontype"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionType**
 Optional. Used to specify whether the PFX certificate password is encrypted with the MDM certificate by the MDM server.
 
 The data type is int. Valid values:
@@ -151,7 +151,7 @@ When PFXCertPasswordEncryptionType =2, you must specify the store name in PFXCer
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxkeyexportable"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXKeyExportable**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxkeyexportable"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXKeyExportable**
 Optional. Used to specify if the private key installed is exportable (and can be exported later). The PFX isn't exportable when it's installed to TPM.
 
 > [!Note]
@@ -161,37 +161,37 @@ The data type bool.
 
 Supported operations are Get, Add, and Replace.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-thumbprint"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/Thumbprint**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-thumbprint"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/Thumbprint**
 Returns the thumbprint of the installed PFX certificate.
 
 The datatype is a string.
 
 Supported operation is Get.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-status"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/Status**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-status"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/Status**
 Required. Returns the error code of the PFX installation from the GetLastError command called after the PfxImportCertStore.
 
 Data type is an integer.
 
 Supported operation is Get.
 
-<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptionstore"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionStore**  
+<a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpasswordencryptionstore"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPasswordEncryptionStore**
 Added in Windows 10, version 1511. When PFXCertPasswordEncryptionType = 2, it specifies the store name of the certificate used for decrypting the PFXCertPassword.
 
 Data type is string.
 
 Supported operations are Add, Get, and Replace.
 
-<a href="" id="clientcertificateinstall-scep"></a>**ClientCertificateInstall/SCEP**  
+<a href="" id="clientcertificateinstall-scep"></a>**ClientCertificateInstall/SCEP**
 Node for SCEP.
 
 > [!Note]
 > An alert is sent after the SCEP certificate is installed.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid"></a>**ClientCertificateInstall/SCEP/**<strong>*UniqueID*</strong>  
+<a href="" id="clientcertificateinstall-scep-uniqueid"></a>**ClientCertificateInstall/SCEP/**<strong>*UniqueID*</strong>
 A unique ID to differentiate different certificate installation requests.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install**
 A node required for SCEP certificate enrollment. Parent node to group SCEP cert installation related requests.
 
 Supported operations are Get, Add, Replace, and Delete.
@@ -199,29 +199,29 @@ Supported operations are Get, Add, Replace, and Delete.
 > [!Note]
 > Although the child nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and ensure the device isn't at an unknown state before changing child node values.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-serverurl"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ServerURL**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-serverurl"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ServerURL**
 Required for SCEP certificate enrollment. Specifies the certificate enrollment server. Multiple server URLs can be listed, separated by semicolons.
 
 Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-challenge"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Challenge**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-challenge"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Challenge**
 Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge. Challenge is deleted shortly after the Exec command is accepted.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-ekumapping"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/EKUMapping**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-ekumapping"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/EKUMapping**
 Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs is separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
 
 Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectname"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectName**  
-Required. Specifies the subject name. 
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectname"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectName**
+Required. Specifies the subject name.
 
 The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”).
 
@@ -231,13 +231,13 @@ Data type is string.
 
 Supported operations are Add, Get, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-keyprotection"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyProtection**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-keyprotection"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyProtection**
 Optional. Specifies where to keep the private key.
 
 > [!Note]
 > Even if the private key is protected by TPM, it isn't protected with a TPM PIN.
 
-The data type is an integer corresponding to one of the following values:  
+The data type is an integer corresponding to one of the following values:
 
 | Value | Description  |
 |---|---|
@@ -248,14 +248,14 @@ The data type is an integer corresponding to one of the following values:
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-keyusage"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyUsage**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-keyusage"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyUsage**
 Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have second (0x20) or forth (0x80) or both bits set. If the value doesn’t have those bits set, configuration will fail.
 
 Data type is int.
 
-Supported operations are Add, Get, Delete, and Replace. 
+Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-retrydelay"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryDelay**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-retrydelay"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryDelay**
 Optional. When the SCEP server sends a pending status, this value specifies the device retry waiting time in minutes.
 
 Data type format is an integer.
@@ -266,7 +266,7 @@ The minimum value is 1.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-retrycount"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryCount**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-retrycount"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryCount**
 Optional. Unique to SCEP. Specifies the device retry times when the SCEP server sends a pending status.
 
 Data type is integer.
@@ -279,7 +279,7 @@ Minimum value is 0, which indicates no retry.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-templatename"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/TemplateName**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-templatename"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/TemplateName**
 Optional. OID of certificate template name.
 
 > [!Note]
@@ -289,7 +289,7 @@ Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-keylength"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyLength**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-keylength"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyLength**
 Required for enrollment. Specify private key length (RSA).
 
 Data type is integer.
@@ -300,7 +300,7 @@ For Windows Hello for Business (formerly known as Microsoft Passport for Work) ,
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-hashalgorithm"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/HashAlgorithm**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-hashalgorithm"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/HashAlgorithm**
 Required. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated with <strong>+</strong>.
 
 For Windows Hello for Business, only SHA256 is the supported algorithm.
@@ -309,14 +309,14 @@ Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-cathumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CAThumbprint**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-cathumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CAThumbprint**
 Required. Specifies Root CA thumbprint. This thumbprint is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates the SCEP server, it checks the CA certificate from the SCEP server to verify a match with this certificate. If it isn't a match, the authentication will fail.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectalternativenames"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectAlternativeNames**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectalternativenames"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectAlternativeNames**
 Optional. Specifies subject alternative names (SAN). Multiple alternative names can be specified by this node. Each name is the combination of name format+actual name. For more information, see the name type definitions in MSDN.
 
 Each pair is separated by semicolon. For example, multiple SANs are presented in the format of <em>[name format1]</em>+<em>[actual name1]</em>;<em>[name format 2]</em>+<em>[actual name2]</em>.
@@ -325,7 +325,7 @@ Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiod"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriod**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiod"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriod**
 Optional. Specifies the units for the valid certificate period.
 
 Data type is string.
@@ -341,8 +341,8 @@ Valid values are:
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**  
-Optional. Specifies the desired number of units used in the validity period. This number is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node. 
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**
+Optional. Specifies the desired number of units used in the validity period. This number is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node.
 
 > [!Note]
 > The valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
@@ -354,35 +354,35 @@ Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-containername"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ContainerName**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-containername"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ContainerName**
 Optional. Specifies the Windows Hello for Business container name (if Windows Hello for Business KSP is chosen for the node). If this node isn't specified when Windows Hello for Business KSP is chosen, the enrollment will fail.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-customtexttoshowinprompt"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CustomTextToShowInPrompt**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-customtexttoshowinprompt"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CustomTextToShowInPrompt**
 Optional. Specifies the custom text to show on the Windows Hello for Business PIN prompt during certificate enrollment. The admin can choose to provide more contextual information in this field for why the user needs to enter the PIN and what the certificate will be used for.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-enroll"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Enroll**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-enroll"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Enroll**
 Required. Triggers the device to start the certificate enrollment. The device won't notify MDM server after certificate enrollment is done. The MDM server could later query the device to find out whether new certificate is added.
 
 The date type format is Null, meaning this node doesn’t contain a value.
 
 The only supported operation is Execute.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**
 Optional. Specify the Azure Active Directory Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-certthumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/CertThumbprint**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-certthumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/CertThumbprint**
 Optional. Specifies the current certificate’s thumbprint if certificate enrollment succeeds. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
 
 If the certificate on the device becomes invalid (Cert expired, Cert chain isn't valid, private key deleted) then it will return an empty string.
@@ -391,7 +391,7 @@ Data type is string.
 
 The only supported operation is Get.
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-status"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Status**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-status"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Status**
 Required. Specifies latest status of the certificated during the enrollment request.
 
 Data type is string. Valid values:
@@ -405,7 +405,7 @@ The only supported operation is Get.
 | 16    | Action failed                                                                                     |
 | 32    | Unknown                                                                                           |
 
-<a href="" id="clientcertificateinstall-scep-uniqueid-errorcode"></a>**ClientCertificateInstall/SCEP/*UniqueID*/ErrorCode**  
+<a href="" id="clientcertificateinstall-scep-uniqueid-errorcode"></a>**ClientCertificateInstall/SCEP/*UniqueID*/ErrorCode**
 Optional. An integer value that indicates the HRESULT of the last enrollment error code.
 
 The only supported operation is Get.
@@ -714,4 +714,4 @@ Add a PFX certificate. The PFX certificate password is encrypted with a custom c
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

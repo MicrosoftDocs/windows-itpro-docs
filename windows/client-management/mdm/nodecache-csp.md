@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -77,45 +77,45 @@ NodeCache
 ----------------ExpectedValue
 ----------------AutoSetExpectedValue
 ```
-<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**  
+<a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**
 Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This parameter's value is a predefined MIME type to identify this managed object in OMA DM syntax.
 
-<a href="" id="providerid"></a>***ProviderID***  
+<a href="" id="providerid"></a>***ProviderID***
 Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one **ProviderID** node under **NodeCache**. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
 
-<a href="" id="providerid-cacheversion"></a>***ProviderID*/CacheVersion**  
+<a href="" id="providerid-cacheversion"></a>***ProviderID*/CacheVersion**
 Optional. Character string representing the cache version set by the server. Scope is dynamic.
 
 Data type is string. Supported operations are Get, Add, and Replace.
 
-<a href="" id="providerid-changednodes"></a>***ProviderID*/ChangedNodes**  
+<a href="" id="providerid-changednodes"></a>***ProviderID*/ChangedNodes**
 Optional. List of nodes whose values don't match their expected values as specified in **/*NodeID*/ExpectedValue**. Scope is dynamic.
 
 Data type is string. Supported operation is Get.
 
-<a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**  
+<a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**
 Added in Windows 10, version 1703. Optional. XML containing nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 
 Supported operation is Get.
 
-<a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**  
+<a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**
 Required. Root node for cached nodes. Scope is dynamic.
 
 Supported operation is Get.
 
-<a href="" id="-nodes-nodeid"></a>**/Nodes/**<strong>*NodeID*</strong>  
+<a href="" id="-nodes-nodeid"></a>**/Nodes/**<strong>*NodeID*</strong>
 Optional. Information about each cached node is stored under *NodeID* as specified by the server. This value must not contain a comma. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
 
-<a href="" id="-nodeid-nodeuri"></a>**/*NodeID*/NodeURI**  
+<a href="" id="-nodeid-nodeuri"></a>**/*NodeID*/NodeURI**
 Required. This node's value is a complete OMA DM node URI. It can specify either an interior or leaf node in the device management tree. Scope is dynamic.
 
 Data type is string. Supported operations are Get, Add, and Delete.
 
-<a href="" id="-nodeid-expectedvalue"></a>**/*NodeID*/ExpectedValue**  
+<a href="" id="-nodeid-expectedvalue"></a>**/*NodeID*/ExpectedValue**
 Required. The server expects this value to be on the device. When the configuration service provider initiates a session, it checks the expected value against the node's actual value. Scope is dynamic. Supported values are string and x-nodemon-nonexistent.
 
 Supported operations are Get, Add, and Delete.
@@ -137,7 +137,7 @@ Here's an example for setting the ExpectedValue to nonexistent.
 </Add>
 ```
 
-<a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**  
+<a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**
 Added in Windows 10, version 1703. Required. This parameter's value automatically sets the value on the device to match the actual value of the node. The node is specified in NodeURI.
 
 Supported operations are Add, Get, and Delete.
@@ -402,11 +402,11 @@ The value inside of the node tag is the actual value returned by the Uri, which 
 ## Related topics
 
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)
 
- 
 
- 
+
+
 
 
 

@@ -3,8 +3,8 @@ title: Policy CSP - AppVirtualization
 description: Learn how the Policy CSP - AppVirtualization setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - AppVirtualization
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## AppVirtualization policies  
+## AppVirtualization policies
 
 <dl>
   <dd>
@@ -118,7 +118,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**  
+<a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**
 
 <!--SupportedSKUs-->
 
@@ -151,7 +151,7 @@ This policy setting allows you to enable or disable Microsoft Application Virtua
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable App-V Client*
 -   GP name: *EnableAppV*
 -   GP path: *System/App-V*
@@ -163,7 +163,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**  
+<a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**
 
 <!--SupportedSKUs-->
 
@@ -195,7 +195,7 @@ This policy enables Dynamic Virtualization of supported shell extensions, browse
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Dynamic Virtualization*
 -   GP name: *Virtualization_JITVEnable*
 -   GP path: *System/App-V/Virtualization*
@@ -207,7 +207,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowpackagecleanup"></a>**AppVirtualization/AllowPackageCleanup**  
+<a href="" id="appvirtualization-allowpackagecleanup"></a>**AppVirtualization/AllowPackageCleanup**
 
 <!--SupportedSKUs-->
 
@@ -239,7 +239,7 @@ Enables automatic cleanup of App-v packages that were added after Windows 10 ann
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable automatic cleanup of unused appv packages*
 -   GP name: *PackageManagement_AutoCleanupEnable*
 -   GP path: *System/App-V/PackageManagement*
@@ -251,7 +251,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**  
+<a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**
 
 <!--SupportedSKUs-->
 
@@ -283,7 +283,7 @@ This policy enables scripts defined in the package manifest of configuration fil
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Package Scripts*
 -   GP name: *Scripting_Enable_Package_Scripts*
 -   GP path: *System/App-V/Scripting*
@@ -295,7 +295,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**  
+<a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**
 
 <!--SupportedSKUs-->
 
@@ -326,7 +326,7 @@ This policy enables a UX to display to the user when a publishing refresh is per
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Publishing Refresh UX*
 -   GP name: *Enable_Publishing_Refresh_UX*
 -   GP path: *System/App-V/Publishing*
@@ -338,7 +338,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**  
+<a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**
 
 <!--SupportedSKUs-->
 
@@ -380,7 +380,7 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reporting Server*
 -   GP name: *Reporting_Server_Policy*
 -   GP path: *System/App-V/Reporting*
@@ -392,7 +392,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**  
+<a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**
 
 <!--SupportedSKUs-->
 
@@ -425,7 +425,7 @@ This policy specifies the file paths relative to %userprofile% that do not roam 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Roaming File Exclusions*
 -   GP name: *Integration_Roaming_File_Exclusions*
 -   GP path: *System/App-V/Integration*
@@ -437,7 +437,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowroamingregistryexclusions"></a>**AppVirtualization/AllowRoamingRegistryExclusions**  
+<a href="" id="appvirtualization-allowroamingregistryexclusions"></a>**AppVirtualization/AllowRoamingRegistryExclusions**
 
 <!--SupportedSKUs-->
 
@@ -470,7 +470,7 @@ This policy specifies the registry paths that do not roam with a user profile. E
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Roaming Registry Exclusions*
 -   GP name: *Integration_Roaming_Registry_Exclusions*
 -   GP path: *System/App-V/Integration*
@@ -482,7 +482,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**  
+<a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**
 
 <!--SupportedSKUs-->
 
@@ -514,7 +514,7 @@ This policy specifies how new packages should be loaded automatically by App-V o
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify what to load in background (also known as AutoLoad)*
 -   GP name: *Steaming_Autoload*
 -   GP path: *System/App-V/Streaming*
@@ -526,7 +526,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**  
+<a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**
 
 <!--SupportedSKUs-->
 
@@ -558,7 +558,7 @@ Migration mode allows the App-V client to modify shortcuts and FTAs for packages
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Migration Mode*
 -   GP name: *Client_Coexistence_Enable_Migration_mode*
 -   GP path: *System/App-V/Client Coexistence*
@@ -570,7 +570,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**  
+<a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**
 
 <!--SupportedSKUs-->
 
@@ -604,7 +604,7 @@ This policy specifies the location where symbolic links are created to the curre
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Integration Root User*
 -   GP name: *Integration_Root_User*
 -   GP path: *System/App-V/Integration*
@@ -616,7 +616,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**  
+<a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**
 
 <!--SupportedSKUs-->
 
@@ -649,7 +649,7 @@ This policy specifies the location where symbolic links are created to the curre
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Integration Root Global*
 -   GP name: *Integration_Root_Global*
 -   GP path: *System/App-V/Integration*
@@ -661,7 +661,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**  
+<a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**
 
 <!--SupportedSKUs-->
 
@@ -711,7 +711,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Publishing Server 1 Settings*
 -   GP name: *Publishing_Server1_Policy*
 -   GP path: *System/App-V/Publishing*
@@ -723,7 +723,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver2"></a>**AppVirtualization/PublishingAllowServer2**  
+<a href="" id="appvirtualization-publishingallowserver2"></a>**AppVirtualization/PublishingAllowServer2**
 
 <!--SupportedSKUs-->
 
@@ -773,7 +773,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Publishing Server 2 Settings*
 -   GP name: *Publishing_Server2_Policy*
 -   GP path: *System/App-V/Publishing*
@@ -785,7 +785,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver3"></a>**AppVirtualization/PublishingAllowServer3**  
+<a href="" id="appvirtualization-publishingallowserver3"></a>**AppVirtualization/PublishingAllowServer3**
 
 <!--SupportedSKUs-->
 
@@ -835,7 +835,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Publishing Server 3 Settings*
 -   GP name: *Publishing_Server3_Policy*
 -   GP path: *System/App-V/Publishing*
@@ -847,7 +847,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver4"></a>**AppVirtualization/PublishingAllowServer4**  
+<a href="" id="appvirtualization-publishingallowserver4"></a>**AppVirtualization/PublishingAllowServer4**
 
 <!--SupportedSKUs-->
 
@@ -897,7 +897,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Publishing Server 4 Settings*
 -   GP name: *Publishing_Server4_Policy*
 -   GP path: *System/App-V/Publishing*
@@ -909,7 +909,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver5"></a>**AppVirtualization/PublishingAllowServer5**  
+<a href="" id="appvirtualization-publishingallowserver5"></a>**AppVirtualization/PublishingAllowServer5**
 
 <!--SupportedSKUs-->
 
@@ -959,7 +959,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Publishing Server 5 Settings*
 -   GP name: *Publishing_Server5_Policy*
 -   GP path: *System/App-V/Publishing*
@@ -971,7 +971,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
+<a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**
 
 <!--SupportedSKUs-->
 
@@ -1003,7 +1003,7 @@ This policy specifies the path to a valid certificate in the certificate store.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Certificate Filter For Client SSL*
 -   GP name: *Streaming_Certificate_Filter_For_Client_SSL*
 -   GP path: *System/App-V/Streaming*
@@ -1015,7 +1015,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**  
+<a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**
 
 <!--SupportedSKUs-->
 
@@ -1047,7 +1047,7 @@ This setting controls whether virtualized applications are launched on Windows 8
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
 -   GP name: *Streaming_Allow_High_Cost_Launch*
 -   GP path: *System/App-V/Streaming*
@@ -1059,7 +1059,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**  
+<a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**
 
 <!--SupportedSKUs-->
 
@@ -1091,7 +1091,7 @@ This policy specifies the CLSID for a compatible implementation of the AppvPacka
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Location Provider*
 -   GP name: *Streaming_Location_Provider*
 -   GP path: *System/App-V/Streaming*
@@ -1103,7 +1103,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowpackageinstallationroot"></a>**AppVirtualization/StreamingAllowPackageInstallationRoot**  
+<a href="" id="appvirtualization-streamingallowpackageinstallationroot"></a>**AppVirtualization/StreamingAllowPackageInstallationRoot**
 
 <!--SupportedSKUs-->
 
@@ -1135,7 +1135,7 @@ This policy specifies directory where all new applications and updates will be i
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Package Installation Root*
 -   GP name: *Streaming_Package_Installation_Root*
 -   GP path: *System/App-V/Streaming*
@@ -1147,7 +1147,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowpackagesourceroot"></a>**AppVirtualization/StreamingAllowPackageSourceRoot**  
+<a href="" id="appvirtualization-streamingallowpackagesourceroot"></a>**AppVirtualization/StreamingAllowPackageSourceRoot**
 
 <!--SupportedSKUs-->
 
@@ -1179,7 +1179,7 @@ This policy overrides source location for downloading package content.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Package Source Root*
 -   GP name: *Streaming_Package_Source_Root*
 -   GP path: *System/App-V/Streaming*
@@ -1191,7 +1191,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowreestablishmentinterval"></a>**AppVirtualization/StreamingAllowReestablishmentInterval**  
+<a href="" id="appvirtualization-streamingallowreestablishmentinterval"></a>**AppVirtualization/StreamingAllowReestablishmentInterval**
 
 <!--SupportedSKUs-->
 
@@ -1223,7 +1223,7 @@ This policy specifies the number of seconds between attempts to reestablish a dr
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reestablishment Interval*
 -   GP name: *Streaming_Reestablishment_Interval*
 -   GP path: *System/App-V/Streaming*
@@ -1235,7 +1235,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingallowreestablishmentretries"></a>**AppVirtualization/StreamingAllowReestablishmentRetries**  
+<a href="" id="appvirtualization-streamingallowreestablishmentretries"></a>**AppVirtualization/StreamingAllowReestablishmentRetries**
 
 <!--SupportedSKUs-->
 
@@ -1267,7 +1267,7 @@ This policy specifies the number of times to retry a dropped session.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Reestablishment Retries*
 -   GP name: *Streaming_Reestablishment_Retries*
 -   GP path: *System/App-V/Streaming*
@@ -1279,7 +1279,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingsharedcontentstoremode"></a>**AppVirtualization/StreamingSharedContentStoreMode**  
+<a href="" id="appvirtualization-streamingsharedcontentstoremode"></a>**AppVirtualization/StreamingSharedContentStoreMode**
 
 <!--SupportedSKUs-->
 
@@ -1312,7 +1312,7 @@ This policy specifies that streamed package contents will be not be saved to the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Shared Content Store (SCS) mode*
 -   GP name: *Streaming_Shared_Content_Store_Mode*
 -   GP path: *System/App-V/Streaming*
@@ -1324,7 +1324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**  
+<a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**
 
 <!--SupportedSKUs-->
 
@@ -1356,7 +1356,7 @@ If enabled, the App-V client will support BrancheCache compatible HTTP streaming
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Support for BranchCache*
 -   GP name: *Streaming_Support_Branch_Cache*
 -   GP path: *System/App-V/Streaming*
@@ -1368,7 +1368,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**  
+<a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**
 
 <!--SupportedSKUs-->
 
@@ -1400,7 +1400,7 @@ Verifies Server certificate revocation status before streaming using HTTPS.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Verify certificate revocation list*
 -   GP name: *Streaming_Verify_Certificate_Revocation_List*
 -   GP path: *System/App-V/Streaming*
@@ -1412,7 +1412,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**  
+<a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**
 
 <!--SupportedSKUs-->
 
@@ -1444,7 +1444,7 @@ This policy specifies a list of process paths (may contain wildcards) which are 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Virtual Component Process Allow List*
 -   GP name: *Virtualization_JITVAllowList*
 -   GP path: *System/App-V/Virtualization*

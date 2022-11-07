@@ -7,12 +7,9 @@ brand: m365
 metadata:
   title: Windows Privacy
   description: Learn about how privacy is managed in Windows.
-  services: windows
-  ms.prod: windows
+  ms.prod: windows-client
   ms.topic: hub-page # Required
-  ms.collection:
-    - M365-security-compliance
-    - highpri
+  ms.collection: highpri
   author: DHB-MSFT
   ms.author: danbrown
   manager: dougeby

@@ -2,8 +2,8 @@
 title: Doc team test
 description: A test article for the doc team's use.
 ms.date: 05/10/2022
-ms.prod: windows
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-fundamentals
 ms.topic: reference
 ms.localizationpriority: null
 ROBOTS: NOINDEX

@@ -3,8 +3,8 @@ title: Policy CSP - DeliveryOptimization
 description: Learn how to use the Policy CSP - DeliveryOptimization setting to configure one or more Microsoft Connected Cache servers to be used by Delivery Optimization.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 06/09/2020
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - DeliveryOptimization
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## DeliveryOptimization policies  
+## DeliveryOptimization policies
 
 <dl>
   <dd>
@@ -123,7 +123,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
+<a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**
 
 <!--SupportedSKUs-->
 
@@ -160,7 +160,7 @@ The default value is 10.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Absolute Max Cache Size (in GB)*
 -   GP name: *AbsoluteMaxCacheSize*
 -   GP element: *AbsoluteMaxCacheSize*
@@ -173,7 +173,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-doallowvpnpeercaching"></a>**DeliveryOptimization/DOAllowVPNPeerCaching**  
+<a href="" id="deliveryoptimization-doallowvpnpeercaching"></a>**DeliveryOptimization/DOAllowVPNPeerCaching**
 
 <!--SupportedSKUs-->
 
@@ -208,7 +208,7 @@ Specifies whether the device is allowed to participate in Peer Caching while con
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Peer Caching while the device connects via VPN*
 -   GP name: *AllowVPNPeerCaching*
 -   GP element: *AllowVPNPeerCaching*
@@ -228,7 +228,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-docachehost"></a>**DeliveryOptimization/DOCacheHost**  
+<a href="" id="deliveryoptimization-docachehost"></a>**DeliveryOptimization/DOCacheHost**
 
 <!--SupportedSKUs-->
 
@@ -262,7 +262,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Cache Server Hostname*
 -   GP name: *CacheHost*
 -   GP element: *CacheHost*
@@ -284,7 +284,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-docachehostsource"></a>**DeliveryOptimization/DOCacheHostSource**  
+<a href="" id="deliveryoptimization-docachehostsource"></a>**DeliveryOptimization/DOCacheHostSource**
 
 <!--SupportedSKUs-->
 
@@ -316,7 +316,7 @@ This policy allows you to configure one or more Delivery Optimizations in Networ
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Cache Server Hostname Source*
 -   GP name: *CacheHostSource*
 -   GP element: *CacheHostSource*
@@ -325,7 +325,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following are the supported values:  
+The following are the supported values:
 - 1 = DHCP Option ID.
 - 2 = DHCP Option ID Force.
 
@@ -348,7 +348,7 @@ When DHCP Option ID Force (2) is set, the client will query DHCP Option ID 235 a
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayBackgroundDownloadFromHttp**  
+<a href="" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayBackgroundDownloadFromHttp**
 
 <!--SupportedSKUs-->
 
@@ -381,7 +381,7 @@ After the max delay is reached, the download will resume using HTTP, either down
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Delay background download from http (in secs)*
 -   GP name: *DelayBackgroundDownloadFromHttp*
 -   GP element: *DelayBackgroundDownloadFromHttp*
@@ -394,7 +394,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dodelaycacheserverfallbackbackground"></a>**DeliveryOptimization/DODelayCacheServerFallbackBackground**  
+<a href="" id="deliveryoptimization-dodelaycacheserverfallbackbackground"></a>**DeliveryOptimization/DODelayCacheServerFallbackBackground**
 
 <!--SupportedSKUs-->
 
@@ -428,7 +428,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Delay Background download Cache Server fallback (in seconds)*
 -   GP name: *DelayCacheServerFallbackBackground*
 -   GP element: *DelayCacheServerFallbackBackground*
@@ -437,7 +437,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-This policy is specified in seconds.  
+This policy is specified in seconds.
 Supported values: 0 - one month (in seconds)
 <!--/SupportedValues-->
 <!--Example-->
@@ -451,7 +451,7 @@ Supported values: 0 - one month (in seconds)
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dodelaycacheserverfallbackforeground"></a>**DeliveryOptimization/DODelayCacheServerFallbackForeground**  
+<a href="" id="deliveryoptimization-dodelaycacheserverfallbackforeground"></a>**DeliveryOptimization/DODelayCacheServerFallbackForeground**
 
 <!--SupportedSKUs-->
 
@@ -485,7 +485,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Delay Foreground download Cache Server fallback (in seconds)*
 -   GP name: *DelayCacheServerFallbackForeground*
 -   GP element: *DelayCacheServerFallbackForeground*
@@ -494,7 +494,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-This policy is specified in seconds.  
+This policy is specified in seconds.
 Supported values: 0 - one month (in seconds)
 <!--/SupportedValues-->
 <!--Example-->
@@ -506,7 +506,7 @@ Supported values: 0 - one month (in seconds)
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dodelayforegrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayForegroundDownloadFromHttp**  
+<a href="" id="deliveryoptimization-dodelayforegrounddownloadfromhttp"></a>**DeliveryOptimization/DODelayForegroundDownloadFromHttp**
 
 <!--SupportedSKUs-->
 
@@ -543,7 +543,7 @@ The recommended value is 1 minute (60).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Delay Foreground download from http (in secs)*
 -   GP name: *DelayForegroundDownloadFromHttp*
 -   GP element: *DelayForegroundDownloadFromHttp*
@@ -564,7 +564,7 @@ The following list shows the supported values as number of seconds:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
+<a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**
 
 <!--SupportedSKUs-->
 
@@ -599,7 +599,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Download Mode*
 -   GP name: *DownloadMode*
 -   GP element: *DownloadMode*
@@ -622,7 +622,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**  
+<a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**
 
 <!--SupportedSKUs-->
 
@@ -660,7 +660,7 @@ This policy specifies an arbitrary group ID that the device belongs to. Use this
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Group ID*
 -   GP name: *GroupId*
 -   GP element: *GroupId*
@@ -673,7 +673,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dogroupidsource"></a>**DeliveryOptimization/DOGroupIdSource**  
+<a href="" id="deliveryoptimization-dogroupidsource"></a>**DeliveryOptimization/DOGroupIdSource**
 
 <!--SupportedSKUs-->
 
@@ -706,7 +706,7 @@ When set, the Group ID will be assigned automatically from the selected source.
 
 If you set this policy, the GroupID policy will be ignored.
 
-The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored.  
+The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored.
 
 For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID.
 
@@ -714,7 +714,7 @@ Starting with Windows 10, version 1903, you can use the Azure Active Directory (
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select the source of Group IDs*
 -   GP name: *GroupIdSource*
 -   GP element: *GroupIdSource*
@@ -737,7 +737,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOMaxBackgroundDownloadBandwidth**  
+<a href="" id="deliveryoptimization-domaxbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOMaxBackgroundDownloadBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -770,7 +770,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum Background Download Bandwidth (in KB/s)*
 -   GP name: *MaxBackgroundDownloadBandwidth*
 -   GP element: *MaxBackgroundDownloadBandwidth*
@@ -783,7 +783,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
+<a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**
 
 <!--SupportedSKUs-->
 
@@ -819,7 +819,7 @@ The default value is 259200 seconds (three days).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Max Cache Age (in seconds)*
 -   GP name: *MaxCacheAge*
 -   GP element: *MaxCacheAge*
@@ -832,7 +832,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
+<a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**
 
 <!--SupportedSKUs-->
 
@@ -862,14 +862,14 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
- 
+
 Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
 
 The default value is 20.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Max Cache Size (percentage)*
 -   GP name: *MaxCacheSize*
 -   GP element: *MaxCacheSize*
@@ -882,7 +882,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
+<a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -905,7 +905,7 @@ This policy is deprecated. Use [DOMaxForegroundDownloadBandwidth](#deliveryoptim
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOMaxForegroundDownloadBandwidth**  
+<a href="" id="deliveryoptimization-domaxforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOMaxForegroundDownloadBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -938,7 +938,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum Foreground Download Bandwidth (in KB/s)*
 -   GP name: *MaxForegroundDownloadBandwidth*
 -   GP element: *MaxForegroundDownloadBandwidth*
@@ -951,7 +951,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
+<a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**
 
 <!--SupportedSKUs-->
 <!--/SupportedSKUs-->
@@ -970,7 +970,7 @@ This policy is deprecated because it only applies to uploads to Internet peers (
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
+<a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**
 
 <!--SupportedSKUs-->
 
@@ -1007,7 +1007,7 @@ The default value is 500.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Minimum Background QoS (in KB/s)*
 -   GP name: *MinBackgroundQos*
 -   GP element: *MinBackgroundQos*
@@ -1020,7 +1020,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dominbatterypercentageallowedtoupload"></a>**DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload**  
+<a href="" id="deliveryoptimization-dominbatterypercentageallowedtoupload"></a>**DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload**
 
 <!--SupportedSKUs-->
 
@@ -1056,7 +1056,7 @@ The default value is 0. The value 0 (zero) means "not limited" and the cloud ser
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow uploads while the device is on battery while under set Battery level (percentage)*
 -   GP name: *MinBatteryPercentageAllowedToUpload*
 -   GP element: *MinBatteryPercentageAllowedToUpload*
@@ -1069,7 +1069,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**  
+<a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**
 
 <!--SupportedSKUs-->
 
@@ -1109,7 +1109,7 @@ The default value is 32 GB.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Minimum disk size allowed to use Peer Caching (in GB)*
 -   GP name: *MinDiskSizeAllowedToPeer*
 -   GP element: *MinDiskSizeAllowedToPeer*
@@ -1122,7 +1122,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dominfilesizetocache"></a>**DeliveryOptimization/DOMinFileSizeToCache**  
+<a href="" id="deliveryoptimization-dominfilesizetocache"></a>**DeliveryOptimization/DOMinFileSizeToCache**
 
 <!--SupportedSKUs-->
 
@@ -1159,7 +1159,7 @@ The default value is 100 MB.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Minimum Peer Caching Content File Size (in MB)*
 -   GP name: *MinFileSizeToCache*
 -   GP element: *MinFileSizeToCache*
@@ -1172,7 +1172,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dominramallowedtopeer"></a>**DeliveryOptimization/DOMinRAMAllowedToPeer**  
+<a href="" id="deliveryoptimization-dominramallowedtopeer"></a>**DeliveryOptimization/DOMinRAMAllowedToPeer**
 
 <!--SupportedSKUs-->
 
@@ -1209,7 +1209,7 @@ The default value is 4 GB.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Minimum RAM capacity (inclusive) required to enable use of Peer Caching (in GB)*
 -   GP name: *MinRAMAllowedToPeer*
 -   GP element: *MinRAMAllowedToPeer*
@@ -1222,7 +1222,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
+<a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**
 
 <!--SupportedSKUs-->
 
@@ -1259,7 +1259,7 @@ By default, %SystemDrive% is used to store the cache.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Modify Cache Drive*
 -   GP name: *ModifyCacheDrive*
 -   GP element: *ModifyCacheDrive*
@@ -1272,7 +1272,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
+<a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**
 
 <!--SupportedSKUs-->
 
@@ -1311,7 +1311,7 @@ The default value is 20.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Monthly Upload Data Cap (in GB)*
 -   GP name: *MonthlyUploadDataCap*
 -   GP element: *MonthlyUploadDataCap*
@@ -1324,7 +1324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dopercentagemaxbackgroundbandwidth"></a>**DeliveryOptimization/DOPercentageMaxBackgroundBandwidth**  
+<a href="" id="deliveryoptimization-dopercentagemaxbackgroundbandwidth"></a>**DeliveryOptimization/DOPercentageMaxBackgroundBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -1357,7 +1357,7 @@ Downloads from LAN peers won't be throttled even when this policy is set.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum Background Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxBackgroundBandwidth*
 -   GP element: *PercentageMaxBackgroundBandwidth*
@@ -1370,7 +1370,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
+<a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**
 
 <hr/>
 
@@ -1383,7 +1383,7 @@ This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryopt
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dopercentagemaxforegroundbandwidth"></a>**DeliveryOptimization/DOPercentageMaxForegroundBandwidth**  
+<a href="" id="deliveryoptimization-dopercentagemaxforegroundbandwidth"></a>**DeliveryOptimization/DOPercentageMaxForegroundBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -1416,7 +1416,7 @@ Downloads from LAN peers won't be throttled even when this policy is set.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum Foreground Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxForegroundBandwidth*
 -   GP element: *PercentageMaxForegroundBandwidth*
@@ -1429,7 +1429,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dorestrictpeerselectionby"></a>**DeliveryOptimization/DORestrictPeerSelectionBy**  
+<a href="" id="deliveryoptimization-dorestrictpeerselectionby"></a>**DeliveryOptimization/DORestrictPeerSelectionBy**
 
 <!--SupportedSKUs-->
 
@@ -1456,14 +1456,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Set this policy to restrict peer selection via selected option. 
+Set this policy to restrict peer selection via selected option.
 Options available are: 1=Subnet mask (more options will be added in a future release).
 
 Option 1 (Subnet mask) applies to both Download Mode LAN (1) and Group (2).
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Select a method to restrict Peer Selection*
 -   GP name: *RestrictPeerSelectionBy*
 -   GP element: *RestrictPeerSelectionBy*
@@ -1482,7 +1482,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth**  
+<a href="" id="deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -1515,7 +1515,7 @@ Specifies the maximum background download bandwidth that Delivery Optimization u
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Business Hours to Limit Background Download Bandwidth*
 -   GP name: *SetHoursToLimitBackgroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1535,7 +1535,7 @@ This policy allows an IT Admin to define the following details:
 <hr/>
 
 <!--Policy-->
-<a href="" id="deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth**  
+<a href="" id="deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth"></a>**DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth**
 
 <!--SupportedSKUs-->
 
@@ -1568,7 +1568,7 @@ Specifies the maximum foreground download bandwidth that Delivery Optimization u
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Business Hours to Limit Foreground Download Bandwidth*
 -   GP name: *SetHoursToLimitForegroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*

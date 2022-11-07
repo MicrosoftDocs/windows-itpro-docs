@@ -3,14 +3,14 @@ title: SMB v1 Microsoft network server Digitally sign communications (always) (W
 description: Best practices, security considerations, and more for the  security policy setting, Microsoft network server Digitally sign communications (always).
 ms.assetid: 2007b622-7bc2-44e8-9cf1-d34b62117ea8
 ms.reviewer: 
-ms.author: dansimp
+ms.author: vinpa
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual

@@ -2,32 +2,34 @@
 title: Create a Windows 10 reference image (Windows 10)
 description: Creating a reference image is important because that image serves as the foundation for the devices in your organization.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Create a Windows 10 reference image
 
 **Applies to**
-- Windows 10
+- Windows 10
 
-Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you 'll learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You 'll create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you 'll have a Windows 10 reference image that can be used in your deployment solution.
+Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this article, you 'll learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You 'll create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this article, you 'll have a Windows 10 reference image that can be used in your deployment solution.
 
 >[!NOTE]
 >For more information about the server, client, and network infrastructure used in this guide, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-For the purposes of this topic, we'll use three computers: DC01, MDT01, and HV01.
+For the purposes of this article, we'll use three computers: DC01, MDT01, and HV01.
    - DC01 is a domain controller for the contoso.com domain.
    - MDT01 is a contoso.com domain member server.
    - HV01 is a Hyper-V server that will be used to build the reference image.
  
    ![devices.](../images/mdt-08-fig01.png)
 
-   Computers used in this topic.
+   Computers used in this article.
 
 ## The reference image
 
@@ -39,21 +41,21 @@ The reference image described in this guide is designed primarily for deployment
 
 ## Set up the MDT build lab deployment share
 
-With Windows 10, there's no hard requirement to create reference images. However, to reduce the time needed for deployment, you might want to create a reference image that contains a few base applications and all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
+With Windows 10, there's no hard requirement to create reference images. However, to reduce the time needed for deployment, you might want to create a reference image that contains a few base applications and all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
 
 ### Create the MDT build lab deployment share
 
 On **MDT01**:
 
-- Sign in as contoso\\administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
+- Sign in as contoso\\administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) article).
 - Start the MDT deployment workbench, and pin this workbench to the taskbar for easy access.
 - Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
 - Use the following settings for the New Deployment Share Wizard:
   - Deployment share path: **D:\\MDTBuildLab**
   - Share name: **MDTBuildLab$**
   - Deployment share description: **MDT Build Lab**
-- Accept the default selections on the Options page and click **Next**.
-- Review the Summary page, click **Next**, wait for the deployment share to be created, then click **Finish**.
+- Accept the default selections on the Options page and select **Next**.
+- Review the Summary page, select **Next**, wait for the deployment share to be created, then select **Finish**.
 - Verify that you can access the <b>\\\\MDT01\\MDTBuildLab$</b> share.
 
    ![figure 2.](../images/mdt-08-fig02.png)
@@ -62,7 +64,7 @@ On **MDT01**:
 
 ### Enable monitoring
 
-To monitor the task sequence as it happens, right-click the **MDT Build Lab** deployment share, click **Properties**, click the **Monitoring** tab, and select **Enable monitoring for this deployment share**.  This step is optional.
+To monitor the task sequence as it happens, right-click the **MDT Build Lab** deployment share, select **Properties**, select the **Monitoring** tab, and select **Enable monitoring for this deployment share**.  This step is optional.
 
 ### Configure permissions for the deployment share
 
@@ -80,20 +82,20 @@ On **MDT01**:
 
 ## Add setup files
 
-This section will show you how to populate the MDT deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
+This section will show you how to populate the MDT deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
 
-### Add the Windows 10 installation files
+### Add the Windows 10 installation files
 
-MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images that you've created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
+MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images that you've created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
 
 >[!NOTE]
->Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
+>Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
  
-### Add Windows 10 Enterprise x64 (full source)
+### Add Windows 10 Enterprise x64 (full source)
 
 On **MDT01**:
 
-1. Sign in as **contoso\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
+1. Sign in as **contoso\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
 
     ![ISO.](../images/iso-data.png)
 
@@ -111,16 +113,16 @@ On **MDT01**:
 
 ## Add applications
 
-Before you create an MDT task sequence, you need to add any applications and scripts you wish to install to the MDT Build Lab share.
+Before you create an MDT task sequence, you need to add applications and scripts you wish to install to the MDT Build Lab share.
 
 On **MDT01**:
 
 First, create an MDT folder to store the Microsoft applications that will be installed:
 
 1. In the MDT Deployment Workbench, expand **Deployment Shares \\ MDT Build Lab \\ Applications**
-2. Right-click **Applications** and then click **New Folder**.
+2. Right-click **Applications** and then select **New Folder**.
 3. Under **Folder name**, type **Microsoft**.
-4. Click **Next** twice, and then click **Finish**.
+4. Select **Next** twice, and then select **Finish**.
 
 The steps in this section use a strict naming standard for your MDT applications. 
 - Use the "<b>Install - </b>" prefix for typical application installations that run a setup installer of some kind, 
@@ -146,7 +148,8 @@ Download links:
 
 Download all three items in this list to the D:\\Downloads folder on MDT01. 
 
-**Note**: For the purposes of this lab, we'll leave the MSVC files in the D:\\Downloads folder and the Office365 files will be extracted to a child folder. If you prefer, you can place each application in its own separate child folder and then modify the $ApplicationSourcePath below as needed (instead of just D:\\Downloads).
+>[!NOTE]
+>For the purposes of this lab, we'll leave the MSVC files in the D:\\Downloads folder and the Office365 files will be extracted to a child folder. If you prefer, you can place each application in its own separate child folder, and then modify the $ApplicationSourcePath below as needed (instead of just D:\\Downloads).
 
 >[!NOTE]
 >All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523). Visual C++ 2015, 2017 and 2019 all share the same redistributable files.
@@ -161,7 +164,7 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
         > [!NOTE]
         > 64-bit is now the default and recommended edition. 
       - Use the General Availability Channel and get updates directly from the Office CDN on the internet. 
-      - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
+      - Perform a silent installation. You won't see anything that shows the progress of the installation and you won't see any error messages.
 
      ```xml
      <Configuration>
@@ -175,7 +178,7 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
      </Configuration>
      ```
 
-     When you use these settings, any time you build the reference image you’ll be installing the most up-to-date General Availability Channel version of Microsoft 365 Apps for enterprise.
+     When you use these settings, anytime you build the reference image you'll be installing the most up-to-date General Availability Channel version of Microsoft 365 Apps for enterprise.
 
  >[!TIP]
  >You can also use the web-based interface of the [Office Customization Tool](https://config.office.com/) to help you create your configuration.xml file.
@@ -192,14 +195,14 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
  >After Microsoft 365 Apps for enterprise is installed on the reference image, do NOT open any Office programs. if you open an Office program, you're prompted to sign-in, which activates the installation of Microsoft 365 Apps for enterprise. Even if you don't sign in and you close the Sign in to set up Office dialog box, a temporary product key is installed. You don't want any kind of product key for Microsoft 365 Apps for enterprise installed as part of your reference image.
 
 Additional information
-- Microsoft 365 Apps for enterprise is updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you’re using). That means that once you’ve deployed your reference image, Microsoft 365 Apps for enterprise will most likely need to download and install the latest updates that have been released since you created your reference image.
+- Microsoft 365 Apps for enterprise is updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you're using). That means that once you've deployed your reference image, Microsoft 365 Apps for enterprise will most likely need to download and install the latest updates that have been released since you created your reference image.
 
-- **Note**: With the installing Office Deployment Tool being used as part of the reference image, Microsoft 365 Apps for enterprise is installed immediately after the reference image is deployed to the user’s device, rather than including Office apps part of the reference image. This way the user will have the most up-to-date version of Microsoft 365 Apps for enterprise right away and won’t have to download any new updates (which is most likely what would happen if Microsoft 365 Apps for enterprise was installed as part of the reference image.)
- - When you're creating your reference image, instead of installing Microsoft 365 Apps for enterprise directly from the Office CDN on the internet, you can install Microsoft 365 Apps for enterprise from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Microsoft 365 Apps for enterprise from that location on to your reference image. As part of that process, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to get the Microsoft 365 Apps for enterprise files. If you decide to do this step, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Microsoft 365 Apps for enterprise to that location on your internal network. That way your new reference image will have a more up-to-date installation of Microsoft 365 Apps for enterprise.
+- **Note**: With the installing Office Deployment Tool being used as part of the reference image, Microsoft 365 Apps for enterprise is installed immediately after the reference image is deployed to the user's device, rather than including Office apps part of the reference image. This way the user will have the most up-to-date version of Microsoft 365 Apps for enterprise right away and won't have to download any new updates (which is most likely what would happen if Microsoft 365 Apps for enterprise was installed as part of the reference image.)
+ - When you're creating your reference image, instead of installing Microsoft 365 Apps for enterprise directly from the Office CDN on the internet, you can install Microsoft 365 Apps for enterprise from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Microsoft 365 Apps for enterprise from that location on to your reference image. As part of that process, you'll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to get the Microsoft 365 Apps for enterprise files. If you decide to do this step, the next time you create a new reference image, you'll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Microsoft 365 Apps for enterprise to that location on your internal network. That way your new reference image will have a more up-to-date installation of Microsoft 365 Apps for enterprise.
 
 ### Connect to the deployment share using Windows PowerShell
 
-If you need to add many applications, you can take advantage of the PowerShell support that MDT has. To start using PowerShell against the deployment share, you must first load the MDT PowerShell snap-in and then make the deployment share a PowerShell drive (PSDrive).
+If you need to add many applications, you can take advantage of the PowerShell support that MDT has. To start using PowerShell against the deployment share, you must first load the MDT PowerShell snap-in, and then make the deployment share a PowerShell drive (PSDrive).
 
 On **MDT01**:
 
@@ -293,16 +296,16 @@ On **MDT01**:
 
 ## Create the reference image task sequence
 
-In order to build and capture your Windows 10 reference image for deployment using MDT, you 'll create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 10 reference image.
+In order to build and capture your Windows 10 reference image for deployment using MDT, you 'll create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 10 reference image.
 After creating the task sequence, you configure it to enable patching against the Windows Server Update Services (WSUS) server. The Task Sequence Windows Update action supports getting updates directly from Microsoft Update, but you get more stable patching if you use a local WSUS server. WSUS also allows for an easy process of approving the patches that you're deploying.
 
 ### Drivers and the reference image
 
-Because we use modern virtual platforms for creating our reference images, we don’t need to worry about drivers when creating reference images for Windows 10. We use Hyper-V in our environment, and Windows Preinstallation Environment (Windows PE) already has all the needed drivers built-in for Hyper-V.
+Because we use modern virtual platforms for creating our reference images, we don't need to worry about drivers when creating reference images for Windows 10. We use Hyper-V in our environment, and Windows Preinstallation Environment (Windows PE) already has all the needed drivers built-in for Hyper-V.
 
 ### Create a task sequence for Windows 10 Enterprise
 
-To create a Windows 10 reference image task sequence, the process is as follows:
+To create a Windows 10 reference image task sequence, the process is as follows:
 
 On **MDT01**:
 
@@ -319,18 +322,18 @@ On **MDT01**:
    9. Internet Explorer home page: http://www.contoso.com
    10. Admin Password: Don't specify an Administrator Password at this time
 
-### Edit the Windows 10 task sequence
+### Edit the Windows 10 task sequence
 
-The steps below walk you through the process of editing the Windows 10 reference image task sequence to include the actions required to update the reference image with the latest updates from WSUS, install roles and features, and utilities, and install Microsoft Office365 ProPlus x64.
+The steps below walk you through the process of editing the Windows 10 reference image task sequence to include the actions required to update the reference image with the latest updates from WSUS, install roles and features, and utilities, and install Microsoft Office365 ProPlus x64.
 
 On **MDT01**:
 
-1. In the **Task Sequences / Windows 10** folder, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence, and select **Properties**.
-2. On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
+1. In the **Task Sequences / Windows 10** folder, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence, and select **Properties**.
+2. On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
     1. **State Restore > Windows Update (Pre-Application Installation)** action: Enable this action by clicking the **Options** tab and clearing the **Disable this step** check box.
          
     2. **State Restore > Windows Update (Post-Application Installation)** action: Also enable this action.
-    3. **State Restore**: After the **Tattoo** action, add a new **Group** action (click **Add** then click **New Group**) with the following setting:
+    3. **State Restore**: After the **Tattoo** action, add a new **Group** action (select **Add** then select **New Group**) with the following setting:
         -   Name: **Custom Tasks (Pre-Windows Update)**
     4. **State Restore**: After **Windows Update (Post-Application Installation)** action, rename **Custom Tasks** to **Custom Tasks (Post-Windows Update)**.
         - **Note**: The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.
@@ -350,14 +353,14 @@ On **MDT01**:
         1. Name: Microsoft Visual C++ Redistributable 2019 - x86
         2. Install a Single Application: browse to **Install - MSVC 2019 - x86**
     7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Microsoft 365 Apps for enterprise as well.
-3. Click **OK**.
+3. Select **OK**.
 
  ![apps.](../images/mdt-apps.png) 
 
 
 ### Optional configuration: Add a suspend action
 
-The goal when creating a reference image is to automate everything. But sometimes you've a special configuration or application setup that is too time-consuming to automate. If you need to do some manual configuration, you can add a little-known feature called Lite Touch Installation (LTI) Suspend. If you add the LTISuspend.wsf script as a custom action in the task sequence, it will suspend the task sequence until you click the Resume Task Sequence shortcut icon on the desktop. In addition to using the LTI Suspend feature for manual configuration or installation, you can also use it simply for verifying a reference image before you allow the task sequence to continue and use Sysprep and capture the virtual machine.
+The goal when creating a reference image is to automate everything. But sometimes you've a special configuration or application setup that is too time-consuming to automate. If you need to do some manual configuration, you can add a little-known feature called Lite Touch Installation (LTI) Suspend. If you add the LTISuspend.wsf script as a custom action in the task sequence, it will suspend the task sequence until you select the Resume Task Sequence shortcut icon on the desktop. In addition to using the LTI Suspend feature for manual configuration or installation, you can also use it simply for verifying a reference image before you allow the task sequence to continue and use Sysprep and capture the virtual machine.
 
    ![figure 8.](../images/fig8-suspend.png)
 
@@ -367,22 +370,22 @@ The goal when creating a reference image is to automate everything. But sometime
 
    The Windows 10 desktop with the Resume Task Sequence shortcut.
 
-### Edit the Unattend.xml file for Windows 10 Enterprise
+### Edit the Unattend.xml file for Windows 10 Enterprise
 
-When using MDT, you don't need to edit the Unattend.xml file often because most configurations are taken care of by MDT. However if, for example, you want to configure Internet Explorer behavior, then you can edit the Unattend.xml. Editing the Unattend.xml for basic Internet Explorer settings is easy, but for more advanced settings, you 'll want to use the Internet Explorer Administration Kit (IEAK).
+When using MDT, you don't need to edit the Unattend.xml file often because most configurations are taken care of by MDT. However if, for example, you want to configure Internet Explorer behavior, then you can edit the Unattend.xml. Editing the Unattend.xml for basic Internet Explorer settings is easy, but for more advanced settings, you 'll want to use the Internet Explorer Administration Kit (IEAK).
 
 >[!WARNING]
 >Don't use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml file. These settings are deprecated and can have unintended effects if used.
 
 >[!NOTE]
->You also can use the Unattend.xml to enable components in Windows 10, like the Telnet Client or Hyper-V client. Normally we prefer to do this via the **Install Roles and Features** action, or using Deployment Image Servicing and Management (DISM) command-line tools, because then we can add that as an application, being dynamic, having conditions, and so forth. Also, if you're adding packages via Unattend.xml, it's version specific, so Unattend.xml must match the exact version of the operating system you're servicing.
+>You also can use the Unattend.xml to enable components in Windows 10, like the Telnet Client or Hyper-V client. Normally we prefer to do this via the **Install Roles and Features** action, or using Deployment Image Servicing and Management (DISM) command-line tools, because then we can add that as an application, being dynamic, having conditions, and so forth. Also, if you're adding packages via Unattend.xml, it's version specific, so Unattend.xml must match the exact version of the operating system you're servicing.
  
-Follow these steps to configure Internet Explorer settings in Unattend.xml for the Windows 10 Enterprise x64 RTM Default Image task sequence:
+Follow these steps to configure Internet Explorer settings in Unattend.xml for the Windows 10 Enterprise x64 RTM Default Image task sequence:
 
 On **MDT01**:
 
 1. When you're using the Deployment Workbench, under **Deployment Shares > MDT Build Lab > Task Sequences** right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
-2. In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This file generation process will take a few minutes, and then Windows System Image Manager (Windows SIM) will start.
+2. In the **OS Info** tab, select **Edit Unattend.xml**. MDT now generates a catalog file. This file generation process will take a few minutes, and then Windows System Image Manager (Windows SIM) will start.
 
  > [!IMPORTANT]
  > The ADK version 1903 has a [known issue](/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-1903) generating a catalog file for Windows 10, version 1903 or 1909 X64 install.wim. You might see the error "Could not load file or assembly" in in the console output. To avoid this issue, [install the ADK, version 2004 or a later version](/windows-hardware/get-started/adk-install). A workaround is also available for the ADK version 1903:
@@ -397,7 +400,7 @@ On **MDT01**:
 5. Save the Unattend.xml file, and close Windows SIM.
      > [!NOTE]
      > If errors are reported that certain display values are incorrect, you can ignore this message or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
-6. On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
+6. On the Windows 10 Enterprise x64 RTM Default Image Properties, select **OK**.
 
     ![figure 10.](../images/fig10-unattend.png)
 
@@ -409,7 +412,7 @@ Understanding rules is critical to successfully using MDT. Rules are configured 
 
 ### MDT deployment share rules overview
 
-In MDT, there are always two rule files: the **CustomSettings.ini** file and the **Bootstrap.ini** file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. 
+In MDT, there are always two rule files: the **CustomSettings.ini** file and the **Bootstrap.ini** file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you select OK. 
 
 To configure the rules for the MDT Build Lab deployment share:
 
@@ -456,7 +459,7 @@ On **MDT01**:
 
     The server-side rules for the MDT Build Lab deployment share.
  
-3.  Click **Edit Bootstrap.ini** and modify using the following information:
+3.  Select **Edit Bootstrap.ini** and modify using the following information:
 
     ``` 
     [Settings]
@@ -482,7 +485,7 @@ On **MDT01**:
 7. In the **Lite Touch Boot Image Settings** area, configure the following settings:
    1.  Image description: MDT Build Lab x64
    2.  ISO file name: MDT Build Lab x64.iso
-8. Click **OK**.
+8. Select **OK**.
 
 >[!NOTE]
 >In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
@@ -580,7 +583,8 @@ SkipFinalSummary=YES
 - **AdminPassword.** Sets the local Administrator account password.
 - **TimeZoneName.** Establishes the time zone to use. Don't confuse this value with TimeZone, which is only for legacy operating systems (Windows 7 and Windows Server 2003).
 
-    **Note**: The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
+    >[!NOTE]
+    >The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
      
 - **JoinWorkgroup.** Configures Windows to join a workgroup.
 - **HideShell.** Hides the Windows Shell during deployment. This hide-operation is especially useful for Windows 10 deployments in which the deployment wizard will otherwise appear behind the tiles.
@@ -601,7 +605,7 @@ SkipFinalSummary=YES
 - **SkipSummary.** Skips the initial Windows Deployment Wizard summary pane.
 - **SkipRoles.** Skips the Install Roles and Features pane.
 - **SkipCapture.** Skips the Capture pane.
-- **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to click OK before the machine shuts down.
+- **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to select OK before the machine shuts down.
 
 ## Build the Windows 10 reference image
 
@@ -613,7 +617,8 @@ The steps below outline the process used to boot a virtual machine using an ISO 
 
 1. Copy D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on your Hyper-V host (HV01).
 
-    **Note**: Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
+    >[!NOTE]
+    >Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
 
 On **HV01**:
      
@@ -627,11 +632,13 @@ On **HV01**:
    8. Install OS with image file: C:\\ISO\\MDT Build Lab x86.iso
 1. Before you start the VM, add a checkpoint for REFW10X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
 
-    **Note**: Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
+    >[!NOTE]
+    >Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
      
 4. Start the REFW10X64-001 virtual machine and connect to it.
 
-    **Note**: Up to this point we haven't discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share. In the current scenario, this connectivity is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.
+    >[!NOTE]
+    >Up to this point we haven't discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share. In the current scenario, this connectivity is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.
 
     After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
     1. Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
@@ -652,7 +659,7 @@ On **HV01**:
     6. Captures the installation to a Windows Imaging (WIM) file.
     7. Turns off the virtual machine.
 
-After some time, you 'll have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+After some time, you 'll have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 
    ![image.](../images/image-captured.png)
 
@@ -667,9 +674,9 @@ If you [enabled monitoring](#enable-monitoring), you can check the progress of t
 
 If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  From the command line in Windows PE, you can copy these logs from the client to your MDT server for viewing with CMTrace. For example: copy BDD.log \\\\mdt01\\logs$.
 
-After some time, you 'll have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+After some time, you 'll have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 
-## Related topics
+## Related articles
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
 [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>

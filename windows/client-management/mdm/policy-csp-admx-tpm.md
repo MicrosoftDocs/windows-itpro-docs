@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_TPM.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/25/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_TPM
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_TPM policies  
+## ADMX_TPM policies
 
 <dl>
   <dd>
@@ -62,7 +62,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-blockedcommandslist-name"></a>**ADMX_TPM/BlockedCommandsList_Name**  
+<a href="" id="admx-tpm-blockedcommandslist-name"></a>**ADMX_TPM/BlockedCommandsList_Name**
 
 <!--SupportedSKUs-->
 
@@ -97,7 +97,7 @@ If you disable or don't configure this policy setting, only those TPM commands s
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the list of blocked TPM commands*
 -   GP name: *BlockedCommandsList_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -108,7 +108,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-cleartpmifnotready-name"></a>**ADMX_TPM/ClearTPMIfNotReady_Name**  
+<a href="" id="admx-tpm-cleartpmifnotready-name"></a>**ADMX_TPM/ClearTPMIfNotReady_Name**
 
 <!--SupportedSKUs-->
 
@@ -139,7 +139,7 @@ This policy setting configures the system to prompt the user to clear the TPM if
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the system to clear the TPM if it is not in a ready state.*
 -   GP name: *ClearTPMIfNotReady_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -150,7 +150,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-ignoredefaultlist-name"></a>**ADMX_TPM/IgnoreDefaultList_Name**  
+<a href="" id="admx-tpm-ignoredefaultlist-name"></a>**ADMX_TPM/IgnoreDefaultList_Name**
 
 <!--SupportedSKUs-->
 
@@ -182,12 +182,12 @@ If you enable this policy setting, Windows will ignore the computer's default li
 
 The default list of blocked TPM commands is pre-configured by Windows. You can view the default list by running "tpm.msc", navigating to the "Command Management" section, and making visible the "On Default Block List" column. The local list of blocked TPM commands is configured outside of Policy by running "tpm.msc" or through scripting against the Win32_Tpm interface. See the related policy setting to configure the Policy list of blocked TPM commands.
 
-If you disable or don't configure this policy setting, Windows will block the TPM commands in the default list, in addition to commands in the Policy and local lists of blocked TPM commands. 
+If you disable or don't configure this policy setting, Windows will block the TPM commands in the default list, in addition to commands in the Policy and local lists of blocked TPM commands.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Ignore the default list of blocked TPM commands*
 -   GP name: *IgnoreDefaultList_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -198,7 +198,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-ignorelocallist-name"></a>**ADMX_TPM/IgnoreLocalList_Name**  
+<a href="" id="admx-tpm-ignorelocallist-name"></a>**ADMX_TPM/IgnoreLocalList_Name**
 
 <!--SupportedSKUs-->
 
@@ -235,7 +235,7 @@ If you disable or don't configure this policy setting, Windows will block the TP
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Ignore the local list of blocked TPM commands*
 -   GP name: *IgnoreLocalList_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -246,7 +246,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-osmanagedauth-name"></a>**ADMX_TPM/OSManagedAuth_Name**  
+<a href="" id="admx-tpm-osmanagedauth-name"></a>**ADMX_TPM/OSManagedAuth_Name**
 
 <!--SupportedSKUs-->
 
@@ -290,7 +290,7 @@ Choose the operating system managed TPM authentication setting of "None" for com
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the level of TPM owner authorization information available to the operating system*
 -   GP name: *OSManagedAuth_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -301,7 +301,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-optintodsha-name"></a>**ADMX_TPM/OptIntoDSHA_Name**  
+<a href="" id="admx-tpm-optintodsha-name"></a>**ADMX_TPM/OptIntoDSHA_Name**
 
 <!--SupportedSKUs-->
 
@@ -332,7 +332,7 @@ This Policy enables Device Health Attestation reporting (DHA-report) on supporte
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Device Health Attestation Monitoring and Reporting*
 -   GP name: *OptIntoDSHA_Name*
 -   GP path: *System\Device Health Attestation Service*
@@ -343,7 +343,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-standarduserauthorizationfailureduration-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureDuration_Name**  
+<a href="" id="admx-tpm-standarduserauthorizationfailureduration-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureDuration_Name**
 
 <!--SupportedSKUs-->
 
@@ -390,7 +390,7 @@ If this value isn't configured, a default value of 480 minutes (8 hours) is used
 <!--/Description-->
 >
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Standard User Lockout Duration*
 -   GP name: *StandardUserAuthorizationFailureDuration_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -401,7 +401,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-standarduserauthorizationfailureindividualthreshold-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureIndividualThreshold_Name**  
+<a href="" id="admx-tpm-standarduserauthorizationfailureindividualthreshold-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureIndividualThreshold_Name**
 
 <!--SupportedSKUs-->
 
@@ -450,7 +450,7 @@ A value of 0 means the OS won't allow standard users to send commands to the TPM
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Standard User Individual Lockout Threshold*
 -   GP name: *StandardUserAuthorizationFailureIndividualThreshold_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -461,7 +461,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-standarduserauthorizationfailuretotalthreshold-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureTotalThreshold_Name**  
+<a href="" id="admx-tpm-standarduserauthorizationfailuretotalthreshold-name"></a>**ADMX_TPM/StandardUserAuthorizationFailureTotalThreshold_Name**
 
 <!--SupportedSKUs-->
 
@@ -510,7 +510,7 @@ A value of 0 means the OS won't allow standard users to send commands to the TPM
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Standard User Total Lockout Threshold*
 -   GP name: *StandardUserAuthorizationFailureTotalThreshold_Name*
 -   GP path: *System\Trusted Platform Module Services*
@@ -521,7 +521,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tpm-uselegacydap-name"></a>**ADMX_TPM/UseLegacyDAP_Name**  
+<a href="" id="admx-tpm-uselegacydap-name"></a>**ADMX_TPM/UseLegacyDAP_Name**
 
 <!--SupportedSKUs-->
 
@@ -552,7 +552,7 @@ This policy setting configures the TPM to use the Dictionary Attack Prevention P
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0.*
 -   GP name: *UseLegacyDAP_Name*
 -   GP path: *System\Trusted Platform Module Services*

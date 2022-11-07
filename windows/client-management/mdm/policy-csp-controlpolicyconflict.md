@@ -3,8 +3,8 @@ title: Policy CSP - ControlPolicyConflict
 description: Use the Policy CSP - ControlPolicyConflict setting to control which policy is used whenever both the MDM policy and its equivalent Group Policy are set on the device.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: 
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ControlPolicyConflict policies  
+## ControlPolicyConflict policies
 
 <dl>
   <dd>
@@ -30,7 +30,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
+<a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**
 
 > [!NOTE]
 > This setting doesn't apply to the following types of group policies:
@@ -70,7 +70,7 @@ This policy allows the IT admin to control which policy will be used whenever bo
 > [!NOTE]
 > MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs.
 
-This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. 
+This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel.
 The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
 > [!NOTE]
@@ -81,19 +81,19 @@ The following list shows the supported values:
 - 0 (default)
 - 1 - The MDM policy is used and the GP policy is blocked.
 
-The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. 
+The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy.
 This ensures that:
 
--  GP settings that correspond to MDM applied settings aren't conflicting 
--  The current Policy Manager policies are refreshed from what MDM has set 
+-  GP settings that correspond to MDM applied settings aren't conflicting
+-  The current Policy Manager policies are refreshed from what MDM has set
 -  Any values set by scripts/user outside of GP that conflict with MDM are removed
 
-The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the policies with equivalent GP:  
+The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the policies with equivalent GP:
 
--  \<MSFT:ADMXBacked\>   
+-  \<MSFT:ADMXBacked\>
 -  \<MSFT:ADMXMapped\>
--  \<MSFT:GPRegistryMappedName\>    
--  \<MSFT:GPDBMappedName\>  
+-  \<MSFT:GPRegistryMappedName\>
+-  \<MSFT:GPDBMappedName\>
 
 For the list MDM-GP mapping list, see [Policies in Policy CSP supported by Group Policy
 ](./policies-in-policy-csp-supported-by-group-policy.md).

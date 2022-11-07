@@ -1,18 +1,12 @@
 ---
 title: Windows 11 SE Overview
-description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn about Windows 11 SE, and the apps that are included with the operating system.
+ms.topic: article
 ms.date: 09/12/2022
-ms.reviewer: 
-manager: aaroncz
-appliesto:
-- ✅ <b>Windows 11 SE</b>
+appliesto: 
+  - ✅ <b>Windows 11 SE</b>
+ms.collection: 
+  - highpri
 ---
 
 # Windows 11 SE Overview
@@ -88,11 +82,11 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 |-----------------------------------------|-------------------|----------|------------------------------|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
 | Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
-| Brave Browser                           | 1.34.80           | Win32    | Brave                        |
+| Brave Browser                           | 106.0.5249.65     | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
 | CA Secure Browser                       | 14.0.0            | Win32    | Cambium Development          |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
-| CKAuthenticator                         | 3.6               | Win32    | Content Keeper               |
+| CKAuthenticator                         | 3.6+              | Win32    | Content Keeper               |
 | Class Policy                            | 114.0.0           | Win32    | Class Policy                 |
 | Classroom.cloud                         | 1.40.0004         | Win32    | NetSupport                   |
 | CoGat Secure Browser                    | 11.0.0.19         | Win32    | Riverside Insights           |

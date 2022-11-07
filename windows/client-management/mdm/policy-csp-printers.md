@@ -3,8 +3,8 @@ title: Policy CSP - Printers
 description: Use this policy setting to control the client Point and Print behavior, including  security prompts for Windows Vista computers.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Printers policies  
+## Printers policies
 
 <dl>
   <dd>
@@ -72,16 +72,16 @@ manager: aaroncz
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-approvedusbprintdevices"></a>**Printers/ApprovedUsbPrintDevices**  
+<a href="" id="printers-approvedusbprintdevices"></a>**Printers/ApprovedUsbPrintDevices**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -106,8 +106,8 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy implements the print portion of the Device Control requirements. 
-These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network.  
+This policy implements the print portion of the Device Control requirements.
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network.
 
 This policy will contain the comma-separated list of approved USB Vid&Pid combinations that the print spooler will allow to print when Device Control is enabled.
 The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
@@ -115,7 +115,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support for new Device Control Print feature*
 -   GP name: *ApprovedUsbPrintDevices*
 -   GP path: *Printers*
@@ -128,7 +128,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-approvedusbprintdevicesuser"></a>**Printers/ApprovedUsbPrintDevicesUser**  
+<a href="" id="printers-approvedusbprintdevicesuser"></a>**Printers/ApprovedUsbPrintDevicesUser**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -153,8 +153,8 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy implements the print portion of the Device Control requirements. 
-These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network.  
+This policy implements the print portion of the Device Control requirements.
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network.
 
 This policy will contain the comma separated list of approved USB Vid&Pid combinations that the print spooler will allow to print when Device Control is enabled.
 The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
@@ -162,7 +162,7 @@ The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support for new Device Control Print feature*
 -   GP name: *ApprovedUsbPrintDevicesUser*
 -   GP path: *Printers*
@@ -173,7 +173,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configurecopyfilespolicy"></a>**Printers/ConfigureCopyFilesPolicy**  
+<a href="" id="printers-configurecopyfilespolicy"></a>**Printers/ConfigureCopyFilesPolicy**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -217,7 +217,7 @@ Type: DWORD. Defaults to 1.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Manage processing of Queue-specific files*
 -   GP name: *ConfigureCopyFilesPolicy*
 -   GP path: *Printers*
@@ -228,7 +228,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configuredrivervalidationlevel"></a>**Printers/ConfigureDriverValidationLevel**  
+<a href="" id="printers-configuredrivervalidationlevel"></a>**Printers/ConfigureDriverValidationLevel**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -274,7 +274,7 @@ Type: DWORD. Defaults to 4.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Manage Print Driver signature validation*
 -   GP name: *ConfigureDriverValidationLevel*
 -   GP path: *Printers*
@@ -285,7 +285,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configureipppagecountspolicy"></a>**Printers/ConfigureIppPageCountsPolicy**  
+<a href="" id="printers-configureipppagecountspolicy"></a>**Printers/ConfigureIppPageCountsPolicy**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -329,7 +329,7 @@ AlwaysSendIppPageCounts: DWORD. Defaults to 0.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always send job page count information for IPP printers*
 -   GP name: *ConfigureIppPageCountsPolicy*
 -   GP path: *Printers*
@@ -340,7 +340,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configureredirectionguardpolicy"></a>**Printers/ConfigureRedirectionGuardPolicy**  
+<a href="" id="printers-configureredirectionguardpolicy"></a>**Printers/ConfigureRedirectionGuardPolicy**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -380,12 +380,12 @@ Type: DWORD, defaults to 1.
 
 - 0 (Redirection Guard Disabled) - Redirection Guard is not enabled for the spooler process and will not prevent the use of redirection primitives within said process.
 - 1 (Redirection Guard Enabled) - Redirection Guard is enabled for the spooler process and will prevent the use of redirection primitives from being used.
-- 2 (Redirection Guard Audit Mode) - Redirection Guard will be disabled but will log telemetry events as though it were enabled.  
+- 2 (Redirection Guard Audit Mode) - Redirection Guard will be disabled but will log telemetry events as though it were enabled.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Redirection Guard*
 -   GP name: *ConfigureRedirectionGuardPolicy*
 -   GP path: *Printers*
@@ -396,7 +396,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configurerpcconnectionpolicy"></a>**Printers/ConfigureRpcConnectionPolicy**  
+<a href="" id="printers-configurerpcconnectionpolicy"></a>**Printers/ConfigureRpcConnectionPolicy**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -448,7 +448,7 @@ The following are the supported values:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure RPC connection settings*
 -   GP name: *ConfigureRpcConnectionPolicy*
 -   GP path: *Printers*
@@ -459,7 +459,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configurerpclistenerpolicy"></a>**Printers/ConfigureRpcListenerPolicy**  
+<a href="" id="printers-configurerpclistenerpolicy"></a>**Printers/ConfigureRpcListenerPolicy**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -510,7 +510,7 @@ The following are the supported values:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure RPC listener settings*
 -   GP name: *ConfigureRpcListenerPolicy*
 -   GP path: *Printers*
@@ -521,7 +521,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-configurerpctcpport"></a>**Printers/ConfigureRpcTcpPort**  
+<a href="" id="printers-configurerpctcpport"></a>**Printers/ConfigureRpcTcpPort**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -567,7 +567,7 @@ The following are the supported values:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure RPC over TCP port*
 -   GP name: *ConfigureRpcTcpPort*
 -   GP path: *Printers*
@@ -578,7 +578,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-enabledevicecontrol"></a>**Printers/EnableDeviceControl**  
+<a href="" id="printers-enabledevicecontrol"></a>**Printers/EnableDeviceControl**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -603,21 +603,21 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy implements the print portion of the Device Control requirements. 
-These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network. 
- 
+This policy implements the print portion of the Device Control requirements.
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network.
+
 This policy will control whether the print spooler will attempt to restrict printing as part of Device Control.
 
 The default value of the policy will be Unconfigured.
 
 If the policy value is either Unconfigured or Disabled, the print spooler won't restrict printing.
 
-If the policy value is Enabled, the print spooler will restrict local printing to USB devices in the Approved Device list. 
+If the policy value is Enabled, the print spooler will restrict local printing to USB devices in the Approved Device list.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support for new Device Control Print feature*
 -   GP name: *EnableDeviceControl*
 -   GP path: *Printers*
@@ -630,7 +630,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="printers-enabledevicecontroluser"></a>**Printers/EnableDeviceControlUser**  
+<a href="" id="printers-enabledevicecontroluser"></a>**Printers/EnableDeviceControlUser**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -655,21 +655,21 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy implements the print portion of the Device Control requirements. 
+This policy implements the print portion of the Device Control requirements.
 These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers, while either directly connected to the corporate network or when using a VPN connection to the corporate network.
-  
+
 This policy will control whether the print spooler will attempt to restrict printing as part of Device Control.
 
 The default value of the policy will be Unconfigured.
 
 If the policy value is either Unconfigured or Disabled, the print spooler won't restrict printing.
 
-If the policy value is Enabled, the print spooler will restrict local printing to USB devices in the Approved Device list. 
+If the policy value is Enabled, the print spooler will restrict local printing to USB devices in the Approved Device list.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support for new Device Control Print feature*
 -   GP name: *EnableDeviceControlUser*
 -   GP path: *Printers*
@@ -681,7 +681,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-managedriverexclusionlist"></a>**Printers/ManageDriverExclusionList**  
+<a href="" id="printers-managedriverexclusionlist"></a>**Printers/ManageDriverExclusionList**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -726,7 +726,7 @@ Value Data: Name of excluded file
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Manage Print Driver exclusion list*
 -   GP name: *ManageDriverExclusionList*
 -   GP path: *Printers*
@@ -737,7 +737,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
+<a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**
 
 <!--SupportedSKUs-->
 
@@ -796,7 +796,7 @@ If you disable this policy setting:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions_Win7*
 -   GP path: *Printers*
@@ -821,7 +821,7 @@ Data type: String Value: <enabled/>
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-pointandprintrestrictions-user"></a>**Printers/PointAndPrintRestrictions_User**  
+<a href="" id="printers-pointandprintrestrictions-user"></a>**Printers/PointAndPrintRestrictions_User**
 
 <!--SupportedSKUs-->
 
@@ -879,7 +879,7 @@ If you disable this policy setting:
 
 <!--/Description-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions*
 -   GP path: *Control Panel/Printers*
@@ -891,7 +891,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**  
+<a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**
 
 <!--SupportedSKUs-->
 
@@ -929,7 +929,7 @@ If you disable this setting, this computer's shared printers can't be published 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow printers to be published*
 -   GP name: *PublishPrinters*
 -   GP path: *Printers*
@@ -940,7 +940,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-restrictdriverinstallationtoadministrators"></a>**Printers/RestrictDriverInstallationToAdministrators**  
+<a href="" id="printers-restrictdriverinstallationtoadministrators"></a>**Printers/RestrictDriverInstallationToAdministrators**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -966,7 +966,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This new Group Policy entry will be used to manage the `Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\RestrictDriverInstallationToAdministrators` registry entry for restricting print driver installation to Administrator users. 
+This new Group Policy entry will be used to manage the `Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint\RestrictDriverInstallationToAdministrators` registry entry for restricting print driver installation to Administrator users.
 
 This registry key was added to the print system as part of the 7OOB security update and use of this registry key was expanded as part of the 8B security rollup.
 
@@ -984,7 +984,7 @@ The following are the supported values:
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict installation of print drivers to Administrators*
 -   GP name: *RestrictDriverInstallationToAdministrators*
 -   GP path: *Printers*

@@ -4,7 +4,7 @@ description: Windows Defender Application Control restricts which applications u
 keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 11/20/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a WDAC policy for fully managed devices
@@ -30,7 +30,7 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
 > [!NOTE]
 > Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
@@ -46,7 +46,7 @@ Alice previously created a policy for the organization's lightly managed devices
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's fully managed devices:
 
 - All clients are running Windows 10 version 1903 or above or Windows 11;
-- All clients are managed by Microsoft Endpoint Manager either with Configuration Manager or with Intune;
+- All clients are managed by Configuration Manager or with Intune;
 - Most, but not all, apps are deployed using Configuration Manager;
 - Sometimes, IT staff install apps directly to these devices without using Configuration Manager;
 - All users except IT are standard users on these devices.

@@ -3,8 +3,8 @@ title: NetworkProxy CSP
 description: Learn how the NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/29/2018
 ms.reviewer: 
@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
-How the settings work:  
+How the settings work:
 
 - If auto-detect is enabled, the system tries to find the path to a Proxy Auto Config (PAC) script and download it.
 - If #1 fails and a setup script is specified, the system tries to download the explicitly configured PAC script.
@@ -47,10 +47,10 @@ NetworkProxy
 --------UseProxyForLocalAddresses
 ```
 
-<a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**  
+<a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**
 The root node for the NetworkProxy configuration service provider.
 
-<a href="" id="proxysettingsperuser"></a>**ProxySettingsPerUser**  
+<a href="" id="proxysettingsperuser"></a>**ProxySettingsPerUser**
 Added in Windows 10, version 1803. When set to 0, it enables proxy configuration as global, machine wide.
 
 Supported operations are Add, Get, Replace, and Delete.
@@ -73,22 +73,22 @@ Address to the PAC script you want to use.
 
 The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
-<a href="" id="proxyserver"></a>**ProxyServer**  
+<a href="" id="proxyserver"></a>**ProxyServer**
 Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
 
 Supported operation is Get.
 
-<a href="" id="proxyaddress"></a>**ProxyAddress**  
+<a href="" id="proxyaddress"></a>**ProxyAddress**
 Address to the proxy server. Specify an address in the format &lt;server&gt;[“:”&lt;port&gt;]. 
 
 The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
-<a href="" id="exceptions"></a>**Exceptions**  
+<a href="" id="exceptions"></a>**Exceptions**
 Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. 
 
 The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
-<a href="" id="useproxyforlocaladdresses"></a>**UseProxyForLocalAddresses**  
+<a href="" id="useproxyforlocaladdresses"></a>**UseProxyForLocalAddresses**
 Specifies whether the proxy server should be used for local (intranet) addresses. 
 
 Valid values:
@@ -131,7 +131,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
         </Meta>
         <Data>1</Data>
     </Item>
-</Replace> 
+</Replace>
 ```
 
 ```xml

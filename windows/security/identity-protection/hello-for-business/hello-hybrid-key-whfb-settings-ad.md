@@ -1,7 +1,7 @@
 ---
 title: Configuring Hybrid Azure AD joined key trust Windows Hello for Business - Active Directory (AD)
 description: Configuring Hybrid key trust Windows Hello for Business - Active Directory (AD)
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz

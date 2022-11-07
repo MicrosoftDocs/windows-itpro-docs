@@ -2,12 +2,13 @@
 title: User Experience Virtualization (UE-V) Release Notes
 description: Read the latest information required to successfully install and use User Experience Virtualization (UE-V) that isn't included in the UE-V documentation.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # User Experience Virtualization (UE-V) Release Notes

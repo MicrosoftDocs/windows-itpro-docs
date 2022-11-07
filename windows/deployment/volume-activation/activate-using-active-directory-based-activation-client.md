@@ -5,7 +5,7 @@ manager: dougeby
 author: aczechowski
 ms.author: aaroncz
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.date: 09/16/2022
 ms.topic: how-to

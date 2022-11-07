@@ -3,13 +3,14 @@ title: Using Update Compliance
 ms.reviewer: 
 manager: aczechowski
 description: Learn how to use Update Compliance to monitor your device's Windows updates.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Use Update Compliance
@@ -18,6 +19,9 @@ ms.custom: seo-marvel-apr2020
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Microsoft Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
 

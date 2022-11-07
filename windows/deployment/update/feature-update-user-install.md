@@ -1,7 +1,7 @@
 ---
-title: Best practices - deploy feature updates for user-initiated installations 
+title: Best practices - deploy feature updates for user-initiated installations
 description: Learn recommendations and best practices for manually deploying a feature update for a user-initiated installation.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -11,6 +11,7 @@ manager: dougeby
 ms.collection: M365-modern-desktop
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Deploy feature updates for user-initiated installations (during a fixed service window)

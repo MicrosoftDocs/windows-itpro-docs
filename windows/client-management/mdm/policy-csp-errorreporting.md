@@ -3,8 +3,8 @@ title: Policy CSP - ErrorReporting
 description: Learn how to use the Policy CSP - ErrorReporting setting to determine the consent behavior of Windows Error Reporting for specific event types.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ErrorReporting
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ErrorReporting policies  
+## ErrorReporting policies
 
 <dl>
   <dd>
@@ -47,7 +47,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**  
+<a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**
 
 <!--SupportedSKUs-->
 
@@ -92,7 +92,7 @@ If you disable or don't configure this policy setting, then the default consent 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Customize consent settings*
 -   GP name: *WerConsentCustomize_2*
 -   GP path: *Windows Components/Windows Error Reporting/Consent*
@@ -104,7 +104,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**  
+<a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**
 
 <!--SupportedSKUs-->
 
@@ -139,7 +139,7 @@ If you disable or don't configure this policy setting, the Turn off Windows Erro
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable Windows Error Reporting*
 -   GP name: *WerDisable_2*
 -   GP path: *Windows Components/Windows Error Reporting*
@@ -151,7 +151,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="errorreporting-displayerrornotification"></a>**ErrorReporting/DisplayErrorNotification**  
+<a href="" id="errorreporting-displayerrornotification"></a>**ErrorReporting/DisplayErrorNotification**
 
 <!--SupportedSKUs-->
 
@@ -190,7 +190,7 @@ See also the Configure Error Reporting policy setting.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display Error Notification*
 -   GP name: *PCH_ShowUI*
 -   GP path: *Windows Components/Windows Error Reporting*
@@ -202,7 +202,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="errorreporting-donotsendadditionaldata"></a>**ErrorReporting/DoNotSendAdditionalData**  
+<a href="" id="errorreporting-donotsendadditionaldata"></a>**ErrorReporting/DoNotSendAdditionalData**
 
 <!--SupportedSKUs-->
 
@@ -237,7 +237,7 @@ If you disable or don't configure this policy setting, then consent policy setti
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not send additional data*
 -   GP name: *WerNoSecondLevelData_2*
 -   GP path: *Windows Components/Windows Error Reporting*
@@ -249,7 +249,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="errorreporting-preventcriticalerrordisplay"></a>**ErrorReporting/PreventCriticalErrorDisplay**  
+<a href="" id="errorreporting-preventcriticalerrordisplay"></a>**ErrorReporting/PreventCriticalErrorDisplay**
 
 <!--SupportedSKUs-->
 
@@ -284,7 +284,7 @@ If you disable or don't configure this policy setting, Windows Error Reporting d
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent display of the user interface for critical errors*
 -   GP name: *WerDoNotShowUI*
 -   GP path: *Windows Components/Windows Error Reporting*

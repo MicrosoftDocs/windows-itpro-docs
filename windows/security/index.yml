@@ -12,8 +12,8 @@ metadata:
     - m365-security-compliance
     - highpri
   ms.custom: intro-hub-or-landing
-  author: dansimp #Required; your GitHub user alias, with correct capitalization.
-  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  author: paolomatarazzo
+  ms.author: paoloma
   ms.date: 09/20/2021
   localization_priority: Priority
 

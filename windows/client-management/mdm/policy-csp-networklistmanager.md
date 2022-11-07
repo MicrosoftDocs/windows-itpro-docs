@@ -3,8 +3,8 @@ title: Policy CSP - NetworkListManager
 description: Policy CSP - NetworkListManager is a setting creates a new MDM policy. This setting allows admins to configure a list of URIs of HTTPS endpoints that are considered secure.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 12/16/2021
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## NetworkListManager policies 
+## NetworkListManager policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="networklistmanager-allowedtlsauthenticationendpoints"></a>**NetworkListManager/AllowedTlsAuthenticationEndpoints**  
+<a href="" id="networklistmanager-allowedtlsauthenticationendpoints"></a>**NetworkListManager/AllowedTlsAuthenticationEndpoints**
 
 <!--SupportedSKUs-->
 
@@ -57,9 +57,9 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.  
+This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 
-When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must follow this format, even in the UI:  
+When entering a list of TLS endpoints in Microsoft Intune, you must follow this format, even in the UI:
 
 `<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>`
 
@@ -75,7 +75,7 @@ When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must fo
 <hr/>
 
 <!--Policy-->
-<a href="" id="networklistmanager-configuredtlsauthenticationnetworkname"></a>**NetworkListManager/ConfiguredTLSAuthenticationNetworkName**  
+<a href="" id="networklistmanager-configuredtlsauthenticationnetworkname"></a>**NetworkListManager/ConfiguredTLSAuthenticationNetworkName**
 
 <!--SupportedSKUs-->
 
@@ -107,6 +107,6 @@ This policy setting provides the string that is to be used to name a network. Th
 
 <!--/Policies-->
 
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

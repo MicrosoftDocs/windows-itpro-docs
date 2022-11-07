@@ -1,14 +1,14 @@
 ---
 title: Windows Defender Application Control and virtualization-based code integrity
 description: Hardware and software system integrity-hardening capabilities that can be deployed separately or in combination with Windows Defender Application Control (WDAC).
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.custom: asr
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Windows Defender Application Control and virtualization-based protection of code integrity

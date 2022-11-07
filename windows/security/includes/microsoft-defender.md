@@ -3,7 +3,7 @@ title: Microsoft 365 Defender important guidance
 description: A note in regard to important Microsoft 365 Defender guidance.
 ms.date: 
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz

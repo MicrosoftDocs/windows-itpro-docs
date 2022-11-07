@@ -54,7 +54,7 @@ landingContent:
             url: https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332
 
   # Card (optional)
-  - title: Configure Delivery Optimization on Microsoft Endpoint Manager
+  - title: Configure Delivery Optimization on Microsoft Intune or Configuration Manager
     linkLists:
       - linkListType: how-to-guide
         links:

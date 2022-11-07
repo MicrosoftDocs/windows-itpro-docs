@@ -1,7 +1,7 @@
 ---
 title: Azure AD Join Single Sign-on Deployment
 description: Learn how to provide single sign-on to your on-premises resources for Azure Active Directory-joined devices, using Windows Hello for Business.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,9 +10,9 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 # Azure AD Join Single Sign-on Deployment
 

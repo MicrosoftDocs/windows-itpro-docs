@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_TabletShell.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/23/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_TabletShell
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_TabletShell policies  
+## ADMX_TabletShell policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tabletshell-disableinkball_1"></a>**ADMX_TabletShell/DisableInkball_1**  
+<a href="" id="admx-tabletshell-disableinkball_1"></a>**ADMX_TabletShell/DisableInkball_1**
 
 <!--SupportedSKUs-->
 
@@ -65,9 +65,9 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting prevents start of InkBall game.  
+This policy setting prevents start of InkBall game.
 
-If you enable this policy, the InkBall game won't run.  
+If you enable this policy, the InkBall game won't run.
 
 If you disable this policy, the InkBall game will run.  If you don't configure this policy, the InkBall game will run.
 
@@ -75,7 +75,7 @@ If you disable this policy, the InkBall game will run.  If you don't configure t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow Inkball to run*
 -   GP name: *DisableInkball_1*
 -   GP path: *Windows Components\Tablet PC\Accessories*
@@ -87,7 +87,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tabletshell-disablenotewriterprinting_1"></a>**ADMX_TabletShell/DisableNoteWriterPrinting_1**  
+<a href="" id="admx-tabletshell-disablenotewriterprinting_1"></a>**ADMX_TabletShell/DisableNoteWriterPrinting_1**
 
 <!--SupportedSKUs-->
 
@@ -113,9 +113,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting prevents printing to Journal Note Writer.  
+This policy setting prevents printing to Journal Note Writer.
 
-If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print it will fail.  
+If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print it will fail.
 
 If you disable this policy, you'll be able to use this feature to print to a Journal Note.  If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 
@@ -124,7 +124,7 @@ If you disable this policy, you'll be able to use this feature to print to a Jou
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow printing to Journal Note Writer*
 -   GP name: *DisableNoteWriterPrinting_1*
 -   GP path: *Windows Components\Tablet PC\Accessories*

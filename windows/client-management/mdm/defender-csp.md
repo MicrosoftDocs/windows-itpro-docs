@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/22/2022
@@ -88,31 +88,31 @@ Defender
 ----UpdateSignature
 ----OfflineScan (Added in Windows 10 version 1803)
 ```
-<a href="" id="detections"></a>**Detections**  
+<a href="" id="detections"></a>**Detections**
 An interior node to group all threats detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid"></a>**Detections/**<strong>*ThreatId*</strong>  
+<a href="" id="detections-threatid"></a>**Detections/**<strong>*ThreatId*</strong>
 The ID of a threat that has been detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-name"></a>**Detections/*ThreatId*/Name**  
+<a href="" id="detections-threatid-name"></a>**Detections/*ThreatId*/Name**
 The name of the specific threat.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-url"></a>**Detections/*ThreatId*/URL**  
+<a href="" id="detections-threatid-url"></a>**Detections/*ThreatId*/URL**
 URL link for more threat information.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-severity"></a>**Detections/*ThreatId*/Severity**  
+<a href="" id="detections-threatid-severity"></a>**Detections/*ThreatId*/Severity**
 Threat severity ID.
 
 The data type is integer.
@@ -127,7 +127,7 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-category"></a>**Detections/*ThreatId*/Category**  
+<a href="" id="detections-threatid-category"></a>**Detections/*ThreatId*/Category**
 Threat category ID.
 
 The data type is integer.
@@ -190,7 +190,7 @@ The following table describes the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
+<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**
 Information about the current status of the threat.
 
 The data type is integer.
@@ -211,7 +211,7 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
+<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**
 Information about the current status of the threat.
 
 The data type is integer.
@@ -232,7 +232,7 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-executionstatus"></a>**Detections/*ThreatId*/ExecutionStatus**  
+<a href="" id="detections-threatid-executionstatus"></a>**Detections/*ThreatId*/ExecutionStatus**
 Information about the execution status of the threat.
 
 The data type is integer.
@@ -247,34 +247,34 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-initialdetectiontime"></a>**Detections/*ThreatId*/InitialDetectionTime**  
+<a href="" id="detections-threatid-initialdetectiontime"></a>**Detections/*ThreatId*/InitialDetectionTime**
 The first time this particular threat was detected.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-lastthreatstatuschangetime"></a>**Detections/*ThreatId*/LastThreatStatusChangeTime**  
+<a href="" id="detections-threatid-lastthreatstatuschangetime"></a>**Detections/*ThreatId*/LastThreatStatusChangeTime**
 The last time this particular threat was changed.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid-numberofdetections"></a>**Detections/*ThreatId*/NumberOfDetections**  
+<a href="" id="detections-threatid-numberofdetections"></a>**Detections/*ThreatId*/NumberOfDetections**
 Number of times this threat has been detected on a particular client.
 
 The data type is integer.
 
 Supported operation is Get.
 
-<a href="" id="enablenetworkprotection"></a>**EnableNetworkProtection** 
+<a href="" id="enablenetworkprotection"></a>**EnableNetworkProtection**
 
-The Network Protection Service is a network filter that helps to protect you against web-based malicious threats, including phishing and malware. The Network Protection service contacts the SmartScreen URL reputation service to validate the safety of connections to web resources. 
+The Network Protection Service is a network filter that helps to protect you against web-based malicious threats, including phishing and malware. The Network Protection service contacts the SmartScreen URL reputation service to validate the safety of connections to web resources.
 The acceptable values for this parameter are:
 - 0: Disabled. The Network Protection service won't block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
 - 1: Enabled. The Network Protection service will block connections to malicious websites based on URL Reputation from the SmartScreen URL reputation service.
-- 2: AuditMode. As above, but the Network Protection service won't block connections to malicious websites, but will instead log the access to the event log. 
+- 2: AuditMode. As above, but the Network Protection service won't block connections to malicious websites, but will instead log the access to the event log.
 
 Accepted values: Disabled, Enabled, and AuditMode
 Position: Named
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 
 <a href="" id="enablenetworkprotection-allownetworkprotectiondownlevel"></a>**EnableNetworkProtection/AllowNetworkProtectionDownLevel**
 
-By default, network protection isn't allowed to be enabled on Windows versions before 1709, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode. 
+By default, network protection isn't allowed to be enabled on Windows versions before 1709, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode.
 - Type: Boolean
 - Position: Named
 - Default value: False
@@ -401,17 +401,17 @@ Network Protection inspects TLS traffic (also known as HTTPS traffic) to see if 
 - Accept pipeline input: False
 - Accept wildcard characters: False
 
-<a href="" id="health"></a>**Health**  
+<a href="" id="health"></a>**Health**
 An interior node to group information about Windows Defender health status.
 
 Supported operation is Get.
 
-<a href="" id="health-productstatus"></a>**Health/ProductStatus**  
+<a href="" id="health-productstatus"></a>**Health/ProductStatus**
 Added in Windows 10, version 1809. Provide the current state of the product. This value is a bitmask flag value that can represent one or multiple product states from below list.
 
 The data type is integer. Supported operation is Get.
 
-Supported product status values:  
+Supported product status values:
 -  No status                                                        = 0
 -  Service not running                                              = 1 << 0
 -  Service started without any malware protection engine            = 1 << 1
@@ -457,7 +457,7 @@ Example:
 </SyncML>
 ```
 
-<a href="" id="health-computerstate"></a>**Health/ComputerState**  
+<a href="" id="health-computerstate"></a>**Health/ComputerState**
 Provide the current state of the device.
 
 The data type is integer.
@@ -473,28 +473,28 @@ The following list shows the supported values:
 
 Supported operation is Get.
 
-<a href="" id="health-defenderenabled"></a>**Health/DefenderEnabled**  
+<a href="" id="health-defenderenabled"></a>**Health/DefenderEnabled**
 Indicates whether the Windows Defender service is running.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-rtpenabled"></a>**Health/RtpEnabled**  
+<a href="" id="health-rtpenabled"></a>**Health/RtpEnabled**
 Indicates whether real-time protection is running.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-nisenabled"></a>**Health/NisEnabled**  
+<a href="" id="health-nisenabled"></a>**Health/NisEnabled**
 Indicates whether network protection is running.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
+<a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
 A Quick scan is overdue when a scheduled Quick scan didn't complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
@@ -503,7 +503,7 @@ The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
+<a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**
 Indicates whether a Windows Defender full scan is overdue for the device.
 
 A Full scan is overdue when a scheduled Full scan didn't complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
@@ -512,96 +512,96 @@ The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-signatureoutofdate"></a>**Health/SignatureOutOfDate**  
+<a href="" id="health-signatureoutofdate"></a>**Health/SignatureOutOfDate**
 Indicates whether the Windows Defender signature is outdated.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-rebootrequired"></a>**Health/RebootRequired**  
+<a href="" id="health-rebootrequired"></a>**Health/RebootRequired**
 Indicates whether a device reboot is needed.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscanrequired"></a>**Health/FullScanRequired**  
+<a href="" id="health-fullscanrequired"></a>**Health/FullScanRequired**
 Indicates whether a Windows Defender full scan is required.
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-engineversion"></a>**Health/EngineVersion**  
+<a href="" id="health-engineversion"></a>**Health/EngineVersion**
 Version number of the current Windows Defender engine on the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-signatureversion"></a>**Health/SignatureVersion**  
+<a href="" id="health-signatureversion"></a>**Health/SignatureVersion**
 Version number of the current Windows Defender signatures on the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-defenderversion"></a>**Health/DefenderVersion**  
+<a href="" id="health-defenderversion"></a>**Health/DefenderVersion**
 Version number of Windows Defender on the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-quickscantime"></a>**Health/QuickScanTime**  
+<a href="" id="health-quickscantime"></a>**Health/QuickScanTime**
 Time of the last Windows Defender quick scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscantime"></a>**Health/FullScanTime**  
+<a href="" id="health-fullscantime"></a>**Health/FullScanTime**
 Time of the last Windows Defender full scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-quickscansigversion"></a>**Health/QuickScanSigVersion**  
+<a href="" id="health-quickscansigversion"></a>**Health/QuickScanSigVersion**
 Signature version used for the last quick scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-fullscansigversion"></a>**Health/FullScanSigVersion**  
+<a href="" id="health-fullscansigversion"></a>**Health/FullScanSigVersion**
 Signature version used for the last full scan of the device.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**  
+<a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**
 Indicates whether the Windows Defender tamper protection feature is enabled.​
 
 The data type is a Boolean.
 
 Supported operation is Get.
 
-<a href="" id="health-isvirtualmachine"></a>**Health/IsVirtualMachine**  
+<a href="" id="health-isvirtualmachine"></a>**Health/IsVirtualMachine**
 Indicates whether the device is a virtual machine.
 
 The data type is a string.
 
 Supported operation is Get.
 
-<a href="" id="configuration"></a>**Configuration**  
+<a href="" id="configuration"></a>**Configuration**
 An interior node to group Windows Defender configuration information.
 
 Supported operation is Get.
 
-<a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**  
+<a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**
 
 Tamper protection helps protect important security features from unwanted changes and interference. This protection includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
 
@@ -612,7 +612,7 @@ The data type is a Signed BLOB.
 
 Supported operations are Add, Delete, Get, Replace.
 
-Intune tamper protection setting UX supports three states:  
+Intune tamper protection setting UX supports three states:
 - Not configured (default): Doesn't have any impact on the default state of the device.
 - Enabled: Enables the tamper protection feature.
 - Disabled: Turns off the tamper protection feature.
@@ -635,7 +635,7 @@ The data type is integer.
 
 Supported operations are Add, Delete, Get, Replace.
 
-Valid values are:  
+Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
@@ -656,20 +656,20 @@ The data type is integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
-Valid values are:  
+Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
-<a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
+<a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>
 
-Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans, this flag will have no impact and normal throttling will occur.	
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans, this flag will have no impact and normal throttling will occur.
 
-The data type is integer.	
+The data type is integer.
 
-Supported operations are Add, Delete, Get, and Replace.	
+Supported operations are Add, Delete, Get, and Replace.
 
-Valid values are:	
--	1 (default) – Enable.	
+Valid values are:
+-	1 (default) – Enable.
 -	0 – Disable.
 
 <a href="" id="configuration-meteredconnectionupdates"></a>**Configuration/MeteredConnectionUpdates**<br>
@@ -701,7 +701,7 @@ The data type is string.
 
 Supported operations are Add, Delete, Get, and Replace.
 
-<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
+<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**
 Enables or disables file hash computation feature.
 When this feature is enabled, Windows Defender will compute hashes for files it scans.
 
@@ -709,29 +709,29 @@ The data type is integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
-Valid values are:  
+Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
-<a href="" id="configuration-supportloglocation"></a>**Configuration/SupportLogLocation**  
-The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (**MpCmdRun.exe**) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise. 
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SupportLogLocation**
+The support log location setting allows the administrator to specify where the Microsoft Defender Antivirus diagnostic data collection tool (**MpCmdRun.exe**) will save the resulting log files. This setting is configured with an MDM solution, such as Intune, and is available for Windows 10 Enterprise.
 
 Data type is string.
 
 Supported operations are Add, Delete, Get, and Replace.
 
-Intune Support log location setting UX supports three states:  
+Intune Support log location setting UX supports three states:
 
-- Not configured (default) - Doesn't have any impact on the default state of the device. 
+- Not configured (default) - Doesn't have any impact on the default state of the device.
 - 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
-- 0 - Disabled. Turns off the Support log location feature. 
+- 0 - Disabled. Turns off the Support log location feature.
 
-When enabled or disabled exists on the client and admin moves the setting to not configured, it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+When enabled or disabled exists on the client and admin moves the setting to not configured, it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
-More details:  
+More details:
 
-- [Microsoft Defender Antivirus diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
-- [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
+- [Microsoft Defender Antivirus diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)
+- [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)
 
 <a href="" id="configuration-platformupdateschannel"></a>**Configuration/PlatformUpdatesChannel**
 Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.
@@ -744,7 +744,7 @@ Current Channel (Staged): Devices will be offered updates after the monthly grad
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
-Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only 
+Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only
 
 If you disable or don't configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
@@ -761,10 +761,10 @@ Valid values are:
 - 6: Critical- Time Delay
 
 
-More details:  
+More details:
 
-- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
-- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)
 
 <a href="" id="configuration-engineupdateschannel"></a>**Configuration/EngineUpdatesChannel**
 Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.
@@ -793,12 +793,12 @@ Valid values are:
 - 5: Current Channel (Broad)
 - 6: Critical- Time Delay
 
-More details:  
+More details:
 
-- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
-- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)
 
-<a href="" id="configuration-definitionupdateschannel"></a>**Configuration/SecurityIntelligenceUpdatesChannel** 
+<a href="" id="configuration-definitionupdateschannel"></a>**Configuration/SecurityIntelligenceUpdatesChannel**
 Enable this policy to specify when devices receive daily Microsoft Defender security intelligence (definition) updates during the daily gradual rollout.
 
 Current Channel (Staged): Devices will be offered updates after the release cycle. Suggested to apply to a small, representative part of production population (~10%).
@@ -815,10 +815,10 @@ Valid Values are:
 - 4: Current Channel (Staged)
 - 5: Current Channel (Broad)
 
-More details:  
+More details:
 
-- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
-- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)
 
 <a href="" id="configuration-disablegradualrelease"></a>**Configuration/DisableGradualRelease**
 Enable this policy to disable gradual rollout of monthly and daily Microsoft Defender updates.
@@ -837,10 +837,10 @@ Valid values are:
 - 1 – Enabled.
 -	0 (default) – Not Configured.
 
-More details:  
+More details:
 
-- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
-- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)
 
 <a href="" id="configuration-passiveremediation"></a>**Configuration/PassiveRemediation**
 This policy setting enables or disables EDR in block mode (recommended for devices running Microsoft Defender Antivirus in passive mode). For more information, see Endpoint detection and response in block mode | Microsoft Docs. Available with platform release: 4.18.2202.X
@@ -852,7 +852,7 @@ Supported values:
 - 0: Turn EDR in block mode off
 
 
-<a href="" id="scan"></a>**Scan**  
+<a href="" id="scan"></a>**Scan**
 Node that can be used to start a Windows Defender scan on a device.
 
 Valid values are:
@@ -861,16 +861,16 @@ Valid values are:
 
 Supported operations are Get and Execute.
 
-<a href="" id="updatesignature"></a>**UpdateSignature**  
+<a href="" id="updatesignature"></a>**UpdateSignature**
 Node that can be used to perform signature updates for Windows Defender.
 
 Supported operations are Get and Execute.
 
-<a href="" id="offlinescan"></a>**OfflineScan**  
+<a href="" id="offlinescan"></a>**OfflineScan**
 Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defender Offline scan on the computer where you run the command. After the next OS reboot, the device will start in Microsoft Defender Offline mode to begin the scan.
 
 Supported operations are Get and Execute.
 
 ## See also
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

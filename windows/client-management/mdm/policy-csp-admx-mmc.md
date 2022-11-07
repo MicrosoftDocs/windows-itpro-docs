@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_MMC.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/03/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_MMC
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_MMC policies  
+## ADMX_MMC policies
 
 <dl>
   <dd>
@@ -47,7 +47,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmc-mmc-activexcontrol"></a>**ADMX_MMC/MMC_ActiveXControl**  
+<a href="" id="admx-mmc-mmc-activexcontrol"></a>**ADMX_MMC/MMC_ActiveXControl**
 
 <!--SupportedSKUs-->
 
@@ -93,7 +93,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *ActiveX Control*
 -   GP name: *MMC_ActiveXControl*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -104,7 +104,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmc-mmc-extendview"></a>**ADMX_MMC/MMC_ExtendView**  
+<a href="" id="admx-mmc-mmc-extendview"></a>**ADMX_MMC/MMC_ExtendView**
 
 <!--SupportedSKUs-->
 
@@ -150,7 +150,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Extended View (Web View)*
 -   GP name: *MMC_ExtendView*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
@@ -161,7 +161,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmc-mmc-linktoweb"></a>**ADMX_MMC/MMC_LinkToWeb**  
+<a href="" id="admx-mmc-mmc-linktoweb"></a>**ADMX_MMC/MMC_LinkToWeb**
 
 <!--SupportedSKUs-->
 
@@ -207,7 +207,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Link to Web Address*
 -   GP name: *MMC_LinkToWeb*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
@@ -218,7 +218,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmc-mmc-restrict-author"></a>**ADMX_MMC/MMC_Restrict_Author**  
+<a href="" id="admx-mmc-mmc-restrict-author"></a>**ADMX_MMC/MMC_Restrict_Author**
 
 <!--SupportedSKUs-->
 
@@ -258,7 +258,7 @@ If you disable this setting or don't configure it, users can enter author mode a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict the user from entering author mode*
 -   GP name: *MMC_Restrict_Author*
 -   GP path: *Windows Components\Microsoft Management Console*
@@ -269,7 +269,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mmc-mmc-restrict-to-permitted-snapins"></a>**ADMX_MMC/MMC_Restrict_To_Permitted_Snapins**  
+<a href="" id="admx-mmc-mmc-restrict-to-permitted-snapins"></a>**ADMX_MMC/MMC_Restrict_To_Permitted_Snapins**
 
 <!--SupportedSKUs-->
 
@@ -314,7 +314,7 @@ When a snap-in is prohibited, it doesn't appear in the Add/Remove Snap-in window
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict users to the explicitly permitted list of snap-ins*
 -   GP name: *MMC_Restrict_To_Permitted_Snapins*
 -   GP path: *Windows Components\Microsoft Management Console*

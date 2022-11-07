@@ -5,7 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dulcemontemayor
-manager: dansimp
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
@@ -40,7 +40,7 @@ The toolkit supports formats created by the Windows GPO backup feature (`.pol`, 
 
 Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We're currently developing a tool to provide customers with these features.
 
-### Does SCT support the creation of Microsoft Endpoint Configuration Manager DCM packs?
+### Does SCT support the creation of Microsoft Configuration Manager DCM packs?
 
 No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616). A tool that supports conversion of GPO backups to DSC format is the [BaselineManagement module](https://github.com/Microsoft/BaselineManagement).
 

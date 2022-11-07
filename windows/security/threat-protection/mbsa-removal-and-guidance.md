@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.technology: windows-sec
 ---
  

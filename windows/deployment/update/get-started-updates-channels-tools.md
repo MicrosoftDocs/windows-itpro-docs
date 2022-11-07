@@ -1,13 +1,13 @@
 ---
 title: Windows client updates, channels, and tools
 description: Brief summary of the kinds of Windows updates, the channels they are served through, and the tools for managing them
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-updates
 ---
 
 # Windows client updates, channels, and tools
@@ -44,7 +44,7 @@ We include information here about many different update types you'll hear about,
 
 There are three servicing channels, each of which offers you a different level of flexibility with how and when updates are delivered to devices. Using the different servicing channels allows you to deploy Windows "as a service," which conceives of deployment as a continual process of updates that roll out across the organization in waves. In this approach, an update is plugged into this process and while it runs, you monitor for anomalies, errors, or user impact and respond as issues arise--without interrupting the entire process.
 
-The first step of controlling when and how devices install updates is assigning them to the appropriate servicing channel. You can assign devices to a particular channel with any of several tools, including Microsoft Endpoint Configuration Manager, Windows Server Update Services (WSUS), and Group Policy settings applied by any of several means. By dividing devices into different populations ("deployment groups" or "rings") you can use servicing channel assignment, followed by other management features such as update deferral policies, to create a phased deployment of any update that allows you to start with a limited pilot deployment for testing before moving to a broad deployment throughout your organization.
+The first step of controlling when and how devices install updates is assigning them to the appropriate servicing channel. You can assign devices to a particular channel with any of several tools, including Microsoft Configuration Manager, Windows Server Update Services (WSUS), and Group Policy settings applied by any of several means. By dividing devices into different populations ("deployment groups" or "rings") you can use servicing channel assignment, followed by other management features such as update deferral policies, to create a phased deployment of any update that allows you to start with a limited pilot deployment for testing before moving to a broad deployment throughout your organization.
 
 
 ### General Availability Channel

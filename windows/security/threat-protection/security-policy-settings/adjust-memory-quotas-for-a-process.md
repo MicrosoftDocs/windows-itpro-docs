@@ -3,19 +3,19 @@ title: Adjust memory quotas for a process (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Adjust memory quotas for a process security policy setting.
 ms.assetid: 6754a2c8-6d07-4567-9af3-335fd8dd7626
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Adjust memory quotas for a process

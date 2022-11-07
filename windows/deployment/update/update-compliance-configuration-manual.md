@@ -3,12 +3,13 @@ title: Manually configuring devices for Update Compliance
 ms.reviewer: 
 manager: aczechowski
 description: Manually configuring devices for Update Compliance
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Manually Configuring Devices for Update Compliance
@@ -17,6 +18,10 @@ ms.topic: article
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows client. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
@@ -67,7 +72,7 @@ All Group policies that need to be configured for Update Compliance are under **
 To enable data sharing between devices, your network, and Microsoft's Diagnostic Data Service, configure your proxy to allow devices to contact the below endpoints.
 
 <!--Using include for endpoint access requirements-->
-[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
+[!INCLUDE [Endpoints for Update Compliance](./includes/wufb-reports-endpoints.md)]
 
 ## Required services
 

@@ -3,19 +3,19 @@ title: User Account Control Only elevate executables that are signed and validat
 description: Best practices, security considerations, and more for the security policy setting, User Account Control Only elevate executables that are signed and validated.
 ms.assetid: 64950a95-6985-4db6-9905-1db18557352d
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Only elevate executables that are signed and validated

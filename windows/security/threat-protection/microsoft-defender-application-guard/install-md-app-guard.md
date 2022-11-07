@@ -1,18 +1,20 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge (Windows)
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.date: 09/09/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.custom: asr
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # Prepare to install Microsoft Defender Application Guard
@@ -92,7 +94,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
 :::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune.":::
 
-1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 1. Choose **Devices** > **Configuration profiles** > **+ Create profile**, and do the following: <br/>
 

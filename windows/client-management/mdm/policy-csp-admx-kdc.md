@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_kdc.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/13/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_kdc
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_kdc policies  
+## ADMX_kdc policies
 
 <dl>
   <dd>
@@ -51,7 +51,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kdc-cbacandarmor"></a>**ADMX_kdc/CbacAndArmor**  
+<a href="" id="admx-kdc-cbacandarmor"></a>**ADMX_kdc/CbacAndArmor**
 
 <!--SupportedSKUs-->
 
@@ -79,20 +79,20 @@ manager: aaroncz
 <!--Description-->
 This policy setting allows you to configure a domain controller to support claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication.
 
-If you enable this policy setting, client computers that support claims and compound authentication for Dynamic Access Control and are Kerberos armor-aware will use this feature for Kerberos authentication messages. This policy should be applied to all domain controllers to ensure consistent application of this policy in the domain. 
+If you enable this policy setting, client computers that support claims and compound authentication for Dynamic Access Control and are Kerberos armor-aware will use this feature for Kerberos authentication messages. This policy should be applied to all domain controllers to ensure consistent application of this policy in the domain.
 
 If you disable or don't configure this policy setting, the domain controller doesn't support claims, compound authentication or armoring.
 
 If you configure the "Not supported" option, the domain controller doesn't support claims, compound authentication or armoring, which is the default behavior for domain controllers running Windows Server 2008 R2 or earlier operating systems.
 
 > [!NOTE]
-> For the following options of this KDC policy to be effective, the Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must be enabled on supported systems. If the Kerberos policy setting isn't enabled, Kerberos authentication messages won't use these features.  
+> For the following options of this KDC policy to be effective, the Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must be enabled on supported systems. If the Kerberos policy setting isn't enabled, Kerberos authentication messages won't use these features.
 
-If you configure "Supported", the domain controller supports claims, compound authentication and Kerberos armoring. The domain controller advertises to Kerberos client computers that the domain is capable of claims and compound authentication for Dynamic Access Control and Kerberos armoring. 
+If you configure "Supported", the domain controller supports claims, compound authentication and Kerberos armoring. The domain controller advertises to Kerberos client computers that the domain is capable of claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
 **Domain functional level requirements**
 
-For the options "Always provide claims" and "Fail unarmored authentication requests", when the domain functional level is set to Windows Server 2008 R2 or earlier, then domain controllers behave as if the "Supported" option is selected. 
+For the options "Always provide claims" and "Fail unarmored authentication requests", when the domain functional level is set to Windows Server 2008 R2 or earlier, then domain controllers behave as if the "Supported" option is selected.
 
 When the domain functional level is set to Windows Server 2012 then the domain controller advertises to Kerberos client computers that the domain is capable of claims and compound authentication for Dynamic Access Control and Kerberos armoring, and:
 
@@ -114,7 +114,7 @@ Impact on domain controller performance when this policy setting is enabled:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *KDC support for claims, compound authentication and Kerberos armoring*
 -   GP name: *CbacAndArmor*
 -   GP path: *System/KDC*
@@ -125,7 +125,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kdc-forestsearch"></a>**ADMX_kdc/ForestSearch**  
+<a href="" id="admx-kdc-forestsearch"></a>**ADMX_kdc/ForestSearch**
 
 <!--SupportedSKUs-->
 
@@ -163,7 +163,7 @@ To ensure consistent behavior, this policy setting must be supported and set ide
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Use forest search order*
 -   GP name: *ForestSearch*
 -   GP path: *System/KDC*
@@ -174,7 +174,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kdc-pkinitfreshness"></a>**ADMX_kdc/PKINITFreshness**  
+<a href="" id="admx-kdc-pkinitfreshness"></a>**ADMX_kdc/PKINITFreshness**
 
 <!--SupportedSKUs-->
 
@@ -216,7 +216,7 @@ If you disable or not configure this policy setting, then the DC will never offe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *KDC support for PKInit Freshness Extension*
 -   GP name: *PKINITFreshness*
 -   GP path: *System/KDC*
@@ -227,7 +227,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kdc-requestcompoundid"></a>**ADMX_kdc/RequestCompoundId**  
+<a href="" id="admx-kdc-requestcompoundid"></a>**ADMX_kdc/RequestCompoundId**
 
 <!--SupportedSKUs-->
 
@@ -256,9 +256,9 @@ ADMX Info:
 This policy setting allows you to configure a domain controller to request compound authentication.
 
 > [!NOTE]
-> For a domain controller to request compound authentication, the policy "KDC support for claims, compound authentication, and Kerberos armoring" must be configured and enabled. 
+> For a domain controller to request compound authentication, the policy "KDC support for claims, compound authentication, and Kerberos armoring" must be configured and enabled.
 
-If you enable this policy setting, domain controllers will request compound authentication. The returned service ticket will contain compound authentication only when the account is explicitly configured. This policy should be applied to all domain controllers to ensure consistent application of this policy in the domain. 
+If you enable this policy setting, domain controllers will request compound authentication. The returned service ticket will contain compound authentication only when the account is explicitly configured. This policy should be applied to all domain controllers to ensure consistent application of this policy in the domain.
 
 If you disable or don't configure this policy setting, domain controllers will return service tickets that contain compound authentication anytime the client sends a compound authentication request regardless of the account configuration.
 
@@ -266,7 +266,7 @@ If you disable or don't configure this policy setting, domain controllers will r
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Request compound authentication*
 -   GP name: *RequestCompoundId*
 -   GP path: *System/KDC*
@@ -277,7 +277,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kdc-ticketsizethreshold"></a>**ADMX_kdc/TicketSizeThreshold** 
+<a href="" id="admx-kdc-ticketsizethreshold"></a>**ADMX_kdc/TicketSizeThreshold**
 
 <!--SupportedSKUs-->
 
@@ -313,7 +313,7 @@ If you disable or don't configure this policy setting, the threshold value defau
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Warning for large Kerberos tickets*
 -   GP name: *TicketSizeThreshold*
 -   GP path: *System/KDC*
@@ -324,7 +324,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kdc-emitlili"></a>**ADMX_kdc/emitlili** 
+<a href="" id="admx-kdc-emitlili"></a>**ADMX_kdc/emitlili**
 
 <!--SupportedSKUs-->
 
@@ -365,7 +365,7 @@ If you disable or don't configure this policy setting, the domain controller doe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Provide information about previous logons to client computers*
 -   GP name: *emitlili*
 -   GP path: *System/KDC*

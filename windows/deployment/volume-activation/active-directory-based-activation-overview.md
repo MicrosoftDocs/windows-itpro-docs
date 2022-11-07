@@ -4,10 +4,11 @@ description: Enable your enterprise to activate its computers through a connecti
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.date: 12/07/2018
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Active Directory-Based Activation overview

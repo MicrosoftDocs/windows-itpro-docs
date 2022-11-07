@@ -1,17 +1,8 @@
 ---
 title: Set up student PCs to join domain
-description: Learn how to use Configuration Designer to provision student devices to join Active Directory.
-keywords: school, student PC setup, Windows Configuration Designer
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how to use Windows Configuration Designer to provision student devices to join Active Directory.
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
 - ✅ <b>Windows 10</b>
 ---
@@ -64,9 +55,5 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
      > [!IMPORTANT]
      > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-
 ## Apply package
 Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
-
-
-

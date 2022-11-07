@@ -3,8 +3,8 @@ title: Policy CSP - Notifications
 description: Block applications from using the network to send tile, badge, toast, and raw notifications for Policy CSP - Notifications.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Notifications policies  
+## Notifications policies
 
 <dl>
   <dd>
@@ -38,7 +38,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-disallowcloudnotification"></a>**Notifications/DisallowCloudNotification**  
+<a href="" id="notifications-disallowcloudnotification"></a>**Notifications/DisallowCloudNotification**
 
 <!--SupportedSKUs-->
 
@@ -79,7 +79,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off notifications network usage*
 -   GP name: *NoCloudNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
@@ -91,7 +91,7 @@ This setting supports a range of values between 0 and 1.
 
 <!--/SupportedValues-->
 <!--Validation-->
-Validation:  
+Validation:
 1. Enable policy.
 2. Reboot machine.
 3. Ensure that you can't receive a notification from Facebook app while FB app isn't running.
@@ -102,7 +102,7 @@ Validation:
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-disallownotificationmirroring"></a>**Notifications/DisallowNotificationMirroring**  
+<a href="" id="notifications-disallownotificationmirroring"></a>**Notifications/DisallowNotificationMirroring**
 
 <!--SupportedSKUs-->
 
@@ -136,7 +136,7 @@ No reboot or service restart is required for this policy to take effect.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off notification mirroring*
 -   GP name: *NoNotificationMirroring*
 -   GP path: *Start Menu and Taskbar/Notifications*
@@ -155,7 +155,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-disallowtilenotification"></a>**Notifications/DisallowTileNotification**  
+<a href="" id="notifications-disallowtilenotification"></a>**Notifications/DisallowTileNotification**
 
 <!--SupportedSKUs-->
 
@@ -191,7 +191,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off tile notifications*
 -   GP name: *NoTileNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
@@ -203,7 +203,7 @@ This setting supports a range of values between 0 and 1.
 
 <!--/SupportedValues-->
 <!--Validation-->
-Validation:  
+Validation:
 1. Enable policy.
 2. Reboot machine.
 3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile).
@@ -213,7 +213,7 @@ Validation:
 <hr/>
 
 <!--Policy-->
-<a href="" id="notifications-wnsendpoint"></a>**Notifications/WnsEndpoint**  
+<a href="" id="notifications-wnsendpoint"></a>**Notifications/WnsEndpoint**
 
 <!--SupportedSKUs-->
 <table>
@@ -262,7 +262,7 @@ Validation:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines which Windows Notification Service endpoint will be used to connect for Windows Push Notifications. 
+This policy setting determines which Windows Notification Service endpoint will be used to connect for Windows Push Notifications.
 
 If you disable or don't configure this setting, the push notifications will connect to the default endpoint of client.wns.windows.com.
 
@@ -271,7 +271,7 @@ If you disable or don't configure this setting, the push notifications will conn
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Required for Airgap servers that may have a unique FQDN that is different from the public endpoint*
 -   GP name: *WnsEndpoint*
 -   GP path: *Start Menu and Taskbar/Notifications*

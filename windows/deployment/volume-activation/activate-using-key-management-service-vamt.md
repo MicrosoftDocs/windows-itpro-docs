@@ -3,12 +3,13 @@ title: Activate using Key Management Service (Windows 10)
 manager: dougeby
 ms.author: aaroncz
 description: How to activate using Key Management Service in Windows 10.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.date: 10/16/2017
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # Activate using Key Management Service

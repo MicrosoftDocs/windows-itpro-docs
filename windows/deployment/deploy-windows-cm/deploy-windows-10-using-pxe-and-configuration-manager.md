@@ -1,14 +1,15 @@
 ---
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
-description: In this topic, you'll learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences.
+description: In this article, you'll learn how to deploy Windows 10 using Microsoft Configuration Manager deployment packages and task sequences.
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Deploy Windows 10 using PXE and Configuration Manager
@@ -17,9 +18,9 @@ ms.collection: highpri
 
 -   Windows 10
 
-In this topic, you'll learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
+In this article, you'll learn how to deploy Windows 10 using Microsoft Configuration Manager deployment packages and task sequences. This article will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this article.
 
-This topic assumes that you've completed the following prerequisite procedures:
+This article assumes that you've completed the following prerequisite procedures:
 - [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 - [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
 - [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
@@ -39,7 +40,7 @@ For the purposes of this guide, we'll use a minimum of two server computers (DC0
 
 All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
-All server and client computers referenced in this guide are on the same subnet. This connection isn't required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
+All server and client computers referenced in this guide are on the same subnet. This connection isn't required. But each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the `contoso.com` domain. Internet connectivity is also required to download OS and application updates.
 
 >[!NOTE]
 >No WDS console configuration is required for PXE to work. Everything is done with the Configuration Manager console.
@@ -47,11 +48,11 @@ All server and client computers referenced in this guide are on the same subnet.
 ## Procedures
 
 1. Start the PC0001 computer. At the Pre-Boot Execution Environment (PXE) boot menu, press **Enter** to allow it to PXE boot.
-2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass\@word1** and click **Next**.
-3. On the **Select a task sequence to run** page, select **Windows 10 Enterprise x64 RTM** and click **Next**.
-4. On the **Edit Task Sequence Variables** page, double-click the **OSDComputerName** variable, and in the **Value** field, type **PC0001** and click **OK**. Then click **Next**.
+2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass\@word1** and select **Next**.
+3. On the **Select a task sequence to run** page, select **Windows 10 Enterprise x64 RTM** and select **Next**.
+4. On the **Edit Task Sequence Variables** page, double-click the **OSDComputerName** variable, and in the **Value** field, type **PC0001** and select **OK**. Then select **Next**.
 5. The operating system deployment will take several minutes to complete. 
-6. You can monitor the deployment on CM01 using the MDT Deployment Workbench. When you see the PC0001 entry, double-click **PC0001**, and then click **DaRT Remote Control** and review the **Remote Control** option. The task sequence will run and do the following steps:
+6. You can monitor the deployment on CM01 using the MDT Deployment Workbench. When you see the PC0001 entry, double-click **PC0001**, and then select **DaRT Remote Control** and review the **Remote Control** option. The task sequence will run and do the following steps:
 
     * Install the Windows 10 operating system.
     * Install the Configuration Manager client and the client hotfix.
@@ -86,7 +87,7 @@ Examples are provided below of various stages of deployment:
 
 Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
-## Related topics
+## Related articles
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>

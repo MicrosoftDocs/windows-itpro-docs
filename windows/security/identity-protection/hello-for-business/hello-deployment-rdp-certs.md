@@ -1,7 +1,7 @@
 ---
 title: Deploying Certificates to Key Trust Users to Enable RDP
 description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,18 +10,19 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 02/22/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Hybrid deployment</b>
+  - ✅ <b>Key trust</b>
+  - ✅ <b>Cloud Kerberos trust</b>
 ---
 
-# Deploying Certificates to Key Trust Users to Enable RDP
+# Deploy Certificates to Key Trust and Cloud Kerberos Trust Users to Enable RDP
 
 Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. For certificate trust deployments, creation of this certificate occurs at container creation time.
 
-This document discusses an approach for key trust deployments where authentication certificates can be deployed to an existing key trust user.
+This document discusses an approach for key trust and cloud Kerberos trust deployments where authentication certificates can be deployed to an existing WHFB user.
 
 Three approaches are documented here:
 
@@ -77,7 +78,7 @@ Three approaches are documented here:
     1. Tick **Microsoft Software Key Storage Provider**
     1. Set the Request hash to **SHA256**
 
-1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them  .
+1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them.
 
 1. Click **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates.
 
@@ -87,7 +88,7 @@ Three approaches are documented here:
 
 1. Execute the following command:
 
-    certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt
+    `certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt`
 
     Replace \<TemplateName\> with the Template name you took note of earlier in step 7.
 

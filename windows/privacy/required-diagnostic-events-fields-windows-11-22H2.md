@@ -2,15 +2,13 @@
 description: Learn more about the Windows 11, version 22H2 diagnostic data gathered.
 title: Required diagnostic events and fields for Windows 11, version 22H2
 keywords: privacy, telemetry
-ms.prod: w10
+ms.prod: windows-client
+ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: dougeby
-ms.collection: M365-security-compliance
-ms.topic: article
-audience: ITPro
-ms.date: 09/20/2022
+ms.topic: reference
 ---
 
 
@@ -29,13 +27,14 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 - [Required diagnostic events and fields for Windows 11, version 21H2](required-windows-11-diagnostic-events-and-fields.md)
-- [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Required diagnostic events and fields for Windows 10: versions 22H2, 21H2, 21H1, 20H2, and 2004](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
 - [Windows 10, version 1703 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
+
 
 
 
@@ -187,7 +186,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DataSourceMatchingInfoBlockRemove
@@ -210,7 +208,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosAdd
@@ -222,7 +219,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **AppraiserVersion**  The version of the Appraiser file generating the events.
-- **SdbEntries**  Deprecated in RS3.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceSystemBiosStartSync
@@ -966,9 +962,9 @@ The following fields are available:
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
 ### Census.Memory
@@ -1039,7 +1035,7 @@ The following fields are available:
 - **ServiceMachineIP**  Retrieves the IP address of the KMS host used for anti-piracy.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **ServiceProductKeyID**  Retrieves the License key of the KMS
-- **SharedPCMode**  Returns Boolean for education devices used as shared cart
+- **SharedPCMode**  Returns Boolean for devices that have enabled the configuration EnableSharedPCMode.
 - **Signature**  Retrieves if it is a signature machine sold by Microsoft store.
 - **SLICStatus**  Whether a SLIC table exists on the device.
 - **SLICVersion**  Returns OS type/version from SLIC table.
@@ -1106,6 +1102,12 @@ Fires when an incompatible language pack is detected.
 The following fields are available:
 
 - **Language**  String containing the incompatible language pack detected.
+
+
+### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
+
+This event fires when HVCI is already enabled so no need to continue auto-enablement.
+
 
 
 ## Common data extensions
@@ -1270,6 +1272,7 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
+
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -1283,6 +1286,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+ 
 
 ## Component-based servicing events
 
@@ -2151,6 +2155,22 @@ The following fields are available:
 - **requestUid**  A randomly-generated (uniformly distributed) GUID, corresponding to the Omaha user. Each request attempt SHOULD have (with high probability) a unique request id. Default: ''.
 
 
+### Microsoft.Edge.Crashpad.HangEvent
+
+This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
+
+The following fields are available:
+
+- **app_name**  The name of the hanging process.
+- **app_session_guid**  Encodes the boot session, process, and process start time.
+- **app_version**  The version of the hanging process.
+- **client_id_hash**  Hash of the browser client id to help identify the installation.
+- **etag**  Identifier to help identify running browser experiments.
+- **hang_source**  Identifies how the hang was detected.
+- **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
+- **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
+
+
 ## OneSettings events
 
 ### Microsoft.Windows.OneSettingsClient.Status
@@ -2173,122 +2193,6 @@ The following fields are available:
 
 - **cancelReason**  Enum for source/reason to cancel.
 - **resultCode**  HR result of the cancellation.
-
-
-## Other events
-
-### Microsoft.Edge.Crashpad.HangEvent
-
-This event sends simple Product and Service Performance data on a hanging/frozen Microsoft Edge browser process to help mitigate future instances of the hang.
-
-The following fields are available:
-
-- **app_name**  The name of the hanging process.
-- **app_session_guid**  Encodes the boot session, process, and process start time.
-- **app_version**  The version of the hanging process.
-- **client_id_hash**  Hash of the browser client id to help identify the installation.
-- **etag**  Identifier to help identify running browser experiments.
-- **hang_source**  Identifies how the hang was detected.
-- **process_type**  The type of the hanging browser process, for example, gpu-process, renderer, etc.
-- **stack_hash**  A hash of the hanging stack. Currently not used or set to zero.
-
-
-### Microsoft.Gaming.Critical.Error
-
-Common error event used by the Gaming Telemetry Library to provide centralized monitoring for critical errors logged by callers using the library.
-
-The following fields are available:
-
-- **callStack**  List of active subroutines running during error occurrence.
-- **componentName**  Friendly name meant to represent what feature area this error should be attributed to. Used for aggregations and pivots of data.
-- **customAttributes**  List of custom attributes.
-- **errorCode**  Error code.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **featureName**  Friendly name meant to represent which feature this should be attributed to.
-- **identifier**  Error identifier.
-- **message**  Error message.
-- **properties**  List of properties attributed to the error.
-
-
-### Microsoft.Gaming.Critical.ProviderRegistered
-
-Indicates that a telemetry provider has been registered with the Gaming Telemetry Library.
-
-The following fields are available:
-
-- **providerNamespace**  The telemetry Namespace for the registered provider.
-
-
-### Microsoft.Gaming.OOBE.HDDBackup
-
-This event describes whether an External HDD back up has been found.
-
-The following fields are available:
-
-- **backupVersion**  version number of backup.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **hasConsoleSettings**  Indicates whether the console settings stored.
-- **hasUserSettings**  Indicates whether the user settings stored.
-- **hasWirelessProfile**  Indicates whether the wireless profile stored.
-- **hddBackupFound**  Indicates whether hdd backup is found.
-- **osVersion**  Operating system version.
-
-
-### Microsoft.Gaming.OOBE.OobeComplete
-
-This event is triggered when OOBE activation is complete.
-
-The following fields are available:
-
-- **allowAutoUpdate**  Allows auto update.
-- **allowAutoUpdateApps**  Allows auto update for apps.
-- **appliedTransferToken**  Applied transfer token.
-- **connectionType**  Connection type.
-- **curSessionId**  Current session id.
-- **extendedData**  JSON blob representing additional, provider-level properties common to the component.
-- **instantOn**  Instant on.
-- **moobeAcceptedState**  Moobe accepted state.
-- **phaseOneElapsedTimeMs**  Total elapsed time in milliseconds for phase 1.
-- **phaseOneVersion**  Version of phase 1.
-- **phaseTwoElapsedTimeMs**  Total elapsed time in milliseconds for phase 2.
-- **phaseTwoVersion**  Version of phase 2.
-- **systemUpdateRequired**  Indicates whether a system update required.
-- **totalElapsedTimeMs**  Total elapsed time in milliseconds of all phases.
-- **usedCloudBackup**  Indicates whether cloud backup is used.
-- **usedHDDBackup**  Indicates whether HDD backup is used.
-- **usedOffConsole**  Indicates whether off console is used.
-
-
-### Microsoft.Gaming.OOBE.SessionStarted
-
-This event is sent at the start of OOBE session.
-
-The following fields are available:
-
-- **customAttributes**  customAttributes.
-- **extendedData**  extendedData.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
-
-This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantStateDownloading**  True at the start Downloading.
-- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
-- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
-- **UpdateAssistantStateInstalling**  True at the start of Installing.
-- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-
-
-### MicrosoftWindowsCodeIntegrityTraceLoggingProvider.CodeIntegrityHvciSysprepHvciAlreadyEnabled
-
-This event fires when HVCI is already enabled so no need to continue auto-enablement.
-
 
 
 ## Privacy consent logging events
@@ -2478,6 +2382,24 @@ The following fields are available:
 - **RetryCount**  The number of attempted installations (retries), reported by the driver software key.
 - **Status**  The status returned to the PnP (Plug-and-Play) manager.
 - **UpdateAttempted**  Indicates if installation of the current update has been attempted before.
+
+
+## Update Assistant events
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
 ## Update events
@@ -3400,7 +3322,6 @@ The following fields are available:
 This event is derived event results for the LaunchPageDuration scenario.
 
 
-
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
 
 This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS) exits. The data collected with this event is used to help keep Windows up to date and performing properly.
@@ -3454,6 +3375,3 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
-
-
-

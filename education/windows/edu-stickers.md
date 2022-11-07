@@ -1,18 +1,12 @@
 ---
 title: Configure Stickers for Windows 11 SE
-description: Description of the Stickers feature and how to configure it via Intune and provisioning package.
+description: Learn about the Stickers feature and how to configure it via Intune and provisioning package.
 ms.date: 09/15/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: how-to
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
-manager: aaroncz
-ms.collection: education
-appliesto:
-- ✅ <b>Windows 11 SE, version 22H2</b>
+appliesto: 
+  - ✅ <b>Windows 11 SE, version 22H2</b>
+ms.collection: 
+  - highpri
 ---
 
 # Configure Stickers for Windows 11 SE

@@ -3,8 +3,8 @@ title: Policy CSP - EnterpriseCloudPrint
 description: Use the Policy CSP - EnterpriseCloudPrint setting to define the maximum number of printers that should be queried from a discovery end point.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## EnterpriseCloudPrint policies  
+## EnterpriseCloudPrint policies
 
 <dl>
   <dd>
@@ -43,7 +43,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
+<a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**
 
 <!--SupportedSKUs-->
 
@@ -81,7 +81,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
+<a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**
 
 <!--SupportedSKUs-->
 
@@ -119,7 +119,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
+<a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**
 
 <!--SupportedSKUs-->
 
@@ -147,7 +147,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 <!--Description-->
 Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
 
-Supported datatype is string. 
+Supported datatype is string.
 
 The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
 
@@ -157,7 +157,7 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**  
+<a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**
 
 <!--SupportedSKUs-->
 
@@ -195,7 +195,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
+<a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**
 
 <!--SupportedSKUs-->
 
@@ -223,7 +223,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <!--Description-->
 Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
 
-Supported datatype is integer. 
+Supported datatype is integer.
 
 <!--/Description-->
 <!--/Policy-->
@@ -231,7 +231,7 @@ Supported datatype is integer.
 <hr/>
 
 <!--Policy-->
-<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**  
+<a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**
 
 <!--SupportedSKUs-->
 

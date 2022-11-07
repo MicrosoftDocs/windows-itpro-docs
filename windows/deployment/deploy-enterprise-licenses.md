@@ -1,17 +1,18 @@
 ---
 title: Deploy Windows Enterprise licenses
 description: Steps to deploy Windows 10 Enterprise or Windows 11 Enterprise licenses for Windows Enterprise E3 or E5 subscription activation, or for Windows Enterprise E3 in CSP.
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: highpri
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+ms.date: 10/31/2022
 ---
 
 # Deploy Windows Enterprise licenses
@@ -227,7 +228,7 @@ Figure 11 illustrates a device on which the Windows 10 Pro is activated, but the
 
 Figure 11: Windows 10 Enterprise subscription lapsed or removed in Settings.
 
-It displays the following error: "Windows 10 Enterprise subscription is not valid."
+It displays the following error: "Windows 10 Enterprise subscription isn't valid."
 
 #### Device that's not activated and without an Enterprise subscription
 
@@ -287,7 +288,7 @@ If a device isn't able to connect to Windows Update, it can lose activation stat
 
 - Make sure that the device doesn't have the following registry value: `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations = 1 (REG_DWORD)`. If this registry value exists, it must be set to `0`.
 
-- Make sure that the following group policy setting is **disabled**: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not connect to any Windows Update Internet locations.
+- Make sure that the following group policy setting is **disabled**: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Don't connect to any Windows Update Internet locations.
 
 ## Virtual Desktop Access (VDA)
 

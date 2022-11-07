@@ -3,8 +3,8 @@ title: Policy CSP - Autoplay
 description: Learn how the Policy CSP - Autoplay setting disallows AutoPlay for MTP devices like cameras or phones.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -15,17 +15,17 @@ manager: aaroncz
 # Policy CSP - Autoplay
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
 
 <!--Policies-->
-## Autoplay policies  
+## Autoplay policies
 
 <dl>
   <dd>
@@ -43,7 +43,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="autoplay-disallowautoplayfornonvolumedevices"></a>**Autoplay/DisallowAutoplayForNonVolumeDevices**  
+<a href="" id="autoplay-disallowautoplayfornonvolumedevices"></a>**Autoplay/DisallowAutoplayForNonVolumeDevices**
 
 <!--SupportedSKUs-->
 
@@ -82,7 +82,7 @@ If you disable or don't configure this policy setting, AutoPlay is enabled for n
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow Autoplay for non-volume devices*
 -   GP name: *NoAutoplayfornonVolume*
 -   GP path: *Windows Components/AutoPlay Policies*
@@ -94,7 +94,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="autoplay-setdefaultautorunbehavior"></a>**Autoplay/SetDefaultAutoRunBehavior**  
+<a href="" id="autoplay-setdefaultautorunbehavior"></a>**Autoplay/SetDefaultAutoRunBehavior**
 
 <!--SupportedSKUs-->
 
@@ -141,7 +141,7 @@ If you disable or not configure this policy setting, Windows Vista or later will
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set the default behavior for AutoRun*
 -   GP name: *NoAutorun*
 -   GP path: *Windows Components/AutoPlay Policies*
@@ -153,7 +153,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="autoplay-turnoffautoplay"></a>**Autoplay/TurnOffAutoPlay**  
+<a href="" id="autoplay-turnoffautoplay"></a>**Autoplay/TurnOffAutoPlay**
 
 <!--SupportedSKUs-->
 
@@ -202,7 +202,7 @@ If you disable or don't configure this policy setting, AutoPlay is enabled.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Autoplay*
 -   GP name: *Autorun*
 -   GP path: *Windows Components/AutoPlay Policies*

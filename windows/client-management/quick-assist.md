@@ -1,9 +1,9 @@
 ---
 title: Use Quick Assist to help users
 description: How IT Pros can use Quick Assist to help users.
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
-ms.technology: windows
+ms.technology: itpro-manage
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
@@ -30,30 +30,27 @@ The helper can authenticate when they sign in by using a Microsoft account (MSA)
 
 ### Network considerations
 
-Quick Assist communicates over port 443 (https) and connects to the Remote Assistance Service at `https://remoteassistance.support.services.microsoft.com` by using the Remote Desktop Protocol (RDP). The traffic is encrypted with TLS 1.2.
-
-Both the helper and sharer must be able to reach these endpoints over port 443:
+Quick Assist communicates over port 443 (https) and connects to the Remote Assistance Service at `https://remoteassistance.support.services.microsoft.com` by using the Remote Desktop Protocol (RDP). The traffic is encrypted with TLS 1.2. Both the helper and sharer must be able to reach these endpoints over port 443:
 
 | Domain/Name | Description |
 |--|--|
-| `*.api.support.microsoft.com` | API access for Quick Assist |
-| `*.aria.microsoft.com` | Used for accessibility features within the app |
-| `*.cc.skype.com` | Azure Communication Service for chat and connection between parties |
-| `*.channelservices.microsoft.com` | Required for chat services within Quick Assist |
-| `*.channelwebsdks.azureedge.net` | Used for chat services within Quick Assist |
-| `*.edgeassetservice.azureedge.net` | Used for diagnostic data |
-| `*.flightproxy.skype.com` | Azure Communication Service for chat and connection between parties |
-| `*.login.microsoftonline.com` | Required for logging in to the application (Microsoft account) |
-| `*.monitor.azure.com` | Service Performance Monitoring |
-| `*.registrar.skype.com` | Azure Communication Service for chat and connection between parties. |
-| `*.remoteassistanceprodacs.communication.azure.com` | Azure Communication Services (ACS) technology the Quick Assist app uses. |
+| `*.aria.microsoft.com` | Accessible Rich Internet Applications (ARIA) service for providing accessible experiences to users. |
+| `*.cc.skype.com` | Required for Azure Communication Service. |
+| `*.events.data.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
+| `*.flightproxy.skype.com` | Required for Azure Communication Service. |
+| `*.live.com` | Required for logging in to the application (MSA). |
+| `*.monitor.azure.com` | Required for telemetry and remote service initialization. |
+| `*.registrar.skype.com` | Required for Azure Communication Service. |
 | `*.support.services.microsoft.com` | Primary endpoint used for Quick Assist application |
-| `*.trouter.skype.com` | Azure Communication Service for chat and connection between parties. |
-| `*.turn.azure.com` | Protocol used to help endpoint. |
-| `*.vortex.data.microsoft.com` | Used for diagnostic data |
-| `browser.pipe.aria.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
-| `edge.skype.com` | Azure Communication Service for chat and connection between parties. |
-| `events.data.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
+| `*.trouter.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
+| `aadcdn.msauth.net` | Required for logging in to the application (AAD). |
+| `edge.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
+| `login.microsoftonline.com` | Required for Microsoft login service. |
+| `remoteassistanceprodacs.communication.azure.com` | Used for Azure Communication Service for chat and connection between parties. |
+| `turn.azure.com` | Required for Azure Communication Service. |
+
+> [!IMPORTANT]
+> Quick Assist uses Edge WebView2 browser control. For a list of domain URLs that you need to add to the allow list to ensure that the Edge WebView2 browser control can be installed and updated, see [Allow list for Microsoft Edge endpoints](/deployedge/microsoft-edge-security-endpoints).
 
 ## How it works
 
@@ -123,13 +120,13 @@ For more information, visit [Install Quick Assist](https://support.microsoft.com
 
 Before installing Quick Assist, you'll need to set up synchronization between Intune and Microsoft Store for Business. If you've already set up sync, log into [Microsoft Store for Business](https://businessstore.microsoft.com) and skip to step 5.
 
-1. Go to [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/) and navigate to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
+1. In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant administration** / **Connectors and tokens** / **Microsoft Store for Business** and verify that **Microsoft Store for Business sync** is set to **Enable**.
 1. Using your Global Admin account, log into [Microsoft Store for Business](https://businessstore.microsoft.com).
 1. Select **Manage** / **Settings** and turn on **Show offline apps**.
 1. Choose the **Distribute** tab and verify that **Microsoft Intune** is **Active**. You may need to use the **+Add management tool** link if it's not.
 1. Search for **Quick Assist** and select it from the Search results.
 1. Choose the **Offline** license and select **Get the app**
-1. From the Intune portal (Endpoint Manager admin center) choose **Sync**.
+1. In the Endpoint Manager admin center, choose **Sync**.
 1. Navigate to **Apps** / **Windows** and you should see **Quick Assist (Offline)** in the list.
 1. Select it to view its properties. By default, the app won't be assigned to anyone or any devices, select the **Edit** link.
 1. Assign the app to the required group of devices and choose **Review + save** to complete the application install.

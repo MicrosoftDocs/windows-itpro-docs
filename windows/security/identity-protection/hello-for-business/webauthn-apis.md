@@ -1,7 +1,7 @@
 ---
-title: WebAuthn APIs 
+title: WebAuthn APIs
 description: Learn how to use WebAuthn APIs to enable passwordless authentication for your sites and apps.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,9 +10,9 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/15/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 # WebAuthn APIs for passwordless authentication on Windows
 <!--MAXADO-6021798-->

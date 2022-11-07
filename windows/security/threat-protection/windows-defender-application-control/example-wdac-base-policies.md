@@ -4,7 +4,7 @@ description: When creating a WDAC policy for an organization, start from one of 
 keywords: security, malware
 ms.topic: article
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,10 +13,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 08/05/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Windows Defender Application Control (WDAC) example base policies
@@ -36,7 +36,7 @@ When you create policies for use with Windows Defender Application Control (WDAC
 
 | **Example Base Policy** | **Description** | **Where it can be found** |
 |----------------------------|---------------------------------------------------------------|--------|
-| **DefaultWindows.xml** | This example policy is available in both audit and enforced mode. It includes rules to allow Windows, third-party hardware and software kernel drivers, and Windows Store apps. Used as the basis for all [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) policies. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
+| **DefaultWindows.xml** | This example policy is available in both audit and enforced mode. It includes rules to allow Windows, third-party hardware and software kernel drivers, and Windows Store apps. Used as the basis for all [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) policies. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **AllowMicrosoft.xml** | This example policy is available in audit mode. It includes the rules from DefaultWindows and adds rules to trust apps signed by the Microsoft product root certificate. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **AllowAll.xml** | This example policy is useful when creating a blocklist. All block policies should include rules allowing all other code to run and then add the DENY rules for your organization's needs. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |
 | **AllowAll_EnableHVCI.xml** | This example policy can be used to enable [memory integrity](https://support.microsoft.com/windows/core-isolation-e30ed737-17d8-42f3-a2a9-87521df09b78) (also known as hypervisor-protected code integrity) using Windows Defender Application Control. | %OSDrive%\Windows\schemas\CodeIntegrity\ExamplePolicies |

@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_RPC.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/08/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_RPC
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_RPC policies  
+## ADMX_RPC policies
 
 <dl>
   <dd>
@@ -44,7 +44,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-rpc-rpcextendederrorinformation"></a>**ADMX_RPC/RpcExtendedErrorInformation**  
+<a href="" id="admx-rpc-rpcextendederrorinformation"></a>**ADMX_RPC/RpcExtendedErrorInformation**
 
 <!--SupportedSKUs-->
 
@@ -99,7 +99,7 @@ You must select an error response type from the folowing options in the drop-dow
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Propagate extended error information*
 -   GP name: *RpcExtendedErrorInformation*
 -   GP path: *System\Remote Procedure Call*
@@ -110,7 +110,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-rpc-rpcignoredelegationfailure"></a>**ADMX_RPC/RpcIgnoreDelegationFailure**  
+<a href="" id="admx-rpc-rpcignoredelegationfailure"></a>**ADMX_RPC/RpcIgnoreDelegationFailure**
 
 <!--SupportedSKUs-->
 
@@ -140,7 +140,7 @@ This policy setting controls whether the RPC Runtime ignores delegation failures
 
 The constrained delegation model, introduced in Windows Server 2003, doesn't report that delegation was enabled on a security context when a client connects to a server. Callers of RPC and COM are encouraged to use the RPC_C_QOS_CAPABILITIES_IGNORE_DELEGATE_FAILURE flag, but some applications written for the traditional delegation model prior to Windows Server 2003 may not use this flag and will encounter RPC_S_SEC_PKG_ERROR when connecting to a server that uses constrained delegation.
 
-If you disable this policy setting, the RPC Runtime will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation. 
+If you disable this policy setting, the RPC Runtime will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
 
 If you don't configure this policy setting, it remains disabled and will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
 
@@ -156,7 +156,7 @@ If you enable this policy setting, then:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Ignore Delegation Failure*
 -   GP name: *RpcIgnoreDelegationFailure*
 -   GP path: *System\Remote Procedure Call*
@@ -168,7 +168,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-rpc-rpcminimumhttpconnectiontimeout"></a>**ADMX_RPC/RpcMinimumHttpConnectionTimeout**  
+<a href="" id="admx-rpc-rpcminimumhttpconnectiontimeout"></a>**ADMX_RPC/RpcMinimumHttpConnectionTimeout**
 
 <!--SupportedSKUs-->
 
@@ -194,7 +194,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the idle connection timeout for RPC/HTTP connections.  
+This policy setting controls the idle connection timeout for RPC/HTTP connections.
 
 This policy setting is useful in cases where a network agent like an HTTP proxy or a router uses a lower idle connection timeout than the IIS server running the RPC/HTTP proxy. In such cases, RPC/HTTP clients may encounter errors because connections will be timed out faster than expected. Using this policy setting you can force the RPC Runtime and the RPC/HTTP Proxy to use a lower connection timeout.
 
@@ -215,7 +215,7 @@ If you enable this policy setting, and the IIS server running the RPC HTTP proxy
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Minimum Idle Connection Timeout for RPC/HTTP connections*
 -   GP name: *RpcMinimumHttpConnectionTimeout*
 -   GP path: *System\Remote Procedure Call*
@@ -226,7 +226,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-rpc-rpcstateinformation"></a>**ADMX_RPC/RpcStateInformation**  
+<a href="" id="admx-rpc-rpcstateinformation"></a>**ADMX_RPC/RpcStateInformation**
 
 <!--SupportedSKUs-->
 
@@ -256,13 +256,13 @@ This policy setting determines whether the RPC Runtime maintains RPC state infor
 
 If you disable this policy setting, the RPC runtime defaults to "Auto2" level.
 
-If you don't configure this policy setting, the RPC  defaults to "Auto2" level. 
+If you don't configure this policy setting, the RPC  defaults to "Auto2" level.
 
 If you enable this policy setting, you can use the drop-down box to determine which systems maintain RPC state information from the following:
 
 - "None" indicates that the system doesn't maintain any RPC state information. Note: Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting isn't recommended for most installations.
 - "Auto1" directs RPC to maintain basic state information only if the computer has at least 64 MB of memory.
-- "Auto2" directs RPC to maintain basic state information only if the computer has at least 128 MB of memory and is running Windows 2000 Server, Windows 2000 Advanced Server, or Windows 2000 Datacenter Server. 
+- "Auto2" directs RPC to maintain basic state information only if the computer has at least 128 MB of memory and is running Windows 2000 Server, Windows 2000 Advanced Server, or Windows 2000 Datacenter Server.
 - "Server" directs RPC to maintain basic state information on the computer, regardless of its capacity.
 - "Full" directs RPC to maintain complete RPC state information on the system, regardless of its capacity. Because this level can degrade performance, it's recommended for use only while you're investigating an RPC problem.
 
@@ -274,7 +274,7 @@ If you enable this policy setting, you can use the drop-down box to determine wh
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maintain RPC Troubleshooting State Information*
 -   GP name: *RpcStateInformation*
 -   GP path: *System\Remote Procedure Call*

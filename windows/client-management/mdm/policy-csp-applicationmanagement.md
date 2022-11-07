@@ -3,8 +3,8 @@ title: Policy CSP - ApplicationManagement
 description: Learn about various Policy configuration service providers (CSP) - ApplicationManagement, including SyncML, for Windows 10.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/11/2020
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ApplicationManagement policies  
+## ApplicationManagement policies
 
 <dl>
   <dd>
@@ -38,8 +38,8 @@ manager: aaroncz
   <dd>
     <a href="#applicationmanagement-allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a>
   </dd>
-  <dd> 
-    <a href="#applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a> 
+  <dd>
+    <a href="#applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a>
   </dd>
   <dd>
     <a href="#applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
@@ -71,7 +71,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-allowautomaticapparchiving"></a>**ApplicationManagement/AllowAutomaticAppArchiving**  
+<a href="" id="applicationmanagement-allowautomaticapparchiving"></a>**ApplicationManagement/AllowAutomaticAppArchiving**
 
 <!--SupportedSKUs-->
 
@@ -107,7 +107,7 @@ If you don't configure this policy setting (default), then the system will follo
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow all trusted apps to install*
 -   GP name: *AllowAutomaticAppArchiving*
 -   GP path: *Windows Components/App Package Deployment*
@@ -127,7 +127,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**  
+<a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**
 
 <!--SupportedSKUs-->
 
@@ -159,7 +159,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow all trusted apps to install*
 -   GP name: *AppxDeploymentAllowAllTrustedApps*
 -   GP path: *Windows Components/App Package Deployment*
@@ -179,7 +179,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**  
+<a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**
 
 <!--SupportedSKUs-->
 
@@ -212,7 +212,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Automatic Download and Install of updates*
 -   GP name: *DisableAutoInstall*
 -   GP path: *Windows Components/Store*
@@ -231,7 +231,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**  
+<a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**
 
 <!--SupportedSKUs-->
 
@@ -263,7 +263,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allows development of Windows Store apps and installing them from an integrated development environment (IDE)*
 -   GP name: *AllowDevelopmentWithoutDevLicense*
 -   GP path: *Windows Components/App Package Deployment*
@@ -283,7 +283,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
+<a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**
 
 <!--SupportedSKUs-->
 
@@ -318,7 +318,7 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enables or disables Windows Game Recording and Broadcasting*
 -   GP name: *AllowGameDVR*
 -   GP path: *Windows Components/Windows Game Recording and Broadcasting*
@@ -337,7 +337,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**  
+<a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**
 
 <!--SupportedSKUs-->
 
@@ -368,7 +368,7 @@ The following list shows the supported values:
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow a Windows app to share application data between users*
 -   GP name: *AllowSharedLocalAppData*
 -   GP path: *Windows Components/App Package Deployment*
@@ -378,7 +378,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user. 
+-   0 (default) – Prevented/not allowed, but Microsoft Edge downloads book files to a per-user folder for each user.
 -   1 – Allowed. Microsoft Edge downloads book files into a shared folder. For this policy to work correctly, you must also enable the Allow a Windows app to share application data between users group policy.  Also, the users must be signed in with a school or work account.
 
 Most restricted value: 0
@@ -388,7 +388,7 @@ Most restricted value: 0
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-blocknonadminuserinstall"></a>**ApplicationManagement/BlockNonAdminUserInstall**  
+<a href="" id="applicationmanagement-blocknonadminuserinstall"></a>**ApplicationManagement/BlockNonAdminUserInstall**
 
 <!--SupportedSKUs-->
 
@@ -424,7 +424,7 @@ If you disable or don't configure this policy, all users will be able to initiat
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent non-admin users from installing packaged Windows apps*
 -   GP name: *BlockNonAdminUserInstall*
 -   GP path: *Windows Components/App Package Deployment*
@@ -432,7 +432,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:  
+The following list shows the supported values:
 - 0 (default) - Disabled. All users will be able to initiate installation of Windows app packages.
 - 1 - Enabled. Non-administrator users won't be able to initiate installation of Windows app packages.
 <!--/SupportedValues-->
@@ -447,7 +447,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-disablestoreoriginatedapps"></a>**ApplicationManagement/DisableStoreOriginatedApps**  
+<a href="" id="applicationmanagement-disablestoreoriginatedapps"></a>**ApplicationManagement/DisableStoreOriginatedApps**
 
 <!--SupportedSKUs-->
 
@@ -477,7 +477,7 @@ Added in Windows 10, version 1607. Boolean value that disables the launch of al
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable all apps from Microsoft Store*
 -   GP name: *DisableStoreApps*
 -   GP path: *Windows Components/Store*
@@ -496,7 +496,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-launchappafterlogon"></a>**ApplicationManagement/LaunchAppAfterLogOn**  
+<a href="" id="applicationmanagement-launchappafterlogon"></a>**ApplicationManagement/LaunchAppAfterLogOn**
 
 <!--SupportedSKUs-->
 
@@ -524,11 +524,11 @@ The following list shows the supported values:
 <!--Description-->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are launched after a sign in. This policy allows the IT admin to specify a list of applications that users can run after logging on to the device.
 
-For this policy to work, the Windows apps need to declare in their manifest that they'll use the startup task. Example of the declaration here: 
+For this policy to work, the Windows apps need to declare in their manifest that they'll use the startup task. Example of the declaration here:
 
 ```xml
-<desktop:Extension Category="windows.startupTask"> 
-   <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" /> 
+<desktop:Extension Category="windows.startupTask">
+   <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" />
 </desktop:Extension>
 ```
 
@@ -550,7 +550,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-msiallowusercontroloverinstall"></a>**ApplicationManagement/MSIAllowUserControlOverInstall**  
+<a href="" id="applicationmanagement-msiallowusercontroloverinstall"></a>**ApplicationManagement/MSIAllowUserControlOverInstall**
 
 <!--SupportedSKUs-->
 
@@ -588,7 +588,7 @@ This policy setting is designed for less restrictive environments. It can be use
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow user control over installs*
 -   GP name: *EnableUserControl*
 -   GP path: *Windows Components/Windows Installer*
@@ -604,7 +604,7 @@ This setting supports a range of values between 0 and 1.
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-msialwaysinstallwithelevatedprivileges"></a>**ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges**  
+<a href="" id="applicationmanagement-msialwaysinstallwithelevatedprivileges"></a>**ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges**
 
 <!--SupportedSKUs-->
 
@@ -645,7 +645,7 @@ If you disable or don't configure this policy setting, the system applies the cu
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always install with elevated privileges*
 -   GP name: *AlwaysInstallElevated*
 -   GP path: *Windows Components/Windows Installer*
@@ -661,7 +661,7 @@ This setting supports a range of values between 0 and 1.
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
+<a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**
 
 <!--SupportedSKUs-->
 
@@ -695,7 +695,7 @@ Most restricted value is 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Only display the private store within the Microsoft Store*
 -   GP name: *RequirePrivateStoreOnly*
 -   GP path: *Windows Components/Store*
@@ -714,7 +714,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**  
+<a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**
 
 <!--SupportedSKUs-->
 
@@ -746,7 +746,7 @@ Most restricted value is 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users' app data from being stored on non-system volumes*
 -   GP name: *RestrictAppDataToSystemVolume*
 -   GP path: *Windows Components/App Package Deployment*
@@ -765,7 +765,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
+<a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**
 
 <!--SupportedSKUs-->
 
@@ -797,7 +797,7 @@ Most restricted value is 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable installing Windows apps on non-system volumes*
 -   GP name: *DisableDeploymentToNonSystemVolumes*
 -   GP path: *Windows Components/App Package Deployment*
@@ -816,7 +816,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="applicationmanagement-scheduleforcerestartforupdatefailures"></a>**ApplicationManagement/ScheduleForceRestartForUpdateFailures**  
+<a href="" id="applicationmanagement-scheduleforcerestartforupdatefailures"></a>**ApplicationManagement/ScheduleForceRestartForUpdateFailures**
 
 <!--SupportedSKUs-->
 
@@ -842,7 +842,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-To ensure apps are up-to-date, this policy allows the admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied. 
+To ensure apps are up-to-date, this policy allows the admins to set a recurring or one time date to restart apps whose update failed due to the app being in use allowing the update to be applied.
 
 Value type is string.
 <!--/Description-->
@@ -856,28 +856,28 @@ Value type is string.
 Sample SyncML:
 
 ```xml
-<SyncML xmlns="SYNCML:SYNCML1.1"> 
-  <SyncBody> 
-    <Add> 
-      <CmdID>2</CmdID> 
-      <Item> 
-        <Target>  
-          <LocURI> ./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/ScheduleForceRestartForUpdateFailures 
-          </LocURI>  
-        </Target> 
-        <Meta> 
-          <Format xmlns="syncml:metinf">xml</Format> 
-        </Meta> 
-        <Data> 
-          <ForceRestart StartDateTime="2018-03-28T22:21:52Z"  
-                        Recurrence="[None/Daily/Weekly/Monthly]"  
-                        DayOfWeek=”1”  
-                        DayOfMonth=”12”  
-                        RunIfTaskIsMissed=”1”/> 
-        </Data> 
-      </Item> 
-    </Add> 
-  </SyncBody> 
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI> ./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/ScheduleForceRestartForUpdateFailures
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">xml</Format>
+        </Meta>
+        <Data>
+          <ForceRestart StartDateTime="2018-03-28T22:21:52Z"
+                        Recurrence="[None/Daily/Weekly/Monthly]"
+                        DayOfWeek=”1”
+                        DayOfMonth=”12”
+                        RunIfTaskIsMissed=”1”/>
+        </Data>
+      </Item>
+    </Add>
+  </SyncBody>
 </SycnML>
 ```
 XSD:
@@ -908,11 +908,11 @@ XSD:
 
   <xs:element name="ForceRestart">
     <xs:complexType>
-      <xs:attribute name="StartDateTime" type="xs:dateTime" use="required"/> 
-      <xs:attribute name="Recurrence" type="recurrence" use="required"/> 
-      <xs:attribute name="RunIfTaskIsMissed" type="xs:boolean" use="required"/> 
-      <xs:attribute name="DaysOfWeek" type="daysOfWeek"/> 
-      <xs:attribute name="DaysOfMonth" type="daysOfMonth"/> 
+      <xs:attribute name="StartDateTime" type="xs:dateTime" use="required"/>
+      <xs:attribute name="Recurrence" type="recurrence" use="required"/>
+      <xs:attribute name="RunIfTaskIsMissed" type="xs:boolean" use="required"/>
+      <xs:attribute name="DaysOfWeek" type="daysOfWeek"/>
+      <xs:attribute name="DaysOfMonth" type="daysOfMonth"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

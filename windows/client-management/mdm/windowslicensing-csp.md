@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/15/2018
 ---
@@ -51,12 +51,12 @@ WindowsLicensing
 --------Status (Added in Windows 10, version 1809)
 ```
 
-<a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
+<a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**
 This node is the root node for the WindowsLicensing configuration service provider.
 
 The supported operation is Get.
 
-<a href="" id="upgradeeditionwithproductkey"></a>**UpgradeEditionWithProductKey**  
+<a href="" id="upgradeeditionwithproductkey"></a>**UpgradeEditionWithProductKey**
 Enters a product key for an edition upgrade of Windows 10 desktop devices.
 
 > [!NOTE]
@@ -96,14 +96,14 @@ Activation or changing a product key can be carried out on the following edition
 - Windows 10/Windows 11 Home
 - Windows 10/Windows 11 Pro
 
-<a href="" id="edition"></a>**Edition**  
+<a href="" id="edition"></a>**Edition**
 Returns a value that maps to the Windows 10 or Windows 11 edition. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.
 
 The data type is an Int.
 
 The supported operation is Get.
 
-<a href="" id="status"></a>**Status**  
+<a href="" id="status"></a>**Status**
 Returns the status of an edition upgrade on Windows devices. The status corresponds to one of the following values:
 
 - 0 = Failed
@@ -116,13 +116,13 @@ The data type is an Int.
 
 The supported operation is Get.
 
-<!-- 12.16.2021 mandia: Commenting out this section, as it appears specific to Windows 10 Mobile. 
+<!-- 12.16.2021 mandia: Commenting out this section, as it appears specific to Windows 10 Mobile.
 
-<a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**  
+<a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**
 Provides a license for an edition upgrade of Windows 10 devices.
 
 > [!NOTE]
-> This upgrade process doesn't require a system restart. 
+> This upgrade process doesn't require a system restart.
 
 The date type is XML.
 
@@ -140,7 +140,7 @@ The following are valid edition upgrade paths when using this node through an MD
 
 -->
 
-<a href="" id="licensekeytype"></a>**LicenseKeyType**  
+<a href="" id="licensekeytype"></a>**LicenseKeyType**
 Returns the parameter type used by Windows 10 or Windows 11 devices for an edition upgrade, activation, or product key change.
 
 - Windows 10 or Windows 11 client devices require a product key.
@@ -149,44 +149,44 @@ The data type is a chr.
 
 The supported operation is Get.
 
-<a href="" id="checkapplicability"></a>**CheckApplicability**  
+<a href="" id="checkapplicability"></a>**CheckApplicability**
 Returns TRUE if the entered product key can be used for an edition upgrade, activation or changing a product key of Windows 10 or Windows 11 for desktop devices.
 
 The data type is a chr.
 
 The supported operation is Exec.
 
-<a href="" id="changeproductkey"></a>**ChangeProductKey**  
+<a href="" id="changeproductkey"></a>**ChangeProductKey**
 Added in Windows 10, version 1703. Installs a product key for Windows desktop devices. Doesn't reboot.
 
 The data type is a chr.
 
 The supported operation is Execute.
 
-<a href="" id="subscriptions"></a>**Subscriptions**  
+<a href="" id="subscriptions"></a>**Subscriptions**
 Added in Windows 10, version 1607. Node for subscriptions.
 
-<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**  
+<a href="" id="subscriptions-subscriptionid"></a>**Subscriptions/SubscriptionId**
 Added in Windows 10, version 1607. Node for subscription IDs.
 
-<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**  
+<a href="" id="subscriptions-subscriptionid-status"></a>**Subscriptions/SubscriptionId/Status**
 Added in Windows 10, version 1607. Returns the status of the subscription.
 
 The data type is an Int.
 
 The supported operation is Get.
 
-<a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**  
+<a href="" id="subscriptions-subscriptionid-name"></a>**Subscriptions/SubscriptionId/Name**
 Added in Windows 10, version 1607. Returns the name of the subscription.
 
 The data type is a chr.
 
 The supported operation is Get.
 
-<a href="" id="smode"></a>**SMode**  
+<a href="" id="smode"></a>**SMode**
 Interior node for managing S mode.
 
-<a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**  
+<a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**
 Added in Windows 10, version 1809. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode. For examples, see [Add S mode SwitchingPolicy](#smode-switchingpolicy-add), [Get S mode SwitchingPolicy](#smode-switchingpolicy-get), [Replace S mode SwitchingPolicy](#smode-switchingpolicy-replace) and [Delete S mode SwitchingPolicy](#smode-switchingpolicy-delete)
 
 Value type is integer.
@@ -194,11 +194,11 @@ Value type is integer.
 Supported operations are Add, Get, Replace, and Delete.
 
 Supported values:
-  
+
 - 0 - No Restriction: The user is allowed to switch the device out of S mode.
 - 1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
-<a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
+<a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**
 Added in Windows 10, version 1809. Switches a device out of S mode if possible. Doesn't reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
@@ -206,11 +206,11 @@ Supported operation is Execute.
 <a href="" id="smode-status"></a>**SMode/Status**
 Added in Windows 10, version 1809. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
 
-Value type is integer. 
+Value type is integer.
 
 Supported operation is Get.
 
-Values:  
+Values:
 
 - Request fails with error code 404 - no SwitchFromSMode request has been made.
 - 0 - The device successfully switched out of S mode.
@@ -234,7 +234,7 @@ Values:
       <Meta>
         <Format xmlns="syncml:metinf">chr</Format>
       </Meta>
-      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data> 
+      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data>
     </Item>
    </Exec>
    <Final/>
@@ -313,7 +313,7 @@ Values:
       <Meta>
         <Format xmlns="syncml:metinf">chr</Format>
       </Meta>
-      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data> 
+      <Data>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</Data>
     </Item>
    </Exec>
    <Final/>
@@ -324,7 +324,7 @@ Values:
 > [!NOTE]
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
-<!-- 12.16.2021 mandia: Commenting out this section, as it appears specific to Windows 10 Mobile.  
+<!-- 12.16.2021 mandia: Commenting out this section, as it appears specific to Windows 10 Mobile.
 
 **UpgradeEditionWithLicense**
 
@@ -364,7 +364,7 @@ Values:
         </Target>
       </Item>
     </Get>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -389,7 +389,7 @@ Values:
         <Data></Data>
       </Item>
     </Exec>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -414,7 +414,7 @@ Values:
         <Data>1</Data>
       </Item>
     </Add>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -434,7 +434,7 @@ Values:
         </Target>
       </Item>
     </Get>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -459,7 +459,7 @@ Values:
         <Data>1</Data>
       </Item>
     </Replace>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
@@ -479,11 +479,11 @@ Values:
         </Target>
       </Item>
     </Delete>
-    <Final/> 
+    <Final/>
   </SyncBody>
 </SyncML>
 ```
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

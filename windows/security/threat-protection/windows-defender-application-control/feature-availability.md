@@ -1,14 +1,14 @@
 ---
-title:  Windows Defender Application Control feature availability
+title: Windows Defender Application Control feature availability
 description: Compare Windows Defender Application Control (WDAC) and AppLocker feature availability.
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
-manager: jsuther
+manager: aaroncz
 ms.date: 06/27/2022
 ms.custom: asr
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.topic: overview
 |-------------|------|-------------|
 | Platform support    | Available on Windows 10, Windows 11, and Windows Server 2016 or later  | Available on Windows 8 or later   |
 | SKU availability     | Cmdlets are available on all SKUs on 1909+ builds.<br>For pre-1909 builds, cmdlets are only available on Enterprise but policies are effective on all SKUs.  | Policies deployed through GP are only effective on Enterprise devices.<br>Policies deployed through MDM are effective on all SKUs.  |
-| Management solutions   | <ul><li>[Intune](./deployment/deploy-windows-defender-application-control-policies-using-intune.md) (limited built-in policies or custom policy deployment via OMA-URI)</li><li>[Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) (limited built-in policies or custom policy deployment via software distribution)</li><li>[Group policy](./deployment/deploy-windows-defender-application-control-policies-using-group-policy.md) </li><li>PowerShell</li></ul>  | <ul><li>[Intune](/windows/client-management/mdm/applocker-csp) (custom policy deployment via OMA-URI only)</li><li>Configuration Manager (custom policy deployment via software distribution only)</li><li>[Group Policy](./applocker/determine-group-policy-structure-and-rule-enforcement.md)</li><li>PowerShell</li><ul> |
+| Management solutions   | <ul><li>[Intune](./deployment/deploy-windows-defender-application-control-policies-using-intune.md) (limited built-in policies or custom policy deployment via OMA-URI)</li><li>[Microsoft Configuration Manager](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) (limited built-in policies or custom policy deployment via software distribution)</li><li>[Group policy](./deployment/deploy-windows-defender-application-control-policies-using-group-policy.md) </li><li>PowerShell</li></ul>  | <ul><li>[Intune](/windows/client-management/mdm/applocker-csp) (custom policy deployment via OMA-URI only)</li><li>Configuration Manager (custom policy deployment via software distribution only)</li><li>[Group Policy](./applocker/determine-group-policy-structure-and-rule-enforcement.md)</li><li>PowerShell</li><ul> |
 | Per-User and Per-User group rules | Not available (policies are device-wide)  | Available on Windows 8+  |
 | Kernel mode policies  | Available on all Windows 10 versions and Windows 11  | Not available |
 | Per-app rules  | [Available on 1703+](./use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md)  | Not available |
