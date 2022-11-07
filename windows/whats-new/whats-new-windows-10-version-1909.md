@@ -8,6 +8,7 @@ manager: dougeby
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 1909 for IT Pros

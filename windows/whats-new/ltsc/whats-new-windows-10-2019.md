@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.collection: 
   - highpri
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
