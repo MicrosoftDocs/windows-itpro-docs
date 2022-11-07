@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # Windows 11 requirements
