@@ -241,7 +241,7 @@ Files contained in the mccinstaller.zip file:
 1. Enable Nested Virtualization
 
   ```powershell
-  Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
+  Set-VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
   ```
 2. Enable Mac Spoofing
   ```powershell
