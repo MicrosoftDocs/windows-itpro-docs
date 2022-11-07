@@ -8,6 +8,7 @@ manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # Prepare for Windows 11

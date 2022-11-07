@@ -9,6 +9,7 @@ ms.author: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 1803 for IT Pros
