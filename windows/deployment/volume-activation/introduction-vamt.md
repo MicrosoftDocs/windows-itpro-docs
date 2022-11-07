@@ -18,7 +18,7 @@ The Volume Activation Management Tool (VAMT) enables network administrators and 
 > [!NOTE]
 > VAMT can be installed on, and can manage, physical or virtual instances. VAMT can't detect whether or not the remote products are virtual. As long as the products can respond to Windows Management Instrumentation (WMI) calls, they will be discovered and activated.
 
-## <a href="" id="bkmk-managingmak"></a>Managing MAK and retail activation
+## Managing MAK and retail activation
 
 You can use a MAK or a retail product key to activate Windows, Windows Server, or Office on an individual computer or a group of computers. VAMT enables two different activation scenarios:
 
@@ -26,23 +26,25 @@ You can use a MAK or a retail product key to activate Windows, Windows Server, o
 
 - **Proxy activation**: This activation method enables you to perform volume activation for products installed on client computers that don't have internet access. The VAMT host computer distributes a MAK, KMS host key (CSVLK), or retail product key to one or more client products and collects the installation ID (IID) from each client product. The VAMT host sends the IIDs to Microsoft on behalf of the client products and obtains the corresponding Confirmation IDs (CIDs). The VAMT host then installs the CIDs on the client products to complete the activation. Using this method, only the VAMT host computer needs internet access. You can also activate products installed on computers in a workgroup that's isolated from any larger network, by installing a second instance of VAMT on a computer within the workgroup. Then, use removable media to transfer activation data between this new instance of VAMT and the internet-connected VAMT host.
 
-## <a href="" id="bkmk-managingkms"></a>Managing KMS activation
+## Managing KMS activation
 
 In addition to MAK or retail activation, you can use VAMT to perform volume activation using the KMS. VAMT can install and activate GVLK (KMS client) keys on client products. GVLKs are the default product keys used by volume license editions of Windows, Windows Server, and Office.
 
 VAMT treats a KMS host key (CSVLK) product key identically to a retail-type product key. The experience for product key entry and activation management are identical for both these product key types.
 
-## <a href="" id="bkmk-enterpriseenvironment"></a>Enterprise environment
+## Enterprise environment
 
 VAMT is commonly implemented in enterprise environments. The following screenshot illustrates three common environments: core network, secure zone, and isolated lab.
 
 ![VAMT in the enterprise.](images/dep-win8-l-vamt-image001-enterprise.jpg)
 
 - In the core network environment, all computers are within a common network managed by Active Directory Domain Services (AD DS).
+
 - The secure zone represents higher-security core network computers that have extra firewall protection.
+
 - The isolated lab environment is a workgroup that is physically separate from the core network, and its computers don't have internet access. The network security policy states that no information that could identify a specific computer or user may be transferred out of the isolated lab.
 
-## <a href="" id="bkmk-userinterface"></a>VAMT user interface
+## VAMT user interface
 
 The following screenshot shows the VAMT graphical user interface:
 
@@ -58,7 +60,7 @@ VAMT provides a single, graphical user interface for managing activations, and f
 
 - **Managing product keys**: You can store multiple product keys and use VAMT to install these keys to remote client products. You can also determine the number of activations remaining for MAKs.
 
-- **Managing activation data**: VAMT stores activation data in a SQL database. VAMT can export this data to other VAMT hosts or to an archive in XML format.
+- **Managing activation data**: VAMT stores activation data in an SQL database. VAMT can export this data to other VAMT hosts or to an archive in XML format.
 
 ## Next steps
 

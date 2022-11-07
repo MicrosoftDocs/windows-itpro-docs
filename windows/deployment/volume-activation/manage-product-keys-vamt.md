@@ -13,14 +13,12 @@ ms.technology: itpro-fundamentals
 
 # Manage Product Keys
 
-This section describes how to add and remove a product key from the Volume Activation Management Tool (VAMT). After you add a product key to VAMT, you can install that product key on a product or products you select in the VAMT database.
+This section describes how to add and remove a product key from the Volume Activation Management Tool (VAMT). After you add a product key to VAMT, you can install that product key on a product, or products you select in the VAMT database.
+
 ## In this Section
 
-|Topic |Description |
-|------|------------|
+|Article |Description |
+|-------|------------|
 |[Add and Remove a Product Key](add-remove-product-key-vamt.md) |Describes how to add a product key to the VAMT database. |
 |[Install a Product Key](install-product-key-vamt.md) |Describes how to install a product key for specific product. |
 |[Install a KMS Client Key](install-kms-client-key-vamt.md) |Describes how to install a GVLK (KMS client) key. |
- 
- 
- 

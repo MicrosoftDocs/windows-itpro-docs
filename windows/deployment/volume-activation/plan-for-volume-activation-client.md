@@ -13,18 +13,13 @@ ms.technology: itpro-fundamentals
 
 # Plan for volume activation
 
-**Applies to**
-- Windows 10
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Server 2012 R2
-- Windows Server 2012
-- Windows Server 2008 R2
+(*Applies to: Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*)
 
-**Looking for retail activation?**
-
-- [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
+> [!TIP]
+> Are you looking for information on retail activation?
+>
+> - [Activate Windows](https://support.microsoft.com/help/12440/)
+> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
 *Product activation* is the process of validating software with the manufacturer after it has been installed on a specific computer. Activation confirms that the product is genuine—not a fraudulent copy—and that the product key or serial number is valid and has not been compromised or revoked. Activation also establishes a link or relationship between the product key and the particular installation.
 
@@ -50,7 +45,9 @@ OEM activation is valid as long as the customer uses the OEM-provided image on t
 ### Volume licensing
 
 Volume licensing offers customized programs that are tailored to the size and purchasing preference of the organization. To become a volume licensing customer, the organization must set up a volume licensing agreement with Microsoft.There is a common misunderstanding about acquiring licenses for a new computer through volume licensing. There are two legal ways to acquire a full Windows client license for a new computer:
+
 - Have the license preinstalled through the OEM.
+
 - Purchase a fully packaged retail product.
 
 The licenses that are provided through volume licensing programs such as Open License, Select License, and Enterprise Agreements cover upgrades to Windows client operating systems only. An existing retail or OEM operating system license is needed for each computer running Windows 10, Windows 8.1 Pro, Windows 8 Pro, Windows 7 Professional or Ultimate, or Windows XP Professional before the upgrade rights obtained through volume licensing can be exercised.
@@ -64,13 +61,19 @@ Volume licensing is also available through certain subscription or membership pr
 For a user or IT department, there are no significant choices about how to activate products that are acquired through retail or OEM channels. The OEM performs the activation at the factory, and the user or the IT department need take no activation steps.
 
 With a retail product, the Volume Activation Management Tool (VAMT), which is discussed later in this guide, helps you track and manage keys. For each retail activation, you can choose:
+
 - Online activation
+
 - Telephone activation
+
 - VAMT proxy activation
 
 Telephone activation is primarily used in situations where a computer is isolated from all networks. VAMT proxy activation (with retail keys) is sometimes used when an IT department wants to centralize retail activations or when a computer with a retail version of the operating system is isolated from the Internet but connected to the LAN. For volume-licensed products, however, you must determine the best method or combination of methods to use in your environment. For Windows 10 Pro and Enterprise, you can choose from three models:
+
 - MAKs
+
 - KMS
+
 - Active Directory-based activation
 
 > [!NOTE]
@@ -123,7 +126,7 @@ A typical core network that includes a KMS host is shown in Figure 1.
 
 In a large network, it is all but guaranteed that some segments will be isolated, either for security reasons or because of geography or connectivity issues.
 
-**Isolated for security**
+#### Isolated for security
 
 Sometimes called a *high-security zone*, a particular network segment may be isolated from the core network by a firewall or disconnected from other networks totally. The best solution for activating computers in an isolated network depends on the security policies in place in the organization.
 
@@ -139,11 +142,16 @@ If the network is fully isolated, MAK-independent activation would be the recomm
 
 **Figure 2**. New KMS host in an isolated network
 
-**Branch offices and distant networks**
+#### Branch offices and distant networks
+
 From mining operations to ships at sea, organizations often have a few computers that are not easily connected to the core network or the Internet. Some organizations have network segments at branch offices that are large and well-connected internally, but have a slow or unreliable WAN link to the rest of the organization. In these situations, you have several options:
+
 - **Active Directory-based activation**. In any site where the client computers are running Windows 10, Active Directory-based activation is supported, and it can be activated by joining the domain.
+
 - **Local KMS**. If a site has 25 or more client computers, it can activate against a local KMS server.
+
 - **Remote (core) KMS**. If the remote site has connectivity to an existing KMS (perhaps through a virtual private network (VPN) to the core network), that KMS can be used. Using the existing KMS means that you only need to meet the activation threshold on that server.
+
 - **MAK activation**. If the site has only a few computers and no connectivity to an existing KMS host, MAK activation is the best option.
 
 ### Disconnected computers
@@ -166,7 +174,7 @@ Now it's time to assemble the pieces into a working solution. By evaluating your
 |Criterion |Activation method |
 |----------|------------------|
 |Number of domain-joined computers that support Active Directory-based activation (computers running Windows 10, Windows 8.1, Windows 8, Windows Server 2012 R2, or Windows Server 2012 R2) and will connect to a domain controller at least every 180 days. Computers can be mobile, semi-isolated, or located in a branch office or the core network. |Active Directory-based activation |
-|Number of computers in the core network that will connect (directly or through a VPN) at least every 180 days<p><strong>Note</strong><br>The core network must meet the KMS activation threshold. |KMS (central) |
+|Number of computers in the core network that will connect (directly or through a VPN) at least every 180 days<br><br>**Note**<br>The core network must meet the KMS activation threshold. |KMS (central) |
 |Number of computers that do not connect to the network at least once every 180 days (or if no network meets the activation threshold) | MAK |
 |Number of computers in semi-isolated networks that have connectivity to the KMS in the core network |KMS (central) |
 |Number of computers in isolated networks where the KMS activation threshold is met |KMS (local) |
@@ -174,13 +182,15 @@ Now it's time to assemble the pieces into a working solution. By evaluating your
 |Number of computers in test and development labs that will not be activated |None|
 |Number of computers that do not have a retail volume license |Retail (online or phone) |
 |Number of computers that do not have an OEM volume license |OEM (at factory) |
-|Total number of computer activations<p><strong>Note</strong><br>This total should match the total number of licensed computers in your organization. |
+|Total number of computer activations<br><br>**Note**<br>This total should match the total number of licensed computers in your organization. |
 
 ## Choosing and acquiring keys
 
 When you know which keys you need, you must obtain them. Generally speaking, volume licensing keys are collected in two ways:
+
 - Go to the **Product Keys** section of the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=618213) for the following agreements: Open, Open Value, Select, Enterprise, and Services Provider License.
-- Contact your [Microsoft Activation Center](https://go.microsoft.com/fwlink/p/?LinkId=618264).
+
+- Contact your [Microsoft activation center](https://go.microsoft.com/fwlink/p/?LinkId=618264).
 
 ### KMS host keys
 
@@ -194,7 +204,7 @@ When you create installation media or images for client computers that will be a
 
 Installation media from Microsoft for Enterprise editions of the Windows operating system may already contain the GVLK. One GVLK is available for each type of installation. The GLVK will not activate the software against Microsoft activation servers, but rather against a KMS or Active Directory-based activation object. In other words, the GVLK does not work unless a valid KMS host key can be found. GVLKs are the only product keys that do not need to be kept confidential.
 
-Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11)).
+Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS client setup keys](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11)).
 
 ### Multiple activation keys
 
@@ -209,18 +219,25 @@ A single KMS host can support unlimited numbers of KMS clients, but Microsoft re
 The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 
 1. An administrator uses the VAMT console to configure a KMS host and install a KMS host key.
+
 2. Microsoft validates the KMS host key, and the KMS host starts to listen for requests.
+
 3. The KMS host updates resource records in DNS to allow clients to locate the KMS host. (Manually adding DNS records is required if your environment does not support DNS dynamic update protocol.)
+
 4. A client configured with a GVLK uses DNS to locate the KMS host.
+
 5. The client sends one packet to the KMS host.
+
 6. The KMS host records information about the requesting client (by using a client ID). Client IDs are used to maintain the count of clients and detect when the same computer is requesting activation again. The client ID is only used to determine whether the activation thresholds are met. The IDs are not stored permanently or transmitted to Microsoft. If the KMS is restarted, the client ID collection starts again.
+
 7. If the KMS host has a KMS host key that matches the products in the GVLK, the KMS host sends a single packet back to the client. This packet contains a count of the number of computers that have requested activation from this KMS host.
+
 8. If the count exceeds the activation threshold for the product that is being activated, the client is activated. If the activation threshold has not yet been met, the client will try again.
 
 ![KMS activation flow.](../images/volumeactivationforwindows81-03.jpg)
 
 **Figure 3**. KMS activation flow
 
-## See also
+## Related articles
+
 - [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
