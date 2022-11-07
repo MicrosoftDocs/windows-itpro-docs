@@ -4,10 +4,11 @@ description: On Windows 11 devices, pin and unpin default apps and organization 
 manager: aaroncz
 ms.author: lizlong
 ms.reviewer: chataylo
-ms.prod: w11
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.collection: highpri
+ms.technology: itpro-configure
 ---
 
 # Customize the Taskbar on Windows 11

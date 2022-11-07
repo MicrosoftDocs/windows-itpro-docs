@@ -4,10 +4,11 @@ description: Learn how to prepare a device for kiosk configuration. Also, learn 
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Prepare a device for kiosk configuration
