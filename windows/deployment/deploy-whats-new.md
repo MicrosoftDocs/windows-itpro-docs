@@ -10,6 +10,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # What's new in Windows client deployment

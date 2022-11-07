@@ -10,6 +10,7 @@ ms.collection:
   - M365-modern-desktop
 ms.topic: article
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Switch to Windows 10 Pro or Enterprise from S mode
