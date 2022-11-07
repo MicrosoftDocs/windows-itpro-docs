@@ -8,6 +8,8 @@ ms.reviewer: jogeurte
 ms.topic: how-to
 ms.date: 08/07/2022
 ms.custom: template-how-to
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Manage Windows Defender Application Control (WDAC) Policies with CI Tool
