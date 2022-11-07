@@ -27,7 +27,7 @@ The following table describes the XML elements and helper functions you can use 
 
 ## &lt;addObjects&gt;
 
-The **&lt;addObjects&gt;** element emulates the existence of one or more objects on the source computer. The child **&lt;object&gt;** elements provide the details of the emulated objects. If the content is a &lt;script&gt; element, the result of the invocation will be an array of objects.
+The **&lt;addObjects&gt;** element emulates the existence of one or more objects on the source computer. The child **&lt;object&gt;** elements provide the details of the emulated objects. If the content is a **&lt;script&gt;** element, the result of the invocation will be an array of objects.
 
 - **Number of occurrences:** unlimited
 
@@ -1336,7 +1336,7 @@ The following example is from the `MigApp.xml` file:
 
 ## &lt;locationModify&gt;
 
-You can use the &lt;locationModify&gt; element to change the location and name of an object before it is migrated to the destination computer. The &lt;locationModify&gt; element is processed only when the **LoadState** tool is run on the destination computer. In other words, this element is ignored by the **ScanState** tool. The &lt;locationModify&gt; element will create the appropriate folder on the destination computer if it does not already exist.
+You can use the **&lt;locationModify&gt;** element to change the location and name of an object before it is migrated to the destination computer. The **&lt;locationModify&gt;** element is processed only when the **LoadState** tool is run on the destination computer. In other words, this element is ignored by the **ScanState** tool. The **&lt;locationModify&gt;** element will create the appropriate folder on the destination computer if it does not already exist.
 
 **Number of occurrences:** Unlimited
 
@@ -1369,7 +1369,7 @@ The following example is from the `MigApp.xml` file:
 
 ### &lt;locationModify&gt; functions
 
-The following functions change the location of objects as they are migrated when using the &lt;locationModify&gt; element. These functions are called for every object that the parent **&lt;objectSet&gt;** element is enumerating. The &lt;locationModify&gt; element will create the appropriate folder on the destination computer if it does not already exist.
+The following functions change the location of objects as they are migrated when using the **&lt;locationModify&gt;** element. These functions are called for every object that the parent **&lt;objectSet&gt;** element is enumerating. The **&lt;locationModify&gt;** element will create the appropriate folder on the destination computer if it does not already exist.
 
 - **ExactMove**
 
@@ -1433,7 +1433,7 @@ This is an internal USMT element. Do not use this element.
 
 ## &lt;manufacturer&gt;
 
-The &lt;manufacturer&gt; element defines the manufacturer for the component, but does not affect the migration.
+The **&lt;manufacturer&gt;** element defines the manufacturer for the component, but does not affect the migration.
 
 - **Number of occurrences:** zero or one
 
@@ -1453,7 +1453,7 @@ Syntax:
 
 ## &lt;merge&gt;
 
-The &lt;merge&gt; element determines what will happen when a collision occurs. A collision is when an object that is migrated is already present on the destination computer. If you do not specify this element, the default behavior for the registry is for the source object to overwrite the destination object. The default behavior for files is for the source file to be renamed to "OriginalFileName(1).OriginalExtension". This element specifies only what should be done when a collision occurs. It does not include objects. Therefore, for your objects to migrate, you must specify **&lt;include&gt;** rules along with the &lt;merge&gt; element. When an object is processed and a collision is detected, USMT will select the most specific merge rule and apply it to resolve the conflict. For example, if you have a &lt;merge&gt; rule `C:\* [*]` set to &lt;sourcePriority&gt; and a &lt;merge&gt; rule `C:\subfolder\* [*]` set to &lt;destinationPriority&gt;, then USMT would use the &lt;destinationPriority&gt; rule because it is the more specific.
+The **&lt;merge&gt;** element determines what will happen when a collision occurs. A collision is when an object that is migrated is already present on the destination computer. If you do not specify this element, the default behavior for the registry is for the source object to overwrite the destination object. The default behavior for files is for the source file to be renamed to `OriginalFileName(1).OriginalExtension`. This element specifies only what should be done when a collision occurs. It does not include objects. Therefore, for your objects to migrate, you must specify **&lt;include&gt;** rules along with the **&lt;merge&gt;** element. When an object is processed and a collision is detected, USMT will select the most specific merge rule and apply it to resolve the conflict. For example, if you have a **&lt;merge&gt;** rule `C:\* [*]` set to **&lt;sourcePriority&gt;** and a **&lt;merge&gt;** rule `C:\subfolder\* [*]` set to **&lt;destinationPriority&gt;**, then USMT would use the **&lt;destinationPriority&gt;** rule because it is the more specific.
 
 For an example of this element, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
 
@@ -1515,13 +1515,13 @@ These functions control how collisions are resolved.
 
 - **FindFilePlaceByPattern**
 
-    The FindFilePlaceByPattern function saves files with an incrementing counter when a collision occurs. It is a string that contains one of each constructs: &lt;F&gt;, &lt;E&gt;, &lt;N&gt; in any order.
+    The FindFilePlaceByPattern function saves files with an incrementing counter when a collision occurs. It is a string that contains one of each constructs: **&lt;F&gt;**, **&lt;E&gt;**, **&lt;N&gt;** in any order.
 
     Syntax: `FindFilePlaceByPattern(FilePattern)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    | *FilePattern* | Yes | <ul><li>**&lt;F&gt;** will be replaced by the original file name.</li><li>**&lt;N&gt;** will be replaced by an incrementing counter until there is no collision with the objects on the destination computer.</li><li>**&lt;E&gt;** will be replaced by the original file name extension.</li></ul> <br/>For example, `<F> (<N>).<E>` will change the source file MyDocument.doc into MyDocument (1).doc on the destination computer. |
+    | *FilePattern* | Yes | <ul><li>**&lt;F&gt;** will be replaced by the original file name.</li><li>**&lt;N&gt;** will be replaced by an incrementing counter until there is no collision with the objects on the destination computer.</li><li>**&lt;E&gt;** will be replaced by the original file name extension.</li></ul> <br/>For example, `<F> (<N>).<E>` will change the source file `MyDocument.doc` into `MyDocument (1).doc` on the destination computer. |
 
 - **NewestVersion**
 
@@ -1531,7 +1531,7 @@ These functions control how collisions are resolved.
 
     |Setting|Required?|Value|
     |--- |--- |--- |
-    |*VersionTag*|Yes|The version field that will be checked. This can be "FileVersion" or "ProductVersion". The file with the highest *VersionTag* version determines which conflicts will be resolved based on the file's version. For example, if Myfile.txt contains FileVersion 1 and the same file on the destination computer contains FileVersion 2, the file on destination will remain.|
+    |*VersionTag*|Yes|The version field that will be checked. This can be `FileVersion` or `ProductVersion`. The file with the highest *VersionTag* version determines which conflicts will be resolved based on the file's version. For example, if `Myfile.txt` contains FileVersion 1 and the same file on the destination computer contains FileVersion 2, the file on destination will remain.|
 
 - **HigherValue()**
 
@@ -1559,7 +1559,7 @@ These functions control how collisions are resolved.
 
 ## &lt;migration&gt;
 
-The &lt;migration&gt; element is the single root element of a migration .xml file and is required. Each .xml file must have a unique migration urlid. The urlid of each file that you specify on the command line must be unique. This is because USMT uses the urlid to define the components within the file. For example, you must specify the following at the beginning of each file: &lt;CustomFileName&gt; is the name of the file; for example, "CustomApp".
+The **&lt;migration&gt;** element is the single root element of a migration .xml file and is required. Each .xml file must have a unique migration urlid. The urlid of each file that you specify on the command line must be unique. This is because USMT uses the urlid to define the components within the file. For example, you must specify the following at the beginning of each file: &lt;CustomFileName&gt; is the name of the file; for example, "CustomApp".
 
 - **Number of occurrences:** one
 
@@ -1728,7 +1728,7 @@ This is an internal USMT element. Do not use this element.
 
 ## &lt;pattern&gt;
 
-You can use this element to specify multiple objects. You can specify multiple &lt;pattern&gt; elements for each **&lt;objectSet&gt;** element and they will be combined. If you are specifying files, you may want to use GenerateDrivePatterns with &lt;script&gt; instead. GenerateDrivePatterns is basically the same as a &lt;pattern&gt; rule, without the drive letter specification. For example, the following two lines of code are similar:
+You can use this element to specify multiple objects. You can specify multiple **&lt;pattern&gt;** elements for each **&lt;objectSet&gt;** element and they will be combined. If you are specifying files, you may want to use `GenerateDrivePatterns` with **&lt;script&gt;** instead. `GenerateDrivePatterns` is basically the same as a **&lt;pattern&gt;** rule, without the drive letter specification. For example, the following two lines of code are similar:
 
 ```xml
 <pattern type="File">C:\Folder\* [Sample.doc]</pattern>
@@ -1750,7 +1750,7 @@ Syntax:
 |Setting|Required?|Value|
 |--- |--- |--- |
 | type | Yes | *typeID* can be Registry, File, or Ini. If *typeId* is Ini, then you cannot have a space between *Path* and *object*. For example, the following is correct when type=&quot;Ini&quot;: <br/>**&lt;pattern type=&quot;Ini&quot;&gt;%WinAmp5InstPath%\Winamp.ini&#124;WinAmp[keeponscreen]&lt;/pattern&gt;** |
-| *Path* [*object*] | Yes | A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated. <ul><li>*Path* can contain the asterisk (`*`) wildcard character or can be an [Recognized Environment Variables](usmt-recognized-environment-variables.md). You cannot use the question mark as a wildcard character.You can use HKCU and HKLM to refer to HKEY_CURRENT_USER and HKEY_LOCAL_MACHINE respectively.</li><li>*Object* can contain the asterisk () wildcard character. However, you cannot use the question mark as a wildcard character. For example: <br/> **`C:\Folder\ [*]`** enumerates all files in C:&lt;em&gt;Path* but no subfolders of C:\Folder. <br/> **`C:\Folder* [*]`** enumerates all files and subfolders of C:\Folder. <br/> **`C:\Folder\ [*.mp3]`** enumerates all .mp3 files in C:\Folder. <br/> **`C:\Folder\ [Sample.doc]`** enumerates only the Sample.doc file located in C:\Folder. <div class="alert">**Note**<br/>If you are migrating a file that has a square bracket character ([ or ]) in the file name, you must insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
+| *Path* [*object*] | Yes | A valid registry or file path pattern, followed by at least one space, followed by brackets [] that contain the object to be migrated. <ul><li>*Path* can contain the asterisk (`*`) wildcard character or can be an [Recognized environment variables](usmt-recognized-environment-variables.md). You cannot use the question mark as a wildcard character. You can use `HKCU` and `HKLM` to refer to `HKEY_CURRENT_USER` and `HKEY_LOCAL_MACHINE` respectively.</li><li>*Object* can contain the asterisk (`*`) wildcard character. However, you cannot use the question mark as a wildcard character. For example: <br/> **`C:\Folder\ [*]`** enumerates all files in `C:\Folder` but no subfolders of `C:\Folder`. <br/> **`C:\Folder* [*]`** enumerates all files and subfolders of `C:\Folder`. <br/> **`C:\Folder\ [*.mp3]`** enumerates all `.mp3` files in `C:\Folder`. <br/> **`C:\Folder\ [Sample.doc]`** enumerates only the `Sample.doc` file located in C:\Folder. <div class="alert">**Note**<br/>If you are migrating a file that has a square bracket character ([ or ]) in the file name, you must insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
 
 For example:
 
@@ -1760,29 +1760,29 @@ For example:
     <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
     ```
 
-- To migrate the EngineeringDrafts folder and any subfolders from the C: drive:
+- To migrate the `C:\EngineeringDrafts` folder and any subfolders from the C: drive:
 
     ```xml
     <pattern type="File">C:\EngineeringDrafts\* [*]</pattern>
     ```
 
-- To migrate only the EngineeringDrafts folder, excluding any subfolders, from the C: drive:
+- To migrate only the `C:\EngineeringDrafts` folder, excluding any subfolders, from the C: drive:
 
-    [Reroute Files and Settings](usmt-reroute-files-and-settings.md)
+    [Reroute files and settings](usmt-reroute-files-and-settings.md)
 
-- To migrate the Sample.doc file from C:\\EngineeringDrafts:
+- To migrate the `Sample.doc` file from `C:\EngineeringDrafts`:
 
     ```xml
     <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
     ```
 
-- To migrate the Sample.doc file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
+- To migrate the `Sample.doc` file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
 
     ```xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
-- For more examples of how to use this element, see [Exclude Files and Settings](usmt-exclude-files-and-settings.md), [Reroute Files and Settings](usmt-reroute-files-and-settings.md), [Include Files and Settings](usmt-include-files-and-settings.md), and [Custom XML Examples](usmt-custom-xml-examples.md).
+- For more examples of how to use this element, see [Exclude files and settings](usmt-exclude-files-and-settings.md), [Reroute files and settings](usmt-reroute-files-and-settings.md), [Include files and settings](usmt-include-files-and-settings.md), and [Custom XML examples](usmt-custom-xml-examples.md).
 
 ## &lt;processing&gt;
 
@@ -1919,7 +1919,7 @@ The following example is from the MigUser.xml file:
 
 ## &lt;script&gt;
 
-The return value that is required by &lt;script&gt; depends on the parent element.
+The return value that is required by **&lt;script&gt;** depends on the parent element.
 
 **Number of occurrences:** Once for [&lt;variable&gt;](#variable), unlimited for [&lt;objectSet&gt;](#objectset) and [&lt;processing&gt;](#processing)
 
@@ -1931,25 +1931,25 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 
 - General Syntax: `<script>ScriptWithArguments</script>`
 
-- You can use [GetStringContent](#script-functions) when &lt;script&gt; is within **&lt;variable&gt;**.
+- You can use [GetStringContent](#script-functions) when **&lt;script&gt;** is within **&lt;variable&gt;**.
 
     Syntax: `<script>MigXmlHelper.GetStringContent("ObjectType","EncodedLocationPattern", "ExpandContent")</script>`
 
     Example: `<script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
 
-- You can use [GenerateUserPatterns](#script-functions) when &lt;script&gt; is within **&lt;objectSet&gt;**.
+- You can use [GenerateUserPatterns](#script-functions) when **&lt;script&gt;** is within **&lt;objectSet&gt;**.
 
     Syntax: `<script>MigXmlHelper.GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")</script>`
 
     Example: `<script>MigXmlHelper.GenerateUserPatterns ("File","%USERPROFILE%\* [*.doc]", "FALSE")</script>`
 
-- You can use [GenerateDrivePatterns](#script-functions) when &lt;script&gt; is within **&lt;objectSet&gt;**.
+- You can use [GenerateDrivePatterns](#script-functions) when **&lt;script&gt;** is within **&lt;objectSet&gt;**.
 
     Syntax: `<script>MigXmlHelper.GenerateDrivePatterns("PatternSegment","DriveType")</script>`
 
     Example: `<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>`
 
-- You can use the [Simple executing scripts](#script-functions) with &lt;script&gt; elements that are within &lt;processing&gt; elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
+- You can use the [Simple executing scripts](#script-functions) with **&lt;script&gt;** elements that are within **&lt;processing&gt;** elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
 
     Syntax: `<script>MigXmlHelper.ExecutingScript</script>`
 
@@ -1957,11 +1957,11 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-| *ScriptWithArguments* | Yes | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript (&quot;Arg1&quot;,&quot;Arg2&quot;)`. <br/>The script will be called for each object that is enumerated by the object sets in the **&lt;include&gt;** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object will be migrated. If it is **FALSE**, it will not be migrated. <br/>The return value that is required by &lt;script&gt; depends on the parent element. <ul><li>When used within **&lt;variable&gt;**, the return value must be a string.</li><li>When used within **&lt;objectSet&gt;**, the return value must be a two-dimensional array of strings.</li><li>When used within **&lt;location&gt;**, the return value must be a valid location that aligns with the type attribute of **&lt;location&gt;**. For example, if &lt;location type=&quot;File&quot;&gt;, the child script element, if specified, must be a valid file location. <div class="alert">**Note**<br/>If you are migrating a file that has a bracket character ([ or ]) in the file name, insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
+| *ScriptWithArguments* | Yes | A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript (&quot;Arg1&quot;,&quot;Arg2&quot;)`. <br/>The script will be called for each object that is enumerated by the object sets in the **&lt;include&gt;** rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object will be migrated. If it is **FALSE**, it will not be migrated. <br/>The return value that is required by **&lt;script&gt;** depends on the parent element. <ul><li>When used within **&lt;variable&gt;**, the return value must be a string.</li><li>When used within **&lt;objectSet&gt;**, the return value must be a two-dimensional array of strings.</li><li>When used within **&lt;location&gt;**, the return value must be a valid location that aligns with the type attribute of **&lt;location&gt;**. For example, if &lt;location type=&quot;File&quot;&gt;, the child script element, if specified, must be a valid file location. <div class="alert">**Note**<br/>If you are migrating a file that has a bracket character ([ or ]) in the file name, insert the carrot (^) character directly before the bracket for it to be valid. For example, if there is a file named &quot;file].txt&quot;, specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.</div></li></ul> |
 
 Examples:
 
-To migrate the Sample.doc file from any drive on the source computer, use &lt;script&gt; as follows. If multiple files exist with the same name, all such files will get migrated.
+To migrate the Sample.doc file from any drive on the source computer, use **&lt;script&gt;** as follows. If multiple files exist with the same name, all such files will get migrated.
 
 ```xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script> 
@@ -1971,7 +1971,7 @@ For more examples of how to use this element, see [Exclude Files and Settings](u
 
 ### &lt;script&gt; functions
 
-You can use the following functions with the &lt;script&gt; element
+You can use the following functions with the **&lt;script&gt;** element
 
 - [String and pattern generating functions](#string-and-pattern-generating-functions)
 
@@ -1983,14 +1983,14 @@ These functions return either a string or a pattern.
 
 - **GetStringContent**
 
-    You can use GetStringContent with &lt;script&gt; elements that are within **&lt;variable&gt;** elements. If possible, this function returns the string representation of the given object. Otherwise, it returns NULL. For file objects this function always returns NULL.
+    You can use GetStringContent with **&lt;script&gt;** elements that are within **&lt;variable&gt;** elements. If possible, this function returns the string representation of the given object. Otherwise, it returns **NULL**. For file objects this function always returns **NULL**.
 
     Syntax: `GetStringContent("ObjectType","EncodedLocationPattern", "ExpandContent")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     | *ObjectType* | Yes | The type of object. Can be Registry or Ini (for an .ini file). |
-    | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, HKLM\SOFTWARE\MyKey[].</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br/>IniFilePath&#124;SectionName[SettingName]</li></ul> |
+    | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, `HKLM\SOFTWARE\MyKey[]`.</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br/>**IniFilePath&#124;SectionName[SettingName]**</li></ul> |
     | *ExpandContent* | No (default=TRUE) | Can be **TRUE** or **FALSE**. If **FALSE**, then the given location will not be expanded before it is returned. |
 
   For example:
@@ -2003,7 +2003,7 @@ These functions return either a string or a pattern.
 
 - **GenerateDrivePatterns**
 
-  The GenerateDrivePatterns function will iterate all of the available drives and select the ones that match the requested drive type. It will then concatenate the selected drives with the end part of *PatternSegment* to form a full encoded file pattern. For example, if *PatternSegment* is `Path [file.txt]` and DriveType is `Fixed`, then the function will generate `C:\Path [file.txt]`, and other patterns if there are fixed drives other than C:. You cannot specify environment variables with this function. You can use GenerateDrivePatterns with &lt;script&gt; elements that are within [&lt;objectSet&gt;](#objectset) that are within **&lt;include&gt;**/&lt;exclude&gt;.
+  The `GenerateDrivePatterns` function will iterate all of the available drives and select the ones that match the requested drive type. It will then concatenate the selected drives with the end part of *PatternSegment* to form a full encoded file pattern. For example, if *PatternSegment* is `Path [file.txt]` and *DriveType* is `Fixed`, then the function will generate `C:\Path [file.txt]`, and other patterns if there are fixed drives other than C:. You cannot specify environment variables with this function. You can use `GenerateDrivePatterns` with **&lt;script&gt;** elements that are within [&lt;objectSet&gt;](#objectset) that are within **&lt;include&gt;**/**&lt;exclude&gt;**.
 
   Syntax: `GenerateDrivePatterns("PatternSegment","DriveType")`
 
@@ -2016,7 +2016,7 @@ These functions return either a string or a pattern.
 
 - **GenerateUserPatterns**
 
-  The function will iterate through all users that are being migrated, excluding the currently processed user if &lt;ProcessCurrentUser&gt; is **FALSE**, and will expand the specified pattern in the context of each user. For example, if users A, B and C have profiles in C:\\Documents and Settings), by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function will generate the following three patterns:
+  The `GenerateUserPatterns` function will iterate through all users that are being migrated, excluding the currently processed user if **&lt;ProcessCurrentUser&gt;** is **FALSE**, and will expand the specified pattern in the context of each user. For example, if users A, B, and C have profiles in `C:\Documents and Settings`, by calling `GenerateUserPattens('File','%userprofile% [*.doc]','TRUE')`, the helper function will generate the following three patterns:
 
   - "C:\\Documents and Settings\\A\\\* \[\*.doc\]"
 
@@ -2034,9 +2034,9 @@ These functions return either a string or a pattern.
 
 **Example:**
 
-If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all .doc files from the source computer — but if user X is not migrated, then do not migrate any of the .doc files from user X's profile.
+If `GenerateUserPattens('File','%userprofile% [*.doc]','FALSE')` is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all `.doc` files from the source computer — but if user X is not migrated, then do not migrate any of the `.doc` files from user X's profile.
 
-The following is example code for this scenario. The first **&lt;rules&gt;** element migrates all.doc files on the source computer with the exception of those inside C:\\Documents and Settings. The second **&lt;rules&gt;** elements will migrate all .doc files from C:\\Documents and Settings with the exception of the .doc files in the profiles of the other users. Because the second **&lt;rules&gt;** element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
+The following is example code for this scenario. The first **&lt;rules&gt;** element migrates all `.doc` files on the source computer with the exception of those inside `C:\Documents and Settings`. The second **&lt;rules&gt;** elements will migrate all `.doc` files from `C:\Documents and Settings` with the exception of the `.doc` files in the profiles of the other users. Because the second **&lt;rules&gt;** element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
 
 ```xml
 <rules context="System">
@@ -2067,11 +2067,11 @@ The following is example code for this scenario. The first **&lt;rules&gt;** ele
 
 ### MigXmlHelper.GenerateDocPatterns
 
-This helper function invokes the document finder to scan the system for all files that can be migrated. It can be invoked in either System or User context to focus the scan.
+The `MigXmlHelper.GenerateDocPatterns` helper function invokes the document finder to scan the system for all files that can be migrated. It can be invoked in either **System** or **User** context to focus the scan.
 
 |Setting|Required?|Value|
 |--- |--- |--- |
-|*ScanProgramFiles*|No (default = FALSE)|Can be **TRUE** or **FALSE**. The *ScanProgramFiles* parameter determines whether or not the document finder scans the **Program Files** directory to gather registered file extensions for known applications. For example, when set to **TRUE** it will discover and migrate .jpg files under the Photoshop directory, if .jpg is a file extension registered to Photoshop.|
+|*ScanProgramFiles*|No (default = FALSE)|Can be **TRUE** or **FALSE**. The *ScanProgramFiles* parameter determines whether or not the document finder scans the **Program Files** directory to gather registered file extensions for known applications. For example, when set to **TRUE** it will discover and migrate .jpg files under the Photoshop directory, if `.jpg` is a file extension registered to Photoshop.|
 |*IncludePatterns*|No (default = TRUE)|Can be **TRUE** or **FALSE**. **TRUE** will generate include patterns and can be added under the **&lt;include&gt;** element. **FALSE** will generate exclude patterns and can be added under the **&lt;exclude&gt;** element.|
 |*SystemDrive*|No (default = FALSE)|Can be **TRUE** or **FALSE**. If **TRUE**, restricts all patterns to the system drive.|
 
@@ -2098,7 +2098,7 @@ This helper function invokes the document finder to scan the system for all file
 
 ### Simple executing scripts
 
-The following scripts have no return value. You can use the following errors with &lt;script&gt; elements that are within &lt;processing&gt; elements
+The following scripts have no return value. You can use the following errors with **&lt;script&gt;** elements that are within **&lt;processing&gt;** elements
 
 - **AskForLogoff()**. Prompts the user to log off at the end of the migration. For example:
 
@@ -2136,15 +2136,15 @@ The following scripts have no return value. You can use the following errors wit
   </processing>
   ```
 
-- **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](/windows/win32/api/winsvc/nf-winsvc-startservicea).
+- **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in `HKLM\System\CurrentControlSet\Services` that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see the [StartServiceA function (winsvc.h)](/windows/win32/api/winsvc/nf-winsvc-startservicea) article.
 
-- **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service.
+- **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in `HKLM\System\CurrentControlSet\Services` that holds the data for the given service.
 
-- **SyncSCM(ServiceShortName).** Reads the Start type value from the registry (HKLM\\System\\CurrentControlSet\\Services\\ServiceShortName \[Start\]) after it is changed by the migration engine, and then synchronizes Service Control Manager (SCM) with the new value.
+- **SyncSCM(ServiceShortName).** Reads the Start type value from the registry `(HKLM\System\CurrentControlSet\Services\ServiceShortName [Start])` after it is changed by the migration engine, and then synchronizes Service Control Manager (SCM) with the new value.
 
 ## &lt;text&gt;
 
-You can use the &lt;text&gt; element to set a value for any environment variables that are inside one of the migration .xml files.
+You can use the **&lt;text&gt;** element to set a value for any environment variables that are inside one of the migration .xml files.
 
 - **Number of occurrences:** Once in each [&lt;variable&gt;](#variable) element.
 
@@ -2172,9 +2172,9 @@ For example:
 
 ## &lt;unconditionalExclude&gt;
 
-The &lt;unconditionalExclude&gt; element excludes the specified files and registry values from the migration, regardless of the other include rules in any of the migration .xml files or in the `Config.xml` file. The objects declared here will not be migrated because this element takes precedence over all other rules. For example, even if there are explicit **&lt;include&gt;** rules to include .mp3 files, if you specify to exclude them with this option, then they will not be migrated.
+The **&lt;unconditionalExclude&gt;** element excludes the specified files and registry values from the migration, regardless of the other include rules in any of the migration .xml files or in the `Config.xml` file. The objects declared here will not be migrated because this element takes precedence over all other rules. For example, even if there are explicit **&lt;include&gt;** rules to include `.mp3` files, if you specify to exclude them with this option, then they will not be migrated.
 
-Use this element if you want to exclude all .mp3 files from the source computer. Or, if you are backing up C:\\UserData using another method, you can exclude the entire folder from the migration. Use this element with caution, however, because if an application needs a file that you exclude, the application may not function properly on the destination computer.
+Use this element if you want to exclude all `.mp3` files from the source computer. Or, if you are backing up `C:\UserData` using another method, you can exclude the entire folder from the migration. Use this element with caution, however, because if an application needs a file that you exclude, the application may not function properly on the destination computer.
 
 - **Number of occurrences:** Unlimited.
 
@@ -2188,7 +2188,7 @@ Syntax:
 <unconditionalExclude></unconditionalExclude>
 ```
 
-The following .xml file excludes all .mp3 files from migration. For additional examples of how to use this element, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
+The following .xml file excludes all `.mp3` files from migration. For additional examples of how to use this element, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
 
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
@@ -2209,11 +2209,11 @@ The following .xml file excludes all .mp3 files from migration. For additional e
 
 ## &lt;variable&gt;
 
-The **&lt;variable&gt;** element is required in an **&lt;environment&gt;** element. For each **&lt;variable&gt;** element there must be one **&lt;objectSet&gt;**, &lt;script&gt;, or &lt;text&gt; element. The content of the **&lt;variable&gt;** element assigns a text value to the environment variable. This element has the following three options:
+The **&lt;variable&gt;** element is required in an **&lt;environment&gt;** element. For each **&lt;variable&gt;** element there must be one **&lt;objectSet&gt;**, **&lt;script&gt;**, or **&lt;text&gt;** element. The content of the **&lt;variable&gt;** element assigns a text value to the environment variable. This element has the following three options:
 
-1. If the **&lt;variable&gt;** element contains a &lt;text&gt; element, then the value of the variable element will be the value of the &lt;text&gt; element.
+1. If the **&lt;variable&gt;** element contains a **&lt;text&gt;** element, then the value of the variable element will be the value of the **&lt;text&gt;** element.
 
-2. If the **&lt;variable&gt;** element contains a &lt;script&gt; element and the invocation of the script produces a non-null string, then the value of the **&lt;variable&gt;** element will be the result of the script invocation.
+2. If the **&lt;variable&gt;** element contains a **&lt;script&gt;** element and the invocation of the script produces a non-null string, then the value of the **&lt;variable&gt;** element will be the result of the script invocation.
 
 3. If the **&lt;variable&gt;** element contains an **&lt;objectSet&gt;** element and the evaluation of the **&lt;objectSet&gt;** element produces at least one object pattern, then the value of the first object to match the resulting object pattern will be the value of the variable element.
 
@@ -2250,7 +2250,7 @@ The following example is from the `MigApp.xml` file:
 
 ## &lt;version&gt;
 
-The &lt;version&gt; element defines the version for the component, but does not affect the migration.
+The **&lt;version&gt;** element defines the version for the component, but does not affect the migration.
 
 - **Number of occurrences:** zero or one
 
@@ -2276,7 +2276,7 @@ For example:
 
 ## &lt;windowsObjects&gt;
 
-The &lt;windowsObjects&gt; element is for USMT internal use only. Do not use this element.
+The **&lt;windowsObjects&gt;** element is for USMT internal use only. Do not use this element.
 
 ## Appendix
 
@@ -2284,43 +2284,43 @@ The &lt;windowsObjects&gt; element is for USMT internal use only. Do not use thi
 
 - **Specifying encoded locations**. The encoded location used in all of the helper functions is an unambiguous string representation for the name of an object. It is composed of the node part, optionally followed by the leaf enclosed in square brackets. This makes a clear distinction between nodes and leaves.
 
-    For example, specify the file C:\\Windows\\Notepad.exe like this: `c:\Windows[Notepad.exe]`. Similarly, specify the directory C:\\Windows\\System32 like this: `c:\Windows\System32`. (Notice the absence of the \[\] construct.)
+    For example, specify the file `C:\Windows\Notepad.exe` like this: `c:\Windows[Notepad.exe]`. Similarly, specify the directory `C:\Windows\System32` like this: `c:\Windows\System32`. (Notice the absence of the `[]` construct.)
 
-    Representing the registry is very similar. The default value of a registry key is represented as an empty \[\] construct. For example, the default value for the HKLM\\SOFTWARE\\MyKey registry key will be `HKLM\SOFTWARE\MyKey[]`.
+    Representing the registry is very similar. The default value of a registry key is represented as an empty `[]` construct. For example, the default value for the `HKLM\SOFTWARE\MyKey` registry key will be `HKLM\SOFTWARE\MyKey[]`.
 
 - **Specifying location patterns**. You specify a location pattern in a way that is similar to how you specify an actual location. The exception is that both the node and leaf part accept patterns. However, a pattern from the node does not extend to the leaf.
 
-    For example, the pattern `c:\Windows\*` will match the Windows directory and all subdirectories. But it will not match any of the files in those directories. To match the files as well, you must specify `c:\Windows\*[*]`.
+    For example, the pattern `c:\Windows\*` will match the Windows directory and all subdirectories, but it will not match any of the files in those directories. To match the files as well, you must specify `c:\Windows\*[*]`.
 
 ### Internal USMT functions
 
 The following functions are for internal USMT use only. Do not use them in an .xml file.
 
-- AntiAlias
+- *AntiAlias*
 
-- ConvertScreenSaver
+- *ConvertScreenSaver*
 
-- ConvertShowIEOnDesktop
+- *ConvertShowIEOnDesktop*
 
-- ConvertToOfficeLangID
+- *ConvertToOfficeLangID*
 
-- MigrateActiveDesktop
+- *MigrateActiveDesktop*
 
-- MigrateAppearanceUPM
+- *MigrateAppearanceUPM*
 
-- MigrateDisplayCS
+- *MigrateDisplayCS*
 
-- MigrateDisplaySS
+- *MigrateDisplaySS*
 
-- MigrateIEAutoSearch
+- *MigrateIEAutoSearch*
 
-- MigrateMouseUPM
+- *MigrateMouseUPM*
 
-- MigrateSoundSysTray
+- *MigrateSoundSysTray*
 
-- MigrateTaskBarSS
+- *MigrateTaskBarSS*
 
-- SetPstPathInMapiStruc
+- *SetPstPathInMapiStruc*
 
 ### Valid version tags
 
