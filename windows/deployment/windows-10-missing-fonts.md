@@ -45,7 +45,7 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 2. For Windows 10, in **Settings**, select **Time & language**, and then select **Region & language**.
 
-   For Windows 11, in **Settings**, select **Time & language**, and then select **Langauge & Region**.
+   For Windows 11, in **Settings**, select **Time & language**, and then select **Language & Region**.
 
 3. If Hebrew isn't included in the list of languages, select the plus sign (**+**) to add a language.
 
