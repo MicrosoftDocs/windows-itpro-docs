@@ -154,7 +154,7 @@ Footnotes:
 - 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes-2004#windows-holographic-version-20h2)
 - 10 - Available in [Windows Holographic, version 21H1](/hololens/hololens-release-notes#windows-holographic-version-21h1)
 - 11 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
-- 12 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-22h2)
+- 12 - Available in [Windows Holographic, version 22H2](/hololens/hololens-release-notes#windows-holographic-version-22h2)
 - Insider - Available in our current [HoloLens Insider builds](/hololens/hololens-insider).
 
 ## Related topics
