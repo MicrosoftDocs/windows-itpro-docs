@@ -1,6 +1,6 @@
 ---
 title: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
-description: In this article, you'll learn how to replace a Windows 7 SP1 computer using Microsoft Endpoint Configuration Manager.
+description: In this article, you'll learn how to replace a Windows 7 SP1 computer using Microsoft Configuration Manager.
 ms.assetid: 3c8a2d53-8f08-475f-923a-bca79ca8ac36
 ms.reviewer: 
 manager: aaroncz
@@ -20,7 +20,7 @@ ms.date: 10/27/2022
 
 - Windows 10
 
-In this article, you'll learn how to replace a Windows 7 SP1 computer using Microsoft Endpoint Configuration Manager. This process is similar to refreshing a computer, but since you're replacing the device, you have to run the backup job separately from the deployment of Windows 10.
+In this article, you'll learn how to replace a Windows 7 SP1 computer using Microsoft Configuration Manager. This process is similar to refreshing a computer, but since you're replacing the device, you have to run the backup job separately from the deployment of Windows 10.
 
 In this article, you'll create a backup-only task sequence that you run on PC0004 (the device you're replacing), deploy the PC0006 computer running Windows 10, and then restore this backup of PC0004 onto PC006. This process is similar to the MDT replace process: [Replace a Windows 7 computer with a Windows 10 computer](../deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md).
 

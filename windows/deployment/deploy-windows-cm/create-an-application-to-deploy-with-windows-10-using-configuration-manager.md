@@ -1,6 +1,6 @@
 ---
 title: Create an app to deploy with Windows 10 using Configuration Manager
-description: Microsoft Endpoint Manager supports deploying applications as part of the Windows 10 deployment process.
+description: Microsoft Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
 ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
 ms.reviewer: 
 manager: aaroncz
@@ -20,7 +20,7 @@ ms.date: 10/27/2022
 
 -   Windows 10
 
-Microsoft Endpoint Manager supports deploying applications as part of the Windows 10 deployment process. In this section, you create an application in Microsoft Endpoint Manager that you later configure the task sequence to use.
+Microsoft Configuration Manager supports deploying applications as part of the Windows 10 deployment process. In this section, you create an application in Microsoft Configuration Manager that you later configure the task sequence to use.
 
 For the purposes of this guide, we'll use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide, CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 

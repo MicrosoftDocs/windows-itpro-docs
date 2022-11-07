@@ -5,7 +5,7 @@ ms.pagetype: appcompat
 description: Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
 author: dansimp
 ms.author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 
 ms.reviewer: 
 audience: itpro

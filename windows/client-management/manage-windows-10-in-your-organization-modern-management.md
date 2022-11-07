@@ -9,15 +9,16 @@ ms.author: vinpa
 ms.reviewer: 
 manager: aaroncz
 ms.topic: overview
+ms.technology: itpro-manage
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management
 
 Use of personal devices for work, and employees working outside the office, may be changing how your organization manages devices. Certain parts of your organization might require deep, granular control over devices, while other parts might seek lighter, scenario-based management that empowers the modern workforce. Windows 10 offers the flexibility to respond to these changing requirements, and can easily be deployed in a mixed environment. You can shift the percentage of Windows 10 devices gradually, following the normal upgrade schedules used in your organization.
 
-Your organization might have considered bringing in Windows 10 devices and downgrading them to an earlier version of Windows until everything is in place for a formal upgrade process. While this downgrade may appear to save costs due to standardization, greater savings can come from avoiding the downgrade and immediately taking advantage of the cost reductions Windows 10 can provide. Because Windows 10 devices can be managed using the same processes and technology as other previous Windows versions, it's easy for versions to coexist.
+Your organization might have considered bringing in Windows 10 devices and downgrading them to an earlier version of Windows until everything is in place for a formal upgrade process. This downgrade may appear to save costs due to standardization. But, you typically save more if you don't downgrade, and immediately taking advantage of the cost reductions Windows 10 can provide. Because Windows 10 devices can be managed using the same processes and technology as other previous Windows versions, it's easy for versions to coexist.
 
-Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as Microsoft Endpoint Configuration Manager, Microsoft Intune, or other third-party products. This "managed diversity" enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
+Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as Microsoft Configuration Manager, Microsoft Intune, or other third-party products. This "managed diversity" enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
 
 This six-minute video demonstrates how users can bring in a new retail device and be up and working with their personalized settings and a managed experience in a few minutes, without being on the corporate network. It also demonstrates how IT can apply policies and configurations to ensure device compliance.
 
@@ -114,7 +115,7 @@ MDM with Intune provide tools for applying Windows updates to client computers i
 
 There are various steps you can take to begin the process of modernizing device management in your organization:
 
-**Assess current management practices, and look for investments you might make today.** Which of your current practices need to stay the same, and which can you change? Specifically, what elements of traditional management do you need to retain and where can you modernize? Whether you take steps to minimize custom imaging, reevaluate settings management, or reassesses authentication and compliance, the benefits can be immediate. You can use [Group policy analytics in Microsoft Endpoint Manager](/mem/intune/configuration/group-policy-analytics) to help determine which group policies supported by cloud-based MDM providers, including Microsoft Intune.
+**Assess current management practices, and look for investments you might make today.** Which of your current practices need to stay the same, and which can you change? Specifically, what elements of traditional management do you need to retain and where can you modernize? Whether you take steps to minimize custom imaging, reevaluate settings management, or reassesses authentication and compliance, the benefits can be immediate. You can use [Group policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics) to help determine which group policies supported by cloud-based MDM providers, including Microsoft Intune.
 
 **Assess the different use cases and management needs in your environment.** Are there groups of devices that could benefit from lighter, simplified management? BYOD devices, for example, are natural candidates for cloud-based management. Users or devices handling more highly regulated data might require an on-premises Active Directory domain for authentication. Configuration Manager and EMS provide you the flexibility to stage implementation of modern management scenarios while targeting different devices the way that best suits your business needs.
 

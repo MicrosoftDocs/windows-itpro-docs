@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
-description: In this article, you'll learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences.
+description: In this article, you'll learn how to deploy Windows 10 using Microsoft Configuration Manager deployment packages and task sequences.
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
 manager: aaroncz
 ms.author: frankroj
@@ -18,7 +18,7 @@ ms.date: 10/27/2022
 
 -   Windows 10
 
-In this article, you'll learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences. This article will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this article.
+In this article, you'll learn how to deploy Windows 10 using Microsoft Configuration Manager deployment packages and task sequences. This article will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this article.
 
 This article assumes that you've completed the following prerequisite procedures:
 - [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
@@ -40,7 +40,7 @@ For the purposes of this guide, we'll use a minimum of two server computers (DC0
 
 All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
-All server and client computers referenced in this guide are on the same subnet. This connection isn't required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
+All server and client computers referenced in this guide are on the same subnet. This connection isn't required. But each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the `contoso.com` domain. Internet connectivity is also required to download OS and application updates.
 
 >[!NOTE]
 >No WDS console configuration is required for PXE to work. Everything is done with the Configuration Manager console.

@@ -76,7 +76,7 @@ With this release, you can configure [Windows Autopilot user-driven](/windows/de
 
 If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages. In previous versions, this skip was only supported with self-deploying profiles.
 
-### Microsoft Endpoint Manager
+### Microsoft Configuration Manager
 
 An in-place upgrade wizard is available in Configuration Manager. For more information, see [Simplifying Windows 10 deployment with Configuration Manager](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-windows-10-deployment-with-configuration-manager/ba-p/1214364).
 
@@ -100,7 +100,7 @@ For the latest information about MDT, see the [MDT release notes](/mem/configmgr
 
 Windows PowerShell cmdlets have been improved:
 
-- **Get-DeliveryOptimizationStatus** has added the  **-PeerInfo** option for a real-time peak behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent).
+- **Get-DeliveryOptimizationStatus** has added the  **-PeerInfo** option for a real-time peek behind the scenes on peer-to-peer activity (for example the peer IP Address, bytes received / sent).
 - **Get-DeliveryOptimizationLogAnalysis** is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the **-ListConnections** option to for in-depth look at peer-to-peer connections.
 - **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to help in troubleshooting.
 
@@ -243,7 +243,7 @@ Examples include:
 - Monitor panel testing and validation
 - Independent Hardware Vendor (IHV) driver testing and validation
 
-To prevent Windows from using a display, choose Settings > Display and click Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
+To prevent Windows from using a display, choose Settings > Display and select Advanced display settings. Select a display to view or change, and then set the Remove display from desktop setting to On.  The display will now be available for a specialized use.
 
 ## Desktop Analytics
 

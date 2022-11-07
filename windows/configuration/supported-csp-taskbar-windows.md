@@ -7,6 +7,7 @@ ms.reviewer: chataylo
 ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
+ms.technology: itpro-configure
 ---
 
 # Supported configuration service provider (CSP) policies for Windows 11 taskbar
@@ -15,7 +16,7 @@ ms.localizationpriority: medium
 
 - Windows 11
 
-The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). In an MDM policy, these CSPs are settings that you configure. When the policy is ready, you deploy the policy to your devices.
+The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). In an MDM policy, these CSPs are settings that you configure. When the policy is ready, you deploy the policy to your devices.
 
 This article lists the CSPs that are available to customize the Taskbar for Windows 11 devices. Windows 11 uses the [Policy CSP - Start](/windows/client-management/mdm/policy-csp-start).
 

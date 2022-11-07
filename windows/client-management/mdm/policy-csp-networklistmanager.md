@@ -59,7 +59,7 @@ manager: aaroncz
 <!--Description-->
 This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 
-When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must follow this format, even in the UI:
+When entering a list of TLS endpoints in Microsoft Intune, you must follow this format, even in the UI:
 
 `<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>`
 
@@ -107,6 +107,6 @@ This policy setting provides the string that is to be used to name a network. Th
 
 <!--/Policies-->
 
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

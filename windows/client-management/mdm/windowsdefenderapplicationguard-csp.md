@@ -3,11 +3,11 @@ title: WindowsDefenderApplicationGuard CSP
 description: Configure the settings in Microsoft Defender Application Guard by using the WindowsDefenderApplicationGuard configuration service provider (CSP).
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/02/2021
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

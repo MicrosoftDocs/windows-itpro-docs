@@ -86,7 +86,7 @@ If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [C
       - [Create app in Intune](#create-app-in-intune)
       - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
     - [Add Microsoft 365 Apps](#add-microsoft-365-apps)
-      - [Create app in Microsoft Endpoint Manager](#create-app-in-microsoft-endpoint-manager)
+      - [Create app in Microsoft Intune](#create-app-in-microsoft-intune)
       - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile-1)
   - [Glossary](#glossary)
 
@@ -398,7 +398,7 @@ Your VM (or device) can be registered either via Intune or Microsoft Store for B
 
 ### Autopilot registration using Intune
 
-1. In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/), choose **Devices** > **Device enrollment | Enroll devices** > **Windows enrollment** > **Windows Autopilot Deployment Program | Devices** and then on the **Windows Autopilot devices** page, choose **Import**.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), choose **Devices** > **Device enrollment | Enroll devices** > **Windows enrollment** > **Windows Autopilot Deployment Program | Devices** and then on the **Windows Autopilot devices** page, choose **Import**.
 
     ![Intune device import.](images/enroll1.png)
 
@@ -603,7 +603,7 @@ To use the device (or VM) for other purposes after completion of this lab, you n
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the Microsoft Endpoint Manager admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), then go to **Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)
@@ -805,7 +805,7 @@ For more information on adding apps to Intune, see [Intune Standalone - Win32 ap
 
 ### Add Microsoft 365 Apps
 
-#### Create app in Microsoft Endpoint Manager
+#### Create app in Microsoft Intune
 
 Sign in to the Azure portal and select **Intune**.
 

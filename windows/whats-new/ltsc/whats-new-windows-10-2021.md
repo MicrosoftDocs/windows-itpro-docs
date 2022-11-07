@@ -161,9 +161,9 @@ Windows Hello enhancements include:
 
 ## Cloud Services
 
-### Microsoft Endpoint Manager
+### Microsoft Intune family of products
 
-Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now [Microsoft Endpoint Manager](/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) are now part of the [Microsoft endpoint management services](/mem/endpoint-manager-overview). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/).
 
 ### Configuration Manager
 

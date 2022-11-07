@@ -29,7 +29,7 @@ ms.technology: itpro-security
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Windows Defender Application Control (WDAC) includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM) or Microsoft Intune.
+Windows Defender Application Control (WDAC) includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Configuration Manager (MEMCM) or Microsoft Intune.
 
 ## How does a managed installer work?
 
@@ -127,7 +127,7 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
     </RuleCollection>
     ```
 
-4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This condition-based inclusion ensures the policy will merge successfully on devices that may already have an AppLocker policy in place.
+4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This condition-based inclusion ensures the policy will merge successfully on devices that may already have an AppLocker policy in place.
 
     ```xml
     <AppLockerPolicy Version="1">

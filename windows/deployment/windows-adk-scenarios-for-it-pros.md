@@ -1,21 +1,21 @@
 ---
 title: Windows ADK for Windows 10 scenarios for IT Pros (Windows 10)
 description: The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows.
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 10/31/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros
 
+The [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. For an overview of what's new in the Windows ADK for Windows 10, see [What's new in kits and tools](/windows-hardware/get-started/what-s-new-in-kits-and-tools).
 
-The [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) contains tools that can be used by IT Pros to deploy Windows. For an overview of what's new in the Windows ADK for Windows 10, see [What's new in kits and tools](/windows-hardware/get-started/what-s-new-in-kits-and-tools).
-
-In previous releases of Windows, the Windows ADK docs were published on both TechNet and the MSDN Hardware Dev Center. Starting with the Windows 10 release, Windows ADK documentation is available on the MSDN Hardware Dev Center. For the Windows 10 ADK reference content, see [Desktop manufacturing](/windows-hardware/manufacture/desktop/).
+In previous releases of Windows, the Windows ADK docs were published on both TechNet and the MSDN Hardware Dev Center. Starting with the Windows 10 release, Windows ADK documentation is available on the MSDN Hardware Dev Center. For the Windows 10 ADK reference content, see [Desktop manufacturing](/windows-hardware/manufacture/desktop/).
 
 Here are some key scenarios that will help you find the content on the MSDN Hardware Dev Center.
 
@@ -41,7 +41,7 @@ Here are some things you can do with Sysprep:
 -   [Customize the default user profile](/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
 -   [Use answer files](/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep)
 
-[Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro) is a small operating system used to boot a computer that does not have an operating system. You can boot to Windows PE and then install a new operating system, recover data, or repair an existing operating system.
+[Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro) is a small operating system used to boot a computer that doesn't have an operating system. You can boot to Windows PE and then install a new operating system, recover data, or repair an existing operating system.
 
 Here are ways you can create a WinPE image:
 
@@ -68,7 +68,7 @@ For a list of settings you can change, see [Unattended Windows Setup Reference](
 
 ### Create a provisioning package using Windows ICD
 
-Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) or Windows 10 IoT Core (IoT Core) image.
+Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) or Windows 10 IoT Core (IoT Core) image.
 
 Here are some things you can do with Windows ICD:
 
@@ -81,7 +81,3 @@ There are also a few tools included in the Windows ADK that are specific to IT P
 
 -   [Volume Activation Management Tool (VAMT) Technical Reference](volume-activation/volume-activation-management-tool.md)
 -   [User State Migration Tool (USMT) Technical Reference](usmt/usmt-technical-reference.md)
-
- 
-
- 

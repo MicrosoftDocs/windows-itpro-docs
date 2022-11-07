@@ -3,11 +3,12 @@ title: Troubleshoot kiosk mode issues (Windows 10/11)
 description: Learn how to troubleshoot single-app and multi-app kiosk configurations, as well as common problems like sign-in issues.
 ms.reviewer: sybruckm
 manager: aaroncz
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Troubleshoot kiosk mode issues

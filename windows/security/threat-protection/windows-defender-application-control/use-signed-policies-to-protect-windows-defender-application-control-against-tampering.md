@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 08/15/2022
+ms.date: 11/04/2022
 ms.technology: itpro-security
 ---
 
@@ -42,10 +42,10 @@ Signed Windows Defender Application Control (WDAC) policies give organizations t
 
 Before you sign with PKCS #7 and deploy a signed WDAC policy, we recommend that you [audit the policy](audit-windows-defender-application-control-policies.md) to discover any blocked applications that should be allowed to run.
 
-Signing WDAC policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. 
+Signing WDAC policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward.
 If you don't currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) to create one with your on-premises CA.
 
-Before PKCS #7-signing WDAC policies for the first time, ensure you enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](select-types-of-rules-to-create.md).
+Before PKCS #7-signing WDAC policies for the first time, ensure you enable rule options **Enabled:Advanced Boot Options Menu** and **10 Enabled:Boot Audit on Failure** to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](select-types-of-rules-to-create.md).
 
 To sign a Windows Defender Application Control policy with SignTool.exe, you need the following components:
 
@@ -85,7 +85,7 @@ If you don't have a code signing certificate, see [Optional: Create a code signi
 
    > [!NOTE]
    > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
-   Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see [Disable signed Windows Defender Application Control policies within Windows](disable-windows-defender-application-control-policies.md#disable-signed-windows-defender-application-control-policies-within-windows).
+   Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed WDAC policies, see [Remove WDAC policies](disable-windows-defender-application-control-policies.md).
 
 6. Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
 

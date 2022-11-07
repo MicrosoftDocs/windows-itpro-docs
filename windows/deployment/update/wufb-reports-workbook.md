@@ -1,8 +1,8 @@
 ---
-title: Use the workbook for Update Compliance (preview)
+title: Use the workbook for Windows Update for Business reports
 ms.reviewer: 
 manager: dougeby
-description: How to use the Update Compliance (preview) workbook.
+description: How to use the Windows Update for Business reports workbook.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
@@ -12,45 +12,43 @@ ms.date: 10/24/2022
 ms.technology: itpro-updates
 ---
 
-# Update Compliance (preview) workbook
+# Windows Update for Business reports (preview) workbook
 <!-- MAX6325272, OS33771278 -->
 ***(Applies to: Windows 11 & Windows 10)***
 
-> [!IMPORTANT]
-> - As of August 17, 2022, a new step needs to be taken to ensure access to the preview version of Update Compliance and the `CommercialID` is no longer required. For more information, see [Configure Update Compliance settings through the Microsoft 365 admin center](update-compliance-v2-enable.md#bkmk_admin-center). 
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-[Update Compliance](update-compliance-v2-overview.md) presents information commonly needed by updates administrators in an easy to use format. Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
+[Windows Update for Business reports](wufb-reports-overview.md) presents information commonly needed by updates administrators in an easy-to-use format. Windows Update for Business reports uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into four tab sections:
 
 - [Summary](#summary-tab)
 - [Quality updates](#quality-updates-tab)
 - [Feature updates](#feature-updates-tab)
+- [Delivery Optimization](#bkmk_do)
 
-:::image type="content" source="media/33771278-update-compliance-workbook-summary.png" alt-text="Screenshot of the summary tab in the Update Compliance workbook with the three tabbed sections outlined in red." lightbox="media/33771278-update-compliance-workbook-summary.png":::
+:::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook with the three tabbed sections outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
-## Open the Update Compliance workbook
+## Open the Windows Update for Business reports workbook
 
-To access the Update Compliance workbook:
+To access the Windows Update for Business reports workbook:
 
 1. In the [Azure portal](https://portal.azure.com), select **Monitor** > **Workbooks** from the menu bar.
    - You can also type **Monitor** in the search bar. As you begin typing, the list filters based on your input.
 
-1. When the gallery opens, select the **Update Compliance** workbook. If needed, you can filter workbooks by name in the gallery.
-1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Update Compliance](update-compliance-v2-enable.md).
+1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
+1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Windows Update for Business reports](wufb-reports-enable.md).
 
 ## Summary tab
 
-The **Summary** tab gives you a brief high-level overview of the devices that you've enrolled into Update Compliance.  The **Summary** tab contains tiles above the **Overall security update status** chart.
+The **Summary** tab gives you a brief high-level overview of the devices that you've enrolled into Windows Update for Business reports.  The **Summary** tab contains tiles above the **Overall security update status** chart.
 
 ### Summary tab tiles
 
 Each of these tiles contains an option to **View details**. When **View details** is selected for a tile, a flyout appears with additional information.
 
-:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Update Compliance workbook":::
+:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Windows Update for Business reports workbook":::
 
 | Tile name | Description | View details description |
 |---|---|------|
-| **Enrolled devices** | Total number of devices that are enrolled into Update Compliance | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
+| **Enrolled devices** | Total number of devices that are enrolled into Windows Update for Business reports | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
 |**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the count of **Devices** to display a table of the devices. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
 |  **Windows 11 eligibility** | Percentage of devices that are capable of running Windows 11 | Displays the following items: </br> - **Windows 11 Readiness Status** chart </br> - **Readiness Reason(s) Breakdown** chart that displays  Windows 11 requirements that aren't met. </br> - A table for **Readiness reason**. Select a reason to display a list of devices that don't meet a specific requirement for Windows 11. |
 
@@ -76,7 +74,7 @@ The **Quality updates** tab displays generalized data at the top by using tiles.
 Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 
-Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end-users are impacted.
+Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end users are impacted.
 
 ### <a name="bkmk_update-group-quality"></a> Update status group for quality updates
 
@@ -132,7 +130,7 @@ The **Update status** group for feature updates contains the following items:
 |**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  |
 | **Total Devices** | Count of devices for each targeted operating system version that have been offered the update, or are installing, have installed, or canceled the feature update.| Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
 
-### <a name="bkmk_device-group-feature"></a>Device status group for feature updates
+### <a name="bkmk_device-group-feature"></a> Device status group for feature updates
 
 The **Device status** group for feature updates contains the following items:
 
@@ -141,12 +139,28 @@ The **Device status** group for feature updates contains the following items:
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
   - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
+## <a name="bkmk_do"></a> Delivery Optimization (preview tab)
+
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes Microsoft Connected Cache (MCC) information.
+
+At the top of the report, tiles display the following information:
+
+- Total bandwidth savings percentage
+- The percentage of the saved bandwidth broken down by peer-to-peer and MCC
+- Device counts showing percentages of bytes delivered between peer-to-peer and MCC
+- The breakdown of total downloaded GBs.
+
+The Delivery Optimization tab is further divided into the following groups:
+
+- **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
+- **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
+- **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
+
 ## Customize the workbook
 
-Since the Update Compliance workbook is an [Azure Workbook template](/azure/azure-monitor/visualize/workbooks-templates), it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
-
+Since the Windows Update for Business reports workbook is an [Azure Workbook template](/azure/azure-monitor/visualize/workbooks-templates), it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
 
 ## Next steps
 
-- Explore the [Update Compliance (preview) schema](update-compliance-v2-schema.md)
-- Review [Feedback, support, and troubleshooting](update-compliance-v2-help.md) information for Update Compliance
+- Explore the [Windows Update for Business reports schema](wufb-reports-schema.md)
+- Review [Feedback, support, and troubleshooting](wufb-reports-help.md) information for Windows Update for Business reports

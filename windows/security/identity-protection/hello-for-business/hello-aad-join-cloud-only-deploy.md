@@ -27,7 +27,7 @@ You may wish to disable the automatic Windows Hello for Business enrollment prom
 
 ## Prerequisites
 
-Cloud only deployments will use Azure AD multi-factor authentication (MFA) during Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed. If you aren't already registered in Azure AD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business enrollment process.
+Cloud only deployments will use Azure AD multi-factor authentication (MFA) during Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed. If you aren't already registered in Azure AD MFA, you'll be guided through the MFA registration as part of the Windows Hello for Business enrollment process.
 
 The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
 
@@ -37,7 +37,7 @@ Check and view this setting with the following MSOnline PowerShell command:
 
 `Get-MsolDomainFederationSettings –DomainName <your federated domain name>`
 
-To disable this setting, run the following command. Note that this change impacts ALL Azure AD MFA scenarios for this federated domain.
+To disable this setting, run the following command. This change impacts ALL Azure AD MFA scenarios for this federated domain.
 
 `Set-MsolDomainFederationSettings -DomainName <your federated domain name> -SupportsMfa $false`
 
@@ -55,11 +55,11 @@ We recommend that you disable or manage Windows Hello for Business provisioning 
 
 The following method explains how to disable Windows Hello for Business enrollment without Intune.
 
-1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) admin center.
+1. Sign into the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.
 3. If you don't want to enable Windows Hello for Business during device enrollment, select **Disabled** for **Configure Windows Hello for Business**.
 
-    When disabled, users cannot provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
+    When disabled, users can't provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
 
 > [!NOTE]
 > This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](hello-manage-in-organization.md).

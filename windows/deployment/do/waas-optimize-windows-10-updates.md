@@ -27,14 +27,14 @@ Two methods of peer-to-peer content distribution are available.
 
 - [Delivery Optimization](waas-delivery-optimization.md) is a peer-to-peer distribution method in Windows. Windows clients can source content from other devices on their local network that have already downloaded the updates or from peers over the internet. Using the settings available for Delivery Optimization, clients can be configured into groups, allowing organizations to identify devices that are possibly the best candidates to fulfill peer-to-peer requests.
 
-    Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources as well as the time it takes for clients to retrieve the updates.
+    Windows Update, Windows Update for Business, and Windows Server Update Services (WSUS) can use Delivery Optimization. Delivery Optimization can significantly reduce the amount of network traffic to external Windows Update sources and the time it takes for clients to retrieve the updates.
 
 - [BranchCache](../update/waas-branchcache.md) is a bandwidth optimization technology that is included in some editions of Windows Server 2016 and Windows operating systems, as well as in some editions of Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, and Windows 7.
 
     >[!NOTE]
     >Full BranchCache functionality is supported in Windows 10 Enterprise and Education; Windows 10 Pro supports some BranchCache functionality, including BITS transfers used for servicing operations.
 
-    Windows Server Update Services (WSUS) and Microsoft Endpoint Manager can use BranchCache to allow peers to source content from each other versus always having to contact a server. Using BranchCache, files are cached on each individual client, and other clients can retrieve them as needed. This approach distributes the cache rather than having a single point of retrieval, saving a significant amount of bandwidth while drastically reducing the time that it takes for clients to receive the requested content.
+    Windows Server Update Services (WSUS) and Microsoft Configuration Manager can use BranchCache to allow peers to source content from each other versus always having to contact a server. Using BranchCache, files are cached on each individual client, and other clients can retrieve them as needed. This approach distributes the cache rather than having a single point of retrieval, saving a significant amount of bandwidth while drastically reducing the time that it takes for clients to receive the requested content.
 
 <br/><br/>
 
@@ -44,9 +44,9 @@ Two methods of peer-to-peer content distribution are available.
 | BranchCache | ![no.](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 
 > [!NOTE]
-> Microsoft Endpoint Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Microsoft Endpoint Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](/configmgr/core/plan-design/hierarchy/client-peer-cache).
+> Microsoft Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](/configmgr/core/plan-design/hierarchy/client-peer-cache).
 >
-> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Microsoft Endpoint Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Endpoint Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
+> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
 
 ## Express update delivery
 
@@ -56,7 +56,7 @@ Windows client quality update downloads can be large because every package conta
 > Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
-- **Express on Microsoft Endpoint Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
+- **Express on Microsoft Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
   Express update delivery is available on [all support versions of WSUS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc708456(v=ws.10)).
@@ -78,7 +78,7 @@ The Windows Update client will try to download Express first, and under certain 
 1. When the Windows Update client initiates an Express download, **Windows Update first downloads a stub**, which is part of the Express package.
 2. **The Windows Update client passes this stub to the Windows installer**, which uses the stub to do a local inventory, comparing the deltas of the file on the device with what is needed to get to the latest version of the file being offered.
 3. **The Windows installer then requests the Windows Update client to download the ranges**, which have been determined to be required.
-4. **The client downloads these ranges and passes them to the Windows Installer**, which applies the ranges and then determines if additional ranges are needed. This repeats until the Windows installer tells the Windows Update client that all necessary ranges have been downloaded.
+4. **The client downloads these ranges and passes them to the Windows Installer**, which applies the ranges and then determines if more ranges are needed. This step repeats until the Windows installer tells the Windows Update client that all necessary ranges have been downloaded.
 
 At this point, the download is complete and the update is ready to be installed.
 
@@ -93,5 +93,5 @@ At this point, the download is complete and the update is ready to be installed.
 | ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows client updates](../update/waas-servicing-strategy-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | [Build deployment rings for Windows client updates](../update/waas-deployment-rings-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows client updates](../update/waas-servicing-channels-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this topic) |
-| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ![done.](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this article) |
+| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |

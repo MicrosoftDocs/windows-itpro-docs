@@ -36,7 +36,7 @@ For personal devices (BYOD):
 
 ### Azure AD Join
 
-Company owned devices are traditionally joined to the on-premises Active Directory domain of the organization. These devices can be managed using Group Policy or computer management software such as Microsoft Endpoint Configuration Manager. In Windows 10, it’s also possible to manage domain joined devices with an MDM.
+Company owned devices are traditionally joined to the on-premises Active Directory domain of the organization. These devices can be managed using Group Policy or computer management software such as Microsoft Configuration Manager. In Windows 10, it’s also possible to manage domain joined devices with an MDM.
 
 Windows 10 introduces a new way to configure and deploy organization owned Windows devices. This mechanism is called Azure AD Join. Like traditional domain join, Azure AD Join allows devices to become known and managed by an organization. However, with Azure AD Join, Windows authenticates to Azure AD instead of authenticating to a domain controller.
 

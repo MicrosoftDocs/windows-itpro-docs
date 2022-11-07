@@ -3,16 +3,18 @@ title: Windows Deployment Services (WDS) boot.wim support
 description: This article provides details on the support capabilities of WDS for end to end operating system deployment.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Windows Deployment Services (WDS) boot.wim support
 
-Applies to: 
+Applies to:
 - Windows 10 
 - Windows 11
 
@@ -34,25 +36,24 @@ The table below provides support details for specific deployment scenarios (Boot
 |**Windows Server 2022**|Deprecated, with a warning message.|Deprecated, with a warning message.|Deprecated, with a warning message.|Deprecated, with a warning message.|Not supported.|
 |**Windows 11**|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|
 
-
 ## Reason for the change
 
-Alternatives to WDS, such as [Microsoft Endpoint Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experience for deploying Windows images. 
+Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experience for deploying Windows images. 
 
 ## Not affected
 
-WDS PXE boot is not affected by this change. You can still use WDS to PXE boot devices with custom boot images, but you cannot use **boot.wim** as the boot image and run Windows Setup in WDS mode.
+WDS PXE boot isn't affected by this change. You can still use WDS to PXE boot devices with custom boot images, but you can't use **boot.wim** as the boot image and run Windows Setup in WDS mode.
 
-You can still run Windows Setup from a network share. Workflows that use a custom boot.wim, such as MDT or Configuration Manager are not affected by this change.
+You can still run Windows Setup from a network share. Workflows that use a custom boot.wim, such as MDT or Configuration Manager aren't affected by this change.
 
 ## Summary
 
-- Windows 11 workflows that rely on **boot.wim** from installation media will be blocked. You cannot perform an end to end deployment of Windows 11 using only WDS.
-- Windows 10, Windows Server 2019, and previous operating system versions are not affected by this change.
-- Windows Server 2022 workflows that rely on **boot.wim** from installation media will show a non-blocking deprecation notice. The notice can be dismissed, and currently the workflow is not blocked.
+- Windows 11 workflows that rely on **boot.wim** from installation media will be blocked. You can't perform an end to end deployment of Windows 11 using only WDS.
+- Windows 10, Windows Server 2019, and previous operating system versions aren't affected by this change.
+- Windows Server 2022 workflows that rely on **boot.wim** from installation media will show a non-blocking deprecation notice. The notice can be dismissed, and currently the workflow isn't blocked.
 - Windows Server workflows after Windows Server 2022 that rely on **boot.wim** from installation media are blocked.
 
-If you currently use WDS with **boot.wim** from installation media for end-to-end operating system deployment, and your OS version is not supported, deprecated, or blocked, it is recommended that you use deployment tools such as MDT, Configuration Manager, or a non-Microsoft solution with a custom boot.wim image. 
+If you currently use WDS with **boot.wim** from installation media for end-to-end operating system deployment, and your OS version isn't supported, deprecated, or blocked, it's recommended that you use deployment tools such as MDT, Configuration Manager, or a non-Microsoft solution with a custom boot.wim image. 
 
 ## Also see
 

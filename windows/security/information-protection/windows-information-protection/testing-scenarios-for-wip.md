@@ -42,7 +42,7 @@ You can try any of the processes included in these scenarios, but you should foc
   > [!IMPORTANT]
   > Certain file types like `.exe` and `.dll`, along with certain file paths, such as `%windir%` and `%programfiles%` are excluded from automatic encryption.
 
-  For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md), based on your deployment system.
+  For more info about your Enterprise Identity and adding apps to your allowed apps list, see either [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Create a Windows Information Protection (WIP) policy using Microsoft Configuration Manager](create-wip-policy-using-configmgr.md), based on your deployment system.
 
 - **Block enterprise data from non-enterprise apps**:
 

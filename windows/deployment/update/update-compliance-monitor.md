@@ -20,6 +20,8 @@ ms.technology: itpro-updates
 - Windows 10
 - Windows 11
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 ## Introduction
 
 Update Compliance enables organizations to:

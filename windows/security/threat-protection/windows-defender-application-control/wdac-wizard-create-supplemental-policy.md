@@ -62,7 +62,7 @@ There are only three policy rules that can be configured by the supplemental pol
 | Rule option | Description |
 |------------ | ----------- |
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
-| **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
+| **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
 | **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
 
 ![Rule options UI for Windows Allowed mode.](images/wdac-wizard-supplemental-policy-rule-options-UI.png)
