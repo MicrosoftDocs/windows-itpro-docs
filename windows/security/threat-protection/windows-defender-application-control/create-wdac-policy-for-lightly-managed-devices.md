@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 08/10/2022
+ms.date: 11/07/2022
 ms.technology: itpro-security
 ---
 
@@ -35,7 +35,7 @@ This section outlines the process to create a Windows Defender Application Contr
 > [!NOTE]
 > Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As in the [previous article](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As in [Windows Defender Application Control deployment in different scenarios: types of devices](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead tasked with the rollout of WDAC. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
 
@@ -58,7 +58,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - WHQL (third-party kernel drivers)
    - Windows Store signed apps
 
-1. **"MEMCM works”** rules that include:
+1. **"ConfigMgr works”** rules that include:
     - Signer and hash rules for Configuration Manager components to properly function.
     - **Allow Managed Installer** rule to authorize Configuration Manager as a managed installer.
 
@@ -122,8 +122,8 @@ Alice follows these steps to complete this task:
     > If you do not use Configuration Manager, skip this step.
 
     ```powershell
-    $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
-    Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy,$MEMCMPolicy
+    $ConfigMgrPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
+    Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy,$ConfigMgrPolicy
     Set-RuleOption -FilePath $LamnaPolicy -Option 13 # Managed Installer
     ```
 
@@ -149,9 +149,9 @@ Alice follows these steps to complete this task:
 1. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
 
     ```powershell
-    [xml]$policyXML = Get-Content $LamnaPolicy
-    $WDACPolicyBin = Join-Path $PolicyPath "$($PolicyName)_$($policyXML.SiPolicy.PolicyID).cip"
-    ConvertFrom-CIPolicy $LamnaPolicy $WDACPolicyBin
+    [xml]$PolicyXML = Get-Content $LamnaPolicy
+    $LamnaPolicyBin = Join-Path $PolicyPath "$($PolicyXML.SiPolicy.PolicyID).cip"
+    ConvertFrom-CIPolicy $LamnaPolicy $LamnaPolicyBin
     ```
 
 1. Upload your base policy XML and the associated binary to a source control solution, such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
