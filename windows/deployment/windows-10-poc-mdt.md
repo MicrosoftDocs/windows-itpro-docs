@@ -9,6 +9,7 @@ manager: aaroncz
 ms.author: frankroj
 author: frankroj
 ms.topic: how-to
+ms.technology: itpro-deploy
 ---
 
 # Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit

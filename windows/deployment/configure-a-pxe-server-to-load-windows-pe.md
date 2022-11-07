@@ -9,6 +9,7 @@ ms.author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Configure a PXE server to load Windows PE
