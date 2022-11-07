@@ -10,6 +10,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 11/14/2018
+ms.technology: itpro-security
 ---
 # What is a Microsoft-compatible security key?
 

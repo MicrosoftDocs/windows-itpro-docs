@@ -15,6 +15,7 @@ ms.date: 10/23/2017
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Why a PIN is better than an online password
 

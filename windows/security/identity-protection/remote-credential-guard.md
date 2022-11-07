@@ -14,6 +14,7 @@ ms.date: 01/12/2018
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows Server 2016</b>
+ms.technology: itpro-security
 ---
 # Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
 

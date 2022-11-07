@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>On-premises deployment</b>
   - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services with Key Trust
 
