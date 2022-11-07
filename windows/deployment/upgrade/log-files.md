@@ -20,7 +20,8 @@ ms.date: 10/28/2022
 - Windows 10
 
 > [!NOTE]
-> This is a 400 level topic (advanced).<br>
+> This is a 400-level topic (advanced).<br>
+
 > See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
