@@ -10,6 +10,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/20/2021
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker deployment comparison

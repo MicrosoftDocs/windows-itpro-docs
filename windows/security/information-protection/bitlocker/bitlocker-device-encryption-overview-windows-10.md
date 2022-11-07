@@ -12,6 +12,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 03/10/2022
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # Overview of BitLocker Device Encryption in Windows
