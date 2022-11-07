@@ -15,7 +15,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 11/04/2022
+ms.date: 11/07/2022
 ms.technology: itpro-security
 ---
 
@@ -119,10 +119,9 @@ Alice follows these steps to complete this task:
 7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
 
    ```powershell
-   [xml]$LamnaPolicyXML = Get-Content $LamnaPolicy
-   $PolicyId = $LamnaPolicyXML.SiPolicy.PolicyId
-   $LamnaPolicyBin = $PolicyPath+$PolicyId+".cip"
-   ConvertFrom-CIPolicy $LamnaPolicy $WDACPolicyBin
+    [xml]$PolicyXML = Get-Content $LamnaPolicy
+    $LamnaPolicyBin = Join-Path $PolicyPath "$($PolicyXML.SiPolicy.PolicyID).cip"
+    ConvertFrom-CIPolicy $LamnaPolicy $LamnaPolicyBin
    ```
 
 8. Upload your base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
