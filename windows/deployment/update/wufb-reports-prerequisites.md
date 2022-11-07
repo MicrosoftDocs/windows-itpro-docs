@@ -12,7 +12,7 @@ ms.date: 06/30/2022
 ms.technology: itpro-updates
 ---
 
-# Windows Update for Business reports (preview) prerequisites
+# Windows Update for Business reports prerequisites
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 

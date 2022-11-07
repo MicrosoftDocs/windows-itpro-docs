@@ -12,7 +12,7 @@ ms.date: 10/24/2022
 ms.technology: itpro-updates
 ---
 
-# Windows Update for Business reports (preview) workbook
+# Windows Update for Business reports workbook
 <!-- MAX6325272, OS33771278 -->
 ***(Applies to: Windows 11 & Windows 10)***
 

@@ -13,7 +13,7 @@ ms.date: 06/16/2022
 ms.technology: itpro-updates
 ---
 
-# Configuring devices through the Windows Update for Business reports (preview) configuration script
+# Configuring devices through the Windows Update for Business reports configuration script
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 

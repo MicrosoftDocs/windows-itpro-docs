@@ -12,7 +12,7 @@ ms.date: 08/09/2022
 ms.technology: itpro-updates
 ---
 
-# Windows Update for Business reports (preview) overview
+# Windows Update for Business reports overview
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 

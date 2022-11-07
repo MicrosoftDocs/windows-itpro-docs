@@ -12,7 +12,7 @@ ms.date: 08/10/2022
 ms.technology: itpro-updates
 ---
 
-# Windows Update for Business reports (preview) feedback, support, and troubleshooting
+# Windows Update for Business reports feedback, support, and troubleshooting
 
 <!-- MAX6325272, OS33771278 -->
 ***(Applies to: Windows 11 & Windows 10)***
