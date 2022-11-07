@@ -27,9 +27,9 @@ ms.technology: itpro-deploy
 
 - Forums:
 
-  - [Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=226386)
+  - [Microsoft Deployment Toolkit forum](https://learn.microsoft.com/answers/topics/mem-mdt.html)
 
-  - [Configuration Manager Operating System Deployment](https://social.technet.microsoft.com/Forums/en-US/home?forum=ConfigMgrCBOSD)
+  - [Configuration Manager Operating System Deployment forum](https://learn.microsoft.com/answers/topics/mem-cm-osd.html)
 
 ## Related articles
 

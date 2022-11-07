@@ -43,7 +43,7 @@ If you have enough space and you're migrating the user state back to the same co
 
 If there isn't enough local disk space, or if you're moving the user state to another computer, then you must store the data remotely such as on a shared folder, on removable media, or you can store it directly on the destination computer. For example:
 
-1. Ceate and share `C:\store` on the destination computer
+1. Create and share `C:\store` on the destination computer
 2. Run the `ScanState.exe` command on the source computer and save the files and settings to `\\<DestinationComputerName>\store`
 3. Run the `LoadState.exe ` command on the destination computer and specify `C:\Store` as the store location.
 
