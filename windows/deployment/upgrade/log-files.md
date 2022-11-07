@@ -49,13 +49,17 @@ The following table describes some log files and how to use them for troubleshoo
 
 A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
 
-1. **The date and time** - 2016-09-08 09:20:05.
+1. **The date and time** - 2016-09-08 09:20:05
 
-2. **The log level** - Info, Warning, Error, Fatal Error.
 
-3. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
+2. **The log level** - Info, Warning, Error, Fatal Error
 
-    The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
+
+3. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
+
+
+   The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
+
 
 4. **The message** - Operation completed successfully.
 
