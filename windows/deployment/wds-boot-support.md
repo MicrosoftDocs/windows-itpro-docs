@@ -9,6 +9,7 @@ manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Windows Deployment Services (WDS) boot.wim support

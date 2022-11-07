@@ -54,7 +54,7 @@ Windows Update for Business reports uses an [Azure Log Analytics workspaces](/az
 
 ## <a name="bkmk_enroll"></a> Enroll into Windows Update for Business reports
 
-Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by Update Compliance, the predecessor of Windows Update for Business reports. This step is needed even if you enabled previews of Update Compliance.  
+Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by Update Compliance, the predecessor of Windows Update for Business reports.
 
 Use one of the following methods to enroll into Windows Update for Business reports:
 
@@ -68,6 +68,8 @@ Use one of the following methods to enroll into Windows Update for Business repo
 1. In the flyout, specify which **Subscription** and **Azure Log Analytics Workspace** you want to use for Windows Update for Business reports.
    - If you need to create a new Log Analytics workspace, select **Create new workspace** and follow the prompts to [create a new workspace](#bkmk_workspace).
 1. Select **Save settings** to save the settings and enroll into Windows Update for Business reports.
+   > [!Tip]
+   > If a `403 Forbidden` error occurs, verify the account you're using has [permissions](wufb-reports-prerequisites.md#permissions) to enroll into Windows Update for Business reports.
 1. The initial setup can take up to 24 hours. During this time, the workbook will display that it's **Waiting for Windows Update for Business reports data**.
 
 ##### <a name="bkmk_admin-center"></a> Enroll through the Microsoft 365 admin center

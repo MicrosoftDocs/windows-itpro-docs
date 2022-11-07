@@ -11,6 +11,7 @@ ms.topic: article
 ms.collection: M365-modern-desktop
 ms.custom: seo-marvel-apr2020
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Deploy Windows 10 with Microsoft 365

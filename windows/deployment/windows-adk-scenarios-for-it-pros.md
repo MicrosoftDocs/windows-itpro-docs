@@ -8,6 +8,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 ms.date: 10/31/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros
