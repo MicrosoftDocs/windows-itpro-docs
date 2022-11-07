@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
 
