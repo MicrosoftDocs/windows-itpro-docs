@@ -34,7 +34,9 @@ This article outlines the general process that you should follow to migrate file
 
 6. Create a [Config.xml File](usmt-configxml-file.md) if you want to exclude any components from the migration. To create this file, use the [ScanState Syntax](usmt-scanstate-syntax.md) option together with the other .xml files when you use the `ScanState.exe` command. For example, the following command creates a `Config.xml` file by using the `MigDocs.xml` and `MigApp.xml` files:
 
-    `ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log`
+    ``` syntax
+    ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
+    ```
 
 7. Review the migration state of the components listed in the `Config.xml` file, and specify `migrate=no` for any components that you don't want to migrate.
 
@@ -49,7 +51,9 @@ This article outlines the general process that you should follow to migrate file
 
 3. Run the `ScanState.exe` command on the source computer to collect files and settings. You should specify all of the .xml files that you want the `ScanState.exe` command to use. For example,
 
-    `ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log`
+     ``` syntax
+        ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
+     ```
 
      > [!NOTE]
      > If the source computer is running Windows 7, or Windows 8, you must run the `ScanState.exe` command in **Administrator** mode. To run in **Administrator** mode, right-click **Command Prompt**, and then select **Run As Administrator**. For more information about the how the `ScanState.exe` command processes and stores the data, see [How USMT Works](usmt-how-it-works.md).
@@ -74,9 +78,11 @@ This article outlines the general process that you should follow to migrate file
 
     For example, the following command migrates the files and settings:
 
-    `LoadState.exe  \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:LoadState.log`
+    ``` syntax
+    LoadState.exe  \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:LoadState.log
+    ```
 
      > [!NOTE]
      > Run the `LoadState.exe ` command in administrator mode. To do this, right-click **Command Prompt**, and then click **Run As Administrator**.
 
-5. Sign out after you run the `LoadState.exe ` command. Some settings (for example, fonts, wallpaper, and screen saver settings) won't take effect until the next time that the user logs on.
+5. Sign out after you run the `LoadState.exe ` command. Some settings, such as fonts, wallpaper, and screen saver settings, won't take effect until the next time that the user logs on.

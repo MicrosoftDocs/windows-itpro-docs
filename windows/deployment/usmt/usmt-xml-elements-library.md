@@ -202,9 +202,7 @@ Syntax:
 |negation|No <br/>Default = No|**"Yes"** reverses the True/False value of the condition.|
 |*ScriptName*|Yes|A script that has been defined within this migration section.|
 
-For example,
-
-In the code sample below, the **&lt;condition&gt;** elements, A and B, are joined together by the **AND** operator because they are in separate **&lt;conditions&gt;** sections. For example:
+For example, in the code sample below, the **&lt;condition&gt;** elements, **A** and **B**, are joined together by the **AND** operator because they are in separate **&lt;conditions&gt;** sections:
 
 ```xml
 <detection>
@@ -247,7 +245,7 @@ The **&lt;condition&gt;** functions return a Boolean value. You can use these el
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|The only valid value for this setting is **NT**. Note, however, that you must set this setting for the **&lt;condition&gt;** functions to work correctly.|
-    |*OSVersion*|Yes|The major version, minor version, build number and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version with a pattern. For example, `5.0.*`.|
+    |*OSVersion*|Yes|The major version, minor version, build number and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version with a pattern such as `5.0.*`.|
 
   For example:
 
@@ -268,7 +266,7 @@ The **&lt;condition&gt;** functions return a Boolean value. You can use these el
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|Can be **9x** or **NT**. If *OSType* does not match the type of the current operating system, then it returns **FALSE**. For example, if the current operating system is Windows NT-based and *OSType* is **"9x"**, the result will be **FALSE**.|
-    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version but no pattern is allowed. For example, `5.0`. <br/><br/>The **IsOSLaterThan** function returns **TRUE** if the current operating system is later than or equal to *OSVersion*.|
+    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version but no pattern is allowed such as `5.0`. <br/><br/>The **IsOSLaterThan** function returns **TRUE** if the current operating system is later than or equal to *OSVersion*.|
 
   For example:
 
@@ -285,7 +283,7 @@ The **&lt;condition&gt;** functions return a Boolean value. You can use these el
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|Can be **9x** or **NT**. If *OSType* does not match the type of the current operating system, then it returns **FALSE**. For example, if the current operating system is Windows NT-based and *OSType* is **"9x"** the result will be **FALSE**.|
-    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version but no pattern is allowed. For example, `5.0`. <br/><br/>The **IsOSEarlierThan** function returns **TRUE** if the current operating system is earlier than *OSVersion*.|
+    |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version but no pattern is allowed such as `5.0`. <br/><br/>The **IsOSEarlierThan** function returns **TRUE** if the current operating system is earlier than *OSVersion*.|
 
 ### Object content functions
 
@@ -997,7 +995,7 @@ Syntax:
 |--- |--- |--- |
 |filter|No <br/>(default = No)|A script followed by any number of string arguments that are separated by a comma and enclosed in parenthesis. For example, `MyScripts.AScript ("Arg1","Arg2")`. <br/><br/>The script will be called for each object that is enumerated by the object sets in the include rule. The filter script returns a Boolean value. If the return value is **TRUE**, the object will be migrated. If it is **FALSE**, it will not be migrated.|
 
-For example, from the MigUser.xml file:
+For example, from the `MigUser.xml` file:
 
 ```xml
 <exclude>

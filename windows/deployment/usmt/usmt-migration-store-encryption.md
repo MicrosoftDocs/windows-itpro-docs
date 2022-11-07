@@ -25,8 +25,8 @@ The following table describes the command-line encryption options in USMT.
 
 |Component|Option|Description|
 |--- |--- |--- |
-|**ScanState**|**/encrypt**<*AES, AES_128, AES_192, AES_256, 3DES, 3DES_112*>|This option and argument specify that the migration store is encrypted and which algorithm to use. When the algorithm argument isn't provided, the **ScanState** tool employs the **3DES** algorithm.|
-|**LoadState**|**/decrypt**<*AES, AES_128, AES_192, AES_256, 3DES, 3DES_112*>|This option and argument specify that the store must be decrypted and which algorithm to use. When the algorithm argument isn't provided, the **LoadState** tool employs the **3DES** algorithm.|
+|*ScanState*|**/encrypt**<*AES, AES_128, AES_192, AES_256, 3DES, 3DES_112*>|This option and argument specify that the migration store is encrypted and which algorithm to use. When the algorithm argument isn't provided, the **ScanState** tool employs the **3DES** algorithm.|
+|*LoadState*|**/decrypt**<*AES, AES_128, AES_192, AES_256, 3DES, 3DES_112*>|This option and argument specify that the store must be decrypted and which algorithm to use. When the algorithm argument isn't provided, the **LoadState** tool employs the **3DES** algorithm.|
 
 > [!IMPORTANT]
 > Some encryption algorithms may not be available on your systems. You can verify which algorithms are available by running the `UsmtUtils.exe` command with the `/ec` option. For more information, see [UsmtUtils syntax](usmt-utilities.md).

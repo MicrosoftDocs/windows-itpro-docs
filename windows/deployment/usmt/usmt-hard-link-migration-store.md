@@ -92,7 +92,9 @@ It isn't necessary to estimate the size of a hard-link migration store since har
 
 Separate hard-link migration stores are created on each NTFS volume that contain data being migrated. In this scenario, the primary migration-store location will be specified on the command line, and should be the operating-system volume. Migration stores with identical names and directory names will be created on every volume containing data being migrated. For example:
 
-`ScanState.exe /hardlink c:\USMTMIG […]`
+  ``` syntax 
+  ScanState.exe /hardlink c:\USMTMIG […]
+  ```
 
 Running this command on a system that contains the operating system on the C: drive and the user data on the D: drive will generate migration stores in the following locations, assuming that both drives are NTFS:
 

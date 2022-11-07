@@ -32,7 +32,7 @@ USMT includes three command-line tools:
 
 USMT also includes a set of three modifiable .xml files:
 
-- `MigApp.xml`
+- MigApp.xml
 - MigDocs.xml
 - MigUser.xml
 

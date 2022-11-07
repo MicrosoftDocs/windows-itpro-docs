@@ -41,7 +41,13 @@ The following flowchart illustrates the procedural differences between a local m
 
 If you have enough space and you're migrating the user state back to the same computer, storing data on a local device is normally the best option to reduce server storage costs and network performance issues. You can store the data locally either on a different partition or on a removable device such as a USB flash drive (UFD). Also, depending on the imaging technology that you're using, you might be able to store the data on the partition that is being re-imaged, if the data will be protected from deletion during the process. To increase performance, store the data on high-speed drives that use a high-speed network connection. It's also good practice to ensure that the migration is the only task the server is performing.
 
-If there isn't enough local disk space, or if you're moving the user state to another computer, then you must store the data remotely. For example, you can store it in on a shared folder, on removable media such as a UFD drive, or you can store it directly on the destination computer. For example, create and share `C:\store` on the destination computer. Then run the `ScanState.exe` command on the source computer and save the files and settings to `\\<DestinationComputerName>\store`. Then, run the `LoadState.exe ` command on the destination computer and specify `C:\Store` as the store location. By doing this process, you don't need to save the files to a server.
+If there isn't enough local disk space, or if you're moving the user state to another computer, then you must store the data remotely such as on a shared folder, on removable media, or you can store it directly on the destination computer. For example:
+
+1. Ceate and share `C:\store` on the destination computer
+2. Run the `ScanState.exe` command on the source computer and save the files and settings to `\\<DestinationComputerName>\store`
+3. Run the `LoadState.exe ` command on the destination computer and specify `C:\Store` as the store location.
+
+By doing this process, you don't need to save the files to a server.
 
 > [!IMPORTANT]
 > If possible, have users store their data within their `%UserProfile%\My Documents` and `%UserProfile%\Application Data` folders. This will reduce the chance of USMT missing critical user data that is located in a directory that USMT is not configured to check.

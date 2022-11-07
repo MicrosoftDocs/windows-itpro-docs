@@ -58,25 +58,25 @@ The remaining fields are key/value pairs as indicated in the following table.
 
 | Key | Value |
 |-----|-------|
-| **program** | `ScanState.exe` or `LoadState.exe`. |
-| **productVersion** | The full product version number of USMT. |
-| **computerName** | The name of the source or destination computer on which USMT was run. |
-| **commandLine** | The full command used to run USMT. |
-| **PHASE** | Reports that a new phase in the migration is starting. This key can be one of the following values:<ul><li>Initializing</li><li>Scanning</li><li>Collecting</li><li>Saving</li><li>Estimating</li><li>Applying</li></ul> |
-| **detectedUser** | <ul><li>For the **ScanState** tool, this key are the users USMT detected on the source computer that can be migrated.</li><li>For the **LoadState** tool, this key are the users USMT detected in the store that can be migrated.</li></ul> |
-| **includedInMigration** | Defines whether the user profile/component is included for migration. Valid values are **Yes** or **No**. |
-| **forUser** | Specifies either of the following values:<ul><li>The user state being migrated.</li><li>*This Computer*, meaning files and settings that aren't associated with a user.</li></ul> |
-| **detectedComponent** | Specifies a component detected by USMT.<ul><li>For **ScanState**, this key is a component or application that is installed on the source computer.</li><li>For **LoadState**, this key is a component or application that was detected in the store.</li></ul> |
-| **totalSizeInMBToTransfer** | Total size of the files and settings to migrate in megabytes (MB). |
-| **totalPercentageCompleted** | Total percentage of the migration that has been completed by either **ScanState** or **LoadState**. |
-| **collectingUser** | Specifies which user **ScanState** is collecting files and settings for. |
-| **totalMinutesRemaining** | Time estimate, in minutes, for the migration to complete. |
-| **error** | Type of non-fatal error that occurred. This key can be one of the following values:<ul><li>**UnableToCopy**: Unable to copy to store because the disk on which the store is located is full.</li><li>**UnableToOpen**: Unable to open the file for migration because the file is opened in non-shared mode by another application or service.</li><li>**UnableToCopyCatalog**: Unable to copy because the store is corrupted.</li><li>**UnableToAccessDevice**: Unable to access the device.</li><li>**UnableToApply**: Unable to apply the setting to the destination computer.</li></ul> |
-| **objectName** | The name of the file or setting that caused the non-fatal error. |
-| **action** | Action taken by USMT for the non-fatal error. The values are:<ul><li>**Ignore**: Non-fatal error ignored and the migration continued because the **/c** option was specified on the command line.</li><li>**Abort**: Stopped the migration because the **/c** option wasn't specified.</li></ul> |
-| **errorCode** | The errorCode or return value. |
-| **numberOfIgnoredErrors** | The total number of non-fatal errors that USMT ignored. |
-| **message** | The message corresponding to the errorCode. |
+| *program* | `ScanState.exe` or `LoadState.exe`. |
+| *productVersion* | The full product version number of USMT. |
+| *computerName* | The name of the source or destination computer on which USMT was run. |
+| *commandLine* | The full command used to run USMT. |
+| *PHASE* | Reports that a new phase in the migration is starting. This key can be one of the following values:<ul><li>Initializing</li><li>Scanning</li><li>Collecting</li><li>Saving</li><li>Estimating</li><li>Applying</li></ul> |
+| *detectedUser* | <ul><li>For the **ScanState** tool, this key are the users USMT detected on the source computer that can be migrated.</li><li>For the **LoadState** tool, this key are the users USMT detected in the store that can be migrated.</li></ul> |
+| *includedInMigration* | Defines whether the user profile/component is included for migration. Valid values are **Yes** or **No**. |
+| *forUser* | Specifies either of the following values:<ul><li>The user state being migrated.</li><li>*This Computer*, meaning files and settings that aren't associated with a user.</li></ul> |
+| *detectedComponent* | Specifies a component detected by USMT.<ul><li>For *ScanState*, this key is a component or application that is installed on the source computer.</li><li>For **LoadState**, this key is a component or application that was detected in the store.</li></ul> |
+| *totalSizeInMBToTransfer* | Total size of the files and settings to migrate in megabytes (MB). |
+| *totalPercentageCompleted* | Total percentage of the migration that has been completed by either **ScanState** or **LoadState**. |
+| *collectingUser* | Specifies which user **ScanState** is collecting files and settings for. |
+| *totalMinutesRemaining* | Time estimate, in minutes, for the migration to complete. |
+| *error* | Type of non-fatal error that occurred. This key can be one of the following values:<ul><li>**UnableToCopy**: Unable to copy to store because the disk on which the store is located is full.</li><li>**UnableToOpen**: Unable to open the file for migration because the file is opened in non-shared mode by another application or service.</li><li>**UnableToCopyCatalog**: Unable to copy because the store is corrupted.</li><li>**UnableToAccessDevice**: Unable to access the device.</li><li>**UnableToApply**: Unable to apply the setting to the destination computer.</li></ul> |
+| *objectName* | The name of the file or setting that caused the non-fatal error. |
+| *action* | Action taken by USMT for the non-fatal error. The values are:<ul><li>**Ignore**: Non-fatal error ignored and the migration continued because the **/c** option was specified on the command line.</li><li>**Abort**: Stopped the migration because the **/c** option wasn't specified.</li></ul> |
+| *errorCode* | The errorCode or return value. |
+| *numberOfIgnoredErrors* | The total number of non-fatal errors that USMT ignored. |
+| *message** | The message corresponding to the errorCode. |
 
 ## List files log
 
@@ -104,7 +104,7 @@ The following examples describe common scenarios in which you can use the diagno
 
 Let's imagine that we have the following directory structure and that we want the **data** directory to be included in the migration along with the **New Text Document.txt** file in the **New Folder**. The directory of `C:\data` contains:
 
-```console
+``` console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM    <DIR>          New Folder
@@ -115,7 +115,7 @@ Let's imagine that we have the following directory structure and that we want th
 
 The directory of `C:\data\New Folder` contains:
 
-```console
+``` console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt
@@ -198,7 +198,7 @@ This diagnostic log confirms that the modified **&lt;pattern&gt;** value enables
 
 In this scenario, you have the following directory structure and you want all files in the **Data** directory to migrate, except for text files. The `C:\Data` folder contains:
 
-```console
+``` console
 Directory of C:\Data
 
 01/21/2009  10:08 PM    <DIR>          .
@@ -211,7 +211,7 @@ Directory of C:\Data
 
 The `C:\Data\New Folder\` contains:
 
-```console
+``` console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt

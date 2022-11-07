@@ -43,7 +43,9 @@ The `ScanState.exe` command's syntax is:
 
 For example, to create a `Config.xml` file in the current directory, use:
 
-`ScanState.exe /i:MigApp.xml /i:MigDocs.xml /genconfig:Config.xml /v:13`
+``` syntax
+ScanState.exe /i:MigApp.xml /i:MigDocs.xml /genconfig:Config.xml /v:13
+```
 
 To create an encrypted store using the `Config.xml` file and the default migration .xml files, use:
 
@@ -163,7 +165,7 @@ The `/uel` option takes precedence over the `/ue` option. If a user has logged o
 |--- |--- |
 |Include only User2 from the Fabrikam domain and exclude all other users.|`/ue:*\* /ui:fabrikam\user2`|
 |Include only the local user named User1 and exclude all other users.|`/ue:*\* /ui:user1`|
-|Include only the domain users from Contoso, except Contoso\User1.|This behavior can't be completed using a single command. Instead, to migrate this set of users, you'll need to specify the following commands: <ul><li>On the `ScanState.exe` command line, enter:<br/><br/> `/ue:*\* /ui:contoso\*`<br/><br/></li><li>On the `LoadState.exe` command line, enter:<br/><br/>`/ue:contoso\user1`</li></ul>|
+|Include only the domain users from Contoso, except Contoso\User1.|This behavior can't be completed using a single command. Instead, to migrate this set of users, you'll need to specify the following commands: <ul><li>On the `ScanState.exe` command line, enter:<br/> `/ue:*\* /ui:contoso\*`<br/></li><li>On the `LoadState.exe` command line, enter:<br/>`/ue:contoso\user1`</li></ul>|
 |Include only local (non-domain) users.|`/ue:*\* /ui:%computername%\*`|
 
 ## Encrypted file options

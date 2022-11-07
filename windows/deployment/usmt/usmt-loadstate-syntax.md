@@ -23,7 +23,7 @@ Before you run the `LoadState.exe` command, note the following items:
 
 - For information about software requirements for running the `LoadState.exe` command, see [USMT requirements](usmt-requirements.md).
 
-- You should sign out after you run the `LoadState.exe` command. Some settings (for example, fonts, wallpaper, and screensaver settings) won't take effect until the next time the user logs in.
+- You should sign out after you run the `LoadState.exe` command. Some settings, such as example, fonts, wallpaper, and screensaver settings, won't take effect until the next time the user logs in.
 
 - Unless otherwise specified, you can use each option only once when running a tool on the command line.
 
@@ -123,7 +123,7 @@ You can use the `/uel`, `/ue` and `/ui` options together to migrate only the use
 |--- |--- |
 | Include only User2 from the Fabrikam domain and exclude all other users. | `/ue:* /ui:fabrikam\user2` |
 | Include only the local user named User1 and exclude all other users. | `/ue:* /ui:user1` |
-| Include only the domain users from Contoso, except Contoso\User1. | This behavior can't be completed using a single command. Instead, to migrate this set of users, you'll need to specify the following options:<ul><li>Using the **ScanState** command-line tool, enter: `/ue:* /ui:contoso`</li><li>Using the **LoadState** command-line tool, enter: `/ue:contoso\user1`</li></ul> |
+| Include only the domain users from Contoso, except Contoso\User1. | This behavior can't be completed using a single command. Instead, to migrate this set of users, you'll need to specify the following options:<ul><li>Using the **ScanState** command-line tool, enter: <br>`/ue:* /ui:contoso`</li><li>Using the **LoadState** command-line tool, enter: <br>`/ue:contoso\user1`</li></ul> |
 | Include only local (non-domain) users. | `/ue: /ui:%computername%*` |
 
 ## Incompatible command-line options

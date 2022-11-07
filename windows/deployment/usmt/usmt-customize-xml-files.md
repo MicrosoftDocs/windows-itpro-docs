@@ -25,7 +25,7 @@ USMT won't reroute the files, and they'll be migrated to `C:\data`.
 
 To modify the migration, do one or more of the following.
 
-- **Modify the migration .xml files.** If you want to exclude a portion of a component—for example, you want to migrate C:\\ but exclude all of the .mp3 files—or if you want to move data to a new location on the destination computer, modify the .xml files. To modify these files, you must be familiar with the migration rules and syntax. If you want ScanState and LoadState to use these files, specify them at the command line when each command is entered.
+- **Modify the migration .xml files.** If you want to exclude a portion of a component, for example, you want to migrate C:\\ but exclude all of the .mp3 files, or if you want to move data to a new location on the destination computer, modify the .xml files. To modify these files, you must be familiar with the migration rules and syntax. If you want ScanState and LoadState to use these files, specify them at the command line when each command is entered.
 
 - **Create a custom .xml file.** You can also create a custom .xml file to migrate settings for another application, or to change the migration behavior to suit your needs. For ScanState and LoadState to use this file, specify them on both command lines.
 

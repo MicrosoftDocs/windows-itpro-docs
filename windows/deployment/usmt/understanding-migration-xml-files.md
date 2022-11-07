@@ -138,11 +138,11 @@ The default `MigUser.xml` file migrates the following data:
 
 The default `MigUser.xml` file doesn't migrate the following data:
 
-- Files tagged with both the **hidden** and **system** attributes.
+- Files tagged with both the **Hidden** and **System** attributes.
 
 - Files and folders on removable drives,
 
-- Data from the %WINDIR%, %PROGRAMFILES%, %PROGRAMDATA% folders.
+- Data from the `%WINDIR%`, `%PROGRAMFILES%`, `%PROGRAMDATA%` folders.
 
 - ACLS for files in folders outside the user profile.
 
@@ -157,15 +157,15 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 
 |XML migration file|Modifies the following components:|
 |--- |--- |
-|Config.xml file|Operating-system components such as desktop wallpaper and background theme.<br/> You can also overload `Config.xml` to include some application and document settings by generating the `Config.xml` file with the other default XML files. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).|
-|MigApps.xml file|Applications settings.|
-|MigUser.xml or `MigDocs.xml` files|User files and profile settings.|
-|Custom XML files|Application settings, user profile settings, or user files, beyond the rules contained in the other XML files.|
+|*Config.xml file*|Operating-system components such as desktop wallpaper and background theme.<br/> You can also overload `Config.xml` to include some application and document settings by generating the `Config.xml` file with the other default XML files. For more information, see [Customize USMT XML Files](usmt-customize-xml-files.md) and [Config.xml File](usmt-configxml-file.md).|
+|*MigApps.xml file*|Applications settings.|
+|*MigUser.xml* or *MigDocs.xml* files|User files and profile settings.|
+|*Custom XML files*|Application settings, user profile settings, or user files, beyond the rules contained in the other XML files.|
 
 For example, you can use all of the XML migration file types for a single migration, as in the following example:
 
-```console
-ScanState.exe <store> /config:c:\myFolder\Config.xml /i:migapps.xml /i:MigDocs.xml /i:customrules.xml
+``` syntax
+ScanState.exe <store> /config:c:\myFolder\Config.xml /i:migapps.xml /i:MigDocs.xml /i:CustomRules.xml
 ```
 
 ### XML rules for migrating user files
@@ -194,14 +194,14 @@ To generate the XML migration rules file for a source computer:
 
 4. At the command prompt, enter:
 
-    ```console
+    ``` syntax
     cd /d <USMTpath>
     ScanState.exe /genmigxml: <filepath.xml>
     ```
 
     Where *&lt;USMTpath&gt;* is the location on your source computer where you've saved the USMT files and tools, and *&lt;filepath.xml&gt;* is the full path to a file where you can save the report. For example, enter:
 
-    ```console
+    ``` syntax
     cd /d c:\USMT
     ScanState.exe /genmigxml:"C:\Documents and Settings\USMT Tester\Desktop\genMig.xml"
     ```
@@ -230,7 +230,7 @@ The `MigDocs.xml` file calls the `GenerateDocPatterns` function, which takes thr
 
 **Usage:**
 
-```console
+``` syntax
 MigXmlHelper.GenerateDocPatterns ("<ScanProgramFiles>", "<IncludePatterns>", "<SystemDrive>")
 ```
 

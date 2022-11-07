@@ -85,9 +85,9 @@ An offline migration can either be enabled by using a configuration file on the 
 
 |Component|Option|Description|
 |--- |--- |--- |
-|ScanState.exe|**/offline:***&lt;path to Offline.xml&gt;*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
-|ScanState.exe|**/offlineWinDir:***&lt;Windows directory&gt;*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
-|ScanState.exe|**/OfflineWinOld:***&lt;Windows.old directory&gt;*|This command-line option enables the offline migration mode and starts the migration from the location specified. It's only intended to be used in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
+|*ScanState.exe*|**/offline:***&lt;path to Offline.xml&gt;*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
+|*ScanState.exe*|**/offlineWinDir:***&lt;Windows directory&gt;*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It's only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
+|*ScanState.exe*|**/OfflineWinOld:***&lt;Windows.old directory&gt;*|This command-line option enables the offline migration mode and starts the migration from the location specified. It's only intended to be used in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
 
 You can use only one of the `/offline`, `/offlineWinDir`, or `/OfflineWinOld` command-line options at a time. USMT doesn't support using more than one together.
 
@@ -97,8 +97,8 @@ The following system environment variables are necessary in the scenarios outlin
 
 |Variable|Value|Scenario|
 |--- |--- |--- |
-|USMT_WORKING_DIR|Full path to a working directory|Required when USMT binaries are located on read-only media, which doesn't support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following command: <br/><pre class="syntax"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre>|
-|MIG_OFFLINE_PLATFORM_ARCH|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command: <br/><pre class="syntax"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre>|
+|*USMT_WORKING_DIR*|Full path to a working directory|Required when USMT binaries are located on read-only media, which doesn't support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following command: <br/><pre class="syntax"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre>|
+*|MIG_OFFLINE_PLATFORM_ARCH*|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system doesn't match the WinPE and `ScanState.exe` architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. Specifying the architecture is required when auto-detection of the offline architecture doesn't function properly. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following command: <br/><pre class="syntax"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre>|
 
 ## Offline.xml elements
 

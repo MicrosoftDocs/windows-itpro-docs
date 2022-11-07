@@ -23,7 +23,9 @@ Links to detailed explanations of commands are available in the [Related article
 
 2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    `ScanState.exe \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /o`
+    ``` syntax
+    ScanState.exe \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /o
+    ````
 
 3. Sign into the destination computer as an administrator.
 
@@ -52,13 +54,17 @@ Links to detailed explanations of commands are available in the [Related article
 
 2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    `ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml /o`
+    ``` syntax
+    ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml /o
+    ```
 
 3. Sign into the destination computer as an administrator.
 
 4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
-    `LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml`
+    ``` syntax
+    LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml
+    ```
 
 ## To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain
 
@@ -68,13 +74,17 @@ Links to detailed explanations of commands are available in the [Related article
 
 2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    `ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:contoso\user2 /i:MigDocs.xml /i:MigApp.xml /o`
+    ``` syntax
+    ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:contoso\user2 /i:MigDocs.xml /i:MigApp.xml /o
+    ```
 
 3. Sign into the destination computer as an administrator.
 
 4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
-    `LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml`
+    ``` syntax
+    LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml
+    ```
 
 ## Related articles
 

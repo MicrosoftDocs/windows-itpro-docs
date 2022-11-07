@@ -59,7 +59,7 @@ To run the ScanState tool on the source computer with USMT installed:
     ScanState.exe <StorePath> /p:<path to a file>
     ```
 
-    Where *&lt;StorePath&gt;* is a path to a directory where the migration store will be saved and *&lt;path to a file&gt;* is the path and filename where the XML report for space requirements will be saved. For example,
+    Where *&lt;StorePath&gt;* is a path to a directory where the migration store will be saved and *&lt;path to a file&gt;* is the path and filename where the XML report for space requirements will be saved. For example:
 
     ``` syntax
     ScanState.exe c:\store /p:c:\spaceRequirements.xml

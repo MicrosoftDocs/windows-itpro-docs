@@ -25,7 +25,7 @@ Next, identify an application owner to be in charge of each application. Applica
 
 Next, determine and locate the application settings to be migrated. You can acquire much of the information that you need for this step when you're testing the new applications for compatibility with the new operating system.
 
-After completing the list of applications to be migrated, review the list, and work with each application owner on a list of settings to be migrated. For each setting, determine whether it needs to be migrated or if the default settings are adequate. Then, determine where the setting is located; for example, in the registry or in an .ini file. Next, consider the following questions to determine what needs to be done to migrate the setting successfully:
+After completing the list of applications to be migrated, review the list, and work with each application owner on a list of settings to be migrated. For each setting, determine whether it needs to be migrated or if the default settings are adequate. Then, determine where the setting is located, for example, in the registry or in an .ini file. Next, consider the following questions to determine what needs to be done to migrate the setting successfully:
 
 - Is the destination version of the application newer than the source version?
 

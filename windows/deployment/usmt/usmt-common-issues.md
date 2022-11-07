@@ -138,7 +138,9 @@ The following sections describe common XML file problems. Expand the section to 
 
 **Resolution:** Install all of the desired applications on the computer before running the `/genconfig` option. Then run `ScanState.exe` with all of the .xml files. For example, run the following command:
 
-`ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:5 /l:ScanState.log`
+``` syntax
+ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:5 /l:ScanState.log
+```
 
 ### I'm having problems with a custom .xml file that I authored, and I can't verify that the syntax is correct
 

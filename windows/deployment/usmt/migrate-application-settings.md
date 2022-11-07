@@ -103,7 +103,7 @@ After you have completed steps 1 through 3, you'll need to create a custom migra
  > We recommend that you create a separate .xml file instead of adding your script to the `MigApp.xml` file. This is because the `MigApp.xml` file is a very large file and it will be difficult to read and edit. In addition, if you reinstall USMT for some reason, the `MigApp.xml` file will be overwritten by the default version of the file and you will lose your customized version.
 
 > [!IMPORTANT]
-> Some applications store information in the user profile that should not be migrated (for example, application installation paths, the computer name, and so on). You should make sure to exclude these files and registry keys from the migration.
+> Some applications store information in the user profile, such as application installation paths, the computer name, etc., should not be migrated. You should make sure to exclude these files and registry keys from the migration.
 
 Your script should do the following actions:
 
@@ -131,7 +131,9 @@ On a test computer, install the operating system that will be installed on the d
 
 To speed up the time it takes to collect and migrate the data, you can migrate only one user at a time, and you can exclude all other components from the migration except the application that you're testing. To specify only **User1** in the migration, enter:
 
-`/ue:*\* /ui:user1`
+``` syntax
+/ue:*\* /ui:user1
+```
 
 For more information, see the [Exclude files and settings](usmt-exclude-files-and-settings.md) article and the [User options](usmt-scanstate-syntax.md#user-options) section in the [ScanState syntax](usmt-scanstate-syntax.md) article. To troubleshoot a problem, check the progress log, and the ScanState and LoadState logs, which contain warnings and errors that may point to problems with the migration.
 

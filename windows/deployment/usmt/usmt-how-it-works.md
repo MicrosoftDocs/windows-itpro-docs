@@ -108,7 +108,7 @@ The **LoadState** process is similar to the **ScanState** process. The **ScanSta
 
    4. **LoadState** creates a master list of migration units by processing the various subsections under the **&lt;rules&gt;** section. Each migration unit that is in an **&lt;include&gt;** subsection is migrated as long, as there isn't a more specific rule for it in an **&lt;exclude&gt;** subsection in the same **&lt;rules&gt;** section. For more information about precedence, see [Conflicts and precedence](usmt-conflicts-and-precedence.md).
 
-   5. **LoadState** evaluates the destination computer-specific subsections; for example, the **&lt;destinationCleanup&gt;** and **&lt;locationModify&gt;** subsections.
+   5. **LoadState** evaluates the destination computer-specific subsections, for example, the **&lt;destinationCleanup&gt;** and **&lt;locationModify&gt;** subsections.
 
    6. If the destination computer is running Windows 7, Windows 8, or Windows 10, then the migunits that were collected by **ScanState** using downlevel manifest files are processed by **LoadState** using the corresponding Component Manifest for Windows 7. The downlevel manifest files aren't used during **LoadState**.
 
