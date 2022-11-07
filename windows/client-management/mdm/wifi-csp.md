@@ -1,12 +1,12 @@
 ---
 title: WiFi CSP
 description: The WiFi configuration service provider (CSP) provides the functionality to add or delete Wi-Fi networks on a Windows device.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/18/2019
 ---
@@ -54,7 +54,7 @@ WiFi
 The following list shows the characteristics and parameters.
 
 <a href="" id="wifi"></a>**Device or User profile**
-For user profile, use .`/User/Vendor/MSFT/Wifi` path and for device profile, use `./Device/Vendor/MSFT/Wifi` path.
+For user profile, use `./User/Vendor/MSFT/Wifi` path and for device profile, use `./Device/Vendor/MSFT/Wifi` path.
 
 <a href="" id="profile"></a>**Profile**
 Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network – for example, the SSID, authentication and encryption methods and passphrase if there's WEP or WPA2 networks.
