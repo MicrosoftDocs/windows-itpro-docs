@@ -29,7 +29,8 @@ Several log files are created during each phase of the upgrade process. These lo
 > [!NOTE]
 > Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files.
 
-The following table describes some log files and how to use them for troubleshooting purposes:<br>
+The following table describes some log files and how to use them for troubleshooting purposes. 
+
 
 |Log file |Phase: Location |Description |When to use|
 |---|---|---|---|
