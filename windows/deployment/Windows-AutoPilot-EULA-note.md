@@ -9,6 +9,7 @@ ms.author: frankroj
 manager: aaroncz
 ROBOTS: NOINDEX
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 # Windows Autopilot EULA dismissal – important information
 

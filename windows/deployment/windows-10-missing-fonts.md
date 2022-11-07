@@ -8,6 +8,7 @@ ms.author: frankroj
 manager: aaroncz
 ms.topic: article
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 # How to install fonts that are missing after upgrading to Windows client
 
@@ -43,7 +44,9 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 1. Select **Start > Settings**.
 
-2. In **Settings**, select **Time & language**, and then select **Region & language**.
+2. For Windows 10, in **Settings**, select **Time & language**, and then select **Region & language**.
+
+   For Windows 11, in **Settings**, select **Time & language**, and then select **Language & Region**.
 
 3. If Hebrew isn't included in the list of languages, select the plus sign (**+**) to add a language.
 

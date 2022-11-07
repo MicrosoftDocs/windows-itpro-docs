@@ -8,6 +8,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # Documentation for Windows 10 Insider Preview
