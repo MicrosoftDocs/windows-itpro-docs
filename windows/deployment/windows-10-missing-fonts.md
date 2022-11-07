@@ -8,6 +8,7 @@ ms.author: frankroj
 manager: aaroncz
 ms.topic: article
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 # How to install fonts that are missing after upgrading to Windows client
 

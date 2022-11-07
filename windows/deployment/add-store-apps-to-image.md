@@ -10,6 +10,7 @@ manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Add Microsoft Store for Business applications to a Windows 10 image
