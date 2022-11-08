@@ -11,6 +11,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 05/03/2021
+ms.technology: itpro-security
 ---
 # Windows Hello for Business Known Deployment Issues
 

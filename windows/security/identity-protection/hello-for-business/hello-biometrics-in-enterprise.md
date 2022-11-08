@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
   - ✅ <b>Windows Holographic for Business</b>
+ms.technology: itpro-security
 ---
 
 # Windows Hello biometrics in the enterprise

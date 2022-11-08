@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Hybrid cloud Kerberos trust</b>
+ms.technology: itpro-security
 ---
 # Hybrid cloud Kerberos trust deployment
 
