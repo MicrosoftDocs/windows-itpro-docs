@@ -10,6 +10,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
+ms.technology: itpro-security
 ---
 
 # Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)
