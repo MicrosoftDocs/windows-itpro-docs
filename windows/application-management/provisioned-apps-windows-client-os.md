@@ -45,9 +45,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809| 
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️ | | | | | |
+    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ ||
 
     ---
 
@@ -55,9 +55,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | 22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -65,9 +65,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | Use Settings App | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | 22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | Use Settings App | ✔️ | ✔️ | ✔️|
 
     ---
 
@@ -75,9 +75,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    |---| --- | --- | --- |
+    | ❌ |  ✔️| ✔️| ✔️|
 
     ---
 
@@ -85,9 +85,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️| ✔️|
 
     ---
 
@@ -95,9 +95,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️| ✔️| ✔️|
 
     ---
     
@@ -107,9 +107,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️|||||||
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️|||
     
     ---  
 
@@ -117,9 +117,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -127,9 +127,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -137,9 +137,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | 22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -147,9 +147,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | 22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -157,9 +157,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -167,9 +167,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -177,9 +177,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -187,9 +187,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | 22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -197,9 +197,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -207,9 +207,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- | --- |--- |
-    |️ | ✔️ | ✔️ | ✔️|️ | ✔️|️️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -217,9 +217,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -227,9 +227,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -237,9 +237,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -247,9 +247,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -257,9 +257,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -267,9 +267,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -277,9 +277,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-     | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -287,9 +287,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -297,9 +297,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -307,9 +307,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -317,9 +317,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -327,9 +327,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -337,9 +337,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -347,9 +347,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -357,9 +357,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -367,9 +367,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -377,9 +377,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -387,9 +387,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -399,9 +399,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -409,9 +409,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -419,9 +419,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -429,9 +429,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -439,9 +439,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -449,9 +449,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -459,9 +459,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -469,9 +469,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -479,8 +479,8 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? |22H2| 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    |---| --- | --- | --- | --- | --- | --- |--- |
-    | ❌ |  ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
