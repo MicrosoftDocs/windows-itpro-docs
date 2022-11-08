@@ -11,6 +11,7 @@ author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.date: 11/20/2019
+ms.technology: itpro-security
 ---
 
 # Technical support policy for lost or forgotten passwords
