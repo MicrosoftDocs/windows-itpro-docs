@@ -159,7 +159,7 @@ Int value
 <hr/>
 
 <!--Description-->
-This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example, if you want to launch the Settings app to calibrate your device or change your Wi-fi.
+This can be enabled to allow for other apps to be launched with in a single app Kiosk, which may be useful, for example, if you want to launch the Settings app to calibrate your device or change your Wi-Fi.
 
 By default, launching applications via Launcher API (Launcher Class (Windows.System) - Windows UWP applications) is disabled in single app kiosk mode. To enable applications to launch in single app kiosk mode on HoloLens devices, set the policy value to true.
 
