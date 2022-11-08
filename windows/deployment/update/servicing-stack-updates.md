@@ -62,5 +62,5 @@ With the Windows Update experience, servicing stack updates and cumulative updat
 
 ## Related Articles
 
-[Microsoft Servicing Stack Updates catalog for windows server operating system](https://www.catalog.update.microsoft.com/Search.aspx?q=Servicing%20Stack%20Update)
+[Microsoft Servicing Stack Updates Catalog for Windows Server](https://www.catalog.update.microsoft.com/Search.aspx?q=Servicing%20Stack%20Update)
 
