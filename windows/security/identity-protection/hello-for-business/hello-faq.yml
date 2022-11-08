@@ -67,7 +67,7 @@ sections:
       - question: What's a container?
         answer: |  
           In the context of Windows Hello for Business, it is shorthand for a logical grouping of key material or data. Windows 10 or Windows 11 Hello uses a single container that holds user key material for personal accounts, including key material associated with the user's Microsoft account or with other consumer identity providers, and credentials associated with a workplace or school account.
-          It's important to keep in mind that there are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials Windows Hello stores are protected without the creation of actual containers or folders.
+          It's important to keep in mind that there are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials of Windows Hello stores are protected without the creation of actual containers or folders.
           The container actually contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container. [Each logical container holds one or more sets of keys.](./images/passport-fig3-logicalcontainer.png)
 
       - question: How do I delete a Windows Hello for Business container on a device?
