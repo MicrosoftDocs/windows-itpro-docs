@@ -58,7 +58,7 @@ sections:
       - question: When should an additional method of authentication be considered?
         answer: |
           New hardware that meets [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book do not have external DMA ports to attack. 
-          For older hardware, where a PIN may be needed, it's recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#bkmk-unlockpol2) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on your risk tolerance and the hardware anti-hammering capabilities available to the TPMs in your computers. 
+          For older hardware, where a PIN may be needed, it's recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#allow-enhanced-pins-for-startup) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on your risk tolerance and the hardware anti-hammering capabilities available to the TPMs in your computers. 
           
       - question: If I lose my recovery information, will the BitLocker-protected data be unrecoverable?
         answer: |
