@@ -19,17 +19,17 @@ ms.technology: itpro-security
 ---
 # Validate and Configure Public Key Infrastructure - Key Trust
 
-Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  
+Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate. The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  
 
 ## Deploy an enterprise certificate authority
 
-This guide assumes most enterprise have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
+This guide assumes most enterprises have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
 
 ### Lab-based public key infrastructure
 
 The following instructions may be used to deploy simple public key infrastructure that is suitable for a lab environment.
 
-Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 or later server where you want the certificate authority installed.
+Sign in using **Enterprise Admin** equivalent credentials on Windows Server 2012 or later server where you want the certificate authority installed.
 
 >[!NOTE]
 >Never install a certificate authority on a domain controller in a production environment.
@@ -57,7 +57,7 @@ Domain controllers automatically request a domain controller certificate (if pub
 
 By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template.  However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs.  To ensure domain controllers request the proper certificate with the best available cryptography, use the Kerberos Authentication certificate template as a baseline to create an updated domain controller certificate template.
 
-Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
+Sign in to a certificate authority or management workstations with **Domain Admin** equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 
@@ -65,7 +65,7 @@ Sign-in to a certificate authority or management workstations with _Domain Admin
 
 3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 
-4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
+4. On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
 
 5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
 
@@ -84,7 +84,7 @@ Many domain controllers may have an existing domain controller certificate.  The
 
 The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).   The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template. 
 
-Sign-in to a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
+Sign in to a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 
@@ -110,7 +110,7 @@ The certificate template is configured to supersede all the certificate template
 
 Windows clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
 
-Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
+Sign in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 
@@ -141,7 +141,7 @@ The certificate authority only issues certificates based on published certificat
 
 The newly created domain controller authentication certificate template supersedes previous domain controller certificate templates.  Therefore, you need to unpublish these certificate templates from all issuing certificate authorities.
 
-Sign-in to the certificate authority or management workstation with _Enterprise Admin_ equivalent credentials.
+Sign in to the certificate authority or management workstation with _Enterprise Admin_ equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 
@@ -157,7 +157,7 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
+Sign in to the certificate authority or management workstations with **Enterprise Admin** equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 
@@ -205,7 +205,7 @@ Domain controllers automatically request a certificate from the domain controlle
 
 ### Deploy the Domain Controller Auto Certificate Enrollment Group Policy Object
 
-Sign-in to a domain controller or management workstations with _Domain Admin_ equivalent credentials.
+Sign in to domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
 1. Start the **Group Policy Management Console** (gpmc.msc).
 
