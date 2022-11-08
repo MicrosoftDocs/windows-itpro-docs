@@ -12,6 +12,7 @@ ms.collection:
   - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021
+ms.technology: itpro-security
 ---
 
 # TPM recommendations

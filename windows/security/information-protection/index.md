@@ -8,6 +8,7 @@ manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/10/2018
+ms.technology: itpro-security
 ---
 
 # Information protection
