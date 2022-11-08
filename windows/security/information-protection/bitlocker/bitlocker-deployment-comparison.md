@@ -3,12 +3,12 @@ title: BitLocker deployment comparison (Windows 10)
 description: This article shows the BitLocker deployment comparison chart.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: lovina-saldanha
-ms.author: v-lsaldanha
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/20/2021
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -16,9 +16,9 @@ ms.custom: bitlocker
 
 **Applies to**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article depicts the BitLocker deployment comparison chart.
 

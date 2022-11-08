@@ -4,19 +4,19 @@ description: This article for IT pros describes how to protect CSVs and SANs wit
 ms.reviewer: 
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
 # Protecting cluster shared volumes and storage area networks with BitLocker
 
 **Applies to**
--   Windows Server 2016
+- Windows Server 2016
 
 This article describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
 
@@ -134,7 +134,7 @@ You can also use **manage-bde** to enable BitLocker on clustered volumes. The st
 2.  Ensure new storage is formatted as NTFS.
 3.  Encrypt the volume, add a recovery key and add the cluster administrator as a protector key using the**manage-bde** command line interface (see example):
 
-    -   `Manage-bde -on -used <drive letter> -RP -sid domain\CNO$ -sync`
+    - `manage-bde.exe -on -used <drive letter> -RP -sid domain\CNO$ -sync`
 
        1.  BitLocker will check to see if the disk is already part of a cluster. If it is, administrators will encounter a hard block. Otherwise, the encryption continues.
        2.  Using the -sync parameter is optional. However, using -sync parameter has the following advantage:
@@ -143,7 +143,7 @@ You can also use **manage-bde** to enable BitLocker on clustered volumes. The st
 4.  Open the Failover Cluster Manager snap-in or cluster PowerShell cmdlets to enable the disk to be clustered.
 
 
-    -   Once the disk is clustered, it's enabled for CSV.
+    - Once the disk is clustered, it's enabled for CSV.
 
 
 5.  During the resource online operation, cluster checks whether the disk is BitLocker encrypted.
@@ -152,7 +152,7 @@ You can also use **manage-bde** to enable BitLocker on clustered volumes. The st
     2.  If the volume is BitLocker enabled, the following check occurs:
 
 
-       -   If volume is **locked**, BitLocker impersonates the CNO and unlocks the volume using the CNO protector. If these actions by BitLocker fail, an event is logged. The logged event will state that the volume couldn't be unlocked and the online operation has failed.
+       - If volume is **locked**, BitLocker impersonates the CNO and unlocks the volume using the CNO protector. If these actions by BitLocker fail, an event is logged. The logged event will state that the volume couldn't be unlocked and the online operation has failed.
 
 6.  Once the disk is online in the storage pool, it can be added to a CSV by right-clicking the disk resource and choosing "**Add to cluster shared volumes**".
 CSVs include both encrypted and unencrypted volumes. To check the status of a particular volume for BitLocker encryption: administrators must do the following task:
@@ -177,15 +177,15 @@ The following table contains information about both physical disk resources (tha
 
 | Action | On owner node of failover volume | On Metadata Server (MDS) of CSV | On (Data Server) DS of CSV | Maintenance Mode |
 |--- |--- |--- |--- |--- |
-|**Manage-bde –on**|Blocked|Blocked|Blocked|Allowed|
-|**Manage-bde –off**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde -on**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde -off**|Blocked|Blocked|Blocked|Allowed|
 |**Manage-bde Pause/Resume**|Blocked|Blocked**|Blocked|Allowed|
-|**Manage-bde –lock**|Blocked|Blocked|Blocked|Allowed|
-|**manage-bde –wipe**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde -lock**|Blocked|Blocked|Blocked|Allowed|
+|**manage-bde -wipe**|Blocked|Blocked|Blocked|Allowed|
 |**Unlock**|Automatic via cluster service|Automatic via cluster service|Automatic via cluster service|Allowed|
-|**manage-bde –protector –add**|Allowed|Allowed|Blocked|Allowed|
+|**manage-bde -protector -add**|Allowed|Allowed|Blocked|Allowed|
 |**manage-bde -protector -delete**|Allowed|Allowed|Blocked|Allowed|
-|**manage-bde –autounlock**|Allowed (not recommended)|Allowed (not recommended)|Blocked|Allowed (not recommended)|
+|**manage-bde -autounlock**|Allowed (not recommended)|Allowed (not recommended)|Blocked|Allowed (not recommended)|
 |**Manage-bde -upgrade**|Allowed|Allowed|Blocked|Allowed|
 |**Shrink**|Allowed|Allowed|Blocked|Allowed|
 |**Extend**|Allowed|Allowed|Blocked|Allowed|
@@ -198,10 +198,10 @@ In the case where a physical disk resource experiences a failover event during c
 ### Other considerations when using BitLocker on CSV2.0
 
 Some other considerations to take into account for BitLocker on clustered storage include:
--   BitLocker volumes have to be initialized and begin encryption before they're available to add to a CSV2.0 volume.
--   If an administrator needs to decrypt a CSV volume, remove the volume from the cluster or put it into disk maintenance mode. You can add the CSV back to the cluster while waiting for decryption to complete.
--   If an administrator needs to start encrypting a CSV volume, remove the volume from the cluster or put it into maintenance mode.
--   If conversion is paused with encryption in progress and the CSV volume is offline from the cluster, the cluster thread (health check) automatically resumes conversion when the volume is online to the cluster.
--   If conversion is paused with encryption in progress and a physical disk resource volume is offline from the cluster, the BitLocker driver automatically resumes conversion when the volume is online to the cluster.
--   If conversion is paused with encryption in progress, while the CSV volume is in maintenance mode, the cluster thread (health check) automatically resumes conversion when moving the volume back from maintenance.
--   If conversion is paused with encryption in progress, while the disk resource volume is in maintenance mode, the BitLocker driver automatically resumes conversion when the volume is moved back from maintenance mode.
+- BitLocker volumes have to be initialized and begin encryption before they're available to add to a CSV2.0 volume.
+- If an administrator needs to decrypt a CSV volume, remove the volume from the cluster or put it into disk maintenance mode. You can add the CSV back to the cluster while waiting for decryption to complete.
+- If an administrator needs to start encrypting a CSV volume, remove the volume from the cluster or put it into maintenance mode.
+- If conversion is paused with encryption in progress and the CSV volume is offline from the cluster, the cluster thread (health check) automatically resumes conversion when the volume is online to the cluster.
+- If conversion is paused with encryption in progress and a physical disk resource volume is offline from the cluster, the BitLocker driver automatically resumes conversion when the volume is online to the cluster.
+- If conversion is paused with encryption in progress, while the CSV volume is in maintenance mode, the cluster thread (health check) automatically resumes conversion when moving the volume back from maintenance.
+- If conversion is paused with encryption in progress, while the disk resource volume is in maintenance mode, the BitLocker driver automatically resumes conversion when the volume is moved back from maintenance mode.

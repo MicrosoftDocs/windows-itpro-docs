@@ -5,12 +5,12 @@ ms.reviewer: kaushika
 ms.technology: itpro-security
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: Teresa-Motiv
-ms.author: v-tappelgate
-manager: kaushika
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/17/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -23,7 +23,7 @@ This article describes common issues that prevent BitLocker from encrypting a dr
 
 ## Error 0x80310059: BitLocker drive encryption is already performing an operation on this drive
 
-When you turn on BitLocker Drive Encryption on a computer that is running Windows 10 Professional or Windows 11, you receive a message that resembles the following:
+When you turn on BitLocker Drive Encryption on a computer that is running Windows 10 Professional or Windows 11, you receive a message that resembles the following:
 
 > **ERROR:** An error occurred (code 0x80310059):BitLocker Drive Encryption is already performing an operation on this drive. Please complete all operations before continuing.NOTE: If the -on switch has failed to add key protectors or start encryption,you may need to call manage-bde -off before attempting -on again.
 
@@ -51,7 +51,7 @@ To resolve this issue, follow these steps:
 
 ## "Access is denied" message when you try to encrypt removable drives
 
-You have a computer that is running Windows 10, version 1709 or version 1607, or Windows 11. You try to encrypt a USB drive by following these steps:
+You have a computer that is running Windows 10, version 1709 or version 1607, or Windows 11. You try to encrypt a USB drive by following these steps:
 
 1. In Windows Explorer, right-click the USB drive and select **Turn on BitLocker**.
 
@@ -63,7 +63,7 @@ You have a computer that is running Windows 10, version 1709 or version 1607, or
 
 1. The **Starting encryption** page displays the message "Access is denied."
 
-You receive this message on any computer that runs Windows 10 version 1709 or version 1607, or Windows 11, when you use any USB drive.
+You receive this message on any computer that runs Windows 10 version 1709 or version 1607, or Windows 11, when you use any USB drive.
 
 ### Cause
 

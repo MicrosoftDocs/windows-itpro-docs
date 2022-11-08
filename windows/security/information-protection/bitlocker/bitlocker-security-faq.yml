@@ -20,7 +20,7 @@ metadata:
 title: BitLocker Security FAQ
 summary: |
   **Applies to**
-  -   Windows 10
+  - Windows 10
   
   
 
@@ -35,7 +35,7 @@ sections:
       - question: |
           What is the best practice for using BitLocker on an operating system drive?
         answer: |
-          The recommended practice for BitLocker configuration on an operating system drive is to implement BitLocker on a computer with a TPM version 1.2 or higher, and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware implementation, along with a PIN. By requiring a PIN that was set by the user in addition to the TPM validation, a malicious user that has physical access to the computer cannot simply start the computer.
+          The recommended practice for BitLocker configuration on an operating system drive is to implement BitLocker on a computer with a TPM version 1.2 or higher, and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware implementation, along with a PIN. By requiring a PIN that was set by the user in addition to the TPM validation, a malicious user that has physical access to the computer cannot simply start the computer.
 
       - question: |
           What are the implications of using the sleep or hibernate power management options?

@@ -4,13 +4,13 @@ description: Windows uses technologies including TPM, Secure Boot, Trusted Boot,
 ms.reviewer: 
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -18,19 +18,19 @@ ms.custom: bitlocker
 
 **Applies to**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 Windows uses technologies including trusted platform module (TPM), secure boot, and measured boot to help protect BitLocker encryption keys against attacks. 
 BitLocker is part of a strategic approach to securing data against offline attacks through encryption technology. 
 Data on a lost or stolen computer is vulnerable. 
-For example, there could be unauthorized access, either by running a software attack tool against the computer or by transferring the computer’s hard disk to a different computer. 
+For example, there could be unauthorized access, either by running a software attack tool against the computer or by transferring the computer's hard disk to a different computer. 
 
 BitLocker helps mitigate unauthorized data access on lost or stolen computers before the authorized operating system is started. This mitigation is done by:
 
 - **Encrypting volumes on your computer.** For example, you can turn on BitLocker for your operating system volume, or a volume on a fixed or removable data drive (such as a USB flash drive, SD card, and so on). Turning on BitLocker for your operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
-- **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer’s BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that leverage TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
+- **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer's BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that leverage TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
  
 The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 11, Windows 10, Windows 8.1, and Windows 8.
 
@@ -49,7 +49,7 @@ For more info about TPM, see [Trusted Platform Module](/windows/device-security/
 
 ### UEFI and secure boot
 
-Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system’s bootloader. 
+Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader. 
 
 The UEFI specification defines a firmware execution authentication process called [Secure Boot](../secure-the-windows-10-boot-process.md). 
 Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system. 
@@ -74,7 +74,7 @@ Pre-boot authentication with BitLocker is a policy setting that requires the use
 The Group Policy setting is [Require additional authentication at startup](./bitlocker-group-policy-settings.md) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication. 
 
 BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. 
-If Windows can’t access the encryption keys, the device can’t read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the recovery key.
+If Windows can't access the encryption keys, the device can't read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the recovery key.
 
 Pre-boot authentication is designed to prevent the encryption keys from being loaded to system memory without the trusted user supplying another authentication factor such as a PIN or startup key. 
 This helps mitigate DMA and memory remanence attacks.
@@ -94,7 +94,7 @@ Pre-boot authentication with a PIN can mitigate an attack vector for devices tha
 Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured. 
 
 On the other hand, Pre-boot authentication-prompts can be inconvenient to users. 
-In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization’s support team to obtain a recovery key. 
+In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. 
 Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN needs to be entered when a computer reboots or resumes from hibernation. 
 
 To address these issues, you can deploy [BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md). 
@@ -120,8 +120,8 @@ If kernel DMA protection is *not* enabled, follow these steps to protect Thunder
     - MDM: [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
     - Group Policy: [Disable new DMA devices when this computer is locked](./bitlocker-group-policy-settings.md#disable-new-dma-devices-when-this-computer-is-locked) (This setting isn't configured by default.)
 
-For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the “Thunderbolt Mitigation” section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
-For SBP-2 and 1394 (a.k.a. Firewire), refer to the “SBP-2 Mitigation” section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
+For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the "Thunderbolt Mitigation" section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
+For SBP-2 and 1394 (a.k.a. Firewire), refer to the "SBP-2 Mitigation" section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
  
 ## Attack countermeasures
 

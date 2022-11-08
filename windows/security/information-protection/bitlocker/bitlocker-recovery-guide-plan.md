@@ -1,6 +1,6 @@
 ---
 title: BitLocker recovery guide
-description: This article for IT professionals describes how to recover BitLocker keys from Active Directory Domain Services (AD DS).
+description: This article for IT professionals describes how to recover BitLocker keys from Active Directory Domain Services (AD DS).
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -26,20 +26,20 @@ ms.custom: bitlocker
 
 This article describes how to recover BitLocker keys from AD DS.
 
-Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It's recommended to create a recovery model for BitLocker while you are planning your BitLocker deployment.
+Organizations can use BitLocker recovery information saved in Active Directory Domain Services (AD DS) to access BitLocker-protected data. It's recommended to create a recovery model for BitLocker while you are planning your BitLocker deployment.
 
-This article assumes that you understand how to set up AD DS to back up BitLocker recovery information automatically, and what types of recovery information are saved to AD DS.
+This article assumes that you understand how to set up AD DS to back up BitLocker recovery information automatically, and what types of recovery information are saved to AD DS.
 
-This article does not detail how to configure AD DS to store the BitLocker recovery information.
+This article does not detail how to configure AD DS to store the BitLocker recovery information.
 
 
 ## <a href="" id="bkmk-whatisrecovery"></a>What is BitLocker recovery?
 
 BitLocker recovery is the process by which you can restore access to a BitLocker-protected drive in the event that you cannot unlock the drive normally. In a recovery scenario, you have the following options to restore access to the drive:
 
--   **The user can supply the recovery password.** If your organization allows users to print or store recovery passwords, the users can type in the 48-digit recovery password that they printed or stored on a USB drive or with your Microsoft account online. (Saving a recovery password with your Microsoft account online is only allowed when BitLocker is used on a PC that is not a member of a domain).
--   **Data recovery agents can use their credentials to unlock the drive.** If the drive is an operating system drive, the drive must be mounted as a data drive on another computer for the data recovery agent to unlock it.
--   **A domain administrator can obtain the recovery password from AD DS and use it to unlock the drive.** Storing recovery passwords in AD DS is recommended to provide a way for IT professionals to be able to obtain recovery passwords for drives in their organization if needed. This method makes it mandatory for you to enable this recovery method in the BitLocker group policy setting **Choose how BitLocker-protected operating system drives can be recovered** located at **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Operating System Drives** in the Local Group Policy Editor. For more information, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
+- **The user can supply the recovery password.** If your organization allows users to print or store recovery passwords, the users can type in the 48-digit recovery password that they printed or stored on a USB drive or with your Microsoft account online. (Saving a recovery password with your Microsoft account online is only allowed when BitLocker is used on a PC that is not a member of a domain).
+- **Data recovery agents can use their credentials to unlock the drive.** If the drive is an operating system drive, the drive must be mounted as a data drive on another computer for the data recovery agent to unlock it.
+- **A domain administrator can obtain the recovery password from AD DS and use it to unlock the drive.** Storing recovery passwords in AD DS is recommended to provide a way for IT professionals to be able to obtain recovery passwords for drives in their organization if needed. This method makes it mandatory for you to enable this recovery method in the BitLocker group policy setting **Choose how BitLocker-protected operating system drives can be recovered** located at **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Operating System Drives** in the Local Group Policy Editor. For more information, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 
 ### What causes BitLocker recovery?
 
@@ -106,15 +106,15 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 1.  Select the **Start** button, type **cmd** in the **Start Search** box, and select and hold **cmd.exe**, and then select **Run as administrator**.
 2.  At the command prompt, type the following command and then press **ENTER**:
 
-    `manage-bde -forcerecovery <BitLockerVolume>`
+    `manage-bde.exe -forcerecovery <BitLockerVolume>`
 
 **To force recovery for a remote computer:**
 
-1.  On the Start screen, type **cmd.exe**, and then select **Run as administrator**.
+1.  On the Start screen, type **cmd.exe**, and then select **Run as administrator**.
 
 2.  At the command prompt, type the following command and then press **ENTER**:
 
-    `manage-bde -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>`
+    `manage-bde.exe -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>`
 
     > [!NOTE]
     > Recovery triggered by `-forcerecovery` persists for multiple restarts until a TPM protector is added or protection is suspended by the user. When using Modern Standby devices (such as Surface devices), the `-forcerecovery` option is not recommended because BitLocker will have to be unlocked and disabled manually from the WinRE environment before the OS can boot up again. For more information, see [BitLocker Troubleshooting: Continuous reboot loop with BitLocker recovery on a slate device](https://social.technet.microsoft.com/wiki/contents/articles/18671.bitlocker-troubleshooting-continuous-reboot-loop-with-bitlocker-recovery-on-a-slate-device.aspx).
@@ -124,7 +124,7 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
 When planning the BitLocker recovery process, first consult your organization's current best practices for recovering sensitive information. For example: How does your enterprise handle lost Windows passwords? How does your organization perform smart card PIN resets? You can use these best practices and related resources (people and tools) to help formulate a BitLocker recovery model.
 
-Organizations that rely on BitLocker Drive Encryption and BitLocker To Go to protect data on a large number of computers and removable drives running the Windows 11, Windows 10, Windows 8, or Windows 7 operating systems and Windows to Go should consider using the Microsoft BitLocker Administration and Monitoring (MBAM) Tool version 2.0, which is included in the Microsoft Desktop Optimization Pack (MDOP) for Microsoft Software Assurance. MBAM makes BitLocker implementations easier to deploy and manage and allows administrators to provision and monitor encryption for operating system and fixed drives. MBAM prompts the user before encrypting fixed drives. MBAM also manages recovery keys for fixed and removable drives, making recovery easier to manage. MBAM can be used as part of a Microsoft System Center deployment or as a stand-alone solution. For more info, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/mbam-v25/).
+Organizations that rely on BitLocker Drive Encryption and BitLocker To Go to protect data on a large number of computers and removable drives running the Windows 11, Windows 10, Windows 8, or Windows 7 operating systems and Windows to Go should consider using the Microsoft BitLocker Administration and Monitoring (MBAM) Tool version 2.0, which is included in the Microsoft Desktop Optimization Pack (MDOP) for Microsoft Software Assurance. MBAM makes BitLocker implementations easier to deploy and manage and allows administrators to provision and monitor encryption for operating system and fixed drives. MBAM prompts the user before encrypting fixed drives. MBAM also manages recovery keys for fixed and removable drives, making recovery easier to manage. MBAM can be used as part of a Microsoft System Center deployment or as a stand-alone solution. For more info, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/mbam-v25/).
 
 After a BitLocker recovery has been initiated, users can use a recovery password to unlock access to encrypted data. Consider both self-recovery and recovery password retrieval methods for your organization.
 
@@ -148,11 +148,11 @@ In some cases, users might have the recovery password in a printout or a USB fla
 
 If the user does not have a recovery password in a printout or on a USB flash drive, the user will need to be able to retrieve the recovery password from an online source. If the PC is a member of a domain, the recovery password can be backed up to AD DS. However, this does not happen by default; you must have configured the appropriate group policy settings before BitLocker was enabled on the PC. BitLocker group policy settings can be found in the Local Group Policy Editor or the Group Policy Management Console (GPMC) under **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption**. The following policy settings define the recovery methods that can be used to restore access to a BitLocker-protected drive if an authentication method fails or is unable to be used.
 
--   **Choose how BitLocker-protected operating system drives can be recovered**
--   **Choose how BitLocker-protected fixed drives can be recovered**
--   **Choose how BitLocker-protected removable drives can be recovered**
-In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Check the **Do not enable BitLocker until recovery information is stored in AD
-DS** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
+- **Choose how BitLocker-protected operating system drives can be recovered**
+- **Choose how BitLocker-protected fixed drives can be recovered**
+- **Choose how BitLocker-protected removable drives can be recovered**
+In each of these policies, select **Save BitLocker recovery information to Active Directory Domain Services** and then choose which BitLocker recovery information to store in AD DS. Check the **Do not enable BitLocker until recovery information is stored in AD
+DS** check box if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information for the drive to AD DS succeeds.
 
 > [!NOTE]
 > If the PCs are part of a workgroup, users are advised to save their BitLocker recovery password with their Microsoft account online. Having an online copy of your BitLocker recovery password is recommended to help ensure that you do not lose access to your data in the event of a recovery being required.
@@ -163,32 +163,32 @@ You can use the following list as a template for creating your own recovery proc
 
 - [Record the name of the user's computer](#bkmk-recordcomputername)
 - [Verify the user's identity](#bkmk-verifyidentity)
-- [Locate the recovery password in AD DS](#bkmk-locatepassword)
+- [Locate the recovery password in AD DS](#bkmk-locatepassword)
 - [Gather information to determine why recovery occurred](#bkmk-gatherinfo)
 - [Give the user the recovery password](#bkmk-givepassword)
 
 
 ### <a href="" id="bkmk-recordcomputername"></a>Record the name of the user's computer
 
-You can use the name of the user's computer to locate the recovery password in AD DS. If the user does not know the name of the computer, ask the user to read the first word of the **Drive Label** in the **BitLocker Drive Encryption Password Entry** user interface. This is the computer name when BitLocker was enabled and is probably the current name of the computer.
+You can use the name of the user's computer to locate the recovery password in AD DS. If the user does not know the name of the computer, ask the user to read the first word of the **Drive Label** in the **BitLocker Drive Encryption Password Entry** user interface. This is the computer name when BitLocker was enabled and is probably the current name of the computer.
 
 
 ### <a href="" id="bkmk-verifyidentity"></a>Verify the user's identity
 
 You should verify whether the person who is asking for the recovery password is truly the authorized user of that computer. You may also wish to verify whether the computer for which the user provided the name belongs to the user.
 
-### <a href="" id="bkmk-locatepassword"></a>Locate the recovery password in AD DS
+### <a href="" id="bkmk-locatepassword"></a>Locate the recovery password in AD DS
 
-Locate the computer object with the matching name in AD DS. Because computer object names are listed in the AD DS global catalog, you should be able to locate the object even if you have a multi-domain forest.
+Locate the computer object with the matching name in AD DS. Because computer object names are listed in the AD DS global catalog, you should be able to locate the object even if you have a multi-domain forest.
 
 
 ### Multiple recovery passwords
 
-If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
+If multiple recovery passwords are stored under a computer object in AD DS, the name of the BitLocker recovery information object includes the date on which the password was created.
 
 If at any time you are unsure about the password to be provided, or if you think you might be providing the incorrect password, ask the user to read the 8-character password ID that is displayed in the recovery console.
 
-Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
+Since the password ID is a unique value that is associated with each recovery password stored in AD DS, running a query using this ID finds the correct password to unlock the encrypted volume.
 
 
 ### <a href="" id="bkmk-gatherinfo"></a>Gather information to determine why recovery occurred
@@ -272,7 +272,7 @@ This error occurs if you updated the firmware. As a best practice, you should su
 
 ## Windows RE and BitLocker Device Encryption
 
-Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair automatically starts. When Startup Repair is launched automatically due to boot failures, it executes only operating system and driver file repairs, provided that the boot logs or any available crash dump points to a specific corrupted file. In Windows 8.1 and later versions, devices that include firmware to support specific TPM measurements for PCR\[7\] **the TPM** can validate that Windows RE is a trusted operating environment and unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example, the TPM has been disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair is not able to be run automatically from the PC and instead, Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker–protected drives.
+Windows Recovery Environment (RE) can be used to recover access to a drive protected by [BitLocker Device Encryption](bitlocker-device-encryption-overview-windows-10.md). If a PC is unable to boot after two failures, Startup Repair automatically starts. When Startup Repair is launched automatically due to boot failures, it executes only operating system and driver file repairs, provided that the boot logs or any available crash dump points to a specific corrupted file. In Windows 8.1 and later versions, devices that include firmware to support specific TPM measurements for PCR\[7\] **the TPM** can validate that Windows RE is a trusted operating environment and unlock any BitLocker-protected drives if Windows RE has not been modified. If the Windows RE environment has been modified, for example, the TPM has been disabled, the drives stay locked until the BitLocker recovery key is provided. If Startup Repair is not able to be run automatically from the PC and instead, Windows RE is manually started from a repair disk, the BitLocker recovery key must be provided to unlock the BitLocker-protected drives.
 
 Windows RE will also ask for your BitLocker recovery key when you start a "Remove everything" reset from Windows RE on a device that uses the "TPM + PIN" or "Password for OS drive" protector. If you start BitLocker recovery on a keyboardless device with TPM-only protection, Windows RE, not the boot manager, will ask for the BitLocker recovery key. After you enter the key, you can access Windows RE troubleshooting tools or start Windows normally.
 
@@ -290,7 +290,7 @@ During BitLocker recovery, Windows displays a custom recovery message and a few 
 
 ### Custom recovery message
 
-BitLocker Group Policy settings in Windows 10, version 1511, or Windows 11, let you configure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+BitLocker Group Policy settings in Windows 10, version 1511, or Windows 11, let you configure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
 
 This policy can be configured using GPO under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure pre-boot recovery message and URL**.
 
@@ -306,7 +306,7 @@ Example of customized recovery screen:
 
 ### BitLocker recovery key hints
 
-BitLocker metadata has been enhanced in Windows 10, version 1903 or Windows 11 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. This applies to both the boot manager recovery screen and the WinRE unlock screen.
+BitLocker metadata has been enhanced in Windows 10, version 1903 or Windows 11 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. This applies to both the boot manager recovery screen and the WinRE unlock screen.
 
 ![Customized BitLocker recovery screen.](./images/bl-password-hint2.png)
 
@@ -320,9 +320,9 @@ There are rules governing which hint is shown during the recovery (in the order 
 3. If multiple recovery keys exist on the volume, prioritize the last-created (and successfully backed up) recovery key.
 4. Prioritize keys with successful backup over keys that have never been backed up.
 5. Prioritize backup hints in the following order for remote backup locations: **Microsoft Account > Azure AD > Active Directory**. 
-6. If a key has been printed and saved to file, display a combined hint, “Look for a printout or a text file with the key,” instead of two separate hints.
+6. If a key has been printed and saved to file, display a combined hint, "Look for a printout or a text file with the key," instead of two separate hints.
 7. If multiple backups of the same type (remove vs. local) have been performed for the same recovery key, prioritize backup info with latest backed-up date.
-8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, “Contact your organization’s help desk,” is displayed. 
+8. There is no specific hint for keys saved to an on-premises Active Directory. In this case, a custom message (if configured) or a generic message, "Contact your organization's help desk," is displayed. 
 9. If two recovery keys are present on the disk, but only one has been successfully backed up, the system asks for a key that has been backed up, even if another key is newer. 
 
 
@@ -460,22 +460,22 @@ You can reset the recovery password in two ways:
 1.  Remove the previous recovery password.
 
     ```powershell
-    Manage-bde –protectors –delete C: –type RecoveryPassword
+    Manage-bde -protectors -delete C: -type RecoveryPassword
     ```
 2.  Add the new recovery password.
 
     ```powershell
-    Manage-bde –protectors –add C: -RecoveryPassword
+    Manage-bde -protectors -add C: -RecoveryPassword
     ```
 3.  Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
 
     ```powershell
-    Manage-bde –protectors –get C: -Type RecoveryPassword
+    Manage-bde -protectors -get C: -Type RecoveryPassword
     ```
 4.  Back up the new recovery password to AD DS.
 
     ```powershell
-    Manage-bde –protectors –adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
+    Manage-bde -protectors -adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
     ```
 
     > [!WARNING]
@@ -572,10 +572,10 @@ WScript.Echo "A new recovery password has been added. Old passwords have been re
 
 You can use two methods to retrieve the key package, as described in [Using Additional Recovery Information](#bkmk-usingaddrecovery):
 
-- **Export a previously saved key package from AD DS.** You must have Read access to BitLocker recovery passwords that are stored in AD DS.
+- **Export a previously saved key package from AD DS.** You must have Read access to BitLocker recovery passwords that are stored in AD DS.
 - **Export a new key package from an unlocked, BitLocker-protected volume.** You must have local administrator access to the working volume, before any damage has occurred.
 
-The following sample script exports all previously saved key packages from AD DS.
+The following sample script exports all previously saved key packages from AD DS.
 
 **To run the sample key package retrieval script:**
 
@@ -584,7 +584,7 @@ The following sample script exports all previously saved key packages from AD D
 
     **cscript GetBitLockerKeyPackageADDS.vbs -?**
 
-You can use the following sample script to create a VBScript file to retrieve the BitLocker key package from AD DS:
+You can use the following sample script to create a VBScript file to retrieve the BitLocker key package from AD DS:
 
 ```vb
 ' --------------------------------------------------------------------------------

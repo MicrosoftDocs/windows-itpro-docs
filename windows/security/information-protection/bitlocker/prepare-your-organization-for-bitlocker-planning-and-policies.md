@@ -4,13 +4,13 @@ description: This article for the IT professional explains how can you plan your
 ms.reviewer: 
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -49,7 +49,7 @@ The trusted platform module (TPM) is a hardware component installed in many newe
 
 Also, BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable USB device, such as a flash drive, that contains a startup key. These extra security measures provide multifactor authentication. They also make sure that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
 
-On computers that don't have a TPM version 1.2 or higher, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. It doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
+On computers that don't have a TPM version 1.2 or higher, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. It doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
 ### BitLocker key protectors
 | Key protector | Description |
@@ -79,7 +79,7 @@ Determine whether you will support computers that don't have a TPM 1.2 or higher
 
 The TPM-only authentication method provides the most transparent user experience for organizations that need a baseline level of data protection to meet security policies. It has the lowest total cost of ownership. TPM-only might also be more appropriate for computers that are unattended or that must reboot unattended.
 
-However, TPM-only authentication method offers the lowest level of data protection. This authentication method protects against attacks that modify early boot components. But, the level of protection can be affected by potential weaknesses in hardware or in the early boot components. BitLocker’s multifactor authentication methods significantly increase the overall level of data protection.
+However, TPM-only authentication method offers the lowest level of data protection. This authentication method protects against attacks that modify early boot components. But, the level of protection can be affected by potential weaknesses in hardware or in the early boot components. BitLocker's multifactor authentication methods significantly increase the overall level of data protection.
 
 **What areas of your organization need a more secure level of data protection?**
 
@@ -101,7 +101,7 @@ For TPM 1.2, there are multiple possible states. Windows automatically initializ
 
 For a TPM to be usable by BitLocker, it must contain an endorsement key, which is an RSA key pair. The private half of the key pair is held inside the TPM and is never revealed or accessible outside the TPM. If the TPM doesn't have an endorsement key, BitLocker will force the TPM to generate one automatically as part of BitLocker setup.
 
-An endorsement key can be created at various points in the TPM’s lifecycle, but needs to be created only once for the lifetime of the TPM. If an endorsement key doesn't exist for the TPM, it must be created before TPM ownership can be taken.
+An endorsement key can be created at various points in the TPM's lifecycle, but needs to be created only once for the lifetime of the TPM. If an endorsement key doesn't exist for the TPM, it must be created before TPM ownership can be taken.
 
 For more information about the TPM and the TCG, see the Trusted Computing Group: Trusted Platform Module (TPM) Specifications (<https://go.microsoft.com/fwlink/p/?linkid=69584>).
 

@@ -5,12 +5,12 @@ ms.reviewer: kaushika
 ms.technology: itpro-security
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: Teresa-Motiv
-ms.author: v-tappelgate
-manager: kaushika
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/17/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -29,7 +29,7 @@ For more information about Measured Boot and PCRs, see the following articles:
 
 ## Use TBSLogGenerator to decode Measured Boot logs
 
-Use TBSLogGenerator to decode Measured Boot logs that you have collected from Windows 11, Windows 10, and earlier versions. You can install this tool on the following systems:
+Use TBSLogGenerator to decode Measured Boot logs that you have collected from Windows 11, Windows 10, and earlier versions. You can install this tool on the following systems:
 
 - A computer that is running Windows Server 2016 and that has a TPM enabled
 - A Gen 2 virtual machine (running on Hyper-V) that is running Windows Server 2016 (you can use the virtual TPM)

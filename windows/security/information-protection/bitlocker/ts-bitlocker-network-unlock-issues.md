@@ -4,9 +4,9 @@ description: Describes several known issues that you may encounter while using n
 ms.technology: itpro-security
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: v-tappelgate
-ms.author: v-tappelgate
-manager: kaushika
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.reviewer: kaushika
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting

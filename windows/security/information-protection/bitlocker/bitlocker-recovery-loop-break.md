@@ -3,14 +3,14 @@ title: Breaking out of a BitLocker recovery loop
 description: This article for IT professionals describes how to break out of a BitLocker recovery loop.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 

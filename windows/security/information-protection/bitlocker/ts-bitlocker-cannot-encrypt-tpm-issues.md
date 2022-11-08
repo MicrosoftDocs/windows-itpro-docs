@@ -5,12 +5,12 @@ ms.reviewer: kaushika
 ms.technology: itpro-security
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: Teresa-Motiv
-ms.author: v-tappelgate
-manager: kaushika
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/18/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 

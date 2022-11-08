@@ -20,7 +20,7 @@ metadata:
 title: BitLocker frequently asked questions (FAQ)
 summary: |
   **Applies to**
-  -   Windows 10
+  - Windows 10
   
 
 sections:
@@ -55,17 +55,17 @@ sections:
           
       - question: What is Used Disk Space Only encryption?
         answer: |
-          BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
+          BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
           
       - question: What system changes would cause the integrity check on my operating system drive to fail?
         answer: |
           The following types of system changes can cause an integrity check failure and prevent the TPM from releasing the BitLocker key to decrypt the protected operating system drive:
           
-          -   Moving the BitLocker-protected drive into a new computer.
-          -   Installing a new motherboard with a new TPM.
-          -   Turning off, disabling, or clearing the TPM.
-          -   Changing any boot configuration settings.
-          -   Changing the BIOS, UEFI firmware, master boot record, boot sector, boot manager, option ROM, or other early boot components or boot configuration data.
+          - Moving the BitLocker-protected drive into a new computer.
+          - Installing a new motherboard with a new TPM.
+          - Turning off, disabling, or clearing the TPM.
+          - Changing any boot configuration settings.
+          - Changing the BIOS, UEFI firmware, master boot record, boot sector, boot manager, option ROM, or other early boot components or boot configuration data.
           
       - question: What causes BitLocker to start into recovery mode when attempting to start the operating system drive?
         answer: |

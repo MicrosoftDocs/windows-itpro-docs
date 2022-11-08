@@ -3,33 +3,33 @@ title: Overview of BitLocker Device Encryption in Windows
 description: This article provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 03/10/2022
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
 # Overview of BitLocker Device Encryption in Windows
 
 **Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and later 
+- Windows 10
+- Windows 11
+- Windows Server 2016 and later 
 
 This article explains how BitLocker Device Encryption can help protect data on devices running Windows. For a general overview and list of articles about BitLocker, see [BitLocker](bitlocker-overview.md). 
 
-When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and providing new strategies.
+When users travel, their organization's confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and providing new strategies.
 
-Table 2 lists specific data-protection concerns and how they're addressed in Windows 11, Windows 10, and Windows 7.
+Table 2 lists specific data-protection concerns and how they're addressed in Windows 11, Windows 10, and Windows 7.
 
-**Table 2. Data Protection in Windows 11, Windows 10, and Windows 7**
+**Table 2. Data Protection in Windows 11, Windows 10, and Windows 7**
 
-| Windows 7 | Windows 11 and Windows 10 |
+| Windows 7 | Windows 11 and Windows 10 |
 |---|---|
 | When BitLocker is used with a PIN to protect startup, PCs such as kiosks can't be restarted remotely. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
 | When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
@@ -41,17 +41,17 @@ Table 2 lists specific data-protection concerns and how they're addressed in Win
 
 ## Prepare for drive and file encryption
 
-The best type of security measures is transparent to the user during implementation and use. Every time there's a possible delay or difficulty because of a security feature, there's strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that’s a scenario that organizations need to avoid.
-Whether you’re planning to encrypt entire volumes, removable devices, or individual files, Windows 11 and Windows 10 meet your needs by providing streamlined, usable solutions. In fact, you can take several steps in advance to prepare for data encryption and make the deployment quick and smooth.
+The best type of security measures is transparent to the user during implementation and use. Every time there's a possible delay or difficulty because of a security feature, there's strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that's a scenario that organizations need to avoid.
+Whether you're planning to encrypt entire volumes, removable devices, or individual files, Windows 11 and Windows 10 meet your needs by providing streamlined, usable solutions. In fact, you can take several steps in advance to prepare for data encryption and make the deployment quick and smooth.
 
 ### TPM pre-provisioning
 
-In Windows 7, preparing the TPM for use offered a couple of challenges:
+In Windows 7, preparing the TPM for use offered a couple of challenges:
 
 * You can turn on the TPM in the BIOS, which requires someone to either go into the BIOS settings to turn it on or to install a driver to turn it on from within Windows.
 * When you enable the TPM, it may require one or more restarts.
 
-Basically, it was a hassle. If IT staff were provisioning new PCs, they could handle all of this, but if you wanted to add BitLocker to devices that were already in users’ hands, those users would have struggled with the technical challenges and would either call IT for support or leave BitLocker disabled.
+Basically, it was a hassle. If IT staff were provisioning new PCs, they could handle all of this, but if you wanted to add BitLocker to devices that were already in users' hands, those users would have struggled with the technical challenges and would either call IT for support or leave BitLocker disabled.
 
 Microsoft includes instrumentation in Windows 11 and Windows 10 that enable the operating system to fully manage the TPM. There's no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
 
@@ -63,7 +63,7 @@ With earlier versions of Windows, administrators had to enable BitLocker after W
 
 ## BitLocker device encryption 
 
-Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 11 and Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those that are Modern Standby, and devices that run Windows 10 Home edition or Windows 11.
+Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 11 and Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those that are Modern Standby, and devices that run Windows 10 Home edition or Windows 11.
 
 Microsoft expects that most devices in the future will pass the testing requirements, which makes BitLocker device encryption pervasive across modern Windows devices. BitLocker device encryption further protects the system by transparently implementing device-wide data encryption.
 
@@ -92,21 +92,21 @@ Exercise caution when encrypting only used space on an existing volume on which 
 
 ## Encrypted hard drive support
 
-SEDs have been available for years, but Microsoft couldn’t support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
-Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC’s processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use,  whole-drive encryption with Windows 11 or Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
+SEDs have been available for years, but Microsoft couldn't support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
+Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC's processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use,  whole-drive encryption with Windows 11 or Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
 For more information about encrypted hard drives, see [Encrypted Hard Drive](../encrypted-hard-drive.md).
 
 ## Preboot information protection
 
 An effective implementation of information protection, like most security controls, considers usability and security. Users typically prefer a simple security experience. In fact, the more transparent a security solution becomes, the more likely users are to conform to it.
 It's crucial that organizations protect information on their PCs regardless of the state of the computer or the intent of users. This protection shouldn't be cumbersome to users. One undesirable and previously commonplace situation is when the user is prompted for input during preboot, and then again during Windows sign-in. Challenging users for input more than once should be avoided.
-Windows 11 and Windows 10 can enable a true SSO experience from the preboot environment on modern devices and in some cases even on older devices when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices’ configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
+Windows 11 and Windows 10 can enable a true SSO experience from the preboot environment on modern devices and in some cases even on older devices when robust information protection configurations are in place. The TPM in isolation is able to securely protect the BitLocker encryption key while it is at rest, and it can securely unlock the operating system drive. When the key is in use and thus in memory, a combination of hardware and Windows capabilities can secure the key and prevent unauthorized access through cold-boot attacks. Although other countermeasures like PIN-based unlock are available, they aren't as user-friendly; depending on the devices' configuration they may not offer additional security when it comes to key protection. For more information, see [BitLocker Countermeasures](bitlocker-countermeasures.md).
 
 ## Manage passwords and PINs
 
 When BitLocker is enabled on a system drive and the PC has a TPM, you can choose to require that users type a PIN before BitLocker will unlock the drive. Such a PIN requirement can prevent an attacker who has physical access to a PC from even getting to the Windows sign-in, which makes it virtually impossible for the attacker to access or modify user data and system files.
 
-Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor (a second “something you know”). This configuration comes with some costs, however. One of the most significant is the need to change the PIN regularly. In enterprises that used BitLocker with Windows 7 and the Windows Vista operating system, users had to contact systems administrators to update their BitLocker PIN or password. This requirement not only increased management costs but made users less willing to change their BitLocker PIN or password regularly.
+Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor (a second "something you know"). This configuration comes with some costs, however. One of the most significant is the need to change the PIN regularly. In enterprises that used BitLocker with Windows 7 and the Windows Vista operating system, users had to contact systems administrators to update their BitLocker PIN or password. This requirement not only increased management costs but made users less willing to change their BitLocker PIN or password regularly.
 Windows 11 and Windows 10 users can update their BitLocker PINs and passwords themselves, without administrator credentials. Not only will this feature reduce support costs, but it could improve security, too, because it encourages users to change their PINs and passwords more often. In addition, Modern Standby devices don't require a PIN for startup: They're designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
 For more information about how startup security works and the countermeasures that Windows 11 and Windows 10 provide, see [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md).
 

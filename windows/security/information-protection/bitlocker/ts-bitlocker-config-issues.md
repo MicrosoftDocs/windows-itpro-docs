@@ -5,12 +5,12 @@ ms.reviewer: kaushika
 ms.technology: itpro-security
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: Teresa-Motiv
-ms.author: v-tappelgate
-manager: kaushika
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/17/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -18,9 +18,9 @@ ms.custom: bitlocker
 
 This article describes common issues that affect your BitLocker's configuration and general functionality. This article also provides guidance to address these issues.
 
-## BitLocker encryption is slower in Windows 10 and Windows 11
+## BitLocker encryption is slower in Windows 10 and Windows 11
 
-In both Windows 11, Windows 10, and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 11 and Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
+In both Windows 11, Windows 10, and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 11 and Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
 
 To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), makes sure that any new disk writes on all client SKUs and that any internal drives are always encrypted *as soon as you turn on BitLocker*.
 
@@ -80,7 +80,7 @@ To resolve this issue, remove the third-party software.
 
 ## Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks
 
-You have a Windows Server 2019 or 2016 Hyper-V Server that is hosting VMs (guests) that are configured as Windows domain controllers. BitLocker has encrypted the disks that store the Active Directory database and log files. When you run a “production snapshot” of the domain controller guests, the Volume Snap-Shot (VSS) service does not correctly process the backup.
+You have a Windows Server 2019 or 2016 Hyper-V Server that is hosting VMs (guests) that are configured as Windows domain controllers. BitLocker has encrypted the disks that store the Active Directory database and log files. When you run a "production snapshot" of the domain controller guests, the Volume Snap-Shot (VSS) service does not correctly process the backup.
 
 This issue occurs regardless of any of the following variations in the environment:
 

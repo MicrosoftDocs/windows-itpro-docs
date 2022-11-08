@@ -4,14 +4,14 @@ description: This topic for the IT professional describes how to use the BitLock
 ms.reviewer: 
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: frankroj
+ms.author: frankroj
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -31,9 +31,9 @@ The BitLocker Recovery Password Viewer tool is an optional tool included with th
 
 To complete the procedures in this scenario:
 
--   You must have domain administrator credentials.
--   Your test computers must be joined to the domain.
--   On the domain-joined test computers, BitLocker must have been turned on.
+- You must have domain administrator credentials.
+- Your test computers must be joined to the domain.
+- On the domain-joined test computers, BitLocker must have been turned on.
 
 The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
 
@@ -62,5 +62,5 @@ By completing the procedures in this scenario, you have viewed and copied the re
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
 - [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)
- 
- 
+ 
+ 

@@ -20,7 +20,7 @@ metadata:
 title: Using BitLocker with other programs FAQ
 summary: |
   **Applies to**
-  -   Windows 10
+  - Windows 10
   
 
 sections:
@@ -61,18 +61,18 @@ sections:
         answer: |
           The system check is designed to ensure your computer's BIOS or UEFI firmware is compatible with BitLocker and that the TPM is working correctly. The system check can fail for several reasons:
           
-          -   The computer's BIOS or UEFI firmware cannot read USB flash drives.
-          -   The computer's BIOS, uEFI firmware, or boot menu does not have reading USB flash drives enabled.
-          -   There are multiple USB flash drives inserted into the computer.
-          -   The PIN was not entered correctly.
-          -   The computer's BIOS or UEFI firmware only supports using the function keys (F1–F10) to enter numerals in the pre-boot environment.
-          -   The startup key was removed before the computer finished rebooting.
-          -   The TPM has malfunctioned and fails to unseal the keys.
+          - The computer's BIOS or UEFI firmware cannot read USB flash drives.
+          - The computer's BIOS, uEFI firmware, or boot menu does not have reading USB flash drives enabled.
+          - There are multiple USB flash drives inserted into the computer.
+          - The PIN was not entered correctly.
+          - The computer's BIOS or UEFI firmware only supports using the function keys (F1-F10) to enter numerals in the pre-boot environment.
+          - The startup key was removed before the computer finished rebooting.
+          - The TPM has malfunctioned and fails to unseal the keys.
           
       - question: |
           What can I do if the recovery key on my USB flash drive cannot be read?
         answer: |
-          Some computers cannot read USB flash drives in the pre-boot environment. First, check your BIOS or UEFI firmware and boot settings to ensure that the use of USB drives is enabled. If it is not enabled, enable the use of USB drives in the BIOS or UEFI firmware and boot settings and then try to read the recovery key from the USB flash drive again. If it still cannot be read, you will have to mount the hard drive as a data drive on another computer so that there is an operating system to attempt to read the recovery key from the USB flash drive. If the USB flash drive has been corrupted or damaged, you may need to supply a recovery password or use the recovery information that was backed up to AD DS. Also, if you are using the recovery key in the pre-boot environment, ensure that the drive is formatted by using the NTFS, FAT16, or FAT32 file system.
+          Some computers cannot read USB flash drives in the pre-boot environment. First, check your BIOS or UEFI firmware and boot settings to ensure that the use of USB drives is enabled. If it is not enabled, enable the use of USB drives in the BIOS or UEFI firmware and boot settings and then try to read the recovery key from the USB flash drive again. If it still cannot be read, you will have to mount the hard drive as a data drive on another computer so that there is an operating system to attempt to read the recovery key from the USB flash drive. If the USB flash drive has been corrupted or damaged, you may need to supply a recovery password or use the recovery information that was backed up to AD DS. Also, if you are using the recovery key in the pre-boot environment, ensure that the drive is formatted by using the NTFS, FAT16, or FAT32 file system.
 
       - question: |
           Why am I unable to save my recovery key to my USB flash drive?
@@ -92,7 +92,7 @@ sections:
       - question: |
           How do I "lock" a data drive?
         answer: |
-          Both fixed and removable data drives can be locked by using the Manage-bde command-line tool and the –lock command.
+          Both fixed and removable data drives can be locked by using the Manage-bde command-line tool and the -lock command.
           
           > [!NOTE]
           > Ensure all data is saved to the drive before locking it. Once locked, the drive will become inaccessible.
@@ -115,7 +115,7 @@ sections:
           - With TPM: Yes, it is supported.
           - Without  TPM: Yes, it is supported (with password protector).
           
-          BitLocker is also supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2016, Windows Server 2012 R2, or Windows Server 2012.
+          BitLocker is also supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2016, Windows Server 2012 R2, or Windows Server 2012.
           
       - question: |
           Can I use BitLocker with virtual machines (VMs)?

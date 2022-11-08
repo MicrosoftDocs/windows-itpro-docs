@@ -22,8 +22,8 @@ metadata:
 title: BitLocker Overview and Requirements FAQ
 summary: |
   **Applies to**
-  -   Windows 10
-  -   Windows 11
+  - Windows 10
+  - Windows 11
   
 
 sections:
@@ -40,7 +40,7 @@ sections:
           You can use BitLocker to encrypt the entire contents of a data drive. You can use Group Policy to require that BitLocker be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with a variety of unlock methods for data drives, and a data drive supports multiple unlock methods.
           
       - question: Does BitLocker support multifactor authentication?
-        answer: Yes, BitLocker supports multifactor authentication for operating system drives. If you enable BitLocker on a computer that has a TPM version 1.2 or later, you can use additional forms of authentication with the TPM protection.
+        answer: Yes, BitLocker supports multifactor authentication for operating system drives. If you enable BitLocker on a computer that has a TPM version 1.2 or later, you can use additional forms of authentication with the TPM protection.
 
       - question: What are the BitLocker hardware and software requirements?
         answer: |
@@ -73,11 +73,11 @@ sections:
         answer: |
           Contact the computer manufacturer to request a Trusted Computing Group (TCG)-compliant BIOS or UEFI boot firmware that meets the following requirements:
           
-          -   It is compliant with the TCG standards for a client computer.
-          -   It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer.
+          - It is compliant with the TCG standards for a client computer.
+          - It has a secure update mechanism to help prevent a malicious BIOS or boot firmware from being installed on the computer.
           
       - question: What credentials are required to use BitLocker?
         answer: To turn on, turn off, or change configurations of BitLocker on operating system and fixed data drives, membership in the local **Administrators** group is required. Standard users can turn on, turn off, or change configurations of BitLocker on removable data drives.
 
       - question: What is the recommended boot order for computers that are going to be BitLocker-protected?
-        answer: You should configure the startup options of your computer to have the hard disk drive first in the boot order, before any other drives such as CD/DVD drives or USB drives. If the hard disk is not first and you typically boot from hard disk, then a boot order change may be detected or assumed when removable media is found during boot. The boot order typically affects the system measurement that is verified by BitLocker and a change in boot order will cause you to be prompted for your BitLocker recovery key. For the same reason, if you have a laptop with a docking station, ensure that the hard disk drive is first in the boot order both when docked and undocked. 
+        answer: You should configure the startup options of your computer to have the hard disk drive first in the boot order, before any other drives such as CD/DVD drives or USB drives. If the hard disk is not first and you typically boot from hard disk, then a boot order change may be detected or assumed when removable media is found during boot. The boot order typically affects the system measurement that is verified by BitLocker and a change in boot order will cause you to be prompted for your BitLocker recovery key. For the same reason, if you have a laptop with a docking station, ensure that the hard disk drive is first in the boot order both when docked and undocked. 

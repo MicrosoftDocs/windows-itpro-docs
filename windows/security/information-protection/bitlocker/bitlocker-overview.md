@@ -1,16 +1,16 @@
 ---
 title: BitLocker
 description: This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-ms.author: dansimp
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
+author: frankroj
 manager: aaroncz
 ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 01/26/2018
+ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
@@ -40,21 +40,21 @@ Data on a lost or stolen computer is vulnerable to unauthorized access, either b
 
 There are two additional tools in the Remote Server Administration Tools which you can use to manage BitLocker.
 
--   **BitLocker Recovery Password Viewer**. The BitLocker Recovery Password Viewer enables you to locate and view BitLocker Drive Encryption recovery passwords that have been backed up to Active Directory Domain Services (AD DS). You can use this tool to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
+- **BitLocker Recovery Password Viewer**. The BitLocker Recovery Password Viewer enables you to locate and view BitLocker Drive Encryption recovery passwords that have been backed up to Active Directory Domain Services (AD DS). You can use this tool to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
     By using this tool, you can examine a computer object's **Properties** dialog box to view the corresponding BitLocker recovery passwords. Additionally, you can right-click a domain container and then search for a BitLocker recovery password across all the domains in the Active Directory forest. To view recovery passwords, you must be a domain administrator, or you must have been delegated permissions by a domain administrator.
 
--   **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the
+- **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the
 BitLocker control panel, and they are appropriate to be used for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker-protected drive cannot be unlocked normally or by using the recovery console.
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
 To find out what's new in BitLocker for Windows, such as support for the XTS-AES encryption algorithm, see the [BitLocker](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
- 
+ 
 ## System requirements
 
 BitLocker has the following hardware requirements:
 
-For BitLocker to use the system integrity check provided by a TPM, the computer must have TPM 1.2 or later versions. If your computer does not have a TPM, enabling BitLocker makes it mandatory for you to save a startup key on a removable device, such as a USB flash drive.
+For BitLocker to use the system integrity check provided by a TPM, the computer must have TPM 1.2 or later versions. If your computer does not have a TPM, enabling BitLocker makes it mandatory for you to save a startup key on a removable device, such as a USB flash drive.
 
 A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for TCG-specified Static Root of Trust Measurement. A computer without a TPM does not require TCG-compliant firmware.
 
@@ -70,8 +70,8 @@ The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support th
 
 The hard disk must be partitioned with at least two drives:
 
--   The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
--   The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker is not enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. We recommend that system drive be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space.
+- The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
+- The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker is not enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. We recommend that system drive be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space.
 
 When installed on a new computer, Windows automatically creates the partitions that are required for BitLocker.
 
@@ -95,7 +95,7 @@ When installing the BitLocker optional component on a server, you will also need
 | [BitLocker Group Policy settings](bitlocker-group-policy-settings.md) | This topic describes the function, location, and effect of each group policy setting that is used to manage BitLocker. |
 | [BCD settings and BitLocker](bcd-settings-and-bitlocker.md) | This topic describes the BCD settings that are used by BitLocker.|
 | [BitLocker Recovery Guide](bitlocker-recovery-guide-plan.md)| This topic describes how to recover BitLocker keys from AD DS. |
-| [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md)| This detailed guide helps you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device’s configuration. |
+| [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md)| This detailed guide helps you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device's configuration. |
 | [Troubleshoot BitLocker](troubleshoot-bitlocker.md) | This guide describes the resources that can help you troubleshoot BitLocker issues, and provides solutions for several common BitLocker issues. |
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic describes how to protect CSVs and SANs with BitLocker.|
 | [Enabling Secure Boot and BitLocker Device Encryption on Windows IoT Core](/windows/iot-core/secure-your-device/SecureBootAndBitLocker) | This topic describes how to use BitLocker with Windows IoT Core |
