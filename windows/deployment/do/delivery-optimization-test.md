@@ -16,7 +16,7 @@ manager: naengler
 
 ## Overview
 
-Delivery Optimization is a powerful and useful tool to help enterprises manage bandwidth usage for downloading Microsoft content. It's a solution designed to be used in large-scale environments with large numbers of devices, various content sizes, etc. Delivery Optimization is native to Win10+ and provides default configuration to get the most out of the typical customer environment. It is used to deliver many different types of content, so Microsoft customers enjoy the best possible download experience for their environment. There are three components to Delivery Optimization, 1) HTTP downloader, 2) Peer-to-peer (P2P) cloud technology, and 3) Microsoft Connected Cache. One of the most powerful advantages of using Delivery Optimization is the ability to fine-tune settings that empower users to dial in Microsoft content delivery to meet the needs of specific environments.
+Delivery Optimization is a powerful and useful tool to help enterprises manage bandwidth usage for downloading Microsoft content. It's a solution designed to be used in large-scale environments with large numbers of devices, various content sizes, etc. Delivery Optimization is native to Win10+ and provides default configuration to get the most out of the typical customer environment. It's used to deliver many different types of content, so Microsoft customers enjoy the best possible download experience for their environment. There are three components to Delivery Optimization, 1) HTTP downloader, 2) Peer-to-peer (P2P) cloud technology, and 3) Microsoft Connected Cache. One of the most powerful advantages of using Delivery Optimization is the ability to fine-tune settings that empower users to dial in Microsoft content delivery to meet the needs of specific environments.
 
 ## Monitoring Value
 
@@ -35,7 +35,7 @@ The focus of the testing scenarios in this article is primarily centered on demo
 Several elements that influence overall peering, using Delivery Optimization. The most common, impactful environment factors should be considered.
 
 * **The number of files in the cache and** **the** **number of devices have a big effect on overall peering.** There's a set number of files available for peering at a time, from each client, so the peering device may not be serving a particular file.
-* **File size** **and** **internet connection** **reliability matter.** There's a Delivery Optimization setting to determine the minimum file size to use P2P. In addition, internet connection must be open and reliable enough to let the Delivery Optimization client make cloud service API calls and download metadata files prior to starting a content file download
+* **File size** **and** **internet connection** **reliability matter.** There's a Delivery Optimization setting to determine the minimum file size to use P2P. In addition, an internet connection must be open and reliable enough to let the Delivery Optimization client make cloud service API calls and download metadata files before starting a file download.
 * **Delivery Optimization Policies can play a role.** In general, it's important to familiarize yourself with the Delivery Optimization settings and defaults [Delivery Optimization reference - Windows Deployment | Microsoft Docs](waas-delivery-optimization-reference.md).
 
 ### Delivery Optimization is a Hybrid P2P Platform
@@ -68,7 +68,7 @@ Hardware:
 * Ensure all Store apps are up to date
 * Set Delivery Optimization Download mode = '2'
 * Set Delivery Optimization GroupID = 'GUID'. A GUID is a required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
-* Run '`Enable-DeliveryOptimizationVerboseLogs’ to enable verbose logging.
+* Run '`Enable-DeliveryOptimizationVerboseLogs’ to enable verbose logging
 * **If Windows 11 devices** set 'Restrict Peer Selection' policy to '0-NAT'. The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
 
 > [!NOTE]
@@ -80,7 +80,7 @@ The following set of instructions will be used for each machine:
 
 1. Clear the DO cache: ‘Delete-DeliveryOptimizationCache’
 2. Open MS Store and search for 'Asphalt Legends 9'. Select ‘Get’ to initiate the download of the content (Content size: 3.4 GB).
-3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'.
+3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'
 
 **On machine #1**
 
@@ -144,7 +144,7 @@ Hardware:
 
 * Three Azure Virtual Machines running Windows 10 (21H2)
 * 8-GB RAM / 127-GB Disk
-* Network – ensure the test devices are connected to the same network, one that is representative of the corporate network
+* Network – ensure the test devices are connected to the same network, one that is representative of the corporate network.
 
 Apply Policy settings/Windows configurations on each machine:
 
@@ -160,7 +160,7 @@ The following set of instructions will be used for each machine:
 
 1. Clear the DO cache: ‘Delete-DeliveryOptimizationCache’
 2. Open MS Store and search for 'Asphalt Legends 9'. Select ‘Get’ to initiate the download of the content (Content size: 3.4 GB).
-3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'.
+3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'
 
 **On machine #1:**
 
@@ -188,10 +188,10 @@ The following set of instructions will be used for each machine:
 
 **Observations**
 
-* 'PercentPeerCaching' is 99.8%.
-* There are still 'BytesFromHttp' source being used.
-* One peer was found.
-* All peering was done from device on the LAN, as shown with 'BytesFromLanPeers'.
+* 'PercentPeerCaching' is 99.8%
+* There are still 'BytesFromHttp' source being used
+* One peer was found
+* All peering was done from device on the LAN, as shown with 'BytesFromLanPeers'
 
 **On machine #3:**
 
@@ -209,7 +209,7 @@ The following set of instructions will be used for each machine:
 
 ## Peer sourcing observations for all machines in the test group
 
-As mentioned, the distributed nature of the Delivery Optimization technology is obvious when you re-run the ‘Get-DeliveryOptimizationStatus’ cmdlet on each of the test machines. For each, there's a new value populated for the ‘BytesToLanPeers’ field. This demonstrates that as more peers become available, the requests to download bytes are distributed across the peering group and act as the source for the peering content. Each peer plays a role in servicing the other.
+As mentioned, the distributed nature of the Delivery Optimization technology is obvious when you rerun the ‘Get-DeliveryOptimizationStatus’ cmdlet on each of the test machines. For each, there's a new value populated for the ‘BytesToLanPeers’ field. This demonstrates that as more peers become available, the requests to download bytes are distributed across the peering group and act as the source for the peering content. Each peer plays a role in servicing the other.
   
 **Output:** Machine 1
 
