@@ -16,6 +16,7 @@ appliesto:
   - ✅ <b>Windows Server 2016 or later</b>
   - ✅ <b>Hybrid or On-Premises deployment</b>
   - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
 

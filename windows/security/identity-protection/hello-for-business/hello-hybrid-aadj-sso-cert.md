@@ -16,6 +16,7 @@ appliesto:
   - ✅ <b>Azure AD-join</b>
   - ✅ <b>Hybrid Deployment</b>
   - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 
 # Using Certificates for AADJ On-premises Single-sign On

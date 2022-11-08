@@ -15,6 +15,7 @@ ms.date: 07/29/2022
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # PIN reset
