@@ -13,6 +13,7 @@ ms.date: 08/19/2018
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Azure AD Join Single Sign-on Deployment
 
