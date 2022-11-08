@@ -36,7 +36,7 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 
 * **The number of files in the cache and** **the** **number of devices have a big effect on overall peering.** There's a set number of files available for peering at a time, from each client, so the peering device may not be serving a particular file.
 * **File size** **and** **internet connection** **reliability matter.** There's a Delivery Optimization setting to determine the minimum file size to use P2P. In addition, internet connection must be open and reliable enough to let the Delivery Optimization client make cloud service API calls and download metadata files prior to starting a content file download
-* **Delivery Optimization Policies can play a role.** In general, it's important to familiarize yourself with the Delivery Optimization settings and defaults [Delivery Optimization reference - Windows Deployment | Microsoft Docs](https://docs.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-reference).
+* **Delivery Optimization Policies can play a role.** In general, it's important to familiarize yourself with the Delivery Optimization settings and defaults [Delivery Optimization reference - Windows Deployment | Microsoft Docs](waas-delivery-optimization-reference).
 
 ### Delivery Optimization is a Hybrid P2P Platform
 
@@ -72,7 +72,7 @@ Hardware:
 * **If Windows 11 devices** set 'Restrict Peer Selection' policy to '0-NAT'. The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
 
 > [!NOTE]
-> Delivery Optimization PowerShell available [cmdlets](https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization-setup#windows-powershell-cmdlets).
+> Delivery Optimization PowerShell available [cmdlets](waas-delivery-optimization-setup#windows-powershell-cmdlets).
 
 ### Test Instructions
 
