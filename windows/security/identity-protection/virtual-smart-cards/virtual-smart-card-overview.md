@@ -12,6 +12,7 @@ ms.date: 10/13/2017
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows Server 2016</b>
+ms.technology: itpro-security
 ---
 
 # Virtual Smart Card Overview
