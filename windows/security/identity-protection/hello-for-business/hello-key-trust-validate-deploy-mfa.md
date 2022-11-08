@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>On-premises deployment</b>
   - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Validate and Deploy Multifactor Authentication (MFA)
 
