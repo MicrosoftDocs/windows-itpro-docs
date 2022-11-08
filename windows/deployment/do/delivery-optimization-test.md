@@ -50,9 +50,9 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 
 ### Scenario 1: Basic Setup
 
-#### Goal: Demonstrate how Delivery Optimization peer-to-peer technology works using two machines, in a controlled test environment
+**Goal:** Demonstrate how Delivery Optimization peer-to-peer technology works using two machines, in a controlled test environment
 
-### Test Machine Setup
+#### Test Machine Setup
 
 Number of machines used: 2
 
@@ -74,7 +74,7 @@ Hardware:
 > [!NOTE]
 > Delivery Optimization PowerShell available [cmdlets](waas-delivery-optimization-setup.md)
 
-### Test Instructions
+#### Test Instructions
 
 The following set of instructions will be used for each machine:
 
@@ -134,9 +134,9 @@ The following set of instructions will be used for each machine:
 
 ### Scenario 2: Advance Setup
 
-#### Goal: Demonstrate how Delivery Optimization peer-to-peer technology works in a non-controlled environment, expanding to three machines
+**Goal:** Demonstrate how Delivery Optimization peer-to-peer technology works in a non-controlled environment, expanding to three machines
 
-### Test Machine Setup
+#### Test Machine Setup
 
 Number of machines used: 3
 
@@ -154,7 +154,7 @@ Apply Policy settings/Windows configurations on each machine:
 * Set Delivery Optimization policy 'Delay foreground download from http = 60 (secs)
 * Run '`Enable-DeliveryOptimizationVerboseLogs’ to enable logging
 
-### Testing Instructions
+#### Testing Instructions
 
 The following set of instructions will be used for each machine:
 
