@@ -17,7 +17,11 @@ ms.technology: itpro-security
 
 # Overview of BitLocker Device Encryption in Windows
 
-(*Applies to: Windows 10, Windows 11, Windows Server 2016 and above*)
+*Applies to:*
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article explains how BitLocker Device Encryption can help protect data on devices running Windows. For a general overview and list of articles about BitLocker, see [BitLocker](bitlocker-overview.md).
 

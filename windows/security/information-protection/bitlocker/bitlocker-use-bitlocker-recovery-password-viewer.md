@@ -18,7 +18,7 @@ ms.technology: itpro-security
 
 # BitLocker: Use BitLocker Recovery Password Viewer
 
-**Applies to**
+*Applies to:*
 
 - Windows 10
 - Windows 11

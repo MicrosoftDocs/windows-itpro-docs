@@ -21,9 +21,10 @@ metadata:
   ms.custom: bitlocker
 title: BitLocker Overview and Requirements FAQ
 summary: |
-  **Applies to**
+  *Applies to:*
   - Windows 10
   - Windows 11
+  - Windows Server 2016 and above
   
 
 sections:

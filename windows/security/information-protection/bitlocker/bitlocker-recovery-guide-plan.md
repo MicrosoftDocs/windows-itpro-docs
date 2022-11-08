@@ -18,11 +18,11 @@ ms.custom: bitlocker
 
 # BitLocker recovery guide
 
-**Applies to:**
+*Applies to:*
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and later
+- Windows Server 2016 and above
 
 This article describes how to recover BitLocker keys from AD DS.
 

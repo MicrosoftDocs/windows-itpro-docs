@@ -18,7 +18,7 @@ ms.technology: itpro-security
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
 
-**Applies to**
+*Applies to:*
 
 - Windows 10
 - Windows 11
@@ -87,7 +87,7 @@ This command encrypts the drive using the TPM as the default protector. If you a
 ```
 ### Using manage-bde with data volumes
 
-Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or you can choose to add additional protectors to the volume first. We recommend that you add at least one primary protector and a recovery protector to a data volume.
+Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde.exe -on <drive letter>` or you can choose to add additional protectors to the volume first. We recommend that you add at least one primary protector and a recovery protector to a data volume.
 
 A common protector for a data volume is the password protector. In the example below, we add a password protector to the volume and turn on BitLocker.
 
@@ -103,7 +103,7 @@ You may experience a problem that damages an area of a hard disk on which BitLoc
 The BitLocker Repair Tool (Repair-bde) can be used to access encrypted data on a severely damaged hard disk if the drive was encrypted by using BitLocker. Repair-bde can reconstruct critical parts of the drive and salvage recoverable data as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive has become corrupt, you must be able to supply a backup key package in addition to the recovery password or recovery key. This key package is backed up in Active Directory Domain Services (AD DS) if you used the default setting for AD DS backup. With this key package and either the recovery password or recovery key, you can decrypt portions of a BitLocker-protected drive if the disk is corrupted. Each key package will work only for a drive that has the corresponding drive identifier. You can use the BitLocker Recovery Password Viewer to obtain this key package from AD DS.
 
 > [!TIP]
-> If you aren't backing up recovery information to AD DS or if you want to save key packages alternatively, you can use the command `manage-bde -KeyPackage` to generate a key package for a volume.
+> If you aren't backing up recovery information to AD DS or if you want to save key packages alternatively, you can use the command `manage-bde.exe -KeyPackage` to generate a key package for a volume.
  
 The Repair-bde command-line tool is intended for use when the operating system doesn't start or when you can't start the BitLocker Recovery Console. Use Repair-bde if the following conditions are true:
 

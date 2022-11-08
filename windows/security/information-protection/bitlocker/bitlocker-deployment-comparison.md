@@ -15,7 +15,11 @@ ms.technology: itpro-security
 
 # BitLocker deployment comparison
 
-(*Applies to: Windows 10, Windows 11, Windows Server 2016 and above*)
+*Applies to:*
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article depicts the BitLocker deployment comparison chart.
 

@@ -16,8 +16,9 @@ ms.technology: itpro-security
 
 # Protecting cluster shared volumes and storage area networks with BitLocker
 
-**Applies to**
-- Windows Server 2016
+*Applies to:*
+
+- Windows Server 2016 and above
 
 This article describes the procedure to protect cluster shared volumes (CSVs) and storage area networks (SANs) by using BitLocker.
 

@@ -16,7 +16,11 @@ ms.technology: itpro-security
 
 # BitLocker: How to deploy on Windows Server 2012 and later
 
-> Applies to: Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019
+*Applies to:*
+
+- Windows Server 2012
+- Windows Server 2012 R2
+- Windows Server 2016 and above
 
 This article explains how to deploy BitLocker on Windows Server 2012 and later versions. For all Windows Server editions, BitLocker can be installed using Server Manager or Windows PowerShell cmdlets. BitLocker requires administrator privileges on the server on which it's to be installed.
 
