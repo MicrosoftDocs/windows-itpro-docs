@@ -7,13 +7,13 @@ metadata:
   ms.sitesec: library
   ms.pagetype: security
   ms.localizationpriority: medium
-  author: dansimp
-  ms.author: dansimp
+  author: frankroj
+  ms.author: frankroj
   manager: aaroncz
   audience: ITPro
   ms.collection: M365-security-compliance
   ms.topic: faq
-  ms.date: 02/28/2019
+  ms.date: 11/08/2022
   ms.reviewer: 
   ms.custom: bitlocker
 title: BitLocker Network Unlock FAQ

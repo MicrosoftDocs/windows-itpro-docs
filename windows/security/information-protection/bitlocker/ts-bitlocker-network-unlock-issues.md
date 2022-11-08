@@ -11,6 +11,7 @@ ms.reviewer: kaushika
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.custom: bitlocker
+ms.date: 11/08/2022
 ---
 
 # BitLocker network unlock: known issues
