@@ -85,7 +85,7 @@ The certificate template is configured to supersede all the certificate template
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
-Sign-in to the certificate authority or management workstations with an _enterprise administrator_ equivalent credentials.
+Sign-in to the certificate authority or management workstations with _enterprise administrator_ equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 2. Expand the parent node from the navigation pane.
