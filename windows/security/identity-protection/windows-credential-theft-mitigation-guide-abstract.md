@@ -12,6 +12,7 @@ ms.date: 04/19/2017
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # Windows Credential Theft Mitigation Guide Abstract
