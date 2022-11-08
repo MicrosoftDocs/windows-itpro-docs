@@ -13,6 +13,7 @@ ms.date: 07/26/2022
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Windows Hello for Business Videos
 ## Overview of Windows Hello for Business and Features

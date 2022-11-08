@@ -4,7 +4,7 @@ description: Best practices, security considerations and more for the security p
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/04/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # SMBv1 Microsoft network server: Digitally sign communications (if client agrees)
