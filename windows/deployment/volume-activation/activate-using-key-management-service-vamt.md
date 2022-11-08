@@ -1,12 +1,12 @@
 ---
 title: Activate using Key Management Service (Windows 10)
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: How to activate using Key Management Service in Windows 10.
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.localizationpriority: medium
-ms.date: 10/16/2017
+ms.date: 11/07/2022
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-fundamentals
@@ -14,32 +14,26 @@ ms.technology: itpro-fundamentals
 
 # Activate using Key Management Service
 
-**Applies to**
+(*Applies to: Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*)
 
-- Windows 10
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Server 2012 R2
-- Windows Server 2012
-- Windows Server 2008 R2
+> [!TIP]
+> Are you looking for information on retail activation?
+>
+> - [Activate Windows](https://support.microsoft.com/help/12440/)
+> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
-**Looking for retail activation?**
+There are three possible scenarios for volume activation of Windows 10 or Windows Server 2012 R2 by using a Key Management Service (KMS) host:
 
-- [Get Help Activating Microsoft Windows 10](https://support.microsoft.com/help/12440/)
-- [Get Help Activating Microsoft Windows 7 or Windows 8.1 ](https://go.microsoft.com/fwlink/p/?LinkId=618644)
-
-There are three possible scenarios for volume activation of Windows 10 or Windows Server 2012 R2 by using a Key Management Service (KMS) host:
-
-- Host KMS on a computer running Windows 10
-- Host KMS on a computer running Windows Server 2012 R2
+- Host KMS on a computer running Windows 10
+- Host KMS on a computer running Windows Server 2012 R2
 - Host KMS on a computer running an earlier version of Windows
 
 Check out [Windows 10 Volume Activation Tips](/archive/blogs/askcore/windows-10-volume-activation-tips).
 
-## Key Management Service in Windows 10
+## Key Management Service in Windows 10
 
-Installing a KMS host key on a computer running Windows 10 allows you to activate other computers running Windows 10 against this KMS host and earlier versions of the client operating system, such as Windows 8.1 or Windows 7.
+Installing a KMS host key on a computer running Windows 10 allows you to activate other computers running Windows 10 against this KMS host and earlier versions of the client operating system, such as Windows 8.1 or Windows 7.
+
 Clients locate the KMS server by using resource records in DNS, so some configuration of DNS may be required. This scenario can be beneficial if your organization uses volume activation for clients and MAK-based activation for a smaller number of servers.
 To enable KMS functionality, a KMS key is installed on a KMS host; then, the host is activated over the Internet or by phone using Microsoft activation services.
 
@@ -55,11 +49,11 @@ To activate, use the slmgr.vbs command. Open an elevated command prompt and run 
   3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
   4. Run `slmgr.vbs /atp \<confirmation ID\>`.
 
-For more information, see the information for Windows 7 in [Deploy KMS Activation](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn502531(v=ws.11)).
+For more information, see the information for Windows 7 in [Deploy KMS Activation](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn502531(v=ws.11)).
 
-## Key Management Service in Windows Server 2012 R2
+## Key Management Service in Windows Server 2012 R2
 
-Installing a KMS host key on a computer running Windows Server allows you to activate computers running Windows Server 2012 R2, Windows Server 2008 R2, Windows Server 2008, Windows 10, Windows 8.1, Windows 7, and Windows Vista.
+Installing a KMS host key on a computer running Windows Server allows you to activate computers running Windows Server 2012 R2, Windows Server 2008 R2, Windows Server 2008, Windows 10, Windows 8.1, Windows 7, and Windows Vista.
 
 > [!NOTE]
 > You cannot install a client KMS key into the KMS in Windows Server.
@@ -67,9 +61,9 @@ Installing a KMS host key on a computer running Windows Server allows you to act
 This scenario is commonly used in larger organizations that do not find the overhead of using a server a burden.
 
 > [!NOTE]
-> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](/troubleshoot/windows-server/deployment/error-0xc004f015-activate-windows-10).
+> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](/troubleshoot/windows-server/deployment/error-0xc004f015-activate-windows-10).
 
-### Configure KMS in Windows Server 2012 R2
+### Configure KMS in Windows Server 2012 R2
 
 1. Sign in to a computer running Windows Server 2012 R2 with an account that has local administrative credentials.
 2. Launch Server Manager.
@@ -115,26 +109,26 @@ Now that the KMS host is configured, it will begin to listen for activation requ
 
 ## Verifying the configuration of Key Management Service
 
-You can verify KMS volume activation from the KMS host server or from the client computer. KMS volume activation requires a minimum threshold of 25 computers before activation requests will be processed. The verification process described here will increment the activation count each time a client computer contacts the KMS host, but unless the activation threshold is reached, the verification will take the form of an error message rather than a confirmation message.
+You can verify KMS volume activation from the KMS host server or from the client computer. KMS volume activation requires a minimum threshold of 25 computers before activation requests will be processed. The verification process described here will increment the activation count each time a client computer contacts the KMS host, but unless the activation threshold is reached, the verification will take the form of an error message rather than a confirmation message.
 
 > [!NOTE]
-> If you configured Active Directory-based activation before configuring KMS activation, you must use a client computer that will not first try to activate itself by using Active Directory-based activation. You could use a workgroup computer that is not joined to a domain or a computer running Windows 7 or Windows Server 2008 R2.
+> If you configured Active Directory-based activation before configuring KMS activation, you must use a client computer that will not first try to activate itself by using Active Directory-based activation. You could use a workgroup computer that is not joined to a domain or a computer running Windows 7 or Windows Server 2008 R2.
 
 To verify that KMS volume activation works, complete the following steps:
 
 1. On the KMS host, open the event log and confirm that DNS publishing is successful.
-2. On a client computer, open a Command Prompt window, type **Slmgr.vbs /ato**, and then press ENTER.
+2. On a client computer, open a Command Prompt window, type `Slmgr.vbs /ato`, and then press ENTER.
 
-   The **/ato** command causes the operating system to attempt activation by using whichever key has been installed in the operating system. The response should show the license state and detailed Windows version information.
-3. On a client computer or the KMS host, open an elevated Command Prompt window, type **Slmgr.vbs /dlv**, and then press ENTER.
+   The `/ato` command causes the operating system to attempt activation by using whichever key has been installed in the operating system. The response should show the license state and detailed Windows version information.
+3. On a client computer or the KMS host, open an elevated Command Prompt window, type `Slmgr.vbs /dlv`, and then press ENTER.
 
-   The **/dlv** command displays the detailed licensing information. The response should return an error that states that the KMS activation count is too low. This confirms that KMS is functioning correctly, even though the client has not been activated.
+   The `/dlv` command displays the detailed licensing information. The response should return an error that states that the KMS activation count is too low. This confirms that KMS is functioning correctly, even though the client has not been activated.
 
 For more information about the use and syntax of slmgr.vbs, see [Slmgr.vbs Options](/windows-server/get-started/activation-slmgr-vbs-options).
 
 ## Key Management Service in earlier versions of Windows
 
-If you have already established a KMS infrastructure in your organization for an earlier version of Windows, you may want to continue using that infrastructure to activate computers running Windows 10 or Windows Server 2012 R2. Your existing KMS host must be running Windows 7 or later. To upgrade your KMS host, complete the following steps:
+If you have already established a KMS infrastructure in your organization for an earlier version of Windows, you may want to continue using that infrastructure to activate computers running Windows 10 or Windows Server 2012 R2. Your existing KMS host must be running Windows 7 or later. To upgrade your KMS host, complete the following steps:
 
 1. Download and install the correct update for your current KMS host operating system. Restart the computer as directed.
 2. Request a new KMS host key from the Volume Licensing Service Center.
@@ -143,6 +137,6 @@ If you have already established a KMS infrastructure in your organization for an
 
 For detailed instructions, see [Update that enables Windows 8.1 and Windows 8 KMS hosts to activate a later version of Windows](https://go.microsoft.com/fwlink/p/?LinkId=618265) and [Update that enables Windows 7 and Windows Server 2008 R2 KMS hosts to activate Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=626590).
 
-## See also
+## Related articles
 
 - [Volume Activation for Windows 10](volume-activation-windows-10.md)

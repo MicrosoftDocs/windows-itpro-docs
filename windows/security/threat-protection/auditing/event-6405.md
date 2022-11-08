@@ -2,7 +2,7 @@
 title: 6405(-) BranchCache %2 instance(s) of event id %1 occurred. (Windows 10)
 description: Describes security event 6405(-) BranchCache %2 instance(s) of event id %1 occurred.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,7 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # 6405(-): BranchCache: %2 instance(s) of event id %1 occurred.

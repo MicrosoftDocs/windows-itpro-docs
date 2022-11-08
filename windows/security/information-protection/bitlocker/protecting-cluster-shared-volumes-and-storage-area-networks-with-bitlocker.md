@@ -11,6 +11,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/08/2022
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # Protecting cluster shared volumes and storage area networks with BitLocker

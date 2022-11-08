@@ -10,6 +10,7 @@ manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.technology: itpro-security
 ---
 
 # General guidance and best practices for Windows Information Protection (WIP)

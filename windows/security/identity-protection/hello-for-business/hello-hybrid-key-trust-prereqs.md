@@ -14,6 +14,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites
 
