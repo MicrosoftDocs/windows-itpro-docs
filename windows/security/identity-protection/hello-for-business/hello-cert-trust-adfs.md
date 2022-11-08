@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>On-premises deployments</b>
   - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services - Certificate Trust
 
