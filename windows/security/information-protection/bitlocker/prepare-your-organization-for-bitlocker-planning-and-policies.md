@@ -12,6 +12,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # Prepare your organization for BitLocker: Planning and policies

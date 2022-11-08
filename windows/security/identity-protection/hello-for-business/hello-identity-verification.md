@@ -12,6 +12,7 @@ ms.collection:
 ms.topic: article
 localizationpriority: medium
 ms.date: 2/15/2022
+ms.technology: itpro-security
 ---
 
 # Windows Hello for Business Deployment Prerequisite Overview

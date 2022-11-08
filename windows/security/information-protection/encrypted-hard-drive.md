@@ -7,6 +7,7 @@ ms.author: dansimp
 ms.prod: windows-client
 author: dulcemontemayor
 ms.date: 04/02/2019
+ms.technology: itpro-security
 ---
 
 # Encrypted Hard Drive
