@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
 ms.custom: intro-overview
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 21H2
