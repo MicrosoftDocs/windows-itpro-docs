@@ -3,11 +3,12 @@ title: Managing CI Policies and Tokens with CiTool
 description: Learn how to use Policy Commands, Token Commands, and Miscellaneous Commands in CiTool
 author: valemieux
 ms.author: jogeurte
-ms.service: security
 ms.reviewer: jogeurte
 ms.topic: how-to
 ms.date: 08/07/2022
 ms.custom: template-how-to
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Manage Windows Defender Application Control (WDAC) Policies with CI Tool

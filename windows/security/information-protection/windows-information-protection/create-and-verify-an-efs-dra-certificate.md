@@ -10,6 +10,7 @@ ms.reviewer: rafals
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 07/15/2022
+ms.technology: itpro-security
 ---
 
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
