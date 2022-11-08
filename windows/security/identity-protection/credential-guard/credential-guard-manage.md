@@ -20,6 +20,7 @@ appliesto:
   - ✅ <b>Windows Server 2016</b>
   - ✅ <b>Windows Server 2019</b>
   - ✅ <b>Windows Server 2022</b>
+ms.technology: itpro-security
 ---
 # Manage Windows Defender Credential Guard
 
