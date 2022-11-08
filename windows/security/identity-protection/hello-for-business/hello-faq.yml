@@ -72,7 +72,7 @@ sections:
 
       - question: How to delete Windows Hello for Business container on a device?
         answer: |  
-          You can effectively disable Windows Hello for Business by launching `certutil.exe -deleteHelloContainer` on the end device under a user account. Reboot is required.
+          You can effectively disable Windows Hello for Business by launching `certutil.exe -deleteHelloContainer` on the end device under a user account, and then restarting the device.
 
       - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
