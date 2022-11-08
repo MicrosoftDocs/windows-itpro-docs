@@ -10,6 +10,7 @@ ms.collection:
   - M365-security-compliance
 ms.topic: conceptual
 ms.date: 12/27/2021
+ms.technology: itpro-security
 ---
 
 # TPM fundamentals
