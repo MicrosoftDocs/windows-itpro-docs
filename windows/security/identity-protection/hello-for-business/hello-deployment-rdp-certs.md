@@ -16,6 +16,7 @@ appliesto:
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Key trust</b>
   - ✅ <b>Cloud Kerberos trust</b>
+ms.technology: itpro-security
 ---
 
 # Deploy Certificates to Key Trust and Cloud Kerberos Trust Users to Enable RDP
