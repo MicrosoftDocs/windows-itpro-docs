@@ -170,7 +170,7 @@ To verify the BIOS mode, use the System Information application. To do this, fol
 1. If the **BIOS Mode** setting is **Legacy**, you have to switch the BIOS into **UEFI** or **EFI** mode. The steps for doing this are specific to the device.
 
    > [!NOTE]
-   > If the device supports only Legacy mode, you cannot use Intune to manage BitLocker device encryption on the device.
+   > If the device supports only Legacy mode, you cannot use Intune to manage BitLocker Device Encryption on the device.
 
 ## <a id="issue-6"></a>Error message: The UEFI variable 'SecureBoot' could not be read
 
