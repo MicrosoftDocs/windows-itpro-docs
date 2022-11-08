@@ -72,7 +72,7 @@ Hardware:
 * **If Windows 11 devices** set 'Restrict Peer Selection' policy to '0-NAT'. The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
 
 > [!NOTE]
-> Delivery Optimization PowerShell available [cmdlets](waas-delivery-optimization-setup.md#windows-powershell-cmdlets).
+> Delivery Optimization PowerShell available [cmdlets](waas-delivery-optimization-monitor.md)
 
 ### Test Instructions
 
