@@ -44,7 +44,6 @@ Servicing stack updates improve the reliability of the update process to mitigat
 
 Beginning with the February 2021 LCU, microsoft will publish all future cumulative updates and SSUs for Windows 10, version 2004 and above together as one cumulative monthly update to the normal release category in WSUS.
 
-
 ## Is there any special guidance?
 
 Microsoft recommends you install the latest servicing stack updates for your operating system before installing the latest cumulative update.
