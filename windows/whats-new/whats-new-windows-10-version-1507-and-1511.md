@@ -9,6 +9,7 @@ ms.author: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, versions 1507 and 1511 for IT Pros
