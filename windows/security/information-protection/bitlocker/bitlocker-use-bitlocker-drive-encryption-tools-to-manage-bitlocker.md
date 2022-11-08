@@ -13,6 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
@@ -29,7 +30,7 @@ BitLocker Drive Encryption Tools include the command-line tools manage-bde and r
 
 Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the BitLocker control panel and are appropriate to use for automated deployments and other scripting scenarios.
 
-Repair-bde is a special circumstance tool that is provided for disaster recovery scenarios in which a BitLocker protected drive cannot be unlocked normally or using the recovery console.
+Repair-bde is a special circumstance tool that is provided for disaster recovery scenarios in which a BitLocker protected drive can't be unlocked normally or using the recovery console.
 
 1.  [Manage-bde](#bkmk-managebde)
 2.  [Repair-bde](#bkmk-repairbde)
@@ -73,20 +74,20 @@ manage-bde -protectors -add C: -pw -sid <user or group>
 
 This command will require you to enter and then confirm the password protector before adding them to the volume. With the protectors enabled on the volume, you can then turn on BitLocker.
 
-On computers with a TPM, it is possible to encrypt the operating system volume without any defined protectors using manage-bde. Use this command:
+On computers with a TPM, it's possible to encrypt the operating system volume without any defined protectors using manage-bde. Use this command:
 
 ```powershell
 manage-bde -on C:
 ```
 
-This command encrypts the drive using the TPM as the default protector. If you are not sure if a TPM protector is available, to list the protectors available for a volume, run the following command:
+This command encrypts the drive using the TPM as the default protector. If you aren't sure if a TPM protector is available, to list the protectors available for a volume, run the following command:
 
 ```powershell
  manage-bde -protectors -get <volume>
 ```
 ### Using manage-bde with data volumes
 
-Data volumes use the same syntax for encryption as operating system volumes but they do not require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or you can choose to add additional protectors to the volume first. We recommend that you add at least one primary protector and a recovery protector to a data volume.
+Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or you can choose to add additional protectors to the volume first. We recommend that you add at least one primary protector and a recovery protector to a data volume.
 
 A common protector for a data volume is the password protector. In the example below, we add a password protector to the volume and turn on BitLocker.
 
@@ -102,20 +103,20 @@ You may experience a problem that damages an area of a hard disk on which BitLoc
 The BitLocker Repair Tool (Repair-bde) can be used to access encrypted data on a severely damaged hard disk if the drive was encrypted by using BitLocker. Repair-bde can reconstruct critical parts of the drive and salvage recoverable data as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive has become corrupt, you must be able to supply a backup key package in addition to the recovery password or recovery key. This key package is backed up in Active Directory Domain Services (AD DS) if you used the default setting for AD DS backup. With this key package and either the recovery password or recovery key, you can decrypt portions of a BitLocker-protected drive if the disk is corrupted. Each key package will work only for a drive that has the corresponding drive identifier. You can use the BitLocker Recovery Password Viewer to obtain this key package from AD DS.
 
 > [!TIP]
-> If you are not backing up recovery information to AD DS or if you want to save key packages alternatively, you can use the command `manage-bde -KeyPackage` to generate a key package for a volume.
+> If you aren't backing up recovery information to AD DS or if you want to save key packages alternatively, you can use the command `manage-bde -KeyPackage` to generate a key package for a volume.
  
-The Repair-bde command-line tool is intended for use when the operating system does not start or when you cannot start the BitLocker Recovery Console. Use Repair-bde if the following conditions are true:
+The Repair-bde command-line tool is intended for use when the operating system doesn't start or when you can't start the BitLocker Recovery Console. Use Repair-bde if the following conditions are true:
 
 - You have encrypted the drive by using BitLocker Drive Encryption.
-- Windows does not start, or you cannot start the BitLocker recovery console.
-- You do not have a copy of the data that is contained on the encrypted drive.
+- Windows doesn't start, or you can't start the BitLocker recovery console.
+- You don't have a copy of the data that is contained on the encrypted drive.
 
 > [!NOTE]
 > Damage to the drive may not be related to BitLocker. Therefore, we recommend that you try other tools to help diagnose and resolve the problem with the drive before you use the BitLocker Repair Tool. The Windows Recovery Environment (Windows RE) provides additional options to repair computers.
  
 The following limitations exist for Repair-bde:
 
--   The Repair-bde command-line tool cannot repair a drive that failed during the encryption or decryption process.
+-   The Repair-bde command-line tool can't repair a drive that failed during the encryption or decryption process.
 -   The Repair-bde command-line tool assumes that if the drive has any encryption, then the drive has been fully encrypted.
 
 For more information about using repair-bde, see [Repair-bde](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ff829851(v=ws.11)).
@@ -139,14 +140,14 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 |**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
 |**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
  
-Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
+Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they're encrypting prior to running Windows PowerShell cmdlets.
 
 A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the <code>Get-BitLockerVolume</code> cmdlet.
 
 The <code>Get-BitLockerVolume</code> cmdlet output gives information on the volume type, protectors, protection status, and other details.
 
 > [!TIP]
-> Occasionally, all protectors may not be shown when using `Get-BitLockerVolume` due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a full listing of the protectors.
+> Occasionally, all protectors may not be shown when using `Get-BitLockerVolume` due to lack of space in the output display. If you don't see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a full listing of the protectors.
 `Get-BitLockerVolume C: | fl`
  
 If you want to remove the existing protectors prior to provisioning BitLocker on the volume, you could use the `Remove-BitLockerKeyProtector` cmdlet. Accomplishing this requires the GUID associated with the protector to be removed.
@@ -198,7 +199,7 @@ Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 
 ### Using an AD Account or Group protector in Windows PowerShell
 
-The **ADAccountOrGroup** protector, introduced in Windows 8 and Windows Server 2012, is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it does not unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly fail over to and be unlocked by any member computer of the cluster.
+The **ADAccountOrGroup** protector, introduced in Windows 8 and Windows Server 2012, is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly fail over to and be unlocked by any member computer of the cluster.
 
 > [!WARNING]
 > The **ADAccountOrGroup** protector requires the use of an additional protector for use (such as TPM, PIN, or recovery key) when used on operating system volumes
@@ -219,7 +220,7 @@ get-aduser -filter {samaccountname -eq "administrator"}
 ```
 
 > [!TIP]
-> In addition to the PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
+> In addition to the PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This doesn't require the use of additional features.
  
 The following example adds an **ADAccountOrGroup** protector to the previously encrypted operating system volume using the SID of the account:
 

@@ -13,6 +13,7 @@ ms.date: 05/24/2022
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # Password-less strategy

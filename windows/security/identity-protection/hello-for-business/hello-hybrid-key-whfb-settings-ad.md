@@ -10,6 +10,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
+ms.technology: itpro-security
 ---
 # Configuring Hybrid Azure AD joined key trust Windows Hello for Business: Active Directory
 appliesto:
