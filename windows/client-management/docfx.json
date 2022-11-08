@@ -36,7 +36,7 @@
       "recommendations": true,
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
+      "ms.technology": "itpro-manage",
       "audience": "ITPro",
       "ms.topic": "article",
       "manager": "dansimp",
