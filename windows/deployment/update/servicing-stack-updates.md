@@ -42,7 +42,7 @@ Both Windows client and Windows Server use the cumulative update mechanism, in w
 
 Servicing stack updates improve the reliability of the update process to mitigate potential issues while installing the latest quality updates and feature updates. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes.
 
-Beginning with the February 2021 LCU, microsoft will publish all future cumulative updates and SSUs for Windows 10, version 2004 and above together as one cumulative monthly update to the normal release category in WSUS.
+Beginning with the February 2021 LCU, Microsoft will publish all future cumulative updates and SSUs for Windows 10, version 2004 and later together as one cumulative monthly update to the normal release category in WSUS.
 
 ## Is there any special guidance?
 
