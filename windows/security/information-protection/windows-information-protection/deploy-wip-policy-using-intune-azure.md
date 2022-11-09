@@ -10,6 +10,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/05/2019
 ms.reviewer: 
+ms.technology: itpro-security
 ---
 
 # Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune

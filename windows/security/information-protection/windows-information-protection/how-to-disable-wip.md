@@ -9,6 +9,7 @@ author: lizgt2000
 ms.author: lizlong
 ms.reviewer: aaroncz
 manager: dougeby
+ms.technology: itpro-security
 ---
 
 # How to disable Windows Information Protection (WIP)

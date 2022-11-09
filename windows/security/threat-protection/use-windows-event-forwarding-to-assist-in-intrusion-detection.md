@@ -4,11 +4,11 @@ description: Learn about an approach to collect events from devices in your orga
 ms.reviewer: 
 manager: aaroncz
 ms.author: dansimp
-ms.prod: m365-security
+ms.prod: windows-client
 author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

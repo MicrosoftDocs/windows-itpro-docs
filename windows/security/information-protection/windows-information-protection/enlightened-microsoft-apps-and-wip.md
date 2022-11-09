@@ -10,6 +10,7 @@ manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/02/2019
+ms.technology: itpro-security
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)

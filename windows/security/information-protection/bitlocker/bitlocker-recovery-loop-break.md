@@ -12,6 +12,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # Breaking out of a BitLocker recovery loop

@@ -8,6 +8,7 @@ manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 20H2 for IT Pros

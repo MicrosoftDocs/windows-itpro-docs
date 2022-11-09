@@ -9,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
