@@ -40,20 +40,20 @@ The following procedures describe the most common tasks performed by using the B
 
 **To view the recovery passwords for a computer**
 
-1.  In **Active Directory Users and Computers**, locate and then click the container in which the computer is located.
-2.  Right-click the computer object, and then click **Properties**.
-3.  In the **Properties** dialog box, click the **BitLocker Recovery** tab to view the BitLocker recovery passwords that are associated with the computer.
+1. In **Active Directory Users and Computers**, locate and then click the container in which the computer is located.
+2. Right-click the computer object, and then click **Properties**.
+3. In the **Properties** dialog box, click the **BitLocker Recovery** tab to view the BitLocker recovery passwords that are associated with the computer.
 
 **To copy the recovery passwords for a computer**
 
-1.  Follow the steps in the previous procedure to view the BitLocker recovery passwords.
-2.  On the **BitLocker Recovery** tab of the **Properties** dialog box, right-click the BitLocker recovery password that you want to copy, and then click **Copy Details**.
-3.  Press CTRL+V to paste the copied text to a destination location, such as a text file or spreadsheet.
+1. Follow the steps in the previous procedure to view the BitLocker recovery passwords.
+2. On the **BitLocker Recovery** tab of the **Properties** dialog box, right-click the BitLocker recovery password that you want to copy, and then click **Copy Details**.
+3. Press CTRL+V to paste the copied text to a destination location, such as a text file or spreadsheet.
 
 **To locate a recovery password by using a password ID**
 
-1.  In Active Directory Users and Computers, right-click the domain container, and then click **Find BitLocker Recovery Password**.
-2.  In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and then click **Search**.
+1. In Active Directory Users and Computers, right-click the domain container, and then click **Find BitLocker Recovery Password**.
+2. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and then click **Search**.
 By completing the procedures in this scenario, you have viewed and copied the recovery passwords for a computer and used a password ID to locate a recovery password.
 
 ## More information

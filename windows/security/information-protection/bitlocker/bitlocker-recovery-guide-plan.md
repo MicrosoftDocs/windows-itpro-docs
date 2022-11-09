@@ -103,16 +103,16 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
 **To force a recovery for the local computer:**
 
-1.  Select the **Start** button, type **cmd** in the **Start Search** box, and select and hold **cmd.exe**, and then select **Run as administrator**.
-2.  At the command prompt, type the following command and then press **ENTER**:
+1. Select the **Start** button, type **cmd** in the **Start Search** box, and select and hold **cmd.exe**, and then select **Run as administrator**.
+2. At the command prompt, type the following command and then press **ENTER**:
 
     `manage-bde.exe -forcerecovery <BitLockerVolume>`
 
 **To force recovery for a remote computer:**
 
-1.  On the Start screen, type **cmd.exe**, and then select **Run as administrator**.
+1. On the Start screen, type **cmd.exe**, and then select **Run as administrator**.
 
-2.  At the command prompt, type the following command and then press **ENTER**:
+2. At the command prompt, type the following command and then press **ENTER**:
 
     `manage-bde.exe -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>`
 
@@ -220,12 +220,12 @@ While an administrator can remotely investigate the cause of recovery in some ca
 
 Review and answer the following questions for your organization:
 
-1.  Which BitLocker protection mode is in effect (TPM, TPM + PIN, TPM + startup key, startup key only)? Which PCR profile is in use on the PC?
-2.  Did the user merely forget the PIN or lose the startup key? If a token was lost, where might the token be?
-3.  If TPM mode was in effect, was recovery caused by a boot file change?
-4.  If recovery was caused by a boot file change, is the boot file change due to an intended user action (for example, BIOS upgrade), or a malicious software?
-5.  When was the user last able to start the computer successfully, and what might have happened to the computer since then?
-6.  Might the user have encountered malicious software or left the computer unattended since the last successful startup?
+1. Which BitLocker protection mode is in effect (TPM, TPM + PIN, TPM + startup key, startup key only)? Which PCR profile is in use on the PC?
+2. Did the user merely forget the PIN or lose the startup key? If a token was lost, where might the token be?
+3. If TPM mode was in effect, was recovery caused by a boot file change?
+4. If recovery was caused by a boot file change, is the boot file change due to an intended user action (for example, BIOS upgrade), or a malicious software?
+5. When was the user last able to start the computer successfully, and what might have happened to the computer since then?
+6. Might the user have encountered malicious software or left the computer unattended since the last successful startup?
 
 To help you answer these questions, use the BitLocker command-line tool to view the current configuration and protection mode (for example, **manage-bde -status**). Scan the event log to find events that help indicate why recovery was initiated (for example, if a boot file change occurred). Both of these capabilities can be performed remotely.
 
@@ -249,11 +249,11 @@ If a user has forgotten the PIN, you must reset the PIN while you are logged on 
 
 **To prevent continued recovery due to an unknown PIN**
 
-1.  Unlock the computer using the recovery password.
-2.  Reset the PIN:
-    1.  Select and hold the drive and then select **Change PIN**
-    2.  In the BitLocker Drive Encryption dialog, select **Reset a forgotten PIN**. If you are not logged in with an administrator account, you must provide administrative credentials at this time.
-    3.  In the PIN reset dialog, provide and confirm the new PIN to be used and then select **Finish**.
+1. Unlock the computer using the recovery password.
+2. Reset the PIN:
+    1. Select and hold the drive and then select **Change PIN**
+    2. In the BitLocker Drive Encryption dialog, select **Reset a forgotten PIN**. If you are not logged in with an administrator account, you must provide administrative credentials at this time.
+    3. In the PIN reset dialog, provide and confirm the new PIN to be used and then select **Finish**.
 3. You will use the new PIN the next time you unlock the drive.
 
 ### <a href="" id="bkmk-loststartup"></a>Lost startup key
@@ -262,9 +262,9 @@ If you have lost the USB flash drive that contains the startup key, then you mus
 
 **To prevent continued recovery due to a lost startup key**
 
-1.  Log on as an administrator to the computer that has its startup key lost.
-2.  Open Manage BitLocker.
-3.  Select **Duplicate start up key**, insert the clean USB drive on which you are going to write the key, and then select **Save**.
+1. Log on as an administrator to the computer that has its startup key lost.
+2. Open Manage BitLocker.
+3. Select **Duplicate start up key**, insert the clean USB drive on which you are going to write the key, and then select **Save**.
 
 ### <a href="" id="bkmk-changebootknown"></a>Changes to boot files
 
@@ -457,22 +457,22 @@ You can reset the recovery password in two ways:
 
 **To reset a recovery password using manage-bde:**
 
-1.  Remove the previous recovery password.
+1. Remove the previous recovery password.
 
     ```powershell
     Manage-bde -protectors -delete C: -type RecoveryPassword
     ```
-2.  Add the new recovery password.
+2. Add the new recovery password.
 
     ```powershell
     Manage-bde -protectors -add C: -RecoveryPassword
     ```
-3.  Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
+3. Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
 
     ```powershell
     Manage-bde -protectors -get C: -Type RecoveryPassword
     ```
-4.  Back up the new recovery password to AD DS.
+4. Back up the new recovery password to AD DS.
 
     ```powershell
     Manage-bde -protectors -adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
@@ -483,8 +483,8 @@ You can reset the recovery password in two ways:
 
 **To run the sample recovery password script:**
 
-1.  Save the following sample script in a VBScript file. For example: ResetPassword.vbs.
-2.  At the command prompt, type a command similar to the following:
+1. Save the following sample script in a VBScript file. For example: ResetPassword.vbs.
+2. At the command prompt, type a command similar to the following:
 
     **cscript ResetPassword.vbs**
 
@@ -579,8 +579,8 @@ The following sample script exports all previously saved key packages from AD DS
 
 **To run the sample key package retrieval script:**
 
-1.  Save the following sample script in a VBScript file. For example: GetBitLockerKeyPackageADDS.vbs.
-2.  At the command prompt, type a command similar to the following sample script:
+1. Save the following sample script in a VBScript file. For example: GetBitLockerKeyPackageADDS.vbs.
+2. At the command prompt, type a command similar to the following sample script:
 
     **cscript GetBitLockerKeyPackageADDS.vbs -?**
 

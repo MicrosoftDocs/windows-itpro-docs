@@ -72,17 +72,17 @@ Manage and deploy this certificate through the Group Policy editor directly on a
 
 The Network Unlock process follows these phases:
 
-1.  The Windows boot manager detects a Network Unlock protector in the BitLocker configuration.
-2.  The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address.
-3.  The client computer broadcasts a vendor-specific DHCP request that contains: 
-    1.  A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the network unlock certificate from the WDS server.
-    2.  An AES-256 session key for the reply.
-4.  The Network Unlock provider on the WDS server recognizes the vendor-specific request.
-5.  The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key.
-6.  The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key.
-7.  The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM.
-8.  This combined key is used to create an AES-256 key that unlocks the volume.
-9.  Windows continues the boot sequence.
+1. The Windows boot manager detects a Network Unlock protector in the BitLocker configuration.
+2. The client computer uses its DHCP driver in the UEFI to get a valid IPv4 IP address.
+3. The client computer broadcasts a vendor-specific DHCP request that contains: 
+    1. A network key (a 256-bit intermediate key) that is encrypted by using the 2048-bit RSA Public Key of the network unlock certificate from the WDS server.
+    2. An AES-256 session key for the reply.
+4. The Network Unlock provider on the WDS server recognizes the vendor-specific request.
+5. The provider decrypts the request by using the WDS server's BitLocker Network Unlock certificate RSA private key.
+6. The WDS provider returns the network key encrypted with the session key by using its own vendor-specific DHCP reply to the client computer. This key is an intermediate key.
+7. The returned intermediate key is combined with another local 256-bit intermediate key. This key can be decrypted only by the TPM.
+8. This combined key is used to create an AES-256 key that unlocks the volume.
+9. Windows continues the boot sequence.
 
 ## <a href="" id="bkmk-configuringnetworkunlock"></a>Configure network unlock
 
@@ -122,15 +122,15 @@ Install-WindowsFeature BitLocker-NetworkUnlock
 
 A properly configured Active Directory Services Certification Authority can use this certificate template to create and issue Network Unlock certificates.
 
-1.  Open the Certificates Template snap-in (certtmpl.msc).
-2.  Locate the User template, right-click the template name and select **Duplicate Template**.
-3.  On the **Compatibility** tab, change the **Certification Authority** and **Certificate recipient** fields to Windows Server 2012 and Windows 8, respectively. Ensure that the **Show resulting changes** dialog box is selected.
-4.  Select the **General** tab of the template. The **Template display name** and **Template name** should clearly identify that the template will be used for Network Unlock. Clear the check box for the **Publish certificate in Active Directory** option.
-5.  Select the **Request Handling** tab. Select **Encryption** from the **Purpose** drop-down menu. Ensure that the **Allow private key to be exported** option is selected.
-6.  Select the **Cryptography** tab. Set the **Minimum key size** to 2048. (Any Microsoft cryptographic provider that supports RSA can be used for this template, but for simplicity and forward compatibility, we recommend using **Microsoft Software Key Storage Provider**.)
-7.  Select the **Requests must use one of the following providers** option and clear all options except for the cryptography provider you selected, such as **Microsoft Software Key Storage Provider**.
-8.  Select the **Subject Name** tab. Select **Supply in the request**. Click **OK** if the certificate templates pop-up dialog appears.
-9.  Select the **Issuance Requirements** tab. Select both **CA certificate manager approval** and **Valid existing certificate** options.
+1. Open the Certificates Template snap-in (certtmpl.msc).
+2. Locate the User template, right-click the template name and select **Duplicate Template**.
+3. On the **Compatibility** tab, change the **Certification Authority** and **Certificate recipient** fields to Windows Server 2012 and Windows 8, respectively. Ensure that the **Show resulting changes** dialog box is selected.
+4. Select the **General** tab of the template. The **Template display name** and **Template name** should clearly identify that the template will be used for Network Unlock. Clear the check box for the **Publish certificate in Active Directory** option.
+5. Select the **Request Handling** tab. Select **Encryption** from the **Purpose** drop-down menu. Ensure that the **Allow private key to be exported** option is selected.
+6. Select the **Cryptography** tab. Set the **Minimum key size** to 2048. (Any Microsoft cryptographic provider that supports RSA can be used for this template, but for simplicity and forward compatibility, we recommend using **Microsoft Software Key Storage Provider**.)
+7. Select the **Requests must use one of the following providers** option and clear all options except for the cryptography provider you selected, such as **Microsoft Software Key Storage Provider**.
+8. Select the **Subject Name** tab. Select **Supply in the request**. Click **OK** if the certificate templates pop-up dialog appears.
+9. Select the **Issuance Requirements** tab. Select both **CA certificate manager approval** and **Valid existing certificate** options.
 10. Select the **Extensions** tab. Select **Application Policies** and choose **Edit…**.
 11. In the **Edit Application Policies Extension** options dialog box, select **Client Authentication**, **Encrypting File System**, **and Secure Email** and choose **Remove**.
 12. On the **Edit Application Policies Extension** dialog box, select **Add**.
@@ -153,26 +153,26 @@ After you add the Network Unlock template to the certificate authority, you can 
 Network Unlock can use imported certificates from an existing public key infrastructure (PKI). Or it can use a self-signed certificate.
 
 To enroll a certificate from an existing certificate authority:
-1.  On the WDS server, open Certificate Manager by using `certmgr.msc`.
-2.  Under **Certificates - Current User**, right-click **Personal**.
-3.  Select **All Tasks** > **Request New Certificate**.
-4.  When the Certificate Enrollment wizard opens, select **Next**.
-5.  Select **Active Directory Enrollment Policy**.
-6.  Choose the certificate template that was created for Network Unlock on the domain controller. Then select **Enroll**. 
+1. On the WDS server, open Certificate Manager by using `certmgr.msc`.
+2. Under **Certificates - Current User**, right-click **Personal**.
+3. Select **All Tasks** > **Request New Certificate**.
+4. When the Certificate Enrollment wizard opens, select **Next**.
+5. Select **Active Directory Enrollment Policy**.
+6. Choose the certificate template that was created for Network Unlock on the domain controller. Then select **Enroll**. 
 1. When you're prompted for more information, select **Subject Name** and provide a friendly name value. Your friendly name should include information for the domain or organizational unit for the certificate. Here's an example: *BitLocker Network Unlock Certificate for Contoso domain*.
-7.  Create the certificate. Ensure the certificate appears in the **Personal** folder.
-8.  Export the public key certificate for Network Unlock:
+7. Create the certificate. Ensure the certificate appears in the **Personal** folder.
+8. Export the public key certificate for Network Unlock:
 
-    1.  Create a .cer file by right-clicking the previously created certificate, selecting **All Tasks**, and then selecting **Export**.
-    2.  Select **No, do not export the private key**.
-    3.  Select **DER encoded binary X.509** and complete exporting the certificate to a file.
-    4.  Give the file a name such as BitLocker-NetworkUnlock.cer.
+    1. Create a .cer file by right-clicking the previously created certificate, selecting **All Tasks**, and then selecting **Export**.
+    2. Select **No, do not export the private key**.
+    3. Select **DER encoded binary X.509** and complete exporting the certificate to a file.
+    4. Give the file a name such as BitLocker-NetworkUnlock.cer.
 
-9.  Export the public key with a private key for Network Unlock.
+9. Export the public key with a private key for Network Unlock.
 
-    1.  Create a .pfx file by right-clicking the previously created certificate, selecting **All Tasks**, and then selecting **Export**.
-    2.  Select **Yes, export the private key**.
-    3.  Complete the steps to create the *.pfx* file.
+    1. Create a .pfx file by right-clicking the previously created certificate, selecting **All Tasks**, and then selecting **Export**.
+    2. Select **Yes, export the private key**.
+    3. Complete the steps to create the *.pfx* file.
 
 To create a self-signed certificate, either use the `New-SelfSignedCertificate` cmdlet in Windows PowerShell or use `certreq`.
 
@@ -184,8 +184,8 @@ New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=
 
 Here's a `certreq` example:
 
-1.  Create a text file with an .inf extension, for example, notepad.exe BitLocker-NetworkUnlock.inf.
-2.  Add the following contents to the previously created file:
+1. Create a text file with an .inf extension, for example, notepad.exe BitLocker-NetworkUnlock.inf.
+2. Add the following contents to the previously created file:
 
     ```ini
     [NewRequest]
@@ -206,23 +206,23 @@ Here's a `certreq` example:
     _continue_ = "1.3.6.1.4.1.311.67.1.1"
     ```
 
-3.  Open an elevated command prompt and use the `certreq` tool to create a new certificate. Use the following command, specifying the full path to the file that you created previously. Also specify the file name.
+3. Open an elevated command prompt and use the `certreq` tool to create a new certificate. Use the following command, specifying the full path to the file that you created previously. Also specify the file name.
 
     ```cmd
     certreq -new BitLocker-NetworkUnlock.inf BitLocker-NetworkUnlock.cer
     ```
-4.  Verify that certificate was properly created by the previous command by confirming that the .cer file exists.
-5.  Launch Certificates - Local Machine by running **certlm.msc**.
-6.  Create a .pfx file by opening the **Certificates - Local Computer\\Personal\\Certificates** path in the navigation pane, right-clicking the previously imported certificate, selecting **All Tasks**, and then selecting **Export**. Follow through the wizard to create the .pfx file.
+4. Verify that certificate was properly created by the previous command by confirming that the .cer file exists.
+5. Launch Certificates - Local Machine by running **certlm.msc**.
+6. Create a .pfx file by opening the **Certificates - Local Computer\\Personal\\Certificates** path in the navigation pane, right-clicking the previously imported certificate, selecting **All Tasks**, and then selecting **Export**. Follow through the wizard to create the .pfx file.
 
 ### <a href="" id="bkmk-deploycert"></a>Deploy the private key and certificate to the WDS server
 
 Now that you've created the certificate and key, deploy them to the infrastructure to properly unlock systems. To deploy the certificates:
 
-1.  On the WDS server, open a new MMC and add the certificates snap-in. Select the computer account and local computer when given the options.
-2.  Right-click the Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock item -, select **All Tasks**, and then select **Import**.
-3.  In the **File to Import** dialog, choose the .pfx file created previously.
-4.  Enter the password used to create the .pfx and complete the wizard.
+1. On the WDS server, open a new MMC and add the certificates snap-in. Select the computer account and local computer when given the options.
+2. Right-click the Certificates (Local Computer) - BitLocker Drive Encryption Network Unlock item -, select **All Tasks**, and then select **Import**.
+3. In the **File to Import** dialog, choose the .pfx file created previously.
+4. Enter the password used to create the .pfx and complete the wizard.
 
 ### Configure group policy settings for network unlock
 
@@ -230,22 +230,22 @@ With certificate and key deployed to the WDS server for Network Unlock, the fina
 
 The following steps describe how to enable the group policy setting that is a requirement for configuring network unlock.
 
-1.  Open Group Policy Management Console (`gpmc.msc`).
-2.  Enable the policy **Require additional authentication at startup**, and then select **Require startup PIN with TPM** or **Allow startup PIN with TPM**.
-3.  Turn on BitLocker with TPM+PIN protectors on all domain-joined computers.
+1. Open Group Policy Management Console (`gpmc.msc`).
+2. Enable the policy **Require additional authentication at startup**, and then select **Require startup PIN with TPM** or **Allow startup PIN with TPM**.
+3. Turn on BitLocker with TPM+PIN protectors on all domain-joined computers.
 
 The following steps describe how to deploy the required group policy setting:
 
 > [!NOTE]
 > The group policy settings **Allow network unlock at startup** and **Add Network Unlock Certificate** were introduced in Windows Server 2012.
  
-1.  Copy the *.cer* file that you created for Network Unlock to the domain controller.
-2.  On the domain controller, open Group Policy Management Console (`gpmc.msc`).
-3.  Create a new Group Policy Object or modify an existing object to enable the **Allow network unlock at startup** setting.
-4.  Deploy the public certificate to clients:
-    1.  Within group policy management console, navigate to the following location: **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Public Key Policies\\BitLocker Drive Encryption Network Unlock Certificate**.
-    2.  Right-click the folder and select **Add Network Unlock Certificate**.
-    3.  Follow the wizard steps and import the .cer file that was copied earlier.
+1. Copy the *.cer* file that you created for Network Unlock to the domain controller.
+2. On the domain controller, open Group Policy Management Console (`gpmc.msc`).
+3. Create a new Group Policy Object or modify an existing object to enable the **Allow network unlock at startup** setting.
+4. Deploy the public certificate to clients:
+    1. Within group policy management console, navigate to the following location: **Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Public Key Policies\\BitLocker Drive Encryption Network Unlock Certificate**.
+    2. Right-click the folder and select **Add Network Unlock Certificate**.
+    3. Follow the wizard steps and import the .cer file that was copied earlier.
 
     > [!NOTE]
     > Only one network unlock certificate can be available at a time. If you need a new certificate, delete the current certificate before you deploy a new one. The Network Unlock certificate is located in the *HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP* key on the client computer.
@@ -351,12 +351,12 @@ Your system must meet these requirements:
 
 Follow these steps to configure Network Unlock on these older systems.
 
-1.  [Install the WDS Server role](#bkmk-installwdsrole)
-2.  [Confirm the WDS Service is running](#bkmk-confirmwdsrunning)
-3.  [Install the Network Unlock feature](#bkmk-installnufeature)
-4.  [Create the Network Unlock certificate](#bkmk-createcert)
-5.  [Deploy the private key and certificate to the WDS server](#bkmk-deploycert)
-6.  Configure registry settings for network unlock:
+1. [Install the WDS Server role](#bkmk-installwdsrole)
+2. [Confirm the WDS Service is running](#bkmk-confirmwdsrunning)
+3. [Install the Network Unlock feature](#bkmk-installnufeature)
+4. [Create the Network Unlock certificate](#bkmk-createcert)
+5. [Deploy the private key and certificate to the WDS server](#bkmk-deploycert)
+6. Configure registry settings for network unlock:
 
     Apply the registry settings by running the following `certutil` script (assuming your Network Unlock certificate file is called *BitLocker-NetworkUnlock.cer*) on each computer that runs a client operating system that's designated in the "Applies to" list at the beginning of this article.
 
@@ -371,8 +371,8 @@ Follow these steps to configure Network Unlock on these older systems.
             reg add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseTPMKeyPIN /t REG_DWORD /d 2 /f
     ```
 
-7.  Set up a TPM protector on the clients.
-8.  Reboot the clients to add the Network (certificate based) protector.
+7. Set up a TPM protector on the clients.
+8. Reboot the clients to add the Network (certificate based) protector.
 
 ## See also
 

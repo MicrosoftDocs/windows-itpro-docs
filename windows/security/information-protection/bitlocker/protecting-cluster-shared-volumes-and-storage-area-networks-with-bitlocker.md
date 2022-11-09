@@ -52,15 +52,15 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
 - BitLocker service interrupts the request and uses the BitLocker protect/unprotect APIs to unlock or deny the request. 
 - BitLocker will unlock protected volumes without user intervention by attempting protectors in the following order:
 
-    1.  Clear key
-    2.  Driver-based auto-unlock key
-    3.  **ADAccountOrGroup** protector
+    1. Clear key
+    2. Driver-based auto-unlock key
+    3. **ADAccountOrGroup** protector
     
         a.  Service context protector
         
         b.  User protector
         
-    4.  Registry-based auto-unlock key
+    4. Registry-based auto-unlock key
 
 > [!NOTE]
 > A Windows Server 2012 or later domain controller is required for this feature to work properly.
@@ -73,14 +73,14 @@ BitLocker encryption is available for disks before these disks are added to a cl
 The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource need not be suspended to complete the operation. 
 To turn on BitLocker for a disk before adding it to a cluster:
 
-1.  Install the BitLocker Drive Encryption feature if it isn't already installed.
-2.  Ensure the disk is an NTFS-formatted one and has a drive letter assigned to it.
-3.  Identify the name of the cluster with Windows PowerShell.
+1. Install the BitLocker Drive Encryption feature if it isn't already installed.
+2. Ensure the disk is an NTFS-formatted one and has a drive letter assigned to it.
+3. Identify the name of the cluster with Windows PowerShell.
 
     ```powershell
     Get-Cluster
     ```
-4.  Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
+4. Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
     ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
@@ -88,31 +88,31 @@ To turn on BitLocker for a disk before adding it to a cluster:
     > [!WARNING]
     > You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
-5.  Repeat the preceding steps for each disk in the cluster.
+5. Repeat the preceding steps for each disk in the cluster.
 
-6.  Add the volume(s) to the cluster.
+6. Add the volume(s) to the cluster.
 
 ### Turning on BitLocker for a clustered disk using Windows PowerShell
 
 When the cluster service owns a disk resource already, the disk resource needs to be set into maintenance mode before BitLocker can be enabled. To turn on the Bitlocker for a clustered disk using Windows PowerShell, perform the following steps:
 
-1.  Install the BitLocker drive encryption feature if it isn't already installed.
-2.  Check the status of the cluster disk using Windows PowerShell.
+1. Install the BitLocker drive encryption feature if it isn't already installed.
+2. Check the status of the cluster disk using Windows PowerShell.
 
     ```powershell
     Get-ClusterResource "Cluster Disk 1"
     ```
-3.  Put the physical disk resource into maintenance mode using Windows PowerShell.
+3. Put the physical disk resource into maintenance mode using Windows PowerShell.
 
     ```powershell
     Get-ClusterResource "Cluster Disk 1" | Suspend-ClusterResource
     ```
-4.  Identify the name of the cluster with Windows PowerShell.
+4. Identify the name of the cluster with Windows PowerShell.
 
     ```powershell
     Get-Cluster
     ```
-5.  Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
+5. Enable BitLocker on the volume of your choice with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
     ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
@@ -121,42 +121,42 @@ When the cluster service owns a disk resource already, the disk resource needs t
     > [!WARNING]
     > You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker-enabled volume to either be shared in a cluster-shared Volume or to fail over properly in a traditional failover cluster.
      
-6.  Use **Resume-ClusterResource** to take back the physical disk resource out of maintenance mode:
+6. Use **Resume-ClusterResource** to take back the physical disk resource out of maintenance mode:
 
     ```powershell
     Get-ClusterResource "Cluster Disk 1" | Resume-ClusterResource
     ```
-7.  Repeat the preceding steps for each disk in the cluster.
+7. Repeat the preceding steps for each disk in the cluster.
 
 ### Adding BitLocker-encrypted volumes to a cluster using manage-bde
 
 You can also use **manage-bde** to enable BitLocker on clustered volumes. The steps needed to add a physical disk resource or CSV2.0 volume to an existing cluster are:
 
-1.  Verify that the BitLocker drive encryption feature is installed on the computer.
-2.  Ensure new storage is formatted as NTFS.
-3.  Encrypt the volume, add a recovery key and add the cluster administrator as a protector key using the**manage-bde** command line interface (see example):
+1. Verify that the BitLocker drive encryption feature is installed on the computer.
+2. Ensure new storage is formatted as NTFS.
+3. Encrypt the volume, add a recovery key and add the cluster administrator as a protector key using the**manage-bde** command line interface (see example):
 
     - `manage-bde.exe -on -used <drive letter> -RP -sid domain\CNO$ -sync`
 
-       1.  BitLocker will check to see if the disk is already part of a cluster. If it is, administrators will encounter a hard block. Otherwise, the encryption continues.
-       2.  Using the -sync parameter is optional. However, using -sync parameter has the following advantage:
+       1. BitLocker will check to see if the disk is already part of a cluster. If it is, administrators will encounter a hard block. Otherwise, the encryption continues.
+       2. Using the -sync parameter is optional. However, using -sync parameter has the following advantage:
         - The -sync parameter ensures the command waits until the encryption for the volume is completed. The volume is then released for use in the cluster storage pool.
 
-4.  Open the Failover Cluster Manager snap-in or cluster PowerShell cmdlets to enable the disk to be clustered.
+4. Open the Failover Cluster Manager snap-in or cluster PowerShell cmdlets to enable the disk to be clustered.
 
 
     - Once the disk is clustered, it's enabled for CSV.
 
 
-5.  During the resource online operation, cluster checks whether the disk is BitLocker encrypted.
+5. During the resource online operation, cluster checks whether the disk is BitLocker encrypted.
 
-    1.  If the volume isn't BitLocker enabled, traditional cluster online operations occur.
-    2.  If the volume is BitLocker enabled, the following check occurs:
+    1. If the volume isn't BitLocker enabled, traditional cluster online operations occur.
+    2. If the volume is BitLocker enabled, the following check occurs:
 
 
        - If volume is **locked**, BitLocker impersonates the CNO and unlocks the volume using the CNO protector. If these actions by BitLocker fail, an event is logged. The logged event will state that the volume couldn't be unlocked and the online operation has failed.
 
-6.  Once the disk is online in the storage pool, it can be added to a CSV by right-clicking the disk resource and choosing "**Add to cluster shared volumes**".
+6. Once the disk is online in the storage pool, it can be added to a CSV by right-clicking the disk resource and choosing "**Add to cluster shared volumes**".
 CSVs include both encrypted and unencrypted volumes. To check the status of a particular volume for BitLocker encryption: administrators must do the following task:
 
 - Utilize the **manage-bde -status** command with a path to the volume.

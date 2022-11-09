@@ -32,9 +32,9 @@ Both manage-bde and the BitLocker cmdlets can be used to perform any task that c
 
 Repair-bde is a special circumstance tool that is provided for disaster recovery scenarios in which a BitLocker protected drive can't be unlocked normally or using the recovery console.
 
-1.  [Manage-bde](#bkmk-managebde)
-2.  [Repair-bde](#bkmk-repairbde)
-3.  [BitLocker cmdlets for Windows PowerShell](#bkmk-blcmdlets)
+1. [Manage-bde](#bkmk-managebde)
+2. [Repair-bde](#bkmk-repairbde)
+3. [BitLocker cmdlets for Windows PowerShell](#bkmk-blcmdlets)
 
 ## <a href="" id="bkmk-managebde"></a>Manage-bde
 
@@ -142,9 +142,9 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
  
 Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they're encrypting prior to running Windows PowerShell cmdlets.
 
-A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the <code>Get-BitLockerVolume</code> cmdlet.
+A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the `Get-BitLockerVolume` cmdlet.
 
-The <code>Get-BitLockerVolume</code> cmdlet output gives information on the volume type, protectors, protection status, and other details.
+The `Get-BitLockerVolume` cmdlet output gives information on the volume type, protectors, protection status, and other details.
 
 > [!TIP]
 > Occasionally, all protectors may not be shown when using `Get-BitLockerVolume` due to lack of space in the output display. If you don't see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a full listing of the protectors.
