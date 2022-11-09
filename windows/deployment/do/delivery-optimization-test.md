@@ -80,7 +80,7 @@ The following set of instructions will be used for each machine:
 * Run ‘Test Instructions’
 
 |Windows 10 | Windows 11
-|--------|--------|
+|--------|-------------------------------|
 |![Windows 10 21H2 - Machine 1 - Basic Test](images/test-scenarios/Win10/M1-Basic-Complete.png)|![Windows 11 21H2 - Machine 1 - Basic Test](images/test-scenarios/Win11/M1-Basic-Complete.png)
 | **Observations** | |
 | * No peers were found on the first machine downloading the content.<br>* 'TotalBytesDownloaded' is equal to the file size.<br>* Status is set to 'Caching' the content so future peers can use it.<br>* Download was happening in the foreground.<br>* DownloadMode is set to 'Group' and no peers were found.<br>* No distinct observations seen between Window 10 and Windows 11 devices.
@@ -92,7 +92,7 @@ The following set of instructions will be used for each machine:
 * Run ‘Test Instructions’
 
 |Windows 10 | Windows 11
-|--------|-----------|
+|--------|--------------------------------|
 |![Windows 10 21H2 - Machine 2 - Basic Test](images/test-scenarios/Win10/M2-Basic-Complete.png)|![Windows 11 21H2 - Machine 2 - Basic Test](images/test-scenarios/Win11/M2-Basic-Complete.png)|
 | **Observations** | **Observations**|
 | * A peer was found for the content and 87% of total bytes came from the peer. <br> * One peer was found for the piece of content, which is expected as there are only two devices in the peering group. <br> * Download mode was set to 'Group', but since group mode includes both LAN and Group devices, Delivery Optimization prioritizes LAN peers, if found. Therefore, 'BytesFromLanPeers' shows bytes where 'BytesFromGroupPeers' doesn't. <br> * 'DownloadDuration' is roughly the same between machines.|* A peer was found for the content and 90% of total bytes came from the peer. <br> * All other points are the same as Windows 10 results.
