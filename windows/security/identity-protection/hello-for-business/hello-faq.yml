@@ -71,9 +71,9 @@ sections:
           Note that there are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials of Windows Hello stores, are protected without the creation of actual containers or folders.
           The container contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container. [Each logical container holds one or more sets of keys.](./images/passport-fig3-logicalcontainer.png)
 
-      - question: How to delete Windows Hello for Business container on a device?
+      - question: How do I delete a Windows Hello for Business container on a device?
         answer: |  
-          You can effectively disable Windows Hello for Business by launching `certutil.exe -deleteHelloContainer` on the end device under a user account. Reboot is required.
+          You can effectively disable Windows Hello for Business by launching `certutil.exe -deleteHelloContainer` on the end device under a user account, and then restarting the device.
 
       - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
