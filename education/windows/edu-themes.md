@@ -4,8 +4,7 @@ description: Learn about education themes for Windows 11 and how to configure th
 ms.date: 09/15/2022
 ms.topic: how-to
 appliesto:
-- ✅ <b>Windows 11, version 22H2</b>
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Configure education themes for Windows 11

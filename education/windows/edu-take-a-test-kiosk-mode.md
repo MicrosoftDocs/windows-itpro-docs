@@ -4,9 +4,7 @@ description: Learn how to configure Windows to execute the Take a Test app in ki
 ms.date: 09/30/2022
 ms.topic: how-to
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Configure Take a Test in kiosk mode

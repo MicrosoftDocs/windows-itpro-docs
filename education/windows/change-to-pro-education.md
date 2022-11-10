@@ -3,10 +3,11 @@ title: Change to Windows 10 Education from Windows 10 Pro
 description: Learn how IT Pros can opt into changing to Windows 10 Pro Education from Windows 10 Pro.
 ms.topic: how-to
 ms.date: 08/10/2022
-appliesto: 
-  - ✅ <b>Windows 10</b>
-ms.collection: 
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>"
+ms.collection:
   - highpri
+  - education
 ---
 
 # Change to Windows 10 Pro Education from Windows 10 Pro

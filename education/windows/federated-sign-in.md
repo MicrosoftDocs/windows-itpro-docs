@@ -8,11 +8,11 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
 <!-- MAXADO-6286399 -->
