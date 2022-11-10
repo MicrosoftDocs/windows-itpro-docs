@@ -34,14 +34,14 @@ This article details the process of signing up for Microsoft Connected Cache for
    > After your resource has been created, we need some information to verify your network operator status and approve you to host Microsoft Connected Cache nodes. Please ensure that your [Peering DB](https://www.peeringdb.com/) organization information is up to date as this information will be used for verification. The NOC contact email will be used to send verification information.
 1. Navigate to **Settings** > **Sign up**. Enter your organization ASN. Indicate whether you're a transit provider. If so, additionally, include any ASN(s) for downstream network operators that you may transit traffic for.
 
-   :::image type="content" source="./images/mcc-isp-sign-up.png" alt-text="Screenshot of the sign up page in the Microsoft Connected Cache resource page in Azure portal.":::
+   :::image type="content" source="./images/mcc-isp-sign-up.png" alt-text="Screenshot of the sign up page in the Microsoft Connected Cache resource page in Azure portal." lightbox="./images/mcc-isp-sign-up.png":::
 
 1. Once we verify the information entered, a verification code will be sent to the NOC email address provided on [Peering DB](https://www.peeringdb.com/). Once you receive the email, navigate to your Azure portal > **Microsoft Connected Cache** > **Settings** > **Verify operator**, and enter the verification code sent to the NOC email address.
 
     > [!NOTE]
     > Verification codes expire in 24 hours. You will need to generate a new code if it expires.
 
-   :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache.":::
+   :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache." lightbox="./images/mcc-isp-operator-verification.png":::
 
 1. Once verified, follow the instructions in [Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md) to create your cache node.
 

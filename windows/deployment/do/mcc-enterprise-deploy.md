@@ -76,7 +76,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 1. Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the
     resource creation.
 
-    :::image type="content" source="./images/ent-mcc-azure-cache-created.png" alt-text="Screenshot of the completed cache deployment within the Azure.":::
+    :::image type="content" source="./images/ent-mcc-azure-cache-created.png" alt-text="Screenshot of the completed cache deployment within the Azure." lightbox="./images/ent-mcc-azure-cache-created.png":::
 
 #### Error: Validation failed
 

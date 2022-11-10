@@ -57,7 +57,7 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
 
 1. Navigate to **Settings** > **Cache nodes**. Select the cache node you wish to provision.
 
-    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node.":::  
+    :::image type="content" source="images/mcc-isp-provision-cache-node-numbered.png" alt-text="Screenshot of the Azure portal depicting the cache node configuration page of a cache node. This screenshot shows all of the fields you can choose to configure the cache node." lightbox="./images/mcc-isp-provision-cache-node-numbered.png":::  
 
 1. Enter the max allowable egress that your hardware can support.  
 

@@ -31,7 +31,7 @@
       href: waas-microsoft-connected-cache.md
     - name: MCC for Enterprise and Education
       items:
-      - name: Prerequisites
+      - name: Requirements
         href: mcc-enterprise-prerequisites.md
       - name: Deploy Microsoft Connected Cache
         href: mcc-enterprise-deploy.md
