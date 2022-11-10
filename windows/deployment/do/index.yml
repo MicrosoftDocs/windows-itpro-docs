@@ -69,7 +69,7 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for Enterprise and Education (Early Preview)
+          - text: MCC for Enterprise and Education (early preview)
             url: mcc-enterprise-overview.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup 
@@ -79,11 +79,11 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for ISPs (Public Preview)
+          - text: MCC for ISPs (public preview)
             url: mcc-isp-signup.md
           - text: Sign up
-            url: https://aka.ms/MCCForISPSurvey)
-          - text: MCC for ISPs (Early Preview)
+            url: https://aka.ms/MCCForISPSurvey
+          - text: MCC for ISPs (early preview)
             url: mcc-isp.md
           
 

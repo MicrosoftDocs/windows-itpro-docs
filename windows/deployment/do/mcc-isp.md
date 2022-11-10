@@ -13,7 +13,7 @@ ms.topic: how-to
 ms.date: 05/20/2022
 ---
 
-# Microsoft Connected Cache for Internet Service Providers (Early preview)
+# Microsoft Connected Cache for Internet Service Providers (early preview)
 
 *Applies to*
 

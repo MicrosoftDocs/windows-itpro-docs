@@ -59,7 +59,7 @@
           href: mcc-isp-vm-performance.md
         - name: Support and troubleshooting
           href: mcc-isp-support.md
-        - name: MCC for ISPs (Early Preview)
+        - name: MCC for ISPs (early preview)
           href: mcc-isp.md
 - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
   href: delivery-optimization-endpoints.md 

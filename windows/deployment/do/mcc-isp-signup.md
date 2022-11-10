@@ -20,7 +20,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This article details the process of signing up for Microsoft Connected Cache for Internet Service Providers (Public Preview). 
+This article details the process of signing up for Microsoft Connected Cache for Internet Service Providers (public preview). 
 
 ## Resource creation and sign up process  
 
