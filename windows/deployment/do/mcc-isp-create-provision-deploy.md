@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Create, provision, and deploy the cache node in Azure portal
+# Create, Configure, provision, and deploy the cache node in Azure portal
 
 **Applies to**
 
@@ -37,9 +37,9 @@ This article outlines how to create, provision, and deploy your Microsoft Connec
 
     :::image type="content" source="images/mcc-isp-cache-node-name.png" alt-text="Screenshot of the create cache node page in the Azure portal, with the cache node name input field.":::
 
-## Provision cache node
+## Configure cache node
 
-During the provisioning of your cache node, there are many fields for you to configure your cache node. To learn more about the definitions of each field, review the [Configuration fields](#general-configuration-fields) at the bottom of this article.
+During the configuration of your cache node, there are many fields for you to configure your cache node. To learn more about the definitions of each field, review the [Configuration fields](#general-configuration-fields) at the bottom of this article.
 
 ### Client routing
 
@@ -75,15 +75,11 @@ BGP (Border Gateway Protocol) routing is another method offered for client routi
     > [!NOTE]
     > **Prefix count** and **IP Space** will stop displaying `0` when BGP is successfully established.
 
-## Deploy cache node  
+## Deploy cache node software to server  
 
-Once the user executes the deployment script, resources are created behind the scenes resulting in the successful cache node installation. The script takes the input of different IDs outlined below to create an IoT Central and an IoT Edge device. Even though Microsoft Connected Cache scenario isn't related to IoT, IoT Central and IoT Edge are installed for management and communication operation purposes.
+Once the user executes the cache server provisioning script, resources are created behind the scenes resulting in the successful cache node installation. The script takes the input of different IDs outlined below to register the server as an Azure IoT Edge device. Even though Microsoft Connected Cache scenario isn't related to IoT, Azure IoT Edge is installed for container management and communication operation purposes.
 
 ### Components installed during provisioning
-
-#### IoT Central
-
-IoT Central is the main hub that handles all messaging and requests from IoT Edge devices. To learn more about the interaction between IoT Edge and IoT Central, review the [IoT Central](/azure/iot-central/core/concepts-iot-edge) documentation.
 
 #### IoT Edge
 
@@ -93,6 +89,10 @@ IoT Edge performs several functions important to manage MCC on your edge device:
 1. Maintains Azure IoT Edge security standards on your edge device.
 1. Ensures that MCC is always running.
 1. Reports MCC health and usage to the cloud for remote monitoring.
+
+#### Docker container engine
+
+Azure IoT Edge relies on an OCI-compatible container runtime. The Moby engine is the only container engine officially supported with IoT Edge and is installed as part of the server provisioning process.
 
 ### Components of the device provisioning script
 
