@@ -32,13 +32,14 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure devices using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-Assign the policy to a security group that contains as members the devices or users that you want to configure.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
