@@ -37,7 +37,7 @@
         - name: Use mobile device management (MDM)
           href: customize-windows-10-start-screens-by-using-mobile-device-management.md
         - name: Troubleshoot Start menu errors
-          href: start-layout-troubleshoot.md
+          href: /troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors.md
         - name: Changes to Start policies in Windows 10
           href: changes-to-start-policies-in-windows-10.md
     - name: Accessibility settings
@@ -89,7 +89,7 @@
         - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
-          href: kiosk-troubleshoot.md
+          href: /troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting
 
 - name: Configure multi-user and guest devices 
   items:
