@@ -13,7 +13,7 @@ ms.topic: how-to
 ms.date: 05/20/2022
 ---
 
-# Microsoft Connected Cache for Internet Service Providers (ISPs)
+# Microsoft Connected Cache for Internet Service Providers (Early preview)
 
 *Applies to*
 
@@ -23,7 +23,7 @@ ms.date: 05/20/2022
 ## Overview
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently an early preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support. Instead, you'll be working directly with the product team to provide feedback on Microsoft Connected Cache. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> This document is for Microsoft Connected Cache (early preview). During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support. Instead, you'll be working directly with the product team to provide feedback on Microsoft Connected Cache. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within operator networks. MCC can be deployed to as many physical servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
 

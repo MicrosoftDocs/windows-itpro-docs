@@ -34,6 +34,9 @@ sections:
         answer: | 
          - Azure subscription  
          - Hardware to host Microsoft Connected Cache - The recommended configuration below will serve approximately 35,000 consumer devices downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.  
+          
+          <!--Using include file, mcc-prerequisites.md, for shared content on DO monitoring-->
+          [!INCLUDE [Microsoft Connected Cache Prerequisites](includes/mcc-prerequisites.md)]
 
          We have one customer who is able to achieve 40-Gbps egress rate using the following hardware specification:  
           - Dell PowerEdge R330  

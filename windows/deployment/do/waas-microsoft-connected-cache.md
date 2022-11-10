@@ -22,7 +22,7 @@ ms.technology: itpro-updates
 - Windows 11
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently an early preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase does not include formal support, and should not be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently a preview feature. To view our early preview documentation, visit [Microsoft Connected Cache for Internet Service Providers (ISPs)](mcc-isp.md). For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 
@@ -58,4 +58,4 @@ The following diagram displays and overview of how MCC functions:
 ## Next steps
 
 - [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise-overview.md)
-- [Microsoft Connected Cache for ISPs](mcc-isp.md)
+- [Microsoft Connected Cache for ISPs](mcc-isp-signup.md)
