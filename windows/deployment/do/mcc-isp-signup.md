@@ -46,6 +46,9 @@ This article details the process of signing up for Microsoft Connected Cache for
 
 ## Traffic estimation
 
+   > [!IMPORTANT]
+   > The traffic estimation feature is coming soon! Stay tuned.
+
 During the sign-up process, Microsoft will provide you with a traffic estimation based on your ASN(s). We make estimations based on our predictions on historical data about Microsoft content download volume. We'll use these estimations to recommend hardware or VM configurations. You can review these recommendations within the Azure portal.
 
 We make these estimations based on the Microsoft content types that Microsoft Connected Cache serves. To learn more about the types of content that are supported, see [Delivery Optimization and Microsoft Connected Cache content type endpoints](delivery-optimization-endpoints.md).
