@@ -57,7 +57,7 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies, which can be configured using Microsoft Intune.
 
-To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -68,7 +68,8 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 :::image type="content" source="images/federated-sign-in-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-intune.png" border="true":::
 
-Assign the policy to a security group that contains as members the devices that require federated sign-in.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 <!--
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
