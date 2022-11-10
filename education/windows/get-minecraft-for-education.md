@@ -4,7 +4,7 @@ description: Learn how to get and distribute Minecraft Education Edition.
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>"
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ms.collection:
   - highpri
   - education

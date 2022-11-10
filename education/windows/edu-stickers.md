@@ -4,7 +4,7 @@ description: Learn about the Stickers feature and how to configure it via Intune
 ms.date: 09/15/2022
 ms.topic: how-to
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>"
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
   - highpri
   - education

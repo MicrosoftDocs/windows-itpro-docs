@@ -4,7 +4,7 @@ description: Learn about the management capabilities offered to Surface devices,
 ms.date: 08/31/2022
 ms.topic: tutorial
 appliesto: 
-  - [✅ <b>Surface devices</b>]
+  - ✅ <b>Surface devices</b>
 ---
 
 # Management functionalities for Surface devices

@@ -4,7 +4,7 @@ description: Learn how IT Pros can opt into changing to Windows 10 Pro Education
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>"
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ms.collection:
   - highpri
   - education
