@@ -16,7 +16,7 @@ ms.technology: itpro-security
 ---
 # Hybrid cloud Kerberos trust deployment
 
-This document describes Windows Hello for Business functionalities or scenarios that apply to:
+This document describes Windows Hello for Business functionalities or scenarios that apply to:\
 ✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
 ✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust.md)\
 ✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology.md#hybrid-azure-ad-join)
