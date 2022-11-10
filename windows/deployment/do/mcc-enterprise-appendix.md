@@ -115,7 +115,3 @@ To verify that the Delivery Optimization client can download content using MCC, 
     
       :::image type="content" source="./images/ent-mcc-delivery-optimization-activity.png" alt-text="Screenshot of the Delivery Optimization Activity Monitor.":::
 
-## More information
-
-[Microsoft Connected Cache for ISPs](mcc-isp.md)</br>
-[Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)

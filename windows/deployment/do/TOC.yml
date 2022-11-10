@@ -35,7 +35,7 @@
         href: mcc-enterprise-prerequisites.md
       - name: Deploy Microsoft Connected Cache
         href: mcc-enterprise-deploy.md
-      - name: Update and uninstall cache node
+      - name: Update or uninstall MCC
         href: mcc-enterprise-update-uninstall.md
       - name: Appendix
         href: mcc-enterprise-appendix.md
@@ -59,8 +59,6 @@
           href: mcc-isp-vm-performance.md
         - name: Support and troubleshooting
           href: mcc-isp-support.md
-        - name: Version history
-          href: mcc-version-history.md
         - name: MCC for ISPs (Early Preview)
           href: mcc-isp.md
 - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache

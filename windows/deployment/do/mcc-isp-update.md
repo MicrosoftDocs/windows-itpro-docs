@@ -23,8 +23,6 @@ Microsoft will release updates for Microsoft Connected Cache periodically to imp
 
 To view which version your cache nodes are currently on, navigate to the **Cache nodes** tab to view the versions in the list view.
 
-To view update release notes, visit [Version history](mcc-version-history.md).
-
 ## Uninstall cache node
 
 There are two main steps required to uninstall your cache node:

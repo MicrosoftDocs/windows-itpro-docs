@@ -39,19 +39,17 @@ This article details the process of signing up for Microsoft Connected Cache for
 1. Once we verify the information entered, a verification code will be sent to the NOC email address provided on [Peering DB](https://www.peeringdb.com/). Once you receive the email, navigate to your Azure portal > **Microsoft Connected Cache** > **Settings** > **Verify operator**, and enter the verification code sent to the NOC email address.
 
     > [!NOTE]
-    > Verification codes expire in 24 hours. You will need to generate a new code if it expires.  
-    :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache.":::
+    > Verification codes expire in 24 hours. You will need to generate a new code if it expires.
+
+   :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache.":::
 
 1. Once verified, follow the instructions in [Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md) to create your cache node.
 
-## Traffic estimation
-
-   > [!IMPORTANT]
-   > This traffic estimation feature is coming soon! Stay tuned.
+<!--## Traffic estimation
 
 During the sign-up process, Microsoft will provide you with a traffic estimation based on your ASN(s). We make estimations based on our predictions on historical data about Microsoft content download volume. We'll use these estimations to recommend hardware or VM configurations. You can review these recommendations within the Azure portal.
 
-We make these estimations based on the Microsoft content types that Microsoft Connected Cache serves. To learn more about the types of content that are supported, see [Delivery Optimization and Microsoft Connected Cache content type endpoints](delivery-optimization-endpoints.md).
+We make these estimations based on the Microsoft content types that Microsoft Connected Cache serves. To learn more about the types of content that are supported, see [Delivery Optimization and Microsoft Connected Cache content type endpoints](delivery-optimization-endpoints.md).  -->
 
 ### Cache performance
 
@@ -74,7 +72,7 @@ RAID disk configurations are discouraged as cache performance will be impacted. 
 
 ### Hardware configuration example
 
-There are many hardware configurations that suit Microsoft Connected Cache. As an example, a customer has deployed the following hardware configuration and is able achieve a peak egress of about 35 Gbps:
+There are many hardware configurations that suit Microsoft Connected Cache. As an example, a customer has deployed the following hardware configuration and is able to achieve a peak egress of about 35 Gbps:
 
 **Dell PowerEdge R330**
 

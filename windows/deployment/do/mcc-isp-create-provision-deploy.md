@@ -31,11 +31,7 @@ This article outlines how to create, provision, and deploy your Microsoft Connec
 
 1. Navigate to **Settings** > **Cache nodes** and select **Create Cache Node**.
 
-    :::image type="content" source="images/mcc-isp-create-cache-node.png" alt-text="Screenshot of the cache node page in the Azure portal":::
-
 1. Provide a name for your cache node and select **Create** to create your cache node.
-
-    :::image type="content" source="images/mcc-isp-cache-node-name.png" alt-text="Screenshot of the create cache node page in the Azure portal, with the cache node name input field.":::
 
 ## Configure cache node
 
@@ -118,7 +114,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 1. Run the deployment script that is shown for your cache node in Azure portal by copying and pasting the script in your terminal. The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
 
-## General configuration fields
+### General configuration fields
 
 | Field Name | Expected Value| Description |
 |---|---|---|

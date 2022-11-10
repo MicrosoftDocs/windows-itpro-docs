@@ -41,8 +41,6 @@ Saving to: 'wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com'
 wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com   100%[========================]
 ```
 
-:::image type="content" source="images/mcc-isp-wget.png" alt-text="Terminal output of successful test result with wget command to validate a Microsoft Connected Cache node." lightbox="./images/mcc-isp-wget.png":::
-
 Similarly, enter the following URL into a web browser on any device on the network:
 
 ```http

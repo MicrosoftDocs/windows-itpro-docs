@@ -16,6 +16,7 @@ ms.topic: article
 
 - Windows 10
 - Windows 11
+
 ## Enterprise requirements for MCC
 
 1. **Azure subscription**: MCC management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management) and IoT Hub resource. Both are free services.
