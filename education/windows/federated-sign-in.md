@@ -115,8 +115,6 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 - The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen
 - Select the *Other User* button, and the standard username/password credentials are available to log into the device
 
------------
-
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
 [AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
 [AZ-3]: /azure/active-directory/hybrid/how-to-connect-sync-whatis

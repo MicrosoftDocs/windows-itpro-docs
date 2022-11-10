@@ -55,7 +55,7 @@ To configure devices using Intune for Education, follow these steps:
 
 ### Configure Take a Test with a custom policy
 
-To configure devices using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -69,7 +69,8 @@ To configure devices using Microsoft Intune, create a [custom policy][MEM-1] wit
 
 :::image type="content" source="./images/takeatest/intune-take-a-test-custom-profile.png" alt-text="Intune portal - creation of a custom policy to configure Take a Test." lightbox="./images/takeatest/intune-take-a-test-custom-profile.png" border="true":::
 
-Assign the policy to a security group that contains as members the devices or users that you want to configure.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -215,8 +216,6 @@ To exit the Take a Test app at any time, press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<k
 The following animation shows the process of signing in to the test-taking account, taking a test, and exiting the test:
 
 :::image type="content" source="./images/takeatest/sign-in-sign-out.gif" alt-text="Signing in and signing out with a test account" border="true":::
-
------------
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 [MEM-2]: /mem/intune/configuration/settings-catalog
