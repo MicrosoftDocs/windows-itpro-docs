@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Turn off natural metrics for Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: e31a27d7-662e-4106-a3d2-c6b0531961d5
 ms.reviewer: 
 audience: itpro

@@ -26,7 +26,7 @@ appliesto:
 
 To get started, Open the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and then go to **Devices** > **Windows** > **Configuration profiles** > **Create profile** > Choose **Windows 10 and later** as the platform, Choose **Templates**, then **Endpoint protection** as the profile type. 
 Select Windows Defender Firewall.
-:::image type="content" source="images/windows-firewall-intune.png" alt-text="Example of a Windows Defender Firewall policy in Microsoft Endpoint Manager.":::
+:::image type="content" source="images/windows-firewall-intune.png" alt-text="Example of a Windows Defender Firewall policy in Microsoft Intune and the Endpoint Manager admin center.":::
 
 >[!IMPORTANT]
 >A single Endpoint Protection profile may contain up to a maximum of 150 firewall rules. If a client device requires more than 150 rules, then multiple profiles must be assigned to it.

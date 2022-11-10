@@ -15,7 +15,7 @@ ms.technology: itpro-updates
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 Update Compliance is fully committed to privacy, centering on these tenets:
@@ -55,6 +55,6 @@ See related topics for additional background information on privacy and treatmen
 - [Windows 10 and the GDPR for IT Decision Makers](/windows/privacy/gdpr-it-guidance)
 - [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization)
 - [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview)
-- [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Licensing Terms and Documentation](https://www.microsoft.com/licensing/docs/)
 - [Confidence in the trusted cloud](https://azure.microsoft.com/support/trust-center/)
 - [Trust Center](https://www.microsoft.com/trustcenter)

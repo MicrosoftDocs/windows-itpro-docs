@@ -1,31 +1,32 @@
 ---
 title: Build a distributed environment for Windows 10 deployment (Windows 10)
-description: In this topic, you'll learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
+description: In this article, you'll learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Build a distributed environment for Windows 10 deployment
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Perform the steps in this article to build a distributed environment for Windows 10 deployment. A distributed environment for deployment is useful when you have a segmented network, for example one that is segmented geographically into two branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of a deployment solution because images of 5 GB or more in size can present bandwidth issues when deployed over the wire. Replicating this content enables clients to do local deployments.
 
-Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we'll deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
+Four computers are used in this article: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we'll deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
 
-For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more information on the infrastructure setup for this topic, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more information on the infrastructure setup for this article, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ![figure 1.](../images/mdt-10-fig01.png)
 
-Computers used in this topic.
+Computers used in this article.
 
 >HV01 is also used in this topic to host the PC0006 virtual machine.
 
@@ -42,7 +43,7 @@ LDS is a built-in feature in MDT for replicating content. However, LDS works bes
 
 ### Why DFS-R is a better option
 
-DFS-R isn't only fast and reliable, but it also offers central monitoring, bandwidth control, and a great delta replication engine. DFS-R will work equally well whether you have 2 sites or 90. When using DFS-R for MDT, we recommend running your deployment servers on Windows Server 2008 R2 or higher. From that version on, you can configure the replication targets as read-only, which is exactly what you want for MDT. This way, you can have your master deployment share centralized and replicate out changes as they happen. DFS-R will quickly pick up changes at the central deployment share in MDT01 and replicate the delta changes to MDT02.
+DFS-R isn't only fast and reliable, but it also offers central monitoring, bandwidth control, and a great delta replication engine. DFS-R will work equally well whether you have 2 sites or 90. When using DFS-R for MDT, we recommend running your deployment servers on Windows Server 2008 R2 or higher. From that version on, you can configure the replication targets as read-only, which is exactly what you want for MDT. This way, you can have your main deployment share centralized and replicate out changes as they happen. DFS-R will quickly pick up changes at the central deployment share in MDT01 and replicate the delta changes to MDT02.
 
 ## Set up Distributed File System Replication (DFS-R) for replication
 
@@ -111,7 +112,7 @@ On **MDT02**:
 
 ### Configure the deployment share
 
-When you have multiple deployment servers sharing the same content, you need to configure the Bootstrap.ini file with information about which server to connect to based on where the client is located. In MDT, that can be done by using the DefaultGateway property.
+When you have multiple deployment servers sharing the same content, you need to configure the Bootstrap.ini file with information about which server to connect to based on where the client is located. In MDT that can be done by using the DefaultGateway property.
 
 On **MDT01**:
 
@@ -158,29 +159,29 @@ On **MDT01**:
 
    ### Create the replication group
 
-6. On MDT01, using DFS Management (dfsmgmt.msc), right-click **Replication**, and click **New Replication Group**.
-7. On the **Replication Group Type** page, select **Multipurpose replication group**, and click **Next**.
-8. On the **Name and Domain** page, assign the **MDTProduction** name, and click **Next**.
-9. On the **Replication Group Members** page, click **Add**, add **MDT01** and **MDT02**, and then click **Next**.
+6. On MDT01, using DFS Management (dfsmgmt.msc), right-click **Replication**, and select **New Replication Group**.
+7. On the **Replication Group Type** page, select **Multipurpose replication group**, and select **Next**.
+8. On the **Name and Domain** page, assign the **MDTProduction** name, and select **Next**.
+9. On the **Replication Group Members** page, select **Add**, add **MDT01** and **MDT02**, and then select **Next**.
 
     ![figure 6.](../images/mdt-10-fig06.png)
 
     Adding the Replication Group Members.
 
-10. On the **Topology Selection** page, select the **Full mesh** option and click **Next**.
-11. On the **Replication Group Schedule and Bandwidth** page, accept the default settings and click **Next**.
-12. On the **Primary Member** page, select **MDT01** and click **Next**.
-13. On the **Folders to Replicate** page, click **Add**, enter **D:\\MDTProduction** as the folder to replicate, click **OK**, and then click **Next**.
-14. On the **Local Path of MDTProduction** on the **Other Members** page, select **MDT02**, and click **Edit**.
-15. On the **Edit** page, select the **Enabled** option, type in **D:\\MDTProduction** as the local path of folder, select the **Make the selected replicated folder on this member read-only** check box, click **OK**, and then click **Next**.
-16. On the **Review Settings and Create Replication Group** page, click **Create**.
-17. On the **Confirmation** page, click **Close**.
+10. On the **Topology Selection** page, select the **Full mesh** option and select **Next**.
+11. On the **Replication Group Schedule and Bandwidth** page, accept the default settings and select **Next**.
+12. On the **Primary Member** page, select **MDT01** and select **Next**.
+13. On the **Folders to Replicate** page, select **Add**, enter **D:\\MDTProduction** as the folder to replicate, select **OK**, and then select **Next**.
+14. On the **Local Path of MDTProduction** on the **Other Members** page, select **MDT02**, and select **Edit**.
+15. On the **Edit** page, select the **Enabled** option, type in **D:\\MDTProduction** as the local path of folder, select the **Make the selected replicated folder on this member read-only** check box, select **OK**, and then select **Next**.
+16. On the **Review Settings and Create Replication Group** page, select **Create**.
+17. On the **Confirmation** page, select **Close**.
 
     ### Configure replicated folders
 
 18. On **MDT01**, using DFS Management, expand **Replication** and then select **MDTProduction**.
-19. In the middle pane, right-click the **MDT01** member and click **Properties**.
-20. On the **MDT01 (MDTProduction) Properties** page, configure the following and then click **OK**:
+19. In the middle pane, right-click the **MDT01** member and select **Properties**.
+20. On the **MDT01 (MDTProduction) Properties** page, configure the following and then select **OK**:
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
         In this scenario the size of the deployment share is known, but you might need to change the values for your environment. A good rule of thumb is to get the size of the 16 largest files and make sure they fit in the staging area. Below is a Windows PowerShell example that calculates the size of the 16 largest files in the D:\\MDTProduction deployment share:
@@ -190,7 +191,7 @@ On **MDT01**:
         ```
 
 21. In the middle pane, right-click the **MDT02** member and select **Properties**.
-22. On the **MDT02 (MDTProduction) Properties** page, configure the following and then click **OK**:
+22. On the **MDT02 (MDTProduction) Properties** page, configure the following and then select **OK**:
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
 
@@ -212,11 +213,11 @@ On **MDT02**:
 
 1. Wait until you start to see content appear in the **D:\\MDTProduction** folder.
 2. Using DFS Management, expand **Replication**, right-click **MDTProduction**, and select **Create Diagnostics Report**.
-3. In the Diagnostics Report Wizard, on the **Type of Diagnostics Report or Test** page, choose **Health report** and click **Next**.
-4. On the **Path and Name** page, accept the default settings and click **Next**.
-5. On the **Members to Include** page, accept the default settings and click **Next**.
-6. On the **Options** page, accept the default settings and click **Next**.
-7. On the **Review Settings and Create Report** page, click **Create**.
+3. In the Diagnostics Report Wizard, on the **Type of Diagnostics Report or Test** page, choose **Health report** and select **Next**.
+4. On the **Path and Name** page, accept the default settings and select **Next**.
+5. On the **Members to Include** page, accept the default settings and select **Next**.
+6. On the **Options** page, accept the default settings and select **Next**.
+7. On the **Review Settings and Create Report** page, select **Create**.
 8. Open the report in Internet Explorer, and if necessary, select the **Allow blocked content** option.
 
 ![figure 9.](../images/mdt-10-fig09.png)
@@ -227,13 +228,13 @@ The DFS Replication Health Report.
 
 ## Configure Windows Deployment Services (WDS) in a remote site
 
-Like you did in the previous topic for MDT01, you need to add the MDT Production Lite Touch x64 Boot image to Windows Deployment Services on MDT02. For the following steps, we assume that WDS has already been installed on MDT02.
+Like you did in the previous article for MDT01, you need to add the MDT Production Lite Touch x64 Boot image to Windows Deployment Services on MDT02. For the following steps, we assume that WDS has already been installed on MDT02.
 1. On MDT02, using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
 2. Browse to the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** file and add the image with the default settings.
 
-## Deploy a Windows 10 client to the remote site
+## Deploy a Windows 10 client to the remote site
 
-Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following optional procedure. 
+Now you should have a solution ready for deploying the Windows 10 client to the remote site: Stockholm, using the MDTProduction deployment share replica on MDT02. You can test this deployment with the following optional procedure. 
 
 >For demonstration purposes, the following procedure uses a virtual machine (PC0006) hosted by the Hyper-V server HV01. To use the remote site server (MDT02) the VM must be assigned a default gateway that matches the one you entered in the Boostrap.ini file.
 
@@ -246,17 +247,17 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     6. Install an operating system from a network-based installation server
 2.  Start the PC0006 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from the WDS server.
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
-    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image 
+    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image 
     2.  Computer Name: PC0006
     3.  Applications: Select the Install - Adobe Reader
 4.  Setup will now start and perform the following steps:
-    1.  Install the Windows 10 Enterprise operating system.
+    1.  Install the Windows 10 Enterprise operating system.
     2.  Install applications.
     3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
 
 ![pc0001.](../images/pc0006.png)
 
-## Related topics
+## Related articles
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>

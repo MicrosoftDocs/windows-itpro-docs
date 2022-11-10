@@ -110,9 +110,9 @@ list volume
 
 ![Output of the list volume command in the Diskpart app.](./images/4509195-en-1.png)
 
-If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from Microsoft Endpoint Configuration Manager):
+If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from Microsoft Configuration Manager):
 
-![Windows image configuration in Microsoft Endpoint Configuration Manager.](./images/configmgr-imageconfig.jpg)
+![Windows image configuration in Microsoft Configuration Manager.](./images/configmgr-imageconfig.jpg)
 
 #### Step 2: Verify the status of WinRE
 

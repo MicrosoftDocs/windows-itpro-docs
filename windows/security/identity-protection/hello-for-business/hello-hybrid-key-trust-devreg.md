@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 

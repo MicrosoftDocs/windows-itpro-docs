@@ -2,14 +2,15 @@
 title: MBR2GPT
 description: Use MBR2GPT.EXE to convert a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk.
 ms.prod: windows-client
-author: aczechowski
-ms.author: aaroncz
-ms.date: 02/13/2018
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+ms.date: 10/31/2022
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.technology: itpro-deploy
 ---
 
 # MBR2GPT.EXE
@@ -17,7 +18,7 @@ ms.collection: highpri
 **Applies to**
 -   Windows 10
 
-**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS) by using the **/allowFullOS** option.
+**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool runs from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS) by using the **/allowFullOS** option.
 
 MBR2GPT.EXE is located in the **Windows\\System32** directory on a computer running Windows 10 version 1703 (also known as the Creator's Update) or later.
 
@@ -29,12 +30,12 @@ See the following video for a detailed description and demonstration of MBR2GPT.
 
 You can use MBR2GPT to:
 
-- Convert any attached MBR-formatted system disk to the GPT partition format. You cannot use the tool to convert non-system disks from MBR to GPT.
-- Convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+- Convert any attached MBR-formatted system disk to the GPT partition format. You can't use the tool to convert non-system disks from MBR to GPT.
+- Convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you'll need to delete the existing protectors and recreate them.
 - Convert operating system disks that have earlier versions of Windows 10 installed, such as versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
-- Convert an operating system disk from MBR to GPT using Configuration Manager or MDT provided that your task sequence uses Windows PE version 1703 or later.
+- Convert an operating system disk from MBR to GPT using Configuration Manager or MDT if your task sequence uses Windows PE version 1703 or later.
 
-Offline conversion of system disks with earlier versions of Windows installed, such as Windows 7, 8, or 8.1 are not officially supported. The recommended method to convert these disks is to upgrade the operating system to Windows 10 first, then perform the MBR to GPT conversion.
+Offline conversion of system disks with earlier versions of Windows installed, such as Windows 7, 8, or 8.1 aren't officially supported. The recommended method to convert these disks is to upgrade the operating system to Windows 10 first, then perform the MBR to GPT conversion.
 
 > [!IMPORTANT]
 > After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode.
@@ -45,17 +46,17 @@ Offline conversion of system disks with earlier versions of Windows installed, s
 
 Before any change to the disk is made, MBR2GPT validates the layout and geometry of the selected disk to ensure that:
 - The disk is currently using MBR
-- There is enough space not occupied by partitions to store the primary and secondary GPTs:
-  - 16KB + 2 sectors at the front of the disk
-  - 16KB + 1 sector at the end of the disk
-- There are at most 3 primary partitions in the MBR partition table
+- There's enough space not occupied by partitions to store the primary and secondary GPTs:
+  - 16 KB + 2 sectors at the front of the disk
+  - 16 KB + 1 sector at the end of the disk
+- There are at most three primary partitions in the MBR partition table
 - One of the partitions is set as active and is the system partition
-- The disk does not have any extended/logical partition
+- The disk doesn't have any extended/logical partition
 - The BCD store on the system partition contains a default OS entry pointing to an OS partition
-- The volume IDs can be retrieved for each volume which has a drive letter assigned
+- The volume IDs can be retrieved for each volume that has a drive letter assigned
 - All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option
 
-If any of these checks fails, the conversion will not proceed and an error will be returned.
+If any of these checks fails, the conversion won't proceed, and an error will be returned.
 
 ## Syntax
 
@@ -67,10 +68,10 @@ If any of these checks fails, the conversion will not proceed and an error will 
 |----|-------------|
 |/validate| Instructs MBR2GPT.exe to perform only the disk validation steps and report whether the disk is eligible for conversion. |
 |/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
-|/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
+|/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
 |/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
-|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexadecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
-|/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment. <br>**Note**: Since the existing MBR system partition is in use while running the full Windows environment, it cannot be reused. In this case, a new ESP is created by shrinking the OS partition.|
+|/map:\<source\>=\<destination\>| Specifies other partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexadecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
+|/allowFullOS| By default, MBR2GPT.exe is blocked unless it's run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment. <br>**Note**: Since the existing MBR system partition is in use while running the full Windows environment, it can't be reused. In this case, a new ESP is created by shrinking the OS partition.|
 
 ## Examples
 
@@ -225,9 +226,9 @@ Offset in Bytes: 524288000
 The following steps illustrate high-level phases of the MBR-to-GPT conversion process:
 
 1. Disk validation is performed.
-2. The disk is repartitioned to create an EFI system partition (ESP) if one does not already exist.
+2. The disk is repartitioned to create an EFI system partition (ESP) if one doesn't already exist.
 3. UEFI boot files are installed to the ESP.
-4. GPT metadata and layout information is applied.
+4. GPT metadata and layout information are applied.
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
 
@@ -236,14 +237,14 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 For Windows to remain bootable after the conversion, an EFI system partition (ESP) must be in place. MBR2GPT creates the ESP using the following rules:
 
 1. The existing MBR system partition is reused if it meets these requirements:
-   1. It is not also the OS or Windows Recovery Environment partition.
-   1. It is at least 100MB (or 260MB for 4K sector size disks) in size.
-   1. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.
-   1. The conversion is not being performed from the full OS. In this case, the existing MBR system partition is in use and cannot be repurposed.
+   1. It isn't also the OS or Windows Recovery Environment partition.
+   1. It is at least 100 MB (or 260 MB for 4K sector size disks) in size.
+   1. It's less than or equal to 1 GB in size. This size is a safety precaution to ensure it isn't a data partition.
+   1. The conversion isn't being performed from the full OS. In this case, the existing MBR system partition is in use and can't be repurposed.
 
-2. If the existing MBR system partition cannot be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100MB (or 260MB for 4K sector size disks) and is formatted FAT32.
+2. If the existing MBR system partition can't be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100 MB (or 260 MB for 4K sector size disks) and is formatted FAT32.
 
-If the existing MBR system partition is not reused for the ESP, it is no longer used by the boot process after the conversion. Other partitions are not modified.
+If the existing MBR system partition isn't reused for the ESP, it's no longer used by the boot process after the conversion. Other partitions aren't modified.
 
 >[!IMPORTANT]
 >If the existing MBR system partition is not reused for the ESP, it might be assigned a drive letter. If you do not wish to use this small partition, you must manually hide the drive letter.
@@ -268,7 +269,7 @@ For more information about partition types, see:
 
 ### Persisting drive letter assignments
 
-The conversion tool will attempt to remap all drive letter assignment information contained in the registry that correspond to the volumes of the converted disk. If a drive letter assignment cannot be restored, an error will be displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter. 
+The conversion tool will attempt to remap all drive letter assignment information contained in the registry that corresponds to the volumes of the converted disk. If a drive letter assignment can't be restored, an error will be displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter. 
 
 > [!IMPORTANT]
 > This code runs after the layout conversion has taken place, so the operation cannot be undone at this stage.
@@ -277,11 +278,11 @@ The conversion tool will obtain volume unique ID data before and after the layou
 
 1. Check if the unique ID corresponds to any of the unique IDs for any of the volumes that are part of the converted disk.
 2. If found, set the value to be the new unique ID, obtained after the layout conversion.
-3. If the new unique ID cannot be set and the value name starts with \DosDevices, issue a console and log warning about the need for manual intervention in properly restoring the drive letter assignment.
+3. If the new unique ID can't be set and the value name starts with \DosDevices, issue a console and log warning about the need for manual intervention in properly restoring the drive letter assignment.
 
 ## Troubleshooting
 
-The tool will display status information in its output. Both validation and conversion are clear if any errors are encountered. For example, if one or more partitions do not translate properly, this is displayed and the conversion not performed. To view more detail about any errors that are encountered, see the associated [log files](#logs).
+The tool will display status information in its output. Both validation and conversion are clear if any errors are encountered. For example, if one or more partitions don't translate properly, this is displayed and the conversion not performed. To view more detail about any errors that are encountered, see the associated [log files](#logs).
 
 ### Logs
 
@@ -354,17 +355,16 @@ MBR2GPT has the following associated return codes:
 |4| Conversion failed due to invalid command-line parameters. |
 |5| Conversion failed due to error reading the geometry and layout of the selected disk.|
 |6| Conversion failed because one or more volumes on the disk is encrypted.|
-|7| Conversion failed because the geometry and layout of the selected disk do not meet requirements.|
+|7| Conversion failed because the geometry and layout of the selected disk don't meet requirements.|
 |8| Conversion failed due to error while creating the EFI system partition.|
 |9| Conversion failed due to error installing boot files.|
 |10| Conversion failed due to error while applying GPT layout.|
-|100| Conversion to GPT layout succeeded, but some boot configuration data entries could not be restored.|
+|100| Conversion to GPT layout succeeded, but some boot configuration data entries couldn't be restored.|
 
 
 ### Determining the partition type
 
 You can type the following command at a Windows PowerShell prompt to display the disk number and partition type. Example output is also shown:
-
 
 ```powershell
 PS C:\> Get-Disk | ft -Auto
@@ -379,8 +379,7 @@ You can also view the partition type of a disk by opening the Disk Management to
 
 :::image type="content" alt-text="Volumes." source="images/mbr2gpt-volume.png":::
 
-
-If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:
+If Windows PowerShell and Disk Management aren't available, such as when you're using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:
 
 ```console
 X:\>DiskPart
@@ -400,18 +399,17 @@ DISKPART> list disk
 
 In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is formatted using GPT.
 
-
 ## Known issue
 
-### MBR2GPT.exe cannot run in Windows PE
+### MBR2GPT.exe can't run in Windows PE
 
 When you start a Windows 10, version 1903-based computer in the Windows Preinstallation Environment (Windows PE), you encounter the following issues:
 
 **Issue 1** When you run the MBR2GPT.exe command, the process exits without converting the drive.
 
-**Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there is no output from the tool.
+**Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there's no output from the tool.
 
-**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Endpoint Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
+**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
 
 #### Cause
 
@@ -419,7 +417,7 @@ This issue occurs because in Windows 10, version 1903 and later versions, MBR2GP
 
 #### Workaround
 
-To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. To do this, follow these steps:
+To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. Use follow these steps:
 
 1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
 
@@ -458,8 +456,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 
 3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
 
-
-## Related topics
+## Related articles
 
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <BR>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)

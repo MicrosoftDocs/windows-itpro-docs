@@ -1,16 +1,17 @@
 ---
 title: Resolve Windows 10 upgrade errors - Windows IT Pro
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 ms.prod: windows-client
-author: aczechowski
+author: frankroj
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
-# Resolve Windows 10 upgrade errors : Technical information for IT Pros
+# Resolve Windows 10 upgrade errors: Technical information for IT Pros
 
 **Applies to**
 -   Windows 10
@@ -20,7 +21,7 @@ ms.technology: itpro-deploy
 
 This article contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. 
 
-The article has been divided into sub-topics of different technical levels. Basic level provides common procedures that can resolve several types of upgrade errors. Advanced level requires some experience with detailed troubleshooting methods.
+The article has been divided into subtopics of different technical levels. Basic level provides common procedures that can resolve several types of upgrade errors. Advanced level requires some experience with detailed troubleshooting methods.
 
 The following four levels are assigned:
 
@@ -50,7 +51,7 @@ See the following topics in this article:
     - [Other error codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#other-error-codes): Additional causes and mitigation procedures are provided for some error codes.
 - [Submit Windows 10 upgrade errors](submit-errors.md): \Level 100\ Submit upgrade errors to Microsoft for analysis.
 
-## Related topics
+## Related articles
 
 [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)

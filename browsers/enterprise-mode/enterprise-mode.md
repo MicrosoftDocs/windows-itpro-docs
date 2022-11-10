@@ -5,7 +5,7 @@ ms.pagetype: security
 description: Use this section to learn about how to turn on Enterprise Mode.
 author: dansimp
 ms.author: dansimp
-ms.prod: windows-client
+ms.prod: edge
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp

@@ -1,33 +1,34 @@
 ---
 title: Deploy a Windows 10 image using MDT (Windows 10)
-description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
+description: This article will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
 ms.collection: 
   - highpri
+ms.date: 10/28/2022
 ---
 
 # Deploy a Windows 10 image using MDT
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
-This topic will show you how to take your reference image for Windows 10 (that was [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This article will show you how to take your reference image for Windows 10 (that was [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
 
 We'll prepare for this deployment by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We'll configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
-For the purposes of this topic, we'll use four computers: DC01, MDT01, HV01 and PC0005. 
+For the purposes of this article, we'll use four computers: DC01, MDT01, HV01 and PC0005. 
 
 - DC01 is a domain controller 
 - MDT01 is a domain member server 
 - HV01 is a Hyper-V server 
-- PC0005 is a blank device to which we'll deploy Windows 10
+- PC0005 is a blank device to which we'll deploy Windows 10
 
 MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
 
@@ -38,7 +39,7 @@ MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contos
 
 ## Step 1: Configure Active Directory permissions
 
-These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you've  The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
+These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you've  The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
 
 On **DC01**:
 
@@ -85,13 +86,13 @@ The steps for creating the deployment share for production are the same as when 
 
 1. Ensure you're signed on as: contoso\administrator.
 2. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
-3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and click **Next**.
+3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and select **Next**.
 
-4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and click **Next**.
+4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and select **Next**.
 
-5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and click **Next**.
+5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and select **Next**.
 
-6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
+6. On the **Options** page, accept the default settings and select **Next** twice, and then select **Finish**.
 7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
 ### Configure permissions for the production deployment share
@@ -110,22 +111,22 @@ On **MDT01**:
 
 ## Step 3: Add a custom image
 
-The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores other components in the Sources\\SxS folder that is outside the image and may be required when installing components.
+The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores other components in the Sources\\SxS folder that is outside the image and may be required when installing components.
 
-### Add the Windows 10 Enterprise x64 RTM custom image
+### Add the Windows 10 Enterprise x64 RTM custom image
 
-In these steps, we assume that you've completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you've a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on MDT01.
+In these steps, we assume that you've completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) article, so you've a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on MDT01.
 
 1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 10**.
 2.  Right-click the **Windows 10** folder and select **Import Operating System**.
 
-3.  On the **OS Type** page, select **Custom image file** and click **Next**.
+3.  On the **OS Type** page, select **Custom image file** and select **Next**.
 
-4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
+4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and select **Next**.
 
-5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
+5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and select **Next**.
 
-6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
+6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, select **Next** twice, and then select **Finish**.
 7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
 
 >[!NOTE]
@@ -142,22 +143,22 @@ When you configure your MDT Build Lab deployment share, you can also add applica
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100520060_en_US.exe) to **D:\\setup\\adobe** on MDT01.
-2. Extract the .exe file that you downloaded to a .msi (ex: .\AcroRdrDC2100520060_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2200320263_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the .exe file that you downloaded to a .msi (ex: .\AcroRdrDC2200320263_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
 3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
 
 5. In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
 
-6. On the **Application Type** page, select the **Application with source files** option and click **Next**.
+6. On the **Application Type** page, select the **Application with source files** option and select **Next**.
 
-7. On the **Details** page, in the **Application Name** text box, type **Install - Adobe Reader** and click *Next**.
+7. On the **Details** page, in the **Application Name** text box, type **Install - Adobe Reader** and select *Next**.
 
-8. On the **Source** page, in the **Source Directory** text box, browse to **D:\\setup\\adobe\\install** and click **Next**.
+8. On the **Source** page, in the **Source Directory** text box, browse to **D:\\setup\\adobe\\install** and select **Next**.
 
-9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
+9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and select **Next**.
 
-10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
+10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, select **Next** twice, and then select **Finish**.
 
     ![acroread image.](../images/acroread.png)
 
@@ -165,7 +166,7 @@ On **MDT01**:
 
 ## Step 5: Prepare the drivers repository
 
-In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
+In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
 -   Dell Latitude 7390
 -   HP EliteBook 8560w
@@ -250,12 +251,12 @@ On **MDT01**:
 2.  In the New Selection Profile Wizard, create a selection profile with the following settings:
     1.  Selection Profile name: WinPE x86
     2.  Folders: Select the WinPE x86 folder in Out-of-Box Drivers.
-    3. Click **Next**, **Next** and **Finish**.
+    3. Select **Next**, **Next** and **Finish**.
 3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
 4.  In the New Selection Profile Wizard, create a selection profile with the following settings:
     1.  Selection Profile name: WinPE x64
     2.  Folders: Select the WinPE x64 folder in Out-of-Box Drivers.
-    3.  Click **Next**, **Next** and **Finish**.
+    3.  Select **Next**, **Next** and **Finish**.
 
     ![figure 5.](../images/fig5-selectprofile.png)
 
@@ -381,7 +382,7 @@ On **MDT01**:
 
    4.  State Restore. Enable the **Windows Update (Post-Application Installation)** action.
 
-3. Click **OK**.
+3. Select **OK**.
 
    ![drivergroup.](../images/fig6-taskseq.png)
 
@@ -438,7 +439,7 @@ On **MDT01**:
    SkipFinalSummary=NO
    ```
 
-3. Click **Edit Bootstrap.ini** and modify using the following information:
+3. Select **Edit Bootstrap.ini** and modify using the following information:
 
    ``` 
    [Settings]
@@ -480,7 +481,7 @@ On **MDT01**:
 
 10. In the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box.
 
-11. Click **OK**.
+11. Select **OK**.
 
     >[!NOTE]
     >It will take a while for the Deployment Workbench to create the monitoring database and web service.
@@ -607,7 +608,7 @@ On **MDT01**:
 
 9. In the **Features** sub tab, in addition to the default selected feature pack, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** check box.
 
-10. Click **OK**.
+10. Select **OK**.
 
 ### Update the deployment share
 
@@ -640,9 +641,9 @@ On **MDT01**:
 
    The boot image added to the WDS console.
 
-### Deploy the Windows 10 client
+### Deploy the Windows 10 client
 
-At this point, you should have a solution ready for deploying the Windows 10 client. We recommend starting by trying a few deployments at a time until you're confident that your configuration works as expected. We find it useful to try some initial tests on virtual machines before testing on physical hardware. These tests help rule out hardware issues when testing or troubleshooting. Here are the steps to deploy your Windows 10 image to a virtual machine:
+At this point, you should have a solution ready for deploying the Windows 10 client. We recommend starting by trying a few deployments at a time until you're confident that your configuration works as expected. We find it useful to try some initial tests on virtual machines before testing on physical hardware. These tests help rule out hardware issues when testing or troubleshooting. Here are the steps to deploy your Windows 10 image to a virtual machine:
 
 On **HV01**:
 
@@ -721,7 +722,7 @@ Setting up MDT for multicast is straightforward. You enable multicast on the dep
 On **MDT01**:
 
 1.  In the Deployment Workbench, right-click the **MDT Production** deployment share folder and select **Properties**.
-2.  On the **General** tab, select the **Enable multicast for this deployment share (requires Windows Server 2008 R2 Windows Deployment Services)** check box, and click **OK**.
+2.  On the **General** tab, select the **Enable multicast for this deployment share (requires Windows Server 2008 R2 Windows Deployment Services)** check box, and select **OK**.
 3.  Right-click the **MDT Production** deployment share folder and select **Update Deployment Share**.
 4.  After updating the deployment share, use the Windows Deployment Services console to, verify that the multicast namespace was created.
 
@@ -729,9 +730,9 @@ On **MDT01**:
 
     The newly created multicast namespace.
 
-## Use offline media to deploy Windows 10
+## Use offline media to deploy Windows 10
 
-In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can easily generate an offline version of your deployment share - either the full deployment share or a subset of it - by using selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
+In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can easily generate an offline version of your deployment share - either the full deployment share or a subset of it - by using selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
 
 Offline media are useful not only when you don't have network connectivity to the deployment share, but also when you've limited connection to the deployment share and don't want to copy 5 GB of data over the wire. Offline media can still join the domain, but you save the transfer of operating system images, drivers, and applications over the wire.
 
@@ -796,7 +797,7 @@ On **MDT01**:
 
 6.  On the **Drivers and Patches** sub tab, select the **WinPE x64** selection profile and select the **Include all drivers from the selection profile** option.
 
-7.  Click **OK**.
+7.  Select **OK**.
 
 ### Generate the offline media
 
@@ -837,7 +838,7 @@ As referenced in [Windows 10 deployment scenarios and tools](../windows-deployme
 
 The partitions when deploying an UEFI-based machine.
 
-## Related topics
+## Related articles
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>

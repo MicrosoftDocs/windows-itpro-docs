@@ -8,6 +8,7 @@ manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 20H2 for IT Pros
@@ -69,7 +70,7 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 Enhancements to Windows Autopilot since the last release of Windows 10 include:
 - [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
 - [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
-- Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
+- Enhancements to Windows Autopilot deployment reporting are in preview. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Select **Autopilot deployment (preview)**.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 

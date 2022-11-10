@@ -13,6 +13,7 @@ manager: aaroncz
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Multi-factor Unlock
 

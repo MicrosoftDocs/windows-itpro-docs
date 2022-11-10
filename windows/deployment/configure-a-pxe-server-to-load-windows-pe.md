@@ -1,13 +1,15 @@
 ---
 title: Configure a PXE server to load Windows PE (Windows 10)
-description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
+description: This article describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
-manager: dougeby
-ms.author: aaroncz
+author: frankroj
+manager: aaroncz
+ms.author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Configure a PXE server to load Windows PE
@@ -16,11 +18,11 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
-This walkthrough describes how to configure a PXE server to load Windows PE by booting a client computer from the network. Using the Windows PE tools and a Windows 10 image file, you can install Windows 10 from the network.
+This walkthrough describes how to configure a PXE server to load Windows PE by booting a client computer from the network. Using the Windows PE tools and a Windows 10 image file, you can install Windows 10 from the network.
 
 ## Prerequisites
 
-- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) and the Windows PE add-on with ADK installed.
+- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) and the Windows PE add-on with ADK installed.
 - A DHCP server: A DHCP server or DHCP proxy configured to respond to PXE client requests is required.
 - A PXE server: A server running the TFTP service that can host Windows PE boot files that the client will download.
 - A file server: A server hosting a network file share.
@@ -29,11 +31,11 @@ All four of the roles specified above can be hosted on the same computer or each
 
 ## Step 1: Copy Windows PE source files
 
-1. On the deployment computer, click **Start**, and type **deployment**.
+1. On the deployment computer, select **Start**, and type **deployment**.
 
-2. Right-click **Deployment and Imaging Tools Environment** and then click **Run as administrator**. The Deployment and Imaging Tools Environment shortcut opens a Command Prompt window and automatically sets environment variables to point to all the necessary tools.
+2. Right-click **Deployment and Imaging Tools Environment** and then select **Run as administrator**. The Deployment and Imaging Tools Environment shortcut opens a Command Prompt window and automatically sets environment variables to point to all the necessary tools.
 
-3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. The value of **&lt;architecture&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory doesn't already exist, it will be created.
+3. Run the following command to copy the base Windows PE files into a new folder. The script requires two arguments: hardware architecture and destination location. The value of **&lt;architecture&gt;** can be **x86**, **amd64**, or **arm** and **&lt;destination&gt;** is a path to a local directory. If the directory doesn't already exist, it will be created.
 
     ```
     copype.cmd <architecture> <destination>
@@ -53,7 +55,7 @@ All four of the roles specified above can be hosted on the same computer or each
     C:\winpe_amd64\media
     C:\winpe_amd64\mount
     ```
-4. Mount the base Windows PE image (winpe.wim) to the \mount directory using the DISM tool. Mounting an image file unpacks the file contents into a folder so that you can make changes directly or by using tools such as DISM. See the following example.
+4. Mount the base Windows PE image (winpe.wim) to the \mount directory using the DISM tool. Mounting an image file unpacks the file contents into a folder so that you can make changes directly or by using tools such as DISM. See the following example.
 
     ```
     Dism /mount-image /imagefile:c:\winpe_amd64\media\sources\boot.wim /index:1 /mountdir:C:\winpe_amd64\mount
@@ -77,7 +79,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     copy C:\winpe_amd64\media\boot\boot.sdi y:\Boot
     ```
-8.  Copy the bootable Windows PE image (boot.wim) to the \boot folder.
+8.  Copy the bootable Windows PE image (boot.wim) to the \boot folder.
 
     ```
     copy C:\winpe_amd64\media\sources\boot.wim y:\Boot
@@ -109,7 +111,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
     Copy this GUID for use in the next set of commands. In each command shown, replace "GUID1" with your GUID.
 
-3.  Create a new boot application entry for the Windows PE image:
+3.  Create a new boot application entry for the Windows PE image:
 
     ```
     bcdedit /store c:\BCD /set {GUID1} device ramdisk=[boot]\Boot\boot.wim,{ramdiskoptions} 
@@ -173,13 +175,12 @@ The following process summarizes the PXE client boot.
 1.  A client is directed by DHCP options 066 and 067 to download boot\\PXEboot.n12 from the TFTP server.
 2.  PXEboot.n12 immediately begins a network boot.
 3.  The client downloads boot\\bootmgr.exe and the boot\\BCD file from the TFTP server. Note: The BCD store must reside in the \\boot directory on the TFTP server and must be named BCD.
-5.  Bootmgr.exe reads the BCD operating system entries and downloads boot\\boot.sdi and the Windows PE image (boot\\boot.wim). Optional files that can also be downloaded include true type fonts (boot\\Fonts\\wgl4\_boot.ttf) and the hibernation state file (\\hiberfil.sys) if these files are present.
-6.  Bootmgr.exe starts Windows PE by calling winload.exe within the Windows PE image.
+5.  Bootmgr.exe reads the BCD operating system entries and downloads boot\\boot.sdi and the Windows PE image (boot\\boot.wim). Optional files that can also be downloaded include true type fonts (boot\\Fonts\\wgl4\_boot.ttf) and the hibernation state file (\\hiberfil.sys) if these files are present.
+6.  Bootmgr.exe starts Windows PE by calling winload.exe within the Windows PE image.
 7.  Windows PE loads, a command prompt opens and wpeinit.exe is run to initialize Windows PE.
 8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. With the help of these tools accompanied by a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
 
 ## See Also 
-
 
 ### Concepts
 

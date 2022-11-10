@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 ms.reviewer: 
 manager: dansimp

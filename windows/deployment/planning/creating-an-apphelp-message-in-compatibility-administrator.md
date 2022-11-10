@@ -2,31 +2,29 @@
 title: Create AppHelp Message in Compatibility Administrator (Windows 10)
 description: Create an AppHelp text message with Compatibility Administrator; a message that appears upon starting an app with major issues on the Windows® operating system.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/19/2017
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
 # Creating an AppHelp Message in Compatibility Administrator
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 The Compatibility Administrator tool enables you to create an AppHelp text message. This is a blocking or non-blocking message that appears when a user starts an application that you know has major functionality issues on the Windows® operating system.
 
 ## Blocking Versus Non-Blocking AppHelp Messages
-
 
 A blocking AppHelp message prevents the application from starting and displays a message to the user. You can define a specific URL where the user can download an updated driver or other fix to resolve the issue. When using a blocking AppHelp message, you must also define the file-matching information to identify the version of the application and enable the corrected version to continue.
 
@@ -34,13 +32,10 @@ A non-blocking AppHelp message doesn't prevent the application from starting, bu
 
 ## Searching for Existing Compatibility Fixes
 
-
 The Compatibility Administrator tool has preloaded fixes for many common applications, including known compatibility fixes, compatibility modes, and AppHelp messages. Before you create a new AppHelp message, you can search for an existing application and then copy and paste the known fixes into your custom database.
 
 > [!IMPORTANT]
 > Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
-
- 
 
 **To search for an existing application**
 
@@ -49,7 +44,6 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 2.  Click the application name to view the preloaded AppHelp messages, compatibility fixes, and compatibility modes.
 
 ## Creating a New AppHelp Message
-
 
 If you're unable to find a preloaded AppHelp message for your application, you can create a new one for use by your custom database.
 
@@ -79,10 +73,9 @@ If you're unable to find a preloaded AppHelp message for your application, you c
 
 6.  Type the website URL and the message text to appear when the user starts the application, and then click **Finish**.
 
-## Issues with AppHelp Messages and Computers Running Windows 2000
+## Issues with AppHelp Messages and Computers Running Windows 2000
 
-
-The following issues might occur with computers running Windows 2000:
+The following issues might occur with computers running Windows 2000:
 
 -   You might be unable to create a custom AppHelp message.
 

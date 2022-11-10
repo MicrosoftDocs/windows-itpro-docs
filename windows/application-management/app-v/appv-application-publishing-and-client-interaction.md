@@ -231,7 +231,7 @@ The App-V Client can be configured to change the default behavior of streaming. 
 |PackageSourceRoot|The root override where packages should be streamed from|
 |SharedContentStoreMode|Enables the use of Shared Content Store for VDI scenarios|
 
-These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors in streaming packages that is important to understand:
+These settings affect the behavior of streaming App-V package assets to the client. By default, App-V only downloads the assets required after downloading the initial publishing and primary feature blocks. There are three specific behaviors in streaming packages that are important to understand:
 
 - Background Streaming
 - Optimized Streaming
@@ -344,7 +344,7 @@ This process will recreate both the local and network locations for AppData and 
 
 In an App-V Full Infrastructure, after applications are sequenced, they're managed and published to users or computers through the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are input as PowerShell commands on the computer running the App-V Client.
 
-This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Microsoft Endpoint Configuration Manager, see [Deploy App-V virtual applications with Configuration Manager](/mem/configmgr/apps/get-started/deploying-app-v-virtual-applications).
+This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Microsoft Configuration Manager, see [Deploy App-V virtual applications with Configuration Manager](/mem/configmgr/apps/get-started/deploying-app-v-virtual-applications).
 
 The App-V application lifecycle tasks are triggered at user sign in (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured (after the client is enabled) with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
 

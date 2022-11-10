@@ -18,7 +18,7 @@ To avoid end-user disruption, device deregistration in Windows Autopatch only de
 
 **To deregister a device:**
 
-1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Windows Autopatch** in the left navigation menu.
 1. Select **Devices**.
 1. In either **Ready** or **Not ready** tab, select the device(s) you want to deregister.
@@ -42,7 +42,7 @@ You can hide unregistered devices you don't expect to be remediated anytime soon
 
 **To hide unregistered devices:**
 
-1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Windows Autopatch** in the left navigation menu.
 1. Select **Devices**.
 1. In the **Not ready** tab, select an unregistered device or a group of unregistered devices you want to hide then select **Status == All**.

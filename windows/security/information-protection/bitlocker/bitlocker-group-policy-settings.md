@@ -13,6 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 04/17/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker group policy settings

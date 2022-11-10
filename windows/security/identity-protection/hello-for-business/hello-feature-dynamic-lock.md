@@ -13,6 +13,7 @@ ms.date: 07/12/2022
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # Dynamic lock

@@ -1,14 +1,14 @@
 ---
 title: Device HealthAttestation CSP
 description: Learn how the DHA-CSP enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date:
+ms.date: 
 ---
 
 # Device HealthAttestation CSP
@@ -265,7 +265,7 @@ calls between client and MAA and for each call the GUID is separated by semicolo
 
 ### MAA CSP Integration Steps
 
-1. Set up a MAA provider instance: MAA instance can be created following the steps at [Quickstart: Set up Azure Attestation by using the Azure portal](/azure/attestation/quickstart-portal].
+1. Set up an MAA provider instance: MAA instance can be created following the steps at [Quickstart: Set up Azure Attestation by using the Azure portal](/azure/attestation/quickstart-portal).
 
 2. Update the provider with an appropriate policy: The MAA instance should be updated with an appropriate policy. For more information, see [How to author an Azure Attestation policy](/azure/attestation/claim-rule-grammar).
 
@@ -932,6 +932,16 @@ If DEPPolicy = 0 (Off), then take one of the following actions that align with y
 - Disallow access to HBI assets.
 - Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 - Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
+
+DEP policy evaluation is a non binary status when queried. It is then mapped to an On/Off state.
+
+|DEP policy level |Description | Attestation reported level | Property value |
+|--------------|-----------|------------|-------------|
+|OptIn (default configuration) |Only Windows system components and services have DEP applied. | 0 | 2 |
+|OptOut |DEP is enabled for all processes. Administrators can manually create a list of specific applications that do not have DEP applied. | 1 | 3 |
+|AlwaysOn |DEP is enabled for all processess. | 3 | 1 |
+|AlwaysOff |DEP is not enabled for any process. | 2 | 0 |
+
 
 <a href="" id="bitlockerstatus"></a>**BitLockerStatus** (at boot time)
 

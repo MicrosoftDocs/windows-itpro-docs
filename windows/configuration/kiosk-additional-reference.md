@@ -4,10 +4,11 @@ description: Find more information for configuring, validating, and troubleshoot
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: reference
+ms.technology: itpro-configure
 ---
 
 # More kiosk methods and reference information

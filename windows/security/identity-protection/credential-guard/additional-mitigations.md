@@ -10,6 +10,7 @@ manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.technology: itpro-security
 ---
 
 # Additional mitigations
