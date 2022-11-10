@@ -18,11 +18,11 @@ ms.technology: itpro-security
 ---
 # Hybrid cloud Kerberos trust deployment
 
-✅ **Deployment type:** [hybrid](hello-how-it-works-technology#hybrid-deployment)\
-✅ **Trust type:** [key trust](hello-hybrid-key-trust)\
-✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust)\
-✅ **Trust type:** [certificate trust](hello-hybrid-cert-trust)\
-✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology#hybrid-azure-ad-join)
+✅ **Deployment type:** [hybrid](./hello-how-it-works-technology#hybrid-deployment)\
+✅ **Trust type:** [key trust](./hello-hybrid-key-trust)\
+✅ **Trust type:** [cloud Kerberos trust](./hello-hybrid-cloud-kerberos-trust)\
+✅ **Trust type:** [certificate trust](./hello-hybrid-cert-trust)\
+✅ **Device registration type:** [Azure AD join](./hello-how-it-works-technology#azure-active-directory-join), [Hybrid Azure AD join](./hello-how-it-works-technology#hybrid-azure-ad-join)
 
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
 
