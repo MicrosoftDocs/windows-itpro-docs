@@ -1,16 +1,17 @@
 ---
 title: Prepare for deployment with MDT (Windows 10)
-description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT).
+description: This article will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT).
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
 ms.collection: 
   - highpri
+ms.date: 10/28/2022
 ---
 
 # Prepare for deployment with MDT
@@ -26,12 +27,12 @@ The procedures in this guide use the following names and infrastructure.
 
 ### Network and servers
 
-For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
+For the purposes of this article, we'll use three server computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is required to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
-- **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
+- **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200 GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
     - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-10-deployment.md) for Windows 10 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
 - **HV01** is a Hyper-V host computer that is used to build a Windows 10 reference image.
     - See [Hyper-V requirements](#hyper-v-requirements) below for more information about HV01.
@@ -40,25 +41,25 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
 
 Several client computers are referenced in this guide with hostnames of PC0001 to PC0007.
 
-- **PC0001**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain.
+- **PC0001**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain.
   - Client name: PC0001
   - IP Address: DHCP
-- **PC0002**: A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
+- **PC0002**: A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
   - Client name: PC0002
   - IP Address: DHCP
 - **PC0003 - PC0007**: These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
 
 ### Storage requirements
 
-MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:), you will need to adjust some procedures in this guide to specify the C: drive instead of the D: drive.
+MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:), you'll need to adjust some procedures in this guide to specify the C: drive instead of the D: drive.
 
 ### Hyper-V requirements
 
-If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](../windows-10-poc.md#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide. This guide is a proof-of-concept guide that has detailed instructions for installing Hyper-V.
+If you don't have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](../windows-10-poc.md#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide. This guide is a proof-of-concept guide that has detailed instructions for installing Hyper-V.
 
 ### Network requirements
 
-All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also required to download OS and application updates.
+All server and client computers referenced in this guide are on the same subnet. This isn't required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also required to download OS and application updates.
 
 ### Domain credentials
 
@@ -80,20 +81,20 @@ These steps assume that you have the MDT01 member server running and configured 
 
 On **MDT01**:
 
-Visit the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
+Visit the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you'll need to create this folder):
 - [The Windows ADK for Windows 10](https://go.microsoft.com/fwlink/?linkid=2086042)
 - [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112)
 - [The Windows System Image Manager (WSIM) 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334)
 - (Optional) [The MDT_KB4564442 patch for BIOS firmware](https://download.microsoft.com/download/3/0/6/306AC1B2-59BE-43B8-8C65-E141EF287A5E/KB4564442/MDT_KB4564442.exe)
-  - This patch is needed to resolve a bug that causes detection of BIOS-based machines as UEFI-based machines.  If you have a UEFI deployment, you do not need this patch.
+  - This patch is needed to resolve a bug that causes detection of BIOS-based machines as UEFI-based machines.  If you have a UEFI deployment, you don't need this patch.
 
 >[!TIP]
 >You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server. This setting can be disabled by using Server Manager (Local Server/Properties).
 
-1. On **MDT01**, ensure that you are signed in as an administrator in the CONTOSO domain.
-    - For the purposes of this guide, we are using a Domain Admin account of **administrator** with a password of <b>pass@word1</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use these login credentials.
-2. Start the **ADK Setup** (D:\\Downloads\\ADK\\adksetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page accept the default list of features by clicking **Install**. This will install deployment tools and the USMT. Verify that the installation completes successfully before moving to the next step.
-3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully before moving to the next step.
+1. On **MDT01**, ensure that you're signed in as an administrator in the CONTOSO domain.
+    - For the purposes of this guide, we're using a Domain Admin account of **administrator** with a password of <b>pass@word1</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use these login credentials.
+2. Start the **ADK Setup** (D:\\Downloads\\ADK\\adksetup.exe), select **Next** twice to accept the default installation parameters, select **Accept** to accept the license agreement, and then on the **Select the features you want to install** page accept the default list of features by clicking **Install**. This will install deployment tools and the USMT. Verify that the installation completes successfully before moving to the next step.
+3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), select **Next** twice to accept the default installation parameters, select **Accept** to accept the license agreement, and then on the **Select the features you want to install** page select **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully before moving to the next step.
 4. Extract the **WSIM 1903 update** (D:\\Downloads\ADK\\WSIM1903.zip) and then run the **UpdateWSIM.bat** file.
    - You can confirm that the update is applied by viewing properties of the ImageCat.exe and ImgMgr.exe files at **C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM** and verifying that the **Details** tab displays a **File version** of **10.0.18362.144** or later.
 5. If you downloaded the optional MDT_KB4564442 patch for BIOS based deployment, see [this support article](https://support.microsoft.com/en-us/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7) for instructions on how to install the patch.
@@ -133,7 +134,7 @@ To install WSUS on MDT01, enter the following at an elevated Windows PowerShell 
 
 On **MDT01**:
 
-1. Visit the [MDT resource page](/mem/configmgr/mdt/) and click **Download MDT**. 
+1. Visit the [MDT resource page](/mem/configmgr/mdt/) and select **Download MDT**. 
 2. Save the **MicrosoftDeploymentToolkit_x64.msi** file to the D:\\Downloads\\MDT folder on MDT01. 
     - **Note**: As of the publishing date for this guide, the current version of MDT is 8456 (6.3.8456.1000), but a later version will also work.
 3. Install **MDT** (D:\\Downloads\\MDT\\MicrosoftDeploymentToolkit_x64.exe) with the default settings.
@@ -160,7 +161,7 @@ Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
 Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
 ```
 
-Next, copy the following commands into a file and save it as `~\Setup\Scripts\ou.ps1`. Be sure that you are viewing file extensions and that you save the file with the `.ps1` extension.
+Next, copy the following commands into a file and save it as `~\Setup\Scripts\ou.ps1`. Be sure that you're viewing file extensions and that you save the file with the `.ps1` extension.
 
 ```powershell
 Import-CSV -Path $home\Setup\Scripts\oulist.csv | ForEach-Object {
@@ -215,7 +216,7 @@ If you have the Active Directory Users and Computers console open you can refres
 
 ## Create and share the logs folder
 
-By default MDT stores the log files locally on the client. In order to capture a reference image, you will need to enable server-side logging and, to do that, you will need to have a folder in which to store the logs. For more information, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+By default MDT stores the log files locally on the client. In order to capture a reference image, you'll need to enable server-side logging and, to do that, you'll need to have a folder in which to store the logs. For more information, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
 On **MDT01**:
 
@@ -247,12 +248,12 @@ After installing the ConfigMgrTools.msi file, you can search for **cmtrace** and
 
 ## Next steps
 
-When you have completed all the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+When you've completed all the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
 ## Appendix
 
 **Sample files**
 
-The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so you can see how some tasks can be automated with Windows PowerShell.
+The following sample files are also available to help automate some MDT deployment tasks. This guide doesn't use these files, but they're made available here so you can see how some tasks can be automated with Windows PowerShell.
 - [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
 - [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.

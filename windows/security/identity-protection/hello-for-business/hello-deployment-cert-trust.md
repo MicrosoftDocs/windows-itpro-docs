@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>On-premises deployments</b>
   - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 # On Premises Certificate Trust Deployment
 

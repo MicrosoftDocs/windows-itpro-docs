@@ -1,7 +1,7 @@
 ---
 title: Install Windows Configuration Designer (Windows 10/11)
 description: Learn how to install and use Windows Configuration Designer so you can easily configure devices running Windows 10/11.
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.author: lizlong
 ms.topic: article
@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.reviewer: gkomatsu
 manager: aaroncz
 ms.collection: highpri
+ms.technology: itpro-configure
 ---
 
 # Install Windows Configuration Designer, and learn about any limitations
@@ -51,6 +52,8 @@ On devices running Windows client, you can install [the Windows Configuration De
 
 ## Current Windows Configuration Designer limitations
 
+- When running Windows Configuration Designer on Windows releases earlier than Windows 10, version 2004 you might need to enable TLS 1.2, especially if using Bulk Enrollment Tokens.  You may see the error message in the `icd.log` file: `Error: AADSTS1002016: You are using TLS version 1.0, 1.1 and/or 3DES cipher which are deprecated to improve the security posture of Azure AD` For more information, see [Enable TLS 1.2 on client or server operating systems](/troubleshoot/azure/active-directory/enable-support-tls-environment#enable-tls-12-on-client-or-server-operating-systems-).
+ 
 - Windows Configuration Designer doesn't work properly if the **Policies > Administrative Templates > Windows Components > Internet Explorer > Security Zones: Use only machine settings** Group Policy setting is enabled. Instead of changing the security setting, we recommend you run Windows Configuration Designer on a different device.
 
 - You can only run one instance of Windows Configuration Designer on your computer at a time.

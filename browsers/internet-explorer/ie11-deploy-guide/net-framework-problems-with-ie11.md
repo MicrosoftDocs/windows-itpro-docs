@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: How to turn managed browser hosting controls back on in Internet Explorer 11.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: b0b7f60f-9099-45ab-84f4-4ac64d7bcb43
 ms.reviewer: 
 audience: itpro

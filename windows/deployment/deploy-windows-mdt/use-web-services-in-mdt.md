@@ -1,24 +1,25 @@
 ---
 title: Use web services in MDT (Windows 10)
-description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment.
+description: Learn how to create a web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Use web services in MDT
 
-In this topic, you will learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment. Web services provide a powerful way to assign settings during a deployment. Simply put, web services are web applications that run code on the server side, and MDT has built-in functions to call these web services.
-Using a web service in MDT is straightforward, but it does require that you have enabled the Web Server (IIS) role on the server. Developing web services involves a little bit of coding, but for most web services used with MDT, you can use the free Microsoft Visual Studio Express 2013 for Web.
+In this article, you'll learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment. Web services provide a powerful way to assign settings during a deployment. Web services are web applications that run code on the server side, and MDT has built-in functions to call these web services.
+Using a web service in MDT is straightforward, but it does require that you've enabled the Web Server (IIS) role on the server. Developing web services involves some coding, but for most web services used with MDT, you can use the free Microsoft Visual Studio Express 2013 for Web.
 
 ## <a href="" id="sec01"></a>Create a sample web service
 
-In these steps we assume you have installed Microsoft Visual Studio Express 2013 for Web on PC0001 (the Windows 10 client) and downloaded the [MDT Sample Web Service](https://www.microsoft.com/download/details.aspx?id=42516) from the Microsoft Download Center and extracted it to C:\\Projects.
+In these steps, we assume you have installed Microsoft Visual Studio Express 2013 for Web on PC0001 (the Windows 10 client) and downloaded the [MDT Sample Web Service](https://www.microsoft.com/download/details.aspx?id=42516) from the Microsoft Download Center and extracted it to C:\\Projects.
 1.  On PC0001, using Visual Studio Express 2013 for Web, open the C:\\Projects\\MDTSample\\ MDTSample.sln solution file.
 2.  On the ribbon bar, verify that Release is selected.
 3.  In the **Debug** menu, select the **Build MDTSample** action.
@@ -34,15 +35,15 @@ Figure 15. The sample project in Microsoft Visual Studio Express 2013 for Web.
 
 ## <a href="" id="sec02"></a>Create an application pool for the web service
 
-This section assumes that you have enabled the Web Server (IIS) role on MDT01.
+This section assumes that you've enabled the Web Server (IIS) role on MDT01.
 1.  On MDT01, using Server Manager, install the **IIS Management Console** role (available under Web Server (IIS) / Management Tools).
-2.  Using Internet Information Services (IIS) Manager, expand the **MDT01 (CONTOSO\\Administrator)** node. If prompted with the "Do you want to get started with Microsoft Web Platform?" question, select the **Do not show this message** check box and then click **No**.
+2.  Using Internet Information Services (IIS) Manager, expand the **MDT01 (CONTOSO\\Administrator)** node. If prompted with the **Do you want to get started with Microsoft Web Platform?** question, select the **Do not show this message** check box and then select **No**.
 3.  Right-click **Application Pools**, select **Add Application Pool**, and configure the new application pool with the following settings:
     1.  Name: MDTSample
     2.  .NET Framework version: .NET Framework 4.0.30319
     3.  Manage pipeline mode: Integrated
     4.  Select the **Start application pool immediately** check box.
-    5.  Click **OK**.
+    5.  Select **OK**.
 
 ![figure 16.](../images/mdt-09-fig16.png)
 
@@ -70,12 +71,12 @@ Figure 18. Configuring Authentication for the MDTSample web service.
 ## <a href="" id="sec04"></a>Test the web service in Internet Explorer
 
 1.  On PC0001, using Internet Explorer, navigate to: **http://MDT01/MDTSample/mdtsample.asmx**.
-2.  Click the **GetComputerName** link.
+2.  Select the **GetComputerName** link.
 
     ![figure 19.](../images/mdt-09-fig19.png)
 
     Figure 19. The MDT Sample web service.
-3.  On the **GetComputerName** page, type in the following settings, and click **Invoke**:
+3.  On the **GetComputerName** page, type in the following settings, and select **Invoke**:
     1.  Model: Hewlett-Packard
     2.  SerialNumber: 123456789
 
@@ -85,7 +86,7 @@ Figure 20. The result from the MDT Sample web service.
 
 ## <a href="" id="sec05"></a>Test the web service in the MDT simulation environment
 
-After verifying the web service using Internet Explorer, you are ready to do the same test in the MDT simulation environment.
+After verifying the web service using Internet Explorer, you're ready to do the same test in the MDT simulation environment.
 
 1. On PC0001, edit the CustomSettings.ini file in the **C:\\MDT** folder to look like the following:
    ``` 
@@ -114,7 +115,7 @@ After verifying the web service using Internet Explorer, you are ready to do the
 
 Figure 22. The OSDCOMPUTERNAME value obtained from the web service.
 
-## Related topics
+## Related articles
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)
 

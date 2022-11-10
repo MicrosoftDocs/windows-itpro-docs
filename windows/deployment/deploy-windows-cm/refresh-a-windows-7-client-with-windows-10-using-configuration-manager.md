@@ -2,23 +2,24 @@
 title: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
 description: Learn how to use Configuration Manager and Microsoft Deployment Toolkit (MDT) to refresh a Windows 7 SP1 client with Windows 10.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
-This topic will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh isn't the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation. Also see the MDT refresh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
+This article will show you how to refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager and Microsoft Deployment Toolkit (MDT). A computer refresh isn't the same as an in-place upgrade. A computer refresh involves storing user data and settings from the old installation, wiping the hard drives, installing a new OS, and then restoring the user data at the end of the installation. Also see the MDT refresh procedure: [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
 
 A computer refresh with Configuration Manager works the same as it does with MDT Lite Touch installation. Configuration Manager also uses the User State Migration Tool (USMT) from the Windows Assessment and Deployment Kit (Windows ADK) 10 in the background. A computer refresh with Configuration Manager has the following steps:
 
@@ -53,7 +54,7 @@ To verify that PC003 is correctly assigned to the PS1 site:
 On **PC0003**:
 
 1. Open the Configuration Manager control panel (control smscfgrc).
-2. On the **Site** tab, click **Configure Settings**, then click **Find Site**.
+2. On the **Site** tab, select **Configure Settings**, then select **Find Site**.
 3. Verify that Configuration Manager has successfully found a site to manage this client is displayed. See the following example.
 
 ![Found a site to manage this client.](../images/pc0003a.png)
@@ -75,7 +76,7 @@ On **CM01**:
     * Select Resources
       * Select **PC0003**
 
-  Use the default settings to complete the remaining wizard pages and click **Close**.
+  Use the default settings to complete the remaining wizard pages and select **Close**.
 
 2.  Review the Install Windows 10 Enterprise x64 collection. Don't continue until you see the PC0003 machine in the collection.
 
@@ -86,7 +87,7 @@ On **CM01**:
 
 On **CM01**:
 
-Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then click **Deploy**. Use the following settings:
+Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM**, and then select **Deploy**. Use the below settings:
 
 - General
     - Collection: Install Windows 10 Enterprise x64
@@ -112,12 +113,12 @@ Now you can start the computer refresh on PC0003.
 
 On **CM01**:
 
-1. Using the Configuration Manager console, in the Assets and Compliance workspace, click the **Install Windows 10 Enterprise x64** collection, right-click **PC0003**, point to **Client Notification**, click **Download Computer Policy**, and then click **OK** in the popup dialog box that appears.
+1. Using the Configuration Manager console, in the Assets and Compliance workspace, select the **Install Windows 10 Enterprise x64** collection, right-click **PC0003**, point to **Client Notification**, select **Download Computer Policy**, and then select **OK** in the popup dialog box that appears.
 
 On **PC0003**:
 
-1.  Open the Software Center (click Start and type **Software Center**, or click the **New software is available** balloon in the system tray), select **Operating Systems** and click the **Windows 10 Enterprise x64 RTM** deployment, then click **Install**.
-2.  In the **Software Center** warning dialog box, click **Install Operating System**. 
+1.  Open the Software Center (select Start and type **Software Center**, or select the **New software is available** balloon in the system tray), select **Operating Systems** and select the **Windows 10 Enterprise x64 RTM** deployment, then select **Install**.
+2.  In the **Software Center** warning dialog box, select **Install Operating System**. 
 3. The client computer will run the Configuration Manager task sequence, boot into Windows PE, and install the new OS and applications. See the following examples:
 
 ![Task sequence example 1.](../images/pc0003b.png)<br>
@@ -133,7 +134,7 @@ On **PC0003**:
 
 Next, see [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
-## Related topics
+## Related articles
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>

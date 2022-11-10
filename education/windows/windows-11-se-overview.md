@@ -130,6 +130,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
 | Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
 | SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
+| SuperNova Magnifier & Speech            | 21.02             | Win32    | Dolphin Computer Access      |  
 | Zoom                                    | 5.9.1 (2581)      | Win32    | Zoom                         |
 | ZoomText Fusion                         | 2022.2109.10      | Win32    | Freedom Scientific           |
 | ZoomText Magnifier/Reader               | 2022.2109.25      | Win32    | Freedom Scientific           |

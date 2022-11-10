@@ -32,7 +32,7 @@ For each check, the tool will report one of four possible results:
 
 ## Microsoft Intune settings
 
-You can access Intune settings at the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+You can access Intune settings at the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ### Unlicensed admins
 

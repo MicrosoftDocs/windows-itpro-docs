@@ -8,8 +8,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.collection: highpri
 ---
@@ -255,7 +255,7 @@ There are a few instances where your device may not be able to connect to work.
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Your device is already connected to your organization’s cloud.                                                                                                                             | Your device is already connected to either Azure AD, a work or school account, or an AD domain.     |
 | We couldn't find your identity in your organization’s cloud.                                                                                                                              | The username you entered wasn't found on your Azure AD tenant.                                     |
-| Your device is already being managed by an organization.                                                                                                                                   | Your device is either already managed by MDM or Microsoft Endpoint Configuration Manager.                |
+| Your device is already being managed by an organization.                                                                                                                                   | Your device is either already managed by MDM or Microsoft Configuration Manager.                |
 | You don’t have the right privileges to perform this operation. Talk to your admin.                                                                                                  | You can't enroll your device into MDM as a standard user. You must be on an administrator account. |
 | We couldn’t auto-discover a management endpoint matching the username entered. Check your username and try again. If you know the URL to your management endpoint, enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered.  |
 

@@ -8,7 +8,7 @@ ms.topic: include
 ms.date: 08/18/2022
 ms.localizationpriority: medium
 ---
-<!--This file is shared by updates/update-compliance-v2-configuration-script.md and the update/update-compliance-configuration-script.md articles. Headings are driven by article context.  -->
+<!--This file is shared by updates/wufb-reports-configuration-script.md and the update/update-compliance-configuration-script.md articles. Headings are driven by article context.  -->
 |Error  |Description  |
 |---------|---------|
 | 1    | General unexpected error|
@@ -58,5 +58,5 @@ ms.localizationpriority: medium
 | 97 | Failed to update value for EnableAllowCommercialDataPipeline |
 | 98 | Unexpected exception in EnableAllowCommercialDataPipeline |
 | 99    | Device isn't Windows 10.|
-| 100 | Device must be AADJ or hybrid AADJ to use Update Compliance |
+| 100 | Device must be AADJ or hybrid AADJ to use Windows Update for Business reports or Update Compliance |
 | 101 | Check AADJ failed with unexpected exception |

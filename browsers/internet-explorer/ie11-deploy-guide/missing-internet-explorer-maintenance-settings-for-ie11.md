@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: IEM-configured settings have been deprecated for Internet Explorer 10 and newer. Use this topic to learn where to go to fix the affected settings through Group Policy Preferences, Administrative Templates (.admx), or the IEAK.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 89084e01-4e3f-46a6-b90e-48ee58d6821c
 ms.reviewer: 
 audience: itpro

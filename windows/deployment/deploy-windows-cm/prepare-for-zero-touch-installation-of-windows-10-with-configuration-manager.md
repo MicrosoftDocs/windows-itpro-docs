@@ -2,13 +2,14 @@
 title: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
 description: Learn how to prepare a Zero Touch Installation of Windows 10 with Configuration Manager, by integrating Configuration Manager with Microsoft Deployment Toolkit.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: how-to
 ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
@@ -17,7 +18,7 @@ ms.technology: itpro-deploy
 
 - Windows 10
 
-This article walks you through the Zero Touch Installation (ZTI) process of Windows 10 OS deployment using Microsoft Endpoint Configuration Manager [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT).
+This article walks you through the Zero Touch Installation (ZTI) process of Windows 10 OS deployment using Microsoft Configuration Manager [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT).
 
 ## Prerequisites
 
@@ -64,7 +65,7 @@ On **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell. The procedure below uses Windows PowerShell.
 
-To use Windows PowerShell, copy the following commands into a text file and save it as `C:\Setup\Scripts\ou.ps1` Ensure that you're viewing file extensions and that you save the file with the `.ps1` extension.
+To use Windows PowerShell, copy the following commands into a text file and save it as `C:\Setup\Scripts\ou.ps1`. Ensure that you're viewing file extensions and that you save the file with the `.ps1` extension.
 
 ```powershell
 $oulist = Import-csv -Path c:\oulist.txt
@@ -285,7 +286,7 @@ Next, see [Create a custom Windows PE boot image with Configuration Manager](cre
 
 ## Components of Configuration Manager operating system deployment
 
-Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are more components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which isn't used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
+Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are more components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which isn't used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
 
 -   **State migration point (SMP).** The state migration point is used to store user state migration data during computer replace scenarios.
 -   **Distribution point (DP).** The distribution point is used to store all packages in Configuration Manager, including the operating system deployment-related packages.

@@ -327,7 +327,7 @@
                   href: ue-v/uev-manage-configurations.md
                 - name: Configuring UE-V with Group Policy Objects
                   href: ue-v/uev-configuring-uev-with-group-policy-objects.md
-                - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
+                - name: Configuring UE-V with Microsoft Configuration Manager
                   href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
                 - name: Administering UE-V with Windows PowerShell and WMI
                   href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md

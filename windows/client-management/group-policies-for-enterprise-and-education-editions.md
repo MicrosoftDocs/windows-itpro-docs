@@ -9,6 +9,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: troubleshooting
+ms.technology: itpro-manage
 ---
 
 # Group Policy settings that apply only to Windows 10 Enterprise and Education Editions

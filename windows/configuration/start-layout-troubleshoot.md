@@ -13,17 +13,20 @@ ms.technology: itpro-configure
 
 # Troubleshoot Start menu errors
 
+> [!div class="nextstepaction"]
+> <a href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=31806233" target='_blank'>Try our Virtual Agent</a> - It can help you quickly identify and fix common Start menu issues.
+
 Start failures can be organized into these categories:
 
 - **Deployment/Install issues** - Easiest to identify but difficult to recover. This failure is consistent and usually permanent. Reset, restore from backup, or rollback to recover.
 - **Performance issues** - More common with older hardware, low-powered machines. Symptoms include: High CPU utilization, disk contention, memory resources. This makes Start very slow to respond. Behavior is intermittent depending on available resources.
 - **Crashes** - Also easy to identify. Crashes in Shell Experience Host or related can be found in System or Application event logs. This can be a code defect or related to missing or altered permissions to files or registry keys by a program or incorrect security tightening configurations. Determining permissions issues can be time consuming but a [SysInternals tool called Procmon](/sysinternals/downloads/procmon) will show **Access Denied**. The other option is to get a dump of the process when it crashes and depending on comfort level, review the dump in the debugger, or have support review the data.
-- **Hangs** - in Shell Experience host or related. These are the hardest issues to identify as there are few events logged, but behavior is typically intermittent or recovers with a reboot. If a background application or service hangs, Start will not have resources to respond in time. Clean boot may help identify if the issue is related to additional software. Procmon is also useful in this scenario.
+- **Hangs** - in Shell Experience host or related. These are the hardest issues to identify as there are few events logged, but behavior is typically intermittent or recovers with a reboot. If a background application or service hangs, Start won't have resources to respond in time. Clean boot may help identify if the issue is related to additional software. Procmon is also useful in this scenario.
 - **Other issues** - Customization, domain policies, deployment issues.
 
 ## Basic troubleshooting
 	
-When troubleshooting basic Start issues (and for the most part, all other Windows apps), there are a few things to check if they are not working as expected. For issues where the Start menu or subcomponent isn't working, you can do some quick tests to narrow down where the issue may reside.
+When troubleshooting basic Start issues (and for the most part, all other Windows apps), there are a few things to check if they aren't working as expected. For issues where the Start menu or subcomponent isn't working, you can do some quick tests to narrow down where the issue may reside.
 
 ### Check the OS and update version
 
@@ -36,7 +39,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
 
 - If Start fails immediately after a feature update, on thing to check is if the App package failed to install successfully.
 
-- If Start was working and just fails intermittently, it's likely that Start is installed correctly, but the issue occurs downstream. The way to check for this problem is to look for output from these two PS commands:
+- If Start was working and just fails intermittently, it's likely that Start is installed correctly, but the issue occurs downstream. The way to check for this problem is to look for output from these two PowerShell commands:
 
   - `get-AppXPackage -Name Microsoft.Windows.ShellExperienceHost`
   - `get-AppXPackage -Name Microsoft.Windows.Cortana`
@@ -45,7 +48,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
 
     Failure messages will appear if they aren't installed
 
-- If Start is not installed, then the fastest resolution is to revert to a known good configuration. This can be rolling back the update, resetting the PC to defaults (where there is a choice to save to delete user data), or restoring from backup. No method is supported to install Start Appx files. The results are often problematic and unreliable.
+- If Start isn't installed, then the fastest resolution is to revert to a known good configuration. This can be rolling back the update, resetting the PC to defaults (where there's a choice to save to delete user data), or restoring from backup. No method is supported to install Start Appx files. The results are often problematic and unreliable.
 
 ### Check if Start is running
 
@@ -53,25 +56,25 @@ If either component is failing to start on boot, reviewing the event logs for er
 - `get-process -name shellexperiencehost`
 - `get-process -name searchui`
 
-If it is installed but not running, test booting into safe mode or use MSCONFIG to eliminate third-party or additional drivers and applications.
+If it's installed but not running, test booting into safe mode or use MSCONFIG to eliminate third-party or additional drivers and applications.
 
 ### Check whether the system a clean install or upgrade
 
 - Is this system an upgrade or clean install?
   - Run `test-path "$env:windir\panther\miglog.xml"`
-  - If that file does not exist, the system is a clean install.
+  - If that file doesn't exist, the system is a clean install.
 - Upgrade issues can be found by running `test-path "$env:windir\panther\miglog.xml"`
 
 ### Check if Start is registered or activated
 
 - Export the following Event log to CSV and do a keyword search in a text editor or spreadsheet:
   - Microsoft-Windows-TWinUI/Operational for Microsoft.Windows.ShellExperienceHost or Microsoft.Windows.Cortana
-    - "Package was not found"
+    - "Package wasn't found"
     - "Invalid value for registry"
     - "Element not found"
-    - "Package could not be registered"
+    - "Package couldn't be registered"
     
-If these events are found, Start is not activated correctly. Each event will have more detail in the description and should be investigated further. Event messages can vary.
+If these events are found, Start isn't activated correctly. Each event will have more detail in the description and should be investigated further. Event messages can vary.
 
 ### Other things to consider
 
@@ -136,11 +139,11 @@ The following list provides information about common errors you might run into w
 
 ### Symptom: Start Menu doesn't respond on Windows 2012 R2, Windows 10, or Windows 2016
 
-**Cause**: Background Tasks Infrastructure Service (BrokerInfrastructure) service is not started.
+**Cause**: Background Tasks Infrastructure Service (BrokerInfrastructure) service isn't started.
 
 **Resolution**: Ensure that Background Tasks Infrastructure Service is set to automatic startup in Services MMC.
 
-If Background Tasks Infrastructure Service fails to start, verify that the Power Dependency Coordinator Driver (PDC) driver and registry key are not disabled or deleted. If either are missing, restore from backup or the installation media.
+If Background Tasks Infrastructure Service fails to start, verify that the Power Dependency Coordinator Driver (PDC) driver and registry key aren't disabled or deleted. If either are missing, restore from backup or the installation media.
 
 To verify the PDC Service, run `C:\>sc query pdc` in a command prompt. The results will be similar to the following:
 
@@ -167,7 +170,7 @@ The PDC registry key is:
 **Start**=dword:00000000
 **Type**=dword:00000001
 
-In addition to the listed dependencies for the service, Background Tasks Infrastructure Service requires the Power Dependency Coordinator Driver to be loaded. If the PDC does not load at boot, Background Tasks Infrastructure Service will fail and affect Start Menu.
+In addition to the listed dependencies for the service, Background Tasks Infrastructure Service requires the Power Dependency Coordinator Driver to be loaded. If the PDC doesn't load at boot, Background Tasks Infrastructure Service will fail and affect Start Menu.
 
 Events for both PDC and Background Tasks Infrastructure Service will be recorded in the event logs. PDC shouldn't be disabled or deleted. BrokerInfrastructure is an automatic service. This Service is required for all these operating Systems as running to have a stable Start Menu.
 
@@ -189,11 +192,11 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 :::image type="content" alt-text="Screenshots that show download icons on app tiles and missing app tiles." source="images/start-ts-2.png" lightbox="images/start-ts-2.png":::
 
-**Cause**: This issue is known. The first-time sign-in experience is not detected and does not trigger the install of some apps.
+**Cause**: This issue is known. The first-time sign-in experience isn't detected and doesn't trigger the install of some apps.
 
 **Resolution**: This issue has been fixed for Windows 10, version 1709 in [KB 4089848](https://support.microsoft.com/help/4089848) March 22, 2018—KB4089848 (OS Build 16299.334)
 
-### Symptom: When attempting to customize Start Menu layout, the customizations do not apply or results are not expected
+### Symptom: When attempting to customize Start Menu layout, the customizations don't apply or results aren't expected
 
 **Cause**: There are two main reasons for this issue:
 
