@@ -20,6 +20,7 @@ This document describes Windows Hello for Business functionalities or scenarios 
 ✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
 ✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust.md)\
 ✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology.md#hybrid-azure-ad-join)
+
 <br>
 
 ---
