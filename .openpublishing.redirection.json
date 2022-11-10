@@ -20154,6 +20154,16 @@
       "source_path": "windows/deployment/update/update-compliance-v2-workbook.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-workbook",
       "redirect_document_id": false
-    }    
+    },    
+    {
+      "source_path": "windows/configuration/kiosk-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "windows/configuration/start-layout-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors",
+      "redirect_document_id": false
+    }  
   ]
 }
