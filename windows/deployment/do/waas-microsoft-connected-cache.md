@@ -57,5 +57,5 @@ The following diagram displays and overview of how MCC functions:
 
 ## Next steps
 
-- [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise-overview.md)
+- [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise-prerequisites.md)
 - [Microsoft Connected Cache for ISPs](mcc-isp-signup.md)

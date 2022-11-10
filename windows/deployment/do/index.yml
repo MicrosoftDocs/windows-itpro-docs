@@ -70,7 +70,7 @@ landingContent:
       - linkListType: deploy
         links:
           - text: MCC for Enterprise and Education (early preview)
-            url: mcc-enterprise-overview.md
+            url: waas-microsoft-connected-cache.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup 
 
