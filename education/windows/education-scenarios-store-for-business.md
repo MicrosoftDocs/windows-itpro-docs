@@ -4,9 +4,7 @@ description: Learn how IT admins and teachers can use Microsoft Store for Educat
 ms.topic: article
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Working with Microsoft Store for Education

@@ -8,11 +8,11 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection: education
 appliesto:
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
 <!-- MAXADO-6286399 -->
@@ -57,7 +57,7 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 To sign-in with a SAML 2.0 identity provider, your devices must be configured with different policies, which can be configured using Microsoft Intune.
 
-To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -68,7 +68,8 @@ To configure federated sign-in using Microsoft Intune, [create a custom profile]
 
 :::image type="content" source="images/federated-sign-in-settings-intune.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-intune.png" border="true":::
 
-Assign the policy to a security group that contains as members the devices that require federated sign-in.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 <!--
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
@@ -113,8 +114,6 @@ Federated sign-in doesn't work on devices that have the following settings enabl
 
 - The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen
 - Select the *Other User* button, and the standard username/password credentials are available to log into the device
-
------------
 
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-fed-saml-idp
 [AZ-2]: /azure/active-directory/enterprise-users/licensing-groups-assign
