@@ -104,7 +104,7 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 Example 1: Azure Active Directory focused.
 
-The following example updates the built-in administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** with Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
+The following example updates the built-in administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** with an Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
 
 ```xml
 <GroupConfiguration>
