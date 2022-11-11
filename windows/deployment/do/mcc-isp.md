@@ -110,7 +110,7 @@ To deploy MCC:
 
 1. [Provide Microsoft with your Azure subscription ID](#provide-microsoft-with-your-azure-subscription-id)
 2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
-3. [Create a Cache Node](#create-a-mcc-node-in-azure)
+3. [Create a Cache Node](#create-an-mcc-node-in-azure)
 4. [Configure Cache Node Routing](#edit-cache-node-information)
 5. [Install MCC on a physical server or VM](#install-mcc)
 6. [Verify properly functioning MCC server](#verify-properly-functioning-mcc-server)

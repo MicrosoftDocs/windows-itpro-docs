@@ -106,17 +106,17 @@ There are five IDs that the device provisioning script takes as input in order t
 
 1. After completing cache node provisioning, navigate to the **Server provisioning** tab. Select **Download provisioning package** to download the installation package to your server.  
 
-2. Open a terminal window in the directory where you would like to deploy your cache node and run the following command to change the access permission to the Bash script: 
+1. Open a terminal window in the directory where you would like to deploy your cache node and run the following command to change the access permission to the Bash script: 
 
     ```bash
     sudo chmod +x provisionmcc.sh
     ```
 
-3. Copy and paste the script command line shown in the Azure portal.
+1. Copy and paste the script command line shown in the Azure portal.
 
-5. Run the script in your server terminal for your cache node by . The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
+1. Run the script in your server terminal for your cache node by . The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
 
- > [!NOTE]
+    > [!NOTE]
     > The same script can be used to provision multiple cache nodes, but the command line is unique per cache node. Additionally, if you need to reprovision your server or provision a new server or VM for the cache node, you must copy the command line from the Azure portal again as the "registrationkey" value is unique for each successful execution of the provisioning script.
 
 ### General configuration fields

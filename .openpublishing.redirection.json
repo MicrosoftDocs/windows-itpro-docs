@@ -19927,12 +19927,7 @@
      },
      {
       "source_path": "windows/deployment/do/mcc-enterprise.md",
-      "redirect_url": "/windows/deployment/do/mcc-enterprise-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/do/mcc-enterprise-overview.md",
-      "redirect_url": "/windows/deployment/do/mcc-enterprise-prerequisites",
+      "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
       "redirect_document_id": false
     },
     {
