@@ -27,7 +27,7 @@ Windows uses technologies including trusted platform module (TPM), secure boot, 
 
 BitLocker helps mitigate unauthorized data access on lost or stolen computers before the authorized operating system is started. This mitigation is done by:
 
-- **Encrypting volumes on your computer.** For example, you can turn on BitLocker for your operating system volume, or a volume on a fixed or removable data drive (such as a USB flash drive, SD card, and so on). Turning on BitLocker for your operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
+- **Encrypting volumes on a computer.** For example, BitLocker can be turned on for the operating system volume, a volume on a fixed drive. or removable data drive (such as a USB flash drive, SD card, etc.) Turning on BitLocker for the operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
 
 - **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer's BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that use TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
 
@@ -37,7 +37,7 @@ For more information about how to enable the best overall security configuration
 
 ## Protection before startup
 
-Before Windows starts, you must rely on security features implemented as part of the device hardware and firmware, including TPM and secure boot. Fortunately, many modern computers feature a TPM and secure boot.
+Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. Fortunately, many modern computers feature a TPM and secure boot.
 
 ### Trusted Platform Module
 
@@ -88,7 +88,7 @@ Pre-boot authentication with a PIN can mitigate an attack vector for devices tha
 
 On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN needs to be entered when a computer reboots or resumes from hibernation.
 
-To address these issues, you can deploy [BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md). Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.  
+To address these issues, [BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.  
 
 ### Protecting Thunderbolt and other DMA ports
 

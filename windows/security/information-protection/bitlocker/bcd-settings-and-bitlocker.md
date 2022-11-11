@@ -24,8 +24,7 @@ When protecting data at rest on an operating system volume, during the boot proc
 
 In Windows 7 and Windows Server 2008 R2, BitLocker validated BCD settings with the winload, winresume, and memtest prefixes to a large degree. However, this high degree of validation caused BitLocker to go into recovery mode for benign setting changes, for example, when applying a language pack, BitLocker would enter recovery mode.
 
-In Windows 8, Windows Server 2012, and later operating systems, BitLocker narrows the set of BCD settings validated to reduce the chance of benign changes causing a BCD validation problem. If you believe that there's a risk in excluding a particular BCD setting from the validation profile, include that BCD setting in the BCD validation coverage to suit your validation preferences.
-If a default BCD setting is found to persistently trigger a recovery for benign changes, exclude that BCD setting from the validation coverage.
+In Windows 8, Windows Server 2012, and later operating systems, BitLocker narrows the set of BCD settings validated to reduce the chance of benign changes causing a BCD validation problem. If it's believed that there's a risk in excluding a particular BCD setting from the validation profile, include that BCD setting in the BCD validation coverage to suit the preferences for validation. If a default BCD setting is found to persistently trigger a recovery for benign changes, exclude that BCD setting from the validation coverage.
 
 ### When secure boot is enabled
 
@@ -48,7 +47,7 @@ All BCD settings are specified by combining the prefix value with either a hexad
 
 The BCD setting hex value is reported when BitLocker enters recovery mode and is stored in the event log (event ID 523). The hex value uniquely identifies the BCD setting that caused the recovery event.
 
-You can quickly obtain the friendly name for the BCD settings on your computer by using the command `bcdedit.exe /enum all`.
+You can quickly obtain the friendly name for the BCD settings on a computer by using the command `bcdedit.exe /enum all`.
 
 Not all BCD settings have friendly names; for those settings without a friendly name, the hex value is the only way to configure an exclusion policy.
 
@@ -57,7 +56,7 @@ When specifying BCD values in the **Use enhanced Boot Configuration Data validat
 - Prefix the setting with the boot application prefix
 - Append a colon `:`
 - Append either the hex value or the friendly name
-- If entering more than one BCD setting, you'll need to enter each BCD setting on a new line
+- If entering more than one BCD setting, each BCD setting will need to be entered on a new line
 
 For example, either "`winload:hypervisordebugport`" or "`winload:0x250000f4`" yields the same value.
 

@@ -102,7 +102,7 @@ sections:
           The syntax of this command is:
           
           ``` syntax
-          manage-bde <driveletter> -lock
+          manage-bde.exe <driveletter> -lock
           ````
           
           Outside of using this command, data drives will be locked on shutdown and restart of the operating system. A removable data drive will also be locked automatically when the drive is removed from the computer.

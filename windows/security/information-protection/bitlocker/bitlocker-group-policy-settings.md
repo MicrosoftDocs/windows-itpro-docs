@@ -611,7 +611,7 @@ The values of this policy determine the strength of the cipher that BitLocker us
 
 If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
 
-- For fixed and operating system drives, we recommend that you use the XTS-AES algorithm.
+- For fixed and operating system drives, it is recommend to use the XTS-AES algorithm.
 
 - For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that aren't running Windows 10, version 1511 or later, or Windows 11.
 
@@ -978,7 +978,7 @@ Once you enable the setting, you have three options:
 - If you select the **Use custom recovery URL** option, type the custom message URL in the **Custom recovery URL option** text box. The URL that you type in the **Custom recovery URL option** text box replaces the default URL in the default recovery message, which is displayed on the pre-boot recovery screen.
 
 > [!IMPORTANT]
-> Not all characters and languages are supported in the pre-boot environment. We strongly recommended that you verify the correct appearance of the characters that you use for the custom message and URL on the pre-boot recovery screen.
+> Not all characters and languages are supported in the pre-boot environment. It is strongly recommended that you verify the correct appearance of the characters that you use for the custom message and URL on the pre-boot recovery screen.
 
 > [!IMPORTANT]
 > Because you can alter the BCDEdit commands manually before you have set Group Policy settings, you can't return the policy setting to the default setting by selecting the **Not Configured** option after you have configured this policy setting. To return to the default pre-boot recovery screen leave the policy setting enabled and select the **Use default message** options from the **Choose an option for the pre-boot recovery message** drop-down list box.

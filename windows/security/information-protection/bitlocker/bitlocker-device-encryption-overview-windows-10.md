@@ -40,20 +40,19 @@ The below table lists specific data-protection concerns and how they're addresse
 | There's no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
 | Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
 | Encrypting a new flash drive can take more than 20 minutes. | Used Space Only encryption in BitLocker To Go allows users to encrypt removable data drives in seconds. |
-| BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when you lose the PIN or password. |
+| BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when the PIN or password is lost. |
 | Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. |
 
 ## Prepare for drive and file encryption
 
-The best type of security measures is transparent to the user during implementation and use. Every time there's a possible delay or difficulty because of a security feature, there's strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that's a scenario that organizations need to avoid.
-Whether you're planning to encrypt entire volumes, removable devices, or individual files, Windows 11 and Windows 10 meet your needs by providing streamlined, usable solutions. In fact, you can take several steps in advance to prepare for data encryption and make the deployment quick and smooth.
+The best type of security measures is transparent to the user during implementation and use. Every time there's a possible delay or difficulty because of a security feature, there's a strong likelihood that users will try to bypass security. This situation is especially true for data protection, and that's a scenario that organizations need to avoid. Whether planning to encrypt entire volumes, removable devices, or individual files, Windows 11 and Windows 10 meet these needs by providing streamlined, usable solutions. In fact, several steps can be taken in advance to prepare for data encryption and make the deployment quick and smooth.
 
 ### TPM pre-provisioning
 
 In Windows 7, preparing the TPM offered a few challenges:
 
 - Turning on the TPM required going into the BIOS or UEFI firmware of the device. Turning on the TPM at the device requires someone to either physically go into the BIOS or UEFI firmware settings of the device to turn on the TPM, or to install a driver in Windows to turn on the TPM from within Windows.
-- When you enable the TPM, it may require one or more restarts.
+- When the TPM is enabled, it may require one or more restarts.
 
 This made preparing the TPM in Windows 7 problematic. If IT staff are provisioning new PCs, they can handle the required steps for preparing a TPM. However, if BitLocker needed to be enabled on devices that are already in users' hands, those users would probably struggle with the technical challenges. The user would then either call to IT for support or leave BitLocker disabled.
 
@@ -77,7 +76,7 @@ Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabl
 
 - If the device isn't domain joined, a Microsoft account that has been granted administrative privileges on the device is required. When the administrator uses a Microsoft account to sign in, the clear key is removed, a recovery key is uploaded to the online Microsoft account, and a TPM protector is created. Should a device require the recovery key, the user will be guided to use an alternate device and navigate to a recovery key access URL to retrieve the recovery key by using their Microsoft account credentials.
 
-- If the user uses a domain account to sign in, the clear key isn't removed until the user joins the device to a domain, and the recovery key is successfully backed up to Active Directory Domain Services (AD DS). You must enable the following Group Policy settings:
+- If the user uses a domain account to sign in, the clear key isn't removed until the user joins the device to a domain, and the recovery key is successfully backed up to Active Directory Domain Services (AD DS). The following Group Policy settings must be enabled for the recovery key to be backed up to AD DS:
 
   *Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives* > **Do not enable BitLocker until recovery information is stored in AD DS for operating system drives**
   
@@ -85,7 +84,7 @@ Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabl
 
 - Similar to signing in with a domain account, the clear key is removed when the user signs in to an Azure AD account on the device. As described in the bullet point above, the recovery password is created automatically when the user authenticates to Azure AD. Then, the recovery key is backed up to Azure AD, the TPM protector is created, and the clear key is removed.
 
-Microsoft recommends that BitLocker Device Encryption be enabled on any systems that support it, but the automatic BitLocker Device Encryption process can be prevented by changing the following registry setting:
+Microsoft recommends automatically enabling BitLocker Device Encryption on any systems that support it. However, the automatic BitLocker Device Encryption process can be prevented by changing the following registry setting:
 
 - **Subkey**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker`
 - **Type**: `REG_DWORD`
@@ -94,13 +93,13 @@ Microsoft recommends that BitLocker Device Encryption be enabled on any systems 
 Administrators can manage domain-joined devices that have BitLocker Device Encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker Device Encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
 
 > [!NOTE]
-> BitLocker Device Encryption uses the XTS-AES 128-bit encryption method. In case you need to use a different encryption method and/or cipher strength, the device must be configured and decrypted (if already encrypted) first. After that, different BitLocker settings can be applied.
+> BitLocker Device Encryption uses the XTS-AES 128-bit encryption method. If a different encryption method and/or cipher strength is needed but the device is already encrypted, it must first be decrypted before the new encryption method and/or cipher strength can be applied. After the device has been decrypted, different BitLocker settings can be applied.
 
 ## Used Disk Space Only encryption
 
-BitLocker in earlier Windows versions could take a long time to encrypt a drive because it encrypted every byte on the volume including parts that didn't have data. Encrypting every byte on the volume including parts that didn't have data is known as full disk encryption. Full disk encryption is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. If a drive previously had confidential data that has been moved or deleted, traces of the confidential data could remain on portions of the drive marked as unused.
+BitLocker in earlier Windows versions could take a long time to encrypt a drive because it encrypted every byte on the volume including areas that didn't have data. Encrypting every byte on the volume including areas that didn't have data is known as full disk encryption. Full disk encryption is still the most secure way to encrypt a drive, especially if a drive has previously contained confidential data that has since been moved or deleted. If a drive previously had confidential data that has been moved or deleted, traces of the confidential data could remain on portions of the drive marked as unused.
 
-But why encrypt a new drive when you can encrypt the data as it is being written? To reduce encryption time, BitLocker in Windows 11 and Windows 10 let users choose to encrypt just their data. Depending on the amount of data on the drive, this option can reduce encryption time by more than 99 percent.
+To reduce encryption time, BitLocker in Windows 11 and Windows 10 let users choose to encrypt just the areas of the disk that contain data. Areas of the disk that don't contain data and are empty won't be encrypted. Any new data is encrypted as it's created. Depending on the amount of data on the drive, this option can reduce the initial encryption time by more than 99 percent.
 
 Exercise caution when encrypting only used space on an existing volume on which confidential data may have already been stored in an unencrypted state. When using used space encryption, sectors where previously unencrypted data are stored can be recovered through disk-recovery tools until they're overwritten by new encrypted data. In contrast, encrypting only used space on a brand-new volume can significantly decrease deployment time without the security risk because all new data will be encrypted as it's written to the disk.
 
@@ -108,7 +107,7 @@ Exercise caution when encrypting only used space on an existing volume on which 
 
 SEDs have been available for years, but Microsoft couldn't support their use with some earlier versions of Windows because the drives lacked important key management features. Microsoft worked with storage vendors to improve the hardware capabilities, and now BitLocker supports the next generation of SEDs, which are called encrypted hard drives.
 
-Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives, which improves both drive and system performance by offloading cryptographic calculations from the PC's processor to the drive itself and rapidly encrypting the drive by using dedicated, purpose-built hardware. If you plan to use whole-drive encryption with Windows 11 or Windows 10, Microsoft recommends that you investigate hard drive manufacturers and models to determine whether any of their encrypted hard drives meet your security and budget requirements.
+Encrypted hard drives provide onboard cryptographic capabilities to encrypt data on drives. This feature improves both drive and system performance by offloading cryptographic calculations from the PC's processor to the drive itself. Data is rapidly encrypted by the drive by using dedicated, purpose-built hardware. If planning to use whole-drive encryption with Windows 11 or Windows 10, Microsoft recommends researching hard drive manufacturers and models to determine whether any of their encrypted hard drives meet the security and budget requirements.
 
 For more information about encrypted hard drives, see [Encrypted hard drive](../encrypted-hard-drive.md).
 
@@ -122,9 +121,9 @@ Windows 11 and Windows 10 can enable a true SSO experience from the preboot envi
 
 ## Manage passwords and PINs
 
-When BitLocker is enabled on a system drive and the PC has a TPM, you can choose to require that users type a PIN before BitLocker will unlock the drive. Such a PIN requirement can prevent an attacker who has physical access to a PC from even getting to the Windows sign-in, which makes it almost impossible for the attacker to access or modify user data and system files.
+When BitLocker is enabled on a system drive and the PC has a TPM, users can be required to type a PIN before BitLocker will unlock the drive. Such a PIN requirement can prevent an attacker who has physical access to a PC from even getting to the Windows sign-in, which makes it almost impossible for the attacker to access or modify user data and system files.
 
-Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor (a second "something you know"). This configuration comes with some costs, however. One of the most significant is the need to change the PIN regularly. In enterprises that used BitLocker with Windows 7 and the Windows Vista operating system, users had to contact systems administrators to update their BitLocker PIN or password. This requirement not only increased management costs but made users less willing to change their BitLocker PIN or password regularly.
+Requiring a PIN at startup is a useful security feature because it acts as a second authentication factor. However, this configuration comes with some costs. One of the most significant costs is the need to change the PIN regularly. In enterprises that used BitLocker with Windows 7 and the Windows Vista operating system, users had to contact systems administrators to update their BitLocker PIN or password. This requirement not only increased management costs but made users less willing to change their BitLocker PIN or password regularly.
 
 Windows 11 and Windows 10 users can update their BitLocker PINs and passwords themselves, without administrator credentials. Not only will this feature reduce support costs, but it could improve security, too, because it encourages users to change their PINs and passwords more often. In addition, Modern Standby devices don't require a PIN for startup: They're designed to start infrequently and have other mitigations in place that further reduce the attack surface of the system.
 
@@ -163,7 +162,7 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 
 - Empowers Windows Enterprise users to continue working anywhere with the assurance that their corporate data is protected.
 
-- Enforces the BitLocker encryption policy options that you set for your enterprise.
+- Enforces the BitLocker encryption policy options that are set for the enterprise.
 
 - Integrates with existing management tools, such as Microsoft Configuration Manager.
 
