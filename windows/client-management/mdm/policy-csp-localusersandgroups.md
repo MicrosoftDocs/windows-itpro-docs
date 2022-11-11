@@ -134,7 +134,7 @@ Example:
 
 Example 3: Update action for adding and removing group members on a hybrid joined machine.
 
-The following example shows how you can update a local group (**Administrators** with SID **S-1-5-21-2222222222-3333333333-4444444444-500**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
+The following example shows how you can update a local group (**Administrators** with the SID **S-1-5-21-2222222222-3333333333-4444444444-500**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add an Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
 ```xml
 <GroupConfiguration>
