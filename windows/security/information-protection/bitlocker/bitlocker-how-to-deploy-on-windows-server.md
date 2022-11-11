@@ -11,6 +11,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker: How to deploy on Windows Server 2012 and later

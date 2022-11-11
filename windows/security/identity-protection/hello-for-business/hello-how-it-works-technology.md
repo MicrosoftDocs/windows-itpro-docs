@@ -13,6 +13,7 @@ ms.date: 10/08/2018
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # Technology and terms

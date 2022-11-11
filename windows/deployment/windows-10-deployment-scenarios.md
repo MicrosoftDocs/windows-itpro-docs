@@ -8,6 +8,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.date: 10/31/2022
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 deployment scenarios
@@ -107,7 +108,7 @@ The goal of dynamic provisioning is to take a new PC out of the box, turn it on,
 
 ### Windows 10 Subscription Activation<A ID="windows-10-subscription-activation"></A>
 
-Windows 10 Subscription Activation is a modern deployment method that enables you to change the SKU from Pro to Enterprise with no keys and no reboots. For more information about Subscription Activation, see [Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation).
+Windows 10 Subscription Activation is a dynamic deployment method that enables you to change the SKU from Pro to Enterprise with no keys and no reboots. For more information about Subscription Activation, see [Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation).
 
 ### Azure Active Directory (Azure AD) join with automatic mobile device management (MDM) enrollment
 

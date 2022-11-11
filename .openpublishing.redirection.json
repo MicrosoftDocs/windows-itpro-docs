@@ -1197,7 +1197,7 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md",
-      "redirect_url": "hhttps://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
+      "redirect_url": "/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings",
       "redirect_document_id": false
     },
     {
@@ -6827,7 +6827,7 @@
     },
     {
       "source_path": "windows/manage/waas-wufb-intune.md",
-      "redirect_url": "/windows/deployment/update/waas-wufb-intune.md",
+      "redirect_url": "/windows/deployment/update/waas-wufb-intune",
       "redirect_document_id": false
     },
     {
@@ -7277,7 +7277,7 @@
     },
     {
       "source_path": "windows/manage/application-development-for-windows-as-a-service.md",
-      "redirect_url": "https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service",
+      "redirect_url": "windows/uwp/updates-and-versions/application-development-for-windows-as-a-service",
       "redirect_document_id": false
     },
     {
@@ -7457,7 +7457,7 @@
     },
     {
       "source_path": "windows/plan/chromebook-migration-guide.md",
-      "redirect_url": "edu/windows/chromebook-migration-guide",
+      "redirect_url": "education/windows/chromebook-migration-guide",
       "redirect_document_id": false
     },
     {
@@ -14412,12 +14412,12 @@
     },
     {
       "source_path": "windows/manage/sign-up-windows-store-for-business.md",
-      "redirect_url": "/microsoft-store/index.md",
+      "redirect_url": "/microsoft-store/index",
       "redirect_document_id": false
     },
     {
       "source_path": "store-for-business/sign-up-windows-store-for-business.md",
-      "redirect_url": "/microsoft-store/index.md",
+      "redirect_url": "/microsoft-store/index",
       "redirect_document_id": false
     },
     {
@@ -19442,8 +19442,8 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/rootkits-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware.md",
-      "redirect_document_id": false
+      "redirect_url": "/microsoft-365/security/intelligence/rootkits-malware",
+      "redirect_document_id": false  
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/safety-scanner-download.md",
@@ -20154,6 +20154,16 @@
       "source_path": "windows/deployment/update/update-compliance-v2-workbook.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-workbook",
       "redirect_document_id": false
-    }    
+    },    
+    {
+      "source_path": "windows/configuration/kiosk-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "windows/configuration/start-layout-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors",
+      "redirect_document_id": false
+    }  
   ]
 }

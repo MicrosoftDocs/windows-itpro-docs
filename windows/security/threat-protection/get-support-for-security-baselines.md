@@ -1,7 +1,7 @@
 ---
 title: Get support
 description: Frequently asked questions about how to get support for Windows baselines and the Security Compliance Toolkit (SCT).
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dulcemontemayor
@@ -10,7 +10,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
 ms.reviewer: 
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Get Support for Windows baselines

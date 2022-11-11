@@ -10,6 +10,7 @@ manager: aaroncz
 ms.collection: 
   - M365-modern-desktop
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows 10/11 Enterprise E3 in CSP

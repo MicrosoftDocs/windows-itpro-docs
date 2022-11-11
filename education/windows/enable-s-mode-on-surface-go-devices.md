@@ -4,7 +4,7 @@ description: Learn how to enable S mode on Surface Go devices.
 ms.date: 08/10/2022
 ms.topic: how-to
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Surface Go for Education - Enabling S mode

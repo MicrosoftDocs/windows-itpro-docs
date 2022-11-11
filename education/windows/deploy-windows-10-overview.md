@@ -4,7 +4,7 @@ description: Learn how to use Windows 10 in schools.
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Windows 10 for Education
