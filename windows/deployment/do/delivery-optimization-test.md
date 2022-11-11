@@ -55,17 +55,19 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 
 #### Test Machine Setup
 
-* Number of machines used: 2
-* Hardware:
-  * Two Virtual Machines or physical devices running Windows 10 (21H2) / Windows 11 (21H2)
-  * 8-GB RAM / 127-GB Disk
-  * Network – ensure the test devices are connected to the same network, one that is representative of the corporate network
-* Apply Policy settings/Windows configurations on each machine:
-  * Pause Windows Updates. This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. By default, there are four pieces of content available for peering at a given time. The Delivery Optimization client cycles through the available content in the cache. Simply pausing Windows Updates might not be enough in some cases. If there are Microsoft Store Updates, for example, a download can be triggered causing the four caching slots to be filled. If this happens, the second machine may not see peers. Verify there's only one cached content before continuing the test on the second machine. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers.
-  * Ensure all Store apps are up to date
-  * Set Delivery Optimization Download mode = '2'
-  * Set Delivery Optimization GroupID = 'GUID'. A GUID is a required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’.
-* **If Windows 11 devices** set 'Restrict Peer Selection' policy to '0-NAT'. The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
+|Setup Checklist| Value/Explanation
+|--------|-------------------------------|
+|Number of machines used| 2
+|Virtual Machines/physical devices| 2 
+|Windows OS version | Windows 10 (21H2) and Windows 11 (21H2)
+|RAM | 8-GB
+|Disk size | 127-GB
+|Network | Connected to same network, one that is representative of the corporate network.
+|Pause Windows Updates | This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. By default, there are four pieces of content available for peering at a given time. The Delivery Optimization client cycles through the available content in the cache. Simply pausing Windows Updates might not be enough in some cases. If there are Microsoft Store Updates, for example, a download can be triggered causing the four caching slots to be filled. If this happens, the second machine may not see peers. Verify there's only one cached content before continuing the test on the second machine. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers.
+|Ensure all Store apps are up to date | This will help prevent any new, unexpected updates to download during testing.
+|Delivery Optimization Download mode | 2 (set on each machine)
+|Delivery Optimization GroupID | 'GUID' (set on each machine). A GUID is a required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’.
+|**If Windows 11 devices** set Delivery Optimization 'Restrict Peer Selection' policy | 0-NAT (set on each machine). The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
 
 #### Test Instructions
 
@@ -104,16 +106,18 @@ The following set of instructions will be used for each machine:
 
 #### Test Machine Setup
 
-* Number of machines used: 3
-* Hardware:
-  * Three Azure Virtual Machines running Windows 10 (21H2)
-  * 8-GB RAM / 127-GB Disk
-  * Network – ensure the test devices are connected to the same network, one that is representative of the corporate network.
-* Apply Policy settings/Windows configurations on each machine:
-  * Set Delivery Optimization Download mode = '2'
-  * Set Delivery Optimization GroupID = 'GUID'. A GUID is required value which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
-  * Set Delivery Optimization policy 'Delay background download from http' = 60 (secs)
-  * Set Delivery Optimization policy 'Delay foreground download from http = 60 (secs)
+|Setup Checklist| Value/Explanation
+|--------|-------------------------------|
+|Number of machines used| 3
+|Virtual Machines| 3
+|Windows OS version | Windows 10 (21H2)
+|RAM | 8-GB
+|Disk size|127-GB
+|Network | Connected to same network, one that is representative of the corporate network.
+|Delivery Optimization Download mode| 2 (set on each machine)
+|Delivery Optimization GroupID| 'GUID' (set on each machine). A GUID is required value which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
+|Delivery Optimization policy 'Delay background download from http' | 60 (set on each machine)
+|Delivery Optimization policy 'Delay foreground download from http |60 (set on each machine)
 
 #### Testing Instructions
 
