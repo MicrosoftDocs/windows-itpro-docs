@@ -54,7 +54,7 @@ The following steps describe how MCC is provisioned and used:
 
 1. Microsoft clients make the range requests for content from the MCC node.
 
-1. A MCC node gets content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
+1. An MCC node gets content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
 
 1. Subsequent requests from end-user devices for content will be served from cache.
 
@@ -179,13 +179,13 @@ If you get the error message "Validation failed" in the Azure portal, it's likel
 
 If you get the error message "Could not create marketplace item" in the Azure portal, use the following steps to troubleshoot:
 
-- Make sure that you've selected **Microsoft Connected Cache** and not *Connected Cache resources* while trying to create a MCC resource.
+- Make sure that you've selected **Microsoft Connected Cache** and not *Connected Cache resources* while trying to create an MCC resource.
 
 - Make sure that you're using the same subscription that you provided to Microsoft and you have privileges to create an Azure resource.
 
 - If the issue persists, clear your browser cache and start in a new window.
 
-### Create a MCC node in Azure
+### Create an MCC node in Azure
 
 1. After you successfully create the resource, select **Go to resource**.
 
@@ -353,7 +353,7 @@ Before you start, make sure that you have a data drive configured on your server
 
     - If this process is for your *first MCC deployment*, enter `n`.
 
-    - If you already have a MCC deployment, you can use an existing IoT Hub from your previous installation. Select `Y` to see your existing IoT Hubs. You can copy and paste the resulting IoT Hub name to continue.
+    - If you already have an MCC deployment, you can use an existing IoT Hub from your previous installation. Select `Y` to see your existing IoT Hubs. You can copy and paste the resulting IoT Hub name to continue.
 
     :::image type="content" source="./images/mcc-isp-bash-iot-prompt.png" alt-text="Screenshot of the Bash script output with steps for existing IoT Hub." lightbox="./images/mcc-isp-bash-iot-prompt.png":::
 
@@ -550,7 +550,7 @@ sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-u
 
 ### Configure BGP on an Existing MCC
 
-If you have a MCC that's already active and running, follow the steps below to configure BGP.
+If you have an MCC that's already active and running, follow the steps below to configure BGP.
 
 1. Run the Update commands as described above.
 
