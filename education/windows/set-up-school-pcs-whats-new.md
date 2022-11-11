@@ -4,8 +4,7 @@ description: Find out about app updates and new features in Set up School PCs.
 ms.topic: whats-new
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---  
 
 # What's new in Set up School PCs

@@ -4,7 +4,7 @@ description: Windows 11 SE automatically configures settings in the operating sy
 ms.topic: article
 ms.date: 09/12/2022
 appliesto:
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
 # Windows 11 SE for Education settings list
