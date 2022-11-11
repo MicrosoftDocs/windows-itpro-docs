@@ -4,7 +4,7 @@ description: Learn how to switch out of Windows 10 Pro in S mode to Windows 10 P
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode

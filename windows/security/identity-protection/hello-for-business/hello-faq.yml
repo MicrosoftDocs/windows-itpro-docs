@@ -69,7 +69,8 @@ sections:
           In the context of Windows Hello for Business, it's shorthand for a logical grouping of key material or data. Windows Hello uses a single container that holds user key material for personal accounts, including key material associated with the user's Microsoft account or with other consumer identity providers, and credentials associated with a workplace or school account.
           The container holds enterprise credentials only on devices that have been registered with an organization; it contains key material for the enterprise IDP, such as on-premises Active Directory or Azure AD.
           Note that there are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials of Windows Hello stores, are protected without the creation of actual containers or folders.
-          The container contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container. [Each logical container holds one or more sets of keys.](./images/passport-fig3-logicalcontainer.png)
+          The container contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container. Each logical container holds one or more sets of keys.\
+          :::image type="content" source="images/passport-fig3-logicalcontainer.png" alt-text="logical container with set of keys":::
 
       - question: How do I delete a Windows Hello for Business container on a device?
         answer: |  
