@@ -131,12 +131,12 @@ There are five IDs that the device provisioning script takes as input in order t
 ### Storage fields
 
 > [!IMPORTANT]
-   > All cache drives must have read/write permissions set or the cache node will not function.
-   > For example, in a terminal you can run: 'sudo chmod 777 /path/to/cachedrive'
+> All cache drives must have read/write permissions set or the cache node will not function.
+> For example, in a terminal you can run: `sudo chmod 777 /path/to/cachedrive`
 
 | Field Name | Expected Value| Description |
 |---|---|---|
-| **Cache drive** | File path string | Up to 9 drives can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: '/dev/folder/' As noted, each cache drive should have read/write permissions configured. |
+| **Cache drive** | File path string | Up to 9 drives can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: `/dev/folder/` Each cache drive should have read/write permissions configured. |
 | **Cache drive size in gigabytes** | Integer in GB | Set the size of each drive configured for the cache node. |
 
 ### Client routing fields
