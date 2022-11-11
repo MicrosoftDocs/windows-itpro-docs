@@ -1457,7 +1457,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Set this policy to restrict peer selection via selected option.
-In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore means there is no peering between subnets. The default value in Windows 11 is set to "Local Peer Discovery".
+In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer discovery to the local network. Currently, the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. These options apply to both Download Modes LAN (1) and Group (2) and therefore it means that there is no peering between subnets. The default value in Windows 11 is set to "Local Peer Discovery".
 
 If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
 
