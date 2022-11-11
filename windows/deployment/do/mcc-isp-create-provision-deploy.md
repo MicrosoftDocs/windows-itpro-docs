@@ -98,9 +98,8 @@ There are five IDs that the device provisioning script takes as input in order t
 |---|---|
 | Customer ID | The Azure subscription ID that the cache node is created in. |
 | Cache node ID | The unique alphanumeric ID of the cache node being provisioned. |
-| Customer Key | The unique alphanumeric ID that provides secure authentication of the cache node to Delivery Optimization services. |
-| Cache node name | The name of the cache node. |
-| Tenant ID | The unique ID associated with the Azure account. |
+| Customer key | The unique alphanumeric ID that provides secure authentication of the cache node to Delivery Optimization services. |
+| Registration key | Single use device registration key used by Microsoft Delivery Optimization services. |
 
 :::image type="content" source="images/mcc-isp-deploy-cache-node-numbered.png" alt-text="Screenshot of the server provisioning tab within cache node configuration in Azure portal.":::
 
