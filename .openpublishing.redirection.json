@@ -19931,6 +19931,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/do/mcc-enterprise-overview.md",
+      "redirect_url": "/windows/deployment/do/mcc-enterprise-prerequisites",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/advanced-troubleshooting-802-authentication.md",
       "redirect_url": "/troubleshoot/windows-client/networking/802-1x-authentication-issues-troubleshooting",
       "redirect_document_id": false
