@@ -119,7 +119,7 @@ The following example updates the built-in administrators group with the SID **S
 Example 2: Replace / Restrict the built-in administrators group with an Azure AD user account.
 
 > [!NOTE]
-> When using ‘R’ replace option to configure the built-in ‘Administrators’ group with SID **S-1-5-21-2222222222-3333333333-4444444444-500**. It is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
+> When using the ‘R’ replace option to configure the built-in Administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** you should always specify the administrator as a member plus any other custom members. This is necessary because the built-in administrator must always be a member of the administrators group.
 
 Example:
 ```xml
