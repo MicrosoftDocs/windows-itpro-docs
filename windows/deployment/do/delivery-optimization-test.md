@@ -60,8 +60,8 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 |Number of machines used| 2
 |Virtual Machines/physical devices| 2 
 |Windows OS version | Windows 10 (21H2) and Windows 11 (21H2)
-|RAM | 8-GB
-|Disk size | 127-GB
+|RAM | 8 GB
+|Disk size | 127 GB
 |Network | Connected to same network, one that is representative of the corporate network.
 |Pause Windows Updates | This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. By default, there are four pieces of content available for peering at a given time. The Delivery Optimization client cycles through the available content in the cache. Simply pausing Windows Updates might not be enough in some cases. If there are Microsoft Store Updates, for example, a download can be triggered causing the four caching slots to be filled. If this happens, the second machine may not see peers. Verify there's only one cached content before continuing the test on the second machine. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers.
 |Ensure all Store apps are up to date | This will help prevent any new, unexpected updates to download during testing.
@@ -102,7 +102,7 @@ The following set of instructions will be used for each machine:
 ### Scenario 2: Advance Setup
 
 **Goal:** Demonstrate how Delivery Optimization peer-to-peer technology works in a non-controlled environment, expanding to three machines
-**Expected Results:** Machine 1 will download zero bytes from peers, Machine 2 will find a peers and download 50 - 99% from peers. Machine 3 will find 2 peers and download 50 - 99% from peers.
+**Expected Results:** Machine 1 will download zero bytes from peers, Machine 2 will find a peers and download 50 - 99% from peers. Machine 3 will find two peers and download 50 - 99% from peers.
 
 #### Test Machine Setup
 
@@ -111,11 +111,11 @@ The following set of instructions will be used for each machine:
 |Number of machines used| 3
 |Virtual Machines| 3
 |Windows OS version | Windows 10 (21H2)
-|RAM | 8-GB
-|Disk size|127-GB
+|RAM | 8 GB
+|Disk size|127 GB
 |Network | Connected to same network, one that is representative of the corporate network.
 |Delivery Optimization Download mode| 2 (set on each machine)
-|Delivery Optimization GroupID| 'GUID' (set on each machine). A GUID is required value which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
+|Delivery Optimization GroupID| 'GUID' (set on each machine). A GUID is required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
 |Delivery Optimization policy 'Delay background download from http' | 60 (set on each machine)
 |Delivery Optimization policy 'Delay foreground download from http |60 (set on each machine)
 
