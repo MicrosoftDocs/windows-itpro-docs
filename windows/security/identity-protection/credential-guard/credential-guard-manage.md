@@ -20,6 +20,7 @@ appliesto:
   - ✅ <b>Windows Server 2016</b>
   - ✅ <b>Windows Server 2019</b>
   - ✅ <b>Windows Server 2022</b>
+ms.technology: itpro-security
 ---
 # Manage Windows Defender Credential Guard
 
@@ -314,7 +315,7 @@ Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 
 Instructions are given below for how to disable Virtualization-Based Security (VBS) entirely, rather than just Windows Defender Credential Guard. Disabling Virtualization-Based Security will automatically disable Windows Defender Credential Guard and other features that rely on VBS.
 
-> [!IMPORANT]
+> [!IMPORTANT]
 > Other security features in addition to Windows Defender Credential Guard rely on Virtualization-Based Security in order to run. Disabling Virtualization-Based Security may have unintended side effects.
 
 1. If Group Policy was used to enable Virtualization-Based Security, set the Group Policy setting that was used to enable it (**Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn on Virtualization Based Security**) to "Disabled".
