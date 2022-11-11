@@ -87,8 +87,24 @@ Both managed installer and the ISG depend on AppLocker to provide some functiona
 
     ```powershell
     sc.exe query appidsvc
+        SERVICE_NAME: appidsvc
+        TYPE               : 30  WIN32
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
     sc.exe query AppLockerFltr
-    ```
+        SERVICE_NAME: applockerfltr
+        TYPE               : 1  KERNEL_DRIVER
+        STATE              : 4  RUNNING
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+   ```
 
     If not, run *appidtel start* from the elevated PowerShell window and check again.
 
