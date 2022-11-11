@@ -175,8 +175,6 @@ Operators who have been given access to the program will be sent a link to the A
 
 If you get the error message "Validation failed" in the Azure portal, it's likely because you selected the **Location** as **US West 2** or another unsupported location. To resolve this error, go to the previous step and choose **(US) West US** for the **Location**.
 
-:::image type="content" source="./images/mcc-isp-unsupported-location.png" alt-text="'Screenshot of the Validation failed' error message for Connected Cache in an unsupported location.":::
-
 ##### Error: Could not create Marketplace item
 
 If you get the error message "Could not create marketplace item" in the Azure portal, use the following steps to troubleshoot:
