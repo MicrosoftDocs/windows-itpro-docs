@@ -13,7 +13,7 @@ metadata:
   localizationpriority: medium
   ms.date: 09/14/2022
   appliesto:
-  - ✅ <b>Windows 11 SE</b>
+    - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 
 title: Common questions about Windows 11 SE
 summary: Windows 11 SE combines the power and privacy of Windows 11 with educator feedback to create a simplified experience on devices built for education. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows 11 SE so you can get to what matters most.
