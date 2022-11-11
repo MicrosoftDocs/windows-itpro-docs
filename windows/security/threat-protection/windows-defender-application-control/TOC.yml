@@ -88,7 +88,7 @@
     - name: Enforce WDAC policies
       href: enforce-windows-defender-application-control-policies.md
     - name: Managing WDAC Policies with CI Tool
-      href: citool-commands.md
+      href: operations/citool-commands.md
     - name: Use code signing to simplify application control for classic Windows applications
       href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
       items:
