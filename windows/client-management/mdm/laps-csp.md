@@ -63,7 +63,7 @@ The LAPS CSP can be used to manage devices that are either joined to Azure AD or
 |ResetPasswordStatus|Yes|Yes|
 
 > [!IMPORTANT]
-> Windows supports a LAPS Group Policy Object that is entirely separate from the LAPS CSP. Many of the various settings are common across both the LAPS GPO and CSP (GPO does not support any of the Action-related settings). As long as at least one LAPS setting is configured via CSP, any GPO-configured settings will be ignored. Also see the TBD reference on LAPS policy configuration.
+> Windows supports a LAPS Group Policy Object that is entirely separate from the LAPS CSP. Many of the various settings are common across both the LAPS GPO and CSP (GPO does not support any of the Action-related settings). As long as at least one LAPS setting is configured via CSP, any GPO-configured settings will be ignored. Also see [Configure policy settings for Windows LAPS](/windows-server/identity/laps/laps-management-policy-settings).
 
 ## ./Device/Vendor/MSFT/LAPS
 
