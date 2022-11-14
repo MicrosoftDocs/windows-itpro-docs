@@ -28,9 +28,7 @@ Devices running earlier supported versions of Windows 10 can update to version 2
 
 To learn more about the status of the Windows 10, version 22H2 rollout, known issues, and build information, see [Windows 10 release information](/windows/release-health/release-information).
 
-For more information about updated tools to support this release, see [IT tools to support Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-22h2/ba-p/3655750) (`https://aka.ms/W10/tools-for-22H2`)
-
-## Updates and servicing
+For more information about updated tools to support this release, see [IT tools to support Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-22h2/ba-p/3655750).
 
 The Windows 10, version 22H2 feature update is installed as part of the general availability channel. Quality updates are still installed monthly on patch Tuesday.
 
