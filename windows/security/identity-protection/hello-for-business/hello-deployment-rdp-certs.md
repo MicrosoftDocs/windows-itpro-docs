@@ -6,7 +6,9 @@ author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - ContentEngagementFY23
 ms.topic: article
 localizationpriority: medium
 ms.date: 02/22/2021
