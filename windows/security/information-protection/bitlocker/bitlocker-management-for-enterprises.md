@@ -18,16 +18,16 @@ ms.technology: itpro-security
 
 The ideal solution for BitLocker management is to eliminate the need for IT administrators to set management policies using tools or other mechanisms by having Windows perform tasks that are more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, secure boot, and other hardware improvements, for example, have helped to alleviate the support burden on help desks and a decrease in support-call volumes, yielding improved user satisfaction. Windows continues to be the focus for new features and improvements for built-in encryption management, such as automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1.
 
-Though much Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently asked questions, and also provides BitLocker recommendations for different types of computers.
-
-> [!IMPORTANT]
-> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities will be offered from [ConfigMgr in on-prem scenarios](/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker/) in the future.
+Though much Windows [BitLocker documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently asked questions, and also provides BitLocker recommendations for different types of computers.
 
 ## Managing domain-joined computers and moving to cloud  
 
 Companies that image their own computers using Configuration Manager can use an existing task sequence to [pre-provision BitLocker](/configmgr/osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](/configmgr/osd/understand/task-sequence-steps#BKMK_EnableBitLocker). These steps during an operating system deployment can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use Configuration Manager to pre-set any desired [BitLocker Group Policy](./bitlocker-group-policy-settings.md).
 
 Enterprises can use [Microsoft BitLocker Administration and Monitoring (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/) to manage client computers with BitLocker that are domain-joined on-premises until [mainstream support ends in July 2019](/lifecycle/products/?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5%20Service%20Pack%201%2F) or they can receive extended support until April 2026. Thus, over the next few years, a good strategy for enterprises will be to plan and move to cloud-based management for BitLocker. Refer to the [PowerShell examples](#powershell-examples) to see how to store recovery keys in Azure Active Directory (Azure AD).
+
+> [!IMPORTANT]
+> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities are offered through Configuration Manager BitLocker Management. See [Plan for BitLocker management](/mem/configmgr/protect/plan-design/bitlocker-management) in the Configuration Manager documentation for additional information.
 
 ## Managing devices joined to Azure Active Directory
 
@@ -96,38 +96,26 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 
 ## Related Articles
 
-[BitLocker: FAQs](bitlocker-frequently-asked-questions.yml)
-
-[Microsoft BitLocker Administration and Management (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/)
-
-[Overview of BitLocker Device Encryption in Windows](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption)
-
-[BitLocker Group Policy Reference](./bitlocker-group-policy-settings.md)
-
-[Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune/)
+- [BitLocker: FAQs](bitlocker-frequently-asked-questions.yml)
+- [Microsoft BitLocker Administration and Management (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/)
+- [Overview of BitLocker Device Encryption in Windows](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption)
+- [BitLocker Group Policy Reference](./bitlocker-group-policy-settings.md)
+- [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune/)
 *(Overview)*
-
-[Configuration Settings Providers](/windows/client-management/mdm/policy-configuration-service-provider)
+- [Configuration Settings Providers](/windows/client-management/mdm/policy-configuration-service-provider)
 *(Policy CSP: See [Security-RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-policies))*
-
-[BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/)
+- [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp/)
 
 ### Windows Server setup tools
 
-[Windows Server Installation Options](/windows-server/get-started-19/install-upgrade-migrate-19/)
-
-[How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features)
-
-[How to add or remove optional components on Server Core](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) *(Features on Demand)*
-
-[BitLocker: How to deploy on Windows Server 2012 and newer](bitlocker-how-to-deploy-on-windows-server.md)  
-
-[BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
-
-[Shielded VMs and Guarded Fabric](https://blogs.technet.microsoft.com/windowsserver/2016/05/10/a-closer-look-at-shielded-vms-in-windows-server-2016/)
+- [Windows Server Installation Options](/windows-server/get-started-19/install-upgrade-migrate-19/)
+- [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features)
+- [How to add or remove optional components on Server Core](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) *(Features on Demand)*
+- [BitLocker: How to deploy on Windows Server 2012 and newer](bitlocker-how-to-deploy-on-windows-server.md)  
+- [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
+- [Shielded VMs and Guarded Fabric](https://blogs.technet.microsoft.com/windowsserver/2016/05/10/a-closer-look-at-shielded-vms-in-windows-server-2016/)
 
 ### PowerShell
 
-[BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell)
-
-[Surface Pro Specifications](https://www.microsoft.com/surface/support/surface-pro-specs/)
+- [BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell)
+- [Surface Pro Specifications](https://www.microsoft.com/surface/support/surface-pro-specs/)
