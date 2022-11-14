@@ -100,7 +100,7 @@ sections:
 
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
-          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in Windows 11 22H2.
+          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in Windows 11, version 22H2.
 
       - question: Why does authentication fail immediately after provisioning hybrid key trust?
         answer: |
