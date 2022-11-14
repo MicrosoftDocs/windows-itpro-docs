@@ -42,7 +42,7 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 
 * Delivery Optimization’s hybrid approach to downloading from multiple sources (HTTP and peer) in parallel is especially critical for large-scale environments, constantly assessing the optimal source from which to deliver the content. In conjunction, the distribution of content cache, across participating devices, contributes to Delivery Optimization’s ability to find bandwidth savings as more peers become available.
 
-* At the point a download is initiated, the DO client starts downloading from the HTTP and discovering peers simultaneously. With a smaller file, there might be nearly 100% bytes from HTTP before connecting to a peer, even though peers are available. With a larger file and quality LAN peers, it might reduce the HTTP request rate to near zero, but only after making those initial requests from HTTP.
+* At the point a download is initiated, the DO client starts downloading from the HTTP source and discovering peers simultaneously. With a smaller file, most of the bytes could be downloaded from an HTTP source before connecting to a peer, even though peers are available. With a larger file and quality LAN peers, it might reduce the HTTP request rate to near zero, but only after making those initial requests from HTTP.
 
 * In the next section, you'll see how the two testing scenarios produce differing results in the number of bytes coming from HTTP vs. peers, which shows Delivery Optimization continuously evaluating the optimal location from which to download the content.
 
@@ -50,32 +50,36 @@ Several elements that influence overall peering, using Delivery Optimization. Th
 
 ### Scenario 1: Basic Setup
 
-**Goal:** Demonstrate how Delivery Optimization peer-to-peer technology works using two machines, in a controlled test environment
-**Expected Results:** Machine 1 will download zero bytes from peers, Machine 2 will download 50 - 99% from peers.
+**Goal:**
+Demonstrate how Delivery Optimization peer-to-peer technology works using two machines, in a controlled test environment
+
+**Expected Results:**
+Machine 1 will download zero bytes from peers, Machine 2 will download 50 - 99% from peers.
 
 #### Test Machine Setup
 
 |Setup Checklist| Value/Explanation
 |--------|-------------------------------|
 |Number of machines used| 2
-|Virtual Machines/physical devices| 2 
+|Virtual Machines/physical devices| 2
 |Windows OS version | Windows 10 (21H2) and Windows 11 (21H2)
 |RAM | 8 GB
 |Disk size | 127 GB
 |Network | Connected to same network, one that is representative of the corporate network.
 |Pause Windows Updates | This controls the test environment so no other content is made available during the test, and potentially altering the outcome of the test. If there are problems and no peering happens, use 'Get-DeliveryOptimizationStatus' on the first machine to return a real-time list of the connected peers.
 |Ensure all Store apps are up to date | This will help prevent any new, unexpected updates to download during testing.
-|Delivery Optimization Download mode | 2 (set on each machine)
-|Delivery Optimization GroupID | 'GUID' (set on each machine). A GUID is a required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’.
-|**If Windows 11 devices** set Delivery Optimization 'Restrict Peer Selection' policy | 0-NAT (set on each machine). The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
+|Delivery Optimization 'Download Mode' Policy | 2 (Group)(set on each machine)
+|Delivery Optimization 'GroupID' Policy | Set the *same* 'GUID' on each test machine. A GUID is a required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’.
+|**Required on Windows 11 devices only** set Delivery Optimization 'Restrict Peer Selection' policy | 0-NAT (set on each machine). The default behavior in Windows 11 is set to '2-Local Peer Discovery'. For testing purposes, this needs to be scoped to the NAT.
 
 #### Test Instructions
 
 The following set of instructions will be used for each machine:
 
-1. Clear the DO cache: ‘Delete-DeliveryOptimizationCache’
-2. Open MS Store and search for 'Asphalt Legends 9'. Select ‘Get’ to initiate the download of the content (Content size: 3.4 GB).
-3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'
+1. Open PowerShell console as 'Administrator'.
+   * Clear the DO cache: ‘Delete-DeliveryOptimizationCache’
+   * Run 'Get-DeliveryOptimizationStatus'
+2. Open MS Store and search for 'Asphalt Legends 9'. Select ‘Get’ to initiate the download of the content (Content size: ~3.4 GB).
 
 **On machine #1**
 
@@ -101,8 +105,10 @@ The following set of instructions will be used for each machine:
 
 ### Scenario 2: Advance Setup
 
-**Goal:** Demonstrate how Delivery Optimization peer-to-peer technology works in a non-controlled environment, expanding to three machines
-**Expected Results:** Machine 1 will download zero bytes from peers, Machine 2 will find a peers and download 50 - 99% from peers. Machine 3 will find two peers and download 50 - 99% from peers.
+**Goal:**
+Demonstrate how Delivery Optimization peer-to-peer technology works in a non-controlled environment, expanding to three machines
+**Expected Results:**
+Machine 1 will download zero bytes from peers, Machine 2 will find a peers and download 50 - 99% from peers. Machine 3 will find two peers and download 50 - 99% from peers.
 
 #### Test Machine Setup
 
@@ -114,17 +120,17 @@ The following set of instructions will be used for each machine:
 |RAM | 8 GB
 |Disk size|127 GB
 |Network | Connected to same network, one that is representative of the corporate network.
-|Delivery Optimization Download mode| 2 (set on each machine)
-|Delivery Optimization GroupID| 'GUID' (set on each machine). A GUID is required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
-|Delivery Optimization policy 'Delay background download from http' | 60 (set on each machine)
-|Delivery Optimization policy 'Delay foreground download from http |60 (set on each machine)
+|Delivery Optimization 'Download Mode' Policy| 2 (Group)(set on each machine)
+|Delivery Optimization 'Group ID' Policy| Set the *same* 'GUID' on each test machine. A GUID is required value, which can be generated using PowerShell, ‘[[guid]::NewGuid()](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)’
+|Delivery Optimization 'Delay background download from http' Policy | 60 (set on each machine)
+|Delivery Optimization 'Delay foreground download from http Policy |60 (set on each machine)
 
 #### Testing Instructions
 
 The following set of instructions will be used for each machine:
 
 1. Clear the DO cache: ‘Delete-DeliveryOptimizationCache’
-2. Open MS Store and search for 'Asphalt Legends 9'. Select ‘Get’ to initiate the download of the content (Content size: 3.4 GB).
+2. Open MS Store and search for 'Asphalt Legends 9'. Select ‘Get’ to initiate the download of the content (Content size: ~3.4 GB).
 3. Open PowerShell console as Administrator. Run 'Get-DeliveryOptimizationStatus'
 
 **On machine #1:**
@@ -138,7 +144,7 @@ The following set of instructions will be used for each machine:
 **Observations**
 
 * The first download in the group of devices shows all bytes coming from HTTP, 'BytesFromHttp'.
-* Download is in the ‘Foreground’ because the Store app is doing the download and in the foreground on the device.
+* Download is in the ‘Foreground’ because the Store app is doing the download and in the foreground on the device because it is initiated by the user in the Store app.
 * No peers are found.
 
 *Wait 5 minutes*
@@ -196,7 +202,7 @@ As mentioned, the distributed nature of the Delivery Optimization technology is 
 
 ## Conclusion
 
-Using Delivery Optimization can help make a big impact in customer environments to optimize bandwidth. The peer-to-peer technology offers many configurations, designed to be flexible for any organization. Delivery Optimization uses a distributed cache, across different sources, to ensure the most optimal download experience.
+Using Delivery Optimization can help make a big impact in customer environments to optimize bandwidth. The peer-to-peer technology offers many configurations, designed to be flexible for any organization. Delivery Optimization uses a distributed cache, across different sources, to ensure the most optimal download experience while limiting the resources used on each device.
 
 The testing scenarios found in this document help to show a controlled test environment, helping to prevent updates from interrupting the peering results. The other, a more real-world case, to demonstrate how content available across peers will both be used as the source of the content.
 
