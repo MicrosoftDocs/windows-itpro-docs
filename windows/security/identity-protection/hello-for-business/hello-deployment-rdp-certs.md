@@ -36,7 +36,8 @@ Windows Hello for Business supports using a certificate as the supplied credenti
 
 ## Deploy certificates via Active Directory Certificate Services (AD CS)
 
-This scenario is applicable to hybrid Azure AD joined devices only.
+> [!NOTE]
+> This process is applicable to hybrid Azure AD joined devices only.
 
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template* and then deploy certificates based on that template.
 
@@ -129,7 +130,10 @@ Follow these steps to create a certificate template:
 
 </details>
 
-## Deploying a certificate to Hybrid or Azure AD Joined Devices using Simple Certificate Enrollment Protocol (SCEP) via Intune
+## Deploy certificates via Microsoft Intune
+
+> [!NOTE]
+> This process is applicable to both *Azure AD joined* and *hybrid Azure AD joined* devices that are managed via Intune.
 
 Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PFX via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-scep-configure).
 
