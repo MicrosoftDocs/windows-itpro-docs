@@ -37,4 +37,4 @@ sections:
            
           Drive partitioning must meet the [BitLocker Drive Encryption Partitioning Requirements](/windows-hardware/manufacture/desktop/bitlocker-drive-encryption#bitlocker-drive-encryption-partitioning-requirements).
           
-          As with BitLocker, you can open drives that are encrypted by BitLocker To Go by using a password or smart card on another computer. In Control Panel, use **BitLocker Drive Encryption**.
+          As with BitLocker, drives that are encrypted by BitLocker To Go can be opened by using a password or smart card on another computer. In Control Panel, use **BitLocker Drive Encryption**.

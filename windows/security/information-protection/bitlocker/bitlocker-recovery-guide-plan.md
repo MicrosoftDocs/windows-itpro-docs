@@ -358,7 +358,7 @@ BitLocker metadata has been enhanced in Windows 10, version 1903 or Windows 11 t
 ![Customized BitLocker recovery screen.](./images/bl-password-hint2.png)
 
 > [!IMPORTANT]
-> We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft account.
+> It is not recommend to print recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft account.
 
 There are rules governing which hint is shown during the recovery (in the order of processing):
 
