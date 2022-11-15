@@ -1,6 +1,6 @@
 ---
 title: Deploy certificates to cloud Kerberos trust and key trust users to enable RDP
-description: Learn how to deploy certificates to a cloud Kerberos trust and key trust user to enable remote desktop with supplied credentials
+description: Learn how to deploy certificates to a cloud Kerberos trust and key trust user to enable remote desktop with supplied credentials.
 ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
@@ -84,13 +84,24 @@ Follow these steps to create a certificate template:
 
 1. Open an elevated command prompt and change to a temporary working directory
 1. Execute the following command, replacing `<TemplateName>` with the Template name you took note of earlier in step 7c
-    `certutil -dstemplate <TemplateName> > <TemplateName.txt>`
+
+    ```cmd
+    certutil -dstemplate <TemplateName> > <TemplateName.txt>
+    ```
+
 1. Open the text file created by the command above.
-    1. Delete the last line of the output from the file that reads `CertUtil: -dsTemplate command completed successfully.`
-    1. Modify the line that reads `pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"` to `pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"`
-1. Save the text file.
+    1. Delete the last line of the output from the file that reads\
+      `CertUtil: -dsTemplate command completed successfully.`
+    1. Modify the line that reads\
+      `pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"` to\
+      `pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"`
+1. Save the text file
 1. Update the certificate template by executing the following command:
-    `certutil -dsaddtemplate \<TemplateName\>.txt`
+
+    ```cmd
+    certutil -dsaddtemplate <TemplateName.txt>
+    ```
+
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
 
     ![Selecting Certificate Template to Issue.](images/rdpcert/certificatetemplatetoissue.png)
