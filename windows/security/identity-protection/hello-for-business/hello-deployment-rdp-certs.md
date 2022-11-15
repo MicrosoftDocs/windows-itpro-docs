@@ -1,53 +1,57 @@
 ---
-title: Deploying Certificates to Key Trust Users to Enable RDP
-description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
+title: Deploy certificates to cloud Kerberos trust and key trust users to enable RDP
+description: Learn how to deploy certificates to a cloud Kerberos trust and key trust user to enable remote desktop with supplied credentials
 ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
-ms.reviewer: prsriva
+ms.reviewer: erikdau
 ms.collection:
   - M365-identity-device-management
   - ContentEngagementFY23
-ms.topic: article
+ms.topic: how-to
 localizationpriority: medium
-ms.date: 02/22/2021
-appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Key trust</b>
-  - ✅ <b>Cloud Kerberos trust</b>
+ms.date: 11/15/2022
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H2 and later</a>
 ms.technology: itpro-security
 ---
 
-# Deploy Certificates to Key Trust and Cloud Kerberos Trust Users to Enable RDP
+# Deploy certificates to cloud Kerberos trust and key trust users to enable RDP
 
-Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. For certificate trust deployments, creation of this certificate occurs at container creation time.
+This document describes Windows Hello for Business functionalities or scenarios that apply to:\
+✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
+✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust.md), [ key trust](hello-how-it-works-technology.md#key-trust)\
+✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology.md#hybrid-azure-ad-join)
 
-This document discusses an approach for key trust and cloud Kerberos trust deployments where authentication certificates can be deployed to an existing WHFB user.
+<br>
 
-Three approaches are documented here:
+---
 
-1. Deploying a certificate to hybrid joined devices using an on-premises Active Directory certificate enrollment policy.
+Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. For *cloud Kerberos trust* and *certificate trust* deployments, the creation of this certificate occurs at container creation time.
 
-1. Deploying a certificate to hybrid or Azure AD-joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune.
+This document discusses three approaches for cloud Kerberos trust and key trust deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
 
-1. Working with non-Microsoft enterprise certificate authorities.
+- Deploy certificates to hybrid joined devices using an on-premises Active Directory certificate enrollment policy
+- Deploy certificates to hybrid or Azure AD-joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune
+- Work with non-Microsoft enterprise certificate authorities
 
-## Deploying a certificate to a hybrid joined device using an on-premises Active Directory Certificate enrollment policy
+## Deploy certificates to a hybrid joined devices using an on-premises Active Directory Certificate enrollment policy
+
+To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must:
+
+1. Create a suitable certificate template
+1. Deploy certificates to your users based on the template
 
 ### Create a Windows Hello for Business certificate template
 
-1. Sign in to your issuing certificate authority (CA).
+Follow these steps to create a certificate template:
 
-1. Open the **Certificate Authority** Console (%windir%\system32\certsrv.msc).
-
-1. In the left pane of the MMC, expand **Certification Authority (Local)**, and then expand your CA within the Certification Authority list.
-
-1. Right-click **Certificate Templates** and then click **Manage** to open the **Certificate Templates** console.
-
-1. Right-click the **Smartcard Logon** template and click **Duplicate Template**
+1. Sign in to your issuing certificate authority (CA)
+1. Open the **Certificate Authority** mmc snap-in console (%windir%\system32\certsrv.msc)
+1. In the left pane of the MMC, expand **Certification Authority (Local)**, and then expand your CA within the Certification Authority list
+1. Right-click **Certificate Templates** and then select **Manage** to open the **Certificate Templates** console
+1. Right-click the **Smartcard Logon** template and select **Duplicate Template**
 
     ![Duplicating Smartcard Template.](images/rdpcert/duplicatetemplate.png)
 
@@ -55,63 +59,45 @@ Three approaches are documented here:
     1. Clear the **Show resulting changes** check box
     1. Select **Windows Server 2012 or Windows Server 2012 R2** from the Certification Authority list
     1. Select **Windows Server 2012 or Windows Server 2012 R2** from the Certification Recipient list
-
 1. On the **General** tab:
-    1. Specify a Template display name, such as **WHfB Certificate Authentication**
+    1. Specify a Template display name, for example *WHfB Certificate Authentication*
     1. Set the validity period to the desired value
-    1. Take note of the Template name for later, which should be the same as the Template display name minus spaces (**WHfBCertificateAuthentication** in this example).
-
-1. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
-
+    1. Take note of the Template name for later, which should be the same as the Template display name minus spaces (**WHfBCertificateAuthentication** in this example)
+1. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**
 1. On the **Subject Name** tab:
     1. Select the **Build from this Active Directory** information button if it is not already selected
     1. Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name is not already selected
     1. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**
 1. On the **Request Handling** tab:
     1. Select the **Renew with same key** check box
-    1. Set the Purpose to **Signature and smartcard logon**
-        1. Click **Yes** when prompted to change the certificate purpose
-    1. Click **Prompt the user during enrollment**
-
+    1. Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose
+    1. Select **Prompt the user during enrollment**
 1. On the **Cryptography** tab:
     1. Set the Provider Category to **Key Storage Provider**
     1. Set the Algorithm name to **RSA**
     1. Set the minimum key size to **2048**
     1. Select **Requests must use one of the following providers**
-    1. Tick **Microsoft Software Key Storage Provider**
+    1. Select **Microsoft Software Key Storage Provider**
     1. Set the Request hash to **SHA256**
+1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them
+1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
+1. Close the Certificate Templates console
 
-1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them.
-
-1. Click **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates.
-
-1. Close the Certificate Templates console.
-
-1. Open an elevated command prompt and change to a temporary working directory.
-
-1. Execute the following command:
-
-    `certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt`
-
-    Replace \<TemplateName\> with the Template name you took note of earlier in step 7.
-
+1. Open an elevated command prompt and change to a temporary working directory
+1. Execute the following command, replacing `\<TemplateName\>` with the Template name you took note of earlier in step 7c
+    `certutil -dstemplate \<TemplateName\> \<TemplateName.txt\>`
 1. Open the text file created by the command above.
-    1. Delete the last line of the output from the file that reads **CertUtil: -dsTemplate command completed successfully.**
-    1. Modify the line that reads **pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"** to **pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"**
-
+    1. Delete the last line of the output from the file that reads `CertUtil: -dsTemplate command completed successfully.`
+    1. Modify the line that reads `pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"` to `pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"`
 1. Save the text file.
-
 1. Update the certificate template by executing the following command:
-
-    certutil -dsaddtemplate \<TemplateName\>.txt
-
-1. In the Certificate Authority console, right-click **Certificate Templates**, select **New**, and select **Certificate Template to Issue**
+    `certutil -dsaddtemplate \<TemplateName\>.txt`
+1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
 
     ![Selecting Certificate Template to Issue.](images/rdpcert/certificatetemplatetoissue.png)
 
-1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and click **OK**. It can take some time for the template to replicate to all servers and become available in this list.
-
-1. After the template replicates, in the MMC, right-click in the Certification Authority list, click **All Tasks** and then click **Stop Service**. Right-click the name of the CA again, click **All Tasks**, and then click **Start Service**.
+1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list.
+1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
 ### Requesting a Certificate
 

@@ -194,7 +194,7 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 
 ## Hybrid deployment
 
-The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Azure AD. Hybrid deployments support devices that are Azure AD-registered, Azure AD-joined, and hybrid Azure AD-joined. The Hybrid deployment model supports two trust types for on-premises authentication, key trust and certificate trust.
+The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Azure AD. Hybrid deployments support devices that are Azure AD-registered, Azure AD-joined, and hybrid Azure AD-joined. The Hybrid deployment model supports three trust types for on-premises authentication: cloud Kerberos trust, key trust and certificate trust.
 
 ### Related to hybrid deployment
 
