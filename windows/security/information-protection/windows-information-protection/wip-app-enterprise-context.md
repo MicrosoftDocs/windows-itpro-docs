@@ -10,6 +10,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
+ms.technology: itpro-security
 ---
 
 # Determine the Enterprise Context of an app running in Windows Information Protection (WIP)

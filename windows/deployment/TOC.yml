@@ -184,11 +184,11 @@
               href: update/deploy-updates-intune.md
     - name: Monitor
       items:
-      - name: Windows Update for Business reports (preview)
+      - name: Windows Update for Business reports
         items:
         - name: Windows Update for Business reports overview
           href: update/wufb-reports-overview.md     
-        - name: Enable Windows Update for Business reports (preview)
+        - name: Enable Windows Update for Business reports
           items: 
           - name: Windows Update for Business reports prerequisites
             href: update/wufb-reports-prerequisites.md
@@ -200,7 +200,7 @@
             href: update/wufb-reports-configuration-manual.md
           - name: Configure clients with Microsoft Intune
             href: update/wufb-reports-configuration-intune.md 
-        - name: Use Windows Update for Business reports (preview)
+        - name: Use Windows Update for Business reports
           items:
           - name: Windows Update for Business reports workbook
             href: update/wufb-reports-workbook.md
@@ -210,7 +210,7 @@
             href: update/wufb-reports-use.md                                
           - name: Feedback, support, and troubleshooting 
             href: update/wufb-reports-help.md                                               
-        - name: Windows Update for Business reports (preview) schema reference
+        - name: Windows Update for Business reports schema reference
           items:
           - name: Windows Update for Business reports schema reference
             href: update/wufb-reports-schema.md

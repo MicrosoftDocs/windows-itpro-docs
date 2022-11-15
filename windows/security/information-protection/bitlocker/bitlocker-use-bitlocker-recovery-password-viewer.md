@@ -13,6 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker: Use BitLocker Recovery Password Viewer

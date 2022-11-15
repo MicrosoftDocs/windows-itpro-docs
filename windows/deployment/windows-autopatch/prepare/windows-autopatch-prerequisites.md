@@ -29,7 +29,7 @@ Getting started with Windows Autopatch has been designed to be easy. This articl
 
 ## More about licenses
 
-Windows Autopatch is included with Window 10/11 Enterprise E3 or higher (user-based only). The following are the service plan SKUs that are eligible for Windows Autopatch:
+Windows Autopatch is included with Windows 10/11 Enterprise E3 or higher (user-based only). The following are the service plan SKUs that are eligible for Windows Autopatch:
 
 | License | ID | GUID number |
 | ----- | ----- | ------|
