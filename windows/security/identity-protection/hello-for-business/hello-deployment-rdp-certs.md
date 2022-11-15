@@ -6,7 +6,9 @@ author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - ContentEngagementFY23
 ms.topic: article
 localizationpriority: medium
 ms.date: 02/22/2021
@@ -16,6 +18,7 @@ appliesto:
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Key trust</b>
   - ✅ <b>Cloud Kerberos trust</b>
+ms.technology: itpro-security
 ---
 
 # Deploy Certificates to Key Trust and Cloud Kerberos Trust Users to Enable RDP

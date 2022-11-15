@@ -9,6 +9,7 @@ ms.collection:
   - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/06/2021
+ms.technology: itpro-security
 ---
 
 # Manage TPM commands

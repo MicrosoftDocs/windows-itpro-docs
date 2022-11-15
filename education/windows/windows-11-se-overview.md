@@ -3,10 +3,11 @@ title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: article
 ms.date: 09/12/2022
-appliesto: 
-  - ✅ <b>Windows 11 SE</b>
-ms.collection: 
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
   - highpri
+  - education
 ---
 
 # Windows 11 SE Overview
@@ -130,6 +131,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
 | Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
 | SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
+| SuperNova Magnifier & Speech            | 21.02             | Win32    | Dolphin Computer Access      |  
 | Zoom                                    | 5.9.1 (2581)      | Win32    | Zoom                         |
 | ZoomText Fusion                         | 2022.2109.10      | Win32    | Freedom Scientific           |
 | ZoomText Magnifier/Reader               | 2022.2109.25      | Win32    | Freedom Scientific           |

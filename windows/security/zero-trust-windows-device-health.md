@@ -1,5 +1,5 @@
 ---
-title: Zero Trust and Windows device health 
+title: Zero Trust and Windows device health
 description: Describes the process of Windows device health attestation
 ms.reviewer: 
 ms.topic: article
@@ -8,8 +8,8 @@ ms.author: paoloma
 author: paolomatarazzo
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Zero Trust and Windows device health
