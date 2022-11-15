@@ -12,8 +12,10 @@ items:
       items:
       - name: Overview
         href: windows-11-se-overview.md
-      - name: Settings and CSP list
+      - name: Settings list
         href: windows-11-se-settings-list.md
+      - name: Frequently Asked Questions (FAQ)
+        href: windows-11-se-faq.yml
     - name: Windows in S Mode
       items:
       - name: Test Windows 10 in S mode on existing Windows 10 education devices
@@ -22,24 +24,24 @@ items:
         href: enable-s-mode-on-surface-go-devices.md
     - name: Windows 10 editions for education customers
       href: windows-editions-for-education-customers.md
-    - name: Shared PC mode for school devices
-      href: set-up-school-pcs-shared-pc-mode.md
+    - name: Considerations for shared and guest devices
+      href: /windows/configuration/shared-devices-concepts?context=/education/context/context
     - name: Windows 10 configuration recommendations for education customers
       href: configure-windows-for-education.md
     - name: Take tests and assessments in Windows
-      href: take-tests-in-windows-10.md
+      href: take-tests-in-windows.md
 - name: How-to-guides
   items:
-    - name: Configure education features
-      items:
-        - name: Configure education themes
-          href: edu-themes.md
-        - name: Configure Stickers
-          href: edu-stickers.md
-        - name: Configure Take a Test on a single PC
-          href: take-a-test-single-pc.md
-        - name: Configure a Test on multiple PCs
-          href: take-a-test-multiple-pcs.md
+    - name: Configure education themes
+      href: edu-themes.md
+    - name: Configure Stickers
+      href: edu-stickers.md
+    - name: Configure Take a Test in kiosk mode
+      href: edu-take-a-test-kiosk-mode.md
+    - name: Configure federated sign-in
+      href: federated-sign-in.md
+    - name: Configure Shared PC
+      href: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
     - name: Use the Set up School PCs app
       href: use-set-up-school-pcs-app.md
     - name: Change Windows edition
@@ -96,8 +98,9 @@ items:
         href: set-up-school-pcs-provisioning-package.md
       - name: What's new in Set up School PCs
         href: set-up-school-pcs-whats-new.md
-    - name: Take a Test app technical reference
+    - name: Take a Test technical reference
       href: take-a-test-app-technical.md
-    - name: Change history for Windows 10 for Education
-      href: change-history-edu.md
+    - name: Shared PC technical reference
+      href: /windows/configuration/shared-pc-technical?context=/education/context/context
+
       

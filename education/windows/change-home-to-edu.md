@@ -2,18 +2,13 @@
 title: Upgrade Windows Home to Windows Education on student-owned devices
 description: Learn how IT Pros can upgrade student-owned devices from Windows Home to Windows Education using Mobile Device Management or Kivuto OnTheHub with qualifying subscriptions.
 ms.date: 08/10/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: how-to
-ms.localizationpriority: medium
 author: scottbreenmsft
 ms.author: scbree
 ms.reviewer: paoloma
 manager: jeffbu
-ms.collection: education
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Upgrade Windows Home to Windows Education on student-owned devices

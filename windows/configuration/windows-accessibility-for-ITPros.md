@@ -10,9 +10,9 @@ manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 09/20/2022
 ms.topic: reference
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Accessibility information for IT professionals
@@ -62,6 +62,8 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 - [Read in Braille](https://support.microsoft.com/windows/chapter-8-using-narrator-with-braille-3e5f065b-1c9d-6eb2-ec6d-1d07c9e94b20). Narrator supports braille displays from more than 35 manufacturers using more than 40 languages and multiple braille variants.
 
 ## Hearing
+
+- [Use live captions to better understand audio](https://support.microsoft.com/windows/use-live-captions-to-better-understand-audio-b52da59c-14b8-4031-aeeb-f6a47e6055df). Use Windows 11, version 22H2 or later to better understand any spoken audio with real time captions.
 
 - [View live transcription in a Teams meeting](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-dc1a8f23-2e20-4684-885e-2152e06a4a8b). During any Teams meeting, view a live transcription so you don't miss what's being said.
 

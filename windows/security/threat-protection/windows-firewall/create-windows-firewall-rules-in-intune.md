@@ -3,19 +3,19 @@ title: Create Windows Firewall rules in Intune (Windows)
 description: Learn how to use Intune to create rules in Windows Defender Firewall with Advanced Security. Start by creating a profile in Device Configuration in Intune.
 ms.reviewer: jekrynit
 ms.author: paoloma
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+ms.technology: itpro-security
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 
 # Create Windows Firewall rules in Intune
@@ -26,7 +26,7 @@ appliesto:
 
 To get started, Open the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and then go to **Devices** > **Windows** > **Configuration profiles** > **Create profile** > Choose **Windows 10 and later** as the platform, Choose **Templates**, then **Endpoint protection** as the profile type. 
 Select Windows Defender Firewall.
-:::image type="content" source="images/windows-firewall-intune.png" alt-text="Example of a Windows Defender Firewall policy in Microsoft Endpoint Manager.":::
+:::image type="content" source="images/windows-firewall-intune.png" alt-text="Example of a Windows Defender Firewall policy in Microsoft Intune and the Endpoint Manager admin center.":::
 
 >[!IMPORTANT]
 >A single Endpoint Protection profile may contain up to a maximum of 150 firewall rules. If a client device requires more than 150 rules, then multiple profiles must be assigned to it.

@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: New group policy settings for Internet Explorer 11
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 669cc1a6-e2cb-403f-aa31-c1de52a615d1
 ms.reviewer: 
 audience: itpro

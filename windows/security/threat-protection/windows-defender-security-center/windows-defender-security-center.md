@@ -2,13 +2,15 @@
 title: The Windows Security app
 description: The Windows Security app brings together common Windows security features into one place.
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.reviewer: 
-manager: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # The Windows Security app
@@ -68,7 +70,7 @@ For more information about each section, options for configuring the sections, a
     ![Screenshot of Windows Settings showing the different areas available in the Windows Security.](images/settings-windows-defender-security-center-areas.png)
 
 > [!NOTE]
-> Settings configured with management tools, such as group policy, Microsoft Intune, or Microsoft Endpoint Configuration Manager, will generally take precedence over the settings in the Windows Security.
+> Settings configured with management tools, such as group policy, Microsoft Intune, or Microsoft Configuration Manager, will generally take precedence over the settings in the Windows Security.
 
 ## How the Windows Security app works with Windows security features
 
@@ -94,7 +96,7 @@ The Windows Security app operates as a separate app or process from each of the 
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
-If you disable any of the individual features, it will prevent that feature from reporting its status in the Windows Security app. For example, if you disable a feature through group policy or other management tools, such as Microsoft Endpoint Configuration Manager. The Windows Security app itself will still run and show status for the other security features.
+If you disable any of the individual features, it will prevent that feature from reporting its status in the Windows Security app. For example, if you disable a feature through group policy or other management tools, such as Microsoft Configuration Manager. The Windows Security app itself will still run and show status for the other security features.
 
 > [!IMPORTANT]
 > If you individually disable any of the services, it won't disable the other services or the Windows Security app.

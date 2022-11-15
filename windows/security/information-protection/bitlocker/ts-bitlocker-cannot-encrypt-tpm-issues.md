@@ -2,8 +2,8 @@
 title: BitLocker cannot encrypt a drive known TPM issues
 description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive, and that you can attribute to the TPM
 ms.reviewer: kaushika
-ms.technology: windows-sec
-ms.prod: m365-security
+ms.technology: itpro-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: Teresa-Motiv
 ms.author: v-tappelgate

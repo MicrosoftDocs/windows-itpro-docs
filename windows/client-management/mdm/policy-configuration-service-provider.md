@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 07/18/2019
@@ -65,22 +65,22 @@ Policy
 ```
 
 
-<a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
+<a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**
 The root node for the Policy configuration service provider.
 
 Supported operation is Get.
 
-<a href="" id="policy-config"></a>**Policy/Config**  
+<a href="" id="policy-config"></a>**Policy/Config**
 Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value) the configuration source can use the Policy/Result path to retrieve the resulting value.
 
 Supported operation is Get.
 
-<a href="" id="policy-config-areaname"></a>**Policy/Config/_AreaName_**  
+<a href="" id="policy-config-areaname"></a>**Policy/Config/_AreaName_**
 The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/_AreaName/PolicyName_**  
+<a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/_AreaName/PolicyName_**
 Specifies the name/value pair used in the policy.
 
 The following list shows some tips to help you when configuring policies:
@@ -94,28 +94,28 @@ The following list shows some tips to help you when configuring policies:
 - Supported operations are Add, Get, Delete, and Replace.
 - Value type is string.
 
-<a href="" id="policy-result"></a>**Policy/Result**  
+<a href="" id="policy-result"></a>**Policy/Result**
 Groups the evaluated policies from all providers that can be configured.
 
 Supported operation is Get.
 
-<a href="" id="policy-result-areaname"></a>**Policy/Result/_AreaName_**  
+<a href="" id="policy-result-areaname"></a>**Policy/Result/_AreaName_**
 The area group that can be configured by a single technology independent of the providers.
 
 Supported operation is Get.
 
-<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/_AreaName/PolicyName_**  
+<a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/_AreaName/PolicyName_**
 Specifies the name/value pair used in the policy.
 
 Supported operation is Get.
 
-<a href="" id="policy-result"></a>**Policy/ConfigOperations**  
+<a href="" id="policy-result"></a>**Policy/ConfigOperations**
 Added in Windows 10, version 1703. The root node for grouping different configuration operations.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
-Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md).
+<a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**
+Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](../win32-and-centennial-app-policy-configuration.md).
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)).
@@ -124,27 +124,27 @@ ADMX files that have been installed by using **ConfigOperations/ADMXInstall** ca
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_**  
-Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
+<a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_**
+Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy**  
+<a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy**
 Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy/_UniqueID_** 
+<a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy/_UniqueID_**
 Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
 Supported operations are Add and Get. Does not support Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference**  
+<a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference**
 Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference/_UniqueID_**  
+<a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference/_UniqueID_**
 Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 Supported operations are Add and Get. Does not support Delete.
@@ -174,7 +174,7 @@ Supported operations are Add and Get. Does not support Delete.
   <dd>
     <a href="./policy-csp-accounts.md#accounts-allowmicrosoftaccountsigninassistant" id="accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  
+
 </dl>
 
 ### ActiveXControls policies
@@ -185,7 +185,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_ActiveXInstallService policies  
+### ADMX_ActiveXInstallService policies
 
 <dl>
   <dd>
@@ -279,7 +279,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_AppxPackageManager policies  
+### ADMX_AppxPackageManager policies
 
 <dl>
   <dd>
@@ -287,7 +287,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_AppXRuntime policies  
+### ADMX_AppXRuntime policies
 
 <dl>
   <dd>
@@ -304,7 +304,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_AttachmentManager policies  
+### ADMX_AttachmentManager policies
 
 <dl>
   <dd>
@@ -380,7 +380,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_CipherSuiteOrder policies  
+### ADMX_CipherSuiteOrder policies
 
 <dl>
   <dd>
@@ -391,7 +391,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_COM policies  
+### ADMX_COM policies
 
 <dl>
   <dd>
@@ -402,7 +402,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_ControlPanel policies  
+### ADMX_ControlPanel policies
 
 <dl>
   <dd>
@@ -419,7 +419,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_ControlPanelDisplay policies  
+### ADMX_ControlPanelDisplay policies
 
 <dl>
   <dd>
@@ -513,7 +513,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_CredentialProviders policies  
+### ADMX_CredentialProviders policies
 
 <dl>
   <dd>
@@ -527,7 +527,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_CredSsp policies  
+### ADMX_CredSsp policies
 
 <dl>
   <dd>
@@ -563,7 +563,7 @@ Supported operations are Add and Get. Does not support Delete.
   <dd>
     <a href="./policy-csp-admx-credssp.md#admx-credssp-restrictedremoteadministration" id="admx-credssp-restrictedremoteadministration">ADMX_CredSsp/RestrictedRemoteAdministration</a>
 
-### ADMX_CredUI policies  
+### ADMX_CredUI policies
 
 <dl>
   <dd>
@@ -574,14 +574,14 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-###  ADMX_CtrlAltDel policies  
+###  ADMX_CtrlAltDel policies
 <dl>
   <dd>
     <a href="./policy-csp-admx-cpls.md#admx-cpls-usedefaulttile" id="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
   </dd>
 </dl>
 
-### ADMX_DataCollection policies  
+### ADMX_DataCollection policies
 
 <dl>
   <dd>
@@ -710,7 +710,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 <dl>
 
-### ADMX_DeviceInstallation policies  
+### ADMX_DeviceInstallation policies
 
 <dl>
   <dd>
@@ -739,7 +739,7 @@ Supported operations are Add and Get. Does not support Delete.
   </dd>
 </dl>
 
-### ADMX_DeviceSetup policies  
+### ADMX_DeviceSetup policies
 
 <dl>
   <dd>
@@ -761,7 +761,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 ### ADMX_DigitalLocker policies
 
-</dl>  
+</dl>
 <dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1" id="admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
   </dd>
@@ -818,7 +818,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_DistributedLinkTracking policies  
+### ADMX_DistributedLinkTracking policies
 
 <dl>
   <dd>
@@ -920,7 +920,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_EAIME policies  
+### ADMX_EAIME policies
 
 <dl>
   <dd>
@@ -975,7 +975,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_EnhancedStorage policies  
+### ADMX_EnhancedStorage policies
 
 <dl>
   <dd>
@@ -998,7 +998,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_ErrorReporting policies  
+### ADMX_ErrorReporting policies
 
 <dl>
   <dd>
@@ -1101,7 +1101,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_EventLog policies  
+### ADMX_EventLog policies
 
 <dl>
   <dd>
@@ -1169,7 +1169,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_EventViewer policies  
+### ADMX_EventViewer policies
 
 <dl>
   <dd>
@@ -1182,7 +1182,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionurl" id="admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
   <dd>
 
-### ADMX_Explorer policies  
+### ADMX_Explorer policies
 
 <dl>
   <dd>
@@ -1202,7 +1202,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_ExternalBoot policies  
+### ADMX_ExternalBoot policies
 
 <dl>
   <dd>
@@ -1329,7 +1329,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Globalization policies  
+### ADMX_Globalization policies
 
 <dl>
   <dd>
@@ -1406,7 +1406,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_GroupPolicy policies  
+### ADMX_GroupPolicy policies
 
 <dl>
   <dd>
@@ -1557,7 +1557,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 </dl>
 
 
-## ADMX_ICM policies  
+## ADMX_ICM policies
 
 <dl>
   <dd>
@@ -1691,7 +1691,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Kerberos policies  
+### ADMX_Kerberos policies
 
 <dl>
   <dd>
@@ -1736,7 +1736,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_LanmanWorkstation policies  
+### ADMX_LanmanWorkstation policies
 
 <dl>
   <dd>
@@ -1775,7 +1775,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_Logon policies  
+### ADMX_Logon policies
 
 <dl>
   <dd>
@@ -1825,7 +1825,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_MicrosoftDefenderAntivirus policies  
+### ADMX_MicrosoftDefenderAntivirus policies
 
 <dl>
   <dd>
@@ -2128,7 +2128,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_MMCSnapins policies  
+### ADMX_MMCSnapins policies
 
 <dl>
   <dd>
@@ -2472,7 +2472,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
 
-### ADMX_msched policies  
+### ADMX_msched policies
 
 <dl>
   <dd>
@@ -2483,7 +2483,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_MSDT policies  
+### ADMX_MSDT policies
 
 <dl>
   <dd>
@@ -2497,7 +2497,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_MSI policies  
+### ADMX_MSI policies
 
 <dl>
   <dd>
@@ -2744,7 +2744,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_NetworkConnections policies  
+### ADMX_NetworkConnections policies
 
 <dl>
   <dd>
@@ -3058,7 +3058,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Power policies  
+### ADMX_Power policies
 
 <dl>
   <dd>
@@ -3138,7 +3138,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_PowerShellExecutionPolicy policies  
+### ADMX_PowerShellExecutionPolicy policies
 
 <dl>
   <dd>
@@ -3184,7 +3184,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Printing policies  
+### ADMX_Printing policies
 
 <dl>
   <dd>
@@ -3268,7 +3268,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Printing2 policies  
+### ADMX_Printing2 policies
 
 <dl>
   <dd>
@@ -3300,7 +3300,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Programs policies  
+### ADMX_Programs policies
 
 <dl>
   <dd>
@@ -3341,9 +3341,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-admx-reliability.md#admx-reliability-shutdownreason" id="admx-reliability-shutdownreason">ADMX_Reliability/ShutdownReason</a>
   </dd>
-</dl>  
+</dl>
 
-### ADMX_RemoteAssistance policies  
+### ADMX_RemoteAssistance policies
 
 <dl>
   <dd>
@@ -3354,7 +3354,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_RemovableStorage policies  
+### ADMX_RemovableStorage policies
 
 <dl>
   <dd>
@@ -3455,7 +3455,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_RPC policies  
+### ADMX_RPC policies
 
 <dl>
   <dd>
@@ -3543,7 +3543,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Sensors policies  
+### ADMX_Sensors policies
 
 <dl>
   <dd>
@@ -3580,7 +3580,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Servicing policies  
+### ADMX_Servicing policies
 
 <dl>
   <dd>
@@ -3588,7 +3588,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_SettingSync policies  
+### ADMX_SettingSync policies
 
 <dl>
   <dd>
@@ -3620,7 +3620,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_SharedFolders policies  
+### ADMX_SharedFolders policies
 
 <dl>
   <dd>
@@ -3709,7 +3709,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_Snmp policies  
+### ADMX_Snmp policies
 
 <dl>
   <dd>
@@ -3725,7 +3725,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_StartMenu policies  
+### ADMX_StartMenu policies
 
 <dl>
   <dd>
@@ -3931,7 +3931,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_SystemRestore policies  
+### ADMX_SystemRestore policies
 
 <dl>
   <dd>
@@ -3950,7 +3950,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_Taskbar policies  
+### ADMX_Taskbar policies
 
 <dl>
   <dd>
@@ -4021,7 +4021,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_tcpip policies  
+### ADMX_tcpip policies
 
 <dl>
   <dd>
@@ -4166,25 +4166,25 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_server" id="admx-terminalserver-ts_gateway_policy_server">ADMX_TerminalServer/TS_GATEWAY_POLICY_SERVER</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_join_session_directory" id="admx-terminalserver-ts_join_session_directory">ADMX_TerminalServer/TS_JOIN_SESSION_DIRECTORY</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_keep_alive" id="admx-terminalserver-ts_keep_alive">ADMX_TerminalServer/TS_KEEP_ALIVE</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_secgroup" id="admx-terminalserver-ts_license_secgroup">ADMX_TerminalServer/TS_LICENSE_SECGROUP</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_servers" id="admx-terminalserver-ts_license_servers">ADMX_TerminalServer/TS_LICENSE_SERVERS</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_tooltip" id="admx-terminalserver-ts_license_tooltip">ADMX_TerminalServer/TS_LICENSE_TOOLTIP</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_licensing_mode" id="admx-terminalserver-ts_licensing_mode">ADMX_TerminalServer/TS_LICENSING_MODE</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_max_con_policy" id="admx-terminalserver-ts_max_con_policy">ADMX_TerminalServer/TS_MAX_CON_POLICY</a>
   </dd>
@@ -4282,7 +4282,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_disconnected_timeout_2" id="admx-terminalserver-ts_sessions_disconnected_timeout_2">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_2</a>
   </dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_idle_limit_1" id="admx-terminalserver-ts_sessions_idle_limit_1">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_1</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_idle_limit_2" id="admx-terminalserver-ts_sessions_idle_limit_2">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_2</a>
   </dd>
@@ -4330,15 +4330,15 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_profiles" id="admx-terminalserver-ts_user_profiles">ADMX_TerminalServer/TS_USER_PROFILES</a>
-  </dd>  
+  </dd>
 <dl>
 
-### ADMX_Thumbnails policies  
+### ADMX_Thumbnails policies
 
 <dl>
   <dd>
     <a href="./policy-csp-admx-thumbnails.md#admx-thumbnails-disablethumbnails" id="admx-thumbnails-disablethumbnails">ADMX_Thumbnails/DisableThumbnails</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-admx-thumbnails.md#admx-thumbnails-disablethumbnailsonnetworkfolders" id="admx-thumbnails-disablethumbnailsonnetworkfolders">ADMX_Thumbnails/DisableThumbnailsOnNetworkFolders</a>
   </dd>
@@ -4352,7 +4352,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-admx-touchinput.md#admx-touchinput-touchinputoff_1" id="admx-touchinput-touchinputoff_1">ADMX_TouchInput/TouchInputOff_1</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-admx-touchinput.md#admx-touchinput-touchinputoff_2" id="admx-touchinput-touchinputoff_2">ADMX_TouchInput/TouchInputOff_2</a>
   </dd>
@@ -4364,7 +4364,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_TPM policies  
+### ADMX_TPM policies
 
 <dl>
   <dd>
@@ -4399,7 +4399,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_UserExperienceVirtualization policies  
+### ADMX_UserExperienceVirtualization policies
 
 <dl>
   <dd>
@@ -4782,7 +4782,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_UserProfiles policies  
+### ADMX_UserProfiles policies
 
 <dl>
   <dd>
@@ -4811,7 +4811,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_W32Time policies  
+### ADMX_W32Time policies
 
 <dl>
   <dd>
@@ -4828,7 +4828,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WCM policies  
+### ADMX_WCM policies
 
 <dl>
   <dd>
@@ -4853,7 +4853,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_WinCal policies  
+### ADMX_WinCal policies
 
 <dl>
   <dd>
@@ -4864,7 +4864,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WindowsConnectNow policies  
+### ADMX_WindowsConnectNow policies
 
 <dl>
   <dd>
@@ -4879,7 +4879,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 </dl>
 
 
-### ADMX_WindowsExplorer policies  
+### ADMX_WindowsExplorer policies
 
 <dl>
   <dd>
@@ -5097,7 +5097,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WindowsMediaDRM policies  
+### ADMX_WindowsMediaDRM policies
 
 <dl>
   <dd>
@@ -5105,7 +5105,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WindowsMediaPlayer policies  
+### ADMX_WindowsMediaPlayer policies
 
 <dl>
   <dd>
@@ -5174,7 +5174,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 </dl>
 
 
-### ADMX_WindowsRemoteManagement policies  
+### ADMX_WindowsRemoteManagement policies
 
 <dl>
   <dd>
@@ -5185,7 +5185,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WindowsStore policies  
+### ADMX_WindowsStore policies
 
 <dl>
   <dd>
@@ -5205,7 +5205,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WinInit policies  
+### ADMX_WinInit policies
 
 <dl>
   <dd>
@@ -5219,7 +5219,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WinLogon policies  
+### ADMX_WinLogon policies
 
 <dl>
   <dd>
@@ -5250,7 +5250,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_wlansvc policies  
+### ADMX_wlansvc policies
 
 <dl>
   <dd>
@@ -5286,7 +5286,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_WPN policies  
+### ADMX_WPN policies
 
 <dl>
   <dd>
@@ -5338,8 +5338,8 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-allowshareduserappdata" id="applicationmanagement-allowshareduserappdata">ApplicationManagement/AllowSharedUserAppData</a>
   </dd>
-  <dd> 
-    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall"id="applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a> 
+  <dd>
+    <a href="./policy-csp-applicationmanagement.md#applicationmanagement-blocknonadminuserinstall"id="applicationmanagement-blocknonadminuserinstall">ApplicationManagement/BlockNonAdminUserInstall</a>
   </dd>
   <dd>
     <a href="./policy-csp-applicationmanagement.md#applicationmanagement-disablestoreoriginatedapps" id="applicationmanagement-disablestoreoriginatedapps">ApplicationManagement/DisableStoreOriginatedApps</a>
@@ -5478,7 +5478,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### Audit policies  
+### Audit policies
 
 <dl>
   <dd>
@@ -6304,40 +6304,40 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### DesktopAppInstaller policies 
+### DesktopAppInstaller policies
 <dl>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources" id="desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enableadditionalsources" id="desktopappinstaller-enableadditionalsources">DesktopAppInstaller/EnableAdditionalSources</a>
   </dd>
 <dd>
-    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller"id="desktopappinstaller-enableappinstaller">DesktopAppInstaller/EnableAppInstaller</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enableappinstaller"id="desktopappinstaller-enableappinstaller">DesktopAppInstaller/EnableAppInstaller</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#desktopappinstaller-enabledefaultsource"id="desktopappinstaller-enabledefaultsource">DesktopAppInstaller/EnableDefaultSource</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enabledefaultsource"id="desktopappinstaller-enabledefaultsource">DesktopAppInstaller/EnableDefaultSource</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablelocalmanifestfiles"id="desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enablelocalmanifestfiles"id="desktopappinstaller-enablelocalmanifestfiles">DesktopAppInstaller/EnableLocalManifestFiles</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablehashoverride"id="desktopappinstaller-enablehashoverride">DesktopAppInstaller/EnableHashOverride</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enablehashoverride"id="desktopappinstaller-enablehashoverride">DesktopAppInstaller/EnableHashOverride</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemicrosoftstoresource"id="desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemicrosoftstoresource"id="desktopappinstaller-enablemicrosoftstoresource">DesktopAppInstaller/EnableMicrosoftStoreSource</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablemsappinstallerprotocol"id="desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enablemsappinstallerprotocol"id="desktopappinstaller-enablemsappinstallerprotocol">DesktopAppInstaller/EnableMSAppInstallerProtocol</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enablesettings"id="desktopappinstaller-enablesettings">DesktopAppInstaller/EnableSettings</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enablesettings"id="desktopappinstaller-enablesettings">DesktopAppInstaller/EnableSettings</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enableallowedsources"id="desktopappinstaller-enableallowedsources">DesktopAppInstaller/EnableAllowedSources</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enableallowedsources"id="desktopappinstaller-enableallowedsources">DesktopAppInstaller/EnableAllowedSources</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-enableexperimentalfeatures"id="desktopappinstaller-enableexperimentalfeatures">DesktopAppInstaller/EnableExperimentalFeatures</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-enableexperimentalfeatures"id="desktopappinstaller-enableexperimentalfeatures">DesktopAppInstaller/EnableExperimentalFeatures</a>
   </dd>
   <dd>
-    <a href="/policy-csp-desktopappinstaller.md#DesktopAppInstaller-sourceautoupdateinterval"id="desktopappinstaller-sourceautoupdateinterval">DesktopAppInstaller/SourceAutoUpdateInterval</a>
+    <a href="./policy-csp-desktopappinstaller.md#desktopappinstaller-sourceautoupdateinterval"id="desktopappinstaller-sourceautoupdateinterval">DesktopAppInstaller/SourceAutoUpdateInterval</a>
   </dd>
 </dl>
 
@@ -6640,6 +6640,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
+  </dd>
+</dl>
+
+### FederatedAuthentication policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-federatedauthentication.md#federatedauthentication-enablewebsigninforprimaryuser" id="federatedauthentication-enablewebsigninforprimaryuser<">FederatedAuthentication/EnableWebSignInForPrimaryUser</a>
   </dd>
 </dl>
 
@@ -7719,7 +7727,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### MixedReality policies  
+### MixedReality policies
 
 <dl>
   <dd>
@@ -7779,7 +7787,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### Multitasking policies  
+### Multitasking policies
 
 <dl>
   <dd>
@@ -8030,7 +8038,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
-  </dd>  
+  </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesscalendar" id="privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
   </dd>
@@ -8597,7 +8605,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-start.md#start-disablecontextmenus" id="start-disablecontextmenus">Start/DisableContextMenus</a>
-  </dd> 
+  </dd>
   <dd>
     <a href="./policy-csp-start.md#start-disablecontrolcenter" id="start-disablecontrolcenter">Start/DisableControlCenter</a>
   </dd>
@@ -9132,22 +9140,22 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriver" id="update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriverupdates" id="update-setpolicydrivenupdatesourcefordriverupdates">Update/SetPolicyDrivenUpdateSourceForDriverUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeature" id="update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeatureupdates" id="update-setpolicydrivenupdatesourceforfeatureupdates">Update/SetPolicyDrivenUpdateSourceForFeatureUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforother" id="update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforotherupdates" id="update-setpolicydrivenupdatesourceforotherupdates">Update/SetPolicyDrivenUpdateSourceForOtherUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforquality" id="update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforqualityupdates" id="update-setpolicydrivenupdatesourceforqualityupdates">Update/SetPolicyDrivenUpdateSourceForQualityUpdates</a>
   </dd>
-  <dd> 
-    <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a> 
+  <dd>
+    <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
   </dd>
-  <dd> 
-    <a href="./policy-csp-update.md#update-targetreleaseversion"id="update-targetreleaseversion">Update/TargetReleaseVersion</a> 
+  <dd>
+    <a href="./policy-csp-update.md#update-targetreleaseversion"id="update-targetreleaseversion">Update/TargetReleaseVersion</a>
   </dd>
   <dd>
   <dd>
@@ -9442,7 +9450,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### WindowsSandbox policies  
+### WindowsSandbox policies
 
 <dl>
   <dd>
@@ -9503,11 +9511,11 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 - [ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
 
 > [!NOTE]
-> Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> Not all Policies in Policy CSP supported by Group Policy are ADMX-backed. For more details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
 
 ## Policies in Policy CSP supported by HoloLens devices
-- [Policies in Policy CSP supported by HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)  
-- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policies in Policy CSP supported by HoloLens 2](./policies-in-policy-csp-supported-by-hololens2.md)
+- [Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)
 - [Policies in Policy CSP supported by HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
 
 ## Policies in Policy CSP supported by Windows 10 IoT
@@ -9521,4 +9529,4 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

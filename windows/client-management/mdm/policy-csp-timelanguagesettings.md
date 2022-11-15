@@ -3,8 +3,8 @@ title: Policy CSP - TimeLanguageSettings
 description: Learn to use the Policy CSP - TimeLanguageSettings setting to specify the time zone to be applied to the device.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/28/2021
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## TimeLanguageSettings policies  
+## TimeLanguageSettings policies
 
 <dl>
   <dd>
@@ -38,7 +38,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks"></a>**TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks**  
+<a href="" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks"></a>**TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -76,7 +76,7 @@ If you disable (value 0) or don't configure this policy setting, language packs 
 
 <!--/SupportedValues-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Block cleanup of unused language packs*
 -   GP name: *BlockCleanupOfUnusedPreinstalledLangPacks*
 -   GP path: *Computer Configuration/Administrative Templates/Control Panel/Regional and Language Options*
@@ -94,7 +94,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="timelanguagesettings-configuretimezone"></a>**TimeLanguageSettings/ConfigureTimeZone**  
+<a href="" id="timelanguagesettings-configuretimezone"></a>**TimeLanguageSettings/ConfigureTimeZone**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -140,7 +140,7 @@ Specifies the time zone to be applied to the device. This policy name is the sta
 <hr/>
 
 <!--Policy-->
-<a href="" id="timelanguagesettings-machineuilanguageoverwrite"></a>**TimeLanguageSettings/MachineUILanguageOverwrite**  
+<a href="" id="timelanguagesettings-machineuilanguageoverwrite"></a>**TimeLanguageSettings/MachineUILanguageOverwrite**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -178,7 +178,7 @@ If you disable or don't configure this policy setting, there's no restriction of
 
 <!--/SupportedValues-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force selected system UI language to overwrite the user UI language*
 -   GP name: *MachineUILanguageOverwrite*
 -   GP path: *Computer Configuration/Administrative Templates/Control Panel/Regional and Language Options*
@@ -196,7 +196,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall"></a>**TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall**  
+<a href="" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall"></a>**TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall**
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -223,9 +223,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting restricts standard users from installing language features on demand. This policy doesn't restrict the Windows language, if you want to restrict the Windows language use the following policy: “Restricts the UI languages Windows should use for the selected user.”  
+This policy setting restricts standard users from installing language features on demand. This policy doesn't restrict the Windows language, if you want to restrict the Windows language use the following policy: “Restricts the UI languages Windows should use for the selected user.”
 
-If you enable this policy setting, the installation of language features is prevented for standard users.  
+If you enable this policy setting, the installation of language features is prevented for standard users.
 
 If you disable or don't configure this policy setting, there's no language feature installation restriction for the standard users.
 

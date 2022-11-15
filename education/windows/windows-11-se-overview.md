@@ -1,18 +1,13 @@
 ---
 title: Windows 11 SE Overview
-description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn about Windows 11 SE, and the apps that are included with the operating system.
+ms.topic: article
 ms.date: 09/12/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
+  - highpri
+  - education
 ---
 
 # Windows 11 SE Overview
@@ -88,10 +83,11 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 |-----------------------------------------|-------------------|----------|------------------------------|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
 | Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
-| Brave Browser                           | 1.34.80           | Win32    | Brave                        |
+| Brave Browser                           | 106.0.5249.65     | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
+| CA Secure Browser                       | 14.0.0            | Win32    | Cambium Development          |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
-| CKAuthenticator                         | 3.6               | Win32    | Content Keeper               |
+| CKAuthenticator                         | 3.6+              | Win32    | Content Keeper               |
 | Class Policy                            | 114.0.0           | Win32    | Class Policy                 |
 | Classroom.cloud                         | 1.40.0004         | Win32    | NetSupport                   |
 | CoGat Secure Browser                    | 11.0.0.19         | Win32    | Riverside Insights           |
@@ -100,7 +96,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Duo from Cisco                          | 2.25.0            | Win32    | Cisco                        |
 | e-Speaking Voice and Speech recognition | 4.4.0.8           | Win32    | e-speaking                   |
 | eTests                                  | 4.0.25            | Win32    | CASAS                        |
-| FortiClient                             | 7.0.1.0083        | Win32    | Fortinet                     |
+| FortiClient                             | 7.2.0.4034+       | Win32    | Fortinet                     |
 | Free NaturalReader                      | 16.1.2            | Win32    | Natural Soft                 |
 | Ghotit Real Writer & Reader             | 10.14.2.3         | Win32    | Ghotit Ltd                   |
 | GoGuardian                              | 1.4.4             | Win32    | GoGuardian                   |
@@ -133,9 +129,9 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Remote Help                             | 3.8.0.12          | Win32    | Microsoft                    |
 | Respondus Lockdown Browser              | 2.0.9.00          | Win32    | Respondus                    |
 | Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
-| Secure Browser                          | 14.0.0            | Win32    | Cambium Development          |
 | Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
 | SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
+| SuperNova Magnifier & Speech            | 21.02             | Win32    | Dolphin Computer Access      |  
 | Zoom                                    | 5.9.1 (2581)      | Win32    | Zoom                         |
 | ZoomText Fusion                         | 2022.2109.10      | Win32    | Freedom Scientific           |
 | ZoomText Magnifier/Reader               | 2022.2109.25      | Win32    | Freedom Scientific           |
@@ -166,14 +162,6 @@ If the app meets the requirements, Microsoft works with the Independent Software
 When the app is ready, Microsoft will update you. Then, you add the app to the Intune for Education portal, and assign it to your Windows 11 SE devices.
 
 For more information on Intune requirements for adding education apps, see [Configure applications with Microsoft Intune][EDUWIN-1].
-
-### 0x87D300D9 error with an app
-
-When you deploy an app using Intune for Education, you may get a `0x87D300D9` error code with a `Failed` state in the [Intune for Education portal](https://intuneeducation.portal.azure.com). If you have an app that fails with this error, then:
-
-- Make sure the app is on the [available applications list](#available-applications). Or, make sure your app is [approved for Windows 11 SE](#add-your-own-applications)
-- If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-applications) and [Configure applications with Microsoft Intune][EDUWIN-1]
-- If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own apps](#add-your-own-applications). Or, use an app that runs in a web browser, such as a web app or PWA
 
 ## Related articles
 

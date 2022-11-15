@@ -2,12 +2,13 @@
 title: Using a proxy with Delivery Optimization
 manager: dansimp
 description: Settings to use with various proxy configurations to allow Delivery Optimization to work
-ms.prod: w10
+ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Using a proxy with Delivery Optimization

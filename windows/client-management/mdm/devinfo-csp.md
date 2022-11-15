@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
@@ -43,7 +43,7 @@ DevInfo
 ----Lang
 ```
 
-<a href="" id="devid"></a>**DevId**  
+<a href="" id="devid"></a>**DevId**
 Required. Returns an application-specific global unique device identifier by default.
 
 Supported operation is Get.
@@ -55,30 +55,30 @@ The **UseHWDevID** parm of the [DMAcc configuration service provider](dmacc-csp.
 - For dual SIM phones, this value is retrieved from the UICC of the primary data line.
 - For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), it returns an application specific global unique identifier (GUID) irrespective of the value of UseHWDevID.
 
-<a href="" id="man"></a>**Man**  
+<a href="" id="man"></a>**Man**
 Required. Returns the name of the OEM. For Windows 10 for desktop editions, it returns the SystemManufacturer as defined in HKEY\_LOCAL\_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS\\SystemManufacturer.
 
 If no name is found, this returns to "Unknown".
 
 Supported operation is Get.
 
-<a href="" id="mod"></a>**Mod**  
+<a href="" id="mod"></a>**Mod**
 Required. Returns the name of the hardware device model as specified by the mobile operator. For Windows 10/Windows 11 desktop editions, it returns the SystemProductName as defined in HKEY\_LOCAL\_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS\\SystemProductName.
 
 If no name is found, this returns to "Unknown".
 
 Supported operation is Get.
 
-<a href="" id="dmv"></a>**DmV**  
+<a href="" id="dmv"></a>**DmV**
 Required. Returns the current management client revision of the device.
 
 Supported operation is Get.
 
-<a href="" id="lang"></a>**Lang**  
+<a href="" id="lang"></a>**Lang**
 Required. Returns the current user interface (UI) language setting of the device as defined by RFC1766.
 
 Supported operation is Get.
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

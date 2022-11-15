@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Scripts.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/17/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_Scripts
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Scripts policies  
+## ADMX_Scripts policies
 
 <dl>
   <dd>
@@ -68,7 +68,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-allow-logon-script-netbiosdisabled"></a>**ADMX_Scripts/Allow_Logon_Script_NetbiosDisabled**  
+<a href="" id="admx-scripts-allow-logon-script-netbiosdisabled"></a>**ADMX_Scripts/Allow_Logon_Script_NetbiosDisabled**
 
 <!--SupportedSKUs-->
 
@@ -104,7 +104,7 @@ If you disable or don't configure this policy setting, user account cross-forest
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow logon scripts when NetBIOS or WINS is disabled*
 -   GP name: *Allow_Logon_Script_NetbiosDisabled*
 -   GP path: *System\Scripts*
@@ -115,7 +115,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-maxgposcriptwaitpolicy"></a>**ADMX_Scripts/MaxGPOScriptWaitPolicy**  
+<a href="" id="admx-scripts-maxgposcriptwaitpolicy"></a>**ADMX_Scripts/MaxGPOScriptWaitPolicy**
 
 <!--SupportedSKUs-->
 
@@ -141,13 +141,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines how long the system waits for scripts applied by Group Policy to run. 
+This policy setting determines how long the system waits for scripts applied by Group Policy to run.
 
 This setting limits the total time allowed for all logon, logoff, startup, and shutdown scripts applied by Group Policy to finish running. If the scripts haven't finished running when the specified time expires, the system stops script processing and records an error event.
 
-If you enable this setting, then, in the Seconds box, you can type a number from 1 to 32,000 for the number of seconds you want the system to wait for the set of scripts to finish. To direct the system to wait until the scripts have finished, no matter how long they take, type 0. 
+If you enable this setting, then, in the Seconds box, you can type a number from 1 to 32,000 for the number of seconds you want the system to wait for the set of scripts to finish. To direct the system to wait until the scripts have finished, no matter how long they take, type 0.
 
-This interval is important when other system tasks must wait while the scripts complete. By default, each startup script must complete before the next one runs. Also, you can use the "Run logon scripts synchronously" setting to direct the system to wait for the logon scripts to complete before loading the desktop. 
+This interval is important when other system tasks must wait while the scripts complete. By default, each startup script must complete before the next one runs. Also, you can use the "Run logon scripts synchronously" setting to direct the system to wait for the logon scripts to complete before loading the desktop.
 
 An excessively long interval can delay the system and cause inconvenience to users. However, if the interval is too short, prerequisite tasks might not be done, and the system can appear to be ready prematurely.
 
@@ -157,7 +157,7 @@ If you disable or don't configure this setting, the system lets the combined set
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify maximum wait time for Group Policy scripts*
 -   GP name: *MaxGPOScriptWaitPolicy*
 -   GP path: *System\Scripts*
@@ -168,7 +168,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-computer-ps-scripts-first"></a>**ADMX_Scripts/Run_Computer_PS_Scripts_First**  
+<a href="" id="admx-scripts-run-computer-ps-scripts-first"></a>**ADMX_Scripts/Run_Computer_PS_Scripts_First**
 
 <!--SupportedSKUs-->
 
@@ -194,25 +194,25 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
- 
-If you enable this policy setting, within each applicable Group Policy Object (GPO), Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. 
+This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts.
 
-For example, assume the following scenario: 
+If you enable this policy setting, within each applicable Group Policy Object (GPO), Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown.
 
-There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A. 
+For example, assume the following scenario:
+
+There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A.
 
 GPO B and GPO C include the following computer startup scripts:
 
 - GPO B: B.cmd, B.ps1
 - GPO C: C.cmd, C.ps1
 
-Assume also that there are two computers, DesktopIT and DesktopSales. 
+Assume also that there are two computers, DesktopIT and DesktopSales.
 For DesktopIT, GPOs A, B, and C are applied. Therefore, the scripts for GPOs B and C run in the following order for DesktopIT:
 
 - Within GPO B: B.ps1, B.cmd
 - Within GPO C: C.ps1, C.cmd
- 
+
 For DesktopSales, GPOs B and C are applied, but not GPO A. Therefore, the scripts for GPOs B and C run in the following order for DesktopSales:
 
 - Within GPO B: B.cmd, B.ps1
@@ -227,7 +227,7 @@ For DesktopSales, GPOs B and C are applied, but not GPO A. Therefore, the script
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run Windows PowerShell scripts first at computer startup, shutdown*
 -   GP name: *Run_Computer_PS_Scripts_First*
 -   GP path: *System\Scripts*
@@ -238,7 +238,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-legacy-logon-script-hidden"></a>**ADMX_Scripts/Run_Legacy_Logon_Script_Hidden**  
+<a href="" id="admx-scripts-run-legacy-logon-script-hidden"></a>**ADMX_Scripts/Run_Legacy_Logon_Script_Hidden**
 
 <!--SupportedSKUs-->
 
@@ -264,7 +264,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier. 
+This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier.
 
 Logon scripts are batch files of instructions that run when the user logs on. By default, Windows displays the instructions in logon scripts written for Windows NT 4.0 and earlier in a command window as they run, although it doesn't display logon scripts written for Windows.
 
@@ -278,7 +278,7 @@ Also, see the "Run Logon Scripts Visible" setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run legacy logon scripts hidden*
 -   GP name: *Run_Legacy_Logon_Script_Hidden*
 -   GP path: *System\Scripts*
@@ -289,7 +289,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-logoff-script-visible"></a>**ADMX_Scripts/Run_Logoff_Script_Visible**  
+<a href="" id="admx-scripts-run-logoff-script-visible"></a>**ADMX_Scripts/Run_Logoff_Script_Visible**
 
 <!--SupportedSKUs-->
 
@@ -327,7 +327,7 @@ If you disable or don't configure this policy setting, the instructions are supp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display instructions in logoff scripts as they run*
 -   GP name: *Run_Logoff_Script_Visible*
 -   GP path: *System\Scripts*
@@ -338,7 +338,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-logon-script-sync-1"></a>**ADMX_Scripts/Run_Logon_Script_Sync_1**  
+<a href="" id="admx-scripts-run-logon-script-sync-1"></a>**ADMX_Scripts/Run_Logon_Script_Sync_1**
 
 <!--SupportedSKUs-->
 
@@ -376,7 +376,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run logon scripts synchronously*
 -   GP name: *Run_Logon_Script_Sync_1*
 -   GP path: *System\Scripts*
@@ -387,7 +387,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-logon-script-sync-2"></a>**ADMX_Scripts/Run_Logon_Script_Sync_2**  
+<a href="" id="admx-scripts-run-logon-script-sync-2"></a>**ADMX_Scripts/Run_Logon_Script_Sync_2**
 
 <!--SupportedSKUs-->
 
@@ -425,7 +425,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run logon scripts synchronously*
 -   GP name: *Run_Logon_Script_Sync_2*
 -   GP path: *System\Scripts*
@@ -436,7 +436,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-logon-script-visible"></a>**ADMX_Scripts/Run_Logon_Script_Visible**  
+<a href="" id="admx-scripts-run-logon-script-visible"></a>**ADMX_Scripts/Run_Logon_Script_Visible**
 
 <!--SupportedSKUs-->
 
@@ -474,7 +474,7 @@ If you disable or don't configure this policy setting, the instructions are supp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display instructions in logon scripts as they run*
 -   GP name: *Run_Logon_Script_Visible*
 -   GP path: *System\Scripts*
@@ -485,7 +485,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-shutdown-script-visible"></a>**ADMX_Scripts/Run_Shutdown_Script_Visible**  
+<a href="" id="admx-scripts-run-shutdown-script-visible"></a>**ADMX_Scripts/Run_Shutdown_Script_Visible**
 
 <!--SupportedSKUs-->
 
@@ -523,7 +523,7 @@ If you disable or don't configure this policy setting, the instructions are supp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display instructions in shutdown scripts as they run*
 -   GP name: *Run_Shutdown_Script_Visible*
 -   GP path: *System\Scripts*
@@ -534,7 +534,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-startup-script-sync"></a>**ADMX_Scripts/Run_Startup_Script_Sync**  
+<a href="" id="admx-scripts-run-startup-script-sync"></a>**ADMX_Scripts/Run_Startup_Script_Sync**
 
 <!--SupportedSKUs-->
 
@@ -575,7 +575,7 @@ If you disable or don't configure this policy setting, a startup can't run until
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run startup scripts asynchronously*
 -   GP name: *Run_Startup_Script_Sync*
 -   GP path: *System\Scripts*
@@ -586,7 +586,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-startup-script-visible"></a>**ADMX_Scripts/Run_Startup_Script_Visible**  
+<a href="" id="admx-scripts-run-startup-script-visible"></a>**ADMX_Scripts/Run_Startup_Script_Visible**
 
 <!--SupportedSKUs-->
 
@@ -627,7 +627,7 @@ If you disable or don't configure this policy setting, the instructions are supp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display instructions in startup scripts as they run*
 -   GP name: *Run_Startup_Script_Visible*
 -   GP path: *System\Scripts*
@@ -638,7 +638,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-scripts-run-user-ps-scripts-first"></a>**ADMX_Scripts/Run_User_PS_Scripts_First**  
+<a href="" id="admx-scripts-run-user-ps-scripts-first"></a>**ADMX_Scripts/Run_User_PS_Scripts_First**
 
 <!--SupportedSKUs-->
 
@@ -665,25 +665,25 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during user sign in and sign out. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
- 
-If you enable this policy setting, within each applicable Group Policy Object (GPO), PowerShell scripts are run before non-PowerShell scripts during user sign in and sign out. 
+This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during user sign in and sign out. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts.
 
-For example, assume the following scenario: 
+If you enable this policy setting, within each applicable Group Policy Object (GPO), PowerShell scripts are run before non-PowerShell scripts during user sign in and sign out.
 
-There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A. 
+For example, assume the following scenario:
+
+There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A.
 
 GPO B and GPO C include the following user logon scripts:
 
 - GPO B: B.cmd, B.ps1
 - GPO C: C.cmd, C.ps1
 
-Assume also that there are two users, Qin Hong and Tamara Johnston. 
+Assume also that there are two users, Qin Hong and Tamara Johnston.
 For Qin, GPOs A, B, and C are applied. Therefore, the scripts for GPOs B and C run in the following order for Qin:
 
 - Within GPO B: B.ps1, B.cmd
 - Within GPO C: C.ps1, C.cmd
- 
+
 For Tamara, GPOs B and C are applied, but not GPO A. Therefore, the scripts for GPOs B and C run in the following order for Tamara:
 
 - Within GPO B: B.cmd, B.ps1
@@ -700,7 +700,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Run Windows PowerShell scripts first at user logon, logoff*
 -   GP name: *Run_User_PS_Scripts_First*
 -   GP path: *System\Scripts*

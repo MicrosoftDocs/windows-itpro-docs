@@ -3,8 +3,8 @@ title: WiredNetwork DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the WiredNetwork configuration service provider.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/28/2018
 ms.reviewer: 
@@ -14,9 +14,9 @@ manager: aaroncz
 # WiredNetwork DDF file
 
 
-This topic shows the OMA DM device description framework (DDF) for the WiredNetwork configuration service provider. This CSP was added in Windows 10, version 1511.  
+This topic shows the OMA DM device description framework (DDF) for the WiredNetwork configuration service provider. This CSP was added in Windows 10, version 1511.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 

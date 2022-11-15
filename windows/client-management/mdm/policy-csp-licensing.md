@@ -3,8 +3,8 @@ title: Policy CSP - Licensing
 description: Use the Policy CSP - Licensing setting to enable or disable Windows license reactivation on managed devices.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Licensing policies  
+## Licensing policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**  
+<a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**
 
 <!--SupportedSKUs-->
 
@@ -61,7 +61,7 @@ Enables or Disable Windows license reactivation on managed devices.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control Device Reactivation for Retail devices*
 -   GP name: *AllowWindowsEntitlementReactivation*
 -   GP path: *Windows Components/Software Protection Platform*
@@ -80,7 +80,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**  
+<a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**
 
 <!--SupportedSKUs-->
 
@@ -110,7 +110,7 @@ Enabling this setting prevents this computer from sending data to Microsoft rega
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off KMS Client Online AVS Validation*
 -   GP name: *NoAcquireGT*
 -   GP path: *Windows Components/Software Protection Platform*

@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_StartMenu.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/20/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_StartMenu
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_StartMenu policies  
+## ADMX_StartMenu policies
 
 <dl>
   <dd>
@@ -233,7 +233,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-addsearchinternetlinkinstartmenu"></a>**ADMX_StartMenu/AddSearchInternetLinkInStartMenu**  
+<a href="" id="admx-startmenu-addsearchinternetlinkinstartmenu"></a>**ADMX_StartMenu/AddSearchInternetLinkInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -269,7 +269,7 @@ If you don't configure this policy (default), there won't be a "Search the Inter
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add Search Internet link to Start Menu*
 -   GP name: *AddSearchInternetLinkInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -280,7 +280,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-clearrecentdocsonexit"></a>**ADMX_StartMenu/ClearRecentDocsOnExit**  
+<a href="" id="admx-startmenu-clearrecentdocsonexit"></a>**ADMX_StartMenu/ClearRecentDocsOnExit**
 
 <!--SupportedSKUs-->
 
@@ -327,7 +327,7 @@ This policy also doesn't clear items that the user may have pinned to the Jump L
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Clear history of recently opened documents on exit*
 -   GP name: *ClearRecentDocsOnExit*
 -   GP path: *Start Menu and Taskbar*
@@ -338,7 +338,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-clearrecentprogfornewuserinstartmenu"></a>**ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu**  
+<a href="" id="admx-startmenu-clearrecentprogfornewuserinstartmenu"></a>**ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -372,7 +372,7 @@ If you disable or don't configure this policy, the start menu recent programs li
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Clear the recent programs list for new users*
 -   GP name: *ClearRecentProgForNewUserInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -383,7 +383,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-cleartilesonexit"></a>**ADMX_StartMenu/ClearTilesOnExit**  
+<a href="" id="admx-startmenu-cleartilesonexit"></a>**ADMX_StartMenu/ClearTilesOnExit**
 
 <!--SupportedSKUs-->
 
@@ -419,7 +419,7 @@ This setting doesn't prevent new notifications from appearing. See the "Turn off
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Clear tile notifications during log on*
 -   GP name: *ClearTilesOnExit*
 -   GP path: *Start Menu and Taskbar*
@@ -430,7 +430,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-desktopappsfirstinappsview"></a>**ADMX_StartMenu/DesktopAppsFirstInAppsView**  
+<a href="" id="admx-startmenu-desktopappsfirstinappsview"></a>**ADMX_StartMenu/DesktopAppsFirstInAppsView**
 
 <!--SupportedSKUs-->
 
@@ -466,7 +466,7 @@ If you disable or don't configure this policy setting, the desktop apps won't be
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *List desktop apps first in the Apps view*
 -   GP name: *DesktopAppsFirstInAppsView*
 -   GP path: *Start Menu and Taskbar*
@@ -477,7 +477,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-disableglobalsearchonappsview"></a>**ADMX_StartMenu/DisableGlobalSearchOnAppsView**  
+<a href="" id="admx-startmenu-disableglobalsearchonappsview"></a>**ADMX_StartMenu/DisableGlobalSearchOnAppsView**
 
 <!--SupportedSKUs-->
 
@@ -515,7 +515,7 @@ If you disable or don’t configure this policy setting, the user can configure 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Search just apps from the Apps view*
 -   GP name: *DisableGlobalSearchOnAppsView*
 -   GP path: *Start Menu and Taskbar*
@@ -526,7 +526,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-forcestartmenulogoff"></a>**ADMX_StartMenu/ForceStartMenuLogOff**  
+<a href="" id="admx-startmenu-forcestartmenulogoff"></a>**ADMX_StartMenu/ForceStartMenuLogOff**
 
 <!--SupportedSKUs-->
 
@@ -571,7 +571,7 @@ Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add Logoff to the Start Menu*
 -   GP name: *ForceStartMenuLogOff*
 -   GP path: *Start Menu and Taskbar*
@@ -582,7 +582,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-gotodesktoponsignin"></a>**ADMX_StartMenu/GoToDesktopOnSignIn**  
+<a href="" id="admx-startmenu-gotodesktoponsignin"></a>**ADMX_StartMenu/GoToDesktopOnSignIn**
 
 <!--SupportedSKUs-->
 
@@ -620,7 +620,7 @@ If you don’t configure this policy setting, the default setting for the user�
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Go to the desktop instead of Start when signing in*
 -   GP name: *GoToDesktopOnSignIn*
 -   GP path: *Start Menu and Taskbar*
@@ -631,7 +631,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-greymsiads"></a>**ADMX_StartMenu/GreyMSIAds**  
+<a href="" id="admx-startmenu-greymsiads"></a>**ADMX_StartMenu/GreyMSIAds**
 
 <!--SupportedSKUs-->
 
@@ -669,10 +669,10 @@ If you disable this setting or don't configure it, all Start menu shortcuts appe
 > Enabling this setting can make the Start menu slow to open.
 
 <!--/Description-->
-> 
+>
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Gray unavailable Windows Installer programs Start Menu shortcuts*
 -   GP name: *GreyMSIAds*
 -   GP path: *Start Menu and Taskbar*
@@ -683,7 +683,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-hidepoweroptions"></a>**ADMX_StartMenu/HidePowerOptions**  
+<a href="" id="admx-startmenu-hidepoweroptions"></a>**ADMX_StartMenu/HidePowerOptions**
 
 <!--SupportedSKUs-->
 
@@ -719,7 +719,7 @@ If you disable or don't configure this policy setting, the Power button and the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands*
 -   GP name: *HidePowerOptions*
 -   GP path: *Start Menu and Taskbar*
@@ -730,7 +730,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-intellimenus"></a>**ADMX_StartMenu/Intellimenus**  
+<a href="" id="admx-startmenu-intellimenus"></a>**ADMX_StartMenu/Intellimenus**
 
 <!--SupportedSKUs-->
 
@@ -771,7 +771,7 @@ To Turn off personalized menus without specifying a setting, click Start, click 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off personalized menus*
 -   GP name: *Intellimenus*
 -   GP path: *Start Menu and Taskbar*
@@ -782,7 +782,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-locktaskbar"></a>**ADMX_StartMenu/LockTaskbar**  
+<a href="" id="admx-startmenu-locktaskbar"></a>**ADMX_StartMenu/LockTaskbar**
 
 <!--SupportedSKUs-->
 
@@ -823,7 +823,7 @@ If you disable this setting or don't configure it, the user can configure the ta
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Lock the Taskbar*
 -   GP name: *LockTaskbar*
 -   GP path: *Start Menu and Taskbar*
@@ -834,7 +834,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-memcheckboxinrundlg"></a>**ADMX_StartMenu/MemCheckBoxInRunDlg**  
+<a href="" id="admx-startmenu-memcheckboxinrundlg"></a>**ADMX_StartMenu/MemCheckBoxInRunDlg**
 
 <!--SupportedSKUs-->
 
@@ -870,7 +870,7 @@ Enabling this setting adds a check box to the Run dialog box, giving users the o
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add "Run in Separate Memory Space" check box to Run dialog box*
 -   GP name: *MemCheckBoxInRunDlg*
 -   GP path: *Start Menu and Taskbar*
@@ -881,7 +881,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-noautotraynotify"></a>**ADMX_StartMenu/NoAutoTrayNotify**  
+<a href="" id="admx-startmenu-noautotraynotify"></a>**ADMX_StartMenu/NoAutoTrayNotify**
 
 <!--SupportedSKUs-->
 
@@ -921,7 +921,7 @@ If you don't configure it, the user can choose if they want notifications collap
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off notification area cleanup*
 -   GP name: *NoAutoTrayNotify*
 -   GP path: *Start Menu and Taskbar*
@@ -932,7 +932,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-noballoontip"></a>**ADMX_StartMenu/NoBalloonTip**  
+<a href="" id="admx-startmenu-noballoontip"></a>**ADMX_StartMenu/NoBalloonTip**
 
 <!--SupportedSKUs-->
 
@@ -970,7 +970,7 @@ If you disable this setting or don't configure it, all pop-up text is displayed 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Balloon Tips on Start Menu items*
 -   GP name: *NoBalloonTip*
 -   GP path: *Start Menu and Taskbar*
@@ -981,7 +981,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nochangestartmenu"></a>**ADMX_StartMenu/NoChangeStartMenu**  
+<a href="" id="admx-startmenu-nochangestartmenu"></a>**ADMX_StartMenu/NoChangeStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -1017,7 +1017,7 @@ If you disable or don't configure this setting, you'll allow a user to select an
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from customizing their Start Screen*
 -   GP name: *NoChangeStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -1028,7 +1028,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-noclose"></a>**ADMX_StartMenu/NoClose**  
+<a href="" id="admx-startmenu-noclose"></a>**ADMX_StartMenu/NoClose**
 
 <!--SupportedSKUs-->
 
@@ -1067,7 +1067,7 @@ If you disable or don't configure this policy setting, the Power button and the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands*
 -   GP name: *NoClose*
 -   GP path: *Start Menu and Taskbar*
@@ -1078,7 +1078,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nocommongroups"></a>**ADMX_StartMenu/NoCommonGroups**  
+<a href="" id="admx-startmenu-nocommongroups"></a>**ADMX_StartMenu/NoCommonGroups**
 
 <!--SupportedSKUs-->
 
@@ -1114,7 +1114,7 @@ To see the Program menu items in the All Users profile, on the system drive, go 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove common program groups from Start Menu*
 -   GP name: *NoCommonGroups*
 -   GP path: *Start Menu and Taskbar*
@@ -1125,7 +1125,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nofavoritesmenu"></a>**ADMX_StartMenu/NoFavoritesMenu**  
+<a href="" id="admx-startmenu-nofavoritesmenu"></a>**ADMX_StartMenu/NoFavoritesMenu**
 
 <!--SupportedSKUs-->
 
@@ -1159,7 +1159,7 @@ If you disable or don't configure this setting, the Display Favorite item is ava
 
 > [!NOTE]
 > The Favorites menu doesn't appear on the Start menu by default. To display the Favorites menu, right-click Start, click Properties, and then click Customize.  If you are using Start menu, click the Advanced tab, and then, under Start menu items, click the Favorites menu. If you are using the classic Start menu, click Display Favorites under Advanced Start menu options.
-> 
+>
 > The items that appear in the Favorites menu when you install Windows are preconfigured by the system to appeal to most users. However, users can add and remove items from this menu, and system administrators can create a customized Favorites menu for a user group.
 >
 > This setting only affects the Start menu. The Favorites item still appears in File Explorer and in Internet Explorer.
@@ -1168,7 +1168,7 @@ If you disable or don't configure this setting, the Display Favorite item is ava
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Favorites menu from Start Menu*
 -   GP name: *NoFavoritesMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -1179,7 +1179,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nofind"></a>**ADMX_StartMenu/NoFind**  
+<a href="" id="admx-startmenu-nofind"></a>**ADMX_StartMenu/NoFind**
 
 <!--SupportedSKUs-->
 
@@ -1222,7 +1222,7 @@ If you disable or don't configure this policy setting, the Search link is availa
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Search link from Start Menu*
 -   GP name: *NoFind*
 -   GP path: *Start Menu and Taskbar*
@@ -1233,7 +1233,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nogamesfolderonstartmenu"></a>**ADMX_StartMenu/NoGamesFolderOnStartMenu**  
+<a href="" id="admx-startmenu-nogamesfolderonstartmenu"></a>**ADMX_StartMenu/NoGamesFolderOnStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -1267,7 +1267,7 @@ If you disable or don't configure this policy, the start menu will show a link t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Games link from Start Menu*
 -   GP name: *NoGamesFolderOnStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -1278,7 +1278,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nohelp"></a>**ADMX_StartMenu/NoHelp**  
+<a href="" id="admx-startmenu-nohelp"></a>**ADMX_StartMenu/NoHelp**
 
 <!--SupportedSKUs-->
 
@@ -1316,7 +1316,7 @@ This policy setting only affects the Start menu. It doesn't remove the Help menu
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Help menu from Start Menu*
 -   GP name: *NoHelp*
 -   GP path: *Start Menu and Taskbar*
@@ -1327,7 +1327,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-noinstrumentation"></a>**ADMX_StartMenu/NoInstrumentation**  
+<a href="" id="admx-startmenu-noinstrumentation"></a>**ADMX_StartMenu/NoInstrumentation**
 
 <!--SupportedSKUs-->
 
@@ -1367,7 +1367,7 @@ This policy  setting doesn't prevent users from pinning programs to the Start Me
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off user tracking*
 -   GP name: *NoInstrumentation*
 -   GP path: *Start Menu and Taskbar*
@@ -1378,7 +1378,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nomoreprogramslist"></a>**ADMX_StartMenu/NoMoreProgramsList**  
+<a href="" id="admx-startmenu-nomoreprogramslist"></a>**ADMX_StartMenu/NoMoreProgramsList**
 
 <!--SupportedSKUs-->
 
@@ -1419,7 +1419,7 @@ If you disable or don't configure this setting, the all apps list will be visibl
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove All Programs list from the Start menu*
 -   GP name: *NoMoreProgramsList*
 -   GP path: *Start Menu and Taskbar*
@@ -1430,7 +1430,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nonetanddialupconnect"></a>**ADMX_StartMenu/NoNetAndDialupConnect**  
+<a href="" id="admx-startmenu-nonetanddialupconnect"></a>**ADMX_StartMenu/NoNetAndDialupConnect**
 
 <!--SupportedSKUs-->
 
@@ -1472,7 +1472,7 @@ Also, see the "Disable programs on Settings menu" and "Disable Control Panel" po
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Network Connections from Start Menu*
 -   GP name: *NoNetAndDialupConnect*
 -   GP path: *Start Menu and Taskbar*
@@ -1483,7 +1483,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nopinnedprograms"></a>**ADMX_StartMenu/NoPinnedPrograms**  
+<a href="" id="admx-startmenu-nopinnedprograms"></a>**ADMX_StartMenu/NoPinnedPrograms**
 
 <!--SupportedSKUs-->
 
@@ -1519,7 +1519,7 @@ If you disable this setting or don't configure it, the "Pinned Programs" list re
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove pinned programs list from the Start Menu*
 -   GP name: *NoPinnedPrograms*
 -   GP path: *Start Menu and Taskbar*
@@ -1530,7 +1530,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-norecentdocsmenu"></a>**ADMX_StartMenu/NoRecentDocsMenu**  
+<a href="" id="admx-startmenu-norecentdocsmenu"></a>**ADMX_StartMenu/NoRecentDocsMenu**
 
 <!--SupportedSKUs-->
 
@@ -1577,7 +1577,7 @@ This setting also doesn't hide document shortcuts displayed in the Open dialog b
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Recent Items menu from Start Menu*
 -   GP name: *NoRecentDocsMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -1588,7 +1588,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-noresolvesearch"></a>**ADMX_StartMenu/NoResolveSearch**  
+<a href="" id="admx-startmenu-noresolvesearch"></a>**ADMX_StartMenu/NoResolveSearch**
 
 <!--SupportedSKUs-->
 
@@ -1629,7 +1629,7 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not use the search-based method when resolving shell shortcuts*
 -   GP name: *NoResolveSearch*
 -   GP path: *Start Menu and Taskbar*
@@ -1640,7 +1640,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-noresolvetrack"></a>**ADMX_StartMenu/NoResolveTrack**  
+<a href="" id="admx-startmenu-noresolvetrack"></a>**ADMX_StartMenu/NoResolveTrack**
 
 <!--SupportedSKUs-->
 
@@ -1680,7 +1680,7 @@ Also, see the "Do not track Shell shortcuts during roaming" and the "Do not use 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not use the tracking-based method when resolving shell shortcuts*
 -   GP name: *NoResolveTrack*
 -   GP path: *Start Menu and Taskbar*
@@ -1691,7 +1691,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-norun"></a>**ADMX_StartMenu/NoRun**  
+<a href="" id="admx-startmenu-norun"></a>**ADMX_StartMenu/NoRun**
 
 <!--SupportedSKUs-->
 
@@ -1746,7 +1746,7 @@ If you disable or don't configure this setting, users will be able to access the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Run menu from Start Menu*
 -   GP name: *NoRun*
 -   GP path: *Start Menu and Taskbar*
@@ -1757,7 +1757,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosmconfigureprograms"></a>**ADMX_StartMenu/NoSMConfigurePrograms**  
+<a href="" id="admx-startmenu-nosmconfigureprograms"></a>**ADMX_StartMenu/NoSMConfigurePrograms**
 
 <!--SupportedSKUs-->
 
@@ -1798,7 +1798,7 @@ If you disable or don't configure this policy setting, the Default Programs link
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Default Programs link from the Start menu.*
 -   GP name: *NoSMConfigurePrograms*
 -   GP path: *Start Menu and Taskbar*
@@ -1809,7 +1809,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosmmydocuments"></a>**ADMX_StartMenu/NoSMMyDocuments**  
+<a href="" id="admx-startmenu-nosmmydocuments"></a>**ADMX_StartMenu/NoSMMyDocuments**
 
 <!--SupportedSKUs-->
 
@@ -1850,7 +1850,7 @@ Also, see the "Remove Documents icon on the desktop" policy setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Documents icon from Start Menu*
 -   GP name: *NoSMMyDocuments*
 -   GP path: *Start Menu and Taskbar*
@@ -1861,7 +1861,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosmmymusic"></a>**ADMX_StartMenu/NoSMMyMusic**  
+<a href="" id="admx-startmenu-nosmmymusic"></a>**ADMX_StartMenu/NoSMMyMusic**
 
 <!--SupportedSKUs-->
 
@@ -1897,7 +1897,7 @@ If you disable or don't configure this policy setting, the Music icon is availab
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Music icon from Start Menu*
 -   GP name: *NoSMMyMusic*
 -   GP path: *Start Menu and Taskbar*
@@ -1908,7 +1908,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosmmynetworkplaces"></a>**ADMX_StartMenu/NoSMMyNetworkPlaces**  
+<a href="" id="admx-startmenu-nosmmynetworkplaces"></a>**ADMX_StartMenu/NoSMMyNetworkPlaces**
 
 <!--SupportedSKUs-->
 
@@ -1944,7 +1944,7 @@ If you disable or don't configure this policy setting, the Network icon is avail
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Network icon from Start Menu*
 -   GP name: *NoSMMyNetworkPlaces*
 -   GP path: *Start Menu and Taskbar*
@@ -1955,7 +1955,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosmmypictures"></a>**ADMX_StartMenu/NoSMMyPictures**  
+<a href="" id="admx-startmenu-nosmmypictures"></a>**ADMX_StartMenu/NoSMMyPictures**
 
 <!--SupportedSKUs-->
 
@@ -1991,7 +1991,7 @@ If you disable or don't configure this policy setting, the Pictures icon is avai
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Pictures icon from Start Menu*
 -   GP name: *NoSMMyPictures*
 -   GP path: *Start Menu and Taskbar*
@@ -2002,7 +2002,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosearchcomminstartmenu"></a>**ADMX_StartMenu/NoSearchCommInStartMenu**  
+<a href="" id="admx-startmenu-nosearchcomminstartmenu"></a>**ADMX_StartMenu/NoSearchCommInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2036,7 +2036,7 @@ If you disable or don't configure this policy, the start menu will search for co
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not search communications*
 -   GP name: *NoSearchCommInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2047,7 +2047,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosearchcomputerlinkinstartmenu"></a>**ADMX_StartMenu/NoSearchComputerLinkInStartMenu**  
+<a href="" id="admx-startmenu-nosearchcomputerlinkinstartmenu"></a>**ADMX_StartMenu/NoSearchComputerLinkInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2081,7 +2081,7 @@ If you disable or don't configure this policy, the "See all results" link will b
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Search Computer link*
 -   GP name: *NoSearchComputerLinkInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2092,7 +2092,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosearcheverywherelinkinstartmenu"></a>**ADMX_StartMenu/NoSearchEverywhereLinkInStartMenu**  
+<a href="" id="admx-startmenu-nosearcheverywherelinkinstartmenu"></a>**ADMX_StartMenu/NoSearchEverywhereLinkInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2126,7 +2126,7 @@ If you disable or don't configure this policy, a "See more results" link will be
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove See More Results / Search Everywhere link*
 -   GP name: *NoSearchEverywhereLinkInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2137,7 +2137,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosearchfilesinstartmenu"></a>**ADMX_StartMenu/NoSearchFilesInStartMenu**  
+<a href="" id="admx-startmenu-nosearchfilesinstartmenu"></a>**ADMX_StartMenu/NoSearchFilesInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2171,7 +2171,7 @@ If you disable or don't configure this policy setting, the Start menu will searc
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not search for files*
 -   GP name: *NoSearchFilesInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2182,7 +2182,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosearchinternetinstartmenu"></a>**ADMX_StartMenu/NoSearchInternetInStartMenu**  
+<a href="" id="admx-startmenu-nosearchinternetinstartmenu"></a>**ADMX_StartMenu/NoSearchInternetInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2216,7 +2216,7 @@ If you disable or don't configure this policy, the start menu will search for in
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not search Internet*
 -   GP name: *NoSearchInternetInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2227,7 +2227,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosearchprogramsinstartmenu"></a>**ADMX_StartMenu/NoSearchProgramsInStartMenu**  
+<a href="" id="admx-startmenu-nosearchprogramsinstartmenu"></a>**ADMX_StartMenu/NoSearchProgramsInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2261,7 +2261,7 @@ If you disable or don't configure this policy setting, the Start menu search box
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not search programs and Control Panel items*
 -   GP name: *NoSearchProgramsInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2272,7 +2272,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosetfolders"></a>**ADMX_StartMenu/NoSetFolders**  
+<a href="" id="admx-startmenu-nosetfolders"></a>**ADMX_StartMenu/NoSetFolders**
 
 <!--SupportedSKUs-->
 
@@ -2312,7 +2312,7 @@ Also, see the "Disable Control Panel," "Disable Display in Control Panel," and "
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove programs on Settings menu*
 -   GP name: *NoSetFolders*
 -   GP path: *Start Menu and Taskbar*
@@ -2323,7 +2323,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nosettaskbar"></a>**ADMX_StartMenu/NoSetTaskbar**  
+<a href="" id="admx-startmenu-nosettaskbar"></a>**ADMX_StartMenu/NoSetTaskbar**
 
 <!--SupportedSKUs-->
 
@@ -2361,7 +2361,7 @@ If you disable or don't configure this policy setting, the Taskbar and Start Men
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent changes to Taskbar and Start Menu Settings*
 -   GP name: *NoSetTaskbar*
 -   GP path: *Start Menu and Taskbar*
@@ -2372,7 +2372,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nostartmenudownload"></a>**ADMX_StartMenu/NoStartMenuDownload**  
+<a href="" id="admx-startmenu-nostartmenudownload"></a>**ADMX_StartMenu/NoStartMenuDownload**
 
 <!--SupportedSKUs-->
 
@@ -2408,7 +2408,7 @@ If you disable or don't configure this policy setting, the Downloads link is ava
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Downloads link from Start Menu*
 -   GP name: *NoStartMenuDownload*
 -   GP path: *Start Menu and Taskbar*
@@ -2419,7 +2419,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nostartmenuhomegroup"></a>**ADMX_StartMenu/NoStartMenuHomegroup**  
+<a href="" id="admx-startmenu-nostartmenuhomegroup"></a>**ADMX_StartMenu/NoStartMenuHomegroup**
 
 <!--SupportedSKUs-->
 
@@ -2453,7 +2453,7 @@ If you disable or don't configure this policy, users can use the Start Menu opti
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Homegroup link from Start Menu*
 -   GP name: *NoStartMenuHomegroup*
 -   GP path: *Start Menu and Taskbar*
@@ -2464,7 +2464,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nostartmenurecordedtv"></a>**ADMX_StartMenu/NoStartMenuRecordedTV**  
+<a href="" id="admx-startmenu-nostartmenurecordedtv"></a>**ADMX_StartMenu/NoStartMenuRecordedTV**
 
 <!--SupportedSKUs-->
 
@@ -2500,7 +2500,7 @@ If you disable or don't configure this policy setting, the Recorded TV link is a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Recorded TV link from Start Menu*
 -   GP name: *NoStartMenuRecordedTV*
 -   GP path: *Start Menu and Taskbar*
@@ -2511,7 +2511,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nostartmenusubfolders"></a>**ADMX_StartMenu/NoStartMenuSubFolders**  
+<a href="" id="admx-startmenu-nostartmenusubfolders"></a>**ADMX_StartMenu/NoStartMenuSubFolders**
 
 <!--SupportedSKUs-->
 
@@ -2551,7 +2551,7 @@ If you disable this setting or don't configure it, Windows 2000 Professional and
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove user's folders from the Start Menu*
 -   GP name: *NoStartMenuSubFolders*
 -   GP path: *Start Menu and Taskbar*
@@ -2562,7 +2562,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nostartmenuvideos"></a>**ADMX_StartMenu/NoStartMenuVideos**  
+<a href="" id="admx-startmenu-nostartmenuvideos"></a>**ADMX_StartMenu/NoStartMenuVideos**
 
 <!--SupportedSKUs-->
 
@@ -2598,7 +2598,7 @@ If you disable or don't configure this policy setting, the Videos link is availa
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Videos link from Start Menu*
 -   GP name: *NoStartMenuVideos*
 -   GP path: *Start Menu and Taskbar*
@@ -2609,7 +2609,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nostartpage"></a>**ADMX_StartMenu/NoStartPage**  
+<a href="" id="admx-startmenu-nostartpage"></a>**ADMX_StartMenu/NoStartPage**
 
 <!--SupportedSKUs-->
 
@@ -2649,7 +2649,7 @@ If you don't configure this setting, the default is the new style, and the user 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Force classic Start Menu*
 -   GP name: *NoStartPage*
 -   GP path: *Start Menu and Taskbar*
@@ -2660,7 +2660,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-notaskbarclock"></a>**ADMX_StartMenu/NoTaskBarClock**  
+<a href="" id="admx-startmenu-notaskbarclock"></a>**ADMX_StartMenu/NoTaskBarClock**
 
 <!--SupportedSKUs-->
 
@@ -2696,7 +2696,7 @@ If you disable or don't configure this setting, the default behavior of the cloc
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Clock from the system notification area*
 -   GP name: *NoTaskBarClock*
 -   GP path: *Start Menu and Taskbar*
@@ -2707,7 +2707,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-notaskgrouping"></a>**ADMX_StartMenu/NoTaskGrouping**  
+<a href="" id="admx-startmenu-notaskgrouping"></a>**ADMX_StartMenu/NoTaskGrouping**
 
 <!--SupportedSKUs-->
 
@@ -2745,7 +2745,7 @@ If you disable or don't configure it, items on the taskbar that share the same p
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent grouping of taskbar items*
 -   GP name: *NoTaskGrouping*
 -   GP path: *Start Menu and Taskbar*
@@ -2756,7 +2756,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-notoolbarsontaskbar"></a>**ADMX_StartMenu/NoToolbarsOnTaskbar**  
+<a href="" id="admx-startmenu-notoolbarsontaskbar"></a>**ADMX_StartMenu/NoToolbarsOnTaskbar**
 
 <!--SupportedSKUs-->
 
@@ -2794,7 +2794,7 @@ If this setting is disabled or isn't configured, the taskbar displays all toolba
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not display any custom toolbars in the taskbar*
 -   GP name: *NoToolbarsOnTaskbar*
 -   GP path: *Start Menu and Taskbar*
@@ -2805,7 +2805,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-notraycontextmenu"></a>**ADMX_StartMenu/NoTrayContextMenu**  
+<a href="" id="admx-startmenu-notraycontextmenu"></a>**ADMX_StartMenu/NoTrayContextMenu**
 
 <!--SupportedSKUs-->
 
@@ -2843,7 +2843,7 @@ This policy setting doesn't prevent users from using other methods to issue the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove access to the context menus for the taskbar*
 -   GP name: *NoTrayContextMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2854,7 +2854,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-notrayitemsdisplay"></a>**ADMX_StartMenu/NoTrayItemsDisplay**  
+<a href="" id="admx-startmenu-notrayitemsdisplay"></a>**ADMX_StartMenu/NoTrayItemsDisplay**
 
 <!--SupportedSKUs-->
 
@@ -2895,7 +2895,7 @@ If this setting is disabled or isn't configured, the notification area is shown 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the notification area*
 -   GP name: *NoTrayItemsDisplay*
 -   GP path: *Start Menu and Taskbar*
@@ -2906,7 +2906,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nouninstallfromstart"></a>**ADMX_StartMenu/NoUninstallFromStart**  
+<a href="" id="admx-startmenu-nouninstallfromstart"></a>**ADMX_StartMenu/NoUninstallFromStart**
 
 <!--SupportedSKUs-->
 
@@ -2940,7 +2940,7 @@ If you disable this setting or don't configure it, users can access the uninstal
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from uninstalling applications from Start*
 -   GP name: *NoUninstallFromStart*
 -   GP path: *Start Menu and Taskbar*
@@ -2951,7 +2951,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nouserfolderonstartmenu"></a>**ADMX_StartMenu/NoUserFolderOnStartMenu**  
+<a href="" id="admx-startmenu-nouserfolderonstartmenu"></a>**ADMX_StartMenu/NoUserFolderOnStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -2985,7 +2985,7 @@ If you disable or don't configure this policy, the start menu will display a lin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove user folder link from Start Menu*
 -   GP name: *NoUserFolderOnStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -2996,7 +2996,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nousernameonstartmenu"></a>**ADMX_StartMenu/NoUserNameOnStartMenu**  
+<a href="" id="admx-startmenu-nousernameonstartmenu"></a>**ADMX_StartMenu/NoUserNameOnStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -3032,7 +3032,7 @@ If you disable or don't configure this policy setting, the user name label appea
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove user name from Start Menu*
 -   GP name: *NoUserNameOnStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -3043,7 +3043,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-nowindowsupdate"></a>**ADMX_StartMenu/NoWindowsUpdate**  
+<a href="" id="admx-startmenu-nowindowsupdate"></a>**ADMX_StartMenu/NoWindowsUpdate**
 
 <!--SupportedSKUs-->
 
@@ -3085,7 +3085,7 @@ Also, see the "Hide the "Add programs from Microsoft" option" policy setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove links and access to Windows Update*
 -   GP name: *NoWindowsUpdate*
 -   GP path: *Start Menu and Taskbar*
@@ -3096,7 +3096,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-powerbuttonaction"></a>**ADMX_StartMenu/PowerButtonAction**  
+<a href="" id="admx-startmenu-powerbuttonaction"></a>**ADMX_StartMenu/PowerButtonAction**
 
 <!--SupportedSKUs-->
 
@@ -3134,7 +3134,7 @@ If you disable or don't configure this setting, the Start Menu power button will
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Change Start Menu power button*
 -   GP name: *PowerButtonAction*
 -   GP path: *Start Menu and Taskbar*
@@ -3145,7 +3145,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-quicklaunchenabled"></a>**ADMX_StartMenu/QuickLaunchEnabled**  
+<a href="" id="admx-startmenu-quicklaunchenabled"></a>**ADMX_StartMenu/QuickLaunchEnabled**
 
 <!--SupportedSKUs-->
 
@@ -3183,7 +3183,7 @@ If you don't configure this policy setting, then users will be able to turn the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show QuickLaunch on Taskbar*
 -   GP name: *QuickLaunchEnabled*
 -   GP path: *Start Menu and Taskbar*
@@ -3194,7 +3194,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-removeundockpcbutton"></a>**ADMX_StartMenu/RemoveUnDockPCButton**  
+<a href="" id="admx-startmenu-removeundockpcbutton"></a>**ADMX_StartMenu/RemoveUnDockPCButton**
 
 <!--SupportedSKUs-->
 
@@ -3228,7 +3228,7 @@ If you disable this setting or don't configure it, the "Undock PC" button remain
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the "Undock PC" button from the Start Menu*
 -   GP name: *RemoveUnDockPCButton*
 -   GP path: *Start Menu and Taskbar*
@@ -3239,7 +3239,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-showappsviewonstart"></a>**ADMX_StartMenu/ShowAppsViewOnStart**  
+<a href="" id="admx-startmenu-showappsviewonstart"></a>**ADMX_StartMenu/ShowAppsViewOnStart**
 
 <!--SupportedSKUs-->
 
@@ -3275,7 +3275,7 @@ If you disable or don’t configure this policy setting, the Start screen will a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show the Apps view automatically when the user goes to Start*
 -   GP name: *ShowAppsViewOnStart*
 -   GP path: *Start Menu and Taskbar*
@@ -3286,7 +3286,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-showrunasdifferentuserinstart"></a>**ADMX_StartMenu/ShowRunAsDifferentUserInStart**  
+<a href="" id="admx-startmenu-showrunasdifferentuserinstart"></a>**ADMX_StartMenu/ShowRunAsDifferentUserInStart**
 
 <!--SupportedSKUs-->
 
@@ -3325,7 +3325,7 @@ If you disable this setting or don't configure it, users can't access the "Run a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show "Run as different user" command on Start*
 -   GP name: *ShowRunAsDifferentUserInStart*
 -   GP path: *Start Menu and Taskbar*
@@ -3336,7 +3336,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-showruninstartmenu"></a>**ADMX_StartMenu/ShowRunInStartMenu**  
+<a href="" id="admx-startmenu-showruninstartmenu"></a>**ADMX_StartMenu/ShowRunInStartMenu**
 
 <!--SupportedSKUs-->
 
@@ -3372,7 +3372,7 @@ If the Remove Run link from Start Menu policy is set, the Add the Run command to
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add the Run command to the Start Menu*
 -   GP name: *ShowRunInStartMenu*
 -   GP path: *Start Menu and Taskbar*
@@ -3383,7 +3383,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-showstartondisplaywithforegroundonwinkey"></a>**ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey**  
+<a href="" id="admx-startmenu-showstartondisplaywithforegroundonwinkey"></a>**ADMX_StartMenu/ShowStartOnDisplayWithForegroundOnWinKey**
 
 <!--SupportedSKUs-->
 
@@ -3415,7 +3415,7 @@ ADMX Info:
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show Start on the display the user is using when they press the Windows logo key*
 -   GP name: *ShowStartOnDisplayWithForegroundOnWinKey*
 -   GP path: *Start Menu and Taskbar*
@@ -3426,7 +3426,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-startmenulogoff"></a>**ADMX_StartMenu/StartMenuLogOff**  
+<a href="" id="admx-startmenu-startmenulogoff"></a>**ADMX_StartMenu/StartMenuLogOff**
 
 <!--SupportedSKUs-->
 
@@ -3469,7 +3469,7 @@ See also: "Remove Logoff" policy setting in User Configuration\Administrative Te
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Logoff on the Start Menu*
 -   GP name: *StartMenuLogOff*
 -   GP path: *Start Menu and Taskbar*
@@ -3480,7 +3480,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-startmenu-startpinappswheninstalled"></a>**ADMX_StartMenu/StartPinAppsWhenInstalled**  
+<a href="" id="admx-startmenu-startpinappswheninstalled"></a>**ADMX_StartMenu/StartPinAppsWhenInstalled**
 
 <!--SupportedSKUs-->
 
@@ -3513,7 +3513,7 @@ This policy setting allows pinning apps to Start by default, when they're includ
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Pin Apps to Start when installed*
 -   GP name: *StartPinAppsWhenInstalled*
 -   GP path: *Start Menu and Taskbar*

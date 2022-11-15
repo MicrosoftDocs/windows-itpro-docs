@@ -2,16 +2,16 @@
 title: Deploy Windows Defender Application Control (WDAC) policies using script (Windows)
 description: Use scripts to deploy Windows Defender Application Control (WDAC) policies. Learn how with this step-by-step guide.
 keywords: security, malware
-ms.prod: m365-security
+ms.prod: windows-client
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: jogeurte
+ms.reviewer: aaroncz
 ms.author: jogeurte
 ms.manager: jsuther
-manager: dansimp
-ms.date: 03/08/2022
-ms.technology: windows-sec
+manager: aaroncz
+ms.date: 10/06/2022
+ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -27,12 +27,14 @@ ms.localizationpriority: medium
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This topic describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
+This article describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
 
 > [!NOTE]
 > To use this procedure, download and distribute the [WDAC policy refresh tool](https://aka.ms/refreshpolicy) to all managed endpoints. Ensure your WDAC policies allow the WDAC policy refresh tool or use a managed installer to distribute the tool.
 
 ## Deploying policies for Windows 10 version 1903 and above
+
+You should now have one or more WDAC policies converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 1. Initialize the variables to be used by the script.
 
@@ -49,7 +51,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
    Copy-Item -Path $PolicyBinary -Destination $DestinationFolder -Force
    ```
 
-3. Repeat steps 1-2 as appropriate to deploy additional WDAC policies.
+3. Repeat steps 1-2 as appropriate to deploy more WDAC policies.
 4. Run RefreshPolicy.exe to activate and refresh all WDAC policies on the managed endpoint.
 
    ```powershell
@@ -80,16 +82,17 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
 
 ## Deploying signed policies
 
-In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [Microsoft Endpoint Manager](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
+If you are using [signed WDAC policies](/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering), the policies must be deployed into your device's EFI partition in addition to the steps outlined above. Unsigned WDAC policies do not need to be present in the EFI partition. Deploying your policy via [Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
 
-1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
+1. Mount the EFI volume and make the directory, if it doesn't exist, in an elevated PowerShell prompt: 
 
     ```powershell
    $MountPoint = 'C:\EFIMount'
    $EFIDestinationFolder = "$MountPoint\EFI\Microsoft\Boot\CiPolicies\Active"
    $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
+   if (-Not (Test-Path $MountPoint)) { New-Item -Path $MountPoint -Type Directory -Force }
    mountvol $MountPoint $EFIPartition
-   mkdir $EFIDestinationFolder
+   if (-Not (Test-Path $EFIDestinationFolder)) { New-Item -Path $EFIDestinationFolder -Type Directory -Force }
     ```
 
 2. Copy the signed policy to the created folder:

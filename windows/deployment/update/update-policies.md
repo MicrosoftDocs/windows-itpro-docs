@@ -2,13 +2,14 @@
 title: Policies for update compliance, activity, and user experience
 ms.reviewer: 
 description: Explanation and recommendations for settings
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.technology: itpro-updates
 ---
 
 # Policies for update compliance, activity, and user experience

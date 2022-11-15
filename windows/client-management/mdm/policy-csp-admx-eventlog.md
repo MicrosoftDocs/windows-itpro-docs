@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_EventLog.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/01/2020
 ms.reviewer: 
@@ -17,13 +17,13 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_EventLog policies  
+## ADMX_EventLog policies
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <dl>
@@ -96,7 +96,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-logenabled"></a>**ADMX_EventLog/Channel_LogEnabled**  
+<a href="" id="admx-eventlog-channel-logenabled"></a>**ADMX_EventLog/Channel_LogEnabled**
 
 <!--SupportedSKUs-->
 
@@ -126,7 +126,7 @@ This policy setting turns on logging.
 
 If you enable or don't configure this policy setting, then events can be written to this log.
 
-If the policy setting is disabled, then no new events can be logged. 
+If the policy setting is disabled, then no new events can be logged.
 
 >[!Note]
 > Events can always be read from the log, regardless of this policy setting.
@@ -134,7 +134,7 @@ If the policy setting is disabled, then no new events can be logged.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on logging*
 -   GP name: *Channel_LogEnabled*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -145,7 +145,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-logfilepath-1"></a>**ADMX_EventLog/Channel_LogFilePath_1**  
+<a href="" id="admx-eventlog-channel-logfilepath-1"></a>**ADMX_EventLog/Channel_LogFilePath_1**
 
 <!--SupportedSKUs-->
 
@@ -180,7 +180,7 @@ If you disable or don't configure this policy setting, the Event Log uses the fo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control the location of the log file*
 -   GP name: *Channel_LogFilePath_1*
 -   GP path: *Windows Components\Event Log Service\Application*
@@ -191,7 +191,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-logfilepath-2"></a>**ADMX_EventLog/Channel_LogFilePath_2**  
+<a href="" id="admx-eventlog-channel-logfilepath-2"></a>**ADMX_EventLog/Channel_LogFilePath_2**
 
 <!--SupportedSKUs-->
 
@@ -226,7 +226,7 @@ If you disable or don't configure this policy setting, the Event Log uses the fo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control the location of the log file*
 -   GP name: *Channel_LogFilePath_2*
 -   GP path: *Windows Components\Event Log Service\Security*
@@ -237,7 +237,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-logfilepath-3"></a>**ADMX_EventLog/Channel_LogFilePath_3**  
+<a href="" id="admx-eventlog-channel-logfilepath-3"></a>**ADMX_EventLog/Channel_LogFilePath_3**
 
 <!--SupportedSKUs-->
 
@@ -272,7 +272,7 @@ If you disable or don't configure this policy setting, the Event Log uses the fo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control the location of the log file*
 -   GP name: *Channel_LogFilePath_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -283,7 +283,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-logfilepath-4"></a>**ADMX_EventLog/Channel_LogFilePath_4**  
+<a href="" id="admx-eventlog-channel-logfilepath-4"></a>**ADMX_EventLog/Channel_LogFilePath_4**
 
 <!--SupportedSKUs-->
 
@@ -318,7 +318,7 @@ If you disable or don't configure this policy setting, the Event Log uses the fo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on logging*
 -   GP name: *Channel_LogFilePath_4*
 -   GP path: *Windows Components\Event Log Service\System*
@@ -329,7 +329,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-logmaxsize-3"></a>**ADMX_EventLog/Channel_LogMaxSize_3**  
+<a href="" id="admx-eventlog-channel-logmaxsize-3"></a>**ADMX_EventLog/Channel_LogMaxSize_3**
 
 <!--SupportedSKUs-->
 
@@ -364,7 +364,7 @@ If you disable or don't configure this policy setting, the maximum size of the l
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -375,7 +375,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-autobackup-1"></a>**ADMX_EventLog/Channel_Log_AutoBackup_1**  
+<a href="" id="admx-eventlog-channel-log-autobackup-1"></a>**ADMX_EventLog/Channel_Log_AutoBackup_1**
 
 <!--SupportedSKUs-->
 
@@ -412,7 +412,7 @@ If you don't configure this policy setting and the "Retain old events" policy se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_1*
 -   GP path: *Windows Components\Event Log Service\Application*
@@ -423,7 +423,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-autobackup-2"></a>**ADMX_EventLog/Channel_Log_AutoBackup_2**  
+<a href="" id="admx-eventlog-channel-log-autobackup-2"></a>**ADMX_EventLog/Channel_Log_AutoBackup_2**
 
 <!--SupportedSKUs-->
 
@@ -460,7 +460,7 @@ If you don't configure this policy setting and the "Retain old events" policy se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_2*
 -   GP path: *Windows Components\Event Log Service\Security*
@@ -471,7 +471,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-autobackup-3"></a>**ADMX_EventLog/Channel_Log_AutoBackup_3**  
+<a href="" id="admx-eventlog-channel-log-autobackup-3"></a>**ADMX_EventLog/Channel_Log_AutoBackup_3**
 
 <!--SupportedSKUs-->
 
@@ -508,7 +508,7 @@ If you don't configure this policy setting and the "Retain old events" policy se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -519,7 +519,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-autobackup-4"></a>**ADMX_EventLog/Channel_Log_AutoBackup_4**  
+<a href="" id="admx-eventlog-channel-log-autobackup-4"></a>**ADMX_EventLog/Channel_Log_AutoBackup_4**
 
 <!--SupportedSKUs-->
 
@@ -556,7 +556,7 @@ If you don't configure this policy setting and the "Retain old events" policy se
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_4*
 -   GP path: *Windows Components\Event Log Service\System*
@@ -567,7 +567,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-1"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_1**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-1"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_1**
 
 <!--SupportedSKUs-->
 
@@ -605,7 +605,7 @@ If you disable or don't configure this policy setting, all authenticated users a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_1*
 -   GP path: *Windows Components\Event Log Service\Application*
@@ -616,7 +616,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-2"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_2**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-2"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_2**
 
 <!--SupportedSKUs-->
 
@@ -654,7 +654,7 @@ If you disable or don't configure this policy setting, only system software and 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_2*
 -   GP path: *Windows Components\Event Log Service\Security*
@@ -665,7 +665,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-3"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_3**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-3"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_3**
 
 <!--SupportedSKUs-->
 
@@ -703,7 +703,7 @@ If you disable or don't configure this policy setting, all authenticated users a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -714,7 +714,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-4"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_4**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-4"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_4**
 
 <!--SupportedSKUs-->
 
@@ -752,7 +752,7 @@ If you disable or don't configure this policy setting, only system software and 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_4*
 -   GP path: *Windows Components\Event Log Service\System*
@@ -763,7 +763,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-5"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_5**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-5"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_5**
 
 <!--SupportedSKUs-->
 
@@ -800,7 +800,7 @@ If you don't configure this policy setting, the previous policy setting configur
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_5*
 -   GP path: *Windows Components\Event Log Service\Application*
@@ -811,7 +811,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-6"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_6**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-6"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_6**
 
 <!--SupportedSKUs-->
 
@@ -848,7 +848,7 @@ If you don't configure this policy setting, the previous policy setting configur
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_6*
 -   GP path: *Windows Components\Event Log Service\Security*
@@ -859,7 +859,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-7"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_7**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-7"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_7**
 
 <!--SupportedSKUs-->
 
@@ -896,7 +896,7 @@ If you don't configure this policy setting, the previous policy setting configur
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_7*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -907,7 +907,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-filelogaccess-8"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_8**  
+<a href="" id="admx-eventlog-channel-log-filelogaccess-8"></a>**ADMX_EventLog/Channel_Log_FileLogAccess_8**
 
 <!--SupportedSKUs-->
 
@@ -944,7 +944,7 @@ If you don't configure this policy setting, the previous policy setting configur
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_8*
 -   GP path: *Windows Components\Event Log Service\System*
@@ -955,7 +955,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-retention-2"></a>**ADMX_EventLog/Channel_Log_Retention_2**  
+<a href="" id="admx-eventlog-channel-log-retention-2"></a>**ADMX_EventLog/Channel_Log_Retention_2**
 
 <!--SupportedSKUs-->
 
@@ -993,7 +993,7 @@ If you disable or don't configure this policy setting and a log file reaches its
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_2*
 -   GP path: *Windows Components\Event Log Service\Security*
@@ -1004,7 +1004,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-retention-3"></a>**ADMX_EventLog/Channel_Log_Retention_3**  
+<a href="" id="admx-eventlog-channel-log-retention-3"></a>**ADMX_EventLog/Channel_Log_Retention_3**
 
 <!--SupportedSKUs-->
 
@@ -1042,7 +1042,7 @@ If you disable or don't configure this policy setting and a log file reaches its
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
@@ -1053,7 +1053,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-retention-4"></a>**ADMX_EventLog/Channel_Log_Retention_4** 
+<a href="" id="admx-eventlog-channel-log-retention-4"></a>**ADMX_EventLog/Channel_Log_Retention_4**
 
 
 <!--SupportedSKUs-->
@@ -1092,7 +1092,7 @@ If you disable or don't configure this policy setting and a log file reaches its
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_4*
 -   GP path: *Windows Components\Event Log Service\System*

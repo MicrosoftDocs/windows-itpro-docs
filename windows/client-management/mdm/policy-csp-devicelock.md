@@ -3,8 +3,8 @@ title: Policy CSP - DeviceLock
 description: Learn how to use the Policy CSP - DeviceLock setting to specify whether the user must input a PIN or password when the device resumes from an idle state.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 05/16/2022
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## DeviceLock policies  
+## DeviceLock policies
 
 <dl>
   <dd>
@@ -74,7 +74,7 @@ manager: aaroncz
 > The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
 
 <!--Policy-->
-<a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
+<a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**
 
 <!--SupportedSKUs-->
 
@@ -122,7 +122,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
+<a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**
 
 <!--SupportedSKUs-->
 
@@ -169,7 +169,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
+<a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**
 
 <!--SupportedSKUs-->
 
@@ -211,7 +211,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
+<a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**
 
 <!--SupportedSKUs-->
 
@@ -266,7 +266,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
+<a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**
 
 <!--SupportedSKUs-->
 
@@ -299,7 +299,7 @@ Specifies whether device lock is enabled.
 > This policy must be wrapped in an Atomic command.
 >
 > Always use the Replace command instead of Add for this policy in Windows for desktop editions.
- 
+
 
 
 > [!IMPORTANT]
@@ -330,7 +330,7 @@ Specifies whether device lock is enabled.
 >   - AllowSimpleDevicePassword
 >   - MinDevicePasswordLength
 >   - AlphanumericDevicePasswordRequired
->   - MinDevicePasswordComplexCharacters 
+>   - MinDevicePasswordComplexCharacters
 >   - DevicePasswordExpiration
 >   - DevicePasswordHistory
 >   - MaxDevicePasswordFailedAttempts
@@ -349,7 +349,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
+<a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**
 
 <!--SupportedSKUs-->
 
@@ -400,7 +400,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
+<a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**
 
 <!--SupportedSKUs-->
 
@@ -451,7 +451,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
+<a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**
 
 <!--SupportedSKUs-->
 
@@ -492,7 +492,7 @@ Value type is a string, which is the full image filepath and filename.
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
+<a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**
 
 <!--SupportedSKUs-->
 
@@ -553,7 +553,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
+<a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**
 
 <!--SupportedSKUs-->
 
@@ -604,7 +604,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
+<a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**
 
 <!--SupportedSKUs-->
 
@@ -642,7 +642,7 @@ PIN enforces the following behavior for client devices:
 
 -   1 - Digits only
 -   2 - Digits and lowercase letters are required
--   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
+-   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts.
 -   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop or HoloLens.
 
 The default value is 1. The following list shows the supported values and actual enforced values:
@@ -678,7 +678,7 @@ For more information about this policy, see [Exchange ActiveSync Policy Engine O
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
+<a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**
 
 <!--SupportedSKUs-->
 
@@ -755,7 +755,7 @@ The following example shows how to set the minimum password length to 4 characte
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-minimumpasswordage"></a>**DeviceLock/MinimumPasswordAge**  
+<a href="" id="devicelock-minimumpasswordage"></a>**DeviceLock/MinimumPasswordAge**
 
 <!--SupportedSKUs-->
 
@@ -790,7 +790,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
 
 <!--/Description-->
 <!--DbMapped-->
-GP Info:  
+GP Info:
 -   GP Friendly name: *Minimum password age*
 -   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
 
@@ -800,7 +800,7 @@ GP Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-preventenablinglockscreencamera"></a>**DeviceLock/PreventEnablingLockScreenCamera**  
+<a href="" id="devicelock-preventenablinglockscreencamera"></a>**DeviceLock/PreventEnablingLockScreenCamera**
 
 <!--SupportedSKUs-->
 
@@ -835,14 +835,14 @@ If you enable this setting, users will no longer be able to enable or disable lo
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent enabling lock screen camera*
 -   GP name: *CPL_Personalization_NoLockScreenCamera*
 -   GP path: *Control Panel/Personalization*
@@ -854,7 +854,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**  
+<a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**
 
 <!--SupportedSKUs-->
 
@@ -889,14 +889,14 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
 -   GP path: *Control Panel/Personalization*

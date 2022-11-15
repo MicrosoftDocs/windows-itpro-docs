@@ -1,7 +1,6 @@
 ---
 title: Microsoft Store for Business and Education release history
 description: Know the release history of Microsoft Store for Business and Microsoft Store for Education.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

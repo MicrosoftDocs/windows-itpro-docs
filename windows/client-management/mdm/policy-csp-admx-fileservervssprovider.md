@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_FileServerVSSProvider.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/02/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_FileServerVSSProvider
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_FileServerVSSProvider policies  
+## ADMX_FileServerVSSProvider policies
 
 <dl>
   <dd>
@@ -36,7 +36,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-fileservervssprovider-pol-encryptprotocol"></a>**ADMX_FileServerVSSProvider/Pol_EncryptProtocol**  
+<a href="" id="admx-fileservervssprovider-pol-encryptprotocol"></a>**ADMX_FileServerVSSProvider/Pol_EncryptProtocol**
 
 <!--SupportedSKUs-->
 
@@ -66,7 +66,7 @@ This policy setting determines whether the RPC protocol messages used by VSS for
 
 VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares.
 
-By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted. 
+By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.
 
 > [!NOTE]
 > To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
@@ -74,7 +74,7 @@ By default, the RPC protocol message between File Server VSS provider and File S
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers.*
 -   GP name: *Pol_EncryptProtocol*
 -   GP path: *System/File Share Shadow Copy Provider*

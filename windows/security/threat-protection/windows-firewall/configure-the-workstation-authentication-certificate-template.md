@@ -5,20 +5,20 @@ ms.assetid: c3ac9960-6efc-47c1-bd69-d9d4bf84f7a6
 ms.reviewer: jekrynit
 manager: aaroncz
 ms.author: paoloma
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.date: 09/07/2021
-ms.technology: windows-sec
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Server 2016</b>
-- ✅ <b>Windows Server 2019</b>
-- ✅ <b>Windows Server 2022</b>
+ms.technology: itpro-security
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows Server 2016</b>
+  - ✅ <b>Windows Server 2019</b>
+  - ✅ <b>Windows Server 2022</b>
 ---
 
 # Configure the Workstation Authentication Certificate Template

@@ -1,7 +1,6 @@
 ---
 title: Personal Data Encryption (PDE)
-description: Personal Data Encryption unlocks user encrypted files at user sign in instead of at boot.
-
+description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
 author: frankroj
 ms.author: frankroj
 ms.reviewer: rafals
@@ -40,19 +39,19 @@ ms.date: 09/22/2022
   - [BitLocker Drive Encryption](../bitlocker/bitlocker-overview.md) enabled
     - Although PDE will work without BitLocker, it's recommended to also enable BitLocker. PDE is meant to supplement BitLocker and not replace it.
   - Backup solution such as [OneDrive](/onedrive/onedrive)
-    - In certain scenarios such as TPM resets or destructive PIN resets, the PDE encryption keys can be lost. In such scenarios, any file encrypted with PDE will no longer be accessible. The only way to recover such files would be from backup.
+    - In certain scenarios such as TPM resets or destructive PIN resets, the keys used by PDE to decrypt files can be lost. In such scenarios, any file encrypted with PDE will no longer be accessible. The only way to recover such files would be from backup.
   - [Windows Hello for Business PIN reset service](../../identity-protection/hello-for-business/hello-feature-pin-reset.md)
-    - Destructive PIN resets will cause PDE encryption keys to be lost. The destructive PIN reset will make any file encrypted with PDE no longer accessible after a destructive PIN reset. Files encrypted with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
+    - Destructive PIN resets will cause keys used by PDE to decrypt files to be lost. The destructive PIN reset will make any file encrypted with PDE no longer accessible after a destructive PIN reset. Files encrypted with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
   - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
     - Provides additional security when authenticating with Windows Hello for Business via biometrics or PIN
   - [Kernel and user mode crash dumps disabled](/windows/client-management/mdm/policy-csp-memorydump)
-    - Crash dumps can potentially cause the PDE encryption keys to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
+    - Crash dumps can potentially cause the keys used by PDE decrypt files to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
   - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
-    - Hibernation files can potentially cause the PDE encryption keys to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+    - Hibernation files can potentially cause the keys used by PDE to decrypt files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 ## PDE protection levels
 
-PDE uses AES-256 to encrypt files and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the PDE APIs.
+PDE uses AES-CBC with a 256-bit key to encrypt files and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
 
 | Item | Level 1 | Level 2 |
 |---|---|---|
@@ -94,15 +93,15 @@ For information on enabling PDE via Intune, see [Enable Personal Data Encryption
 
 | Item | PDE | BitLocker |
 |--|--|--|
-| Release of encryption keys | At user sign in via Windows Hello for Business | At boot |
-| Encryption keys discarded | At user sign out | At reboot |
+| Release of key | At user sign-in via Windows Hello for Business | At boot |
+| Keys discarded | At user sign-out | At reboot |
 | Files encrypted | Individual specified files | Entire volume/drive |
 | Authentication to access encrypted file | Windows Hello for Business | When BitLocker with PIN is enabled, BitLocker PIN plus Windows sign in |
 | Accessibility | Windows Hello for Business is accessibility friendly | BitLocker with PIN doesn't have accessibility features |
 
 ## Differences between PDE and EFS
 
-The main difference between encrypting files with PDE instead of EFS is the method they use to encrypt the file. PDE uses Windows Hello for Business to secure the encryption keys that encrypts the files. EFS uses certificates to secure and encrypt the files.
+The main difference between encrypting files with PDE instead of EFS is the method they use to encrypt the file. PDE uses Windows Hello for Business to secure the keys to decrypt the files. EFS uses certificates to secure and encrypt the files.
 
 To see if a file is encrypted with PDE or EFS:
 
@@ -118,9 +117,7 @@ Encryption information including what encryption method is being used can be obt
 
 ## Disable PDE and decrypt files
 
-Currently there's no method to disable PDE via MDM policy. However, PDE can be disabled locally and files can be decrypted using `cipher.exe`.
-
-In certain scenarios a user may be able to manually decrypt a file using the following steps:
+Currently there's no method to disable PDE via MDM policy. However, in certain scenarios PDE encrypted files can be decrypted using `cipher.exe` using the following steps:
 
 1. Open the properties of the file
 2. Under the **General** tab, select **Advanced...**

@@ -2,17 +2,17 @@
 title: BitLocker Countermeasures (Windows 10)
 description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Antimalware (ELAM) to protect against attacks on the BitLocker encryption key.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
-  - highpri
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker Countermeasures
@@ -82,9 +82,9 @@ This helps mitigate DMA and memory remanence attacks.
 
 On computers with a compatible TPM, operating system drives that are BitLocker-protected can be unlocked in four ways:
 
-- **TPM-only.** Using TPM-only validation doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign in. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.  
+- **TPM-only.** Using TPM-only validation doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign-in. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.  
 - **TPM with startup key.** In addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a startup key. Data on the encrypted volume can't be accessed without the startup key.
-- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enter a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
+- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
 - **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the correct PIN is also required.
 
 In the following group policy example, TPM + PIN is required to unlock an operating system drive:
@@ -130,7 +130,7 @@ This section covers countermeasures for specific types of attacks.
 
 ### Bootkits and rootkits
 
-A physically-present attacker might attempt to install a bootkit or rootkit-like piece of software into the boot chain in an attempt to steal the BitLocker keys. 
+A physically present attacker might attempt to install a bootkit or rootkit-like piece of software into the boot chain in an attempt to steal the BitLocker keys. 
 The TPM should observe this installation via PCR measurements, and the BitLocker key won't be released. 
 
 This is the default configuration.
@@ -163,6 +163,7 @@ The following sections cover mitigations for different types of attackers.
 
 Physical access may be limited by a form factor that doesn't expose buses and memory. 
 For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard. 
+
 This attacker of opportunity doesn't use destructive methods or sophisticated forensics hardware/software. 
 
 Mitigation: 

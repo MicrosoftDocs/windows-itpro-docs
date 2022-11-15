@@ -4,7 +4,6 @@ description: Troubleshooting topics for Microsoft Store for Business.
 ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

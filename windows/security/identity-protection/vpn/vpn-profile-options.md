@@ -2,20 +2,21 @@
 title: VPN profile options (Windows 10 and Windows 11)
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
 manager: aaroncz
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: pesmith
 ms.localizationpriority: medium
 ms.date: 05/17/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # VPN profile options
 
-Most of the VPN settings in Windows 10 and Windows 11 can be configured in VPN profiles using Microsoft Intune or Microsoft Endpoint Configuration Manager. All VPN settings in Windows 10 and Windows 11 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](/windows/client-management/mdm/vpnv2-csp). 
+Most of the VPN settings in Windows 10 and Windows 11 can be configured in VPN profiles using Microsoft Intune or Microsoft Configuration Manager. All VPN settings in Windows 10 and Windows 11 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](/windows/client-management/mdm/vpnv2-csp). 
 
 >[!NOTE]
 >If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) first.

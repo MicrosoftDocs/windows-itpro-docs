@@ -2,12 +2,13 @@
 title: Microsoft Connected Cache for Enterprise and Education (private preview)
 manager: dougeby
 description: Details on Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: w10
+ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.collection: M365-modern-desktop
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Microsoft Connected Cache for Enterprise and Education (private preview)
@@ -240,7 +241,7 @@ Files contained in the mccinstaller.zip file:
 1. Enable Nested Virtualization
 
   ```powershell
-  Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
+  Set-VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
   ```
 2. Enable Mac Spoofing
   ```powershell

@@ -3,7 +3,7 @@ title: Create WDAC Deny Policy
 description: Explains how to create WDAC deny policies
 keywords: WDAC, policy
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,9 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
-ms.author: dansimp
-manager: dansimp
-ms.technology: windows-sec
+ms.author: vinpa
+manager: aaroncz
+ms.technology: itpro-security
 ---
 
 # Guidance on Creating WDAC Deny Policies

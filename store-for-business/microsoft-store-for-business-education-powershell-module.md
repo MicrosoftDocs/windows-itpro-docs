@@ -1,7 +1,6 @@
 ---
 title: Microsoft Store for Business and Education PowerShell module - preview
 description: Preview version of PowerShell module
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

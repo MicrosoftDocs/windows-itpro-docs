@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_tcpip.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/23/2020
 ms.reviewer: 
@@ -17,14 +17,14 @@ manager: aaroncz
 <hr/>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--Policies-->
-## ADMX_tcpip policies  
+## ADMX_tcpip policies
 
 <dl>
   <dd>
@@ -72,7 +72,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-6to4-router-name"></a>**ADMX_tcpip/6to4_Router_Name**  
+<a href="" id="admx-tcpip-6to4-router-name"></a>**ADMX_tcpip/6to4_Router_Name**
 
 <!--SupportedSKUs-->
 
@@ -107,7 +107,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set 6to4 Relay Name*
 -   GP name: *6to4_Router_Name*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -118,7 +118,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-6to4-router-name-resolution-interval"></a>**ADMX_tcpip/6to4_Router_Name_Resolution_Interval**  
+<a href="" id="admx-tcpip-6to4-router-name-resolution-interval"></a>**ADMX_tcpip/6to4_Router_Name_Resolution_Interval**
 
 <!--SupportedSKUs-->
 
@@ -153,7 +153,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set 6to4 Relay Name Resolution Interval*
 -   GP name: *6to4_Router_Name_Resolution_Interval*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -164,7 +164,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-6to4-state"></a>**ADMX_tcpip/6to4_State**  
+<a href="" id="admx-tcpip-6to4-state"></a>**ADMX_tcpip/6to4_State**
 
 <!--SupportedSKUs-->
 
@@ -203,7 +203,7 @@ If you enable this policy setting, you can configure 6to4 with one of the follow
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set 6to4 State*
 -   GP name: *6to4_State*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -214,7 +214,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-iphttps-clientstate"></a>**ADMX_tcpip/IPHTTPS_ClientState**  
+<a href="" id="admx-tcpip-iphttps-clientstate"></a>**ADMX_tcpip/IPHTTPS_ClientState**
 
 <!--SupportedSKUs-->
 
@@ -253,7 +253,7 @@ If you enable this policy setting, you can specify an IP-HTTPS server URL. You w
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set IP-HTTPS State*
 -   GP name: *IPHTTPS_ClientState*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -264,7 +264,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-ip-stateless-autoconfiguration-limits-state"></a>**ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State**  
+<a href="" id="admx-tcpip-ip-stateless-autoconfiguration-limits-state"></a>**ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State**
 
 <!--SupportedSKUs-->
 
@@ -299,7 +299,7 @@ If you disable this policy setting, IP Stateless Autoconfiguration Limits will b
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set IP Stateless Autoconfiguration Limits State*
 -   GP name: *IP_Stateless_Autoconfiguration_Limits_State*
 -   GP path: *Network\TCPIP Settings\Parameters*
@@ -310,7 +310,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-isatap-router-name"></a>**ADMX_tcpip/ISATAP_Router_Name**  
+<a href="" id="admx-tcpip-isatap-router-name"></a>**ADMX_tcpip/ISATAP_Router_Name**
 
 <!--SupportedSKUs-->
 
@@ -345,7 +345,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set ISATAP Router Name*
 -   GP name: *ISATAP_Router_Name*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -356,7 +356,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-isatap-state"></a>**ADMX_tcpip/ISATAP_State**  
+<a href="" id="admx-tcpip-isatap-state"></a>**ADMX_tcpip/ISATAP_State**
 
 <!--SupportedSKUs-->
 
@@ -395,7 +395,7 @@ If you enable this policy setting, you can configure ISATAP with one of the foll
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set ISATAP State*
 -   GP name: *ISATAP_State*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -406,7 +406,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-teredo-client-port"></a>**ADMX_tcpip/Teredo_Client_Port**  
+<a href="" id="admx-tcpip-teredo-client-port"></a>**ADMX_tcpip/Teredo_Client_Port**
 
 <!--SupportedSKUs-->
 
@@ -441,7 +441,7 @@ If you disable or do not configure this policy setting, the local host setting i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Teredo Client Port*
 -   GP name: *Teredo_Client_Port*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -452,7 +452,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-teredo-default-qualified"></a>**ADMX_tcpip/Teredo_Default_Qualified**  
+<a href="" id="admx-tcpip-teredo-default-qualified"></a>**ADMX_tcpip/Teredo_Default_Qualified**
 
 <!--SupportedSKUs-->
 
@@ -489,7 +489,7 @@ Policy Enabled State: If Default Qualified is enabled, Teredo will attempt quali
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Teredo Default Qualified*
 -   GP name: *Teredo_Default_Qualified*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -500,7 +500,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-teredo-refresh-rate"></a>**ADMX_tcpip/Teredo_Refresh_Rate**  
+<a href="" id="admx-tcpip-teredo-refresh-rate"></a>**ADMX_tcpip/Teredo_Refresh_Rate**
 
 <!--SupportedSKUs-->
 
@@ -538,7 +538,7 @@ If you disable or do not configure this policy setting, the refresh rate is conf
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Teredo Refresh Rate*
 -   GP name: *Teredo_Refresh_Rate*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -549,7 +549,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-teredo-server-name"></a>**ADMX_tcpip/Teredo_Server_Name**  
+<a href="" id="admx-tcpip-teredo-server-name"></a>**ADMX_tcpip/Teredo_Server_Name**
 
 <!--SupportedSKUs-->
 
@@ -584,7 +584,7 @@ If you disable or do not configure this policy setting, the local settings on th
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Teredo Server Name*
 -   GP name: *Teredo_Server_Name*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -595,7 +595,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-teredo-state"></a>**ADMX_tcpip/Teredo_State**  
+<a href="" id="admx-tcpip-teredo-state"></a>**ADMX_tcpip/Teredo_State**
 
 <!--SupportedSKUs-->
 
@@ -635,7 +635,7 @@ If you enable this policy setting, you can configure Teredo with one of the foll
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Teredo State*
 -   GP name: *Teredo_State*
 -   GP path: *Network\TCPIP Settings\IPv6 Transition Technologies*
@@ -646,7 +646,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-tcpip-windows-scaling-heuristics-state"></a>**ADMX_tcpip/Windows_Scaling_Heuristics_State**  
+<a href="" id="admx-tcpip-windows-scaling-heuristics-state"></a>**ADMX_tcpip/Windows_Scaling_Heuristics_State**
 
 <!--SupportedSKUs-->
 
@@ -683,7 +683,7 @@ If you disable this policy setting, Window Scaling Heuristics will be disabled a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Window Scaling Heuristics State*
 -   GP name: *Windows_Scaling_Heuristics_State*
 -   GP path: *Network\TCPIP Settings\Parameters*
@@ -693,7 +693,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-> 
+>
 <!--/Policies-->
 
 

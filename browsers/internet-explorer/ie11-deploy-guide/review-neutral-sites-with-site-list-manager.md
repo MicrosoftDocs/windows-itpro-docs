@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to use Site List Manager to review neutral sites for IE mode
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
 ms.reviewer: 
 audience: itpro

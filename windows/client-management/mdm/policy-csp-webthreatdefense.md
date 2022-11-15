@@ -3,8 +3,8 @@ title: Policy CSP - WebThreatDefense
 description: Learn about the Policy CSP - WebThreatDefense.
 ms.author: v-aljupudi
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: alekyaj
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -18,7 +18,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## WebThreatDefense policies  
+## WebThreatDefense policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 >In Microsoft Intune, this CSP is under the “Enhanced Phishing Protection” category.
 
 <!--Policy-->
-<a href="" id="webthreatdefense-enableservice"></a>**WebThreatDefense/EnableService**  
+<a href="" id="webthreatdefense-enableservice"></a>**WebThreatDefense/EnableService**
 
 <!--SupportedSKUs-->
 
@@ -48,7 +48,7 @@ manager: aaroncz
 |Home|No|No|
 |Pro|No|No|
 |Windows SE|No|Yes|
-|Business|No|Yes|
+|Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
@@ -66,7 +66,7 @@ manager: aaroncz
 <!--/Scope-->
 <!--Description-->
 
-This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users don't see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. When in audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends telemetry through Microsoft Defender.  
+This policy setting determines whether Enhanced Phishing Protection is in audit mode or off. Users don't see any notifications for any protection scenarios when Enhanced Phishing Protection is in audit mode. When in audit mode, Enhanced Phishing Protection captures unsafe password entry events and sends telemetry through Microsoft Defender.
 
 If you enable this policy setting or don’t configure this setting, Enhanced Phishing Protection is enabled in audit mode, and your users are unable to turn it off.
 
@@ -74,7 +74,7 @@ If you disable this policy setting, Enhanced Phishing Protection is off. When of
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Web Threat Defense*
 -   GP name: *EnableWebThreatDefenseService*
 -   GP path: *Windows Security\App & browser control\Reputation-based protection\Phishing protections*
@@ -94,7 +94,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="webthreatdefense-notifymalicious"></a>**WebThreatDefense/NotifyMalicious**  
+<a href="" id="webthreatdefense-notifymalicious"></a>**WebThreatDefense/NotifyMalicious**
 
 <!--SupportedSKUs-->
 
@@ -103,7 +103,7 @@ The following list shows the supported values:
 |Home|No|No|
 |Pro|No|No|
 |Windows SE|No|Yes|
-|Business|No|Yes|
+|Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
@@ -139,7 +139,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="webthreatdefense-notifypasswordreuse"></a>**WebThreatDefense/NotifyPasswordReuse**  
+<a href="" id="webthreatdefense-notifypasswordreuse"></a>**WebThreatDefense/NotifyPasswordReuse**
 
 <!--SupportedSKUs-->
 
@@ -148,7 +148,7 @@ The following list shows the supported values:
 |Home|No|No|
 |Pro|No|No|
 |Windows SE|No|Yes|
-|Business|No|Yes|
+|Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
@@ -185,7 +185,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="webthreatdefense-notifyunsafeapp"></a>**WebThreatDefense/NotifyUnsafeApp**  
+<a href="" id="webthreatdefense-notifyunsafeapp"></a>**WebThreatDefense/NotifyUnsafeApp**
 
 <!--SupportedSKUs-->
 
@@ -194,7 +194,7 @@ The following list shows the supported values:
 |Home|No|No|
 |Pro|No|No|
 |Windows SE|No|Yes|
-|Business|No|Yes|
+|Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
@@ -216,13 +216,13 @@ This policy setting determines whether Enhanced Phishing Protection warns your u
 
 If you enable this policy setting, Enhanced Phishing Protection warns your users if they store their password in text editor apps.
 
-If you disable or don’t configure this policy setting, Enhanced Phishing Protection won't warn users if they store their password in text editor apps. 
+If you disable or don’t configure this policy setting, Enhanced Phishing Protection won't warn users if they store their password in text editor apps.
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 -	0: Turns off Enhanced Phishing Protection notifications when users type their work or school passwords in text editor apps like OneNote, Word, Notepad, etc.
--	1: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in text editor apps.  
+-	1: Turns on Enhanced Phishing Protection notifications when users type their work or school passwords in text editor apps.
 <!--/SupportedValues-->
 <!--/Policy-->
 

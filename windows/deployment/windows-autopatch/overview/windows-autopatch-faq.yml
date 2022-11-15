@@ -71,6 +71,9 @@ sections:
       - question: Can I run Autopatch on my Windows 365 Business Workloads?
         answer: |
           No. Autopatch is only available on enterprise workloads. For more information, see [Windows Autopatch on Windows 365 Enterprise Workloads](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#windows-autopatch-on-windows-365-enterprise-workloads).
+      - question: Can you change the policies and configurations created by Windows Autopatch?
+        answer: |
+          No. Don't change, edit, add to, or remove any of the configurations. Doing so might cause unintended configuration conflicts and impact the Windows Autopatch service. For more information about policies and configurations, see [Changes made at tenant enrollment](/windows/deployment/windows-autopatch/references/windows-autopatch-changes-to-tenant).
   - name: Update Management
     questions: 
       - question: What systems does Windows Autopatch update?
@@ -108,6 +111,9 @@ sections:
       - question: What support is available for customers who need help with onboarding to Windows Autopatch?
         answer: |
           The FastTrack Center is the primary mode of support for customers who need assistance from Microsoft to meet the pre-requisites (such as Intune and Azure or Hybrid AD) for onboarding to Windows Autopatch. For more information, see [Microsoft FastTrack for Windows Autopatch](../operate/windows-autopatch-support-request.md#microsoft-fasttrack). When you've onboarded with Windows Autopatch, you can [submit a support request](../operate/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team.
+      - question: Does Windows Autopatch Support Dual Scan for Windows Update?
+        answer: |
+          Dual Scan for Windows has been deprecated and replaced with the [scan source policy](/windows/deployment/update/wufb-wsus). Windows Autopatch supports the scan source policy if the Feature updates, and Windows quality updates workloads are configured for Windows update. If Feature and Windows updates are configured for WSUS, it could cause disruptions to the service and your release schedules.
   - name: Other
     questions:
       - question: Are there Autopatch specific APIs or PowerShell scripts available?

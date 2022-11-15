@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_Bits.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/20/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Bits
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Bits policies  
+## ADMX_Bits policies
 
 <dl>
   <dd>
@@ -75,7 +75,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-disablebranchcache"></a>**ADMX_Bits/BITS_DisableBranchCache**  
+<a href="" id="admx-bits-bits-disablebranchcache"></a>**ADMX_Bits/BITS_DisableBranchCache**
 
 <!--SupportedSKUs-->
 
@@ -109,11 +109,11 @@ If you disable or don't configure this policy setting, the BITS client uses Wind
 
 > [!NOTE]
 > This policy setting doesn't affect the use of Windows Branch Cache by applications other than BITS. This policy setting doesn't apply to BITS transfers over SMB. This setting has no effect if the computer's administrative settings for Windows Branch Cache disable its use entirely.
-    
+
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow the BITS client to use Windows Branch Cache*
 -   GP name: *BITS_DisableBranchCache*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -124,7 +124,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-disablepeercachingclient"></a>**ADMX_Bits/BITS_DisablePeercachingClient**  
+<a href="" id="admx-bits-bits-disablepeercachingclient"></a>**ADMX_Bits/BITS_DisablePeercachingClient**
 
 <!--SupportedSKUs-->
 
@@ -163,7 +163,7 @@ If you disable or don't configure this policy setting, the computer attempts to 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow the computer to act as a BITS Peercaching client*
 -   GP name: *BITS_DisablePeercachingClient*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -174,7 +174,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-disablepeercachingserver"></a>**ADMX_Bits/BITS_DisablePeercachingServer**  
+<a href="" id="admx-bits-bits-disablepeercachingserver"></a>**ADMX_Bits/BITS_DisablePeercachingServer**
 
 <!--SupportedSKUs-->
 
@@ -213,7 +213,7 @@ If you disable or don't configure this policy setting, the computer will offer d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow the computer to act as a BITS Peercaching server*
 -   GP name: *BITS_DisablePeercachingServer*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -225,7 +225,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-enablepeercaching"></a>**ADMX_Bits/BITS_EnablePeercaching**  
+<a href="" id="admx-bits-bits-enablepeercaching"></a>**ADMX_Bits/BITS_EnablePeercaching**
 
 <!--SupportedSKUs-->
 
@@ -263,7 +263,7 @@ If you disable or don't configure this policy setting, the BITS peer caching fea
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow BITS Peercaching*
 -   GP name: *BITS_EnablePeercaching*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -275,7 +275,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxbandwidthservedforpeers"></a>**ADMX_Bits/BITS_MaxBandwidthServedForPeers**  
+<a href="" id="admx-bits-bits-maxbandwidthservedforpeers"></a>**ADMX_Bits/BITS_MaxBandwidthServedForPeers**
 
 <!--SupportedSKUs-->
 
@@ -311,13 +311,13 @@ If you enable this policy setting, you can enter a value in bits per second (bps
 
 If you disable this policy setting or don't configure it, the default value of 30 percent of the slowest active network interface will be used.
 
-> [!NOTE] 
+> [!NOTE]
 > This setting has no effect if the "Allow BITS peer caching" policy setting is disabled or not configured.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the maximum network bandwidth used for Peercaching*
 -   GP name: *BITS_MaxBandwidthServedForPeers*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -328,7 +328,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxbandwidthv2-maintenance"></a>**ADMX_Bits/BITS_MaxBandwidthV2_Maintenance**  
+<a href="" id="admx-bits-bits-maxbandwidthv2-maintenance"></a>**ADMX_Bits/BITS_MaxBandwidthV2_Maintenance**
 
 <!--SupportedSKUs-->
 
@@ -368,7 +368,7 @@ If you disable or don't configure this policy setting, the limits defined for wo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set up a maintenance schedule to limit the maximum network bandwidth used for BITS background transfers*
 -   GP name: *BITS_MaxBandwidthV2_Maintenance*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -380,7 +380,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxbandwidthv2-work"></a>**ADMX_Bits/BITS_MaxBandwidthV2_Work**  
+<a href="" id="admx-bits-bits-maxbandwidthv2-work"></a>**ADMX_Bits/BITS_MaxBandwidthV2_Work**
 
 <!--SupportedSKUs-->
 
@@ -417,7 +417,7 @@ If you disable or don't configure this policy setting, BITS uses all available u
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set up a work schedule to limit the maximum network bandwidth used for BITS background transfers*
 -   GP name: *BITS_MaxBandwidthV2_Work*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -429,7 +429,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxcachesize"></a>**ADMX_Bits/BITS_MaxCacheSize**  
+<a href="" id="admx-bits-bits-maxcachesize"></a>**ADMX_Bits/BITS_MaxCacheSize**
 
 <!--SupportedSKUs-->
 
@@ -467,7 +467,7 @@ If you disable or don't configure this policy setting, the default size of the B
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the BITS Peercache size*
 -   GP name: *BITS_MaxCacheSize*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -478,7 +478,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxcontentage"></a>**ADMX_Bits/BITS_MaxContentAge**  
+<a href="" id="admx-bits-bits-maxcontentage"></a>**ADMX_Bits/BITS_MaxContentAge**
 
 <!--SupportedSKUs-->
 
@@ -516,7 +516,7 @@ If you disable or don't configure this policy setting, files that haven't been a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the age of files in the BITS Peercache*
 -   GP name: *BITS_MaxContentAge*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -527,7 +527,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxdownloadtime"></a>**ADMX_Bits/BITS_MaxDownloadTime**  
+<a href="" id="admx-bits-bits-maxdownloadtime"></a>**ADMX_Bits/BITS_MaxDownloadTime**
 
 <!--SupportedSKUs-->
 
@@ -567,7 +567,7 @@ If you disable or don't configure this policy setting, the default value of 90 d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the maximum BITS job download time*
 -   GP name: *BITS_MaxDownloadTime*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -578,7 +578,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxfilesperjob"></a>**ADMX_Bits/BITS_MaxFilesPerJob**  
+<a href="" id="admx-bits-bits-maxfilesperjob"></a>**ADMX_Bits/BITS_MaxFilesPerJob**
 
 <!--SupportedSKUs-->
 
@@ -617,7 +617,7 @@ If you disable or don't configure this policy setting, BITS will use the default
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the maximum number of files allowed in a BITS job*
 -   GP name: *BITS_MaxFilesPerJob*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -628,7 +628,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxjobspermachine"></a>**ADMX_Bits/BITS_MaxJobsPerMachine**  
+<a href="" id="admx-bits-bits-maxjobspermachine"></a>**ADMX_Bits/BITS_MaxJobsPerMachine**
 
 <!--SupportedSKUs-->
 
@@ -667,7 +667,7 @@ If you disable or don't configure this policy setting, BITS will use the default
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the maximum number of BITS jobs for this computer*
 -   GP name: *BITS_MaxJobsPerMachine*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -678,7 +678,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxjobsperuser"></a>**ADMX_Bits/BITS_MaxJobsPerUser**  
+<a href="" id="admx-bits-bits-maxjobsperuser"></a>**ADMX_Bits/BITS_MaxJobsPerUser**
 
 <!--SupportedSKUs-->
 
@@ -717,7 +717,7 @@ If you disable or don't configure this policy setting, BITS will use the default
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the maximum number of BITS jobs for each user*
 -   GP name: *BITS_MaxJobsPerUser*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
@@ -728,7 +728,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-bits-bits-maxrangesperfile"></a>**ADMX_Bits/BITS_MaxRangesPerFile**  
+<a href="" id="admx-bits-bits-maxrangesperfile"></a>**ADMX_Bits/BITS_MaxRangesPerFile**
 
 <!--SupportedSKUs-->
 
@@ -767,7 +767,7 @@ If you disable or don't configure this policy setting, BITS will limit ranges to
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Limit the maximum number of ranges that can be added to the file in a BITS job*
 -   GP name: *BITS_MaxRangesPerFile*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*

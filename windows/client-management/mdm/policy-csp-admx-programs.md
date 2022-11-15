@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Programs.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/01/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Programs
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Programs policies  
+## ADMX_Programs policies
 
 <dl>
   <dd>
@@ -54,7 +54,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-nodefaultprograms"></a>**ADMX_Programs/NoDefaultPrograms**  
+<a href="" id="admx-programs-nodefaultprograms"></a>**ADMX_Programs/NoDefaultPrograms**
 
 <!--SupportedSKUs-->
 
@@ -93,7 +93,7 @@ This setting doesn't prevent the Default Programs icon from appearing on the Sta
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide "Set Program Access and Computer Defaults" page*
 -   GP name: *NoDefaultPrograms*
 -   GP path: *Control Panel\Programs*
@@ -104,7 +104,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-nogetprograms"></a>**ADMX_Programs/NoGetPrograms**  
+<a href="" id="admx-programs-nogetprograms"></a>**ADMX_Programs/NoGetPrograms**
 
 <!--SupportedSKUs-->
 
@@ -130,7 +130,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from viewing or installing published programs from the network.  
+Prevents users from viewing or installing published programs from the network.
 
 This setting prevents users from accessing the "Get Programs" page from the Programs Control Panel in Category View, Programs and Features in Classic View and the "Install a program from the network" task. The "Get Programs" page lists published programs and provides an easy way to install them.
 
@@ -147,7 +147,7 @@ If this setting is disabled or isn't configured, the "Install a program from the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide "Get Programs" page*
 -   GP name: *NoGetPrograms*
 -   GP path: *Control Panel\Programs*
@@ -158,7 +158,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-noinstalledupdates"></a>**ADMX_Programs/NoInstalledUpdates**  
+<a href="" id="admx-programs-noinstalledupdates"></a>**ADMX_Programs/NoInstalledUpdates**
 
 <!--SupportedSKUs-->
 
@@ -196,7 +196,7 @@ This setting doesn't prevent users from using other tools and methods to install
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide "Installed Updates" page*
 -   GP name: *NoInstalledUpdates*
 -   GP path: *Control Panel\Programs*
@@ -207,7 +207,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-noprogramsandfeatures"></a>**ADMX_Programs/NoProgramsAndFeatures**  
+<a href="" id="admx-programs-noprogramsandfeatures"></a>**ADMX_Programs/NoProgramsAndFeatures**
 
 <!--SupportedSKUs-->
 
@@ -243,7 +243,7 @@ This setting doesn't prevent users from using other tools and methods to view or
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide "Programs and Features" page*
 -   GP name: *NoProgramsAndFeatures*
 -   GP path: *Control Panel\Programs*
@@ -254,7 +254,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-noprogramscpl"></a>**ADMX_Programs/NoProgramsCPL**  
+<a href="" id="admx-programs-noprogramscpl"></a>**ADMX_Programs/NoProgramsCPL**
 
 <!--SupportedSKUs-->
 
@@ -281,7 +281,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 This setting prevents users from using the Programs Control Panel in Category View and Programs and Features in Classic View.
- 
+
 The Programs Control Panel allows users to uninstall, change, and repair programs, enable and disable Windows Features, set program defaults, view installed updates, and purchase software from Windows Marketplace. Programs published or assigned to the user by the system administrator also appear in the Programs Control Panel.
 
 If this setting is disabled or not configured, the Programs Control Panel in Category View and Programs and Features in Classic View will be available to all users.
@@ -294,7 +294,7 @@ This setting doesn't prevent users from using other tools and methods to install
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the Programs Control Panel*
 -   GP name: *NoProgramsCPL*
 -   GP path: *Control Panel\Programs*
@@ -305,7 +305,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-nowindowsfeatures"></a>**ADMX_Programs/NoWindowsFeatures**  
+<a href="" id="admx-programs-nowindowsfeatures"></a>**ADMX_Programs/NoWindowsFeatures**
 
 <!--SupportedSKUs-->
 
@@ -341,7 +341,7 @@ This setting doesn't prevent users from using other tools and methods to configu
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide "Windows Features"*
 -   GP name: *NoWindowsFeatures*
 -   GP path: *Control Panel\Programs*
@@ -352,7 +352,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-programs-nowindowsmarketplace"></a>**ADMX_Programs/NoWindowsMarketplace**  
+<a href="" id="admx-programs-nowindowsmarketplace"></a>**ADMX_Programs/NoWindowsMarketplace**
 
 <!--SupportedSKUs-->
 
@@ -382,7 +382,7 @@ This setting prevents users from access the "Get new programs from Windows Marke
 
 Windows Marketplace allows users to purchase and/or download various programs to their computer for installation.
 
-Enabling this feature doesn't prevent users from navigating to Windows Marketplace using other methods. 
+Enabling this feature doesn't prevent users from navigating to Windows Marketplace using other methods.
 
 If this feature is disabled or isn't configured, the "Get new programs from Windows Marketplace" task link will be available to all users.
 
@@ -393,7 +393,7 @@ If this feature is disabled or isn't configured, the "Get new programs from Wind
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide "Windows Marketplace"*
 -   GP name: *NoWindowsMarketplace*
 -   GP path: *Control Panel\Programs*

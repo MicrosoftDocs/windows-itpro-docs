@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Taskbar.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/26/2020
 ms.reviewer: 
@@ -17,14 +17,14 @@ manager: aaroncz
 <hr/>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--Policies-->
-## ADMX_Taskbar policies  
+## ADMX_Taskbar policies
 
 <dl>
   <dd>
@@ -99,7 +99,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-disablenotificationcenter"></a>**ADMX_Taskbar/DisableNotificationCenter**  
+<a href="" id="admx-taskbar-disablenotificationcenter"></a>**ADMX_Taskbar/DisableNotificationCenter**
 
 <!--SupportedSKUs-->
 
@@ -139,7 +139,7 @@ If you disable or don't configure this policy setting, Notification and Security
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Notifications and Action Center*
 -   GP name: *DisableNotificationCenter*
 -   GP path: *Start Menu and Taskbar*
@@ -150,7 +150,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-enablelegacyballoonnotifications"></a>**ADMX_Taskbar/EnableLegacyBalloonNotifications**  
+<a href="" id="admx-taskbar-enablelegacyballoonnotifications"></a>**ADMX_Taskbar/EnableLegacyBalloonNotifications**
 
 <!--SupportedSKUs-->
 
@@ -180,7 +180,7 @@ This policy disables the functionality that converts balloons to toast notificat
 
 If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
 
-Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications. 
+Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications.
 
 If you disable or don’t configure this policy setting, all notifications will appear as toast notifications.
 
@@ -190,7 +190,7 @@ If you disable or don’t configure this policy setting, all notifications will 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable showing balloon notifications as toasts.*
 -   GP name: *EnableLegacyBalloonNotifications*
 -   GP path: *Start Menu and Taskbar*
@@ -201,7 +201,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-hidescahealth"></a>**ADMX_Taskbar/HideSCAHealth**  
+<a href="" id="admx-taskbar-hidescahealth"></a>**ADMX_Taskbar/HideSCAHealth**
 
 <!--SupportedSKUs-->
 
@@ -236,7 +236,7 @@ If you disable or don't configure this policy setting, the Security and Maintena
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the Security and Maintenance icon*
 -   GP name: *HideSCAHealth*
 -   GP path: *Start Menu and Taskbar*
@@ -247,7 +247,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-hidescanetwork"></a>**ADMX_Taskbar/HideSCANetwork**  
+<a href="" id="admx-taskbar-hidescanetwork"></a>**ADMX_Taskbar/HideSCANetwork**
 
 <!--SupportedSKUs-->
 
@@ -282,7 +282,7 @@ If you disable or don't configure this policy setting, the networking icon is di
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the networking icon*
 -   GP name: *HideSCANetwork*
 -   GP path: *Start Menu and Taskbar*
@@ -293,7 +293,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-hidescapower"></a>**ADMX_Taskbar/HideSCAPower**  
+<a href="" id="admx-taskbar-hidescapower"></a>**ADMX_Taskbar/HideSCAPower**
 
 <!--SupportedSKUs-->
 
@@ -328,7 +328,7 @@ If you disable or don't configure this policy setting, the battery meter is disp
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the battery meter*
 -   GP name: *HideSCAPower*
 -   GP path: *Start Menu and Taskbar*
@@ -339,7 +339,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-hidescavolume"></a>**ADMX_Taskbar/HideSCAVolume**  
+<a href="" id="admx-taskbar-hidescavolume"></a>**ADMX_Taskbar/HideSCAVolume**
 
 <!--SupportedSKUs-->
 
@@ -374,7 +374,7 @@ If you disable or don't configure this policy setting, the volume control icon i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the volume control icon*
 -   GP name: *HideSCAVolume*
 -   GP path: *Start Menu and Taskbar*
@@ -385,7 +385,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-noballoonfeatureadvertisements"></a>**ADMX_Taskbar/NoBalloonFeatureAdvertisements**  
+<a href="" id="admx-taskbar-noballoonfeatureadvertisements"></a>**ADMX_Taskbar/NoBalloonFeatureAdvertisements**
 
 <!--SupportedSKUs-->
 
@@ -420,7 +420,7 @@ If you disable don't configure this policy setting, feature advertisement balloo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off feature advertisement balloon notifications*
 -   GP name: *NoBalloonFeatureAdvertisements*
 -   GP path: *Start Menu and Taskbar*
@@ -431,7 +431,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-nopinningstoretotaskbar"></a>**ADMX_Taskbar/NoPinningStoreToTaskbar**  
+<a href="" id="admx-taskbar-nopinningstoretotaskbar"></a>**ADMX_Taskbar/NoPinningStoreToTaskbar**
 
 <!--SupportedSKUs-->
 
@@ -466,7 +466,7 @@ If you disable or don't configure this policy setting, users can pin the Store a
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow pinning Store app to the Taskbar*
 -   GP name: *NoPinningStoreToTaskbar*
 -   GP path: *Start Menu and Taskbar*
@@ -477,7 +477,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-nopinningtodestinations"></a>**ADMX_Taskbar/NoPinningToDestinations**  
+<a href="" id="admx-taskbar-nopinningtodestinations"></a>**ADMX_Taskbar/NoPinningToDestinations**
 
 <!--SupportedSKUs-->
 
@@ -512,7 +512,7 @@ If you disable or don't configure this policy setting, users can pin files, fold
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow pinning items in Jump Lists*
 -   GP name: *NoPinningToDestinations*
 -   GP path: *Start Menu and Taskbar*
@@ -523,7 +523,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-nopinningtotaskbar"></a>**ADMX_Taskbar/NoPinningToTaskbar**  
+<a href="" id="admx-taskbar-nopinningtotaskbar"></a>**ADMX_Taskbar/NoPinningToTaskbar**
 
 <!--SupportedSKUs-->
 
@@ -558,7 +558,7 @@ If you disable or don't configure this policy setting, users can change the prog
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow pinning programs to the Taskbar*
 -   GP name: *NoPinningToTaskbar*
 -   GP path: *Start Menu and Taskbar*
@@ -570,7 +570,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-noremotedestinations"></a>**ADMX_Taskbar/NoRemoteDestinations**  
+<a href="" id="admx-taskbar-noremotedestinations"></a>**ADMX_Taskbar/NoRemoteDestinations**
 
 <!--SupportedSKUs-->
 
@@ -602,7 +602,7 @@ The Start Menu and Taskbar display Jump Lists off of programs. These menus inclu
 
 If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers aren't tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
 
-If you disable or don't configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.  
+If you disable or don't configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
 
 > [!NOTE]
 > This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
@@ -611,7 +611,7 @@ If you disable or don't configure this policy setting, all files that the user o
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not display or track items in Jump Lists from remote locations*
 -   GP name: *NoRemoteDestinations*
 -   GP path: *Start Menu and Taskbar*
@@ -623,7 +623,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-nosystraysystempromotion"></a>**ADMX_Taskbar/NoSystraySystemPromotion**  
+<a href="" id="admx-taskbar-nosystraysystempromotion"></a>**ADMX_Taskbar/NoSystraySystemPromotion**
 
 <!--SupportedSKUs-->
 
@@ -658,7 +658,7 @@ If you disable or don't configure this policy setting, newly added notification 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off automatic promotion of notification icons to the taskbar*
 -   GP name: *NoSystraySystemPromotion*
 -   GP path: *Start Menu and Taskbar*
@@ -670,7 +670,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-showwindowsstoreappsontaskbar"></a>**ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar**  
+<a href="" id="admx-taskbar-showwindowsstoreappsontaskbar"></a>**ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar**
 
 <!--SupportedSKUs-->
 
@@ -707,7 +707,7 @@ If you don’t configure this policy setting, the default setting for the user�
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Show Windows Store apps on the taskbar*
 -   GP name: *ShowWindowsStoreAppsOnTaskbar*
 -   GP path: *Start Menu and Taskbar*
@@ -720,7 +720,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarlockall"></a>**ADMX_Taskbar/TaskbarLockAll**  
+<a href="" id="admx-taskbar-taskbarlockall"></a>**ADMX_Taskbar/TaskbarLockAll**
 
 <!--SupportedSKUs-->
 
@@ -755,7 +755,7 @@ If you disable or don't configure this policy setting, the user will be able to 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Lock all taskbar settings*
 -   GP name: *TaskbarLockAll*
 -   GP path: *Start Menu and Taskbar*
@@ -768,7 +768,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoaddremovetoolbar"></a>**ADMX_Taskbar/TaskbarNoAddRemoveToolbar**  
+<a href="" id="admx-taskbar-taskbarnoaddremovetoolbar"></a>**ADMX_Taskbar/TaskbarNoAddRemoveToolbar**
 
 <!--SupportedSKUs-->
 
@@ -802,7 +802,7 @@ If you disable or don't configure this policy setting, the users and application
 
 <!--/Description-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from adding or removing toolbars*
 -   GP name: *TaskbarNoAddRemoveToolbar*
 -   GP path: *Start Menu and Taskbar*
@@ -815,7 +815,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnodragtoolbar"></a>**ADMX_Taskbar/TaskbarNoDragToolbar**  
+<a href="" id="admx-taskbar-taskbarnodragtoolbar"></a>**ADMX_Taskbar/TaskbarNoDragToolbar**
 
 <!--SupportedSKUs-->
 
@@ -849,7 +849,7 @@ If you disable or don't configure this policy setting, users are able to rearran
 
 <!--/Description-->
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from rearranging toolbars*
 -   GP name: *TaskbarNoDragToolbar*
 -   GP path: *Start Menu and Taskbar*
@@ -861,7 +861,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnomultimon"></a>**ADMX_Taskbar/TaskbarNoMultimon**  
+<a href="" id="admx-taskbar-taskbarnomultimon"></a>**ADMX_Taskbar/TaskbarNoMultimon**
 
 <!--SupportedSKUs-->
 
@@ -896,7 +896,7 @@ If you disable or don't configure this policy setting, users can show taskbars o
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow taskbars on more than one display*
 -   GP name: *TaskbarNoMultimon*
 -   GP path: *Start Menu and Taskbar*
@@ -909,7 +909,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnonotification"></a>**ADMX_Taskbar/TaskbarNoNotification**  
+<a href="" id="admx-taskbar-taskbarnonotification"></a>**ADMX_Taskbar/TaskbarNoNotification**
 
 <!--SupportedSKUs-->
 
@@ -944,7 +944,7 @@ If you disable or don't configure this policy setting, notification balloons are
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off all balloon notifications*
 -   GP name: *TaskbarNoNotification*
 -   GP path: *Start Menu and Taskbar*
@@ -955,7 +955,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnopinnedlist"></a>**ADMX_Taskbar/TaskbarNoPinnedList**  
+<a href="" id="admx-taskbar-taskbarnopinnedlist"></a>**ADMX_Taskbar/TaskbarNoPinnedList**
 
 <!--SupportedSKUs-->
 
@@ -990,7 +990,7 @@ If you disable or don't configure this policy setting, users can pin programs so
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove pinned programs from the Taskbar*
 -   GP name: *TaskbarNoPinnedList*
 -   GP path: *Start Menu and Taskbar*
@@ -1002,7 +1002,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoredock"></a>**ADMX_Taskbar/TaskbarNoRedock**  
+<a href="" id="admx-taskbar-taskbarnoredock"></a>**ADMX_Taskbar/TaskbarNoRedock**
 
 <!--SupportedSKUs-->
 
@@ -1038,7 +1038,7 @@ If you disable or don't configure this policy setting, users are able to drag th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from moving taskbar to another screen dock location*
 -   GP name: *TaskbarNoRedock*
 -   GP path: *Start Menu and Taskbar*
@@ -1050,7 +1050,7 @@ ADMX Info:
 
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoresize"></a>**ADMX_Taskbar/TaskbarNoResize**  
+<a href="" id="admx-taskbar-taskbarnoresize"></a>**ADMX_Taskbar/TaskbarNoResize**
 
 <!--SupportedSKUs-->
 
@@ -1085,7 +1085,7 @@ If you disable or don't configure this policy setting, users are able to resize 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from resizing the taskbar*
 -   GP name: *TaskbarNoResize*
 -   GP path: *Start Menu and Taskbar*
@@ -1097,7 +1097,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-taskbar-taskbarnothumbnail"></a>**ADMX_Taskbar/TaskbarNoThumbnail**  
+<a href="" id="admx-taskbar-taskbarnothumbnail"></a>**ADMX_Taskbar/TaskbarNoThumbnail**
 
 <!--SupportedSKUs-->
 
@@ -1132,7 +1132,7 @@ If you disable or don't configure this policy setting, the taskbar thumbnails ar
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off taskbar thumbnails*
 -   GP name: *TaskbarNoThumbnail*
 -   GP path: *Start Menu and Taskbar*

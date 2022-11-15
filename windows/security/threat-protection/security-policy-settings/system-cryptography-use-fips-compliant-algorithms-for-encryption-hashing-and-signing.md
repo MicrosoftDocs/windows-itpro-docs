@@ -3,19 +3,19 @@ title: System cryptography Use FIPS compliant algorithms for encryption, hashing
 description: Best practices, security considerations, and more for the policy setting System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing
 ms.assetid: 83988865-dc0f-45eb-90d1-ee33495eb045
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/16/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing

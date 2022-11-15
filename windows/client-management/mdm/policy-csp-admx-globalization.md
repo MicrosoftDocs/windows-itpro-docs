@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_Globalization.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/14/2020
 ms.reviewer: 
@@ -17,13 +17,13 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_Globalization policies  
+## ADMX_Globalization policies
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <dl>
@@ -105,7 +105,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-blockuserinputmethodsforsignin"></a>**ADMX_Globalization/BlockUserInputMethodsForSignIn**  
+<a href="" id="admx-globalization-blockuserinputmethodsforsignin"></a>**ADMX_Globalization/BlockUserInputMethodsForSignIn**
 
 <!--SupportedSKUs-->
 
@@ -143,7 +143,7 @@ If the policy is disabled or not configured, then the user will be able to use i
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow copying of user input methods to the system account for sign-in*
 -   GP name: *BlockUserInputMethodsForSignIn*
 -   GP path: *System\Locale Services*
@@ -154,7 +154,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-customlocalesnoselect-1"></a>**ADMX_Globalization/CustomLocalesNoSelect_1**  
+<a href="" id="admx-globalization-customlocalesnoselect-1"></a>**ADMX_Globalization/CustomLocalesNoSelect_1**
 
 <!--SupportedSKUs-->
 
@@ -197,7 +197,7 @@ To set this policy setting on a per-user basis, make sure that you don't configu
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow selection of Custom Locales*
 -   GP name: *CustomLocalesNoSelect_1*
 -   GP path: *System\Locale Services*
@@ -208,7 +208,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-customlocalesnoselect-2"></a>**ADMX_Globalization/CustomLocalesNoSelect_2**  
+<a href="" id="admx-globalization-customlocalesnoselect-2"></a>**ADMX_Globalization/CustomLocalesNoSelect_2**
 
 <!--SupportedSKUs-->
 
@@ -251,7 +251,7 @@ To set this policy setting on a per-user basis, make sure that you don't configu
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow selection of Custom Locales*
 -   GP name: *CustomLocalesNoSelect_2*
 -   GP path: *System\Locale Services*
@@ -262,7 +262,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-hideadminoptions"></a>**ADMX_Globalization/HideAdminOptions**  
+<a href="" id="admx-globalization-hideadminoptions"></a>**ADMX_Globalization/HideAdminOptions**
 
 <!--SupportedSKUs-->
 
@@ -305,7 +305,7 @@ If you disable or don't configure this policy setting, the user can see the Admi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Regional and Language Options administrative options*
 -   GP name: *HideAdminOptions*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -316,7 +316,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-hidecurrentlocation"></a>**ADMX_Globalization/HideCurrentLocation**  
+<a href="" id="admx-globalization-hidecurrentlocation"></a>**ADMX_Globalization/HideCurrentLocation**
 
 <!--SupportedSKUs-->
 
@@ -356,7 +356,7 @@ If you disable or don't configure this policy setting, the user sees the option 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the geographic location option*
 -   GP name: *HideCurrentLocation*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -367,7 +367,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-hidelanguageselection"></a>**ADMX_Globalization/HideLanguageSelection**  
+<a href="" id="admx-globalization-hidelanguageselection"></a>**ADMX_Globalization/HideLanguageSelection**
 
 <!--SupportedSKUs-->
 
@@ -406,7 +406,7 @@ If you enable this policy setting, the user doesn't see the option for changing 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide the select language group options*
 -   GP name: *HideLanguageSelection*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -417,7 +417,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-hidelocaleselectandcustomize"></a>**ADMX_Globalization/HideLocaleSelectAndCustomize**  
+<a href="" id="admx-globalization-hidelocaleselectandcustomize"></a>**ADMX_Globalization/HideLocaleSelectAndCustomize**
 
 <!--SupportedSKUs-->
 
@@ -454,7 +454,7 @@ If you disable or don't configure this policy setting, the user sees the regiona
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide user locale selection and customization options*
 -   GP name: *HideLocaleSelectAndCustomize*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -465,7 +465,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-implicitdatacollectionoff-1"></a>**ADMX_Globalization/ImplicitDataCollectionOff_1**  
+<a href="" id="admx-globalization-implicitdatacollectionoff-1"></a>**ADMX_Globalization/ImplicitDataCollectionOff_1**
 
 <!--SupportedSKUs-->
 
@@ -514,7 +514,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off automatic learning*
 -   GP name: *ImplicitDataCollectionOff_1*
 -   GP path: *Control Panel\Regional and Language Options\Handwriting personalization*
@@ -525,7 +525,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-implicitdatacollectionoff-2"></a>**ADMX_Globalization/ImplicitDataCollectionOff_2**  
+<a href="" id="admx-globalization-implicitdatacollectionoff-2"></a>**ADMX_Globalization/ImplicitDataCollectionOff_2**
 
 <!--SupportedSKUs-->
 
@@ -568,13 +568,13 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 > [!NOTE]
 > The amount of stored ink is limited to 50 MB and the amount of text information to approximately 5 MB. When these limits are reached and new data is collected, old data is deleted to make room for more recent data.
-> 
+>
 > Handwriting personalization works only for Microsoft handwriting recognizers, and not with third-party recognizers.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off automatic learning*
 -   GP name: *ImplicitDataCollectionOff_2*
 -   GP path: *Control Panel\Regional and Language Options\Handwriting personalization*
@@ -585,7 +585,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-localesystemrestrict"></a>**ADMX_Globalization/LocaleSystemRestrict**  
+<a href="" id="admx-globalization-localesystemrestrict"></a>**ADMX_Globalization/LocaleSystemRestrict**
 
 <!--SupportedSKUs-->
 
@@ -622,7 +622,7 @@ If you disable or don't configure this policy setting, administrators can select
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict system locales*
 -   GP name: *LocaleSystemRestrict*
 -   GP path: *System\Locale Services*
@@ -633,7 +633,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-localeuserrestrict-1"></a>**ADMX_Globalization/LocaleUserRestrict_1**  
+<a href="" id="admx-globalization-localeuserrestrict-1"></a>**ADMX_Globalization/LocaleUserRestrict_1**
 
 <!--SupportedSKUs-->
 
@@ -672,7 +672,7 @@ If you disable or don't configure this policy setting, users can select any loca
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict user locales*
 -   GP name: *LocaleUserRestrict_1*
 -   GP path: *System\Locale Services*
@@ -683,7 +683,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-localeuserrestrict-2"></a>**ADMX_Globalization/LocaleUserRestrict_2**  
+<a href="" id="admx-globalization-localeuserrestrict-2"></a>**ADMX_Globalization/LocaleUserRestrict_2**
 
 <!--SupportedSKUs-->
 
@@ -724,7 +724,7 @@ If this policy setting is enabled at the computer level, it can't be disabled by
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict user locales*
 -   GP name: *LocaleUserRestrict_2*
 -   GP path: *System\Locale Services*
@@ -735,7 +735,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-lockmachineuilanguage"></a>**ADMX_Globalization/LockMachineUILanguage**  
+<a href="" id="admx-globalization-lockmachineuilanguage"></a>**ADMX_Globalization/LockMachineUILanguage**
 
 <!--SupportedSKUs-->
 
@@ -772,7 +772,7 @@ If you disable or don't configure this policy setting, the user can specify whic
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restricts the UI language Windows uses for all logged users*
 -   GP name: *LockMachineUILanguage*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -783,7 +783,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-lockuseruilanguage"></a>**ADMX_Globalization/LockUserUILanguage**  
+<a href="" id="admx-globalization-lockuseruilanguage"></a>**ADMX_Globalization/LockUserUILanguage**
 
 <!--SupportedSKUs-->
 
@@ -822,7 +822,7 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restricts the UI languages Windows should use for the selected user*
 -   GP name: *LockUserUILanguage*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -833,7 +833,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-preventgeoidchange-1"></a>**ADMX_Globalization/PreventGeoIdChange_1**  
+<a href="" id="admx-globalization-preventgeoidchange-1"></a>**ADMX_Globalization/PreventGeoIdChange_1**
 
 <!--SupportedSKUs-->
 
@@ -872,7 +872,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow changing of geographic location*
 -   GP name: *PreventGeoIdChange_1*
 -   GP path: *System\Locale Services*
@@ -883,7 +883,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-preventgeoidchange-2"></a>**ADMX_Globalization/PreventGeoIdChange_2**  
+<a href="" id="admx-globalization-preventgeoidchange-2"></a>**ADMX_Globalization/PreventGeoIdChange_2**
 
 <!--SupportedSKUs-->
 
@@ -922,7 +922,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow changing of geographic location*
 -   GP name: *PreventGeoIdChange_2*
 -   GP path: *System\Locale Services*
@@ -933,7 +933,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-preventuseroverrides-1"></a>**ADMX_Globalization/PreventUserOverrides_1**  
+<a href="" id="admx-globalization-preventuseroverrides-1"></a>**ADMX_Globalization/PreventUserOverrides_1**
 
 <!--SupportedSKUs-->
 
@@ -976,7 +976,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow user override of locale settings*
 -   GP name: *PreventUserOverrides_1*
 -   GP path: *System\Locale Services*
@@ -987,7 +987,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-preventuseroverrides-2"></a>**ADMX_Globalization/PreventUserOverrides_2**  
+<a href="" id="admx-globalization-preventuseroverrides-2"></a>**ADMX_Globalization/PreventUserOverrides_2**
 
 <!--SupportedSKUs-->
 
@@ -1030,7 +1030,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disallow user override of locale settings*
 -   GP name: *PreventUserOverrides_2*
 -   GP path: *System\Locale Services*
@@ -1041,7 +1041,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-restrictuilangselect"></a>**ADMX_Globalization/RestrictUILangSelect**  
+<a href="" id="admx-globalization-restrictuilangselect"></a>**ADMX_Globalization/RestrictUILangSelect**
 
 <!--SupportedSKUs-->
 
@@ -1078,7 +1078,7 @@ If you disable or don't configure this policy setting, the logged-on user can ac
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict selection of Windows menus and dialogs language*
 -   GP name: *RestrictUILangSelect*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -1089,7 +1089,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-turnoffautocorrectmisspelledwords"></a>**ADMX_Globalization/TurnOffAutocorrectMisspelledWords**  
+<a href="" id="admx-globalization-turnoffautocorrectmisspelledwords"></a>**ADMX_Globalization/TurnOffAutocorrectMisspelledWords**
 
 <!--SupportedSKUs-->
 
@@ -1127,7 +1127,7 @@ The availability and function of this setting is dependent on supported language
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off autocorrect misspelled words*
 -   GP name: *TurnOffAutocorrectMisspelledWords*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -1138,7 +1138,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-turnoffhighlightmisspelledwords"></a>**ADMX_Globalization/TurnOffHighlightMisspelledWords**  
+<a href="" id="admx-globalization-turnoffhighlightmisspelledwords"></a>**ADMX_Globalization/TurnOffHighlightMisspelledWords**
 
 <!--SupportedSKUs-->
 
@@ -1177,7 +1177,7 @@ The availability and function of this setting is dependent on supported language
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off highlight misspelled words*
 -   GP name: *TurnOffHighlightMisspelledWords*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -1188,7 +1188,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-turnoffinsertspace"></a>**ADMX_Globalization/TurnOffInsertSpace**  
+<a href="" id="admx-globalization-turnoffinsertspace"></a>**ADMX_Globalization/TurnOffInsertSpace**
 
 <!--SupportedSKUs-->
 
@@ -1226,7 +1226,7 @@ The availability and function of this setting is dependent on supported language
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off insert a space after selecting a text prediction*
 -   GP name: *TurnOffInsertSpace*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -1237,7 +1237,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-turnoffoffertextpredictions"></a>**ADMX_Globalization/TurnOffOfferTextPredictions**  
+<a href="" id="admx-globalization-turnoffoffertextpredictions"></a>**ADMX_Globalization/TurnOffOfferTextPredictions**
 
 <!--SupportedSKUs-->
 
@@ -1276,7 +1276,7 @@ The availability and function of this setting is dependent on supported language
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off offer text predictions as I type*
 -   GP name: *TurnOffOfferTextPredictions*
 -   GP path: *Control Panel\Regional and Language Options*
@@ -1287,7 +1287,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-globalization-y2k"></a>**ADMX_Globalization/Y2K**  
+<a href="" id="admx-globalization-y2k"></a>**ADMX_Globalization/Y2K**
 
 <!--SupportedSKUs-->
 
@@ -1326,7 +1326,7 @@ If you disable or don't configure this policy setting, Windows doesn't interpret
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Century interpretation for Year 2000*
 -   GP name: *Y2K*
 -   GP path: *System*

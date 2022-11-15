@@ -3,12 +3,13 @@ title: Update Compliance - Safeguard Holds report
 ms.reviewer: 
 manager: aczechowski
 description: Learn how the Safeguard Holds report provides information about safeguard holds in your population.
-ms.prod: w10
+ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # Safeguard Holds
@@ -17,6 +18,9 @@ ms.custom: seo-marvel-apr2020
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 The Safeguard Holds report provides information about devices in your population that are affected by a [safeguard hold](/windows/deployment/update/safeguard-holds). 
 

@@ -4,7 +4,6 @@ description: Microsoft Store for Business has thousands of apps from many differ
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

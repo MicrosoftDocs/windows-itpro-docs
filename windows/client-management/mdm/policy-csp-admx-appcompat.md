@@ -3,8 +3,8 @@ title: Policy CSP - ADMX_AppCompat
 description: Policy CSP - ADMX_AppCompat
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 08/20/2020
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_AppCompat
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## Policy CSP - ADMX_AppCompat  
+## Policy CSP - ADMX_AppCompat
 
 <dl>
   <dd>
@@ -69,7 +69,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatprevent16bitmach"></a>**ADMX_AppCompat/AppCompatPrevent16BitMach**  
+<a href="" id="admx-appcompat-appcompatprevent16bitmach"></a>**ADMX_AppCompat/AppCompatPrevent16BitMach**
 
 <!--SupportedSKUs-->
 
@@ -111,7 +111,7 @@ If the status is set to Not Configured, the OS falls back on a local policy set 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent access to 16-bit applications*
 -   GP name: *AppCompatPrevent16BitMach*
 -   GP path: *Windows Components/Application Compatibility*
@@ -123,7 +123,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatremoveprogramcompatproppage"></a>**ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage**  
+<a href="" id="admx-appcompat-appcompatremoveprogramcompatproppage"></a>**ADMX_AppCompat/AppCompatRemoveProgramCompatPropPage**
 
 <!--SupportedSKUs-->
 
@@ -159,7 +159,7 @@ Enabling this policy setting removes the property page from the context-menus, b
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Program Compatibility Property Page*
 -   GP name: *AppCompatRemoveProgramCompatPropPage*
 -   GP path: *Windows Components/Application Compatibility*
@@ -171,7 +171,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffapplicationimpacttelemetry"></a>**ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry**  
+<a href="" id="admx-appcompat-appcompatturnoffapplicationimpacttelemetry"></a>**ADMX_AppCompat/AppCompatTurnOffApplicationImpactTelemetry**
 
 <!--SupportedSKUs-->
 
@@ -211,7 +211,7 @@ Disabling telemetry will take effect on any newly launched applications. To ensu
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Application Telemetry*
 -   GP name: *AppCompatTurnOffApplicationImpactTelemetry*
 -   GP path: *Windows Components/Application Compatibility*
@@ -223,7 +223,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffswitchback"></a>**ADMX_AppCompat/AppCompatTurnOffSwitchBack**  
+<a href="" id="admx-appcompat-appcompatturnoffswitchback"></a>**ADMX_AppCompat/AppCompatTurnOffSwitchBack**
 
 <!--SupportedSKUs-->
 
@@ -264,7 +264,7 @@ Reboot the system after changing the setting to ensure that your system accurate
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off SwitchBack Compatibility Engine*
 -   GP name: *AppCompatTurnOffSwitchBack*
 -   GP path: *Windows Components/Application Compatibility*
@@ -276,7 +276,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffengine"></a>**ADMX_AppCompat/AppCompatTurnOffEngine**  
+<a href="" id="admx-appcompat-appcompatturnoffengine"></a>**ADMX_AppCompat/AppCompatTurnOffEngine**
 
 <!--SupportedSKUs-->
 |Edition|Windows 10|Windows 11|
@@ -318,7 +318,7 @@ This option is useful to server administrators who require faster performance an
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Application Compatibility Engine*
 -   GP name: *AppCompatTurnOffEngine*
 -   GP path: *Windows Components/Application Compatibility*
@@ -330,7 +330,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_1"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1**  
+<a href="" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_1"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_1**
 
 <!--SupportedSKUs-->
 
@@ -362,7 +362,7 @@ This policy setting exists only for backward compatibility, and isn't valid for 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Program Compatibility Assistant*
 -   GP name: *AppCompatTurnOffProgramCompatibilityAssistant_1*
 -   GP path: *Windows Components/Application Compatibility*
@@ -374,7 +374,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_2"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2**  
+<a href="" id="admx-appcompat-appcompatturnoffprogramcompatibilityassistant_2"></a>**ADMX_AppCompat/AppCompatTurnOffProgramCompatibilityAssistant_2**
 
 <!--SupportedSKUs-->
 
@@ -404,7 +404,7 @@ This policy setting controls the state of the Program Compatibility Assistant (P
 
 If you enable this policy setting, the PCA will be turned off. The user won't be presented with solutions to known compatibility issues when running applications. Turning off the PCA can be useful for system administrators who require better performance and are already aware of application compatibility issues.
 
-If you disable or don't configure this policy setting, the PCA will be turned on. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.  
+If you disable or don't configure this policy setting, the PCA will be turned on. To configure the diagnostic settings for the PCA, go to System->Troubleshooting and Diagnostics->Application Compatibility Diagnostics.
 
 > [!NOTE]
 > The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
@@ -413,7 +413,7 @@ If you disable or don't configure this policy setting, the PCA will be turned on
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Program Compatibility Assistant*
 -   GP name: *AppCompatTurnOffProgramCompatibilityAssistant_2*
 -   GP path: *Windows Components/Application Compatibility*
@@ -425,7 +425,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffuseractionrecord"></a>**ADMX_AppCompat/AppCompatTurnOffUserActionRecord**  
+<a href="" id="admx-appcompat-appcompatturnoffuseractionrecord"></a>**ADMX_AppCompat/AppCompatTurnOffUserActionRecord**
 
 <!--SupportedSKUs-->
 
@@ -463,7 +463,7 @@ If you disable or don't configure this policy setting, Steps Recorder will be en
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Steps Recorder*
 -   GP name: *AppCompatTurnOffUserActionRecord*
 -   GP path: *Windows Components/Application Compatibility*
@@ -475,7 +475,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appcompat-appcompatturnoffprograminventory"></a>**ADMX_AppCompat/AppCompatTurnOffProgramInventory**  
+<a href="" id="admx-appcompat-appcompatturnoffprograminventory"></a>**ADMX_AppCompat/AppCompatTurnOffProgramInventory**
 
 <!--SupportedSKUs-->
 
@@ -501,7 +501,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the state of the Inventory Collector. 
+This policy setting controls the state of the Inventory Collector.
 
 The Inventory Collector inventories applications, files, devices, and drivers on the system and sends the information to Microsoft. This information is used to help diagnose compatibility problems.
 
@@ -516,7 +516,7 @@ If you disable or don't configure this policy setting, the Inventory Collector w
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Inventory Collector*
 -   GP name: *AppCompatTurnOffProgramInventory*
 -   GP path: *Windows Components/Application Compatibility*

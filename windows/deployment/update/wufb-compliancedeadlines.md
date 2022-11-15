@@ -2,13 +2,14 @@
 title: Enforce compliance deadlines with policies in Windows Update for Business (Windows 10)
 description: This article contains information on how to enforce compliance deadlines using Windows Update for Business.
 ms.custom: seo-marvel-apr2020
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.reviewer:
+ms.reviewer: 
 manager: dougeby
 ms.topic: article
+ms.technology: itpro-updates
 ---
 # Enforcing compliance deadlines for updates
 

@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_EnhancedStorage.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/23/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_EnhancedStorage
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_EnhancedStorage policies  
+## ADMX_EnhancedStorage policies
 
 <dl>
   <dd>
@@ -51,7 +51,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-enhancedstorage-approvedenstordevices"></a>**ADMX_EnhancedStorage/ApprovedEnStorDevices**  
+<a href="" id="admx-enhancedstorage-approvedenstordevices"></a>**ADMX_EnhancedStorage/ApprovedEnStorDevices**
 
 <!--SupportedSKUs-->
 
@@ -86,7 +86,7 @@ If you disable or don't configure this policy setting, all Enhanced Storage devi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure list of Enhanced Storage devices usable on your computer*
 -   GP name: *ApprovedEnStorDevices*
 -   GP path: *System\Enhanced Storage Access*
@@ -97,7 +97,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-enhancedstorage-approvedsilos"></a>**ADMX_EnhancedStorage/ApprovedSilos**  
+<a href="" id="admx-enhancedstorage-approvedsilos"></a>**ADMX_EnhancedStorage/ApprovedSilos**
 
 <!--SupportedSKUs-->
 
@@ -132,7 +132,7 @@ If you disable or don't configure this policy setting, all IEEE 1667 silos on En
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure list of IEEE 1667 silos usable on your computer*
 -   GP name: *ApprovedSilos*
 -   GP path: *System\Enhanced Storage Access*
@@ -143,7 +143,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-enhancedstorage-disablepasswordauthentication"></a>**ADMX_EnhancedStorage/DisablePasswordAuthentication**  
+<a href="" id="admx-enhancedstorage-disablepasswordauthentication"></a>**ADMX_EnhancedStorage/DisablePasswordAuthentication**
 
 <!--SupportedSKUs-->
 
@@ -178,7 +178,7 @@ If you disable or don't configure this policy setting, a password can be used to
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow password authentication of Enhanced Storage devices*
 -   GP name: *DisablePasswordAuthentication*
 -   GP path: *System\Enhanced Storage Access*
@@ -189,7 +189,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-enhancedstorage-disallowlegacydiskdevices"></a>**ADMX_EnhancedStorage/DisallowLegacyDiskDevices**  
+<a href="" id="admx-enhancedstorage-disallowlegacydiskdevices"></a>**ADMX_EnhancedStorage/DisallowLegacyDiskDevices**
 
 <!--SupportedSKUs-->
 
@@ -224,7 +224,7 @@ If you disable or don't configure this policy setting, non-Enhanced Storage remo
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not allow non-Enhanced Storage removable devices*
 -   GP name: *DisallowLegacyDiskDevices*
 -   GP path: *System\Enhanced Storage Access*
@@ -235,7 +235,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-enhancedstorage-lockdeviceonmachinelock"></a>**ADMX_EnhancedStorage/LockDeviceOnMachineLock**  
+<a href="" id="admx-enhancedstorage-lockdeviceonmachinelock"></a>**ADMX_EnhancedStorage/LockDeviceOnMachineLock**
 
 <!--SupportedSKUs-->
 
@@ -273,7 +273,7 @@ If you disable or don't configure this policy setting, the Enhanced Storage devi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Lock Enhanced Storage when the computer is locked*
 -   GP name: *LockDeviceOnMachineLock*
 -   GP path: *System\Enhanced Storage Access*
@@ -284,7 +284,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-enhancedstorage-roothubconnectedenstordevices"></a>**ADMX_EnhancedStorage/RootHubConnectedEnStorDevices**  
+<a href="" id="admx-enhancedstorage-roothubconnectedenstordevices"></a>**ADMX_EnhancedStorage/RootHubConnectedEnStorDevices**
 
 <!--SupportedSKUs-->
 
@@ -319,7 +319,7 @@ If you disable or don't configure this policy setting, USB Enhanced Storage devi
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only USB root hub connected Enhanced Storage devices*
 -   GP name: *RootHubConnectedEnStorDevices*
 -   GP path: *System\Enhanced Storage Access*

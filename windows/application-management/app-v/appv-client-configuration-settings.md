@@ -2,12 +2,13 @@
 title: About Client Configuration Settings (Windows 10/11)
 description: Learn about the App-V client configuration settings and how to use Windows PowerShell to modify the client configuration settings.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # About Client Configuration Settings
 

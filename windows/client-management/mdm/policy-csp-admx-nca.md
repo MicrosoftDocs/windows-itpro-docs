@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_nca
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/14/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_nca
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_nca policies  
+## ADMX_nca policies
 
 <dl>
   <dd>
@@ -56,7 +56,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-corporateresources"></a>**ADMX_nca/CorporateResources**  
+<a href="" id="admx-nca-corporateresources"></a>**ADMX_nca/CorporateResources**
 
 <!--SupportedSKUs-->
 
@@ -82,11 +82,11 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies resources on your intranet that are normally accessible to DirectAccess clients. Each entry is a string that identifies the type of resource and the location of the resource. 
+This policy setting specifies resources on your intranet that are normally accessible to DirectAccess clients. Each entry is a string that identifies the type of resource and the location of the resource.
 
-Each string can be one of the following types:  
+Each string can be one of the following types:
 
-- A DNS name or IPv6 address that NCA pings. The syntax is “PING:” followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1. 
+- A DNS name or IPv6 address that NCA pings. The syntax is “PING:” followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1.
 
 > [!NOTE]
 > We recommend that you use FQDNs instead of IPv6 addresses wherever possible.
@@ -102,7 +102,7 @@ You must configure this setting to have complete NCA functionality.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Corporate Resources*
 -   GP name: *CorporateResources*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -113,7 +113,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-customcommands"></a>**ADMX_nca/CustomCommands**  
+<a href="" id="admx-nca-customcommands"></a>**ADMX_nca/CustomCommands**
 
 <!--SupportedSKUs-->
 
@@ -145,7 +145,7 @@ This policy setting specifies commands configured by the administrator for custo
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Custom Commands*
 -   GP name: *CustomCommands*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -156,7 +156,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-dtes"></a>**ADMX_nca/DTEs**  
+<a href="" id="admx-nca-dtes"></a>**ADMX_nca/DTEs**
 
 <!--SupportedSKUs-->
 
@@ -182,7 +182,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the IPv6 addresses of the endpoints of the Internet Protocol security (IPsec) tunnels that enable DirectAccess. NCA attempts to access the resources that are specified in the Corporate Resources setting through these configured tunnel endpoints. 
+This policy setting specifies the IPv6 addresses of the endpoints of the Internet Protocol security (IPsec) tunnels that enable DirectAccess. NCA attempts to access the resources that are specified in the Corporate Resources setting through these configured tunnel endpoints.
 
 By default, NCA uses the same DirectAccess server that the DirectAccess client computer connection is using. In default configurations of DirectAccess, there are typically two IPsec tunnel endpoints: one for the infrastructure tunnel and one for the intranet tunnel. You should configure one endpoint for each tunnel.
 
@@ -194,7 +194,7 @@ You must configure this setting to have complete NCA functionality.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IPsec Tunnel Endpoints*
 -   GP name: *DTEs*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -205,7 +205,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-friendlyname"></a>**ADMX_nca/FriendlyName**  
+<a href="" id="admx-nca-friendlyname"></a>**ADMX_nca/FriendlyName**
 
 <!--SupportedSKUs-->
 
@@ -239,7 +239,7 @@ If this setting isn't configured, the string that appears for DirectAccess conne
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Friendly Name*
 -   GP name: *FriendlyName*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -250,7 +250,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-localnameson"></a>**ADMX_nca/LocalNamesOn**  
+<a href="" id="admx-nca-localnameson"></a>**ADMX_nca/LocalNamesOn**
 
 <!--SupportedSKUs-->
 
@@ -293,7 +293,7 @@ If this setting isn't configured, users don't have Connect or Disconnect options
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prefer Local Names Allowed*
 -   GP name: *LocalNamesOn*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -304,7 +304,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-passivemode"></a>**ADMX_nca/PassiveMode**  
+<a href="" id="admx-nca-passivemode"></a>**ADMX_nca/PassiveMode**
 
 <!--SupportedSKUs-->
 
@@ -337,7 +337,7 @@ Set this policy setting to Disabled to keep NCA probing actively all the time. I
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *DirectAccess Passive Mode*
 -   GP name: *PassiveMode*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -348,7 +348,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-showui"></a>**ADMX_nca/ShowUI**  
+<a href="" id="admx-nca-showui"></a>**ADMX_nca/ShowUI**
 
 <!--SupportedSKUs-->
 
@@ -376,7 +376,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether an entry for DirectAccess connectivity appears when the user clicks the Networking notification area icon.
 
-Set this policy setting to Disabled to prevent user confusion when you're just using DirectAccess to remotely manage DirectAccess client computers from your intranet and not providing seamless intranet access. 
+Set this policy setting to Disabled to prevent user confusion when you're just using DirectAccess to remotely manage DirectAccess client computers from your intranet and not providing seamless intranet access.
 
 If this setting isn't configured, the entry for DirectAccess connectivity appears.
 
@@ -384,7 +384,7 @@ If this setting isn't configured, the entry for DirectAccess connectivity appear
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *User Interface*
 -   GP name: *ShowUI*
 -   GP path: *Network\DirectAccess Client Experience Settings*
@@ -395,7 +395,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-nca-supportemail"></a>**ADMX_nca/SupportEmail**  
+<a href="" id="admx-nca-supportemail"></a>**ADMX_nca/SupportEmail**
 
 <!--SupportedSKUs-->
 
@@ -421,7 +421,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the e-mail address to be used when sending the log files that are generated by NCA to the network administrator. 
+This policy setting specifies the e-mail address to be used when sending the log files that are generated by NCA to the network administrator.
 
 When the user sends the log files to the Administrator, NCA uses the default e-mail client to open a new message with the support email address in the To: field of the message, then attaches the generated log files as a .html file. The user can review the message and add additional information before sending the message.
 
@@ -429,7 +429,7 @@ When the user sends the log files to the Administrator, NCA uses the default e-m
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support Email Address*
 -   GP name: *SupportEmail*
 -   GP path: *Network\DirectAccess Client Experience Settings*

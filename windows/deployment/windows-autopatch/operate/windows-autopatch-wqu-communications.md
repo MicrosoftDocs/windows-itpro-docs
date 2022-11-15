@@ -1,9 +1,9 @@
 ---
-title: Windows quality update communications
-description:  This article explains Windows quality update communications
+title: Windows quality and feature update communications
+description: This article explains Windows quality update communications
 ms.date: 05/30/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -14,7 +14,7 @@ msreviewer: hathind
 
 # Windows quality update communications
 
-There are three categories of communication that are sent out during a Windows quality update:
+There are three categories of communication that are sent out during a Windows quality and feature update:
 
 - [Standard communications](#standard-communications)
 - [Communications during release](#communications-during-release)
@@ -22,7 +22,7 @@ There are three categories of communication that are sent out during a Windows q
 
 Communications are posted to Message center, Service health dashboard, and the Windows Autopatch messages section of the Microsoft Endpoint Manager admin center as appropriate for the type of communication.  
 
-:::image type="content" source="../media/update-communications.png" alt-text="Update communications timeline":::
+:::image type="content" source="../media/update-communications.png" alt-text="Update communications timeline" lightbox="../media/update-communications.png":::
 
 ## Standard communications
 
@@ -34,7 +34,7 @@ Communications are posted to Message center, Service health dashboard, and the W
 
 ## Communications during release
 
-The most common type of communication during a release is a customer advisory. Customer advisories are posted to both Message center and the Messages blade of the Microsoft Endpoint Manager portal shortly after Autopatch becomes aware of the new information.
+The most common type of communication during a release is a customer advisory. Customer advisories are posted to both Message center and the Messages blade of the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) shortly after Autopatch becomes aware of the new information.
 
 There are some circumstances where Autopatch will need to change the release schedule based on new information.
 

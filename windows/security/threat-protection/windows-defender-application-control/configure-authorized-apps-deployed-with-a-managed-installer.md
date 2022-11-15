@@ -3,7 +3,7 @@ title: Allow apps deployed with a WDAC managed installer (Windows)
 description: Explains how to configure a custom Managed Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
-ms.author: dansimp
-manager: dansimp
+ms.author: vinpa
+manager: aaroncz
 ms.date: 08/26/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Automatically allow apps deployed by a managed installer with Windows Defender Application Control
@@ -29,7 +29,7 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Windows Defender Application Control (WDAC) includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM) or Microsoft Intune.
+Windows Defender Application Control (WDAC) includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Configuration Manager (MEMCM) or Microsoft Intune.
 
 ## How does a managed installer work?
 
@@ -127,7 +127,7 @@ The AppLocker policy creation UI in GPO Editor and the AppLocker PowerShell cmdl
     </RuleCollection>
     ```
 
-4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This condition-based inclusion ensures the policy will merge successfully on devices that may already have an AppLocker policy in place.
+4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This condition-based inclusion ensures the policy will merge successfully on devices that may already have an AppLocker policy in place.
 
     ```xml
     <AppLockerPolicy Version="1">

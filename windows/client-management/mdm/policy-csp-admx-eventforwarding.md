@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_EventForwarding.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/17/2020
 ms.reviewer: 
@@ -18,13 +18,13 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_EventForwarding policies  
+## ADMX_EventForwarding policies
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <dl>
@@ -40,7 +40,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_eventforwarding-forwarderresourceusage"></a>**ADMX_EventForwarding/ForwarderResourceUsage**  
+<a href="" id="admx_eventforwarding-forwarderresourceusage"></a>**ADMX_EventForwarding/ForwarderResourceUsage**
 
 <!--SupportedSKUs-->
 
@@ -78,7 +78,7 @@ This setting applies across all subscriptions for the forwarder (source computer
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure forwarder resource usage*
 -   GP name: *ForwarderResourceUsage*
 -   GP path: *Windows Components/Event Forwarding*
@@ -91,7 +91,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx_eventforwarding-subscriptionmanager"></a>**ADMX_EventForwarding/SubscriptionManager**  
+<a href="" id="admx_eventforwarding-subscriptionmanager"></a>**ADMX_EventForwarding/SubscriptionManager**
 
 <!--SupportedSKUs-->
 
@@ -121,7 +121,7 @@ This policy setting allows you to configure the server address, refresh interval
 
 If you enable this policy setting, you can configure the Source Computer to contact a specific FQDN (Fully Qualified Domain Name) or IP Address and request subscription specifics.
 
-Use the following syntax when using the HTTPS protocol:  
+Use the following syntax when using the HTTPS protocol:
 
 ``` syntax
 Server=https://<FQDN of the collector>:5986/wsman/SubscriptionManager/WEC,Refresh=<Refresh interval in seconds>,IssuerCA=<Thumb print of the client authentication certificate>.
@@ -135,7 +135,7 @@ If you disable or don't configure this policy setting, the Event Collector compu
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure target Subscription Manager*
 -   GP name: *SubscriptionManager*
 -   GP path: *Windows Components/Event Forwarding*

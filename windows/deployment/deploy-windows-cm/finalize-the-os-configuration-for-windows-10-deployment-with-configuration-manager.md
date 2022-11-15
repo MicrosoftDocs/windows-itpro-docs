@@ -2,22 +2,24 @@
 title: Finalize operating system configuration for Windows 10 deployment
 description: This article provides a walk-through to finalize the configuration of your Windows 10 operating deployment.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-deploy
+ms.date: 10/27/2022
 ---
 
 # Finalize the operating system configuration for Windows 10 deployment with Configuration Manager
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
-This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enabling optional MDT monitoring for Configuration Manager, logs folder settings, rules configuration, content distribution, and deployment of the previously created task sequence.
+This article walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enabling optional MDT monitoring for Configuration Manager, logs folder settings, rules configuration, content distribution, and deployment of the previously created task sequence.
 
 For the purposes of this guide, we'll use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide, CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used.  
@@ -30,14 +32,14 @@ This section will walk you through the process of creating the D:\\MDTProduction
 
 On **CM01**:
 
-1.  Open the Deployment Workbench, right-click **Deployment Shares** and click **New Deployment Share**. Use the following settings for the New Deployment Share Wizard:
+1.  Open the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**. Use the following settings for the New Deployment Share Wizard:
 
     * Deployment share path: D:\\MDTProduction
     * Share name: MDTProduction$
     * Deployment share description: MDT Production
     * Options: &lt;default settings&gt;
 
-2.  Right-click the **MDT Production** deployment share, and click **Properties**. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box, and click **OK**.
+2.  Right-click the **MDT Production** deployment share, and select **Properties**. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box, and select **OK**.
 
     ![Enable MDT monitoring for Configuration Manager.](../images/mdt-06-fig31.png)
 
@@ -79,7 +81,7 @@ On **CM01**:
 
    The Settings package, holding the rules and the Unattend.xml template used during deployment
 
-3. In the Configuration Manager console, update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**. Click **OK** in the popup dialog box.
+3. In the Configuration Manager console, update the distribution point for the **Windows 10 x64 Settings** package by right-clicking the **Windows 10 x64 Settings** package and selecting **Update Distribution Points**. Select **OK** in the popup dialog box.
 
    >[!NOTE]
    >Although you haven't yet added a distribution point, you still need to select Update Distribution Points. This process also updates the Configuration Manager content library with changes.
@@ -91,7 +93,7 @@ In Configuration Manager, you can distribute all packages needed by a task seque
 On **CM01**:
 
 1.  Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems** and select **Task Sequences**. Right-click the **Windows 10 Enterprise x64 RTM** task sequence, and select **Distribute Content**.
-2.  In the Distribute Content Wizard, click **Next** twice then on the **Specify the content destination** page add the Distribution Point: **CM01.CONTOSO.COM**, and then complete the wizard.
+2.  In the Distribute Content Wizard, select **Next** twice then on the **Specify the content destination** page add the Distribution Point: **CM01.CONTOSO.COM**, and then complete the wizard.
 3.  Using the CMTrace tool, verify the distribution to the CM01 distribution point by reviewing the distmgr.log file, or use the Distribution Status / Content Status option in the Monitoring workspace. Don't continue until you see all the new packages being distributed successfully.
 
    ![Content status.](../images/cm01-content-status1.png)
@@ -104,9 +106,9 @@ This section provides steps to help you create a deployment for the task sequenc
 
 On **CM01**:
 
-1. Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems** and select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM** and then click **Deploy**.
-2. In the Deploy Software Wizard, on the **General** page, select the **All Unknown Computers** collection and click **Next**.
-3. On the **Deployment Settings** page, use the following settings and then click **Next**:
+1. Using the Configuration Manager console, in the Software Library workspace, expand **Operating Systems** and select **Task Sequences**, right-click **Windows 10 Enterprise x64 RTM** and then select **Deploy**.
+2. In the Deploy Software Wizard, on the **General** page, select the **All Unknown Computers** collection and select **Next**.
+3. On the **Deployment Settings** page, use the below settings and then select **Next**:
 
    * Purpose: Available
    * Make available to the following: Only media and PXE
@@ -115,10 +117,10 @@ On **CM01**:
     
    Configure the deployment settings
 
-4. On the **Scheduling** page, accept the default settings and click **Next**.
-5. On the **User Experience** page, accept the default settings and click **Next**.
-6. On the **Alerts** page, accept the default settings and click **Next**.
-7. On the **Distribution Points** page, accept the default settings, click **Next** twice, and then click **Close**.
+4. On the **Scheduling** page, accept the default settings and select **Next**.
+5. On the **User Experience** page, accept the default settings and select **Next**.
+6. On the **Alerts** page, accept the default settings and select **Next**.
+7. On the **Distribution Points** page, accept the default settings, select **Next** twice, and then select **Close**.
 
    ![Task sequence deployed.](../images/fig32-deploywiz.png)
 
@@ -132,14 +134,14 @@ This section provides steps to help you configure the All Unknown Computers coll
 
 On **CM01**:
 
-1. Using the Configuration Manager console, in the Asset and Compliance workspace, select **Device Collections**, right-click **All Unknown Computers**, and click **Properties**.
+1. Using the Configuration Manager console, in the Asset and Compliance workspace, select **Device Collections**, right-click **All Unknown Computers**, and select **Properties**.
 
 2. On the **Collection Variables** tab, create a new variable with the following settings:
 
    * Name: OSDComputerName
    * Clear the **Do not display this value in the Configuration Manager console** check box.
 
-3. Click **OK**.
+3. Select **OK**.
 
    >[!NOTE]
    >Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
@@ -150,7 +152,7 @@ On **CM01**:
 
 Next, see [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md).
 
-## Related topics
+## Related articles
 
 [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)<br>
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>

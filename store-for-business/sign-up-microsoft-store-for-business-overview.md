@@ -3,7 +3,6 @@ title: Sign up and get started (Windows 10)
 description: IT admins can sign up for the Microsoft Store for Business or Microsoft Store for Education and get started working with apps.
 ms.assetid: 87C6FA60-3AB9-4152-A85C-6A1588A20C7B
 ms.reviewer: 
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

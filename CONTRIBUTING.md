@@ -1,8 +1,6 @@
 # Editing Windows IT professional documentation
 
-Thank you for your interest in the Windows IT professional documentation! We appreciate your feedback, edits, and additions to our docs.
-This page covers the basic steps for editing our technical documentation.
-For a more up-to-date and complete contribution guide, see the main [contributor guide overview](https://learn.microsoft.com/contribute/).
+Thank you for your interest in the Windows IT professional documentation! We appreciate your feedback, edits, and additions to our content. This page covers the basic steps for editing our technical documentation. For a more up-to-date and complete contribution guide, see the main [contributor guide overview](https://learn.microsoft.com/contribute/).
 
 ## Sign a CLA
 
@@ -19,7 +17,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
 ### To edit a topic
 
-1. Browse to the [Microsoft Docs](https://learn.microsoft.com/) article that you want to update.
+1. Browse to the [Microsoft Learn](https://learn.microsoft.com/) article that you want to update.
 
     > **Note**<br>
     > If you're a Microsoft employee or vendor, before you edit the article, append `review.` to the beginning of the URL. This action lets you use the private repository, **windows-docs-pr**. For more information, see the [internal contributor guide](https://review.learn.microsoft.com/help/get-started/edit-article-in-github?branch=main).
@@ -65,8 +63,7 @@ We've tried to make editing an existing, public file as simple as possible.
 
 ## Making more substantial changes
 
-To make substantial changes to an existing article, add or change images, or contribute a new article, you'll need to create a local clone of the content.
-For info about creating a fork or clone, see [Set up a local Git repository](https://learn.microsoft.com/contribute/get-started-setup-local). The GitHub docs topic, [Fork a Repo](https://docs.github.com/articles/fork-a-repo), is also insightful.
+To make substantial changes to an existing article, add or change images, or contribute a new article, you'll need to create a local clone of the content. For information about creating a fork or clone, see [Set up a local Git repository](https://learn.microsoft.com/contribute/get-started-setup-local). The [Fork a Repo](https://docs.github.com/articles/fork-a-repo) article is also helpful.
 
 Fork the official repo into your personal GitHub account, and then clone the fork down to your local device.  Work locally, then push your changes back into your fork.  Finally, open a pull request back to the main branch of the official repo.
 

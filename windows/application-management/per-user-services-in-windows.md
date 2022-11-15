@@ -1,12 +1,13 @@
 ---
 title: Per-user services in Windows 10 and Windows Server
 description: Learn about per-user services, how to change the template service Startup Type, and manage per-user services through Group Policy and security templates.
-ms.prod: w10
+ms.prod: windows-client
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.date: 09/14/2017
 ms.reviewer: 
+ms.technology: itpro-apps
 ---
 
 # Per-user services in Windows 10 and Windows Server 
@@ -113,7 +114,7 @@ If a per-user service can't be disabled using the security template, you can dis
 
    ![Startup Type is Disabled.](media/gpp-svc-disabled.png)   
    
-9. To add the other services that can't be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
+9. To add the other services that can't be managed with Group Policy templates, edit the policy and repeat steps 5-8.  
 
 ### Managing Template Services with reg.exe
 

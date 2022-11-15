@@ -1,7 +1,7 @@
 ---
 title: Windows Tools/Administrative Tools
 description: The folders for Windows Tools and Administrative Tools are folders in the Control Panel that contain tools for system administrators and advanced users.
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.date: 03/28/2022
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-manage
 ---
 
 # Windows Tools/Administrative Tools
@@ -24,11 +25,11 @@ ms.collection: highpri
 
 The following graphic shows the **Windows Tools** folder in Windows 11:
 
-:::image type="content" source="media/win11-control-panel-windows-tools.png" alt-text="Screenshot of the Control Panel in Windows 11, highlighting the Administrative Tools folder." lightbox="media/win11-control-panel-windows-tools.png":::
+:::image type="content" source="images/win11-control-panel-windows-tools.png" alt-text="Screenshot of the Control Panel in Windows 11, highlighting the Administrative Tools folder." lightbox="images/win11-control-panel-windows-tools.png":::
 
 The tools in the folder might vary depending on which edition of Windows you use.
 
-:::image type="content" source="media/win11-windows-tools.png" alt-text="Screenshot of the contents of the Windows Tools folder in Windows 11." lightbox="media/win11-windows-tools.png":::
+:::image type="content" source="images/win11-windows-tools.png" alt-text="Screenshot of the contents of the Windows Tools folder in Windows 11." lightbox="images/win11-windows-tools.png":::
 
 ## Administrative Tools folder (Windows 10)
 
