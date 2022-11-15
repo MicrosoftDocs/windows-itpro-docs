@@ -19,3 +19,8 @@ To enroll into Windows Update for Business reports, edit configuration settings,
 
 To display the workbook and view the **Windows** tab in the **Software Updates** page [Microsoft 365 admin center](https://admin.microsoft.com) use the following role:
   - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+
+  - [Office apps admin](/azure/active-directory/roles/permissions-reference#office-apps-administrator)
+  - [Reports reader](/azure/active-directory/roles/permissions-reference#reports-reader)
+  - [Usage summary reports reader](/azure/active-directory/roles/permissions-reference#usage-summary-reports-reader)
+  - [Exchange admin](/azure/active-directory/roles/permissions-reference#exchange-administrator)
