@@ -69,7 +69,7 @@
         href: hello-hybrid-cert-whfb-settings.md
       - name: Sign-in and provisioning
         href: hello-hybrid-cert-whfb-provision.md
-    - name: On-premises singe-sign-on (SSO) for Azure AD joined devices
+    - name: On-premises single-sign-on (SSO) for Azure AD joined devices
       items: 
       - name: On-premises SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
