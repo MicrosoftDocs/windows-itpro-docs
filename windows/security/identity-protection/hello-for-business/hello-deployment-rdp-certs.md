@@ -46,10 +46,10 @@ Expand the following sections to learn more about the process.
 
 Follow these steps to create a certificate template:
 
-1. Sign in to your issuing certificate authority (CA)
-1. Open the **Certificate Authority** mmc snap-in console (%windir%\system32\certsrv.msc)
-1. In the left pane of the MMC, expand **Certification Authority (Local)**, and then expand your CA within the Certification Authority list
-1. Right-click **Certificate Templates** and then select **Manage** to open the **Certificate Templates** console
+1. Sign in to your issuing certificate authority (CA) and open *Server Manager*
+1. Select **Tools > Certification Authority**. The Certification Authority Microsoft Management Console (MMC) opens
+1. In the MMC, expand the CA name and right-click **Certificate Templates > Manage**
+1. The Certificate Templates console opens. All of the certificate templates are displayed in the details pane
 1. Right-click the **Smartcard Logon** template and select **Duplicate Template**
 
     ![Duplicating Smartcard Template.](images/rdpcert/duplicatetemplate.png)
@@ -68,8 +68,8 @@ Follow these steps to create a certificate template:
     1. Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name is not already selected
     1. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**
 1. On the **Request Handling** tab:
-    1. Select the **Renew with same key** check box
     1. Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose
+    1. Select the **Renew with same key** check box
     1. Select **Prompt the user during enrollment**
 1. On the **Cryptography** tab:
     1. Set the Provider Category to **Key Storage Provider**
@@ -83,8 +83,8 @@ Follow these steps to create a certificate template:
 1. Close the Certificate Templates console
 
 1. Open an elevated command prompt and change to a temporary working directory
-1. Execute the following command, replacing `\<TemplateName\>` with the Template name you took note of earlier in step 7c
-    `certutil -dstemplate \<TemplateName\> \<TemplateName.txt\>`
+1. Execute the following command, replacing `<TemplateName>` with the Template name you took note of earlier in step 7c
+    `certutil -dstemplate <TemplateName> > <TemplateName.txt>`
 1. Open the text file created by the command above.
     1. Delete the last line of the output from the file that reads `CertUtil: -dsTemplate command completed successfully.`
     1. Modify the line that reads `pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"` to `pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"`
