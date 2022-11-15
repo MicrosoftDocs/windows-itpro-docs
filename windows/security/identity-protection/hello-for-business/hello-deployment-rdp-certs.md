@@ -91,7 +91,7 @@ Three approaches are documented here:
 
 1. Execute the following command:
 
-    `certutil -dstemplate \<TemplateName\> \> \<TemplateName\>.txt`
+    `certutil -dstemplate \<TemplateName\> > \<TemplateName\>.txt`
 
     Replace \<TemplateName\> with the Template name you took note of earlier in step 7.
 
