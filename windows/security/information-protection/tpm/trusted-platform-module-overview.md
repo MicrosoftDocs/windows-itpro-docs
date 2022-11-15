@@ -12,6 +12,7 @@ ms.collection:
   - highpri
 ms.topic: conceptual
 adobe-target: true
+ms.technology: itpro-security
 ---
 
 # Trusted Platform Module Technology Overview

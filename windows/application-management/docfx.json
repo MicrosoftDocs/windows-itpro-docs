@@ -36,7 +36,7 @@
       "recommendations": true,
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
+      "ms.technology": "itpro-apps",
       "ms.topic": "article",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",

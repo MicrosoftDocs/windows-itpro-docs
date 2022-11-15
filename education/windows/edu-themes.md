@@ -4,8 +4,7 @@ description: Learn about education themes for Windows 11 and how to configure th
 ms.date: 09/15/2022
 ms.topic: how-to
 appliesto:
-- ✅ <b>Windows 11, version 22H2</b>
-- ✅ <b>Windows 11 SE, version 22H2</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Configure education themes for Windows 11
@@ -23,13 +22,14 @@ Education themes aren't enabled by default. Follow the instructions below to con
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-To configure devices using Microsoft Intune, create a [custom policy][MEM-1] with the following settings:
+[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/EnableEduThemes`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-Assign the policy to a security group that contains as members the devices or users that you want to configure.
+[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 

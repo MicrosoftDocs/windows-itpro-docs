@@ -12,6 +12,7 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2018
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # BitLocker

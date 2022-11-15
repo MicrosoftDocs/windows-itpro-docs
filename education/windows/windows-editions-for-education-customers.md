@@ -4,7 +4,7 @@ description: Learn about the two Windows 10 editions that are designed for the n
 ms.topic: article
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Windows 10 editions for education customers

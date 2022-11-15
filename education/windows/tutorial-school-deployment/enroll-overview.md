@@ -4,9 +4,7 @@ description: Learn about the different options to enroll Windows devices in Micr
 ms.date: 08/31/2022
 ms.topic: overview
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Device enrollment overview

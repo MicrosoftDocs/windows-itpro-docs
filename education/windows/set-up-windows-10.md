@@ -4,7 +4,7 @@ description: Decide which option for setting up Windows 10 is right for you.
 ms.topic: article
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Set up Windows devices for education
