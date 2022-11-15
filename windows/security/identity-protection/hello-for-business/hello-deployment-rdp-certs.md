@@ -100,11 +100,10 @@ Follow these steps to create a certificate template:
 
 </details>
 
-
-
 <br>
 <details>
 <summary><b>Request a Certificate</b></summary>
+
 1. Ensure the hybrid Azure AD joined device has network line of sight to Active Directory domain controllers and the issuing certificate authority. 
 1. Start the **Certificates – Current User** console (%windir%\system32\certmgr.msc).
 1. In the left pane of the MMC, right-click **Personal**, click **All Tasks**, and then click **Request New Certificate…**
