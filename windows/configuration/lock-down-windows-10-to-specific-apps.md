@@ -576,7 +576,7 @@ These apps are in addition to any mixed reality apps that you allow.
 
 After the admin has completed setup, the kiosk account can sign in and repeat the setup. The admin user may want to complete the kiosk user setup before providing the PC to employees or customers.
 
-There's a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](https://developer.microsoft.com/windows/mixed-reality/navigating_the_windows_mixed_reality_home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they'll see only a blank display in the device, and won't have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen.
+There's a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they'll see only a blank display in the device, and won't have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen.
 
 ## Policies set by multi-app kiosk configuration
 
