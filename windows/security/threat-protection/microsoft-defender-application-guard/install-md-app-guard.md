@@ -100,7 +100,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
    1. In the **Platform** list, select **Windows 10 and later**. 
    
-   1. In the **Profile** list, select **Endpoint protection**. 
+   1. In the **Profile** Type, Choose **Templates** and select **Endpoint protection** . 
    
    1. Choose **Create**.
 
