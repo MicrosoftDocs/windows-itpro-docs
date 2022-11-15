@@ -35,6 +35,8 @@
     href: hello-prepare-people-to-use.md
   - name: Deployment guides
     items:
+    - name: Cloud-only deployment
+      href: hello-aad-join-cloud-only-deploy.md
     - name: Hybrid cloud Kerberos trust deployment
       href: hello-hybrid-cloud-kerberos-trust.md
     - name: Hybrid Azure AD Join key trust
@@ -75,7 +77,7 @@
         href: hello-hybrid-aadj-sso-base.md
       - name: Using certificates for on-premises SSO
         href: hello-hybrid-aadj-sso-cert.md
-    - name: On-premises Key Trust
+    - name: On-premises key trust
       items: 
       - name: Key trust deployment
         href: hello-deployment-key-trust.md
@@ -103,15 +105,13 @@
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
-    - name: Azure AD join cloud only deployment
-      href: hello-aad-join-cloud-only-deploy.md
-    - name: Manage Windows Hello for Business in your organization
-      href: hello-manage-in-organization.md
-    - name: Deploy certificates for remote desktop (RDP) connections
+    - name: Deploy certificates for remote desktop (RDP) authentication
       href: hello-deployment-rdp-certs.md
+  - name: Manage Windows Hello for Business in your organization
+    href: hello-manage-in-organization.md
   - name: Windows Hello for Business features
     items:
-    - name: Conditional Access 
+    - name: Conditional access 
       href: hello-feature-conditional-access.md
     - name: PIN Reset
       href: hello-feature-pin-reset.md
@@ -125,9 +125,9 @@
       href: hello-feature-remote-desktop.md
   - name: Troubleshooting
     items:
-    - name: Known Deployment Issues
+    - name: Known deployment issues
       href: hello-deployment-issues.md
-    - name: Errors During PIN Creation
+    - name: Errors during PIN creation
       href: hello-errors-during-pin-creation.md
     - name: Event ID 300 - Windows Hello successfully created
       href: hello-event-300.md

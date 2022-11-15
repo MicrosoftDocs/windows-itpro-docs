@@ -13,11 +13,11 @@ ms.topic: how-to
 localizationpriority: medium
 ms.date: 11/15/2022
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H2 and later</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ms.technology: itpro-security
 ---
 
-# Deploy certificates to cloud Kerberos trust and key trust users to enable RDP
+# Deploy certificates to cloud Kerberos trust and key trust users for RDP authentication
 
 This document describes Windows Hello for Business functionalities or scenarios that apply to:\
 ✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
@@ -28,9 +28,7 @@ This document describes Windows Hello for Business functionalities or scenarios 
 
 ---
 
-Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. For *cloud Kerberos trust* and *certificate trust* deployments, the creation of this certificate occurs at container creation time.
-
-This document discusses three approaches for cloud Kerberos trust and key trust deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
+Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
 
 - Deploy certificates to hybrid joined devices using an on-premises Active Directory certificate enrollment policy
 - Deploy certificates to hybrid or Azure AD-joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune
@@ -38,12 +36,13 @@ This document discusses three approaches for cloud Kerberos trust and key trust 
 
 ## Deploy certificates to a hybrid joined devices using an on-premises Active Directory Certificate enrollment policy
 
-To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must:
+To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a certificate template and then deploy certificates based on the template.
 
-1. Create a suitable certificate template
-1. Deploy certificates to your users based on the template
+Expand the following sections to learn more about the process.
 
-### Create a Windows Hello for Business certificate template
+<br>
+<details>
+<summary><b>Create a Windows Hello for Business certificate template</b></summary>
 
 Follow these steps to create a certificate template:
 
@@ -99,23 +98,25 @@ Follow these steps to create a certificate template:
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list.
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
-### Requesting a Certificate
+</details>
 
+
+
+<br>
+<details>
+<summary><b>Request a Certificate</b></summary>
 1. Ensure the hybrid Azure AD joined device has network line of sight to Active Directory domain controllers and the issuing certificate authority. 
-
 1. Start the **Certificates – Current User** console (%windir%\system32\certmgr.msc).
-
 1. In the left pane of the MMC, right-click **Personal**, click **All Tasks**, and then click **Request New Certificate…**
 
     ![Request a new certificate.](images/rdpcert/requestnewcertificate.png)
 
 1. On the Certificate Enrollment screen, click **Next**.
-
 1. Under Select Certificate Enrollment Policy, ensure **Active Directory Enrollment Policy** is selected and then click **Next**.
-
 1. Under Request Certificates, click the check-box next to the certificate template you created in the previous section (WHfB Certificate Authentication) and then click **Enroll**.
-
 1. After a successful certificate request, click Finish on the Certificate Installation Results screen
+
+</details>
 
 ## Deploying a certificate to Hybrid or Azure AD Joined Devices using Simple Certificate Enrollment Protocol (SCEP) via Intune
 
