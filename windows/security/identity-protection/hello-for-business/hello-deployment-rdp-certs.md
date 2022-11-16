@@ -59,7 +59,7 @@ Follow these steps to create a certificate template:
     | Tab Name | Configurations |
     | --- | --- |
     | *Compatibility* | <li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Authority list*</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Recipient list*</li>|
-    | *General* | <li>Specify a Template display name, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li>|
+    | *General* | <li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li>|
     | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
     | *Subject Name* | <li> Select the **Build from this Active Directory** information button if it is not already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name is not already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li>|
     |*Request Handling*|<li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li>|
@@ -69,10 +69,10 @@ Follow these steps to create a certificate template:
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
 1. Open an elevated command prompt and change to a temporary working directory
-1. Execute the following command, replacing `<TemplateName>` with the Template name you took note of earlier in step 7c
+1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted above
 
     ```cmd
-    certutil -dstemplate <TemplateName> > <TemplateName.txt>
+    certutil -dstemplate *<TemplateName>* > *<TemplateName.txt>*
     ```
 
 1. Open the text file created by the command above.
