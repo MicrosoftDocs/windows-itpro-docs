@@ -126,7 +126,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | NextUp Talker                           | 1.0.49            | Win32    | NextUp Technologies          |
 | NonVisual Desktop Access                | 2021.3.1          | Win32    | NV Access                    |
 | NWEA Secure Testing Browser             | 5.4.356.0         | Win32    | NWEA                         |
-| Papercut                                | 22.0.6            | Win32    | PaperCut Software International Pty Ltd |
+| PaperCut                                | 22.0.6            | Win32    | PaperCut Software International Pty Ltd |
 | Pearson TestNav                         | 1.10.2.0          | Store    | Pearson                      |
 | Questar Secure Browser                  | 4.8.3.376         | Win32    | Questar, Inc                 |
 | ReadAndWriteForWindows                  | 12.0.60.0         | Win32    | Texthelp Ltd.                |
