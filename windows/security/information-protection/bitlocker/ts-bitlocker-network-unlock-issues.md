@@ -27,8 +27,6 @@ For general guidelines about how to troubleshoot Network Unlock, see [How to ena
 
 This article describes several known issues that you may encounter when you use Network Unlock, and provides guidance to address these issues.
 
-## Tip: Detect whether BitLocker Network Unlock is enabled on a specific computer
-
 > [!TIP]
 > BitLocker Network Unlock can be detected if it is enabled on a specific computer use the following steps on UEFI computers:
 >
@@ -50,15 +48,15 @@ This article describes several known issues that you may encounter when you use 
 >
 >    1. The following registry key exists and has the following value:
 >
->      - **Subkey**: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE`
->      - **Type**: `REG_DWORD`
->      - **Value**: `OSManageNKP` equal to `1` (True)
+>         - **Subkey**: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE`
+>         - **Type**: `REG_DWORD`
+>         - **Value**: `OSManageNKP` equal to `1` (True)
 >
 >    2. The registry key:
 >
->      `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates`
+>          `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates`
 >
->      has an entry whose name matches the name of the certificate thumbprint of the Network Unlock key protector that you found in step 1.
+>          has an entry whose name matches the name of the certificate thumbprint of the Network Unlock key protector that you found in step 1.
 
 ## On a Surface Pro 4 device, BitLocker Network Unlock doesn't work because the UEFI network stack is incorrectly configured
 
