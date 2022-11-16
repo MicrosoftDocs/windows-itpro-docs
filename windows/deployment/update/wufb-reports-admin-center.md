@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-analytics
 ms.topic: article
-ms.date: 06/20/2022
+ms.date: 11/15/2022
 ms.technology: itpro-updates
 ---
 
