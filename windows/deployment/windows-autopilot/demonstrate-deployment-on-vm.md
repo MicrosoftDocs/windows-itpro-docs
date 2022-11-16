@@ -44,8 +44,11 @@ You'll need the following components to complete this lab:
 |:---|:---|
 |**Windows 10 installation media**|Windows 10 Enterprise ISO file for a supported version of Windows 10, general availability channel. If you don't already have an ISO to use, download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).|
 |**Internet access**|If you're behind a firewall, see the detailed [networking requirements](/mem/autopilot/software-requirements#networking-requirements). Otherwise, just make sure that you have a connection to the internet.|
-|**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
+|**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V. |
 |**An account with Azure Active Directory (Azure AD) Premium license**|This guide will describe how to get a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
+
+> [!NOTE]
+> When using a VM for Autopilot testing, assign at least 2 processors and 4gb of memory. *Note: The [minimum system requirements](/windows/whats-new/windows-11-requirements#virtual-machine-support) for Windows 11 are 2 processors and 4gb memory.
 
 ## Procedures
 
