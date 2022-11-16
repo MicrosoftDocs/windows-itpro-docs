@@ -45,5 +45,7 @@
         - name: Using a proxy with Delivery Optimization
           href: delivery-optimization-proxy.md
         - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
-          href: delivery-optimization-endpoints.md         
+          href: delivery-optimization-endpoints.md
+        - name: Testing Delivery Optimization
+          href: delivery-optimization-test.md        
 
