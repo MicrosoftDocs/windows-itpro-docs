@@ -134,6 +134,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
 1. Select **Create**
 1. In the *Basics* blade, provide a **Name** and, optionally, a **Description > Next**
 1. In the *Configuration settings* blade, use the following table to configure the policy:
+
     | Setting| Configurations |
     | --- | --- |
     |*Certificate Type*| User |
@@ -148,6 +149,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Smart Card Logon**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
     |*Renewal threshold (%)*|Configure a value of your choosing|
     |*SCEP Server URLs*|Provide the public endpoint(s) that you configured during the deployment of your SCEP infrastructure|
+
 1. Select **Next**
 1. In the *Assignments* bladeAssign the policy to a security group that contains as members the devices or users that you want to configure and select **Next**
 1. In the *Applicability Rules* blade, provide additional issuance restrictions, if needed, and select **Next**
