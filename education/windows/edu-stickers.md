@@ -41,7 +41,8 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 [!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
 [!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
-Alternatively, try using the following MSGraph call to automatically create the custom policy in your tenant:
+> [!TIP]
+> Try using the following MSGraph call to automatically create the custom policy in your tenant.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{"id":"00-0000-0000-0000-000000000000","displayName":"Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
