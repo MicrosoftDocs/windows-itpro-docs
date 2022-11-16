@@ -30,7 +30,7 @@ This article describes several known issues that you may encounter when you use 
 ## Tip: Detect whether BitLocker Network Unlock is enabled on a specific computer
 
 > [!TIP]
-> You can use the following steps on computers with either x64 or x32 UEFI firmware. You can also script these commands.
+> BitLocker Network Unlock can be detetected if it is enabled on a specific computer use the following steps on UEFI computers:
 >
 > 1. Open an elevated command prompt window and run the following command:
 >
@@ -38,13 +38,13 @@ This article describes several known issues that you may encounter when you use 
 >   manage-bde.exe -protectors -get <Drive>
 >   ```
 >
->     For example:
+> For example:
 >
 >   ``` syntax
 >   manage-bde.exe -protectors -get C:
 >   ```
 >
->     If the output of this command includes a key protector of type **TpmCertificate (9)**, the configuration is correct for BitLocker Network Unlock.
+> If the output of this command includes a key protector of type **TpmCertificate (9)**, the configuration is correct for BitLocker Network Unlock.
 >
 > 2. Start Registry Editor, and verify the following settings:
 >
