@@ -16,25 +16,26 @@ ms.custom: bitlocker
 
 # Guidelines for troubleshooting BitLocker
 
-This article addresses common issues in BitLocker and provides guidelines to troubleshoot these issues. This article also provides information such as what data to collect and what settings to check. This information makes your troubleshooting process much easier.
+This article addresses common issues in BitLocker and provides guidelines to troubleshoot these issues. This article also provides information such as what data to collect and what settings to check. This information makes the troubleshooting process much easier.
 
 ## Review the event logs
 
-Open Event Viewer and review the following logs under Applications and Services logs\\Microsoft\\Windows:
+Open **Event Viewer** and review the following logs under **Applications and Services Logs** > **Microsoft** > **Windows**:
 
-- **BitLocker-API**. Review the management log, the operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
+- **BitLocker-API**. Review the **Management** log, the **Operational** log, and any other logs that are generated in this folder. The default logs have the following unique names:
 
-  - Microsoft-Windows-BitLocker-API/BitLocker Operational
-  - Microsoft-Windows-BitLocker-API/BitLocker Management
+  - **Microsoft-Windows-BitLocker-API/Management**
+  - **Microsoft-Windows-BitLocker-API/Operational**
+  - **Microsoft-Windows-BitLocker-API/Tracing** - only displayed when **Show Analytic and Debug Logs** is enabled
 
-- **BitLocker-DrivePreparationTool**. Review the admin log,  the operational log, and any other logs that are generated in this folder. The default logs have the following unique names:
+- **BitLocker-DrivePreparationTool**. Review the **Admin** log,  the **Operational** log, and any other logs that are generated in this folder. The default logs have the following unique names:
 
-  - Microsoft-Windows-BitLocker-DrivePreparationTool/Operational
-  - Microsoft-Windows-BitLocker-DrivePreparationTool/Admin
+  - **Microsoft-Windows-BitLocker-DrivePreparationTool/Admin**
+  - **Microsoft-Windows-BitLocker-DrivePreparationTool/Operational**
 
-Additionally, review the Windows logs\\System log for events that were produced by the TPM and TPM-WMI event sources.
+Additionally, review the **Windows Logs** > **System** log for events that were produced by the TPM and TPM-WMI event sources.
 
-To filter and display or export logs, you can use the [wevtutil.exe](/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6&preserve-view=true) cmdlet.
+To filter and display or export logs, the [wevtutil.exe](/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6&preserve-view=true) PowerShell cmdlet can be used.
 
 For example, to use `wevtutil.exe` to export the contents of the operational log from the BitLocker-API folder to a text file that is named `BitLockerAPIOpsLog.txt`, open a Command Prompt window, and run the following command:
 
@@ -48,7 +49,7 @@ To use the **Get-WinEvent** cmdlet to export the same log to a comma-separated t
 Get-WinEvent -logname "Microsoft-Windows-BitLocker/BitLocker Operational"  | Export-Csv -Path Bitlocker-Operational.csv
 ```
 
-You can use Get-WinEvent in an elevated PowerShell window to display filtered information from the system or application log by using the following syntax:
+The Get-WinEvent can be used in an elevated PowerShell window to display filtered information from the system or application log by using the following syntax:
 
 - To display BitLocker-related information:
 
@@ -83,11 +84,11 @@ You can use Get-WinEvent in an elevated PowerShell window to display filtered in
    ![Display of events that is produced by using Get-WinEvent and a TPM filter.](./images/psget-winevent-2.png)
 
 > [!NOTE]
-> If you intend to contact Microsoft Support, it is recommended that you export the logs listed in this section.
+> When contacting Microsoft Support, it is recommended to export the logs listed in this section.
 
 ## Gather status information from the BitLocker technologies
 
-Open an elevated Windows PowerShell window, and run each of the following commands.
+Open an elevated Windows PowerShell window, and run each of the following commands:
 
 |Command |Notes |
 | --- | --- |
@@ -99,52 +100,52 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 
 ## Review the configuration information
 
-1. Open an elevated Command Prompt window, and run the following commands.
+1. Open an elevated Command Prompt window, and run the following commands:
 
    |Command |Notes |
    | --- | --- |
    |[**gpresult.exe /h \<Filename>**](/windows-server/administration/windows-commands/gpresult) |Exports the Resultant Set of Policy information, and saves the information as an HTML file. |
    |[**msinfo.exe /report \<Path> /computer&nbsp;\<ComputerName>**](/windows-server/administration/windows-commands/msinfo32) |Exports comprehensive information about the hardware, system components, and software environment on the local computer. The **/report** option saves the information as a .txt file. |
 
-1. Open Registry Editor, and export the entries in the following subkeys:
+2. Open Registry Editor, and export the entries in the following subkeys:
 
-   - **HKLM\\SOFTWARE\\Policies\\Microsoft\\FVE**
-   - **HKLM\\SYSTEM\\CurrentControlSet\\Services\\TPM\\**
+   - **`HKLM\SOFTWARE\Policies\Microsoft\FVE`**
+   - **`HKLM\SYSTEM\CurrentControlSet\Services\TPM\`**
 
 ## Check the BitLocker prerequisites
 
 Common settings that can cause issues for BitLocker include the following scenarios:
 
-- The TPM must be unlocked. You can check the output of the **get-tpm** command for the status of the TPM.
+- The TPM must be unlocked. Check the output of the **`get-tpm`** PowerShell cmdlet command for the status of the TPM.
 
-- Windows RE must be enabled. You can check the output of the **reagentc** command for the status of WindowsRE.
+- Windows RE must be enabled. Check the output of the **`reagentc.exe`** command for the status of WindowsRE.
 
 - The system-reserved partition must use the correct format.
 
   - On Unified Extensible Firmware Interface (UEFI) computers, the system-reserved partition must be formatted as FAT32.
   - On legacy computers, the system-reserved partition must be formatted as NTFS.
 
-- If the device that you're troubleshooting is a slate or tablet PC, use <https://gpsearch.azurewebsites.net/#8153> to verify the status of the **Enable use of BitLocker authentication requiring preboot keyboard input on slates** option.
+- If the device being troubleshot is a slate or tablet PC, use <https://gpsearch.azurewebsites.net/#8153> to verify the status of the **Enable use of BitLocker authentication requiring preboot keyboard input on slates** option.
 
 For more information about the BitLocker prerequisites, see [BitLocker basic deployment: Using BitLocker to encrypt volumes](./bitlocker-basic-deployment.md#using-bitlocker-to-encrypt-volumes)
 
 ## Next steps
 
-If the information that you've examined so far indicates a specific issue (for example, WindowsRE isn't enabled), the issue may have a straightforward fix.
+If the information examined so far indicates a specific issue (for example, WindowsRE isn't enabled), the issue may have a straightforward fix.
 
-Resolving issues that don't have obvious causes depends on exactly which components are involved and what behavior you see. The information that you've gathered helps you narrow down the areas to investigate.
+Resolving issues that don't have obvious causes depends on exactly which components are involved and what behavior is being see. The gathered information helps narrow down the areas to investigate.
 
-- If you're working on a device that is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune: known issues](ts-bitlocker-intune-issues.md).
+- If the device being troubleshot is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune: known issues](ts-bitlocker-intune-issues.md).
 
-- If BitLocker doesn't start or can't encrypt a drive and you notice errors or events that are related to the TPM, see [BitLocker can't encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
+- If BitLocker doesn't start or can't encrypt a drive and errors or events that are related to the TPM are occurring, see [BitLocker can't encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
 
 - If BitLocker doesn't start or can't encrypt a drive, see [BitLocker can't encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
 
 - If BitLocker Network Unlock doesn't behave as expected, see [BitLocker Network Unlock: known issues](ts-bitlocker-network-unlock-issues.md).
 
-- If BitLocker doesn't behave as expected when you recover an encrypted drive, or if you didn't expect BitLocker to recover the drive, see [BitLocker recovery: known issues](ts-bitlocker-recovery-issues.md).
+- If BitLocker doesn't behave as expected when an encrypted drive is recovered, or if BitLocker unexpectedly recovered a drive, see [BitLocker recovery: known issues](ts-bitlocker-recovery-issues.md).
 
-- If BitLocker or the encrypted drive doesn't behave as expected, and you notice errors or events that are related to the TPM, see [BitLocker and TPM: other known issues](ts-bitlocker-tpm-issues.md).
+- If BitLocker or the encrypted drive doesn't behave as expected, and errors or events that are related to the TPM are occurring, see [BitLocker and TPM: other known issues](ts-bitlocker-tpm-issues.md).
 
 - If BitLocker or the encrypted drive doesn't behave as expected, see [BitLocker configuration: known issues](ts-bitlocker-config-issues.md).
 
