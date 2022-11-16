@@ -24,6 +24,8 @@ This document describes Windows Hello for Business functionalities or scenarios 
 ✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust.md), [key trust](hello-how-it-works-technology.md#key-trust)\.
 ✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology.md#hybrid-azure-ad-join).
 
+<br>
+
 ---
 Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
 
@@ -39,7 +41,9 @@ Windows Hello for Business supports using a certificate as the supplied credenti
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
 
 Expand the following sections to learn more about the process.
+
 <br>
+
 <details>
 <summary><b>Create a Windows Hello for Business certificate template</b></summary>
 
@@ -91,6 +95,7 @@ Follow these steps to create a certificate template:
 </details>
 
 <br>
+
 <details>
 <summary><b>Request a certificate</b></summary>
 
@@ -117,7 +122,9 @@ Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may
 Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
 Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
+
 <br>
+
 <details>
 <summary><b>Create a policy in Intune</b></summary>
 
