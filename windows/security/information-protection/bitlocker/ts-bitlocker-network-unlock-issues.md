@@ -30,21 +30,21 @@ This article describes several known issues that you may encounter when you use 
 ## Tip: Detect whether BitLocker Network Unlock is enabled on a specific computer
 
 > [!TIP]
-> BitLocker Network Unlock can be detetected if it is enabled on a specific computer use the following steps on UEFI computers:
+> BitLocker Network Unlock can be detected if it is enabled on a specific computer use the following steps on UEFI computers:
 >
 > 1. Open an elevated command prompt window and run the following command:
 >
->   ``` syntax
->   manage-bde.exe -protectors -get <Drive>
->   ```
+>    ``` syntax
+>    manage-bde.exe -protectors -get <Drive>
+>    ```
 >
-> For example:
+>    For example:
 >
->   ``` syntax
->   manage-bde.exe -protectors -get C:
->   ```
+>    ``` syntax
+>    manage-bde.exe -protectors -get C:
+>    ```
 >
-> If the output of this command includes a key protector of type **TpmCertificate (9)**, the configuration is correct for BitLocker Network Unlock.
+>    If the output of this command includes a key protector of type **TpmCertificate (9)**, the configuration is correct for BitLocker Network Unlock.
 >
 > 2. Start Registry Editor, and verify the following settings:
 >
@@ -54,7 +54,11 @@ This article describes several known issues that you may encounter when you use 
 >      - **Type**: `REG_DWORD`
 >      - **Value**: `OSManageNKP` equal to `1` (True)
 >
->    2. The registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates` has an entry whose name matches the name of the certificate thumbprint of the Network Unlock key protector that you found in step 1.
+>    2. The registry key:
+>
+>      `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates`
+>
+>      has an entry whose name matches the name of the certificate thumbprint of the Network Unlock key protector that you found in step 1.
 
 ## On a Surface Pro 4 device, BitLocker Network Unlock doesn't work because the UEFI network stack is incorrectly configured
 
