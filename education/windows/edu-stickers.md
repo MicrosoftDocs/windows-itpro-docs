@@ -51,6 +51,10 @@ Try this policy in your tenant:
 https://developer.microsoft.com/en-us/graph/graph-explorer?request=deviceManagement%2FdeviceConfigurations&method=POST&version=beta&GraphUrl=https://graph.microsoft.com&requestBody=eyJpZCI6IjAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCIsImRpc3BsYXlOYW1lIjoiU3RpY2tlcnMiLCJyb2xlU2NvcGVUYWdJZHMiOlsiMCJdLCJAb2RhdGEudHlwZSI6IiNtaWNyb3NvZnQuZ3JhcGgud2luZG93czEwQ3VzdG9tQ29uZmlndXJhdGlvbiIsIm9tYVNldHRpbmdzIjpbeyJvbWFVcmkiOiIuL1ZlbmRvci9NU0ZUL1BvbGljeS9Db25maWcvU3RpY2tlcnMvRW5hYmxlU3RpY2tlcnMiLCJkaXNwbGF5TmFtZSI6IkVuYWJsZVN0aWNrZXJzIiwiQG9kYXRhLnR5cGUiOiIjbWljcm9zb2Z0LmdyYXBoLm9tYVNldHRpbmdJbnRlZ2VyIiwidmFsdWUiOjF9XX0=
 ```
 
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/&requestBody={"id":"00-0000-0000-0000-000000000000","displayName":"Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
+```
+
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To configure devices using a provisioning package, [create a provisioning package][WIN-1] using Windows Configuration Designer (WCD) with the following settings:
