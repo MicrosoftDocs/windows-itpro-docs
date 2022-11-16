@@ -1,6 +1,6 @@
 ---
-title: Deploy certificates to cloud Kerberos trust and key trust users to enable RDP
-description: Learn how to deploy certificates to a cloud Kerberos trust and key trust user to enable remote desktop with supplied credentials.
+title: Deploy certificates for remote desktop sign-in
+description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
 ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
@@ -17,7 +17,7 @@ appliesto:
 ms.technology: itpro-security
 ---
 
-# Deploy certificates to cloud Kerberos trust and key trust users for RDP authentication
+# Deploy certificates for remote desktop (RDP) sign-in
 
 This document describes Windows Hello for Business functionalities or scenarios that apply to:\
 ✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
@@ -113,38 +113,36 @@ Follow these steps to create a certificate template:
 > [!NOTE]
 > This process is applicable to both *Azure AD joined* and *hybrid Azure AD joined* devices that are managed via Intune.
 
-Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PFX via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-scep-configure).
+Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) via Intune. For guidance deploying the required infrastructure, refer to:
 
-Next you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD Joined Devices using a Trusted root certificate profile with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
+- [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune][MEM-1]
+- [Configure and use PKCS certificates with Intune][MEM-2]
+
+Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
 Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
 
 <br>
 <details>
-<summary><b>Create a SCEP profile in Intune</b></summary>
+<summary><b>Create a policy in Intune</b></summary>
 
-Proceed as follows:
+This section describes how to configure a SCEP policy in Intune. Similar steps can be followed to configure a PKCS policy.
 
-1. Sign in to the Microsoft [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
-1. Navigate to Devices \> Configuration Profiles \> Create profile
-1. Enter the following properties:
-    1. For Platform, select **Windows 10 and later**
-    1. For Profile, select **SCEP Certificate**
-    1. Click **Create**
-1. In **Basics**, enter the following parameters:
-    1. **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is SCEP profile for entire company
-    1. **Description**: Enter a description for the profile. This setting is optional, but recommended
-    1. Select **Next**
-1. In the **Configuration settings**, complete the following:
-    1. For Certificate Type, choose **User**
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Select **Devices > Configuration profiles > Create profile**
+1. Select **Platform > Windows 10 and later** and **Profile type > Templates > SCEP Certificate**
+1. Select **Create**
+1. Provide a **Name** and, optionally, a **Description > Next**
+1. In the *Configuration settings* blade, complete the following:
+    1. For Certificate Type, select **User**
     1. For Subject name format, set it to **CN={{UserPrincipalName}}**
     1. Under Subject alternative name, select **User principal name (UPN)** from the drop-down menu and set the value to **CN={{UserPrincipalName}}**
     1. For Certificate validity period, set a value of your choosing
-    1. For Key storage provider (KSP), choose **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
-    1. For Key usage, choose **Digital Signature**
-    1. For Key size (bits), choose **2048**
-    1. For Hash algorithm, choose **SHA-2**
-    1. Under Root Certificate, click **+Root Certificate** and select the trusted certificate profile you created earlier for the Root CA Certificate.
+    1. For Key storage provider (KSP), select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
+    1. For Key usage, select **Digital Signature**
+    1. For Key size (bits), select **2048**
+    1. For Hash algorithm, select **SHA-2**
+    1. Under Root Certificate, select **+Root Certificate** and select the trusted certificate profile you created earlier for the Root CA Certificate
     1. Under Extended key usage, add the following:
 
         | Name | Object Identifier | Predefined Values |
@@ -152,12 +150,15 @@ Proceed as follows:
         | Smart Card Logon | 1.3.6.1.4.1.311.20.2.2 | Smart Card Logon |
         | Client Authentication | 1.3.6.1.5.5.7.3.2 | Client Authentication |
 
-    1. For Renewal threshold (%), set a value of your choosing.
-    1. For SCEP Server URLs, provide the public endpoint that you configured during the deployment of your SCEP infrastructure.
-    1. Click **Next**
-1. In Assignments, target the devices or users who should receive a certificate and click **Next**
-1. In Applicability Rules, provide additional issuance restrictions if required and click **Next**
-1. In Review + create, click **Create**
+    1. For Renewal threshold (%), set a value of your choosing
+    1. For SCEP Server URLs, provide the public endpoint that you configured during the deployment of your SCEP infrastructure
+    1. Select **Next**
+1. In the *Assignments*, target the devices or users who should receive a certificate and select **Next**
+1. In the *Applicability Rules* blade, provide additional issuance restrictions if needed and select **Next**
+1. In the *Review + create* blade, select **Create**
+
+For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
+To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
 
 </details>
 
@@ -175,9 +176,9 @@ Once the Intune policy is created, targeted clients will request a certificate d
 
 ## Using non-Microsoft Enterprise Certificate Authorities
 
-If you are using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](/mem/intune/protect/certificate-authority-add-scep-overview).
+If you are using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune][MEM-6].
 
-As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest](https://www.powershellgallery.com/packages/Generate-CertificateRequest) PowerShell commandlet.
+As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest][HTTP-1] PowerShell commandlet.
 
 The `Generate-CertificateRequest` commandlet will generate an *.inf* file for a pre-existing Windows Hello for Business key. The *.inf* can be used to generate a certificate request manually using `certreq.exe`. The commandlet will also generate a *.req* file, which can be submitted to your PKI for a certificate.
 
@@ -185,6 +186,15 @@ The `Generate-CertificateRequest` commandlet will generate an *.inf* file for a 
 
 After adding the certificate using an approach from any of the previous sections, you can RDP to any Windows device or server in the same Forest as the user's Active Directory account, provided the PKI certificate chain for the issuing certificate authority is deployed to that target server.
 
-1. Open the Remote Desktop Client (`%windir%\system32\mstsc.exe`) on the client where the authentication certificate has been deployed
+1. Open the Remote Desktop Client (`mstsc.exe`) on the client where the authentication certificate has been deployed
 1. Attempt an RDP session to a target server
 1. Use the certificate credential protected by your Windows Hello for Business gesture to authenticate
+
+[MEM-1]: /mem/intune/protect/certificates-scep-configure
+[MEM-2]: /mem/intune/protect/certificates-pfx-configure
+[MEM-3]: /mem/intune/protect/certificates-profile-scep
+[MEM-4]: /mem/intune/protect/certificates-pfx-configure
+[MEM-5]: /mem/intune/protect/certificates-trusted-root
+[MEM-6]: /mem/intune/protect/certificate-authority-add-scep-overview
+
+[HTTP-1]: https://www.powershellgallery.com/packages/Generate-CertificateRequest

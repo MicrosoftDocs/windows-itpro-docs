@@ -105,7 +105,7 @@
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
-    - name: Deploy certificates for remote desktop (RDP) authentication
+    - name: Deploy certificates for remote desktop (RDP) sign-in
       href: hello-deployment-rdp-certs.md
   - name: Manage Windows Hello for Business in your organization
     href: hello-manage-in-organization.md
@@ -121,7 +121,7 @@
       href: hello-feature-dynamic-lock.md
     - name: Multi-factor Unlock
       href: feature-multifactor-unlock.md
-    - name: Remote Desktop
+    - name: Remote desktop (RDP) sign-in
       href: hello-feature-remote-desktop.md
   - name: Troubleshooting
     items:
