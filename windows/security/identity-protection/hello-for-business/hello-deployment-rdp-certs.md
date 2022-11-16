@@ -39,7 +39,7 @@ Windows Hello for Business supports using a certificate as the supplied credenti
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template*, and then deploy certificates based on that template.
 
 Expand the following sections to learn more about the process.
-
+<br>
 <details>
 <summary><b>Create a Windows Hello for Business certificate template</b></summary>
 
@@ -90,6 +90,7 @@ Follow these steps to create a certificate template:
 
 </details>
 
+<br>
 <details>
 <summary><b>Request a certificate</b></summary>
 
@@ -116,7 +117,7 @@ Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may
 Next, you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD joined Devices using a *Trusted root certificate* policy with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune][MEM-5].
 
 Once these requirements are met, a policy can be configured in Intune that provisions certificates for the users on the targeted device.
-
+<br>
 <details>
 <summary><b>Create a policy in Intune</b></summary>
 
@@ -153,7 +154,7 @@ For more information how to configure SCEP policies, see [Configure SCEP certifi
 To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
 
 </details>
-
+<br>
 <details>
 <summary><b>Request a certificate</b></summary>
 Once the Intune policy is created, targeted clients will request a certificate during their next policy refresh cycle. To validate that the certificate is present in the user store, follow these steps:
