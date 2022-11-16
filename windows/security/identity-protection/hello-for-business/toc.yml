@@ -91,7 +91,7 @@
         href: hello-key-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-key-trust-policy-settings.md
-    - name: Active Directory domain join with certificate trust deployment
+    - name: Active Directory domain join with certificate trust
       items: 
       - name: Certificate trust deployment
         href: hello-deployment-cert-trust.md
@@ -105,7 +105,7 @@
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
-    - name: Deploy certificates for remote desktop (RDP) sign-in
+    - name: Deploy certificates for RDP sign-in
       href: hello-deployment-rdp-certs.md
   - name: Manage Windows Hello for Business in your organization
     href: hello-manage-in-organization.md
