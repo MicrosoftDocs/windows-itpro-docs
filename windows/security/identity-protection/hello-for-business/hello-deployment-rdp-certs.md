@@ -164,9 +164,9 @@ Proceed as follows:
 <br>
 <details>
 <summary><b>Request a certificate</b></summary>
-Once the configuration profile has been created, targeted clients will receive the profile from Intune on their next refresh cycle. You should find a new certificate in the user store. To validate the certificate is present, do the following steps:
+Once the Intune policy is created, targeted clients will request a certificate during their next policy refresh cycle. To validate that the certificate is present in the user store, follow these steps:
 
-1. Sign in to a client that is targeted by the Intune policy
+1. Sign in to a client targeted by the Intune policy
 1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
 1. In the left pane of the MMC, expand **Personal** and select **Certificates**
 1. In the right-hand pane of the MMC, check for the new certificate
