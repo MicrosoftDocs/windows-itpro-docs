@@ -72,7 +72,7 @@ Follow these steps to create a certificate template:
 1. Execute the following command, replacing `<TemplateName>` with the **Template display name** noted above
 
     ```cmd
-    certutil -dstemplate <TemplateName> > <TemplateName.txt>
+    certutil.exe -dstemplate <TemplateName> > <TemplateName.txt>
     ```
 
 1. Open the text file created by the command above.
@@ -85,7 +85,7 @@ Follow these steps to create a certificate template:
 1. Update the certificate template by executing the following command:
 
     ```cmd
-    certutil -dsaddtemplate <TemplateName.txt>
+    certutil.exe -dsaddtemplate <TemplateName.txt>
     ```
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
@@ -108,7 +108,7 @@ Follow these steps to create a certificate template:
 
 </details>
 
-## Deploy certificates via Microsoft Intune
+## Deploy certificates via Intune
 
 > [!NOTE]
 > This process is applicable to both *Azure AD joined* and *hybrid Azure AD joined* devices that are managed via Intune.
@@ -172,7 +172,7 @@ Once the Intune policy is created, targeted clients will request a certificate d
 
 </details>
 
-## Using non-Microsoft Enterprise Certificate Authorities
+## Use third-party certification authorities
 
 If you're using a non-Microsoft PKI, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune][MEM-6].
 
@@ -180,7 +180,7 @@ As an alternative to using SCEP or if none of the previously covered solutions w
 
 The `Generate-CertificateRequest` commandlet will generate an *.inf* file for a pre-existing Windows Hello for Business key. The *.inf* can be used to generate a certificate request manually using `certreq.exe`. The commandlet will also generate a *.req* file, which can be submitted to your PKI for a certificate.
 
-## RDP Sign-in with Windows Hello for Business Certificate Authentication
+## RDP sign-in with Windows Hello for Business certificate authentication
 
 After obtaining a certificate, users can RDP to any Windows devices in the same Active Directory forest as the user's Active Directory account.
 
