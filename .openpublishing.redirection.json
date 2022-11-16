@@ -421,6 +421,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/citool-commands.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/operations/citool-commands",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "devices/hololens/hololens-whats-new.md",
       "redirect_url": "/hololens/hololens-release-notes",
       "redirect_document_id": false

@@ -3,8 +3,8 @@ metadata:
   title: Windows Hello for Business Frequently Asked Questions (FAQ)
   description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.   
   keywords: identity, PIN, biometric, Hello, passport
-  ms.prod: m365-security
-  ms.mktglfcycl: deploy
+  ms.prod: windows-client
+  ms.technology: itpro-security
   ms.sitesec: library
   ms.pagetype: security, mobile
   audience: ITPro
@@ -17,7 +17,7 @@ metadata:
     - highpri
   ms.topic: faq
   localizationpriority: medium
-  ms.date: 02/21/2022
+  ms.date: 11/11/2022
   appliesto:
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
@@ -100,7 +100,7 @@ sections:
 
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
-          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in the latest Windows Insiders builds and will be available in the future version of Windows 11.
+          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in Windows 11, version 22H2.
 
       - question: Why does authentication fail immediately after provisioning hybrid key trust?
         answer: |
