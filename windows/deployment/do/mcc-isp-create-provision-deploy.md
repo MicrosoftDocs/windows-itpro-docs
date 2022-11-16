@@ -96,7 +96,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 | ID | Description |
 |---|---|
-| Customer ID | The Azure subscription ID that the cache node is created in. |
+| Customer ID | A unique alphanumeric ID that the cache nodes are associated with. |
 | Cache node ID | The unique alphanumeric ID of the cache node being provisioned. |
 | Customer Key | The unique alphanumeric ID that provides secure authentication of the cache node to Delivery Optimization services. |
 | Cache node name | The name of the cache node. |
