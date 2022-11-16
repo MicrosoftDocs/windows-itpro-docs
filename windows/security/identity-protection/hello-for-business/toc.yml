@@ -47,9 +47,9 @@
         href: hello-hybrid-aadj-sso-base.md
       - name: Using certificates for on-premises SSO
         href: hello-hybrid-aadj-sso-cert.md
-    - name: Hybrid Azure AD join key trust
+    - name: Hybrid Azure AD join with key trust
       items: 
-      - name: Hybrid Azure AD join with key trust
+      - name: Key trust deployment
         href: hello-hybrid-key-trust.md
       - name: Prerequisites
         href: hello-hybrid-key-trust-prereqs.md
@@ -65,7 +65,7 @@
         href: hello-hybrid-key-whfb-provision.md
     - name: Hybrid Azure AD join with certificate trust
       items: 
-      - name: Hybrid Azure AD join certificate trust deployment
+      - name: Certificate trust deployment
         href: hello-hybrid-cert-trust.md
       - name: Prerequisites
         href: hello-hybrid-cert-trust-prereqs.md
