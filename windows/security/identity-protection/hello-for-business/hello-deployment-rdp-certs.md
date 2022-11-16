@@ -28,16 +28,16 @@ This document describes Windows Hello for Business functionalities or scenarios 
 
 ---
 
-Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to a server or other device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
+Windows Hello for Business supports using a certificate as the supplied credential when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
 
 - Deploy certificates to hybrid joined devices using an on-premises Active Directory Certificate Services enrollment policy
-- Deploy certificates to hybrid or Azure AD-joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune
-- Work with non-Microsoft enterprise certificate authorities
+- Deploy certificates to hybrid or Azure AD-joined devices using Intune
+- Work with third-party PKIs
 
 ## Deploy certificates via Active Directory Certificate Services (AD CS)
 
 > [!NOTE]
-> This process is applicable to hybrid Azure AD joined devices only.
+> This process is applicable to *hybrid Azure AD joined* devices only.
 
 To deploy certificates using an on-premises Active Directory Certificate Services enrollment policy, you must first create a *certificate template* and then deploy certificates based on that template.
 
@@ -54,34 +54,18 @@ Follow these steps to create a certificate template:
 1. In the MMC, expand the CA name and right-click **Certificate Templates > Manage**
 1. The Certificate Templates console opens. All of the certificate templates are displayed in the details pane
 1. Right-click the **Smartcard Logon** template and select **Duplicate Template**
+1. Use the following table to configure the template:
 
-    ![Duplicating Smartcard Template.](images/rdpcert/duplicatetemplate.png)
+    | Tab Name | Configurations |
+    | --- | --- |
+    | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Authority list*</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Recipient list*</li></ul>|
+    | *General* | <ul><li>Specify a Template display name, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li></ul>|
+    | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
+    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it is not already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name is not already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul>|
+    |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul>|
+    |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul>|
+    |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them|
 
-1. On the **Compatibility** tab:
-    1. Clear the **Show resulting changes** check box
-    1. Select **Windows Server 2012 or Windows Server 2012 R2** from the Certification Authority list
-    1. Select **Windows Server 2012 or Windows Server 2012 R2** from the Certification Recipient list
-1. On the **General** tab:
-    1. Specify a Template display name, for example *WHfB Certificate Authentication*
-    1. Set the validity period to the desired value
-    1. Take note of the Template name for later, which should be the same as the Template display name minus spaces (**WHfBCertificateAuthentication** in this example)
-1. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**
-1. On the **Subject Name** tab:
-    1. Select the **Build from this Active Directory** information button if it is not already selected
-    1. Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name is not already selected
-    1. Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**
-1. On the **Request Handling** tab:
-    1. Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose
-    1. Select the **Renew with same key** check box
-    1. Select **Prompt the user during enrollment**
-1. On the **Cryptography** tab:
-    1. Set the Provider Category to **Key Storage Provider**
-    1. Set the Algorithm name to **RSA**
-    1. Set the minimum key size to **2048**
-    1. Select **Requests must use one of the following providers**
-    1. Select **Microsoft Software Key Storage Provider**
-    1. Set the Request hash to **SHA256**
-1. On the **Security** tab, add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them
 1. Select **OK** to finalize your changes and create the new template. Your new template should now appear in the list of Certificate Templates
 1. Close the Certificate Templates console
 1. Open an elevated command prompt and change to a temporary working directory
@@ -92,9 +76,9 @@ Follow these steps to create a certificate template:
     ```
 
 1. Open the text file created by the command above.
-    1. Delete the last line of the output from the file that reads\
+    - Delete the last line of the output from the file that reads\
       `CertUtil: -dsTemplate command completed successfully.`
-    1. Modify the line that reads\
+    - Modify the line that reads\
       `pKIDefaultCSPs = "1,Microsoft Software Key Storage Provider"` to\
       `pKIDefaultCSPs = "1,Microsoft Passport Key Storage Provider"`
 1. Save the text file
@@ -105,10 +89,7 @@ Follow these steps to create a certificate template:
     ```
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New > Certificate Template to Issue**
-
-    ![Selecting Certificate Template to Issue.](images/rdpcert/certificatetemplatetoissue.png)
-
-1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list.
+1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and select **OK**. It can take some time for the template to replicate to all servers and become available in this list
 1. After the template replicates, in the MMC, right-click in the Certification Authority list, select **All Tasks > Stop Service**. Right-click the name of the CA again, select **All Tasks > Start Service**
 
 </details>
@@ -118,11 +99,8 @@ Follow these steps to create a certificate template:
 <summary><b>Request a certificate</b></summary>
 
 1. Sign in to a client that is hybrid Azure AD joined, ensuring that the client has line of sight to a domain controller and the issuing CA
-1. Open the **Certificates - Current User** Microsoft Management Console (MMC) - `%windir%\system32\certmgr.msc`
+1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
 1. In the left pane of the MMC, right-click **Personal > All Tasks > Request New Certificate…**
-
-    ![Request a new certificate.](images/rdpcert/requestnewcertificate.png)
-
 1. On the Certificate Enrollment screen, select **Next**
 1. Under *Select Certificate Enrollment Policy*, select **Active Directory Enrollment Policy > Next**
 1. Under *Request Certificates*, select the check-box for the certificate template you created in the previous section (*WHfB Certificate Authentication*) and then select **Enroll**
@@ -188,12 +166,10 @@ Proceed as follows:
 <summary><b>Request a certificate</b></summary>
 Once the configuration profile has been created, targeted clients will receive the profile from Intune on their next refresh cycle. You should find a new certificate in the user store. To validate the certificate is present, do the following steps:
 
-1. Open the Certificates - Current User console (%windir%\system32\certmgr.msc)
+1. Sign in to a client that is targeted by the Intune policy
+1. Open the **Certificates - Current User** Microsoft Management Console (MMC). To do so, you can execute the command `certmgr.msc`
 1. In the left pane of the MMC, expand **Personal** and select **Certificates**
 1. In the right-hand pane of the MMC, check for the new certificate
-
-> [!NOTE]
-> This infrastructure may also deploy the same certificates to co-managed or modern-managed Hybrid Azure Active Directory-Joined devices using Intune Policies.
 
 </details>
 
