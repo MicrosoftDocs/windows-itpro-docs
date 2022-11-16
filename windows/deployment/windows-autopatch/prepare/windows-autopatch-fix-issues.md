@@ -70,3 +70,27 @@ Windows Autopatch requires the following licenses:
 | Result | Meaning |
 | ----- | ----- |
 | Not ready | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium, and Microsoft Intune are required. For more information, see [more about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
+
+## Submit a support request
+
+> [!IMPORTANT]
+> Make sure you've verified the admin contacts. The Windows Autopatch Service Engineering Team will contact these individuals for assistance with troubleshooting issues.
+
+You can submit support tickets to Microsoft on the Windows Autopatch enrollment tool. Email is the recommended approach to interact with the Windows Autopatch Service Engineering Team.
+
+**To submit a new support request:**
+
+1. If the Readiness assessment tool fails, remediation steps can be found by clicking on **View details** under **Management settings** and then clicking on the individual check. **Contact Support** button will be available below remediation instructions in the fly-in-pane. 
+2. Enter your question(s) and/or a description of the problem.
+1. Review all the information you provided for accuracy.
+1. When you're ready, select **Create**.
+
+### Manage an active support request
+
+The primary contact for the support request will receive email notifications when a case is created, assigned to a service engineer to investigate, and mitigated. If, at any point, you have a question about the case, the best way to get in touch is to reply directly to one of those emails. If we have questions about your request or need more details, we'll email the primary contact listed on the support requests.
+
+**To view all your active pre-enrollment support requests:**
+
+1. Sign into the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and navigate to the **Tenant Administration** menu.
+1. In the **Windows Autopatch** section, select **Tenant Enrollment**.
+1. On the **Support history** tab, you can view the list of call support cases, or select individual case to view the details.
