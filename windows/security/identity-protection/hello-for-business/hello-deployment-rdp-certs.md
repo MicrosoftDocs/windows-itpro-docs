@@ -132,30 +132,26 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
 1. Select **Devices > Configuration profiles > Create profile**
 1. Select **Platform > Windows 10 and later** and **Profile type > Templates > SCEP Certificate**
 1. Select **Create**
-1. Provide a **Name** and, optionally, a **Description > Next**
-1. In the *Configuration settings* blade, complete the following:
-    1. For Certificate Type, select **User**
-    1. For Subject name format, set it to **CN={{UserPrincipalName}}**
-    1. Under Subject alternative name, select **User principal name (UPN)** from the drop-down menu and set the value to **CN={{UserPrincipalName}}**
-    1. For Certificate validity period, set a value of your choosing
-    1. For Key storage provider (KSP), select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
-    1. For Key usage, select **Digital Signature**
-    1. For Key size (bits), select **2048**
-    1. For Hash algorithm, select **SHA-2**
-    1. Under Root Certificate, select **+Root Certificate** and select the trusted certificate profile you created earlier for the Root CA Certificate
-    1. Under Extended key usage, add the following:
-
-        | Name | Object Identifier | Predefined Values |
-        |------|-------------------|-------------------|
-        | Smart Card Logon | 1.3.6.1.4.1.311.20.2.2 | Smart Card Logon |
-        | Client Authentication | 1.3.6.1.5.5.7.3.2 | Client Authentication |
-
-    1. For Renewal threshold (%), set a value of your choosing
-    1. For SCEP Server URLs, provide the public endpoint that you configured during the deployment of your SCEP infrastructure
-    1. Select **Next**
-1. In the *Assignments*, target the devices or users who should receive a certificate and select **Next**
-1. In the *Applicability Rules* blade, provide additional issuance restrictions if needed and select **Next**
-1. In the *Review + create* blade, select **Create**
+1. In the *Basics* blade, provide a **Name** and, optionally, a **Description > Next**
+1. In the *Configuration settings* blade, use the following table to configure the policy:
+    | Setting| Configurations |
+    | --- | --- |
+    |*Certificate Type*| User |
+    |*Subject name format* | `CN={{UserPrincipalName}}` |
+    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `CN={{UserPrincipalName}}`
+    |*Certificate validity period* | Configure a value of your choosing|
+    |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
+    |*Key usage*| **Digital Signature**|
+    |*Key size (bits)* | **2048**|
+    |*For Hash algorithm*|**SHA-2**|
+    |*Root Certificate*| Select **+Root Certificate** and select the trusted certificate profile created earlier for the Root CA Certificate|
+    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Smart Card Logon**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
+    |*Renewal threshold (%)*|Configure a value of your choosing|
+    |*SCEP Server URLs*|Provide the public endpoint(s) that you configured during the deployment of your SCEP infrastructure|
+1. Select **Next**
+1. In the *Assignments* bladeAssign the policy to a security group that contains as members the devices or users that you want to configure and select **Next**
+1. In the *Applicability Rules* blade, provide additional issuance restrictions, if needed, and select **Next**
+1. In the *Review + create* blade, review the policy configuration and select **Create**
 
 For more information how to configure SCEP policies, see [Configure SCEP certificate profiles in Intune][MEM-3].
 To configure PKCS policies, see [Configure and use PKCS certificate with Intune][MEM-4].
