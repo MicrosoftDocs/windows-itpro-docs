@@ -48,7 +48,7 @@ You'll need the following components to complete this lab:
 |**An account with Azure Active Directory (Azure AD) Premium license**|This guide will describe how to get a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
 
 > [!NOTE]
-> When using a VM for Autopilot testing, assign at least 2 processors and 4gb of memory. *Note: The [minimum system requirements](/windows/whats-new/windows-11-requirements#virtual-machine-support) for Windows 11 are 2 processors and 4gb memory.
+> When using a VM for Autopilot testing, assign at least two processors and 4 GB of memory.
 
 ## Procedures
 
