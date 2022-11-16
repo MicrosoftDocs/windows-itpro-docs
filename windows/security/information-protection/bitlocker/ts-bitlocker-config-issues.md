@@ -35,7 +35,7 @@ By using the new conversion model, sensitive data can be stored on the drive as 
 
 ### Other BitLocker enhancements
 
-Several other areas of BitLocker were improved in version of Windows released after Windows 7:
+Several other areas of BitLocker were improved in versions of Windows released after Windows 7:
 
 - **New encryption algorithm, XTS-AES** - Added in Windows 10 version 1511, this algorithm provides additional protection from a class of attacks on encrypted data that rely on manipulating cipher text to cause predictable changes in plain text.
 
@@ -138,7 +138,7 @@ In the guest VM domain controller **Applications and Services Logs** > **Directo
 
 When this issue occurs, the **Active Directory Domain Services (NTDS) VSS Writer** will display the following error when the **`vssadmin.exe list writers`** command is run:
 
-``` error
+``` Error
 Writer name: 'NTDS'
  Writer Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}
  Writer Instance Id: {08321e53-4032-44dc-9b03-7a1a15ad3eb8}
