@@ -123,16 +123,16 @@
       href: feature-multifactor-unlock.md
     - name: Remote desktop (RDP) sign-in
       href: hello-feature-remote-desktop.md
-  - name: Troubleshooting
-    items:
-    - name: Known deployment issues
-      href: hello-deployment-issues.md
-    - name: Errors during PIN creation
-      href: hello-errors-during-pin-creation.md
-    - name: Event ID 300 - Windows Hello successfully created
-      href: hello-event-300.md
-    - name: Windows Hello and password changes
-      href: hello-and-password-changes.md
+- name: Troubleshooting
+  items:
+  - name: Known deployment issues
+    href: hello-deployment-issues.md
+  - name: Errors during PIN creation
+    href: hello-errors-during-pin-creation.md
+  - name: Event ID 300 - Windows Hello successfully created
+    href: hello-event-300.md
+  - name: Windows Hello and password changes
+    href: hello-and-password-changes.md
 - name: Reference
   items:
   - name: Technology and terminology
