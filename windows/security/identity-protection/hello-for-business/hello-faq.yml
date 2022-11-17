@@ -18,9 +18,8 @@ metadata:
   ms.topic: faq
   localizationpriority: medium
   ms.date: 11/11/2022
-  appliesto:
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+  appliesto: 
+    - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
 summary: |

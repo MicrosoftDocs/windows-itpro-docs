@@ -1,24 +1,15 @@
 ---
 title: Deploying Certificates to Key Trust Users to Enable RDP
 description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - ContentEngagementFY23
-ms.topic: article
-localizationpriority: medium
 ms.date: 02/22/2021
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Key trust</b>
-  - ✅ <b>Cloud Kerberos trust</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Key trust</b>
+- ✅ <b>Kerberos trust</b>
 ---
 
 # Deploy Certificates to Key Trust and Cloud Kerberos Trust Users to Enable RDP

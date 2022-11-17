@@ -1,19 +1,9 @@
 ---
 title: How Windows Hello for Business works - Provisioning
 description: Explore the provisioning flows for Windows Hello for Business, from within a variety of environments.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 2/15/2022
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # Windows Hello for Business Provisioning
 

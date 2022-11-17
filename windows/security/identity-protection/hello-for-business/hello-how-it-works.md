@@ -1,18 +1,9 @@
 ---
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help your users authenticate to services.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 05/05/2018
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
-ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # How Windows Hello for Business works in Windows Devices
 

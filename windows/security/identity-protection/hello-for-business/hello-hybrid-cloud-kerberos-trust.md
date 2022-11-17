@@ -1,18 +1,9 @@
 ---
 title: Hybrid cloud Kerberos trust deployment (Windows Hello for Business)
 description: Learn the information you need to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 11/1/2022
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H2 and later</a>
-ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
 ---
 # Hybrid cloud Kerberos trust deployment
 

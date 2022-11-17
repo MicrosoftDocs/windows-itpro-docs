@@ -1,16 +1,9 @@
 ---
 title: Reset-security-key
 description: Windows 10 and Windows 11 enables users to sign in to their device using a security key. How to reset a security key
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 11/14/2018
-ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # How to reset a Microsoft-compatible security key? 
 > [!Warning]

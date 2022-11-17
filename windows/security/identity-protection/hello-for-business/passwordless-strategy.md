@@ -1,24 +1,15 @@
 ---
 title: Password-less strategy
 description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
 ms.topic: conceptual
-localizationpriority: medium
 ms.date: 05/24/2022
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 
 # Password-less strategy
 
-This article describes Windows' password-less strategy. Learn how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
+This article describes Windows' password-less strategy and how Windows Hello for Business implements this strategy.
 
 ## Four steps to password freedom
 

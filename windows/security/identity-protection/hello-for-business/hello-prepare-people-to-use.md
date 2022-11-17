@@ -1,19 +1,9 @@
 ---
 title: Prepare people to use Windows Hello (Windows)
 description: When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 08/19/2018
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # Prepare people to use Windows Hello
 

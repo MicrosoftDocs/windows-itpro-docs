@@ -1,25 +1,15 @@
 ---
 title: Azure Active Directory join cloud only deployment
 description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device.
-ms.prod: windows-client
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 06/23/2021
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: prsriva
-manager: aaroncz
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # Azure Active Directory join cloud only deployment
 
 ## Introduction
 
-When you Azure Active Directory (Azure AD) join a Windows 10 or Windows 11 device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud only environment, then there's no additional configuration needed.
+When you Azure Active Directory (Azure AD) join a Windows device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud-only environment, then there's no additional configuration needed.
 
 You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. Instructions on how to disable Windows Hello for Business enrollment in a cloud only environment are included below.
 

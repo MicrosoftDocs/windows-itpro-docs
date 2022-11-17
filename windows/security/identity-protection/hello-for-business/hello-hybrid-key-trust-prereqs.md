@@ -1,20 +1,11 @@
 ---
 title: Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 4/30/2021
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Key trust</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites
 

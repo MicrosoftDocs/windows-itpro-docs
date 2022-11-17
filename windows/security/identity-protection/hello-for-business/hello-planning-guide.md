@@ -1,20 +1,9 @@
 ---
 title: Planning a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: 
-  - M365-identity-device-management
-ms.topic: article
-localizationpriority: conceptual
 ms.date: 09/16/2020
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # Planning a Windows Hello for Business Deployment
 
