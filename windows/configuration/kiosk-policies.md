@@ -9,9 +9,6 @@ ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
 ms.technology: itpro-configure
-appliesto:
-- Windows 10 Pro, Enterprise, and Education
-- Windows 11
 ---
 
 # Policies enforced on kiosk devices
