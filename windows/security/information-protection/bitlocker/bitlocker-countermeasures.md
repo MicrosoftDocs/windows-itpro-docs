@@ -141,6 +141,12 @@ These files are secured on an encrypted volume by default when BitLocker is enab
 
 Enable secure boot and mandatorily prompt a password to change BIOS settings. For customers requiring protection against these advanced attacks, configure a TPM+PIN protector, disable Standby power management, and shut down or hibernate the device before it leaves the control of an authorized user.
 
+### Tricking BitLocker to pass the key to a rogue operating system
+
+An attacker might modify the boot manager configuration database (BCD) which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code will make sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don’t recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
+ 
+An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This will not succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
+
 ## Attacker countermeasures
 
 The following sections cover mitigations for different types of attackers.
