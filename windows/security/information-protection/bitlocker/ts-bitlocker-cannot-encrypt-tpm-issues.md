@@ -1,5 +1,5 @@
 ---
-title: BitLocker can't encrypt a drive known TPM issues
+title: BitLocker cannot encrypt a drive known TPM issues
 description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive that can be attributed to the TPM
 ms.reviewer: kaushika
 ms.technology: itpro-security
@@ -14,7 +14,7 @@ ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
-# BitLocker can't encrypt a drive: known TPM issues
+# BitLocker cannot encrypt a drive: known TPM issues
 
 This article describes common issues that affect the Trusted Platform Module (TPM) that might prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
 
@@ -37,7 +37,7 @@ To resolve this issue, the TPM needs to be reset and cleared. The TPM can be res
 
 1. Open an elevated PowerShell window and run the following script:
 
-   ``` powershell
+   ```powershell
    $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm"
    $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus
    if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
@@ -111,7 +111,7 @@ To verify this issue is occurring, use one of the following two methods:
 
 1. To review the TPM information for the affected computer, open an elevated Windows PowerShell window and run the following command:
 
-   ``` powershell
+   ```powershell
    Get-ADComputer -Filter {Name -like "ComputerName"} -Property * | Format-Table name,msTPM-TPMInformationForComputer
    ```
 
@@ -145,7 +145,7 @@ The issue can be resolved with the following steps:
 
 4. Open an elevated PowerShell window, and run the following command:
 
-   ``` syntax
+   ```cmd
    cscript.exe <Path>\Add-TPMSelfWriteACE.vbs
    ```
 

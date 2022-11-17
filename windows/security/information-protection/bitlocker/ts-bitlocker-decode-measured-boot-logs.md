@@ -62,7 +62,7 @@ To use `TBSLogGenerator.exe`, follow these steps:
 
 1. Run the following command:
 
-   ``` syntax
+   ```cmd
    TBSLogGenerator.exe -LF <LogFolderName>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.txt
    ```
 
@@ -75,7 +75,7 @@ To use `TBSLogGenerator.exe`, follow these steps:
 
    For example, the following figure shows Measured Boot logs that were collected from a Windows 10 computer and put into the **`C:\MeasuredBoot\`** folder. The figure also shows a Command Prompt window and the command to decode the **`0000000005-0000000000.log`** file:
 
-    ``` syntax
+    ```cmd
     TBSLogGenerator.exe -LF C:\MeasuredBoot\0000000005-0000000000.log > C:\MeasuredBoot\0000000005-0000000000.txt
     ```
 
@@ -104,9 +104,9 @@ To download and install `PCPTool.exe`, go to the Toolkit page, select **Download
 
 To decode a log, run the following command:
 
-``` syntax
+```cmd
 PCPTool.exe decodelog <LogFolderPath>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.xml
-```  
+```
 
 where the variables represent the following values:
 

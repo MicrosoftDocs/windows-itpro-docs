@@ -50,7 +50,7 @@ For Network Unlock to work reliably on computers, the first network adapter on t
 
 The Network Unlock server component is installed on supported versions of Windows Server 2012 and later as a Windows feature that uses Server Manager or Windows PowerShell cmdlets. The feature name is BitLocker Network Unlock in Server Manager and BitLocker-NetworkUnlock in Windows PowerShell. This feature is a core requirement.
 
-Network Unlock requires Windows Deployment Services (WDS) in the environment where the feature will be utilized. Configuration of the WDS installation isn't required; however, the WDS service must be running on the server.
+Network Unlock requires Windows Deployment Services (WDS) in the environment where the feature will be utilized. Configuration of the WDS installation isn't required. However, the WDS service must be running on the server.
 
 The network key is stored on the system drive along with an AES 256 session key and encrypted with the 2048-bit RSA public key of the Unlock server certificate. The network key is decrypted with the help of a provider on a supported version of Windows Server running WDS, and returned encrypted with its corresponding session key.
 
@@ -100,7 +100,7 @@ The BitLocker Network Unlock feature installs the WDS role if it isn't already i
 
 To install the role by using Windows PowerShell, use the following command:
 
-``` powershell
+```powershell
 Install-WindowsFeature WDS-Deployment
 ```
 
@@ -112,7 +112,7 @@ To confirm that the WDS service is running, use the Services Management Console 
 
 To confirm that the service is running using Windows PowerShell, use the following command:
 
-``` powershell
+```powershell
 Get-Service WDSServer
 ```
 
@@ -122,7 +122,7 @@ To install the Network Unlock feature, use Server Manager or Windows PowerShell.
 
 To install the feature by using Windows PowerShell, use the following command:
 
-``` powershell
+```powershell
 Install-WindowsFeature BitLocker-NetworkUnlock
 ```
 
@@ -217,7 +217,7 @@ To create a self-signed certificate, either use the `New-SelfSignedCertificate` 
 
 **Windows PowerShell:**
 
-``` powershell
+```powershell
 New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -Provider "Microsoft Software Key Storage Provider" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt,Sign -KeyLength 2048 -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
 ```
 
@@ -225,13 +225,13 @@ New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=
 
 1. Create a text file with an `.inf` extension, for example:
 
-    ``` syntax
+    ```cmd
     notepad.exe BitLocker-NetworkUnlock.inf
     ```
 
 2. Add the following contents to the previously created file:
 
-    ``` ini
+    ```ini
     [NewRequest]
     Subject="CN=BitLocker Network Unlock certificate"
     ProviderType=0
@@ -252,7 +252,7 @@ New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=
 
 3. Open an elevated command prompt and use the `certreq.exe` tool to create a new certificate. Use the following command, specifying the full path to the file that was created previously along with the file name:
 
-    ``` syntax
+    ```cmd
     certreq.exe -new BitLocker-NetworkUnlock.inf BitLocker-NetworkUnlock.cer
     ```
 
@@ -327,7 +327,7 @@ The configuration file, called bde-network-unlock.ini, must be located in the sa
 
 The subnet policy configuration file must use a **\[SUBNETS\]** section to identify the specific subnets. The named subnets may then be used to specify restrictions in certificate subsections. Subnets are defined as simple name-value pairs, in the common INI format, where each subnet has its own line, with the name on the left of the equal-sign, and the subnet identified on the right of the equal-sign as a Classless Inter-Domain Routing (CIDR) address or range. The key word **ENABLED** is disallowed for subnet names.
 
-``` ini
+```ini
 [SUBNETS]
 SUBNET1=10.185.250.0/24 ; a comment about this subrange could be here, after the semicolon
 SUBNET2=10.185.252.200/28 
@@ -344,7 +344,7 @@ Subnet restrictions are defined within each certificate section by denoting the 
 
 Subnet lists are created by putting the name of a subnet from the **\[SUBNETS\]** section on its own line below the certificate section header. Then, the server will only unlock clients with this certificate on the subnet(s) specified as in the list. For troubleshooting, a subnet can be quickly excluded without deleting it from the section by commenting it out with a prepended semi-colon.
 
-``` ini
+```ini
 [2158a767e1c14e88e27a4c0aee111d2de2eafe60]
 ;Comments could be added here to indicate when the cert was issued, which Group Policy should get it, and so on.
 ;This list shows this cert is allowed to unlock clients only on the SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
@@ -387,7 +387,7 @@ Troubleshooting Network Unlock issues begins by verifying the environment. Many 
 
 - Verify whether the **Network (Certificate Based)** protector is listed on the client. Verification of the protector can be done using either manage-bde or Windows PowerShell cmdlets. For example, the following command will list the key protectors currently configured on the C: drive of the local computer:
 
-  ``` powershell
+  ```powershell
   manage-bde.exe -protectors -get C:
   ```
 
@@ -418,6 +418,9 @@ Gather the following files to troubleshoot BitLocker Network Unlock.
 - The Network Monitor capture on the server that hosts the WDS role, filtered by client IP address.
 
 <!--
+
+REMOVING SECTION DUE TO THE VERSIONS OF WINDOWS THAT THIS SECTION APPLIES TO ARE NO LONGER SUPPORTED.
+
 ## Configure Network Unlock Group Policy settings on earlier versions
 
 Network Unlock and the accompanying Group Policy settings were introduced in Windows Server 2012. However Network Unlock and the accompanying Group Policy settings can be deployed using operating systems that run Windows Server 2008 R2 and Windows Server 2008.
@@ -443,7 +446,7 @@ Follow these steps to configure Network Unlock on these older systems.
 
     Apply the registry settings by running the following `certutil.exe` script (assuming the Network Unlock certificate file is called *BitLocker-NetworkUnlock.cer*) on each computer that runs a client operating system that's designated in the [Applies to](#bitlocker-how-to-enable-network-unlock) list at the beginning of this article.
 
-    ``` syntax
+    ```cmd
             certutil.exe -f -grouppolicy -addstore FVE_NKP BitLocker-NetworkUnlock.cer
             reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v OSManageNKP /t REG_DWORD /d 1 /f
             reg.exe add "HKLM\SOFTWARE\Policies\Microsoft\FVE" /v UseAdvancedStartup /t REG_DWORD /d 1 /f

@@ -49,7 +49,7 @@ sections:
           
           The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information. However, BitLocker doesn't automatically manage this process. The `manage-bde.exe` command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, the following command script can be used from an elevated command prompt:
           
-          ``` powershell
+          ```powershell
           $BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive
           $RecoveryProtector = $BitLocker.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }
           

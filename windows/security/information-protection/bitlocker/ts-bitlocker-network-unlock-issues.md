@@ -32,13 +32,13 @@ This article describes several known issues that may be encountered when BitLock
 >
 > 1. Open an elevated command prompt window and run the following command:
 >
->    ``` syntax
+>    ```cmd
 >    manage-bde.exe -protectors -get <Drive>
 >    ```
 >
 >    For example:
 >
->    ``` syntax
+>    ```cmd
 >    manage-bde.exe -protectors -get C:
 >    ```
 >

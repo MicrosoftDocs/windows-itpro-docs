@@ -50,7 +50,7 @@ BitLocker control panel, and they're appropriate to be used for automated deploy
 
 ## New and changed functionality
 
-To find out what's new in BitLocker for Windows, such as support for the XTS-AES encryption algorithm, see the [BitLocker](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in [What's new in Windows 10, versions 1507 and 1511 for IT Pros](/windows/whats-new/whats-new-windows-10-version-1507-and-1511).
+To find out what's new in BitLocker for Windows, such as support for the XTS-AES encryption algorithm, see [What's new in Windows 10, versions 1507 and 1511 for IT Pros: BitLocker](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker).
 
 ## System requirements
 

@@ -136,7 +136,7 @@ Before a thorough BitLocker recovery process is created, it's recommended to tes
 
 3. At the command prompt, enter the following command:
 
-    ``` syntax
+    ```cmd
     manage-bde.exe -forcerecovery <BitLockerVolume>
     ```
 
@@ -148,7 +148,7 @@ Before a thorough BitLocker recovery process is created, it's recommended to tes
 
 3. At the command prompt, enter the following command:
 
-    ``` syntax
+    ```cmd
     manage-bde.exe -ComputerName <RemoteComputerName> -forcerecovery <BitLockerVolume>
     ```
 
@@ -266,7 +266,7 @@ Review and answer the following questions for the organization:
 
 To help answer these questions, use the BitLocker command-line tool to view the current configuration and protection mode:
 
-``` syntax
+```cmd
 manage-bde.exe -status
 ```
 
@@ -337,7 +337,7 @@ During BitLocker recovery, Windows displays a custom recovery message and a few 
 
 ### Custom recovery message
 
-BitLocker Group Policy settings in Windows 10, version 1511, or Windows 11, allows configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+BitLocker Group Policy settings starting in Windows 10, version 1511, allows configuring a custom recovery message and URL on the BitLocker recovery screen. The custom recovery message and URL can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
 
 This policy can be configured using GPO under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure pre-boot recovery message and URL**.
 
@@ -353,7 +353,7 @@ Example of a customized recovery screen:
 
 ### BitLocker recovery key hints
 
-BitLocker metadata has been enhanced in Windows 10, version 1903 or Windows 11 to include information about when and where the BitLocker recovery key was backed up. This information isn't exposed through the UI or any public API. It's used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. The hints apply to both the boot manager recovery screen and the WinRE unlock screen.
+BitLocker metadata has been enhanced starting in Windows 10, version 1903, to include information about when and where the BitLocker recovery key was backed up. This information isn't exposed through the UI or any public API. It's used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. The hints apply to both the boot manager recovery screen and the WinRE unlock screen.
 
 ![Customized BitLocker recovery screen.](./images/bl-password-hint2.png)
 
@@ -504,25 +504,25 @@ The recovery password and be invalidated and reset in two ways:
 
 1. Remove the previous recovery password.
 
-    ``` syntax
+    ```cmd
     `manage-bde.exe` -protectors -delete C: -type RecoveryPassword
     ```
 
 2. Add the new recovery password.
 
-    ``` syntax
+    ```cmd
     `manage-bde.exe` -protectors -add C: -RecoveryPassword
     ```
 
 3. Get the ID of the new recovery password. From the screen, copy the ID of the recovery password.
 
-    ``` syntax
+    ```cmd
     `manage-bde.exe` -protectors -get C: -Type RecoveryPassword
     ```
 
 4. Back up the new recovery password to AD DS.
 
-    ``` syntax
+    ```cmd
     `manage-bde.exe` -protectors -adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
     ```
 
@@ -537,7 +537,7 @@ The recovery password and be invalidated and reset in two ways:
 
 2. At the command prompt, enter the following command::
 
-    ``` syntax
+    ```cmd
     cscript.exe ResetPassword.vbs
     ```
 
@@ -553,7 +553,7 @@ The following sample VBScript can be used to reset the recovery passwords:
 <details>
   <summary>Expand to view sample recovery password VBscript to reset the recovery passwords</summary>
 
-``` vb
+```vb
 ' Target drive letter
 strDriveLetter = "c:"
 ' Target computer name
@@ -642,7 +642,7 @@ The following steps and sample script exports all previously saved key packages 
 
 2. At the command prompt, enter a command similar to the following sample script:
 
-    ``` syntax
+    ```cmd
     cscript.exe GetBitLockerKeyPackageADDS.vbs -?
     ```
 
@@ -652,7 +652,7 @@ The following sample script can be used to create a VBScript file to retrieve th
 <details>
   <summary>Expand to view sample key package retrieval VBscript that exports all previously saved key packages from AD DS</summary>
 
-``` vb
+```vb
 ' --------------------------------------------------------------------------------
 ' Usage
 ' --------------------------------------------------------------------------------
@@ -800,7 +800,7 @@ The following steps and sample script exports a new key package from an unlocked
 
 2. Open an administrator command prompt, and then enter a command similar to the following sample script:
 
-    ``` syntax
+    ```cmd
     cscript.exe GetBitLockerKeyPackage.vbs  -?
     ```
 
@@ -808,7 +808,7 @@ The following steps and sample script exports a new key package from an unlocked
 <details>
   <summary>Expand to view sample VBscript that exports a new key package from an unlocked, encrypted volume</summary>
 
-``` vb
+```vb
 ' --------------------------------------------------------------------------------
 ' Usage
 ' --------------------------------------------------------------------------------

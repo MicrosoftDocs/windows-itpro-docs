@@ -79,13 +79,13 @@ To turn on BitLocker for a disk before adding it to a cluster:
 
 3. Identify the name of the cluster with Windows PowerShell.
 
-    ``` powershell
+    ```powershell
     Get-Cluster
     ```
 
 4. Enable BitLocker on a volume with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
-    ``` powershell
+    ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
 
@@ -104,25 +104,25 @@ When the cluster service owns a disk resource already, the disk resource needs t
 
 2. Check the status of the cluster disk using Windows PowerShell.
 
-    ``` powershell
+    ```powershell
     Get-ClusterResource "Cluster Disk 1"
     ```
 
 3. Put the physical disk resource into maintenance mode using Windows PowerShell.
 
-    ``` powershell
+    ```powershell
     Get-ClusterResource "Cluster Disk 1" | Suspend-ClusterResource
     ```
 
 4. Identify the name of the cluster with Windows PowerShell.
 
-    ``` powershell
+    ```powershell
     Get-Cluster
     ```
 
 5. Enable BitLocker a volume with an **ADAccountOrGroup** protector, using the cluster name. For example, use a command such as:
 
-    ``` powershell
+    ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
 
@@ -131,7 +131,7 @@ When the cluster service owns a disk resource already, the disk resource needs t
 
 6. Use **Resume-ClusterResource** to take back the physical disk resource out of maintenance mode:
 
-    ``` powershell
+    ```powershell
     Get-ClusterResource "Cluster Disk 1" | Resume-ClusterResource
     ```
 
@@ -147,7 +147,7 @@ When the cluster service owns a disk resource already, the disk resource needs t
 
 3. Encrypt the volume, add a recovery key and add the cluster administrator as a protector key using **`manage-bde.exe`** in a command prompt window. For example:
 
-    ``` syntax
+    ```cmd
     manage-bde.exe -on -used <drive letter> -RP -sid domain\CNO$ -sync
     ```
 
@@ -169,7 +169,7 @@ When the cluster service owns a disk resource already, the disk resource needs t
 
 CSVs include both encrypted and unencrypted volumes. To check the status of a particular volume for BitLocker encryption run the `manage-bde.exe -status` command as an administrator with a path to the volume. The path must be one that is inside the CSV namespace. For example:
 
-``` syntax
+```cmd
 manage-bde.exe -status "C:\ClusterStorage\volume1"
 ```
 

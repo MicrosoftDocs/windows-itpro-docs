@@ -39,13 +39,13 @@ To filter and display or export logs, the [wevtutil.exe](/windows-server/adminis
 
 For example, to use `wevtutil.exe` to export the contents of the operational log from the BitLocker-API folder to a text file that is named `BitLockerAPIOpsLog.txt`, open a Command Prompt window, and run the following command:
 
-``` syntax
+```cmd
 wevtutil.exe qe "Microsoft-Windows-BitLocker/BitLocker Operational" /f:text > BitLockerAPIOpsLog.txt
 ```
 
 To use the **Get-WinEvent** cmdlet to export the same log to a comma-separated text file, open a Windows PowerShell window and run the following command:
 
-``` powershell
+```powershell
 Get-WinEvent -logname "Microsoft-Windows-BitLocker/BitLocker Operational"  | Export-Csv -Path Bitlocker-Operational.csv
 ```
 
@@ -53,7 +53,7 @@ The Get-WinEvent can be used in an elevated PowerShell window to display filtere
 
 - To display BitLocker-related information:
 
-   ``` powershell
+   ```powershell
    Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'BitLocker' | fl
    ```
 
@@ -63,19 +63,19 @@ The Get-WinEvent can be used in an elevated PowerShell window to display filtere
 
 - To export BitLocker-related information:
 
-   ``` powershell
+   ```powershell
    Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'BitLocker' | Export-Csv -Path System-BitLocker.csv
    ```
 
 - To display TPM-related information:
 
-   ``` powershell
+   ```powershell
    Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'TPM' | fl
    ```
 
 - To export TPM-related information:
 
-   ``` powershell
+   ```powershell
    Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'TPM' | Export-Csv -Path System-TPM.csv
    ```
 
@@ -137,9 +137,9 @@ Resolving issues that don't have obvious causes depends on exactly which compone
 
 - If the device being troubleshot is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune: known issues](ts-bitlocker-intune-issues.md).
 
-- If BitLocker doesn't start or can't encrypt a drive and errors or events that are related to the TPM are occurring, see [BitLocker can't encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
+- If BitLocker doesn't start or can't encrypt a drive and errors or events that are related to the TPM are occurring, see [BitLocker cannot encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
 
-- If BitLocker doesn't start or can't encrypt a drive, see [BitLocker can't encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
+- If BitLocker doesn't start or can't encrypt a drive, see [BitLocker cannot encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
 
 - If BitLocker Network Unlock doesn't behave as expected, see [BitLocker Network Unlock: known issues](ts-bitlocker-network-unlock-issues.md).
 

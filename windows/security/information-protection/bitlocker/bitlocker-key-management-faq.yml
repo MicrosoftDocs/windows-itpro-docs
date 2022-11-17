@@ -32,7 +32,7 @@ sections:
         answer: |
           Removable data drives can be unlocked using a password or a smart card. An SID protector can also be configured to unlock a drive by using user domain credentials. After encryption has started, the drive can also be automatically unlocked on a specific computer for a specific user account. System administrators can configure which options are available for users including password complexity and minimum length requirements. To unlock by using a SID protector, use `manage-bde.exe`:
           
-          ``` syntax
+          ```cmd
           Manage-bde.exe -protectors -add e: -sid <i>domain\username</i></code>
           ```
           
@@ -52,7 +52,7 @@ sections:
         answer: |
           The `Manage-bde.exe` command-line tool can be used to replace TPM-only authentication mode with a multifactor authentication mode. For example, if BitLocker is enabled with TPM authentication only and PIN authentication needs to be added, use the following commands from an elevated command prompt, replacing *4-20 digit numeric PIN* with the desired numeric PIN:
           
-          ``` syntax
+          ```cmd
           manage-bde.exe -protectors -delete %systemdrive% -type tpm
          
           manage-bde.exe -protectors -add %systemdrive% -tpmandpin <4-20 digit numeric PIN>

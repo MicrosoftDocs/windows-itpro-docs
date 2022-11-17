@@ -30,13 +30,13 @@ If the correct BitLocker recovery key has been entered multiple times but are un
 
 3. From the WinRE command prompt, manually unlock the drive with the following command:
 
-``` syntax
+```cmd
 manage-bde.exe -unlock C: -rp <recovery password>
 ```
 
 4. Suspend the protection on the operating system with the following command:
 
-``` syntax
+```cmd
 manage-bde.exe -protectors -disable C:
 ```
 

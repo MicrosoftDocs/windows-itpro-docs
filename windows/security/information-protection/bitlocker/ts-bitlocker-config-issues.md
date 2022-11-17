@@ -138,7 +138,7 @@ In the guest VM domain controller **Applications and Services Logs** > **Directo
 
 When this issue occurs, the **Active Directory Domain Services (NTDS) VSS Writer** will display the following error when the **`vssadmin.exe list writers`** command is run:
 
-``` Error
+```Error
 Writer name: 'NTDS'
  Writer Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}
  Writer Instance Id: {08321e53-4032-44dc-9b03-7a1a15ad3eb8}
@@ -166,7 +166,7 @@ For more information and recommendations about backing up virtualized domain con
 
 When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) generates an error entry similar to the following error:
 
-``` console
+```console
 \# for hex 0xc0210000 / decimal -1071579136
 STATUS\_FVE\_LOCKED\_VOLUME ntstatus.h
 \# This volume is locked by BitLocker Drive Encryption.

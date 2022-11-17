@@ -1,5 +1,5 @@
 ---
-title: BitLocker can't encrypt a drive  known issues
+title: BitLocker cannot encrypt a drive  known issues
 description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive
 ms.reviewer: kaushika
 ms.technology: itpro-security
@@ -14,7 +14,7 @@ ms.date: 11/08/2022
 ms.custom: bitlocker
 ---
 
-# BitLocker can't encrypt a drive: known issues
+# BitLocker cannot encrypt a drive: known issues
 
 This article describes common issues that prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
 
@@ -103,7 +103,7 @@ To verify that this issue has occurred, follow these steps:
 
 1. To repair the security descriptor of BDESvc, open an elevated PowerShell window and enter the following command:
 
-   ``` powershell
+   ```powershell
    sc sdset bdesvc D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
    ```
 

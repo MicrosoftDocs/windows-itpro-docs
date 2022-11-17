@@ -33,7 +33,7 @@ BitLocker helps mitigate unauthorized data access on lost or stolen computers be
 
 The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 11, Windows 10, Windows 8.1, and Windows 8.
 
-For more information about how to enable the best overall security configuration for devices beginning with Windows 10 version 1803 or Windows 11, see [Standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
+For more information about how to enable the best overall security configuration for devices beginning with Windows 10 version 1803, see [Standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
 
 ## Protection before startup
 
@@ -92,13 +92,13 @@ To address these issues, [BitLocker Network Unlock](./bitlocker-how-to-enable-ne
 
 ### Protecting Thunderbolt and other DMA ports
 
-There are a few different options to protect DMA ports, such as Thunderbolt™3. Beginning with Windows 10 version 1803 or Windows 11, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt™ 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803 or Windows 11, as it requires changes in the system firmware and/or BIOS.  
+There are a few different options to protect DMA ports, such as Thunderbolt™3. Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt™ 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.  
 
 You can use the System Information desktop app `MSINFO32.exe` to check if a device has kernel DMA protection enabled:
 
 ![Kernel DMA protection.](images/kernel-dma-protection.png)
 
-If kernel DMA protection isn't* enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
+If kernel DMA protection isn't enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
 
 1. Require a password for BIOS changes
 

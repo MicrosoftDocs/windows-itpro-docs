@@ -103,7 +103,7 @@ The procedures described in this section depend on the default disk partitions t
 
 To verify the configuration of the disk partitions, open an elevated Command Prompt window and run the following commands:
 
-``` syntax
+```cmd
 diskpart.exe 
 list volume
 ```
@@ -118,7 +118,7 @@ If the status of any of the volumes isn't healthy or if the recovery partition i
 
 To verify the status of WinRE on the device, open an elevated Command Prompt window and run the following command:
 
-``` syntax
+```cmd
 reagentc.exe /info
 ```
 
@@ -128,7 +128,7 @@ The output of this command resembles the following.
 
 If the **Windows RE status** isn't **Enabled**, run the following command to enable it:
 
-``` syntax
+```cmd
 reagentc.exe /enable
 ```
 
@@ -136,7 +136,7 @@ reagentc.exe /enable
 
 If the partition status is healthy, but the **`reagentc.exe /enable`** command results in an error, verify whether the Windows Boot Loader contains the recovery sequence GUID by running the following command in an elevated Command Prompt window:
 
-``` syntax
+```cmd
 bcdedit.exe /enum all
 ```
 
@@ -191,7 +191,7 @@ This issue can be resolved by verifying the PCR validation profile of the TPM an
 
 To verify that PCR 7 is in use, open an elevated Command Prompt window and run the following command:
 
-``` syntax
+```cmd
 Manage-bde.exe -protectors -get %systemdrive%
 ```
 
@@ -220,8 +220,8 @@ To verify the secure boot state, use the System Information application by follo
 > [!NOTE]
 > The [Confirm-SecureBootUEFI](/powershell/module/secureboot/confirm-securebootuefi) PowerShell cmdlet can also be used to verify the Secure Boot state by opening an elevated PowerShell window and running the following command:
 >
-> ```ps
-> PS C:\> Confirm-SecureBootUEFI
+> ```powershell
+> Confirm-SecureBootUEFI
 > ```
 >
 > If the computer supports Secure Boot and Secure Boot is enabled, this cmdlet returns "True."  

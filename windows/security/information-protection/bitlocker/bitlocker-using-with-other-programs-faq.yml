@@ -101,7 +101,7 @@ sections:
            
           The syntax of this command is:
           
-          ``` syntax
+          ```cmd
           manage-bde.exe <driveletter> -lock
           ````
           

@@ -106,7 +106,7 @@ The following policies are used to support customized deployment scenarios in yo
 |    | &nbsp; |
 |:---|:---|
 |**Policy description**|With this policy setting, you can allow TPM-only protection for newer, more secure devices, such as devices that support Modern Standby or HSTI, while requiring PIN on older devices.|
-|**Introduced**|Windows 10, version 1703, or Windows 11|
+|**Introduced**|Windows 10, version 1703|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|This setting overrides the **Require startup PIN with TPM** option of the [Require additional authentication at startup](#require-additional-authentication-at-startup) policy on compliant hardware.|
@@ -147,7 +147,7 @@ For more information about Network Unlock feature, see [BitLocker: How to enable
 
 This policy setting is used to control which unlock options are available for operating system drives.
 
-|    | &nbsp; |
+|    |   |
 |:---|:---|
 |**Policy description**|With this policy setting, you can configure whether BitLocker requires additional authentication each time the computer starts and whether you're using BitLocker with a Trusted Platform Module (TPM). This policy setting is applied when you turn on BitLocker.|
 |**Introduced**|Windows Server 2008 R2 and Windows 7|
@@ -173,28 +173,28 @@ There are four options for TPM-enabled computers or devices:
 - Configure TPM startup
   - Allow TPM
   - Require TPM
-  - Don't allow TPM
+  - Don not allow TPM
 - Configure TPM startup PIN
 
   - Allow startup PIN with TPM
   - Require startup PIN with TPM
-  - Don't allow startup PIN with TPM
+  - Don not allow startup PIN with TPM
 
 - Configure TPM startup key
   - Allow startup key with TPM
   - Require startup key with TPM
-  - Don't allow startup key with TPM
+  - Don not allow startup key with TPM
 
 - Configure TPM startup key and PIN
   - Allow TPM startup key with PIN
   - Require startup key and PIN with TPM
-  - Don't allow TPM startup key with PIN
+  - Don not allow TPM startup key with PIN
 
 ### Allow enhanced PINs for startup
 
 This policy setting permits the use of enhanced PINs when you use an unlock method that includes a PIN.
 
-|    | &nbsp; |
+|   |  |
 |:---|:---|
 |**Policy description**|With this policy setting, you can configure whether enhanced startup PINs are used with BitLocker.|
 |**Introduced**|Windows Server 2008 R2 and Windows 7|
@@ -237,7 +237,7 @@ The Dictionary Attack Prevention Parameters provide a way to balance security ne
 
 Increasing the PIN length requires a greater number of guesses for an attacker. In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
-Beginning with Windows 10, version 1703, or Windows 11, the minimum length for the BitLocker PIN was increased to six characters to better align with other Windows features that use TPM 2.0, including Windows Hello. To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017, or Windows 11 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is six characters by default, but it can be reduced to four characters. If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
+Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to six characters to better align with other Windows features that use TPM 2.0, including Windows Hello. To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is six characters by default, but it can be reduced to four characters. If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
 
 ### Disable new DMA devices when this computer is locked
 
@@ -246,7 +246,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 |    | &nbsp; |
 |:---|:---|
 |**Policy description**|This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys.|
-|**Introduced**|Windows 10, version 1703, or Windows 11|
+|**Introduced**|Windows 10, version 1703|
 |**Drive type**|Operating system drives|
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
 |**Conflicts**|None|
@@ -331,12 +331,12 @@ There are two options for TPM-enabled computers or devices:
 - Configure TPM startup PIN
   - Allow startup PIN with TPM
   - Require startup PIN with TPM
-  - Don't allow startup PIN with TPM
+  - Do not allow startup PIN with TPM
 
 - Configure TPM startup key
   - Allow startup key with TPM
   - Require startup key with TPM
-  - Don't allow startup key with TPM
+  - Do not allow startup key with TPM
 
 These options are mutually exclusive. If you require the startup key, you must not allow the startup PIN. If you require the startup PIN, you must not allow the startup key. Otherwise, a policy error will occur.
 
@@ -495,7 +495,7 @@ The Windows touch keyboard (such as used by tablets) isn't available in the preb
 
 It's recommended that administrators enable this policy only for devices that are verified to have an alternative means of preboot input, such as attaching a USB keyboard.
 
-When the Windows Recovery Environment isn't enabled and this policy isn't enabled, you can't turn on BitLocker on a device that uses the Windows touch keyboard.
+When the Windows Recovery Environment (WinRE) isn't enabled and this policy isn't enabled, you can't turn on BitLocker on a device that uses the Windows touch keyboard.
 
 If you don't enable this policy setting, the following options in the **Require additional authentication at startup** policy might not be available:
 
@@ -554,7 +554,7 @@ This policy setting is used to require that removable drives are encrypted prior
 If the **Deny write access to devices configured in another organization** option is selected, only drives with identification fields that match the computer's identification fields are given Write access. When a removable data drive is accessed, it's checked for a valid identification field and allowed identification fields. These fields are defined by the **Provide the unique identifiers for your organization** policy setting.
 
 > [!NOTE]
-> You can override this policy setting with the policy settings under **User Configuration\\Administrative Templates\\System\\Removable Storage Access**. If the **Removable Disks: Deny write access** policy setting is enabled, this policy setting will be ignored.
+> You can override this policy setting with the policy settings under **User Configuration** > **Administrative Templates** > **System** > **Removable Storage Access**. If the **Removable Disks: Deny write access** policy setting is enabled, this policy setting will be ignored.
 
 Conflict considerations include:
 
@@ -603,7 +603,7 @@ This policy setting is used to control the encryption method and cipher strength
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption*|
 |**Conflicts**|None|
 |**When enabled**|You can choose an encryption algorithm and key cipher strength for BitLocker to use to encrypt drives.|
-|**When disabled or not configured**|Beginning with Windows 10, version 1511, or Windows 11,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script.
+|**When disabled or not configured**|Beginning with Windows 10, version 1511,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script.
 
 #### Reference: Choose drive encryption method and cipher strength
 
@@ -626,7 +626,7 @@ When this policy setting is disabled or not configured, BitLocker will use the d
 
 This policy controls how BitLocker reacts to systems that are equipped with encrypted drives when they're used as fixed data volumes. Using hardware-based encryption can improve the performance of drive operations that involve frequent reading or writing of data to the drive.
 
-|    | &nbsp; |
+|    | |
 |:---|:---|
 |**Policy description**|With this policy setting, you can manage BitLocker's use of hardware-based encryption on fixed data drives and to specify which encryption algorithms BitLocker can use with hardware-based encryption.|
 |**Introduced**|Windows Server 2012 and Windows 8|
@@ -651,7 +651,7 @@ The encryption algorithm that is used by hardware-based encryption is set when t
 
 This policy controls how BitLocker reacts when encrypted drives are used as operating system drives. Using hardware-based encryption can improve the performance of drive operations that involve frequent reading or writing of data to the drive.
 
-|    | &nbsp; |
+|    |  |
 |:---|:---|
 |**Policy description**|With this policy setting, you can manage BitLocker's use of hardware-based encryption on operating system drives and specify which encryption algorithms it can use with hardware-based encryption.|
 |**Introduced**|Windows Server 2012 and Windows 8|
@@ -678,7 +678,7 @@ The encryption algorithm that is used by hardware-based encryption is set when t
 
 This policy controls how BitLocker reacts to encrypted drives when they're used as removable data drives. Using hardware-based encryption can improve the performance of drive operations that involve frequent reading or writing of data to the drive.
 
-|    | &nbsp; |
+|    |  |
 |:---|:---|
 |**Policy description**|With this policy setting, you can manage BitLocker's use of hardware-based encryption on removable data drives and specify which encryption algorithms it can use with hardware-based encryption.|
 |**Introduced**|Windows Server 2012 and Windows 8|
@@ -840,7 +840,7 @@ For example, not allowing the 48-digit recovery password prevents users from pri
 
 This policy setting is used to configure the storage of BitLocker recovery information in AD DS. This policy setting provides an administrative method of recovering data that is encrypted by BitLocker to prevent data loss due to lack of key information.
 
-|    | &nbsp; |
+|    |  |
 |:---|:---|
 |**Policy description**|With this policy setting, you can manage the AD DS backup of BitLocker Drive Encryption recovery information.|
 |**Introduced**|Windows Server 2008 and Windows Vista|
@@ -1040,7 +1040,7 @@ Multiple values separated by commas can be entered in the identification and all
 
 This policy setting is used to control whether the computer's memory will be overwritten the next time the computer is restarted.
 
-|    | &nbsp; |
+|    |  |
 |:---|:---|
 |**Policy description**|With this policy setting, you can control computer restart performance at the risk of exposing BitLocker secrets.|
 |**Introduced**|Windows Vista|
@@ -1287,7 +1287,7 @@ When this policy setting is enabled, select the **Do not install BitLocker To Go
 
 You can configure the Federal Information Processing Standard (FIPS) setting for FIPS compliance. As an effect of FIPS compliance, users can't create or save a BitLocker password for recovery or as a key protector. The use of a recovery key is permitted.
 
-|    | &nbsp; |
+|    |  |
 |:---|:---|
 |**Policy description**|Notes|
 |**Introduced**|Windows Server 2003 with SP1|
@@ -1313,7 +1313,7 @@ PCs default power settings for a computer will cause the computer to enter Sleep
 
 However, when a computer hibernates the drive is locked, and when it resumes from hibernation the drive is unlocked, which means that users will need to provide a PIN or a startup key if using multifactor authentication with BitLocker. Therefore, organizations that use BitLocker may want to use Hibernate instead of Sleep for improved security. This setting doesn't have an impact on TPM-only mode, because it provides a transparent user experience at startup and when resuming from the Hibernate states.
 
-You can disable the following Group Policy settings, which are located in **Computer Configuration\\Administrative Templates\\System\\Power Management** to disable all available sleep states:
+You can disable the following Group Policy settings, which are located in **Computer Configuration** > **Administrative Templates** > **System** > **Power Management** to disable all available sleep states:
 
 - Allow Standby States (S1-S3) When Sleeping (Plugged In)
 - Allow Standby States (S1-S3) When Sleeping (Battery)
