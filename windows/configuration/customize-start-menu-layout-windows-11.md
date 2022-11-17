@@ -64,7 +64,7 @@ Start has the following areas:
 
 - **Recommended**: Shows recently opened files and recently installed apps. This section can only be customized in Windows SE using the following policy.
 
-- `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove Recommended section from Start Menu`
+  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove Recommended section from Start Menu`
 
 ## Create the JSON file
 
