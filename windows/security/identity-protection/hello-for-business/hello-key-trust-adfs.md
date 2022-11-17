@@ -4,10 +4,10 @@ description: How to Prepare and Deploy Windows Server 2016 Active Directory Fede
 ms.date: 08/19/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services with Key Trust
+
+[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service role included with Windows Server 2016 and requires an additional server update. The on-premises key trust deployment uses Active Directory Federation Services roles for key registration and device registration.
 

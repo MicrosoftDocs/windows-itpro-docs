@@ -1,13 +1,7 @@
 ---
 title: Deploy certificates for remote desktop sign-in
 description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: erikdau
 ms.collection:
-  - M365-identity-device-management
   - ContentEngagementFY23
 ms.topic: how-to
 localizationpriority: medium

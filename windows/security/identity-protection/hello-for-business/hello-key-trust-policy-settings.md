@@ -4,15 +4,14 @@ description: Configure Windows Hello for Business Policy settings for Windows He
 ms.date: 08/19/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Configure Windows Hello for Business Policy settings - Key Trust
 
-You need at least a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
-Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
+[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
-Alternatively, you can create a copy of the .ADMX and .ADML files from a Windows 10, version 1703 installation setup template folder to their respective language folder on a Windows Server, or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
+To run the Group Policy Management Console from a Windows client, you need to install the Remote Server Administration Tools for Windows. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
+
+Alternatively, you can create a copy of the .ADMX and .ADML files from a Windows client installation setup template folder to their respective language folder on a Windows Server, or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
 
 On-premises certificate-based deployments of Windows Hello for Business needs one Group Policy setting:  Enable Windows Hello for Business
 

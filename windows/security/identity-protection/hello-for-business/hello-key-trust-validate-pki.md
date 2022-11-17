@@ -4,10 +4,10 @@ description: How to Validate Public Key Infrastructure for Windows Hello for Bus
 ms.date: 08/19/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Validate and Configure Public Key Infrastructure - Key Trust
+
+[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate. The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  
 

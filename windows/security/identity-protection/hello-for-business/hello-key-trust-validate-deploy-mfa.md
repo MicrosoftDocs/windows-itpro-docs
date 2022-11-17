@@ -4,10 +4,10 @@ description: How to Validate and Deploy Multifactor Authentication (MFA) Service
 ms.date: 08/19/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Validate and Deploy Multifactor Authentication (MFA)
+
+[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
 > [!IMPORTANT]
 > As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who would like to require multifactor authentication from their users should use cloud-based Azure AD Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1 will be able to download the latest version, future updates and generate activation credentials as usual.
