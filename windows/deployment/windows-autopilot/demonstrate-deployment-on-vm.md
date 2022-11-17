@@ -47,6 +47,9 @@ You'll need the following components to complete this lab:
 |**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (Azure AD) Premium license**|This guide will describe how to get a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
 
+> [!NOTE]
+> When using a VM for Autopilot testing, assign at least two processors and 4 GB of memory.
+
 ## Procedures
 
 A summary of the sections and procedures in the lab is provided below. Follow each section in the order it's presented, skipping the sections that don't apply to you. Optional procedures are provided in the appendices.

@@ -15,6 +15,6 @@ Below, you can find all the information you need to deploy Windows Hello for Bus
 
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
 2. [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
-3. [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)
+3. [Prepare and Deploy Active Directory Federation Services](hello-key-trust-adfs.md)
 4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
 5. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
