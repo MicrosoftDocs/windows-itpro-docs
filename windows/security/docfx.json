@@ -36,8 +36,12 @@
       "recommendations": true,
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "ms.localizationpriority": "medium",
       "ms.topic": "article",
-      "manager": "dansimp",
+      "ms.collection": "M365-identity-device-management",
+      "ms.prod": "windows-client",
+      "ms.technology": "itpro-security",
+      "manager": "aaroncz",
       "audience": "ITPro",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
@@ -56,13 +60,25 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",
         "garycentric"
       ],
-      "searchScope": ["Windows 10"]
+      "searchScope": ["Windows"]
     },
     "fileMetadata": {
       "titleSuffix":{
         "threat-protection/**/*.md": "Windows security"
+      }
+      "author":{
+        "/identity-protection/hello-for-business/**/*.md": "paolomatarazzo"
+      }
+      "ms.author":{
+        "/identity-protection/hello-for-business/**/*.md": "paoloma"
+      }
+      "ms.reviewer":{
+        "/identity-protection/hello-for-business/**/*.md": "erikdau"
       }
     },
     "template": [],
