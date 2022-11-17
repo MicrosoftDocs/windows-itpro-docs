@@ -73,7 +73,7 @@ The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support th
 The hard disk must be partitioned with at least two drives:
 
 - The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
-- The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker isn't enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. It's recommend that system drive be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space.
+- The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker isn't enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. It's recommended that the system drive be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space.
 
 When installed on a new computer, Windows automatically creates the partitions that are required for BitLocker.
 
