@@ -90,22 +90,22 @@ The Get-WinEvent can be used in an elevated PowerShell window to display filtere
 
 Open an elevated Windows PowerShell window, and run each of the following commands:
 
-|Command |Notes |
-| --- | --- |
-|[**get-tpm \> C:\\TPM.txt**](/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps&preserve-view=true) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet isn't supported in Windows 7. |
-|[**manage-bde.exe -status \>&nbsp;C:\\BDEStatus.txt**](/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
-|[**manage-bde.exe c: <br />-protectors -get \>&nbsp;C:\\Protectors**](/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
-|[**reagentc.exe&nbsp;/info&nbsp;\>&nbsp;C:\\reagent.txt**](/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about an online or offline image about the current status of the Windows Recovery Environment (WindowsRE) and any available recovery image. |
-|[**get-BitLockerVolume \| fl**](/powershell/module/bitlocker/get-bitlockervolume?view=win10-ps&preserve-view=true) |Gets information about volumes that BitLocker Drive Encryption can protect. |
+|Command |Notes | More Info |
+| --- | --- | --- |
+|**`Get-Tpm > C:\TPM.txt`** |PowerShell cmdlet that exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet isn't supported in Windows 7. | [Get-Tpm](/powershell/module/trustedplatformmodule/get-tpm)|
+|**`manage-bde.exe -status > C:\BDEStatus.txt`** |Exports information about the general encryption status of all drives on the computer. | [manage-bde.exe status](/windows-server/administration/windows-commands/manage-bde-status) |
+|**`manage-bde.exe c: -protectors -get > C:\Protectors`** |Exports information about the protection methods that are used for the BitLocker encryption key.  | [manage-bde.exe protectors](/windows-server/administration/windows-commands/manage-bde-protectors)|
+|**`reagentc.exe /info > C:\reagent.txt`** |Exports information about an online or offline image about the current status of the Windows Recovery Environment (WindowsRE) and any available recovery image. | [reagentc.exe](/windows-hardware/manufacture/desktop/reagentc-command-line-options) |
+|**`Get-BitLockerVolume \| fl`** |PowerShell cmdlet that gets information about volumes that BitLocker Drive Encryption can protect. | [Get-BitLockerVolume](/powershell/module/bitlocker/get-bitlockervolume) |
 
 ## Review the configuration information
 
 1. Open an elevated Command Prompt window, and run the following commands:
 
-   |Command |Notes |
-   | --- | --- |
-   |[**gpresult.exe /h \<Filename>**](/windows-server/administration/windows-commands/gpresult) |Exports the Resultant Set of Policy information, and saves the information as an HTML file. |
-   |[**msinfo.exe /report \<Path> /computer&nbsp;\<ComputerName>**](/windows-server/administration/windows-commands/msinfo32) |Exports comprehensive information about the hardware, system components, and software environment on the local computer. The **/report** option saves the information as a .txt file. |
+   |Command |Notes | More Info |
+   | --- | --- | --- |
+   |**`gpresult.exe /h <Filename>`** |Exports the Resultant Set of Policy information, and saves the information as an HTML file. | [gpresult.exe](/windows-server/administration/windows-commands/gpresult) |
+   |**`msinfo.exe /report <Path> /computer <ComputerName>`** |Exports comprehensive information about the hardware, system components, and software environment on the local computer. The **/report** option saves the information as a .txt file. |[msinfo.exe](/windows-server/administration/windows-commands/msinfo32) |
 
 2. Open Registry Editor, and export the entries in the following subkeys:
 

@@ -434,8 +434,8 @@ There are rules governing which hint is shown during the recovery (in the order 
 |     Creation time    |     **1PM**     |
 |     Key ID           |     A564F193    |
 
-&nbsp;
-&nbsp;
+<br>
+<br>
 
 |     Custom URL       |     No          |
 |----------------------|-----------------|
