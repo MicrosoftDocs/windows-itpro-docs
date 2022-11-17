@@ -414,7 +414,7 @@ Using the Get-BitLockerVolume cmdlet, each volume on the system displays its cur
 Get-BitLockerVolume <volume> -Verbose | fl
 ```
 
-This command displays information about the encryption method, volume type, key protectors, etc.
+This command displays information about the encryption method, volume type, key protectors, and more.
 
 ### Provisioning BitLocker during operating system deployment
 
