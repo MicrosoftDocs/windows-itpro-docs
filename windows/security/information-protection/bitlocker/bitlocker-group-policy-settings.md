@@ -134,7 +134,7 @@ This policy is used with the BitLocker Drive Encryption Network Unlock Certifica
 |**Policy path**|*Computer Configuration* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives*|
 |**Conflicts**|None|
 |**When enabled**|Clients configured with a BitLocker Network Unlock certificate can create and use Network Key Protectors.|
-|**When disabled or not configured**|Clients can't create and use Network Key Protectors|
+|**When disabled or not configured**|Clients can't create and use Network Key Protectors.|
 
 #### Reference: Allow network unlock at startup
 
