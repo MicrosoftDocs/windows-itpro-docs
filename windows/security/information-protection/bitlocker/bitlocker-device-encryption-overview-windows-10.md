@@ -31,7 +31,6 @@ When users travel, their organization's confidential data goes with them. Wherev
 
 The below table lists specific data-protection concerns and how they're addressed in Windows 11, Windows 10, and Windows 7.
 
-- **Table 2**
 
 | Windows 7 | Windows 11 and Windows 10 |
 |---|---|
