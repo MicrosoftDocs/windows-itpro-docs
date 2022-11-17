@@ -202,9 +202,9 @@ The following table shows the required information to create an entry in the Azu
  
 ### Add on-premises MDM to the app gallery
 
-There are no special requirements for adding on-premises MDM to the app gallery. There's a generic entry for administrator to add an app to their tenant.
+There are no special requirements for adding on-premises MDM to the app gallery. There's a generic entry for administrators to add an app to their tenant.
 
-However, key management is different for on-premises MDM. You must obtain the client ID (app ID) and key assigned to the MDM app within the customer's tenant. Thee ID and key obtain authorization to access the Microsoft Graph API and for reporting device compliance.
+However, key management is different for on-premises MDM. You must obtain the client ID (app ID) and key assigned to the MDM app within the customer's tenant. The ID and key obtain authorization to access the Microsoft Graph API and for reporting device compliance.
 
 ## Themes
 
