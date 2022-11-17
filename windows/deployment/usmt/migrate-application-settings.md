@@ -131,7 +131,7 @@ On a test computer, install the operating system that will be installed on the d
 
 To speed up the time it takes to collect and migrate the data, you can migrate only one user at a time, and you can exclude all other components from the migration except the application that you're testing. To specify only **User1** in the migration, enter:
 
-``` syntax
+```cmd
 /ue:*\* /ui:user1
 ```
 

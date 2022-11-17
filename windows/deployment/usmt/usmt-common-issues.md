@@ -107,7 +107,7 @@ To remove encryption from files that have already been migrated incorrectly, you
 
 **Resolution:** You can use the `/mu` option when you run the **LoadState** tool to specify a new name for the user. For example,
 
-``` syntax
+```cmd
 LoadState.exe  /i:MigApp.xml /i:MigDocs.xml \\server\share\migration\mystore 
 /progress:Progress.log /l:LoadState.log /mu:fareast\user1:farwest\user1
 ```
@@ -138,7 +138,7 @@ The following sections describe common XML file problems. Expand the section to 
 
 **Resolution:** Install all of the desired applications on the computer before running the `/genconfig` option. Then run `ScanState.exe` with all of the .xml files. For example, run the following command:
 
-``` syntax
+```cmd
 ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:5 /l:ScanState.log
 ```
 
@@ -248,7 +248,7 @@ The following sections describe common offline migration problems. Expand the se
 
 **Resolution:** Use a Security Identifier (SID) to include a user when running the **ScanState** tool. For example:
 
-``` syntax
+```cmd
 ScanState.exe /ui:S1-5-21-124525095-708259637-1543119021*
 ```
 
@@ -262,7 +262,7 @@ You can also use patterns for SIDs that identify generic users or groups. For ex
 
 **Resolution:** Reboot the computer or unload the registry hive at the command prompt after the **ScanState** tool has finished running. For example, at a command prompt, enter:
 
-``` syntax
+```cmd
 reg.exe unload hklm\$dest$software
 ```
 
@@ -282,7 +282,7 @@ The following sections describe common hard-link migration problems. Expand the 
 
 **Resolution:** Use the UsmtUtils tool to delete the store or change the store name. For example, at a command prompt, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /rd <storedir>
 ```
 
