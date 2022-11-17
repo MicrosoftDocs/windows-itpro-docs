@@ -20,7 +20,7 @@
               href: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
             - name: Windows Delivery Optimization Frequently Asked Questions
               href: ../do/waas-delivery-optimization-faq.yml
-        - name: Configure Microsoft Endpoint Manager
+        - name: Configure Microsoft Intune
           items:
             - name: Delivery Optimization settings in Microsoft Intune
               href: /mem/intune/configuration/delivery-optimization-windows
@@ -45,5 +45,7 @@
         - name: Using a proxy with Delivery Optimization
           href: delivery-optimization-proxy.md
         - name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
-          href: delivery-optimization-endpoints.md         
+          href: delivery-optimization-endpoints.md
+        - name: Testing Delivery Optimization
+          href: delivery-optimization-test.md        
 

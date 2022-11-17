@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_HotSpotAuth.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/15/2021
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_HotSpotAuth
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_HotSpotAuth policies  
+## ADMX_HotSpotAuth policies
 
 <dl>
   <dd>
@@ -35,7 +35,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-hotspotauth-hotspotauth_enable"></a>**ADMX_HotSpotAuth/HotspotAuth_Enable**  
+<a href="" id="admx-hotspotauth-hotspotauth_enable"></a>**ADMX_HotSpotAuth/HotspotAuth_Enable**
 
 <!--SupportedSKUs-->
 
@@ -61,20 +61,20 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting defines whether WLAN hotspots are probed for Wireless Internet Service Provider roaming (WISPr) protocol support.  
+This policy setting defines whether WLAN hotspots are probed for Wireless Internet Service Provider roaming (WISPr) protocol support.
 
-- If a WLAN hotspot supports the WISPr protocol, users can submit credentials when manually connecting to the network. 
+- If a WLAN hotspot supports the WISPr protocol, users can submit credentials when manually connecting to the network.
 
-- If authentication is successful, users will be connected automatically on subsequent attempts. Credentials can also be configured by network operators.  
+- If authentication is successful, users will be connected automatically on subsequent attempts. Credentials can also be configured by network operators.
 
-- If you enable this policy setting, or if you don't configure this policy setting, WLAN hotspots are automatically probed for WISPR protocol support.  
+- If you enable this policy setting, or if you don't configure this policy setting, WLAN hotspots are automatically probed for WISPR protocol support.
 
 - If you disable this policy setting, WLAN hotspots aren't probed for WISPr protocol support, and users can only authenticate with WLAN hotspots using a web browser.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Hotspot Authentication*
 -   GP name: *HotspotAuth_Enable*
 -   GP path: *Network\Hotspot Authentication*

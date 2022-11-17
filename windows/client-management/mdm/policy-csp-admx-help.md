@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_Help.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/03/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_Help
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Help policies  
+## ADMX_Help policies
 
 <dl>
   <dd>
@@ -44,7 +44,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-help-disablehhdep"></a>**ADMX_Help/DisableHHDEP**  
+<a href="" id="admx-help-disablehhdep"></a>**ADMX_Help/DisableHHDEP**
 
 <!--SupportedSKUs-->
 
@@ -82,7 +82,7 @@ If you disable or don't configure this policy setting, DEP is turned on for HTML
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Data Execution Prevention for HTML Help Executable*
 -   GP name: *DisableHHDEP*
 -   GP path: *System*
@@ -93,7 +93,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-help-helpqualifiedrootdir-comp"></a>**ADMX_Help/HelpQualifiedRootDir_Comp**  
+<a href="" id="admx-help-helpqualifiedrootdir-comp"></a>**ADMX_Help/HelpQualifiedRootDir_Comp**
 
 <!--SupportedSKUs-->
 
@@ -143,7 +143,7 @@ For more options, see the "Restrict these programs from being launched from Help
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict potentially unsafe HTML Help functions to specified folders*
 -   GP name: *HelpQualifiedRootDir_Comp*
 -   GP path: *System*
@@ -154,7 +154,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-help-restrictrunfromhelp"></a>**ADMX_Help/RestrictRunFromHelp**  
+<a href="" id="admx-help-restrictrunfromhelp"></a>**ADMX_Help/RestrictRunFromHelp**
 
 <!--SupportedSKUs-->
 
@@ -188,14 +188,14 @@ If you disable or don't configure this policy setting, users can run all applica
 
 > [!NOTE]
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-> 
+>
 > This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict these programs from being launched from Help*
 -   GP name: *RestrictRunFromHelp*
 -   GP path: *System*
@@ -206,7 +206,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-help-restrictrunfromhelp-comp"></a>**ADMX_Help/RestrictRunFromHelp_Comp**  
+<a href="" id="admx-help-restrictrunfromhelp-comp"></a>**ADMX_Help/RestrictRunFromHelp_Comp**
 
 <!--SupportedSKUs-->
 
@@ -240,13 +240,13 @@ If you disable or don't configure this policy setting, users can run all applica
 
 > [!NOTE]
 > You can also restrict users from running applications by using the Software Restriction Policy settings available in Computer Configuration\Security Settings.
-> 
+>
 > This policy setting is available under Computer Configuration and User Configuration. If both are settings are used, any programs listed in either of these locations cannot launched from Help.
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Restrict these programs from being launched from Help*
 -   GP name: *RestrictRunFromHelp_Comp*
 -   GP path: *System*

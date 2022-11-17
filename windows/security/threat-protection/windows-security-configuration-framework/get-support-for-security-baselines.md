@@ -1,16 +1,16 @@
 ---
 title: Get support for security baselines
-description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related topics.
-ms.prod: m365-security
+description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related articles.
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: vinpa
+author: vinaypamnani-msft
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/14/2022
-ms.reviewer: 
-ms.technology: windows-sec
+ms.date: 10/19/2022
+ms.reviewer: jmunck
+ms.technology: itpro-security
 ---
 
 # Get Support
@@ -32,13 +32,13 @@ Any version of Windows baseline before Windows 10 1703 can still be downloaded u
 
 **What file formats are supported by the new SCT?**
 
-The toolkit supports formats created by the Windows GPO backup feature (.pol, .inf, and .csv). Policy Analyzer saves its data in XML files with a .PolicyRules file extension. LGPO also supports its own LGPO text file format as a text-based analog for the binary registry.pol file format. For more information, see the LGPO documentation. Keep in mind that SCMs' .cab files are no longer supported.
+The toolkit supports formats created by the Windows GPO backup feature (.pol, .inf, and .csv). Policy Analyzer saves its data in XML files with a `.PolicyRules` file extension. LGPO also supports its own LGPO text file format as a text-based analog for the binary registry.pol file format. For more information, see the LGPO documentation. Keep in mind that SCMs' .cab files are no longer supported.
 
 **Does SCT support Desired State Configuration (DSC) file format?**
 
 No. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration.
 
-**Does SCT support the creation of Microsoft Endpoint Manager DCM packs?**
+**Does SCT support the creation of Microsoft Configuration Manager DCM packs?**
 
 No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 
@@ -55,7 +55,7 @@ No. SCM supported only SCAP 1.0, which wasn't updated as SCAP evolved. The new t
 | Name | Build | Baseline Release Date | Security Tools |
 | ---- | ----- | --------------------- | -------------- |
 | Windows 11 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520) <br> | September 2022<br>|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-| Windows 10 | [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [21H1](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-version-21h1/ba-p/2362353) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update)| December 2021<br>May 2021<br>December 2020<br>October 2018<br>October 2016 <br>January 2016 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows 10 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-10-version-22h2-security-baseline/ba-p/3655724) <br> [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [21H1](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-version-21h1/ba-p/2362353) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update)| October 2022<br>December 2021<br>May 2021<br>December 2020<br>October 2018<br>October 2016 <br>January 2016 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final)| October 2013| [SCM 4.0](/previous-versions/tn-archive/cc936627(v=technet.10)) |
 
 <br />

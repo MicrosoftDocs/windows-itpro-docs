@@ -2,16 +2,16 @@
 title: What's new in Delivery Optimization
 manager: dougeby
 description: What's new in Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
-ms.prod: w10
+ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.collection:
-- M365-modern-desktop
-- m365initiative-coredeploy
-- highpri
+ms.collection: 
+  - M365-modern-desktop
+  - m365initiative-coredeploy
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # What's new in Delivery Optimization 

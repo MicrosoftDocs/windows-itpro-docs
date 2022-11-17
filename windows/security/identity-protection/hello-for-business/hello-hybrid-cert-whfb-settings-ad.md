@@ -1,7 +1,7 @@
 ---
 title: Configure Hybrid Azure AD joined Windows Hello for Business - Active Directory (AD)
 description: Discussing the configuration of Active Directory (AD) in a Hybrid deployment of Windows Hello for Business
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,11 +10,12 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Certificate trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Hybrid deployment</b>
+  - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory
 

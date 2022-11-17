@@ -2,19 +2,9 @@
 title: Take a Test app technical reference
 description: List of policies and settings applied by the Take a Test app.
 ms.date: 09/30/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: reference
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
-manager: aaroncz
-ms.collection: education
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Take a Test app technical reference

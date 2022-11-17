@@ -3,7 +3,7 @@ title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windo
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,9 +12,9 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.technology: windows-sec
+ms.author: vinpa
+manager: aaroncz
+ms.technology: itpro-security
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG)
@@ -111,4 +111,4 @@ Packaged apps aren't supported with the ISG and will need to be separately autho
 The ISG doesn't authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
 > [!NOTE]
-> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Endpoint Manager Intune's built-in WDAC support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using application control will need to deploy a custom WDAC policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](deployment/deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).
+> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Intune's built-in WDAC support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using application control will need to deploy a custom WDAC policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](deployment/deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).

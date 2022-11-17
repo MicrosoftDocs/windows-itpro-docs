@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business Deployment Guide - On Premises Key Deployment
 description: A guide to on premises, key trust Windows Hello for Business deployment.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,11 +10,12 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>On-premises deployment</b>
+  - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # On Premises Key Trust Deployment
 

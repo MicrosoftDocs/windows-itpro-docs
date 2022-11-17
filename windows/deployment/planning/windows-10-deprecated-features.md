@@ -1,21 +1,20 @@
 ---
 title: Deprecated features in Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
-ms.date: 07/21/2022
-ms.prod: w10
-ms.technology: windows
+ms.date: 10/28/2022
+ms.prod: windows-client
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
 ms.reviewer: 
 ms.topic: article
-ms.collection: highpri
 ---
 
 # Deprecated features for Windows client
 
-_Applies to:_
+**Applies to**
 
 - Windows 10
 - Windows 11
@@ -73,10 +72,10 @@ The features in this article are no longer being actively developed, and might b
 |Trusted Platform Module (TPM) Owner Password Management |This functionality within TPM.msc will be migrated to a new user interface.| 1709 |
 |Trusted Platform Module (TPM): TPM.msc and TPM Remote Management  | To be replaced by a new user interface in a future release. | 1709 |
 |Trusted Platform Module (TPM) Remote Management |This functionality within TPM.msc will be migrated to a new user interface. | 1709 |
-|Windows Hello for Business deployment that uses Microsoft Endpoint Manager   |Windows Server 2016 Active Directory Federation Services - Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. | 1709 |
+|Windows Hello for Business deployment that uses Microsoft Configuration Manager   |Windows Server 2016 Active Directory Federation Services - Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. | 1709 |
 |Windows PowerShell 2.0  | Applications and components should be migrated to PowerShell 5.0+. | 1709 |
 |Apndatabase.xml | Apndatabase.xml is being replaced by the COSA database. Therefore, some constructs will no longer function. This replacement includes Hardware ID, incoming SMS messaging rules in mobile apps, a list of privileged apps in mobile apps, autoconnect order, APN parser, and CDMAProvider ID. | 1703 |
-|Tile Data Layer | The [Tile Data Layer](/windows/configuration/start-layout-troubleshoot#symptom-start-menu-issues-with-tile-data-layer-corruption) database stopped development in Windows 10, version 1703. | 1703 |
+|Tile Data Layer | The [Tile Data Layer](/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors#symptom-start-menu-issues-with-tile-data-layer-corruption) database stopped development in Windows 10, version 1703. | 1703 |
 |TLS DHE_DSS ciphers DisabledByDefault| [TLS RC4 Ciphers](/windows-server/security/tls/tls-schannel-ssp-changes-in-windows-10-and-windows-server) will be disabled by default in this release. | 1703 |
 |TCPChimney | TCP Chimney Offload is no longer being developed.  See [Performance Tuning Network Adapters](/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics). | 1703 |
 |IPsec Task Offload| [IPsec Task Offload](/windows-hardware/drivers/network/task-offload) versions 1 and 2 are no longer being developed and shouldn't be used. | 1703 |

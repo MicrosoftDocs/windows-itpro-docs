@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_AppxPackageManager.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/10/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_AppxPackageManager
 
  > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_AppxPackageManager policies  
+## ADMX_AppxPackageManager policies
 
 <dl>
   <dd>
@@ -36,7 +36,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-appxpackagemanager-allowdeploymentinspecialprofiles"></a>**ADMX_AppxPackageManager/AllowDeploymentInSpecialProfiles**  
+<a href="" id="admx-appxpackagemanager-allowdeploymentinspecialprofiles"></a>**ADMX_AppxPackageManager/AllowDeploymentInSpecialProfiles**
 
 <!--SupportedSKUs-->
 
@@ -62,9 +62,9 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the deployment of Windows Store apps when the user is signed in using a special profile. 
+This policy setting allows you to manage the deployment of Windows Store apps when the user is signed in using a special profile.
 
-Special profiles are the following user profiles where changes are discarded after the user signs off:  
+Special profiles are the following user profiles where changes are discarded after the user signs off:
 
 - Roaming user profiles to which the "Delete cached copies of roaming profiles" Group Policy setting applies.
 - Mandatory user profiles and super-mandatory profiles, which are created by an administrator.
@@ -79,7 +79,7 @@ If you disable or don't configure this policy setting, Group Policy blocks deplo
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow deployment operations in special profiles*
 -   GP name: *AllowDeploymentInSpecialProfiles*
 -   GP path: *Windows Components\App Package Deployment*

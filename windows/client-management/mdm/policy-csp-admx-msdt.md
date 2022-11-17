@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_MSDT.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/09/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_MSDT
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_MSDT policies  
+## ADMX_MSDT policies
 
 <dl>
   <dd>
@@ -41,7 +41,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msdt-msdtsupportprovider"></a>**ADMX_MSDT/MsdtSupportProvider**  
+<a href="" id="admx-msdt-msdtsupportprovider"></a>**ADMX_MSDT/MsdtSupportProvider**
 
 <!--SupportedSKUs-->
 
@@ -83,7 +83,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Microsoft Support Diagnostic Tool: Turn on MSDT interactive communication with support provider*
 -   GP name: *MsdtSupportProvider*
 -   GP path: *System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool*
@@ -94,7 +94,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msdt-msdttooldownloadpolicy"></a>**ADMX_MSDT/MsdtToolDownloadPolicy**  
+<a href="" id="admx-msdt-msdttooldownloadpolicy"></a>**ADMX_MSDT/MsdtToolDownloadPolicy**
 
 <!--SupportedSKUs-->
 
@@ -148,7 +148,7 @@ The DPS can be configured with the Services snap-in to the Microsoft Management 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Microsoft Support Diagnostic Tool: Restrict tool download*
 -   GP name: *MsdtToolDownloadPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool*
@@ -159,7 +159,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-msdt-wdiscenarioexecutionpolicy"></a>**ADMX_MSDT/WdiScenarioExecutionPolicy**  
+<a href="" id="admx-msdt-wdiscenarioexecutionpolicy"></a>**ADMX_MSDT/WdiScenarioExecutionPolicy**
 
 <!--SupportedSKUs-->
 
@@ -201,7 +201,7 @@ This policy setting will only take effect when the Diagnostic Policy Service (DP
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Microsoft Support Diagnostic Tool: Configure execution level*
 -   GP name: *WdiScenarioExecutionPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool*

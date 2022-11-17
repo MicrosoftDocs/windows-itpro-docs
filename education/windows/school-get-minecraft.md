@@ -1,22 +1,13 @@
 ---
 title: For IT administrators get Minecraft Education Edition
 description: Learn how IT admins can get and distribute Minecraft in their schools.
-keywords: Minecraft, Education Edition, IT admins, acquire
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-searchScope: 
-  - Store
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
-ms.topic: conceptual
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.collection:
+  - highpri
+  - education
 ---
 
 # For IT administrators - get Minecraft: Education Edition

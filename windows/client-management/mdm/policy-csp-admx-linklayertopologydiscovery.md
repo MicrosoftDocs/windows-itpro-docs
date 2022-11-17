@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_LinkLayerTopologyDiscovery.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/04/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_LinkLayerTopologyDiscovery
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_LinkLayerTopologyDiscovery policies  
+## ADMX_LinkLayerTopologyDiscovery policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-linklayertopologydiscovery-lltd-enablelltdio"></a>**ADMX_LinkLayerTopologyDiscovery/LLTD_EnableLLTDIO**  
+<a href="" id="admx-linklayertopologydiscovery-lltd-enablelltdio"></a>**ADMX_LinkLayerTopologyDiscovery/LLTD_EnableLLTDIO**
 
 <!--SupportedSKUs-->
 
@@ -77,7 +77,7 @@ If you disable or don't configure this policy setting, the default behavior of L
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Mapper I/O (LLTDIO) driver*
 -   GP name: *LLTD_EnableLLTDIO*
 -   GP path: *Network/Link-Layer Topology Discovery*
@@ -88,7 +88,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-linklayertopologydiscovery-lltd-enablerspndr"></a>**ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr**  
+<a href="" id="admx-linklayertopologydiscovery-lltd-enablerspndr"></a>**ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr**
 
 <!--SupportedSKUs-->
 
@@ -126,7 +126,7 @@ If you disable or don't configure this policy setting, the default behavior for 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn on Responder (RSPNDR) driver*
 -   GP name: *LLTD_EnableRspndr*
 -   GP path: *Network/Link-Layer Topology Discovery*

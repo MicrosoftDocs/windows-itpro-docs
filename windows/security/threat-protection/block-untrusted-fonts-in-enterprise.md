@@ -2,13 +2,13 @@
 title: Block untrusted fonts in an enterprise (Windows 10)
 description: To help protect your company from attacks that may originate from untrusted or attacker controlled font files, we've created the Blocking Untrusted Fonts feature.
 ms.reviewer: 
-manager: dansimp
-ms.prod: m365-security
+manager: aaroncz
+ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 ms.date: 08/14/2017
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Block untrusted fonts in an enterprise

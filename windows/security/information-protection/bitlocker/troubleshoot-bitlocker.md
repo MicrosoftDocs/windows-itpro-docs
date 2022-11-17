@@ -2,8 +2,8 @@
 title: Guidelines for troubleshooting BitLocker
 description: Describes approaches for investigating BitLocker issues, including how to gather diagnostic information
 ms.reviewer: kaushika
-ms.technology: windows-sec
-ms.prod: m365-security
+ms.technology: itpro-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: Teresa-Motiv
 ms.author: v-tappelgate

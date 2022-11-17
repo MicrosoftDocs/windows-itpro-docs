@@ -1,7 +1,7 @@
 ---
 title: Windows 10 default media removal policy
 description: In Windows 10, version 1809, the default removal policy for external storage media changed from Better performance to Quick removal.
-ms.prod: w10
+ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 ms.date: 11/25/2020
@@ -13,6 +13,7 @@ ms.custom:
 audience: ITPro
 ms.localizationpriority: medium
 manager: kaushika
+ms.technology: itpro-manage
 ---
 
 # Change in default removal policy for external storage media in Windows 10, version 1809

@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_LanmanWorkstation.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/08/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_LanmanWorkstation
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_LanmanWorkstation policies  
+## ADMX_LanmanWorkstation policies
 
 <dl>
   <dd>
@@ -42,7 +42,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-lanmanworkstation-pol-ciphersuiteorder"></a>**ADMX_LanmanWorkstation/Pol_CipherSuiteOrder**  
+<a href="" id="admx-lanmanworkstation-pol-ciphersuiteorder"></a>**ADMX_LanmanWorkstation/Pol_CipherSuiteOrder**
 
 <!--SupportedSKUs-->
 
@@ -99,7 +99,7 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Cipher suite order*
 -   GP name: *Pol_CipherSuiteOrder*
 -   GP path: *Network\Lanman Workstation*
@@ -110,7 +110,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-lanmanworkstation-pol-enablehandlecachingforcafiles"></a>**ADMX_LanmanWorkstation/Pol_EnableHandleCachingForCAFiles**  
+<a href="" id="admx-lanmanworkstation-pol-enablehandlecachingforcafiles"></a>**ADMX_LanmanWorkstation/Pol_EnableHandleCachingForCAFiles**
 
 <!--SupportedSKUs-->
 
@@ -149,7 +149,7 @@ If you disable or don't configure this policy setting, Windows will prevent use 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Handle Caching on Continuous Availability Shares*
 -   GP name: *Pol_EnableHandleCachingForCAFiles*
 -   GP path: *Network\Lanman Workstation*
@@ -160,7 +160,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-lanmanworkstation-pol-enableofflinefilesforcashares"></a>**ADMX_LanmanWorkstation/Pol_EnableOfflineFilesforCAShares**  
+<a href="" id="admx-lanmanworkstation-pol-enableofflinefilesforcashares"></a>**ADMX_LanmanWorkstation/Pol_EnableOfflineFilesforCAShares**
 
 <!--SupportedSKUs-->
 
@@ -199,7 +199,7 @@ If you disable or don't configure this policy setting, Windows will prevent use 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Offline Files Availability on Continuous Availability Shares*
 -   GP name: *Pol_EnableOfflineFilesforCAShares*
 -   GP path: *Network\Lanman Workstation*

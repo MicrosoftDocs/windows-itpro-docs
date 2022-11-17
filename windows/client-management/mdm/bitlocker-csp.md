@@ -3,14 +3,13 @@ title: BitLocker CSP
 description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/04/2022
 ms.reviewer: 
 manager: aaroncz
-ms.collection: highpri
 ---
 
 # BitLocker CSP
@@ -19,7 +18,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 
 > [!NOTE]
 > Settings are enforced only at the time encryption is started. Encryption isn't restarted with settings changes.
-> 
+>
 > You must send all the settings together in a single SyncML to be effective.
 
 A `Get` operation on any of the settings, except for `RequireDeviceEncryption` and `RequireStorageCardEncryption`, returns the setting configured by the admin.
@@ -61,13 +60,13 @@ BitLocker
 ```
 
 > [!TIP]
-> Some of the policies here are ADMX-backed policies. For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+> Some of the policies here are ADMX-backed policies. For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](../enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
 
-<a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
+<a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
 
-<a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
+<a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**
 <!--Description-->
 Allows the administrator to require encryption that needs to be turned on by using BitLocker\Device Encryption.
 <!--/Description-->
@@ -100,7 +99,7 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 The following list shows the supported values:
 
 - 0 (default): Disable. If the policy setting isn't set or is set to 0, the device's enforcement status isn't checked. The policy doesn't enforce encryption and it doesn't decrypt encrypted volumes.
-- 1: Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
+- 1: Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).
 <!--/SupportedValues-->
 If you want to disable this policy, use the following SyncML:
 
@@ -120,7 +119,7 @@ If you want to disable this policy, use the following SyncML:
             </Item>
         </Replace>
     </SyncBody>
-</SyncML>        
+</SyncML>
 ```
 
 > [!NOTE]
@@ -178,9 +177,9 @@ If you disable or don't configure this policy setting, BitLocker will use the de
 - 7 = XTS-AES 256
 <!--/SupportedValues-->
 > [!NOTE]
-> When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.  
+> When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.
 
-  If you want to disable this policy, use the following SyncML: 
+  If you want to disable this policy, use the following SyncML:
 
 ```xml
 <Replace>
@@ -202,7 +201,7 @@ Data type is string.
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="identificationfield"></a>**IdentificationField**  
+<a href="" id="identificationfield"></a>**IdentificationField**
 <!--Description-->
 Allows you to associate unique organizational identifiers to a new drive that is enabled with BitLocker.
 <!--/Description-->
@@ -260,7 +259,7 @@ If you disable or don't configure this setting, the identification field isn't r
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesenableprebootpinexceptionondecapabledevice"></a>**SystemDrivesEnablePreBootPinExceptionOnDECapableDevice**  
+<a href="" id="systemdrivesenableprebootpinexceptionondecapabledevice"></a>**SystemDrivesEnablePreBootPinExceptionOnDECapableDevice**
 <!--Description-->
 Allows users on devices that are compliant with InstantGo or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
 <!--/Description-->
@@ -300,7 +299,7 @@ If this policy is disabled, the options of "Require additional authentication at
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesenhancedpin"></a>**SystemDrivesEnhancedPIN**  
+<a href="" id="systemdrivesenhancedpin"></a>**SystemDrivesEnhancedPIN**
 <!--Description-->
 Allows users to configure whether or not enhanced startup PINs are used with BitLocker.
 <!--/Description-->
@@ -343,7 +342,7 @@ If you disable or don't configure this policy setting, enhanced PINs won't be us
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesdisallowstandarduserscanchangepin"></a>**SystemDrivesDisallowStandardUsersCanChangePIN**  
+<a href="" id="systemdrivesdisallowstandarduserscanchangepin"></a>**SystemDrivesDisallowStandardUsersCanChangePIN**
 <!--Description-->
 Allows you to configure whether standard users are allowed to change BitLocker PIN or password that is used to protect the operating system drive.
 <!--/Description-->
@@ -386,7 +385,7 @@ Sample value for this node to disable this policy is:
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesenableprebootinputprotectorsonslates"></a>**SystemDrivesEnablePrebootInputProtectorsOnSlates**  
+<a href="" id="systemdrivesenableprebootinputprotectorsonslates"></a>**SystemDrivesEnablePrebootInputProtectorsOnSlates**
 <!--Description-->
 Allows users to enable authentication options that require user input from the preboot environment, even if the platform indicates a lack of preboot input capability.
 <!--/Description-->
@@ -436,7 +435,7 @@ When the Windows Recovery Environment isn't enabled and this policy isn't enable
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesencryptiontype"></a>**SystemDrivesEncryptionType**  
+<a href="" id="systemdrivesencryptiontype"></a>**SystemDrivesEncryptionType**
 <!--Description-->
 Allows you to configure the encryption type that is used by BitLocker.
 <!--/Description-->
@@ -477,14 +476,14 @@ Sample value for this node to enable this policy is:
 If this policy is disabled, the BitLocker Setup Wizard asks the user to select the encryption type before turning on BitLocker.
 
 >[!Note]
->This policy is ignored when shrinking or expanding a volume, and the BitLocker driver uses the current encryption method. 
+>This policy is ignored when shrinking or expanding a volume, and the BitLocker driver uses the current encryption method.
 >For example, when a drive that's using Used Space Only encryption is expanded, the new free space isn't wiped as it would be for a drive that uses Full encryption. The user could wipe the free space on a Used Space Only drive by using the following command: `manage-bde -w`. If the volume is shrunk, no action is taken for the new free space.
 
 For more information about the tool to manage BitLocker, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
 
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
+<a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Require additional authentication at startup".
 <!--/Description-->
@@ -529,7 +528,7 @@ If you disable or don't configure this setting, users can configure only basic o
 > [!NOTE]
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
 
-> [!NOTE] 
+> [!NOTE]
 > Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern Standby devices won't be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
@@ -576,13 +575,13 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
+<a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Configure minimum PIN length for startup".
 <!--/Description-->
@@ -611,7 +610,7 @@ ADMX Info:
 This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of six digits and can have a maximum length of 20 digits.
 
 > [!NOTE]
-> In Windows 10, version 1703 release B, you can use a minimum PIN length of 4 digits. 
+> In Windows 10, version 1703 release B, you can use a minimum PIN length of 4 digits.
 >
 >In TPM 2.0 if minimum PIN length is set below 6 digits, Windows will attempt to update the TPM lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset. This doesn't apply to TPM 1.2.
 
@@ -642,13 +641,13 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage** 
+<a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Configure pre-boot recovery message and URL"
 (PrebootRecoveryInfo_Name).
@@ -721,12 +720,12 @@ Disabling the policy will let the system choose the default behaviors.  If you w
 > [!NOTE]
 > Not all characters and languages are supported in pre-boot. It's strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
+<a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).
 <!--/Description-->
@@ -777,18 +776,18 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 <!--SupportedValues-->
-The possible values for 'xx' are:  
+The possible values for 'xx' are:
 
 - true = Explicitly allow
 - false = Policy not set
 
-The possible values for 'yy' are:  
+The possible values for 'yy' are:
 
 - 2 = Allowed
 - 1 = Required
 - 0 = Disallowed
 
-The possible values for 'zz' are:  
+The possible values for 'zz' are:
 
 - 2 = Store recovery passwords only.
 - 1 = Store recovery passwords and key packages.
@@ -810,12 +809,12 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
+<a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().
 <!--/Description-->
@@ -902,12 +901,12 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
+<a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).
 <!--/Description-->
@@ -960,12 +959,12 @@ If you disable or don't configure this setting, all fixed data drives on the com
  </Replace>
 ```
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="fixeddrivesencryptiontype"></a>**FixedDrivesEncryptionType**  
+<a href="" id="fixeddrivesencryptiontype"></a>**FixedDrivesEncryptionType**
 <!--Description-->
 Allows you to configure the encryption type on fixed data drives that is used by BitLocker.
 <!--/Description-->
@@ -1006,14 +1005,14 @@ Sample value for this node to enable this policy is:
 If this policy is disabled, the BitLocker Setup Wizard asks the user to select the encryption type before turning on BitLocker.
 
 >[!Note]
->This policy is ignored when you're shrinking or expanding a volume and the BitLocker driver uses the current encryption method. 
+>This policy is ignored when you're shrinking or expanding a volume and the BitLocker driver uses the current encryption method.
 >For example, when a drive that's using Used Space Only encryption is expanded, the new free space isn't wiped as it would be for a drive that's using Full encryption. The user could wipe the free space on a Used Space Only drive by using the following command: `manage-bde -w`. If the volume is shrunk, no action is taken for the new free space.
 
 For more information about the tool to manage BitLocker, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
 
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
+<a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**
 <!--Description-->
 This setting is a direct mapping to the BitLocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).
 <!--/Description-->
@@ -1080,7 +1079,7 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 ```
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="removabledrivesencryptiontype"></a>**RemovableDrivesEncryptionType**  
+<a href="" id="removabledrivesencryptiontype"></a>**RemovableDrivesEncryptionType**
 <!--Description-->
 Allows you to configure the encryption type that is used by BitLocker.
 <!--/Description-->
@@ -1122,7 +1121,7 @@ If this policy is disabled or not configured, the BitLocker Setup Wizard asks th
 
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="removabledrivesconfigurebde"></a>**RemovableDrivesConfigureBDE**  
+<a href="" id="removabledrivesconfigurebde"></a>**RemovableDrivesConfigureBDE**
 <!--Description-->
 Allows you to control the use of BitLocker on removable data drives.
 <!--/Description-->
@@ -1174,7 +1173,7 @@ If you don't configure this policy setting, users can use BitLocker on removable
 
 <!--/Policy-->
 <!--Policy-->
-<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
+<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**
 <!--Description-->
 Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is set to 1.
 <!--/Description-->
@@ -1276,10 +1275,10 @@ If you want to disable this policy, use the following SyncML:
 
 <!--Policy-->
 
-<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**
 
 <!--Description-->
-This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
+This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys.
 
 <!--/Description-->
 
@@ -1296,7 +1295,7 @@ This setting initiates a client-driven recovery password refresh after an OS dri
 
 <!--/SupportedSKUs-->
 
-Value type is int. 
+Value type is int.
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -1305,7 +1304,7 @@ Supported operations are Add, Delete, Get, and Replace.
 Supported values are:
 
 - 0 – Refresh off (default).
-- 1 – Refresh on for Azure AD-joined devices. 
+- 1 – Refresh on for Azure AD-joined devices.
 - 2 – Refresh on for both Azure AD-joined and hybrid-joined devices.
 
 <!--/SupportedValues-->
@@ -1313,20 +1312,20 @@ Supported values are:
 
 <!--Policy-->
 
-<a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
+<a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**
 
 <!--Description-->
 
 This setting refreshes all recovery passwords for OS and fixed drives (removable drives aren't included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password per volume is retained. If errors occur, an error code will be returned so that server can take appropriate action to remediate.
 <!--/Description-->
 
-The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.  
+The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.
 
-Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client won't retry, but if needed, the server can reissue the execute request. 
+Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client won't retry, but if needed, the server can reissue the execute request.
 
-Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query the status of the refresh. 
+Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query the status of the refresh.
 
-Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices can't refresh recovery passwords if they're only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account. 
+Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices can't refresh recovery passwords if they're only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account.
 
 Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
 - RotateRecoveryPasswordsRequestID: Returns request ID of last request processed.
@@ -1351,7 +1350,7 @@ Supported operation is Execute. Request ID is expected as a parameter.
 > [!NOTE]
 > Key rotation is supported only on these enrollment types. For more information, see [deviceEnrollmentType enum](/graph/api/resources/intune-devices-deviceenrollmenttype).
 >   - windowsAzureADJoin.
->   - windowsBulkAzureDomainJoin. 
+>   - windowsBulkAzureDomainJoin.
 >   - windowsAzureADJoinUsingDeviceAuth.
 >   - windowsCoManagement.
 
@@ -1365,7 +1364,7 @@ Supported operation is Execute. Request ID is expected as a parameter.
 >    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required").
 >    - FDVActiveDirectoryBackup_Name is set to true.
 
-<a href="" id="status"></a>**Status**  
+<a href="" id="status"></a>**Status**
 Interior node.
 
 Supported operation is Get.
@@ -1373,9 +1372,9 @@ Supported operation is Get.
 <!--/Policy-->
 
 <!--Policy-->
-<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus** 
+<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus**
 <!--Description-->
-This node reports compliance state of device encryption on the system. 
+This node reports compliance state of device encryption on the system.
 <!--/Description-->
 <!--SupportedSKUs-->
 
@@ -1391,11 +1390,11 @@ This node reports compliance state of device encryption on the system.
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
-Value type is int. 
+Value type is int.
 
 Supported operation is Get.
 
-Supported values:  
+Supported values:
 
 - 0 - Indicates that the device is compliant.
 - Any non-zero value - Indicates that the device isn't compliant. This value represents a bitmask with each bit and the corresponding error code described in the following table:
@@ -1426,13 +1425,13 @@ Supported values:
 
 <!--Policy-->
 
-<a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
+<a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**
 <!--Description-->
 
-This node reports the status of RotateRecoveryPasswords request. 
+This node reports the status of RotateRecoveryPasswords request.
 <!--/Description-->
 
-Status code can be one of the following values:  
+Status code can be one of the following values:
 
 - 2 – Not started
 - 1 - Pending
@@ -1451,7 +1450,7 @@ Status code can be one of the following values:
 
 <!--/SupportedSKUs-->
 
-Value type is int. 
+Value type is int.
 
 Supported operation is Get.
 
@@ -1459,10 +1458,10 @@ Supported operation is Get.
 
 <!--Policy-->
 
-<a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
+<a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**
 
 <!--Description-->
-This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
 This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
 <!--/Description-->
 <!--SupportedSKUs-->
@@ -1478,7 +1477,7 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 
 <!--/SupportedSKUs-->
 
-Value type is string. 
+Value type is string.
 
 Supported operation is Get.
 
@@ -1517,7 +1516,7 @@ The following example is provided to show proper format and shouldn't be taken a
         </Item>
       </Replace>
 
-      <!-- All of the following policies are only supported on desktop SKU -->    
+      <!-- All of the following policies are only supported on desktop SKU -->
       <Replace>
         <CmdID>$CmdID$</CmdID>
         <Item>
@@ -1650,4 +1649,4 @@ The following example is provided to show proper format and shouldn't be taken a
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

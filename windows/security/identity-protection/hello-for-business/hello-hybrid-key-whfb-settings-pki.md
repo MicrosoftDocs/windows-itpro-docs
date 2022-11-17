@@ -1,7 +1,7 @@
 ---
 title: Configure Hybrid Azure AD joined key trust Windows Hello for Business
 description: Configuring Hybrid key trust Windows Hello for Business - Public Key Infrastructure (PKI)
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,11 +10,12 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 04/30/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Hybrid deployment</b>
+  - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Public Key Infrastructure
 
@@ -84,7 +85,7 @@ The certificate template is configured to supersede all the certificate template
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
-Sign-in to the certificate authority or management workstations with an _enterprise administrator_ equivalent credentials.
+Sign-in to the certificate authority or management workstations with _enterprise administrator_ equivalent credentials.
 
 1. Open the **Certificate Authority** management console.
 2. Expand the parent node from the navigation pane.

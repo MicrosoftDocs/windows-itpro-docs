@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Printing2.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/15/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Printing2
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Printing2 policies  
+## ADMX_Printing2 policies
 
 <dl>
   <dd>
@@ -60,7 +60,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-autopublishing"></a>**ADMX_Printing2/AutoPublishing**  
+<a href="" id="admx-printing2-autopublishing"></a>**ADMX_Printing2/AutoPublishing**
 
 <!--SupportedSKUs-->
 
@@ -101,7 +101,7 @@ The default behavior is to automatically publish shared printers in Active Direc
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Automatically publish new printers in Active Directory*
 -   GP name: *AutoPublishing*
 -   GP path: *Printers*
@@ -112,7 +112,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-immortalprintqueue"></a>**ADMX_Printing2/ImmortalPrintQueue**  
+<a href="" id="admx-printing2-immortalprintqueue"></a>**ADMX_Printing2/ImmortalPrintQueue**
 
 <!--SupportedSKUs-->
 
@@ -153,7 +153,7 @@ If you disable this setting, the domain controller doesn't prune this computer's
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow pruning of published printers*
 -   GP name: *ImmortalPrintQueue*
 -   GP path: *Printers*
@@ -164,7 +164,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-prunedownlevel"></a>**ADMX_Printing2/PruneDownlevel**  
+<a href="" id="admx-printing2-prunedownlevel"></a>**ADMX_Printing2/PruneDownlevel**
 
 <!--SupportedSKUs-->
 
@@ -212,7 +212,7 @@ You can enable this setting to change the default behavior. To use this setting,
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prune printers that are not automatically republished*
 -   GP name: *PruneDownlevel*
 -   GP path: *Printers*
@@ -223,7 +223,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-pruninginterval"></a>**ADMX_Printing2/PruningInterval**  
+<a href="" id="admx-printing2-pruninginterval"></a>**ADMX_Printing2/PruningInterval**
 
 <!--SupportedSKUs-->
 
@@ -266,7 +266,7 @@ If you don't configure or disable this setting, the default values will be used.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Directory pruning interval*
 -   GP name: *PruningInterval*
 -   GP path: *Printers*
@@ -277,7 +277,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-pruningpriority"></a>**ADMX_Printing2/PruningPriority**  
+<a href="" id="admx-printing2-pruningpriority"></a>**ADMX_Printing2/PruningPriority**
 
 <!--SupportedSKUs-->
 
@@ -318,7 +318,7 @@ By default, the pruning thread runs at normal priority. However, you can adjust 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Directory pruning priority*
 -   GP name: *PruningPriority*
 -   GP path: *Printers*
@@ -329,7 +329,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-pruningretries"></a>**ADMX_Printing2/PruningRetries**  
+<a href="" id="admx-printing2-pruningretries"></a>**ADMX_Printing2/PruningRetries**
 
 <!--SupportedSKUs-->
 
@@ -372,7 +372,7 @@ If you don't configure or disable this setting, the default values are used.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Directory pruning retry*
 -   GP name: *PruningRetries*
 -   GP path: *Printers*
@@ -383,7 +383,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-pruningretrylog"></a>**ADMX_Printing2/PruningRetryLog**  
+<a href="" id="admx-printing2-pruningretrylog"></a>**ADMX_Printing2/PruningRetryLog**
 
 <!--SupportedSKUs-->
 
@@ -424,7 +424,7 @@ If you disable or don't configure this policy setting, the contact events aren't
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Log directory pruning retry events*
 -   GP name: *PruningRetryLog*
 -   GP path: *Printers*
@@ -435,7 +435,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-registerspoolerremoterpcendpoint"></a>**ADMX_Printing2/RegisterSpoolerRemoteRpcEndPoint**  
+<a href="" id="admx-printing2-registerspoolerremoterpcendpoint"></a>**ADMX_Printing2/RegisterSpoolerRemoteRpcEndPoint**
 
 <!--SupportedSKUs-->
 
@@ -473,7 +473,7 @@ The spooler must be restarted for changes to this policy to take effect.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow Print Spooler to accept client connections*
 -   GP name: *RegisterSpoolerRemoteRpcEndPoint*
 -   GP path: *Printers*
@@ -484,7 +484,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-printing2-verifypublishedstate"></a>**ADMX_Printing2/VerifyPublishedState**  
+<a href="" id="admx-printing2-verifypublishedstate"></a>**ADMX_Printing2/VerifyPublishedState**
 
 <!--SupportedSKUs-->
 
@@ -522,7 +522,7 @@ To disable verification, disable this setting, or enable this setting and select
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Check published state*
 -   GP name: *VerifyPublishedState*
 -   GP path: *Printers*

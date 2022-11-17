@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_Kerberos.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/12/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Kerberos
 
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Kerberos policies  
+## ADMX_Kerberos policies
 
 <dl>
   <dd>
@@ -57,7 +57,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-alwayssendcompoundid"></a>**ADMX_Kerberos/AlwaysSendCompoundId**  
+<a href="" id="admx-kerberos-alwayssendcompoundid"></a>**ADMX_Kerberos/AlwaysSendCompoundId**
 
 <!--SupportedSKUs-->
 
@@ -86,9 +86,9 @@ manager: aaroncz
 This policy setting controls whether a device always sends a compound authentication request when the resource domain requests compound identity.
 
 > [!NOTE]
-> For a domain controller to request compound authentication, the policies "KDC support for claims, compound authentication, and Kerberos armoring" and "Request compound authentication" must be configured and enabled in the resource account domain. 
+> For a domain controller to request compound authentication, the policies "KDC support for claims, compound authentication, and Kerberos armoring" and "Request compound authentication" must be configured and enabled in the resource account domain.
 
-If you enable this policy setting and the resource domain requests compound authentication, devices that support compound authentication always send a compound authentication request. 
+If you enable this policy setting and the resource domain requests compound authentication, devices that support compound authentication always send a compound authentication request.
 
 If you disable or don't configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
 
@@ -96,7 +96,7 @@ If you disable or don't configure this policy setting and the resource domain re
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always send compound authentication first*
 -   GP name: *AlwaysSendCompoundId*
 -   GP path: *System\Kerberos*
@@ -107,7 +107,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-devicepkinitenabled"></a>**ADMX_Kerberos/DevicePKInitEnabled**  
+<a href="" id="admx-kerberos-devicepkinitenabled"></a>**ADMX_Kerberos/DevicePKInitEnabled**
 
 <!--SupportedSKUs-->
 
@@ -150,7 +150,7 @@ If you don't configure this policy setting, Automatic will be used.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support device authentication using certificate*
 -   GP name: *DevicePKInitEnabled*
 -   GP path: *System\Kerberos*
@@ -161,7 +161,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-hosttorealm"></a>**ADMX_Kerberos/HostToRealm**  
+<a href="" id="admx-kerberos-hosttorealm"></a>**ADMX_Kerberos/HostToRealm**
 
 <!--SupportedSKUs-->
 
@@ -199,7 +199,7 @@ If you don't configure this policy setting, the system uses the host name-to-Ker
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define host name-to-Kerberos realm mappings*
 -   GP name: *HostToRealm*
 -   GP path: *System\Kerberos*
@@ -210,7 +210,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-kdcproxydisableserverrevocationcheck"></a>**ADMX_Kerberos/KdcProxyDisableServerRevocationCheck**  
+<a href="" id="admx-kerberos-kdcproxydisableserverrevocationcheck"></a>**ADMX_Kerberos/KdcProxyDisableServerRevocationCheck**
 
 <!--SupportedSKUs-->
 
@@ -238,7 +238,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to disable revocation check for the SSL certificate of the targeted KDC proxy server.
 
-If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections. 
+If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections.
 > [!WARNING]
 > When revocation check is ignored, the server represented by the certificate isn't guaranteed valid.
 
@@ -248,7 +248,7 @@ If you disable or don't configure this policy setting, the Kerberos client enfor
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable revocation checking for the SSL certificate of KDC proxy servers*
 -   GP name: *KdcProxyDisableServerRevocationCheck*
 -   GP path: *System\Kerberos*
@@ -259,7 +259,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-kdcproxyserver"></a>**ADMX_Kerberos/KdcProxyServer**  
+<a href="" id="admx-kerberos-kdcproxyserver"></a>**ADMX_Kerberos/KdcProxyServer**
 
 <!--SupportedSKUs-->
 
@@ -295,7 +295,7 @@ If you disable or don't configure this policy setting, the Kerberos client doesn
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify KDC proxy servers for Kerberos clients*
 -   GP name: *KdcProxyServer*
 -   GP path: *System\Kerberos*
@@ -306,7 +306,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-mitrealms"></a>**ADMX_Kerberos/MitRealms**  
+<a href="" id="admx-kerberos-mitrealms"></a>**ADMX_Kerberos/MitRealms**
 
 <!--SupportedSKUs-->
 
@@ -344,7 +344,7 @@ If you don't configure this policy setting, the system uses the interoperable Ke
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Define interoperable Kerberos V5 realm settings*
 -   GP name: *MitRealms*
 -   GP path: *System\Kerberos*
@@ -355,7 +355,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-serveracceptscompound"></a>**ADMX_Kerberos/ServerAcceptsCompound**  
+<a href="" id="admx-kerberos-serveracceptscompound"></a>**ADMX_Kerberos/ServerAcceptsCompound**
 
 <!--SupportedSKUs-->
 
@@ -399,7 +399,7 @@ If you don't configure this policy setting, Automatic will be used.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Support compound authentication*
 -   GP name: *ServerAcceptsCompound*
 -   GP path: *System\Kerberos*
@@ -410,7 +410,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-kerberos-stricttarget"></a>**ADMX_Kerberos/StrictTarget**  
+<a href="" id="admx-kerberos-stricttarget"></a>**ADMX_Kerberos/StrictTarget**
 
 <!--SupportedSKUs-->
 
@@ -446,7 +446,7 @@ If you disable or don't configure this policy setting, any service is allowed to
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Require strict target SPN match on remote procedure calls*
 -   GP name: *StrictTarget*
 -   GP path: *System\Kerberos*

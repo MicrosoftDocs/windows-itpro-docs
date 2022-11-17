@@ -1,7 +1,7 @@
 ---
 title: Multi-factor Unlock
-description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals. 
-ms.prod: m365-security
+description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals.
+ms.prod: windows-client
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
@@ -10,9 +10,10 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Multi-factor Unlock
 

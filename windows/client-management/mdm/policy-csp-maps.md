@@ -3,8 +3,8 @@ title: Policy CSP - Maps
 description: Use the Policy CSP - Maps setting to allow the download and update of map data over metered connections.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## Maps policies  
+## Maps policies
 
 <dl>
   <dd>
@@ -31,7 +31,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**  
+<a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**
 
 <!--SupportedSKUs-->
 
@@ -75,7 +75,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**  
+<a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**
 
 <!--SupportedSKUs-->
 
@@ -107,7 +107,7 @@ After the policy is applied, you can verify the settings in the user interface i
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Automatic Download and Update of Map Data*
 -   GP name: *TurnOffAutoUpdate*
 -   GP path: *Windows Components/Maps*

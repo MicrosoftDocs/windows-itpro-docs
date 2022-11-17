@@ -4,10 +4,11 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2016 (also known as Windows 10 Enterprise 2016 LTSB).
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2016

@@ -1,9 +1,9 @@
 ---
 title: Post-device registration readiness checks
-description:  This article details how post-device registration readiness checks are performed in Windows Autopatch
+description: This article details how post-device registration readiness checks are performed in Windows Autopatch
 ms.date: 09/16/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -49,7 +49,7 @@ Windows Autopatch has three tabs within its Devices blade. Each tab is designed 
 | Tab | Description |
 | ----- | ----- |
 | Ready | This tab only lists devices with the **Active** status. Devices with the **Active** status successfully:<ul><li>Passed the prerequisite checks.</li><li>Registered with Windows Autopatch.</li></ul>This tab also lists devices that have passed all postdevice registration readiness checks. |
-| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven’t communicated with the Microsoft Endpoint Manager-Intune service in the last 28 days.</li></ul> |
+| Not ready | This tab only lists devices with the **Readiness failed** and **Inactive** status.<ul><li>**Readiness failed status**: Devices that didn’t pass one or more post-device registration readiness checks.</li><li>**Inactive**: Devices that haven’t communicated with the Microsoft Intune service in the last 28 days.</li></ul> |
 | Not registered | Only lists devices with the **Prerequisite failed** status in it. Devices with the **Prerequisite failed** status didn’t pass one or more prerequisite checks during the device registration process. |
 
 ## Details about the post-device registration readiness checks
@@ -67,9 +67,9 @@ The following list of post-device registration readiness checks is performed in 
 | Check | Description |
 | ----- | ----- |
 | **Windows OS build, architecture, and edition** | Checks to see if devices support Windows 1809+ build (10.0.17763), 64-bit architecture and either Pro or Enterprise SKUs. |
-| **Windows update policies managed via Microsoft Endpoint Manager-Intune** | Checks to see if devices have Windows Updates policies managed via Microsoft Endpoint Manager-Intune (MDM). |
-| **Windows update policies managed via Group Policy Object (GPO)** | Checks to see if devices have Windows update policies managed via GPO. Windows Autopatch doesn’t support Windows update policies managed via GPOs. Windows update must be managed via Microsoft Endpoint Manager-Intune. |
-| **Microsoft Office update policy managed via Group Policy Object (GPO)** | Checks to see if devices have Microsoft Office updates policies managed via GPO. Windows Autopatch doesn’t support Microsoft Office update policies managed via GPOs. Office updates must be managed via Microsoft Endpoint Manager-Intune or another Microsoft Office policy management method where Office update bits are downloaded directly from the Office Content Delivery Network (CDN). |
+| **Windows update policies managed via Microsoft Intune** | Checks to see if devices have Windows Updates policies managed via Microsoft Intune (MDM). |
+| **Windows update policies managed via Group Policy Object (GPO)** | Checks to see if devices have Windows update policies managed via GPO. Windows Autopatch doesn’t support Windows update policies managed via GPOs. Windows update must be managed via Microsoft Intune. |
+| **Microsoft Office update policy managed via Group Policy Object (GPO)** | Checks to see if devices have Microsoft Office updates policies managed via GPO. Windows Autopatch doesn’t support Microsoft Office update policies managed via GPOs. Office updates must be managed via Microsoft Intune or another Microsoft Office policy management method where Office update bits are downloaded directly from the Office Content Delivery Network (CDN). |
 | **Windows Autopatch network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that Windows Autopatch services must be able to reach for the various aspects of the Windows Autopatch service. |
 | **Microsoft Teams network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Teams must be able to reach for software updates management. |
 | **Microsoft Edge network endpoints** | There's a set of [network endpoints](../prepare/windows-autopatch-configure-network.md) that devices with Microsoft Edge must be able to reach for software updates management. |

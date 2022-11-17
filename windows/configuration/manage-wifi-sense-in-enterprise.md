@@ -4,10 +4,11 @@ description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get onl
 ms.reviewer: 
 manager: aaroncz
 ms.author: lizlong
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Manage Wi-Fi Sense in your company

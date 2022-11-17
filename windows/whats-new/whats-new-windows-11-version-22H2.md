@@ -2,13 +2,14 @@
 title: What's new in Windows 11, version 22H2 for IT pros
 description: Learn more about what's new in Windows 11 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
 manager: dougeby
-ms.prod: w10
+ms.prod: windows-client
 ms.author: mstewart
 author: mestew
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
 ms.custom: intro-overview
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 11, version 22H2

@@ -1,18 +1,13 @@
 ---
 title: Windows 11 SE Overview
-description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.prod: windows
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn about Windows 11 SE, and the apps that are included with the operating system.
+ms.topic: article
 ms.date: 09/12/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
+ms.collection:
+  - highpri
+  - education
 ---
 
 # Windows 11 SE Overview
@@ -86,13 +81,15 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 
 | Application                             | Supported version | App Type | Vendor                       |
 |-----------------------------------------|-------------------|----------|------------------------------|
+| 3d builder                              | 15.2.10821.1070   | Win32    | Microsoft                    |
+| Absolute Software Endpoint Agent        | 7.21-15655        | Win32    | Absolute Software Corporation|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
 | Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
 | Brave Browser                           | 106.0.5249.65     | Win32    | Brave                        |
 | Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
 | CA Secure Browser                       | 14.0.0            | Win32    | Cambium Development          |
 | Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
-| CKAuthenticator                         | 3.6               | Win32    | Content Keeper               |
+| CKAuthenticator                         | 3.6+              | Win32    | Content Keeper               |
 | Class Policy                            | 114.0.0           | Win32    | Class Policy                 |
 | Classroom.cloud                         | 1.40.0004         | Win32    | NetSupport                   |
 | CoGat Secure Browser                    | 11.0.0.19         | Win32    | Riverside Insights           |
@@ -100,6 +97,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | DRC INSIGHT Online Assessments          | 12.0.0.0          | Store    | Data recognition Corporation |
 | Duo from Cisco                          | 2.25.0            | Win32    | Cisco                        |
 | e-Speaking Voice and Speech recognition | 4.4.0.8           | Win32    | e-speaking                   |
+|Epson iProjection                        |	3.31              | Win32    | Epson                        |
 | eTests                                  | 4.0.25            | Win32    | CASAS                        |
 | FortiClient                             | 7.2.0.4034+       | Win32    | Fortinet                     |
 | Free NaturalReader                      | 16.1.2            | Win32    | Natural Soft                 |
@@ -109,6 +107,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Illuminate Lockdown Browser             | 2.0.5             | Win32    | Illuminate Education         |
 | Immunet                                 | 7.5.0.20795       | Win32    | Immunet                      |
 | Impero Backdrop Client                  | 4.4.86            | Win32    | Impero Software              |
+| Inspiration 10                          | 10.11             | Win32    | Inspiration Software, Inc.   |
 | JAWS for Windows                        | 2022.2112.24      | Win32    | Freedom Scientific           |
 | Kite Student Portal                     | 8.0.3.0           | Win32    | Dynamic Learning Maps        |
 | Kortext                                 | 2.3.433.0         | Store    | Kortext                      |
@@ -127,6 +126,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | NextUp Talker                           | 1.0.49            | Win32    | NextUp Technologies          |
 | NonVisual Desktop Access                | 2021.3.1          | Win32    | NV Access                    |
 | NWEA Secure Testing Browser             | 5.4.356.0         | Win32    | NWEA                         |
+| PaperCut                                | 22.0.6            | Win32    | PaperCut Software International Pty Ltd |
 | Pearson TestNav                         | 1.10.2.0          | Store    | Pearson                      |
 | Questar Secure Browser                  | 4.8.3.376         | Win32    | Questar, Inc                 |
 | ReadAndWriteForWindows                  | 12.0.60.0         | Win32    | Texthelp Ltd.                |
@@ -135,7 +135,12 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Respondus Lockdown Browser              | 2.0.9.00          | Win32    | Respondus                    |
 | Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
 | Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
+| Smoothwall monitor                      | 2.8.0             | Win32    | Smoothwall Ltd               |
 | SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
+| SuperNova Magnifier & Speech            | 21.02             | Win32    | Dolphin Computer Access      |  
+| VitalSourceBookShelf 	                  | 10.2.26.0         | Win32    | VitalSource Technologies Inc | 
+| Winbird                                 |	19                | Win32    | Winbird Co., Ltd.            |           
+| WordQ 	                                | 5.4.23            | Win32    | Mathetmots                   |
 | Zoom                                    | 5.9.1 (2581)      | Win32    | Zoom                         |
 | ZoomText Fusion                         | 2022.2109.10      | Win32    | Freedom Scientific           |
 | ZoomText Magnifier/Reader               | 2022.2109.25      | Win32    | Freedom Scientific           |

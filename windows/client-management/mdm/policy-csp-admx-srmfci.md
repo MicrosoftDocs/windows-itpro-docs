@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_srmfci.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/18/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_srmfci
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_srmfci policies  
+## ADMX_srmfci policies
 
 <dl>
   <dd>
@@ -39,7 +39,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-srmfci-enableshellaccesscheck"></a>**ADMX_srmfci/EnableShellAccessCheck**  
+<a href="" id="admx-srmfci-enableshellaccesscheck"></a>**ADMX_srmfci/EnableShellAccessCheck**
 
 <!--SupportedSKUs-->
 
@@ -71,7 +71,7 @@ This group policy setting should be set on Windows clients to enable access-deni
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable access-denied assistance on client for all file types*
 -   GP name: *EnableShellAccessCheck*
 -   GP path: *System\Access-Denied Assistance*
@@ -82,7 +82,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-srmfci-accessdeniedconfiguration"></a>**ADMX_srmfci/AccessDeniedConfiguration**  
+<a href="" id="admx-srmfci-accessdeniedconfiguration"></a>**ADMX_srmfci/AccessDeniedConfiguration**
 
 <!--SupportedSKUs-->
 
@@ -108,18 +108,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the message that users see when they're denied access to a file or folder. You can customize the Access Denied message to include more text and links. You can also provide users with the ability to send an email to request access to the file or folder to which they were denied access.  
+This policy setting specifies the message that users see when they're denied access to a file or folder. You can customize the Access Denied message to include more text and links. You can also provide users with the ability to send an email to request access to the file or folder to which they were denied access.
 
-If you enable this policy setting, users receive a customized Access Denied message from the file servers on which this policy setting is applied.  
+If you enable this policy setting, users receive a customized Access Denied message from the file servers on which this policy setting is applied.
 
-If you disable this policy setting, users see a standard Access Denied message that doesn't provide any of the functionalities controlled by this policy setting, regardless of the file server configuration.  
+If you disable this policy setting, users see a standard Access Denied message that doesn't provide any of the functionalities controlled by this policy setting, regardless of the file server configuration.
 
 If you don't configure this policy setting, users see a standard Access Denied message unless the file server is configured to display the customized Access Denied message. By default, users see the standard Access Denied message.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Customize message for Access Denied errors*
 -   GP name: *AccessDeniedConfiguration*
 -   GP path: *System\Access-Denied Assistance*

@@ -1,16 +1,17 @@
 ---
 title: VPN connection types (Windows 10 and Windows 11)
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.localizationpriority: medium
 ms.date: 08/23/2021
 manager: aaroncz
 ms.author: paoloma
 ms.reviewer: pesmith
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 
 # VPN connection types

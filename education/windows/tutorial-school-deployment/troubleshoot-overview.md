@@ -1,20 +1,10 @@
 ---
 title: Troubleshoot Windows devices
-description: How to troubleshoot Windows devices from Intune and contact Microsoft Support for issues related to Intune and other Endpoint Manager services
+description: Learn how to troubleshoot Windows devices from Intune and contact Microsoft Support for issues related to Intune and other Endpoint Manager services.
 ms.date: 08/31/2022
-ms.prod: windows
-ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-#ms.reviewer: 
-manager: aaroncz
-ms.collection: education
+ms.topic: tutorial
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Troubleshoot Windows devices

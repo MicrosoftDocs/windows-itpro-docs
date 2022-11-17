@@ -1,7 +1,7 @@
 ---
 title: Use Virtual Smart Cards (Windows 10)
 description: This topic for the IT professional describes requirements for virtual smart cards and provides information about how to use and manage them.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -9,9 +9,10 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/13/2017
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows Server 2016</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows Server 2016</b>
+ms.technology: itpro-security
 ---
 
 # Use Virtual Smart Cards

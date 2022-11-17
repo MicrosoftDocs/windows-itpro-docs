@@ -1,12 +1,13 @@
 ---
-title: Get started with Windows Update 
+title: Get started with Windows Update
 description: An overview of learning resources for Windows Update, including documents on architecture, log files, and common errors.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.date: 09/18/2018
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Get started with Windows Update
@@ -20,9 +21,9 @@ Use the following information to get started with Windows Update:
 - Understand the UUP architecture
 - Understand [how Windows Update works](how-windows-update-works.md)
 - Find [Windows Update log files](windows-update-logs.md)
-- Learn how to [troubleshoot Windows Update](windows-update-troubleshooting.md)
-- Review [common Windows Update errors](windows-update-errors.md) and check out the [error code reference](windows-update-error-reference.md)
-- Review [other resources](windows-update-resources.md) to help you use Windows Update
+- Learn how to [troubleshoot Windows Update](/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json)
+- Review [common Windows Update errors](/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) and check out the [error code reference](windows-update-error-reference.md)
+- Review [other resources](/troubleshoot/windows-client/deployment/additional-resources-for-windows-update) to help you use Windows Update
 - Review [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) section of Microsoft Blogs.
 
 ## Unified Update Platform (UUP) architecture 

@@ -1,23 +1,25 @@
 ---
 title: Simulate a Windows 10 deployment in a test environment (Windows 10)
-description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
+description: This article will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
-ms.prod: w10
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: aczechowski
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Simulate a Windows 10 deployment in a test environment
 
-This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT. When working with advanced settings and rules, especially those like database calls, it is most efficient to be able to test the settings without having to run through a complete deployment. Luckily, MDT enables you to perform a simulated deployment by running the Gather process by itself. The simulation works best when you are using a domain-joined client.
+This article will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT. When working with advanced settings and rules, especially those like database calls, it's most efficient to be able to test the settings without having to run through a complete deployment. Luckily, MDT enables you to perform a simulated deployment by running the Gather process by itself. The simulation works best when you're using a domain-joined client.
 
 ## Test environment
 
 - A Windows 10 client named **PC0001** will be used to simulate deployment. The client is joined to the contoso.com domain and has access to the Internet to required download tools and scripts.
-- It is assumed that you have performed (at least) the following procedures so that you have an MDT service account and an MDT production deployment share:
+- It's assumed that you've performed (at least) the following procedures so that you have an MDT service account and an MDT production deployment share:
   - [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
   - [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
   - [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
@@ -71,13 +73,13 @@ On **PC0001**:
 
 11. Review the ZTIGather.log in the **C:\\MININT\\SMSOSD\\OSDLOGS** folder using CMTrace.
     **Note**  
-    Warnings or errors with regard to the Wizard.hta are expected. If the log file looks okay, you are ready to try a real deployment.
+    Warnings or errors regarding the Wizard.hta are expected. If the log file looks okay, you're ready to try a real deployment.
  
    ![ztigather.](../images/mdt-09-fig07.png)
 
    The ZTIGather.log file from PC0001.
 
-## Related topics
+## Related articles
 
 [Set up MDT for BitLocker](set-up-mdt-for-bitlocker.md)<br>
 [Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)<br>

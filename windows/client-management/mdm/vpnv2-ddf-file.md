@@ -5,8 +5,8 @@ ms.reviewer: pesmith
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 10/30/2020
 ---
@@ -16,7 +16,7 @@ ms.date: 10/30/2020
 
 This topic shows the OMA DM device description framework (DDF) for the **VPNv2** configuration service provider.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is for Windows 10, version 2004.
 

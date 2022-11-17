@@ -1,7 +1,7 @@
 ---
 title: Update Active Directory schema for cert-trust deployment (Windows Hello for Business)
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the certificate trust model.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
@@ -10,11 +10,12 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>On-premises deployments</b>
+  - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 # Validate Active Directory prerequisites for cert-trust deployment
 

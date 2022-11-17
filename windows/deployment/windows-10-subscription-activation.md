@@ -2,21 +2,21 @@
 title: Windows subscription activation
 description: In this article, you'll learn how to dynamically enable Windows 10 and Windows 11 Enterprise or Education subscriptions.
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
-ms.collection:
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
+ms.collection: 
   - M365-modern-desktop
   - highpri
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.topic: conceptual
-ms.date: 07/12/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.date: 10/31/2022
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Windows subscription activation
@@ -83,7 +83,7 @@ The following list illustrates how deploying Windows client has evolved with eac
 
 - **Windows 10, version 1803** updated Windows 10 subscription activation to enable pulling activation keys directly from firmware for devices that support firmware-embedded keys. It was no longer necessary to run a script to activate Windows 10 Pro before activating Enterprise. For virtual machines and hosts running Windows 10, version 1803, [inherited activation](#inherited-activation) was also enabled.
 
-- **Windows 10, version 1903** updated Windows 10 subscription activation to enable step up from Windows 10 Pro Education to Windows 10 Education for devices with a qualifying Windows 10 or Microsoft 365 subscription.
+- **Windows 10, version 1903** updated Windows 10 subscription activation to enable step-up from Windows 10 Pro Education to Windows 10 Education for devices with a qualifying Windows 10 or Microsoft 365 subscription.
 
 - **Windows 11, version 21H2** updated subscription activation to work on both Windows 10 and Windows 11 devices.
 
@@ -161,9 +161,9 @@ The following figure summarizes how the subscription activation model works:
 
 > [!NOTE]
 >
-> - A Windows 10 Pro Education device will only step up to Windows 10 Education edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
+> - A Windows 10 Pro Education device will only step-up to Windows 10 Education edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
 >
-> - A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
+> - A Windows 10 Pro device will only step-up to Windows 10 Enterprise edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
 
 ### Scenarios
 

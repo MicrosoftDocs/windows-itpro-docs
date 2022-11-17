@@ -1,7 +1,6 @@
 ---
 title: Change history for Microsoft Store for Business and Education
 description: Summary of topic changes for Microsoft Store for Business and Microsoft Store for Education. 
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

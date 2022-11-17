@@ -1,21 +1,21 @@
 ---
 title: Use AppLocker and Software Restriction Policies in the same domain (Windows)
-description: This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
+description: This article for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 ms.assetid: 2b7e0cec-df62-49d6-a2b7-6b8e30180943
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.date: 11/07/2022
+ms.technology: itpro-security
 ---
 
 # Use AppLocker and Software Restriction Policies in the same domain
@@ -23,19 +23,16 @@ ms.technology: windows-sec
 **Applies to**
 
 - Windows 10
-- Windows 11
-- Windows Server 2016 and above
+- Windows Server 2016
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
+This article for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 
-This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
+> [!IMPORTANT]
+> Software Restriction Policies were deprecated beginning with Windows 10 build 1803 and above, and also applies to Windows Server 2019 and above. You should use Windows Defender Application Control (WDAC) or AppLocker to control what software runs.
 
 ## Using AppLocker and Software Restriction Policies in the same domain
 
-AppLocker is supported on systems running Windows 7 and above. Software Restriction Policies (SRP) is supported on systems running Windows Vista or earlier. You can continue to use SRP for application control on your pre-Windows 7 computers, but use AppLocker for computers running 
-Windows Server 2008 R2, Windows 7 and later. It's recommended that you author AppLocker and SRP rules in separate GPOs and target the GPO with SRP policies to systems running Windows Vista or earlier. When both SRP and AppLocker policies are applied to computers running Windows Server 2008 R2, 
-Windows 7 and later, the SRP policies are ignored.
+AppLocker is supported on systems running Windows 8.1. Software Restriction Policies (SRP) is supported on systems running Windows Vista or earlier. You can continue to use SRP for application control on your pre-Windows 7 computers, but use AppLocker for computers running Windows Server 2008 R2, Windows 7 and later. It's recommended that you author AppLocker and SRP rules in separate GPOs and target the GPO with SRP policies to systems running Windows Vista or earlier. When both SRP and AppLocker policies are applied to computers running Windows Server 2008 R2, Windows 7 and later, the SRP policies are ignored.
 
 The following table compares the features and functions of Software Restriction Policies (SRP) and AppLocker.
 
@@ -45,7 +42,7 @@ The following table compares the features and functions of Software Restriction 
 |Policy creation|SRP policies are maintained through Group Policy and only the administrator of the GPO can update the SRP policy. The administrator on the local computer can modify the SRP policies defined in the local GPO.|AppLocker policies are maintained through Group Policy and only the administrator of the GPO can update the policy. The administrator on the local computer can modify the AppLocker policies defined in the local GPO.<br/><br/>AppLocker permits customization of error messages to direct users to a Web page for help.|
 |Policy maintenance|SRP policies must be updated by using the Local Security Policy snap-in (if the policies are created locally) or the Group Policy Management Console (GPMC).|AppLocker policies can be updated by using the Local Security Policy snap-in (if the policies are created locally), or the GPMC, or the Windows PowerShell AppLocker cmdlets.|
 |Policy application|SRP policies are distributed through Group Policy.|AppLocker policies are distributed through Group Policy.|
-|Enforcement mode|SRP works in the “blocklist mode” where administrators can create rules for files that they don't want to allow in this Enterprise whereas the rest of the file is allowed to run by default.<br/><br/>SRP can also be configured in the “allowlist mode” so that by default all files are blocked and administrators need to create allow rules for files that they want to allow.|AppLocker by default works in the “allowlist mode” where only those files are allowed to run for which there's a matching allow rule.|
+|Enforcement mode|SRP works in the “blocklist mode” where administrators can create rules for files that they don't want to allow in this Enterprise whereas the rest of the file is allowed to run by default.<br/><br/>SRP can also be configured in the “allowlist mode” so that by default all files are blocked. In "allowlist mode", administrators need to create allow rules for files that they want to run.|AppLocker by default works in the “allowlist mode” where only those files are allowed to run for which there's a matching allow rule.|
 |File types that can be controlled|SRP can control the following file types:<li>Executables<li>Dlls<li>Scripts<li>Windows Installers<br/><br/>SRP can't control each file type separately. All SRP rules are in a single rule collection.|AppLocker can control the following file types:<li>Executables<li>Dlls<li>Scripts<li>Windows Installers<li>Packaged apps and installers<br/><br/>AppLocker maintains a separate rule collection for each of the five file types.|
 |Designated file types|SRP supports an extensible list of file types that are considered executable. Administrators can add extensions for files that should be considered executable.|AppLocker currently supports the following file extensions:<li>Executables (.exe, .com)<li>Dlls (.ocx, .dll)<li>Scripts (.vbs, .js, .ps1, .cmd, .bat)<li>Windows Installers (.msi, .mst, .msp)<li>Packaged app installers (.appx)|
 |Rule types|SRP supports four types of rules:<li>Hash<li>Path<li>Signature<li>Internet zone|AppLocker supports three types of rules:<li>File hash<li>Path<li>Publisher|

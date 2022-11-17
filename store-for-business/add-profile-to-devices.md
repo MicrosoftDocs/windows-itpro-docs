@@ -1,7 +1,6 @@
 ---
 title: Manage Windows device deployment with Windows Autopilot Deployment
 description: Add an Autopilot profile to devices. Autopilot profiles control what is included in Windows set up experience for your employees.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store

@@ -3,8 +3,8 @@ title: Policy CSP - RestrictedGroups
 description: Learn how the Policy CSP - RestrictedGroups setting allows an administrator to define the members that are part of a security-sensitive (restricted) group.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 04/07/2020
@@ -21,7 +21,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## RestrictedGroups policies  
+## RestrictedGroups policies
 
 <dl>
   <dd>
@@ -33,7 +33,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="restrictedgroups-configuregroupmembership"></a>**RestrictedGroups/ConfigureGroupMembership**  
+<a href="" id="restrictedgroups-configuregroupmembership"></a>**RestrictedGroups/ConfigureGroupMembership**
 
 <!--SupportedSKUs-->
 
@@ -61,10 +61,10 @@ manager: aaroncz
 <!--Description-->
 This security setting allows an administrator to define the members that are part of a security-sensitive (restricted) group. When a Restricted Groups policy is enforced, any current member of a restricted group that is not on the Members list is removed, except for the built-in administrator in the built-in Administrators group. Any user on the Members list who is not currently a member of the restricted group is added. An empty Members list means that the restricted group has no members. The membership configuration is based on SIDS, therefore renaming these built-in groups does not affect retention of this special membership.
 
-For example, you can create a Restricted Groups policy to allow only specified users. Alice and John, to be members of the Backup Operators group. When this policy is refreshed, only Alice and John will remain as members of the Backup Operators group, and all other members will be removed.  
+For example, you can create a Restricted Groups policy to allow only specified users. Alice and John, to be members of the Backup Operators group. When this policy is refreshed, only Alice and John will remain as members of the Backup Operators group, and all other members will be removed.
 
 > [!CAUTION]
-> Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:  
+> Attempting to remove the built-in administrator from the Administrators group will result in failure with the following error:
 >
 > | Error Code  | Symbolic Name | Error Description | Header |
 > |----------|----------|----------|----------|
@@ -73,7 +73,7 @@ For example, you can create a Restricted Groups policy to allow only specified u
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of zero members when applying the policy implies clearing the access group, and should be used with caution.
 
 ```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">  
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
   <xs:simpleType name="member_name">
     <xs:restriction base="xs:string">
       <xs:maxLength value="255" />
@@ -145,7 +145,7 @@ where:
 
 ### Policy timeline
 
-The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in this topic. 
+The behavior of this policy setting differs in different Windows 10 versions. For Windows 10, version 1809 through version 1909, you can use name in `<accessgroup dec>` and SID in `<member name>`. For Windows 10, version 2004, you can use name or SID for both the elements, as described in this topic.
 
 The following table describes how this policy setting behaves in different Windows 10 versions:
 
@@ -153,7 +153,7 @@ The following table describes how this policy setting behaves in different Windo
 | ------------------ | --------------- |
 |Windows 10, version 1803 | Added this policy setting. <br> XML accepts group and member only by name. <br> Supports configuring the administrators group using the group name. <br> Expects member name to be in the account name format. |
 | Windows 10, version 1809 <br> Windows 10, version 1903 <br> Windows 10, version 1909 | Supports configuring any local group. <br> `<accessgroup desc>` accepts only name. <br> `<member name>` accepts a name or an SID. <br> This is useful when you want to ensure a certain local group always has a well-known SID as member. |
-| Windows 10, version 2004 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate.| 
+| Windows 10, version 2004 | Behaves as described in this topic. <br> Accepts name or SID for group and members and translates as appropriate.|
 
 
 <!--/Validation-->

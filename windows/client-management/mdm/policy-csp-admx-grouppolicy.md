@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_GroupPolicy.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/21/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_GroupPolicy
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_GroupPolicy policies  
+## ADMX_GroupPolicy policies
 
 <dl>
   <dd>
@@ -161,7 +161,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-allowx-forestpolicy-and-rup"></a>**ADMX_GroupPolicy/AllowX-ForestPolicy-and-RUP**  
+<a href="" id="admx-grouppolicy-allowx-forestpolicy-and-rup"></a>**ADMX_GroupPolicy/AllowX-ForestPolicy-and-RUP**
 
 <!--SupportedSKUs-->
 
@@ -207,7 +207,7 @@ If you disable this policy setting, the behavior is the same as if it isn't conf
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow cross-forest user policy and roaming user profiles*
 -   GP name: *AllowX-ForestPolicy-and-RUP*
 -   GP path: *System\Group Policy*
@@ -218,7 +218,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-appmgmt"></a>**ADMX_GroupPolicy/CSE_AppMgmt**  
+<a href="" id="admx-grouppolicy-cse-appmgmt"></a>**ADMX_GroupPolicy/CSE_AppMgmt**
 
 <!--SupportedSKUs-->
 
@@ -260,7 +260,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure software Installation policy processing*
 -   GP name: *CSE_AppMgmt*
 -   GP path: *System\Group Policy*
@@ -271,7 +271,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-diskquota"></a>**ADMX_GroupPolicy/CSE_DiskQuota**  
+<a href="" id="admx-grouppolicy-cse-diskquota"></a>**ADMX_GroupPolicy/CSE_DiskQuota**
 
 <!--SupportedSKUs-->
 
@@ -315,7 +315,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure disk quota policy processing*
 -   GP name: *CSE_DiskQuota*
 -   GP path: *System\Group Policy*
@@ -326,7 +326,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-efsrecovery"></a>**ADMX_GroupPolicy/CSE_EFSRecovery**  
+<a href="" id="admx-grouppolicy-cse-efsrecovery"></a>**ADMX_GroupPolicy/CSE_EFSRecovery**
 
 <!--SupportedSKUs-->
 
@@ -370,7 +370,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure EFS recovery policy processing*
 -   GP name: *CSE_EFSRecovery*
 -   GP path: *System\Group Policy*
@@ -381,7 +381,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-folderredirection"></a>**ADMX_GroupPolicy/CSE_FolderRedirection**  
+<a href="" id="admx-grouppolicy-cse-folderredirection"></a>**ADMX_GroupPolicy/CSE_FolderRedirection**
 
 <!--SupportedSKUs-->
 
@@ -423,7 +423,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure folder redirection policy processing*
 -   GP name: *CSE_FolderRedirection*
 -   GP path: *System\Group Policy*
@@ -434,7 +434,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-iem"></a>**ADMX_GroupPolicy/CSE_IEM**  
+<a href="" id="admx-grouppolicy-cse-iem"></a>**ADMX_GroupPolicy/CSE_IEM**
 
 <!--SupportedSKUs-->
 
@@ -478,7 +478,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Internet Explorer Maintenance policy processing*
 -   GP name: *CSE_IEM*
 -   GP path: *System\Group Policy*
@@ -489,7 +489,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-ipsecurity"></a>**ADMX_GroupPolicy/CSE_IPSecurity**  
+<a href="" id="admx-grouppolicy-cse-ipsecurity"></a>**ADMX_GroupPolicy/CSE_IPSecurity**
 
 <!--SupportedSKUs-->
 
@@ -533,7 +533,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure IP security policy processing*
 -   GP name: *CSE_IPSecurity*
 -   GP path: *System\Group Policy*
@@ -544,7 +544,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-registry"></a>**ADMX_GroupPolicy/CSE_Registry**  
+<a href="" id="admx-grouppolicy-cse-registry"></a>**ADMX_GroupPolicy/CSE_Registry**
 
 <!--SupportedSKUs-->
 
@@ -584,7 +584,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure registry policy processing*
 -   GP name: *CSE_Registry*
 -   GP path: *System\Group Policy*
@@ -595,7 +595,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-scripts"></a>**ADMX_GroupPolicy/CSE_Scripts**  
+<a href="" id="admx-grouppolicy-cse-scripts"></a>**ADMX_GroupPolicy/CSE_Scripts**
 
 <!--SupportedSKUs-->
 
@@ -637,7 +637,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure scripts policy processing*
 -   GP name: *CSE_Scripts*
 -   GP path: *System\Group Policy*
@@ -648,7 +648,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-security"></a>**ADMX_GroupPolicy/CSE_Security**  
+<a href="" id="admx-grouppolicy-cse-security"></a>**ADMX_GroupPolicy/CSE_Security**
 
 <!--SupportedSKUs-->
 
@@ -690,7 +690,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure security policy processing*
 -   GP name: *CSE_Security*
 -   GP path: *System\Group Policy*
@@ -701,7 +701,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-wired"></a>**ADMX_GroupPolicy/CSE_Wired**  
+<a href="" id="admx-grouppolicy-cse-wired"></a>**ADMX_GroupPolicy/CSE_Wired**
 
 <!--SupportedSKUs-->
 
@@ -747,7 +747,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure wired policy processing*
 -   GP name: *CSE_Wired*
 -   GP path: *System\Group Policy*
@@ -758,7 +758,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-cse-wireless"></a>**ADMX_GroupPolicy/CSE_Wireless**  
+<a href="" id="admx-grouppolicy-cse-wireless"></a>**ADMX_GroupPolicy/CSE_Wireless**
 
 <!--SupportedSKUs-->
 
@@ -804,7 +804,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure wireless policy processing*
 -   GP name: *CSE_Wireless*
 -   GP path: *System\Group Policy*
@@ -815,7 +815,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-corpconnsyncwaittime"></a>**ADMX_GroupPolicy/CorpConnSyncWaitTime**  
+<a href="" id="admx-grouppolicy-corpconnsyncwaittime"></a>**ADMX_GroupPolicy/CorpConnSyncWaitTime**
 
 <!--SupportedSKUs-->
 
@@ -851,7 +851,7 @@ If you disable or don't configure this policy setting, Group Policy will use the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify workplace connectivity wait time for policy processing*
 -   GP name: *CorpConnSyncWaitTime*
 -   GP path: *System\Group Policy*
@@ -862,7 +862,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-denyrsoptointeractiveuser-1"></a>**ADMX_GroupPolicy/DenyRsopToInteractiveUser_1**  
+<a href="" id="admx-grouppolicy-denyrsoptointeractiveuser-1"></a>**ADMX_GroupPolicy/DenyRsopToInteractiveUser_1**
 
 <!--SupportedSKUs-->
 
@@ -907,7 +907,7 @@ If you disable or don't configure this policy setting, interactive users can gen
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Determine if interactive users can generate Resultant Set of Policy data*
 -   GP name: *DenyRsopToInteractiveUser_1*
 -   GP path: *System\Group Policy*
@@ -918,7 +918,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-denyrsoptointeractiveuser-2"></a>**ADMX_GroupPolicy/DenyRsopToInteractiveUser_2**  
+<a href="" id="admx-grouppolicy-denyrsoptointeractiveuser-2"></a>**ADMX_GroupPolicy/DenyRsopToInteractiveUser_2**
 
 <!--SupportedSKUs-->
 
@@ -963,7 +963,7 @@ If you disable or don't configure this policy setting, interactive users can gen
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Determine if interactive users can generate Resultant Set of Policy data*
 -   GP name: *DenyRsopToInteractiveUser_2*
 -   GP path: *System\Group Policy*
@@ -974,7 +974,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-disableaoacprocessing"></a>**ADMX_GroupPolicy/DisableAOACProcessing**  
+<a href="" id="admx-grouppolicy-disableaoacprocessing"></a>**ADMX_GroupPolicy/DisableAOACProcessing**
 
 <!--SupportedSKUs-->
 
@@ -1006,7 +1006,7 @@ This policy setting prevents the Group Policy Client Service from stopping when 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Group Policy Client Service AOAC optimization*
 -   GP name: *DisableAOACProcessing*
 -   GP path: *System\Group Policy*
@@ -1017,7 +1017,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-disableautoadmupdate"></a>**ADMX_GroupPolicy/DisableAutoADMUpdate**  
+<a href="" id="admx-grouppolicy-disableautoadmupdate"></a>**ADMX_GroupPolicy/DisableAutoADMUpdate**
 
 <!--SupportedSKUs-->
 
@@ -1064,7 +1064,7 @@ Files will always be copied to the GPO if they have a later timestamp.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off automatic update of ADM files*
 -   GP name: *DisableAutoADMUpdate*
 -   GP path: *System\Group Policy*
@@ -1075,7 +1075,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-disablebackgroundpolicy"></a>**ADMX_GroupPolicy/DisableBackgroundPolicy**  
+<a href="" id="admx-grouppolicy-disablebackgroundpolicy"></a>**ADMX_GroupPolicy/DisableBackgroundPolicy**
 
 <!--SupportedSKUs-->
 
@@ -1114,7 +1114,7 @@ If you disable or don't configure this policy setting, updates can be applied wh
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off background refresh of Group Policy*
 -   GP name: *DisableBackgroundPolicy*
 -   GP path: *System\Group Policy*
@@ -1125,7 +1125,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-disablelgpoprocessing"></a>**ADMX_GroupPolicy/DisableLGPOProcessing**  
+<a href="" id="admx-grouppolicy-disablelgpoprocessing"></a>**ADMX_GroupPolicy/DisableLGPOProcessing**
 
 <!--SupportedSKUs-->
 
@@ -1166,7 +1166,7 @@ If you disable or don't configure this policy setting, Local GPOs continue to be
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Local Group Policy Objects processing*
 -   GP name: *DisableLGPOProcessing*
 -   GP path: *System\Group Policy*
@@ -1177,7 +1177,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-disableusersfrommachgp"></a>**ADMX_GroupPolicy/DisableUsersFromMachGP**  
+<a href="" id="admx-grouppolicy-disableusersfrommachgp"></a>**ADMX_GroupPolicy/DisableUsersFromMachGP**
 
 <!--SupportedSKUs-->
 
@@ -1221,7 +1221,7 @@ Also, see the "Set Group Policy refresh interval for computers" policy setting t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove users' ability to invoke machine policy refresh*
 -   GP name: *DisableUsersFromMachGP*
 -   GP path: *System\Group Policy*
@@ -1232,7 +1232,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-enablecdp"></a>**ADMX_GroupPolicy/EnableCDP**  
+<a href="" id="admx-grouppolicy-enablecdp"></a>**ADMX_GroupPolicy/EnableCDP**
 
 <!--SupportedSKUs-->
 
@@ -1270,7 +1270,7 @@ If you don't configure this policy setting, the default behavior depends on the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Continue experiences on this device*
 -   GP name: *EnableCDP*
 -   GP path: *System\Group Policy*
@@ -1281,7 +1281,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-enablelogonoptimization"></a>**ADMX_GroupPolicy/EnableLogonOptimization**  
+<a href="" id="admx-grouppolicy-enablelogonoptimization"></a>**ADMX_GroupPolicy/EnableLogonOptimization**
 
 <!--SupportedSKUs-->
 
@@ -1321,7 +1321,7 @@ If you disable this policy setting, the Group Policy client won't cache applicab
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Group Policy Caching*
 -   GP name: *EnableLogonOptimization*
 -   GP path: *System\Group Policy*
@@ -1332,7 +1332,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-enablelogonoptimizationonserversku"></a>**ADMX_GroupPolicy/EnableLogonOptimizationOnServerSKU**  
+<a href="" id="admx-grouppolicy-enablelogonoptimizationonserversku"></a>**ADMX_GroupPolicy/EnableLogonOptimizationOnServerSKU**
 
 <!--SupportedSKUs-->
 
@@ -1372,7 +1372,7 @@ If you disable or don't configure this policy setting, the Group Policy client w
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Group Policy Caching for Servers*
 -   GP name: *EnableLogonOptimizationOnServerSKU*
 -   GP path: *System\Group Policy*
@@ -1383,7 +1383,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-enablemmx"></a>**ADMX_GroupPolicy/EnableMMX**  
+<a href="" id="admx-grouppolicy-enablemmx"></a>**ADMX_GroupPolicy/EnableMMX**
 
 <!--SupportedSKUs-->
 
@@ -1421,7 +1421,7 @@ If you don't configure this policy setting, the default behavior depends on the 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Phone-PC linking on this device*
 -   GP name: *EnableMMX*
 -   GP path: *System\Group Policy*
@@ -1432,7 +1432,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-enforcepoliciesonly"></a>**ADMX_GroupPolicy/EnforcePoliciesOnly**  
+<a href="" id="admx-grouppolicy-enforcepoliciesonly"></a>**ADMX_GroupPolicy/EnforcePoliciesOnly**
 
 <!--SupportedSKUs-->
 
@@ -1475,7 +1475,7 @@ In Group Policy Object Editor, preferences have a red icon to distinguish them f
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enforce Show Policies Only*
 -   GP name: *EnforcePoliciesOnly*
 -   GP path: *System\Group Policy*
@@ -1486,7 +1486,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-fontmitigation"></a>**ADMX_GroupPolicy/FontMitigation**  
+<a href="" id="admx-grouppolicy-fontmitigation"></a>**ADMX_GroupPolicy/FontMitigation**
 
 <!--SupportedSKUs-->
 
@@ -1512,7 +1512,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This security feature provides a global setting to prevent programs from loading untrusted fonts. Untrusted fonts are any font installed outside of the %windir%\Fonts directory. 
+This security feature provides a global setting to prevent programs from loading untrusted fonts. Untrusted fonts are any font installed outside of the %windir%\Fonts directory.
 
 This feature can be configured to be in three modes: On, Off, and Audit. By default, it's Off and no fonts are blocked. If you aren't ready to deploy this feature into your organization, you can run it in Audit mode to see if blocking untrusted fonts causes any usability or compatibility issues.
 
@@ -1520,7 +1520,7 @@ This feature can be configured to be in three modes: On, Off, and Audit. By defa
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Untrusted Font Blocking*
 -   GP name: *DisableUsersFromMachGP*
 -   GP path: *System\Mitigation Options*
@@ -1531,7 +1531,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-gpdcoptions"></a>**ADMX_GroupPolicy/GPDCOptions**  
+<a href="" id="admx-grouppolicy-gpdcoptions"></a>**ADMX_GroupPolicy/GPDCOptions**
 
 <!--SupportedSKUs-->
 
@@ -1576,7 +1576,7 @@ If you disable this setting or don't configure it, the Group Policy Object Edito
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Group Policy domain controller selection*
 -   GP name: *GPDCOptions*
 -   GP path: *System\Group Policy*
@@ -1587,7 +1587,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-gptransferrate-1"></a>**ADMX_GroupPolicy/GPTransferRate_1**  
+<a href="" id="admx-grouppolicy-gptransferrate-1"></a>**ADMX_GroupPolicy/GPTransferRate_1**
 
 <!--SupportedSKUs-->
 
@@ -1634,7 +1634,7 @@ Also, see the "Do not detect slow network connections" and related policies in C
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Group Policy slow link detection*
 -   GP name: *GPTransferRate_1*
 -   GP path: *System\Group Policy*
@@ -1645,7 +1645,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-gptransferrate-2"></a>**ADMX_GroupPolicy/GPTransferRate_2**  
+<a href="" id="admx-grouppolicy-gptransferrate-2"></a>**ADMX_GroupPolicy/GPTransferRate_2**
 
 <!--SupportedSKUs-->
 
@@ -1683,7 +1683,7 @@ If you disable this setting or don't configure it, the system uses the default v
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile. 
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
 
 > [!NOTE]
 > If the profile server has IP connectivity, the connection speed setting is used. If the profile server doesn't have IP connectivity, the SMB timing is used.
@@ -1692,7 +1692,7 @@ Also, see the "Do not detect slow network connections" and related policies in C
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Group Policy slow link detection*
 -   GP name: *GPTransferRate_2*
 -   GP path: *System\Group Policy*
@@ -1703,7 +1703,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-grouppolicyrefreshrate"></a>**ADMX_GroupPolicy/GroupPolicyRefreshRate**  
+<a href="" id="admx-grouppolicy-grouppolicyrefreshrate"></a>**ADMX_GroupPolicy/GroupPolicyRefreshRate**
 
 <!--SupportedSKUs-->
 
@@ -1752,7 +1752,7 @@ This setting is only used when the "Turn off background refresh of Group Policy"
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Group Policy refresh interval for computers*
 -   GP name: *GroupPolicyRefreshRate*
 -   GP path: *System\Group Policy*
@@ -1763,7 +1763,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-grouppolicyrefreshratedc"></a>**ADMX_GroupPolicy/GroupPolicyRefreshRateDC**  
+<a href="" id="admx-grouppolicy-grouppolicyrefreshratedc"></a>**ADMX_GroupPolicy/GroupPolicyRefreshRateDC**
 
 <!--SupportedSKUs-->
 
@@ -1806,7 +1806,7 @@ This setting also lets you specify how much the actual update interval varies. T
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Group Policy refresh interval for domain controllers*
 -   GP name: *GroupPolicyRefreshRateDC*
 -   GP path: *System\Group Policy*
@@ -1817,7 +1817,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-grouppolicyrefreshrateuser"></a>**ADMX_GroupPolicy/GroupPolicyRefreshRateUser**  
+<a href="" id="admx-grouppolicy-grouppolicyrefreshrateuser"></a>**ADMX_GroupPolicy/GroupPolicyRefreshRateUser**
 
 <!--SupportedSKUs-->
 
@@ -1868,7 +1868,7 @@ This setting also lets you specify how much the actual update interval varies. T
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set Group Policy refresh interval for users*
 -   GP name: *GroupPolicyRefreshRateUser*
 -   GP path: *System\Group Policy*
@@ -1879,7 +1879,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-logonscriptdelay"></a>**ADMX_GroupPolicy/LogonScriptDelay**  
+<a href="" id="admx-grouppolicy-logonscriptdelay"></a>**ADMX_GroupPolicy/LogonScriptDelay**
 
 <!--SupportedSKUs-->
 
@@ -1921,7 +1921,7 @@ If you don't configure this policy setting, Group Policy will wait five minutes 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Logon Script Delay*
 -   GP name: *LogonScriptDelay*
 -   GP path: *System\Group Policy*
@@ -1932,7 +1932,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-newgpodisplayname"></a>**ADMX_GroupPolicy/NewGPODisplayName**  
+<a href="" id="admx-grouppolicy-newgpodisplayname"></a>**ADMX_GroupPolicy/NewGPODisplayName**
 
 <!--SupportedSKUs-->
 
@@ -1970,7 +1970,7 @@ If this setting is Disabled or Not Configured, the default display name of New G
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set default name for new Group Policy objects*
 -   GP name: *NewGPODisplayName*
 -   GP path: *System\Group Policy*
@@ -1981,7 +1981,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-newgpolinksdisabled"></a>**ADMX_GroupPolicy/NewGPOLinksDisabled**  
+<a href="" id="admx-grouppolicy-newgpolinksdisabled"></a>**ADMX_GroupPolicy/NewGPOLinksDisabled**
 
 <!--SupportedSKUs-->
 
@@ -2017,7 +2017,7 @@ If you disable this setting or don't configure it, new Group Policy object links
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Create new Group Policy Object links disabled by default*
 -   GP name: *NewGPOLinksDisabled*
 -   GP path: *System\Group Policy*
@@ -2028,7 +2028,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-onlyuselocaladminfiles"></a>**ADMX_GroupPolicy/OnlyUseLocalAdminFiles**  
+<a href="" id="admx-grouppolicy-onlyuselocaladminfiles"></a>**ADMX_GroupPolicy/OnlyUseLocalAdminFiles**
 
 <!--SupportedSKUs-->
 
@@ -2080,7 +2080,7 @@ If you disable or don't configure this setting, the Group Policy Object Editor s
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Always use local ADM files for Group Policy Object Editor*
 -   GP name: *OnlyUseLocalAdminFiles*
 -   GP path: *System\Group Policy*
@@ -2091,7 +2091,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-processmitigationoptions"></a>**ADMX_GroupPolicy/ProcessMitigationOptions**  
+<a href="" id="admx-grouppolicy-processmitigationoptions"></a>**ADMX_GroupPolicy/ProcessMitigationOptions**
 
 <!--SupportedSKUs-->
 
@@ -2139,7 +2139,7 @@ Setting flags not specified here to any value other than ? results in undefined 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Process Mitigation Options*
 -   GP name: *ProcessMitigationOptions*
 -   GP path: *System\Mitigation Options*
@@ -2150,7 +2150,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-rsoplogging"></a>**ADMX_GroupPolicy/RSoPLogging**  
+<a href="" id="admx-grouppolicy-rsoplogging"></a>**ADMX_GroupPolicy/RSoPLogging**
 
 <!--SupportedSKUs-->
 
@@ -2191,7 +2191,7 @@ If you disable or don't configure this setting, RSoP logging is turned on. By de
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Resultant Set of Policy logging*
 -   GP name: *RSoPLogging*
 -   GP path: *System\Group Policy*
@@ -2202,7 +2202,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-resetdfsclientinfoduringrefreshpolicy"></a>**ADMX_GroupPolicy/ResetDfsClientInfoDuringRefreshPolicy**  
+<a href="" id="admx-grouppolicy-resetdfsclientinfoduringrefreshpolicy"></a>**ADMX_GroupPolicy/ResetDfsClientInfoDuringRefreshPolicy**
 
 <!--SupportedSKUs-->
 
@@ -2234,7 +2234,7 @@ Enabling this setting will cause the Group Policy Client to connect to the same 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable AD/DFS domain controller synchronization during policy refresh*
 -   GP name: *ResetDfsClientInfoDuringRefreshPolicy*
 -   GP path: *System\Group Policy*
@@ -2245,7 +2245,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-slowlinkdefaultfordirectaccess"></a>**ADMX_GroupPolicy/SlowLinkDefaultForDirectAccess**  
+<a href="" id="admx-grouppolicy-slowlinkdefaultfordirectaccess"></a>**ADMX_GroupPolicy/SlowLinkDefaultForDirectAccess**
 
 <!--SupportedSKUs-->
 
@@ -2286,7 +2286,7 @@ If you disable this setting or don't configure it, Group Policy will evaluate th
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure Direct Access connections as a fast network connection*
 -   GP name: *SlowLinkDefaultForDirectAccess*
 -   GP path: *System\Group Policy*
@@ -2297,7 +2297,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-slowlinkdefaulttoasync"></a>**ADMX_GroupPolicy/SlowlinkDefaultToAsync**  
+<a href="" id="admx-grouppolicy-slowlinkdefaulttoasync"></a>**ADMX_GroupPolicy/SlowlinkDefaultToAsync**
 
 <!--SupportedSKUs-->
 
@@ -2341,7 +2341,7 @@ If you disable or don't configure this policy setting, detecting a slow network 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Change Group Policy processing to run asynchronously when a slow network connection is detected.*
 -   GP name: *SlowlinkDefaultToAsync*
 -   GP path: *System\Group Policy*
@@ -2352,7 +2352,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-syncwaittime"></a>**ADMX_GroupPolicy/SyncWaitTime**  
+<a href="" id="admx-grouppolicy-syncwaittime"></a>**ADMX_GroupPolicy/SyncWaitTime**
 
 <!--SupportedSKUs-->
 
@@ -2388,7 +2388,7 @@ If you disable or don't configure this policy setting, Group Policy will use the
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify startup policy processing wait time*
 -   GP name: *SyncWaitTime*
 -   GP path: *System\Group Policy*
@@ -2399,7 +2399,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-grouppolicy-userpolicymode"></a>**ADMX_GroupPolicy/UserPolicyMode**  
+<a href="" id="admx-grouppolicy-userpolicymode"></a>**ADMX_GroupPolicy/UserPolicyMode**
 
 <!--SupportedSKUs-->
 
@@ -2443,7 +2443,7 @@ If you disable this setting or don't configure it, the user's Group Policy Objec
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure user Group Policy loopback processing mode*
 -   GP name: *UserPolicyMode*
 -   GP path: *System\Group Policy*

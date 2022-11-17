@@ -1,7 +1,7 @@
 ---
-title: Windows Update error code list by component 
+title: Windows Update error code list by component
 description: Learn about reference information for Windows Update error codes, including automatic update errors, UI errors, and reporter errors.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.date: 09/18/2018
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.technology: itpro-updates
 ---
 
 # Windows Update error codes by component

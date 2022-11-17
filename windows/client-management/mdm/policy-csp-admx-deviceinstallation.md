@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_DeviceInstallation.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/19/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_DeviceInstallation
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_DeviceInstallation policies  
+## ADMX_DeviceInstallation policies
 
 <dl>
   <dd>
@@ -57,7 +57,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-allowadmininstall"></a>**ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall**  
+<a href="" id="admx-deviceinstallation-deviceinstall-allowadmininstall"></a>**ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall**
 
 <!--SupportedSKUs-->
 
@@ -93,7 +93,7 @@ If you disable or don't configure this policy setting, members of the Administra
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow administrators to override Device Installation Restriction policies*
 -   GP name: *DeviceInstall_AllowAdminInstall*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
@@ -104,7 +104,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext"></a>**ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_DetailText**  
+<a href="" id="admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext"></a>**ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_DetailText**
 
 <!--SupportedSKUs-->
 
@@ -140,7 +140,7 @@ If you disable or don't configure this policy setting, Windows displays a defaul
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display a custom message when installation is prevented by a policy setting*
 -   GP name: *DeviceInstall_DeniedPolicy_DetailText*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
@@ -151,7 +151,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext"></a>**ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_SimpleText**  
+<a href="" id="admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext"></a>**ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_SimpleText**
 
 <!--SupportedSKUs-->
 
@@ -187,7 +187,7 @@ If you disable or don't configure this policy setting, Windows displays a defaul
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display a custom message title when device installation is prevented by a policy setting*
 -   GP name: *DeviceInstall_DeniedPolicy_SimpleText*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
@@ -198,7 +198,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-installtimeout"></a>**ADMX_DeviceInstallation/DeviceInstall_InstallTimeout**  
+<a href="" id="admx-deviceinstallation-deviceinstall-installtimeout"></a>**ADMX_DeviceInstallation/DeviceInstall_InstallTimeout**
 
 <!--SupportedSKUs-->
 
@@ -224,7 +224,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure the number of seconds Windows waits for a device installation task to complete. 
+This policy setting allows you to configure the number of seconds Windows waits for a device installation task to complete.
 
 If you enable this policy setting, Windows waits for the number of seconds you specify before terminating the installation.
 
@@ -234,7 +234,7 @@ If you disable or don't configure this policy setting, Windows waits 240 seconds
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Configure device installation time-out*
 -   GP name: *DeviceInstall_InstallTimeout*
 -   GP path: *System\Device Installation*
@@ -245,7 +245,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-policy-reboottime"></a>**ADMX_DeviceInstallation/DeviceInstall_Policy_RebootTime**  
+<a href="" id="admx-deviceinstallation-deviceinstall-policy-reboottime"></a>**ADMX_DeviceInstallation/DeviceInstall_Policy_RebootTime**
 
 <!--SupportedSKUs-->
 
@@ -284,7 +284,7 @@ If you disable or don't configure this policy setting, the system doesn't force 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Time (in seconds) to force reboot when required for policy changes to take effect*
 -   GP name: *DeviceInstall_Policy_RebootTime*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
@@ -295,7 +295,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-removable-deny"></a>**ADMX_DeviceInstallation/DeviceInstall_Removable_Deny**  
+<a href="" id="admx-deviceinstallation-deviceinstall-removable-deny"></a>**ADMX_DeviceInstallation/DeviceInstall_Removable_Deny**
 
 <!--SupportedSKUs-->
 
@@ -330,7 +330,7 @@ If you disable or don't configure this policy setting, Windows can install and u
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent installation of removable devices*
 -   GP name: *DeviceInstall_Removable_Deny*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
@@ -341,7 +341,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-systemrestore"></a>**ADMX_DeviceInstallation/DeviceInstall_SystemRestore**  
+<a href="" id="admx-deviceinstallation-deviceinstall-systemrestore"></a>**ADMX_DeviceInstallation/DeviceInstall_SystemRestore**
 
 <!--SupportedSKUs-->
 
@@ -367,7 +367,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to prevent Windows from creating a system restore point during device activity that would normally prompt Windows to create a system restore point. Windows normally creates restore points for certain driver activity, such as the installation of an unsigned driver. A system restore point enables you to more easily restore your system to its state before the activity. 
+This policy setting allows you to prevent Windows from creating a system restore point during device activity that would normally prompt Windows to create a system restore point. Windows normally creates restore points for certain driver activity, such as the installation of an unsigned driver. A system restore point enables you to more easily restore your system to its state before the activity.
 
 If you enable this policy setting, Windows doesn't create a system restore point when one would normally be created.
 
@@ -377,7 +377,7 @@ If you disable or don't configure this policy setting, Windows creates a system 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent creation of a system restore point during device activity that would normally prompt creation of a restore point*
 -   GP name: *DeviceInstall_SystemRestore*
 -   GP path: *System\Device Installation*
@@ -388,7 +388,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-deviceinstallation-deviceinstall-classes-allowuser"></a>**ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser**  
+<a href="" id="admx-deviceinstallation-deviceinstall-classes-allowuser"></a>**ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser**
 
 <!--SupportedSKUs-->
 
@@ -425,7 +425,7 @@ If you disable or don't configure this policy setting, only members of the Admin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow non-administrators to install drivers for these device setup classes*
 -   GP name: *DriverInstall_Classes_AllowUser*
 -   GP path: *System\Device Installation*

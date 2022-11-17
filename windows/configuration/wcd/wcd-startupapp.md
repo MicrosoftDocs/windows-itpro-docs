@@ -1,7 +1,7 @@
 ---
 title: StartupApp (Windows 10)
 description: This section describes the StartupApp settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -9,6 +9,7 @@ ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
 manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # StartupApp (Windows Configuration Designer reference)

@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
 description: What's new in Windows 10 for Windows 10 (version 1607)?
-ms.prod: w10
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.reviewer: 
 author: aczechowski
@@ -9,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 1607 for IT Pros

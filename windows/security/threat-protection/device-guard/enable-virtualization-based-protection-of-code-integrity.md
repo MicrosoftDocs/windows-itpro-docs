@@ -1,18 +1,20 @@
 ---
 title: Enable virtualization-based protection of code integrity
 description: This article explains the steps to opt in to using HVCI on Windows devices.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: vinpa
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 12/16/2021
 ms.reviewer: 
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Enable virtualization-based protection of code integrity
@@ -41,7 +43,7 @@ To enable HVCI on Windows 10 and Windows 11 devices with supporting hardware thr
 - [Windows Security app](#windows-security-app)
 - [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
 - [Group Policy](#enable-hvci-using-group-policy)
-- [Microsoft Endpoint Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
+- [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-virtualization-based-protection-of-code-integrity)
 
 ### Windows Security app

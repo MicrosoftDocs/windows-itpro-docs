@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_Explorer.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/08/2020
 ms.reviewer: 
@@ -17,13 +17,13 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## ADMX_Explorer policies  
+## ADMX_Explorer policies
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <dl>
@@ -48,7 +48,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-explorer-admininfourl"></a>**ADMX_Explorer/AdminInfoUrl**  
+<a href="" id="admx-explorer-admininfourl"></a>**ADMX_Explorer/AdminInfoUrl**
 
 <!--SupportedSKUs-->
 
@@ -79,7 +79,7 @@ This policy setting sets the target of the More Information link that will be di
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Set a support web page link*
 -   GP name: *AdminInfoUrl*
 -   GP path: *Windows Components\File Explorer*
@@ -90,7 +90,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-explorer-alwaysshowclassicmenu"></a>**ADMX_Explorer/AlwaysShowClassicMenu**  
+<a href="" id="admx-explorer-alwaysshowclassicmenu"></a>**ADMX_Explorer/AlwaysShowClassicMenu**
 
 <!--SupportedSKUs-->
 
@@ -123,13 +123,13 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting co
 
 If you enable this policy setting, the menu bar will be displayed in File Explorer.
 
-If you disable or don't configure this policy setting, the menu bar won't be displayed in File Explorer.  
+If you disable or don't configure this policy setting, the menu bar won't be displayed in File Explorer.
 
 > [!NOTE]
 > When the menu bar is not displayed, users can access the menu bar by pressing the 'ALT' key.
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Display the menu bar in File Explorer*
 -   GP name: *AlwaysShowClassicMenu*
 -   GP path: *Windows Components\File Explorer*
@@ -140,7 +140,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-explorer-disableroamedprofileinit"></a>**ADMX_Explorer/DisableRoamedProfileInit**  
+<a href="" id="admx-explorer-disableroamedprofileinit"></a>**ADMX_Explorer/DisableRoamedProfileInit**
 
 <!--SupportedSKUs-->
 
@@ -173,7 +173,7 @@ If you enable this policy setting on a machine that doesn't contain all programs
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not reinitialize a pre-existing roamed user profile when it is loaded on a machine for the first time*
 -   GP name: *DisableRoamedProfileInit*
 -   GP path: *Windows Components\File Explorer*
@@ -184,7 +184,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-explorer-preventitemcreationinusersfilesfolder"></a>**ADMX_Explorer/PreventItemCreationInUsersFilesFolder**  
+<a href="" id="admx-explorer-preventitemcreationinusersfilesfolder"></a>**ADMX_Explorer/PreventItemCreationInUsersFilesFolder**
 
 <!--SupportedSKUs-->
 
@@ -222,7 +222,7 @@ If you disable or don't configure this policy setting, users will be able to add
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent users from adding files to the root of their Users Files folder.*
 -   GP name: *PreventItemCreationInUsersFilesFolder*
 -   GP path: *Windows Components\File Explorer*
@@ -233,7 +233,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-explorer-turnoffspianimations"></a>**ADMX_Explorer/TurnOffSPIAnimations**  
+<a href="" id="admx-explorer-turnoffspianimations"></a>**ADMX_Explorer/TurnOffSPIAnimations**
 
 <!--SupportedSKUs-->
 
@@ -259,14 +259,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy is similar to settings directly available to computer users. 
+This policy is similar to settings directly available to computer users.
 
 Disabling animations can improve usability for users with some visual disabilities, and also improve performance and battery life in some scenarios.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off common control and window animations*
 -   GP name: *TurnOffSPIAnimations*
 -   GP path: *Windows Components\File Explorer*

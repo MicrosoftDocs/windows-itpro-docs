@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business Videos
 description: View several informative videos describing features and experiences in Windows Hello for Business in Windows 10 and Windows 11.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,9 +10,10 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 07/26/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Windows Hello for Business Videos
 ## Overview of Windows Hello for Business and Features

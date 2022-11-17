@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 07/29/2019
 ---
@@ -15,7 +15,7 @@ ms.date: 07/29/2019
 
 This topic shows the OMA DM device description framework (DDF) for the **PassportForWork** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is for Windows 10, version 1903.
 
@@ -658,7 +658,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
                   <Replace />
                 </AccessType>
                 <DefaultValue>False</DefaultValue>
-                <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources. 
+                <Description>Windows Hello for Business can use certificates to authenticate to on-premise resources.
 
 If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 

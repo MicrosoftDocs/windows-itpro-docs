@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_DnsClient.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/12/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_DnsClient
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_DnsClient policies  
+## ADMX_DnsClient policies
 
 <dl>
   <dd>
@@ -99,7 +99,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-dnsclient-dns-allowfqdnnetbiosqueries"></a>**ADMX_DnsClient/DNS_AllowFQDNNetBiosQueries**  
+<a href="" id="admx-dnsclient-dns-allowfqdnnetbiosqueries"></a>**ADMX_DnsClient/DNS_AllowFQDNNetBiosQueries**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -134,7 +134,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow NetBT queries for fully qualified domain names*
 -   GP name: *DNS_AllowFQDNNetBiosQueries*
 -   GP path: *Network/DNS Client*
@@ -145,7 +145,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-dnsclient-dns-appendtomultilabelname"></a>**ADMX_DnsClient/DNS_AppendToMultiLabelName**  
+<a href="" id="admx-dnsclient-dns-appendtomultilabelname"></a>**ADMX_DnsClient/DNS_AppendToMultiLabelName**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -187,7 +187,7 @@ If you don't configure this policy setting, computers will use their local DNS c
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow DNS suffix appending to unqualified multi-label name queries*
 -   GP name: *DNS_AppendToMultiLabelName*
 -   GP path: *Network/DNS Client*
@@ -199,7 +199,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-dnsclient-dns-domain"></a>**ADMX_DnsClient/DNS_Domain**  
+<a href="" id="admx-dnsclient-dns-domain"></a>**ADMX_DnsClient/DNS_Domain**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -226,7 +226,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies a connection-specific DNS suffix. This policy setting supersedes local connection-specific DNS suffixes, and those configured using DHCP. To use this policy setting, click Enabled, and then enter a string value representing the DNS suffix.
 
-If you enable this policy setting, the DNS suffix that you enter will be applied to all network connections used by computers that receive this policy setting.  
+If you enable this policy setting, the DNS suffix that you enter will be applied to all network connections used by computers that receive this policy setting.
 
 If you disable this policy setting, or if you don't configure this policy setting, computers will use the local or DHCP supplied connection specific DNS suffix, if configured.
 
@@ -234,7 +234,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Connection-specific DNS suffix*
 -   GP name: *DNS_Domain*
 -   GP path: *Network/DNS Client*
@@ -246,7 +246,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-dnsclient-dns-domainnamedevolutionlevel"></a>**ADMX_DnsClient/DNS_DomainNameDevolutionLevel**  
+<a href="" id="admx-dnsclient-dns-domainnamedevolutionlevel"></a>**ADMX_DnsClient/DNS_DomainNameDevolutionLevel**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -279,7 +279,7 @@ The DNS client appends DNS suffixes to the single-label, unqualified domain name
 
 Devolution isn't enabled if a global suffix search list is configured using Group Policy.
 
-If a global suffix search list isn't configured, and the Append primary and connection specific DNS suffixes radio button is selected, the DNS client appends the following names to a single-label name when it sends DNS queries:  
+If a global suffix search list isn't configured, and the Append primary and connection specific DNS suffixes radio button is selected, the DNS client appends the following names to a single-label name when it sends DNS queries:
 
 - The primary DNS suffix, as specified on the Computer Name tab of the System control panel.
 - Each connection-specific DNS suffix, assigned either through DHCP or specified in the DNS suffix for this connection box on the DNS tab in the Advanced TCP/IP Settings dialog box for each connection.
@@ -298,7 +298,7 @@ If you disable this policy setting or don't configure it, DNS clients use the de
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Primary DNS suffix devolution level*
 -   GP name: *DNS_DomainNameDevolutionLevel*
 -   GP path: *Network/DNS Client*
@@ -346,7 +346,7 @@ If this policy setting is disabled, or if this policy setting isn't configured, 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off IDN encoding*
 -   GP name: *DNS_IdnEncoding*
 -   GP path: *Network/DNS Client*
@@ -393,7 +393,7 @@ If this policy setting is disabled, or if this policy setting isn't configured, 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *IDN mapping*
 -   GP name: *DNS_IdnMapping*
 -   GP path: *Network/DNS Client*
@@ -434,7 +434,7 @@ This policy setting defines the DNS servers to which a computer sends queries wh
 
 To use this policy setting, click Enabled, and then enter a space-delimited list of IP addresses in the available field. To use this policy setting, you must enter at least one IP address.
 
-If you enable this policy setting, the list of DNS servers is applied to all network connections used by computers that receive this policy setting. 
+If you enable this policy setting, the list of DNS servers is applied to all network connections used by computers that receive this policy setting.
 
 If you disable this policy setting, or if you don't configure this policy setting, computers will use the local or DHCP supplied list of DNS servers, if configured.
 
@@ -442,7 +442,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *DNS servers*
 -   GP name: *DNS_NameServer*
 -   GP path: *Network/DNS Client*
@@ -491,7 +491,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -  GP Friendly name: *Prefer link local responses over DNS when received over a network with higher precedence*
 -   GP name: *DNS_PreferLocalResponsesOverLowerOrderDns*
 -   GP path: *Network/DNS Client*
@@ -545,7 +545,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Primary DNS suffix*
 -   GP name: *DNS_PrimaryDnsSuffix*
 -   GP path: *Network/DNS Client*
@@ -598,7 +598,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Register DNS records with connection-specific DNS suffix*
 -   GP name: *DNS_RegisterAdapterName*
 -   GP path: *Network/DNS Client*
@@ -652,7 +652,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Register PTR records*
 -   GP name: *DNS_RegisterReverseLookup*
 -   GP path: *Network/DNS Client*
@@ -699,7 +699,7 @@ If you disable this policy setting, computers may not use dynamic DNS registrati
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Dynamic update*
 -   GP name: *DNS_RegistrationEnabled*
 -   GP path: *Network/DNS Client*
@@ -750,7 +750,7 @@ If you disable this policy setting, existing (A) resource records that contain c
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Replace addresses in conflicts*
 -   GP name: *DNS_RegistrationOverwritesInConflict*
 -   GP path: *Network/DNS Client*
@@ -804,7 +804,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Registration refresh interval*
 -   GP name: *DNS_RegistrationRefreshInterval*
 -   GP path: *Network/DNS Client*
@@ -853,7 +853,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *TTL value for A and PTR records*
 -   GP name: *DNS_RegistrationTtl*
 -   GP path: *Network/DNS Client*
@@ -906,7 +906,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *DNS suffix search list*
 -   GP name: *DNS_SearchList*
 -   GP path: *Network/DNS Client*
@@ -954,7 +954,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off smart multi-homed name resolution*
 -   GP name: *DNS_SmartMultiHomedNameResolution*
 -   GP path: *Network/DNS Client*
@@ -993,9 +993,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies that the DNS client should prefer responses from link local name resolution protocols on non-domain networks over DNS responses when issuing queries for flat names. Examples of link local name resolution protocols include link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT).
 
-If you enable this policy setting, the DNS client will prefer DNS responses, followed by LLMNR, followed by NetBT for all networks.  
+If you enable this policy setting, the DNS client will prefer DNS responses, followed by LLMNR, followed by NetBT for all networks.
 
-If you disable this policy setting, or if you don't configure this policy setting, the DNS client will prefer link local responses for flat name queries on non-domain networks. 
+If you disable this policy setting, or if you don't configure this policy setting, the DNS client will prefer link local responses for flat name queries on non-domain networks.
 
 > [!NOTE]
 > This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
@@ -1003,7 +1003,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off smart protocol reordering*
 -   GP name: *DNS_SmartProtocolReorder*
 -   GP path: *Network/DNS Client*
@@ -1056,7 +1056,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Update security level*
 -   GP name: *DNS_UpdateSecurityLevel*
 -   GP path: *Network/DNS Client*
@@ -1105,7 +1105,7 @@ If you disable this policy setting, or if you don't configure this policy settin
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Update top level domain zones*
 -   GP name: *DNS_UpdateTopLevelDomainZones*
 -   GP path: *Network/DNS Client*
@@ -1170,7 +1170,7 @@ If you disable this policy setting, DNS clients don't attempt to resolve names t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Primary DNS suffix devolution*
 -   GP name: *DNS_UseDomainNameDevolution*
 -   GP path: *Network/DNS Client*
@@ -1219,7 +1219,7 @@ If you disable this policy setting, or you don't configure this policy setting, 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off multicast name resolution*
 -   GP name: *Turn_Off_Multicast*
 -   GP path: *Network/DNS Client*

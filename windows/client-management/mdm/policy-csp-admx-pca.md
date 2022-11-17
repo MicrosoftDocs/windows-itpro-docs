@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_pca.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/20/2021
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_pca
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_pca policies  
+## ADMX_pca policies
 
 <dl>
   <dd>
@@ -55,7 +55,7 @@ manager: aaroncz
 
 <!--Policy-->
 <a href="" id="admx-pca-detectdeprecatedcomcomponentfailurespolicy"></a>**ADMX_pca/DetectDeprecatedCOMComponentFailuresPolicy**
- 
+
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -80,16 +80,16 @@ manager: aaroncz
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures the Program Compatibility Assistant (PCA) to diagnose failures with application and driver compatibility.  
+This policy setting configures the Program Compatibility Assistant (PCA) to diagnose failures with application and driver compatibility.
 
-If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.  
+If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.
 
-If you disable this policy setting, the PCA doesn't detect compatibility issues for applications and drivers.  
+If you disable this policy setting, the PCA doesn't detect compatibility issues for applications and drivers.
 
-If you don't configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.  
+If you don't configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.
 
 > [!NOTE]
-> This policy setting has no effect if the "Turn off Program Compatibility Assistant" policy setting is enabled. 
+> This policy setting has no effect if the "Turn off Program Compatibility Assistant" policy setting is enabled.
 
 The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service must be running for the PCA to run. These services can be configured by using the Services snap-in to the Microsoft Management Console.
 
@@ -97,7 +97,7 @@ The Diagnostic Policy Service (DPS) and Program Compatibility Assistant Service 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Detect compatibility issues for applications and drivers*
 -   GP name: *DetectDeprecatedCOMComponentFailuresPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*
@@ -107,7 +107,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<a href="" id="admx-pca-detectdeprecatedcomponentfailurespolicy"></a>**ADMX_pca/DetectDeprecatedComponentFailuresPolicy**  
+<a href="" id="admx-pca-detectdeprecatedcomponentfailurespolicy"></a>**ADMX_pca/DetectDeprecatedComponentFailuresPolicy**
 
 <!--SupportedSKUs-->
 
@@ -133,16 +133,16 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting exists only for backward compatibility, and isn't valid for this version of Windows. 
+This setting exists only for backward compatibility, and isn't valid for this version of Windows.
 
-To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative 
+To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative
 Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Detect application install failures*
 -   GP name: *DetectDeprecatedComponentFailuresPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*
@@ -153,7 +153,7 @@ ADMX Info:
 
 <hr/>
 
-<a href="" id="admx-pca-detectinstallfailurespolicy"></a>**ADMX_pca/DetectInstallFailuresPolicy**  
+<a href="" id="admx-pca-detectinstallfailurespolicy"></a>**ADMX_pca/DetectInstallFailuresPolicy**
 
 <!--SupportedSKUs-->
 
@@ -185,7 +185,7 @@ This setting exists only for backward compatibility, and isn't valid for this ve
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Detect applications unable to launch installers under UAC*
 -   GP name: *DetectInstallFailuresPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*
@@ -195,7 +195,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<a href="" id="admx-pca-detectundetectedinstallerspolicy"></a>**ADMX_pca/DetectUndetectedInstallersPolicy**  
+<a href="" id="admx-pca-detectundetectedinstallerspolicy"></a>**ADMX_pca/DetectUndetectedInstallersPolicy**
 
 <!--SupportedSKUs-->
 
@@ -228,7 +228,7 @@ This setting exists only for backward compatibility, and isn't valid for this ve
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Detect application failures caused by deprecated Windows DLLs*
 -   GP name: *DetectUndetectedInstallersPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*
@@ -238,7 +238,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<a href="" id="admx-pca-detectupdatefailurespolicy"></a>**ADMX_pca/DetectUpdateFailuresPolicy**  
+<a href="" id="admx-pca-detectupdatefailurespolicy"></a>**ADMX_pca/DetectUpdateFailuresPolicy**
 
 <!--SupportedSKUs-->
 
@@ -273,7 +273,7 @@ To configure the Program Compatibility Assistant, use the 'Turn off Program Comp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Detect application failures caused by deprecated COM objects*
 -   GP name: *DetectUpdateFailuresPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*
@@ -283,7 +283,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<a href="" id="admx-pca-disablepcauipolicy"></a>**ADMX_pca/DisablePcaUIPolicy**  
+<a href="" id="admx-pca-disablepcauipolicy"></a>**ADMX_pca/DisablePcaUIPolicy**
 
 <!--SupportedSKUs-->
 
@@ -318,7 +318,7 @@ To configure the Program Compatibility Assistant, use the 'Turn off Program Comp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Detect application installers that need to be run as administrator*
 -   GP name: *DisablePcaUIPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*
@@ -328,7 +328,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<a href="" id="admx-pca-detectblockeddriverspolicy"></a>**ADMX_pca/DetectBlockedDriversPolicy**  
+<a href="" id="admx-pca-detectblockeddriverspolicy"></a>**ADMX_pca/DetectBlockedDriversPolicy**
 
 <!--SupportedSKUs-->
 
@@ -363,7 +363,7 @@ To configure the Program Compatibility Assistant, use the 'Turn off Program Comp
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Notify blocked drivers*
 -   GP name: *DetectBlockedDriversPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Application Compatibility Diagnostics*

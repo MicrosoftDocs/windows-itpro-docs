@@ -1,23 +1,13 @@
 ---
 title: For teachers get Minecraft Education Edition
-description: Learn how teachers can get and distribute Minecraft.
-keywords: school, Minecraft, Education Edition, educators, teachers, acquire, distribute
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-searchScope: 
-  - Store
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+description: Learn how teachers can obtain and distribute Minecraft.
+ms.topic: how-to
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+ms.collection:
+  - highpri
+  - education
 ---
 
 # For teachers - get Minecraft: Education Edition

@@ -1,19 +1,20 @@
 ---
 title: Protect Remote Desktop credentials with Windows Defender Remote Credential Guard (Windows 10)
 description: Windows Defender Remote Credential Guard helps to secure your Remote Desktop credentials by never sending them to the target device.
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/12/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows Server 2016</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows Server 2016</b>
+ms.technology: itpro-security
 ---
 # Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
 

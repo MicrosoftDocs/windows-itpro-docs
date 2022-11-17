@@ -3,8 +3,8 @@ title: Policy CSP - EventLogService
 description: Learn how to use the Policy CSP - EventLogService setting to control Event Log behavior when the log file reaches its maximum size.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
@@ -17,7 +17,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policies-->
-## EventLogService policies  
+## EventLogService policies
 
 <dl>
   <dd>
@@ -37,7 +37,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="eventlogservice-controleventlogbehavior"></a>**EventLogService/ControlEventLogBehavior**  
+<a href="" id="eventlogservice-controleventlogbehavior"></a>**EventLogService/ControlEventLogBehavior**
 
 <!--SupportedSKUs-->
 
@@ -75,7 +75,7 @@ If you disable or don't configure this policy setting and a log file reaches its
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_1*
 -   GP path: *Windows Components/Event Log Service/Application*
@@ -87,7 +87,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="eventlogservice-specifymaximumfilesizeapplicationlog"></a>**EventLogService/SpecifyMaximumFileSizeApplicationLog**  
+<a href="" id="eventlogservice-specifymaximumfilesizeapplicationlog"></a>**EventLogService/SpecifyMaximumFileSizeApplicationLog**
 
 <!--SupportedSKUs-->
 
@@ -122,7 +122,7 @@ If you disable or don't configure this policy setting, the maximum size of the l
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_1*
 -   GP path: *Windows Components/Event Log Service/Application*
@@ -134,7 +134,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="eventlogservice-specifymaximumfilesizesecuritylog"></a>**EventLogService/SpecifyMaximumFileSizeSecurityLog**  
+<a href="" id="eventlogservice-specifymaximumfilesizesecuritylog"></a>**EventLogService/SpecifyMaximumFileSizeSecurityLog**
 
 <!--SupportedSKUs-->
 
@@ -169,7 +169,7 @@ If you disable or don't configure this policy setting, the maximum size of the l
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_2*
 -   GP path: *Windows Components/Event Log Service/Security*
@@ -181,7 +181,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="eventlogservice-specifymaximumfilesizesystemlog"></a>**EventLogService/SpecifyMaximumFileSizeSystemLog**  
+<a href="" id="eventlogservice-specifymaximumfilesizesystemlog"></a>**EventLogService/SpecifyMaximumFileSizeSystemLog**
 
 <!--SupportedSKUs-->
 
@@ -216,7 +216,7 @@ If you disable or don't configure this policy setting, the maximum size of the l
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_4*
 -   GP path: *Windows Components/Event Log Service/System*

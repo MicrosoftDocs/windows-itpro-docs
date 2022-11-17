@@ -1,17 +1,17 @@
 ---
 title: Windows Hello for Business Deployment Overview
-description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
-ms.prod: m365-security
+description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment.
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.reviewer: prsriva
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 02/15/2022
+ms.technology: itpro-security
 ---
 # Windows Hello for Business Deployment Overview
 

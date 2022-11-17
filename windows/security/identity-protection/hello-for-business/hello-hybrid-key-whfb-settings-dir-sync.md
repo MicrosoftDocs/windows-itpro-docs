@@ -1,7 +1,7 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business - Directory Synchronization
 description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,11 +10,12 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Hybrid deployment</b>
+  - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization
 

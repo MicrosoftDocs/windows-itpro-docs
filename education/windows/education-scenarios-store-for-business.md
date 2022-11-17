@@ -1,23 +1,10 @@
 ---
 title: Education scenarios Microsoft Store for Education
 description: Learn how IT admins and teachers can use Microsoft Store for Education to acquire and manage apps in schools.
-keywords: school, Microsoft Store for Education, Microsoft education store
-ms.prod: windows
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-searchScope: 
-  - Store
-ms.collection: education
-author: paolomatarazzo
-ms.author: paoloma
+ms.topic: article
 ms.date: 08/10/2022
-ms.reviewer: 
-manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Working with Microsoft Store for Education

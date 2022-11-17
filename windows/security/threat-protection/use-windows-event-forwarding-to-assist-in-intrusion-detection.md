@@ -2,13 +2,13 @@
 title: Use Windows Event Forwarding to help with intrusion detection (Windows 10)
 description: Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.author: dansimp
-ms.prod: m365-security
+ms.prod: windows-client
 author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

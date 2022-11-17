@@ -2,16 +2,17 @@
 title: Trusted Platform Module Technology Overview (Windows)
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: high
 author: dansimp
 ms.author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
 adobe-target: true
+ms.technology: itpro-security
 ---
 
 # Trusted Platform Module Technology Overview

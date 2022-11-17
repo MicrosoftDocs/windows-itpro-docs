@@ -1,18 +1,18 @@
 ---
 title: Prepare your organization for BitLocker Planning and policies (Windows 10)
-description: This topic for the IT professional explains how can you plan your BitLocker deployment.
+description: This article for the IT professional explains how can you plan your BitLocker deployment.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-manager: dansimp
-ms.collection:
+manager: aaroncz
+ms.collection: 
   - M365-security-compliance
-  - highpri
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.custom: bitlocker
+ms.technology: itpro-security
 ---
 
 # Prepare your organization for BitLocker: Planning and policies
@@ -23,7 +23,7 @@ ms.custom: bitlocker
 - Windows 11
 - Windows Server 2016 and above
 
-This topic for the IT professional explains how can you plan your BitLocker deployment.
+This article for the IT professional explains how to plan BitLocker deployment.
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following sections will help you collect information. Use this information to help with your decision-making process about deploying and managing BitLocker systems.
 
@@ -35,7 +35,7 @@ To help you document your organization's current disk encryption security polici
 
 1. Are there policies to determine which computers will use BitLocker and which computers won't use BitLocker?
 2. What policies exist to control recovery password and recovery key storage?
-3. What are the policies for validating the user identities that need to run BitLocker recovery?
+3. What are the policies for validating the identity of users who need to perform BitLocker recovery?
 4. What policies exist to control who in the organization has access to recovery data?
 5. What policies exist to control computer decommissioning or retirement?
 
@@ -53,14 +53,13 @@ Also, BitLocker can lock the normal startup process until the user supplies a pe
 On computers that don't have a TPM version 1.2 or higher, you can still use BitLocker to encrypt the Windows operating system volume. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. It doesn't provide the pre-startup system integrity verification offered by BitLocker working with a TPM.
 
 ### BitLocker key protectors
-
 | Key protector | Description |
 | - | - |
-| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM version 1.2 or higher.|
+| TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM 1.2 or higher versions.|
 | PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
 | Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
-| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
-| Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.|
+| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
+| Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard. If the numbers on the normal keyboard are not responding, you can always use the function keys (F1-F10) to input the numbers.|
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
 
 ### BitLocker authentication methods
@@ -68,18 +67,18 @@ On computers that don't have a TPM version 1.2 or higher, you can still use Bit
 | Authentication method | Requires user interaction | Description |
 | - | - | - |
 | TPM only| No| TPM validates early boot components.|
-| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM will enter lockout if the incorrect PIN is entered repeatedly to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
+| TPM + PIN | Yes| TPM validates early boot components. The user must enter the correct PIN before the start-up process can continue, and before the drive can be unlocked. The TPM enters lockout if the incorrect PIN is entered repeatedly, to protect the PIN from brute force attacks. The number of repeated attempts that will trigger a lockout is variable.|
 | TPM + Network key | No | The TPM successfully validates early boot components, and a valid encrypted network key has been provided from the WDS server. This authentication method provides automatic unlock of operating system volumes at system reboot while still maintaining multifactor authentication. |
 | TPM + startup key| Yes| The TPM successfully validates early boot components, and a USB flash drive containing the startup key has been inserted.|
 | Startup key only | Yes| The user is prompted for the USB flash drive that has the recovery key and/or startup key, and then reboot the computer.|
 
-**Will you support computers without TPM version 1.2 or higher?**
+**Will you support computers without TPM 1.2 or higher versions?**
 
-Determine if you're support computers that don't have a TPM version 1.2 or higher. If you support BitLocker on this type of computer, a user must use a USB startup key to boot the system. This startup key requires extra support processes similar to multifactor authentication.
+Determine whether you will support computers that don't have a TPM 1.2 or higher versions in your environment. If you choose to support BitLocker on this type of computer, a user must use a USB startup key to boot the system. This startup key requires extra support processes similar to multifactor authentication.
 
 **What areas of your organization need a baseline level of data protection?**
 
-The TPM-only authentication method will provide the most transparent user experience for organizations that need a baseline level of data protection to meet security policies. It has the lowest total cost of ownership. TPM-only might also be more appropriate for computers that are unattended or that must reboot unattended.
+The TPM-only authentication method provides the most transparent user experience for organizations that need a baseline level of data protection to meet security policies. It has the lowest total cost of ownership. TPM-only might also be more appropriate for computers that are unattended or that must reboot unattended.
 
 However, TPM-only authentication method offers the lowest level of data protection. This authentication method protects against attacks that modify early boot components. But, the level of protection can be affected by potential weaknesses in hardware or in the early boot components. BitLocker’s multifactor authentication methods significantly increase the overall level of data protection.
 
@@ -93,7 +92,7 @@ The protection differences provided by multifactor authentication methods can't 
 
 ## TPM hardware configurations
 
-In your deployment plan, identify what TPM-based hardware platforms will be supported. Document the hardware models from an OEM of your choice, so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
+In your deployment plan, identify what TPM-based hardware platforms will be supported. Document the hardware models from an OEM of your choice so that their configurations can be tested and supported. TPM hardware requires special consideration during all aspects of planning and deployment.
 
 ### TPM 1.2 states and initialization
 
@@ -126,7 +125,7 @@ To function correctly, BitLocker requires a specific disk configuration. BitLock
 - The operating system partition contains the operating system and its support files; it must be formatted with the NTFS file system
 - The system partition (or boot partition) includes the files needed to load Windows after the BIOS or UEFI firmware has prepared the system hardware. BitLocker isn't enabled on this partition. For BitLocker to work, the system partition must not be encrypted, and must be on a different partition than the operating system. On UEFI platforms, the system partition must be formatted with the FAT 32-file system. On BIOS platforms, the system partition must be formatted with the NTFS file system. It should be at least 350 MB in size.
 
-Windows setup will automatically configure the disk drives of your computer to support BitLocker encryption.
+Windows setup automatically configures the disk drives of your computer to support BitLocker encryption.
 
 Windows Recovery Environment (Windows RE) is an extensible recovery platform that is based on Windows Pre-installation Environment (Windows PE). When the computer fails to start, Windows automatically transitions into this environment, and the Startup Repair tool in Windows RE automates the diagnosis and repair of an unbootable Windows installation. Windows RE also contains the drivers and tools that are needed to unlock a volume protected by BitLocker by providing a recovery key or recovery password. To use Windows RE with BitLocker, the Windows RE boot image must be on a volume that isn't protected by BitLocker.
 
@@ -144,19 +143,19 @@ Administrators can enable BitLocker before to operating system deployment from t
 
 ## Used Disk Space Only encryption
 
-The BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the new BitLocker Group Policy setting to enforce either Used Disk Space Only or Full disk encryption.
+The BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the new BitLocker group policy setting to enforce either Used Disk Space Only or Full disk encryption.
 
 Launching the BitLocker Setup wizard prompts for the authentication method to be used (password and smart card are available for data volumes). Once the method is chosen and the recovery key is saved, you're asked to choose the drive encryption type. Select Used Disk Space Only or Full drive encryption.
 
-With Used Disk Space Only, only the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new PCs and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
+With Used Disk Space Only, just the portion of the drive that contains data will be encrypted. Unused space will remain unencrypted. This behavior causes the encryption process to be much faster, especially for new PCs and data drives. When BitLocker is enabled with this method, as data is added to the drive, the portion of the drive used is encrypted. So, there's never unencrypted data stored on the drive.
 
 With Full drive encryption, the entire drive is encrypted, whether data is stored on it or not. This option is useful for drives that have been repurposed, and may contain data remnants from their previous use.
 
 ## Active Directory Domain Services considerations
 
-BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following Group Policy setting for each drive type to enable backup of BitLocker recovery information:
+BitLocker integrates with Active Directory Domain Services (AD DS) to provide centralized key management. By default, no recovery information is backed up to Active Directory. Administrators can configure the following group policy setting for each drive type to enable backup of BitLocker recovery information:
 
-Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\*drive type*\\Choose how BitLocker protected drives can be recovered.
+Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\*drive type*\\Choose how BitLocker-protected drives can be recovered.
 
 By default, only Domain Admins have access to BitLocker recovery information, but [access can be delegated to others](/archive/blogs/craigf/delegating-access-in-ad-to-bitlocker-recovery-information).
 
@@ -168,26 +167,26 @@ The following recovery data is saved for each computer object:
 
 - **Key package data**
 
-    With this key package and the recovery password, you will be able decrypt portions of a BitLocker-protected volume if the disk is severely damaged. Each key package will only work with the volume it was created on, which can be identified by the corresponding volume ID.
+    With this key package and the recovery password, you will be able to decrypt portions of a BitLocker-protected volume if the disk is severely damaged. Each key package works only with the volume it was created on, which is identified by the corresponding volume ID.
 
 ## FIPS support for recovery password protector
 
-Functionality introduced in Windows Server 2012 R2 and Windows 8.1, allows BitLocker to be fully functional in FIPS mode.
+Functionality introduced in Windows Server 2012 R2 and Windows 8.1 allows BitLocker to be fully functional in FIPS mode.
 
 > [!NOTE]
-> The United States Federal Information Processing Standard (FIPS) defines security and interoperability requirements for computer systems that are used by the U.S. federal government. The FIPS 140 standard defines approved cryptographic algorithms. The FIPS 140 standard also sets forth requirements for key generation and for key management. The National Institute of Standards and Technology (NIST) uses the Cryptographic Module Validation Program (CMVP) to determine whether a particular implementation of a cryptographic algorithm is compliant with the FIPS 140 standard. An implementation of a cryptographic algorithm is considered FIPS 140-compliant only if it has been submitted for and has passed NIST validation. An algorithm that hasn't been submitted can't be considered FIPS-compliant, even if the implementation produces identical data as a validated implementation of the same algorithm.
+> The United States Federal Information Processing Standard (FIPS) defines security and interoperability requirements for computer systems that are used by the U.S. Federal Government. The FIPS-140 standard defines approved cryptographic algorithms. The FIPS-140 standard also sets forth requirements for key generation and for key management. The National Institute of Standards and Technology (NIST) uses the Cryptographic Module Validation Program (CMVP) to determine whether a particular implementation of a cryptographic algorithm is compliant with the FIPS-140 standard. An implementation of a cryptographic algorithm is considered FIPS-140-compliant only if it has been submitted for and has passed NIST validation. An algorithm that has not been submitted cannot be considered FIPS-compliant even if the implementation produces identical data as a validated implementation of the same algorithm.
 
 Before these supported versions of Windows, when Windows was in FIPS mode, BitLocker prevented the creation or use of recovery passwords and instead forced the user to use recovery keys. For more information about these issues, see the support article [kb947249](/troubleshoot/windows-client/windows-security/bitlocker-recovery-password-not-fips-compliant).
 
 But on computers running these supported systems with BitLocker enabled:
 
-- FIPS-compliant recovery password protectors can be created when Windows is in FIPS mode. These protectors use the FIPS 140 NIST SP800-132 algorithm.
+- FIPS-compliant recovery password protectors can be created when Windows is in FIPS mode. These protectors use the FIPS-140 NIST SP800-132 algorithm.
 - Recovery passwords created in FIPS mode on Windows 8.1 can be distinguished from recovery passwords created on other systems.
-- Recovery unlock using the FIPS-compliant algorithm based recovery password protector work in all cases that currently work for recovery passwords.
+- Recovery unlock using the FIPS-compliant, algorithm-based recovery password protector works in all cases that currently work for recovery passwords.
 - When FIPS-compliant recovery passwords unlock volumes, the volume is unlocked to allow read/write access even while in FIPS mode.
 - FIPS-compliant recovery password protectors can be exported and stored in AD a while in FIPS mode.
 
-The BitLocker Group Policy settings for recovery passwords work the same for all Windows versions that support BitLocker, whether in FIPs mode or not.
+The BitLocker Group Policy settings for recovery passwords work the same for all Windows versions that support BitLocker, whether in FIPS mode or not.
 
 On Windows Server 2012 R2 and Windows 8.1 and older, you can't use recovery passwords generated on a system in FIPS mode. Recovery passwords created on Windows Server 2012 R2 and Windows 8.1 are incompatible with BitLocker on operating systems older than Windows Server 2012 R2 and Windows 8.1. So, recovery keys should be used instead.
 

@@ -1,20 +1,10 @@
 ---
 title: Take tests and assessments in Windows
-description: Description of the built-in Take a Test app for Windows and how to use it.
+description: Learn about the built-in Take a Test app for Windows and how to use it.
 ms.date: 09/30/2022
-ms.prod: windows
-ms.technology: windows
 ms.topic: conceptual
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer:
-manager: aaroncz
-ms.collection: education
 appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Take tests and assessments in Windows
@@ -34,7 +24,7 @@ There are different ways to use Take a Test, depending on the use case:
 - For lower stakes assessments, such a quick quiz in a class, a teacher can generate a *secure assessment URL* and share it with the students. Students can then open the URL to access the assessment through Take a Test. To learn more, see the next section: [Create a secure assessment link](#create-a-secure-assessment-link)
 - For higher stakes assessments, you can configure Windows devices to use a dedicated account for testing and execute Take a Test in a locked-down mode, called **kiosk mode**. Once signed in with the dedicated account, Windows will execute Take a Test in a lock-down mode, preventing the execution of any applications other than Take a Test. For more information, see [Configure Take a Test in kiosk mode](edu-take-a-test-kiosk-mode.md)
 
-![Set up and user flow for the Take a Test app.](images/takeatest/flow-chart.png)
+:::image type="content" source="./images/takeatest/flow-chart.png" alt-text="Set up and user flow for the Take a Test app." border="false":::
 
 ## Create a secure assessment link
 
@@ -95,6 +85,6 @@ To take the test, have the students open the link.
 
 ## Additional information
 
-Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/office/).
+Teachers can use **Microsoft Forms** to create tests. For more information, see [Create tests using Microsoft Forms](https://support.microsoft.com/en-us/office/create-a-quiz-with-microsoft-forms-a082a018-24a1-48c1-b176-4b3616cdc83d).
 
 To learn more about the policies and settings set by the Take a Test app, see [Take a Test app technical reference](take-a-test-app-technical.md).

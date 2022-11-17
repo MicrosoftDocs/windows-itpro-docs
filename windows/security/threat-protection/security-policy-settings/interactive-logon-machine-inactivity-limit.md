@@ -3,19 +3,21 @@ title: Interactive logon Machine inactivity limit (Windows 10)
 description: Describes the best practices, location, values, management, and security considerations for the Interactive logon Machine inactivity limit security policy setting.
 ms.assetid: 7065b4a9-0d52-41d5-afc4-5aedfc4162b5
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 09/18/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Machine inactivity limit

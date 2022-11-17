@@ -4,8 +4,8 @@ description: Learn about the Policy CSP - ADMX_HelpAndSupport.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/03/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_HelpAndSupport
 >[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_HelpAndSupport policies  
+## ADMX_HelpAndSupport policies
 
 <dl>
   <dd>
@@ -44,7 +44,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-helpandsupport-activehelp"></a>**ADMX_HelpAndSupport/ActiveHelp**  
+<a href="" id="admx-helpandsupport-activehelp"></a>**ADMX_HelpAndSupport/ActiveHelp**
 
 <!--SupportedSKUs-->
 
@@ -80,7 +80,7 @@ If you disable or don't configure this policy setting, the default behavior appl
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Active Help*
 -   GP name: *ActiveHelp*
 -   GP path: *Windows Components/Online Assistance*
@@ -91,7 +91,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-helpandsupport-hpexplicitfeedback"></a>**ADMX_HelpAndSupport/HPExplicitFeedback**  
+<a href="" id="admx-helpandsupport-hpexplicitfeedback"></a>**ADMX_HelpAndSupport/HPExplicitFeedback**
 
 <!--SupportedSKUs-->
 
@@ -129,7 +129,7 @@ Users can use the control to provide feedback on the quality and usefulness of t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Help Ratings*
 -   GP name: *HPExplicitFeedback*
 -   GP path: *System/Internet Communication Management/Internet Communication settings*
@@ -140,7 +140,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-helpandsupport-hpimplicitfeedback"></a>**ADMX_HelpAndSupport/HPImplicitFeedback**  
+<a href="" id="admx-helpandsupport-hpimplicitfeedback"></a>**ADMX_HelpAndSupport/HPImplicitFeedback**
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -175,7 +175,7 @@ If you disable or don't configure this policy setting, users can turn on the Hel
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Help Experience Improvement Program*
 -   GP name: *HPImplicitFeedback*
 -   GP path: *System/Internet Communication Management/Internet Communication settings*
@@ -186,7 +186,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-helpandsupport-hponlineassistance"></a>**ADMX_HelpAndSupport/HPOnlineAssistance**  
+<a href="" id="admx-helpandsupport-hponlineassistance"></a>**ADMX_HelpAndSupport/HPOnlineAssistance**
 
 <!--SupportedSKUs-->
 
@@ -222,7 +222,7 @@ If you disable or don't configure this policy setting, users can access online a
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Windows Online*
 -   GP name: *HPOnlineAssistance*
 -   GP path: *System/Internet Communication Management/Internet Communication settings*

@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_Desktop.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/02/2020
 ms.reviewer: 
@@ -15,16 +15,16 @@ manager: aaroncz
 # Policy CSP - ADMX_Desktop
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_Desktop policies  
+## ADMX_Desktop policies
 
 <dl>
   <dd>
@@ -120,7 +120,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-ad-enablefilter"></a>**ADMX_Desktop/AD_EnableFilter**  
+<a href="" id="admx-desktop-ad-enablefilter"></a>**ADMX_Desktop/AD_EnableFilter**
 
 <!--SupportedSKUs-->
 
@@ -158,7 +158,7 @@ To see the filter bar, open Network Locations, click Entire Network, and then cl
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable filter in Find dialog box*
 -   GP name: *AD_EnableFilter*
 -   GP path: *Desktop\Active Directory*
@@ -169,7 +169,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-ad-hidedirectoryfolder"></a>**ADMX_Desktop/AD_HideDirectoryFolder**  
+<a href="" id="admx-desktop-ad-hidedirectoryfolder"></a>**ADMX_Desktop/AD_HideDirectoryFolder**
 
 <!--SupportedSKUs-->
 
@@ -209,7 +209,7 @@ This setting is designed to let users search Active Directory but not tempt them
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Active Directory folder*
 -   GP name: *AD_HideDirectoryFolder*
 -   GP path: *Desktop\Active Directory*
@@ -220,7 +220,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-ad-querylimit"></a>**ADMX_Desktop/AD_QueryLimit**  
+<a href="" id="admx-desktop-ad-querylimit"></a>**ADMX_Desktop/AD_QueryLimit**
 
 <!--SupportedSKUs-->
 
@@ -258,7 +258,7 @@ This setting is designed to protect the network and the domain controller from t
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Maximum size of Active Directory searches*
 -   GP name: *AD_QueryLimit*
 -   GP path: *Desktop\Active Directory*
@@ -269,7 +269,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-forceactivedesktopon"></a>**ADMX_Desktop/ForceActiveDesktopOn**  
+<a href="" id="admx-desktop-forceactivedesktopon"></a>**ADMX_Desktop/ForceActiveDesktopOn**
 
 <!--SupportedSKUs-->
 
@@ -307,7 +307,7 @@ If you disable this setting or don't configure it, Active Desktop is disabled by
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable Active Desktop*
 -   GP name: *ForceActiveDesktopOn*
 -   GP path: *Desktop\Desktop*
@@ -318,7 +318,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-noactivedesktop"></a>**ADMX_Desktop/NoActiveDesktop**  
+<a href="" id="admx-desktop-noactivedesktop"></a>**ADMX_Desktop/NoActiveDesktop**
 
 <!--SupportedSKUs-->
 
@@ -357,7 +357,7 @@ If you disable this setting or don't configure it, Active Desktop is disabled by
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable Active Desktop*
 -   GP name: *NoActiveDesktop*
 -   GP path: *Desktop\Desktop*
@@ -368,7 +368,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-noactivedesktopchanges"></a>**ADMX_Desktop/NoActiveDesktopChanges**  
+<a href="" id="admx-desktop-noactivedesktopchanges"></a>**ADMX_Desktop/NoActiveDesktopChanges**
 
 <!--SupportedSKUs-->
 
@@ -401,7 +401,7 @@ This setting is a comprehensive one that locks down the configuration you establ
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit changes*
 -   GP name: *NoActiveDesktopChanges*
 -   GP path: *Desktop\Desktop*
@@ -412,7 +412,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nodesktop"></a>**ADMX_Desktop/NoDesktop**  
+<a href="" id="admx-desktop-nodesktop"></a>**ADMX_Desktop/NoDesktop**
 
 <!--SupportedSKUs-->
 
@@ -448,7 +448,7 @@ Also, see "Items displayed in Places Bar" in User Configuration\Administrative T
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide and disable all items on the desktop*
 -   GP name: *NoDesktop*
 -   GP path: *Desktop*
@@ -459,7 +459,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nodesktopcleanupwizard"></a>**ADMX_Desktop/NoDesktopCleanupWizard**  
+<a href="" id="admx-desktop-nodesktopcleanupwizard"></a>**ADMX_Desktop/NoDesktopCleanupWizard**
 
 <!--SupportedSKUs-->
 
@@ -498,7 +498,7 @@ If you disable this setting or don't configure it, the default behavior of the D
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove the Desktop Cleanup Wizard*
 -   GP name: *NoDesktopCleanupWizard*
 -   GP path: *Desktop*
@@ -509,7 +509,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nointerneticon"></a>**ADMX_Desktop/NoInternetIcon**  
+<a href="" id="admx-desktop-nointerneticon"></a>**ADMX_Desktop/NoInternetIcon**
 
 <!--SupportedSKUs-->
 
@@ -543,7 +543,7 @@ This setting doesn't prevent the user from starting Internet Explorer by using o
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Internet Explorer icon on desktop*
 -   GP name: *NoInternetIcon*
 -   GP path: *Desktop*
@@ -554,7 +554,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nomycomputericon"></a>**ADMX_Desktop/NoMyComputerIcon**  
+<a href="" id="admx-desktop-nomycomputericon"></a>**ADMX_Desktop/NoMyComputerIcon**
 
 <!--SupportedSKUs-->
 
@@ -595,7 +595,7 @@ If you don't configure this setting, the default is to display Computer as usual
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Computer icon on the desktop*
 -   GP name: *NoMyComputerIcon*
 -   GP path: *Desktop*
@@ -606,7 +606,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nomydocumentsicon"></a>**ADMX_Desktop/NoMyDocumentsIcon**  
+<a href="" id="admx-desktop-nomydocumentsicon"></a>**ADMX_Desktop/NoMyDocumentsIcon**
 
 <!--SupportedSKUs-->
 
@@ -646,7 +646,7 @@ This setting doesn't remove the My Documents icon from the Start menu. To do so,
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove My Documents icon on the desktop*
 -   GP name: *NoMyDocumentsIcon*
 -   GP path: *Desktop*
@@ -657,7 +657,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nonethood"></a>**ADMX_Desktop/NoNetHood**  
+<a href="" id="admx-desktop-nonethood"></a>**ADMX_Desktop/NoNetHood**
 
 <!--SupportedSKUs-->
 
@@ -694,7 +694,7 @@ This setting only affects the desktop icon. It doesn't prevent users from connec
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Hide Network Locations icon on desktop*
 -   GP name: *NoNetHood*
 -   GP path: *Desktop*
@@ -705,7 +705,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nopropertiesmycomputer"></a>**ADMX_Desktop/NoPropertiesMyComputer**  
+<a href="" id="admx-desktop-nopropertiesmycomputer"></a>**ADMX_Desktop/NoPropertiesMyComputer**
 
 <!--SupportedSKUs-->
 
@@ -741,7 +741,7 @@ If you disable or don't configure this setting, the Properties option is display
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Properties from the Computer icon context menu*
 -   GP name: *NoPropertiesMyComputer*
 -   GP path: *Desktop*
@@ -752,7 +752,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nopropertiesmydocuments"></a>**ADMX_Desktop/NoPropertiesMyDocuments**  
+<a href="" id="admx-desktop-nopropertiesmydocuments"></a>**ADMX_Desktop/NoPropertiesMyDocuments**
 
 <!--SupportedSKUs-->
 
@@ -791,7 +791,7 @@ If you disable or don't configure this policy setting, the Properties menu comma
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Properties from the Documents icon context menu*
 -   GP name: *NoPropertiesMyDocuments*
 -   GP path: *Desktop*
@@ -802,7 +802,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-norecentdocsnethood"></a>**ADMX_Desktop/NoRecentDocsNetHood**  
+<a href="" id="admx-desktop-norecentdocsnethood"></a>**ADMX_Desktop/NoRecentDocsNetHood**
 
 <!--SupportedSKUs-->
 
@@ -838,7 +838,7 @@ If you enable this setting, shared folders aren't added to Network Locations aut
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not add shares of recently opened documents to Network Locations*
 -   GP name: *NoRecentDocsNetHood*
 -   GP path: *Desktop*
@@ -849,7 +849,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-norecyclebinicon"></a>**ADMX_Desktop/NoRecycleBinIcon**  
+<a href="" id="admx-desktop-norecyclebinicon"></a>**ADMX_Desktop/NoRecycleBinIcon**
 
 <!--SupportedSKUs-->
 
@@ -887,7 +887,7 @@ This setting doesn't prevent the user from using other methods to gain access to
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Recycle Bin icon from desktop*
 -   GP name: *NoRecycleBinIcon*
 -   GP path: *Desktop*
@@ -898,7 +898,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-norecyclebinproperties"></a>**ADMX_Desktop/NoRecycleBinProperties**  
+<a href="" id="admx-desktop-norecyclebinproperties"></a>**ADMX_Desktop/NoRecycleBinProperties**
 
 <!--SupportedSKUs-->
 
@@ -934,7 +934,7 @@ If you disable or don't configure this setting, the Properties option is display
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Remove Properties from the Recycle Bin context menu*
 -   GP name: *NoRecycleBinProperties*
 -   GP path: *Desktop*
@@ -945,7 +945,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nosavesettings"></a>**ADMX_Desktop/NoSaveSettings**  
+<a href="" id="admx-desktop-nosavesettings"></a>**ADMX_Desktop/NoSaveSettings**
 
 <!--SupportedSKUs-->
 
@@ -979,7 +979,7 @@ If you enable this setting, users can change the desktop, but some changes, such
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Don't save settings at exit*
 -   GP name: *NoSaveSettings*
 -   GP path: *Desktop*
@@ -990,7 +990,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-nowindowminimizingshortcuts"></a>**ADMX_Desktop/NoWindowMinimizingShortcuts**  
+<a href="" id="admx-desktop-nowindowminimizingshortcuts"></a>**ADMX_Desktop/NoWindowMinimizingShortcuts**
 
 <!--SupportedSKUs-->
 
@@ -1025,7 +1025,7 @@ If you disable or don't configure this policy, this window minimizing and restor
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Turn off Aero Shake window minimizing mouse gesture*
 -   GP name: *NoWindowMinimizingShortcuts*
 -   GP path: *Desktop*
@@ -1036,7 +1036,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-wallpaper"></a>**ADMX_Desktop/Wallpaper**  
+<a href="" id="admx-desktop-wallpaper"></a>**ADMX_Desktop/Wallpaper**
 
 <!--SupportedSKUs-->
 
@@ -1078,7 +1078,7 @@ Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Pr
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Desktop Wallpaper*
 -   GP name: *Wallpaper*
 -   GP path: *Desktop\Desktop*
@@ -1089,7 +1089,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disableadd"></a>**ADMX_Desktop/sz_ATC_DisableAdd**  
+<a href="" id="admx-desktop-sz-atc-disableadd"></a>**ADMX_Desktop/sz_ATC_DisableAdd**
 
 <!--SupportedSKUs-->
 
@@ -1124,7 +1124,7 @@ Also, see the "Disable all items" setting.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit adding items*
 -   GP name: *sz_ATC_DisableAdd*
 -   GP path: *Desktop\Desktop*
@@ -1135,7 +1135,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disableclose"></a>**ADMX_Desktop/sz_ATC_DisableClose**  
+<a href="" id="admx-desktop-sz-atc-disableclose"></a>**ADMX_Desktop/sz_ATC_DisableClose**
 
 <!--SupportedSKUs-->
 
@@ -1174,7 +1174,7 @@ If you enable this setting, items added to the desktop can't be closed; they alw
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit closing items*
 -   GP name: *sz_ATC_DisableClose*
 -   GP path: *Desktop\Desktop*
@@ -1185,7 +1185,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disabledel"></a>**ADMX_Desktop/sz_ATC_DisableDel**  
+<a href="" id="admx-desktop-sz-atc-disabledel"></a>**ADMX_Desktop/sz_ATC_DisableDel**
 
 <!--SupportedSKUs-->
 
@@ -1223,7 +1223,7 @@ Also, see the "Prohibit closing items" and "Disable all items" settings.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit deleting items*
 -   GP name: *sz_ATC_DisableDel*
 -   GP path: *Desktop\Desktop*
@@ -1234,7 +1234,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-atc-disableedit"></a>**ADMX_Desktop/sz_ATC_DisableEdit**  
+<a href="" id="admx-desktop-sz-atc-disableedit"></a>**ADMX_Desktop/sz_ATC_DisableEdit**
 
 <!--SupportedSKUs-->
 
@@ -1268,7 +1268,7 @@ This setting disables the Properties button on the Web tab in Display in Control
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit editing items*
 -   GP name: *sz_ATC_DisableEdit*
 -   GP path: *Desktop\Desktop*
@@ -1279,7 +1279,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-atc-nocomponents"></a>**ADMX_Desktop/sz_ATC_NoComponents**  
+<a href="" id="admx-desktop-sz-atc-nocomponents"></a>**ADMX_Desktop/sz_ATC_NoComponents**
 
 <!--SupportedSKUs-->
 
@@ -1305,7 +1305,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Removes Active Desktop content and prevents users from adding Active Desktop content. 
+Removes Active Desktop content and prevents users from adding Active Desktop content.
 
 This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users can't add Web pages or  pictures from the Internet or an intranet to the desktop.
 
@@ -1316,7 +1316,7 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Disable all items*
 -   GP name: *sz_ATC_NoComponents*
 -   GP path: *Desktop\Desktop*
@@ -1327,7 +1327,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-admincomponents-title"></a>**ADMX_Desktop/sz_AdminComponents_Title**  
+<a href="" id="admx-desktop-sz-admincomponents-title"></a>**ADMX_Desktop/sz_AdminComponents_Title**
 
 <!--SupportedSKUs-->
 
@@ -1369,7 +1369,7 @@ You can also use this setting to delete particular Web-based items from users' d
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Add/Delete items*
 -   GP name: *sz_AdminComponents_Title*
 -   GP path: *Desktop\Desktop*
@@ -1380,7 +1380,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-db-dragdropclose"></a>**ADMX_Desktop/sz_DB_DragDropClose**  
+<a href="" id="admx-desktop-sz-db-dragdropclose"></a>**ADMX_Desktop/sz_DB_DragDropClose**
 
 <!--SupportedSKUs-->
 
@@ -1422,7 +1422,7 @@ Also, see the "Prohibit adjusting desktop toolbars" setting.
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prevent adding, dragging, dropping and closing the Taskbar's toolbars*
 -   GP name: *sz_DB_DragDropClose*
 -   GP path: *Desktop*
@@ -1433,7 +1433,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-db-moving"></a>**ADMX_Desktop/sz_DB_Moving**  
+<a href="" id="admx-desktop-sz-db-moving"></a>**ADMX_Desktop/sz_DB_Moving**
 
 <!--SupportedSKUs-->
 
@@ -1472,7 +1472,7 @@ Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's tool
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Prohibit adjusting desktop toolbars*
 -   GP name: *sz_DB_Moving*
 -   GP path: *Desktop*
@@ -1483,7 +1483,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-desktop-sz-dwp-nohtmlpaper"></a>**ADMX_Desktop/sz_DWP_NoHTMLPaper**  
+<a href="" id="admx-desktop-sz-dwp-nohtmlpaper"></a>**ADMX_Desktop/sz_DWP_NoHTMLPaper**
 
 <!--SupportedSKUs-->
 
@@ -1517,7 +1517,7 @@ Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Allow only bitmapped wallpaper*
 -   GP name: *sz_DWP_NoHTMLPaper*
 -   GP path: *Desktop\Desktop*

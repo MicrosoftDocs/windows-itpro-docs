@@ -4,8 +4,8 @@ description: Learn about Policy CSP - ADMX_SettingSync.
 ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 12/01/2020
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: aaroncz
 
 # Policy CSP - ADMX_SettingSync
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+>
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
 <!--Policies-->
-## ADMX_SettingSync policies  
+## ADMX_SettingSync policies
 
 <dl>
   <dd>
@@ -59,7 +59,7 @@ manager: aaroncz
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disableappsyncsettingsync"></a>**ADMX_SettingSync/DisableAppSyncSettingSync**  
+<a href="" id="admx-settingsync-disableappsyncsettingsync"></a>**ADMX_SettingSync/DisableAppSyncSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -97,7 +97,7 @@ If you don't set or disable this setting, syncing of the "AppSync" group is on b
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync Apps*
 -   GP name: *DisableAppSyncSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -108,7 +108,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disableapplicationsettingsync"></a>**ADMX_SettingSync/DisableApplicationSettingSync**  
+<a href="" id="admx-settingsync-disableapplicationsettingsync"></a>**ADMX_SettingSync/DisableApplicationSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -146,7 +146,7 @@ If you don't set or disable this setting, syncing of the "app settings" group is
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync app settings*
 -   GP name: *DisableApplicationSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -157,7 +157,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disablecredentialssettingsync"></a>**ADMX_SettingSync/DisableCredentialsSettingSync**  
+<a href="" id="admx-settingsync-disablecredentialssettingsync"></a>**ADMX_SettingSync/DisableCredentialsSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -195,7 +195,7 @@ If you don't set or disable this setting, syncing of the "passwords" group is on
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync passwords*
 -   GP name: *DisableCredentialsSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -206,7 +206,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disabledesktopthemesettingsync"></a>**ADMX_SettingSync/DisableDesktopThemeSettingSync**  
+<a href="" id="admx-settingsync-disabledesktopthemesettingsync"></a>**ADMX_SettingSync/DisableDesktopThemeSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -244,7 +244,7 @@ If you don't set or disable this setting, syncing of the "desktop personalizatio
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync desktop personalization*
 -   GP name: *DisableDesktopThemeSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -255,7 +255,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disablepersonalizationsettingsync"></a>**ADMX_SettingSync/DisablePersonalizationSettingSync**  
+<a href="" id="admx-settingsync-disablepersonalizationsettingsync"></a>**ADMX_SettingSync/DisablePersonalizationSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -293,7 +293,7 @@ If you don't set or disable this setting, syncing of the "personalize" group is 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync personalize*
 -   GP name: *DisablePersonalizationSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -304,7 +304,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disablesettingsync"></a>**ADMX_SettingSync/DisableSettingSync**  
+<a href="" id="admx-settingsync-disablesettingsync"></a>**ADMX_SettingSync/DisableSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -342,7 +342,7 @@ If you don't set or disable this setting, "sync your settings" is on by default 
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync*
 -   GP name: *DisableSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -353,7 +353,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disablestartlayoutsettingsync"></a>**ADMX_SettingSync/DisableStartLayoutSettingSync**  
+<a href="" id="admx-settingsync-disablestartlayoutsettingsync"></a>**ADMX_SettingSync/DisableStartLayoutSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -391,7 +391,7 @@ If you don't set or disable this setting, syncing of the "Start layout" group is
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync start settings*
 -   GP name: *DisableStartLayoutSettingSync*
 -   GP path: *Windows Components\Sync your settings*
@@ -402,7 +402,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disablesynconpaidnetwork"></a>**ADMX_SettingSync/DisableSyncOnPaidNetwork**  
+<a href="" id="admx-settingsync-disablesynconpaidnetwork"></a>**ADMX_SettingSync/DisableSyncOnPaidNetwork**
 
 <!--SupportedSKUs-->
 
@@ -438,7 +438,7 @@ If you don't set or disable this setting, syncing on metered connections is conf
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync on metered connections*
 -   GP name: *DisableSyncOnPaidNetwork*
 -   GP path: *Windows Components\Sync your settings*
@@ -449,7 +449,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-settingsync-disablewindowssettingsync"></a>**ADMX_SettingSync/DisableWindowsSettingSync**  
+<a href="" id="admx-settingsync-disablewindowssettingsync"></a>**ADMX_SettingSync/DisableWindowsSettingSync**
 
 <!--SupportedSKUs-->
 
@@ -487,7 +487,7 @@ If you don't set or disable this setting, syncing of the "Other Windows settings
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Do not sync other Windows settings*
 -   GP name: *DisableWindowsSettingSync*
 -   GP path: *Windows Components\Sync your settings*

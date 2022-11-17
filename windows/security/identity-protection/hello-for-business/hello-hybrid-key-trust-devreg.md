@@ -1,7 +1,7 @@
 ---
 title: Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Key Deployment (Windows Hello for Business)
-ms.prod: m365-security
+ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
@@ -10,11 +10,12 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 05/04/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Hybrid deployment</b>
+  - ✅ <b>Key trust</b>
+ms.technology: itpro-security
 ---
 # Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 
