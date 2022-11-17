@@ -68,15 +68,12 @@
       "searchScope": ["Windows"]
     },
     "fileMetadata": {
-      "titleSuffix":{
-        "threat-protection/**/*.md": "Windows security"
-      }
       "author":{
         "/identity-protection/hello-for-business/**/*.md": "paolomatarazzo"
-      }
+      },
       "ms.author":{
         "/identity-protection/hello-for-business/**/*.md": "paoloma"
-      }
+      },
       "ms.reviewer":{
         "/identity-protection/hello-for-business/**/*.md": "erikdau"
       }
