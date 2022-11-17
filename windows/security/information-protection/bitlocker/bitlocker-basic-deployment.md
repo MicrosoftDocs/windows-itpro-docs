@@ -84,7 +84,7 @@ For the operating system volume the **BitLocker Drive Encryption Wizard** presen
 
    - The drive being encrypted
    - The root directory of a non-removable/fixed drive
-   - An encrypted volume.
+   - An encrypted volume
 
     > [!TIP]
     > Ideally, a computer's recovery key should be stored separate from the computer itself.
