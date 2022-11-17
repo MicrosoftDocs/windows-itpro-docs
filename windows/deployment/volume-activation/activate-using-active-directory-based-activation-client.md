@@ -14,7 +14,11 @@ ms.collection: highpri
 
 # Activate using Active Directory-based activation
 
-(*Applies to: Windows, Windows Server, Office*)
+*Applies to:*
+
+- Windows
+- Windows Server
+- Office
 
 > [!TIP]
 > Are you looking for information on retail activation?

@@ -14,7 +14,15 @@ ms.technology: itpro-fundamentals
 
 # Activate using Key Management Service
 
-(*Applies to: Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*)
+*Applies to:*
+
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2
 
 > [!TIP]
 > Are you looking for information on retail activation?
@@ -61,7 +69,7 @@ Installing a KMS host key on a computer running Windows Server allows you to act
 This scenario is commonly used in larger organizations that do not find the overhead of using a server a burden.
 
 > [!NOTE]
-> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](/troubleshoot/windows-server/deployment/error-0xc004f015-activate-windows-10).
+> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [Error 0xC004F015 when you activate Windows 10 Enterprise on a Windows Server 2012 R2 KMS host](/troubleshoot/windows-server/deployment/error-0xc004f015-activate-windows-10).
 
 ### Configure KMS in Windows Server 2012 R2
 
