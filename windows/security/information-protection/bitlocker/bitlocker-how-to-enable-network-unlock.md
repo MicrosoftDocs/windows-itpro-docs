@@ -104,7 +104,7 @@ To install the role by using Windows PowerShell, use the following command:
 Install-WindowsFeature WDS-Deployment
 ```
 
-The WDS server must be configured so that it can communicate with DHCP (and optionally AD DS) and the client computer. The WDS server can be be configured using the WDS management tool, `wdsmgmt.msc`, which starts the Windows Deployment Services Configuration wizard.
+The WDS server must be configured so that it can communicate with DHCP (and optionally AD DS) and the client computer. The WDS server can be configured using the WDS management tool, `wdsmgmt.msc`, which starts the Windows Deployment Services Configuration wizard.
 
 ### Confirm the WDS service is running
 
