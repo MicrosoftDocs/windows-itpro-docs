@@ -249,7 +249,7 @@ Data volumes use the same syntax for encryption as operating system volumes but 
 manage-bde.exe -on <drive letter>
 ```
 
-or users can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
+Or users can choose to add protectors to the volume. It is recommended to add at least one primary protector and a recovery protector to a data volume.
 
 #### Enabling BitLocker with a password
 
