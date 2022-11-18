@@ -38,6 +38,7 @@
   - name: Manage Windows Hello for Business in your organization
     href: hello-manage-in-organization.md
 - name: Deployment guides
+  items: 
   - name: Cloud-only deployment
     items: 
     - name: Azure AD join
