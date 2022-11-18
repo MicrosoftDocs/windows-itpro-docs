@@ -21,7 +21,8 @@ ms.technology: itpro-security
 # Security policy settings reference
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 This reference of security settings provides information about how to implement and manage security policies, including setting options and security considerations.
 
