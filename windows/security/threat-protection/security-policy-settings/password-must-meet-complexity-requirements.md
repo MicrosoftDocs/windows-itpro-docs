@@ -22,6 +22,7 @@ ms.technology: itpro-security
 # Password must meet complexity requirements
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Password must meet complexity requirements** security policy setting.
