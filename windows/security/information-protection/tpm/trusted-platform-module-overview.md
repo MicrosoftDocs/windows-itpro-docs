@@ -20,8 +20,9 @@ ms.technology: itpro-security
 **Applies to**
 - Windows 11
 - Windows 10
-- Windows Server 2016
+- Windows Server 2022
 - Windows Server 2019
+- Windows Server 2016
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 
@@ -78,10 +79,10 @@ Some things that you can check on the device are:
 
 ## Supported versions for device health attestation
 
-| TPM version | Windows 11  | Windows 10  | Windows Server 2016 | Windows Server 2019 |
-|-------------|-------------|-------------|---------------------|---------------------|
-| TPM 1.2     |             | >= ver 1607 |    >= ver 1607      |       Yes           |
-| TPM 2.0     |    Yes      |     Yes     |       Yes           |       Yes           |
+| TPM version | Windows 11  | Windows 10  | Windows Server 2022 | Windows Server 2019 | Windows Server 2016 |
+|-------------|-------------|-------------|---------------------|---------------------|---------------------|
+| TPM 1.2     |             | >= ver 1607 |                     |                     |      >= ver 1607    |  
+| TPM **2.0** |   **Yes**   |  **Yes**    |    **Yes**          |    **Yes**          |    **Yes**          |
 
 
 ## Related topics
