@@ -17,20 +17,20 @@ When creating custom .xml files, note the following requirements:
 
 - **The file must be in Unicode Transformation Format-8 (UTF-8).** Save the file in this format, and you must specify the following syntax at the beginning of each .xml file:
 
-    ``` xml
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     ```
 
 - **The file must have a unique migration URL ID**. The URL ID of each file that you specify on the command line must be different. If two migration .xml files have the same URL ID, the second .xml file that is specified on the command line won't be processed. The second file won't be processed because USMT uses the URL ID to define the components within the file. For example, you must specify the following syntax at the beginning of each file:
 
-    ``` xml
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/<CustomFileName>">
     ```
 
 - **Each component in the file must have a display name in order for it to appear in the Config.xml file.** This condition is because the `Config.xml` file defines the components by the display name and the migration URL ID. For example, specify the following syntax:
 
-    ``` xml
+    ```xml
     <displayName>My Application</displayName>
     ```
 

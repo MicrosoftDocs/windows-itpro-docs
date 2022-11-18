@@ -22,7 +22,7 @@ The following template is a template for the sections that you need to migrate y
 <details>
   <summary>Expand to show <b>Example 1</b> application template:</summary>
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
   <component type="Application">
     <!-- Name of the application -->
@@ -161,7 +161,7 @@ The sample patterns describe the behavior in the following example .xml file.
 <details>
   <summary>Expand to show <b>Example 3</b> XML file:</summary>
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
   <component type="Application" context="System">
    <displayName>File Migration Test</displayName>
@@ -203,7 +203,7 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 <details>
   <summary>Expand to show <b>Example 4</b> XML file:</summary>
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 
 <component type="Documents" context="System">

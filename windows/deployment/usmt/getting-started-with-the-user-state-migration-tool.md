@@ -34,7 +34,7 @@ This article outlines the general process that you should follow to migrate file
 
 6. Create a [Config.xml File](usmt-configxml-file.md) if you want to exclude any components from the migration. To create this file, use the [ScanState Syntax](usmt-scanstate-syntax.md) option together with the other .xml files when you use the `ScanState.exe` command. For example, the following command creates a `Config.xml` file by using the `MigDocs.xml` and `MigApp.xml` files:
 
-    ``` syntax
+    ```cmd
     ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
     ```
 
@@ -51,7 +51,7 @@ This article outlines the general process that you should follow to migrate file
 
 3. Run the `ScanState.exe` command on the source computer to collect files and settings. You should specify all of the .xml files that you want the `ScanState.exe` command to use. For example,
 
-     ``` syntax
+     ```cmd
         ScanState.exe \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
      ```
 
@@ -78,7 +78,7 @@ This article outlines the general process that you should follow to migrate file
 
     For example, the following command migrates the files and settings:
 
-    ``` syntax
+    ```cmd
     LoadState.exe  \\server\migration\mystore /config:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:LoadState.log
     ```
 
