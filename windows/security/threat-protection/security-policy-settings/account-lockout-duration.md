@@ -23,6 +23,7 @@ ms.technology: itpro-security
 # Account lockout duration
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting.
