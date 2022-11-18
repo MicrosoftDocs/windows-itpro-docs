@@ -23,6 +23,7 @@ ms.technology: itpro-security
 # Password Policy
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 An overview of password policies for Windows and links to information for each policy setting.
