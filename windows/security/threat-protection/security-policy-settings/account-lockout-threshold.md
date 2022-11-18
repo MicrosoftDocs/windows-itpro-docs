@@ -23,6 +23,7 @@ ms.technology: itpro-security
 # Account lockout threshold
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Account lockout threshold** security policy setting.
