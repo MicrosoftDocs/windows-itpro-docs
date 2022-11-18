@@ -3,8 +3,8 @@ title: Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Bus
 description: Learn how to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
 ms.date: 01/14/2021
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https: //learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: article
 ---
 # Prepare and Deploy Active Directory Federation Services (AD FS)

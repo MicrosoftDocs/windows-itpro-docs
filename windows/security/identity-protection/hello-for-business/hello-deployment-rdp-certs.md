@@ -7,7 +7,7 @@ ms.topic: article
 localizationpriority: medium
 ms.date: 11/15/2022
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.technology: itpro-security
 ---
 

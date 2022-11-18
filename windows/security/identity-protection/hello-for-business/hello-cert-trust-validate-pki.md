@@ -3,8 +3,8 @@ title: Validate Public Key Infrastructure - certificate trust model (Windows Hel
 description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
 ms.date: 08/19/2018
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https: //learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: article
 ---
 # Validate and Configure Public Key Infrastructure - Certificate Trust Model

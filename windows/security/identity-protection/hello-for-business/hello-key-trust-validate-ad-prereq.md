@@ -3,7 +3,7 @@ title: Key registration for on-premises deployment of Windows Hello for Business
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the key trust model.
 ms.date: 08/19/2018
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Validate Active Directory prerequisites - Key Trust

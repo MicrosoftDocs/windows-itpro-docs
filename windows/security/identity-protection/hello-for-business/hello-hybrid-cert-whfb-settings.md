@@ -3,7 +3,7 @@ title: Configure Hybrid Windows Hello for Business Settings (Windows Hello for B
 description: Learn how to configure Windows Hello for Business settings in hybrid certificate trust deployment.
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business

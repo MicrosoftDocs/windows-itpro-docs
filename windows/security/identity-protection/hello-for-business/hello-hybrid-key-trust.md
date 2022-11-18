@@ -3,7 +3,7 @@ title: Hybrid Key Trust Deployment (Windows Hello for Business)
 description: Review this deployment guide to successfully deploy Windows Hello for Business in a hybrid key trust scenario.
 ms.date: 08/20/2018
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Hybrid Azure AD joined Key Trust Deployment

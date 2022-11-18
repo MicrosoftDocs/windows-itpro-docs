@@ -3,7 +3,7 @@ title: Hybrid Azure AD joined Windows Hello for Business Trust New Installation 
 description: Learn about new installations for Windows Hello for Business certificate trust and the various technologies hybrid certificate trust deployments rely on.
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust New Installation

@@ -3,7 +3,7 @@ title: Configure Windows Hello for Business Policy settings - key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business
 ms.date: 08/19/2018
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Configure Windows Hello for Business Policy settings - Key Trust

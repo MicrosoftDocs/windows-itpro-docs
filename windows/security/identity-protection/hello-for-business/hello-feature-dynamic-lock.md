@@ -3,7 +3,7 @@ title: Dynamic lock
 description: Learn how to set Dynamic lock on Windows 10 and Windows 11 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
 ms.date: 07/12/2022
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 

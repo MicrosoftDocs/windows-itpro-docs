@@ -3,7 +3,7 @@ title: Hybrid Azure AD joined Windows Hello for Business - Directory Synchroniza
 description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization

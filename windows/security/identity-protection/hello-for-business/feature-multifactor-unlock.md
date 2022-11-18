@@ -3,7 +3,7 @@ title: Multi-factor Unlock
 description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals.
 ms.date: 03/20/2018
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Multi-factor Unlock

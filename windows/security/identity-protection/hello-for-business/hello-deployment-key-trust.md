@@ -3,7 +3,7 @@ title: Windows Hello for Business Deployment Guide - On Premises Key Deployment
 description: A guide to on premises, key trust Windows Hello for Business deployment.
 ms.date: 08/20/2018
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # On Premises Key Trust Deployment

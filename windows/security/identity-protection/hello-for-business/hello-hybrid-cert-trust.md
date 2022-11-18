@@ -3,7 +3,7 @@ title: Hybrid Certificate Trust Deployment (Windows Hello for Business)
 description: Learn the information you need to successfully deploy Windows Hello for Business in a hybrid certificate trust scenario.
 ms.date: 09/08/2017
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Hybrid Azure AD joined Certificate Trust Deployment

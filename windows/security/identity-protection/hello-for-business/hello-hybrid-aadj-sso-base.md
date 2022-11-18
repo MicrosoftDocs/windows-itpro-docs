@@ -3,7 +3,7 @@ title: Configure Azure AD-joined devices for On-premises Single-Sign On using Wi
 description: Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support them.
 ms.date: 01/14/2021
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business

@@ -3,7 +3,7 @@ title: Hybrid Azure AD joined Windows Hello for Business Prerequisites
 description: Learn these prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Prerequisites

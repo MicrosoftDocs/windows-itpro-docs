@@ -3,7 +3,7 @@ title: Conditional Access
 description: Ensure that only approved users can access your devices, applications, and services from anywhere by enabling single sign-on with Azure Active Directory.
 ms.date: 09/09/2019
 appliesto: 
-- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
 
