@@ -21,6 +21,7 @@ ms.technology: itpro-security
 # Advanced security audit policy settings for Windows 10
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Provides information about the advanced security audit policy settings that are available in Windows and the audit events that they generate.
