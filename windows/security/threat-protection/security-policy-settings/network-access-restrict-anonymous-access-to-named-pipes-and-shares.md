@@ -21,7 +21,13 @@ ms.technology: itpro-security
 # Network access: Restrict anonymous access to Named Pipes and Shares
 
 **Applies to**
+-   Windows 11
 -   Windows 10
+-   Windows 8.1
+-   Windows Server 2022
+-   Windows Server 2019
+-   Windows Server 2016
+-   Windows Server 2012 R2
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Restrict anonymous access to Named Pipes and Shares** security policy setting.
 
