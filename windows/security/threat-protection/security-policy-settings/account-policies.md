@@ -21,6 +21,7 @@ ms.technology: itpro-security
 # Account Policies
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 An overview of account policies in Windows and provides links to policy descriptions.
