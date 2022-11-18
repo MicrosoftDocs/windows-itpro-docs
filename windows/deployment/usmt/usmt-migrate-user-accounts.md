@@ -23,7 +23,7 @@ Links to detailed explanations of commands are available in the [Related article
 
 2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    ``` syntax
+    ```cmd
     ScanState.exe \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /o
     ````
 
@@ -33,13 +33,13 @@ Links to detailed explanations of commands are available in the [Related article
 
    - If you're migrating domain accounts, enter:
 
-        ``` syntax
+        ```cmd
         LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml
         ```
 
    - If you're migrating local accounts along with domain accounts, enter:
 
-        ``` syntax
+        ```cmd
         LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml /lac /lae
         ```
 
@@ -54,7 +54,7 @@ Links to detailed explanations of commands are available in the [Related article
 
 2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    ``` syntax
+    ```cmd
     ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml /o
     ```
 
@@ -62,7 +62,7 @@ Links to detailed explanations of commands are available in the [Related article
 
 4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
-    ``` syntax
+    ```cmd
     LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml
     ```
 
@@ -74,7 +74,7 @@ Links to detailed explanations of commands are available in the [Related article
 
 2. Enter the following `ScanState.exe` command line in a command prompt window:
 
-    ``` syntax
+    ```cmd
     ScanState.exe \\server\share\migration\mystore /ue:*\* /ui:contoso\user1 /ui:contoso\user2 /i:MigDocs.xml /i:MigApp.xml /o
     ```
 
@@ -82,7 +82,7 @@ Links to detailed explanations of commands are available in the [Related article
 
 4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
-    ``` syntax
+    ```cmd
     LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml
     ```
 

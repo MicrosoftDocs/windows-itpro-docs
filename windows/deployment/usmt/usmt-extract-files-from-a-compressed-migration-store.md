@@ -29,7 +29,7 @@ In addition, you can specify the file patterns that you want to extract by using
 
 To extract files from the compressed migration store onto the destination computer, use the following UsmtUtils syntax:
 
-``` syntax
+```cmd
 UsmtUtils.exe /extract <filePath> <destinationPath> [/i:<includePattern>] [/e:<excludePattern>] [/l:<logfile>] [/decrypt[:<AlgID>] {/key:<keystring> | /keyfile:<filename>}] [/o]
 ```
 
@@ -57,7 +57,7 @@ Where the placeholders have the following values:
 
 To extract everything from a compressed migration store to a file on the `C:\` drive, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig C:\ExtractedStore
 ```
 
@@ -65,7 +65,7 @@ UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig C:\ExtractedStore
 
 To extract specific files, such as `.txt` and `.pdf` files, from an encrypted compressed migration store, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig /i:"*.txt,*.pdf" C:\ExtractedStore /decrypt /keyfile:D:\encryptionKey.txt
 ```
 
@@ -75,7 +75,7 @@ In this example, the file is encrypted and the encryption key is located in a te
 
 To extract all files except for one file type, such as `.exe` files, from an encrypted compressed migration store, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig /e:*.exe C:\ExtractedStore /decrypt:AES_128 /key:password /l:C:\usmtutilslog.txt
 ```
 
@@ -83,7 +83,7 @@ UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig /e:*.exe C:\ExtractedS
 
 To extract files from a compressed migration store, and to exclude files of one type (such as .exe files) while including only specific files, use both the include pattern and the exclude pattern, as in this example:
 
-``` syntax
+```cmd
 UsmtUtils.exe /extract D:\MyMigrationStore\USMT\store.mig /i:myProject.* /e:*.exe C:\ExtractedStore /o
 ```
 

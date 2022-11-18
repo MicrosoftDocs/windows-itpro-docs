@@ -61,7 +61,7 @@ The following table defines the supported combination of online and offline oper
 
 User-group membership isn't preserved during offline migrations. You must configure a **&lt;ProfileControl&gt;** section in the `Config.xml` file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
 
-``` xml
+```xml
 <Configuration>
 <ProfileControl>
     <localGroups>
@@ -146,7 +146,7 @@ Syntax: `<failOnMultipleWinDir>0</failOnMultipleWinDir>`
 
 The following XML example illustrates some of the elements discussed earlier in this article.
 
-``` xml
+```xml
 <offline>
      <winDir>
           <path>C:\Windows</path> 
