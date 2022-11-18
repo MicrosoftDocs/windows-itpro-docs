@@ -4,10 +4,10 @@ description: Azure Directory Synchronization for Hybrid Certificate Key Deployme
 ms.date: 4/30/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Configure Directory Synchronization for Hybrid Azure AD joined key trust Windows Hello for Business
+
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
 
 You are ready to configure directory synchronization for your hybrid environment. Hybrid Windows Hello for Business deployment needs both a cloud and an on-premises identity to authenticate and access resources in the cloud or on-premises.
 

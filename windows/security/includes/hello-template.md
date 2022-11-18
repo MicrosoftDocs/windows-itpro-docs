@@ -8,6 +8,8 @@ This document describes Windows Hello for Business functionalities or scenarios 
 ✅ **Device registration type:** Active Directory domain join\
 ✅ **Device registration type:** [Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#azure-active-directory-join)\
 ✅ **Device registration type:** [Hybrid Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#hybrid-azure-ad-join)\
-✅ **Device registration type:** [Azure AD registration](../identity-protection/hello-for-business/hello-how-it-works-technology.md#azure-ad-registration)\
-<!--<br>-->
+✅ **Device registration type:** [Azure AD registration](../identity-protection/hello-for-business/hello-how-it-works-technology.md#azure-ad-registration)
+
+<br>
+
 ---

@@ -300,7 +300,7 @@ The following image shows the SCRIL setting for a user in Active Directory Users
 
 :::image type="content" source="images/passwordless/aduc-account-scril.png" alt-text="Example user properties in Active Directory that shows the SCRIL setting on Account options.":::
 
-When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account don't allow the user to sign-in interactively with a password. Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level don't expire. The users are effectively password-less because:
+When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account don't allow the user to sign-in interactively with a password. Users will no longer need to change their password when it expires, because passwords for SCRIL users don't expire. The users are effectively password-less because:
 
 - They don't know their password.
 - Their password is 128 random bits of data and is likely to include non-typable characters.

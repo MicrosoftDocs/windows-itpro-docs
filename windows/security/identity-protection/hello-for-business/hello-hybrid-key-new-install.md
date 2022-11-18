@@ -4,10 +4,10 @@ description: Learn how to configure a hybrid key trust deployment of Windows Hel
 ms.date: 4/30/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Windows Hello for Business Hybrid Azure AD joined Key Trust New Installation
+
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
 
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid key trust deployments of Windows Hello for Business rely on these technologies
 

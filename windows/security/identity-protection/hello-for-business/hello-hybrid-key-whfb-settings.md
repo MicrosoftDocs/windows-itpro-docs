@@ -4,13 +4,13 @@ description: Begin the process of configuring your hybrid key trust environment 
 ms.date: 4/30/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business key trust settings
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
+
 You are ready to configure your hybrid Azure AD joined key trust environment for Windows Hello for Business.
-  
+
 > [!IMPORTANT]
 > Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
 

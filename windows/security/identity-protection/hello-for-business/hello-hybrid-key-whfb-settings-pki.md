@@ -4,10 +4,10 @@ description: Configuring Hybrid key trust Windows Hello for Business - Public Ke
 ms.date: 04/30/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Key trust</b>
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Public Key Infrastructure
+
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
 
 Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 

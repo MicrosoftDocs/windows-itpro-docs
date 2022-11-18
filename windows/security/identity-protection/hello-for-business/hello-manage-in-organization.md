@@ -133,9 +133,10 @@ All PIN complexity policies are grouped separately from feature enablement and a
 >- LowercaseLetters - 1
 >- SpecialCharacters - 1
 
+<!--
 ## How to use Windows Hello for Business with Azure Active Directory
 
-There are three scenarios for using Windows Hello for Business in Azure AD–only organizations:
+There are three scenarios for using Windows Hello for Business in Azure AD-only organizations:
 
 - **Organizations that use the version of Azure AD included with Office 365**. For these organizations, no additional work is necessary. When Windows 10 was released to general availability, Microsoft changed the behavior of the Office 365 Azure AD stack. When a user selects the option to join a work or school network, the device is automatically joined to the Office 365 tenant's directory partition, a certificate is issued for the device, and it becomes eligible for Office 365 MDM if the tenant has subscribed to that feature. In addition, the user will be prompted to log on and, if MFA is enabled, to enter an MFA proof that Azure AD sends to his or her phone.
 - **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won't be enabled unless and until the organization's administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered. 
@@ -153,3 +154,5 @@ If you want to use Windows Hello for Business with certificates, you'll need a d
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+
+-->

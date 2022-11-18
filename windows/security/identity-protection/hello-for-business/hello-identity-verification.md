@@ -15,7 +15,6 @@ This article lists the infrastructure requirements for the different deployment 
 
 ## Azure AD Cloud Only Deployment
 
-* Windows 10, version 1511 or later, or Windows 11
 * Microsoft Azure Account
 * Azure Active Directory
 * Azure AD Multifactor Authentication
