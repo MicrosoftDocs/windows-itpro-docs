@@ -21,6 +21,7 @@ ms.technology: itpro-security
 # Maximum password age
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Maximum password age** security policy setting.
