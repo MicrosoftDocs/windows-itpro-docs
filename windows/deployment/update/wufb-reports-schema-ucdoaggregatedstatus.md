@@ -16,7 +16,7 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-UCDOAggregatedStatus is an aggregation of all individual UDDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled using [Delivery Optimization and Microsoft Connected Cache](/windows/deployment/do/index.yml).
+UCDOAggregatedStatus is an aggregation of all individual UDDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled using [Delivery Optimization and Microsoft Connected Cache](/windows/deployment/do).
 
 |Field |Type |Example |Description |
 |---|---|---|---|
