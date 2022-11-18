@@ -21,6 +21,7 @@ ms.technology: itpro-security
 # Reset account lockout counter after
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Reset account lockout counter after** security policy setting.
