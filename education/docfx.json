@@ -62,11 +62,6 @@
         "garycentric"
       ]
     },
-    "fileMetadata": {
-      "ms.topic": {
-        "windows/tutorial-school-deployment/**/**.md": "tutorial"
-      }
-    },
     "externalReference": [],
     "template": "op.html",
     "dest": "education",

@@ -43,7 +43,7 @@ To open PowerShell with administrative credentials, select **Start** and enter `
 
 For all supported operating systems, you can use the VAMT PowerShell module included with the Windows ADK. By default, the module is installed with the Windows ADK in the VAMT folder. Change directories to the directory where VAMT is located. For example, if the Windows ADK is installed in the default location of `C:\Program Files(x86)\Windows Kits\10`, enter:
 
-  ``` powershell
+  ```powershell
   cd "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0"
   ```
 
@@ -51,7 +51,7 @@ For all supported operating systems, you can use the VAMT PowerShell module incl
 
 To import the VAMT PowerShell module, enter the following command at a PowerShell command prompt:
 
-  ``` powershell
+  ```powershell
   Import-Module .\VAMT.psd1
   ```
 
@@ -61,13 +61,13 @@ To import the VAMT PowerShell module, enter the following command at a PowerShel
 
 You can view all of the help sections for a VAMT PowerShell cmdlet, or you can view only the section that you're interested in. To view all of the Help content for a VAMT cmdlet, enter:
 
-``` powershell
+```powershell
 get-help <cmdlet name> -all
 ```
 
 For example, enter:
 
-``` powershell
+```powershell
 get-help get-VamtProduct -all
 ```
 
@@ -78,24 +78,24 @@ get-help get-VamtProduct -all
 
 1. To get the syntax to use with a cmdlet, enter the following command at a PowerShell command prompt:
 
-   ``` powershell
+   ```powershell
    get-help <cmdlet name>
    ```
 
    For example, enter:
 
-   ``` powershell
+   ```powershell
    get-help get-VamtProduct 
    ```
 
 2. To see examples using a cmdlet, enter:
 
-   ``` powershell
+   ```powershell
    get-help <cmdlet name> -examples
    ```
 
    For example, enter:
 
-   ``` powershell
+   ```powershell
    get-help get-VamtProduct -examples
    ```
