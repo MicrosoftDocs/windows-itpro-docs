@@ -141,7 +141,7 @@ The **Device status** group for feature updates contains the following items:
 
 ## <a name="bkmk_do"></a> Delivery Optimization (preview tab)
 
-The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes Microsoft Connected Cache (MCC) information.
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache (MCC)](https://learn.microsoft.com/en-us/windows/deployment/do/) information.
 
 At the top of the report, tiles display the following information:
 
@@ -155,6 +155,8 @@ The Delivery Optimization tab is further divided into the following groups:
 - **Device Configuration**: A chart differentiating the number of devices with and without peer-to-peer. And, a table of Download Mode configuration breakdown between numbers of devices. When selected, the devices within that group can be viewed, filtered in a separate table.
 - **Content Distribution**: Includes charts showing percentage volumes and GB volumes by source by content types. All content types are linked to a table for deeper filtering by **ContentType**, **AzureADTenantId**, and **GroupID**.
 - **Efficiency By Group**: This view provides filters commonly used ways of grouping devices. The provided filters include: **GroupID**, **City**, **Country**, and **ISP**.
+
+:::image type="content" source="images/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="images/wufb-do-overview.png":::
 
 ## Customize the workbook
 
