@@ -62,7 +62,11 @@ If you don't use Intune in your organization, then you can disable Windows Hello
 
 Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
-To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
+To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) or try the following:
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/organization?$select=id
+```
 
 These registry settings are pushed from Intune for user policies:
 

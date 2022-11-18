@@ -73,7 +73,7 @@
         href: hello-hybrid-cert-whfb-settings.md
       - name: Sign-in and provisioning
         href: hello-hybrid-cert-whfb-provision.md
-  - name: Oon-premises deployments
+  - name: On-premises deployments
     items:
     - name: Key trust deployment
       items: 
