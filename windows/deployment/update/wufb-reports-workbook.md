@@ -141,7 +141,7 @@ The **Device status** group for feature updates contains the following items:
 
 ## <a name="bkmk_do"></a> Delivery Optimization (preview tab)
 
-The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/index.yml) information.
+The **Delivery Optimization** tab provides a summarized view of bandwidth efficiencies. This new revised report also includes [Microsoft Connected Cache](/windows/deployment/do/waas-microsoft-connected-cache.md) information.
 
 At the top of the report, tiles display the following information:
 
