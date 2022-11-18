@@ -82,7 +82,6 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Application                             | Supported version | App Type | Vendor                       |
 |-----------------------------------------|-------------------|----------|------------------------------|
 | 3d builder                              | 15.2.10821.1070   | Win32    | Microsoft                    |
-| Absolute Software Endpoint Agent        | 7.21-15655        | Win32    | Absolute Software Corporation|
 | AirSecure                               | 8.0.0             | Win32    | AIR                          |
 | Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
 | Brave Browser                           | 106.0.5249.65     | Win32    | Brave                        |
