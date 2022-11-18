@@ -50,7 +50,7 @@ The migration .xml files, `MigApp.xml`, `MigDocs.xml`, and `MigUser.xml`, contai
 
 The following .xml file migrates all files located on the C: drive, except any .mp3 files.
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/mp3files">
     <!-- This component migrates all files except those with .mp3 extension-->
     <component type="Documents" context="UserAndSystem">
@@ -77,7 +77,7 @@ The following .xml file migrates all files located on the C: drive, except any .
 
 The following .xml file migrates all files and subfolders in `C:\Data`, except the files and subfolders in `C:\Data\tmp`.
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
         <displayName _locID="miguser.sharedvideo">Test component</displayName>
@@ -103,7 +103,7 @@ The following .xml file migrates all files and subfolders in `C:\Data`, except t
 
 The following .xml file migrates any subfolders in `C:\`EngineeringDrafts`, but excludes all files that are in `C:\EngineeringDrafts`.
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
@@ -129,7 +129,7 @@ The following .xml file migrates any subfolders in `C:\`EngineeringDrafts`, but 
 
 The following .xml file migrates all files and subfolders in `C:\EngineeringDrafts`, except for the `Sample.doc` file in `C:\EngineeringDrafts`.
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents except Sample.doc</displayName>
@@ -155,13 +155,13 @@ The following .xml file migrates all files and subfolders in `C:\EngineeringDraf
 
 To exclude a Sample.doc file from any location on the C: drive, use the **&lt;pattern&gt;** element. If multiple files exist with the same name on the C: drive, all of these files will be excluded.
 
-``` xml
+```xml
 <pattern type="File"> C:\* [Sample.doc] </pattern>
 ```
 
 To exclude a Sample.doc file from any drive on the computer, use the **&lt;script&gt;** element. If multiple files exist with the same name, all of these files will be excluded.
 
-``` xml
+```xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
 ```
 
@@ -173,7 +173,7 @@ Here are some examples of how to use XML to exclude files, folders, and registry
 
 The following .xml file excludes all `.mp3` files from the migration:
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
@@ -194,7 +194,7 @@ The following .xml file excludes all `.mp3` files from the migration:
 
 The following .xml file excludes only the files located on the C: drive.
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/allfiles">
     <component type="Documents" context="System">
         <displayName>Test</displayName>
@@ -215,7 +215,7 @@ The following .xml file excludes only the files located on the C: drive.
 
 The following .xml file unconditionally excludes the `HKEY_CURRENT_USER` registry key and all of its subkeys.
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="User">
@@ -242,7 +242,7 @@ The following .xml file unconditionally excludes the `HKEY_CURRENT_USER` registr
 
 The following .xml file unconditionally excludes the system folders of `C:\Windows` and `C:\Program Files`. Note that all `*.docx`, `*.xls` and `*.ppt` files won't be migrated because the **&lt;unconditionalExclude&gt;** element takes precedence over the **&lt;include&gt;** element.
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="System">

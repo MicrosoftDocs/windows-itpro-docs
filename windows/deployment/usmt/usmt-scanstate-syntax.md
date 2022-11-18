@@ -43,7 +43,7 @@ The `ScanState.exe` command's syntax is:
 
 For example, to create a `Config.xml` file in the current directory, use:
 
-``` syntax
+```cmd
 ScanState.exe /i:MigApp.xml /i:MigDocs.xml /genconfig:Config.xml /v:13
 ```
 

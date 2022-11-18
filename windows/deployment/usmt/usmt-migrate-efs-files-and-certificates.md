@@ -34,7 +34,7 @@ Before using the **ScanState** tool for a migration that includes encrypted file
 
 You can run the [Cipher.exe](/windows-server/administration/windows-commands/cipher) tool at a Windows command prompt to review and change encryption settings on files and folders. For example, to remove encryption from a folder, at a command prompt enter:
 
-``` syntax
+```cmd
 cipher.exe /D /S:<PATH>
 ```
 
