@@ -21,7 +21,8 @@ ms.technology: itpro-security
 # Network List Manager policies
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Network List Manager policies are security settings that you can use to configure different aspects of how networks are listed and displayed on one device or on many devices.
 
