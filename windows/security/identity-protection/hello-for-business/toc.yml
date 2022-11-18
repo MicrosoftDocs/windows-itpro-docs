@@ -33,96 +33,113 @@
     href: hello-identity-verification.md
   - name: Prepare people to use Windows Hello
     href: hello-prepare-people-to-use.md
-  - name: Deployment guides
-    items:
-    - name: Hybrid cloud Kerberos trust deployment
-      href: hello-hybrid-cloud-kerberos-trust.md
-    - name: Azure AD join
-      items: 
-      - name: Cloud-only deployment
-        href: hello-aad-join-cloud-only-deploy.md
-      - name: On-premises SSO for Azure AD joined devices
-        href: hello-hybrid-aadj-sso.md
-      - name: Configure Azure AD joined devices for on-premises SSO
-        href: hello-hybrid-aadj-sso-base.md
-      - name: Using certificates for on-premises SSO
-        href: hello-hybrid-aadj-sso-cert.md
-    - name: Hybrid Azure AD join with key trust
-      items: 
-      - name: Key trust deployment
-        href: hello-hybrid-key-trust.md
-      - name: Prerequisites
-        href: hello-hybrid-key-trust-prereqs.md
-      - name: New installation baseline
-        href: hello-hybrid-key-new-install.md
-      - name: Configure directory synchronization
-        href: hello-hybrid-key-trust-dirsync.md
-      - name: Configure Azure AD device registration
-        href: hello-hybrid-key-trust-devreg.md
-      - name: Configure Windows Hello for Business settings
-        href: hello-hybrid-key-whfb-settings.md
-      - name: Sign-in and provisioning
-        href: hello-hybrid-key-whfb-provision.md
-    - name: Hybrid Azure AD join with certificate trust
-      items: 
-      - name: Certificate trust deployment
-        href: hello-hybrid-cert-trust.md
-      - name: Prerequisites
-        href: hello-hybrid-cert-trust-prereqs.md
-      - name: New installation baseline
-        href: hello-hybrid-cert-new-install.md
-      - name: Configure Azure AD device registration
-        href: hello-hybrid-cert-trust-devreg.md
-      - name: Configure Windows Hello for Business settings
-        href: hello-hybrid-cert-whfb-settings.md
-      - name: Sign-in and provisioning
-        href: hello-hybrid-cert-whfb-provision.md
-    - name: Active Directory domain join with key trust
-      items: 
-      - name: Key trust deployment
-        href: hello-deployment-key-trust.md
-      - name: Validate Active Directory prerequisites
-        href: hello-key-trust-validate-ad-prereq.md
-      - name: Validate and configure Public Key Infrastructure (PKI)
-        href: hello-key-trust-validate-pki.md
-      - name: Prepare and deploy Active Directory Federation Services (AD FS)
-        href: hello-key-trust-adfs.md
-      - name: Validate and deploy multi-factor authentication (MFA) services
-        href: hello-key-trust-validate-deploy-mfa.md
-      - name: Configure Windows Hello for Business policy settings
-        href: hello-key-trust-policy-settings.md
-    - name: Active Directory domain join with certificate trust
-      items: 
-      - name: Certificate trust deployment
-        href: hello-deployment-cert-trust.md
-      - name: Validate Active Directory prerequisites
-        href: hello-cert-trust-validate-ad-prereq.md
-      - name: Validate and configure Public Key Infrastructure (PKI)
-        href: hello-cert-trust-validate-pki.md
-      - name: Prepare and Deploy Active Directory Federation Services (AD FS)
-        href: hello-cert-trust-adfs.md
-      - name: Validate and deploy multi-factor authentication (MFA) services
-        href: hello-cert-trust-validate-deploy-mfa.md
-      - name: Configure Windows Hello for Business policy settings
-        href: hello-cert-trust-policy-settings.md
-    - name: Deploy certificates for RDP sign-in
-      href: hello-deployment-rdp-certs.md
+  - name: Deploy certificates for RDP sign-in
+    href: hello-deployment-rdp-certs.md
   - name: Manage Windows Hello for Business in your organization
     href: hello-manage-in-organization.md
-  - name: Windows Hello for Business features
+
+- name: Deployment guides
+  - name: Hybrid deployments
     items:
-    - name: Conditional access 
-      href: hello-feature-conditional-access.md
-    - name: PIN Reset
-      href: hello-feature-pin-reset.md
-    - name: Dual Enrollment
-      href: hello-feature-dual-enrollment.md  
-    - name: Dynamic Lock
-      href: hello-feature-dynamic-lock.md
-    - name: Multi-factor Unlock
-      href: feature-multifactor-unlock.md
-    - name: Remote desktop (RDP) sign-in
-      href: hello-feature-remote-desktop.md
+    - name: Cloud Kerberos trust deployment
+      href: hello-hybrid-cloud-kerberos-trust.md
+
+  - name: Cloud-only deployment
+    items: 
+    - name: Azure AD join
+      href: hello-aad-join-cloud-only-deploy.md
+    - name: On-premises SSO for Azure AD joined devices
+      href: hello-hybrid-aadj-sso.md
+    - name: Configure Azure AD joined devices for on-premises SSO
+      href: hello-hybrid-aadj-sso-base.md
+    - name: Using certificates for on-premises SSO
+      href: hello-hybrid-aadj-sso-cert.md
+
+
+  - name: Hybrid Azure AD join with key trust
+    items: 
+    - name: Key trust deployment
+      href: hello-hybrid-key-trust.md
+    - name: Prerequisites
+      href: hello-hybrid-key-trust-prereqs.md
+    - name: New installation baseline
+      href: hello-hybrid-key-new-install.md
+    - name: Configure directory synchronization
+      href: hello-hybrid-key-trust-dirsync.md
+    - name: Configure Azure AD device registration
+      href: hello-hybrid-key-trust-devreg.md
+    - name: Configure Windows Hello for Business settings
+      href: hello-hybrid-key-whfb-settings.md
+    - name: Sign-in and provisioning
+      href: hello-hybrid-key-whfb-provision.md
+
+
+  - name: Hybrid Azure AD join with certificate trust
+    items: 
+    - name: Certificate trust deployment
+      href: hello-hybrid-cert-trust.md
+    - name: Prerequisites
+      href: hello-hybrid-cert-trust-prereqs.md
+    - name: New installation baseline
+      href: hello-hybrid-cert-new-install.md
+    - name: Configure Azure AD device registration
+      href: hello-hybrid-cert-trust-devreg.md
+    - name: Configure Windows Hello for Business settings
+      href: hello-hybrid-cert-whfb-settings.md
+    - name: Sign-in and provisioning
+      href: hello-hybrid-cert-whfb-provision.md
+
+
+  - name: Active Directory domain join with key trust
+    items: 
+    - name: Key trust deployment
+      href: hello-deployment-key-trust.md
+    - name: Validate Active Directory prerequisites
+      href: hello-key-trust-validate-ad-prereq.md
+    - name: Validate and configure Public Key Infrastructure (PKI)
+      href: hello-key-trust-validate-pki.md
+    - name: Prepare and deploy Active Directory Federation Services (AD FS)
+      href: hello-key-trust-adfs.md
+    - name: Validate and deploy multi-factor authentication (MFA) services
+      href: hello-key-trust-validate-deploy-mfa.md
+    - name: Configure Windows Hello for Business policy settings
+      href: hello-key-trust-policy-settings.md
+
+
+  - name: Active Directory domain join with certificate trust
+    items: 
+    - name: Certificate trust deployment
+      href: hello-deployment-cert-trust.md
+    - name: Validate Active Directory prerequisites
+      href: hello-cert-trust-validate-ad-prereq.md
+    - name: Validate and configure Public Key Infrastructure (PKI)
+      href: hello-cert-trust-validate-pki.md
+    - name: Prepare and Deploy Active Directory Federation Services (AD FS)
+      href: hello-cert-trust-adfs.md
+    - name: Validate and deploy multi-factor authentication (MFA) services
+      href: hello-cert-trust-validate-deploy-mfa.md
+    - name: Configure Windows Hello for Business policy settings
+      href: hello-cert-trust-policy-settings.md
+
+
+
+
+
+- name: Windows Hello for Business features
+  items:
+  - name: Conditional access 
+    href: hello-feature-conditional-access.md
+  - name: PIN Reset
+    href: hello-feature-pin-reset.md
+  - name: Dual Enrollment
+    href: hello-feature-dual-enrollment.md  
+  - name: Dynamic Lock
+    href: hello-feature-dynamic-lock.md
+  - name: Multi-factor Unlock
+    href: feature-multifactor-unlock.md
+  - name: Remote desktop (RDP) sign-in
+    href: hello-feature-remote-desktop.md
+
 - name: Troubleshooting
   items:
   - name: Known deployment issues
@@ -133,6 +150,8 @@
     href: hello-event-300.md
   - name: Windows Hello and password changes
     href: hello-and-password-changes.md
+
+
 - name: Reference
   items:
   - name: Technology and terminology
