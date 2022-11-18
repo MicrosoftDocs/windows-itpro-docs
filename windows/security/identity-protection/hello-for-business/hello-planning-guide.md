@@ -3,7 +3,8 @@ title: Planning a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
 ms.date: 09/16/2020
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Planning a Windows Hello for Business Deployment
 

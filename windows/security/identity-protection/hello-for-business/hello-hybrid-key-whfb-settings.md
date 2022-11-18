@@ -3,7 +3,8 @@ title: Configure Hybrid Azure AD joined Windows Hello for Business key trust Set
 description: Begin the process of configuring your hybrid key trust environment for Windows Hello for Business. Start with your Active Directory configuration.
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business key trust settings
 

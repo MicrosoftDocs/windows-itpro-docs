@@ -3,9 +3,8 @@ title: Configure Device Registration for Hybrid Azure AD joined Windows Hello fo
 description: Azure Device Registration for Hybrid Certificate Trust Deployment (Windows Hello for Business)
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Certificate trust</b>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 

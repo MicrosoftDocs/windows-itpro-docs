@@ -5,6 +5,7 @@ ms.date: 10/16/2017
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.topic: article
 ---
 # How Windows Hello for Business works in Windows devices
 

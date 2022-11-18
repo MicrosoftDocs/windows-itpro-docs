@@ -3,7 +3,8 @@ title: Windows Hello for Business Hybrid Azure AD joined Key Trust New Installat
 description: Learn how to configure a hybrid key trust deployment of Windows Hello for Business for systems with no previous installations.
 ms.date: 4/30/2021
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Windows Hello for Business Hybrid Azure AD joined Key Trust New Installation
 

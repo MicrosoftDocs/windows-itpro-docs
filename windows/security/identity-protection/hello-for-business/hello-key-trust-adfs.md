@@ -3,7 +3,8 @@ title: Prepare & Deploy Windows Active Directory Federation Services with key tr
 description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business using key trust.
 ms.date: 08/19/2018
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services with Key Trust
 

@@ -3,7 +3,8 @@ title: Microsoft-compatible security key
 description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
 ms.date: 11/14/2018
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # What is a Microsoft-compatible security key?
 

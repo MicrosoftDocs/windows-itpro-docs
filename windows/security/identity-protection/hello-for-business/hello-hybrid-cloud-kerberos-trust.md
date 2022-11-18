@@ -4,6 +4,7 @@ description: Learn the information you need to successfully deploy Windows Hello
 ms.date: 11/1/2022
 appliesto: 
 - ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10, version 21H2 and later</a>
+ms.topic: article
 ---
 # Hybrid cloud Kerberos trust deployment
 

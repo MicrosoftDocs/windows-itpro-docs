@@ -3,10 +3,9 @@ title: Update Active Directory schema for cert-trust deployment (Windows Hello f
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the certificate trust model.
 ms.date: 08/19/2018
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-- ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust</b>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https: //learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.topic: article
 ---
 # Validate Active Directory prerequisites for cert-trust deployment
 
