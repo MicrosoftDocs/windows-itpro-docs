@@ -62,14 +62,6 @@
         "garycentric"
       ]
     },
-    "fileMetadata": {
-      "ms.localizationpriority": {
-        "windows/tutorial-school-deployment/**/**.md": "medium"
-      },
-      "ms.topic": {
-        "windows/tutorial-school-deployment/**/**.md": "tutorial"
-      }
-    },
     "externalReference": [],
     "template": "op.html",
     "dest": "education",
