@@ -163,9 +163,9 @@ For 4616(S): The system time was changed.
 > [!IMPORTANT]
 > For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   Report all “**Subject\\Security ID**” not equals **“LOCAL SERVICE”**, which means that the time change was not made not by Windows Time service.
+-   Report all “**Subject\\Security ID**” not equals **“LOCAL SERVICE”**, which means that the time change was not made by Windows Time service.
 
--   Report all “**Process Information\\Name**” not equals **“C:\\Windows\\System32\\svchost.exe”** (path to svchost.exe can be different, you can search for “svchost.exe” substring), which means that the time change was not made not by Windows Time service.
+-   Report all “**Process Information\\Name**” not equals **“C:\\Windows\\System32\\svchost.exe”** (path to svchost.exe can be different, you can search for “svchost.exe” substring), which means that the time change was not made by Windows Time service.
 
 <!-- -->
 
