@@ -104,7 +104,7 @@ The following examples describe common scenarios in which you can use the diagno
 
 Let's imagine that we have the following directory structure and that we want the **data** directory to be included in the migration along with the **New Text Document.txt** file in the **New Folder**. The directory of `C:\data` contains:
 
-``` console
+```console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM    <DIR>          New Folder
@@ -115,7 +115,7 @@ Let's imagine that we have the following directory structure and that we want th
 
 The directory of `C:\data\New Folder` contains:
 
-``` console
+```console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt
@@ -198,7 +198,7 @@ This diagnostic log confirms that the modified **&lt;pattern&gt;** value enables
 
 In this scenario, you have the following directory structure and you want all files in the **Data** directory to migrate, except for text files. The `C:\Data` folder contains:
 
-``` console
+```console
 Directory of C:\Data
 
 01/21/2009  10:08 PM    <DIR>          .
@@ -211,7 +211,7 @@ Directory of C:\Data
 
 The `C:\Data\New Folder\` contains:
 
-``` console
+```console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt

@@ -47,7 +47,7 @@ To run the ScanState tool on the source computer with USMT installed:
 
 2. Navigate to the USMT tools. For example, enter:
 
-    ``` syntax
+    ```cmd
     cd /d "C:\Program Files (x86)\Windows Kits\8.0\Assessment and Deployment Kit\User State Migration Tool\<architecture>"
     ```
 
@@ -55,13 +55,13 @@ To run the ScanState tool on the source computer with USMT installed:
 
 3. Run the **ScanState** tool to generate an XML report of the space requirements. At the command prompt, enter:
 
-    ``` syntax
+    ```cmd
     ScanState.exe <StorePath> /p:<path to a file>
     ```
 
     Where *&lt;StorePath&gt;* is a path to a directory where the migration store will be saved and *&lt;path to a file&gt;* is the path and filename where the XML report for space requirements will be saved. For example:
 
-    ``` syntax
+    ```cmd
     ScanState.exe c:\store /p:c:\spaceRequirements.xml
     ```
 

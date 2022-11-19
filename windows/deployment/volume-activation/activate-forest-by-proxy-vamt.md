@@ -33,18 +33,31 @@ Before performing proxy activation, ensure that the network and the VAMT install
 ### To perform an Active Directory forest proxy activation
 
 1. Open VAMT.
+
 2. In the left-side pane, select the **Active Directory-Based Activation** node.
+
 3. In the right-side **Actions** pane, select **Proxy activate forest** to open the **Install Product Key** dialog box.
+
 4. In the **Install Product Key** dialog box, select the KMS Host key (CSVLK) that you want to activate.
+
 5. If you want to rename the ADBA object, enter a new Active Directory-Based Activation Object name. If you want to rename the ADBA object, you must do it now. After you select **Install Key**, the name can't be changed.
+
 6. Enter the name of the file where you want to save the offline installation ID, or browse to the file location and then select **Open**. If you're activating an AD forest in an isolated workgroup, save the `.cilx` file to a removable media device.
+
 7. Select **Install Key**. VAMT displays the **Activating Active Directory** dialog box until it completes the requested action. The activated object and the date that it was created appear in the **Active Directory-Based Activation** node in the center pane.
+
 8. Insert the removable media into the VAMT host that has Internet access. Make sure that you are on the root node, and that the **Volume Activation Management Tool** view is displayed in the center pane.
+
 9. In the right-side **Actions** pane, select **Acquire confirmation IDs for CILX** to open the **Acquire confirmation IDs for file** dialog box.
+
 10. In the **Acquire confirmation IDs for file** dialog box, browse to where the `.cilx` file you exported from the isolated workgroup host computer is located. Select the file, and then select **Open**. VAMT displays an **Acquiring Confirmation IDs** message while it contacts Microsoft and acquires the CIDs.
+
 11. When the CID collection process is complete, VAMT displays a **Volume Activation Management Tool** message that shows how many confirmation IDs were successfully acquired, and the name of the file to which the IDs were saved. Select **OK** to close the message.
+
 12. Remove the storage device that contains the `.cilx` file from the Internet-connected VAMT host computer and insert it into the VAMT host computer in the isolated workgroup.
+
 13. Open VAMT and then select the **Active Directory-Based Activation** node in the left-side pane.
+
 14. In the right-side **Actions** pane, select **Apply confirmation ID to Active Directory domain**, browse to the `.cilx` file and then select **Open**.
 
 VAMT displays the **Activating Active Directory** dialog box until it completes the requested action. The activated object and the date that it was created appear in the **Active Directory-Based Activation** node in the center pane.

@@ -14,7 +14,15 @@ ms.technology: itpro-fundamentals
 
 # Activate clients running Windows 10
 
-(*Applies to: Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*)
+*Applies to:*
+
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2
 
 > [!TIP]
 > Are you looking for information on retail activation?
