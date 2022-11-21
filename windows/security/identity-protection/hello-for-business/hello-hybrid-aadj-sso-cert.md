@@ -1,5 +1,5 @@
 ---
-title: Using Certificates for AADJ On-premises Single-sign On single sign-on
+title: Use Certificates to enable SSO for Azure AD join devices
 description: If you want to use certificates for on-premises single-sign on for Azure Active Directory-joined devices, then follow these additional steps.
 ms.date: 08/19/2018
 appliesto: 
@@ -9,7 +9,7 @@ ms.topic: article
 
 # Using Certificates for AADJ On-premises Single-sign On
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-keycert-trust-aad.md)]
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust-aad.md)]
 
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
 
