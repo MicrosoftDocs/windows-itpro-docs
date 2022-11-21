@@ -245,12 +245,12 @@ C:\users\WDAGUtilityAccount\Downloads\vscode.exe /verysilent /suppressmsgboxes
 <Configuration>
   <MappedFolders>
     <MappedFolder>
-      <HostFolder>C:\sandbox\scripts</HostFolder>
+      <HostFolder>C:\SandboxScripts</HostFolder>
 	<SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads\sandbox</SandboxFolder>
       <ReadOnly>true</ReadOnly>
     </MappedFolder>
     <MappedFolder>
-      <HostFolder>C:\sandbox\Projects</HostFolder>
+      <HostFolder>C:\CodingProjects</HostFolder>
 	<SandboxFolder>C:\Users\WDAGUtilityAccount\Documents\Projects</SandboxFolder>
       <ReadOnly>false</ReadOnly>
     </MappedFolder>
