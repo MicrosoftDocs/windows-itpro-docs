@@ -113,7 +113,7 @@ List of exceptions to the blocked website URLs (with wildcard support). This pol
 
 <!--/Scope-->
 <!--Description-->
-List of blocked website URLs (with wildcard support). This policy is used to configure blocked URLs kiosk browsers can't navigate to.
+List of blocked website URLs (with wildcard support). This policy is used to configure blocked URLs kiosk browsers can't navigate to. The delimiter for the URLs is "\uF000" character.
 
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
