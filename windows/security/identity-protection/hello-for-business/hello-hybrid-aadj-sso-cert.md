@@ -9,6 +9,8 @@ ms.topic: article
 
 # Using Certificates for AADJ On-premises Single-sign On
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-keycert-trust-aad.md)]
+
 If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
 
 > [!IMPORTANT]

@@ -13,14 +13,6 @@
     href: hello-biometrics-in-enterprise.md
   - name: How Windows Hello for Business works
     href: hello-how-it-works.md
-  - name: Technical deep dive
-    items:
-    - name: Provisioning
-      href: hello-how-it-works-provisioning.md
-    - name: Authentication
-      href: hello-how-it-works-authentication.md
-    - name: WebAuthn APIs
-      href: webauthn-apis.md
 - name: Deployment guides
   items:
   - name: Windows Hello for Business deployment overview
@@ -125,6 +117,8 @@
         href: hello-cert-trust-validate-deploy-mfa.md
       - name: Configure Windows Hello for Business policy settings
         href: hello-cert-trust-policy-settings.md
+    - name: Planning for Domain Controller load
+      href: hello-adequate-domain-controllers.md
 - name: How-to Guides
   items:
   - name: Prepare people to use Windows Hello
@@ -159,10 +153,14 @@
     href: hello-and-password-changes.md
 - name: Reference
   items:
+  - name: How Windows Hello for Business provisioning works
+    href: hello-how-it-works-provisioning.md
+  - name: How Windows Hello for Business authentication works
+    href: hello-how-it-works-authentication.md
+  - name: WebAuthn APIs
+    href: webauthn-apis.md
   - name: Technology and terminology
     href: hello-how-it-works-technology.md
-  - name: How many Domain Controllers?
-    href: hello-adequate-domain-controllers.md
   - name: Frequently Asked Questions (FAQ)
     href: hello-faq.yml
   - name: Windows Hello for Business videos
