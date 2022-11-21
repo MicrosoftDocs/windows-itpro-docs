@@ -8,6 +8,8 @@ ms.topic: article
 ---
 # Azure Active Directory join cloud only deployment
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-cloud.md)]
+
 ## Introduction
 
 When you Azure Active Directory (Azure AD) join a Windows device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud-only environment, then there's no additional configuration needed.

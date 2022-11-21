@@ -121,12 +121,12 @@
         href: hello-cert-trust-policy-settings.md
     - name: Planning for Domain Controller load
       href: hello-adequate-domain-controllers.md
+  - name: Deploy certificates for remote desktop (RDP) sign-in
+    href: hello-deployment-rdp-certs.md
 - name: How-to Guides
   items:
   - name: Prepare people to use Windows Hello
     href: hello-prepare-people-to-use.md
-  - name: Deploy certificates for RDP sign-in
-    href: hello-deployment-rdp-certs.md
   - name: Manage Windows Hello for Business in your organization
     href: hello-manage-in-organization.md
 - name: Windows Hello for Business features

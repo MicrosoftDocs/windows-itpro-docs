@@ -10,10 +10,6 @@ ms.topic: article
 
 [!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cloudkerb-trust.md)]
 
-<br>
-
----
-
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to successfully deploy Windows Hello for Business in a hybrid cloud Kerberos trust scenario.
 
 ## Introduction to cloud Kerberos trust
