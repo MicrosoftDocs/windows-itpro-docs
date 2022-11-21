@@ -407,7 +407,7 @@ MDT Zero Touch simply extends Configuration Manager with many useful built-in op
 
 ### Why use MDT Lite Touch to create reference images
 
-You can create reference images for Configuration Manager in Configuration Manager, but in general it is recommend creating them in MDT Lite Touch for the following reasons:
+You can create reference images for Configuration Manager in Configuration Manager, but in general it is recommended to create them in MDT Lite Touch for the following reasons:
 
 - You can use the same image for every type of operating system deployment - Microsoft Virtual Desktop Infrastructure (VDI), Microsoft System Center Virtual Machine Manager (VMM), MDT, Configuration Manager, Windows Deployment Services (WDS), and more.
 
