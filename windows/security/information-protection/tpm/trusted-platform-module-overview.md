@@ -82,7 +82,7 @@ Some things that you can check on the device are:
 | TPM version | Windows 11  | Windows 10  | Windows Server 2022 | Windows Server 2019 | Windows Server 2016 |
 |-------------|-------------|-------------|---------------------|---------------------|---------------------|
 | TPM 1.2     |             | >= ver 1607 |                     |                     |      >= ver 1607    |  
-| TPM **2.0** |   **Yes**   |  **Yes**    |    **Yes**          |    **Yes**          |    **Yes**          |
+| TPM 2.0 |   **Yes**   |  **Yes**    |    **Yes**          |    **Yes**          |    **Yes**          |
 
 
 ## Related topics
