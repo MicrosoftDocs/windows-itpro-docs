@@ -8,6 +8,8 @@ ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+
 ## Provisioning
 
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.

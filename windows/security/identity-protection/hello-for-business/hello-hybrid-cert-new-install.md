@@ -8,6 +8,8 @@ ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust New Installation
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technologies
 
 - [Active Directory](#active-directory)

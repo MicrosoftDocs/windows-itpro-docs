@@ -110,6 +110,8 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 
 ## Review & validate
 
+[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
 - Confirm the AD FS farm uses the correct database configuration.

@@ -9,6 +9,8 @@ ms.topic: article
 ---
 # On Premises Certificate Trust Deployment
 
+[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+
 Windows Hello for Business replaces username and password sign-in to Windows with authentication using an asymmetric key pair. This deployment guide provides the information you'll need to successfully deploy Windows Hello for Business in an existing environment.  
 
 Below, you can find all the information needed to deploy Windows Hello for Business in a Certificate Trust Model in your on-premises environment:

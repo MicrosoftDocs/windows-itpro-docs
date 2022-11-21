@@ -9,6 +9,8 @@ ms.topic: article
 ---
 # Validate Active Directory prerequisites for cert-trust deployment
 
+[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+
 The key registration process for the on-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema. The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest. The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema.
 
 > [!NOTE]

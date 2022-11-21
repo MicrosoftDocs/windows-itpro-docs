@@ -9,6 +9,8 @@ ms.topic: article
 
 # Configure Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+
 Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly-issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows between them and the client computer.
 
 All deployments use enterprise issued certificates for domain controllers as a root of trust. Hybrid certificate trust deployments issue users with a sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to non-Windows Server 2016 domain controllers. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.

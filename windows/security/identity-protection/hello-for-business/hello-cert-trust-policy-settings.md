@@ -12,6 +12,8 @@ ms.topic: article
 ---
 # Configure Windows Hello for Business Policy settings - Certificate Trust
 
+[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+
 To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows on a computer running Windows 10 or later.
 

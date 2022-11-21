@@ -8,6 +8,7 @@ ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business - Group Policy
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust-ad.md)]
 
 ## Policy Configuration
 

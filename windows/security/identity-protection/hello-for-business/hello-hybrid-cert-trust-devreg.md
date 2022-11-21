@@ -8,6 +8,8 @@ ms.topic: article
 ---
 # Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust-ad.md)]
+
 Your environment is federated and you're ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
 
 > [!IMPORTANT]

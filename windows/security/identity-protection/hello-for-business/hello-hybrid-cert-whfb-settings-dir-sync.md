@@ -9,6 +9,8 @@ ms.topic: article
 
 # Configure Hybrid Azure AD joined Windows Hello for Business- Directory Synchronization
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+
 ## Directory Synchronization
 
 In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.

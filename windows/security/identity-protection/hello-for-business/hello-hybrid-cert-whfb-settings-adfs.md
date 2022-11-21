@@ -8,6 +8,8 @@ ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory Federation Services
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+
 ## Federation Services
 
 The Windows Server 2016 Active Directory Federation Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
