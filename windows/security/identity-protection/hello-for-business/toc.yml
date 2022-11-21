@@ -87,6 +87,8 @@
           href: hello-hybrid-cert-whfb-settings-policy.md
       - name: Sign-in and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
+    - name: Planning for Domain Controller load
+      href: hello-adequate-domain-controllers.md
   - name: On-premises deployments
     items:
     - name: Key trust deployment
