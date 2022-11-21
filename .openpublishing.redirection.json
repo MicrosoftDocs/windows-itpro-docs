@@ -19929,6 +19929,11 @@
       "source_path": "windows/client-management/mdm/wmi-providers-supported-in-windows.md",
       "redirect_url": "/windows/client-management/wmi-providers-supported-in-windows",
       "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/deployment/do/mcc-enterprise.md",
+      "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/advanced-troubleshooting-802-authentication.md",

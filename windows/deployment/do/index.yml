@@ -69,8 +69,8 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for Enterprise and Education (Private Preview)
-            url: mcc-enterprise.md
+          - text: MCC for Enterprise and Education (early preview)
+            url: waas-microsoft-connected-cache.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup 
 
@@ -79,10 +79,13 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for ISPs (Private Preview)
-            url: mcc-isp.md
+          - text: MCC for ISPs (public preview)
+            url: mcc-isp-signup.md
           - text: Sign up
-            url: https://aka.ms/MSConnectedCacheSignup 
+            url: https://aka.ms/MCCForISPSurvey
+          - text: MCC for ISPs (early preview)
+            url: mcc-isp.md
+          
 
   # Card (optional)
   - title: Resources
