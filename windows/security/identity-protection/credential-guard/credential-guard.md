@@ -1,24 +1,13 @@
 ---
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows)
 description: Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: erikdau
-manager: aaroncz
-ms.collection: 
-  - M365-identity-device-management
-  - highpri
+ms.date: 11/22/2022
 ms.topic: article
-ms.date: 03/10/2022
+ms.collection: 
+  - highpri
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Protect derived domain credentials with Windows Defender Credential Guard

@@ -65,13 +65,15 @@
     },
     "fileMetadata": {
       "author":{
-        "/identity-protection/hello-for-business/*.md": "paolomatarazzo"
+        "identity-protection/**/*.md": "paolomatarazzo"
       },
       "ms.author":{
-        "/identity-protection/hello-for-business/*.md": "paoloma"
+        "identity-protection/**/*.md": "paoloma"
       },
       "ms.reviewer":{
-        "/identity-protection/hello-for-business/*.md": "erikdau"
+        "identity-protection/hello-for-business/*.md": "erikdau",
+        "identity-protection/credential-guard/*.md": "zwhittington",
+        "identity-protection/access-control/*.md": "sulahiri"
       }
     },
     "template": [],
