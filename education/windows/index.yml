@@ -7,7 +7,7 @@ metadata:
   title: Windows for Education documentation
   description: Learn about how to plan, deploy and manage Windows devices in an education environment with Microsoft Intune
   ms.topic: landing-page
-  ms.prod: windows
+  ms.prod: windows-client
   ms.collection:
   - education
   - highpri
