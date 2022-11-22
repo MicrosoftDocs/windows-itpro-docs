@@ -15,6 +15,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
   - ✅ <b>Hybrid deployment</b>
   - ✅ <b>Certificate trust</b>
+ms.technology: itpro-security
 ---
 # Hybrid Azure AD joined Windows Hello for Business Prerequisites
 
@@ -35,8 +36,8 @@ Hybrid Windows Hello for Business needs two directories: on-premises Active Dire
 
 A hybrid Windows Hello for Business deployment needs an Azure Active Directory subscription.  Different deployment configurations are supported by different Azure subscriptions.  The hybrid-certificate trust deployment needs an Azure Active Directory premium subscription because it uses the device write-back synchronization feature.  Other deployments, such as the hybrid key-trust deployment, may not require Azure Active Directory premium subscription.
 
-Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory or later schema.
- 
+Windows Hello for Business can be deployed in any environment with Windows Server 2012 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory or later schema.
+
 Review these requirements and those from the Windows Hello for Business planning guide and worksheet.  Based on your deployment decisions you may need to upgrade your on-premises Active Directory or your Azure Active Directory subscription to meet your needs.
 
 ### Section Review ###

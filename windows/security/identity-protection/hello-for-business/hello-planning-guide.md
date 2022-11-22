@@ -14,6 +14,7 @@ ms.date: 09/16/2020
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Planning a Windows Hello for Business Deployment
 

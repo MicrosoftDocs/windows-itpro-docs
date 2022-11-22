@@ -1,5 +1,5 @@
 ---
-title: Zero Trust and Windows device health 
+title: Zero Trust and Windows device health
 description: Describes the process of Windows device health attestation
 ms.reviewer: 
 ms.topic: article
@@ -8,8 +8,8 @@ ms.author: paoloma
 author: paolomatarazzo
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Zero Trust and Windows device health
@@ -60,7 +60,7 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 
 6. The attestation service returns an attestation report that contains information about the security features based on the policy configured in the attestation service.
 
-7. The device then sends the report to the Microsoft Endpoint Manager cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules.
+7. The device then sends the report to the Microsoft Intune cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules.
 
 8. Conditional access, along with device-compliance state then decides to allow or deny access.
 

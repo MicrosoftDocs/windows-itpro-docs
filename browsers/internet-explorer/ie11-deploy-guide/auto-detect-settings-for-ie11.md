@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: networking
 description: Auto detect settings Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: c6753cf4-3276-43c5-aae9-200e9e82753f
 ms.reviewer: 
 audience: itpro

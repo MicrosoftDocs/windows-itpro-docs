@@ -28,7 +28,7 @@ The following table shows the methods and paths available to change the edition 
 > The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
 
 > [!TIP]
-> Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Endpoint Configuration Manager.
+> Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Configuration Manager.
 
 ![not supported.](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required.](../images/check_grn.png) (green checkmark) = supported, reboot required</br>

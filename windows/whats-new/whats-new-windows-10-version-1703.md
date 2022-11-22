@@ -9,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
@@ -181,7 +182,7 @@ We recently added the option to download Windows 10 Insider Preview builds using
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, and with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Configuration Manager, starting with version 1702 of Configuration Manager, and with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.

@@ -19,6 +19,9 @@ ms.technology: itpro-updates
 - Windows 10
 - Windows 11
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 ![The Security Update Status report.](images/UC_workspace_SU_status.png)
 
 The Security Update Status section provides information about [security updates](waas-quick-start.md#definitions) across all devices. The section tile within the [Overview Blade](update-compliance-using.md#overview-blade) lists the percentage of devices on the latest security update available. Meanwhile, the blades within show the percentage of devices on the latest security update for each Windows client version and the deployment progress toward the latest two security updates.  

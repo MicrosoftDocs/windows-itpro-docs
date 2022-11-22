@@ -1,21 +1,21 @@
 ---
 title: User State Migration Tool (USMT) Troubleshooting (Windows 10)
-description: Learn about topics that address common User State Migration Tool (USMT) 10.0 issues and questions to assist in troubleshooting.
+description: Learn about topics that address common User State Migration Tool (USMT) 10.0 issues and questions to help troubleshooting.
 ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: frankroj
 ms.prod: windows-client
-author: aczechowski
-ms.date: 04/19/2017
+author: frankroj
+ms.date: 11/01/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---
 
-# User State Migration Tool (USMT) Troubleshooting
+# User State Migration Tool (USMT) troubleshooting
 
-The following table describes topics that address common User State Migration Tool (USMT) 10.0 issues and questions. These topics describe tools that you can use to troubleshoot issues that arise during your migration.
+The following table describes articles that address common User State Migration Tool (USMT) 10.0 issues and questions. These articles describe tools that you can use to troubleshoot issues that arise during your migration.
 
-## In This Section
+## In this section
 
 | Link | Description |
 |--- |--- |
@@ -25,12 +25,12 @@ The following table describes topics that address common User State Migration To
 |[Return Codes](usmt-return-codes.md)|Learn how to use return codes to identify problems in USMT.|
 |[USMT Resources](usmt-resources.md)|Find more information and support for using USMT.|
 
-## Related topics
+## Related articles
 
-[USMT Best Practices](usmt-best-practices.md)
+[USMT best practices](usmt-best-practices.md)
 
-[User State Migration Tool (USMT) Overview Topics](usmt-topics.md)
+[User State Migration Tool (USMT) overview topics](usmt-topics.md)
 
-[User State Migration Tool (USMT) How-to topics](usmt-how-to.md)
+[User State Migration Tool (USMT) how-to topics](usmt-how-to.md)
 
-[User State Migration Toolkit (USMT) Reference](usmt-reference.md)
+[User State Migration Toolkit (USMT) reference](usmt-reference.md)

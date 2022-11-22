@@ -43,7 +43,7 @@ To enable HVCI on Windows 10 and Windows 11 devices with supporting hardware thr
 - [Windows Security app](#windows-security-app)
 - [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
 - [Group Policy](#enable-hvci-using-group-policy)
-- [Microsoft Endpoint Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
+- [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-virtualization-based-protection-of-code-integrity)
 
 ### Windows Security app
@@ -52,7 +52,7 @@ HVCI is labeled **Memory integrity** in the Windows Security app and it can be a
 
 ### Enable HVCI using Intune
 
-Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
+Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure the settings in Windows by using the [settings catalog](/mem/intune/configuration/settings-catalog).
 
 ### Enable HVCI using Group Policy
 

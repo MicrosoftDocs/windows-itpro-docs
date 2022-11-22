@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: networking
 description: Auto configuration settings for Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 90308d59-45b9-4639-ab1b-497e5ba19023
 ms.reviewer: 
 audience: itpro

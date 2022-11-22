@@ -12,6 +12,7 @@ ms.date: 04/19/2017
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows Server 2016</b>
+ms.technology: itpro-security
 ---
 
 # Understanding and Evaluating Virtual Smart Cards

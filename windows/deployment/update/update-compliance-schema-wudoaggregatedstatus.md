@@ -13,6 +13,10 @@ ms.technology: itpro-updates
 
 # WUDOAggregatedStatus
 
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
+
 WUDOAggregatedStatus records provide information, across all devices, on their bandwidth utilization for a specific content type in the event they use [Delivery Optimization](https://support.microsoft.com/help/4468254/windows-update-delivery-optimization-faq), over the past 28 days.
 
 These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](../do/waas-delivery-optimization-reference.md).

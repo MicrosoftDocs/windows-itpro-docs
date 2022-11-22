@@ -54,7 +54,7 @@ landingContent:
             url: https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332
 
   # Card (optional)
-  - title: Configure Delivery Optimization on Microsoft Endpoint Manager
+  - title: Configure Delivery Optimization on Microsoft Intune or Configuration Manager
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -69,8 +69,8 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for Enterprise and Education (Private Preview)
-            url: mcc-enterprise.md
+          - text: MCC for Enterprise and Education (early preview)
+            url: waas-microsoft-connected-cache.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup 
 
@@ -79,10 +79,13 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for ISPs (Private Preview)
-            url: mcc-isp.md
+          - text: MCC for ISPs (public preview)
+            url: mcc-isp-signup.md
           - text: Sign up
-            url: https://aka.ms/MSConnectedCacheSignup 
+            url: https://aka.ms/MCCForISPSurvey
+          - text: MCC for ISPs (early preview)
+            url: mcc-isp.md
+          
 
   # Card (optional)
   - title: Resources
@@ -99,4 +102,6 @@ landingContent:
             url: delivery-optimization-proxy.md
           - text: Content endpoints for Delivery Optimization and Microsoft Connected Cache
             url: delivery-optimization-endpoints.md
+          - text: Testing Delivery Optimization
+            url: delivery-optimization-test.md
 

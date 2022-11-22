@@ -10,6 +10,7 @@ ms.collection:
   - highpri
 ms.topic: conceptual
 ms.date: 03/26/2019
+ms.technology: itpro-security
 ---
 
 # Kernel DMA Protection

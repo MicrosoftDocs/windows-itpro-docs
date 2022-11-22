@@ -3,8 +3,8 @@ metadata:
   title: Windows Hello for Business Frequently Asked Questions (FAQ)
   description: Use these frequently asked questions (FAQ) to learn important details about Windows Hello for Business.   
   keywords: identity, PIN, biometric, Hello, passport
-  ms.prod: m365-security
-  ms.mktglfcycl: deploy
+  ms.prod: windows-client
+  ms.technology: itpro-security
   ms.sitesec: library
   ms.pagetype: security, mobile
   audience: ITPro
@@ -17,7 +17,7 @@ metadata:
     - highpri
   ms.topic: faq
   localizationpriority: medium
-  ms.date: 02/21/2022
+  ms.date: 11/11/2022
   appliesto:
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
@@ -47,11 +47,11 @@ sections:
           Remote Desktop Protocol (RDP) doesn't currently support using key-based authentication and self-signed certificates as supplied credentials. However, you can deploy certificates in the key trust model to enable RDP. For more information, see [Deploying certificates to key trust users to enable RDP](hello-deployment-rdp-certs.md). In addition, Windows Hello for Business key trust can be also used with RDP with [Windows Defender Remote Credential Guard](../remote-credential-guard.md) without deploying certificates.
 
           
-      - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Configuration Manager?
+      - question: Can I deploy Windows Hello for Business by using Microsoft Configuration Manager?
         answer: |
           Windows Hello for Business deployments using Configuration Manager should follow the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](/configmgr/protect/deploy-use/windows-hello-for-business-settings).
 
-      - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Manager Intune?
+      - question: Can I deploy Windows Hello for Business by using Microsoft Intune?
         answer: |
           Windows Hello for Business deployments using Intune allow for a great deal of flexibility in deployment. For more information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
           
@@ -63,7 +63,19 @@ sections:
         answer: |
           When using Windows Hello for Business, the PIN isn't a symmetric key, whereas the password is a symmetric key.  With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server doesn't have a copy of the PIN. For that matter, the Windows client doesn't have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
           The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
-          
+
+      - question: What's a container?
+        answer: |  
+          In the context of Windows Hello for Business, it's shorthand for a logical grouping of key material or data. Windows Hello uses a single container that holds user key material for personal accounts, including key material associated with the user's Microsoft account or with other consumer identity providers, and credentials associated with a workplace or school account.
+          The container holds enterprise credentials only on devices that have been registered with an organization; it contains key material for the enterprise IDP, such as on-premises Active Directory or Azure AD.
+          Note that there are no physical containers on disk, in the registry, or elsewhere. Containers are logical units used to group related items. The keys, certificates, and credentials of Windows Hello stores, are protected without the creation of actual containers or folders.
+          The container contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container. Each logical container holds one or more sets of keys.\
+          :::image type="content" source="images/passport-fig3-logicalcontainer.png" alt-text="logical container with set of keys":::
+
+      - question: How do I delete a Windows Hello for Business container on a device?
+        answer: |  
+          You can effectively disable Windows Hello for Business by launching `certutil.exe -deleteHelloContainer` on the end device under a user account, and then restarting the device.
+
       - question: How does Windows Hello for Business work with Azure AD registered devices?
         answer: |
           A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using their exiting gestures.
@@ -88,7 +100,7 @@ sections:
 
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
-          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in the latest Windows Insiders builds and will be available in the future version of Windows 11.
+          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in Windows 11, version 22H2.
 
       - question: Why does authentication fail immediately after provisioning hybrid key trust?
         answer: |
@@ -155,11 +167,11 @@ sections:
 
       - question: Where is Windows Hello biometrics data stored?
         answer: |
-            When you enroll in Windows Hello, a representation of your face called an enrollment profile is created more information can be found on [Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn't roam, never leaves the module, and is never sent to Microsoft cloud or external server.  For more details see [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
+            When you enroll in Windows Hello, a representation of your face called an enrollment profile is created more information can be found on [Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication). This enrollment profile biometrics data is device specific, is stored locally on the device, and does not leave the device or roam with the user. Some external fingerprint sensors store biometric data on the fingerprint module itself rather than on Windows device. Even in this case, the biometrics data is stored locally on those modules, is device specific, doesn't roam, never leaves the module, and is never sent to Microsoft cloud or external server.  For more details, see [Windows Hello biometrics in the enterprise](/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise#where-is-windows-hello-data-stored).
       
       - question: What is the format used to store Windows Hello biometrics data on the device?
         answer: |
-          Windows Hello biometrics data is stored on the device as an encrypted template database. The data from the biometrics sensor (e.g., face camera or fingerprint reader) creates a data representation—or graph—that is then encrypted before it’s stored on the device. Each biometrics sensor on the device which is used by Windows Hello (face or fingerprint) will have its own biometric database file where template data is stored. Each biometrics database file is encrypted with unique, randomly generated key that is encrypted to the system using AES encryption producing an SHA256 hash. 
+          Windows Hello biometrics data is stored on the device as an encrypted template database. The data from the biometrics sensor (like face camera or fingerprint reader) creates a data representation—or graph—that is then encrypted before it’s stored on the device. Each biometrics sensor on the device which is used by Windows Hello (face or fingerprint) will have its own biometric database file where template data is stored. Each biometrics database file is encrypted with unique, randomly generated key that is encrypted to the system using AES encryption producing an SHA256 hash. 
       
       - question: Who has access on Windows Hello biometrics data? 
         answer: |
@@ -167,11 +179,11 @@ sections:
       
       - question: When is Windows Hello biometrics database file created? How is a user enrolled into Windows Hello face or fingerprint authentication?
         answer: |
-          Windows Hello biometrics template database file is created on the device only when a user is enrolled into Windows Hello biometrics-based authentication. Your workplace or IT administrator may have turned certain authentication functionality, however, it is always your choice if you want to use Windows Hello or an alternative method (e.g. pin). Users can check their current enrollment into Windows Hello biometrics by going to sign-in options on their device. Go to **Start** > **Settings** > **Accounts** > **Sign-in** options. Or just click on **Go to Sign-in options**. To enroll into Windows Hello, user can go to **Start** > **Settings** > **Accounts** > **Sign-in** options, select the Windows Hello method that they want to set up, and then select **Set up**. If you don't see Windows Hello in Sign-in options, then it may not be available for your device or blocked by admin via policy. Admins can by policy request users to enroll into Windows Hello during autopilot or during initial setup of the device. Admins can disallow users to enroll into biometrics via Windows hello for business policy configurations. However, when allowed via policy configurations, enrollment into Windows Hello biometrics is always optional for users.
+          Windows Hello biometrics template database file is created on the device only when a user is enrolled into Windows Hello biometrics-based authentication. Your workplace or IT administrator may have turned certain authentication functionality, however, it is always your choice if you want to use Windows Hello or an alternative method, like a pin. Users can check their current enrollment into Windows Hello biometrics by going to sign-in options on their device. Go to **Start** > **Settings** > **Accounts** > **Sign-in** options. Or just select on **Go to Sign-in options**. To enroll into Windows Hello, user can go to **Start** > **Settings** > **Accounts** > **Sign-in** options, select the Windows Hello method that they want to set up, and then select **Set up**. If you don't see Windows Hello in Sign-in options, then it may not be available for your device or blocked by admin via policy. Admins can by policy request users to enroll into Windows Hello during autopilot or during initial setup of the device. Admins can disallow users to enroll into biometrics via Windows hello for business policy configurations. However, when allowed via policy configurations, enrollment into Windows Hello biometrics is always optional for users.
 
       - question: When is Windows Hello biometrics database file deleted? How can a user be unenrolled from Windows Hello face or fingerprint authentication?
         answer: |
-            To remove Windows Hello and any associated biometric identification data from the device, user can go to **Start** > **Settings** > **Accounts** > **Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. This will unenroll the user from Windows Hello biometrics auth and will also delete the associated biometrics template database file. For more details see [Windows sign-in options and account protection (microsoft.com)](https://support.microsoft.com/en-us/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#bkmk_helloandprivacy).
+            To remove Windows Hello and any associated biometric identification data from the device, user can go to **Start** > **Settings** > **Accounts** > **Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. This will unenroll the user from Windows Hello biometrics auth and will also delete the associated biometrics template database file. For more details, see [Windows sign-in options and account protection (microsoft.com)](https://support.microsoft.com/en-us/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#bkmk_helloandprivacy).
       
       - question: What about any diagnostic data coming out when WHFB is enabled?
         answer: |
@@ -187,7 +199,7 @@ sections:
 
       - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
         answer: |
-          Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this topic further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, consider unenrolling from face authentication and only using PIN or fingerprint.
+          Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this article further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, consider unenrolling from face authentication and only using PIN or fingerprint.
 
       - question: What's the difference between Windows Hello and Windows Hello for Business?
         answer: |
@@ -248,7 +260,7 @@ sections:
           Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.<br><br>
           
           | Protocol | Description |
-          | :---: | :--- |
+          | :--- | :--- |
           | [[MS-KPP]: Key Provisioning Protocol](/openspecs/windows_protocols/ms-kpp/25ff7bd8-50e3-4769-af23-bcfd0b4d4567) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
           | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](/openspecs/windows_protocols/ms-oapx/7612efd4-f4c8-43c3-aed6-f5c5ce359da2)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and log in hints. |  
           | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](/openspecs/windows_protocols/ms-oapxbc/2f7d8875-0383-4058-956d-2fb216b44706) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (the OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |

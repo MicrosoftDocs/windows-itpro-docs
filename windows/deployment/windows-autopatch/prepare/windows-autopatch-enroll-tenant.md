@@ -19,7 +19,7 @@ Before you enroll in Windows Autopatch, there are settings, and other parameters
 > [!IMPORTANT]
 > You must be a Global Administrator to enroll your tenant.
 
-The Readiness assessment tool, accessed through the [Windows Autopatch admin center](https://endpoint.microsoft.com/), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
+The Readiness assessment tool, accessed in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
 
 ## Step 1: Review all prerequisites
 
@@ -30,18 +30,18 @@ To start using the Windows Autopatch service, ensure you meet the [Windows Autop
 > [!IMPORTANT]
 > The online Readiness assessment tool helps you check your readiness to enroll in Windows Autopatch for the first time. Once you enroll, you'll no longer be able to access the  tool again.
 
-The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager](#microsoft-intune-settings) (specifically, Microsoft Intune) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
+The Readiness assessment tool checks the settings in [Microsoft Intune](#microsoft-intune-settings) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
 
 **To access and run the Readiness assessment tool:**
 
 > [!IMPORTANT]
 > You must be a Global Administrator to run the Readiness assessment tool.
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. In the left pane, select Tenant administration and then navigate to Windows Autopatch > **Tenant enrollment**.
 
 > [!IMPORTANT]
-> If you don't see the Tenant enrollment blade, this is because you don't meet the prerequisites or the proper licenses. For more information, see [Windows Autopatch prerequisites](windows-autopatch-prerequisites.md#more-about-licenses).
+> All Intune customers can see the Windows Autopatch Tenant enrollment blade. However, if you don't meet the prerequisites or have the proper licensing, you won't be able to enroll into the Windows Autopatch service. For more information, see [Windows Autopatch prerequisites](windows-autopatch-prerequisites.md#more-about-licenses).
 
 The Readiness assessment tool checks the following settings:
 
@@ -109,7 +109,7 @@ Windows Autopatch retains the data associated with these checks for 12 months af
 
 **To delete the data we collect:**
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Navigate to Windows Autopatch > **Tenant enrollment**.
 3. Select **Delete all data**.
 

@@ -30,7 +30,7 @@ To get up and running with User Experience Virtualization (UE-V), install and co
 
     With Windows 10, version 1607, UE-V is installed automatically. You need to enable the UE-V service on each user device you want to include in your UE-V environment.
 
-The topics in this section describe how to deploy these features.
+The articles in this section describe how to deploy these features.
 
 ## Deploy a UE-V Settings Storage Location
 
@@ -115,7 +115,7 @@ You can configure UE-V before, during, or after you enable the UE-V service on u
 
     Windows Server 2012 and Windows Server 2012 R2
 
--   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Endpoint Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+-   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 -   [**Windows PowerShell and WMI**](uev-administering-uev-with-windows-powershell-and-wmi.md) You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify the configuration of the UE-V service.
 
@@ -155,7 +155,7 @@ With Windows 10, version 1607 and later, the UE-V service is installed on user d
 
 
 
-## Related topics
+## Related articles
 
 [Prepare a UE-V deployment](uev-prepare-for-deployment.md)
 
