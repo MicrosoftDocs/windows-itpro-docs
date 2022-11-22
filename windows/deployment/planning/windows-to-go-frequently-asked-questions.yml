@@ -8,7 +8,8 @@ metadata:
   ms.author: frankroj
   manager: aaroncz
   keywords: FAQ, mobile, device, USB
-  ms.prod: w10
+  ms.prod: windows-client
+  ms.technology: itpro-deploy
   ms.mktglfcycl: deploy
   ms.pagetype: mobility
   ms.sitesec: library
