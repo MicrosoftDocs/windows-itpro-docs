@@ -366,6 +366,8 @@ items:
           href: policy-csp-camera.md
         - name: Cellular
           href: policy-csp-cellular.md
+        - name: CloudDesktop
+          href: policy-csp-clouddesktop.md
         - name: CloudPC
           href: policy-csp-cloudpc.md
         - name: Connectivity

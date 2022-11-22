@@ -4,7 +4,7 @@ description: Learn more about the Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 11/22/2022
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1073,6 +1073,7 @@ Specifies the name/value pair used in the policy. See the individual Area DDFs f
 - [Browser](policy-csp-browser.md)
 - [Camera](policy-csp-camera.md)
 - [Cellular](policy-csp-cellular.md)
+- [CloudDesktop](policy-csp-clouddesktop.md)
 - [CloudPC](policy-csp-cloudpc.md)
 - [Connectivity](policy-csp-connectivity.md)
 - [ControlPolicyConflict](policy-csp-controlpolicyconflict.md)
