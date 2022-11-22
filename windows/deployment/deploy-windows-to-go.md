@@ -6,6 +6,7 @@ manager: aaroncz
 author: frankroj
 ms.author: frankroj
 ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.date: 10/31/2022

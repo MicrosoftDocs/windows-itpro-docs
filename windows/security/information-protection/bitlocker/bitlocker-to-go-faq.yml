@@ -3,9 +3,9 @@ metadata:
   title: BitLocker To Go FAQ (Windows 10)
   description: "Learn more about BitLocker To Go"
   ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-  ms.reviewer: 
+  ms.prod: windows-client
+  ms.technology: itpro-security
   ms.author: frankroj
-  ms.prod: m365-security
   ms.mktglfcycl: deploy
   ms.sitesec: library
   ms.pagetype: security
