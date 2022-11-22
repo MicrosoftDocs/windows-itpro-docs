@@ -51,6 +51,7 @@ This policy is used by IT admin to set the configuration mode of cloud PC.
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
+| Dependency [OverrideShellProgramDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/WindowsLogon/OverrideShellProgram` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- BootToCloudMode-DFProperties-End -->
 
 <!-- BootToCloudMode-AllowedValues-Begin -->
