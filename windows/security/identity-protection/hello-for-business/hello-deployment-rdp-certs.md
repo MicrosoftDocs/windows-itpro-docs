@@ -139,7 +139,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     | --- | --- |
     |*Certificate Type*| User |
     |*Subject name format* | `CN={{UserPrincipalName}}` |
-    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `CN={{UserPrincipalName}}`
+    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`
     |*Certificate validity period* | Configure a value of your choosing|
     |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
     |*Key usage*| **Digital Signature**|
