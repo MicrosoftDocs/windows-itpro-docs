@@ -29,10 +29,6 @@ See the following video for a detailed description and demonstration of MBR2GPT.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/hfJep4hmg9o]
 
-<!-->
-<iframe width="560" height="315" align="center" src="https://www.youtube-nocookie.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
--->
-
 You can use MBR2GPT to:
 
 - Convert any attached MBR-formatted system disk to the GPT partition format. You can't use the tool to convert non-system disks from MBR to GPT.

@@ -20,15 +20,15 @@ S mode is an evolution of the S SKU introduced with Windows 10 April 2018 Update
 
 ## S mode key features
 
-**Microsoft-verified security**
+### Microsoft-verified security
 
 With Windows 10 in S mode, you'll find your favorite applications, such as Office, Evernote, and Spotify in the Microsoft Store where they're Microsoft-verified for security. You can also feel secure when you're online. Microsoft Edge, your default browser, gives you protection against phishing and socially engineered malware.
 
-**Performance that lasts**
+### Performance that lasts
 
 Start-ups are quick, and S mode is built to keep them that way. With Microsoft Edge as your browser, your online experience is fast and secure. Plus, you'll enjoy a smooth, responsive experience, whether you're streaming HD video, opening apps, or being productive on the go.
 
-**Choice and flexibility**
+### Choice and flexibility
 
 Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don't find exactly what you want, you can easily [switch out of S mode](./windows-10-pro-in-s-mode.md) to Windows 10 Home, Pro, or Enterprise editions at any time and search the web for more choices, as shown below.
 
@@ -48,7 +48,7 @@ The [MSIX Packaging Tool](/windows/application-management/msix-app-packaging-too
 
 ## Related links
 
-- [Consumer applications for S mode](https://www.microsoft.com/windows/s-mode)
-- [S mode devices](https://www.microsoft.com/en-us/windows/view-all-devices)
+- [Consumer applications for S mode](/windows/s-mode)
+- [S mode devices](/windows/view-all-devices)
 - [Windows Defender Application Control deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
-- [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+- [Microsoft Defender for Endpoint](/microsoft-365/windows/microsoft-defender-atp)
