@@ -1,19 +1,13 @@
 ---
 title: Deploy certificates for remote desktop sign-in
 description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: erikdau
-ms.collection:
-  - M365-identity-device-management
+ms.collection: 
   - ContentEngagementFY23
-ms.topic: how-to
+ms.topic: article
 localizationpriority: medium
 ms.date: 11/15/2022
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.technology: itpro-security
 ---
 
@@ -139,7 +133,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     | --- | --- |
     |*Certificate Type*| User |
     |*Subject name format* | `CN={{UserPrincipalName}}` |
-    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `CN={{UserPrincipalName}}`
+    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`
     |*Certificate validity period* | Configure a value of your choosing|
     |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
     |*Key usage*| **Digital Signature**|
