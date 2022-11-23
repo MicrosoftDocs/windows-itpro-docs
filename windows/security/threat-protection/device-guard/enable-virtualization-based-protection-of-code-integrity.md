@@ -205,7 +205,7 @@ Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windo
 ```
 
 > [!NOTE]
-> The *Win32\_DeviceGuard* WMI class is only available on the Professional & Enterprise edition of Windows 10 and Windows 11.
+> The *Win32\_DeviceGuard* WMI class is only available on the Professional and Enterprise editions of Windows 10 and Windows 11.
 
 > [!NOTE]
 > Mode Based Execution Control property will only be listed as available starting with Windows 10 version 1803 and Windows 11 version 21H2.
