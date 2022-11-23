@@ -32,13 +32,13 @@ DISM is one of the deployment tools included in the Windows ADK and is used for 
 
 DISM services online and offline images. For example, with DISM you can install the Microsoft .NET Framework 3.5.1 in Windows 10 online, which means that you can start the installation in the running operating system, not that you get the software online. The /LimitAccess switch configures DISM to get the files only from a local source:
 
-``` syntax
+```cmd
 Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS /LimitAccess
 ```
 
 In Windows 10, you can use Windows PowerShell for many of the functions done by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
 
-``` syntax
+```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
 -Source D:\Sources\SxS -LimitAccess
 ```
@@ -160,7 +160,7 @@ The updated Volume Activation Management Tool.
 
 VAMT also can be used to create reports, switch from MAK to KMS, manage Active Directory-based activation, and manage Office 2010 and Office 2013 volume activation. VAMT also supports PowerShell (instead of the old command-line tool). For example, if you want to get information from the VAMT database, you can type:
 
-``` syntax
+```powershell
 Get-VamtProduct
 ```
 

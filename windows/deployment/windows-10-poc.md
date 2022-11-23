@@ -120,8 +120,8 @@ Starting with Windows 8, the host computer's microprocessor must support second 
 
 1. To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
-    ```console
-    C:\>systeminfo
+    ```cmd
+    C:\>systeminfo.exe
 
     ...
     Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
@@ -136,8 +136,8 @@ Starting with Windows 8, the host computer's microprocessor must support second 
 
     You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
-    ```console
-    C:\>coreinfo -v
+    ```cmd
+    C:\>coreinfo.exe -v
 
     Coreinfo v3.31 - Dump information on system CPU and memory topology
     Copyright (C) 2008-2014 Mark Russinovich
@@ -205,7 +205,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
      The following example displays the procedures described in this section, both before and after downloading files:
 
-    ```console
+    ```cmd
      C:>mkdir VHD
      C:>cd VHD
      C:\VHD&gt;ren 9600*.vhd 2012R2-poc-1.vhd
@@ -265,7 +265,7 @@ If the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to
 If the **Type** column doesn't indicate GPT, then the disk partition format is MBR ("Installable File System" = MBR). In the following example, the disk is GPT:
 
 ```powershell
-PS C:> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
+Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
 
 SystemName                           Caption                                 Type
 ----------                           -------                                 ----
@@ -276,7 +276,7 @@ USER-PC1                             Disk #0, Partition #1                   GPT
 On a computer running Windows 8 or later, you can also type **Get-Disk** at a Windows PowerShell prompt to discover the partition style. The default output of this cmdlet displays the partition style for all attached disks. Both commands are displayed below. In this example, the client computer is running Windows 8.1 and uses a GPT style partition format:
 
 ```powershell
-PS C:> Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
+Get-WmiObject -Class Win32_DiskPartition | Select-Object -Property SystemName,Caption,Type
 
 SystemName                            Caption                               Type
 ----------                            -------                               ----
@@ -374,8 +374,8 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 2. On the computer you wish to convert, open an elevated command prompt and type the following command:
 
-    ```console
-    mountvol s: /s
+    ```cmd
+    mountvol.exe s: /s
     ```
 
     This command temporarily assigns a drive letter of S to the system volume and mounts it. If the letter S is already assigned to a different volume on the computer, then choose one that is available (ex: mountvol z: /s).
@@ -394,7 +394,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (PC1.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
-    ```console
+    ```cmd
     C:\vhd>dir /B
     2012R2-poc-1.vhd
     2012R2-poc-2.vhd
@@ -579,14 +579,14 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
    4. Select **Command Prompt**.
    5. Type the following command to save an image of the OS drive:
 
-      ```console
-      dism /Capture-Image /ImageFile:D:\c.wim /CaptureDir:C:\ /Name:Drive-C
+      ```cmd
+      dism.exe /Capture-Image /ImageFile:D:\c.wim /CaptureDir:C:\ /Name:Drive-C
       ```
 
    6. Wait for the OS image to complete saving, and then type the following commands to convert the C: drive to MBR:
 
-      ```console
-      diskpart
+      ```cmd
+      diskpart.exe
       select disk 0
       clean
       convert MBR
@@ -601,9 +601,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
    7. Type the following commands to restore the OS image and boot files:
 
-      ```console
-      dism /Apply-Image /ImageFile:D:\c.wim /Index:1 /ApplyDir:C:\
-      bcdboot c:\windows
+      ```cmd
+      dism.exe /Apply-Image /ImageFile:D:\c.wim /Index:1 /ApplyDir:C:\
+      bcdboot.exe c:\windows
       exit
       ```
 
@@ -690,7 +690,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
     The following output should be displayed:
 
-    ```powershell
+    ```console
     UseRootHint        : True
     Timeout(s)         : 3
     EnableReordering   : True
@@ -752,8 +752,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
     To open Windows PowerShell on Windows 7, select **Start**, and search for "**power**." Right-click **Windows PowerShell** and then select **Pin to Taskbar** so that it's simpler to use Windows PowerShell during this lab. Select **Windows PowerShell** on the taskbar, and then type `ipconfig` at the prompt to see the client's current IP address. Also type `ping dc1.contoso.com` and `nltest /dsgetdc:contoso.com` to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
-    ```console
-    ipconfig
+    ```cmd
+    ipconfig.exe
 
     Windows IP Configuration
 
@@ -909,8 +909,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
 33. In most cases, this process completes configuration of the PoC network. However, if your network has a firewall that filters queries from local DNS servers, you'll also need to configure a server-level DNS forwarder on SRV1 to resolve internet names. To test whether or not DNS is working without this forwarder, try to reach a name on the internet from DC1 or PC1, which are only using DNS services on the PoC network. You can test DNS with the ping command, for example:
 
-    ```powershell
-    ping www.microsoft.com
+    ```cmd
+    ping.exe www.microsoft.com
     ```
 
     If you see "Ping request couldn't find host `www.microsoft.com`" on PC1 and DC1, but not on SRV1, then you'll need to configure a server-level DNS forwarder on SRV1. To do this action, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
@@ -924,8 +924,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 
 34. If DNS and routing are both working correctly, you'll see the following output on DC1 and PC1 (the IP address might be different, but that's OK):
 
-    ```powershell
-    PS C:\> ping www.microsoft.com
+    ```cmd
+    ping www.microsoft.com
 
     Pinging e2847.dspb.akamaiedge.net [23.222.146.170] with 32 bytes of data:
     Reply from 23.222.146.170: bytes=32 time=3ms TTL=51
@@ -943,7 +943,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40 GB to
 36. Lastly, because the client computer has different hardware after copying it to a VM, its Windows activation will be invalidated and you might receive a message that you must activate Windows in three days. To extend this period to 30 days, type the following commands at an elevated Windows PowerShell prompt on PC1:
 
     ```powershell
-    runas /noprofile /env /user:administrator@contoso.com "cmd /c slmgr -rearm"
+    runas.exe /noprofile /env /user:administrator@contoso.com "cmd.exe /c slmgr -rearm"
     Restart-Computer
     ```
 
@@ -963,7 +963,7 @@ Use the following procedures to verify that the PoC environment is configured pr
     Resolve-DnsName -Server dc1.contoso.com -Name www.microsoft.com
     Get-DhcpServerInDC
     Get-DhcpServerv4Statistics
-    ipconfig /all
+    ipconfig.exe /all
     ```
 
     **Get-Service** displays a status of "Running" for all three services.
@@ -988,8 +988,8 @@ Use the following procedures to verify that the PoC environment is configured pr
     Get-Service DNS,RemoteAccess
     Get-DnsServerForwarder
     Resolve-DnsName -Server dc1.contoso.com -Name www.microsoft.com
-    ipconfig /all
-    netsh int ipv4 show address
+    ipconfig.exe /all
+    netsh.exe int ipv4 show address
     ```
 
     **Get-Service** displays a status of "Running" for both services.
@@ -1004,23 +1004,23 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 3. On PC1, open an elevated Windows PowerShell prompt and type the following commands:
 
-    ```powershell
-    whoami
-    hostname
-    nslookup www.microsoft.com
-    ping -n 1 dc1.contoso.com
-    tracert www.microsoft.com
+    ```cmd
+    whoami.exe
+    hostname.exe
+    nslookup.exe www.microsoft.com
+    ping.exe -n 1 dc1.contoso.com
+    tracert.exe www.microsoft.com
     ```
 
-    **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.
+    **whoami.exe** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.
 
-    **hostname** displays the name of the local computer, for example W7PC-001.
+    **hostname.exe** displays the name of the local computer, for example W7PC-001.
 
-    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.
+    **nslookup.exe** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.
 
-    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it can't be resolved, "couldn't find host" will be displayed. If the target is found and also responds to ICMP, you'll see "Reply from" and the IP address of the target.
+    **ping.exe** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it can't be resolved, "couldn't find host" will be displayed. If the target is found and also responds to ICMP, you'll see "Reply from" and the IP address of the target.
 
-    **tracert** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
+    **tracert.exe** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
 ## Appendix B: Terminology used in this guide
 

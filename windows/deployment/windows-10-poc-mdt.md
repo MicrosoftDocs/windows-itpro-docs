@@ -153,7 +153,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 20. Replace the default rules with the following text:
 
-    ```text
+    ```ini
     [Settings]
     Priority=Default
 
@@ -188,7 +188,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 21. Select **Apply** and then select **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
 
-    ```text
+    ```ini
     [Settings]
     Priority=Default
 
@@ -297,7 +297,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 3. Select the **Rules** tab and replace the rules with the following text (don't select OK yet):
 
-    ```text
+    ```ini
     [Settings]
     Priority=Default
     
@@ -341,13 +341,13 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
     If desired, edit the following line to include or exclude other users when migrating settings. Currently, the command is set to user exclude (`ue`) all users except for CONTOSO users specified by the user include option (ui):
 
-    ```console
+    ```cmd
     ScanStateArgs=/ue:*\* /ui:CONTOSO\*
     ```
 
     For example, to migrate **all** users on the computer, replace this line with the following line:
 
-    ```console
+    ```cmd
     ScanStateArgs=/all
     ```
 
@@ -355,7 +355,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 4. Select **Edit Bootstap.ini** and replace text in the file with the following text:
 
-    ```text
+    ```ini
     [Settings]
     Priority=Default
     
@@ -391,9 +391,9 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 1. Initialize Windows Deployment Services (WDS) by typing the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```powershell
-    WDSUTIL /Verbose /Progress /Initialize-Server /Server:SRV1 /RemInst:"C:\RemoteInstall"
-    WDSUTIL /Set-Server /AnswerClients:All
+    ```cmd
+    WDSUTIL.exe /Verbose /Progress /Initialize-Server /Server:SRV1 /RemInst:"C:\RemoteInstall"
+    WDSUTIL.exe /Set-Server /AnswerClients:All
     ```
 
 2. Select **Start**, type **Windows Deployment**, and then select **Windows Deployment Services**.
@@ -474,8 +474,8 @@ This section will demonstrate how to export user data from an existing client co
 
 4. Open an elevated command prompt on PC1 and type the following command:
 
-    ```console
-    cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
+    ```cmd
+    cscript.exe \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
     > [!NOTE]
@@ -546,8 +546,8 @@ At a high level, the computer replace process consists of:<BR>
 
 1. If you aren't already signed on to PC1 as **contoso\administrator**, sign in using this account. To verify the currently signed in account, type the following command at an elevated command prompt:
 
-    ```console
-    whoami
+    ```cmd
+    whoami.exe
     ```
 2. To ensure a clean environment before running the backup task sequence, type the following commands at an elevated Windows PowerShell prompt on PC1:
 
@@ -558,8 +558,8 @@ At a high level, the computer replace process consists of:<BR>
     ```
 3. Sign in to PC1 using the contoso\administrator account, and then type the following command at an elevated command prompt:
 
-    ```console
-    cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
+    ```cmd
+    cscript.exe \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
 4. Complete the deployment wizard using the following settings:
@@ -570,8 +570,8 @@ At a high level, the computer replace process consists of:<BR>
 6. On PC1, verify that **The user state capture was completed successfully** is displayed, and select **Finish** when the capture is complete.
 7. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
 
-    ```powershell
-    PS C:\> dir C:\MigData\PC1\USMT
+    ```cmd
+    dir C:\MigData\PC1\USMT
 
         Directory: C:\MigData\PC1\USMT
 

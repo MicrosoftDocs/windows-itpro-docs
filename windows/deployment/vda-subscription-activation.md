@@ -64,7 +64,7 @@ For examples of activation issues, see [Troubleshoot the user experience](./depl
 2. (Optional) To disable network level authentication, type the following command at an elevated command prompt:
 
     ```cmd
-    REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
+    REG.exe ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
     ```
 
 3. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
@@ -117,7 +117,7 @@ For Azure AD-joined VMs, follow the same instructions as for [Active Directory-j
 1. (Optional) To disable network level authentication, type the following command at an elevated command prompt:
 
     ```cmd
-    REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
+    REG.exe ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
     ```
 
 2. At an elevated command prompt, type `sysdm.cpl` and press ENTER.

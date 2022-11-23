@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: highpri
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.date: 10/31/2022
+  - Windows 10
+  - Windows 11
+ms.date: 11/23/2022
 ---
 
 # Deploy Windows Enterprise licenses
@@ -252,7 +252,7 @@ Use the following procedures to review whether a particular device meets these r
 
 To determine if the computer has a firmware-embedded activation key, enter the following command at an elevated Windows PowerShell prompt:
 
-```PowerShell
+```powershell
 (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
 ```
 

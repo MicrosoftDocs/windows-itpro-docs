@@ -79,13 +79,13 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 4. Type the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server:
 
-    ```powershell
+    ```cmd
     D:\setup.exe /q /ACTION=Install /ERRORREPORTING="False" /FEATURES=SQLENGINE,RS,IS,SSMS,TOOLS,ADV_SSMS,CONN /INSTANCENAME=MSSQLSERVER /INSTANCEDIR="C:\Program Files\Microsoft SQL Server" /SQLSVCACCOUNT="NT AUTHORITY\System" /SQLSYSADMINACCOUNTS="BUILTIN\ADMINISTRATORS" /SQLSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\SYSTEM" /AGTSVCSTARTUPTYPE=Automatic /RSSVCACCOUNT="NT AUTHORITY\System" /RSSVCSTARTUPTYPE=Automatic /ISSVCACCOUNT="NT AUTHORITY\System" /ISSVCSTARTUPTYPE=Disabled /ASCOLLATION="Latin1_General_CI_AS" /SQLCOLLATION="SQL_Latin1_General_CP1_CI_AS" /TCPENABLED="1" /NPENABLED="1" /IAcceptSQLServerLicenseTerms
     ```
 
     Installation will take several minutes. When installation is complete, the following output will be displayed:
 
-    ```dos
+    ```console
     Microsoft (R) SQL Server 2014 12.00.5000.00
     Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -99,7 +99,6 @@ The procedures in this guide are summarized in the following table. An estimate 
     Success
     One or more affected files have operations pending.
     You should restart your computer to complete this process.
-    PS C:\>
     ```
 
 5. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
@@ -130,7 +129,7 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 1. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
 
-    ```dos
+    ```powershell
     Get-Service Winmgmt
 
     Status   Name               DisplayName
@@ -159,13 +158,13 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 1. To extend the Active Directory schema, type the following command at an elevated Windows PowerShell prompt:
 
-    ```powershell
-    cmd /c C:\configmgr\SMSSETUP\BIN\X64\extadsch.exe
+    ```cmd
+    C:\configmgr\SMSSETUP\BIN\X64\extadsch.exe
     ```
 
 1. Temporarily switch to the DC1 VM, and type the following command at an elevated command prompt on DC1:
 
-    ```dos
+    ```cmd
     adsiedit.msc
     ```
 
@@ -182,8 +181,8 @@ The procedures in this guide are summarized in the following table. An estimate 
 1. Close the ADSI Edit console and switch back to SRV1.
 1. To start Configuration Manager installation, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```powershell
-    cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
+    ```cmd
+    C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
 
 1. Provide the following information in the Configuration Manager Setup Wizard:
@@ -229,8 +228,8 @@ The procedures in this guide are summarized in the following table. An estimate 
 
 3. Type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```powershell
-    cmd /c "D:\DaRT\DaRT 10\Installers\en-us\x64\MSDaRT100.msi"
+    ```cmd
+    D:\DaRT\DaRT 10\Installers\en-us\x64\MSDaRT100.msi
     ```
 
 4. Install DaRT 10 using default settings.
@@ -307,8 +306,8 @@ This section contains several procedures to support Zero Touch installation with
 > [!IMPORTANT]
 > Before enabling PXE in Configuration Manager, ensure that any previous installation of WDS does not cause conflicts. Configuration Manager will automatically configure the WDS service to manage PXE requests. To disable a previous installation, if it exists, type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
-```powershell
-WDSUTIL /Set-Server /AnswerClients:None
+```cmd
+WDSUTIL.exe /Set-Server /AnswerClients:None
 ```
 
 1. Determine the MAC address of the internal network adapter on SRV1. Type the following command at an elevated Windows PowerShell prompt on SRV1:
@@ -336,8 +335,8 @@ WDSUTIL /Set-Server /AnswerClients:None
 5. Select **OK**.
 6. Wait for a minute, then type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
 
-    ```powershell
-    cmd /c dir /b C:\RemoteInstall\SMSBoot\x64
+    ```cmd
+    dir /b C:\RemoteInstall\SMSBoot\x64
 
     abortpxe.com
     bootmgfw.efi
@@ -353,8 +352,8 @@ WDSUTIL /Set-Server /AnswerClients:None
     >
     > You can also type the following command at an elevated Windows PowerShell prompt to open the CMTrace. In the tool, select **File**, select **Open**, and then open the **distmgr.log** file. If errors are present, they will be highlighted in red:
     >
-    > ```powershell
-    > Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
+    > ```cmd
+    > "C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe"
     > ```
     >
     > The log file is updated continuously while Configuration Manager is running. Wait for Configuration Manager to repair any issues that are present, and periodically recheck that the files are present in the REMINST share location. Close CMTrace when done. You'll see the following line in distmgr.log that indicates the REMINST share is being populated with necessary files:
@@ -404,8 +403,8 @@ WDSUTIL /Set-Server /AnswerClients:None
 13. Select the **Deploy this boot image from the PXE-enabled distribution point** checkbox, and select **OK**.
 14. Review the distmgr.log file again for "**STATMSG: ID=2301**" and verify that there are three folders under **C:\RemoteInstall\SMSImages** with boot images. See the following example:
 
-    ```console
-    cmd /c dir /s /b C:\RemoteInstall\SMSImages
+    ```cmd
+    dir /s /b C:\RemoteInstall\SMSImages
 
     C:\RemoteInstall\SMSImages\PS100004
     C:\RemoteInstall\SMSImages\PS100005
@@ -706,8 +705,8 @@ If you've already completed steps in [Deploy Windows 10 in a test lab using Micr
 
 5. Type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```powershell
-    notepad "C:\Sources\OSD\Settings\Windows 10 x64 Settings\CustomSettings.ini"
+    ```cmd
+    notepad.exe "C:\Sources\OSD\Settings\Windows 10 x64 Settings\CustomSettings.ini"
     ```
 
 6. Replace the contents of the file with the following text, and then save the file:
@@ -878,8 +877,8 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     > [!Note]
     > This command requires an elevated _command prompt_, not an elevated Windows PowerShell prompt.
 
-    ```dos
-    sc stop ccmsetup
+    ```cmd
+    sc.exe stop ccmsetup
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
     ```
 
@@ -888,24 +887,24 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 1. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue. From an elevated command prompt, type:
 
-    ```dos
-    net stop wuauserv
-    net stop BITS
+    ```cmd
+    net.exe stop wuauserv
+    net.exe stop BITS
     ```
 
     Verify that both services were stopped successfully, then type the following command at an elevated command prompt:
 
-    ```dos
+    ```cmd
     del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-    net start BITS
-    bitsadmin /list /allusers
+    net.exe start BITS
+    bitsadmin.exe /list /allusers
     ```
 
     Verify that BITSAdmin displays zero jobs.
 
 1. To install the Configuration Manager client as a standalone process, type the following command at an elevated command prompt:
 
-    ```dos
+    ```cmd
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /mp:SRV1.contoso.com /logon SMSSITECODE=PS1
     ```
 
@@ -920,8 +919,8 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 1. On PC1, open the Configuration Manager control panel applet by typing the following command from a command prompt:
 
-    ```dos
-    control smscfgrc
+    ```cmd
+    control.exe smscfgrc
     ```
 
 1. Select the **Site** tab, select **Configure Settings**, and select **Find Site**. The client will report that it has found the PS1 site. See the following example:
@@ -1032,15 +1031,15 @@ In the Configuration Manager console, in the **Software Library** workspace, und
 
 1. On PC1, open the Configuration Manager control panel applet by typing the following command in a command prompt:
 
-    ```dos
-    control smscfgrc
+    ```cmd
+    control.exe smscfgrc
     ```
 
 2. On the **Actions** tab, select **Machine Policy Retrieval & Evaluation Cycle**, select **Run Now**, select **OK**, and then select **OK** again. This method is one that you can use to run a task sequence in addition to the Client Notification method that will be demonstrated in the computer refresh procedure.
 
 3. Type the following command at an elevated command prompt to open the Software Center:
 
-    ```dos
+    ```cmd
     C:\Windows\CCM\SCClient.exe
     ```
 
