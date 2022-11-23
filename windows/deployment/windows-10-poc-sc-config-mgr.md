@@ -276,7 +276,7 @@ This section contains several procedures to support Zero Touch installation with
 
 ### Configure the network access account
 
-1. In the Administration workspace, expand **Site Configuration** and select **Sites**.
+1. in the **Administration** workspace, expand **Site Configuration** and select **Sites**.
 2. On the **Home** ribbon at the top of the console window, select **Configure Site Components** and then select **Software Distribution**.
 3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
 4. Select the yellow starburst and then select **New Account**.
@@ -285,17 +285,17 @@ This section contains several procedures to support Zero Touch installation with
 
 ### Configure a boundary group
 
-1. In the Administration workspace, expand **Hierarchy Configuration**, right-click **Boundaries** and then select **Create Boundary**.
+1. in the **Administration** workspace, expand **Hierarchy Configuration**, right-click **Boundaries** and then select **Create Boundary**.
 2. Next to **Description**, type **PS1**, next to **Type** choose **Active Directory Site**, and then select **Browse**.
 3. Choose **Default-First-Site-Name** and then select **OK** twice.
-4. In the Administration workspace, right-click **Boundary Groups** and then select **Create Boundary Group**.
+4. in the **Administration** workspace, right-click **Boundary Groups** and then select **Create Boundary Group**.
 5. Next to **Name**, type **PS1 Site Assignment and Content Location**, select **Add**, select the **Default-First-Site-Name** boundary and then select **OK**.
 6. On the **References** tab in the **Create Boundary Group** window, select the **Use this boundary group for site assignment** checkbox.
 7. Select **Add**, select the **\\\SRV1.contoso.com** checkbox, and then select **OK** twice.
 
 ### Add the state migration point role
 
-1. In the Administration workspace, expand **Site Configuration**, select **Sites**, and then in on the **Home** ribbon at the top of the console select **Add Site System Roles**.
+1. in the **Administration** workspace, expand **Site Configuration**, select **Sites**, and then in on the **Home** ribbon at the top of the console select **Add Site System Roles**.
 2. In the Add site System Roles Wizard, select **Next** twice and then on the Specify roles for this server page, select the **State migration point** checkbox.
 3. Select **Next**, select the yellow starburst, type **C:\MigData** for the **Storage folder**, and select **OK**.
 4. Select **Next**, and then verify under **Boundary groups** that **PS1 Site Assignment and Content Location** is displayed.
@@ -861,7 +861,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
-1. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarchy Configuration** and select on **Discovery Methods**.
+1. On SRV1, in the Configuration Manager console, in the **Administration** workspace, expand **Hierarchy Configuration** and select on **Discovery Methods**.
 1. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
 1. Select the yellow starburst, select **Browse**, select **contoso\Computers**, and then select **OK** three times.
 1. When a popup dialog box asks if you want to run full discovery, select **Yes**.
