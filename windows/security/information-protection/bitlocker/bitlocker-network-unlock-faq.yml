@@ -2,7 +2,8 @@
 metadata:
   title: BitLocker Network Unlock FAQ (Windows 10)
   description: Familiarize yourself with BitLocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
-  ms.prod: m365-security
+  ms.prod: windows-client
+  ms.technology: itpro-security
   ms.mktglfcycl: explore
   ms.sitesec: library
   ms.pagetype: security
