@@ -1,7 +1,7 @@
 ---
 title: Local Accounts
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
-ms.date: 22/11/2022
+ms.date: 11/22/2022
 ms.collection: 
   - highpri
 ms.topic: article
@@ -222,7 +222,7 @@ Each of these approaches is described in the following sections.
 
 ### <a href="" id="sec-enforce-account-restrictions"></a>Enforce local account restrictions for remote access
 
-The User Account Control (UAC) is a security feature in Windows that has been in use in Windows Server 2008 and in Windows Vista, and the operating systems to which the **Applies To** list refers. UAC enables you to stay in control of your computer by informing you when a program makes a change that requires administrator-level permission. UAC works by adjusting the permission level of your user account. By default, UAC is set to notify you when applications try to make changes to your computer, but you can change how often UAC notifies you.
+User Account Control (UAC) is a security feature that informs you when a program makes a change that requires administrative permissions. UAC works by adjusting the permission level of your user account. By default, UAC is set to notify you when applications try to make changes to your computer, but you can change when UAC notifies you.
 
 UAC makes it possible for an account with administrative rights to be treated as a standard user non-administrator account until full rights, also called elevation, is requested and approved. For example, UAC lets an administrator enter credentials during a non-administrator's user session to perform occasional administrative tasks without having to switch users, sign out, or use the **Run as** command.
 
@@ -254,78 +254,55 @@ The following table shows the Group Policy and registry settings that are used t
  
 #### To enforce local account restrictions for remote access
 
-1.  Start the **Group Policy Management** Console (GPMC).
+1. Start the **Group Policy Management** Console (GPMC)
+1. In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects** where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO)
+1. In the console tree, right-click **Group Policy Objects > New**
+  :::image type="content" source="images/localaccounts-proc1-sample1.png" alt-text="local accounts":::
+1. In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and &gt; **OK** where *gpo\_name* is the name of the new GPO. The GPO name indicates that the GPO is used to restrict local administrator rights from being carried over to another computer
+  :::image type="content" source="images/localaccounts-proc1-sample2.png" alt-text="local accounts":::
+1. In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**
+  :::image type="content" source="images/localaccounts-proc1-sample3.png" alt-text="local accounts":::
+1. Ensure that UAC is enabled and that UAC restrictions apply to the default Administrator account by following these steps:
 
-2.  In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects** where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO).
+  - Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\, and &gt; **Security Options**
+  - Double-click **User Account Control: Run all administrators in Admin Approval Mode** &gt; **Enabled** &gt; **OK**
+  - Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**
 
-3.  In the console tree, right-click **Group Policy Objects**, and &gt; **New**.
+1. Ensure that the local account restrictions are applied to network interfaces by following these steps:
 
-  ![local accounts 1.](images/localaccounts-proc1-sample1.png)
+  - Navigate to *Computer Configuration\Preferences and Windows Settings*, and > **Registry**
+  - Right-click **Registry**, and &gt; **New** &gt; **Registry Item**
 
-4.  In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and &gt; **OK** where *gpo\_name* is the name of the new GPO. The GPO name indicates that the GPO is used to restrict local administrator rights from being carried over to another computer.
+  :::image type="content" source="images/localaccounts-proc1-sample4.png" alt-text="local accounts":::
 
-  ![local accounts 2.](images/localaccounts-proc1-sample2.png)
+  - In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**
+  - Ensure that the **Hive** box is set to **HKEY_LOCAL_MACHINE**
+  - Select (**…**), browse to the following location for **Key Path** &gt; **Select** for: `SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
+  - In the **Value name** area, type `LocalAccountTokenFilterPolicy`
+  - In the **Value type** box, from the drop-down list, select **REG_DWORD** to change the value
+  - In the **Value data** box, ensure that the value is set to **0**
+  - Verify this configuration, and &gt; **OK**
 
-5.  In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**.
+  :::image type="content" source="images/localaccounts-proc1-sample5.png" alt-text="local accounts":::
 
-  ![local accounts 3.](images/localaccounts-proc1-sample3.png)
+1. Link the GPO to the first **Workstations** organizational unit (OU) by doing the following:
 
-6.  Ensure that UAC is enabled and that UAC restrictions apply to the default Administrator account by following these steps:
+  - Navigate to the `*Forest*\<Domains>\*Domain*\*OU*` path
+  - Right-click the **Workstations > Link an existing GPO**
 
-  1.  Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\, and &gt; **Security Options**.
+  :::image type="content" source="images/localaccounts-proc1-sample6.png" alt-text="local accounts":::
 
-  2.  Double-click **User Account Control: Run all administrators in Admin Approval Mode** &gt; **Enabled** &gt; **OK**.
+  - Select the GPO that you created, and &gt; **OK**
 
-  3.  Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**.
-
-7.  Ensure that the local account restrictions are applied to network interfaces by following these steps:
-
-  1.  Navigate to Computer Configuration\\Preferences and Windows Settings, and &gt; **Registry**.
-
-  2.  Right-click **Registry**, and &gt; **New** &gt; **Registry Item**.
-
-    ![local accounts 4.](images/localaccounts-proc1-sample4.png)
-
-  3.  In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**.
-
-  4.  Ensure that the **Hive** box is set to **HKEY\_LOCAL\_MACHINE**.
-
-  5.  Select (**…**), browse to the following location for **Key Path** &gt; **Select** for: **SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System**.
-
-  6.  In the **Value name** area, type **LocalAccountTokenFilterPolicy**.
-
-  7.  In the **Value type** box, from the drop-down list, select **REG\_DWORD** to change the value.
-
-  8.  In the **Value data** box, ensure that the value is set to **0**.
-
-  9.  Verify this configuration, and &gt; **OK**.
-
-    ![local accounts 5.](images/localaccounts-proc1-sample5.png)
-
-8.  Link the GPO to the first **Workstations** organizational unit (OU) by doing the following:
-
-  1.  Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path.
-
-  2.  Right-click the **Workstations** OU, and &gt; **Link an existing GPO**.
-
-    ![local accounts 6.](images/localaccounts-proc1-sample6.png)
-
-  3.  Select the GPO that you created, and &gt; **OK**.
-
-9.  Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy.
-
-10. Create links to all other OUs that contain workstations.
-
-11. Create links to all other OUs that contain servers.
-
+1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy
+1. Create links to all other OUs that contain workstations
+1. Create links to all other OUs that contain servers
 ### <a href="" id="sec-deny-network-logon"></a>Deny network logon to all local Administrator accounts
 
 Denying local accounts the ability to perform network logons can help prevent a local account password hash from being reused in a malicious attack. This procedure helps to prevent lateral movement by ensuring that stolen credentials for local accounts from a compromised operating system can't be used to compromise other computers that use the same credentials.
 
 > [!NOTE]
 > To perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
-
- 
 
 The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
 
@@ -341,12 +318,16 @@ The following table shows the Group Policy settings that are used to deny networ
 #### To deny network logon to all local administrator accounts
 
 1. Start the **Group Policy Management** Console (GPMC)
-1. In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects**, where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO).
-1. In the console tree, right-click **Group Policy Objects**, and &gt; **New**.
+1. In the console tree, expand &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;, and then **Group Policy Objects**, where *forest* is the name of the forest, and *domain* is the name of the domain where you want to set the Group Policy Object (GPO)
+1. In the console tree, right-click **Group Policy Objects**, and &gt; **New**
 1. In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and then &gt; **OK** where *gpo\_name* is the name of the new GPO indicates that it's being used to restrict the local administrative accounts from interactively signing in to the computer
+
   ![local accounts 7.](images/localaccounts-proc2-sample1.png)
+
 1. In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**
+
   ![local accounts 8.](images/localaccounts-proc2-sample2.png)
+
 1. Configure the user rights to deny network logons for administrative local accounts as follows:
 1. Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\, and &gt; **User Rights Assignment**
 1. Double-click **Deny access to this computer from the network**
@@ -356,15 +337,17 @@ The following table shows the Group Policy settings that are used to deny networ
 1. Double-click **Deny log on through Remote Desktop Services**
 1. Select **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**
 1. Link the GPO to the first **Workstations** OU as follows:
+
   - Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path
   - Right-click the **Workstations** OU, and &gt; **Link an existing GPO**
   - Select the GPO that you created, and &gt; **OK**
-1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy.
-1. Create links to all other OUs that contain workstations.
-1. Create links to all other OUs that contain servers.
 
-  > [!NOTE]
-  > You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
+1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy
+1. Create links to all other OUs that contain workstations
+1. Create links to all other OUs that contain servers
+
+> [!NOTE]
+> You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
 
 ### Create unique passwords for local accounts with administrative rights
 
