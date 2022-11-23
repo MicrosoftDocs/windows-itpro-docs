@@ -62,7 +62,10 @@ All four of the roles specified above can be hosted on the same computer or each
     dism.exe /mount-image /imagefile:c:\winpe_amd64\media\sources\boot.wim /index:1 /mountdir:C:\winpe_amd64\mount
     ```
 
-    Verify that "The operation completed successfully" is displayed. Note: To view currently mounted images, type **dism /get-MountedWiminfo**.
+    Verify that the message **The operation completed successfully** is displayed.
+    
+    > [!NOTE]
+    > To view currently mounted images, enter **`dism.exe /get-MountedWiminfo`**.
 
 5. Map a network share to the root TFTP directory on the PXE/TFTP server and create a \Boot folder. Consult your TFTP server documentation to determine the root TFTP server directory, then enable sharing for this directory, and verify it can be accessed on the network. In the following example, the PXE server name is PXE-1 and the TFTP root directory is shared using a network path of **\\\PXE-1\TFTPRoot**:
 

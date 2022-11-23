@@ -40,10 +40,10 @@ On a machine where your image file is accessible:
 
 1. Open Windows PowerShell with administrator privileges.
 
-2. Mount the image. At the Windows PowerShell prompt, type:
+2. Mount the image. At the Windows PowerShell prompt, enter:
 `Mount-WindowsImage -ImagePath c:\images\myimage.wim -Index 1 -Path C:\test`
 
-3. Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option to specify the location of the Store package and /LicensePath to specify the location of the license .xml file. In Windows PowerShell, type:
+3. Use the Add-AppxProvisionedPackage cmdlet in Windows PowerShell to preinstall the app. Use the /PackagePath option to specify the location of the Store package and /LicensePath to specify the location of the license .xml file. In Windows PowerShell, enter:
 `Add-AppxProvisionedPackage -Path C:\test -PackagePath C:\downloads\appxpackage -LicensePath C:\downloads\appxpackage\license.xml`
 
 > [!NOTE]
@@ -69,10 +69,10 @@ On a test machine:
 
 Now, on the machine where your image file is accessible:
 
-1. Import the Start layout. At the Windows PowerShell prompt, type:
+1. Import the Start layout. At the Windows PowerShell prompt, enter:
 `Import-StartLayout -LayoutPath "<path><file name>.xml" -MountPath "C:\test\"`
 
-2. Save changes and dismount the image. At the Windows PowerShell prompt, type:
+2. Save changes and dismount the image. At the Windows PowerShell prompt, enter:
 `Dismount-WindowsImage -Path c:\test -Save`
 
 > [!NOTE]

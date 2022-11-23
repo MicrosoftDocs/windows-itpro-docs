@@ -62,7 +62,7 @@ In this step we're creating the operating system image that will be used on the 
 3. Verify that the `.wim` file location (which can be a network share, a DVD, or a USB drive) is accessible and that it contains a valid Windows 10 Enterprise or Windows 10 Education image that has been generalized using sysprep. Many environments can use the same image for both Windows To Go and desktop deployments.
 
     > [!NOTE]
-    > For more information about .wim files, see [Windows System Image Manager (Windows SIM) Technical Reference](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824929(v=win.10)). For more information about using sysprep, see [Sysprep Overview](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825209(v=win.10)).
+    > For more information about `.wim` files, see [Windows System Image Manager (Windows SIM) Technical Reference](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824929(v=win.10)). For more information about using sysprep, see [Sysprep Overview](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825209(v=win.10)).
 
 4. Search for **Windows To Go** and then press **Enter**. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**. The **Windows To Go Creator Wizard** opens.
 
@@ -139,8 +139,8 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 3. Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) command-line tool (DISM):
 
-    >[!TIP]
-    >The index number must be set correctly to a valid Enterprise image in the `.WIM` file.
+    > [!TIP]
+    > The index number must be set correctly to a valid Enterprise image in the `.wim` file.
 
     ```cmd
     #The WIM file must contain a sysprep generalized image.
@@ -231,8 +231,8 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
     After the answer file has been saved, copy `unattend.xml` into the sysprep folder on the Windows To Go drive (for example, `W:\Windows\System32\sysprep\`)
 
-    >[!IMPORTANT]
-    >Setup unattend files are processed based on their location. Setup will place a temporary unattend file into the **`%systemroot%\panther`** folder which is the first location that setup will check for installation information. You should make sure that folder does not contain a previous version of an unattend.xml file to ensure that the one you just created is used.
+    > [!IMPORTANT]
+    > Setup unattend files are processed based on their location. Setup will place a temporary unattend file into the **`%systemroot%\panther`** folder which is the first location that setup will check for installation information. You should make sure that folder does not contain a previous version of an unattend.xml file to ensure that the one you just created is used.
 
     If you don't wish to boot your Windows To Go device on this computer and want to remove it to boot it on another PC, be sure to use the **Safely Remove Hardware and Eject Media** option to safely disconnect the drive before physically removing it from the PC.
 
@@ -242,8 +242,8 @@ Your Windows To Go workspace is now ready to be started. You can now [prepare a 
 
 Computers running Windows 8 and later can be configured as host computers that use Windows To Go automatically whenever a Windows To Go workspace is available at startup. When the Windows To Go startup options are enabled on a host computer, Windows will divert startup to the Windows To Go drive whenever it's attached to the computer. This makes it easy to switch from using the host computer to using the Windows To Go workspace.
 
->[!TIP]
->If you will be using a PC running Windows 7 as your host computer, see [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951) for information to help you prepare the host computer.
+> [!TIP]
+> If you will be using a PC running Windows 7 as your host computer, see [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951) for information to help you prepare the host computer.
 
 If you want to use the Windows To Go workspace, shut down the computer, plug in the Windows To Go drive, and turn on the computer. To use the host computer, shut down the Windows To Go workspace, unplug the Windows To Go drive, and turn on the computer.
 
@@ -277,7 +277,7 @@ After you've configured your host PC to boot from USB, you can use the following
 
 2. Insert the Windows To Go USB drive directly into a USB 3.0 or USB 2.0 port on the PC. Don't use a USB hub or extender.
 
-3. Turn on the PC. If your Windows To Go drive is protected with BitLocker you'll be asked to type the password, otherwise the workspace will boot directly into the Windows To Go workspace.
+3. Turn on the PC. If your Windows To Go drive is protected with BitLocker you'll be asked to enter the password, otherwise the workspace will boot directly into the Windows To Go workspace.
 
 ## Advanced deployment steps
 
@@ -362,7 +362,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
     ```
 
     > [!TIP]
-    > The index number must be set correctly to a valid Enterprise image in the `.WIM` file.
+    > The index number must be set correctly to a valid Enterprise image in the `.wim` file.
 
 6. After those commands have completed, run the following command:
 
@@ -521,8 +521,8 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
    Next you need to apply the operating system image that you want to use with Windows To Go to the operating system partition you created on the disk (this may take 30 minutes or longer, depending on the size of the image and the speed of your USB connection). The following command shows how this can be accomplished using the [Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) command-line tool (DISM):
 
-   >[!TIP]
-   >The index number must be set correctly to a valid Enterprise image in the .WIM file.
+   > [!TIP]
+   > The index number must be set correctly to a valid Enterprise image in the `.wim` file.
 
    ```cmd
    #The WIM file must contain a sysprep generalized image.
@@ -617,7 +617,7 @@ The sample script creates an unattend file that streamlines the deployment proce
     The RemoteSigned execution policy will prevent unsigned scripts from the internet from running on the computer, but will allow locally created scripts to run. For more information on execution policies, see [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 
    > [!TIP]
-   > To get online help for any Windows PowerShell cmdlet, whether or not it is installed locally type the following cmdlet, replacing &lt;cmdlet-name&gt; with the name of the cmdlet you want to see the help for:
+   > To get online help for any Windows PowerShell cmdlet, whether or not it is installed locally, enter the following cmdlet, replacing `<cmdlet-name>` with the name of the cmdlet you want to see the help for:
    >
    > `Get-Help <cmdlet-name> -Online`
    >
