@@ -14,9 +14,7 @@ msreviewer: hathind
 
 # Fix issues found by the Readiness assessment tool
 
-Seeing issues with your tenant? This article details how to remediate issues found with your tenant. 
-
-If you need more assistance with tenant enrollment, you can submit a [tenant enrollment support request](#submit-a-support-request).
+Seeing issues with your tenant? This article details how to remediate issues found with your tenant.
 
 ## Check results
 
