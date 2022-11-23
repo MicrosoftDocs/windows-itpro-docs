@@ -337,14 +337,16 @@
       href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
     - name: Technical support policy for lost or forgotten passwords
       href: identity-protection/password-support-policy.md
-    - name: Access Control Overview
-      href: identity-protection/access-control/access-control.md
+    - name: Access Control
       items:
+        - name: Overview
+          href: identity-protection/access-control/access-control.md
         - name: Local Accounts
           href: identity-protection/access-control/local-accounts.md
-    - name: User Account Control
-      href: identity-protection/user-account-control/user-account-control-overview.md
+    - name: User Account Control (UAC)
       items:
+        - name: Overview
+          href: identity-protection/user-account-control/user-account-control-overview.md
         - name: How User Account Control works
           href: identity-protection/user-account-control/how-user-account-control-works.md
         - name: User Account Control security policy settings

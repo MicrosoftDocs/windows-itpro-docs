@@ -195,7 +195,7 @@ You can use Local Users and Groups to assign rights and permissions on only the 
 You can't use Local Users and Groups on a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that aren't domain controllers on the network.
 
 > [!NOTE]
-> You use Active Directory Users and Computers to manage users and groups in Active Directory.
+> You use Active Directory Users and Computers to manage users and groups in Active Directory.
 
 You can also manage local users by using NET.EXE USER and manage local groups by using NET.EXE LOCALGROUP, or by using various PowerShell cmdlets and other scripting technologies.
 

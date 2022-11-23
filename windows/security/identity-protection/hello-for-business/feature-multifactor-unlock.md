@@ -1,37 +1,23 @@
 ---
 title: Multi-factor Unlock
 description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals.
-ms.prod: windows-client
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 03/20/2018
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: prsriva
-manager: aaroncz
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Multi-factor Unlock
 
-**Requirements:**
-* Windows Hello for Business deployment (Cloud, Hybrid or On-premises)
-* Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
-* Windows 10, version 1709 or newer, or Windows 11
-* Bluetooth, Bluetooth capable phone - optional
+Windows Hello for Business supports the use of a single credential (PIN and biometrics) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
-
-Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals. Administrators can configure their Windows to request a combination of factors and trusted signals to unlock their devices.
+Windows Hello for Business can be configured with multi-factor device unlock, by extending Windows Hello with trusted signals. Administrators can configure devices to request a combination of factors and trusted signals to unlock theim.
 
 Which organizations can take advantage of Multi-factor unlock? Those who:
-* Have expressed that PINs alone do not meet their security needs.
-* Want to prevent Information Workers from sharing credentials.
-* Want their organizations to comply with regulatory two-factor authentication policy.
-* Want to retain the familiar Windows sign-in user experience and not settle for a custom solution.
+
+- Have expressed that PINs alone do not meet their security needs
+- Want to prevent Information Workers from sharing credentials
+- Want their organizations to comply with regulatory two-factor authentication policy
+- Want to retain the familiar Windows sign-in user experience and not settle for a custom solution
  
 You enable multi-factor unlock using Group Policy.  The **Configure device unlock factors** policy setting is located under **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.
 
