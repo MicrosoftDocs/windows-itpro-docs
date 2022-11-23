@@ -18,9 +18,8 @@ metadata:
   ms.topic: faq
   localizationpriority: medium
   ms.date: 11/11/2022
-  appliesto:
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+  appliesto: 
+    - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
 summary: |
@@ -211,7 +210,7 @@ sections:
 
       - question: I have extended Active Directory to Azure Active Directory. Can I use the on-premises deployment model?
         answer: |
-          No. If your organization is federated or using online services, such as Azure AD Connect, Office 365, or OneDrive, then you must use a hybrid deployment model. On-premises deployments are exclusive to organizations who need more time before moving to the cloud and exclusively use Active Directory.
+          No. If your organization is using Microsoft cloud services, then you must use a hybrid deployment model. On-premises deployments are exclusive to organizations who need more time before moving to the cloud and exclusively use Active Directory.
 
       - question: Does Windows Hello for Business prevent the use of simple PINs?
         answer: |
