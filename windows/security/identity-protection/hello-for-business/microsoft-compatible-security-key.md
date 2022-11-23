@@ -1,16 +1,10 @@
 ---
 title: Microsoft-compatible security key
 description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 11/14/2018
-ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # What is a Microsoft-compatible security key?
 
