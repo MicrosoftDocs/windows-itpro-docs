@@ -8,7 +8,7 @@ author: frankroj
 ms.author: frankroj
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 ms.technology: itpro-deploy
 ---
 
@@ -48,7 +48,7 @@ The [MSIX Packaging Tool](/windows/application-management/msix-app-packaging-too
 
 ## Related links
 
-- [Consumer applications for S mode](/windows/s-mode)
-- [S mode devices](/windows/view-all-devices)
+- [Consumer applications for S mode](https://www.microsoft.com/windows/s-mode)
+- [S mode devices](https://www.microsoft.com/windows/view-all-devices)
 - [Windows Defender Application Control deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 - [Microsoft Defender for Endpoint](/microsoft-365/windows/microsoft-defender-atp)

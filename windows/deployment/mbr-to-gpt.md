@@ -4,7 +4,7 @@ description: Use MBR2GPT.EXE to convert a disk from the Master Boot Record (MBR)
 ms.prod: windows-client
 author: frankroj
 ms.author: frankroj
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article

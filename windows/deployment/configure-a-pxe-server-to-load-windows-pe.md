@@ -63,7 +63,7 @@ All four of the roles specified above can be hosted on the same computer or each
     ```
 
     Verify that the message **The operation completed successfully** is displayed.
-    
+
     > [!NOTE]
     > To view currently mounted images, enter **`dism.exe /get-MountedWiminfo`**.
 
@@ -93,7 +93,7 @@ All four of the roles specified above can be hosted on the same computer or each
     copy C:\winpe_amd64\media\sources\boot.wim y:\Boot
     ```
 
-9. (Optional) Copy true type fonts to the \boot folder
+9. (Optional) Copy TrueType fonts to the \boot folder
 
     ```cmd
     copy C:\winpe_amd64\media\Boot\Fonts y:\Boot\Fonts
@@ -178,8 +178,8 @@ ramdisksdidevice        boot
 ramdisksdipath          \Boot\boot.sdi
 ```
 
->[!TIP]
->If you start the PXE boot process, but receive the error **The boot configuration data for your PC is missing or contains error**, then verify that `\boot` directory is installed under the correct TFTP server root directory.  In the example used here the name of this directory is TFTPRoot, but your TFTP server might be different.
+> [!TIP]
+> If you start the PXE boot process, but receive the error **The boot configuration data for your PC is missing or contains error**, then verify that `\boot` directory is installed under the correct TFTP server root directory.  In the example used here the name of this directory is TFTPRoot, but your TFTP server might be different.
 
 ## PXE boot process summary
 
@@ -210,7 +210,7 @@ DHCP OPTIONS ARE NOT RECOMMENDED AND IN SOME SCENARIOS NOT SUPPORTED. SWITCHING 
    > [!NOTE]
    > The BCD store must reside in the `\boot` directory on the TFTP server and must be named BCD.
 
-6. `Bootmgr.exe` reads the BCD operating system entries and downloads `boot\boot.sdi` and the Windows PE image (`boot\boot.wim`). Optional files that can also be downloaded include true type fonts (`boot\Fonts\wgl4_boot.ttf`) and the hibernation state file (`\hiberfil.sys`) if these files are present.
+6. `Bootmgr.exe` reads the BCD operating system entries and downloads `boot\boot.sdi` and the Windows PE image (`boot\boot.wim`). Optional files that can also be downloaded include TrueType fonts (`boot\Fonts\wgl4_boot.ttf`) and the hibernation state file (`\hiberfil.sys`) if these files are present.
 
 7. `Bootmgr.exe` starts Windows PE by calling `winload.exe` within the Windows PE image.
 
