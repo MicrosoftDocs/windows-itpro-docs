@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: highpri
 appliesto: 
-  - Windows 10
-  - Windows 11
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ms.date: 11/23/2022
 ---
 

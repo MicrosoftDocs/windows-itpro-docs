@@ -6,7 +6,7 @@ ms.author: frankroj
 author: frankroj
 ms.prod: windows-client
 ms.topic: article
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 ms.technology: itpro-deploy
 ---
 
@@ -55,15 +55,15 @@ USMT is a backup and restore tool that allows you to migrate user state, data, a
 
 USMT includes several command-line tools, the most important of which are ScanState and LoadState:
 
--   **ScanState.exe.** This tool performs the user-state backup.
--   **LoadState.exe.** This tool performs the user-state restore.
--   **UsmtUtils.exe.** This tool supplements the functionality in ScanState.exe and LoadState.exe.
+- **ScanState.exe**: This tool performs the user-state backup.
+- **LoadState.exe**: This tool performs the user-state restore.
+- **UsmtUtils.exe**: This tool supplements the functionality in ScanState.exe and LoadState.exe.
 
 In addition to these tools, there are also XML templates that manage which data is migrated. You can customize the templates, or create new ones, to manage the backup process at a high level of detail. USMT uses the following terms for its templates:
 
--   **Migration templates.** The default templates in USMT.
--   **Custom templates.** Custom templates that you create.
--   **Config template.** An optional template called Config.xml which you can use to exclude or include components in a migration without modifying the other standard XML templates.
+- **Migration templates**: The default templates in USMT.
+- **Custom templates**: Custom templates that you create.
+- **Config template**: An optional template called Config.xml which you can use to exclude or include components in a migration without modifying the other standard XML templates.
 
 ![A sample USMT migration file that will exclude .MP3 files on all local drives and include the folder C:\\Data and all its files, including its subdirectories and their files..](images/mdt-11-fig06.png)
 
@@ -73,60 +73,21 @@ USMT supports capturing data and settings from Windows Vista and later, and rest
 
 By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows 10 deployments are MigUser.xml and MigApp.xml. These two default templates migrate the following data and settings:
 
--   Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
-- Specific file types.
-    <details>
-        <summary>USMT templates migrate the following file types:</summary>
+- Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
 
-     - `.accdb`
-     - `.ch3`
-     - `.csv`
-     - `.dif`
-     - `.doc*`
-     - `.dot*`
-     - `.dqy`
-     - `.iqy`
-     - `.mcw`
-     - `.mdb*`
-     - `.mpp`
-     - `.one*`
-     - `.oqy`
-     - `.or6`
-     - `.pot*`
-     - `.ppa`
-     - `.pps*`
-     - `.ppt*`
-     - `.pre`
-     - `.pst`
-     - `.pub`
-     - `.qdf`
-     - `.qel`
-     - `.qph`
-     - `.qsd`
-     - `.rqy`
-     - `.rtf`
-     - `.scd`
-     - `.sh3`
-     - `.slk`
-     - `.txt`
-     - `.vl*`
-     - `.vsd`
-     - `.wk*`
-     - `.wpd`
-     - `.wps`
-     - `.wq1`
-     - `.wri`
-     - `.xl*`
-     - `.xla`
-     - `.xlb`
-     - `.xls*`
-    </details>
+- The following specific file types:
+
+    `.accdb`, `.ch3`, `.csv`, `.dif`, `.doc*`, `.dot*`, `.dqy`, `.iqy`, `.mcw`, `.mdb*`, `.mpp`, `.one*`, `.oqy`, `.or6`, `.pot*`, `.ppa`, `.pps*`, `.ppt*`, `.pre`, `.pst`, `.pub`, `.qdf`, `.qel`, `.qph`, `.qsd`, `.rqy`, `.rtf`, `.scd`, `.sh3`, `.slk`, `.txt`, `.vl*`, `.vsd`, `.wk*`, `.wpd`, `.wps`, `.wq1`, `.wri`, `.xl*`, `.xla`, `.xlb`, `.xls*`
+
+    > [!NOTE]
+    > The asterisk (`*`) stands for zero or more characters.
 
     > [!NOTE]
     > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
 
--   Operating system component settings
--   Application settings
+- Operating system component settings
+
+- Application settings
 
 These settings are migrated by the default MigUser.xml and MigApp.xml templates. For more information, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more general information on USMT, see [USMT technical reference](./usmt/usmt-reference.md).
 
@@ -178,7 +139,7 @@ A machine booted with the Windows ADK default Windows PE boot image.
 
 For more information on Windows PE, see [Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro).
 
-## <a href="" id="sec07"></a>Windows Recovery Environment
+## Windows Recovery Environment
 
 Windows Recovery Environment (Windows RE) is a diagnostics and recovery toolset included in Windows Vista and later operating systems. The latest version of Windows RE is based on Windows PE. You can also extend Windows RE and add your own tools if needed. If a Windows installation fails to start and Windows RE is installed, you'll see an automatic failover into Windows RE.
 
@@ -204,16 +165,15 @@ In some cases, you need to modify TFTP Maximum Block Size settings for performan
 
 Also, there are a few new features related to TFTP performance:
 
--   **Scalable buffer management.** Allows buffering an entire file instead of a fixed-size buffer for each client, enabling different sessions to read from the same shared buffer.
--   **Scalable port management.** Provides the capability to service clients with shared UDP port allocation, increasing scalability.
--   **Variable-size transmission window (Variable Windows Extension).** Improves TFTP performance by allowing the client and server to determine the largest workable window size.
+- **Scalable buffer management**: Allows buffering an entire file instead of a fixed-size buffer for each client, enabling different sessions to read from the same shared buffer.
+- **Scalable port management**: Provides the capability to service clients with shared UDP port allocation, increasing scalability.
+- **Variable-size transmission window (Variable Windows Extension)**: Improves TFTP performance by allowing the client and server to determine the largest workable window size.
 
 ![TFTP changes are now easy to perform.](images/mdt-11-fig12.png)
 
 TFTP changes are now easy to perform.
 
 ## Microsoft Deployment Toolkit
-
 
 MDT is a free deployment solution from Microsoft. It provides end-to-end guidance, best practices, and tools for planning, building, and deploying Windows operating systems. MDT builds on top of the core deployment tools in the Windows ADK by contributing guidance, reducing complexity, and adding critical features for an enterprise-ready deployment solution.
 
@@ -242,15 +202,19 @@ MDOP is a suite of technologies available to Software Assurance customers throug
 
 The following components are included in the MDOP suite:
 
--   **Microsoft Application Virtualization (App-V).** App-V 5.0 provides an integrated platform, more flexible virtualization, and powerful management for virtualized applications. With the release of App-V 5.0 SP3, you have support to run virtual applications on Windows 10.
+- **Microsoft Application Virtualization (App-V).** App-V 5.0 provides an integrated platform, more flexible virtualization, and powerful management for virtualized applications. With the release of App-V 5.0 SP3, you have support to run virtual applications on Windows 10.
 
--   **Microsoft User Experience Virtualization (UE-V).** UE-V monitors the changes that are made by users to application settings and Windows operating system settings. The user settings are captured and centralized to a settings storage location. These settings can then be applied to the different computers that are accessed by the user, including desktop computers, laptop computers, and virtual desktop infrastructure (VDI) sessions.
+- **Microsoft User Experience Virtualization (UE-V).** UE-V monitors the changes that are made by users to application settings and Windows operating system settings. The user settings are captured and centralized to a settings storage location. These settings can then be applied to the different computers that are accessed by the user, including desktop computers, laptop computers, and virtual desktop infrastructure (VDI) sessions.
 
--   **Microsoft Advanced Group Policy Management (AGPM).** AGPM enables advanced management of Group Policy objects by providing change control, offline editing, and role-based delegation.
--   **Microsoft Diagnostics and Recovery Toolset (DaRT).** DaRT provides additional tools that extend Windows RE to help you troubleshoot and repair your machines.
--   **Microsoft BitLocker Administration and Monitoring (MBAM).** MBAM is an administrator interface used to manage BitLocker drive encryption. It allows you to configure your enterprise with the correct BitLocker encryption policy options, and monitor compliance with these policies.
+- **Microsoft Advanced Group Policy Management (AGPM).** AGPM enables advanced management of Group Policy objects by providing change control, offline editing, and role-based delegation.
+- **Microsoft Diagnostics and Recovery Toolset (DaRT).** DaRT provides additional tools that extend Windows RE to help you troubleshoot and repair your machines.
+- **Microsoft BitLocker Administration and Monitoring (MBAM).** MBAM is an administrator interface used to manage BitLocker drive encryption. It allows you to configure your enterprise with the correct BitLocker encryption policy options, and monitor compliance with these policies.
 
 For more information on the benefits of an MDOP subscription, see [Microsoft Desktop Optimization Pack](/microsoft-desktop-optimization-pack/).
+
+<!--
+
+REMOVING SECTION SINCE INTERNET EXPLORER IS NO LONGER SUPPORTED
 
 ## Internet Explorer Administration Kit 11
 
@@ -261,6 +225,8 @@ There has been a version of IEAK for every version of Internet Explorer since 3.
 The User Experience selection screen in IEAK 11.
 
 To download IEAK 11, see the [Internet Explorer Administration Kit (IEAK) Information and Downloads](/internet-explorer/ie11-ieak/ieak-information-and-downloads) page.
+
+-->
 
 ## Windows Server Update Services
 
@@ -274,32 +240,31 @@ For more information on WSUS, see the [Windows Server Update Services Overview](
 
 ## Unified Extensible Firmware Interface
 
-
 For many years, BIOS has been the industry standard for booting a PC. BIOS has served us well, but it's time to replace it with something better. **UEFI** is the replacement for BIOS, so it's important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
 
 ### Introduction to UEFI
 
 BIOS has been in use for approximately 30 years. Even though it clearly has proven to work, it has some limitations, including:
 
--   16-bit code
--   1-MB address space
--   Poor performance on ROM initialization
--   MBR maximum bootable disk size of 2.2 TB
+- 16-bit code
+- 1-MB address space
+- Poor performance on ROM initialization
+- MBR maximum bootable disk size of 2.2 TB
 
 As the replacement to BIOS, UEFI has many features that Windows can and will use.
 
 With UEFI, you can benefit from:
 
--   **Support for large disks.** UEFI requires a GUID Partition Table (GPT) based disk, which means a limitation of roughly 16.8 million TB in disk size and more than 100 primary disks.
--   **Faster boot time.** UEFI doesn't use INT 13, and that improves boot time, especially when it comes to resuming from hibernate.
--   **Multicast deployment.** UEFI firmware can use multicast directly when it boots up. In WDS, MDT, and Configuration Manager scenarios, you need to first boot up a normal Windows PE in unicast and then switch into multicast. With UEFI, you can run multicast from the start.
--   **Compatibility with earlier BIOS.** Most of the UEFI implementations include a compatibility support module (CSM) that emulates BIOS.
--   **CPU-independent architecture.** Even if BIOS can run both 32-bit and 64-bit versions of firmware, all firmware device drivers on BIOS systems must also be 16-bit, and this affects performance. One of the reasons is the limitation in addressable memory, which is only 64 KB with BIOS.
--   **CPU-independent drivers.** On BIOS systems, PCI add-on cards must include a ROM that contains a separate driver for all supported CPU architectures. That isn't needed for UEFI because UEFI has the ability to use EFI Byte Code (EBC) images, which allow for a processor-independent device driver environment.
--   **Flexible pre-operating system environment.** UEFI can perform many functions for you. You just need an UEFI application, and you can perform diagnostics and automatic repairs, and call home to report errors.
--   **Secure boot.** Windows 8 and later can use the UEFI firmware validation process, called secure boot, which is defined in UEFI 2.3.1. Using this process, you can ensure that UEFI launches only a verified operating system loader and that malware can't switch the boot loader.
+- **Support for large disks.** UEFI requires a GUID Partition Table (GPT) based disk, which means a limitation of roughly 16.8 million TB in disk size and more than 100 primary disks.
+- **Faster boot time.** UEFI doesn't use INT 13, and that improves boot time, especially when it comes to resuming from hibernate.
+- **Multicast deployment.** UEFI firmware can use multicast directly when it boots up. In WDS, MDT, and Configuration Manager scenarios, you need to first boot up a normal Windows PE in unicast and then switch into multicast. With UEFI, you can run multicast from the start.
+- **Compatibility with earlier BIOS.** Most of the UEFI implementations include a compatibility support module (CSM) that emulates BIOS.
+- **CPU-independent architecture.** Even if BIOS can run both 32-bit and 64-bit versions of firmware, all firmware device drivers on BIOS systems must also be 16-bit, and this affects performance. One of the reasons is the limitation in addressable memory, which is only 64 KB with BIOS.
+- **CPU-independent drivers.** On BIOS systems, PCI add-on cards must include a ROM that contains a separate driver for all supported CPU architectures. That isn't needed for UEFI because UEFI has the ability to use EFI Byte Code (EBC) images, which allow for a processor-independent device driver environment.
+- **Flexible pre-operating system environment.** UEFI can perform many functions for you. You just need an UEFI application, and you can perform diagnostics and automatic repairs, and call home to report errors.
+- **Secure boot.** Windows 8 and later can use the UEFI firmware validation process, called secure boot, which is defined in UEFI 2.3.1. Using this process, you can ensure that UEFI launches only a verified operating system loader and that malware can't switch the boot loader.
 
-### Versions
+### UEFI versions
 
 UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a few machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
 
@@ -307,10 +272,10 @@ UEFI Version 2.3.1B is the version required for Windows 8 and later logo complia
 
 In regard to UEFI, hardware is divided into four device classes:
 
--   **Class 0 devices.** The device of this class is the UEFI definition for a BIOS, or non-UEFI, device.
--   **Class 1 devices.** The devices of this class behave like a standard BIOS machine, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS. These older devices are no longer manufactured.
--   **Class 2 devices.** The devices of this class have the capability to behave as a BIOS- or a UEFI-based machine, and the boot process or the configuration in the firmware/BIOS determines the mode. Class 2 devices use a CSM to emulate BIOS. These are the most common type of devices currently available.
--   **Class 3 devices.** The devices of this class are UEFI-only devices, which means you must run an operating system that supports only UEFI. Those operating systems include Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2. Windows 7 isn't supported on these class 3 devices. Class 3 devices don't have a CSM to emulate BIOS.
+- **Class 0 devices.** The device of this class is the UEFI definition for a BIOS, or non-UEFI, device.
+- **Class 1 devices.** The devices of this class behave like a standard BIOS machine, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS. These older devices are no longer manufactured.
+- **Class 2 devices.** The devices of this class have the capability to behave as a BIOS- or a UEFI-based machine, and the boot process or the configuration in the firmware/BIOS determines the mode. Class 2 devices use a CSM to emulate BIOS. These are the most common type of devices currently available.
+- **Class 3 devices.** The devices of this class are UEFI-only devices, which means you must run an operating system that supports only UEFI. Those operating systems include Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2. Windows 7 isn't supported on these class 3 devices. Class 3 devices don't have a CSM to emulate BIOS.
 
 ### Windows support for UEFI
 
@@ -322,10 +287,10 @@ With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 support
 
 There are many things that affect operating system deployment as soon as you run on UEFI/EFI-based hardware. Here are considerations to keep in mind when working with UEFI devices:
 
--   Switching from BIOS to UEFI in the hardware is easy, but you also need to reinstall the operating system because you need to switch from MBR/NTFS to GPT/FAT32 and NTFS.
--   When you deploy to a Class 2 device, make sure the boot option you select matches the setting you want to have. It's common for old machines to have several boot options for BIOS but only a few for UEFI, or vice versa.
--   When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4 GB.
--   UEFI doesn't support cross-platform booting; therefore, you need to have the correct boot media (32-bit or 64-bit).
+- Switching from BIOS to UEFI in the hardware is easy, but you also need to reinstall the operating system because you need to switch from MBR/NTFS to GPT/FAT32 and NTFS.
+- When you deploy to a Class 2 device, make sure the boot option you select matches the setting you want to have. It's common for old machines to have several boot options for BIOS but only a few for UEFI, or vice versa.
+- When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4 GB.
+- UEFI doesn't support cross-platform booting; therefore, you need to have the correct boot media (32-bit or 64-bit).
 
 For more information on UEFI, see the [UEFI firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)) overview and related resources.
 

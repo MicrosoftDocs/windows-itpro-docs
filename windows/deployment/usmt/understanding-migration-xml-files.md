@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -135,6 +135,9 @@ The default `MigUser.xml` file migrates the following data:
 
   > [!NOTE]
   > The asterisk (`*`) stands for zero or more characters.
+
+  > [!NOTE]
+  > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
 
 The default `MigUser.xml` file doesn't migrate the following data:
 
