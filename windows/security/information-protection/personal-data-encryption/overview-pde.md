@@ -45,9 +45,9 @@ ms.date: 09/22/2022
   - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
     - Provides additional security when authenticating with Windows Hello for Business via biometrics or PIN
   - [Kernel and user mode crash dumps disabled](/windows/client-management/mdm/policy-csp-memorydump)
-    - Crash dumps can potentially cause the keys used by PDE decrypt files to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
+    - Crash dumps can potentially cause the keys used by PDE decrypt files to be exposed. For greatest security, disable kernel and user mode crash dumps. For information on disabling crash dumps via Intune, see [Disable crash dumps](configure-pde-in-intune.md#disable-crash-dumps).
   - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
-    - Hibernation files can potentially cause the keys used by PDE to decrypt files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+    - Hibernation files can potentially cause the keys used by PDE to decrypt files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumps via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 ## PDE protection levels
 
