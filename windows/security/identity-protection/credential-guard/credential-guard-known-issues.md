@@ -9,7 +9,7 @@ ms.reviewer: zwhittington
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 01/26/2022
+ms.date: 11/28/2022
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
