@@ -1,27 +1,18 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business - Directory Synchronization
 description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 4/30/2021
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Key trust</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization
 
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
+
 ## Directory Synchronization
 
-In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  
+In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure AD. Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  
 
 ### Group Memberships for the Azure AD Connect Service Account
 >[!IMPORTANT]
