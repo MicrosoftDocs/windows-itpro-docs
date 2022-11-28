@@ -312,12 +312,13 @@
       href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
     - name: Enterprise Certificate Pinning
       href: identity-protection/enterprise-certificate-pinning.md
-    - name: Protect derived domain credentials with Credential Guard
-      href: identity-protection/credential-guard/credential-guard.md
+    - name: Credential Guard
       items:
+        - name: Protect derived domain credentials with Credential Guard
+          href: identity-protection/credential-guard/credential-guard.md
         - name: How Credential Guard works
           href: identity-protection/credential-guard/credential-guard-how-it-works.md
-        - name: Credential Guard Requirements
+        - name: Requirements
           href: identity-protection/credential-guard/credential-guard-requirements.md
         - name: Manage Credential Guard
           href: identity-protection/credential-guard/credential-guard-manage.md
@@ -327,11 +328,11 @@
           href: identity-protection/credential-guard/credential-guard-protection-limits.md
         - name: Considerations when using Credential Guard
           href: identity-protection/credential-guard/credential-guard-considerations.md
-        - name: "Credential Guard: Additional mitigations"
+        - name: Additional mitigations
           href: identity-protection/credential-guard/additional-mitigations.md
-        - name: "Credential Guard: Known issues"
+        - name: Known issues
           href: identity-protection/credential-guard/credential-guard-known-issues.md
-    - name: Protect Remote Desktop credentials with Remote Credential Guard
+    - name: Remote Credential Guard
       href: identity-protection/remote-credential-guard.md
     - name: Configuring LSA Protection
       href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
