@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -77,6 +77,9 @@ This section describes the user data that USMT migrates by default, using the `M
 
   > [!NOTE]
   > The asterisk (`*`) stands for zero or more characters.
+
+  > [!NOTE]
+  > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
 
 - **Access control lists.** USMT migrates access control lists (ACLs) for specified files and folders from computers running both Windows® XP and Windows Vista. For example, if you migrate a file named `File1.txt` that is **read-only** for **User1** and **read/write** for **User2**, these settings will still apply on the destination computer after the migration.
 
