@@ -68,7 +68,7 @@ In this step we're creating the operating system image that will be used on the 
 
 5. On the **Choose the drive you want to use** page select the drive that represents the USB drive you inserted previously, then select **Next.**
 
-6. On the **Choose a Windows image** page, select **Add Search Location** and then navigate to the `.wim` file location and select select folder. The wizard will display the installable images present in the folder; select the Windows 10 Enterprise or Windows 10 Education image you wish to use and then select **Next**.
+6. On the **Choose a Windows image** page, select **Add Search Location** and then navigate to the `.wim` file location and select folder. The wizard will display the installable images present in the folder; select the Windows 10 Enterprise or Windows 10 Education image you wish to use and then select **Next**.
 
 7. (Optional) On the **Set a BitLocker password (optional)** page, you can select **Use BitLocker with my Windows To Go Workspace** to encrypt your Windows To Go drive. If you don't wish to encrypt the drive at this time, select **Skip**. If you decide you want to add BitLocker protection later, for instructions see [Enable BitLocker protection for your Windows To Go drive](/previous-versions/windows/it-pro/windows-8.1-and-8/jj721578(v=ws.11)).
 
@@ -443,7 +443,7 @@ Enabling BitLocker on your Windows To Go drive will help ensure that your data i
 
   - **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure use of passwords for operating system drives**
 
-    This policy setting enables passwords to be used to unlock BitLocker-protected operating system drives and provides the means to configure complexity and length requirements on passwords for Windows To Go workspaces. For the complexity requirement setting to be effective the Group Policy setting **Password must meet complexity requirements** located in **Computer Configuration** > **Windows Settings** > **ecurity Settings** > **Account Policies** > **Password Policy** must be also enabled.
+    This policy setting enables passwords to be used to unlock BitLocker-protected operating system drives and provides the means to configure complexity and length requirements on passwords for Windows To Go workspaces. For the complexity requirement setting to be effective the Group Policy setting **Password must meet complexity requirements** located in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Account Policies** > **Password Policy** must be also enabled.
 
   - **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Enable use of BitLocker authentication requiring preboot keyboard input on slates**
   
