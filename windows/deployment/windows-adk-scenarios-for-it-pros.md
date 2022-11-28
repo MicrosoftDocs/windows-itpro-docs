@@ -6,7 +6,7 @@ ms.author: frankroj
 manager: aaroncz
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -19,50 +19,50 @@ In previous releases of Windows, the Windows ADK docs were published on both Tec
 
 Here are some key scenarios that will help you find the content on the MSDN Hardware Dev Center.
 
-### Create a Windows image using command-line tools
+## Create a Windows image using command-line tools
 
 [DISM](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) is used to mount and service Windows images.
 
 Here are some things you can do with DISM:
 
--   [Mount an offline image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
--   [Add drivers to an offline image](/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image)
--   [Enable or disable Windows features](/windows-hardware/manufacture/desktop/enable-or-disable-windows-features-using-dism)
--   [Add or remove packages](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism)
--   [Add language packs](/windows-hardware/manufacture/desktop/add-language-packs-to-windows)
--   [Add Universal Windows apps](/windows-hardware/manufacture/desktop/preinstall-apps-using-dism)
--   [Upgrade the Windows edition](/windows-hardware/manufacture/desktop/change-the-windows-image-to-a-higher-edition-using-dism)
+- [Mount an offline image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Add drivers to an offline image](/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image)
+- [Enable or disable Windows features](/windows-hardware/manufacture/desktop/enable-or-disable-windows-features-using-dism)
+- [Add or remove packages](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism)
+- [Add language packs](/windows-hardware/manufacture/desktop/add-language-packs-to-windows)
+- [Add Universal Windows apps](/windows-hardware/manufacture/desktop/preinstall-apps-using-dism)
+- [Upgrade the Windows edition](/windows-hardware/manufacture/desktop/change-the-windows-image-to-a-higher-edition-using-dism)
 
 [Sysprep](/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview) prepares a Windows installation for imaging and allows you to capture a customized installation.
 
 Here are some things you can do with Sysprep:
 
--   [Generalize a Windows installation](/windows-hardware/manufacture/desktop/sysprep--generalize--a-windows-installation)
--   [Customize the default user profile](/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
--   [Use answer files](/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep)
+- [Generalize a Windows installation](/windows-hardware/manufacture/desktop/sysprep--generalize--a-windows-installation)
+- [Customize the default user profile](/windows-hardware/manufacture/desktop/customize-the-default-user-profile-by-using-copyprofile)
+- [Use answer files](/windows-hardware/manufacture/desktop/use-answer-files-with-sysprep)
 
 [Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro) is a small operating system used to boot a computer that doesn't have an operating system. You can boot to Windows PE and then install a new operating system, recover data, or repair an existing operating system.
 
 Here are ways you can create a WinPE image:
 
--   [Create a bootable USB drive](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
--   [Create a Boot CD, DVD, ISO, or VHD](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
+- [Create a bootable USB drive](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
+- [Create a Boot CD, DVD, ISO, or VHD](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
 
 [Windows Recovery Environment (Windows RE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is a recovery environment that can repair common operating system problems.
 
 Here are some things you can do with Windows RE:
 
--   [Customize Windows RE](/windows-hardware/manufacture/desktop/customize-windows-re)
--   [Push-button reset](/windows-hardware/manufacture/desktop/push-button-reset-overview)
+- [Customize Windows RE](/windows-hardware/manufacture/desktop/customize-windows-re)
+- [Push-button reset](/windows-hardware/manufacture/desktop/push-button-reset-overview)
 
 [Windows System Image Manager (Windows SIM)](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference) helps you create answer files that change Windows settings and run scripts during installation.
 
 Here are some things you can do with Windows SIM:
 
--   [Create answer file](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file)
--   [Add a driver path to an answer file](/windows-hardware/customize/desktop/wsim/add-a-device-driver-path-to-an-answer-file)
--   [Add a package to an answer file](/windows-hardware/customize/desktop/wsim/add-a-package-to-an-answer-file)
--   [Add a custom command to an answer file](/windows-hardware/customize/desktop/wsim/add-a-custom-command-to-an-answer-file)
+- [Create answer file](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file)
+- [Add a driver path to an answer file](/windows-hardware/customize/desktop/wsim/add-a-device-driver-path-to-an-answer-file)
+- [Add a package to an answer file](/windows-hardware/customize/desktop/wsim/add-a-package-to-an-answer-file)
+- [Add a custom command to an answer file](/windows-hardware/customize/desktop/wsim/add-a-custom-command-to-an-answer-file)
 
 For a list of settings you can change, see [Unattended Windows Setup Reference](/windows-hardware/customize/desktop/unattend/) on the MSDN Hardware Dev Center.
 
@@ -72,12 +72,12 @@ Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/wi
 
 Here are some things you can do with Windows ICD:
 
--   [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
--   [Export a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Export a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
 
 ### IT Pro Windows deployment tools
 
 There are also a few tools included in the Windows ADK that are specific to IT Pros and this documentation is available on TechNet:
 
--   [Volume Activation Management Tool (VAMT) Technical Reference](volume-activation/volume-activation-management-tool.md)
--   [User State Migration Tool (USMT) Technical Reference](usmt/usmt-technical-reference.md)
+- [Volume Activation Management Tool (VAMT) Technical Reference](volume-activation/volume-activation-management-tool.md)
+- [User State Migration Tool (USMT) Technical Reference](usmt/usmt-technical-reference.md)
