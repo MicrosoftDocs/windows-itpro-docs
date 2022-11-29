@@ -147,7 +147,7 @@ You can think of a task sequence as a list of actions that need to be executed i
 - **Gather**: Reads configuration settings from the deployment server.
 - **Format and Partition**: Creates the partition(s) and formats them.
 - **Inject Drivers**: Finds out which drivers the machine needs and downloads them from the central driver repository.
-- **Apply Operating System**: Uses ImageX to apply the image.
+- **Apply Operating System**: Applies the Windows image.
 - **Windows Update**: Connects to a WSUS server and updates the machine.
 
 ## Task sequence templates

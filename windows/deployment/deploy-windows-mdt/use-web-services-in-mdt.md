@@ -83,7 +83,7 @@ This section assumes that you've enabled the Web Server (IIS) role on MDT01.
 
 ## Test the web service in Internet Explorer
 
-1. On PC0001, using Internet Explorer, navigate to: **`http://MDT01/MDTSample/mdtsample.asmx**`.
+1. On PC0001, using Internet Explorer, navigate to: **`http://MDT01/MDTSample/mdtsample.asmx'**.
 
 2. Select the **GetComputerName** link.
 
