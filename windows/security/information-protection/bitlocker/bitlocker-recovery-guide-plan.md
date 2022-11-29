@@ -18,7 +18,7 @@ ms.custom: bitlocker
 
 # BitLocker recovery guide
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11
