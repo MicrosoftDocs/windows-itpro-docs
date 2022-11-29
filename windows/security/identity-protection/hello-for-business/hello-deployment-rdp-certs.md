@@ -1,19 +1,13 @@
 ---
 title: Deploy certificates for remote desktop sign-in
 description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: erikdau
-ms.collection:
-  - M365-identity-device-management
+ms.collection: 
   - ContentEngagementFY23
-ms.topic: how-to
+ms.topic: article
 localizationpriority: medium
 ms.date: 11/15/2022
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.technology: itpro-security
 ---
 
@@ -61,7 +55,7 @@ Follow these steps to create a certificate template:
     | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Authority list*</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Recipient list*</li></ul>|
     | *General* | <ul><li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li></ul>|
     | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
-    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul>|
+    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
     |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul>|
     |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul>|
     |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them|
@@ -139,14 +133,14 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     | --- | --- |
     |*Certificate Type*| User |
     |*Subject name format* | `CN={{UserPrincipalName}}` |
-    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `CN={{UserPrincipalName}}`
+    |*Subject alternative name* |From the dropdown, select **User principal name (UPN)** with a value of `{{UserPrincipalName}}`
     |*Certificate validity period* | Configure a value of your choosing|
     |*Key storage provider (KSP)* | **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)**
     |*Key usage*| **Digital Signature**|
     |*Key size (bits)* | **2048**|
     |*For Hash algorithm*|**SHA-2**|
     |*Root Certificate*| Select **+Root Certificate** and select the trusted certificate profile created earlier for the Root CA Certificate|
-    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Smart Card Logon**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
+    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Not configured**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
     |*Renewal threshold (%)*|Configure a value of your choosing|
     |*SCEP Server URLs*|Provide the public endpoint(s) that you configured during the deployment of your SCEP infrastructure|
 
