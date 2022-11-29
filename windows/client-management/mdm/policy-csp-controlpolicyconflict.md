@@ -20,15 +20,6 @@ manager: aaroncz
 <!--Policies-->
 ## ControlPolicyConflict policies
 
-<dl>
-  <dd>
-    <a href="#controlpolicyconflict-mdmwinsovergp">ControlPolicyConflict/MDMWinsOverGP</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
 <!--Policy-->
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**
 
