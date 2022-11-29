@@ -20174,6 +20174,16 @@
       "source_path": "windows/configuration/start-layout-troubleshoot.md",
       "redirect_url": "/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors",
       "redirect_document_id": false
-    }  
+    },
+    {
+      "source_path": "windows/deployment/usmt/usmt-common-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/usmt-common-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/usmt/usmt-return-codes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/usmt-return-codes",
+      "redirect_document_id": false
+    } 
   ]
 }
