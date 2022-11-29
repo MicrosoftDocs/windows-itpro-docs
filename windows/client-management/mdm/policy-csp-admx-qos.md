@@ -4,7 +4,7 @@ description: Learn more about the ADMX_QOS Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/02/2022
+ms.date: 11/29/2022
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,13 @@ ms.topic: reference
 
 <!-- ADMX_QOS-Begin -->
 # Policy CSP - ADMX_QOS
+
+> [!TIP]
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!-- ADMX_QOS-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->

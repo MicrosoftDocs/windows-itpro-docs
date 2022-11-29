@@ -4,7 +4,7 @@ description: Learn more about the WindowsLogon Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/22/2022
+ms.date: 11/29/2022
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -258,6 +258,32 @@ If you disable or don't configure this policy setting, any user can disconnect t
 
 <!-- DontDisplayNetworkSelectionUI-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
+Here's an example to enable this policy:
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Atomic>
+      <CmdID>300</CmdID>
+      <Replace>
+        <CmdID>301</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Device/Vendor/MSFT/Policy/Config/WindowsLogon/DontDisplayNetworkSelectionUI</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data><![CDATA[<enabled/>]]></Data>
+        </Item>
+      </Replace>
+    </Atomic>
+    <Final/>
+  </SyncBody>
+</SyncML>
+```
 <!-- DontDisplayNetworkSelectionUI-Examples-End -->
 
 <!-- DontDisplayNetworkSelectionUI-End -->
