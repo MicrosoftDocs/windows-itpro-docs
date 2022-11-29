@@ -9,13 +9,14 @@ ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.localizationpriority: medium
 ms.topic: reference
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 ---
 
 # Windows 10 deployment process posters
 
-**Applies to**
--   Windows 10
+*Applies to:*
+
+- Windows 10
 
 The following posters step through various options for deploying Windows 10 with Windows Autopilot or Microsoft Configuration Manager.
 

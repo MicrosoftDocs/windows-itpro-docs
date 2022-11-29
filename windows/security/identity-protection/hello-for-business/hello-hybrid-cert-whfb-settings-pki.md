@@ -1,24 +1,15 @@
 ---
 title: Configuring Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure (PKI)
 description: Discussing the configuration of the Public Key Infrastructure (PKI) in a Hybrid deployment of Windows Hello for Business
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 4/30/2021
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Hybrid deployment</b>
-  - ✅ <b>Certificate trust</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 
 # Configure Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure
+
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
 
 Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly-issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows between them and the client computer.
 

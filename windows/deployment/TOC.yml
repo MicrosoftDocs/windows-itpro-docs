@@ -221,7 +221,11 @@
           - name: UCClientUpdateStatus
             href: update/wufb-reports-schema-ucclientupdatestatus.md
           - name: UCDeviceAlert
-            href: update/wufb-reports-schema-ucdevicealert.md                                
+            href: update/wufb-reports-schema-ucdevicealert.md
+          - name: UCDOAggregatedStatus
+            href: update/wufb-reports-schema-ucdoaggregatedstatus.md      
+          - name: UCDOStatus
+            href: update/wufb-reports-schema-ucdostatus.md                              
           - name: UCServiceUpdateStatus
             href: update/wufb-reports-schema-ucserviceupdatestatus.md
           - name: UCUpdateAlert
