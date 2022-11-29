@@ -11,12 +11,12 @@ ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: M365-modern-desktop
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 ---
 
 # Configure VDA for Windows subscription activation
 
-Applies to:
+*Applies to:*
 
 - Windows 10
 - Windows 11
@@ -61,42 +61,55 @@ For examples of activation issues, see [Troubleshoot the user experience](./depl
 ## Active Directory-joined VMs
 
 1. Use the following instructions to prepare the VM for Azure: [Prepare a Windows VHD or VHDX to upload to Azure](/azure/virtual-machines/windows/prepare-for-upload-vhd-image)
-2. (Optional) To disable network level authentication, type the following command at an elevated command prompt:
+
+2. (Optional) To disable network level authentication, enter the following command at an elevated command prompt:
 
     ```cmd
-    REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
+    REG.exe ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
     ```
 
-3. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
+3. At an elevated command prompt, enter **sysdm.cpl**.
+
 4. On the Remote tab, choose **Allow remote connections to this computer** and then select **Select Users**.
-5. Select **Add**, type **Authenticated users**, and then select **OK** three times.
+
+5. Select **Add**, enter **Authenticated users**, and then select **OK** three times.
+
 6. Follow the instructions to use sysprep at [Steps to generalize a VHD](/azure/virtual-machines/windows/prepare-for-upload-vhd-image#generalize-a-vhd) and then start the VM again.
+
 7. If you must activate Windows Pro as described for [scenario 3](#scenario-3), complete the following steps to use Windows Configuration Designer and inject an activation key. Otherwise, skip to step 8.
     1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-    1. Open Windows Configuration Designer and select **Provision desktop services**.
-    1. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, select **Finish**, and then on the **Set up device** page enter a device name.
+
+    2. Open Windows Configuration Designer and select **Provision desktop services**.
+
+    3. Under **Name**, enter **Desktop AD Enrollment Pro GVLK**, select **Finish**, and then on the **Set up device** page enter a device name.
 
         > [!NOTE]
         > You can use a different project name, but this name is also used with dism.exe in a later step.
 
-    1. Under **Enter product key** type the Pro GVLK key: `W269N-WFGWX-YVC9B-4J6C9-T83GX`.
-    1. On the Set up network page, choose **Off**.
-    1. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
+    4. Under **Enter product key** enter the Pro GVLK key: `W269N-WFGWX-YVC9B-4J6C9-T83GX`.
+
+    5. On the Set up network page, choose **Off**.
+
+    6. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
 
         > [!NOTE]
         > This step is different for [Azure AD-joined VMs](#azure-active-directory-joined-vms).
 
-    1. On the Add applications page, add applications if desired. This step is optional.
-    1. On the Add certificates page, add certificates if desired. This step is optional.
-    1. On the Finish page, select **Create**.
-    1. In file explorer, open the VHD to mount the disk image. Determine the drive letter of the mounted image.
-    1. Type the following command at an elevated command prompt. Replace the letter `G` with the drive letter of the mounted image, and enter the project name you used if it's different than the one suggested:
+    7. On the Add applications page, add applications if desired. This step is optional.
+
+    8. On the Add certificates page, add certificates if desired. This step is optional.
+
+    9. On the Finish page, select **Create**.
+
+    10. In file explorer, open the VHD to mount the disk image. Determine the drive letter of the mounted image.
+
+    11. Enter the following command at an elevated command prompt. Replace the letter `G` with the drive letter of the mounted image, and enter the project name you used if it's different than the one suggested:
 
         ```cmd
         Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
         ```
 
-    1. Right-click the mounted image in file explorer and select **Eject**.
+    12. Right-click the mounted image in file explorer and select **Eject**.
 
 8. See the instructions at [Upload and create VM from generalized VHD](/azure/virtual-machines/windows/upload-generalized-managed#upload-the-vhd) to sign in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
@@ -107,33 +120,50 @@ For examples of activation issues, see [Troubleshoot the user experience](./depl
 
 For Azure AD-joined VMs, follow the same instructions as for [Active Directory-joined VMs](#active-directory-joined-vms) with the following exceptions:
 
-- During setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it isn't for Active Directory-joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
+- During setup with Windows Configuration Designer, under **Name**, enter a name for the project that indicates it isn't for Active Directory-joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
+
 - During setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, select **Get Bulk Token**, sign in, and add the bulk token using your organization's credentials.
+
 - When entering the PackagePath, use the project name you previously entered. For example, **Desktop Bulk Enrollment Token Pro GVLK.ppkg**
+
 - When attempting to access the VM using remote desktop, you'll need to create a custom RDP settings file as described below in [Create custom RDP settings for Azure](#create-custom-rdp-settings-for-azure).
 
 ## Azure Gallery VMs
 
-1. (Optional) To disable network level authentication, type the following command at an elevated command prompt:
+1. (Optional) To disable network level authentication, enter the following command at an elevated command prompt:
 
     ```cmd
-    REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
+    REG.exe ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
     ```
 
-2. At an elevated command prompt, type `sysdm.cpl` and press ENTER.
+2. At an elevated command prompt, enter `sysdm.cpl`.
+
 3. On the Remote tab, choose **Allow remote connections to this computer** and then select **Select Users**.
-4. Select **Add**, type **Authenticated users**, and then select **OK** three times.
+
+4. Select **Add**, enter **Authenticated users**, and then select **OK** three times.
+
 5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+
 6. Open Windows Configuration Designer and select **Provision desktop services**.
+
 7. If you must activate Windows Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 8.
-    1. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, select **Finish**, and then on the **Set up device** page enter a device name.
-    2. Under **Enter product key** type the Pro GVLK key: `W269N-WFGWX-YVC9B-4J6C9-T83GX`.
-8. Under **Name**, type **Desktop Bulk Enrollment**, select **Finish**, and then on the **Set up device** page enter a device name.
+
+    1. Under **Name**, enter **Desktop Bulk Enrollment Token Pro GVLK**, select **Finish**, and then on the **Set up device** page enter a device name.
+
+    2. Under **Enter product key** enter the Pro GVLK key: `W269N-WFGWX-YVC9B-4J6C9-T83GX`.
+
+8. Under **Name**, enter **Desktop Bulk Enrollment**, select **Finish**, and then on the **Set up device** page enter a device name.
+
 9. On the Set up network page, choose **Off**.
+
 10. On the Account Management page, choose **Enroll in Azure AD**, select **Get Bulk Token**, sign in, and add the bulk token using your organizations credentials.
+
 11. On the Add applications page, add applications if desired. This step is optional.
+
 12. On the Add certificates page, add certificates if desired. This step is optional.
+
 13. On the Finish page, select **Create**.
+
 14. Copy the PPKG file to the remote virtual machine. Open the provisioning package to install it. This process will restart the system.
 
 > [!NOTE]
@@ -142,9 +172,13 @@ For Azure AD-joined VMs, follow the same instructions as for [Active Directory-j
 ## Create custom RDP settings for Azure
 
 1. Open Remote Desktop Connection and enter the IP address or DNS name for the remote host.
+
 2. Select **Show Options**, and then under Connection settings select **Save As**. Save the RDP file to the location where you'll use it.
+
 3. Close the Remote Desktop Connection window and open Notepad.
+
 4. Open the RDP file in Notepad to edit it.
+
 5. Enter or replace the line that specifies authentication level with the following two lines of text:
 
     ```text
