@@ -73,6 +73,8 @@ For more information, see [Configure an MDM provider](/microsoft-store/configure
 
 For more information on the rules available via AppLocker on the different supported operating systems, see [Operating system requirements](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker#operating-system-requirements).
 
+> [!Important]
+> If you block access to the Store using CSP you need to also configure [AllowAppStoreAutoUpdate](//windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) to enable in-box store apps to update while still blocking access to the store
 
 ## <a href="" id="block-store-group-policy"></a>Block Microsoft Store using Group Policy
 
@@ -95,7 +97,7 @@ You can also use Group Policy to manage access to Microsoft Store.
 4.  On the **Turn off the Store application** setting page, click **Enabled**, and then click **OK**.
 
 > [!Important]
-> When you enable the policy to **Turn off the Store application**, it turns off app updates from the Microsoft Store. To allow store apps to update, disable the policy to **Turn off automatic download and install of Updates**. This configuration allows in-box store apps to update while still blocking access to the store.
+> When you enable the policy to **Turn off the Store application**, it turns off app updates from the Microsoft Store. To allow store apps to update, disable the policy to **Turn off automatic download and install of Updates**. This policy is found under Computer Configuration\Administrative templates\Windows Components\Store. This configuration allows in-box store apps to update while still blocking access to the store.
 
 ## Show private store only using Group Policy 
 
