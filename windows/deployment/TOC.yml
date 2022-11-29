@@ -538,13 +538,13 @@
                       items:
                         - name: USMT Troubleshooting
                           href: usmt/usmt-troubleshooting.md
-                        - name: Common Issues
+                        - name: USMT Common Issues
                           href: /troubleshoot/windows-client/deployment/usmt-common-issues
-                        - name: Frequently Asked Questions
+                        - name: USMT Frequently Asked Questions
                           href: usmt/usmt-faq.yml
-                        - name: Log Files
+                        - name: USMT Log Files
                           href: usmt/usmt-log-files.md
-                        - name: Return Codes
+                        - name: USMT Return Codes
                           href: /troubleshoot/windows-client/deployment/usmt-return-codes
                         - name: USMT Resources
                           href: usmt/usmt-resources.md
