@@ -55,13 +55,13 @@ You can use the XML helper functions in the [XML elements library](usmt-xml-elem
 
   As with parameters with a default value convention, if you have a NULL parameter at the end of a list, you can leave it out. For example, the following function:
 
-  ``` syntax
+  ```cmd
   SomeFunction("My String argument",NULL,NULL)
   ```
 
   is equivalent to:
 
-  ``` syntax
+  ```cmd
   SomeFunction("My String argument")
   ```
 

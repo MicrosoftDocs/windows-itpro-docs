@@ -8,12 +8,9 @@ brand: windows
 metadata:
   title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: subservice #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice # Optional; Remove if no subservice is used.
-  ms.topic: hub-page # Required
+  ms.topic: hub-page
+  ms.prod: windows-client
   ms.collection:
-    - windows-10
     - highpri
   author: dougeby #Required; your GitHub user alias, with correct capitalization.
   ms.author: dougeby #Required; microsoft alias of author; optional team alias.
