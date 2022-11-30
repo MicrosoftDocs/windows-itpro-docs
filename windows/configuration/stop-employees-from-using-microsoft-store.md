@@ -24,7 +24,7 @@ ms.technology: itpro-configure
 
 IT pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store.
 
-> [!Important]
+> [!IMPORTANT]
 > All executable code including Microsoft Store applications should have an update and maintenance plan.  Organizations that use Microsoft Store applications should ensure that the applications can be updated through the Microsoft Store over the internet, through the [Private Store](/microsoft-store/distribute-apps-from-your-private-store), or [distributed offline](/microsoft-store/distribute-offline-apps) to keep the applications up to date.
 
 ## Options to configure access to Microsoft Store
@@ -73,7 +73,7 @@ For more information, see [Configure an MDM provider](/microsoft-store/configure
 
 For more information on the rules available via AppLocker on the different supported operating systems, see [Operating system requirements](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker#operating-system-requirements).
 
-> [!Important]
+> [!IMPORTANT]
 > If you block access to the Store using CSP you need to also configure [AllowAppStoreAutoUpdate](//windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) to enable in-box store apps to update while still blocking access to the store
 
 ## <a href="" id="block-store-group-policy"></a>Block Microsoft Store using Group Policy
@@ -81,7 +81,7 @@ For more information on the rules available via AppLocker on the different suppo
 
 Applies to: Windows 10 Enterprise, Windows 10 Education 
 
-> [!Note]
+> [!NOTE]
 > Not supported on Windows 10 Pro, starting with version 1511. For more info, see [Knowledge Base article #3135657](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
 
 You can also use Group Policy to manage access to Microsoft Store.
@@ -96,7 +96,7 @@ You can also use Group Policy to manage access to Microsoft Store.
 
 4.  On the **Turn off the Store application** setting page, click **Enabled**, and then click **OK**.
 
-> [!Important]
+> [!IMPORTANT]
 > When you enable the policy to **Turn off the Store application**, it turns off app updates from the Microsoft Store. To allow store apps to update, disable the policy to **Turn off automatic download and install of Updates**. This policy is found under Computer Configuration\Administrative templates\Windows Components\Store. This configuration allows in-box store apps to update while still blocking access to the store.
 
 ## Show private store only using Group Policy 
@@ -122,6 +122,3 @@ If you're using Microsoft Store for Business and you want employees to only see 
 [Distribute apps using your private store](/microsoft-store/distribute-apps-from-your-private-store)
 
 [Manage access to private store](/microsoft-store/manage-access-to-private-store)
-
-
- 
