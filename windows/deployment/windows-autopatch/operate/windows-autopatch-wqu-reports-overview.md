@@ -53,7 +53,7 @@ Each status has its own set of sub statuses to further describe the status.
 
 ### Healthy devices
 
-Healthy Devices are devices that meet all of the following prerequisites:
+Healthy devices are devices that meet all of the following prerequisites:
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
 - [Prerequisites for device registration](../deploy/windows-autopatch-register-devices.md#prerequisites-for-device-registration)
@@ -98,8 +98,8 @@ Within each 24-hour reporting period, devices that are ineligible are updated wi
 | Low Connectivity | Devices must have a steady internet connection, and access to [Windows update endpoints](../prepare/windows-autopatch-configure-network.md). |
 | Out of Disk Space | Devices must have more than one GB (GigaBytes) of free storage space. |
 | Not Deployed | Windows Autopatch doesn't update devices that haven't yet been deployed. |
-| Not On Supported on Windows Edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
-| Not On Supported Windows Build | Devices must be on a Windows build supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
+| Not On Supported on Windows Edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [prerequisites](../prepare/windows-autopatch-prerequisites.md). |
+| Not On Supported Windows Build | Devices must be on a Windows build supported by Windows Autopatch. For more information, see [prerequisites](../prepare/windows-autopatch-prerequisites.md). |
 | Intune Sync Older Than 5 Days | Devices must have checked with Intune within the last five days. |
 
 ## Data export
@@ -107,4 +107,4 @@ Within each 24-hour reporting period, devices that are ineligible are updated wi
 Select **Export devices** to export data for each report type.  
 
 > [!NOTE]
-> Note You can’t export Windows Autopatch report data using Microsoft Graph RESTful web API.
+> You can’t export Windows Autopatch report data using Microsoft Graph RESTful web API.
