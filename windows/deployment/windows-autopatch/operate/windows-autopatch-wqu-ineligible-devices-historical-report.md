@@ -26,7 +26,7 @@ The historical Ineligible devices report provides a visual representation of why
 1. Select the **Reports** tab.
 1. Select **Ineligible devices report—historical**.
 
-:::image type="content" source="../media/windows-autopatch-ineligible-devices-historical-report.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-ineligible-devices-historical-report.png":::
+:::image type="content" source="../media/windows-autopatch-ineligible-devices-historical-report.png" alt-text="Ineligible devices—historical report" lightbox="../media/windows-autopatch-ineligible-devices-historical-report.png":::
 
 > [!NOTE]
 > This report provides a time stamp of when the report trend was last generated and can be seen at the top of the page.
