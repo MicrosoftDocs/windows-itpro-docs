@@ -62,11 +62,11 @@
         - name: Features removed or planned for replacement
           items:
             - name: Windows client features lifecycle
-              href: /windows/whats-new/feature-lifecycle
+              href: /windows/whats-new/feature-lifecycle?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
             - name: Deprecated features
-              href: /windows/whats-new/deprecated-features
+              href: /windows/whats-new/deprecated-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
             - name: Removed features
-              href: /windows/whats-new/removed-features   
+              href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json   
     - name: Prepare
       items: 
         - name: Prepare for Windows 11
