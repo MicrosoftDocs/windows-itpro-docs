@@ -101,4 +101,4 @@ If the `/verify` option indicates that there are corrupted files in the migratio
 
 [UsmtUtils syntax](usmt-utilities.md)
 
-[Return codes](usmt-return-codes.md)
+[Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes)

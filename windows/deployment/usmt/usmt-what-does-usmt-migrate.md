@@ -53,7 +53,7 @@ This section describes the user data that USMT migrates by default, using the `M
   - Favorites
 
   > [!IMPORTANT]
-  > Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-doesnt-migrate-the-start-layout).
+  > Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
 
 - **Folders from the All Users and Public profiles.** When you specify the `MigUser.xml` file, USMT also migrates the following from the **Public** profile in Windows Vista, Windows 7, Windows 8, or Windows 10:
 
@@ -209,7 +209,7 @@ When you specify the `MigApp.xml` file, USMT migrates the settings for the follo
 
 ## What USMT doesn't migrate
 
-The following items are settings that USMT doesn't migrate. If you're having a problem that isn't listed here, see [Common issues](usmt-common-issues.md).
+The following items are settings that USMT doesn't migrate. If you're having a problem that isn't listed here, see [Common issues](/troubleshoot/windows-client/deployment/usmt-common-issues).
 
 ### Application settings
 
@@ -247,7 +247,7 @@ You should also note the following items:
 
 ### Start menu layout
 
-Starting in Windows 10, version 1607 the USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-doesnt-migrate-the-start-layout).
+Starting in Windows 10, version 1607 the USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
 
 ### User profiles from Active Directory to Azure Active Directory
 
