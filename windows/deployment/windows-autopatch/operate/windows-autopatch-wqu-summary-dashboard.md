@@ -21,7 +21,7 @@ The Summary dashboard provides a summary view of the current update status for a
 1. Sign into the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Reports** > **Windows Autopatch** > **Windows Quality Updates**.
 
-:::image type="content" source="../media/windows-autopatch-summary-dashboard.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-summary-dashboard.png":::
+:::image type="content" source="../media/windows-autopatch-summary-dashboard.png" alt-text="Summary dashboard" lightbox="../media/windows-autopatch-summary-dashboard.png":::
 
 > [!NOTE]
 > The data in this report is refreshed every 24 hours. The last refreshed on date/time can be seen at the top of the page.
