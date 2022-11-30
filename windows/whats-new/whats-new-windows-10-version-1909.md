@@ -14,7 +14,7 @@ ms.technology: itpro-fundamentals
 # What's new in Windows 10, version 1909 for IT Pros
 
 **Applies to**
--   Windows 10, version 1909
+-   Windows 10, version 1909
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
 
@@ -66,7 +66,7 @@ An experimental implementation of TLS 1.3 is included in Windows 10, version 190
 
 [Windows Virtual Desktop](/azure/virtual-desktop/overview) (WVD) is now generally available globally!
 
-Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps for enterprise, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, and an Azure tenant.
+Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It's the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps for enterprise, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, and an Azure tenant.
 
 ## Deployment
 
@@ -94,7 +94,7 @@ A new [Windows ADK](/windows-hardware/get-started/adk-install) will **not be rel
 
 ## Microsoft Connected Cache
 
-Together with Delivery Optimization, [Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Introducing-Microsoft-Connected-Cache-Microsoft-s-cloud-managed/ba-p/963898) installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a “configure once and forget it” solution that transparently caches content that your devices on your network need.
+Together with Delivery Optimization, [Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Introducing-Microsoft-Connected-Cache-Microsoft-s-cloud-managed/ba-p/963898) installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a "configure once and forget it" solution that transparently caches content that your devices on your network need.
 
 ## Accessibility
 
@@ -126,10 +126,10 @@ General battery life and power efficiency improvements for PCs with certain proc
 
 [What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
-[What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
+[What's New in Windows 10](./index.yml): See what's new in other versions of Windows 10.<br>
 [What Windows 10, version 1909 Means for Developers](https://blogs.windows.com/windowsdeveloper/2019/10/16/what-windows-10-version-1909-means-for-developers/): New and updated features in Windows 10 that are of interest to developers.<br>
-[Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that aren't being developed.<br>
+[Features and functionality removed in Windows 10](removed-features.md): Removed features.<br>
+[Windows 10 features we're no longer developing](deprecated-features.md): Features that aren't being developed.<br>
 [How to get the Windows 10 November 2019 Update](https://aka.ms/how-to-get-1909): John Cable blog.<br>
 [How to get Windows 10, Version 1909: Enablement Mechanics](https://aka.ms/1909mechanics): Mechanics blog.<br>
-[What’s new for IT pros in Windows 10, version 1909](https://aka.ms/whats-new-in-1909): Windows IT Pro blog.<br>
+[What's new for IT pros in Windows 10, version 1909](https://aka.ms/whats-new-in-1909): Windows IT Pro blog.<br>
