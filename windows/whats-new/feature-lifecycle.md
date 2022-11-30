@@ -1,11 +1,11 @@
 ---
 title: Windows client features lifecycle
-description: Learn about the lifecycle of Windows 10 features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
+description: Learn about the lifecycle of Windows features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: frankroj
+author: mestew
 manager: aaroncz
-ms.author: frankroj
+ms.author: mstewart
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-fundamentals
@@ -27,13 +27,13 @@ For information about features that are impacted when you upgrade from Windows 1
 
 The following topic lists features that are no longer being developed. These features might be removed in a future release.
 
-[Windows 10 features we're no longer developing](windows-10-deprecated-features.md)
+[Deprecated Windows features](deprecated-features.md)
 
 ## Features removed
 
 The following topics have details about features that have been removed from Windows 10 or Windows 11. This includes features that are present in Windows 10, but are removed in Windows 11.
 
-[Windows 10 features we removed](windows-10-removed-features.md)
+[Removed Windows features](removed-features.md)
 
 ## Terminology
 
@@ -47,4 +47,4 @@ The following terms can be used to describe the status that might be assigned to
 
 ## Also see
 
-[Windows 10 release information](/windows/release-health/release-information)
+[Windows release information](/windows/release-health/release-information)

@@ -20174,6 +20174,21 @@
       "source_path": "windows/configuration/start-layout-troubleshoot.md",
       "redirect_url": "/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors",
       "redirect_document_id": false
-    }  
+    },
+    {
+      "source_path": "windows/deployment/planning/features-lifecycle.md",
+      "redirect_url": "/windows/whats-new/feature-lifecycle",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/planning/windows-10-deprecated-features.md",
+      "redirect_url": "/windows/whats-new/deprecated-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-removed-features.md",
+      "redirect_url": "/windows/whats-new/removed-features",
+      "redirect_document_id": false
+    }               
   ]
 }
