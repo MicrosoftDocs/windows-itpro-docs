@@ -62,16 +62,11 @@
         - name: Features removed or planned for replacement
           items:
             - name: Windows client features lifecycle
-              href: planning/features-lifecycle.md
-            - name: Features we're no longer developing
-              items:
-                - name: Windows deprecated features
-                  href: planning/windows-10-deprecated-features.md
-            - name: Features we removed
-              items:
-                - name: Windows features removed
-                  href: planning/windows-10-removed-features.md       
-
+              href: /windows/whats-new/feature-lifecycle?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+            - name: Deprecated features
+              href: /windows/whats-new/deprecated-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+            - name: Removed features
+              href: /windows/whats-new/removed-features?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json   
     - name: Prepare
       items: 
         - name: Prepare for Windows 11
