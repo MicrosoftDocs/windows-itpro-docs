@@ -37,7 +37,7 @@ The following topics have details about features that have been removed from Win
 
 ## Terminology
 
-The following terms can be used to describe the status that might be assigned to a feature during its lifecycle. 
+The following terms can be used to describe the status that might be assigned to a feature during its lifecycle: 
 
 - **Deprecation**: The stage of the product lifecycle when a feature or functionality is no longer in active development and may be removed in future releases of a product or online service.
 - **End of support**: The stage of the product lifecycle when support and servicing are no longer available for a product.

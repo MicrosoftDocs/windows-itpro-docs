@@ -59,6 +59,14 @@
           href: planning/windows-10-infrastructure-requirements.md
         - name: Plan for volume activation
           href: volume-activation/plan-for-volume-activation-client.md
+        - name: Features removed or planned for replacement
+          items:
+            - name: Windows client features lifecycle
+              href: /windows/whats-new/feature-lifecycle
+            - name: Deprecated features
+              href: /windows/whats-new/deprecated-features
+            - name: Removed features
+              href: /windows/whats-new/removed-features   
     - name: Prepare
       items: 
         - name: Prepare for Windows 11
