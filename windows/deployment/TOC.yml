@@ -453,18 +453,6 @@
                           href: usmt/usmt-reroute-files-and-settings.md
                         - name: Verify the Condition of a Compressed Migration Store
                           href: usmt/verify-the-condition-of-a-compressed-migration-store.md
-                        - name: USMT Troubleshooting
-                          href: usmt/usmt-troubleshooting.md
-                        - name: Common Issues
-                          href: usmt/usmt-common-issues.md
-                        - name: Frequently Asked Questions
-                          href: usmt/usmt-faq.yml
-                        - name: Log Files
-                          href: usmt/usmt-log-files.md
-                        - name: Return Codes
-                          href: usmt/usmt-return-codes.md
-                        - name: USMT Resources
-                          href: usmt/usmt-resources.md
         
                     - name: USMT Reference
                       items:
@@ -532,7 +520,22 @@
                           href: usmt/usmt-xml-elements-library.md
                         - name: Offline Migration Reference
                           href: usmt/offline-migration-reference.md
-        
+
+                    - name: Troubleshoot USMT
+                      items:
+                        - name: USMT Troubleshooting
+                          href: usmt/usmt-troubleshooting.md
+                        - name: USMT Common Issues
+                          href: /troubleshoot/windows-client/deployment/usmt-common-issues
+                        - name: USMT Frequently Asked Questions
+                          href: usmt/usmt-faq.yml
+                        - name: USMT Log Files
+                          href: usmt/usmt-log-files.md
+                        - name: USMT Return Codes
+                          href: /troubleshoot/windows-client/deployment/usmt-return-codes
+                        - name: USMT Resources
+                          href: usmt/usmt-resources.md
+
             - name: Application Compatibility Toolkit (ACT) Technical Reference
               items:
                 - name: SUA User's Guide

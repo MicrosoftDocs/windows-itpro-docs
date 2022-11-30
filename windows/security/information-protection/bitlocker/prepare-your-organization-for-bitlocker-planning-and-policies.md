@@ -17,7 +17,7 @@ ms.technology: itpro-security
 
 # Prepare an organization for BitLocker: Planning and policies
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11

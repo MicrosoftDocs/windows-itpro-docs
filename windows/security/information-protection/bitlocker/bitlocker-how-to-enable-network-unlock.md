@@ -17,7 +17,7 @@ ms.technology: itpro-security
 
 # BitLocker: How to enable Network Unlock
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11
