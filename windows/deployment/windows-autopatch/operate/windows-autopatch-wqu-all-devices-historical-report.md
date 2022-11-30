@@ -23,7 +23,7 @@ The historical All devices report provides a visual representation of the update
 1. Select the **Reports** tab.
 1. Select **All devices report—historical**.
 
-:::image type="content" source="../media/windows-autopatch-all-devices-historical-report.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-all-devices-historical-report.png":::
+:::image type="content" source="../media/windows-autopatch-all-devices-historical-report.png" alt-text="All devices—historical report" lightbox="../media/windows-autopatch-all-devices-historical-report.png":::
 
 > [!TIP]
 > This report provides a time stamp of when the report trend was last generated and can be seen at the top of the page.
