@@ -25,7 +25,7 @@ Options used with the `/extract` option can specify:
 
 In addition, you can specify the file patterns that you want to extract by using the `/i` option to include file patterns or the `/e` option to exclude file patterns. When both the `/i` option and the `/e` option are used in the same command, include patterns take precedence over exclude patterns. Note that this is different from the include and exclude rules used in the **ScanState** and **LoadState** tools.
 
-### To run the UsmtUtils tool with the /extract option
+## To run the UsmtUtils tool with the /extract option
 
 To extract files from the compressed migration store onto the destination computer, use the following UsmtUtils syntax:
 
@@ -93,6 +93,6 @@ In this example, if there is a myProject.exe file, it will also be extracted bec
 
 [UsmtUtils syntax](usmt-utilities.md)
 
-[Return codes](usmt-return-codes.md)
+[Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes)
 
 [Verify the condition of a compressed migration store](verify-the-condition-of-a-compressed-migration-store.md)
