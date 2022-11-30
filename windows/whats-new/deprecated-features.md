@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
-ms.date: 10/28/2022
+ms.date: 11/30/2022
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -23,7 +23,7 @@ Each version of Windows client adds new features and functionality. Occasionally
 
 For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
-To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](feature-lifecycle.md).
+To understand the distinction between *deprecation* and *removal*, see [Windows client features lifecycle](feature-lifecycle.md).
 
 The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 
@@ -34,6 +34,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| 32-bit Arm Universal Windows Platform (UWP) Applications <!--7116112-->| This change is applicable only to devices using versions of Windows designed for Arm processors, for example, Qualcomm processors. This content isn't applicable to PCs built with processors from Intel or AMD.</br> </br> Support for 32-bit Arm applications will be removed in a future release of Windows 11. 64-bit Arm applications are preferred and provide the best customer experience. While there may be a noticeable difference in performance, x64 and x86 applications will also continue to be supported for use on Windows devices with Arm processors. If you're unsure of the status of your application, check with the publisher or application developer to ask about their 64-bit Arm application support. For more information about the technical details for this change, see  [**link to dev article**]. | ?December 2022?
 | Windows Information Protection <!-- 6010051 --> | [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) will no longer be developed in future versions of Windows. For more information, see [Announcing sunset of Windows Information Protection (WIP)](https://go.microsoft.com/fwlink/?linkid=2202124).<br> <br>For your data protection needs, Microsoft recommends that you use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp). | July 2022 |
 | BitLocker To Go Reader | **Note: BitLocker to Go as a feature is still supported.**<br>Reading of BitLocker-protected removable drives ([BitLocker To Go](/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)) from Windows XP or Windows Vista in later operating systems is deprecated and might be removed in a future release of Windows client.<br>The following items might not be available in a future release of Windows client:<br>- ADMX policy: **Allow access to BitLocker-protected removable data drives from earlier versions of Windows**<br>- Command line parameter: [`manage-bde -DiscoveryVolumeType`](/windows-server/administration/windows-commands/manage-bde-on) (-dv)<br>- Catalog file: **c:\windows\BitLockerDiscoveryVolumeContents**<br>- BitLocker 2 Go Reader app: **bitlockertogo.exe** and associated files  | 21H1 |
 | Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
