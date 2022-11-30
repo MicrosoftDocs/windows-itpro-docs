@@ -23,7 +23,7 @@ The All devices report provides a per device view of the current update status f
 1. Select the **Reports** tab.
 1. Select **All devices report**.
 
-:::image type="content" source="../media/windows-autopatch-all-devices-report.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-all-devices-report.png":::
+:::image type="content" source="../media/windows-autopatch-all-devices-report.png" alt-text="All devices report" lightbox="../media/windows-autopatch-all-devices-report.png":::
 
 > [!NOTE]
 > The data in this report is refreshed every 24 hours. The last refreshed on date/time can be seen at the top of the page.
