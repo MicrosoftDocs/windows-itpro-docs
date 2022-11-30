@@ -19,7 +19,8 @@ ms.technology: itpro-configure
 
 - Windows 10
 
->For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
+> [!TIP]
+> For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 IT pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store.
 
