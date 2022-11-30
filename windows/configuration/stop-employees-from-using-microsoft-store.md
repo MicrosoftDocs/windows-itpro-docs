@@ -105,7 +105,7 @@ If you're using Microsoft Store for Business and you want employees to only see 
 
 **To show private store only in Microsoft Store app:**
 
-1. Type **`gpedit`** in the search bar, and then select **Edit group policy (Control panel)** to find and start Group Policy Editor.
+1. Enter **`gpedit`** in the search bar, and then select **Edit group policy (Control panel)** to find and start Group Policy Editor.
 
 2. In the console tree of the snap-in, go to **User Configuration** or **Computer Configuration** > **Administrative Templates** > **Windows Components**, and then select **Store**.
 
