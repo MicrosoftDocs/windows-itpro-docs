@@ -23,7 +23,7 @@ The historical Eligible devices report provides a visual representation of the u
 1. Select the **Reports** tab.
 1. Select **Eligible devices report—historical**.
 
-:::image type="content" source="../media/windows-autopatch-eligible-devices-historical-report.png" alt-text="Overview of the device registration process" lightbox="../media/windows-autopatch-eligible-devices-historical-report.png":::
+:::image type="content" source="../media/windows-autopatch-eligible-devices-historical-report.png" alt-text="Eligible devices—historical report" lightbox="../media/windows-autopatch-eligible-devices-historical-report.png":::
 
 > [!NOTE]
 > This report provides a time stamp of when the report trend was last generated and can be seen at the top of the page.
