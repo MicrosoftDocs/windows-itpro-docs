@@ -29,11 +29,11 @@ IT pros can configure access to Microsoft Store for client computers in their or
 
 ## Options to configure access to Microsoft Store
 
-You can use these tools to configure access to Microsoft Store: AppLocker or Group Policy. For Windows 10, this is only supported on Windows 10 Enterprise edition.
+You can use these tools to configure access to Microsoft Store: AppLocker or Group Policy. For Windows 10, this is only supported on Windows 10 Enterprise edition.
 
 ## <a href="" id="block-store-applocker"></a>Block Microsoft Store using AppLocker
 
-Applies to: Windows 10 Enterprise, Windows 10 Education
+Applies to: Windows 10 Enterprise, Windows 10 Education
 
 
 AppLocker provides policy-based access control management for applications. You can block access to Microsoft Store app with AppLocker by creating a rule for packaged apps. You'll give the name of the Microsoft Store app as the packaged app that you want to block from client computers.
@@ -79,7 +79,7 @@ For more information on the rules available via AppLocker on the different suppo
 ## <a href="" id="block-store-group-policy"></a>Block Microsoft Store using Group Policy
 
 
-Applies to: Windows 10 Enterprise, Windows 10 Education 
+Applies to: Windows 10 Enterprise, Windows 10 Education 
 
 > [!Note]
 > Not supported on Windows 10 Pro, starting with version 1511. For more info, see [Knowledge Base article #3135657](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
@@ -101,7 +101,7 @@ You can also use Group Policy to manage access to Microsoft Store.
 
 ## Show private store only using Group Policy 
 
-Applies to Windows 10 Enterprise, Windows 10 Education
+Applies to Windows 10 Enterprise, Windows 10 Education
 
 If you're using Microsoft Store for Business and you want employees to only see apps you're managing in your private store, you can use Group Policy to show only the private store. Microsoft Store app will still be available, but employees can't view or purchase apps. Employees can view and install apps that the admin has added to your organization's private store. 
 
@@ -124,4 +124,4 @@ If you're using Microsoft Store for Business and you want employees to only see 
 [Manage access to private store](/microsoft-store/manage-access-to-private-store)
 
 
- 
+ 
