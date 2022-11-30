@@ -72,7 +72,7 @@ For more information, see [Configure an MDM provider](/microsoft-store/configure
 For more information on the rules available via AppLocker on the different supported operating systems, see [Operating system requirements](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker#operating-system-requirements).
 
 > [!IMPORTANT]
-> If you block access to the Store using CSP you need to also configure [AllowAppStoreAutoUpdate](//windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) to enable in-box store apps to update while still blocking access to the store
+> If you block access to the Store using CSP, you need to also configure [AllowAppStoreAutoUpdate](../client-management/mdm/policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate) to enable in-box store apps to update while still blocking access to the store.
 
 ## Block Microsoft Store using Group Policy
 
