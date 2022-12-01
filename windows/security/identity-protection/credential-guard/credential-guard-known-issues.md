@@ -24,6 +24,9 @@ Windows Defender Credential Guard has certain application requirements. Windows 
 
 ## Known Issue: Single Sign-On (SSO) for Network services breaks after upgrading to **Windows 11, version 22H2**  
 
+### Symptoms of the issue:  
+Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication will be unable to use SSO to login and will be forced to manually re-authenticate in every new Windows session when Windows Defender Credential Guard is running.  
+
 ### Affected devices:  
 Any device that enables Windows Defender Credential Guard may encounter this issue. As part of the Windows 11, version 22H2 update, eligible devices which had not previously explicitly disabled Windows Defender Credential Guard had it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses*, as long as they met the [minimum hardware requirements](credential-guard-requirements.md#hardware-and-software-requirements). 
   
@@ -33,16 +36,15 @@ Any device that enables Windows Defender Credential Guard may encounter this iss
 > To determine if your Pro device will receive default enablement when upgraded to **Windows 11, version 22H2**, do the following **before** upgrading:  
 > Check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`. If it is present, the device will have Windows Defender Credential Guard enabled after upgrading. Note that Windows Defender Credential Guard can be disabled after upgrade by following the [disablement instructions](credential-guard-manage#disable-windows-defender-credential-guard).
 
-### Symptoms of the issue:  
-Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication will be unable to use SSO to login and will be forced to manually re-authenticate in every new Windows session.  
-
 ### Why this is happening:  
-Applications and services are affected by this issue when they rely on insecure protocols that use password-based authentication. Windows Defender Credential Guard blocks the use of these insecure protocols by design. Affected procols include:
+Applications and services are affected by this issue when they rely on insecure protocols that use password-based authentication. Windows Defender Credential Guard blocks the use of these insecure protocols by design. These protocols are considered insecure because they can lead to password disclosure on the client and the server, which is in direct contradiction to the goals of Windows Defender Credential Guard. Affected procols include:
   - Kerberos unconstrained delegation (both SSO and supplied credentials are blocked)
   - Kerberos when PKINIT uses RSA encryption instead of Diffie-Hellman (both SSO and supplied credentials are blocked)
-  - WDigest (only SSO is blocked)
-  - NTLM v1 (only SSO is blocked)
   - MS-CHAP (only SSO is blocked)
+  - WDigest (only SSO is blocked)
+  - NTLM v1 (only SSO is blocked)  
+  
+Since only SSO is blocked for MS-CHAP, WDigest, and NTLM v1, these protocols can still be used by prompting the user to supply credentials.
 
 ### Options to fix the issue:  
 
@@ -51,7 +53,7 @@ Microsoft recommends that organizations move away from MSCHAPv2-based connection
 For a more immediate but less secure fix, simply [disable Windows Defender Credential Guard](credential-guard-manage#disable-windows-defender-credential-guard). Note that Windows Defender Credential Guard does not have per-protocol or per-application policies, and must either be completely on or off. Disabling Windows Defender Credential Guard will leave some stored domain credentials vulnerable to theft. Windows Defender Credential Guard can be disabled after it has already been enabled, or it can be explicitly disabled prior to updating to Windows 11, version 22H2, which will prevent default enablement from occurring.  
 
 > [!TIP]
-> To _prevent_ default enablement, [use Group Policy to explicitly disable Windows Defender Credential Guard](credential-guard-manage#disabling-windows-defender-credential-guard-using-group-policy) before updating to Windows 11, version 22H2. If the GPO value is not configured (it typically is not configured by default), the device will receive default enablement after updating, if eligible. If the GPO value is set to "disabled", it will not be enabled after updating.  
+> To _prevent_ default enablement, [use Group Policy to explicitly disable Windows Defender Credential Guard](credential-guard-manage#disabling-windows-defender-credential-guard-using-group-policy) before updating to Windows 11, version 22H2. If the GPO value is not configured (it typically is not configured by default), the device will receive default enablement after updating, if eligible. If the GPO value is set to "disabled", it will not be enabled after updating. This process can also be done via Mobile Device Management (MDM) policy rather than Group Policy if the devices are currently being managed by MDM.  
 
 > [!NOTE]
 > MS-CHAP and NTLMv1 are particularly relevant to the observed SSO breakage after the Windows 11, version 22H2 update. To confirm whether Windows Defender Credential Guard is blocking either of these protocols, check the NTLM event logs for the following warning and/or error:  
