@@ -21,7 +21,7 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildin
 |[Windows 10 deployment considerations](windows-10-deployment-considerations.md) |There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications. |
 |[Windows 10 compatibility](windows-10-compatibility.md) |Windows 10 will be compatible with most existing PC hardware; most devices running Windows 7, Windows 8, or Windows 8.1 will meet the requirements for Windows 10. |
 |[Windows 10 infrastructure requirements](windows-10-infrastructure-requirements.md) |There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization. |
-|[Features removed or planned for replacement](features-lifecycle.md) |Information is provided about Windows 10 features and functionality that are removed or planned for replacement. |
+|[Features removed or planned for replacement](/windows/whats-new/feature-lifecycle) |Information is provided about Windows features and functionality that are removed or planned for replacement. |
 |[Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md) |The Microsoft® Application Compatibility Toolkit (ACT) helps you determine whether the applications, devices, and computers in your organization are compatible with versions of the Windows® operating system. |
 
 ## Related topics

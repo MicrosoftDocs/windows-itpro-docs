@@ -1,12 +1,12 @@
 ---
-title: Deprecated features in Windows client
+title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
 ms.date: 10/28/2022
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
+author: mestew
+ms.author: mstewart
 manager: aaroncz
 ms.reviewer: 
 ms.topic: article
@@ -19,11 +19,11 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client. For more information about features that have been removed, see [Windows features removed](windows-10-removed-features.md).
+Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client. For more information about features that have been removed, see [Windows features removed](removed-features.md).
 
 For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
-To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](features-lifecycle.md).
+To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](feature-lifecycle.md).
 
 The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 

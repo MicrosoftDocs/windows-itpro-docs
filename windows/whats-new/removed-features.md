@@ -3,8 +3,8 @@ title: Features and functionality removed in Windows client
 description: In this article, learn about the features and functionality that have been removed or replaced in Windows client.
 ms.prod: windows-client
 ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
+author: mestew
+ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
@@ -21,14 +21,14 @@ ms.date: 10/28/2022
 
 Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionality that have been removed in Windows client.
 
-For more information about features that might be removed in a future release, see [Deprecated features for Windows client](windows-10-deprecated-features.md).
+For more information about features that might be removed in a future release, see [Deprecated features for Windows client](deprecated-features.md).
 
 > [!NOTE]
 > To get early access to new Windows builds and test these changes yourself, join the [Windows Insider program](https://insider.windows.com).
 
 For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
-To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](features-lifecycle.md).
+To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](feature-lifecycle.md).
 
 The following features and functionalities have been removed from the installed product image for Windows client. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
