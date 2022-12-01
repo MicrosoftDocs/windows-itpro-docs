@@ -318,9 +318,6 @@ Specifies whether new non-admin AAD accounts should auto-connect to pre-created 
 <!-- EnableFastFirstSignIn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-> [!WARNING]
-> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time.
-
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
 > [!IMPORTANT]
