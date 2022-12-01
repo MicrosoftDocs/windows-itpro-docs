@@ -34,7 +34,7 @@ Any device that enables Windows Defender Credential Guard may encounter this iss
 
 > [!TIP]
 > To determine if your Pro device will receive default enablement when upgraded to **Windows 11, version 22H2**, do the following **before** upgrading:  
-> Check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`. If it is present, the device will have Windows Defender Credential Guard enabled after upgrading. Note that Windows Defender Credential Guard can be disabled after upgrade by following the [disablement instructions](credential-guard-manage#disable-windows-defender-credential-guard).
+> Check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`. If it is present, the device will have Windows Defender Credential Guard enabled after upgrading. Note that Windows Defender Credential Guard can be disabled after upgrade by following the [disablement instructions](credential-guard-manage.md#disable-windows-defender-credential-guard).
 
 ### Why this is happening:  
 Applications and services are affected by this issue when they rely on insecure protocols that use password-based authentication. Windows Defender Credential Guard blocks the use of these insecure protocols by design. These protocols are considered insecure because they can lead to password disclosure on the client and the server, which is in direct contradiction to the goals of Windows Defender Credential Guard. Affected procols include:
@@ -44,19 +44,10 @@ Applications and services are affected by this issue when they rely on insecure 
   - WDigest (only SSO is blocked)
   - NTLM v1 (only SSO is blocked)  
   
-Since only SSO is blocked for MS-CHAP, WDigest, and NTLM v1, these protocols can still be used by prompting the user to supply credentials.
-
-### Options to fix the issue:  
-
-Microsoft recommends that organizations move away from MSCHAPv2-based connections such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication such as PEAP-TLS or EAP-TLS. Windows Defender Credential Guard will not block certificate-based authentication.  
-
-For a more immediate but less secure fix, simply [disable Windows Defender Credential Guard](credential-guard-manage#disable-windows-defender-credential-guard). Note that Windows Defender Credential Guard does not have per-protocol or per-application policies, and must either be completely on or off. Disabling Windows Defender Credential Guard will leave some stored domain credentials vulnerable to theft. Windows Defender Credential Guard can be disabled after it has already been enabled, or it can be explicitly disabled prior to updating to Windows 11, version 22H2, which will prevent default enablement from occurring.  
-
-> [!TIP]
-> To _prevent_ default enablement, [use Group Policy to explicitly disable Windows Defender Credential Guard](credential-guard-manage#disabling-windows-defender-credential-guard-using-group-policy) before updating to Windows 11, version 22H2. If the GPO value is not configured (it typically is not configured by default), the device will receive default enablement after updating, if eligible. If the GPO value is set to "disabled", it will not be enabled after updating. This process can also be done via Mobile Device Management (MDM) policy rather than Group Policy if the devices are currently being managed by MDM.  
+Since only SSO is blocked for MS-CHAP, WDigest, and NTLM v1, these protocols can still be used by prompting the user to supply credentials.  
 
 > [!NOTE]
-> MS-CHAP and NTLMv1 are particularly relevant to the observed SSO breakage after the Windows 11, version 22H2 update. To confirm whether Windows Defender Credential Guard is blocking either of these protocols, check the NTLM event logs for the following warning and/or error:  
+> MS-CHAP and NTLMv1 are particularly relevant to the observed SSO breakage after the Windows 11, version 22H2 update. To confirm whether Windows Defender Credential Guard is blocking either of these protocols, check the NTLM event logs in Event Viewer at `Application and Services Logs\Microsoft\Windows\NTLM\Operational` for the following warning and/or error:  
   >  
   > **Event ID 4013** (Warning)  
   > ```
@@ -74,6 +65,15 @@ For a more immediate but less secure fix, simply [disable Windows Defender Crede
   >    value="Attempt to get credential key by call package blocked by Credential Guard.%n%nCalling Process Name: %1%nService Host Tag: %2"  
   > />  
   > ```
+
+### Options to fix the issue:  
+
+Microsoft recommends that organizations move away from MSCHAPv2-based connections such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication such as PEAP-TLS or EAP-TLS. Windows Defender Credential Guard will not block certificate-based authentication.  
+
+For a more immediate but less secure fix, simply [disable Windows Defender Credential Guard](credential-guard-manage.md#disable-windows-defender-credential-guard). Note that Windows Defender Credential Guard does not have per-protocol or per-application policies, and must either be completely on or off. Disabling Windows Defender Credential Guard will leave some stored domain credentials vulnerable to theft. Windows Defender Credential Guard can be disabled after it has already been enabled, or it can be explicitly disabled prior to updating to Windows 11, version 22H2, which will prevent default enablement from occurring.  
+
+> [!TIP]
+> To _prevent_ default enablement, [use Group Policy to explicitly disable Windows Defender Credential Guard](credential-guard-manage.md#disabling-windows-defender-credential-guard-using-group-policy) before updating to Windows 11, version 22H2. If the GPO value is not configured (it typically is not configured by default), the device will receive default enablement after updating, if eligible. If the GPO value is set to "disabled", it will not be enabled after updating. This process can also be done via Mobile Device Management (MDM) policy rather than Group Policy if the devices are currently being managed by MDM.  
 
 ## Known issues involving third-party applications
 
