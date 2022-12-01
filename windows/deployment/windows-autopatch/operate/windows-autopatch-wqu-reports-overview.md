@@ -64,8 +64,8 @@ Healthy devices are devices that meet all of the following prerequisites:
 
 | Sub status | Description |
 | ----- | ----- |
-| Up to Date | Devices are up to date with the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases) |
-| In Progress | Devices are currently installing the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases) |
+| Up to Date | Devices are up to date with the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases). |
+| In Progress | Devices are currently installing the latest quality update deployed through the [Windows Autopatch release schedule](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases). |
 | Paused | Devices that are currently paused due to a Windows Autopatch or customer-initiated Release Management pause. For more information, see [Pausing and resuming a release](../operate/windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release). |
 
 ### Not Up to Date (Microsoft Action)
