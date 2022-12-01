@@ -26,6 +26,9 @@ ms.topic: article
     The resources used for the preview and in the future when this product is ready for production will be free to you, like other caching solutions.
 
 2. **Hardware to host MCC**: The recommended configuration will serve approximately 35000 managed devices, downloading a 2 GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+  
+   > [!NOTE]
+   > Azure VMs are not currently supported. If you'd like to install your cache node on VMWare, see the [Appendix](mcc-enterprise-appendix.md) for a few additional configurations.
 
     **EFLOW Requires Hyper-V support**
     - On Windows client, enable the Hyper-V feature
