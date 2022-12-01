@@ -87,8 +87,6 @@
       href: merge-windows-defender-application-control-policies.md
     - name: Enforce WDAC policies
       href: enforce-windows-defender-application-control-policies.md
-    - name: Managing WDAC Policies with CI Tool
-      href: citool-commands.md
     - name: Use code signing to simplify application control for classic Windows applications
       href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
       items:
@@ -117,6 +115,8 @@
       href: operations/known-issues.md
     - name: Managed installer and ISG technical reference and troubleshooting guide
       href: configure-wdac-managed-installer.md
+    - name: Managing WDAC Policies with CI Tool
+      href: operations/citool-commands.md
 - name: WDAC AppId Tagging guide
   href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
   items:

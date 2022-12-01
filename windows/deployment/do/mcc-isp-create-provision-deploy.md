@@ -96,7 +96,7 @@ There are five IDs that the device provisioning script takes as input in order t
 
 | ID | Description |
 |---|---|
-| Customer ID | The Azure subscription ID that the cache node is created in. |
+| Customer ID | A unique alphanumeric ID that the cache nodes are associated with. |
 | Cache node ID | The unique alphanumeric ID of the cache node being provisioned. |
 | Customer key | The unique alphanumeric ID that provides secure authentication of the cache node to Delivery Optimization services. |
 | Registration key | Single use device registration key used by Microsoft Delivery Optimization services. |
@@ -108,10 +108,15 @@ There are five IDs that the device provisioning script takes as input in order t
 1. Open a terminal window in the directory where you would like to deploy your cache node and run the following command to change the access permission to the Bash script: 
 
     ```bash
-    sudo chmod +x installmcc.sh
+    sudo chmod +x provisionmcc.sh
     ```
 
-1. Run the deployment script that is shown for your cache node in Azure portal by copying and pasting the script in your terminal. The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
+1. Copy and paste the script command line shown in the Azure portal.
+
+1. Run the script in your server terminal for your cache node by . The script may take a few minutes to run. If there were no errors, you have set up your cache node successfully. To verify the server is set up correctly, follow the [verification steps](mcc-isp-verify-cache-node.md).
+
+    > [!NOTE]
+    > The same script can be used to provision multiple cache nodes, but the command line is unique per cache node. Additionally, if you need to reprovision your server or provision a new server or VM for the cache node, you must copy the command line from the Azure portal again as the "registrationkey" value is unique for each successful execution of the provisioning script.
 
 ### General configuration fields
 
@@ -124,9 +129,13 @@ There are five IDs that the device provisioning script takes as input in order t
 
 ### Storage fields
 
+> [!IMPORTANT]
+> All cache drives must have read/write permissions set or the cache node will not function.
+> For example, in a terminal you can run: `sudo chmod 777 /path/to/cachedrive`
+
 | Field Name | Expected Value| Description |
 |---|---|---|
-| **Cache drive** | File path string | Up to 9 drives can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: /dev/folder/ |
+| **Cache drive** | File path string | Up to 9 drives can be configured for each cache node to configure cache storage. Enter the file path to each drive. For example: `/dev/folder/` Each cache drive should have read/write permissions configured. |
 | **Cache drive size in gigabytes** | Integer in GB | Set the size of each drive configured for the cache node. |
 
 ### Client routing fields

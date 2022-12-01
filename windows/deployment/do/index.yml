@@ -102,4 +102,6 @@ landingContent:
             url: delivery-optimization-proxy.md
           - text: Content endpoints for Delivery Optimization and Microsoft Connected Cache
             url: delivery-optimization-endpoints.md
+          - text: Testing Delivery Optimization
+            url: delivery-optimization-test.md
 

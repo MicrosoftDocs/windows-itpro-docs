@@ -92,7 +92,7 @@ It isn't necessary to estimate the size of a hard-link migration store since har
 
 Separate hard-link migration stores are created on each NTFS volume that contain data being migrated. In this scenario, the primary migration-store location will be specified on the command line, and should be the operating-system volume. Migration stores with identical names and directory names will be created on every volume containing data being migrated. For example:
 
-  ``` syntax 
+  ```cmd 
   ScanState.exe /hardlink c:\USMTMIG […]
   ```
 
@@ -144,7 +144,7 @@ A new section in the `Config.xml` file allows optional configuration of some of 
 
 The following XML sample specifies that files locked by an application under the `\Users` directory can remain in place during the migration. It also specifies that locked files that aren't located in the `\Users` directory should result in the **File in Use** error. It's important to exercise caution when specifying the paths using the `<createhardlink>`** tag in order to minimize scenarios that make the hard-link migration store more difficult to delete.
 
-``` xml
+```xml
 <Policies>
     <HardLinkStoreControl>
           <fileLocked>

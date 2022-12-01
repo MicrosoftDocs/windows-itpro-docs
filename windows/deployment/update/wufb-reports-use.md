@@ -8,11 +8,11 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/06/2022
+ms.date: 11/15/2022
 ms.technology: itpro-updates
 ---
 
-# Use Windows Update for Business reports (preview)
+# Use Windows Update for Business reports
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 

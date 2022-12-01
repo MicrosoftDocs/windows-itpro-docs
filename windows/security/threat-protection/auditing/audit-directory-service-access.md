@@ -1,6 +1,6 @@
 ---
 title: Audit Directory Service Access (Windows 10)
-description: The policy setting Audit Directory Service Access determines if audit events are generated when an Active Directory Domain Services (ADA DS) object is accessed.
+description: The policy setting Audit Directory Service Access determines if audit events are generated when an Active Directory Domain Services (AD DS) object is accessed.
 ms.assetid: ba2562ba-4282-4588-b87c-a3fcb771c7d0
 ms.reviewer: 
 manager: aaroncz
