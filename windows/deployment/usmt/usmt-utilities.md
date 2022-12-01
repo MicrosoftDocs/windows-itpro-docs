@@ -97,4 +97,4 @@ Some examples of `/extract` commands:
 
 [User State Migration Tool (USMT) command-line syntax](usmt-command-line-syntax.md)
 
-[Return codes](usmt-return-codes.md)
+[Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes)

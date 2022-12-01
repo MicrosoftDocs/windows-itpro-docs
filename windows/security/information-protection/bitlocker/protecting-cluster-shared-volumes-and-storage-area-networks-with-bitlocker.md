@@ -16,7 +16,7 @@ ms.technology: itpro-security
 
 # Protecting cluster shared volumes and storage area networks with BitLocker
 
-*Applies to:*
+**Applies to:**
 
 - Windows Server 2016 and above
 

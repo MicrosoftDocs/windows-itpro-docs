@@ -6,12 +6,10 @@ summary: Set up peer to peer downloads for Windows Updates and learn about Micro
 metadata:
   title: Delivery Optimization # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about using peer to peer downloads on Windows clients and learn about Microsoft Connected Cache. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
-  ms.topic: landing-page # Required
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.technology: itpro-updates
   ms.collection:
-    - windows-10
     - highpri
   author: aczechowski
   ms.author: aaroncz

@@ -19,10 +19,10 @@ The following table describes articles that address common User State Migration 
 
 | Link | Description |
 |--- |--- |
-|[Common Issues](usmt-common-issues.md)|Find troubleshooting solutions for common problems in USMT.|
+|[Common Issues](/troubleshoot/windows-client/deployment/usmt-common-issues)|Find troubleshooting solutions for common problems in USMT.|
 |[Frequently Asked Questions](usmt-faq.yml)|Find answers to questions about how to use USMT.|
 |[Log Files](usmt-log-files.md)|Learn how to enable logging to help you troubleshoot issues in USMT.|
-|[Return Codes](usmt-return-codes.md)|Learn how to use return codes to identify problems in USMT.|
+|[Return Codes](/troubleshoot/windows-client/deployment/usmt-return-codes)|Learn how to use return codes to identify problems in USMT.|
 |[USMT Resources](usmt-resources.md)|Find more information and support for using USMT.|
 
 ## Related articles

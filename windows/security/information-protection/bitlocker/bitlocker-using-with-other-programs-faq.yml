@@ -3,8 +3,8 @@ metadata:
   title: Using BitLocker with other programs FAQ (Windows 10)
   description: Learn how to integrate BitLocker with other software on a device.
   ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-  ms.reviewer: 
-  ms.prod: m365-security
+  ms.prod: windows-client
+  ms.technology: itpro-security
   ms.mktglfcycl: explore
   ms.sitesec: library
   ms.pagetype: security
@@ -19,7 +19,7 @@ metadata:
   ms.custom: bitlocker
 title: Using BitLocker with other programs FAQ
 summary: |
-  *Applies to:*
+  **Applies to:**
   - Windows 10
   - Windows 11
   - Windows Server 2016 and above
