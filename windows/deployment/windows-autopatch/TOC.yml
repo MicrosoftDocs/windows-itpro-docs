@@ -100,3 +100,8 @@
           href: references/windows-autopatch-privacy.md
         - name: Windows Autopatch preview addendum
           href: references/windows-autopatch-preview-addendum.md
+    - name: What's new
+      href:
+      items: 
+        - name: What's new 2022
+          href: whats-new/windows-autopatch-whats-new-2022.md
