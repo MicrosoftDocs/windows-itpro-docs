@@ -19,16 +19,16 @@ ms.topic: article
 
 ### Troubleshooting
 
-If you're not able to sign up for a Microsoft Azure subscription with the error: **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** See [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
-
-Also see [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
+If you're not able to sign up for a Microsoft Azure subscription with the **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** error, see the following articles:
+- [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
+- [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
 
 ## Installing on VMWare
 
-We have seen that Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMWare. To do so, there are a couple of additional configurations to be made:
+We've seen that Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMWare. To do so, there are a couple of additional configurations to be made:
 
-1. Ensure that you are using ESX. In the VM settings, turn on the option **"Expose hardware assisted virtualization to the guest OS".**
-1. Using the HyperV Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"**, **"Allow forged transmits"**, and **"Allow MAC changes"** are all switched to "Yes". 
+1. Ensure that you're using ESX. In the VM settings, turn on the option **Expose hardware assisted virtualization to the guest OS**.
+1. Using the HyperV Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"**, **"Allow forged transmits"**, and **"Allow MAC changes"** are all switched to **Yes**.
 
 ## Diagnostics Script
 
