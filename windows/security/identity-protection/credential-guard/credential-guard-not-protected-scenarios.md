@@ -4,8 +4,8 @@ description: Scenarios not protected by Windows Defender Credential Guard in Win
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
-ms.author: zwhittington
-ms.reviewer: erikdau
+ms.author: paoloma
+ms.reviewer: zwhittington
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
