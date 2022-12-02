@@ -42,7 +42,8 @@ To create a catalog file for an existing app, you can use a tool called **Packag
 
 1. Apply a WDAC policy in **audit mode** to the computer where you'll run Package Inspector. Package Inspector will use audit events to include hashes in the catalog file for any temporary installation files that are added and then removed from the computer during the installation process. The audit mode policy should **not** allow the app's binaries or you may miss some critical files that are needed in the catalog file.
 
-    > [!NOTE] You won't be able to complete this process if it's done on a system with an enforced WDAC policy, unless the enforced policy already allows the app to run.
+    > [!NOTE]
+    > You won't be able to complete this process if it's done on a system with an enforced WDAC policy, unless the enforced policy already allows the app to run.
 
     You can use this PowerShell sample to make a copy of the DefaultWindows_Audit.xml template:
 
