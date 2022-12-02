@@ -53,7 +53,7 @@ By default, in new installations, Windows Defender Firewall with Advanced Securi
 
 If you turn off the Windows Defender Firewall service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
 
-Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This approach is the recommended one for third-party firewalls to coexist with the Windows Defender Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft. 
+Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This approach is the recommended one for third-party firewalls to coexist with the Windows Defender Firewall; third-party firewalls that comply with this recommendation have the certified logo from Microsoft.
 
 An organization typically uses this design as a first step toward a more comprehensive Windows Defender Firewall design that adds server isolation and domain isolation.
 
