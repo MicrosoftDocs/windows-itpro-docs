@@ -24,6 +24,9 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md) | Updated to include other policy managers in the Group policy section. |
+| [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the Device configuration, Microsoft Office and Edge policies |
+| [Windows quality update reports](../operate/windows-autopatch-wqu-reports-overview.md) | Added Windows quality update reports. |
 | [What's new](../whats-new/windows-autopatch-whats-new-2022.md) | Added the What's new article |
 
 ## November 2022
