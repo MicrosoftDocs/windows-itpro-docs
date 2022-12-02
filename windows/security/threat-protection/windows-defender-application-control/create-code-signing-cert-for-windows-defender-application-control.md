@@ -30,7 +30,7 @@ ms.technology: itpro-security
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signature, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
+As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signing, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
 
 If you have an internal CA, complete these steps to create a code signing certificate.
 
