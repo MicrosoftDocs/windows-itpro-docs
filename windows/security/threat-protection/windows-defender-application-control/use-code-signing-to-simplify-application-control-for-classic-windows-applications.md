@@ -42,7 +42,8 @@ App binaries and scripts are typically either embed-signed or catalog-signed. Em
 
 You can use catalog files to easily add a signature to an existing application without needing access to the original source files and without any expensive repackaging. You can even use catalog files to add your own signature to an ISV app when you don't want to trust everything the ISV signs directly, themselves. Then you just deploy the signed catalog along with the app to all your managed endpoints.
 
-> [!NOTE] Since catalogs identify the files they sign by hash, any change to the file may invalidate its signature. You will need to deploy updated catalog signatures any time the application is updated. Integrating code signing with your app development or app deployment processes is generally the best approach. Be aware of self-updating apps, as their app binaries may change without your knowledge.
+> [!NOTE]
+> Since catalogs identify the files they sign by hash, any change to the file may invalidate its signature. You will need to deploy updated catalog signatures any time the application is updated. Integrating code signing with your app development or app deployment processes is generally the best approach. Be aware of self-updating apps, as their app binaries may change without your knowledge.
 
 To learn how to create and manage catalog files for existing apps, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
 
