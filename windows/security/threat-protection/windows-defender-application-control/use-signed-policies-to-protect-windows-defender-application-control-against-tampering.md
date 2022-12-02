@@ -70,7 +70,7 @@ Before you attempt to deploy signed WDAC policy, you should first deploy an unsi
    cd $PolicyPath
    ```
 
-3. Add an **&lt;UpdatePolicySigner&gt;** rule to the WDAC policy for your policy signing certificate. If you're using the Device Guard Signing Service v2 (DGSS) to sign your policy, you can find the policy signer rule in your tenant's default policy, which you can download from [Get-DefaultPolicy](/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business#get-defaultpolicy).
+3. If your WDAC policy doesn't already include an **&lt;UpdatePolicySigner&gt;** rule for your policy signing certificate, you must add it. At least one **&lt;UpdatePolicySigner&gt;** rule must exist to convert your WDAC policy XML with [ConvertFrom-CiPolicy](/powershell/module/config-ci/convertfrom-cipolicy). If you're using the Device Guard Signing Service v2 (DGSS) to sign your policy, you can find the policy signer rule in your tenant's default policy, which you can download from [Get-DefaultPolicy](/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business#get-defaultpolicy).
 
    Otherwise, use [Add-SignerRule](/powershell/module/configci/add-signerrule) and create an **&lt;UpdatePolicySigner&gt;** rule from your certificate file (.cer). DGSS users can download the root certificate file from [Get-RootCertificate](/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business#get-rootcertificate). If you purchased a code signing certificate or issued one from your own public key infrastructure (PKI), you can export the certificate file.
 
