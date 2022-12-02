@@ -39,7 +39,7 @@ If you have an internal CA, complete these steps to create a code signing certif
 >
 > - All policies, including base and supplemental, must be signed according to the [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652).
 > - Use RSA keys with 2K, 3K, or 4K key size only. ECDSA isn't supported.
-> - Only use SHA-256 as the digest algorithm.
+> - You can use SHA-256, SHA-384, or SHA-512 as the digest algorithm on Windows 11, as well as Windows 10 and Windows Server 2019 and above after applying the November 2022 cumulative security update. All other devices only support SHA-256.
 > - Don't use UTF-8 encoding for certificate fields, like 'subject common name' and 'issuer common name'. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
 
 1. Open the Certification Authority Microsoft Management Console (MMC) snap-in, and then select your issuing CA.
