@@ -50,6 +50,19 @@
                       href: operate/windows-autopatch-wqu-end-user-exp.md
                     - name: Windows quality update signals
                       href: operate/windows-autopatch-wqu-signals.md
+                    - name: Windows quality update reports
+                      href: operate/windows-autopatch-wqu-reports-overview.md
+                      items:
+                        - name: Summary dashboard
+                          href: operate/windows-autopatch-wqu-summary-dashboard.md
+                        - name: All devices report
+                          href: operate/windows-autopatch-wqu-all-devices-report.md
+                        - name: All devices report—historical
+                          href: operate/windows-autopatch-wqu-all-devices-historical-report.md
+                        - name: Eligible devices report—historical
+                          href: operate/windows-autopatch-wqu-eligible-devices-historical-report.md
+                        - name: Ineligible devices report—historical
+                          href: operate/windows-autopatch-wqu-ineligible-devices-historical-report.md
                 - name: Windows feature updates
                   href: operate/windows-autopatch-fu-overview.md
                   items:
@@ -87,3 +100,8 @@
           href: references/windows-autopatch-privacy.md
         - name: Windows Autopatch preview addendum
           href: references/windows-autopatch-preview-addendum.md
+    - name: What's new
+      href:
+      items: 
+        - name: What's new 2022
+          href: whats-new/windows-autopatch-whats-new-2022.md

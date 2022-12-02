@@ -8,7 +8,7 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/01/2017
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ---
 
@@ -105,7 +105,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
    2. Find the variable names of the parameters in the ADMX file.
 
-      You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](mdm/policy-configuration-service-provider.md#appvirtualization-publishingallowserver2).
+      You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](mdm/policy-csp-appvirtualization.md#appvirtualization-publishingallowserver2).
 
       ![Publishing server 2 policy description.](images/admx-appv-policy-description.png)
 

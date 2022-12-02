@@ -18,7 +18,7 @@ ms.technology: itpro-security
 
 # BitLocker group policy settings
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11
