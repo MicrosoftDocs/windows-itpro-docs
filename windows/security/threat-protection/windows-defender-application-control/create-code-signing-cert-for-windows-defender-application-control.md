@@ -87,7 +87,7 @@ When this certificate template has been created, you must publish it to the CA p
 
 2. Select the WDAC Catalog signing certificate, and then select **OK**.
 
-Now that the template is available to be issued, you must request one from the computer running Windows 10 and Windows 11 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
+Now that the template is available to be issued, you must request one from the computer running Windows 10 or Windows 11 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
 
 1. In MMC, from the **File** menu, select **Add/Remove Snap-in**. Double-click **Certificates**, and then select **My user account**.
 
