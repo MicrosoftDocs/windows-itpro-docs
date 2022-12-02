@@ -134,7 +134,6 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | Respondus Lockdown Browser              | 2.0.9.00          | Win32    | Respondus                    |
 | Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
 | Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
-| Smoothwall monitor                      | 2.8.0             | Win32    | Smoothwall Ltd               |
 | SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
 | SuperNova Magnifier & Speech            | 21.02             | Win32    | Dolphin Computer Access      |  
 | VitalSourceBookShelf 	                  | 10.2.26.0         | Win32    | VitalSource Technologies Inc | 
