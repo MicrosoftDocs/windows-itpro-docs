@@ -101,7 +101,7 @@ Now that the template is available to be issued, you must request one from the c
 
     Figure 4. Get more information for your code signing certificate
 
-5. In the **Certificate Properties** dialog box, for **Type**, select **Common name**. For **Value**, select **$ContosoSigningCert**, and then select **Add**. When added, select **OK.**
+5. In the **Certificate Properties** dialog box, for **Type**, select **Common name**. For **Value**, specify a meaningful name for your certificate (in this example, we select **$ContosoSigningCert**), and then select **Add**. When added, select **OK.**
 
 6. Enroll and finish.
 
