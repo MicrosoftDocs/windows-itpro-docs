@@ -26,9 +26,9 @@ When you PXE-boot from a WDS server that uses the **boot.wim** file from install
 
 ## Deployment scenarios affected
 
-The table below provides support details for specific deployment scenarios. The table represents OS Deployed (vertical) and Boot Image Version (horizontal).
+The table below provides support details for specific deployment scenarios. Boot.wim is the `boot.wim` file obtained from the Windows source files for each specified version of Windows.
 
-||Windows 10|Windows Server 2016|Windows Server 2019|Windows Server 2022|Windows 11|
+|Windows Version Being Deployed |Boot.wim from Windows 10|Boot.wim from Windows Server 2016|Boot.wim from Windows Server 2019|Boot.wim from Windows Server 2022|Boot.wim from Windows 11|
 |--- |--- |--- |--- |--- |--- |
 |**Windows 10**|Supported, using a boot image from matching or newer version.|Supported, using a boot image from Windows 10, version 1607 or later.|Supported, using a boot image from Windows 10, version 1809 or later.|Not supported.|Not supported.|
 |**Windows Server 2016**|Supported, using a boot image from Windows 10, version 1607 or later.|Supported.|Not supported.|Not supported.|Not supported.|
