@@ -20,7 +20,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## December 2022
 
-### December feature release
+### December feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
@@ -31,7 +31,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## November 2022
 
-### November feature releases
+### November feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
@@ -48,7 +48,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## October 2022
 
-### October feature releases
+### October feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
@@ -63,7 +63,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## September 2022
 
-### September feature release
+### September feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
@@ -71,7 +71,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## August 2022
 
-### August feature release
+### August feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
@@ -85,7 +85,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## July 2022
 
-### July feature releases
+### July feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
