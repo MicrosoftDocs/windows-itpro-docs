@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 02/28/2018
+ms.date: 12/01/2022
 ms.technology: itpro-security
 ---
 
@@ -29,7 +29,7 @@ ms.technology: itpro-security
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signature, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
+As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signature, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
 
 If you have an internal CA, complete these steps to create a code signing certificate.
 
@@ -100,7 +100,7 @@ Now that the template is available to be issued, you must request one from the c
 
     Figure 4. Get more information for your code signing certificate
 
-5. In the **Certificate Properties** dialog box, for **Type**, select **Common name**. For **Value**, select **ContosoDGSigningCert**, and then select **Add**. When added, select **OK.**
+5. In the **Certificate Properties** dialog box, for **Type**, select **Common name**. For **Value**, select **$ContosoSigningCert**, and then select **Add**. When added, select **OK.**
 
 6. Enroll and finish.
 
@@ -118,9 +118,3 @@ This certificate must be installed in the user's personal store on the computer 
 4. Set a password, select an export path, and then select **WDACCatSigningCert.pfx** as the file name.
 
 When the certificate has been exported, import it into the personal store for the user who will be signing the catalog files or code integrity policies on the specific computer that will be signing them.
-
-## Related topics
-
-- [Windows Defender Application Control](windows-defender-application-control.md)
-
-- [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md)
