@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about how Group Policy works with Windows Powershell and Internet Explorer 11
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: e3607cde-a498-4e04-9daa-b331412967fc
 ms.reviewer: 
 audience: itpro

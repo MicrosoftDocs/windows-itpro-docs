@@ -1,20 +1,20 @@
 ---
 title: Activate using Active Directory-based activation
 description: Learn how active directory-based activation is implemented as a role service that relies on AD DS to store activation objects.
-manager: dougeby
-author: aczechowski
-ms.author: aaroncz
+manager: aaroncz
+author: frankroj
+ms.author: frankroj
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-ms.date: 09/16/2022
+ms.date: 11/07/2022
 ms.topic: how-to
 ms.collection: highpri
 ---
 
 # Activate using Active Directory-based activation
 
-**Applies to supported versions of**
+*Applies to:*
 
 - Windows
 - Windows Server
@@ -23,18 +23,18 @@ ms.collection: highpri
 > [!TIP]
 > Are you looking for information on retail activation?
 >
-> - [Product activation for Windows](https://support.microsoft.com/windows/product-activation-for-windows-online-support-telephone-numbers-35f6a805-1259-88b4-f5e9-b52cccef91a0)
-> - [Activate Windows](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227)
+> - [Activate Windows](https://support.microsoft.com/help/12440/)
+> - [Product activation for Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
-Active Directory-based activation is implemented as a role service that relies on AD DS to store activation objects. Active Directory-based activation requires that you update the forest schema using *adprep.exe* on a supported server OS. After the schema is updated, older domain controllers can still activate clients.
+Active Directory-based activation is implemented as a role service that relies on AD DS to store activation objects. Active Directory-based activation requires that you update the forest schema using `adprep.exe` on a supported server OS. After the schema is updated, older domain controllers can still activate clients.
 
 Any domain-joined computers running a supported OS with a Generic Volume License Key (GVLK) will be activated automatically and transparently. They'll stay activated as long as they remain members of the domain and maintain periodic contact with a domain controller. Activation takes place after the Licensing service starts. When this service starts, the computer contacts AD DS automatically, receives the activation object, and is activated without user intervention.
 
-To allow computers with GVLKs to activate themselves, use the Volume Activation Tools console or the [Volume Activation Management Tool (VAMT)](volume-activation-management-tool.md) in earlier versions of Windows Server to create an object in the AD DS forest. You create this activation object by submitting a KMS host key to Microsoft, as shown in Figure 10.
+To allow computers with GVLKs to activate themselves, use the Volume Activation Tools console, or the [Volume Activation Management Tool (VAMT)](volume-activation-management-tool.md) in earlier versions of Windows Server to create an object in the AD DS forest. You create this activation object by submitting a KMS host key to Microsoft, as shown in Figure 10.
 
 The process proceeds as follows:
 
-1. Do _one_ of the following tasks:
+1. Do *one* of the following tasks:
 
     - Install the Volume Activation Services server role on a domain controller. Then add a KMS host key by using the Volume Activation Tools Wizard.
 
@@ -134,6 +134,6 @@ To verify your Active Directory-based activation configuration, complete the fol
     >
     > To manage individual activations or apply multiple (mass) activations, use the [VAMT](./volume-activation-management-tool.md).
 
-## See also
+## Related articles
 
 [Volume Activation for Windows 10](volume-activation-windows-10.md)

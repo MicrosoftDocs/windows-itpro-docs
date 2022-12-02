@@ -1,13 +1,13 @@
 ---
 title: Policy CSP - DeviceInstallation
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 description: Use the Policy CSP - DeviceInstallation setting to specify a list of Plug and Play hardware IDs and compatible IDs for devices that Windows is allowed to install.
 ms.author: vinpa
 ms.date: 09/27/2019
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ---

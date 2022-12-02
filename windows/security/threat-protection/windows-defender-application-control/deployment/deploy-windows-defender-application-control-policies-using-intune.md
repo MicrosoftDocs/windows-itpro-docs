@@ -24,7 +24,7 @@ ms.topic: how-to
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
+You can use a Mobile Device Management (MDM) solution, like Microsoft Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
 
 ## Use Intune's built-in policies
 
@@ -61,7 +61,7 @@ The steps to use Intune's custom OMA-URI functionality are:
 2. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
     - **OMA-URI**: `./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy`
     - **Data type**: Base64 (file)
-    - **Certificate file**: upload your binary format policy file. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
+    - **Certificate file**: Upload your binary format policy file. To do this, change your {GUID}.cip file to {GUID}.bin. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf. 
 
     > [!div class="mx-imgBorder"]
     > ![Configure custom WDAC.](../images/wdac-intune-custom-oma-uri.png)

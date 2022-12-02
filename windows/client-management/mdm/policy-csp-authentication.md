@@ -3,8 +3,8 @@ title: Policy CSP - Authentication
 description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign-in screen.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: bobgil
@@ -465,18 +465,18 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time.
+> The Web sign-in feature is intended for recovery purposes in the event a password is not available as an authentication method. Web sign-in only supports Temporary Access Pass as an authentication method for Azure Active Directory, unless it is being used in a limited federated scope. 
 
-"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
+"Web sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
 > [!Note]
-> Web Sign-in is only supported on Azure AD Joined PCs.
+> Web sign-in is only supported on Azure AD Joined PCs.
 
 Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Web Credential Provider will be enabled for a sign in.
-- 2 - Disabled. Web Credential Provider won't be enabled for a sign in.
+- 1 - Enabled. Web Credential Provider will be enabled for a sign-in.
+- 2 - Disabled. Web Credential Provider won't be enabled for a sign-in.
 
 <!--/Description-->
 <!--SupportedValues-->

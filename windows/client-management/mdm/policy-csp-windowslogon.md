@@ -1,267 +1,264 @@
 ---
-title: Policy CSP - WindowsLogon
-description: Use the Policy CSP - WindowsLogon setting to control whether a device automatically signs in and locks the last interactive user after the system restarts.
-ms.author: vinpa
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
+title: WindowsLogon Policy CSP
+description: Learn more about the WindowsLogon Area in Policy CSP
 author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer:
 manager: aaroncz
+ms.author: vinpa
+ms.date: 11/29/2022
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsLogon-Begin -->
 # Policy CSP - WindowsLogon
 
-<hr/>
-
-<!--Policies-->
-## WindowsLogon policies
-
-<dl>
-  <dd>
-    <a href="#windowslogon-allowautomaticrestartsignon">WindowsLogon/AllowAutomaticRestartSignOn</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-configautomaticrestartsignon">WindowsLogon/ConfigAutomaticRestartSignOn</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-disablelockscreenappnotifications">WindowsLogon/DisableLockScreenAppNotifications</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-dontdisplaynetworkselectionui">WindowsLogon/DontDisplayNetworkSelectionUI</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-enablefirstlogonanimation">WindowsLogon/EnableFirstLogonAnimation</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-enablemprnotifications">WindowsLogon/EnableMPRNotifications</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-enumeratelocalusersondomainjoinedcomputers">WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers</a>
-  </dd>
-  <dd>
-    <a href="#windowslogon-hidefastuserswitching">WindowsLogon/HideFastUserSwitching</a>
-  </dd>
-</dl>
-
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- WindowsLogon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsLogon-Editable-End -->
 
-<!--Policy-->
-<a href="" id="windowslogon-allowautomaticrestartsignon"></a>**WindowsLogon/AllowAutomaticRestartSignOn**
+<!-- AllowAutomaticRestartSignOn-Begin -->
+## AllowAutomaticRestartSignOn
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- AllowAutomaticRestartSignOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- AllowAutomaticRestartSignOn-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowAutomaticRestartSignOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/AllowAutomaticRestartSignOn
+```
+<!-- AllowAutomaticRestartSignOn-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowAutomaticRestartSignOn-Description-Begin -->
+This policy setting controls whether a device will automatically sign in and lock the last interactive user after the system restarts or after a shutdown and cold boot.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+This only occurs if the last interactive user didn’t sign out before the restart or shutdown.​
 
-> [!div class = "checklist"]
-> * Device
+If the device is joined to Active Directory or Azure Active Directory, this policy only applies to Windows Update restarts. Otherwise, this will apply to both Windows Update restarts and user-initiated restarts and shutdowns.​
 
-<hr/>
+If you don’t configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls whether a device automatically signs in and locks the last interactive user after the system restarts or after a shutdown and cold boot.
+After enabling this policy, you can configure its settings through the ConfigAutomaticRestartSignOn policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
 
-This scenario occurs only if the last interactive user didn't sign out before the restart or shutdown.​
+If you disable this policy setting, the device does not configure automatic sign in. The user’s lock screen apps are not restarted after the system restarts.
+<!-- AllowAutomaticRestartSignOn-Description-End -->
 
-If the device is joined to Active Directory or Azure Active Directory, this policy applies only to Windows Update restarts. Otherwise, this policy applies to both Windows Update restarts and user-initiated restarts and shutdowns.​
+<!-- AllowAutomaticRestartSignOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAutomaticRestartSignOn-Editable-End -->
 
-If you don't configure this policy setting, it's enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
+<!-- AllowAutomaticRestartSignOn-DFProperties-Begin -->
+**Description framework properties**:
 
-After enabling this policy, you can configure its settings through the [ConfigAutomaticRestartSignOn](#windowslogon-configautomaticrestartsignon) policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowAutomaticRestartSignOn-DFProperties-End -->
 
-If you disable this policy setting, the device doesn't configure automatic sign in. The user’s lock screen apps aren't restarted after the system restarts.
+<!-- AllowAutomaticRestartSignOn-AdmxBacked-Begin -->
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | AutomaticRestartSignOnDescription |
+| Friendly Name | Sign-in and lock last interactive user automatically after a restart |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Logon Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | DisableAutomaticRestartSignOn |
+| ADMX File Name | WinLogon.admx |
+<!-- AllowAutomaticRestartSignOn-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Sign-in and lock last interactive user automatically after a restart*
--   GP name: *AutomaticRestartSignOn*
--   GP path: *Windows Components/Windows Logon Options*
--   GP ADMX file name: *WinLogon.admx*
+<!-- AllowAutomaticRestartSignOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAutomaticRestartSignOn-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+<!-- AllowAutomaticRestartSignOn-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigAutomaticRestartSignOn-Begin -->
+## ConfigAutomaticRestartSignOn
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigAutomaticRestartSignOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigAutomaticRestartSignOn-Applicability-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ConfigAutomaticRestartSignOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/ConfigAutomaticRestartSignOn
+```
+<!-- ConfigAutomaticRestartSignOn-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowslogon-configautomaticrestartsignon"></a>**WindowsLogon/ConfigAutomaticRestartSignOn**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting controls the configuration under which an automatic restart, sign in, and lock occurs after a restart or cold boot. If you chose “Disabled” in the [AllowAutomaticRestartSignOn](#windowslogon-allowautomaticrestartsignon) policy, then automatic sign in doesn't occur and this policy need not be configured.
+<!-- ConfigAutomaticRestartSignOn-Description-Begin -->
+This policy setting controls the configuration under which an automatic restart and sign on and lock occurs after a restart or cold boot. If you chose “Disabled” in the “Sign-in and lock last interactive user automatically after a restart” policy, then automatic sign on will not occur and this policy does not need to be configured.
 
 If you enable this policy setting, you can choose one of the following two options:
 
-- Enabled if BitLocker is on and not suspended: Specifies that automatic sign in and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
+1. “Enabled if BitLocker is on and not suspended” specifies that automatic sign on and lock will only occur if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.
 BitLocker is suspended during updates if:
-    - The device doesn't have TPM 2.0 and PCR7
-    - The device doesn't use a TPM-only protector
-- Always Enabled: Specifies that automatic sign in happens even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign in should only be run under this condition if you're confident that the configured device is in a secure physical location.
+- The device doesn’t have TPM 2.0 and PCR7, or
+- The device doesn’t use a TPM-only protector
+2. “Always Enabled” specifies that automatic sign on will happen even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
 
-If you disable or don't configure this setting, automatic sign in defaults to the “Enabled if BitLocker is on and not suspended” behavior.
+If you disable or don’t configure this setting, automatic sign on will default to the “Enabled if BitLocker is on and not suspended” behavior.
+<!-- ConfigAutomaticRestartSignOn-Description-End -->
 
-<!--/Description-->
+<!-- ConfigAutomaticRestartSignOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigAutomaticRestartSignOn-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot*
--   GP name: *ConfigAutomaticRestartSignOn*
--   GP path: *Windows Components/Windows Logon Options*
--   GP ADMX file name: *WinLogon.admx*
+<!-- ConfigAutomaticRestartSignOn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--SupportedValues-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigAutomaticRestartSignOn-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigAutomaticRestartSignOn-AdmxBacked-Begin -->
+**ADMX mapping**:
 
-<!--/Example-->
-<!--Validation-->
+| Name | Value |
+|:--|:--|
+| Name | ConfigAutomaticRestartSignOnDescription |
+| Friendly Name | Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Logon Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | WinLogon.admx |
+<!-- ConfigAutomaticRestartSignOn-AdmxBacked-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ConfigAutomaticRestartSignOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigAutomaticRestartSignOn-Examples-End -->
 
-<hr/>
+<!-- ConfigAutomaticRestartSignOn-End -->
 
-<!--Policy-->
-<a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**
+<!-- DisableLockScreenAppNotifications-Begin -->
+## DisableLockScreenAppNotifications
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- DisableLockScreenAppNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DisableLockScreenAppNotifications-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableLockScreenAppNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/DisableLockScreenAppNotifications
+```
+<!-- DisableLockScreenAppNotifications-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableLockScreenAppNotifications-Description-Begin -->
 This policy setting allows you to prevent app notifications from appearing on the lock screen.
 
 If you enable this policy setting, no app notifications are displayed on the lock screen.
 
-If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen.
+If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.
+<!-- DisableLockScreenAppNotifications-Description-End -->
 
-<!--/Description-->
+<!-- DisableLockScreenAppNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLockScreenAppNotifications-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off app notifications on the lock screen*
--   GP name: *DisableLockScreenAppNotifications*
--   GP path: *System/Logon*
--   GP ADMX file name: *logon.admx*
+<!-- DisableLockScreenAppNotifications-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLockScreenAppNotifications-DFProperties-End -->
 
-<hr/>
+<!-- DisableLockScreenAppNotifications-AdmxBacked-Begin -->
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="windowslogon-dontdisplaynetworkselectionui"></a>**WindowsLogon/DontDisplayNetworkSelectionUI**
+| Name | Value |
+|:--|:--|
+| Name | DisableLockScreenAppNotifications |
+| Friendly Name | Turn off app notifications on the lock screen |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DisableLockScreenAppNotifications |
+| ADMX File Name | Logon.admx |
+<!-- DisableLockScreenAppNotifications-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- DisableLockScreenAppNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLockScreenAppNotifications-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableLockScreenAppNotifications-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DontDisplayNetworkSelectionUI-Begin -->
+## DontDisplayNetworkSelectionUI
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DontDisplayNetworkSelectionUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- DontDisplayNetworkSelectionUI-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DontDisplayNetworkSelectionUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/DontDisplayNetworkSelectionUI
+```
+<!-- DontDisplayNetworkSelectionUI-OmaUri-End -->
 
-<hr/>
+<!-- DontDisplayNetworkSelectionUI-Description-Begin -->
+This policy setting allows you to control whether anyone can interact with available networks UI on the logon screen.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to control whether anyone can interact with available networks UI on the sign-in screen.
-
-If you enable this policy setting, the PC's network connectivity state can't be changed without signing into Windows.
+If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.
 
 If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
+<!-- DontDisplayNetworkSelectionUI-Description-End -->
+
+<!-- DontDisplayNetworkSelectionUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DontDisplayNetworkSelectionUI-Editable-End -->
+
+<!-- DontDisplayNetworkSelectionUI-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DontDisplayNetworkSelectionUI-DFProperties-End -->
+
+<!-- DontDisplayNetworkSelectionUI-AdmxBacked-Begin -->
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DontDisplayNetworkSelectionUI |
+| Friendly Name | Do not display network selection UI |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DontDisplayNetworkSelectionUI |
+| ADMX File Name | Logon.admx |
+<!-- DontDisplayNetworkSelectionUI-AdmxBacked-End -->
+
+<!-- DontDisplayNetworkSelectionUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
 Here's an example to enable this policy:
 
@@ -287,236 +284,314 @@ Here's an example to enable this policy:
   </SyncBody>
 </SyncML>
 ```
+<!-- DontDisplayNetworkSelectionUI-Examples-End -->
 
-<!--/Description-->
+<!-- DontDisplayNetworkSelectionUI-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Do not display network selection UI*
--   GP name: *DontDisplayNetworkSelectionUI*
--   GP path: *System/Logon*
--   GP ADMX file name: *logon.admx*
+<!-- EnableFirstLogonAnimation-Begin -->
+## EnableFirstLogonAnimation
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- EnableFirstLogonAnimation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- EnableFirstLogonAnimation-Applicability-End -->
 
-<hr/>
+<!-- EnableFirstLogonAnimation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/EnableFirstLogonAnimation
+```
+<!-- EnableFirstLogonAnimation-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="windowslogon-enablefirstlogonanimation"></a>**WindowsLogon/EnableFirstLogonAnimation**
+<!-- EnableFirstLogonAnimation-Description-Begin -->
+This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time.  This applies to both the first user of the computer who completes the initial setup and users who are added to the computer later.  It also controls if Microsoft account users will be offered the opt-in prompt for services during their first sign-in.
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+If you enable this policy setting, Microsoft account users will see the opt-in prompt for services, and users with other accounts will see the sign-in animation.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If you disable this policy setting, users will not see the animation and Microsoft account users will not see the opt-in prompt for services.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you do not configure this policy setting, the user who completes the initial Windows setup will see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting is not configured, users new to this computer will not see the animation.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Note: The first sign-in animation will not be shown on Server, so this policy will have no effect.
+<!-- EnableFirstLogonAnimation-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableFirstLogonAnimation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableFirstLogonAnimation-Editable-End -->
 
-<hr/>
+<!-- EnableFirstLogonAnimation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time. This view applies to both the first user of the computer who completes the initial setup and users who are added to the computer later. It also controls if Microsoft account users are offered the opt-in prompt for services during their first sign-in.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableFirstLogonAnimation-DFProperties-End -->
 
-If you enable this policy setting, Microsoft account users see the opt-in prompt for services, and users with other accounts see the sign-in animation.
+<!-- EnableFirstLogonAnimation-AllowedValues-Begin -->
+**Allowed values**:
 
-If you disable this policy setting, users don't see the animation and Microsoft account users don't see the opt-in prompt for services.
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- EnableFirstLogonAnimation-AllowedValues-End -->
 
-If you don't configure this policy setting, the user who completes the initial Windows setup see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting isn't configured, users new to this computer don't see the animation.
+<!-- EnableFirstLogonAnimation-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!NOTE]
-> The first sign-in animation isn't displayed on Server, so this policy has no effect.
+| Name | Value |
+|:--|:--|
+| Name | EnableFirstLogonAnimation |
+| Friendly Name | Show first sign-in animation  |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | EnableFirstLogonAnimation |
+| ADMX File Name | Logon.admx |
+<!-- EnableFirstLogonAnimation-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Show first sign-in animation*
--   GP name: *EnableFirstLogonAnimation*
--   GP path: *System/Logon*
--   GP ADMX file name: *Logon.admx*
+<!-- EnableFirstLogonAnimation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableFirstLogonAnimation-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported values:
--   0 - disabled
--   1 - enabled
-<!--/SupportedValues-->
-<!--Example-->
+<!-- EnableFirstLogonAnimation-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- EnableMPRNotifications-Begin -->
+## EnableMPRNotifications
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- EnableMPRNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- EnableMPRNotifications-Applicability-End -->
 
-<hr/>
+<!-- EnableMPRNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/EnableMPRNotifications
+```
+<!-- EnableMPRNotifications-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="windowslogon-enablemprnotifications"></a>**WindowsLogon/EnableMPRNotifications**
+<!-- EnableMPRNotifications-Description-Begin -->
+This policy controls the configuration under which winlogon sends MPR notifications in the system.
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+If you enable this setting or do not configure it, winlogon sends MPR notifications if a credential manager is configured.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If you disable this setting, winlogon does not send MPR notifications.
+<!-- EnableMPRNotifications-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableMPRNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableMPRNotifications-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableMPRNotifications-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableMPRNotifications-DFProperties-End -->
 
-<hr/>
+<!-- EnableMPRNotifications-AdmxBacked-Begin -->
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy allows winlogon to send MPR notifications in the system if a credential manager is configured.
+| Name | Value |
+|:--|:--|
+| Name | EnableMPRNotifications |
+| Friendly Name | Enable MPR notifications for the system |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Logon Options |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | EnableMPR |
+| ADMX File Name | WinLogon.admx |
+<!-- EnableMPRNotifications-AdmxBacked-End -->
 
-If you disable (0), MPR notifications will not be sent by winlogon.
+<!-- EnableMPRNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableMPRNotifications-Examples-End -->
 
-If you enable (1) or do not configure this policy setting this policy, MPR notifications will be sent by winlogon.
+<!-- EnableMPRNotifications-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-Supported values:
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Begin -->
+## EnumerateLocalUsersOnDomainJoinedComputers
 
--   0 - disabled
--   1 (default)- enabled
-<!--/SupportedValues-->
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Applicability-End -->
 
-<!--/Policy-->
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers
+```
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowslogon-enumeratelocalusersondomainjoinedcomputers"></a>**WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Description-Begin -->
 This policy setting allows local users to be enumerated on domain-joined computers.
 
 If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
 
-If you disable or don't configure this policy setting, the Logon UI won't enumerate local users on domain-joined computers.
+If you disable or do not configure this policy setting, the Logon UI will not enumerate local users on domain-joined computers.
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Description-End -->
 
-<!--/Description-->
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Enumerate local users on domain-joined computers*
--   GP name: *EnumerateLocalUsers*
--   GP path: *System/Logon*
--   GP ADMX file name: *logon.admx*
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-DFProperties-End -->
 
-<hr/>
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-AdmxBacked-Begin -->
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**
+| Name | Value |
+|:--|:--|
+| Name | EnumerateLocalUsers |
+| Friendly Name | Enumerate local users on domain-joined computers |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | EnumerateLocalUsers |
+| ADMX File Name | Logon.admx |
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnumerateLocalUsersOnDomainJoinedComputers-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideFastUserSwitching-Begin -->
+## HideFastUserSwitching
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideFastUserSwitching-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- HideFastUserSwitching-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HideFastUserSwitching-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/HideFastUserSwitching
+```
+<!-- HideFastUserSwitching-OmaUri-End -->
 
-<hr/>
+<!-- HideFastUserSwitching-Description-Begin -->
+This policy setting allows you to hide the Switch User interface in the Logon UI, the Start menu and the Task Manager.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or don't configure this policy setting, the Switch account button is accessible to the user in the three locations.
+If you enable this policy setting, the Switch User interface is hidden from the user who is attempting to log on or is logged on to the computer that has this policy applied.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Hide entry points for Fast User Switching*
--   GP name: *HideFastUserSwitching*
--   GP path: *System/Logon*
--   GP ADMX file name: *Logon.admx*
+The locations that Switch User interface appear are in the Logon UI, the Start menu and the Task Manager.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+If you disable or do not configure this policy setting, the Switch User interface is accessible to the user in the three locations.
+<!-- HideFastUserSwitching-Description-End -->
 
--   0 (default) - Disabled (visible).
--   1 - Enabled (hidden).
+<!-- HideFastUserSwitching-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideFastUserSwitching-Editable-End -->
 
-<!--/SupportedValues-->
-<!--Validation-->
-To validate on Desktop, do the following steps:
+<!-- HideFastUserSwitching-DFProperties-Begin -->
+**Description framework properties**:
 
-1.   Enable policy.
-2.   Verify that the Switch account button in Start is hidden.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideFastUserSwitching-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- HideFastUserSwitching-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Policies-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled (visible). |
+| 1 | Enabled (hidden). |
+<!-- HideFastUserSwitching-AllowedValues-End -->
 
-## Related topics
+<!-- HideFastUserSwitching-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HideFastUserSwitching |
+| Friendly Name | Hide entry points for Fast User Switching |
+| Location | Computer Configuration |
+| Path | System > Logon |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | HideFastUserSwitching |
+| ADMX File Name | Logon.admx |
+<!-- HideFastUserSwitching-GpMapping-End -->
+
+<!-- HideFastUserSwitching-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideFastUserSwitching-Examples-End -->
+
+<!-- HideFastUserSwitching-End -->
+
+<!-- OverrideShellProgram-Begin -->
+## OverrideShellProgram
+
+<!-- OverrideShellProgram-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+<!-- OverrideShellProgram-Applicability-End -->
+
+<!-- OverrideShellProgram-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsLogon/OverrideShellProgram
+```
+<!-- OverrideShellProgram-OmaUri-End -->
+
+<!-- OverrideShellProgram-Description-Begin -->
+This policy is used by IT admin to override the registry based shell program.
+<!-- OverrideShellProgram-Description-End -->
+
+<!-- OverrideShellProgram-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- OverrideShellProgram-Editable-End -->
+
+<!-- OverrideShellProgram-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- OverrideShellProgram-DFProperties-End -->
+
+<!-- OverrideShellProgram-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not Configured |
+| 1 | Apply Lightweight shell |
+<!-- OverrideShellProgram-AllowedValues-End -->
+
+<!-- OverrideShellProgram-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- OverrideShellProgram-Examples-End -->
+
+<!-- OverrideShellProgram-End -->
+
+<!-- WindowsLogon-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsLogon-CspMoreInfo-End -->
+
+<!-- WindowsLogon-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

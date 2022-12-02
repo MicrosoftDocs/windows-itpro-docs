@@ -2,12 +2,12 @@
 title: EnterpriseDataProtection CSP
 description: Learn how the EnterpriseDataProtection configuration service provider (CSP) configures Windows Information Protection (formerly, Enterprise Data Protection) settings.
 ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/09/2017
 ---
@@ -277,7 +277,7 @@ Specifies whether to allow Azure RMS encryption for Windows Information Protecti
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-smbautoencryptedfileextensions"></a>**Settings/SMBAutoEncryptedFileExtensions**
-Added in Windows 10, version 1703. Specifies a list of file extensions, so that files with these extensions are encrypted when copying from a Server Message Block (SMB) share within the corporate boundary as defined in the Policy CSP nodes for [NetworkIsolation/EnterpriseIPRange](policy-configuration-service-provider.md#networkisolation-enterpriseiprange) and [NetworkIsolation/EnterpriseNetworkDomainNames](policy-configuration-service-provider.md#networkisolation-enterprisenetworkdomainnames). Use semicolon (;) delimiter in the list.
+Added in Windows 10, version 1703. Specifies a list of file extensions, so that files with these extensions are encrypted when copying from a Server Message Block (SMB) share within the corporate boundary as defined in the Policy CSP nodes for [NetworkIsolation/EnterpriseIPRange](policy-csp-networkisolation.md) and [NetworkIsolation/EnterpriseNetworkDomainNames](policy-csp-networkisolation.md). Use semicolon (;) delimiter in the list.
 When this policy isn't specified, the existing auto-encryption behavior is applied.  When this policy is configured, only files with the extensions in the list will be encrypted.
 Supported operations are Add, Get, Replace and Delete. Value type is string.
 

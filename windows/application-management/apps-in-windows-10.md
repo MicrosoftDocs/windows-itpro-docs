@@ -1,14 +1,14 @@
 ---
 title: Learn about the different app types in Windows 10/11 | Microsoft Docs
 description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
-ms.prod: w10
+ms.prod: windows-client
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-apps
 ---
 
 # Overview of apps on Windows client devices
@@ -20,11 +20,11 @@ ms.collection: highpri
 
 ## Before you begin
 
-As organizations become more global, and to support employees working from anywhere, it's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
+As organizations become more global, and to support employees working from anywhere, it's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use the Microsoft Intune family of products. This family includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
 In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-- [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+- [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
 - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
 - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
@@ -32,7 +32,7 @@ In this article, we mention these services. If you're not managing your devices 
 
 There are different types of apps that can run on your Windows client devices. This section lists some of the common apps used on Windows devices.
 
-- **Microsoft 365 apps**: These apps are used for business and productivity, and include Outlook, Word, Teams, OneNote, and more. Depending on the licenses your organization has, you may already have these apps. Using an MDM provider, these apps can also be deployed to mobile devices, including smartphones.
+- **Microsoft 365 apps**: These apps are used for business and productivity, and include Outlook, Word, Teams, OneNote, and more. Depending on the licenses your organization has, you may already have these apps. When you use an MDM provider, these apps can also be deployed to mobile devices, including smartphones.
 
   For more information on the Microsoft 365 license options, and what you get, see [Transform your enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
@@ -95,7 +95,7 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
   - [Add apps to Microsoft Intune](/mem/intune/apps/apps-add)
   - [Application management in Configuration Manager](/mem/configmgr/apps/understand/introduction-to-application-management)
 
-- **Microsoft Store**: Using the Microsoft Store app, Windows users can download apps from the public store. And, they can download apps provided by your organization, which is called the "private store". If your organization creates its own apps, you can use **[Windows Package Manager](/windows/package-manager)** to add apps to the private store.
+- **Microsoft Store**: When you use the Microsoft Store app, Windows users can download apps from the public store. And, they can download apps provided by your organization, which is called the "private store". If your organization creates its own apps, you can use **[Windows Package Manager](/windows/package-manager)** to add apps to the private store.
 
   To help manage the Microsoft Store on your devices, you can use policies:
 

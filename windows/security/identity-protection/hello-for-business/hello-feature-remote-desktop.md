@@ -1,23 +1,15 @@
 ---
 title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 02/24/2021
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 
 # Remote Desktop
 
 **Requirements**
-
-- Windows 10
-- Windows 11
 - Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 

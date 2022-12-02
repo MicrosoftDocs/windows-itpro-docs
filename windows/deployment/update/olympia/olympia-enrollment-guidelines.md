@@ -3,10 +3,11 @@ title: Olympia Corp Retirement
 description: Learn about the retirement of Olympia Corp and how to back up your data prior to October 31, 2022.
 ms.author: lizlong
 ms.topic: article
-ms.prod: w10
+ms.prod: windows-client
 author: lizgt2000
 ms.reviewer: 
 manager: aaroncz
+ms.technology: itpro-updates
 ---
 
 # Olympia Corp

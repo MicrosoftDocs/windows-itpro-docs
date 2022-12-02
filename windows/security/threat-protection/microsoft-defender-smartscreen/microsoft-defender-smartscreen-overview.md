@@ -9,6 +9,8 @@ ms.reviewer:
 manager: aaroncz
 ms.technology: itpro-security
 adobe-target: true
+ms.collection: 
+  - highpri
 ---
 
 # Microsoft Defender SmartScreen

@@ -4,7 +4,7 @@ description: Learn how to use the Set up School PCs app and apply the provisioni
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 # Use the Set up School PCs app  
 

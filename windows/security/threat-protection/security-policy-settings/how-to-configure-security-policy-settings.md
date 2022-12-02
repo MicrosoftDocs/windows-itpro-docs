@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security
@@ -20,7 +22,8 @@ ms.technology: itpro-security
 # Configure security policy settings
 
 **Applies to**
--   Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes steps to configure a security policy setting on the local device, on a domain-joined device, and on a domain controller.
 

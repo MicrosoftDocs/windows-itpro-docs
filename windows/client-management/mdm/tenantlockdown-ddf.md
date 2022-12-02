@@ -3,11 +3,11 @@ title: TenantLockdown DDF file
 description: XML file containing the device description framework for the TenantLockdown configuration service provider (CSP).
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 08/13/2018
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

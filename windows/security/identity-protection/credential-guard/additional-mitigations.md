@@ -1,15 +1,16 @@
 ---
 title: Additional mitigations
 description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer: erikdau
+ms.reviewer: zwhittington
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.technology: itpro-security
 ---
 
 # Additional mitigations

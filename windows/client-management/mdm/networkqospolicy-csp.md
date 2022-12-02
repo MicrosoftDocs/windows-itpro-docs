@@ -3,11 +3,11 @@ title: NetworkQoSPolicy CSP
 description: The NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 04/22/2021
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
@@ -40,7 +40,7 @@ The following actions are supported:
 > - Azure AD Hybrid joined devices.
 > - Devices that use both GPO and CSP at the same time.
 >
-> The minimum operating system requirement for this CSP is Windows 10, version 2004. This CSP is supported only in Microsoft Surface Hub prior to Windows 10, version 2004.
+> The minimum operating system requirement for this CSP is Windows 10, version 1703. This CSP is not supported in Microsoft Surface Hub prior to Windows 10, version 1703.
 
 The following example shows the NetworkQoSPolicy configuration service provider in tree format.
 ```

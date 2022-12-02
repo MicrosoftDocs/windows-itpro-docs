@@ -3,7 +3,7 @@ title: Policy CSP - LocalSecurityAuthority
 description: Use the LocalSecurityAuthority CSP to configure policies for the Windows Local Security Authority Subsystem Service (LSASS).
 ms.author: vinpa
 author: vinaypamnani-msft
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.topic: reference
 ms.prod: windows-client

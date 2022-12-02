@@ -2,16 +2,16 @@
 title: What's new in Delivery Optimization
 manager: dougeby
 description: What's new in Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
-ms.prod: w10
+ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.collection:
-- M365-modern-desktop
-- m365initiative-coredeploy
-- highpri
+ms.collection: 
+  - M365-modern-desktop
+  - m365initiative-coredeploy
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 
 # What's new in Delivery Optimization 
@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 - Windows 10
 - Windows 11
 
-## Microsoft Connected Cache (private preview)
+## Microsoft Connected Cache (early preview)
 
 Microsoft Connected Cache (MCC) is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 

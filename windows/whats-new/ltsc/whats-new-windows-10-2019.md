@@ -4,10 +4,13 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: 
+  - highpri
+ms.technology: itpro-fundamentals
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
@@ -34,7 +37,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, Windows 10 update rings device profiles don't support LTSC releases. For installing software updates, use the [policy configuration service provider (CSP)](/windows/client-management/mdm/policy-csp-update), Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, Windows 10 update rings device profiles don't support LTSC releases. For installing software updates, use the [policy configuration service provider (CSP)](/windows/client-management/mdm/policy-csp-update), Windows Server Update Services (WSUS), or Microsoft Configuration Manager.
 
 ## Security
 
@@ -380,7 +383,7 @@ If you wish to take advantage of [Kiosk capabilities in Microsoft Edge](/previou
 
 ### Co-management
 
-Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 

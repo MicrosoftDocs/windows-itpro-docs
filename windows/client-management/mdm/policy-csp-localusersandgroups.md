@@ -3,12 +3,12 @@ title: Policy CSP - LocalUsersAndGroups
 description: Policy CSP - LocalUsersAndGroups
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/14/2020
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
@@ -104,11 +104,11 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 Example 1: Azure Active Directory focused.
 
-The following example updates the built-in administrators group with Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
+The following example updates the built-in administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** with an Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
 
 ```xml
 <GroupConfiguration>
-    <accessgroup desc = "Administrators">
+    <accessgroup desc = "S-1-5-21-2222222222-3333333333-4444444444-500">
         <group action = "U" />
         <add member = "AzureAD\bob@contoso.com"/>
         <add member = "S-1-12-1-111111111-22222222222-3333333333-4444444444"/>
@@ -119,12 +119,12 @@ The following example updates the built-in administrators group with Azure AD ac
 Example 2: Replace / Restrict the built-in administrators group with an Azure AD user account.
 
 > [!NOTE]
-> When using ‘R’ replace option to configure the built-in ‘Administrators’ group. It is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
+> When using the ‘R’ replace option to configure the built-in Administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** you should always specify the administrator as a member plus any other custom members. This is necessary because the built-in administrator must always be a member of the administrators group.
 
 Example:
 ```xml
 <GroupConfiguration>
-    <accessgroup desc = "Administrators">
+    <accessgroup desc = "S-1-5-21-2222222222-3333333333-4444444444-500">
         <group action = "R" />
         <add member = "AzureAD\bob@contoso.com"/>
         <add member = "Administrator"/>
@@ -134,11 +134,11 @@ Example:
 
 Example 3: Update action for adding and removing group members on a hybrid joined machine.
 
-The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
+The following example shows how you can update a local group (**Administrators** with the SID **S-1-5-21-2222222222-3333333333-4444444444-500**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add an Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
 ```xml
 <GroupConfiguration>
-    <accessgroup desc = "Administrators">
+    <accessgroup desc = "S-1-5-21-2222222222-3333333333-4444444444-500">
         <group action = "U" />
         <add member = "Contoso\ITAdmins"/>
         <add member = "S-1-12-1-111111111-22222222222-3333333333-4444444444"/>

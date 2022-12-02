@@ -1,12 +1,12 @@
 ---
 title: SecureAssessment CSP
 description: Learn how the SecureAssessment configuration service provider (CSP) is used to provide configuration information for the secure assessment browser.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---

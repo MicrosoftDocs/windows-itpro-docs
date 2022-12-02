@@ -3,11 +3,11 @@ title: Policy CSP - InternetExplorer
 description: Use the Policy CSP - InternetExplorer setting to add a specific list of search providers to the user's default list of search providers.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
@@ -4426,7 +4426,7 @@ The following list shows the supported values:
 ADMX Info:
 -   GP Friendly name: *Enable extended hot keys in Internet Explorer mode*
 -   GP name: *EnableExtendedIEModeHotkeys*
--   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP path: *Windows Components/Internet Explorer/Main*
 -   GP ADMX file name: *inetres.admx*
 
 <!--/ADMXBacked-->

@@ -1,24 +1,16 @@
 ---
 title: Windows Hello for Business Overview (Windows)
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - highpri
 ms.topic: conceptual
-localizationpriority: medium
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows Holographic for Business</b>
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ---
 # Windows Hello for Business Overview
 
-In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
+Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a type of user credential that is tied to a device and uses a biometric or PIN.
 
 >[!NOTE]
 > When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name. Customers who have already deployed these technologies will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.

@@ -1,15 +1,10 @@
 ---
 title: Dual Enrollment
 description: Learn how to configure Windows Hello for Business dual enrollment. Also, learn how to configure Active Directory to support Domain Administrator enrollment.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 09/09/2019
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 
 # Dual Enrollment
@@ -18,7 +13,6 @@ ms.date: 09/09/2019
 
 * Hybrid and On-premises Windows Hello for Business deployments
 * Enterprise joined or Hybrid Azure joined devices
-* Windows 10, version 1709 or later
 * Certificate trust
 
 > [!NOTE]

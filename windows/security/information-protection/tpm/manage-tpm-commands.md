@@ -2,14 +2,14 @@
 title: Manage TPM commands (Windows)
 description: This topic for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 ms.author: dansimp
-ms.prod: m365-security
+ms.prod: windows-client
 author: dulcemontemayor
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-security-compliance
-  - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021
+ms.technology: itpro-security
 ---
 
 # Manage TPM commands

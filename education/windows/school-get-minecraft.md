@@ -4,7 +4,10 @@ description: Learn how IT admins can get and distribute Minecraft in their schoo
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.collection:
+  - highpri
+  - education
 ---
 
 # For IT administrators - get Minecraft: Education Edition

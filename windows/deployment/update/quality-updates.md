@@ -1,13 +1,14 @@
 ---
 title: Monthly quality updates (Windows 10/11)
 description: Learn about Windows monthly quality updates to stay productive and protected.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.reviewer: 
 manager: dougeby
 ms.topic: article
+ms.technology: itpro-updates
 ---
 
 # Monthly quality updates

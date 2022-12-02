@@ -1,12 +1,12 @@
 ---
 title: SharedPC CSP
 description: Learn how the SharedPC configuration service provider is used to configure settings for Shared PC usage.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 09/23/2022
 ---

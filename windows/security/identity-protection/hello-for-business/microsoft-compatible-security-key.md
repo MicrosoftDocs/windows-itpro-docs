@@ -1,15 +1,10 @@
 ---
-title: Microsoft-compatible security key 
+title: Microsoft-compatible security key
 description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 11/14/2018
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # What is a Microsoft-compatible security key?
 
@@ -26,6 +21,6 @@ A security key **MUST** implement the following features and extensions from the
 | #</br> | Feature / Extension trust</br> | Why is this required? </br> |
 | --- | --- | --- | 
 | 1 | Resident key | This feature enables the security key to be portable, where your credential is stored on the security key |
-| 2 | Client pin | This feature enables you to protect your credentials with a second factor and applies to security keys that do not have an user interface|
+| 2 | Client pin | This feature enables you to protect your credentials with a second factor and applies to security keys that do not have a user interface|
 | 3 | hmac-secret | This extension ensures you can sign-in to your device when it's off-line or in airplane mode |
 | 4 | Multiple accounts per RP | This feature ensures you can use the same security key across multiple services like Microsoft Account (MSA) and Azure Active Directory (AAD) |

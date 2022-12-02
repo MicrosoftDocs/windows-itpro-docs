@@ -3,8 +3,8 @@ title: ApplicationControl CSP
 description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from an MDM server.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.reviewer: jsuther1974
 ms.date: 09/10/2020
@@ -25,7 +25,7 @@ The table below shows the applicability of Windows:
 
 Windows Defender Application Control (WDAC) policies can be managed from an MDM server, or locally by using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently doesn't schedule a reboot.
 
-Existing Windows Defender Application Control (WDAC) policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although, WDAC policy deployment via the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
+Existing Windows Defender Application Control (WDAC) policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although WDAC policy deployment using the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
 
 The following example shows the ApplicationControl CSP in tree format.
 
@@ -150,9 +150,9 @@ Scope is dynamic. Supported operation is Get.
 
 Value type is char.
 
-## Microsoft Endpoint Manager Intune Usage Guidance
+## Microsoft Intune Usage Guidance
 
-For customers using Intune standalone or hybrid management with Microsoft Endpoint Configuration Manager to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
+For customers using Intune standalone or hybrid management with Configuration Manager to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
 
 ## Generic MDM Server Usage Guidance
 
@@ -329,6 +329,6 @@ New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{Pa
 Get-CimInstance -Namespace $namespace -ClassName $policyClassName
 ```
 
-## Related topics
+## Related articles
 
 [Configuration service provider reference](index.yml)

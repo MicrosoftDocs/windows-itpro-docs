@@ -30,6 +30,8 @@
               href: allow-com-object-registration-in-windows-defender-application-control-policy.md
             - name: Use WDAC with .NET hardening
               href: use-windows-defender-application-control-with-dynamic-code-security.md
+            - name: Script enforcement with Windows Defender Application Control
+              href: design/script-enforcement.md
             - name: Manage packaged apps with WDAC
               href: manage-packaged-apps-with-windows-defender-application-control.md
             - name: Use WDAC to control specific plug-ins, add-ins, and modules
@@ -85,8 +87,6 @@
       href: merge-windows-defender-application-control-policies.md
     - name: Enforce WDAC policies
       href: enforce-windows-defender-application-control-policies.md
-    - name: Managing WDAC Policies with CI Tool
-      href: citool-commands.md
     - name: Use code signing to simplify application control for classic Windows applications
       href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
       items:
@@ -115,6 +115,8 @@
       href: operations/known-issues.md
     - name: Managed installer and ISG technical reference and troubleshooting guide
       href: configure-wdac-managed-installer.md
+    - name: Managing WDAC Policies with CI Tool
+      href: operations/citool-commands.md
 - name: WDAC AppId Tagging guide
   href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
   items:

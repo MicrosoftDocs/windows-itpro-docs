@@ -2,7 +2,7 @@
 title: 4625(F) An account failed to log on. (Windows 10)
 description: Describes security event 4625(F) An account failed to log on. This event is generated if an account logon attempt failed for a locked out account.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,9 @@ ms.date: 01/03/2022
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # 4625(F): An account failed to log on.

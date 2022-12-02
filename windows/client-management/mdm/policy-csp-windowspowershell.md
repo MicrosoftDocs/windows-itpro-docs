@@ -3,12 +3,12 @@ title: Policy CSP - WindowsPowerShell
 description: Use the Policy CSP - WindowsPowerShell setting to enable logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

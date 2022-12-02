@@ -8,7 +8,9 @@ ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 12/16/2021
 ms.reviewer: 
@@ -41,7 +43,7 @@ To enable HVCI on Windows 10 and Windows 11 devices with supporting hardware thr
 - [Windows Security app](#windows-security-app)
 - [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
 - [Group Policy](#enable-hvci-using-group-policy)
-- [Microsoft Endpoint Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
+- [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-virtualization-based-protection-of-code-integrity)
 
 ### Windows Security app
@@ -50,7 +52,7 @@ HVCI is labeled **Memory integrity** in the Windows Security app and it can be a
 
 ### Enable HVCI using Intune
 
-Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
+Enabling in Intune requires using the Code Integrity node in the [VirtualizationBasedTechnology CSP](/windows/client-management/mdm/policy-csp-virtualizationbasedtechnology). You can configure the settings in Windows by using the [settings catalog](/mem/intune/configuration/settings-catalog).
 
 ### Enable HVCI using Group Policy
 
@@ -201,9 +203,6 @@ Windows 10, Windows 11, and Windows Server 2016 have a WMI class for related pro
 ```powershell
 Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
 ```
-
-> [!NOTE]
-> The *Win32\_DeviceGuard* WMI class is only available on the Enterprise edition of Windows 10 and Windows 11.
 
 > [!NOTE]
 > Mode Based Execution Control property will only be listed as available starting with Windows 10 version 1803 and Windows 11 version 21H2.

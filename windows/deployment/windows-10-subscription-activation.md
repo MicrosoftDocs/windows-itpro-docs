@@ -2,21 +2,21 @@
 title: Windows subscription activation
 description: In this article, you'll learn how to dynamically enable Windows 10 and Windows 11 Enterprise or Education subscriptions.
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
-ms.collection:
+author: frankroj
+ms.author: frankroj
+manager: aaroncz
+ms.collection: 
   - M365-modern-desktop
   - highpri
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.topic: conceptual
-ms.date: 07/12/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+ms.date: 11/23/2022
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 ---
 
 # Windows subscription activation
@@ -83,7 +83,7 @@ The following list illustrates how deploying Windows client has evolved with eac
 
 - **Windows 10, version 1803** updated Windows 10 subscription activation to enable pulling activation keys directly from firmware for devices that support firmware-embedded keys. It was no longer necessary to run a script to activate Windows 10 Pro before activating Enterprise. For virtual machines and hosts running Windows 10, version 1803, [inherited activation](#inherited-activation) was also enabled.
 
-- **Windows 10, version 1903** updated Windows 10 subscription activation to enable step up from Windows 10 Pro Education to Windows 10 Education for devices with a qualifying Windows 10 or Microsoft 365 subscription.
+- **Windows 10, version 1903** updated Windows 10 subscription activation to enable step-up from Windows 10 Pro Education to Windows 10 Education for devices with a qualifying Windows 10 or Microsoft 365 subscription.
 
 - **Windows 11, version 21H2** updated subscription activation to work on both Windows 10 and Windows 11 devices.
 
@@ -98,7 +98,7 @@ The following list illustrates how deploying Windows client has evolved with eac
 > The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. It supports workgroup, hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
 
 > [!IMPORTANT]
-> As of October 1, 2022, subscription activation is available for _commercial_ and _GCC_ tenants. It's currently not available on GCC High or DoD tenants.<!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
+> As of October 1, 2022, subscription activation is available for *commercial* and *GCC* tenants. It's currently not available on GCC High or DoD tenants.<!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following requirements:
 
@@ -144,7 +144,7 @@ You can benefit by moving to Windows as an online service in the following ways:
 > [!NOTE]
 > The following examples use Windows 10 Pro to Enterprise edition. The examples also apply to Windows 11, and Education editions.
 
-The device is Azure AD-joined from **Settings > Accounts > Access work or school**.
+The device is Azure AD-joined from **Settings** > **Accounts** > **Access work or school**.
 
 You assign Windows 10 Enterprise to a user:
 
@@ -161,9 +161,9 @@ The following figure summarizes how the subscription activation model works:
 
 > [!NOTE]
 >
-> - A Windows 10 Pro Education device will only step up to Windows 10 Education edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
+> - A Windows 10 Pro Education device will only step-up to Windows 10 Education edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
 >
-> - A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
+> - A Windows 10 Pro device will only step-up to Windows 10 Enterprise edition when you assign a **Windows 10 Enterprise** license from the Microsoft 365 admin center.
 
 ### Scenarios
 

@@ -1,27 +1,18 @@
 ---
 title: Configure Windows Hello for Business Policy settings - key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 08/19/2018
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>On-premises deployment</b>
-- ✅ <b>Key trust</b>
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Configure Windows Hello for Business Policy settings - Key Trust
 
-You need at least a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
-Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
+[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
-Alternatively, you can create a copy of the .ADMX and .ADML files from a Windows 10, version 1703 installation setup template folder to their respective language folder on a Windows Server, or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
+To run the Group Policy Management Console from a Windows client, you need to install the Remote Server Administration Tools for Windows. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
+
+Alternatively, you can create a copy of the .ADMX and .ADML files from a Windows client installation setup template folder to their respective language folder on a Windows Server, or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
 
 On-premises certificate-based deployments of Windows Hello for Business needs one Group Policy setting:  Enable Windows Hello for Business
 
@@ -76,13 +67,13 @@ The default configuration for Windows Hello for Business is to prefer hardware p
 
 You can enable and deploy the **Use a hardware security device** Group Policy Setting to force Windows Hello for Business to only create hardware protected credentials.  Users that sign-in from a computer incapable of creating a hardware protected credential do not enroll for Windows Hello for Business.
 
-Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiving during anti-hammering and PIN lockout activities. Therefore, some organization may want not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, simply select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
+Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiving during anti-hammering and PIN lockout activities. Some organizations may not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
 
 ### Use biometrics
 
 Windows Hello for Business provides a great user experience when combined with the use of biometrics.  Rather than providing a PIN to sign-in, a user can use a fingerprint or facial recognition to sign-in to Windows, without sacrificing security.  
 
-The default Windows Hello for Business enables users to enroll and use biometrics. However, some organization may want more time before using biometrics and want to disable their use until they are ready. To not allow users to use biometrics, configure the **Use biometrics** Group Policy setting to disabled and apply it to your computers.  The policy setting disabled all biometrics. Currently, Windows does not provide granular policy setting that enable you to disable specific modalities of biometrics such as allow facial recognition, but disallow fingerprint.
+The default Windows Hello for Business enables users to enroll and use biometrics. However, some organization may want more time before using biometrics and want to disable their use until they are ready. To not allow users to use biometrics, configure the **Use biometrics** Group Policy setting to disabled and apply it to your computers.  The policy setting disabled all biometrics.  Currently, Windows does not provide the ability to set granular policies that enable you to disable specific modalities of biometrics, such as allowing facial recognition, but disallowing fingerprint recognition.
 
 ### PIN Complexity
 

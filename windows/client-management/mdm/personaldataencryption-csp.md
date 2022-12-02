@@ -3,14 +3,13 @@ title: PersonalDataEncryption CSP
 description: Learn how the PersonalDataEncryption configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices.
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: nimishasatapathy
 ms.localizationpriority: medium
 ms.date: 09/12/2022
 ms.reviewer: 
 manager: dansimp
-ms.collection: highpri
 ---
 
 # PersonalDataEncryption CSP

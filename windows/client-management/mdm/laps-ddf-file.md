@@ -3,8 +3,8 @@ title: LAPS DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Local Administrator Password Solution configuration service provider.
 ms.author: jsimmons
 ms.topic: article
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: jsimmons
 ms.localizationpriority: medium
 ms.date: 07/04/2022

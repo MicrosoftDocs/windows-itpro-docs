@@ -1,30 +1,21 @@
 ---
 title: Manage Windows Hello in your organization (Windows)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection:
+ms.collection: 
   - M365-identity-device-management
   - highpri
-ms.topic: article
-ms.localizationpriority: medium
 ms.date: 2/15/2022
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 
 # Manage Windows Hello for Business in your organization
 
-You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
+You can create a Group Policy or mobile device management (MDM) policy to configure Windows Hello for Business on Windows devices.
 
 >[!IMPORTANT]
->The Group Policy setting **Turn on PIN sign-in** does not apply to Windows Hello for Business. It still prevents or enables the creation of a convenience PIN for Windows 10, version 1507 and 1511.
->
->Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**.
+>Windows Hello as a convenience PIN is disabled by default on all domain joined and Azure AD joined devices. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**.
 >
 >Use **PIN Complexity** policy settings to manage PINs for Windows Hello for Business.
 
@@ -143,9 +134,10 @@ All PIN complexity policies are grouped separately from feature enablement and a
 >- LowercaseLetters - 1
 >- SpecialCharacters - 1
 
+<!--
 ## How to use Windows Hello for Business with Azure Active Directory
 
-There are three scenarios for using Windows Hello for Business in Azure AD–only organizations:
+There are three scenarios for using Windows Hello for Business in Azure AD-only organizations:
 
 - **Organizations that use the version of Azure AD included with Office 365**. For these organizations, no additional work is necessary. When Windows 10 was released to general availability, Microsoft changed the behavior of the Office 365 Azure AD stack. When a user selects the option to join a work or school network, the device is automatically joined to the Office 365 tenant's directory partition, a certificate is issued for the device, and it becomes eligible for Office 365 MDM if the tenant has subscribed to that feature. In addition, the user will be prompted to log on and, if MFA is enabled, to enter an MFA proof that Azure AD sends to his or her phone.
 - **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won't be enabled unless and until the organization's administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered. 
@@ -163,3 +155,5 @@ If you want to use Windows Hello for Business with certificates, you'll need a d
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+
+-->

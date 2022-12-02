@@ -4,7 +4,10 @@ description: Provides guidance on downloading and testing Windows 10 in S mode f
 ms.topic: guide
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.collection:
+  - highpri
+  - education
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices

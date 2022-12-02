@@ -1,12 +1,12 @@
 ---
 title: Mobile device management MDM for device updates
 description: Windows 10 provides several APIs to help mobile device management (MDM) solutions manage updates. Learn how to use these APIs to implement update management.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.date: 11/15/2017
 ms.collection: highpri

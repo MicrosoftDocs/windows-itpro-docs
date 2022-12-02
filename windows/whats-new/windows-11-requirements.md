@@ -4,11 +4,12 @@ description: Hardware requirements to deploy Windows 11
 manager: aaroncz
 author: mestew
 ms.author: mstewart
-ms.prod: w11
+ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # Windows 11 requirements
@@ -83,7 +84,7 @@ The following configuration requirements apply to VMs running Windows 11.
 -	Generation: 2<b> \*</b>
 -	Storage: 64 GB or greater
 -	Security: 
-    - Azure: [Trusted launch](/azure/virtual-machines/trusted-launch) with vTPM and secure boot enabled
+    - Azure: [Trusted launch](/azure/virtual-machines/trusted-launch) with vTPM enabled
     - Hyper-V: [Secure boot and TPM enabled](/windows-server/virtualization/hyper-v/learn-more/Generation-2-virtual-machine-security-settings-for-Hyper-V#secure-boot-setting-in-hyper-v-manager)
     - General settings: Secure boot capable, virtual TPM enabled
 -	Memory:  4 GB or greater

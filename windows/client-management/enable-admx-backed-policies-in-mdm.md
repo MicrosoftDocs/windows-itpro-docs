@@ -3,8 +3,8 @@ title: Enable ADMX policies in MDM
 description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 11/01/2017
@@ -105,7 +105,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
    2. Find the variable names of the parameters in the ADMX file.
 
-      You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](mdm/policy-configuration-service-provider.md#appvirtualization-publishingallowserver2).
+      You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](mdm/policy-csp-appvirtualization.md#appvirtualization-publishingallowserver2).
 
       ![Publishing server 2 policy description.](images/admx-appv-policy-description.png)
 

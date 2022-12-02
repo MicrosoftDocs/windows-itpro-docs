@@ -3,12 +3,12 @@ title: Policy CSP - Power
 description: Learn how the Policy CSP - Power setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

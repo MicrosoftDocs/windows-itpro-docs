@@ -3,11 +3,11 @@ title: Change history for MDM documentation
 description: This article lists new and updated articles for Mobile Device Management.
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 ms.localizationpriority: medium
 ms.date: 11/06/2020
 ---

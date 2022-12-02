@@ -1,9 +1,9 @@
 ---
 title: Windows feature updates
-description:  This article explains how Windows feature updates are managed in Autopatch
+description: This article explains how Windows feature updates are managed in Autopatch
 ms.date: 07/11/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -31,7 +31,7 @@ For a device to be eligible for Windows feature updates as a part of Windows Aut
 | Internet connectivity | Devices must have a steady internet connection, and access to Windows [update endpoints](../prepare/windows-autopatch-configure-network.md). |
 | Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md). |
-| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy) |
+| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
 ## Windows feature update releases
 
@@ -73,7 +73,7 @@ When releasing a feature update, there are two policies that are configured by t
 
 During a release, the service modifies the Modern Workplace DSS policy to change the target version for a specific ring in Intune. That change is deployed to devices and updates the devices prior to the update deadline.  
 
-To understand how devices will react to the change in the Modern Workplace DSS policy, it's important to understand how deferral, deadline, and grace periods effect devices.
+To understand how devices will react to the change in the Modern Workplace DSS policy, it's important to understand how deferral, deadline, and grace periods affect devices.
 
 | Policy | Description |
 | ----- | ----- |
@@ -93,7 +93,7 @@ To allow customers to test Windows 11 in their environment, there's a separate D
 
 ## Pausing and resuming a release
 
-You can pause or resume a Windows feature update from the Release management tab in Microsoft Endpoint Manager.
+You can pause or resume a Windows feature update from the Release management tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ## Rollback
 

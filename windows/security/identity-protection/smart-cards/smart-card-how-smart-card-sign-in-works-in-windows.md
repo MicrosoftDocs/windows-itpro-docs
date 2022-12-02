@@ -8,7 +8,6 @@ ms.reviewer: ardenw
 manager: aaroncz
 ms.collection: 
   - M365-identity-device-management
-  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
@@ -18,6 +17,7 @@ appliesto:
   - ✅ <b>Windows Server 2016</b>
   - ✅ <b>Windows Server 2019</b>
   - ✅ <b>Windows Server 2022</b>
+ms.technology: itpro-security
 ---
 
 # How Smart Card Sign-in Works in Windows

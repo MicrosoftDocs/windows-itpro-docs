@@ -2,13 +2,14 @@
 title: Windows Update for Business
 manager: dougeby
 description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
-ms.prod: w10
+ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
+ms.technology: itpro-updates
 ---
 
 # What is Windows Update for Business?
@@ -47,7 +48,7 @@ Windows Update for Business enables an IT administrator to receive and manage a 
 Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
 
 - **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available.
-- **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates. Windows Update for Business also treats non-Windows updates (such as updates for Microsoft Office or Visual Studio) as quality updates. These non-Windows Updates are known as "Microsoft updates" and you can set devices to receive such updates (or not) along with their Windows updates.
+- **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates.
 - **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
 - **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
 

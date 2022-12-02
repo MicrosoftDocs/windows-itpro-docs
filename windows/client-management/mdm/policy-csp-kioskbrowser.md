@@ -3,12 +3,12 @@ title: Policy CSP - KioskBrowser
 description: Use the Policy CSP - KioskBrowser setting to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
@@ -113,7 +113,7 @@ List of exceptions to the blocked website URLs (with wildcard support). This pol
 
 <!--/Scope-->
 <!--Description-->
-List of blocked website URLs (with wildcard support). This policy is used to configure blocked URLs kiosk browsers can't navigate to.
+List of blocked website URLs (with wildcard support). This policy is used to configure blocked URLs kiosk browsers can't navigate to. The delimiter for the URLs is "\uF000" character.
 
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.

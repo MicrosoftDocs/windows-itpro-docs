@@ -2,16 +2,16 @@
 title: How Windows uses the TPM
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it to enhance security.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-security-compliance
-  - highpri
 ms.topic: conceptual
 ms.date: 09/03/2021
+ms.technology: itpro-security
 ---
 
 # How Windows uses the Trusted Platform Module

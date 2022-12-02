@@ -2,7 +2,7 @@
 title: 4616(S) The system time was changed. (Windows 10)
 description: Describes security event 4616(S) The system time was changed. This event is generated every time system time is changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,7 +11,7 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # 4616(S): The system time was changed.
@@ -163,9 +163,9 @@ For 4616(S): The system time was changed.
 > [!IMPORTANT]
 > For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   Report all “**Subject\\Security ID**” not equals **“LOCAL SERVICE”**, which means that the time change was not made not by Windows Time service.
+-   Report all “**Subject\\Security ID**” not equals **“LOCAL SERVICE”**, which means that the time change was not made by Windows Time service.
 
--   Report all “**Process Information\\Name**” not equals **“C:\\Windows\\System32\\svchost.exe”** (path to svchost.exe can be different, you can search for “svchost.exe” substring), which means that the time change was not made not by Windows Time service.
+-   Report all “**Process Information\\Name**” not equals **“C:\\Windows\\System32\\svchost.exe”** (path to svchost.exe can be different, you can search for “svchost.exe” substring), which means that the time change was not made by Windows Time service.
 
 <!-- -->
 

@@ -5,8 +5,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.collection: highpri
 ---
@@ -36,7 +36,7 @@ For personal devices (BYOD):
 
 ### Azure AD Join
 
-Company owned devices are traditionally joined to the on-premises Active Directory domain of the organization. These devices can be managed using Group Policy or computer management software such as Microsoft Endpoint Configuration Manager. In Windows 10, it’s also possible to manage domain joined devices with an MDM.
+Company owned devices are traditionally joined to the on-premises Active Directory domain of the organization. These devices can be managed using Group Policy or computer management software such as Microsoft Configuration Manager. In Windows 10, it’s also possible to manage domain joined devices with an MDM.
 
 Windows 10 introduces a new way to configure and deploy organization owned Windows devices. This mechanism is called Azure AD Join. Like traditional domain join, Azure AD Join allows devices to become known and managed by an organization. However, with Azure AD Join, Windows authenticates to Azure AD instead of authenticating to a domain controller.
 
@@ -202,9 +202,9 @@ The following table shows the required information to create an entry in the Azu
  
 ### Add on-premises MDM to the app gallery
 
-There are no special requirements for adding on-premises MDM to the app gallery. There's a generic entry for administrator to add an app to their tenant.
+There are no special requirements for adding on-premises MDM to the app gallery. There's a generic entry for administrators to add an app to their tenant.
 
-However, key management is different for on-premises MDM. You must obtain the client ID (app ID) and key assigned to the MDM app within the customer's tenant. Thee ID and key obtain authorization to access the Microsoft Graph API and for reporting device compliance.
+However, key management is different for on-premises MDM. You must obtain the client ID (app ID) and key assigned to the MDM app within the customer's tenant. The ID and key obtain authorization to access the Microsoft Graph API and for reporting device compliance.
 
 ## Themes
 

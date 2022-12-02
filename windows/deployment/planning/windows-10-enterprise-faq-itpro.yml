@@ -3,15 +3,16 @@ metadata:
   title: Windows 10 Enterprise FAQ for IT pros (Windows 10)
   description: Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise.
   keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage updates, Windows as a service, servicing channels, deployment tools
-  ms.prod: w10
+  ms.prod: windows-client
+  ms.technology: itpro-deploy
   ms.mktglfcycl: plan
   ms.localizationpriority: medium
   ms.sitesec: library
-  ms.date: 05/12/2022
+  ms.date: 10/28/2022
   ms.reviewer: 
-  author: aczechowski
-  ms.author: aaroncz
-  manager: dougeby
+  author: frankroj
+  ms.author: frankroj
+  manager: aaroncz
   audience: itpro
   ms.topic: faq
 title: 'Windows 10 Enterprise: FAQ for IT professionals'
@@ -49,7 +50,7 @@ sections:
           For many devices, drivers will be automatically installed in Windows 10 and there will be no need for further action.
           - For some devices, Windows 10 may be unable to install drivers that are required for operation. If your device drivers aren't automatically installed, visit the manufacturer's support website for your device to download and manually install the drivers. If Windows 10 drivers aren't available, the most up-to-date drivers for Windows 8.1 will often work in Windows 10.
           - For some devices, the manufacturer may provide more up-to-date drivers or drivers that enable more functionality than the drivers installed by Windows 10. Always follow the recommendations of the device manufacturer for optimal performance and stability.
-          - Some computer manufacturers provide packs of drivers for easy implementation in management and deployment solutions like the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. These driver packs contain all of the drivers needed for each device and can greatly simplify the process of deploying Windows to a new make or model of computer. Driver packs for some common manufacturers include:
+          - Some computer manufacturers provide packs of drivers for easy implementation in management and deployment solutions like the Microsoft Deployment Toolkit (MDT) or Microsoft Configuration Manager. These driver packs contain all of the drivers needed for each device and can greatly simplify the process of deploying Windows to a new make or model of computer. Driver packs for some common manufacturers include:
               - [HP driver pack](https://www.hp.com/us-en/solutions/client-management-solutions/drivers-pack.html)
               - [Dell driver packs for enterprise client OS deployment](https://www.dell.com/support/kbdoc/en-us/000124139/dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
               - [Lenovo Configuration Manager and MDT package index](https://support.lenovo.com/us/en/solutions/ht074984)
@@ -70,9 +71,9 @@ sections:
       - question: |
           Which deployment tools support Windows 10?
         answer: |
-          Updated versions of Microsoft deployment tools, including Microsoft Endpoint Configuration Manager, MDT, and the Windows Assessment and Deployment Kit (Windows ADK) support Windows 10.
+          Updated versions of Microsoft deployment tools, including Microsoft Configuration Manager, MDT, and the Windows Assessment and Deployment Kit (Windows ADK) support Windows 10.
 
-          - [Microsoft Endpoint Configuration Manager](/mem/configmgr) simplifies the deployment and management of Windows 10. If you aren't currently using it, download a free 180-day trial of [Microsoft Endpoint Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager).
+          - [Microsoft Configuration Manager](/mem/configmgr) simplifies the deployment and management of Windows 10. If you aren't currently using it, download a free 180-day trial of [Microsoft Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager).
 
           - [MDT](/mem/configmgr/mdt) is a collection of tools, processes, and guidance for automating desktop and server deployment.
 
@@ -81,7 +82,7 @@ sections:
       - question: |
           Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?
         answer: |
-          Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md).
+          Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md).
           
       - question: |
           Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?
@@ -114,7 +115,7 @@ sections:
           - Windows Update
           - Windows Update for Business
           - Windows Server Update Services
-          - Microsoft Endpoint Configuration Manager
+          - Microsoft Configuration Manager
           
           For more information, see [Servicing Tools](../update/waas-overview.md#servicing-tools).
           

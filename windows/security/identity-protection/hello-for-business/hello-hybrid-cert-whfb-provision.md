@@ -1,22 +1,14 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning (Windows Hello for Business)
 description: In this article, learn about provisioning for hybrid certificate trust deployments of Windows Hello for Business.
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 4/30/2021
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Hybrid deployment</b>
-- ✅ <b>Certificate trust</b>
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
+
+[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
 
 ## Provisioning
 

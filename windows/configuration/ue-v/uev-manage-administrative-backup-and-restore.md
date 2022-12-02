@@ -2,12 +2,13 @@
 title: Manage Administrative Backup and Restore in UE-V
 description: Learn how an administrator of User Experience Virtualization (UE-V) can back up and restore application and Windows settings to their original state.
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Manage Administrative Backup and Restore in UE-V

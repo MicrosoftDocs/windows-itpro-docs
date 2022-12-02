@@ -3,12 +3,12 @@ title: PersonalDataEncryption DDF file
 description: Learn about the OMA DM device description framework (DDF) for the PersonalDataEncryption configuration service provider.
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: nimishasatapathy
 ms.localizationpriority: medium
 ms.date: 09/10/2022
-ms.reviewer:
+ms.reviewer: 
 manager: dansimp
 ---
 

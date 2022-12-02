@@ -8,12 +8,9 @@ brand: windows
 metadata:
   title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: subservice #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice # Optional; Remove if no subservice is used.
-  ms.topic: hub-page # Required
+  ms.topic: hub-page
+  ms.prod: windows-client
   ms.collection:
-    - windows-10
     - highpri
   author: dougeby #Required; your GitHub user alias, with correct capitalization.
   ms.author: dougeby #Required; microsoft alias of author; optional team alias.
@@ -230,19 +227,17 @@ additionalContent:
 
     - title: Other resources
       items:
-        - title: Microsoft Endpoint Manager
+        - title: Microsoft endpoint management with Intune
           links:
-            - text: Microsoft Endpoint Manager documentation
-              url: /mem
-            - text: Overview of Microsoft Endpoint Manager
+            - text: Intune is a family of products
               url: /mem/endpoint-manager-overview
-            - text: Getting started with Microsoft Endpoint Manager
-              url: /mem/endpoint-manager-getting-started
+            - text: What is Microsoft Intune?
+              url: /mem/intune/fundamentals/what-is-intune
             - text: Microsoft Endpoint Manager simplifies upgrades to Windows 11
               url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/endpoint-manager-simplifies-upgrades-to-windows-11/ba-p/2771886
             - text: Understanding readiness for Windows 11 with Microsoft Endpoint Manager
               url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/understanding-readiness-for-windows-11-with-microsoft-endpoint/ba-p/2770866
-            - text: Microsoft Endpoint Manager blog
+            - text: Microsoft endpoint management blog
               url: https://aka.ms/memblog
         - title: Windows 365
           links:

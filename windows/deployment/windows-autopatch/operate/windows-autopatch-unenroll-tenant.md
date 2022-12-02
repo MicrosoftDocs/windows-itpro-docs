@@ -1,9 +1,9 @@
 ---
 title: Unenroll your tenant
-description:  This article explains what unenrollment means for your organization and what actions you must take. 
+description: This article explains what unenrollment means for your organization and what actions you must take.
 ms.date: 07/27/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
@@ -41,7 +41,7 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 | ----- | ----- |
 | Updates | After the Windows Autopatch service is unenrolled, we’ll no longer provide updates to your devices.  You must ensure that your devices continue to receive updates through your own policies to ensure they're secure and up to date. |
 | Optional Windows Autopatch configuration | Windows Autopatch won’t remove the configuration policies or groups used to enable updates on your devices. You're responsible for these policies following tenant unenrollment. If you don’t wish to use these policies for your devices after unenrollment, you may safely delete them. For more information, see [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md). |
-| Microsoft Endpoint Manager roles | After unenrollment, you may safely remove the Modern Workplace Intune Admin role. |
+| Microsoft Intune roles | After unenrollment, you may safely remove the Modern Workplace Intune Admin role. |
 
 ## Unenroll from Windows Autopatch
 

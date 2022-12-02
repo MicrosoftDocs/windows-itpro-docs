@@ -1,9 +1,9 @@
 ---
 title: Register your devices
-description:  This article details how to register devices in Autopatch
+description: This article details how to register devices in Autopatch
 ms.date: 09/07/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: how-to
 ms.localizationpriority: medium
 author: tiaraquan
@@ -71,13 +71,13 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 
 - Windows 10 (1809+)/11 Enterprise or Professional editions (only x64 architecture).
 - Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
-- Managed by Microsoft Endpoint Manager.
-    - [Already enrollled into Microsoft Intune](/mem/intune/user-help/enroll-windows-10-device) and/or [Configuration Manager co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
-        - Must switch the following Microsoft Endpoint Manager-Configuration Manager [co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune):
+- Managed by Microsoft Intune.
+    - [Already enrolled into Microsoft Intune](/mem/intune/user-help/enroll-windows-10-device) and/or [Configuration Manager co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
+        - Must switch the following Microsoft Configuration Manager [co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Intune (either set to Pilot Intune or Intune):
             - Windows updates policies
             - Device configuration
             - Office Click-to-run
-- Last Intune device check-in completed within the last 28 days.
+- Last Intune device check in completed within the last 28 days.
 - Devices must have Serial Number, Model and Manufacturer.
 	> [!NOTE]
 	> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
@@ -102,7 +102,7 @@ See all possible device readiness statuses in Windows Autopatch:
 | ----- | ----- | ----- |
 | Active | Devices with this status successfully passed all prerequisite checks and then successfully registered with Windows Autopatch. Additionally, devices with this status successfully passed all post-device registration readiness checks. |  Ready |
 | Readiness failed | Devices with this status haven't passed one or more post-device registration readiness checks. These devices aren't ready to have one or more software update workloads managed by Windows Autopatch. | Not ready |
-| Inactive | Devices with this status haven't communicated with Microsoft Endpoint Manager-Intune in the last 28 days. | Not ready |
+| Inactive | Devices with this status haven't communicated with Microsoft Intune in the last 28 days. | Not ready |
 | Pre-requisites failed | Devices with this status haven't passed one or more pre-requisite checks and haven't successfully registered with Windows Autopatch | Not registered |
 
 ## Built-in roles required for device registration
@@ -116,7 +116,7 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 > [!NOTE]
-> The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Endpoint Manager roles, and allows you to create and configure custom Endpoint Manager roles.
+> The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Intune roles, and allows you to create and configure custom Intune roles.
 
 ## Details about the device registration process
 
@@ -134,7 +134,7 @@ Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID
 
 **To register devices with Windows Autopatch:**
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
+1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** from the left navigation menu.
 3. Under the **Windows Autopatch** section, select **Devices**.
 4. Select either the **Ready** or the **Not registered** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
@@ -154,7 +154,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 
 **To register new Windows 365 Cloud PC devices with Windows Autopatch from the Windows 365 Provisioning Policy:**
 
-1. Go to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) admin center.
+1. Go to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. In the left pane, select **Devices**.
 1. Navigate to Provisioning > **Windows 365**.
 1. Select Provisioning policies > **Create policy**.
@@ -211,7 +211,7 @@ There's a few more device management lifecycle scenarios to consider when planni
 
 ### Device refresh
 
-If a device was previously registered into the Windows Autopatch service, but it needs to be reimaged, you must run one of the device provisioning processes available in Microsoft Endpoint Manager to reimage the device.
+If a device was previously registered into the Windows Autopatch service, but it needs to be reimaged, you must run one of the device provisioning processes available in Microsoft Intune to reimage the device.
 
 The device will be rejoined to Azure AD (either Hybrid or Azure AD-only). Then, re-enrolled into Intune as well. No further action is required from you or the Windows Autopatch service, because the Azure AD device ID record of that device remains the same.
 

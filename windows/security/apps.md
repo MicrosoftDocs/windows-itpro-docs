@@ -6,8 +6,8 @@ manager: aaroncz
 ms.author: dansimp
 author: dansimp
 ms.collection: M365-security-compliance
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: windows-client
+ms.technology: itpro-security
 ---
 
 # Windows application security

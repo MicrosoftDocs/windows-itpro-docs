@@ -2,19 +2,19 @@
 title: Shared PC technical reference
 description: List of policies and settings applied by the Shared PC options.
 ms.date: 10/15/2022
-ms.prod: windows
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-configure
 ms.topic: reference
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection: 
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+appliesto: 
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
+  - ✅ <b>Windows 11 SE</b>
 ---
 
 # Shared PC technical reference

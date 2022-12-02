@@ -3,12 +3,12 @@ title: Policy CSP - TimeLanguageSettings
 description: Learn to use the Policy CSP - TimeLanguageSettings setting to specify the time zone to be applied to the device.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/28/2021
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

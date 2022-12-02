@@ -2,16 +2,17 @@
 title: TPM recommendations (Windows)
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.reviewer: 
-ms.prod: m365-security
+ms.prod: windows-client
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection:
+ms.collection: 
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021
+ms.technology: itpro-security
 ---
 
 # TPM recommendations
@@ -56,7 +57,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
   - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
 
-  - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://blogs.microsoft.com/cybertrust/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption/)).
+  - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://www.microsoft.com/security/blog/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption).
 
   - Use of TPM 2.0 may help eliminate the need for OEMs to make exception to standard configurations for certain countries and regions.
 

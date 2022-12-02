@@ -3,12 +3,12 @@ title: Policy CSP - Update
 description: The Policy CSP - Update allows the IT admin, when used with Update/ActiveHoursStart, to manage a range of active hours where update reboots aren't scheduled.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 06/15/2022
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.collection: highpri
 ---
@@ -2988,6 +2988,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the day of the update installation.
 
 Supported data type is an integer.
@@ -3049,6 +3052,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the update installation on every week.
 
 Supported Value type is integer.
@@ -3100,6 +3106,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the update installation on the first week of the month.
 
 Supported value type is integer.
@@ -3151,6 +3160,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the update installation on the fourth week of the month.
 
 Supported value type is integer.
@@ -3202,9 +3214,12 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the update installation on the second week of the month.
 
-Supported vlue type is integer.
+Supported value type is integer.
 
 Supported values:
 
@@ -3254,6 +3269,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the update installation on the third week of the month.
 
 Supported value type is integer.
@@ -3305,6 +3323,9 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
+> [!NOTE]
+> This policy will only take effect if <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a> has been configured to option 3 or 4 for scheduled installation.
+
 Enables the IT admin to schedule the time of the update installation. Note that there is a window of approximately 30 minutes to allow for higher success rates of installation.
 
 The supported data type is an integer.

@@ -3,12 +3,12 @@ title: Policy CSP - Bluetooth
 description: Learn how the Policy CSP - Bluetooth setting specifies whether the device can send out Bluetooth advertisements.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/12/2020
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 

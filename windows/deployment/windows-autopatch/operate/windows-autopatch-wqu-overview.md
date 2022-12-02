@@ -1,9 +1,9 @@
 ---
 title: Windows quality updates
-description:  This article explains how Windows quality updates are managed in Autopatch
+description: This article explains how Windows quality updates are managed in Autopatch
 ms.date: 08/08/2022
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -31,7 +31,7 @@ For a device to be eligible for Windows quality updates as a part of Windows Aut
 | Internet connectivity | Devices must have a steady internet connection, and access to Windows [update endpoints](../prepare/windows-autopatch-configure-network.md). |
 | Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md). |
-| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy) |
+| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
 ## Windows quality update releases
 
@@ -72,7 +72,7 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 
 If we pause the release, a policy will be deployed which prevents devices from updating while the issue is investigated. Once the issue is resolved, the release will be resumed.
 
-You can pause or resume a Windows quality update from the Release management tab in Microsoft Endpoint Manager.
+You can pause or resume a Windows quality update from the Release management tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ## Incidents and outages
 

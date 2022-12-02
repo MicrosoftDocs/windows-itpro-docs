@@ -1,24 +1,12 @@
 ---
 title: Windows Hello for Business Deployment Overview
-description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
-ms.prod: m365-security
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
-ms.collection:
-  - M365-identity-device-management
-  - highpri
-ms.topic: article
-localizationpriority: medium
+description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment.
 ms.date: 02/15/2022
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Windows Hello for Business Deployment Overview
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 

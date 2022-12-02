@@ -6,7 +6,8 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.prod: w10
+ms.prod: windows-client
+ms.technology: itpro-updates
 ---
 
 # Needs attention!
@@ -15,6 +16,9 @@ ms.prod: w10
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 ![Needs attention section.](images/UC_workspace_needs_attention.png)
 

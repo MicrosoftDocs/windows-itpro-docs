@@ -12,6 +12,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.collection: 
+  - highpri
 ---
 
 # 4776(S, F): The computer attempted to validate the credentials for an account.

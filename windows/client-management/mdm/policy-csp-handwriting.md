@@ -3,12 +3,12 @@ title: Policy CSP - Handwriting
 description: Use the Policy CSP - Handwriting setting to allow an enterprise to configure the default mode for the handwriting panel.
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ---
 
