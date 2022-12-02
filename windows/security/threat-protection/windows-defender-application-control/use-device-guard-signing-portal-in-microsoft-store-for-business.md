@@ -59,7 +59,7 @@ Download and install the [DGSS client utilities and PowerShell cmdlets NuGet pac
 ## DGSS PowerShell Commands
 
 > [!NOTE]
-> [... common ...] are parameters common across all commands and are documented below the command definitions.
+> &lt;DGSSCommonParameters&gt; are parameters common across all commands and are documented below the command definitions.
 
 ### Get-DefaultPolicy
 
@@ -68,7 +68,7 @@ Gets the default .xml policy file associated with the current tenant.
 **Usage:**
 
   ```powershell
-  Get-DefaultPolicy -OutFile filename [-PassThru] [... common ...]
+  Get-DefaultPolicy -OutFile filename [-PassThru] [<DGSSCommonParameters>]
   ```
 
 **Parameters:**
@@ -85,7 +85,7 @@ Gets the root certificate for the current tenant. All Authenticode and policy si
 **Usage:**
 
   ```powershell
-  Get-RootCertificate -OutFile filename [-PassThru] [... common ...]
+  Get-RootCertificate -OutFile filename [-PassThru] [<DGSSCommonParameters>]
   ```
 
 **Parameters:**
@@ -102,7 +102,7 @@ Gets information for the latest 100 files signed by the current tenant. Results 
 **Usage:**
 
   ```powershell
-  Get-SigningHistory -OutFile filename [-PassThru] [... common ...]
+  Get-SigningHistory -OutFile filename [-PassThru] [<DGSSCommonParameters>]
   ```
 
 **Parameters:**
@@ -119,7 +119,7 @@ Submits a file to the service for signing and timestamping. The module supports 
 **Usage:**
 
   ```powershell
-  Submit-SigningJob -InFile filename -OutFile filename [-NoTimestamp][- TimeStamperUrl "timestamper url"] [-JobDescription "description"] [... common ...]
+  Submit-SigningJob -InFile filename -OutFile filename [-NoTimestamp][- TimeStamperUrl "timestamper url"] [-JobDescription "description"] [<DGSSCommonParameters>]
   ```
 
 **Parameters:**
@@ -137,7 +137,7 @@ Submits a file to the service for signing and timestamping. The only valid file 
 **Usage:**
 
   ```powershell
-  Submit-SigningV1MigrationPolicy -InFile filename -OutFile filename [-NoTimestamp][-TimeStamperUrl "timestamper url"] [-JobDescription "description"] [... common ...]
+  Submit-SigningV1MigrationPolicy -InFile filename -OutFile filename [-NoTimestamp][-TimeStamperUrl "timestamper url"] [-JobDescription "description"] [<DGSSCommonParameters>]
   ```
 
 **Parameters:**
@@ -150,7 +150,7 @@ Submits a file to the service for signing and timestamping. The only valid file 
 
 **Command running time:** The average running time is under 20 seconds but may be up to 3 minutes.
 
-### Common parameters [... common ...]
+### Common parameters &lt;DGSSCommonParameters&gt;
 
 In addition to cmdlet-specific parameters, each cmdlet understands the following common parameters.
 
