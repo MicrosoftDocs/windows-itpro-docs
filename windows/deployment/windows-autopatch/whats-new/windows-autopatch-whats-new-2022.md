@@ -1,7 +1,7 @@
 ---
 title: What's new
 description: This article lists the new feature releases and any corresponding Message center post numbers.
-ms.date: 12/01/2022
+ms.date: 12/02/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
