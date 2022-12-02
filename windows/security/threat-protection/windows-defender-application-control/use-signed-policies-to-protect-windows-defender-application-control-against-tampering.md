@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.topic: conceptual
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
