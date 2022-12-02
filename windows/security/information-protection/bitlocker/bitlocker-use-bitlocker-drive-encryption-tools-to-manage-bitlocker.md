@@ -18,7 +18,7 @@ ms.technology: itpro-security
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11

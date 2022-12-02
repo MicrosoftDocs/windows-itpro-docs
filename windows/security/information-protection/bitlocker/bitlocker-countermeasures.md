@@ -17,7 +17,7 @@ ms.technology: itpro-security
 
 # BitLocker Countermeasures
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11

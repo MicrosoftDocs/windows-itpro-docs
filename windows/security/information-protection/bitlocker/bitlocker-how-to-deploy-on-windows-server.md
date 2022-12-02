@@ -16,7 +16,7 @@ ms.technology: itpro-security
 
 # BitLocker: How to deploy on Windows Server 2012 and later
 
-*Applies to:*
+**Applies to:**
 
 - Windows Server 2012
 - Windows Server 2012 R2

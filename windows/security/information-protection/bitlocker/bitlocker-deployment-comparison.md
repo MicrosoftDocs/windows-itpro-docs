@@ -15,7 +15,7 @@ ms.technology: itpro-security
 
 # BitLocker deployment comparison
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11
