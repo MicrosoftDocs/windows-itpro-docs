@@ -87,17 +87,17 @@
       href: merge-windows-defender-application-control-policies.md
     - name: Enforce WDAC policies
       href: enforce-windows-defender-application-control-policies.md
-    - name: Use code signing to simplify application control for classic Windows applications
+    - name: Use code signing for added control and protection with WDAC
       href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
       items:
-        - name: "Optional: Use the WDAC Signing Portal in the Microsoft Store for Business"
+        - name: Deploy catalog files to support WDAC
+          href: deploy-catalog-files-to-support-windows-defender-application-control.md
+        - name: Use signed policies to protect Windows Defender Application Control against tampering
+          href: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
+        - name: "Optional: Use the Device Guard Signing Service v2"
           href: use-device-guard-signing-portal-in-microsoft-store-for-business.md
         - name: "Optional: Create a code signing cert for WDAC"
           href: create-code-signing-cert-for-windows-defender-application-control.md
-        - name: Deploy catalog files to support WDAC
-          href: deploy-catalog-files-to-support-windows-defender-application-control.md
-    - name: Use signed policies to protect Windows Defender Application Control against tampering
-      href: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
     - name: Disable WDAC policies
       href: disable-windows-defender-application-control-policies.md
     - name: LOB Win32 Apps on S Mode
