@@ -25,7 +25,7 @@ Windows Defender Credential Guard has certain application requirements. Windows 
 ## Known Issue: Single Sign-On (SSO) for Network services breaks after upgrading to **Windows 11, version 22H2**  
 
 ### Symptoms of the issue:  
-Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication will be unable to use SSO to login and will be forced to manually re-authenticate in every new Windows session when Windows Defender Credential Guard is running.  
+Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication will be unable to use SSO to log in and will be forced to manually re-authenticate in every new Windows session when Windows Defender Credential Guard is running.  
 
 ### Affected devices:  
 Any device that enables Windows Defender Credential Guard may encounter this issue. As part of the Windows 11, version 22H2 update, eligible devices which had not previously explicitly disabled Windows Defender Credential Guard had it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses*, as long as they met the [minimum hardware requirements](credential-guard-requirements.md#hardware-and-software-requirements). 
