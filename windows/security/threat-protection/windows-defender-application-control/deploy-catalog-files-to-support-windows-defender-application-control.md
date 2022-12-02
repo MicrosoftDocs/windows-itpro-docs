@@ -364,9 +364,11 @@ Alternatively, you can use [Add-SignerRule](/powershell/module/configci/add-sign
 1. Right-click the catalog file, and then select **Properties**.
 2. On the **Digital Signatures** tab, select the signature from the list and then select **Details**.
 3. Select **View Certificate** to view the properties of the leaf certificate.
-4. [Skip this step to continue with the leaf certificate] To view the certificate's intermediate or root issuer certificate, select the **Certification Path** tab and then select the certificate level you want to use. Then, select **View Certificate**.
-5. Select the **Details** tab and select **Copy to File** which will run the Certificate Export Wizard.
-6. Complete the wizard using the default option for **Export File Format** and specifying a location and file name to save the .cer file.
+4. Select the **Details** tab and select **Copy to File** which will run the Certificate Export Wizard.
+5. Complete the wizard using the default option for **Export File Format** and specifying a location and file name to save the .cer file.
+
+> [!NOTE]
+> The steps listed above will select the lowest level of the certificate chain (the "leaf" certificate). Instead, you can choose to use the certificate's intermediate or root issuer certificate. To use a different certificate in the chain, switch to the **Certification Path** tab after step 3 above, then select the certificate level you want to use and select **View Certificate**. Then complete the remaining steps.
 
 The following example uses the .cer file to add a signer rule to both the user and kernel mode signing scenarios. Be sure to replace the path values in the sample below.
 
