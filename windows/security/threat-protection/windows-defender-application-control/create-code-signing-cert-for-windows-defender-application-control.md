@@ -35,13 +35,12 @@ As you deploy Windows Defender Application Control (WDAC), you might need to sig
 If you have an internal CA, complete these steps to create a code signing certificate.
 
 > [!WARNING]
-> Boot failure (blue screen) may occur if your signing certificate does not follow these rules:
+> When creating signing certificates for WDAC policy signing, Boot failure (blue screen) may occur if your signing certificate does not follow these rules:
 >
 > - All policies, including base and supplemental, must be signed according to the [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652).
-> - Use RSA SHA-256 only. ECDSA isn't supported.
+> - Use RSA keys with 2K, 3K, or 4K key size only. ECDSA isn't supported.
+> - Only use SHA-256 as the digest algorithm.
 > - Don't use UTF-8 encoding for certificate fields, like 'subject common name' and 'issuer common name'. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
-> - Keys must be less than or equal to 4K key size
->
 
 1. Open the Certification Authority Microsoft Management Console (MMC) snap-in, and then select your issuing CA.
 

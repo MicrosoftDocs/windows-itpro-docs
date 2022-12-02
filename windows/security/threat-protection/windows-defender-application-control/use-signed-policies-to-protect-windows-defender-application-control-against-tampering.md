@@ -38,9 +38,9 @@ If you don't currently have a code signing certificate you can use to sign your 
 > Boot failure (blue screen) may occur if your signing certificate doesn't follow these rules:
 >
 > - All policies, including base and supplemental, must be signed according to the [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652).
-> - Use RSA SHA-256 only. ECDSA isn't supported.
+> - Use RSA keys with 2K, 3K, or 4K key size only. ECDSA isn't supported.
+> - Only use SHA-256 as the digest algorithm.
 > - Don't use UTF-8 encoding for certificate fields, like 'subject common name' and 'issuer common name'. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
-> - Keys must be less than or equal to 4K key size.
 
 Before you attempt to deploy signed WDAC policy, you should first deploy an unsigned version of the policy to uncover any issues with the policy rules. We also recommend you enable rule options **9 - Enabled:Advanced Boot Options Menu** and **10 - Enabled:Boot Audit on Failure** to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](select-types-of-rules-to-create.md).
 
