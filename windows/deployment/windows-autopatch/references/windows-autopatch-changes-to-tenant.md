@@ -96,7 +96,7 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 
 ## Microsoft Office update policies
 
-- Windows Autopatch - Office Configuration v5
+- Windows Autopatch - Office Configuration
 - Windows Autopatch - Office Update Configuration [Test]
 - Windows Autopatch - Office Update Configuration [First]
 - Windows Autopatch - Office Update Configuration [Fast]
@@ -104,11 +104,11 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 
 | Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
-| Windows Autopatch - Office Configuration v5 | Sets Office Update Channel to the Monthly Enterprise servicing branch.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| | |
-| Windows Autopatch - Office Update Configuration [Test] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li></ul> |<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>|<li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 0</li>|
-| Windows Autopatch - Office Update Configuration [First] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li></ul> |<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul> | <li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 0</li>|
-| Windows Autopatch - Office Update Configuration [Fast] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul>|<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>| <li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 3</li>|
-| Windows Autopatch - Office Update Configuration [Broad] | Sets the Office update deadline<br>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li>|<ul><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_UpdateDeadline`</li><li>`./Device/Vendor/MSFT/Policy/Config/Office365ProPlus~Policy~L_MicrosoftOfficemachine~L_Updates/L_DeferUpdateDays`</li></ul>|<li>Enabled; L_UpdateDeadlineID == 7</li><li>Enabled; L_DeferUpdateDaysID == 7</li> |
+| Windows Autopatch - Office Configuration | Sets Office Update Channel to the Monthly Enterprise servicing branch.<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>|<ul><li>Enable Automatic Updates</li><li>Hide option to enable or disable updates</li><li>Update Channel</li><li>Channel Name (Device)</li><li>Hide Update Notifications</li><li>Update Path</li></ul> |<ul><li>Enabled</li><li>Enabled</li><li>Enabled</li><li>Monthly Enterprise Channel</li><Disabled><li>Enabled</li></ul> |
+| Windows Autopatch - Office Update Configuration [Test] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test</li></ul> |<ul><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ul>|<li>Enabled;Days(Device) == 0 days</li></li><li>Enabled;Update Deadline(Device) == 7 days</li>|
+| Windows Autopatch - Office Update Configuration [First] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li></ul> |<ul><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ul> | <li>Enabled;Days(Device) == 0 days</li><li>Enabled;Update Deadline(Device) == 7 days</li>|
+| Windows Autopatch - Office Update Configuration [Fast] | Sets the Office update deadline<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Fast</li></ul>|<ul><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ul>| <li>Enabled;Days(Device) == 3 days</li><li>Enabled;Update Deadline(Device) == 7 days</li>|
+| Windows Autopatch - Office Update Configuration [Broad] | Sets the Office update deadline<br>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li>|<ul><li>Delay downloading and installing updates for Office</li><li>Update Deadline</li></ul>|<li>Enabled;Days(Device) == 7 days</li><li>Enabled;Update Deadline(Device) == 7 days</li> |
 
 ## Microsoft Edge update policies
 
@@ -117,8 +117,8 @@ Windows Autopatch will create Azure Active Directory groups that are required to
 
 | Policy name | Policy description | Properties | Value |
 | ----- | ----- | ----- | ----- |
-| Windows Autopatch - Edge Update Channel Stable | Deploys updates via the Edge Stable Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
-| Windows Autopatch - Edge Update Channel Beta | Deploys updates via the Edge Beta Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test </li></ul>| `./Device/Vendor/MSFT/Policy/Config/MicrosoftEdgeUpdate~Policy~Cat_EdgeUpdate~Cat_Applications~Cat_MicrosoftEdge/Pol_TargetChannelMicrosoftEdge` | Enabled |
+| Windows Autopatch - Edge Update Channel Stable | Deploys updates via the Edge Stable Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-First</li><li>Modern Workplace Devices-Windows Autopatch-Fast</li><ul><li>Modern Workplace Devices-Windows Autopatch-Broad</li></ul>| <ul><li>Target Channel Override </li><li>Target Channel (Device) </li></ul> | <ul><li>Enabled</li><li>Stable</li></ul>|
+| Windows Autopatch - Edge Update Channel Beta | Deploys updates via the Edge Beta Channel<p>Assigned to:<ul><li>Modern Workplace Devices-Windows Autopatch-Test </li></ul>| <ul><li>Target Channel Override </li><li>Target Channel (Device) </li></ul> | <ul><li>Enabled</li><li>Beta</li></ul>|
 
 ## PowerShell scripts
 
