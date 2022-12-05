@@ -45,7 +45,9 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 > Try using the following MSGraph call to automatically create the custom policy in your tenant.
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{"id":"00-0000-0000-0000-000000000000","displayName":"Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/
+Content-Type: application/json
+{"id":"00-0000-0000-0000-000000000000","displayName":"Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
 ```
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
