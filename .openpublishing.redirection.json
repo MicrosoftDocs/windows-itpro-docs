@@ -706,6 +706,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "store-for-business/device-guard-signing-portal.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "store-for-business/add-unsigned-app-to-code-integrity-policy.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "store-for-business/sign-code-integrity-policy-with-device-guard-signing.md",
+      "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/threat-protection/device-guard/device-guard-deployment-guide.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide",
       "redirect_document_id": false
