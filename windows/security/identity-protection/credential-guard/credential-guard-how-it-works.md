@@ -1,7 +1,6 @@
 ---
 title: How Windows Defender Credential Guard works
 description: Learn how Windows Defender Credential Guard uses virtualization to protect secrets, so that only privileged system software can access them.
-ms.topic: article
 ms.date: 08/17/2017
 ms.topic: conceptual
 appliesto: 
