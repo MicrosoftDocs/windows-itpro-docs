@@ -8,13 +8,15 @@ ms.topic: article
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-ms.technology: itpro-security
 ---
+
 # Manage Windows Defender Credential Guard
 
 ## Default Enablement
 
-Starting in **Windows 11 Enterprise, version 22H2** and **Windows 11 Education, version 22H2**, compatible systems have Windows Defender Credential Guard turned on by default. This feature changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.
+Starting in **Windows 11 Enterprise, version 22H2** and **Windows 11 Education, version 22H2**, compatible systems have Windows Defender Credential Guard turned on by default. This feature changes the default state of the feature in Windows, though system administrators can still modify this enablement state. Windows Defender Credential Guard can still be manually [enabled](#enable-windows-defender-credential-guard) or [disabled](#disable-windows-defender-credential-guard) via the methods documented below.  
+  
+Known issues arising from default enablement are documented in [Windows Defender Credential Guard: Known issues](credential-guard-known-issues.md#known-issue-single-sign-on-sso-for-network-services-breaks-after-upgrading-to-windows-11-version-22h2).
 
 ### Requirements for automatic enablement
 

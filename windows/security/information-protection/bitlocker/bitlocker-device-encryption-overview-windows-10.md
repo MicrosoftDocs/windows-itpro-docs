@@ -17,7 +17,7 @@ ms.technology: itpro-security
 
 # Overview of BitLocker Device Encryption in Windows
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11
