@@ -60,7 +60,7 @@ When running an expedited release, the regular goal of 95% of devices in 21 days
 
 ### Opt out of expedited releases 
 
-Windows Autopatch provides the option to opt out of service-driven expedited quality updates. To opt out of service-driven expedited quality updates, customers can go to the [Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431) > Tenant administration > Windows Autopatch > **Release management** blade. In the Release management blade, under the **Release Settings** tab, turn off the **Expedited Quality Updates** setting. 
+Windows Autopatch provides the option to opt out of service-driven expedited quality updates. To opt out of service-driven expedited quality updates, customers can go to the [Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431) > **Tenant administration** > **Windows Autopatch** > **Release management** blade. In the **Release management** blade, under the **Release Settings** tab, turn off the **Expedited Quality Updates** setting. 
 
 | Release type | Group | Deferral | Deadline | Grace period |
 | ----- | ----- | ----- | ----- | ----- |
