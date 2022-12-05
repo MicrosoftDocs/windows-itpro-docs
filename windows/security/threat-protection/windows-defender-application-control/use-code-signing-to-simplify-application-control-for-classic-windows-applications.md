@@ -57,7 +57,7 @@ For more information on using signed WDAC policies, see [Use signed policies to 
 
 Some ways to obtain code signing certificates for your own use, include:
 
-- Purchase a code signing certificate from one of the [Microsoft Trusted Root Program participants](/security/trusted-root-docs/Participants-list).
+- Purchase a code signing certificate from one of the [Microsoft Trusted Root Program participants](/security/trusted-root/participants-list).
 - To use your own digital certificate or public key infrastructure (PKI) to issue code signing certificates, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
 - Customers with existing Microsoft Store for Business and Education accounts can continue to use the ["Device Guard signing service v2"](/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business).
 - Use Microsoft's [Azure Code Signing (ACS) service](https://aka.ms/AzureCodeSigning).
