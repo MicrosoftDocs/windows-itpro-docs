@@ -22,7 +22,8 @@ ms.technology: itpro-security
 
 **Applies to**
 
-- Windows 10
+- Windows 11
+- Windows 10
 
 This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 

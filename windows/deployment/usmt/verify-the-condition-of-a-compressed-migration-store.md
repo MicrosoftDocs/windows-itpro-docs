@@ -59,7 +59,7 @@ Where the placeholders have the following values:
 
 To verify whether the migration store is intact or whether it contains corrupted files or a corrupted catalog, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /verify D:\MyMigrationStore\store.mig
 ```
 
@@ -69,7 +69,7 @@ Because no report type is specified, **UsmtUtils** displays the default summary 
 
 To verify whether the catalog file is corrupted or intact, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /verify:catalog D:\MyMigrationStore\store.mig
 ```
 
@@ -77,7 +77,7 @@ UsmtUtils.exe /verify:catalog D:\MyMigrationStore\store.mig
 
 To verify whether there are any corrupted files in the compressed migration store, and to specify the name and location of the log file, enter:
 
-``` syntax
+```cmd
 UsmtUtils.exe /verify:all D:\MyMigrationStore\store.mig /decrypt /l:D:\UsmtUtilsLog.txt`
 ```
 
@@ -87,7 +87,7 @@ In addition to verifying the status of all files, this example decrypts the file
 
 In this example, the log file will only list the files that became corrupted during the **ScanState** process. This list will include the catalog file if it's also corrupted.
 
-``` syntax
+```cmd
 UsmtUtils.exe /verify:failureonly D:\MyMigrationStore\USMT\store.mig /decrypt:AES_192 /keyfile:D:\encryptionKey.txt
 ```
 
@@ -101,4 +101,4 @@ If the `/verify` option indicates that there are corrupted files in the migratio
 
 [UsmtUtils syntax](usmt-utilities.md)
 
-[Return codes](usmt-return-codes.md)
+[Return codes](/troubleshoot/windows-client/deployment/usmt-return-codes)

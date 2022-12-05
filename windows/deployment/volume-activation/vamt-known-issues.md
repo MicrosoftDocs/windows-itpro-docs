@@ -46,13 +46,13 @@ On the KMS host computer, perform the following steps:
 
 3. To extract the contents of the update, run the following command:
 
-   ``` syntax
+   ```cmd
    expand c:\KB3058168\Windows8.1-KB3058168-x64.msu -f:* C:\KB3058168\
    ```
 
 4. To extract the contents of Windows8.1-KB3058168-x64.cab, run the following command:
 
-   ``` syntax
+   ```cmd
    expand c:\KB3058168\Windows8.1-KB3058168-x64.cab -f:pkeyconfig-csvlk.xrm-ms c:\KB3058168
    ```
 

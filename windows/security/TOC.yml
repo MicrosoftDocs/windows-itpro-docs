@@ -136,25 +136,25 @@
         - name: Troubleshoot BitLocker
           items:
             - name: Troubleshoot BitLocker
-              href: information-protection/bitlocker/troubleshoot-bitlocker.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting
             - name: "BitLocker cannot encrypt a drive: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-issues
             - name: "Enforcing BitLocker policies by using Intune: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-intune-issues.md
+              href: /troubleshoot/windows-client/windows-security/enforcing-bitlocker-policies-by-using-intune-known-issues
             - name: "BitLocker Network Unlock: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-network-unlock-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-network-unlock-known-issues
             - name: "BitLocker recovery: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-recovery-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-recovery-known-issues
             - name: "BitLocker configuration: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-config-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-configuration-known-issues
             - name: Troubleshoot BitLocker and TPM issues
               items:
                 - name: "BitLocker cannot encrypt a drive: known TPM issues"
-                  href: information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues.md
+                  href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-tpm-issues
                 - name: "BitLocker and TPM: other known issues"
-                  href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
+                  href: /troubleshoot/windows-client/windows-security/bitlocker-and-tpm-other-known-issues
                 - name: Decode Measured Boot logs to track PCR changes
-                  href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
+                  href: /troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes
      - name: Personal Data Encryption (PDE)
        items:
        - name: Personal Data Encryption (PDE) overview

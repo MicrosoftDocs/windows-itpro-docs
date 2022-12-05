@@ -1,7 +1,7 @@
 ---
 title: Fix issues found by the Readiness assessment tool
 description: This article details how to fix issues found by the Readiness assessment tool
-ms.date: 05/30/2022
+ms.date: 11/17/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
