@@ -58,6 +58,8 @@ Threat and vulnerability information about a new revision of Windows becomes ava
 
 When running an expedited release, the regular goal of 95% of devices in 21 days no longer applies. Instead, Windows Autopatch greatly accelerates the release schedule of the release to update the environment more quickly. This approach requires an updated schedule for all devices outside of the Test ring since those devices are already getting the update as quickly.
 
+Windows Autopatch provides the option to opt out of service driven quality updates expedite. To opt out of service driven expedite, customers can go to Release Management blade under Windows Autopatch section under Tenant Administration on [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). On the release management blade, the Expedited Quality Updates setting on the Release Settings tab can be used to change the expedite behavior. 
+
 | Release type | Group | Deferral | Deadline | Grace period |
 | ----- | ----- | ----- | ----- | ----- |
 | Standard release | Test<p>First<p>Fast<p>Broad | 0<p>1<p>6<p>9 | 0<p>2<p>2<p>5 | 0<p>2<p>2<p>2 |
