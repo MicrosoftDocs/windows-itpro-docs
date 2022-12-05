@@ -154,41 +154,22 @@
                 - name: "BitLocker and TPM: other known issues"
                   href: /troubleshoot/windows-client/windows-security/bitlocker-and-tpm-other-known-issues
                 - name: Decode Measured Boot logs to track PCR changes
-<<<<<<< HEAD
-                  href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
-      - name: Personal Data Encryption (PDE)
-        items:
-        - name: Personal Data Encryption (PDE) overview
-          href: information-protection/personal-data-encryption/overview-pde.md
-        - name: Personal Data Encryption (PDE) frequently asked questions (FAQ)
-          href: information-protection/personal-data-encryption/faq-pde.yml
-        - name: Configure Personal Data Encryption (PDE) in Intune
-          href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
-      - name: Configure S/MIME for Windows
-        href: identity-protection/configure-s-mime.md
+                  href: /troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes
+    - name: Personal Data Encryption (PDE)
+      items:
+      - name: Personal Data Encryption (PDE) overview
+        href: information-protection/personal-data-encryption/overview-pde.md
+      - name: Personal Data Encryption (PDE) frequently asked questions (FAQ)
+        href: information-protection/personal-data-encryption/faq-pde.yml
+      - name: Configure Personal Data Encryption (PDE) in Intune
+        href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
+    - name: Configure S/MIME for Windows
+      href: identity-protection/configure-s-mime.md
     - name: Network security
       items:
       - name: VPN technical guide
         href: identity-protection/vpn/vpn-guide.md
         items:
-=======
-                  href: /troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes
-     - name: Personal Data Encryption (PDE)
-       items:
-       - name: Personal Data Encryption (PDE) overview
-         href: information-protection/personal-data-encryption/overview-pde.md
-       - name: Personal Data Encryption (PDE) frequently asked questions (FAQ)
-         href: information-protection/personal-data-encryption/faq-pde.yml
-       - name: Configure Personal Data Encryption (PDE) in Intune
-         href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
-     - name: Configure S/MIME for Windows
-       href: identity-protection/configure-s-mime.md
-   - name: Network security
-     items:
-     - name: VPN technical guide
-       href: identity-protection/vpn/vpn-guide.md
-       items:
->>>>>>> f25e6e8be24efd068196678e6e0e556d66fe2c0a
         - name: VPN connection types
           href: identity-protection/vpn/vpn-connection-type.md
         - name: VPN routing decisions
