@@ -341,4 +341,4 @@ In this configuration, passwords for SCRIL-configured users expire based on Acti
 
 ## The road ahead
 
-The information presented here is just the beginning. We'll update this guide with improved tools, methods, and scenarios, like Azure AD joined and MDM managed environments. As we continue to invest in a password-less future, we would love to hear from you. Your feedback is important. Send us an email at [pwdless@microsoft.com](mailto:pwdless@microsoft.com?subject=Passwordless%20Feedback).
+The information presented here is just the beginning. We'll update this guide with improved tools, methods, and scenarios, like Azure AD joined and MDM managed environments. As we continue to invest in a password-less future, we would love to hear from you. Your feedback is important. Send us an email at [pwdlessQA@microsoft.com](mailto:pwdlessQA@microsoft.com?subject=Passwordless%20Feedback).
