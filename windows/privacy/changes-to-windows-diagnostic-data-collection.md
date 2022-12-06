@@ -30,6 +30,8 @@ In Windows 10, version 1903 and later, you'll see taxonomy updates in both the *
 
 Additionally, starting in Windows 11 and Windows Server 2022, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. We’re also clarifying the Security diagnostic data level to reflect its behavior more accurately by changing it to **Diagnostic data off**. All these changes are explained in the section named **Behavioral changes**.
 
+Prior to December 7 2022, the default setting for Windows Server 2022 Datacenter: Azure Edition images deployed using Azure Marketplace was **Diagnostic data off**. Beginning December 7 2022, all newly deployed images are set to **Required diagnostic data** to align with all other Windows releases. All other Windows releases and existing installations remain unchanged.
+
 ## Taxonomy changes
 
 Starting in Windows 10, version 1903 and later, both the **Out-of-Box-Experience** (OOBE) and the **Diagnostics & feedback** privacy setting pages will reflect the following changes:
