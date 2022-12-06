@@ -16,8 +16,8 @@ To configure Clever as an IdP for Azure AD, the following prerequisites must be 
 
 1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format *.onmicrosoft.com)
 1. A Clever environment, with students and faculty members already created
-  > [!IMPORTANT]
-  > Users require an email address defined in Clever, which is used to match the users in Azure AD
+    > [!IMPORTANT]
+    > Users require an email address defined in Clever, which is used to match the users in Azure AD
 1. Individual Azure AD accounts already created: each Clever user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
     - School Data Sync (SDS)
     - Azure AD Connect sync for environment with on-premises AD DS
