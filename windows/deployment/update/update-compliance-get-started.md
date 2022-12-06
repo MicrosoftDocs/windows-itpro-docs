@@ -51,7 +51,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 Update Compliance is offered as an Azure Marketplace application that is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. For the following steps, you must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the solution.
 
 > [!IMPORTANT]
-> Update Compliance is deprecated and no longer accepting any new onboarding requests. The instructions below are listed for verification and troubleshooting purposes only for existing Updates Compliance users. Update Compliance has been replaced by [Windows Update for Business reports](..\wufb-reports-overview.md) for monitoring compliance of updates.
+> Update Compliance is deprecated and no longer accepting any new onboarding requests. The instructions below are listed for verification and troubleshooting purposes only for existing Updates Compliance users. Update Compliance has been replaced by [Windows Update for Business reports](wufb-reports-overview.md) for monitoring compliance of updates.
 
 
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/). The solution was published by Microsoft and named **WaaSUpdateInsights**.
