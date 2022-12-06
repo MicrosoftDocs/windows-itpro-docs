@@ -3,23 +3,21 @@ title: Configure federation between Clever and Azure AD
 description: Configuration of a federated trust between Clever and Azure AD, with Clever acting as an identity provider (IdP) for Azure AD.
 ms.date: 12/06/2022
 ms.topic: how-to
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ---
 
-<!-- MAXADO-6286399 -->
 # Configure federation between Clever and Azure AD
 
-In this article, you will learn the steps to configure Clever as an identity provider (IdP) for Azure AD.\
-Once configured, users will be able to sign in to Azure AD with their Clever credentials (e.g. using QR code login).
+In this article, you'll learn the steps to configure Clever as an identity provider (IdP) for Azure AD.\
+Once configured, users will be able to sign in to Azure AD with their Clever credentials (for example, using a QR code).
 
 ## Prerequisites
 
 To configure Clever as an IdP for Azure AD, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple custom DNS domains (i.e. domains that are not in the format *.onmicrosoft.com)
+1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format *.onmicrosoft.com)
 1. A Clever environment, with students and faculty members already created
-    - Users require an email address defined in Clever, which is used to match the users in Azure AD
+  > [!IMPORTANT]
+  > Users require an email address defined in Clever, which is used to match the users in Azure AD
 1. Individual Azure AD accounts already created: each Clever user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
     - School Data Sync (SDS)
     - Azure AD Connect sync for environment with on-premises AD DS
@@ -29,7 +27,7 @@ To configure Clever as an IdP for Azure AD, the following prerequisites must be 
 ## Configure Clever
 
 1. Reach out to Clever Support to request the creation of the *Azure AD SAML app* in your environment
-1. Once the app is ready, you will be notified via email to accept the invitation to the app
+1. Once the app is ready, you'll be notified via email to accept the invitation to the app
 :::image type="content" source="images/clever/invitation.png" alt-text="email invitation from Clever":::
 1. [Sign in to Clever](https://schools.clever.com/applications/saml-azure-ad/settings) as an administrator, and configure the *Azure AD SAML app* with the following details:
 
@@ -46,7 +44,7 @@ The other parameters should already be pre-configured. Verify that the attribute
   
 Take note of the *IDENTITY PROVIDER METADATA URL* value, as it will be required in the next step. For example: `https://samlidp.clever.com/saml-azure-ad/metadata/<GUID>`
 
-> [!NOTE]
+> [!IMPORTANT]
 > Federation will not work if the app has a launch date set in the future. Once the application is ready to be used, ask Clever Support to change the launch date.
 
 ## Configure Azure AD
@@ -109,6 +107,6 @@ From a private browser session, navigate to https://portal.azure.com and sign in
 
 1. As username, use the email as defined in Clever
 1. The user will be redirected to Clever to sign in
-1. After Clever authentication (e.g. using QR code), the user will be redirected back to Azure AD and signed in
+1. After Clever authentication (for example, using QR code), the user will be redirected back to Azure AD and signed in
 
 :::image type="content" source="images/clever/clever-sso.gif" alt-text="Clever SSO":::
