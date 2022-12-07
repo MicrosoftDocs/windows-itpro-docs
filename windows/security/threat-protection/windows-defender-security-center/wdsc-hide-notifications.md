@@ -40,7 +40,7 @@ You can only use Group Policy to change these settings.
 
 ## Use Group Policy to hide non-critical notifications
 
-You can hide notifications that describe regular events related to the health and security of the machine. These notifications are the ones that don't require an action from the machine's user. It can be useful to hide these notifications if you find they're too numerous or you have other status reporting on a larger scale (such as Update Compliance or Microsoft Configuration Manager reporting).
+You can hide notifications that describe regular events related to the health and security of the machine. These notifications are the ones that don't require an action from the machine's user. It can be useful to hide these notifications if you find they're too numerous or you have other status reporting on a larger scale (such as Windows Update for Business reports or Microsoft Configuration Manager reporting).
 
 These notifications can be hidden only by using Group Policy.
 

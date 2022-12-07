@@ -3,7 +3,7 @@ title: Operator sign up and service onboarding
 manager: aaroncz
 description: Service onboarding for Microsoft Connected Cache for ISP
 keywords: updates, downloads, network, bandwidth
-ms.prod: w10
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: nidos
@@ -22,9 +22,17 @@ ms.topic: article
 
 This article details the process of signing up for Microsoft Connected Cache for Internet Service Providers (public preview). 
 
+## Prerequisites
+
+Before you begin sign up, ensure you have the following components:
+- **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You will need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, [visit this page](https://azure.microsoft.com/offers/ms-azr-0003p/).
+- **Access to Azure portal**: Ensure you have the credentials needed to access your organization's Azure portal.
+- **Peering DB**: Ensure your organization's [Peering DB](https://www.peeringdb.com/) page is up-to-date and active. Check that the NOC email listed is accurate, and that you have access to this email. 
+- **Server**: Ensure the server you wish to install Microsoft Connected Cache on is ready, and that the server is installed Ubuntu 20.04 LTS.
+
 ## Resource creation and sign up process  
 
-1. Navigate to the [Azure portal](https://www.portal.azure.com). In the top search bar, search for **Microsoft Connected Cache**.
+1. Navigate to the [Azure portal](https://www.portal.azure.com). Select **Create a Resource**. Then, search for **Microsoft Connected Cache**.
 
    :::image type="content" source="./images/mcc-isp-search.png" alt-text="Screenshot of the Azure portal that shows the Microsoft Connected Cache resource in Azure marketplace.":::
 
