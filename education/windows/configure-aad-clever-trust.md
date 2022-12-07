@@ -2,7 +2,7 @@
 title: Configure federation between Clever and Azure AD
 description: Configuration of a federated trust between Clever and Azure AD, with Clever acting as an identity provider (IdP) for Azure AD.
 ms.date: 12/06/2022
-ms.topic: how-to
+ms.topic: conceptual
 ---
 
 # Configure federation between Clever and Azure AD
