@@ -3,7 +3,7 @@ title: Verify cache node functionality and monitor health and performance
 manager: aaroncz
 description: How to verify the functionality of a cache node
 keywords: updates, downloads, network, bandwidth
-ms.prod: w10
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: amyzhou

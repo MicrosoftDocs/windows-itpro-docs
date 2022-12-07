@@ -3,7 +3,7 @@ title: Don't Remove images under do/images/elixir_ux - used by Azure portal Diag
 manager: aaroncz
 description: Elixir images read me file
 keywords: updates, downloads, network, bandwidth
-ms.prod: w10
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: nidos
