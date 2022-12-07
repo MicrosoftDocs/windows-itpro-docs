@@ -1,138 +1,158 @@
 ---
-title: Policy CSP - WindowsInkWorkspace
-description: Learn to use the Policy CSP - WindowsInkWorkspace setting to specify whether to allow the user to access the ink workspace.
+title: WindowsInkWorkspace Policy CSP
+description: Learn more about the WindowsInkWorkspace Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/07/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsInkWorkspace-Begin -->
 # Policy CSP - WindowsInkWorkspace
 
-<hr/>
+<!-- WindowsInkWorkspace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsInkWorkspace-Editable-End -->
 
-<!--Policies-->
-## WindowsInkWorkspace policies
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Begin -->
+## AllowSuggestedAppsInWindowsInkWorkspace
 
-<dl>
-  <dd>
-    <a href="#windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace">WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace</a>
-  </dd>
-  <dd>
-    <a href="#windowsinkworkspace-allowwindowsinkworkspace">WindowsInkWorkspace/AllowWindowsInkWorkspace</a>
-  </dd>
-</dl>
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Applicability-End -->
 
-<hr/>
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace
+```
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allow suggested apps in Windows Ink Workspace
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Description-End -->
 
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * Device
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-AllowedValues-End -->
 
-<hr/>
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Show recommended app suggestions in the ink workspace.
+| Name | Value |
+|:--|:--|
+| Name | AllowSuggestedAppsInWindowsInkWorkspace |
+| Friendly Name | Allow suggested apps in Windows Ink Workspace |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Ink Workspace |
+| Registry Key Name | Software\Policies\Microsoft\WindowsInkWorkspace |
+| Registry Value Name | AllowSuggestedAppsInWindowsInkWorkspace |
+| ADMX File Name | WindowsInkWorkspace.admx |
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-GpMapping-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow suggested apps in Windows Ink Workspace*
--   GP name: *AllowSuggestedAppsInWindowsInkWorkspace*
--   GP path: *Windows Components/Windows Ink Workspace*
--   GP ADMX file name: *WindowsInkWorkspace.admx*
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-Examples-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowSuggestedAppsInWindowsInkWorkspace-End -->
 
--   0 - app suggestions are not allowed.
--   1 (default) -allow app suggestions.
+<!-- AllowWindowsInkWorkspace-Begin -->
+## AllowWindowsInkWorkspace
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowWindowsInkWorkspace-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowWindowsInkWorkspace-Applicability-End -->
 
-<hr/>
+<!-- AllowWindowsInkWorkspace-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsInkWorkspace/AllowWindowsInkWorkspace
+```
+<!-- AllowWindowsInkWorkspace-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowWindowsInkWorkspace-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies whether to allow the user to access the ink workspace.
+<!-- AllowWindowsInkWorkspace-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow Windows Ink Workspace*
--   GP name: *AllowWindowsInkWorkspace*
--   GP element: *AllowWindowsInkWorkspaceDropdown*
--   GP path: *Windows Components/Windows Ink Workspace*
--   GP ADMX file name: *WindowsInkWorkspace.admx*
+<!-- AllowWindowsInkWorkspace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWindowsInkWorkspace-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported value type is int. The following list shows the supported values:
+<!-- AllowWindowsInkWorkspace-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 - access to ink workspace is disabled. The feature is turned off.
--   1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen.
--   2 (default) - ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 2 |
+<!-- AllowWindowsInkWorkspace-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- AllowWindowsInkWorkspace-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Policies-->
+| Value | Description |
+|:--|:--|
+| 0 | access to ink workspace is disabled. The feature is turned off. |
+| 1 | ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen. |
+| 2 (Default) | ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen. |
+<!-- AllowWindowsInkWorkspace-AllowedValues-End -->
 
-## Related topics
+<!-- AllowWindowsInkWorkspace-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowWindowsInkWorkspace |
+| Friendly Name | Allow Windows Ink Workspace |
+| Element Name | Choose one of the following actions |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Ink Workspace |
+| Registry Key Name | Software\Policies\Microsoft\WindowsInkWorkspace |
+| ADMX File Name | WindowsInkWorkspace.admx |
+<!-- AllowWindowsInkWorkspace-GpMapping-End -->
+
+<!-- AllowWindowsInkWorkspace-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWindowsInkWorkspace-Examples-End -->
+
+<!-- AllowWindowsInkWorkspace-End -->
+
+<!-- WindowsInkWorkspace-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsInkWorkspace-CspMoreInfo-End -->
+
+<!-- WindowsInkWorkspace-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)

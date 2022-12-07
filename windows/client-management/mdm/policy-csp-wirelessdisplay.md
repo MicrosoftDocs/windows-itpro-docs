@@ -1,468 +1,613 @@
 ---
-title: Policy CSP - WirelessDisplay
-description: Use the Policy CSP - WirelessDisplay setting to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver.
+title: WirelessDisplay Policy CSP
+description: Learn more about the WirelessDisplay Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/07/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WirelessDisplay-Begin -->
 # Policy CSP - WirelessDisplay
 
-<hr/>
-
-<!--Policies-->
-## WirelessDisplay policies
-
-<dl>
-  <dd>
-    <a href="#wirelessdisplay-allowmdnsadvertisement">WirelessDisplay/AllowMdnsAdvertisement</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowmovementdetectiononinfrastructure">WirelessDisplay/AllowMovementDetectionOnInfrastructure</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowprojectionfrompcoverinfrastructure">WirelessDisplay/AllowProjectionFromPCOverInfrastructure</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowprojectiontopc">WirelessDisplay/AllowProjectionToPC</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowprojectiontopcoverinfrastructure">WirelessDisplay/AllowProjectionToPCOverInfrastructure</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver">WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</a>
-  </dd>
-  <dd>
-    <a href="#wirelessdisplay-requirepinforpairing">WirelessDisplay/RequirePinForPairing</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowmdnsadvertisement"></a>**WirelessDisplay/AllowMdnsAdvertisement**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- WirelessDisplay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WirelessDisplay-Editable-End -->
+
+<!-- AllowMdnsAdvertisement-Begin -->
+## AllowMdnsAdvertisement
+
+<!-- AllowMdnsAdvertisement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowMdnsAdvertisement-Applicability-End -->
+
+<!-- AllowMdnsAdvertisement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowMdnsAdvertisement
+```
+<!-- AllowMdnsAdvertisement-OmaUri-End -->
+
+<!-- AllowMdnsAdvertisement-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver.
+<!-- AllowMdnsAdvertisement-Description-End -->
+
+<!-- AllowMdnsAdvertisement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowMdnsAdvertisement-Editable-End -->
+
+<!-- AllowMdnsAdvertisement-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowMdnsAdvertisement-DFProperties-End -->
+
+<!-- AllowMdnsAdvertisement-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowMdnsAdvertisement-AllowedValues-End -->
+
+<!-- AllowMdnsAdvertisement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowMdnsAdvertisement-Examples-End -->
+
+<!-- AllowMdnsAdvertisement-End -->
+
+<!-- AllowMdnsDiscovery-Begin -->
+## AllowMdnsDiscovery
+
+<!-- AllowMdnsDiscovery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowMdnsDiscovery-Applicability-End -->
+
+<!-- AllowMdnsDiscovery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowMdnsDiscovery
+```
+<!-- AllowMdnsDiscovery-OmaUri-End -->
+
+<!-- AllowMdnsDiscovery-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver.
+<!-- AllowMdnsDiscovery-Description-End -->
+
+<!-- AllowMdnsDiscovery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowMdnsDiscovery-Editable-End -->
+
+<!-- AllowMdnsDiscovery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowMdnsDiscovery-DFProperties-End -->
+
+<!-- AllowMdnsDiscovery-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowMdnsDiscovery-AllowedValues-End -->
+
+<!-- AllowMdnsDiscovery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowMdnsDiscovery-Examples-End -->
+
+<!-- AllowMdnsDiscovery-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-Begin -->
+## AllowMovementDetectionOnInfrastructure
+
+<!-- AllowMovementDetectionOnInfrastructure-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowMovementDetectionOnInfrastructure-Applicability-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowMovementDetectionOnInfrastructure
+```
+<!-- AllowMovementDetectionOnInfrastructure-OmaUri-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to disable the infrastructure movement detection feature. If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure. If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
+<!-- AllowMovementDetectionOnInfrastructure-Description-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowMovementDetectionOnInfrastructure-Editable-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowMovementDetectionOnInfrastructure-DFProperties-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowMovementDetectionOnInfrastructure-AllowedValues-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowMovementDetectionOnInfrastructure-Examples-End -->
+
+<!-- AllowMovementDetectionOnInfrastructure-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-Begin -->
+## AllowPCReceiverToBeTCPServer
+
+<!-- AllowPCReceiverToBeTCPServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowPCReceiverToBeTCPServer-Applicability-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowPCReceiverToBeTCPServer
+```
+<!-- AllowPCReceiverToBeTCPServer-OmaUri-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows a PC acting as a Wireless Display receiver to be a TCP server for the TCP session carrying the projection stream to the receiver. If you set it to 0, your PC receiver will start the outbound connection as a TCP client. If you set it to 1, your PC may receive the incoming projection as a TCP server.
+<!-- AllowPCReceiverToBeTCPServer-Description-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPCReceiverToBeTCPServer-Editable-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowPCReceiverToBeTCPServer-DFProperties-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowPCReceiverToBeTCPServer-AllowedValues-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPCReceiverToBeTCPServer-Examples-End -->
+
+<!-- AllowPCReceiverToBeTCPServer-End -->
+
+<!-- AllowPCSenderToBeTCPClient-Begin -->
+## AllowPCSenderToBeTCPClient
+
+<!-- AllowPCSenderToBeTCPClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowPCSenderToBeTCPClient-Applicability-End -->
+
+<!-- AllowPCSenderToBeTCPClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowPCSenderToBeTCPClient
+```
+<!-- AllowPCSenderToBeTCPClient-OmaUri-End -->
+
+<!-- AllowPCSenderToBeTCPClient-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows a PC acting as a Wireless Display sender to be a TCP client for the TCP session carrying the projection stream to the receiver. If you set it to 0, your PC will only participate in an outgoing projection as a TCP server. If you set it to 1, your PC may start an outgoing projection as a TCP client.
+<!-- AllowPCSenderToBeTCPClient-Description-End -->
+
+<!-- AllowPCSenderToBeTCPClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPCSenderToBeTCPClient-Editable-End -->
+
+<!-- AllowPCSenderToBeTCPClient-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowPCSenderToBeTCPClient-DFProperties-End -->
+
+<!-- AllowPCSenderToBeTCPClient-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowPCSenderToBeTCPClient-AllowedValues-End -->
+
+<!-- AllowPCSenderToBeTCPClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPCSenderToBeTCPClient-Examples-End -->
+
+<!-- AllowPCSenderToBeTCPClient-End -->
+
+<!-- AllowProjectionFromPC-Begin -->
+## AllowProjectionFromPC
+
+<!-- AllowProjectionFromPC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowProjectionFromPC-Applicability-End -->
+
+<!-- AllowProjectionFromPC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowProjectionFromPC
+```
+<!-- AllowProjectionFromPC-OmaUri-End -->
+
+<!-- AllowProjectionFromPC-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to turn off projection from a PC. If you set it to 0, your PC cannot discover or project to other devices. If you set it to 1, your PC can discover and project to other devices.
+<!-- AllowProjectionFromPC-Description-End -->
+
+<!-- AllowProjectionFromPC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowProjectionFromPC-Editable-End -->
+
+<!-- AllowProjectionFromPC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowProjectionFromPC-DFProperties-End -->
+
+<!-- AllowProjectionFromPC-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Your PC cannot discover or project to other devices. |
+| 1 (Default) | Your PC can discover and project to other devices. |
+<!-- AllowProjectionFromPC-AllowedValues-End -->
+
+<!-- AllowProjectionFromPC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowProjectionFromPC-Examples-End -->
+
+<!-- AllowProjectionFromPC-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-Begin -->
+## AllowProjectionFromPCOverInfrastructure
+
+<!-- AllowProjectionFromPCOverInfrastructure-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowProjectionFromPCOverInfrastructure-Applicability-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowProjectionFromPCOverInfrastructure
+```
+<!-- AllowProjectionFromPCOverInfrastructure-OmaUri-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to turn off projection from a PC over infrastructure. If you set it to 0, your PC cannot discover or project to other infrastructure devices, though it may still be possible to discover and project over WiFi Direct. If you set it to 1, your PC can discover and project to other devices over infrastructure.
+<!-- AllowProjectionFromPCOverInfrastructure-Description-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowProjectionFromPCOverInfrastructure-Editable-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowProjectionFromPCOverInfrastructure-DFProperties-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct. |
+| 1 (Default) | Your PC can discover and project to other devices over infrastructure. |
+<!-- AllowProjectionFromPCOverInfrastructure-AllowedValues-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowProjectionFromPCOverInfrastructure-Examples-End -->
+
+<!-- AllowProjectionFromPCOverInfrastructure-End -->
+
+<!-- AllowProjectionToPC-Begin -->
+## AllowProjectionToPC
+
+<!-- AllowProjectionToPC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowProjectionToPC-Applicability-End -->
+
+<!-- AllowProjectionToPC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowProjectionToPC
+```
+<!-- AllowProjectionToPC-OmaUri-End -->
+
+<!-- AllowProjectionToPC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to turn off projection to a PC.
+
+
+
+If you turn it on, your PC isn't discoverable and can't be projected to except if the user manually launches the Wireless Display app.
+
+
+
+If you turn it off or don't configure it, your PC is discoverable and can be projected to above lock screen only. The user has an option to turn it always on or off except for manual launch, too.
+<!-- AllowProjectionToPC-Description-End -->
+
+<!-- AllowProjectionToPC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowProjectionToPC-Editable-End -->
+
+<!-- AllowProjectionToPC-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowProjectionToPC-DFProperties-End -->
+
+<!-- AllowProjectionToPC-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Projection to PC is not allowed. Always off and the user cannot enable it. |
+| 1 (Default) | Projection to PC is allowed. Enabled only above the lock screen. |
+<!-- AllowProjectionToPC-AllowedValues-End -->
+
+<!-- AllowProjectionToPC-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowProjectionToPC |
+| Friendly Name | Don't allow this PC to be projected to |
+| Location | Computer Configuration |
+| Path | Windows Components > Connect |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Connect |
+| Registry Value Name | AllowProjectionToPC |
+| ADMX File Name | WirelessDisplay.admx |
+<!-- AllowProjectionToPC-GpMapping-End -->
+
+<!-- AllowProjectionToPC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowProjectionToPC-Examples-End -->
+
+<!-- AllowProjectionToPC-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-Begin -->
+## AllowProjectionToPCOverInfrastructure
+
+<!-- AllowProjectionToPCOverInfrastructure-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowProjectionToPCOverInfrastructure-Applicability-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowProjectionToPCOverInfrastructure
+```
+<!-- AllowProjectionToPCOverInfrastructure-OmaUri-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to turn off projection to a PC over infrastructure. If you set it to 0, your PC cannot be discoverable and can't be projected to over infrastructure, though it may still be possible to project over WiFi Direct. If you set it to 1, your PC can be discoverable and can be projected to over infrastructure.
+<!-- AllowProjectionToPCOverInfrastructure-Description-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowProjectionToPCOverInfrastructure-Editable-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowProjectionToPCOverInfrastructure-DFProperties-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct. |
+| 1 (Default) | Your PC is discoverable and other devices can project to it over infrastructure. |
+<!-- AllowProjectionToPCOverInfrastructure-AllowedValues-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowProjectionToPCOverInfrastructure-Examples-End -->
+
+<!-- AllowProjectionToPCOverInfrastructure-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-Begin -->
+## AllowUserInputFromWirelessDisplayReceiver
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+<!-- AllowUserInputFromWirelessDisplayReceiver-Applicability-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver
+```
+<!-- AllowUserInputFromWirelessDisplayReceiver-OmaUri-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-Description-Begin -->
+<!-- Description-Source-DDF -->
+Setting this policy controls whether or not the wireless display can send input—keyboard, mouse, pen, and touch input if the display supports it—back to the source device.
+<!-- AllowUserInputFromWirelessDisplayReceiver-Description-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowUserInputFromWirelessDisplayReceiver-Editable-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowUserInputFromWirelessDisplayReceiver-DFProperties-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Wireless display input disabled. |
+| 1 (Default) | Wireless display input enabled. |
+<!-- AllowUserInputFromWirelessDisplayReceiver-AllowedValues-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowUserInputFromWirelessDisplayReceiver-Examples-End -->
+
+<!-- AllowUserInputFromWirelessDisplayReceiver-End -->
+
+<!-- RequirePinForPairing-Begin -->
+## RequirePinForPairing
+
+<!-- RequirePinForPairing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- RequirePinForPairing-Applicability-End -->
+
+<!-- RequirePinForPairing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/RequirePinForPairing
+```
+<!-- RequirePinForPairing-OmaUri-End -->
+
+<!-- RequirePinForPairing-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to require a pin for pairing.
+
+If you set this to 'Never', a pin isn't required for pairing.
+
+If you set this to 'First Time', the pairing ceremony for new devices will always require a PIN.
+
+If you set this to 'Always', all pairings will require PIN.
+<!-- RequirePinForPairing-Description-End -->
+
+<!-- RequirePinForPairing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequirePinForPairing-Editable-End -->
+
+<!-- RequirePinForPairing-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequirePinForPairing-DFProperties-End -->
+
+<!-- RequirePinForPairing-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | PIN is not required. |
+| 1 | Pairing ceremony for new devices will always require a PIN |
+| 2 | All pairings will require PIN |
+<!-- RequirePinForPairing-AllowedValues-End -->
+
+<!-- RequirePinForPairing-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RequirePinForPairing |
+| Friendly Name | Require pin for pairing |
+| Location | Computer Configuration |
+| Path | Windows Components > Connect |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Connect |
+| Registry Value Name | RequirePinForPairing |
+| ADMX File Name | WirelessDisplay.admx |
+<!-- RequirePinForPairing-GpMapping-End -->
+
+<!-- RequirePinForPairing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequirePinForPairing-Examples-End -->
+
+<!-- RequirePinForPairing-End -->
+
+<!-- WirelessDisplay-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WirelessDisplay-CspMoreInfo-End -->
+
+<!-- WirelessDisplay-End -->
+
+## Related articles
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 - Don't allow
-- 1 - Allow
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowmdnsdiscovery"></a>**WirelessDisplay/AllowMdnsDiscovery**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - Doesn't allow
--   1 - Allow
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowmovementdetectiononinfrastructure"></a>**WirelessDisplay/AllowMovementDetectionOnInfrastructure**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to disable the infrastructure movement detection feature.
-
-- If you set it to 0, your PC may stay connected and continue to project if you walk away from a Wireless Display receiver to which you are projecting over infrastructure.
-
-- If you set it to 1, your PC will detect that you have moved and will automatically disconnect your infrastructure Wireless Display session.
-
-The default value is 1.
-
-<!--/Description-->
-<!--SupportedValues-->
-
-The following list shows the supported values:
-
-- 0 - Doesn't allow
-- 1 (Default) - Allow
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to turn off projection from a PC.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - your PC can't discover or project to other devices.
--   1 - your PC can discover and project to other devices
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to turn off projection from a PC over infrastructure.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - your PC can't discover or project to other infrastructure devices, although it's possible to discover and project over WiFi Direct.
--   1 - your PC can discover and project to other devices over infrastructure.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allow or disallow turning off the projection to a PC.
-
-If you set it to 0 (zero), your PC isn't discoverable and you can't project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
-
-Supported value type is integer.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Don't allow this PC to be projected to*
--   GP name: *AllowProjectionToPC*
--   GP path: *Windows Components/Connect*
--   GP ADMX file name: *WirelessDisplay.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - projection to PC isn't allowed. Always off and the user can't enable it.
--   1 (default) - projection to PC is allowed. Enabled only above the lock screen.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to turn off projection to a PC over infrastructure.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - your PC isn't discoverable and other devices can't project to it over infrastructure, although it's possible to project to it over WiFi Direct.
--   1 - your PC is discoverable and other devices can project to it over infrastructure.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - Wireless display input disabled.
--   1 (default) - Wireless display input enabled.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**
-
-<!--SupportedSKUs-->
-The table below shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allow or disallow requirement for a PIN for pairing.
-
-If you turn on this policy, the pairing ceremony for new devices will always require a PIN. If you turn off this policy or don't configure it, a PIN isn't required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
-
-Supported value type is integer.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Require pin for pairing*
--   GP name: *RequirePinForPairing*
--   GP path: *Windows Components/Connect*
--   GP ADMX file name: *WirelessDisplay.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 (default) - PIN isn't required.
--   1 - PIN is required.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
-CSP Article:
-
-## Related topics
 [Policy configuration service provider](policy-configuration-service-provider.md)

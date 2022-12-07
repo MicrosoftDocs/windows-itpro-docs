@@ -502,6 +502,8 @@ items:
           href: policy-csp-settings.md
         - name: SettingsSync
           href: policy-csp-settingssync.md
+        - name: SmartScreen
+          href: policy-csp-smartscreen.md
         - name: Speech
           href: policy-csp-speech.md
         - name: Start
@@ -544,8 +546,6 @@ items:
           href: policy-csp-windowsconnectionmanager.md
         - name: WindowsDefenderSecurityCenter
           href: policy-csp-windowsdefendersecuritycenter.md
-        - name: WindowsDefenderSmartScreen
-          href: policy-csp-smartscreen.md
         - name: WindowsInkWorkspace
           href: policy-csp-windowsinkworkspace.md
         - name: WindowsLogon
