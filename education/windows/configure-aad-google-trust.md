@@ -38,13 +38,13 @@ Follow the steps described in the [Google documentation](https://support.google.
 ### Configure Azure AD as a Service Provider (SP) for Google Workspace
 
 The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Using the **IdP metadata** XML file downloaded from Google Workspace, modify the and `$DomainName` variable of the following script to match your environment, and then run it in an elevated PowerShell session:
+Using the **IdP metadata** XML file downloaded from Google Workspace, modify the `$DomainName` variable of the following script to match your environment, and then run it in an elevated PowerShell session:
 
 ```powershell
 Install-Module -Name MSOnline
 Import-Module MSOnline
 
-$DomainName = "learn.intune.dev"
+$DomainName = "<your domain name>"
 
 $xml = [Xml](Get-Content GoogleIDPMetadata.xml)
 

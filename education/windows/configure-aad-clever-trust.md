@@ -60,7 +60,6 @@ The configuration of Azure AD consists of changing the authentication method for
 Modify the `$idpMetadataUrl` and `$DomainName` variables of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use a *Global Administrator* account.
 
 ```powershell
-Install-Module -Name AzureAD
 Install-Module -Name MSOnline
 Import-Module MSOnline
 
