@@ -25,11 +25,11 @@ The [Cryptographic Module Validation Program (CMVP)][HTTP-1]) is a joint effort 
 
 ## Microsoft's approach to FIPS 140-2 validation
 
-Microsoft maintains an active commitment to meeting the requirements of the FIPS 140-2 standard, having validated cryptographic modules against it since it was first established in 2001.  Microsoft validates its cryptographic modules under the NIST CMVP, as described above.  Multiple Microsoft products, including Windows 10, Windows Server, and many cloud services, use these cryptographic modules.
+Microsoft maintains an active commitment to meeting the requirements of the FIPS 140-2 standard, having validated cryptographic modules against it since it was first established in 2001.  Microsoft validates its cryptographic modules under the NIST CMVP, as described above.  Multiple Microsoft products, including Windows 11, Windows 10, Windows Server, and many cloud services, use these cryptographic modules.
 
 ## Using Windows in a FIPS 140-2 approved mode of operation
 
-Windows 10 and Windows Server may be configured to run in a FIPS 140-2 approved mode of operation, commonly referred to as "FIPS mode."  If you turn on FIPS mode, the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) modules will run self-tests before Windows runs cryptographic operations. These self-tests are run according to FIPS 140-2 Section 4.9. They ensure that the modules are functioning properly.
+Windows 11, Windows 10 and Windows Server may be configured to run in a FIPS 140-2 approved mode of operation, commonly referred to as "FIPS mode."  If you turn on FIPS mode, the Cryptographic Primitives Library (bcryptprimitives.dll) and Kernel Mode Cryptographic Primitives Library (CNG.sys) modules will run self-tests before Windows runs cryptographic operations. These self-tests are run according to FIPS 140-2 Section 4.9. They ensure that the modules are functioning properly.
 
 The Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library are the only modules affected by FIPS mode. FIPS mode won't prevent Windows and its subsystems from using non-FIPS validated cryptographic algorithms. FIPS mode is merely advisory for applications or components other than the Cryptographic Primitives Library and the Kernel Mode Cryptographic Primitives Library.
 
