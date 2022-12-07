@@ -25,13 +25,13 @@ ms.date: 12/07/2022
 
 ## Prerequisites
 
-### **Required**
+### Required
 
 - [Azure AD joined device](/azure/active-directory/devices/concept-azure-ad-join)
 - [Windows Hello for Business](../../identity-protection/hello-for-business/hello-overview.md)
 - Windows 11, version 22H2 and later Enterprise and Education editions
 
-### **Not supported with PDE**
+### Not supported with PDE
 
 - [FIDO/security key authentication](../../identity-protection/hello-for-business/microsoft-compatible-security-key.md)
 - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
@@ -40,7 +40,7 @@ ms.date: 12/07/2022
 - [Hybrid Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - Remote Desktop connections
 
-### **Security hardening recommendations**
+### Security hardening recommendations
 
 - [Kernel-mode crash dumps  and live dumps disabled](/windows/client-management/mdm/policy-csp-memorydump#memorydump-policies)
 
@@ -55,9 +55,28 @@ ms.date: 12/07/2022
    Hibernation files can potentially cause the keys used by PDE to protect files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 - [Disable allowing users to select when a password is required when resuming from connected standby](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
-  - When this policy is not configured on-premises Active Directory joined devices. However, this policy is enabled by default on Azure AD joined devices. For information on disabling this policy via Intune, see [Disable allowing users to select when a password is required when resuming from connected standby](configure-pde-in-intune.md#disable-allowing-users-to-select-when-a-password-is-required-when-resuming-from-connected-standby).
 
-### **Highly recommended**
+    When this policy isn't configured, the outcome between on-premises Active Directory joined devices and workgroup devices, including native Azure Active Directory joined devices, is different:
+
+  - On-premises Active Directory joined devices:
+
+    - A user can't change the amount of time after the device´s screen turns off before a password is required when waking the device.
+
+    - A password is required immediately after the screen turns off.
+
+    The above is the desired outcome, but PDE isn't supported with on-premises Active Directory joined devices.
+
+  - Workgroup devices, including native Azure AD joined devices:
+
+    - A user on a Connected Standby device can change the amount of time after the device´s screen turns off before a password is required to wake the device.
+
+    - During the time when the screen turns off but a password isn't required, the keys used by PDE to protect files could potentially be exposed. This outcome isn't a desired outcome.
+
+    Because of this undesired outcome, it's recommended to explicitly disable this policy on native Azure AD joined devices.
+
+   For information on disabling this policy via Intune, see [Disable allowing users to select when a password is required when resuming from connected standby](configure-pde-in-intune.md#disable-allowing-users-to-select-when-a-password-is-required-when-resuming-from-connected-standby).
+
+### Highly recommended
 
 - [BitLocker Drive Encryption](../bitlocker/bitlocker-overview.md) enabled
 
@@ -120,14 +139,14 @@ For information on enabling PDE via Intune, see [Enable Personal Data Encryption
 
 ## Differences between PDE and BitLocker
 
-PDE is meant to work alongside BitLocker. PDE isn't a replacement for BitLocker, nor is BitLocker a replacement for PDE. Using both features together provides better security than using either BitLocker or PDE alone. However there are differences between BitLocker and PDE and how they work. This is why using them together offers better security.
+PDE is meant to work alongside BitLocker. PDE isn't a replacement for BitLocker, nor is BitLocker a replacement for PDE. Using both features together provides better security than using either BitLocker or PDE alone. However there are differences between BitLocker and PDE and how they work. These differences are why using them together offers better security.
 
 | Item | PDE | BitLocker |
 |--|--|--|
 | Release of decryption key | At user sign-in via Windows Hello for Business | At boot |
 | Decryption keys discarded | When user signs out of Windows or one minute after Windows lock screen is engaged | At reboot |
 | Files protected | Individual specified files | Entire volume/drive |
-| Authentication to access protected file | Windows Hello for Business | When BitLocker with TPM + PIN is enabled, BitLocker PIN plus Windows sign in |
+| Authentication to access protected file | Windows Hello for Business | When BitLocker with TPM + PIN is enabled, BitLocker PIN plus Windows sign-in |
 
 ## Differences between PDE and EFS
 
@@ -143,7 +162,7 @@ For PDE protected files, under **Protection status:** there will be an item list
 
 For EFS protected files, under **Users who can access this file:**, there will be a **Certificate thumbprint** next to the users with access to the file. There will also be a section at the bottom labeled **Recovery certificates for this file as defined by recovery policy:**.
 
-Encryption information including what encryption method is being used to protect the file can be obtained with the command line [`cipher.exe /c`](/windows-server/administration/windows-commands/cipher) command.
+Encryption information including what encryption method is being used to protect the file can be obtained with the [cipher.exe /c](/windows-server/administration/windows-commands/cipher) command.
 
 ## Disable PDE and decrypt files
 
@@ -161,18 +180,24 @@ Disabling PDE doesn't decrypt any PDE protected files. It only prevents the PDE 
 3. Uncheck the option **Encrypt contents to secure data**
 4. Select **OK**, and then **OK** again
 
-PDE protected files can also be decrypted using [`cipher.exe`](/windows-server/administration/windows-commands/cipher). Using `cipher.exe` can be helpful to decrypt files in the following scenarios:
+PDE protected files can also be decrypted using [cipher.exe](/windows-server/administration/windows-commands/cipher). Using `cipher.exe` can be helpful to decrypt files in the following scenarios:
 
 - Decrypting a large number of files on a device
 - Decrypting files on a large number of devices.
 
 To decrypt files on a device using `cipher.exe`:
 
-- Decrypt all files under a directory including subdirectories:<br>
-  `cipher.exe /d /s:*<path\_to\_directory>*`
+- Decrypt all files under a directory including subdirectories:
 
-- Decrypt a single file or all of the files in the specified directory, but not any subdirectories:<br>
-  `cipher.exe /d *<path\_to\_file\_or\_directory>*`
+    ```cmd
+    cipher.exe /d /s:<path_to_directory>
+    ```
+
+- Decrypt a single file or all of the files in the specified directory, but not any subdirectories:
+
+    ```cmd
+    cipher.exe /d <path_to_file_or_directory>
+    ```
 
 > [!IMPORTANT]
 > Once a user selects to manually decrypt a file, the user will not be able to manually protect the file again using PDE.
