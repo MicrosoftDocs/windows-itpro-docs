@@ -81,7 +81,7 @@ Application Guard functionality is turned off by default. However, you can quick
 3. Type the following command:
 
     ```
-    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
+    Enable-WindowsOptionalFeature -Online -FeatureName Windows-Defender-ApplicationGuard
     ```
 4. Restart the device.
 
