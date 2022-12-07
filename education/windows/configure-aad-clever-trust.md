@@ -35,21 +35,21 @@ To configure Clever as an IdP for Azure AD, the following prerequisites must be 
 
 | Variables | Value |
 |-|-|
-|ASSERTION CONSUMER SERVICE URL|`https://login.microsoftonline.com/login.srf`|
-|ENTITY ID|`urn:federation:MicrosoftOnline`|
-|NAME ID FORMAT|`urn:oasis:names:tc:SAML:2.0:nameid-format:email`|
+|Assertion Consumer Service Url|`https://login.microsoftonline.com/login.srf`|
+|Entity ID|`urn:federation:MicrosoftOnline`|
+|Name ID Format|`urn:oasis:names:tc:SAML:2.0:nameid-format:email`|
 
 The other parameters should already be pre-configured. Verify that the attribute mapping is correct, using the *email* as NAMEID:
 :::image type="content" source="images/clever/clever-aad-saml-app-2.png" alt-text="Clever admin console":::
   
-Take note of the *IDENTITY PROVIDER METADATA URL* value, as it will be required in the next step. For example: `https://samlidp.clever.com/saml-azure-ad/metadata/<GUID>`
+Take note of the **Identity Provider Metadata URL** value, as it will be required in the next step. For example: `https://samlidp.clever.com/saml-azure-ad/metadata/<GUID>`
 
 > [!IMPORTANT]
 > Federation will not work if the app has a launch date set in the future. Once the application is ready to be used, ask Clever Support to change the launch date.
 
 ## Configure Azure AD
 
-The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\ 
+The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
 Modify the `$idpMetadataUrl` and `$DomainName` variables of the following script to match your environment, and then run it in an elevated PowerShell session:
 
 ```powershell
