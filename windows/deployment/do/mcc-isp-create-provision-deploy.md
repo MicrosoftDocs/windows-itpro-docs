@@ -3,7 +3,7 @@ title: Create, provision, and deploy the cache node in Azure portal
 manager: aaroncz
 description: Instructions for creating, provisioning, and deploying Microsoft Connected Cache for ISP on Azure portal
 keywords: updates, downloads, network, bandwidth
-ms.prod: w10
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: nidos
