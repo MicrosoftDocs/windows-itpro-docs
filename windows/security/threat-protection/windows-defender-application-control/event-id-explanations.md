@@ -189,3 +189,4 @@ A list of other relevant event IDs and their corresponding description.
 | 3110 | Windows mode change event was unsuccessful. |
 | 3111 | The file under validation didn't meet the hypervisor-protected code integrity (HVCI) policy. |
 | 3112 | The file under validation is signed by a certificate that has been explicitly revoked by Windows. |
+| 3114 | Dynamic Code Security opted the .NET app or DLL into Application Control policy validation. The file under validation didn't pass your policy and was blocked. |
