@@ -2,7 +2,7 @@
 metadata:
   title: Advanced security auditing FAQ (Windows 10)
   description: This article lists common questions and answers about understanding, deploying, and managing security audit policies.
-  ms.prod: m365-security
+  ms.prod: windows-client
   ms.technology: mde
   ms.localizationpriority: none
   author: dansimp

@@ -3,7 +3,7 @@ title: Operator sign up and service onboarding
 manager: aaroncz
 description: Service onboarding for Microsoft Connected Cache for ISP
 keywords: updates, downloads, network, bandwidth
-ms.prod: w10
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: nidos
