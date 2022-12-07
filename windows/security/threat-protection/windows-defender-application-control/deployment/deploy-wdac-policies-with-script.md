@@ -10,7 +10,7 @@ ms.reviewer: aaroncz
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 10/06/2022
+ms.date: 12/03/2022
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -29,12 +29,21 @@ ms.localizationpriority: medium
 
 This article describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
 
-> [!NOTE]
-> To use this procedure, download and distribute the [WDAC policy refresh tool](https://aka.ms/refreshpolicy) to all managed endpoints. Ensure your WDAC policies allow the WDAC policy refresh tool or use a managed installer to distribute the tool.
-
-## Deploying policies for Windows 10 version 1903 and above
-
 You should now have one or more WDAC policies converted into binary form. If not, follow the steps described in [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+
+## Deploying policies for Windows 11 22H2 and above
+
+You can use [citool.exe](/windows/security/threat-protection/windows-defender-application-control/operations/citool-commands) to apply policies on Windows 11 22H2 with the following commands. Be sure to replace **&lt;Path to policy binary file to deploy&gt;** in the example below with the actual path to your WDAC policy binary file.
+
+```powershell
+# Policy binary files should be named as {GUID}.cip for multiple policy format files (where {GUID} = <PolicyId> from the Policy XML)
+$PolicyBinary = "<Path to policy binary file to deploy>"
+citool.exe --update-policy $PolicyBinary --json
+```
+
+## Deploying policies for Windows 11, Windows 10 version 1903 and above, and Windows Server 2022 and above
+
+To use this procedure, download and distribute the [WDAC policy refresh tool](https://aka.ms/refreshpolicy) to all managed endpoints. Ensure your WDAC policies allow the WDAC policy refresh tool or use a managed installer to distribute the tool.
 
 1. Initialize the variables to be used by the script.
 
@@ -58,7 +67,9 @@ You should now have one or more WDAC policies converted into binary form. If not
    & $RefreshPolicyTool
    ```
 
-## Deploying policies for Windows 10 versions earlier than 1903
+## Deploying policies for all other versions of Windows and Windows Server
+
+Use WMI to apply policies on all other versions of Windows and Windows Server.
 
 1. Initialize the variables to be used by the script.
 

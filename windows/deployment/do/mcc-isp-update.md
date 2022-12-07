@@ -3,7 +3,7 @@ title: Update or uninstall your cache node
 manager: aaroncz
 description: How to update or uninstall your cache node
 keywords: updates, downloads, network, bandwidth
-ms.prod: w10
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: amyzhou

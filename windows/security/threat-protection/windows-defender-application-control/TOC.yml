@@ -115,7 +115,7 @@
       href: operations/known-issues.md
     - name: Managed installer and ISG technical reference and troubleshooting guide
       href: configure-wdac-managed-installer.md
-    - name: Managing WDAC Policies with CI Tool
+    - name: CITool.exe technical reference
       href: operations/citool-commands.md
 - name: WDAC AppId Tagging guide
   href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
