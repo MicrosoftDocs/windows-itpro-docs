@@ -15,7 +15,14 @@ Once configured, users will be able to sign in to Azure AD with their Clever cre
 To configure Clever as an IdP for Azure AD, the following prerequisites must be met:
 
 1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format *.onmicrosoft.com)
-1. A Clever environment, with students and faculty members already created
+    - If the federated domain has not yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
+    - Learn how to [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
+1. Access to Azure AD as a *Global Administrator*
+1. Access to Clever as a *District admin*
+
+To test federation, the following prerequisites must be met:
+
+1. A Clever environment, with users already created
     > [!IMPORTANT]
     > Users require an email address defined in Clever, which is used to match the users in Azure AD
 1. Individual Azure AD accounts already created: each Clever user will require a matching account defined in Azure AD. These accounts are commonly created through automated solutions, for example:
@@ -27,9 +34,9 @@ To configure Clever as an IdP for Azure AD, the following prerequisites must be 
 ## Configure Clever
 
 1. Reach out to Clever Support to request the creation of the *Azure AD SAML app* in your environment
-1. Once the app is ready, you'll be notified via email to accept the invitation to the app
+1. Once the app is ready, the *District admin* will be notified via email to accept the invitation to the app
 :::image type="content" source="images/clever/invitation.png" alt-text="email invitation from Clever":::
-1. [Sign in to Clever](https://schools.clever.com/applications/saml-azure-ad/settings) as an administrator, and configure the *Azure AD SAML app* with the following details:
+1. [Sign in to Clever](https://schools.clever.com/applications/saml-azure-ad/settings) as an a *District admin*, and configure the *Azure AD SAML app* with the following details:
 
 :::image type="content" source="images/clever/clever-aad-saml-app.png" alt-text="Clever dashboard":::
 
@@ -39,7 +46,7 @@ To configure Clever as an IdP for Azure AD, the following prerequisites must be 
 |Entity ID|`urn:federation:MicrosoftOnline`|
 |Name ID Format|`urn:oasis:names:tc:SAML:2.0:nameid-format:email`|
 
-The other parameters should already be pre-configured. Verify that the attribute mapping is correct, using the *email* as NAMEID:
+The other parameters should already be pre-configured. Verify that the attribute mapping is correct, using the *email* as NameID:
 :::image type="content" source="images/clever/clever-aad-saml-app-2.png" alt-text="Clever admin console":::
   
 Take note of the **Identity Provider Metadata URL** value, as it will be required in the next step. For example: `https://samlidp.clever.com/saml-azure-ad/metadata/<GUID>`
@@ -50,7 +57,7 @@ Take note of the **Identity Provider Metadata URL** value, as it will be require
 ## Configure Azure AD
 
 The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Modify the `$idpMetadataUrl` and `$DomainName` variables of the following script to match your environment, and then run it in an elevated PowerShell session:
+Modify the `$idpMetadataUrl` and `$DomainName` variables of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use a *Global Administrator* account.
 
 ```powershell
 Install-Module -Name AzureAD
