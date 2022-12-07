@@ -163,9 +163,9 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 
 > **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
 
--   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. See “Table 13. File access codes.” for more information about file access rights. For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
+-   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. For more information about file access rights, see [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes). For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
 
--   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. See “Table 13. File access codes.” for more information about file access rights. For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
+-   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. For more information about file access rights, see [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes). For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
 
 -   **Privileges Used for Access Check** \[Type = UnicodeString\]: the list of user privileges which were used during the operation, for example, SeBackupPrivilege. This parameter might not be captured in the event, and in that case appears as “-”. See full list of user privileges in the table below:
 
