@@ -10,6 +10,15 @@ ms.collection:
   - education
 ---
 
+This document describes Windows Hello for Business functionalities or scenarios that apply to:\
+✅ **Deployment type:** [hybrid ℹ️]("The Windows Hello for Business hybrid deployment is for organizations that have both on-premises and cloud resources that are accessed using a managed or federated identity that's synchronized with Azure AD. Hybrid deployments support devices that are Azure AD-registered, Azure AD-joined, and hybrid Azure AD-joined. The Hybrid deployment model supports three trust types for on-premises authentication: cloud Kerberos trust, key trust and certificate trust.")\
+✅ **Trust type:** [key trust](../identity-protection/hello-for-business/hello-how-it-works-technology.md#key-trust)\
+✅ **Device registration type:** [Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#hybrid-azure-ad-join)
+
+<br>
+
+---
+
 # Configure Stickers for Windows 11 SE
 
 Starting in **Windows 11 SE, version 22H2**, *Stickers* is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background changes.
