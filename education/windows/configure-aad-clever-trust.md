@@ -73,6 +73,7 @@ $cert = -join $xml.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.KeyInfo.X509D
 $issuerUri = $xml.EntityDescriptor.entityID
 $logOnUri = $xml.EntityDescriptor.IDPSSODescriptor.SingleSignOnService | ? { $_.Binding.Contains('Redirect') } | % { $_.Location }
 $LogOffUri = "https://clever.com/logout"
+$brand = "Clever Identity"
 Connect-MsolService
 $DomainAuthParams = @{
     DomainName = $DomainName

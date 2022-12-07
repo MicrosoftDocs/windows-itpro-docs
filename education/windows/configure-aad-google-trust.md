@@ -18,7 +18,7 @@ To configure Google Workspace as an IdP for Azure AD, the following prerequisite
     - If the federated domain has not yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
     - Learn how to [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
 1. Access to Azure AD as a *Global Administrator*
-1. Access to Clever as a *Super Admin*
+1. Access to Google Workspace as a *Super Admin*
 
 To test federation, the following prerequisites must be met:
 
@@ -31,44 +31,28 @@ To test federation, the following prerequisites must be met:
     - PowerShell scripts that call the Microsoft Graph API
     - Provisioning tools offered by the IdP - this capability is offered by Google Workspace through [auto-provisioning](https://support.google.com/a/answer/7365072)
 
-## Configure Google Workspace
+## Configure Google Workspace and Azure AD
 
-1. Add the app *name* to Google Workspace
-:::image type="content" source="images/google/name.png" alt-text="app":::
-1. [Sign in to Google Workspace](https://admin.google.com/) as an administrator, and configure the *name* app with the following details:
+Follow the steps described in the [Google documentation](https://support.google.com/a/answer/6363817) to configure Google Workspace as an IdP for Azure AD. To simplify the configuration, note the following section regarding step 3 of Google documentation.
 
-:::image type="content" source="images/google/name.png" alt-text="app":::
-
-| Variables | Value |
-|-|-|
-|Assertion Consumer Service Url|`https://login.microsoftonline.com/login.srf`|
-|Entity ID|`urn:federation:MicrosoftOnline`|
-|Name ID Format|`urn:oasis:names:tc:SAML:2.0:nameid-format:email`|
-
-The other parameters should already be pre-configured. Verify that the attribute mapping is correct, using the *email* as NAMEID:
-:::image type="content" source="images/clever/clever-aad-saml-app-2.png" alt-text="Clever admin console":::
-  
-Take note of the **Identity Provider Metadata URL** value, as it will be required in the next step. For example: `https://samlidp.clever.com/saml-azure-ad/metadata/<GUID>`
-
-## Configure Azure AD
+### Configure Azure AD as a Service Provider (SP) for Google Workspace
 
 The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Modify the `$idpMetadataUrl` and `$DomainName` variables of the following script to match your environment, and then run it in an elevated PowerShell session:
+Using the **IdP metadata** XML file downloaded from Google Workspace, modify the and `$DomainName` variable of the following script to match your environment, and then run it in an elevated PowerShell session:
 
 ```powershell
-Install-Module -Name AzureAD
 Install-Module -Name MSOnline
 Import-Module MSOnline
 
-$idpMetadataUrl = "https://samlidp.clever.com/saml-azure-ad/metadata/<GUID>"
-$DomainName = "<your domain name>"
+$DomainName = "learn.intune.dev"
 
-$xml = [Xml](Invoke-WebRequest -Uri $idpMetadataUrl -ContentType "application/xml").content
+$xml = [Xml](Get-Content GoogleIDPMetadata.xml)
 
 $cert = -join $xml.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.KeyInfo.X509Data.X509Certificate.Split()
 $issuerUri = $xml.EntityDescriptor.entityID
 $logOnUri = $xml.EntityDescriptor.IDPSSODescriptor.SingleSignOnService | ? { $_.Binding.Contains('Redirect') } | % { $_.Location }
-$LogOffUri = "https://clever.com/logout"
+$LogOffUri = "https://accounts.google.com/logout"
+$brand = "Google Workspace Identity"
 Connect-MsolService
 $DomainAuthParams = @{
     DomainName = $DomainName
@@ -91,25 +75,23 @@ Get-MsolDomainFederationSettings -DomainName $DomainName
 ```
 
 ```output
-ActiveLogOnUri                         : https://samlidp.clever.com/saml-azure-ad/assert/<GUID>
+ActiveLogOnUri                         : https://accounts.google.com/o/saml2/idp?<GUID>
 DefaultInteractiveAuthenticationMethod : 
-FederationBrandName                    : 
-IssuerUri                              : http://samlidp.clever.com/services/trust/<GUID>
-LogOffUri                              : https://clever.com/logout
+FederationBrandName                    : Google Workspace Identity
+IssuerUri                              : https://accounts.google.com/o/saml2?idpid=<GUID>
+LogOffUri                              : https://accounts.google.com/logout
 MetadataExchangeUri                    : 
 NextSigningCertificate                 : 
 OpenIdConnectDiscoveryEndpoint         : 
-PassiveLogOnUri                        : https://samlidp.clever.com/saml-azure-ad/assert/<GUID>
+PassiveLogOnUri                        : https://accounts.google.com/o/saml2/idp?idpid=<GUID>
 SigningCertificate                     : <BASE64 encoded certificate>
 SupportsMfa                            : 
 ```
 
-## Verify federated authentication between Clever and Azure AD
+## Verify federated authentication between Google Workspace and Azure AD
 
-From a private browser session, navigate to https://portal.azure.com and sign in with a Clever account:
+From a private browser session, navigate to https://portal.azure.com and sign in with a Google Workspace account:
 
-1. As username, use the email as defined in Clever
-1. The user will be redirected to Clever to sign in
-1. After Clever authentication (for example, using QR code), the user will be redirected back to Azure AD and signed in
-
-:::image type="content" source="images/clever/clever-sso.gif" alt-text="Clever SSO":::
+1. As username, use the email as defined in Google Workspace
+1. The user will be redirected to Google Workspace to sign in
+1. After Google Workspace authentication, the user will be redirected back to Azure AD and signed in
