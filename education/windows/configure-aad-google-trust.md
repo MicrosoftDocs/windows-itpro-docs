@@ -39,18 +39,20 @@ To test federation, the following prerequisites must be met:
 1. In the search results page, hover over the *Microsoft Office 365 - Web (SAML)* app and select **Select**
 1. On the *Google Identity Provider details* page, select **Download Metadata** and take note of the location where the **IdP metadata** - `GoogleIDPMetadata.xml` - file is saved, as it will be used to setup Azure AD later
 1. On the *Service provider details* page
-  - Select the option **Signed response**
-  - Verify that the Name ID format is set to `PERSISTENT`
-  - Depending on how the Azure AD users have been provisioned in Azure AD, you may need to adjust the **Name ID** mapping. For more information see (article to write)
-    - If using Google auto-provisioning, select **Basic Information > Primary email**
-  - Select **Continue**
-1. On the *Attribute mapping* page, map the Google attributes to the Azure AD attributes
-    |Google Directory attributes|Azure AD attributes|
-    |-|-|
-    |Basic Information: Primary Email|App attributes: IDPEmail|
 
-    > [!IMPORTANT]
-    > You must ensure that your the Azure AD user accounts email match those in your Google Workspace.
+      - Select the option **Signed response**
+      - Verify that the Name ID format is set to `PERSISTENT`
+      - Depending on how the Azure AD users have been provisioned in Azure AD, you may need to adjust the **Name ID** mapping. For more information see (article to write)
+        - If using Google auto-provisioning, select **Basic Information > Primary email**
+      - Select **Continue**
+
+1. On the *Attribute mapping* page, map the Google attributes to the Azure AD attributes
+        |Google Directory attributes|Azure AD attributes|
+        |-|-|
+        |Basic Information: Primary Email|App attributes: IDPEmail|
+    
+        > [!IMPORTANT]
+        > You must ensure that your the Azure AD user accounts email match those in your Google Workspace.
 
 1. Select **Finish**
 
