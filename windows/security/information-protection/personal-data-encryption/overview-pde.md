@@ -54,7 +54,7 @@ ms.date: 12/07/2022
 
    Hibernation files can potentially cause the keys used by PDE to protect files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
-- [Disable allowing users to select when a password is required when resuming from connected standby](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
+- [Allowing users to select when a password is required when resuming from connected standby disabled](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
 
     When this policy isn't configured, the outcome between on-premises Active Directory joined devices and workgroup devices, including native Azure Active Directory joined devices, is different:
 
@@ -72,7 +72,7 @@ ms.date: 12/07/2022
 
     - During the time when the screen turns off but a password isn't required, the keys used by PDE to protect files could potentially be exposed. This outcome isn't a desired outcome.
 
-    Because of this undesired outcome, it's recommended to explicitly disable this policy on native Azure AD joined devices.
+    Because of this undesired outcome, it's recommended to explicitly disable this policy on native Azure AD joined devices instead of leaving it at the default of not configured.
 
    For information on disabling this policy via Intune, see [Disable allowing users to select when a password is required when resuming from connected standby](configure-pde-in-intune.md#disable-allowing-users-to-select-when-a-password-is-required-when-resuming-from-connected-standby).
 
