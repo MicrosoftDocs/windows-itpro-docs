@@ -540,7 +540,7 @@ items:
           href: policy-csp-webthreatdefense.md
         - name: Wifi
           href: policy-csp-wifi.md
-        - name: WindowsAutoPilot
+        - name: WindowsAutopilot
           href: policy-csp-windowsautopilot.md
         - name: WindowsConnectionManager
           href: policy-csp-windowsconnectionmanager.md
