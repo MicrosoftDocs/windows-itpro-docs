@@ -1,7 +1,7 @@
 ---
 title: Test Windows 10 in S mode on existing Windows 10 education devices
 description: Provides guidance on downloading and testing Windows 10 in S mode for existing Windows 10 education devices.
-ms.topic: guide
+ms.topic: conceptual
 ms.date: 08/10/2022
 appliesto: 
   - ✅ <b>Windows 10</b>

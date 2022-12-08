@@ -1,7 +1,7 @@
 ---
 title: Deployment recommendations for school IT administrators
 description: Provides guidance on ways to customize the OS privacy settings, and some of the apps, for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.
-ms.topic: guide
+ms.topic: conceptual
 ms.date: 08/10/2022
 appliesto:
 - ✅ <b>Windows 10</b>
