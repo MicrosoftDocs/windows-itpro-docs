@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 07/13/2021
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Understanding Application Control event tags

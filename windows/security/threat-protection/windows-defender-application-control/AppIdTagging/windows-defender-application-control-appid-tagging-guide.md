@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 04/27/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # WDAC Application ID (AppId) Tagging guide

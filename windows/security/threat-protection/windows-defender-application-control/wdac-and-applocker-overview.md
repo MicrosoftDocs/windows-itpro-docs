@@ -16,6 +16,7 @@ manager: aaroncz
 ms.date: 09/30/2020
 ms.custom: asr
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows Defender Application Control and AppLocker Overview

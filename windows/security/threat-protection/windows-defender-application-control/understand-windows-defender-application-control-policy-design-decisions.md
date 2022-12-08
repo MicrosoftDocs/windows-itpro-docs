@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 ms.date: 02/08/2018
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Understand Windows Defender Application Control policy design decisions 

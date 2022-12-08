@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 07/19/2021
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Use multiple Windows Defender Application Control Policies

@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 04/29/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Creating your WDAC AppId Tagging Policies

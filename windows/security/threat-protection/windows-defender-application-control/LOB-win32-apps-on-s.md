@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 10/30/2019
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Allow Line-of-Business Win32 Apps on Intune-Managed S Mode Devices

@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 03/16/2020
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows Defender Application Control operational guide

@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 08/26/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Automatically allow apps deployed by a managed installer with Windows Defender Application Control

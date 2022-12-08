@@ -14,6 +14,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG)

@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 11/02/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management

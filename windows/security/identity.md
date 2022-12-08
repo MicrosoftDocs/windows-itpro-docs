@@ -7,6 +7,7 @@ ms.author: paoloma
 author: paolomatarazzo
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows identity and privacy

@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 10/06/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Deploy Windows Defender Application Control policies by using Group Policy

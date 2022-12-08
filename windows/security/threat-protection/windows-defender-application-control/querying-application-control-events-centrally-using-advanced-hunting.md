@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 03/01/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Querying Application Control events centrally using Advanced hunting  

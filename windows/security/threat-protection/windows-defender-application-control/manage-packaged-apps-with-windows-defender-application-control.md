@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 05/29/2020
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Manage Packaged Apps with Windows Defender Application Control 

@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 11/11/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Managed installer and ISG technical reference and troubleshooting guide

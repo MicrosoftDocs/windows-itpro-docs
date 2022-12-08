@@ -7,6 +7,7 @@ ms.author: vinpa
 author: vinaypamnani-msft
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows hardware security

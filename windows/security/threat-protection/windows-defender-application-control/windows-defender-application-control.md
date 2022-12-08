@@ -18,6 +18,7 @@ manager: aaroncz
 ms.date: 05/26/2020
 ms.custom: asr
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Application Control for Windows

@@ -14,6 +14,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy

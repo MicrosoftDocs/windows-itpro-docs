@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 05/03/2021
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Use audit events to create WDAC policy rules and Convert **base** policy from audits to enforced

@@ -9,6 +9,7 @@ ms.author: jogeurte
 manager: aaroncz
 ms.date: 10/11/2021
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Understanding WDAC Policy Settings

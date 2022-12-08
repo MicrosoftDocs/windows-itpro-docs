@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 08/10/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows Defender Application Control (WDAC) and .NET

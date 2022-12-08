@@ -15,6 +15,7 @@ ms.author: vinpa
 manager: aaroncz
 ms.date: 03/01/2018
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices

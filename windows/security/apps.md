@@ -7,6 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows application security
