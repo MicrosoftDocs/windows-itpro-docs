@@ -4,7 +4,7 @@ description: Learn more about the TenantRestrictions Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/29/2022
+ms.date: 12/08/2022
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
