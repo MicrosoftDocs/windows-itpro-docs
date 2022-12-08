@@ -20272,7 +20272,7 @@
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/index.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-update-management",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management",
       "redirect_document_id": true
     },
     {
