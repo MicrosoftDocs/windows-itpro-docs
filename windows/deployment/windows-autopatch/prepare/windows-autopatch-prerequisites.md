@@ -16,9 +16,6 @@ msreviewer: hathind
 
 Getting started with Windows Autopatch has been designed to be easy. This article outlines the infrastructure requirements you must meet to assure success with Windows Autopatch.
 
-> [!NOTE]
-> For those who used the promo code to access Windows Autopatch during public preview, you'll continue to have access to Windows Autopatch even when the promo code expires. There is no additional action you have to take to continue using Windows Autopatch.
-
 | Area | Prerequisite details |
 | ----- | ----- |
 | Licensing | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium and Microsoft Intune are required. For details about the specific service plans, see [more about licenses](#more-about-licenses).<p><p>For more information on available licenses, see [Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).<p><p>For more information about licensing terms and conditions for products and services purchased through Microsoft Commercial Volume Licensing Programs, see the [Product Terms site](https://www.microsoft.com/licensing/terms/). |
