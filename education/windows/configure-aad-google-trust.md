@@ -45,13 +45,13 @@ To test federation, the following prerequisites must be met:
         - If using Google auto-provisioning, select **Basic Information > Primary email**
       - Select **Continue**
 1. On the *Attribute mapping* page, map the Google attributes to the Azure AD attributes
-
-        |Google Directory attributes|Azure AD attributes|
-        |-|-|
-        |Basic Information: Primary Email|App attributes: IDPEmail|
-
-        > [!IMPORTANT]
-        > You must ensure that your the Azure AD user accounts email match those in your Google Workspace.
+    
+    |Google Directory attributes|Azure AD attributes|
+    |-|-|
+    |Basic Information: Primary Email|App attributes: IDPEmail|
+    
+    > [!IMPORTANT]
+    > You must ensure that your the Azure AD user accounts email match those in your Google Workspace.
 
 1. Select **Finish**
 
