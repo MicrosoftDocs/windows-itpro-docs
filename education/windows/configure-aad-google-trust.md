@@ -47,6 +47,7 @@ To test federation, the following prerequisites must be met:
       - Select **Continue**
 
 1. On the *Attribute mapping* page, map the Google attributes to the Azure AD attributes
+
         |Google Directory attributes|Azure AD attributes|
         |-|-|
         |Basic Information: Primary Email|App attributes: IDPEmail|
