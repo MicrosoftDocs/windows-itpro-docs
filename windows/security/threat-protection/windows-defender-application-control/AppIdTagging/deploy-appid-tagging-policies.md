@@ -3,7 +3,6 @@ title: Deploying Windows Defender Application Control AppId tagging policies
 description: How to deploy your WDAC AppId tagging policies locally and globally within your managed environment.
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa

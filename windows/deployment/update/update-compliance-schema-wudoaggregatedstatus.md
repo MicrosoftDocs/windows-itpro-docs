@@ -6,7 +6,6 @@ description: WUDOAggregatedStatus schema
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.technology: itpro-updates
 ---

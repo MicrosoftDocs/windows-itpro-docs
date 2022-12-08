@@ -10,7 +10,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
   - highpri
 author: vinaypamnani-msft
 ms.reviewer: isbrahm

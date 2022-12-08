@@ -9,7 +9,6 @@ audience: itpro
 author: amyzhou
 ms.localizationpriority: medium
 ms.author: amyzhou
-ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 

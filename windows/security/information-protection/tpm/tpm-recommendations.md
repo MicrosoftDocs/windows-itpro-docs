@@ -8,7 +8,6 @@ author: dansimp
 ms.author: dansimp
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021

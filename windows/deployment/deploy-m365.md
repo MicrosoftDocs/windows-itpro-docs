@@ -8,7 +8,6 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
 ms.topic: article
-ms.collection: M365-modern-desktop
 ms.custom: seo-marvel-apr2020
 ms.date: 11/23/2022
 ms.technology: itpro-deploy

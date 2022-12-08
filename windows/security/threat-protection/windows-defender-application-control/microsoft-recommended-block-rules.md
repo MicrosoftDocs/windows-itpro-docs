@@ -4,7 +4,6 @@ description: View a list of recommended block rules, based on knowledge shared b
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jgeurten
 ms.author: vinpa

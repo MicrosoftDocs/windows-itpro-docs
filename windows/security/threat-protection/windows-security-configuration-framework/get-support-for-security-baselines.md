@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/19/2022
 ms.reviewer: jmunck

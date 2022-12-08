@@ -16,9 +16,6 @@ ms.custom:
   - 'O365E_ViewStatusServices'
   - 'O365E_ServiceHealthModern'
   - 'seo-marvel-apr2020'
-ms.collection: 
-  - Ent_O365
-  - M365-subscription-management
 search.appverid: 
   - MET150
   - MOE150
