@@ -7,6 +7,6 @@ ms.topic: include
 
 [!INCLUDE [hello-intro](hello-intro.md)]
 - **Deployment type:** [!INCLUDE [hello-deployment-hybrid](hello-deployment-hybrid.md)]
-- **Trust type:** [certificate trust](../identity-protection/hello-for-business/hello-how-it-works-technology.md#certificate-trust)
+- **Trust type:** [!INCLUDE [hello-trust-certificate](hello-trust-certificate.md)]
 - **Device registration type:** [Hybrid Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#hybrid-azure-ad-join)
-[!INCLUDE [hello-outro](hello-outro.md)]
+---

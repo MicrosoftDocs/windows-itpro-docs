@@ -1,0 +1,8 @@
+---
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 12/08/2022
+ms.topic: include
+---
+
+[certificate trust :::image type="icon" source="../images/icons/information.svg" border="false":::](../identity-protection/hello-for-business/hello-how-it-works-technology.md#certificate-trust "This trust type uses a user certificate to authenticate to Active Directory")
