@@ -10,6 +10,7 @@ ms.collection: M365-security-compliance
 ms.custom: intro-overview
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Zero Trust and Windows device health

@@ -10,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Microsoft Security Development Lifecycle

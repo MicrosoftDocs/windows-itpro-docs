@@ -12,6 +12,7 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # What's new in Delivery Optimization 

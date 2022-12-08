@@ -18,6 +18,7 @@ appliesto:
   - ✅ <b>Windows Server 2016</b>
   - ✅ <b>Windows Server 2019</b>
   - ✅ <b>Windows Server 2022</b>
+ms.date: 12/31/2017
 ---
 
 # Troubleshooting Windows Firewall settings after a Windows upgrade

@@ -15,6 +15,8 @@ ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Guidance on Creating WDAC Deny Policies

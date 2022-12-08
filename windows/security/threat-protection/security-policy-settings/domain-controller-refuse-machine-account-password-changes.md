@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Domain controller: Refuse machine account password changes

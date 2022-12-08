@@ -10,6 +10,7 @@ ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Safeguard Holds

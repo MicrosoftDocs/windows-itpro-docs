@@ -8,6 +8,7 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
+ms.date: 12/31/2017
 ---
 
 # Security and data protection considerations for Windows To Go

@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Configure Windows Update for Business

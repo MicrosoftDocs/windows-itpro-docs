@@ -10,6 +10,7 @@ ms.collection:
   - M365-modern-desktop
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Update Windows installation media with Dynamic Update
