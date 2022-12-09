@@ -10,7 +10,6 @@ ms.date: 09/20/2021
 ms.localizationpriority: medium
 ms.custom: 
 search.appverid: MET150
-ms.collection: M365-security-compliance
 ms.prod: windows-client
 ms.technology: itpro-security
 ---

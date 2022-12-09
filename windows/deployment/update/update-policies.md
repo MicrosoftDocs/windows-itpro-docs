@@ -8,8 +8,8 @@ ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: M365-modern-desktop
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Policies for update compliance, activity, and user experience

@@ -13,7 +13,6 @@ author: paolomatarazzo
 manager: aaroncz
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 09/07/2021

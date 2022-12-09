@@ -6,7 +6,6 @@ description: UCDOStatus schema
 ms.prod: windows-client
 author: cmknox
 ms.author: carmenf
-ms.collection: M365-analytics
 ms.topic: reference
 ms.date: 11/17/2022
 ms.technology: itpro-updates

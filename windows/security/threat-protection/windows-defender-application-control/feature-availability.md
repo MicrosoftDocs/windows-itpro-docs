@@ -4,7 +4,6 @@ description: Compare Windows Defender Application Control (WDAC) and AppLocker f
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte

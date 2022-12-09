@@ -9,6 +9,7 @@ ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Configuration service providers for IT pros

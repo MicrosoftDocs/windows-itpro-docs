@@ -2,15 +2,33 @@
 title: Appendix
 manager: aaroncz
 description: Appendix on Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: w10
+ms.prod: windows-client
 author: amymzhou
 ms.author: amyzhou
 ms.localizationpriority: medium
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
 ---
 
 # Appendix
+
+## Steps to obtain an Azure Subscription ID
+
+<!--Using include file, get-azure-subscription.md, do/mcc-isp.md for shared content-->
+[!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
+
+### Troubleshooting
+
+If you're not able to sign up for a Microsoft Azure subscription with the **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** error, see the following articles:
+- [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
+- [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
+
+## Installing on VMWare
+
+We've seen that Microsoft Connected Cache for Enterprise and Education can be successfully installed on VMWare. To do so, there are a couple of additional configurations to be made:
+
+1. Ensure that you're using ESX. In the VM settings, turn on the option **Expose hardware assisted virtualization to the guest OS**.
+1. Using the HyperV Manager, create an external switch. For the external switch to have internet connection, ensure **"Allow promiscuous mode"**, **"Allow forged transmits"**, and **"Allow MAC changes"** are all switched to **Yes**.
 
 ## Diagnostics Script
 
@@ -33,17 +51,6 @@ To run this script:
 
 1. [Email the MCC team](mailto:mccforenterprise@microsoft.com?subject=Debugging%20Help%20Needed%20for%20MCC%20for%20Enterprise) and attach this file asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
 
-## Steps to obtain an Azure Subscription ID
-
-<!--Using include file, get-azure-subscription.md, do/mcc-isp.md for shared content-->
-[!INCLUDE [Get Azure subscription](includes/get-azure-subscription.md)]
-
-## Troubleshooting
-
-If you're not able to sign up for a Microsoft Azure subscription with the error: **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** See [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
-
-Also see [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
-
 ## IoT Edge runtime
 
 The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices.
@@ -57,14 +64,6 @@ communication operations. The runtime performs several functions:
 - Manages communication between an IoT Edge device and the cloud.
 
 For more information on Azure IoT Edge, see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
-
-## EFLOW
-
-- [What is Azure IoT Edge for Linux on Windows](/azure/iot-edge/iot-edge-for-linux-on-windows)
-- [Install Azure IoT Edge for Linux on Windows](/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric#install-iot-edge)
-- [PowerShell functions for Azure IoT Edge for Linux on Windows](/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions)
-- EFLOW FAQ and Support: [Support · Azure/iotedge-eflow Wiki (github.com)](https://github.com/Azure/iotedge-eflow/wiki/Support#how-can-i-apply-updates-to-eflow)
-- [Now ready for Production: Linux IoT Edge Modules on Windows - YouTube](https://www.youtube.com/watch?v=pgqVCg6cxVU&ab_channel=MicrosoftIoTDevelopers)
 
 ## Routing local Windows Clients to an MCC
 
@@ -115,3 +114,10 @@ To verify that the Delivery Optimization client can download content using MCC, 
     
       :::image type="content" source="./images/ent-mcc-delivery-optimization-activity.png" alt-text="Screenshot of the Delivery Optimization Activity Monitor.":::
 
+## EFLOW
+
+- [What is Azure IoT Edge for Linux on Windows](/azure/iot-edge/iot-edge-for-linux-on-windows)
+- [Install Azure IoT Edge for Linux on Windows](/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric#install-iot-edge)
+- [PowerShell functions for Azure IoT Edge for Linux on Windows](/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions)
+- EFLOW FAQ and Support: [Support · Azure/iotedge-eflow Wiki (github.com)](https://github.com/Azure/iotedge-eflow/wiki/Support#how-can-i-apply-updates-to-eflow)
+- [Now ready for Production: Linux IoT Edge Modules on Windows - YouTube](https://www.youtube.com/watch?v=pgqVCg6cxVU&ab_channel=MicrosoftIoTDevelopers)

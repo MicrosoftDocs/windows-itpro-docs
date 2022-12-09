@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # Plan for Windows 11

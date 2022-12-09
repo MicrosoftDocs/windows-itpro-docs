@@ -3,15 +3,15 @@ title: Managing CI Policies and Tokens with CiTool
 description: Learn how to use Policy Commands, Token Commands, and Miscellaneous Commands in CiTool
 author: valemieux
 ms.author: jogeurte
-ms.reviewer: jogeurte
+ms.reviewer: jsuther1974
 ms.topic: how-to
-ms.date: 08/07/2022
+ms.date: 12/03/2022
 ms.custom: template-how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ---
 
-# Manage Windows Defender Application Control (WDAC) Policies with CI Tool
+# CITool.exe technical reference
 
 CI Tool makes Windows Defender Application Control (WDAC) policy management easier for IT admins.  CI Tool can be used to manage Windows Defender Application Control policies and CI Tokens. This article describes how to use CI Tool to update and manage policies.  CI Tool is currently included in Windows 11, version 22H2.
 
@@ -21,7 +21,7 @@ CI Tool makes Windows Defender Application Control (WDAC) policy management easi
 |--------|---------|---------|
 | --update-policy `</Path/To/Policy/File>` | Add or update a policy on the current system | -up |
 | --remove-policy `<PolicyGUID>` | Remove a policy indicated by PolicyGUID from the system | -rp |
-| --list-policies | Dump information about all policies on the system, whether they are active or not | -lp |
+| --list-policies | Dump information about all policies on the system, whether they're active or not | -lp |
 
 ## Token Commands
 
@@ -32,7 +32,7 @@ CI Tool makes Windows Defender Application Control (WDAC) policy management easi
 | --list-tokens | Dump information about all tokens on the system | -lt |
 
 > [!NOTE]
-> Regarding --add-token, if `<ID>` is specified, a pre-existing token with `<ID>` should not exist.
+> Regarding `--add-token`, if `<ID>` is specified, a pre-existing token with `<ID>` should not exist.
 
 ## Miscellaneous Commands
 
