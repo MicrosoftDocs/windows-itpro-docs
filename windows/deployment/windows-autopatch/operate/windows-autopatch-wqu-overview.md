@@ -77,7 +77,7 @@ Windows Autopatch schedules and deploys required Out of Band (OOB) updates relea
 **To view deployed OOB quality updates:**
 
 1. Go to [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Tenant administration** > **Windows Autopatch** > **Release management**.
-2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and normal Windows quality updates. 
+2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates. 
 
 > [!Note]
 > Announcements will be **removed** from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a deployment ring, the OOB updates will also be paused.
