@@ -6,6 +6,8 @@
       items:
         - name: What is Windows Autopatch?
           href: overview/windows-autopatch-overview.md
+        - name: Roles and responsibilities
+          href: overview/windows-autopatch-roles-responsibilities.md
         - name: FAQ
           href: overview/windows-autopatch-faq.yml
     - name: Prepare
