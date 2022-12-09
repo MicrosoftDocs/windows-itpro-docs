@@ -5,7 +5,6 @@ ms.reviewer:
   - nganguly
 manager: aaroncz
 ms.author: frankroj
-description: How to activate using Key Management Service in Windows 10.
 ms.prod: windows-client
 author: frankroj
 ms.localizationpriority: medium
