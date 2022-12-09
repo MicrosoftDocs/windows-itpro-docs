@@ -8,5 +8,5 @@ ms.topic: include
 [!INCLUDE [hello-intro](hello-intro.md)]
 - **Deployment type:** [!INCLUDE [hello-deployment-hybrid](hello-deployment-hybrid.md)]
 - **Trust type:** [!INCLUDE [hello-trust-certificate](hello-trust-certificate.md)]
-- **Device registration type:** [Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#azure-active-directory-join)
+- **Join type:** [!INCLUDE [hello-join-aadj](hello-join-aadj.md)]
 ---
