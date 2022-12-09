@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 ms.collection: 
-  - M365-modern-desktop
   - highpri
 ms.topic: tutorial
 ms.date: 10/28/2022

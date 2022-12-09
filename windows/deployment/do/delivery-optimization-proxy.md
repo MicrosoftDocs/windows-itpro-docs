@@ -6,7 +6,6 @@ ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.collection: M365-modern-desktop
 ms.topic: article
 ms.technology: itpro-updates
 ms.date: 12/31/2017

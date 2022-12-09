@@ -6,7 +6,6 @@ description: An overview of Windows Update for Business reports data schema
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: reference
 ms.date: 11/15/2022
 ms.technology: itpro-updates

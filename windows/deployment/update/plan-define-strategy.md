@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 manager: dougeby
 ms.topic: article
-ms.collection: m365initiative-coredeploy
 ms.technology: itpro-updates
 ms.date: 12/31/2017
 ---

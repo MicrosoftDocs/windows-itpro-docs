@@ -7,9 +7,6 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
-ms.collection: 
-  - m365-security-compliance
-  - m365-initiative-windows-security
 ms.topic: troubleshooting
 ms.technology: itpro-security
 appliesto: 

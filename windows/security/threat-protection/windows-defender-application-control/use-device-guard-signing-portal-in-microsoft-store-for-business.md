@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 manager: aaroncz

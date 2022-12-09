@@ -4,7 +4,6 @@ description: Learn what different Windows Defender Application Control event IDs
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa

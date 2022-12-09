@@ -6,7 +6,6 @@ description: Learn how the Security Update Status section provides information a
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates

@@ -9,13 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.date: 03/01/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Querying Application Control events centrally using Advanced hunting  

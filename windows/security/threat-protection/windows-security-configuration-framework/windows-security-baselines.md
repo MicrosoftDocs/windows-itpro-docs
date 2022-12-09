@@ -7,7 +7,6 @@ ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 01/26/2022

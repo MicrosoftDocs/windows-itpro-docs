@@ -5,7 +5,6 @@ ms.prod: windows-client
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 

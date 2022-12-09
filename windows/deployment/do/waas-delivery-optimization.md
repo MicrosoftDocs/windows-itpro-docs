@@ -7,8 +7,6 @@ author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
 ms.collection: 
-  - M365-modern-desktop
-  - m365initiative-coredeploy
   - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020

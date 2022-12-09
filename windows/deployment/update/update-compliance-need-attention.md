@@ -4,7 +4,6 @@ manager: aczechowski
 description: Learn how the Need attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-updates
