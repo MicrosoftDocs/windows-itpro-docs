@@ -31,28 +31,42 @@ If you're using MSDT to run [custom troubleshooting packages](/previous-versions
 
 The following troubleshooters will automatically be redirected when you access them from **Start** > **Settings** > **System** > **Troubleshoot**:
 
-| Redirected troubleshooters | | |
-| ---|---|---|
-| Background Intelligent Transfer Service (BITS) | Bluetooth | Internet Connections |
-|  Network Adapter | Playing Audio |  Printer |
-| Program Compatibility Troubleshooter | Recording Audio | Video Playback |
-| Windows Network Diagnostics | Windows Media Player DVD | Windows Media Player Library |
-| Windows Media Player Settings | Windows Update | |
+- Background Intelligent Transfer Service (BITS)
+- Bluetooth
+- Internet Connections
+- Network Adapter
+- Playing Audio
+- Printer
+- Program Compatibility Troubleshooter
+- Recording Audio
+- Video Playback
+- Windows Network Diagnostics
+- Windows Media Player DVD
+- Windows Media Player Library
+- Windows Media Player Settings
+- Windows Update
 
 ### Retired MSDT troubleshooters
 
 The following troubleshooters will be removed in a future release of Windows:
 
-| Retired troubleshooters | | |
-| ---|---|---|
-| Connection to a Workplace using DirectAccess | Devices and Printers | Hardware and Devices |
-|  HomeGroup | Incoming Connections |  Internet Explorer Performance |
-| Internet Explorer Safety | Keyboard | Power |
-| Search and Indexing | Speech | System Maintenance |
-| Shared Folders | Windows Store Apps | |
+- Connection to a Workplace using DirectAccess
+- Devices and Printers
+- Hardware and Devices
+- HomeGroup
+- Incoming Connections
+- Internet Explorer Performance
+- Internet Explorer Safety
+- Keyboard
+- Power
+- Search and Indexing
+- Speech
+- System Maintenance
+- Shared Folders
+- Windows Store Apps
 
 ## Next steps
 
-- [Windows feature lifecycle](windows-feature-lifecycle.md)
+- [Windows feature lifecycle](feature-lifecycle.md)
 - [Deprecated Windows features](deprecated-features.md)
 - [Removed Windows features](removed-features.md)
