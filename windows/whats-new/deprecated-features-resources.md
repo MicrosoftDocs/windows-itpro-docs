@@ -21,13 +21,14 @@ ms.topic: reference
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
 
+## Microsoft Support Diagnostic Tool resources
 
-## Microsoft Support Diagnostic Tool
+The [Microsoft Support Diagnostic Tool (MSDT)](/windows-server/administration/windows-commands/msdt) gathers diagnostic data for analysis by support professionals. MSDT is the engine used to run legacy Windows built-in troubleshooters. Some of the built-in troubleshooters have already been [redirected](#redirected-msdt-troubleshooters) to the Get Help platform, while others will be [retired](#retired-msdt-troubleshooters).  
 
-The [Microsoft Support Diagnostic Tool (MSDT)](/windows-server/administration/windows-commands/msdt) gathers diagnostic data for analysis by support professionals. MSDT is the engine used to run legacy Windows built-in troubleshooters. Some of the built-in troubleshooters have already been [redirected](#redirected-troubleshooters) to the Get Help platform, while others will be [retired](#retired-troubleshooters).  
+If you're using MSDT to run [custom troubleshooting packages](/previous-versions/windows/desktop/wintt/package-schema), it will be available as a [Feature on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) before the tool is fully retired in 2025. This will allow you to continue to use MSDT to run custom troubleshooting packages while transitioning to a new platform. Contact Microsoft support if you require 
 
-If you are using MSDT to run [custom troubleshooting packages](/previous-versions/windows/desktop/wintt/package-schema), it will be available as a [Feature on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) before the tool is fully retired in 2025. This will allow you to continue to use MSDT to run custom troubleshooting packages while transitioning to a new platform.
 
+https://support.microsoft.com/contactus#!
  
 ### Redirected MSDT troubleshooters
 
@@ -44,4 +45,15 @@ The following troubleshooters will automatically be redirected when you access t
 
 ### Retired MSDT troubleshooters
 
+The following troubleshooters will be removed in a future release of Windows:
+
+| Retired troubleshooters | | |
+| ---|---|---|
+| Connection to a Workplace using DirectAccess | Devices and Printers | Hardware and Devices |
+|  HomeGroup | Incoming Connections |  Internet Explorer Performance |
+| Internet Explorer Safety | Keyboard | Power |
+| Search and Indexing | Speech | System Maintenance |
+| Shared Folders | Windows Store Apps | |
+
+## Next steps
 
