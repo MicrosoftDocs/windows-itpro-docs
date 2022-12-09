@@ -8,7 +8,6 @@ ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: M365-modern-desktop
 ms.technology: itpro-updates
 ---
 

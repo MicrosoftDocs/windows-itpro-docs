@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: itpro-security
 appliesto: 

@@ -9,7 +9,6 @@ description: Discover the latest news articles, videos, and podcasts about Windo
 ms.reviewer: 
 manager: dougeby
 ms.localizationpriority: high
-ms.collection: M365-modern-desktop
 ms.technology: itpro-updates
 ---
 
