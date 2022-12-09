@@ -8,6 +8,8 @@ ms.reviewer:
 manager: aaroncz
 ms.author: dansimp
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Mitigate threats by using Windows 10 security features

@@ -10,6 +10,7 @@ ms.topic: article
 ms.collection: highpri
 ms.custom: intro-overview
 ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 11, version 22H2

@@ -13,6 +13,7 @@ ms.reviewer: sybruckm
 manager: aaroncz
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)

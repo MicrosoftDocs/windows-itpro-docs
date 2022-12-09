@@ -9,6 +9,7 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Manually Configuring Devices for Update Compliance

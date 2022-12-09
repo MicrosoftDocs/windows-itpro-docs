@@ -10,6 +10,7 @@ ms.reviewer: gkomatsu
 manager: aaroncz
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Install Windows Configuration Designer, and learn about any limitations

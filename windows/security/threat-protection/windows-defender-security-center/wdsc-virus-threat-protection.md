@@ -13,6 +13,8 @@ ms.author: vinpa
 ms.reviewer: 
 manager: aaroncz
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Virus and threat protection
