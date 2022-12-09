@@ -8,6 +8,7 @@ author: frankroj
 ms.prod: windows-client
 ms.date: 10/31/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 deployment tools reference

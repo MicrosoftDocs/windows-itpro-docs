@@ -33,11 +33,11 @@ Windows as a service provides a new way to think about building, deploying, and 
 | [Overview of Windows as a service](waas-overview.md) | Explains the differences in building, deploying, and servicing Windows client; introduces feature updates, quality updates, and the different servicing branches; compares servicing tools. |
 | [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) | Explains the decisions you need to make in your servicing strategy.  |
 | [Assign devices to servicing branches for Windows client updates](waas-servicing-channels-windows-10-updates.md) | Explains how to assign devices to the General Availability Channel for feature and quality updates, and how to enroll devices in Windows Insider. |
-| [Monitor Windows Updates with Update Compliance](update-compliance-monitor.md) | Explains how to use Update Compliance to monitor and manage Windows Updates on devices in your organization.  |
+| [Monitor Windows Updates with Windows Update for Business reports](wufb-reports-overview.md) | Explains how to use Windows Update for Business reports to monitor and manage Windows Updates on devices in your organization.  |
 | [Optimize update delivery](../do/waas-optimize-windows-10-updates.md) | Explains the benefits of using Delivery Optimization or BranchCache for update distribution.  |
 | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md) | Explains how to use Windows Update for Business to manage when devices receive updates directly from Windows Update. Includes walkthroughs for configuring Windows Update for Business using Group Policy and Microsoft Intune.  |
 | [Deploy Windows client updates using Windows Server Update Services (WSUS)](waas-manage-updates-wsus.md) | Explains how to use WSUS to manage Windows client updates. |
-| [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) | Explains how to use Configuration Manager to manage Windows client updates.  |
+| [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) | Explains how to use Configuration Manager to manage Windows client updates.  |
 | [Manage device restarts after updates](waas-restart.md) | Explains how to manage update related device restarts. |
 | [Manage more Windows Update settings](waas-wu-settings.md) | Provides details about settings available to control and configure Windows Update |
 | [Windows Insider Program for Business](/windows-insider/business/register) | Explains how the Windows Insider Program for Business works and how to become an insider. |

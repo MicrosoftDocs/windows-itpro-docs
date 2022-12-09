@@ -2,11 +2,12 @@
 title: How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell (Windows 10/11)
 description: How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell
 author: aczechowski
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
+ms.technology: itpro-apps
 ---
 
 

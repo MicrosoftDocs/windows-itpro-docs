@@ -7,8 +7,9 @@ author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
-ms.prod: w10
+ms.prod: windows-client
 ms.collection: highpri
+ms.technology: itpro-configure
 ---
 # Find the Application User Model ID of an installed app
 

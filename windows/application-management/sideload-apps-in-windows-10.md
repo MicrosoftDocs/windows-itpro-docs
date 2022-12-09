@@ -5,8 +5,10 @@ ms.reviewer:
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
-ms.prod: w10
+ms.date: 12/07/2017
+ms.prod: windows-client
 ms.localizationpriority: medium
+ms.technology: itpro-apps
 ---
 
 # Sideload line of business (LOB) apps in Windows client devices

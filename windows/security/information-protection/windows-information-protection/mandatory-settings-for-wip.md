@@ -6,10 +6,10 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/25/2022
 ms.reviewer: 
+ms.technology: itpro-security
 ---
 
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)

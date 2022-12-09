@@ -12,6 +12,7 @@ ms.reviewer: pesmith
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
+ms.technology: itpro-security
 ---
 # Optimizing Office 365 traffic for remote workers with the native Windows 10 and Windows 11 VPN client
 

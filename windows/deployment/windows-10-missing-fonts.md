@@ -7,11 +7,12 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.topic: article
-ms.date: 10/31/2022
+ms.date: 11/23/2022
+ms.technology: itpro-deploy
 ---
 # How to install fonts that are missing after upgrading to Windows client
 
-**Applies to**
+*Applies to:*
 
 - Windows 10
 - Windows 11
@@ -35,7 +36,7 @@ For example, if you've an English, French, German, or Spanish version of Windows
 
 If you want to use these fonts, you can enable the optional feature to add them back to your system. The removal of these fonts is a permanent change in behavior for Windows client, and it will remain this way in future releases.
 
-## Installing language-associated features via language settings:
+## Installing language-associated features via language settings
 
 If you want to use the fonts from the optional feature and you know that you'll want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. Use the Settings app.
 
@@ -43,7 +44,9 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 1. Select **Start > Settings**.
 
-2. In **Settings**, select **Time & language**, and then select **Region & language**.
+2. For Windows 10, in **Settings**, select **Time & language**, and then select **Region & language**.
+
+   For Windows 11, in **Settings**, select **Time & language**, and then select **Language & Region**.
 
 3. If Hebrew isn't included in the list of languages, select the plus sign (**+**) to add a language.
 
@@ -54,7 +57,7 @@ Once you've added Hebrew to your language list, then the optional Hebrew font fe
 > [!NOTE]
 > The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
-## Install optional fonts manually without changing language settings:
+## Install optional fonts manually without changing language settings
 
 If you want to use fonts in an optional feature but don't need to search web pages, edit documents, or use apps in the associated language, you can install the optional font features manually without changing your language settings.
 

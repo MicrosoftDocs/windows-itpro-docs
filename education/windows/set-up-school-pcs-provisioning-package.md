@@ -4,7 +4,7 @@ description: List of the provisioning package settings that are configured in th
 ms.date: 08/10/2022
 ms.topic: reference
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---  
 
 # What's in my provisioning package?

@@ -1,9 +1,9 @@
 ---
 title: Use Quick Assist to help users
 description: How IT Pros can use Quick Assist to help users.
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
-ms.technology: windows
+ms.technology: itpro-manage
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
@@ -30,30 +30,27 @@ The helper can authenticate when they sign in by using a Microsoft account (MSA)
 
 ### Network considerations
 
-Quick Assist communicates over port 443 (https) and connects to the Remote Assistance Service at `https://remoteassistance.support.services.microsoft.com` by using the Remote Desktop Protocol (RDP). The traffic is encrypted with TLS 1.2.
-
-Both the helper and sharer must be able to reach these endpoints over port 443:
+Quick Assist communicates over port 443 (https) and connects to the Remote Assistance Service at `https://remoteassistance.support.services.microsoft.com` by using the Remote Desktop Protocol (RDP). The traffic is encrypted with TLS 1.2. Both the helper and sharer must be able to reach these endpoints over port 443:
 
 | Domain/Name | Description |
 |--|--|
-| `*.api.support.microsoft.com` | API access for Quick Assist |
-| `*.aria.microsoft.com` | Used for accessibility features within the app |
-| `*.cc.skype.com` | Azure Communication Service for chat and connection between parties |
-| `*.channelservices.microsoft.com` | Required for chat services within Quick Assist |
-| `*.channelwebsdks.azureedge.net` | Used for chat services within Quick Assist |
-| `*.edgeassetservice.azureedge.net` | Used for diagnostic data |
-| `*.flightproxy.skype.com` | Azure Communication Service for chat and connection between parties |
-| `*.login.microsoftonline.com` | Required for logging in to the application (Microsoft account) |
-| `*.monitor.azure.com` | Service Performance Monitoring |
-| `*.registrar.skype.com` | Azure Communication Service for chat and connection between parties. |
-| `*.remoteassistanceprodacs.communication.azure.com` | Azure Communication Services (ACS) technology the Quick Assist app uses. |
+| `*.aria.microsoft.com` | Accessible Rich Internet Applications (ARIA) service for providing accessible experiences to users. |
+| `*.cc.skype.com` | Required for Azure Communication Service. |
+| `*.events.data.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
+| `*.flightproxy.skype.com` | Required for Azure Communication Service. |
+| `*.live.com` | Required for logging in to the application (MSA). |
+| `*.monitor.azure.com` | Required for telemetry and remote service initialization. |
+| `*.registrar.skype.com` | Required for Azure Communication Service. |
 | `*.support.services.microsoft.com` | Primary endpoint used for Quick Assist application |
-| `*.trouter.skype.com` | Azure Communication Service for chat and connection between parties. |
-| `*.turn.azure.com` | Protocol used to help endpoint. |
-| `*.vortex.data.microsoft.com` | Used for diagnostic data |
-| `browser.pipe.aria.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
-| `edge.skype.com` | Azure Communication Service for chat and connection between parties. |
-| `events.data.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
+| `*.trouter.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
+| `aadcdn.msauth.net` | Required for logging in to the application (AAD). |
+| `edge.skype.com` | Used for Azure Communication Service for chat and connection between parties. |
+| `login.microsoftonline.com` | Required for Microsoft login service. |
+| `remoteassistanceprodacs.communication.azure.com` | Used for Azure Communication Service for chat and connection between parties. |
+| `turn.azure.com` | Required for Azure Communication Service. |
+
+> [!IMPORTANT]
+> Quick Assist uses Edge WebView2 browser control. For a list of domain URLs that you need to add to the allow list to ensure that the Edge WebView2 browser control can be installed and updated, see [Allow list for Microsoft Edge endpoints](/deployedge/microsoft-edge-security-endpoints).
 
 ## How it works
 

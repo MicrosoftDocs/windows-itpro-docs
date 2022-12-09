@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security
@@ -33,9 +32,9 @@ The **Microsoft network server: Amount of idle time required before suspending s
 
 ### Possible values
 
--   A user-defined number of minutes from 0 through 99,999
+-   A user-defined number of minutes from 0 through 99,999.
 
-    For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days. In effect, this value disables the policy.
+    For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999 (8 business hours per day), which is 208 days. In effect, this value disables the policy.
 
 -   Not defined
 

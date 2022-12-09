@@ -7,7 +7,6 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
@@ -19,6 +18,9 @@ ms.technology: itpro-updates
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 :::image type="content" alt-text="Screenshot of Delivery Optimization information in Update Compliance." source="images/UC_workspace_DO_status.png" lightbox="images/UC_workspace_DO_status.png":::
 

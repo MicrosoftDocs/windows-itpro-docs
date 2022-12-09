@@ -46,7 +46,7 @@ Two methods of peer-to-peer content distribution are available.
 > [!NOTE]
 > Microsoft Configuration Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Configuration Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](/configmgr/core/plan-design/hierarchy/client-peer-cache).
 >
-> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Endpoint Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
+> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Configuration Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
 
 ## Express update delivery
 
@@ -56,7 +56,7 @@ Windows client quality update downloads can be large because every package conta
 > Express update delivery applies to quality update downloads. Starting with Windows 10, version 1709, Express update delivery also applies to feature update downloads for clients connected to Windows Update and Windows Update for Business.
 
 ### How Microsoft supports Express
-- **Express on Microsoft Endpoint Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
+- **Express on Microsoft Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
   Express update delivery is available on [all support versions of WSUS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc708456(v=ws.10)).
@@ -94,4 +94,4 @@ At this point, the download is complete and the update is ready to be installed.
 | ![done.](images/checklistdone.png) | [Build deployment rings for Windows client updates](../update/waas-deployment-rings-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows client updates](../update/waas-servicing-channels-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this article) |
-| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](../update/waas-manage-updates-wufb.md)<br/>or [Deploy Windows client updates using Windows Server Update Services](../update/waas-manage-updates-wsus.md)<br/>or [Deploy Windows client updates using Microsoft Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |

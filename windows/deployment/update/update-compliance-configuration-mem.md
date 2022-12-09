@@ -7,7 +7,6 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
 ms.technology: itpro-updates
 ---
@@ -18,6 +17,9 @@ ms.technology: itpro-updates
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 This article is specifically targeted at configuring devices enrolled to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for Update Compliance, within Microsoft Intune itself. Configuring devices for Update Compliance in Microsoft Intune breaks down to the following steps:
 

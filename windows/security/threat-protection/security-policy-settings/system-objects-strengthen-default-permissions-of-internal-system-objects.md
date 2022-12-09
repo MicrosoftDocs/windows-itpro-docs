@@ -4,7 +4,7 @@ description: Best practices and more for the security policy setting, System obj
 ms.assetid: 3a592097-9cf5-4fd0-a504-7cbfab050bb6
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # System objects: Strengthen default permissions of internal system objects (for example, Symbolic Links)

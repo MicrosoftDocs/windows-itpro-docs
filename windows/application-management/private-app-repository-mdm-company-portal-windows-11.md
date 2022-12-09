@@ -5,9 +5,10 @@ author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
 ms.reviewer: amanh
-ms.prod: w11
+ms.prod: windows-client
 ms.date: 09/15/2021
 ms.localizationpriority: medium
+ms.technology: itpro-apps
 ---
 
 # Private app repository in Windows 11

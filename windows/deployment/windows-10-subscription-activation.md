@@ -8,12 +8,11 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.collection: 
-  - M365-modern-desktop
   - highpri
 search.appverid: 
   - MET150
 ms.topic: conceptual
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 appliesto: 
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
@@ -98,7 +97,7 @@ The following list illustrates how deploying Windows client has evolved with eac
 > The following requirements don't apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only. It supports workgroup, hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure virtual machines](/troubleshoot/azure/virtual-machines/troubleshoot-activation-problems).
 
 > [!IMPORTANT]
-> As of October 1, 2022, subscription activation is available for _commercial_ and _GCC_ tenants. It's currently not available on GCC High or DoD tenants.<!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
+> As of October 1, 2022, subscription activation is available for *commercial* and *GCC* tenants. It's currently not available on GCC High or DoD tenants.<!-- 6783128 --> For more information, see [Enable subscription activation with an existing EA](deploy-enterprise-licenses.md#enable-subscription-activation-with-an-existing-ea).
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following requirements:
 
@@ -144,7 +143,7 @@ You can benefit by moving to Windows as an online service in the following ways:
 > [!NOTE]
 > The following examples use Windows 10 Pro to Enterprise edition. The examples also apply to Windows 11, and Education editions.
 
-The device is Azure AD-joined from **Settings > Accounts > Access work or school**.
+The device is Azure AD-joined from **Settings** > **Accounts** > **Access work or school**.
 
 You assign Windows 10 Enterprise to a user:
 

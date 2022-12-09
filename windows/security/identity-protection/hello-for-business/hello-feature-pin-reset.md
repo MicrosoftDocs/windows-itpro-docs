@@ -1,20 +1,12 @@
 ---
 title: Pin Reset
 description: Learn how Microsoft PIN reset services enable you to help users recover who have forgotten their PIN.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
 ms.collection: 
-  - M365-identity-device-management
   - highpri
-ms.topic: article
-localizationpriority: medium
 ms.date: 07/29/2022
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 
 # PIN reset
@@ -29,11 +21,6 @@ There are two forms of PIN reset:
 
 
 There are two forms of PIN reset called destructive and non-destructive. Destructive PIN reset is the default and doesn't require configuration. During a destructive PIN reset, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned. For non-destructive PIN reset, you must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.
-
-**Requirements**
-
-- Reset from settings - Windows 10, version 1703 or later, Windows 11
-- Reset above Lock - Windows 10, version 1709 or later, Windows 11
 
 Destructive and non-destructive PIN reset use the same steps for initiating a PIN reset. If users have forgotten their PINs, but have an alternate sign-in method, they can navigate to Sign-in options in *Settings* and initiate a PIN reset from the PIN options. If users don't have an alternate way to sign into their devices, PIN reset can also be initiated from the Windows lock screen in the PIN credential provider.
 
@@ -184,7 +171,11 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 - Value: **True**
 
 >[!NOTE]
-> You must replace `TenantId` with the identifier of your Azure Active Directory tenant.
+> You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/organization?$select=id
+```
 
 ---
 

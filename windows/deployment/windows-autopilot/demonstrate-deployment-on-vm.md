@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 ms.collection: 
-  - M365-modern-desktop
   - highpri
 ms.topic: tutorial
 ms.date: 10/28/2022
@@ -46,6 +45,9 @@ You'll need the following components to complete this lab:
 |**Internet access**|If you're behind a firewall, see the detailed [networking requirements](/mem/autopilot/software-requirements#networking-requirements). Otherwise, just make sure that you have a connection to the internet.|
 |**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (Azure AD) Premium license**|This guide will describe how to get a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
+
+> [!NOTE]
+> When using a VM for Autopilot testing, assign at least two processors and 4 GB of memory.
 
 ## Procedures
 

@@ -1,28 +1,21 @@
 ---
 title: Validate Public Key Infrastructure - certificate trust model (Windows Hello for Business)
 description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
-ms.prod: windows-client
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
 ms.date: 08/19/2018
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: prsriva
-manager: aaroncz
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>On-premises deployments</b>
-  - ✅ <b>Certificate trust</b>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.topic: article
 ---
 # Validate and Configure Public Key Infrastructure - Certificate Trust Model
+
+[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 
 ## Deploy an enterprise certificate authority
 
-This guide assumes most enterprise have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
+This guide assumes most enterprise have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running Active Directory Certificate Services.
 
 ### Lab-based public key infrastructure
 
@@ -33,13 +26,13 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 >[!NOTE]
 >Never install a certificate authority on a domain controller in a production environment.
 
-1. Open an elevated Windows PowerShell prompt.
-2. Use the following command to install the Active Directory Certificate Services role.   
+1. Open an elevated Windows PowerShell prompt
+2. Use the following command to install the Active Directory Certificate Services role
     ```PowerShell
     Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
     ```
 
-3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
+3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration
     ```PowerShell
     Install-AdcsCertificationAuthority
     ```   

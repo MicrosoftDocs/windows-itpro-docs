@@ -78,7 +78,7 @@ For more information on the security features you can configure, manage, and enf
 
   - [What is Intune?](/mem/intune/fundamentals/what-is-intune)
   - [Add Microsoft 365 apps to Windows 10 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365)
-  - [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/microsoftteams/msi-deployment)
+  - [Install Microsoft Teams using Microsoft Configuration Manager](/microsoftteams/msi-deployment)
 
   Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**. Admins can [create a policy that pins apps, or removes the default pinned apps from the Taskbar](/windows/configuration/customize-taskbar-windows-11).
 

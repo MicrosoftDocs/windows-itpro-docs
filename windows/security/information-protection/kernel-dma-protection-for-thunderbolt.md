@@ -6,10 +6,10 @@ author: dansimp
 ms.author: dansimp
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 03/26/2019
+ms.technology: itpro-security
 ---
 
 # Kernel DMA Protection

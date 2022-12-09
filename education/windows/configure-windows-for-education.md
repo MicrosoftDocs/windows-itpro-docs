@@ -4,7 +4,7 @@ description: Learn how to configure the OS diagnostic data, consumer experiences
 ms.topic: how-to
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 # Windows 10 configuration recommendations for education customers
 

@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to clear all of the sites from your global Enterprise Mode site list.
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 90f38a6c-e0e2-4c93-9a9e-c425eca99e97
 ms.reviewer: 
 audience: itpro

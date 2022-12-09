@@ -4,7 +4,6 @@ manager: aczechowski
 description: Learn how the Need attention! section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance.
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-updates
@@ -16,6 +15,9 @@ ms.technology: itpro-updates
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 ![Needs attention section.](images/UC_workspace_needs_attention.png)
 

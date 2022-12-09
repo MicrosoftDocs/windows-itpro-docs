@@ -5,9 +5,9 @@ ms.reviewer:
 manager: aaroncz
 ms.author: dansimp
 author: dansimp
-ms.collection: M365-security-compliance
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows application security

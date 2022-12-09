@@ -4,10 +4,11 @@ description: Export Start layout to LayoutModification.json with pinned apps, an
 manager: aaroncz
 ms.author: lizlong
 ms.reviewer: ericpapa
-ms.prod: w11
+ms.prod: windows-client
 author: lizgt2000
 ms.localizationpriority: medium
 ms.collection: highpri
+ms.technology: itpro-configure
 ---
 
 # Customize the Start menu layout on Windows 11
@@ -61,16 +62,9 @@ Start has the following areas:
   - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
   - `User Configuration\Administrative Templates\Start Menu and Taskbar`
 
-- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file.
+- **Recommended**: Shows recently opened files and recently installed apps. This section can only be customized in Windows 11 SE using the following policy.
 
-  The  [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) exposes settings that prevent files from showing in this section. This CSP also hides recent files that show from the taskbar.
-
-  In **Intune**, you can configure this feature, and more. For more information on the Start menu settings you can configure in an Intune policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
-
-  In **Group Policy**, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
-
-  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
-  - `User Configuration\Administrative Templates\Start Menu and Taskbar`
+  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove Recommended section from Start Menu`
 
 ## Create the JSON file
 

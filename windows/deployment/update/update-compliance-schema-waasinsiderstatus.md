@@ -6,12 +6,14 @@ description: WaaSInsiderStatus schema
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.technology: itpro-updates
 ---
 
 # WaaSInsiderStatus
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 WaaSInsiderStatus records contain device-centric data and acts as the device record for devices on Windows Insider Program builds in Update Compliance. Each record provided in daily snapshots maps to a single device in a single tenant. This table has data such as the current device's installed version of Windows, whether it is on the latest available updates, and whether the device needs attention. Insider devices have fewer fields than [WaaSUpdateStatus](update-compliance-schema-waasupdatestatus.md).
 

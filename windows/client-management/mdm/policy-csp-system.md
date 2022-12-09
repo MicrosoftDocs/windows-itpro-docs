@@ -205,7 +205,7 @@ Windows diagnostic data is collected when the Allow Telemetry policy setting is 
 
 If you disable or don't configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) unless you have enabled policies like Allow Update Compliance Processing or Allow Desktop Analytics Processing.
 
-Configuring this setting doesn't change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
+Configuring this setting doesn't change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Windows Update for Business reports.
 
 See the documentation at [ConfigureWDD](https://aka.ms/ConfigureWDD) for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 
@@ -700,11 +700,11 @@ To enable this behavior, you must complete three steps:
 
  1. Enable this policy setting.
  2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above.
- 3. Set the Configure the Commercial ID setting for your Update Compliance workspace.
+ 3. If you're using Update Compliance rather than Windows Update for Business reports, set the Configure the Commercial ID setting for your Update Compliance workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
-If you disable or don't configure this policy setting, devices won't appear in Update Compliance.
+If you disable or don't configure this policy setting, devices won't appear in Windows Update for Business reports or Update Compliance.
 
 <!--/Description-->
 <!--ADMXMapped-->

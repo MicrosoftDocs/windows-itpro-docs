@@ -7,9 +7,9 @@ ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.technology: itpro-security
 ---
 
 # Fine-tune Windows Information Protection (WIP) with WIP Learning

@@ -7,7 +7,6 @@ ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 02/14/2022
@@ -49,7 +48,7 @@ The Security Compliance Toolkit consists of:
     -   Microsoft 365 Apps for Enterprise Version 2206
     
 -   Microsoft Edge security baseline
-    -   Edge version 98
+    -   Edge version 107
 
 -   Tools
     -   Policy Analyzer

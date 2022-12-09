@@ -9,6 +9,7 @@ ms.author: vinpa
 ms.reviewer: 
 manager: aaroncz
 ms.topic: overview
+ms.technology: itpro-manage
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management
@@ -17,7 +18,7 @@ Use of personal devices for work, and employees working outside the office, may 
 
 Your organization might have considered bringing in Windows 10 devices and downgrading them to an earlier version of Windows until everything is in place for a formal upgrade process. This downgrade may appear to save costs due to standardization. But, you typically save more if you don't downgrade, and immediately taking advantage of the cost reductions Windows 10 can provide. Because Windows 10 devices can be managed using the same processes and technology as other previous Windows versions, it's easy for versions to coexist.
 
-Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as Microsoft Endpoint Configuration Manager, Microsoft Intune, or other third-party products. This "managed diversity" enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
+Your organization can support various operating systems across a wide range of device types, and manage them through a common set of tools such as Microsoft Configuration Manager, Microsoft Intune, or other third-party products. This "managed diversity" enables you to empower your users to benefit from the productivity enhancements available on their new Windows 10 devices (including rich touch and ink support), while still maintaining your standards for security and manageability. It can help you and your organization benefit from Windows 10 much faster.
 
 This six-minute video demonstrates how users can bring in a new retail device and be up and working with their personalized settings and a managed experience in a few minutes, without being on the corporate network. It also demonstrates how IT can apply policies and configurations to ensure device compliance.
 

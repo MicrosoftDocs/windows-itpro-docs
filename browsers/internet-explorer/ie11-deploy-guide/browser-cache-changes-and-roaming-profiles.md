@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: performance
 description: Browser cache changes and roaming profiles
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
 ms.reviewer: 
 audience: itpro

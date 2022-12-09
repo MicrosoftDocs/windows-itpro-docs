@@ -6,7 +6,6 @@ description: Learn how the Feature Update Status report provides information abo
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates
@@ -18,6 +17,9 @@ ms.technology: itpro-updates
 
 - Windows 10
 - Windows 11
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
 
 [ ![The Feature Update Status report.](images/UC_workspace_FU_status.png) ](images/UC_workspace_FU_status.png#lightbox)
 

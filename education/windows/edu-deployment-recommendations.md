@@ -4,7 +4,7 @@ description: Provides guidance on ways to customize the OS privacy settings, and
 ms.topic: conceptual
 ms.date: 08/10/2022
 appliesto:
-- ✅ <b>Windows 10</b>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Deployment recommendations for school IT administrators

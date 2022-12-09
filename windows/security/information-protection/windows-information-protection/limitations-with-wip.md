@@ -6,10 +6,10 @@ author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.reviewer: rafals
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/05/2019
 ms.localizationpriority: medium
+ms.technology: itpro-security
 ---
 
 # Limitations while using Windows Information Protection (WIP)
@@ -116,7 +116,7 @@ This following list provides info about the most common problems you might encou
 
   <br/>
 
-  - **How it appears**: Windows Information Protection isn't turned on for employees in your organization. Error code 0x807c0008 will result if Windows Information Protection is deployed by using Microsoft Endpoint Configuration Manager.
+  - **How it appears**: Windows Information Protection isn't turned on for employees in your organization. Error code 0x807c0008 will result if Windows Information Protection is deployed by using Microsoft Configuration Manager.
   - **Workaround**: Don't set the **MakeFolderAvailableOfflineDisabled** option to **False** for any of the specified folders.  You can configure this parameter, as described [Disable Offline Files on individual redirected folders](/windows-server/storage/folder-redirection/disable-offline-files-on-folders).
 
     If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports Windows Information Protection, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after Windows Information Protection is already in place, you might be unable to open your files offline.

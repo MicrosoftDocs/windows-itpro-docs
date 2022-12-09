@@ -1,17 +1,12 @@
 ---
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
 ms.collection: 
-  - M365-identity-device-management
   - highpri
-ms.topic: article
-localizationpriority: medium
 ms.date: 2/15/2022
+appliesto: 
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 
 # Windows Hello for Business Deployment Prerequisite Overview
@@ -20,7 +15,6 @@ This article lists the infrastructure requirements for the different deployment 
 
 ## Azure AD Cloud Only Deployment
 
-* Windows 10, version 1511 or later, or Windows 11
 * Microsoft Azure Account
 * Azure Active Directory
 * Azure AD Multifactor Authentication

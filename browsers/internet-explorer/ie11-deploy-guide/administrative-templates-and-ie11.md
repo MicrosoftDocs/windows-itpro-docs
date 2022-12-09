@@ -4,7 +4,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Administrative templates and Internet Explorer 11
 author: dansimp
-ms.prod: windows-client
+ms.prod: ie11
 ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 ms.reviewer: 
 audience: itpro

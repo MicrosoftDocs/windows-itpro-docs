@@ -1,25 +1,17 @@
 ---
 title: Why a PIN is better than an online password (Windows)
-description: Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) an online password .
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-manager: aaroncz
-ms.reviewer: prsriva
+description: Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) an online password.
 ms.collection: 
-  - M365-identity-device-management
   - highpri
-ms.topic: article
-ms.localizationpriority: medium
 ms.date: 10/23/2017
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
+- ✅ <a href=https: //learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: article
 ---
 # Why a PIN is better than an online password
 
-Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
-On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might allow complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First we need to distinguish between two types of passwords: `local` passwords are validated against the machine's password store, whereas `online` passwords are validated against a server. This article mostly covers the benefits a PIN has over an online password, and also why it can be considered even better than a local password. 
+Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
+On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might allow complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First we need to distinguish between two types of passwords: `local` passwords are validated against the machine's password store, whereas `online` passwords are validated against a server. This article mostly covers the benefits a PIN has over an online password, and also why it can be considered even better than a local password.
 
 Watch Dana Huang explain why a Windows Hello for Business PIN is more secure than an online password.
 

@@ -3,19 +3,20 @@ title: Windows 10 volume license media
 description: Learn about volume license media in Windows 10, and channels such as the Volume License Service Center (VLSC).
 ms.prod: windows-client
 ms.localizationpriority: medium
-ms.date: 10/31/2022
+ms.date: 11/23/2022
 ms.reviewer: 
 manager: aaroncz
 ms.author: frankroj
 author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Windows 10 volume license media
 
-**Applies to**
+*Applies to:*
 
--   Windows 10
+- Windows 10
 
 With each release of Windows 10, volume license media is made available on the [Volume Licensing Service Center](https://www.microsoft.com/vlsc) (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. This article provides a description of volume license media, and describes some of the changes that have been implemented with the current release of Windows 10.
 
@@ -28,7 +29,7 @@ When you select a product, for example "Windows 10 Enterprise" or "Windows 10 Ed
 > [!NOTE]
 > If you do not see a Windows 10 release available in the list of downloads, verify the [release date](https://technet.microsoft.com/windows/release-info.aspx).
 
-Instead of having separate media and packages for Windows 10 Pro (volume licensing version), Windows 10 Enterprise, and Windows 10 Education, all three are bundled together. 
+Instead of having separate media and packages for Windows 10 Pro (volume licensing version), Windows 10 Enterprise, and Windows 10 Education, all three are bundled together.
 
 ### Language packs
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ms.collection: highpri
+ms.technology: itpro-fundamentals
 ---
 
 # Plan for Windows 11
@@ -45,7 +46,7 @@ The availability of Windows 11 will vary according to a device's hardware and wh
 
 ##### Managed devices
 
-Managed devices are devices that are under organization control. Managed devices include those devices managed by Microsoft Intune, Microsoft Endpoint Configuration Manager, or other endpoint management solutions. 
+Managed devices are devices that are under organization control. Managed devices include those devices managed by Microsoft Intune, Microsoft Configuration Manager, or other endpoint management solutions. 
 
 If you manage devices on behalf of your organization, you'll be able to upgrade eligible devices to Windows 11 using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have added benefits, such as:  
 

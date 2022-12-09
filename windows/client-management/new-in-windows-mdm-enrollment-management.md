@@ -1,15 +1,15 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
-MS-HAID:
+MS-HAID: 
   - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
   - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/16/2022
@@ -348,9 +348,9 @@ No. Only one MDM is allowed.
 
 Entry | Description
 --------------- | --------------------
-What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
-What data is handled by dmwappushsvc? | It's a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. This service doesn't send telemetry.|
-How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this service is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to disable the service. Disabling this service will cause your management to fail.|
+What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all Wireless Application Protocol (WAP) messages, which include Windows management messages, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
+What data is handled by dmwappushsvc? | It's a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further. This service doesn't send telemetry.|
+How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc) and locating *Device Management Wireless Application Protocol (WAP) Push message Routing Service*. However, since this service is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to disable the service. Disabling this service will cause your management to fail.|
 
 
 ## Change history for MDM documentation

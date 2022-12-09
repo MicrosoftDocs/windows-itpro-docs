@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: d5ccf6dd-5ba7-44a9-8e0b-c478d8b1442c
 ms.reviewer: 
 ms.author: vinpa
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,10 +12,9 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/02/2018
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Reset account lockout counter after

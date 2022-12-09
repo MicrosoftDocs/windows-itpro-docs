@@ -8,13 +8,15 @@ ms.author: frankroj
 manager: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.date: 10/31/2022
+ms.date: 11/23/2022
+ms.technology: itpro-deploy
 ---
 
 # Windows Deployment Services (WDS) boot.wim support
 
-Applies to:
-- Windows 10 
+*Applies to:*
+
+- Windows 10
 - Windows 11
 
 The operating system deployment functionality of [Windows Deployment Services](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831764(v=ws.11)) (WDS) is being partially deprecated. Starting with Windows 11, workflows that rely on **boot.wim** from installation media or on running Windows Setup in WDS mode will no longer be supported.
@@ -25,9 +27,9 @@ When you PXE-boot from a WDS server that uses the **boot.wim** file from install
 
 ## Deployment scenarios affected
 
-The table below provides support details for specific deployment scenarios (Boot Image Version).
+The table below provides support details for specific deployment scenarios. Boot.wim is the `boot.wim` file obtained from the Windows source files for each specified version of Windows.
 
-||Windows 10|Windows Server 2016|Windows Server 2019|Windows Server 2022|Windows 11|
+|Windows Version being deployed |Boot.wim from Windows 10|Boot.wim from Windows Server 2016|Boot.wim from Windows Server 2019|Boot.wim from Windows Server 2022|Boot.wim from Windows 11|
 |--- |--- |--- |--- |--- |--- |
 |**Windows 10**|Supported, using a boot image from matching or newer version.|Supported, using a boot image from Windows 10, version 1607 or later.|Supported, using a boot image from Windows 10, version 1809 or later.|Not supported.|Not supported.|
 |**Windows Server 2016**|Supported, using a boot image from Windows 10, version 1607 or later.|Supported.|Not supported.|Not supported.|Not supported.|
@@ -37,7 +39,7 @@ The table below provides support details for specific deployment scenarios (Boot
 
 ## Reason for the change
 
-Alternatives to WDS, such as [Microsoft Endpoint Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experience for deploying Windows images. 
+Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experience for deploying Windows images.
 
 ## Not affected
 
@@ -52,7 +54,7 @@ You can still run Windows Setup from a network share. Workflows that use a custo
 - Windows Server 2022 workflows that rely on **boot.wim** from installation media will show a non-blocking deprecation notice. The notice can be dismissed, and currently the workflow isn't blocked.
 - Windows Server workflows after Windows Server 2022 that rely on **boot.wim** from installation media are blocked.
 
-If you currently use WDS with **boot.wim** from installation media for end-to-end operating system deployment, and your OS version isn't supported, deprecated, or blocked, it's recommended that you use deployment tools such as MDT, Configuration Manager, or a non-Microsoft solution with a custom boot.wim image. 
+If you currently use WDS with **boot.wim** from installation media for end-to-end operating system deployment, and your OS version isn't supported, deprecated, or blocked, it's recommended that you use deployment tools such as MDT, Configuration Manager, or a non-Microsoft solution with a custom boot.wim image.
 
 ## Also see
 

@@ -7,7 +7,6 @@ ms.localizationpriority: high
 ms.author: aaroncz
 manager: dougeby
 ms.collection: 
-  - M365-modern-desktop
   - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
@@ -40,7 +39,9 @@ Servicing stack update are released depending on new issues or vulnerabilities. 
 
 Both Windows client and Windows Server use the cumulative update mechanism, in which many fixes to improve the quality and security of Windows are packaged into a single update. Each cumulative update includes the changes and fixes from all previous updates.
 
-Servicing stack updates must ship separately from the cumulative updates because they modify the component that installs Windows updates. The servicing stack is released separately because the servicing stack itself requires an update. For example, the cumulative update [KB4284880](https://support.microsoft.com/help/4284880/windows-10-update-kb4284880) requires the [May 17, 2018 servicing stack update](https://support.microsoft.com/help/4132216), which includes updates to Windows Update.
+Servicing stack updates improve the reliability of the update process to mitigate potential issues while installing the latest quality updates and feature updates. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes.
+
+Beginning with the February 2021 LCU, Microsoft will publish all future cumulative updates and SSUs for Windows 10, version 2004 and later together as one cumulative monthly update to the normal release category in WSUS.
 
 ## Is there any special guidance?
 

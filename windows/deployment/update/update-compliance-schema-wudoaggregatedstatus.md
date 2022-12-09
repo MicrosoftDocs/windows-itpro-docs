@@ -6,12 +6,15 @@ description: WUDOAggregatedStatus schema
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.technology: itpro-updates
 ---
 
 # WUDOAggregatedStatus
+
+<!--Using include for recommending Windows Update for Business reports for all Update Compliance v1 docs-->
+[!INCLUDE [Recommend Windows Update for Business reports](./includes/wufb-reports-recommend.md)]
+
 
 WUDOAggregatedStatus records provide information, across all devices, on their bandwidth utilization for a specific content type in the event they use [Delivery Optimization](https://support.microsoft.com/help/4468254/windows-update-delivery-optimization-faq), over the past 28 days.
 

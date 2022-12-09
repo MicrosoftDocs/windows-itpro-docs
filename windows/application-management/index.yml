@@ -1,25 +1,19 @@
 ### YamlMime:Landing
 
-title: Windows application management # < 60 chars
-summary: Learn about managing applications in Windows client, including how to remove background task resource restrictions.  # < 160 chars
+title: Windows application management
+summary: Learn about managing applications in Windows client, including how to remove background task resource restrictions.
 
 metadata:
-  title: Windows application management  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about managing applications in Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
-  ms.topic: landing-page # Required
-  ms.collection: 
-    - windows-10
+  title: Windows application management
+  description: Learn about managing applications in Windows 10 and Windows 11.
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.collection:
     - highpri
   author: nicholasswhite
   ms.author: nwhite
   manager: aaroncz
-  ms.date: 08/24/2021 #Required; mm/dd/yyyy format.
-  ms.localizationpriority : medium
-    
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  ms.date: 08/24/2021
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects

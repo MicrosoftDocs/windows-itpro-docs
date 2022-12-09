@@ -9,13 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
 ms.date: 08/29/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules
@@ -67,7 +67,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **8 Required:EV Signers** | This option isn't currently supported. | No |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. | No |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes).<br/> NOTE: This option is required to run HTA files, and is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows without the proper update may have unintended results. | No |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options, covering PowerShell, Windows Based Script Host (wscript.exe), Windows Console Based Script Host (cscript.exe), HTA files run in Microsoft HTML Application Host (mshta.exe), and MSXML. For more information on script enforcement, see [Script enforcement with WDAC](/windows/security/threat-protection/windows-defender-application-control/design/script-enforcement). <br/> NOTE: This option isn't supported on Windows Server 2016 and shouldn't be used on that operating system. | No |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. | No |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) | Yes |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft's Intelligent Security Graph (ISG). | Yes |
@@ -150,7 +150,7 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
 > [!NOTE]
-> When authoring WDAC policies with Microsoft Endpoint Configuration Manager (MEMCM), you can instruct MEMCM to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, MEMCM performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the MEMCM policy is reapplied.
+> When authoring WDAC policies with Microsoft Configuration Manager (MEMCM), you can instruct MEMCM to create rules for specified files and folders. These rules **aren't** WDAC filepath rules. Rather, MEMCM performs a one-time scan of the specified files and folders and builds rules for any binaries found in those locations at the time of that scan. File changes to those specified files and folders after that scan won't be allowed unless the MEMCM policy is reapplied.
 
 > [!NOTE]
 > There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.

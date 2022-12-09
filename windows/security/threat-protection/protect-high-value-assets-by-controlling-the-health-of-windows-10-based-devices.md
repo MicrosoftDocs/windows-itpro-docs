@@ -1,14 +1,14 @@
 ---
 title: Control the health of Windows 10-based devices (Windows 10)
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
-ms.reviewer:
+ms.reviewer: 
 manager: aaroncz
 ms.author: dansimp
-ms.prod: m365-security
+ms.prod: windows-client
 author: dulcemontemayor
 ms.date: 10/13/2017
 ms.localizationpriority: medium
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Control the health of Windows 10-based devices
@@ -280,7 +280,7 @@ SAWs are computers that are built to help significantly reduce the risk of compr
 
 To protect high-value assets, SAWs are used to make secure connections to those assets.
 
-Similarly, on corporate fully managed workstations, where applications are installed by using a distribution tool like Microsoft Endpoint Configuration Manager, Intune, or any third-party device management, then Device Guard is applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
+Similarly, on corporate fully managed workstations, where applications are installed by using a distribution tool like Microsoft Configuration Manager, Intune, or any third-party device management, then Device Guard is applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
 
 It could be challenging to use Device Guard on corporate, lightly managed workstations where the user is typically allowed to install software on their own. When an organization offers great flexibility, it’s difficult to run Device Guard in enforcement mode. Nevertheless, Device Guard can be run in Audit mode, and in that case, the event log will contain a record of any binaries that violated the Device Guard policy. When Device Guard is used in Audit mode, organizations can get rich data about drivers and applications that users install and run.
 
