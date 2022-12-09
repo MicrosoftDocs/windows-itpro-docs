@@ -14,15 +14,15 @@ msreviewer: hathind
 
 # Roles and responsibilities
 
-This article outlines the customer's and Windows Autopatch's responsibilities when:
+This article outlines the your and Windows Autopatch's responsibilities when:
 
 - [Preparing to enroll into Windows Autopatch](#prepare)
-- [Deploying the service](#deploy) and,
+- [Deploying the service](#deploy)
 - [Operating with the Windows Autopatch service](#operate)
 
 ## Prepare
 
-| Task | Customer responsibility | Windows Autopatch |
+| Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
 | Review the [prerequisites](../prepare/windows-autopatch-prerequisites.md) | :heavy_check_mark: | :x: |
 | Ensure device [prerequisites](../prepare/windows-autopatch-prerequisites.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
@@ -34,7 +34,7 @@ This article outlines the customer's and Windows Autopatch's responsibilities wh
 
 ## Deploy
 
-| Task | Customer responsibility | Windows Autopatch |
+| Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
 | [Add and verify admin contacts](../deploy/windows-autopatch-admin-contacts.md) in Microsoft Endpoint Manager |  :heavy_check_mark: | :x: |
 | [Deploy and configure Windows Autopatch service configuration](../references/windows-autopatch-changes-to-tenant.md) | :x: | :heavy_check_mark: |
@@ -43,8 +43,8 @@ This article outlines the customer's and Windows Autopatch's responsibilities wh
 | [Maintain customer configuration to align with the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) | :heavy_check_mark: | :x: |
 | Resolve any conflicting and [unsupported Windows update](../references/windows-autopatch-wqu-unsupported-policies.md) and [Microsoft 365 policies](../references/windows-autopatch-microsoft-365-policies.md)  |  :heavy_check_mark: | :x: |
 | [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md#steps-to-register-devices) | :heavy_check_mark: | :x: |
-| [Manually override device assignments to First, Fast & Broad rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings) | :heavy_check_mark: | :x: |
 | [Automatically assign devices to First, Fast & Broad rings at device registration](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :x: | :heavy_check_mark: |
+| [Manually override device assignments to First, Fast & Broad rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings) | :heavy_check_mark: | :x: |
 | [Run on-going post-registration device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md) | :x: | :heavy_check_mark: |
 | [Remediate devices displayed in the **Not ready** tab](../deploy/windows-autopatch-post-reg-readiness-checks.md#about-the-three-tabs-in-the-devices-blade) | :heavy_check_mark: | :x: |
 | [Remediate devices displayed in the **Not registered** tab](../deploy/windows-autopatch-post-reg-readiness-checks.md#about-the-three-tabs-in-the-devices-blade) | :heavy_check_mark: | :x: |
@@ -54,9 +54,9 @@ This article outlines the customer's and Windows Autopatch's responsibilities wh
 
 ## Operate
 
-| Task | Customer responsibility | Windows Autopatch |
+| Task | Your responsibility | Windows Autopatch |
 | ----- | :-----: | :-----: |
-| [Maintain Contacts in admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
+| [Maintain contacts in the Microsoft Endpoint Manager admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
 | [Maintain Test group membership](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :heavy_check_mark: | :x: |
 | [Evaluate updates](../operate/windows-autopatch-wqu-signals.md) | :x: | :heavy_check_mark: |
 | [Define and implement release schedule](../operate/windows-autopatch-wqu-overview.md) | :x: | :heavy_check_mark: |
