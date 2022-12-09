@@ -164,7 +164,7 @@ Here’s a summary of the types of data that is included with each setting:
 
 This setting was previously labeled as **Security**. When you configure this setting, no Windows diagnostic data is sent from your device. This is only available on Windows Server, Windows Enterprise, and Windows Education editions. If you choose this setting, devices in your organization will still be secure.
 
-This was the default setting for Windows Server 2022 Datacenter: Azure Edition prior to December 7, 2022.
+This was the default setting for Windows Server 2022 Datacenter: Azure Edition prior to December 13, 2022.
 
 >[!NOTE]
 > If your organization relies on Windows Update, the minimum recommended setting is **Required diagnostic data**. Because no Windows Update information is collected when diagnostic data is off, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
@@ -173,7 +173,7 @@ This was the default setting for Windows Server 2022 Datacenter: Azure Edition p
 
 Required diagnostic data, previously labeled as **Basic**, gathers a limited set of data that’s critical for understanding the device and its configuration. This data helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version.
 
-This is the default setting for current releases of Windows, Windows 10, version 1903. Beginning December 7, 2022, it is also the default setting for Windows Server 2022 Datacenter: Azure Edition.
+This is the default setting for current releases of Windows, Windows 10, version 1903. Beginning December 13, 2022, it is also the default setting for Windows Server 2022 Datacenter: Azure Edition.
 
 Required diagnostic data includes:
 
