@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.prod: windows-client
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 # Find the Application User Model ID of an installed app
 
