@@ -7,7 +7,6 @@ author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: 
-  - M365-analytics
   - highpri
 ms.topic: article
 ms.date: 05/03/2022

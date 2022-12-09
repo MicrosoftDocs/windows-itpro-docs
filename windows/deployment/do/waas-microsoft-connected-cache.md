@@ -6,9 +6,6 @@ ms.prod: windows-client
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.collection: 
-  - M365-modern-desktop
-  - m365initiative-coredeploy
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates

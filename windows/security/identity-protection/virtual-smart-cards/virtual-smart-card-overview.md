@@ -5,7 +5,6 @@ ms.prod: windows-client
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 10/13/2017

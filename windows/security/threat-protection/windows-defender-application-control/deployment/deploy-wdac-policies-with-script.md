@@ -4,7 +4,6 @@ description: Use scripts to deploy Windows Defender Application Control (WDAC) p
 keywords: security, malware
 ms.prod: windows-client
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: aaroncz
 ms.author: jogeurte

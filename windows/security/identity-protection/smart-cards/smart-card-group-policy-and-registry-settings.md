@@ -6,7 +6,6 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: ardenw
 manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/02/2021

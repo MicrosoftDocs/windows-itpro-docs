@@ -6,7 +6,6 @@ description: UCClientReadinessStatus schema
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: reference
 ms.date: 06/06/2022
 ms.technology: itpro-updates

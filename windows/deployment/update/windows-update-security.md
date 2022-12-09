@@ -6,7 +6,6 @@ description: Overview of the security for Windows Update.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.date: 10/25/2022
 ms.technology: itpro-updates

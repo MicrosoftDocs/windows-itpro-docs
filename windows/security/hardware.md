@@ -5,9 +5,9 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 author: vinaypamnani-msft
-ms.collection: M365-security-compliance
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows hardware security
