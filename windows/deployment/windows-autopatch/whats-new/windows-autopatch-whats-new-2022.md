@@ -24,6 +24,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Added Roles and responsibilities article |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md) | Added more licenses to the More about licenses section<ul><li>[MC452168](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
 | [Unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md) | Updated to include other policy managers in the Group policy section |
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the Device configuration, Microsoft Office and Edge policies |
