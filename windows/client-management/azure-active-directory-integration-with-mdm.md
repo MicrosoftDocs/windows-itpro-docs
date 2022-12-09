@@ -9,6 +9,7 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.collection: highpri
+ms.date: 12/31/2017
 ---
 
 # Azure Active Directory integration with MDM

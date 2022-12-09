@@ -8,6 +8,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Define update strategy with a calendar

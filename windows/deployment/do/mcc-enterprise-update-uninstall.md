@@ -7,6 +7,7 @@ author: amymzhou
 ms.localizationpriority: medium
 ms.author: amyzhou
 ms.topic: article
+ms.date: 12/31/2017
 ---
 # Update or uninstall Microsoft Connected Cache for Enterprise and Education
 

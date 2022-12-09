@@ -7,6 +7,8 @@ ms.prod: windows-client
 author: dulcemontemayor
 ms.localizationpriority: medium
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 

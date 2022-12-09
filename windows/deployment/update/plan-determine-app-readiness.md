@@ -8,6 +8,7 @@ ms.topic: article
 ms.author: aaroncz
 author: aczechowski
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Determine application readiness
