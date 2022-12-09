@@ -23,7 +23,7 @@ This article outlines the customer's and Windows Autopatch's responsibilities wh
 ## Prepare
 
 | Task | Customer responsibility | Windows Autopatch |
-| ----- | ----- | ----- |
+| ----- | :-----: | :-----: |
 | Review the [prerequisites](../prepare/windows-autopatch-prerequisites.md) | :heavy_check_mark: | :x: |
 | Ensure device [prerequisites](../prepare/windows-autopatch-prerequisites.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
 | Ensure [infrastructure and environment prerequisites](../prepare/windows-autopatch-configure-network.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
@@ -35,7 +35,7 @@ This article outlines the customer's and Windows Autopatch's responsibilities wh
 ## Deploy
 
 | Task | Customer responsibility | Windows Autopatch |
-| ----- | ----- | ----- |
+| ----- | :-----: | :-----: |
 | [Add and verify admin contacts](../deploy/windows-autopatch-admin-contacts.md) in Microsoft Endpoint Manager |  :heavy_check_mark: | :x: |
 | [Deploy and configure Windows Autopatch service configuration](../references/windows-autopatch-changes-to-tenant.md) | :x: | :heavy_check_mark: |
 | [Run the pre-registration device readiness checks](../deploy/windows-autopatch-register-devices.md#about-the-ready-not-ready-and-not-registered-tabs) | :x: | :heavy_check_mark: |
@@ -55,7 +55,7 @@ This article outlines the customer's and Windows Autopatch's responsibilities wh
 ## Operate
 
 | Task | Customer responsibility | Windows Autopatch |
-| ----- | ----- | ----- |
+| ----- | :-----: | :-----: |
 | [Maintain Contacts in admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
 | [Maintain Test group membership](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :heavy_check_mark: | :x: |
 | [Evaluate updates](../operate/windows-autopatch-wqu-signals.md) | :x: | :heavy_check_mark: |
