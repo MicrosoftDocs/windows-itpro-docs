@@ -4,7 +4,7 @@ description: Learn more about the CloudDesktop Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 11/22/2022
+ms.date: 12/09/2022
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,7 +36,11 @@ ms.topic: reference
 <!-- BootToCloudMode-OmaUri-End -->
 
 <!-- BootToCloudMode-Description-Begin -->
-This policy is used by IT admin to set the configuration mode of cloud PC.
+<!-- Description-Source-DDF -->
+This policy allows the user to configure the boot to cloud mode. Boot to Cloud mode enables users to seamlessly sign-in to a Cloud PC that is provisioned for them by an IT Admin. For using boot to cloud mode, users need to install and configure a Cloud Provider application (eg: Win365) on their PC and need to have a Cloud PC provisioned to them. For successful use of this policy, OverrideShellProgram policy needs to be configured as well.
+This policy supports the below options:
+1. Not Configured: Machine will not trigger the Cloud PC connection automatically.
+2. Enable Boot to Cloud Desktop: User will see that configured Cloud PC Provider application gets launched automatically once the sign-in operation finishes they seamlessly gets connected to a Cloud PC that is provisioned.
 <!-- BootToCloudMode-Description-End -->
 
 <!-- BootToCloudMode-Editable-Begin -->
@@ -51,7 +55,6 @@ This policy is used by IT admin to set the configuration mode of cloud PC.
 | Format | int |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-| Dependency [OverrideShellProgramDependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/WindowsLogon/OverrideShellProgram` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- BootToCloudMode-DFProperties-End -->
 
 <!-- BootToCloudMode-AllowedValues-Begin -->
