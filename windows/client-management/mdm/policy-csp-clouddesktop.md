@@ -42,7 +42,7 @@ This policy allows the user to configure the boot to cloud mode. Boot to Cloud m
 This policy supports the below options:
 
 1. Not Configured: Machine will not trigger the Cloud PC connection automatically.
-2. Enable Boot to Cloud Desktop: User will see that configured Cloud PC Provider application gets launched automatically once the sign-in operation finishes they seamlessly gets connected to a Cloud PC that is provisioned.
+2. Enable Boot to Cloud Desktop: The user will see that configured Cloud PC Provider application launches automatically. Once the sign-in operation finishes, the user is seamlessly connected to a provisioned Cloud PC.
 <!-- BootToCloudMode-Description-End -->
 
 <!-- BootToCloudMode-Editable-Begin -->
