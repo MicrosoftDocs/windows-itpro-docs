@@ -16,9 +16,9 @@ msreviewer: hathind
 
 This article outlines the customer's and Windows Autopatch's responsibilities when:
 
-- Preparing to enroll
-- Deploying the service and
-- Operating with the Windows Autopatch service
+- [Preparing to enroll into Windows Autopatch](#prepare)
+- [Deploying the service](#deploy) and,
+- [Operating with the Windows Autopatch service](#operate)
 
 ## Prepare
 
