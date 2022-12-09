@@ -69,6 +69,8 @@ This policy allows an administrator to set default file type and protocol associ
 
 <!-- DefaultAssociationsConfiguration-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
+
 To create the SyncML, follow these steps:
 <ol>
 <li>Install a few apps and change your defaults.</li>
