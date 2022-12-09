@@ -70,6 +70,12 @@ Windows Autopatch provides the option to opt out of service-driven expedited qua
 > [!NOTE]
 > Windows Autopatch doesn't allow customers to request expedited releases.
 
+## Out of Band release
+
+Windows Autopatch schedules and deploys required Out of Band (OOB) updates released outside of the normal schedule. Customers can view the deployed OOB quality updates on the **Release Management** blade on the **[Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431)**. 
+
+To view deployed OOB quality updates, customers can go to the Endpoint Manager admin center > Tenant administration > Windows Autopatch > Release management pane. Under the Release Announcements tab, customers can view the knowledge base (KB) articles corresponding to the deployed OOB quality updates. In case of a normal quality update release, KBs for the specific release will be available to the customers to view in the Release Announcements tab. Note that the announcements will be removed from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a ring, the OOB updates will also be paused.
+
 ## Pausing and resuming a release
 
 If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md), we may decide to pause that release.
