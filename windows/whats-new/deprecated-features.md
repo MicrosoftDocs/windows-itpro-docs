@@ -27,6 +27,8 @@ To understand the distinction between *deprecation* and *removal*, see [Windows 
 
 The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 
+## Deprecated features
+
 **The following list is subject to change and might not include every affected feature or functionality.**
 
 > [!NOTE]
