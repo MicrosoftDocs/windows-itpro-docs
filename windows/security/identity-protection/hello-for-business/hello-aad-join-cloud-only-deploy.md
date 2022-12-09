@@ -17,7 +17,7 @@ When you Azure Active Directory (Azure AD) join a Windows device, the system pro
 You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. Instructions on how to disable Windows Hello for Business enrollment in a cloud only environment are included below.
 
 > [!NOTE]
-> During the out-of-box experience (OOBE) flow of an Azure AD join, you will see a provisioning PIN when you don’t have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
+> During the out-of-box experience (OOBE) flow of an Azure AD join, you will see a provisioning PIN when you don't have Intune. You can always cancel the PIN screen and set this cancellation with registry keys to prevent future prompts.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Cloud only deployments will use Azure AD multi-factor authentication (MFA) durin
 
 The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
 
-Also note that it's possible for federated domains to enable the “Supports MFA” flag in your federated domain settings. This flag tells Azure AD that the federated IDP will perform the MFA challenge.
+Also note that it's possible for federated domains to enable the *Supports MFA* flag in your federated domain settings. This flag tells Azure AD that the federated IDP will perform the MFA challenge.
 
 Check and view this setting with the following MSOnline PowerShell command:
 

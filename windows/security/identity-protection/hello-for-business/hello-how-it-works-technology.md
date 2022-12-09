@@ -70,6 +70,7 @@ The certificate trust model uses a securely issued certificate based on the user
 - [Deployment type](#deployment-type)
 - [Hybrid Azure AD join](#hybrid-azure-ad-join)
 - [Hybrid deployment](#hybrid-deployment)
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Key trust](#key-trust)
 - [On-premises deployment](#on-premises-deployment)
 - [Trust type](#trust-type)
@@ -101,6 +102,27 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 ### More information on cloud experience host
 
 [Windows Hello for Business and device registration](./hello-how-it-works-device-registration.md)
+
+## Cloud Kerberos trust
+
+The cloud Kerberos trust model offers a simplified deployment experience, when compared to the key trust model.\
+With cloud Kerberos trust, there's no need to deploy certificated to the users or to the domain controllers, which is ideal for those environments without a PKI. 
+
+Giving the simplicity offered by this model, cloud Kerberos trust is the recommended deployment model when compared to the key trust model. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
+
+### Related to cloud Kerberos trust
+
+- [Deployment type](#deployment-type)
+- [Hybrid Azure AD join](#hybrid-azure-ad-join)
+- [Hybrid deployment](#hybrid-deployment)
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
+- [Key trust](#key-trust)
+- [On-premises deployment](#on-premises-deployment)
+- [Trust type](#trust-type)
+
+### More information about cloud Kerberos trust
+
+[Cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md)
 
 ## Deployment type
 
