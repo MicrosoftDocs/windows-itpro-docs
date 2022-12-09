@@ -9,13 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
 ms.date: 08/29/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules

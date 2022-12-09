@@ -8,7 +8,6 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.collection: 
-  - M365-modern-desktop
   - highpri
 search.appverid: 
   - MET150

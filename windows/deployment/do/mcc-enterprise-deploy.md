@@ -6,7 +6,6 @@ ms.prod: windows-client
 author: amymzhou
 ms.localizationpriority: medium
 ms.author: amyzhou
-ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 

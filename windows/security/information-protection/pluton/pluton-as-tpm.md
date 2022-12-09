@@ -7,8 +7,6 @@ author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
 ms.localizationpriority: medium
-ms.collection: 
-  - M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/15/2022
 appliesto: 
