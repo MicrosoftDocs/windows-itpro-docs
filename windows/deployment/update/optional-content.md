@@ -8,6 +8,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Migrating and acquiring optional Windows content during updates

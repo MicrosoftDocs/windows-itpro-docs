@@ -8,6 +8,7 @@ ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # DeviceUpdateCenter (Windows Configuration Designer reference)
