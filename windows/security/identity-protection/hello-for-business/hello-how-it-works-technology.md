@@ -105,17 +105,16 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 
 ## Cloud Kerberos trust
 
-The cloud Kerberos trust model offers a simplified deployment experience, when compared to the key trust model.\
-With cloud Kerberos trust, there's no need to deploy certificated to the users or to the domain controllers, which is ideal for those environments without a PKI. 
+The cloud Kerberos trust model offers a simplified deployment experience, when compared to the other trust types.\
+With cloud Kerberos trust, there's no need to deploy certificates to the users or to the domain controllers, which is ideal for environments without an existing PKI.
 
-Giving the simplicity offered by this model, cloud Kerberos trust is the recommended deployment model when compared to the key trust model. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
+Giving the simplicity offered by this model, cloud Kerberos trust is the recommended model when compared to the key trust model. It is also the preferred deployment model if you do not need to support certificate authentication scenarios.
 
 ### Related to cloud Kerberos trust
 
 - [Deployment type](#deployment-type)
 - [Hybrid Azure AD join](#hybrid-azure-ad-join)
 - [Hybrid deployment](#hybrid-deployment)
-- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Key trust](#key-trust)
 - [On-premises deployment](#on-premises-deployment)
 - [Trust type](#trust-type)
@@ -245,6 +244,7 @@ The key trust model uses the user's Windows Hello for Business identity to authe
 
 ### Related to key trust
 
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Certificate trust](#certificate-trust)
 - [Deployment type](#deployment-type)
 - [Hybrid Azure AD join](#hybrid-azure-ad-join)
@@ -336,6 +336,7 @@ The trust type determines how a user authenticates to the Active Directory to ac
 
 ### Related to trust type
 
+- [Cloud Kerberos trust](#cloud-kerberos-trust)
 - [Certificate trust](#certificate-trust)
 - [Hybrid deployment](#hybrid-deployment)
 - [Key trust](#key-trust)
