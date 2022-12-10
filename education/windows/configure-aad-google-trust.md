@@ -14,11 +14,11 @@ Once configured, users will be able to sign in to Azure AD with their Google Wor
 
 To configure Google Workspace as an IdP for Azure AD, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format *.onmicrosoft.com)
+1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format \**.onmicrosoft.com*)
     - If the federated domain has not yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
     - Learn how to [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
-1. Access to Azure AD as a *Global Administrator*
-1. Access to Google Workspace as a *Super Admin*
+1. Access to Azure AD with an account with the *Global Administrator* role
+1. Access to Google Workspace with an account with *super admin* privileges
 
 To test federation, the following prerequisites must be met:
 
@@ -35,12 +35,12 @@ To test federation, the following prerequisites must be met:
 
 1. Sign in to the [Google Workspace Admin Console](admin.google.com) with an account with *super admin* privileges
 1. Select **Apps > Web and mobile apps**
-1. Select **Add app > Search for apps** and search for `microsoft`
+1. Select **Add app > Search for apps** and search for **microsoft**
 1. In the search results page, hover over the *Microsoft Office 365 - Web (SAML)* app and select **Select**
-1. On the *Google Identity Provider details* page, select **Download Metadata** and take note of the location where the **IdP metadata** - `GoogleIDPMetadata.xml` - file is saved, as it will be used to setup Azure AD later
+1. On the *Google Identity Provider details* page, select **Download Metadata** and take note of the location where the **IdP metadata** - *GoogleIDPMetadata.xml* - file is saved, as it will be used to setup Azure AD later
 1. On the *Service provider details* page
       - Select the option **Signed response**
-      - Verify that the Name ID format is set to `PERSISTENT`
+      - Verify that the Name ID format is set to **PERSISTENT**
       - Depending on how the Azure AD users have been provisioned in Azure AD, you may need to adjust the **Name ID** mapping. For more information see (article to write)
         - If using Google auto-provisioning, select **Basic Information > Primary email**
       - Select **Continue**
@@ -66,7 +66,7 @@ Now that the app is configured, you must enable it for the users in Google Works
 ## Configure Azure AD as a Service Provider (SP) for Google Workspace
 
 The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Using the **IdP metadata** XML file downloaded from Google Workspace, modify the `$DomainName` variable of the following script to match your environment, and then run it in an elevated PowerShell session:
+Using the **IdP metadata** XML file downloaded from Google Workspace, modify the *$DomainName* variable of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use the credentials of an account with the *Global Administrator* role.
 
 ```powershell
 Install-Module -Name MSOnline

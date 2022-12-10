@@ -14,11 +14,11 @@ Once configured, users will be able to sign in to Azure AD with their Clever cre
 
 To configure Clever as an IdP for Azure AD, the following prerequisites must be met:
 
-1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format *.onmicrosoft.com)
+1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format \**.onmicrosoft.com*)
     - If the federated domain has not yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
     - Learn how to [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
-1. Access to Azure AD as a *Global Administrator*
-1. Access to Clever as a *District admin*
+1. Access to Azure AD with an account with the *Global Administrator* role
+1. Access to Clever with an account with the *District admin* role
 
 To test federation, the following prerequisites must be met:
 
@@ -57,7 +57,7 @@ Take note of the **Identity Provider Metadata URL** value, as it will be require
 ## Configure Azure AD
 
 The configuration of Azure AD consists of changing the authentication method for the custom DNS domains. This configuration can be done using PowerShell.\
-Modify the `$idpMetadataUrl` and `$DomainName` variables of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use a *Global Administrator* account.
+Modify the *$idpMetadataUrl* and *$DomainName* variables of the following script to match your environment, and then run it in an elevated PowerShell session. When prompted to authenticate to Azure AD, use the credentials of an account with the *Global Administrator* role.
 
 ```powershell
 Install-Module -Name MSOnline
