@@ -2,10 +2,9 @@
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
 ms.collection: 
-  - M365-identity-device-management
   - highpri
 ms.date: 2/15/2022
-appliesto: 
+appliesto:
   - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---

@@ -7,9 +7,9 @@ ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Windows threat protection

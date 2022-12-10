@@ -6,8 +6,8 @@ ms.prod: windows-client
 author: amymzhou
 ms.author: amyzhou
 ms.localizationpriority: medium
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
 ---
 
 # Appendix

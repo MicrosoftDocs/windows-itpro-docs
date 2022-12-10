@@ -9,8 +9,8 @@ audience: itpro
 author: nidos
 ms.localizationpriority: medium
 ms.author: nidos
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
 ---
 
 # Operator sign up and service onboarding for Microsoft Connected Cache

@@ -9,8 +9,8 @@ audience: itpro
 author: amyzhou
 ms.localizationpriority: medium
 ms.author: amyzhou
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
 ---
 
 # Verify cache node functionality and monitor health and performance

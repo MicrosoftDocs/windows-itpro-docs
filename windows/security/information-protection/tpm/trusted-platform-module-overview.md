@@ -8,11 +8,11 @@ author: dansimp
 ms.author: dansimp
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 adobe-target: true
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Trusted Platform Module Technology Overview
