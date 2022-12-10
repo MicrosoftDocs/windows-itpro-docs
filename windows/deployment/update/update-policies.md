@@ -9,6 +9,7 @@ manager: dougeby
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Policies for update compliance, activity, and user experience

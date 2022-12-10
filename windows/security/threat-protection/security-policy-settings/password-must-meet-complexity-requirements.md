@@ -16,6 +16,7 @@ ms.collection:
   - highpri
 ms.topic: conceptual
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Password must meet complexity requirements

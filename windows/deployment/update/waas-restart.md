@@ -12,6 +12,7 @@ ms.custom:
 ms.collection: highpri
 date: 09/22/2022
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Manage device restarts after updates

@@ -9,6 +9,7 @@ author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: reference
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # More kiosk methods and reference information

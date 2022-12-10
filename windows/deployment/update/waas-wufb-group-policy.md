@@ -10,6 +10,7 @@ ms.collection:
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business

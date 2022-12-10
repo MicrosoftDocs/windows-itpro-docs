@@ -9,6 +9,7 @@ ms.topic: article
 ms.reviewer: 
 manager: aaroncz
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Add image for secondary Microsoft Edge tiles 
