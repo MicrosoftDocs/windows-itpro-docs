@@ -2,6 +2,7 @@
 title: Active Directory-Based Activation Overview (Windows 10)
 description: Enable your enterprise to activate its computers through a connection to their domain using Active Directory-Based Activation (ADBA).
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

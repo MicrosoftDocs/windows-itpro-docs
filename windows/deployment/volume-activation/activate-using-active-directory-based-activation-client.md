@@ -1,6 +1,8 @@
 ---
 title: Activate using Active Directory-based activation
 description: Learn how active directory-based activation is implemented as a role service that relies on AD DS to store activation objects.
+ms.reviewer: 
+  - nganguly
 manager: aaroncz
 author: frankroj
 ms.author: frankroj
@@ -14,7 +16,7 @@ ms.collection: highpri
 
 # Activate using Active Directory-based activation
 
-*Applies to:*
+**Applies to:**
 
 - Windows
 - Windows Server

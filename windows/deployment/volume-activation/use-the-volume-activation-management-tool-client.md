@@ -2,6 +2,7 @@
 title: Use the Volume Activation Management Tool (Windows 10)
 description: The Volume Activation Management Tool (VAMT) provides several useful features, including the ability to track and monitor several types of product keys.
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -14,7 +15,7 @@ ms.technology: itpro-fundamentals
 
 # Use the Volume Activation Management Tool
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 8.1
