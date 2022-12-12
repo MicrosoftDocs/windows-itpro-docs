@@ -1,7 +1,7 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 12/09/2022
+ms.date: 12/12/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -59,8 +59,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Maintain contacts in the Microsoft Endpoint Manager admin center](../deploy/windows-autopatch-admin-contacts.md) | :heavy_check_mark: | :x: |
 | [Maintain and manage the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) | :x: | :heavy_check_mark: |
 | [Maintain customer configuration to align with the Windows Autopatch service configuration](../operate/windows-autopatch-maintain-environment.md) |  :heavy_check_mark: | :x: |
-| [Run on-going check to ensure devices are only present in one deployment ring](../operate/windows-autopatch-update-management.md#automated-deployment-ring-remediation-functions) | :x: | :heavy_check_mark: |
-| [Remediate devices displayed in the **Not ready** tab](../deploy/windows-autopatch-post-reg-readiness-checks.md#about-the-three-tabs-in-the-devices-blade) | :heavy_check_mark: | :x: |
+| [Run on-going checks to ensure devices are only present in one deployment ring](../operate/windows-autopatch-update-management.md#automated-deployment-ring-remediation-functions) | :x: | :heavy_check_mark: |
 | [Maintain the Test deployment ring membership](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :heavy_check_mark: | :x: |
 | Monitor [Windows update signals](../operate/windows-autopatch-wqu-signals.md) for safe update release | :x: | :heavy_check_mark: |
 | Test specific [business update scenarios](../operate/windows-autopatch-wqu-signals.md) | :heavy_check_mark: | :x: |
@@ -74,6 +73,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Pause updates (Windows Autopatch initiated)](../operate/windows-autopatch-wqu-signals.md) | :x: | :heavy_check_mark: |
 | [Pause updates (initiated by you)](../operate/windows-autopatch-wqu-overview.md#pausing-and-resuming-a-release) | :heavy_check_mark: | :x: |
 | Run [on-going post-registration device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md) | :x: | :heavy_check_mark: |
+| [Remediate devices displayed in the **Not ready** tab](../deploy/windows-autopatch-post-reg-readiness-checks.md#about-the-three-tabs-in-the-devices-blade) | :heavy_check_mark: | :x: |
 | Resolve any conflicting and unsupported [Windows update](../references/windows-autopatch-wqu-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies | :heavy_check_mark: | :x: |
 | [Investigate devices that aren't up to date within the service level objective (Microsoft action)](../operate/windows-autopatch-wqu-reports-overview.md#not-up-to-date-microsoft-action) | :x: | :heavy_check_mark: |
 | [Investigate and remediate devices that are marked as ineligible (Customer action)](../operate/windows-autopatch-wqu-reports-overview.md#ineligible-devices-customer-action) | :heavy_check_mark: | :x: |
