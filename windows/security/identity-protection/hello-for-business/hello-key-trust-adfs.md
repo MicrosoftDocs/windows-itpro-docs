@@ -19,7 +19,7 @@ To deploy AD FS using SQL as its configuration database, review the [Deploying a
 
 A new AD FS farm should have a minimum of two federation servers for proper load balancing, which can be accomplished with external networking peripherals, or with using the Network Load Balancing Role included in Windows Server.
 
-Prepare the AD FS deployment by installing and **updating** two Windows Servers. Ensure the update listed below is applied to each server before continuing.
+Prepare the AD FS deployment by installing and **updating** two Windows Servers.
 
 ## Enroll for a TLS server authentication certificate
 
@@ -27,7 +27,7 @@ Typically, a federation service is an edge facing role. However, the federation 
 
 The AD FS role needs a *server authentication* certificate for the federation services, and you can use a certificate issued by your enterprise (internal) CA. The server authentication certificate should have the following names included in the certificate, if you are requesting an individual certificate for each node in the federation farm:
  - **Subject Name**: the internal FQDN of the federation server
- - **Subject Alternate Name**: the federation service name (e.g. *sts.corp.contoso.com*) or an appropriate wildcard entry (e.g. *.corp.contoso.com*)
+ - **Subject Alternate Name**: the federation service name (e.g. *sts.corp.contoso.com*) or an appropriate wildcard entry (e.g. *\*.corp.contoso.com*)
 
 The federation service name is set when the AD FS role is configured. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server *adfs* and the federation service *sts*. In this example, the FQDN of the host is *adfs.corp.contoso.com* and the FQDN of the federation service is *sts.corp.contoso.com*.
 
@@ -47,7 +47,7 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 1. Select **Next** on the **Before You Begin** page
 1. Select **Next** on the **Select Certificate Enrollment Policy** page
 1. On the **Request Certificates** page, select the **Internal Web Server** check box
-1. Select the **More information is required to enroll for this certificate. Click here to configure settings** link
+1. Select the **⚠️ More information is required to enroll for this certificate. Click here to configure settings** link
     ![Example of Certificate Properties Subject Tab - This is what shows when you select the above link.](images/hello-internal-web-server-cert.png)
 1. Under **Subject name**, select **Common Name** from the **Type** list. Type the FQDN of the computer hosting the AD FS role and then select **Add**
 1. Under **Alternative name**, select **DNS** from the **Type** list. Type the FQDN of the name that you will use for your federation services (*sts.corp.contoso.com*). The name you use here MUST match the name you use when configuring the AD FS server role. Select **Add** and **OK** when finished
