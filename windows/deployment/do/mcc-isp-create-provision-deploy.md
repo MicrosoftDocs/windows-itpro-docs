@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Create, Configure, provision, and deploy the cache node in Azure portal
+# Create, configure, provision, and deploy the cache node in Azure portal
 
 **Applies to**
 
