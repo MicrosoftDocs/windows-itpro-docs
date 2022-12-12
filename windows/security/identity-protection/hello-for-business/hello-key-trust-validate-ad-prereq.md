@@ -12,7 +12,7 @@ ms.topic: tutorial
 
 Key trust deployments need an adequate number of domain controllers to ensure successful user authentication with Windows Hello for Business. To learn more about domain controller planning for key trust deployments, read the [Windows Hello for Business planning guide](hello-planning-guide.md) and the [Planning an adequate number of Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) section.
 
-The key registration process for the on-premises deployment of Windows Hello for Business requires the Windows Server 2016 Active Directory or later schema. The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.
+The key registration process for the on-premises deployment of Windows Hello for Business requires the Windows Server 2016 Active Directory or later schema.
 
 ## Create the Windows Hello for Business Users security group
 
