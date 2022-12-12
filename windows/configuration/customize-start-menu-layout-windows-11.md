@@ -9,6 +9,8 @@ author: lizgt2000
 ms.localizationpriority: medium
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Customize the Start menu layout on Windows 11

@@ -9,6 +9,7 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows Update log files

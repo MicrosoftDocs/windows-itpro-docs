@@ -2,6 +2,7 @@
 title: VAMT known issues (Windows 10)
 description: Find out the current known issues with the Volume Activation Management Tool (VAMT), versions 3.0. and 3.1.
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

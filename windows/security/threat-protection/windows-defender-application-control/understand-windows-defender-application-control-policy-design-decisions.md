@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: vinpa
 ms.date: 02/08/2018
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Understand Windows Defender Application Control policy design decisions 

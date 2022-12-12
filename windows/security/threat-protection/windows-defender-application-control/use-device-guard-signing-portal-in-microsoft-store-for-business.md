@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 manager: aaroncz
@@ -32,7 +31,7 @@ ms.technology: itpro-security
 >
 > You can continue to use the current Device Guard Signing Service v2 (DGSS) capabilities until that time. DGSS will be replaced by the [Azure Code Signing service (ACS)](https://aka.ms/AzureCodeSigning) and will support your Windows Defender Application Control (WDAC) policy and catalog file signing needs.
 
-The Device Guard Signing Service v2 (DGSS) is a code signing service that comes with your existing Microsoft Store for Business and Education tenant account. You can use the DGSS to sign catalog files and Windows Defender Application Control (WDAC) policies
+The Device Guard Signing Service v2 (DGSS) is a code signing service that comes with your existing Microsoft Store for Business and Education tenant account. You can use the DGSS to sign catalog files and Windows Defender Application Control (WDAC) policies.
 
 ## Set up permissions for DGSS signing in the Microsoft Store for Business and Education
 

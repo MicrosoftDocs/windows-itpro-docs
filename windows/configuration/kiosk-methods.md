@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 author: lizgt2000
 ms.topic: article
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions

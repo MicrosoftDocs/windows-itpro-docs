@@ -9,6 +9,7 @@ ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.reviewer: 
 manager: aaroncz
+ms.date: 12/31/2017
 ---
 
 # Policy CSP - MixedReality
