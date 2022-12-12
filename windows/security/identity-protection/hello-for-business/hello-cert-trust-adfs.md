@@ -1,30 +1,28 @@
 ---
-title: Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business)
-description: Learn how to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
-ms.date: 01/14/2021
+title: Prepare and deploy Active Directory Federation Services
+description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business certificate trust model.
+ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-ms.topic: article
+ms.topic: tutorial
 ---
-# Prepare and Deploy Active Directory Federation Services (AD FS)
+# Prepare and deploy Active Directory Federation Services
 
-Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS).  The on-premises certificate trust deployment uses Active Directory Federation Services roles for key registration, device registration, and as a certificate registration authority.
+[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
-The following guidance describes deploying a new instance of Active Directory Federation Services 2016 using the Windows Information Database as the configuration database, which is ideal for environments with no more than 30 federation servers and no more than 100 relying party trusts.
+Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises key trust deployment model uses AD FS for *key registration* and *device registration*.
 
-If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
+The following guidance describes the deployment of a new instance of AD FS using the Windows Information Database (WID) as the configuration database.\
+WID is ideal for environments with no more than **30 federation servers** and no more than **100 relying party trusts**. If your environment exceeds either of these factors, or needs to provide *SAML artifact resolution*, *token replay detection*, or needs AD FS to operate as a federated provider role, then the deployment requires the use of SQL as a configuration database.\
+To deploy AD FS using SQL as its configuration database, review the [Deploying a Federation Server Farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
 
-If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
+A new AD FS farm should have a minimum of two federation servers for proper load balancing, which can be accomplished with external networking peripherals, or with using the Network Load Balancing Role included in Windows Server.
 
-Ensure you apply the Windows Server 2016 Update to all nodes in the farm after you have successfully completed the upgrade. 
-
-A new Active Directory Federation Services farm should have a minimum of two federation servers for proper load balancing, which can be accomplished with an external networking peripherals, or with using the Network Load Balancing Role included in Windows Server.
-
-Prepare the Active Directory Federation Services deployment by installing and updating two Windows Server 2016 Servers.  Ensure the update listed below is applied to each server before continuing.
+Prepare the AD FS deployment by installing and **updating** two Windows Servers.
 
 > [!NOTE]
-> For AD FS 2019, if Windows Hello for Business with a Hybrid Certificate trust is performed, a known PRT issue exists. You may encounter this error in ADFS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
+> For AD FS 2019 in a Windows Hello for Business hybrid certificate trust model, a known PRT issue exists. You may encounter this error in AD FS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
 >
 > 1. Launch AD FS management console. Browse to "Services > Scope Descriptions".
 > 2. Right click "Scope Descriptions" and select "Add Scope Description".
@@ -38,240 +36,141 @@ Prepare the Active Directory Federation Services deployment by installing and up
 > 7. Restart the AD FS service.
 > 8. On the client: Restart the client. User should be prompted to provision Windows Hello for Business.
 
-## Update Windows Server 2016
+## Enroll for a TLS server authentication certificate
 
-Sign-in the federation server with _local admin_ equivalent credentials.
-1. Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please advise the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.
-2. Ensure the latest server updates to the federation server includes [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
+Typically, a federation service is an edge facing role. However, the federation services and instance used with the on-premises deployment of Windows Hello for Business does not need Internet connectivity.
 
->[!IMPORTANT]
->The above referenced updates are mandatory for Windows Hello for Business all on-premises deployment and hybrid certificate trust deployments for domain joined computers.
+The AD FS role needs a *server authentication* certificate for the federation services, and you can use a certificate issued by your enterprise (internal) CA. The server authentication certificate should have the following names included in the certificate, if you are requesting an individual certificate for each node in the federation farm:
+ - **Subject Name**: the internal FQDN of the federation server
+ - **Subject Alternate Name**: the federation service name (e.g. *sts.corp.contoso.com*) or an appropriate wildcard entry (e.g. *\*.corp.contoso.com*)
 
-## Enroll for a TLS Server Authentication Certificate
+The federation service name is set when the AD FS role is configured. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server *adfs* and the federation service *sts*. In this example, the FQDN of the host is *adfs.corp.contoso.com* and the FQDN of the federation service is *sts.corp.contoso.com*.
 
-Windows Hello for Business on-premises deployments require a federation server for device registration, key registration, and authentication certificate enrollment.  Typically, a federation service is an edge facing role.  However, the federation services and instance used with the on-premises deployment of Windows Hello for Business does not need Internet connectivity.  
+You can also issue one certificate for all hosts in the farm. If you chose this option, leave the subject name *blank*, and include all the names in the subject alternate name when creating the certificate request. All names should include the FQDN of each host in the farm and the federation service name.
 
-The AD FS role needs a server authentication certificate for the federation services, but you can use a certificate issued by your enterprise (internal) certificate authority.  The server authentication certificate should have the following names included in the certificate if you are requesting an individual certificate for each node in the federation farm:
+When creating a wildcard certificate, mark the private key as exportable, so that the same certificate can be deployed across each federation server and web application proxy within the AD FS farm. Note that the certificate must be trusted (chain to a trusted root CA). Once you have successfully requested and enrolled the server authentication certificate on one node, you can export the certificate and private key to a PFX file using the Certificate Manager console. You can then import the certificate on the remaining nodes in the AD FS farm.
 
-- Subject Name: The internal FQDN of the federation server (the name of the computer running AD FS)
-- Subject Alternate Name: Your federation service name, such as *fs.corp.contoso.com* (or an appropriate wildcard entry such as *.corp.contoso.com)
-- Subject Alternate Name: Your device registration service name, such as *enterpriseregistration.contoso.com*
+Be sure to enroll or import the certificate into the AD FS server's computer certificate store. Also, ensure all nodes in the farm have the proper TLS server authentication certificate.
+### AD FS authentication certificate enrollment
 
-You configure your federation service name when you configure the AD FS role. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server **adfs** and the federation service **fs**.  The FQDN of the host is adfs.corp.contoso.com and the FQDN of the federation service is fs.corp.contoso.com.
+Sign-in the federation server with *domain administrator* equivalent credentials.
 
-You can; however, issue one certificate for all hosts in the farm.  If you chose this option, then leave the subject name blank, and include all the names in the subject alternate name when creating the certificate request.  All names should include the FQDN of each host in the farm and the federation service name.  
+1. Start the Local Computer **Certificate Manager** (certlm.msc)
+1. Expand the **Personal** node in the navigation pane
+1. Right-click **Personal**. Select **All Tasks > Request New Certificate**
+1. Select **Next** on the **Before You Begin** page
+1. Select **Next** on the **Select Certificate Enrollment Policy** page
+1. On the **Request Certificates** page, select the **Internal Web Server** check box
+1. Select the **⚠️ More information is required to enroll for this certificate. Click here to configure settings** link
+    :::image type="content" source="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
+1. Under **Subject name**, select **Common Name** from the **Type** list. Type the FQDN of the computer hosting the AD FS role and then select **Add**
+1. Under **Alternative name**, select **DNS** from the **Type** list. Type the FQDN of the name that you will use for your federation services (*sts.corp.contoso.com*). The name you use here MUST match the name you use when configuring the AD FS server role. Select **Add** and **OK** when finished
+1. Select **Enroll**
 
-It’s recommended that you mark the private key as exportable so that the same certificate can be deployed across each federation server and web application proxy within your AD FS farm. Note that the certificate must be trusted (chain to a trusted root CA). Once you have successfully requested and enrolled the server authentication certificate on one node, you can export the certificate and private key to a PFX file using the Certificate Manager console. You can then import the certificate on the remaining nodes in the AD FS farm.
+A server authentication certificate should appear in the computer's personal certificate store.
 
-Be sure to enroll or import the certificate into the AD FS server’s computer certificate store.  Also, ensure all nodes in the farm have the proper TLS server authentication certificate.
+## Deploy the AD FS role
 
-### Internal Web Server Authentication Certificate Enrollment
-
-Sign-in the federation server with domain administrator equivalent credentials.
-
-1. Start the Local Computer **Certificate Manager** (certlm.msc).
-2. Expand the **Personal** node in the navigation pane.
-3. Right-click **Personal**. Select **All Tasks** and **Request New Certificate**.
-4. Click **Next** on the **Before You Begin** page.
-5. Click **Next** on the **Select Certificate Enrollment Policy** page.
-6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
-7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link   
-    ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link.](images/hello-internal-web-server-cert.png)
-8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  
-9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Repeat the same to add device registration service name (*enterpriseregistration.contoso.com*) as another alternative name. Click **OK** when finished.
-10. Click **Enroll**.
-
-A server authentication certificate should appear in the computer’s Personal certificate store.
-
-## Deploy the Active Directory Federation Service Role
-
-The Active Directory Federation Service (AD FS) role provides the following services to support Windows Hello for Business on-premises deployments:
+AD FS provides the following services to support Windows Hello for Business on-premises deployments in a certificate trust model:
 
 - Device registration
 - Key registration
-- Certificate registration authority (certificate trust deployments)
+- Certificate registration authority (CRA)
 
 >[!IMPORTANT]
-> Finish the entire AD FS configuration on the first server in the farm before adding the second server to the AD FS farm.  Once complete, the second server receives the configuration through the shared configuration database when it is added the AD FS farm. 
+> Finish the entire AD FS configuration on the first server in the farm before adding the second server to the AD FS farm.  Once complete, the second server receives the configuration through the shared configuration database when it is added the AD FS farm.
 
-Windows Hello for Business depends on proper device registration.  For on-premises deployments, Windows Server 2016 AD FS handles device registration.
+Sign-in the federation server with *Enterprise Administrator* equivalent credentials.
 
-Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
+1. Start **Server Manager**. Select **Local Server** in the navigation pane
+1. Select **Manage > Add Roles and Features**
+1. Select **Next** on the **Before you begin** page
+1. On the **Select installation type** page, select **Role-based or feature-based installation > Next**
+1. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list and **Next**
+1. On the **Select server roles** page, select **Active Directory Federation Services** and **Next**
+1. Select **Next** on the **Select features** page
+1. Select **Next** on the **Active Directory Federation Service** page
+1. Select **Install** to start the role installation
 
-1. Start **Server Manager**.  Click **Local Server** in the navigation pane.
-2. Click **Manage** and then click **Add Roles and Features**.
-3. Click **Next** on the **Before you begin** page.
-4. On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
-5. On the **Select destination server** page, choose **Select a server from the server pool**.  Select the federation server from the **Server Pool** list.  Click **Next**.
-6. On the **Select server roles** page, select **Active Directory Federation Services**.  Click **Next**.
-7. Click **Next** on the **Select features** page.
-8. Click **Next** on the **Active Directory Federation Service** page.
-9. Click **Install** to start the role installation.
-
-## Review & validate
-
-[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+## Review to validate the AD FS deployment
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
-- Confirm the AD FS farm uses the correct database configuration.
-- Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load.
-- Confirm **all** AD FS servers in the farm have the latest updates.
-- Confirm all AD FS servers have a valid server authentication certificate.
-    - The subject of the certificate is the common name (FQDN) of the host or a wildcard name.
-    - The alternate name of the certificate contains a wildcard or the FQDN of the federation service.
+> [!div class="checklist"]
+> * Confirm the AD FS farm uses the correct database configuration
+> * Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load
+> * Confirm **all** AD FS servers in the farm have the latest updates installed
+> * Confirm all AD FS servers have a valid server authentication certificate
 
-## Device Registration Service Account Prerequisite
+## Device registration service account prerequisites
 
-The service account used for the device registration server depends on the domain controllers in the environment.  
+The use of Group Managed Service Accounts (GMSA) is the preferred way to deploy service accounts for services that support them. GMSAs have security advantages over normal user accounts because Windows handles password management. This means the password is long, complex, and changes periodically. AD FS supports GMSAs, and it should be configured using them for additional security.
 
->[!NOTE]
-> Follow the procedures below based on the domain controllers deployed in your environment.  If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+GSMA uses the *Microsoft Key Distribution Service* that is located on the domain controllers. Before you can create a GSMA, you must first create a root key for the service. You can skip this if your environment already uses GSMA.
 
-### Windows Server 2012 or later Domain Controllers
+### Create KDS Root Key
 
-Windows Server 2012 or later domain controllers support Group Managed Service Accounts—the preferred way to deploy service accounts for services that support them.  Group Managed Service Accounts, or GMSA have security advantages over normal user accounts because Windows handles password management.  This means the password is long, complex, and changes periodically.  The best part of GMSA is all this happens automatically.  AD FS supports GMSA and should be configured using them for additional defense in depth security.
+Sign-in a domain controller with *Enterprise Administrator* equivalent credentials.
 
-GMSA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers.  Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GMSA.  Before you can create a GMSA, you must first create a root key for the service.  You can skip this if your environment already uses GMSA.
-
->[!NOTE]
-> If the [default object creation quota for security principles](/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
-
-#### Create KDS Root Key
-
-Sign-in a domain controller with _Enterprise Admin_ equivalent credentials.
-
-1. Start an elevated Windows PowerShell console.
-2. Type `Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)`.
-
-### Windows Server 2008 or 2008 R2 Domain Controllers
-
-Windows Server 2008 and 2008 R2 domain controllers do not host the Microsoft Key Distribution Service, nor do they support Group Managed Service Accounts.  Therefore, you must use create a normal user account as a service account where you are responsible for changing the password on a regular basis.
-
-#### Create an AD FS Service Account
-
-Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
-
-1. Open **Active Directory Users and Computers**.
-2. Right-click the **Users** container, Click **New**. Click **User**.
-3. In the **New Object – User** window, type **adfssvc** in the **Full name** text box.  Type **adfssvc** in the **User logon name** text box.  Click **Next**.
-4. Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
-5. Click **Next** and then click **Finish**.
+Start an elevated PowerShell console and execute the following command:
+```PowerShell
+Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+```
 
 ## Configure the Active Directory Federation Service Role
 
->[!IMPORTANT]
-> Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+Use the following procedures to configure AD FS.
 
-### Windows Server 2012 or later Domain Controllers
+Sign-in to the federation server with *Domain Administrator* equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 
-Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**.  If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008-r2-domain-controllers) section.
+1. Start **Server Manager**
+1. Select the notification flag in the upper right corner and select **Configure the federation services on this server**
+1. On the **Welcome** page, select **Create the first federation server farm > Next**
+1. On the **Connect to Active Directory Domain Services** page, select **Next**
+1. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list. The certificate is likely named after your federation service, such as *sts.corp.contoso.com*
+1. Select the federation service name from the **Federation Service Name** list
+1. Type the *Federation Service Display Name* in the text box. This is the name users see when signing in. Select **Next**
+1. On the **Specify Service Account** page, select **Create a Group Managed Service Account**. In the **Account Name** box, type *adfssvc*
+1. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and select **Next**
+1. On the **Review Options** page, select **Next**
+1. On the **Pre-requisite Checks** page, select **Configure**
+1. When the process completes, select **Close**
 
-Sign-in the federation server with _domain administrator_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
+### Add the AD FS service account to the *Key Admins* group
 
-1. Start **Server Manager**.
-2. Click the notification flag in the upper right corner. Click **Configure federation services on this server**.
-![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
-3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
-4. Click **Next** on the **Connect to Active Directory Domain Services** page.
-5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list.  The certificate is likely named after your federation service, such as *fs.corp.contoso.com* or *fs.contoso.com*.
-6. Select the federation service name from the **Federation Service Name** list.
-7. Type the Federation Service Display Name in the text box.  This is the name users see when signing in.  Click **Next**.
-8. On the **Specify Service Account** page, select **Create a Group Managed Service Account**.  In the **Account Name** box, type **adfssvc**.
-9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
-10. On the **Review Options** page, click **Next**.
-11. On the **Pre-requisite Checks** page, click **Configure**.
-12. When the process completes, click **Close**.
+During Windows Hello for Business enrollment, the public key is registered in an attribute of the user object in Active Directory. To ensure that the AD FS service can add and remove keys are part of its normal workflow, it must be a member of the *Key Admins* global group.
 
-### Windows Server 2008 or 2008 R2 Domain Controllers
+Sign-in to a domain controller or management workstation with *Domain Administrator* equivalent credentials.
 
-Use the following procedures to configure AD FS when your environment uses **Windows Server 2008 or 2008 R2 Domain Controllers**.  If you are not using Windows Server 2008 or 2008 R2 Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2012 or later Domain Controllers)](#windows-server-2012-or-later-domain-controllers) section.
+1. Open **Active Directory Users and Computers**
+1. Select the **Users** container in the navigation pane
+1. Right-click **Key Admins** in the details pane and select **Properties**
+1. Select the **Members > Add…**
+1. In the **Enter the object names to select** text box, type *adfssvc*. Select **OK**
+1. Select **OK** to return to **Active Directory Users and Computers**
+1. Change to server hosting the AD FS role and restart it
 
-Sign-in the federation server with _domain administrator_ equivalent credentials.  These instructions assume you are configuring the first federation server in a federation server farm.
+Sign-in to the federation server with *Enterprise Administrator* equivalent credentials. These instructions assume you are configuring the first federation server in a federation server farm.
 
-1. Start **Server Manager**.
-2. Click the notification flag in the upper right corner.  Click **Configure federation services on this server**.
-![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
-3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
-4. Click **Next** on the **Connect to Active Directory Domain Services** page.
-5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list. The certificate is likely named after your federation service, such as fs.corp.mstepdemo.net or fs.mstepdemo.net.
-6. Select the federation service name from the **Federation Service Name** list.
-7. Type the Federation Service Display Name in the text box. This is the name users see when signing in. Click **Next**.
-8. On the **Specify Service Account** page, Select **Use an existing domain user account or group Managed Service Account** and click **Select**.  In the **Select User or Service Account** dialog box, type the name of the previously created AD FS service account (example adfssvc) and click **OK**. Type the password for the AD FS service account and click **Next**.
-9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
-10. On the **Review Options** page, click **Next**.
-11. On the **Pre-requisite Checks** page, click **Configure**.
-12. When the process completes, click **Close**.
-13. Do not restart the AD FS server. You will do this later.
+1. Open the **AD FS management** console
+1. In the navigation pane, expand **Service**. Select **Device Registration**
+1. In the details pane, select **Configure device registration**
+1. In the **Configure Device Registration** dialog, Select **OK**
 
-### Add the AD FS Service account to the KeyCredential Admin group and the Windows Hello for Business Users group
+:::image type="content" source="images/adfs-device-registration.png" alt-text="AD FS device registration: configuration of the service connection point.":::
 
-> [!NOTE]
-> If you have a Windows Server 2016 domain controller in your domain, you can use the **Key Admins** group instead of **KeyCredential Administrators** and skip the **Configure Permissions for Key Registration** step.
+Triggering device registration from AD FS, creates the service connection point (SCP) in the Active Directory configuration partition. The SCP is used to store the device registration information that Windows clients will automatically discover.
 
-The **KeyCredential Administrators** global group provides the AD FS service with the permissions needed to perform key registration.  The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
+:::image type="content" source="images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
 
-Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
-
-1. Open **Active Directory Users and Computers**.
-2. Click the **Users** container in the navigation pane.
-3. Right-click **KeyCredential Admins** in the details pane and click **Properties**.
-4. Click the **Members** tab and click **Add…**
-5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-6. Click **OK** to return to **Active Directory Users and Computers**.
-7. Right-click **Windows Hello for Business Users** group
-8. Click the **Members** tab and click **Add…**
-9. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-10. Click **OK** to return to **Active Directory Users and Computers**.
-11. Change to server hosting the AD FS role and restart it.
-
-### Configure Permissions for Key Registration
-
-Key Registration stores the Windows Hello for Business public key in Active Directory.  With on-premises deployments, the Windows Server 2016 AD FS server registers the public key with the on-premises Active Directory.
-
-The key-trust model needs Windows Server 2016 domain controllers, which configures the key registration permissions automatically; however, the certificate-trust model does not and requires you to add the permissions manually.
-
-Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
-
-1. Open **Active Directory Users and Computers**.
-2. Right-click your domain name from the navigation pane and click **Properties**.
-3. Click **Security** (if the Security tab is missing, turn on Advanced Features from the View menu).
-4. Click **Advanced**. Click **Add**. Click **Select a principal**.
-5. The **Select User, Computer, Service Account, or Group** dialog box appears. In the **Enter the object name to select** text box, type **KeyCredential Admins**.  Click **OK**.
-6. In the **Applies to** list box, select **Descendant User objects**.
-7. Using the scroll bar, scroll to the bottom of the page and click **Clear all**.
-8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCrendentialLink**.
-9. Click **OK** three times to complete the task.
-
-## Configure the Device Registration Service
-
-Sign-in the federation server with _Enterprise Admin_ equivalent credentials. These instructions assume you are configuring the first federation server in a federation server farm.
-
-1. Open the **AD FS management** console.
-2. In the navigation pane, expand **Service**. Click **Device Registration**.
-3. In the details pane, click **Configure Device Registration**.
-4. In the **Configure Device Registration** dialog, click **OK**.
-
-## Review to validate
+## Review to validate the AD FS and Active Directory configuration
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm you followed the correct procedures based on the domain controllers used in your deployment. 
-    * Windows Server 2012 or Windows Server 2012 R2
-    * Windows Server 2008 or Windows Server 2008 R2
-* Confirm you have the correct service account based on your domain controller version.
-* Confirm you properly installed the AD FS role on your Windows Server 2016 based on the proper sizing of your federation, the number of relying parties, and database needs.
-* Confirm you used a certificate with the correct names as the server authentication certificate.
-    * Record the expiration date of the certificate and set a renewal reminder at least six weeks before it expires that includes the:
-        * Certificate serial number
-        * Certificate thumbprint
-        * Common name of the certificate
-        * Subject alternate name of the certificate
-        * Name of the physical host server
-        * The issued date
-        * The expiration date
-        * Issuing CA Vendor (if a third-party certificate) 
-* Confirm you granted the AD FS service allow read and write permissions to the ms-DSKeyCredentialLink Active Directory attribute.
-* Confirm you enabled the Device Registration service.
+
+> [!div class="checklist"]
+> * Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a third-party certificate)
+> * Confirm you added the AD FS service account to the KeyAdmins group
+> * Confirm you enabled the Device Registration service
 
 ## Prepare and Deploy AD FS Registration Authority
 
@@ -307,20 +206,7 @@ Sign-in a certificate authority or management workstations with _domain administ
 11. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
 12. Close the console.
 
-#### Windows 2008 or 2008R2 domain controllers
 
-Sign-in a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
-
-1. Open the **Certificate Authority** management console.
-2. Right-click **Certificate Templates** and click **Manage**.
-3. In the **Certificate Template** console, right-click the **Exchange Enrollment Agent** template in the details pane and click **Duplicate Template**.
-4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.
-6. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected.  Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
-7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
-8. On the **Security** tab, click **Add**. Type **adfssvc** in the **Enter the object names to select text box** and click **OK**.
-9. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check boxes for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
-10. Close the console.
 
 ### Configure the Windows Hello for Business Authentication Certificate template
 
