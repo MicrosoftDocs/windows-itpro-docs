@@ -49,6 +49,14 @@ http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsup
 
 If the test fails, for more information, see the [FAQ](mcc-isp-faq.yml) article.
 
+## Verify BGP routing configuration
+
+To verify your BGP routes are correctly configured for a cache node, navigate to **Settings > Cache nodes**. Select the cache node you wish to verify BGP routes for. 
+
+Verify that under **Routing Information**, the state of **BGP routes received** is True. Verify the IP space is correct. Lastly, select **Download JSON** next to **Download BGP Routes** to view the BGP routes that your cache node is currently advertising. 
+
+If **BGP routes received** is False, your **IP Space** is 0, or you are experiencing any BGP routing errors, please ensure your **ASN** and **IP address** is inputted correctly. 
+
 ## Monitor cache node health and performance
 
 Within Azure portal, there are many charts and graphs that are available to monitor cache node health and performance.
