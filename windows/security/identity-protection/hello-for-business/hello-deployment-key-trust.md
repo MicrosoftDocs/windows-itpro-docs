@@ -1,21 +1,20 @@
 ---
-title: Windows Hello for Business Deployment Guide - On Premises Key Deployment
-description: A guide to on premises, key trust Windows Hello for Business deployment.
-ms.date: 08/20/2018
+title: Windows Hello for Business deployment guide for the on-premises key trust model
+description: Learn how to deploy Windows Hello for Business in an on-premises, key trust model.
+ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.topic: tutorial
 ---
-# On Premises Key Trust Deployment
+# Deployment guide overview
 
 [!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
-Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair.  The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in an existing environment.  
-
-Below, you can find all the information you need to deploy Windows Hello for Business in a key trust model in your on-premises environment:
+Windows Hello for Business replaces username and password authentication to Windows with an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in an on-premises environment::
 
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
-2. [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
-3. [Prepare and Deploy Active Directory Federation Services](hello-key-trust-adfs.md)
-4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
-5. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
+1. [Validate and configure a PKI](hello-key-trust-validate-pki.md)
+1. [Prepare and deploy AD FS](hello-key-trust-adfs.md)
+1. [Validate and deploy multi-factor authentication (MFA)](hello-key-trust-validate-deploy-mfa.md)
+1. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)

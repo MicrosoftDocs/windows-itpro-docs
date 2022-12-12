@@ -1,5 +1,5 @@
 ---
-title: Key registration for on-premises deployment of Windows Hello for Business
+title: Validate Active Directory prerequisites
 description: Validate Active Directory prerequisites when deploying Windows Hello for Business in a key trust model.
 ms.date: 12/12/2022
 appliesto: 

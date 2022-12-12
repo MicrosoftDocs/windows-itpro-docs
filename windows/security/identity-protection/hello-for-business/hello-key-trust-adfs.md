@@ -55,7 +55,7 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 
 A server authentication certificate should appear in the computer's personal certificate store.
 
-## Deploy the Active Directory Federation Service role
+## Deploy the AD FS role
 
 AD FS provides *device registration* and *key registration* services to support the Windows Hello for Business on-premises deployments.
 
@@ -118,15 +118,15 @@ Sign-in to the federation server with *Domain Administrator* equivalent credenti
 1. On the **Pre-requisite Checks** page, select **Configure**
 1. When the process completes, select **Close**
 
-### Add the AD FS service account to the *KeyAdmins* group
+### Add the AD FS service account to the *Key Admins* group
 
-The *KeyAdmins* global group provides the AD FS service with the permissions needed to perform key registration.
+During Windows Hello for Business enrollment, the public key is registered in an attribute of the user object in Active Directory. To ensure that the AD FS service can add and remove keys are part of its normal workflow, it must be a member of the *Key Admins* global group.
 
 Sign-in to a domain controller or management workstation with *Domain Administrator* equivalent credentials.
 
 1. Open **Active Directory Users and Computers**
 1. Select the **Users** container in the navigation pane
-1. Right-click **KeyAdmins** in the details pane and select **Properties**
+1. Right-click **Key Admins** in the details pane and select **Properties**
 1. Select the **Members > Add…**
 1. In the **Enter the object names to select** text box, type *adfssvc*. Select **OK**
 1. Select **OK** to return to **Active Directory Users and Computers**
