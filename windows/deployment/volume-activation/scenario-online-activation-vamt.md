@@ -2,6 +2,7 @@
 title: Scenario 1 Online Activation (Windows 10)
 description: Achieve network access by deploying the Volume Activation Management Tool (VAMT) in a Core Network environment.
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
