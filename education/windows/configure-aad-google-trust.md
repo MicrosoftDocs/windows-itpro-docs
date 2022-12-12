@@ -33,7 +33,7 @@ To test federation, the following prerequisites must be met:
 
 ## Configure Google Workspace as and IdP for Azure AD
 
-1. Sign in to the [Google Workspace Admin Console](admin.google.com) with an account with *super admin* privileges
+1. Sign in to the [Google Workspace Admin Console](https://admin.google.com) with an account with *super admin* privileges
 1. Select **Apps > Web and mobile apps**
 1. Select **Add app > Search for apps** and search for **microsoft**
 1. In the search results page, hover over the *Microsoft Office 365 - Web (SAML)* app and select **Select**
@@ -57,7 +57,7 @@ To test federation, the following prerequisites must be met:
 
 Now that the app is configured, you must enable it for the users in Google Workspace:
 
-1. Sign in to the [Google Workspace Admin Console](admin.google.com) with an account with *super admin* privileges
+1. Sign in to the [Google Workspace Admin Console](https://admin.google.com) with an account with *super admin* privileges
 1. Select **Apps > Web and mobile apps**
 1. Select **Microsoft Office 365**
 1. Select **User access**
