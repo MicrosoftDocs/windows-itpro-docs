@@ -7,6 +7,6 @@ ms.topic: include
 
 [!INCLUDE [hello-intro](hello-intro.md)]
 - **Deployment type:** [!INCLUDE [hello-deployment-onpremises](hello-deployment-onpremises.md)]
-- **Trust type:** [key trust](../identity-protection/hello-for-business/hello-how-it-works-technology.md#key-trust)
+- **Trust type:** [!INCLUDE [hello-trust-key](hello-trust-key.md)]
 - **Join type:** [!INCLUDE [hello-join-domain](hello-join-domain.md)]
 ---
