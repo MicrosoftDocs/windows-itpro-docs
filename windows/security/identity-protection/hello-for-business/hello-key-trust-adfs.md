@@ -5,7 +5,7 @@ ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
-ms.topic: article
+ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services
 
@@ -74,7 +74,7 @@ Sign-in the federation server with *Enterprise Administrator* equivalent credent
 1. Select **Next** on the **Active Directory Federation Service** page
 1. Select **Install** to start the role installation
 
-## Review to validate
+## Review to validate the AD FS deployment
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
@@ -147,7 +147,7 @@ Triggering device registration from AD FS, creates the service connection point 
 
 :::image type="content" source="images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
 
-## Review to validate
+## Review to validate the AD FS and Active Directory configuration
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
@@ -246,7 +246,7 @@ Sign-in the domain controller or administrative workstation with _Domain Admin_ 
 1. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and select **Link an existing GPO…**
 1. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and select **OK**
 
-## Review to validate
+## Review to validate the configuration
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
@@ -258,4 +258,4 @@ Before you continue with the deployment, validate your deployment progress by re
 > * Confirm you created and deployed the Intranet Zone settings to prevent double authentication to the federation server
 
 > [!div class="nextstepaction"]
-> [Next: validate and deploy multifactor authentication (MFA)](hello-key-trust-validate-deploy-mfa.md)
+> [Next: validate and deploy multi-factor authentication (MFA)](hello-key-trust-validate-deploy-mfa.md)
