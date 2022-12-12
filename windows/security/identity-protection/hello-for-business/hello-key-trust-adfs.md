@@ -1,7 +1,7 @@
 ---
 title: Prepare and deploy Active Directory Federation Services
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business key trust model.
-ms.date: 08/19/2018
+ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
@@ -55,69 +55,49 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 
 A server authentication certificate should appear in the computer's personal certificate store.
 
-## Deploy the Active Directory Federation Service Role
+## Deploy the Active Directory Federation Service role
 
-The Active Directory Federation Service (AD FS) role provides the following services to support Windows Hello for Business on-premises deployments.
-* Device registration
-* Key registration 
+AD FS provides *device registration* and *key registration* services to support the Windows Hello for Business on-premises deployments.
 
 >[!IMPORTANT]
-> Finish the entire AD FS configuration on the first server in the farm before adding the second server to the AD FS farm. Once complete, the second server receives the configuration through the shared configuration database when it is added the AD FS farm. 
+> Finish the entire AD FS configuration on the first server in the farm before adding the second server to the AD FS farm. Once complete, the second server receives the configuration through the shared configuration database when it is added the AD FS farm.
 
-Windows Hello for Business depends on proper device registration. For on-premises key trust deployments, Windows Server 2016 AD FS handles device and key registration.
+Sign-in the federation server with *Enterprise Administrator* equivalent credentials.
 
-Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
-1. Start **Server Manager**. Click **Local Server** in the navigation pane.
-2. Click **Manage** and then click **Add Roles and Features**.
-3. Click **Next** on the **Before you begin** page.
-4. On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
-5. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list. Click **Next**.
-6. On the **Select server roles** page, select **Active Directory Federation Services**. Click **Next**.
-7. Click **Next** on the **Select features** page.
-8. Click **Next** on the **Active Directory Federation Service** page.
-9. Click **Install** to start the role installation.
+1. Start **Server Manager**. Select **Local Server** in the navigation pane
+2. Select **Manage > Add Roles and Features**
+3. Select **Next** on the **Before you begin** page
+4. On the **Select installation type** page, select **Role-based or feature-based installation > Next**
+5. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list and **Next**
+6. On the **Select server roles** page, select **Active Directory Federation Services** and **Next**
+7. Select **Next** on the **Select features** page
+8. Select **Next** on the **Active Directory Federation Service** page
+9. Select **Install** to start the role installation
 
 ## Review to validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm the AD FS farm uses the correct database configuration.
-* Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load.
-* Confirm **all** AD FS servers in the farm have the latest updates.
-* Confirm all AD FS servers have a valid server authentication certificate    
-    * The subject of the certificate is the common name (FQDN) of the host or a wildcard name.
-    * The alternate name of the certificate contains a wildcard or the FQDN of the federation service
 
-## Device Registration Service Account Prerequisite
+> [!div class="checklist"]
+> * Confirm the AD FS farm uses the correct database configuration
+> * Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load
+> * Confirm **all** AD FS servers in the farm have the latest updates installed
+> * Confirm all AD FS servers have a valid server authentication certificate
 
-The service account used for the device registration server depends on the domain controllers in the environment.
+## Device registration service account prerequisites
 
->[!NOTE]
->Follow the procedures below based on the domain controllers deployed in your environment. If the domain controller is not listed below, then it is not supported for Windows Hello for Business.
+The use of Group Managed Service Accounts (GMSA) is the preferred way to deploy service accounts for services that support them. GMSAs have security advantages over normal user accounts because Windows handles password management. This means the password is long, complex, and changes periodically. AD FS supports GMSAs, and it should be configured using them for additional security.
 
-### Windows Server 2012 or later Domain Controllers
+GSMA uses the *Microsoft Key Distribution Service* that is located on the domain controllers. Before you can create a GSMA, you must first create a root key for the service. You can skip this if your environment already uses GSMA.
 
-Windows Server 2012 or later domain controllers support Group Managed Service Accounts—the preferred way to deploy service accounts for services that support them. Group Managed Service Accounts, or GMSA, have security advantages over normal user accounts because Windows handles password management. This means the password is long, complex, and changes periodically. The best part of GMSA is all this happens automatically. AD FS supports GMSA and should be configured using them for additional defense in depth security.
+### Create KDS Root Key
 
-GSMA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers. Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GSMA. Before you can create a GSMA, you must first create a root key for the service. You can skip this if your environment already uses GSMA.
+Sign-in a domain controller with *Enterprise Administrator* equivalent credentials.
 
-#### Create KDS Root Key
-
-Sign-in a domain controller with _Enterprise Admin_ equivalent credentials.
-1. Start an elevated Windows PowerShell console.
-2. Type `Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)`
-
-### Windows Server 2008 or 2008 R2 Domain Controllers
-
-Windows Server 2008 and 2008 R2 domain controllers do not host the Microsoft Key Distribution Service, nor do they support Group Managed Service Accounts. Therefore, you must use or create a normal user account as a service account where you are responsible for changing the password on a regular basis.
-
-#### Create an AD FS Service Account
-
-Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
-1. Open **Active Directory Users and Computers**.
-2. Right-click the **Users** container, Click **New**. Click **User**.
-3. In the **New Object – User** window, type **adfssvc** in the **Full name** text box. Type **adfssvc** in the **User logon name** text box. Click **Next**.
-4. Enter and confirm a password for the **adfssvc** user. Clear the **User must change password at next logon** check box.
-5. Click **Next** and then click **Finish**.
+Start an elevated PowerShell console and execute the following command:
+```PowerShell
+Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
+```
 
 ## Configure the Active Directory Federation Service Role
 
