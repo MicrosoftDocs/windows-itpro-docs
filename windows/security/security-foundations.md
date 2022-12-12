@@ -8,6 +8,7 @@ ms.author: paoloma
 author: paolomatarazzo
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Windows security foundations

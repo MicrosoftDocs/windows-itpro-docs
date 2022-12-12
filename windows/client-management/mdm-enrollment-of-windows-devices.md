@@ -12,6 +12,7 @@ ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
 ms.collection: highpri
+ms.date: 12/31/2017
 ---
 
 # MDM enrollment of Windows 10-based devices

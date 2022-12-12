@@ -1,7 +1,7 @@
 ---
 title: What's new
 description: This article lists the new feature releases and any corresponding Message center post numbers.
-ms.date: 12/08/2022
+ms.date: 12/09/2022
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -24,10 +24,17 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Added Roles and responsibilities article |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md) | Added more licenses to the More about licenses section<ul><li>[MC452168](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
 | [Unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md) | Updated to include other policy managers in the Group policy section |
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the Device configuration, Microsoft Office and Edge policies |
 | [Windows quality update reports](../operate/windows-autopatch-wqu-reports-overview.md) | Added Windows quality update reports |
+
+### December service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC48119](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch advisory: December 2022 (2022.12 B) Windows quality update deployment |
 
 ## November 2022
 

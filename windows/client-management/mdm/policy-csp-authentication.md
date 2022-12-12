@@ -9,6 +9,7 @@ author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.reviewer: bobgil
 manager: aaroncz
+ms.date: 12/31/2017
 ---
 
 # Policy CSP - Authentication

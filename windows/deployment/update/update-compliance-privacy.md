@@ -8,6 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Privacy in Update Compliance

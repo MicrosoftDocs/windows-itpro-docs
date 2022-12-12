@@ -9,6 +9,7 @@ author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Use MDM Bridge WMI Provider to create a Windows client kiosk

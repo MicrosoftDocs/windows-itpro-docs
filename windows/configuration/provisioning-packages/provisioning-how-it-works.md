@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.reviewer: gkomatsu
 manager: aaroncz
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # How provisioning works in Windows
