@@ -48,7 +48,7 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 1. Select **Next** on the **Select Certificate Enrollment Policy** page
 1. On the **Request Certificates** page, select the **Internal Web Server** check box
 1. Select the **⚠️ More information is required to enroll for this certificate. Click here to configure settings** link
-    ![Example of Certificate Properties Subject Tab - This is what shows when you select the above link.](images/hello-internal-web-server-cert.png)
+    :::image type="content" source="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
 1. Under **Subject name**, select **Common Name** from the **Type** list. Type the FQDN of the computer hosting the AD FS role and then select **Add**
 1. Under **Alternative name**, select **DNS** from the **Type** list. Type the FQDN of the name that you will use for your federation services (*sts.corp.contoso.com*). The name you use here MUST match the name you use when configuring the AD FS server role. Select **Add** and **OK** when finished
 1. Select **Enroll**
@@ -65,14 +65,14 @@ AD FS provides *device registration* and *key registration* services to support 
 Sign-in the federation server with *Enterprise Administrator* equivalent credentials.
 
 1. Start **Server Manager**. Select **Local Server** in the navigation pane
-2. Select **Manage > Add Roles and Features**
-3. Select **Next** on the **Before you begin** page
-4. On the **Select installation type** page, select **Role-based or feature-based installation > Next**
-5. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list and **Next**
-6. On the **Select server roles** page, select **Active Directory Federation Services** and **Next**
-7. Select **Next** on the **Select features** page
-8. Select **Next** on the **Active Directory Federation Service** page
-9. Select **Install** to start the role installation
+1. Select **Manage > Add Roles and Features**
+1. Select **Next** on the **Before you begin** page
+1. On the **Select installation type** page, select **Role-based or feature-based installation > Next**
+1. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list and **Next**
+1. On the **Select server roles** page, select **Active Directory Federation Services** and **Next**
+1. Select **Next** on the **Select features** page
+1. Select **Next** on the **Active Directory Federation Service** page
+1. Select **Install** to start the role installation
 
 ## Review to validate
 
@@ -101,179 +101,161 @@ Add-KdsRootKey -EffectiveTime (Get-Date).AddHours(-10)
 
 ## Configure the Active Directory Federation Service Role
 
-Use the following procedures to configure AD FS when your environment uses **Windows Server 2012 or later Domain Controllers**. If you are not using Windows Server 2012 or later Domain Controllers, follow the procedures under the [Configure the Active Directory Federation Service Role (Windows Server 2008 or 2008R2 Domain Controllers)](#windows-server-2008-or-2008-r2-domain-controllers) section.
+Use the following procedures to configure AD FS.
 
-Sign-in the federation server with _Domain Admin_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
-1. Start **Server Manager**.
-2. Click the notification flag in the upper right corner. Click **Configure federation services on this server**. 
-   ![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
+Sign-in to the federation server with *Domain Administrator* equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 
-3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
-4. Click **Next** on the **Connect to Active Directory Domain Services** page.
-5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list. The certificate is likely named after your federation service, such as *fs.corp.contoso.com* or *fs.contoso.com*.
-6. Select the federation service name from the **Federation Service Name** list.
-7. Type the Federation Service Display Name in the text box. This is the name users see when signing in. Click **Next**.
-8. On the **Specify Service Account** page, select **Create a Group Managed Service Account**. In the **Account Name** box, type **adfssvc**.
-9. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and click **Next**.
-10. On the **Review Options** page, click **Next**.
-11. On the **Pre-requisite Checks** page, click **Configure**.
-12. When the process completes, click **Close**.
+1. Start **Server Manager**
+1. Select the notification flag in the upper right corner and select **Configure the federation services on this server**
+1. On the **Welcome** page, select **Create the first federation server farm > Next**
+1. On the **Connect to Active Directory Domain Services** page, select **Next**
+1. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list. The certificate is likely named after your federation service, such as *sts.corp.contoso.com*
+1. Select the federation service name from the **Federation Service Name** list
+1. Type the *Federation Service Display Name* in the text box. This is the name users see when signing in. Select **Next**
+1. On the **Specify Service Account** page, select **Create a Group Managed Service Account**. In the **Account Name** box, type *adfssvc*
+1. On the **Specify Configuration Database** page, select **Create a database on this server using Windows Internal Database** and select **Next**
+1. On the **Review Options** page, select **Next**
+1. On the **Pre-requisite Checks** page, select **Configure**
+1. When the process completes, select **Close**
 
-### Add the AD FS Service account to the KeyAdmins group
+### Add the AD FS service account to the *KeyAdmins* group
 
-The KeyAdmins global group provides the AD FS service with the permissions needed to perform key registration.
+The *KeyAdmins* global group provides the AD FS service with the permissions needed to perform key registration.
 
-Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
-1. Open **Active Directory Users and Computers**.
-2. Click the **Users** container in the navigation pane.
-3. Right-click **KeyAdmins** in the details pane and click **Properties**.
-4. Click the **Members** tab and click **Add…**
-5. In the **Enter the object names to select** text box, type **adfssvc**. Click **OK**.
-6. Click **OK** to return to **Active Directory Users and Computers**.
-7. Change to server hosting the AD FS role and restart it.
+Sign-in to a domain controller or management workstation with *Domain Administrator* equivalent credentials.
 
+1. Open **Active Directory Users and Computers**
+1. Select the **Users** container in the navigation pane
+1. Right-click **KeyAdmins** in the details pane and select **Properties**
+1. Select the **Members > Add…**
+1. In the **Enter the object names to select** text box, type *adfssvc*. Select **OK**
+1. Select **OK** to return to **Active Directory Users and Computers**
+1. Change to server hosting the AD FS role and restart it
 
-## Configure the Device Registration Service
+## Configure the device registration service
 
-Sign-in the federation server with _Enterprise Admin_ equivalent credentials. These instructions assume you are configuring the first federation server in a federation server farm.
-1. Open the **AD FS management** console.
-2. In the navigation pane, expand **Service**. Click **Device Registration**.
-3. In the details pane, click **Configure Device Registration**.
-4. In the **Configure Device Registration** dialog, click **OK**.
+Sign-in to the federation server with *Enterprise Administrator* equivalent credentials. These instructions assume you are configuring the first federation server in a federation server farm.
 
-## Review and validate
+1. Open the **AD FS management** console
+1. In the navigation pane, expand **Service**. Select **Device Registration**
+1. In the details pane, select **Configure device registration**
+1. In the **Configure Device Registration** dialog, Select **OK**
+
+:::image type="content" source="images/adfs-device-registration.png" alt-text="AD FS device registration: configuration of the service connection point.":::
+
+Triggering device registration from AD FS, creates the service connection point (SCP) in the Active Directory configuration partition. The SCP is used to store the device registration information that Windows clients will automatically discover.
+
+:::image type="content" source="images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
+
+## Review to validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm you followed the correct procedures based on the domain controllers used in your deployment   
-    * Windows Server 2016, 2012 R2 or Windows Server 2012 R2
-    * Windows Server 2008 or Windows Server 2008 R2
-* Confirm you have the correct service account based on your domain controller version.
-* Confirm you properly installed the AD FS role on your Windows Server 2016 based on the proper sizing of your federation, the number of relying parties, and database needs.
-* Confirm you used a certificate with the correct names as the server authentication certificate
-    * Record the expiration date of the certificate and set a renewal reminder at least six weeks before it expires that includes the:
-        * Certificate serial number
-        * Certificate thumbprint
-        * Common name of the certificate
-        * Subject alternate name of the certificate
-        * Name of the physical host server
-        * The issued date
-        * The expiration date
-        * Issuing CA Vendor (if a third-party certificate) 
-* Confirm you added the AD FS service account to the KeyAdmins group.
-* Confirm you enabled the Device Registration service.
 
+> [!div class="checklist"]
+> * Record the information about the AD FS certificate, and set a renewal reminder at least six weeks before it expires. Relevant information includes: certificate serial number, thumbprint, common name, subject alternate name, name of the physical host server, the issued date, the expiration date, and issuing CA vendor (if a third-party certificate)
+> * Confirm you added the AD FS service account to the KeyAdmins group
+> * Confirm you enabled the Device Registration service
 
-## Additional Federation Servers
+## Additional federation servers
 
-Organizations should deploy more than one federation server in their federation farm for high-availability. You should have a minimum of two federation services in your AD FS farm, however most organizations are likely to have more. This largely depends on the number of devices and users using the services provided by the AD FS farm. 
+Organizations should deploy more than one federation server in their federation farm for high-availability. You should have a minimum of two federation services in your AD FS farm, however most organizations are likely to have more. This largely depends on the number of devices and users using the services provided by the AD FS farm.
 
-### Server Authentication Certificate
+### Server authentication certificate
 
 Each server you add to the AD FS farm must have a proper server authentication certificate. Refer to the [Enroll for a TLS Server Authentication Certificate](#enroll-for-a-tls-server-authentication-certificate) section of this document to determine the requirements for your server authentication certificate. As previously stated, AD FS servers used exclusively for on-premises deployments of Windows Hello for Business can use enterprise server authentication certificates rather than server authentication certificates issued by public certificate authorities.
 
-### Install Additional Servers
+### Install additional servers
 
-Adding federation servers to the existing AD FS farm begins with ensuring the server are fully patched, to include Windows Server 2016 Update needed to support Windows Hello for Business deployments (https://aka.ms/whfbadfs1703). Next, install the Active Directory Federation Service role on the additional servers and then configure the server as an additional server in an existing farm. 
+Adding federation servers to the existing AD FS farm begins with ensuring the server are fully patched, to include Windows Server 2016 Update needed to support Windows Hello for Business deployments (https://aka.ms/whfbadfs1703). Next, install the Active Directory Federation Service role on the additional servers and then configure the server as an additional server in an existing farm.
 
-## Load Balance AD FS Federation Servers
+## Load balance AD FS
 
 Many environments load balance using hardware devices. Environments without hardware load-balancing capabilities can take advantage the network load-balancing feature included in Windows Server to load balance the AD FS servers in the federation farm. Install the Windows Network Load Balancing feature on all nodes participating in the AD FS farm that should be load balanced.
 
 ### Install Network Load Balancing Feature on AD FS Servers
 
-Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
-1. Start **Server Manager**. Click **Local Server** in the navigation pane.
-2. Click **Manage** and then click **Add Roles and Features**.
-3. Click **Next** On the **Before you begin** page.
-4. On the **Select installation type** page, select **Role-based or feature-based installation** and click **Next**.
-5. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list. Click **Next**.
-6. On the **Select server roles** page, click **Next**.
-7. Select **Network Load Balancing** on the **Select features** page.
-8. Click **Install** to start the feature installation   
-    ![Feature selection screen with NLB selected.](images/hello-nlb-feature-install.png)
+Sign-in the federation server with *Enterprise Administrator* equivalent credentials.
+
+1. Start **Server Manager**. Select **Local Server** in the navigation pane
+1. Select **Manage** and then select **Add Roles and Features**
+1. Select **Next** On the **Before you begin** page
+1. On the **Select installation type** page, select **Role-based or feature-based installation** and select **Next**
+1. On the **Select destination server** page, choose **Select a server from the server pool**. Select the federation server from the **Server Pool** list. Select **Next**
+1. On the **Select server roles** page, select **Next**
+1. Select **Network Load Balancing** on the **Select features** page
+1. Select **Install** to start the feature installation
 
 ### Configure Network Load Balancing for AD FS
 
 Before you can load balance all the nodes in the AD FS farm, you must first create a new load balance cluster. Once you have created the cluster, then you can add new nodes to that cluster.
 
-Sign-in a node of the federation farm with _Admin_ equivalent credentials.
-1. Open **Network Load Balancing Manager** from **Administrative Tools**. 
-    ![NLB Manager user interface.](images/hello-nlb-manager.png)
-2. Right-click **Network Load Balancing Clusters**, and then click **New Cluster**.
-3. To connect to the host that is to be a part of the new cluster, in the **Host** text box, type the name of the host, and then click **Connect**. 
-    ![NLB Manager - Connect to new Cluster screen.](images/hello-nlb-connect.png)
-4. Select the interface that you want to use with the cluster, and then click **Next**. (The interface hosts the virtual IP address and receives the client traffic to load balance.)
-5. In **Host Parameters**, select a value in **Priority (Unique host identifier)**. This parameter specifies a unique ID for each host. The host with the lowest numerical priority among the current members of the cluster handles all of the cluster's network traffic that is not covered by a port rule. Click **Next**.
-6. In **Cluster IP Addresses**, click **Add** and type the cluster IP address that is shared by every host in the cluster. NLB adds this IP address to the TCP/IP stack on the selected interface of all hosts that are chosen to be part of the cluster. Click **Next**. 
-    ![NLB Manager - Add IP to New Cluster screen.](images/hello-nlb-add-ip.png)
-7. In **Cluster Parameters**, select values in **IP Address** and **Subnet mask** (for IPv6 addresses, a subnet mask value is not needed). Type the full Internet name that users will use to access this NLB cluster. 
-    ![NLB Manager - Cluster IP Configuration screen.](images/hello-nlb-cluster-ip-config.png)
-8. In **Cluster operation mode**, click **Unicast** to specify that a unicast media access control (MAC) address should be used for cluster operations. In unicast mode, the MAC address of the cluster is assigned to the network adapter of the computer, and the built-in MAC address of the network adapter is not used. We recommend that you accept the unicast default settings. Click **Next**.
-9. In Port Rules, click Edit to modify the default port rules to use port 443. 
-    ![NLB Manager - Add\Edit Port Rule screen.](images/hello-nlb-cluster-port-rule.png)
+Sign-in a node of the federation farm with *Administrator* equivalent credentials.
+
+1. Open **Network Load Balancing Manager** from **Administrative Tools**
+1. Right-click **Network Load Balancing Clusters**, and then select **New Cluster**
+1. To connect to the host that is to be a part of the new cluster, in the **Host** text box, type the name of the host, and then select **Connect**
+1. Select the interface that you want to use with the cluster, and then select **Next** (the interface hosts the virtual IP address and receives the client traffic to load balance)
+1. In **Host Parameters**, select a value in **Priority (Unique host identifier)**. This parameter specifies a unique ID for each host. The host with the lowest numerical priority among the current members of the cluster handles all of the cluster's network traffic that is not covered by a port rule. Select **Next**
+1. In **Cluster IP Addresses**, select **Add** and type the cluster IP address that is shared by every host in the cluster. NLB adds this IP address to the TCP/IP stack on the selected interface of all hosts that are chosen to be part of the cluster. Select **Next**
+1. In **Cluster Parameters**, select values in **IP Address** and **Subnet mask** (for IPv6 addresses, a subnet mask value is not needed). Type the full Internet name that users will use to access this NLB cluster
+1. In **Cluster operation mode**, select **Unicast** to specify that a unicast media access control (MAC) address should be used for cluster operations. In unicast mode, the MAC address of the cluster is assigned to the network adapter of the computer, and the built-in MAC address of the network adapter is not used. We recommend that you accept the unicast default settings. Select **Next**
+1. In Port Rules, select Edit to modify the default port rules to use port 443
 
 ### Additional AD FS Servers
 
-1. To add more hosts to the cluster, right-click the new cluster, and then click **Add Host to Cluster**.
-2. Configure the host parameters (including host priority, dedicated IP addresses, and load weight) for the additional hosts by following the same instructions that you used to configure the initial host. Because you are adding hosts to an already configured cluster, all the cluster-wide parameters remain the same. 
-    ![NLB Manager - Cluster with nodes.](images/hello-nlb-cluster.png)
+1. To add more hosts to the cluster, right-click the new cluster, and then select **Add Host to Cluster**
+1. Configure the host parameters (including host priority, dedicated IP addresses, and load weight) for the additional hosts by following the same instructions that you used to configure the initial host. Because you are adding hosts to an already configured cluster, all the cluster-wide parameters remain the same
 
 ## Configure DNS for Device Registration
 
-Sign-in the domain controller or administrative workstation with domain administrator equivalent credentials. You’ll need the Federation service name to complete this task. You can view the federation service name by clicking **Edit Federation Service Properties** from the **Action** pan of the **AD FS** management console, or by using `(Get-AdfsProperties).Hostname.` (PowerShell) on the AD FS server.
-1. Open the **DNS Management** console.
-2. In the navigation pane, expand the domain controller name node and **Forward Lookup Zones**.
-3. In the navigation pane, select the node that has the name of your internal Active Directory domain name.
-4. In the navigation pane, right-click the domain name node and click **New Host (A or AAAA)**.
-5. In the **name** box, type the name of the federation service. In the **IP address** box, type the IP address of your federation server. Click **Add Host**. 
-6. Right-click the `domain_name` node and select **New Alias (CNAME)**.
-7. In the **New Resource Record** dialog box, type "enterpriseregistration" in the **Alias** name box.
-8. In the **fully qualified domain name (FQDN)** of the target host box, type `federation_service_farm_name.domain_name.com`, and click OK.
-9. Close the DNS Management console.
+Sign-in the domain controller or administrative workstation with domain administrator equivalent credentials.\
+You'll need the *federation service* name to complete this task. You can view the federation service name by selecting **Edit Federation Service Properties** from the **Action** pan of the **AD FS** management console, or by using `(Get-AdfsProperties).Hostname.` (PowerShell) on the AD FS server.
+
+1. Open the **DNS Management** console
+1. In the navigation pane, expand the domain controller name node and **Forward Lookup Zones**
+1. In the navigation pane, select the node that has the name of your internal Active Directory domain name
+1. In the navigation pane, right-click the domain name node and select **New Host (A or AAAA)**
+1. In the **name** box, type the name of the federation service. In the **IP address** box, type the IP address of your federation server. Select **Add Host**
+1. Right-click the `<domain_name>` node and select **New Alias (CNAME)**
+1. In the **New Resource Record** dialog box, type `enterpriseregistration` in the **Alias** name box
+1. In the **fully qualified domain name (FQDN)** of the target host box, type `federation_service_farm_name.<domain_name_fqdn`, and select OK
+1. Close the DNS Management console
 
 > [!NOTE]
-> If your forest has multiple UPN suffixes, please make sure that `enterpriseregistration.upnsuffix.com` is present for each suffix.
+> If your forest has multiple UPN suffixes, please make sure that `enterpriseregistration.<upnsuffix_fqdn>` is present for each suffix.
 
 ## Configure the Intranet Zone to include the federation service
 
-The Windows Hello provisioning presents web pages from the federation service. Configuring the intranet zone to include the federation service enables the user to authenticate to the federation service using integrated authentication. Without this setting, the connection to the federation service during Windows Hello provisioning prompts the user for authentication. 
+The Windows Hello provisioning presents web pages from the federation service. Configuring the intranet zone to include the federation service enables the user to authenticate to the federation service using integrated authentication. Without this setting, the connection to the federation service during Windows Hello provisioning prompts the user for authentication.
 
 ### Create an Intranet Zone Group Policy
 
 Sign-in the domain controller or administrative workstation with _Domain Admin_ equivalent credentials
 1. Start the **Group Policy Management Console** (gpmc.msc)
-2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3. Right-click **Group Policy object** and select **New**
-4. Type **Intranet Zone Settings** in the name box and click **OK**.
-5. In the content pane, right-click the **Intranet Zone Settings** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **Computer Configuration**.
-7. Expand **Administrative Templates > Windows Component > Internet Explorer > Internet Control Panel**, and select **Security Page**.
-8. In the content pane, double-click **Site to Zone Assignment List**. Click **Enable**.
-9. Click **Show**. In the **Value Name** column, type the url of the federation service beginning with https. In the **Value** column, type the number **1**. Click OK twice, then close the Group Policy Management Editor.
+1. Expand the domain and select the **Group Policy Object** node in the navigation pane
+1. Right-click **Group Policy object** and select **New**
+1. Type **Intranet Zone Settings** in the name box and select **OK**
+1. In the content pane, right-click the **Intranet Zone Settings** Group Policy object and select **Edit**
+1. In the navigation pane, expand **Policies** under **Computer Configuration**
+1. Expand **Administrative Templates > Windows Component > Internet Explorer > Internet Control Panel >Security Page**. Open **Site to Zone Assignment List**
+1. Select **Enable > Show**. In the **Value Name** column, type the url of the federation service beginning with https. In the **Value** column, type the number **1**. Select OK twice, then close the Group Policy Management Editor
 
 ### Deploy the Intranet Zone Group Policy object
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
-2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO…**
-3. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
+1. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and select **Link an existing GPO…**
+1. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and select **OK**
 
-## Review
+## Review to validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
-* Confirm all AD FS servers have a valid server authentication certificate    
-    * The subject of the certificate is the common name (FQDN) of the host or a wildcard name.
-    * The alternate name of the certificate contains a wildcard or the FQDN of the federation service
-* Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load.
-* Confirm **all** AD FS servers in the farm have the latest updates.
-* Confirm you restarted the AD FS service.
-* Confirm you created a DNS A Record for the federation service and the IP address used is the load-balanced IP address
-* Confirm you created and deployed the Intranet Zone settings to prevent double authentication to the federation server.
 
+> [!div class="checklist"]
+> * Confirm all AD FS servers have a valid server authentication certificate. The subject of the certificate is the common name (FQDN) of the host or a wildcard name. The alternate name of the certificate contains a wildcard or the FQDN of the federation service
+> * Confirm the AD FS farm has an adequate number of nodes and is properly load balanced for the anticipated load
+> * Confirm you restarted the AD FS service
+> * Confirm you created a DNS A Record for the federation service and the IP address used is the load-balanced IP address
+> * Confirm you created and deployed the Intranet Zone settings to prevent double authentication to the federation server
 
-## Follow the Windows Hello for Business on premises certificate trust deployment guide
-
-1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
-2. [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
-3. Prepare and Deploy Windows Server 2016 Active Directory Federation Services (*You are here*)
-4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
-5. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
+> [!div class="nextstepaction"]
+> [Next: validate and deploy multifactor authentication (MFA)](hello-key-trust-validate-deploy-mfa.md)
