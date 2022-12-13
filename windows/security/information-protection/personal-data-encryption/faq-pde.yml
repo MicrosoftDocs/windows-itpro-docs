@@ -5,13 +5,16 @@ metadata:
   description: Answers to common questions regarding Personal Data Encryption (PDE).
   author: frankroj
   ms.author: frankroj
-  ms.reviewer: rafals
+  ms.reviewer: rhonnegowda
   manager: aaroncz
   ms.topic: faq
   ms.prod: windows-client
   ms.technology: itpro-security
   ms.localizationpriority: medium
-  ms.date: 09/22/2022
+  ms.date: 12/13/2022
+
+# Max 5963468 OS 32516487
+# Max 6946251
 
 title: Frequently asked questions for Personal Data Encryption (PDE)
 summary: |
@@ -28,45 +31,49 @@ sections:
         answer: |
           No. It's still recommended to encrypt all volumes with BitLocker Drive Encryption for increased security.
 
-      - question: Can an IT admin specify which files should be encrypted?
+      - question: How are files protected by PDE selected?
         answer: |
-          Yes, but it can only be done using the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
+          [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) are used to select which files are protected using PDE.
 
-      - question: Do I need to use OneDrive as my backup provider?
+      - question: Do I need to use OneDrive in Microsoft 365 as my backup provider?
         answer: |
-          No. PDE doesn't have a requirement for a backup provider including OneDrive. However, backups are strongly recommended in case the keys used by PDE to decrypt files are lost. OneDrive is a recommended backup provider.
+          No. PDE doesn't have a requirement for a backup provider, including OneDrive in Microsoft 365. However, backups are recommended in case the keys used by PDE to protect files are lost. OneDrive in Microsoft 365 is a recommended backup provider.
 
       - question: What is the relation between Windows Hello for Business and PDE?
         answer: |
-          During user sign-on, Windows Hello for Business unlocks the keys that PDE uses to decrypt files.
+          During user sign-on, Windows Hello for Business unlocks the keys that PDE uses to protect files.
 
-      - question: Can a file be encrypted with both PDE and EFS at the same time?
+      - question: Can a file be protected with both PDE and EFS at the same time?
         answer: |
           No. PDE and EFS are mutually exclusive.
 
-      - question: Can PDE encrypted files be accessed after signing on via a Remote Desktop connection (RDP)?
+      - question: Can PDE protected files be accessed after signing on via a Remote Desktop connection (RDP)?
         answer: |
-          No. Accessing PDE encrypted files over RDP isn't currently supported.
+          No. Accessing PDE protected files over RDP isn't currently supported.
 
-      - question: Can PDE encrypted files be access via a network share?
+      - question: Can PDE protected files be accessed via a network share?
         answer: |
-          No. PDE encrypted files can only be accessed after signing on locally to Windows with Windows Hello for Business credentials.
+          No. PDE protected files can only be accessed after signing on locally to Windows with Windows Hello for Business credentials.
 
-      - question: How can it be determined if a file is encrypted with PDE?
+      - question: How can it be determined if a file is protected with PDE?
         answer: |
-          Encrypted files will show a padlock on the file's icon. Additionally, `cipher.exe` can be used to show the encryption state of the file.
+          - Files protected with PDE and EFS will both show a padlock on the file's icon. To verify whether a file is protected with PDE vs. EFS:
+            1. In the properties of the file, navigate to **General** > **Advanced**. The option **Encrypt contents to secure data** should be selected.
+            2. Select the **Details** button.
+            3. If the file is protected with PDE, under **Protection status:**, the item **Personal Data Encryption is:** will be marked as **On**.
+          - [`cipher.exe`](/windows-server/administration/windows-commands/cipher) can also be used to show the encryption state of the file.
 
       - question: Can users manually encrypt and decrypt files with PDE?
         answer: |
-          Currently users can decrypt files manually but they can't encrypt files manually.
+          Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section **Disable PDE and decrypt files** in [Personal Data Encryption (PDE)](overview-pde.md).
 
-      - question: If a user signs into Windows with a password instead of Windows Hello for Business, will they be able to access their PDE encrypted files?
+      - question: If a user signs into Windows with a password instead of Windows Hello for Business, will they be able to access their PDE protected files?
         answer: |
-          No. The keys used by PDE to decrypt files are protected by Windows Hello for Business credentials and will only be unlocked when signing on with Windows Hello for Business PIN or biometrics.
+          No. The keys used by PDE to protect files are protected by Windows Hello for Business credentials and will only be unlocked when signing on with Windows Hello for Business PIN or biometrics.
 
       - question: What encryption method and strength does PDE use?
         answer: |
-          PDE uses AES-CBC with a 256-bit key to encrypt files
+          PDE uses AES-CBC with a 256-bit key to encrypt files.
 
 additionalContent: |
   ## See also
