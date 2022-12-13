@@ -1,17 +1,17 @@
 ---
-title: Validate and configure the Public Key Infrastructure
-description: Validate the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
+title: Configure and validate the Public Key Infrastructure
+description: title: Configure and validate the Public Key Infrastructure the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Validate and configure the Public Key Infrastructure
+# Configure and validate the Public Key Infrastructure
 
 [!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
 
-Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.The certificate trust model extends certificate issuance to client computers. During Windows Hello for Business provisioning, the user receives a sign-in certificate.
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers. The certificate trust model extends certificate issuance to client computers. During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 
 ## Deploy an enterprise certification authority
 
@@ -129,7 +129,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-## Configure the certificate registration authority template
+### Configure the certificate registration authority template
 
 A certificate registration authority (CRA) is a trusted authority that validates certificate request. Once it validates the request, it presents the request to the certification authority (CA) for issuance. The CA issues the certificate, returns it to the CRA, which returns the certificate to the requesting user. The Windows Hello for Business on-premises certificate-based deployment uses AD FS as the CRA.
 
