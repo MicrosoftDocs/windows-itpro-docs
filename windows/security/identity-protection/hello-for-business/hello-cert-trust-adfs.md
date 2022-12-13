@@ -9,9 +9,9 @@ ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services
 
-[!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
+[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
 
-Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises key trust deployment model uses AD FS for *key registration* and *device registration*.
+Windows Hello for Business works exclusively with the Active Directory Federation Service (AD FS) role included with Windows Server. The on-premises certificate trust deployment model uses AD FS for *certificate enrollment* and *device registration*.
 
 The following guidance describes the deployment of a new instance of AD FS using the Windows Information Database (WID) as the configuration database.\
 WID is ideal for environments with no more than **30 federation servers** and no more than **100 relying party trusts**. If your environment exceeds either of these factors, or needs to provide *SAML artifact resolution*, *token replay detection*, or needs AD FS to operate as a federated provider role, then the deployment requires the use of SQL as a configuration database.\
@@ -20,21 +20,6 @@ To deploy AD FS using SQL as its configuration database, review the [Deploying a
 A new AD FS farm should have a minimum of two federation servers for proper load balancing, which can be accomplished with external networking peripherals, or with using the Network Load Balancing Role included in Windows Server.
 
 Prepare the AD FS deployment by installing and **updating** two Windows Servers.
-
-> [!NOTE]
-> For AD FS 2019 in a Windows Hello for Business hybrid certificate trust model, a known PRT issue exists. You may encounter this error in AD FS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
->
-> 1. Launch AD FS management console. Browse to "Services > Scope Descriptions".
-> 2. Right click "Scope Descriptions" and select "Add Scope Description".
-> 3. Under name type "ugs" and Click Apply > OK.
-> 4. Launch PowerShell as an administrator.
-> 5. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
-> ```PowerShell
-> (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
-> ```
-> 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
-> 7. Restart the AD FS service.
-> 8. On the client: Restart the client. User should be prompted to provision Windows Hello for Business.
 
 ## Enroll for a TLS server authentication certificate
 
@@ -136,6 +121,20 @@ Sign-in to the federation server with *Domain Administrator* equivalent credenti
 1. On the **Pre-requisite Checks** page, select **Configure**
 1. When the process completes, select **Close**
 
+> [!NOTE]
+> For AD FS 2019 and later in a certificate trust model, a known PRT issue exists. You may encounter this error in AD FS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. To remediate this error:
+>
+> 1. Launch AD FS management console. Browse to ***Services > Scope Descriptions**
+> 2. Right-click **Scope Descriptions** and select **Add Scope Description**
+> 3. Under name type *ugs* and select **Apply > OK**
+> 4. Launch PowerShell as an administrator and execute the following commands:
+> ```PowerShell
+> $id = (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
+> Set-AdfsApplicationPermission -TargetIdentifier $id -AddScope 'ugs'
+> ```
+> 7. Restart the AD FS service
+> 8. Restart the client. User should be prompted to provision Windows Hello for Business
+
 ### Add the AD FS service account to the *Key Admins* group
 
 During Windows Hello for Business enrollment, the public key is registered in an attribute of the user object in Active Directory. To ensure that the AD FS service can add and remove keys are part of its normal workflow, it must be a member of the *Key Admins* global group.
@@ -178,8 +177,7 @@ The Windows Hello for Business on-premises certificate-based deployment uses AD 
 
 Sign-in the AD FS server with *domain administrator* equivalent credentials.
 
-1. Open a **Windows PowerShell** prompt.
-2. Type the following command
+Open a **Windows PowerShell** prompt and type the following command:
 
    ```PowerShell
    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication

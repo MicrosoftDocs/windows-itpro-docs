@@ -1,13 +1,13 @@
 ---
-title: Validate and configure the Public Key Infrastructure
-description: Validate the Public Key Infrastructure when deploying Windows Hello for Business in a key trust model.
+title: Configure and validate the Public Key Infrastructure
+description: title: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a key trust model.
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Validate and configure the Public Key Infrastructure
+# Configure and validate the Public Key Infrastructure
 
 [!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
@@ -40,7 +40,9 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 If you have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure.  Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
 
-### Configure domain controller certificates
+<br>
+<details>
+<summary><b>Configure domain controller certificates</b></summary>
 
 Clients must trust the domain controllers, and to it each domain controller must have a *Kerberos Authentication* certificate. Installing a certificate on the domain controllers enables the Key Distribution Center (KDC) to prove its identity to other members of the domain. The certificates provide clients a root of trust external to the domain, namely the *enterprise certification authority*.
 
@@ -75,7 +77,12 @@ Sign in to a CA or management workstations with *Domain Admintistrator* equivale
 1. Select **OK**
 1. Close the console
 
-### Supersede existing domain controller certificates
+</details>
+
+
+<br>
+<details>
+<summary><b>Supersede existing domain controller certificates</b></summary>
 
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension. 
 
@@ -96,7 +103,11 @@ Sign in to a CA or management workstations with *Enterprise Administrator* equiv
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list. However, the certificate template and the superseding of certificate templates isn't active until the certificate template is published to one or more certificate authorities.
 
-### Configure an internal web server certificate template
+</details>
+
+<br>
+<details>
+<summary><b>Configure an internal web server certificate template</b></summary>
 
 Windows clients use the https protocol when communicating with Active Directory Federation Services (AD FS). To meet this need, you must issue a server authentication certificate to all the nodes in the AD FS farm. On-premises deployments can use a server authentication certificate issued by their enterprise PKI. You must configure a server authentication certificate template so the host running theAD FS can request the certificate.
 
@@ -129,7 +140,11 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-### Unpublish Superseded Certificate Templates
+</details>
+
+<br>
+<details>
+<summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
 The certification authority only issues certificates based on published certificate templates. For security, it's a good practice to unpublish certificate templates that the CA isn't configured to issue. This includes the pre-published certificate template from the role installation and any superseded certificate templates.
 
@@ -142,7 +157,11 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 1. Right-click the *Domain Controller* certificate template and select **Delete**. Select **Yes** on the **Disable certificate templates** window
 1. Repeat step 3 for the *Domain Controller Authentication* and *Kerberos Authentication* certificate templates
 
-### Publish certificate templates to the CA
+</details>
+
+<br>
+<details>
+<summary><b>Publish certificate templates to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -157,7 +176,11 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
    - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
 1. Close the console
 
-### Configure automatic certificate enrollment for the domain controllers
+</details>
+
+<br>
+<details>
+<summary><b>Configure automatic certificate enrollment for the domain controllers</b></summary>
 
 Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. To continue automatic enrollment and renewal of domain controller certificates, create and configure a Group Policy Object (GPO) for automatic certificate enrollment, linking the Group Policy object to the *Domain Controllers* Organizational Unit (OU).
 
@@ -175,7 +198,11 @@ Domain controllers automatically request a certificate from the *Domain controll
 1. Select **OK**
 1. Close the **Group Policy Management Editor**
 
-### Deploy the domain controller auto certificate enrollment GPO
+</details>
+
+<br>
+<details>
+<summary><b>Deploy the domain controller auto certificate enrollment GPO</b></summary>
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
