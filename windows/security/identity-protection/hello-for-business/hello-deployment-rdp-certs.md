@@ -4,22 +4,17 @@ description: Learn how to deploy certificates to cloud Kerberos trust and key tr
 ms.collection: 
   - ContentEngagementFY23
 ms.topic: article
-localizationpriority: medium
 ms.date: 11/15/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.technology: itpro-security
 ---
 
 # Deploy certificates for remote desktop (RDP) sign-in
 
 This document describes Windows Hello for Business functionalities or scenarios that apply to:\
-✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
-✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust.md), [ key trust](hello-how-it-works-technology.md#key-trust)\
-✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology.md#hybrid-azure-ad-join)
-
-<br>
-
+- **Deployment type:** [!INCLUDE [hybrid](../../includes/hello-deployment-hybrid.md)]
+- **Trust type:** [!INCLUDE [cloud-kerberos](../../includes/hello-trust-cloud-kerberos.md)],[!INCLUDE [key](../../includes/hello-trust-key.md)]
+- **Join type:** [!INCLUDE [hello-join-aadj](hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](hello-join-hybrid.md)]
 ---
 
 Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:

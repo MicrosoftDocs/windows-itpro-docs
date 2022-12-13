@@ -24,7 +24,5 @@ For information on available third-party authentication methods see [Configure A
 
 Follow the integration and deployment guide for the authentication provider you select to integrate and deploy it to AD FS. Make sure that the authentication provider is selected as a multi-factor authentication option in the AD FS authentication policy. For information on configuring AD FS authentication policies see [Configure Authentication Policies](/windows-server/identity/ad-fs/operations/configure-authentication-policies).
 
-## Follow the Windows Hello for Business on premises certificate trust deployment guide
-
 > [!div class="nextstepaction"]
 > [Next: configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)

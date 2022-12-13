@@ -1,12 +1,12 @@
 ---
-title: Azure Active Directory join cloud only deployment
-description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device.
+title: Windows Hello for Business cloud-only deployment
+description: Learn how to configure Windows Hello for Business in a cloud-only deployment scenario.
 ms.date: 06/23/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 ms.topic: article
 ---
-# Azure Active Directory join cloud only deployment
+# Cloud-only deployment
 
 [!INCLUDE [hello-hybrid-key-trust](../../includes/hello-cloud.md)]
 
