@@ -2,6 +2,7 @@
 title: Import and export VAMT data
 description: Learn how to use the VAMT to import product-activation data from a file into SQL Server.
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client

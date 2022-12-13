@@ -2,6 +2,7 @@
 title: Activate an Active Directory Forest Online (Windows 10)
 description: Use the Volume Activation Management Tool (VAMT) Active Directory-Based Activation (ADBA) function to activate an Active Directory (AD) forest online.
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
