@@ -1,13 +1,14 @@
 ---
 title: Validate and Deploy MFA for Windows Hello for Business with key trust
-description: Validate and deploy multi-factor authentication (MFA) for Windows Hello for Business in a key trust model.
+description: Validate and deploy multi-factor authentication (MFA) for Windows Hello for Business in an on-premises key trust model.
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Validate and deploy multi-factor authentication
+
+# Validate and deploy multi-factor authentication - on-premises key trust
 
 [!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 

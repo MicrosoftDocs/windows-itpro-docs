@@ -1,5 +1,5 @@
 ---
-title: Validate Active Directory prerequisites
+title: Validate Active Directory prerequisites in an on-premises key trust
 description: Validate Active Directory prerequisites when deploying Windows Hello for Business in a key trust model.
 ms.date: 12/12/2022
 appliesto: 
@@ -7,7 +7,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Validate Active Directory prerequisites
+# Validate Active Directory prerequisites - on-premises key trust
 
 [!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
