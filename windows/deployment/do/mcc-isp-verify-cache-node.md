@@ -55,7 +55,7 @@ To verify your BGP routes are correctly configured for a cache node, navigate to
 
 Verify that under **Routing Information**, the state of **BGP routes received** is True. Verify the IP space is correct. Lastly, select **Download JSON** next to **Download BGP Routes** to view the BGP routes that your cache node is currently advertising. 
 
-If **BGP routes received** is False, your **IP Space** is 0, or you are experiencing any BGP routing errors, please ensure your **ASN** and **IP address** is inputted correctly. 
+If **BGP routes received** is False, your **IP Space** is 0, or you are experiencing any BGP routing errors, please ensure your **ASN** and **IP address** is entered correctly. 
 
 ## Monitor cache node health and performance
 
