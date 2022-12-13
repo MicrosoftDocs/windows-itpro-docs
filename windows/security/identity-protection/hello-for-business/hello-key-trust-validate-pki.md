@@ -56,7 +56,7 @@ Sign in to a CA or management workstations with *Domain Admintistrator* equivale
 1. On the **Compatibility** tab:
    - Clear the **Show resulting changes** check box
    - Select **Windows Server 2016** from the **Certification Authority** list
-   - Select **Windows 10 / Windows Server 2016** from the **Certification Recipient** list
+   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
 1. On the **General** tab
    - Type *Domain Controller Authentication (Kerberos)* in Template display name
    - Adjust the validity and renewal period to meet your enterprise's needs
@@ -108,7 +108,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. On the **Compatibility** tab:
    - Clear the **Show resulting changes** check box
    - Select **Windows Server 2016** from the **Certification Authority** list
-   - Select **Windows 10 / Windows Server 2016** from the **Certification Recipient** list
+   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
 1. On the **General** tab:
    - Type *Internal Web Server* in **Template display name**
    - Adjust the validity and renewal period to meet your enterprise's needs

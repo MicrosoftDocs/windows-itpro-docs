@@ -56,7 +56,7 @@ Sign in to a CA or management workstations with *Domain Admintistrator* equivale
 1. On the **Compatibility** tab:
    - Clear the **Show resulting changes** check box
    - Select **Windows Server 2016** from the **Certification Authority** list
-   - Select **Windows 10 / Windows Server 2016** from the **Certification Recipient** list
+   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
 1. On the **General** tab
    - Type *Domain Controller Authentication (Kerberos)* in Template display name
    - Adjust the validity and renewal period to meet your enterprise's needs
@@ -108,7 +108,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. On the **Compatibility** tab:
    - Clear the **Show resulting changes** check box
    - Select **Windows Server 2016** from the **Certification Authority** list
-   - Select **Windows 10 / Windows Server 2016** from the **Certification Recipient** list
+   - Select **Windows 10 / Windows Server 2016** from the **Certificate recipient** list
 1. On the **General** tab:
    - Type *Internal Web Server* in **Template display name**
    - Adjust the validity and renewal period to meet your enterprise's needs
@@ -128,6 +128,98 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **SHA256** from the **Request hash** list
    - Select **OK**
 1. Close the console
+
+## Configure the certificate registration authority template
+
+A certificate registration authority (CRA) is a trusted authority that validates certificate request. Once it validates the request, it presents the request to the certification authority (CA) for issuance. The CA issues the certificate, returns it to the CRA, which returns the certificate to the requesting user. The Windows Hello for Business on-premises certificate-based deployment uses AD FS as the CRA.
+
+The CRA enrolls for an *enrollment agent* certificate. Once the CRA verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the CA. The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate. The CA only issues a certificate for that template if the registration authority signs the certificate request.
+
+Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
+
+1. Open the **Certification Authority** management console
+1. Right-click **Certificate Templates** and select **Manage**
+1. In the **Certificate Template Console**, right-click on the **Exchange Enrollment Agent (Offline request)** template details pane and select **Duplicate Template**
+1. On the **Compatibility** tab:
+   - Clear the **Show resulting changes** check box
+   - Select **Windows Server 2016** from the **Certification Authority** list. 
+   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
+1. On the **General** tab:
+   - Type *WHFB Enrollment Agent* in **Template display name**
+   - Adjust the validity and renewal period to meet your enterprise's needs
+1. On the **Subject** tab, select the **Supply in the request** button if it is not already selected
+
+   > [!NOTE]
+   > Group Managed Service Accounts (GMSA) do not support the *Build from this Active Directory information* option and will result in the AD FS server failing to enroll the enrollment agent certificate. You must configure the certificate template with *Supply in the request* to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
+
+1. On the **Cryptography** tab:
+   - Select **Key Storage Provider** from the **Provider Category** list
+   - Select **RSA** from the **Algorithm name** list
+   - Type *2048* in the **Minimum key size** text box
+   - Select **SHA256** from the **Request hash** list
+1. On the **Security** tab, select **Add**
+1. Select **Object Types** and select the **Service Accounts** check box. Select **OK**
+1. Type *adfssvc* in the **Enter the object names to select** text box and select **OK**
+1. Select the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section:
+   - In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission
+   - Excluding the **adfssvc** user, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared
+   - Select **OK**
+1. Close the console
+
+### Configure the Windows Hello for Business authentication certificate template
+
+During Windows Hello for Business provisioning, Windows clients request an authentication certificate from AD FS, which requests the authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template.
+
+Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
+
+1. Open the **Certification Authority** management console
+1. Right-click **Certificate Templates** and select **Manage**
+1. Right-click the **Smartcard Logon** template and choose **Duplicate Template**
+1. On the **Compatibility** tab:
+   - Clear the **Show resulting changes** check box
+   - Select **Windows Server 2016** from the **Certification Authority** list
+   - Select **Windows 10 / Windows Server 2016** from the **Certificate Recipient** list
+1. On the **General** tab:
+   - Type *WHFB Authentication* in **Template display name**
+   - Adjust the validity and renewal period to meet your enterprise's needs
+   > [!NOTE]
+   > If you use different template names, you'll need to remember and substitute these names in different portions of the deployment.
+1. On the **Cryptography** tab
+   - Select **Key Storage Provider** from the **Provider Category** list
+   - Select **RSA** from the **Algorithm name** list
+   - Type *2048* in the **Minimum key size** text box
+   - Select **SHA256** from the **Request hash** list
+1. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**
+1. On the **Issuance Requirements** tab, 
+   - Select the **This number of authorized signatures** check box. Type *1* in the text box
+   - Select **Application policy** from the **Policy type required in signature**
+   - Select **Certificate Request Agent** from in the **Application policy** list
+   - Select the **Valid existing certificate** option
+1. On the **Subject** tab, 
+   - Select the **Build from this Active Directory information** button
+   - Select **Fully distinguished name** from the **Subject name format** list
+   - Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**
+1. On the **Request Handling** tab, select the **Renew with same key** check box
+1. On the **Security** tab, select **Add**. Type *Window Hello for Business Users* in the **Enter the object names to select** text box and select **OK**
+1. Select the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section:
+   - Select the **Allow** check box for the **Enroll** permission
+   - Excluding the **Windows Hello for Business Users** group, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared
+   - Select **OK**
+1. If you previously issued Windows Hello for Business sign-in certificates using Configuration Manger and are switching to an AD FS registration authority, then on the **Superseded Templates** tab, add the previously used **Windows Hello for Business Authentication** template(s), so they will be superseded by this template for the users that have Enroll permission for this template
+1. Select on the **Apply** to save changes and close the console
+
+#### Mark the template as the Windows Hello Sign-in template
+
+Sign in to a CA or management workstations with *Enterprise Administrator* equivalent credentials
+
+Open an elevated command prompt end execute the following command
+
+```cmd
+certutil.exe -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY
+```
+
+>[!NOTE]
+>If you gave your Windows Hello for Business Authentication certificate template a different name, then replace *WHFBAuthentication* in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc). Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on your certification authority.
 
 ### Unpublish Superseded Certificate Templates
 
@@ -152,7 +244,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Expand the parent node from the navigation pane
 1. Select **Certificate Templates** in the navigation pane
 1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
-1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, and *Internal Web Server* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, *Internal Web Server*, *WHFB Enrollment Agent* and *WHFB Authentication* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
 1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
    - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
 1. Close the console
