@@ -1,5 +1,5 @@
 ---
-title: Prepare and deploy Active Directory Federation Services
+title: Prepare and deploy Active Directory Federation Services in an on-premises certificate trust
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business certificate trust model.
 ms.date: 12/12/2022
 appliesto: 
@@ -280,10 +280,6 @@ Sign-in the domain controller or administrative workstation with _Domain Admin_ 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 1. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and select **Link an existing GPO…**
 1. In the **Select GPO** dialog box, select **Intranet Zone Settings** or the name of the Windows Hello for Business Group Policy object you previously created and select **OK**
-
-## Review to validate the configuration
-
-Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
 ## Review to validate the configuration
 

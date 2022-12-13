@@ -14,7 +14,6 @@ ms.topic: tutorial
 
 Windows Hello for Business requires users perform multi-factor authentication (MFA) prior to enroll in the service. On-premises deployments can use, as MFA option:
 
-- certificates
 - third-party authentication providers for AD FS
 - custom authentication provider for AD FS
 
