@@ -1,13 +1,13 @@
 ---
 title: Configure and validate the Public Key Infrastructure
-description: title: Configure and validate the Public Key Infrastructure the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
+description: Configure and validate the Public Key Infrastructure the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Configure and validate the Public Key Infrastructure
+# Configure and validate the Public Key Infrastructure in an on-premises certificate trust model
 
 [!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
 
@@ -40,7 +40,11 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 If you have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure.  Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
 
-### Configure domain controller certificates
+Expand the following sections to configure the PKI for Windows Hello for Business.
+
+<br>
+<details>
+<summary><b>Configure domain controller certificates</b></summary>
 
 Clients must trust the domain controllers, and to it each domain controller must have a *Kerberos Authentication* certificate. Installing a certificate on the domain controllers enables the Key Distribution Center (KDC) to prove its identity to other members of the domain. The certificates provide clients a root of trust external to the domain, namely the *enterprise certification authority*.
 
@@ -75,7 +79,11 @@ Sign in to a CA or management workstations with *Domain Admintistrator* equivale
 1. Select **OK**
 1. Close the console
 
-### Supersede existing domain controller certificates
+</details>
+
+<br>
+<details>
+<summary><b>Supersede existing domain controller certificates</b></summary>
 
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension. 
 
@@ -96,7 +104,11 @@ Sign in to a CA or management workstations with *Enterprise Administrator* equiv
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list. However, the certificate template and the superseding of certificate templates isn't active until the certificate template is published to one or more certificate authorities.
 
-### Configure an internal web server certificate template
+</details>
+
+<br>
+<details>
+<summary><b>Configure an internal web server certificate template</b></summary>
 
 Windows clients use the https protocol when communicating with Active Directory Federation Services (AD FS). To meet this need, you must issue a server authentication certificate to all the nodes in the AD FS farm. On-premises deployments can use a server authentication certificate issued by their enterprise PKI. You must configure a server authentication certificate template so the host running theAD FS can request the certificate.
 
@@ -129,7 +141,11 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-### Configure the certificate registration authority template
+</details>
+
+<br>
+<details>
+<summary><b>Configure a certificate registration authority template</b></summary>
 
 A certificate registration authority (CRA) is a trusted authority that validates certificate request. Once it validates the request, it presents the request to the certification authority (CA) for issuance. The CA issues the certificate, returns it to the CRA, which returns the certificate to the requesting user. The Windows Hello for Business on-premises certificate-based deployment uses AD FS as the CRA.
 
@@ -166,7 +182,11 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **OK**
 1. Close the console
 
-### Configure the Windows Hello for Business authentication certificate template
+</details>
+
+<br>
+<details>
+<summary><b>Configure a Windows Hello for Business authentication certificate template</b></summary>
 
 During Windows Hello for Business provisioning, Windows clients request an authentication certificate from AD FS, which requests the authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template.
 
@@ -221,7 +241,12 @@ certutil.exe -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY
 >[!NOTE]
 >If you gave your Windows Hello for Business Authentication certificate template a different name, then replace *WHFBAuthentication* in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc). Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on your certification authority.
 
-### Unpublish Superseded Certificate Templates
+
+</details>
+
+<br>
+<details>
+<summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
 The certification authority only issues certificates based on published certificate templates. For security, it's a good practice to unpublish certificate templates that the CA isn't configured to issue. This includes the pre-published certificate template from the role installation and any superseded certificate templates.
 
@@ -234,7 +259,11 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 1. Right-click the *Domain Controller* certificate template and select **Delete**. Select **Yes** on the **Disable certificate templates** window
 1. Repeat step 3 for the *Domain Controller Authentication* and *Kerberos Authentication* certificate templates
 
-### Publish certificate templates to the CA
+</details>
+
+<br>
+<details>
+<summary><b>Publish certificate templates to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -248,6 +277,8 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
    - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
 1. Close the console
+
+</details>
 
 ### Configure automatic certificate enrollment for the domain controllers
 

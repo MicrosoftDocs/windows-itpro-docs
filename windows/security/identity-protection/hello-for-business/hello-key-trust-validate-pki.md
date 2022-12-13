@@ -1,13 +1,13 @@
 ---
 title: Configure and validate the Public Key Infrastructure
-description: title: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a key trust model.
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a key trust model.
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Configure and validate the Public Key Infrastructure
+# Configure and validate the Public Key Infrastructure in an on-premises key trust model
 
 [!INCLUDE [hello-on-premises-key-trust](../../includes/hello-on-premises-key-trust.md)]
 
@@ -39,6 +39,8 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 ## Configure a PKI
 
 If you have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure.  Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
+
+Expand the following sections to configure the PKI for Windows Hello for Business.
 
 <br>
 <details>
@@ -178,9 +180,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 
 </details>
 
-<br>
-<details>
-<summary><b>Configure automatic certificate enrollment for the domain controllers</b></summary>
+### Configure automatic certificate enrollment for the domain controllers
 
 Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. To continue automatic enrollment and renewal of domain controller certificates, create and configure a Group Policy Object (GPO) for automatic certificate enrollment, linking the Group Policy object to the *Domain Controllers* Organizational Unit (OU).
 
@@ -198,11 +198,7 @@ Domain controllers automatically request a certificate from the *Domain controll
 1. Select **OK**
 1. Close the **Group Policy Management Editor**
 
-</details>
-
-<br>
-<details>
-<summary><b>Deploy the domain controller auto certificate enrollment GPO</b></summary>
+### Deploy the domain controller auto certificate enrollment GPO
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
