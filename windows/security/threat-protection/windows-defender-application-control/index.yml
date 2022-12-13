@@ -4,14 +4,11 @@ title: Application Control for Windows
 metadata:
   title: Application Control for Windows
   description: Landing page for Windows Defender Application Control
-# services: service
-# ms.service: microsoft-WDAC-AppLocker
-# ms.subservice: Application-Control
-# ms.topic: landing-page
-# author: Kim Klein
-# ms.author: Jordan Geurten
-# manager: Jeffrey Sutherland
-# ms.update: 04/30/2021
+  ms.topic: landing-page
+  author: vinaypamnani-msft
+  ms.author: vinpa
+  manager: aaroncz
+  ms.date: 12/07/2022
 # linkListType: overview | how-to-guide | tutorial | video
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects

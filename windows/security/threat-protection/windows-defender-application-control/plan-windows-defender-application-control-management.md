@@ -9,13 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
 ms.date: 11/02/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management

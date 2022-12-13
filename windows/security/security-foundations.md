@@ -6,9 +6,9 @@ ms.topic: article
 manager: aaroncz
 ms.author: paoloma
 author: paolomatarazzo
-ms.collection: M365-security-compliance
 ms.prod: windows-client
 ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Windows security foundations

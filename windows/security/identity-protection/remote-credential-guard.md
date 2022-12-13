@@ -6,7 +6,6 @@ author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.collection: 
-  - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium

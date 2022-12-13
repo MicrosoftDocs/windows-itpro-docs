@@ -10,6 +10,7 @@ ms.author: lizlong
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Customize Windows 10 Start and taskbar with Group Policy

@@ -7,8 +7,6 @@ ms.date: 11/23/2022
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.collection: 
-  - M365-modern-desktop
 ms.topic: article
 ms.technology: itpro-deploy
 ---

@@ -8,6 +8,8 @@ author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.technology: itpro-configure
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Set up and test Cortana in Windows 10, version 2004 and later

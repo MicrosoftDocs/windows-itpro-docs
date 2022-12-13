@@ -14,6 +14,7 @@ ms.date:
 ms.reviewer: 
 manager: aaroncz
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Device security

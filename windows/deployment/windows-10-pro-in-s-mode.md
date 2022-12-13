@@ -6,8 +6,6 @@ ms.author: frankroj
 manager: aaroncz
 ms.localizationpriority: medium
 ms.prod: windows-client
-ms.collection: 
-  - M365-modern-desktop
 ms.topic: article
 ms.date: 11/23/2022
 ms.technology: itpro-deploy

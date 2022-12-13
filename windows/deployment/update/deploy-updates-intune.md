@@ -11,6 +11,7 @@ ms.topic: article
 ms.technology: itpro-updates
 ms.collection: 
   - highpri
+ms.date: 12/31/2017
 ---
 
 # Deploy Windows 10 updates with Intune
