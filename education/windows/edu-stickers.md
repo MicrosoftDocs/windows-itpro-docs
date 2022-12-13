@@ -14,7 +14,7 @@ ms.collection:
 
 Starting in **Windows 11 SE, version 22H2**, *Stickers* is a new feature that allows students to decorate their desktop with digital stickers. Students can choose from over 500 cheerful, education-friendly digital stickers. Stickers can be arranged, resized, and customized on top of the desktop background. Each student's stickers remain, even when the background changes.
 
-Similar to the [education theme packs](edu-themes.md), Stickers is a personalization feature that helps the device feel like it was designed for students.
+Similar to the [education theme packs](edu-themes.md "my tooltip example that opens in a new tab"), Stickers is a personalization feature that helps the device feel like it was designed for students.
 
 :::image type="content" source="./images/win-11-se-stickers.png" alt-text="Windows 11 SE desktop with 3 stickers" border="true":::
 
@@ -40,6 +40,16 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 
 [!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
 [!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+
+> [!TIP]
+> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags.
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+Content-Type: application/json
+
+{"id":"00-0000-0000-0000-000000000000","displayName":"_MSLearn_Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
+```
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
