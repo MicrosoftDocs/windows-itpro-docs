@@ -24,7 +24,7 @@ If you configure the Group Policy for computers, all users that sign-in to those
 
 ## Create the GPO
 
-Sign in to a domain controller or management workstations with *Domain Admintistrator* equivalent credentials.
+Sign in to a domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 1. Expand the domain and select the **Group Policy Object** node in the navigation pane
@@ -39,7 +39,7 @@ Sign in to a domain controller or management workstations with *Domain Admintist
 
 The best way to deploy the Windows Hello for Business Group Policy object is to use security group filtering. The enables you to easily manage the users that should receive Windows Hello for Business by simply adding them to a group. This enables you to deploy Windows Hello for Business in phases.
 
-Sign in to a domain controller or management workstations with *Domain Admintistrator* equivalent credentials.
+Sign in to a domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 1. Expand the domain and select the **Group Policy Object** node in the navigation pane
