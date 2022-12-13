@@ -22,7 +22,7 @@ On-premises certificate-based deployments of Windows Hello for Business need thr
 
 The group policy setting determines whether users are allowed, and prompted, to enroll for Windows Hello for Business. It can be configured for computers or users.
 
-If you configure the group policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the group policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business .
+If you configure the group policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the group policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business.
 
 ## Use certificate for on-premises authentication group policy setting
 
@@ -36,7 +36,7 @@ Windows Hello for Business provisioning performs the initial enrollment of the W
 
 ## Create the GPO
 
-Sign in to a domain controller or management workstations with *Domain Admintistrator* equivalent credentials.
+Sign in to a domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 1. Expand the domain and select the **Group Policy Object** node in the navigation pane
@@ -58,7 +58,7 @@ Sign in to a domain controller or management workstations with *Domain Admintist
 
 The best way to deploy the Windows Hello for Business Group Policy object is to use security group filtering. The enables you to easily manage the users that should receive Windows Hello for Business by simply adding them to a group. This enables you to deploy Windows Hello for Business in phases.
 
-Sign in to a domain controller or management workstations with *Domain Admintistrator* equivalent credentials.
+Sign in to a domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 1. Expand the domain and select the **Group Policy Object** node in the navigation pane

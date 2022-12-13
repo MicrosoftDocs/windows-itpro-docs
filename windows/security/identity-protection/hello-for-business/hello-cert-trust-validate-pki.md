@@ -52,7 +52,7 @@ Domain controllers automatically request a domain controller certificate (if pub
 
 By default, the Active Directory CA provides and publishes the *Kerberos Authentication* certificate template. The cryptography configuration included in the template is based on older and less performant cryptography APIs. To ensure domain controllers request the proper certificate with the best available cryptography, use the *Kerberos Authentication* certificate template as a *baseline* to create an updated domain controller certificate template.
 
-Sign in to a CA or management workstations with *Domain Admintistrator* equivalent credentials.
+Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Open the **Certification Authority** management console
 1. Right-click **Certificate Templates > Manage**
@@ -88,7 +88,7 @@ Sign in to a CA or management workstations with *Domain Admintistrator* equivale
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension. 
 
 The *Kerberos Authentication* certificate template is the most current certificate template designated for domain controllers, and should be the one you deploy to all your domain controllers.\
-The *autoenrollment* feature allows to replace the domain controller certificates. Use the following configuration to replace older domain controller certificates with new ones, using the *Kerberos Authentication* certificate template.
+The *autoenrollment* feature allows you to replace the domain controller certificates. Use the following configuration to replace older domain controller certificates with new ones, using the *Kerberos Authentication* certificate template.
 
 Sign in to a CA or management workstations with *Enterprise Administrator* equivalent credentials.
 
