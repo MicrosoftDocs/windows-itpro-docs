@@ -20279,6 +20279,11 @@
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-unsupported-policies.md",
       "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-preview-addendum.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-overview",
+      "redirect_document_id": true
     }
   ]
 }
