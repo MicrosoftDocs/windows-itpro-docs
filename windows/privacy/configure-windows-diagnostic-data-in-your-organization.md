@@ -333,15 +333,11 @@ In Group Policy, to enable Windows diagnostic data processor configuration, go t
 
 If you wish to disable, at any time, switch the same setting to **disabled**. The default state of the above setting is **disabled**.
 
-To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10), to deploy the Windows diagnostic data processor configuration to your supported devices, use the following custom OMA-URI setting configuration:
+To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10), to deploy the Windows diagnostic data processor configuration to your supported devices, use the following setting catalog configuration. For more information on using the settings catalog, go to [Create a policy using the settings catalog in Intune](/mem/intune/configuration/settings-catalog).
 
- - **Name:** System/AllowCommercialDataPipeline
- - **OMA-URI:** ./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline
- - **Data type:** Integer
+ - **Allow Commercial Data Pipeline** 
 
-Under **Value**, use **1** to enable the service.
-
-If you wish to disable, at any time, switch the same setting to **0**. The default value is **0**.
+This setting can be found under the **System** category in settings catalog.
 
 >[!Note]
 > - If you have any additional policies that also enable you to be a controller of Windows diagnostic data, such as the services listed below, you will need to turn off all the applicable policies in order to stop being a controller for Windows diagnostic data.
