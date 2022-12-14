@@ -4,7 +4,7 @@ description: Learn how to configure Active Directory Federation Services to supp
 ms.date: 12/12/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/en-us/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
 # Prepare and deploy Active Directory Federation Services - on-premises key trust
@@ -48,7 +48,7 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 1. Select **Next** on the **Select Certificate Enrollment Policy** page
 1. On the **Request Certificates** page, select the **Internal Web Server** check box
 1. Select the **⚠️ More information is required to enroll for this certificate. Click here to configure settings** link
-    :::image type="content" source="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
+    :::image type="content" source="images/hello-internal-web-server-cert.png" lightbox="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
 1. Under **Subject name**, select **Common Name** from the **Type** list. Type the FQDN of the computer hosting the AD FS role and then select **Add**
 1. Under **Alternative name**, select **DNS** from the **Type** list. Type the FQDN of the name that you will use for your federation services (*sts.corp.contoso.com*). The name you use here MUST match the name you use when configuring the AD FS server role. Select **Add** and **OK** when finished
 1. Select **Enroll**
@@ -141,11 +141,11 @@ Sign-in to the federation server with *Enterprise Administrator* equivalent cred
 1. In the details pane, select **Configure device registration**
 1. In the **Configure Device Registration** dialog, Select **OK**
 
-:::image type="content" source="images/adfs-device-registration.png" alt-text="AD FS device registration: configuration of the service connection point.":::
+:::image type="content" source="images/adfs-device-registration.png" lightbox="images/adfs-device-registration.png"  alt-text="AD FS device registration: configuration of the service connection point.":::
 
 Triggering device registration from AD FS, creates the service connection point (SCP) in the Active Directory configuration partition. The SCP is used to store the device registration information that Windows clients will automatically discover.
 
-:::image type="content" source="images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
+:::image type="content" source="images/adfs-scp.png" lightbox="images/adfs-scp.png" alt-text="AD FS device registration: service connection point object created by AD FS.":::
 
 ## Review to validate the AD FS and Active Directory configuration
 
