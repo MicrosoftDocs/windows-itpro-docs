@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 author: dansimp
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 05/12/2022

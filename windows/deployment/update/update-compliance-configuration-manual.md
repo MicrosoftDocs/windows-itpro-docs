@@ -7,9 +7,9 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Manually Configuring Devices for Update Compliance

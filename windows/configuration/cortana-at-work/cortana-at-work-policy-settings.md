@@ -8,6 +8,8 @@ ms.author: aaroncz
 ms.reviewer: 
 manager: dougeby
 ms.technology: itpro-configure
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization

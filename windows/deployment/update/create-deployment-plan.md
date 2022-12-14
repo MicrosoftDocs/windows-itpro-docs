@@ -5,10 +5,10 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.collection: m365initiative-coredeploy
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Create a deployment plan

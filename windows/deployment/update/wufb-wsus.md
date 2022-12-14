@@ -5,11 +5,10 @@ ms.prod: windows-client
 author: arcarley
 ms.localizationpriority: medium
 ms.author: arcarley
-ms.collection: 
-  - m365initiative-coredeploy
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Use Windows Update for Business and WSUS together
