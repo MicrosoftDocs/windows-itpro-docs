@@ -100,8 +100,6 @@
           href: references/windows-autopatch-changes-to-tenant.md
         - name: Privacy
           href: references/windows-autopatch-privacy.md
-        - name: Windows Autopatch preview addendum
-          href: references/windows-autopatch-preview-addendum.md
     - name: What's new
       href:
       items: 
