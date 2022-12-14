@@ -42,7 +42,7 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 [!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 > [!TIP]
-> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags.
+> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags<sup>[1](#footnote1)</sup>.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
@@ -50,6 +50,8 @@ Content-Type: application/json
 
 {"id":"00-0000-0000-0000-000000000000","displayName":"_MSLearn_Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
 ```
+
+<sup><a name="footnote1"></a></sup> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
