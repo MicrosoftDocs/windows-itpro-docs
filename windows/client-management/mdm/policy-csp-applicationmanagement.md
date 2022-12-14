@@ -315,6 +315,9 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 
 <!-- AllowGameDVR-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The policy is only enforced in Windows 10 for desktop.
+
 <!-- AllowGameDVR-Editable-End -->
 
 <!-- AllowGameDVR-DFProperties-Begin -->
@@ -669,6 +672,8 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!-- LaunchAppAfterLogOn-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy allows the IT admin to specify a list of applications that users can run after logging on to the device.
+
 <!-- LaunchAppAfterLogOn-Editable-End -->
 
 <!-- LaunchAppAfterLogOn-DFProperties-Begin -->
@@ -683,6 +688,18 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 <!-- LaunchAppAfterLogOn-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+For this policy to work, the Windows apps need to declare in their manifest that they'll use the startup task. 
+Example of the declaration here:
+
+**Example**:
+```xml
+<desktop:Extension Category="windows.startupTask">
+   <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" />
+</desktop:Extension>
+```
+
+> [!NOTE]
+> This policy only works on modern apps.
 <!-- LaunchAppAfterLogOn-Examples-End -->
 
 <!-- LaunchAppAfterLogOn-End -->
@@ -1118,6 +1135,40 @@ To ensure apps are up-to-date, this policy allows the admins to set a recurring 
 
 <!-- ScheduleForceRestartForUpdateFailures-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+
+> [!NOTE]
+> The check for recurrence is done in a case sensitive manner. For instance the value needs to be “Daily” instead of “daily”. The wrong case will cause SmartRetry to fail to execute.
+
+**Example**:
+<!--/SupportedValues-->
+<!--Example-->
+Sample SyncML:
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.1">
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+      <Item>
+        <Target>
+          <LocURI> ./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/ScheduleForceRestartForUpdateFailures
+          </LocURI>
+        </Target>
+        <Meta>
+          <Format xmlns="syncml:metinf">xml</Format>
+        </Meta>
+        <Data>
+          <ForceRestart StartDateTime="2018-03-28T22:21:52Z"
+                        Recurrence="[None/Daily/Weekly/Monthly]"
+                        DayOfWeek=”1”
+                        DayOfMonth=”12”
+                        RunIfTaskIsMissed=”1”/>
+        </Data>
+      </Item>
+    </Add>
+  </SyncBody>
+</SycnML>
+```
 <!-- ScheduleForceRestartForUpdateFailures-Examples-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-End -->
