@@ -1091,7 +1091,7 @@ To ensure apps are up-to-date, this policy allows the admins to set a recurring 
 <!-- ScheduleForceRestartForUpdateFailures-DFProperties-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-AllowedValues-Begin -->
-**Allowed values**:
+https://github.com/vinaypamnani-msft/windows-docs-pr
 
 <br>
 <details>
@@ -1139,9 +1139,11 @@ To ensure apps are up-to-date, this policy allows the admins to set a recurring 
 > [!NOTE]
 > The check for recurrence is done in a case sensitive manner. For instance the value needs to be “Daily” instead of “daily”. The wrong case will cause SmartRetry to fail to execute.
 
-**Example**:
+
 <!--/SupportedValues-->
 <!--Example-->
+**Examples**:
+
 Sample SyncML:
 
 ```xml
