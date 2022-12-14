@@ -24,7 +24,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Windows quality updates](../operate/windows-autopatch-wqu-overview.md) | Added information about: <ul><li>Turning off service-driven expedited quality update releases<ul><li>[MCXXXXXX](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li><li>Viewing deployed out of band releases<ul><li>[MC482178](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li></ul> |
+| [Windows quality updates](../operate/windows-autopatch-wqu-overview.md) | Added information about: <ul><li>Turning off service-driven expedited quality update releases<ul><li>[MC482178](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li><li>Viewing deployed out of band releases<ul><li>[MC484915](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul></li></ul> |
 | [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Added Roles and responsibilities article |
 | [Prerequisites](../prepare/windows-autopatch-prerequisites.md) | Added more licenses to the More about licenses section<ul><li>[MC452168](https://admin.microsoft.com/adminportal/home#/MessageCenter) |
 | [Unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md) | Updated to include other policy managers in the Group policy section |
