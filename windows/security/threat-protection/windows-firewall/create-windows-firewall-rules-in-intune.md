@@ -7,7 +7,6 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: itpro-security
 appliesto: 
@@ -16,6 +15,7 @@ appliesto:
   - ✅ <b>Windows Server 2016</b>
   - ✅ <b>Windows Server 2019</b>
   - ✅ <b>Windows Server 2022</b>
+ms.date: 12/31/2017
 ---
 
 # Create Windows Firewall rules in Intune

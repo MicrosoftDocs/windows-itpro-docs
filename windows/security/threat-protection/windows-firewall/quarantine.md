@@ -7,7 +7,6 @@ manager: aaroncz
 ms.reviewer: jekrynit
 ms.prod: windows-client
 ms.localizationpriority: normal
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: itpro-security

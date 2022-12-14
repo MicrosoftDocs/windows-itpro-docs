@@ -4,7 +4,6 @@ description: You can use an MDM like Microsoft Intune to configure Windows Defen
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa

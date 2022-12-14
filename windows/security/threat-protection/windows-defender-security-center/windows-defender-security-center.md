@@ -11,6 +11,8 @@ manager: aaroncz
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # The Windows Security app

@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Set up a single-app kiosk on Windows 10/11

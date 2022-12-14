@@ -10,6 +10,7 @@ ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection: highpri
+ms.date: 12/31/2017
 ---
 
 # Set up a multi-app kiosk on Windows 10 devices

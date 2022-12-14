@@ -9,6 +9,8 @@ ms.reviewer:
 manager: aaroncz
 ms.custom: asr
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Windows Defender Application Control and virtualization-based protection of code integrity

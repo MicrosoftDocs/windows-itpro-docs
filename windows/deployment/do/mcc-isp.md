@@ -8,7 +8,6 @@ author: amymzhou
 ms.author: amyzhou
 ms.reviewer: carmenf
 manager: aaroncz
-ms.collection: M365-modern-desktop
 ms.topic: how-to
 ms.date: 05/20/2022
 ---
