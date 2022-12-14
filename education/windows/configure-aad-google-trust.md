@@ -15,7 +15,7 @@ Once configured, users will be able to sign in to Azure AD with their Google Wor
 To configure Google Workspace as an IdP for Azure AD, the following prerequisites must be met:
 
 1. An Azure AD tenant, with one or multiple custom DNS domains (that is, domains that aren't in the format \**.onmicrosoft.com*)
-    - If the federated domain has not yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
+    - If the federated domain hasn't yet been added to Azure AD, you must have access to the DNS domain to create a DNS record. This is required to verify the ownership of the DNS namespace
     - Learn how to [Add your custom domain name using the Azure Active Directory portal](/azure/active-directory/fundamentals/add-custom-domain)
 1. Access to Azure AD with an account with the *Global Administrator* role
 1. Access to Google Workspace with an account with *super admin* privileges
@@ -42,7 +42,7 @@ To test federation, the following prerequisites must be met:
 1. On the *Service provider details* page
       - Select the option **Signed response**
       - Verify that the Name ID format is set to **PERSISTENT**
-      - Depending on how the Azure AD users have been provisioned in Azure AD, you may need to adjust the **Name ID** mapping. For more information see (article to write)
+      - Depending on how the Azure AD users have been provisioned in Azure AD, you may need to adjust the **Name ID** mapping. For more information, see (article to write)
         - If using Google auto-provisioning, select **Basic Information > Primary email**
       - Select **Continue**
 1. On the *Attribute mapping* page, map the Google attributes to the Azure AD attributes
