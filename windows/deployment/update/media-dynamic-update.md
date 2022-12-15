@@ -311,7 +311,7 @@ $WINPE_IMAGES = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim"
 Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # update WinPE
-    Write-Output "$(Get-TS): Mounting WinPE"
+    Write-Output "$(Get-TS): Mounting WinPE, image index $($IMAGE.ImageIndex)"
     Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
     # Add servicing stack update (Step 9 from the table)
