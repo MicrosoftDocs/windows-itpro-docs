@@ -1,12 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint Pre-release Disclaimer
-description: Disclaimer for pre-release version of Microsoft Defender for Endpoint.
-ms.date: 08/28/2017
-ms.reviewer: 
 author: paolomatarazzo
 ms.author: paoloma
-manager: aaroncz
-ms.prod: m365-security
+ms.date: 12/08/2022
+ms.topic: include
 ---
 
 > [!IMPORTANT]
