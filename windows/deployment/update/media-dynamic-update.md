@@ -414,6 +414,11 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Write-Output "$(Get-TS): Performing image cleanup on WinPE"
     DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
+    # If second image, save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
+    if ($IMAGE.ImageIndex -eq "2") {
+        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
+    }
+        
     # Dismount
     Dismount-WindowsImage -Path $WINPE_MOUNT -Save -ErrorAction stop | Out-Null
 
