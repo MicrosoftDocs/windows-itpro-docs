@@ -79,7 +79,7 @@ Windows Autopatch provides the option to turn off of service-driven expedited qu
 
 Windows Autopatch schedules and deploys required Out of Band (OOB) updates released outside of the normal schedule. You can view the deployed OOB quality updates in the **Release Management** blade in the **[Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431)**.
 
-**To view deployed out of band quality updates:**
+**To view deployed Out of Band quality updates:**
 
 1. Go to [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > **Windows Autopatch** > **Release management**.
 2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates.
