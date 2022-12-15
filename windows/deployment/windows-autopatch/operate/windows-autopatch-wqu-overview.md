@@ -58,6 +58,15 @@ Threat and vulnerability information about a new revision of Windows becomes ava
 
 When running an expedited release, the regular goal of 95% of devices in 21 days no longer applies. Instead, Windows Autopatch greatly accelerates the release schedule of the release to update the environment more quickly. This approach requires an updated schedule for all devices outside of the Test ring since those devices are already getting the update as quickly.
 
+### Turn off service-driven expedited quality update releases 
+
+Windows Autopatch provides the option to turn off of service-driven expedited quality updates. 
+
+**To turn off service-driven expedited quality updates:**
+
+1. Go to **[Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431)** > **Tenant administration**.
+2. Under **Windows Autopatch** > **Release management**, go to the **Release settings** tab and turn off the **Expedited Quality Updates** setting. 
+
 | Release type | Group | Deferral | Deadline | Grace period |
 | ----- | ----- | ----- | ----- | ----- |
 | Standard release | Test<p>First<p>Fast<p>Broad | 0<p>1<p>6<p>9 | 0<p>2<p>2<p>5 | 0<p>2<p>2<p>2 |
@@ -66,13 +75,25 @@ When running an expedited release, the regular goal of 95% of devices in 21 days
 > [!NOTE]
 > Windows Autopatch doesn't allow customers to request expedited releases.
 
+## Out of Band releases
+
+Windows Autopatch schedules and deploys required Out of Band (OOB) updates released outside of the normal schedule. You can view the deployed OOB quality updates in the **Release Management** blade in the **[Microsoft Endpoint Manager portal](https://go.microsoft.com/fwlink/?linkid=2109431)**. 
+
+**To view deployed OOB quality updates:**
+
+1. Go to [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Tenant administration** > **Windows Autopatch** > **Release management**.
+2. Under the **Release Announcements** tab, you can view the knowledge base (KB) articles corresponding to deployed OOB and regular Windows quality updates. 
+
+> [!Note]
+> Announcements will be **removed** from the Release announcements tab when the next quality update is released. Further, if quality updates are paused for a deployment ring, the OOB updates will also be paused.
+
 ## Pausing and resuming a release
 
 If Windows Autopatch detects a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md), we may decide to pause that release.
 
 If we pause the release, a policy will be deployed which prevents devices from updating while the issue is investigated. Once the issue is resolved, the release will be resumed.
 
-You can pause or resume a Windows quality update from the Release management tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+You can pause or resume a Windows quality update from the **Release management** tab in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 ## Incidents and outages
 
