@@ -75,6 +75,7 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Features on Demand     |         |         |  20       |
 |Add Safe OS Dynamic Update     | 6        |        |       |
 |Add Setup Dynamic Update     |         |         |         | 26
+|Add setup.exe from WinPE     |         |         |         | 27
 |Add latest cumulative update     |         | 15        | 21        |
 |Clean up the image     |  7       | 16        | 22        |
 |Add Optional Components     |         |         |  23       |
@@ -298,7 +299,7 @@ Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the main OS \sources version. If these binaries are not identical, Windows Setup will fail during installation. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -530,7 +531,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup.exe as needed, along with the latest compatibility database, and replacement component manifests.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe using the previously saved version from WinPE.
 
 ```powershell
 #
@@ -540,6 +541,10 @@ This part of the script updates the Setup files. It simply copies the individual
 # Add Setup DU by copy the files from the package into the newMedia
 Write-Output "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
+
+# Copy setup.exe from boot.wim, saved earlier.
+Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -Recurse -ErrorAction stop | Out-Null
+
 ```
 
 ### Finish up
