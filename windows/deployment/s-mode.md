@@ -51,4 +51,4 @@ The [MSIX Packaging Tool](/windows/application-management/msix-app-packaging-too
 - [Consumer applications for S mode](https://www.microsoft.com/windows/s-mode)
 - [S mode devices](https://www.microsoft.com/windows/view-all-devices)
 - [Windows Defender Application Control deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
-- [Microsoft Defender for Endpoint](/microsoft-365/windows/microsoft-defender-atp)
+- [Microsoft Defender for Endpoint documentation](/microsoft-365/security/defender-endpoint/)
