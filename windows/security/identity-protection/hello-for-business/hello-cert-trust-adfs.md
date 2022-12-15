@@ -47,7 +47,7 @@ Sign-in the federation server with *domain administrator* equivalent credentials
 1. Select **Next** on the **Select Certificate Enrollment Policy** page
 1. On the **Request Certificates** page, select the **Internal Web Server** check box
 1. Select the **⚠️ More information is required to enroll for this certificate. Click here to configure settings** link
-    :::image type="content" source="images/hello-internal-web-server-cert.png" lightbox=="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
+    :::image type="content" source="images/hello-internal-web-server-cert.png" lightbox="images/hello-internal-web-server-cert.png" alt-text="Example of Certificate Properties Subject Tab - This is what shows when you select the above link.":::
 1. Under **Subject name**, select **Common Name** from the **Type** list. Type the FQDN of the computer hosting the AD FS role and then select **Add**
 1. Under **Alternative name**, select **DNS** from the **Type** list. Type the FQDN of the name that you will use for your federation services (*sts.corp.contoso.com*). The name you use here MUST match the name you use when configuring the AD FS server role. Select **Add** and **OK** when finished
 1. Select **Enroll**
