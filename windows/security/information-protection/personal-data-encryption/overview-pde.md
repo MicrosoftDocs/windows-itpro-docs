@@ -44,15 +44,15 @@ ms.date: 12/13/2022
 
 - [Kernel-mode crash dumps  and live dumps disabled](/windows/client-management/mdm/policy-csp-memorydump#memorydump-policies)
 
-   Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect files to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps. For information on disabling crash dumps and live dumps via Intune, see [Disable kernel-mode crash dumps and live dumps](configure-pde-in-intune.md#disable-kernel-mode-crash-dumps-and-live-dumps).
+   Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps. For information on disabling crash dumps and live dumps via Intune, see [Disable kernel-mode crash dumps and live dumps](configure-pde-in-intune.md#disable-kernel-mode-crash-dumps-and-live-dumps).
 
 - [Windows Error Reporting (WER) disabled/User-mode crash dumps disabled](/windows/client-management/mdm/policy-csp-errorreporting#errorreporting-disablewindowserrorreporting)
 
-   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect files to be exposed. For greatest security, disable user-mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](configure-pde-in-intune.md#disable-windows-error-reporting-werdisable-user-mode-crash-dumps).
+   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](configure-pde-in-intune.md#disable-windows-error-reporting-werdisable-user-mode-crash-dumps).
 
 - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
 
-   Hibernation files can potentially cause the keys used by PDE to protect files to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+   Hibernation files can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 - [Allowing users to select when a password is required when resuming from connected standby disabled](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
 
@@ -70,7 +70,7 @@ ms.date: 12/13/2022
 
     - A user on a Connected Standby device can change the amount of time after the device´s screen turns off before a password is required to wake the device.
 
-    - During the time when the screen turns off but a password isn't required, the keys used by PDE to protect files could potentially be exposed. This outcome isn't a desired outcome.
+    - During the time when the screen turns off but a password isn't required, the keys used by PDE to protect content could potentially be exposed. This outcome isn't a desired outcome.
 
     Because of this undesired outcome, it's recommended to explicitly disable this policy on native Azure AD joined devices instead of leaving it at the default of not configured.
 
@@ -84,11 +84,11 @@ ms.date: 12/13/2022
 
 - Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview)
 
-   In certain scenarios such as TPM resets or destructive PIN resets, the keys used by PDE to protect files will be lost. In such scenarios, any file protected with PDE will no longer be accessible. The only way to recover such files would be from backup.
+   In certain scenarios such as TPM resets or destructive PIN resets, the keys used by PDE to protect content will be lost. In such scenarios, any content protected with PDE will no longer be accessible. The only way to recover such content would be from backup.
 
 - [Windows Hello for Business PIN reset service](../../identity-protection/hello-for-business/hello-feature-pin-reset.md)
 
-   Destructive PIN resets will cause keys used by PDE to protect files to be lost. The destructive PIN reset will make any file protected with PDE no longer accessible after a destructive PIN reset. Files protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
+   Destructive PIN resets will cause keys used by PDE to protect content to be lost. The destructive PIN reset will make any content protected with PDE no longer accessible after a destructive PIN reset. Content protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
 
 - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
@@ -96,7 +96,7 @@ ms.date: 12/13/2022
 
 ## PDE protection levels
 
-PDE uses AES-CBC with a 256-bit key to protect files and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
+PDE uses AES-CBC with a 256-bit key to protect content and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
 
 | Item | Level 1 | Level 2 |
 |---|---|---|
@@ -109,17 +109,17 @@ PDE uses AES-CBC with a 256-bit key to protect files and offers two levels of pr
 | PDE protected data is accessible via Remote Desktop session | No | No |
 | Decryption keys used by PDE discarded | After user signs out of Windows | One minute after Windows lock screen is engaged or after user signs out of Windows |
 
-## PDE protected files accessibility
+## PDE protected content accessibility
 
-When a file is protected with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access a PDE protected file, they'll be denied access to the file.
+When a file is protected with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access PDE protected content, they'll be denied access to the content.
 
-Scenarios where a user will be denied access to a PDE protected file include:
+Scenarios where a user will be denied access to PDE protected content include:
 
 - User has signed into Windows via a password instead of signing in with Windows Hello for Business biometric or PIN.
 - If protected via level 2 protection, when the device is locked.
-- When trying to access files on the device remotely. For example, UNC network paths.
+- When trying to access content on the device remotely. For example, UNC network paths.
 - Remote Desktop sessions.
-- Other users on the device who aren't owners of the file, even if they're signed in via Windows Hello for Business and have permissions to navigate to the PDE protected files.
+- Other users on the device who aren't owners of the content, even if they're signed in via Windows Hello for Business and have permissions to navigate to the PDE protected content.
 
 ## How to enable PDE
 
@@ -133,7 +133,7 @@ To enable PDE on devices, push an MDM policy to the devices with the following p
 There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-csp) available for MDM solutions that support it.
 
 > [!NOTE]
-> Enabling the PDE policy on devices only enables the PDE feature. It does not protect any files. To protect files via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which files to protect and at what level to protect the files. Additionally, the PDE APIs can't be used to protect files until the PDE policy has been enabled.
+> Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
 
 For information on enabling PDE via Intune, see [Enable Personal Data Encryption (PDE)](configure-pde-in-intune.md#enable-personal-data-encryption-pde).
 
@@ -146,7 +146,7 @@ PDE is meant to work alongside BitLocker. PDE isn't a replacement for BitLocker,
 | Release of decryption key | At user sign-in via Windows Hello for Business | At boot |
 | Decryption keys discarded | When user signs out of Windows or one minute after Windows lock screen is engaged | At reboot |
 | Files protected | Individual specified files | Entire volume/drive |
-| Authentication to access protected file | Windows Hello for Business | When BitLocker with TPM + PIN is enabled, BitLocker PIN plus Windows sign-in |
+| Authentication to access protected content | Windows Hello for Business | When BitLocker with TPM + PIN is enabled, BitLocker PIN plus Windows sign-in |
 
 ## Differences between PDE and EFS
 
@@ -164,7 +164,7 @@ For EFS protected files, under **Users who can access this file:**, there will b
 
 Encryption information including what encryption method is being used to protect the file can be obtained with the [cipher.exe /c](/windows-server/administration/windows-commands/cipher) command.
 
-## Disable PDE and decrypt files
+## Disable PDE and decrypt content
 
 Once PDE is enabled, it isn't recommended to disable it. However if PDE does need to be disabled, it can be done so via the MDM policy described in the section [How to enable PDE](#how-to-enable-pde). The value of the OMA-URI needs to be changed from **`1`** to **`0`** as follows:
 
@@ -173,7 +173,7 @@ Once PDE is enabled, it isn't recommended to disable it. However if PDE does nee
 - Data type: **Integer**
 - Value: **0**
 
-Disabling PDE doesn't decrypt any PDE protected files. It only prevents the PDE API from being able to protect any additional files. PDE protected files can be manually decrypted using the following steps:
+Disabling PDE doesn't decrypt any PDE protected content. It only prevents the PDE API from being able to protect any additional content. PDE protected files can be manually decrypted using the following steps:
 
 1. Open the properties of the file
 2. Under the **General** tab, select **Advanced...**
