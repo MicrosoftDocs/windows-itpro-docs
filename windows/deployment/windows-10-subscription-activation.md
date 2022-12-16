@@ -39,6 +39,9 @@ This article covers the following information:
 
 For more information on how to deploy Enterprise licenses, see [Deploy Windows Enterprise licenses](deploy-enterprise-licenses.md).
 
+> [!NOTE]
+> Organizations that use the [Subscription Activation](/windows/deployment/windows-10-subscription-activation) feature to enable users to upgrade from one version of Windows to another might want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f, from their device compliance policy.
+
 ## Subscription activation for Enterprise
 
 Windows Enterprise E3 and E5 are available as online services via subscription. You can deploy Windows Enterprise in your organization without keys and reboots.
