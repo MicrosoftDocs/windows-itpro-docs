@@ -14,6 +14,7 @@ ms.date: 04/30/2018
 ms.reviewer: 
 manager: aaroncz
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # Manage Windows Security in Windows 10 in S mode
