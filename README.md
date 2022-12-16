@@ -2,7 +2,7 @@
 
 ## Learn how to contribute
 
-Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then be published to [Microsoft Learn](https://learn.microsoft.com/) and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/compliance/graphs/contributors>.
+Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then be published to [Microsoft Learn](https://learn.microsoft.com/) and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/windows-docs-pr/graphs/contributors>.
 
 ### Quickly update an article using GitHub.com
 
