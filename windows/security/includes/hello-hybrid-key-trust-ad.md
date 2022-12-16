@@ -1,8 +1,12 @@
-This document describes Windows Hello for Business functionalities or scenarios that apply to:\
-✅ **Deployment type:** [hybrid](../identity-protection/hello-for-business/hello-how-it-works-technology.md#hybrid-deployment)\
-✅ **Trust type:** [key trust](../identity-protection/hello-for-business/hello-how-it-works-technology.md#key-trust)\
-✅ **Device registration type:** [Hybrid Azure AD join](../identity-protection/hello-for-business/hello-how-it-works-technology.md#hybrid-azure-ad-join)
+---
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 12/08/2022
+ms.topic: include
+---
 
-<br>
-
+[!INCLUDE [hello-intro](hello-intro.md)]
+- **Deployment type:** [!INCLUDE [hello-deployment-hybrid](hello-deployment-hybrid.md)]
+- **Trust type:** [!INCLUDE [hello-trust-key](hello-trust-key.md)]
+- **Join type:** [!INCLUDE [hello-join-hybrid](hello-join-hybrid.md)]
 ---

@@ -1,12 +1,8 @@
 ---
-title: Perform a Machine Action via the Microsoft Defender for Endpoint API
-description: This page focuses on performing a machine action via the Microsoft Defender for Endpoint API.
-ms.date: 08/28/2017
-ms.reviewer: 
 author: paolomatarazzo
 ms.author: paoloma
-manager: aaroncz
-ms.prod: m365-security
+ms.date: 12/08/2022
+ms.topic: include
 ---
 
 >[!Note]
