@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4818(S): Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy.

@@ -12,6 +12,7 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5031(F): The Windows Firewall Service blocked an application from accepting incoming connections on the network.

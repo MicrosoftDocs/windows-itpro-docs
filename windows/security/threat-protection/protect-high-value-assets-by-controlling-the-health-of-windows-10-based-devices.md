@@ -9,6 +9,7 @@ author: dulcemontemayor
 ms.date: 10/13/2017
 ms.localizationpriority: medium
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Control the health of Windows 10-based devices

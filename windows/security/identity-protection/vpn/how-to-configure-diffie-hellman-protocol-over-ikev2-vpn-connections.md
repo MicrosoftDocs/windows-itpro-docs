@@ -12,6 +12,7 @@ appliesto:
   - ✅ <b>Windows 10</b>
   - ✅ <b>Windows 11</b>
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # How to configure Diffie Hellman protocol over IKEv2 VPN connections
