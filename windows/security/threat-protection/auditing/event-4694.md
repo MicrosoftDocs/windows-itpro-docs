@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4694(S, F): Protection of auditable protected data was attempted.

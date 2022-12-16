@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5027(F): The Windows Firewall Service was unable to retrieve the security policy from the local storage. The service will continue enforcing the current policy.

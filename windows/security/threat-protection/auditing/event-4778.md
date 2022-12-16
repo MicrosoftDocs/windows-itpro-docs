@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4778(S): A session was reconnected to a Window Station.

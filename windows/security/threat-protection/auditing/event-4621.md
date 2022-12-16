@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4621(S): Administrator recovered system from CrashOnAuditFail.

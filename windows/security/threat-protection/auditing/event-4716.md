@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4716(S): Trusted domain information was modified.
