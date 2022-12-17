@@ -12,11 +12,11 @@ Contributors who only make infrequent or small updates can edit the file directl
 2. Browse to the page you want to edit on Microsoft Learn.
 3. On the right-hand side of the page, click **Edit** (pencil icon).
 
-   ![Edit button on Microsoft Learn.](compliance/media/quick-update-edit.png)
+   ![Edit button on Microsoft Learn.](https://learn.microsoft.com/compliance/media/quick-update-edit.png)
 
 4. The corresponding topic file on GitHub opens, where you need to click the **Edit this file** pencil icon.
 
-   ![Edit button on github.com.](compliance/media/quick-update-github.png)
+   ![Edit button on github.com.](https://learn.microsoft.com/compliance/media/quick-update-github.png)
 
 5. The topic opens in a line-numbered editing page where you can make changes to the file. Files in GitHub are written and edited using Markdown language. For help on using Markdown, see [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). Select the **Preview changes** tab to view your changes as you go.
 
@@ -27,15 +27,15 @@ Contributors who only make infrequent or small updates can edit the file directl
 
    When you're ready, click the green **Propose file change** button.
 
-   ![Propose file change section.](compliance/media/propose-file-change.png)
+   ![Propose file change section.](https://learn.microsoft.com/compliance/media/propose-file-change.png)
 
 7. On the **Comparing changes** page that appears, click the green **Create pull request** button.
 
-   ![Comparing changes page.](compliance/media/comparing-changes-page.png)
+   ![Comparing changes page.](https://learn.microsoft.com/compliance/media/comparing-changes-page.png)
 
 8. On the **Open a pull request** page that appears, click the green **Create pull request** button.
 
-   ![Open a pull request page.](compliance/media/open-a-pull-request-page.png)
+   ![Open a pull request page.](https://learn.microsoft.com/compliance/media/open-a-pull-request-page.png)
 
 > [!NOTE]
 > Your permissions in the repo determine what you see in the last several steps. People with no special privileges will see the **Propose file change** section and subsequent confirmation pages as described. People with permissions to create and approve their own pull requests will see a similar **Commit changes** section with extra options for creating a new branch and fewer confirmation pages.<br/><br/>The point is: click any green buttons that are presented to you until there are no more.
