@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # How to get a list of XML data name elements in EventData

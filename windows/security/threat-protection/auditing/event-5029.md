@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5029(F): The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy.
