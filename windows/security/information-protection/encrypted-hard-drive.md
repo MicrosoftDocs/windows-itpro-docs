@@ -8,6 +8,7 @@ ms.prod: windows-client
 author: frankroj
 ms.date: 11/08/2022
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Encrypted Hard Drive

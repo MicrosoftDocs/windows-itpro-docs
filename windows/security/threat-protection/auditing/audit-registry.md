@@ -13,6 +13,7 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 ms.date: 01/05/2021
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Registry

@@ -1,18 +1,10 @@
 ---
 title: Hide notifications from the Windows Security app
 description: Prevent Windows Security app notifications from appearing on user endpoints
-keywords: defender, security center, app, notifications, av, alerts
-search.product: eADQiWindows 10XVcnh
 ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 
-ms.reviewer: 
-manager: aaroncz
+ms.date: 12/31/2018
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -21,8 +13,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10 and later
 
 The Windows Security app is used by many Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 

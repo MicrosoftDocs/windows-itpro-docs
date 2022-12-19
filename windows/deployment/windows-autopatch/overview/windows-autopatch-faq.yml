@@ -11,6 +11,7 @@ metadata:
   author: tiaraquan
   ms.author: tiaraquan
   ms.reviwer: hathind
+  ms.technology: itpro-updates
 title: Frequently Asked Questions about Windows Autopatch
 summary: This article answers frequently asked questions about Windows Autopatch.
 sections:
@@ -45,7 +46,9 @@ sections:
           - [Azure Active Directory (Azure AD) Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
           - [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
           - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)
-          Additional pre-requisites for devices managed by Configuration Manager: 
+          
+          Additional prerequisites for devices managed by Configuration Manager: 
+
           - [Configuration Manager Co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements)
           - [A supported version of Configuration Manager](/mem/configmgr/core/servers/manage/updates#supported-versions)
           - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
