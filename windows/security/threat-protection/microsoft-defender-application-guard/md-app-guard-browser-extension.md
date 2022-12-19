@@ -10,6 +10,7 @@ ms.reviewer:
 manager: aaroncz
 ms.custom: asr
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Microsoft Defender Application Guard Extension

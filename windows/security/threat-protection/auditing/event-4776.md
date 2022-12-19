@@ -14,6 +14,7 @@ ms.author: vinpa
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+ms.topic: reference
 ---
 
 # 4776(S, F): The computer attempted to validate the credentials for an account.
