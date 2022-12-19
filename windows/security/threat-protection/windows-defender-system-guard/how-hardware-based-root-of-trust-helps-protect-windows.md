@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 03/01/2019
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10

@@ -11,6 +11,7 @@ ms.reviewer:
 manager: aaroncz
 ms.collection: 
   - highpri
+ms.topic: conceptual
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM

@@ -14,6 +14,7 @@ ms.author: vinpa
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+ms.topic: reference
 ---
 
 # 4625(F): An account failed to log on.

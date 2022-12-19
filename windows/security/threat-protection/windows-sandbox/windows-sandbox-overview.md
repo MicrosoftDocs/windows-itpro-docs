@@ -8,13 +8,11 @@ manager: aaroncz
 ms.collection: 
   - highpri
 ms.topic: article
-ms.localizationpriority: 
-ms.date: 
-ms.reviewer: 
+ms.date: 6/30/2022
 ms.technology: itpro-security
 ---
 
-# Windows Sandbox 
+# Windows Sandbox
 
 Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software installed inside the Windows Sandbox environment remains "sandboxed" and runs separately from the host machine.
 
