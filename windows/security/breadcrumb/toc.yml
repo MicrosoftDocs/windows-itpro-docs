@@ -10,3 +10,6 @@ items:
     - name: Security
       tocHref: /windows-server/security/credentials-protection-and-management/
       topicHref: /windows/security/
+    - name: Security
+      tocHref: /windows-server/identity/laps/
+      topicHref: /windows/security/
