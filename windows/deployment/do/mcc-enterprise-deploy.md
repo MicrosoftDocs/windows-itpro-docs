@@ -4,10 +4,10 @@ manager: dougeby
 description: How to deploy Microsoft Connected Cache (MCC) for Enterprise and Education cache node
 ms.prod: windows-client
 author: amymzhou
-ms.localizationpriority: medium
 ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017
+ms.technology: itpro-updates
 ---
 
 # Deploying your cache node
