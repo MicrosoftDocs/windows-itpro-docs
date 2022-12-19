@@ -2,15 +2,14 @@
 title: Don't Remove images under do/images/elixir_ux - used by Azure portal Diagnose/Solve feature UI
 manager: aaroncz
 description: Elixir images read me file
-keywords: updates, downloads, network, bandwidth
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 audience: itpro
 author: nidos
-ms.localizationpriority: medium
 ms.author: nidos
 ms.topic: article
 ms.date: 12/31/2017
+ms.technology: itpro-updates
 ---
 
 # Read Me
