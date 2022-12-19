@@ -1,16 +1,15 @@
 ---
 title: Set up Delivery Optimization
-ms.reviewer: 
-manager: dougeby
 description: In this article, learn how to set up Delivery Optimization.
-ms.prod: windows-client
 author: carmenf
-ms.localizationpriority: medium
 ms.author: carmenf
-ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.reviewer: mstewart
+manager: aaroncz
+ms.prod: windows-client
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.localizationpriority: medium
+ms.topic: how-to
+ms.date: 12/19/2022
 ---
 
 # Set up Delivery Optimization for Windows
@@ -28,7 +27,7 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 
 You will find the Delivery Optimization settings in Group Policy under **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization**.
 
-Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows).
+Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/mem/intune/configuration/delivery-optimization-windows).
 
 **Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
@@ -68,7 +67,7 @@ For this scenario, grouping devices by domain allows devices to be included in p
 
 To do this in Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DODownloadMode to 1 or 2.
+To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DODownloadMode](/windows/client-management/mdm/policy-csp-deliveryoptimization#dodownloadmode) to 1 or 2.
 
 ### Hub and spoke topology with boundary groups
 
@@ -76,10 +75,10 @@ The default download mode setting is **1**; this means all devices breaking out 
 
 To do this in Group Policy go to ****Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DODownloadMode** to **2**.
+To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DODownloadMode](/windows/client-management/mdm/policy-csp-deliveryoptimization#dodownloadmode) to **2**.
 
 > [!NOTE]
-> For more about using Delivery Optimization with Configuration Manager boundary groups, see [Delivery Optmization](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization).
+> For more information about using Delivery Optimization with Configuration Manager boundary groups, see [Delivery Optmization](/mem/configmgr/core/plan-design/hierarchy/fundamental-concepts-for-content-management#delivery-optimization).
 
 ### Large number of mobile devices
 
@@ -87,7 +86,7 @@ If you have a mobile workforce with a great many mobile devices, set Delivery Op
 
 To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60.
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinBatteryPercentageAllowedToUpload** to 60.
+To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMinBatteryPercentageAllowedToUpload](/windows/client-management/mdm/policy-csp-deliveryoptimization#dominbatterypercentageallowedtoupload) to 60.
 
 ### Plentiful free space and large numbers of devices
 
@@ -97,7 +96,7 @@ Many devices now come with large internal drives. You can set Delivery Optimizat
 
 To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 10 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinFileSizeToCache** to 100 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
+To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMinFileSizeToCache](/windows/client-management/mdm/policy-csp-deliveryoptimization#dominfilesizetocache) to 100 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
 
 ### Lab scenario
 
@@ -105,7 +104,7 @@ In a lab situation, you typically have a large number of devices that are plugge
 
 To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **604800** (7 days) or more (up to 30 days).
 
-To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
+To do this with MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set [DOMaxCacheAge](/windows/client-management/mdm/policy-csp-deliveryoptimization#domaxcacheage) to 7 or more (up to 30 days).
 
 
 <!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
