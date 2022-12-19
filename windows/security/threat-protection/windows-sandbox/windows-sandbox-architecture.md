@@ -5,17 +5,14 @@ ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.collection: 
 ms.topic: article
-ms.localizationpriority: 
-ms.date: 
-ms.reviewer: 
+ms.date: 6/30/2022
 ms.technology: itpro-security
 ---
 
 # Windows Sandbox architecture
 
-Windows Sandbox benefits from new container technology in Windows to achieve a combination of security, density, and performance that isn't available in traditional VMs.
+Windows Sandbox benefits from new container technology in Windows to achieve a combination of security, density, and performance that isn't available in traditional VMs.
 
 ## Dynamically generated image
 
