@@ -33,7 +33,7 @@ ms.date: 12/13/2022
 
 ### Not supported with PDE
 
-- [FIDO/security key authentication](../../identity-protection/hello-for-business/microsoft-compatible-security-key.md)
+- [FIDO/security key authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
   - For information on disabling ARSO via Intune, see [Disable Winlogon automatic restart sign-on (ARSO)](configure-pde-in-intune.md#disable-winlogon-automatic-restart-sign-on-arso)).
 - [Windows Information Protection (WIP)](../windows-information-protection/protect-enterprise-data-using-wip.md)
