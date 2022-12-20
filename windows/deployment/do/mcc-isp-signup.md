@@ -25,10 +25,15 @@ This article details the process of signing up for Microsoft Connected Cache for
 ## Prerequisites
 
 Before you begin sign up, ensure you have the following components:
-- **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You will need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, [visit this page](https://azure.microsoft.com/offers/ms-azr-0003p/).
-- **Access to Azure portal**: Ensure you have the credentials needed to access your organization's Azure portal.
-- **Peering DB**: Ensure your organization's [Peering DB](https://www.peeringdb.com/) page is up-to-date and active. Check that the NOC email listed is accurate, and that you have access to this email. 
-- **Server**: Ensure the server you wish to install Microsoft Connected Cache on is ready, and that the server is installed Ubuntu 20.04 LTS.
+
+1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You will need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, [visit this page](https://azure.microsoft.com/offers/ms-azr-0003p/).
+
+1. **Access to Azure portal**: Ensure you have the credentials needed to access your organization's Azure portal.
+
+1. **Peering DB**: Ensure your organization's [Peering DB](https://www.peeringdb.com/) page is up-to-date and active. Check that the NOC email listed is accurate, and that you have access to this email. 
+
+1. **Server**: Ensure the server you wish to install Microsoft Connected Cache on is ready, and that the server is installed on Ubuntu 20.04 LTS.
+1. **Configure cache drive**: Make sure that you have a data drive configured with full permissions on your server. You'll need to specify the location for this cache drive during the cache node configuration process. The minimum size for the data drive is 100 GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk).
 
 ## Resource creation and sign up process  
 
@@ -51,7 +56,7 @@ Before you begin sign up, ensure you have the following components:
 
    :::image type="content" source="images/mcc-isp-operator-verification.png" alt-text="Screenshot of the sign up verification page on Azure portal for Microsoft Connected Cache." lightbox="./images/mcc-isp-operator-verification.png":::
 
-   **Can't find the verification email in your inbox?** Check your NOC email is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: **Here’s your Microsoft Connected Cache verification code** in your Spam folders. 
+   **Can't find the verification email in your inbox?** Check your NOC email is correct in [Peering DB](https://www.peeringdb.com/). Search for an email from the sender **microsoft-noreply@microsoft.com** with the email subject: **Here’s your Microsoft Connected Cache verification code** in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender **microsoft-noreply@microsoft.com**.
 
 1. Once verified, follow the instructions in [Create, provision, and deploy cache node](mcc-isp-create-provision-deploy.md) to create your cache node.
 
