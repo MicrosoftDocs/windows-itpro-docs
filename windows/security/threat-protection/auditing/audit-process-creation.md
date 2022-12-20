@@ -13,6 +13,7 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 ms.date: 03/16/2022
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Process Creation

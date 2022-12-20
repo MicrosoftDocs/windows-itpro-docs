@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5032(F): Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.

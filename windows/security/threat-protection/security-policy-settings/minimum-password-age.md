@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.date: 11/13/2018
 ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Minimum password age

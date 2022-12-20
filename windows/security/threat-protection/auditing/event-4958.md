@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4958(F): Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer.
