@@ -313,9 +313,9 @@
       - name: Windows Hello for Business
         href: identity-protection/hello-for-business/index.yml
       - name: FIDO 2 security keys
-        href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
+        href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=/windows/security/context/context
     - name: Windows Local Administrator Password Solution (LAPS)
-      href: /windows-server/identity/laps/laps-overview?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
+      href: /windows-server/identity/laps/laps-overview?context=/windows/security/context/context
     - name: Enterprise Certificate Pinning
       href: identity-protection/enterprise-certificate-pinning.md
     - name: Credential Guard
