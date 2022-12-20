@@ -20288,12 +20288,12 @@
     {
       "source_path": "windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key.md",
       "redirect_url": "/azure/active-directory/authentication/howto-authentication-passwordless-security-key",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/hello-for-business/reset-security-key.md",
       "redirect_url": "/azure/active-directory/authentication/howto-authentication-passwordless-security-key",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
