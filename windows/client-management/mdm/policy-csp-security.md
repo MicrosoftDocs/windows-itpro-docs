@@ -1,515 +1,626 @@
 ---
-title: Policy CSP - Security
-description: Learn how the Policy CSP - Security setting can specify whether to allow the runtime configuration agent to install provisioning packages.
+title: Security Policy CSP
+description: Learn more about the Security Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/19/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Security-Begin -->
 # Policy CSP - Security
 
-<hr/>
+<!-- Security-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Security-Editable-End -->
 
-<!--Policies-->
-## Security policies
+<!-- AllowAddProvisioningPackage-Begin -->
+## AllowAddProvisioningPackage
 
-<dl>
-  <dd>
-    <a href="#security-allowaddprovisioningpackage">Security/AllowAddProvisioningPackage</a>
-  </dd>
-  <dd>
-    <a href="#security-allowautomaticdeviceencryptionforazureadjoineddevices">Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
-  </dd>
-  <dd>
-    <a href="#security-allowremoveprovisioningpackage">Security/AllowRemoveProvisioningPackage</a>
-  </dd>
-  <dd>
-    <a href="#security-cleartpmifnotready">Security/ClearTPMIfNotReady</a>
-  </dd>
-  <dd>
-    <a href="#security-configurewindowspasswords">Security/ConfigureWindowsPasswords</a>
-  </dd>
-  <dd>
-    <a href="#security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
-  </dd>
-  <dd>
-    <a href="#security-recoveryenvironmentauthentication">Security/RecoveryEnvironmentAuthentication</a>
-  </dd>
-  <dd>
-    <a href="#security-requiredeviceencryption">Security/RequireDeviceEncryption</a>
-  </dd>
-  <dd>
-    <a href="#security-requireprovisioningpackagesignature">Security/RequireProvisioningPackageSignature</a>
-  </dd>
-  <dd>
-    <a href="#security-requireretrievehealthcertificateonboot">Security/RequireRetrieveHealthCertificateOnBoot</a>
-  </dd>
-</dl>
+<!-- AllowAddProvisioningPackage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowAddProvisioningPackage-Applicability-End -->
 
-<hr/>
+<!-- AllowAddProvisioningPackage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/AllowAddProvisioningPackage
+```
+<!-- AllowAddProvisioningPackage-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="security-allowaddprovisioningpackage"></a>**Security/AllowAddProvisioningPackage**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowAddProvisioningPackage-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies whether to allow the runtime configuration agent to install provisioning packages.
+<!-- AllowAddProvisioningPackage-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowAddProvisioningPackage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAddProvisioningPackage-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowAddProvisioningPackage-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowAddProvisioningPackage-DFProperties-End -->
 
-<hr/>
+<!-- AllowAddProvisioningPackage-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowAddProvisioningPackage-AllowedValues-End -->
 
-<!--Description-->
+<!-- AllowAddProvisioningPackage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAddProvisioningPackage-Examples-End -->
+
+<!-- AllowAddProvisioningPackage-End -->
+
+<!-- AllowManualRootCertificateInstallation-Begin -->
+## AllowManualRootCertificateInstallation
+
 > [!NOTE]
->
-> - This policy is deprecated in Windows 10, version 1607.
+> This policy is deprecated and may be removed in a future release.
 
-Specifies whether to allow automatic [device encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
+<!-- AllowManualRootCertificateInstallation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowManualRootCertificateInstallation-Applicability-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowManualRootCertificateInstallation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/AllowManualRootCertificateInstallation
+```
+<!-- AllowManualRootCertificateInstallation-OmaUri-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowManualRootCertificateInstallation-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowManualRootCertificateInstallation-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowManualRootCertificateInstallation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowManualRootCertificateInstallation-Editable-End -->
 
-<hr/>
+<!-- AllowManualRootCertificateInstallation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="security-allowremoveprovisioningpackage"></a>**Security/AllowRemoveProvisioningPackage**
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowManualRootCertificateInstallation-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowManualRootCertificateInstallation-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowManualRootCertificateInstallation-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowManualRootCertificateInstallation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowManualRootCertificateInstallation-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowManualRootCertificateInstallation-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowRemoveProvisioningPackage-Begin -->
+## AllowRemoveProvisioningPackage
 
-<hr/>
+<!-- AllowRemoveProvisioningPackage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowRemoveProvisioningPackage-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowRemoveProvisioningPackage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/AllowRemoveProvisioningPackage
+```
+<!-- AllowRemoveProvisioningPackage-OmaUri-End -->
+
+<!-- AllowRemoveProvisioningPackage-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies whether to allow the runtime configuration agent to remove provisioning packages.
+<!-- AllowRemoveProvisioningPackage-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowRemoveProvisioningPackage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRemoveProvisioningPackage-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowRemoveProvisioningPackage-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowRemoveProvisioningPackage-DFProperties-End -->
 
-<hr/>
+<!-- AllowRemoveProvisioningPackage-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="security-cleartpmifnotready"></a>**Security/ClearTPMIfNotReady**
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowRemoveProvisioningPackage-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowRemoveProvisioningPackage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRemoveProvisioningPackage-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowRemoveProvisioningPackage-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AntiTheftMode-Begin -->
+## AntiTheftMode
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
 
-> [!div class = "checklist"]
-> * Device
+<!-- AntiTheftMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AntiTheftMode-Applicability-End -->
 
-<hr/>
+<!-- AntiTheftMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/AntiTheftMode
+```
+<!-- AntiTheftMode-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AntiTheftMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AntiTheftMode-Description-End -->
 
-Admin access is required. The prompt will appear on first admin logon after a reboot, when the TPM is in a non-ready state that can be remediated with a TPM Clear. The prompt will have a description of what clearing the TPM does and that it requires a reboot. The user can dismiss it, but it will appear on next admin logon after restart.
+<!-- AntiTheftMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AntiTheftMode-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Configure the system to clear the TPM if it is not in a ready state.*
--   GP name: *ClearTPMIfNotReady_Name*
--   GP path: *System/Trusted Platform Module Services*
--   GP ADMX file name: *TPM.admx*
+<!-- AntiTheftMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AntiTheftMode-DFProperties-End -->
 
--   0 (default) – Won't force recovery from a non-ready TPM state.
--   1 – Will prompt to clear the TPM, if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
+<!-- AntiTheftMode-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AntiTheftMode-AllowedValues-End -->
 
-<hr/>
+<!-- AntiTheftMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AntiTheftMode-Examples-End -->
 
-<!--Policy-->
-<a href="" id="security-configurewindowspasswords"></a>**Security/ConfigureWindowsPasswords**
+<!-- AntiTheftMode-End -->
 
-<!--SupportedSKUs-->
+<!-- ClearTPMIfNotReady-Begin -->
+## ClearTPMIfNotReady
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ClearTPMIfNotReady-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- ClearTPMIfNotReady-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClearTPMIfNotReady-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/ClearTPMIfNotReady
+```
+<!-- ClearTPMIfNotReady-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClearTPMIfNotReady-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the system to prompt the user to clear the TPM if the TPM is detected to be in any state other than Ready. This policy will take effect only if the system’s TPM is in a state other than Ready, including if the TPM is “Ready, with reduced functionality”. The prompt to clear the TPM will start occurring after the next reboot, upon user login only if the logged in user is part of the Administrators group for the system. The prompt can be dismissed, but will reappear after every reboot and login until the policy is disabled or until the TPM is in a Ready state.
+<!-- ClearTPMIfNotReady-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ClearTPMIfNotReady-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClearTPMIfNotReady-Editable-End -->
 
-<hr/>
+<!-- ClearTPMIfNotReady-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-Configures the use of passwords for Windows features.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ClearTPMIfNotReady-DFProperties-End -->
 
-> [!Note]
-> This policy is only supported in Windows 10 S.
+<!-- ClearTPMIfNotReady-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Will not force recovery from a non-ready TPM state. |
+| 1 | Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear. |
+<!-- ClearTPMIfNotReady-AllowedValues-End -->
 
--  0 -Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features).
--  1- Allow passwords (Passwords continue to be allowed to be used for Windows features).
--  2- Default (Feature defaults as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords").
+<!-- ClearTPMIfNotReady-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | ClearTPMIfNotReady_Name |
+| Friendly Name | Configure the system to clear the TPM if it is not in a ready state. |
+| Location | Computer Configuration |
+| Path | System > Trusted Platform Module Services |
+| Registry Key Name | Software\Policies\Microsoft\TPM |
+| Registry Value Name | ClearTPMIfNotReadyGP |
+| ADMX File Name | TPM.admx |
+<!-- ClearTPMIfNotReady-GpMapping-End -->
 
-<hr/>
+<!-- ClearTPMIfNotReady-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClearTPMIfNotReady-Examples-End -->
 
-<!--Policy-->
-<a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**
+<!-- ClearTPMIfNotReady-End -->
 
-<!--SupportedSKUs-->
+<!-- ConfigureWindowsPasswords-Begin -->
+## ConfigureWindowsPasswords
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureWindowsPasswords-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureWindowsPasswords-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureWindowsPasswords-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/ConfigureWindowsPasswords
+```
+<!-- ConfigureWindowsPasswords-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureWindowsPasswords-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configures the use of passwords for Windows features
+<!-- ConfigureWindowsPasswords-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureWindowsPasswords-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureWindowsPasswords-Editable-End -->
 
-<hr/>
+<!-- ConfigureWindowsPasswords-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 2 |
+<!-- ConfigureWindowsPasswords-DFProperties-End -->
 
-Added in Windows 10, version 1607 to replace the deprecated policy **Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**.
+<!-- ConfigureWindowsPasswords-AllowedValues-Begin -->
+**Allowed values**:
 
-Specifies whether to allow automatic [device encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
+| Value | Description |
+|:--|:--|
+| 0 | -Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features) |
+| 1 | Allow passwords (Passwords continue to be allowed to be used for Windows features) |
+| 2 (Default) | as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords") |
+<!-- ConfigureWindowsPasswords-AllowedValues-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ConfigureWindowsPasswords-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureWindowsPasswords-Examples-End -->
 
--   0 (default) – Encryption enabled.
--   1 – Encryption disabled.
+<!-- ConfigureWindowsPasswords-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Begin -->
+## PreventAutomaticDeviceEncryptionForAzureADJoinedDevices
 
-<hr/>
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="security-recoveryenvironmentauthentication"></a>**Security/RecoveryEnvironmentAuthentication**
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices
+```
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether to allow automatic device encryption during OOBE when the device is Azure AD joined.
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/SupportedSKUs-->
-<hr/>
+For more information, see [BitLocker Device Encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Editable-End -->
 
-> [!div class = "checklist"]
-> * User
-> * Device
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy controls the Admin Authentication requirement in RecoveryEnvironment.
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-AllowedValues-Begin -->
+**Allowed values**:
 
-Supported values:
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Encryption enabled. |
+| 1 | Encryption disabled. |
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-AllowedValues-End -->
 
--  0 - Default: Keep using default(current) behavior.
--  1 - RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment.
--  2 - NoRequireAuthentication: Admin Authentication isn't required for components in RecoveryEnvironment.
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-Examples-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- PreventAutomaticDeviceEncryptionForAzureADJoinedDevices-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- RecoveryEnvironmentAuthentication-Begin -->
+## RecoveryEnvironmentAuthentication
 
-<!--/Example-->
-<!--Validation-->
+<!-- RecoveryEnvironmentAuthentication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- RecoveryEnvironmentAuthentication-Applicability-End -->
+
+<!-- RecoveryEnvironmentAuthentication-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Security/RecoveryEnvironmentAuthentication
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/RecoveryEnvironmentAuthentication
+```
+<!-- RecoveryEnvironmentAuthentication-OmaUri-End -->
+
+<!-- RecoveryEnvironmentAuthentication-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy controls the requirement of Admin Authentication in RecoveryEnvironment.
+<!-- RecoveryEnvironmentAuthentication-Description-End -->
+
+<!-- RecoveryEnvironmentAuthentication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
 **Validation procedure**
 
-The validation requires a check whether Refresh ("Keep my files") and Reset ("Remove everything") requires admin authentication in WinRE.
-The process of starting Push Button Reset (PBR) in WinRE:
+To validate this policy, check whether Refresh ("Keep my files") and Reset ("Remove everything") require administraor authentication in Windows Recovery Environment (WinRE).
 
-1. Open a cmd as Administrator, run command "reagentc /boottore" and restart the OS to boot to WinRE.
-1. OS should boot to the blue screen of WinRE UI, go through TroubleShoot -> Reset this PC, it should show two options: "Keep my files" and "Remove everything".
+1. First, start Push Button Reset (PBR) in WinRE. Open a command prompt as an administrator and run the following command: `reagentc /boottore`
+1. The device should restart to WinRE. In the WinRE interface, go to **Troubleshoot** and select **Reset this PC**. You should see two options: **Keep my files** and **Remove everything**.
+1. Choose the option to **Keep my files**. View the behavior for authentication.
+1. Select the back arrow and choose **Remove everything**. View the behavior for authentication.
 
-If the MDM policy is set to "Default" (0) or doesn't exist, the admin authentication flow should work as default behavior:
+    Instead of going back, alternatively you can go through the reset options, and select **Cancel** on the final confirmation page. It will then return to the main WinRE interface.
 
-1. Start PBR in WinRE, choose "Keep my files", it should pop up admin authentication.
-1. Click "<-" (right arrow) button and choose "Remove everything", it shouldn't pop up admin authentication and just go to PBR options.
+The following table shows what behavior is expected for the policy settings with each scenario:
 
-If the MDM policy is set to "RequireAuthentication" (1)
+- :heavy_check_mark: It prompts for authentication.
+- :x: No authentication required, and it continues with the reset options.
 
-1. Start PBR in WinRE, choose "Keep my files", it should pop up admin authentication.
-1. Click "<-" (right arrow) button and choose "Remove everything", it should also pop up admin authentication.
+| Policy                         | **Keep my files**  | **Remove everything** |
+|--------------------------------|--------------------|-----------------------|
+| Default (`0`)                  | :heavy_check_mark: | :x:                   |
+| RequireAuthentication" (`1`)   | :heavy_check_mark: | :heavy_check_mark:    |
+| NoRequireAuthentication" (`2`) | :x:                | :x:                   |
 
-If the MDM policy is set to "NoRequireAuthentication" (2)
+<!-- RecoveryEnvironmentAuthentication-Editable-End -->
 
-1. Start PBR in WinRE, choose "Keep my files", it shouldn't pop up admin authentication.
-1. Go through PBR options and click "cancel" at final confirmation page, wait unit the UI is back.
-1. Click "TroubleShoot" -> "Reset this PC" again, choose "Remove everything", it shouldn't pop up admin authentication neither.
+<!-- RecoveryEnvironmentAuthentication-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RecoveryEnvironmentAuthentication-DFProperties-End -->
 
-<hr/>
+<!-- RecoveryEnvironmentAuthentication-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | current) behavior |
+| 1 | RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment |
+| 2 | NoRequireAuthentication: Admin Authentication is not required for components in RecoveryEnvironment |
+<!-- RecoveryEnvironmentAuthentication-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- RecoveryEnvironmentAuthentication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RecoveryEnvironmentAuthentication-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RecoveryEnvironmentAuthentication-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequireDeviceEncryption-Begin -->
+## RequireDeviceEncryption
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequireDeviceEncryption-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- RequireDeviceEncryption-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RequireDeviceEncryption-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption
+```
+<!-- RequireDeviceEncryption-OmaUri-End -->
 
-<hr/>
+<!-- RequireDeviceEncryption-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows enterprise to turn on internal storage encryption. Most restricted value is 1.
 
-<!--/Scope-->
-<!--Description-->
-Allows enterprise to turn on internal storage encryption.
+**Important**: If encryption has been enabled, it cannot be turned off by using this policy.
+<!-- RequireDeviceEncryption-Description-End -->
 
-Most restricted value is 1.
+<!-- RequireDeviceEncryption-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireDeviceEncryption-Editable-End -->
 
-> [!IMPORTANT]
-> If encryption has been enabled, it cannot be turned off by using this policy.
+<!-- RequireDeviceEncryption-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireDeviceEncryption-DFProperties-End -->
 
--   0 (default) – Encryption isn't required.
--   1 – Encryption is required.
+<!-- RequireDeviceEncryption-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Encryption is not required. |
+| 1 | Encryption is required. |
+<!-- RequireDeviceEncryption-AllowedValues-End -->
 
-<hr/>
+<!-- RequireDeviceEncryption-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireDeviceEncryption-Examples-End -->
 
-<!--Policy-->
-<a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**
+<!-- RequireDeviceEncryption-End -->
 
-<!--SupportedSKUs-->
+<!-- RequireProvisioningPackageSignature-Begin -->
+## RequireProvisioningPackageSignature
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequireProvisioningPackageSignature-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- RequireProvisioningPackageSignature-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequireProvisioningPackageSignature-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/RequireProvisioningPackageSignature
+```
+<!-- RequireProvisioningPackageSignature-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- RequireProvisioningPackageSignature-Description-Begin -->
+<!-- Description-Source-DDF -->
 Specifies whether provisioning packages must have a certificate signed by a device trusted authority.
+<!-- RequireProvisioningPackageSignature-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- RequireProvisioningPackageSignature-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireProvisioningPackageSignature-Editable-End -->
 
--   0 (default) – Not required.
--   1 – Required.
+<!-- RequireProvisioningPackageSignature-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireProvisioningPackageSignature-DFProperties-End -->
 
-<hr/>
+<!-- RequireProvisioningPackageSignature-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="security-requireretrievehealthcertificateonboot"></a>**Security/RequireRetrieveHealthCertificateOnBoot**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not required. |
+| 1 | Required. |
+<!-- RequireProvisioningPackageSignature-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- RequireProvisioningPackageSignature-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireProvisioningPackageSignature-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequireProvisioningPackageSignature-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequireRetrieveHealthCertificateOnBoot-Begin -->
+## RequireRetrieveHealthCertificateOnBoot
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequireRetrieveHealthCertificateOnBoot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- RequireRetrieveHealthCertificateOnBoot-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RequireRetrieveHealthCertificateOnBoot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Security/RequireRetrieveHealthCertificateOnBoot
+```
+<!-- RequireRetrieveHealthCertificateOnBoot-OmaUri-End -->
 
-<hr/>
+<!-- RequireRetrieveHealthCertificateOnBoot-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots. Setting this policy to 1 (Required):Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2. 0. Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS), when a device boots or reboots.
+**Note**: We recommend that this policy is set to Required after MDM enrollment. Most restricted value is 1.
+<!-- RequireRetrieveHealthCertificateOnBoot-Description-End -->
 
-Setting this policy to 1 (Required):
+<!-- RequireRetrieveHealthCertificateOnBoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireRetrieveHealthCertificateOnBoot-Editable-End -->
 
--   Determines whether a device is capable of Remote Device Health Attestation, by verifying if the device has TPM 2.0.
--   Improves the performance of the device by enabling the device to fetch and cache data to reduce the latency during Device Health Verification.
+<!-- RequireRetrieveHealthCertificateOnBoot-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!NOTE]
-> We recommend that this policy is set to Required after MDM enrollment.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireRetrieveHealthCertificateOnBoot-DFProperties-End -->
 
-Most restricted value is 1.
+<!-- RequireRetrieveHealthCertificateOnBoot-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not required. |
+| 1 | Required. |
+<!-- RequireRetrieveHealthCertificateOnBoot-AllowedValues-End -->
 
--   0 (default) – Not required.
--   1 – Required.
+<!-- RequireRetrieveHealthCertificateOnBoot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireRetrieveHealthCertificateOnBoot-Examples-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- RequireRetrieveHealthCertificateOnBoot-End -->
 
+<!-- Security-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Security-CspMoreInfo-End -->
 
-<!--/Policies-->
+<!-- Security-End -->
 
-## Related topics
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
