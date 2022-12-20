@@ -4,7 +4,7 @@ description: If you want to use certificates for on-premises single-sign on for 
 ms.date: 08/19/2018
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.topic: how-to
 ---
 
 # Using Certificates for AADJ On-premises Single-sign On

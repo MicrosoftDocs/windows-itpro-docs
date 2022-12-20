@@ -4,7 +4,7 @@ description: Before adding Azure Active Directory (Azure AD) joined devices to y
 ms.date: 01/14/2021
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.topic: article
+ms.topic: how-to
 ---
 # Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
 

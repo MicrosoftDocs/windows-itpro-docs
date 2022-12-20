@@ -306,7 +306,7 @@
   items:
     - name: Overview
       href: identity.md
-    - name: Windows Hello for Business
+    - name: Windows Hello for Business >>
       href: identity-protection/hello-for-business/index.yml
     - name: Windows credential theft mitigation guide
       href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
