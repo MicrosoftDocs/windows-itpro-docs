@@ -137,9 +137,9 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Senso.Cloud`                             | 2021.11.15.0      | Win32    | `Senso.Cloud`                  |
 | `Smoothwall Monitor`                      | 2.8.0             | Win32    | `Smoothwall Ltd`               |
 | `SuperNova Magnifier & Screen Reader`     | 21.02             | Win32    | `Dolphin Computer Access`      |
-| `SuperNova Magnifier & Speech`            | 21.02             | Win32    | `Dolphin Computer Access`      |  
-| `VitalSourceBookShelf` 	                  | 10.2.26.0         | Win32    | `VitalSource Technologies Inc` | 
-| `Winbird`                                 |	19                | Win32    | `Winbird Co., Ltd.`            |           
+| `SuperNova Magnifier & Speech`            | 21.02             | Win32    | `Dolphin Computer Access`      |
+| `VitalSourceBookShelf` 	                  | 10.2.26.0         | Win32    | `VitalSource Technologies Inc` |
+| `Winbird`                                 |	19                | Win32    | `Winbird Co., Ltd.`            |
 | `WordQ` 	                                | 5.4.23            | Win32    | `Mathetmots`                   |
 | `Zoom`                                    | 5.12.8 (10232)    | Win32    | `Zoom`                         |
 | `ZoomText Fusion`                         | 2022.2109.10      | Win32    | `Freedom Scientific`           |
