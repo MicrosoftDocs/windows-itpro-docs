@@ -28,35 +28,9 @@
     - name: Cloud Kerberos trust deployment
       href: hello-hybrid-cloud-kerberos-trust.md
     - name: Key trust deployment
-      items: 
-      - name: Overview
-        href: hello-hybrid-key-trust.md
-      - name: Prerequisites
-        href: hello-hybrid-key-trust-prereqs.md
-      - name: New installation baseline
-        href: hello-hybrid-key-new-install.md
-      - name: Configure directory synchronization
-        href: hello-hybrid-key-trust-dirsync.md
-      - name: Configure Azure AD device registration
-        href: hello-hybrid-key-trust-devreg.md
-      - name: Configure Windows Hello for Business settings
-        items:
-        - name: Overview
-          href: hello-hybrid-key-whfb-settings.md
-        - name: Configure Active Directory
-          href: hello-hybrid-key-whfb-settings-ad.md
-        - name: Configure Azure AD Connect Sync
-          href: hello-hybrid-key-whfb-settings-dir-sync.md
-        - name: Configure PKI
-          href: hello-hybrid-key-whfb-settings-pki.md
-        - name: Configure Group Policy settings
-          href: hello-hybrid-key-whfb-settings-policy.md
-      - name: Sign-in and provision Windows Hello for Business
-        href: hello-hybrid-key-whfb-provision.md
-      - name: On-premises SSO for Azure AD joined devices
-        href: hello-hybrid-aadj-sso.md
-      - name: Configure Azure AD joined devices for on-premises SSO
-        href: hello-hybrid-aadj-sso-base.md
+      href: hello-hybrid-key-trust.md
+    - name: New installation baseline
+      href: hello-hybrid-key-new-install.md
     - name: Certificate trust deployment
       items: 
       - name: Overview
@@ -83,12 +57,12 @@
           href: hello-hybrid-cert-whfb-settings-policy.md
       - name: Sign-in and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
-      - name: On-premises SSO for Azure AD joined devices
-        href: hello-hybrid-aadj-sso.md
-      - name: Configure Azure AD joined devices for on-premises SSO
-        href: hello-hybrid-aadj-sso-base.md
       - name: Using certificates for on-premises SSO
         href: hello-hybrid-aadj-sso-cert.md
+    - name: On-premises SSO for Azure AD joined devices
+      href: hello-hybrid-aadj-sso.md
+    - name: Configure Azure AD joined devices for on-premises SSO
+      href: hello-hybrid-aadj-sso-base.md
     - name: Planning for Domain Controller load
       href: hello-adequate-domain-controllers.md
   - name: On-premises deployments
