@@ -1,111 +1,125 @@
 ---
-title: Policy CSP - NetworkListManager
-description: Policy CSP - NetworkListManager is a setting creates a new MDM policy. This setting allows admins to configure a list of URIs of HTTPS endpoints that are considered secure.
+title: NetworkListManager Policy CSP
+description: Learn more about the NetworkListManager Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/20/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 12/16/2021
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- NetworkListManager-Begin -->
 # Policy CSP - NetworkListManager
 
-<hr/>
+<!-- NetworkListManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NetworkListManager-Editable-End -->
 
-<!--Policies-->
-## NetworkListManager policies
+<!-- AllowedTlsAuthenticationEndpoints-Begin -->
+## AllowedTlsAuthenticationEndpoints
 
-<dl>
-  <dd>
-    <a href="#networklistmanager-allowedtlsauthenticationendpoints">NetworkListManager/AllowedTlsAuthenticationEndpoints</a>
-  </dd>
-  <dd>
-    <a href="#networklistmanager-configuredtlsauthenticationnetworkname">NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
-  </dd>
-</dl>
+<!-- AllowedTlsAuthenticationEndpoints-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- AllowedTlsAuthenticationEndpoints-Applicability-End -->
 
-<hr/>
+<!-- AllowedTlsAuthenticationEndpoints-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/NetworkListManager/AllowedTlsAuthenticationEndpoints
+```
+<!-- AllowedTlsAuthenticationEndpoints-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="networklistmanager-allowedtlsauthenticationendpoints"></a>**NetworkListManager/AllowedTlsAuthenticationEndpoints**
+<!-- AllowedTlsAuthenticationEndpoints-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of URLs (seperated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+<!-- AllowedTlsAuthenticationEndpoints-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowedTlsAuthenticationEndpoints-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Machine
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
-
-When entering a list of TLS endpoints in Microsoft Intune, you must follow this format, even in the UI:
+When entering a list of TLS endpoints in Microsoft Intune, use the following format, even in the UI:
 
 `<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>`
 
-- The HTTPS endpoint must not have any more authentication checks, such as login or multi-factor authentication.
+- The HTTPS endpoint must not have any more authentication checks, such as sign-in or multi-factor authentication.
 
-- The HTTPS endpoint must be an internal address not accessible from outside the corporate network.
+- The HTTPS endpoint must be an internal address not accessible from outside the organizational network.
 
 - The client must trust the server certificate. So the CA certificate that the HTTPS server certificate chains to must be present in the client machine's root certificate store.
 
 - A certificate shouldn't be a public certificate.
 
+<!-- AllowedTlsAuthenticationEndpoints-Editable-End -->
 
-<hr/>
+<!-- AllowedTlsAuthenticationEndpoints-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="networklistmanager-configuredtlsauthenticationnetworkname"></a>**NetworkListManager/ConfiguredTLSAuthenticationNetworkName**
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AllowedTlsAuthenticationEndpoints-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowedTlsAuthenticationEndpoints-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowedTlsAuthenticationEndpoints-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowedTlsAuthenticationEndpoints-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfiguredTlsAuthenticationNetworkName-Begin -->
+## ConfiguredTlsAuthenticationNetworkName
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfiguredTlsAuthenticationNetworkName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- ConfiguredTlsAuthenticationNetworkName-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Machine
+<!-- ConfiguredTlsAuthenticationNetworkName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/NetworkListManager/ConfiguredTlsAuthenticationNetworkName
+```
+<!-- ConfiguredTlsAuthenticationNetworkName-OmaUri-End -->
 
-<hr/>
+<!-- ConfiguredTlsAuthenticationNetworkName-Description-Begin -->
+<!-- Description-Source-DDF -->
+The string will be used to name the network authenticated against one of the endpoints listed in AllowedTlsAuthenticationEndpoints policy
+<!-- ConfiguredTlsAuthenticationNetworkName-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting provides the string that is to be used to name a network. That network is authenticated against one of the endpoints that are listed in NetworkListManager/AllowedTlsAuthenticationEndpoints policy. If this setting is used for Trusted Network Detection in an _Always On_ VPN profile, it must be the DNS suffix that is configured in the TrustedNetworkDetection attribute.
+<!-- ConfiguredTlsAuthenticationNetworkName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<hr/>
+This policy setting provides the string that names a network. If this setting is used for Trusted Network Detection in an Always On VPN profile, it must be the DNS suffix that is configured in the TrustedNetworkDetection attribute.
 
-<!--/Policies-->
+<!-- ConfiguredTlsAuthenticationNetworkName-Editable-End -->
+
+<!-- ConfiguredTlsAuthenticationNetworkName-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfiguredTlsAuthenticationNetworkName-DFProperties-End -->
+
+<!-- ConfiguredTlsAuthenticationNetworkName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfiguredTlsAuthenticationNetworkName-Examples-End -->
+
+<!-- ConfiguredTlsAuthenticationNetworkName-End -->
+
+<!-- NetworkListManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- NetworkListManager-CspMoreInfo-End -->
+
+<!-- NetworkListManager-End -->
 
 ## Related articles
 

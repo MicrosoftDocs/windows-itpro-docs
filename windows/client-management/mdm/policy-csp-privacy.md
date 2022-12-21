@@ -1,4418 +1,5533 @@
 ---
-title: Policy CSP - Privacy
-description: Learn how the Policy CSP - Privacy setting allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
+title: Privacy Policy CSP
+description: Learn more about the Privacy Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/20/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Privacy-Begin -->
 # Policy CSP - Privacy
 
+<!-- Privacy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Privacy-Editable-End -->
 
-<hr/>
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Begin -->
+## AllowAutoAcceptPairingAndPrivacyConsentPrompts
 
-<!--Policies-->
-## Privacy policies
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#privacy-allowautoacceptpairingandprivacyconsentprompts">Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</a>
-  </dd>
-  <dd>
-    <a href="#privacy-allowcrossdeviceclipboard">Privacy/AllowCrossDeviceClipboard</a>
-  </dd>
-  <dd>
-    <a href="#privacy-allowinputpersonalization">Privacy/AllowInputPersonalization</a>
-  </dd>
-  <dd>
-    <a href="#privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
-  </dd>
-  <dd>
-    <a href="#privacy-disableprivacyexperience">Privacy/DisablePrivacyExperience</a>
-  </dd>
-  <dd>
-    <a href="#privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessaccountinfo">Privacy/LetAppsAccessAccountInfo</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessaccountinfo-forceallowtheseapps">Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessaccountinfo-forcedenytheseapps">Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessaccountinfo-userincontroloftheseapps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessbackgroundspatialperception">Privacy/LetAppsAccessBackgroundSpatialPerception</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscalendar-forceallowtheseapps">Privacy/LetAppsAccessCalendar_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscalendar-forcedenytheseapps">Privacy/LetAppsAccessCalendar_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscalendar-userincontroloftheseapps">Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscallhistory">Privacy/LetAppsAccessCallHistory</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscallhistory-forceallowtheseapps">Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscallhistory-forcedenytheseapps">Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscallhistory-userincontroloftheseapps">Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscamera">Privacy/LetAppsAccessCamera</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscamera-forceallowtheseapps">Privacy/LetAppsAccessCamera_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscamera-forcedenytheseapps">Privacy/LetAppsAccessCamera_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscamera-userincontroloftheseapps">Privacy/LetAppsAccessCamera_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscontacts">Privacy/LetAppsAccessContacts</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscontacts-forceallowtheseapps">Privacy/LetAppsAccessContacts_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscontacts-forcedenytheseapps">Privacy/LetAppsAccessContacts_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesscontacts-userincontroloftheseapps">Privacy/LetAppsAccessContacts_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessemail">Privacy/LetAppsAccessEmail</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessemail-forceallowtheseapps">Privacy/LetAppsAccessEmail_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessemail-forcedenytheseapps">Privacy/LetAppsAccessEmail_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessemail-userincontroloftheseapps">Privacy/LetAppsAccessEmail_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessgazeinput">Privacy/LetAppsAccessGazeInput</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessgazeinput-forceallowtheseapps">Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessgazeinput-forcedenytheseapps">Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessgazeinput-userincontroloftheseapps">Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesslocation">Privacy/LetAppsAccessLocation</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesslocation-forceallowtheseapps">Privacy/LetAppsAccessLocation_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesslocation-forcedenytheseapps">Privacy/LetAppsAccessLocation_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesslocation-userincontroloftheseapps">Privacy/LetAppsAccessLocation_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmessaging">Privacy/LetAppsAccessMessaging</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmessaging-forceallowtheseapps">Privacy/LetAppsAccessMessaging_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmessaging-forcedenytheseapps">Privacy/LetAppsAccessMessaging_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmessaging-userincontroloftheseapps">Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmicrophone">Privacy/LetAppsAccessMicrophone</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmicrophone-forceallowtheseapps">Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmicrophone-forcedenytheseapps">Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmicrophone-userincontroloftheseapps">Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmotion">Privacy/LetAppsAccessMotion</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmotion-forceallowtheseapps">Privacy/LetAppsAccessMotion_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmotion-forcedenytheseapps">Privacy/LetAppsAccessMotion_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessmotion-userincontroloftheseapps">Privacy/LetAppsAccessMotion_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessnotifications">Privacy/LetAppsAccessNotifications</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessnotifications-forceallowtheseapps">Privacy/LetAppsAccessNotifications_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessnotifications-forcedenytheseapps">Privacy/LetAppsAccessNotifications_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessnotifications-userincontroloftheseapps">Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessphone">Privacy/LetAppsAccessPhone</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessphone-forceallowtheseapps">Privacy/LetAppsAccessPhone_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessphone-forcedenytheseapps">Privacy/LetAppsAccessPhone_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessphone-userincontroloftheseapps">Privacy/LetAppsAccessPhone_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessradios">Privacy/LetAppsAccessRadios</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessradios-forceallowtheseapps">Privacy/LetAppsAccessRadios_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessradios-forcedenytheseapps">Privacy/LetAppsAccessRadios_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccessradios-userincontroloftheseapps">Privacy/LetAppsAccessRadios_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstasks">Privacy/LetAppsAccessTasks</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstasks-forceallowtheseapps">Privacy/LetAppsAccessTasks_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstasks-forcedenytheseapps">Privacy/LetAppsAccessTasks_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstasks-userincontroloftheseapps">Privacy/LetAppsAccessTasks_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstrusteddevices">Privacy/LetAppsAccessTrustedDevices</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstrusteddevices-forceallowtheseapps">Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstrusteddevices-forcedenytheseapps">Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsaccesstrusteddevices-userincontroloftheseapps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsactivatewithvoice">Privacy/LetAppsActivateWithVoice</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsactivatewithvoiceabovelock">Privacy/LetAppsActivateWithVoiceAboveLock</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsgetdiagnosticinfo-forceallowtheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsgetdiagnosticinfo-forcedenytheseapps">Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps">Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsruninbackground">Privacy/LetAppsRunInBackground</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsruninbackground-forceallowtheseapps">Privacy/LetAppsRunInBackground_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsruninbackground-forcedenytheseapps">Privacy/LetAppsRunInBackground_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappsruninbackground-userincontroloftheseapps">Privacy/LetAppsRunInBackground_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappssyncwithdevices">Privacy/LetAppsSyncWithDevices</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappssyncwithdevices-forceallowtheseapps">Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappssyncwithdevices-forcedenytheseapps">Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-letappssyncwithdevices-userincontroloftheseapps">Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps</a>
-  </dd>
-  <dd>
-    <a href="#privacy-publishuseractivities">Privacy/PublishUserActivities</a>
-  </dd>
-  <dd>
-    <a href="#privacy-uploaduseractivities">Privacy/UploadUserActivities</a>
-  </dd>
-</dl>
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts
+```
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
 
-> [!NOTE]
-> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
+**Note**: There were issues reported with the previous release of this policy and a fix was Most restricted value is 0.
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Description-End -->
+
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Editable-End -->
+
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-DFProperties-End -->
+
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-AllowedValues-End -->
+
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Examples-End -->
+
+<!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-End -->
+
+<!-- AllowCrossDeviceClipboard-Begin -->
+## AllowCrossDeviceClipboard
+
+<!-- AllowCrossDeviceClipboard-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- AllowCrossDeviceClipboard-Applicability-End -->
 
-Most restricted value is 0.
+<!-- AllowCrossDeviceClipboard-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/AllowCrossDeviceClipboard
+```
+<!-- AllowCrossDeviceClipboard-OmaUri-End -->
+
+<!-- AllowCrossDeviceClipboard-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether Clipboard contents can be synchronized across devices.
+If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
+If you disable this policy setting, Clipboard contents cannot be shared to other devices.
+Policy change takes effect immediately.
+<!-- AllowCrossDeviceClipboard-Description-End -->
+
+<!-- AllowCrossDeviceClipboard-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+Most restrictive value is `0` to not allow cross-device clipboard.
+
+<!-- AllowCrossDeviceClipboard-Editable-End -->
+
+<!-- AllowCrossDeviceClipboard-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCrossDeviceClipboard-DFProperties-End -->
+
+<!-- AllowCrossDeviceClipboard-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowCrossDeviceClipboard-AllowedValues-End -->
+
+<!-- AllowCrossDeviceClipboard-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowCrossDeviceClipboard |
+| Friendly Name | Allow Clipboard synchronization across devices |
+| Location | Computer Configuration |
+| Path | System > OS Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | AllowCrossDeviceClipboard |
+| ADMX File Name | OSPolicy.admx |
+<!-- AllowCrossDeviceClipboard-GpMapping-End -->
+
+<!-- AllowCrossDeviceClipboard-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCrossDeviceClipboard-Examples-End -->
+
+<!-- AllowCrossDeviceClipboard-End -->
+
+<!-- AllowInputPersonalization-Begin -->
+## AllowInputPersonalization
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowInputPersonalization-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowInputPersonalization-Applicability-End -->
 
--   0 (default)– Not allowed.
--   1 – Allowed.
+<!-- AllowInputPersonalization-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/AllowInputPersonalization
+```
+<!-- AllowInputPersonalization-OmaUri-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowInputPersonalization-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy specifies whether users on the device have the option to enable online speech recognition services.
 
-<hr/>
+If this policy is enabled or not configured, control is deferred to users, and users may choose whether to enable speech services via settings.
+
+If this policy is disabled, speech services will be disabled, and users cannot enable speech services via settings.
+<!-- AllowInputPersonalization-Description-End -->
 
-<!--Policy-->
-<a href="" id="privacy-allowcrossdeviceclipboard"></a>**Privacy/AllowCrossDeviceClipboard**
+<!-- AllowInputPersonalization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--SupportedSKUs-->
+Updated in Windows 10, version 1809.
+
+When enabled, users can use their voice for dictation, and talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft uses voice input to help improve speech services.
+
+The most restrictive value is `0` to not allow speech services.
+
+<!-- AllowInputPersonalization-Editable-End -->
+
+<!-- AllowInputPersonalization-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowInputPersonalization-DFProperties-End -->
+
+<!-- AllowInputPersonalization-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Choice deferred to user's preference. |
+<!-- AllowInputPersonalization-AllowedValues-End -->
+
+<!-- AllowInputPersonalization-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowInputPersonalization |
+| Friendly Name | Allow users to enable online speech recognition services |
+| Location | Computer Configuration |
+| Path | Control Panel > Regional and Language Options |
+| Registry Key Name | Software\Policies\Microsoft\InputPersonalization |
+| Registry Value Name | AllowInputPersonalization |
+| ADMX File Name | Globalization.admx |
+<!-- AllowInputPersonalization-GpMapping-End -->
+
+<!-- AllowInputPersonalization-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowInputPersonalization-Examples-End -->
+
+<!-- AllowInputPersonalization-End -->
+
+<!-- DisableAdvertisingId-Begin -->
+## DisableAdvertisingId
+
+<!-- DisableAdvertisingId-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- DisableAdvertisingId-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access. Also, when this is allowed, a new clipboard item on the cloud is downloaded to a device so that user can paste on the device.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow Clipboard synchronization across devices*
--   GP name: *AllowCrossDeviceClipboard*
--   GP path: *System/OS Policies*
--   GP ADMX file name: *OSPolicy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-0 – Not allowed.
-1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Updated in Windows 10, version 1809. This policy specifies whether users on the device have the option to enable online speech recognition. When enabled, users can use their voice for dictation, and talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft will use voice input to help improve our speech services. If the policy value is set to 0, online speech recognition will be disabled and users cannot enable online speech recognition via settings. If policy value is set to 1 or is not configured, control is deferred to users.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow input personalization*
--   GP name: *AllowInputPersonalization*
--   GP path: *Control Panel/Regional and Language Options*
--   GP ADMX file name: *Globalization.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Choice deferred to user's preference.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Enables or disables the Advertising ID.
-
-Most restricted value is 0.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Turn off the advertising ID*
--   GP name: *DisableAdvertisingId*
--   GP path: *System/User Profiles*
--   GP ADMX file name: *UserProfiles.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Disabled.
--   1 – Enabled.
--   65535 (default)- Not configured.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-disableprivacyexperience"></a>**Privacy/DisablePrivacyExperience**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.
-
-Supported value type is integer.
-
--  0 (default) - Allow the "choose privacy settings for your device" screen for a new user during their first logon or when an existing user logs in for the first time after an upgrade.
--  1 - Do not allow the "choose privacy settings for your device" screen when a new user logs in or an existing user logs in for the first time after an upgrade.
-
-In some enterprise managed environments, the privacy settings may be set by policies. In these cases, you can use this policy if you do not want to show a screen that would prompt your users to change these privacy settings.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Don't launch privacy settings experience on user logon*
--   GP name: *DisablePrivacyExperience*
--   GP path: *Windows Components/OOBE*
--   GP ADMX file name: *OOBE.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-enableactivityfeed"></a>**Privacy/EnableActivityFeed**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to allow Apps/OS to publish to the activity feed.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Enables Activity Feed*
--   GP name: *EnableActivityFeed*
--   GP path: *System/OS Policies*
--   GP ADMX file name: *OSPolicy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Disabled. Apps/OS can't publish the activities and roaming is disabled (not published to the cloud).
--   1 – (default) Enabled. Apps/OS can publish the activities and will be roamed across device graph.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access account information.
-
-Most restricted value is 2.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access account information*
--   GP name: *LetAppsAccessAccountInfo*
--   GP element: *LetAppsAccessAccountInfo_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo-forceallowtheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableAdvertisingId-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/DisableAdvertisingId
+```
+<!-- DisableAdvertisingId-OmaUri-End -->
+
+<!-- DisableAdvertisingId-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the advertising ID, preventing apps from using the ID for experiences across apps.
+
+If you enable this policy setting, the advertising ID is turned off. Apps can't use the ID for experiences across apps.
+
+If you disable or do not configure this policy setting, users can control whether apps can use the advertising ID for experiences across apps.
+<!-- DisableAdvertisingId-Description-End -->
+
+<!-- DisableAdvertisingId-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAdvertisingId-Editable-End -->
+
+<!-- DisableAdvertisingId-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 65535 |
+<!-- DisableAdvertisingId-DFProperties-End -->
+
+<!-- DisableAdvertisingId-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 | Enabled. |
+| 65535 (Default) | Not configured. |
+<!-- DisableAdvertisingId-AllowedValues-End -->
+
+<!-- DisableAdvertisingId-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableAdvertisingId |
+| Friendly Name | Turn off the advertising ID |
+| Location | Computer Configuration |
+| Path | System > User Profiles |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AdvertisingInfo |
+| Registry Value Name | DisabledByGroupPolicy |
+| ADMX File Name | UserProfiles.admx |
+<!-- DisableAdvertisingId-GpMapping-End -->
+
+<!-- DisableAdvertisingId-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAdvertisingId-Examples-End -->
+
+<!-- DisableAdvertisingId-End -->
+
+<!-- DisablePrivacyExperience-Begin -->
+## DisablePrivacyExperience
+
+<!-- DisablePrivacyExperience-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- DisablePrivacyExperience-Applicability-End -->
+
+<!-- DisablePrivacyExperience-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/DisablePrivacyExperience
+```
+<!-- DisablePrivacyExperience-OmaUri-End -->
+
+<!-- DisablePrivacyExperience-Description-Begin -->
+<!-- Description-Source-ADMX -->
+When logging into a new user account for the first time or after an upgrade in some scenarios, that user may be presented with a screen or series of screens that prompts the user to choose privacy settings for their account. Enable this policy to prevent this experience from launching.
+
+If this policy is enabled, the privacy experience will not launch for newly-created user accounts or for accounts that would have been prompted to choose their privacy settings after an upgrade.
+
+If this policy is disabled or not configured, then the privacy experience may launch for newly-created user accounts or for accounts that should be prompted to choose their privacy settings after an upgrade.
+<!-- DisablePrivacyExperience-Description-End -->
+
+<!-- DisablePrivacyExperience-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+In some managed environments, the privacy settings may be set by other policies. In this case, enable this policy to not show a screen for users to change these privacy settings.
+
+<!-- DisablePrivacyExperience-Editable-End -->
+
+<!-- DisablePrivacyExperience-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisablePrivacyExperience-DFProperties-End -->
+
+<!-- DisablePrivacyExperience-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Allow the 'choose privacy settings for your device' screen for a new user during their first logon or when an existing user logs in for the first time after an upgrade. |
+| 1 | Do not allow the 'choose privacy settings for your device' screen when a new user logs in or an existing user logs in for the first time after an upgrade. |
+<!-- DisablePrivacyExperience-AllowedValues-End -->
+
+<!-- DisablePrivacyExperience-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisablePrivacyExperience |
+| Friendly Name | Don't launch privacy settings experience on user logon |
+| Location | Computer and User Configuration |
+| Path | Windows Components > OOBE |
+| Registry Key Name | Software\Policies\Microsoft\Windows\OOBE |
+| Registry Value Name | DisablePrivacyExperience |
+| ADMX File Name | OOBE.admx |
+<!-- DisablePrivacyExperience-GpMapping-End -->
+
+<!-- DisablePrivacyExperience-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePrivacyExperience-Examples-End -->
+
+<!-- DisablePrivacyExperience-End -->
+
+<!-- EnableActivityFeed-Begin -->
+## EnableActivityFeed
+
+<!-- EnableActivityFeed-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- EnableActivityFeed-Applicability-End -->
+
+<!-- EnableActivityFeed-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/EnableActivityFeed
+```
+<!-- EnableActivityFeed-OmaUri-End -->
+
+<!-- EnableActivityFeed-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether ActivityFeed is enabled.
+If you enable this policy setting, all activity types (as applicable) are allowed to be published and ActivityFeed shall roam these activities across device graph of the user.
+If you disable this policy setting, activities can't be published and ActivityFeed shall disable cloud sync.
+Policy change takes effect immediately.
+<!-- EnableActivityFeed-Description-End -->
+
+<!-- EnableActivityFeed-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableActivityFeed-Editable-End -->
+
+<!-- EnableActivityFeed-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableActivityFeed-DFProperties-End -->
+
+<!-- EnableActivityFeed-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. Apps/OS can't publish the activities and roaming is disabled. (not published to the cloud). |
+| 1 (Default) | Enabled. Apps/OS can publish the activities and will be roamed across device graph. |
+<!-- EnableActivityFeed-AllowedValues-End -->
+
+<!-- EnableActivityFeed-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableActivityFeed |
+| Friendly Name | Enables Activity Feed |
+| Location | Computer Configuration |
+| Path | System > OS Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | EnableActivityFeed |
+| ADMX File Name | OSPolicy.admx |
+<!-- EnableActivityFeed-GpMapping-End -->
+
+<!-- EnableActivityFeed-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableActivityFeed-Examples-End -->
+
+<!-- EnableActivityFeed-End -->
+
+<!-- LetAppsAccessAccountInfo-Begin -->
+## LetAppsAccessAccountInfo
+
+<!-- LetAppsAccessAccountInfo-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessAccountInfo-Applicability-End -->
+
+<!-- LetAppsAccessAccountInfo-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessAccountInfo
+```
+<!-- LetAppsAccessAccountInfo-OmaUri-End -->
+
+<!-- LetAppsAccessAccountInfo-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access account information.
+<!-- LetAppsAccessAccountInfo-Description-End -->
+
+<!-- LetAppsAccessAccountInfo-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+The most restrictive value is `2` to deny apps access to account information.
+
+<!-- LetAppsAccessAccountInfo-Editable-End -->
+
+<!-- LetAppsAccessAccountInfo-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessAccountInfo-DFProperties-End -->
+
+<!-- LetAppsAccessAccountInfo-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessAccountInfo-AllowedValues-End -->
+
+<!-- LetAppsAccessAccountInfo-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessAccountInfo |
+| Friendly Name | Let Windows apps access account information |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessAccountInfo-GpMapping-End -->
+
+<!-- LetAppsAccessAccountInfo-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo-Examples-End -->
+
+<!-- LetAppsAccessAccountInfo-End -->
+
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Begin -->
+## LetAppsAccessAccountInfo_ForceAllowTheseApps
+
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps
+```
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access account information*
--   GP name: *LetAppsAccessAccountInfo*
--   GP element: *LetAppsAccessAccountInfo_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo-forcedenytheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps**
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessAccountInfo |
+| Friendly Name | Let Windows apps access account information |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Begin -->
+## LetAppsAccessAccountInfo_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps
+```
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access account information*
--   GP name: *LetAppsAccessAccountInfo*
--   GP element: *LetAppsAccessAccountInfo_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps"></a>**Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps**
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessAccountInfo |
+| Friendly Name | Let Windows apps access account information |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessAccountInfo_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access account information*
--   GP name: *LetAppsAccessAccountInfo*
--   GP element: *LetAppsAccessAccountInfo_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception**
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessAccountInfo |
+| Friendly Name | Let Windows apps access account information |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessBackgroundSpatialPerception-Begin -->
+## LetAppsAccessBackgroundSpatialPerception
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessBackgroundSpatialPerception-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- LetAppsAccessBackgroundSpatialPerception-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessBackgroundSpatialPerception-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessBackgroundSpatialPerception
+```
+<!-- LetAppsAccessBackgroundSpatialPerception-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessBackgroundSpatialPerception-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access the movement of the user's head, hands, motion controllers, and other tracked objects, while the apps are running in the background.
+<!-- LetAppsAccessBackgroundSpatialPerception-Description-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
 > [!NOTE]
-> Currently, this policy is supported only in HoloLens 2.
+> Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
 
-Specifies whether Windows apps can access the movement of the user's head, hands, motion controllers, and other tracked objects, while the apps are running in the background.
+<!-- LetAppsAccessBackgroundSpatialPerception-Editable-End -->
 
-Supported value type is integer.
+<!-- LetAppsAccessBackgroundSpatialPerception-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access background spatial perception*
--   GP name: *LetAppsAccessBackgroundSpatialPerception*
--   GP element: *LetAppsAccessBackgroundSpatialPerception_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessBackgroundSpatialPerception-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessBackgroundSpatialPerception-AllowedValues-Begin -->
+**Allowed values**:
 
--   0 (default) – User in control.
--   1 – Force allow.
--   2 - Force deny.
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessBackgroundSpatialPerception-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- LetAppsAccessBackgroundSpatialPerception-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessBackgroundSpatialPerception-Examples-End -->
 
-<hr/>
+<!-- LetAppsAccessBackgroundSpatialPerception-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps**
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Begin -->
+## LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps
+```
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> Currently, this policy is supported only in HoloLens 2.
-
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Description-End -->
 
-Supported value type is chr.
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access background spatial perception*
--   GP name: *LetAppsAccessBackgroundSpatialPerception*
--   GP element: *LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> Currently, this policy is supported only in HoloLens 2.
+> Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
 
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Begin -->
+## LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps
+```
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Description-End -->
 
-Supported value type is chr.
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access background spatial perception*
--   GP name: *LetAppsAccessBackgroundSpatialPerception*
--   GP element: *LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"></a>**Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Windows SE|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
 > [!NOTE]
-> Currently, this policy is supported only in HoloLens 2.
+> Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
 
-List of semi-colon delimited Package Family Names of Windows Store Apps.
-The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Editable-End -->
 
-Supported value type is chr.
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access background spatial perception*
--   GP name: *LetAppsAccessBackgroundSpatialPerception*
--   GP element: *LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-End -->
 
-<hr/>
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+> [!NOTE]
+> Currently, this policy is supported only in [Microsoft HoloLens 2](/hololens/hololens2-hardware).
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Editable-End -->
 
-<hr/>
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access the calendar.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-DFProperties-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Examples-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the calendar*
--   GP name: *LetAppsAccessCalendar*
--   GP element: *LetAppsAccessCalendar_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessCalendar-Begin -->
+## LetAppsAccessCalendar
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessCalendar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCalendar-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- LetAppsAccessCalendar-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCalendar
+```
+<!-- LetAppsAccessCalendar-OmaUri-End -->
 
-<hr/>
+<!-- LetAppsAccessCalendar-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access the calendar.
+<!-- LetAppsAccessCalendar-Description-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar-forceallowtheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceAllowTheseApps**
+<!-- LetAppsAccessCalendar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--SupportedSKUs-->
+The most restrictive value is `2` to deny apps access to the calendar.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCalendar-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCalendar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessCalendar-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCalendar-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessCalendar-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCalendar-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCalendar |
+| Friendly Name | Let Windows apps access the calendar |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCalendar-GpMapping-End -->
+
+<!-- LetAppsAccessCalendar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar-Examples-End -->
+
+<!-- LetAppsAccessCalendar-End -->
+
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Begin -->
+## LetAppsAccessCalendar_ForceAllowTheseApps
+
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCalendar_ForceAllowTheseApps
+```
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the calendar*
--   GP name: *LetAppsAccessCalendar*
--   GP element: *LetAppsAccessCalendar_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar-forcedenytheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceDenyTheseApps**
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCalendar |
+| Friendly Name | Let Windows apps access the calendar |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCalendar_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Begin -->
+## LetAppsAccessCalendar_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCalendar_ForceDenyTheseApps
+```
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the calendar*
--   GP name: *LetAppsAccessCalendar*
--   GP element: *LetAppsAccessCalendar_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscalendar-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps**
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCalendar |
+| Friendly Name | Let Windows apps access the calendar |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCalendar_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessCalendar_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the calendar privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the calendar*
--   GP name: *LetAppsAccessCalendar*
--   GP element: *LetAppsAccessCalendar_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCalendar |
+| Friendly Name | Let Windows apps access the calendar |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCalendar_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCallHistory-Begin -->
+## LetAppsAccessCallHistory
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCallHistory-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCallHistory-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCallHistory-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCallHistory
+```
+<!-- LetAppsAccessCallHistory-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access call history.
+<!-- LetAppsAccessCallHistory-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access call history.
+<!-- LetAppsAccessCallHistory-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessCallHistory-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access call history*
--   GP name: *LetAppsAccessCallHistory*
--   GP element: *LetAppsAccessCallHistory_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to call history.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessCallHistory-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessCallHistory-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessCallHistory-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessCallHistory-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory-forceallowtheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessCallHistory-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessCallHistory-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCallHistory |
+| Friendly Name | Let Windows apps access call history |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCallHistory-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCallHistory-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCallHistory-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Begin -->
+## LetAppsAccessCallHistory_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps
+```
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access call history*
--   GP name: *LetAppsAccessCallHistory*
--   GP element: *LetAppsAccessCallHistory_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory-forcedenytheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps**
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCallHistory |
+| Friendly Name | Let Windows apps access call history |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCallHistory_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Begin -->
+## LetAppsAccessCallHistory_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps
+```
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access call history*
--   GP name: *LetAppsAccessCallHistory*
--   GP element: *LetAppsAccessCallHistory_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscallhistory-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps**
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCallHistory |
+| Friendly Name | Let Windows apps access call history |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCallHistory_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessCallHistory_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the call history privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access call history*
--   GP name: *LetAppsAccessCallHistory*
--   GP element: *LetAppsAccessCallHistory_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCallHistory |
+| Friendly Name | Let Windows apps access call history |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCamera-Begin -->
+## LetAppsAccessCameras
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCamera-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCamera-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCamera-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCamera
+```
+<!-- LetAppsAccessCamera-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access the camera.
+<!-- LetAppsAccessCamera-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access the camera.
+<!-- LetAppsAccessCamera-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessCamera-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the camera*
--   GP name: *LetAppsAccessCamera*
--   GP element: *LetAppsAccessCamera_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to the camera.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessCamera-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessCamera-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessCamera-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessCamera-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscamera-forceallowtheseapps"></a>**Privacy/LetAppsAccessCamera_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessCamera-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessCamera-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCamera |
+| Friendly Name | Let Windows apps access the camera |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCamera-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCamera-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCamera-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Begin -->
+## LetAppsAccessCamera_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCamera_ForceAllowTheseApps
+```
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the camera*
--   GP name: *LetAppsAccessCamera*
--   GP element: *LetAppsAccessCamera_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscamera-forcedenytheseapps"></a>**Privacy/LetAppsAccessCamera_ForceDenyTheseApps**
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCamera |
+| Friendly Name | Let Windows apps access the camera |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCamera_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Begin -->
+## LetAppsAccessCamera_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCamera_ForceDenyTheseApps
+```
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the camera*
--   GP name: *LetAppsAccessCamera*
--   GP element: *LetAppsAccessCamera_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscamera-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCamera_UserInControlOfTheseApps**
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCamera |
+| Friendly Name | Let Windows apps access the camera |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCamera_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessCamera_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessCamera_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the camera*
--   GP name: *LetAppsAccessCamera*
--   GP element: *LetAppsAccessCamera_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessCamera |
+| Friendly Name | Let Windows apps access the camera |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessCamera_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessContacts-Begin -->
+## LetAppsAccessContacts
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessContacts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessContacts-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessContacts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessContacts
+```
+<!-- LetAppsAccessContacts-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access contacts.
+<!-- LetAppsAccessContacts-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access contacts.
+<!-- LetAppsAccessContacts-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessContacts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access contacts*
--   GP name: *LetAppsAccessContacts*
--   GP element: *LetAppsAccessContacts_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to contacts.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessContacts-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessContacts-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessContacts-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessContacts-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts-forceallowtheseapps"></a>**Privacy/LetAppsAccessContacts_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessContacts-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessContacts-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessContacts |
+| Friendly Name | Let Windows apps access contacts |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessContacts-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessContacts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessContacts-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Begin -->
+## LetAppsAccessContacts_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessContacts_ForceAllowTheseApps
+```
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access contacts*
--   GP name: *LetAppsAccessContacts*
--   GP element: *LetAppsAccessContacts_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts-forcedenytheseapps"></a>**Privacy/LetAppsAccessContacts_ForceDenyTheseApps**
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessContacts |
+| Friendly Name | Let Windows apps access contacts |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessContacts_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Begin -->
+## LetAppsAccessContacts_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessContacts_ForceDenyTheseApps
+```
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access contacts*
--   GP name: *LetAppsAccessContacts*
--   GP element: *LetAppsAccessContacts_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesscontacts-userincontroloftheseapps"></a>**Privacy/LetAppsAccessContacts_UserInControlOfTheseApps**
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessContacts |
+| Friendly Name | Let Windows apps access contacts |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessContacts_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessContacts_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessContacts_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access contacts*
--   GP name: *LetAppsAccessContacts*
--   GP element: *LetAppsAccessContacts_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessContacts |
+| Friendly Name | Let Windows apps access contacts |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessContacts_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessEmail-Begin -->
+## LetAppsAccessEmail
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessEmail-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessEmail-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessEmail-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessEmail
+```
+<!-- LetAppsAccessEmail-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access email.
+<!-- LetAppsAccessEmail-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access email.
+<!-- LetAppsAccessEmail-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessEmail-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access email*
--   GP name: *LetAppsAccessEmail*
--   GP element: *LetAppsAccessEmail_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to email.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessEmail-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessEmail-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessEmail-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessEmail-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessemail-forceallowtheseapps"></a>**Privacy/LetAppsAccessEmail_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessEmail-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessEmail-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessEmail |
+| Friendly Name | Let Windows apps access email |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessEmail-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessEmail-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessEmail-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Begin -->
+## LetAppsAccessEmail_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessEmail_ForceAllowTheseApps
+```
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access email*
--   GP name: *LetAppsAccessEmail*
--   GP element: *LetAppsAccessEmail_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessemail-forcedenytheseapps"></a>**Privacy/LetAppsAccessEmail_ForceDenyTheseApps**
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessEmail |
+| Friendly Name | Let Windows apps access email |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessEmail_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Begin -->
+## LetAppsAccessEmail_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessEmail_ForceDenyTheseApps
+```
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access email*
--   GP name: *LetAppsAccessEmail*
--   GP element: *LetAppsAccessEmail_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessemail-userincontroloftheseapps"></a>**Privacy/LetAppsAccessEmail_UserInControlOfTheseApps**
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessEmail |
+| Friendly Name | Let Windows apps access email |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessEmail_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessEmail_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessEmail_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access email*
--   GP name: *LetAppsAccessEmail*
--   GP element: *LetAppsAccessEmail_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput"></a>**Privacy/LetAppsAccessGazeInput**
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessEmail |
+| Friendly Name | Let Windows apps access email |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessEmail_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessGazeInput-Begin -->
+## LetAppsAccessGazeInput
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessGazeInput-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- LetAppsAccessGazeInput-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessGazeInput-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGazeInput
+```
+<!-- LetAppsAccessGazeInput-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessGazeInput-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting specifies whether Windows apps can access the eye tracker.
+<!-- LetAppsAccessGazeInput-Description-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- LetAppsAccessGazeInput-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput-Editable-End -->
 
-<hr/>
+<!-- LetAppsAccessGazeInput-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput-forceallowtheseapps"></a>**Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps**
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- LetAppsAccessGazeInput-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessGazeInput-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessGazeInput-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Begin -->
+## LetAppsAccessGazeInput_ForceAllowTheseApps
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGazeInput_ForceAllowTheseApps
+```
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the eye tracker. This setting overrides the default LetAppsAccessGazeInput policy setting for the specified apps.
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Editable-End -->
 
-<hr/>
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput-forcedenytheseapps"></a>**Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps**
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessGazeInput_ForceAllowTheseApps-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Begin -->
+## LetAppsAccessGazeInput_ForceDenyTheseApps
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGazeInput_ForceDenyTheseApps
+```
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the eye tracker. This setting overrides the default LetAppsAccessGazeInput policy setting for the specified apps.
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Editable-End -->
 
-<hr/>
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessgazeinput-userincontroloftheseapps"></a>**Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps**
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessGazeInput_ForceDenyTheseApps-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessGazeInput_UserInControlOfTheseApps
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGazeInput_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the eye tracker privacy setting for the listed apps. This setting overrides the default LetAppsAccessGazeInput policy setting for the specified apps.
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Editable-End -->
 
-<hr/>
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Begin -->
+## LetAppsAccessGraphicsCaptureProgrammatic
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureProgrammatic
+```
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-OmaUri-End -->
 
-<hr/>
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can use screen capture on arbitrary windows or displays.
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access location.
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Editable-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access location*
--   GP name: *LetAppsAccessLocation*
--   GP element: *LetAppsAccessLocation_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-GpMapping-Begin -->
+**Group policy mapping**:
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureProgrammatic |
+| Friendly Name | Let Windows apps take screenshots of various windows or displays |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-GpMapping-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-Examples-End -->
 
-<hr/>
+<!-- LetAppsAccessGraphicsCaptureProgrammatic-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesslocation-forceallowtheseapps"></a>**Privacy/LetAppsAccessLocation_ForceAllowTheseApps**
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Begin -->
+## LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps
+```
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to use screen capture on arbitrary windows or displays. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureProgrammatic |
+| Friendly Name | Let Windows apps take screenshots of various windows or displays |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Begin -->
+## LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps
+```
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the use of screen capture on arbitrary windows or displays. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureProgrammatic |
+| Friendly Name | Let Windows apps take screenshots of various windows or displays |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the programmatic screen capture setting for the listed apps. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureProgrammatic |
+| Friendly Name | Let Windows apps take screenshots of various windows or displays |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Begin -->
+## LetAppsAccessGraphicsCaptureWithoutBorder
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Applicability-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureWithoutBorder
+```
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-OmaUri-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can disable the screen capture border.
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Description-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Editable-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-DFProperties-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureWithoutBorder |
+| Friendly Name | Let Windows apps turn off the screenshot border |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Begin -->
+## LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps
+```
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to disable the screen capture border. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Description-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureWithoutBorder |
+| Friendly Name | Let Windows apps turn off the screenshot border |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Begin -->
+## LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps
+```
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied configuration access to the screen capture border. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureWithoutBorder |
+| Friendly Name | Let Windows apps turn off the screenshot border |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the screen capture border privacy setting for the listed apps. This setting overrides the default LetAppsAccessGraphicsCaptureWithoutBorder policy setting for the specified apps.
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessGraphicsCaptureWithoutBorder |
+| Friendly Name | Let Windows apps turn off the screenshot border |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-End -->
+
+<!-- LetAppsAccessLocation-Begin -->
+## LetAppsAccessLocation
+
+<!-- LetAppsAccessLocation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessLocation-Applicability-End -->
+
+<!-- LetAppsAccessLocation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessLocation
+```
+<!-- LetAppsAccessLocation-OmaUri-End -->
+
+<!-- LetAppsAccessLocation-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access location.
+<!-- LetAppsAccessLocation-Description-End -->
+
+<!-- LetAppsAccessLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+The most restrictive value is `2` to deny apps access to the device's location.
+
+<!-- LetAppsAccessLocation-Editable-End -->
+
+<!-- LetAppsAccessLocation-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessLocation-DFProperties-End -->
+
+<!-- LetAppsAccessLocation-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessLocation-AllowedValues-End -->
+
+<!-- LetAppsAccessLocation-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessLocation |
+| Friendly Name | Let Windows apps access location |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessLocation-GpMapping-End -->
+
+<!-- LetAppsAccessLocation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation-Examples-End -->
+
+<!-- LetAppsAccessLocation-End -->
+
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Begin -->
+## LetAppsAccessLocation_ForceAllowTheseApps
+
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessLocation_ForceAllowTheseApps
+```
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access location*
--   GP name: *LetAppsAccessLocation*
--   GP element: *LetAppsAccessLocation_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesslocation-forcedenytheseapps"></a>**Privacy/LetAppsAccessLocation_ForceDenyTheseApps**
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessLocation |
+| Friendly Name | Let Windows apps access location |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessLocation_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Begin -->
+## LetAppsAccessLocation_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessLocation_ForceDenyTheseApps
+```
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access location*
--   GP name: *LetAppsAccessLocation*
--   GP element: *LetAppsAccessLocation_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesslocation-userincontroloftheseapps"></a>**Privacy/LetAppsAccessLocation_UserInControlOfTheseApps**
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessLocation |
+| Friendly Name | Let Windows apps access location |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessLocation_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessLocation_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessLocation_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access location*
--   GP name: *LetAppsAccessLocation*
--   GP element: *LetAppsAccessLocation_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessLocation |
+| Friendly Name | Let Windows apps access location |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessLocation_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMessaging-Begin -->
+## LetAppsAccessMessaging
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMessaging-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMessaging-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMessaging-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMessaging
+```
+<!-- LetAppsAccessMessaging-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can read or send messages (text or MMS).
+<!-- LetAppsAccessMessaging-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can read or send messages (text or MMS).
+<!-- LetAppsAccessMessaging-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessMessaging-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access messaging*
--   GP name: *LetAppsAccessMessaging*
--   GP element: *LetAppsAccessMessaging_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to messaging.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessMessaging-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessMessaging-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessMessaging-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessMessaging-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging-forceallowtheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessMessaging-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessMessaging-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMessaging |
+| Friendly Name | Let Windows apps access messaging |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMessaging-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMessaging-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMessaging-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Begin -->
+## LetAppsAccessMessaging_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMessaging_ForceAllowTheseApps
+```
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access messaging*
--   GP name: *LetAppsAccessMessaging*
--   GP element: *LetAppsAccessMessaging_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging-forcedenytheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceDenyTheseApps**
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMessaging |
+| Friendly Name | Let Windows apps access messaging |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMessaging_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Begin -->
+## LetAppsAccessMessaging_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMessaging_ForceDenyTheseApps
+```
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access messaging*
--   GP name: *LetAppsAccessMessaging*
--   GP element: *LetAppsAccessMessaging_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmessaging-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps**
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMessaging |
+| Friendly Name | Let Windows apps access messaging |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMessaging_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessMessaging_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access messaging*
--   GP name: *LetAppsAccessMessaging*
--   GP element: *LetAppsAccessMessaging_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMessaging |
+| Friendly Name | Let Windows apps access messaging |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMessaging_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMicrophone-Begin -->
+## LetAppsAccessMicrophone
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMicrophone-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMicrophone-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMicrophone-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMicrophone
+```
+<!-- LetAppsAccessMicrophone-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access the microphone.
+<!-- LetAppsAccessMicrophone-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access the microphone.
+<!-- LetAppsAccessMicrophone-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessMicrophone-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the microphone*
--   GP name: *LetAppsAccessMicrophone*
--   GP element: *LetAppsAccessMicrophone_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to the microphone.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessMicrophone-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessMicrophone-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessMicrophone-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessMicrophone-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone-forceallowtheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessMicrophone-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessMicrophone-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMicrophone |
+| Friendly Name | Let Windows apps access the microphone |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMicrophone-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMicrophone-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMicrophone-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Begin -->
+## LetAppsAccessMicrophone_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps
+```
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the microphone*
--   GP name: *LetAppsAccessMicrophone*
--   GP element: *LetAppsAccessMicrophone_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone-forcedenytheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps**
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMicrophone |
+| Friendly Name | Let Windows apps access the microphone |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMicrophone_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Begin -->
+## LetAppsAccessMicrophone_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps
+```
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the microphone*
--   GP name: *LetAppsAccessMicrophone*
--   GP element: *LetAppsAccessMicrophone_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmicrophone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps**
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMicrophone |
+| Friendly Name | Let Windows apps access the microphone |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMicrophone_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessMicrophone_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access the microphone*
--   GP name: *LetAppsAccessMicrophone*
--   GP element: *LetAppsAccessMicrophone_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMicrophone |
+| Friendly Name | Let Windows apps access the microphone |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMotion-Begin -->
+## LetAppsAccessMotion
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMotion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMotion-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMotion-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMotion
+```
+<!-- LetAppsAccessMotion-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access motion data.
+<!-- LetAppsAccessMotion-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access motion data.
+<!-- LetAppsAccessMotion-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessMotion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access motion*
--   GP name: *LetAppsAccessMotion*
--   GP element: *LetAppsAccessMotion_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to motion data.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessMotion-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessMotion-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessMotion-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessMotion-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmotion-forceallowtheseapps"></a>**Privacy/LetAppsAccessMotion_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessMotion-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessMotion-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMotion |
+| Friendly Name | Let Windows apps access motion |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMotion-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMotion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMotion-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Begin -->
+## LetAppsAccessMotion_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMotion_ForceAllowTheseApps
+```
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access motion*
--   GP name: *LetAppsAccessMotion*
--   GP element: *LetAppsAccessMotion_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmotion-forcedenytheseapps"></a>**Privacy/LetAppsAccessMotion_ForceDenyTheseApps**
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMotion |
+| Friendly Name | Let Windows apps access motion |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMotion_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Begin -->
+## LetAppsAccessMotion_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMotion_ForceDenyTheseApps
+```
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access motion*
--   GP name: *LetAppsAccessMotion*
--   GP element: *LetAppsAccessMotion_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessmotion-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMotion_UserInControlOfTheseApps**
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMotion |
+| Friendly Name | Let Windows apps access motion |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMotion_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessMotion_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessMotion_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access motion*
--   GP name: *LetAppsAccessMotion*
--   GP element: *LetAppsAccessMotion_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessMotion |
+| Friendly Name | Let Windows apps access motion |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessMotion_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessNotifications-Begin -->
+## LetAppsAccessNotifications
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessNotifications-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessNotifications
+```
+<!-- LetAppsAccessNotifications-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access notifications.
+<!-- LetAppsAccessNotifications-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access notifications.
+<!-- LetAppsAccessNotifications-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access notifications*
--   GP name: *LetAppsAccessNotifications*
--   GP element: *LetAppsAccessNotifications_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to notifications.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessNotifications-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessNotifications-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessNotifications-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessNotifications-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications-forceallowtheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessNotifications-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessNotifications-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessNotifications |
+| Friendly Name | Let Windows apps access notifications |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessNotifications-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessNotifications-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Begin -->
+## LetAppsAccessNotifications_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessNotifications_ForceAllowTheseApps
+```
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access notifications*
--   GP name: *LetAppsAccessNotifications*
--   GP element: *LetAppsAccessNotifications_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications-forcedenytheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceDenyTheseApps**
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessNotifications |
+| Friendly Name | Let Windows apps access notifications |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessNotifications_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Begin -->
+## LetAppsAccessNotifications_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessNotifications_ForceDenyTheseApps
+```
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access notifications*
--   GP name: *LetAppsAccessNotifications*
--   GP element: *LetAppsAccessNotifications_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessnotifications-userincontroloftheseapps"></a>**Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps**
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessNotifications |
+| Friendly Name | Let Windows apps access notifications |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessNotifications_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessNotifications_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access notifications*
--   GP name: *LetAppsAccessNotifications*
--   GP element: *LetAppsAccessNotifications_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessNotifications |
+| Friendly Name | Let Windows apps access notifications |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessNotifications_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessPhone-Begin -->
+## LetAppsAccessPhone
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessPhone-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessPhone-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessPhone-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessPhone
+```
+<!-- LetAppsAccessPhone-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can make phone calls.
+<!-- LetAppsAccessPhone-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can make phone calls
+<!-- LetAppsAccessPhone-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessPhone-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps make phone calls*
--   GP name: *LetAppsAccessPhone*
--   GP element: *LetAppsAccessPhone_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to make phone calls.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessPhone-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessPhone-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessPhone-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessPhone-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessphone-forceallowtheseapps"></a>**Privacy/LetAppsAccessPhone_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessPhone-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessPhone-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessPhone |
+| Friendly Name | Let Windows apps make phone calls |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessPhone-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessPhone-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessPhone-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Begin -->
+## LetAppsAccessPhone_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessPhone_ForceAllowTheseApps
+```
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps make phone calls*
--   GP name: *LetAppsAccessPhone*
--   GP element: *LetAppsAccessPhone_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessphone-forcedenytheseapps"></a>**Privacy/LetAppsAccessPhone_ForceDenyTheseApps**
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessPhone |
+| Friendly Name | Let Windows apps make phone calls |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessPhone_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Begin -->
+## LetAppsAccessPhone_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessPhone_ForceDenyTheseApps
+```
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps make phone calls*
--   GP name: *LetAppsAccessPhone*
--   GP element: *LetAppsAccessPhone_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessphone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessPhone_UserInControlOfTheseApps**
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessPhone |
+| Friendly Name | Let Windows apps make phone calls |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessPhone_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessPhone_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessPhone_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps make phone calls*
--   GP name: *LetAppsAccessPhone*
--   GP element: *LetAppsAccessPhone_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessPhone |
+| Friendly Name | Let Windows apps make phone calls |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessPhone_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessRadios-Begin -->
+## LetAppsAccessRadios
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessRadios-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessRadios-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessRadios-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessRadios
+```
+<!-- LetAppsAccessRadios-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps have access to control radios.
+<!-- LetAppsAccessRadios-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps have access to control radios.
+<!-- LetAppsAccessRadios-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessRadios-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps control radios*
--   GP name: *LetAppsAccessRadios*
--   GP element: *LetAppsAccessRadios_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access to control radios.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessRadios-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessRadios-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessRadios-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessRadios-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessradios-forceallowtheseapps"></a>**Privacy/LetAppsAccessRadios_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessRadios-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessRadios-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessRadios |
+| Friendly Name | Let Windows apps control radios |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessRadios-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessRadios-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessRadios-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Begin -->
+## LetAppsAccessRadios_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessRadios_ForceAllowTheseApps
+```
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps control radios*
--   GP name: *LetAppsAccessRadios*
--   GP element: *LetAppsAccessRadios_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessradios-forcedenytheseapps"></a>**Privacy/LetAppsAccessRadios_ForceDenyTheseApps**
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessRadios |
+| Friendly Name | Let Windows apps control radios |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessRadios_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Begin -->
+## LetAppsAccessRadios_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessRadios_ForceDenyTheseApps
+```
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps control radios*
--   GP name: *LetAppsAccessRadios*
--   GP element: *LetAppsAccessRadios_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios_UserInControlOfTheseApps**
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessRadios |
+| Friendly Name | Let Windows apps control radios |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessRadios_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessRadios_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessRadios_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps control radios*
--   GP name: *LetAppsAccessRadios*
--   GP element: *LetAppsAccessRadios_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessRadios |
+| Friendly Name | Let Windows apps control radios |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessRadios_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTasks-Begin -->
+## LetAppsAccessTasks
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTasks-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessTasks-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTasks-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTasks
+```
+<!-- LetAppsAccessTasks-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access tasks.
+<!-- LetAppsAccessTasks-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access tasks.
+<!-- LetAppsAccessTasks-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access Tasks*
--   GP name: *LetAppsAccessTasks*
--   GP element: *LetAppsAccessTasks_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessTasks-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessTasks-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-2]` |
+| Default Value  | 0 |
+<!-- LetAppsAccessTasks-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**
+<!-- LetAppsAccessTasks-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTasks |
+| Friendly Name | Let Windows apps access Tasks |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTasks-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessTasks-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTasks-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Begin -->
+## LetAppsAccessTasks_ForceAllowTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTasks_ForceAllowTheseApps
+```
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access Tasks*
--   GP name: *LetAppsAccessTasks*
--   GP element: *LetAppsAccessTasks_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTasks |
+| Friendly Name | Let Windows apps access Tasks |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTasks_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Begin -->
+## LetAppsAccessTasks_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTasks_ForceDenyTheseApps
+```
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access Tasks*
--   GP name: *LetAppsAccessTasks*
--   GP element: *LetAppsAccessTasks_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTasks |
+| Friendly Name | Let Windows apps access Tasks |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTasks_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessTasks_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTasks_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access Tasks*
--   GP name: *LetAppsAccessTasks*
--   GP element: *LetAppsAccessTasks_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTasks |
+| Friendly Name | Let Windows apps access Tasks |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTasks_UserInControlOfTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTrustedDevices-Begin -->
+## LetAppsAccessTrustedDevices
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTrustedDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessTrustedDevices-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTrustedDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTrustedDevices
+```
+<!-- LetAppsAccessTrustedDevices-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can access trusted devices.
+<!-- LetAppsAccessTrustedDevices-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can access trusted devices.
+<!-- LetAppsAccessTrustedDevices-Description-End -->
 
-Most restricted value is 2.
+<!-- LetAppsAccessTrustedDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access trusted devices*
--   GP name: *LetAppsAccessTrustedDevices*
--   GP element: *LetAppsAccessTrustedDevices_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+The most restrictive value is `2` to deny apps access trusted devices.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- LetAppsAccessTrustedDevices-Editable-End -->
 
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
+<!-- LetAppsAccessTrustedDevices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsAccessTrustedDevices-DFProperties-End -->
 
-<hr/>
+<!-- LetAppsAccessTrustedDevices-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices-forceallowtheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps**
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsAccessTrustedDevices-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- LetAppsAccessTrustedDevices-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTrustedDevices |
+| Friendly Name | Let Windows apps access trusted devices |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTrustedDevices-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTrustedDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTrustedDevices-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Begin -->
+## LetAppsAccessTrustedDevices_ForceAllowTheseApps
 
-<hr/>
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps
+```
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access trusted devices*
--   GP name: *LetAppsAccessTrustedDevices*
--   GP element: *LetAppsAccessTrustedDevices_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices-forcedenytheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps**
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTrustedDevices |
+| Friendly Name | Let Windows apps access trusted devices |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Begin -->
+## LetAppsAccessTrustedDevices_ForceDenyTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps
+```
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access trusted devices*
--   GP name: *LetAppsAccessTrustedDevices*
--   GP element: *LetAppsAccessTrustedDevices_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps**
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTrustedDevices |
+| Friendly Name | Let Windows apps access trusted devices |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Begin -->
+## LetAppsAccessTrustedDevices_UserInControlOfTheseApps
 
-> [!div class = "checklist"]
-> * Device
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Applicability-End -->
 
-<hr/>
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps
+```
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access trusted devices*
--   GP name: *LetAppsAccessTrustedDevices*
--   GP element: *LetAppsAccessTrustedDevices_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsactivatewithvoice"></a>**Privacy/LetAppsActivateWithVoice**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies if Windows apps can be activated by voice.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow voice activation*
--   GP name: *LetAppsActivateWithVoice*
--   GP element: *LetAppsActivateWithVoice_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 (default) – User in control. Users can decide if Windows apps can be activated by voice using Settings > Privacy options on the device.
-- 1 – Force allow. Windows apps can be activated by voice and users cannot change it.
-- 2 - Force deny. Windows apps cannot be activated by voice and users cannot change it.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsactivatewithvoiceabovelock"></a>**Privacy/LetAppsActivateWithVoiceAboveLock**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies if Windows apps can be activated by voice while the screen is locked.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow voice activation above locked screen*
--   GP name: *LetAppsActivateWithVoiceAboveLock*
--   GP element: *LetAppsActivateWithVoiceAboveLock_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 (default) – User in control. Users can decide if Windows apps can be activated by voice while the screen is locked using Settings > Privacy options on the device.
-- 1 – Force allow. Windows apps can be activated by voice while the screen is locked, and users cannot change it.
-- 2 - Force deny. Windows apps cannot be activated by voice while the screen is locked, and users cannot change it.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Force allow, force deny or give user control of apps that can get diagnostic information about other running apps.
-
-Most restricted value is 2.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
--   GP name: *LetAppsGetDiagnosticInfo*
--   GP element: *LetAppsGetDiagnosticInfo_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
--   GP name: *LetAppsGetDiagnosticInfo*
--   GP element: *LetAppsGetDiagnosticInfo_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
--   GP name: *LetAppsGetDiagnosticInfo*
--   GP element: *LetAppsGetDiagnosticInfo_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps access diagnostic information about other apps*
--   GP name: *LetAppsGetDiagnosticInfo*
--   GP element: *LetAppsGetDiagnosticInfo_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can run in the background.
-
-Most restricted value is 2.
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsAccessTrustedDevices |
+| Friendly Name | Let Windows apps access trusted devices |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-End -->
+
+<!-- LetAppsActivateWithVoice-Begin -->
+## LetAppsActivateWithVoice
+
+<!-- LetAppsActivateWithVoice-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- LetAppsActivateWithVoice-Applicability-End -->
+
+<!-- LetAppsActivateWithVoice-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsActivateWithVoice
+```
+<!-- LetAppsActivateWithVoice-OmaUri-End -->
+
+<!-- LetAppsActivateWithVoice-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can be activated by voice.
+<!-- LetAppsActivateWithVoice-Description-End -->
+
+<!-- LetAppsActivateWithVoice-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsActivateWithVoice-Editable-End -->
+
+<!-- LetAppsActivateWithVoice-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsActivateWithVoice-DFProperties-End -->
+
+<!-- LetAppsActivateWithVoice-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. Users can decide if Windows apps can be activated by voice using Settings > Privacy options on the device. |
+| 1 | Force allow. Windows apps can be activated by voice and users cannot change it. |
+| 2 | Force deny. Windows apps cannot be activated by voice and users cannot change it. |
+<!-- LetAppsActivateWithVoice-AllowedValues-End -->
+
+<!-- LetAppsActivateWithVoice-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsActivateWithVoice |
+| Friendly Name | Let Windows apps activate with voice |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsActivateWithVoice-GpMapping-End -->
+
+<!-- LetAppsActivateWithVoice-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsActivateWithVoice-Examples-End -->
+
+<!-- LetAppsActivateWithVoice-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-Begin -->
+## LetAppsActivateWithVoiceAboveLock
+
+<!-- LetAppsActivateWithVoiceAboveLock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+<!-- LetAppsActivateWithVoiceAboveLock-Applicability-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsActivateWithVoiceAboveLock
+```
+<!-- LetAppsActivateWithVoiceAboveLock-OmaUri-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can be activated by voice while the system is locked.
+<!-- LetAppsActivateWithVoiceAboveLock-Description-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsActivateWithVoiceAboveLock-Editable-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsActivateWithVoiceAboveLock-DFProperties-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. Users can decide if Windows apps can be activated by voice while the screen is locked using Settings > Privacy options on the device. |
+| 1 | Force allow. Windows apps can be activated by voice while the screen is locked, and users cannot change it. |
+| 2 | Force deny. Windows apps cannot be activated by voice while the screen is locked, and users cannot change it. |
+<!-- LetAppsActivateWithVoiceAboveLock-AllowedValues-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsActivateWithVoiceAboveLock |
+| Friendly Name | Let Windows apps activate with voice while the system is locked |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsActivateWithVoiceAboveLock-GpMapping-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsActivateWithVoiceAboveLock-Examples-End -->
+
+<!-- LetAppsActivateWithVoiceAboveLock-End -->
+
+<!-- LetAppsGetDiagnosticInfo-Begin -->
+## LetAppsGetDiagnosticInfo
+
+<!-- LetAppsGetDiagnosticInfo-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsGetDiagnosticInfo-Applicability-End -->
+
+<!-- LetAppsGetDiagnosticInfo-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsGetDiagnosticInfo
+```
+<!-- LetAppsGetDiagnosticInfo-OmaUri-End -->
+
+<!-- LetAppsGetDiagnosticInfo-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can get diagnostic information about other apps, including user names.
+<!-- LetAppsGetDiagnosticInfo-Description-End -->
+
+<!-- LetAppsGetDiagnosticInfo-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+The most restrictive value is `2` to deny apps access to diagnostic data.
+
+<!-- LetAppsGetDiagnosticInfo-Editable-End -->
+
+<!-- LetAppsGetDiagnosticInfo-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsGetDiagnosticInfo-DFProperties-End -->
+
+<!-- LetAppsGetDiagnosticInfo-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsGetDiagnosticInfo-AllowedValues-End -->
+
+<!-- LetAppsGetDiagnosticInfo-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsGetDiagnosticInfo |
+| Friendly Name | Let Windows apps access diagnostic information about other apps |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsGetDiagnosticInfo-GpMapping-End -->
+
+<!-- LetAppsGetDiagnosticInfo-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo-Examples-End -->
+
+<!-- LetAppsGetDiagnosticInfo-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Begin -->
+## LetAppsGetDiagnosticInfo_ForceAllowTheseApps
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps
+```
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed to get diagnostic information about other apps, including user names. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified Windows apps.
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Description-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsGetDiagnosticInfo |
+| Friendly Name | Let Windows apps access diagnostic information about other apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Begin -->
+## LetAppsGetDiagnosticInfo_ForceDenyTheseApps
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps
+```
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are not allowed to get diagnostic information about other apps, including user names. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified Windows apps.
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsGetDiagnosticInfo |
+| Friendly Name | Let Windows apps access diagnostic information about other apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Begin -->
+## LetAppsGetDiagnosticInfo_UserInControlOfTheseApps
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps
+```
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the app diagnostics privacy setting for the listed Windows apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified Windows apps.
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsGetDiagnosticInfo |
+| Friendly Name | Let Windows apps access diagnostic information about other apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-End -->
+
+<!-- LetAppsRunInBackground-Begin -->
+## LetAppsRunInBackground
+
+<!-- LetAppsRunInBackground-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsRunInBackground-Applicability-End -->
+
+<!-- LetAppsRunInBackground-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsRunInBackground
+```
+<!-- LetAppsRunInBackground-OmaUri-End -->
+
+<!-- LetAppsRunInBackground-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can run in the background.
+<!-- LetAppsRunInBackground-Description-End -->
+
+<!-- LetAppsRunInBackground-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+The most restrictive value is `2` to deny apps from running in the background.
 
 > [!WARNING]
-> Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps run in the background*
--   GP name: *LetAppsRunInBackground*
--   GP element: *LetAppsRunInBackground_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – User in control (default).
--   1 – Force allow.
--   2 - Force deny.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground_ForceAllowTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps run in the background*
--   GP name: *LetAppsRunInBackground*
--   GP element: *LetAppsRunInBackground_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground_ForceDenyTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the ability, to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps run in the background*
--   GP name: *LetAppsRunInBackground*
--   GP element: *LetAppsRunInBackground_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground_UserInControlOfTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps run in the background*
--   GP name: *LetAppsRunInBackground*
--   GP element: *LetAppsRunInBackground_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies whether Windows apps can sync with devices.
-
-Most restricted value is 2.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps communicate with unpaired devices*
--   GP name: *LetAppsSyncWithDevices*
--   GP element: *LetAppsSyncWithDevices_Enum*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – User in control.
--   1 – Force allow.
--   2 - Force deny.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices-forceallowtheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps communicate with unpaired devices*
--   GP name: *LetAppsSyncWithDevices*
--   GP element: *LetAppsSyncWithDevices_ForceAllowTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices-forcedenytheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps communicate with unpaired devices*
--   GP name: *LetAppsSyncWithDevices*
--   GP element: *LetAppsSyncWithDevices_ForceDenyTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-letappssyncwithdevices-userincontroloftheseapps"></a>**Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Let Windows apps communicate with unpaired devices*
--   GP name: *LetAppsSyncWithDevices*
--   GP element: *LetAppsSyncWithDevices_UserInControlOfTheseApps_List*
--   GP path: *Windows Components/App Privacy*
--   GP ADMX file name: *AppPrivacy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-publishuseractivities"></a>**Privacy/PublishUserActivities**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to enable publishing of user activities to the activity feed.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow publishing of User Activities*
--   GP name: *PublishUserActivities*
--   GP path: *System/OS Policies*
--   GP ADMX file name: *OSPolicy.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Disabled. Apps/OS can't publish the *user activities*.
--   1 – (default) Enabled. Apps/OS can publish the *user activities*.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="privacy-uploaduseractivities"></a>**Privacy/UploadUserActivities**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows ActivityFeed to upload published 'User Activities'.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow upload of User Activities*
--   GP name: *UploadUserActivities*
--   GP path: *System/OS Policies*
--   GP ADMX file name: *OSPolicy.admx*
-
-<!--/ADMXMapped-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
-## Related topics
+> Be careful when you determine which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. If you turn off background activity for these types of apps, it could cause text message, email, and voicemail notifications to not function. This policy could also cause background email syncing to not function properly.
+
+<!-- LetAppsRunInBackground-Editable-End -->
+
+<!-- LetAppsRunInBackground-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsRunInBackground-DFProperties-End -->
+
+<!-- LetAppsRunInBackground-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | . |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsRunInBackground-AllowedValues-End -->
+
+<!-- LetAppsRunInBackground-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsRunInBackground |
+| Friendly Name | Let Windows apps run in the background |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsRunInBackground-GpMapping-End -->
+
+<!-- LetAppsRunInBackground-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground-Examples-End -->
+
+<!-- LetAppsRunInBackground-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Begin -->
+## LetAppsRunInBackground_ForceAllowTheseApps
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsRunInBackground_ForceAllowTheseApps
+```
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified Windows apps.
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Description-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsRunInBackground |
+| Friendly Name | Let Windows apps run in the background |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsRunInBackground_ForceAllowTheseApps-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Begin -->
+## LetAppsRunInBackground_ForceDenyTheseApps
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsRunInBackground_ForceDenyTheseApps
+```
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are not allowed to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified Windows apps.
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsRunInBackground |
+| Friendly Name | Let Windows apps run in the background |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsRunInBackground_ForceDenyTheseApps-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Begin -->
+## LetAppsRunInBackground_UserInControlOfTheseApps
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsRunInBackground_UserInControlOfTheseApps
+```
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the background apps privacy setting for the listed Windows apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified Windows apps.
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsRunInBackground |
+| Friendly Name | Let Windows apps run in the background |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsRunInBackground_UserInControlOfTheseApps-End -->
+
+<!-- LetAppsSyncWithDevices-Begin -->
+## LetAppsSyncWithDevices
+
+<!-- LetAppsSyncWithDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsSyncWithDevices-Applicability-End -->
+
+<!-- LetAppsSyncWithDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsSyncWithDevices
+```
+<!-- LetAppsSyncWithDevices-OmaUri-End -->
+
+<!-- LetAppsSyncWithDevices-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.
+<!-- LetAppsSyncWithDevices-Description-End -->
+
+<!-- LetAppsSyncWithDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+The most restrictive value is `2` to deny apps syncing with devices.
+
+<!-- LetAppsSyncWithDevices-Editable-End -->
+
+<!-- LetAppsSyncWithDevices-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LetAppsSyncWithDevices-DFProperties-End -->
+
+<!-- LetAppsSyncWithDevices-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User in control. |
+| 1 | Force allow. |
+| 2 | Force deny. |
+<!-- LetAppsSyncWithDevices-AllowedValues-End -->
+
+<!-- LetAppsSyncWithDevices-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsSyncWithDevices |
+| Friendly Name | Let Windows apps communicate with unpaired devices |
+| Element Name | Default for all apps |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsSyncWithDevices-GpMapping-End -->
+
+<!-- LetAppsSyncWithDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices-Examples-End -->
+
+<!-- LetAppsSyncWithDevices-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Begin -->
+## LetAppsSyncWithDevices_ForceAllowTheseApps
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Applicability-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps
+```
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-OmaUri-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Description-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Editable-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-DFProperties-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsSyncWithDevices |
+| Friendly Name | Let Windows apps communicate with unpaired devices |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-GpMapping-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Examples-End -->
+
+<!-- LetAppsSyncWithDevices_ForceAllowTheseApps-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Begin -->
+## LetAppsSyncWithDevices_ForceDenyTheseApps
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Applicability-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps
+```
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-OmaUri-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Description-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Editable-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-DFProperties-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsSyncWithDevices |
+| Friendly Name | Let Windows apps communicate with unpaired devices |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-GpMapping-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Examples-End -->
+
+<!-- LetAppsSyncWithDevices_ForceDenyTheseApps-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Begin -->
+## LetAppsSyncWithDevices_UserInControlOfTheseApps
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Applicability-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps
+```
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-OmaUri-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Description-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Editable-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-DFProperties-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | LetAppsSyncWithDevices |
+| Friendly Name | Let Windows apps communicate with unpaired devices |
+| Location | Computer Configuration |
+| Path | Windows Components > App Privacy |
+| Registry Key Name | Software\Policies\Microsoft\Windows\AppPrivacy |
+| ADMX File Name | AppPrivacy.admx |
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-GpMapping-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Examples-End -->
+
+<!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-End -->
+
+<!-- PublishUserActivities-Begin -->
+## PublishUserActivities
+
+<!-- PublishUserActivities-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- PublishUserActivities-Applicability-End -->
+
+<!-- PublishUserActivities-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/PublishUserActivities
+```
+<!-- PublishUserActivities-OmaUri-End -->
+
+<!-- PublishUserActivities-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether User Activities can be published.
+If you enable this policy setting, activities of type User Activity are allowed to be published.
+If you disable this policy setting, activities of type User Activity are not allowed to be published.
+Policy change takes effect immediately.
+<!-- PublishUserActivities-Description-End -->
+
+<!-- PublishUserActivities-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+For more information, see [Windows activity history and your privacy](https://support.microsoft.com/windows/-windows-activity-history-and-your-privacy-2b279964-44ec-8c2f-e0c2-6779b07d2cbd).
+
+<!-- PublishUserActivities-Editable-End -->
+
+<!-- PublishUserActivities-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- PublishUserActivities-DFProperties-End -->
+
+<!-- PublishUserActivities-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. Apps/OS can't publish the user activities. |
+| 1 (Default) | Enabled. Apps/OS can publish the user activities. |
+<!-- PublishUserActivities-AllowedValues-End -->
+
+<!-- PublishUserActivities-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PublishUserActivities |
+| Friendly Name | Allow publishing of User Activities |
+| Location | Computer Configuration |
+| Path | System > OS Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | PublishUserActivities |
+| ADMX File Name | OSPolicy.admx |
+<!-- PublishUserActivities-GpMapping-End -->
+
+<!-- PublishUserActivities-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishUserActivities-Examples-End -->
+
+<!-- PublishUserActivities-End -->
+
+<!-- UploadUserActivities-Begin -->
+## UploadUserActivities
+
+<!-- UploadUserActivities-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+<!-- UploadUserActivities-Applicability-End -->
+
+<!-- UploadUserActivities-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Privacy/UploadUserActivities
+```
+<!-- UploadUserActivities-OmaUri-End -->
+
+<!-- UploadUserActivities-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether published User Activities can be uploaded.
+If you enable this policy setting, activities of type User Activity are allowed to be uploaded.
+If you disable this policy setting, activities of type User Activity are not allowed to be uploaded.
+Deletion of activities of type User Activity are independent of this setting.
+Policy change takes effect immediately.
+<!-- UploadUserActivities-Description-End -->
+
+<!-- UploadUserActivities-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+For more information, see [Windows activity history and your privacy](https://support.microsoft.com/windows/-windows-activity-history-and-your-privacy-2b279964-44ec-8c2f-e0c2-6779b07d2cbd).
+
+<!-- UploadUserActivities-Editable-End -->
+
+<!-- UploadUserActivities-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- UploadUserActivities-DFProperties-End -->
+
+<!-- UploadUserActivities-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- UploadUserActivities-AllowedValues-End -->
+
+<!-- UploadUserActivities-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | UploadUserActivities |
+| Friendly Name | Allow upload of User Activities |
+| Location | Computer Configuration |
+| Path | System > OS Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | UploadUserActivities |
+| ADMX File Name | OSPolicy.admx |
+<!-- UploadUserActivities-GpMapping-End -->
+
+<!-- UploadUserActivities-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UploadUserActivities-Examples-End -->
+
+<!-- UploadUserActivities-End -->
+
+<!-- Privacy-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Privacy-CspMoreInfo-End -->
+
+<!-- Privacy-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
