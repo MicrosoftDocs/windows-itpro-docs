@@ -45,7 +45,7 @@ Create a configuration profile that will set the required policies for Windows U
         - **Value**: Basic (*Basic is the minimum value, but it can be safely set to a higher value*)
         - **Setting**: Allow Update Compliance Processing
         - **Value**: Enabled
-    1. (*Recommended, but not required*):
+    1. Recommended settings, but not required:
         - **Setting**: Configure Telemetry Opt In Settings Ux
         - **Value**: Disabled (*By turning this setting on you are disabling the ability for a user to potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports*)
         - **Setting**: Configure Telemetry Opt In Change Notification
