@@ -28,9 +28,11 @@
     - name: Cloud Kerberos trust deployment
       href: hello-hybrid-cloud-kerberos-trust.md
     - name: Key trust deployment
-      href: hello-hybrid-key-trust.md
-    - name: New installation baseline
-      href: hello-hybrid-key-new-install.md
+      items: 
+      - name: Overview
+        href: hello-hybrid-key-trust.md
+      - name: Configure and validate the PKI
+        href: hello-hybrid-key-trust-validate-pki.md
     - name: Certificate trust deployment
       items: 
       - name: Overview
@@ -73,7 +75,7 @@
         href: hello-deployment-key-trust.md
       - name: Validate Active Directory prerequisites
         href: hello-key-trust-validate-ad-prereq.md
-      - name: Configure and validate Public Key Infrastructure (PKI)
+      - name: Configure and validate the PKI
         href: hello-key-trust-validate-pki.md
       - name: Prepare and deploy Active Directory Federation Services (AD FS)
         href: hello-key-trust-adfs.md

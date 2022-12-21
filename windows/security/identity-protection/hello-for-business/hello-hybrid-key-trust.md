@@ -16,7 +16,7 @@ Windows Hello for Business replaces password sign-in with strong authentication,
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure AD-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication and single sign-on to modern resources.
 
 > [!IMPORTANT]
-> Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the preferred deployment model if you do not need to support certificate authentication scenarios. For more information see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
+> Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. For more information see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
 
 ## Prerequisites
 
@@ -29,11 +29,11 @@ Hybrid Windows Hello for Business needs two directories:
 - an on-premises Active Directory
 - an Azure Active Directory tenant
 
-The two directories must be synchronized. You need [Azure AD Connect Sync][AZ-1] to synchronize user accounts from the on-premises Active Directory to Azure AD.\
+The two directories must be synchronized with [Azure AD Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Azure AD.\
 During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Azure AD. *Azure AD Connect Sync* synchronizes the Windows Hello for Business public key to Active Directory.
 
 > [!NOTE]
-> Windows Hello for Business Hybrid key trust is not supported if the users' on-premises domain cannot be added as a verified domain in Azure AD.
+> Windows Hello for Business Hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
 
 Ensure that you have [adequate Domain Controllers](/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers) in each Active Directory site where users will be authenticating with Windows Hello for Business.
 
@@ -41,12 +41,13 @@ Ensure that you have [adequate Domain Controllers](/windows/security/identity-pr
 
 Authentication to Azure AD can be configured with or without federation:
 
-- for non-federated environments, you must deploy [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) or [Azure Active Directory Pass-through-Authentication](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)</li><li>
-- for federated environments, you use Active Directory Federation Services (AD FS) or third-party federation services
+- for non-federated environments, you must deploy [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) or [Azure Active Directory Pass-through-Authentication](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- for federated environments, you can use Active Directory Federation Services (AD FS) or third-party federation services
 
 ### Device registration
 
-The Windows client devices where Windows Hello for Business will be provisioned, must be registered in Azure AD. This ensures that only approved computers are used with that Azure AD tenant. You can *Azure AD join* or *hybrid Azure AD join* to register devices to Azure AD. For *hybrid Azure AD join* devices, review the guidance on the [Plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan) page.
+The Windows client devices where Windows Hello for Business will be provisioned, must be registered in Azure AD. This ensures that only approved computers are used with that Azure AD tenant. You can *Azure AD join* or *hybrid Azure AD join* to register devices to Azure AD.\
+For *hybrid Azure AD joined* devices, review the guidance on the [Plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan) page.
 
 ### Public Key Infrastructure
 
