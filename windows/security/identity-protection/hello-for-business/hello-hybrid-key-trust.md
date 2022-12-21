@@ -56,11 +56,16 @@ An enterprise PKI is required as *trust anchor* for authentication. Domain contr
 
 The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication.\
 Hybrid deployments can use:
+
 - [Azure AD Multi-Factor Authentication](/azure/multi-factor-authentication/multi-factor-authentication)
 - A multi-factor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS
 
-Review the [Configure Azure AD Multi-Factor Authentication settings](/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section.|
-| Device management | Devices can be configured with group polices or through mobile device management (MDM) policies|
+For more information how to configure Azure AD Multi-Factor Authentication, see [Configure Azure AD Multi-Factor Authentication settings](/azure/multi-factor-authentication/multi-factor-authentication-whats-next).\
+For more information how to configure Active Directory Federation Services (AD FS) to provide additional multi-factor authentication, see [Configure Azure MFA as authentication provider with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
+
+### Device management
+
+To configure Windows Hello for Business, devices can be configured through a mobile device management (MDM) solution like Intune, or via group policy.
 
 ## Deployment steps
 
@@ -70,8 +75,7 @@ Once the prerequisites listed in the table above are met, deploying Windows Hell
 - Configure Windows Hello for Business settings
 - Provision Windows Hello for Business
 
-
-
+<!-->
 The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
 ### Configure AD - Creating Security Groups
 
@@ -177,7 +181,7 @@ Windows provides eight PIN Complexity Group Policy settings that give you granul
 ## Add users to the Windows Hello for Business Users group
 
 Users must receive the Windows Hello for Business group policy settings and have the proper permission to provision  Windows Hello for Business. You can provide users with these settings and permissions by adding the users or groups to the **Windows Hello for Business Users** group.   Users and groups who are not members of this group will not attempt to enroll for Windows Hello for Business.
-
+-->
 ## Provision Windows Hello for Business
 
 The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
