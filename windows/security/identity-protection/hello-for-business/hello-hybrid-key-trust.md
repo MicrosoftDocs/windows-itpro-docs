@@ -24,7 +24,7 @@ Hybrid environments are distributed systems that enable organizations to use on-
 | --- | --- |
 | Directories |Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory. Ensure that you have [adequate Domain Controllers](/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers) in each Active Directory site where users will be authenticating with Windows Hello for Business|
 | Directory synchronization | The two directories used in hybrid deployments must be synchronized. You need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory. In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure AD. Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  Windows Hello for Business Hybrid key trust is not supported if your users' on-premises domain cannot be added as a verified domain in Azure AD. Review the [Integrating on-prem directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](https://go.microsoft.com/fwlink/?LinkId=615771)|
-| Device registration| The devices must be registered to Azure Active Directory. This ensures that only approved computers are used with that Azure AD tenant. You can use Azure AD Join or Hybrid Azure AD Join to register devices to Azure Active Directory|
+| Device registration| The devices must be registered to Azure Active Directory. This ensures that only approved computers are used with that Azure AD tenant. You can use Azure AD Join or Hybrid Azure AD Join to register devices to Azure Active Directory Follow the guidance on the [How to configure hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment|
 | Public Key Infrastructure | An enterprise PKI is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them |
 | Authentication to Azure AD | Authentication to Azure AD can be configured with or without federation:<br><ul><li>for non-federated environments, you must deploy [Password Synchronization with Azure AD Connect](/azure/active-directory/hybrid/whatis-phs) or [Azure Active Directory Pass-through-Authentication](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)</li><li>for federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) or third-party federation services</li></ul>|
 |Multi-factor authentication|The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication. Hybrid deployments can use:<br><ul><li>Azure Multifactor Authentication (MFA) service</li><li>A multi-factor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS</li></ul>|Review the [What is Azure AD Multi-Factor Authentication](/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.Review the [Configure Azure AD Multi-Factor Authentication settings](/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section.|
@@ -35,22 +35,9 @@ Hybrid environments are distributed systems that enable organizations to use on-
 Once the prerequisites listed in the table above are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
 
 - Validate and configure a PKI
-- Validate directory synchronization and device registration
 - Configure Windows Hello for Business settings
 - Provision Windows Hello for Business
 
-## Configure Hybrid Azure AD join
-
-Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD.
-
-Follow the guidance on the [How to configure hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
-
-If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps:
-
-- Configure Azure AD Connect to sync the user's on-premises UPN to the onPremisesUserPrincipalName attribute in Azure AD.
-- Add the domain name of the on-premises UPN as a [verified domain](/azure/active-directory/fundamentals/add-custom-domain) in Azure AD.
-
-You can learn more about this scenario by reading [Review on-premises UPN support for Hybrid Azure Ad join](/azure/active-directory/devices/hybrid-azuread-join-plan#review-on-premises-ad-users-upn-support-for-hybrid-azure-ad-join).
 
 
 The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
