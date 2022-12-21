@@ -94,7 +94,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Classroom.cloud`                         | 1.40.0004         | Win32    | `NetSupport`                              |
 | `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
 | `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
-| `DRC INSIGHT Online Assessments`          | 12.0.0.0          | `Store`  | 'Data recognition Corporation`            |
+| `DRC INSIGHT Online Assessments`          | 12.0.0.0          | `Store`  | `Data recognition Corporation`            |
 | `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.8           | Win32    | `e-speaking`                              |
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
