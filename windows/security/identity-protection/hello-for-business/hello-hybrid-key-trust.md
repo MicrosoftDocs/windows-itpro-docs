@@ -208,6 +208,10 @@ This is the process that occurs after a user signs in, to enroll in Windows Hell
 > **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
 > Read [Azure AD Connect sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
 
+> [!div class="nextstepaction"]
+> [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-key-trust-validate-pki.md)
+
+
 <!--links-->
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd

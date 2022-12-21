@@ -101,6 +101,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 1. Close the console
 
 </details>
+<br>
 
 <details>
 <summary><b>Step 2: supersede existing domain controller certificates</b></summary>
@@ -131,6 +132,7 @@ The certificate template is configured to supersede all the certificate template
 > `Certutil -viewstore -enterprise NTAuth`
 
 </details>
+<br>
 
 <details>
 <summary><b>Step 3: unpublish Superseded Certificate Templates</b></summary>
@@ -147,6 +149,7 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 1. Repeat step 3 for the *Domain Controller Authentication* and *Kerberos Authentication* certificate templates
 
 </details>
+<br>
 
 <details>
 <summary><b>Step 4: publish certificate templates to the CA</b></summary>
@@ -165,6 +168,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Close the console
 
 </details>
+<br>
 
 ## Configure and deploy certificates to domain controllers
 
@@ -190,6 +194,7 @@ Domain controllers automatically request a certificate from the *Domain controll
 1. Close the **Group Policy Management Editor**
 
 </details>
+<br>
 
 <details>
 <summary><b>Step 6: deploy the domain controller auto certificate enrollment GPO</summary>
@@ -202,6 +207,7 @@ Sign in to domain controller or management workstations with *Domain Administrat
 1. Select **OK**
 
 </details>
+<br>
 
 ## Validate the configuration
 
@@ -241,4 +247,4 @@ Alternatively, you can forcefully trigger automatic certificate enrollment using
 Use the event logs to monitor certificate enrollment and archive. Review the configuration, such as publishing certificate templates to issuing certification authority and the allow auto enrollment permissions.
 
 > [!div class="nextstepaction"]
-> [Next: prepare and deploy AD FS >](hello-key-trust-adfs.md)
+> [Next: configure Windows Hello for Business policies >](hello-hybrid-key-trust-validate-pki.md)
