@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 manager: aaroncz
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: article
 ms.technology: itpro-security

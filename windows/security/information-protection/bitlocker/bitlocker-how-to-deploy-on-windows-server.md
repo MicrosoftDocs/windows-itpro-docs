@@ -7,7 +7,6 @@ ms.localizationpriority: medium
 author: frankroj
 ms.author: frankroj
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/08/2022
 ms.custom: bitlocker
@@ -16,7 +15,7 @@ ms.technology: itpro-security
 
 # BitLocker: How to deploy on Windows Server 2012 and later
 
-*Applies to:*
+**Applies to:**
 
 - Windows Server 2012
 - Windows Server 2012 R2

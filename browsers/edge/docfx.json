@@ -28,7 +28,7 @@
     ],
     "globalMetadata": {
       "recommendations": true,
-      "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
+      "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",
       "audience": "ITPro",

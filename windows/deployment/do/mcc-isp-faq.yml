@@ -2,24 +2,19 @@
 metadata:
   title: Microsoft Connected Cache Frequently Asked Questions
   description: The following article is a list of frequently asked questions for Microsoft Connected Cache.
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: amymzhou
   ms.author: amymzhou
   manager: aaroncz
-  audience: ITPro
   ms.collection:
-    - M365-security-compliance
     - highpri
   ms.topic: faq
   ms.date: 09/30/2022
-  ms.custom: seo-marvel-apr2020
+  ms.prod: windows-client
+  ms.technology: itpro-updates
 title: Microsoft Connected Cache Frequently Asked Questions
 summary: |
   **Applies to**
-  -   Windows 10
-  -   Windows 11
+  -   Windows 10 and later
   
 sections:
   - name: Ignored

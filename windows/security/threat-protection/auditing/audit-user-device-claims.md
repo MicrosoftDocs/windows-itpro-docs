@@ -13,6 +13,7 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit User/Device Claims

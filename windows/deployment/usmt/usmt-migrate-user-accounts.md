@@ -66,7 +66,7 @@ Links to detailed explanations of commands are available in the [Related article
     LoadState.exe  \\server\share\migration\mystore /i:MigDocs.xml /i:MigApp.xml
     ```
 
-## To migrate two domain accounts (User1 and User2) and move User1 from the Contoso domain to the Fabrikam domain
+## To migrate two domain accounts (User1 and User2) and move both accounts from the Contoso domain to the Fabrikam domain
 
 Links to detailed explanations of commands are available in the [Related articles](#related-articles) section.
 
@@ -83,7 +83,7 @@ Links to detailed explanations of commands are available in the [Related article
 4. Enter the following `LoadState.exe ` command line in a command prompt window:
 
     ```cmd
-    LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml
+    LoadState.exe  \\server\share\migration\mystore /mu:contoso\user1:fabrikam\user1 /mu:contoso\user2:fabrikam\user2 /i:MigDocs.xml /i:MigApp.xml
     ```
 
 ## Related articles

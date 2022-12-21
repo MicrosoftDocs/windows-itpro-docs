@@ -6,7 +6,6 @@ description: Windows Update for Business reports support information.
 ms.prod: windows-client
 author: mestew
 ms.author: mstewart
-ms.collection: M365-analytics
 ms.topic: article
 ms.date: 11/15/2022
 ms.technology: itpro-updates
@@ -51,8 +50,8 @@ You can open support requests directly from the Azure portal. If  the **Help + S
    - **Issue type** - ***Technical***
    - **Subscription** - Select the subscription used for Windows Update for Business reports
    - **Service** - ***My services***
-   - **Service type** - ***Monitoring and Management***
-   - **Problem type** - ***Windows Update for Business reports***
+   - **Service type** - Select ***Windows Update for Business reports*** under ***Monitoring and Management***
+
 
 1. Based on the information you provided, you'll be shown some **Recommended solutions** you can use to try to resolve the problem.
 1. Complete the **Additional details** tab and then create the request on the **Review + create** tab.

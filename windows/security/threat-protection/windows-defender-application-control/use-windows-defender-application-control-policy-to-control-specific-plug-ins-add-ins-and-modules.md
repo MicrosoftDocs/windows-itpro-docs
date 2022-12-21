@@ -11,11 +11,11 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.date: 11/02/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules 

@@ -45,45 +45,45 @@
       href: /windows-hardware/design/device-experiences/oem-highly-secure
 - name: Operating system security
   items:
-   - name: Overview
-     href: operating-system.md
-   - name: System security
-     items:
-     - name: Secure the Windows boot process
-       href: information-protection/secure-the-windows-10-boot-process.md
-     - name: Trusted Boot
-       href: trusted-boot.md
-     - name: Cryptography and certificate management
-       href: cryptography-certificate-mgmt.md
-     - name: The Windows Security app
-       href: threat-protection/windows-defender-security-center/windows-defender-security-center.md
-       items:
-       - name: Virus & threat protection
-         href: threat-protection\windows-defender-security-center\wdsc-virus-threat-protection.md
-       - name: Account protection
-         href: threat-protection\windows-defender-security-center\wdsc-account-protection.md
-       - name: Firewall & network protection
-         href: threat-protection\windows-defender-security-center\wdsc-firewall-network-protection.md
-       - name: App & browser control
-         href: threat-protection\windows-defender-security-center\wdsc-app-browser-control.md
-       - name: Device security
-         href: threat-protection\windows-defender-security-center\wdsc-device-security.md
-       - name: Device performance & health
-         href: threat-protection\windows-defender-security-center\wdsc-device-performance-health.md
-       - name: Family options
-         href: threat-protection\windows-defender-security-center\wdsc-family-options.md
-     - name: Security policy settings
-       href: threat-protection/security-policy-settings/security-policy-settings.md
-     - name: Security auditing
-       href: threat-protection/auditing/security-auditing-overview.md
-   - name: Encryption and data protection
-     href: encryption-data-protection.md
-     items:
-     - name: Encrypted Hard Drive
-       href: information-protection/encrypted-hard-drive.md
-     - name: BitLocker
-       href: information-protection/bitlocker/bitlocker-overview.md
-       items:
+    - name: Overview
+      href: operating-system.md
+    - name: System security
+      items:
+      - name: Secure the Windows boot process
+        href: information-protection/secure-the-windows-10-boot-process.md
+      - name: Trusted Boot
+        href: trusted-boot.md
+      - name: Cryptography and certificate management
+        href: cryptography-certificate-mgmt.md
+      - name: The Windows Security app
+        href: threat-protection/windows-defender-security-center/windows-defender-security-center.md
+        items:
+        - name: Virus & threat protection
+          href: threat-protection\windows-defender-security-center\wdsc-virus-threat-protection.md
+        - name: Account protection
+          href: threat-protection\windows-defender-security-center\wdsc-account-protection.md
+        - name: Firewall & network protection
+          href: threat-protection\windows-defender-security-center\wdsc-firewall-network-protection.md
+        - name: App & browser control
+          href: threat-protection\windows-defender-security-center\wdsc-app-browser-control.md
+        - name: Device security
+          href: threat-protection\windows-defender-security-center\wdsc-device-security.md
+        - name: Device performance & health
+          href: threat-protection\windows-defender-security-center\wdsc-device-performance-health.md
+        - name: Family options
+          href: threat-protection\windows-defender-security-center\wdsc-family-options.md
+      - name: Security policy settings
+        href: threat-protection/security-policy-settings/security-policy-settings.md
+      - name: Security auditing
+        href: threat-protection/auditing/security-auditing-overview.md
+    - name: Encryption and data protection
+      href: encryption-data-protection.md
+      items:
+      - name: Encrypted Hard Drive
+        href: information-protection/encrypted-hard-drive.md
+      - name: BitLocker
+        href: information-protection/bitlocker/bitlocker-overview.md
+        items:
         - name: Overview of BitLocker Device Encryption in Windows
           href: information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md
         - name: BitLocker frequently asked questions (FAQ)
@@ -136,40 +136,40 @@
         - name: Troubleshoot BitLocker
           items:
             - name: Troubleshoot BitLocker
-              href: information-protection/bitlocker/troubleshoot-bitlocker.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting
             - name: "BitLocker cannot encrypt a drive: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-issues
             - name: "Enforcing BitLocker policies by using Intune: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-intune-issues.md
+              href: /troubleshoot/windows-client/windows-security/enforcing-bitlocker-policies-by-using-intune-known-issues
             - name: "BitLocker Network Unlock: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-network-unlock-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-network-unlock-known-issues
             - name: "BitLocker recovery: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-recovery-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-recovery-known-issues
             - name: "BitLocker configuration: known issues"
-              href: information-protection/bitlocker/ts-bitlocker-config-issues.md
+              href: /troubleshoot/windows-client/windows-security/bitlocker-configuration-known-issues
             - name: Troubleshoot BitLocker and TPM issues
               items:
                 - name: "BitLocker cannot encrypt a drive: known TPM issues"
-                  href: information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues.md
+                  href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-tpm-issues
                 - name: "BitLocker and TPM: other known issues"
-                  href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
+                  href: /troubleshoot/windows-client/windows-security/bitlocker-and-tpm-other-known-issues
                 - name: Decode Measured Boot logs to track PCR changes
-                  href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
-     - name: Personal Data Encryption (PDE)
-       items:
-       - name: Personal Data Encryption (PDE) overview
-         href: information-protection/personal-data-encryption/overview-pde.md
-       - name: Personal Data Encryption (PDE) frequently asked questions (FAQ)
-         href: information-protection/personal-data-encryption/faq-pde.yml
-       - name: Configure Personal Data Encryption (PDE) in Intune
-         href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
-     - name: Configure S/MIME for Windows
-       href: identity-protection/configure-s-mime.md
-   - name: Network security
-     items:
-     - name: VPN technical guide
-       href: identity-protection/vpn/vpn-guide.md
-       items:
+                  href: /troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes
+    - name: Personal Data Encryption (PDE)
+      items:
+      - name: Personal Data Encryption (PDE) overview
+        href: information-protection/personal-data-encryption/overview-pde.md
+      - name: Personal Data Encryption (PDE) frequently asked questions (FAQ)
+        href: information-protection/personal-data-encryption/faq-pde.yml
+      - name: Configure Personal Data Encryption (PDE) in Intune
+        href: information-protection/personal-data-encryption/configure-pde-in-intune.md    
+    - name: Configure S/MIME for Windows
+      href: identity-protection/configure-s-mime.md
+    - name: Network security
+      items:
+      - name: VPN technical guide
+        href: identity-protection/vpn/vpn-guide.md
+        items:
         - name: VPN connection types
           href: identity-protection/vpn/vpn-connection-type.md
         - name: VPN routing decisions
@@ -192,17 +192,17 @@
           href: identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
         - name: Optimizing Office 365 traffic with the Windows VPN client
           href: identity-protection/vpn/vpn-office-365-optimization.md
-     - name: Windows Defender Firewall
-       href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-   - name: Windows security baselines
-     href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
-     items:
+      - name: Windows Defender Firewall
+        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
+    - name: Windows security baselines
+      href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
+      items:
       - name: Security Compliance Toolkit
         href: threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
       - name: Get support
         href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md
-   - name: Virus & threat protection
-     items:
+    - name: Virus & threat protection
+      items:
       - name: Overview
         href: threat-protection/index.md
       - name: Microsoft Defender Antivirus
@@ -219,8 +219,8 @@
         href: /microsoft-365/security/defender-endpoint/exploit-protection
       - name: Microsoft Defender for Endpoint
         href: /microsoft-365/security/defender-endpoint
-   - name: More Windows security
-     items:
+    - name: More Windows security
+      items:
       - name: Override Process Mitigation Options to help enforce app-related security policies
         href: threat-protection/override-mitigation-options-for-app-related-security-policies.md
       - name: Use Windows Event Forwarding to help with intrusion detection
@@ -230,9 +230,9 @@
       - name: Windows Information Protection (WIP)
         href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
         items:
-         - name: Create a WIP policy using Microsoft Intune
-           href: information-protection/windows-information-protection/overview-create-wip-policy.md
-           items:
+          - name: Create a WIP policy using Microsoft Intune
+            href: information-protection/windows-information-protection/overview-create-wip-policy.md
+            items:
             - name: Create a WIP policy in Microsoft Intune
               href: information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md
               items:
@@ -244,26 +244,26 @@
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
             - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
-         - name: Create a WIP policy using Microsoft Configuration Manager
-           href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
-           items:
+          - name: Create a WIP policy using Microsoft Configuration Manager
+            href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
+            items:
             - name: Create and deploy a WIP policy in Configuration Manager
               href: information-protection/windows-information-protection/create-wip-policy-using-configmgr.md
             - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
             - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
-         - name: Mandatory tasks and settings required to turn on WIP
-           href: information-protection/windows-information-protection/mandatory-settings-for-wip.md
-         - name: Testing scenarios for WIP
-           href: information-protection/windows-information-protection/testing-scenarios-for-wip.md
-         - name: Limitations while using WIP
-           href: information-protection/windows-information-protection/limitations-with-wip.md
-         - name: How to collect WIP audit event logs
-           href: information-protection/windows-information-protection/collect-wip-audit-event-logs.md
-         - name: General guidance and best practices for WIP
-           href: information-protection/windows-information-protection/guidance-and-best-practices-wip.md
-           items:
+          - name: Mandatory tasks and settings required to turn on WIP
+            href: information-protection/windows-information-protection/mandatory-settings-for-wip.md
+          - name: Testing scenarios for WIP
+            href: information-protection/windows-information-protection/testing-scenarios-for-wip.md
+          - name: Limitations while using WIP
+            href: information-protection/windows-information-protection/limitations-with-wip.md
+          - name: How to collect WIP audit event logs
+            href: information-protection/windows-information-protection/collect-wip-audit-event-logs.md
+          - name: General guidance and best practices for WIP
+            href: information-protection/windows-information-protection/guidance-and-best-practices-wip.md
+            items:
             - name: Enlightened apps for use with WIP
               href: information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip.md
             - name: Unenlightened and enlightened app behavior while using WIP
@@ -272,52 +272,59 @@
               href: information-protection/windows-information-protection/recommended-network-definitions-for-wip.md
             - name: Using Outlook Web Access with WIP
               href: information-protection/windows-information-protection/using-owa-with-wip.md
-         - name: Fine-tune WIP Learning
-           href: information-protection/windows-information-protection/wip-learning.md
-         - name: Disable WIP
-           href: information-protection/windows-information-protection/how-to-disable-wip.md
+          - name: Fine-tune WIP Learning
+            href: information-protection/windows-information-protection/wip-learning.md
+          - name: Disable WIP
+            href: information-protection/windows-information-protection/how-to-disable-wip.md
 - name: Application security
   items:
-   - name: Overview
-     href: apps.md
-   - name: Windows Defender Application Control and virtualization-based protection of code integrity
-     href: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
-   - name: Windows Defender Application Control
-     href: threat-protection\windows-defender-application-control\windows-defender-application-control.md
-   - name: Microsoft Defender Application Guard
-     href: threat-protection\microsoft-defender-application-guard\md-app-guard-overview.md
-   - name: Windows Sandbox
-     href: threat-protection/windows-sandbox/windows-sandbox-overview.md
-     items:
+    - name: Overview
+      href: apps.md
+    - name: Windows Defender Application Control and virtualization-based protection of code integrity
+      href: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+    - name: Windows Defender Application Control
+      href: threat-protection\windows-defender-application-control\windows-defender-application-control.md
+    - name: Microsoft Defender Application Guard
+      href: threat-protection\microsoft-defender-application-guard\md-app-guard-overview.md
+    - name: Windows Sandbox
+      href: threat-protection/windows-sandbox/windows-sandbox-overview.md
+      items:
         - name: Windows Sandbox architecture
           href: threat-protection/windows-sandbox/windows-sandbox-architecture.md
         - name: Windows Sandbox configuration
           href: threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md
-   - name: Microsoft Defender SmartScreen overview
-     href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
-     items:
+    - name: Microsoft Defender SmartScreen overview
+      href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
+      items:
         - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
           href: threat-protection\microsoft-defender-smartscreen\phishing-protection-microsoft-defender-smartscreen.md
-   - name: Configure S/MIME for Windows
-     href: identity-protection\configure-s-mime.md
-   - name: Windows Credential Theft Mitigation Guide Abstract
-     href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md
+    - name: Configure S/MIME for Windows
+      href: identity-protection\configure-s-mime.md
+    - name: Windows Credential Theft Mitigation Guide Abstract
+      href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md
 - name: User security and secured identity
   items:
     - name: Overview
       href: identity.md
-    - name: Windows Hello for Business
-      href: identity-protection/hello-for-business/index.yml
     - name: Windows credential theft mitigation guide
       href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+    - name: Passwordless
+      items:
+      - name: Windows Hello for Business
+        href: identity-protection/hello-for-business/index.yml
+      - name: FIDO 2 security keys
+        href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key?context=/windows/security/context/context
+    - name: Local Administrator Password Solution (LAPS)
+      href: /windows-server/identity/laps/laps-overview?context=/windows/security/context/context
     - name: Enterprise Certificate Pinning
       href: identity-protection/enterprise-certificate-pinning.md
-    - name: Protect derived domain credentials with Credential Guard
-      href: identity-protection/credential-guard/credential-guard.md
+    - name: Credential Guard
       items:
+        - name: Protect derived domain credentials with Credential Guard
+          href: identity-protection/credential-guard/credential-guard.md
         - name: How Credential Guard works
           href: identity-protection/credential-guard/credential-guard-how-it-works.md
-        - name: Credential Guard Requirements
+        - name: Requirements
           href: identity-protection/credential-guard/credential-guard-requirements.md
         - name: Manage Credential Guard
           href: identity-protection/credential-guard/credential-guard-manage.md
@@ -327,30 +334,32 @@
           href: identity-protection/credential-guard/credential-guard-protection-limits.md
         - name: Considerations when using Credential Guard
           href: identity-protection/credential-guard/credential-guard-considerations.md
-        - name: "Credential Guard: Additional mitigations"
+        - name: Additional mitigations
           href: identity-protection/credential-guard/additional-mitigations.md
-        - name: "Credential Guard: Known issues"
+        - name: Known issues
           href: identity-protection/credential-guard/credential-guard-known-issues.md
-    - name: Protect Remote Desktop credentials with Remote Credential Guard
+    - name: Remote Credential Guard
       href: identity-protection/remote-credential-guard.md
     - name: Configuring LSA Protection
       href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
     - name: Technical support policy for lost or forgotten passwords
       href: identity-protection/password-support-policy.md
-    - name: Access Control Overview
-      href: identity-protection/access-control/access-control.md
+    - name: Access Control
       items:
+        - name: Overview
+          href: identity-protection/access-control/access-control.md
         - name: Local Accounts
           href: identity-protection/access-control/local-accounts.md
-        - name: User Account Control
+    - name: User Account Control (UAC)
+      items:
+        - name: Overview
           href: identity-protection/user-account-control/user-account-control-overview.md
-          items:
-            - name: How User Account Control works
-              href: identity-protection/user-account-control/how-user-account-control-works.md
-            - name: User Account Control security policy settings
-              href: identity-protection/user-account-control/user-account-control-security-policy-settings.md
-            - name: User Account Control Group Policy and registry key settings
-              href: identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md
+        - name: How User Account Control works
+          href: identity-protection/user-account-control/how-user-account-control-works.md
+        - name: User Account Control security policy settings
+          href: identity-protection/user-account-control/user-account-control-security-policy-settings.md
+        - name: User Account Control Group Policy and registry key settings
+          href: identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md
     - name: Smart Cards
       href: identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference.md
       items:
@@ -396,14 +405,14 @@
               href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
 - name: Cloud services
   items:
-   - name: Overview
-     href: cloud.md
-   - name: Mobile device management
-     href: /windows/client-management/mdm/
-   - name: Windows 365 Cloud PCs
-     href: /windows-365/overview
-   - name: Azure Virtual Desktop
-     href: /azure/virtual-desktop/
+    - name: Overview
+      href: cloud.md
+    - name: Mobile device management
+      href: /windows/client-management/mdm/
+    - name: Windows 365 Cloud PCs
+      href: /windows-365/overview
+    - name: Azure Virtual Desktop
+      href: /azure/virtual-desktop/
 - name: Security foundations
   items:
     - name: Overview

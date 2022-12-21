@@ -1,22 +1,19 @@
 ### YamlMime:Landing
 
-title: Windows security # < 60 chars
-summary: Built with Zero Trust principles at the core to safeguard data and access anywhere, keeping you protected and productive.  # < 160 chars
+title: Windows security
+summary: Built with Zero Trust principles at the core to safeguard data and access anywhere, keeping you protected and productive.
 
 metadata:
-  title: Windows security # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about Windows security # Required; article description that is displayed in search results. < 160 chars.
+  title: Windows security
+  description: Learn about Windows security technologies and how to use them to protect your data and devices.
   ms.topic: landing-page
   ms.prod: windows-client
   ms.technology: itpro-security
   ms.collection:
-    - m365-security-compliance
     - highpri
-  ms.custom: intro-hub-or-landing
   author: paolomatarazzo
   ms.author: paoloma
-  ms.date: 09/20/2021
-  localization_priority: Priority
+  ms.date: 12/19/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

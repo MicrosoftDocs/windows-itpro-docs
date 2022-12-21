@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6404(-): BranchCache: Hosted cache could not be authenticated using the provisioned SSL certificate.

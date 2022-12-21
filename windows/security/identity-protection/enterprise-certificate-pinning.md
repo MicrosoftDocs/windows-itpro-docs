@@ -4,7 +4,6 @@ description: Enterprise certificate pinning is a Windows feature for remembering
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
-ms.collection: M365-identity-device-management
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-security

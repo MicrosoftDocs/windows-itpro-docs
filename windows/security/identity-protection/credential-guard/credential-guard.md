@@ -1,24 +1,13 @@
 ---
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows)
 description: Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: erikdau
-manager: aaroncz
-ms.collection: 
-  - M365-identity-device-management
-  - highpri
+ms.date: 11/22/2022
 ms.topic: article
-ms.date: 03/10/2022
+ms.collection: 
+  - highpri
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # Protect derived domain credentials with Windows Defender Credential Guard
@@ -27,11 +16,13 @@ Windows Defender Credential Guard uses virtualization-based security to isolate 
 
 By enabling Windows Defender Credential Guard, the following features and solutions are provided:
 
--   **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
--   **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
--   **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Windows Defender Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate other security strategies and architectures.
+- **Hardware security** NTLM, Kerberos, and Credential Manager take advantage of platform security features, including Secure Boot and virtualization, to protect credentials.
+- **Virtualization-based security** Windows NTLM and Kerberos derived credentials and other secrets run in a protected environment that is isolated from the running operating system.
+- **Better protection against advanced persistent threats** When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Windows Defender Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate other security strategies and architectures.
 
- 
+> [!NOTE]
+> As of Windows 11, version 22H2, Windows Defender Credential Guard has been enabled by default on all devices which meet the minimum requirements as specified in the [Default Enablement](credential-guard-manage.md#default-enablement) section. For information about known issues related to default enablement, see [Credential Guard: Known Issues](credential-guard-known-issues.md#known-issue-single-sign-on-sso-for-network-services-breaks-after-upgrading-to-windows-11-version-22h2).
+
 ## Related topics
 
 - [Protecting network passwords with Windows Defender Credential Guard](https://www.microsoft.com/itshowcase/Article/Content/831/Protecting-network-passwords-with-Windows-10-Credential-Guard)

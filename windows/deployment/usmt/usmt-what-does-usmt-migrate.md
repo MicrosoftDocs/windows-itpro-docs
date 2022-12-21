@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
 author: frankroj
-ms.date: 11/01/2022
+ms.date: 11/23/2022
 ms.topic: article
 ms.technology: itpro-deploy
 ---
@@ -53,7 +53,7 @@ This section describes the user data that USMT migrates by default, using the `M
   - Favorites
 
   > [!IMPORTANT]
-  > Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-doesnt-migrate-the-start-layout).
+  > Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
 
 - **Folders from the All Users and Public profiles.** When you specify the `MigUser.xml` file, USMT also migrates the following from the **Public** profile in Windows Vista, Windows 7, Windows 8, or Windows 10:
 
@@ -77,6 +77,9 @@ This section describes the user data that USMT migrates by default, using the `M
 
   > [!NOTE]
   > The asterisk (`*`) stands for zero or more characters.
+
+  > [!NOTE]
+  > The OpenDocument extensions (`*.odt`, `*.odp`, `*.ods`) that Microsoft Office applications can use aren't migrated by default.
 
 - **Access control lists.** USMT migrates access control lists (ACLs) for specified files and folders from computers running both Windows® XP and Windows Vista. For example, if you migrate a file named `File1.txt` that is **read-only** for **User1** and **read/write** for **User2**, these settings will still apply on the destination computer after the migration.
 
@@ -206,7 +209,7 @@ When you specify the `MigApp.xml` file, USMT migrates the settings for the follo
 
 ## What USMT doesn't migrate
 
-The following items are settings that USMT doesn't migrate. If you're having a problem that isn't listed here, see [Common issues](usmt-common-issues.md).
+The following items are settings that USMT doesn't migrate. If you're having a problem that isn't listed here, see [Common issues](/troubleshoot/windows-client/deployment/usmt-common-issues).
 
 ### Application settings
 
@@ -244,7 +247,7 @@ You should also note the following items:
 
 ### Start menu layout
 
-Starting in Windows 10, version 1607 the USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-doesnt-migrate-the-start-layout).
+Starting in Windows 10, version 1607 the USMT doesn't migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](/troubleshoot/windows-client/deployment/usmt-common-issues#usmt-doesnt-migrate-the-start-layout).
 
 ### User profiles from Active Directory to Azure Active Directory
 

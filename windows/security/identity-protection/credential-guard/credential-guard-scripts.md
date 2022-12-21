@@ -1,23 +1,20 @@
 ---
 title: Scripts for Certificate Issuance Policies in Windows Defender Credential Guard (Windows)
 description: Obtain issuance policies from the certificate authority for Windows Defender Credential Guard on Windows.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: erikdau
-manager: aaroncz
-ms.collection: M365-identity-device-management
-ms.topic: article
-ms.date: 08/17/2017
-ms.technology: itpro-security
+ms.date: 11/22/2022
+ms.topic: reference
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
-# Windows Defender Credential Guard: Scripts for Certificate Authority Issuance Policies
+# Windows Defender Credential Guard: scripts for certificate authority issuance policies
 
-Here is a list of scripts mentioned in this topic.
+Expand each section to see the PowerShell scripts:
 
-## <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
+<br>
+<details>
+<summary><b>Get the available issuance policies on the certificate authority</b></summary>
 
 Save this script file as get-IssuancePolicy.ps1.
 
@@ -207,8 +204,12 @@ write-host "There are no issuance policies which are not mapped to groups"
 ```
 > [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
- 
-## <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+
+</details>
+
+<br>
+<details>
+<summary><b>Link an issuance policy to a group</b></summary>
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 
@@ -489,3 +490,5 @@ write-host $tmp -Foreground Red
 
 > [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
+
+</details>

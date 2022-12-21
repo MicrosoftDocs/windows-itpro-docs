@@ -1,28 +1,21 @@
 ### YamlMime:FAQ
 metadata:
-  title: BitLocker Upgrading FAQ (Windows 10)
+  title: BitLocker Upgrading FAQ
   description: Learn more about upgrading systems that have BitLocker enabled. Find frequently asked questions, such as, "Can I upgrade to Windows 10 with BitLocker enabled?"
   ms.prod: windows-client
   ms.technology: itpro-security
-  ms.mktglfcycl: explore
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
-  audience: ITPro
-  ms.collection: M365-security-compliance
   ms.topic: faq
   ms.date: 11/08/2022
   ms.reviewer: 
   ms.custom: bitlocker
 title: BitLocker Upgrading FAQ
 summary: |
-  *Applies to:*
-  - Windows 10
-  - Windows 11
-  - Windows Server 2016 and above
+  **Applies to:**
+  - Windows 10 and later
+  - Windows Server 2016 and later
   
 
 sections:

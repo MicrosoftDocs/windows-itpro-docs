@@ -4,22 +4,17 @@ metadata:
   description: Familiarize yourself with BitLocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
   ms.prod: windows-client
   ms.technology: itpro-security
-  ms.mktglfcycl: explore
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
   audience: ITPro
-  ms.collection: M365-security-compliance
   ms.topic: faq
   ms.date: 11/08/2022
   ms.reviewer: 
   ms.custom: bitlocker
 title: BitLocker Network Unlock FAQ
 summary: |
-  *Applies to:*
+  **Applies to:**
   - Windows 10
   - Windows 11
   - Windows Server 2016 and above

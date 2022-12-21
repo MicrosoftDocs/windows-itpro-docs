@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: paolomatarazzo
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: itpro-security
@@ -43,7 +42,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 4. In the navigation pane, right-click **Group Policy Objects** again, and then click **Paste**.
 
-  ![Screenshot that shows Copy Paste GPO.](/images/grouppolicy-paste.png)
+    :::image type="content" alt-text="Screenshot that shows Copy Paste GPO." source="images/grouppolicy-paste.png":::
 
 5. In the **Copy GPO** dialog box, click **Preserve the existing permissions**, and then click **OK**. Selecting this option preserves any exception groups to which you denied Read and Apply GPO permissions, making the change simpler.
 

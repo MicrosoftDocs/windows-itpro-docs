@@ -9,12 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: vinaypamnani-msft
 ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy

@@ -9,6 +9,7 @@ ms.reviewer: gkomatsu
 manager: aaroncz
 ms.author: lizlong
 ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Create a provisioning package with multivariant settings
