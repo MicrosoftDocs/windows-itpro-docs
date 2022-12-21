@@ -62,7 +62,7 @@ If you don't have an existing PKI, review [Certification Authority Guidance](/pr
 Expand the following sections to configure the PKI for Windows Hello for Business.
 
 <details>
-<summary><b>Configure domain controller certificates</b></summary>
+<summary><b>Step 1: configure domain controller certificates</b></summary>
 
 Clients must trust the domain controllers, and the best way to do it is to ensure each domain controller has a *Kerberos Authentication* certificate. Installing a certificate on the domain controllers enables the Key Distribution Center (KDC) to prove its identity to other members of the domain. The certificates provide clients a root of trust external to the domain, namely the *enterprise certification authority*.
 
@@ -103,7 +103,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 </details>
 
 <details>
-<summary><b>Supersede existing domain controller certificates</b></summary>
+<summary><b>Step 2: supersede existing domain controller certificates</b></summary>
 
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension. 
 
@@ -133,7 +133,7 @@ The certificate template is configured to supersede all the certificate template
 </details>
 
 <details>
-<summary><b>Unpublish Superseded Certificate Templates</b></summary>
+<summary><b>Step 3: unpublish Superseded Certificate Templates</b></summary>
 
 The certification authority only issues certificates based on published certificate templates. For security, it's a good practice to unpublish certificate templates that the CA isn't configured to issue. This includes the pre-published certificate template from the role installation and any superseded certificate templates.
 
@@ -149,7 +149,7 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 </details>
 
 <details>
-<summary><b>Publish certificate templates to the CA</b></summary>
+<summary><b>Step 4: publish certificate templates to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -171,7 +171,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 Expand the following sections to configure the group policy for domain controllers and validate the certificate deployment.
 
 <details>
-<summary><b>Configure automatic certificate enrollment for the domain controllers</summary>
+<summary><b>Step 5: configure automatic certificate enrollment for the domain controllers</summary>
 
 Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. To continue automatic enrollment and renewal of domain controller certificates, create and configure a Group Policy Object (GPO) for automatic certificate enrollment, linking the Group Policy object to the *Domain Controllers* Organizational Unit (OU).
 
@@ -192,7 +192,7 @@ Domain controllers automatically request a certificate from the *Domain controll
 </details>
 
 <details>
-<summary><b>Deploy the domain controller auto certificate enrollment GPO</summary>
+<summary><b>Step 6: deploy the domain controller auto certificate enrollment GPO</summary>
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
