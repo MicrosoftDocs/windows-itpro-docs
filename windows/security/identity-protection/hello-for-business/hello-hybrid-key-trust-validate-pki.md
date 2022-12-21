@@ -61,7 +61,6 @@ If you don't have an existing PKI, review [Certification Authority Guidance](/pr
 
 Expand the following sections to configure the PKI for Windows Hello for Business.
 
-<br>
 <details>
 <summary><b>Configure domain controller certificates</b></summary>
 
@@ -103,9 +102,8 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 
 </details>
 
-<br>
 <details>
-<summary><b>Supersede existing domain controller certificates</b></summary>
+<summary><h2>Supersede existing domain controller certificates</h2></summary>
 
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension. 
 
@@ -134,7 +132,6 @@ The certificate template is configured to supersede all the certificate template
 
 </details>
 
-<br>
 <details>
 <summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
@@ -151,7 +148,6 @@ Sign in to the CA or management workstation with *Enterprise Administrator* equi
 
 </details>
 
-<br>
 <details>
 <summary><b>Publish certificate templates to the CA</b></summary>
 
