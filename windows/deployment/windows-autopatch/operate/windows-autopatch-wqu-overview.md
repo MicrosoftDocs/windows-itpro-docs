@@ -117,7 +117,7 @@ There are two statuses associated with paused quality updates, **Service Paused*
 | Status | Description |
 | ----- | ------ |
 | Service Paused | If the Microsoft Managed Desktop service has paused an update, the release will have the **Service Paused** status. You must [submit a support request](windows-autopatch-support-request.md) to resume the update. |
-| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Microsoft Managed Desktop service can't overwrite a customer-initiated pause. You must select Resume to resume the update. |
+| Customer Paused | If you've paused an update, the release will have the **Customer Paused** status. The Microsoft Managed Desktop service can't overwrite a customer-initiated pause. You must select **Resume** to resume the update. |
 
 ## Incidents and outages
 
