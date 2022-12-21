@@ -1,86 +1,97 @@
 ---
-title: Policy CSP - ADMX_WordWheel
-description: Policy CSP - ADMX_WordWheel
+title: ADMX_WordWheel Policy CSP
+description: Learn more about the ADMX_WordWheel Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 12/21/2022
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 09/22/2021
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_WordWheel-Begin -->
 # Policy CSP - ADMX_WordWheel
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_WordWheel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WordWheel-Editable-End -->
 
-<!--Policies-->
-## ADMX_WordWheel policies
+<!-- CustomSearch-Begin -->
+## CustomSearch
 
-<dl>
-  <dd>
-    <a href="#admx-wordwheel-customsearch">ADMX_WordWheel/CustomSearch</a>
-  </dd>
-</dl>
+<!-- CustomSearch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomSearch-Applicability-End -->
 
+<!-- CustomSearch-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WordWheel/CustomSearch
+```
+<!-- CustomSearch-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-wordwheel-customsearch"></a>**ADMX_WordWheel/CustomSearch**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- CustomSearch-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Set up the menu name and URL for the custom Internet search provider.
 
-- If you enable this setting, the specified menu name and URL will be used for Internet searches.
-- If you disable or not configure this setting, the default Internet search provider will be used.
+If you enable this setting, the specified menu name and URL will be used for Internet searches.
 
-<!--/Description-->
+If you disable or not configure this setting, the default Internet search provider will be used.
+<!-- CustomSearch-Description-End -->
 
+<!-- CustomSearch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomSearch-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Custom Instant Search Internet search provider*
--   GP name: *CustomSearch*
--   GP path: *Windows Components\Instant Search*
--   GP ADMX file name: *WordWheel.admx*
+<!-- CustomSearch-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomSearch-DFProperties-End -->
 
+<!-- CustomSearch-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--/Policies-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | CustomSearch |
+| Friendly Name | Custom Instant Search Internet search provider |
+| Location | User Configuration |
+| Path | Windows Components > Instant Search |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\SearchExtensions |
+| ADMX File Name | WordWheel.admx |
+<!-- CustomSearch-AdmxBacked-End -->
+
+<!-- CustomSearch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomSearch-Examples-End -->
+
+<!-- CustomSearch-End -->
+
+<!-- ADMX_WordWheel-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WordWheel-CspMoreInfo-End -->
+
+<!-- ADMX_WordWheel-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
