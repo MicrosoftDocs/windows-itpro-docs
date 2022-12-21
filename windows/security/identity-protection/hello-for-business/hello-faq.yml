@@ -38,7 +38,7 @@ sections:
 
       - question: What about convenience PIN?
         answer: |
-          A Convenience Pin is used for sign-in (Windows Hello gesture only) which includes PIN, and Biometrics sign-in to the PC is not compatible with WHFB or with Hybrid AAD Join. Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication. Microsoft recommends that customers using Windows 10 and convenience PINs should move to Windows Hello for Business. New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
+          A convenience PIN is used for sign-in (Windows Hello gesture only) which includes a PIN, and biometrics sign-in to the device is not compatible with Windows Hellow for Business or with Hybrid Azure AD join. Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it still uses a password for authentication. We recommend that customers using Windows 10 and convenience PINs move to Windows Hello for Business. New Windows 10 deployments should deploy Windows Hello for Business, not convenience PINs. Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
 
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
