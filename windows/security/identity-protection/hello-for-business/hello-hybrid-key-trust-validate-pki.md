@@ -40,7 +40,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
     Install-AdcsCertificationAuthority
     ```
 
-## Configure a PKI
+## Configure the enterprise PKI
 
 If you don't have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
 
@@ -103,7 +103,7 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
 </details>
 
 <details>
-<summary><h2>Supersede existing domain controller certificates</h2></summary>
+<summary><b>Supersede existing domain controller certificates</b></summary>
 
 The domain controllers may have an existing domain controller certificate. The Active Directory Certificate Services provides a default certificate template for domain controllers called *domain controller certificate*. Later releases of Windows Server provided a new certificate template called *domain controller authentication certificate*. These certificate templates were provided prior to the update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the *KDC Authentication* extension. 
 
@@ -166,7 +166,12 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 
 </details>
 
-### Configure automatic certificate enrollment for the domain controllers
+## Configure and deploy certificates to domain controllers
+
+Expand the following sections to configure the group policy for domain controllers and validate the certificate deployment.
+
+<details>
+<summary><b>Configure automatic certificate enrollment for the domain controllers</summary>
 
 Domain controllers automatically request a certificate from the *Domain controller certificate* template. However, domain controllers are unaware of newer certificate templates or superseded configurations on certificate templates. To continue automatic enrollment and renewal of domain controller certificates, create and configure a Group Policy Object (GPO) for automatic certificate enrollment, linking the Group Policy object to the *Domain Controllers* Organizational Unit (OU).
 
@@ -184,7 +189,10 @@ Domain controllers automatically request a certificate from the *Domain controll
 1. Select **OK**
 1. Close the **Group Policy Management Editor**
 
-### Deploy the domain controller auto certificate enrollment GPO
+</details>
+
+<details>
+<summary><b>Deploy the domain controller auto certificate enrollment GPO</summary>
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 
@@ -192,6 +200,8 @@ Sign in to domain controller or management workstations with *Domain Administrat
 1. In the navigation pane, expand the domain and expand the node with the Active Directory domain name. Right-click the **Domain Controllers** organizational unit and select **Link an existing GPO…**
 1. In the **Select GPO** dialog box, select *Domain Controller Auto Certificate Enrollment* or the name of the domain controller certificate enrollment Group Policy object you previously created
 1. Select **OK**
+
+</details>
 
 ## Validate the configuration
 
