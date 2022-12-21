@@ -20,14 +20,46 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 ## Prerequisites
 
-| Requirement | Notes |
-| --- | --- |
-| Directories |Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory. Ensure that you have [adequate Domain Controllers](/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers) in each Active Directory site where users will be authenticating with Windows Hello for Business|
-| Directory synchronization | The two directories used in hybrid deployments must be synchronized. You need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory. In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure AD. Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  Windows Hello for Business Hybrid key trust is not supported if your users' on-premises domain cannot be added as a verified domain in Azure AD. Review the [Integrating on-prem directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](https://go.microsoft.com/fwlink/?LinkId=615771)|
-| Device registration| The devices must be registered to Azure Active Directory. This ensures that only approved computers are used with that Azure AD tenant. You can use Azure AD Join or Hybrid Azure AD Join to register devices to Azure Active Directory Follow the guidance on the [How to configure hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment|
-| Public Key Infrastructure | An enterprise PKI is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them |
-| Authentication to Azure AD | Authentication to Azure AD can be configured with or without federation:<br><ul><li>for non-federated environments, you must deploy [Password Synchronization with Azure AD Connect](/azure/active-directory/hybrid/whatis-phs) or [Azure Active Directory Pass-through-Authentication](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)</li><li>for federated environments, you can deploy Windows Hello for Business key trust using Active Directory Federation Services (AD FS) or third-party federation services</li></ul>|
-|Multi-factor authentication|The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication. Hybrid deployments can use:<br><ul><li>Azure Multifactor Authentication (MFA) service</li><li>A multi-factor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS</li></ul>|Review the [What is Azure AD Multi-Factor Authentication](/azure/multi-factor-authentication/multi-factor-authentication) topic to familiarize yourself its purpose and how it works.Review the [Configure Azure AD Multi-Factor Authentication settings](/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section.|
+Review the following section to ensure that you have the required prerequisites for a hybrid key trust deployment.
+
+### Directories and directory synchronization
+
+Hybrid Windows Hello for Business needs two directories:
+
+- an on-premises Active Directory
+- an Azure Active Directory tenant
+
+The two directories must be synchronized. You need [Azure AD Connect Sync][AZ-1] to synchronize user accounts from the on-premises Active Directory to Azure AD.\
+During the Window Hello for Business provisioning process, users register the public portion of their Windows Hello for Business credential with Azure AD. *Azure AD Connect Sync* synchronizes the Windows Hello for Business public key to Active Directory.
+
+> [!NOTE]
+> Windows Hello for Business Hybrid key trust is not supported if the users' on-premises domain cannot be added as a verified domain in Azure AD.
+
+Ensure that you have [adequate Domain Controllers](/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers) in each Active Directory site where users will be authenticating with Windows Hello for Business.
+
+### Authentication to Azure AD
+
+Authentication to Azure AD can be configured with or without federation:
+
+- for non-federated environments, you must deploy [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) or [Azure Active Directory Pass-through-Authentication](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)</li><li>
+- for federated environments, you use Active Directory Federation Services (AD FS) or third-party federation services
+
+### Device registration
+
+The Windows client devices where Windows Hello for Business will be provisioned, must be registered in Azure AD. This ensures that only approved computers are used with that Azure AD tenant. You can *Azure AD join* or *hybrid Azure AD join* to register devices to Azure AD. For *hybrid Azure AD join* devices, review the guidance on the [Plan your hybrid Azure Active Directory join implementation](/azure/active-directory/devices/hybrid-azuread-join-plan) page.
+
+### Public Key Infrastructure
+
+An enterprise PKI is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them.
+
+### Multi-factor authentication
+
+The Windows Hello for Business provisioning process lets a user enroll in Windows Hello for Business using their user name and password as one factor, but requires a second factor of authentication.\
+Hybrid deployments can use:
+- [Azure AD Multi-Factor Authentication](/azure/multi-factor-authentication/multi-factor-authentication)
+- A multi-factor authentication provided by AD FS, which includes an adapter model that enables third parties to integrate their MFA into AD FS
+
+Review the [Configure Azure AD Multi-Factor Authentication settings](/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section.|
 | Device management | Devices can be configured with group polices or through mobile device management (MDM) policies|
 
 ## Deployment steps
@@ -162,10 +194,9 @@ This is the process that occurs after a user signs in, to enroll in Windows Hell
 1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
 1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
 1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
+1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory
 
 :::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
-
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory.
 
 > [!IMPORTANT]
 > The minimum time needed to synchronize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval.
@@ -173,5 +204,6 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 > Read [Azure AD Connect sync: Scheduler][AZ-5] to view and adjust the **synchronization cycle** for your organization.
 
 <!--links-->
+[AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 [AZ-5]: /azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler
