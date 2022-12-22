@@ -10,6 +10,7 @@ ms.topic: article
 ms.technology: itpro-updates
 ms.collection: 
   - highpri
+ms.date: 12/31/2017
 ---
 
 # Safeguard holds
@@ -31,9 +32,9 @@ IT admins managing updates using the [Windows Update for Business deployment ser
 
 ## Am I affected by a safeguard hold?
 
-IT admins can use [Update Compliance](update-compliance-monitor.md) to monitor various update health metrics for devices in their organization. Update Compliance provides a [Safeguard Holds report](/windows/deployment/update/update-compliance-safeguard-holds), as well as [queries in the Feature Update Status report](/windows/deployment/update/update-compliance-feature-update-status), to provide you insight into the safeguard holds that are preventing devices from updating or upgrading.
+IT admins can use [Windows Update for Business reports](wufb-reports-overview.md) to monitor various update health metrics for devices in their organization. The reports provide a list of [active Safeguard Holds](wufb-reports-workbook.md#bkmk_update-group-feature) to provide you insight into the safeguard holds that are preventing devices from updating or upgrading.
 
-The Update Compliance reports identify safeguard holds by their 8-digit identifiers. For safeguard holds associated with publicly discussed known issues, you can find additional details about the issue on the [Windows release health](/windows/release-health/) dashboard by searching for the safeguard hold ID on the **Known issues** page for the relevant release.
+Windows Update for Business reports identifies safeguard holds by their 8-digit identifiers. For safeguard holds associated with publicly discussed known issues, you can find additional details about the issue on the [Windows release health](/windows/release-health/) dashboard by searching for the safeguard hold ID on the **Known issues** page for the relevant release.
 
 On devices that use Windows Update (but not Windows Update for Business), the **Windows Update** page in the Settings app displays a message stating that an update is on its way, but not ready for the device. Instead of the option to download and install the update, users will see this message:
 
@@ -48,4 +49,4 @@ We recommend that you do not attempt to manually update until issues have been r
 > [!CAUTION]
 > Opting out of a safeguard hold can put devices at risk from known performance issues. We strongly recommend that you complete robust testing to ensure the impact is acceptable before opting out.
   
-With that in mind, IT admins who stay informed with [Update Compliance](update-compliance-feature-update-status.md#safeguard-holds) and the [Windows release health](/windows/release-health/) dashboard can choose to temporarily [opt-out of the protection of all safeguard holds](safeguard-opt-out.md) and allow an update to proceed. We recommend opting out only in an IT environment and for validation purposes. If you do opt out of a hold, this condition is temporary. Once an update is complete, the protection of safeguard holds is reinstated automatically.
+With that in mind, IT admins who stay informed with [Windows Update for Business reports](wufb-reports-overview.md) and the [Windows release health](/windows/release-health/) dashboard can choose to temporarily [opt-out of the protection of all safeguard holds](safeguard-opt-out.md) and allow an update to proceed. We recommend opting out only in an IT environment and for validation purposes. If you do opt out of a hold, this condition is temporary. Once an update is complete, the protection of safeguard holds is reinstated automatically.

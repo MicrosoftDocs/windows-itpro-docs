@@ -2,6 +2,7 @@
 title: Activate clients running Windows 10 (Windows 10)
 description: After you have configured Key Management Service (KMS) or Active Directory-based activation on your network, activating a client running Windows 10 is easy.
 ms.reviewer: 
+  - nganguly
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -14,7 +15,7 @@ ms.technology: itpro-fundamentals
 
 # Activate clients running Windows 10
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 8.1

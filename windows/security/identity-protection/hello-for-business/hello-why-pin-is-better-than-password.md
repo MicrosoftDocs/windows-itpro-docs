@@ -2,7 +2,6 @@
 title: Why a PIN is better than an online password (Windows)
 description: Windows Hello enables users to sign in to their device using a PIN. How is a PIN different from (and better than) an online password.
 ms.collection: 
-  - M365-identity-device-management
   - highpri
 ms.date: 10/23/2017
 appliesto: 

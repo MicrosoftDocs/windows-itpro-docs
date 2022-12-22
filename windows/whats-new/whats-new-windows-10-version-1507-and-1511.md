@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, versions 1507 and 1511 for IT Pros

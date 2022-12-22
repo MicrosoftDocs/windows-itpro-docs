@@ -13,7 +13,6 @@ author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 04/19/2017

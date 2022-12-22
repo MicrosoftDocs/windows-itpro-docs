@@ -4,22 +4,17 @@ description: Learn how to deploy certificates to cloud Kerberos trust and key tr
 ms.collection: 
   - ContentEngagementFY23
 ms.topic: article
-localizationpriority: medium
 ms.date: 11/15/2022
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-ms.technology: itpro-security
 ---
 
 # Deploy certificates for remote desktop (RDP) sign-in
 
-This document describes Windows Hello for Business functionalities or scenarios that apply to:\
-✅ **Deployment type:** [hybrid](hello-how-it-works-technology.md#hybrid-deployment)\
-✅ **Trust type:** [cloud Kerberos trust](hello-hybrid-cloud-kerberos-trust.md), [ key trust](hello-how-it-works-technology.md#key-trust)\
-✅ **Device registration type:** [Azure AD join](hello-how-it-works-technology.md#azure-active-directory-join), [Hybrid Azure AD join](hello-how-it-works-technology.md#hybrid-azure-ad-join)
-
-<br>
-
+This document describes Windows Hello for Business functionalities or scenarios that apply to:
+- **Deployment type:** [!INCLUDE [hybrid](../../includes/hello-deployment-hybrid.md)]
+- **Trust type:** [!INCLUDE [cloud-kerberos](../../includes/hello-trust-cloud-kerberos.md)], [!INCLUDE [key](../../includes/hello-trust-key.md)]
+- **Join type:** [!INCLUDE [hello-join-aadj](../../includes/hello-join-aad.md)], [!INCLUDE [hello-join-hybrid](../../includes/hello-join-hybrid.md)]
 ---
 
 Windows Hello for Business supports using a certificate as the supplied credential, when establishing a remote desktop connection to another Windows device. This document discusses three approaches for *cloud Kerberos trust* and *key trust* deployments, where authentication certificates can be deployed to an existing Windows Hello for Business user:
@@ -55,7 +50,7 @@ Follow these steps to create a certificate template:
     | *Compatibility* | <ul><li>Clear the **Show resulting changes** check box</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Authority list*</li><li>Select **Windows Server 2012 or Windows Server 2012 R2** from the *Certification Recipient list*</li></ul>|
     | *General* | <ul><li>Specify a **Template display name**, for example *WHfB Certificate Authentication*</li><li>Set the validity period to the desired value</li><li>Take note of the Template name for later, which should be the same as the Template display name minus spaces (*WHfBCertificateAuthentication* in this example)</li></ul>|
     | *Extensions* | Verify the **Application Policies** extension includes **Smart Card Logon**|
-    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul>|
+    | *Subject Name* | <ul><li> Select the **Build from this Active Directory** information button if it isn't already selected</li><li>Select **Fully distinguished name** from the **Subject name format** list if Fully distinguished name isn't already selected</li><li>Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**</li></ul><br>**Note:** If you deploy certificates via Intune, select **Supply in the request** instead of *Build from this Active Directory*.|
     |*Request Handling*|<ul><li>Set the Purpose to **Signature and smartcard logon** and select **Yes** when prompted to change the certificate purpose</li><li>Select the **Renew with same key** check box</li><li>Select **Prompt the user during enrollment**</li></ul>|
     |*Cryptography*|<ul><li>Set the Provider Category to **Key Storage Provider**</li><li>Set the Algorithm name to **RSA**</li><li>Set the minimum key size to **2048**</li><li>Select **Requests must use one of the following providers**</li><li>Select **Microsoft Software Key Storage Provider**</li><li>Set the Request hash to **SHA256**</li></ul>|
     |*Security*|Add the security group that you want to give **Enroll** access to. For example, if you want to give access to all users, select the **Authenticated** users group, and then select Enroll permissions for them|
@@ -140,7 +135,7 @@ This section describes how to configure a SCEP policy in Intune. Similar steps c
     |*Key size (bits)* | **2048**|
     |*For Hash algorithm*|**SHA-2**|
     |*Root Certificate*| Select **+Root Certificate** and select the trusted certificate profile created earlier for the Root CA Certificate|
-    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Smart Card Logon**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
+    |*Extended key usage*| <ul><li>*Name:* **Smart Card Logon**</li><li>*Object Identifier:* `1.3.6.1.4.1.311.20.2.2`</li><li>*Predefined Values:* **Not configured**</li><br><li>*Name:* **Client Authentication**</li><li>*Object Identifier:* `1.3.6.1.5.5.7.3.2 `</li><li>*Predefined Values:* **Client Authentication**</li></ul>|
     |*Renewal threshold (%)*|Configure a value of your choosing|
     |*SCEP Server URLs*|Provide the public endpoint(s) that you configured during the deployment of your SCEP infrastructure|
 

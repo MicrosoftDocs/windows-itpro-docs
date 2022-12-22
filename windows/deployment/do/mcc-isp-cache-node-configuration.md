@@ -2,15 +2,12 @@
 title: Cache node configuration
 manager: aaroncz
 description: Configuring a cache node on Azure portal
-keywords: updates, downloads, network, bandwidth
-ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
+ms.prod: windows-client
 author: amyzhou
-ms.localizationpriority: medium
 ms.author: amyzhou
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
+ms.technology: itpro-updates
 ---
 
 # Cache node configuration

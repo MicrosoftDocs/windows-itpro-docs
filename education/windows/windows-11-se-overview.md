@@ -79,70 +79,71 @@ The following table lists all the applications included in Windows 11 SE and the
 
 The following applications can also run on Windows 11 SE, and can be deployed using Intune for Education. For more information, see [Configure applications with Microsoft Intune][EDUWIN-1]
 
-| Application                             | Supported version | App Type | Vendor                       |
-|-----------------------------------------|-------------------|----------|------------------------------|
-| 3d builder                              | 15.2.10821.1070   | Win32    | Microsoft                    |
-| AirSecure                               | 8.0.0             | Win32    | AIR                          |
-| Alertus Desktop                         | 5.4.44.0          | Win32    | Alertus technologies         |
-| Brave Browser                           | 106.0.5249.65     | Win32    | Brave                        |
-| Bulb Digital Portfolio                  | 0.0.7.0           | Store    | Bulb                         |
-| CA Secure Browser                       | 14.0.0            | Win32    | Cambium Development          |
-| Cisco Umbrella                          | 3.0.110.0         | Win32    | Cisco                        |
-| CKAuthenticator                         | 3.6+              | Win32    | Content Keeper               |
-| Class Policy                            | 114.0.0           | Win32    | Class Policy                 |
-| Classroom.cloud                         | 1.40.0004         | Win32    | NetSupport                   |
-| CoGat Secure Browser                    | 11.0.0.19         | Win32    | Riverside Insights           |
-| Dragon Professional Individual          | 15.00.100         | Win32    | Nuance Communications        |
-| DRC INSIGHT Online Assessments          | 12.0.0.0          | Store    | Data recognition Corporation |
-| Duo from Cisco                          | 2.25.0            | Win32    | Cisco                        |
-| e-Speaking Voice and Speech recognition | 4.4.0.8           | Win32    | e-speaking                   |
-|Epson iProjection                        |	3.31              | Win32    | Epson                        |
-| eTests                                  | 4.0.25            | Win32    | CASAS                        |
-| FortiClient                             | 7.2.0.4034+       | Win32    | Fortinet                     |
-| Free NaturalReader                      | 16.1.2            | Win32    | Natural Soft                 |
-| Ghotit Real Writer & Reader             | 10.14.2.3         | Win32    | Ghotit Ltd                   |
-| GoGuardian                              | 1.4.4             | Win32    | GoGuardian                   |
-| Google Chrome                           | 102.0.5005.115    | Win32    | Google                       |
-| Illuminate Lockdown Browser             | 2.0.5             | Win32    | Illuminate Education         |
-| Immunet                                 | 7.5.0.20795       | Win32    | Immunet                      |
-| Impero Backdrop Client                  | 4.4.86            | Win32    | Impero Software              |
-| Inspiration 10                          | 10.11             | Win32    | Inspiration Software, Inc.   |
-| JAWS for Windows                        | 2022.2112.24      | Win32    | Freedom Scientific           |
-| Kite Student Portal                     | 8.0.3.0           | Win32    | Dynamic Learning Maps        |
-| Kortext                                 | 2.3.433.0         | Store    | Kortext                      |
-| Kurzweil 3000 Assistive Learning        | 20.13.0000        | Win32    | Kurzweil Educational Systems |
-| LanSchool Classic                       | 9.1.0.46          | Win32    | Stoneware, Inc.              |
-| LanSchool Air                           | 2.0.13312         | Win32    | Stoneware, Inc.              |
-| Lightspeed Smart Agent                  | 1.9.1             | Win32    | Lightspeed Systems           |
-| MetaMoJi ClassRoom                      | 3.12.4.0          | Store    | MetaMoJi Corporation         |
-| Microsoft Connect                       | 10.0.22000.1      | Store    | Microsoft                    |
-| Mozilla Firefox                         | 99.0.1            | Win32    | Mozilla                      |
-| NAPLAN                                  | 2.5.0             | Win32    | NAP                          |
-| Netref Student                          | 22.2.0            | Win32    | NetRef                       |
-| NetSupport Manager                      | 12.01.0014        | Win32    | NetSupport                   |
-| NetSupport Notify                       | 5.10.1.215        | Win32    | NetSupport                   |
-| NetSupport School                       | 14.00.0011        | Win32    | NetSupport                   |
-| NextUp Talker                           | 1.0.49            | Win32    | NextUp Technologies          |
-| NonVisual Desktop Access                | 2021.3.1          | Win32    | NV Access                    |
-| NWEA Secure Testing Browser             | 5.4.356.0         | Win32    | NWEA                         |
-| PaperCut                                | 22.0.6            | Win32    | PaperCut Software International Pty Ltd |
-| Pearson TestNav                         | 1.10.2.0          | Store    | Pearson                      |
-| Questar Secure Browser                  | 4.8.3.376         | Win32    | Questar, Inc                 |
-| ReadAndWriteForWindows                  | 12.0.60.0         | Win32    | Texthelp Ltd.                |
-| Remote Desktop client (MSRDC)           | 1.2.3213.0        | Win32    | Microsoft                    |
-| Remote Help                             | 3.8.0.12          | Win32    | Microsoft                    |
-| Respondus Lockdown Browser              | 2.0.9.00          | Win32    | Respondus                    |
-| Safe Exam Browser                       | 3.3.2.413         | Win32    | Safe Exam Browser            |
-| Senso.Cloud                             | 2021.11.15.0      | Win32    | Senso.Cloud                  |
-| Smoothwall monitor                      | 2.8.0             | Win32    | Smoothwall Ltd               |
-| SuperNova Magnifier & Screen Reader     | 21.02             | Win32    | Dolphin Computer Access      |
-| SuperNova Magnifier & Speech            | 21.02             | Win32    | Dolphin Computer Access      |  
-| VitalSourceBookShelf 	                  | 10.2.26.0         | Win32    | VitalSource Technologies Inc | 
-| Winbird                                 |	19                | Win32    | Winbird Co., Ltd.            |           
-| WordQ 	                                | 5.4.23            | Win32    | Mathetmots                   |
-| Zoom                                    | 5.9.1 (2581)      | Win32    | Zoom                         |
-| ZoomText Fusion                         | 2022.2109.10      | Win32    | Freedom Scientific           |
-| ZoomText Magnifier/Reader               | 2022.2109.25      | Win32    | Freedom Scientific           |
+| Application                               | Supported version | App Type | Vendor                                    |
+|-------------------------------------------|-------------------|----------|-------------------------------------------|
+| `3d builder`                              | `18.0.1931.0`     | Win32    | `Microsoft`                               |
+| `Absolute Software Endpoint Agent`        | 7.20.0.1          | Win32    | `Absolute Software Corporation`           |
+| `AirSecure`                               | 8.0.0             | Win32    | `AIR`                                     |
+| `Alertus Desktop`                         | 5.4.48.0          | Win32    | `Alertus technologies`                    |
+| `Brave Browser`                           | 106.0.5249.119    | Win32    | `Brave`                                   |
+| `Bulb Digital Portfolio`                  | 0.0.7.0           | `Store`  | `Bulb`                                    |
+| `CA Secure Browser`                       | 14.0.0            | Win32    | `Cambium Development`                     |
+| `Cisco Umbrella`                          | 3.0.110.0         | Win32    | `Cisco`                                   |
+| `CKAuthenticator`                         | 3.6+              | Win32    | `Content Keeper`                          |
+| `Class Policy`                            | 114.0.0           | Win32    | `Class Policy`                            |
+| `Classroom.cloud`                         | 1.40.0004         | Win32    | `NetSupport`                              |
+| `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
+| `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
+| `DRC INSIGHT Online Assessments`          | 12.0.0.0          | `Store`  | `Data recognition Corporation`            |
+| `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
+| `e-Speaking Voice and Speech recognition` | 4.4.0.8           | Win32    | `e-speaking`                              |
+| `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
+| `eTests`                                  | 4.0.25            | Win32    | `CASAS`                                   |
+| `FortiClient`                             | 7.2.0.4034+       | Win32    | `Fortinet`                                |
+| `Free NaturalReader`                      | 16.1.2            | Win32    | `Natural Soft`                            |
+| `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
+| `GoGuardian`                              | 1.4.4             | Win32    | `GoGuardian`                              |
+| `Google Chrome`                           | 102.0.5005.115    | Win32    | `Google`                                  |
+| `Illuminate Lockdown Browser`             | 2.0.5             | Win32    | `Illuminate Education`                    |
+| `Immunet`                                 | 7.5.8.21178       | Win32    | `Immunet`                                 |
+| `Impero Backdrop Client`                  | 4.4.86            | Win32    | `Impero Software`                         |
+| `Inspiration 10`                          | 10.11             | Win32    | `TechEdology Ltd`                         |
+| `JAWS for Windows`                        | 2022.2112.24      | Win32    | `Freedom Scientific`                      |
+| `Kite Student Portal`                     | 9.0.0.0           | Win32    | `Dynamic Learning Maps`                   |
+| `Kortext`                                 | 2.3.433.0         | `Store`  | `Kortext`                                 |
+| `Kurzweil 3000 Assistive Learning`        | 20.13.0000        | Win32    | `Kurzweil Educational Systems`            |
+| `LanSchool Classic`                       | 9.1.0.46          | Win32    | `Stoneware, Inc.`                         |
+| `LanSchool Air`                           | 2.0.13312         | Win32    | `Stoneware, Inc.`                         |
+| `Lightspeed Smart Agent`                  | 1.9.1             | Win32    | `Lightspeed Systems`                      |
+| `MetaMoJi ClassRoom`                      | 3.12.4.0          | `Store`  | `MetaMoJi Corporation`                    |
+| `Microsoft Connect`                       | 10.0.22000.1      | `Store`  | `Microsoft`                               |
+| `Mozilla Firefox`                         | 105.0.0           | Win32    | `Mozilla`                                 |
+| `NAPLAN`                                  | 2.5.0             | Win32    | `NAP`                                     |
+| `Netref Student`                          | 22.2.0            | Win32    | `NetRef`                                  |
+| `NetSupport Manager`                      | 12.01.0014        | Win32    | `NetSupport`                              |
+| `NetSupport Notify`                       | 5.10.1.215        | Win32    | `NetSupport`                              |
+| `NetSupport School`                       | 14.00.0012        | Win32    | `NetSupport`                              |
+| `NextUp Talker`                           | 1.0.49            | Win32    | `NextUp Technologies`                     |
+| `NonVisual Desktop Access`                | 2021.3.1          | Win32    | `NV Access`                               |
+| `NWEA Secure Testing Browser`             | 5.4.356.0         | Win32    | `NWEA`                                    |
+| `PaperCut`                                | 22.0.6            | Win32    | `PaperCut Software International Pty Ltd` |
+| `Pearson TestNav`                         | 1.10.2.0          | `Store`  | `Pearson`                                 |
+| `Questar Secure Browser`                  | 5.0.1.456         | Win32    | `Questar, Inc`                            |
+| `ReadAndWriteForWindows`                  | 12.0.74           | Win32    | `Texthelp Ltd.`                           |
+| `Remote Desktop client (MSRDC)`           | 1.2.3213.0        | Win32    | `Microsoft`                               |
+| `Remote Help`                             | 4.0.1.13          | Win32    | `Microsoft`                               |
+| `Respondus Lockdown Browser`              | 2.0.9.03          | Win32    | `Respondus`                               |
+| `Safe Exam Browser`                       | 3.3.2.413         | Win32    | `Safe Exam Browser`                       |
+| `Senso.Cloud`                             | 2021.11.15.0      | Win32    | `Senso.Cloud`                             |
+| `Smoothwall Monitor`                      | 2.8.0             | Win32    | `Smoothwall Ltd`                          |
+| `SuperNova Magnifier & Screen Reader`     | 21.02             | Win32    | `Dolphin Computer Access`                 |
+| `SuperNova Magnifier & Speech`            | 21.02             | Win32    | `Dolphin Computer Access`                 |
+| `VitalSourceBookShelf`                    | 10.2.26.0         | Win32    | `VitalSource Technologies Inc`            |
+| `Winbird`                                 | 19                | Win32    | `Winbird Co., Ltd.`                       |
+| `WordQ`                                   | 5.4.23            | Win32    | `Mathetmots`                              |
+| `Zoom`                                    | 5.12.8 (10232)    | Win32    | `Zoom`                                    |
+| `ZoomText Fusion`                         | 2022.2109.10      | Win32    | `Freedom Scientific`                      |
+| `ZoomText Magnifier/Reader`               | 2022.2109.25      | Win32    | `Freedom Scientific`                      |
 
 ## Add your own applications
 

@@ -8,7 +8,6 @@ author: frankroj
 ms.author: frankroj
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 11/08/2022
@@ -18,7 +17,7 @@ ms.technology: itpro-security
 
 # BitLocker: Use BitLocker Recovery Password Viewer
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11

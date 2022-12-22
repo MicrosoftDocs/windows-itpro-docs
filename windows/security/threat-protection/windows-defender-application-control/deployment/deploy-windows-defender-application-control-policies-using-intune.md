@@ -4,7 +4,6 @@ description: You can use an MDM like Microsoft Intune to configure Windows Defen
 ms.prod: windows-client
 ms.technology: itpro-security
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
@@ -61,7 +60,7 @@ The steps to use Intune's custom OMA-URI functionality are:
 2. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
     - **OMA-URI**: `./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy`
     - **Data type**: Base64 (file)
-    - **Certificate file**: upload your binary format policy file. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
+    - **Certificate file**: Upload your binary format policy file. To do this, change your {GUID}.cip file to {GUID}.bin. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf. 
 
     > [!div class="mx-imgBorder"]
     > ![Configure custom WDAC.](../images/wdac-intune-custom-oma-uri.png)

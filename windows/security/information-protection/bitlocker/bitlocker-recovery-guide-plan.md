@@ -9,7 +9,6 @@ ms.author: frankroj
 ms.reviewer: rafals
 manager: aaroncz
 ms.collection: 
-  - M365-security-compliance
   - highpri
 ms.topic: conceptual
 ms.date: 11/08/2022
@@ -18,7 +17,7 @@ ms.custom: bitlocker
 
 # BitLocker recovery guide
 
-*Applies to:*
+**Applies to:**
 
 - Windows 10
 - Windows 11

@@ -7,9 +7,8 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
-ms.collection: M365-analytics
 ms.topic: article
-ms.date: 11/15/2022
+ms.date: 12/05/2022
 ms.technology: itpro-updates
 ---
 
@@ -102,7 +101,11 @@ Create a configuration profile that will set the required policies for Windows U
 
 The [Windows Update for Business reports Configuration Script](wufb-reports-configuration-script.md) is a useful tool for properly enrolling devices in Windows Update for Business reports, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 
+> [!NOTE]
+> Using the script is optional when configuring devices through Intune. The script can be leveraged as a troubleshooting tool to ensure that devices are properly configured for Windows Update for Business reports. 
+
 When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in pilot mode to a subset of devices that you can access. After following this guidance, you can deploy the configuration script in deployment mode as a Win32 app to all Windows Update for Business reports devices.
+
 
 ## Next steps
 

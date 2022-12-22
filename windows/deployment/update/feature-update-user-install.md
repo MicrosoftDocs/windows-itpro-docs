@@ -8,7 +8,6 @@ ms.author: aaroncz
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dougeby
-ms.collection: M365-modern-desktop
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: itpro-updates

@@ -1,24 +1,13 @@
 ---
 title: User Account Control Group Policy and registry key settings (Windows)
 description: Here's a list of UAC  Group Policy and registry key settings that your organization can use to manage UAC.
-ms.prod: windows-client
-author: paolomatarazzo
-ms.author: paoloma
-ms.reviewer: sulahiri
-manager: aaroncz
 ms.collection: 
-  - M365-identity-device-management
   - highpri
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 04/19/2017
 appliesto: 
-  - ✅ <b>Windows 10</b>
-  - ✅ <b>Windows 11</b>
-  - ✅ <b>Windows Server 2016</b>
-  - ✅ <b>Windows Server 2019</b>
-  - ✅ <b>Windows Server 2022</b>
-ms.technology: itpro-security
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # User Account Control Group Policy and registry key settings

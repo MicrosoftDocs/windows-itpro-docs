@@ -11,6 +11,8 @@ ms.technology: itpro-security
 adobe-target: true
 ms.collection: 
   - highpri
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Microsoft Defender SmartScreen

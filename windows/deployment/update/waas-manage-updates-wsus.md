@@ -9,6 +9,7 @@ manager: dougeby
 ms.topic: article
 ms.collection: highpri
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Deploy Windows client updates using Windows Server Update Services (WSUS)

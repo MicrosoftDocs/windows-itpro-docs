@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # Set up and use Microsoft Defender SmartScreen on individual devices

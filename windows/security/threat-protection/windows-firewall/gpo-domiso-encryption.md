@@ -5,7 +5,6 @@ ms.reviewer: jekrynit
 ms.author: paoloma
 author: paolomatarazzo
 manager: aaroncz
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.prod: windows-client
 ms.localizationpriority: medium

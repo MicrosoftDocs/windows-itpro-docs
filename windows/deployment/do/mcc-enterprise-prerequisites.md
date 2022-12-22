@@ -2,12 +2,12 @@
 title: Requirements for Microsoft Connected Cache (MCC) for Enterprise and Education
 manager: dougeby
 description: Overview of requirements for Microsoft Connected Cache (MCC) for Enterprise and Education.
-ms.prod: w10
+ms.prod: windows-client
 author: amymzhou
-ms.localizationpriority: medium
 ms.author: amyzhou
-ms.collection: M365-modern-desktop
 ms.topic: article
+ms.date: 12/31/2017
+ms.technology: itpro-updates
 ---
 
 # Requirements of Microsoft Connected Cache for Enterprise and Education (early preview)
@@ -26,6 +26,9 @@ ms.topic: article
     The resources used for the preview and in the future when this product is ready for production will be free to you, like other caching solutions.
 
 2. **Hardware to host MCC**: The recommended configuration will serve approximately 35000 managed devices, downloading a 2 GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+  
+   > [!NOTE]
+   > Azure VMs are not currently supported. If you'd like to install your cache node on VMWare, see the [Appendix](mcc-enterprise-appendix.md) for a few additional configurations.
 
     **EFLOW Requires Hyper-V support**
     - On Windows client, enable the Hyper-V feature

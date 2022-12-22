@@ -15,6 +15,7 @@ ms.custom: asr
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+ms.topic: conceptual
 ---
 
 # Microsoft Defender Application Guard overview

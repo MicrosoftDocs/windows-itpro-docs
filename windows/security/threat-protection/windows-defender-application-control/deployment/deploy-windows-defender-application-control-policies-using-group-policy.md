@@ -9,13 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
 ms.date: 10/06/2022
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Deploy Windows Defender Application Control policies by using Group Policy

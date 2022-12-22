@@ -6,7 +6,6 @@ description: UCDOStatus schema
 ms.prod: windows-client
 author: cmknox
 ms.author: carmenf
-ms.collection: M365-analytics
 ms.topic: reference
 ms.date: 11/17/2022
 ms.technology: itpro-updates
@@ -16,7 +15,7 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-UCDOStatus provides information, for a single device, on its bandwidth utilization across content types in the event they use Delivery Optimization.
+UCDOStatus provides information, for a single device, on its bandwidth utilization across content types in the event they use [Delivery Optimization and Microsoft Connected Cache](/windows/deployment/do).
 
 |Field |Type |Example |Description |
 |---|---|---|---|

@@ -12,7 +12,6 @@ ms.localizationpriority: none
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/06/2021
 ms.technology: itpro-security
@@ -39,6 +38,6 @@ Basic security audit policy settings are found under Computer Configuration\\Win
  
 ## Related topics
 
-- [Basic security audit policy settings](basic-security-audit-policy-settings.md)
+- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
  
  

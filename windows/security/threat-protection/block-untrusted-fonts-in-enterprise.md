@@ -9,6 +9,7 @@ ms.author: dansimp
 ms.date: 08/14/2017
 ms.localizationpriority: medium
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Block untrusted fonts in an enterprise

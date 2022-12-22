@@ -4,7 +4,6 @@ description: WDAC Known Issues
 keywords: security, malware
 ms.prod: windows-client
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: jogeurte

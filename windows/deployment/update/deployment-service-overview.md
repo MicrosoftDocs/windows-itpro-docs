@@ -10,6 +10,7 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 
@@ -35,14 +36,14 @@ The service is privacy focused and backed by leading industry compliance certifi
 
 ## How it works
 
-The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Update Compliance](update-compliance-monitor.md).
+The deployment service complements existing Windows Update for Business capabilities, including existing device policies and [Windows Update for Businesss reports](wufb-reports-overview.md).
 
 :::image type="content" source="media/wufbds-product-large.png" alt-text="Elements in following text.":::
 
 Windows Update for Business comprises three elements:
 - Client policy to govern update experiences and timing – available through Group Policy and CSPs
 - Deployment service APIs to approve and schedule specific updates – available through the Microsoft Graph and associated SDKs (including PowerShell)
-- Update Compliance to monitor update deployment – available through the Azure Marketplace
+- Windows Update for Business reports to monitor update deployment
 
 Unlike existing client policy, the deployment service doesn't interact with devices directly. The service is native to the cloud and all operations take place between various Microsoft services. It creates a direct communication channel between a management tool (including scripting tools such as Windows PowerShell) and the Windows Update service so that the approval and offering of content can be directly controlled by an IT Pro.
 

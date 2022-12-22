@@ -2,28 +2,20 @@
 metadata:
   title: Delivery Optimization Frequently Asked Questions
   description: The following is a list of frequently asked questions for Delivery Optimization.
-  ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
   ms.reviewer: aaroncz
-  ms.prod: m365-security
-  ms.mktglfcycl: explore
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
+  ms.prod: windows-client
   author: carmenf
   ms.author: carmenf
   manager: dougeby
-  audience: ITPro
+  ms.technology: itpro-updates
   ms.collection:
-    - M365-security-compliance
     - highpri
   ms.topic: faq
   ms.date: 08/04/2022
-  ms.custom: seo-marvel-apr2020
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   **Applies to**
-  -   Windows 10
-  -   Windows 11
+  -   Windows 10 and later
   
 
 sections:

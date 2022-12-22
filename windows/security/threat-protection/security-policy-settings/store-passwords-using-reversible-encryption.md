@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
 ms.technology: itpro-security
@@ -21,6 +20,7 @@ ms.technology: itpro-security
 # Store passwords using reversible encryption
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Store passwords using reversible encryption** security policy setting.

@@ -31,7 +31,7 @@ For a device to be eligible for Windows feature updates as a part of Windows Aut
 | Internet connectivity | Devices must have a steady internet connection, and access to Windows [update endpoints](../prepare/windows-autopatch-configure-network.md). |
 | Windows edition | Devices must be on a Windows edition supported by Windows Autopatch. For more information, see [Prerequisites](../prepare/windows-autopatch-prerequisites.md). |
 | Mobile device management (MDM) policy conflict | Devices must not have deployed any policies that would prevent device management. For more information, see [Conflicting and unsupported policies](../operate/windows-autopatch-wqu-unsupported-policies.md). |
-| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy) |
+| Group policy conflict | Devices must not have group policies deployed which would prevent device management. For more information, see [Group policy](windows-autopatch-wqu-unsupported-policies.md#group-policy-and-other-policy-managers) |
 
 ## Windows feature update releases
 
@@ -63,10 +63,10 @@ When releasing a feature update, there are two policies that are configured by t
 
 | Ring | Target version (DSS) Policy | Feature update deferral | Feature update deadline | Feature update grace period |
 | ----- | ----- | ----- | ----- | ----- |
-| Test | 21H2 | 0 | 5 | 0 |
-| First | 21H2 | 0 | 5 | 2 |
-| Fast | 21H2 | 0 | 5 | 2 |
-| Broad | 21H2 | 0 | 5 | 2 |
+| Test | 20H2 | 0 | 5 | 0 |
+| First | 20H2 | 0 | 5 | 2 |
+| Fast | 20H2 | 0 | 5 | 2 |
+| Broad | 20H2 | 0 | 5 | 2 |
 
 > [!NOTE]
 > Customers are not able to select a target version for their tenant.

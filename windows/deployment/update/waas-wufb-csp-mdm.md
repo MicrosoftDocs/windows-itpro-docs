@@ -9,6 +9,7 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business

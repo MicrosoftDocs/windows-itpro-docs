@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: vinaypamnani-msft
 ms.reviewer: isbrahm
 ms.author: vinpa
@@ -17,6 +16,7 @@ manager: aaroncz
 ms.date: 09/30/2020
 ms.custom: asr
 ms.technology: itpro-security
+ms.topic: article
 ---
 
 # Windows Defender Application Control and AppLocker Overview
