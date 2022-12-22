@@ -1,193 +1,220 @@
 ---
-title: Policy CSP - ADMX_ExternalBoot
-description: Learn about the Policy CSP - ADMX_ExternalBoot.
+title: ADMX_ExternalBoot Policy CSP
+description: Learn more about the ADMX_ExternalBoot Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/21/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/13/2021
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_ExternalBoot-Begin -->
 # Policy CSP - ADMX_ExternalBoot
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+<!-- ADMX_ExternalBoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ExternalBoot-Editable-End -->
 
-<!--Policies-->
-## Policy CSP - ADMX_ExternalBoot
+<!-- PortableOperatingSystem_Hibernate-Begin -->
+## PortableOperatingSystem_Hibernate
 
-<dl>
-  <dd>
-    <a href="#admx-externalboot-portableoperatingsystem_hibernate">ADMX_ExternalBoot/PortableOperatingSystem_Hibernate
-    </a>
-  </dd>
-  <dd>
-    <a href="#admx-externalboot-portableoperatingsystem_sleep">ADMX_ExternalBoot/PortableOperatingSystem_Sleep
-    </a>
-  </dd>
-  <dd>
-    <a href="#admx-externalboot-portableoperatingsystem_launcher">ADMX_ExternalBoot/PortableOperatingSystem_Launcher
-    </a>
-  </dd>
-<dl>
+<!-- PortableOperatingSystem_Hibernate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PortableOperatingSystem_Hibernate-Applicability-End -->
 
-<hr/>
+<!-- PortableOperatingSystem_Hibernate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ExternalBoot/PortableOperatingSystem_Hibernate
+```
+<!-- PortableOperatingSystem_Hibernate-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-externalboot-portableoperatingsystem_hibernate"></a>**ADMX_ExternalBoot/PortableOperatingSystem_Hibernate**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace.
+<!-- PortableOperatingSystem_Hibernate-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace.
 
 If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.
 
-If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, and can't hibernate the PC.
+If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can't hibernate the PC.
+<!-- PortableOperatingSystem_Hibernate-Description-End -->
 
+<!-- PortableOperatingSystem_Hibernate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PortableOperatingSystem_Hibernate-Editable-End -->
 
-<!--/Description-->
+<!-- PortableOperatingSystem_Hibernate-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PortableOperatingSystem_Hibernate-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Allow hibernate (S4) when starting from a Windows To Go workspace*
--   GP name: *PortableOperatingSystem_Hibernate*
--   GP path: *Windows Components\Portable Operating System*
--   GP ADMX file name: *ExternalBoot.admx*
+<!-- PortableOperatingSystem_Hibernate-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PortableOperatingSystem_Hibernate_DisplayName |
+| Friendly Name | Allow hibernate (S4) when starting from a Windows To Go workspace |
+| Location | Computer Configuration |
+| Path | Windows Components > Portable Operating System |
+| Registry Key Name | System\CurrentControlSet\Policies\Microsoft\PortableOperatingSystem |
+| Registry Value Name | Hibernate |
+| ADMX File Name | ExternalBoot.admx |
+<!-- PortableOperatingSystem_Hibernate-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-externalboot-portableoperatingsystem_sleep"></a>**ADMX_ExternalBoot/PortableOperatingSystem_Sleep**
+<!-- PortableOperatingSystem_Hibernate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PortableOperatingSystem_Hibernate-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- PortableOperatingSystem_Hibernate-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PortableOperatingSystem_Launcher-Begin -->
+## PortableOperatingSystem_Launcher
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PortableOperatingSystem_Launcher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PortableOperatingSystem_Launcher-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PortableOperatingSystem_Launcher-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ExternalBoot/PortableOperatingSystem_Launcher
+```
+<!-- PortableOperatingSystem_Launcher-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PortableOperatingSystem_Launcher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether the PC will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the Windows To Go Startup Options Control Panel item.
 
-<hr/>
+If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users will not be able to make changes using the Windows To Go Startup Options Control Panel item.
 
-<!--/Scope-->
-<!--Description-->
-This policy specifies whether the PC can use standby sleep states (S1-S3) when starting from a Windows To Go workspace.
+If you disable this setting, booting to Windows To Go when a USB device is connected will not be enabled unless a user configures the option manually in the BIOS or other boot order configuration.
+
+If you do not configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
+<!-- PortableOperatingSystem_Launcher-Description-End -->
+
+<!-- PortableOperatingSystem_Launcher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PortableOperatingSystem_Launcher-Editable-End -->
+
+<!-- PortableOperatingSystem_Launcher-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PortableOperatingSystem_Launcher-DFProperties-End -->
+
+<!-- PortableOperatingSystem_Launcher-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PortableOperatingSystem_Launcher_DisplayName |
+| Friendly Name | Windows To Go Default Startup Options |
+| Location | Computer Configuration |
+| Path | Windows Components > Portable Operating System |
+| Registry Key Name | Software\Policies\Microsoft\PortableOperatingSystem |
+| Registry Value Name | Launcher |
+| ADMX File Name | ExternalBoot.admx |
+<!-- PortableOperatingSystem_Launcher-AdmxBacked-End -->
+
+<!-- PortableOperatingSystem_Launcher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PortableOperatingSystem_Launcher-Examples-End -->
+
+<!-- PortableOperatingSystem_Launcher-End -->
+
+<!-- PortableOperatingSystem_Sleep-Begin -->
+## PortableOperatingSystem_Sleep
+
+<!-- PortableOperatingSystem_Sleep-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PortableOperatingSystem_Sleep-Applicability-End -->
+
+<!-- PortableOperatingSystem_Sleep-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_ExternalBoot/PortableOperatingSystem_Sleep
+```
+<!-- PortableOperatingSystem_Sleep-OmaUri-End -->
+
+<!-- PortableOperatingSystem_Sleep-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether the PC can use standby sleep states (S1-S3) when starting from a Windows To Go workspace.
 
 If you enable this setting, Windows, when started from a Windows To Go workspace, can't use standby states to make the PC sleep.
 
 If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can use standby states to make the PC sleep.
+<!-- PortableOperatingSystem_Sleep-Description-End -->
 
-<!--/Description-->
+<!-- PortableOperatingSystem_Sleep-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PortableOperatingSystem_Sleep-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Disallow standby sleep states (S1-S3) when starting from a Windows to Go workspace*
--   GP name: *PortableOperatingSystem_Sleep*
--   GP path: *Windows Components\Portable Operating System*
--   GP ADMX file name: *ExternalBoot.admx*
+<!-- PortableOperatingSystem_Sleep-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PortableOperatingSystem_Sleep-DFProperties-End -->
 
-<hr/>
+<!-- PortableOperatingSystem_Sleep-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--Policy-->
-<a href="" id="admx-externalboot-portableoperatingsystem_launcher"></a>**ADMX_ExternalBoot/PortableOperatingSystem_Launcher**
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | PortableOperatingSystem_Sleep_DisplayName |
+| Friendly Name | Disallow standby sleep states (S1-S3) when starting from a Windows to Go workspace |
+| Location | Computer Configuration |
+| Path | Windows Components > Portable Operating System |
+| Registry Key Name | System\CurrentControlSet\Policies\Microsoft\PortableOperatingSystem |
+| Registry Value Name | Sleep |
+| ADMX File Name | ExternalBoot.admx |
+<!-- PortableOperatingSystem_Sleep-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PortableOperatingSystem_Sleep-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PortableOperatingSystem_Sleep-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PortableOperatingSystem_Sleep-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ADMX_ExternalBoot-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_ExternalBoot-CspMoreInfo-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ADMX_ExternalBoot-End -->
 
-<hr/>
+## Related articles
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls whether the PC will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the Windows To Go Startup Options Control Panel item.
-
-If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users won't be able to make changes using the Windows To Go Startup Options Control Panel item.
-
-If you disable this setting, booting to Windows To Go when a USB device is connected won't be enabled unless a user configures the option manually in the BIOS or other boot order configuration.
-
-If you don't configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Windows To Go Default Startup Options*
--   GP name: *PortableOperatingSystem_Launcher*
--   GP path: *Windows Components\Portable Operating System*
--   GP ADMX file name: *ExternalBoot.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-
-<!--/Policies-->
-
-## Related topics
-
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)

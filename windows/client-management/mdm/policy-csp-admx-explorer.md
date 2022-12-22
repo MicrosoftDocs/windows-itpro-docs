@@ -1,283 +1,335 @@
 ---
-title: Policy CSP - ADMX_Explorer
-description: Learn about the Policy CSP - ADMX_Explorer.
+title: ADMX_Explorer Policy CSP
+description: Learn more about the ADMX_Explorer Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
+ms.date: 12/21/2022
 ms.localizationpriority: medium
-ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 12/08/2020
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Explorer-Begin -->
 # Policy CSP - ADMX_Explorer
 
-<hr/>
-
-<!--Policies-->
-## ADMX_Explorer policies
-
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](../understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 >
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](../understanding-admx-backed-policies.md#enabling-a-policy).
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 >
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<dl>
-  <dd>
-    <a href="#admx-explorer-admininfourl">ADMX_Explorer/AdminInfoUrl</a>
-  </dd>
-  <dd>
-    <a href="#admx-explorer-alwaysshowclassicmenu">ADMX_Explorer/AlwaysShowClassicMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-explorer-disableroamedprofileinit">ADMX_Explorer/DisableRoamedProfileInit</a>
-  </dd>
-  <dd>
-    <a href="#admx-explorer-preventitemcreationinusersfilesfolder">ADMX_Explorer/PreventItemCreationInUsersFilesFolder</a>
-  </dd>
-  <dd>
-    <a href="#admx-explorer-turnoffspianimations">ADMX_Explorer/TurnOffSPIAnimations</a>
-  </dd>
-</dl>
+<!-- ADMX_Explorer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Explorer-Editable-End -->
 
+<!-- AdminInfoUrl-Begin -->
+## AdminInfoUrl
 
-<hr/>
+<!-- AdminInfoUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AdminInfoUrl-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-explorer-admininfourl"></a>**ADMX_Explorer/AdminInfoUrl**
+<!-- AdminInfoUrl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Explorer/AdminInfoUrl
+```
+<!-- AdminInfoUrl-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- AdminInfoUrl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Sets the target of the More Information link that will be displayed when the user attempts to run a program that is blocked by policy.
+<!-- AdminInfoUrl-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AdminInfoUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AdminInfoUrl-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AdminInfoUrl-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AdminInfoUrl-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AdminInfoUrl-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting sets the target of the More Information link that will be displayed when the user attempts to run a program that is blocked by policy.
+| Name | Value |
+|:--|:--|
+| Name | AdminInfoUrl |
+| Friendly Name | Set a support web page link |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| ADMX File Name | Explorer.admx |
+<!-- AdminInfoUrl-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- AdminInfoUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AdminInfoUrl-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Set a support web page link*
--   GP name: *AdminInfoUrl*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- AdminInfoUrl-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableRoamedProfileInit-Begin -->
+## DisableRoamedProfileInit
 
-<!--Policy-->
-<a href="" id="admx-explorer-alwaysshowclassicmenu"></a>**ADMX_Explorer/AlwaysShowClassicMenu**
+<!-- DisableRoamedProfileInit-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableRoamedProfileInit-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableRoamedProfileInit-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Explorer/DisableRoamedProfileInit
+```
+<!-- DisableRoamedProfileInit-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableRoamedProfileInit-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer will not reinitialize default program associations and other settings to default values.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you enable this policy setting on a machine that does not contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
+<!-- DisableRoamedProfileInit-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableRoamedProfileInit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableRoamedProfileInit-Editable-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableRoamedProfileInit-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableRoamedProfileInit-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting configures File Explorer to always display the menu bar.
+<!-- DisableRoamedProfileInit-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-> [!NOTE]
-> By default, the menu bar is not displayed in File Explorer.
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableRoamedProfileInit |
+| Friendly Name | Do not reinitialize a pre-existing roamed user profile when it is loaded on a machine for the first time |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableRoamedProfileInit |
+| ADMX File Name | Explorer.admx |
+<!-- DisableRoamedProfileInit-AdmxBacked-End -->
+
+<!-- DisableRoamedProfileInit-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableRoamedProfileInit-Examples-End -->
+
+<!-- DisableRoamedProfileInit-End -->
+
+<!-- AlwaysShowClassicMenu-Begin -->
+## AlwaysShowClassicMenu
+
+<!-- AlwaysShowClassicMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AlwaysShowClassicMenu-Applicability-End -->
+
+<!-- AlwaysShowClassicMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Explorer/AlwaysShowClassicMenu
+```
+<!-- AlwaysShowClassicMenu-OmaUri-End -->
+
+<!-- AlwaysShowClassicMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures File Explorer to always display the menu bar.
+
+Note: By default, the menu bar is not displayed in File Explorer.
 
 If you enable this policy setting, the menu bar will be displayed in File Explorer.
 
-If you disable or don't configure this policy setting, the menu bar won't be displayed in File Explorer.
+If you disable or do not configure this policy setting, the menu bar will not be displayed in File Explorer.
 
-> [!NOTE]
-> When the menu bar is not displayed, users can access the menu bar by pressing the 'ALT' key.
+Note: When the menu bar is not displayed, users can access the menu bar by pressing the 'ALT' key.
+<!-- AlwaysShowClassicMenu-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Display the menu bar in File Explorer*
--   GP name: *AlwaysShowClassicMenu*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- AlwaysShowClassicMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Available in the latest Windows 10 Insider Preview Build.
+<!-- AlwaysShowClassicMenu-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- AlwaysShowClassicMenu-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-explorer-disableroamedprofileinit"></a>**ADMX_Explorer/DisableRoamedProfileInit**
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AlwaysShowClassicMenu-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AlwaysShowClassicMenu-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AlwaysShowClassicMenu |
+| Friendly Name | Display the menu bar in File Explorer  |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | AlwaysShowClassicMenu |
+| ADMX File Name | Explorer.admx |
+<!-- AlwaysShowClassicMenu-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AlwaysShowClassicMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysShowClassicMenu-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AlwaysShowClassicMenu-End -->
 
-<hr/>
+<!-- PreventItemCreationInUsersFilesFolder-Begin -->
+## PreventItemCreationInUsersFilesFolder
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows administrators who have configured roaming profile with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer won't reinitialize default program associations and other settings to default values.
+<!-- PreventItemCreationInUsersFilesFolder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PreventItemCreationInUsersFilesFolder-Applicability-End -->
 
-If you enable this policy setting on a machine that doesn't contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
+<!-- PreventItemCreationInUsersFilesFolder-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Explorer/PreventItemCreationInUsersFilesFolder
+```
+<!-- PreventItemCreationInUsersFilesFolder-OmaUri-End -->
 
-<!--/Description-->
+<!-- PreventItemCreationInUsersFilesFolder-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows administrators to prevent users from adding new items such as files or folders to the root of their Users Files folder in File Explorer.
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Do not reinitialize a pre-existing roamed user profile when it is loaded on a machine for the first time*
--   GP name: *DisableRoamedProfileInit*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *Explorer.admx*
+If you enable this policy setting, users will no longer be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+If you disable or do not configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
-<!--Policy-->
-<a href="" id="admx-explorer-preventitemcreationinusersfilesfolder"></a>**ADMX_Explorer/PreventItemCreationInUsersFilesFolder**
 
-<!--SupportedSKUs-->
+Note: Enabling this policy setting does not prevent the user from being able to add new items such as files and folders to their actual file system profile folder at %userprofile%.
+<!-- PreventItemCreationInUsersFilesFolder-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PreventItemCreationInUsersFilesFolder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventItemCreationInUsersFilesFolder-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventItemCreationInUsersFilesFolder-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreventItemCreationInUsersFilesFolder-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PreventItemCreationInUsersFilesFolder-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows administrators to prevent users from adding new items, such as files or folders to the root of their Users Files folder in File Explorer.
+| Name | Value |
+|:--|:--|
+| Name | PreventItemCreationInUsersFilesFolder |
+| Friendly Name | Prevent users from adding files to the root of their Users Files folder. |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | PreventItemCreationInUsersFilesFolder |
+| ADMX File Name | Explorer.admx |
+<!-- PreventItemCreationInUsersFilesFolder-AdmxBacked-End -->
 
-If you enable this policy setting, users will no longer be able to add new items, such as files or folders to the root of their Users Files folder in File Explorer.
+<!-- PreventItemCreationInUsersFilesFolder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventItemCreationInUsersFilesFolder-Examples-End -->
 
-If you disable or don't configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
+<!-- PreventItemCreationInUsersFilesFolder-End -->
 
-> [!NOTE]
-> Enabling this policy setting doesn't prevent the user from being able to add new items, such as files and folders to their actual file system profile folder at %userprofile%.
+<!-- TurnOffSPIAnimations-Begin -->
+## TurnOffSPIAnimations
 
-<!--/Description-->
+<!-- TurnOffSPIAnimations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TurnOffSPIAnimations-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Prevent users from adding files to the root of their Users Files folder.*
--   GP name: *PreventItemCreationInUsersFilesFolder*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *Explorer.admx*
+<!-- TurnOffSPIAnimations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Explorer/TurnOffSPIAnimations
+```
+<!-- TurnOffSPIAnimations-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TurnOffSPIAnimations-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy is similar to settings directly available to computer users. Disabling animations can improve usability for users with some visual disabilities as well as improving performance and battery life in some scenarios.
+<!-- TurnOffSPIAnimations-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-explorer-turnoffspianimations"></a>**ADMX_Explorer/TurnOffSPIAnimations**
+<!-- TurnOffSPIAnimations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffSPIAnimations-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- TurnOffSPIAnimations-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOffSPIAnimations-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffSPIAnimations-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * User
+| Name | Value |
+|:--|:--|
+| Name | TurnOffSPIAnimations |
+| Friendly Name | Turn off common control and window animations |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TurnOffSPIAnimations |
+| ADMX File Name | Explorer.admx |
+<!-- TurnOffSPIAnimations-AdmxBacked-End -->
 
-<hr/>
+<!-- TurnOffSPIAnimations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffSPIAnimations-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy is similar to settings directly available to computer users.
+<!-- TurnOffSPIAnimations-End -->
 
-Disabling animations can improve usability for users with some visual disabilities, and also improve performance and battery life in some scenarios.
+<!-- ADMX_Explorer-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Explorer-CspMoreInfo-End -->
 
-<!--/Description-->
+<!-- ADMX_Explorer-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Turn off common control and window animations*
--   GP name: *TurnOffSPIAnimations*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *Explorer.admx*
+## Related articles
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
-## Related topics
-
-[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)
