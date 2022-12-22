@@ -1,546 +1,521 @@
 ---
-title: Policy CSP - Authentication
-description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign-in screen.
+title: Authentication Policy CSP
+description: Learn more about the Authentication Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/22/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.reviewer: bobgil
-manager: aaroncz
-ms.date: 12/31/2017
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Authentication-Begin -->
 # Policy CSP - Authentication
 
+<!-- Authentication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Authentication-Editable-End -->
+
+<!-- AllowAadPasswordReset-Begin -->
+## AllowAadPasswordReset
+
+<!-- AllowAadPasswordReset-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowAadPasswordReset-Applicability-End -->
+
+<!-- AllowAadPasswordReset-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/AllowAadPasswordReset
+```
+<!-- AllowAadPasswordReset-OmaUri-End -->
+
+<!-- AllowAadPasswordReset-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether password reset is enabled for AAD accounts.
+<!-- AllowAadPasswordReset-Description-End -->
+
+<!-- AllowAadPasswordReset-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+This policy allows the Azure Active Directory (Azure AD) tenant administrator to enable the self-service password reset feature on the Windows sign-in screen.
+
+<!-- AllowAadPasswordReset-Editable-End -->
+
+<!-- AllowAadPasswordReset-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowAadPasswordReset-DFProperties-End -->
+
+<!-- AllowAadPasswordReset-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowAadPasswordReset-AllowedValues-End -->
+
+<!-- AllowAadPasswordReset-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAadPasswordReset-Examples-End -->
+
+<!-- AllowAadPasswordReset-End -->
+
+<!-- AllowFastReconnect-Begin -->
+## AllowFastReconnect
+
+<!-- AllowFastReconnect-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowFastReconnect-Applicability-End -->
+
+<!-- AllowFastReconnect-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect
+```
+<!-- AllowFastReconnect-OmaUri-End -->
+
+<!-- AllowFastReconnect-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restricted value is 0.
+<!-- AllowFastReconnect-Description-End -->
+
+<!-- AllowFastReconnect-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowFastReconnect-Editable-End -->
+
+<!-- AllowFastReconnect-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowFastReconnect-DFProperties-End -->
+
+<!-- AllowFastReconnect-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowFastReconnect-AllowedValues-End -->
+
+<!-- AllowFastReconnect-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowFastReconnect-Examples-End -->
+
+<!-- AllowFastReconnect-End -->
+
+<!-- AllowSecondaryAuthenticationDevice-Begin -->
+## AllowSecondaryAuthenticationDevice
+
+<!-- AllowSecondaryAuthenticationDevice-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowSecondaryAuthenticationDevice-Applicability-End -->
+
+<!-- AllowSecondaryAuthenticationDevice-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/AllowSecondaryAuthenticationDevice
+```
+<!-- AllowSecondaryAuthenticationDevice-OmaUri-End -->
 
+<!-- AllowSecondaryAuthenticationDevice-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows users to use a companion device, such as a phone, fitness band, or IoT device, to sign on to a desktop computer running Windows 10. The companion device provides a second factor of authentication with Windows Hello.
 
-<hr/>
-
-<!--Policies-->
-## Authentication policies
-
-<dl>
-  <dd>
-    <a href="#authentication-allowaadpasswordreset">Authentication/AllowAadPasswordReset</a>
-  </dd>
-  <dd>
-    <a href="#authentication-alloweapcertsso">Authentication/AllowEAPCertSSO</a>
-  </dd>
-  <dd>
-    <a href="#authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>
-  </dd>
-  <dd>
-    <a href="#authentication-allowfidodevicesignon">Authentication/AllowFidoDeviceSignon</a>
-  </dd>
-  <dd>
-    <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
-  </dd>
-  <dd>
-    <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
-  </dd>
-  <dd>
-    <a href="#authentication-configurewebcamaccessdomainnames">Authentication/ConfigureWebcamAccessDomainNames</a>
-  </dd>
-  <dd>
-    <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
-  </dd>
-  <dd>
-    <a href="#authentication-enablewebsignin">Authentication/EnableWebSignIn</a>
-  </dd>
-  <dd>
-    <a href="#authentication-preferredaadtenantdomainname">Authentication/PreferredAadTenantDomainName</a>
-  </dd>
-</dl>
+If you enable or do not configure this policy setting, users can authenticate to Windows Hello using a companion device.
 
+If you disable this policy, users cannot use a companion device to authenticate with Windows Hello.
+<!-- AllowSecondaryAuthenticationDevice-Description-End -->
 
-<hr/>
+<!-- AllowSecondaryAuthenticationDevice-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSecondaryAuthenticationDevice-Editable-End -->
 
-<!--Policy-->
-<a href="" id="authentication-allowaadpasswordreset"></a>**Authentication/AllowAadPasswordReset**
+<!-- AllowSecondaryAuthenticationDevice-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowSecondaryAuthenticationDevice-DFProperties-End -->
+
+<!-- AllowSecondaryAuthenticationDevice-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowSecondaryAuthenticationDevice-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowSecondaryAuthenticationDevice-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice |
+| Friendly Name | Allow companion device for secondary authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft Secondary Authentication Factor |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\SecondaryAuthenticationFactor |
+| Registry Value Name | AllowSecondaryAuthenticationDevice |
+| ADMX File Name | DeviceCredential.admx |
+<!-- AllowSecondaryAuthenticationDevice-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSecondaryAuthenticationDevice-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSecondaryAuthenticationDevice-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSecondaryAuthenticationDevice-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureWebcamAccessDomainNames-Begin -->
+## ConfigureWebcamAccessDomainNames
 
-<hr/>
+<!-- ConfigureWebcamAccessDomainNames-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigureWebcamAccessDomainNames-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the Windows logon screen.
+<!-- ConfigureWebcamAccessDomainNames-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/ConfigureWebcamAccessDomainNames
+```
+<!-- ConfigureWebcamAccessDomainNames-OmaUri-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ConfigureWebcamAccessDomainNames-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies a list of domains that are allowed to access the webcam in Web Sign-in based authentication scenarios.
+<!-- ConfigureWebcamAccessDomainNames-Description-End -->
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+<!-- ConfigureWebcamAccessDomainNames-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+> [!NOTE]
+> Web sign-in is only supported on Azure AD joined PCs.
 
-<hr/>
+<!-- ConfigureWebcamAccessDomainNames-Editable-End -->
 
-<!--Policy-->
-<a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**
+<!-- ConfigureWebcamAccessDomainNames-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- ConfigureWebcamAccessDomainNames-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureWebcamAccessDomainNames-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
+**Example**:
 
-<!--/SupportedSKUs-->
-<hr/>
+Your organization federates to "Contoso IDP" and your web sign-in portal at `signinportal.contoso.com` requires webcam access. Then the value for this policy should be:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+`contoso.com`
 
-> [!div class = "checklist"]
-> * User
+<!-- ConfigureWebcamAccessDomainNames-Examples-End -->
 
-<hr/>
+<!-- ConfigureWebcamAccessDomainNames-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows an EAP cert-based authentication for a Single Sign on (SSO) to access internal resources.
+<!-- ConfigureWebSignInAllowedUrls-Begin -->
+## ConfigureWebSignInAllowedUrls
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ConfigureWebSignInAllowedUrls-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134.2145] and later |
+<!-- ConfigureWebSignInAllowedUrls-Applicability-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- ConfigureWebSignInAllowedUrls-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls
+```
+<!-- ConfigureWebSignInAllowedUrls-OmaUri-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- ConfigureWebSignInAllowedUrls-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies a list of URLs that are navigable in Web Sign-in based authentication scenarios.
+<!-- ConfigureWebSignInAllowedUrls-Description-End -->
 
-<hr/>
+<!-- ConfigureWebSignInAllowedUrls-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Policy-->
-<a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**
+This policy specifies the list of domains that users can access in certain authentication scenarios. For example:
 
-<!--SupportedSKUs-->
+- Azure Active Directory (Azure AD) PIN reset
+- Web sign-in Windows device scenarios where authentication is handled by Active Directory Federation Services (AD FS) or a third-party federated identity provider
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+> [!NOTE]
+> This policy is required in federated environments as a mitigation to the vulnerability described in [CVE-2021-27092](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27092).
 
+<!-- ConfigureWebSignInAllowedUrls-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureWebSignInAllowedUrls-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- ConfigureWebSignInAllowedUrls-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureWebSignInAllowedUrls-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
-<hr/>
+**Example**:
 
-<!--/Scope-->
-<!--Description-->
-Allows EAP Fast Reconnect from being attempted for EAP Method TLS.
+Your organization's PIN reset or web sign-in authentication flow is expected to navigate to the following two domains: `accounts.contoso.com` and `signin.contoso.com`. Then the value for this policy should be:
 
-Most restricted value is 0.
+`accounts.contoso.com;signin.contoso.com`
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- ConfigureWebSignInAllowedUrls-Examples-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- ConfigureWebSignInAllowedUrls-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- EnableFastFirstSignIn-Begin -->
+## EnableFastFirstSignIn
 
-<hr/>
+<!-- EnableFastFirstSignIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- EnableFastFirstSignIn-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**
+<!-- EnableFastFirstSignIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/EnableFastFirstSignIn
+```
+<!-- EnableFastFirstSignIn-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableFastFirstSignIn-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether new non-admin AAD accounts should auto-connect to pre-created candidate local accounts
+<!-- EnableFastFirstSignIn-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableFastFirstSignIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
-
-Value type is integer.
-
-Here's an example scenario: At Contoso, there are many shared devices and kiosks that employees use throughout the day, for example, employees use as many as 20 different devices. To minimize the loss in productivity when employees have to sign in with username and password every time they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - Don't allow. The FIDO device credential provider disabled.
--   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign in to Windows.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows secondary authentication devices to work with Windows.
-
-The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premises only environment, cloud domain-joined in a hybrid environment, and BYOD).
-
-In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This change will only affect users that have not already set up a secondary authentication device.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow companion device for secondary authentication*
--   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
--   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
--   GP ADMX file name: *DeviceCredential.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="authentication-configurewebsigninallowedurls"></a>**Authentication/ConfigureWebSignInAllowedUrls**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies the list of domains that are allowed to be navigated to in Azure Active Directory PIN reset and Web Sign-in Windows device scenarios where authentication is handled by AD FS or a third-party federated identity provider. Note this policy is required in federated environments as a mitigation to the vulnerability described in [CVE-2021-27092](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27092).
-
-**Example**: If your organization's PIN reset or Web Sign-in authentication flow is expected to navigate to two domains, accounts.contoso.com and signin.contoso.com, the policy value should be "accounts.contoso.com;signin.contoso.com".
-
-<!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="authentication-configurewebcamaccessdomainnames"></a>**Authentication/ConfigureWebcamAccessDomainNames**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-Specifies the list of domain names that are allowed to access the webcam in Web Sign-in Windows device sign-in scenarios.
-
-Web Sign-in is only supported on Azure AD Joined PCs.
-
-**Example**: If your organization federates to "Contoso IDP" and your Web Sign-in portal at "signinportal.contoso.com" requires webcam access, the policy value should be "contoso.com".
-
-
-<!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!Warning]
+> [!WARNING]
 > The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time.
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
-> [!Important]
-> Pre-configured candidate local accounts are any local accounts (pre-configured or added) in your device.
+> [!IMPORTANT]
+> Pre-configured candidate local accounts are any local accounts that are pre-configured or added on the device.
 
-Value type is integer. Supported values:
+<!-- EnableFastFirstSignIn-Editable-End -->
 
-- 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts
-- 2 - Disabled. Don't auto connect new non-admin Azure AD accounts to pre-configured local accounts
+<!-- EnableFastFirstSignIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--SupportedValues-->
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableFastFirstSignIn-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- EnableFastFirstSignIn-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Example-->
-<!--Validation-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
+| 1 | Enabled. Auto-connect new non-admin Azure AD accounts to pre-configured candidate local accounts |
+| 2 | Disabled. Do not auto-connect new non-admin Azure AD accounts to pre-configured local accounts |
+<!-- EnableFastFirstSignIn-AllowedValues-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- EnableFastFirstSignIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableFastFirstSignIn-Examples-End -->
 
-<hr/>
+<!-- EnableFastFirstSignIn-End -->
 
-<!--Policy-->
-<a href="" id="authentication-enablewebsignin"></a>**Authentication/EnableWebSignIn**
+<!-- EnableWebSignIn-Begin -->
+## EnableWebSignIn
 
-<!--SupportedSKUs-->
+<!-- EnableWebSignIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- EnableWebSignIn-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableWebSignIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/EnableWebSignIn
+```
+<!-- EnableWebSignIn-OmaUri-End -->
 
+<!-- EnableWebSignIn-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether web-based sign-in is allowed for signing in to Windows
+<!-- EnableWebSignIn-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableWebSignIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+> [!WARNING]
+> The Web sign-in feature is intended for recovery purposes in the event a password isn't available as an authentication method. Web sign-in only supports *temporary access pass* as an authentication method for Azure Active Directory (Azure AD), unless it's used in a limited federated scope.
 
-> [!div class = "checklist"]
-> * Device
+**Web sign-in** is a modern way of signing into a Windows PC. It enables Windows sign-in support for new Azure AD credentials, like temporary access pass.
 
-<hr/>
+> [!NOTE]
+> Web sign-in is only supported on Azure AD joined PCs.
 
-<!--/Scope-->
-<!--Description-->
-> [!Warning]
-> The Web sign-in feature is intended for recovery purposes in the event a password is not available as an authentication method. Web sign-in only supports Temporary Access Pass as an authentication method for Azure Active Directory, unless it is being used in a limited federated scope. 
+<!-- EnableWebSignIn-Editable-End -->
 
-"Web sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
+<!-- EnableWebSignIn-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!Note]
-> Web sign-in is only supported on Azure AD Joined PCs.
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableWebSignIn-DFProperties-End -->
 
-Value type is integer. Supported values:
+<!-- EnableWebSignIn-AllowedValues-Begin -->
+**Allowed values**:
 
-- 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Web Credential Provider will be enabled for a sign-in.
-- 2 - Disabled. Web Credential Provider won't be enabled for a sign-in.
+| Value | Description |
+|:--|:--|
+| 0 (Default) | The feature defaults to the existing SKU and device capabilities. |
+| 1 | Enabled. Web Sign-in will be enabled for signing in to Windows |
+| 2 | Disabled. Web Sign-in will not be enabled for signing in to Windows |
+<!-- EnableWebSignIn-AllowedValues-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- EnableWebSignIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableWebSignIn-Examples-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- EnableWebSignIn-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PreferredAadTenantDomainName-Begin -->
+## PreferredAadTenantDomainName
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PreferredAadTenantDomainName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+<!-- PreferredAadTenantDomainName-Applicability-End -->
 
-<hr/>
+<!-- PreferredAadTenantDomainName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Authentication/PreferredAadTenantDomainName
+```
+<!-- PreferredAadTenantDomainName-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="authentication-preferredaadtenantdomainname"></a>**Authentication/PreferredAadTenantDomainName**
+<!-- PreferredAadTenantDomainName-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies the preferred domain among available domains in the AAD tenant.
+<!-- PreferredAadTenantDomainName-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- PreferredAadTenantDomainName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreferredAadTenantDomainName-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PreferredAadTenantDomainName-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PreferredAadTenantDomainName-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreferredAadTenantDomainName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**Example**:
 
-> [!div class = "checklist"]
-> * Device
+Your organization uses the `@contoso.com` tenant domain name. Then the value for this policy should be:
 
-<hr/>
+`contoso.com`
 
-<!--/Scope-->
-<!--Description-->
-Specifies the preferred domain among available domains in the Azure AD tenant.
+For the user `abby@constoso.com`, a sign-in is done using `abby` in the username field instead of `abby@contoso.com`.
 
-Example: If your organization is using the "@contoso.com" tenant domain name, the policy value should be "contoso.com". For the user "abby@constoso.com", a sign in is done using "abby" in the username field instead of "abby@contoso.com".
+<!-- PreferredAadTenantDomainName-Examples-End -->
 
+<!-- PreferredAadTenantDomainName-End -->
 
-Value type is string.
+<!-- AllowEAPCertSSO-Begin -->
+## AllowEAPCertSSO
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- AllowEAPCertSSO-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowEAPCertSSO-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowEAPCertSSO-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO
+```
+<!-- AllowEAPCertSSO-OmaUri-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowEAPCertSSO-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+<!-- AllowEAPCertSSO-Description-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- AllowEAPCertSSO-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEAPCertSSO-Editable-End -->
 
+<!-- AllowEAPCertSSO-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowEAPCertSSO-DFProperties-End -->
 
-<!--/Policies-->
+<!-- AllowEAPCertSSO-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- AllowEAPCertSSO-AllowedValues-End -->
+
+<!-- AllowEAPCertSSO-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEAPCertSSO-Examples-End -->
+
+<!-- AllowEAPCertSSO-End -->
+
+<!-- Authentication-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Authentication-CspMoreInfo-End -->
+
+<!-- Authentication-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
