@@ -446,7 +446,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 You may want to configure a different time server for your device fleet. You can use this policy to configure certain aspects of the NTP client. In the Settings app, the Time/Language page will show the time server after a time sync has occurred.
 
-For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NTPClient](policy-csp-admx-w32time.md#admx-w32time-policy-configure-ntpclient).
+For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NTPClient](policy-csp-admx-w32time.md#w32time_policy_configure_ntpclient).
 
 > [!NOTE]
 > This policy also requires enabling [NtpClientEnabled](#ntpclientenabled).
