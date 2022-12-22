@@ -37,7 +37,7 @@ sections:
          - Ubuntu 20.04 LTS on a physical server or VM of your choice. 
          
          > [!NOTE]
-         > The Microsoft Connected Cache is deployed and managed using Azure IoT Edge and Ubuntu 20.04 is an [Azure IoT Edge Tier 1 operating system](https://learn.microsoft.com/en-us/azure/iot-edge/support?view=iotedge-2020-11#tier-1). Additionally, the Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. 
+         > The Microsoft Connected Cache is deployed and managed using Azure IoT Edge and Ubuntu 20.04 is an [Azure IoT Edge Tier 1 operating system](/azure/iot-edge/support?view=iotedge-2020-11#tier-1). Additionally, the Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. 
          
          The following are recommended hardware configurations:   
           
