@@ -172,3 +172,7 @@ Resource SACLs are also useful for diagnostic scenarios. For example, administra
 This category includes the following subcategories:
 -   [File System (Global Object Access Auditing)](file-system-global-object-access-auditing.md)
 -   [Registry (Global Object Access Auditing)](registry-global-object-access-auditing.md)
+
+## Related topics
+
+-   [Basic security audit policy settings](basic-security-audit-policy-settings.md)

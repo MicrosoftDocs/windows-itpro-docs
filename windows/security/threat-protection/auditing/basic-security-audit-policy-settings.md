@@ -38,6 +38,6 @@ Basic security audit policy settings are found under Computer Configuration\\Win
  
 ## Related topics
 
-- [Basic security audit policy settings](basic-security-audit-policy-settings.md)
+- [Advanced security audit policy settings](advanced-security-audit-policy-settings.md)
  
  
