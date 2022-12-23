@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Devices: Restrict CD-ROM access to locally logged-on user only
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Devices: Restrict CD-ROM access to locally logged-on user only** security policy setting.
