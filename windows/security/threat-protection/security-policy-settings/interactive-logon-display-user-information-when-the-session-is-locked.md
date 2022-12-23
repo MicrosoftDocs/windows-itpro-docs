@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Interactive logon: Display user information when the session is locked
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Display user information when the session is locked** security policy setting.
