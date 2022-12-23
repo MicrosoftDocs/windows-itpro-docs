@@ -20,6 +20,7 @@ ms.date: 12/31/2017
 # Network security: Restrict NTLM: NTLM authentication in this domain
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: NTLM authentication in this domain** security policy setting.
