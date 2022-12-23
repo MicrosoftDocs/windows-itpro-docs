@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Domain controller: LDAP server signing requirements
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the best practices, location, values, and security considerations for the **Domain controller: LDAP server signing requirements** security policy setting.
