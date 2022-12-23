@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
 ms.topic: article
-ms.date: 12/05/2022
+ms.date: 12/22/2022
 ms.technology: itpro-updates
 ---
 
@@ -49,7 +49,7 @@ Create a configuration profile that will set the required policies for Windows U
         - **Setting**: Configure Telemetry Opt In Settings Ux
         - **Value**: Disabled (*By turning this setting on you are disabling the ability for a user to potentially override the diagnostic data level of devices such that data won't be available for those devices in Windows Update for Business reports*)
         - **Setting**: Configure Telemetry Opt In Change Notification
-        - **Value**: Disabled (*By turning this setting on you are disabling notifications of telemetry changes*)
+        - **Value**: Disabled (*By turning this setting on you are disabling notifications of diagnostic data changes*)
         - **Setting**: Allow device name to be sent in Windows diagnostic data (*If this policy is disabled, the device name won't be sent and won't be visible in Windows Update for Business reports*)
         - **Value**: Allowed
 
