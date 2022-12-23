@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Domain controller: Allow server operators to schedule tasks
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain controller: Allow server operators to schedule tasks** security policy setting.
