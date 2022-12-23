@@ -20,6 +20,7 @@ ms.technology: itpro-security
 # Accounts: Rename guest account - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Accounts: Rename guest account** security policy setting.
