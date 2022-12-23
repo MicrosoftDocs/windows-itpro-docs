@@ -20,6 +20,7 @@ ms.date: 12/31/2017
 # Domain controller: Refuse machine account password changes
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain controller: Refuse machine account password changes** security policy setting.
