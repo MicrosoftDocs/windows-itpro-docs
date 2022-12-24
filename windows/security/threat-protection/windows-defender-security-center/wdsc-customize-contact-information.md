@@ -1,18 +1,10 @@
 ---
 title: Customize Windows Security contact information
 description: Provide information to your employees on how to contact your IT department when a security issue occurs
-keywords: wdsc, security center, defender, notification, customize, contact, it department, help desk, call, help site
-search.product: eADQiWindows 10XVcnh
 ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 
-ms.reviewer: 
-manager: aaroncz
+ms.date: 12/31/2018
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -21,8 +13,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10 and later
 
 You can add information about your organization in a contact card to the Windows Security app. You can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
 

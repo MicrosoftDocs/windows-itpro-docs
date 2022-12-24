@@ -99,7 +99,7 @@
         href: hello-deployment-key-trust.md
       - name: Validate Active Directory prerequisites
         href: hello-key-trust-validate-ad-prereq.md
-      - name: Validate and configure Public Key Infrastructure (PKI)
+      - name: Configure and validate Public Key Infrastructure (PKI)
         href: hello-key-trust-validate-pki.md
       - name: Prepare and deploy Active Directory Federation Services (AD FS)
         href: hello-key-trust-adfs.md
@@ -113,7 +113,7 @@
         href: hello-deployment-cert-trust.md
       - name: Validate Active Directory prerequisites
         href: hello-cert-trust-validate-ad-prereq.md
-      - name: Validate and configure Public Key Infrastructure (PKI)
+      - name: Configure and validate Public Key Infrastructure (PKI)
         href: hello-cert-trust-validate-pki.md
       - name: Prepare and Deploy Active Directory Federation Services (AD FS)
         href: hello-cert-trust-adfs.md

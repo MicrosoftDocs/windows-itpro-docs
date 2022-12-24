@@ -2,27 +2,20 @@
 metadata:
   title: BitLocker Key Management FAQ (Windows 10)
   description: Browse frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
-  ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
   ms.prod: windows-client
   ms.technology: itpro-security
-  ms.mktglfcycl: explore
-  ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
   author: frankroj
   ms.author: frankroj
   manager: aaroncz
   audience: ITPro
-  ms.collection: M365-security-compliance
   ms.topic: faq
   ms.date: 11/08/2022
   ms.custom: bitlocker
 title: BitLocker Key Management FAQ
 summary: |
   **Applies to:**
-  - Windows 10
-  - Windows 11
-  - Windows Server 2016 and above
+  - Windows 10 and later
+  - Windows Server 2016 and later
   
 
 sections:

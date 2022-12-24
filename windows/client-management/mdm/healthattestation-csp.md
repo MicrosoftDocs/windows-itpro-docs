@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 
+ms.date: 4/5/2022
 ---
 
 # Device HealthAttestation CSP
