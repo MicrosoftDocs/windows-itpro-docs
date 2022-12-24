@@ -9,6 +9,7 @@ author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
 ms.technology: itpro-security
+ms.topic: how-to
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

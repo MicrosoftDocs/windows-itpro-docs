@@ -15,6 +15,7 @@ ms.custom: asr
 ms.technology: itpro-security
 ms.collection: 
   - highpri
+ms.topic: how-to
 ---
 
 # Prepare to install Microsoft Defender Application Guard

@@ -13,7 +13,6 @@ metadata:
   manager: aaroncz
   ms.reviewer: prsriva
   ms.collection:
-    - M365-identity-device-management
     - highpri
   ms.topic: faq
   localizationpriority: medium
@@ -57,6 +56,10 @@ sections:
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
           The maximum number of supported enrollments on a single Windows 10 computer is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, we strongly encourage the use of FIDO2 security keys.
+          
+      - question: Can I use Windows Hello for Business credentials in private browser mode or "incognito" mode?
+        answer: |
+          Windows Hello for Business credentials need access to device state, which is not available in private browser mode or incognito mode. Hence it can't be used in private browser or Incognito mode.
 
       - question: How can a PIN be more secure than a password?
         answer: |

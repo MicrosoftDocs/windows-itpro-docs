@@ -33,7 +33,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 1. Open the **Certificate Authority** management console.
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
-4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
+4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certificate Recipient** list.
 5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.
    > [!NOTE]
    > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.

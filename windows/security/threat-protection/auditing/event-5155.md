@@ -12,6 +12,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5155(F): The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.

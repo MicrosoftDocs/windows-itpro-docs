@@ -42,7 +42,7 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 [!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
 
 > [!TIP]
-> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags.
+> Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
@@ -50,6 +50,8 @@ Content-Type: application/json
 
 {"id":"00-0000-0000-0000-000000000000","displayName":"_MSLearn_Stickers","roleScopeTagIds":["0"],"@odata.type":"#microsoft.graph.windows10CustomConfiguration","omaSettings":[{"omaUri":"./Vendor/MSFT/Policy/Config/Stickers/EnableStickers","displayName":"EnableStickers","@odata.type":"#microsoft.graph.omaSettingInteger","value":1}]}
 ```
+
+<sup><a name="footnote1"></a>1</sup> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -77,8 +79,6 @@ Multiple stickers can be added from the picker by selecting them. The stickers c
 :::image type="content" source="./images/win-11-se-stickers-animation.gif" alt-text="animation showing Windows 11 SE desktop with 4 pirate stickers being resized and moved" border="true":::
 
 Select the *X button* at the top of the screen to save your progress and close the sticker editor.
-
------------
 
 [MEM-1]: /mem/intune/configuration/custom-settings-windows-10
 
