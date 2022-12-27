@@ -158,7 +158,7 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 
 **Access Request Information:**
 
--   **Transaction ID** \[Type = GUID\]: unique GUID of the transaction. This field can help you correlate this event with other events that might contain the same the **Transaction ID**, such as “[4660](event-4660.md)(S): An object was deleted.”
+-   **Transaction ID** \[Type = GUID\]: unique GUID of the transaction. This field can help you correlate this event with other events that might contain the same **Transaction ID**, such as “[4660](event-4660.md)(S): An object was deleted.”
 
     This parameter might not be captured in the event, and in that case appears as “{00000000-0000-0000-0000-000000000000}”.
 
