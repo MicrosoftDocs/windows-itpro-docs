@@ -20,7 +20,12 @@ ms.technology: itpro-security
 # Access this computer from the network - security policy setting
 
 **Applies to**
--   Windows 10, Azure Stack HCI, Windows Server 2022, Windows Server 2019, Windows Server 2016
+-   Windows 11
+-   Windows 10-   
+-   Windows Server 2022
+-   Windows Server 2019
+-   Windows Server 2016
+-   Azure Stack HCI
 
 Describes the best practices, location, values, policy management, and security considerations for the **Access this computer from the network** security policy setting.
 
