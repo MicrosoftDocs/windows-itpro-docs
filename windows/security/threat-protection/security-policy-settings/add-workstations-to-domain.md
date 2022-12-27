@@ -20,7 +20,8 @@ ms.technology: itpro-security
 # Add workstations to domain
 
 **Applies to**
--   Windows 10
+-  Windows 11
+-  Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Add workstations to domain** security policy setting.
 
