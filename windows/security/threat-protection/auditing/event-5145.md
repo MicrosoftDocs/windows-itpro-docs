@@ -135,7 +135,7 @@ This event generates every time network share object (file or folder) was access
 
 **Access Request Information:**
 
--   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See “Table 13. File access codes.” for different hexadecimal values for access rights.
+-   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes) for different hexadecimal values for access rights.
 
 -   **Accesses** \[Type = UnicodeString\]: the list of access rights that were requested by **Subject\\Security ID**. These access rights depend on **Object Type**.
 
