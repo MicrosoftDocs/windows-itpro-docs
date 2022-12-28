@@ -21,7 +21,7 @@ ms.technology: itpro-security
 
 **Applies to**
 -   Windows 11
--   Windows 10-   
+-   Windows 10
 -   Windows Server 2022
 -   Windows Server 2019
 -   Windows Server 2016
