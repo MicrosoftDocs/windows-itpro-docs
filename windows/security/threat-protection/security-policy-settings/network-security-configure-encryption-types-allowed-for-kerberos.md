@@ -27,7 +27,7 @@ ms.technology: itpro-security
 -   Windows 8.1
 -   Windows 8
 -   Windows 7
--   Windows Vista- 
+-   Windows Vista
 -   Windows XP
 -   Windows Server 2012 R2
 -   Windows Server 2012
