@@ -2,6 +2,14 @@
 
 
 
+## Week of December 19, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/22/2022 | [Windows 11 SE Overview](/education/windows/windows-11-se-overview) | modified |
+
+
 ## Week of December 12, 2022
 
 
