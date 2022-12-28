@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory Federation Services
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
 
 ## Federation Services
 

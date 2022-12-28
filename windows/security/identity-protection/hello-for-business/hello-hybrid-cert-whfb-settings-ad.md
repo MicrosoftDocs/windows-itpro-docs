@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business: Active Directory
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 

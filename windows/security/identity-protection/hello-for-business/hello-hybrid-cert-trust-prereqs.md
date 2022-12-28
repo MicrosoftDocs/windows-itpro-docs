@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Prerequisites
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 

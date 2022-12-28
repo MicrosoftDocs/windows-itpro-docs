@@ -9,7 +9,7 @@ ms.topic: tutorial
 ---
 # Validate Active Directory prerequisites - on-premises certificate trust
 
-[!INCLUDE [hello-on-premises-cert-trust](../../includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [hello-on-premises-cert-trust](./includes/hello-on-premises-cert-trust.md)]
 
 The key registration process for the on-premises deployment of Windows Hello for Business requires the Windows Server 2016 Active Directory or later schema.
 

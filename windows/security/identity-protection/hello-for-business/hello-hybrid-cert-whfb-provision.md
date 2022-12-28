@@ -8,7 +8,7 @@ ms.topic: article
 ---
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
 
 ## Provisioning
 

@@ -9,7 +9,7 @@ ms.topic: article
 
 # Configure Hybrid Azure AD joined Windows Hello for Business- Directory Synchronization
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
 
 ## Directory Synchronization
 

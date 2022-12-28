@@ -30,7 +30,7 @@ Domain controllers automatically request a certificate from the *Domain controll
 <br>
 
 <details>
-<summary><b>Deploy the domain controller auto certificate enrollment GPO</summary>
+<summary><b>Deploy the domain controller auto certificate enrollment GPO</b></summary>
 
 Sign in to domain controller or management workstations with *Domain Administrator* equivalent credentials.
 

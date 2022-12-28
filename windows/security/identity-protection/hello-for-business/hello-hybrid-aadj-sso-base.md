@@ -8,7 +8,7 @@ ms.topic: how-to
 ---
 # Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-keycert-trust-aad.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-keycert-trust-aad.md)]
 
 ## Prerequisites
 

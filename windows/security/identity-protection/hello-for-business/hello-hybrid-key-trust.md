@@ -9,7 +9,7 @@ ms.topic: how-to
 ---
 # Hybrid key trust deployment
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
 
 Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This deployment guide provides the information to deploy Windows Hello for Business in a hybrid key trust trust scenario.
 

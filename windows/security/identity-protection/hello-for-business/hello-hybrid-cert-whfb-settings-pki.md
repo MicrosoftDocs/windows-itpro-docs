@@ -9,7 +9,7 @@ ms.topic: article
 
 # Configure Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-cert-trust.md)]
 
 Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly-issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows between them and the client computer.
 

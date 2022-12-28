@@ -9,7 +9,7 @@ ms.topic: tutorial
 ---
 # Configure and validate the Public Key Infrastructure - hybrid key trust
 
-[!INCLUDE [hello-hybrid-key-trust](../../includes/hello-hybrid-key-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
