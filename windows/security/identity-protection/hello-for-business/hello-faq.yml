@@ -94,7 +94,7 @@ sections:
 
       - question: Can I use a convenience PIN with Azure Active Directory?
         answer: |
-          It's currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN isn't supported for Azure Active Directory user accounts (synchronized identities included). It's only supported for on-premises Domain Joined users and local account users.
+          It's currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. However, convenience PIN isn't supported for Azure Active Directory user accounts (synchronized identities included). It's only supported for on-premises Domain Joined users and local account users.
 
       - question: Can I use an external Windows Hello compatible camera when my computer has a built-in Windows Hello compatible camera?
         answer: |
