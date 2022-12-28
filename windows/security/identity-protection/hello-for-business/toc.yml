@@ -33,6 +33,8 @@
         href: hello-hybrid-key-trust.md
       - name: Configure and validate the PKI
         href: hello-hybrid-key-trust-validate-pki.md
+      - name: Configure and provision Windows Hello for Business
+        href: hello-hybrid-key-trust-provision.md
     - name: Certificate trust deployment
       items: 
       - name: Overview

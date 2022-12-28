@@ -11,6 +11,17 @@ Domain controllers automatically request a domain controller certificate (if pub
 
 By default, the Active Directory CA provides and publishes the *Kerberos Authentication* certificate template. The cryptography configuration included in the template is based on older and less performant cryptography APIs. To ensure domain controllers request the proper certificate with the best available cryptography, use the *Kerberos Authentication* certificate template as a *baseline* to create an updated domain controller certificate template.
 
+> [!IMPORTANT]
+> The certificates issued to the domain controllers must meet the following requirements:
+> - The *Certificate Revocation List (CRL)* distribution point extension must points to a valid CRL, or an *Authority Information Access (AIA)* extension that points to an Online Certificate Status Protocol (OCSP) responder
+> - Optionally, the certificate *Subject* section could contain the directory path of the server object (the distinguished name)
+> - The certificate *Key Usage* section must contain *Digital Signature* and *Key Encipherment*
+> - Optionally, the certificate *Basic Constraints* section should contain: `[Subject Type=End Entity, Path Length Constraint=None]`
+> - The certificate *Enhanced Key Usage* section must contain Client Authentication (`1.3.6.1.5.5.7.3.2`), Server Authentication (`1.3.6.1.5.5.7.3.1`), and KDC Authentication (`1.3.6.1.5.2.3.5`)
+> - The certificate *Subject Alternative Name* section must contain the Domain Name System (DNS) name 
+> - The certificate template must have an extension that has the value **DomainController**"**, encoded as a [BMPstring](/windows/win32/seccertenroll/about-bmpstring). If you are using Windows Server Enterprise Certificate Authority, this extension is already included in the domain controller certificate template
+> - The domain controller certificate must be installed in the local computer's certificate store.
+
 Sign in to a CA or management workstations with *Domain Administrator* equivalent credentials.
 
 1. Open the **Certification Authority** management console
