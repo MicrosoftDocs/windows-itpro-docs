@@ -48,11 +48,11 @@ ms.date: 12/13/2022
 
 - [Windows Error Reporting (WER) disabled/User-mode crash dumps disabled](/windows/client-management/mdm/policy-csp-errorreporting#errorreporting-disablewindowserrorreporting)
 
-   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For information on disabling crash dumbs via Intune, see [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](configure-pde-in-intune.md#disable-windows-error-reporting-werdisable-user-mode-crash-dumps).
+   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For more information on disabling crash dumps via Intune, see [Disable Windows Error Reporting (WER)/Disable user-mode crash dumps](configure-pde-in-intune.md#disable-windows-error-reporting-werdisable-user-mode-crash-dumps).
 
 - [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
 
-   Hibernation files can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable hibernation. For information on disabling crash dumbs via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
+   Hibernation files can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable hibernation. For more information on disabling crash dumps via Intune, see [Disable hibernation](configure-pde-in-intune.md#disable-hibernation).
 
 - [Allowing users to select when a password is required when resuming from connected standby disabled](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
 
