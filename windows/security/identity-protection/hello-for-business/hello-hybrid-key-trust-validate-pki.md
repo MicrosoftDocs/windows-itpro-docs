@@ -15,7 +15,7 @@ Windows Hello for Business must have a Public Key Infrastructure (PKI) when usin
 
 Key trust deployments do not need client issued certificates for on-premises authentication. Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 
-You can use a Windows Server-based PKI or a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA](/troubleshoot/windows-server/windows-security/requirements-domain-controller).
+You can use a Windows Server-based PKI or a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA][SERV-1].
 
 ## Deploy an enterprise certification authority
 
@@ -42,7 +42,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 ## Configure the enterprise PKI
 
-If you don't have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
+If you don't have an existing PKI, review [Certification Authority Guidance][PREV-1] to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy][PREV-2] for instructions on how to configure your PKI using the information from your design session.
 
 Expand the following sections to configure the PKI for Windows Hello for Business.
 
@@ -53,6 +53,11 @@ Expand the following sections to configure the PKI for Windows Hello for Busines
 
 > [!NOTE]
 > Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices.
+
+> [!IMPORTANT]
+> For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
+> - Install the root certificate authority certificate for your organization in the user's trusted root certificate store
+> - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
 
 </details>
 <br>
@@ -94,7 +99,6 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 
 ## Configure and deploy certificates to domain controllers
 
-
 [!INCLUDE [dc-certificate-deployment](includes/dc-certificate-deployment.md)]
 
 ## Validate the configuration
@@ -104,19 +108,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 > [!div class="nextstepaction"]
 > [Next: configure and provision Windows Hello for Business >](hello-hybrid-key-trust-provision.md)
 
-
-
-<!-- 
-- The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL, or an Authority Information Access (AIA) extension that points to an Online Certificate Status Protocol (OCSP) responder
-- Optionally, the certificate Subject section could contain the directory path of the server object (the distinguished name)
-- The certificate Key Usage section must contain Digital Signature and Key Encipherment
-- Optionally, the certificate Basic Constraints section should contain: [Subject Type=End Entity, Path Length Constraint=None]
-- The certificate Enhanced Key Usage section must contain Client Authentication (`1.3.6.1.5.5.7.3.2`), Server Authentication (`1.3.6.1.5.5.7.3.1`), and KDC Authentication (`1.3.6.1.5.2.3.5`)
-- The certificate Subject Alternative Name section must contain the Domain Name System (DNS) name. 
-- The certificate template must have an extension that has the value "DomainController", encoded as a [BMPstring](/windows/win32/seccertenroll/about-bmpstring). If you are using Windows Server Enterprise Certificate Authority, this extension is already included in the domain controller certificate template
-- The domain controller certificate must be installed in the local computer's certificate store. See [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](./hello-hybrid-key-whfb-settings-pki.md) for details -->
-
-> [!IMPORTANT]
-> For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
-> - Install the root certificate authority certificate for your organization in the user's trusted root certificate store
-> - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
+<!--links-->
+[SERV-1]: /troubleshoot/windows-server/windows-security/requirements-domain-controller
+[PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)
+[PREV-2]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)
