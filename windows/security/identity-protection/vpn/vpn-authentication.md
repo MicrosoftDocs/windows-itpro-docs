@@ -34,7 +34,7 @@ Windows supports a number of EAP authentication methods.
 
   - Certificate filtering:
     - Certificate filtering can be enabled to search for a particular certificate to use to authenticate with
-    - Filtering can be Issuer-based or Enhanced Key Usage (EKU)-based
+    - Filtering can be Issuer-based or extended key usage (EKU)-based
 
   - Server validation - with TLS, server validation can be toggled on or off:
     - Server name - specify the server to validate

@@ -17,7 +17,7 @@ By default, the Active Directory CA provides and publishes the *Kerberos Authent
 > - Optionally, the certificate *Subject* section could contain the directory path of the server object (the distinguished name)
 > - The certificate *Key Usage* section must contain *Digital Signature* and *Key Encipherment*
 > - Optionally, the certificate *Basic Constraints* section should contain: `[Subject Type=End Entity, Path Length Constraint=None]`
-> - The certificate *Enhanced Key Usage* section must contain Client Authentication (`1.3.6.1.5.5.7.3.2`), Server Authentication (`1.3.6.1.5.5.7.3.1`), and KDC Authentication (`1.3.6.1.5.2.3.5`)
+> - The certificate *extended key usage* section must contain Client Authentication (`1.3.6.1.5.5.7.3.2`), Server Authentication (`1.3.6.1.5.5.7.3.1`), and KDC Authentication (`1.3.6.1.5.2.3.5`)
 > - The certificate *Subject Alternative Name* section must contain the Domain Name System (DNS) name 
 > - The certificate template must have an extension that has the value `DomainController`, encoded as a [BMPstring](/windows/win32/seccertenroll/about-bmpstring). If you are using Windows Server Enterprise Certificate Authority, this extension is already included in the domain controller certificate template
 > - The domain controller certificate must be installed in the local computer's certificate store

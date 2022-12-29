@@ -60,18 +60,21 @@ The configuration of the enterprise PKI to support Windows Hello for Business co
 > - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
 
 </details>
+<br>
 <details>
 <summary><b>Supersede existing domain controller certificates</b></summary>
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
 </details>
+<br>
 <details>
 <summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
 </details>
+<br>
 <details>
 <summary><b>Publish the certificate template to the CA</b></summary>
 

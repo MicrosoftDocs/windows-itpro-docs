@@ -58,7 +58,7 @@ Windows Hello for Business enforces the strict KDC validation security feature w
 - The domain controller has the private key for the certificate provided
 - The root CA that issued the domain controller's certificate is in the device's *Trusted Root Certificate Authorities*
 - Use the *Kerberos Authentication certificate template* instead of any other older template
-- The domain controller's certificate has the *KDC Authentication* enhanced key usage (EKU)
+- The domain controller's certificate has the *KDC Authentication* extended key usage (EKU)
 - The domain controller's certificate's subject alternate name has a DNS Name that matches the name of the domain
 - The domain controller's certificate's signature hash algorithm is **sha256**
 - The domain controller's certificate's public key is **RSA (2048 Bits)**
@@ -110,6 +110,7 @@ You need to host your new certificate revocation list on a web server so Azure A
 4. Close the **DNS Manager**.
 
 </details>
+<br>
 <details>
 <summary><b>Prepare a file share to host the certificate revocation list</b></summary>
 
@@ -151,6 +152,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 9. Select **Close** in the **cdp Properties** dialog box.
 
 </details>
+<br>
 <details>
 <summary><b>Configure the new CRL distribution point and Publishing location in the issuing certificate authority</b></summary>
 
@@ -190,6 +192,7 @@ The web server is ready to host the CRL distribution point. Now, configure the i
 10. Select **Apply** save your selections. Select **Yes** when ask to restart the service. Select **OK** to close the properties dialog box.
 
 </details>
+<br>
 <details>
 <summary><b>Publish CRL</b></summary>
 
@@ -207,6 +210,7 @@ Validate your new CRL distribution point is working.
 1. Open a web browser. Navigate to `http://crl.[yourdomain].com/cdp`. You should see two files created from publishing your new CRL.
    ![Validate the new CRL.](images/aadj/validate-cdp-using-browser.png)
 </details>
+<br>
 <details>
 <summary><b>Reissue domain controller certificates</b></summary>
 
@@ -264,6 +268,7 @@ Expand each step to learn more:
 1. Select **OK**  two times to return to the **Certificate Manager** for the local computer. Close the **Certificate Manager**.
 
 </details>
+<br>
 <details>
 <summary><b>Deploy the certificate via Intune</b></summary>
 
