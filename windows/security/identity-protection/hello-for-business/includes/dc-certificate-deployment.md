@@ -27,7 +27,6 @@ Domain controllers automatically request a certificate from the *Domain controll
 1. Close the **Group Policy Management Editor**
 
 </details>
-<br>
 
 <details>
 <summary><b>Deploy the domain controller auto certificate enrollment GPO</b></summary>
@@ -40,4 +39,3 @@ Sign in to domain controller or management workstations with *Domain Administrat
 1. Select **OK**
 
 </details>
-<br>

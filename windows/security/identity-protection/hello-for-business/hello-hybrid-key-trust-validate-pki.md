@@ -87,7 +87,9 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Close the console
 
 </details>
-<br>
+
+> [!IMPORTANT]
+> If you plan to deploy Azure AD joined devices, and require single sign-on (SSO) when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
 
 ## Configure and deploy certificates to domain controllers
 
