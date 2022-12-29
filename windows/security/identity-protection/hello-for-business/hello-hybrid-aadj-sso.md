@@ -27,23 +27,9 @@ To deploy single sign-on for Azure AD-joined devices using certificates, read an
 
 Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD-joined devices. Unlike hybrid Azure AD-joined devices, Azure AD-joined devices don't have a relationship with your Active Directory domain. This factor changes the way in which users authenticate to Active Directory. Validate the following configurations to ensure they support Azure AD-joined devices:
 
-- Azure Active Directory Connect Sync
-- Device Registration
 - Certificate Revocation List (CRL) Distribution Point (CDP)
 - Domain Controller certificate
 - Network infrastructure in place to reach the on-premises domain controllers. If the machines are external, you can use any VPN solution
-
-### Azure Active Directory Connect synchronization
-Azure AD join, and hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure. To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you're using a key or a certificate. Ensure you have Azure AD Connect Sync installed and functioning properly.
-
-If you upgraded your Active Directory schema to the Windows Server 2016 schema after installing Azure AD Connect, run Azure AD Connect and run **Refresh directory schema** from the list of tasks.
-![Azure AD Connect Schema Refresh.](images/aadj/aadconnectschema.png)
-
-### Azure Active Directory Device Registration
-A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration. A user can't provision Windows Hello for Business unless the device from which they're trying to provision has registered with Azure Active Directory.
-
-You can use the `dsregcmd.exe /status` command to determine if your device is Azure AD joined.
-![dsregcmd output.](images/aadj/dsregcmd.png)
 
 ### CRL Distribution Point (CDP)
 
@@ -81,7 +67,7 @@ Authenticating from a Hybrid Azure AD joined device to a domain using Windows He
 
 ## Configuring a CRL Distribution Point for an issuing certificate authority
 
-Use this set of procedures to update your certificate authority that issues your domain controller certificates to include an http-based CRL distribution point. 
+Use this set of procedures to update your certificate authority that issues your domain controller certificates to include an http-based CRL distribution point.
 
 Steps you'll perform include:
 
@@ -288,42 +274,5 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 6. Sign out of the Microsoft Azure portal.
 > [!NOTE]
 > After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
-
-## Configure Windows Hello for Business Device Enrollment
-
-Sign-in a workstation with access equivalent to a _domain user_.
-
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Devices**.
-3. Choose **Enroll devices**.
-4. Select **Windows enrollment**.
-5. Under **Windows enrollment**, select **Windows Hello for Business**.
-   ![Create Windows Hello for Business Policy.](images/aadj/MEM.png)
-6. Select **Enabled** from the **Configure Windows Hello for Business** list.
-7. Select **Required** next to **Use a Trusted Platform Module (TPM)**. By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and doesn't allow fall back to software-based keys.
-8. Enter the desired **Minimum PIN length** and **Maximum PIN length**.
-    > [!IMPORTANT]
-    > The default minimum PIN length for Windows Hello for Business on Windows 10 and Windows 11 is six. Microsoft Intune defaults the minimum PIN length to four, which reduces the security of the user's PIN. If you do not have a desired PIN length, set the minimum PIN length to six.
-
-9. Select the appropriate configuration for the following settings:
-    * **Lowercase letters in PIN**
-    * **Uppercase letters in PIN**
-    * **Special characters in PIN**
-    * **PIN expiration (days)**
-    * **Remember PIN history**
-    
-    > [!NOTE]
-    > The Windows Hello for Business PIN is not a symmetric key (a password). A copy of the current PIN is not stored locally or on a server like in the case of passwords. Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs. Additionally, enabling PIN history is the only scenario that requires Windows to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN. If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
-
-10. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device. To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
-11. Select **No** to **Allow phone sign-in**. This feature has been deprecated.
-12. Choose **Save**.
-13. Sign out of the Microsoft Endpoint Manager admin center.
-
-> [!IMPORTANT]
-> For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](./hello-how-it-works-authentication.md).
-
-> [!NOTE]
-> For access issues in the context of VPN, make sure to check the resolution and workaround described in [Workaround for user security context and access control](/troubleshoot/windows-client/group-policy/group-membership-changes-not-updating-over-some-vpn-connections#workarounds).
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
