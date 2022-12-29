@@ -65,34 +65,26 @@ Windows Hello for Business enforces the strict KDC validation security feature w
 
 Authenticating from a Hybrid Azure AD joined device to a domain using Windows Hello for Business doesn't enforce that the domain controller certificate includes the *KDC Authentication* EKU. If you're adding Azure AD-joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the *KDC Authentication* EKU.
 
-## Configuring a CRL Distribution Point for an issuing certificate authority
+## Configure a CRL distribution point for an issuing CA
 
-Use this set of procedures to update your certificate authority that issues your domain controller certificates to include an http-based CRL distribution point.
+Use this set of procedures to update the CA that issues domain controller certificates to include an http-based CRL distribution point. Expand each step to learn more:
 
-Steps you'll perform include:
+<details>
+<summary><b>Configure Internet Information Services to host CRL distribution point</b></summary>
 
-- [Configure Internet Information Services to host CRL distribution point](#configure-internet-information-services-to-host-crl-distribution-point) 
-- [Prepare a file share to host the certificate revocation list](#prepare-a-file-share-to-host-the-certificate-revocation-list)
-- [Configure the new CRL distribution point and Publishing location in the issuing certificate authority](#configure-the-new-crl-distribution-point-and-publishing-location-in-the-issuing-certificate-authority)
-- [Publish CRL](#publish-a-new-crl)
-- [Reissue domain controller certificates](#reissue-domain-controller-certificates)
-
-
-### Configure Internet Information Services to host CRL distribution point
-
-You need to host your new certificate revocation list of a web server so Azure AD-joined devices can easily validate certificates without authentication. You can host these files on web servers many ways. The following steps are just one and may be useful for admins unfamiliar with adding a new CRL distribution point.
+You need to host your new certificate revocation list on a web server so Azure AD-joined devices can easily validate certificates without authentication. You can host these files on web servers many ways. The following steps are just one and may be useful for admins unfamiliar with adding a new CRL distribution point.
 
 > [!IMPORTANT]
 > Do not configure the IIS server hosting your CRL distribution point to use https or a server authentication certificate. Clients should access the distribution point using http. 
 
-#### Installing the Web Server
+### Install the web server
 
 1. Sign-in to your server as a local administrator and start **Server Manager** if it didn't start during your sign in. 
 2. Select the **Local Server** node in the navigation pane. Select **Manage** and select **Add Roles and Features**.
 3. In the **Add Role and Features Wizard**, select **Server Selection**. Verify the selected server is the local server. Select **Server Roles**. Select the check box next to **Web Server (IIS)**.
 4. Select **Next** through the remaining options in the wizard, accepting the defaults, and install the Web Server role.
  
-#### Configure the Web Server
+### Configure the web server
 
 1. From **Windows Administrative Tools**, Open **Internet Information Services (IIS) Manager**.
 2. Expand the navigation pane to show **Default Web Site**. Select and then right-click **Default Web site** and select **Add Virtual Directory...**.
@@ -109,14 +101,16 @@ You need to host your new certificate revocation list of a web server so Azure A
    ![IIS Configuration Editor double escaping.](images/aadj/iis-config-editor-allowDoubleEscaping.png)
 7. Close **Internet Information Services (IIS) Manager**. 
 
-#### Create a DNS resource record for the CRL distribution point URL 
+### Create a DNS resource record for the CRL distribution point URL
 
 1. On your DNS server or from an administrative workstation, open **DNS Manager** from **Administrative Tools**.
 2. Expand **Forward Lookup Zones** to show the DNS zone for your domain. Right-click your domain name in the navigation pane and select **New Host (A or AAAA)...**.
 3. In the **New Host** dialog box, type **crl** in **Name**. Type the IP address of the web server you configured in **IP Address**. Select **Add Host**. Select **OK** to close the **DNS** dialog box. Select **Done**.
 ![Create DNS host record.](images/aadj/dns-new-host-dialog.png)
-4. Close the **DNS Manager**. 
+4. Close the **DNS Manager**.
 
+</details>
+<details>Prepare a file share to host the certificate revocation list</b></summary>
 ### Prepare a file share to host the certificate revocation list
 
 These procedures configure NTFS and share permissions on the web server to allow the certificate authority to automatically publish the certificate revocation list.
@@ -156,11 +150,13 @@ These procedures configure NTFS and share permissions on the web server to allow
 8. In the **Permissions for cdp** dialog box, select the name of the certificate authority from the **Group or user names** list. In the **Permissions for** section, select **Allow** for **Full control**. Select **OK**.
 9. Select **Close** in the **cdp Properties** dialog box.
 
+</details>
+<details>
+<summary><b>Configure the new CRL distribution point and Publishing location in the issuing certificate authority</b></summary>
 
 ### Configure the new CRL distribution point and Publishing location in the issuing certificate authority
 
 The web server is ready to host the CRL distribution point. Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point
-
 
 #### Configure the CRL distribution Point
 1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**. 
@@ -193,6 +189,10 @@ The web server is ready to host the CRL distribution point. Now, configure the i
 9. Select **Publish Delta CRLs to this location**.
 10. Select **Apply** save your selections. Select **Yes** when ask to restart the service. Select **OK** to close the properties dialog box.
 
+</details>
+<details>
+<summary><b>Publish CRL</b></summary>
+
 ### Publish a new CRL
 
 1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**.
@@ -206,6 +206,9 @@ Validate your new CRL distribution point is working.
 
 1. Open a web browser. Navigate to `http://crl.[yourdomain].com/cdp`. You should see two files created from publishing your new CRL.
    ![Validate the new CRL.](images/aadj/validate-cdp-using-browser.png)
+</details>
+<details>
+<summary><b>Reissue domain controller certificates</b></summary>
 
 ### Reissue domain controller certificates
 
@@ -235,6 +238,13 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 4. Select the **Details** tab. Scroll down the list until **CRL Distribution Points** is visible in the **Field** column of the list. Select **CRL Distribution Point**.
 5. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**.</br>
 ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
+
+</details>
+
+
+
+
+
 
 ## Configure and Assign a Trusted Certificate Device Configuration Profile
 
