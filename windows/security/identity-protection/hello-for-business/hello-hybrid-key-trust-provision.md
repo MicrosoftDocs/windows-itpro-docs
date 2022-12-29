@@ -1,12 +1,53 @@
-<!-->
-The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
-### Configure AD - Creating Security Groups
+---
+title: Windows Hello for Business key trust clients configuration and enrollment
+description: Learn how to configure devices to enroll in Windows Hello for Business in a hybrid key trust scenario.
+ms.date: 11/1/2022
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+ms.topic: tutorial
+---
 
-Windows Hello for Business uses a security group to simplify the deployment and management.
+# Configure a Windows Hello for Business policy and deploy it to the devices - hybrid key trust
+
+After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+
+## Configure Windows Hello for Business policy
+
+After setting up the *Azure AD Kerberos object*, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
+
+### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+For Azure AD joined devices and hybrid Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
+
+Windows Hello for Business can be enabled using device enrollment or device configuration policy. Device enrollment policy is only applied at device enrollment time. Any modifications to the configuration in Intune won't apply to already enrolled devices. Device configuration policy is applied after device enrollment. Changes to this policy type in Intune are applied to already enrolled devices.
+
+#### Enable Windows Hello for Business
+
+If you already enabled Windows Hello for Business, you can skip to **configure the policy**. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello) to create a Windows Hello for Business device enrollment policy.
+
+You can also follow these steps to create a device configuration policy instead of using the device enrollment policy:
+
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
+1. For Platform, select **Windows 10 and later**.
+1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
+1. Name the profile with a familiar name. For example, "Windows Hello for Business".
+1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
+1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
+
+    [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
+
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
+
+Windows Hello for Business settings are also available in the settings catalog. For more information, see [Use the settings catalog to configure settings on Windows devices](/mem/intune/configuration/settings-catalog).
+
+### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+
+For hybrid Azure AD joined devices, you can use GPOs to manage Windows Hello for Business.
 
 #### Create the Windows Hello for Business Users Security Group
 
-The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group.  This provides users with the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
+The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases. You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group. This provides users with the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
 Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 
@@ -16,6 +57,8 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 4. Right-click the **Users** container. Click **New**. Click **Group**.
 5. Type **Windows Hello for Business Users** in the **Group Name** text box.
 6. Click **OK**.
+
+---
 
 ## Windows Hello for Business Group Policy
 
