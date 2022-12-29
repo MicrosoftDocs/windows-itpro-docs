@@ -1,211 +1,348 @@
 ---
-title: Policy CSP - Education
-description: Learn how to use the Policy CSP - Education setting to control the graphing functionality in the Windows Calculator app.
+title: Education Policy CSP
+description: Learn more about the Education Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/29/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Education-Begin -->
 # Policy CSP - Education
 
-<hr/>
+<!-- Education-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Education-Editable-End -->
 
-<!--Policies-->
-## Education policies
+<!-- EnableEduThemes-Begin -->
+## EnableEduThemes
 
-<dl>
-  <dd>
-    <a href="#education-allowgraphingcalculator">Education/AllowGraphingCalculator</a>
-  </dd>
-  <dd>
-    <a href="#education-defaultprintername">Education/DefaultPrinterName</a>
-  </dd>
-  <dd>
-    <a href="#education-preventaddingnewprinters">Education/PreventAddingNewPrinters</a>
-  </dd>
-  <dd>
-    <a href="#education-printernames">Education/PrinterNames</a>
-  </dd>
-</dl>
+<!-- EnableEduThemes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- EnableEduThemes-Applicability-End -->
 
-<hr/>
+<!-- EnableEduThemes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Education/EnableEduThemes
+```
+<!-- EnableEduThemes-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="education-allowgraphingcalculator"></a>**Education/AllowGraphingCalculator**
+<!-- EnableEduThemes-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether EDU-specific theme packs are available in Settings > Personalization. If you disable or don't configure this policy setting, EDU-specific theme packs will not be included. If you enable this policy setting, users will be able to personalize their devices with EDU-specific themes.
+<!-- EnableEduThemes-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableEduThemes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableEduThemes-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableEduThemes-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableEduThemes-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableEduThemes-AllowedValues-Begin -->
+**Allowed values**:
 
-> [!div class = "checklist"]
-> * User
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableEduThemes-AllowedValues-End -->
 
-<hr/>
+<!-- EnableEduThemes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableEduThemes-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to control, whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you'll be able to access graphing functionality.
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Allow Graphing Calculator*
--   GP name: *AllowGraphingCalculator*
--   GP path: *Windows Components/Calculator*
--   GP ADMX file name: *Programs.admx*
+<!-- EnableEduThemes-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-- 0 - Disabled
-- 1 (default) - Enabled
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- IsEducationEnvironment-Begin -->
+## IsEducationEnvironment
 
-<hr/>
+<!-- IsEducationEnvironment-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+<!-- IsEducationEnvironment-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="education-defaultprintername"></a>**Education/DefaultPrinterName**
+<!-- IsEducationEnvironment-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Education/IsEducationEnvironment
+```
+<!-- IsEducationEnvironment-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- IsEducationEnvironment-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows tenant to control whether to declare this OS as an education environment
+<!-- IsEducationEnvironment-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IsEducationEnvironment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IsEducationEnvironment-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IsEducationEnvironment-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- IsEducationEnvironment-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- IsEducationEnvironment-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- IsEducationEnvironment-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy allows IT Admins to set the user's default printer.
+<!-- IsEducationEnvironment-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IsEducationEnvironment-Examples-End -->
 
+<!-- IsEducationEnvironment-End -->
+
+<!-- AllowGraphingCalculator-Begin -->
+## AllowGraphingCalculator
+
+<!-- AllowGraphingCalculator-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+<!-- AllowGraphingCalculator-Applicability-End -->
+
+<!-- AllowGraphingCalculator-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Education/AllowGraphingCalculator
+```
+<!-- AllowGraphingCalculator-OmaUri-End -->
+
+<!-- AllowGraphingCalculator-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, users will be able to access graphing functionality.
+<!-- AllowGraphingCalculator-Description-End -->
+
+<!-- AllowGraphingCalculator-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowGraphingCalculator-Editable-End -->
+
+<!-- AllowGraphingCalculator-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowGraphingCalculator-DFProperties-End -->
+
+<!-- AllowGraphingCalculator-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- AllowGraphingCalculator-AllowedValues-End -->
+
+<!-- AllowGraphingCalculator-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowGraphingCalculator |
+| Friendly Name | Allow Graphing Calculator |
+| Location | User Configuration |
+| Path | Windows Components > Calculator |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Calculator |
+| Registry Value Name | AllowGraphingCalculator |
+| ADMX File Name | Programs.admx |
+<!-- AllowGraphingCalculator-GpMapping-End -->
+
+<!-- AllowGraphingCalculator-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowGraphingCalculator-Examples-End -->
+
+<!-- AllowGraphingCalculator-End -->
+
+<!-- DefaultPrinterName-Begin -->
+## DefaultPrinterName
+
+<!-- DefaultPrinterName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- DefaultPrinterName-Applicability-End -->
+
+<!-- DefaultPrinterName-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Education/DefaultPrinterName
+```
+<!-- DefaultPrinterName-OmaUri-End -->
+
+<!-- DefaultPrinterName-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy sets user's default printer
+<!-- DefaultPrinterName-Description-End -->
+
+<!-- DefaultPrinterName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The policy value is expected to be the name (network host name) of an installed printer.
+<!-- DefaultPrinterName-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
+<!-- DefaultPrinterName-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DefaultPrinterName-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="education-preventaddingnewprinters"></a>**Education/PreventAddingNewPrinters**
+<!-- DefaultPrinterName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DefaultPrinterName-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- DefaultPrinterName-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PreventAddingNewPrinters-Begin -->
+## PreventAddingNewPrinters
 
+<!-- PreventAddingNewPrinters-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- PreventAddingNewPrinters-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventAddingNewPrinters-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Education/PreventAddingNewPrinters
+```
+<!-- PreventAddingNewPrinters-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PreventAddingNewPrinters-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevents users from using familiar methods to add local and network printers.
 
-> [!div class = "checklist"]
-> * User
+If this policy setting is enabled, it removes the Add Printer option from the Start menu. (To find the Add Printer option, click Start, click Printers, and then click Add Printer.) This setting also removes Add Printer from the Printers folder in Control Panel.
 
-<hr/>
+Also, users cannot add printers by dragging a printer icon into the Printers folder. If they try, a message appears explaining that the setting prevents the action.
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to prevent user installation of more printers from the printers settings.
+However, this setting does not prevent users from using the Add Hardware Wizard to add a printer. Nor does it prevent users from running other programs to add printers.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
--   GP Friendly name: *Prevent addition of printers*
--   GP name: *NoAddPrinter*
--   GP path: *Control Panel/Printers*
--   GP ADMX file name: *Printing.admx*
+This setting does not delete printers that users have already added. However, if users have not added a printer when this setting is applied, they cannot print.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Note: You can use printer permissions to restrict the use of printers without specifying a setting. In the Printers folder, right-click a printer, click Properties, and then click the Security tab.
 
--   0 (default) – Allow user installation.
--   1 – Prevent user installation.
+If this policy is disabled, or not configured, users can add printers using the methods described above.
+<!-- PreventAddingNewPrinters-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- PreventAddingNewPrinters-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreventAddingNewPrinters-Editable-End -->
 
-<hr/>
+<!-- PreventAddingNewPrinters-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="education-printernames"></a>**Education/PrinterNames**
+| Property name | Property value |
+|:--|:--|
+| Format | int |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PreventAddingNewPrinters-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- PreventAddingNewPrinters-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Allow user installation. |
+| 1 | Prevent user installation. |
+<!-- PreventAddingNewPrinters-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PreventAddingNewPrinters-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | NoAddPrinter |
+| Friendly Name | Prevent addition of printers |
+| Location | User Configuration |
+| Path | Control Panel > Printers |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoAddPrinter |
+| ADMX File Name | Printing.admx |
+<!-- PreventAddingNewPrinters-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PreventAddingNewPrinters-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreventAddingNewPrinters-Examples-End -->
 
-<hr/>
+<!-- PreventAddingNewPrinters-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to automatically provision printers based on their names (network host names).
+<!-- PrinterNames-Begin -->
+## PrinterNames
 
+<!-- PrinterNames-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+<!-- PrinterNames-Applicability-End -->
+
+<!-- PrinterNames-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Education/PrinterNames
+```
+<!-- PrinterNames-OmaUri-End -->
+
+<!-- PrinterNames-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy provisions per-user network printers
+<!-- PrinterNames-Description-End -->
+
+<!-- PrinterNames-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The policy value is expected to be a ```&#xF000;``` separated list of printer names.  The OS will attempt to search and install the matching printer driver for each listed printer.
+<!-- PrinterNames-Editable-End -->
 
-<!--/Description-->
-<!--/Policy-->
-<hr/>
+<!-- PrinterNames-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- PrinterNames-DFProperties-End -->
 
-<!--/Policies-->
+<!-- PrinterNames-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PrinterNames-Examples-End -->
 
-## Related topics
+<!-- PrinterNames-End -->
+
+<!-- Education-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Education-CspMoreInfo-End -->
+
+<!-- Education-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
