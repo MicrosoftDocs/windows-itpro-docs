@@ -11,15 +11,16 @@ ms.topic: tutorial
 
 [!INCLUDE [hello-hybrid-key-trust](./includes/hello-hybrid-key-trust.md)]
 
-Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* model. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
-Key trust deployments do not need client issued certificates for on-premises authentication. Active Directory user accounts are configured for public key mapping by Azure AD Connect Sync, which synchronizes the public key of the Windows Hello for Business credential to an attribute on the user's Active Directory object.
+Key trust deployments do not need client-issued certificates for on-premises authentication. Active Directory user accounts are configured for public key mapping by *Azure AD Connect Sync*, which synchronizes the public key of the Windows Hello for Business credential to an attribute on the user's Active Directory object (`msDS-KeyCredentialLink`).
 
-You can use a Windows Server-based PKI or a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA][SERV-1].
+A Windows Server-based PKI or a third-party Enterprise certification authority can be used. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA][SERV-1].
 
 ## Deploy an enterprise certification authority
 
-This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.
+This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.\
+If you don't have an existing PKI, review [Certification Authority Guidance][PREV-1] to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy][PREV-2] for instructions on how to configure your PKI using the information from your design session.
 
 ### Lab-based PKI
 
@@ -42,9 +43,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 ## Configure the enterprise PKI
 
-If you don't have an existing PKI, review [Certification Authority Guidance][PREV-1] to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy][PREV-2] for instructions on how to configure your PKI using the information from your design session.
-
-Expand the following sections to configure the PKI for Windows Hello for Business.
+The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
 
 <details>
 <summary><b>Configure domain controller certificates</b></summary>
@@ -61,26 +60,20 @@ Expand the following sections to configure the PKI for Windows Hello for Busines
 > - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
 
 </details>
-<br>
-
 <details>
 <summary><b>Supersede existing domain controller certificates</b></summary>
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
 </details>
-<br>
-
 <details>
 <summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
 </details>
-<br>
-
 <details>
-<summary><b>Publish certificate template to the CA</b></summary>
+<summary><b>Publish the certificate template to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -103,6 +96,18 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 ## Validate the configuration
 
 [!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
+
+## Section review and next steps
+
+Before moving to the next section, ensure the following steps are complete:
+
+> [!div class="checklist"]
+> * Configure domain controller certificates
+> * Supersede existing domain controller certificates
+> * Unpublish superseded certificate templates
+> * Publish the certificate template to the CA
+> * Deploy certificates to the domain controllers
+> * Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
 > [Next: configure and provision Windows Hello for Business >](hello-hybrid-key-trust-provision.md)

@@ -20,7 +20,15 @@ Hybrid environments are distributed systems that enable organizations to use on-
 
 ## Prerequisites
 
-The following prerequisites must be met for a hybrid key trust deployment.
+The following prerequisites must be met for a hybrid key trust deployment:
+
+> [!div class="checklist"]
+> * Directories and directory synchronization
+> * Authentication to Azure AD
+> * Device registration
+> * Public Key Infrastructure
+> * Multi-factor authentication
+> * Device management
 
 ### Directories and directory synchronization
 
@@ -35,14 +43,12 @@ During the Window Hello for Business provisioning process, users register the pu
 > [!NOTE]
 > Windows Hello for Business Hybrid key trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
 
-Ensure that you have [adequate Domain Controllers](hello-adequate-domain-controllers.md) in each Active Directory site where users will be authenticating with Windows Hello for Business.
-
 ### Authentication to Azure AD
 
 Authentication to Azure AD can be configured with or without federation:
 
 - [Password hash synchronization][AZ-6] or [Azure Active Directory pass-through-authentication][AZ-7] is required for non-federated environments
-- Active Directory Federation Services (AD FS) or third-party federation services are required for federated environments
+- Active Directory Federation Services (AD FS) or a third-party federation service is required for federated environments
 
 ### Device registration
 
@@ -68,13 +74,15 @@ For more information how to configure AD FS to provide multi-factor authenticati
 
 To configure Windows Hello for Business, devices can be configured through a mobile device management (MDM) solution like Intune, or via group policy.
 
-## Deployment steps
+## Next steps
 
 Once the prerequisites are met, deploying Windows Hello for Business with a hybrid key trust model consists of the following steps:
 
-- Configure and validate the PKI
-- Configure Windows Hello for Business settings
-- Provision Windows Hello for Business on Windows clients
+> [!div class="checklist"]
+> * Configure and validate the PKI
+> * Configure Windows Hello for Business settings
+> * Provision Windows Hello for Business on Windows clients
+> * Configure single sign-on (SSO) on Azure AD joined devices
 
 > [!div class="nextstepaction"]
 > [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-key-trust-validate-pki.md)
