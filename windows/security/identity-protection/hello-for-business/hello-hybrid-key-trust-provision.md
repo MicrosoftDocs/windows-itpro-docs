@@ -11,15 +11,14 @@ ms.topic: tutorial
 
 After the prerequisites are met and the PKI configuration is validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-## Configure Windows Hello for Business policy
-
-After setting up the *Azure AD Kerberos object*, Windows Hello for business cloud Kerberos trust must be enabled on your Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
-
 ### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 For Azure AD joined devices and hybrid Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
 
-Windows Hello for Business can be enabled using device enrollment or device configuration policy. Device enrollment policy is only applied at device enrollment time. Any modifications to the configuration in Intune won't apply to already enrolled devices. Device configuration policy is applied after device enrollment. Changes to this policy type in Intune are applied to already enrolled devices.
+Windows Hello for Business can be enabled during device enrollment in Intune, or with a policy:
+
+- The device enrollment policy is only applied at enrollment time, and any changes to its configuration won't apply to already enrolled devices
+- A device configuration policy is applied after device enrollment. Changes to this policy type in Intune are applied to already enrolled devices
 
 #### Enable Windows Hello for Business
 
@@ -58,22 +57,20 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 5. Type **Windows Hello for Business Users** in the **Group Name** text box.
 6. Click **OK**.
 
----
-
-## Windows Hello for Business Group Policy
+#### Windows Hello for Business Group Policy
 
 The Windows Hello for Business Group Policy object delivers the correct Group Policy settings to the user, which enables them to enroll and use Windows Hello for Business to authenticate to Azure and Active Directory
 
 > [!NOTE]
 > If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more details about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more details about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
 
-### Enable Windows Hello for Business
+#### Enable Windows Hello for Business
 
 The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business.  A user will only attempt enrollment if this policy setting is configured to enabled.  
 
 You can configure the Enable Windows Hello for Business Group Policy setting for computer or users. Deploying this policy setting to computers results in ALL users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment.  Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
 
-### Create the Windows Hello for Business Group Policy object
+#### Create the Windows Hello for Business Group Policy object
 
 The Group Policy object contains the policy setting needed to trigger Windows Hello for Business provisioning.
 
@@ -88,7 +85,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**. Close the **Group Policy Management Editor**.
 
-### Configure Security in the Windows Hello for Business Group Policy object
+#### Configure Security in the Windows Hello for Business Group Policy object
 
 The best way to deploy the Windows Hello for Business Group Policy object is to use security group filtering. The enables you to easily manage the users that should receive Windows Hello for Business by simply adding them to a group. This enables you to deploy Windows Hello for Business in phases.
 1. Start the **Group Policy Management Console** (gpmc.msc)
@@ -98,7 +95,7 @@ The best way to deploy the Windows Hello for Business Group Policy object is to 
 5. Click the **Delegation** tab. Select **Authenticated Users** and click **Advanced**.
 6. In the **Group or User names** list, select **Authenticated Users**.  In the **Permissions for Authenticated Users** list, clear the **Allow** check box for the **Apply Group Policy** permission. Click **OK**.
 
-### Deploy the Windows Hello for Business Group Policy object
+#### Deploy the Windows Hello for Business Group Policy object
 
 The application of the Windows Hello for Business Group Policy object uses security group filtering.  This enables you to link the Group Policy object at the domain, ensuring the Group Policy object is within scope to all users. However, the security group filtering ensures only the users included in the *Windows Hello for Business Users* global group receive and apply the Group Policy object, which results in the provisioning of Windows Hello for Business.
 1. Start the **Group Policy Management Console** (gpmc.msc)
@@ -107,9 +104,9 @@ The application of the Windows Hello for Business Group Policy object uses secur
 
 Just to reassure, linking the **Windows Hello for Business** Group Policy object to the domain ensures the Group Policy object is in scope for all domain users. However, not all users will have the policy settings applied to them. Only users who are members of the Windows Hello for Business group receive the policy settings. All others users ignore the Group Policy object. 
 
-## Other Related Group Policy settings
+#### Other Related Group Policy settings
 
-### Windows Hello for Business
+#### Windows Hello for Business
 
 There are other Windows Hello for Business policy settings you can configure to manage your Windows Hello for Business deployment.  These policy settings are computer-based policy setting; so they are applicable to any user that sign-in from a computer with these policy settings. 
 
@@ -147,7 +144,9 @@ Windows provides eight PIN Complexity Group Policy settings that give you granul
 ## Add users to the Windows Hello for Business Users group
 
 Users must receive the Windows Hello for Business group policy settings and have the proper permission to provision  Windows Hello for Business. You can provide users with these settings and permissions by adding the users or groups to the **Windows Hello for Business Users** group.   Users and groups who are not members of this group will not attempt to enroll for Windows Hello for Business.
--->
+
+---
+
 ## Provision Windows Hello for Business
 
 The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
