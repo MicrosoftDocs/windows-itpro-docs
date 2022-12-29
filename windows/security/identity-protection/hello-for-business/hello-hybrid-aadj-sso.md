@@ -267,17 +267,17 @@ Expand each step to learn more:
 <details>
 <summary><b>Deploy the certificate via Intune</b></summary>
 
-1. Sign-in to the [Microsoft Azure portal](https://portal.azure.com) and select **Microsoft Intune**.
-2. Select **Device configuration**. In the **Device Configuration** blade, select **Create profile**.
-![Intune Create Profile.](images/aadj/intune-create-device-config-profile.png)
-3. In the **Create profile** blade, type **Enterprise Root Certificate** in **Name**. Provide a description. Select **Windows 10 and later** from the **Platform** list. Select **Trusted certificate** from the **Profile type** list. Select **Configure**.
-4. In the **Trusted Certificate** blade, use the folder icon to browse for the location of the enterprise root certificate file you created in step 8 of [Export Enterprise Root certificate](#export-enterprise-root-certificate). Select **OK**. Select **Create**.
-![Intune Trusted Certificate Profile.](images/aadj/intune-create-trusted-certificate-profile.png)
-5. In the **Enterprise Root Certificate** blade, select **Assignments**. In the **Include** tab, select **All Devices** from the **Assign to** list. Select **Save**.
-![Intune Profile assignment.](images/aadj/intune-device-config-enterprise-root-assignment.png)
-6. Sign out of the Microsoft Azure portal.
-> [!NOTE]
-> After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
+To configure devices with Microsoft Intune, use a custom policy:
+
+1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Select **Devices > Configuration profiles > Create profile**
+1. Select **Platform > Windows 8.1 and later** and **Profile type > Trusted certificate**
+1. Select **Create**
+1. In **Configuration settings**, select the folder icon and browse for the enterprise root certificate file. Once the file is selected, select **Open** to upload it to Intune
+1. Under **Destination store** dropdown, select **Computer certificate store - Root**
+1. Select **Next**
+1. Under **Assignment**, select a security group that contains as members the devices or users that you want to configure > **Next**
+1. Review the policy configuration and select **Create**
 
 </details>
 
