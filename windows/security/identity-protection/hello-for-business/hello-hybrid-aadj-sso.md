@@ -110,8 +110,8 @@ You need to host your new certificate revocation list on a web server so Azure A
 4. Close the **DNS Manager**.
 
 </details>
-<details>Prepare a file share to host the certificate revocation list</b></summary>
-### Prepare a file share to host the certificate revocation list
+<details>
+<summary><b>Prepare a file share to host the certificate revocation list</b></summary>
 
 These procedures configure NTFS and share permissions on the web server to allow the certificate authority to automatically publish the certificate revocation list.
 
@@ -241,37 +241,31 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 
 </details>
 
+## Deploy the root CA certificate to Azure AD-joined devices
 
+The domain controllers have a certificate that include the new CRL distribution point. Next, you need the enterprise root certificate so you can deploy it to Azure AD-joined devices. When you deploy the enterprise root certificates to a device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Azure AD-joined devices don't trust domain controller certificates and authentication fails.
 
+Expand each step to learn more:
 
-
-
-## Configure and Assign a Trusted Certificate Device Configuration Profile
-
-Your domain controllers have new certificates that include the new CRL distribution point. Next, you need your enterprise root certificate so you can deploy it to Azure AD-joined devices. When you deploy the enterprise root certificates to the device, it ensures the device trusts any certificates issued by the certificate authority. Without the certificate, Azure AD-joined devices don't trust domain controller certificates and authentication fails. 
-
-Steps you'll perform include:
-- [Export Enterprise Root certificate](#export-enterprise-root-certificate)
-- [Create and Assign a Trust Certificate Device Configuration Profile](#create-and-assign-a-trust-certificate-device-configuration-profile)
-
-### Export Enterprise Root certificate
+<details>
+<summary><b>Export the enterprise root certificate</b></summary>
 
 1. Sign-in a domain controller using administrative credentials.
-2. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer.
-3. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
-4. Select the **Certification Path** tab. In the **Certification path** view, select the topmost node and select **View Certificate**.
-![Certificate Path.](images/aadj/certlm-cert-path-tab.png)
-5. In the new **Certificate** dialog box, select the **Details** tab. Select **Copy to File**.
-![Details tab and copy to file.](images/aadj/certlm-root-cert-details-tab.png)
-6. In the **Certificate Export Wizard**, select **Next**. 
-7. On the **Export File Format** page of the wizard, select **Next**. 
-8. On the **File to Export** page in the wizard, type the name and location of the root certificate and select **Next**. Select **Finish** and then select **OK** to close the success dialog box. <br>
-![Export root certificate.](images/aadj/certlm-export-root-certificate.png)
-9. Select **OK**  two times to return to the **Certificate Manager** for the local computer. Close the **Certificate Manager**.
+1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer.
+1. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
+1. Select the **Certification Path** tab. In the **Certification path** view, select the topmost node and select **View Certificate**.
+1. ![Certificate Path.](images/aadj/certlm-cert-path-tab.png)
+1. In the new **Certificate** dialog box, select the **Details** tab. Select **Copy to File**.
+1. ![Details tab and copy to file.](images/aadj/certlm-root-cert-details-tab.png)
+1. In the **Certificate Export Wizard**, select **Next**. 
+1. On the **Export File Format** page of the wizard, select **Next**. 
+1. On the **File to Export** page in the wizard, type the name and location of the root certificate and select **Next**. Select **Finish** and then select **OK** to close the success dialog box. <br>
+1. ![Export root certificate.](images/aadj/certlm-export-root-certificate.png)
+1. Select **OK**  two times to return to the **Certificate Manager** for the local computer. Close the **Certificate Manager**.
 
-### Create and Assign a Trust Certificate Device Configuration Profile
-
-A **Trusted Certificate** device configuration profile is how you deploy trusted certificates to Azure AD-joined devices.
+</details>
+<details>
+<summary><b>Deploy the certificate via Intune</b></summary>
 
 1. Sign-in to the [Microsoft Azure portal](https://portal.azure.com) and select **Microsoft Intune**.
 2. Select **Device configuration**. In the **Device Configuration** blade, select **Create profile**.
@@ -285,4 +279,6 @@ A **Trusted Certificate** device configuration profile is how you deploy trusted
 > [!NOTE]
 > After the creation, the **supported platform** parameter of the profile will contain the value "Windows 8.1 and later", as the certificate configuration for Windows 8.1 and Windows 10 is the same.
 
-If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
+</details>
+
+If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). Otherwise, you can sign in to an Azure AD joined device with Windows Hello for Business and test SSO to an on-premises resource.
