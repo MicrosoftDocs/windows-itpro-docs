@@ -45,6 +45,7 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 
 The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
 
+<br>
 <details>
 <summary><b>Configure domain controller certificates</b></summary>
 
@@ -92,7 +93,7 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 </details>
 
 > [!IMPORTANT]
-> If you plan to deploy Azure AD joined devices, and require single sign-on (SSO) when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
+> If you plan to deploy **Azure AD joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
 
 ## Configure and deploy certificates to domain controllers
 

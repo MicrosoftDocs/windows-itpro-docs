@@ -116,74 +116,73 @@ These procedures configure NTFS and share permissions on the web server to allow
 1. Right-click the **cdp** folder and select **Properties**. Select the **Sharing** tab. Select **Advanced Sharing**
 1. Select **Share this folder**. Type **cdp$** in **Share name**. Select **Permissions**
     ![cdp sharing.](images/aadj/cdp-sharing.png)
-1. In the **Permissions for cdp$** dialog box, select **Add**.
-1. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, select **Object Types**. In the **Object Types** dialog box, select **Computers**, and then select **OK**.
-1. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the server running the certificate authority issuing the certificate revocation list, and then select **Check Names**. Select **OK**.
-1. In the **Permissions for cdp$** dialog box, select the certificate authority from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Select **OK**.
+1. In the **Permissions for cdp$** dialog box, select **Add**
+1. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, select **Object Types**. In the **Object Types** dialog box, select **Computers**, and then select **OK**
+1. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the server running the certificate authority issuing the certificate revocation list, and then select **Check Names**. Select **OK**
+1. In the **Permissions for cdp$** dialog box, select the certificate authority from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Select **OK**
     ![CDP Share Permissions.](images/aadj/cdp-share-permissions.png)
-1. In the **Advanced Sharing** dialog box, select **OK**.
+1. In the **Advanced Sharing** dialog box, select **OK**
 
 > [!Tip]
 > Make sure that users can access **\\\Server FQDN\sharename**.
 
 ### Disable Caching 
-1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
-2. Right-click the **cdp** folder and select **Properties**. Select the **Sharing** tab. Select **Advanced Sharing**.
-3. Select **Caching**. Select **No files or programs from the shared folder are available offline**.
+1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server)
+1. Right-click the **cdp** folder and select **Properties**. Select the **Sharing** tab. Select **Advanced Sharing**
+1. Select **Caching**. Select **No files or programs from the shared folder are available offline**
     ![CDP disable caching.](images/aadj/cdp-disable-caching.png)
-4. Select **OK**. 
+1. Select **OK**
 
 ### Configure NTFS permission for the CDP folder
 
-1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
-2. Right-click the **cdp** folder and select **Properties**. Select the **Security** tab.
-3. On the **Security** tab, select Edit.
-5. In the **Permissions for cdp** dialog box, select **Add**.
+1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server)
+1. Right-click the **cdp** folder and select **Properties**. Select the **Security** tab
+1. On the **Security** tab, select Edit
+1. In the **Permissions for cdp** dialog box, select **Add**
     ![CDP NTFS Permissions.](images/aadj/cdp-ntfs-permissions.png)
-6. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, select **Object Types**. In the **Object Types** dialog box, select **Computers**. Select **OK**.
-7. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the certificate authority, and then select **Check Names**. Select **OK**.
-8. In the **Permissions for cdp** dialog box, select the name of the certificate authority from the **Group or user names** list. In the **Permissions for** section, select **Allow** for **Full control**. Select **OK**.
-9. Select **Close** in the **cdp Properties** dialog box.
+1. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, select **Object Types**. In the **Object Types** dialog box, select **Computers**. Select **OK**
+1. In the **Select Users, Computers, Service Accounts, or Groups** dialog box, in **Enter the object names to select**, type the name of the certificate authority, and then select **Check Names**. Select **OK**
+1. In the **Permissions for cdp** dialog box, select the name of the certificate authority from the **Group or user names** list. In the **Permissions for** section, select **Allow** for **Full control**. Select **OK**
+1. Select **Close** in the **cdp Properties** dialog box
 
 </details>
 <br>
 <details>
-<summary><b>Configure the new CRL distribution point and Publishing location in the issuing certificate authority</b></summary>
+<summary><b>Configure the new CDP and publishing location in the issuing CA</b></summary>
 
-### Configure the new CRL distribution point and Publishing location in the issuing certificate authority
+The web server is ready to host the CRL distribution point. Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point.
 
-The web server is ready to host the CRL distribution point. Now, configure the issuing certificate authority to publish the CRL at the new location and to include the new CRL distribution point
+### Configure the CRL distribution Point
 
-#### Configure the CRL distribution Point
-1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**. 
-2. In the navigation pane, right-click the name of the certificate authority and select **Properties**
-3. Select **Extensions**. On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
-4. On the **Extensions** tab, select **Add**. Type <b>http://crl.[domainname]/cdp/</b> in **location**. For example, `<http://crl.corp.contoso.com/cdp/>` or `<http://crl.contoso.com/cdp/>` (don't forget the trailing forward slash). 
+1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certification Authority** console from **Administrative Tools**
+1. In the navigation pane, right-click the name of the certificate authority and select **Properties**
+1. Select **Extensions**. On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list
+1. On the **Extensions** tab, select **Add**. Type <b>http://crl.[domainname]/cdp/</b> in **location**. For example, `<http://crl.corp.contoso.com/cdp/>` or `<http://crl.contoso.com/cdp/>` (don't forget the trailing forward slash)
     ![CDP New Location dialog box.](images/aadj/cdp-extension-new-location.png)
-5. Select **\<CaName>** from the **Variable** list and select **Insert**. Select **\<CRLNameSuffix>** from the **Variable** list and select **Insert**. Select **\<DeltaCRLAllowed>** from the **Variable** list and select **Insert**.
-6. Type **.crl** at the end of the text in **Location**. Select **OK**.
-7. Select the CDP you just created.
+1. Select **\<CaName>** from the **Variable** list and select **Insert**. Select **\<CRLNameSuffix>** from the **Variable** list and select **Insert**. Select **\<DeltaCRLAllowed>** from the **Variable** list and select **Insert**
+1. Type **.crl** at the end of the text in **Location**. Select **OK**
+1. Select the CDP you just created
     ![CDP complete http.](images/aadj/cdp-extension-complete-http.png)
-8. Select **Include in CRLs. Clients use this to find Delta CRL locations**.
-9. Select **Include in the CDP extension of issued certificates**.
-10. Select **Apply** save your selections. Select **No** when ask to restart the service.
+1. Select **Include in CRLs. Clients use this to find Delta CRL locations**
+1. Select **Include in the CDP extension of issued certificates**
+1. Select **Apply** save your selections. Select **No** when ask to restart the service
 
 > [!NOTE]
 > Optionally, you can remove unused CRL distribution points and publishing locations.
 
-#### Configure the CRL publishing location
+### Configure the CRL publishing location
 
-1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**. 
-2. In the navigation pane, right-click the name of the certificate authority and select **Properties**
-3. Select **Extensions**. On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
-4. On the **Extensions** tab, select **Add**. Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share). For example, **\\\app\cdp$\\** (don't forget the trailing backwards slash).
-5. Select **\<CaName>** from the **Variable** list and select **Insert**. Select **\<CRLNameSuffix>** from the **Variable** list and select **Insert**. Select **\<DeltaCRLAllowed>** from the **Variable** list and select **Insert**.
-6. Type **.crl** at the end of the text in **Location**. Select **OK**.
-7. Select the CDP you just created. <br/>
+1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**
+1. In the navigation pane, right-click the name of the certificate authority and select **Properties**
+1. Select **Extensions**. On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list
+1. On the **Extensions** tab, select **Add**. Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share). For example, **\\\app\cdp$\\** (don't forget the trailing backwards slash)
+1. Select **\<CaName>** from the **Variable** list and select **Insert**. Select **\<CRLNameSuffix>** from the **Variable** list and select **Insert**. Select **\<DeltaCRLAllowed>** from the **Variable** list and select **Insert**
+1. Type **.crl** at the end of the text in **Location**. Select **OK**
+1. Select the CDP you just created
    ![CDP publishing location.](images/aadj/cdp-extension-complete-unc.png)
-8. Select **Publish CRLs to this location**.
-9. Select **Publish Delta CRLs to this location**.
-10. Select **Apply** save your selections. Select **Yes** when ask to restart the service. Select **OK** to close the properties dialog box.
+1. Select **Publish CRLs to this location**
+1. Select **Publish Delta CRLs to this location**
+1. Select **Apply** save your selections. Select **Yes** when ask to restart the service. Select **OK** to close the properties dialog box
 
 </details>
 <br>
@@ -192,16 +191,16 @@ The web server is ready to host the CRL distribution point. Now, configure the i
 
 ### Publish a new CRL
 
-1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**.
-2. In the navigation pane, right-click **Revoked Certificates**, hover over **All Tasks**, and select **Publish**
+1. On the issuing certificate authority, sign-in as a local administrator. Start the **Certificate Authority** console from **Administrative Tools**
+1. In the navigation pane, right-click **Revoked Certificates**, hover over **All Tasks**, and select **Publish**
     ![Publish a New CRL.](images/aadj/publish-new-crl.png)
-3. In the **Publish CRL** dialog box, select **New CRL** and select **OK**.
+1. In the **Publish CRL** dialog box, select **New CRL** and select **OK**
 
-#### Validate CDP Publishing
+### Validate CDP Publishing
 
-Validate your new CRL distribution point is working. 
+Validate the new CRL distribution point is working.
 
-1. Open a web browser. Navigate to `http://crl.[yourdomain].com/cdp`. You should see two files created from publishing your new CRL.
+1. Open a web browser. Navigate to `http://crl.[yourdomain].com/cdp`. You should see two files created from publishing the new CRL
     ![Validate the new CRL.](images/aadj/validate-cdp-using-browser.png)
 </details>
 <br>
@@ -212,29 +211,29 @@ Validate your new CRL distribution point is working.
 
 With the CA properly configured with a valid HTTP-based CRL distribution point, you need to reissue certificates to domain controllers as the old certificate doesn't have the updated CRL distribution point. 
 
-1. Sign-in a domain controller using administrative credentials.
-2. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer.
-3. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, select the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
+1. Sign-in a domain controller using administrative credentials
+1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer
+1. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, select the existing domain controller certificate that includes **KDC Authentication** in the list of **Intended Purposes**
     ![Certificate Manager Personal store.](images/aadj/certlm-personal-store.png)
-4. Right-click the selected certificate. Hover over **All Tasks** and then select **Renew Certificate with New Key...**. In the **Certificate Enrollment** wizard, select **Next**.
-    ![Renew with New key.](images/aadj/certlm-renew-with-new-key.png) 
-5. In the **Request Certificates** page of the wizard, verify the selected certificate has the correct certificate template and ensure the status is available. Select **Enroll**.
-6. After the enrollment completes, select **Finish** to close the wizard. 
-7. Repeat this procedure on all your domain controllers.
+1. Right-click the selected certificate. Hover over **All Tasks** and then select **Renew Certificate with New Key...**. In the **Certificate Enrollment** wizard, select **Next**
+    ![Renew with New key.](images/aadj/certlm-renew-with-new-key.png)
+1. In the **Request Certificates** page of the wizard, verify the selected certificate has the correct certificate template and ensure the status is available. Select **Enroll**
+1. After the enrollment completes, select **Finish** to close the wizard
+1. Repeat this procedure on all your domain controllers
 
 > [!NOTE]
-> You can configure domain controllers to automatically enroll and renew their certificates. Automatic certificate enrollment helps prevent authentication outages due to expired certificates. Refer to the [Windows Hello Deployment Guides](./hello-deployment-guide.md) to learn how to deploy automatic certificate enrollment for domain controllers. 
+> You can configure domain controllers to automatically enroll and renew their certificates. Automatic certificate enrollment helps prevent authentication outages due to expired certificates. Refer to the [Windows Hello Deployment Guides](./hello-deployment-guide.md) to learn how to deploy automatic certificate enrollment for domain controllers.
 
 > [!IMPORTANT]
 > If you are not using automatic certificate enrollment, create a calendar reminder to alert you two months before the certificate expiration date. Send the reminder to multiple people in the organization to ensure more than one or two people know when these certificates expire.
 
-#### Validate CDP in the new certificate
+### Validate CDP in the new certificate
 
-1. Sign-in a domain controller using administrative credentials.
-2. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer.
-3. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
-4. Select the **Details** tab. Scroll down the list until **CRL Distribution Points** is visible in the **Field** column of the list. Select **CRL Distribution Point**.
-5. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**.</br>
+1. Sign-in a domain controller using administrative credentials
+1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer
+1. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**
+1. Select the **Details** tab. Scroll down the list until **CRL Distribution Points** is visible in the **Field** column of the list. Select **CRL Distribution Point**
+1. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate. Select **OK**
     ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
 </details>
@@ -247,18 +246,18 @@ The domain controllers have a certificate that include the new CRL distribution 
 <details>
 <summary><b>Export the enterprise root certificate</b></summary>
 
-1. Sign-in a domain controller using administrative credentials.
-1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer.
-1. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
-1. Select the **Certification Path** tab. In the **Certification path** view, select the topmost node and select **View Certificate**.
+1. Sign-in a domain controller using administrative credentials
+1. Open the **Run** dialog box. Type **certlm.msc** to open the **Certificate Manager** for the local computer
+1. In the navigation pane, expand **Personal**. Select **Certificates**. In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**
+1. Select the **Certification Path** tab. In the **Certification path** view, select the topmost node and select **View Certificate**
     ![Certificate Path.](images/aadj/certlm-cert-path-tab.png)
-1. In the new **Certificate** dialog box, select the **Details** tab. Select **Copy to File**.
+1. In the new **Certificate** dialog box, select the **Details** tab. Select **Copy to File**
     ![Details tab and copy to file.](images/aadj/certlm-root-cert-details-tab.png)
-1. In the **Certificate Export Wizard**, select **Next**. 
-1. On the **Export File Format** page of the wizard, select **Next**. 
-1. On the **File to Export** page in the wizard, type the name and location of the root certificate and select **Next**. Select **Finish** and then select **OK** to close the success dialog box. <br>
+1. In the **Certificate Export Wizard**, select **Next**
+1. On the **Export File Format** page of the wizard, select **Next**
+1. On the **File to Export** page in the wizard, type the name and location of the root certificate and select **Next**. Select **Finish** and then select **OK** to close the success dialog box
     ![Export root certificate.](images/aadj/certlm-export-root-certificate.png)
-1. Select **OK**  two times to return to the **Certificate Manager** for the local computer. Close the **Certificate Manager**.
+1. Select **OK**  two times to return to the **Certificate Manager** for the local computer. Close the **Certificate Manager**
 
 </details>
 <br>

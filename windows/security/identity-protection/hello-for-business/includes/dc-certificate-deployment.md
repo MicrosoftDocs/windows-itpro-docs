@@ -7,6 +7,7 @@ ms.topic: include
 
 Expand the following sections to configure the group policy for domain controllers and validate the certificate deployment.
 
+<br>
 <details>
 <summary><b>Configure automatic certificate enrollment for the domain controllers</b></summary>
 
@@ -28,6 +29,7 @@ Domain controllers automatically request a certificate from the *Domain controll
 
 </details>
 
+<br>
 <details>
 <summary><b>Deploy the domain controller auto certificate enrollment GPO</b></summary>
 

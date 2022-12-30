@@ -13,7 +13,7 @@ By default, the Active Directory CA provides and publishes the *Kerberos Authent
 
 > [!IMPORTANT]
 > The certificates issued to the domain controllers must meet the following requirements:
-> - The *Certificate Revocation List (CRL)* distribution point extension must points to a valid CRL, or an *Authority Information Access (AIA)* extension that points to an Online Certificate Status Protocol (OCSP) responder
+> - The *Certificate Revocation List (CRL) distribution point* extension must point to a valid CRL, or an *Authority Information Access (AIA)* extension that points to an Online Certificate Status Protocol (OCSP) responder
 > - Optionally, the certificate *Subject* section could contain the directory path of the server object (the distinguished name)
 > - The certificate *Key Usage* section must contain *Digital Signature* and *Key Encipherment*
 > - Optionally, the certificate *Basic Constraints* section should contain: `[Subject Type=End Entity, Path Length Constraint=None]`
