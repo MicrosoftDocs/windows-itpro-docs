@@ -107,12 +107,12 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 Before moving to the next section, ensure the following steps are complete:
 
 > [!div class="checklist"]
-> * Configure domain controller certificates
-> * Supersede existing domain controller certificates
-> * Unpublish superseded certificate templates
-> * Publish the certificate template to the CA
-> * Deploy certificates to the domain controllers
-> * Validate the domain controllers configuration
+> - Configure domain controller certificates
+> -_ Supersede existing domain controller certificates
+> - Unpublish superseded certificate templates
+> - Publish the certificate template to the CA
+> - Deploy certificates to the domain controllers
+> - Validate the domain controllers configuration
 
 > [!div class="nextstepaction"]
 > [Next: configure and provision Windows Hello for Business >](hello-hybrid-key-trust-provision.md)

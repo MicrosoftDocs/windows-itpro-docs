@@ -35,7 +35,7 @@
         href: hello-hybrid-key-trust-validate-pki.md
       - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-key-trust-provision.md
-      - name: On-premises SSO for Azure AD joined devices
+      - name: Configure SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
     - name: Certificate trust deployment
       items: 
@@ -63,7 +63,7 @@
           href: hello-hybrid-cert-whfb-settings-policy.md
       - name: Sign-in and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
-      - name: On-premises SSO for Azure AD joined devices
+      - name: Configure SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
       - name: Using certificates for on-premises SSO
         href: hello-hybrid-aadj-sso-cert.md
