@@ -1,234 +1,277 @@
 ---
-title: Policy CSP - EventLogService
-description: Learn how to use the Policy CSP - EventLogService setting to control Event Log behavior when the log file reaches its maximum size.
+title: EventLogService Policy CSP
+description: Learn more about the EventLogService Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 12/29/2022
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- EventLogService-Begin -->
 # Policy CSP - EventLogService
 
-<hr/>
+> [!TIP]
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<!--Policies-->
-## EventLogService policies
+<!-- EventLogService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EventLogService-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#eventlogservice-controleventlogbehavior">EventLogService/ControlEventLogBehavior</a>
-  </dd>
-  <dd>
-    <a href="#eventlogservice-specifymaximumfilesizeapplicationlog">EventLogService/SpecifyMaximumFileSizeApplicationLog</a>
-  </dd>
-  <dd>
-    <a href="#eventlogservice-specifymaximumfilesizesecuritylog">EventLogService/SpecifyMaximumFileSizeSecurityLog</a>
-  </dd>
-  <dd>
-    <a href="#eventlogservice-specifymaximumfilesizesystemlog">EventLogService/SpecifyMaximumFileSizeSystemLog</a>
-  </dd>
-</dl>
+<!-- ControlEventLogBehavior-Begin -->
+## ControlEventLogBehavior
 
-<hr/>
+<!-- ControlEventLogBehavior-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- ControlEventLogBehavior-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="eventlogservice-controleventlogbehavior"></a>**EventLogService/ControlEventLogBehavior**
+<!-- ControlEventLogBehavior-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/EventLogService/ControlEventLogBehavior
+```
+<!-- ControlEventLogBehavior-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- ControlEventLogBehavior-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
 
-<!--/SupportedSKUs-->
-<hr/>
+If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
+<!-- ControlEventLogBehavior-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ControlEventLogBehavior-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ControlEventLogBehavior-Editable-End -->
 
-<hr/>
+<!-- ControlEventLogBehavior-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls Event Log behavior, when the log file reaches its maximum size.
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ControlEventLogBehavior-DFProperties-End -->
 
-If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
+<!-- ControlEventLogBehavior-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+**ADMX mapping**:
 
-> [!NOTE]
-> Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
+| Name | Value |
+|:--|:--|
+| Name | Channel_Log_Retention |
+| Friendly Name | Control Event Log behavior when the log file reaches its maximum size |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Log Service > Application |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\Application |
+| Registry Value Name | Retention |
+| ADMX File Name | EventLog.admx |
+<!-- ControlEventLogBehavior-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- ControlEventLogBehavior-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ControlEventLogBehavior-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
--   GP name: *Channel_Log_Retention_1*
--   GP path: *Windows Components/Event Log Service/Application*
--   GP ADMX file name: *eventlog.admx*
+<!-- ControlEventLogBehavior-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- SpecifyMaximumFileSizeApplicationLog-Begin -->
+## SpecifyMaximumFileSizeApplicationLog
 
-<hr/>
+<!-- SpecifyMaximumFileSizeApplicationLog-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- SpecifyMaximumFileSizeApplicationLog-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="eventlogservice-specifymaximumfilesizeapplicationlog"></a>**EventLogService/SpecifyMaximumFileSizeApplicationLog**
+<!-- SpecifyMaximumFileSizeApplicationLog-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/EventLogService/SpecifyMaximumFileSizeApplicationLog
+```
+<!-- SpecifyMaximumFileSizeApplicationLog-OmaUri-End -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyMaximumFileSizeApplicationLog-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+<!-- SpecifyMaximumFileSizeApplicationLog-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyMaximumFileSizeApplicationLog-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyMaximumFileSizeApplicationLog-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Specify the maximum log file size (KB)*
--   GP name: *Channel_LogMaxSize_1*
--   GP path: *Windows Components/Event Log Service/Application*
--   GP ADMX file name: *eventlog.admx*
+<!-- SpecifyMaximumFileSizeApplicationLog-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyMaximumFileSizeApplicationLog-DFProperties-End -->
 
-<hr/>
+<!-- SpecifyMaximumFileSizeApplicationLog-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--Policy-->
-<a href="" id="eventlogservice-specifymaximumfilesizesecuritylog"></a>**EventLogService/SpecifyMaximumFileSizeSecurityLog**
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Channel_LogMaxSize |
+| Friendly Name | Specify the maximum log file size (KB) |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Log Service > Application |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\Application |
+| ADMX File Name | EventLog.admx |
+<!-- SpecifyMaximumFileSizeApplicationLog-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SpecifyMaximumFileSizeApplicationLog-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyMaximumFileSizeApplicationLog-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyMaximumFileSizeApplicationLog-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyMaximumFileSizeSecurityLog-Begin -->
+## SpecifyMaximumFileSizeSecurityLog
 
-> [!div class = "checklist"]
-> * Device
+<!-- SpecifyMaximumFileSizeSecurityLog-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- SpecifyMaximumFileSizeSecurityLog-Applicability-End -->
 
-<hr/>
+<!-- SpecifyMaximumFileSizeSecurityLog-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/EventLogService/SpecifyMaximumFileSizeSecurityLog
+```
+<!-- SpecifyMaximumFileSizeSecurityLog-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyMaximumFileSizeSecurityLog-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 20 megabytes (20480 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
+<!-- SpecifyMaximumFileSizeSecurityLog-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyMaximumFileSizeSecurityLog-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyMaximumFileSizeSecurityLog-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Specify the maximum log file size (KB)*
--   GP name: *Channel_LogMaxSize_2*
--   GP path: *Windows Components/Event Log Service/Security*
--   GP ADMX file name: *eventlog.admx*
+<!-- SpecifyMaximumFileSizeSecurityLog-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyMaximumFileSizeSecurityLog-DFProperties-End -->
 
-<hr/>
+<!-- SpecifyMaximumFileSizeSecurityLog-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--Policy-->
-<a href="" id="eventlogservice-specifymaximumfilesizesystemlog"></a>**EventLogService/SpecifyMaximumFileSizeSystemLog**
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Channel_LogMaxSize |
+| Friendly Name | Specify the maximum log file size (KB) |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Log Service > Security |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\Security |
+| ADMX File Name | EventLog.admx |
+<!-- SpecifyMaximumFileSizeSecurityLog-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SpecifyMaximumFileSizeSecurityLog-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyMaximumFileSizeSecurityLog-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyMaximumFileSizeSecurityLog-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyMaximumFileSizeSystemLog-Begin -->
+## SpecifyMaximumFileSizeSystemLog
 
-> [!div class = "checklist"]
-> * Device
+<!-- SpecifyMaximumFileSizeSystemLog-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+<!-- SpecifyMaximumFileSizeSystemLog-Applicability-End -->
 
-<hr/>
+<!-- SpecifyMaximumFileSizeSystemLog-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/EventLogService/SpecifyMaximumFileSizeSystemLog
+```
+<!-- SpecifyMaximumFileSizeSystemLog-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyMaximumFileSizeSystemLog-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes), in kilobyte increments.
 
-If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 20 megabytes.
+If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog, and it defaults to 1 megabyte.
+<!-- SpecifyMaximumFileSizeSystemLog-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyMaximumFileSizeSystemLog-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyMaximumFileSizeSystemLog-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:
--   GP Friendly name: *Specify the maximum log file size (KB)*
--   GP name: *Channel_LogMaxSize_4*
--   GP path: *Windows Components/Event Log Service/System*
--   GP ADMX file name: *eventlog.admx*
+<!-- SpecifyMaximumFileSizeSystemLog-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyMaximumFileSizeSystemLog-DFProperties-End -->
 
+<!-- SpecifyMaximumFileSizeSystemLog-AdmxBacked-Begin -->
+> [!TIP]
+> This is an ADMX-backed policy and requires SyncML format for configuration. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 
-<!--/Policies-->
+**ADMX mapping**:
 
-## Related topics
+| Name | Value |
+|:--|:--|
+| Name | Channel_LogMaxSize |
+| Friendly Name | Specify the maximum log file size (KB) |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Log Service > System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EventLog\System |
+| ADMX File Name | EventLog.admx |
+<!-- SpecifyMaximumFileSizeSystemLog-AdmxBacked-End -->
+
+<!-- SpecifyMaximumFileSizeSystemLog-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyMaximumFileSizeSystemLog-Examples-End -->
+
+<!-- SpecifyMaximumFileSizeSystemLog-End -->
+
+<!-- EventLogService-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- EventLogService-CspMoreInfo-End -->
+
+<!-- EventLogService-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
