@@ -15,16 +15,32 @@ After the prerequisites are met and the PKI configuration is validated, Windows 
 
 For Azure AD joined devices and hybrid Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
 
-Windows Hello for Business can be enabled during device enrollment in Intune, or with a policy:
+There are different ways to enable Windows Hello for Business via Intune:
 
-- The device enrollment policy is only applied at enrollment time, and any changes to its configuration won't apply to already enrolled devices
-- A device configuration policy is applied after device enrollment. Changes to this policy type in Intune are applied to already enrolled devices
+- Using a policy applied at the tenant level. Note that this policy:
+  - is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
+  - it applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually kept disabled and Windows Hello for Business is enabled using a policy targeted to a security group
+- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh. There are different policy types to chose from:
+  - settings catalog
+  - [security baselines](/mem/intune/protect/security-baselines)
+  - custom policy, via the PassportForWork CSP
+  - [account protection policy](/mem/intune/protect/endpoint-security-account-protection-policy)
+  - identity protection policy template
 
-#### Enable Windows Hello for Business
+#### Verify the tenant-wide policy
 
-If you already enabled Windows Hello for Business, you can skip to **configure the policy**. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello) to create a Windows Hello for Business device enrollment policy.
+To check the Windows Hello for Business policy applied at enrollment time:
 
-You can also follow these steps to create a device configuration policy instead of using the device enrollment policy:
+1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Select **Devices** > **Windows** > **Windows Enrollment**
+1. Select **Windows Hello for Business**
+1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
+
+:::image type="content" source="./images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center." border="true" lightbox="./images/whfb-disable.png":::
+
+If the tenant-wide policy is enabled, you can skip to [Provision Windows Hello for Business](#provision-windows-hello-for-business). Otherwise, follow the instructions below to create a policy.
+
+#### Enable Windows Hello for Business with a settings catalog policy
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
