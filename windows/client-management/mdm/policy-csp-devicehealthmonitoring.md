@@ -180,8 +180,12 @@ Configure this policy manually only when explicitly instructed to do so by a Mic
 <!--/Policy-->
 <hr/>
 
+**This policy creates the following two registry entres:**
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection\AllowCommercialDataPipeline = 1
+https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.DataCollection::AllowCommercialDataPipeline
 
-
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection\AllowTelemetry = 2
+https://admx.help/?Category=Windows_11_2022&Policy=Microsoft.Policies.DataCollection::AllowTelemetry
 <!--/Policies-->
 
 ## Related topics
