@@ -82,7 +82,7 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 > * Configure and validate the PKI
 > * Configure Windows Hello for Business settings
 > * Provision Windows Hello for Business on Windows clients
-> * Configure single sign-on (SSO) on Azure AD joined devices
+> * Configure single sign-on (SSO) for Azure AD joined devices
 
 > [!div class="nextstepaction"]
 > [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-key-trust-validate-pki.md)
