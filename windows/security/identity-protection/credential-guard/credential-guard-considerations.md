@@ -8,7 +8,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
-# Considerations when using Windows Defender Credential Guard
+# Advice while using Windows Defender Credential Guard (Windows)
 
 Passwords are still weak. We recommend that in addition to deploying Windows Defender Credential Guard, organizations move away from passwords to other authentication methods, such as physical smart cards, virtual smart cards, or Windows Hello for Business.
 
