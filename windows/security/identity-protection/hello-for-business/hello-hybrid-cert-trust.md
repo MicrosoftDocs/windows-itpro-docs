@@ -55,12 +55,12 @@ Windows Hello for Business hybrid certificate trust requires Active Directory to
 
 If you're new to AD FS and federation services:
 
-- review [key AD FS concepts][SER-3] prior to deploying the AD FS farm
-- review the [AD FS design guide][SER-4] to design and plan your federation service
+- Review [key AD FS concepts][SER-3] prior to deploying the AD FS farm
+- Review the [AD FS design guide][SER-4] to design and plan your federation service
 
 Once you have your AD FS design ready:
 
-- review [deploying a federation server farm][SER-2] to configure AD FS in your environment
+- Review [deploying a federation server farm][SER-2] to configure AD FS in your environment
 
 The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 

@@ -38,10 +38,10 @@ Sign in to a CA or management workstations with *Domain Administrator* equivalen
    - Select **Fully distinguished name** from the **Subject name format** list
    - Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**
 1. On the **Request Handling** tab, select the **Renew with same key** check box
-1. On the **Security** tab, select **Add**. Type *Window Hello for Business Users* in the **Enter the object names to select** text box and select **OK**
+1. On the **Security** tab, select **Add**. Target an Active Directory security group that contains the users that you want to enroll in Windows Hello for Business. For example, if you have a group called *Window Hello for Business Users*, type it in the **Enter the object names to select** text box and select **OK**
 1. Select the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section:
    - Select the **Allow** check box for the **Enroll** permission
-   - Excluding the **Windows Hello for Business Users** group, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared
+   - Excluding the group above (e.g. *Window Hello for Business Users*), clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared
    - Select **OK**
 1. If you previously issued Windows Hello for Business sign-in certificates using Configuration Manger and are switching to an AD FS registration authority, then on the **Superseded Templates** tab, add the previously used **Windows Hello for Business Authentication** template(s), so they will be superseded by this template for the users that have Enroll permission for this template
 1. Select on the **Apply** to save changes and close the console
@@ -56,9 +56,9 @@ Open an elevated command prompt end execute the following command
 certutil.exe -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY
 ```
 
-If the template was changed successfully, the output of the command will contain old and new values of the template parameters. The new value must contain the **CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY** parameter. Example:
+If the template was changed successfully, the output of the command will contain old and new values of the template parameters. The new value must contain the `CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY` parameter. Example:
 
-```console
+```cmd
 CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=[yourdomain]:WHFBAuthentication
 
 Old Value:
@@ -79,6 +79,6 @@ CertUtil: -dsTemplate command completed successfully."
 ```
 
 >[!NOTE]
->If you gave your Windows Hello for Business Authentication certificate template a different name, then replace *WHFBAuthentication* in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc). Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on your certification authority.
+>If you gave your Windows Hello for Business Authentication certificate template a different name, then replace `WHFBAuthentication` in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc). Or, you can view the template name using the `Get-CATemplate` ADCS Administration Windows PowerShell cmdlet on your certification authority.
 
 </details>

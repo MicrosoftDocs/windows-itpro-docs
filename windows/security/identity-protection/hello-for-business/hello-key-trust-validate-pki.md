@@ -13,32 +13,9 @@ ms.topic: tutorial
 
 Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
-## Deploy an enterprise certification authority
-
-This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.
-
-### Lab-based PKI
-
-The following instructions may be used to deploy simple public key infrastructure that is suitable **for a lab environment**.
-
-Sign in using *Enterprise Administrator* equivalent credentials on a Windows Server where you want the certification authority (CA) installed.
-
->[!NOTE]
->Never install a certification authority on a domain controller in a production environment.
-
-1. Open an elevated Windows PowerShell prompt
-1. Use the following command to install the Active Directory Certificate Services role.
-    ```PowerShell
-    Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
-    ```
-3. Use the following command to configure the CA using a basic certification authority configuration
-    ```PowerShell
-    Install-AdcsCertificationAuthority
-    ```
+[!INCLUDE [lab-based-pki-deploy](includes/lab-based-pki-deploy.md)]
 
 ## Configure the enterprise PKI
-
-If you don't have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
 
 Expand the following sections to configure the PKI for Windows Hello for Business.
 
