@@ -58,15 +58,3 @@ The AD FS registration authority verifies the key used in the certificate reques
 
 The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user’s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user that they can use their PIN to sign-in through the Windows Action Center.
 
-<br><br>
-
-<hr>
-
-## Follow the Windows Hello for Business hybrid certificate trust deployment guide
-
-1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
-3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-5. [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings-policy.md)
-6. Sign-in and Provision (*You are here*)
