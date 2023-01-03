@@ -13,10 +13,60 @@ ms.topic: tutorial
 
 ## Policy Configuration
 
-You need at least a  Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
-Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
+After the prerequisites are met and the PKI and AD FS configurations are validated, Windows Hello for business must be enabled on the Windows devices. Follow the instructions below to configure your devices using either Microsoft Intune or group policy (GPO).
 
-Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 Creators Edition (1703) to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
+
+### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
+
+For Azure AD joined devices and hybrid Azure AD joined devices enrolled in Intune, you can use Intune policies to manage Windows Hello for Business.
+
+There are different ways to enable Windows Hello for Business via Intune:
+
+- Using a policy applied at the tenant level. Note that this policy:
+  - is only applied at enrollment time, and any changes to its configuration won't apply to devices already enrolled in Intune
+  - it applies to *all devices* getting enrolled in Intune. For this reason, the policy is usually kept disabled and Windows Hello for Business is enabled using a policy targeted to a security group
+- A device configuration policy that is applied *after* device enrollment. Any changes to the policy will be applied to the devices during regular policy refresh. There are different policy types to chose from:
+  - settings catalog
+  - [security baselines](/mem/intune/protect/security-baselines)
+  - custom policy, via the PassportForWork CSP
+  - [account protection policy](/mem/intune/protect/endpoint-security-account-protection-policy)
+  - identity protection policy template
+
+### Verify the tenant-wide policy
+
+To check the Windows Hello for Business policy applied at enrollment time:
+
+1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
+1. Select **Devices** > **Windows** > **Windows Enrollment**
+1. Select **Windows Hello for Business**
+1. Verify the status of **Configure Windows Hello for Business** and any settings that may be configured
+
+:::image type="content" source="images/whfb-intune-disable.png" alt-text="Disablement of Windows Hello for Business from Microsoft Endpoint Manager admin center." border="true" lightbox="images/whfb-intune-disable.png":::
+
+If the tenant-wide policy is enabled, you can skip to [Provision Windows Hello for Business](#provision-windows-hello-for-business). Otherwise, follow the instructions below to create a policy.
+
+### Enable Windows Hello for Business with a settings catalog policy
+
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
+1. For Platform, select **Windows 10 and later**.
+1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
+1. Name the profile with a familiar name. For example, "Windows Hello for Business".
+1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
+1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
+
+    [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
+
+Assign the policy to a security group that contains as members the devices or users that you want to configure.
+
+Windows Hello for Business settings are also available in the settings catalog. For more information, see [Use the settings catalog to configure settings on Windows devices](/mem/intune/configuration/settings-catalog).
+
+### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
+
+For hybrid Azure AD joined devices, you can use GPOs to manage Windows Hello for Business.
+
+#### Create the Windows Hello for Business Users Security Group
+
 
 Domain controllers of Windows Hello for Business deployments need one Group Policy setting, which enables automatic certificate enrollment for the newly create domain controller authentication certificate. This policy setting ensures domain controllers (new and existing) automatically request and renew the correct domain controller certificate.  
 
@@ -132,34 +182,28 @@ Starting with Windows 10, version 1703, the PIN complexity Group Policy settings
 
 Users must receive the Windows Hello for Business group policy settings and have the proper permission to enroll for the Windows Hello for Business Authentication certificate. You can provide users with these settings and permissions by adding the group used synchronize users to the Windows Hello for Business Users group.   Users and groups who are not members of this group will not attempt to enroll for Windows Hello for Business.
 
-## Provisioning
+---
 
-The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
-![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result.](images/Event358.png)
+## Provision Windows Hello for Business
 
-The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is Azure Active Directory-joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
+The Windows Hello for Business provisioning process begins immediately after the user profile is loaded and before the user receives their desktop. For the provisioning process to begin, all prerequisite checks must pass.
 
-Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
+You can determine the status of the prerequisite checks by viewing the **User Device Registration** admin log under **Applications and Services Logs > Microsoft > **Windows**.\
+This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
-![Setup a PIN Provisioning.](images/setupapin.png)
+![Event358.](images/Event358-2.png)
 
-The provisioning flow proceeds to the Multi-Factor authentication portion of the enrollment.  Provisioning informs the user that it is actively attempting to contact the user through their configured form of MFA.  The provisioning process does not proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry.
-  
-![MFA prompt during provisioning.](images/mfa.png)
+### PIN Setup
 
-After a successful MFA, the provisioning flow asks the user to create and validate a PIN.  This PIN must observe any PIN complexity requirements that you deployed to the environment.
+This is the process that occurs after a user signs in, to enroll in Windows Hello for Business:
 
-![Create a PIN during provisioning.](images/createPin.png)
+1. The user is prompted with a full screen page to use Windows Hello with the organization account. The user selects **OK**
+1. The provisioning flow proceeds to the multi-factor authentication portion of the enrollment. Provisioning informs the user that it's actively attempting to contact the user through their configured form of MFA. The provisioning process doesn't proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry
+1. After a successful MFA, the provisioning flow asks the user to create and validate a PIN. This PIN must observe any PIN complexity policies configured on the device
+1. The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key. When key registration completes, Windows Hello for Business provisioning informs the user they can use their PIN to sign-in. The user may close the provisioning application and see their desktop. While the user has completed provisioning, Azure AD Connect synchronizes the user's key to Active Directory
 
-The provisioning flow has all the information it needs to complete the Windows Hello for Business enrollment.
-
-- A successful single factor authentication (username and password at sign-in)
-- A device that has successfully completed device registration
-- A fresh, successful multi-factor authentication
-- A validated PIN that meets the PIN complexity requirements
-
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  Azure Active Directory Connect synchronizes the user's key to the on-premises Active Directory.
+:::image type="content" source="images/haadj-whfb-pin-provisioning.gif" alt-text="Animation showing a user logging on to an HAADJ device with a password, and being prompted to enroll in Windows Hello for Business.":::
 
 > [!IMPORTANT]
 > The following is the enrollment behavior prior to Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
@@ -172,7 +216,7 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 > Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889) provides synchronous certificate enrollment during hybrid certificate trust provisioning.  With this update, users no longer need to wait for Azure AD Connect to sync their  public key on-premises.  Users enroll their certificate during provisioning and can use the certificate for sign-in immediately after completing the provisioning. The update needs to be installed on the federation servers.
 
 After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
-  
+
 The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
 
 > [!NOTE]

@@ -49,7 +49,7 @@
         href: hello-hybrid-cert-whfb-provision.md
       - name: Configure SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
-      - name: Using certificates for on-premises SSO
+      - name: Deploy certificates to Azure AD joined devices
         href: hello-hybrid-aadj-sso-cert.md
   - name: On-premises deployments
     items:
