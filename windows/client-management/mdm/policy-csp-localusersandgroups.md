@@ -1,65 +1,139 @@
 ---
-title: Policy CSP - LocalUsersAndGroups
-description: Policy CSP - LocalUsersAndGroups
+title: LocalUsersAndGroups Policy CSP
+description: Learn more about the LocalUsersAndGroups Area in Policy CSP
+author: vinaypamnani-msft
+manager: aaroncz
 ms.author: vinpa
-ms.topic: article
+ms.date: 01/03/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.localizationpriority: medium
-ms.date: 10/14/2020
-ms.reviewer: 
-manager: aaroncz
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- LocalUsersAndGroups-Begin -->
 # Policy CSP - LocalUsersAndGroups
 
-<hr/>
+<!-- LocalUsersAndGroups-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocalUsersAndGroups-Editable-End -->
 
-<!--Policies-->
-## LocalUsersAndGroups policies
+<!-- Configure-Begin -->
+## Configure
 
-<dl>
-  <dd>
-    <a href="#localusersandgroups-configure">LocalUsersAndGroups/Configure</a>
-  </dd>
-</dl>
+<!-- Configure-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+<!-- Configure-Applicability-End -->
 
-<hr/>
+<!-- Configure-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LocalUsersAndGroups/Configure
+```
+<!-- Configure-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="localusersandgroups-configure"></a>**LocalUsersAndGroups/Configure**
+<!-- Configure-Description-Begin -->
+<!-- Description-Source-DDF -->
+This Setting allows an administrator to manage local groups on a Device. Possible settings: 1. Update Group Membership: Update a group and add and/or remove members though the 'U' action. When using Update, existing group members that are not specified in the policy remain untouched. 2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action. When using Replace, existing group membership is replaced by the list of members specified in the add member section. This option works in the same way as a Restricted Group and any group members that are not specified in the policy are removed.
 
-<!--SupportedSKUs-->
+> [!CAUTION]
+> If the same group is configured with both Replace and Update, then Replace will win.
+<!-- Configure-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
-
+<!-- Configure-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
 > Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results.
+<!-- Configure-Editable-End -->
+
+<!-- Configure-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | chr (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Configure-DFProperties-End -->
+
+<!-- Configure-AllowedValues-Begin -->
+**Allowed values**:
+
+<br>
+<details>
+  <summary>Expand to see schema XML</summary>
+
+```xml
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+  <xs:simpleType name="name">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="accessgroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="group" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>Group Configuration Action</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="action" type="name" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Group Member to Add</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="member" type="name" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Group Member to Remove</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="member" type="name" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Group property to configure</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="desc" type="name" use="required" />
+            <xs:attribute name="value" type="name" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="desc" type="name" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>Local Group Configuration</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+```
+
+</details>
+<!-- Configure-AllowedValues-End -->
+
+<!-- Configure-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+**Example**:
 
 Here is an example of the policy definition XML for group configuration:
 
@@ -95,14 +169,10 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
 > - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that, if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
 
-<!--/Description-->
-<!--SupportedValues-->
-<!--/SupportedValues-->
-<!--Example-->
 
 **Examples**
 
-Example 1: Azure Active Directory focused.
+**Example 1**: Azure Active Directory focused.
 
 The following example updates the built-in administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** with an Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine.
 
@@ -116,12 +186,13 @@ The following example updates the built-in administrators group with the SID **S
 </GroupConfiguration>
 ```
 
-Example 2: Replace / Restrict the built-in administrators group with an Azure AD user account.
+**Example 2**: Replace / Restrict the built-in administrators group with an Azure AD user account.
 
 > [!NOTE]
 > When using the ‘R’ replace option to configure the built-in Administrators group with the SID **S-1-5-21-2222222222-3333333333-4444444444-500** you should always specify the administrator as a member plus any other custom members. This is necessary because the built-in administrator must always be a member of the administrators group.
 
-Example:
+**Example**:
+
 ```xml
 <GroupConfiguration>
     <accessgroup desc = "S-1-5-21-2222222222-3333333333-4444444444-500">
@@ -132,7 +203,7 @@ Example:
 </GroupConfiguration>
 ```
 
-Example 3: Update action for adding and removing group members on a hybrid joined machine.
+**Example 3**: Update action for adding and removing group members on a hybrid joined machine.
 
 The following example shows how you can update a local group (**Administrators** with the SID **S-1-5-21-2222222222-3333333333-4444444444-500**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add an Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
@@ -146,13 +217,6 @@ The following example shows how you can update a local group (**Administrators**
     </accessgroup>
 </GroupConfiguration>
 ```
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
 
 > [!NOTE]
 >
@@ -233,70 +297,16 @@ To troubleshoot Name/SID lookup APIs:
 
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
+<!-- Configure-Examples-End -->
 
-```xml
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-  <xs:simpleType name="name">
-    <xs:restriction base="xs:string">
-      <xs:maxLength value="255" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="accessgroup">
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="group" minOccurs="1" maxOccurs="1">
-              <xs:annotation>
-                <xs:documentation>Group Configuration Action</xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:attribute name="action" type="name" use="required"/>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
-              <xs:annotation>
-                <xs:documentation>Group Member to Add</xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:attribute name="member" type="name" use="required"/>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
-              <xs:annotation>
-                <xs:documentation>Group Member to Remove</xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:attribute name="member" type="name" use="required"/>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
-              <xs:annotation>
-                <xs:documentation>Group property to configure</xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:attribute name="desc" type="name" use="required"/>
-                <xs:attribute name="value" type="name" use="required"/>
-              </xs:complexType>
-            </xs:element>
-          </xs:sequence>
-      <xs:attribute name="desc" type="name" use="required"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GroupConfiguration">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
-          <xs:annotation>
-      <xs:documentation>Local Group Configuration</xs:documentation>
-    </xs:annotation>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-</xs:schema>
-```
+<!-- Configure-End -->
 
-<!--/Policies-->
+<!-- LocalUsersAndGroups-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- LocalUsersAndGroups-CspMoreInfo-End -->
 
-## Related topics
+<!-- LocalUsersAndGroups-End -->
+
+## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
