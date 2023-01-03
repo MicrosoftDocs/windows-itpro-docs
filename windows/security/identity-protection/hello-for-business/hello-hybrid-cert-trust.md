@@ -17,11 +17,10 @@ This deployment guide describes how to deploy Windows Hello for Business in a hy
 > [!IMPORTANT]
 > Windows Hello for Business *cloud Kerberos trust* is the recommended deployment model when compared to the *key trust model*. It is also the recommended deployment model if you don't need to deploy certificates to the end users. For more information, see [cloud Kerberos trust deployment](hello-hybrid-cloud-kerberos-trust.md).
 
-It is recommended that you review the [Windows Hello for Business planning guide](/windows/access-protection/hello-for-business/hello-planning-guide) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
+It is recommended that you review the [Windows Hello for Business planning guide](hello-planning-guide.md) prior to using the deployment guide. The planning guide helps you make decisions by explaining the available options with each aspect of the deployment and explains the potential outcomes based on each of these decisions.
 
 ## Prerequisites
 The following prerequisites must be met for a hybrid certificate trust deployment:
-
 
 > [!div class="checklist"]
 > * Directories and directory synchronization
@@ -38,11 +37,8 @@ Hybrid Windows Hello for Business needs two directories:
 - An on-premises Active Directory
 - An Azure Active Directory tenant with an Azure AD Premium subscription
 
-The hybrid-certificate trust deployment needs an *Azure Active Directory Premium* subscription because it uses the device write-back synchronization feature.
-
 The two directories must be synchronized with [Azure AD Connect Sync][AZ-1], which synchronizes user accounts from the on-premises Active Directory to Azure AD.
-
-Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federated domains](/azure/active-directory/devices/hybrid-azuread-join-federated-domains) to learn more about setting up Azure Active Directory Connect for a simplified join flow for Azure AD device registration.
+The hybrid-certificate trust deployment needs an *Azure Active Directory Premium* subscription because it uses the device write-back synchronization feature.
 
 > [!NOTE]
 > Windows Hello for Business hybrid certificate trust is not supported if the users' on-premises UPN suffix cannot be added as a verified domain in Azure AD.
@@ -50,37 +46,38 @@ Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federat
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device object must be synchronized between Azure Active Directory and Active Directory.
 
-## Federation
+### Federation
 
-Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Azure Active Directory using Windows Server 2016 AD FS or newer. Windows Hello for Business hybrid certificate trust doesn't support Azure AD *Pass-through Authentication* (PTA) or *password hash sync* (PHS). All nodes in the AD FS farm must run the same version of AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
+Windows Hello for Business hybrid certificate trust doesn't support Azure AD *Pass-through Authentication* (PTA) or *password hash sync* (PHS).\
+Windows Hello for Business hybrid certificate trust requires Active Directory to be federated with Azure Active Directory using AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
 
 If you're new to AD FS and federation services:
 
-- review [Understanding Key AD FS Concepts](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service
-- Review the [AD FS Design guide](/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service
+- review [key AD FS concepts][SER-3] prior to deploying the AD FS farm
+- review the [AD FS design guide][SER-4] to design and plan your federation service
 
 Once you have your AD FS design ready:
-- review [Deploying a Federation Server farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) to configure AD FS in your environment
+
+- review [deploying a federation server farm][SER-2] to configure AD FS in your environment
 
 The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).
 
 ### Device registration
 
-The Windows devices must be registered in Azure AD. Devices can be registered in Azure AD using either *Azure AD join* or *hybrid Azure AD join*.\
-For *hybrid Azure AD joined* devices, review the guidance on the [Plan your hybrid Azure Active Directory join implementation][AZ-8] page.
+Windows devices must be registered in Azure AD. Devices can be registered in Azure AD using either *Azure AD join* or *hybrid Azure AD join*.\
+For *hybrid Azure AD joined* devices, review the guidance on the [plan your hybrid Azure Active Directory join implementation][AZ-8] page.
 
 Hybrid certificate trust deployments need the device write back feature. Authentication to AD FS needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices. This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures. For this reason, Windows Hello for Business deployments need device write-back.
 
 > [!NOTE]
-> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory, and therefore the device writeback is used to update the msDS-KeyCredentialLink on the computer object.
+> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory. Device write-back is used to update the msDS-KeyCredentialLink attribute on the computer object.
 
-Refer to the [Configure hybrid Azure Active Directory join for federated domains](/azure/active-directory/devices/howto-hybrid-azure-ad-join#federated-domains) guide to learn more about setting up Azure AD Connect Sync to support Azure AD device registration.
-For a manual configuration of your AD FS farm to support device registration, review the [Configure AD FS for Azure AD device registration](/azure/active-directory/devices/hybrid-azuread-join-manual) guide.
+Refer to the [configure hybrid Azure Active Directory join for federated domains][AZ-10] guide to learn more about setting up Azure AD Connect Sync to support Azure AD device registration.
+For a manual configuration of your AD FS farm to support device registration, review the [Configure AD FS for Azure AD device registration][AZ-11] guide.
 
 ### Public Key Infrastructure
 
-An enterprise public key infrastructure (PKI) is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them.
-
+An enterprise public key infrastructure (PKI) is required as *trust anchor* for authentication. Domain controllers require a certificate for Windows clients to trust them.\
 The enterprise PKI and a certificate registration authority (CRA) are required to issue authentication certificates to users. Hybrid certificate trust deployment uses AD FS as a CRA.
 
 During Windows Hello for Business provisioning, users receive a sign-in certificate through the CRA.
@@ -106,12 +103,13 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 
 > [!div class="checklist"]
 > * Configure and validate the PKI
+> * Configure and validate AD FS
 > * Configure Windows Hello for Business settings
 > * Provision Windows Hello for Business on Windows clients
 > * Configure single sign-on (SSO) for Azure AD joined devices
 
 > [!div class="nextstepaction"]
-> [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-key-trust-validate-pki.md)
+> [Next: configure and validate the Public Key Infrastructure >](hello-hybrid-cert-trust-validate-pki.md)
 
 <!--links-->
 [AZ-1]: /azure/active-directory/hybrid/how-to-connect-sync-whatis
@@ -122,5 +120,11 @@ Once the prerequisites are met, deploying Windows Hello for Business with a hybr
 [AZ-6]: /azure/active-directory/hybrid/whatis-phs
 [AZ-7]: /azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication
 [AZ-8]: /azure/active-directory/devices/hybrid-azuread-join-plan
+[AZ-9]: /azure/active-directory/devices/hybrid-azuread-join-federated-domains
+[AZ-10]: /azure/active-directory/devices/howto-hybrid-azure-ad-join#federated-domains
+[AZ-11]: /azure/active-directory/devices/hybrid-azuread-join-manual
 
 [SER-1]: /windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa
+[SER-2]: /windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm
+[SER-3]: /windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts
+[SER-4]: /windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2
