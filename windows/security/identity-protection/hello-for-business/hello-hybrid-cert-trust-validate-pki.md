@@ -1,23 +1,24 @@
 ---
-title: Configure and validate the Public Key Infrastructure in an on-premises certificate trust model
-description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a certificate trust model.
+title: Configure and validate the Public Key Infrastructure in an hybrid certificate trust model
+description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid certificate trust model.
 ms.date: 01/03/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ms.topic: tutorial
 ---
-# Configure and validate the Public Key Infrastructure - on-premises certificate trust
+# Configure and validate the Public Key Infrastructure - hybrids certificate trust
 
-[!INCLUDE [hello-on-premises-key-trust](./includes/hello-on-premises-cert-trust.md)]
+[!INCLUDE [hello-hybrid-key-trust](./includes/hello-on-premises-cert-trust.md)]
 
-Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *key trust* or *certificate trust* models. The domain controllers must have a certificate, which serves as a root of trust for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
+Windows Hello for Business must have a Public Key Infrastructure (PKI) when using the *certificate trust* model. The domain controllers must have a certificate, which serves as a *root of trust* for clients. The certificate ensures that clients don't communicate with rogue domain controllers.
 
- Hybrid certificate trust deployments issue users with a sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to the domain controllers. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.
+Hybrid certificate trust deployments issue users with a sign-in certificate that enables them to authenticate using Windows Hello for Business credentials to the domain controllers. Additionally, hybrid certificate trust deployments issue certificates to registration authorities to provide defense-in-depth security when issuing user authentication certificates.
 
 ## Deploy an enterprise certification authority
 
-This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.
+This guide assumes most enterprises have an existing public key infrastructure. Windows Hello for Business depends on an enterprise PKI running the Windows Server *Active Directory Certificate Services* role.\
+If you don't have an existing PKI, review [Certification Authority Guidance][PREV-1] to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy][PREV-2] for instructions on how to configure your PKI using the information from your design session.
 
 ### Lab-based PKI
 
@@ -37,16 +38,23 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
     ```PowerShell
     Install-AdcsCertificationAuthority
     ```
+    ```
 
 ## Configure the enterprise PKI
 
-If you don't have an existing PKI, review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) to properly design your infrastructure. Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your PKI using the information from your design session.
-
-Expand the following sections to configure the PKI for Windows Hello for Business.
+The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
 
 <br>
 
 [!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
+
+> [!NOTE]
+> Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices.
+
+> [!IMPORTANT]
+> For Azure AD joined devices to authenticate to on-premises resources, ensure to:
+> - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
+> - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
 
 <br>
 
@@ -54,19 +62,12 @@ Expand the following sections to configure the PKI for Windows Hello for Busines
 
 <br>
 
-[!INCLUDE [web-server-certificate-template](includes/web-server-certificate-template.md)]
-
-<br>
-<details>
-<summary><b>Unpublish Superseded Certificate Templates</b></summary>
-
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
-</details>
-
 <br>
 <details>
-<summary><b>Publish certificate templates to the CA</b></summary>
+
+<summary><b>Publish the certificate template to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
 
@@ -75,13 +76,14 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 1. Open the **Certification Authority** management console
 1. Expand the parent node from the navigation pane
 1. Select **Certificate Templates** in the navigation pane
-1. Right-click the **Certificate Templates** node. Select **New > Certificate Template** to issue
-1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)*, and *Internal Web Server* templates you created in the previous steps. Select **OK** to publish the selected certificate templates to the certification authority
-1. If you published the *Domain Controller Authentication (Kerberos)* certificate template, then unpublish the certificate templates you included in the superseded templates list
-   - To unpublish a certificate template, right-click the certificate template you want to unpublish and select **Delete**. Select **Yes** to confirm the operation
+1. Right-click the **Certificate Templates** node. Select **New > Certificate Template to issue**
+1. In the **Enable Certificates Templates** window, select the *Domain Controller Authentication (Kerberos)* template you created in the previous steps > select **OK**
 1. Close the console
 
 </details>
+
+> [!IMPORTANT]
+> If you plan to deploy **Azure AD joined** devices, and require single sign-on (SSO) to on-premises resources when signing in with Windows Hello for Business, follow the procedures to [update your CA to include an http-based CRL distribution point](hello-hybrid-aadj-sso.md).
 
 ## Configure and deploy certificates to domain controllers
 
@@ -91,5 +93,22 @@ Sign in to the CA or management workstations with **Enterprise Admin** equivalen
 
 [!INCLUDE [dc-certificate-validate](includes/dc-certificate-validate.md)]
 
+## Section review and next steps
+
+Before moving to the next section, ensure the following steps are complete:
+
+> [!div class="checklist"]
+> - Configure domain controller certificates
+> -_ Supersede existing domain controller certificates
+> - Unpublish superseded certificate templates
+> - Publish the certificate template to the CA
+> - Deploy certificates to the domain controllers
+> - Validate the domain controllers configuration
+
 > [!div class="nextstepaction"]
-> [Next: prepare and deploy AD FS >](hello-key-trust-adfs.md)
+> [Next: configure and provision Windows Hello for Business >](hello-hybrid-cert-trust-provision.md)
+
+<!--links-->
+[SERV-1]: /troubleshoot/windows-server/windows-security/requirements-domain-controller
+[PREV-1]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)
+[PREV-2]: /previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)

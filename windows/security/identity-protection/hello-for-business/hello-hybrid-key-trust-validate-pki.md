@@ -1,7 +1,7 @@
 ---
 title: Configure and validate the Public Key Infrastructure in a hybrid key trust model
 description: Configure and validate the Public Key Infrastructure when deploying Windows Hello for Business in a hybrid key trust model.
-ms.date: 12/21/2022
+ms.date: 01/03/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
@@ -46,37 +46,28 @@ Sign in using *Enterprise Administrator* equivalent credentials on a Windows Ser
 The configuration of the enterprise PKI to support Windows Hello for Business consists of the following steps (expand each step to learn more):
 
 <br>
-<details>
-<summary><b>Configure domain controller certificates</b></summary>
 
 [!INCLUDE [dc-certificate-template](includes/dc-certificate-template.md)]
 
 > [!NOTE]
 > Inclusion of the *KDC Authentication* OID in domain controller certificate is not required for hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices.
 
-
 > [!IMPORTANT]
 > For Azure AD joined devices to authenticate to on-premises resources, ensure to:
 > - Install the root CA certificate in the device's trusted root certificate store. See [how to deploy a trusted certificate profile](/mem/intune/protect/certificates-trusted-root#to-create-a-trusted-certificate-profile) via Intune
 > - Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL
 
-</details>
 <br>
-<details>
-<summary><b>Supersede existing domain controller certificates</b></summary>
 
 [!INCLUDE [dc-certificate-template-supersede](includes/dc-certificate-supersede.md)]
 
-</details>
 <br>
-<details>
-<summary><b>Unpublish Superseded Certificate Templates</b></summary>
 
 [!INCLUDE [unpublish-superseded-templates](includes/unpublish-superseded-templates.md)]
 
-</details>
 <br>
 <details>
+
 <summary><b>Publish the certificate template to the CA</b></summary>
 
 A certification authority can only issue certificates for certificate templates that are published to it. If you have more than one CA, and you want more CAs to issue certificates based on the certificate template, then you must publish the certificate template to them.
