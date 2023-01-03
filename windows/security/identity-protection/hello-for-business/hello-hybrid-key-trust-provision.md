@@ -27,7 +27,7 @@ There are different ways to enable Windows Hello for Business via Intune:
   - [account protection policy](/mem/intune/protect/endpoint-security-account-protection-policy)
   - identity protection policy template
 
-#### Verify the tenant-wide policy
+### Verify the tenant-wide policy
 
 To check the Windows Hello for Business policy applied at enrollment time:
 
@@ -40,7 +40,7 @@ To check the Windows Hello for Business policy applied at enrollment time:
 
 If the tenant-wide policy is enabled, you can skip to [Provision Windows Hello for Business](#provision-windows-hello-for-business). Otherwise, follow the instructions below to create a policy.
 
-#### Enable Windows Hello for Business with a settings catalog policy
+### Enable Windows Hello for Business with a settings catalog policy
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** > **Windows** > **Configuration Profiles** > **Create profile**.
