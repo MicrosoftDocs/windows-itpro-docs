@@ -45,9 +45,7 @@
         href: hello-hybrid-cert-trust-validate-pki.md
       - name: Configure AD FS
         href: hello-hybrid-cert-whfb-settings-adfs.md
-      - name: Configure Group Policy settings
-        href: hello-hybrid-cert-whfb-settings-policy.md
-      - name: Sign-in and provision Windows Hello for Business
+      - name: Configure and provision Windows Hello for Business
         href: hello-hybrid-cert-whfb-provision.md
       - name: Configure SSO for Azure AD joined devices
         href: hello-hybrid-aadj-sso.md
