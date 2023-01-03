@@ -111,7 +111,6 @@ If you turn this policy setting on, local users won’t be able to set up and us
 
 <!-- NoLocalPasswordResetQuestions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Available in the latest Windows 10 Insider Preview Build.
 <!-- NoLocalPasswordResetQuestions-Editable-End -->
 
 <!-- NoLocalPasswordResetQuestions-DFProperties-Begin -->

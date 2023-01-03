@@ -4,7 +4,7 @@ description: Learn more about the ADMX_EAIME Area in Policy CSP
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 12/21/2022
+ms.date: 01/03/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -52,7 +52,7 @@ If you disable or do not configure this policy setting, both Publishing Standard
 
 This policy setting applies to Japanese Microsoft IME only.
 
-Note: Changes to this setting will not take effect until the user logs off.
+**Note**: Changes to this setting will not take effect until the user logs off.
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Description-End -->
 
 <!-- L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList-Editable-Begin -->
@@ -128,7 +128,7 @@ If you disable or do not configure this policy setting, no range of characters a
 
 This policy setting applies to Japanese Microsoft IME only.
 
-Note: Changes to this setting will not take effect until the user logs off.
+**Note**: Changes to this setting will not take effect until the user logs off.
 <!-- L_RestrictCharacterCodeRangeOfConversion-Description-End -->
 
 <!-- L_RestrictCharacterCodeRangeOfConversion-Editable-Begin -->
@@ -195,7 +195,7 @@ If you disable or do not configure this policy setting, the custom dictionary ca
 
 This policy setting is applied to Japanese Microsoft IME.
 
-Note: Changes to this setting will not take effect until the user logs off.
+**Note**: Changes to this setting will not take effect until the user logs off.
 <!-- L_TurnOffCustomDictionary-Description-End -->
 
 <!-- L_TurnOffCustomDictionary-Editable-Begin -->
@@ -259,7 +259,7 @@ If you disable or do not configure this policy setting, history-based predictive
 
 This policy setting applies to Japanese Microsoft IME only.
 
-Note: Changes to this setting will not take effect until the user logs off.
+**Note**: Changes to this setting will not take effect until the user logs off.
 <!-- L_TurnOffHistorybasedPredictiveInput-Description-End -->
 
 <!-- L_TurnOffHistorybasedPredictiveInput-Editable-Begin -->
@@ -325,7 +325,7 @@ If you disable or do not configure this policy setting, the search integration f
 
 This policy setting applies to Japanese Microsoft IME.
 
-Note: Changes to this setting will not take effect until the user logs off.
+**Note**: Changes to this setting will not take effect until the user logs off.
 <!-- L_TurnOffInternetSearchIntegration-Description-End -->
 
 <!-- L_TurnOffInternetSearchIntegration-Editable-Begin -->

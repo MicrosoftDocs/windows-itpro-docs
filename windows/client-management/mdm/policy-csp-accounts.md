@@ -146,7 +146,6 @@ Allows IT Admins the ability to disable the Microsoft Account Sign-In Assistant 
 
 <!-- AllowMicrosoftAccountSignInAssistant-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Added in Windows 10, version 1703.
 <!-- AllowMicrosoftAccountSignInAssistant-Editable-End -->
 
 <!-- AllowMicrosoftAccountSignInAssistant-DFProperties-Begin -->
@@ -234,7 +233,7 @@ This setting determines whether to only allow enterprise device authentication f
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Added in Windows 11, version 22H2. Most restricted value is 1.
+Most restricted value is 1.
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-Editable-End -->
 
 <!-- RestrictToEnterpriseDeviceAuthenticationOnly-DFProperties-Begin -->

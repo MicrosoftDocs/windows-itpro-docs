@@ -240,7 +240,6 @@ If you disable or do not configure this policy setting, users that are not requi
 
 <!-- CPL_Personalization_NoLockScreen-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Available in the latest Windows 10 Insider Preview Build.
 <!-- CPL_Personalization_NoLockScreen-Editable-End -->
 
 <!-- CPL_Personalization_NoLockScreen-DFProperties-Begin -->
@@ -364,7 +363,6 @@ If you disable or do not configure this setting, the default theme will be appli
 
 <!-- CPL_Personalization_SetTheme-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Available in the latest Windows 10 Insider Preview Build.
 <!-- CPL_Personalization_SetTheme-Editable-End -->
 
 <!-- CPL_Personalization_SetTheme-DFProperties-Begin -->
@@ -1099,7 +1097,6 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 
 <!-- CPL_Personalization_NoMousePointersUI-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Available in the latest Windows 10 Insider Preview Build.
 <!-- CPL_Personalization_NoMousePointersUI-Editable-End -->
 
 <!-- CPL_Personalization_NoMousePointersUI-DFProperties-Begin -->
